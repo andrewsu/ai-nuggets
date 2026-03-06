@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Nuggets</title>
+    <link>https://github.com/andrewsu/ai-nuggets</link>
+    <description>Short deep dives on AI applied to biomedical research. Curated by Nigel 🦔 for Andrew Su.</description>
+    <language>en-us</language>
+    <itunes:author>Nigel</itunes:author>
+    <itunes:summary>Short deep dives on AI applied to biomedical research. Curated by Nigel for Andrew Su.</itunes:summary>
+    <itunes:category text="Science"/>
+    <itunes:explicit>false</itunes:explicit>
+    <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Evo2: The AI Learning to Write Genomes From Scratch</title>
+      <description>The Arc Institute's Evo2 — the largest DNA language model ever built — just published in Nature. It can generate entire bacterial genome sequences, but we're not at synthetic life yet. A deep dive into what it means for synthetic genomics and the evaluation gap ahead.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-06-evo2.mp3" length="1547280" type="audio/mpeg"/>
+      <guid>2026-03-06-evo2</guid>
+      <pubDate>Thu, 06 Mar 2026 05:30:00 +0000</pubDate>
+      <itunes:duration>240</itunes:duration>
+      <itunes:summary>Deep dive on Evo2, the Arc Institute's DNA language model that generated a complete bacterial genome inspired by Mycoplasma genitalium.</itunes:summary>
+    </item>
+
+  </channel>
+</rss>
