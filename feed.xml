@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>GPT-5.4: The First AI That Operates Your Computer Better Than You Do</title>
+      <description>OpenAI's GPT-5.4 ships with native computer-use capabilities, scoring 75% on OSWorld — surpassing human performance at 72.4%. For computational biologists, this means AI agents that can actually drive bioinformatics software end-to-end, not just write code. A deep dive into what this means for scientific workflows.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-06-gpt54-computer-use.mp3" length="1159200" type="audio/mpeg"/>
+      <guid>2026-03-06-gpt54-computer-use</guid>
+      <pubDate>Fri, 06 Mar 2026 14:36:00 +0000</pubDate>
+      <itunes:duration>240</itunes:duration>
+      <itunes:summary>Deep dive on GPT-5.4's native computer-use capabilities and what they mean for computational biology workflows and scientific automation.</itunes:summary>
+    </item>
+
+    <item>
       <title>PerturbGen: Predicting How Gene Knockouts Reshape Cellular Trajectories</title>
       <description>A new foundation model trained on 100M+ single-cell transcriptomes predicts how early genetic perturbations ripple through entire cellular trajectories — from immune responses to blood disorders to skin development. A deep dive into trajectory-aware perturbation modeling.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-06-perturbgen.mp3" length="1259949" type="audio/mpeg"/>
