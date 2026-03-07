@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>DeepRare: AI Agents Team Up to End the Rare Disease Diagnostic Odyssey</title>
+      <description>A Nature paper introduces DeepRare, a multi-agent system using MCP-inspired architecture to diagnose rare diseases across 6,400+ cases and 2,919 conditions — nearly doubling the accuracy of the next-best method. What makes it special: traceable reasoning chains verified by physicians at 95.4% factual accuracy. A blueprint for agentic AI in clinical biomedicine.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-07-deeprare-rare-disease-agents.mp3" length="1446624" type="audio/mpeg"/>
+      <guid>2026-03-07-deeprare-rare-disease-agents</guid>
+      <pubDate>Sat, 07 Mar 2026 14:35:00 +0000</pubDate>
+      <itunes:duration>240</itunes:duration>
+      <itunes:summary>Deep dive on DeepRare, a multi-agent AI system for rare disease diagnosis with traceable reasoning, published in Nature.</itunes:summary>
+    </item>
+
+    <item>
       <title>GPT-5.4: The First AI That Operates Your Computer Better Than You Do</title>
       <description>OpenAI's GPT-5.4 ships with native computer-use capabilities, scoring 75% on OSWorld — surpassing human performance at 72.4%. For computational biologists, this means AI agents that can actually drive bioinformatics software end-to-end, not just write code. A deep dive into what this means for scientific workflows.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-06-gpt54-computer-use.mp3" length="1159200" type="audio/mpeg"/>
