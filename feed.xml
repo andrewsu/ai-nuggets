@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>CLEAR: When LLM Embeddings Meet Knowledge Graphs for Drug Repurposing</title>
+      <description>CLEAR fuses LLM embeddings with disease-specific biomedical knowledge graphs using attention-based graph learning, creating representations that encode both semantic meaning and relational structure. Tested on Alzheimer's and related dementias, it improves drug repurposing F1 scores by up to 30% over prior methods. A compelling proof that grounding language model representations in graph topology beats either approach alone.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-11-clear-kg-drug-repurposing.mp3" length="3647155" type="audio/mpeg"/>
+      <guid>2026-03-11-clear-kg-drug-repurposing</guid>
+      <pubDate>Wed, 11 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>227</itunes:duration>
+      <itunes:summary>Deep dive on CLEAR, a framework that aligns LLM embeddings with biomedical knowledge graphs for drug repurposing in Alzheimer's and related dementias.</itunes:summary>
+    </item>
+
+    <item>
       <title>ChatSpatial: MCP-Powered AI Agents Tame the Spatial Transcriptomics Toolchain</title>
       <description>ChatSpatial is an open-source agentic platform built on Model Context Protocol that unifies 60+ spatial transcriptomics methods across Python and R into a single conversational workflow. Instead of generating free-form code, the LLM selects from pre-validated tool schemas with domain-aware parameter inference, achieving near-deterministic reproducibility across seven LLM platforms. NIH-funded and open on GitHub.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-10-chatspatial-spatial-transcriptomics.mp3" length="3310698" type="audio/mpeg"/>
