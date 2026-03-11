@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Deep Dive: Synthetic Data for Cancer Research and Clinical Trials</title>
+      <description>A deep dive into the Nature Reviews Cancer review by Eckardt, Kather and colleagues on how generative AI can create synthetic patient data for cancer research. We cover the three big use cases — synthetic histopathology images, simulated clinical trials with synthetic control arms, and data democratization for rare cancers — plus the major unsolved challenges around bias amplification, privacy-utility tradeoffs, and the missing regulatory frameworks.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-11-deepdive-synthetic-cancer-data.mp3" length="2088093" type="audio/mpeg"/>
+      <guid>2026-03-11-deepdive-synthetic-cancer-data</guid>
+      <pubDate>Tue, 11 Mar 2026 14:48:00 +0000</pubDate>
+      <itunes:duration>347</itunes:duration>
+      <itunes:summary>Deep dive on how AI-generated synthetic data could transform cancer clinical trials and research data sharing, based on the Feb 2026 review in Nature Reviews Cancer.</itunes:summary>
+    </item>
+
+    <item>
       <title>CLEAR: When LLM Embeddings Meet Knowledge Graphs for Drug Repurposing</title>
       <description>CLEAR fuses LLM embeddings with disease-specific biomedical knowledge graphs using attention-based graph learning, creating representations that encode both semantic meaning and relational structure. Tested on Alzheimer's and related dementias, it improves drug repurposing F1 scores by up to 30% over prior methods. A compelling proof that grounding language model representations in graph topology beats either approach alone.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-11-clear-kg-drug-repurposing.mp3" length="3647155" type="audio/mpeg"/>
