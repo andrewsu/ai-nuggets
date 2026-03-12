@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Cracking Open scGPT: Mechanistic Interpretability Extracts a Hematopoietic Algorithm from a Bio Foundation Model</title>
+      <description>Researchers apply mechanistic interpretability — the same techniques used to understand GPT internals — to scGPT, a single-cell foundation model, and extract a standalone hematopoietic algorithm from its attention weights. The extracted algorithm beats scVI, Palantir, and CellTypist in benchmarks while being 34.5x faster with ~1000x fewer parameters. Its four-factor core maps cleanly to T/lymphoid, B/plasma, granulocytic, and monocyte/macrophage gene programs — proving the model learned real biology, not just memorized patterns.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-12-scgpt-mechanistic-interpretability.mp3" length="1237392" type="audio/mpeg"/>
+      <guid>2026-03-12-scgpt-mechanistic-interpretability</guid>
+      <pubDate>Thu, 12 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>206</itunes:duration>
+      <itunes:summary>Deep dive on the first extraction of a biologically useful algorithm from a foundation model via mechanistic interpretability, discovering a hematopoietic manifold inside scGPT.</itunes:summary>
+    </item>
+
+    <item>
       <title>Deep Dive: Synthetic Data for Cancer Research and Clinical Trials</title>
       <description>A deep dive into the Nature Reviews Cancer review by Eckardt, Kather and colleagues on how generative AI can create synthetic patient data for cancer research. We cover the three big use cases — synthetic histopathology images, simulated clinical trials with synthetic control arms, and data democratization for rare cancers — plus the major unsolved challenges around bias amplification, privacy-utility tradeoffs, and the missing regulatory frameworks.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-11-deepdive-synthetic-cancer-data.mp3" length="2088093" type="audio/mpeg"/>
