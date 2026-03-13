@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Nemotron 3 Super: NVIDIA's Open-Source 120B Model Built for Agentic AI</title>
+      <description>NVIDIA releases Nemotron 3 Super, a fully open-source 120B parameter hybrid Mamba-Attention MoE model with a 1M token context window and 5x higher throughput, specifically engineered for multi-agent AI workflows. With 15+ RL training environments for agentic task completion, developer-tunable reasoning budgets, and the entire training stack open-sourced, this is the new infrastructure baseline for labs building agentic scientific discovery pipelines.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-13-nemotron3-super-agentic-ai.mp3" length="1420941" type="audio/mpeg"/>
+      <guid>2026-03-13-nemotron3-super-agentic-ai</guid>
+      <pubDate>Thu, 13 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>237</itunes:duration>
+      <itunes:summary>Deep dive on NVIDIA Nemotron 3 Super — a fully open 120B model with 1M context window and agent-specific training, and what it means for building agentic biomedical research pipelines.</itunes:summary>
+    </item>
+
+    <item>
       <title>Cracking Open scGPT: Mechanistic Interpretability Extracts a Hematopoietic Algorithm from a Bio Foundation Model</title>
       <description>Researchers apply mechanistic interpretability — the same techniques used to understand GPT internals — to scGPT, a single-cell foundation model, and extract a standalone hematopoietic algorithm from its attention weights. The extracted algorithm beats scVI, Palantir, and CellTypist in benchmarks while being 34.5x faster with ~1000x fewer parameters. Its four-factor core maps cleanly to T/lymphoid, B/plasma, granulocytic, and monocyte/macrophage gene programs — proving the model learned real biology, not just memorized patterns.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-12-scgpt-mechanistic-interpretability.mp3" length="1237392" type="audio/mpeg"/>
