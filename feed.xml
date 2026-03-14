@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Mozi: Finally, a Drug Discovery AI Agent That Knows When It's Wrong</title>
+      <description>Mozi introduces "governed autonomy" for drug discovery LLM agents — a dual-layer architecture where a Control Plane enforces role-based tool isolation and reflection-based replanning, while a Workflow Plane encodes drug discovery stages as composable skill graphs with strict data contracts and human-in-the-loop checkpoints. Evaluated on PharmaBench, it demonstrates superior orchestration accuracy and trace-level auditability, tackling the critical problem of cascading hallucinations in long-horizon pharmaceutical pipelines.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-14-mozi-governed-drug-discovery-agents.mp3" length="1150704" type="audio/mpeg"/>
+      <guid>2026-03-14-mozi-governed-drug-discovery-agents</guid>
+      <pubDate>Fri, 14 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>192</itunes:duration>
+      <itunes:summary>Deep dive on Mozi, a governed autonomy framework that tackles the cascading hallucination problem in drug discovery AI agents with dual-layer architecture and human-in-the-loop checkpoints.</itunes:summary>
+    </item>
+
+    <item>
       <title>Nemotron 3 Super: NVIDIA's Open-Source 120B Model Built for Agentic AI</title>
       <description>NVIDIA releases Nemotron 3 Super, a fully open-source 120B parameter hybrid Mamba-Attention MoE model with a 1M token context window and 5x higher throughput, specifically engineered for multi-agent AI workflows. With 15+ RL training environments for agentic task completion, developer-tunable reasoning budgets, and the entire training stack open-sourced, this is the new infrastructure baseline for labs building agentic scientific discovery pipelines.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-13-nemotron3-super-agentic-ai.mp3" length="1420941" type="audio/mpeg"/>
