@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>NVIDIA BioNeMo at GTC: Proteina-Complexa, 30M AlphaFold Complexes, and 77x Faster Pharma Simulations</title>
+      <description>NVIDIA announced three major biomedical AI releases at GTC 2026: Proteina-Complexa, a generative model for protein binder design already experimentally validated by Novo Nordisk, Viva Biotech, and Manifold Bio; a collaboration with EMBL-EBI, Google DeepMind, and Seoul National University adding ~30 million AI-predicted protein complex structures to the AlphaFold database (1.7M high-confidence); and nvQSP, a GPU-accelerated pharmacological simulation engine delivering 77x speedups. The AlphaFold expansion is the real story — millions of structural interaction predictions flowing into the public commons as a new evidence layer for knowledge graphs and data integration.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-17-nvidia-bionemo-alphafold-expansion.mp3" length="1100160" type="audio/mpeg"/>
+      <guid>2026-03-17-nvidia-bionemo-alphafold-expansion</guid>
+      <pubDate>Mon, 17 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>183</itunes:duration>
+      <itunes:summary>Deep dive on NVIDIA's GTC 2026 biomedical AI triple-header: Proteina-Complexa for protein binder design, 30 million new AlphaFold complex predictions in the public database, and nvQSP for GPU-accelerated pharma simulations.</itunes:summary>
+    </item>
+
+    <item>
       <title>ProteinMCP: 38 Protein Engineering Tools, One AI Agent, 11 Minutes</title>
       <description>ProteinMCP is an agentic AI framework from KAUST that wraps 38 specialized protein engineering tools into a unified MCP ecosystem, letting an AI agent autonomously run end-to-end workflows like protein fitness modeling in 11 minutes. The key innovation is an automated pipeline converting existing software into MCP-compliant servers, making the framework perpetually extensible. They demonstrate autonomous design of high-affinity de novo binders and therapeutic nanobodies. MCP as the interoperability standard for agentic science is consolidating fast — this is the third MCP-based biomedical framework in a week.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-16-proteinmcp-agentic-protein-engineering.mp3" length="1204848" type="audio/mpeg"/>
