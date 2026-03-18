@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>AetherCell: A Virtual Cell Model That Actually Discovered Real Drugs</title>
+      <description>AetherCell is a generative foundation model that unifies fragmented biological data — clinical RNA-seq and experimental perturbation assays — into a shared transcriptomic manifold. It predicts drug responses across biological scales from cell lines to organoids to clinical cohorts, and validated two drug repurposing predictions in vivo: teriflunomide for dry eye disease and dabigatran for ulcerative colitis. A strong proof of concept for AI-driven virtual cell modeling bridging computation to real drug discovery.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-18-aethercell-virtual-cell-drug-discovery.mp3" length="1116957" type="audio/mpeg"/>
+      <guid>2026-03-18-aethercell-virtual-cell-drug-discovery</guid>
+      <pubDate>Wed, 18 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>186</itunes:duration>
+      <itunes:summary>Deep dive on AetherCell, a virtual cell foundation model that bridges fragmented biological data to predict drug responses across scales — and validated two drug repurposing hits in animal models.</itunes:summary>
+    </item>
+
+    <item>
       <title>NVIDIA BioNeMo at GTC: Proteina-Complexa, 30M AlphaFold Complexes, and 77x Faster Pharma Simulations</title>
       <description>NVIDIA announced three major biomedical AI releases at GTC 2026: Proteina-Complexa, a generative model for protein binder design already experimentally validated by Novo Nordisk, Viva Biotech, and Manifold Bio; a collaboration with EMBL-EBI, Google DeepMind, and Seoul National University adding ~30 million AI-predicted protein complex structures to the AlphaFold database (1.7M high-confidence); and nvQSP, a GPU-accelerated pharmacological simulation engine delivering 77x speedups. The AlphaFold expansion is the real story — millions of structural interaction predictions flowing into the public commons as a new evidence layer for knowledge graphs and data integration.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-17-nvidia-bionemo-alphafold-expansion.mp3" length="1100160" type="audio/mpeg"/>
