@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Deep Dive: The AI Co-Scientist Is Here</title>
+      <description>Nature Medicine's David Adam reports that AI has crossed a threshold — from data analysis tool to hypothesis generator with experimental validation. We trace the evidence: Google DeepMind's AI co-scientist system (Gemini 2.0 multi-agent) matched an unpublished Cell paper result on bacterial gene transfer, identified novel liver fibrosis targets validated in human organoids, and proposed AML drug candidates effective at clinical doses. Plus Insilico Medicine's rentosertib — an AI-discovered drug against an AI-discovered target — reaching Phase 2a trials for pulmonary fibrosis. We also cover the Stanford counterpoint showing LLM ideas degrade after execution, and TxGNN's knowledge-graph approach to zero-shot drug repurposing. The takeaway: AI co-scientists are real, but they run on the structured knowledge infrastructure that humans build.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-18-deepdive-ai-coscientist.mp3" length="2412381" type="audio/mpeg"/>
+      <guid>2026-03-18-deepdive-ai-coscientist</guid>
+      <pubDate>Wed, 18 Mar 2026 14:25:00 +0000</pubDate>
+      <itunes:duration>402</itunes:duration>
+      <itunes:summary>Deep dive on the Nature Medicine feature covering AI-driven scientific hypothesis generation — from Google's AI co-scientist to Insilico Medicine's Phase 2a trial, with critical counterpoints.</itunes:summary>
+    </item>
+
+    <item>
       <title>AetherCell: A Virtual Cell Model That Actually Discovered Real Drugs</title>
       <description>AetherCell is a generative foundation model that unifies fragmented biological data — clinical RNA-seq and experimental perturbation assays — into a shared transcriptomic manifold. It predicts drug responses across biological scales from cell lines to organoids to clinical cohorts, and validated two drug repurposing predictions in vivo: teriflunomide for dry eye disease and dabigatran for ulcerative colitis. A strong proof of concept for AI-driven virtual cell modeling bridging computation to real drug discovery.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-18-aethercell-virtual-cell-drug-discovery.mp3" length="1116957" type="audio/mpeg"/>
