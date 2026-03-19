@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Samyama: Open Biomedical Knowledge Graphs With AI Agent Access via MCP</title>
+      <description>A new arXiv preprint introduces Samyama, a Rust-based graph database that federates three open-source biomedical knowledge graphs — Pathways KG (Reactome, STRING, etc.), Clinical Trials KG (7.8M nodes from ClinicalTrials.gov), and Drug Interactions KG (DrugBank, DGIdb, SIDER) — into a single 7.9M-node, 28M-edge graph that loads in 3 minutes on commodity hardware. The key innovation: schema-driven MCP server generation for LLM agent access, hitting 98% accuracy on a new BiomedQA benchmark vs. 85% for text-to-Cypher and 75% for standalone GPT-4o. MCP is consolidating as the interoperability standard for agentic science — this week it's knowledge graphs, last week it was protein engineering tools.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-19-samyama-biomedical-knowledge-graphs.mp3" length="1234173" type="audio/mpeg"/>
+      <guid>2026-03-19-samyama-biomedical-knowledge-graphs</guid>
+      <pubDate>Thu, 19 Mar 2026 13:43:00 +0000</pubDate>
+      <itunes:duration>206</itunes:duration>
+      <itunes:summary>Deep dive on Samyama, an open-source graph database federating biomedical KGs from Reactome, STRING, ClinicalTrials.gov, DrugBank, and more — with automatic MCP server generation for AI agent access achieving 98% accuracy on pharmacology questions.</itunes:summary>
+    </item>
+
+    <item>
       <title>Deep Dive: The AI Co-Scientist Is Here</title>
       <description>Nature Medicine's David Adam reports that AI has crossed a threshold — from data analysis tool to hypothesis generator with experimental validation. We trace the evidence: Google DeepMind's AI co-scientist system (Gemini 2.0 multi-agent) matched an unpublished Cell paper result on bacterial gene transfer, identified novel liver fibrosis targets validated in human organoids, and proposed AML drug candidates effective at clinical doses. Plus Insilico Medicine's rentosertib — an AI-discovered drug against an AI-discovered target — reaching Phase 2a trials for pulmonary fibrosis. We also cover the Stanford counterpoint showing LLM ideas degrade after execution, and TxGNN's knowledge-graph approach to zero-shot drug repurposing. The takeaway: AI co-scientists are real, but they run on the structured knowledge infrastructure that humans build.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-18-deepdive-ai-coscientist.mp3" length="2412381" type="audio/mpeg"/>
