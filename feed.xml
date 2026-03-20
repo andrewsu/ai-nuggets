@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>The Validity Gap: Health AI Benchmarks Don't Represent Real Patients</title>
+      <description>A new arXiv paper analyzes nearly 19,000 consumer health queries across six major benchmarks for health LLMs and reveals a structural validity gap. While 42% of queries reference objective data, it's dominated by wellness wearables (18%) while lab values (5%), imaging (4%), and medical records (&lt;1%) are rare. Safety-critical scenarios are nearly absent: suicide/self-harm under 0.7%, chronic disease management only 5.5%, and vulnerable populations under 11%. The authors argue the field needs standardized query profiling analogous to clinical trial reporting — because a benchmark that doesn't characterize its population is as suspect as a clinical trial that doesn't report inclusion criteria.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-20-validity-gap-health-ai-benchmarks.mp3" length="986925" type="audio/mpeg"/>
+      <guid>2026-03-20-validity-gap-health-ai-benchmarks</guid>
+      <pubDate>Fri, 20 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>164</itunes:duration>
+      <itunes:summary>Deep dive on a new arXiv analysis revealing that health AI benchmarks are structurally misaligned with clinical reality — missing safety-critical scenarios, vulnerable populations, and complex clinical inputs.</itunes:summary>
+    </item>
+
+    <item>
       <title>Samyama: Open Biomedical Knowledge Graphs With AI Agent Access via MCP</title>
       <description>A new arXiv preprint introduces Samyama, a Rust-based graph database that federates three open-source biomedical knowledge graphs — Pathways KG (Reactome, STRING, etc.), Clinical Trials KG (7.8M nodes from ClinicalTrials.gov), and Drug Interactions KG (DrugBank, DGIdb, SIDER) — into a single 7.9M-node, 28M-edge graph that loads in 3 minutes on commodity hardware. The key innovation: schema-driven MCP server generation for LLM agent access, hitting 98% accuracy on a new BiomedQA benchmark vs. 85% for text-to-Cypher and 75% for standalone GPT-4o. MCP is consolidating as the interoperability standard for agentic science — this week it's knowledge graphs, last week it was protein engineering tools.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-19-samyama-biomedical-knowledge-graphs.mp3" length="1234173" type="audio/mpeg"/>
