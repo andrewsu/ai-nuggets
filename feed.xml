@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Multilingual Biology: Coupling Codon and Protein Language Models for Variant Pathogenicity</title>
+      <description>A new bioRxiv preprint couples a codon language model (CaLM) with ESM protein language model to create a "multilingual" approach to variant pathogenicity prediction. By capturing constraints at both the DNA codon level and protein level simultaneously, the dual model achieves a 3% ROC-AUC improvement classifying disease effects across 137,350 ClinVar missense variants in ~14,000 genes. The key insight: codon-level models uniquely differentiate synonymous from nonsense mutations and capture regulatory constraints invisible to protein-only models, while protein models capture structural and functional constraints. Combining both decouples protein-intrinsic defects from regulatory drivers of pathogenicity.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-21-multilingual-variant-pathogenicity.mp3" length="1374336" type="audio/mpeg"/>
+      <guid>2026-03-21-multilingual-variant-pathogenicity</guid>
+      <pubDate>Sat, 21 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>229</itunes:duration>
+      <itunes:summary>Deep dive on a bioRxiv preprint that treats variant pathogenicity as a multilingual problem — coupling codon and protein language models to decouple DNA-level regulatory constraints from protein-level structural effects.</itunes:summary>
+    </item>
+
+    <item>
       <title>The Validity Gap: Health AI Benchmarks Don't Represent Real Patients</title>
       <description>A new arXiv paper analyzes nearly 19,000 consumer health queries across six major benchmarks for health LLMs and reveals a structural validity gap. While 42% of queries reference objective data, it's dominated by wellness wearables (18%) while lab values (5%), imaging (4%), and medical records (&lt;1%) are rare. Safety-critical scenarios are nearly absent: suicide/self-harm under 0.7%, chronic disease management only 5.5%, and vulnerable populations under 11%. The authors argue the field needs standardized query profiling analogous to clinical trial reporting — because a benchmark that doesn't characterize its population is as suspect as a clinical trial that doesn't report inclusion criteria.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-20-validity-gap-health-ai-benchmarks.mp3" length="986925" type="audio/mpeg"/>
