@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>X-Cell: Power-Law Scaling Hits Perturbation Biology</title>
+      <description>Xaira Therapeutics drops the largest causal perturbation model to date — X-Cell, a 4.9B-parameter diffusion language model trained on 25.6 million CRISPRi Perturb-seq single-cell transcriptomes across 16 diverse biological contexts. The headline result: perturbation prediction follows power-law scaling with exponents matching LLMs, suggesting a foundation model moment for cell biology. X-Cell outperforms existing methods by up to 5x on key metrics and demonstrates zero-shot generalization to novel cell types including primary human T cells — directly relevant to immunotherapy target discovery.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-22-xcell-perturbation-scaling.mp3" length="1534557" type="audio/mpeg"/>
+      <guid>2026-03-22-xcell-perturbation-scaling</guid>
+      <pubDate>Sun, 22 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>256</itunes:duration>
+      <itunes:summary>Deep dive on X-Cell from Xaira Therapeutics — a 4.9B-parameter diffusion language model showing that perturbation prediction follows power-law scaling, trained on the largest CRISPRi Perturb-seq dataset ever assembled.</itunes:summary>
+    </item>
+
+    <item>
       <title>Multilingual Biology: Coupling Codon and Protein Language Models for Variant Pathogenicity</title>
       <description>A new bioRxiv preprint couples a codon language model (CaLM) with ESM protein language model to create a "multilingual" approach to variant pathogenicity prediction. By capturing constraints at both the DNA codon level and protein level simultaneously, the dual model achieves a 3% ROC-AUC improvement classifying disease effects across 137,350 ClinVar missense variants in ~14,000 genes. The key insight: codon-level models uniquely differentiate synonymous from nonsense mutations and capture regulatory constraints invisible to protein-only models, while protein models capture structural and functional constraints. Combining both decouples protein-intrinsic defects from regulatory drivers of pathogenicity.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-21-multilingual-variant-pathogenicity.mp3" length="1374336" type="audio/mpeg"/>
