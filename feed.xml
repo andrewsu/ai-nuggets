@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>PandaClaw: Insilico Medicine Bets Agentic AI Can Replace Your Bioinformatician</title>
+      <description>Insilico Medicine launches PandaClaw, an agentic AI feature built on LangChain/LangGraph that lets biologists run complex multi-omics analyses through natural language. With 140+ scientific skills and 1,000+ bioinformatics tools orchestrated by an autonomous agent, PandaClaw formulates multi-step analytical workflows, cross-references datasets from multiple sources, self-corrects in a sandbox, and produces figure-rich reports with full data provenance. It's the commercial realization of the same tool-orchestration pattern we've been tracking in academic projects like ProteinMCP and ChatSpatial — and the latest step in Insilico's progression from ChatPandaGPT to fully autonomous biological analysis.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-24-pandaclaw-agentic-drug-discovery.mp3" length="1534125" type="audio/mpeg"/>
+      <guid>2026-03-24-pandaclaw-agentic-drug-discovery</guid>
+      <pubDate>Tue, 24 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>255</itunes:duration>
+      <itunes:summary>Deep dive on Insilico Medicine's PandaClaw — an agentic AI system with 140+ scientific skills that autonomously executes multi-omics research workflows through natural language, and what it signals about the convergence of tool orchestration patterns in biomedical AI.</itunes:summary>
+    </item>
+
+    <item>
       <title>FAIR Data Gets an AI Upgrade: Multi-Agent LLMs for Biological Data Curation</title>
       <description>A substantially revised bioRxiv preprint from TAIR's Tanya Berardini and colleagues demonstrates a multi-agent LLM architecture for enforcing FAIR data principles in MorphoBank, an open-access morphological data repository. The system extracts, structures, and standardizes character data from published literature into machine-readable NEXUS format, automating one of biology's most tedious bottlenecks. Refreshingly honest about limitations — performance degrades on messy inputs — but provides a concrete, open-source blueprint for LLM-assisted FAIR curation adaptable to drug annotations, phenotype databases, and beyond.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-23-fair-data-llm-curation.mp3" length="1026144" type="audio/mpeg"/>
