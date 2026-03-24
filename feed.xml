@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Medea: A Verification-Aware AI Agent for Transparent Omics-Driven Drug Discovery</title>
+      <description>Harvard Medical School's Medea is an AI agent that executes transparent, multi-step omics analyses for therapeutic discovery — making every intermediate decision explicit and verifiable. With four modules (research planning, code execution with pre/post checks, literature reasoning with evidence-strength assessment, and cross-evidence consensus) and 20 integrated tools spanning single-cell RNA-seq, bulk transcriptomics, cancer dependency maps, and ML models, Medea was evaluated across 5,679 analyses in target identification, synthetic lethality reasoning, and immunotherapy response prediction. It improved performance by up to 46%, 22%, and 24% respectively over existing approaches. The key insight: verification-aware agents work better because transparency forces better reasoning, not just more efficient automation.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-25-medea-omics-agent-therapeutic-discovery.mp3" length="4014123" type="audio/mpeg"/>
+      <guid>2026-03-25-medea-omics-agent-therapeutic-discovery</guid>
+      <pubDate>Tue, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <itunes:duration>251</itunes:duration>
+      <itunes:summary>Deep dive on Medea from Harvard Medical School — a verification-aware AI agent that executes transparent multi-step omics analyses across 20 tools, evaluated on nearly 6,000 analyses in target identification, synthetic lethality, and immunotherapy prediction.</itunes:summary>
+    </item>
+
+    <item>
       <title>PandaClaw: Insilico Medicine Bets Agentic AI Can Replace Your Bioinformatician</title>
       <description>Insilico Medicine launches PandaClaw, an agentic AI feature built on LangChain/LangGraph that lets biologists run complex multi-omics analyses through natural language. With 140+ scientific skills and 1,000+ bioinformatics tools orchestrated by an autonomous agent, PandaClaw formulates multi-step analytical workflows, cross-references datasets from multiple sources, self-corrects in a sandbox, and produces figure-rich reports with full data provenance. It's the commercial realization of the same tool-orchestration pattern we've been tracking in academic projects like ProteinMCP and ChatSpatial — and the latest step in Insilico's progression from ChatPandaGPT to fully autonomous biological analysis.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-24-pandaclaw-agentic-drug-discovery.mp3" length="1534125" type="audio/mpeg"/>
