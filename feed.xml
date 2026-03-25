@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Genomebook: What If You Could Breed AI Agents Using Mendelian Genetics?</title>
+      <description>A new bioRxiv preprint introduces Genomebook, a system that encodes LLM agent behavior across 60 diploid loci with additive, dominant, and recessive inheritance. Twenty founder agents reproduce sexually via Mendelian segregation with de novo mutation, creating heritable behavioral variation under selective pressure. Over eight generations (626 agents), trait trajectories track encoded selection rules — leadership rises under dominant inheritance, obsessive focus declines under fitness penalties — while non-genetic controls produce flat baselines. It's a genuinely novel parameterization layer that leverages population genetics to evolve AI agent populations rather than hand-design them.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-25-genomebook-mendelian-llm-agents.mp3" length="3638378" type="audio/mpeg"/>
+      <guid>2026-03-25-genomebook-mendelian-llm-agents</guid>
+      <pubDate>Wed, 25 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>227</itunes:duration>
+      <itunes:summary>Deep dive on Genomebook — a bioRxiv preprint that uses Mendelian inheritance with diploid loci, sexual reproduction, and natural selection to create heritable behavioral variation in LLM agent populations, bridging evolutionary biology and AI agent design.</itunes:summary>
+    </item>
+
+    <item>
       <title>PandaClaw: Insilico Medicine Bets Agentic AI Can Replace Your Bioinformatician</title>
       <description>Insilico Medicine launches PandaClaw, an agentic AI feature built on LangChain/LangGraph that lets biologists run complex multi-omics analyses through natural language. With 140+ scientific skills and 1,000+ bioinformatics tools orchestrated by an autonomous agent, PandaClaw formulates multi-step analytical workflows, cross-references datasets from multiple sources, self-corrects in a sandbox, and produces figure-rich reports with full data provenance. It's the commercial realization of the same tool-orchestration pattern we've been tracking in academic projects like ProteinMCP and ChatSpatial — and the latest step in Insilico's progression from ChatPandaGPT to fully autonomous biological analysis.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-24-pandaclaw-agentic-drug-discovery.mp3" length="1534125" type="audio/mpeg"/>
