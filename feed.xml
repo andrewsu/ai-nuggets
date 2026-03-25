@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>The Virtual Biotech: An AI-Staffed Drug Company That Actually Found Something New</title>
+      <description>A team built the Virtual Biotech — a simulated biotech company with 11 AI agents across four divisions, led by a virtual CSO, using over 100 MCP-server tools to integrate massive biomedical datasets. In its headline demo, 37,000+ parallel agents curated outcomes from nearly 56,000 clinical trials and discovered that drugs targeting cell-type-specific genes (from the Tabula Sapiens single-cell atlas) were 40% more likely to advance from Phase I to Phase II, 48% more likely to reach market, and showed 32% lower adverse event rates — a novel, potentially actionable finding linking single-cell biology to clinical success. Additional case studies evaluated B7-H3 as a lung cancer ADC target and analyzed a terminated ulcerative colitis trial targeting OSMRβ.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-25-virtual-biotech-multi-agent-drug-discovery.mp3" length="3756243" type="audio/mpeg"/>
+      <guid>2026-03-25-virtual-biotech-multi-agent-drug-discovery</guid>
+      <pubDate>Tue, 25 Mar 2026 03:07:00 +0000</pubDate>
+      <itunes:duration>235</itunes:duration>
+      <itunes:summary>Deep dive on the Virtual Biotech — a multi-agent AI framework that mirrors a real biotech company's structure for end-to-end drug discovery, featuring 37,000+ parallel agents curating clinical trial outcomes and a novel finding linking single-cell gene expression to trial success.</itunes:summary>
+    </item>
+
+    <item>
       <title>Medea: A Verification-Aware AI Agent for Transparent Omics-Driven Drug Discovery</title>
       <description>Harvard Medical School's Medea is an AI agent that executes transparent, multi-step omics analyses for therapeutic discovery — making every intermediate decision explicit and verifiable. With four modules (research planning, code execution with pre/post checks, literature reasoning with evidence-strength assessment, and cross-evidence consensus) and 20 integrated tools spanning single-cell RNA-seq, bulk transcriptomics, cancer dependency maps, and ML models, Medea was evaluated across 5,679 analyses in target identification, synthetic lethality reasoning, and immunotherapy response prediction. It improved performance by up to 46%, 22%, and 24% respectively over existing approaches. The key insight: verification-aware agents work better because transparency forces better reasoning, not just more efficient automation.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-25-medea-omics-agent-therapeutic-discovery.mp3" length="4014123" type="audio/mpeg"/>
