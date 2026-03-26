@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Genomic Foundation Models: Are We Just Training Expensive Random Baselines?</title>
+      <description>A bioRxiv preprint benchmarks seven genomic foundation models across 52 tasks and finds that randomly initialized models are surprisingly competitive — character-level models often match or beat larger pretrained k-mer and BPE models. The tokenizer, not pretraining, is the hidden kingmaker. Worse, current GFMs show very limited sensitivity to clinically relevant genetic variants. The paper argues the field needs biologically informed tokenization and variant-aware objectives, not just bigger models on more sequences.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-26-gfm-random-baselines.mp3" length="3094195" type="audio/mpeg"/>
+      <guid>2026-03-26-gfm-random-baselines</guid>
+      <pubDate>Thu, 26 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>193</itunes:duration>
+      <itunes:summary>Deep dive on a provocative benchmarking study showing that randomly initialized genomic models are surprisingly competitive with pretrained foundation models, challenging the assumption that NLP-style pretraining strategies transfer well to genomics.</itunes:summary>
+    </item>
+
+    <item>
       <title>Genomebook: What If You Could Breed AI Agents Using Mendelian Genetics?</title>
       <description>A new bioRxiv preprint introduces Genomebook, a system that encodes LLM agent behavior across 60 diploid loci with additive, dominant, and recessive inheritance. Twenty founder agents reproduce sexually via Mendelian segregation with de novo mutation, creating heritable behavioral variation under selective pressure. Over eight generations (626 agents), trait trajectories track encoded selection rules — leadership rises under dominant inheritance, obsessive focus declines under fitness penalties — while non-genetic controls produce flat baselines. It's a genuinely novel parameterization layer that leverages population genetics to evolve AI agent populations rather than hand-design them.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-25-genomebook-mendelian-llm-agents.mp3" length="3638378" type="audio/mpeg"/>
