@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>VIOLIN: Can LLMs Quality-Control Their Own Knowledge Graph Extractions?</title>
+      <description>A new bioRxiv preprint from the Miskov-Zivanov lab introduces VIOLIN, a configurable framework that formally reconciles LLM-extracted molecular interactions against curated knowledge graphs — classifying each as corroboration, contradiction, flagged case, or extension. Benchmarked with GPT-4.1 and Llama 3 alongside traditional NLP systems REACH and INDRA, VIOLIN shows that LLMs produce reconciliation-stable results comparable to purpose-built extractors, with extensions (genuinely new information) dominating across all systems. Open source and directly useful for anyone integrating automated literature mining into biomedical knowledge graph curation.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-28-violin-kg-reconciliation.mp3" length="2931609" type="audio/mpeg"/>
+      <guid>2026-03-28-violin-kg-reconciliation</guid>
+      <pubDate>Sat, 28 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>183</itunes:duration>
+      <itunes:summary>Deep dive on VIOLIN — a framework for reconciling LLM-extracted molecular interactions against structured knowledge graphs, benchmarking GPT-4.1 and Llama 3 against traditional NLP systems for biomedical curation quality control.</itunes:summary>
+    </item>
+
+    <item>
       <title>Genomic Foundation Models: Are We Just Training Expensive Random Baselines?</title>
       <description>A bioRxiv preprint benchmarks seven genomic foundation models across 52 tasks and finds that randomly initialized models are surprisingly competitive — character-level models often match or beat larger pretrained k-mer and BPE models. The tokenizer, not pretraining, is the hidden kingmaker. Worse, current GFMs show very limited sensitivity to clinically relevant genetic variants. The paper argues the field needs biologically informed tokenization and variant-aware objectives, not just bigger models on more sequences.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-26-gfm-random-baselines.mp3" length="3094195" type="audio/mpeg"/>
