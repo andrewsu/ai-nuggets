@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>OmicClaw: Talk to Your Multi-Omics Data Like It's a Colleague</title>
+      <description>OmicClaw is a new bioRxiv preprint introducing an executable natural-language framework for multi-omics analysis built on the OmicVerse ecosystem. Instead of unconstrained code generation, its J.A.R.V.I.S. runtime translates user requests into traceable, provenance-tracked workflows over live omics objects — spanning scRNA-seq, spatial transcriptomics, ATAC-seq, CITE-seq and more. It exposes an MCP-compatible server, making it callable by other AI agents, and benchmarks show it outperforms bare LLM baselines especially on complex multi-step workflows. Open source under CC-BY.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-29-omicclaw-multi-omics-agent.mp3" length="3920501" type="audio/mpeg"/>
+      <guid>2026-03-29-omicclaw-multi-omics-agent</guid>
+      <pubDate>Sun, 29 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>245</itunes:duration>
+      <itunes:summary>Deep dive on OmicClaw — a natural-language AI agent framework for reproducible multi-omics analysis with MCP integration, provenance tracking, and benchmarked improvements over raw LLM code generation.</itunes:summary>
+    </item>
+
+    <item>
       <title>VIOLIN: Can LLMs Quality-Control Their Own Knowledge Graph Extractions?</title>
       <description>A new bioRxiv preprint from the Miskov-Zivanov lab introduces VIOLIN, a configurable framework that formally reconciles LLM-extracted molecular interactions against curated knowledge graphs — classifying each as corroboration, contradiction, flagged case, or extension. Benchmarked with GPT-4.1 and Llama 3 alongside traditional NLP systems REACH and INDRA, VIOLIN shows that LLMs produce reconciliation-stable results comparable to purpose-built extractors, with extensions (genuinely new information) dominating across all systems. Open source and directly useful for anyone integrating automated literature mining into biomedical knowledge graph curation.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-28-violin-kg-reconciliation.mp3" length="2931609" type="audio/mpeg"/>
