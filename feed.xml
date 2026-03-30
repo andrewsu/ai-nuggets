@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>The AI Scientist Lands in Nature: End-to-End Automated Research Is Here</title>
+      <description>A Nature paper by Chris Lu, Cong Lu, Jeff Clune and colleagues introduces The AI Scientist — a fully autonomous pipeline that generates hypotheses, searches literature, runs experiments, writes manuscripts, and reviews its own work. One AI-generated paper passed first-round peer review at an ICLR workshop. Paper quality scales with both model capability and compute, signaling rapid improvement ahead. The methodology is domain-agnostic in principle, with direct implications for computational biology and any in-silico science.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-30-ai-scientist-nature.mp3" length="3573595" type="audio/mpeg"/>
+      <guid>2026-03-30-ai-scientist-nature</guid>
+      <pubDate>Mon, 30 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>223</itunes:duration>
+      <itunes:summary>Deep dive on The AI Scientist — published in Nature, a fully autonomous research pipeline that generates ideas, runs experiments, writes papers, and passed peer review at ICLR. What it means for computational biology.</itunes:summary>
+    </item>
+
+    <item>
       <title>OmicClaw: Talk to Your Multi-Omics Data Like It's a Colleague</title>
       <description>OmicClaw is a new bioRxiv preprint introducing an executable natural-language framework for multi-omics analysis built on the OmicVerse ecosystem. Instead of unconstrained code generation, its J.A.R.V.I.S. runtime translates user requests into traceable, provenance-tracked workflows over live omics objects — spanning scRNA-seq, spatial transcriptomics, ATAC-seq, CITE-seq and more. It exposes an MCP-compatible server, making it callable by other AI agents, and benchmarks show it outperforms bare LLM baselines especially on complex multi-step workflows. Open source under CC-BY.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-29-omicclaw-multi-omics-agent.mp3" length="3920501" type="audio/mpeg"/>
