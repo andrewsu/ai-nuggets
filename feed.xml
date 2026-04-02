@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>LabOS: The AI Co-Scientist That Sees What You See in the Lab</title>
+      <description>LabOS from Stanford and Princeton is the first AI co-scientist that bridges computational reasoning and physical experimentation. By connecting multi-model AI agents, smart glasses, and lab robots through an XR operating system, it creates a persistent AI presence that perceives bench work in real time. Extending CRISPR-GPT to the physical lab via the new LabClaw integration, it's been demonstrated in cancer immunotherapy, stem-cell engineering, and materials science. Addresses the reproducibility crisis head-on — 70% of scientists can't reproduce colleagues' work. Showcased at NVIDIA GTC 2026 alongside a wave of agentic AI tools for life sciences.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-02-labos-ai-xr-co-scientist.mp3" length="1741005" type="audio/mpeg"/>
+      <guid>2026-04-02-labos-ai-xr-co-scientist</guid>
+      <pubDate>Thu, 02 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>216</itunes:duration>
+      <itunes:summary>Deep dive on LabOS — the first AI co-scientist connecting AI agents, smart glasses, and robots to physical lab experiments. From Stanford and Princeton, showcased at NVIDIA GTC 2026.</itunes:summary>
+    </item>
+
+    <item>
       <title>Latent-Y: An AI Agent That Designs Antibodies From a Text Prompt — And They Actually Work</title>
       <description>Latent-Y is an autonomous AI agent from Latent Labs that runs complete antibody design campaigns from text prompts — literature review, target analysis, epitope identification, candidate design, computational validation, and lab-ready sequence selection — all end-to-end. Across nine targets, it produced lab-confirmed nanobody binders against six (67% hit rate) with single-digit nanomolar affinities, zero human filtering. Experts completed campaigns 56x faster. The architecture extends to macrocyclic peptides and mini-binders via their general-purpose Latent-X2 generative model, making it a broad autonomous biologics design system with real wet-lab validation.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-01-latent-y-autonomous-antibody-design.mp3" length="1548669" type="audio/mpeg"/>
