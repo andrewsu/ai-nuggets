@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>mRNA-GPT: A Generative Transformer That Designs Full-Length mRNA Therapeutics With RL</title>
+      <description>mRNA-GPT is a generative pre-trained transformer for end-to-end full-length mRNA sequence design, jointly optimizing 5' UTR, CDS, and 3' UTR — unlike existing tools that treat each region in isolation. Pre-trained on 30 million natural mRNA sequences and fine-tuned with Proximal Policy Optimization (PPO) using reward signals for half-life and translation efficiency, it achieves Pareto-optimal designs balancing competing biophysical properties. Outperforms state-of-the-art on 3' UTR stability, CDS translation rate, and full-length design benchmarks. A significant step toward AI-driven mRNA therapeutic design that captures cross-region regulatory interactions.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-04-mrna-gpt-generative-design.mp3" length="1201104" type="audio/mpeg"/>
+      <guid>2026-04-04-mrna-gpt-generative-design</guid>
+      <pubDate>Sat, 04 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>200</itunes:duration>
+      <itunes:summary>Deep dive on mRNA-GPT — a generative transformer trained on 30M mRNA sequences and fine-tuned with reinforcement learning to design full-length mRNA therapeutics with optimized stability and translation efficiency.</itunes:summary>
+    </item>
+
+    <item>
       <title>CORAL: When AI Agents Evolve Their Own Discovery Strategies</title>
       <description>CORAL from MIT, NUS, and CMU is the first framework for autonomous multi-agent evolution on open-ended problems. Instead of fixed heuristics, it deploys long-running LLM agents that explore, reflect, and collaborate through shared persistent memory, asynchronous execution, and heartbeat-based interventions. Across 10 tasks in math, algorithms, and systems optimization, CORAL achieves 3-10x higher improvement rates than evolutionary baselines with fewer evaluations. On Anthropic's kernel engineering benchmark, four co-evolving agents improved the best score from 1363 to 1103 cycles. Open-source and directly applicable to scientific discovery workflows like drug design and protein engineering.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-03-coral-multi-agent-evolution.mp3" length="1060128" type="audio/mpeg"/>
