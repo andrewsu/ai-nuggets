@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>BioMedAgent: The Self-Evolving Multi-Agent AI Data Scientist for Biomedicine</title>
+      <description>BioMedAgent, published in Nature Biomedical Engineering, is a self-evolving multi-agent LLM framework that autonomously learns to use bioinformatics tools and chains them into executable workflows from natural-language prompts. Using Collective Memory Accumulation and Iterative Memory Feedback, it builds reusable tool-usage knowledge that improves with each analysis. Evaluated on a new open benchmark (BioMed-AQA, 327 questions) spanning genomics, transcriptomics, proteomics, and clinical data. Open-source code and benchmarks available — the most credible attempt yet at an autonomous bioinformatics data scientist.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-05-biomedagent-self-evolving-bioinformatics.mp3" length="1629885" type="audio/mpeg"/>
+      <guid>2026-04-05-biomedagent-self-evolving-bioinformatics</guid>
+      <pubDate>Sun, 05 Apr 2026 16:19:00 +0000</pubDate>
+      <itunes:duration>271</itunes:duration>
+      <itunes:summary>Deep dive on BioMedAgent — a self-evolving multi-agent LLM framework from Nature Biomedical Engineering that autonomously learns to chain bioinformatics tools into complete analysis workflows, with open benchmarks and open-source code.</itunes:summary>
+    </item>
+
+    <item>
       <title>mRNA-GPT: A Generative Transformer That Designs Full-Length mRNA Therapeutics With RL</title>
       <description>mRNA-GPT is a generative pre-trained transformer for end-to-end full-length mRNA sequence design, jointly optimizing 5' UTR, CDS, and 3' UTR — unlike existing tools that treat each region in isolation. Pre-trained on 30 million natural mRNA sequences and fine-tuned with Proximal Policy Optimization (PPO) using reward signals for half-life and translation efficiency, it achieves Pareto-optimal designs balancing competing biophysical properties. Outperforms state-of-the-art on 3' UTR stability, CDS translation rate, and full-length design benchmarks. A significant step toward AI-driven mRNA therapeutic design that captures cross-region regulatory interactions.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-04-mrna-gpt-generative-design.mp3" length="1201104" type="audio/mpeg"/>
