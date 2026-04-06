@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>DrugPlayGround: Can LLMs Actually Reason About Drug Discovery?</title>
+      <description>DrugPlayGround is a new benchmarking framework for evaluating LLM performance across four critical drug discovery tasks: physicochemical property description, drug synergism prediction, drug-protein interaction modeling, and physiological perturbation response. Unlike narrow benchmarks, it spans the full pipeline and requires models to generate expert-level explanations — not just predictions. The gap between text fluency and genuine chemical-biological reasoning turns out to be significant. A much-needed reality check for the AI-drug-discovery hype cycle.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-06-drugplayground-llm-benchmark.mp3" length="780333" type="audio/mpeg"/>
+      <guid>2026-04-06-drugplayground-llm-benchmark</guid>
+      <pubDate>Mon, 06 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>195</itunes:duration>
+      <itunes:summary>Deep dive on DrugPlayGround — a new framework benchmarking LLMs on drug discovery tasks including drug synergism, drug-protein interactions, and perturbation responses. Requires explainable reasoning, not just predictions.</itunes:summary>
+    </item>
+
+    <item>
       <title>BioMedAgent: The Self-Evolving Multi-Agent AI Data Scientist for Biomedicine</title>
       <description>BioMedAgent, published in Nature Biomedical Engineering, is a self-evolving multi-agent LLM framework that autonomously learns to use bioinformatics tools and chains them into executable workflows from natural-language prompts. Using Collective Memory Accumulation and Iterative Memory Feedback, it builds reusable tool-usage knowledge that improves with each analysis. Evaluated on a new open benchmark (BioMed-AQA, 327 questions) spanning genomics, transcriptomics, proteomics, and clinical data. Open-source code and benchmarks available — the most credible attempt yet at an autonomous bioinformatics data scientist.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-05-biomedagent-self-evolving-bioinformatics.mp3" length="1629885" type="audio/mpeg"/>
