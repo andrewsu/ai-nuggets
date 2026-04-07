@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>10 Out of 12: Widespread Data Leakage Is Corrupting Cancer Drug Response Prediction</title>
+      <description>A new bioRxiv preprint audits the cancer drug response prediction field and finds that 10 out of 12 recently published methods — including deep learning approaches — suffer from data leakage caused by supervised feature screening before cross-validation splits. Leakage-free evaluation increases MSE by 16.6% and yields almost entirely different biomarker sets (Jaccard 0.18). The authors provide an open audit guide, reference implementation, and a new tissue-aware Data Shared Elastic Net (DSEN) that improves predictions for 66% of drugs under correct evaluation. A critical methodology wake-up call for anyone doing ML in biomedicine.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-07-data-leakage-drug-response.mp3" length="1210413" type="audio/mpeg"/>
+      <guid>2026-04-07-data-leakage-drug-response</guid>
+      <pubDate>Tue, 07 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>202</itunes:duration>
+      <itunes:summary>Deep dive on a bioRxiv preprint showing that 10 of 12 cancer drug response prediction methods suffer from data leakage, inflating performance by 16.6% and producing artifactual biomarker sets. Includes an open audit guide and a new leakage-free method.</itunes:summary>
+    </item>
+
+    <item>
       <title>DrugPlayGround: Can LLMs Actually Reason About Drug Discovery?</title>
       <description>DrugPlayGround is a new benchmarking framework for evaluating LLM performance across four critical drug discovery tasks: physicochemical property description, drug synergism prediction, drug-protein interaction modeling, and physiological perturbation response. Unlike narrow benchmarks, it spans the full pipeline and requires models to generate expert-level explanations — not just predictions. The gap between text fluency and genuine chemical-biological reasoning turns out to be significant. A much-needed reality check for the AI-drug-discovery hype cycle.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-06-drugplayground-llm-benchmark.mp3" length="780333" type="audio/mpeg"/>
