@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Article Galaxy MCP: AI Agents Can Now Find, License, and Access Scientific Papers</title>
+      <description>Research Solutions launched Article Galaxy MCP, an integration that lets AI agents — via Claude, ChatGPT, Cursor, or any MCP-compatible tool — search scientific literature, check access rights, and acquire articles without leaving the AI workflow. Beyond convenience, it manages AI rights and text-data-mining compliance programmatically, solving a key bottleneck for automated research pipelines. Combined with Scite MCP for citation analysis, this is real infrastructure for building autonomous scientific agents.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-08-article-galaxy-mcp.mp3" length="1025805" type="audio/mpeg"/>
+      <guid>2026-04-08-article-galaxy-mcp</guid>
+      <pubDate>Wed, 08 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>171</itunes:duration>
+      <itunes:summary>Deep dive on Article Galaxy MCP — a new integration that gives AI agents the ability to search, license, and access scientific literature via the Model Context Protocol, with built-in AI rights management and compliance.</itunes:summary>
+    </item>
+
+    <item>
       <title>10 Out of 12: Widespread Data Leakage Is Corrupting Cancer Drug Response Prediction</title>
       <description>A new bioRxiv preprint audits the cancer drug response prediction field and finds that 10 out of 12 recently published methods — including deep learning approaches — suffer from data leakage caused by supervised feature screening before cross-validation splits. Leakage-free evaluation increases MSE by 16.6% and yields almost entirely different biomarker sets (Jaccard 0.18). The authors provide an open audit guide, reference implementation, and a new tissue-aware Data Shared Elastic Net (DSEN) that improves predictions for 66% of drugs under correct evaluation. A critical methodology wake-up call for anyone doing ML in biomedicine.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-07-data-leakage-drug-response.mp3" length="1210413" type="audio/mpeg"/>
