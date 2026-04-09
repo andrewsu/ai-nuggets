@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>CIViC MCP: Giving LLMs Direct Access to Cancer Variant Knowledge</title>
+      <description>The Griffith Lab released CIViC MCP, an open-source Model Context Protocol server that lets LLMs directly query the Clinical Interpretation of Variants in Cancer knowledgebase via natural language. Instead of manually searching CIViC for variant evidence, clinicians and researchers can now ask an AI assistant about the clinical significance of specific cancer mutations and get back expertly curated, structured interpretations. It works with Claude and GPT-5, the code is on GitHub, and evaluation data is on Zenodo. For anyone building biomedical knowledge resources, this is the template for how LLMs will interface with curated scientific databases.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-09-civic-mcp-server.mp3" length="1354752" type="audio/mpeg"/>
+      <guid>2026-04-09-civic-mcp-server</guid>
+      <pubDate>Wed, 09 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>225</itunes:duration>
+      <itunes:summary>Deep dive on CIViC MCP — an open-source MCP server from the Griffith Lab that gives LLMs direct, structured access to the CIViC cancer variant knowledgebase, enabling natural language queries over expertly curated clinical interpretations.</itunes:summary>
+    </item>
+
+    <item>
       <title>Article Galaxy MCP: AI Agents Can Now Find, License, and Access Scientific Papers</title>
       <description>Research Solutions launched Article Galaxy MCP, an integration that lets AI agents — via Claude, ChatGPT, Cursor, or any MCP-compatible tool — search scientific literature, check access rights, and acquire articles without leaving the AI workflow. Beyond convenience, it manages AI rights and text-data-mining compliance programmatically, solving a key bottleneck for automated research pipelines. Combined with Scite MCP for citation analysis, this is real infrastructure for building autonomous scientific agents.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-08-article-galaxy-mcp.mp3" length="1025805" type="audio/mpeg"/>
