@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>100 Parameters Beat Billions: Genomic Language Models Fail to Learn Positional Regulatory Logic</title>
+      <description>A new preprint introduces the Mechanistic Invariance Test, a 650-sequence benchmark that exposes a universal failure in genomic foundation models. Five gLMs spanning all major architectures — including Evo2-1B and Caduceus — appear to detect regulatory elements but are actually just tracking AT nucleotide content (r=0.78-0.96). None learn positional regulatory grammar. Evo2 scores elements at wrong positions higher than correct ones. All models are strand-blind. Compositional effects dominate positional effects 46-fold. A 100-parameter position-aware PWM achieves perfect performance, proving the failure is about misaligned inductive biases, not capacity. Scaling makes it worse. Essential reading before deploying these models in gene therapy or clinical variant interpretation.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-10-genomic-lm-positional-failure.mp3" length="1038816" type="audio/mpeg"/>
+      <guid>2026-04-10-genomic-lm-positional-failure</guid>
+      <pubDate>Fri, 10 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>173</itunes:duration>
+      <itunes:summary>Deep dive on the Mechanistic Invariance Test — a devastating benchmark showing that genomic foundation models capture surface statistics (AT content) while completely missing the positional grammar of gene regulation. A 100-parameter PWM outperforms billion-parameter models.</itunes:summary>
+    </item>
+
+    <item>
       <title>CIViC MCP: Giving LLMs Direct Access to Cancer Variant Knowledge</title>
       <description>The Griffith Lab released CIViC MCP, an open-source Model Context Protocol server that lets LLMs directly query the Clinical Interpretation of Variants in Cancer knowledgebase via natural language. Instead of manually searching CIViC for variant evidence, clinicians and researchers can now ask an AI assistant about the clinical significance of specific cancer mutations and get back expertly curated, structured interpretations. It works with Claude and GPT-5, the code is on GitHub, and evaluation data is on Zenodo. For anyone building biomedical knowledge resources, this is the template for how LLMs will interface with curated scientific databases.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-09-civic-mcp-server.mp3" length="1354752" type="audio/mpeg"/>
