@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>SimpleFold-Turbo: A Video Diffusion Trick Makes Protein Structure Prediction 14x Faster</title>
+      <description>SimpleFold-Turbo applies TeaCache — an adaptive caching technique from video diffusion — to flow-matching protein structure prediction, achieving 9-14x inference speedups by skipping ~93% of redundant forward passes with negligible quality loss. Works across all six SimpleFold model sizes (100M-3B parameters), requires no retraining or weight modification, and runs on commodity hardware. A general three-phase skip pattern emerges independent of protein size or fold. Released as open-source CC0 software. The implications extend beyond protein folding: if linear trajectories are general to flow matching, this caching strategy could accelerate generative models across molecular design and beyond.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-11-simplefold-turbo.mp3" length="1343325" type="audio/mpeg"/>
+      <guid>2026-04-11-simplefold-turbo</guid>
+      <pubDate>Sat, 11 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>224</itunes:duration>
+      <itunes:summary>Deep dive on SimpleFold-Turbo — a bioRxiv preprint that borrows adaptive caching from video diffusion to make protein structure prediction 14x faster, skipping 93% of compute with near-zero quality loss. Open-source, no retraining required.</itunes:summary>
+    </item>
+
+    <item>
       <title>100 Parameters Beat Billions: Genomic Language Models Fail to Learn Positional Regulatory Logic</title>
       <description>A new preprint introduces the Mechanistic Invariance Test, a 650-sequence benchmark that exposes a universal failure in genomic foundation models. Five gLMs spanning all major architectures — including Evo2-1B and Caduceus — appear to detect regulatory elements but are actually just tracking AT nucleotide content (r=0.78-0.96). None learn positional regulatory grammar. Evo2 scores elements at wrong positions higher than correct ones. All models are strand-blind. Compositional effects dominate positional effects 46-fold. A 100-parameter position-aware PWM achieves perfect performance, proving the failure is about misaligned inductive biases, not capacity. Scaling makes it worse. Essential reading before deploying these models in gene therapy or clinical variant interpretation.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-10-genomic-lm-positional-failure.mp3" length="1038816" type="audio/mpeg"/>
