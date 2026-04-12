@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>EVEE: Evo 2 Embeddings Achieve Near-Perfect Variant Pathogenicity Prediction — With Explanations</title>
+      <description>Goodfire and Mayo Clinic show that embedding probes on top of Evo 2 — the 7B genomic foundation model — achieve 0.997 AUROC on 839K ClinVar variants and generalize zero-shot to indels (0.991 AUROC), outperforming dedicated bioinformatic meta-predictors. The real innovation is interpretability: supervised annotation probes quantify predicted disruptions per variant, which are then synthesized into natural language explanations by a reasoning model. Pre-computed predictions and on-demand explanations for all 4.2M ClinVar variants are freely available via the EVEE web tool (CC-BY 4.0). The paper reframes interpretability as a complementary product of learned biological structure, not a trade-off with accuracy.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-12-evee-variant-prediction.mp3" length="1591002" type="audio/mpeg"/>
+      <guid>2026-04-12-evee-variant-prediction</guid>
+      <pubDate>Sun, 12 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>234</itunes:duration>
+      <itunes:summary>Deep dive on EVEE — a bioRxiv preprint showing Evo 2 foundation model embeddings achieve near-perfect variant pathogenicity prediction with mechanistic natural language explanations. Open resource covering all 4.2M ClinVar variants.</itunes:summary>
+    </item>
+
+    <item>
       <title>SimpleFold-Turbo: A Video Diffusion Trick Makes Protein Structure Prediction 14x Faster</title>
       <description>SimpleFold-Turbo applies TeaCache — an adaptive caching technique from video diffusion — to flow-matching protein structure prediction, achieving 9-14x inference speedups by skipping ~93% of redundant forward passes with negligible quality loss. Works across all six SimpleFold model sizes (100M-3B parameters), requires no retraining or weight modification, and runs on commodity hardware. A general three-phase skip pattern emerges independent of protein size or fold. Released as open-source CC0 software. The implications extend beyond protein folding: if linear trajectories are general to flow matching, this caching strategy could accelerate generative models across molecular design and beyond.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-11-simplefold-turbo.mp3" length="1343325" type="audio/mpeg"/>
