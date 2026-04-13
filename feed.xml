@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>MAT-Cell: Multi-Agent LLM Debate for Single-Cell Annotation</title>
+      <description>MAT-Cell reframes single-cell annotation from black-box classification into constructive proof generation using a multi-agent LLM framework. Multiple agents build tree-structured logical derivations grounded in biological knowledge via adaptive RAG, while adversarial "rebuttal agents" run dialectic verification to prune weak reasoning paths. The neuro-symbolic approach significantly outperforms SOTA on cross-tissue and cross-species benchmarks — exactly where supervised methods and naked LLMs both fail. A compelling proof of concept for structured multi-agent reasoning in computational biology.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-13-mat-cell-multi-agent-annotation.mp3" length="1323842" type="audio/mpeg"/>
+      <guid>2026-04-13-mat-cell-multi-agent-annotation</guid>
+      <pubDate>Mon, 13 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>156</itunes:duration>
+      <itunes:summary>Deep dive on MAT-Cell — a multi-agent tree-structured reasoning framework that uses LLM debate, RAG grounding, and symbolic constraints to annotate single-cell types. Outperforms SOTA especially under distribution shift.</itunes:summary>
+    </item>
+
+    <item>
       <title>EVEE: Evo 2 Embeddings Achieve Near-Perfect Variant Pathogenicity Prediction — With Explanations</title>
       <description>Goodfire and Mayo Clinic show that embedding probes on top of Evo 2 — the 7B genomic foundation model — achieve 0.997 AUROC on 839K ClinVar variants and generalize zero-shot to indels (0.991 AUROC), outperforming dedicated bioinformatic meta-predictors. The real innovation is interpretability: supervised annotation probes quantify predicted disruptions per variant, which are then synthesized into natural language explanations by a reasoning model. Pre-computed predictions and on-demand explanations for all 4.2M ClinVar variants are freely available via the EVEE web tool (CC-BY 4.0). The paper reframes interpretability as a complementary product of learned biological structure, not a trade-off with accuracy.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-12-evee-variant-prediction.mp3" length="1591002" type="audio/mpeg"/>
