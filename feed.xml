@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>withZeta.ai: Multi-Agentic AI Co-Scientist for Rare Cancer Drug Discovery</title>
+      <description>Lantern Pharma launches withZeta.ai — a multi-agentic AI research platform for rare cancer drug discovery, built on 12+ years of curated rare cancer ontologies, drug databases, and clinical trial data. Rather than wrapping a single LLM around PubMed, Zeta orchestrates specialized agents that autonomously follow leads across four unified knowledge bases — connecting biomarkers to drugs to trials to literature from a single research question. Debuting at AACR 2026, it's a compelling test case for whether deeply curated domain knowledge plus agentic orchestration can crack the rare disease data fragmentation problem.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-14-withzeta-rare-cancer-agentic-ai.mp3" length="1212643" type="audio/mpeg"/>
+      <guid>2026-04-14-withzeta-rare-cancer-agentic-ai</guid>
+      <pubDate>Tue, 14 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>158</itunes:duration>
+      <itunes:summary>Deep dive on withZeta.ai — Lantern Pharma's multi-agentic AI co-scientist for rare cancer drug discovery, built on curated ontologies spanning genes, drugs, trials, and phenotypes. Launching at AACR 2026.</itunes:summary>
+    </item>
+
+    <item>
       <title>MAT-Cell: Multi-Agent LLM Debate for Single-Cell Annotation</title>
       <description>MAT-Cell reframes single-cell annotation from black-box classification into constructive proof generation using a multi-agent LLM framework. Multiple agents build tree-structured logical derivations grounded in biological knowledge via adaptive RAG, while adversarial "rebuttal agents" run dialectic verification to prune weak reasoning paths. The neuro-symbolic approach significantly outperforms SOTA on cross-tissue and cross-species benchmarks — exactly where supervised methods and naked LLMs both fail. A compelling proof of concept for structured multi-agent reasoning in computational biology.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-13-mat-cell-multi-agent-annotation.mp3" length="1323842" type="audio/mpeg"/>
