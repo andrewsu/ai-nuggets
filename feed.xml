@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>AWS Launches Amazon Bio Discovery: Agentic AI with Lab-in-the-Loop for Drug Discovery</title>
+      <description>AWS unveils Amazon Bio Discovery — an agentic AI platform that gives researchers access to a curated library of biological foundation models and wraps them in an AI agent that selects models, evaluates candidates, and routes top picks directly to lab partners like Twist Bioscience and Ginkgo Bioworks for physical synthesis. The lab-in-the-loop cycle feeds experimental results back to improve the next design round. Early adopters include the Broad Institute, MSK, Bayer, and Voyager Therapeutics. A landmark moment for closing the gap between in silico prediction and wet lab validation in drug discovery.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-15-aws-bio-discovery.mp3" length="1504689" type="audio/mpeg"/>
+      <guid>2026-04-15-aws-bio-discovery</guid>
+      <pubDate>Tue, 15 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>94</itunes:duration>
+      <itunes:summary>Deep dive on Amazon Bio Discovery — AWS's new agentic AI platform for drug discovery featuring a curated foundation model library, an AI agent for experiment planning, and integrated lab partners for physical validation in a closed-loop cycle.</itunes:summary>
+    </item>
+
+    <item>
       <title>withZeta.ai: Multi-Agentic AI Co-Scientist for Rare Cancer Drug Discovery</title>
       <description>Lantern Pharma launches withZeta.ai — a multi-agentic AI research platform for rare cancer drug discovery, built on 12+ years of curated rare cancer ontologies, drug databases, and clinical trial data. Rather than wrapping a single LLM around PubMed, Zeta orchestrates specialized agents that autonomously follow leads across four unified knowledge bases — connecting biomarkers to drugs to trials to literature from a single research question. Debuting at AACR 2026, it's a compelling test case for whether deeply curated domain knowledge plus agentic orchestration can crack the rare disease data fragmentation problem.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-14-withzeta-rare-cancer-agentic-ai.mp3" length="1212643" type="audio/mpeg"/>
