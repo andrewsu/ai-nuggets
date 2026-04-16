@@ -12,6 +12,26 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Omics Data Discovery Agents — Turning Dead PDFs into Executable Science</title>
+      <description>Jesse Meyer at Cedars-Sinai presents an agentic framework that turns static omics publications into executable, queryable research objects. Agents fetch articles, extract metadata, download raw data, re-run containerized quantification pipelines via MCP servers, and perform cross-study comparisons. In a liver fibrosis case study, agents found consistent protein regulation patterns across three papers that weren't highlighted in any individual paper's main text. A foundation for making the biomedical literature computationally alive.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-16-omics-data-discovery-agents.mp3" length="1514102" type="audio/mpeg"/>
+      <guid>2026-04-16-omics-data-discovery-agents</guid>
+      <pubDate>Thu, 16 Apr 2026 16:20:00 +0000</pubDate>
+      <itunes:duration>178</itunes:duration>
+      <itunes:summary>Deep dive on an agentic framework that fetches omics papers, extracts metadata, re-runs containerized quantification pipelines via MCP servers, and performs cross-study meta-analyses — turning static publications into executable research objects.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Mozi: Governed Autonomy for Drug Discovery LLM Agents</title>
+      <description>IDEA Research presents Mozi, a dual-layer architecture for LLM agents in drug discovery that separates governance from execution. Layer A enforces role-based tool isolation and reflection-driven replanning. Layer B encodes drug discovery stages as stateful skill graphs with strict data contracts between pipeline stages. The key insight: early-stage hallucinations compound multiplicatively in long pharmaceutical pipelines, so you need hard gates — not just prompts — between stages. Evaluated on PharmaBench and end-to-end therapeutic case studies.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-16-mozi-drug-discovery-agents.mp3" length="1367667" type="audio/mpeg"/>
+      <guid>2026-04-16-mozi-drug-discovery-agents</guid>
+      <pubDate>Thu, 16 Apr 2026 16:20:00 +0000</pubDate>
+      <itunes:duration>165</itunes:duration>
+      <itunes:summary>Deep dive on Mozi — a dual-layer architecture for governing LLM agents in drug discovery pipelines. Separates control (role-based tool isolation, reflection) from workflow execution (stateful skill graphs with data contracts), addressing the multiplicative error propagation problem in long-horizon pharmaceutical pipelines.</itunes:summary>
+    </item>
+
+    <item>
       <title>An LLM Agent That Talks to Ontology Services — Automating FAIR Metadata for HuBMAP</title>
       <description>Stanford BMIR researchers built an LLM agent that queries authoritative biomedical terminology services in real time — not from memory — to standardize legacy metadata against ontologies like UBERON, Cell Ontology, and Human Disease Ontology. Evaluated on 839 HuBMAP records with an expert-curated gold standard, the tool-augmented approach consistently outperforms the LLM alone. A practical, scalable solution to one of biomedical data integration's most tedious bottlenecks: making messy metadata FAIR.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-16-hubmap-metadata-llm-agent.mp3" length="1528929" type="audio/mpeg"/>
