@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Agentic AI for Pharmacogenomic Guideline Curation — Outperforming GPT-5 and Claude</title>
+      <description>A new Nature Digital Medicine paper presents an agentic AI system that automates end-to-end pharmacogenomic recommendation generation in CPIC style. The pipeline retrieves full-text literature and FDA labels, extracts clinical entities at 92% accuracy, aggregates cross-study findings, and generates phenotype-specific dosing recommendations. In blind expert evaluation, it significantly outperformed GPT-5, Claude, and Grok on clinical clarity and guideline concordance — because it grounds every claim in retrieved evidence rather than parametric memory. A proof of concept for scaling biomedical knowledge curation beyond the expert bottleneck.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-17-pharmacogenomic-agentic-ai.mp3" length="1443544" type="audio/mpeg"/>
+      <guid>2026-04-17-pharmacogenomic-agentic-ai</guid>
+      <pubDate>Thu, 17 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>190</itunes:duration>
+      <itunes:summary>Deep dive on an agentic AI system published in Nature Digital Medicine that automates CPIC-style pharmacogenomic recommendation generation. It retrieves literature, extracts entities, aggregates evidence, and generates dosing recommendations — outperforming frontier LLMs in expert blind evaluation by grounding claims in structured evidence rather than parametric memory.</itunes:summary>
+    </item>
+
+    <item>
       <title>Omics Data Discovery Agents — Turning Dead PDFs into Executable Science</title>
       <description>Jesse Meyer at Cedars-Sinai presents an agentic framework that turns static omics publications into executable, queryable research objects. Agents fetch articles, extract metadata, download raw data, re-run containerized quantification pipelines via MCP servers, and perform cross-study comparisons. In a liver fibrosis case study, agents found consistent protein regulation patterns across three papers that weren't highlighted in any individual paper's main text. A foundation for making the biomedical literature computationally alive.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-16-omics-data-discovery-agents.mp3" length="1514102" type="audio/mpeg"/>
