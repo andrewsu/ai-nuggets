@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>GPT-Rosalind: OpenAI's First Purpose-Built Life Sciences Model</title>
+      <description>OpenAI launched GPT-Rosalind, a frontier reasoning model built specifically for biology, drug discovery, and translational medicine. Unlike general-purpose models, it features native tool orchestration across 50+ scientific databases and bioinformatics pipelines, with a free Codex plugin for multi-step research workflows. On RNA sequence-to-function prediction with Dyno Therapeutics, it ranked above the 95th percentile of human experts. Launch partners include Amgen, Moderna, the Allen Institute, and Thermo Fisher. This is OpenAI signaling that biomedical AI is a product category worth dedicated frontier infrastructure — not just a side application of general models.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-18-gpt-rosalind-life-sciences.mp3" length="1535203" type="audio/mpeg"/>
+      <guid>2026-04-18-gpt-rosalind-life-sciences</guid>
+      <pubDate>Sat, 18 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>195</itunes:duration>
+      <itunes:summary>Deep dive on OpenAI's GPT-Rosalind, their first purpose-built life sciences model with native tool use across 50+ scientific databases. Benchmarks above 95th percentile of human experts on RNA sequence-to-function tasks. Launching with Amgen, Moderna, Allen Institute, and Thermo Fisher through a trusted access program.</itunes:summary>
+    </item>
+
+    <item>
       <title>Agentic AI for Pharmacogenomic Guideline Curation — Outperforming GPT-5 and Claude</title>
       <description>A new Nature Digital Medicine paper presents an agentic AI system that automates end-to-end pharmacogenomic recommendation generation in CPIC style. The pipeline retrieves full-text literature and FDA labels, extracts clinical entities at 92% accuracy, aggregates cross-study findings, and generates phenotype-specific dosing recommendations. In blind expert evaluation, it significantly outperformed GPT-5, Claude, and Grok on clinical clarity and guideline concordance — because it grounds every claim in retrieved evidence rather than parametric memory. A proof of concept for scaling biomedical knowledge curation beyond the expert bottleneck.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-17-pharmacogenomic-agentic-ai.mp3" length="1443544" type="audio/mpeg"/>
