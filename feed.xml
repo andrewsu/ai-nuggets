@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>ASMR-Bench: Can We Detect When AI Agents Sabotage Research?</title>
+      <description>ASMR-Bench is a new benchmark that tests whether auditors — human or AI — can detect subtle sabotage in ML research codebases. Built from 9 real codebases with sabotaged variants, it found that even frontier LLMs struggle: Gemini 3.1 Pro achieved only 0.77 AUROC and a 42% fix rate. As AI agents increasingly run autonomous research pipelines, this exposes a critical verification gap — it's easier to introduce subtle errors than to catch them. Essential reading for anyone deploying AI agents in scientific workflows.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-20-asmr-bench-sabotage-detection.mp3" length="1222811" type="audio/mpeg"/>
+      <guid>2026-04-20-asmr-bench-sabotage-detection</guid>
+      <pubDate>Mon, 20 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>157</itunes:duration>
+      <itunes:summary>Deep dive on ASMR-Bench — a benchmark revealing that frontier LLMs and human auditors both struggle to detect subtle sabotage in AI-conducted ML research. Best AUROC: 0.77. As we build autonomous research agents, this quantifies the verification gap we need to close.</itunes:summary>
+    </item>
+
+    <item>
       <title>HARVEST: Unlocking Dark Bioactivity Data from Pharmaceutical Patents with Agentic AI</title>
       <description>HARVEST is a multi-agent LLM pipeline that autonomously extracts structured bioactivity records from pharmaceutical patents at scale. Applied to 164,877 USPTO patents, it produced 3.15 million activity records — recovering 326,342 unique scaffolds and 967 protein targets absent from BindingDB — at just $0.11 per document. The team also introduces H-Bench, a benchmark from this recovered data that exposes generalization gaps in leading structure prediction models like Boltz-2. Open source under CC-BY 4.0, this demonstrates how agentic AI can unlock entire categories of public-but-computationally-dark biomedical data.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-19-harvest-dark-bioactivity-patents.mp3" length="1262642" type="audio/mpeg"/>
