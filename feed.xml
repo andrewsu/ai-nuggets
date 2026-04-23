@@ -12,6 +12,16 @@
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
+      <title>Samyama: Open Biomedical Knowledge Graphs with Schema-Driven LLM Agent Access</title>
+      <description>A two-author arXiv preprint quietly drops three open-source biomedical knowledge graphs — Pathways, Clinical Trials, and Drug Interactions, totaling 7.9M nodes and 28M edges — alongside Samyama, a Rust graph database, and the real architectural bet: schema-driven Model Context Protocol servers that auto-generate typed LLM tools from the running database schema. On their 40-question BiomedQA benchmark, MCP-tool access hits 98% accuracy versus 85% for schema-aware text-to-Cypher and 75% for GPT-4o standalone. The takeaway isn't the KGs themselves — it's the pattern: stop asking LLMs to write Cypher, and instead expose validated, parameterized domain tools like pathway-membership and drug-interaction-lookup. For anyone building LLM interfaces over biomedical KGs — Wikidata biomedical subsets included — this is the architecture to study.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-23-samyama-biomedical-kgs.mp3" length="1973934" type="audio/mpeg"/>
+      <guid>2026-04-23-samyama-biomedical-kgs</guid>
+      <pubDate>Thu, 23 Apr 2026 20:30:00 +0000</pubDate>
+      <itunes:duration>324</itunes:duration>
+      <itunes:summary>Deep dive on Samyama — a Rust graph database plus three open-source biomedical KGs (Pathways, Clinical Trials, Drug Interactions; 7.9M nodes, 28M edges) with schema-driven MCP servers that auto-generate typed LLM tools. Hits 98% on BiomedQA vs. 85% for text-to-Cypher and 75% for GPT-4o. The reusable pattern: stop letting LLMs write Cypher; expose validated domain tools instead.</itunes:summary>
+    </item>
+
+    <item>
       <title>MetaMuse: Multi-Agent AI for Biomedical Metadata Curation at GEO Scale</title>
       <description>A team from Biostate AI just posted MetaMuse on bioRxiv — a multi-agent AI framework that autonomously extracts, validates, and standardizes unstructured biomedical metadata from public repositories like the Gene Expression Omnibus. On a gold-standard set of manually curated GEO samples, it hits over 95% curation accuracy across key metadata fields. The design choice that matters most: when evidence is ambiguous, MetaMuse defaults to conservative false negatives instead of hallucinating, and every decision is auditable through a unified evidence model. For anyone who has ever drowned in inconsistent GEO sample annotations while trying to do a meta-analysis, this is exactly the right shape of tool — not replacing curators, but finally making the long tail of public biomedical data usable at scale.</description>
       <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-23-metamuse-metadata-curation.mp3" length="1780489" type="audio/mpeg"/>
