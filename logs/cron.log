@@ -35,3 +35,20 @@ A fresh preprint from Suzhou Kai Zhi Yuan introduces Open Intelligence Hub — a
 - Pipette: Skill Graph from 20,000 publications constraining a multi-agent bioinformatics pipeline — https://www.biorxiv.org/content/10.64898/2026.04.08.717332v1
 
 Episode (3:56) generated, feed updated, pushed to main.
+## Today's AI Nugget
+
+**GPT-Rosalind: OpenAI Builds a Life-Sciences Reasoning Model — and Locks the Door**
+
+OpenAI launched GPT-Rosalind on April 16th, its first frontier reasoning model purpose-built for biology, drug discovery, and translational medicine. On *unpublished* RNA sequences it ranked above the 95th percentile of human experts on prediction tasks and the 84th percentile on sequence generation — genuinely strong numbers in a field where memorization of public data is a real concern. The catch is access: a US-only "trusted access" program with named partners like Amgen, Moderna, the Allen Institute, Thermo Fisher, Dyno Therapeutics, and Los Alamos. The consolation prize that actually matters for open-data folks is a freely accessible Life Sciences research plugin for Codex connecting to 50+ scientific tools and data sources — meaning OpenAI just made themselves the de facto integration target for anyone running a public biomedical resource. The vertical foundation-model arms race for biology is now official.
+
+🔗 https://openai.com/index/introducing-gpt-rosalind/
+
+**More headlines:**
+- DrugKLM: LLMs Meet Biomedical Knowledge Graphs for Mechanistically Grounded Therapeutic Prioritization (arXiv, Apr 17) — https://arxiv.org/abs/2604.19815
+- AWS launches Amazon Bio Discovery — agentic AI platform with 40+ bioFMs and closed-loop wet-lab partners (Apr 14) — https://www.aboutamazon.com/news/aws/aws-amazon-bio-discovery-ai-drug-research
+- NVIDIA GTC 2026: Agentic AI Inflection Hits Healthcare and Life Sciences (NVIDIA + Lilly co-innovation lab) — https://www.genengnews.com/topics/artificial-intelligence/nvidia-gtc-2026-agentic-ai-inflection-hits-healthcare-and-life-sciences/
+
+Episode (4:23): https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-26-gpt-rosalind-life-sciences-model.mp3
+
+Pushed to `main` (commit `37a2558`).
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request or attempting a different approach. If you are seeing this refusal repeatedly, try running /model claude-sonnet-4-20250514 to switch models.
