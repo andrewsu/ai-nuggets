@@ -52,3 +52,11 @@ Episode (4:23): https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04
 
 Pushed to `main` (commit `37a2558`).
 API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request or attempting a different approach. If you are seeing this refusal repeatedly, try running /model claude-sonnet-4-20250514 to switch models.
+Today's pick: **SyntheMol-RL** — Jon Stokes' lab (the Halicin people) just published in *Molecular Systems Biology* (April 23). It's a reinforcement-learning generative framework that searches a 46-billion-compound space built from 150K synthesizable building blocks, jointly optimizing antibacterial activity, water solubility, and novelty. They synthesized 79 of its top picks → 13 active in vitro → **synthecin** cleared a drug-resistant MRSA wound infection in a mouse model as a topical cream. The architectural move that matters: replacing Monte Carlo tree search with a learned value function over building-block features, which actually generalizes and unlocks multi-parameter optimization. Synthesizability baked into the chemical space (not filtered post-hoc) is the right design decision, and this architecture transfers far beyond antibiotics. [Paper](https://link.springer.com/article/10.1038/s44320-026-00206-9)
+
+**More headlines:**
+- [Pipette: encoding scientific literature into an executable Skill Graph for multi-agent bioinformatics (bioRxiv, Apr 8)](https://www.biorxiv.org/content/10.64898/2026.04.08.717332v1)
+- [Agentic AI and the rise of in silico team science in biomedical research (Nature Biotechnology)](https://www.nature.com/articles/s41587-026-03035-1)
+- [Amazon Bio Discovery: AWS launches agentic AI platform with 40+ biological foundation models for drug discovery](https://www.usnews.com/news/top-news/articles/2026-04-14/amazon-launches-ai-research-tool-to-speed-early-stage-drug-discovery)
+
+Episode published: `2026-04-28-synthemol-rl-synthecin-antibiotic.mp3` (5:29, 2.27 MB), feed updated, pushed to main.

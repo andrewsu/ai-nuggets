@@ -1,0 +1,29 @@
+# Beyond CRISPR: Lilly Bets $2.25B on Profluent's AI-Designed Recombinases
+
+Paper link: https://www.statnews.com/2026/04/28/eli-lilly-crispr-gene-editing-deal-profluent-ai/
+
+## Script
+
+So Eli Lilly just put two and a quarter billion dollars on the table to bet that an AI startup can redesign the basic verbs of gene editing. The deal landed yesterday, April 28th, and it's the freshest signal yet that the next era of genetic medicine is going to run on protein language models rather than on enzymes nature happened to discover.
+
+Here's what was announced. Lilly and Profluent — the Bezos-backed AI biotech in Berkeley — signed a strategic partnership to develop AI-designed recombinases for genetic medicine. Profluent gets an undisclosed upfront payment, R-and-D funding, up to two-point-two-five billion dollars in milestones, and tiered royalties. In exchange, Lilly gets exclusive access to a slate of recombinases that Profluent will design, optimize, and validate against multiple genomic targets the two companies pick together.
+
+You need two pieces of context to see why this matters.
+
+The first is technical. Recombinases are not CRISPR. CRISPR is a molecular scalpel — it cuts DNA, and then you rely on the cell's repair machinery to either disable a gene or paste in a small change. That's powerful, but it has hard limits. You can't reliably insert a whole functional gene with CRISPR. You can't put a five-thousand-base-pair therapeutic cassette into a chromosome at a specific safe-harbor site without a lot of awkward workarounds. Recombinases — the family that includes things like Bxb1 and serine integrases — actually do that natively. They recognize a target sequence, cut both strands, and integrate cargo, all in one coordinated reaction. The problem has always been that natural recombinases are picky about their target sites, and engineering them to recognize a new site in the human genome has historically been a multi-year, mostly-failure-mode kind of project.
+
+That's the wedge Profluent is driving into. Their pitch is that with a large enough dataset of recombinase and integrase sequences, plus a modern protein language model, you can simply generate new variants whose target specificity is whatever you want. You don't evolve the enzyme in the lab over years. You ask the model.
+
+The second piece of context is Profluent's track record, because this is not a first rodeo. Two years ago they shipped OpenCRISPR-1 — a fully AI-designed Cas9-style nuclease, more than four hundred mutations away from any natural enzyme, that successfully edited the human genome in cell culture. They published it in Nature, they open-sourced the sequence under a free research-and-commercial license, and crucially, on the relevant benchmarks it had comparable on-target activity to SpCas9 with about a ninety-five percent reduction in off-target editing. That wasn't a press-release demo. It was a working enzyme that nobody had ever seen before, designed end-to-end by a model trained on roughly five million Cas9-like protein sequences. The Lilly deal is essentially Profluent saying: the same trick works for recombinases, and we're going to do it at industrial scale on Lilly's targets.
+
+Why is Lilly the buyer? Because Lilly has been quietly assembling a genetic-medicine arms cabinet for a couple of years now — they bought Verve, they bought Sigilon, they spun up a Boston genetic medicine center, and they have all the GLP-one money in the world to spend. What they didn't have was a credible path to delivering large therapeutic genes site-specifically. That's the gap the Profluent partnership fills. If even one of the recombinases Profluent designs becomes a clinical-grade tool for inserting gene cassettes into a defined locus, the implications cascade across hereditary diseases, hemophilia, Duchenne, certain ophthalmologic conditions, and a long tail of monogenic disorders where the mutation is a loss of a working gene rather than a gain of a broken one.
+
+Three things to take away from this if you care about computational biology infrastructure.
+
+First — protein language models are now the entire stack for new gene-editing modalities. Not just Cas9 variants. Recombinases. Base editors. Prime editors. Whatever comes next. The ability to design these enzymes by prompting a model is becoming the differentiator between platforms that ship and platforms that don't. And the upstream dependency for those models is an enormous, well-curated, evolutionarily diverse corpus of protein sequences with annotations. In other words, exactly the kind of resource that biomedical knowledge graphs and integrated public databases are supposed to provide.
+
+Second — the access politics here are interesting. OpenCRISPR-1 was open-sourced. The Lilly partnership is exclusive. Profluent is doing both things in parallel: keep an open-science halo, monetize the deepest, hardest design problems through pharma deals. That's a pattern we're going to see repeated across AI bio. Watch which assets stay open and which ones go behind a partnership wall, because that distinction is going to determine what tools academic labs can actually use.
+
+Third — the timeline. This is a research-stage deal. There is no clinical molecule. There is no validated recombinase against a Lilly target. Two billion dollars is the size of the milestone payments that pay out only if many things work, over many years. Calibrate the excitement accordingly. What's actually new today is the bet itself: that AI-designed enzymes are now the default starting point for new genetic medicine programs, and that big pharma is willing to pay platform-company prices to lock up access. Six years ago that was a fringe position. Today it's eight figures upfront and a comma in the milestone column.
+
+That's the nugget. Stay synthesizable, and watch the recombinases.
