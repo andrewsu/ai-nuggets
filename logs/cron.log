@@ -72,3 +72,24 @@ Link: https://www.statnews.com/2026/04/28/eli-lilly-crispr-gene-editing-deal-pro
 - bioRxiv: LLM-autonomous development of deep learning models for quantitative microscopy — describe the problem, the agent designs training data, networks, and iterates without human intervention: https://www.biorxiv.org/content/10.64898/2026.04.03.716415v1
 
 Episode pushed: `episodes/2026-04-29-lilly-profluent-recombinases.mp3` (4:53, 1.98MB). Commit `6a79747`.
+## Today's AI Nugget
+
+**BioChirp — Deterministic Graphs Catch What LLMs Miss in Biomedical Retrieval**
+
+A team out of IIIT Delhi (Sengupta lab) just dropped BioChirp on bioRxiv — an open-source framework that quantifies what biomedical KG builders have been muttering about for two years. LLM-based retrieval systems silently lose biomedical associations through three failure modes: output truncation, synonym mismatch, and run-to-run variability. BioChirp keeps the LLM for query interpretation and candidate filtering, but moves retrieval itself onto a deterministic graph walk with multi-source consensus entity resolution against four major biomedical databases. Result: more associations recovered, with reproducibility you can actually rerun. The architectural pattern — LLM as orchestrator, deterministic graph as source of truth — maps almost exactly to what BioThings Explorer at Su Lab has been doing for years. The vocabulary is converging.
+
+Paper: https://www.biorxiv.org/content/10.64898/2026.04.25.720782v1
+
+**More headlines:**
+- Stanford AI Index 2026: human scientists trounce AI agents on complex tasks; on BixBench, frontier models hit just 17% on real-world bioinformatics — https://www.nature.com/articles/d41586-026-01199-z
+- AIDO.Harness — autonomous agentic system that builds biomedical ML models end-to-end from a natural-language task description — https://www.biorxiv.org/content/10.64898/2026.04.20.719735v1
+- FDA announces plan to accelerate drug trials using real-time data and AI tools — https://www.bloomberg.com/news/articles/2026-04-28/fda-plans-to-speed-up-drug-trials-with-real-time-data-ai
+
+Episode published, feed updated, pushed to `main` (commit `248e338`). Audio is 4:15 (255s) via Mistral Voxtral.
+
+Sources:
+- [BioChirp preprint (bioRxiv)](https://www.biorxiv.org/content/10.64898/2026.04.25.720782v1)
+- [Human scientists trounce AI agents on complex tasks (Nature)](https://www.nature.com/articles/d41586-026-01199-z)
+- [Stanford 2026 AI Index — Science chapter](https://hai.stanford.edu/ai-index/2026-ai-index-report/science)
+- [AIDO.Harness preprint (bioRxiv)](https://www.biorxiv.org/content/10.64898/2026.04.20.719735v1)
+- [FDA AI drug trial acceleration (Bloomberg)](https://www.bloomberg.com/news/articles/2026-04-28/fda-plans-to-speed-up-drug-trials-with-real-time-data-ai)
