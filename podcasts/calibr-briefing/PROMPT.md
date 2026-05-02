@@ -128,7 +128,9 @@ pointing at the Worker
 (`https://podcast.<sub>.workers.dev/p/calibr-briefing/u/<user>/<slug>.mp3`).
 Escape `&` → `&amp;`, `<` → `&lt;`, `>` → `&gt;` in every title,
 description, and summary. The `.githooks/pre-commit` hook will reject the
-commit if the feed doesn't parse, but catch it yourself first.
+commit if the feed doesn't parse, but catch it yourself first. Write guids
+as `<guid isPermaLink="false">YYYY-MM-DD-slug</guid>` — bare slugs without
+`isPermaLink="false"` violate RSS 2.0 and break strict podcast clients.
 
 ```
 git add -A && git commit -m 'Calibr: <headline + spotlight titles>' && git push

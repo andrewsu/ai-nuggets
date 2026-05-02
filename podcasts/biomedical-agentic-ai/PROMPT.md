@@ -130,7 +130,9 @@ real, verified links (skip if nothing else is genuinely interesting).
    Keep the RSS feed valid XML — escape `&` → `&amp;`, `<` → `&lt;`, `>` →
    `&gt;` in every title, description, and summary. The `.githooks/pre-commit`
    hook will reject the commit if the feed doesn't parse, but catch it
-   yourself first.
+   yourself first. Write guids as
+   `<guid isPermaLink="false">YYYY-MM-DD-slug</guid>` — bare slugs without
+   `isPermaLink="false"` violate RSS 2.0 and break strict podcast clients.
 
 4. Commit and push:
    ```
