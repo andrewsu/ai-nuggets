@@ -126,6 +126,9 @@ Add new `<item>` entries to `podcasts/calibr-briefing/feed.xml` (newest
 first) with real byte sizes and ffprobe durations. Keep enclosure URLs
 pointing at the Worker
 (`https://podcast.<sub>.workers.dev/p/calibr-briefing/u/<user>/<slug>.mp3`).
+Escape `&` → `&amp;`, `<` → `&lt;`, `>` → `&gt;` in every title,
+description, and summary. The `.githooks/pre-commit` hook will reject the
+commit if the feed doesn't parse, but catch it yourself first.
 
 ```
 git add -A && git commit -m 'Calibr: <headline + spotlight titles>' && git push

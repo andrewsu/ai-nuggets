@@ -127,7 +127,10 @@ real, verified links (skip if nothing else is genuinely interesting).
    `enclosure length` and the rounded duration from `ffprobe` for
    `itunes:duration`. Keep enclosure URLs pointing at the Worker
    (`https://podcast.<sub>.workers.dev/p/biomedical-agentic-ai/u/<user>/<slug>.mp3`).
-   Keep the RSS feed valid XML.
+   Keep the RSS feed valid XML — escape `&` → `&amp;`, `<` → `&lt;`, `>` →
+   `&gt;` in every title, description, and summary. The `.githooks/pre-commit`
+   hook will reject the commit if the feed doesn't parse, but catch it
+   yourself first.
 
 4. Commit and push:
    ```
