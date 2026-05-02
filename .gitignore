@@ -1,2 +1,5 @@
 .env
 *.swp
+__pycache__/
+worker/node_modules/
+worker/.wrangler/

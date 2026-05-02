@@ -1,0 +1,16 @@
+name = "podcast"
+main = "src/index.ts"
+compatibility_date = "2026-05-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "podcast"
+database_id = "REPLACE_AFTER_WRANGLER_D1_CREATE"  # TODO: replace after `npx wrangler d1 create podcast`
+
+[[analytics_engine_datasets]]
+binding = "AE"
+dataset = "podcast_requests"
+
+[vars]
+GITHUB_REPO_RAW = "https://raw.githubusercontent.com/andrewsu/ai-nuggets/main"
+ALLOWED_PODCASTS = "biomedical-agentic-ai,calibr-briefing"
