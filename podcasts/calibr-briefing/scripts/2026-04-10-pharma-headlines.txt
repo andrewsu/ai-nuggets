@@ -1,0 +1,19 @@
+Hey Travis, it's Nigel — here's your Calibr-Skaggs Daily Briefing for Friday, April 10th, 2026. Let's run through today's top headlines.
+
+First up — and this one's big for your world — Fierce Biotech reports that a CAR-T cell therapy has driven three autoimmune diseases into remission simultaneously in a single patient. This is the first time one CAR-T treatment has tackled multiple autoimmune conditions at once, targeting CD19-positive B cells across all three diseases. Obviously this lands squarely in the territory of Calibr's sCAR-T autoimmune program with AbbVie. We'll dig much deeper into this in today's spotlight episode.
+
+Sticking with CAR-T, China's Oricell Therapeutics has raised 110 million dollars ahead of a planned IPO push, with funds earmarked for advancing its CAR-T pipeline in solid tumors and hematologic malignancies. The Chinese cell therapy space continues to heat up.
+
+In the GLP-1 pill wars, Eli Lilly has officially launched Foundayo, its oral GLP-1 obesity drug, at a starting price of 149 dollars a month for self-pay patients. This kicks off a direct showdown with Novo Nordisk's oral Wegovy, which launched about three months ago. Speaking of Novo, they've also rolled out Wegovy HD — a higher-dose version — at 399 dollars a month, deliberately undercutting Lilly's Zepbound by 50 bucks. The oral obesity market is now officially a two-horse race.
+
+Deal of the week: Gilead has completed its third acquisition since late February, bringing its 2026 M&A total to nearly 13 billion dollars. The trifecta includes Arcellx for 7.8 billion in cell therapy, Tubulis for 3.1 billion in ADCs, and Ouro Medicines for 1.7 billion in autoimmune. CEO Dan O'Day called it the company's most robust and diverse portfolio ever.
+
+In oncology M&A, Gilead also paid Kymera 45 million upfront to license a preclinical protein degrader for its cancer pipeline. And Roche made a 20-million-dollar bet on C4T's antibody-targeted protein degraders — a new modality combining antibody specificity with protein degradation.
+
+Sidewinder Therapeutics raised 137 million in Series B funding for bispecific antibody-drug conjugates. Backed by OrbiMed and Novartis Ventures, they're working on ADCs that target protein pairs highly expressed on cancer cells. First clinical candidate expected in 2027.
+
+In the infectious disease space, Invivyd unveiled plans for VMS063, an antibody drug targeting measles. With U.S. measles cases at levels not seen in decades, they're positioning it as both a treatment and a preventive alternative for the vaccine-hesitant. IND-enabling studies are underway with human trials targeted for late 2026.
+
+And finally, FDA warned ImmunityBio over what it called a misleading TV advertisement and podcast featuring Patrick Soon-Shiong promoting Anktiva, their bladder cancer treatment. The agency said the promotions created a misleading impression of the drug's efficacy.
+
+That's your headlines for today. Stay tuned for the spotlight episode, where we go deep on that CAR-T autoimmune remission story and what it means for Calibr's pipeline. Talk soon — Nigel out.

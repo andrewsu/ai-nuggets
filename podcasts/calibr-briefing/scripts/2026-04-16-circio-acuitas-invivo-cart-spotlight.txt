@@ -1,0 +1,33 @@
+Hey Travis, it's Nigel with your Calibr-Skaggs Spotlight for Wednesday, April sixteenth, twenty twenty-six. Today we're going deep on a story that landed right at the intersection of Calibr's core focus areas: Circio Biotechnologies and Acuitas Therapeutics have announced a collaboration to develop in vivo CAR-T cell therapy using circular RNA delivered via lipid nanoparticles.
+
+Let me unpack why this matters.
+
+So the partnership pairs Circio's circular RNA technology with Acuitas' lipid nanoparticle delivery platform — the same LNP technology that powered the Pfizer-BioNTech COVID vaccine. The concept is elegant: instead of pulling a patient's T cells out of their body, engineering them in a lab over days or weeks, and infusing them back — the traditional ex vivo CAR-T approach — you inject an LNP carrying circular RNA that encodes the CAR construct directly into the patient. Their T cells get reprogrammed in vivo, in their own body, with no apheresis, no cleanroom manufacturing, no vein-to-vein timeline measured in weeks.
+
+Circular RNA is the key innovation here. Unlike linear mRNA, circular RNA lacks free ends, which means it resists degradation by exonucleases. That translates to longer-lasting protein expression — potentially days rather than hours. For a CAR-T application, that means the CAR could be expressed on T cells long enough to mount a therapeutic response, while still being transient. The CAR expression eventually fades, which is actually a feature, not a bug, because it provides an inherent safety mechanism — no permanent genetic modification, no risk of insertional mutagenesis, and a natural off switch as the circular RNA degrades.
+
+Now, let's talk about why this is directly relevant to Calibr.
+
+Your sCAR-T platform — CLBR001 plus SWI019, in Phase 1 with AbbVie — takes a different but philosophically related approach to the same fundamental problem: how do you make CAR-T therapy safer and more controllable? Calibr's answer is the switchable CAR. The CAR-T cells are engineered ex vivo, but they require a separate small molecule switch, SWI019, to activate. No switch, no killing. This gives you dose-titratable control — you can dial the CAR-T activity up or down by adjusting the switch dose.
+
+The Circio-Acuitas approach solves controllability differently: through transience. The CAR expression is temporary by design because circular RNA eventually degrades. So you get a pulse of CAR-T activity, and if you need more, you re-dose the LNP.
+
+Both approaches are responses to the same clinical reality: conventional CAR-T therapies are powerful but carry serious risks. Cytokine release syndrome, neurotoxicity, prolonged B-cell aplasia — these are significant safety concerns, especially as the field pushes into autoimmune diseases where patients aren't terminally ill.
+
+And that's the critical context here. The autoimmune CAR-T wave is accelerating fast. Kyverna's KYV-101, Cabaletta's CABA-201, the Gilead-Ouro gamgertamig program — everyone is racing to bring CD19-targeted CAR-T into lupus, myasthenia gravis, inflammatory myopathies. But autoimmune patients have a much lower risk tolerance than late-stage cancer patients. A therapy that can kill you is acceptable if the alternative is dying from lymphoma. It's a much harder sell for lupus.
+
+This is where controllable and transient approaches shine. Calibr's switch gives you real-time pharmacological control. The Circio circular RNA approach gives you built-in transience. Both are fundamentally safer architectures for the autoimmune setting.
+
+Now, the competitive landscape. In vivo CAR-T is getting crowded. Capstan Therapeutics, which Roche acquired, is working on LNP-delivered mRNA for in vivo CAR-T. Interius BioTherapeutics has similar programs. Umoja Biopharma was working on lentiviral in vivo delivery before pivoting. And now Circio-Acuitas enters with the circular RNA angle.
+
+But here's what I'd flag for Calibr: the in vivo and switchable approaches aren't necessarily competitors — they could be complementary. Imagine a future where you deliver a switchable CAR construct via circular RNA in lipid nanoparticles. You'd get in vivo engineering — no manufacturing — plus dose-titratable control via the switch. That's the holy grail: an off-the-shelf, injectable, controllable CAR-T therapy. Calibr's switch technology could potentially be layered onto any in vivo CAR-T delivery platform.
+
+There are big open questions for the Circio approach, of course. T-cell-specific targeting of the LNPs is a major challenge — you don't want to transfect liver cells or other off-target tissues. The duration of circular RNA expression needs to be tuned: long enough for efficacy but not so long that it causes chronic toxicity. And we're still early — this is preclinical work, and the translational gap between LNP delivery in mice and humans is real.
+
+But the strategic signal is clear: the field is moving toward making CAR-T therapy look more like a drug and less like a procedure. Whether that's through switchable CARs, in vivo delivery, allogeneic off-the-shelf products, or some combination — the winners will be the platforms that crack the safety and accessibility code.
+
+Calibr's sCAR-T platform with AbbVie is well-positioned in this landscape. The switch mechanism is modality-agnostic — it works regardless of how the CAR-T cells are made. And the Phase 1 data in both oncology and autoimmune indications will be critical proof points as the field evolves.
+
+Bottom line: keep a close eye on Circio-Acuitas. Their circular RNA approach validates the thesis that controllable, transient CAR-T is the future. And that's a thesis Calibr has been building toward from day one.
+
+That's your spotlight for today. This is Nigel, signing off.

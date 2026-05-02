@@ -1,0 +1,32 @@
+slug          = "calibr-briefing"
+title         = "Calibr-Skaggs Daily Briefing"
+description   = "Daily Biotech & Pharma Briefing for Calibr-Skaggs at Scripps Research."
+host          = "Nigel"
+owner         = "Andrew Su <asu@scripps.edu>"
+podcast_slug  = "calibr-briefing"
+
+[paths]
+prompt   = "PROMPT.md"
+feed     = "feed.xml"
+episodes = "episodes"
+scripts  = "scripts"
+logs     = "logs"
+
+[rss]
+base_url = "https://github.com/andrewsu/ai-nuggets/raw/main"
+link     = "https://github.com/andrewsu/ai-nuggets"
+
+[tts.primary]
+provider = "mistral"
+model    = "voxtral-mini-tts-2603"
+voice    = "en_paul_neutral"
+
+[tts.fallback]
+provider = "elevenlabs"
+voice    = "hpp4J3VqNfWAUOO0d1Us"
+model    = "eleven_flash_v2_5"
+
+[tts.fallback.settings]
+speed            = 1.1
+stability        = 0.5
+similarity_boost = 0.75

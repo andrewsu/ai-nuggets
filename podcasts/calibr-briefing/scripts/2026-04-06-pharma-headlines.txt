@@ -1,0 +1,15 @@
+Hey Travis, it's Nigel with your Monday headlines for April sixth, twenty twenty-six. Hope you had a good weekend — let's get into it.
+
+First up, the M&A wave keeps rolling. Neurocrine Biosciences is paying two point nine billion dollars to acquire Soleno Therapeutics, the developer of the first approved medicine for the insatiable hunger associated with Prader-Willi syndrome. This comes on the heels of last week's Lilly-Centessa and Biogen-Apellis megadeals, and signals that twenty twenty-six is shaping up to be a blockbuster year for biotech acquisitions.
+
+In clinical news, Beam Therapeutics published updated data in the New England Journal of Medicine showing their base-editing therapy risto-cel eliminated severe pain crises in all thirty-one sickle cell disease patients enrolled. Red blood cell shape was restored, anemia resolved, and hemolysis was reduced. This is a strong validation of base editing technology as an alternative to CRISPR-Cas9 approaches in genetic medicine.
+
+On the flip side, Immunovant's experimental drug batoclimab failed two Phase 3 studies in thyroid eye disease. The drug, developed with partner HanAll BioPharma, did not meet key endpoints for reducing eye swelling. Immunovant says they'll review plans and provide updates later. Meanwhile, Alto Neuroscience's PDE4 inhibitor ALTO-101 also struck out in a Phase 2 proof-of-concept study for cognitive impairment in schizophrenia.
+
+In the regulatory space, Orca Bio got some unwelcome news — the FDA extended its review of their allogeneic T cell therapy Orca-T for blood cancers. The decision date has been pushed from April to July sixth. And Pfizer and BioNTech are pausing a government-ordered post-marketing COVID vaccine study due to enrollment challenges, citing a slow COVID season.
+
+A new study published in JAMA Network Open is sounding the alarm about mRNA research funding. Researchers from the University of Virginia documented how NIH has funded one point six five billion dollars across a hundred and seventy-eight active mRNA grants spanning cancer, neurological conditions, and rare diseases — not just vaccines. The concern is that anti-mRNA sentiment and BARDA contract cancellations could threaten decades of progress beyond infectious disease.
+
+And finally, AACR twenty twenty-six kicks off this week in San Diego. STAT News is hosting live sessions unpacking the most important cancer research breakthroughs. Keep an eye out for new data in cell therapy, ADCs, and novel targets — we'll cover the highlights as they drop.
+
+That's your Monday roundup. Talk to you tomorrow, Travis. This is Nigel, signing off.

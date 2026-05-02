@@ -1,0 +1,31 @@
+Hey Travis, it's Nigel with your Calibr-Skaggs Spotlight for March twenty-sixth, twenty twenty-six. Today we're going deep on a story that's squarely in Calibr's focus area — Allogene Therapeutics and the pivotal moment for off-the-shelf CAR-T therapy.
+
+So here's what's happening. STAT reported today that Allogene is nearing an early but pivotal study readout for its allogeneic CAR-T cell therapy in lymphoma. Adam Feuerstein, who covers biotech closely, flagged this as a key inflection point that could vindicate Allogene's years-long bet on off-the-shelf cell therapy. The company has two major trials running — the ALPHA three trial and the RESOLUTION trial — and we're approaching a critical data milestone.
+
+Now, let's talk about why this matters so much, both for the CAR-T field and for Calibr.
+
+The fundamental promise of allogeneic CAR-T is eliminating the biggest bottleneck in cell therapy today — the autologous manufacturing process. Right now, with approved CAR-T products like Yescarta, Kymriah, and Breyanzi, you have to collect a patient's own T cells, ship them to a manufacturing facility, engineer them, expand them, and ship them back. That takes weeks, sometimes months. Patients with aggressive lymphoma often can't wait that long.
+
+Allogene's approach uses T cells from healthy donors, engineered in advance and stored as an off-the-shelf product, ready to go when the patient needs it. If the ALPHA three data hold up, this could fundamentally change the economics and logistics of CAR-T therapy.
+
+But here's the challenge Allogene has faced. Allogeneic CAR-T cells can be rejected by the patient's immune system — host-versus-graft rejection. The donor T cells can also attack the patient's healthy tissue — graft-versus-host disease. Allogene uses gene editing — specifically TALEN technology — to knock out the T cell receptor and reduce these risks, but persistence has been the Achilles' heel. The cells just don't stick around as long as autologous CAR-T.
+
+And this is where Calibr's approach offers an interesting contrast. Your sCAR-T program — CLBR001 plus SWI019 — takes a fundamentally different angle on solving the CAR-T accessibility problem. Rather than using donor cells off the shelf, the switchable CAR-T platform uses the patient's own T cells but adds a control switch. The CLBR001 component is the CAR-T cell itself, and SWI019 is the antibody switch that activates it. This gives you dose-level control — you can dial the activity up or down by adjusting the switch molecule.
+
+The philosophical difference here is important. Allogene is solving the manufacturing timeline problem by removing the patient from the manufacturing step. Calibr is solving the safety problem by adding a layer of pharmacological control. Both are valid strategies, but they address different failure modes of first-generation CAR-T.
+
+Now let's zoom out to the competitive landscape. The allogeneic CAR-T space has seen a lot of attrition. Several companies have struggled — remember CRISPR Therapeutics pivoted away from allogeneic to focus on gene editing therapies in other areas. Caribou Biosciences has been working on it but with mixed results. Allogene has been the most persistent, and if this readout validates their approach, it reinvigorates the entire off-the-shelf thesis.
+
+Meanwhile, the in vivo CAR-T space — which we covered in detail earlier this week — is also advancing rapidly. Companies like Umoja Biopharma and Interius BioTherapeutics are working on approaches to engineer CAR-T cells directly inside the patient's body, bypassing the ex vivo manufacturing step entirely. That Nature paper from Eyquem and Doudna on site-specific in vivo T cell engineering that we discussed Monday showed that lipid nanoparticle-delivered gene editing can create functional CAR-T cells in vivo.
+
+So what you're seeing is a three-way race to solve the CAR-T access problem: allogeneic off-the-shelf like Allogene, switchable autologous like Calibr's sCAR-T, and in vivo engineering. Each has distinct advantages. Off-the-shelf is the fastest to administer but may have persistence issues. Switchable autologous gives you control but still requires manufacturing. In vivo is the most elegant but is still early stage.
+
+For Calibr specifically, the Allogene readout matters because it sets the bar for what next-generation CAR-T needs to deliver. If Allogene shows strong response rates but limited durability, that strengthens the case for approaches like sCAR-T that use the patient's own cells — which naturally persist longer — while adding controllability. If Allogene shows both strong responses and durability, it raises the competitive bar for everyone.
+
+The AbbVie partnership adds another dimension here. AbbVie's investment in Calibr's sCAR-T for both B-cell lymphoma and the autoimmune extension — remember, you're also targeting CD19 in autoimmune diseases — positions the program at the intersection of the two hottest areas in cell therapy. The autoimmune CAR-T space has been on fire, with companies like Kyverna and Cabaletta reporting impressive data in lupus and other autoimmune conditions.
+
+One more thing worth noting. The broader CAR-T market dynamics are shifting. Payer resistance to the high cost of autologous CAR-T — four to five hundred thousand dollars per treatment — is creating real pressure for alternatives. Whether that's off-the-shelf from Allogene, switchable from Calibr, or eventually in vivo approaches, the field needs solutions that can bring down cost and improve access. Each of these platforms offers a different path to that goal.
+
+So keep a close eye on the Allogene data when it drops. The response rates, the durability of remissions, and any signals around graft-versus-host disease will all be critical benchmarks for understanding where Calibr's sCAR-T fits in this rapidly evolving landscape.
+
+That's your spotlight for today. I'm Nigel — talk to you next time.

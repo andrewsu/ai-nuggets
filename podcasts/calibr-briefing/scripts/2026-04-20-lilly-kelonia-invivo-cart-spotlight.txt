@@ -1,0 +1,37 @@
+Hey Travis, it's Nigel. Welcome to today's spotlight. We need to talk about what just happened in the in vivo CAR-T space, because it's a seismic event with direct implications for Calibr.
+
+Today, Eli Lilly announced it's acquiring Kelonia Therapeutics for 3.25 billion dollars upfront, with total potential deal value reaching approximately 7 billion dollars with milestones. Kelonia is a company focused on in vivo CAR-T cell therapy — engineering CAR-T cells directly inside the patient's body rather than extracting cells, modifying them in a facility, and reinfusing them.
+
+Let me put this in context. Lilly already paid 2.4 billion dollars to acquire Orna Therapeutics in 2024 for its circular RNA platform, which has in vivo CAR-T applications. Before that, AstraZeneca paid a billion dollars for EsoBiotec's lentiviral in vivo CAR-T platform. AbbVie has its partnership with Calibr on sCAR-T. Bristol Myers is investing through multiple deals. And now Lilly is stacking another multi-billion dollar bet on top of Orna with this Kelonia acquisition.
+
+The total capital committed to in vivo CAR-T by big pharma in the last two years now exceeds 15 billion dollars. This isn't exploratory anymore. The world's largest pharmaceutical companies have decided that in vivo CAR-T is the future of cell therapy.
+
+So what does Kelonia bring to the table? The company has been developing approaches to reprogram immune cells directly in the body, eliminating the complex, expensive, patient-specific manufacturing process that current CAR-T therapies like Yescarta and Kymriah require. The current ex vivo manufacturing process costs hundreds of thousands of dollars per patient, takes weeks, and limits access. In vivo approaches promise off-the-shelf, injectable CAR-T therapies that could be given like a standard infusion.
+
+Now here's the critical nuance. The in vivo CAR-T field is splitting into distinct technological approaches, and they have very different safety profiles.
+
+First, you have mRNA-LNP approaches — companies like CREATE Medicines, which just presented impressive data at AACR here in San Diego. Their all-RNA RetroT platform can engineer CAR-T cells in vivo without viral vectors. The advantage is transient expression — the CAR fades over time, which is a built-in safety valve. The downside is you need repeat dosing, and the durability question remains open.
+
+Second, there are viral vector approaches — like AstraZeneca's acquired EsoBiotec lentiviral platform. These offer stable, permanent integration, but the AstraZeneca-published Nature Medicine data from ESO-T01 showed alarming toxicities — serious immune reactions in all five patients, including one death. Permanent integration means permanent risk.
+
+Third, circular RNA approaches — like Lilly's Orna platform and the recent Circio-Acuitas partnership. Circular RNA is more stable than linear mRNA, offering longer expression windows, but it's still fundamentally transient.
+
+And fourth — and this is where Calibr sits — you have the switchable architecture. Calibr's sCAR-T platform with CLBR001 and the SWI019 switch is philosophically different from all of these. Instead of asking "how do we make the CAR go away if there's a problem," Calibr asks "how do we control the CAR in real time?" The switch molecule acts as a rheostat — you can titrate the dose of SWI019 to dial CAR-T activity up or down. Stop dosing the switch and the CAR-T cells are still there but inactive. Resume the switch and they reactivate.
+
+This is profoundly important in the context of what Lilly just did. Here's why.
+
+The biggest unsolved problem in the in vivo field is safety control. When you inject mRNA or a viral vector directly into a patient to create CAR-T cells in vivo, you don't fully control how many cells get transduced, where in the body they activate, or how strong the immune response will be. The AstraZeneca ESO-T01 data showed exactly this problem — a novel two-phase immune activation pattern that wasn't predicted from preclinical models.
+
+Calibr's switch mechanism could be the answer the in vivo field is searching for. Imagine combining an in vivo delivery platform — whether mRNA-LNP, circular RNA, or something else — with a switchable CAR architecture. You'd get the manufacturing and access advantages of in vivo delivery plus the real-time controllability of the switch. That's potentially the best of both worlds.
+
+The Lilly-Kelonia deal, combined with their existing Orna acquisition, positions Lilly as the most aggressive in vivo CAR-T player. But they still face the control problem. And Calibr, through its AbbVie partnership, holds what may be the most elegant solution.
+
+Meanwhile, the field keeps accelerating. At AACR this week, we saw CREATE Medicines demonstrate simultaneous engineering of myeloid cells, NK cells, and T cells using their multi-immune in vivo CAR platform. Immunofoco presented IMV102 data showing durable tumor control with an in vivo CAR-T approach. Cabaletta Bio showed data on CD19 CAR-T for autoimmune disease without preconditioning chemotherapy. The autoimmune application is expanding rapidly, which is directly relevant to Calibr's sCAR-T autoimmune program, also under the AbbVie deal.
+
+And one more data point — HLB's unit reported their CAR-T approach shrank solid tumors by up to 47 percent. Solid tumors remain the frontier for CAR-T, and that's one of Calibr's sCAR-T target indications alongside B-cell lymphoma and autoimmune.
+
+The bottom line, Travis: Lilly just confirmed with 3.25 billion dollars in cash that in vivo CAR-T is the future. But the safety control problem remains the central challenge. Calibr's switchable architecture isn't just differentiated — it may be essential. As more in vivo platforms enter the clinic and encounter the toxicity challenges that the AstraZeneca data previewed, the demand for controllable CAR-T activity will only grow. Calibr and AbbVie are positioned right at that intersection.
+
+The in vivo CAR-T space went from experimental curiosity to a 15-plus billion dollar big pharma priority in under two years. And the next chapter — combining in vivo delivery with switchable control — could be where Calibr's technology becomes most valuable.
+
+That's your spotlight for Monday, April 20th. Big day for the field. This is Nigel, signing off.

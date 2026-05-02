@@ -1,0 +1,19 @@
+Hey Travis, it's Nigel with your Calibr-Skaggs Daily Briefing for Wednesday, April sixteenth, twenty twenty-six. Let's run through today's top headlines.
+
+First up — and this one's right in your wheelhouse — Circio Biotechnologies and Acuitas Therapeutics have announced a partnership to develop in vivo CAR-T cell therapy using circular RNA delivered via lipid nanoparticles. This is a direct competitor to the traditional ex vivo CAR-T manufacturing approach. The idea is to reprogram T cells inside the patient's body, no apheresis, no manufacturing delay. Huge implications for the CAR-T space and very relevant to Calibr's sCAR-T platform. I'll go deep on this in the spotlight episode.
+
+Number two — Johnson and Johnson posted a strong first quarter, beating earnings expectations. The star performers were Darzalex in multiple myeloma and their new psoriasis treatment Tremfya, which more than offset the steep drop in Stelara sales as biosimilars eat into that franchise.
+
+Third — biotech early-stage funding is slumping toward post-pandemic lows, according to Fierce Biotech. Seed and Series A rounds are getting harder to close, which is putting real pressure on startup biotechs trying to get programs off the ground. The funding winter continues for the earliest-stage companies.
+
+Fourth — Novartis CEO Vas Narasimhan has joined the board of Anthropic, the AI company behind Claude. This deepens pharma's connection to frontier AI. Meanwhile, Amazon Web Services launched Amazon Bio Discovery, a new AI platform designed to accelerate early-stage drug discovery. They claim it cut antibody design timelines at Memorial Sloan Kettering from a year down to weeks.
+
+Fifth — Aligos Therapeutics sold the China rights to its HPV drug to hepatology specialist Amoytop in a deal worth up to four hundred forty-five million dollars. An interesting regional licensing deal that shows the value of antiviral assets.
+
+Sixth — the FDA advisory committee is set to weigh taking action on certain unapproved peptides, which could have significant implications for the compounding pharmacy market, particularly around GLP-1 agonists and other peptide-based therapies.
+
+And seventh — MSF, Doctors Without Borders, is criticizing Gilead's updated global access plan for its HIV drug Yeztugo, saying the supply commitments fall far short of what's needed. Relevant context given Calibr's own long-acting HIV antiretroviral program, CLZ629, in Phase 1.
+
+Quick bonus — Daiichi Sankyo is plotting to sell its consumer health unit to beverage giant Suntory for about one-point-five billion dollars, continuing the industry trend of big pharma shedding OTC portfolios to focus on innovative medicines.
+
+That's your headlines for today. Check out the spotlight episode for the deep dive on the Circio-Acuitas in vivo CAR-T partnership. This is Nigel, signing off.

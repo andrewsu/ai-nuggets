@@ -1,0 +1,21 @@
+Welcome to today's Calibr-Skaggs Spotlight — our deep dive into focus areas that matter most to the Calibr pipeline. Today: major developments in in vivo CAR-T cell therapy and the MASH-FGF21 landscape.
+
+Starting with in vivo CAR-T. This has been a landmark week. A paper published March 18th in Nature, from Justin Eyquem's group at UCSF working with Jennifer Doudna's team, demonstrates in vivo site-specific engineering to reprogram T cells. The key advance: instead of relying on random integration of DNA payloads — which is how most current in vivo CAR-T approaches work — they've developed a two-vector system using enveloped delivery vehicles combined with AAV to achieve stable, site-specific transgene integration directly in a patient's T cells. This is a fundamental step toward making in vivo CAR-T cells as precisely engineered as their ex vivo counterparts, but without the manufacturing bottleneck.
+
+This sits alongside a review paper published March 19th in Experimental Hematology and Oncology that summarizes the latest non-viral in vivo CAR-T platforms presented at ASH 2025. The field is exploding with delivery options: advanced lipid nanoparticles, virus-like particles, and polymeric nanoparticles are all being developed for in situ T cell reprogramming. The authors frame it as a paradigm shift — moving from complex ex vivo manufacturing to direct in vivo generation, which could transform the cost, scalability, and accessibility equation for CAR-T.
+
+Also this week: a Nature Immunology paper showed programmable metabolite-sensing receptors can mobilize both NK and T cells to infiltrate solid tumors — a complementary approach to the in vivo engineering story. And a Nature Communications paper introduced drug-gated, light-activatable CAR-antigen pairing for programmable multi-antigen targeting in solid tumors.
+
+All of this is directly relevant to Calibr's switchable CAR-T program — the sCAR-T platform with CLBR001 and SWI019 in Phase 1 for B-cell lymphoma, solid tumors, and autoimmune indications with AbbVie. The field is rapidly converging on solutions to make CAR-T simpler, cheaper, and more controllable.
+
+Now, turning to MASH and FGF21. A new GRADE-assessed meta-analysis published March 17th in Hepatology International pools data from four randomized controlled trials of efruxifermin — Akero's long-acting FGF21 analog — covering 419 patients with biopsy-confirmed MASH. The key numbers: 39.7% of patients on efruxifermin achieved at least one-stage fibrosis improvement without MASH worsening, versus 17.1% on placebo. MASH resolution rates were even more striking — 45.1% versus 13.5%. Liver enzymes dropped significantly, and the ELF fibrosis score improved meaningfully.
+
+But there are caveats. Trial sequential analysis suggests the accumulated evidence isn't yet conclusive for firm conclusions. There was no significant benefit for two-stage or greater fibrosis improvement. And tolerability is a concern — drug-related adverse events hit 71% versus 44% for placebo, with discontinuation rates roughly triple the placebo group.
+
+Meanwhile, a separate FGF21 analog is advancing. The Lancet published phase 2 results for efimosfermin alfa, formerly BOS-580, from Boston Pharmaceuticals working with GSK. This is a once-monthly FGF21 analog tested in MASH patients with F2 or F3 fibrosis over 24 weeks. The monthly dosing schedule is a potential differentiator in a space where patient adherence matters.
+
+The broader MASH landscape review from Gut this month frames the coming era as one of combination therapies — thyroid hormone receptor beta agonists like resmetirom, plus GLP-1 agonists, plus FGF21 analogs, potentially in combination. The question isn't just whether individual mechanisms work, but which combinations move the needle on fibrosis regression at scale.
+
+For Calibr, this is directly relevant to the MASH biologic program currently in IND-enabling — a dual-acting approach targeting multiple receptors. The FGF21 data validates the mechanism while highlighting the tolerability challenges that Calibr's dual-acting design might address.
+
+That's your Calibr-Skaggs Spotlight for today. We'll be back tomorrow with the latest headlines and focus area updates. This is Nigel — stay sharp out there.

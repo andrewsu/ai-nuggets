@@ -1,0 +1,17 @@
+Hey Travis, it's Nigel with your Calibr-Skaggs Daily Briefing for Wednesday, April 9th, 2026. Let's run through today's top biotech and pharma headlines.
+
+First up, the GLP-1 pricing war just got hotter. Novo Nordisk launched its higher-dose Wegovy HD at a cash-pay price of $399 per month, deliberately undercutting Eli Lilly's Zepbound by fifty bucks. This comes just over a week after the FDA approved Lilly's oral obesity pill Foundayo, or orforglipron, which launched at $149 per month for starter doses. Both companies are now locked in an all-out battle for the obesity market, which is projected to hit $100 billion by 2030. Worth watching given Calibr's own oral incretin program, CMZ371.
+
+Second, the Trump administration revived pharma tariffs, slapping 100% levies on imported drugs under a national security rationale. But here's the catch — there are massive loopholes. Thirteen major companies that pledged a collective $400 billion in U.S. manufacturing investment are exempt. Generics and biosimilars are completely spared. And drugs from the EU, Japan, Korea, and Switzerland face only 15%. Analysts are calling this mostly bark, not bite, with the overall threat to the sector expected to remain low.
+
+Third, the FDA is proposing a new expedited IND pathway in its 2027 budget request. The idea is to create a risk-based fast track for getting experimental drugs into first-in-human Phase 1 trials, aimed at matching regulatory speed in China that has been pulling early-stage development activity overseas. This would need Congressional approval, but it's a significant signal — and could benefit academic drug developers like Calibr with multiple programs in IND-enabling stages.
+
+Fourth, Sanofi delivered mixed results for its bispecific drug lunsekimig, which targets both TSLP and IL-13. The drug hit its primary endpoints in asthma and nasal polyps studies but missed the mark in atopic dermatitis. Sanofi is under pressure to find a Dupixent successor before patent expiration in 2031. Two Phase 3 COPD trials are already underway.
+
+Fifth, biotech IPOs stayed slow in Q1 2026 but went bigger. Only six companies priced offerings, but they collectively raised $1.7 billion — the best quarter since 2021. The median raise was $287.5 million, more than double last year. The window remains shut for preclinical-stage companies, though.
+
+Sixth, a couple of notable startup launches this week. Syneron Bio closed a $150 million Series B backed by AstraZeneca to develop macrocyclic peptide drugs, building on their multi-billion-dollar alliance. And Stipple Bio emerged from stealth with $100 million for precision ADC oncology programs, led by a16z Bio and RA Capital, with a lead antibody-drug conjugate headed to the clinic in early 2027.
+
+And finally, a quick note that AACR 2026 is underway in San Diego this week. STAT News is covering the conference live, and we should see important cancer research data drops over the coming days. Keep an eye out for anything relevant to CAR-T, ADCs, and solid tumor immunotherapy.
+
+That's your headlines roundup for today. I'm Nigel — talk to you on the deep dive.
