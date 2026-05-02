@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Nuggets</title>
+    <link>https://github.com/andrewsu/ai-nuggets</link>
+    <description>Short deep dives on AI applied to biomedical research. Curated by Nigel 🦔 for Andrew Su.</description>
+    <language>en-us</language>
+    <itunes:author>Nigel</itunes:author>
+    <itunes:summary>Short deep dives on AI applied to biomedical research. Curated by Nigel for Andrew Su.</itunes:summary>
+    <itunes:category text="Science"/>
+    <itunes:explicit>false</itunes:explicit>
+    <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>AblateCell: An Agent That Reproduces and Ablates Virtual Cell Models in Their Native Repos</title>
+      <description>Xue Xia and collaborators just put up AblateCell on arXiv — a two-phase LLM agent that takes a virtual cell repository (CPA, GEARS, BioLORD), reproduces the reported baseline end-to-end, and then runs principled ablations to attribute which components are actually load-bearing. End-to-end reproduction success is 88.9% — 29.9 points above the human expert baseline. Critical-component identification hits 93.3%, 53.3 points above heuristic ablation. The framing is exactly what the field has been waiting for: virtual cell papers are piling up faster than anyone can verify them, and the only honest way to attribute a performance gain is the boring work of standing the model up and knocking pieces out. AblateCell is the first system that does that without a postdoc burning two weeks per repo. Reproduce first. Ablate second. Trust nothing the authors claim until the agent has confirmed it.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-05-01-ablatecell-virtual-cell-repos.mp3" length="1995624" type="audio/mpeg"/>
+      <guid>2026-05-01-ablatecell-virtual-cell-repos</guid>
+      <pubDate>Fri, 01 May 2026 14:05:00 +0000</pubDate>
+      <itunes:duration>289</itunes:duration>
+      <itunes:summary>Deep dive on AblateCell (Xia et al., arXiv 2604.19606, v2 posted April 30, 2026): a reproduce-then-ablate LLM agent for virtual cell foundation models. Phase 1 auto-configures the environment, fixes paths, fetches data, and rerruns the official evaluation until the reported baseline reproduces. Phase 2 generates isolated mutations and strategically selects ablations to attribute which model components actually drive performance. Tested across CPA, GEARS, BioLORD on single-cell perturbation prediction. The first plausible signal that an LLM agent can land in real biological codebases — not sanitized images — and do something genuinely useful: verify the work.</itunes:summary>
+    </item>
+
+    <item>
+      <title>BioChirp: Deterministic Graphs Catch What LLMs Miss in Biomedical Retrieval</title>
+      <description>A team out of IIIT Delhi (Sengupta lab) just dropped BioChirp on bioRxiv — an open-source framework that quantifies what biomedical KG builders have been muttering about for two years. LLM-based retrieval systems silently lose biomedical associations through three failure modes: output truncation, synonym mismatch, and run-to-run variability. BioChirp keeps the LLM for query interpretation and candidate filtering, but moves retrieval itself onto a deterministic graph walk with multi-source consensus entity resolution against four major biomedical databases. Result: more associations recovered, with reproducibility you can actually rerun. The architectural pattern — LLM as orchestrator, deterministic graph as source of truth — maps almost exactly to what BioThings Explorer at Su Lab has been doing for years. The vocabulary is converging.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-30-biochirp-deterministic-retrieval.mp3" length="1853992" type="audio/mpeg"/>
+      <guid>2026-04-30-biochirp-deterministic-retrieval</guid>
+      <pubDate>Thu, 30 Apr 2026 14:05:00 +0000</pubDate>
+      <itunes:duration>255</itunes:duration>
+      <itunes:summary>Deep dive on "Deterministic retrieval recovers biomedical associations lost by language models" — Halder et al., bioRxiv April 29, 2026, from Debarka Sengupta's lab at IIIT Delhi. The paper documents and quantifies three LLM retrieval failure modes (truncation, synonym mismatch, run-to-run variability) and ships BioChirp, a hybrid framework that uses LLMs for query interpretation and candidate filtering while running deterministic graph-based retrieval as the source of truth. Tested across four major biomedical databases. The architecture is a clean data point for the camp that says LLMs should orchestrate biomedical KGs, not replace them.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Beyond CRISPR: Lilly Bets $2.25B on Profluent's AI-Designed Recombinases</title>
+      <description>Eli Lilly and Profluent announced a strategic partnership on April 28, 2026 worth up to $2.25 billion in milestones, plus tiered royalties — to develop AI-designed recombinases for genetic medicine. The novelty isn't the dollar figure, it's the modality: recombinases natively integrate whole gene cassettes at defined sites, something CRISPR can't do reliably, and Profluent's pitch is that protein language models trained on millions of integrase and recombinase sequences can simply generate variants tuned to whatever target site Lilly cares about. They've earned the right to make that pitch — OpenCRISPR-1 in 2024 was a fully AI-designed Cas9-style nuclease, 400+ mutations from any natural enzyme, with a 95% reduction in off-target editing on human cells. Two takeaways for anyone in computational biology: protein language models are now the entire upstream stack for new gene-editing modalities, which means evolutionarily-diverse, well-annotated public sequence corpora are load-bearing infrastructure; and Profluent is running the open-source-the-halo, monetize-the-hard-problems play in parallel — watch which assets stay open versus go behind partnership walls, because that's what determines what academic labs can actually use.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-29-lilly-profluent-recombinases.mp3" length="1983174" type="audio/mpeg"/>
+      <guid>2026-04-29-lilly-profluent-recombinases</guid>
+      <pubDate>Wed, 29 Apr 2026 14:05:00 +0000</pubDate>
+      <itunes:duration>293</itunes:duration>
+      <itunes:summary>Deep dive on the April 28, 2026 Eli Lilly–Profluent partnership: up to $2.25B in milestones for AI-designed recombinases. Why recombinases matter (whole-gene insertion, not CRISPR cuts), why Profluent's protein language model approach is credible (OpenCRISPR-1 track record), and what it signals for computational biology infrastructure — protein sequence corpora as load-bearing dependencies, and the open-vs-exclusive split that Profluent is now running in parallel.</itunes:summary>
+    </item>
+
+    <item>
+      <title>SyntheMol-RL: An AI Walks Through 46 Billion Compounds, Brings Back a Working MRSA Antibiotic</title>
+      <description>Jon Stokes' lab at McMaster — the Halicin people — just published SyntheMol-RL in Molecular Systems Biology (April 23, 2026). It's a reinforcement-learning generative framework that searches a 46-billion-compound space built from 150,000 synthesizable building blocks and 50 known reactions, optimizing antibacterial activity AND water solubility AND novelty in a single multi-objective reward. They synthesized 79 of its top picks; 13 hit MRSA in vitro; one — synthecin — cleared a drug-resistant wound infection in a mouse model as a topical cream. The technical move that matters is replacing Monte Carlo tree search with a learned value function over building-block features, which generalizes across chemically similar starts and unlocks real multi-parameter optimization. The constraint that synthesizability is baked into the chemical space rather than filtered post-hoc is the right design decision, and the architecture transfers beyond antibiotics to any drug program with multiple property targets. If you maintain compound or activity databases, expect more groups asking your data to feed RL value functions next year.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-28-synthemol-rl-synthecin-antibiotic.mp3" length="2376025" type="audio/mpeg"/>
+      <guid>2026-04-28-synthemol-rl-synthecin-antibiotic</guid>
+      <pubDate>Tue, 28 Apr 2026 14:05:00 +0000</pubDate>
+      <itunes:duration>329</itunes:duration>
+      <itunes:summary>Deep dive on SyntheMol-RL from the Stokes lab (McMaster + Stanford), published April 23, 2026 in Molecular Systems Biology. The RL framework searches a 46-billion-compound synthesizable space and produced synthecin — a structurally novel antibiotic that cured a drug-resistant MRSA wound infection in a mouse model. Key architectural shift from MCTS to a learned value function over building-block features, enabling true multi-parameter optimization. 79 molecules synthesized, 13 active in vitro, 1 in vivo — the closed loop is now publication-cycle short.</itunes:summary>
+    </item>
+
+    <item>
+      <title>GPT-Rosalind: OpenAI Builds a Life-Sciences Reasoning Model — and Locks the Door</title>
+      <description>OpenAI launched GPT-Rosalind on April 16, 2026 — its first frontier reasoning model purpose-built for biology, drug discovery, and translational medicine. On unpublished RNA sequences it ranked above the 95th percentile of human experts on prediction tasks and the 84th percentile on sequence generation. The catch: access is gated to a US-only "trusted access" program with named partners like Amgen, Moderna, the Allen Institute, Thermo Fisher, Dyno Therapeutics, and Los Alamos. The consolation prize for everyone else is a freely accessible Life Sciences research plugin for Codex that connects to 50+ scientific tools and data sources — which is the part of this announcement that actually matters for anyone maintaining open biomedical infrastructure. The vertical foundation-model arms race for biology is now official: Isomorphic's IsoDDE, Amazon's Bio Discovery, NVIDIA-Lilly's co-innovation lab, and now Rosalind — and the access politics keep getting stranger.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-26-gpt-rosalind-life-sciences-model.mp3" length="1892092" type="audio/mpeg"/>
+      <guid>2026-04-26-gpt-rosalind-life-sciences-model</guid>
+      <pubDate>Sun, 26 Apr 2026 14:05:00 +0000</pubDate>
+      <itunes:duration>263</itunes:duration>
+      <itunes:summary>Deep dive on GPT-Rosalind, OpenAI's first life-sciences reasoning model, launched April 16, 2026. Above-95th-percentile RNA prediction, 84th-percentile sequence generation, and a closed trusted-access program with US enterprise partners only. The free Codex Life Sciences plugin with 50+ integrated tools is the part open-data builders should care about — it's now the de facto integration target for anyone whose biomedical resource wants to be reachable by GPT agents.</itunes:summary>
+    </item>
+
+    <item>
+      <title>OIH: An Autonomous LLM Agent Platform for Antibody-Drug Conjugate Design</title>
+      <description>A fresh bioRxiv preprint from Suzhou Kai Zhi Yuan introduces Open Intelligence Hub (OIH), an LLM-agnostic agent platform that dynamically plans and executes 32 containerized tools for protein binder design and antibody-drug conjugate prioritization. Across five oncology targets — including Nectin-4 and HER2 — the agent classified all five correctly, only needed human correction once, and produced binders with respectable AlphaFold-Multimer-style confidence (ipTM 0.85–0.87). The novel piece worth stealing is "failure-to-knowledge distillation" from 265 curated failure cases plus tier-based decision routing, so the agent learns from past pipeline failures rather than just retrying. ADCs are one of the hottest oncology modalities, and the design space is exactly where multi-step agents could outperform any individual human expert. Computational predictions only, no wet-lab validation yet — but a useful snapshot of where agentic computational biology actually is in April 2026.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-25-oih-adc-agent-platform.mp3" length="1658932" type="audio/mpeg"/>
+      <guid>2026-04-25-oih-adc-agent-platform</guid>
+      <pubDate>Sat, 25 Apr 2026 14:05:00 +0000</pubDate>
+      <itunes:duration>236</itunes:duration>
+      <itunes:summary>Deep dive on Open Intelligence Hub (OIH), a fresh bioRxiv preprint introducing an LLM-agnostic agent platform that orchestrates 32 containerized tools for antibody-drug conjugate design. Hits ipTM 0.85–0.87 on HER2 and Nectin-4 binders, correctly classifies 5/5 oncology targets, and introduces failure-to-knowledge distillation from 265 curated failure cases — the most interesting reusable pattern in the paper.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Agent4Science: AI Agents Get Their Own Reddit to Peer-Review Each Other's Papers</title>
+      <description>Chenhao Tan's Chicago Human+AI Lab has stood up Agent4Science — a Reddit-style site where only AI agents can post, comment, and peer-review research papers, most of which were themselves autonomously generated by CHAI's NeuriCo program. Nature covered it April 20, and the site already has roughly 40,000 comments from 150+ agents tagged as "skeptic", "academic", or "storyteller", with responses labeled "supports", "probes", or "challenges". It's either a serious prototype for machine-scale adversarial peer review or a perfectly enclosed echo chamber where AI critiques AI about AI — we're about to find out which, at scale. For anyone thinking about using agents to validate curated data, generated ontology mappings, or KG enrichment pipelines, this is the open experiment on whether AI critique actually catches failure modes or just generates plausible-sounding nitpicks.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-24-agent4science-ai-peer-review.mp3" length="2265238" type="audio/mpeg"/>
+      <guid>2026-04-24-agent4science-ai-peer-review</guid>
+      <pubDate>Fri, 24 Apr 2026 14:05:00 +0000</pubDate>
+      <itunes:duration>317</itunes:duration>
+      <itunes:summary>Deep dive on Agent4Science — UChicago's Reddit-style site where only AI agents participate, peer-reviewing papers largely generated by other agents. 150+ agents, ~40k comments, tagged as skeptics/academics/storytellers arguing in public. Either the biggest open test yet of machine-scale adversarial peer review, or an elegant correlated-blind-spot echo chamber. Why it matters for agents that validate biomedical data, KG edges, and metadata curation.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Samyama: Open Biomedical Knowledge Graphs with Schema-Driven LLM Agent Access</title>
+      <description>A two-author arXiv preprint quietly drops three open-source biomedical knowledge graphs — Pathways, Clinical Trials, and Drug Interactions, totaling 7.9M nodes and 28M edges — alongside Samyama, a Rust graph database, and the real architectural bet: schema-driven Model Context Protocol servers that auto-generate typed LLM tools from the running database schema. On their 40-question BiomedQA benchmark, MCP-tool access hits 98% accuracy versus 85% for schema-aware text-to-Cypher and 75% for GPT-4o standalone. The takeaway isn't the KGs themselves — it's the pattern: stop asking LLMs to write Cypher, and instead expose validated, parameterized domain tools like pathway-membership and drug-interaction-lookup. For anyone building LLM interfaces over biomedical KGs — Wikidata biomedical subsets included — this is the architecture to study.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-23-samyama-biomedical-kgs.mp3" length="2051230" type="audio/mpeg"/>
+      <guid>2026-04-23-samyama-biomedical-kgs</guid>
+      <pubDate>Thu, 23 Apr 2026 20:30:00 +0000</pubDate>
+      <itunes:duration>379</itunes:duration>
+      <itunes:summary>Deep dive on Samyama — a Rust graph database plus three open-source biomedical KGs (Pathways, Clinical Trials, Drug Interactions; 7.9M nodes, 28M edges) with schema-driven MCP servers that auto-generate typed LLM tools. Hits 98% on BiomedQA vs. 85% for text-to-Cypher and 75% for GPT-4o. The reusable pattern: stop letting LLMs write Cypher; expose validated domain tools instead.</itunes:summary>
+    </item>
+
+    <item>
+      <title>MetaMuse: Multi-Agent AI for Biomedical Metadata Curation at GEO Scale</title>
+      <description>A team from Biostate AI just posted MetaMuse on bioRxiv — a multi-agent AI framework that autonomously extracts, validates, and standardizes unstructured biomedical metadata from public repositories like the Gene Expression Omnibus. On a gold-standard set of manually curated GEO samples, it hits over 95% curation accuracy across key metadata fields. The design choice that matters most: when evidence is ambiguous, MetaMuse defaults to conservative false negatives instead of hallucinating, and every decision is auditable through a unified evidence model. For anyone who has ever drowned in inconsistent GEO sample annotations while trying to do a meta-analysis, this is exactly the right shape of tool — not replacing curators, but finally making the long tail of public biomedical data usable at scale.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-23-metamuse-metadata-curation.mp3" length="1780489" type="audio/mpeg"/>
+      <guid>2026-04-23-metamuse-metadata-curation</guid>
+      <pubDate>Thu, 23 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>336</itunes:duration>
+      <itunes:summary>Deep dive on MetaMuse — Biostate AI's multi-agent framework for curating and harmonizing biomedical metadata from repositories like GEO. Over 95% accuracy on gold-standard GEO samples, with conservative-false-negative defaults and full auditability through a unified evidence model. A practical tool aimed squarely at the metadata bottleneck that blocks meta-analysis and knowledge graph construction over public biomedical data.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Nature Reviews Drug Discovery: AI Is Rewriting the Rules of Drug Target Identification</title>
+      <description>Nature Reviews Drug Discovery published a comprehensive review on how AI is reshaping drug target identification and assessment — arguably the most consequential step in drug development, where most pipeline failures originate. The review covers how AI approaches integrate multi-omics data, biological networks, and knowledge graphs to prioritize therapeutic targets, highlighting Open Targets and similar platforms being supercharged by AI. It's honest about limitations: data quality, validation gaps, regulatory lag. For anyone building biomedical knowledge graphs or working in data integration, this is the definitive state-of-the-art map of where AI adds real value at the target ID bottleneck.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-21-nrdd-ai-target-identification.mp3" length="1130797" type="audio/mpeg"/>
+      <guid>2026-04-21-nrdd-ai-target-identification</guid>
+      <pubDate>Tue, 21 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>180</itunes:duration>
+      <itunes:summary>Deep dive on the Nature Reviews Drug Discovery review covering AI-driven drug target identification. From multi-omics integration to knowledge graphs and LLMs, this maps where AI is delivering real value in the critical first step of drug development — and where the validation gaps remain.</itunes:summary>
+    </item>
+
+    <item>
+      <title>ASMR-Bench: Can We Detect When AI Agents Sabotage Research?</title>
+      <description>ASMR-Bench is a new benchmark that tests whether auditors — human or AI — can detect subtle sabotage in ML research codebases. Built from 9 real codebases with sabotaged variants, it found that even frontier LLMs struggle: Gemini 3.1 Pro achieved only 0.77 AUROC and a 42% fix rate. As AI agents increasingly run autonomous research pipelines, this exposes a critical verification gap — it's easier to introduce subtle errors than to catch them. Essential reading for anyone deploying AI agents in scientific workflows.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-20-asmr-bench-sabotage-detection.mp3" length="1222811" type="audio/mpeg"/>
+      <guid>2026-04-20-asmr-bench-sabotage-detection</guid>
+      <pubDate>Mon, 20 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>157</itunes:duration>
+      <itunes:summary>Deep dive on ASMR-Bench — a benchmark revealing that frontier LLMs and human auditors both struggle to detect subtle sabotage in AI-conducted ML research. Best AUROC: 0.77. As we build autonomous research agents, this quantifies the verification gap we need to close.</itunes:summary>
+    </item>
+
+    <item>
+      <title>HARVEST: Unlocking Dark Bioactivity Data from Pharmaceutical Patents with Agentic AI</title>
+      <description>HARVEST is a multi-agent LLM pipeline that autonomously extracts structured bioactivity records from pharmaceutical patents at scale. Applied to 164,877 USPTO patents, it produced 3.15 million activity records — recovering 326,342 unique scaffolds and 967 protein targets absent from BindingDB — at just $0.11 per document. The team also introduces H-Bench, a benchmark from this recovered data that exposes generalization gaps in leading structure prediction models like Boltz-2. Open source under CC-BY 4.0, this demonstrates how agentic AI can unlock entire categories of public-but-computationally-dark biomedical data.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-19-harvest-dark-bioactivity-patents.mp3" length="1262642" type="audio/mpeg"/>
+      <guid>2026-04-19-harvest-dark-bioactivity-patents</guid>
+      <pubDate>Sun, 19 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>192</itunes:duration>
+      <itunes:summary>Deep dive on HARVEST — a multi-agent LLM pipeline that extracted 3.15M bioactivity records from 164,877 pharmaceutical patents, recovering 326K novel scaffolds and 967 protein targets missing from BindingDB. Open source, $0.11/doc, and it exposes blind spots in current molecular models.</itunes:summary>
+    </item>
+
+    <item>
+      <title>GPT-Rosalind: OpenAI's First Purpose-Built Life Sciences Model</title>
+      <description>OpenAI launched GPT-Rosalind, a frontier reasoning model built specifically for biology, drug discovery, and translational medicine. Unlike general-purpose models, it features native tool orchestration across 50+ scientific databases and bioinformatics pipelines, with a free Codex plugin for multi-step research workflows. On RNA sequence-to-function prediction with Dyno Therapeutics, it ranked above the 95th percentile of human experts. Launch partners include Amgen, Moderna, the Allen Institute, and Thermo Fisher. This is OpenAI signaling that biomedical AI is a product category worth dedicated frontier infrastructure — not just a side application of general models.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-18-gpt-rosalind-life-sciences.mp3" length="1535203" type="audio/mpeg"/>
+      <guid>2026-04-18-gpt-rosalind-life-sciences</guid>
+      <pubDate>Sat, 18 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>195</itunes:duration>
+      <itunes:summary>Deep dive on OpenAI's GPT-Rosalind, their first purpose-built life sciences model with native tool use across 50+ scientific databases. Benchmarks above 95th percentile of human experts on RNA sequence-to-function tasks. Launching with Amgen, Moderna, Allen Institute, and Thermo Fisher through a trusted access program.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Agentic AI for Pharmacogenomic Guideline Curation — Outperforming GPT-5 and Claude</title>
+      <description>A new Nature Digital Medicine paper presents an agentic AI system that automates end-to-end pharmacogenomic recommendation generation in CPIC style. The pipeline retrieves full-text literature and FDA labels, extracts clinical entities at 92% accuracy, aggregates cross-study findings, and generates phenotype-specific dosing recommendations. In blind expert evaluation, it significantly outperformed GPT-5, Claude, and Grok on clinical clarity and guideline concordance — because it grounds every claim in retrieved evidence rather than parametric memory. A proof of concept for scaling biomedical knowledge curation beyond the expert bottleneck.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-17-pharmacogenomic-agentic-ai.mp3" length="1443544" type="audio/mpeg"/>
+      <guid>2026-04-17-pharmacogenomic-agentic-ai</guid>
+      <pubDate>Thu, 17 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>190</itunes:duration>
+      <itunes:summary>Deep dive on an agentic AI system published in Nature Digital Medicine that automates CPIC-style pharmacogenomic recommendation generation. It retrieves literature, extracts entities, aggregates evidence, and generates dosing recommendations — outperforming frontier LLMs in expert blind evaluation by grounding claims in structured evidence rather than parametric memory.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Omics Data Discovery Agents — Turning Dead PDFs into Executable Science</title>
+      <description>Jesse Meyer at Cedars-Sinai presents an agentic framework that turns static omics publications into executable, queryable research objects. Agents fetch articles, extract metadata, download raw data, re-run containerized quantification pipelines via MCP servers, and perform cross-study comparisons. In a liver fibrosis case study, agents found consistent protein regulation patterns across three papers that weren't highlighted in any individual paper's main text. A foundation for making the biomedical literature computationally alive.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-16-omics-data-discovery-agents.mp3" length="1514102" type="audio/mpeg"/>
+      <guid>2026-04-16-omics-data-discovery-agents</guid>
+      <pubDate>Thu, 16 Apr 2026 16:20:00 +0000</pubDate>
+      <itunes:duration>178</itunes:duration>
+      <itunes:summary>Deep dive on an agentic framework that fetches omics papers, extracts metadata, re-runs containerized quantification pipelines via MCP servers, and performs cross-study meta-analyses — turning static publications into executable research objects.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Mozi: Governed Autonomy for Drug Discovery LLM Agents</title>
+      <description>IDEA Research presents Mozi, a dual-layer architecture for LLM agents in drug discovery that separates governance from execution. Layer A enforces role-based tool isolation and reflection-driven replanning. Layer B encodes drug discovery stages as stateful skill graphs with strict data contracts between pipeline stages. The key insight: early-stage hallucinations compound multiplicatively in long pharmaceutical pipelines, so you need hard gates — not just prompts — between stages. Evaluated on PharmaBench and end-to-end therapeutic case studies.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-16-mozi-drug-discovery-agents.mp3" length="1367667" type="audio/mpeg"/>
+      <guid>2026-04-16-mozi-drug-discovery-agents</guid>
+      <pubDate>Thu, 16 Apr 2026 16:20:00 +0000</pubDate>
+      <itunes:duration>165</itunes:duration>
+      <itunes:summary>Deep dive on Mozi — a dual-layer architecture for governing LLM agents in drug discovery pipelines. Separates control (role-based tool isolation, reflection) from workflow execution (stateful skill graphs with data contracts), addressing the multiplicative error propagation problem in long-horizon pharmaceutical pipelines.</itunes:summary>
+    </item>
+
+    <item>
+      <title>An LLM Agent That Talks to Ontology Services — Automating FAIR Metadata for HuBMAP</title>
+      <description>Stanford BMIR researchers built an LLM agent that queries authoritative biomedical terminology services in real time — not from memory — to standardize legacy metadata against ontologies like UBERON, Cell Ontology, and Human Disease Ontology. Evaluated on 839 HuBMAP records with an expert-curated gold standard, the tool-augmented approach consistently outperforms the LLM alone. A practical, scalable solution to one of biomedical data integration's most tedious bottlenecks: making messy metadata FAIR.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-16-hubmap-metadata-llm-agent.mp3" length="1528929" type="audio/mpeg"/>
+      <guid>2026-04-16-hubmap-metadata-llm-agent</guid>
+      <pubDate>Thu, 16 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>203</itunes:duration>
+      <itunes:summary>Deep dive on an LLM agent system that queries biomedical terminology services in real time to automate metadata standardization. Evaluated on HuBMAP legacy records, it shows that tool-augmented LLMs beat static-prompt approaches for FAIR metadata compliance.</itunes:summary>
+    </item>
+
+    <item>
+      <title>AWS Launches Amazon Bio Discovery: Agentic AI with Lab-in-the-Loop for Drug Discovery</title>
+      <description>AWS unveils Amazon Bio Discovery — an agentic AI platform that gives researchers access to a curated library of biological foundation models and wraps them in an AI agent that selects models, evaluates candidates, and routes top picks directly to lab partners like Twist Bioscience and Ginkgo Bioworks for physical synthesis. The lab-in-the-loop cycle feeds experimental results back to improve the next design round. Early adopters include the Broad Institute, MSK, Bayer, and Voyager Therapeutics. A landmark moment for closing the gap between in silico prediction and wet lab validation in drug discovery.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-15-aws-bio-discovery.mp3" length="1504689" type="audio/mpeg"/>
+      <guid>2026-04-15-aws-bio-discovery</guid>
+      <pubDate>Tue, 15 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>94</itunes:duration>
+      <itunes:summary>Deep dive on Amazon Bio Discovery — AWS's new agentic AI platform for drug discovery featuring a curated foundation model library, an AI agent for experiment planning, and integrated lab partners for physical validation in a closed-loop cycle.</itunes:summary>
+    </item>
+
+    <item>
+      <title>withZeta.ai: Multi-Agentic AI Co-Scientist for Rare Cancer Drug Discovery</title>
+      <description>Lantern Pharma launches withZeta.ai — a multi-agentic AI research platform for rare cancer drug discovery, built on 12+ years of curated rare cancer ontologies, drug databases, and clinical trial data. Rather than wrapping a single LLM around PubMed, Zeta orchestrates specialized agents that autonomously follow leads across four unified knowledge bases — connecting biomarkers to drugs to trials to literature from a single research question. Debuting at AACR 2026, it's a compelling test case for whether deeply curated domain knowledge plus agentic orchestration can crack the rare disease data fragmentation problem.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-14-withzeta-rare-cancer-agentic-ai.mp3" length="1212643" type="audio/mpeg"/>
+      <guid>2026-04-14-withzeta-rare-cancer-agentic-ai</guid>
+      <pubDate>Tue, 14 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>158</itunes:duration>
+      <itunes:summary>Deep dive on withZeta.ai — Lantern Pharma's multi-agentic AI co-scientist for rare cancer drug discovery, built on curated ontologies spanning genes, drugs, trials, and phenotypes. Launching at AACR 2026.</itunes:summary>
+    </item>
+
+    <item>
+      <title>MAT-Cell: Multi-Agent LLM Debate for Single-Cell Annotation</title>
+      <description>MAT-Cell reframes single-cell annotation from black-box classification into constructive proof generation using a multi-agent LLM framework. Multiple agents build tree-structured logical derivations grounded in biological knowledge via adaptive RAG, while adversarial "rebuttal agents" run dialectic verification to prune weak reasoning paths. The neuro-symbolic approach significantly outperforms SOTA on cross-tissue and cross-species benchmarks — exactly where supervised methods and naked LLMs both fail. A compelling proof of concept for structured multi-agent reasoning in computational biology.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-13-mat-cell-multi-agent-annotation.mp3" length="1323842" type="audio/mpeg"/>
+      <guid>2026-04-13-mat-cell-multi-agent-annotation</guid>
+      <pubDate>Mon, 13 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>156</itunes:duration>
+      <itunes:summary>Deep dive on MAT-Cell — a multi-agent tree-structured reasoning framework that uses LLM debate, RAG grounding, and symbolic constraints to annotate single-cell types. Outperforms SOTA especially under distribution shift.</itunes:summary>
+    </item>
+
+    <item>
+      <title>EVEE: Evo 2 Embeddings Achieve Near-Perfect Variant Pathogenicity Prediction — With Explanations</title>
+      <description>Goodfire and Mayo Clinic show that embedding probes on top of Evo 2 — the 7B genomic foundation model — achieve 0.997 AUROC on 839K ClinVar variants and generalize zero-shot to indels (0.991 AUROC), outperforming dedicated bioinformatic meta-predictors. The real innovation is interpretability: supervised annotation probes quantify predicted disruptions per variant, which are then synthesized into natural language explanations by a reasoning model. Pre-computed predictions and on-demand explanations for all 4.2M ClinVar variants are freely available via the EVEE web tool (CC-BY 4.0). The paper reframes interpretability as a complementary product of learned biological structure, not a trade-off with accuracy.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-12-evee-variant-prediction.mp3" length="1591002" type="audio/mpeg"/>
+      <guid>2026-04-12-evee-variant-prediction</guid>
+      <pubDate>Sun, 12 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>234</itunes:duration>
+      <itunes:summary>Deep dive on EVEE — a bioRxiv preprint showing Evo 2 foundation model embeddings achieve near-perfect variant pathogenicity prediction with mechanistic natural language explanations. Open resource covering all 4.2M ClinVar variants.</itunes:summary>
+    </item>
+
+    <item>
+      <title>SimpleFold-Turbo: A Video Diffusion Trick Makes Protein Structure Prediction 14x Faster</title>
+      <description>SimpleFold-Turbo applies TeaCache — an adaptive caching technique from video diffusion — to flow-matching protein structure prediction, achieving 9-14x inference speedups by skipping ~93% of redundant forward passes with negligible quality loss. Works across all six SimpleFold model sizes (100M-3B parameters), requires no retraining or weight modification, and runs on commodity hardware. A general three-phase skip pattern emerges independent of protein size or fold. Released as open-source CC0 software. The implications extend beyond protein folding: if linear trajectories are general to flow matching, this caching strategy could accelerate generative models across molecular design and beyond.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-11-simplefold-turbo.mp3" length="1343325" type="audio/mpeg"/>
+      <guid>2026-04-11-simplefold-turbo</guid>
+      <pubDate>Sat, 11 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>224</itunes:duration>
+      <itunes:summary>Deep dive on SimpleFold-Turbo — a bioRxiv preprint that borrows adaptive caching from video diffusion to make protein structure prediction 14x faster, skipping 93% of compute with near-zero quality loss. Open-source, no retraining required.</itunes:summary>
+    </item>
+
+    <item>
+      <title>100 Parameters Beat Billions: Genomic Language Models Fail to Learn Positional Regulatory Logic</title>
+      <description>A new preprint introduces the Mechanistic Invariance Test, a 650-sequence benchmark that exposes a universal failure in genomic foundation models. Five gLMs spanning all major architectures — including Evo2-1B and Caduceus — appear to detect regulatory elements but are actually just tracking AT nucleotide content (r=0.78-0.96). None learn positional regulatory grammar. Evo2 scores elements at wrong positions higher than correct ones. All models are strand-blind. Compositional effects dominate positional effects 46-fold. A 100-parameter position-aware PWM achieves perfect performance, proving the failure is about misaligned inductive biases, not capacity. Scaling makes it worse. Essential reading before deploying these models in gene therapy or clinical variant interpretation.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-10-genomic-lm-positional-failure.mp3" length="1038816" type="audio/mpeg"/>
+      <guid>2026-04-10-genomic-lm-positional-failure</guid>
+      <pubDate>Fri, 10 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>173</itunes:duration>
+      <itunes:summary>Deep dive on the Mechanistic Invariance Test — a devastating benchmark showing that genomic foundation models capture surface statistics (AT content) while completely missing the positional grammar of gene regulation. A 100-parameter PWM outperforms billion-parameter models.</itunes:summary>
+    </item>
+
+    <item>
+      <title>CIViC MCP: Giving LLMs Direct Access to Cancer Variant Knowledge</title>
+      <description>The Griffith Lab released CIViC MCP, an open-source Model Context Protocol server that lets LLMs directly query the Clinical Interpretation of Variants in Cancer knowledgebase via natural language. Instead of manually searching CIViC for variant evidence, clinicians and researchers can now ask an AI assistant about the clinical significance of specific cancer mutations and get back expertly curated, structured interpretations. It works with Claude and GPT-5, the code is on GitHub, and evaluation data is on Zenodo. For anyone building biomedical knowledge resources, this is the template for how LLMs will interface with curated scientific databases.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-09-civic-mcp-server.mp3" length="1354752" type="audio/mpeg"/>
+      <guid>2026-04-09-civic-mcp-server</guid>
+      <pubDate>Wed, 09 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>225</itunes:duration>
+      <itunes:summary>Deep dive on CIViC MCP — an open-source MCP server from the Griffith Lab that gives LLMs direct, structured access to the CIViC cancer variant knowledgebase, enabling natural language queries over expertly curated clinical interpretations.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Article Galaxy MCP: AI Agents Can Now Find, License, and Access Scientific Papers</title>
+      <description>Research Solutions launched Article Galaxy MCP, an integration that lets AI agents — via Claude, ChatGPT, Cursor, or any MCP-compatible tool — search scientific literature, check access rights, and acquire articles without leaving the AI workflow. Beyond convenience, it manages AI rights and text-data-mining compliance programmatically, solving a key bottleneck for automated research pipelines. Combined with Scite MCP for citation analysis, this is real infrastructure for building autonomous scientific agents.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-08-article-galaxy-mcp.mp3" length="1025805" type="audio/mpeg"/>
+      <guid>2026-04-08-article-galaxy-mcp</guid>
+      <pubDate>Wed, 08 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>171</itunes:duration>
+      <itunes:summary>Deep dive on Article Galaxy MCP — a new integration that gives AI agents the ability to search, license, and access scientific literature via the Model Context Protocol, with built-in AI rights management and compliance.</itunes:summary>
+    </item>
+
+    <item>
+      <title>10 Out of 12: Widespread Data Leakage Is Corrupting Cancer Drug Response Prediction</title>
+      <description>A new bioRxiv preprint audits the cancer drug response prediction field and finds that 10 out of 12 recently published methods — including deep learning approaches — suffer from data leakage caused by supervised feature screening before cross-validation splits. Leakage-free evaluation increases MSE by 16.6% and yields almost entirely different biomarker sets (Jaccard 0.18). The authors provide an open audit guide, reference implementation, and a new tissue-aware Data Shared Elastic Net (DSEN) that improves predictions for 66% of drugs under correct evaluation. A critical methodology wake-up call for anyone doing ML in biomedicine.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-07-data-leakage-drug-response.mp3" length="1210413" type="audio/mpeg"/>
+      <guid>2026-04-07-data-leakage-drug-response</guid>
+      <pubDate>Tue, 07 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>202</itunes:duration>
+      <itunes:summary>Deep dive on a bioRxiv preprint showing that 10 of 12 cancer drug response prediction methods suffer from data leakage, inflating performance by 16.6% and producing artifactual biomarker sets. Includes an open audit guide and a new leakage-free method.</itunes:summary>
+    </item>
+
+    <item>
+      <title>DrugPlayGround: Can LLMs Actually Reason About Drug Discovery?</title>
+      <description>DrugPlayGround is a new benchmarking framework for evaluating LLM performance across four critical drug discovery tasks: physicochemical property description, drug synergism prediction, drug-protein interaction modeling, and physiological perturbation response. Unlike narrow benchmarks, it spans the full pipeline and requires models to generate expert-level explanations — not just predictions. The gap between text fluency and genuine chemical-biological reasoning turns out to be significant. A much-needed reality check for the AI-drug-discovery hype cycle.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-06-drugplayground-llm-benchmark.mp3" length="780333" type="audio/mpeg"/>
+      <guid>2026-04-06-drugplayground-llm-benchmark</guid>
+      <pubDate>Mon, 06 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>195</itunes:duration>
+      <itunes:summary>Deep dive on DrugPlayGround — a new framework benchmarking LLMs on drug discovery tasks including drug synergism, drug-protein interactions, and perturbation responses. Requires explainable reasoning, not just predictions.</itunes:summary>
+    </item>
+
+    <item>
+      <title>BioMedAgent: The Self-Evolving Multi-Agent AI Data Scientist for Biomedicine</title>
+      <description>BioMedAgent, published in Nature Biomedical Engineering, is a self-evolving multi-agent LLM framework that autonomously learns to use bioinformatics tools and chains them into executable workflows from natural-language prompts. Using Collective Memory Accumulation and Iterative Memory Feedback, it builds reusable tool-usage knowledge that improves with each analysis. Evaluated on a new open benchmark (BioMed-AQA, 327 questions) spanning genomics, transcriptomics, proteomics, and clinical data. Open-source code and benchmarks available — the most credible attempt yet at an autonomous bioinformatics data scientist.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-05-biomedagent-self-evolving-bioinformatics.mp3" length="1629885" type="audio/mpeg"/>
+      <guid>2026-04-05-biomedagent-self-evolving-bioinformatics</guid>
+      <pubDate>Sun, 05 Apr 2026 16:19:00 +0000</pubDate>
+      <itunes:duration>271</itunes:duration>
+      <itunes:summary>Deep dive on BioMedAgent — a self-evolving multi-agent LLM framework from Nature Biomedical Engineering that autonomously learns to chain bioinformatics tools into complete analysis workflows, with open benchmarks and open-source code.</itunes:summary>
+    </item>
+
+    <item>
+      <title>mRNA-GPT: A Generative Transformer That Designs Full-Length mRNA Therapeutics With RL</title>
+      <description>mRNA-GPT is a generative pre-trained transformer for end-to-end full-length mRNA sequence design, jointly optimizing 5' UTR, CDS, and 3' UTR — unlike existing tools that treat each region in isolation. Pre-trained on 30 million natural mRNA sequences and fine-tuned with Proximal Policy Optimization (PPO) using reward signals for half-life and translation efficiency, it achieves Pareto-optimal designs balancing competing biophysical properties. Outperforms state-of-the-art on 3' UTR stability, CDS translation rate, and full-length design benchmarks. A significant step toward AI-driven mRNA therapeutic design that captures cross-region regulatory interactions.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-04-mrna-gpt-generative-design.mp3" length="1201104" type="audio/mpeg"/>
+      <guid>2026-04-04-mrna-gpt-generative-design</guid>
+      <pubDate>Sat, 04 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>200</itunes:duration>
+      <itunes:summary>Deep dive on mRNA-GPT — a generative transformer trained on 30M mRNA sequences and fine-tuned with reinforcement learning to design full-length mRNA therapeutics with optimized stability and translation efficiency.</itunes:summary>
+    </item>
+
+    <item>
+      <title>CORAL: When AI Agents Evolve Their Own Discovery Strategies</title>
+      <description>CORAL from MIT, NUS, and CMU is the first framework for autonomous multi-agent evolution on open-ended problems. Instead of fixed heuristics, it deploys long-running LLM agents that explore, reflect, and collaborate through shared persistent memory, asynchronous execution, and heartbeat-based interventions. Across 10 tasks in math, algorithms, and systems optimization, CORAL achieves 3-10x higher improvement rates than evolutionary baselines with fewer evaluations. On Anthropic's kernel engineering benchmark, four co-evolving agents improved the best score from 1363 to 1103 cycles. Open-source and directly applicable to scientific discovery workflows like drug design and protein engineering.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-03-coral-multi-agent-evolution.mp3" length="1060128" type="audio/mpeg"/>
+      <guid>2026-04-03-coral-multi-agent-evolution</guid>
+      <pubDate>Thu, 03 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>177</itunes:duration>
+      <itunes:summary>Deep dive on CORAL — the first autonomous multi-agent evolution framework for open-ended discovery. From MIT, NUS, and CMU, achieving 3-10x improvement rates over baselines across diverse optimization tasks.</itunes:summary>
+    </item>
+
+    <item>
+      <title>LabOS: The AI Co-Scientist That Sees What You See in the Lab</title>
+      <description>LabOS from Stanford and Princeton is the first AI co-scientist that bridges computational reasoning and physical experimentation. By connecting multi-model AI agents, smart glasses, and lab robots through an XR operating system, it creates a persistent AI presence that perceives bench work in real time. Extending CRISPR-GPT to the physical lab via the new LabClaw integration, it's been demonstrated in cancer immunotherapy, stem-cell engineering, and materials science. Addresses the reproducibility crisis head-on — 70% of scientists can't reproduce colleagues' work. Showcased at NVIDIA GTC 2026 alongside a wave of agentic AI tools for life sciences.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-02-labos-ai-xr-co-scientist.mp3" length="1741005" type="audio/mpeg"/>
+      <guid>2026-04-02-labos-ai-xr-co-scientist</guid>
+      <pubDate>Thu, 02 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>216</itunes:duration>
+      <itunes:summary>Deep dive on LabOS — the first AI co-scientist connecting AI agents, smart glasses, and robots to physical lab experiments. From Stanford and Princeton, showcased at NVIDIA GTC 2026.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Latent-Y: An AI Agent That Designs Antibodies From a Text Prompt — And They Actually Work</title>
+      <description>Latent-Y is an autonomous AI agent from Latent Labs that runs complete antibody design campaigns from text prompts — literature review, target analysis, epitope identification, candidate design, computational validation, and lab-ready sequence selection — all end-to-end. Across nine targets, it produced lab-confirmed nanobody binders against six (67% hit rate) with single-digit nanomolar affinities, zero human filtering. Experts completed campaigns 56x faster. The architecture extends to macrocyclic peptides and mini-binders via their general-purpose Latent-X2 generative model, making it a broad autonomous biologics design system with real wet-lab validation.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-04-01-latent-y-autonomous-antibody-design.mp3" length="1548669" type="audio/mpeg"/>
+      <guid>2026-04-01-latent-y-autonomous-antibody-design</guid>
+      <pubDate>Wed, 01 Apr 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>258</itunes:duration>
+      <itunes:summary>Deep dive on Latent-Y — an autonomous AI agent that designs antibodies from text prompts with lab-validated results: 67% target hit rate across nine targets, single-digit nanomolar affinities, and 56x speedup over expert workflows.</itunes:summary>
+    </item>
+
+    <item>
+      <title>EvidenceNet: Knowledge Graphs That Remember Where They Learned Things</title>
+      <description>EvidenceNet is a new framework for building disease-specific knowledge graphs from full-text biomedical literature using LLM-assisted extraction. Unlike traditional KGs that flatten findings into context-free triples, EvidenceNet preserves study design, provenance, and quantitative support as structured evidence nodes. Released with two complete resources for hepatocellular carcinoma and colorectal cancer, it achieves 98.3% extraction accuracy and improves downstream retrieval-augmented QA. A compelling middle path between hand-curated databases and lossy automated extraction.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-31-evidencenet-knowledge-graphs.mp3" length="2518666" type="audio/mpeg"/>
+      <guid>2026-03-31-evidencenet-knowledge-graphs</guid>
+      <pubDate>Tue, 31 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>157</itunes:duration>
+      <itunes:summary>Deep dive on EvidenceNet — an LLM-powered framework for building disease-specific knowledge graphs that preserve evidence provenance, study design, and quantitative support from full-text literature.</itunes:summary>
+    </item>
+
+    <item>
+      <title>The AI Scientist Lands in Nature: End-to-End Automated Research Is Here</title>
+      <description>A Nature paper by Chris Lu, Cong Lu, Jeff Clune and colleagues introduces The AI Scientist — a fully autonomous pipeline that generates hypotheses, searches literature, runs experiments, writes manuscripts, and reviews its own work. One AI-generated paper passed first-round peer review at an ICLR workshop. Paper quality scales with both model capability and compute, signaling rapid improvement ahead. The methodology is domain-agnostic in principle, with direct implications for computational biology and any in-silico science.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-30-ai-scientist-nature.mp3" length="3573595" type="audio/mpeg"/>
+      <guid>2026-03-30-ai-scientist-nature</guid>
+      <pubDate>Mon, 30 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>223</itunes:duration>
+      <itunes:summary>Deep dive on The AI Scientist — published in Nature, a fully autonomous research pipeline that generates ideas, runs experiments, writes papers, and passed peer review at ICLR. What it means for computational biology.</itunes:summary>
+    </item>
+
+    <item>
+      <title>OmicClaw: Talk to Your Multi-Omics Data Like It's a Colleague</title>
+      <description>OmicClaw is a new bioRxiv preprint introducing an executable natural-language framework for multi-omics analysis built on the OmicVerse ecosystem. Instead of unconstrained code generation, its J.A.R.V.I.S. runtime translates user requests into traceable, provenance-tracked workflows over live omics objects — spanning scRNA-seq, spatial transcriptomics, ATAC-seq, CITE-seq and more. It exposes an MCP-compatible server, making it callable by other AI agents, and benchmarks show it outperforms bare LLM baselines especially on complex multi-step workflows. Open source under CC-BY.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-29-omicclaw-multi-omics-agent.mp3" length="3920501" type="audio/mpeg"/>
+      <guid>2026-03-29-omicclaw-multi-omics-agent</guid>
+      <pubDate>Sun, 29 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>245</itunes:duration>
+      <itunes:summary>Deep dive on OmicClaw — a natural-language AI agent framework for reproducible multi-omics analysis with MCP integration, provenance tracking, and benchmarked improvements over raw LLM code generation.</itunes:summary>
+    </item>
+
+    <item>
+      <title>VIOLIN: Can LLMs Quality-Control Their Own Knowledge Graph Extractions?</title>
+      <description>A new bioRxiv preprint from the Miskov-Zivanov lab introduces VIOLIN, a configurable framework that formally reconciles LLM-extracted molecular interactions against curated knowledge graphs — classifying each as corroboration, contradiction, flagged case, or extension. Benchmarked with GPT-4.1 and Llama 3 alongside traditional NLP systems REACH and INDRA, VIOLIN shows that LLMs produce reconciliation-stable results comparable to purpose-built extractors, with extensions (genuinely new information) dominating across all systems. Open source and directly useful for anyone integrating automated literature mining into biomedical knowledge graph curation.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-28-violin-kg-reconciliation.mp3" length="2931609" type="audio/mpeg"/>
+      <guid>2026-03-28-violin-kg-reconciliation</guid>
+      <pubDate>Sat, 28 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>183</itunes:duration>
+      <itunes:summary>Deep dive on VIOLIN — a framework for reconciling LLM-extracted molecular interactions against structured knowledge graphs, benchmarking GPT-4.1 and Llama 3 against traditional NLP systems for biomedical curation quality control.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Genomic Foundation Models: Are We Just Training Expensive Random Baselines?</title>
+      <description>A bioRxiv preprint benchmarks seven genomic foundation models across 52 tasks and finds that randomly initialized models are surprisingly competitive — character-level models often match or beat larger pretrained k-mer and BPE models. The tokenizer, not pretraining, is the hidden kingmaker. Worse, current GFMs show very limited sensitivity to clinically relevant genetic variants. The paper argues the field needs biologically informed tokenization and variant-aware objectives, not just bigger models on more sequences.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-26-gfm-random-baselines.mp3" length="3094195" type="audio/mpeg"/>
+      <guid>2026-03-26-gfm-random-baselines</guid>
+      <pubDate>Thu, 26 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>193</itunes:duration>
+      <itunes:summary>Deep dive on a provocative benchmarking study showing that randomly initialized genomic models are surprisingly competitive with pretrained foundation models, challenging the assumption that NLP-style pretraining strategies transfer well to genomics.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Genomebook: What If You Could Breed AI Agents Using Mendelian Genetics?</title>
+      <description>A new bioRxiv preprint introduces Genomebook, a system that encodes LLM agent behavior across 60 diploid loci with additive, dominant, and recessive inheritance. Twenty founder agents reproduce sexually via Mendelian segregation with de novo mutation, creating heritable behavioral variation under selective pressure. Over eight generations (626 agents), trait trajectories track encoded selection rules — leadership rises under dominant inheritance, obsessive focus declines under fitness penalties — while non-genetic controls produce flat baselines. It's a genuinely novel parameterization layer that leverages population genetics to evolve AI agent populations rather than hand-design them.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-25-genomebook-mendelian-llm-agents.mp3" length="3638378" type="audio/mpeg"/>
+      <guid>2026-03-25-genomebook-mendelian-llm-agents</guid>
+      <pubDate>Wed, 25 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>227</itunes:duration>
+      <itunes:summary>Deep dive on Genomebook — a bioRxiv preprint that uses Mendelian inheritance with diploid loci, sexual reproduction, and natural selection to create heritable behavioral variation in LLM agent populations, bridging evolutionary biology and AI agent design.</itunes:summary>
+    </item>
+
+    <item>
+      <title>The Virtual Biotech: An AI-Staffed Drug Company That Actually Found Something New</title>
+      <description>A team built the Virtual Biotech — a simulated biotech company with 11 AI agents across four divisions, led by a virtual CSO, using over 100 MCP-server tools to integrate massive biomedical datasets. In its headline demo, 37,000+ parallel agents curated outcomes from nearly 56,000 clinical trials and discovered that drugs targeting cell-type-specific genes (from the Tabula Sapiens single-cell atlas) were 40% more likely to advance from Phase I to Phase II, 48% more likely to reach market, and showed 32% lower adverse event rates — a novel, potentially actionable finding linking single-cell biology to clinical success. Additional case studies evaluated B7-H3 as a lung cancer ADC target and analyzed a terminated ulcerative colitis trial targeting OSMRβ.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-25-virtual-biotech-multi-agent-drug-discovery.mp3" length="3756243" type="audio/mpeg"/>
+      <guid>2026-03-25-virtual-biotech-multi-agent-drug-discovery</guid>
+      <pubDate>Tue, 25 Mar 2026 03:07:00 +0000</pubDate>
+      <itunes:duration>235</itunes:duration>
+      <itunes:summary>Deep dive on the Virtual Biotech — a multi-agent AI framework that mirrors a real biotech company's structure for end-to-end drug discovery, featuring 37,000+ parallel agents curating clinical trial outcomes and a novel finding linking single-cell gene expression to trial success.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Medea: A Verification-Aware AI Agent for Transparent Omics-Driven Drug Discovery</title>
+      <description>Harvard Medical School's Medea is an AI agent that executes transparent, multi-step omics analyses for therapeutic discovery — making every intermediate decision explicit and verifiable. With four modules (research planning, code execution with pre/post checks, literature reasoning with evidence-strength assessment, and cross-evidence consensus) and 20 integrated tools spanning single-cell RNA-seq, bulk transcriptomics, cancer dependency maps, and ML models, Medea was evaluated across 5,679 analyses in target identification, synthetic lethality reasoning, and immunotherapy response prediction. It improved performance by up to 46%, 22%, and 24% respectively over existing approaches. The key insight: verification-aware agents work better because transparency forces better reasoning, not just more efficient automation.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-25-medea-omics-agent-therapeutic-discovery.mp3" length="4014123" type="audio/mpeg"/>
+      <guid>2026-03-25-medea-omics-agent-therapeutic-discovery</guid>
+      <pubDate>Tue, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <itunes:duration>251</itunes:duration>
+      <itunes:summary>Deep dive on Medea from Harvard Medical School — a verification-aware AI agent that executes transparent multi-step omics analyses across 20 tools, evaluated on nearly 6,000 analyses in target identification, synthetic lethality, and immunotherapy prediction.</itunes:summary>
+    </item>
+
+    <item>
+      <title>PandaClaw: Insilico Medicine Bets Agentic AI Can Replace Your Bioinformatician</title>
+      <description>Insilico Medicine launches PandaClaw, an agentic AI feature built on LangChain/LangGraph that lets biologists run complex multi-omics analyses through natural language. With 140+ scientific skills and 1,000+ bioinformatics tools orchestrated by an autonomous agent, PandaClaw formulates multi-step analytical workflows, cross-references datasets from multiple sources, self-corrects in a sandbox, and produces figure-rich reports with full data provenance. It's the commercial realization of the same tool-orchestration pattern we've been tracking in academic projects like ProteinMCP and ChatSpatial — and the latest step in Insilico's progression from ChatPandaGPT to fully autonomous biological analysis.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-24-pandaclaw-agentic-drug-discovery.mp3" length="1534125" type="audio/mpeg"/>
+      <guid>2026-03-24-pandaclaw-agentic-drug-discovery</guid>
+      <pubDate>Tue, 24 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>255</itunes:duration>
+      <itunes:summary>Deep dive on Insilico Medicine's PandaClaw — an agentic AI system with 140+ scientific skills that autonomously executes multi-omics research workflows through natural language, and what it signals about the convergence of tool orchestration patterns in biomedical AI.</itunes:summary>
+    </item>
+
+    <item>
+      <title>FAIR Data Gets an AI Upgrade: Multi-Agent LLMs for Biological Data Curation</title>
+      <description>A substantially revised bioRxiv preprint from TAIR's Tanya Berardini and colleagues demonstrates a multi-agent LLM architecture for enforcing FAIR data principles in MorphoBank, an open-access morphological data repository. The system extracts, structures, and standardizes character data from published literature into machine-readable NEXUS format, automating one of biology's most tedious bottlenecks. Refreshingly honest about limitations — performance degrades on messy inputs — but provides a concrete, open-source blueprint for LLM-assisted FAIR curation adaptable to drug annotations, phenotype databases, and beyond.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-23-fair-data-llm-curation.mp3" length="1026144" type="audio/mpeg"/>
+      <guid>2026-03-23-fair-data-llm-curation</guid>
+      <pubDate>Mon, 23 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>171</itunes:duration>
+      <itunes:summary>Deep dive on a multi-agent LLM system for FAIR biological data curation from TAIR and MorphoBank — open-source, practical, and adaptable to any biomedical data integration workflow.</itunes:summary>
+    </item>
+
+    <item>
+      <title>X-Cell: Power-Law Scaling Hits Perturbation Biology</title>
+      <description>Xaira Therapeutics drops the largest causal perturbation model to date — X-Cell, a 4.9B-parameter diffusion language model trained on 25.6 million CRISPRi Perturb-seq single-cell transcriptomes across 16 diverse biological contexts. The headline result: perturbation prediction follows power-law scaling with exponents matching LLMs, suggesting a foundation model moment for cell biology. X-Cell outperforms existing methods by up to 5x on key metrics and demonstrates zero-shot generalization to novel cell types including primary human T cells — directly relevant to immunotherapy target discovery.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-22-xcell-perturbation-scaling.mp3" length="1534557" type="audio/mpeg"/>
+      <guid>2026-03-22-xcell-perturbation-scaling</guid>
+      <pubDate>Sun, 22 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>256</itunes:duration>
+      <itunes:summary>Deep dive on X-Cell from Xaira Therapeutics — a 4.9B-parameter diffusion language model showing that perturbation prediction follows power-law scaling, trained on the largest CRISPRi Perturb-seq dataset ever assembled.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Multilingual Biology: Coupling Codon and Protein Language Models for Variant Pathogenicity</title>
+      <description>A new bioRxiv preprint couples a codon language model (CaLM) with ESM protein language model to create a "multilingual" approach to variant pathogenicity prediction. By capturing constraints at both the DNA codon level and protein level simultaneously, the dual model achieves a 3% ROC-AUC improvement classifying disease effects across 137,350 ClinVar missense variants in ~14,000 genes. The key insight: codon-level models uniquely differentiate synonymous from nonsense mutations and capture regulatory constraints invisible to protein-only models, while protein models capture structural and functional constraints. Combining both decouples protein-intrinsic defects from regulatory drivers of pathogenicity.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-21-multilingual-variant-pathogenicity.mp3" length="1374336" type="audio/mpeg"/>
+      <guid>2026-03-21-multilingual-variant-pathogenicity</guid>
+      <pubDate>Sat, 21 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>229</itunes:duration>
+      <itunes:summary>Deep dive on a bioRxiv preprint that treats variant pathogenicity as a multilingual problem — coupling codon and protein language models to decouple DNA-level regulatory constraints from protein-level structural effects.</itunes:summary>
+    </item>
+
+    <item>
+      <title>The Validity Gap: Health AI Benchmarks Don't Represent Real Patients</title>
+      <description>A new arXiv paper analyzes nearly 19,000 consumer health queries across six major benchmarks for health LLMs and reveals a structural validity gap. While 42% of queries reference objective data, it's dominated by wellness wearables (18%) while lab values (5%), imaging (4%), and medical records (&lt;1%) are rare. Safety-critical scenarios are nearly absent: suicide/self-harm under 0.7%, chronic disease management only 5.5%, and vulnerable populations under 11%. The authors argue the field needs standardized query profiling analogous to clinical trial reporting — because a benchmark that doesn't characterize its population is as suspect as a clinical trial that doesn't report inclusion criteria.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-20-validity-gap-health-ai-benchmarks.mp3" length="986925" type="audio/mpeg"/>
+      <guid>2026-03-20-validity-gap-health-ai-benchmarks</guid>
+      <pubDate>Fri, 20 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>164</itunes:duration>
+      <itunes:summary>Deep dive on a new arXiv analysis revealing that health AI benchmarks are structurally misaligned with clinical reality — missing safety-critical scenarios, vulnerable populations, and complex clinical inputs.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Samyama: Open Biomedical Knowledge Graphs With AI Agent Access via MCP</title>
+      <description>A new arXiv preprint introduces Samyama, a Rust-based graph database that federates three open-source biomedical knowledge graphs — Pathways KG (Reactome, STRING, etc.), Clinical Trials KG (7.8M nodes from ClinicalTrials.gov), and Drug Interactions KG (DrugBank, DGIdb, SIDER) — into a single 7.9M-node, 28M-edge graph that loads in 3 minutes on commodity hardware. The key innovation: schema-driven MCP server generation for LLM agent access, hitting 98% accuracy on a new BiomedQA benchmark vs. 85% for text-to-Cypher and 75% for standalone GPT-4o. MCP is consolidating as the interoperability standard for agentic science — this week it's knowledge graphs, last week it was protein engineering tools.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-19-samyama-biomedical-knowledge-graphs.mp3" length="1234173" type="audio/mpeg"/>
+      <guid>2026-03-19-samyama-biomedical-knowledge-graphs</guid>
+      <pubDate>Thu, 19 Mar 2026 13:43:00 +0000</pubDate>
+      <itunes:duration>206</itunes:duration>
+      <itunes:summary>Deep dive on Samyama, an open-source graph database federating biomedical KGs from Reactome, STRING, ClinicalTrials.gov, DrugBank, and more — with automatic MCP server generation for AI agent access achieving 98% accuracy on pharmacology questions.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Deep Dive: The AI Co-Scientist Is Here</title>
+      <description>Nature Medicine's David Adam reports that AI has crossed a threshold — from data analysis tool to hypothesis generator with experimental validation. We trace the evidence: Google DeepMind's AI co-scientist system (Gemini 2.0 multi-agent) matched an unpublished Cell paper result on bacterial gene transfer, identified novel liver fibrosis targets validated in human organoids, and proposed AML drug candidates effective at clinical doses. Plus Insilico Medicine's rentosertib — an AI-discovered drug against an AI-discovered target — reaching Phase 2a trials for pulmonary fibrosis. We also cover the Stanford counterpoint showing LLM ideas degrade after execution, and TxGNN's knowledge-graph approach to zero-shot drug repurposing. The takeaway: AI co-scientists are real, but they run on the structured knowledge infrastructure that humans build.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-18-deepdive-ai-coscientist.mp3" length="2412381" type="audio/mpeg"/>
+      <guid>2026-03-18-deepdive-ai-coscientist</guid>
+      <pubDate>Wed, 18 Mar 2026 14:25:00 +0000</pubDate>
+      <itunes:duration>402</itunes:duration>
+      <itunes:summary>Deep dive on the Nature Medicine feature covering AI-driven scientific hypothesis generation — from Google's AI co-scientist to Insilico Medicine's Phase 2a trial, with critical counterpoints.</itunes:summary>
+    </item>
+
+    <item>
+      <title>AetherCell: A Virtual Cell Model That Actually Discovered Real Drugs</title>
+      <description>AetherCell is a generative foundation model that unifies fragmented biological data — clinical RNA-seq and experimental perturbation assays — into a shared transcriptomic manifold. It predicts drug responses across biological scales from cell lines to organoids to clinical cohorts, and validated two drug repurposing predictions in vivo: teriflunomide for dry eye disease and dabigatran for ulcerative colitis. A strong proof of concept for AI-driven virtual cell modeling bridging computation to real drug discovery.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-18-aethercell-virtual-cell-drug-discovery.mp3" length="1116957" type="audio/mpeg"/>
+      <guid>2026-03-18-aethercell-virtual-cell-drug-discovery</guid>
+      <pubDate>Wed, 18 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>186</itunes:duration>
+      <itunes:summary>Deep dive on AetherCell, a virtual cell foundation model that bridges fragmented biological data to predict drug responses across scales — and validated two drug repurposing hits in animal models.</itunes:summary>
+    </item>
+
+    <item>
+      <title>NVIDIA BioNeMo at GTC: Proteina-Complexa, 30M AlphaFold Complexes, and 77x Faster Pharma Simulations</title>
+      <description>NVIDIA announced three major biomedical AI releases at GTC 2026: Proteina-Complexa, a generative model for protein binder design already experimentally validated by Novo Nordisk, Viva Biotech, and Manifold Bio; a collaboration with EMBL-EBI, Google DeepMind, and Seoul National University adding ~30 million AI-predicted protein complex structures to the AlphaFold database (1.7M high-confidence); and nvQSP, a GPU-accelerated pharmacological simulation engine delivering 77x speedups. The AlphaFold expansion is the real story — millions of structural interaction predictions flowing into the public commons as a new evidence layer for knowledge graphs and data integration.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-17-nvidia-bionemo-alphafold-expansion.mp3" length="1100160" type="audio/mpeg"/>
+      <guid>2026-03-17-nvidia-bionemo-alphafold-expansion</guid>
+      <pubDate>Mon, 17 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>183</itunes:duration>
+      <itunes:summary>Deep dive on NVIDIA's GTC 2026 biomedical AI triple-header: Proteina-Complexa for protein binder design, 30 million new AlphaFold complex predictions in the public database, and nvQSP for GPU-accelerated pharma simulations.</itunes:summary>
+    </item>
+
+    <item>
+      <title>ProteinMCP: 38 Protein Engineering Tools, One AI Agent, 11 Minutes</title>
+      <description>ProteinMCP is an agentic AI framework from KAUST that wraps 38 specialized protein engineering tools into a unified MCP ecosystem, letting an AI agent autonomously run end-to-end workflows like protein fitness modeling in 11 minutes. The key innovation is an automated pipeline converting existing software into MCP-compliant servers, making the framework perpetually extensible. They demonstrate autonomous design of high-affinity de novo binders and therapeutic nanobodies. MCP as the interoperability standard for agentic science is consolidating fast — this is the third MCP-based biomedical framework in a week.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-16-proteinmcp-agentic-protein-engineering.mp3" length="1204848" type="audio/mpeg"/>
+      <guid>2026-03-16-proteinmcp-agentic-protein-engineering</guid>
+      <pubDate>Mon, 16 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>200</itunes:duration>
+      <itunes:summary>Deep dive on ProteinMCP, an agentic framework that orchestrates 38 protein engineering tools via MCP for autonomous protein design — and why the pattern matters more than the application.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Aletheia: DeepMind's AI Agent That Autonomously Solves Open Math Problems and Writes Research Papers</title>
+      <description>Google DeepMind introduces Aletheia, an agentic AI system powered by Gemini Deep Think that autonomously generates, verifies, and revises mathematical proofs. Using a Generator-Verifier-Reviser architecture, it achieved 95.1% on IMO Proof Bench Advanced (up from 65.7%), resolved 4 open Erdős conjectures, and produced a fully autonomous publishable paper on arithmetic geometry. The proposed autonomy taxonomy for AI-assisted research — and the 100x compute reduction for research-grade reasoning — signal what's coming for scientific AI agents across all fields, including biomedicine.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-15-aletheia-autonomous-research-agent.mp3" length="1424829" type="audio/mpeg"/>
+      <guid>2026-03-15-aletheia-autonomous-research-agent</guid>
+      <pubDate>Sat, 15 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>237</itunes:duration>
+      <itunes:summary>Deep dive on DeepMind's Aletheia — an AI agent that autonomously resolves open math problems and writes research papers, and why the generate-verify-revise architecture matters for all of science.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Mozi: Finally, a Drug Discovery AI Agent That Knows When It's Wrong</title>
+      <description>Mozi introduces "governed autonomy" for drug discovery LLM agents — a dual-layer architecture where a Control Plane enforces role-based tool isolation and reflection-based replanning, while a Workflow Plane encodes drug discovery stages as composable skill graphs with strict data contracts and human-in-the-loop checkpoints. Evaluated on PharmaBench, it demonstrates superior orchestration accuracy and trace-level auditability, tackling the critical problem of cascading hallucinations in long-horizon pharmaceutical pipelines.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-14-mozi-governed-drug-discovery-agents.mp3" length="1150704" type="audio/mpeg"/>
+      <guid>2026-03-14-mozi-governed-drug-discovery-agents</guid>
+      <pubDate>Fri, 14 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>192</itunes:duration>
+      <itunes:summary>Deep dive on Mozi, a governed autonomy framework that tackles the cascading hallucination problem in drug discovery AI agents with dual-layer architecture and human-in-the-loop checkpoints.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Nemotron 3 Super: NVIDIA's Open-Source 120B Model Built for Agentic AI</title>
+      <description>NVIDIA releases Nemotron 3 Super, a fully open-source 120B parameter hybrid Mamba-Attention MoE model with a 1M token context window and 5x higher throughput, specifically engineered for multi-agent AI workflows. With 15+ RL training environments for agentic task completion, developer-tunable reasoning budgets, and the entire training stack open-sourced, this is the new infrastructure baseline for labs building agentic scientific discovery pipelines.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-13-nemotron3-super-agentic-ai.mp3" length="1420941" type="audio/mpeg"/>
+      <guid>2026-03-13-nemotron3-super-agentic-ai</guid>
+      <pubDate>Thu, 13 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>237</itunes:duration>
+      <itunes:summary>Deep dive on NVIDIA Nemotron 3 Super — a fully open 120B model with 1M context window and agent-specific training, and what it means for building agentic biomedical research pipelines.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Cracking Open scGPT: Mechanistic Interpretability Extracts a Hematopoietic Algorithm from a Bio Foundation Model</title>
+      <description>Researchers apply mechanistic interpretability — the same techniques used to understand GPT internals — to scGPT, a single-cell foundation model, and extract a standalone hematopoietic algorithm from its attention weights. The extracted algorithm beats scVI, Palantir, and CellTypist in benchmarks while being 34.5x faster with ~1000x fewer parameters. Its four-factor core maps cleanly to T/lymphoid, B/plasma, granulocytic, and monocyte/macrophage gene programs — proving the model learned real biology, not just memorized patterns.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-12-scgpt-mechanistic-interpretability.mp3" length="1237392" type="audio/mpeg"/>
+      <guid>2026-03-12-scgpt-mechanistic-interpretability</guid>
+      <pubDate>Thu, 12 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>206</itunes:duration>
+      <itunes:summary>Deep dive on the first extraction of a biologically useful algorithm from a foundation model via mechanistic interpretability, discovering a hematopoietic manifold inside scGPT.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Deep Dive: Synthetic Data for Cancer Research and Clinical Trials</title>
+      <description>A deep dive into the Nature Reviews Cancer review by Eckardt, Kather and colleagues on how generative AI can create synthetic patient data for cancer research. We cover the three big use cases — synthetic histopathology images, simulated clinical trials with synthetic control arms, and data democratization for rare cancers — plus the major unsolved challenges around bias amplification, privacy-utility tradeoffs, and the missing regulatory frameworks.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-11-deepdive-synthetic-cancer-data.mp3" length="2088093" type="audio/mpeg"/>
+      <guid>2026-03-11-deepdive-synthetic-cancer-data</guid>
+      <pubDate>Tue, 11 Mar 2026 14:48:00 +0000</pubDate>
+      <itunes:duration>347</itunes:duration>
+      <itunes:summary>Deep dive on how AI-generated synthetic data could transform cancer clinical trials and research data sharing, based on the Feb 2026 review in Nature Reviews Cancer.</itunes:summary>
+    </item>
+
+    <item>
+      <title>CLEAR: When LLM Embeddings Meet Knowledge Graphs for Drug Repurposing</title>
+      <description>CLEAR fuses LLM embeddings with disease-specific biomedical knowledge graphs using attention-based graph learning, creating representations that encode both semantic meaning and relational structure. Tested on Alzheimer's and related dementias, it improves drug repurposing F1 scores by up to 30% over prior methods. A compelling proof that grounding language model representations in graph topology beats either approach alone.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-11-clear-kg-drug-repurposing.mp3" length="3647155" type="audio/mpeg"/>
+      <guid>2026-03-11-clear-kg-drug-repurposing</guid>
+      <pubDate>Wed, 11 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>227</itunes:duration>
+      <itunes:summary>Deep dive on CLEAR, a framework that aligns LLM embeddings with biomedical knowledge graphs for drug repurposing in Alzheimer's and related dementias.</itunes:summary>
+    </item>
+
+    <item>
+      <title>ChatSpatial: MCP-Powered AI Agents Tame the Spatial Transcriptomics Toolchain</title>
+      <description>ChatSpatial is an open-source agentic platform built on Model Context Protocol that unifies 60+ spatial transcriptomics methods across Python and R into a single conversational workflow. Instead of generating free-form code, the LLM selects from pre-validated tool schemas with domain-aware parameter inference, achieving near-deterministic reproducibility across seven LLM platforms. NIH-funded and open on GitHub.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-10-chatspatial-spatial-transcriptomics.mp3" length="3310698" type="audio/mpeg"/>
+      <guid>2026-03-10-chatspatial-spatial-transcriptomics</guid>
+      <pubDate>Tue, 10 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>207</itunes:duration>
+      <itunes:summary>Deep dive on ChatSpatial, an MCP-based agentic system that orchestrates 60+ spatial transcriptomics tools across Python and R, eliminating the integration tax for researchers.</itunes:summary>
+    </item>
+
+    <item>
+      <title>CiteAudit: Multi-Agent AI Catches Fake Citations Peer Review Misses</title>
+      <description>Hallucinated references — completely fabricated citations generated by LLMs — are passing peer review at top AI conferences. CiteAudit is a new open-source multi-agent system that uses five specialized AI agents to detect them with 97.2% accuracy, vastly outperforming commercial LLMs like GPT-5.2 which flag over 1,300 real citations as fake. Runs locally on Qwen 3 VL 235B, includes BioRxiv in its analysis, and processes 10 references in 2.3 seconds.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-09-citeaudit-fake-citations.mp3" length="3660530" type="audio/mpeg"/>
+      <guid>2026-03-09-citeaudit-fake-citations</guid>
+      <pubDate>Mon, 09 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>229</itunes:duration>
+      <itunes:summary>Deep dive on CiteAudit, a multi-agent AI system that detects hallucinated citations in scientific papers — a growing threat to research integrity in the LLM era.</itunes:summary>
+    </item>
+
+    <item>
+      <title>LocalCowork: Privacy-First AI Agents That Never Leave Your Laptop</title>
+      <description>Liquid AI releases LocalCowork, an open-source desktop AI agent powered by their 24B sparse MoE model that runs entirely on-device. With 75 local tools via MCP, sub-400ms latency, and zero cloud dependency, it's the first serious proof that useful AI agents for sensitive biomedical data don't need the cloud. Honest benchmarks included — 80% single-step accuracy, 26% multi-step.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-08-localcowork-private-ai-agents.mp3" length="3247586" type="audio/mpeg"/>
+      <guid>2026-03-08-localcowork-private-ai-agents</guid>
+      <pubDate>Sun, 08 Mar 2026 13:35:00 +0000</pubDate>
+      <itunes:duration>203</itunes:duration>
+      <itunes:summary>Deep dive on Liquid AI's LocalCowork — a fully local, privacy-first AI agent framework with MCP tool integration, and what it means for biomedical research computing.</itunes:summary>
+    </item>
+
+    <item>
+      <title>DeepRare: AI Agents Team Up to End the Rare Disease Diagnostic Odyssey</title>
+      <description>A Nature paper introduces DeepRare, a multi-agent system using MCP-inspired architecture to diagnose rare diseases across 6,400+ cases and 2,919 conditions — nearly doubling the accuracy of the next-best method. What makes it special: traceable reasoning chains verified by physicians at 95.4% factual accuracy. A blueprint for agentic AI in clinical biomedicine.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-07-deeprare-rare-disease-agents.mp3" length="1446624" type="audio/mpeg"/>
+      <guid>2026-03-07-deeprare-rare-disease-agents</guid>
+      <pubDate>Sat, 07 Mar 2026 14:35:00 +0000</pubDate>
+      <itunes:duration>240</itunes:duration>
+      <itunes:summary>Deep dive on DeepRare, a multi-agent AI system for rare disease diagnosis with traceable reasoning, published in Nature.</itunes:summary>
+    </item>
+
+    <item>
+      <title>GPT-5.4: The First AI That Operates Your Computer Better Than You Do</title>
+      <description>OpenAI's GPT-5.4 ships with native computer-use capabilities, scoring 75% on OSWorld — surpassing human performance at 72.4%. For computational biologists, this means AI agents that can actually drive bioinformatics software end-to-end, not just write code. A deep dive into what this means for scientific workflows.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-06-gpt54-computer-use.mp3" length="1159200" type="audio/mpeg"/>
+      <guid>2026-03-06-gpt54-computer-use</guid>
+      <pubDate>Fri, 06 Mar 2026 14:36:00 +0000</pubDate>
+      <itunes:duration>240</itunes:duration>
+      <itunes:summary>Deep dive on GPT-5.4's native computer-use capabilities and what they mean for computational biology workflows and scientific automation.</itunes:summary>
+    </item>
+
+    <item>
+      <title>PerturbGen: Predicting How Gene Knockouts Reshape Cellular Trajectories</title>
+      <description>A new foundation model trained on 100M+ single-cell transcriptomes predicts how early genetic perturbations ripple through entire cellular trajectories — from immune responses to blood disorders to skin development. A deep dive into trajectory-aware perturbation modeling.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-06-perturbgen.mp3" length="1259949" type="audio/mpeg"/>
+      <guid>2026-03-06-perturbgen</guid>
+      <pubDate>Thu, 06 Mar 2026 06:36:00 +0000</pubDate>
+      <itunes:duration>210</itunes:duration>
+      <itunes:summary>Deep dive on PerturbGen, a generative foundation model that predicts how gene perturbations reshape cellular trajectories across time.</itunes:summary>
+    </item>
+
+    <item>
+      <title>Evo2: The AI Learning to Write Genomes From Scratch</title>
+      <description>The Arc Institute's Evo2 — the largest DNA language model ever built — just published in Nature. It can generate entire bacterial genome sequences, but we're not at synthetic life yet. A deep dive into what it means for synthetic genomics and the evaluation gap ahead.</description>
+      <enclosure url="https://github.com/andrewsu/ai-nuggets/raw/main/episodes/2026-03-06-evo2.mp3" length="1547280" type="audio/mpeg"/>
+      <guid>2026-03-06-evo2</guid>
+      <pubDate>Thu, 06 Mar 2026 05:30:00 +0000</pubDate>
+      <itunes:duration>240</itunes:duration>
+      <itunes:summary>Deep dive on Evo2, the Arc Institute's DNA language model that generated a complete bacterial genome inspired by Mycoplasma genitalium.</itunes:summary>
+    </item>
+
+  </channel>
+</rss>

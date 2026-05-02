@@ -1,0 +1,36 @@
+# Per-show configuration. See lib/show.py for the loader.
+slug          = "biomedical-agentic-ai"
+title         = "Biomedical Agentic AI"
+description   = "Short deep dives on AI applied to biomedical research."
+host          = "Nigel"
+owner         = "Andrew Su <asu@scripps.edu>"
+podcast_slug  = "biomedical-agentic-ai"   # path segment in Worker URLs
+
+[paths]
+# Relative to this show's directory.
+prompt   = "PROMPT.md"
+feed     = "feed.xml"
+episodes = "episodes"
+scripts  = "scripts"
+logs     = "logs"
+
+[rss]
+base_url = "https://github.com/andrewsu/ai-nuggets/raw/main"
+link     = "https://github.com/andrewsu/ai-nuggets"
+
+# TTS providers. The runner tries `primary` first, falls back to `fallback`
+# if primary raises. Supported providers: "mistral", "elevenlabs".
+[tts.primary]
+provider = "mistral"
+model    = "voxtral-mini-tts-2603"
+voice    = "en_paul_neutral"
+
+[tts.fallback]
+provider = "elevenlabs"
+voice    = "hpp4J3VqNfWAUOO0d1Us"
+model    = "eleven_flash_v2_5"
+
+[tts.fallback.settings]
+speed            = 1.1
+stability        = 0.5
+similarity_boost = 0.75
