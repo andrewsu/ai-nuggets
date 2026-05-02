@@ -156,7 +156,7 @@
       <description>A new Nature Digital Medicine paper presents an agentic AI system that automates end-to-end pharmacogenomic recommendation generation in CPIC style. The pipeline retrieves full-text literature and FDA labels, extracts clinical entities at 92% accuracy, aggregates cross-study findings, and generates phenotype-specific dosing recommendations. In blind expert evaluation, it significantly outperformed GPT-5, Claude, and Grok on clinical clarity and guideline concordance — because it grounds every claim in retrieved evidence rather than parametric memory. A proof of concept for scaling biomedical knowledge curation beyond the expert bottleneck.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-04-17-pharmacogenomic-agentic-ai.mp3" length="1443544" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-04-17-pharmacogenomic-agentic-ai</guid>
-      <pubDate>Thu, 17 Apr 2026 13:35:00 +0000</pubDate>
+      <pubDate>Fri, 17 Apr 2026 13:35:00 +0000</pubDate>
       <itunes:duration>190</itunes:duration>
       <itunes:summary>Deep dive on an agentic AI system published in Nature Digital Medicine that automates CPIC-style pharmacogenomic recommendation generation. It retrieves literature, extracts entities, aggregates evidence, and generates dosing recommendations — outperforming frontier LLMs in expert blind evaluation by grounding claims in structured evidence rather than parametric memory.</itunes:summary>
     </item>
@@ -196,7 +196,7 @@
       <description>AWS unveils Amazon Bio Discovery — an agentic AI platform that gives researchers access to a curated library of biological foundation models and wraps them in an AI agent that selects models, evaluates candidates, and routes top picks directly to lab partners like Twist Bioscience and Ginkgo Bioworks for physical synthesis. The lab-in-the-loop cycle feeds experimental results back to improve the next design round. Early adopters include the Broad Institute, MSK, Bayer, and Voyager Therapeutics. A landmark moment for closing the gap between in silico prediction and wet lab validation in drug discovery.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-04-15-aws-bio-discovery.mp3" length="1504689" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-04-15-aws-bio-discovery</guid>
-      <pubDate>Tue, 15 Apr 2026 13:35:00 +0000</pubDate>
+      <pubDate>Wed, 15 Apr 2026 13:35:00 +0000</pubDate>
       <itunes:duration>94</itunes:duration>
       <itunes:summary>Deep dive on Amazon Bio Discovery — AWS's new agentic AI platform for drug discovery featuring a curated foundation model library, an AI agent for experiment planning, and integrated lab partners for physical validation in a closed-loop cycle.</itunes:summary>
     </item>
@@ -256,7 +256,7 @@
       <description>The Griffith Lab released CIViC MCP, an open-source Model Context Protocol server that lets LLMs directly query the Clinical Interpretation of Variants in Cancer knowledgebase via natural language. Instead of manually searching CIViC for variant evidence, clinicians and researchers can now ask an AI assistant about the clinical significance of specific cancer mutations and get back expertly curated, structured interpretations. It works with Claude and GPT-5, the code is on GitHub, and evaluation data is on Zenodo. For anyone building biomedical knowledge resources, this is the template for how LLMs will interface with curated scientific databases.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-04-09-civic-mcp-server.mp3" length="1354752" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-04-09-civic-mcp-server</guid>
-      <pubDate>Wed, 09 Apr 2026 13:35:00 +0000</pubDate>
+      <pubDate>Thu, 09 Apr 2026 13:35:00 +0000</pubDate>
       <itunes:duration>225</itunes:duration>
       <itunes:summary>Deep dive on CIViC MCP — an open-source MCP server from the Griffith Lab that gives LLMs direct, structured access to the CIViC cancer variant knowledgebase, enabling natural language queries over expertly curated clinical interpretations.</itunes:summary>
     </item>
@@ -316,7 +316,7 @@
       <description>CORAL from MIT, NUS, and CMU is the first framework for autonomous multi-agent evolution on open-ended problems. Instead of fixed heuristics, it deploys long-running LLM agents that explore, reflect, and collaborate through shared persistent memory, asynchronous execution, and heartbeat-based interventions. Across 10 tasks in math, algorithms, and systems optimization, CORAL achieves 3-10x higher improvement rates than evolutionary baselines with fewer evaluations. On Anthropic's kernel engineering benchmark, four co-evolving agents improved the best score from 1363 to 1103 cycles. Open-source and directly applicable to scientific discovery workflows like drug design and protein engineering.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-04-03-coral-multi-agent-evolution.mp3" length="1060128" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-04-03-coral-multi-agent-evolution</guid>
-      <pubDate>Thu, 03 Apr 2026 13:35:00 +0000</pubDate>
+      <pubDate>Fri, 03 Apr 2026 13:35:00 +0000</pubDate>
       <itunes:duration>177</itunes:duration>
       <itunes:summary>Deep dive on CORAL — the first autonomous multi-agent evolution framework for open-ended discovery. From MIT, NUS, and CMU, achieving 3-10x improvement rates over baselines across diverse optimization tasks.</itunes:summary>
     </item>
@@ -406,7 +406,7 @@
       <description>A team built the Virtual Biotech — a simulated biotech company with 11 AI agents across four divisions, led by a virtual CSO, using over 100 MCP-server tools to integrate massive biomedical datasets. In its headline demo, 37,000+ parallel agents curated outcomes from nearly 56,000 clinical trials and discovered that drugs targeting cell-type-specific genes (from the Tabula Sapiens single-cell atlas) were 40% more likely to advance from Phase I to Phase II, 48% more likely to reach market, and showed 32% lower adverse event rates — a novel, potentially actionable finding linking single-cell biology to clinical success. Additional case studies evaluated B7-H3 as a lung cancer ADC target and analyzed a terminated ulcerative colitis trial targeting OSMRβ.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-03-25-virtual-biotech-multi-agent-drug-discovery.mp3" length="3756243" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-03-25-virtual-biotech-multi-agent-drug-discovery</guid>
-      <pubDate>Tue, 25 Mar 2026 03:07:00 +0000</pubDate>
+      <pubDate>Wed, 25 Mar 2026 03:07:00 +0000</pubDate>
       <itunes:duration>235</itunes:duration>
       <itunes:summary>Deep dive on the Virtual Biotech — a multi-agent AI framework that mirrors a real biotech company's structure for end-to-end drug discovery, featuring 37,000+ parallel agents curating clinical trial outcomes and a novel finding linking single-cell gene expression to trial success.</itunes:summary>
     </item>
@@ -416,7 +416,7 @@
       <description>Harvard Medical School's Medea is an AI agent that executes transparent, multi-step omics analyses for therapeutic discovery — making every intermediate decision explicit and verifiable. With four modules (research planning, code execution with pre/post checks, literature reasoning with evidence-strength assessment, and cross-evidence consensus) and 20 integrated tools spanning single-cell RNA-seq, bulk transcriptomics, cancer dependency maps, and ML models, Medea was evaluated across 5,679 analyses in target identification, synthetic lethality reasoning, and immunotherapy response prediction. It improved performance by up to 46%, 22%, and 24% respectively over existing approaches. The key insight: verification-aware agents work better because transparency forces better reasoning, not just more efficient automation.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-03-25-medea-omics-agent-therapeutic-discovery.mp3" length="4014123" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-03-25-medea-omics-agent-therapeutic-discovery</guid>
-      <pubDate>Tue, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       <itunes:duration>251</itunes:duration>
       <itunes:summary>Deep dive on Medea from Harvard Medical School — a verification-aware AI agent that executes transparent multi-step omics analyses across 20 tools, evaluated on nearly 6,000 analyses in target identification, synthetic lethality, and immunotherapy prediction.</itunes:summary>
     </item>
@@ -506,7 +506,7 @@
       <description>NVIDIA announced three major biomedical AI releases at GTC 2026: Proteina-Complexa, a generative model for protein binder design already experimentally validated by Novo Nordisk, Viva Biotech, and Manifold Bio; a collaboration with EMBL-EBI, Google DeepMind, and Seoul National University adding ~30 million AI-predicted protein complex structures to the AlphaFold database (1.7M high-confidence); and nvQSP, a GPU-accelerated pharmacological simulation engine delivering 77x speedups. The AlphaFold expansion is the real story — millions of structural interaction predictions flowing into the public commons as a new evidence layer for knowledge graphs and data integration.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-03-17-nvidia-bionemo-alphafold-expansion.mp3" length="1100160" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-03-17-nvidia-bionemo-alphafold-expansion</guid>
-      <pubDate>Mon, 17 Mar 2026 13:35:00 +0000</pubDate>
+      <pubDate>Tue, 17 Mar 2026 13:35:00 +0000</pubDate>
       <itunes:duration>183</itunes:duration>
       <itunes:summary>Deep dive on NVIDIA's GTC 2026 biomedical AI triple-header: Proteina-Complexa for protein binder design, 30 million new AlphaFold complex predictions in the public database, and nvQSP for GPU-accelerated pharma simulations.</itunes:summary>
     </item>
@@ -526,7 +526,7 @@
       <description>Google DeepMind introduces Aletheia, an agentic AI system powered by Gemini Deep Think that autonomously generates, verifies, and revises mathematical proofs. Using a Generator-Verifier-Reviser architecture, it achieved 95.1% on IMO Proof Bench Advanced (up from 65.7%), resolved 4 open Erdős conjectures, and produced a fully autonomous publishable paper on arithmetic geometry. The proposed autonomy taxonomy for AI-assisted research — and the 100x compute reduction for research-grade reasoning — signal what's coming for scientific AI agents across all fields, including biomedicine.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-03-15-aletheia-autonomous-research-agent.mp3" length="1424829" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-03-15-aletheia-autonomous-research-agent</guid>
-      <pubDate>Sat, 15 Mar 2026 13:35:00 +0000</pubDate>
+      <pubDate>Sun, 15 Mar 2026 13:35:00 +0000</pubDate>
       <itunes:duration>237</itunes:duration>
       <itunes:summary>Deep dive on DeepMind's Aletheia — an AI agent that autonomously resolves open math problems and writes research papers, and why the generate-verify-revise architecture matters for all of science.</itunes:summary>
     </item>
@@ -536,7 +536,7 @@
       <description>Mozi introduces "governed autonomy" for drug discovery LLM agents — a dual-layer architecture where a Control Plane enforces role-based tool isolation and reflection-based replanning, while a Workflow Plane encodes drug discovery stages as composable skill graphs with strict data contracts and human-in-the-loop checkpoints. Evaluated on PharmaBench, it demonstrates superior orchestration accuracy and trace-level auditability, tackling the critical problem of cascading hallucinations in long-horizon pharmaceutical pipelines.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-03-14-mozi-governed-drug-discovery-agents.mp3" length="1150704" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-03-14-mozi-governed-drug-discovery-agents</guid>
-      <pubDate>Fri, 14 Mar 2026 13:35:00 +0000</pubDate>
+      <pubDate>Sat, 14 Mar 2026 13:35:00 +0000</pubDate>
       <itunes:duration>192</itunes:duration>
       <itunes:summary>Deep dive on Mozi, a governed autonomy framework that tackles the cascading hallucination problem in drug discovery AI agents with dual-layer architecture and human-in-the-loop checkpoints.</itunes:summary>
     </item>
@@ -546,7 +546,7 @@
       <description>NVIDIA releases Nemotron 3 Super, a fully open-source 120B parameter hybrid Mamba-Attention MoE model with a 1M token context window and 5x higher throughput, specifically engineered for multi-agent AI workflows. With 15+ RL training environments for agentic task completion, developer-tunable reasoning budgets, and the entire training stack open-sourced, this is the new infrastructure baseline for labs building agentic scientific discovery pipelines.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-03-13-nemotron3-super-agentic-ai.mp3" length="1420941" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-03-13-nemotron3-super-agentic-ai</guid>
-      <pubDate>Thu, 13 Mar 2026 13:35:00 +0000</pubDate>
+      <pubDate>Fri, 13 Mar 2026 13:35:00 +0000</pubDate>
       <itunes:duration>237</itunes:duration>
       <itunes:summary>Deep dive on NVIDIA Nemotron 3 Super — a fully open 120B model with 1M context window and agent-specific training, and what it means for building agentic biomedical research pipelines.</itunes:summary>
     </item>
@@ -566,7 +566,7 @@
       <description>A deep dive into the Nature Reviews Cancer review by Eckardt, Kather and colleagues on how generative AI can create synthetic patient data for cancer research. We cover the three big use cases — synthetic histopathology images, simulated clinical trials with synthetic control arms, and data democratization for rare cancers — plus the major unsolved challenges around bias amplification, privacy-utility tradeoffs, and the missing regulatory frameworks.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-03-11-deepdive-synthetic-cancer-data.mp3" length="2088093" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-03-11-deepdive-synthetic-cancer-data</guid>
-      <pubDate>Tue, 11 Mar 2026 14:48:00 +0000</pubDate>
+      <pubDate>Wed, 11 Mar 2026 14:48:00 +0000</pubDate>
       <itunes:duration>347</itunes:duration>
       <itunes:summary>Deep dive on how AI-generated synthetic data could transform cancer clinical trials and research data sharing, based on the Feb 2026 review in Nature Reviews Cancer.</itunes:summary>
     </item>
@@ -636,7 +636,7 @@
       <description>A new foundation model trained on 100M+ single-cell transcriptomes predicts how early genetic perturbations ripple through entire cellular trajectories — from immune responses to blood disorders to skin development. A deep dive into trajectory-aware perturbation modeling.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-03-06-perturbgen.mp3" length="1259949" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-03-06-perturbgen</guid>
-      <pubDate>Thu, 06 Mar 2026 06:36:00 +0000</pubDate>
+      <pubDate>Fri, 06 Mar 2026 06:36:00 +0000</pubDate>
       <itunes:duration>210</itunes:duration>
       <itunes:summary>Deep dive on PerturbGen, a generative foundation model that predicts how gene perturbations reshape cellular trajectories across time.</itunes:summary>
     </item>
@@ -646,7 +646,7 @@
       <description>The Arc Institute's Evo2 — the largest DNA language model ever built — just published in Nature. It can generate entire bacterial genome sequences, but we're not at synthetic life yet. A deep dive into what it means for synthetic genomics and the evaluation gap ahead.</description>
       <enclosure url="https://podcast.su-lab.workers.dev/p/biomedical-agentic-ai/u/andrew/2026-03-06-evo2.mp3" length="1547280" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-03-06-evo2</guid>
-      <pubDate>Thu, 06 Mar 2026 05:30:00 +0000</pubDate>
+      <pubDate>Fri, 06 Mar 2026 05:30:00 +0000</pubDate>
       <itunes:duration>240</itunes:duration>
       <itunes:summary>Deep dive on Evo2, the Arc Institute's DNA language model that generated a complete bacterial genome inspired by Mycoplasma genitalium.</itunes:summary>
     </item>

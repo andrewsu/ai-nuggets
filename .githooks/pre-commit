@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 # Reject commits that contain malformed feed.xml files.
 #
-# Triggered when any *.xml file under podcasts/ (or the repo-root feed.xml)
-# is staged. Parses each staged version with Python's xml.etree to catch
-# unescaped & and other well-formedness errors before they reach GitHub
-# and silently break podcast subscriptions.
+# Triggered when any feed.xml under podcasts/ is staged. Validates the
+# staged blob (not the working tree) for:
+#   1. XML well-formedness — catches unescaped & and similar parse errors.
+#   2. <pubDate> weekday matches the date — strict podcast clients (and
+#      RFC 822) reject feeds whose weekday names disagree with the date.
 
 set -e
+
+HOOK_DIR=$(dirname "$0")
 
 staged_feeds=$(git diff --cached --name-only --diff-filter=ACM \
   | grep -E '(^|/)feed\.xml$' || true)
@@ -17,17 +20,13 @@ fi
 
 bad=0
 for f in $staged_feeds; do
-  # Validate the staged blob, not the working tree, in case they differ.
-  if ! git show ":$f" | python3 -c "import sys, xml.etree.ElementTree as ET; ET.parse(sys.stdin)" 2>/tmp/feedxml-err.$$; then
-    echo "pre-commit: $f does not parse as XML:" >&2
-    sed 's/^/  /' /tmp/feedxml-err.$$ >&2
+  if ! git show ":$f" | python3 "$HOOK_DIR/check-feed.py" "$f"; then
     bad=1
   fi
-  rm -f /tmp/feedxml-err.$$
 done
 
 if [ $bad -ne 0 ]; then
   echo >&2
-  echo "Fix the feed (commonly: escape & as &amp;) and re-stage." >&2
+  echo "Fix the feed and re-stage. (Common fixes: escape & as &amp;; correct pubDate weekdays.)" >&2
   exit 1
 fi
