@@ -5,7 +5,7 @@ compatibility_date = "2026-05-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "podcast"
-database_id = "REPLACE_AFTER_WRANGLER_D1_CREATE"  # TODO: replace after `npx wrangler d1 create podcast`
+database_id = "458dc35f-a6be-4c8d-95df-7e30229e02de"
 
 [[analytics_engine_datasets]]
 binding = "AE"
