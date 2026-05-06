@@ -1,6 +1,7 @@
 You are creating a personalized podcast called "Calibr-Skaggs Daily Briefing"
 (slug: `calibr-briefing`). It lives under `podcasts/calibr-briefing/` in the
-`ai-nuggets` repo.
+`ai-nuggets` repo. Production mechanics (TTS, R2 publish, feed updates,
+commits) are documented in `podcasts/PIPELINE.md`, prepended above.
 
 # 1. Audience
 
@@ -28,8 +29,11 @@ pipeline. Two episodes per day:
   resmetirom, and combination therapy approaches.
 - **General therapeutic development** — major deals, clinical readouts, FDA
   actions, new company launches.
-- **Artificial Intelligence in drug discovery** - major new findings, news from companies using AI in drug discovery (Xaira, Iambic, Revoluation Medicines, and others), status of clinical development, major new findings
-- **Foresite Capital or Foresite Labs portfolio companies** - news from companies previously or currently funded by Foresite Capital or Foresite Labs
+- **Artificial Intelligence in drug discovery** — major new findings, news
+  from companies using AI in drug discovery (Xaira, Iambic, Revolution
+  Medicines, and others), status of clinical development, major new findings.
+- **Foresite Capital or Foresite Labs portfolio companies** — news from
+  companies previously or currently funded by Foresite Capital or Foresite Labs.
 
 ## Calibr pipeline reference
 
@@ -49,7 +53,6 @@ Headlines sources:
 - Endpoints News
 - STAT News
 - BioPharma Dive
-- Fierce Pharma
 - The Biotech Voyager
 - Clinical Trials Arena
 - Genetic Engineering & Biotech News
@@ -57,108 +60,35 @@ Headlines sources:
 For the spotlight, pick the single most important development. Pull
 publications, press releases, and trial data as needed.
 
-# 3. Format
+# 3. Episode format
+
+Two episodes per day. Both spoken by Nigel.
 
 - Real, verified URLs only — never fabricate.
-- Both episodes are spoken by Nigel.
-- Headlines: punchy, numbered, quick.
-- Spotlight: deep, analytical, with explicit Calibr-pipeline connections.
-- Always connect drug name to underlying target or mechanism
-- Give context to headlines and deep dives, who are prior investors, prior deals in the space, etc.
+- Always connect drug name to underlying target or mechanism.
+- Give context to headlines and deep dives — prior investors, prior deals
+  in the space, etc.
 
-# 4. TTS & distribution
+## Headlines episode (~3–5 min)
 
-Voice config lives in `show.toml`:
+- Punchy, numbered, quick roundup.
+- **Script file:** `podcasts/calibr-briefing/scripts/YYYY-MM-DD-pharma-headlines.txt`
+  — no `## Script` heading; the entire file is the spoken text.
+- **Episode basename:** `YYYY-MM-DD-pharma-headlines`.
 
-- **Primary:** Mistral `voxtral-mini-tts-2603` / `en_paul_neutral` (Paul Neutral)
-- **Fallback:** ElevenLabs Bella (`hpp4J3VqNfWAUOO0d1Us`) / `eleven_flash_v2_5`
+## Spotlight episode (~5–8 min)
 
-API keys in `.env` at repo root (`MISTRAL_API_KEY`, `ELEVENLABS_API_KEY`).
+- Deep, analytical, with explicit Calibr-pipeline connections.
+- **Script file:** `podcasts/calibr-briefing/scripts/YYYY-MM-DD-<topic>-spotlight.txt`
+  — no `## Script` heading.
+- **Episode basename:** `YYYY-MM-DD-<topic>-spotlight`.
 
-Don't write your own TTS code. `gen_tts.py` is the canonical pipeline.
+# 4. Commit
 
-Public RSS URL: subscribers fetch
-`https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/calibr-briefing/feed.xml`.
-Episode mp3 enclosures are served via the `podcast` Cloudflare Worker so
-downloads are logged centrally. See `worker/README.md` for setup.
+Single commit covering both episodes.
 
----
+- **Commit-message prefix:** `Calibr YYYY-MM-DD`.
+- Example: `Calibr 2026-05-05: <headline summary> + <spotlight summary>`.
 
-# 5. Daily execution
-
-Run this every weekday from the repo root.
-
-## Step 1: gather candidates
-
-Search the headlines sources above (Fierce Biotech, Endpoints, STAT,
-BioPharma Dive, Fierce Pharma) plus general web for the last 24 hours.
-Identify items in the focus areas (In Vivo CAR-T, MASH/FGF21, general
-therapeutic development) and rank by importance.
-
-## Step 2: produce TWO episodes
-
-### Headlines episode (~3 min)
-
-1. Write the script to:
-   ```
-   podcasts/calibr-briefing/scripts/YYYY-MM-DD-pharma-headlines.txt
-   ```
-   No `## Script` heading — just the spoken text.
-
-2. Generate audio:
-   ```
-   python3 gen_tts.py --show calibr-briefing \
-     podcasts/calibr-briefing/scripts/YYYY-MM-DD-pharma-headlines.txt \
-     podcasts/calibr-briefing/episodes/YYYY-MM-DD-pharma-headlines.mp3
-   ```
-
-### Spotlight episode (~5–8 min)
-
-1. Pick the single most important story. Write the script to:
-   ```
-   podcasts/calibr-briefing/scripts/YYYY-MM-DD-<topic>-spotlight.txt
-   ```
-
-2. Generate audio:
-   ```
-   python3 gen_tts.py --show calibr-briefing \
-     podcasts/calibr-briefing/scripts/YYYY-MM-DD-<topic>-spotlight.txt \
-     podcasts/calibr-briefing/episodes/YYYY-MM-DD-<topic>-spotlight.mp3
-   ```
-
-## Step 3: publish audio to R2
-
-Audio is served from Cloudflare R2 via the `podcast` Worker. Upload each
-generated mp3 with:
-
-```
-scripts/publish_episode.sh calibr-briefing YYYY-MM-DD-pharma-headlines
-scripts/publish_episode.sh calibr-briefing YYYY-MM-DD-<topic>-spotlight
-```
-
-(omit the `.mp3` suffix). The script wraps `wrangler r2 object put` and
-uploads to the `ai-nuggets-episodes` bucket configured in
-`worker/wrangler.toml`. If it fails, fix the error before committing — the
-feed will reference a key that doesn't exist in R2 and listeners will fall
-back to GitHub raw (only works while mp3s are still committed; see Step 4).
-
-## Step 4: update feed and commit
-
-Add new `<item>` entries to `podcasts/calibr-briefing/feed.xml` (newest
-first) with real byte sizes and ffprobe durations. Keep enclosure URLs
-pointing at the Worker
-(`https://podcast.<sub>.workers.dev/p/calibr-briefing/u/<user>/<slug>.mp3`).
-Escape `&` → `&amp;`, `<` → `&lt;`, `>` → `&gt;` in every title,
-description, and summary. The `.githooks/pre-commit` hook will reject the
-commit if the feed doesn't parse, but catch it yourself first. Write guids
-as `<guid isPermaLink="false">YYYY-MM-DD-slug</guid>` — bare slugs without
-`isPermaLink="false"` violate RSS 2.0 and break strict podcast clients.
-
-```
-git add -A && git commit -m 'Calibr: <headline + spotlight titles>' && git push
-```
-
-Note: while we're in the R2 cutover, mp3s are still committed to git as a
-safety net (the Worker falls back to GitHub raw if R2 lacks the object).
-Once R2 is verified end-to-end, mp3s will be excluded from git and only
-uploaded to R2 — this prompt will be updated when that switch happens.
+Once both scripts are written, follow `PIPELINE.md` to generate audio,
+publish to R2, update the feed, and commit.
