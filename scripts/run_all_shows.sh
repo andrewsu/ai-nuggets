@@ -29,3 +29,12 @@ for prompt in podcasts/*/PROMPT.md; do
     echo "=== $(date -Iseconds) done  $slug (exit $?) ==="
   } >> "$log" 2>&1
 done
+
+# Claude's per-episode commit happens mid-run, before the closing "done"
+# line is written above. Pick up any straggling log changes as a follow-up
+# commit so they don't accumulate untracked between cron runs.
+if ! git diff --quiet -- 'podcasts/*/logs/cron.log'; then
+  git add 'podcasts/*/logs/cron.log' \
+    && git commit -m 'Update cron logs' \
+    && git push
+fi
