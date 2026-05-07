@@ -165,3 +165,19 @@ Kuan-lin Huang's group at Mount Sinai, with the new Accelerated Discovery with A
 
 Episode pushed (commit `613131e`); 471s mp3 (3.36 MB), live in the feed.
 === 2026-05-05T04:15:43-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-05-06T04:00:03-07:00 start biomedical-agentic-ai ===
+Episode for May 6 is live: **Tolkach's SPARK** — Nature Medicine paper from yesterday on an agentic AI framework that orchestrates frozen specialized vision tools (no retraining) to autonomously generate and test biological hypotheses across 5,400+ patients, 18 cohorts, 5 cancer types. Audio (5:08, Mistral Paul Neutral) on R2; feed updated; commit `105ada8` pushed to main.
+
+Sources:
+- [An agentic framework for autonomous scientific discovery in cancer pathology](https://www.nature.com/articles/s41591-026-04357-y)
+- [Autonomous pathology research using agentic AI shows potential in oncology (News & Views)](https://www.nature.com/articles/s41591-026-04403-9)
+- [AI pathology framework can enable a deeper understanding of cancer](https://medicalxpress.com/news/2026-05-ai-pathology-framework-enable-deeper.html)
+=== 2026-05-06T04:05:09-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-05-07T04:00:03-07:00 start biomedical-agentic-ai ===
+Episode shipped for May 7, 2026: PNNL's PTMdiscoverer + PTM-Psi pipeline (Bilbao group, bioRxiv 2026-05-06) — LLMs handling the annotation/interpretation step in open-search proteomics, paired with structural modeling of the resulting PTMs. 358-second mp3 generated via Mistral TTS, uploaded to R2, feed updated and validated, commit 486dc2f pushed to main.
+
+Sources surveyed:
+- [bioRxiv 2026-05-06/07 details API](https://api.biorxiv.org/details/biorxiv/2026-05-06/2026-05-07) — top match was the chosen PTM-LLM paper
+- [bioRxiv: PTM-LLM pipeline](https://www.biorxiv.org/content/10.64898/2026.05.01.722279v1) (DOI 10.64898/2026.05.01.722279)
+- General web: [Mayo REDMOD pancreatic cancer](https://stanforddaily.com/2026/05/06/research-roundup-ai-companions/) and [Novo Nordisk × OpenAI](https://www.cnbc.com/2026/04/14/novo-nordisk-openai-ai-drug-discovery-healthcare-nvo.html) considered but less aligned with the agentic-AI-in-bioinformatics audience than the PNNL preprint
+=== 2026-05-07T04:07:41-07:00 done  biomedical-agentic-ai (exit 0) ===
