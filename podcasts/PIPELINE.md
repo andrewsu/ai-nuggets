@@ -77,6 +77,20 @@ git add -A && git commit -m '<commit-prefix>: <descriptive title>' && git push
 
 `<commit-prefix>` is set per-show in its PROMPT.md.
 
+## Re-invocation within the same day
+
+The runner can be triggered manually mid-day (for testing, or to add a
+bonus episode). If `podcasts/<slug>/scripts/YYYY-MM-DD-*` already exists
+for today, you are in a re-invocation. The search and selection process
+is **exactly the same** as the first run — same sources, same recency
+filter, same audience criteria — with **one** exception: do not pick an
+article that has already been featured in a shipped episode today.
+
+Do not widen the recency window or shift the source mix to "find
+something different." If after excluding today's already-shipped items
+there are no fresh candidates left, the right outcome is no second
+episode for the day.
+
 ## Final summary (logged to cron.log)
 
 The runner pipes Claude's stdout into `podcasts/<slug>/logs/cron.log`, so

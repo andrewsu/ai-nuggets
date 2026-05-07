@@ -38,6 +38,13 @@ preprints because a flashy announcement is easier to find.
    Nature/Science publications, policy developments, funding news,
    open-source tool releases.
 
+**Recency is a hard filter, not a hint.** Items posted or announced
+outside the stated windows are out-of-scope regardless of merit and do
+not belong on the candidate shortlist — not even as honorable mentions.
+If the last 2 days are thin, the candidate list is short or empty.
+"No fresh candidate today, skipping" is an acceptable outcome; reaching
+back to plug a 2- or 4-week-old paper is not.
+
 # 3. Episode format
 
 - **One episode per day, ~5 minutes.**
