@@ -258,3 +258,22 @@ Why STAT won the slot: clearly multi-agent (squarely on the show's central topic
 === 2026-05-08T04:00:04-07:00 start biomedical-agentic-ai ===
 Waiting on arXiv rate limit. Will retry shortly.
 === 2026-05-08T04:03:18-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-05-08T12:52:18-07:00 start biomedical-agentic-ai ===
+Pushed. Run summary follows.
+
+## 2026-05-08 candidate funnel
+
+**bioRxiv** (2026-05-07 to 2026-05-08): paginated full collection, 449 unique items; 39 keyword hits; substantive shortlist after discarding spurious "agent"/"llm" matches:
+- **[CHOSEN]** Robotic perturbation proteomics + AI agents — Meyer lab, Cedars-Sinai (DOI 10.64898/2026.05.04.722718, May 7) — closed-loop screen of 172 compounds with two validated translational hypotheses (methylene blue → cholesterol; loratadine → circulating iron via EHR).
+- Towards autonomous biology: BPL Compiler-Verified Protocols — Bota Bioscience (DOI 10.64898/2026.05.05.720956, May 7) — fine-tuned 30B LLM in closed-loop with deterministic compiler, 95.1% fidelity on 300 Nature Protocols.
+- CytED — Seelig lab, Botnar Institute (DOI 10.64898/2026.05.04.722753, May 7) — multi-step LLM pipeline generating 1M+ cytokine-cell-effect triples from 110K full-text papers.
+- BRIDGE multi-organ histo-ST foundation model — Lequan Yu, HKU (DOI 10.64898/2026.05.05.722971, May 8).
+- immuneKG — Pharmablock Sciences (DOI 10.64898/2026.04.30.721823 v2, May 7) — immune-cell-aware biomedical knowledge graph; v2 in window.
+- STAT (multi-agent spatial transcriptomics) — already shipped 2026-05-07, excluded.
+
+**arXiv**: API returned HTTP 429 on initial query and on retry; followed source-failure rule and proceeded with the rest. Gap noted.
+
+**General web / press feeds**: ARPA-H news (May 7) — brain-driven hearing program, not agentic-AI/biomedical-AI fit. NIH press page (Drupal/JS shell) had no May 7-8 AI items in scrapeable HTML. HHS news 403'd.
+
+**Recency**: all chosen and shortlisted items posted within the May 6-8 window.
+=== 2026-05-08T12:59:50-07:00 done  biomedical-agentic-ai (exit 0) ===
