@@ -47,9 +47,19 @@ the gap in the funnel, ship the day's episode.
    biomedical/scientific relevance.
    - Use the listing API for date-bounded enumeration, not `site:arxiv.org`
      web search (which has multi-day indexing lag for fresh submissions):
-     `curl 'http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.CL+OR+cat:q-bio+OR+cat:cs.MA&sortBy=submittedDate&sortOrder=descending&max_results=200'`
+     `curl 'https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.CL+OR+cat:q-bio+OR+cat:cs.MA&sortBy=submittedDate&sortOrder=descending&max_results=200'`
+     Use `https://` directly — `http://` 301-redirects and inflates the
+     request count, which has triggered 429s in past runs.
+   - **arXiv rate limit: 1 request per 3 seconds, hard.** A single OR'd
+     query like the one above is enough — don't fan out per-category or
+     per-keyword. If a second arXiv call is genuinely needed, `sleep 4`
+     between calls. Bursting trips a temporary IP block that bleeds into
+     the next run.
    - Filter the returned Atom feed for submissions within the last 2 days
      and biomedical relevance.
+   - If the API still 429s after one retry, fall back to `site:arxiv.org`
+     web search for the same window. Indexing lag means you'll miss
+     same-day submissions, but it beats dropping arXiv entirely.
 3. **General web** — last 1–2 days. Big AI + science news that may NOT be
    in preprints: major company announcements (DeepMind, NVIDIA, OpenAI,
    Isomorphic, Recursion, etc.), Nature/Science publications, open-source
