@@ -21,7 +21,7 @@ bioinformatics, data integration, APIs.
 
 # 2. Search strategy
 
-Cast a wide net across THREE source types — don't voluntarily skip any.
+Cast a wide net across the source types below — don't voluntarily skip any.
 The best nugget might come from any of them; don't bias toward preprints
 if the biggest story is a product launch or Nature paper, but don't miss
 important preprints because a flashy announcement is easier to find. If
@@ -60,11 +60,26 @@ the gap in the funnel, ship the day's episode.
    - If the API still 429s after one retry, fall back to `site:arxiv.org`
      web search for the same window. Indexing lag means you'll miss
      same-day submissions, but it beats dropping arXiv entirely.
-3. **General web** — last 1–2 days. Big AI + science news that may NOT be
+3. **ChemRxiv** — recent preprints (last 2 days) at the chemistry/biology
+   interface: autonomous chemistry agents, LLM-driven synthesis planning,
+   multi-agent molecular design, retrieval-augmented chemistry. Often
+   the home for items that don't fit cleanly on bioRxiv or arXiv (e.g.,
+   robotic-chemist agents, EvoSyn-class synthesis frameworks).
+   - **Use web search, not the API.** ChemRxiv's public API and search
+     dashboard are gated by Cloudflare's JS challenge from this host —
+     `curl` and WebFetch both 403 immediately. Use WebSearch with
+     `site:chemrxiv.org` and a relevance keyword (e.g., `site:chemrxiv.org
+     agent 2026`, `site:chemrxiv.org "LLM" autonomous`). Filter the
+     returned hits to the last 2 days by inspecting the posted date
+     visible in each result snippet/title.
+   - Indexing lag means same-day submissions may not surface — that's
+     the cost of the Cloudflare gate, not a recall problem worth fixing
+     with retries.
+4. **General web** — last 1–2 days. Big AI + science news that may NOT be
    in preprints: major company announcements (DeepMind, NVIDIA, OpenAI,
    Isomorphic, Recursion, etc.), Nature/Science publications, open-source
    tool releases.
-4. **Policy / funder announcements** — daily check of major US biomedical
+5. **Policy / funder announcements** — daily check of major US biomedical
    funder press pages, since program launches and major awards rarely
    surface in preprint or general web searches:
    - ARPA-H news: https://arpa-h.gov/news
