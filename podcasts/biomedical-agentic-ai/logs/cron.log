@@ -516,3 +516,8 @@ Today's already-shipped (excluded from this slot):
 
 **Why BioDesignBench won:** Phil Romero academic credibility in protein ML; substantive scientific finding (the behavioral diagnosis with an actionable fix) rather than just "we built a benchmark"; converges with this morning's Open-Rosalind on the same architectural conclusion from a totally different domain — useful triangulation; open-source reference agents + public leaderboard fits the open-science framing.
 === 2026-05-09T17:43:15-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-05-10T04:00:03-07:00 start biomedical-agentic-ai ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request or attempting a different approach. If you are seeing this refusal repeatedly, try running /model claude-sonnet-4-20250514 to switch models.
+
+Request ID: req_011CatmnNURBvbsQ5NY7uJMt
+=== 2026-05-10T04:00:43-07:00 done  biomedical-agentic-ai (exit 0) ===
