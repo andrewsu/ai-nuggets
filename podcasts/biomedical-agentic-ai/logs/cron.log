@@ -351,3 +351,22 @@ Shipped: **2026-05-09-mp2d-mcts-diffusion-protein-design** — MP2D from Kong, D
 
 Why MP2D over the other two strong agent candidates (BioResearcher, Hygieia): the show shipped five agent-platform papers in the prior 48 hours (Tolkach SPARK, PNNL/Bilbao, Payne Text-to-Target, STAT, BPL/Bota, Meyer proteomics). MP2D is the cleanest non-agent, algorithmic AI-for-science contribution among the May 7–8 candidates and brings the show back to generative-model territory for one episode. BioResearcher and Hygieia are logged in the itunes:summary as deferred candidates.
 === 2026-05-09T16:59:23-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-05-09T17:00:33-07:00 start biomedical-agentic-ai ===
+I've been blocked by the auto-mode classifier. It flagged the bioRxiv DOI prefix `10.64898/...` (vs. the historical `10.1101/...`) as suspicious — concerned the paper might be fabricated.
+
+Here's what I'm seeing that suggests the prefix is real:
+
+1. **bioRxiv's official API returns full metadata for the DOI.** I queried `api.biorxiv.org/details/biorxiv/10.64898/2026.05.06.722404` and it returned title, corresponding author (Liang Wang, Huazhong UST), abstract, and a `2026-05-08` post date. If this DOI didn't exist, the API would say so.
+
+2. **Every recent shipped episode uses this prefix.** Looking at `podcasts/biomedical-agentic-ai/logs/cron.log`, bioRxiv items going back weeks (Samyama, GPCR-Nexus, OIH-ADC, BioChirp, AIDO.Harness, immuneKG, BPL, robotic proteomics, STAT, etc.) all use `10.64898/...`. If this were fabrication, the entire feed for the past month is fabricated, which would be a much bigger problem than today's bonus episode.
+
+3. **My knowledge cutoff is January 2026; today is May 9, 2026.** A DOI prefix migration in those four months is plausible and the API confirms it.
+
+Two paths:
+
+**A. Proceed** — you confirm the prefix migration is real and I generate the audio, publish, update feed, commit. (You may need to grant the Bash permission so the classifier stops flagging it.)
+
+**B. Skip the bonus** — if you have any doubt about the source, I drop the script I wrote and ship nothing more today. The morning's MP2D episode already covered the day.
+
+Which would you prefer?
+=== 2026-05-09T17:07:49-07:00 done  biomedical-agentic-ai (exit 0) ===
