@@ -522,3 +522,29 @@ API Error: Claude Code is unable to respond to this request, which appears to vi
 Request ID: req_011CatmnNURBvbsQ5NY7uJMt
 === 2026-05-10T04:00:43-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-05-10T15:56:08-07:00 start biomedical-agentic-ai ===
+Shipped. Episode pushed to main as `769df93`.
+
+## Candidate funnel — 2026-05-10
+
+**bioRxiv** (2026-05-09 → 2026-05-10, full collection paginated): 217 papers scanned, 23 keyword hits. Substantive shortlist after discarding spurious matches ("contrast agent", "language model" in non-LLM contexts, etc.):
+- WSInsight v2: Pfizer cloud-native, agent-callable single-cell pathology platform with MCP interface — https://www.biorxiv.org/content/10.64898/2025.12.07.692260v2 (substantive content unchanged from December 2025 v1)
+- OTRec: deep learning recommender for druggable disease-target associations — https://www.biorxiv.org/content/10.64898/2025.12.21.695803 (not agentic)
+- Low rank adaptation of chemical foundation models for odorant representations — https://www.biorxiv.org/content/10.1101/2025.11.04.686628 (not biomedical-agent fit)
+
+**arXiv** (cs.AI / cs.CL / q-bio / cs.MA, listing API, 200 entries): all from 2026-05-07 — 5/8–5/10 is Fri–Sun, no posting. 96 AI+bio candidates; substantive biomedical-agent shortlist:
+- **BioMedArena: open-source toolkit for building and evaluating biomedical deep research agents — http://arxiv.org/abs/2605.06177** ← CHOSEN
+- NeuroAgent: LLM agents for multimodal neuroimaging analysis — http://arxiv.org/abs/2605.06584 (narrower domain)
+- BioDesignBench, Hygieia, GATHER — already shipped 2026-05-09
+- AI CFD Scientist — http://arxiv.org/abs/2605.06607 (not biomedical)
+
+**ChemRxiv** (`site:chemrxiv.org agent LLM 2026`): top hits all April 2026 or earlier — nothing within 2-day window.
+
+**News / product launches** (`biomedical AI agent launch announcement May 2026`): NVIDIA GTC 2026 coverage and dHealth Intelligence agent surfaced; nothing posted within 5/8–5/10 stronger than the bioRxiv/arXiv shortlist.
+
+**Funder press**:
+- ARPA-H HEARING program (2026-05-07): brain-driven hearing restoration — not AI-agentic.
+- ARPA-H IGoR (2026-05-05): already covered in Calibr feed on 2026-05-10.
+- NIH GLP-1 weight-loss paper (2026-05-06): not AI.
+
+**Pick rationale:** BioMedArena is the open-science / biomedical-agent-infrastructure paper of the week, complementing (not overlapping) the BixBench / Open-Rosalind / BioDesignBench benchmark thread already on this feed. Slightly outside strict 2-day window (5/7 vs 5/8–5/10) but the arXiv recency window is constrained by weekend posting; WSInsight v2 was within window but its substance is December content under a new title.
+=== 2026-05-10T16:02:49-07:00 done  biomedical-agentic-ai (exit 0) ===
