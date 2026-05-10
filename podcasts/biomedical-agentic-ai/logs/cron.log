@@ -407,3 +407,30 @@ API Error: Claude Code is unable to respond to this request, which appears to vi
 
 Request ID: req_011CasvduARc1hSQe263SVD3
 === 2026-05-09T17:16:14-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-05-09T17:16:44-07:00 start biomedical-agentic-ai ===
+Episode shipped. Final summary:
+
+## Candidate funnel — 2026-05-09 third invocation
+
+**bioRxiv** (2-day window 2026-05-08 to 2026-05-09, full collection paginated):
+- 337 entries scanned across 12 pages
+- 48 surviving keyword filter (agent / agentic / LLM / foundation model / KG / ontology / etc.)
+- After discarding spurious "agent" mentions (chemical/pharmacologic/contrast agents) and excluding already-shipped, the substantive shortlist:
+  - PromptBio-Bench: Benchmarking LLM-based Bioinformatics Agents (bioRxiv 2026-05-08) — overlapped with morning's Open-Rosalind
+  - Benchmarking LLM agents for protein design (bioRxiv 2026-05-08) — overlapped with morning's MP2D
+  - BRIDGE multi-organ histo-ST foundation model (bioRxiv 2026-05-08) — not agentic
+  - DigitalPedon digital twin (bioRxiv 2026-05-08) — soil science, not biomedical
+
+**arXiv** (cs.AI/cs.CL/q-bio/cs.MA, listing API, single OR'd query):
+- 200 entries returned, 73 with biomed+agentic keyword overlap, 32 within 2-day window after excluding MP2D
+- Top biomed-agentic shortlist:
+  - **Hygieia: A Versatile AI Agent for Rare Disease Diagnosis and Risk Gene Prioritization** (arXiv 2605.06226, 2026-05-07, Yale + Duke-NUS) — **CHOSEN**
+  - BioMedArena: Open-source toolkit for biomedical deep research agents (arXiv 2605.06177) — also strong, but benchmarking-flavored, deferred to avoid stacking
+  - NeuroAgent: LLM agents for neuroimaging analysis (arXiv 2605.06584) — narrower domain
+  - GATHER: KG-RAG for zero-shot single-cell cell-type annotation (arXiv 2605.06403) — interesting, candidate for next week
+  - FunctionalAgent: agentic system for MC-PDFT functional design (arXiv 2605.06215) — chemistry, not biomedical
+
+**News**: HHS ARPA-H Igor program announcement (forward-looking, no deliverable yet); FDA Elsa 4.0; Novo Nordisk + OpenAI partnership — none beat a fresh paper directly in Andrew's gene-prioritization wheelhouse.
+
+**Why Hygieia won**: complements rather than overlaps with today's two prior episodes (a method paper on protein design, and a benchmarking paper on biomedical agents); pivots to a deployed clinical agent with physician-validated outcomes; "risk gene prioritization" is directly Su Lab adjacent; router-based knowledge-enhanced architecture is the kind of design choice worth flagging.
+=== 2026-05-09T17:23:35-07:00 done  biomedical-agentic-ai (exit 0) ===
