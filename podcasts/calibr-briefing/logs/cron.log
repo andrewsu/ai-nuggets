@@ -152,3 +152,22 @@ Substantive shortlist (Sunday is light, so this is end-of-week + ASGCT-eve mater
 Spotlight selection rationale: Azalea is the freshest data-bearing item in the focus area (in vivo CAR-T), is technically distinct from anything previously spotlit (TRAC site-specific gene editing — fourth branch alongside LNP/mRNA, fusosome, lentiviral), and lands on the eve of ASGCT, where the Calibr team will likely follow follow-on coverage all week.
 === 2026-05-10T04:12:02-07:00 done  calibr-briefing (exit 0) ===
 === 2026-05-11T04:09:37-07:00 start calibr-briefing ===
+Shipped Calibr-Skaggs Daily Briefing for Monday, May 11, 2026 — both episodes generated, uploaded to R2, feed updated, committed and pushed.
+
+**Candidate funnel:**
+
+Sources scanned: Endpoints News, Fierce Biotech, Fierce Pharma, STAT News, BioPharma Dive (all 5 sources delivered fresh May 11 content — no failures).
+
+Shortlist (substantive candidates after filter):
+- **Fractyl Health RJVA-001 EU CTA authorized** — first-in-human pancreatic GLP-1 gene therapy, AAV9 + insulin promoter, endoscopic delivery (Endpoints) — **CHOSEN for spotlight + headline #1**
+- **Angelini buys Catalyst Pharmaceuticals $4.1B** at 21% premium for Firdapse/Fycompa/Agamree CNS portfolio (BioPharma Dive) — **headline #2**
+- **Sarepta Q1 — Elevidys $102M beats but stock drops 10%** on QoQ decline since FDA restrictions (BioPharma Dive) — **headline #3**
+- **CSL 9-year low** on $5B write-down + 4% revenue guide cut (Endpoints) — **headline #4**
+- **Eli Lilly $4.5B Indiana manufacturing** GLP-1 capacity build-out (Endpoints) — **headline #5** (paired thematically with the Fractyl spotlight)
+- **Astellas restarts XLMTM gene therapy** 5 years after Audentes deaths (STAT) — **headline #6a**
+- **AbCellera ABCL635 first internally developed clinical readout** Phase 1 menopause asset (Stock Titan / Q1 call) — **headline #6b**
+- AACR-tail items, Quantinuum IPO plans, Medicare Leqembi/Kisunla underutilization, FDA Ebvallo cell therapy reconsideration — not selected, lower priority/less time-sensitive
+- Astellas Astellas XLMTM appeared as a smaller item alongside AbCellera in headline #6 since both are gene-therapy-pipeline rather than commercial news
+
+Headlines: 6 min 17 s · Spotlight: 12 min 44 s · Commit `5a56eb5`.
+=== 2026-05-11T04:20:24-07:00 done  calibr-briefing (exit 0) ===
