@@ -549,3 +549,31 @@ Shipped. Episode pushed to main as `769df93`.
 **Pick rationale:** BioMedArena is the open-science / biomedical-agent-infrastructure paper of the week, complementing (not overlapping) the BixBench / Open-Rosalind / BioDesignBench benchmark thread already on this feed. Slightly outside strict 2-day window (5/7 vs 5/8–5/10) but the arXiv recency window is constrained by weekend posting; WSInsight v2 was within window but its substance is December content under a new title.
 === 2026-05-10T16:02:49-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-05-11T04:00:04-07:00 start biomedical-agentic-ai ===
+Pushed. Final candidate funnel:
+
+## Candidate funnel — 2026-05-11
+
+**bioRxiv (Su Lab keywords applied to 2026-05-10/11 details API):**
+- 230 unique entries pulled across 8 paginated pages (full collection, no sampling)
+- 80 keyword-hit items after filtering title+abstract for agent/LLM/foundation-model/KG/ontology/etc.
+- Substantive on-topic shortlist after discarding spurious matches ("agent" → "agent of syphilis", "rag" → fragment, "agent" → "ultrasound contrast agent"):
+  - WSInsight v2 (10.64898/2025.12.07.692260, Huang/Pfizer) — cloud-native MCP agent-callable single-cell pathology platform — **rejected**: v1 abstract from 2025-12-10 already contained the agent-callable/MCP language, v2 only revised the title; fails recency.
+  - SIGMA-KG + FLASH v2 (10.64898/2026.04.29.721775, Lei Xie/CUNY Hunter) — signed multi-omics KG foundation model for drug action — **rejected**: v1 May 4 (7 days back), v2 abstract identical; outside 2-day window.
+  - OTRec v2 (10.64898/2025.12.21.695803, Ofer/Linial/Hebrew U) — deep-learning druggable disease-target recommender — **rejected**: v1 December 2025.
+  - IBD ML-framework v3 (10.64898/2026.02.06.699999, Immunai/Leonardi) — single-cell + AI-assisted reasoning for IBD targets — **rejected**: v1 February 2026.
+  - epiVIP v1 (10.64898/2026.05.05.722287, Bo Li/CHOP) — AI-enabled virtual immunopeptidomics — **rejected**: genuinely fresh but not agentic; deep-learning HLA-I abundance prediction.
+
+**arXiv (cs.AI+cs.CL+q-bio+cs.MA, sortby submittedDate, 200 entries, all 2026-05-08 since 5/9-5/10 are weekend):**
+- 200 entries scanned; 36 AI+bio keyword hits.
+- On-topic shortlist:
+  - **MedAction** (arXiv 2605.07305, Hsu et al./Liyue Shen at Michigan) — active multi-turn clinical diagnostic LLMs, KG-grounded DTC/RAC trajectory metrics, MedAction-32K, 8B SOTA — **CHOSEN**.
+  - BioProVLA-Agent (arXiv 2605.07306, Du et al.) — embodied VLA multi-agent for wet-lab manipulation — rejected: overlaps with already-shipped Meyer (5/8) + BOTA (5/8) wet-lab automation streak.
+  - CMR-EXTR (arXiv 2605.08045, Yu et al.) — distilled LLMs for cardiac MR report extraction — rejected: narrow clinical NLP, less agentic.
+  - ProteinJEPA (arXiv 2605.07554, Ofer/Shahaf/Linial) — latent prediction for protein LMs — rejected: pretraining recipe, not agentic.
+
+**ChemRxiv (`site:chemrxiv.org` agent 2026):** no agentic-AI biomedical preprints in last 2 days; results were traditional cheminformatics.
+
+**News / funder press:** no fresh 2026-05-10/11 announcements; ARPA-H IGoR (5/5) and NVIDIA-Lilly (1/12) are out of window.
+
+**Episode shipped:** MedAction — arXiv 2605.07305 — 290 s, 2.1 MB, pushed in commit 6016c7f.
+=== 2026-05-11T04:09:37-07:00 done  biomedical-agentic-ai (exit 0) ===
