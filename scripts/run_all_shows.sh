@@ -23,11 +23,28 @@ for prompt in podcasts/*/PROMPT.md; do
   slug=$(basename "$(dirname "$prompt")")
   log="$REPO/podcasts/$slug/logs/cron.log"
   mkdir -p "$(dirname "$log")"
-  {
-    echo "=== $(date -Iseconds) start $slug ==="
-    cat "$PIPELINE" "$prompt" | "$CLAUDE" -p --permission-mode auto
-    echo "=== $(date -Iseconds) done  $slug (exit $?) ==="
-  } >> "$log" 2>&1
+
+  # The content-AUP classifier occasionally flags the biomedical-agentic-ai
+  # prompt on the first attempt; a retry minutes later typically clears it.
+  for attempt in 1 2; do
+    tag=""
+    [ "$attempt" -gt 1 ] && tag=" (retry $((attempt-1)))"
+    out=$(mktemp)
+    {
+      echo "=== $(date -Iseconds) start $slug$tag ==="
+      cat "$PIPELINE" "$prompt" | "$CLAUDE" -p --permission-mode auto
+      echo "=== $(date -Iseconds) done  $slug (exit $?)$tag ==="
+    } 2>&1 | tee -a "$log" > "$out"
+    if [ "$attempt" -eq 1 ] && \
+       grep -q "Claude Code is unable to respond to this request, which appears to violate our Usage Policy" "$out"; then
+      echo "=== $(date -Iseconds) AUP-refusal detected for $slug; retrying in 180s ===" | tee -a "$log"
+      rm -f "$out"
+      sleep 180
+      continue
+    fi
+    rm -f "$out"
+    break
+  done
 done
 
 # Claude's per-episode commit happens mid-run, before the closing "done"
