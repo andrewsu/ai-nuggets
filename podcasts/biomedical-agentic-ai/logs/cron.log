@@ -631,3 +631,24 @@ Sources:
 - [NIH news releases](https://www.nih.gov/news-events/news-releases)
 === 2026-05-12T08:30:38-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-05-13T04:00:03-07:00 start biomedical-agentic-ai ===
+Episode shipped. Summary:
+
+**Today's pick: ClaroAI-Bench** — a bioRxiv v1 from yesterday by Kyle A. O'Connell (Deloitte Consulting). First end-to-end agentic-reproducibility benchmark on real biomedical literature: 35 NIH-funded papers across 5 modalities, scored on a D1–D5 rubric. Audit-only and bash-only baselines both reproduce 0% of papers; Claude Code with full tools reproduces 60.6%. Quantifies the open-data premium at 2.9× and the metadata→reproduction Spearman correlation at 0.68.
+
+**Candidate funnel:**
+
+- **bioRxiv (last 2 days):** 342 entries scanned across 12 paginated pages → 23 substantive AI/agentic matches after false-positive scrub (e.g. "chemical agent", "infectious agent" filtered out).
+  - ✅ **ClaroAI-Bench** — Evaluating Agentic Scientific Reproducibility on Real Biomedical Papers (DOI 10.64898/2026.05.08.723611) — *CHOSEN*
+  - Culsma — formal language for laboratory protocols (DOI 10.64898/2026.05.07.723509)
+  - ConvergeCELL — transcriptomics→therapeutic-hypotheses LLM workflow (DOI 10.64898/2026.05.07.723555)
+  - Corpus-wide causality — LLM aggregation of gene-disease causal evidence (DOI 10.64898/2026.05.08.723796)
+  - GeneCAD — PlantCAD2 DNA foundation model (not agentic)
+- **medRxiv (last 2 days):** 4 keyword matches, none AI-substantive (all "llm" inside "all").
+- **arXiv (cs.AI/CL/q-bio/cs.MA, 200 recent):** 24 biomedical+AI matches for 2026-05-12. Notables: MedHopQA (BioCreative IX multi-hop QA), MedMemoryBench (agent memory in healthcare), EHR-RAGp (RAG foundation model for EHRs), MolDeTox (LM fragment editing for detoxification). All narrower than ClaroAI-Bench.
+- **Source failures:** none — all pulls returned 200.
+- **Funder feeds / ChemRxiv / general news:** not surveyed today, since the bioRxiv lead was a clean fit. Acceptable per pipeline guidance.
+
+**Why ClaroAI-Bench won:** sharp 0%/0%/60% framing, quantitative anchor on the open-science premium (2.9×), squarely in Andrew's open-science + agentic-AI wheelhouse, thematically distinct from this fortnight's clinical-reasoning / virtual-cell / KG-RAG / protein-design picks.
+
+Commit `b9ffc1c` pushed to main.
+=== 2026-05-13T04:06:19-07:00 done  biomedical-agentic-ai (exit 0) ===
