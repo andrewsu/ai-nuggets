@@ -203,3 +203,29 @@ Both audio files generated via Mistral Paul Neutral, uploaded to R2 (`ai-nuggets
 Spotlight chosen for BMS-Hengrui because (a) it's the dominant deal of the day, (b) the 4+4+5 structure with five joint-discovery programs is a genuinely novel template, and (c) it has direct read-throughs to Calibr's partnering strategy across in vivo CAR-T, MASH biologic, and immunology — the multi-asset bundling thesis lets us reframe how the Calibr platform should be marketed.
 === 2026-05-12T04:09:19-07:00 done  calibr-briefing (exit 0) ===
 === 2026-05-13T04:06:19-07:00 start calibr-briefing ===
+Both episodes shipped for Wednesday, May 13, 2026.
+
+**Headlines (5:22):** Makary's FDA resignation, Isomorphic Labs $2.1B Series B, Pfizer-Arvinas license Veppanu PROTAC to Rigel, BioMarin's Amicus layoffs, Alkermes Lumryz IH Phase 3 hit, EU Critical Medicines Act + Iran-war supply chain disruption, and Takeda's nausea/vomiting program axe.
+
+**Spotlight (8:07):** Makary resignation deep-dive — the e-cigarette trigger, the Replimune/uniQure/Sarepta rejection record under Makary + Prasad, Kyle Diamantas's thin drug-review background, CNPV and rare-pediatric voucher limbo, and four Calibr-specific implications: don't expect the single-arm bar to snap back (plan full randomized Phase 3 vs. active comparator for the MASH biologic against efruxifermin/efimosfermin/resmetirom), assume belt-and-suspenders preclinical safety for in vivo CAR-T, model conventional priority review with vouchers as free options, and consider patience on partnering as depressed cell/gene/PROTAC valuations may re-rate over the next two quarters.
+
+## Candidate funnel
+
+**Sources scanned (relevance filter survivors in parens):**
+- Endpoints News (5), Fierce Biotech (1 today + 5 spillover from May 12), Fierce Pharma (4), BioPharma Dive (5), STAT News (5), targeted searches on Makary/Diamantas, Isomorphic Labs, Replimune, MASH/FGF21, in vivo CAR-T, Foresite portfolio
+- No source-side failures today
+
+**Shortlist after discarding noise:**
+- **Makary FDA resignation + Diamantas acting** — industry-wide regulatory regime change ← **CHOSEN for spotlight** + **headline #1**
+- **Isomorphic Labs $2.1B Series B (Thrive + Alphabet/GV)** — largest AI-drug-discovery round on record ← headline #2
+- **Pfizer-Arvinas license Veppanu (vepdegestrant ER PROTAC) to Rigel at $85M upfront** ← headline #3
+- **BioMarin layoffs at Cranbury after $4.8B Amicus close** ← headline #4
+- **Alkermes Lumryz Phase 3 REVITALYZ hits primary endpoint in IH** ← headline #5
+- **EU Critical Medicines Act provisional deal + Iran-war supply chain (Evonik, Merck KGaA)** ← headline #6
+- **Takeda axes another nausea/vomiting program (now 0-for-4)** ← headline #7
+- Lilly low-dose Zepbound + Foundayo maintenance — passed (incremental)
+- Capsida gene-therapy death — no new info, paywalled (referenced in spotlight)
+- RFK Jr. SSRI deprescribing push — passed (policy commentary, not biotech-actionable)
+
+Commit `7a1fc01` pushed to origin/main.
+=== 2026-05-13T04:14:24-07:00 done  calibr-briefing (exit 0) ===

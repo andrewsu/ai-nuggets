@@ -1,0 +1,60 @@
+=== 2026-05-13T04:14:24-07:00 start receptor-and-reason ===
+Push successful. Final summary follows for the cron log.
+
+---
+
+## Receptor & Reason — 2026-05-13 run summary
+
+**Episode shipped:** `2026-05-13-receptor-and-reason` (11:20 spoken, 4.94 MB)
+- Script: `podcasts/receptor-and-reason/scripts/2026-05-13-receptor-and-reason.md`
+- Audio: Mistral voxtral-mini-tts-2603 / en_paul_neutral (6 chunks, all primary, no fallback)
+- R2 key: `podcasts/receptor-and-reason/episodes/2026-05-13-receptor-and-reason.mp3`
+- Feed: 1 new item; dedup ledger appended (10 items)
+- Commit: `7cb8aff` pushed to `main`
+
+**Source-level failures (this run):**
+- **arXiv** — HTTP 503 on first call, then persistent HTTP 429 across multiple retries (30s, 60s pauses) from this IP. Listing API skipped. Tier 2 partially backfilled via web-search; some arXiv items found this way (BioTool 2605.05758, Self Driving Datasets 2605.07022) were not used in today's pick because the bioRxiv pharmacology shortlist was unusually deep.
+
+**Candidate funnel:**
+
+bioRxiv (Tier 1 + Tier 2): 1,683 papers scanned in the 2026-05-06 → 2026-05-13 window; 371 keyword-relevance hits; 22-paper relevance shortlist after stricter neuropsychopharm + receptor-pharmacology filtering.
+
+Tier 1 shortlist (bioRxiv neuroscience + pharmacology):
+- `10.64898/2026.05.06.723386` — Structural basis of MK-97 PAM at M4 mAChR (Monash) ✅ chosen
+- `10.64898/2026.05.06.722744` — KOR regulate cocaine effects on NAc DA via DAT Thr53 phosphorylation (Wake Forest) ✅ chosen
+- `10.64898/2026.05.03.722511` — BMS-986122 MOR PAM in rat neuropathic pain (U. Michigan) ✅ chosen
+- `10.64898/2026.05.04.722791` — Widespread internal brain state for fentanyl withdrawal (Duke) ✅ chosen
+- `10.64898/2026.05.04.720358` — Photoswitchable cannabinoid (azo-THC-3) for refractory seizures (VUB) ✅ chosen
+- `10.64898/2026.05.07.722567` — Self-limiting orexin–habenula circuit for stress resilience (Korea U.) ✅ chosen
+- `10.64898/2026.05.08.723673` — Ramelteon facilitates hippocampal ripples (U. Tokyo) — runner-up
+- `10.64898/2026.05.08.723702` — Statins unveil two agonist sites in TRPA1 pore (KU Leuven) — runner-up
+- `10.64898/2026.05.06.723377` — Cerebellar VTA plasticity in chronic stress depression (KIST) — runner-up
+- `10.64898/2026.05.06.723291` — Sex-dependent glutamatergic disruption in DA neurons in PD (NIA) — runner-up
+- `10.64898/2026.05.10.723768` — Maternal HFD microglia remodel serotonergic reward circuits (Duke) — runner-up
+- `10.64898/2026.05.07.723441` — Presynaptic GABAA mediates ethanol suppression at endbulb of Held — runner-up
+- `10.64898/2026.05.08.723911` — LAG3 regulates microglia in AD (NIEHS) — runner-up
+- `10.64898/2026.05.05.722646` — Opioids modulate curiosity-driven music exploration (Barcelona) — runner-up
+- `10.64898/2026.05.04.722437` — Clec7a suppression attenuates microglial neuroinflammation in ALS (Tufts) — runner-up
+
+Tier 1 (journals / news, via WebSearch):
+- *Neuropsychopharmacology* "It's not all DAT" (OCT3 in amphetamine reinforcement) — `nature.com/articles/s41386-026-02390-6` ✅ chosen
+- *Neuropsychopharmacology* recent batch: traumatic stress orbitofrontal–amygdala (May 6), prenatal SSRI exposure, semantic encoding of trauma memories, ERUDITE/luvadaxistat — runner-ups; ERUDITE/luvadaxistat was ~3 weeks ago, outside window
+- Psychiatric Times "Morning Rounds May 4–May 8" — HHS antidepressant overprescribing initiative ✅ chosen as closer; also: Leqembi PDUFA extension, Vistagen PALISADE-4 fasedienol, CTx-1301 May 31 PDUFA, JAMA Open psilocybin-assisted psychotherapy for cocaine use — runner-ups
+
+Tier 2 (agentic AI in biomedical):
+- bioRxiv `10.64898/2026.05.04.722718` — Robotic perturbation proteomics + AI agents for drug mechanism (Cedars-Sinai) ✅ chosen
+- bioRxiv `10.64898/2026.05.06.723244` — Talk2QSP (Sanofi, agentic QSP scenario extraction) ✅ chosen
+- bioRxiv `10.64898/2026.05.02.722342` — EvoSyn multi-agent molecular synthesis (Sun Yat-sen) — runner-up
+- bioRxiv `10.64898/2026.05.08.723611` — ClaroAI-Bench (already shipped in sister show biomedical-agentic-ai 2026-05-13)
+- arXiv 2605.05758 — BioTool (tool-calling dataset) — runner-up
+- arXiv 2605.07022 — Self Driving Datasets / Starling (multi-agent biomedical extraction at scale) — runner-up
+- arXiv 2605.06177 — BioMedArena (deep research agents toolkit) — runner-up
+
+Tier 3 (computational pharmacology / industry):
+- chemRxiv — no fresh in-window items surfaced via WebSearch (Cloudflare-gated direct fetch)
+- Industry — no in-window agentic-AI-in-drug-discovery announcements from AstraZeneca/Genentech/Iambic/Recursion/Xaira surfaced; recent activity is Feb–Apr 2026
+
+**Items chosen (final order in episode):** MK-97 M4 PAM → OCT3 amphetamine → KOR–DAT phosphorylation → BMS-986122 MOR PAM → fentanyl withdrawal brain state → photoswitchable cannabinoid → Robotic proteomics + AI agents → Talk2QSP → orexin–habenula resilience → HHS overprescribing initiative.
+
+Tier 4 (seminal fallback) **not** activated — Tiers 1–3 cleared the 8-item floor (10 items shipped).
+=== 2026-05-13T04:37:16-07:00 done  receptor-and-reason (exit 0) ===
