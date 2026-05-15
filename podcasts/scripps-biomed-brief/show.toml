@@ -1,0 +1,29 @@
+slug          = "scripps-biomed-brief"
+title         = "Scripps Biomedical Brief"
+description   = "Insights into new targets, modalities, and technologies for improving human health, curated for Peter Schultz and the Scripps Research community."
+host          = "Nigel"
+owner         = "Peter Schultz <schultz@scripps.edu>"
+podcast_slug  = "scripps-biomed-brief"
+
+[paths]
+prompt   = "PROMPT.md"
+feed     = "feed.xml"
+episodes = "episodes"
+scripts  = "scripts"
+logs     = "logs"
+
+[rss]
+base_url = "https://github.com/andrewsu/ai-nuggets/raw/main"
+link     = "https://github.com/andrewsu/ai-nuggets"
+
+# TTS providers. Edit to match this show's voice. Supported providers:
+# "mistral", "elevenlabs".
+[tts.primary]
+provider = "elevenlabs"
+voice    = "hpp4J3VqNfWAUOO0d1Us"
+model    = "eleven_flash_v2_5"
+
+[tts.primary.settings]
+speed            = 1.1
+stability        = 0.5
+similarity_boost = 0.75

@@ -16,4 +16,4 @@ binding = "BUCKET"
 bucket_name = "ai-nuggets-episodes"
 
 [vars]
-ALLOWED_PODCASTS = "biomedical-agentic-ai,calibr-briefing,receptor-and-reason"
+ALLOWED_PODCASTS = "biomedical-agentic-ai,calibr-briefing,receptor-and-reason,scripps-biomed-brief"
