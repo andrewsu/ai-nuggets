@@ -9,9 +9,9 @@ This podcast is curated for **Peter Schultz**, President and CEO of Scripps Rese
 
 - **New Targets**: Novel biological pathways or proteins that can be modulated for therapeutic benefit.
 - **New Modalities**: Beyond small molecules—PROTACs, molecular glues, cell therapies, gene editing, and synthetic biology.
-- **Emerging Technologies**: High-throughput screening, AI in drug discovery, cryo-EM, and advanced chemical biology tools.
+- **Emerging Technologies**: AI in drug discovery.
 - **Translational Impact**: Research that has a clear path to improving human health or addressing unmet medical needs.
-- **Technical Depth**: They appreciate scientific rigor and specific details over high-level marketing speak.
+- **Technical Depth**:Scientific rigor and specific details over high-level marketing speak.
 
 ## What to avoid
 
@@ -19,24 +19,18 @@ This podcast is curated for **Peter Schultz**, President and CEO of Scripps Rese
 - **Surface-level News**: Skip the basic health tips or well-known industry news.
 - **Marketing Fluff**: Focus on the science and the data, not the corporate PR.
 
-## Past feedback
-
-- This is a new show, but the goal is to provide a high-signal-to-noise ratio briefing that saves time for a busy executive.
-
 # 2. Search strategy
 
 Search for the latest breakthroughs (past 24-48 hours) from the following sources:
 - **Journals**: Nature, Science, Cell, JACS, Angewandte Chemie, Nature Chemical Biology, Nature Biomedical Engineering.
-- **Preprints**: bioRxiv (specifically Chemical Biology, Pharmacology and Toxicology, Bioengineering).
-- **Industry News**: Endpoints News, Fierce Biotech, Stat News (focusing on R&D and early-stage pipelines).
-- **Scripps Research News**: Any internal breakthroughs or major publications from Scripps faculty.
+- **Preprints**: bioRxiv (specifically Chemical Biology, Pharmacology and Toxicology, Bioengineering) and medrxiv
+- **Industry News**: Fierce Biotech, Fierce Pharma, Endpoints News, STAT News, BioPharma Dive, The Biotech Voyager, Clinical Trials Arena, Genetic Engineering & Biotech News (focusing on R&D and early-stage pipelines).
 
-**Queries**:
+**Example Queries** (but these should evolve over time):
 - "novel therapeutic target"
 - "first-in-class modality"
 - "chemical biology drug discovery"
 - "synthetic biology human health"
-- "Peter Schultz Scripps Research" (to monitor relevant mentions)
 
 # 3. Format
 
@@ -46,9 +40,9 @@ Search for the latest breakthroughs (past 24-48 hours) from the following source
     - **The Nuggets**: 3-4 key stories. Each story should have:
         - A punchy headline.
         - 3–5 sentences summarizing the breakthrough, the technology used, and why it matters for human health.
-        - A verified URL for further reading.
+        - A verified URL for further reading (put in the show notes, but not in the script)
     - **Closing**: A brief sign-off.
-- **Length**: Total script should be around 500-700 words (approx. 3-5 minutes of audio).
+- **Length**: Total script should be around 700 words (approx. 5 minutes of audio).
 
 # 4. TTS & distribution
 
