@@ -233,3 +233,29 @@ Commit `7a1fc01` pushed to origin/main.
 The background wrangler-lookup task completed; its results were already incorporated when I switched to the NVM-based PATH for the R2 publish step. Today's run is fully done — both episodes are pushed, audio is in R2, feed is updated.
 === 2026-05-14T04:27:28-07:00 done  calibr-briefing (exit 0) ===
 === 2026-05-15T04:06:21-07:00 start calibr-briefing ===
+Both episodes shipped for Friday, May 15th, 2026. Headlines (5:28) and Spotlight (9:55) generated via Mistral TTS, uploaded to R2, feed updated and validated, commit pushed to main.
+
+## Candidate funnel — 2026-05-15
+
+Sources scanned:
+- Endpoints News, Fierce Biotech, Fierce Pharma, BioPharma Dive, STAT News — all responsive, no source failures
+- Multiple targeted searches on individual stories for depth
+
+Substantive shortlist (after discarding spurious hits):
+- **Regenxbio RGX-202 AAV8 microdystrophin Phase 3 AFFINITY pivotal** — hit primary endpoint but two SAEs cut stock 35%+ — **CHOSEN: spotlight + lead headline**
+- **Aardvark Therapeutics FDA full clinical hold on ARD-101** in Prader-Willi — chosen for headlines
+- **Alumis abandons lonigutamab IGF-1R Tepezza rival** — chosen for headlines (Acelyrin/Foresite chapter close)
+- **Cabaletta $150M raise with Lilly participation + ASGCT RESET-PV pemphigus data** — chosen for headlines
+- **Encoded Therapeutics ETX101 Dravet syndrome 76% seizure reduction at ASGCT** — chosen for headlines
+- **Signant Health acquires Ametris (formerly ActiGraph)** — chosen for headlines
+- **AC Immune CEO Andrea Pfeifer retirement** — chosen for headlines
+- **Abeona pivot to ABO-701 PSMA T cell therapy** — chosen for headlines
+- Biogen tau (BIIB080) advancing despite Phase 2 miss — dropped (covered in prior context; not fresh-enough today)
+- AstraZeneca Imfinzi bladder cancer — dropped (rolled into yesterday's coverage)
+- Supreme Court mifepristone ruling — dropped (not biotech-pipeline relevant)
+- Valneva 10-15% layoffs / CSL guidance cut — dropped (less Calibr-relevant)
+- Trump-Germany pricing pressure — dropped (macro, lower-signal)
+- Makary FDA resignation — already covered in 2026-05-13 spotlight; threaded into today's RGX-202 spotlight rather than re-headlined
+
+Chosen spotlight pick logic: Regenxbio is the largest individual-catalyst clinical readout of the day, sits at the intersection of accelerated-approval surrogate-endpoint mechanics + Makary-resignation regulatory continuity risk + post-Elevidys safety bar — all directly load-bearing for any Calibr biologic IND-enabling program. Strong analytical depth available on competitive positioning vs Sarepta.
+=== 2026-05-15T04:18:55-07:00 done  calibr-briefing (exit 0) ===

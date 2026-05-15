@@ -107,3 +107,4 @@ Receptor & Reason 2026-05-14 shipped. Audio = 14m24s, 6.16 MB. Feed validates. R
 
 10 items chosen, all within the 7-day recency window; no Tier 4 fallback needed. Dedup ledger excluded 8 items previously shipped on 2026-05-13. ClaroAI-Bench (shipped in biomedical-agentic-ai feed, not in this show) was set aside in favor of Open-Rosalind to keep the agentic-AI block fresh.
 === 2026-05-14T04:48:57-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-05-15T04:18:55-07:00 start receptor-and-reason ===
