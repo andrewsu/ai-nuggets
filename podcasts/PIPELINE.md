@@ -45,6 +45,19 @@ look fine on a page can be useless or actively annoying when spoken.
 
 Individual shows may add their own audio conventions in their PROMPT.md.
 
+## Paper-link URLs (show notes / `Paper link:` lines)
+
+`bioRxiv` uses two DOI prefixes — `10.1101/` for legacy posts and
+`10.64898/` for newer posts (the cutover is recent). The prefix is part of
+the URL path: `https://www.biorxiv.org/content/<prefix>/<id>v<n>`. Use
+**the exact prefix the bioRxiv API returns for that DOI** — never
+hardcode `10.1101/`. A wrong prefix yields a real-looking URL that 404s.
+
+The pre-commit hook (`.githooks/check-paper-urls.py`) hits the bioRxiv
+details API and `arxiv.org/abs/` for every new preprint URL in the staged
+diff and fails the commit if any returns "not found". Set
+`GUIDE_SKIP_URL_CHECK=1` to bypass (offline only).
+
 ## TTS & distribution
 
 Voice config lives in each show's `show.toml`:

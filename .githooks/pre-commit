@@ -1,32 +1,35 @@
 #!/usr/bin/env bash
-# Reject commits that contain malformed feed.xml files.
+# Reject commits that contain malformed feed.xml files or fabricated/
+# mistyped bioRxiv/arXiv URLs in newly added content.
 #
-# Triggered when any feed.xml under podcasts/ is staged. Validates the
-# staged blob (not the working tree) for:
-#   1. XML well-formedness — catches unescaped & and similar parse errors.
-#   2. <pubDate> weekday matches the date — strict podcast clients (and
-#      RFC 822) reject feeds whose weekday names disagree with the date.
+# Two checks:
+#   1. feed.xml well-formedness + pubDate weekday correctness, run on any
+#      staged feed.xml. See check-feed.py.
+#   2. bioRxiv/arXiv URLs added by this commit resolve to real papers.
+#      See check-paper-urls.py. Skip with GUIDE_SKIP_URL_CHECK=1.
 
 set -e
 
 HOOK_DIR=$(dirname "$0")
+fail=0
 
 staged_feeds=$(git diff --cached --name-only --diff-filter=ACM \
   | grep -E '(^|/)feed\.xml$' || true)
 
-if [ -z "$staged_feeds" ]; then
-  exit 0
-fi
-
-bad=0
-for f in $staged_feeds; do
-  if ! git show ":$f" | python3 "$HOOK_DIR/check-feed.py" "$f"; then
-    bad=1
+if [ -n "$staged_feeds" ]; then
+  for f in $staged_feeds; do
+    if ! git show ":$f" | python3 "$HOOK_DIR/check-feed.py" "$f"; then
+      fail=1
+    fi
+  done
+  if [ $fail -ne 0 ]; then
+    echo >&2
+    echo "Fix the feed and re-stage. (Common fixes: escape & as &amp;; correct pubDate weekdays.)" >&2
   fi
-done
-
-if [ $bad -ne 0 ]; then
-  echo >&2
-  echo "Fix the feed and re-stage. (Common fixes: escape & as &amp;; correct pubDate weekdays.)" >&2
-  exit 1
 fi
+
+if ! python3 "$HOOK_DIR/check-paper-urls.py"; then
+  fail=1
+fi
+
+exit $fail
