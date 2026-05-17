@@ -332,3 +332,28 @@ Sources:
 - [BioSpace](https://www.biospace.com/)
 - [Clinical Trials Arena](https://www.clinicaltrialsarena.com/news/)
 === 2026-05-16T08:04:19-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-05-17T03:10:13-07:00 start calibr-briefing ===
+Commit landed. The orchestrator will push at the end of the run.
+
+## Run summary — calibr-briefing 2026-05-17 (Sunday)
+
+**Shipped 2 episodes (commit 17e76e7):**
+- Headlines (~6:20): Create Medicines $122M Series B (in vivo CAR-T) / Biogen diranersen tau Phase 2 miss → Phase 3 / BridgeBio Attruby commercial + RWE / ASGCT 2026 Boston wrap / FDA + deal-market forward look
+- Spotlight (~8:49): state of in vivo CAR-T after ASGCT 2026, anchored on Create Medicines raise
+
+**Candidate funnel:**
+
+Sources scanned for May 16–17 dated content (Sunday news cycle):
+- Endpoints, Fierce Biotech, Fierce Pharma, BioPharma Dive, STAT, BioSpace, GEN, Clinical Trials Arena — none had May 16- or 17-dated items; latest content May 15 across the board. Same pattern yesterday's afternoon re-invocation found. PR Newswire and Businesswire dry on May 17 biotech/pharma releases.
+
+Substantive May 14–15 items uncovered in Saturday's lineup (chose from):
+- Create Medicines $122M Series B (May 14) — chosen, spotlight + headline #1
+- Biogen diranersen tau Phase 2 CELIA miss → Phase 3 (May 14) — chosen, headline #2
+- BridgeBio Attruby Heart Failure 2026 + 54-month + RWE + Q1 (May 9–15 rolling) — chosen, headline #3
+- Endpoints ASGCT "in vivo CAR-T everywhere but still preclinical" dispatch (May 14) — woven into spotlight + headline #4
+- Genmab dropping antibody assets (May 15) — passed (portfolio housekeeping, no Calibr read-through)
+- NeuroVision/Durin medtech acquisition (May 15) — passed (medtech, out of scope)
+- Carl Sailer sponsored AI commentary (May 15) — passed (sponsored, not news)
+
+Spotlight pick rationale: Create Medicines raise + ASGCT wrap together cover Calibr's most-tracked focus area (in vivo CAR-T) at a moment when the field's capital and platform race is the most concrete it has been all year, with explicit Calibr read-throughs on tropism engineering, durability mechanism, autoimmune indication wedge, and bundled-platform deal positioning.
+=== 2026-05-17T03:25:27-07:00 done  calibr-briefing (exit 0) ===

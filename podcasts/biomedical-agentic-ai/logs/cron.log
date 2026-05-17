@@ -744,3 +744,29 @@ Episode shipped. Final summary follows.
 Why S2F-agent beat the rest for the second slot: it pairs thematically with this morning's Talk2QSP (both are "agent as fragmentation-tax absorber" but in different biomedical domains — pharmacology models vs. genomics foundation models), the skill-grounding pattern is durable and travels, and it integrates 11 named SOTA S2F models (AlphaGenome, Borzoi, Evo 2 + 8 more) — directly in Su Lab's agentic-bioinformatics wheelhouse.
 === 2026-05-16T07:58:24-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-05-17T03:00:13-07:00 start biomedical-agentic-ai ===
+Episode shipped — committed as `c7c3869`, no push (orchestrator handles that).
+
+## Today's pick (2026-05-17)
+
+**Bio-BLIP: A Multimodal Architecture for Transferable Reasoning in Genomic Variant Interpretation** — Gupta, Buendia, Kundaje, Leskovec (Stanford), bioRxiv 10.64898/2026.05.12.724740, v1 posted 2026-05-15.
+
+Ports the BLIP-2 Q-former pattern from vision-language into multi-omics: one master Q-former integrates DNA + gene + protein + text encoders into a fixed-length prefix for a frozen LLM. Pretrained on human variant annotation (+29.8% over frontier LLMs), generalizes zero-shot to regulatory variant prioritization and target gene prediction. Output is transparent reasoning traces — the grounded multimodal substrate the current agentic-biomedical-AI wave (S2F-agent, Talk2QSP, MechAInistic) actually needs to escape lossy textification.
+
+## Candidate funnel
+
+- **bioRxiv** (2026-05-15 → 2026-05-17): 426 entries scanned across 15 paginated pages → 417 unique → 28 keyword hits → 5-paper substantive shortlist after discarding spurious "agent" matches (chemical/infectious agents) and out-of-scope LLM-and-brain neuroscience.
+  - **Bio-BLIP** (10.64898/2026.05.12.724740, Stanford Kundaje + Leskovec) — **CHOSEN**
+  - Metabolic Self-Organization in Constrained LLMs (10.64898/2026.05.13.724883, CAS) — speculative
+  - Hidden State Genomics SAE (10.64898/2026.05.13.725007, Georgetown) — strong runner-up
+  - Biological foundation models annotation blind spots (10.64898/2026.05.15.724572, Dartmouth) — narrow domain
+  - Do Larger Models Really Win in Drug Discovery (10.64898/2026.04.29.721568, v2) — v1 outside recency
+- **arXiv**: prefetch cache rate-limited (14-byte "Rate exceeded"); fell back to WebSearch — only older indexed results (Apr 2025, May 2025) surfaced, nothing fresh in the 2-day window.
+- **ChemRxiv** via WebSearch: no biomedical agentic chemistry preprints in window.
+- **Policy feeds** (ARPA-H, NIH, NSF, HHS): no fresh agentic-AI biomedical announcements May 16–17.
+
+## Artifacts
+- Script: `podcasts/biomedical-agentic-ai/scripts/2026-05-17-bio-blip-multimodal-variant-reasoning.md`
+- Audio: 302s / 2.42 MB (Mistral Paul Neutral, 3 chunks)
+- R2: `podcasts/biomedical-agentic-ai/episodes/2026-05-17-bio-blip-multimodal-variant-reasoning.mp3`
+- Feed: 90 items, parses clean
+=== 2026-05-17T03:07:50-07:00 done  biomedical-agentic-ai (exit 0) ===

@@ -209,3 +209,5 @@ Commit landed. Per PIPELINE.md, the orchestrator handles the push.
 **Episode:** `2026-05-16-receptor-and-reason-toolbox.mp3` — 15:08 duration, 7,261,248 bytes, committed and published to R2.
 === 2026-05-16T08:24:50-07:00 done  receptor-and-reason (exit 0) ===
 === 2026-05-17T03:20:13-07:00 start receptor-and-reason ===
+Episode is already shipped and committed — that's the background `find npx/wrangler` task finishing late, no action needed.
+=== 2026-05-17T03:40:39-07:00 done  receptor-and-reason (exit 0) ===

@@ -38,3 +38,41 @@ Episode committed (mp3 lives in R2; the bucket key matches the Worker URL). Let 
 **Source health:** All sources responsive. bioRxiv full-page WebFetch returned 403 from this IP, but the bioRxiv API (`api.biorxiv.org`) responded normally for both detail lookups and date-range scans; no recall hit. No retries needed elsewhere.
 === 2026-05-16T08:32:10-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-05-17T03:30:13-07:00 start scripps-biomed-brief ===
+Committed. Final summary follows.
+
+---
+
+**Commit:** `5e3b6f6` — Episode: Scripps Biomedical Brief 2026-05-17 — Daniels lab synthetic cytokine receptors for programmable macrophage cell therapy, nitazoxanide repurposing for HHT via BMP9-ALK1-SMAD, Saelices CNS-specific ATTR fibril folds, Helikar MechAInistic LLM-multi-agent metabolic modeling.
+
+**Artifacts:**
+- Script: `podcasts/scripps-biomed-brief/scripts/2026-05-17-programmable-macrophages-repurposing-brain-amyloid-agentic-ai.md` (~700 words)
+- Audio: `2026-05-17-...mp3` — 1,890,473 bytes, 236.3 seconds, Mistral `voxtral-mini-tts-2603` / `en_paul_neutral` in two chunks (127.8s + 101.2s)
+- R2: uploaded to `ai-nuggets-episodes` bucket via `wrangler r2 object put`
+- Feed: new `<item>` prepended; XML validates
+
+(Push skipped per shared PIPELINE.md — only the orchestrator pushes.)
+
+## Candidate funnel — Sunday May 17, 2026
+
+**bioRxiv (chemical biology + pharmacology and toxicology + bioengineering + synthetic biology, posted May 13–15):**
+- Scanned ~30 candidates across the date-windowed categories. Substantive shortlist after discarding cytoskeleton tools, neuroscience-only, mycotoxin tox, and developmental biology papers without a target/modality angle:
+  - **CHOSEN — Lunger et al. (Daniels lab, Stanford), "Programmable synthetic cytokine receptors polarize macrophages to user-defined functional states"** — https://www.biorxiv.org/content/10.64898/2026.05.12.724672v1 (synthetic biology / cell therapy modality)
+  - **CHOSEN — Ruiz/Marambaud/Escande (Institut Pasteur de Montevideo), "Nitazoxanide activates BMP9-ALK1-SMAD signaling cascade and improves HHT vascular pathology"** — https://www.biorxiv.org/content/10.64898/2026.05.12.724733v1 (drug repurposing, rare vascular disease)
+  - **CHOSEN — Saelices (UT Southwestern), "Transthyretin amyloid fibrils adopt distinct folds in the brain"** — https://www.biorxiv.org/content/10.64898/2026.05.12.724695v1 (structural biology / CNS ATTR therapeutic design)
+  - **CHOSEN — Loecker et al. (Helikar lab, U Nebraska–Lincoln), "MechAInistic: LLM-guided Multi-Agent System for Reasoning over Genome-Scale Constraint-Based Metabolic Models"** — https://www.biorxiv.org/content/10.64898/2026.05.11.723319v1 (agentic AI for target nomination)
+  - Love et al., "Engineering high-titer lentiviral vectors for robust RNA gene circuits" — 30-fold titer improvement for gene-circuit delivery; strong tooling paper, held in reserve.
+  - de los Santos et al., "Structure-led exploration of the metagenome yields novel RNA-guided nucleases with broad PAM diversity" — gene-editing modality expansion, held in reserve.
+  - Fu et al., pan-cancer cancer-testis gene landscape — immunotherapy target list, more of a database paper.
+
+**Industry news (Endpoints, Fierce Biotech, STAT, BioPharma Dive scanned May 14–17):**
+- Endpoints (May 16): "ASGCT dispatch: In vivo CAR-T is everywhere" — overview of the field. **Deprioritized:** yesterday's Scripps brief and today's Calibr brief have already covered in vivo CAR-T (Tessera + Azalea on Scripps, Create Medicines on Calibr); duplicating would be churn.
+- STAT (May 13): Encoded Therapeutics Dravet — sirolimus safety vs efficacy tradeoff in AAV gene therapy. Strong cross-program implication, **deprioritized for paywall (could not verify quantitative details)**.
+- Fierce (May 15): "Model Meds aims to 'discover new colors'" AI drug discovery — repeat of platform piece already triaged yesterday in favor of the Shoichet baseline paper.
+- STAT (May 14): Biogen Diranersen tau Phase 2 — **already covered today on Calibr brief**, skipped to avoid show overlap.
+- Endpoints (May 14): Regenxbio Duchenne, AstraZeneca bladder — late-stage clinical, not modality stories.
+- Endpoints (May 16): BeOne next-gen BCL2 FDA approval — competitive me-too, skipped.
+
+**Conference late-breakers:** ASGCT 2026 closed May 15; no fresh closing-day or post-meeting late-breaker that wasn't already covered in yesterday's Scripps brief or today's Calibr brief.
+
+**Source health:** bioRxiv full-page WebFetch returned 403 (consistent with yesterday); `api.biorxiv.org` details endpoint responded normally for all four chosen papers and for the date-range scan. All news sites responsive on first attempt. No retries needed.
+=== 2026-05-17T03:37:50-07:00 done  scripps-biomed-brief (exit 0) ===
