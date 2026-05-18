@@ -358,3 +358,30 @@ Substantive May 14–15 items uncovered in Saturday's lineup (chose from):
 Spotlight pick rationale: Create Medicines raise + ASGCT wrap together cover Calibr's most-tracked focus area (in vivo CAR-T) at a moment when the field's capital and platform race is the most concrete it has been all year, with explicit Calibr read-throughs on tropism engineering, durability mechanism, autoimmune indication wedge, and bundled-platform deal positioning.
 === 2026-05-17T03:25:27-07:00 done  calibr-briefing (exit 0) ===
 === 2026-05-18T03:10:03-07:00 start calibr-briefing ===
+Both episodes shipped. Headlines mp3 is 6:46, spotlight is 10:19; both uploaded to R2 and committed (no push — orchestrator handles that).
+
+## Candidate funnel — 2026-05-18
+
+Sources surveyed (failures noted): Endpoints, Fierce Biotech, BioPharma Dive, STAT — all responded; no source-side outages today.
+
+Substantive shortlist (after discarding spurious matches):
+
+- AstraZeneca Baxfendy (baxdrostat) FDA-approved today as first aldosterone synthase inhibitor — https://www.bloomberg.com/news/articles/2026-05-18/astra-s-potential-blockbuster-blood-pressure-pill-approved-in-us — **CHOSEN (headlines #1 + today's spotlight)**
+- Regeneron fianlimab + cemiplimab Phase 3 melanoma misses PFS vs Keytruda — https://www.fiercebiotech.com/biotech/regeneron-rocked-failure-defining-catalyst-pivotal-melanoma-trial-misses — **CHOSEN (headlines #2)**
+- FDA CDER acting director Tracy Beth Høeg fired May 15 (replaced by Davis) — https://endpoints.news/cder-chief-hoeg-expected-to-leave-fda-according-to-source/ — **CHOSEN (headlines #3)**
+- Aardvark Therapeutics ARD-101 FDA full clinical hold in Prader-Willi (cardiac signal) — https://www.biopharmadive.com/news/aardvark-fda-hold-prader-willi-trial/820338/ — **CHOSEN (headlines #4)**
+- Fierce in vivo CAR-T M&A landscape analysis after Lilly/Kelonia + STAT "China question" special report — https://www.fiercebiotech.com/biotech/frenzied-feeding-playing-defense-and-disruption-lillys-kelonia-acquisition-and-future-vivo — **CHOSEN (headlines #5, strategic landscape + forward-look)**
+- Ipsen long-acting botulinum toxin Phase 3 advance (cosmetic) — not chosen, off Travis's focus areas
+- BioPharma Dive Vertex/JournAVX/Latigo pain drug pivotal moment feature — not chosen, not breaking news
+- AstraZeneca pain-related items, Novartis layoffs — not chosen, older/off-topic
+
+Sources:
+- [Bloomberg — Astra's blockbuster BP pill approved](https://www.bloomberg.com/news/articles/2026-05-18/astra-s-potential-blockbuster-blood-pressure-pill-approved-in-us)
+- [AstraZeneca press releases — baxdrostat BaxHTN and Bax24 Phase 3](https://www.astrazeneca.com/media-centre/press-releases/2025/baxdrostat-met-primary-and-all-secondary-endpts-in-baxhtn-phiii-trial.html)
+- [Fierce Biotech — Regeneron fianlimab melanoma fail](https://www.fiercebiotech.com/biotech/regeneron-rocked-failure-defining-catalyst-pivotal-melanoma-trial-misses)
+- [Endpoints — CDER chief Høeg fired](https://endpoints.news/cder-chief-hoeg-expected-to-leave-fda-according-to-source/)
+- [BioPharma Dive — Aardvark FDA hold](https://www.biopharmadive.com/news/aardvark-fda-hold-prader-willi-trial/820338/)
+- [Fierce Biotech — After Lilly Kelonia, any in vivo CAR-T left to buy](https://www.fiercebiotech.com/biotech/frenzied-feeding-playing-defense-and-disruption-lillys-kelonia-acquisition-and-future-vivo)
+- [STAT — The China question is tearing biotech apart](https://www.statnews.com/category/biotech/)
+- [Citeline — AstraZeneca moves ahead of Mineralys with PRV](https://insights.citeline.com/scrip/new-products/astrazeneca-moves-ahead-of-mineralys-with-fast-baxdrostat-review-E2RZKYB5CNBQNPNLVKFJTP7HWM/)
+=== 2026-05-18T03:22:16-07:00 done  calibr-briefing (exit 0) ===

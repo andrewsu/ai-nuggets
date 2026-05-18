@@ -77,3 +77,24 @@ Committed. Final summary follows.
 **Source health:** bioRxiv full-page WebFetch returned 403 (consistent with yesterday); `api.biorxiv.org` details endpoint responded normally for all four chosen papers and for the date-range scan. All news sites responsive on first attempt. No retries needed.
 === 2026-05-17T03:37:50-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-05-18T03:30:03-07:00 start scripps-biomed-brief ===
+Today's Scripps Biomedical Brief is shipped — script written, audio generated (Mistral primary, 238s/1.9MB), R2 uploaded, feed updated, committed under the orchestrator lock (no push, per pipeline).
+
+## Candidate funnel (2026-05-18)
+
+Sources scanned:
+- **bioRxiv (May 14–17 windows)** — Pharmacology/Toxicology and Chemical Biology categories via the details API. Endpoint at `/collection/...` returned 403 from this IP; pivoted to per-day `api.biorxiv.org/details/biorxiv/<date>/<date>/0` which worked.
+- **Endpoints News, Fierce Biotech, STAT** — homepage scans for May 17–18.
+- **Web search** — Nature/Science/Cell and JACS/Angewandte for novel-target/PROTAC/molecular-glue items.
+
+Substantive shortlist (after dropping spurious matches and items already covered today by sibling shows):
+- ✅ Wei et al. (Schnabl, UCSD) — GR-7 non-absorbable microbial BSH inhibitor for MASH — *chosen*
+- ✅ Fang et al. (Zhang, Shanghai Cell Therapy Group) — halotolerant chimeric T7 RNAP, dsRNA <0.001%, 15 mg/mL circRNA — *chosen*
+- ✅ Love/Lende-Dorn/Galloway (MIT) — high-titer two-gene lentiviral vectors carrying RNA gene circuits, 30-fold titer lift — *chosen*
+- ✅ Anderson et al. (Vornhagen, Indiana) — antiviral library repurposed for Klebsiella gut decolonization — *chosen*
+- ❌ Kurozumi et al. — Evo 2 for cardiomyopathy variant interpretation (AI/genomics, weaker drug-discovery hook)
+- ❌ AstraZeneca Baxdrostat FDA approval — already today's Calibr spotlight
+- ❌ Regeneron fianlimab Phase 3 melanoma miss — corporate clinical news, off-tone for Scripps
+- ❌ Nature Chemical Biology cinchona alkaloid biosynthesis News & Views — basic biosynthesis without translational angle
+
+Skipped sources / failures: bioRxiv `collection/*` pages 403 (worked around via per-day details API); no specific Nature/Science/Cell match in the 24–48h window.
+=== 2026-05-18T03:36:59-07:00 done  scripps-biomed-brief (exit 0) ===

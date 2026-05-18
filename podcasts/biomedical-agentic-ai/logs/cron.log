@@ -771,3 +771,19 @@ Ports the BLIP-2 Q-former pattern from vision-language into multi-omics: one mas
 - Feed: 90 items, parses clean
 === 2026-05-17T03:07:50-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-05-18T03:00:03-07:00 start biomedical-agentic-ai ===
+Episode shipped: 2026-05-18 TogoMCP. Audio is 322s, 2,574,045 bytes, generated via Mistral TTS primary; mp3 published to R2 and committed (no push — orchestrator handles that).
+
+Candidate funnel (this run):
+
+- bioRxiv: 130 entries scanned across 2026-05-17 to 2026-05-18 (paginated full collection, 5 pages of 30 each), 25 relevance-filter hits, substantive shortlist of 4:
+  - TogoMCP — Schema-guided MCP for life-science KGs (10.64898/2026.03.19.713030 v2) ← **chosen**
+  - Evaluating open LLMs for agentic analysis orchestration in a typical biomedical lab — Nekrutenko / Penn State Galaxy (10.64898/2026.05.13.724985 v1)
+  - Sipobe-PPA — Rescuing true protein binders from AI hallucinations via zero-shot ensemble statistical physics scoring (10.64898/2026.05.11.724213)
+  - EpiReasoner — AI framework for phenotype-to-genotype reasoning in plant epidermal development (10.64898/2026.05.13.724792)
+- arXiv: prefetch cache 14-byte "Rate exceeded"; live retry also 429'd (one fallback used per rate-limit rule); WebSearch site:arxiv.org surfaced only older indexed hits (NeuroAgent 2605.06584, AgentRx 2605.10286, Agentic AI in Healthcare 2602.04813), none beat the bioRxiv pick on recency.
+- ChemRxiv via WebSearch: nothing biomedically agentic inside the 2-day window (closest was a Feb-2026 MCP-for-computational-chemistry preprint).
+- News / GTC / FDA / Amazon: all surfaced but tied to March–April 2026 announcements, outside the window.
+- ARPA-H: most recent items 2026-05-11, 05-07, 05-05; none agentic-AI-specific. NIH/NSF/HHS: nothing fresh in the window.
+
+Chosen because TogoMCP hits Andrew's intersection — knowledge graphs, ontologies, open-data integration, MCP — and the ablation result ("schema context moves the mean, orchestration only narrows variance") is the kind of generalizable engineering insight that travels well past the specific paper.
+=== 2026-05-18T03:09:40-07:00 done  biomedical-agentic-ai (exit 0) ===

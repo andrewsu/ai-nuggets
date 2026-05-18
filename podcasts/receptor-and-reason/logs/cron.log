@@ -212,3 +212,28 @@ Commit landed. Per PIPELINE.md, the orchestrator handles the push.
 Episode is already shipped and committed — that's the background `find npx/wrangler` task finishing late, no action needed.
 === 2026-05-17T03:40:39-07:00 done  receptor-and-reason (exit 0) ===
 === 2026-05-18T03:20:03-07:00 start receptor-and-reason ===
+Episode 7 of Receptor & Reason is shipped: 17:36 spoken, ten items, audio published to R2, feed updated, dedup ledger appended, committed (orchestrator handles push).
+
+**Candidate funnel (today's run, 2026-05-18):**
+
+- bioRxiv (last 4 days, 2026-05-15 → 2026-05-18): 561 total / 415 new → 544 unique by DOI after version-dedup → 58 survived strict neuropsychopharm filter, 44 survived agentic-AI + bio filter
+- arXiv listing API: HTTP 429 from this IP across three attempts at the policy-allowed backoff intervals (per `PIPELINE.md`); fell back to `site:arxiv.org` web search per `PROMPT.md` Tier 2 rule
+- Psychiatric Times: only May-pipeline articles surfaced were items already covered (centanafadine NDA from January, etc.); no fresh items in the 7-day window past what previous episodes already shipped
+- Nature NPP / Molecular Psychiatry article-listing pages: 303-redirected to `idp.nature.com` auth gate without credentials; web search confirmed activity but did not surface specific dated items
+- Tier 4 (seminal fallback) not activated — Tier 1–3 yielded ≥10 fresh items
+
+**Substantive shortlist (post-spurious-match cleanup, all bioRxiv unless noted):**
+
+- *Spatial transcriptomics implicates thalamus and cortex in ASD/SZ* (10.64898/2026.05.15.724759) — **chosen, opener**
+- *Glutamatergic neuron-tumor synapses in glioblastoma (so-HOTT, AMPA/kainate)* (10.64898/2026.05.14.725216) — **chosen**
+- *Cerebellar perturbation impairs working memory (TMS+fMRI)* (10.64898/2026.05.14.724968) — **chosen**
+- *PD neuropathology meta-analysis, LC ≈ SNc loss* (10.64898/2026.05.13.724902) — **chosen**
+- *Near-Infrared-II Chemo-Optogenetics for DBS (HaloNeu)* (10.64898/2026.05.13.724823) — **chosen**
+- *Buprenorphine depresses neonatal respiratory chemoreflexes ± naloxone* (10.64898/2026.05.13.724975) — **chosen**
+- *Evaluating open LLMs for agentic analysis orchestration (qwen3.6:27b vs Opus)* (10.64898/2026.05.13.724985) — **chosen**
+- *Do Larger Models Really Win in Drug Discovery? (156-fold benchmark)* (10.64898/2026.04.29.721568) — **chosen**
+- *DL chemical perturbation models don't use drug molecular features (L1000 ablation)* (10.64898/2026.05.13.724458) — **chosen**
+- *ToolMol: Evolutionary Agentic Framework for Drug Discovery* (arXiv 2605.12784) — **chosen, closer**
+
+Also surveyed but not picked today: ML surrogate models for single-fiber DBS activation (10.64898/2026.05.12.724686 — strong but redundant with HaloNeu DBS item); γ-secretase / VCTF1 brain angiogenesis (10.64898/2026.05.12.724648 — solid AD mechanism but cell-biology-heavy without a clear pharma handle this week); gut microbiome × SNCA PD biomarker (10.64898/2026.05.12.724602 — interesting but Tier 1 already heavy on PD); purinergic P2RY1 gliomagenesis (10.64898/2026.05.11.724407 — overlapping with GBM-synapses item); load-induced bistable energetic model of SNc vulnerability (10.1101/2025.11.16.688654 — theory-only, no fresh experimental data); digoxin / BaxΔ2 neuronal death (10.64898/2026.03.16.712124 — author concedes therapeutic non-viability); AlphaGenome × somatic mutation accumulation (10.64898/2026.05.10.724136 — primarily methods exploration); PhysicianBench EHR LLM agents (arXiv 2605.02240 — 46% best-case felt too low to lead with this week without an emerging-positive-trend story).
+=== 2026-05-18T03:36:21-07:00 done  receptor-and-reason (exit 0) ===
