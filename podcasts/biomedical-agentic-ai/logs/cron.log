@@ -788,3 +788,27 @@ Candidate funnel (this run):
 Chosen because TogoMCP hits Andrew's intersection — knowledge graphs, ontologies, open-data integration, MCP — and the ablation result ("schema context moves the mean, orchestration only narrows variance") is the kind of generalizable engineering insight that travels well past the specific paper.
 === 2026-05-18T03:09:40-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-05-19T03:00:04-07:00 start biomedical-agentic-ai ===
+Episode shipped. Summary:
+
+**Pick:** "Evaluating open LLMs for agentic analysis orchestration in a typical biomedical lab" — Anton Nekrutenko (Penn State / Galaxy), bioRxiv 10.64898/2026.05.13.724985, posted 2026-05-18.
+
+**Why this won:** Direct hit on Su Lab interests — agentic AI applied to bioinformatics, open-weight models, open-science release of plans/harness/scoring artifacts, Galaxy-lineage credibility. The empirical claim is sharp and actionable: with Claude Opus fixed as the planner for per-sample variant calling, Qwen 3.6 27B reproduces frontier accuracy on every plan and matches Opus cell-for-cell on a 36-cell error-injection matrix, on sub-$2,000 Jetson or Mac Mini hardware. The planner-frontier, implementer-local cost-curve flip is exactly the engineering insight academic compbio labs are budgeting around right now.
+
+**Pipeline status:**
+- Script: `scripts/2026-05-19-nekrutenko-open-llm-agentic-biomedical-lab.md`
+- Audio: 287s mp3, Mistral primary (no fallback needed), 2,295,475 bytes
+- R2: uploaded via local `worker/node_modules/.bin/wrangler` (had to bypass `publish_episode.sh` because `npx` is not on PATH — flag this to fix in the script)
+- Feed: validated, item inserted at top
+- Commit: 43a4cdc, under flock lock, no push (orchestrator handles)
+
+**Candidate funnel (2026-05-18:2026-05-19):**
+- bioRxiv: 326 papers in window, 116 fetched across pages, 20 AI/ML-related, 10 agent/LLM/KG, shortlist of 3:
+  - **Nekrutenko — Open LLMs for agentic biomedical analysis** ← CHOSEN
+  - EpiReasoner (phenotype-to-genotype reasoning, plant epidermal cells, Zhejiang) — strong but plant-domain
+  - Elab2ARC (ELN-to-ARC FAIR converter, Düsseldorf) — open-science aligned but LLM is auxiliary
+- arXiv shared cache: 500 entries, 168 biomed+agent matches; clinical-AI hits (Pluralism auditing, Wasserstein medical VQA, histopathology in-context coresets) noted but none beat Nekrutenko for the show's lane
+- ChemRxiv: nothing in 2-day window
+- ARPA-H/NIH/NSF/HHS: ARPA-H Sources-Sought on optic-nerve imaging (2026-05-18) noted but not agentic-AI
+
+**One pipeline note worth flagging:** `scripts/publish_episode.sh` calls `npx` which isn't on this machine's PATH. The local `worker/node_modules/.bin/wrangler` works directly. Worth a one-line patch later.
+=== 2026-05-19T03:07:13-07:00 done  biomedical-agentic-ai (exit 0) ===

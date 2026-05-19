@@ -386,3 +386,27 @@ Sources:
 - [Citeline — AstraZeneca moves ahead of Mineralys with PRV](https://insights.citeline.com/scrip/new-products/astrazeneca-moves-ahead-of-mineralys-with-fast-baxdrostat-review-E2RZKYB5CNBQNPNLVKFJTP7HWM/)
 === 2026-05-18T03:22:16-07:00 done  calibr-briefing (exit 0) ===
 === 2026-05-19T03:10:04-07:00 start calibr-briefing ===
+Both episodes shipped. Commit `ae57036`. Push deferred to the orchestrator.
+
+Candidate funnel:
+
+- **Endpoints News** — scanned, 5 fresh items, all relevant: sac-TMT TroFuse-005 (Merck/Kelun), Regeneron-Parabilis $2.3B AHC deal, Amgen Tavneos Japan deaths, SCOTUS IRA, FDA covid vax deaths report
+- **Fierce Biotech** — scanned, 4 relevant items: Regeneron melanoma (covered yesterday), Vincentage VCT220 oral GLP-1 China, BioMarin BMN 401 ENERGY-3 mixed Phase 3, Fierce 15 nominations (skipped)
+- **BioPharma Dive** — scanned: Merck-Kelun sac-TMT (already on shortlist), AZ Baxfendy (covered yesterday), Regeneron fianlimab (covered yesterday), India pharma piece (skipped, not relevant), FDA leadership turmoil rollup (already covered)
+- **STAT News** — scanned: AZ Baxfendy (already), SCOTUS IRA (on shortlist), China-tearing-biotech (covered in 5/12 BMS-Hengrui spotlight), UK pricing politics (skipped)
+- **PR/Trial sources** — Parabilis press release + BusinessWire, Merck investor confirmation, BioMarin investor confirmation, Amgen statement
+
+Shortlist after dedup:
+
+- Merck/Kelun sac-TMT TroFuse-005 Phase 3 win in endometrial cancer — CHOSEN (headline #1)
+- BioMarin BMN 401 ENERGY-3 mixed Phase 3 — CHOSEN (headline #2)
+- Amgen Tavneos Japan safety controversy — CHOSEN (headline #3)
+- SCOTUS IRA cert denial — CHOSEN (headline #4)
+- Regeneron-Parabilis AHC deal — CHOSEN (headline #5 + SPOTLIGHT)
+- Vincentage VCT220 oral GLP-1 Phase 3 — skipped (China-specific GLP-1, Foundayo angle covered indirectly)
+- Sana SG293 ASGCT preclinical — skipped (covered in 5/17 in vivo CAR-T landscape spotlight)
+
+Source-side failures: none.
+
+Files committed: scripts + episodes + feed.xml updated; mp3s uploaded to R2 (`ai-nuggets-episodes` bucket via wrangler, both `Upload complete`).
+=== 2026-05-19T03:23:37-07:00 done  calibr-briefing (exit 0) ===

@@ -99,3 +99,30 @@ Substantive shortlist (after dropping spurious matches and items already covered
 Skipped sources / failures: bioRxiv `collection/*` pages 403 (worked around via per-day details API); no specific Nature/Science/Cell match in the 24–48h window.
 === 2026-05-18T03:36:59-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-05-19T03:30:04-07:00 start scripps-biomed-brief ===
+Episode committed. Final summary for the cron log:
+
+Today's Scripps Biomedical Brief is shipped — script written, audio generated (Mistral primary Paul Neutral, 311s/2.5MB), R2 uploaded via wrangler, feed updated, committed under the orchestrator lock (no push, per pipeline).
+
+## Candidate funnel (2026-05-19)
+
+Sources scanned:
+- **bioRxiv (May 17–19 windows)** — Chemical Biology, Pharmacology/Toxicology, Bioengineering, Biochemistry, Biophysics, Cancer Biology categories. `/collection/*` pages returned 403 (consistent with the past two days from this IP); pivoted to `api.biorxiv.org/details/biorxiv/2026-05-17/2026-05-19/<cursor>` paginated through ~240 records and got full coverage.
+- **Endpoints News, Fierce Biotech** — homepages for May 18–19. Endpoints redirected `www.endpts.com` → `endpoints.news` (followed).
+- **Sibling-show transcripts read first** to avoid overlap: Calibr brief covered Merck/Kelun sac-TMT TroFuse-005, BioMarin BMN 401, Amgen Tavneos Japan, SCOTUS-IRA, Regeneron-Parabilis $2.3B platform deal. Receptor & Reason covered psilocybin striatal dopamine, astrocytic D1 cocaine, oxycodone allodynia in HS rats, p35-Cdk5 ADHD, HPL-003 deuterated psilocin, Lancet Psychiatry antidepressants/pregnancy, mesolimbic representation learning, multiscale Parkinson's oscillations, tau-aggregating tRNA fragments, BiomniBench agentic eval.
+
+Substantive shortlist (after dropping spurious matches, items in the four-day rolling window, and items already covered by sibling shows today):
+- ✅ Schilling et al. (Antebi, Max Planck Inst. for Biology of Ageing) — mTOR/raga-1/RRAGA → dafachronic acid → DAF-12 (FXR) longevity axis, DHS-26/DHRS1 as conserved effector — *chosen*
+- ✅ Zhou et al. (Qiao, Tianjin) — TAS2R14 cryo-EM with three agonists, cholesterol hemisuccinate as new orthosteric agonist — *chosen*
+- ✅ Al Saneh, Gissot, Ahern (Iowa) — scAAV2/9-delivered suppressor tRNA for UGA stop codons in mouse brain — *chosen*
+- ✅ Li et al. (Le Fur, MGH Martinos) — bioorthogonal turn-on fluorophore for lysyl oxidase activity — *chosen*
+- ❌ Sarkar (Arizona State) — collagen-bound MMP1 unique-conformation drug design; nice framework but compound-library screening only, no in vitro validation yet
+- ❌ Hong (MoleculeMind) — Sipobe-PPA rescuing AI hallucinations from de novo binder pipelines; tooling paper, no wet-lab confirmation
+- ❌ Simecek (CEITEC) — ESM3 knotted protein design; interesting protein engineering but no therapeutic angle yet
+- ❌ Finol-Urdaneta (Wollongong) — CACNA1G missense variant calibration via patch-clamp; useful for clinical genomics, narrow modality interest
+- ❌ Evo 2 cardiomyopathy variants — AI variant interpretation, lighter on drug-discovery hook
+- ❌ Tumor-derived mitochondria → SPHK2-S1P → CD8+ T cell cytotoxicity — provocative immunotherapy angle but mechanism-of-action paper, no therapeutic candidate
+- ❌ Programmable UGA repair already covered drug-development side — picked over the others on tractability + sup-tRNA modality importance
+- ❌ Industry: Sanofi/Wave AATD competing programs (clinical readouts only), Relay PI3Kα for blood vessel disorders (early data, off-Scripps-tone), Ipsen long-acting wrinkle injectable (cosmetic, off-tone), BioMarin Inozyme miss (already on Calibr)
+
+**Source health:** bioRxiv `/collection/*` 403 (consistent multi-day from this IP), worked around via per-date `details/biorxiv/<from>/<to>/<cursor>` API which responded normally. Endpoints required one redirect hop. R2 publish initially failed because `npx` is not on the default PATH for this shell; resolved by sourcing `~/.nvm/versions/node/v24.14.0/bin` and re-running `scripts/publish_episode.sh` — upload completed via worker/node_modules wrangler 3.114.17. Worth fixing in `publish_episode.sh` so the runner can find npx without a manual PATH export.
+=== 2026-05-19T03:38:07-07:00 done  scripps-biomed-brief (exit 0) ===

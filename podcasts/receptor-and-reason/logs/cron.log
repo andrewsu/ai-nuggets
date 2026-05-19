@@ -238,3 +238,32 @@ Episode 7 of Receptor & Reason is shipped: 17:36 spoken, ten items, audio publis
 Also surveyed but not picked today: ML surrogate models for single-fiber DBS activation (10.64898/2026.05.12.724686 — strong but redundant with HaloNeu DBS item); γ-secretase / VCTF1 brain angiogenesis (10.64898/2026.05.12.724648 — solid AD mechanism but cell-biology-heavy without a clear pharma handle this week); gut microbiome × SNCA PD biomarker (10.64898/2026.05.12.724602 — interesting but Tier 1 already heavy on PD); purinergic P2RY1 gliomagenesis (10.64898/2026.05.11.724407 — overlapping with GBM-synapses item); load-induced bistable energetic model of SNc vulnerability (10.1101/2025.11.16.688654 — theory-only, no fresh experimental data); digoxin / BaxΔ2 neuronal death (10.64898/2026.03.16.712124 — author concedes therapeutic non-viability); AlphaGenome × somatic mutation accumulation (10.64898/2026.05.10.724136 — primarily methods exploration); PhysicianBench EHR LLM agents (arXiv 2605.02240 — 46% best-case felt too low to lead with this week without an emerging-positive-trend story).
 === 2026-05-18T03:36:21-07:00 done  receptor-and-reason (exit 0) ===
 === 2026-05-19T03:20:04-07:00 start receptor-and-reason ===
+Commit landed. Episode shipped — orchestrator will push at end of run.
+
+---
+
+**Today's slate (May 19, 2026):**
+
+Candidate funnel:
+- **bioRxiv** (neuroscience / pharmacology / bioinformatics / behavior, 2026-05-12 to 2026-05-19): 1,788 items scanned (60 pages × 30), 242 surviving relevance filter after dedup against shipped ledger (70 prior items)
+- **arXiv** (cs.AI/cs.CL/cs.MA/q-bio): 500 entries in cache, 110 with biomedical+agentic keyword overlap in the window, after dedup
+- **Psychiatric Times** (last 7 days): 5 fresh items
+- **Nature NPP / Molecular Psychiatry**: 403 from this IP — could not fetch listings directly; surfaced relevant items via WebSearch instead
+- **Lancet Psychiatry**: surfaced via Psychiatric Times follow-on + WebSearch
+
+Substantive shortlist (after pruning spurious keyword matches):
+- ✅ Foldi/Monash — Psilocybin reshapes food reward learning through striatal dopamine (bioRxiv 2026.05.14.725265)
+- ✅ Dong/Pittsburgh — Astrocytic D1 dopamine in cocaine seeking (bioRxiv 2026.05.13.724947)
+- ✅ George/UCSD — Oxycodone withdrawal allodynia in HS rats (bioRxiv 2026.05.14.725258)
+- ✅ Paglini/INIMEC — p35-KO ADHD with methylphenidate/fluoxetine (bioRxiv 2025.12.23.696253v3, posted 2026-05-18)
+- ✅ Psychiatric Times — HPL-003 deuterated psilocin + federal psychedelic backing (May 14)
+- ✅ Lancet Psychiatry — antidepressants in pregnancy meta-analysis (~May 14)
+- ✅ Cai/Harvard — Error-driven representation learning in mesolimbic (bioRxiv 2026.05.18.725950)
+- ✅ Gambosi/Politecnico Milano — DA depletion drives whole-brain beta resonance PD model (bioRxiv 2026.05.15.725133)
+- ✅ Krichevsky/BWH — 5′GluCTC tRNA fragments drive tau aggregation (bioRxiv 2026.05.17.725757)
+- ✅ Qu/Phylo — BiomniBench process-level LLM agent evaluation (bioRxiv 2026.05.12.724604)
+
+Other strong but cut: Astrocytes shape cortical neuron development epigenetics (broad mechanism, not pharm), Oligodendrocyte subtype diversity in PD (overlap with item 8), Standardized MNI-Guided TMS protocol (methods-heavy), Cryosearch protein-complex assembly (off-topic), pArticleMap nanomedicine frontier mapping (off-spec for receptor-and-reason).
+
+Audio: 17:19 min (1039 s), 8.3 MB, Mistral Voxtral primary all 10 chunks. Published to R2, feed updated as Episode 8, ledger appended, committed via flock. Orchestrator handles the push.
+=== 2026-05-19T03:34:35-07:00 done  receptor-and-reason (exit 0) ===
