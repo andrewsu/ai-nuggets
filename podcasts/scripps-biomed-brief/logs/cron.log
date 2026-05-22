@@ -202,3 +202,32 @@ Episode shipped. The orchestrator will push.
 Source failures: none.
 === 2026-05-21T03:36:23-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-05-22T03:30:02-07:00 start scripps-biomed-brief ===
+Episode shipped. Final candidate funnel for the audit trail:
+
+**Scripps Biomedical Brief — 2026-05-22 candidate funnel**
+
+Sources scanned (bioRxiv, all posted 2026-05-20 to 2026-05-22):
+- pharmacology and toxicology: 8 items
+- bioengineering: 25 items
+- biochemistry: 27 items
+- synthetic biology: 6 items
+- cell biology: 30 items
+- immunology: 27 items
+- cancer biology: 30 items
+- molecular biology: 23 items
+- biophysics: 25 items
+
+General web (Endpoints/Fierce/STAT): light news cycle on May 21; primary clinical item (Immix NEXICART-2 95% CR) not Scripps-flavored (cell therapy in MM, modality-incremental).
+
+Substantive shortlist after discarding spurious matches:
+- McDonald (Crick) — TrkB sulfotyrosine Y400 indispensable for ZEB85 activation; explains TrkB selectivity vs TrkA/TrkC: https://www.biorxiv.org/content/10.64898/2026.05.19.725324v1  **[CHOSEN]**
+- Gabr (Weill Cornell) — HT-CETSA 40k screen vs ILT3/LILRB4 yields IB15C; restores microglial amyloid uptake: https://www.biorxiv.org/content/10.64898/2026.05.19.726383v1  **[CHOSEN]**
+- Gubra (Nygaard) — AlphaFold2-hallucinated de novo cyclic MC4R peptide E5P 6.7 nM with non-canonical APWR motif, icv reduces food intake in mice: https://www.biorxiv.org/content/10.64898/2026.05.19.721857v1  **[CHOSEN]**
+- Veiseh (Rice) + Diehl — Retrievable immunomodulatory alginate cell-encapsulation mAb factory; NHP ipilimumab >6 mo, 13 mAbs from one chassis: https://www.biorxiv.org/content/10.64898/2026.05.19.726224v1  **[CHOSEN]**
+- McDonald (Crick) — GDNF-RET cryo-EM with 30-saccharide HS bridging 4:4:4 assembly: https://www.biorxiv.org/content/10.64898/2026.05.20.726209v1 (deferred — same lab as TrkB, kept variety)
+- Corrionero/Knapp (Enzymlogic) — Kinetic fingerprints across KIT activation states; koff predicts clinical failure: https://www.biorxiv.org/content/10.64898/2026.05.20.726488v1 (deferred)
+- Liu/Xue (Shanghai JT) — ARESEC synthetic V(D)J recombination in HEK293T cells with TdT-enhanced junctional diversity: https://www.biorxiv.org/content/10.64898/2026.05.21.726110v1 (deferred — strong, but four-story slate full)
+- Soh CAFET aptamer FET — already covered 2026-05-21, excluded
+
+Commit ef2097a; orchestrator will push.
+=== 2026-05-22T03:37:07-07:00 done  scripps-biomed-brief (exit 0) ===

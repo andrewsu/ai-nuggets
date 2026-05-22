@@ -329,3 +329,34 @@ Commit landed. Closing summary for the run log.
 - \* Zegarra-Valdivia/Torres Aleman AIK3a305 IGF-1 sensitizer in mild TBI (`10.64898/2026.05.13.724506`)
 - Bridgehead alternates not picked: Tagmazian petVAE amyloid PET subgroups (already-old preprint, weaker novelty); Dyke Tourette motor excitability mega-analysis (epi/TMS, off-axis for today); Rost ChatDIA LLM proteomics (not biomedical-pharm enough); Ni scalp-to-region distance for TMS planning (methods-only); Lauric acid antidepressant in CORT model (modest novelty); Kmiec hidden-state genomics interpretability (off-axis).
 === 2026-05-21T03:35:17-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-05-22T03:20:02-07:00 start receptor-and-reason ===
+Episode 11 of Receptor & Reason for 2026-05-22 is committed (commit `30d93d7`). The orchestrator will push.
+
+## Candidate funnel for 2026-05-22
+
+**Source-level outcomes**
+- bioRxiv (Tier 1/2 neuroscience + pharm + bioinformatics): scanned 927 items across 2026-05-19→2026-05-22 with full pagination; 855 after dedup against ledger; 106 met the tight pharm-relevance filter (pharm score ≥2).
+- arXiv (Tier 2): cached file from the pre-fetch contained only "Rate exceeded" (14 bytes). Live API retries also returned 429 throughout the run — continued cooldown from the upstream biomedical-agentic-ai run on the same IP. Fell back to `site:arxiv.org` web search; nothing fresh in the 7-day window beat the bioRxiv shortlist. Logged as gap.
+- Psychiatric Times (Tier 1): direct fetches returned HTTP 403; WebSearch surfaced only items from the May 14–16 window already shipped (GLP-1-for-AUD review, SPL026 piece). No new May 19–22 items recoverable.
+- *Neuropsychopharmacology* / *Molecular Psychiatry* (Tier 1 journals): WebFetch hit Nature's IDP gateway (303 → auth-walled); WebSearch surfaced one MP item this week ("Rethinking schizophrenia," 2026-05-21 — a review, deprioritized vs fresh primary work).
+- chemRxiv / industry / Tier 3: nothing newer than the bioRxiv pharmacology-and-toxicology subset on offer.
+
+**Substantive shortlist (CNS-pharm relevance, 2026-05-19→2026-05-22, post-dedup)**
+- ✓ Womelsdorf/Pawliszyn — 5-neurochemical SPME fingerprints PFC+striatum NHP (10.64898/2026.05.20.726721) — **chosen, lead**
+- ✓ Haber UW-Madison — acute DOI cortical MEA hyperexcitability + path-length shortening (10.64898/2026.05.18.726129v2) — **chosen**
+- ✓ Melzer Vienna — temporal-cortex astrocyte Gi-GPCR enhances fear retrieval (10.64898/2026.05.21.724789) — **chosen**
+- ✓ Zoghbi Baylor — astrocyte ACSBG1 KO reduces α-syn pathology (10.64898/2026.05.20.726454) — **chosen**
+- ✓ Huang Brown — UBE3A→ERβ axis in Angelman OPCs (10.64898/2026.05.21.726878) — **chosen**
+- ✓ Rudolph Illinois — CP2 weak Complex-I inhibitor for schizophrenia (10.64898/2026.05.19.726440) — **chosen**
+- ✓ Nguyen Baylor — semaglutide attenuates fentanyl IVSA in female rats (10.64898/2026.05.19.726324) — **chosen**
+- ✓ Grella Loyola — TetTag dDG cocaine-engram reactivation (10.64898/2026.05.19.726387) — **chosen**
+- ✓ Shinozaki Stanford — zuranolone for delirium across LPS+POD (10.64898/2026.05.19.726175) — **chosen**
+- ✓ Gubra — AF2-hallucination de novo cyclic MC4R agonist E5P (10.64898/2026.05.19.721857) — **chosen, closer**
+- Marie/Bethus Côte d'Azur — AETA peptide AD synapse dysfunction v2 (10.1101/2025.08.22.671719) — passed (v2 of older paper; preferred Grella engram for fresh-v1 status)
+- Dalley Cambridge — α7 nAChR perceptual sensitivity SDT (10.64898/2026.05.18.725386) — passed (good but 9 stronger picks)
+- McDonald Crick Institute — sulfotyrosine TrkB ZEB85 (10.64898/2026.05.19.725324) — passed (biochemistry-heavy)
+- Gabr Weill Cornell — ILT3/LILRB4 CETSA AD microglia (10.64898/2026.05.19.726383) — passed (target very early)
+- MP "Rethinking schizophrenia" review (s41380-026-03654-9) — passed (review, not primary)
+
+**Episode metrics:** 10 items, 24,157-char body, mp3 1276.4s (21:16), 10,211,413 bytes. Mistral primary (all 11 chunks).
+=== 2026-05-22T03:39:01-07:00 done  receptor-and-reason (exit 0) ===

@@ -878,3 +878,25 @@ Request ID: req_011CbHQzAdzwJ2tx5DUKhfxr
 === 2026-05-22T03:01:40-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-05-22T03:01:40-07:00 AUP-refusal detected for biomedical-agentic-ai; retrying in 180s ===
 === 2026-05-22T03:04:40-07:00 start biomedical-agentic-ai (retry 1) ===
+Episode shipped. Summary follows.
+
+**Shipped:** biomedical-agentic-ai 2026-05-22 — NEURA: proof-carrying hallucination-resistant neuroimaging automation (Guo group, UESTC). bioRxiv DOI 10.64898/2026.04.27.721217 v2 posted 2026-05-21.
+
+**Artifacts:**
+- Script: `podcasts/biomedical-agentic-ai/scripts/2026-05-22-neura-proof-carrying-llm-neuroimaging-hallucination.md`
+- Audio: 2,214,809 bytes, 277s (Mistral primary, both chunks)
+- R2: published to `ai-nuggets-episodes/podcasts/biomedical-agentic-ai/episodes/2026-05-22-neura-proof-carrying-llm-neuroimaging-hallucination.mp3`
+- Feed: updated, parses
+- Commit: 5e00dae
+
+**Candidate funnel:**
+- bioRxiv 2026-05-21:2026-05-22 — 386 items scanned (full pagination 0→360), 381 unique, 38 keyword hits, ~10 substantive after pruning spurious ("biocontrol agent", "agroclone" etc.):
+  - **NEURA (chosen)** — 10.64898/2026.04.27.721217 v2 — proof-carrying / deterministic verification layer for hallucination resistance
+  - NanoCortex — 10.64898/2026.05.19.726254 v1 — multi-agent on Gemini ADK for end-to-end nanopore (close runner-up; deferred because recent run has been heavy on multi-agent/MCP architectures)
+  - BioRAG-DRAG — 10.64898/2026.05.19.726174 v1 — local-first multimodal retrieval; single-author scope less differentiated
+  - PlasmidLM — 10.64898/2026.05.19.725242 v1 — GRPO verifiable-reward DNA LM; novel but not multi-agent
+  - NEURA-adjacent honorable mentions: cyclic MC4R peptide (AlphaFold2 hallucination), spatiotemporal GNN for MD trajectories, AMP databases benchmark, semantic map embodied SLAM agent, ProtmRNA cross-modal — all method papers outside the agentic lane
+- arXiv — runner pre-fetch returned 0-byte file; live four-category OR retry also returned 14-byte empty; single-category cs.AI fallback worked but biomedical-agentic hits surfaced (MOSS, LCGuard, DeltaBox) were general agentic-infrastructure papers without biomedical specificity. arXiv-side biomedical-agent coverage noted as a gap for today.
+- ChemRxiv — no fresh biomedical agentic chemistry preprints in the 2-day window
+- ARPA-H / NIH / NSF / HHS press — no fresh agentic-AI biomedical program announcements 2026-05-21:2026-05-22
+=== 2026-05-22T03:14:22-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===
