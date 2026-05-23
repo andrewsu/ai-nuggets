@@ -232,3 +232,34 @@ Substantive shortlist after discarding spurious matches:
 Commit ef2097a; orchestrator will push.
 === 2026-05-22T03:37:07-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-05-23T03:30:04-07:00 start scripps-biomed-brief ===
+Episode shipped. Final run summary follows.
+
+Commit: `b60a55a` — Scripps Biomedical Brief 2026-05-23, four bioRxiv stories. Audio published to R2 at `podcasts/scripps-biomed-brief/episodes/2026-05-23-pkcdelta-nf1-pyroptosis-pd1-shp2-scaffold-surfactant-lnp-tol-mrna.mp3` (3,092,106 bytes / 387s). Feed.xml updated and validated.
+
+## Candidate funnel — Scripps Biomedical Brief 2026-05-23
+
+Sources scanned for items posted 2026-05-21 → 2026-05-23 (focus on 5/22 to catch the previous-24h window; 5/23 cycle had few new items):
+
+- bioRxiv (chemical biology / pharmacology / bioengineering / cancer / immunology / biochemistry — via API): ~90 entries scanned across three 30-paginated calls, ~18 substantive (target/modality/translational), ~10 shortlist.
+- Endpoints News R&D section: redirect 404 — skipped after one retry (no critical loss; PR-style news rarely supplies the day's nugget for this audience).
+- Fierce Biotech: 5 visible items 5/21–5/22 (OSE ovarian Phase 2, BioAge NLRP3 interview, T-Charge analysis, executive moves) — no qualifying preclinical/discovery items.
+- STAT News biotech: 2 items 5/22 (AZ EU/US split, Retro Biosciences valuation) — both already covered by sister calibr-briefing today or not Schultz-relevant.
+- Nature.com: auth-walled redirect, skipped.
+
+Substantive shortlist (after discarding spurious matches):
+
+- Hu/Ratner (Cincinnati Children's) — Selective pyroptosis in NF1-deficient cells via PKC-delta agonism (KRAS phosphorylation → gasdermin-E; in vivo neurofibroma + MPNST) — https://www.biorxiv.org/content/10.64898/2026.05.19.726276v1 — **CHOSEN**
+- Fei/Chen (Zhejiang) + Dustin (Oxford) — PD-1 remodels SHP2 dynamics for non-catalytic scaffolding inhibition of T-cell activation — https://www.biorxiv.org/content/10.64898/2026.05.20.725130v1 — **CHOSEN**
+- Nasr/Duncan (Maryland) — Lung surfactant Poractant alfa as LNP excipient for pulmonary mRNA delivery — https://www.biorxiv.org/content/10.64898/2026.05.20.726526v1 — **CHOSEN**
+- Imai/Yamano (Kanazawa NanoLSI) — Tol-mRNA modular tolerogenic mRNA platform (antigen + PD-L1 + TGF-β) — https://www.biorxiv.org/content/10.64898/2026.05.18.725807v1 — **CHOSEN**
+- Hu/Soh (Stanford) — CAFET aptamer biosensor with picomolar detection in undiluted plasma — https://www.biorxiv.org/content/10.64898/2026.05.18.726065v1 — already featured in Scripps 5/21 episode, declined
+- Zol-Hanlon/McDonald (Crick) — GDNF-GFRα1-RET heparan sulfate capture / 4:4:4 assembly cryo-EM — https://www.biorxiv.org/content/10.64898/2026.05.20.726209v1 — strong target biology, no in vivo, declined for diversity
+- Hu/Ratner alternative: Vasilaki/SOX17 PAH drug rescue — https://www.biorxiv.org/content/10.64898/2026.05.14.725284v1 — declined, less novel modality
+- Paris/Pecqueur (Nantes) — γδ Vγ9Vδ2 T cells targeting GD2/OAcGD2 on PN/MES glioblastoma states — https://www.biorxiv.org/content/10.64898/2026.05.19.726243v1 — declined, narrower
+- Mahmoudi (Cedars-Sinai) — iPSC anti-inflammatory macrophages in PTOA — declined, narrower scope
+- Picot (Caen) — Dual-action nanoconjugate for r-tPA-resistant clots — declined, narrower
+- Ottenheijm (Heidelberg) — JPT2/HN1L as cell-type-specific NAADP-binding protein — basic target biology, no in vivo, declined for diversity
+- Lin/Hu (Cincinnati pyroptosis — same as chosen #1)
+
+Source-side failures: Endpoints News 404 after redirect; Fierce Biotech R&D page 404; Nature.com auth redirect. Proceeded with bioRxiv + STAT + Fierce homepage as the four-source basis — sufficient for today's selection.
+=== 2026-05-23T03:40:06-07:00 done  scripps-biomed-brief (exit 0) ===

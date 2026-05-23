@@ -901,3 +901,27 @@ Episode shipped. Summary follows.
 - ARPA-H / NIH / NSF / HHS press — no fresh agentic-AI biomedical program announcements 2026-05-21:2026-05-22
 === 2026-05-22T03:14:22-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===
 === 2026-05-23T03:00:04-07:00 start biomedical-agentic-ai ===
+Episode shipped. Picked **ChronoMedKG** — a temporally-grounded biomedical knowledge graph (arXiv 2605.22734, v1 2026-05-21) built by a disease-autonomous multi-agent frontier-LLM consensus pipeline; direct Su Lab fit on biomedical KGs, ontologies, agentic construction, and open-science benchmark release.
+
+**Candidate funnel (2026-05-22 / 2026-05-23 window):**
+
+bioRxiv (256 items in 2-day window, 22 hit relevance keywords on title+abstract). Substantive shortlist after discarding spurious keyword matches:
+- **arXiv 2605.22734 — ChronoMedKG: A Temporally-Grounded Biomedical KG and Benchmark for Clinical Reasoning** (SDU + TUM, v1 2026-05-21) — CHOSEN
+- bioRxiv 10.64898/2026.04.30.721768 — Interpreting Omics with LLMs (Fuhai Li, WashU, v2)
+- bioRxiv 10.64898/2026.05.21.726957 — Generalist LLMs complement tailor-made predictors for tumor genomics (Quaid Morris, MSK, v1)
+- bioRxiv 10.64898/2026.05.20.726540 — Animal-to-Human Drug Translation via NLP (Ineichen, Bern, v1)
+
+arXiv (500 cached entries, 107 biomedical×agentic-keyword matches in 2-day window):
+- arXiv 2605.22759 — Personal Health Agent / wearable foundation model (Google)
+- arXiv 2605.22733 — HarnessAPI MCP framework (engineering framework, out of brief)
+- arXiv 2605.22501 — BeLink biomedical entity linking with generative re-ranking
+- arXiv 2605.22721 — Self-Evolving Multi-Agent Systems via Decentralized Memory (generic)
+- arXiv 2605.22502 — Compiling Agentic Workflows into LLM Weights (generic)
+- arXiv 2605.22547 — Case-Aware Medical Image Classification with Multimodal KGs
+
+ChemRxiv: nothing fresh in 2-day window.
+News/product launches: Cohere "North for Pharma" surfaced in May 22 coverage but launch itself older than window; no Nature/Science agentic-biomedical AI paper hit.
+Funder/policy (ARPA-H/NIH/NSF/HHS): ARPA-H FRONT performer-team selection 2026-05-22 (not AI-specific); NIH May 22 GLP-1 biology (not AI); NSF autonomous IndyCar (not biomedical); HHS AERO 2026-05-21 (just outside window) — nothing on agentic AI / biomedical AI.
+
+Local commit `7f83152` made (orchestrator pushes).
+=== 2026-05-23T03:09:42-07:00 done  biomedical-agentic-ai (exit 0) ===

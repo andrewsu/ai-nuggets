@@ -361,3 +361,33 @@ Episode 11 of Receptor & Reason for 2026-05-22 is committed (commit `30d93d7`). 
 **Episode metrics:** 10 items, 24,157-char body, mp3 1276.4s (21:16), 10,211,413 bytes. Mistral primary (all 11 chunks).
 === 2026-05-22T03:39:01-07:00 done  receptor-and-reason (exit 0) ===
 === 2026-05-23T03:20:04-07:00 start receptor-and-reason ===
+## Run summary — Receptor & Reason 2026-05-23
+
+**Episode shipped:** `2026-05-23-receptor-and-reason.mp3` — 20.8 min, 10,005,777 bytes, voiced by Mistral voxtral-mini-tts-2603 (en_paul_neutral). Audio uploaded to R2 (`ai-nuggets-episodes` bucket), feed updated, dedup ledger appended, committed locally via `flock` (orchestrator will push).
+
+**Candidate funnel:**
+
+- **bioRxiv neuroscience/pharmacology (7-day, multi-day API pull):** ~78 candidates after CNS-pharm filter; shortlist after discarding false-positive substring hits:
+  - Brain shuttle target expression by individual (Gorman/Ingber, Wyss Harvard) — **PICKED**
+  - Tau Ablation Rewires Brain Cell Programs (Lasagna-Reeves, Baylor) — **PICKED**
+  - Microglial Foxo3 dopaminergic vulnerability PD (Szelechowski, Toulouse) — **PICKED**
+  - Astrocytes transform cortical-neuron epigenome via Kir (Hardingham, Edinburgh) — **PICKED**
+  - SCN2A iPSC rescue (Adney, Northwestern) — **PICKED**
+  - 4-PBA GABRA1 rescue (Kang, Vanderbilt) — **PICKED**
+  - Progressive Landscape of Depression (Shukla, Wyoming) — **PICKED**
+  - Sex-specific adolescent depression vulnerability (Nagy, McGill) — **PICKED**
+  - Synaptic pruning + myelination + late-adolescence psych disorders (Averbeck/Brunel, NIMH) — **PICKED**
+  - Chronic Stress BNST Dravet (Nobis, Vanderbilt) — held in reserve
+  - Direct RNA Seq epitranscriptomic AD (Le, Genentech) — held in reserve
+  - Reduced VPS26B / glutamate receptor PD (Lee, KRIBB) — held in reserve
+  - Reduced MOV10 fear cortical connectivity (Ceman, Illinois) — held in reserve
+- **arXiv cache (cs.AI/cs.CL/cs.MA/q-bio, 7-day window, neuro/pharm-anchored):** ~25 candidates; key picks:
+  - SMDD-Bench LLM drug-design benchmark (Han) — **PICKED**
+  - ChronoMedKG (already shipped today by biomedical-agentic-ai)
+  - SciCore-Mol — held
+  - EmoTrack depression tracking — held
+- **Psychiatric Times:** WebFetch returned 403 (Cloudflare-gated) on every direct URL attempt and on the homepage; pivoted to WebSearch for headline + date triangulation. Most fresh-looking items (COMP360 PTSD IND, brilaroxazine vocal biomarker) traced back to dates outside the 7-day window or with ambiguous dates — skipped to avoid mis-dating.
+- **Tier 3 (chemRxiv / industry):** scanned, no fresh items beat the bioRxiv/arXiv shortlist.
+
+Slate: 10 items (9 bioRxiv Tier 1 + 1 arXiv Tier 2). No Tier 4 needed.
+=== 2026-05-23T03:40:48-07:00 done  receptor-and-reason (exit 0) ===

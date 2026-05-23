@@ -501,3 +501,26 @@ Two episodes shipped for Friday, May 22, 2026. Orchestrator handles the push.
 - GHO/CBC Group $20B+ healthcare-investor merger (Fierce Biotech) — interesting but no direct pipeline read
 === 2026-05-22T03:22:47-07:00 done  calibr-briefing (exit 0) ===
 === 2026-05-23T03:10:04-07:00 start calibr-briefing ===
+Calibr-Skaggs Daily Briefing for Saturday May 23 shipped. Both episodes generated, published to R2, feed updated, single commit. The orchestrator will push.
+
+**Candidate funnel — sources scanned and shortlist:**
+
+Fierce Biotech: ~10 items scanned (May 22–23) — survived: Biogen/Denali Parkinson's flop (covered yesterday), OSE ovarian cancer phase 2, BioAge NLRP3 podcast (skipped — non-news), Chutes & Ladders (skipped).
+
+Fierce Pharma: AbbVie 85 Allergan layoffs, Novartis 76 NJ cuts, EU CHMP backs AZ Etcamah + Novo Wegovy pill, AZ/Daiichi Datroway 1L TNBC FDA approval, Merck/Kelun sac-TMT (covered yesterday).
+
+Endpoints News: Gilead Hepcludex Hep D approval (4-yr CRL comeback), Datroway approval, EU CHMP, GOP/China biotech clampdown letter, Lilly triple agonist analysis (skipped — covered yesterday), Campfield $180M Series A (covered Wed).
+
+BioPharma Dive: ASCO 2026 abstract drop (sac-TMT, pumitamig, SSGJ-707, KLN-1010, intismeran), retatrutide Phase 3 (covered yesterday), Biogen-Denali Parkinson's (covered yesterday).
+
+**Substantive shortlist:**
+- Datroway 1L TNBC FDA approval (AZ/Daiichi) [CHOSEN — spotlight]
+- Gilead Hepcludex (bulevirtide) Hep D approval [headlines]
+- Novo Wegovy oral pill EU CHMP [headlines]
+- OSE TEDOVA Phase 2 ovarian cancer + Keytruda [headlines]
+- ASCO abstracts — Lilly/Kelonia KLN-1010 in-vivo BCMA CAR-T 6/6 MRD-negative [headlines]
+- GOP/China biotech letter [headlines]
+- AbbVie/Novartis workforce cuts [headlines]
+
+Episode files: `2026-05-23-pharma-headlines.mp3` (357s) + `2026-05-23-datroway-tnbc-spotlight.mp3` (702s).
+=== 2026-05-23T03:25:08-07:00 done  calibr-briefing (exit 0) ===
