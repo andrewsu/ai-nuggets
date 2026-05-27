@@ -1015,3 +1015,36 @@ Episode shipped. Final run summary follows for cron.log audit.
 **Pipeline:** Script written (5057 chars), Mistral TTS produced 265s mp3 (2,123,694 bytes) in 2 chunks, R2 upload to `ai-nuggets-episodes/podcasts/biomedical-agentic-ai/episodes/2026-05-26-spatialclaw-memory-augmented-autonomous-spatial-omics.mp3` succeeded, feed.xml updated and parses, commit `c72c245` created via flock. Orchestrator handles push.
 === 2026-05-26T03:08:23-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-05-27T03:00:08-07:00 start biomedical-agentic-ai ===
+Episode shipped. Final candidate funnel:
+
+---
+
+**biomedical-agentic-ai 2026-05-27 — run summary**
+
+Episode chosen: **IID-KG: An ontology-aligned literature-derived knowledge graph for infectious and immune-mediated diseases** (Pan et al., Insilicom — bioRxiv 10.64898/2026.05.21.727015, posted 2026-05-26).
+
+Candidate funnel:
+
+- **bioRxiv** (2026-05-26 → 2026-05-27): 303 preprints fetched (paginated full collection); 34 keyword-matched after dedup. Substantive shortlist (after pruning the false matches like "agent" → therapeutic agents):
+  - **CHOSEN** — IID-KG (Insilicom, bioinformatics) — ontology-aligned literature-derived KG, 1.84M entities / 16.3M relations, 10.64898/2026.05.21.727015
+  - dbGIST: LLM-Assisted Multi-Omics Resource for GIST (Zhengzhou University, cancer biology) — 10.64898/2026.05.22.727292 — LLM is a navigation layer over the resource, not the architectural story
+  - From APOE Genetics to AI-Designed ACAT1 Inhibitors (Curagen AI Labs, neuroscience) — 10.64898/2026.05.21.727002 — generative chemistry for AD, less directly KG/agent
+  - OryzaG3: rice pangenome foundation model (bioinformatics) — 10.64898/2026.05.22.727045 — off-topic (plant)
+
+- **arXiv** (cached /tmp/ai-nuggets-arxiv-cache.xml, 500 entries, last 2 days): 131 biomedical × agentic-keyword matches after substring filter. Substantive shortlist after pruning noise (rna substring, off-domain physics/chemistry, etc.):
+  - Mind the Tool Failures: Synergistic Tool Gains for Medical Agents — arxiv 2605.26691 — GRPO instance-level tool selection
+  - Experiments in Agentic AI for Science (Fox & Fox) — arxiv 2605.26305 — DeepTS/DeepCollector + DeepScribe, mostly physics
+  - ScientistOne: Towards Human-Level Autonomous Research via Chain-of-Evidence — arxiv 2605.26340
+  - Can Broad Biomedical Knowledge be Contextualized into Scenario-Grounded Propositions? — arxiv 2605.27082
+  - The Daily Dose: Workflow-Integrated LLM Automation for Clinical Summarization — arxiv 2605.26346
+  - Persistent AI Agents in Academic Research (single-investigator) — arxiv 2605.26870
+  - MedGuideX: Internalizing Decision Logic from Executable Guidelines — arxiv 2605.26567
+
+- **ChemRxiv**: skipped this run — bioRxiv + arXiv yielded a strong top pick well-aligned with audience interests (KG + ontology + LLM-assisted refinement), and ChemRxiv hits are typically materials/chemistry rather than biomedical-agentic.
+
+- **News / press feeds (ARPA-H, NIH, NSF, HHS)**: not surveyed this run; bioRxiv + arXiv top candidate cleared the bar.
+
+Why IID-KG beat the field: bullseye for Andrew's research areas — biomedical knowledge graphs, ontology engineering, data integration, literature mining at scale. The pipeline disciplines (nested NER + ontology-guided ID assignment + LLM as a refinement assistant under expert oversight, not the primary constructor) are the right architectural choices to discuss, and the 30M-abstract scale plus public release with repurposing workflows make this a substantive resource rather than a demo. The Mind-the-Tool-Failures arXiv paper was the closest runner-up but skews more medical-AI than biomedical-research-AI.
+
+Commit: 6a3eb5e on main (local — orchestrator pushes).
+=== 2026-05-27T03:06:15-07:00 done  biomedical-agentic-ai (exit 0) ===

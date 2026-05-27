@@ -626,3 +626,27 @@ Shortlist after filtering:
 Commit: `c275367` on main. Orchestrator will push.
 === 2026-05-26T03:22:20-07:00 done  calibr-briefing (exit 0) ===
 === 2026-05-27T03:10:08-07:00 start calibr-briefing ===
+Two episodes shipped for 2026-05-27. Below is the candidate funnel.
+
+**Sources scanned:** Endpoints News, Fierce Biotech, BioPharma Dive, BioSpace, GlobeNewswire, AstraZeneca media center, PRNewswire, Bloomberg, CNBC press feeds — all returned content; no source-side failures.
+
+**Substantive shortlist (after discarding spurious hits):**
+- AstraZeneca camizestrant PDUFA extension confirmed today, ctDNA-clearance data at ASCO June 2 — **CHOSEN (Spotlight + Headline #1)**
+- Apogee zumilokibart APG777 APEX Phase 2 Part B 16-week data reporting today — **CHOSEN (Headline #2)**
+- Lilly $3.83B triple vaccine acquisition (Curevo $1.5B, LimmaTech $780M, Vaccine Company $1.55B) — **CHOSEN (Headline #3)**
+- Kardigan files Nasdaq IPO under ticker KARD today, three cardiovascular assets — **CHOSEN (Headline #4)**
+- Olympus to acquire BioProtect $270M (prostate Balloon Spacer device) — **CHOSEN (Headline #5)**
+- Kura Oncology darlifarnib (next-gen FTI) + adagrasib KRAS-G12C combo ASCO data Saturday May 30 — **CHOSEN (Headline #6)**
+- Innovent IBI363 IL-2α-bias bispecific ASCO data — covered yesterday, skipped
+- BMS SUCCESSOR-2 mezigdomide CELMoD data ASCO — covered yesterday, skipped
+- Summit/Akeso HARMONi-6 ivonescimab plenary May 31 — covered yesterday, skipped
+- GSK efimosfermin FGF21 MASH Phase 2 — covered yesterday, skipped
+- AbbVie etentamig BCMAxCD3 bispecific ASCO data — substantive but lower priority for Calibr
+- Apogee zumilokibart Part B exact 16-week numbers — actual data drop was at 8:00am ET today; press wire content not indexed by my searches at run time, headlines cover Part A reference points + Part B framing only (no fabricated numbers)
+
+**Files written:**
+- `podcasts/calibr-briefing/scripts/2026-05-27-pharma-headlines.txt` (5,798 chars, 5:23 mp3)
+- `podcasts/calibr-briefing/scripts/2026-05-27-camizestrant-pdufa-spotlight.txt` (8,086 chars, 6:50 mp3)
+
+Audio published to R2, feed.xml updated, commit `b77f7f6` created via flock. Push deferred to orchestrator per pipeline.
+=== 2026-05-27T03:29:14-07:00 done  calibr-briefing (exit 0) ===

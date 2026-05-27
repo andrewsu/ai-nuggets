@@ -340,3 +340,14 @@ Committed. The orchestrator will push at end of run.
 - **Nature / Science / Cell**: 403 from WebFetch on direct article listings; skipped (no retry burned).
 - **ChemRxiv**: no May 25–26 hits matching brief.
 === 2026-05-26T03:37:44-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-05-27T03:30:08-07:00 start scripps-biomed-brief ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request or attempting a different approach.
+
+Request ID: req_011CbSvFzNiuErEoBNMggQxq
+=== 2026-05-27T03:30:54-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-05-27T03:30:54-07:00 AUP-refusal detected for scripps-biomed-brief; retrying in 180s ===
+=== 2026-05-27T03:33:54-07:00 start scripps-biomed-brief (retry 1) ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request or attempting a different approach.
+
+Request ID: req_011CbSvYhXvPXZ3rmJYSXvzi
+=== 2026-05-27T03:34:41-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
