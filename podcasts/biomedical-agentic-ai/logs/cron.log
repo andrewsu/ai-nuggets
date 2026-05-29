@@ -1051,3 +1051,14 @@ Commit: 6a3eb5e on main (local — orchestrator pushes).
 === 2026-05-28T03:00:15-07:00 start biomedical-agentic-ai ===
 Episode shipped — no action needed on the background find. The today's run is complete: script written, audio generated (4:39, 2.23 MB), R2 upload succeeded, feed updated, commit 8ac4e8e on main (push deferred to the orchestrator). Flagging for follow-up: `scripts/publish_episode.sh` calls `npx` which isn't installed on this host — I worked around it by invoking `worker/node_modules/.bin/wrangler` directly. The script should be hardened to fall back to the local binary so cron-driven runs don't need `npx` on PATH.
 === 2026-05-28T03:14:58-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-05-29T03:00:18-07:00 start biomedical-agentic-ai ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request or attempting a different approach.
+
+Request ID: req_011CbWfdtQBceLJL3KtETJwE
+=== 2026-05-29T03:01:30-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-05-29T03:01:30-07:00 AUP-refusal detected for biomedical-agentic-ai; retrying in 180s ===
+=== 2026-05-29T03:04:30-07:00 start biomedical-agentic-ai (retry 1) ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request or attempting a different approach.
+
+Request ID: req_011CbWfxwiduo3bZi33fXgSq
+=== 2026-05-29T03:05:49-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===

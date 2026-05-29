@@ -680,3 +680,35 @@ Substantive shortlist (post-filter):
 Push held for the orchestrator per PIPELINE.md.
 === 2026-05-28T03:27:35-07:00 done  calibr-briefing (exit 0) ===
 === 2026-05-29T03:10:18-07:00 start calibr-briefing ===
+Task complete. Both episodes generated, audio uploaded to R2, feed updated, single commit landed (orchestrator will push).
+
+**Candidate funnel for 2026-05-29**
+
+Sources scanned (May 28-29, 2026 publication window):
+
+- **Fierce Biotech** — ~10 stories surveyed, 7 relevant after filter
+- **Fierce Pharma** — ~8 stories surveyed, 5 relevant after filter
+- **BioPharma Dive** — ~15 stories surveyed, 8 relevant after filter
+- **Endpoints News** — surveyed (homepage gated 403), 1 directly cited (GOP China-biotech-restriction context)
+- **STAT News, Clinical Trials Arena, GEN, Biotech Voyager** — surveyed via aggregator/search, no additional novel May 28-29 items beyond what the other sources captured
+
+Substantive shortlist (Calibr-audience filter applied):
+
+- Pfizer/Innovent Biologics $10.5B global oncology collaboration on 12 ADC + multispecific programs — businesswire.com/news/home/20260527822150 — **CHOSEN, HEADLINE #1 + SPOTLIGHT**
+- AstraZeneca Imfinzi + BCG FDA approval for BCG-naive high-risk NMIBC (Phase 3 POTOMAC) — astrazeneca.com/media-centre/press-releases/2026/imfinzi-approved-in-us-for-early-bladder-cancer — **CHOSEN, HEADLINE #2**
+- AbbVie Decnupaz (pivekimab sunirine) CD123 ADC FDA approval for BPDCN — endpoints.news/abbvie-clinches-fda-approval-for-ultra-rare-blood-cancer-adc-from-immunogen-purchase — **CHOSEN, HEADLINE #3**
+- Apogee Therapeutics $1.3B Blackstone royalty financing for zumilokibart anti-IL-13 Phase 3 — globenewswire.com/news-release/2026/05/27/3301723 — **CHOSEN, HEADLINE #4**
+- CVS Caremark restores Lilly Zepbound + adds oral Foundayo to formulary — fiercepharma.com/pharma/cvs-restores-coverage-eli-lilly-obesity-drugs-zepbound-foundayo — **CHOSEN, HEADLINE #5**
+- Beren Therapeutics FDA review extension to Nov 17 on adrabetadex for I-NPC — businesswire.com/news/home/20260528306754 — **CHOSEN, HEADLINE #6**
+- Kailera/Hengrui HRS-4729 GLP-1/GIP/glucagon tri-agonist Phase 1 — covered in 2026-05-28 briefing, skipped
+- Kardigan Nasdaq IPO filing — covered in 2026-05-27 briefing, skipped
+- Akeso ivonescimab HARMONi-6 ASCO plenary preview — preview only (plenary May 31); folded into spotlight as China-pipeline context
+- ICON CRO accounting restatement — operational/CRO story, not directly Calibr-pipeline-relevant, skipped
+- Hoth Therapeutics AI/space pivot stock pop — too speculative, skipped
+- Novartis brain-shuttle commentary — feature piece without new data, skipped
+- Pfizer-Innovent GOP/national-security regulatory overhang — folded into spotlight as context, not separate headline
+
+Spotlight rationale: Pfizer-Innovent $10.5B is the largest single Chinese pharma out-licensing of 2026, sits at the intersection of post-Seagen ADC strategy + China-pipeline dynamics + BIOSECURE/COINS/executive-order regulatory environment, and produces three direct Calibr read-throughs on speed differential, partnership architecture, and U.S.-origin asset value.
+
+Episodes: headlines 6m03s (2.9 MB), spotlight 10m17s (4.9 MB). Both uploaded to R2 bucket `ai-nuggets-episodes`. Feed XML validated. Commit `b24253f` on main, awaiting orchestrator push.
+=== 2026-05-29T03:22:04-07:00 done  calibr-briefing (exit 0) ===

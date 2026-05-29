@@ -569,3 +569,59 @@ Picks (mixed across tiers, topical adjacency ordering):
 - arxiv:2605.28563 — Multi-dimensional evaluation framework for EEG foundation models. Held back — CaMBRAIN took the EEG slot with a more concrete architectural advance.
 === 2026-05-28T03:43:37-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
 === 2026-05-29T03:20:18-07:00 start receptor-and-reason ===
+Committed cleanly. The orchestrator handles the push.
+
+## Final summary for cron.log
+
+Receptor & Reason episode 2026-05-29 shipped: 10 items, ~17:43 spoken, mp3 8,501,542 bytes published to R2 at `ai-nuggets-episodes/podcasts/receptor-and-reason/episodes/2026-05-29-receptor-and-reason.mp3`; feed.xml updated with new `<item>` block (validates as XML); shipped.jsonl appended with 10 keys; flock-committed (`a3d098b`).
+
+### Candidate funnel
+
+Sources scanned and survivors (today's recency window: 2026-05-22 → 2026-05-29):
+
+**Tier 1 — bioRxiv (neuroscience + pharmacology, last 7 days):** 854 unique DOIs scanned. ~133 above relevance threshold after dedup; 35 already shipped in prior episodes (dedup ledger hits) excluded. Substantive shortlist after discarding spurious matches:
+- ★ doi:10.64898/2026.05.24.726075 — Pasca (Stanford) 22q11.2DS + adrenomedullin rescue — **CHOSEN #3**
+- ★ doi:10.64898/2026.05.21.726933 — Ulusoy (DZNE) 6G6 antibody Tyr39-nitrated αSyn — **CHOSEN #4**
+- ★ doi:10.64898/2026.05.19.726142 — Stern (Haifa) iPSC EVs PD rescue — **CHOSEN #5**
+- ★ doi:10.64898/2026.05.06.718927 — Siwani (Uppsala) OLM-α2 i/vHipp dissociation — **CHOSEN #6**
+- ★ doi:10.64898/2026.05.21.726881 — Morrison (Pittsburgh) adolescent NAc DA / sign-tracking — **CHOSEN #7**
+- ★ doi:10.64898/2026.01.07.698212 — Kentucky lapatinib postoperative pain — **CHOSEN #2**
+- doi:10.64898/2026.05.22.726242 — Carannante (KTH/Paris-Saclay) circadian E/I epileptic model (passed over for Pittsburgh adolescent NAc piece)
+- doi:10.64898/2026.05.21.727002 — Curagen AI ACAT1 AD pipeline (industry-self-promotion tone, deferred)
+- doi:10.64898/2026.05.21.726929 — 4-MU APP/PS1 (interesting but PNN/HA mechanism less novel than 6G6)
+- doi:10.64898/2026.05.22.727208 — Hippocampal astrocytes contextual fear (Oliveira/Minho)
+- doi:10.64898/2026.05.21.726958 — BNST CGRP sex differences (Keller/Maryland)
+- doi:10.64898/2026.05.22.727273 — OCD prefrontal connectivity (Desrochers/Brown)
+- doi:10.64898/2026.05.24.726981 — VP cholinergic reward (Gallo/Fordham)
+- doi:10.64898/2026.05.22.727055 — Neuronal AAV micro-Dys DMD CNS (Muntoni/UCL)
+- doi:10.64898/2026.05.23.727349 — αSyn structural heterogeneity in situ (Picotti/ETH)
+- doi:10.64898/2026.05.20.726478 — Bio-Hermes AD plasma proteomics (Winchester/Oxford)
+
+**Tier 1 — Psychiatric Times / ASCP press / society pages:** Surveyed via WebSearch (Psychiatric Times direct fetch 403s).
+- ★ Reunion Neuroscience RECONNECT Phase 2 full readout for luvesilocin (RE-104) in PPD, presented at ASCP/APA May 26, 2026 — **CHOSEN #1**
+- Pipeline Updates at 2026 ASCP Annual Meeting: vasopressin 1A/1B and osavampator (passed over — companion items to luvesilocin lead)
+- Centanafadine Phase 3 ADHD package (older than 7-day window)
+- Ketamine safety at ASCP 2026 (panel write-up, not primary research)
+
+**Tier 2 — arXiv:** Cache empty (14 bytes), live API rate-limited (HTTP 429), 180s backoff retry also 429. Fell back to `site:arxiv.org` WebSearch. Substantive shortlist:
+- ToolMol (2605.12784) evolutionary agentic drug design — passed over for AE-PocketMiner which is more receptor-specific
+- AgentRx (2605.10286) LLM-agent clinical-prediction benchmark
+- NeuroAgent (2605.06584) LLM-agent neuroimaging pipeline
+- EEG sparse-autoencoder mechanistic interpretability (2605.13930) and NeuroAtlas (2605.14698) — interesting but EEG-foundation lane saturated this week
+- Pharmacokinetics-Informed Agentic Architecture (math 2605.11) — close to yesterday's PKFM piece
+
+**Tier 2 — bioRxiv bioinformatics:**
+- ★ doi:10.64898/2026.05.21.723451 — Shang SpatialClaw memory-augmented spatial omics — **CHOSEN #10**
+- ★ doi:10.64898/2026.05.21.726899 — Bowman (UPenn) AE-PocketMiner — **CHOSEN #8**
+- doi:10.64898/2026.04.30.721768 — Li (WashU) LLM omics-to-target framework (strong but less receptor-relevant)
+- doi:10.64898/2026.05.21.726868 — Genos-m human microbiome FM (off-domain for this listener)
+- doi:10.64898/2026.05.21.726972 — SynFit multi-objective protein fitness
+
+**Tier 3 — CPT:PSP / CPT / DDT / chemRxiv / industry press:**
+- ★ Lu J, Desikan R. CPT:PSP May 2026 — QSP modeling amid agentic AI — **CHOSEN #9**
+- Waikar et al. CPT:PSP — RAG for regulatory compliance (off-lane for this audience)
+- Guo et al. CPT:PSP — Copulas for covariate simulation (pure methodology)
+- chemRxiv neuropharm — no fresh CNS items surfaced in 7-day window
+
+**Source-level failures:** arXiv live API HTTP 429 (twice, 60s + 180s backoffs); arXiv cache file empty (runner pre-fetch likely also 429'd); Psychiatric Times direct WebFetch 403. All handled via `site:arxiv.org` and `site:psychiatrictimes.com` WebSearch fallback per the source-failure protocol. No Tier 4 fallback needed — Tiers 1-3 together produced 10 fresh items.
+=== 2026-05-29T03:37:35-07:00 done  receptor-and-reason (exit 0) ===

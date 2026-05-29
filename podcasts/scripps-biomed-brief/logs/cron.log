@@ -390,3 +390,32 @@ Substantive shortlist (after pruning resource papers, methodological microfluidi
 Source failures: none.
 === 2026-05-28T03:35:45-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-05-29T03:30:18-07:00 start scripps-biomed-brief ===
+Done. Here is the final summary for the cron log:
+
+**Scripps Biomedical Brief — 2026-05-29 — shipped**
+
+Episode: `2026-05-29-cell-proteomic-atlas-allene-alkyne-p450-modified-grna-tact-adc-hydrogel` (366s / 2.93 MB)
+
+mp3 published to R2 (ai-nuggets-episodes bucket). Feed updated. Committed (c3664a4). Push handled by orchestrator.
+
+**Candidate funnel:**
+
+- **bioRxiv pharmacology and toxicology** (2026-05-27 to 2026-05-29): 8 scanned, 1 shortlist
+  - Liu PKFM agentic Transformer for sparse PK (already covered in calibr 2026-05-29 spotlight) — not picked
+- **bioRxiv bioengineering**: 19 scanned, 4 shortlist
+  - Doudna NANITE amplified in vivo editing v2 (`10.64898/2026.01.13.699115`) — not picked (v2 of older preprint, less fresh)
+  - Wang/Gibbs OHSU BBB-permeable NIR oxazines for white matter tract imaging (`10.64898/2026.05.22.727303`) — not picked
+  - Trapecar 6-tissue MPS for anti-diabetic drug response (`10.64898/2026.05.22.726943`) — not picked
+  - Zhu/Zhang de novo H. pylori BabA binder proteins — not picked
+- **bioRxiv synthetic biology**: 0 in date range
+- **bioRxiv biochemistry**: 27 scanned, 4 shortlist
+  - **Weiss/Mann cell-type-resolved proteomic atlas** (`10.64898/2026.05.26.727663`) — **PICKED**
+  - **Liu/Tang UCLA P450 biosynthetic allene/alkyne formation** (`10.64898/2026.05.26.727785`) — **PICKED**
+  - **Vu/Watts/Sontheimer fully modified SpyCas9 gRNAs** (`10.64898/2026.05.28.725424`) — **PICKED**
+  - van der Donk nitrilobacillins post-translational nitrile installation v2 — not picked (v2, similar theme to Tang)
+- **bioRxiv cancer biology**: 20 scanned, 1 shortlist
+  - **Jacquot/Detappe TACT hydrogel SC ADC delivery** (`10.64898/2026.05.21.726796` v2) — **PICKED**
+- **bioRxiv cell biology** / **immunology**: scanned, no chemistry/modality fits beyond what receptor-and-reason covered today
+
+Cross-show de-duplication: receptor-and-reason 2026-05-29 covered 10 items including AE-PocketMiner, adrenomedullin 22q11.2, luvesilocin postpartum, nitrated-α-syn antibody, iPSC EVs in PD, SpatialClaw — no overlap with today's Scripps picks.
+=== 2026-05-29T03:37:12-07:00 done  scripps-biomed-brief (exit 0) ===
