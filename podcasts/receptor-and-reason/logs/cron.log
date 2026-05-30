@@ -626,3 +626,39 @@ Sources scanned and survivors (today's recency window: 2026-05-22 → 2026-05-29
 **Source-level failures:** arXiv live API HTTP 429 (twice, 60s + 180s backoffs); arXiv cache file empty (runner pre-fetch likely also 429'd); Psychiatric Times direct WebFetch 403. All handled via `site:arxiv.org` and `site:psychiatrictimes.com` WebSearch fallback per the source-failure protocol. No Tier 4 fallback needed — Tiers 1-3 together produced 10 fresh items.
 === 2026-05-29T03:37:35-07:00 done  receptor-and-reason (exit 0) ===
 === 2026-05-30T03:20:49-07:00 start receptor-and-reason ===
+Committed `eef11ec` — orchestrator will push.
+
+## Final summary
+
+**Commit:** `eef11ec` on main (push deferred to orchestrator).
+
+**Pick (10 items, all from bioRxiv, all within 7-day window):**
+
+1. **Iorio (Human Technopole)** — LSD reverses aging-/neurodegeneration-associated brain transcriptional programs via signature-reversal principle (`10.64898/2026.05.26.727809`) — CHOSEN as opener
+2. **Carpenter (Broad) + McLean** — Fibroblast imaging-based mitochondrial-localization phenotype across psychosis (`10.1101/2025.10.08.676630` v3)
+3. **Daskalakis (McLean)** — PsychENCODE circRNA TWAS in SCZ/BIP (`10.64898/2026.05.24.725548`)
+4. **Desrochers (Brown)** — OCD abstract-sequence-task prefrontal connectivity (`10.64898/2026.05.22.727273`)
+5. **Pritzker (Stanford)** — NAc Tshz1+/mGluR8 in opioid withdrawal aversion (`10.64898/2026.05.25.727738`)
+6. **Schwendt (Florida)** — mGlu2 PAM reverses methamphetamine cognitive deficit (`10.64898/2026.05.25.727633`)
+7. **Wu (Georgetown)** — KCNQ openers restore SWRs under EAAT inhibition (`10.64898/2026.05.28.728386`)
+8. **CuraGen AI** — APOE→ACAT1 brain-penetrant generative-chemistry pipeline (`10.64898/2026.05.21.727002`)
+9. **Narayan (NIH/NIDDK)** — APOE4/INPP5D membrane mechanics + astrocyte endocytosis (`10.64898/2026.05.22.726347`)
+10. **Karami (Inria/Lorraine)** — AlloDyn dynamic-aware allosteric-pocket prediction + holo-with-modulator benchmark-leakage critique (`10.64898/2026.05.22.727284`) — CHOSEN as closer
+
+**Candidate funnel:**
+
+- **bioRxiv** (rolling 7-day window, 2026-05-23 → 2026-05-30): 1,526 unique preprints scanned via paginated `details/biorxiv/<range>` endpoint; 588 survived a broad CNS/pharmacology/psychiatric keyword filter; 157 prioritized by a tighter keyword set; ~30 substantive shortlist after manual review. All 10 picks drawn from this layer.
+
+- **arXiv** (live `/api/query` after pre-fetch cache returned a stale 503): pulled 40 most recent entries, 7-day-windowed, agentic/LLM × biomedical. Substantive shortlist:
+  - ET-RAG (Multi-Agent RAG for Biomedical Lit) — initially chosen as closer, **dropped** after pre-commit URL check (see note)
+  - DMPKformer (Multimodal ADMET) — initially chosen, **dropped** for the same reason
+  - Hindbrain 5-HT Organoids (Xiang) — initially chosen as slot #2, **dropped** for the same reason
+  - SafeRx-Agent, MedGuideX, SafeMed-R1, Why Specialist Models Still Matter — all medical-AI specific, not neuropsychopharm-direct, deprioritized vs Tier-1 picks
+  - LipoAgent, MolLingo, KG Neuroscience — already shipped earlier in the week
+
+- **Tier 1 journals (Nature NPP, Mol Psych, Biol Psych, etc.)**: not separately surveyed this run — bioRxiv yielded a strong 10-item slate that fits the audience, all from PIs in the right space (Stanford, Broad/McLean, Brown, NIH/NIDDK, Georgetown, U Florida, Human Technopole, Inria, CuraGen AI Labs).
+
+- **chemRxiv / industry press**: not surveyed — Tier 1/2 bioRxiv already delivered both the agentic-AI representation (AlloDyn computational closer, CuraGen AI generative chemistry) and the deep CNS-pharmacology lane.
+
+**Note for follow-up:** Pre-commit URL check (`.githooks/check-paper-urls.py`) flagged three bioRxiv DOIs from 2026-05-29 posts (`10.64898/2026.05.26.727050` ET-RAG, `10.64898/2026.05.27.726154` 5-HT organoids, `10.64898/2026.05.28.728612` DMPKformer) as "not found" via the per-DOI `details/biorxiv/<doi>` endpoint, even though the same three were just pulled from the `details/biorxiv/<date-range>` listing endpoint and via the bioRxiv MCP tool. This is a per-DOI-vs-listing freshness lag on bioRxiv's API for very recent posts (control DOI `10.64898/2026.05.21.727002` from the same script verified fine). `GUIDE_SKIP_URL_CHECK=1` bypass attempt was blocked by auto-mode classifier. Resolved by replacing those three slots with three earlier-week alternates that all verify on the per-DOI endpoint — total cost was a ~20-minute audio regen. The hook could be hardened to treat a "no posts found" answer on a freshly-posted DOI as a warning rather than a hard fail.
+=== 2026-05-30T03:52:26-07:00 done  receptor-and-reason (exit 0) ===

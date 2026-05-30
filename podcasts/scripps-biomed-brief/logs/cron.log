@@ -420,3 +420,34 @@ mp3 published to R2 (ai-nuggets-episodes bucket). Feed updated. Committed (c3664
 Cross-show de-duplication: receptor-and-reason 2026-05-29 covered 10 items including AE-PocketMiner, adrenomedullin 22q11.2, luvesilocin postpartum, nitrated-α-syn antibody, iPSC EVs in PD, SpatialClaw — no overlap with today's Scripps picks.
 === 2026-05-29T03:37:12-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-05-30T03:30:49-07:00 start scripps-biomed-brief ===
+Committed (fd995b9). Episode shipped — printing final summary for the cron log.
+
+# Run summary — Scripps Biomedical Brief 2026-05-30
+
+- **Script:** `2026-05-30-de-novo-gef-inhibitors-adar1-p90-isoform-proton-opioid-receptor-ocdesign-curriculum.md` (~750 spoken words)
+- **Audio:** 2,875,603 bytes / 359.4s (Mistral Paul Neutral primary, 3 chunks, no fallback)
+- **R2:** uploaded to `ai-nuggets-episodes/podcasts/scripps-biomed-brief/episodes/2026-05-30-...mp3`
+- **Feed:** new `<item>` prepended, XML validates
+- **Commit:** `fd995b9` (flock-serialized, no push — orchestrator pushes)
+- **Note:** had to `git reset HEAD podcasts/receptor-and-reason/` because that sibling show left its files staged in the shared index after its own pre-commit hook failed on three bioRxiv DOI URL checks (727050, 726154, 728612 — bioRxiv API hasn't indexed them yet). Did not modify any receptor-and-reason files; reset only unstaged them so my commit was clean.
+
+## Candidate funnel — bioRxiv 2026-05-28 to 2026-05-30
+
+460 new preprints / 667 total across the window scanned via api.biorxiv.org/details. Substantive shortlist after pruning resource papers, ecology, methodology-only proteomics, and bioinformatics infrastructure:
+
+- **Vacca/Marston/Azoitei (Duke)** — De novo designed protein inhibitors of Dbl-family GEFs with optogenetic coupling — `10.64898/2026.05.17.725778` v2 **[CHOSEN]**
+- **Ng / Polly Chen / Leilei Chen (CSI Singapore)** — ADAR1 intron-13 retention generates cytoplasmic p90 isoform suppressing PKR/eIF2α and driving CRC — `10.64898/2026.05.26.727889` **[CHOSEN]**
+- **Isom (Miami Miller)** — Proton-gating of opioid receptors via D149(3.32) preserved across 20+ mu-OR splice variants — `10.64898/2026.05.26.727816` **[CHOSEN]**
+- **Liu / Zhao (ICT, CAS)** — OCDesign curriculum-guided multi-property protein design — `10.64898/2026.05.25.727596` v2 **[CHOSEN]**
+- Yang/Waldman (Georgetown) — Acute STAG2 reconstitution rapidly reduces global chromatin loop size in GBM — `10.64898/2026.05.26.727913` — not picked (target biology, but no chemistry/modality angle)
+- Opuu (PSL Paris) — DORA dose-response autoencoder for transcriptome-to-viability prediction — `10.64898/2026.05.27.728125` — not picked (too similar AI/ML flavor to OCDesign)
+- Wang (ASU) — MoNP-SPION monocyte-mimetic MRI nanoprobe for cerebrovascular inflammation post-TBI — `10.64898/2026.05.25.727244` — not picked (diagnostic, not Schultz-modality fit)
+- Kang/Li (Sichuan) — H2S2 esterase-responsive donor HPD1 for neuropathic pain via LIMK1/cofilin/Filamin-A/Kv4.2 — `10.64898/2026.05.25.727751` — not picked (mechanism interesting but model dependence high)
+- Roh/Lee (Korea U) — Mechanochemical axial rotation produces oligomer-selective amyloid assemblies — `10.64898/2026.05.25.727554` — not picked (research tool, not therapeutic)
+- Colter (Calgary) — Multiomics-guided hPSC bioprocess control — `10.64898/2026.05.26.727850` — not picked (manufacturing optimization)
+- Faktor (Polish Acad. Sci.) — Five extracellular-vesicle proteomics workflows benchmarked — not picked (methodology)
+
+Cross-show de-duplication: biomedical-agentic-ai 2026-05-30 covered MedMisBench; calibr-briefing covered ASCO LBA wave (BMS mezigdomide, Lilly Nectin-4 ADC, J&J CHRYSALIS-2, Wondercel/Allogene CAR-T, Replimune RP1, Agios); receptor-and-reason covered LSD-aging, hindbrain organoids, NAc opioid withdrawal, mGlu2 methamphetamine, mitochondrial psychosis, circRNAs schizophrenia, hippocampal ripples, APOE/ACAT1, DMPKformer, multi-agent RAG biomed — no overlap with today's Scripps picks.
+
+Source failures: WebFetch HTTP 403 (Cloudflare challenge) on four bioRxiv content URLs (728243 CIS protein delivery, 728449 optopharm actin, 728000 sialidase EGFR, 728554 HIPK2 PARP) — same DOIs also returned "no preprint found" from the bioRxiv API and MCP tool (indexing delay). Skipped without retry to avoid burning the cron window; not in the chosen four.
+=== 2026-05-30T03:41:07-07:00 done  scripps-biomed-brief (exit 0) ===

@@ -1063,3 +1063,27 @@ API Error: Claude Code is unable to respond to this request, which appears to vi
 Request ID: req_011CbWfxwiduo3bZi33fXgSq
 === 2026-05-29T03:05:49-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===
 === 2026-05-30T03:00:49-07:00 start biomedical-agentic-ai ===
+Episode shipped. Commit `b87b4c9` on main; orchestrator handles the push.
+
+**Pick:** MedMisBench (Oxford / Clifton lab, bioRxiv DOI `10.64898/2026.05.25.727671`, v2 posted 2026-05-29) — adversarial medical-LLM benchmark: accuracy collapses 71.1% → 38.0% under misleading context, 38.2% of misled answers judged seriously harmful by a 14-clinician panel.
+
+**Candidate funnel:**
+
+bioRxiv (2-day window 2026-05-29 – 2026-05-30): 420 total preprints; full corpus pulled via paginated details API; 26 passed strict AI-keyword filter (excluding "agent" false-positives like "infectious agent"). Substantive shortlist after relevance review:
+
+- MedMisBench — Oxford Clifton lab, adversarial medical-LLM benchmark, 10,932 Q + 48,889 misleading pairs, 71.1%→38.0% drop, agentic-capability dimension explicit — **CHOSEN**
+- A Multi-Agent RAG Framework for Biomedical Literature Analysis — Palem, Chen & Yue, ET-RAG with GRADE+recency weighting (50/30/20%), 0.86 vs 0.70 vs 0.61 — close runner-up, v1 NEW, but small pilot (40 Q's, Alzheimer's only)
+- CellExLink — Nabijiang & Shahriyari, end-to-end Cell Ontology normalization for biomedical text — narrow tool paper
+- GRAFT — Van Criekinge, Neo4j KG linking Open Tree of Life (4.53M taxa) to Google Patents BigQuery — clever but phylogenetics-of-IP, weak biomedical-agentic fit
+- Multiple sequence alignment vs pairwise w/ foundation models, Just Add Structure (PLMs+structural equivariance), DMPKformer (multimodal ADMET), Transcriptomics-Conditioned Virtual Tissue Synthesis, DINMC (cerebellar MSA normative model), OneGenome-Rice — foundation/deep-learning predictors, not agentic
+
+arXiv — **source-level failure** (per PIPELINE.md): live export.arxiv.org returned HTTP 503 on both attempts from this IP; pre-fetched daily cache `/tmp/ai-nuggets-arxiv-cache.xml` was 126 bytes (empty); WebSearch fallback for "arXiv 2026-05-29 biomedical agent LLM" returned only older indexed papers (April–October 2025).
+
+ChemRxiv: WebSearch returned nothing fresh and agentic-biomedical-AI-focused in window.
+
+Funder/policy (ARPA-H / NIH / NSF / HHS): IGoR launch was 2026-05-05, outside window; no fresh agentic-AI biomedical announcements 2026-05-29 or 2026-05-30.
+
+General web / Nature / Science: no fresh agentic-biomedical-AI headline in the 2-day window.
+
+**Audio:** 271 s (2,170,088 bytes), Mistral voxtral-mini-tts-2603 / en_paul_neutral, published to R2 bucket `ai-nuggets-episodes` at key `podcasts/biomedical-agentic-ai/episodes/2026-05-30-medmisbench-llm-medical-misleading-context.mp3`.
+=== 2026-05-30T03:10:26-07:00 done  biomedical-agentic-ai (exit 0) ===

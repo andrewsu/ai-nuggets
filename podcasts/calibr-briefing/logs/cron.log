@@ -713,3 +713,32 @@ Spotlight rationale: Pfizer-Innovent $10.5B is the largest single Chinese pharma
 Episodes: headlines 6m03s (2.9 MB), spotlight 10m17s (4.9 MB). Both uploaded to R2 bucket `ai-nuggets-episodes`. Feed XML validated. Commit `b24253f` on main, awaiting orchestrator push.
 === 2026-05-29T03:22:04-07:00 done  calibr-briefing (exit 0) ===
 === 2026-05-30T03:10:49-07:00 start calibr-briefing ===
+## Calibr-Skaggs Daily Briefing 2026-05-30 — Done
+
+**Episodes shipped (2):**
+1. `2026-05-30-pharma-headlines.mp3` — 363 sec, 2,901,098 bytes
+2. `2026-05-30-mezigdomide-successor2-spotlight.mp3` — 490 sec, 3,917,157 bytes
+
+Both audio files generated via Mistral Paul Neutral, uploaded to R2 (`ai-nuggets-episodes` bucket), feed.xml updated, commit `0f1d59f` made under flock. Push deferred to orchestrator per PIPELINE.md.
+
+**Candidate funnel (Saturday May 30, ASCO 2026 day 2 in Chicago):**
+
+Scanned ~25 items across Fierce Biotech, Fierce Pharma, BioPharma Dive, CancerNetwork, OncLive, MyelomaCentral, ASCO Connection. Endpoints News returned 403 from this IP, retry also blocked — proceeded with remaining sources, no recall loss (the items I would have picked up there surfaced on Fierce/BioPharma Dive).
+
+Substantive shortlist after relevance filter:
+- **BMS mezigdomide SUCCESSOR-2** — Phase 3 LBA, 52% PFS risk reduction, 18 vs 8.3 mo, ORR 80.2% vs 53.4% — *chosen headline #1 + spotlight*
+- **Lilly LY4052031 Nexus-01 Phase 1** — Nectin-4 ADC, 42% ORR in advanced UC including post-Padcev — *chosen headline #2*
+- **J&J CHRYSALIS-2 OS update** — amivantamab+lazertinib, 41-mo median OS in atypical EGFR NSCLC — *chosen headline #3*
+- **Wondercel ASCO debut + Allogene CEO succession** — Frank Fan (ex-Legend) off-the-shelf CAR-T without gene editing; Chang→Roberts at Allogene — *chosen headline #4 (combined)*
+- **Replimune RP1 third BLA resubmission** — post-Makary/Prasad FDA leadership turnover unblocks — *chosen headline #5*
+- **Agios tebapivat MDS halt** — Phase 2b missed transfusion-independence threshold — *chosen headline #6*
+- GSK/Ionis bepirovirsen NEJM publication — discarded (already covered May 28)
+- Eli Lilly $4B vaccine triple (Curevo/LimmaTech/Vaccine Co.) — discarded (already covered May 27)
+- AbbVie Decnupaz BPDCN approval — discarded (covered May 29)
+- AbbVie Venclyxto EU CLL combo expansion — passed, marginal vs ASCO content
+- J&J Tremfya PsA joint-damage label expansion — passed
+- MannKind Afrezza pediatric approval — passed (low Calibr fit)
+- Dizal/J&J EGFR exon-20 update — passed (folded into CHRYSALIS-2 framing)
+- Gilead drops MiroBio BTLA arthritis — passed
+- Merck "cornerstone" China-licensed cancer drug at ASCO — passed, awaiting more specifics
+=== 2026-05-30T03:25:52-07:00 done  calibr-briefing (exit 0) ===
