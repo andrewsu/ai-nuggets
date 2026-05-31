@@ -452,3 +452,39 @@ Cross-show de-duplication: biomedical-agentic-ai 2026-05-30 covered MedMisBench;
 Source failures: WebFetch HTTP 403 (Cloudflare challenge) on four bioRxiv content URLs (728243 CIS protein delivery, 728449 optopharm actin, 728000 sialidase EGFR, 728554 HIPK2 PARP) — same DOIs also returned "no preprint found" from the bioRxiv API and MCP tool (indexing delay). Skipped without retry to avoid burning the cron window; not in the chosen four.
 === 2026-05-30T03:41:07-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-05-31T03:30:06-07:00 start scripps-biomed-brief ===
+Committed (b042608). The pre-commit URL hook passed — all four bioRxiv URLs resolved through the indexed API. Printing final summary for the cron log.
+
+# Run summary — Scripps Biomedical Brief 2026-05-31
+
+- **Script:** `2026-05-31-vhl-stabilizer-hdac6-znf-rapamycin-k2p-condensate-partitioning.md` (~743 spoken words)
+- **Audio:** 2,899,008 bytes / 362.3s (Mistral Paul Neutral primary, 3 chunks, no fallback)
+- **R2:** uploaded to `ai-nuggets-episodes/podcasts/scripps-biomed-brief/episodes/2026-05-31-...mp3` via `npx wrangler r2 object put`
+- **Feed:** new `<item>` prepended, XML validates
+- **Commit:** `b042608` (flock-serialized, no push — orchestrator pushes)
+- **Note:** `publish_episode.sh` initially failed under cron because `npx` isn't on the bare shell's PATH; ran successfully after prepending `/home/asu/.nvm/versions/node/v24.14.0/bin` to PATH. Worth fixing in the script (load nvm or hardcode the npx path) since this will recur on every cron run.
+
+## Candidate funnel — bioRxiv 2026-05-26 to 2026-05-30 window scanned
+
+bioRxiv search MCP across bioengineering, biochemistry, pharmacology & toxicology, and synthetic biology for 2026-05-29 → 2026-05-31 (~70 new preprints) plus 2026-05-26 → 2026-05-28 backfill (~70 more). Critical filter beyond Schultz-relevance: bioRxiv details API indexing status — many candidates from 2026-05-27 to 2026-05-30 are not yet indexed and the pre-commit URL check fails them as "not found". Verified indexing on every URL before committing.
+
+Substantive shortlist after pruning resource papers, ecology, methodology-only proteomics, manufacturing optimization, and the items yesterday's run already covered (Tate RAB27, UCLA P450 allene/alkyne, Liu/Zhao OCDesign, etc.):
+
+- **Karanicolas/Golemis (Fox Chase)** — CP4.29 small-molecule pharmacological chaperone stabilizes folded native conformation of mutant pVHL, restores wild-type activity in ccRCC — `10.64898/2026.01.02.697373` v3 **[CHOSEN]**
+- **Gordon/Burslem (Penn)** — Quinazolinone→phthalazinone HDAC6 ZnF-UBD/ubiquitin PPI inhibitors with ML co-folding-predicted IC50 rank order — `10.64898/2025.12.18.695271` v2 **[CHOSEN]**
+- **Khajoeinejad/Riegelhaupt (Weill Cornell)** — FRB-domain insertion into TREK1 K2P channel produces rapamycin-activatable potassium channels with cryo-EM-visualized active conformation — `10.64898/2026.05.21.726927` **[CHOSEN]**
+- **Khambhawala/Mittal (Texas A&M)** — Interpretable graph ML model for small-molecule partition coefficients across four biomolecular condensates, scoring 1.7M ChEMBL molecules — `10.64898/2026.05.23.727301` **[CHOSEN]**
+- Matsuoka/Kiyonaka (Nagoya) — Off-target-free chemogenetic platform for GPCR physiology via clinical A2AR antagonist + insensitive A2AR mutant — `10.64898/2026.05.24.727545` — not picked (similar chemogenetic flavor to Riegelhaupt K2P paper, picked the structurally more novel one)
+- Wirth/Peschek (Heidelberg) — Eukaryotic tRNA ligases RTCB/Trl1 mediate ribosomal RNA strand-break repair restoring translation — `10.64898/2026.05.26.727988` — not picked (fundamental discovery but no near-term chemistry/modality hook)
+- Hibma/Simmons (Michigan) — B. subtilis rRNA methylome mapping with 11 newly characterized methyltransferases linked to antibiotic sensitivity — `10.64898/2026.05.25.727669` — not picked (target biology, but bacterial scope narrower than the chosen four)
+- Ayub/Wheatley (Birmingham/Coventry) — PCO371 PTH1R intracellular agonism produces pan-activation of signalling partners, overturning 2023 Nature G-s-biased claim — `10.64898/2026.05.27.728112` — not picked (best fresh class B GPCR paper of the day, but bioRxiv API not yet indexed → would fail pre-commit URL check)
+- Wallace/Kellogg (Cornell) — Programmable DNA integration with New-to-Nature serine recombinases via computational protein design, DSB-free large-cargo integration — `10.64898/2026.05.29.728539` — not picked (excellent gene-therapy modality but API not yet indexed → would fail pre-commit URL check)
+- Bhattacharya/DeGrado (UCSF) — Interplay of stability and dynamics in optimization of a highly proficient de novo enzyme — `10.64898/2026.05.29.728685` — not picked (API not yet indexed → would fail pre-commit URL check)
+- Luo/An (Qilu Pharmaceutical) — Novel muscle-tropic AAV capsid >10-fold over AAV9 with NHP validation — `10.64898/2026.05.22.727076` — not picked (similar modality story to yesterday's M1 capsid coverage on 2026-05-28)
+- Wu (Temple) — Stapled-peptide talin-integrin activation inhibitors — `10.64898/2026.05.25.727761` — not picked (Schultz-relevant but design-principles paper rather than therapeutic vignette)
+- Bans Burtchaell/Connor (Macquarie) — (+)-trans-CBD is a CB2 agonist — `10.64898/2026.05.25.727077` — not picked (pharmacology curiosity, not novel modality)
+- Janouskova-Randakova/Jakubik (Czech Acad. Sci.) — Dualsteric muscarinic antagonist KH-5 — `10.64898/2026.01.15.699667` v2 — not picked (v2 update, less news-worthy)
+
+Source failures: WebFetch HTTP 403 (Cloudflare challenge) on bioRxiv content URLs for the three brand-new fresh papers (PCO371 PTH1R pan-activation, Wallace/Kellogg DNA integration, Bhattacharya/DeGrado de novo enzyme) — abstract text obtained via bioRxiv search MCP previews, but `api.biorxiv.org/details/biorxiv/...` returns "no posts found" because indexing lag is 2-3 days; pre-commit URL check would fail. Decided to ship four well-indexed Schultz-fit papers from the 2026-05-26 to 2026-05-28 window instead.
+
+Cross-show de-duplication: receptor-and-reason 2026-05-30 and biomedical-agentic-ai 2026-05-30 had no overlap; calibr-briefing 2026-05-30 covered ASCO plenary day five drug-pipeline news — distinct from these four basic-science / drug-discovery chemistry stories.
+=== 2026-05-31T03:43:42-07:00 done  scripps-biomed-brief (exit 0) ===

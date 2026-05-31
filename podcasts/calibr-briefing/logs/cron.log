@@ -743,3 +743,35 @@ Substantive shortlist after relevance filter:
 - Merck "cornerstone" China-licensed cancer drug at ASCO — passed, awaiting more specifics
 === 2026-05-30T03:25:52-07:00 done  calibr-briefing (exit 0) ===
 === 2026-05-31T03:10:06-07:00 start calibr-briefing ===
+Commit complete. mp3s are gitignored (R2 serves them per the pipeline). Per PIPELINE.md, no push — orchestrator handles that.
+
+---
+
+## Calibr-Skaggs Daily Briefing — 2026-05-31 (Sunday) — Run Summary
+
+**Episodes shipped:**
+- `2026-05-31-pharma-headlines.mp3` — 4:46 (286s, 2.29 MB) — ASCO plenary day roundup, Lilly $3.83B vaccines triple, ASCENT-04 NEJM
+- `2026-05-31-harmoni-6-ivonescimab-spotlight.mp3` — 6:12 (372s, 2.97 MB) — HARMONi-6 ivonescimab PD-1xVEGF bispecific OS readout
+
+**Audio:** Mistral primary (Paul Neutral), both clean. **R2:** both uploaded to `ai-nuggets-episodes`. **Feed:** validated XML. **Commit:** `1cc5865` (mp3s gitignored — R2 serves; orchestrator pushes).
+
+**Candidate funnel:**
+
+ASCO 2026 plenary day five LBAs (all scanned, all relevant) —
+- LBA1 PROTEUS — J&J apalutamide perioperative high-risk localized prostate cancer (headlines)
+- LBA2 SARC041 — Lilly abemaciclib dedifferentiated liposarcoma (headlines)
+- LBA3 LIBRETTO-432 — Lilly selpercatinib adjuvant RET+ NSCLC (headlines)
+- LBA4 **HARMONi-6** — Akeso/Summit ivonescimab vs tislelizumab+chemo 1L squamous NSCLC OS (**headlines + spotlight**)
+- LBA5 RASolute 302 — Revolution Medicines daraxonrasib 2L PDAC (mentioned, covered in May 24 spotlight; not repeated)
+
+Non-ASCO weekend candidates —
+- Lilly $3.83B Curevo/LimmaTech/Vaccine Co. infectious-disease triple (May 26 announcement, still in news cycle) — **headlines**
+- ASCENT-04/KEYNOTE-D19 NEJM publication of Trodelvy+Keytruda 1L PD-L1+ mTNBC (May 30) — **headlines**
+- Verve/Lilly VERVE-102 NEJM publication (covered May 26 spotlight; not repeated)
+- Akero/Novo Nordisk efruxifermin SYMMETRY follow-up — no fresh data this weekend, skipped
+- Kardigan IPO filing + Foresite Quince Therapeutics investment — both noted but not material enough to crowd ASCO
+
+Spotlight choice rationale: HARMONi-6 is the single most-watched data drop of ASCO 2026 — first China-developed asset to land plenary in 60+ years, first PD-1xVEGF bispecific to test OS against a PD-1+chemo standard, and a direct calibration of the Pfizer-Innovent $10.5B Thursday deal thesis and Calibr's bispecific/multi-receptor format work.
+
+Caveat: actual OS hazard ratio not published in pre-plenary embargo lift; spotlight covers stakes, prior PFS, mechanism, Summit commercial position, and Calibr read-throughs rather than presenting fabricated numbers. Post-plenary follow-up noted in script for tomorrow's episode.
+=== 2026-05-31T03:22:58-07:00 done  calibr-briefing (exit 0) ===

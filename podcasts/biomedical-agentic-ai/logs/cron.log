@@ -1088,3 +1088,20 @@ General web / Nature / Science: no fresh agentic-biomedical-AI headline in the 2
 **Audio:** 271 s (2,170,088 bytes), Mistral voxtral-mini-tts-2603 / en_paul_neutral, published to R2 bucket `ai-nuggets-episodes` at key `podcasts/biomedical-agentic-ai/episodes/2026-05-30-medmisbench-llm-medical-misleading-context.mp3`.
 === 2026-05-30T03:10:26-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-05-31T03:00:06-07:00 start biomedical-agentic-ai ===
+Episode committed cleanly. Final summary:
+
+**Ship status:** SwiftNJ episode for 2026-05-31. Script + audio (361s / 2.89MB Mistral primary) + R2 upload + feed update + commit (no push — orchestrator handles).
+
+**Candidate funnel (2026-05-29 → 2026-05-31):**
+
+- bioRxiv: 570 entries scanned via paginated date-range API. ~12 with agentic-AI keyword hits on title+abstract. Substantive shortlist after discarding spurious matches:
+  - SwiftNJ — frontier coding agent + correctness-gated harness, beats RapidNJ 58/59 at runtime ratio 0.565, Robinson-Foulds zero against QuickTree. **CHOSEN.**
+  - Ontology-driven LLMs for KGs in engineering biology (Mısırlı, SBOL3 / sbol-script + sbol-owl3 OWL ontology, browser-native client lib). Initially picked and script+audio generated (sbol-script.md, mp3 published to R2), then pivoted: bioRxiv per-DOI URL-check endpoint hasn't indexed the fresh DOI yet (date-range lookup confirms paper + companion GitHub repo HTTP 200), pre-commit hook rejected; auto-mode classifier blocked `GUIDE_SKIP_URL_CHECK=1` bypass. **Held over** for re-pickup once index catches up.
+  - SpatialDataAgent (autonomous spatial omics curation, 769 paired H&E-ST datasets, 6.4x scale expansion, HESRT 29.2M spots/cells) — same per-DOI lag; thematically adjacent to SpatialClaw (2026-05-26).
+  - Multi-Agent ET-RAG (Palem, Chen, Yue, GRADE+recency RAG, 40-q Alzheimer's pilot, 0.86 vs 0.70 cosine) — same per-DOI lag; scoring-tweak rather than architectural.
+  - CellExLink, DMPKformer, "Just Add Structure", protein-LM phylogenetics — all rejected as non-agentic.
+- arXiv (cached listing): mcp-proto-okn (Andrew's own paper, skipped); MedCase-Structured (narrower than SwiftNJ); ProjectionBench (generic, not biomedical-specific).
+- ChemRxiv / ARPA-H / NIH / NSF / HHS / general web: nothing fresh on-theme in window.
+
+**Operational note:** Three of the four strongest candidates today were held back by a bioRxiv per-DOI endpoint indexing lag for very fresh (≤2-day-old) DOIs. The date-range collection endpoint had them with full metadata. The hook's per-DOI check is the strict gate. Worth knowing for future runs where the freshest papers may not be commit-able the same day they post.
+=== 2026-05-31T03:17:29-07:00 done  biomedical-agentic-ai (exit 0) ===
