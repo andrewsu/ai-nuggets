@@ -772,3 +772,4 @@ Episode shipped. Commit `a8341a9` landed with the script, audio uploaded to R2, 
 - arXiv listing API: shared daily cache `/tmp/ai-nuggets-arxiv-cache.xml` was 14 bytes ("Rate exceeded") — used `site:arxiv.org` WebSearch as fallback
 - bioRxiv individual-detail API lag: 2026.06.01.726320 and 2026.05.28.728535 returned "no posts found" individually despite appearing in date-range API; URL-check hook would have failed → swapped both items for ones with confirmed individual-detail responses
 === 2026-06-03T03:45:38-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-06-04T03:20:03-07:00 start receptor-and-reason ===
