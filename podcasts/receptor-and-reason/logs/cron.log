@@ -818,3 +818,37 @@ Sources:
 === 2026-06-05T03:20:18-07:00 start receptor-and-reason ===
 Another stale background find — already resolved by locating wrangler in `worker/node_modules/.bin/`. Episode shipped, nothing to do.
 === 2026-06-05T03:52:28-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-06-06T03:20:28-07:00 start receptor-and-reason ===
+Committed. Episode shipped — mp3 uploaded to R2, feed updated, ledger appended.
+
+## Run summary — receptor-and-reason 2026-06-06
+
+**Episode:** 10 items, ~17 minutes audio, 1034s, 8.27 MB.
+
+**Candidate funnel:**
+
+- **bioRxiv** (2026-05-30 → 2026-06-06): 1,419 unique preprints scanned via details API pagination. 411 keyword-matched, 79 after CNS-pharm/agentic-bio trimming.
+- **arXiv** (last 7 days, cs.AI/cs.CL/cs.MA/q-bio.QM/q-bio.NC): cache was empty (rate-limited at pre-fetch), direct API call succeeded; 19 biomedical+agentic items after dedup against shipped ledger.
+- **Tier 1 journals / Psychiatric Times / society press**: not separately surveyed — bioRxiv yield was sufficient to fill the 8-12 floor without expanding the source mix.
+
+**Shortlist after spurious-match cleanup:**
+
+- doi:10.64898/2026.03.19.712902 — NAPE-LRRK2 axis (Institut Pasteur) — **picked**
+- doi:10.64898/2026.05.29.728874 — α-Syn / γ-Tubulin / dopamine release (Columbia) — **picked**
+- doi:10.64898/2026.06.02.729610 — Aβ-U1 snRNP binding in AD (Brigham/Harvard) — **picked**
+- doi:10.64898/2026.06.02.729441 — Stimulus vs arousal ACh in cortex (Mass Eye/Harvard) — **picked**
+- doi:10.64898/2026.06.01.729412 — DLS astrocyte modulation of ethanol stimulation (Rutgers) — **picked**
+- doi:10.64898/2026.06.02.729589 — Oral xylazine SA model (Pittsburgh) — **picked**
+- doi:10.64898/2026.06.02.729613 — Behavioral flexibility + microbiome oxycodone SA (Rowan) — **picked**
+- doi:10.64898/2026.05.27.728311 — 5-HT1B naratriptan-derived agonist comp design (UC Davis) — **picked**
+- doi:10.64898/2026.06.01.729343 — P-gp GIN-TDC ADMET benchmark (QuantisMol) — **picked**
+- doi:10.64898/2026.02.26.708361 — ChatSpatial agentic spatial omics (Mayo Clinic) — **picked**
+- doi:10.64898/2026.05.28.728340 — SDE-NONMEM popPK misspecification — considered, dropped to keep 10
+- doi:10.1101/2024.07.25.605088 — Nigral Lewy ultrastructure — dropped (topic overlap with yesterday's CLEM Lewy pick)
+- doi:10.64898/2026.06.03.729859 — Multiplexed macaque midbrain DA neurons — dropped (descriptive anatomy, lower drug-discovery actionability)
+- doi:10.64898/2026.05.28.728438 — D1 proximity labelling in Drosophila — dropped (modest DA pharm signal, Drosophila)
+- doi:10.64898/2026.06.02.729530 — β-blockers in ED cocaine — dropped (systematic review, not novel science)
+- arxiv:2606.05847 — Agentic Molecular Recovery — held back, ChatSpatial covered the agentic-bio slot more cleanly
+
+No source-level failures; no Tier 4 fallback needed. Push will be handled by the orchestrator.
+=== 2026-06-06T03:36:14-07:00 done  receptor-and-reason (exit 0) ===

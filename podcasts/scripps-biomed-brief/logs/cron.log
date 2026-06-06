@@ -609,3 +609,22 @@ Shortlist after relevance filter:
 Sources: bioRxiv API (pages 0, 100, 200 — all returned content; pages 300+ empty). No source failures.
 === 2026-06-05T03:38:53-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-06-06T03:30:28-07:00 start scripps-biomed-brief ===
+Episode shipped. Orchestrator will push.
+
+**Final summary — Scripps Biomedical Brief 2026-06-06**
+
+Picked: 4 stories — xVDM volumetric DNA microscopy (Weinstein, U Chicago), LDLR regulatory-RNA-targeting ASOs (Tardiff, CAMP4 Therapeutics), posaconazole for TDP-43 (Sachs, U Minnesota), germline architecture of immunodominance (Shrock/Elledge/Baker, Harvard/IPD).
+
+**Candidate funnel (bioRxiv, 2026-06-04 to 2026-06-06 windows)**:
+- bioengineering: 22 scanned, ~10 substantively relevant. xVDM (Weinstein) **[CHOSEN]**; CD-targeted LNP for Pkd2 mRNA in ADPKD (Chung/USC); Patient-Specific Vascularized Lung Tumor Organoids (Varghese/Duke) **[already shipped 06-05]**; sdAb-based BCMA CAR-T (Prosper); modular T-cell mucosal flu vaccine (Tripathi)
+- pharmacology/toxicology: 7 scanned, ~4 substantively relevant. Anti-Polyamine DFMO for ADPKD (Vitek/Duke); UL12 alkaline nuclease anti-herpes small molecules (Weller); CFTR VX-121 off-target profile (Schlebach)
+- synthetic biology: 5 scanned, 2 substantive. MicroGrowAgents (Joachimiak) **[already covered on biomedical-agentic-ai 06-06]**
+- biochemistry: 16 scanned, ~7 substantive. Baker β-barrel nanopores **[already shipped 06-05]**; FBXO7/PI31 proteasome regulation **[already shipped 06-05]**; de novo HSP90 closed-state binders (Artemyev/Iowa); VenusPETase DL-designed PET hydrolase (Hong/SJTU — non-biomedical); SOD1 thiol oxidation to thiosulfinates (Switzer)
+- cancer biology: 20 scanned, ~9 substantive. EZH1/2 inhibition + MHC II de-repression (Brainson/Kentucky); BTK + immunovirotherapy in GBM (Hong/Augusta); Adiposome lipid nanoparticles (Liu); EZH2 inactivation + MEK vulnerability in CMML (Zebisch/Graz)
+- cell biology: 22 scanned, ~6 substantive. Posaconazole TDP-43 (Sachs/Minnesota) **[CHOSEN]**; PPM1D proteostasis rewiring (Miller/MGH); α-synuclein + γ-tubulin presynaptic microtubule nucleation (Bartolini/Columbia)
+- immunology: 10 scanned, ~5 substantive. Germline immunodominance architecture (Shrock/Elledge/Baker) **[CHOSEN]**; AF3 TCR (Altin/TGen) **[already shipped 06-05]**
+- molecular biology: 17 scanned, ~7 substantive. LDLR regRNA-targeting ASOs (Tardiff/CAMP4) **[CHOSEN]**; saturating TERC variants redefine telomerase (Agarwal/BCH); persistent TOP1 cleavage in EGFR-targeted drug-tolerant cells (Sordet)
+- Industry/journal web search: no relevant breakthroughs surfaced for the 24-48 h window.
+
+Script ~700 words; mp3 408 s / 3.27 MB; feed.xml updated and validated; committed under flock as instructed (no push — orchestrator handles that).
+=== 2026-06-06T03:37:38-07:00 done  scripps-biomed-brief (exit 0) ===

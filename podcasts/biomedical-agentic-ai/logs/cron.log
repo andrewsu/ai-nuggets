@@ -1227,3 +1227,24 @@ Committed. Episode shipped.
 **Shipped:** Script + audio (343.8s, 2.75 MB) generated via Mistral primary voice, uploaded to R2 bucket `ai-nuggets-episodes`, feed.xml updated, commit `ba70eb3`. Push left to the orchestrator.
 === 2026-06-05T03:11:07-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-06-06T03:00:28-07:00 start biomedical-agentic-ai ===
+MP3s are correctly excluded — R2 is authoritative. Commit complete. The orchestrator pushes at the end of the run.
+
+## Funnel
+
+**Sources surveyed:**
+- **bioRxiv** — 192 entries scanned across pages 0–180 (full collection paginated, 7 pages), 19 relevance-keyword hits after title+abstract filter
+- **arXiv** — listing API hard-429'd (HTTP 429 on initial call and 60s-backoff retry); per PIPELINE.md proceeded with remaining sources, coverage of arXiv submissions in 2-day window is best-effort via `site:arxiv.org` WebSearch and flagged here for audit
+- **ChemRxiv** — WebSearch checked, nothing fresh in 2-day window
+- **News / product launches** — WebSearch checked, AWS Bio Discovery (Apr) and NVIDIA+Lilly already covered, outside window
+- **Policy (ARPA-H/NIH/NSF/HHS)** — ADVOCATE was Jan, IGoR previously covered, no fresh announcements in window
+
+**Substantive shortlist:**
+- **MicroGrowAgents** — bioRxiv 10.64898/2026.06.04.729985 — multi-agent KG-grounded microbial cultivation design with wet-lab validation — **CHOSEN**
+- Evaluating AI-Assisted Customer Verification for Synthetic Nucleic Acid Screening — bioRxiv 10.64898/2026.02.27.708645 — Gemini-assisted biosecurity screening, narrower regulatory-evaluation scope
+- Scaling SMILES-Based Chemical Language Models for Therapeutic Peptide Engineering — bioRxiv 10.64898/2026.01.06.697994 — foundation model scaling, not agentic
+- Protein LLM assisted one-to-one gene homology mapping — bioRxiv 10.1101/2025.10.17.683009 — PLM-as-tool, not multi-agent
+
+**Selected:** MicroGrowAgents — KG-grounded multi-agent system with closed-loop wet-lab validation (280 cultures, three-objective Pareto), provenance built in. Directly on the agentic-AI + biomedical-KG + open-science axes the audience cares about; the Joachimiak/KG-Microbe lineage gives it durable connective tissue to the broader biomedical-KG community.
+
+Episode committed (`9f405b4`); audio uploaded to R2; orchestrator will push at end of run.
+=== 2026-06-06T03:08:02-07:00 done  biomedical-agentic-ai (exit 0) ===

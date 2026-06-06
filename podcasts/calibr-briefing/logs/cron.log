@@ -894,3 +894,28 @@ Fierce Biotech / Fierce Pharma / Endpoints / BioPharma Dive / STAT / press relea
 All source pulls succeeded (no transient failures). Spotlight chose Innovent over Parabilis (already a May 19 spotlight) and over ADC Therapeutics deaths (worse-news angle has less Calibr-strategic substance than the CLDN18.2 modality-cascade story).
 === 2026-06-05T03:23:49-07:00 done  calibr-briefing (exit 0) ===
 === 2026-06-06T03:10:28-07:00 start calibr-briefing ===
+Both Saturday episodes generated, published to R2, feed updated, and committed (commit `ef4011f`). Orchestrator will handle the push.
+
+**Candidate funnel (Saturday roundup, June 6, 2026):**
+
+Sources scanned: Fierce Biotech, Endpoints News, BioPharma Dive, BioSpace, STAT, Clinical Trials Arena, ASCO Post — plus EULAR press releases (London, June 3-6).
+
+Shortlist (substantive candidates after spurious-match filtering):
+
+- Cullinan CLN-978 (CD19xCD3 TCE) — EULAR 2026 poster TODAY (Sat June 6) — 4/5 RA + 5/6 SLE responders + synovial-tissue B-cell depletion **[chosen — headlines + lead theme of spotlight]**
+- Kyverna miv-cel (KYV-101) autologous CD19 CAR-T — EULAR update, 66.6% ACR70 at week 36 in COMPARE ACPA+ refractory RA **[chosen — headlines + co-anchors spotlight]**
+- Cabaletta rese-cel preconditioning-free lupus EULAR update — already covered in Friday brief, recapped in spotlight as third leg of B-cell-depletion convergence
+- Lilly LIBRETTO-432 adjuvant selpercatinib Phase 3 (ASCO + NEJM) — 83% reduction in recurrence/death in RET-fusion+ early-stage NSCLC **[chosen — headlines]**
+- Alnylam-Inceptive Nucleics $30M upfront / $2B-milestone AI siRNA collaboration (announced this week) **[chosen — headlines]**
+- Lilly-Hanmi sonefpeglutide GLP-2 ($75M / $1.2B) + Lilly-Haisco 5-program ($87M / ~$3B) twin deal day recap **[chosen — headlines]**
+- Revolution Medicines daraxonrasib pancreatic cancer (ASCO plenary May 31) — six days old, declined for Saturday-light slot
+- ASCO ivonescimab HARMONi-6 (Akeso/Summit) — already spotlighted on May 31, declined
+- Affibody regaining izokibep from Acelyrin — declined, lower information density
+- RA Capital Swiftbridge "Chinese clinical expertise in a box" — declined, more meta than substantive
+- AstraZeneca hiring FDA cell/gene therapy veteran — declined as personnel item
+- Legend LB2501 in vivo CAR-T data ahead of EHA — already covered Thursday June 4
+
+All sources responded normally; no transient failures this run.
+
+**Spotlight**: EULAR 2026 autoimmune B-cell depletion convergence — autologous CD19 CAR-T (Cabaletta + Kyverna) vs subcutaneous CD19xCD3 TCE (Cullinan), tissue-vs-blood depletion, immune-reset definition, and what the modality split means for Calibr's pipeline thinking.
+=== 2026-06-06T03:23:37-07:00 done  calibr-briefing (exit 0) ===
