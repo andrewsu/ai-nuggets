@@ -1270,3 +1270,32 @@ Episode shipped — committed locally (orchestrator will push).
 **News / funders / ARPA-H / NIH / NSF / HHS**: NVIDIA agentic-AI healthcare model announcements and a Nature Biotechnology commentary surfaced in search but are commentary/announcement material rather than novel research in the 2-day window.
 === 2026-06-07T03:08:00-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-06-08T03:00:03-07:00 start biomedical-agentic-ai ===
+Episode shipped — committed locally (orchestrator will push).
+
+**Today's pick:** LinkD / LinkD-Agent — Kuan-lin Huang's group at the Icahn School of Medicine at Mount Sinai, bioRxiv 10.64898/2026.04.19.719462 v2 posted 2026-06-07. Four-layer agentic drug-repurposing platform: LinkD-Bind diffusion-based binding affinity (ranks first in 8 of 9 BindingDB / Davis / KIBA benchmarks with the biggest gains under cold-start), LinkD-Select selectivity-plus-docking (95.3% recovery of known drug-target pairs), LinkD-Pheno phenotypic integration across 960 cancer cell lines (34 novel drug-gene pairs, ~85% recovery of known targets in top 50), and a natural-language LinkD-Agent orchestrator on top, served as a public web platform. Population-scale validation across 11.5M individuals (Mount Sinai EHR + UK Biobank) shows LinkD-prioritized propranolol (HR 0.82) and carvedilol (HR 0.92) reduce 5-year prostate cancer incidence vs metoprolol — corroborated by ADRB2 docking and LNCaP wet-lab growth inhibition. Same Huang lab as the May 5 ADA Consortium agent-as-auditor paper, now moving to agent-as-multi-scale-repurposing-orchestrator.
+
+## Candidate funnel
+
+**bioRxiv** (2026-06-07 to 2026-06-08): 104 entries scanned full-collection via the details API (cursor pagination through all 4 pages), keyword filter on title+abstract; substantive shortlist:
+- ✅ **LinkD / LinkD-Agent** — Mount Sinai Huang group, four-layer agentic drug repurposing with 11.5M-patient EHR validation and wet-lab corroboration (10.64898/2026.04.19.719462v2, 2026-06-07) — CHOSEN
+- CascadeMAP — Masaryk Univ Prokop, autonomous closed-loop microfluidic enzyme cascades w/ Bayesian opt + multi-agent AI, 220K reactions in 7 days (10.64898/2026.06.04.730034, 2026-06-07) — strong but already substantively covered in yesterday's Scripps Biomedical Brief and adjacent to MicroGrowAgents (2026-06-06)
+- BacteReason — already shipped in yesterday's biomedical-agentic-ai episode (2026-06-07)
+- Quantifying Evidence for Competing Biomedical Hypotheses (KM-GPT-DCH) — Morgridge Stewart, LLM + Bayesian co-occurrence for controversial-hypothesis comparison (10.64898/2026.06.05.730173, 2026-06-07) — useful LLM-as-meta-analyst but more analytical than agentic
+- Polynomial Trajectory Compression for Protein LM Embeddings (10.64898/2026.06.05.730461, 2026-06-07) — PLM tooling, not agentic
+- Metadata Collector — open-source platform for sequencing metadata (10.64898/2026.06.05.730314, 2026-06-07) — standards/ontology infrastructure, not agentic
+
+**arXiv** (read shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, June 3-5 submissions — weekend lag): strict biomed+agentic filter applied; substantive shortlist:
+- Towards World Models in Biomedical Research (arXiv:2606.05925, 2026-06-04) — position paper, framing rather than load-bearing technical contribution
+- Agentic Molecular Recovery (arXiv:2606.05847, 2026-06-04) — agentic SMILES repair, narrower than LinkD's multi-scale platform
+- DaX pathology vision foundation model (arXiv:2606.06983, 2026-06-05) — foundation model not agentic
+- MADE multilingual agentic diagnosing engine (arXiv:2606.07020, 2026-06-05) — agentic methodology applied to LLM benchmarking, not biomedical
+- LLM-Guided Evolution for Medical Decision Pipelines (arXiv:2606.07342, 2026-06-05) — useful but narrower clinical-pipeline scope
+
+**ChemRxiv** (via WebSearch): no fresh biomedical-agentic-AI hits in the 2-day window.
+
+**Policy / funders** (ARPA-H, NIH, NSF, HHS): IGoR Proposers' Day in DC today/tomorrow (substantively previously covered); no fresh agentic-AI biomedical announcements in the 2-day window.
+
+**News / product launches**: Nature Biotechnology commentary "Agentic AI and the rise of in silico team science in biomedical research" continues to surface but is commentary, not novel research.
+
+Why LinkD-Agent won: (1) the cold-start binding-prediction gain is the right regime for repurposing, done the right way; (2) four-layer convergence on a mechanistically-backed population-scale clinical signal (agentic prioritization + 11.5M-person retrospective EHR + ADRB2 docking + LNCaP wet-lab) is the cleanest demonstration this year that agentic orchestration buys more than each evidence layer alone; (3) clean architectural arc from the May 5 ADA Consortium agent-as-auditor paper (same lab) to agent-as-multi-scale-repurposing-orchestrator within five weeks; (4) public web platform served as a usable artifact, fits the open-science angle; (5) thematically distinct from the recent run with first multi-scale-evidence-integration drug-repurposing platform and first 11.5M-patient EHR-scale clinical corroboration in the stretch.
+=== 2026-06-08T03:09:49-07:00 done  biomedical-agentic-ai (exit 0) ===

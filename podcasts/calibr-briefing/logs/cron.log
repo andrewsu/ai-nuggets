@@ -963,3 +963,25 @@ Sources scanned (Sunday-light, 3-item headlines + 1 spotlight):
 **Selection rationale:** Sunday is light by design; ADA 2026 produced three same-weekend incretin readouts that line up as a tight thematic roundup. Retatrutide Phase 3 is the largest pharmacologic weight-loss readout ever and directly recalibrates Calibr's MASH biologic competitive landscape via TRIUMPH-3 (Phase 3 MASH reading out 2H 2026) — clear spotlight pick.
 === 2026-06-07T03:22:55-07:00 done  calibr-briefing (exit 0) ===
 === 2026-06-08T03:10:03-07:00 start calibr-briefing ===
+Two episodes shipped for 2026-06-08.
+
+**Headlines** (~7 min): Six items — Roche-Nurix bexobrutideg BTK degrader deal ($700M upfront, up to $2.3B), Lilly retatrutide TRIUMPH-1 full safety/tolerability detail at ADA, Pfizer berobenatide monthly GLP-1 VESPER expansion, AstraZeneca elecoglipron Phase 2b, Lilly Foundayo orforglipron Phase 3 symposium, and Boehringer survodutide SYNCHRONIZE-1/MASLD NEJM + Nature Medicine publications.
+
+**Spotlight** (~9 min): Roche-Nurix bexobrutideg BTK degrader modality-validation deep dive — four threads on mechanism (hetero-bifunctional cereblon-recruiting degrader bypassing C481S + L528W resistance), clinical base (Phase 1a/b 78.6% ORR in heavily pretreated R/R CLL with CNS activity), why Roche/now (post-fenebrutinib MS bet + CSU vs Novartis remibrutinib), and TPD modality signal (largest single-asset commitment in field, first major to commit degrader to immunology + neurology). Calibr connections on covalent/chemoproteomics capability overlap, raised commercial ceiling for immune-active degraders, and the catalytic-pharmacology safety framing.
+
+## Candidate funnel
+
+Sources scanned: Endpoints, Fierce Biotech, BioPharma Dive, STAT, ADA 2026 program. Substantive shortlist:
+
+- **Roche-Nurix bexobrutideg deal** ($700M upfront / up to $2.3B) — announced this morning, globenewswire — **CHOSEN (spotlight)**
+- **Lilly retatrutide TRIUMPH-1 detailed safety/tolerability at ADA** — chose for headlines (spotlight covered yesterday)
+- **Pfizer berobenatide VESPER monthly GLP-1** ADA — headlines
+- **AstraZeneca elecoglipron AZD5004 VISTA/SOLSTICE Phase 2b** ADA Mon — headlines
+- **Lilly Foundayo orforglipron Phase 3 symposium** ADA Mon — headlines
+- **Boehringer survodutide SYNCHRONIZE-1 / SYNCHRONIZE-MASLD** NEJM/Nature Medicine — headlines
+- Lundbeck bocunebart Phase 2b PACAP migraine (June 4, stale)
+- Hikma v. Amarin Supreme Court skinny-label ruling (June 4, stale)
+- House anti-China-biotech legislation (mention, but limited info)
+
+Commit `58398b2` is local; orchestrator pushes.
+=== 2026-06-08T03:22:19-07:00 done  calibr-briefing (exit 0) ===

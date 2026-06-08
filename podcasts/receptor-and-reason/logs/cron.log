@@ -888,3 +888,43 @@ Sources scanned:
 - 10.64898/2026.06.04.730034 — CascadeMAP enzyme-cascade agentic optimization — dropped (synthetic biology not pharm)
 === 2026-06-07T03:35:25-07:00 done  receptor-and-reason (exit 0) ===
 === 2026-06-08T03:20:03-07:00 start receptor-and-reason ===
+Commit landed. Final summary for the cron log.
+
+## Receptor & Reason — 2026-06-08
+
+**Status:** episode shipped. mp3 14:54, R2 uploaded, feed updated, ledger appended, committed (`ca92ddd`). No push (orchestrator handles).
+
+**Candidate funnel (sources scanned → relevance-filtered → substantive shortlist):**
+
+bioRxiv neuroscience+pharmacology details API (7-day window 2026-06-02 to 2026-06-08): 186 unique items → 123 CNS-keyword hits → 61 after category prune → ~20 substantive candidates.
+
+Neuropsychopharmacology RSS (7 items in window) + Molecular Psychiatry RSS (7 items in window): all considered, 4 NPP + 1 MP made the substantive shortlist.
+
+arXiv listing cache (last 7 days, q-bio/cs.AI/cs.CL/cs.MA filtered for bio+agentic relevance): 31 hits → ~5 substantive (most already shipped or off-topic).
+
+Failed sources: Biological Psychiatry + Neuropharmacology RSS (ScienceDirect served HTML not RSS from this IP, no retry was going to fix that — skipped per source-failure rule). Psychiatric Times (Cloudflare-blocked from this IP — skipped).
+
+**Substantive shortlist (titles + sources):**
+
+- UCL Queen Square — VTA reward processing intracranial humans (bioRxiv 10.64898/2026.01.27.701696) **CHOSEN — lead**
+- Wuhan University — NgR dCA3-VTA-NAc depression circuit (Mol Psychiatry s41380-026-03670-9) **CHOSEN**
+- Yale — Submedius thalamus + OFC in oxycodone craving incubation (NPP s41386-026-02459-2) **CHOSEN**
+- Rochester — Multiplexed dopamine neurons in young macaques (bioRxiv 10.64898/2026.06.03.729859) **CHOSEN**
+- Nagoya City — Cholesterol homeostasis in SNr PV neurons (bioRxiv 10.1101/2025.10.21.683627) **CHOSEN**
+- Adolescent cannabis + subcortical brain iron as dopamine proxy (NPP s41386-026-02444-9) **CHOSEN**
+- Yale ABCD — Multimodal brain measures + psychopathology rCCA (bioRxiv 10.64898/2026.06.03.729937) **CHOSEN**
+- Smartphone EMA + ADO for smoking cessation (NPP s41386-026-02448-5) **CHOSEN**
+- Kanazawa — Adolescent social isolation multi-omics hippocampal CA1 (bioRxiv 10.64898/2026.06.01.729282) **CHOSEN**
+- Astera/UC Davis — Synaptic plasticity as temporal derivative (bioRxiv 10.64898/2026.06.05.730489) **CHOSEN — closer**
+- AstraZeneca — Fetal MRI prenatal ASD (bioRxiv 10.64898/2026.06.01.729342) — held; ASD coverage already strong from yesterday's Shank3 piece
+- Cambridge — Tau pre-synaptic aggregation with TNFα (bioRxiv 10.64898/2026.05.30.728997) — held; AD coverage saturated this week
+- MGH — Lipidated ApoE proximity to Aβ (bioRxiv 10.64898/2026.05.30.729004) — held; AD coverage saturated
+- Weill Cornell — D5Ertd579e ASD risk gene (bioRxiv 10.64898/2026.06.02.729632) — held; ASD coverage already represented
+- MIT — Theta gates info in frontal cortex (bioRxiv 10.64898/2026.06.03.729810) — held; oscillation/theta coverage covered by Astera item
+- KAIST — Bayesian cognitive maps hippocampus (bioRxiv 10.64898/2026.06.03.729991) — held; computational neuroscience slot taken
+- Einstein — Hippocampal CA2 in trace fear conditioning (bioRxiv 10.64898/2026.06.05.730478) — held
+- MP — Endurance exercise + hepatic N-acetylneuraminic acid reduces meth craving (s41380-026-03658-5) — held; yesterday's episode already had an exercise/depression item
+- MP — Pharmacological + microbiota for ASD preclinical systematic review (s41380-026-03663-8) — held
+- arXiv 2606.05925 — Towards World Models in Biomedical Research — held; perspective piece, less mechanistic
+- arXiv 2606.05847 — AMREC Agentic Molecular Recovery — held; molecular generation invalid-SMILES recovery felt narrower than the chosen 10
+=== 2026-06-08T03:33:08-07:00 done  receptor-and-reason (exit 0) ===

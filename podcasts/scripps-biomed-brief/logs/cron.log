@@ -664,3 +664,39 @@ Commit: `ad32c68` (orchestrator handles push)
 - Mutawi et al., metformin redirects autophagy to mitophagy (10.64898/2026.06.04.730191) — passed; mechanistic re-interpretation
 === 2026-06-07T03:37:24-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-06-08T03:30:03-07:00 start scripps-biomed-brief ===
+Episode committed. Final summary:
+
+**2026-06-08 Scripps Biomedical Brief — shipped**
+
+Commit `1e7c0f8` on `main`. Audio `2026-06-08-mrgprx4-melanoma-mda5-dsrna-heme-proteolytic-stress-icb-autoantibody-colitis.mp3` (3,748,510 bytes, 469s) generated via Mistral `voxtral-mini-tts-2603`/`en_paul_neutral` and uploaded to R2 `ai-nuggets-episodes`. Push is the orchestrator's job.
+
+**Candidate funnel (sources scanned for 2026-06-06 → 2026-06-08 window):**
+
+- bioRxiv `pharmacology and toxicology` — 0 returned in window (likely API gap; not a content gap given coverage from adjacent categories)
+- bioRxiv `biochemistry` — 13 scanned, 6 relevance-passed
+- bioRxiv `bioengineering` — 4 scanned, 0 high-priority
+- bioRxiv `cancer biology` — 7 scanned, 3 relevance-passed
+- bioRxiv `cell biology` — 21 scanned, 4 relevance-passed
+- bioRxiv `immunology` — 5 scanned, 3 relevance-passed
+- bioRxiv `synthetic biology` — 3 scanned, 0 high-priority for Schultz audience
+- bioRxiv `molecular biology` — 10 scanned, 0 high-priority
+- Industry feeds / Nature/Science/Cell via WebSearch — no new June 7–8 R&D items rising above bioRxiv shortlist; mostly general AI-drug-discovery framing or older items
+
+**Shortlist after discarding spurious keyword hits:**
+
+- An Itch Receptor Drives Melanoma (Gour, Atakkatan et al., Dong, JHU) — https://www.biorxiv.org/content/10.64898/2026.06.01.729383v1  ← **chosen**
+- Identification of highly immunogenic endogenous dsRNAs from cellular MDA5 filaments (Chen, Mo et al., Hur and Greenberg, Boston Children's/Penn) — https://www.biorxiv.org/content/10.64898/2026.06.07.730679v1  ← **chosen**
+- Heme orchestrates a tissue stress response to proteolytic damage (Agaronyan, Greaney et al., Medzhitov, Yale) — https://www.biorxiv.org/content/10.64898/2026.05.31.729126v2  ← **chosen**
+- Autoantibodies Drive FcgR-Dependent Colon Inflammation During ICI (Voloshyna, Patskovsky et al., Krogsgaard, NYU Langone) — https://www.biorxiv.org/content/10.64898/2026.06.03.729692v1  ← **chosen**
+- Small Molecule Disruption of PDI-Containing Multi-Protein Complex Causes Pan-Cancer Selective Metabolic Collapse (Lingappa et al., Prosetta) — https://www.biorxiv.org/content/10.1101/2025.02.28.640839v3 — v3 update on a March 2025 paper; not picked because bulk of result already public
+- Decoupling T Cell Cytotoxicity: A CCL21+ICAM1 Synthetic Immune Niche (Gupta et al., Hatzikirou, Khalifa) — https://www.biorxiv.org/content/10.64898/2026.06.03.729495v1 — well-framed but lower translational weight
+- Lysosomal lipid metabolism promotes tumor cell invasion (Nooren et al., Razidlo, Mayo) — https://www.biorxiv.org/content/10.64898/2026.06.05.729624v1 — interesting invasion-energetics axis, no in-vivo drug data
+- Metformin Redirects Autophagy from Bulk Turnover to Mitochondrial Clearance (Mutawi et al., Barnaba, Kansas) — https://www.biorxiv.org/content/10.64898/2026.06.04.730191v1 — mechanism-only repurposing rationale
+
+Sources:
+- [bioRxiv preprints](https://www.biorxiv.org/)
+- [An Itch Receptor Drives Melanoma](https://www.biorxiv.org/content/10.64898/2026.06.01.729383v1)
+- [Identification of highly immunogenic endogenous dsRNAs from cellular MDA5 filaments](https://www.biorxiv.org/content/10.64898/2026.06.07.730679v1)
+- [Heme orchestrates a tissue stress response to proteolytic damage](https://www.biorxiv.org/content/10.64898/2026.05.31.729126v2)
+- [Autoantibodies Drive Fc Gamma Receptor-Dependent Colon Inflammation During Immune Checkpoint Blockade](https://www.biorxiv.org/content/10.64898/2026.06.03.729692v1)
+=== 2026-06-08T03:39:19-07:00 done  scripps-biomed-brief (exit 0) ===
