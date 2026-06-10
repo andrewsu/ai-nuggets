@@ -11,5 +11,15 @@
     </itunes:owner>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Technology"/>
+
+    <item>
+      <title>Trodelvy + Keytruda — Phase 3 EVOKE-03 halted in first-line PD-L1-high NSCLC</title>
+      <description>Merck and Gilead jointly halted the Phase 3 KEYNOTE-D46/EVOKE-03 trial of Trodelvy (sacituzumab govitecan) plus Keytruda in previously untreated metastatic non-small cell lung cancer with PD-L1 TPS ≥ 50%. PFS was numerically better for the combination but missed statistical significance; the data monitoring committee judged OS unlikely to hit at the planned final analysis. Two read-throughs: (1) TROP-2 as a target isn't the failure — sac-TMT (sacituzumab tirumotecan, different payload + linker) cut PFS risk ~65% in 1L NSCLC at ASCO this year, so the ADC chemistry mattered more than the antigen. (2) Ivonescimab (Akeso/Summit PD-1×VEGF bispecific) just posted a 4.2-month OS gain + 34% mortality reduction in HARMONi-6 squamous NSCLC, raising the bar any ADC-plus-checkpoint combo has to clear; datopotamab deruxtecan + durvalumab from AstraZeneca/Daiichi Sankyo is the program now carrying the TROP-2 ADC + IO thesis in 1L lung. Bottom line: Trodelvy as a 1L PD-L1-high NSCLC combination expansion is off the table; the PD-1×VEGF and PD-L1×VEGF bispecific class (pumitamig from BioNTech/BMS reading next) is reshaping the setting faster than ADC combos can catch up.</description>
+      <enclosure url="https://podcast.su-lab.workers.dev/p/justice-biotech-brief/u/justice/2026-06-10-trodelvy-keytruda-evoke-03-halted.mp3" length="1714303" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-06-10-trodelvy-keytruda-evoke-03-halted</guid>
+      <pubDate>Wed, 10 Jun 2026 12:00:00 +0000</pubDate>
+      <itunes:duration>214</itunes:duration>
+      <itunes:summary>Merck and Gilead jointly halted Phase 3 KEYNOTE-D46/EVOKE-03 of Trodelvy + Keytruda in 1L metastatic PD-L1-high NSCLC — numerical PFS gain but missed statistical significance, DMC judged OS unlikely. TROP-2 isn't the failure (sac-TMT cut PFS risk ~65% in 1L NSCLC at ASCO with different payload + linker) — sacituzumab govitecan chemistry is. And ivonescimab's 4.2-month OS gain + 34% mortality reduction in HARMONi-6 raises the bar any ADC + checkpoint combo has to clear; datopotamab deruxtecan + Imfinzi from AstraZeneca/Daiichi now carries the TROP-2 ADC + IO thesis in 1L lung. Pumitamig (BioNTech/BMS PD-L1×VEGF) Phase 3 reads into the same setting. PD-1×VEGF bispecifics reshaping 1L NSCLC faster than ADC combos can catch up.</itunes:summary>
+    </item>
   </channel>
 </rss>
