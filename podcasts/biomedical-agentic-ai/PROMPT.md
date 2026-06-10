@@ -101,6 +101,14 @@ back to plug a 2- or 4-week-old paper is not.
   `Paper link:` lines) is what gets spoken.
 - **Episode basename:** `YYYY-MM-DD-<slug>`.
 - **Commit-message prefix:** `Episode`.
+- **Title format:** lead with the tool/system name, then a short phrase
+  describing what it does. **Do not put the PI or institution in the
+  title** — they belong in the script body, not the headline. Good:
+  "HypoAgent — agentic abductive hypothesis generation over biomedical
+  knowledge graphs"; "SyntheMol-RL: an AI walks through 46 billion
+  compounds, brings back a working MRSA antibiotic". Bad: "LinkD-Agent:
+  Mt. Sinai's Multi-Scale Agentic Platform..."; "Tolkach's SPARK: an
+  agent that writes its own pathology tools...".
 
 ## Writing for audio
 
