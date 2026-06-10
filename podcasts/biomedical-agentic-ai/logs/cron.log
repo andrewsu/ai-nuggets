@@ -1363,3 +1363,44 @@ Request ID: req_011Cbv7p5qAVebnCQxR4Q4t3
 === 2026-06-10T12:18:26-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-06-10T12:18:26-07:00 AUP-refusal detected for biomedical-agentic-ai; retrying in 180s ===
 === 2026-06-10T12:21:26-07:00 start biomedical-agentic-ai (retry 1) ===
+Episode shipped. Commit `e95dffe` on `main`; push deferred to the orchestrator.
+
+## Candidate funnel — 2026-06-10
+
+**bioRxiv** — 209 unique entries scanned (full 2026-06-08 → 2026-06-10 collection, 7 paginated pages of 695 reported total), 18 substantive after discarding spurious "agent" matches (cortisol, hippocampus, immune, etc.):
+- **Evaluating agentic AI for biological discovery in autonomous and copilot settings (M3A)** — https://www.biorxiv.org/content/10.64898/2026.06.04.729919v1 **← CHOSEN**
+- Multi-agent reasoning enables predictive design of living materials (LiveMat v2) — https://www.biorxiv.org/content/10.64898/2026.02.15.705954v2
+- ProtGPT3: Open-source family of Promptable and Aligned Protein Language Models — https://www.biorxiv.org/content/10.64898/2026.06.04.730041v1
+- Protein large language model assisted one-to-one gene homology mapping in cross-species single-cell transcriptome integration — https://www.biorxiv.org/content/10.1101/2025.10.17.683009
+- Melody: Decoding the Sequence Determinants of Locus-Specific DNA Methylation Across Human Tissues — https://www.biorxiv.org/content/10.1101/2025.11.23.689975
+- Do Larger Models Really Win in Drug Discovery? — https://www.biorxiv.org/content/10.64898/2026.04.29.721568
+- Metadata Collector (ontology-driven NGS metadata curation) — https://www.biorxiv.org/content/10.64898/2026.06.05.730314v1
+- SubCell: Proteome-aware vision foundation models for microscopy — https://www.biorxiv.org/content/10.1101/2024.12.06.627299
+- DDI_single: Single-Sequence-Based Protein Domain Assembly — https://www.biorxiv.org/content/10.64898/2026.06.05.730531v1
+- Decoding the Grammar of Protein-Protein Interaction Interfaces with Multimodal Representations — https://www.biorxiv.org/content/10.64898/2026.05.29.728739v1
+
+**arXiv** (cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries) — 85 agentic+biomed-ish hits, ~31 after a strict biomedical filter; substantive shortlist:
+- Towards Diverse Scientific Hypothesis Search with Large Language Models — https://arxiv.org/abs/2606.10587
+- Closing the Prior-Posterior Loop: Self-Reflective Molecular Design with Analysis-Driven LLM Iteration — https://arxiv.org/abs/2606.09520
+- Experience Makes Skillful: Generalizable Medical Agent Reasoning via Self-Evolving Skill Memory — https://arxiv.org/abs/2606.09365
+- Baichuan-M4: Clinical-Grade Medical Agent System for Continuous Care — https://arxiv.org/abs/2606.08982
+- LLM-Orchestrated Conformance Checking in Stroke Care — https://arxiv.org/abs/2606.09489
+- TRIAGE: Dialectical Reasoning for Risk Prediction on Irregular Medical Time Series — https://arxiv.org/abs/2606.09030
+- Deterministic Integrity Gates for LLM-Assisted Clinical Manuscript Preparation — https://arxiv.org/abs/2606.09500
+- ABC-Bench: Agentic Bio-Capabilities Benchmark — https://arxiv.org/abs/2606.11150 (biosecurity scope, skipped to avoid editorial-bench overlap)
+- A Multi-modal Agentic Co-pilot for Evidence Grounded Computational Pathology — https://arxiv.org/abs/2606.08093
+
+**ChemRxiv** (WebSearch): no fresh 2-day-window biomedical-agentic-AI hits.
+
+**Policy / funders** (ARPA-H, NIH, NSF, HHS): no fresh agentic-AI biomedical announcements in the 2-day window.
+
+**News / product launches**: nothing top-tier in window.
+
+**Why M3A won:** (1) trajectory-level evaluation of agents on real multi-omic single-cell discovery across 11 cancer types — the right unit of evaluation for biomedical agents, which most prior eval work has missed; (2) load-bearing autonomous-versus-copilot empirical comparison, including whether the human in the loop has domain expertise — a comparison almost every group will face in the next year, and the field has had remarkably little data on; (3) released as a framework for plugging in other agents, which is the right move for community evaluation; (4) thematically distinct from the recent run — first evaluation-framework episode after CascadeMAP (autonomous wet-lab loop), LinkD-Agent (drug-repurposing orchestrator), BacteReason (KG-grounded reasoning distillation), MicroGrowAgents (microbial-cultivation designer), and ChatSpatial (MCP orchestration); (5) on-recency (v1 posted 2026-06-09, dead center in the window); (6) Van Allen / Dana-Farber lab is well-positioned to set the methodological bar for what counts as a real biological-discovery evaluation.
+
+**Pipeline:** Audio generated (Mistral Paul Neutral, 2 chunks, 250.7s, 2.00 MB). R2 upload via `scripts/publish_episode.sh` succeeded on first try this run (no `npx` PATH issue surfaced in this interactive context — the recurring cron-PATH gotcha around `wrangler` invocation flagged in prior runs still warrants a one-shot fix to `scripts/publish_episode.sh` itself). Feed validated as well-formed XML, commit landed under flock, no source-level failures (bioRxiv API, arXiv cache, WebSearch all responsive).
+
+**Note:** Today's cron attempted 4 times (03:00, 03:05, 12:04, 12:08 PT) and each hit the AUP classifier despite the recent "podcast editorial framing" rewording — log entries are in `cron.log`. This interactive re-run succeeded; the wrapper retry path may need another pass at framing.
+
+=== 2026-06-10 done biomedical-agentic-ai ===
+=== 2026-06-10T12:28:19-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===
