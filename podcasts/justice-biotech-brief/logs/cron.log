@@ -26,3 +26,27 @@ Shipped: **Trodelvy + Keytruda — Phase 3 EVOKE-03 halted in first-line PD-L1-h
 
 Justice's brief explicitly names VEGF×PD-L1, JAK ADCs, and trispecific TCEs as core interests, plus broad biotech/pharma headlines. The EVOKE-03 halt is a major Phase 3 readout that (a) is a TROP-2 ADC + PD-1 combo failure — directly in the ADC + IO wheelhouse, (b) lets us draw the explicit line to ivonescimab's HARMONi-6 win (PD-1×VEGF bispecific reshaping 1L NSCLC), and (c) raises the bar for datopotamab deruxtecan + Imfinzi and pumitamig — the next reads in this setting. AZD0120 was the strongest bioRxiv option but is preclinical preprint signal; the EVOKE-03 halt is a market-moving Phase 3 outcome that hits Justice's audience harder.
 === 2026-06-11T03:20:16-07:00 start justice-biotech-brief ===
+Shipped: **Lasme-cel — first allogeneic CAR-T with FDA RMAT and final Phase 1 readout in r/r B-ALL** (mp3 published to R2 `ai-nuggets-episodes`; feed updated; commit `c488f71`; orchestrator handles push).
+
+## Candidate funnel — 2026-06-11
+
+**bioRxiv** (window 2026-06-10 to 2026-06-11):
+- 384 entries in window; paginated full collection (13 pages × 30) — 377 unique scanned
+- 18 keyword matches; 2 substantive after discarding spurious hits (CD3 → CD3⁺ T-cells, EGFR → tumor-modeling math, etc.)
+
+**News / press feeds** (Fierce Biotech homepage, Endpoints — blocked 403, GlobeNewswire, BioSpace, company IR pages, web search, last 1–2 days):
+- Surveyed ~25+ headlines; ~8 in the immuno/onc/autoimmune-biologic wheelhouse
+
+**Policy / funder pages** (ARPA-H, NIH, NSF): no items in window matching show focus.
+
+**Substantive shortlist (in-window, on-topic):**
+- **Cellectis lasme-cel (UCART22) — FDA RMAT Jun 9 + final Phase 1 BALLI-01 at EHA Jun 11** — https://www.cellectis.com/en/press/cellectis-presents-final-phase-1-results-of-lasme-cel-and-preliminary-results-on-eti-cel-at-eha-2026-congress/ — **CHOSEN**
+- Sanofi MOBILIZE Phase 3 halt (riliprubart, anti-C1s in CIDP) Jun 10 — https://www.sanofi.com/en/media-room/press-releases/2026/2026-06-10-05-00-00-3309444 — autoimmune biologic, in wheelhouse but rejected: yesterday's episode was also a Phase 3 halt (Trodelvy + Keytruda EVOKE-03), back-to-back failure stories would feel repetitive
+- LILRB4 (ILT3) small-molecule myeloid checkpoint modulator (bioRxiv 10.64898/2026.06.10.731269, posted 2026-06-11) — novel mechanism, preprint-stage, not a clinical news event
+- Cellectis eti-cel preliminary NATHALI-01 data Jun 11 — covered as the second thread inside the Cellectis episode rather than its own slot
+- Legend Biotech LB2501 in-vivo CAR-T Phase 1 data (presenting at EHA Jun 14) — primary press release dated Jun 2, out of 1–2 day window for the fresh-news pick; referenced inside episode as competitive context
+
+**Notes:**
+- Endpoints News fetched HTTP 403 from this IP (no retry helped); proceeded with Fierce Biotech + GlobeNewswire + BioSpace + targeted searches. Did not skip the day.
+- `scripts/publish_episode.sh` initially failed because `npx` was not on the cron-style PATH; resolved by prepending `~/.nvm/versions/node/v24.14.0/bin` before re-running. R2 upload then completed cleanly.
+=== 2026-06-11T03:31:47-07:00 done  justice-biotech-brief (exit 0) ===

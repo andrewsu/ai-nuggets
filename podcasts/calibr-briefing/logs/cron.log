@@ -1055,3 +1055,23 @@ Sources:
 - [Novo Nordisk CagriSema REIMAGINE Phase 3 T2D at ADA 2026](https://www.prnewswire.com/news-releases/novo-nordisks-cagrisema-2-4-mg--2-4-mg-demonstrated-significant-reduction-in-hba1c-and-weight-across-multiple-studies-in-the-reimagine-program-presented-at-ada-2026--302793443.html)
 === 2026-06-10T03:23:43-07:00 done  calibr-briefing (exit 0) ===
 === 2026-06-11T03:10:16-07:00 start calibr-briefing ===
+Both episodes published, feed updated, committed (bdb26be). Orchestrator will push.
+
+**Candidate funnel (Thursday 2026-06-11):**
+
+Sources scanned: Fierce Biotech, Fierce Pharma, BioPharma Dive, Endpoints News (403, used homepage via BioPharma Dive index instead), BioSpace, press releases via web search.
+
+Substantive shortlist (post-filter):
+- Novartis-Orionis Allo-Glue collaboration expansion — $40M upfront + up to $1.4B milestones (https://www.fiercebiotech.com/biotech/novartis-sticks-2nd-deal-molecular-glue-biotech-orionis-worth-14b) **[CHOSEN: headlines #1 + SPOTLIGHT]**
+- Sanofi halts MOBILIZE Phase 3 riliprubart in refractory CIDP — IDMC futility call (https://www.sanofi.com/en/media-room/press-releases/2026/2026-06-10-05-00-00-3309444) **[CHOSEN: headlines #2]**
+- Lilly-AlzeCure ACD680 gamma-secretase modulator out-licensing — $10M upfront + $1B+ milestones (https://www.fiercebiotech.com/biotech/lilly-licenses-alzecure-alzheimers-asset-1b-biobucks) **[CHOSEN: headlines #3]**
+- ADA 2026 CagriSema vs retatrutide — Novo CSO Lange "jury still out" (https://www.fiercebiotech.com/biotech/ada-more-cagrisema-weight-loss-data-coming-jury-still-out-amid-tough-retatrutide) **[CHOSEN: headlines #4]**
+- SonoThera $125M Series B — ultrasound-mediated genetic delivery (https://www.fiercebiotech.com/biotech/big-pharma-backed-sonothera-sounds-125m-series-b-bubble-based-genetic-delivery) **[CHOSEN: headlines #5a]**
+- Ethyreal Bio $101M launch — anti-TSHR for Graves'/TED (https://www.biopharmadive.com/news/ethyreal-bio-graves-thyroid-eye-disease-tshr/822477/) **[CHOSEN: headlines #5b]**
+- Disc Medicine FDA alignment on bitopertin path (EPP) **[CHOSEN: headlines #6a]**
+- May layoff tracker — ~7000 cuts, Takeda + BioNTech majority **[CHOSEN: headlines #6b]**
+- TG Therapeutics Briumvi Phase 3 ENHANCE single-infusion bioequivalence — covered late-May, stale for today's window
+- Disc Medicine FDA meeting — included as closer
+
+Spotlight rationale: Novartis-Orionis chosen over Sanofi halt because it (a) is a positive chemistry-platform deal with strong Calibr read-through to small-molecule + chemoproteomics capability, (b) compounds on the Nurix-Roche TPD spotlight thread from Monday and the Parabilis platform thread from Wednesday into a coherent three-week modality-investment narrative, and (c) the AI-driven discovery angle is a direct PROMPT.md focus area.
+=== 2026-06-11T03:25:48-07:00 done  calibr-briefing (exit 0) ===

@@ -1004,3 +1004,41 @@ Receptor & Reason episode for 2026-06-10 shipped. Commit `165e1fb`. Orchestrator
 Duration 910s (15:10), 7.28 MB. Feed XML validated; dedup ledger appended.
 === 2026-06-10T03:38:53-07:00 done  receptor-and-reason (exit 0) ===
 === 2026-06-11T03:30:16-07:00 start receptor-and-reason ===
+Episode shipped. Commit `0db5fe0` on `main`; orchestrator handles push.
+
+**Candidate funnel:**
+
+bioRxiv (last 7 days, 2026-06-04 to 2026-06-11): 1,630 total preprints scanned across 17 paginated pages, 510 collected (with 95 duplicates from version updates), filtered to 147 neuro/pharm-relevant items after dedup against the shipped ledger (293 keys), narrowed to ~12 substantive candidates by receptor/psychopharm/drug-discovery signal.
+
+arXiv (cached daily feed, q-bio supercategory + cs.AI/CL/MA): 16 agentic/LLM + bio candidates in the 7-day window after dedup; top ~5 reviewed in full.
+
+Nature journals (NPP/Mol Psych/Bio Psych etc.): partial coverage — Nature URLs redirect to idp.nature.com for auth, so I worked from search hits + abstracts rather than the full article listings. One NPP item from June 8 was flagged but not selected.
+
+Psychiatric Times: searched for items dated June 4–11; site returned 403 on direct fetch so I worked from search snippets and one BioSpace press release for Autobahn elunetirom.
+
+**Shortlist (all from last 7 days, all fresh against shipped.jsonl):**
+
+- Autobahn elunetirom Phase 2 AMPLIFY-BD (Psychiatric Times, June 4) — **chosen, opener**
+- Karlin/Definium DT120 ODT lysergide tartrate accelerated FDA action (Psychiatric Times, ~June 10) — **chosen**
+- Deakin (Panizzutti) BD iPSC cortical-network TLR signaling — **chosen**
+- MGH (Osorio) ASD MEG cortical E/I balance age × region — **chosen**
+- UCSD (Grover) Drosophila PPM3 dopamine multi-timescale learning — **chosen**
+- Vanderbilt (Kang) SLC6A1 A305V + 4-PBA + gene aug DEE rescue — **chosen**
+- ESPCI (Mourot) α7 nicotinic optonanobody MalAzoCh-C4 — **chosen**
+- Imagine Paris (Deleidi) WNT/bioreactor midbrain DA organoids + α-syn PFF vulnerability — **chosen**
+- Crownlands (Zhu) Gateway 4M-cell olfactory neuron atlas, AD/PD — **chosen**
+- Sheffield (Mortiboys) Leigh + HD mito convergence + A769662 AMPK rescue — **chosen**
+- OmniBioTwin arXiv 2606.11264 (digital twin framework, GLP-1/AD demo) — **chosen**
+- Weill Cornell (Gabr) LILRB4/ILT3 GL-4512 for anti-tumor — skipped (same lab as yesterday's ILT3-AD piece)
+- Radboud (Negwer) Kleefstra whole-brain inhibitory neuron mapping — skipped (no pharm angle)
+- MGH (preclinical AD) pTau217 blood transcriptomics — skipped (biomarker, weaker therapeutic angle)
+- arXiv 2606.11150 ABC-Bench biosecurity — skipped (relevance marginal)
+- arXiv 2606.11675 Lung-R1 — skipped (not CNS)
+
+Audio: 16:18 (978s), 7.82 MB, Mistral voxtral-mini-tts-2603, 10 chunks, no fallback needed. Published to R2 via `scripts/publish_episode.sh` after exporting nvm node bin to PATH (npx wasn't on the default PATH).
+
+Sources:
+- [Autobahn elunetirom Phase 2 in BD](https://www.psychiatrictimes.com/view/new-positive-phase-2-topline-data-on-elunetirom-for-the-treatment-of-bipolar-depression)
+- [Karlin/Definium DT120 ODT accelerated FDA action](https://www.psychiatrictimes.com/view/accelerated-fda-action-for-psychedelics-insights-from-daniel-r-karlin-md-ma)
+- [Autobahn Phase 2 elunetirom topline (BioSpace)](https://www.biospace.com/press-releases/autobahn-therapeutics-reports-positive-phase-2-topline-data-for-elunetirom-in-bipolar-depression-demonstrating-rapid-robust-and-durable-antidepressant-effects)
+=== 2026-06-11T03:50:12-07:00 done  receptor-and-reason (exit 0) ===

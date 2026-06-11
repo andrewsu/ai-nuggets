@@ -1405,3 +1405,35 @@ Episode shipped. Commit `e95dffe` on `main`; push deferred to the orchestrator.
 === 2026-06-10 done biomedical-agentic-ai ===
 === 2026-06-10T12:28:19-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===
 === 2026-06-11T03:00:16-07:00 start biomedical-agentic-ai ===
+Committed. Final summary follows.
+
+---
+
+**Today's pick:** GEOAgent — autonomous retrieval and standardized preprocessing across NCBI GEO (bioRxiv 10.64898/2026.06.06.730646, v1 2026-06-10, Guangzhou Institute of Biomedicine and Health / CAS). Episode mp3 published to R2, feed updated, commit `5595573`.
+
+**Candidate funnel (2026-06-10 → 2026-06-11):**
+
+bioRxiv (380 entries paginated through full 2-day collection; 28 keyword hits; 7 substantive after discarding "agent"→"chemical agent" / "antineoplastic agent" / "infectious agent" / "anabolic agent" etc.):
+- **GEOAgent — AI-driven autonomous framework for GEO data retrieval + standardized preprocessing (Nextflow/bioStream)** — https://www.biorxiv.org/content/10.64898/2026.06.06.730646v1 — **CHOSEN**
+- Research Process Graph — LLM-driven hierarchical research-logic extraction (plant biology) — https://www.biorxiv.org/content/10.64898/2026.06.09.731113v1
+- ConnectoFM — foundation model for the connectome — https://www.biorxiv.org/content/10.64898/2026.06.06.730367v1
+- HoloCell — generative foundation model for holistic cellular modeling — https://www.biorxiv.org/content/10.64898/2026.06.07.730684v1
+- Research Process Graph (plant bio) — covered above
+- MedMisBench arXiv mirror — already shipped 2026-05-30
+- (foundation-model and benchmark contributions; not agentic)
+
+arXiv (500-entry cache filtered to bio+AI in last 2 days; 122 candidates after intersection filter; 7 substantive after rejecting clinical-only/general-AI):
+- Skill-Augmented AI Agents for Medical Research Analysis (OpenClaw, NSCLC biomarker task) — https://arxiv.org/abs/2606.11830 — directional signal only (p=0.156), authors flag as non-confirmatory
+- MedCTA: Benchmark for Clinical Tool Agents — https://arxiv.org/abs/2606.11702 — benchmark, not architecture; MedMisBench already covered
+- Lung-R1 — KG-guided LLM for pulmonary diagnosis — https://arxiv.org/abs/2606.11675 — KG+LLM, but disease-specific and BacteReason (2026-06-07) covered the pattern
+- LLMs+Graphs (tutorial) — https://arxiv.org/abs/2606.11560 — synthesis paper, not load-bearing
+- Arbor (Hypothesis-Tree Refinement) — https://arxiv.org/abs/2606.11926 — autonomous research framework but evaluated on ML/data-synthesis, biomedical relevance incidental
+- StatefulDiscovery — https://arxiv.org/abs/2606.11851 — discovery-agnostic framework, not biomedical-specific
+
+ChemRxiv (web search, `site:chemrxiv.org` + agentic keywords): no hits in 2-day window.
+ARPA-H / NIH / NSF / HHS press pages: no fresh agentic-AI biomedical announcements in window.
+General news / product launches: no top-tier biomedical-agentic-AI launches in window.
+All sources online; no transient failures this run.
+
+GEOAgent won on (1) right altitude — automating the shared data-engineering preamble across labs, not the science end; (2) architectural choice of agent-on-Nextflow rather than agent-executes-shell-commands; (3) open code + open data + open service trifecta on a 20-year community pain point; (4) directly hits the data-integration / APIs / bioinformatics / open-science axes of the audience; (5) thematically distinct from the recent week of science-end-agent papers.
+=== 2026-06-11T03:06:57-07:00 done  biomedical-agentic-ai (exit 0) ===

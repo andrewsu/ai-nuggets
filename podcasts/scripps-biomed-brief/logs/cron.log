@@ -743,3 +743,30 @@ Episode shipped. Final summary follows.
 **Source failures:** none — all four bioRxiv searches returned in-window.
 === 2026-06-10T03:38:09-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-06-11T03:40:16-07:00 start scripps-biomed-brief ===
+Episode shipped.
+
+**Final summary — Scripps Biomedical Brief 2026-06-11**
+
+Script: `podcasts/scripps-biomed-brief/scripts/2026-06-11-slc15a4-lamtor-nanobridge-ptm-cxp1-pmo-glucagon-microneedle.md`
+Audio: `podcasts/scripps-biomed-brief/episodes/2026-06-11-slc15a4-lamtor-nanobridge-ptm-cxp1-pmo-glucagon-microneedle.mp3` (3,387,812 bytes, 423s)
+R2: published to `ai-nuggets-episodes`
+Commit: `0ae4664` (orchestrator will push)
+
+**Candidate funnel:**
+
+- bioRxiv pharmacology and toxicology (2026-06-09 → 2026-06-11): 6 items scanned, 1 substantive (already-shipped) — Gabr GL-4512 LILRB4 modulator (third paper in series, skipped to avoid 3-day repetition)
+- bioRxiv biochemistry: 30 scanned, 4 substantive — Dassama NanoBridge ✓, Devaraj reaction-driven condensate-to-vesicle, Hurley tau seeding from endolysosomes, others
+- bioRxiv bioengineering: 27 scanned, 3 substantive — Pentelute CXP1 PMO ✓, Traverso/Langer glucagon microneedle ✓, Cornell PGT121 implant (already shipped 2026-06-09)
+- bioRxiv immunology: 30 scanned, 1 substantive — Parker (Scripps) SLC15A4-LAMTOR1 ✓ — local Scripps connection
+- bioRxiv cancer biology / cell biology / synthetic biology / neuroscience: 100+ scanned, none beat the top 4
+- Industry news (Fierce Biotech, June 10-11): Ona Therapeutics $86.6M Series B (ADC), Model Medicines AI platform (preprint material weaker than top 4)
+
+**Shortlist (chosen marked ✓):**
+- Parker (Scripps) SLC15A4-LAMTOR1 lupus interface — https://www.biorxiv.org/content/10.64898/2026.06.04.729981v1 ✓
+- Dassama (Stanford) NanoBridge PTM editing — https://www.biorxiv.org/content/10.64898/2026.06.08.730974v1 ✓
+- Pentelute (MIT) arginine-depleted CPP for PMO/DMD — https://www.biorxiv.org/content/10.64898/2026.06.07.730741v1 ✓
+- Traverso/Langer (MIT) CGM-informed glucagon microneedle patches — https://www.biorxiv.org/content/10.64898/2026.06.05.729994v1 ✓
+- Gabr (Weill Cornell) GL-4512 LILRB4 oral modulator — https://www.biorxiv.org/content/10.64898/2026.06.10.731269v1 (skipped — three-day-in-a-row ILT3 coverage)
+- Bertozzi (Stanford) TICTACs v3 — https://www.biorxiv.org/content/10.1101/2023.12.06.570444v3 (skipped — couldn't verify v3 deltas, bioRxiv 403'd the page)
+- Devaraj (UCSD) reaction-driven condensate-to-vesicle — https://www.biorxiv.org/content/10.64898/2026.06.07.730732v1 (skipped — basic origin-of-life angle weaker for this audience)
+=== 2026-06-11T03:49:25-07:00 done  scripps-biomed-brief (exit 0) ===
