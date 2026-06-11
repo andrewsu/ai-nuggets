@@ -1,0 +1,28 @@
+## Run summary — Justice's Biotech Brief, 2026-06-10
+
+Shipped: **Trodelvy + Keytruda — Phase 3 EVOKE-03 halted in first-line PD-L1-high NSCLC** (mp3 published to R2; feed updated; commit `07f065e`; orchestrator handles push).
+
+### Candidate funnel
+
+**bioRxiv** (2-day window 2026-06-09 to 2026-06-10) — pulled full collection of 782 unique papers across 27 paginated calls; 26 survived the keyword filter (VEGF / PD-L1 / PD-1 / TCE / bispecific / trispecific / CAR-T / ADC / JAK / immunotherapy / checkpoint), 8 of which were squarely on-topic after discarding spurious matches:
+- AZD0120 BCMA/CD19 dual-targeting FasTCAR CAR-T in MM (AstraZeneca, preclinical)
+- ILT3/LILRB4 small-molecule myeloid checkpoint inhibitor
+- Switchable CAR-T design for enhanced safety + reduced exhaustion
+- Velocity-receptor CAR-T for solid-tumor infiltration
+- TICTACs — tumor-immune-cell-targeting chimeras for TAM reprogramming
+- Nanodiamond-PD-L1-inhibitor conjugate + γδ T cells in ovarian cancer
+- (older / outside window: B7H3:CD3 TCE intratumoral in canine sarcoma; gamma-secretase + RT + checkpoint)
+
+**Industry news** (Fierce Biotech, STAT, Merck/Gilead press) — 5 items in window with therapeutic-development weight:
+- **Merck/Gilead halt Phase 3 KEYNOTE-D46/EVOKE-03 (Trodelvy + Keytruda in 1L PD-L1-high NSCLC), June 8** — **CHOSEN**
+- Merck/Gilead ISLEND-1/2 Phase 3 win, once-weekly oral HIV (islatravir + lenacapavir), June 9
+- Parabilis Medicines $670M IPO (largest biotech IPO ever, lead asset zolucatetide β-catenin:TCF inhibitor), June 10 — already deep-covered by sibling show calibr-briefing today
+- Sanofi halts Phase 3 riliprubart in CIDP (C1s inhibitor), June 10 — off-thesis for Justice's IO/CAR-T/ADC focus
+- Novartis–Orionis 2nd molecular-glue deal up to $1.4B, June 10 — outside Justice's stated focus areas
+
+**Policy / funder feeds** (ARPA-H, NIH, NSF) — no new June 9–10 releases relevant to Justice's focus areas.
+
+### Why the pick beat the others
+
+Justice's brief explicitly names VEGF×PD-L1, JAK ADCs, and trispecific TCEs as core interests, plus broad biotech/pharma headlines. The EVOKE-03 halt is a major Phase 3 readout that (a) is a TROP-2 ADC + PD-1 combo failure — directly in the ADC + IO wheelhouse, (b) lets us draw the explicit line to ivonescimab's HARMONi-6 win (PD-1×VEGF bispecific reshaping 1L NSCLC), and (c) raises the bar for datopotamab deruxtecan + Imfinzi and pumitamig — the next reads in this setting. AZD0120 was the strongest bioRxiv option but is preclinical preprint signal; the EVOKE-03 halt is a market-moving Phase 3 outcome that hits Justice's audience harder.
+=== 2026-06-11T03:20:16-07:00 start justice-biotech-brief ===
