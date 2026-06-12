@@ -1076,3 +1076,29 @@ Substantive shortlist (post-filter):
 Spotlight rationale: Novartis-Orionis chosen over Sanofi halt because it (a) is a positive chemistry-platform deal with strong Calibr read-through to small-molecule + chemoproteomics capability, (b) compounds on the Nurix-Roche TPD spotlight thread from Monday and the Parabilis platform thread from Wednesday into a coherent three-week modality-investment narrative, and (c) the AI-driven discovery angle is a direct PROMPT.md focus area.
 === 2026-06-11T03:25:48-07:00 done  calibr-briefing (exit 0) ===
 === 2026-06-12T03:10:05-07:00 start calibr-briefing ===
+Both episodes published, audio uploaded to R2, feed updated, committed (3cc263e). Orchestrator will push.
+
+**Candidate funnel (Friday 2026-06-12):**
+
+Sources scanned: Fierce Biotech, Fierce Pharma, BioPharma Dive, Endpoints News (403 — used STAT News + GEN as fallback), STAT News biotech, Genetic Engineering News, Clinical Trials Arena, BioSpace, Takeda press release, ChEMBL/Schrödinger background searches.
+
+Substantive shortlist (post-filter):
+- Takeda zasocitinib LATITUDE Atlas Phase 3 head-to-head vs Sotyktu — >35% PASI 100 at week 16 vs ~14% deucravacitinib (https://www.biopharmadive.com/news/takeda-zasocitinib-sotyktu-psoriasis-trial/822500/) **[CHOSEN: headlines #1 + SPOTLIGHT]**
+- Novartis del-brax FORTITUDE Phase 1/2 biomarker hit in FSHD — first asset-level readout from $12B Avidity acquisition (https://www.biopharmadive.com/news/novartis-del-brax-avidity-trial-data/822628/) **[CHOSEN: headlines #2]**
+- J&J Imaavy (nipocalimab) ENERGY Phase 2/3 wAIHA — durable hemoglobin response, FDA Priority Review (https://www.jnj.com/media-center/press-releases/imaavy-nipocalimab-aahu-demonstrates-durable-hemoglobin-response-and-rapid-onset-of-effect-in-pivotal-phase-2-3-study-in-warm-autoimmune-hemolytic-anemia-waiha-an-autoantibody-driven-disease-with-no-fda-approved-therapies) **[CHOSEN: headlines #3]**
+- Genentech R&D layoffs — Vishva Dixit + cell-therapy/ID/physiological-chemistry unit closures (https://www.biospace.com/job-trends/genentech-r-d-layoffs-hit-top-exec-whos-been-with-the-biotech-nearly-30-years) **[CHOSEN: headlines #4]**
+- Kardigan cardiology biotech IPO terms — $350M raise, 13th biotech IPO of 2026 (https://www.fiercebiotech.com/biotech/cardiovascular-focused-kardigan-plans-bring-cozy-320m-haul-upcoming-ipo) **[CHOSEN: headlines #5]**
+- Summit pulls $500M share sale a day after announcing — ivonescimab dynamics (https://www.biopharmadive.com/news/summit-therapeutics-pulls-500-million-share-sale-pd1-vegf-ivonescimab/822619/) **[CHOSEN: headlines #6]**
+- Incyte–Vega $2B acquisition — covered as headlines #3 on 6-09, stale, skipped
+- Alnylam–Inceptive $2B AI-RNA deal — dated 6-04, stale, skipped
+- GSK–Nuvalent $10.6B — was 6-09 spotlight, stale, skipped
+- Sanofi MOBILIZE halt + Lilly-AlzeCure ACD680 + ADA 2026 CagriSema — all 6-11 headlines, skipped
+- Astellas Xtandi patent strategy + Novo Nordisk data breach + EU pricing — too narrow/internal, deprioritized
+- 10x Genomics–Proteintech Genomics — tooling/non-therapeutic, deprioritized
+
+Items opened in full: Takeda LATITUDE Atlas press release + LATITUDE PsO 3001/3002 press release (Schrödinger Nimbus FEP+ background); BioPharma Dive del-brax, Sotyktu head-to-head, Summit articles; BioSpace AI-design coverage; Genentech layoff article; Kardigan IPO Renaissance Capital terms.
+
+Spotlight rationale: Takeda zasocitinib chosen over Novartis del-brax because (a) it hits the AI-in-drug-discovery focus area directly — Schrödinger's FEP+ free-energy-perturbation campaign at the JH2 pseudokinase regulatory domain is a textbook physics-based computational chemistry validation event, (b) it reshapes the competitive landscape at the first-in-class oral TYK2 slot where Sotyktu had failed commercially, and (c) it completes the four-modality validation arc of the week (Nurix-Roche heterobifunctional degraders Monday → Parabilis stapled peptides Wednesday → Orionis monovalent glues Thursday → Nimbus-Schrödinger selective allosteric kinase Friday) into a single thematic frame for Calibr's chemistry-platform investments.
+
+=== 2026-06-12T... done calibr-briefing ===
+=== 2026-06-12T03:27:44-07:00 done  calibr-briefing (exit 0) ===

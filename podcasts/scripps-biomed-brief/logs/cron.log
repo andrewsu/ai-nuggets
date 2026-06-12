@@ -770,3 +770,32 @@ Commit: `0ae4664` (orchestrator will push)
 - Bertozzi (Stanford) TICTACs v3 — https://www.biorxiv.org/content/10.1101/2023.12.06.570444v3 (skipped — couldn't verify v3 deltas, bioRxiv 403'd the page)
 - Devaraj (UCSD) reaction-driven condensate-to-vesicle — https://www.biorxiv.org/content/10.64898/2026.06.07.730732v1 (skipped — basic origin-of-life angle weaker for this audience)
 === 2026-06-11T03:49:25-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-06-12T03:40:05-07:00 start scripps-biomed-brief ===
+Episode shipped. Summary for the cron log:
+
+**Scripps Biomedical Brief — 2026-06-12 — committed (orchestrator will push)**
+
+- Script: `podcasts/scripps-biomed-brief/scripts/2026-06-12-rxfp1-relaxin-ndm-3bp-covalent-ml-antibiotic-moa-bias.md` (837 words)
+- Audio: `podcasts/scripps-biomed-brief/episodes/2026-06-12-rxfp1-relaxin-ndm-3bp-covalent-ml-antibiotic-moa-bias.mp3` (2,779,681 bytes, 347 s), uploaded to R2
+- Feed item prepended to `podcasts/scripps-biomed-brief/feed.xml` (XML validates)
+- Commit: `d7e4f8d`
+
+**Candidate funnel**
+
+Sources surveyed:
+- bioRxiv recent-window API (`/details/biorxiv/2026-06-11/2026-06-12/`): scanned ~330 entries across 4 paged calls (0, 100, 200, 300; page 400 empty)
+- bioRxiv full-text endpoints (HTML, PDF, JATS XML): **all 403 / Cloudflare-challenged from this network today** — fell back to abstracts retrieved via the bioRxiv MCP `get_preprint` tool, which kept working; disclosed in the script
+- Endpoints.news: only routine corporate items (Novartis Avidity ph1/2, Genentech VP cuts, Kardigan IPO) — no R&D nuggets
+- Nature, Science, Cell, Fierce Biotech: all 403 / auth-walled to WebFetch
+- WebSearch for "biotech drug discovery breakthrough June 11 2026": only 2026-outlook recap pieces, nothing date-fresh
+
+Substantive shortlist (after discarding spurious hits and yesterday's already-shipped CXP1/Pentelute paper):
+- ✅ Divergent activation of RXFP1 by protein and small-molecule agonists — Osei-Owusu, Kruse (Harvard) — https://www.biorxiv.org/content/10.64898/2026.06.10.731386v1
+- ✅ Covalent Inhibition of NDM-1 and NDM-5 by 3-Bromopyruvate — Bradley, Roberts/Schofield (Liverpool / Oxford) — https://www.biorxiv.org/content/10.64898/2026.06.10.731408v1
+- ✅ ML-Guided Discovery of Bacterial-Selective Membrane-Active Compounds Reveals Mechanistic Bias in Antibiotic Training Datasets — Chain, Gitai (Princeton) — https://www.biorxiv.org/content/10.64898/2026.06.08.730938v1
+- Multiplex CAR/CXCR5/IL-15/PD-1-KO/CCR7 NK cells for SIV reservoirs (Skinner, Minnesota) — https://www.biorxiv.org/content/10.64898/2026.06.09.731145v1 — passed: incremental on prior CAR-NK work
+- Dual-locus CRISPR/Cas9 CFTR replacement via HDAd (Hu, Toronto) — https://www.biorxiv.org/content/10.64898/2026.06.10.731381v1 — passed: 3.4% CFTR integration still modest; conceptually clever but not breakthrough
+- High-throughput arginine-depleted CPP / CXP1 / PMO for DMD (Pentelute, MIT) — https://www.biorxiv.org/content/10.64898/2026.06.07.730741v1 — **dropped: already covered in 2026-06-11 episode**
+
+Depth caveat: all three picked items were summarized from the bioRxiv `get_preprint` abstract (full-text endpoints unreachable via Cloudflare from this network). Script discloses this in the opening sentence and the takes stay within what the abstracts assert.
+=== 2026-06-12T03:50:51-07:00 done  scripps-biomed-brief (exit 0) ===

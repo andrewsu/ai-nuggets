@@ -51,3 +51,23 @@ Shipped: **Lasme-cel — first allogeneic CAR-T with FDA RMAT and final Phase 1 
 - `scripts/publish_episode.sh` initially failed because `npx` was not on the cron-style PATH; resolved by prepending `~/.nvm/versions/node/v24.14.0/bin` before re-running. R2 upload then completed cleanly.
 === 2026-06-11T03:31:47-07:00 done  justice-biotech-brief (exit 0) ===
 === 2026-06-12T03:20:05-07:00 start justice-biotech-brief ===
+Committed. Final summary for the cron log:
+
+**Episode shipped:** GL-4512 — first direct small-molecule modulator of the LILRB4 myeloid checkpoint (Gabr lab, Weill Cornell; bioRxiv 2026-06-11). Audio 332s / 2.66 MB; published to R2; feed updated; committed as `c70cef4`.
+
+**Candidate funnel:**
+
+- **bioRxiv 2026-06-11 to 2026-06-12** — 259 unique preprints pulled (full 9-page paginate, not a sample). Keyword filter (VEGF, PD-L1, PD-1, T cell engager, TCE, bispecific, trispecific, CAR-T, ADC, JAK, immunotherapy, checkpoint) hit 6 candidates after discarding spurious matches (e.g., "VEGF" only as background term in a sarcopenia paper):
+  - **CHOSEN** — GL-4512 / LILRB4 small molecule, Gabr lab, Weill Cornell (`10.64898/2026.06.10.731269`). First direct small-molecule modulator of a myeloid checkpoint that had only been drugged with antibodies; Dianthus TRIC screen + microsecond MD finds cryptic pocket; patient-derived CRC/AML efficacy + oral CT26 readout. Full-text PDF behind Cloudflare 403; abstract used + flagged in script per PIPELINE single-dominant-item exception. Opened: abstract only.
+  - Multiplex CAR NK / HIV reservoir, rhesus macaque (`10.64898/2026.06.09.731145`) — bioengineering, HIV cure focus, off Justice's oncology/autoimmune lane.
+  - Multimodal PET / focused-ultrasound + immunotherapy combo Goldilocks window (`10.64898/2026.06.10.731490`) — interesting method but device-physics-led, not therapeutic.
+  - DyMoTree (`10.64898/2026.06.09.731114`) — keyword hit on "CAR-T" was background ref; actual paper is tree-structured NN for single-cell transcriptomics.
+  - Spatial transcriptomics neurodegeneration paper (`10.64898/2026.06.10.730982`) — neuroinflammation, not oncology immunotherapy.
+  - ERR signaling / sarcopenia (`10.64898/2026.06.07.730739`) — "VEGF" was background; off-topic.
+
+- **News (Fierce Biotech, STAT, Endpoints)** — endpoints.news returned 403 today; opened Fierce Biotech homepage and STAT biotech. Nothing in the immunotherapy/bispecific/ADC lane dated 2026-06-11 or 2026-06-12: top items were Novartis Avidity dystrophy P1/2 (DMD, off-lane), Genentech VP layoffs, Kardigan $320M IPO (cardio), Novartis molecular glue strategy. Crescent / Kelun PD-1×VEGF ADC deal (relevant) — confirmed publication date 2025-12-04, out of window.
+
+- **ARPA-H / NIH / NSF** — ARPA-H news latest 2026-05-22; NIH press 403; NSF news latest 2026-06-09. No fresh announcements in window.
+
+**Source-level note:** endpoints.news 403, NIH press 403, bioRxiv full-text behind Cloudflare 403 — all worked around (abstract from MCP bioRxiv tool + web searches for context). No retries past one attempt; proceeded with available material per PIPELINE.
+=== 2026-06-12T03:28:50-07:00 done  justice-biotech-brief (exit 0) ===

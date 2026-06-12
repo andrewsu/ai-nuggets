@@ -1438,3 +1438,48 @@ All sources online; no transient failures this run.
 GEOAgent won on (1) right altitude — automating the shared data-engineering preamble across labs, not the science end; (2) architectural choice of agent-on-Nextflow rather than agent-executes-shell-commands; (3) open code + open data + open service trifecta on a 20-year community pain point; (4) directly hits the data-integration / APIs / bioinformatics / open-science axes of the audience; (5) thematically distinct from the recent week of science-end-agent papers.
 === 2026-06-11T03:06:57-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-06-12T03:00:05-07:00 start biomedical-agentic-ai ===
+Episode shipped. The mp3 is served from R2 (gitignored, as expected). Posting final candidate funnel for the audit log.
+
+---
+
+**Episode shipped**: `2026-06-12-mdforge-agentic-md-pipeline-design-picomolar-cb7` — committed in `1ed57bf`.
+
+- Script: `podcasts/biomedical-agentic-ai/scripts/2026-06-12-mdforge-agentic-md-pipeline-design-picomolar-cb7.md`
+- Audio: 337.3s / 2,698,388 bytes, mistral primary voice
+- Audio published to R2 bucket `ai-nuggets-episodes`
+- Feed entry added with `enclosure` pointing at the Worker URL
+
+## Candidate funnel — 2026-06-12
+
+**bioRxiv** (details API, 2026-06-10 → 2026-06-12, all 596 entries paginated; 145 keyword hits; ~6 substantive after discarding "fragment/storage/average → rag" matches and previously-shipped items):
+
+- An AI-Powered Trisomy 21 Research Assistant — https://www.biorxiv.org/content/10.64898/2026.06.08.730893v1 — disease-specific RAG assistant; full text 403'd from bioRxiv .full endpoint
+- A multi-agent system for spine MRI report generation from multi-sequence imaging — https://www.biorxiv.org/content/10.64898/2026.06.07.730703v1 — clinical decision support narrower than scientific-discovery scope
+- HoloCell: A Generative Foundation Model for Holistic Cellular Modeling — https://www.biorxiv.org/content/10.64898/2026.06.07.730684v1 — foundation model, not agentic
+- TifBERT: a self-supervised foundation model for normalization-robust bulk RNA-seq — https://www.biorxiv.org/content/10.64898/2026.06.08.728683v1 — foundation model, not agentic
+- Viability of engineered AAVs via protein language models — https://www.biorxiv.org/content/10.64898/2026.06.11.731521v1 — PLM application, not agentic
+- Research Process Graph: LLM-Driven Extraction and Hierarchical Organization of Research Logic — https://www.biorxiv.org/content/10.64898/2026.06.09.731113v1 — domain-restricted to plant biology
+- GEOAgent — already shipped in yesterday's episode
+
+**arXiv** (cached at `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, 2-day window; 11 agentic+biomed hits):
+
+- **MDForge: Agentic Molecular Dynamics Pipeline Design under Sparse Simulator Feedback** — https://arxiv.org/abs/2606.12916 — **CHOSEN**
+- ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages — https://arxiv.org/abs/2606.13572
+- MedCTA: A Benchmark for Clinical Tool Agents — https://arxiv.org/abs/2606.11702 — benchmark not architecture
+- Lung-R1: A Knowledge Graph-Guided LLM for Pulmonary Diagnostic Reasoning — https://arxiv.org/abs/2606.11675 — disease-specific; KG-guided LLM pattern covered by BacteReason
+- LLMs+Graphs: Toward Graph-Native, Synergistic AI Systems — https://arxiv.org/abs/2606.11560 — survey/tutorial
+- The Containment Gap: How Deployed Agentic AI Frameworks Fail Public-Facing Safety Requirements — https://arxiv.org/abs/2606.12797 — important but not biomedical-research domain
+- MedMisBench / Measuring Epistemic Resilience of LLMs Under Misleading Medical Context — https://arxiv.org/abs/2606.12291 — already covered 2026-05-30
+- SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning — general VLM, not biomedical
+- An LLM System for Autonomous Variational Quantum Circuit Design — not biomedical
+- MoCA-Agent — financial/tabular QA, not biomedical
+- Under What Conditions Can a Machine Become Genuinely Creative? — philosophy
+
+**ChemRxiv** (WebSearch with `site:chemrxiv.org`): no fresh biomedical-agentic-AI hits in the 2-day window.
+
+**News / product launches**: no top-tier biomedical-agentic-AI launches in the 2-day window.
+
+**Policy / funder pages** (ARPA-H / NIH / NSF / HHS): no fresh agentic-AI biomedical funder/policy announcements in the 2-day window.
+
+**Why MDForge won**: methodological contribution (open-ended code generation + per-stage typed expert critique under verbal RL beats the tool-calling pattern of MDCrow/MDAgent/DynaMate); prospective wet-lab confirmation (picomolar CB[7] binder by competition 1H NMR vs FMTA reference, Ka ≈ 8×10^12 M^-1) elevates this from benchmark paper to genuine prospective scientific discovery; competitive with the canonical pAPRika human-expert pipeline on SAMPL CB[7]; directly in the agentic-AI-applied-to-biomedical-research wheelhouse; on-recency with v1 posted 2026-06-11.
+=== 2026-06-12T03:10:42-07:00 done  biomedical-agentic-ai (exit 0) ===

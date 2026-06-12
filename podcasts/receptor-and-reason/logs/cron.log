@@ -1042,3 +1042,14 @@ Sources:
 - [Karlin/Definium DT120 ODT accelerated FDA action](https://www.psychiatrictimes.com/view/accelerated-fda-action-for-psychedelics-insights-from-daniel-r-karlin-md-ma)
 - [Autobahn Phase 2 elunetirom topline (BioSpace)](https://www.biospace.com/press-releases/autobahn-therapeutics-reports-positive-phase-2-topline-data-for-elunetirom-in-bipolar-depression-demonstrating-rapid-robust-and-durable-antidepressant-effects)
 === 2026-06-11T03:50:12-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-06-12T03:30:05-07:00 start receptor-and-reason ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CbyDG1fhuCW82wbzA5JkC
+=== 2026-06-12T03:31:41-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-06-12T03:31:41-07:00 AUP-refusal detected for receptor-and-reason; retrying in 180s ===
+=== 2026-06-12T03:34:41-07:00 start receptor-and-reason (retry 1) ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CbyDqiJNwCxZYdbQrZdPf
+=== 2026-06-12T03:39:16-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
