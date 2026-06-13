@@ -71,3 +71,4 @@ Committed. Final summary for the cron log:
 
 **Source-level note:** endpoints.news 403, NIH press 403, bioRxiv full-text behind Cloudflare 403 — all worked around (abstract from MCP bioRxiv tool + web searches for context). No retries past one attempt; proceeded with available material per PIPELINE.
 === 2026-06-12T03:28:50-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-06-13T03:20:05-07:00 start justice-biotech-brief ===
