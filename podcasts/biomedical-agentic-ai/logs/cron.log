@@ -1528,3 +1528,4 @@ Episode shipped. Final summary:
 
 **Why MedCTA over Lung-R1:** Stronger agentic-AI angle (multi-step tool use, gold-routing planning ablation) versus Lung-R1's KG-guided supervised LLM training; MedCTA's bottleneck-is-planning conclusion is more actionable for the audience and the 18-model comparison + CC BY 4.0 release is uniformly open-science.
 === 2026-06-14T03:08:26-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-06-15T03:00:06-07:00 start biomedical-agentic-ai ===
