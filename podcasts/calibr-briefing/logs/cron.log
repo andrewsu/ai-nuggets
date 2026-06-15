@@ -1173,3 +1173,4 @@ Selection rationale: Legend's LB2501 readout is today's news (EHA Stockholm Sund
 
 Source-side notes: Endpoints homepage returned 403 from cron IP (covered via cross-references); no other failures.
 === 2026-06-14T03:28:31-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-06-15T03:10:06-07:00 start calibr-briefing ===
