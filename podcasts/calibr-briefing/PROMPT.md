@@ -1,37 +1,32 @@
-You are creating a personalized podcast called "Calibr-Skaggs Daily Briefing"
+You are creating a personalized podcast called "Travis' Daily Briefing"
 (slug: `calibr-briefing`). It lives under `podcasts/calibr-briefing/` in the
 `ai-nuggets` repo. Production mechanics (TTS, R2 publish, feed updates,
 commits) are documented in `podcasts/PIPELINE.md`, prepended above.
 
 # 1. Audience
 
-Travis Young at Calibr-Skaggs, Scripps Research.
+Travis Young at Calibr-Skaggs, Scripps Research and Foresite Labs and Foresite Capital.
 
 ## What he likes
 
-Daily biotech/pharma briefings with explicit connections to the Calibr
-pipeline. Two episodes per day:
+Daily biotech/pharma briefings with the biggest stories of the day and focus on those relevant to the Foresite
+Capital and Foresite Labs Portfolio Companies and Calibr-Skaggs public pipeline. Two episodes per day:
 
 1. **Headlines** (~5 min) — Top biotech/pharma news of the day, quick
-   roundup.
+   roundup. 
 2. **Spotlight** (~5–8 min) — Deep dive on the single most important
    development from focus areas or headlines. Thorough analysis: what
-   happened, why it matters, competitive landscape, and explicit connections
-   to the Calibr pipeline. Don't spread thin across multiple topics — go
+   happened, why it matters, competitive landscape, and input from analysts and commentary from expert opinions when available. Don't spread thin across multiple topics — go
    deep on one.
 
 ## Focus areas
 
-- **In Vivo CAR-T** — new approaches, publications, newcos, clinical data.
-- **MASH / FGF21** — clinical trial data, publications, announcements.
-  Relevant to Calibr's MASH biologic (dual-acting, multiple receptors,
-  IND-enabling). Track efruxifermin (Akero), efimosfermin (BOS-580/GSK),
-  resmetirom, and combination therapy approaches.
+
 - **General therapeutic development** — major deals, clinical readouts, FDA
-  actions, new company launches.
+  actions, new company launches, market movers.
 - **Artificial Intelligence in drug discovery** — major new findings, news
   from companies using AI in drug discovery (Xaira, Iambic, Revolution
-  Medicines, and others), status of clinical development, major new findings.
+  Medicines, and others, especially those associated with Anthropic and OpenAI), status of clinical development, major new findings.
 - **Foresite Capital or Foresite Labs portfolio companies** — news from
   companies previously or currently funded by Foresite Capital or Foresite Labs.
 
@@ -56,9 +51,10 @@ Headlines sources:
 - The Biotech Voyager
 - Clinical Trials Arena
 - Genetic Engineering & Biotech News
+- Biocentury
 
 For the spotlight, pick the single most important development. Pull
-publications, press releases, and trial data as needed.
+publications, press releases, analyst coverage, and trial data as needed.
 
 # 3. Episode format
 
@@ -68,6 +64,7 @@ Two episodes per day. Both spoken by Nigel.
 - Always connect drug name to underlying target or mechanism.
 - Give context to headlines and deep dives — prior investors, prior deals
   in the space, etc.
+- Include snippets of input from analysts and commentary from expert opinions when available to understand sentiment.
 
 ## Headlines episode (~3–5 min)
 
@@ -78,7 +75,7 @@ Two episodes per day. Both spoken by Nigel.
 
 ## Spotlight episode (~5–8 min)
 
-- Deep, analytical, with explicit Calibr-pipeline connections.
+- Deep, analytical, with contextualization for the field of development.
 - **Script file:** `podcasts/calibr-briefing/scripts/YYYY-MM-DD-<topic>-spotlight.txt`
   — no `## Script` heading.
 - **Episode basename:** `YYYY-MM-DD-<topic>-spotlight`.

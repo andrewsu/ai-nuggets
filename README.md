@@ -8,7 +8,7 @@ Each show under `podcasts/<slug>/` is a separate feed for a separate audience.
 | Slug | Audience | Subscribe |
 |---|---|---|
 | [`biomedical-agentic-ai`](podcasts/biomedical-agentic-ai/) | Andrew Su (Su Lab, Scripps) — agentic AI applied to biomedical research | [feed.xml](https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/biomedical-agentic-ai/feed.xml) |
-| [`calibr-briefing`](podcasts/calibr-briefing/) | Travis Young (Calibr-Skaggs, Scripps) — daily biotech & pharma briefing | [feed.xml](https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/calibr-briefing/feed.xml) |
+| [`calibr-briefing`](podcasts/calibr-briefing/) | **Travis' Briefing** — Travis Young (Calibr-Skaggs, Scripps), daily biotech & pharma briefing | [feed.xml](https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/calibr-briefing/feed.xml) |
 | [`justice-biotech-brief`](podcasts/justice-biotech-brief/) | Justice Fleischmann (Rodgers Lab, Calibr at Scripps) — biotech & pharma headlines with focus on VEGF×PD-L1, JAK ADCs, and trispecific T cell engagers | [feed.xml](https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/justice-biotech-brief/feed.xml) |
 | [`receptor-and-reason`](podcasts/receptor-and-reason/) | Alan Huebschen (Scripps) — neuropsychopharmacology + computational pharmacology + agentic AI in biology | [feed.xml](https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/receptor-and-reason/feed.xml) |
 | [`scripps-biomed-brief`](podcasts/scripps-biomed-brief/) | Peter Schultz (Scripps) — new targets, modalities, and technologies for human health | [feed.xml](https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/scripps-biomed-brief/feed.xml) |

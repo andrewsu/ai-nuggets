@@ -1,7 +1,11 @@
-# 💊 Calibr-Skaggs Daily Briefing
+# 💊 Travis' Briefing
 
 A daily podcast covering biotech/pharma headlines, therapeutic development,
-and focus areas relevant to Calibr-Skaggs at Scripps Research.
+and focus areas relevant to Travis Young at Calibr-Skaggs, Scripps Research.
+
+> The on-disk slug remains `calibr-briefing` so the feed URL and existing
+> episode enclosure URLs keep working — only the displayed podcast title
+> changed.
 
 ## Focus areas
 

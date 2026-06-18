@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Calibr-Skaggs Daily Briefing</title>
+    <title>Travis' Briefing</title>
     <link>https://github.com/andrewsu/ai-nuggets</link>
-    <description>Daily biotech and pharma briefing covering headlines, therapeutic development, in vivo CAR-T, and MASH/FGF21 — curated for Calibr-Skaggs at Scripps Research.</description>
+    <description>Daily biotech and pharma briefing curated for Travis Young at Calibr-Skaggs, Scripps Research.</description>
     <language>en-us</language>
     <itunes:author>Nigel</itunes:author>
-    <itunes:summary>Daily biotech and pharma briefing covering headlines, therapeutic development, in vivo CAR-T, and MASH/FGF21 — curated for Calibr-Skaggs at Scripps Research.</itunes:summary>
+    <itunes:summary>Daily biotech and pharma briefing curated for Travis Young at Calibr-Skaggs, Scripps Research.</itunes:summary>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/calibr-briefing/feed.xml" rel="self" type="application/rss+xml"/>
