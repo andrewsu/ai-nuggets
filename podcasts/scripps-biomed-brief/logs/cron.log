@@ -962,3 +962,26 @@ Shortlist after relevance filtering (each was a credible nugget for the Schultz 
 Selection logic: the four chosen items collectively span the four Schultz beats — RNA-targeted small molecules + chemical biology platform (SOLiD-MaP), TPD with AI (DesignMaster), LNP delivery + closed-loop ML for precision delivery (FALCON), and ubiquitin-system chemical probes that enable next-generation degrader programs (UbCMK).
 === 2026-06-18T03:51:01-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-06-19T03:40:06-07:00 start scripps-biomed-brief ===
+Episode shipped. Below is the candidate funnel.
+
+## Run summary
+
+Episode: `2026-06-19-qdoas-amyloid-lrrc15-minibinder-tle-fbxl14-gale-disulfiram` (293 s, 2,345,004 bytes). Uploaded to R2, RSS item prepended, committed locally (`06e03a7`); orchestrator handles push.
+
+## Candidate funnel
+
+- **Sources scanned:** bioRxiv (biochemistry, pharmacology & toxicology, bioengineering, synthetic biology) for 2026-06-17–06-19; plus targeted Fierce Biotech R&D and a Nature/Cell/Science check. arXiv was not separately queried — bioRxiv chemical-biology coverage was already saturating the slate.
+- **Source-level failures:** bioRxiv full-text fetches (HTML + PDF) returned HTTP 403 from this host, as expected per the standing constraint. Worked from abstracts plus the bioRxiv details API. Synthetic-biology category returned zero results in the window (no new submissions; not a fetch error).
+
+Substantive shortlist (after discarding spurious matches):
+
+- Q-DOAS proximity-quenching assay — Frydman (Stanford) — `10.64898/2026.06.16.732424` — **CHOSEN**
+- LRRC15-samrotamab cryo-EM + de novo minibinders — Shakeel (WEHI) — `10.64898/2026.06.16.732218` — **CHOSEN**
+- Systemic TLE/Groucho degradation by SCF-FBXL14 — Rape (UC Berkeley) — `10.64898/2026.06.16.732780` — **CHOSEN**
+- Disulfiram as covalent GALE inhibitor — Boyce (Duke) — `10.64898/2026.06.17.733026` — **CHOSEN**
+- dEVA zero-shot metalloenzyme (v2 reposted) — Possu Huang (Stanford) — `10.64898/2026.04.23.720277` — held; v1 (April) likely already orbited other shows; this is a revision.
+- Chemoselective C12 halogenation of premarineosin A for antimalarials — Sherman/Pereira (Michigan) — `10.64898/2026.06.16.732709` — held; tight chemistry but narrower audience appeal than the four chosen.
+- ML-guided olivetolic acid cyclase engineering for cannabinoid biosynthesis — Romero (Wisconsin) — `10.64898/2026.06.12.731972` — held; interesting AI+enzyme story but lower clinical leverage.
+- MDL-001 oral pan-antiviral — `10.1101/2025.01.13.632836` — held; v4 of an older preprint, not fresh enough.
+- UbCMK, SOLiD-MaP, FALCON — already shipped in yesterday's episode; excluded.
+=== 2026-06-19T03:46:34-07:00 done  scripps-biomed-brief (exit 0) ===

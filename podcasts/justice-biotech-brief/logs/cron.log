@@ -258,3 +258,34 @@ Episode shipped. Final summary follows.
 - [Fierce Biotech homepage](https://www.fiercebiotech.com/)
 - [STAT News homepage](https://www.statnews.com/)
 === 2026-06-18T03:29:41-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-06-19T03:20:06-07:00 start justice-biotech-brief ===
+Commit landed (subject lost a couple of `$` dollar amounts to shell expansion — feed/script content is correct, cosmetic only). Now printing the audit-record funnel.
+
+Episode shipped: **2026-06-19 — AbCellera CD3+costim TCE platform / Jazz Pharmaceuticals deal**
+- Script: `podcasts/justice-biotech-brief/scripts/2026-06-19-abcellera-jazz-tce-costim-multispecific-deal.md`
+- Audio: `podcasts/justice-biotech-brief/episodes/2026-06-19-abcellera-jazz-tce-costim-multispecific-deal.mp3` (2,681,879 bytes, 335s, mistral primary)
+- R2: uploaded to `ai-nuggets-episodes` (key `podcasts/justice-biotech-brief/episodes/2026-06-19-abcellera-jazz-tce-costim-multispecific-deal.mp3`)
+- Feed: updated, parses OK
+- Committed under `flock /tmp/ai-nuggets-git.lock`; orchestrator will push.
+
+### Candidate funnel (2026-06-19)
+
+**bioRxiv** (window 2026-06-18 → 2026-06-19, 190 unique entries paginated in full):
+- Relevance-keyword survivors (title + abstract regex): 3 hits — 1 spurious ("PaM amidating monooxygenase" → TCE substring false positive). Substantive shortlist:
+  - LRRC15 cryo-EM structure / WEHI — `10.64898/2026.06.16.732218v1` — **already shipped 2026-06-18, excluded**.
+  - Melanoma TIL Treg restraint paper (v2 update) — `10.1101/2025.10.21.683143` — interesting but Treg/melanoma is tangential to Justice's VEGF×PD-L1 / TCE / JAK / ADC focus, and a v2 of an October 2025 preprint doesn't pass the "fresh ≤ 2 days" intent.
+
+**News & product launches** (Fierce Biotech front page; STAT News; Endpoints feed):
+- Endpoints `/feed/` 301-redirect chain (no body returned); proceeded with the other two per source-failure rule, noted in funnel.
+- Fierce Biotech relevant headlines:
+  - Moderna mflusiva FDA adcomm approval-track — flu vaccine, off-strategy for Justice; calibr-briefing has it as a spotlight today.
+  - cAMPfield $180M Series A oral IBD asset — off-strategy.
+  - Novocure brain-cancer device fail — off-strategy.
+- STAT News front page: 2 article links scanned, none in oncology IO / TCE / ADC / VEGF×PD-L1 / JAK space (Tennessee ivermectin, GLP-1 weight-loss market).
+- WebSearch for VEGF×PD-L1 / trispecific TCE / JAK-ADC June 2026 news → surfaced **Jazz Pharmaceuticals × AbCellera preclinical research collaboration for next-gen TCE multispecifics, announced June 17 2026**, $56M upfront + $28M + up to ~$792M/program + tiered royalties, GI and solid tumors, AbCellera contributing CD3 panels + costim arms + multispecific engineering + functional assays. ← **PICKED**.
+
+**Policy / funder feeds**:
+- ARPA-H, NIH, NSF news pages all blocked/redirected from this IP (NIH Cloudflare-challenge, ARPA-H and NSF returned static refresh-redirect stubs; not retried per the source-failure rule). Noted as auditable gap.
+
+**Selection rationale**: Jazz–AbCellera is fresh (announced Tuesday, within the 1–2 day window), squarely in trispecific TCE territory (Justice's explicit interest area), platform-level rather than asset-level so it admits an opinionated deal-flow read about the field's pivot from two-arm BiTEs to costim-armed trispecifics. Beat the melanoma Treg preprint on strategy fit and the bioRxiv LRRC15 hit on the no-duplicates rule.
+=== 2026-06-19T03:29:53-07:00 done  justice-biotech-brief (exit 0) ===

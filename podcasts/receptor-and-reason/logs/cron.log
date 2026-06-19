@@ -1296,3 +1296,53 @@ Dedup catches this run: 2/12 initial picks (731411 propofol, 731723 AMPA alcohol
 Header note: lineup is bioRxiv-heavy (8 of 10) by selection rather than source-availability — the neuroscience corpus over the rolling 7d had strong CNS-pharm substance.
 === 2026-06-18T03:50:41-07:00 done  receptor-and-reason (exit 0) ===
 === 2026-06-19T03:30:06-07:00 start receptor-and-reason ===
+Episode 37 of Receptor & Reason shipped — 11 items, 15:58 spoken (958s), mp3 7.66MB uploaded to R2, feed updated, ledger appended, committed `2c83a7d`.
+
+Candidate funnel:
+
+- **bioRxiv** (neuroscience + pharm/tox + bioinformatics + genomics + biophysics + genetics + systems biology + molecular biology, 7-day window 2026-06-12 → 2026-06-19, 1031 unique entries pulled via cursor pagination, 515 CNS/pharm/agentic-keyword-relevant after first filter, top 80 inspected). Substantive shortlist (DOI / title / disposition):
+  - **PICKED (lead)** doi:10.64898/2026.04.06.716778 v2 — Psilocybin L5 PyrN 5-HT2A dissociates plasticity from head-twitch
+  - **PICKED** doi:10.1101/2025.01.04.631335 v2 — snRNA-seq psilocybin + ketamine time-course (1/2/4/24/72h)
+  - **PICKED** doi:10.64898/2026.06.11.731523 — Trustworthy agentic genomics, versioned skill libraries
+  - **PICKED** doi:10.64898/2026.06.12.731844 — FlowBench: agentic bioinformatics decomposition
+  - **PICKED** doi:10.64898/2026.06.11.731777 — PD/MSA convergent metabolic-kinase axis (iPSC midbrain spheroids)
+  - **PICKED** doi:10.64898/2026.06.11.731747 — miR-181d regulates neprilysin + tau in AD
+  - **PICKED** doi:10.64898/2026.06.11.731622 — Prenatal alcohol → γ-secretase → AD vulnerability
+  - **PICKED** doi:10.64898/2026.06.14.732178 — Flupyradifurone (FPF) > imidacloprid DA neurotoxicity in C. elegans
+  - **PICKED** doi:10.64898/2026.06.17.732994 — CTACIT cell-type-aware fine-mapping (DRD2 schizophrenia validation)
+  - **PICKED** doi:10.64898/2026.06.16.731709 — Striatal D1/D2 short-term action-outcome memory
+  - doi:10.64898/2026.06.11.731093 — DRN/vlPAG 5-HT vs DA differential aversive responses (held; clean physio but less translational)
+  - doi:10.64898/2026.06.14.732123 — Metabolic Gating + cognitive plasticity (held; speculative)
+  - doi:10.64898/2026.06.15.732494 — α-Syn over-expression + ceruloplasmin iron/redox (held; M17 cell line only)
+  - doi:10.64898/2026.06.13.732018 — PTM proteome-wide in AD brain (held; descriptive observational)
+  - doi:10.64898/2026.06.10.731267 — LILRB4 DEL→APX1 5xFAD (held; 4th LILRB4 paper in 4 weeks, editorial saturation)
+  - doi:10.64898/2026.06.15.732239 — Glycyrrhiza glabra phosphoproteomics PD (held; herbal)
+  - doi:10.64898/2026.06.11.731670 — CYP27A1-VDR HD rescue (held; vitamin D angle)
+  - doi:10.64898/2026.06.13.732037 — Lorentz hyperbolic AD t-SNE (held; methodology)
+  - doi:10.64898/2025.12.03.692036 — Drosophila ethanol sleep-memory inversion (held; fly model)
+  - doi:10.64898/2026.06.10.729142 — VGLUT3 raphe→LS axon terminals (held; anatomy)
+  - doi:10.64898/2026.06.10.731399 — Graph QSAR PubChem hepatotoxicity (held; covered as ADMET layer recently)
+  - doi:10.64898/2026.06.11.731199 — C. elegans α-syn forward genetic UPRmt (held; covered by PD/MSA pick)
+
+- **arXiv** (cached `/tmp/ai-nuggets-arxiv-cache.xml`, 1.21MB, cs.AI + cs.CL + cs.MA + q-bio union, 500 entries, 7-day window). 236 biomed-keyword candidates initially, tightened to 16 strong biomed+agentic. Substantive shortlist:
+  - **PICKED (closer)** arxiv:2606.19899 — Measuring Biological Capabilities and Risks of AI Agents (policy synthesis to close the agentic-AI arc)
+  - arxiv:2606.20120 — Dual-Agent Verified Translation of NL Biology Protocols (held; lab-automation flavor, less pharm)
+  - arxiv:2606.19852 — Zero-Shot Agentic LLMs for Lung Pathology Extraction (held; clinical NLP, off-CNS)
+  - arxiv:2606.19152 — AdsMind multi-agent catalysis (held; off-thesis)
+  - arxiv:2606.18979 — Speech-based dementia subtests (held; overlapping with 2606.18019 shipped yesterday)
+  - arxiv:2606.20164 — MedRLM long-context clinical reasoning (held; broad clinical AI)
+  - arxiv:2606.19183 — LLM-ML hybrid pediatric appendicitis (held; off-CNS)
+  - arxiv:2606.19640 — Multilingual mental-health dialogue datasets (held; infrastructure)
+
+- **Tier 1 journals** (Neuropsychopharmacology / Molecular Psychiatry / Biological Psychiatry / IJNP / PNPBP / Neuropharmacology): not queried — cron host has consistent auth-wall 403/303s, prior runs (2026-06-16, 2026-06-17, 2026-06-18) all logged the same source-side failure. Skipped per source-failure rule; recall hit modest given bioRxiv-rich corpus.
+
+- **Tier 3 chemRxiv / Psychiatric Times**: Psychiatric Times surveyed via WebSearch — no fresh in-window items (May 2026 review already shipped; latest pipeline items are 2025/2024 articles or already covered COMP360 Phase 3 Feb 2026). chemRxiv not surveyed (Cloudflare-gated per PROMPT.md). No fresh picks added.
+
+- **Tier 4**: not activated (Tiers 1-2 yielded 11 fresh items, above 10-item floor).
+
+Full-text availability: bioRxiv `.full` blocked by Cloudflare per existing memory record — wrote from structured abstracts pulled via API. arXiv closer (Measuring Biological Capabilities and Risks of AI Agents) and dual-agent runner-up fetched in full via WebFetch on abs HTML.
+
+Dedup catches this run: 0 — all 11 picks passed the 369-entry shipped-key set on first check.
+
+Header note: lineup is bioRxiv-dominant (10 of 11) by selection — the rolling 7d window had unusually strong psychedelic + neurodegeneration + agentic-genomics substance, with the psilocybin L5 dissociation being the clearest single causal experiment of the week.
+=== 2026-06-19T03:46:36-07:00 done  receptor-and-reason (exit 0) ===

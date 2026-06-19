@@ -1314,3 +1314,33 @@ Substantive shortlist (post-filter):
 All 5 picked items opened in full via WebFetch / WebSearch result extracts; uniQure spotlight cross-checked against globenewswire press release + September 2025 36-month topline + 2022 voluntary high-dose pause history.
 === 2026-06-18T03:25:23-07:00 done  calibr-briefing (exit 0) ===
 === 2026-06-19T03:10:06-07:00 start calibr-briefing ===
+**Calibr-Skaggs Daily Briefing 2026-06-19 — published**
+
+Two episodes generated, audio uploaded to R2 (`ai-nuggets-episodes` bucket), feed.xml updated and validates as XML, single commit `54bfd0f` made via flock-serialized `git commit` (no push, orchestrator handles that).
+
+**Headlines (484s):** Moderna mFlusiva VRBPAC unanimous 9-0 endorsement (lead/spotlight tease) + Biogen–RayThera $1B preclinical immunology M&A + cAMPfield $180M Series A prifemilast oral PDE4B for IBD + FDA Merck Capvaxive pediatric expansion + Eli Lilly 340B denial enforcement.
+
+**Spotlight (684s):** Moderna mFlusiva mRNA-1010 — mechanism (LNP-mRNA HA + Spikevax-platform agility + immunosenescence framing), Phase 3 P304 (N=40,805, 26.6% rVE 50+, 27.4% rVE 65+, strain-level breakdown, Fluzone HD antibody bridge), regulatory arc (Feb 2026 RTF → days-later reversal → split standard/accelerated BLA → up-to-800K confirmatory → Makary/Prasad departures → June 18 VRBPAC + Aug 5 PDUFA), competitive map (Pfizer 34.5% rVE with secondary miss / Sanofi retreat / GSK Ph 1 / $7.5B US adult flu market / $3B 65+ enhanced), and three Calibr read-throughs (FDA posture-shift template for switchable-CAR-T rare indications; mRNA respiratory franchise validation accelerates adjacent LNP modalities including in-vivo gene-edit-delivered CAR-T; durable-immunization-vs-disease-modification framing paired with Wednesday's uniQure AMT-130 — regulatory frontier widening at both ends of durability spectrum).
+
+**Candidate funnel:**
+
+Sources scanned (June 18 evening / June 19 morning):
+- Fierce Biotech homepage — 5 top items, all relevant; 4 substantive (Moderna mFlusiva, Biogen–RayThera, Kardigan IPO [covered yesterday], F2G/Shionogi olorofim [covered yesterday], cAMPfield $180M Series A)
+- BioPharma Dive homepage — 5 items, full overlap with Fierce + UniQure (covered yesterday)
+- Fierce Pharma homepage — 4 items: Pfizer CFO Denton departure (light), oral Wegovy traction (light), Merck Capvaxive pediatric expansion (selected), Aurobindo/Lannett FTC divest (light)
+- STAT pharma — 3 items: VRBPAC vote, Lilly 340B (selected), Cambrian longevity (light preclinical, dropped)
+- Endpoints News — homepage 403 from this IP, search backfill used; surfaced same lineup
+- Web searches — June 19-specific (Triveni Bio Series C, Roche Lunsumio SC filing, Norwich Xofluza generic, J-Pharma nanvuranlat, Samsung Bioepis/Organon Pyzchiva, Neurizon/Elanco) — all noted but lower-tier vs the June 18 lineup
+
+Substantive shortlist:
+- Moderna mFlusiva VRBPAC unanimous 9-0 — fiercebiotech.com/biotech/moderna-mflusiva-advisory-committee-fda — **CHOSEN (spotlight + headline #1)**
+- Biogen–RayThera $1B — investors.biogen.com/news-releases — **CHOSEN (headline #2)**
+- cAMPfield $180M Series A prifemilast PDE4B IBD — fiercebiotech.com/biotech/campfield-harvests-180m-series-advance-oral-ibd-drug-licensed-newsoara — **CHOSEN (headline #3)**
+- Merck Capvaxive pediatric 2–17 at-risk expansion — merck.com PR — **CHOSEN (headline #4)**
+- Eli Lilly 340B denial enforcement — statnews.com/pharmalot/2026/06/18 — **CHOSEN (headline #5)**
+- Cambrian Bio exercise-mimetic longevity preclinical — dropped (preclinical, not commercially material)
+- Pfizer CFO Dave Denton departure — dropped (org news, not therapeutic)
+- Aurobindo/Lannett FTC divest condition — dropped (generic/M&A admin)
+- Triveni Bio $65M Series C atopic dermatitis bispecific — dropped (mid-tier financing, no Calibr/Foresite tie)
+- Roche Lunsumio SC sBLA acceptance, Norwich Xofluza generic, J-Pharma nanvuranlat, Samsung Bioepis Pyzchiva, Neurizon supply deal — all dropped (incremental, below top-5 bar)
+=== 2026-06-19T03:24:45-07:00 done  calibr-briefing (exit 0) ===
