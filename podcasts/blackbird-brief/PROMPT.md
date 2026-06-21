@@ -20,11 +20,11 @@ Scripps Research / Calibr; they think like operators who turn academic science
 into companies.
 
 Full portfolio, program, and partner detail lives in
-`memory/blackbird-portfolio.md` (repo root). **Read it at the start of every
-run** — it defines what "portfolio-relevant" means and lists the people,
-targets, and institutions to track. Keep it current: when you learn something
-new and durable about a program, partner, or competitor, update that file as
-part of the run.
+`podcasts/blackbird-brief/memory/blackbird-portfolio.md`. **Read it at the
+start of every run** — it defines what "portfolio-relevant" means and lists the
+people, targets, and institutions to track. Keep it current: when you learn
+something new and durable about a program, partner, or competitor, update that
+file as part of the run.
 
 ## What they care about
 
@@ -112,8 +112,8 @@ short retry, then proceed with the rest — never abort the run).
   BioPharma Dive, Genetic Engineering & Biotech News, BioBuzz (strong
   Baltimore/Maryland coverage).
 - Query around each portfolio program's target / modality / indication (see
-  `memory/blackbird-portfolio.md`) plus the company names, Blackbird
-  BioVentures, and Blackbird Laboratories.
+  `podcasts/blackbird-brief/memory/blackbird-portfolio.md`) plus the company
+  names, Blackbird BioVentures, and Blackbird Laboratories.
 
 **Stream B — Partner-institution research** (Sourcing Radar)
 
@@ -163,5 +163,5 @@ Single commit per run (covers both episodes on Sundays).
   `Blackbird 2026-06-21: Radar — <lead> + Portfolio Watch — <top item>`.
 
 Once scripts are written, follow `PIPELINE.md` to generate audio, publish to
-R2, update the feed, and commit. Stage only `podcasts/blackbird-brief/` (and
-`memory/blackbird-portfolio.md` if you updated it).
+R2, update the feed, and commit. Stage only `podcasts/blackbird-brief/`
+(including `memory/blackbird-portfolio.md` if you updated it).
