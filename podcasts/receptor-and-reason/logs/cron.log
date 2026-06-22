@@ -1420,3 +1420,27 @@ Episode shipped. Final summary:
 
 **Source failures:** none; all bioRxiv pages fetched cleanly, arXiv cache present and current. Two picks (Lerch hippocampal insulin, MC2R-MRAP) were abstract-only via bioRxiv API fallback because bodies hadn't rendered yet — Lerch flagged explicitly in the spoken script per PIPELINE.md.
 === 2026-06-21T03:53:31-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-06-22T03:40:11-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 8am (America/Los_Angeles)
+=== 2026-06-22T03:42:30-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-06-22T03:42:30-07:00 no episode produced for receptor-and-reason; retrying in 180s ===
+=== 2026-06-22T03:45:30-07:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 8am (America/Los_Angeles)
+=== 2026-06-22T03:45:33-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-06-22T03:45:34-07:00 no episode produced for receptor-and-reason; retrying in 180s ===
+=== 2026-06-22T03:48:34-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 8am (America/Los_Angeles)
+=== 2026-06-22T03:48:38-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-06-22T03:48:38-07:00 no episode produced for receptor-and-reason; retrying in 180s ===
+=== 2026-06-22T03:51:38-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 8am (America/Los_Angeles)
+=== 2026-06-22T03:51:41-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-06-22T03:51:41-07:00 no episode produced for receptor-and-reason; retrying in 180s ===
+=== 2026-06-22T03:54:41-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 8am (America/Los_Angeles)
+=== 2026-06-22T03:54:45-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-22T03:54:45-07:00 no episode produced for receptor-and-reason; retrying in 180s ===
+=== 2026-06-22T03:57:45-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 8am (America/Los_Angeles)
+=== 2026-06-22T03:57:49-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-22T03:57:49-07:00 FAILED: no episode produced for receptor-and-reason after all retries ===

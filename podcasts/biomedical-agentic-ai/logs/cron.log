@@ -1799,3 +1799,29 @@ The agent uses a 3-layer architecture (cognitive control / tool abstraction / ex
 PET/CT LLM agent wins on (a) concrete real-world end-to-end demonstration with patient-level metrics and honest discrepancy analysis, (b) methodological novelty as the first end-to-end LLM-orchestrated raw-DICOM-to-report workflow in nuclear medicine, and (c) the LLM-agnostic supplementary result that directly informs agentic-AI architecture choices.
 === 2026-06-21T03:12:50-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-06-22T03:00:11-07:00 start biomedical-agentic-ai ===
+Committed. Final summary follows.
+
+---
+
+**Episode shipped: VFB-MCP — ontology-backed MCP server makes an LLM precise on Drosophila connectomics**
+
+- Script: `podcasts/biomedical-agentic-ai/scripts/2026-06-22-vfb-mcp-ontology-backed-knowledgebase-llm-connectomics.md`
+- Audio: 320s mp3, 2,563,805 bytes, generated via Mistral primary (no fallback)
+- Published to R2 (`ai-nuggets-episodes` bucket)
+- `feed.xml` updated, validated, committed
+- Push deferred to orchestrator per pipeline
+
+**Candidate funnel — 2026-06-21 to 2026-06-22**
+
+bioRxiv (2-day window, full pagination, 63 unique papers across 3 pages): 14 raw keyword hits; substantive shortlist after dropping spurious matches ("RAG"/"agent" inside unrelated words):
+- VFB-MCP — 10.64898/2026.06.16.732577 — ontology-backed MCP for Drosophila connectomics, 25/30 vs 14/30 vs 2/30 (89% vs 11% on quantification slice) — **CHOSEN** (body not yet rendered; flagged in script)
+- BioBrain — 10.64898/2026.06.17.732700 — multi-agent framework for natural-language microscopy analysis; strong runner-up, passed on direct KG/ontology fit (body also abstract-only)
+
+medRxiv (2-day window, 6 papers): 1 keyword hit ("agent" → blood-supply viral surveillance) — off-topic.
+
+arXiv: cache (`/tmp/ai-nuggets-arxiv-cache.xml`) is **stale by 3–4 days** — latest submission 2026-06-18T17:59Z; 2026-06-19/20/21 not in cache. Within the stale window, in-scope items (MedRLM, Prompt-Plan-Extract, RAND biological-capabilities survey, AI Economist Agent) — all outside today's actual 2-day recency window. Gap noted; not a content gate today since bioRxiv carried the day.
+
+PubMed (last 5 days): 300 raw hits; on-topic items (MELMA in otolaryngology, Multi-Turn LLM agents for cancer scoping review) are review/methodology flavor, not primary research; all other hits are spurious ("chemical agent", "antibiotic agent", etc.).
+
+ChemRxiv / News / Policy: nothing in-window worth a slot.
+=== 2026-06-22T03:08:06-07:00 done  biomedical-agentic-ai (exit 0) ===

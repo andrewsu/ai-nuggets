@@ -1037,3 +1037,27 @@ Source failures: none. All bioRxiv category endpoints returned cleanly; r.jina.a
 
 mp3: 2,826,493 bytes, 353s. Generated via Mistral voxtral-mini-tts-2603/Paul Neutral in 3 chunks.
 === 2026-06-21T04:04:14-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-06-22T03:50:11-07:00 start scripps-biomed-brief ===
+You've hit your session limit · resets 8am (America/Los_Angeles)
+=== 2026-06-22T03:50:15-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-06-22T03:50:15-07:00 no episode produced for scripps-biomed-brief; retrying in 180s ===
+=== 2026-06-22T03:53:15-07:00 start scripps-biomed-brief (retry 1) ===
+You've hit your session limit · resets 8am (America/Los_Angeles)
+=== 2026-06-22T03:53:18-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
+=== 2026-06-22T03:53:19-07:00 no episode produced for scripps-biomed-brief; retrying in 180s ===
+=== 2026-06-22T03:56:19-07:00 start scripps-biomed-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 8am (America/Los_Angeles)
+=== 2026-06-22T03:56:22-07:00 done  scripps-biomed-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-06-22T03:56:22-07:00 no episode produced for scripps-biomed-brief; retrying in 180s ===
+=== 2026-06-22T03:59:22-07:00 start scripps-biomed-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 8am (America/Los_Angeles)
+=== 2026-06-22T03:59:26-07:00 done  scripps-biomed-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-06-22T03:59:26-07:00 no episode produced for scripps-biomed-brief; retrying in 180s ===
+=== 2026-06-22T04:02:26-07:00 start scripps-biomed-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 8am (America/Los_Angeles)
+=== 2026-06-22T04:02:29-07:00 done  scripps-biomed-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-22T04:02:29-07:00 no episode produced for scripps-biomed-brief; retrying in 180s ===
+=== 2026-06-22T04:05:30-07:00 start scripps-biomed-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 8am (America/Los_Angeles)
+=== 2026-06-22T04:05:33-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-22T04:05:33-07:00 FAILED: no episode produced for scripps-biomed-brief after all retries ===

@@ -1426,3 +1426,67 @@ Shortlist (after discarding items already in Wed/Thu/Fri/Sat headlines — Moder
 Full text read in advance: Nortiva spotlight grounded in BusinessWire press release detail (platform mechanism, advisor list, leadership), BioSpace expanded coverage (leadership team + advisory board), Lancet Psychiatry / multiple sources on Lyndra STARLYNG-1 Phase 3 risperidone PK comparability readout and STARLYNG-2 safety study gating, FierceBiotech reporting on Lyndra wind-down chronology, Innoviva $10.2M acquisition terms from FierceBiotech / Endpoints. Achieve Life Sciences CRL pre-announcement grounded in April 15 operational-progress press release (Adare technology transfer + OAI classification + Q4 2026 resubmission + H1 2027 launch). Sources for Scribe (BusinessWire), Portal (BioSpace / press), and BIO 2026 (bio.news) confirmed via direct fetches and structured search. FiercePharma + Endpoints homepages 403 from this IP; offset by other reachable sources.
 === 2026-06-21T03:38:16-07:00 done  calibr-briefing (exit 0) ===
 === 2026-06-22T03:20:11-07:00 start calibr-briefing ===
+Both episodes shipped. Final summary for the cron log:
+
+```
+=== CALIBR-BRIEFING 2026-06-22 ===
+
+Episodes committed (orchestrator will push):
+- Headlines: 2026-06-22-pharma-headlines.mp3 (237s, 1.9MB)
+- Spotlight: 2026-06-22-insilico-sk-biopharm-spotlight.mp3 (412s, 3.3MB)
+
+Audio: Mistral voxtral-mini-tts-2603 / en_paul_neutral (primary, no fallback)
+R2: both uploaded to ai-nuggets-episodes bucket
+Feed: validated, 2 items prepended
+
+Spotlight pick: Insilico Medicine + SK Biopharmaceuticals up-to-$2.5B AI-CNS
+deal announced this morning at BIO 2026 San Diego opening — Insilico's
+largest APAC deal ever; 3rd $2B+ AI platform deal of 2026; first commercial
+follow-through after Phase 2a rentosertib publication in Nature Medicine
+early June; heavily back-loaded ($18M upfront against $2.5B+ ladder = settled
+~0.5–1% upfront ratio for 2026 AI-platform deals).
+
+=== CANDIDATE FUNNEL ===
+
+[Scanned across BIO opening news, AI-drug-discovery beat, Foresite portfolio,
+Calibr/Scripps/TB anti-infectives, weekend pharma deals + clinical readouts.]
+
+Substantive shortlist (post-relevance-filter):
+
+* Insilico Medicine + SK Biopharmaceuticals AI-CNS partnership ($2.5B+, BIO opening
+  June 22) — https://www.fiercebiotech.com/biotech/insilico-lands-heavily-backloaded-25b-ai-drug-discovery-deal-sk-biopharm — CHOSEN AS SPOTLIGHT + HEADLINE #2
+* BIO International Convention 2026 opens June 22 San Diego, ~70K partnering
+  meetings — https://convention.bio.org/landing — HEADLINE #1
+* AbbVie nearing ~$11B Apogee Therapeutics acquisition (zumilokibart anti-IL-13)
+  https://firstwordpharma.com/story/7633713 — HEADLINE #3
+* Sanofi replaces head of R&D today (Garijo reorganization) —
+  https://www.fiercebiotech.com/biotech/sanofi-replaces-rd-chief-new-ceo-seeks-kickstart-pipeline
+  — folded into BIO headline
+* Biogen-RayThera up to $1B (June 17, Foresite Capital Series A co-lead exit) —
+  https://investors.biogen.com/news-releases/news-release-details/biogen-expands-immunology-pipeline-agreement-acquire-raythera
+  — HEADLINE #4 (Foresite portfolio relevance)
+* MoonLake sonelokimab VELA Phase 3 Week 52 in HS (June 21) — HiSCR-75 67%, HiSCR-100 33% —
+  https://www.globenewswire.com/news-release/2026/06/21/3314997/0/en/MoonLake-Announces-Week-52-Results-of-Sonelokimab-from-its-Phase-3-VELA-Program-in-Hidradenitis-Suppurativa-and-Confirms-Investor-Day-on-June-22-2026.html
+  — HEADLINE #5
+* Calibr-Skaggs $5.1M NIAID grant for LAI entecavir (HIV-HBV co-infection, June 16)
+  https://www.scripps.edu/news-and-events/press-room/2026/20260616-calibr-nih-award.html
+  — HEADLINE #6 (in-house)
+* Antengene-K2/MPM ATG-106 CDH6×CD3 TCE license ($20M up + $960.5M, BIO opening today)
+  — not picked (TCE landscape already covered via AbCellera-Jazz)
+* Jazz-AbCellera ~$4B TCE pact (June 17) — context, not picked
+* Definium DT120 (LSD) Phase 3 EMERGE topline today — not picked (psychedelics
+  outside Calibr core focus areas)
+* Insilico-Lilly $2.75B March, Lilly-Profluent $2.25B April — context only, used
+  as comps in spotlight
+* Recursion REC-1245 RBM39 Phase 1 update at Goldman conference — context only
+* Tune Therapeutics TUNE-401 EASL HBV epigenetic silencer — May 30 (older)
+* Eikon Therapeutics ASCO 2026 oncology pipeline — May 30 (older)
+* Telitacicept (Vor Bio licensee RemeGen) China Sjögren's approval June 8 — older
+
+Sources scanned: Fierce Biotech, Fierce Pharma, Endpoints, STAT, BioPharma Dive,
+GenEng News, Clinical Trials Arena, BIO newsroom, Insilico/SK Biopharm press,
+Scripps Calibr news, Foresite portfolio company IR. No source-side outages.
+ADA 2026 confirmed as June 5-8 (NOT June 20-23 as prompt suggested) — meeting
+closed two weeks ago, not in this window.
+```
+=== 2026-06-22T03:36:39-07:00 done  calibr-briefing (exit 0) ===

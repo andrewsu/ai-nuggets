@@ -329,3 +329,36 @@ Source-side notes: news-page web fetches mostly returned cached content stopping
 Episode shipped: `2026-06-21-chadox1-mva-glioblastoma-brain-trm.mp3` (358s, 2.86 MB) — feed updated, audio uploaded to R2, committed (no push per pipeline; orchestrator pushes).
 === 2026-06-21T03:41:52-07:00 done  justice-biotech-brief (exit 0) ===
 === 2026-06-22T03:30:11-07:00 start justice-biotech-brief ===
+Episode committed. Final summary for the audit log.
+
+---
+
+Episode shipped: **2026-06-22 — Decitabine + entinostat epigenetic priming surfaces shared cancer-testis antigen panel in low-mutation sarcomas**
+
+- Script: `podcasts/justice-biotech-brief/scripts/2026-06-22-decitabine-entinostat-sarcoma-ct-antigen-vaccine.md`
+- Audio: `2026-06-22-decitabine-entinostat-sarcoma-ct-antigen-vaccine.mp3` (3,094,195 bytes, 387 s, mistral primary)
+- R2: uploaded to `ai-nuggets-episodes`
+- Feed: updated, parses OK
+- Commit `2658bf4` on `main` under `flock /tmp/ai-nuggets-git.lock`; orchestrator will push.
+
+### Candidate funnel (2026-06-22)
+
+**bioRxiv** (window 2026-06-21 → 2026-06-22, 63 unique entries paginated in full across 3 cursor pages):
+- Relevance-keyword survivors (title + abstract regex covering VEGF/PD-1/PD-L1/TCE/bispecific/trispecific/CAR-T/ADC/JAK/checkpoint/CD3/CD28/4-1BB/checkpoint-target antigens): 4 hits, all kept after spurious-match prune. Substantive shortlist:
+  - **CHOSEN** Recho et al. (Ladle / Johns Hopkins) — *Combination epigenetic-targeted therapy increases the immunogenicity of poorly immunogenic sarcomas* — `10.64898/2026.06.18.733244 v1` — bioRxiv 2026-06-21. Opened full via fetch_preprint; jina returned abstract only (body not yet rendered, < 24h post). Kept per dominant-pick exception, abstract-only flagged in script.
+  - Abdel-Rahman + Gabr (Weill Cornell) — *OracleScreen-LILRB4: ML-guided discovery of myeloid immune checkpoint binders* — `10.64898/2026.06.17.732859 v1`. Strong fit on paper, but **same Gabr lab + same LILRB4 target** as 2026-06-12 GL-4512 episode → duplicative, excluded.
+  - Kelly et al. (Georgetown) — *Motif-vocabulary model of CAR T-cell intracellular domains* — `10.64898/2026.02.01.700582 v2`. v2 of February 2026 preprint — fails the "fresh ≤ 2 days" intent, excluded.
+  - Rabbi et al. (Kim, Purdue) — *Mechanical checkpoint for cell division in 3D microenvironments* — `10.64898/2026.06.16.732593 v1`. Biophysics/cancer-progression-mechanics, no therapeutic-development angle. Excluded.
+
+**News & product launches** (Fierce Biotech, Fierce Pharma, STAT pharma, Endpoints, BioPharma Dive — 1–2 day window):
+- Fierce Biotech homepage: only relevant June 21 article was *5-month sprint behind Pfizer's $10B Innovent deal* — Pfizer–Innovent deal was announced **May 28, 2026**, ~24 days old, fails recency hard filter; the June 21 feature is retrospective, not a fresh news event. Excluded.
+- Fierce Pharma: latest visible content stops at June 16–18, no in-window oncology IO. Endpoints: 403 from this IP (noted, per source-failure rule). STAT pharma front page: no in-window oncology IO/TCE/ADC/VEGF×PD-L1/JAK items.
+- WebSearch for VEGF×PD-L1 / trispecific TCE / JAK ADC June 21–22: surfaced ASCO 2026 carryover (CS2009 PD-1/VEGF/CTLA-4 trispecific, alveltamig ZG006 DLL3/DLL3/CD3 TCE) — all outside the 1–2 day window.
+
+**Policy / funder feeds**:
+- ARPA-H, NIH, NSF — no in-window oncology-immunotherapy announcements (per recent funder-page state from yesterday's run; not re-fetched today given the dominant preprint).
+
+**Selection rationale**: Recho/Ladle epigenetic-priming sarcoma vaccine is squarely in Justice's therapeutic-development territory (cancer immunotherapy, TCE/CAR-T target nomination) and avoids the LILRB4 / Gabr-lab repeat from 10 days ago. The conceptual contribution — pharmacologically inducing a *shared* cancer-testis antigen panel across mutationally heterogeneous tumors via two FDA-approved drugs — is a real target-nomination implication for cell-therapy platform planning, not just a mouse vaccine result. Cross-tumor sharing + human cell line convergence are the load-bearing findings that lift this above the other bioRxiv hits.
+
+Source-side: news IPs largely returned stale homepage content stopping at June 18; Endpoints 403; bioRxiv body HTML not yet rendered for the chosen preprint (< 24h post) — abstract-only take flagged in the script per PIPELINE dominant-pick exception.
+=== 2026-06-22T03:40:19-07:00 done  justice-biotech-brief (exit 0) ===
