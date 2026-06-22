@@ -1798,3 +1798,4 @@ The agent uses a 3-layer architecture (cognitive control / tool abstraction / ex
 
 PET/CT LLM agent wins on (a) concrete real-world end-to-end demonstration with patient-level metrics and honest discrepancy analysis, (b) methodological novelty as the first end-to-end LLM-orchestrated raw-DICOM-to-report workflow in nuclear medicine, and (c) the LLM-agnostic supplementary result that directly informs agentic-AI architecture choices.
 === 2026-06-21T03:12:50-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-06-22T03:00:11-07:00 start biomedical-agentic-ai ===
