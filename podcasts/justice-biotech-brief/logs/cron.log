@@ -328,3 +328,4 @@ Source-side notes: news-page web fetches mostly returned cached content stopping
 
 Episode shipped: `2026-06-21-chadox1-mva-glioblastoma-brain-trm.mp3` (358s, 2.86 MB) — feed updated, audio uploaded to R2, committed (no push per pipeline; orchestrator pushes).
 === 2026-06-21T03:41:52-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-06-22T03:30:11-07:00 start justice-biotech-brief ===
