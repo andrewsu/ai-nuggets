@@ -1827,3 +1827,39 @@ ChemRxiv / News / Policy: nothing in-window worth a slot.
 === 2026-06-22T03:08:06-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-06-23T02:00:06-07:00 start biomedical-agentic-ai ===
 Added user:design:read and user:design:write to your claude.ai login (for the Design MCP connector).
+Commit done. The orchestrator will push.
+
+## Episode shipped: VISTA Architect — precompute the patient as a knowledge graph, then let agents query it for tumor boards
+
+- **Script:** `podcasts/biomedical-agentic-ai/scripts/2026-06-23-vista-architect-precomputed-ehr-knowledge-graph-tumor-boards.md`
+- **Audio:** `podcasts/biomedical-agentic-ai/episodes/2026-06-23-vista-architect-precomputed-ehr-knowledge-graph-tumor-boards.mp3` (2,431,521 B / 304 s, Mistral TTS)
+- **R2 publish:** OK
+- **Feed:** updated, parses, item prepended
+- **Commit:** `6be0a24` (orchestrator pushes)
+- **Paper:** VISTA Architect (arXiv:2606.22692, posted 2026-06-21) — Rivas group / Stanford Biomedical Data Science. MEDS Graph + Timeline Object Architecture; 96.4% on 17,700 tumor-board evaluations across 1,180 thoracic-oncology patients vs ~67% BM25 RAG; Claude Opus orchestrator runs 30-patient board prep in ~2.2 min.
+
+### Candidate funnel — June 22-23, 2026
+
+**bioRxiv (2026-06-22 to 2026-06-23, full pagination, 178 papers across 6 cursors)**: 31 hits on agentic / LLM / KG / ontology keywords. Substantive shortlist after dropping spurious matches:
+- CellTosg2Sequence — text-omics-signaling-graph LLM for single-cell, KG + ontology fit but framed as foundation modeling not agentic system. `10.64898/2026.06.16.732397`
+- ResistAgent — evidence-constrained framework for resistance-aware lead optimization; agentic flavor, method paper. `10.64898/2026.06.16.732538`
+- HoloCell / OmniCell / EventHorizon — foundation-model single-cell / flow-cytometry contributions, not agentic.
+
+**arXiv (cache fetched 2026-06-23 02:00 UTC, 500 entries; substantive in-window biomedical+agent hits)**:
+- VISTA Architect (2606.22692) — **CHOSEN**
+- TTFT-Aware Graph Chain-of-Thought (2606.23108) — production GraphRAG, ~700K-node medical KG, fertility assistant; strong runner-up
+- EHR-Complex (2606.23301) — 52K-task MIMIC-IV clinical-agent benchmark, top model 62.3%
+- Closed-loop Auto Research for Molecular Property Prediction (2606.22731) — agentic LLM closed-loop with held-out test certification; honest transfer-failure result
+- EpiiSLM (2606.22657) — dual foundation model for sEEG epileptogenic zones; foundation not agentic
+- EnterpriseClawBench (2606.23654) — not biomedical
+
+**PubMed (entry-date 2026-06-18 to 2026-06-23, agentic + biomedical filter)**: 115 broad hits in window; no fresh agentic-biomedical breakthrough — closest was "LLMs for longitudinal synthetic data in low-risk pregnancy care" (application, not architectural).
+
+**ChemRxiv (WebSearch)**: no fresh biomedical-agentic-AI hits in the 2-day window.
+
+**News / product launches**: nothing major.
+
+**Policy (ARPA-H)**: page returned empty from this host on the run; nothing fresh surfaced.
+
+VISTA Architect wins on (a) cohort scale (1,180 patients, 17,700 evaluations), (b) matched BM25 RAG baseline making the graph-first structural advantage quantitatively visible (~30-point gap concentrated on time-varying state variables), (c) the agentic-interface operational result (~2.2 min board prep), and (d) direct fit with Su Lab interests in agentic AI + biomedical knowledge graphs.
+=== 2026-06-23T02:09:42-07:00 done  biomedical-agentic-ai (exit 0) ===

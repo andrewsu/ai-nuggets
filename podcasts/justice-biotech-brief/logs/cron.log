@@ -363,3 +363,28 @@ Episode shipped: **2026-06-22 — Decitabine + entinostat epigenetic priming sur
 Source-side: news IPs largely returned stale homepage content stopping at June 18; Endpoints 403; bioRxiv body HTML not yet rendered for the chosen preprint (< 24h post) — abstract-only take flagged in the script per PIPELINE dominant-pick exception.
 === 2026-06-22T03:40:19-07:00 done  justice-biotech-brief (exit 0) ===
 === 2026-06-23T02:30:06-07:00 start justice-biotech-brief ===
+Episode shipped. Audio is 5:29 (329 sec, 2.6 MB, primary Mistral voice).
+
+Selected: **Sigvotatug vedotin** — Pfizer's first-in-class integrin-beta-6 ADC missed its Phase 3 OS primary endpoint vs docetaxel in 2L+ non-squamous NSCLC (SigVie-002, n=703), but a 2L subset signal and a salvage plan pointing at 1L pembrolizumab and at Pfizer's PD-1×VEGF bispecific PF-08634404 lands squarely on Justice's ADC + VEGF×PD-L1 interests. The payload-mechanism intuition (MMAE tubulin disruptor vs taxane-pretreated 3L+ patients) carries the analytical weight.
+
+## Candidate funnel
+
+**bioRxiv** — 178 details-API entries surveyed for 2026-06-22/23 window (paginated cursor 0→180); substantive immunology/oncology shortlist after discarding spurious "TIL/TME/dendritic/LAG" hits in neuroscience papers (abstract-level reads):
+- IL-38 limits alloreactivity through modulating myeloid and T cell activation — bioRxiv 2026.06.19.728400 (alloHSCT/GVHD — adjacent but not central)
+- Spatial Orchestration of Skin Fibrosis by a CD8+ T cell-Myofibroblast Axis — bioRxiv 2026.06.17.732787
+- HTS-Oracle X: AI-Guided Prospective Discovery of Small Molecule Immune Checkpoint Binders — bioRxiv 2026.06.17.732853
+- Conserved TCR usage in CD1c-presented mycobacterial lipid recognition — bioRxiv 2026.06.17.733038 (TB focus, off-thesis)
+- Mapping human NK cell development in tonsil — bioRxiv 2026.05.13.722762 (basic biology)
+- APOC1+ inflammatory CAF-like state in rheumatoid arthritis — bioRxiv 2026.04.17.718831
+
+**News / press feeds:**
+- **★ Pfizer — sigvotatug vedotin Phase 3 OS miss in non-squamous NSCLC + 2L subset signal + PD-1×VEGF combo plan (June 22, 2026)** — SELECTED
+- Merck — tulisokibart anti-TL1A Phase 3 ATLAS-UC induction primary + key secondaries met in moderate-to-severe UC (first-in-class TL1A; June 22) — strong alternative, autoimmune biologic
+- AbbVie — $10.9B acquisition of Apogee Therapeutics for IL-13 atopic dermatitis program (June 22)
+- Exelixis — zanzalintinib (Cabometyx successor) primary endpoint miss in CRC (June 22)
+- HHS — initiative to accelerate Phase 1 trials by 6–12 months (June 22)
+
+**Funder / policy:** ARPA-H — only a proposal-evaluation explainer (June 22, no substantive program announcement); NIH press page returned 403; NSF not checked separately given news fullness.
+
+Selected sigvotatug vedotin over tulisokibart because (1) the asset directly hits two of Justice's explicit interest pillars (ADC + PD-1×VEGF combo) simultaneously where tulisokibart hits one (autoimmune biologic); (2) the payload-mechanism intuition (MMAE × prior-taxane) is the more transferable lesson for ADC trial design; (3) the salvage strategy is more architecturally interesting than a clean Phase 3 win.
+=== 2026-06-23T02:39:32-07:00 done  justice-biotech-brief (exit 0) ===

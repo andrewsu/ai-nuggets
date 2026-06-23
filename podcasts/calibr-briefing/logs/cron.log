@@ -1491,3 +1491,24 @@ closed two weeks ago, not in this window.
 ```
 === 2026-06-22T03:36:39-07:00 done  calibr-briefing (exit 0) ===
 === 2026-06-23T02:20:06-07:00 start calibr-briefing ===
+Episodes published. Commit `0c398c3`. Orchestrator will push.
+
+## Candidate funnel — 2026-06-23 (BIO Day 2)
+
+**Sources surveyed:** Fierce Biotech homepage + Fierce Pharma homepage + BioPharma Dive homepage; targeted searches across STAT, Endpoints (homepage 403 — endpts.com → endpoints.news), GlobeNewswire/BusinessWire press releases, AbbVie IR, BIO Convention schedule, Foresite Capital news.
+
+**Shortlist (substantive, after discarding overlap with already-shipped 6-22 items):**
+- **AbbVie agreed to acquire Apogee Therapeutics for $10.9B all-cash** ($135.11/share, 49% premium; zumilokibart half-life-extended anti-IL-13) — biopharmadive.com/news/abbvie-apogee-acquire-zumilokibart-eczema-drugs — **CHOSEN (spotlight + headline #1)**
+- CARsgen NMPA approval for satri-cel (CLDN18.2 CAR-T in advanced gastric/GEJ) — world's first solid-tumor CAR-T — biospace.com/press-releases/carsgen-announces-approval-of-satri-cel — headline #2
+- Definium DT120 LSD Phase 3 Emerge in MDD (8.1pp placebo-adjusted MADRS at Wk6) — statnews.com/2026/06/22/definium-lsd-dt120-major-depression-phase-3-data — headline #3
+- Merck tulisokibart ATLAS-UC Ph3 win (first anti-TL1A Ph3 in UC) + Bionyra Pharma $165M launch with TL1A + TL1A×IL-23p19 bispecific from TrueLab — merck.com/news/atlas-uc + biospace.com/press-releases/bionyra-pharma-launches — headline #4 (consolidated)
+- FDA reverses Regenxbio NAVSUNLI CRL (RGX-121 Hunter syndrome accelerated approval) — ir.regenxbio.com/news-releases — headline #5
+- HHS Operation Trial Blazer (Phase 1 compression + RTCT proof-of-concept) — fda.gov/news-events/press-announcements + biospace.com/fda/hhs-debuts — headline #6
+- Jazz-AbCellera $4.1B T cell engager partnership — already June 17, stale for today
+- Takeda zasocitinib LATITUDE-Atlas Ph3 head-to-head vs Sotyktu — covered in prior episode
+- Exelixis zanzalintinib STELLAR-303 disappointment — covered in prior episode
+
+**Source failures:** endpts.com 403 (Endpoints behind anti-bot wall). Worked around with Fierce + BioPharma Dive + STAT.
+
+**Picked:** AbbVie–Apogee spotlight (largest immunology bolt-on of the cycle, directly extends Spyre-LAI thesis and Calibr LAI platform read-through; deal was previewed yesterday as rumor and is now confirmed at $10.9B); six-headline roundup as listed.
+=== 2026-06-23T02:36:58-07:00 done  calibr-briefing (exit 0) ===

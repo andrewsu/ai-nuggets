@@ -1472,3 +1472,42 @@ Substantive shortlist (chosen marked ★):
 - VFB-MCP — excluded; shipped today by biomedical-agentic-ai
 === 2026-06-22T08:59:18-07:00 done  receptor-and-reason (exit 0) ===
 === 2026-06-23T02:40:06-07:00 start receptor-and-reason ===
+Episode shipped. Commit d3a92f9. Audio is 15:58, 10 items. Orchestrator handles the push.
+
+## Candidate funnel
+
+**bioRxiv (Tier 1 + Tier 2)** — 844 unique preprints across 2026-06-17 → 2026-06-23 (paginated daily); after neuroscience/pharm filter + neuropsychpharm keyword filter + dedup ledger: 119 Tier 1 + 22 Tier 2 candidates.
+
+**arXiv** — 500 entries in `/tmp/ai-nuggets-arxiv-cache.xml` (last 7 days, cs.AI/cs.CL/cs.MA/q-bio union); after agent + biomed filter: 229 candidates, narrowed by hand to ~5 strong neuro/biomed picks.
+
+**Tier 1 journals** — Neuropsychopharmacology (last 7 days, via WebSearch fallback since `nature.com` is gated): 5 fresh items surfaced (LSD RCT, orexin cross-over, NSSI white matter, cannabis-dopamine iron, early-life noradrenergic). Molecular Psychiatry browsed at a higher level. Other Tier 1 journals (Mol Psych, Biol Psych, IJNP, Prog Neuropsych, Neuropharmacology) not deep-scanned this run due to nature.com auth wall — small recall gap, logged here.
+
+**Psychiatric Times** — 3 items in the 7-day window (cytisinicline CRL, DT120 Emerge, Elunetirom — older than 7 days, dropped).
+
+**Tier 3** — CPT P&SP / CP&T / DDT / chemRxiv not separately polled (bandwidth); industry press surfaced via the DT120/Achieve searches.
+
+**Substantive shortlist** (after dropping spurious matches; ★ = chosen):
+- ★ Definium DT120 Phase 3 Emerge in MDD — Psychiatric Times / Business Wire 2026-06-22
+- ★ LSD acute/post-acute RCT — Neuropsychopharmacology 2026-06-18 (doi 10.1038/s41386-026-02454-7)
+- ★ Orexin receptor cross-over for resilience — Neuropsychopharmacology 2026-06-21 (doi 10.1038/s41386-026-02468-1)
+- ★ FDA CRL for cytisinicline — Psychiatric Times 2026-06-22
+- ★ SV endocytosis in nociceptors LNP-CRISPR — bioRxiv 10.64898/2026.06.17.732993
+- ★ 4-PBA + GAT-1 gene aug for SLC6A1 DEE — bioRxiv 10.64898/2026.06.05.730491
+- ★ Schizophrenia risk gene-enriched prefrontal ensemble cocktail — bioRxiv 10.64898/2026.06.14.732113
+- ★ VFB-MCP Drosophila connectomics — bioRxiv 10.64898/2026.06.16.732577
+- ★ Foundation models for epileptogenic zone — arXiv 2606.22657
+- ★ Persona-conditioned LLM for PWUD — arXiv 2606.23387
+- Pharmaceutical TAS2R14 agonists — bioRxiv 10.64898/2026.06.17.732860 (passed: peripheral pharm, off-topic for neuropsych)
+- GPR65 in synoviocytes — bioRxiv 10.64898/2026.06.16.732753 (passed: peripheral pain, less novel than SV-endocytosis pick)
+- Htr1b/triptans Gi/o GPCR analysis — bioRxiv 10.64898/2026.04.22.719367 v2 (passed: v2 update with limited new content)
+- Programmable UGA stop-codon repair in mammalian brain — bioRxiv 10.64898/2026.05.13.724978 v3 (passed: v3 already in literature; saving for a slow day)
+- BioMatrix / HoloCell / OmniCell foundation-model preprints — bioRxiv (passed: thin novelty, three at once would crowd the AI segment)
+- OpenBioRQ unsolved-questions agent benchmark — arXiv 2606.21959 (passed: borderline; PWUD-LLM is more neuropsych-aligned)
+- EHR-Complex medical agents — arXiv 2606.23301 (passed: VISTA-Architect and similar clinical-agent items shipped recently on adjacent shows; signal getting saturated)
+
+Sources:
+- [Definium Therapeutics Phase 3 Emerge topline](https://www.businesswire.com/news/home/20260622572802/en/)
+- [FDA CRL for cytisinicline](https://www.psychiatrictimes.com/view/fda-issues-crl-for-cytisinicline-for-smoking-cessation-in-adults)
+- [LSD post-acute RCT (Neuropsychopharmacology)](https://www.nature.com/articles/s41386-026-02454-7)
+- [Orexin cross-over (Neuropsychopharmacology)](https://www.nature.com/articles/s41386-026-02468-1)
+=== 2026-06-23T02:57:13-07:00 done  receptor-and-reason (exit 0) ===

@@ -1094,3 +1094,26 @@ Substantive shortlist (post-keyword-noise filter):
 Source-level failures: none.
 === 2026-06-22T09:07:53-07:00 done  scripps-biomed-brief (exit 0) ===
 === 2026-06-23T02:50:06-07:00 start scripps-biomed-brief ===
+Episode shipped. Summary for cron.log:
+
+**Today's pick**: 4 fresh bioRxiv v1s posted in the last 24–36 hours (bodies not yet rendered; abstract-grounded). Selected for Schultz audience: AI in drug discovery + new modalities + foundational structural for clinical chemistry.
+
+**Selected (all 4 featured)**:
+- **HTS-Oracle X (CD28/TIM-3/VISTA prospective AI binder discovery)** — Abdel-Rahman & Gabr, Weill Cornell — https://www.biorxiv.org/content/10.64898/2026.06.17.732853v1
+- **ADLumin-5 self-photosensitizing chemiluminescent photo-theranostic for misfolded proteins** — Wang, Gu et al., Ran, Mass General/HMS Martinos — https://www.biorxiv.org/content/10.64898/2026.06.16.732486v1
+- **Microtubule GTP-hydrolysis structures at 1.9–2.2 Å in 4 nucleotide states** — Estevez-Gallego, Filipcik et al., Steinmetz, Paul Scherrer Institut — https://www.biorxiv.org/content/10.64898/2026.06.19.733065v1
+- **Arrepath real-world ML-guided phenotypic antibiotic HTS** — Lukacs et al., Thorn, Arrepath — https://www.biorxiv.org/content/10.64898/2026.06.22.733866v1
+
+**Candidate funnel (bioRxiv only)**:
+- pharmacology and toxicology (Jun 22–23): 5 scanned; 3 substantive after spurious filtering — Pattison/Smith GPR65 FLS endosomal signaling for pain; Eyal/Niv TAS2R14 agonist diversity (low priority — bitter-taste pharmacology); Seymore inhaled NP placental transport (off-audience).
+- bioengineering (Jun 22): 5 v1s — Silva stress-granule coarsening (covered yesterday); Forstner snake venom rheology (off-audience); silicone stiffening (off); Rogers wearable wound sensor (clinical device, fine but off audience); Kuhl burger blend (off).
+- biochemistry (Jun 22, top): 9 v1s — Steinmetz tubulin hydrolysis ✓ **selected**; Zanon/Daub CDK4 MGD (covered yesterday); Nguyen/Bruning A. fumigatus mannitol-2-DH (covered yesterday); Lukinavicius NIR polyP probe (good chem-bio tool, lower drug-discovery leverage); Grinter RXFP1 mini-protein modulators (Kruse RXFP1 covered 2026-06-12 — too soon); Prentzell AHR PPI assays (methodological); kontakteUR (visualization tool); Ito-Miwa KaiC clock (off-audience); Tahara Rqc1p (basic).
+- bioinformatics (Jun 22): 25 v1s scanned, mostly methodological/foundation models; Gabr **HTS-Oracle X selected**; Wang ResistAgent resistance-aware lead opt (interesting but methodological for now).
+- microbiology (Jun 22): 14 items; Thorn ML-guided antibiotic HTS ✓ **selected**; other items off-audience or basic.
+- neuroscience (Jun 22, drug-discovery-adjacent): Ran ADLumin-5 ✓ **selected**; Ahern UGA sup-tRNA (v3 update, original May 16 — older work).
+- synthetic biology / cell biology / cancer biology / molecular biology: no fresh v1s in the 24–48h window.
+
+Sources hit normally; no source failures this run.
+
+Commit `0422cf0` on local main, push deferred to orchestrator per pipeline.
+=== 2026-06-23T03:01:43-07:00 done  scripps-biomed-brief (exit 0) ===

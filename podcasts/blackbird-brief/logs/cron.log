@@ -55,3 +55,23 @@ Episode shipped. Commit `bfbeade` (not pushed — orchestrator owns push).
 No portfolio memory updates this run — no new program facts surfaced. The Wilmer/TTREC long-acting ocular delivery thesis is worth a future memory entry once a spinout or sponsored-research disclosure makes it concrete; not yet.
 === 2026-06-22T03:27:18-07:00 done  blackbird-brief (exit 0) ===
 === 2026-06-23T02:10:06-07:00 start blackbird-brief ===
+Committed `c0d90d0`. Episode shipped: 8:07 spoken, 3.89 MB mp3, in R2 and feed updated.
+
+## Candidate funnel
+
+**Sources queried:**
+- bioRxiv (10 categories: cancer biology, neuroscience, cell biology, pharmacology, immunology, bioengineering, molecular biology, biochemistry, genetics, genomics, microbiology, developmental biology, synthetic biology, pathology) date_from 2026-06-19 → date_to 2026-06-23. cell biology / molecular biology / developmental biology / synthetic biology returned empty for the window.
+- medRxiv (all categories) — no Baltimore/Hopkins matches.
+- PubMed: affiliation queries for Johns Hopkins, UMB, Lieber Institute, Sidney Kimmel, JHU SOM, dates 2026/06/19–2026/06/23.
+
+**Substantive shortlist (post-filter, recency-window-valid only):**
+- ★ **CHOSEN LEAD** — Morakis, Huang, McKay, Lanzkron, Pecker, Durr. OBM in vivo sickle cell microvascular imaging. Blood Adv 10:4215–4226, 23 Jun 2026. DOI 10.1182/bloodadvances.2025018716 (PMID 41779978)
+- ★ **CHOSEN WATCH-LIST** — Rossi, Sportelli, …, Weinberger, Pergola. INGENE/MODULE TWAS surfaces 641 novel schizophrenia genes via Lieber BrainSeq. Nat Genet, 22 Jun 2026. DOI 10.1038/s41588-026-02646-3 (PMID 42332269)
+- Salisbury, Figueroa, Martinowich, Totty. Cortistatin+ prelimbic GABAergic neurons gate seizure susceptibility via BDNF-TrkB. Neurobiol Dis, 22 Jun 2026. DOI 10.1016/j.nbd.2026.107498 (PMID 42331234) — solid biology but no chemical lead, crowded drug-class IP; cut for length
+- Recho, Gatla, …, Ladle. Sequential decitabine + entinostat + GM-CSF vaccine in pediatric sarcoma. bioRxiv 10.64898/2026.06.18.733244 — generic-component IP, weaker commercial wedge
+- Ntumngia, …, Mao, Adams. PvCSP nanoparticle + TLR-agonist co-display malaria vaccine. Vaccine (PMID 42322682) — Mao platform is durable but senior author at USF, mouse data
+- Garman, Lokeshwar, …, Kates. Phase 2 intravesical Gem/Doce in BCG-naïve NMIBC, 3-yr update. J Urol (PMID 42330429) — generics, no defensible asset
+- Juzwiak, …, Dietz, Gallo MacFarlane. Steroid antagonism in vEDS. JCI Insight (PMID 42048161) — strong story but published 2026-04-28, outside the 3-4 day recency window; dropped on recency grounds
+
+**Failures:** none — all queries returned cleanly. No retries needed.
+=== 2026-06-23T02:27:15-07:00 done  blackbird-brief (exit 0) ===
