@@ -2,21 +2,25 @@
 """Generate TTS audio for a podcast episode.
 
 Usage:
-    # With per-show config (preferred):
     python3 gen_tts.py --show <slug> <script.md> <output.mp3>
 
-    # Without --show (default voice config: Mistral primary, ElevenLabs fallback):
-    python3 gen_tts.py <script.md> <output.mp3>
+By default, voice/model/provider come from podcasts/<slug>/show.toml
+([tts.primary], falling back to [tts.fallback] on error).
 
-When --show is given, voice/model/provider come from
-podcasts/<slug>/show.toml ([tts.primary] and optional [tts.fallback]).
-Otherwise the legacy defaults are used (back-compat).
+To force a single provider with no fallback chain (used by the batch
+pipeline — Voxtral on HPC, Mistral on su08 gap-fill):
 
-Reads MISTRAL_API_KEY and ELEVENLABS_API_KEY from .env (or environment).
+    python3 gen_tts.py --show <slug> --provider voxtral <script.md> <output.mp3>
+    python3 gen_tts.py --show <slug> --provider mistral <script.md> <output.mp3>
+
+The provider name must match the `provider` field of either [tts.primary]
+or [tts.fallback] in show.toml.
+
+Reads MISTRAL_API_KEY from .env (or environment).
 
 Includes a per-chunk duration sanity check: if a synthesized chunk runs
 shorter than chars / MAX_CHARS_PER_SECOND seconds, it's retried up to
-MISTRAL_CHUNK_RETRIES times. Aborts non-zero if a chunk still fails.
+CHUNK_RETRIES times. Aborts non-zero if a chunk still fails.
 """
 import argparse
 import base64
@@ -32,25 +36,27 @@ from lib.show import load as load_show
 
 MISTRAL_URL = "https://api.mistral.ai/v1/audio/speech"
 MISTRAL_CHUNK_MAX = 3000
-MISTRAL_CHUNK_RETRIES = 2
+CHUNK_RETRIES = 2
 
-ELEVENLABS_CHUNK_MAX = 3000
+VOXTRAL_DEFAULT_URL = "http://localhost:8000/v1/audio/speech"
+VOXTRAL_CHUNK_MAX = 3000
 
-# Paul Neutral typically runs 14-21 chars/sec depending on chunk size and
+# Voices typically run 14-21 chars/sec depending on chunk size and
 # punctuation density. 25 tolerates natural speed variance while still
-# catching truncation that drops >~35% of a chunk. Used for both providers.
+# catching truncation that drops >~35% of a chunk.
 MAX_CHARS_PER_SECOND = 25
 
+# Used only when --show is not given (manual one-off invocations).
 DEFAULT_PRIMARY = {
+    "provider": "voxtral",
+    "model": "mistralai/Voxtral-4B-TTS-2603",
+    "voice": "neutral_male",
+    "speed": 1.2,
+}
+DEFAULT_FALLBACK = {
     "provider": "mistral",
     "model": "voxtral-mini-tts-2603",
     "voice": "en_paul_neutral",
-}
-DEFAULT_FALLBACK = {
-    "provider": "elevenlabs",
-    "voice": "hpp4J3VqNfWAUOO0d1Us",
-    "model": "eleven_flash_v2_5",
-    "settings": {"speed": 1.1, "stability": 0.5, "similarity_boost": 0.75},
 }
 
 
@@ -67,9 +73,9 @@ def load_env():
     return env
 
 
-# Spellings the TTS mispronounces. Replaced before synthesis so both Mistral and
-# ElevenLabs say them correctly. "archive" / "med-archive" / "bio-archive" are
-# the phonetic forms; the TTS already pronounces these naturally.
+# Spellings the TTS mispronounces. Replaced before synthesis. The phonetic
+# forms ("archive" / "med-archive" / "bio-archive") are read naturally by
+# both Mistral Paul and Voxtral neutral_male.
 PRONUNCIATION_SUBS = [
     (re.compile(r"\bbiorxiv\b", re.IGNORECASE), "bio-archive"),
     (re.compile(r"\bmedrxiv\b", re.IGNORECASE), "med-archive"),
@@ -106,11 +112,15 @@ def chunk_text(text, max_chars):
     return chunks
 
 
-def stitch(parts, output):
-    # Mistral's voxtral TTS doesn't normalize loudness across an utterance and
-    # occasionally drops 15-25 dB through a paragraph. We always run a final
-    # ffmpeg pass: dynaudnorm smooths within-file drift, loudnorm targets EBU
-    # R128 podcast loudness (-16 LUFS integrated, -1 dBTP peak).
+def stitch(parts, output, speed=1.0):
+    # Voxtral and Mistral both have within-utterance loudness drift (Mistral
+    # drops 15-25 dB through a paragraph). Final ffmpeg pass: dynaudnorm
+    # smooths within-file drift, loudnorm targets EBU R128 podcast loudness
+    # (-16 LUFS integrated, -1 dBTP peak).
+    af = "dynaudnorm=f=200:g=15,loudnorm=I=-16:TP=-1:LRA=11"
+    if speed != 1.0:
+        # atempo changes tempo without pitch shift; valid range 0.5-2.0.
+        af = f"atempo={speed}," + af
     with tempfile.TemporaryDirectory() as tmp:
         if len(parts) == 1:
             raw = os.path.join(tmp, "raw.mp3")
@@ -129,7 +139,7 @@ def stitch(parts, output):
             )
         subprocess.run(
             ["ffmpeg", "-y", "-i", raw,
-             "-af", "dynaudnorm=f=200:g=15,loudnorm=I=-16:TP=-1:LRA=11",
+             "-af", af,
              "-ac", "1", "-ar", "22050", "-b:a", "64k", output],
             check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE,
         )
@@ -160,12 +170,11 @@ def mistral_synthesize(chunk, api_key, model, voice):
     return base64.b64decode(audio_b64)
 
 
-def elevenlabs_synthesize(chunk, api_key, voice, model, settings):
+def voxtral_synthesize(chunk, base_url, model, voice):
     r = requests.post(
-        f"https://api.elevenlabs.io/v1/text-to-speech/{voice}",
-        headers={"xi-api-key": api_key, "Content-Type": "application/json"},
-        json={"text": chunk, "model_id": model, "voice_settings": settings},
-        timeout=300,
+        base_url,
+        json={"model": model, "input": chunk, "voice": voice, "response_format": "mp3"},
+        timeout=600,
     )
     r.raise_for_status()
     return r.content
@@ -176,7 +185,7 @@ def synthesize_chunks(chunks, synth_fn, label):
     for i, chunk in enumerate(chunks):
         min_dur = len(chunk) / MAX_CHARS_PER_SECOND
         last_err = None
-        for attempt in range(1, MISTRAL_CHUNK_RETRIES + 2):
+        for attempt in range(1, CHUNK_RETRIES + 2):
             try:
                 audio = synth_fn(chunk)
                 dur = mp3_bytes_duration(audio)
@@ -203,23 +212,22 @@ def synthesize_with_provider(provider_cfg, text, output, env):
             raise RuntimeError("MISTRAL_API_KEY not set")
         model = provider_cfg["model"]
         voice = provider_cfg["voice"]
+        speed = float(provider_cfg.get("speed", 1.0))
         chunks = chunk_text(text, MISTRAL_CHUNK_MAX)
         parts = synthesize_chunks(
             chunks, lambda c: mistral_synthesize(c, api_key, model, voice), f"mistral:{voice}",
         )
-        stitch(parts, output)
-    elif name == "elevenlabs":
-        api_key = env.get("ELEVENLABS_API_KEY")
-        if not api_key:
-            raise RuntimeError("ELEVENLABS_API_KEY not set")
+        stitch(parts, output, speed=speed)
+    elif name == "voxtral":
+        base_url = provider_cfg.get("url", VOXTRAL_DEFAULT_URL)
+        model = provider_cfg.get("model", "mistralai/Voxtral-4B-TTS-2603")
         voice = provider_cfg["voice"]
-        model = provider_cfg["model"]
-        settings = provider_cfg.get("settings", DEFAULT_FALLBACK["settings"])
-        chunks = chunk_text(text, ELEVENLABS_CHUNK_MAX)
+        speed = float(provider_cfg.get("speed", 1.0))
+        chunks = chunk_text(text, VOXTRAL_CHUNK_MAX)
         parts = synthesize_chunks(
-            chunks, lambda c: elevenlabs_synthesize(c, api_key, voice, model, settings), f"elevenlabs:{voice}",
+            chunks, lambda c: voxtral_synthesize(c, base_url, model, voice), f"voxtral:{voice}",
         )
-        stitch(parts, output)
+        stitch(parts, output, speed=speed)
     else:
         raise ValueError(f"unknown TTS provider: {name!r}")
 
@@ -235,6 +243,7 @@ def duration_seconds(path):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--show", help="show slug; loads voice config from podcasts/<slug>/show.toml")
+    ap.add_argument("--provider", help="force a specific provider (voxtral|mistral); no fallback chain")
     ap.add_argument("script")
     ap.add_argument("output")
     args = ap.parse_args()
@@ -249,25 +258,45 @@ def main():
 
     env = load_env()
     text = extract_script_body(args.script)
-    print(f"Script body: {len(text)} chars; primary={primary['provider']}"
-          f"{' fallback=' + fallback['provider'] if fallback else ''}")
 
-    used = None
-    try:
-        synthesize_with_provider(primary, text, args.output, env)
-        used = primary["provider"]
-    except Exception as e:
-        print(f"Primary ({primary['provider']}) failed: {e}")
-        if not fallback:
-            print("ERROR: no fallback configured", file=sys.stderr)
-            sys.exit(3)
-        print(f"Falling back to {fallback['provider']}.")
+    # --provider <name>: locate that provider's config in show.toml and use
+    # it standalone (no fallback). Used by the batch pipeline so each tier
+    # of the recovery chain runs in its own process.
+    if args.provider:
+        forced = None
+        for cfg in (primary, fallback):
+            if cfg and cfg.get("provider") == args.provider:
+                forced = cfg
+                break
+        if not forced:
+            print(f"ERROR: --provider {args.provider!r} not configured in show {args.show!r}", file=sys.stderr)
+            sys.exit(2)
+        print(f"Script body: {len(text)} chars; forced={args.provider}")
         try:
-            synthesize_with_provider(fallback, text, args.output, env)
-            used = fallback["provider"]
-        except Exception as e2:
-            print(f"ERROR: both primary and fallback failed: {e2}", file=sys.stderr)
+            synthesize_with_provider(forced, text, args.output, env)
+        except Exception as e:
+            print(f"ERROR: forced provider {args.provider} failed: {e}", file=sys.stderr)
             sys.exit(3)
+        used = args.provider
+    else:
+        print(f"Script body: {len(text)} chars; primary={primary['provider']}"
+              f"{' fallback=' + fallback['provider'] if fallback else ''}")
+        used = None
+        try:
+            synthesize_with_provider(primary, text, args.output, env)
+            used = primary["provider"]
+        except Exception as e:
+            print(f"Primary ({primary['provider']}) failed: {e}")
+            if not fallback:
+                print("ERROR: no fallback configured", file=sys.stderr)
+                sys.exit(3)
+            print(f"Falling back to {fallback['provider']}.")
+            try:
+                synthesize_with_provider(fallback, text, args.output, env)
+                used = fallback["provider"]
+            except Exception as e2:
+                print(f"ERROR: both primary and fallback failed: {e2}", file=sys.stderr)
+                sys.exit(3)
 
     dur = duration_seconds(args.output)
     size = os.path.getsize(args.output)

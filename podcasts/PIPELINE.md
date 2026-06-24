@@ -140,23 +140,61 @@ diff and fails the commit if any returns "not found". Set
 
 Voice config lives in each show's `show.toml`:
 
-- **Primary:** Mistral `voxtral-mini-tts-2603` / `en_paul_neutral` (Paul Neutral)
-- **Fallback:** ElevenLabs Bella (`hpp4J3VqNfWAUOO0d1Us`) / `eleven_flash_v2_5`
+- **Primary:** self-hosted Voxtral (`mistralai/Voxtral-4B-TTS-2603`, voice
+  `neutral_male`, sped up to 1.2×) on Garibaldi HPC.
+- **Fallback:** Mistral API (`voxtral-mini-tts-2603` / `en_paul_neutral`).
 
-API keys in `.env` at repo root (`MISTRAL_API_KEY`, `ELEVENLABS_API_KEY`).
+API keys in `.env` at repo root (`MISTRAL_API_KEY`).
 
 Don't write your own TTS code. `gen_tts.py` is the canonical pipeline:
 chunking, ffmpeg stitching, duration sanity check, primary→fallback
 orchestration, all already handled.
 
-Run `gen_tts.py` **synchronously** in a single Bash tool call and wait
-for its exit code. Do not background it (`&`, `nohup`, `disown`) and
-then poll for the mp3 — a typical run is 3–5 minutes, well inside the
-bash tool's 10-minute timeout. The polling pattern has a sharp edge:
-`pgrep -f "gen_tts.py.*<slug>.*<date>"` matches the very shell that's
-running the polling regex (the pattern appears in the shell's own
-command line via `eval`), so the negation never fires and the loop
-sleeps forever. A 4-hour hang in May 2026 was traced to exactly this.
+### SKIP_TTS mode (the default in the nightly pipeline)
+
+The nightly cron runs with `SKIP_TTS=1` exported, so `gen_tts.py` runs
+in a single batch job on Garibaldi *after* all scripts are written.
+**When `SKIP_TTS` is set in your environment, deviate from the
+per-episode steps below as follows:**
+
+- **Skip step 2** (do not call `gen_tts.py`).
+- **Skip step 3** (do not call `publish_episode.sh`).
+- **Skip step 4** (do not edit `feed.xml`).
+- **Skip the Commit section entirely** (do not `git add` or
+  `git commit`). The orchestrator (`scripts/publish_pending.py`) does
+  both publish steps and the commit after batch TTS finishes.
+
+Instead, alongside each script you write
+(`podcasts/<slug>/scripts/<basename>.<ext>`), write two transient stub
+files:
+
+1. **`<basename>.rss-item.xml`** — the full RSS `<item>...</item>` you
+   would have inserted into `feed.xml`, but with two placeholder tokens
+   in place of the values you don't know yet:
+     * `__LENGTH__` for `<enclosure ... length="__LENGTH__" ...>`
+     * `__DURATION__` for `<itunes:duration>__DURATION__</itunes:duration>`
+   Everything else (title, description, guid, pubDate, link, enclosure
+   URL pointing at the Worker, itunes:summary, itunes:explicit) goes in
+   as final values. Indent the item with 4 spaces to match siblings.
+2. **`<basename>.commit-msg`** — the full commit message you would have
+   used, e.g.
+   `Episode: <commit-prefix>: <descriptive title>`. One line; no quoting.
+
+Both stubs live next to the script in `scripts/` and are deleted by
+`publish_pending.py` after a successful commit.
+
+### Legacy (non-batch) mode
+
+If `SKIP_TTS` is unset (manual runs, or `LEGACY_TTS=1` in the runner),
+follow the original per-episode steps below — run `gen_tts.py`
+synchronously in a single Bash call and wait for its exit code. Do not
+background it (`&`, `nohup`, `disown`) and then poll for the mp3 — a
+typical run is 3–5 minutes, well inside the bash tool's 10-minute
+timeout. The polling pattern has a sharp edge: `pgrep -f
+"gen_tts.py.*<slug>.*<date>"` matches the very shell that's running
+the polling regex (the pattern appears in the shell's own command
+line via `eval`), so the negation never fires and the loop sleeps
+forever. A 4-hour hang in May 2026 was traced to exactly this.
 
 Public RSS URL pattern: subscribers fetch
 `https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/<slug>/feed.xml`.

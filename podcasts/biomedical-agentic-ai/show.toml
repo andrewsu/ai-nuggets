@@ -21,16 +21,12 @@ link     = "https://github.com/andrewsu/ai-nuggets"
 # TTS providers. The runner tries `primary` first, falls back to `fallback`
 # if primary raises. Supported providers: "mistral", "elevenlabs".
 [tts.primary]
+provider = "voxtral"
+model    = "mistralai/Voxtral-4B-TTS-2603"
+voice    = "neutral_male"
+speed    = 1.2
+
+[tts.fallback]
 provider = "mistral"
 model    = "voxtral-mini-tts-2603"
 voice    = "en_paul_neutral"
-
-[tts.fallback]
-provider = "elevenlabs"
-voice    = "hpp4J3VqNfWAUOO0d1Us"
-model    = "eleven_flash_v2_5"
-
-[tts.fallback.settings]
-speed            = 1.1
-stability        = 0.5
-similarity_boost = 0.75

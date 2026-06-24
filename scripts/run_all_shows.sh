@@ -1,23 +1,44 @@
 #!/bin/bash
-# Run the daily Claude pipeline for every show under podcasts/<slug>/.
-# A "show" is any directory containing a PROMPT.md.
+# Three-phase nightly pipeline.
 #
-# Shows run concurrently with a stagger between launches so bursty API
-# calls (TTS, search) don't pile up on the same minute, and so a hang in
-# one show no longer stalls the whole queue. Per-show commits are
-# serialized via flock (see PIPELINE.md "Commit"); a single `git push`
-# at the very end avoids the non-fast-forward rejects that concurrent
-# pushes would produce.
+# Phase 1: For every show under podcasts/<slug>/, run Claude with SKIP_TTS=1
+#   (concurrent with a stagger between launches). Each Claude session writes
+#   the script + an .rss-item.xml stub + a .commit-msg stub, but does NOT
+#   call gen_tts.py, update feed.xml, or commit. See podcasts/PIPELINE.md
+#   "SKIP_TTS mode" for the contract.
 #
-# Add a new show by creating podcasts/<slug>/PROMPT.md — no crontab edit
-# needed. Override the stagger for quick testing: STAGGER_SECONDS=30
-# scripts/run_all_shows.sh
+# Phase 2: rsync the new scripts to Garibaldi and submit a single
+#   tts-batch.slurm job that brings up vLLM, synthesizes every pending
+#   script in parallel, and tears the server back down. Outer timeout 60
+#   min — if Garibaldi can't deliver in that window, abort and let Phase
+#   2.5 (Mistral fallback inside publish_pending.py) carry the night.
+#
+# Phase 3: publish_pending.py runs the Mistral gap-fill (Phase 2.5), then
+#   per show: render the RSS-item stub with real mp3 length/duration,
+#   insert into feed.xml, upload mp3 to R2, git commit, delete stubs.
+#   Single git push at the end.
+#
+# Override knobs:
+#   STAGGER_SECONDS=N      seconds between successive Phase-1 launches
+#   LEGACY_TTS=1           bypass new architecture: each show does TTS +
+#                          publish + commit inline as before, single push
+#                          at the end
+#   PHASE2_TIMEOUT_SECS=N  outer cap on `ssh garibaldi sbatch --wait`
+#                          (default 3600 = 60 min)
+#
+# Add a new show by creating podcasts/<slug>/PROMPT.md — no edit here
+# needed.
 
 set -u
 
 REPO=/home/asu/Science/ai-nuggets
 CLAUDE=/home/asu/.local/bin/claude
 STAGGER_SECONDS=${STAGGER_SECONDS:-600}
+PHASE2_TIMEOUT_SECS=${PHASE2_TIMEOUT_SECS:-3600}
+LEGACY_TTS=${LEGACY_TTS:-0}
+
+GARIBALDI_HOST=garibaldi.scripps.edu
+GARIBALDI_STAGE_DIR=ai-nuggets-stage   # relative to remote $HOME
 
 cd "$REPO" || exit 1
 
@@ -27,20 +48,12 @@ if [ ! -f "$PIPELINE" ]; then
   exit 1
 fi
 
-# Pull origin/main before per-show commits pile up, so the final push at
-# the bottom is a fast-forward. Without this, any upstream commit that
-# landed since the last run (e.g. a script tweak pushed from another
-# machine) makes `git push` reject as non-fast-forward and today's
-# feed.xml updates never reach the raw.githubusercontent.com URLs
-# subscribers fetch.
 git pull origin main || echo "WARN: git pull origin main failed; continuing" >&2
 
 # Pre-fetch arXiv listing once for the whole run so multiple shows don't
 # burst the same IP and trip a tarpit. The category union covers every
 # show's needs (cs.AI, cs.CL, cs.MA, q-bio supercategory). Each show's
 # PROMPT.md tells Claude to read from this cache instead of curling arXiv.
-# Stable path so prompts don't need to embed today's date; we refresh it
-# when its mtime is older than today's local midnight.
 ARXIV_CACHE=/tmp/ai-nuggets-arxiv-cache.xml
 if [ -z "$(find "$ARXIV_CACHE" -newermt "$(date +%F)" 2>/dev/null)" ]; then
   rm -f "$ARXIV_CACHE"
@@ -52,23 +65,17 @@ if [ -z "$(find "$ARXIV_CACHE" -newermt "$(date +%F)" 2>/dev/null)" ]; then
     || rm -f "$ARXIV_CACHE.tmp"
 fi
 
+# AUP-retry / model-ladder wrapper. Returns when:
+#  - Claude exits 0 AND an mp3 was produced (legacy mode) OR a script
+#    stub set was produced (SKIP_TTS mode); or
+#  - all retries are exhausted (logs "FAILED: ...").
 run_show() {
   local prompt="$1"
   local slug="$2"
   local log="$REPO/podcasts/$slug/logs/cron.log"
   mkdir -p "$(dirname "$log")"
 
-  # The content-AUP classifier occasionally flags the biomedical-agentic-ai
-  # prompt on the first attempt; a retry minutes later typically clears it.
-  # To reduce the false-positive rate further we send a short instruction
-  # naming the two prompt files instead of piping their full contents on
-  # stdin — Claude reads them via tool calls, which empirically don't trip
-  # AUP the way an initial high-keyword-density user message does.
-  #
-  # If two retries on the configured default model both AUP-refuse, fall
-  # back down the model ladder: 2× Sonnet 4.6, then 2× Haiku 4.5. Smaller
-  # models often clear the classifier when the default keeps tripping it.
-  local attempt tag out model_arg today produced
+  local attempt tag out model_arg today produced script base
   today=$(date +%F)
   for attempt in 1 2 3 4 5 6; do
     case "$attempt" in
@@ -92,26 +99,44 @@ run_show() {
       sleep 180
       continue
     fi
-    # An exit-0 with no AUP-refusal text doesn't actually mean an episode
-    # shipped — Haiku at the bottom of the model ladder has been observed
-    # to clear the AUP classifier but then produce a chat-style response
-    # asking the human for write/execute permission, exit 0, and leave no
-    # script or mp3 behind. Treat "no mp3 for today" as a soft failure so
-    # the ladder keeps trying instead of silently dropping the day.
-    produced=$(compgen -G "$REPO/podcasts/$slug/episodes/$today*.mp3" 2>/dev/null | head -1 || true)
+    # "Did the show actually produce something useful?" check. In SKIP_TTS
+    # mode that means a script file *and* both stubs; in legacy mode it
+    # means an mp3.
+    produced=""
+    if [ "$LEGACY_TTS" = "1" ]; then
+      produced=$(compgen -G "$REPO/podcasts/$slug/episodes/$today*.mp3" 2>/dev/null | head -1 || true)
+    else
+      script=$(compgen -G "$REPO/podcasts/$slug/scripts/$today*.md" -G "$REPO/podcasts/$slug/scripts/$today*.txt" 2>/dev/null | head -1 || true)
+      if [ -n "$script" ]; then
+        base="${script%.*}"
+        if [ -f "${base}.rss-item.xml" ] && [ -f "${base}.commit-msg" ]; then
+          produced="$script"
+        fi
+      fi
+    fi
     if [ "$attempt" -lt 6 ] && [ -z "$produced" ]; then
-      echo "=== $(date -Iseconds) no episode produced for $slug; retrying in 180s ===" | tee -a "$log"
+      echo "=== $(date -Iseconds) no usable output for $slug; retrying in 180s ===" | tee -a "$log"
       rm -f "$out"
       sleep 180
       continue
     fi
     if [ -z "$produced" ]; then
-      echo "=== $(date -Iseconds) FAILED: no episode produced for $slug after all retries ===" | tee -a "$log"
+      echo "=== $(date -Iseconds) FAILED: no usable output for $slug after all retries ===" | tee -a "$log"
     fi
     rm -f "$out"
     break
   done
 }
+
+##############################################################################
+# Phase 1: write scripts (and stubs if !LEGACY_TTS) — parallel across shows.
+##############################################################################
+if [ "$LEGACY_TTS" = "1" ]; then
+  echo "$(date -Iseconds) Phase 1: legacy end-to-end mode (each show does TTS + commit inline)"
+else
+  echo "$(date -Iseconds) Phase 1: script-only mode (SKIP_TTS=1)"
+  export SKIP_TTS=1
+fi
 
 first=1
 for prompt in podcasts/*/PROMPT.md; do
@@ -125,10 +150,70 @@ for prompt in podcasts/*/PROMPT.md; do
 done
 wait
 
-# All shows committed their own files inside flock'd critical sections
-# during the parallel phase. Pick up any straggling cron-log changes
-# tee'd after Claude's commit, then push everything once.
-if ! git diff --quiet -- 'podcasts/*/logs/cron.log'; then
-  git add 'podcasts/*/logs/cron.log' && git commit -m 'Update cron logs'
+##############################################################################
+# Phase 2 + 3 (skipped in LEGACY_TTS mode — each show already committed).
+##############################################################################
+if [ "$LEGACY_TTS" = "1" ]; then
+  if ! git diff --quiet -- 'podcasts/*/logs/cron.log'; then
+    git add 'podcasts/*/logs/cron.log' && git commit -m 'Update cron logs'
+  fi
+  git push
+  exit 0
 fi
-git push
+
+echo "$(date -Iseconds) Phase 2: batch TTS on Garibaldi"
+TODAY=$(date +%F)
+
+# rsync today's scripts (and stubs) up. Exclude episodes/, feed.xml, logs,
+# and .git — Phase 2 only needs the inputs.
+rsync -a --delete \
+  --exclude='.git' \
+  --exclude='/.venv/' \
+  --exclude='node_modules' \
+  --exclude='podcasts/*/episodes' \
+  --exclude='podcasts/*/logs' \
+  --exclude='podcasts/*/feed.xml' \
+  --exclude='podcasts/*/audio' \
+  "$REPO/" "$GARIBALDI_HOST:$GARIBALDI_STAGE_DIR/"
+echo "$(date -Iseconds) rsync up complete"
+
+# Submit + wait with an outer timeout. `timeout` will SIGTERM the local ssh
+# if exceeded — but the remote sbatch job keeps running, so we explicitly
+# scancel below.
+set +e
+timeout "$PHASE2_TIMEOUT_SECS" \
+  ssh "$GARIBALDI_HOST" \
+    "cd $GARIBALDI_STAGE_DIR && sbatch --wait --export=ALL,TTS_BATCH_DATE=$TODAY hpc/tts-batch.slurm"
+PHASE2_RC=$?
+set -e
+echo "$(date -Iseconds) Phase 2 ssh exited rc=$PHASE2_RC"
+
+# If we timed out, kill any leftover tts-batch jobs we own.
+if [ "$PHASE2_RC" -eq 124 ]; then
+  echo "$(date -Iseconds) Phase 2 hit outer timeout; scancelling any leftover tts-batch jobs"
+  ssh "$GARIBALDI_HOST" \
+    "squeue -u \$USER -h -o '%i %j' | awk '\$2 == \"tts-batch\" {print \$1}' | xargs -r scancel" \
+    || true
+fi
+
+# Pull whatever MP3s exist back, regardless of Phase 2 exit code. Partial
+# success is still useful — publish_pending.py will gap-fill the rest.
+rsync -av \
+  --include='podcasts/' --include='podcasts/*/' \
+  --include='podcasts/*/episodes/' --include='podcasts/*/episodes/*.mp3' \
+  --exclude='*' \
+  "$GARIBALDI_HOST:$GARIBALDI_STAGE_DIR/" "$REPO/"
+echo "$(date -Iseconds) rsync down complete"
+
+echo "$(date -Iseconds) Phase 3: publish_pending.py"
+python3 "$REPO/scripts/publish_pending.py" --date "$TODAY"
+PHASE3_RC=$?
+
+# Catch any straggling log changes (cron.log tee'd after Claude exited).
+if ! git diff --quiet -- 'podcasts/*/logs/cron.log'; then
+  git add 'podcasts/*/logs/cron.log' && git commit -m 'Update cron logs' || true
+  git push || true
+fi
+
+echo "$(date -Iseconds) run_all_shows.sh done (phase3 rc=$PHASE3_RC)"
+exit $PHASE3_RC
