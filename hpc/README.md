@@ -72,13 +72,18 @@ Subsequent runs overwrite stale scripts and create episode dirs on demand.
 The 20 open presets ship inside the HF repo at `voice_embedding/*.pt`:
 
 - Language-neutral: `neutral_male`, `neutral_female`, `casual_male`,
-  `casual_female`, `cheerful_female`
+  `casual_female`, `cheerful_female` — samples of each at
+  `voice-samples/<voice>.mp3` (the same files served from
+  `https://github.com/andrewsu/ai-nuggets/raw/main/hpc/voice-samples/`).
 - Per-language: `ar_male`, `de_{male,female}`, `es_{male,female}`,
   `fr_{male,female}`, `hi_{male,female}`, `it_{male,female}`,
-  `nl_{male,female}`, `pt_{male,female}`
+  `nl_{male,female}`, `pt_{male,female}` — no samples committed;
+  preview at https://huggingface.co/spaces/mistralai/voxtral-tts-demo.
 
-We use `neutral_male` at 1.2× speed (set in each `show.toml`'s
-`[tts.primary]`). Preview at https://huggingface.co/spaces/mistralai/voxtral-tts-demo.
+`neutral_male` at 1.2× speed is the default for new shows
+(`scripts/new_show.py` writes that into `[tts.primary]`). To pick a
+different voice for a specific show, edit its `show.toml` —
+see ADDING_A_SHOW.md step 3.
 
 ## Smoke-testing tts-batch.slurm by hand
 

@@ -45,17 +45,21 @@ logs     = "logs"
 base_url = "https://github.com/andrewsu/ai-nuggets/raw/main"
 link     = "https://github.com/andrewsu/ai-nuggets"
 
-# TTS providers. Edit to match this show's voice. Supported providers:
-# "mistral", "elevenlabs".
+# TTS providers. Voxtral (self-hosted on Garibaldi HPC) is the default;
+# Mistral API is the fallback. To preview/change the primary voice, see
+# ADDING_A_SHOW.md step 3 — Voxtral ships voices `neutral_male`,
+# `neutral_female`, `casual_male`, `casual_female`, `cheerful_female`
+# plus per-language presets.
 [tts.primary]
-provider = "elevenlabs"
-voice    = "hpp4J3VqNfWAUOO0d1Us"
-model    = "eleven_flash_v2_5"
+provider = "voxtral"
+model    = "mistralai/Voxtral-4B-TTS-2603"
+voice    = "neutral_male"
+speed    = 1.2
 
-[tts.primary.settings]
-speed            = 1.1
-stability        = 0.5
-similarity_boost = 0.75
+[tts.fallback]
+provider = "mistral"
+model    = "voxtral-mini-tts-2603"
+voice    = "en_paul_neutral"
 """
 
 PROMPT_TEMPLATE = """\

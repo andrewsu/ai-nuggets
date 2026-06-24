@@ -51,33 +51,47 @@ show's PROMPT.md is where that value is defined.
 
 ## 3. Pick a TTS voice
 
-Edit `[tts.primary]` (and optionally `[tts.fallback]`) in
-`podcasts/my-new-show/show.toml`.
+The scaffold defaults to self-hosted Voxtral on Garibaldi (`neutral_male`,
+1.2× speed) with a Mistral-API fallback — same config every production
+show currently uses. To change voices, edit the `voice` field in
+`[tts.primary]` of `podcasts/my-new-show/show.toml`.
 
-The scaffold defaults to ElevenLabs Bella with no fallback. For
-production shows we recommend Mistral primary + ElevenLabs fallback
-(cheaper per character, with a working fallback if Mistral has an
-outage):
+### Voxtral voice presets
+
+Voxtral ships 20 voices inside the model repo. The five
+language-neutral ones we use most have audio samples committed at
+`hpc/voice-samples/` so you can preview before committing to one:
+
+| voice id            | sample                                                                                       |
+|---------------------|----------------------------------------------------------------------------------------------|
+| `neutral_male`      | https://github.com/andrewsu/ai-nuggets/raw/main/hpc/voice-samples/neutral_male.mp3 (default) |
+| `neutral_female`    | https://github.com/andrewsu/ai-nuggets/raw/main/hpc/voice-samples/neutral_female.mp3         |
+| `casual_male`       | https://github.com/andrewsu/ai-nuggets/raw/main/hpc/voice-samples/casual_male.mp3            |
+| `casual_female`     | https://github.com/andrewsu/ai-nuggets/raw/main/hpc/voice-samples/casual_female.mp3          |
+| `cheerful_female`   | https://github.com/andrewsu/ai-nuggets/raw/main/hpc/voice-samples/cheerful_female.mp3        |
+
+Voxtral also ships per-language presets (`ar_male`, `de_{male,female}`,
+`es_{male,female}`, `fr_{male,female}`, `hi_{male,female}`,
+`it_{male,female}`, `nl_{male,female}`, `pt_{male,female}`) — these
+don't have samples committed; preview at
+https://huggingface.co/spaces/mistralai/voxtral-tts-demo.
+
+To switch voices, edit `[tts.primary]` only — leave the Mistral
+fallback alone:
 
 ```toml
 [tts.primary]
-provider = "mistral"
-model    = "voxtral-mini-tts-2603"
-voice    = "en_paul_neutral"
-
-[tts.fallback]
-provider = "elevenlabs"
-voice    = "hpp4J3VqNfWAUOO0d1Us"
-model    = "eleven_flash_v2_5"
-
-[tts.fallback.settings]
-speed            = 1.1
-stability        = 0.5
-similarity_boost = 0.75
+provider = "voxtral"
+model    = "mistralai/Voxtral-4B-TTS-2603"
+voice    = "casual_female"   # ← change this
+speed    = 1.2
 ```
 
-Browse Mistral and ElevenLabs voice catalogs for alternatives. `gen_tts.py`
-is the canonical pipeline — do not write your own TTS code.
+Note: the Mistral-API fallback uses its own voice catalog (`en_paul_neutral`,
+etc.) — see https://docs.mistral.ai/. Don't put a Voxtral preset id in
+`[tts.fallback]` or a Mistral voice id in `[tts.primary]`.
+
+`gen_tts.py` is the canonical pipeline — do not write your own TTS code.
 
 ## 4. Allow the slug on the Worker
 
