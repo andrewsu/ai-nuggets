@@ -1863,3 +1863,61 @@ Commit done. The orchestrator will push.
 
 VISTA Architect wins on (a) cohort scale (1,180 patients, 17,700 evaluations), (b) matched BM25 RAG baseline making the graph-first structural advantage quantitatively visible (~30-point gap concentrated on time-varying state variables), (c) the agentic-interface operational result (~2.2 min board prep), and (d) direct fit with Su Lab interests in agentic AI + biomedical knowledge graphs.
 === 2026-06-23T02:09:42-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-06-23T22:25:27-07:00 start biomedical-agentic-ai ===
+Bonus episode for biomedical-agentic-ai shipped under SKIP_TTS mode. Per PIPELINE.md, audio generation, R2 publish, feed update, and commit are all handed off to the orchestrator.
+
+**Pick:** NVIDIA BioNeMo Agent Toolkit launch (June 23, 2026) — a standardized, NIM-hosted tool layer for biomedical AI agents with ~50 partner organizations adopting on day one (Anthropic, OpenAI, Lilly, Schrödinger, UW Institute for Protein Design, Thermo Fisher, Tecan, Benchling, Databricks, Snowflake, etc.). Complementary to the morning's VISTA Architect pick: morning was the academic graph-first clinical-AI paper, this is the platform-side story. PROMPT.md explicitly de-biases against preprints when a product launch is the bigger story of the day.
+
+**Files written:**
+- `podcasts/biomedical-agentic-ai/scripts/2026-06-23-bionemo-agent-toolkit-standardized-tool-layer-biomedical-agents.md` — script
+- `…rss-item.xml` — full RSS item with `__LENGTH__`/`__DURATION__` placeholders
+- `…commit-msg` — `Episode: BioNeMo Agent Toolkit — …`
+
+**Candidate funnel (excluding the morning's VISTA Architect):**
+- bioRxiv (full pagination, 362 records across 2026-06-22 → 2026-06-23): 23 unique-DOI keyword hits.
+  - biomeStat — autonomous AI agent for genomic epidemiology, 1,000 Asian dengue genomes end-to-end. Strong content fit but abstract-only (24h-old, bioRxiv body not yet rendered) and CEO/CTO COI flagged.
+  - CellTosg2Sequence, EventHorizon, OmniCell, HoloCell, CellOS, VCBench — foundation-model tier, not agentic.
+  - PanRes — ontology-grounded AMR DB; resource, not agentic system.
+  - Enterprise Health Twins (EpiToMe v3) — thematic overlap with VISTA.
+- arXiv (cache, 500 entries; 11 biomedical+AI hits in window):
+  - TTFT-Aware Graph CoT (2606.23108) — production GraphRAG, fertility assistant; thematic overlap.
+  - EHR-Complex (2606.23301) — clinical-agent benchmark on MIMIC-IV.
+  - KG-grounding-only-for-OOT (2606.22419) — sharp finding, thematic overlap.
+  - Closed-loop Auto Research molecular prop (2606.22731) — cautionary.
+  - EpiiSLM foundation model EZ identification (2606.22657) — foundation, not agentic.
+- ChemRxiv: nothing fresh in window.
+- PubMed (5-day window, 291 hits): no fresh agentic-biomedical-AI breakthrough surfaced.
+- News/launches: **NVIDIA BioNeMo Agent Toolkit — CHOSEN**. DeepIntent Helix AI (June 15, out of window).
+- Policy/funder: no fresh ARPA-H/NIH biomedical-AI announcements.
+=== 2026-06-23T22:33:21-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-06-23T22:33:21-07:00 no usable output for biomedical-agentic-ai; retrying in 180s ===
+=== 2026-06-23T22:37:56-07:00 start biomedical-agentic-ai ===
+Files are on disk and the orchestrator's `produced` check passes. Done with my Phase-1 work.
+
+---
+
+**Bonus episode for biomedical-agentic-ai shipped under SKIP_TTS mode.** Per PIPELINE.md, audio generation, R2 publish, feed update, and commit are all handed off to the orchestrator (`scripts/publish_pending.py`).
+
+**Pick:** NVIDIA BioNeMo Agent Toolkit launch (2026-06-23, BIO International Convention) — biology's foundational toolchain (OpenFold, Boltz-2, DiffDock, GenMol, RFdiffusion, ProteinMPNN, Evo2, MSA-Search, Parabricks, plus CUDA-X scientific libraries) wrapped as an agent-callable, framework-agnostic skills marketplace, open source on GitHub today, with 50+ launch partners spanning Anthropic, OpenAI, Schrödinger, Cadence, Benchling, Databricks, Snowflake, Lilly, Natera, Tecan, Thermo Fisher, Baker lab/UW IPD, Arc Institute, et al. Complementary to this morning's VISTA Architect pick — that was the academic graph-first clinical AI paper; this is the industry-platform side of the same week in agentic biomedical AI.
+
+**Files written:**
+- `podcasts/biomedical-agentic-ai/scripts/2026-06-23-bionemo-agent-toolkit-biology-tools-as-agent-skills.md` — script
+- `…-skills.rss-item.xml` — full RSS item with `__LENGTH__`/`__DURATION__` placeholders
+- `…-skills.commit-msg` — full commit message
+
+**Candidate funnel** (re-invocation: VISTA Architect excluded as already shipped this morning):
+
+- **bioRxiv** — 363 records across 2026-06-22 → 2026-06-23 via full API pagination (cursor 0–360); 51 unique-DOI keyword matches; substantive shortlist after discarding spurious matches and dedup vs morning:
+  - biomeStat (10.64898/2026.06.10.731380, 2026-06-23) — autonomous AI agent as deterministic orchestrator for genomic epidemiology, 1,000 Asian dengue genomes end-to-end in <24h; strong content fit but abstract-only (24h-old, body not yet rendered) and CEO/CTO founder COI flagged in the manuscript
+  - CellTosg2Sequence (10.64898/2026.06.16.732397, 2026-06-22) — KG-augmented LLM for single-cell with a 62,507-node biomedical KG channel; relevant but foundation-model, not agentic
+  - EventHorizon (10.64898/2026.06.18.733197, 2026-06-22) — flow cytometry foundation model; not agentic
+  - HoloCell, OmniCell, CellOS, VCBench — cell foundation-model tier; not agentic
+  - PanRes — ontology-grounded AMR resource; not agentic
+- **arXiv** — cache (500 entries, runner pre-fetch from 02:00 today); 1 hit on the agentic+biomedical filter: EHR-Complex (2606.23301, cs.AI, 2026-06-22) — clinical-agent benchmark on MIMIC-IV, thematically overlapping with the morning's VISTA pick
+- **ChemRxiv** (WebSearch `site:chemrxiv.org` + agent/LLM keywords): nothing fresh in the 2-day window
+- **PubMed** — 5-day window, 191 broad hits; tightened agentic-only filter returned 4 hits, none a breakthrough agentic-biomedical-AI architecture paper
+- **News / product launches**: **NVIDIA BioNeMo Agent Toolkit (2026-06-23) — CHOSEN.** Sigmatic Sciences companion announcement.
+- **Policy / funder** (ARPA-H / NIH / NSF / HHS): no fresh agentic-biomedical-AI program announcements in window
+
+VISTA Architect (morning) was paper-side, graph-first clinical AI. BioNeMo Agent Toolkit (this bonus) is platform-side, infrastructure for skill-layer standardization across the agent ecosystem. Both clear the bar, and they are complementary rather than duplicative — the day genuinely had two stories.
+=== 2026-06-23T22:47:12-07:00 done  biomedical-agentic-ai (exit 0) ===
