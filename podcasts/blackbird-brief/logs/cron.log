@@ -75,3 +75,38 @@ Committed `c0d90d0`. Episode shipped: 8:07 spoken, 3.89 MB mp3, in R2 and feed u
 
 **Failures:** none — all queries returned cleanly. No retries needed.
 === 2026-06-23T02:27:15-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-06-23T22:39:56-07:00 start blackbird-brief ===
+Script body is URL/DOI-free, RSS stub XML parses, placeholders intact. Per SKIP_TTS mode I do not run TTS, edit feed.xml, or commit — the orchestrator's `publish_pending.py` will handle TTS, R2 publish, feed insertion, and the commit (using `2026-06-23-radar-hopkins-epigenetic-vaccine-sarcoma.commit-msg`) after the nightly batch.
+
+```
+Bonus episode for blackbird-brief 2026-06-23 staged (no commit; SKIP_TTS=1):
+podcasts/blackbird-brief/scripts/
+  2026-06-23-radar-hopkins-epigenetic-vaccine-sarcoma.md           (script, ~1,646 words, single-item ~6 min)
+  2026-06-23-radar-hopkins-epigenetic-vaccine-sarcoma.rss-item.xml (stub with __LENGTH__/__DURATION__)
+  2026-06-23-radar-hopkins-epigenetic-vaccine-sarcoma.commit-msg
+```
+
+## Candidate funnel — blackbird-brief 2026-06-23 (bonus / re-invocation)
+
+Re-invocation rule: same search/selection, must exclude already-shipped items from today.
+
+Already shipped today (excluded): Morakis OBM sickle-cell vaso-occlusion (Blood Advances, lead of morning episode); Rossi/Pergola INGENE-MODULE schizophrenia eQTL (Nature Genetics, morning's watch-list item).
+
+**Sources scanned:**
+- PubMed `("Johns Hopkins"[Aff]) AND (drug OR therapeutic OR target OR mechanism OR inhibitor OR antibody OR vaccine OR "gene therapy" OR biomarker)`, edat 2026-06-19..2026-06-23 → 75 hits, 30 retrieved, 20 with non-empty metadata; broader keyword variant returned 14, of which 11 new.
+- PubMed `("University of Maryland Baltimore"[Aff] OR "Lieber Institute"[Aff]) AND (drug ...)`, same window → 6 hits.
+- bioRxiv by-date browse, 2026-06-19..2026-06-23, categories surveyed: cancer biology (0), pharmacology/toxicology (13), immunology (30), cell biology (0), bioengineering (30). Keyword/affiliation filter not available — manual scan for JHU/UMB/Lieber authorship.
+- Hub.jhu.edu and hopkinsmedicine.org/newsroom — both returned HTTP 403 to WebFetch (Cloudflare). Skipped per PIPELINE.md (one transient retry equivalent: substituted via bioRxiv direct).
+
+**JHU-led shortlist (after dropping reviews / tail-co-author papers / off-thesis):**
+- bioRxiv 10.64898/2026.06.18.733244 — Recho/Ladle/Koldobskiy, "Combination epigenetic-targeted therapy increases immunogenicity of poorly immunogenic sarcomas" — JHU Sidney Kimmel pediatric oncology, Brian Ladle corresponding. **CHOSEN.**
+- PubMed 42334419 — Zhang/Sukumar, "cf-MMSP assay for enhanced analytical sensitivity of methylated DNA in breast cancer liquid biopsy" (Cancer Epi Biomarkers Prev, Jun 23) — JHU Medicine. Incremental sensitivity refinement of the cMethDNA platform; b-grade.
+- PubMed 42331234 — Salisbury/Martinowich/Totty, "Cortistatin neurons in the prelimbic cortex regulate seizure susceptibility … via BDNF-TrkB" (Neurobiol Dis, Jun 22) — JHU/Lieber; mechanistic, not yet a tractable target.
+- PubMed 42335144 — Wolf/Mathioudakis, automated insulin delivery in preschoolers (real-world registry); not a sourcing lead.
+
+**UMB/Lieber side (separate from the JHU search):**
+- 6 hits total in the window; the strongest (PMID 42332075, "Structural basis of opioid receptor activation by PCP and ketamine," Nat Struct Mol Biol) is WashU/Stanford-led with UMB's Jon Fay as a co-corresponding crystallographer — not UMB-led enough to drive a sourcing pitch.
+- PMID 42334285 (PTSD/IPV mediation, UMBC), PMID 42326564 (MSIVA neuroimaging methods, GA Tech/UMBC), PMID 42315248 (cervical retrolaminar block letter): all off-thesis or non-research.
+
+**Chosen item:** bioRxiv 10.64898/2026.06.18.733244 — Ladle/Koldobskiy/Llosa, sequential decitabine + entinostat priming of murine and human pediatric sarcoma cells drives broad CTA reactivation + 16× MHC-I, and an epigenetically-primed GVAX whole-cell vaccine + anti-PD-1/anti-CTLA-4 confers 85% complete rejection with T-cell-dependent immune memory and cross-tumor protection. JHU-led; clean alignment with the GVAX heritage (Pardoll/Jaffee/Aduro); commercializable angle on a polyclonal antigen vaccine in pediatric sarcoma where Adaptimmune's MAGE-A4 Tecelra is the live precedent.
+=== 2026-06-23T22:50:05-07:00 done  blackbird-brief (exit 0) ===
