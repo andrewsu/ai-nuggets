@@ -43,6 +43,21 @@ LEGACY_TTS=${LEGACY_TTS:-0}
 GARIBALDI_HOST=garibaldi.scripps.edu
 GARIBALDI_STAGE_DIR=ai-nuggets-stage   # relative to remote $HOME
 
+# Cron's PATH is /usr/bin:/bin only. publish_episode.sh calls `npx wrangler`
+# which lives under nvm. Prepend the current node bin so child processes
+# (publish_pending.py → publish_episode.sh) see npx. Update on node upgrade.
+export PATH="$HOME/.nvm/versions/node/v24.14.0/bin:$HOME/.local/bin:$PATH"
+
+# Capture all output to a per-run log when not running interactively (e.g.
+# under cron). The 1AM cron previously dropped Phase 2/3 logs entirely,
+# which made debugging the npx-not-found failure impossible.
+if [ ! -t 1 ]; then
+  mkdir -p "$REPO/logs"
+  RUN_LOG="$REPO/logs/run_all_shows-$(date +%Y%m%dT%H%M%S).log"
+  exec >> "$RUN_LOG" 2>&1
+  echo "=== $(date -Iseconds) run_all_shows.sh start (log: $RUN_LOG) ==="
+fi
+
 cd "$REPO" || exit 1
 
 PIPELINE="$REPO/podcasts/PIPELINE.md"
