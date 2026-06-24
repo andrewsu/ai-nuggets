@@ -20,6 +20,8 @@
 #
 # Override knobs:
 #   STAGGER_SECONDS=N      seconds between successive Phase-1 launches
+#   SHOWS_LIMIT=N          only run the first N shows alphabetically (0 =
+#                          all). Useful for narrower manual test runs.
 #   LEGACY_TTS=1           bypass new architecture: each show does TTS +
 #                          publish + commit inline as before, single push
 #                          at the end
@@ -34,6 +36,7 @@ set -u
 REPO=/home/asu/Science/ai-nuggets
 CLAUDE=/home/asu/.local/bin/claude
 STAGGER_SECONDS=${STAGGER_SECONDS:-600}
+SHOWS_LIMIT=${SHOWS_LIMIT:-0}
 PHASE2_TIMEOUT_SECS=${PHASE2_TIMEOUT_SECS:-3600}
 LEGACY_TTS=${LEGACY_TTS:-0}
 
@@ -106,13 +109,18 @@ run_show() {
     if [ "$LEGACY_TTS" = "1" ]; then
       produced=$(compgen -G "$REPO/podcasts/$slug/episodes/$today*.mp3" 2>/dev/null | head -1 || true)
     else
-      script=$(compgen -G "$REPO/podcasts/$slug/scripts/$today*.md" -G "$REPO/podcasts/$slug/scripts/$today*.txt" 2>/dev/null | head -1 || true)
-      if [ -n "$script" ]; then
+      # Look for any today's script whose .rss-item.xml + .commit-msg stubs
+      # both exist. Iterate over .md and .txt separately — `compgen -G` only
+      # honors the *last* -G when multiple are passed.
+      shopt -s nullglob
+      for script in "$REPO/podcasts/$slug/scripts/$today"*.md "$REPO/podcasts/$slug/scripts/$today"*.txt; do
         base="${script%.*}"
         if [ -f "${base}.rss-item.xml" ] && [ -f "${base}.commit-msg" ]; then
           produced="$script"
+          break
         fi
-      fi
+      done
+      shopt -u nullglob
     fi
     if [ "$attempt" -lt 6 ] && [ -z "$produced" ]; then
       echo "=== $(date -Iseconds) no usable output for $slug; retrying in 180s ===" | tee -a "$log"
@@ -139,8 +147,13 @@ else
 fi
 
 first=1
+count=0
 for prompt in podcasts/*/PROMPT.md; do
   [ -f "$prompt" ] || continue
+  if [ "$SHOWS_LIMIT" -gt 0 ] && [ "$count" -ge "$SHOWS_LIMIT" ]; then
+    break
+  fi
+  count=$((count + 1))
   slug=$(basename "$(dirname "$prompt")")
   if [ "$first" -eq 0 ]; then
     sleep "$STAGGER_SECONDS"
