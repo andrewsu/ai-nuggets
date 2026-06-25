@@ -1540,3 +1540,27 @@ Episode written for 2026-06-24 (SKIP_TTS mode — orchestrator handles audio + c
 - Lead pick beat: Schnitzer amantadine (paradigm-shift in PD pharmacology mechanism) — kept as #2; ML-004 wins lead on news freshness + audience-resonance (psychiatric pipeline)
 - Dropped: 10.64898/2026.06.18.733264 (β1 integrin / 6-OHDA) — abstract explicitly cautions "proof-of-concept," no histological confirmation, "not directly generalizable"; 10.64898/2026.06.10.731380 (biomeStat) — already today's biomedical-agentic-ai pick
 === 2026-06-24T02:03:54-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-06-25T01:50:11-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 2:50am (America/Los_Angeles)
+=== 2026-06-25T01:50:14-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-06-25T01:50:14-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-06-25T01:53:14-07:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 2:50am (America/Los_Angeles)
+=== 2026-06-25T01:53:18-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-06-25T01:53:18-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-06-25T01:56:18-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 2:50am (America/Los_Angeles)
+=== 2026-06-25T01:56:21-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-06-25T01:56:21-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-06-25T01:59:21-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 2:50am (America/Los_Angeles)
+=== 2026-06-25T01:59:25-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-06-25T01:59:25-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-06-25T02:02:25-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 2:50am (America/Los_Angeles)
+=== 2026-06-25T02:02:28-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-25T02:02:28-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-06-25T02:05:28-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 2:50am (America/Los_Angeles)
+=== 2026-06-25T02:05:33-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-25T02:05:33-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
