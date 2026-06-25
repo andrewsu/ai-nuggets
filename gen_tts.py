@@ -40,7 +40,21 @@ MISTRAL_CHUNK_MAX = 3000
 CHUNK_RETRIES = 2
 
 VOXTRAL_DEFAULT_URL = "http://localhost:8000/v1/audio/speech"
-VOXTRAL_CHUNK_MAX = 3000
+# Voxtral's AR decoder accumulates conditioning drift in long generations
+# (its paper documents an "occasional tendency to significantly taper in
+# volume" that DPO only partially ameliorates). Short chunks bound the
+# exposure to within-chunk taper; ~1000 chars ≈ 30-45s audio, near the
+# ElevenLabs long-form recommendation of 500-800 chars.
+#
+# We also tried Base-task ref_audio anchoring (the documented mitigation
+# for this exact failure mode in autoregressive TTS), but the OSS
+# Voxtral-4B-TTS-2603 checkpoint ships without the audio encoder weights —
+# any ref_audio / x_vector_only_mode / in-context-cloning path raises
+# "encode_waveforms requires encoder weights which are not available in
+# the open-source checkpoint" and crashes vLLM-omni's EngineCore. Only
+# the pre-computed preset voice embeddings (.pt files in the HF repo)
+# can be used.
+VOXTRAL_CHUNK_MAX = 1000
 
 # Voices typically run 14-21 chars/sec depending on chunk size and
 # punctuation density. 25 tolerates natural speed variance while still
@@ -98,16 +112,37 @@ def extract_script_body(path):
     return apply_pronunciation_subs("\n".join(lines).strip())
 
 
+_SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+")
+
+
 def chunk_text(text, max_chars):
+    # Greedy-pack sentences (preserving paragraph breaks where they fall)
+    # up to max_chars. Sentence-level granularity keeps chunks small enough
+    # to bound Voxtral's within-chunk loudness drift while still giving the
+    # model multi-sentence prosodic context.
     if len(text) <= max_chars:
         return [text]
-    chunks, current = [], ""
-    for para in text.split("\n\n"):
-        if len(current) + len(para) > max_chars and current:
+    paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
+    units = []  # (separator-from-previous, sentence-text)
+    for pi, para in enumerate(paragraphs):
+        sentences = _SENTENCE_SPLIT.split(para)
+        for si, sent in enumerate(sentences):
+            if not units:
+                sep = ""
+            elif si == 0:
+                sep = "\n\n"
+            else:
+                sep = " "
+            units.append((sep, sent))
+    chunks = []
+    current = ""
+    for sep, sent in units:
+        candidate = current + sep + sent if current else sent
+        if len(candidate) > max_chars and current:
             chunks.append(current.strip())
-            current = para
+            current = sent
         else:
-            current = current + "\n\n" + para if current else para
+            current = candidate
     if current.strip():
         chunks.append(current.strip())
     return chunks
@@ -222,7 +257,10 @@ def voxtral_synthesize(chunk, base_url, model, voice):
         json={"model": model, "input": chunk, "voice": voice, "response_format": "mp3"},
         timeout=600,
     )
-    r.raise_for_status()
+    if r.status_code >= 400:
+        raise requests.HTTPError(
+            f"{r.status_code} from voxtral: {r.text[:600]}", response=r
+        )
     return r.content
 
 
