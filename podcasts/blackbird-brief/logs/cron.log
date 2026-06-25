@@ -136,3 +136,19 @@ Episode drafted for `blackbird-brief` — Sourcing Radar only (Wed June 24 is no
 - **Institutional newsrooms** (Hopkins Medicine, JHTV, Lieber, UM Ventures) — no June 22-24 items beyond what's already preprinted.
 - **Press feeds** — nothing new on portfolio competitors today.
 === 2026-06-24T01:29:43-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-06-25T01:10:11-07:00 start blackbird-brief ===
+Script + stubs written. SKIP_TTS=1 — audio, R2 publish, feed update, and commit are deferred to `publish_pending.py` after the batch TTS run.
+
+**Episode shipped (pending TTS):** *Sourcing Radar — Lieber's trans-eQTL engine surfaces 641 new schizophrenia genes*
+
+**Files staged in `podcasts/blackbird-brief/scripts/`:**
+- `2026-06-25-radar-lieber-trans-eqtl-schizophrenia-targets.md`
+- `2026-06-25-radar-lieber-trans-eqtl-schizophrenia-targets.rss-item.xml` (length/duration placeholders)
+- `2026-06-25-radar-lieber-trans-eqtl-schizophrenia-targets.commit-msg`
+
+**Pick rationale:**
+- **Lead:** Pergola/Weinberger, *Nature Genetics*, 2026-06-22. INGENE + MODULE trans-eQTL models built on LIBD postmortem brain × six regions, replicated against GTEx/CommonMind, applied to PGC3 (n=102,613) — yields 641 novel SCZ-associated genes. Directly adjacent to Blackbird's GPR52 program at Lieber; opens a platform-layer conversation (licensable infrastructure) with Tom Hyde / Dan Weinberger.
+- **Supporting:** Mysore PLTi attention-circuit paper, *Nature Comms* (April 28). Paper is older but JHU press cycle is in window — disclosed candidly in the script. First-in-class anatomically-defined ADHD target, future-watch.
+
+**Candidate funnel:** bioRxiv (162 in-window items paginated; sole JHU hit was yesterday's HIV preprint), medRxiv (Baughman VTE GenAI dropped for low translational fit), Feinberg Hub press out-of-window for the underlying paper. Sources that failed/proxied: hub.jhu.edu and hopkinsmedicine.org (Cloudflare 403, routed via r.jina.ai); bioRxiv API 503'd transiently on two pages (resolved on retry); GEN article 404 (used EurekAlert + Nature.com).
+=== 2026-06-25T01:24:24-07:00 done  blackbird-brief (exit 0) ===
