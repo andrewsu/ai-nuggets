@@ -1564,3 +1564,42 @@ You've hit your session limit · resets 2:50am (America/Los_Angeles)
 You've hit your session limit · resets 2:50am (America/Los_Angeles)
 === 2026-06-25T02:05:33-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-06-25T02:05:33-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-06-25T07:56:32-07:00 start receptor-and-reason (manual catch-up) ===
+All output files in place. Stub files written without TTS per `SKIP_TTS=1` mode; orchestrator (`publish_pending.py`) will handle audio, R2 publish, feed insertion, and commit.
+
+Files:
+- `podcasts/receptor-and-reason/scripts/2026-06-25-receptor-and-reason.md` — 3,254-word spoken script (~16 min)
+- `podcasts/receptor-and-reason/scripts/2026-06-25-receptor-and-reason.rss-item.xml` — feed item with `__LENGTH__` / `__DURATION__` placeholders
+- `podcasts/receptor-and-reason/scripts/2026-06-25-receptor-and-reason.commit-msg`
+- `podcasts/receptor-and-reason/state/shipped.jsonl` — appended 10-item record
+
+## Candidate funnel — 2026-06-25
+
+Sources scanned (rolling 7-day window, 2026-06-19 → 2026-06-25):
+
+- **bioRxiv (neuro + pharma + bioinformatics)** — 327 unique DOIs across the week (pages paginated per day, totals 200/80/58/173/202/137/62), filtered to 124 cat- or keyword-relevant, then 115 after dedup vs. shipped ledger
+- **medRxiv (psych + neuro + addiction + pharmacology + therapeutics)** — 144 unique items, 24 in target categories after dedup
+- **Neuropsychopharmacology, Molecular Psychiatry, Biological Psychiatry, Neuropharmacology** — Nature journals via r.jina.ai; ScienceDirect 403/404 from this host (one Neuropharm article in-press visible)
+- **Psychiatric Times** — checked news + journal-collection; the new-this-week drug-development items (BXCL501 May 29, CTx-1301 Jun 2, elunetirom Jun 4) all fall outside the 7-day window; ML-004 / DT120 / cytisinicline already shipped
+- **arXiv cache** (`/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries) — 15 biomedical + agentic candidates in last 7 days after dedup
+- **chemRxiv / industry press** — skipped as not load-bearing this run
+
+Shortlist (after discarding spurious keyword matches):
+
+- doi:10.64898/2026.02.14.26346321 — APOE ε4/ε4 lifespan plasma proteomics + STEP1 semaglutide reversal (medRxiv) — **CHOSEN**
+- doi:10.64898/2026.06.22.26356204 — Antiseizure medication ↔ amyloid/tau, NACC n=52,537 + ADNI replication (medRxiv) — **CHOSEN**
+- doi:10.1038/s41386-026-02476-1 — GNE-5729 GluN2A-PAM state-dependent working-memory rescue (NPP) — **CHOSEN**
+- doi:10.64898/2026.06.20.733493 — Midazolam paired-pulse TMS in younger vs. older adults (bioRxiv) — **CHOSEN**
+- doi:10.64898/2026.06.17.732860 — TAS2R14 pharmaceutical agonists with distinct binding modes, Niv lab (bioRxiv) — **CHOSEN**
+- doi:10.64898/2026.06.19.733483 — RXFP1-relaxin AF2 model + RFdiffusion/BindCraft mini-protein modulators (bioRxiv) — **CHOSEN**
+- doi:10.64898/2026.06.10.731380 — biomeStat agentic AI for 1,000 dengue genomes (bioRxiv) — **CHOSEN**
+- arxiv:2606.24235 — SP-Mind autonomous reasoning agent for spatial proteomics — **CHOSEN**
+- arxiv:2606.24510 — RaDaR rare-disease reasoning LLM, randomized AI-assist trial — **CHOSEN**
+- doi:10.64898/2026.06.18.733163 — CellOS 12B multi-view single-cell foundation model (bioRxiv) — **CHOSEN**
+- doi:10.1038/s41386-026-02470-7 — NE/β2-AR/PGC-1α hippocampal mitochondrial biogenesis (NPP) — dropped (Cloudflare blocked full text; reference-list inference unreliable)
+- doi:10.64898/2026.06.18.732941 — Buparlisib polymeric nanomedicine for glioblastoma — dropped (drug-delivery, modest novelty)
+- arxiv:2606.25400 BrainAgent / arxiv:2606.24779 DeepBD — passed for diversity (close runners-up)
+- bioRxiv OmniCell, HoloCell — close runners-up to CellOS
+
+Source-side gap: Nature.com `/articles?` listing 303-redirects to `idp.nature.com` from `WebFetch`; the r.jina.ai reader proxy worked for `/npp/research-articles`. ScienceDirect listings 403/404 — Biological Psychiatry and full Neuropharmacology articles-in-press list not retrievable from this IP; one Neuropharm in-press item visible from cache. Two NPP papers landed Jun 25 — one selected (GNE-5729), one dropped (NE/β2-AR full-text unavailable).
+=== 2026-06-25T08:13:10-07:00 done  receptor-and-reason (exit 0) (manual catch-up) ===
