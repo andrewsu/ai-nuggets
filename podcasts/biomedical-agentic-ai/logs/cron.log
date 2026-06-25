@@ -1950,3 +1950,21 @@ ChemRxiv / news / product launches / ARPA-H/NIH/NSF/HHS policy pages — nothing
 
 **Why biomeStat won:** cleanest deterministic-orchestrator architectural framing this show has covered, with a real-data demonstration (1,000 DENV genomes, 19.5h wall-clock, 72.5% IEDB validation of the 1,869 computational immune-escape candidates) and the right Su Lab fit on agentic AI + data integration + open-science / global-health angle.
 === 2026-06-24T01:06:44-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-06-25T01:00:11-07:00 start biomedical-agentic-ai ===
+All three artifacts are in place — script, RSS-item stub with `__LENGTH__` / `__DURATION__` placeholders, and commit-msg stub. `SKIP_TTS=1` is set, so per `PIPELINE.md` I'm stopping here: no `gen_tts.py`, no `publish_episode.sh`, no `feed.xml` edit, no commit. The orchestrator will batch the TTS, fill in the placeholders, and commit.
+
+**Today's pick:** DeepBD (arXiv 2606.24779, posted 2026-06-23) — a grounded agentic workflow for variant prioritization in genetic birth defects, from Haishuai Wang's group at Zhejiang University. The angle is the architectural one: a calibrated heterogeneous-graph evidence engine (rule features + variant-effect predictors + a KG over gene/HPO/pathway with learned per-source trust coefficients) feeds an agent that does constrained top-K reranking over a provenanced workspace — never overwriting engine output. Beats Exomiser, DeepRare, and prompted LLM reranking head-to-head on 549 held-out solved cases (Recall@1/3 = 0.658/0.882). Mirrors yesterday's biomeStat read: agent as orchestrator/reviewer, deterministic tools and KGs as source of truth.
+
+**Candidate funnel.**
+- **bioRxiv** (137 unique DOIs across 2026-06-24→25, full pagination): 8 keyword hits; substantive after dropping "contrast agent" / "LLM"-in-word artifacts: `trAIt` (LLM species-trait retrieval, niche), bulk RNA-seq foundation model `10.64898/2026.06.18.733198` (foundation model, not agent). Neither beats the arXiv pick.
+- **arXiv** (cache 500 entries, 2026-06-23→25): **DeepBD (CHOSEN)** — https://arxiv.org/abs/2606.24779; SP-Mind (2606.24235) autonomous spatial-proteomics agent, SP-Bench 102 tasks; BrainAgent (2606.25400) multi-agent BCI; MedGuards (2606.25651) multi-agent clinical error correction; ATRIA (2606.24392) iterative ECG reporting; T2D-Bench (2606.24145) KG-gated LLM eval; Bridging the Post-discharge Gap (2606.25334) multi-agent care; The Clinician's Veto (2606.25108) position paper; Holographic Memory for KG (2606.24948) mechanistic KGE study.
+- **PubMed** (last 5 days, 13 narrow hits): An agentic AI framework for ICH surgical planning (PMID 42332303, 50-case, niche); MetagenomicKG (PMID 42334937, KG not agentic); tmQM-RDF (PMID 42340183, chem KG). None beat the arXiv pick.
+- **ChemRxiv:** no fresh biomedical-agentic-AI hits.
+- **News / product launches:** none in window.
+- **Policy:** ARPA-H "safest place to have a baby" cohort announcement 2026-06-23 — maternal health, not agentic-AI-specific. NIH press 403'd from this IP. NSF/HHS no agentic-biomedical-AI announcements.
+
+Three artifacts written for the batch-TTS orchestrator to pick up:
+- `podcasts/biomedical-agentic-ai/scripts/2026-06-25-deepbd-agentic-variant-prioritization-birth-defects.md`
+- `…/2026-06-25-deepbd-agentic-variant-prioritization-birth-defects.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders)
+- `…/2026-06-25-deepbd-agentic-variant-prioritization-birth-defects.commit-msg`
+=== 2026-06-25T01:10:29-07:00 done  biomedical-agentic-ai (exit 0) ===
