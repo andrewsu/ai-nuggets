@@ -1,0 +1,5 @@
+Script body: 6639 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2974 chars) -> 155.1s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2740 chars) -> 139.2s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (922 chars) -> 38.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/scripps-biomed-brief/episodes/2026-06-25-autac-mcl1-tpd-tau-lrp1-hts-p2y1r-biased-mical-vanadate-actin.mp3 [mistral] 2,949,581 bytes, 368.7s

@@ -1174,3 +1174,35 @@ You've hit your session limit · resets 2:50am (America/Los_Angeles)
 You've hit your session limit · resets 2:50am (America/Los_Angeles)
 === 2026-06-25T02:15:33-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-06-25T02:15:33-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-06-25T07:56:36-07:00 start scripps-biomed-brief (manual catch-up) ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CcQB5ZaPk427Eqbjf1aDN
+=== 2026-06-25T07:58:04-07:00 done  scripps-biomed-brief (exit 0) (manual catch-up) ===
+=== 2026-06-25T07:58:27-07:00 start scripps-biomed-brief (manual catch-up, --model claude-sonnet-4-6) ===
+All three files are in place. Today's episode is ready for the batch TTS pipeline.
+
+---
+
+**Candidate funnel — 2026-06-25**
+
+**Sources scanned:**
+- bioRxiv biochemistry (Jun 24–25): 15 items scanned, 5 survived relevance filter
+- bioRxiv pharmacology & toxicology (Jun 24–25): 5 items scanned, 3 survived
+- bioRxiv bioengineering (Jun 24–25): 11 items scanned, 2 survived
+- bioRxiv immunology (Jun 24–25): 6 items scanned, 1 survived
+- bioRxiv cancer biology / cell biology / molecular biology / synthetic biology (Jun 24–25): 0 items returned
+- Web search (Fierce Biotech, STAT, GEN, BioPharma Dive): 8 results, none more specific than bioRxiv picks
+
+**Substantive shortlist (after discarding off-topic results):**
+- ★ Elshazly et al., Radhakrishnan (VCU) — AUTAC lysosomal Mcl1 degradation, tumor-selective cardiac sparing: https://www.biorxiv.org/content/10.64898/2026.06.18.733247v1 — **CHOSEN**
+- ★ Wang et al., Rauch/Sergienko/Jackson (UMass + Scripps) — Tau-LRP1 HTS small-molecule inhibitors: https://www.biorxiv.org/content/10.64898/2026.06.24.733881v1 — **CHOSEN**
+- ★ Pitchford et al., Rahman (KCL) — P2Y1R pathway-selective inverse agonist KSN-159-27: https://www.biorxiv.org/content/10.64898/2026.06.19.732319v1 — **CHOSEN**
+- ★ Wang et al., Kotov (Michigan) — MICAL-vanadate nanoclusters for actin modulation: https://www.biorxiv.org/content/10.64898/2026.06.23.733883v1 — **CHOSEN**
+- Zhao et al. — Fanzor2 trans-cleavage engineering / FINDER diagnostics (more diagnostic-tool than therapeutic): not chosen
+- Fiorenza, Luger (CU Boulder) — PARP1 inactive chromatin binding mode (basic mechanism, limited translational hook today): not chosen
+- Gomerdinger, Hammond (MIT) — APC-targeted TLR3 nanoparticle (solid delivery paper, below bar vs top 4): not chosen
+- Ghosh (UCSD) — Druggable G protein checkpoint in cholesterol efflux (posted Feb 2026, outside 24–48h window): not chosen
+
+**Full-text fetch outcomes:** All four selected papers are abstract-only — jina `.full` HTML returned abstract + metadata but no body (bioRxiv hasn't rendered v1 body HTML yet for any of them). PDF endpoints returned HTTP 403. Flagged in-script.
+=== 2026-06-25T08:06:18-07:00 done  scripps-biomed-brief (exit 0) (manual catch-up, sonnet) ===
