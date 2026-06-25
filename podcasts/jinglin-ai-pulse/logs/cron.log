@@ -33,3 +33,18 @@ Long-form podcasts (last 14 d):
 
 Source-side notes: bioRxiv / arXiv / general web all reachable; arxiv.org/pdf returned HTTP 402 on one fetch but the HTML abstract + a search query carried the Qwen-AgentWorld details (confirmed 7 domains, headline numbers). @_akhaliq direct X scrape blocked (HTTP 402) — used Hugging Face daily-papers page instead, which is the proxy for the same signal.
 === 2026-06-24T01:40:27-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-06-25T01:30:11-07:00 start jinglin-ai-pulse ===
+Today's episode is written. Per `SKIP_TTS=1` in the cron environment, I've followed the batch-mode steps in `PIPELINE.md`: written the script + RSS-item stub (with `__LENGTH__` / `__DURATION__` placeholders) + commit-msg stub, and skipped `gen_tts.py`, `publish_episode.sh`, `feed.xml`, and any git activity. `scripts/publish_pending.py` will pick up the three files after the batch TTS run.
+
+**Today's pick** — _NatureBench breaks the agent, and VCs back the harness anyway_:
+
+- **Twitter Pulse** lead: NatureBench (arXiv 2606.24530, June 23) — strongest of 10 frontier agent configurations (Claude Opus 4.7, GPT-5.5, Gemini 3.5, Kimi K2.6, DeepSeek V4 Pro, GLM-5.1, Qwen 3.7 Max, etc.) beats published Nature-family SOTA on only 17.8% of 90 tasks at g>0.1. 45.1% of failures = wrong method choice. Quotable take: agents do "methodological translation, not genuine scientific invention." Three of the six benchmark domains (cellular omics, protein biology, biomedical modeling) anchor the number directly to Ollie's bench. Companion: _Are We Ready For An Agent-Native Memory System?_ (2606.24775).
+- **Money Moves**: June 24 was an agentic-AI funding day — seven rounds, ~$362.5M combined (Assort Health $120M, Taktile $110M, Hang Ten $32M, Attention $30M, Runlayer $30M, Coval $28M, Seltz $12.5M). The three pure-infrastructure rounds — governance, eval, retrieval — are the more telling signal. Open-source counter: Databricks released Omnigient under Apache 2.0; Matei Zaharia + Reynold Xin on Latent Space's "Why the Frontier Ecosystem must be Open" (June 24).
+- **Deep Cut**: Dwarkesh Patel's solo essay "The data black hole at the center of AI" (June 19) — million-fold sample-efficiency gap; data, not architecture, is the moat. Patel's frame predicts NatureBench's failure mode and reframes the funding day as data-acquisition plays.
+- **Wrap**: Watch which of the seven agentic rounds names task-specific trajectory data as a use of proceeds.
+
+Files written:
+- `podcasts/jinglin-ai-pulse/scripts/2026-06-25-naturebench-vs-agentic-vc-day.md`
+- `podcasts/jinglin-ai-pulse/scripts/2026-06-25-naturebench-vs-agentic-vc-day.rss-item.xml` (validated; parses)
+- `podcasts/jinglin-ai-pulse/scripts/2026-06-25-naturebench-vs-agentic-vc-day.commit-msg`
+=== 2026-06-25T01:40:34-07:00 done  jinglin-ai-pulse (exit 0) ===
