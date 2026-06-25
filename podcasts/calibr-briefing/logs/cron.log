@@ -1554,3 +1554,50 @@ Sources:
 - [Boundless Bio + Serapha Bio merger](https://investors.boundlessbio.com/news-releases/news-release-details/boundless-bio-and-serapha-bio-announce-merger-agreement-and-230)
 - [Osanni Bio $190M Series B](https://www.businesswire.com/news/home/20260623418949/en/Osanni-Bio-Closes-$190-Million-Series-B-Financing-Led-by-Patient-Square-Capital)
 === 2026-06-24T01:32:59-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-06-25T01:20:11-07:00 start calibr-briefing ===
+Both stubs validate when spliced. Per `SKIP_TTS=1` mode, I'm skipping TTS, R2 upload, feed.xml edits, and commit — the orchestrator handles those after batch TTS.
+
+## Run summary — calibr-briefing 2026-06-25
+
+Two episodes written; per `SKIP_TTS=1`, audio generation and commit deferred to `publish_pending.py`.
+
+**Files produced (under `podcasts/calibr-briefing/scripts/`):**
+- `2026-06-25-pharma-headlines.txt` (882 words, 6 items)
+- `2026-06-25-pharma-headlines.rss-item.xml`
+- `2026-06-25-pharma-headlines.commit-msg`
+- `2026-06-25-trodelvy-frontline-tnbc-spotlight.txt` (1,744 words)
+- `2026-06-25-trodelvy-frontline-tnbc-spotlight.rss-item.xml`
+- `2026-06-25-trodelvy-frontline-tnbc-spotlight.commit-msg`
+
+**Spotlight pick:** Gilead Trodelvy front-line metastatic TNBC FDA approval (June 24 evening) — broad-as-approved labeling in two distinct indications (monotherapy + Keytruda combo) restructures the TROP-2 ADC market war against AstraZeneca-Daiichi's Datroway and Merck-Kelun's MK-2870; companion data point from ADCT LOTIS-5 in the same news cycle bifurcates the ADC class story.
+
+### Candidate funnel
+
+Sources scanned via WebFetch + WebSearch (Endpoints/FierceBiotech/FiercePharma blocked direct on AWS proxy — 403/451; routed through r.jina.ai reader where possible; STAT/BioPharma Dive 24-hour cycle dates surfaced from URL paths):
+
+- **FierceBiotech**: 6 items reviewed — Lilly-Abbisko $1.9B, Novartis-Antares $105M (could not verify dates via jina, 451-blocked), Passage Bio-Remix merger, Icon-Microsoft, Mapp-Gilead Ebola, RQ Bio $115M.
+- **Endpoints News**: 8 items reviewed — Biogen-RayThera (verified via jina → actually June 17, stale, **dropped**), Incyte-Escient (verified via jina → April 2024, **dropped**), Ionis FDA label expansion, cAMPfield $180M, Creyon-Lilly oligo, Angitia $130M, GSK CEO buyout, FDA leadership note.
+- **STAT**: 8 items reviewed — Lilly-Absci hair loss (6/24), Lilly-Chai partnership at BIO (6/24), Regenxbio DMD filing (6/24), Ollin $330M (6/24), Serapha (6/23, already covered), AbbVie-Apogee (6/22, already covered), pharma M&A boom (6/22), Regenxbio Hunter syndrome reversal (6/22).
+- **BioPharma Dive**: 8 items reviewed — Definium psychedelics, BIO IPO window, Ollin $330M, RQ Bio $115M, Kardigan IPO, HHS clinical-trial streamlining, Bionyra $165M, AbbVie-Apogee (already covered).
+- **FiercePharma**: 6 items — Trodelvy FDA approval, Pfizer Ibrance expansion, Nature PD-1 retraction, Stada-Orifarm OTC, ADC Therapeutics layoffs, Lilly-Foundayo MFN.
+- **BioCentury**: 5 items — AbbVie/FDA reversals podcast, TrialBlazer vs China, ASCO ADC first-in-human, Ebola vaccine race, Grand Rounds event.
+- **GEN**: 7 items — AbbVie-Apogee (already covered), Merck-Protillion $510M (already covered 6/17), AI prionin peptides, BIO 2026 CEO call, Cytomos AuraCyt, UCI Huntington stem-cell trial, schizophrenia 641 genes.
+
+**Substantive shortlist after deduping stale items and items already shipped (5 already-covered topics: Sangamo, Pfizer sigvotatug, NVIDIA BioNeMo, Corxel CX-11, Boundless-Serapha, Osanni, AbbVie-Apogee, Merck-Protillion):**
+
+- Gilead Trodelvy front-line mTNBC FDA approval — fiercepharma.com / fda.gov / businesswire — **CHOSEN spotlight + headline #1**
+- Lilly-Abbisko $1.9B multi-target — biospace.com/deals — **CHOSEN headline #2**
+- ADC Therapeutics 17% layoffs + LOTIS-5 — biospace.com — **CHOSEN headline #3**
+- Lilly-Absci $40M equity for AI hair loss — statnews.com — **CHOSEN headline #4**
+- Bionyra $165M stealth exit — biospace.com — **CHOSEN headline #5**
+- BIO 2026 closing day / MFN / China-dependency theme — biospace.com + biopharmadive.com — **CHOSEN headline #6**
+- Ollin Biosciences $330M (Vabysmo challenger) — biopharmadive.com — runner-up
+- Regenxbio DMD filing / Hunter reversal — statnews.com — runner-up
+- Kardigan $400M IPO — biopharmadive.com — runner-up
+- Nature retracts PD-1 time-of-day study — fiercepharma.com — interesting but out-of-scope
+- Lilly-Chai BIO partnership — statnews.com — folded into Absci headline as "twin signal"
+
+**Items opened in full:** Gilead businesswire release (full text), FDA approval page (full text), STAT Lilly-Absci (via jina, paywall partial), BioSpace Bionyra (full text), BioSpace ADCT layoffs (full text), Endpoints Biogen-RayThera (full text via jina — turned out stale), Endpoints Incyte-Escient (full text via jina — turned out stale). **Abstract-only / press summary:** Lilly-Abbisko (verified via stocktitan + multiple summaries; full release was on prnewswire but jina blocked). Novartis-Antares (jina 451; dropped).
+
+**Source failures noted:** Endpoints News direct WebFetch → 403; fiercepharma.com direct WebFetch → 403; r.jina.ai proxy gave HTTP 451 for fiercebiotech and fiercepharma; statnews.com via jina was partial (paywall). All worked around via the BioSpace/BioPharma Dive aggregators which were proxy-accessible and via WebSearch summaries.
+=== 2026-06-25T01:35:47-07:00 done  calibr-briefing (exit 0) ===
