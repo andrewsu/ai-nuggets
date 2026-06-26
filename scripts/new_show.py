@@ -133,7 +133,7 @@ FEED_TEMPLATE = """\
     <description>{description}</description>
     <link>https://github.com/andrewsu/ai-nuggets</link>
     <language>en-us</language>
-    <itunes:author>{owner_name}</itunes:author>
+    <itunes:author>AI Nuggets by the Su Lab</itunes:author>
     <itunes:owner>
       <itunes:name>{owner_name}</itunes:name>
     </itunes:owner>
