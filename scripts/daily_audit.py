@@ -174,6 +174,98 @@ def render_summary(reports: list[dict], target_date: dt.date) -> tuple[str, str]
     return subject, body
 
 
+def fetch_download_stats(target_date: dt.date) -> str | None:
+    """Return a per-show 7-day rolling download summary from the Cloudflare
+    D1 'podcast' database, or None if not configured.
+
+    Window is anchored on target_date: [target_date - 6 days, target_date]
+    inclusive (7 calendar days). Bot UAs and HEAD probes are excluded so the
+    numbers match real listener fetches.
+
+    Reads CLOUDFLARE_API_TOKEN from env (already sourced from .env by the
+    cron wrapper). Account id is auto-discovered via the /accounts endpoint
+    on the first call; override with CLOUDFLARE_ACCOUNT_ID if the token sees
+    more than one account. Database id is fixed to the 'podcast' DB created
+    in worker/wrangler.toml; override with CLOUDFLARE_D1_PODCAST_DATABASE_ID
+    if it's ever recreated.
+    """
+    token = os.environ.get("CLOUDFLARE_API_TOKEN")
+    if not token:
+        return None
+
+    db_id = os.environ.get(
+        "CLOUDFLARE_D1_PODCAST_DATABASE_ID",
+        "458dc35f-a6be-4c8d-95df-7e30229e02de",
+    )
+    account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID")
+
+    def _cf(path: str, body: dict | None = None) -> dict:
+        data = json.dumps(body).encode() if body is not None else None
+        headers = {"Authorization": f"Bearer {token}"}
+        if body is not None:
+            headers["Content-Type"] = "application/json"
+        req = urllib.request.Request(
+            f"https://api.cloudflare.com/client/v4{path}",
+            data=data, headers=headers,
+            method="POST" if body is not None else "GET",
+        )
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            return json.loads(resp.read())
+
+    try:
+        if not account_id:
+            accounts = _cf("/accounts")
+            results = accounts.get("result") or []
+            if not results:
+                return "Download stats: no Cloudflare accounts visible to token"
+            account_id = results[0]["id"]
+
+        date_iso = target_date.isoformat()
+        sql = (
+            "SELECT podcast, COUNT(*) AS downloads, "
+            "COUNT(DISTINCT ip_hash) AS uniq "
+            "FROM requests "
+            f"WHERE ts >= unixepoch('{date_iso}', '-6 days') "
+            f"  AND ts <  unixepoch('{date_iso}', '+1 day') "
+            "  AND is_bot = 0 AND method = 'GET' "
+            "GROUP BY podcast ORDER BY downloads DESC"
+        )
+        payload = _cf(
+            f"/accounts/{account_id}/d1/database/{db_id}/query",
+            {"sql": sql},
+        )
+    except urllib.error.HTTPError as e:
+        return f"Download stats: HTTP {e.code} ({e.reason})"
+    except (urllib.error.URLError, json.JSONDecodeError, TimeoutError) as e:
+        return f"Download stats: fetch failed ({e})"
+
+    if not payload.get("success"):
+        return f"Download stats: D1 query failed ({payload.get('errors')})"
+
+    try:
+        rows = payload["result"][0]["results"]
+    except (KeyError, IndexError):
+        return "Download stats: unexpected D1 response shape"
+
+    lines = [
+        f"Download stats — 7 days through {target_date.isoformat()} "
+        "(non-bot GETs):"
+    ]
+    if not rows:
+        lines.append("  (no downloads recorded)")
+        return "\n".join(lines)
+
+    lines.append(f"  {'show':<25} {'downloads':>10} {'unique':>8}")
+    total_dl = 0
+    for r in rows:
+        lines.append(
+            f"  {r['podcast']:<25} {r['downloads']:>10} {r['uniq']:>8}"
+        )
+        total_dl += r["downloads"]
+    lines.append(f"  {'TOTAL':<25} {total_dl:>10}")
+    return "\n".join(lines)
+
+
 def fetch_mistral_usage(target_date: dt.date) -> str | None:
     """Return a short text block describing month-to-date Mistral usage, or
     None if there's nothing to report.
@@ -299,6 +391,10 @@ def main() -> int:
 
     reports = [classify(slug, target_date) for slug in show_slugs()]
     subject, body = render_summary(reports, target_date)
+
+    downloads_block = fetch_download_stats(target_date)
+    if downloads_block:
+        body = body + "\n" + downloads_block + "\n"
 
     mistral_block = fetch_mistral_usage(target_date)
     if mistral_block:
