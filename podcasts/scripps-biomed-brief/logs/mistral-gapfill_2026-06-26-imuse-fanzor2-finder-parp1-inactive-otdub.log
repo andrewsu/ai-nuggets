@@ -1,0 +1,5 @@
+Script body: 6630 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2773 chars) -> 135.5s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2965 chars) -> 146.9s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (889 chars) -> 40.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/scripps-biomed-brief/episodes/2026-06-26-imuse-fanzor2-finder-parp1-inactive-otdub.mp3 [mistral] 2,899,217 bytes, 362.4s

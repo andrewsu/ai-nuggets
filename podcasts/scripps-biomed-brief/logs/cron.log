@@ -1230,3 +1230,36 @@ You've hit your session limit · resets 2:30am (America/Los_Angeles)
 You've hit your session limit · resets 2:30am (America/Los_Angeles)
 === 2026-06-26T02:15:33-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-06-26T02:15:33-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-06-26T06:43:12-07:00 start scripps-biomed-brief (manual catch-up, --model claude-sonnet-4-6) ===
+All four DOIs are confirmed valid. The three files are written. Here's the candidate funnel for this run:
+
+---
+
+**Candidate funnel — 2026-06-26 Scripps Biomedical Brief**
+
+**Sources scanned:**
+- bioRxiv biochemistry (Jun 24–26): 17 preprints → 6 relevant
+- bioRxiv pharmacology & toxicology (Jun 24–26): 9 preprints → 3 relevant
+- bioRxiv bioengineering (Jun 24–26): 15 preprints → 4 relevant
+- bioRxiv synthetic biology (Jun 24–26): 0 preprints
+- Web search (industry news, June 2026): no fresh stories meeting the bar
+
+**Shortlist after relevance filtering:**
+- 10.64898/2026.06.23.733994 — IMUSE: ML + ultra-HTS for de novo enzyme exploration (Cao) ✓ **CHOSEN**
+- 10.64898/2026.06.23.733943 — Fanzor2 trans-cleavage rewiring + FINDER diagnostic ✓ **CHOSEN**
+- 10.64898/2026.06.24.734344 — PARP1 inactive chromatin binding mode (Luger/HHMI) ✓ **CHOSEN**
+- 10.64898/2026.06.25.734012 — OtDUB scrub typhus DUB inhibitors (Hochstrasser/Yale) ✓ **CHOSEN**
+- 10.64898/2026.06.24.734322 — SARS-CoV-2 Mac1 inhibitors direct-to-biology (abstract only, dropped — Mac1 abstract-only, not dominant)
+- 10.64898/2026.06.23.733291 — TLR3 nanoparticle APC-targeting immunotherapy (abstract only, dropped — good but fifth-best)
+- 10.64898/2026.06.24.734353 — Alpha-synuclein genetic code expansion labeling (dropped — methodology, not primary discovery)
+
+**Fetch status:**
+- IMUSE: full text via jina ✓
+- Fanzor2: full text via jina ✓
+- PARP1: bioRxiv API abstract only (body not rendered yet) — flagged in script
+- OtDUB: jina returned abstract + metadata only (very short paper) — flagged in script
+- Mac1 inhibitors: bioRxiv API abstract only — dropped per pipeline rules
+- TLR3 nanoparticle: bioRxiv API abstract only — dropped
+
+Today's episode is written. Three files produced under `podcasts/scripps-biomed-brief/scripts/2026-06-26-imuse-fanzor2-finder-parp1-inactive-otdub.*`: the script `.md`, the RSS stub `.rss-item.xml` (with `__LENGTH__` and `__DURATION__` placeholders), and the `.commit-msg`. The orchestrator will handle TTS, R2 upload, feed update, and commit after batch processing.
+=== 2026-06-26T06:51:45-07:00 done  scripps-biomed-brief (exit 0) (manual catch-up, sonnet) ===
