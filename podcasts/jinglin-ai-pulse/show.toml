@@ -1,7 +1,6 @@
 slug          = "jinglin-ai-pulse"
 title         = "Ollie's AI Pulse"
 description   = "AI圈热点追踪：Twitter AI 大V 动态、LLM/生物世界模型前沿、AI投资趋势，以及深度AI播客精华摘录与研究哲学"
-host          = "Nigel"
 owner         = "Jinglin (Ollie) Jian <jjian@scripps.edu>"
 podcast_slug  = "jinglin-ai-pulse"
 

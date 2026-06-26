@@ -1,4 +1,4 @@
-Hey Travis, it's Nigel with today's Calibr-Skaggs Spotlight for Wednesday, April fifteenth, twenty-twenty-six. Today we're going deep on a story with direct implications for Calibr's IBD pipeline: Spyre Therapeutics just reported Phase 2 data for SPY001 in ulcerative colitis, and the results are turning heads across the gastroenterology space.
+Hey Travis, here's today's Calibr-Skaggs Spotlight for Wednesday, April fifteenth, twenty-twenty-six. Today we're going deep on a story with direct implications for Calibr's IBD pipeline: Spyre Therapeutics just reported Phase 2 data for SPY001 in ulcerative colitis, and the results are turning heads across the gastroenterology space.
 
 Let's start with what happened. Spyre's drug SPY001 targets alpha-4-beta-7, the same integrin receptor that Takeda's blockbuster Entyvio goes after. In a single-arm Phase 2 study of forty-three patients with moderately to severely active ulcerative colitis, SPY001 achieved a nine-point-two point reduction on the disease activity score — hitting the primary endpoint with statistical significance. But here's where it gets interesting: the drug also showed a forty percent clinical remission rate and fifty-one percent endoscopic improvement at just twelve weeks. Those are numbers that prompted multiple analysts to use the phrase "best-in-class."
 
@@ -20,4 +20,4 @@ One more thing worth noting: Spyre's success in attracting investor attention �
 
 So bottom line: Spyre's SPY001 data is a win for the IBD field and validation that better drugs are coming. But the crowding in the immunomodulatory lane actually makes Calibr's regenerative approach with CLF065 more valuable, not less. When everyone is competing to be the best at suppressing inflammation, the company that can actually heal the gut has a unique therapeutic and commercial position.
 
-That's your spotlight for today, Travis. I'm Nigel — see you tomorrow.
+That's your spotlight for today, Travis. See you tomorrow.

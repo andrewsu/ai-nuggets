@@ -1,4 +1,4 @@
-Hey Travis, it's Nigel. Welcome to today's spotlight. We need to talk about Johnson and Johnson's surprise decision to walk away from both of its experimental B-cell lymphoma CAR-T programs — JNJ-9530 and JNJ-4496. Because what looks like a single portfolio cut is really a signal about where the bar now sits in second-line and later large B-cell lymphoma. And that signal matters directly for Calibr's CLBR001 plus SWI019 program with AbbVie.
+Hey Travis. Welcome to today's spotlight. We need to talk about Johnson and Johnson's surprise decision to walk away from both of its experimental B-cell lymphoma CAR-T programs — JNJ-9530 and JNJ-4496. Because what looks like a single portfolio cut is really a signal about where the bar now sits in second-line and later large B-cell lymphoma. And that signal matters directly for Calibr's CLBR001 plus SWI019 program with AbbVie.
 
 Let me set up what happened. On Thursday, April 30th, J and J quietly disclosed it was discontinuing two CAR-T cell therapy programs in relapsed or refractory large B-cell lymphoma — known as LBCL. JNJ-9530 was a CD20 mono CAR-T. JNJ-4496, also known as JNJ-90014496, formerly C-CAR039, was a CD19 slash CD20 dual-targeting CAR-T originally licensed in from China's AbelZeta. The official statement: portfolio priorities and an assessment of the evolving large B-cell lymphoma treatment landscape. No safety signal. No efficacy collapse. Just — done. Patients on study get continued care under protocol.
 
@@ -32,4 +32,4 @@ The watch items from here. One — see whether AbbVie says anything specific abo
 
 The bottom line, Travis. J and J just told the field something important: in late-line LBCL, even ninety-six percent ORR and seventy-seven percent CR isn't a winning hand if the commercial wedge is too narrow and the operational infrastructure is too expensive. That validates exactly why Calibr's switchable architecture and the AbbVie partnership were built to span lymphoma plus solid tumors plus autoimmune from day one. Don't fight the war for third-line LBCL on response rate. Fight it on control, on platform extensibility, and on autoimmune optionality. Calibr was already running that playbook. The J and J exit just makes the playbook look smarter.
 
-That's your spotlight for Saturday, May 2nd. This is Nigel, signing off.
+That's your spotlight for Saturday, May 2nd. Signing off.

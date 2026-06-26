@@ -1,4 +1,4 @@
-Hey Travis, it's Nigel with your Calibr-Skaggs Daily Briefing for Saturday, May 2nd, 2026. Catching you up on what hit late Thursday and Friday — a packed end of the week. Here are today's headlines.
+Hey Travis, here's your Calibr-Skaggs Daily Briefing for Saturday, May 2nd, 2026. Catching you up on what hit late Thursday and Friday — a packed end of the week. Here are today's headlines.
 
 First — the big one for the cell therapy world. Johnson and Johnson just killed both of its experimental CAR-T programs in large B-cell lymphoma. JNJ-9530, a CD20 mono CAR-T, and JNJ-4496, the CD19 slash CD20 bispecific CAR-T, are both being shelved. What makes this stunning is that just ten months ago at the European Hematology Association meeting in Milan, J and J reported a ninety-six percent objective response rate and a seventy-seven percent complete response rate at the recommended Phase 2 dose for JNJ-4496. Their R and D chief publicly called it best-in-disease. Now, gone. The company is citing portfolio priorities and the evolving lymphoma treatment landscape. We'll go deep on this in today's spotlight, because the implications for everyone working in B-cell malignancies — including Calibr — are significant.
 
@@ -14,4 +14,4 @@ Number six — Summit Therapeutics also stumbled. The Phase 3 HARMONi-3 interim 
 
 And seventh — BeOne Medicines, formerly BeiGene, paid twenty million dollars upfront for a global option on HH160, a preclinical trispecific antibody from China's Huahui Health that hits PD-1, CTLA-4, and VEGF in one molecule. Total deal value reaches around two-point-zero-two billion dollars with milestones. Yet another China-to-West licensing deal, and a clear bet that combination immunotherapy and anti-angiogenesis will move toward single-molecule trispecifics.
 
-That's your headlines for today. Spotlight episode coming up next: J and J's CAR-T exit, what it means for the B-cell lymphoma commercial landscape, and the read-through for Calibr's CLBR001 plus SWI019 program. This is Nigel — catch you there.
+That's your headlines for today. Spotlight episode coming up next: J and J's CAR-T exit, what it means for the B-cell lymphoma commercial landscape, and the read-through for Calibr's CLBR001 plus SWI019 program. Catch you there.

@@ -1,4 +1,4 @@
-Hey Travis, it's Nigel with your Calibr-Skaggs Spotlight for March twenty-sixth, twenty twenty-six. Today we're going deep on a story that's squarely in Calibr's focus area — Allogene Therapeutics and the pivotal moment for off-the-shelf CAR-T therapy.
+Hey Travis, here's your Calibr-Skaggs Spotlight for March twenty-sixth, twenty twenty-six. Today we're going deep on a story that's squarely in Calibr's focus area — Allogene Therapeutics and the pivotal moment for off-the-shelf CAR-T therapy.
 
 So here's what's happening. STAT reported today that Allogene is nearing an early but pivotal study readout for its allogeneic CAR-T cell therapy in lymphoma. Adam Feuerstein, who covers biotech closely, flagged this as a key inflection point that could vindicate Allogene's years-long bet on off-the-shelf cell therapy. The company has two major trials running — the ALPHA three trial and the RESOLUTION trial — and we're approaching a critical data milestone.
 
@@ -28,4 +28,4 @@ One more thing worth noting. The broader CAR-T market dynamics are shifting. Pay
 
 So keep a close eye on the Allogene data when it drops. The response rates, the durability of remissions, and any signals around graft-versus-host disease will all be critical benchmarks for understanding where Calibr's sCAR-T fits in this rapidly evolving landscape.
 
-That's your spotlight for today. I'm Nigel — talk to you next time.
+That's your spotlight for today. Talk to you next time.

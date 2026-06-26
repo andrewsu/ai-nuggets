@@ -2,7 +2,6 @@
 slug          = "biomedical-agentic-ai"
 title         = "Biomedical Agentic AI"
 description   = "Short deep dives on AI applied to biomedical research."
-host          = "Nigel"
 owner         = "Andrew Su <asu@scripps.edu>"
 podcast_slug  = "biomedical-agentic-ai"   # path segment in Worker URLs
 

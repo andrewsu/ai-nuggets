@@ -1,7 +1,6 @@
 slug          = "scripps-biomed-brief"
 title         = "Scripps Biomedical Brief"
 description   = "Insights into new targets, modalities, and technologies for improving human health, curated for Peter Schultz and the Scripps Research community."
-host          = "Nigel"
 owner         = "Peter Schultz <schultz@scripps.edu>"
 podcast_slug  = "scripps-biomed-brief"
 

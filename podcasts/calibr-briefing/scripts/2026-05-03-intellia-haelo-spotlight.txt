@@ -1,4 +1,4 @@
-Hey Travis, it's Nigel. Welcome to today's spotlight. We need to talk about Intellia Therapeutics' Phase 3 HAELO readout in hereditary angioedema, because what looks like a single rare-disease win is, in fact, the moment in vivo gene editing crossed a regulatory threshold the entire CRISPR field has been chasing for a decade. And the implications go straight through to in vivo CAR-T, in vivo cell therapy more broadly, and the strategic positioning of Calibr's switchable sCAR-T platform with AbbVie.
+Hey Travis. Welcome to today's spotlight. We need to talk about Intellia Therapeutics' Phase 3 HAELO readout in hereditary angioedema, because what looks like a single rare-disease win is, in fact, the moment in vivo gene editing crossed a regulatory threshold the entire CRISPR field has been chasing for a decade. And the implications go straight through to in vivo CAR-T, in vivo cell therapy more broadly, and the strategic positioning of Calibr's switchable sCAR-T platform with AbbVie.
 
 Let me set up what happened. On Monday, April 27th, Intellia announced topline Phase 3 results for lonvoguran ziclumeran — call it lonvo-z — in adults with hereditary angioedema, or HAE. HAE is a rare genetic disorder where patients suffer recurrent, sometimes life-threatening swelling attacks driven by uncontrolled bradykinin production. The current standard of care is chronic prophylaxis — Takhzyro, Berotralstat, Cinryze — plus on-demand acute therapy. Patients dose for life.
 
@@ -28,4 +28,4 @@ The watch items from here. One — Intellia's BLA timeline and any FDA filing re
 
 The bottom line, Travis. The Intellia HAELO win is the proof point the in vivo platform field has been waiting for. It does not threaten Calibr's switchable sCAR-T thesis — if anything, it sharpens it, because it confirms that the in vivo delivery problem is solvable and that the next bottleneck for the field will be control, not delivery. Calibr's switch architecture is built for exactly that bottleneck. The strategic question for AbbVie is no longer whether to lean in on switchable sCAR-T. The question is how fast to move into autoimmune, where the platform's structural advantages are clearest, and where in vivo CAR-T has the weakest competitive answer.
 
-That's your spotlight for Sunday, May 3rd. This is Nigel, signing off.
+That's your spotlight for Sunday, May 3rd. Signing off.

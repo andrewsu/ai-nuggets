@@ -1,4 +1,4 @@
-Hey Travis, it's Nigel, and welcome to today's spotlight on the Calibr-Skaggs Daily Briefing for Tuesday, April 21st, 2026.
+Hey Travis, welcome to today's spotlight on the Calibr-Skaggs Daily Briefing for Tuesday, April 21st, 2026.
 
 Today we're going deep on what might be the definitive end of one of immuno-oncology's biggest bets — the TIGIT hypothesis. Gilead has announced it's loosening its partnership ties with Arcus Biosciences after their TIGIT inhibitor program failed in Phase 3. And this isn't just one company's setback — it may mark the closing of a chapter that consumed billions of dollars and years of industry effort across multiple pharma giants.
 
@@ -26,6 +26,4 @@ Looking at the broader landscape, the TIGIT story is also a cautionary tale abou
 
 For the Calibr pipeline specifically, I'd say this validates the diversified approach you've taken in oncology. Between the switchable CAR-T platform, the STING agonist, the YAP inhibitor for resistant lung cancer, the CDK2 inhibitor for breast cancer, the tri-specific antibody platform, and the ADC programs, you're covering multiple distinct mechanisms of attacking cancer rather than betting on any single immune checkpoint combination strategy. That diversification looks increasingly wise as the checkpoint combination thesis continues to narrow.
 
-Bottom line: the TIGIT dream consumed billions across the industry and delivered very little for patients. But the failure is clarifying. It tells us that the next wave of cancer immunotherapy breakthroughs will come from approaches that change the fundamental immunological equation — not from stacking more checkpoint inhibitors. And several of Calibr's programs, particularly CMR215 and the sCAR-T platform, are positioned right in that sweet spot.
-
-This is Nigel. That's your spotlight for today, Travis. See you tomorrow.
+Bottom line: the TIGIT dream consumed billions across the industry and delivered very little for patients. But the failure is clarifying. It tells us that the next wave of cancer immunotherapy breakthroughs will come from approaches that change the fundamental immunological equation — not from stacking more checkpoint inhibitors. And several of Calibr's programs, particularly CMR215 and the sCAR-T platform, are positioned right in that sweet spot. That's your spotlight for today, Travis. See you tomorrow.

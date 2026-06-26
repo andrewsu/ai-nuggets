@@ -1,7 +1,6 @@
 slug          = "justice-biotech-brief"
 title         = "Justice's Biotech Brief"
 description   = "Daily biotech and pharma briefing for Justice Fleischmann (Rodgers Lab, Calibr at Scripps Research)."
-host          = "Nigel"
 owner         = "Andrew Su <asu@scripps.edu>"
 podcast_slug  = "justice-biotech-brief"
 

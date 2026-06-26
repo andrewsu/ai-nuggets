@@ -23,6 +23,6 @@ https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/calibr-brief
 > `andrewsu/calibr-briefing`. The old feed URL no longer updates — please
 > resubscribe at the URL above.
 
-Curated for Travis Young at Calibr-Skaggs, Scripps Research. Produced by
-Nigel 🦔, an AI assistant. See `PROMPT.md` for the editorial brief and
-`show.toml` for technical configuration.
+Curated for Travis Young at Calibr-Skaggs, Scripps Research. AI-produced.
+See `PROMPT.md` for the editorial brief and `show.toml` for technical
+configuration.

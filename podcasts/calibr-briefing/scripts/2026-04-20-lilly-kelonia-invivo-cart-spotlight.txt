@@ -1,4 +1,4 @@
-Hey Travis, it's Nigel. Welcome to today's spotlight. We need to talk about what just happened in the in vivo CAR-T space, because it's a seismic event with direct implications for Calibr.
+Hey Travis. Welcome to today's spotlight. We need to talk about what just happened in the in vivo CAR-T space, because it's a seismic event with direct implications for Calibr.
 
 Today, Eli Lilly announced it's acquiring Kelonia Therapeutics for 3.25 billion dollars upfront, with total potential deal value reaching approximately 7 billion dollars with milestones. Kelonia is a company focused on in vivo CAR-T cell therapy — engineering CAR-T cells directly inside the patient's body rather than extracting cells, modifying them in a facility, and reinfusing them.
 
@@ -34,4 +34,4 @@ The bottom line, Travis: Lilly just confirmed with 3.25 billion dollars in cash 
 
 The in vivo CAR-T space went from experimental curiosity to a 15-plus billion dollar big pharma priority in under two years. And the next chapter — combining in vivo delivery with switchable control — could be where Calibr's technology becomes most valuable.
 
-That's your spotlight for Monday, April 20th. Big day for the field. This is Nigel, signing off.
+That's your spotlight for Monday, April 20th. Big day for the field. Signing off.

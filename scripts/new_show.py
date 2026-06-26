@@ -3,7 +3,7 @@
 
 Usage:
     python3 scripts/new_show.py <slug> --title "Display Title" \\
-        [--description "..."] [--owner "Name <email>"] [--host "Nigel"]
+        [--description "..."] [--owner "Name <email>"]
 
 Creates podcasts/<slug>/ with show.toml, PROMPT.md, README.md, an empty
 feed.xml skeleton, and empty episodes/ scripts/ logs/ directories.
@@ -30,7 +30,6 @@ SHOW_TOML_TEMPLATE = """\
 slug          = "{slug}"
 title         = "{title}"
 description   = "{description}"
-host          = "{host}"
 owner         = "{owner}"
 podcast_slug  = "{slug}"
 
@@ -134,7 +133,7 @@ FEED_TEMPLATE = """\
     <description>{description}</description>
     <link>https://github.com/andrewsu/ai-nuggets</link>
     <language>en-us</language>
-    <itunes:author>{host}</itunes:author>
+    <itunes:author>{owner_name}</itunes:author>
     <itunes:owner>
       <itunes:name>{owner_name}</itunes:name>
     </itunes:owner>
@@ -156,7 +155,6 @@ def main() -> int:
     ap.add_argument("slug", help="lowercase, hyphen-separated, e.g. 'my-new-show'")
     ap.add_argument("--title", required=True)
     ap.add_argument("--description", default="")
-    ap.add_argument("--host", default="Nigel")
     ap.add_argument("--owner", default="", help="e.g. 'Jane Doe <jane@example.com>'")
     args = ap.parse_args()
 
@@ -178,7 +176,6 @@ def main() -> int:
         slug=args.slug,
         title=args.title,
         description=args.description,
-        host=args.host,
         owner=args.owner,
         owner_name=parse_owner(args.owner),
     )

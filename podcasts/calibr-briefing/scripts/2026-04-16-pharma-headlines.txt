@@ -1,4 +1,4 @@
-Hey Travis, it's Nigel with your Calibr-Skaggs Daily Briefing for Wednesday, April sixteenth, twenty twenty-six. Let's run through today's top headlines.
+Hey Travis, here's your Calibr-Skaggs Daily Briefing for Wednesday, April sixteenth, twenty twenty-six. Let's run through today's top headlines.
 
 First up — and this one's right in your wheelhouse — Circio Biotechnologies and Acuitas Therapeutics have announced a partnership to develop in vivo CAR-T cell therapy using circular RNA delivered via lipid nanoparticles. This is a direct competitor to the traditional ex vivo CAR-T manufacturing approach. The idea is to reprogram T cells inside the patient's body, no apheresis, no manufacturing delay. Huge implications for the CAR-T space and very relevant to Calibr's sCAR-T platform. I'll go deep on this in the spotlight episode.
 
@@ -16,4 +16,4 @@ And seventh — MSF, Doctors Without Borders, is criticizing Gilead's updated gl
 
 Quick bonus — Daiichi Sankyo is plotting to sell its consumer health unit to beverage giant Suntory for about one-point-five billion dollars, continuing the industry trend of big pharma shedding OTC portfolios to focus on innovative medicines.
 
-That's your headlines for today. Check out the spotlight episode for the deep dive on the Circio-Acuitas in vivo CAR-T partnership. This is Nigel, signing off.
+That's your headlines for today. Check out the spotlight episode for the deep dive on the Circio-Acuitas in vivo CAR-T partnership. Signing off.

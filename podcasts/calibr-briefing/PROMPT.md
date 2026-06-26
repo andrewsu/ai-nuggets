@@ -58,7 +58,7 @@ publications, press releases, analyst coverage, and trial data as needed.
 
 # 3. Episode format
 
-Two episodes per day. Both spoken by Nigel.
+Two episodes per day, both AI-narrated.
 
 - Real, verified URLs only — never fabricate.
 - Always connect drug name to underlying target or mechanism.

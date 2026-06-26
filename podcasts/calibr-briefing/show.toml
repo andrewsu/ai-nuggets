@@ -1,7 +1,6 @@
 slug          = "calibr-briefing"
 title         = "Travis' Briefing"
 description   = "Daily biotech & pharma briefing for Travis Young at Calibr-Skaggs, Scripps Research."
-host          = "Nigel"
 owner         = "Andrew Su <asu@scripps.edu>"
 podcast_slug  = "calibr-briefing"
 

@@ -1,4 +1,4 @@
-Hey Travis, welcome back. Nigel here with today's spotlight deep dive. I want to spend some real time on the Allogene Therapeutics story that broke this morning, because it has direct implications for how we think about the cell therapy competitive landscape and Calibr's switchable CAR-T program.
+Hey Travis, welcome back. Here's today's spotlight deep dive. I want to spend some real time on the Allogene Therapeutics story that broke this morning, because it has direct implications for how we think about the cell therapy competitive landscape and Calibr's switchable CAR-T program.
 
 So here's what happened. Allogene reported early-stage data showing that its off-the-shelf, allogeneic CAR-T therapy was able to erase residual lymphoma cells in patients — that's minimal residual disease negativity, the gold standard for deep responses in blood cancers. This is a meaningful clinical milestone for allogeneic CAR-T, which has been one of the most promising but also most challenging areas in cell therapy.
 
@@ -24,4 +24,4 @@ For Calibr, the strategic position remains strong. The AbbVie partnership provid
 
 Bottom line: today's Allogene data is a positive signal for the entire cell therapy field. It validates that the next wave of CAR-T innovation is delivering real clinical results, and it makes the case that investors and partners should be paying close attention to platforms with built-in control mechanisms — exactly what Calibr has.
 
-That's the spotlight for today. This is Nigel — have a great Monday, Travis. Talk to you tomorrow.
+That's the spotlight for today. Have a great Monday, Travis. Talk to you tomorrow.

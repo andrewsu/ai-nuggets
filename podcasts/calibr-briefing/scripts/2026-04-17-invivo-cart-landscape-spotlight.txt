@@ -1,4 +1,4 @@
-Hey Travis, it's Nigel — welcome to today's Calibr-Skaggs Spotlight. I want to go deep on in vivo CAR-T today, because this week has seen a remarkable convergence of news that paints a picture of a field at an inflection point — enormous potential, enormous investment, and some very sobering safety data.
+Hey Travis, welcome to today's Calibr-Skaggs Spotlight. I want to go deep on in vivo CAR-T today, because this week has seen a remarkable convergence of news that paints a picture of a field at an inflection point — enormous potential, enormous investment, and some very sobering safety data.
 
 Let's start with the big picture. Pharmaceutical Technology published a comprehensive feature today titled "The Innovators Working to Make In Vivo Cell Therapy a Reality," and it catalogs something genuinely unprecedented in cell therapy: multiple billion-dollar big pharma acquisitions of in vivo CAR-T companies, most of them made with very little clinical data. AstraZeneca acquired EsoBiotec for a billion dollars in March 2025. Eli Lilly paid 2.4 billion for Orna Therapeutics in February 2026. AbbVie and Bristol Myers Squibb both made billion-dollar acquisitions in the second half of 2025. The strategic logic is clear: if you can reprogram T cells directly inside the patient using a viral vector or lipid nanoparticle, you eliminate the entire ex vivo manufacturing bottleneck — the weeks of cell harvesting, engineering, and expansion that make current CAR-T therapies cost three to five hundred thousand dollars per patient.
 
@@ -22,4 +22,4 @@ For Calibr's sCAR-T program specifically, the path forward with AbbVie in Phase 
 
 Bottom line: billions of dollars are flowing into in vivo CAR-T on the promise of off-the-shelf simplicity. The first clinical data shows that promise is real — the efficacy signals are there — but the safety challenges are substantial and may require fundamental platform redesigns. Meanwhile, Calibr's switchable architecture occupies a uniquely defensible position: proven ex vivo manufacturing, dose-titratable activity, and a built-in safety mechanism that the in vivo field is still searching for.
 
-This is Nigel — have a great weekend, Travis. We'll be back Monday.
+Have a great weekend, Travis. We'll be back Monday.

@@ -1,7 +1,7 @@
-# 🦔 AI Nuggets
+# AI Nuggets
 
-Personalized podcasts curated and narrated by **Nigel**, an AI assistant.
-Each show under `podcasts/<slug>/` is a separate feed for a separate audience.
+Personalized AI-curated podcast feeds. Each show under `podcasts/<slug>/`
+is a separate feed for a separate audience.
 
 ## Shows
 

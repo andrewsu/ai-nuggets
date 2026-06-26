@@ -1,4 +1,4 @@
-Hey Travis, it's Nigel — and welcome to today's Calibr-Skaggs Spotlight for March 30th, 2026. Today I'm doing a deep dive into the rapidly evolving — and increasingly turbulent — world of in vivo CAR-T cell therapy. There's been a flurry of developments in just the past two weeks, and they paint a complex picture that has real implications for Calibr's sCAR-T program.
+Hey Travis, welcome to today's Calibr-Skaggs Spotlight for March 30th, 2026. Today I'm doing a deep dive into the rapidly evolving — and increasingly turbulent — world of in vivo CAR-T cell therapy. There's been a flurry of developments in just the past two weeks, and they paint a complex picture that has real implications for Calibr's sCAR-T program.
 
 Let's start with the headline that's generating the most discussion. A Phase 1 trial of ESO-T01, developed by EsoBiotec, was published in Nature Medicine — and the results are sobering. ESO-T01 uses a lentiviral vector to reprogram a patient's T cells directly in the body, targeting BCMA in relapsed or refractory multiple myeloma. The promise? Skip the weeks-long manufacturing process of traditional CAR-T. The reality? Every single patient — all five of them — experienced grade 3 or higher serious adverse events. Four out of five developed cytokine release syndrome, three of them severe. One patient died, though investigators attributed it to disease progression rather than the treatment. The trial was stopped in 2025.
 
@@ -24,4 +24,4 @@ Looking at the competitive landscape, in vivo CAR-T is clearly the future aspira
 
 The bottom line for Calibr? The in vivo CAR-T field just got a reality check on safety. Companies and partners evaluating next-generation CAR-T approaches will increasingly value controllability — which is exactly what Calibr's switchable platform delivers. The AbbVie partnership positions Calibr at the intersection of two of the hottest trends in the space: next-generation CAR-T engineering and the expansion of CAR-T beyond oncology into autoimmune disease.
 
-That's your spotlight for today, Travis. A lot happening in CAR-T — and Calibr's differentiated position looks more relevant than ever. This is Nigel, signing off.
+That's your spotlight for today, Travis. A lot happening in CAR-T — and Calibr's differentiated position looks more relevant than ever. Signing off.

@@ -1,4 +1,4 @@
-Hey Travis, it's Nigel with your spotlight deep dive for Wednesday, March 25th, 2026. Today we're unpacking the biggest deal of the day: Merck's six point seven billion dollar acquisition of Terns Pharmaceuticals.
+Hey Travis, here's your spotlight deep dive for Wednesday, March 25th, 2026. Today we're unpacking the biggest deal of the day: Merck's six point seven billion dollar acquisition of Terns Pharmaceuticals.
 
 Let's start with what Merck is actually buying. The crown jewel is TERN-701, an investigational treatment for chronic myeloid leukemia, or CML. Terns' stock had already risen six-fold over the past six months, largely driven by the blockbuster potential of this drug and growing speculation that Terns would be an acquisition target. Merck is paying 53 dollars per share in cash, which represents only a 6% premium to yesterday's close — a relatively modest premium, but the stock had already been bid up so aggressively on takeover speculation that Merck didn't need to offer a huge bump.
 
@@ -20,4 +20,4 @@ One more thought on the CML competitive landscape. This acquisition underscores 
 
 Bottom line: this deal is a bellwether. When Merck spends nearly 7 billion dollars on a single oncology asset while simultaneously investing in IBD target discovery, it tells you where pharma's priorities are. Oncology remains the highest-value therapeutic area for M&A, and adjacent areas like autoimmune disease and inflammatory conditions are heating up fast. For a translational research institute like Calibr-Skaggs with programs spanning cancer, autoimmune, and inflammatory disease, the M&A environment has rarely been more favorable for pipeline assets that demonstrate differentiated clinical value.
 
-That's the deep dive for today, Travis. I'm Nigel — see you tomorrow.
+That's the deep dive for today, Travis. See you tomorrow.
