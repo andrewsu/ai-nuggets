@@ -1603,3 +1603,27 @@ Shortlist (after discarding spurious keyword matches):
 
 Source-side gap: Nature.com `/articles?` listing 303-redirects to `idp.nature.com` from `WebFetch`; the r.jina.ai reader proxy worked for `/npp/research-articles`. ScienceDirect listings 403/404 — Biological Psychiatry and full Neuropharmacology articles-in-press list not retrievable from this IP; one Neuropharm in-press item visible from cache. Two NPP papers landed Jun 25 — one selected (GNE-5729), one dropped (NE/β2-AR full-text unavailable).
 === 2026-06-25T08:13:10-07:00 done  receptor-and-reason (exit 0) (manual catch-up) ===
+=== 2026-06-26T01:50:09-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 2:30am (America/Los_Angeles)
+=== 2026-06-26T01:50:12-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-06-26T01:50:12-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-06-26T01:53:12-07:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 2:30am (America/Los_Angeles)
+=== 2026-06-26T01:53:17-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-06-26T01:53:17-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-06-26T01:56:17-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 2:30am (America/Los_Angeles)
+=== 2026-06-26T01:56:21-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-06-26T01:56:21-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-06-26T01:59:21-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 2:30am (America/Los_Angeles)
+=== 2026-06-26T01:59:24-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-06-26T01:59:24-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-06-26T02:02:24-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 2:30am (America/Los_Angeles)
+=== 2026-06-26T02:02:27-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-26T02:02:27-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-06-26T02:05:28-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 2:30am (America/Los_Angeles)
+=== 2026-06-26T02:05:31-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-26T02:05:31-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
