@@ -1968,3 +1968,32 @@ Three artifacts written for the batch-TTS orchestrator to pick up:
 - `…/2026-06-25-deepbd-agentic-variant-prioritization-birth-defects.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders)
 - `…/2026-06-25-deepbd-agentic-variant-prioritization-birth-defects.commit-msg`
 === 2026-06-25T01:10:29-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-06-26T01:00:09-07:00 start biomedical-agentic-ai ===
+Script, rss-item stub, and commit-msg stub are written. SKIP_TTS=1 mode — the orchestrator handles batch TTS, R2 upload, feed insertion, and commit.
+
+---
+
+**Today's pick (2026-06-26 / biomedical-agentic-ai):** scBench-Long — "Verifiable Benchmarking of Long-Horizon Single-Cell Biology" (arXiv 2606.26563, v1 2026-06-25, Workman et al. / LatchBio). 21 evaluations × 17 model-harness pairs × 3 replicates = 1,068 trajectories. Top pair (Claude Opus 4.8 + Claude Code) = 25.4% pass; only 2/21 tasks pass all three replicates; 5/21 have zero passes anywhere. Four named bio-specific failure modes: literature priors masking task-specific evidence, raw abundance mistaken for biological importance, association→mechanism, modality-collapse. Methodology refuses to treat published claims as automatic ground truth — independent reproduction required.
+
+**Candidate funnel**
+
+- bioRxiv (api.biorxiv.org details, 2026-06-24→2026-06-26, full pagination of 313 entries; 16 keyword hits after de-spuriating):
+  - F.A.D.E. Fully Agentic Drug Engine — 10.64898/2026.06.20.733481 — v1 2026-06-25, abstract-only (body not yet rendered <24h post); dropped per pipeline rule
+  - NanoCellAnnotator (ontology-constrained spatial-transcriptomics LLM annotation) — 10.64898/2026.06.21.728965 — clean fit, narrower than scBench-Long
+  - trAIt (LLM species-trait retrieval) — 10.64898/2026.06.19.732660 — niche
+  - CellOS (single-cell foundation model) — 10.64898/2026.06.18.733163 — already featured 2026-06-25 on Receptor & Reason; skipped to avoid cross-show dup
+  - Atlas-scale bulk RNA-seq generative model — 10.64898/2026.06.18.733198 — foundation model not agentic
+  - LLM postprocessing of P300 speller — 10.64898/2026.06.24.734268 — niche
+- arXiv (cache /tmp/ai-nuggets-arxiv-cache.xml, 500 entries, strict agent+biomedical within 2-day window):
+  - **scBench-Long — 2606.26563 — CHOSEN**
+  - Knowledge-augmented Agentic AI for Mental Health Medication Information — 2606.26205
+  - MedGuards multi-agent medical error correction — 2606.25651
+  - Automated Cognitive Scientist closed-loop discovery — 2606.26448
+  - Low-channel EEG agent — 2606.26519
+- PubMed (last 5d, agentic/LLM/KG/ontology AND biomedical, sorted by pub_date): top hits dominated by spurious chemical-agent/therapeutic-agent matches; no displacing candidate
+- ChemRxiv: nothing fresh in window
+- News/product launches: nothing displacing
+- Policy (ARPA-H / NIH / NSF / HHS): no agentic-AI biomedical program announcement in window
+
+scBench-Long wins on (a) frontier-anchoring numbers, (b) the four-failure-mode taxonomy that generalizes, (c) methodological discipline of independent reproduction, (d) direct alignment with the show's agentic-AI + biomedical + ontology axes.
+=== 2026-06-26T01:08:30-07:00 done  biomedical-agentic-ai (exit 0) ===
