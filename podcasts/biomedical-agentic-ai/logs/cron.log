@@ -1997,3 +1997,40 @@ Script, rss-item stub, and commit-msg stub are written. SKIP_TTS=1 mode — the 
 
 scBench-Long wins on (a) frontier-anchoring numbers, (b) the four-failure-mode taxonomy that generalizes, (c) methodological discipline of independent reproduction, (d) direct alignment with the show's agentic-AI + biomedical + ontology axes.
 === 2026-06-26T01:08:30-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-06-27T02:00:11-07:00 start biomedical-agentic-ai ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CcTVXx35yVR4RHVRacAqd
+=== 2026-06-27T02:01:42-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-06-27T02:01:42-07:00 AUP-refusal detected for biomedical-agentic-ai; retrying in 180s ===
+=== 2026-06-27T02:04:42-07:00 start biomedical-agentic-ai (retry 1) ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CcTVzH6XnwpiP1oyL9Lzp
+=== 2026-06-27T02:07:39-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===
+=== 2026-06-27T02:07:39-07:00 AUP-refusal detected for biomedical-agentic-ai; retrying in 180s ===
+=== 2026-06-27T02:10:39-07:00 start biomedical-agentic-ai (retry 2, --model claude-sonnet-4-6) ===
+All three files are written and the RSS XML is valid.
+
+---
+
+**Episode published** (SKIP_TTS mode — TTS will run in the batch job):
+
+- **Script**: `podcasts/biomedical-agentic-ai/scripts/2026-06-27-multi-agent-psychiatric-medication-kg-pharmacovigilance.md` (1,460 words)
+- **RSS stub**: `.rss-item.xml` with `__LENGTH__` / `__DURATION__` placeholders
+- **Commit message stub**: `.commit-msg`
+
+---
+
+**Today's pick**: "Knowledge-augmented Agentic AI for Mental Health Medication Information Seeking" (arXiv 2606.26205, v1 2026-06-24) — a six-agent, three-KG pipeline from CUHK Psychiatry that integrates 466,525 Reddit posts, 60,782 WebMD reviews, and 20 years of FDA FAERS data for nine antidepressants, grounded in ATC-N / ICD-10 / MedDRA vocabularies. Key finding: Reddit and WebMD are concordant with each other (Jaccard 0.905) but both diverge from FDA; for sertraline, community sources flagged adverse events **hundreds of days** before the corresponding FDA receipt date. The episode argues for the source-aware, provenance-preserving architecture as the correct approach for multi-source biomedical data integration — and for the temporal lead-time result as the most scientifically interesting finding with real pharmacovigilance implications.
+
+---
+
+**Candidate funnel — June 25–27, 2026:**
+
+- bioRxiv (60 entries, 2026-06-25 to 2026-06-27): 7 keyword hits; no in-window item displaced the arXiv pick (CellOS posted 2026-06-18, out of window; P300 Speller LLM too narrow)
+- arXiv (500 cached entries): **CHOSEN** — 2606.26205; runners-up: KG-TRACE (2606.26179, AMR + WHO mutation KG, short conference paper), MedGuards (2606.25651), MKG-RAG-Bench (2606.26458, not biomedical-specific enough)
+- PubMed (last 5 days): MARTP multi-agent radiation therapy planning (PMID 42102858, Phys Med Biol) — strong runner-up but more engineering than data integration; ATLAS-Liver (PMID 42348555) explicitly conceptual/unvalidated
+- ChemRxiv: no hits; News/Policy: no agentic-AI announcements in window
+- DeepBD and scBench-Long excluded (both already featured on 2026-06-25 and 2026-06-26)
+=== 2026-06-27T02:19:57-07:00 done  biomedical-agentic-ai (exit 0) (retry 2, --model claude-sonnet-4-6) ===
