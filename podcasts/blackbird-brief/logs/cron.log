@@ -170,3 +170,24 @@ Script written and stubs in place for `2026-06-26-radar-lieber-sign-tracker-d2-b
 
 **Candidate funnel:** 4 in-window bioRxiv hits at JHU/Lieber (Pergola CHOSEN; Farber CHOSEN; Salzberg EviAnn + JHU SoM replicateFest dropped as software), 3 medRxiv JHU items dropped as clinical AI / observational; institutional press 403'd on direct fetch, proxied via Jina with no fresh translational news; no UMB items in window; 6 already-shipped this week excluded.
 === 2026-06-26T01:28:03-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-06-27T02:10:11-07:00 start blackbird-brief ===
+All three stubs in place. RSS XML parses with placeholders `__LENGTH__` and `__DURATION__` in the right slots. SKIP_TTS=1, so the orchestrator (`scripts/publish_pending.py`) will batch the audio on Garibaldi, fill in the placeholders, insert the item into `feed.xml`, and commit.
+
+## Summary
+
+**Episode shipped:** `2026-06-27-radar-hopkins-mkras-vax-mmrp-crc`
+
+- **Script:** `podcasts/blackbird-brief/scripts/2026-06-27-radar-hopkins-mkras-vax-mmrp-crc.md`
+- **RSS stub:** `…-mkras-vax-mmrp-crc.rss-item.xml` with `__LENGTH__` / `__DURATION__` placeholders
+- **Commit-msg stub:** `…-mkras-vax-mmrp-crc.commit-msg`
+
+**Lead:** Wang/Jaffee (Bloomberg-Kimmel + Convergence Institute, Johns Hopkins) in Nature Communications, posted 2026-06-23 — the second readout out of NCT04117087, the metastatic MMR-proficient/MSS colorectal-cancer arm of the pooled six-mutation mKRAS synthetic-long-peptide vaccine + ipi/nivo. Both primary endpoints (safety, immunogenicity within 17 weeks) met; mKRAS-reactive T cells in 8/12 (75%) ex vivo and 12/12 (100%) post-IVS. Framed three reads for Blackbird: (1) the vaccine is licensed to Adventris Pharmaceuticals (Y Combinator-backed Hopkins spinout, Jaffee co-founder/CSO); (2) competitive landscape vs. Elicio's ELI-002 (lymph-node delivery without CPI); (3) direct portfolio read-through to aSKY (Krupnick/UMB) on modality differentiation for KRAS-frame antibody engineering against the now-credible peptide-vaccine standards.
+
+**Tail item:** Danilova/Smith/Cope replicateFest R package (Bloomberg-Kimmel, bioRxiv 2026-06-23) — methodological infrastructure for FEST TCR repertoire analysis; future-watch on Kellie Smith for the next personalized-neoantigen-TCR concept.
+
+**Candidate funnel:**
+- bioRxiv (2026-06-23 to 2026-06-27, pharm + cancer + neuro + bioeng + immunol + genetics + cell, ~150+ scanned): Camilo-Contreras/Simonetti HIV ag-qVOA v2 (shipped 06-24); Danilova/Smith replicateFest (CHOSEN as tail)
+- PubMed (JHU/UMB/Lieber × drug discovery/therapeutic target/mechanism, 30 returned, 23 metadata-fetched): Wang/Jaffee Nat Comm mKRAS-VAX (CHOSEN as lead); other JHU PubMed hits were either already-shipped (DCTPP1, sickle-cell OBM) or non-translational (insect-fungal scent, ABSSSI methods, MDS taxonomy consortium)
+- Sources proxied: hub.jhu.edu and hopkinsmedicine.org (Cloudflare 403, via r.jina.ai); nature.com paper (idp.nature.com auth wall, full text partial via r.jina.ai — abstract + acknowledgements only)
+- Already shipped this week (excluded): 06-21 DCTPP1, 06-22 Wilmer sorafenib, 06-23 epigenetic vaccine + OBM sickle-cell, 06-24 HIV ag-qVOA, 06-25 Lieber trans-eQTL, 06-26 Lieber sign-tracker + JHU LipoGlo
+=== 2026-06-27T02:20:28-07:00 done  blackbird-brief (exit 0) ===
