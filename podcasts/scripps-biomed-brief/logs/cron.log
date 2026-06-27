@@ -1263,3 +1263,31 @@ All four DOIs are confirmed valid. The three files are written. Here's the candi
 
 Today's episode is written. Three files produced under `podcasts/scripps-biomed-brief/scripts/2026-06-26-imuse-fanzor2-finder-parp1-inactive-otdub.*`: the script `.md`, the RSS stub `.rss-item.xml` (with `__LENGTH__` and `__DURATION__` placeholders), and the `.commit-msg`. The orchestrator will handle TTS, R2 upload, feed update, and commit after batch processing.
 === 2026-06-26T06:51:45-07:00 done  scripps-biomed-brief (exit 0) (manual catch-up, sonnet) ===
+=== 2026-06-27T03:00:11-07:00 start scripps-biomed-brief ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CcTaBTnF1HEc4MZoeMPGo
+=== 2026-06-27T03:02:43-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-06-27T03:02:43-07:00 AUP-refusal detected for scripps-biomed-brief; retrying in 180s ===
+=== 2026-06-27T03:05:43-07:00 start scripps-biomed-brief (retry 1) ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CcTabSCQrmi8n1J6btFEn
+=== 2026-06-27T03:08:03-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
+=== 2026-06-27T03:08:03-07:00 AUP-refusal detected for scripps-biomed-brief; retrying in 180s ===
+=== 2026-06-27T03:11:04-07:00 start scripps-biomed-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-27T03:12:40-07:00 done  scripps-biomed-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-06-27T03:12:40-07:00 no usable output for scripps-biomed-brief; retrying in 180s ===
+=== 2026-06-27T03:15:40-07:00 start scripps-biomed-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-27T03:15:45-07:00 done  scripps-biomed-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-06-27T03:15:45-07:00 no usable output for scripps-biomed-brief; retrying in 180s ===
+=== 2026-06-27T03:18:45-07:00 start scripps-biomed-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-27T03:18:48-07:00 done  scripps-biomed-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-27T03:18:48-07:00 no usable output for scripps-biomed-brief; retrying in 180s ===
+=== 2026-06-27T03:21:48-07:00 start scripps-biomed-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-27T03:21:52-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-27T03:21:52-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
