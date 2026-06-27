@@ -1645,3 +1645,40 @@ Sources:
 - [Boehringer-Immunai $15M](https://www.jpost.com/business-and-innovation/article-900538)
 - [Ollin Biosciences $330M Series B](https://www.businesswire.com/news/home/20260623783799/en/)
 === 2026-06-26T01:31:01-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-06-27T02:20:11-07:00 start calibr-briefing ===
+Both scripts and stubs are written. Headlines and spotlight cover the Saturday weekend wrap with the Epicrispr EPI-321 FSHD epigenome-editing muscle-gain readout as the lead and spotlight.
+
+**Candidate funnel (Sat Jun 27 2026 weekend wrap)**
+
+Per-source scan:
+- Fierce Biotech: ~16 items scanned, 5 relevant
+- Fierce Pharma: ~10 scanned, 4 relevant
+- BioPharma Dive: ~6 scanned, 3 relevant
+- STAT News: ~4 scanned, 2 relevant
+- GEN: ~3 scanned, 2 relevant
+- Endpoints: HTTP 403 on homepage from this IP, skipped (read direct article URLs only)
+- Biocentury: not scanned (paywall)
+
+Substantive shortlist (after discarding spurious / already-shipped / pre-recap items):
+- [PICKED — SPOTLIGHT + headline lead] Epicrispr EPI-321 P1/2 FSHD 6-mo interim Fri AM — 3/3 evaluable patients gained lean muscle volume avg ~370 mL after single-dose AAV CRISPRi-style DUX4 silencer; first clinical evidence of on-target phenotype in any epigenome-editing program. https://www.fiercebiotech.com/biotech/epicrispr-gene-silencer-becomes-first-enhance-muscle-form-muscular-dystrophy + https://finance.yahoo.com/healthcare/articles/epicrispr-reports-first-clinical-evidence-120000553.html
+- [PICKED — headline 2] Moderna Science Day Thu unveiling mRNA-6007 first in-vivo CAR-T (LNP-delivered, CD7-targeting CAR) for B-cell-mediated autoimmune basket starting w/ lupus, FIH end-2027. https://www.stocktitan.net/news/MRNA/moderna-science-day-highlights-expanding-potential-of-m-rna-2l5j48yhp52b.html
+- [PICKED — headline 3] Acadia Daybue (trofinetide) positive CHMP opinion on re-examination at June EMA meeting reversing Feb negative; EC decision 67 days. https://www.biopharmadive.com/news/acadia-drug-nod-from-european-regulators/823864/
+- [PICKED — headline 4] Same June CHMP meeting recommended revoking Tavneos (avacopan) marketing authorization in ANCA-vasculitis; FDA adcom now pending US. https://www.fiercepharma.com/pharma/chmp-reverses-marketing-recommendation-amgens-tavneos-fda-hearing-looms
+- [PICKED — headline 5] EC opened formal antitrust probe into Sanofi Fri over alleged disparagement of rival flu vaccine. https://www.fiercepharma.com/pharma/sanofi-subject-antitrust-probe-ec-kicks-formal-proceedings
+- [PICKED — headline 6] Alkermes CEO succession Aug 1 + Blair Jackson alixorexton orexin-receptor agonist plan; BIO 2026 SD wrap AI thread. https://www.biopharmadive.com/news/alkermes-blair-jackson-narcolepsy-drug-orexin-ceo-succession/823893/ + https://www.statnews.com/2026/06/26/bio-2026-san-diego-key-takeaways-status-report-alex-hogan/
+- [NOT PICKED] Moderna in-vivo CAR-T was considered as alternative spotlight but pre-clinical timing (FIH end-2027) made it positioning rather than catalyst; demoted to headline.
+- [NOT PICKED] CARsgen satri-cel solid-tumor CAR-T NMPA approval — June 22, already past peak news cycle.
+- [NOT PICKED] Pfizer-Innovent $10.5B — May 29 deal, only in Fierce Pharma Asia weekly wrap.
+- [NOT PICKED] Biogen ends Apellis programs — minor post-close restructuring.
+- [NOT PICKED] Dr. Reddy's Hyderabad Form 483 — manufacturing-quality story, low strategic value to Calibr/Foresite.
+- [NOT PICKED] iBio AI obesity pivot — too early, light data.
+- [NOT PICKED — already shipped Friday] Merck KGaA-Bio-Techne $11.3B, Ionis Tryngolza expansion, Lilly-Absci hair loss, Bionyra launch.
+
+Files written (SKIP_TTS mode — orchestrator handles batch TTS + commit):
+- `podcasts/calibr-briefing/scripts/2026-06-27-pharma-headlines.txt`
+- `podcasts/calibr-briefing/scripts/2026-06-27-pharma-headlines.rss-item.xml`
+- `podcasts/calibr-briefing/scripts/2026-06-27-pharma-headlines.commit-msg`
+- `podcasts/calibr-briefing/scripts/2026-06-27-epicrispr-fshd-epigenome-spotlight.txt`
+- `podcasts/calibr-briefing/scripts/2026-06-27-epicrispr-fshd-epigenome-spotlight.rss-item.xml`
+- `podcasts/calibr-briefing/scripts/2026-06-27-epicrispr-fshd-epigenome-spotlight.commit-msg`
+=== 2026-06-27T02:33:52-07:00 done  calibr-briefing (exit 0) ===
