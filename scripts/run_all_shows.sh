@@ -27,6 +27,12 @@
 #                          at the end
 #   PHASE2_TIMEOUT_SECS=N  outer cap on `ssh garibaldi sbatch --wait`
 #                          (default 3600 = 60 min)
+#   MAX_RESET_WAIT_SECS=N  on a session-limit hit, the runner parses the
+#                          reset time from the CLI's error message and
+#                          sleeps until then (+60s buffer). If the reset is
+#                          further than this many seconds away it falls
+#                          back to the standard 180s retry sleep (default
+#                          3600 = 60 min).
 #
 # Add a new show by creating podcasts/<slug>/PROMPT.md — no edit here
 # needed.
@@ -38,6 +44,7 @@ CLAUDE=/home/asu/.local/bin/claude
 STAGGER_SECONDS=${STAGGER_SECONDS:-600}
 SHOWS_LIMIT=${SHOWS_LIMIT:-0}
 PHASE2_TIMEOUT_SECS=${PHASE2_TIMEOUT_SECS:-3600}
+MAX_RESET_WAIT_SECS=${MAX_RESET_WAIT_SECS:-3600}
 LEGACY_TTS=${LEGACY_TTS:-0}
 
 GARIBALDI_HOST=garibaldi.scripps.edu
@@ -83,6 +90,38 @@ if [ -z "$(find "$ARXIV_CACHE" -newermt "$(date +%F)" 2>/dev/null)" ]; then
     || rm -f "$ARXIV_CACHE.tmp"
 fi
 
+# Sleep until the wallclock time named in a session-limit CLI message
+# (e.g. "resets 2:30am") with a 60s buffer, capped at MAX_RESET_WAIT_SECS.
+# Falls back to a 180s sleep if the reset can't be parsed or is too far
+# out — that mirrors the legacy behaviour so a parse miss never blocks
+# the pipeline indefinitely.
+sleep_until_reset() {
+  local out_file="$1" log="$2"
+  local reset_str target_epoch now_epoch sleep_secs
+  reset_str=$(grep -oE 'session limit · resets [0-9]{1,2}(:[0-9]{2})?(am|pm)' "$out_file" \
+                | head -1 | sed 's/.*resets //')
+  if [ -z "$reset_str" ]; then
+    echo "=== $(date -Iseconds) session-limit detected but no reset time parsed; sleeping 180s ===" | tee -a "$log"
+    sleep 180; return
+  fi
+  target_epoch=$(date -d "$reset_str today" +%s 2>/dev/null) || target_epoch=""
+  if [ -z "$target_epoch" ]; then
+    echo "=== $(date -Iseconds) couldn't parse reset '$reset_str'; sleeping 180s ===" | tee -a "$log"
+    sleep 180; return
+  fi
+  now_epoch=$(date +%s)
+  if [ "$target_epoch" -le "$now_epoch" ]; then
+    target_epoch=$((target_epoch + 86400))
+  fi
+  sleep_secs=$((target_epoch - now_epoch + 60))
+  if [ "$sleep_secs" -gt "$MAX_RESET_WAIT_SECS" ]; then
+    echo "=== $(date -Iseconds) session-limit reset at $reset_str is ${sleep_secs}s away (>${MAX_RESET_WAIT_SECS}s cap); sleeping 180s ===" | tee -a "$log"
+    sleep 180; return
+  fi
+  echo "=== $(date -Iseconds) session-limit hit; sleeping ${sleep_secs}s until $reset_str (+60s buffer) ===" | tee -a "$log"
+  sleep "$sleep_secs"
+}
+
 # AUP-retry / model-ladder wrapper. Returns when:
 #  - Claude exits 0 AND an mp3 was produced (legacy mode) OR a script
 #    stub set was produced (SKIP_TTS mode); or
@@ -110,6 +149,12 @@ run_show() {
         | "$CLAUDE" -p --permission-mode auto $model_arg
       echo "=== $(date -Iseconds) done  $slug (exit $?)$tag ==="
     } 2>&1 | tee -a "$log" > "$out"
+    if [ "$attempt" -lt 6 ] && grep -q "session limit · resets" "$out"; then
+      echo "=== $(date -Iseconds) session-limit detected for $slug; computing reset-aware sleep ===" | tee -a "$log"
+      sleep_until_reset "$out" "$log"
+      rm -f "$out"
+      continue
+    fi
     if [ "$attempt" -lt 6 ] && \
        grep -q "Claude Code is unable to respond to this request, which appears to violate our Usage Policy" "$out"; then
       echo "=== $(date -Iseconds) AUP-refusal detected for $slug; retrying in 180s ===" | tee -a "$log"
