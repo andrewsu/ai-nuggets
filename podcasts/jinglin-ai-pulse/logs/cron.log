@@ -96,3 +96,13 @@ Long-form podcasts (last 14d):
 
 **Source-level caveats:** X.com direct fetches returned 402 (auth wall); Axios Pro 403. Convergence claims for Wan-Streamer/iLLaDA grounded in indexed tweet snippets + HF upvote rankings + secondary press, not exhaustive reply-tree scrape. Zefan_Cai direct Chinese-language signal not surfacing via Google index — flagged as a gap, not fabricated. Three primary arXiv papers (Wan-Streamer, iLLaDA, Zitnik) verified via direct WebFetch of arXiv abstract pages; funding stories verified via direct article fetch.
 === 2026-06-26T01:43:59-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-06-27T02:30:11-07:00 start jinglin-ai-pulse ===
+Episode written. Three files in `podcasts/jinglin-ai-pulse/scripts/`: the `.md` script (2,807 spoken words, ~17 min), the `.rss-item.xml` stub with placeholder length/duration, and the `.commit-msg` stub. `SKIP_TTS=1` is set, so I'm leaving TTS, R2 publish, feed insertion, and the commit to `publish_pending.py`.
+
+**Today's pull-through — "the substrate is the unit of progress":**
+
+- **Twitter Pulse:** the on-policy distillation zeitgeist. V-Zero (Jun 24, Sichuan+Peking), OPID (Jun 25, Beijing), DanceOPD (Jun 26, ByteDance Seed) — three OPD papers in three days across visual reasoning / agent RL / generative image. Framed against Qwen's *Verification Horizon* (Jun 26, HF #6) and Xipeng Qiu's *In-Context World Modeling for Robotic Control* (Jun 25, HF #2).
+- **Money Moves:** Jun 25 agent-environment funding day (~$385M). General Intuition $320M @ $2.3B (Khosla, Bezos, Schmidt) — "the gym" trained on 2B labeled gameplay clips; Patronus AI $50M Series B — digital world models for agent stress-tests; Netris $15M Series A from a16z — neocloud network automation under the stack.
+- **Podcast Deep Cut:** Anjney Midha on Latent Space, *The Professor of Outputmaxxing* (Jun 18, ~59 min). AMP as an Independent System Operator for frontier-lab compute; Google's 95% node-utilization standard vs xAI's sub-10% MFU; "make FLOPs flow like megawatts." The June 22 Gray Swan episode I'd initially planned was already used as the Jun 24 deep cut — swapped before drafting the spoken portion.
+- **Wrap:** the gap to watch is the absence of an AMP-style ISO for biological-foundation-model compute.
+=== 2026-06-27T02:44:23-07:00 done  jinglin-ai-pulse (exit 0) ===
