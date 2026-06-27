@@ -1291,3 +1291,40 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-06-27T03:21:52-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-06-27T03:21:52-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-06-27T07:55:58-07:00 start scripps-biomed-brief (manual catch-up, --model claude-sonnet-4-6) ===
+All files are in place. The script is 848 words total including headings and show notes; the spoken body alone is ~710 words.
+
+---
+
+**Episode published:** `2026-06-27-elips-mac1-aencs-spatial-pharma`
+
+Three stub files written alongside the script; `publish_pending.py` will fill `__LENGTH__` / `__DURATION__` and commit after batch TTS.
+
+---
+
+**Candidate funnel — 2026-06-27**
+
+**Sources scanned:**
+- bioRxiv biochemistry (2026-06-25 → 27): 20 items, ~6 passed relevance
+- bioRxiv pharmacology (2026-06-25 → 27): 8 items, ~4 passed relevance
+- bioRxiv bioengineering (2026-06-25 → 27): 17 items, ~6 passed relevance
+- bioRxiv cancer biology (2026-06-25 → 27): 0 results returned
+- bioRxiv chemical biology: category not supported by API (validation error)
+- Web search (Fierce Biotech, STAT News, Nature Chemical Biology): ~10 items, 0 passed recency + quality bar for today
+
+**Substantive shortlist (post-spurious-match filter):**
+
+- High-Throughput Screening — Tau–LRP1 Interaction (10.64898/2026.06.24.733881) — excluded: covered June 25
+- OtDUB inhibitors (10.64898/2026.06.25.734012) — excluded: covered June 26
+- PARP1 inactive chromatin mode (10.64898/2026.06.24.734344) — excluded: covered June 26
+- Cardiolipin modulation of MmpL3 (10.64898/2026.06.25.734600) — TB drug target, abstract-only, passed but below cutoff
+- DARPin targeting EGFR / ovulation (10.64898/2026.06.22.732379) — passed but not selected
+- TLR3 nanoparticle cancer immunotherapy (10.64898/2026.06.23.733291) — passed but not selected
+- Molecular glue "broadening" review (Nature Chemical Biology) — outside 48h window, excluded
+- **GS-441524 → KP-S54 Mac1 inhibitors (10.64898/2026.06.24.734322)** — SELECTED ✓
+- **ELiPS AAV promoter platform (10.64898/2026.06.25.734611)** — SELECTED ✓
+- **AENCS glycan shield → antibody anchor (10.64898/2026.06.25.734658)** — SELECTED ✓
+- **Spatial pharmacology CyCIF-MALDI (10.64898/2026.06.25.734296)** — SELECTED ✓
+
+**Fetch notes:** All four selected papers are v1 preprints posted June 25–26; jina and direct PDF (403 Forbidden) both returned abstract-only — bioRxiv body HTML not yet rendered for any of the four. Noted in-script with a blanket abstract-grounded caveat in the introduction, per show convention.
+=== 2026-06-27T08:06:35-07:00 done  scripps-biomed-brief (exit 0) (manual catch-up, sonnet) ===
