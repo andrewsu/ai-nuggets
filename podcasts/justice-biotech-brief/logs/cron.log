@@ -551,3 +551,36 @@ Substantive shortlist (preprints aligned with Justice's interest pillars):
 ### Why mRNA-2808
 The preprint shortlist is all genuinely-on-topic but secondary-evidence work; Moderna Science Day is the only data-bearing disclosure in the window that lands directly on Justice's primary interest in trispecific T-cell engagers, and the architectural intuition (mRNA-encoded TCE cocktail vs. single-molecule protein trispecific) is a take with material implications for the AbCellera/Jazz, Janux, and protein-trispecific design space the show has been tracking. The encoded-in-vivo-translation modality is also the most consequential new clinical TCE format to surface this year.
 === 2026-06-26T06:51:00-07:00 done  justice-biotech-brief (exit 0) (manual catch-up) ===
+=== 2026-06-27T02:40:11-07:00 start justice-biotech-brief ===
+Today's episode for `justice-biotech-brief`:
+
+**Pick:** Padcev + Keytruda — EC approves perioperative Nectin-4 ADC + PD-1 in cisplatin-ineligible muscle-invasive bladder cancer (June 24, 2026). First PD-1 inhibitor + ADC regimen ever authorized in a curative-intent setting. KEYNOTE-905 / EV-303 (n=595): pCR 57.1% vs 8.6%, EFS HR 0.40, OS HR 0.50.
+
+**Files written** (SKIP_TTS stubs — orchestrator will handle TTS, R2, feed insert, commit):
+- `2026-06-27-padcev-keytruda-perioperative-mibc-eu-approval.md`
+- `2026-06-27-padcev-keytruda-perioperative-mibc-eu-approval.rss-item.xml`
+- `2026-06-27-padcev-keytruda-perioperative-mibc-eu-approval.commit-msg`
+
+**Candidate funnel:**
+
+- **bioRxiv + medRxiv (2026-06-25 → 2026-06-27)** — 398 papers paginated (115 unique on bioRxiv 06-26/06-27, plus medRxiv); 9 keyword hits after filter; 5 spurious matches discarded ("JAK" in Guillain-Barré paper, "TCE" in auditory neuroscience paper, "CD3" in CEACAM/CD36 paper, "ADC" in MR spectroscopy paper, "ADC" in pertussis paper). Substantive shortlist:
+  - COMPASS pan-cancer ICI foundation model — medRxiv v4 update 2026-06-25, Zitnik lab Harvard (v1 was May 2025; v4 a minor revision, not a fresh story)
+  - H&E ccRCC ICI predictor — bioRxiv v1 2026-06-25, UTSW + Roche/Genentech (Perny et al.); abstract-only, full body not rendered
+  - Brepocitinib TYK2/JAK1 in dermatomyositis — medRxiv v1 2026-06-26, Mass General Brigham (Mangold et al.); n=5 pilot supporting NEJM/VALOR Phase 3; abstract-only
+  - TLR3 agonist nanoparticle for cancer immunotherapy — bioRxiv v1 2026-06-25, Hammond lab MIT (Gomerdinger et al.); mouse-only
+- **News/press (Fierce Biotech, Fierce Pharma, BioPharma Dive, STAT, Endpoints) — last 1–2 days:**
+  - Padcev + Keytruda perioperative MIBC EU approval (June 24, 2026) — Merck/Astellas/Pfizer press releases — **CHOSEN**
+  - Moderna in vivo CAR-T mRNA-6007 announcement (June 26) — already covered in yesterday's episode (mRNA-2808 Science Day)
+  - Biogen ends Apellis programs (June 26) — out of scope
+  - iBio AI-fueled obesity pivot (June 26) — out of scope
+  - Epicrispr FSHD gene silencer (June 26) — covered by calibr-briefing today
+  - CHMP reverses Tavneos endorsement (June 26) — autoimmune-adjacent but a regulatory setback story without much mechanism payoff
+  - Endpoints.com / Fierce Biotech homepages partially behind HTTP 403 from this IP — used StatNews + Fierce Pharma + WebSearch for coverage
+- **Funder pages (ARPA-H, NIH, NSF):** ARPA-H last news 2026-06-23 (no items in window). NIH press 403'd via WebFetch — no relevant new programs visible via search. Nothing in window.
+
+**Why this pick beat the others:** the EV-303 readout is the first regulatory data set authorizing an ADC + PD-1 inhibitor in a curative-intent perioperative setting — a 48-percentage-point pCR delta and 50% OS reduction. It sits at the exact intersection of Justice's ADC and immunotherapy interests, and resets the proof point every other ADC + checkpoint combination program (datopotamab deruxtecan, sacituzumab govitecan, HER3 D-X-d, CEACAM5, Claudin-18.2) will be measured against when moving into earlier lines.
+
+Sources:
+- [Merck press release — EC approval Keytruda+Padcev perioperative MIBC](https://www.merck.com/news/european-commission-approves-keytruda-pembrolizumab-plus-padcev-enfortumab-vedotin-ejfv-as-first-pd-1-inhibitor-plus-antibody-drug-conjugate-regimen-for-adults-with-cisplatin-ineligibl/)
+- [Astellas newsroom — EC approval](https://newsroom.astellas.com/2026-06-24-european-commission-approves-padcev-enfortumab-vedotin-in-combination-with-keytruda-pembrolizumab-as-the-first-and-only-approved-perioperative-treatment-option-for-cisplatin-ineligible-patients-with-resectable-muscle-invasive-bladder-cancer)
+=== 2026-06-27T02:52:10-07:00 done  justice-biotech-brief (exit 0) ===
