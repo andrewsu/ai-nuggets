@@ -106,3 +106,44 @@ Episode written. Three files in `podcasts/jinglin-ai-pulse/scripts/`: the `.md` 
 - **Podcast Deep Cut:** Anjney Midha on Latent Space, *The Professor of Outputmaxxing* (Jun 18, ~59 min). AMP as an Independent System Operator for frontier-lab compute; Google's 95% node-utilization standard vs xAI's sub-10% MFU; "make FLOPs flow like megawatts." The June 22 Gray Swan episode I'd initially planned was already used as the Jun 24 deep cut — swapped before drafting the spoken portion.
 - **Wrap:** the gap to watch is the absence of an AMP-style ISO for biological-foundation-model compute.
 === 2026-06-27T02:44:23-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-06-28T02:30:12-07:00 start jinglin-ai-pulse ===
+Done. Today's episode is written and the SKIP_TTS stubs are in place. The orchestrator will batch TTS and commit.
+
+**Episode**: `2026-06-28-jumper-to-anthropic-and-the-government-gates`
+**Files written**:
+- `podcasts/jinglin-ai-pulse/scripts/2026-06-28-jumper-to-anthropic-and-the-government-gates.md` (script, 2347 spoken words → ~15-17 min)
+- `podcasts/jinglin-ai-pulse/scripts/2026-06-28-jumper-to-anthropic-and-the-government-gates.rss-item.xml` (RSS stub with `__LENGTH__` / `__DURATION__` placeholders, parses cleanly)
+- `podcasts/jinglin-ai-pulse/scripts/2026-06-28-jumper-to-anthropic-and-the-government-gates.commit-msg`
+
+**Thread of the day**: The week that just closed was the most consequential week in AI talent and policy in 2026. The single piece of news inside it that most directly changes Ollie's field — biomedical AI — is that John Jumper, AlphaFold co-creator and 2024 Nobel laureate, left Google DeepMind for Anthropic on June 19.
+
+**Structure**:
+1. **Twitter Pulse** (4 threads) — Jumper → Anthropic (capstone of an 8-month Anthropic AI-for-science buildout: Allen Institute + HHMI, $400M Coefficient Bio, Karpathy, Jumper); DeepMind brain drain (4 senior departures in 6 days, Alphabet -$269B market cap, Google's ~14% Anthropic stake catches partial upside from its own talent loss); Anthropic vs Alibaba (25k fake accounts / 28.8M Claude exchanges / Commerce export controls on Mythos+Fable within 48h); GPT-5.6 Sol/Terra/Luna government-gated release to ~20 vetted orgs under Trump's June 2 EO.
+2. **Money Moves** — reverse move ($269B Alphabet on 4 people); forward bio Money Moves (NewLimit $435M Series C; SonoThera $125M Series B); $452B hyperscaler capex frame.
+3. **Podcast Deep Cut** — Dean Ball on Cognitive Revolution (June 20, ~2h39m) announcing OpenAI frontier-policy team — frontier labs as new merchant-bank-style power centers, alarm at US government monopolization of frontier AI authority, AI Action Plan 30-40% implemented, SK Telecom/SK Hynix complication.
+4. **Wrap** — watch for Anthropic's rumored livestreamed AI-for-science launch event tying Allen Institute + HHMI + Coefficient Bio + science division; Jumper-on-stage is the strongest possible bio-AI move.
+
+**Candidate funnel**:
+
+Twitter/X discourse (last 48-72h) — scanned ~30 stories via WebSearch across Hacker News, AI-news aggregators, frontier-lab announcement coverage:
+- Jumper → Anthropic (CHOSEN, June 19 X announcement)
+- DeepMind brain drain Shazeer/Adler/Pritzel (CHOSEN, June 18-24)
+- Anthropic vs Alibaba 25k fake-account distillation (CHOSEN, letter June 24)
+- GPT-5.6 Sol/Terra/Luna government-gated (CHOSEN, June 26)
+- Runners-up: trending HF papers (Mem0, Memanto, JetSpec, MemGUI-Agent, FastContext, Cosmos 3 — incremental vs. prior days), Matt Shumer Claude Code mobile thread (off-thesis), Andreessen recirculated prompt threads (not freshly substantive)
+
+Money/business (last 7d):
+- Alphabet -$269B market-cap loss (CHOSEN as reverse Money Move)
+- NewLimit $435M Series C (CHOSEN bio)
+- SonoThera $125M Series B (CHOSEN bio)
+- $452B hyperscaler capex frame (CHOSEN)
+- Dropped: SpaceX/Cursor $60B (June 16, outside 7d); Coefficient Bio $400M (April 3, used as Jumper context only); Assort Health $120M / Taktile $110M / etc. (covered in prior days' episodes)
+
+Podcasts (last 14d):
+- Cognitive Revolution Dean Ball "Joining OpenAI / New Power Centers" (CHOSEN, June 20)
+- Runners-up already used: Dwarkesh "Data Black Hole" (June 19, used June 25); Joseph Krause "Self-Driving Lab" (June 17, used June 26); Anjney Midha "Outputmaxxing" (June 18, used June 27); Latent Space "Red-Teaming after Mythos" (June 22, used June 24); Matei Zaharia + Reynold Xin "Why the Frontier Ecosystem must be Open" (June 24, used June 25)
+- WhynotTV (Tairan He, primary per PROMPT.md): latest indexed episode is January 17 / Hu Yuanming-Meshy AI — no fresh episode in 14d window, dropped (consistent with prior days)
+- @Zefan_Cai direct signal: WebSearch returned profile + GitHub but no fresh 48h tweets surfaced via indexed search — flagged as gap, not as fabricated convergence (consistent pattern across the week)
+
+No commit, no TTS, no R2 publish, no feed.xml edit — `SKIP_TTS=1` is set so the orchestrator (`scripts/publish_pending.py`) will handle all of that after batch TTS finishes on Garibaldi.
+=== 2026-06-28T02:43:35-07:00 done  jinglin-ai-pulse (exit 0) ===
