@@ -584,3 +584,32 @@ Sources:
 - [Merck press release — EC approval Keytruda+Padcev perioperative MIBC](https://www.merck.com/news/european-commission-approves-keytruda-pembrolizumab-plus-padcev-enfortumab-vedotin-ejfv-as-first-pd-1-inhibitor-plus-antibody-drug-conjugate-regimen-for-adults-with-cisplatin-ineligibl/)
 - [Astellas newsroom — EC approval](https://newsroom.astellas.com/2026-06-24-european-commission-approves-padcev-enfortumab-vedotin-in-combination-with-keytruda-pembrolizumab-as-the-first-and-only-approved-perioperative-treatment-option-for-cisplatin-ineligible-patients-with-resectable-muscle-invasive-bladder-cancer)
 === 2026-06-27T02:52:10-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-06-28T02:40:12-07:00 start justice-biotech-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-28T02:50:37-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-06-28T02:50:37-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-06-28T02:50:37-07:00 session-limit reset at 5am is 7823s away (>3600s cap); sleeping 180s ===
+=== 2026-06-28T02:53:37-07:00 start justice-biotech-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-28T02:53:40-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-06-28T02:53:40-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-06-28T02:53:40-07:00 session-limit reset at 5am is 7640s away (>3600s cap); sleeping 180s ===
+=== 2026-06-28T02:56:40-07:00 start justice-biotech-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-28T02:56:44-07:00 done  justice-biotech-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-06-28T02:56:44-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-06-28T02:56:44-07:00 session-limit reset at 5am is 7456s away (>3600s cap); sleeping 180s ===
+=== 2026-06-28T02:59:44-07:00 start justice-biotech-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-28T02:59:47-07:00 done  justice-biotech-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-06-28T02:59:47-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-06-28T02:59:47-07:00 session-limit reset at 5am is 7273s away (>3600s cap); sleeping 180s ===
+=== 2026-06-28T03:02:47-07:00 start justice-biotech-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-28T03:02:51-07:00 done  justice-biotech-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-28T03:02:51-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-06-28T03:02:51-07:00 session-limit reset at 5am is 7089s away (>3600s cap); sleeping 180s ===
+=== 2026-06-28T03:05:51-07:00 start justice-biotech-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-28T03:05:54-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-28T03:05:54-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
