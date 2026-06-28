@@ -191,3 +191,34 @@ All three stubs in place. RSS XML parses with placeholders `__LENGTH__` and `__D
 - Sources proxied: hub.jhu.edu and hopkinsmedicine.org (Cloudflare 403, via r.jina.ai); nature.com paper (idp.nature.com auth wall, full text partial via r.jina.ai — abstract + acknowledgements only)
 - Already shipped this week (excluded): 06-21 DCTPP1, 06-22 Wilmer sorafenib, 06-23 epigenetic vaccine + OBM sickle-cell, 06-24 HIV ag-qVOA, 06-25 Lieber trans-eQTL, 06-26 Lieber sign-tracker + JHU LipoGlo
 === 2026-06-27T02:20:28-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-06-28T02:10:12-07:00 start blackbird-brief ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CcVQFMRxNotiEFtu86VxC
+=== 2026-06-28T02:13:35-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-06-28T02:13:35-07:00 AUP-refusal detected for blackbird-brief; retrying in 180s ===
+=== 2026-06-28T02:16:35-07:00 start blackbird-brief (retry 1) ===
+`SKIP_TTS=1` is set, so per PIPELINE.md I'm done — no TTS, no R2 publish, no feed edit, no commit. The orchestrator will batch TTS on Garibaldi and run `publish_pending.py` to insert items into feed.xml and commit both episodes in one go.
+
+## Summary — Sunday 2026-06-28 (two episodes, since Portfolio Watch is weekly on Sundays)
+
+**Sourcing Radar — `2026-06-28-radar-lieber-mpfc-lc-attention-circuit`**
+- **Lead:** Rehg/Olivares/Martinowich/Carr/Miranda-Barrientos (Lieber Institute + JHU), *Neuropsychopharmacology* 2026-06-26. Selective chemogenetic activation of mPFC→LC projector neurons in the rodent continuous performance test improves attention via discrimination (d′ gain) through a closed-loop NE-amplification microcircuit, framed by the authors as a platform for "targeted therapies for attentional deficits across neuropsychiatric disorders." Third Lieber infrastructure asset in three weeks (after Pergola trans-TWAS Thursday and sign-tracker fMRI Friday) — argues for a platform-layer Lieber-Blackbird relationship beyond the single-asset GPR52 deal, plus a complementary non-dopaminergic cognitive-symptom angle.
+- **Second pick:** Segars/Borahay/Elisseeff (JHU Reproductive Sciences + TTEC), *Sci Reports* 2026-06-26 — Src kinase + β-catenin as the regulatory nodes of a matrix-stiffness-driven senescence-fibrosis axis in uterine fibroid cells; JHTV-routed courtesy diligence on the broader Borahay program in a market with no FDA-approved disease-modifying agent.
+
+**Portfolio Watch — `2026-06-28-portfolio-watch`**
+- Lead: **Sangamo Chapter 11 + Lilly stalking-horse on the AAV capsid/ZFN/MINT platforms + ST-506 prion** (06-23) — bidirectional read on Aletira: Lilly stacking AAV capabilities adjacent to Akouos validates the cell-type-selectivity premise, but Lilly also inherits the capsid-engineering arsenal that is the alternative path SELEXON must differentiate against. Action for Geoff Lynn.
+- **AbbVie acquires Apogee for $10.9B** (06-22) — anchors immunology exit comps for the Slusher GCPII IBD program; 3-year 35x exit on a clinical-stage atopic-derm biotech.
+- **Remix Therapeutics × Passage Bio reverse merger + $100M PIPE** (06-24) — validates the RNA-modulating small-molecule category (tailwind for Blackbird's translation-activator platform) and is the second AAV-gene-therapy restructuring in two weeks, with positioning implications for Aletira.
+- Macro framings: ~$870M raised across five mechanism-first deals in one week (capital-is-back signal); the Lilly pattern (Akouos + Verve + 4E + Sangamo) makes Lilly BD beyond the Akouos contact an actionable item for Eddie.
+
+**Files staged (6 total):**
+- `podcasts/blackbird-brief/scripts/2026-06-28-radar-lieber-mpfc-lc-attention-circuit.md` + `.rss-item.xml` + `.commit-msg`
+- `podcasts/blackbird-brief/scripts/2026-06-28-portfolio-watch.md` + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs validated as parseable XML with `__LENGTH__` / `__DURATION__` placeholders intact for the orchestrator.
+
+**Candidate funnel:**
+- **Sourcing Radar (2026-06-25 to 2026-06-28):** PubMed JHU/UMB/Lieber affiliation × therapeutic/translational filter — 17 + 20 returned, 25 metadata-fetched; bioRxiv pharm/cancer/neuro/bioeng/immunol categories ~80 in-window, no JHU-anchored items beyond PubMed catch; cancer biology 0 hits in window; Lieber-specific PubMed search returns 1 in-window paper (CHOSEN as lead). Other JHU candidates considered and dropped: Stanford-led leukemia lineage-switch review (Leukemia, JHU peripheral co-author), MD Anderson-led BCL2 BRAFi-MEKi melanoma resistance (Nat Comm, JHU Bloomberg School middle author Rebecca only), Ulm-led NEK1 missense ALS (Acta Neuropathol Commun, JHU peripheral), JHU All Children's MEIS2 small-molecule breast cancer (MDPI Pharmaceuticals, lower-tier), Minnesota-led MMR-deficient prostate cancer case report (Cell Rep Med, JHU supporting), NIA-led GDF15 dementia biomarker (Sci Adv, JHU contributors), JHU Wilmer AMD drug-delivery review. Already-shipped this week excluded: 06-21 DCTPP1, 06-22 Wilmer sorafenib AMD, 06-23 epigenetic GVAX sarcoma + OBM sickle cell, 06-24 HIV ag-qVOA, 06-25 Lieber trans-eQTL, 06-26 Lieber sign-tracker + JHU LipoGlo, 06-27 Hopkins mKRAS-VAX + replicateFest. Source failures/proxies: nature.com (idp.nature.com auth wall, abstract used); hub.jhu.edu and hopkinsmedicine.org (Cloudflare 403, r.jina.ai mirror used).
+- **Portfolio Watch (2026-06-21 to 2026-06-28):** Industry press (Fierce, Endpoints, STAT, BioPharma Dive, GEN, BioBuzz, BusinessWire/GlobeNewswire/PRN) + JHTV/Hopkins Hub/Lieber/UM Ventures press scanned; targeted searches on Aletira, aSKY, Adventris, GPR52, KarXT, Cobenfy, emraclidine, Decibel, Akouos, Sensorion, Elicio ELI-002, Nuvalent, Camp4, Krupnick, Lieber, Slusher. No source failures. No direct portfolio-company press in window. Already-covered in 2026-06-21 Portfolio Watch and excluded: JHU LSRI $80M/yr, GSK/Nuvalent, Neumora navacaprant, Lilly/4E, Incyte/Vega. Out-of-window dropped: JHTV Celebration of Innovation in Medicine + Slusher Dean's Distinguished Faculty Innovator Award (2026-05-05 recap). Tail candidates considered and skipped from the script for tightness: Boundless/Serapha $230M PIPE (rolled into capital-is-back macro), Ollin $330M (macro), RQ Bio $115M (macro), Lycia $75M (macro), Nura Bio $73.8M (macro), Maryland delegation at BIO 2026 in Boston 06-22 to 06-25 (color piece).
+=== 2026-06-28T02:34:43-07:00 done  blackbird-brief (exit 0) (retry 1) ===
