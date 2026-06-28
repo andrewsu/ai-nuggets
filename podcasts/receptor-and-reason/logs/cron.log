@@ -1728,3 +1728,40 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-06-28T03:05:37-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-06-28T03:05:37-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-06-28T06:40:02-07:00 start receptor-and-reason (manual catch-up) ===
+All artifacts in place. SKIP_TTS=1 means the orchestrator will handle TTS, R2 publish, feed update, and commit. Below is the audit log.
+
+## Receptor & Reason 2026-06-28 — Episode 46
+
+Script: `podcasts/receptor-and-reason/scripts/2026-06-28-receptor-and-reason.md`
+RSS stub: `2026-06-28-receptor-and-reason.rss-item.xml` (placeholders for length/duration)
+Commit msg stub: `2026-06-28-receptor-and-reason.commit-msg`
+Ledger: appended (now 46 lines)
+
+## Candidate funnel
+
+**Sources surveyed:**
+- bioRxiv 2026-06-21..28 details API, 35 pages cursored, 1,017 unique items
+- bioRxiv Tier 1 categories (neuroscience, pharmacology+toxicology, behavioral): 301 items
+- bioRxiv Tier 2 (bioinformatics, systems biology): 132 items
+- arXiv daily cache `/tmp/ai-nuggets-arxiv-cache.xml` (q-bio, cs.AI/CL/MA): 173 agentic-bio candidates in window
+- Tier 3 chemRxiv/comp-pharm/industry: scanned headlines via cached metadata; no fresh standout
+
+**Substantive shortlist** (after dedup against 454 shipped keys):
+- [PICK] Psilocybin vs escitalopram perturbation-induced brain reconfiguration (MDD) — biorxiv 10.64898/2026.06.22.733731
+- [PICK] Extended amygdala CRF → striosome → dopamine in fentanyl withdrawal — biorxiv 10.64898/2026.06.22.733757
+- [PICK] Striatal lateral inhibition + LID action selection (PD mouse) — biorxiv 10.1101/2024.10.11.617939
+- [PICK] Methamphetamine-induced disruption of neuropeptide expression — biorxiv 10.64898/2026.06.20.733497
+- [PICK] 5-HT CeA-mPFC pathway + sevoflurane emergence in anxiety/depression — biorxiv 10.1101/2024.06.19.599720
+- [PICK] P2Y1R pathway-selective inverse agonist KSN-159-27 (biased SBDD) — biorxiv 10.64898/2026.06.19.732319
+- [PICK] Ehrlich occupancy time — beyond k_off residence time — biorxiv 10.64898/2025.12.10.693538
+- [PICK] Agentic AI for drug-metabolite LC-MS/MS structural elucidation (GNPS2) — biorxiv 10.64898/2026.06.23.734138
+- [PICK] OECD-anchored opioid bioactivity DB stratification (MOR/DOR/KOR/NOP QSAR) — biorxiv 10.64898/2026.06.18.732083
+- [PICK] BrainAgent — multi-agent LLM for brain-signal understanding — arxiv 2606.25400
+- Btbd11 in glutamatergic synapses of GABAergic interneurons (schizophrenia relevance) — biorxiv 10.64898/2026.06.22.733761 — not picked
+- TDP-43 subtypes in AD transcriptomics — biorxiv 10.64898/2026.06.22.733827 — not picked
+- The Clinician's Veto (autonomous AI prescribing position paper) — arxiv 2606.25108 — not picked
+- Pocket-centric framework for amyloid fibril polymorphs — biorxiv 10.64898/2026.02.25.707901 — not picked
+
+**Fetch depth:** opener + nine items read in full via `scripts/fetch_preprint.py` (jina .full HTML). BrainAgent arXiv PDF read via WebFetch (full PDF). No source-level failures encountered. No arXiv 429 (used cached XML).
+=== 2026-06-28T06:50:53-07:00 done  receptor-and-reason (exit 0) (manual catch-up) ===
