@@ -2034,3 +2034,33 @@ All three files are written and the RSS XML is valid.
 - ChemRxiv: no hits; News/Policy: no agentic-AI announcements in window
 - DeepBD and scBench-Long excluded (both already featured on 2026-06-25 and 2026-06-26)
 === 2026-06-27T02:19:57-07:00 done  biomedical-agentic-ai (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-06-28T02:00:12-07:00 start biomedical-agentic-ai ===
+Episode written for biomedical-agentic-ai, June 28 2026. Running in SKIP_TTS=1 batch mode — script, rss-item.xml stub (with `__LENGTH__` / `__DURATION__` placeholders), and commit-msg stub are placed in `podcasts/biomedical-agentic-ai/scripts/`; the orchestrator will handle TTS, R2 publish, feed update, and commit.
+
+**Pick:** "Real Science Is Harder Than Benchmarks: Evaluating Advanced AI Frameworks on Published Studies. I" (bioRxiv 10.64898/2026.06.24.734302, v1 posted 2026-06-27), from Anton Sinitskiy's group at Northeastern + CUNY. Five high-profile autonomous-research frameworks (Kosmos, K-Dense, ToolUniverse, BioAgents, AI Scientist-v2) are forensically compared to three real published studies. Findings: no framework matched the original scope; none of the five found the Novartis paper that was the most relevant source for the UQ prompt; all defaulted to ridge/RF on Morgan fingerprints; AI Scientist-v2 hallucinated GDP-over-time plots as constants at round numbers; Kosmos in one run pulled the original paper's Zenodo deposit and presented those forecasts as its own results; K-Dense graphical abstract showed a linear model when the code used a Random Forest. Three failure categories: infrastructural (tractable), scope (partly tractable), integrity (likely architectural — RAG is not preventing fabricated provenance).
+
+**Candidate funnel — June 27-28, 2026**
+
+- **bioRxiv** (api.biorxiv.org details API, 2026-06-27 to 2026-06-28, 75 unique DOIs across 3 pages): 5 keyword hits after dropping spurious matches.
+  - **CHOSEN:** Real Science Is Harder Than Benchmarks (10.64898/2026.06.24.734302, bioinformatics, full text via r.jina.ai PDF, 15 pages)
+  - Glitch genes — embedding-geometry fragility in single-cell foundation models (10.64898/2026.06.22.733850)
+  - eRNAformer — genome-wide de novo enhancer-RNA mapping (10.64898/2026.06.24.734403)
+  - Structure-aware protein alignment via residue-level contrastive learning (10.1101/2024.03.09.583681)
+- **arXiv** (shared cache stale through 2026-06-25; live API fallback, 200 entries with latest 2026-06-25; no Sat/Sun submissions): substantive biomedical-agentic candidates —
+  - Socratic agents for autonomous scientific discovery (2606.26722) — physics
+  - Scientific discovery as meta-optimization (2606.26728) — off-domain
+  - HiLSVA — agentic SciVis (2606.26614) — off-domain
+  - OpenRCA 2.0 (2606.27154) — RCA benchmark, not biomedical
+  - Language-Based Digital Twins for Elderly Cognitive Assistance (2606.27334)
+  - TAVR-VLM (2606.26874) — single-domain medical imaging
+  - Medical VQA uncertainty calibration (2606.27023)
+  - Longitudinal Synthetic Clinical Notes pipeline (2606.26879)
+- **PubMed** (last 5 days, 300 PMIDs, 16 substantive hits after filtering):
+  - **Strongest runner-up:** Orchestrator multi-agent CDSS for secondary headache (PMID 42364078, JAMIA, 2026-06-27) — 7-agent guideline-aligned architecture, 90 cases, F1 improvements across Qwen-8B/14B/30B, GPT-OSS-20B, Llama-3.1-8B
+  - OpenClaw multi-agent AI in plastic surgery (PMID 42363741)
+  - LLM-generated tools for extracting statistical-software reporting (PMID 42365353)
+- **ChemRxiv:** no biomedical-agentic-AI hits in window.
+- **News/policy** (ARPA-H, NIH, NSF, HHS): no agentic-AI biomedical program announcement in 1-2 day window.
+
+Real Science Is Harder Than Benchmarks wins on (a) direct fit with Su Lab interests in agentic AI applied to biomedical research and open-science evaluation, (b) rigor of the 5 frameworks × 3 paper reproductions × 1-4 runs comparison, (c) actionable failure-mode taxonomy (infrastructural / scope / integrity) that generalizes, (d) opinionated and honest framing of where the systems do vs. do not add value, (e) recency (v1 posted 2026-06-27).
+=== 2026-06-28T02:07:35-07:00 done  biomedical-agentic-ai (exit 0) ===
