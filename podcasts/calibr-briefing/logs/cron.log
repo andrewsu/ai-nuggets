@@ -1682,3 +1682,29 @@ Files written (SKIP_TTS mode — orchestrator handles batch TTS + commit):
 - `podcasts/calibr-briefing/scripts/2026-06-27-epicrispr-fshd-epigenome-spotlight.rss-item.xml`
 - `podcasts/calibr-briefing/scripts/2026-06-27-epicrispr-fshd-epigenome-spotlight.commit-msg`
 === 2026-06-27T02:33:52-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-06-28T02:20:12-07:00 start calibr-briefing ===
+Episode pair shipped for Travis' Briefing, Sunday 2026-06-28. SKIP_TTS path: scripts + RSS-item stubs + commit-msg stubs written under `podcasts/calibr-briefing/scripts/`; no audio generation, no feed edit, no commit (orchestrator handles those after batch TTS).
+
+**Final summary (logged to cron.log)**
+
+Today's pair, both numbered for SKIP_TTS:
+- `2026-06-28-pharma-headlines.txt` (5 items, ~5 min)
+- `2026-06-28-replimune-rp1-oncolytic-virus-spotlight.txt` (~7-8 min)
+
+**Spotlight pick:** Replimune RP1 (vusolimogene oderparepvec) + nivolumab — third BLA resubmission for post-anti-PD-1 advanced melanoma accepted by FDA Friday Jun 26 as complete Class-1 response with PDUFA Aug 2 and late-July ODAC scheduled, after Jul 22 2025 + Apr 10 2026 CRLs.
+
+**Headlines roundup:**
+1. Replimune RP1 3rd BLA accepted + ODAC + PDUFA Aug 2 (spotlight teaser) — Fri Jun 26
+2. Capricor deramiocel (CAP-1002 cardiosphere-derived cells) — CTGTAC adcom Jul 29 + new PDUFA Aug 22 in DMD — Fri Jun 26
+3. Biogen pauses/terminates most legacy Apellis research after $5.6B May 14 close; suspends pegcetacoplan in FSGS + post-transplant DGF — Fri Jun 26
+4. ASCO Breakthrough Singapore Sat close: Innovent IBI363/TAK-928 PD-1/IL-2α bispecific data — APAC oncology innovation thread
+5. iBio dosed first patient in P1 of IBIO-600 (AI-designed myostatin + GDF11 mAb, GLP-1 muscle-preservation adjunct) — earlier in June; ~2-yr program-init-to-FIH
+
+**Candidate funnel (Sunday Jun 28, weekend wrap):**
+- Fierce Biotech / Endpoints / BioPharma Dive / Fierce Pharma homepages scanned: 15+ items, all dated Jun 26 (Fri) since Sat-Sun is quiet. Yesterday's Saturday script covered Epicrispr EPI-321 FSHD + Moderna mRNA-6007 + Daybue CHMP + Tavneos CHMP + Sanofi EC antitrust + BIO 2026 wrap. Today picks up the four Friday stories left on the table.
+- PR Newswire biotech feed: no Sat-Sun releases visible
+- ASCO Breakthrough Singapore press program (Jun 25-27): closing keynote Sat by Yuk Ming Dennis Lo; Innovent IBI363 long-term follow-up is the cleanest data point
+- WebFetch failures: endpoints.news/news/ (403) and businesswire/onclive (403/timeout) — fell back to direct company IR + GlobeNewswire/StockTitan summaries for confirmation
+- CHOSEN spotlight: Replimune RP1 — modality-class catalyst (oncolytic virus has had only Imlygic Oct 2015 in 11 yrs), ADCOM dynamics newly relevant, direct read-through to Foresite portfolio IO-combo regulatory robustness
+- Runners-up: Capricor (DMD CGT, but yesterday's spotlight was already MD-modality — Epicrispr FSHD); Biogen-Apellis pipeline cuts (already part of acquisition-aftermath narrative); ASCO Breakthrough wrap (already a single-day-event recap rather than a deep dive)
+=== 2026-06-28T02:33:50-07:00 done  calibr-briefing (exit 0) ===
