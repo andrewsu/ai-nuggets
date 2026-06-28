@@ -613,3 +613,41 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-06-28T03:05:54-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-06-28T03:05:54-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
+=== 2026-06-28T06:39:59-07:00 start justice-biotech-brief (manual catch-up) ===
+Wrote script + stubs. Today's pick: Teclistamab + daratumumab CHMP positive opinion (June 26) for MajesTEC-3 BCMA bispecific + CD38 mAb combination in 2L+ RRMM.
+
+## Run summary
+
+**Episode:** `2026-06-28-teclistamab-daratumumab-majestec-3-chmp`
+- Script: `podcasts/justice-biotech-brief/scripts/2026-06-28-teclistamab-daratumumab-majestec-3-chmp.md`
+- RSS stub: `.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders)
+- Commit-msg stub: `.commit-msg`
+- TTS/publish/feed/commit deferred to orchestrator per `SKIP_TTS=1`.
+
+## Candidate funnel
+
+**bioRxiv (last 2 days, 2026-06-26 to 2026-06-28):** Paginated full collection — 297 unique items across 30-item windows × 10 cursor pages. Keyword-filtered titles + abstracts against VEGF / PD-L1 / PD-1 / TCE / bispecific / trispecific / CAR-T / ADC / JAK / immunotherapy / checkpoint / engager / antigen targets. Hits were spurious (TCE = "temporal contrast enhancement"; PD1 = parathyroid hormone receptor; EGFR DARPin for ovulation studies; Nectin = "connecting" in microbiology). **No substantive fits.**
+
+**medRxiv (last 2 days):** 6 items scanned. One borderline melanoma TIL meta-analysis — review, not novel clinical data. Skipped.
+
+**News / product launches (last ~3 days):**
+- Moderna Science Day (mRNA-2808 trispecific TCE + mRNA-6007 in vivo CAR-T autoimmune) — **already covered 6/26 episode**.
+- Pfizer sigvotatug vedotin Phase 3 SigVie-002 miss — **already covered 6/23 episode**.
+- Replimune RP1 + nivolumab BLA accepted (FDA, June 26; PDUFA Aug 2, ODAC late July) — oncolytic virus + PD-1, off-axis for Justice's TCE/ADC/CAR-T pillars; Calibr's beat.
+- Eli Lilly Jaypirca / pirtobrutinib CHMP positive opinion in CLL (June 26) — covalent BTK, off-axis.
+- Viridian Lumvoa (veligrotug-vvze) approval in TED — autoimmune off-axis.
+- Merck KGaA / Bio-Techne $11.3B M&A — corporate, not therapeutic.
+- **Teclistamab + daratumumab MajesTEC-3 CHMP positive opinion (J&J, June 26, 2026)** — BCMA × CD3 bispecific + CD38 mAb in RRMM 2L+; PFS HR 0.17 (CI 0.12–0.23, p<0.0001), OS HR 0.46, ≥CR 81.8% vs 32.1%, MRD-neg at 10^-6 in CR responders 87.5% vs 41.8%; CRS 60% all G1/2; ICANS 1.1%. **← CHOSEN.** Closes EU regulatory loop on the March 5 FDA approval; combination architecture (TCE + immune-conditioning mAb) is the load-bearing lesson for Justice's TCE/bispecific work and pairs cleanly with the MonumenTAL-3 (talquetamab/GPRC5D) take from 6/15 and the Padcev+Keytruda (ADC+PD-1 immune-conditioning analogue) take from 6/27.
+
+**Earlier-this-week stories considered and passed over for recency:** Satri-cel (CARsgen) NMPA approval — world-first solid-tumor CAR-T (Claudin18.2 in gastric), June 22; Iza-bren (Sichuan Biokin/SystImmune) NMPA approval — world-first bispecific ADC (EGFR×HER3 in NPC), June 22. Both 6 days old; teclistamab CHMP is fresher and the depth-of-response data is more directly portable to Justice's combination-TCE design work.
+
+**Policy / funder feeds (ARPA-H, NIH, NSF):** No directly relevant June 27-28 announcements.
+
+Sources:
+- [CHMP recommendation advances Johnson & Johnson's TECVAYLI (teclistamab) plus daratumumab — GlobeNewswire](https://www.globenewswire.com/news-release/2026/06/26/3318188/0/en/replimune-announces-fda-acceptance-of-rp1-biologics-license-application-resubmission-for-advanced-melanoma.html)
+- [J&J press release — CHMP recommendation, June 26 2026](https://www.jnj.com/media-center/press-releases/chmp-recommendation-advances-johnson-johnsons-tecvayli-teclistamab-plus-daratumumab-as-a-potential-standard-of-care-for-relapsed-refractory-multiple-myeloma)
+- [MajesTEC-3 Phase 3 unprecedented results, PR Newswire (ASH 2025 release)](https://www.prnewswire.com/news-releases/unprecedented-results-from-the-phase-3-majestec-3-study-support-tecvayli-plus-darzalex-faspro-as-a-potential-standard-of-care-as-early-as-second-line-for-patients-with-relapsedrefractory-multiple-myeloma-302636559.html)
+- [FDA approves teclistamab + daratumumab combo (March 5 2026)](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-teclistamab-combination-daratumumab-hyaluronidase-fihj-relapsed-or-refractory-multiple)
+- [CARsgen satri-cel NMPA approval — PR Newswire](https://www.prnewswire.com/news-releases/carsgen-announces-approval-of-satri-cel-the-worlds-first-car-t-cell-therapy-product-for-solid-tumors-302806312.html)
+- [SystImmune iza-bren NMPA approval — PR Newswire](https://www.prnewswire.com/news-releases/systimmune-announces-first-approval-of-iza-bren-for-the-treatment-of-recurrent-or-metastatic-nasopharyngeal-carcinoma-in-china-302806766.html)
+=== 2026-06-28T06:55:34-07:00 done  justice-biotech-brief (exit 0) (manual catch-up) ===
