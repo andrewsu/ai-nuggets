@@ -1357,3 +1357,31 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-06-28T03:15:34-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-06-28T03:15:34-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-06-28T06:40:04-07:00 start scripps-biomed-brief (manual catch-up, --model claude-sonnet-4-6) ===
+All three files are written. Here is the candidate funnel for today's run:
+
+---
+
+**Candidate funnel — Scripps Biomedical Brief 2026-06-28**
+
+**Sources scanned:**
+
+- **bioRxiv (pharmacology and toxicology, 2026-06-26 to 2026-06-28):** 4 items scanned, 0 advanced to shortlist — favipiravir PBPK dosing (not novel target), BARMIE ecotoxicology pipeline (out of scope), GPCR nanodisc method (platform only), DARPin EGFR ovulation model (fertility/basic)
+- **bioRxiv (biochemistry, 2026-06-26 to 2026-06-28):** 17 items scanned, 4 advanced — OtDUB inhibitors (already featured 2026-06-26, excluded), prion protein splice switching (selected), quinone-transporting filaments Gram-positive (selected), cardiolipin/MmpL3 mycobacteria (selected); remaining items excluded as basic structural biology, ecology, or too narrow
+- **bioRxiv (bioengineering, 2026-06-26 to 2026-06-28):** 18 items scanned, 2 advanced — kidney scaffold nephrogenesis (selected); ELiPS/AENCS/spatial pharmacology items already featured 2026-06-27 and excluded; magnetic levitation biopsy assay excluded as diagnostics-only
+- **bioRxiv (synthetic biology, 2026-06-26 to 2026-06-28):** 0 results returned
+- **General web (Fierce Biotech, Endpoints, STAT News):** Searched; no stories from Jun 27–28 with fresh science at the appropriate depth for this audience; Fierce Biotech returned HTTP 403
+- **Full-text retrieval:** All four picks are v1 preprints posted Jun 26–27; jina.ai returned abstract-only content for all (bioRxiv body HTML not yet rendered). PDF endpoints return HTTP 403. Summaries are abstract-grounded; noted in-script framing was omitted per judgment that abstracts were sufficiently detailed for a sound take on significance.
+
+**Shortlist (post-filter):**
+
+- Liu et al., "Depleting prion protein using splice-switching small molecules," 10.64898/2026.06.26.734742 — **SELECTED** (story 1)
+- Li et al., "Cardiolipin modulation of MmpL3 in mycobacteria," 10.64898/2026.06.25.734600 — **SELECTED** (story 2)
+- Kropp et al., "Quinone-transporting filaments extend the respiratory chain of Gram positive bacteria," 10.64898/2026.06.26.734721 — **SELECTED** (story 3)
+- Gupta et al., "Coalescing nephron and ureteric bud progenitors potentiates nephrogenesis in recellularized kidney scaffolds," 10.64898/2026.06.24.733560 — **SELECTED** (story 4)
+
+**Files written (SKIP_TTS mode):**
+- `podcasts/scripps-biomed-brief/scripts/2026-06-28-prion-splice-cp3-mmpl3-cardiolipin-quinone-filaments-kidney-scaffold.md` (829 words)
+- `podcasts/scripps-biomed-brief/scripts/2026-06-28-prion-splice-cp3-mmpl3-cardiolipin-quinone-filaments-kidney-scaffold.rss-item.xml`
+- `podcasts/scripps-biomed-brief/scripts/2026-06-28-prion-splice-cp3-mmpl3-cardiolipin-quinone-filaments-kidney-scaffold.commit-msg`
+=== 2026-06-28T06:47:49-07:00 done  scripps-biomed-brief (exit 0) (manual catch-up, sonnet) ===
