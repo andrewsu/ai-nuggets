@@ -1414,3 +1414,32 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-06-29T03:15:29-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-06-29T03:15:29-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-06-29T06:24:38-07:00 start scripps-biomed-brief (manual catch-up, --model claude-sonnet-4-6) ===
+All three files are valid. The episode is complete. Here's the candidate funnel for the audit log:
+
+---
+
+**Candidate funnel — 2026-06-29 Scripps Biomedical Brief**
+
+**Sources scanned:**
+- bioRxiv biochemistry (June 27–29): 9 items → 3 shortlisted
+- bioRxiv bioengineering (June 27–29): 12 items → 2 shortlisted
+- bioRxiv biophysics (June 27–29): 9 items → 1 shortlisted
+- bioRxiv genomics (June 27–29): 10 items → 1 shortlisted
+- bioRxiv microbiology (June 27–29): 11 items → 1 shortlisted
+- bioRxiv immunology (June 27–29): 5 items → 0 shortlisted (cardiac/stroke/RA papers, lower relevance)
+- bioRxiv pharmacology/toxicology, synthetic biology, cell biology, molecular biology: 0 results
+- Nature Chemical Biology (recent): SHP1 redox switch (March 2026 — too old), CLEO4-88 molecular glue (April 2026 — too old), Munc13-4-STX7 (April 2026 — too old), TIM barrel de novo enzyme (June 22 — borderline but outside 48h window)
+- JACS (AlphaFold3 covalent binders): 403 on PDF and HTML — abstract-only assessment, date unclear, deferred
+- Industry news (Fierce, STAT, Endpoints): not searched in depth given strong bioRxiv yield
+
+**Substantive shortlist (after filtering spurious matches):**
+- `10.64898/2026.06.26.734849` — Serra, Price (UPenn): RNA splicing inhibition as antiviral (full text retrieved) ✓ **SELECTED**
+- `10.64898/2026.06.27.734664` — Taifour, Blancafort (UWA): CRISPR/dCas9 epigenetic silencing EWSR1-FLI1 (full text retrieved) ✓ **SELECTED**
+- `10.64898/2026.06.26.734839` — Rossitto, Taylor (UCSD): PKA RI/RII KO, Tau phosphorylation, Alzheimer's (full text retrieved) ✓ **SELECTED**
+- `10.64898/2026.06.26.734876` — Giri, Kohli/Mehl/Petersson: GCE switchable fluorophore-quencher (full text retrieved) ✓ **SELECTED**
+- `10.64898/2026.06.27.734619` — Mutter, Koder: Loop-directed cofactor binding for de novo protein design (full text retrieved) — not chosen (no direct therapeutic angle)
+- `10.64898/2026.06.26.732967` — Aljabbari, Ristroph: RNA post hoc loading into LNPs (full text retrieved) — not chosen (delivery logistics paper, limited target/modality novelty)
+
+**Output:** `2026-06-29-spliceosome-antiviral-crispri-ewsr1-pka-tau-gce-fret.md` + `.rss-item.xml` + `.commit-msg` written. SKIP_TTS=1; no TTS, no git commit — orchestrator handles both.
+=== 2026-06-29T06:34:11-07:00 done  scripps-biomed-brief (exit 0) (manual catch-up, sonnet) ===
