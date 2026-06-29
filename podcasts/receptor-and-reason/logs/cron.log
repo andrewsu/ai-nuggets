@@ -1765,3 +1765,32 @@ Ledger: appended (now 46 lines)
 
 **Fetch depth:** opener + nine items read in full via `scripts/fetch_preprint.py` (jina .full HTML). BrainAgent arXiv PDF read via WebFetch (full PDF). No source-level failures encountered. No arXiv 429 (used cached XML).
 === 2026-06-28T06:50:53-07:00 done  receptor-and-reason (exit 0) (manual catch-up) ===
+=== 2026-06-29T02:50:07-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-29T02:50:13-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-06-29T02:50:13-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-06-29T02:50:13-07:00 session-limit reset at 5am is 7847s away (>3600s cap); sleeping 180s ===
+=== 2026-06-29T02:53:13-07:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-29T02:53:16-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-06-29T02:53:17-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-06-29T02:53:17-07:00 session-limit reset at 5am is 7663s away (>3600s cap); sleeping 180s ===
+=== 2026-06-29T02:56:17-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-29T02:56:20-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-06-29T02:56:20-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-06-29T02:56:20-07:00 session-limit reset at 5am is 7480s away (>3600s cap); sleeping 180s ===
+=== 2026-06-29T02:59:20-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-29T02:59:24-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-06-29T02:59:24-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-06-29T02:59:24-07:00 session-limit reset at 5am is 7296s away (>3600s cap); sleeping 180s ===
+=== 2026-06-29T03:02:24-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-29T03:02:28-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-29T03:02:28-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-06-29T03:02:28-07:00 session-limit reset at 5am is 7112s away (>3600s cap); sleeping 180s ===
+=== 2026-06-29T03:05:28-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-29T03:05:32-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-29T03:05:32-07:00 FAILED: no usable output for receptor-and-reason after all retries ===

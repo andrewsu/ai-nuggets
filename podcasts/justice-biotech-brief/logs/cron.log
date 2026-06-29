@@ -651,3 +651,32 @@ Sources:
 - [CARsgen satri-cel NMPA approval — PR Newswire](https://www.prnewswire.com/news-releases/carsgen-announces-approval-of-satri-cel-the-worlds-first-car-t-cell-therapy-product-for-solid-tumors-302806312.html)
 - [SystImmune iza-bren NMPA approval — PR Newswire](https://www.prnewswire.com/news-releases/systimmune-announces-first-approval-of-iza-bren-for-the-treatment-of-recurrent-or-metastatic-nasopharyngeal-carcinoma-in-china-302806766.html)
 === 2026-06-28T06:55:34-07:00 done  justice-biotech-brief (exit 0) (manual catch-up) ===
+=== 2026-06-29T02:40:07-07:00 start justice-biotech-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-29T02:47:42-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-06-29T02:47:42-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-06-29T02:47:42-07:00 session-limit reset at 5am is 7998s away (>3600s cap); sleeping 180s ===
+=== 2026-06-29T02:50:42-07:00 start justice-biotech-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-29T02:50:46-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-06-29T02:50:46-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-06-29T02:50:46-07:00 session-limit reset at 5am is 7814s away (>3600s cap); sleeping 180s ===
+=== 2026-06-29T02:53:46-07:00 start justice-biotech-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-29T02:53:50-07:00 done  justice-biotech-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-06-29T02:53:50-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-06-29T02:53:50-07:00 session-limit reset at 5am is 7630s away (>3600s cap); sleeping 180s ===
+=== 2026-06-29T02:56:50-07:00 start justice-biotech-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-29T02:56:53-07:00 done  justice-biotech-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-06-29T02:56:53-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-06-29T02:56:53-07:00 session-limit reset at 5am is 7447s away (>3600s cap); sleeping 180s ===
+=== 2026-06-29T02:59:53-07:00 start justice-biotech-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-29T02:59:57-07:00 done  justice-biotech-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-29T02:59:57-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-06-29T02:59:57-07:00 session-limit reset at 5am is 7263s away (>3600s cap); sleeping 180s ===
+=== 2026-06-29T03:02:57-07:00 start justice-biotech-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-06-29T03:03:04-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-06-29T03:03:04-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
