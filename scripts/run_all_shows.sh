@@ -50,6 +50,11 @@ LEGACY_TTS=${LEGACY_TTS:-0}
 GARIBALDI_HOST=garibaldi.scripps.edu
 GARIBALDI_STAGE_DIR=ai-nuggets-stage   # relative to remote $HOME
 
+# Per-show outcome from Phase 1 lands in this directory, one file per show.
+# Read after `wait` to build SUCCEEDED / DEFERRED / FAILED sets. Date-stamped
+# so mid-day reruns don't see stale state from prior days.
+STATUS_DIR="$REPO/logs/.phase1-status-$(date +%F)"
+
 # Cron's PATH is /usr/bin:/bin only. publish_episode.sh calls `npx wrangler`
 # which lives under nvm. Prepend the current node bin so child processes
 # (publish_pending.py → publish_episode.sh) see npx. Update on node upgrade.
@@ -130,9 +135,15 @@ run_show() {
   local prompt="$1"
   local slug="$2"
   local log="$REPO/podcasts/$slug/logs/cron.log"
-  mkdir -p "$(dirname "$log")"
+  local status_file="$STATUS_DIR/$slug"
+  mkdir -p "$(dirname "$log")" "$STATUS_DIR"
+  rm -f "$status_file"  # clear stale entry from a mid-day rerun
 
   local attempt tag out model_arg today produced script base
+  # Outcome bookkeeping. Updated by every iteration's failure-classification
+  # so the value left after the loop reflects the LAST failure mode — that's
+  # what determines whether this show is deferrable.
+  local last_failure="" last_reset=""
   today=$(date +%F)
   for attempt in 1 2 3 4 5 6; do
     case "$attempt" in
@@ -149,18 +160,28 @@ run_show() {
         | "$CLAUDE" -p --permission-mode auto $model_arg
       echo "=== $(date -Iseconds) done  $slug (exit $?)$tag ==="
     } 2>&1 | tee -a "$log" > "$out"
-    if [ "$attempt" -lt 6 ] && grep -q "session limit · resets" "$out"; then
-      echo "=== $(date -Iseconds) session-limit detected for $slug; computing reset-aware sleep ===" | tee -a "$log"
-      sleep_until_reset "$out" "$log"
-      rm -f "$out"
-      continue
-    fi
-    if [ "$attempt" -lt 6 ] && \
-       grep -q "Claude Code is unable to respond to this request, which appears to violate our Usage Policy" "$out"; then
-      echo "=== $(date -Iseconds) AUP-refusal detected for $slug; retrying in 180s ===" | tee -a "$log"
-      rm -f "$out"
-      sleep 180
-      continue
+    if grep -q "session limit · resets" "$out"; then
+      last_failure="session_limit"
+      last_reset=$(grep -oE 'session limit · resets [0-9]{1,2}(:[0-9]{2})?(am|pm)' "$out" \
+                     | head -1 | sed 's/.*resets //')
+      if [ "$attempt" -lt 6 ]; then
+        echo "=== $(date -Iseconds) session-limit detected for $slug; computing reset-aware sleep ===" | tee -a "$log"
+        sleep_until_reset "$out" "$log"
+        rm -f "$out"
+        continue
+      fi
+    elif grep -q "Claude Code is unable to respond to this request, which appears to violate our Usage Policy" "$out"; then
+      last_failure="aup"
+      last_reset=""
+      if [ "$attempt" -lt 6 ]; then
+        echo "=== $(date -Iseconds) AUP-refusal detected for $slug; retrying in 180s ===" | tee -a "$log"
+        rm -f "$out"
+        sleep 180
+        continue
+      fi
+    else
+      last_failure=""
+      last_reset=""
     fi
     # "Did the show actually produce something useful?" check. In SKIP_TTS
     # mode that means a script file *and* both stubs; in legacy mode it
@@ -183,17 +204,31 @@ run_show() {
       shopt -u nullglob
     fi
     if [ "$attempt" -lt 6 ] && [ -z "$produced" ]; then
+      [ -z "$last_failure" ] && last_failure="no_output"
       echo "=== $(date -Iseconds) no usable output for $slug; retrying in 180s ===" | tee -a "$log"
       rm -f "$out"
       sleep 180
       continue
     fi
     if [ -z "$produced" ]; then
+      [ -z "$last_failure" ] && last_failure="no_output"
       echo "=== $(date -Iseconds) FAILED: no usable output for $slug after all retries ===" | tee -a "$log"
     fi
     rm -f "$out"
     break
   done
+
+  # Write per-show outcome for the post-Phase-1 collector. One line:
+  #   "SUCCESS"
+  #   "DEFER <reset-string>"        e.g. "DEFER 5am"
+  #   "FAIL <last-failure-mode>"    e.g. "FAIL aup", "FAIL no_output"
+  if [ -n "$produced" ]; then
+    echo "SUCCESS" > "$status_file"
+  elif [ "$last_failure" = "session_limit" ] && [ -n "$last_reset" ]; then
+    echo "DEFER $last_reset" > "$status_file"
+  else
+    echo "FAIL ${last_failure:-unknown}" > "$status_file"
+  fi
 }
 
 ##############################################################################
@@ -222,6 +257,33 @@ for prompt in podcasts/*/PROMPT.md; do
   run_show "$prompt" "$slug" &
 done
 wait
+
+# Collect Phase 1 outcomes into three sets. (No behaviour change yet — this
+# is the data-collection foundation for the deferred-catchup architecture.
+# Phases 2 and 3 still run on whatever produced scripts, unchanged.)
+SUCCEEDED=()
+DEFERRED=()   # entries are "slug:reset-string"
+FAILED=()     # entries are "slug:failure-mode"
+for prompt in podcasts/*/PROMPT.md; do
+  [ -f "$prompt" ] || continue
+  slug=$(basename "$(dirname "$prompt")")
+  status_file="$STATUS_DIR/$slug"
+  if [ ! -f "$status_file" ]; then
+    FAILED+=("$slug:no_status_file")
+    continue
+  fi
+  read -r kind rest < "$status_file"
+  case "$kind" in
+    SUCCESS) SUCCEEDED+=("$slug") ;;
+    DEFER)   DEFERRED+=("$slug:$rest") ;;
+    FAIL)    FAILED+=("$slug:$rest") ;;
+    *)       FAILED+=("$slug:unknown_status[$kind]") ;;
+  esac
+done
+echo "$(date -Iseconds) Phase 1 outcomes: ${#SUCCEEDED[@]} succeeded, ${#DEFERRED[@]} deferrable, ${#FAILED[@]} failed"
+[ "${#SUCCEEDED[@]}" -gt 0 ] && echo "  succeeded: ${SUCCEEDED[*]}"
+[ "${#DEFERRED[@]}" -gt 0 ]  && echo "  deferrable (session-limit): ${DEFERRED[*]}"
+[ "${#FAILED[@]}" -gt 0 ]    && echo "  failed: ${FAILED[*]}"
 
 ##############################################################################
 # Phase 2 + 3 (skipped in LEGACY_TTS mode — each show already committed).
