@@ -147,3 +147,40 @@ Podcasts (last 14d):
 
 No commit, no TTS, no R2 publish, no feed.xml edit — `SKIP_TTS=1` is set so the orchestrator (`scripts/publish_pending.py`) will handle all of that after batch TTS finishes on Garibaldi.
 === 2026-06-28T02:43:35-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-06-29T02:30:07-07:00 start jinglin-ai-pulse ===
+Script and stubs in place (SKIP_TTS=1; orchestrator handles TTS + feed + commit). Spoken portion is ~2,472 words, in line with recent episodes (yesterday: ~877s duration).
+
+## Run summary — jinglin-ai-pulse, 2026-06-29
+
+**Episode:** `2026-06-29-world-models-hallucinate-and-the-god-we-deserve`
+
+**Files written (SKIP_TTS=1, no audio, no feed edit, no commit):**
+- `scripts/2026-06-29-world-models-hallucinate-and-the-god-we-deserve.md`
+- `scripts/2026-06-29-world-models-hallucinate-and-the-god-we-deserve.rss-item.xml` (with `__LENGTH__` and `__DURATION__` placeholders)
+- `scripts/2026-06-29-world-models-hallucinate-and-the-god-we-deserve.commit-msg`
+
+**Arc:** Last week's question was who walked into which lab; today's is what the lab they walked into is doing. Four HF papers in 72h coordinate-attack the same problem — world models hallucinate. Qualcomm-Modular extends the attack to the silicon substrate. Wright reframes the whole sequence as selection over design.
+
+**Candidate funnel — Twitter/X discourse last 48-72h:**
+- Hansen + Wang UCSD, "Hallucination in World Models is Predictable and Preventable" (arXiv 2606.27326, 51 HF upvotes, interactive demo at nicklashansen.com/mmbench2) — **CHOSEN as headline**
+- PhysisForcing PKU + NVIDIA (arXiv 2606.28128, #1 HF June 29) — **CHOSEN**
+- In-Context World Modeling OpenMOSS/Fudan/Xipeng Qiu (arXiv 2606.26025, 56 HF upvotes) — **CHOSEN**
+- Fast-LeWM Xi'an Jiaotong (arXiv 2606.26217) — **CHOSEN as supporting**
+- Translation as a Bridging Action ByteDance Seed + HKU-MMLab (arXiv 2606.28133, June 26, 24 HF upvotes) — flagged but not lead
+- ViQ Tencent Hunyuan (arXiv 2606.27313, 120 HF upvotes) — DROPPED as isolated multimodal-tokenizer story, not a convergence
+- Zefan_Cai direct signal: not surfacing via indexed search — gap flagged
+
+**Money/business last 7d:**
+- Qualcomm to acquire Modular ~$3.9B all-stock (June 24, Investor Day; Lattner LLVM/Swift; CUDA-attacker M&A) — **CHOSEN as anchor**
+- Nearfield Instruments $380M Series D (June 22, Fidelity/Temasek/QIA, largest Dutch deep-tech round) — **CHOSEN**
+- Peregrine Technologies $250M Series D @ $6.8B (June 22, ~3× Series C in 15mo) — **CHOSEN**
+- Runners-up Stark €540M (June 23, defense/autonomous), CRED ~$900M from Meta (June 22, fintech — off-thesis)
+- Dropped: Baseten $1.5B (covered June 24), Runpod/Sail/Scaled Cognition/Trase (covered June 26), Assort/Taktile/Hang Ten/Attention/Runlayer/Coval/Seltz (covered June 25), General Intuition/Patronus/Netris (covered June 27), NewLimit/SonoThera (covered June 28)
+
+**Podcasts last 14d:**
+- Robert Wright on Cognitive Revolution with Nathan Labenz, "The God We Deserve" (June 23, ~2h28m, book press tour for *The God Test*) — **CHOSEN as deep cut**
+- Runners-up: Zvi Mowshowitz on Cognitive Revolution "AI:AM #3" (June 21, Fable governance-cascade thesis — overlaps Mythos/Fable arc and Dean Ball deep cut from yesterday); Dwarkesh June 26 solo essay "The next paradigm" on AIs learning on the job (sharp thesis but solo monologue, not interview format)
+- Dropped (already used): Latent Space "Red-Teaming after Mythos" June 22 (used June 24), Latent Space Zaharia+Xin "Frontier Ecosystem must be Open" June 24 (used June 25), Anjney Midha "Outputmaxxing" (used June 27), Joseph Krause "Self-Driving Lab" (used June 26), Dean Ball Cognitive Revolution (used June 28), Dwarkesh "data black hole" (used June 25)
+- No fresh hits surfaced from BG2, TWIML, No Priors, MLST, Lex Fridman, Lunar Society, 80,000 Hours, a16z in window
+- WhynotTV: no fresh episode in window
+=== 2026-06-29T02:42:09-07:00 done  jinglin-ai-pulse (exit 0) ===
