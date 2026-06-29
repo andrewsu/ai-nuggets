@@ -1794,3 +1794,53 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-06-29T03:05:32-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-06-29T03:05:32-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-06-29T06:24:40-07:00 start receptor-and-reason (manual catch-up) ===
+Episode files written. Summary follows.
+
+**Episode 47 — Receptor & Reason, 2026-06-29 (Monday)**
+
+Files produced (SKIP_TTS mode — orchestrator handles TTS + R2 + feed + commit):
+
+- `podcasts/receptor-and-reason/scripts/2026-06-29-receptor-and-reason.md` — script, 10 items, ~17 min spoken target
+- `podcasts/receptor-and-reason/scripts/2026-06-29-receptor-and-reason.rss-item.xml` — RSS item stub with `__LENGTH__` / `__DURATION__` placeholders
+- `podcasts/receptor-and-reason/scripts/2026-06-29-receptor-and-reason.commit-msg` — commit message line
+- `podcasts/receptor-and-reason/state/shipped.jsonl` — appended today's 10-item record
+
+**Today's picks (all Tier 1–3, no Tier 4 fallback needed):**
+
+1. TDP-43 subtypes shape transcriptomic signatures in AD (Petrucelli/Prudencio/Josephs, Mayo) — *opener*
+2. ALS-associated TARDBP K181E drives cryptic exon inclusion + PRDM2 candidate biomarker
+3. CO2-sensitive Cx26 hemichannels on DR→VTA serotonergic terminals (channel co-synapse)
+4. Synj1 R258Q dystrophic nigrostriatal axons — endocytic catastrophe in familial PD
+5. MIRO1/TRAK1 mitochondrial turnover at GABAergic synapses governs epilepsy (gene-therapy rescue)
+6. Prenatal CRD induces sex-specific substance use vs anhedonia phenotypes
+7. Appetitive Pavlovian goal-tracking reconsolidation reduced by propranolol + MK-801
+8. Real Science Is Harder Than Benchmarks — five AI research frameworks evaluated (Sinitskiy et al.)
+9. Clair3-Connect — client-server agentic interface for variant calling
+10. ISTP-DPISO desktop-scale virtual screen on α-synuclein NAC — 3/3 prospective ThT hits
+
+**Candidate funnel:**
+
+- **bioRxiv (Tier 1 + 2):** 1,076 preprints fetched 2026-06-22 → 2026-06-29; 579 in neuroscience / pharmacology / bioinformatics / systems biology / molecular biology / genomics / cell biology / genetics / biochemistry / synthetic biology; 390 survived CNS-pharm-pharmacology-comp-bio keyword filter; 275 eligible after dedup vs `state/shipped.jsonl` (46 prior episodes, ~440 shipped keys). Read full text (jina .full HTML) for the three leads (TDP-43 subtypes, Real-Science-Is-Harder, Clair3-Connect); v1 render pending so jina returned abstract-only for all three — sufficient for summary depth given each item is ~1.5 min spoken.
+- **arXiv (Tier 2):** read `/tmp/ai-nuggets-arxiv-cache.xml` (1.2 MB, 14k lines, June pre-fetch from runner — covered q-bio supercategory). 84 entries within 7-day window passed biomedical-relevance keyword filter; 54 eligible after dedup. Top candidates included MedGuards multi-agent, KAN-based EEG MCI detection, EEG agent with boundary-aware grounding — but the four bioRxiv agentic-AI picks (Sinitskiy real-science benchmarks, Clair3-Connect, DPISO α-syn) dominated for Alan's interests, so no arXiv items shipped today. Saved for future episodes.
+- **Psychiatric Times:** scanned homepage. Three articles in window — cytisinicline CRL, DT120 P3 Emerge MDD, ML-004 P2 ASD — all already shipped (06-23, 06-24). No new psych-pipeline news.
+- **Journal pages (npp, mol psych, biol psych, Neuropharm, etc.):** not opened — bioRxiv lead density was already at 10 items strong by Tier-1 alone, and the 7-day journal flow tends to lag bioRxiv preprints. Source-level gap noted; not a content gap.
+
+**Substantive shortlist (pre-pick, top ~15):**
+
+- doi:10.64898/2026.06.22.733827 — TDP-43 subtypes / AD ✓ chosen (lead)
+- doi:10.1101/2025.11.09.687455 — TARDBP K181E ALS organoids ✓ chosen
+- doi:10.1101/2025.04.14.648741 — Cx26 DR-VTA hypercapnic arousal ✓ chosen
+- doi:10.64898/2026.06.24.733515 — Synj1 nigrostriatal endocytic catastrophe ✓ chosen
+- doi:10.64898/2026.06.24.734182 — MIRO1/TRAK1 GABAergic mitochondria epilepsy ✓ chosen
+- doi:10.64898/2026.06.22.733807 — Prenatal CRD sex-specific SU ✓ chosen
+- doi:10.64898/2026.06.23.733991 — Pavlovian reconsolidation propranolol vs MK-801 ✓ chosen
+- doi:10.64898/2026.06.24.734302 — Real Science Is Harder Than Benchmarks ✓ chosen
+- doi:10.64898/2026.06.25.734665 — Clair3-Connect agentic variant calling ✓ chosen
+- doi:10.64898/2026.06.22.733879 — ISTP DPISO α-syn desktop screen ✓ chosen
+- doi:10.64898/2026.06.27.735015 — Neuroticism→AD via excitatory neurons — passed (small mediation signal, n=655)
+- doi:10.64898/2026.06.19.733342 — Spreading α-syn organelle rewiring — passed (overlap with DPISO α-syn item)
+- doi:10.64898/2026.06.22.733382 — PhenoXtract LLM+KG phenotype extraction — passed (less novel than other agentic picks)
+- doi:10.64898/2026.06.22.733841 — slow-wave-sleep tDCS modulates AD biomarker clearance — passed (small n, exploratory)
+- doi:10.64898/2026.06.16.732555 — Decoding chronic pain from sEEG — passed (compelling but less drug-discovery-actionable)
+=== 2026-06-29T06:35:53-07:00 done  receptor-and-reason (exit 0) (manual catch-up) ===
