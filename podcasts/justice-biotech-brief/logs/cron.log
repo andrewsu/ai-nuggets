@@ -680,3 +680,36 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-06-29T03:03:04-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-06-29T03:03:04-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
+=== 2026-06-29T06:24:35-07:00 start justice-biotech-brief (manual catch-up) ===
+Episode written. Three stub files in place per SKIP_TTS mode. Final candidate funnel for cron.log:
+
+---
+
+**Today's pick (justice-biotech-brief 2026-06-29):**
+TALA-125 — anti-IL-13 × anti-IL-18 bispecific for atopic dermatitis from Talawar Therapeutics, surfacing from Khanda Therapeutics in a $285M JATT II SPAC merger (June 29, 2026). Direct hit on Justice's bispecific + autoimmune-biologic pillars; "pair two orthogonal validated pathways in one molecule" architectural thesis that ports back to his oncology TCE work; IL-18 arm validated by Apollo's camoteskimab CHAMELEON Phase 2a (working specifically in Dupixent failures); contrasts against Sanofi's lunsekimig TSLP×IL-13 VELVET miss in AD in April — making the case that IL-18 over TSLP is the more orthogonal pairing.
+
+**Candidate funnel (sources scanned, recency window 2026-06-28 → 2026-06-29):**
+
+- **bioRxiv (last 2 days)**: 134 entries pulled across pages 0–120. After strict keyword filter for Justice's pillars (VEGF, PD-L1/PD-1, bispecific/trispecific, CAR-T, ADC, JAK, BCMA/GPRC5D/LILRB/CLDN/HER2/HER3, etc.) and category scoping to immunology / cancer biology / pharmacology / bioengineering — **zero on-axis preprints**. Closest near-misses (all off-axis): APOC1+ inflammatory CAF state in rheumatoid arthritis (basic biology, not therapeutic); lipid-mediated pneumolysin regulation (infection); stroke-induced lipocalin-2 macrophages (off-axis); LLM agents for protein design benchmarking (methods); liquid-crystalline mesophase drug-release kinetics (formulation). No therapeutic-asset preprint warranted spotlight.
+- **News and product launches (Fierce Biotech homepage, BioSpace, web)**:
+  - **Talawar–JATT II SPAC merger** (June 29) — bispecific IL-13×IL-18 in AD, $285M proceeds, TLWR ticker. **← CHOSEN.**
+  - Zymeworks–Theravance acquisition $929M (June 29) — bispecific-ADC oncology house pivoting into respiratory commercial cash; corporate-strategy story, off-axis for Justice's pillars (the asset acquired is Yupelri/revefenacin small-molecule LAMA, not a bispecific/CAR-T/ADC).
+  - Ipsen–Kartos $1.75B navtemadlin MDM2 in myelofibrosis (June 29) — already covered in today's Travis Briefing spotlight; small-molecule oncology, only loosely connects to JAK pillar via JAKi backbone combination, off-axis for Justice's biologics work.
+  - AstraZeneca efzimfotase alfa Ph3 hypophosphatasia (June 29) — rare bone-disease ERT, off-axis.
+  - Viridian Lumvoa FDA approval in thyroid eye disease (June 29) — off-axis autoimmune (anti-IGF-1R, not Justice's pillars).
+  - Scancell–Neuphoria — neuro M&A, off-axis.
+  - Endpoints News and STAT homepages — STAT 6/29 content was AI/health-tech focused (Sword Health Portugal deal; Edison Scientific; Clive Meanwell; Kenneth Chien on mRNA); no oncology/bispecific/CAR-T/ADC headlines from 6/28–6/29; Endpoints homepage 403d to our fetcher (noted; not retried beyond initial attempt).
+- **Policy / funder feeds (ARPA-H, NIH, NSF)**: no directly relevant 6/28–6/29 announcements.
+
+**Source-level failures**: Fierce Biotech behind Cloudflare and r.jina.ai temporarily rate-limited the domain (DDoS-suspicion block until 14:14 UTC June 29); article content reconstructed from BioSpace/PR Newswire mirrors and the advfn-syndicated full press release. Endpoints News homepage 403d to WebFetch. Both gaps did not affect the day's pick — primary press-release text for Talawar was obtained via the advfn mirror through r.jina.ai.
+
+Sources:
+- [Talawar / JATT II business combination press release (advfn mirror)](https://uk.advfn.com/stock-market/share-news/Talawar-Therapeutics-and-JATT-II-Acquisition-Corp/98824230)
+- [Fierce Biotech: Preclinical bispecific Talawar heads to Nasdaq via SPAC](https://www.fiercebiotech.com/biotech/preclinical-bispecific-company-talawar-heads-nasdaq-spac-support-eczema-asset)
+- [Apollo Therapeutics camoteskimab CHAMELEON Phase 2a AD readout](https://www.apollotx.com/news/apollo-therapeutics-anti-il-18-antibody-camoteskimab-met-the-primary-endpoint/)
+- [Sanofi lunsekimig VELVET (miss in AD, hit in asthma + CRSwNP)](https://www.sanofi.com/en/media-room/press-releases/2026/2026-04-07-05-00-00-3268809)
+- [IL-18 in atopic dermatitis — multifaceted driver of skin inflammation (JACI 2025)](https://www.jacionline.org/article/S0091-6749(25)00843-7/fulltext)
+- [IL-9 sensitizes human Th2 cells to IL-18 in AD (JACI 2024)](https://www.sciencedirect.com/science/article/pii/S0091674924011710)
+- [Frontiers — Bispecific and trispecific antibodies in atopic dermatitis (review, 2026)](https://www.frontiersin.org/journals/drug-discovery/articles/10.3389/fddsv.2026.1766021/full)
+- [Zymeworks–Theravance acquisition (passed over, off-axis)](https://www.biospace.com/press-releases/zymeworks-to-acquire-theravance-biopharma-inc)
+=== 2026-06-29T06:38:04-07:00 done  justice-biotech-brief (exit 0) (manual catch-up) ===
