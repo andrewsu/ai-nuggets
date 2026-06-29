@@ -34,6 +34,24 @@
 #                          back to the standard 180s retry sleep (default
 #                          3600 = 60 min).
 #
+# Deferred-catchup: shows that hit session-limit on every Phase-1 attempt
+# get added to a DEFERRED set. After the main Phase 2/3 runs for the
+# SUCCEEDED set, a backgrounded catchup subshell is spawned that:
+#   1. Sleeps until the latest reset across the DEFERRED shows
+#      (+CATCHUP_BUFFER_SECS).
+#   2. Re-runs Phase 1 for just the deferred slugs.
+#   3. Re-runs Phase 2 (rsync up, sbatch tts-batch.slurm, rsync mp3s back).
+#   4. Re-runs Phase 3 (publish_pending.py — pushes the new episodes).
+# The subshell is disowned so the parent cron job exits promptly. The
+# subshell does NOT recursively re-defer if it also hits session-limit;
+# audit catches that the next morning. Override knobs:
+#   CATCHUP_BUFFER_SECS=N    seconds past the reset wallclock before the
+#                            catchup wakes (default 300 = 5 min).
+#   CATCHUP_MAX_WAIT_SECS=N  upper bound on catchup sleep duration. If the
+#                            computed wait exceeds this, the catchup is
+#                            skipped entirely (defensive; the typical
+#                            session window is 5h, so 6h is the default).
+#
 # Add a new show by creating podcasts/<slug>/PROMPT.md — no edit here
 # needed.
 
@@ -45,6 +63,8 @@ STAGGER_SECONDS=${STAGGER_SECONDS:-600}
 SHOWS_LIMIT=${SHOWS_LIMIT:-0}
 PHASE2_TIMEOUT_SECS=${PHASE2_TIMEOUT_SECS:-3600}
 MAX_RESET_WAIT_SECS=${MAX_RESET_WAIT_SECS:-3600}
+CATCHUP_BUFFER_SECS=${CATCHUP_BUFFER_SECS:-300}
+CATCHUP_MAX_WAIT_SECS=${CATCHUP_MAX_WAIT_SECS:-21600}
 LEGACY_TTS=${LEGACY_TTS:-0}
 
 GARIBALDI_HOST=garibaldi.scripps.edu
@@ -54,6 +74,13 @@ GARIBALDI_STAGE_DIR=ai-nuggets-stage   # relative to remote $HOME
 # Read after `wait` to build SUCCEEDED / DEFERRED / FAILED sets. Date-stamped
 # so mid-day reruns don't see stale state from prior days.
 STATUS_DIR="$REPO/logs/.phase1-status-$(date +%F)"
+
+# TODAY is the date of this run as captured at script start. Used by Phase 2
+# (TTS_BATCH_DATE), Phase 3 (--date), and the deferred-catchup subshell —
+# the subshell must use the original date so it doesn't accidentally produce
+# tomorrow's episode if it sleeps past midnight (cron at 2am is safely
+# inside one day, but capture anyway).
+TODAY=$(date +%F)
 
 # Cron's PATH is /usr/bin:/bin only. publish_episode.sh calls `npx wrangler`
 # which lives under nvm. Prepend the current node bin so child processes
@@ -125,6 +152,95 @@ sleep_until_reset() {
   fi
   echo "=== $(date -Iseconds) session-limit hit; sleeping ${sleep_secs}s until $reset_str (+60s buffer) ===" | tee -a "$log"
   sleep "$sleep_secs"
+}
+
+# Spawn a backgrounded catchup subshell for the DEFERRED set. Reads the
+# global DEFERRED array (entries are "slug:reset-string"), computes the
+# latest reset wallclock, sleeps until then plus CATCHUP_BUFFER_SECS, then
+# re-runs Phase 1 → Phase 2 → Phase 3 for just those slugs. Disowned so
+# the parent script exits promptly. Logs to its own file under logs/.
+spawn_catchup() {
+  local slugs=() entry slug reset_str epoch
+  local now_epoch latest_reset_epoch=0
+  now_epoch=$(date +%s)
+
+  for entry in "${DEFERRED[@]}"; do
+    slug="${entry%%:*}"
+    reset_str="${entry#*:}"
+    slugs+=("$slug")
+    epoch=$(date -d "$reset_str today" +%s 2>/dev/null) || epoch=""
+    if [ -n "$epoch" ]; then
+      [ "$epoch" -le "$now_epoch" ] && epoch=$((epoch + 86400))
+      [ "$epoch" -gt "$latest_reset_epoch" ] && latest_reset_epoch=$epoch
+    fi
+  done
+
+  if [ "$latest_reset_epoch" -eq 0 ]; then
+    echo "$(date -Iseconds) catchup: couldn't parse any reset time across DEFERRED [${slugs[*]}]; skipping"
+    return
+  fi
+
+  local wait_secs=$((latest_reset_epoch - now_epoch + CATCHUP_BUFFER_SECS))
+  if [ "$wait_secs" -gt "$CATCHUP_MAX_WAIT_SECS" ]; then
+    echo "$(date -Iseconds) catchup: computed wait ${wait_secs}s exceeds CATCHUP_MAX_WAIT_SECS=${CATCHUP_MAX_WAIT_SECS}s; skipping (audit will surface the failure)"
+    return
+  fi
+
+  local catchup_log="$REPO/logs/catchup-$(date +%Y%m%dT%H%M%S).log"
+  local target_iso
+  target_iso=$(date -d "@$((latest_reset_epoch + CATCHUP_BUFFER_SECS))" -Iseconds)
+  echo "$(date -Iseconds) spawning catchup subshell for [${slugs[*]}]; wakes at $target_iso; log=$catchup_log"
+
+  (
+    exec >> "$catchup_log" 2>&1
+    echo "=== $(date -Iseconds) catchup start for [${slugs[*]}], target wake $target_iso ==="
+
+    local secs=$((latest_reset_epoch - $(date +%s) + CATCHUP_BUFFER_SECS))
+    if [ "$secs" -gt 0 ]; then
+      echo "=== sleeping ${secs}s ==="
+      sleep "$secs"
+    fi
+
+    echo "=== $(date -Iseconds) catchup Phase 1 (re-run) for [${slugs[*]}] ==="
+    cd "$REPO" || exit 1
+    local s prompt
+    for s in "${slugs[@]}"; do
+      prompt="$REPO/podcasts/$s/PROMPT.md"
+      [ -f "$prompt" ] && run_show "$prompt" "$s" &
+    done
+    wait
+
+    echo "=== $(date -Iseconds) catchup Phase 2: rsync up + sbatch ==="
+    rsync -a --delete \
+      --exclude='.git' --exclude='/.venv/' --exclude='node_modules' \
+      --exclude='podcasts/*/episodes' --exclude='podcasts/*/logs' \
+      --exclude='podcasts/*/feed.xml' --exclude='podcasts/*/audio' \
+      "$REPO/" "$GARIBALDI_HOST:$GARIBALDI_STAGE_DIR/"
+
+    set +e
+    timeout "$PHASE2_TIMEOUT_SECS" \
+      ssh "$GARIBALDI_HOST" \
+        "cd $GARIBALDI_STAGE_DIR && sbatch --wait --export=ALL,TTS_BATCH_DATE=$TODAY hpc/tts-batch.slurm"
+    set -e
+    echo "=== $(date -Iseconds) catchup sbatch exited rc=$? ==="
+
+    rsync -av \
+      --include='podcasts/' --include='podcasts/*/' \
+      --include='podcasts/*/episodes/' --include='podcasts/*/episodes/*.mp3' \
+      --exclude='*' \
+      "$GARIBALDI_HOST:$GARIBALDI_STAGE_DIR/" "$REPO/"
+
+    echo "=== $(date -Iseconds) catchup Phase 3: publish_pending.py ==="
+    python3 "$REPO/scripts/publish_pending.py" --date "$TODAY"
+
+    # Catch any straggling cron.log changes from the catchup's Phase 1.
+    if ! git diff --quiet -- 'podcasts/*/logs/cron.log'; then
+      git add 'podcasts/*/logs/cron.log' && git commit -m 'Update cron logs (catchup)' || true
+      git push || true
+    fi
+    echo "=== $(date -Iseconds) catchup done ==="
+  ) &
+  disown
 }
 
 # AUP-retry / model-ladder wrapper. Returns when:
@@ -296,8 +412,11 @@ if [ "$LEGACY_TTS" = "1" ]; then
   exit 0
 fi
 
-echo "$(date -Iseconds) Phase 2: batch TTS on Garibaldi"
-TODAY=$(date +%F)
+if [ "${#SUCCEEDED[@]}" -gt 0 ]; then
+  echo "$(date -Iseconds) Phase 2: batch TTS on Garibaldi for SUCCEEDED [${SUCCEEDED[*]}]"
+else
+  echo "$(date -Iseconds) Phase 2: batch TTS on Garibaldi (no SUCCEEDED set — Garibaldi will discover and exit clean)"
+fi
 
 # rsync today's scripts (and stubs) up. Exclude episodes/, feed.xml, logs,
 # and .git — Phase 2 only needs the inputs.
@@ -348,6 +467,13 @@ PHASE3_RC=$?
 if ! git diff --quiet -- 'podcasts/*/logs/cron.log'; then
   git add 'podcasts/*/logs/cron.log' && git commit -m 'Update cron logs' || true
   git push || true
+fi
+
+# Spawn the deferred-catchup subshell *after* the main Phase 3 push, so it
+# starts from a clean working tree. The subshell will sleep, then re-run
+# Phase 1/2/3 for the deferred slugs and do its own push.
+if [ "${#DEFERRED[@]}" -gt 0 ]; then
+  spawn_catchup
 fi
 
 echo "$(date -Iseconds) run_all_shows.sh done (phase3 rc=$PHASE3_RC)"
