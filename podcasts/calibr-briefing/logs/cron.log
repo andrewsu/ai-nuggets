@@ -1708,3 +1708,37 @@ Today's pair, both numbered for SKIP_TTS:
 - CHOSEN spotlight: Replimune RP1 — modality-class catalyst (oncolytic virus has had only Imlygic Oct 2015 in 11 yrs), ADCOM dynamics newly relevant, direct read-through to Foresite portfolio IO-combo regulatory robustness
 - Runners-up: Capricor (DMD CGT, but yesterday's spotlight was already MD-modality — Epicrispr FSHD); Biogen-Apellis pipeline cuts (already part of acquisition-aftermath narrative); ASCO Breakthrough wrap (already a single-day-event recap rather than a deep dive)
 === 2026-06-28T02:33:50-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-06-29T02:20:07-07:00 start calibr-briefing ===
+All six files written. SKIP_TTS=1 in the environment, so per PIPELINE.md I'm not running gen_tts, not publishing to R2, not editing feed.xml, and not committing — the orchestrator handles all of that after batch TTS.
+
+**Final summary**
+
+Today's pair shipped for Travis' Briefing, Monday 2026-06-29 (SKIP_TTS mode):
+- `2026-06-29-pharma-headlines.txt` (5 items, ~6 min)
+- `2026-06-29-ipsen-kartos-navtemadlin-spotlight.txt` (7 threads, ~8 min)
+- `.rss-item.xml` and `.commit-msg` stubs for each
+
+**Spotlight pick:** Ipsen acquires Kartos Therapeutics for up to $1.75B ($450M upfront + $1.3B milestones) — navtemadlin oral MDM2 inhibitor in myelofibrosis. Most-advanced MDM2 in oncology in a class otherwise a graveyard (Roche idasanutlin AML, Daiichi milademetan liposarcoma 2023, Boehringer brigimadlin discontinued). BOREAS Phase 3 in JAKi R/R MF showed ~3x SVR35 + 48% BMF reduction = first disease-modifying MDM2 signal. POIESIS combo Phase 3 readout 2027 anchors milestone tranche.
+
+**Headlines roundup:**
+1. Ipsen/Kartos $1.75B for navtemadlin (spotlight teaser) — Mon Jun 29
+2. Roche launches AXELIOS 1 next-gen sequencer (SBX/Xpandomer chemistry, $150/genome 30X duplex) — Mon Jun 29
+3. Larimar Therapeutics investor event 7:45 ET on nomlabofusp BLA + long-term FA OL data — Mon Jun 29
+4. Amneal Hopledo (ER oral levodopa-carbidopa) CHMP positive opinion for PD motor fluctuations — Mon Jun 29
+5. BridgeBio infigratinib (FGFR3) PROPEL 3 in achondroplasia children landed in NEJM — Sun Jun 28 pickup
+
+**Candidate funnel (Mon Jun 29 morning):**
+- Fierce Biotech / Fierce Pharma / Endpoints (403) / BioPharma Dive / STAT / BioSpace / Stocktitan / RTTNews / GlobeNewswire scanned: ~15 relevant candidates dated today (Mon Jun 29) or Sun Jun 28
+- WebFetch failures: Endpoints homepage 403 from this IP (skipped, used search snippets + direct article URLs); businesswire industry feed timeout (skipped)
+- **CHOSEN spotlight:** Ipsen-Kartos $1.75B navtemadlin — largest biotech deal of the day, class-precedent stakes for MDM2/p53 reactivation, late-stage de-risked oncology M&A pattern consistent with 1H26 trend, direct read-through to Calibr biomarker-positioning + Foresite hem-onc independence-vs-sell decisions
+- **Runners-up:** Roche AXELIOS 1 launch (huge for AI-discovery data-supply curve but more infrastructure than therapeutic — kept as headline 2); Larimar nomlabofusp event (significant FA regulatory catalyst but event happens during episode publish window, headlines coverage more appropriate); BridgeBio infigratinib NEJM (Sun Jun 28 already pickup, scope narrower than MDM2 class story)
+- **Not picked:** Amneal Hopledo (US already approved as CREXONT, EU adds geography not transformation — headline only); BioSpace ovarian cancer feature (analyst feature not catalyst); Lantheus LNTH-2501 extension PDUFA expiry (March news, not today's catalyst)
+
+Files written (SKIP_TTS mode — orchestrator handles batch TTS + commit):
+- `podcasts/calibr-briefing/scripts/2026-06-29-pharma-headlines.txt`
+- `podcasts/calibr-briefing/scripts/2026-06-29-pharma-headlines.rss-item.xml`
+- `podcasts/calibr-briefing/scripts/2026-06-29-pharma-headlines.commit-msg`
+- `podcasts/calibr-briefing/scripts/2026-06-29-ipsen-kartos-navtemadlin-spotlight.txt`
+- `podcasts/calibr-briefing/scripts/2026-06-29-ipsen-kartos-navtemadlin-spotlight.rss-item.xml`
+- `podcasts/calibr-briefing/scripts/2026-06-29-ipsen-kartos-navtemadlin-spotlight.commit-msg`
+=== 2026-06-29T02:35:42-07:00 done  calibr-briefing (exit 0) ===
