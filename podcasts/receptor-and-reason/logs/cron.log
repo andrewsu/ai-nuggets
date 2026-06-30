@@ -1844,3 +1844,37 @@ Files produced (SKIP_TTS mode — orchestrator handles TTS + R2 + feed + commit)
 - doi:10.64898/2026.06.22.733841 — slow-wave-sleep tDCS modulates AD biomarker clearance — passed (small n, exploratory)
 - doi:10.64898/2026.06.16.732555 — Decoding chronic pain from sEEG — passed (compelling but less drug-discovery-actionable)
 === 2026-06-29T06:35:53-07:00 done  receptor-and-reason (exit 0) (manual catch-up) ===
+=== 2026-06-30T02:50:09-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 3:40am (America/Los_Angeles)
+=== 2026-06-30T03:01:55-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-06-30T03:01:55-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-06-30T03:01:55-07:00 session-limit hit; sleeping 2345s until 3:40am (+60s buffer) ===
+=== 2026-06-30T03:41:00-07:00 start receptor-and-reason (retry 1) ===
+All four files in place: script (`.md`), RSS-item stub, commit-msg stub, and the appended ledger entry. Per SKIP_TTS mode in PIPELINE.md, the orchestrator (`scripts/publish_pending.py`) does TTS, R2 publish, feed update, and commit after the batch TTS run finishes — I don't touch those steps here.
+
+**Episode 48 — Receptor & Reason, 2026-06-30 (Tuesday)**
+
+Files in place under SKIP_TTS handoff:
+
+- `scripts/2026-06-30-receptor-and-reason.md` — script written earlier in this run (10 items, ~17 min spoken target). Opens on the Johnson lab Kentucky APOE4-specific ARIA paper and closes on UCSF's Clinical Reasoning Graphs.
+- `scripts/2026-06-30-receptor-and-reason.rss-item.xml` — RSS item stub with `__LENGTH__` / `__DURATION__` placeholders (XML-validated)
+- `scripts/2026-06-30-receptor-and-reason.commit-msg` — single-line commit message
+- `state/shipped.jsonl` — appended today's 10-item record (file still parses line-by-line)
+
+**Today's picks (all Tier 1, bioRxiv heavy):**
+
+1. APOE4-specific ARIA from anti-amyloid immunotherapy in EFAD mice (Johnson lab, Kentucky) — *opener*
+2. mTOR drives Tg2576 CAA cerebrovascular dysfunction + BBB breakdown; rapamycin rescue
+3. Huda Zoghbi CHIP-LMO7-BAG5 → telmisartan + MPA-2 disrupt tau clearance node
+4. PRRT1/SynDIG4 cryo-EM — Cys825 lipid modification gates GluA1-selective LTP
+5. CaMKIIα I205K phase-separation-deficient KI mouse; atomoxetine rescue; human ADHD-ID variant
+6. Btbd11 condensate at glutamatergic interneuron synapses
+7. Antipsychotic frontal-cortex transcriptome meta-analysis overlaps post-mortem schizophrenia DEGs
+8. PTSD GWAS FOXP2 in amygdala ITCs — counter-intuitive direction (less FOXP2 → less freezing)
+9. RS67333 5-HT4 ligand actually drives striatal effects via AChE inhibition
+10. UCSF Clinical Reasoning Graphs — competence without consistency in frontier LLMs
+
+**Candidate funnel:** the 03:01 run's candidate funnel was lost when the session-limit cutoff truncated stdout; the final selection landed at 9 Tier-1 bioRxiv items + 1 Tier-2 arXiv item, no Tier 4 fallback needed. Btbd11 was on yesterday's 06-29 shortlist as "not picked" — eligible and selected today. Item depth justified by full-text reads: bioRxiv `.full` HTML for all 9 preprints via `scripts/fetch_preprint.py`; arXiv PDF for Clinical Reasoning Graphs. No source-level failures recorded for this re-invocation.
+
+This run was retry 1 against an interrupted 02:50 invocation; the script existed but the publishing stubs and ledger entry didn't. Completing those was the right move — the script was solid and re-doing selection would have diverged from the audio that's already going to be generated tonight.
+=== 2026-06-30T03:46:04-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
