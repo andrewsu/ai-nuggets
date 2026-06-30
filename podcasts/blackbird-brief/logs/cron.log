@@ -236,3 +236,30 @@ Files written:
 
 Candidate funnel: bioRxiv (1014 unique DOIs over 2026-06-22 to 2026-06-29, 11 JHU/Lieber/UMB-corresponding hits — Simpson PAH chosen; Casadevall Lomentospora AmpB-resistance dropped on market size; Farber LipoGlo v5, Simonetti agQVOA HIV, Pergola D2 imaging all dropped as already-shipped this week; tools/basic-science items dropped). PubMed (107 records 2026-06-26 to 2026-06-29, all therapeutic-hit candidates were non-JHU-led or peripheral). High-tier journals: 3 Cell/Nat hits, all JHU contributor-not-lead. Institutional press (JHU/Lieber/UMB sites): Cloudflare-blocked direct, r.jina.ai proxy returns CAPTCHA shells, no surfaceable in-window news. Editorial call: single-pick "thin day is a short episode" per PIPELINE.md.
 === 2026-06-29T02:29:53-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-06-30T02:10:09-07:00 start blackbird-brief ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CcZBqtVwciz8Az9icGtbe
+=== 2026-06-30T02:13:17-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-06-30T02:13:17-07:00 AUP-refusal detected for blackbird-brief; retrying in 180s ===
+=== 2026-06-30T02:16:17-07:00 start blackbird-brief (retry 1) ===
+Today's Blackbird Brief Sourcing Radar (Tuesday 2026-06-30) is staged in SKIP_TTS mode. Per PIPELINE.md, the orchestrator (`scripts/publish_pending.py`) will handle TTS, R2 upload, feed edit, and commit after batch TTS completes on Garibaldi.
+
+**Pick: two-item radar plus a portfolio note.**
+
+Portfolio note — JHTV today (2026-06-30) posted a detailed feature on **1104health**, explicitly identifying the company as a Blackbird BioVentures portfolio investment with JHTV-licensed know-how. Founder Rose Wang; JHU Community Clinical Research Network + melanoma group (Lipson + Warrier) collaboration; pivoted from patient-facing to clinician-marketplace embedding clinical-trial options in community-oncologist workflow with pharma-funded coordination subsidies. First public detailed confirmation of the previously-unnamed trial-enrollment platform in our portfolio reference. Saved for Sunday Portfolio Watch (2026-07-05). **Portfolio memory updated** at `podcasts/blackbird-brief/memory/blackbird-portfolio.md`.
+
+Lead — Shen K, Wan M (corresponding), Cao X et al, Johns Hopkins Orthopaedic Surgery, "Angiogenin mediates cell-cell fusion as a mitochondrial RNA processing enzyme," *Bone Research* 14 (2026-06-29), DOI 10.1038/s41413-026-00545-1, PMID 42374020. ANG (RNase 5) — the ALS-mutation-gene founding member of the RNase A family — translocates to mitochondria on fusion initiation and processes mt-tRNA 3'-ends to release mt-rRNAs/mRNAs for new mitoribosome biogenesis. Catalytically-dead K40I ALS variant doesn't rescue. Ang−/− mice show elevated BMD + reduced osteoclasts (high-bone-mass via suppressed osteoclast-precursor fusion) and reduced muscle weight + 46% drop in treadmill work + impaired BaCl₂-injury muscle regeneration rescued by viral wtANG. Bidirectional method-of-use IP path: ANG inhibition for osteoporosis (mechanism-distinct from bisphosphonates/denosumab); ANG mimetics for sarcopenia/muscle regeneration (orthogonal to myostatin/activin axis, complementary in the GLP-1 lean-mass-loss window). Existing chemistry from Hu/Tufts ALS lane re-positionable.
+
+Second pick — Kumari A, Garg V (corresponding), UMB SOM Pharmacology, "Mechanistic basis of EMRE's essential role in MCU regulation," bioRxiv v1 2026-06-29, DOI 10.64898/2026.06.25.733848. New high-sensitivity functional assay for MCU in intact mitochondria + mechanism for EMRE (matrix-Ca²⁺ inhibition + active permeation throughput). Explicit translational framing — "enabling discovery of uniporter modulators." UM Ventures × Blackbird co-investment is the natural structural fit; MCU pharmacology (cardiac IR-injury, neurodegeneration) has been blocked for fifteen years by the missing assay.
+
+Files written:
+- `podcasts/blackbird-brief/scripts/2026-06-30-radar-hopkins-angiogenin-mitoribosome-bone-muscle.md`
+- `podcasts/blackbird-brief/scripts/2026-06-30-radar-hopkins-angiogenin-mitoribosome-bone-muscle.rss-item.xml`
+- `podcasts/blackbird-brief/scripts/2026-06-30-radar-hopkins-angiogenin-mitoribosome-bone-muscle.commit-msg`
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` (1104health updated from ⚠-unnamed to full entry)
+
+RSS stub validated as parseable XML with `__LENGTH__` / `__DURATION__` placeholders intact for the orchestrator.
+
+Candidate funnel — bioRxiv+medRxiv (540 unique 2026-06-27..30 records, 8 JHU/UMB/Lieber hits: Wan/Cao ANG **chosen lead**; Garg EMRE/MCU **chosen second**; Worley/Lao NPTX2 v3 dropped — core science from October 2025 v1; Eghrari microRNA-184 JHU Wilmer dropped — full text unavailable on <24h preprint; Al-Fawakhiri motor learning v2, Farber LipoGlo v5, Brown genetic-counseling videos, Zhu countdown paradox MCI all dropped). PubMed (144 records, JHU/UMB/Lieber affiliation, entry-date 2026-06-27..30): therapeutic-flagged Yakovlev N-cadherin/UMB, Ansari Treg-review/JHU, Rashid replisome-biophysics/JHU, Nakazawa Th17-biomarker/JHU, Chen GeoPep-ML/JHU+OSU, Erel-Akbaba BATUS/UConn-led; Islam fibroid + Rehg mPFC-LC already covered Sunday — all dropped. High-tier journals (7 hits 2026-06-27..30): none JHU/UMB/Lieber-led therapeutic. Institutional press: JHTV's 1104health feature (Blackbird portfolio — held for Sunday); SmartTIVA closed-loop anesthesia + DecisionRx pharmacogenomics dropped as outside thesis. Source failures: nature.com auth wall (r.jina.ai proxy used); bioRxiv full-text 253 chars on the microRNA-184 v1 <24h preprint; one PubMed eFetch 429 (no info lost). Editorial call: two-pick day with the strongest JHU-led peer-reviewed translational item (ANG bone+muscle) leading and a brief UMB platform-tech second pick (EMRE MCU assay), with the portfolio update properly held for Sunday rather than miscategorized into today's Radar.
+=== 2026-06-30T02:35:24-07:00 done  blackbird-brief (exit 0) (retry 1) ===

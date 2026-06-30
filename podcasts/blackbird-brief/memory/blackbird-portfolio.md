@@ -138,12 +138,28 @@ competitors below. These are the "so what for Blackbird" hooks.
 - **Watch:** translation-activating oligos / "RNA upregulation" players (e.g.
   Camp4, others); antisense/oligo platforms.
 
-### Clinical-trial enrollment platform — patient-facing digital ✅
-- **What:** Patient-facing digital platform to **accelerate clinical-trial
-  enrollment**. ⚠ PI / institution / company name to confirm. (Note: the only
-  clearly non-therapeutic asset in the portfolio.)
-- **Watch:** trial-enrollment / patient-matching tech; decentralized-trial
-  tooling.
+### 1104health — clinical-trial enrollment marketplace ✅
+- **What:** Clinical-trial enrollment and access platform. **Pivoted from a
+  patient-facing model to a clinician-focused marketplace** that embeds clinical-
+  trial options into the community oncologist's workflow, and uses
+  **pharma-funded subsidies** to compensate for previously unreimbursed trial-
+  coordination work — bridging community oncology to academic medical centers.
+  (The only clearly non-therapeutic asset in the portfolio.)
+- **People:** **Rose Wang** — founder/CEO; engineer and serial entrepreneur; founded
+  after her husband died of cancer in 2019.
+- **JHU connection:** **Community Clinical Research Network** for the initial
+  pilot; **melanoma group** (Evan J. Lipson, MD; Govind Warrier, MD) co-developed
+  technology; **JHTV** licensed the proprietary know-how.
+- **Status:** Blackbird funded the JHU pilot, then **Blackbird BioVentures
+  invested** in the company. Subsequent non-dilutive grants from Maryland
+  Innovation Initiative and TEDCO. Pre-launch as of June 2026; preparing for
+  broader rollout at national oncology conferences and regional expansion.
+  Source: JHTV news, 2026-06-30 ("From Personal Loss to System Redesign: How
+  1104health Is Rethinking Cancer Care Collaboration").
+- **Watch:** trial-enrollment / patient-matching tech (Deep Lens, Massive Bio,
+  Trial Library, Beacon Sutter); pharma sponsor-side spend on community-oncology
+  enrollment (BMS, Merck, Pfizer trial-enrollment partnerships); FDA / DOJ stance
+  on physician-coordination subsidies (anti-kickback safe-harbor considerations).
 
 ---
 
@@ -164,6 +180,7 @@ competitors below. These are the "so what for Blackbird" hooks.
 - Schizophrenia NewCo: company name; DC timing confirmation.
 - Crohn's/colitis GCPII program: spinout status / name.
 - RNA upregulation platform: PI, institution, company name.
-- Trial-enrollment platform: PI, institution, company name.
-- Full 18-company list (only ~5 programs identified publicly so far).
+- 1104health: Blackbird BioVentures round size / lead; whether the pivot from
+  patient-facing to clinician-marketplace required new IP filings.
+- Full 18-company list (only ~6 programs identified publicly so far).
 - Advisory board roster (blackbirdlab.org/advisors).
