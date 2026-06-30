@@ -107,6 +107,12 @@ back to plug a 2- or 4-week-old paper is not.
 # 3. Episode format
 
 - **One episode per day, ~5 minutes.**
+- **Hard cap: 1150 words in the spoken body** (everything after `## Script`,
+  excluding `Paper link:` lines). At Voxtral's pace ~5 min lands around
+  800 words; 1150 is the ceiling, not the target. If you have more to
+  say than fits, cut — don't ship a 10-minute essay. The compression is
+  the editorial work. See `PIPELINE.md` "Writing the summary" for what
+  to drop first (methodological detail that doesn't change the take).
 - Pick the single best item from your candidates, **read the full text
   before drafting** (see "Writing the summary" in `PIPELINE.md`), then
   write a punchy 3–5 sentence summary — why it matters, what's novel.

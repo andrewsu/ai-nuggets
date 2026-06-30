@@ -2086,3 +2086,28 @@ All three deliverables are in place under `podcasts/biomedical-agentic-ai/script
 
 Clair3-Connect won on direct fit with Su Lab interests (agentic AI + bioinformatics + tool-interface design + open-science tooling), the clean numerical demonstration (60/60, 6.8–14× token savings, 4% vs 35% variance), and the generalizable bifurcation prediction for the agentic-tool ecosystem.
 === 2026-06-29T02:05:20-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-06-30T02:00:09-07:00 start biomedical-agentic-ai ===
+All three deliverables are in place under `podcasts/biomedical-agentic-ai/scripts/`:
+
+- `2026-06-30-nmragent-peak-atom-evidential-reasoning-natural-product-elucidation.md` — the spoken script (1146 words, under the 1150 cap)
+- `2026-06-30-nmragent-peak-atom-evidential-reasoning-natural-product-elucidation.rss-item.xml` — feed item stub with `__LENGTH__` / `__DURATION__` placeholders (XML-validated)
+- `2026-06-30-nmragent-peak-atom-evidential-reasoning-natural-product-elucidation.commit-msg` — one-line commit message
+
+`SKIP_TTS=1` is active, so per PIPELINE.md I deliberately did not run `gen_tts.py`, did not publish to R2, did not edit `feed.xml`, and did not stage/commit — `publish_pending.py` will do all of that after the batch TTS job on Garibaldi.
+
+## Candidate funnel — June 29–30, 2026
+
+- **bioRxiv** (api.biorxiv.org details, 2026-06-29→2026-06-30, full pagination, 237 unique DOIs across 8 pages): 15 keyword hits; 14 spurious ("llm" inside "small", "agent" as chemical/microbial/contrast agent, "autonomous" as cell-biology autonomy, "ontology" inside "chondrocyte ontology", "mcp" inside "...mcp..." abbreviation). One substantive shortlist item — **Practical Use of Advanced AI Frameworks on Real-Life Scientific Problems: Three Case Studies** (10.64898/2026.06.23.734132, Sinitskiy group, Northeastern + CUNY) — but this is the same group whose "I" paper anchored the 2026-06-28 episode; the new piece is a companion with three different case studies (treatment non-response in IMIDs, OCSR, drug-property prediction). Excluded to avoid back-to-back redundancy.
+- **arXiv** (cache `/tmp/ai-nuggets-arxiv-cache.xml` fetched 09:00 UTC, 500 entries, agent+biomedical strict filter within 2-day window, 146 hits): substantive biomedical-agentic shortlist after dropping off-domain matches —
+  - **CHOSEN — NMRAgent** (2606.29776v1, HKUST-GZ + USTC + PUMC + Shanghai AI Lab) — full PDF (18.9 MB) downloaded via curl, extracted with mutool
+  - DEEPMED Search (2606.29746v1) — open-source agentic medical deep-research demo paper; Neo4j KG + PubMed + web router + causal-consistent multi-agent debate verification; strong runner-up but IJCAI Demo Track scope (6 pages) lighter on quantitative evaluation
+  - Clinical-corpus redundancy paper (2606.29605v1) — provenance-based decomposition shows 10.9% unique / 79.4% redundant in LLM-generated clinical training data; strong methodological angle
+  - TopoAgent (2606.29763v1) — agentic topological data analysis for medical imaging; narrower domain
+  - Clarus (2606.30246v1) — research-collaboration infrastructure; not biomedical-specific
+  - MCP Server Architecture Patterns (2606.30317v1) — infrastructure cataloguing; not biomedical
+  - Entity Binding Failures in Tool-Augmented Agents (2606.30531v1) — enterprise workflows, not biomedical
+- **PubMed** (last 5 days): no displacing item against the NMRAgent architectural pattern
+- **ChemRxiv / news / policy** (ARPA-H, NIH, NSF, HHS): no displacing biomedical-agentic-AI item in window
+
+NMRAgent won on (a) direct fit with Su Lab interests in agentic AI applied to biomedical research, chemical knowledge graphs, and open-science tooling (KG integrates LOTUS / COCONUT / Natural Products Atlas / ChEMBL / Zitnik PrimeKG), (b) the cleanest quantitative result this week (Top-10 67.13% vs 36.48% best baseline on scaffold-split NMRGym; 81%/70% on two other benchmarks; frontier LLMs solo at ~0%), (c) wet-lab validation on two novel natural products plus four structural-revision corrections — moves the contribution from benchmark to real, (d) the templatable three-level hierarchical pattern (Knowledge-Level KG retrieval → Molecular-Level dual candidate construction → Fragment-Level verifier-driven recombination), (e) the clean editorial frame "the agent is the scaffolding, not the model" that follows directly from baseline LLMs scoring near zero solo.
+=== 2026-06-30T02:10:32-07:00 done  biomedical-agentic-ai (exit 0) ===
