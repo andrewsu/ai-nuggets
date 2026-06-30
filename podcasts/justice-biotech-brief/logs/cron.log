@@ -713,3 +713,43 @@ Sources:
 - [Frontiers — Bispecific and trispecific antibodies in atopic dermatitis (review, 2026)](https://www.frontiersin.org/journals/drug-discovery/articles/10.3389/fddsv.2026.1766021/full)
 - [Zymeworks–Theravance acquisition (passed over, off-axis)](https://www.biospace.com/press-releases/zymeworks-to-acquire-theravance-biopharma-inc)
 === 2026-06-29T06:38:04-07:00 done  justice-biotech-brief (exit 0) (manual catch-up) ===
+=== 2026-06-30T02:40:09-07:00 start justice-biotech-brief ===
+Script, RSS item stub, and commit message stub are in place. Per SKIP_TTS=1, I'll stop here and leave the orchestrator to run TTS, publish to R2, update feed.xml, and commit.
+
+### Justice's Biotech Brief — 2026-06-30 candidate funnel
+
+**bioRxiv** (2-day window 2026-06-29 to 2026-06-30, full collection 240 entries, 237 unique DOIs after revisions pulled across 8 paginated pages — keyword filter: VEGF, PD-L1, PD-1, T cell engager, TCE, bispecific, trispecific, CAR-T, ADC, JAK, immunotherapy, checkpoint):
+- **Droplet single-cell CRISPR screens identify regulators of T cell-mediated target-cell killing** (Geiger lab, IRB Bellinzona / ETH Zürich) — https://www.biorxiv.org/content/10.64898/2026.06.23.734054v1 — **CHOSEN** (full text via jina PDF, 32 pages)
+- Synapse-based bispecific immune cell engager model predicts invariance across E:T ratios (Chevalier et al.) — https://www.biorxiv.org/content/10.64898/2026.06.24.733437v1 — full text via jina; narrow PK/PD modeling, less translational
+- PD-L1 deletion or blockade regulate macrophage antigen presentation and checkpoint molecule surface levels — https://www.biorxiv.org/content/10.64898/2026.06.23.734016v1 — abstract; mechanism-only, incremental
+- CD8 T cells with classical and NK-like cytotoxic programs in HBV — viral immunology, off-thesis
+- Anti-amyloid immunotherapy + APOE4 ARIA — neuroscience, off-thesis
+- OpenGerminal antibody design pipeline — bioinformatics tool release, off-thesis
+- AIRE B-cell germinal center checkpoint v2 revision — basic autoimmunity, not Justice's translational focus
+
+**News / product launches** (Fierce Biotech, Endpoints, STAT, June 29–30):
+- Ipsen → Kartos $450M upfront / $1.75B total, navtemadlin MDM2 inhibitor as Jakafi add-on in myelofibrosis (POIESIS Phase 3, topline 2027) — strong news story, **JAK-adjacent but the drug is MDM2/p53, not in Justice's TCE/ADC/CAR-T/checkpoint core**; runner-up
+- AstraZeneca efzimfotase alfa MULBERRY Phase 3 positive in pediatric hypophosphatasia, HICKORY missed adult 6MWT — off-thesis (rare bone metabolic)
+- Praxis relutrigine PDUFA pushed to Dec 27, 2026 — regulatory/seizure asset, off-thesis
+- Talawar TLWR SPAC + IL-13×IL-18 bispecific — **already covered in yesterday's 2026-06-29 episode** (TALA-125)
+- Abivax obefazimod UC safety update — covered by calibr-briefing today, off-thesis here
+- AstraZeneca $34M kickback settlement (Texas AG); FDA gene therapy lead Vijay Kumar departing — business news, not therapeutic development
+- BioCryst exits internal discovery; Evommune Phase 2b chronic hives miss — off-thesis
+- Ipsen/Kartos was the only news item that touched Justice's interest tags (JAK), but its asset is mechanistically not aligned
+
+**Policy / funder** (ARPA-H, NIH, NSF):
+- ARPA-H news: nothing dated June 28–30 (last item June 23, MOCS program)
+- NIH press releases: nih.gov blocked WebFetch with HTTP 403
+- NSF news: not checked after NIH 403 — no obvious immuno/oncology funder story surfaced from the news searches
+
+**Source failures noted**: nih.gov/news-events/news-releases returned HTTP 403 (one attempt, no retry — no obvious workaround for the daily run); the agentic Geiger-paper PDF was reachable via jina r.jina.ai when the direct bioRxiv URL 403'd as expected. Other sources clean.
+
+**Selection rationale**: Geiger droplet scCRISPR was chosen over the Ipsen/Kartos deal because (a) it sits directly in Justice's core areas — bispecific T cell engagers, CAR-T, TCR-T — across three recognition modalities in one paper, (b) it produces a translatable manufacturing-window lever (transient low-dose rapamycin during ex vivo expansion improves adoptive transfer of 1G4-TCR-T against A375) that drops into existing protocols without a new edit, and (c) it offers a cleaner conceptual reframe (cytotoxic execution vs. anabolic fitness as dissociable T cell programs, with mTORC1 as the dial) that ports to the trispecific TCE and ADC+TCE work Justice is doing. The Ipsen/Kartos deal is a major industry story but the asset (navtemadlin) is an MDM2/p53 small molecule for myelofibrosis — JAK-adjacent only in clinical positioning, not in Justice's TCE/ADC/CAR-T core.
+
+Files written:
+- `podcasts/justice-biotech-brief/scripts/2026-06-30-droplet-scrispr-rptor-mtorc1-tce-cart.md`
+- `podcasts/justice-biotech-brief/scripts/2026-06-30-droplet-scrispr-rptor-mtorc1-tce-cart.rss-item.xml`
+- `podcasts/justice-biotech-brief/scripts/2026-06-30-droplet-scrispr-rptor-mtorc1-tce-cart.commit-msg`
+
+Per SKIP_TTS=1, no TTS / R2 publish / feed edit / commit performed — that's the orchestrator's job after batch TTS finishes.
+=== 2026-06-30T02:47:51-07:00 done  justice-biotech-brief (exit 0) ===
