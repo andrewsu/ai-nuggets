@@ -1742,3 +1742,48 @@ Files written (SKIP_TTS mode — orchestrator handles batch TTS + commit):
 - `podcasts/calibr-briefing/scripts/2026-06-29-ipsen-kartos-navtemadlin-spotlight.rss-item.xml`
 - `podcasts/calibr-briefing/scripts/2026-06-29-ipsen-kartos-navtemadlin-spotlight.commit-msg`
 === 2026-06-29T02:35:42-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-06-30T02:20:09-07:00 start calibr-briefing ===
+Both episodes written. SKIP_TTS=1 is set, so I'm skipping audio generation, R2 publish, feed update, and commit per the PIPELINE.md SKIP_TTS rules — the orchestrator's `publish_pending.py` handles those after batch TTS finishes.
+
+## Candidate funnel — Calibr 2026-06-30
+
+**Sources surveyed:**
+- Fierce Biotech homepage + /deals — scanned ~12 items, 6 fresh & relevant
+- BioPharma Dive homepage — scanned ~8 items, 5 fresh & relevant
+- STAT News /biotech — scanned ~6 items, 3 fresh & relevant (most behind paywall)
+- Fierce Pharma homepage — scanned ~6 items, 3 fresh & relevant
+- Endpoints News — 403 forbidden on root and category pages, source skipped (no retry needed; the day's nugget was abundantly captured by Fierce Biotech + STAT + BioPharma Dive + press releases)
+- BioCentury, Clinical Trials Arena, GEN, Biotech Voyager — not directly scraped today; signal already converged from primary feeds and press releases
+
+**Substantive shortlist (post-keyword-cleanup, Tue Jun 30 morning):**
+- Zymeworks acquires Theravance Biopharma for ~$929M ($17/sh + ampreloxetine CVR) — biopharmadive.com/news/theravance-clinical-setback-929-million-buyout/823952/ — **CHOSEN (headline lead)**
+- Abivax ABTECT Maintenance Part 2 + expanded P3 safety database / ABVX +25% — statnews.com/2026/06/30/abivax-obefazimod-ulcerative-colitis-maintenance-trial-safety-data/ + ir.abivax.com/news-releases/news-release-details/abivax-reports-positive-abtect-maintenance-part-2-results/ — **CHOSEN (spotlight + headline #2)**
+- BioCryst winds down internal discovery + closes Birmingham AL — globenewswire.com/news-release/2026/06/29/3318829 — **CHOSEN (headline #3)**
+- Talawar Therapeutics / JATT II SPAC + $285M PIPE for TALA-125 (IL-13 × IL-18 bispecific in AD) — prnewswire.com/news-releases/talawar-therapeutics-and-jatt-ii-acquisition-corp-announce-definitive-business-combination-agreement — **CHOSEN (headline #4)**
+- Vijay Kumar exits FDA Office of Therapeutic Products (CBER cell+gene) — statnews.com/2026/06/29/vijay-kumar-exits-fda-office-of-therapeutic-products/ — **CHOSEN (headline #5)**
+- FDA rejects Sobi's gout drug over manufacturing issues — fiercepharma.com/manufacturing/fda-rejects-sobi-gout-drug-over-manufacturing-issues-sparing-amgen-blockbuster — dropped (manufacturing CRL, secondary to Calibr focus)
+- Evommune Phase 2b fails in chronic spontaneous urticaria — fiercebiotech.com/biotech/evommunes-phase-2b-flops-ending-challenge-novartis-hives — dropped (already five strong items)
+- Scancell bids for Nasdaq-listed Neuphoria — fiercebiotech.com/biotech/uk-based-scancell-bids-nasdaq-listed-neuphoria-increase-profile-us-investors — dropped (low Calibr/Foresite relevance)
+- Pfizer sigvotatug vedotin disappoints in lung cancer — biopharmadive.com/news/pfizer-sigvotatug-vedotin-lung-cancer-results-seagen/823501/ — dropped (a few days old; Pfizer/Seagen frame)
+- AstraZeneca $34M Texas kickback settlement — statnews.com/pharmalot/2026/06/29/astrazeneca-kickback-charges-texas-settlement/ — dropped (legal settlement, not pipeline)
+- Viridian Lumvoa FDA approval — businesswire.com/news/home/20260625016249 — dropped (June 26, already old)
+- Ionis Tryngolza expanded approval — biopharmadive.com/news/ionis-wins-fda-ok-Tryngolza-broader-label-expansion/823717 — dropped (June 24, already old)
+- Moderna mFluSiva FDA panel — biopharmadive.com/news/moderna-mflusiva-mrna-flu-vaccine-fda-committee-vote/823275 — dropped (June 18, already old)
+- Lilly invests in Absci hair-loss platform — statnews.com/2026/06/24/eli-lilly-absci-hair-loss-treatments — dropped (June 24, already old, AI-relevant but stale)
+
+**Selection rationale.** The spotlight is the single most market-moving fresh development: Abivax's obefazimod safety reset rebuilt the NDA path and the takeout premium overnight on a first-in-class oral miR-124 enhancer with arguably best-in-disease UC efficacy. The mechanism is novel and educationally valuable; the M&A read-through into a large I&I market is directly relevant to the Foresite portfolio's I&I exposures. Headline lead is Zymeworks-Theravance because it landed late Monday outside yesterday's briefing window and represents a new royalty-management M&A model distinct from the recent late-stage-pipeline buyouts. The remaining three headlines round out FDA regulatory (Kumar/CBER), commercial-pivot signal (BioCryst), and I&I bispecific SPAC pattern (Talawar) — all surfaced yesterday in the late news cycle and fresh to Calibr-briefing.
+
+**Artifacts written (SKIP_TTS mode — no audio, no commit; orchestrator publishes):**
+- `podcasts/calibr-briefing/scripts/2026-06-30-pharma-headlines.txt` + `.rss-item.xml` + `.commit-msg`
+- `podcasts/calibr-briefing/scripts/2026-06-30-abivax-obefazimod-uc-spotlight.txt` + `.rss-item.xml` + `.commit-msg`
+
+Sources:
+- [Theravance, after clinical setbacks, agrees to $929M buyout — BioPharma Dive](https://www.biopharmadive.com/news/theravance-clinical-setback-929-million-buyout/823952/)
+- [Abivax seeks to ease safety concerns with new data, boosting shares — STAT](https://www.statnews.com/2026/06/30/abivax-obefazimod-ulcerative-colitis-maintenance-trial-safety-data/)
+- [Abivax Reports Positive ABTECT Maintenance Part 2 Results — Abivax IR](https://ir.abivax.com/news-releases/news-release-details/abivax-reports-positive-abtect-maintenance-part-2-results/)
+- [BioCryst Sharpens Scientific Focus on External Innovation — GlobeNewswire](https://www.globenewswire.com/news-release/2026/06/29/3318829/29446/en/BioCryst-Sharpens-Scientific-Focus-on-External-Innovation-with-Wind-Down-of-Internal-Discovery-Programs-and-Closure-of-Birmingham-Research-Facility.html)
+- [Talawar Therapeutics and JATT II Announce Definitive Business Combination Agreement — PRNewswire](https://www.prnewswire.com/news-releases/talawar-therapeutics-and-jatt-ii-acquisition-corp-announce-definitive-business-combination-agreement-to-create-publicly-listed-biotechnology-company-developing-potentially-best-in-class-bispecifics-for-ii-diseases-302812610.html)
+- [FDA's top gene therapy regulator is leaving his role — STAT](https://www.statnews.com/2026/06/29/vijay-kumar-exits-fda-office-of-therapeutic-products/)
+- [AbiVax falls as safety worries cloud 'landmark' immune drug results (June 1 context) — BioPharma Dive](https://www.biopharmadive.com/news/abivax-obefazimod-abtect-ulcerative-colitis-results-cancer/821685/)
+- [Obefazimod: A First-in-class Drug for the Treatment of Ulcerative Colitis — Journal of Crohn's and Colitis (mechanism reference)](https://academic.oup.com/ecco-jcc/article/17/10/1689/7146589)
+=== 2026-06-30T02:34:46-07:00 done  calibr-briefing (exit 0) ===
