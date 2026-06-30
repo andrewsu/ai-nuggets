@@ -184,3 +184,15 @@ Script and stubs in place (SKIP_TTS=1; orchestrator handles TTS + feed + commit)
 - No fresh hits surfaced from BG2, TWIML, No Priors, MLST, Lex Fridman, Lunar Society, 80,000 Hours, a16z in window
 - WhynotTV: no fresh episode in window
 === 2026-06-29T02:42:09-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-06-30T02:30:09-07:00 start jinglin-ai-pulse ===
+Today's episode is drafted and queued for batch TTS:
+
+- **Script** (`2026-06-30-horizon-scaling-and-gradual-disempowerment.md`) — 2,062 spoken words, well inside the 1,500-2,200 target.
+- **Through-line**: the field stopped scaling parameters and started scaling the scaffolding around the model.
+  - **Twitter Pulse** — Intern Science's Agents-A1 (35B agent matches trillion-param systems via 45K-token rollouts; top of HF Daily Papers June 30), Orca world FM (57 authors, frozen backbone + light decoders), Meta's TUA-Bench (Claude Opus 4.8 max effort hits only 65.8% on terminal-use), TACO, AsyncOPD.
+  - **Money Moves** — 8090 Labs $135M Series A led by Salesforce Ventures with Chamath taking his first post-Facebook operating CEO seat; Omen AI $31M Series A for data-center coolant monitoring (TensorWave customer). Same-day pairing read as the agentic-software stack buying supply-chain insurance against the physical layer.
+  - **Podcast Deep Cut** — Cog Rev AI:AM #4 (June 27, 91 min). Duvenaud's "Gradual Disempowerment" framed as the institutional inverse of horizon scaling; Berg's scaffolded-agent consciousness numbers and swyx's "50% of SWE-bench passes are unmergeable slop" as flanking beats.
+  - **Ollie take** — same mechanism that makes Agents-A1 productive (human out of the trajectory) is what Duvenaud calls existential at the institutional layer; biological-FM field faces this in miniature in the next 24 months.
+- **RSS-item stub** validated; placeholder tokens for `__LENGTH__` and `__DURATION__` in place per `SKIP_TTS=1` protocol.
+- **Commit-msg stub** written. Per PIPELINE, the orchestrator handles TTS, R2 publish, feed update, and commit.
+=== 2026-06-30T02:38:58-07:00 done  jinglin-ai-pulse (exit 0) ===
