@@ -263,3 +263,66 @@ RSS stub validated as parseable XML with `__LENGTH__` / `__DURATION__` placehold
 
 Candidate funnel — bioRxiv+medRxiv (540 unique 2026-06-27..30 records, 8 JHU/UMB/Lieber hits: Wan/Cao ANG **chosen lead**; Garg EMRE/MCU **chosen second**; Worley/Lao NPTX2 v3 dropped — core science from October 2025 v1; Eghrari microRNA-184 JHU Wilmer dropped — full text unavailable on <24h preprint; Al-Fawakhiri motor learning v2, Farber LipoGlo v5, Brown genetic-counseling videos, Zhu countdown paradox MCI all dropped). PubMed (144 records, JHU/UMB/Lieber affiliation, entry-date 2026-06-27..30): therapeutic-flagged Yakovlev N-cadherin/UMB, Ansari Treg-review/JHU, Rashid replisome-biophysics/JHU, Nakazawa Th17-biomarker/JHU, Chen GeoPep-ML/JHU+OSU, Erel-Akbaba BATUS/UConn-led; Islam fibroid + Rehg mPFC-LC already covered Sunday — all dropped. High-tier journals (7 hits 2026-06-27..30): none JHU/UMB/Lieber-led therapeutic. Institutional press: JHTV's 1104health feature (Blackbird portfolio — held for Sunday); SmartTIVA closed-loop anesthesia + DecisionRx pharmacogenomics dropped as outside thesis. Source failures: nature.com auth wall (r.jina.ai proxy used); bioRxiv full-text 253 chars on the microRNA-184 v1 <24h preprint; one PubMed eFetch 429 (no info lost). Editorial call: two-pick day with the strongest JHU-led peer-reviewed translational item (ANG bone+muscle) leading and a brief UMB platform-tech second pick (EMRE MCU assay), with the portfolio update properly held for Sunday rather than miscategorized into today's Radar.
 === 2026-06-30T02:35:24-07:00 done  blackbird-brief (exit 0) (retry 1) ===
+=== 2026-07-01T02:10:07-07:00 start blackbird-brief ===
+Wednesday episode drafted in SKIP_TTS mode. Orchestrator will handle TTS, R2 publish, feed edit, and commit.
+
+**Blackbird Brief — 2026-07-01 Sourcing Radar**
+
+Script: `podcasts/blackbird-brief/scripts/2026-07-01-radar-wilmer-mir184-edict-revivify-corneal.md`
+Stubs: `.rss-item.xml` + `.commit-msg` written alongside.
+`SKIP_TTS=1` — deferred to batch TTS on Garibaldi via `publish_pending.py`.
+
+**Picks (both spoken):**
+
+- **Lead — JHU Wilmer miR-184 +57C>T EDICT paper reveals stealth Wilmer spinout Revivify Innovations.** Eghrari + Cochella senior authors, medRxiv 2026-06-29 (DOI 10.64898/2026.06.25.26355554). Multi-generational family cohort with quantitative microphthalmia + microcornea + corneal thinning + 5/10 retinal detachment; patient-derived iPSC-corneal-endothelial-cell model with ATP1A1 / TEER / ECM readouts. **Sourcing signal is the competing-interest disclosure — four co-founders (Y. Huang, M. Sulewski, J. Xu, A.O. Eghrari) own **Revivify Innovations**, confirmed independently on AAO Financial Disclosure database (Eghrari PS interest); not on JHTV public portfolio list as of today.** Direct delivery-adjacency to Aletira's SELEXON platform for anterior-segment miRNA-replacement gene therapy — two-portfolio-company handoff worth mapping regardless of Blackbird equity outcome.
+- **Second — Betenbaugh mammalian glycoform-engineered rHuBChE bioscavenger platform.** JHU Chemical & Biomolecular Engineering, *Cell Systems* 2026-06-30 (DOI 10.1016/j.cels.2026.101655, PMID 42379170). HEK293 with >10 orthogonal glycoengineering edits — fucosylation KO, sialylation enhancement, branching reduction — achieving near-native plasma-BChE glycoprofile. BChE product itself is a DoD/BARDA/BioShield play (not VC-friendly), but the mammalian glycoengineering platform is applicable across enzyme replacement therapies, glycan-engineered antibodies (ADCC), coagulation factors + fusion proteins. Candidate for platform-out spin from JHU ChemBE + JHTV axis if not already inside an industrial collaboration.
+
+**Actions consolidated:**
+1. Esther + Hemaka this week — JHTV / Wilmer courtesy route to Eghrari lab on Revivify Innovations state (IP posture, financing stage, JHTV relationship).
+2. Geoff Lynn (Aletira) — courtesy touch to Eghrari lab on SELEXON as anterior-segment AAV delivery infrastructure regardless of equity outcome.
+3. Avi + Hemaka — JHTV ChemBE portfolio manager on Betenbaugh mammalian glycoform-engineering platform commercial availability + platform-out spin openness.
+
+**Candidate funnel (2026-06-28 to 2026-07-01):**
+
+- **bioRxiv + medRxiv** (api.biorxiv.org details API, 509 unique bioRxiv records + 170 medRxiv; JHU/Lieber/UMB corresponding-institution filter — 12 + 9 hits):
+  - Eghrari-Cochella miR-184 EDICT + iPSC-CEC mechanism (JHU Wilmer + Snyder Neuro, medRxiv 2026-06-29) — **CHOSEN as lead** — full text retrieved on second attempt via r.jina.ai .full route
+  - NPTX2 cognitive resilience v3 (JHU Snyder, bioRxiv 2026-06-29) — dropped (core science from Oct 2025 v1)
+  - Instrumental-motor transfer v1+v2 (JHU SOM Neuro) — dropped (basic neuroscience)
+  - Antifungal use in septic shock v1 (JHU SOM ICU, medRxiv 2026-06-30) — dropped (clinical utilization epi)
+  - Statins in SLE CV events v1 (JHU Cardiology, medRxiv 2026-06-30) — dropped (clinical epi)
+  - Genetic counseling videos v1 + countdown paradox MCI biomarker clock v1 — dropped (educational + epidemiological)
+- **PubMed** (JHU/UMB/Lieber affiliation entry-date 2026-06-28 to 2026-07-01, 126 unique records; therapeutic-flagged after dropping reviews + public-health surveillance):
+  - Betenbaugh glycoform-engineered rHuBChE (*Cell Systems*, JHU ChemBE) — **CHOSEN as second pick** — full text behind Cell Press paywall + ScienceDirect CAPTCHA; PubMed abstract used
+  - Berger flex-fuel replisomes (*Nat Commun*, JHU Biophysics) — dropped (basic mechanism)
+  - Jaffee apCAF / CCL22 in PDAC (*J Immunol*, JHU Convergence Institute) — dropped (CCL22 has existing pharmacology; no IP angle)
+  - Azad atezolizumab+varlilumab±cobimetinib in BTC (*CCR*, JHU SKCCC) — dropped (negative Ph2)
+  - Solomon HCV support trial (*J Hepatol*, JHU Bloomberg Epi) — dropped (public health)
+  - Handa Wilmer CAR-T ocular case report (*Front Immunol*) — dropped (case report)
+  - JHU Neurosurgery tDCS depression feasibility protocol — dropped (feasibility protocol)
+- **High-tier journal sweep** (Cell/Nature/Science/Nat Med/Nat Biotech/Sci Transl Med/Cell Rep Med/JCI/Sci Adv/Nat Commun/Cell Metab/Cancer Cell/Cell Stem Cell/Immunity/Neuron/Nat Neurosci/Nat Struct Mol Biol/Nat Cell Biol/Sci Immunol/NEJM/JAMA/Lancet/Nat Chem Biol/Cell Chem Biol/Nat Genet, JHU+UMB+Lieber affiliation pdat 2026-06-28 to 2026-07-01): 3 hits — Berger *Nat Commun* replisomes (dropped as above); BridgeBio Ph3 infigratinib in achondroplasia *NEJM* (not JHU-led — dropped); UVA-led glioblastoma miRNA *JCI* (not JHU-led — dropped)
+- **Institutional press** (JHTV, hub.jhu.edu, hopkinsmedicine.org, libd.org, ventures.jhu.edu, umventures.org via r.jina.ai proxy): JHTV in-window — DecisionRx × Bloomberg School collaboration (previously covered), Bayh-Dole Innovator Award recap on Dannals + Pomper Pylarify (retrospective on 2021-approved product), Pava Center + Social Innovation Lab Spring 2026 showcase (student-stage). Hub.jhu.edu: housekeeping (JHU Press awards + Milestones July 2026). Hopkins Medicine: patient story + Fourth-of-July burn safety. Lieber Institute news: cookies consent shell only. UM Ventures news: pre-window items (GEn1E Duchenne + Secretome $30M Series A 2026-06-09 and earlier).
+- **Sources that failed transiently:** Google + Bing r.jina.ai proxies polluted on "Revivify Innovations" query (campground + engine-manual pages — anti-scraping noise; AAO Financial Disclosure database independently confirmed Eghrari + Revivify + PS); doi.org r.jina.ai proxy HTTP 451 SecurityCompromiseError; ScienceDirect Cloudflare CAPTCHA on Cell Systems article (PubMed abstract used); www.medrxiv.org direct fetch on miR-184 EDICT DOI required r.jina.ai proxy — first attempt 2026-06-30 returned 253 chars (jina had not yet rendered), second attempt 2026-07-01 returned full 5.3k-char body (medRxiv rendered overnight per PIPELINE.md abstract-only-too-new pattern).
+- **Editorial call:** Two-pick day. The miR-184 EDICT + Revivify Innovations story is the strongest partner-institution-anchored translational item in window — the mechanism paper is peer-reviewable-quality, but the operational lead is the *company disclosure* that promotes it from a rare-disease mechanism study to an active-company sourcing conversation with direct Aletira SELEXON delivery adjacency. The Betenbaugh Cell Systems paper is added as a brief second pick — JHU-led platform technology with credible spin-out openness is exactly the second-tier item the radar should surface. Neither displaces the other; the two are complementary — asset-adjacent company signal + platform-out spin candidate.
+
+Paper links: https://www.medrxiv.org/content/10.64898/2026.06.25.26355554v1 ; https://doi.org/10.1016/j.cels.2026.101655
+=== 2026-07-01T02:26:10-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-02T02:10:09-07:00 start blackbird-brief ===
+Today's Sourcing Radar for Blackbird is written and staged for the batch TTS orchestrator.
+
+**Lead** — a Nature paper published yesterday (2026-07-01, DOI 10.1038/s41586-026-10729-8) from Bin Wu (JHU Biophysics/Snyder Neuroscience) + Shalini Oberdoerffer (NCI) + Hai-Quan Mao (JHU BME/INBT). ac4C beats industry-standard m1Ψ on both translation yield and fidelity in primary human MoDCs and mouse liver (m1Ψ elongation ~2× slower; drives ribosome collisions → RQC → the +1 frameshift Mulroney and Rozman documented). Sourcing signal is the COI: **JHTV-managed US provisional patent 63/325,222 on the LNP formulation, with Mao/Ma/Zhu as JHU co-inventors** — and no visible Mao mRNA-LNP company on the JHTV public portfolio. Two-office diligence needed (JHTV on the LNP + NCI Tech Transfer on the ac4C chemistry) to determine whether a Blackbird-underwritten NewCo can practice both under coordinated licenses.
+
+**Second pick** — Neuron NAc spatiomolecular atlas (Maynard/Lieber, 2026-07-01) — direct target-discovery infrastructure for the Lieber+Third Rock GPR52 schizophrenia program. And ecosystem signal: **Alexis Battle discloses co-founder + equity in CellCipher**, a stealth JHU-adjacent biotech not on the JHTV public portfolio — a second consecutive-day disclosure following yesterday's Revivify Innovations.
+
+Files staged per PIPELINE.md SKIP_TTS mode:
+- `podcasts/blackbird-brief/scripts/2026-07-02-radar-jhu-ac4c-mrna-lnp-mao-nature.md` (41KB, script + full context + candidate funnel)
+- `podcasts/blackbird-brief/scripts/2026-07-02-radar-jhu-ac4c-mrna-lnp-mao-nature.rss-item.xml` (validates as XML; `__LENGTH__` + `__DURATION__` placeholders)
+- `podcasts/blackbird-brief/scripts/2026-07-02-radar-jhu-ac4c-mrna-lnp-mao-nature.commit-msg`
+
+The orchestrator (`scripts/publish_pending.py`) will handle TTS, R2 upload, feed insertion, and the commit after batch TTS finishes.
+
+Sources:
+- [N4-Acetylcytidine enhances synthetic mRNA translation yield and fidelity](https://www.nature.com/articles/s41586-026-10729-8)
+- [Spatiomolecular mapping reveals anatomical organization of heterogeneous cell types in the human nucleus accumbens](https://doi.org/10.1016/j.neuron.2026.06.002)
+- [Hai-Quan Mao — JHU Whiting School of Engineering](https://engineering.jhu.edu/faculty/hai-quan-mao/)
+- [Johns Hopkins Technology Ventures — Companies](https://ventures.jhu.edu/companies/)
+=== 2026-07-02T02:26:28-07:00 done  blackbird-brief (exit 0) ===
