@@ -1443,3 +1443,113 @@ All three files are valid. The episode is complete. Here's the candidate funnel 
 
 **Output:** `2026-06-29-spliceosome-antiviral-crispri-ewsr1-pka-tau-gce-fret.md` + `.rss-item.xml` + `.commit-msg` written. SKIP_TTS=1; no TTS, no git commit — orchestrator handles both.
 === 2026-06-29T06:34:11-07:00 done  scripps-biomed-brief (exit 0) (manual catch-up, sonnet) ===
+=== 2026-06-30T03:00:09-07:00 start scripps-biomed-brief ===
+You've hit your session limit · resets 3:40am (America/Los_Angeles)
+=== 2026-06-30T03:02:43-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-06-30T03:02:43-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-06-30T03:02:43-07:00 session-limit hit; sleeping 2297s until 3:40am (+60s buffer) ===
+=== 2026-06-30T03:41:00-07:00 start scripps-biomed-brief (retry 1) ===
+Files written. Summary report:
+
+## Today's episode — Scripps Biomedical Brief 2026-06-30
+
+**Files produced** (SKIP_TTS=1 mode, so no audio/feed/commit):
+- `podcasts/scripps-biomed-brief/scripts/2026-06-30-hs-nano-seq-droplet-tcell-crispr-rptrs-cas9-rna-edit-drt10.md` — 825-word spoken body
+- `…rss-item.xml` — full item with `__LENGTH__` / `__DURATION__` placeholders (validated as XML)
+- `…commit-msg` — single-line commit message
+
+The orchestrator (`scripts/publish_pending.py`) will pick up the stubs after batch TTS.
+
+## Candidate funnel
+
+**Sources scanned** (bioRxiv 2026-06-28 → 2026-06-30 windows):
+- pharmacology and toxicology: 5 items scanned, 1 survived (iNOS prodrug)
+- bioengineering: 10 items scanned, 2 survived (immunoreceptor mechanosensing in vivo; ELiPS-adjacent and ultrasound microdroplets discarded)
+- biochemistry: 14 items scanned, 2 survived (CAGE-TRX photocaging; HS-nano-seq)
+- immunology: 20 items scanned, 2 survived (droplet CRISPR T cell killing; SIGLEC-5 B-cell)
+- microbiology: 20 items scanned, 2 survived (DRT10 mechanism; tracrRNA-Cas9 Rptrs)
+- synthetic biology / cell biology / molecular biology / cancer biology: 0 returned for the window
+- genomics: 20 items scanned, none aligned with audience
+- arXiv / industry news: not surveyed today — bioRxiv yielded a strong four-paper slate with all four representing distinct modalities/audiences
+
+**Shortlist after relevance filtering** (audience: Schultz/Scripps; targets, modalities, chemical biology, AI-in-drug-discovery):
+
+- [Hristov, Flynn (Boston Children's) + Esko (UCSD) + Liu + Jain — HS-nano-seq: intact single-molecule nanopore sequencing of heparan sulfate](https://www.biorxiv.org/content/10.64898/2026.06.26.734651v1) — **CHOSEN**
+- [Saronio, Geiger (Bellinzona) + deMello + Stavrakis (ETH) — droplet single-cell CRISPR for T cell-mediated target-cell killing; mTORC1 brake on rapid execution](https://www.biorxiv.org/content/10.64898/2026.06.23.734054v1) — **CHOSEN**
+- [Arifah, Patinios, Larose, Beisel — Rptrs (reprogrammed tracrRNAs) for Cas9-driven A-to-I RNA editing and trans-splicing](https://www.biorxiv.org/content/10.64898/2026.06.28.735058v1) — **CHOSEN**
+- [Ramirez, Sternberg + Fernandez (Columbia) — cryo-EM mechanism of DRT10 tandem-repeat DNA synthesis](https://www.biorxiv.org/content/10.64898/2026.06.29.735271v1) — **CHOSEN**
+- [Smith, Deiters, Cohen — CAGE-TRX: genetically encoded photocaging for time-resolved crystallography of β-lactamases](https://www.biorxiv.org/content/10.64898/2026.06.26.734858v1) — runner-up; structural-biology competitor to DRT10
+- [Li, Lyu, Zhu — SynNotch-based in vivo immunoreceptor mechanosensing reporter](https://www.biorxiv.org/content/10.64898/2026.06.26.734558v1) — runner-up; covered by droplet-CRISPR slot
+- [Alimoradi, Delporte — ProCIP protease-cleavable iNOS prodrug](https://www.biorxiv.org/content/10.64898/2026.06.23.733308v1) — dropped (cell-free + macrophage in vitro only)
+- [Peng, Lin (Cornell/HHMI) — KP-S54 Mac1 ADP-ribosylhydrolase inhibitor, direct-to-biology](https://www.biorxiv.org/content/10.64898/2026.06.27.732784v1) — not new today; already shipped 2026-06-27
+- [Piper, Mauri — SIGLEC-5 B-cell elastin-receptor cytokine suppression](https://www.biorxiv.org/content/10.64898/2026.06.24.734204v1) — solid but more incremental for the audience
+
+**Source-level failures**: none — all bioRxiv API calls and `fetch_preprint.py` calls succeeded; all four chosen papers v1 ≤ 24–48h, so bodies not yet rendered (channel 1 reached but returned abstract-only as documented). Summaries are abstract-grounded for all four, flagged in the show notes.
+=== 2026-06-30T03:49:43-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
+=== 2026-07-01T03:00:07-07:00 start scripps-biomed-brief ===
+All three stub files are written. Now the final audit summary.
+
+Today's episode published as stub files for the batch TTS pipeline:
+
+- `podcasts/scripps-biomed-brief/scripts/2026-07-01-cage-trx-net-chromatin-8arm-crv-apobec-card8-dpp9.md`
+- `podcasts/scripps-biomed-brief/scripts/2026-07-01-cage-trx-net-chromatin-8arm-crv-apobec-card8-dpp9.rss-item.xml`
+- `podcasts/scripps-biomed-brief/scripts/2026-07-01-cage-trx-net-chromatin-8arm-crv-apobec-card8-dpp9.commit-msg`
+
+Per PIPELINE.md, `SKIP_TTS=1` mode: no `gen_tts.py`, no `publish_episode.sh`, no `feed.xml` edit, no commit — orchestrator (`scripts/publish_pending.py`) handles all three after batch TTS on Garibaldi.
+
+**Candidate funnel — 2026-06-29 to 2026-07-01 window**
+
+bioRxiv categories scanned (via api.biorxiv.org details API, PIPELINE-blessed source):
+- bioengineering: 15 items scanned, 2 substantive
+- pharmacology and toxicology: 9 scanned, 2 substantive (both dropped)
+- biochemistry: 17 scanned, 2 substantive (1 chosen, 1 already-shipped 06-29)
+- biophysics: 15 scanned, 0 substantive
+- immunology: 30 scanned, 3 substantive (1 chosen, plus a dropped BioNTech RibobNAb + already-shipped 06-29 droplet T-cell CRISPR)
+- microbiology: 30 scanned, 2 substantive (1 chosen, plus already-shipped 06-29 DRT10)
+- genetics: 6 scanned, 1 substantive (dropped)
+- cell biology / molecular biology / synthetic biology / cancer biology / developmental biology: API returned empty payloads for the exact 3-day window (not a source failure — coverage flows through the categories above)
+- Industry / high-tier journals: via subagent WebSearch — Fierce Biotech Boulevard Bio TCE deal + China solid-tumor CAR-T approval surfaced but dropped (announcement-tier, not R&D-tier per Scripps audience bar)
+
+Substantive shortlist (after de-duping items already shipped Jun 29 + Jun 30):
+- [CHOSEN] CAGE-TRX genetically encoded active-site photocaging for time-resolved crystallography — Smith, Maggiolo, Jonosko, Charette, Paul, Toth, Calero, Carr, Russi, Vakulenko (Notre Dame), Deiters (Pitt), Cohen (Stanford/SLAC) — https://www.biorxiv.org/content/10.64898/2026.06.26.734858v1
+- [CHOSEN] 8-arm PEG-netilmicin multivalent NET-associated chromatin neutralizer for severe sepsis — Cheng et al., Leong (Columbia / SCUT) — https://www.biorxiv.org/content/10.64898/2026.06.29.735358v1
+- [CHOSEN] Collapsing retrovirus for delivery of viro-toxic cargoes (APOBEC3B demo) — Mullally, Stefanovska, Chen, Gupta, Carpenter, Harris — https://www.biorxiv.org/content/10.64898/2026.06.28.735095v1
+- [CHOSEN] MISTRG6 humanized-mouse reverse genetics reveals CARD8-mediated HSPC pyroptosis as mechanism of human DPP9-deficiency pancytopenia — Xiao, Brewer, Carlino et al., Flavell (Yale) — https://www.biorxiv.org/content/10.64898/2026.06.27.735024v1
+- DROPPED KSHV ORF24 novel protein fold hijacks RNA Pol II CTD (Madheshiya, Didychuk) — antiviral target with a structural handle, but no ligandability data or druggability argument yet — https://www.biorxiv.org/content/10.64898/2026.06.29.734287v1
+- DROPPED BRAF V600E sulfoximine bioisosterism inhibitors (Yu, Siegel, Morrow, UC Davis) — pure computational docking with homology-only preclinical rationale; no experimental validation — below Scripps audience bar — https://www.biorxiv.org/content/10.64898/2026.06.25.734343v1
+- DROPPED ARF1-C9orf72 SCC944 small molecule for ALS/FTD (Dixon, Lu, ECU) — v2 revision of an existing preprint, not new; also abstract-only — https://www.biorxiv.org/content/10.64898/2026.01.24.701325v2
+- DROPPED RNA-encoded PGT121-LS anti-HIV bNAb NHP PK package (Tolksdorf, Sahin, Le Douce, BioNTech) — solid preclinical execution but reads industry PR + validated bNAb + already-known mRNA-LNP-encoded antibody paradigm — https://www.biorxiv.org/content/10.64898/2026.06.24.734219v1
+- DROPPED Paralogous lncRNAs CYTOR + MORRBID in MEK-ERK (Ali-Nasser, Bester, Technion) — mechanism paper, no drug-discovery angle — https://www.biorxiv.org/content/10.64898/2026.06.24.734157v1
+- DROPPED SIRT5-ASL arginine metabolism T cell axis (Han, Sack, NIH) — immunometabolism mechanism, no drug candidate — https://www.biorxiv.org/content/10.64898/2026.06.24.734337v1
+- DROPPED B-cell SIGLEC-5 / T-cell elastin receptor complex checkpoint (Piper, Mauri, UCL) — mechanism, no ligand yet — https://www.biorxiv.org/content/10.64898/2026.06.24.734204v1
+- DROPPED Boulevard Bio / Metis Genomics $1.6B trispecific TCE deal (Fierce Biotech) — announcement, no R&D depth
+- DROPPED China first solid-tumor CAR-T approval (Fierce Biotech) — regulatory milestone, no new science
+- Already shipped 06-29 (excluded): SF3B1 spliceosome antiviral, PAMAM CRISPRi EWSR1-FLI1, PKA RI/RII Tau, GCE Acd/Tet FRET
+- Already shipped 06-30 (excluded): HS-nano-seq, droplet T-cell CRISPR + mTORC1 brake, Rptr Cas9 RNA editing, DRT10 cryo-EM
+
+Sources that failed transiently: none. All bioRxiv API calls returned 200. r.jina.ai `.full` proxy retrieved abstracts for all four picks (bodies not yet rendered — v1 posts 24–48 h old, per the PIPELINE.md "too new" pattern). No arXiv, medRxiv, or industry-news sources needed to be dropped due to outages.
+
+Editorial call: four bioRxiv preprints across time-resolved crystallography for structure-based drug design (chemical biology tool), a multivalent bioengineered material as new modality for sepsis (Kam Leong lab), a clever gene-therapy delivery paradigm for viro-toxic cargoes (Reuben Harris APOBEC field), and a humanized-mouse reverse-genetics study identifying CARD8 as the actionable node in a human-specific inflammasomopathy (Richard Flavell lab). Mix hits the Scripps audience across new modality, new target, and new tool — all with clear translational hooks.
+=== 2026-07-01T03:07:59-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-02T03:00:09-07:00 start scripps-biomed-brief ===
+All four bioRxiv DOIs verify against the API (three v1s, ARF1-CSW as v2).
+
+**Today's episode written to `podcasts/scripps-biomed-brief/scripts/2026-07-02-virovbot-in-vivo-car-t-idesm33-vchcast-arf1-csw-c9orf72.{md,rss-item.xml,commit-msg}`** — SKIP_TTS mode, so no TTS, publish, feed edit, or commit was performed; the orchestrator will handle those.
+
+**Candidate funnel (2026-07-02, source: bioRxiv API for date range 2026-06-30 → 2026-07-02):**
+
+- bioRxiv Bioengineering: 30 items scanned; substantive candidates below.
+- bioRxiv Pharmacology and Toxicology: 4 items scanned; 1 substantive.
+- bioRxiv Biochemistry: 21 items scanned; a few substantive.
+- bioRxiv Synthetic Biology, Molecular Biology: 0 in the window.
+- Prior-day sepsis NET neutralizer (Cheng/Leong, 10.64898/2026.06.29.735358) excluded — shipped 2026-07-01.
+
+Shortlist opened in full:
+- viroVbot in vivo CAR-T — Alam, Ahmad et al. — 10.64898/2026.06.30.735484v1 [abstract-only; body not rendered] **CHOSEN**
+- IdeSM33 engineered IgG protease — Zhang, Wu et al. — 10.64898/2026.06.26.734701v1 [abstract-only] **CHOSEN**
+- VchCAST holo integration complex — Fatma, Kellogg et al. — 10.64898/2026.07.01.735701v1 [abstract-only] **CHOSEN**
+- ARF1-CSW small molecule (MCULE-5095997944) — Dixon, Lu et al. — 10.64898/2026.01.24.701325v2 [full text via jina] **CHOSEN**
+- NGF/TrkA 42F5-15 mAb cryo-EM — Bansia, des Georges et al. — 10.64898/2026.06.30.735605v1 [full text] — passed (target well-mined; less novel than picks)
+- BRAF V600E sulfoximine bioisostere computational design — Yu, Morrow — 10.64898/2026.06.25.734343v1 [abstract-only; body not rendered] — passed (docking-only, no synthesis/assays)
+- Structural basis analgesic mAb, TOP3α replication, VchCAST alt papers, IdeS peers — held.
+=== 2026-07-02T03:08:38-07:00 done  scripps-biomed-brief (exit 0) ===
