@@ -101,6 +101,7 @@ def classify(slug: str, target_date: dt.date) -> dict:
     evts = events_for_date(log_path, target_date)
     episodes_dir = PODCASTS / slug / "episodes"
     feed_path = PODCASTS / slug / "feed.xml"
+    pause_state = PODCASTS / slug / "state" / "pause.json"
     mp3s = sorted(episodes_dir.glob(f"{target_date.isoformat()}*.mp3"))
     unpublished = unpublished_basenames(feed_path, mp3s)
 
@@ -116,11 +117,16 @@ def classify(slug: str, target_date: dt.date) -> dict:
     # green-lit a two-day publish outage in 2026-07 when a pre-commit hook
     # cascade blocked every commit in publish_pending.py — mp3s landed on
     # disk but no feed ever updated. Split those cases apart with
-    # NOT_PUBLISHED.
+    # NOT_PUBLISHED. A show with state/pause.json and no attempted run
+    # (paused_still_cold from scripts/check_activity.py) is PAUSED, not
+    # NO_RUN — it was skipped by design because the subscriber has stopped
+    # downloading.
     if mp3s and not unpublished:
         status = "SUCCESS"
     elif mp3s:
         status = "NOT_PUBLISHED"
+    elif pause_state.exists() and not starts:
+        status = "PAUSED"
     elif not starts:
         status = "NO_RUN"
     elif failed:
@@ -150,6 +156,7 @@ def classify(slug: str, target_date: dt.date) -> dict:
 
 STATUS_ICON = {
     "SUCCESS": "OK  ",
+    "PAUSED":  "PAUS",
     "FAILED": "FAIL",
     "HUNG": "HUNG",
     "NO_RUN": "MISS",
@@ -165,7 +172,10 @@ def fmt_time(ts: dt.datetime | None) -> str:
 
 
 def render_summary(reports: list[dict], target_date: dt.date) -> tuple[str, str]:
-    bad = [r for r in reports if r["status"] != "SUCCESS"]
+    # PAUSED is intentional (subscriber went cold; scripts/check_activity.py
+    # skipped generation by design), so it doesn't count as "needs attention"
+    # for the daily subject line or the diagnostics tail.
+    bad = [r for r in reports if r["status"] not in ("SUCCESS", "PAUSED")]
     subject = f"[ai-nuggets] {target_date.isoformat()} audit: "
     if not bad:
         subject += f"all {len(reports)} shows OK"

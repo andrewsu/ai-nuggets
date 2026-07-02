@@ -33,6 +33,15 @@
 #                          further than this many seconds away it falls
 #                          back to the standard 180s retry sleep (default
 #                          3600 = 60 min).
+#   PAUSE_INACTIVE=1       consult scripts/check_activity.py before Phase 1
+#                          and skip shows whose subscriber hasn't
+#                          downloaded in the last N days (see PAUSE_THRESHOLD_DAYS).
+#                          On the transition day, scripts/prepare_goodbye.py
+#                          writes a goodbye episode + state/pause.json so
+#                          Phase 2/3 publish the goodbye like any other
+#                          episode. Resume is automatic when a fresh GET
+#                          lands after paused_at; to force-resume manually,
+#                          `rm podcasts/<slug>/state/pause.json`. Off by default.
 #
 # Deferred-catchup: shows that hit session-limit on every Phase-1 attempt
 # get added to a DEFERRED set. After the main Phase 2/3 runs for the
@@ -348,6 +357,75 @@ run_show() {
 }
 
 ##############################################################################
+# Pre-flight (PAUSE_INACTIVE=1): scripts/check_activity.py queries D1 for the
+# last non-bot GET per podcast. Verdicts we act on:
+#   paused_still_cold  already paused, still cold  → skip Phase 1 entirely,
+#                                                    write a SKIP status file
+#                                                    so the outcome collector
+#                                                    doesn't flag as FAILED
+#   resume             was paused, fresh GET seen → delete state/pause.json,
+#                                                    run normally today
+#   pause_now          just crossed threshold      → call scripts/prepare_goodbye.py
+#                                                    to write today's goodbye
+#                                                    script + stubs + pause.json,
+#                                                    then skip Phase 1 for this
+#                                                    show (Phase 2/3 publish the
+#                                                    goodbye like any other episode)
+# Fails open: any error from check_activity.py logs a warning and lets Phase 1
+# proceed for all shows (better a spurious daily than a wrong pause).
+##############################################################################
+PAUSE_INACTIVE=${PAUSE_INACTIVE:-0}
+declare -A SKIP_SLUGS=()
+
+if [ "$PAUSE_INACTIVE" = "1" ]; then
+  mkdir -p "$STATUS_DIR"
+  activity_stdout=$(mktemp)
+  activity_stderr=$(mktemp)
+  (
+    if [ -f "$REPO/.env" ]; then
+      set -a; . "$REPO/.env"; set +a
+    fi
+    python3 "$REPO/scripts/check_activity.py" --format tsv
+  ) > "$activity_stdout" 2> "$activity_stderr"
+  activity_rc=$?
+  if [ "$activity_rc" -ne 0 ]; then
+    echo "$(date -Iseconds) PAUSE_INACTIVE=1 but check_activity.py exited $activity_rc; failing open (no skips)"
+    cat "$activity_stderr"
+  else
+    while IFS=$'\t' read -r slug verdict days_since paused_at; do
+      case "$verdict" in
+        paused_still_cold)
+          SKIP_SLUGS[$slug]=1
+          mkdir -p "$REPO/podcasts/$slug/logs"
+          echo "SKIP paused" > "$STATUS_DIR/$slug"
+          echo "=== $(date -Iseconds) paused $slug (${days_since}d cold, paused_at=$paused_at) ===" \
+            | tee -a "$REPO/podcasts/$slug/logs/cron.log"
+          ;;
+        resume)
+          rm -f "$REPO/podcasts/$slug/state/pause.json"
+          mkdir -p "$REPO/podcasts/$slug/logs"
+          echo "=== $(date -Iseconds) resumed $slug (fresh GET after pause; removed pause.json) ===" \
+            | tee -a "$REPO/podcasts/$slug/logs/cron.log"
+          ;;
+        pause_now)
+          mkdir -p "$REPO/podcasts/$slug/logs"
+          if goodbye_out=$(python3 "$REPO/scripts/prepare_goodbye.py" --slug "$slug" --date "$TODAY" 2>&1); then
+            SKIP_SLUGS[$slug]=1
+            echo "SKIP pause_now:$goodbye_out" > "$STATUS_DIR/$slug"
+            echo "=== $(date -Iseconds) paused $slug (${days_since}d cold; goodbye episode $goodbye_out prepared for Phase 2/3) ===" \
+              | tee -a "$REPO/podcasts/$slug/logs/cron.log"
+          else
+            echo "$(date -Iseconds) PAUSE_INACTIVE: prepare_goodbye.py failed for $slug (${days_since}d cold), running normally: $goodbye_out"
+          fi
+          ;;
+      esac
+    done < "$activity_stdout"
+    echo "$(date -Iseconds) PAUSE_INACTIVE=1: skipping ${#SKIP_SLUGS[@]} show(s)${SKIP_SLUGS[*]:+: ${!SKIP_SLUGS[*]}}"
+  fi
+  rm -f "$activity_stdout" "$activity_stderr"
+fi
+
+##############################################################################
 # Phase 1: write scripts (and stubs if !LEGACY_TTS) — parallel across shows.
 ##############################################################################
 if [ "$LEGACY_TTS" = "1" ]; then
@@ -366,6 +444,9 @@ for prompt in podcasts/*/PROMPT.md; do
   fi
   count=$((count + 1))
   slug=$(basename "$(dirname "$prompt")")
+  if [ -n "${SKIP_SLUGS[$slug]:-}" ]; then
+    continue
+  fi
   if [ "$first" -eq 0 ]; then
     sleep "$STAGGER_SECONDS"
   fi
@@ -380,6 +461,7 @@ wait
 SUCCEEDED=()
 DEFERRED=()   # entries are "slug:reset-string"
 FAILED=()     # entries are "slug:failure-mode"
+SKIPPED=()    # entries are "slug:reason"
 for prompt in podcasts/*/PROMPT.md; do
   [ -f "$prompt" ] || continue
   slug=$(basename "$(dirname "$prompt")")
@@ -393,13 +475,15 @@ for prompt in podcasts/*/PROMPT.md; do
     SUCCESS) SUCCEEDED+=("$slug") ;;
     DEFER)   DEFERRED+=("$slug:$rest") ;;
     FAIL)    FAILED+=("$slug:$rest") ;;
+    SKIP)    SKIPPED+=("$slug:$rest") ;;
     *)       FAILED+=("$slug:unknown_status[$kind]") ;;
   esac
 done
-echo "$(date -Iseconds) Phase 1 outcomes: ${#SUCCEEDED[@]} succeeded, ${#DEFERRED[@]} deferrable, ${#FAILED[@]} failed"
+echo "$(date -Iseconds) Phase 1 outcomes: ${#SUCCEEDED[@]} succeeded, ${#DEFERRED[@]} deferrable, ${#FAILED[@]} failed, ${#SKIPPED[@]} skipped"
 [ "${#SUCCEEDED[@]}" -gt 0 ] && echo "  succeeded: ${SUCCEEDED[*]}"
 [ "${#DEFERRED[@]}" -gt 0 ]  && echo "  deferrable (session-limit): ${DEFERRED[*]}"
 [ "${#FAILED[@]}" -gt 0 ]    && echo "  failed: ${FAILED[*]}"
+[ "${#SKIPPED[@]}" -gt 0 ]   && echo "  skipped (paused): ${SKIPPED[*]}"
 
 ##############################################################################
 # Phase 2 + 3 (skipped in LEGACY_TTS mode — each show already committed).
