@@ -1787,3 +1787,62 @@ Sources:
 - [AbiVax falls as safety worries cloud 'landmark' immune drug results (June 1 context) — BioPharma Dive](https://www.biopharmadive.com/news/abivax-obefazimod-abtect-ulcerative-colitis-results-cancer/821685/)
 - [Obefazimod: A First-in-class Drug for the Treatment of Ulcerative Colitis — Journal of Crohn's and Colitis (mechanism reference)](https://academic.oup.com/ecco-jcc/article/17/10/1689/7146589)
 === 2026-06-30T02:34:46-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-01T02:20:07-07:00 start calibr-briefing ===
+Both stubs parse cleanly. Per SKIP_TTS mode, I skip TTS, R2 publish, feed edit, and commit — the orchestrator handles those after batch TTS. Final summary follows.
+
+---
+
+**Calibr Briefing — Wed July 1, 2026 — run complete (SKIP_TTS mode)**
+
+Scripts written:
+- `podcasts/calibr-briefing/scripts/2026-07-01-pharma-headlines.txt` (~5 min, 5 items)
+- `podcasts/calibr-briefing/scripts/2026-07-01-metis-boulevard-tce-spotlight.txt` (~7–8 min, 7 threads)
+
+Stubs written for each: `.rss-item.xml` (feed item with `__LENGTH__` and `__DURATION__` placeholders; XML validated) and `.commit-msg`.
+
+**Candidate funnel**
+
+Sources surveyed: Endpoints News, Fierce Biotech, Fierce Pharma, BioPharma Dive, STAT News, BioSpace, PR Newswire, PharmaShots, Investing.com, Biostock, AllSci, GEN. No source-level failures — all sources reachable.
+
+Substantive shortlist (URLs listed for audit; not read on the air):
+- **METiS TechBio / Boulevard Bio — $1.62B AI-designed preclinical trispecific TCE** — https://www.prnewswire.com/news-releases/metis-techbio-and-boulevard-bio-enter-global-license-agreement-for-trispecific-t-cell-engager-302814337.html — **SPOTLIGHT + Headlines #2** — full text read via AllSci and PR Newswire
+- **AlzeCure Pharma / QuantumCell — >$2.2B out-license of NeuroRestore + ACD856** — https://biostock.se/en/2026/07/alzecure-out-licences-the-neurorestore-platform-to-quantumcell/ (403), full text read via Investing.com — **Headlines #1**
+- **Beeline Medicines — $126M Series A extension, $426M total** — https://endpoints.news/beeline-adds-126m-to-bain-backed-immunology-pipeline-from-bristol-myers/ (403 on WebFetch; details from research agent scan) — **Headlines #3** — abstract-level detail on a headlines tail item is acceptable per pipeline
+- **Praxis Precision — relutrigine PDUFA extended 3 mo to Dec 27** — https://www.biospace.com/fda/fda-hits-praxis-with-3-month-delay-for-epilepsy-drug-verdict — full text read — **Headlines #4**
+- **Vistagen — 2nd Ph3 fasedienol miss in social anxiety** — https://www.fiercebiotech.com/biotech/vistagen-fails-another-phase-3-social-anxiety-trial-spies-path-market — **Headlines #5**
+- EU antitrust probe into Sanofi Efluelda smear campaign — https://endpoints.news/eu-probes-sanofi-for-alleged-smear-campaign-against-rival-flu-vaccine/ — dropped (developing story, no fresh material vs June 26 opening)
+
+**Spotlight rationale**: METiS/Boulevard chosen over AlzeCure/QuantumCell despite similar deal-value scale because it delivers three separate first-of-kind superlatives for the Foresite/Calibr audience — largest preclinical trispecific TCE deal on record, first out-licensing from an AI-native protein-design engine at public-markets scale, and a hard peer-comp anchor for Xaira/Iambic/Isomorphic Labs. AlzeCure is the bigger biotech-market story but has no AI or Foresite-portfolio hook. Yesterday's already-covered items (Zymeworks-Theravance, Abivax obefazimod safety reset, BioCryst discovery wind-down, Talawar SPAC merger, Vijay Kumar OTP departure) explicitly excluded from today's picks per re-invocation rule.
+
+Handoff: `scripts/publish_pending.py` will pick up the four stub files after batch TTS runs on Garibaldi, backfill `__LENGTH__` / `__DURATION__` into the RSS items, insert into `feed.xml`, and commit under the `Calibr 2026-07-01` prefix.
+=== 2026-07-01T02:31:54-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-02T02:20:09-07:00 start calibr-briefing ===
+All six files are written. Both scripts and both stub sets (rss-item.xml + commit-msg) are in place. Per PIPELINE.md's SKIP_TTS mode, I do NOT generate TTS, publish to R2, edit feed.xml, or commit — the orchestrator handles that after batch TTS.
+
+Below is the candidate funnel for retrospective audit:
+
+**Candidate funnel — Thu July 2, 2026 (Calibr Briefing)**
+
+Sources scanned:
+- Endpoints, FierceBiotech, FiercePharma, STAT, BioPharma Dive — surveyed via Explore agent
+- Clinical Trials Arena, GEN, BioCentury, Reuters, Bloomberg — surveyed via Explore agent (Reuters access denied, Bloomberg paywalled 403, BioCentury no July 2 content, Biotech Voyager 404)
+- Web search across AI-in-drug-discovery peer set (Xaira, Iambic, Isomorphic, Recursion, Terray, Absci, Insitro, Genesis, Cradle, Chai, Prescient, Anthropic, OpenAI, METiS) and Foresite portfolio (Alumis, Metagenomi, Vor, Aera, Aro, Enveda, Terremoto, Vertikal)
+
+Substantive shortlist:
+- **Anthropic Claude Science launch + internal drug program + $30K×50 grant program** — anthropic.com/news/claude-science-ai-workbench — **CHOSEN as SPOTLIGHT + headline #1**
+- **Ipsen acquires Memo Therapeutics up to €700M/$800M for potravitug anti-BK-polyomavirus antibody** — biopharmadive.com + ipsen.com — **CHOSEN as headline #2**
+- **Amgen Tavneos NEJM ADVOCATE retraction + FDA proposed withdrawal + EMA rollback (76 DILI, 8 deaths)** — clinicaltrialsarena.com — **CHOSEN as headline #3**
+- **Orca Bio Tregzi FDA approval, first Treg cell therapy** — statnews.com + fiercepharma.com — **CHOSEN as headline #4**
+- **BridgeBio $1B equity from Sixth Street + KKR** — FiercePharma — **CHOSEN as headline #5**
+- Sanofi Nexviazyme Baby-COMET Ph3 in infantile Pompe — Clinical Trials Arena — held (clean readout but less strategic pull)
+- Genmab/AbbVie Epkinly + Revlimid Ph3 DLBCL — Clinical Trials Arena — held
+- AbbVie Vyalev Parkinson's ROSSINI 12-mo data — Clinical Trials Arena — held
+- Insilico Medicine + Takeda $600M biobucks — held (AI-adjacent but subsumed by Anthropic spotlight thesis)
+- Can-Fite namodenoson Ph2a pancreatic — held
+- Absci ABS-201 Ph1 SAD data — held (mentioned inside spotlight peer-set frame)
+- Merck halts Ph2 Alzheimer's — held
+- AstraZeneca Texas kickback $34M settlement — held (compliance-only)
+- Isomorphic Labs $1.2B Series B — **rejected as fresh news**; article dates to May 12 not July 2 (but referenced inside spotlight as context)
+
+Spotlight rationale: Anthropic Claude Science is a direct continuation of yesterday's METiS spotlight thesis ("resets comp-co frame for Xaira and Isomorphic Labs"), fits Travis's PROMPT-specified interest in AI drug discovery "especially those associated with Anthropic and OpenAI," and delivers three concurrent strategic reads — foundation-model-lab race completes, Foresite/Xaira platform-only thesis pressured, Calibr grant program is a live action item through July 15.
+=== 2026-07-02T02:31:07-07:00 done  calibr-briefing (exit 0) ===
