@@ -196,3 +196,89 @@ Today's episode is drafted and queued for batch TTS:
 - **RSS-item stub** validated; placeholder tokens for `__LENGTH__` and `__DURATION__` in place per `SKIP_TTS=1` protocol.
 - **Commit-msg stub** written. Per PIPELINE, the orchestrator handles TTS, R2 publish, feed update, and commit.
 === 2026-06-30T02:38:58-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-01T02:30:07-07:00 start jinglin-ai-pulse ===
+Script written (2,323 spoken words → ~11.5 min at 1.2× TTS), RSS stub XML parses cleanly with `__LENGTH__` + `__DURATION__` placeholders, commit-msg stub in place. SKIP_TTS=1 is set so I did not run gen_tts, publish_episode, edit feed.xml, or commit — the orchestrator will do all of that after batch TTS.
+
+Files written to `podcasts/jinglin-ai-pulse/scripts/2026-07-01-dockerless-reflection-and-a-thousand-designs-a-day.{md,rss-item.xml,commit-msg}`.
+
+## Episode summary
+
+**Thread of the day** — verification without execution: yesterday was horizon scaling, today the field extended the same shape into verification: drop the sandbox, read the repo.
+
+**Twitter Pulse** — three papers off HF Daily Papers July 1:
+- **Dockerless** (arXiv 2606.28436, SJTU + ByteDance, 75 upvotes, HF #2) — coding-agent verifier that judges patches without executing them; agentic repo exploration replaces Docker. 62% SWE-bench Verified, 50% Multilingual, 35.2% Pro; +14.3 AUC over strongest open-source alternative.
+- **DOPD** (2606.30626, 57 upvotes) — advantage-aware routing between privileged teacher/student; names the "privilege illusion."
+- **BlockPilot** (2606.31315, 60 upvotes) — 4.20× speedup on Qwen3-4B via per-sample block-size prediction for diffusion-based speculative decoding.
+
+**Money Moves** — Reflection AI × SpaceX $6.3B compute contract payments begin today ($150M/month through 2029; Colossus 2, Nvidia GB300s). Reflection = ex-DeepMind Laskin + Antonoglou, "DeepSeek of the West" positioning, product Asimov (code-comprehension agent). Colossus commercialization map: Anthropic $1.25B/mo + Google $920M/mo + Reflection $150M/mo + SpaceX $60B Cursor acquisition. Physical substrate under American frontier AI just re-integrated under one Musk-owned node.
+
+**Podcast Deep Cut** — Cognitive Revolution, "1000 Designs a Day" with Thomas von Tschammer (Neural Concept, EPFL spinout, $100M Series C from Goldman Sachs Dec 2025), June 30, ~90 min. JLR case: 50 → 1,500 aero designs/day in production. Foundation models for aerodynamics are "low-hanging fruit"; Neural Concept plays the domain-specific integration layer because plain LLMs "lack accurate 3D reasoning." Move-37 grounded by physics. "Competing with AI-native companies is harder than Japan in the '70s–'80s." Direct biology-transfer template for Ollie's cell-FM + Perturb-seq loop thesis.
+
+## Candidate funnel
+
+**Twitter/X discourse last 48h (HF Daily Papers July 1):**
+- Orca (2606.30534, 161 upvotes, #1) — dropped, covered June 30
+- Dockerless (2606.28436, 75 upvotes, #2) — **CHOSEN as lead**
+- BlockPilot (2606.31315, 60 upvotes) — **CHOSEN supporting**
+- DOPD (2606.30626, 57 upvotes) — **CHOSEN supporting**
+- GEAR Tencent Hunyuan (2606.32039, 21 upvotes) — dropped, image synthesis off-thesis
+- MemLearner (2606.31734, 16 upvotes) — dropped, video world models covered
+- Multi-Block Diffusion Language Models (2606.29215, 15 upvotes) — dropped, adjacent to BlockPilot but narrower
+- Evolution Fine-Tuning across 371 tasks (2606.29082, 15 upvotes) — dropped, off-thesis
+- RedVox multilingual speech (2606.26968, 11 upvotes) — dropped, speech-specific
+- Scenes as Objects 3D tokenization (2606.29513, 8 upvotes) — dropped
+
+**Money/business last 7d:**
+- Reflection AI × SpaceX $6.3B / $150M-per-month payments effective today — **CHOSEN as anchor**
+- Higharc $95M Series B June 30, Insight-led — dropped, homebuilding sector-specific
+- LeapXpert $180M June 30, Riverwood-led — dropped, comms compliance off-thesis
+- Pie $19.5M / Queue $12.6M / Qashier $6M June 30 — dropped, too small / off-thesis
+- 8090 Labs + Omen AI (covered June 30), Jumper→Anthropic + brain drain (June 28), Qualcomm-Modular + Nearfield + Peregrine (June 29), General Intuition + Patronus + Netris (June 27)
+
+**Podcasts last 14d:**
+- Cog Rev "1000 Designs a Day" with von Tschammer (Neural Concept), June 30, ~90 min — **CHOSEN**
+- AI:AM #4 Berg + Duvenaud + swyx (used June 30)
+- Robert Wright "The God We Deserve" (used June 29)
+- Zvi AI:AM #3 (June 21) — dropped, overlaps prior Fable coverage
+- Latent Space Databricks Zaharia + Xin June 24 (used June 25)
+- WhynotTV latest is Chen Tianqi ep #3 May 19 — out of 14-day window (consistent absence)
+- Dwarkesh no episode surfaced past June 4
+- Lex Fridman #490 State of AI (Feb 2026, out of window)
+
+**Zefan_Cai direct signal:** WebSearch returned no fresh 48h tweet indexation — consistent gap across the week, flagged not fabricated.
+=== 2026-07-01T02:41:54-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-02T02:30:09-07:00 start jinglin-ai-pulse ===
+All arXiv URLs resolve. RSS item parses. Script + stubs written. `SKIP_TTS=1` mode — no TTS/publish/feed edit/commit; the orchestrator handles those. Done.
+
+Files written to `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-07-02-sycophantic-memory-together-and-legible-reasoning.md` (script)
+- `2026-07-02-sycophantic-memory-together-and-legible-reasoning.rss-item.xml` (RSS stub with `__LENGTH__`/`__DURATION__` placeholders)
+- `2026-07-02-sycophantic-memory-together-and-legible-reasoning.commit-msg`
+
+## Candidate funnel
+
+**HF Daily Papers (Twitter Pulse) — top of leaderboard July 2, 2026:**
+- PerceptionRubrics (JHU, 2606.28322, 22 upvotes, HF #1) — **CHOSEN as lead**, rubric-gated multimodal eval, 8-pt open/closed gap, GUI weakest
+- TurboServe (SJTU + Shengshu + Tsinghua, 2606.19271, 18 upvotes, HF #2) — dropped, off-thesis (streaming video-gen serving); adjacent to yesterday's routing cluster but weaker biological read
+- MemSyco-Bench (Xiamen + Jilin, 2607.01071, 17 upvotes, HF #3) — **CHOSEN as anchor** for the biological translation, 13-23pp accuracy drop + 61-62% errors post-retrieval
+- ELDR (KAIST + MSR Beijing/Redmond + Shanghai Xingyunzhili, 2607.00466, 16 upvotes, HF #4) — **CHOSEN supporting**, expert-locality decode routing
+- Domain Arithmetic/DART (Seoul National U, 2607.00666, 15 upvotes, HF #5) — **CHOSEN supporting**, one-shot VLA task+domain decomposition
+
+**Money/business last 7d:**
+- Together AI $800M Series C at $8.3B (TechCrunch July 1) — **CHOSEN as anchor**; Aramco Ventures lead + Nvidia + Percy Liang cofounder + $1.15B bookings + Cursor/Cognition/Decagon customers = perfect complement to yesterday's Reflection/SpaceX story
+- DeepMind poker AI trio → quant funds (TechCrunch June 30) — dropped, off-thesis (finance)
+- Anthropic $65B / near-$1T IPO (TechCrunch May 28) — out of window
+- Sierra $950M enterprise agents (May 4) — out of window
+
+**Podcasts last 14d:**
+- Cognitive Revolution "Radically Better Reasoning" — Elicit's Stuhlmüller + Byun on world models for research (June 17, 73 min) — **CHOSEN**; at 15d the edge of window but no fresher long-form since yesterday's Neural Concept, and directly on-target (life sciences customer base + process supervision + legible-reasoning thesis)
+- Cognitive Revolution "1000 Designs a Day" (Neural Concept, June 30) — used yesterday
+- Cognitive Revolution AI:AM #4 (June 29, June 22-week highlights) — used June 30
+- Cognitive Revolution "The God We Deserve" (Robert Wright) — used June 29
+- Latent Space "Reality: The Final Eval" (Andon Labs Vending-Bench, June 4) — out of 14d window
+- WhynotTV Chen Tianqi (May 19) — out of window
+- Dwarkesh — no fresh episode since June 4
+- Machine Learning Street Talk / TWIML — nothing dated in-window surfaced
+
+**Zefan_Cai direct signal:** WebSearch returned no fresh 48h tweet indexation — consistent gap flagged not fabricated (same behavior as last 5+ days).
+=== 2026-07-02T02:42:12-07:00 done  jinglin-ai-pulse (exit 0) ===
