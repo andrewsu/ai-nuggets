@@ -2111,3 +2111,58 @@ All three deliverables are in place under `podcasts/biomedical-agentic-ai/script
 
 NMRAgent won on (a) direct fit with Su Lab interests in agentic AI applied to biomedical research, chemical knowledge graphs, and open-science tooling (KG integrates LOTUS / COCONUT / Natural Products Atlas / ChEMBL / Zitnik PrimeKG), (b) the cleanest quantitative result this week (Top-10 67.13% vs 36.48% best baseline on scaffold-split NMRGym; 81%/70% on two other benchmarks; frontier LLMs solo at ~0%), (c) wet-lab validation on two novel natural products plus four structural-revision corrections — moves the contribution from benchmark to real, (d) the templatable three-level hierarchical pattern (Knowledge-Level KG retrieval → Molecular-Level dual candidate construction → Fragment-Level verifier-driven recombination), (e) the clean editorial frame "the agent is the scaffolding, not the model" that follows directly from baseline LLMs scoring near zero solo.
 === 2026-06-30T02:10:32-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-01T02:00:07-07:00 start biomedical-agentic-ai ===
+All three stubs written. Under SKIP_TTS=1 the orchestrator handles TTS + R2 + feed insert + commit.
+
+## Final summary — biomedical-agentic-ai 2026-07-01
+
+**Episode:** ProtoPilot — self-evolving multi-agent system converts natural-language biology intent into validated SOPs, SDK-compliant robot code, and feedback-corrected wet-lab execution
+**Paper:** arXiv 2606.31763 (Shanghai AI Lab + Genoria AI, v1 posted 2026-06-30)
+**Files staged:** `2026-07-01-protopilot-self-evolving-agent-natural-language-to-wet-lab-execution.{md,rss-item.xml,commit-msg}` in `podcasts/biomedical-agentic-ai/scripts/`
+**Word count:** 1147 (under 1150 cap)
+**SKIP_TTS=1** — commit + audio + feed handled by orchestrator.
+
+### Candidate funnel
+
+- **bioRxiv (2026-06-30 → 2026-07-01):** 175 preprints scanned across 6 cursor pages; 11 keyword-relevance hits; substantive shortlist after discarding spurious matches ("LLM" in unrelated words, "agent" in receptor/immune/echolocation contexts):
+  - GeneBench-Pro — expanded benchmark for AI agents doing multistage statistical reasoning in genomics/quantitative biology (10.64898/2026.06.29.735386)
+  - Integrating Semantic Retrieval, LLM Refinement, and Structured Expert Curation for Scalable AOP Gene Mapping (10.64898/2026.06.25.734475)
+- **arXiv (cache, submitted 2026-06-30):** 181 keyword+bio-relevance hits after cs.AI/cs.CL/q-bio/cs.MA filter; substantive biomedical-agentic shortlist:
+  - **ProtoPilot** — self-evolving agentic system for automated biological protocol generation and execution (arXiv 2606.31763) ← **CHOSEN**
+  - FARS — fully automated research system deployed at scale, 166 papers (arXiv 2606.31651) — general AI/ML, not biomedical
+  - SAGE — self-correcting autonomous research via multi-hypothesis failure attribution (arXiv 2606.31478) — general autonomous science
+  - Agentic AI framework for plant phenotyping at ORNL (arXiv 2606.31831) — plant, not biomedical
+- **ChemRxiv / PubMed MCP / news / policy:** not queried today — arXiv cache + bioRxiv already had a dominant biomedical-agentic pick (ProtoPilot) with full-text access, wet-lab validation, and cross-layer significance. Recording in the funnel per PIPELINE.md.
+- **Sources with failures:** none.
+
+**Why ProtoPilot beat the runners-up:** direct wet-lab validation with feedback-corrected PCA DNA assembly (the marquee closed-loop demonstration), templatable skill-library factoring (parameter-confirmation / deck-layout / instrument-code) applicable well beyond biology, cross-device generalization (6-point spread across 4 platforms vs 47-point spread for LabScript-AI), and thematic continuity with last week's arc showing scaffolding beats bigger models. GeneBench-Pro is a strong benchmark paper but is a purely evaluation contribution with no accompanying novel agent architecture. AOP Gene Mapping is on-brief for KG/ontology but a narrower application vs ProtoPilot's cross-layer wet-lab loop.
+=== 2026-07-01T02:08:49-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-02T02:00:09-07:00 start biomedical-agentic-ai ===
+XML parses and the DOI resolves. All three stub files are in place; per PIPELINE.md's SKIP_TTS branch, the orchestrator handles TTS, R2 publish, feed edit, and commit.
+
+Episode published: **PreprintPaperTracker — an LLM claim-audit of 72,644 bioRxiv preprints against their peer-reviewed publications**
+
+Spoken body: 955 words (under 1150 cap).
+
+## Candidate funnel — 2026-07-02
+
+**bioRxiv** (details API, full pagination of 2026-06-30 → 2026-07-02, 414 unique DOIs across 14 pages, 422 raw items): 14 substantive matches on agent/agentic/LLM/foundation-model/autonomous/multi-agent/knowledge-graph/ontology after filtering spurious matches. Shortlist:
+- **CHOSEN** — Tracking claim changes from preprint to publication across 72,644 biomedical studies using LLMs (10.64898/2026.06.30.735556, scientific communication, v1 2026-07-01; full text via jina .full.pdf route after initial jina .full HTML returned abstract-only)
+- GeneBench-Pro: multistage statistical reasoning benchmark in genomics/quant bio (10.64898/2026.06.29.735386, genomics, v2 2026-06-30; full text retrieved) — strong runner-up but v2 update of prior benchmark and this show has been agent-benchmark-heavy the last week (BioDesignBench, scBench, MedCTA, TxBench-PP)
+- Integrating Semantic Retrieval + LLM Refinement + Expert Curation for Scalable AOP Gene Mapping (10.64898/2026.06.25.734475, bioinformatics; full text retrieved) — clean KG+LLM+ontology angle but toxicogenomics-narrow
+- NeuroVLM (10.64898/2026.02.06.704508, neuroscience, v3) — VLM not agentic
+- 10 others (mostly spurious keyword matches in immunology, biochemistry, etc.) dropped
+
+**arXiv** (shared cache /tmp/ai-nuggets-arxiv-cache.xml, 500 entries, agent+biomedical strict filter within 2-day window): 32 substantive hits. Notable:
+- HealthAgentBench: 54 agentic healthcare tasks (2606.31179) — full text via WebFetch on PDF, credible runner-up
+- DDIAgents: mechanism-conditioned multi-agent DDI prediction (2606.31085) — full text via WebFetch on PDF
+- RareDxR1: autonomous medical reasoning for rare disease (2607.00147)
+- CLExEval: human-in-the-loop qualitative eval of LLM clinical reasoning (2606.31608)
+- Active-GRPO: molecular optimization reasoning (2607.00531)
+- DDIAgents, HealthAgentBench, Active-GRPO all lost to today's pick on the "open science + LLM at scale" axis
+- ProtoPilot self-evolving agent (2606.31763) already featured yesterday, excluded
+
+**PubMed, ChemRxiv, news, policy**: not queried today — the bioRxiv-plus-arXiv sweep produced a dominant candidate on Andrew's exact "open science + AI intersections" bullet, so additional sources unlikely to change selection. Noted as a small recall gap.
+
+**Selection rationale**: PreprintPaperTracker hits three of Andrew's listed interests simultaneously — LLM at biomedical scale, open-science instrumentation, and validated LLM-as-annotator methodology worth borrowing. Claim-level audit of 72k pairs with human-agreement calibration + locked codebook + open pipeline + open dashboard + retraction-rate-cuts-the-other-way secondary finding. Fresh v1 (2026-07-01), full text obtained via r.jina.ai on the `.full.pdf` route after `.full` HTML returned abstract-only.
+=== 2026-07-02T02:08:53-07:00 done  biomedical-agentic-ai (exit 0) ===
