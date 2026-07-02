@@ -753,3 +753,65 @@ Files written:
 
 Per SKIP_TTS=1, no TTS / R2 publish / feed edit / commit performed — that's the orchestrator's job after batch TTS finishes.
 === 2026-06-30T02:47:51-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-01T02:40:07-07:00 start justice-biotech-brief ===
+Episode written for `justice-biotech-brief` 2026-07-01. SKIP_TTS=1 so no TTS/publish/feed/commit — stubs written for the orchestrator.
+
+**Pick:** MTS-128 — Metis TechBio out-licenses a preclinical AI-designed trispecific T cell engager for undisclosed autoimmune indication to Deerfield-backed Boulevard Bio for $20M upfront + up to $1.6B milestones + tiered royalties (HKEX voluntary announcement filed June 30, 2026). Lands on Justice's two of three explicit interest areas at once — trispecific T cell engagers and autoimmune biologics.
+
+**Files written:**
+- `scripts/2026-07-01-mts-128-metis-boulevard-trispecific-tce-autoimmune.md` (~5-min spoken script)
+- `scripts/2026-07-01-mts-128-metis-boulevard-trispecific-tce-autoimmune.rss-item.xml` (XML validated)
+- `scripts/2026-07-01-mts-128-metis-boulevard-trispecific-tce-autoimmune.commit-msg`
+
+**Candidate funnel — 2026-06-30 to 2026-07-01:**
+
+- **News/press (Fierce Biotech + STAT News homepages; Endpoints homepage cookie-walled):** 15+15 headlines scanned. On-beat shortlist:
+  - Deerfield's Boulevard Bio — Metis TechBio $1.6B trispecific TCE deal (Fierce Jun 30 8:00am) — **CHOSEN** (trispecific TCE + autoimmune, dual interest hit; full text obtained via jina reader; HKEX filing PDF pulled directly; Metis pipeline page confirms Immunology/Autoimmune indication).
+  - Abivax stock rebounds on colitis safety data (Fierce Jun 30) — dropped, autoimmune biologic but spotlighted yesterday by sister calibr-briefing show and one step off Justice's TCE/CAR-T/ADC core beat.
+  - CARsgen China solid tumor CAR-T satri-cel (Fierce Jun 30 analysis; NMPA approval was June 22 — 9 days ago) — dropped on recency; primary approval outside 1-2-day window, only the analytical piece is fresh.
+  - Beeline Medicines $126M Series B ext (autoimmune, Bain/BMS) — noted; asset-vehicle pattern referenced in script but not primary pick (financing round, no molecular novelty).
+  - FDA CBER gene therapy regulator Vijay Kumar steps down (Fierce Jun 30) — dropped (regulatory/policy; sister travis-briefing 6/30 already covered it).
+  - Backed-by-top-VCs Alzheimer's asset $2.2B deal (Fierce Jul 1) — dropped as off-beat (CNS neurology, not TCE/CAR-T/ADC/JAK/VEGF-PDL1).
+  - STAT: Anthropic Claude Science + Anthropic drug development pivot (Jun 30) — dropped as tooling / non-therapeutic.
+- **bioRxiv (details API, paginated full sweep 2026-06-30 to 2026-07-01, cursor 0–150, 175 unique items):** 20 raw keyword hits after title+abstract regex. Substantive shortlist after discarding spurious matches (VEGFR2 in AD angiogenesis, checkpoint in cell-cycle contexts, "immunotherapy" in a TB metabolism paper, ferroptosis pan-cancer signatures, etc.): **zero** items directly on the TCE / bispecific / ADC / JAK-ADC / VEGF×PD-L1 / trispecific / CAR-T beat.
+- **Policy / funder (ARPA-H, NIH, NSF news pages):** deliberately not fetched given the on-beat news-side story was already dominant; no policy item would have unseated it.
+- **Sources with issues:** Fierce Biotech HTTPS pages return 403 to WebFetch UA — worked via jina reader proxy (`r.jina.ai`). Endpoints News homepage via jina returned only cookie-consent shell (no headline content) — mitigated by Fierce coverage which was comprehensive on this story.
+
+**Editorial call:** The trispecific TCE + autoimmune combination is the deal of the week in Justice's field. Script framed around three threads — (1) what MTS-128 is and what remains undisclosed, (2) why autoimmune trispecific TCE is a mechanistic bet worth flagging (dual-antigen AND-gate selectivity vs. bispecific pan-B-cell depletion; Cullinan SLE reference case), (3) structural read on Deerfield asset-vehicle underwriting $1.6B in milestones on a preclinical TCE with undisclosed targets and no data — market signal on autoimmune-TCE conviction running ahead of the clinical package.
+=== 2026-07-01T02:48:04-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-02T02:40:09-07:00 start justice-biotech-brief ===
+Script and stubs written. Since `SKIP_TTS=1` is set, PIPELINE.md instructs me to skip TTS, R2 publish, feed edit, and commit — the orchestrator handles those after batch TTS. Final summary for cron.log follows.
+
+---
+
+**Justice's Biotech Brief — 2026-07-02 run**
+
+- Script: `podcasts/justice-biotech-brief/scripts/2026-07-02-tregzi-orca-bio-treg-cell-therapy-gvhd-fda-approval.md`
+- RSS stub: `...gvhd-fda-approval.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders)
+- Commit-msg stub: `...gvhd-fda-approval.commit-msg`
+- SKIP_TTS=1 — deferred TTS, R2 publish, feed edit, and commit to the orchestrator per PIPELINE.md §SKIP_TTS mode.
+
+**Candidate funnel (Jul 1–2, 2026 window)**
+
+- **bioRxiv**: full 2-day corpus paginated (248 entries across 3 pages). 8 keyword-matched on {VEGF, PD-L1, PD-1, TCE/bispecific/trispecific, CAR-T, ADC, JAK, immunotherapy, checkpoint, CD3, Treg}, of which the 3 substantive matches after discarding spurious hits were:
+  - IFNα2 multi-compartment tumor + immune reprogramming in colon cancer immunotherapy resistance (PD-L1 hit) — 10.64898/2026.06.26.734809
+  - Viral capsid delivery of cGAMP for STING antitumor response (immunotherapy hit) — 10.64898/2026.06.26.734859
+  - ARL15 in inflammatory fibroblast activation in RA (JAK hit, tangential) — 10.64898/2026.06.26.733622
+- **Endpoints News / Fierce Biotech / STAT / Fierce Pharma / MedCity News / AJMC / BioSpace** (Jul 1–2): 5 substantive on-brief items:
+  - Orca Bio Tregzi FDA approval — first-ever Treg cell therapy approval, Precision-T (n=187) 78% vs 38.4% cGvHD-free at 1 yr, OS 94% vs 83%, $428K WAC — Jul 1, 2026 ← **CHOSEN**
+  - 92Bio Phase 1 first patient dosed for NTB-928 (FOLR1×CD3 bispecific TCE, revived from Amgen) in platinum-resistant ovarian — Jul 1, 2026
+  - Insilico × Takeda $600M biobuck AI drug discovery collab — Jul 1, 2026
+  - Backed-by-top-VCs biotech grabs AlzeCure Alzheimer's asset in $2.2B deal — Jul 1, 2026
+  - GLP-1s in peripheral artery disease (STAT Readout) — Jul 1, 2026 (off-brief)
+- **Policy / ARPA-H / NIH / NSF**: no new on-brief announcements Jul 1–2 in that day's window.
+
+**Chosen**: Tregzi FDA approval. Field-defining first (first Treg-based cell therapy ever FDA-approved), lands on Justice's cancer immunotherapy + autoimmune biologics axes, forward read into Orca-Q + autoimmune expansion competing with the CD19 CAR-T-in-autoimmune and CD19×CD3 TCE stories we've been running.
+
+Sources:
+- [FDA approves Orca Bio's cell therapy — MedCity News](https://medcitynews.com/2026/07/orca-bio-treg-cell-therapy-tregzi-blood-cancer-leukemia-graft-versus-host-disease-gvhd/)
+- [FDA approves Orca Bio's T cell therapy — STAT](https://www.statnews.com/2026/07/01/fda-approves-orca-bio-treatment-blood-cancer/)
+- [Orca Bio makes a splash with FDA approval — Fierce Pharma](https://www.fiercepharma.com/pharma/fda-approves-orca-bio-cell-therapy-tregzi-blood-cancer-transplants)
+- [Orca opens up Treg cell therapy — BioSpace](https://www.biospace.com/fda/orca-opens-up-treg-cell-therapy-with-fda-nod-for-allogeneic-blood-cancer-treatment)
+- [Orca-T Gains FDA Approval — AJMC](https://www.ajmc.com/view/orca-t-gains-fda-approval-for-matched-donor-stem-cell-transplant)
+- [A discarded Amgen T cell engager comes back at 92Bio — Endpoints News](https://endpoints.news/92bio-revives-a-t-cell-engager-it-had-transferred-to-amgen/)
+=== 2026-07-02T02:46:59-07:00 done  justice-biotech-brief (exit 0) ===
