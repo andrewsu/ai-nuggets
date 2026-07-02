@@ -78,11 +78,31 @@ def events_for_date(log_path: Path, target_date: dt.date) -> list[tuple[dt.datet
     return out
 
 
+def unpublished_basenames(feed_path: Path, mp3s: list[Path]) -> list[str]:
+    """Return the subset of mp3 basenames (stems) that don't appear in feed.xml.
+
+    publish_pending.py writes the basename into the RSS <guid> and enclosure
+    URL, so a simple substring test is enough — and misses the whole
+    per-show publish-side failure surface (feed edit + R2 upload + git
+    commit + push) that daily_audit's MP3-exists check silently green-lit
+    for two full days in 2026-07 while nothing was actually shipping.
+    """
+    if not feed_path.exists():
+        return [m.stem for m in mp3s]
+    try:
+        feed_src = feed_path.read_text(errors="replace")
+    except OSError:
+        return [m.stem for m in mp3s]
+    return [m.stem for m in mp3s if m.stem not in feed_src]
+
+
 def classify(slug: str, target_date: dt.date) -> dict:
     log_path = PODCASTS / slug / "logs" / "cron.log"
     evts = events_for_date(log_path, target_date)
     episodes_dir = PODCASTS / slug / "episodes"
+    feed_path = PODCASTS / slug / "feed.xml"
     mp3s = sorted(episodes_dir.glob(f"{target_date.isoformat()}*.mp3"))
+    unpublished = unpublished_basenames(feed_path, mp3s)
 
     starts = [(ts, msg) for ts, msg in evts if msg.startswith(f"start {slug}")]
     dones = [(ts, msg) for ts, msg in evts if msg.startswith(f"done  {slug}")]
@@ -90,11 +110,17 @@ def classify(slug: str, target_date: dt.date) -> dict:
     no_episode = [(ts, msg) for ts, msg in evts if msg.startswith(f"no episode produced for {slug}")]
     aup = [(ts, msg) for ts, msg in evts if msg.startswith(f"AUP-refusal detected for {slug}")]
 
-    # The mp3 is the canonical artifact. If one exists for the date the day
-    # ultimately succeeded, even if cron's retry ladder gave up and the
-    # human had to manually rerun — flag that case via the retry count.
-    if mp3s:
+    # The mp3 is the canonical local artifact, but the subscriber-visible
+    # artifact is a matching item in feed.xml. Both must be present for
+    # SUCCESS. Historically the audit checked only the mp3, which silently
+    # green-lit a two-day publish outage in 2026-07 when a pre-commit hook
+    # cascade blocked every commit in publish_pending.py — mp3s landed on
+    # disk but no feed ever updated. Split those cases apart with
+    # NOT_PUBLISHED.
+    if mp3s and not unpublished:
         status = "SUCCESS"
+    elif mp3s:
+        status = "NOT_PUBLISHED"
     elif not starts:
         status = "NO_RUN"
     elif failed:
@@ -117,6 +143,7 @@ def classify(slug: str, target_date: dt.date) -> dict:
         "aup_count": len(aup),
         "no_episode_count": len(no_episode),
         "mp3s": [p.name for p in mp3s],
+        "unpublished": unpublished,
         "log_path": log_path,
     }
 
@@ -127,6 +154,7 @@ STATUS_ICON = {
     "HUNG": "HUNG",
     "NO_RUN": "MISS",
     "NO_EPISODE": "NOEP",
+    "NOT_PUBLISHED": "UNPB",
 }
 
 
@@ -154,21 +182,35 @@ def render_summary(reports: list[dict], target_date: dt.date) -> tuple[str, str]
             extras.append(f"{r['aup_count']} AUP")
         if r["no_episode_count"]:
             extras.append(f"{r['no_episode_count']} no-ep")
+        if r["unpublished"]:
+            extras.append(f"{len(r['unpublished'])} not in feed")
         extra = f" ({', '.join(extras)})" if extras else ""
         when = fmt_time(r["last_event"])
         lines.append(f"  {icon}  {r['slug']:30s}  {when} PT{extra}")
 
     lines.append("")
     if bad:
-        lines.append("Tail of cron.log for non-SUCCESS shows:")
+        lines.append("Diagnostics for non-SUCCESS shows:")
         lines.append("")
         for r in bad:
             lines.append(f"--- {r['slug']} ({r['status']}) ---")
-            try:
-                tail = r["log_path"].read_text(errors="replace").splitlines()[-40:]
-            except FileNotFoundError:
-                tail = ["(log file not found)"]
-            lines.extend(tail)
+            # NOT_PUBLISHED means the mp3 exists but the item never made it
+            # into feed.xml — cron.log will read like a success, so the
+            # useful signal is the missing basenames plus the tail of the
+            # nightly run_all_shows-*.log where Phase 3 lives.
+            if r["status"] == "NOT_PUBLISHED":
+                for b in r["unpublished"]:
+                    lines.append(f"  mp3 on disk but not in feed.xml: {b}")
+                lines.append(
+                    "  check the most recent logs/run_all_shows-*.log for "
+                    "Phase 3 (publish_pending.py) errors"
+                )
+            else:
+                try:
+                    tail = r["log_path"].read_text(errors="replace").splitlines()[-40:]
+                except FileNotFoundError:
+                    tail = ["(log file not found)"]
+                lines.extend(tail)
             lines.append("")
     body = "\n".join(lines) + "\n"
     return subject, body
