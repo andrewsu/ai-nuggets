@@ -95,6 +95,11 @@ PRONUNCIATION_SUBS = [
     (re.compile(r"\bbiorxiv\b", re.IGNORECASE), "bio-archive"),
     (re.compile(r"\bmedrxiv\b", re.IGNORECASE), "med-archive"),
     (re.compile(r"\barxiv\b", re.IGNORECASE), "archive"),
+    # "lead" in drug-discovery bigrams reads as "leed" (noun), not "led"
+    # (past-tense verb) — force the pronunciation for the common phrases.
+    (re.compile(r"\blead compound\b", re.IGNORECASE), "leed compound"),
+    (re.compile(r"\blead compounds\b", re.IGNORECASE), "leed compounds"),
+    (re.compile(r"\blead discovery\b", re.IGNORECASE), "leed discovery"),
 ]
 
 
@@ -108,6 +113,9 @@ def extract_script_body(path):
     text = open(path).read()
     if "## Script" in text:
         text = text.split("## Script", 1)[1]
+        # Stop at the next section heading so trailing sections (candidate
+        # funnel, show notes, etc.) don't get narrated.
+        text = re.split(r"(?m)^## ", text, maxsplit=1)[0]
     lines = [l for l in text.strip().split("\n") if not l.strip().startswith("Paper link:")]
     return apply_pronunciation_subs("\n".join(lines).strip())
 
