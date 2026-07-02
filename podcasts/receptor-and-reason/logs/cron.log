@@ -1878,3 +1878,68 @@ Files in place under SKIP_TTS handoff:
 
 This run was retry 1 against an interrupted 02:50 invocation; the script existed but the publishing stubs and ledger entry didn't. Completing those was the right move — the script was solid and re-doing selection would have diverged from the audio that's already going to be generated tonight.
 === 2026-06-30T03:46:04-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-07-01T02:50:07-07:00 start receptor-and-reason ===
+All three files written. `SKIP_TTS=1` is set, so I stop here per the pipeline (no TTS, publish, feed edit, or commit — the orchestrator handles those after batch TTS).
+
+Episode 49 for 2026-07-01 (Receptor & Reason): 10 items — Roth lab 5-HT2A-mGluR2 heterodimer refutation as lead, followed by a four-paper AD block (cerebrovascular snRNA-seq across four proteinopathies, NPTX2 resilience proteomics, Hsp60/10 mitochondrial chaperonin, Doeller VR-fMRI navigation), Kenny lab cerebellar miR-206 Purkinje/PPI, STING as microglial-phagocytosis brake in epileptogenesis, ventral-striatal astrocyte RPE encoding, social-isolation miR-30e-5p/pattern separation, and Microsoft HealthAgentBench close. Shipped ledger updated with 10 new keys.
+
+Candidate funnel (for cron.log audit):
+
+- **bioRxiv details API (2026-06-25 → 2026-07-01)**: 939 total papers scanned across the window; 308 in neuro/pharm/systems/bioinformatics categories with drug-discovery-relevant keywords survived the coarse filter; 186 after dedup against 484 shipped-ledger keys; 22 with strongest CNS-pharm signal (≥5 keyword hits).
+- **arXiv daily cache** (`/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, category union preloaded by runner): 174 items matched agentic ∩ biomedical filter; 36 in the tightest bio/clinical ∩ agentic subset. HealthAgentBench (2606.31179) chosen as the single arXiv pick for topical fit.
+- **Live arXiv API**: not queried; cache present.
+- **Published journals + Psychiatric Times + society press**: not walked exhaustively today — the bioRxiv+arXiv haul already exceeded the 8-12 target with strong CNS-pharm items.
+
+Substantive shortlist (title | URL, ★ = chosen):
+
+- ★ No evidence for direct physical interaction of 5-HT2A-mGluR2 receptors — https://www.biorxiv.org/content/10.64898/2026.06.28.734515v1
+- ★ Cerebrovascular snRNA-seq in AD + primary tauopathies — https://www.biorxiv.org/content/10.64898/2026.06.26.734052v1
+- ★ NPTX2-centered cognitive resilience mechanisms in AD — https://www.biorxiv.org/content/10.1101/2025.10.17.683150v3
+- ★ Mitochondrial Hsp60/10 client protein decline in AD (ROSMAP) — https://www.biorxiv.org/content/10.64898/2026.06.25.734545v1
+- ★ Functional neural signatures of navigation impairment in early AD — https://www.biorxiv.org/content/10.64898/2026.06.24.734294v1
+- ★ Cerebellar miR-206 tunes Purkinje firing to control sensorimotor gating — https://www.biorxiv.org/content/10.64898/2026.06.29.734826v1
+- ★ STING restrains calcium-dependent microglial phagocytosis in epileptogenesis — https://www.biorxiv.org/content/10.64898/2026.06.25.734646v1
+- ★ Ventral striatal astrocytes contribute to reinforcement learning — https://www.biorxiv.org/content/10.1101/2025.10.20.683205v2
+- ★ Social isolation alters hippocampal miR-30e-5p and impairs pattern separation — https://www.biorxiv.org/content/10.64898/2026.06.24.734185v1
+- ★ HealthAgentBench (Microsoft, agentic healthcare) — https://arxiv.org/abs/2606.31179
+- Scaling of Neuronal Growth and Excitability Through Separable mTORC1/mTORC2 (Pten/Raptor/Rictor) — https://www.biorxiv.org/content/10.64898/2026.06.22.733785v1 (strong but preferred four-paper AD block for coherence)
+- A pocket-centric framework for selective targeting of amyloid fibril polymorphs — https://www.biorxiv.org/content/10.64898/2026.02.25.707901v2 (kept for future episodes)
+- Guam ALS/PDC features CTE-like tau seeds — https://www.biorxiv.org/content/10.64898/2025.12.22.696002v2 (interesting neuropathology, dropped for coherence)
+- Sexually dimorphic behavioural signatures of tau toxicity in adult Drosophila — https://www.biorxiv.org/content/10.64898/2026.06.22.733697v1 (dropped, model-organism-heavy)
+- Distinct nanoscale architectures of GABAergic inhibitory synapses — https://www.biorxiv.org/content/10.64898/2026.06.26.734878v1 (dropped, adjacent to yesterday's Btbd11 synaptic-condensate piece)
+- ST3GAL3 LOF disrupts synaptic E/I dynamics — https://www.biorxiv.org/content/10.64898/2026.06.21.733355v1 (interesting NDD/ADHD link, dropped for airtime)
+- Frontotemporal cortex flexibly adapts latent structural representations — https://www.biorxiv.org/content/10.64898/2026.06.25.734414v1 (dropped, more cognitive-neuroscience than pharm)
+- ProtoPilot self-evolving agentic biological protocols (arXiv 2606.31763) — already the lead item for biomedical-agentic-ai's 2026-07-01 episode; deliberately not featured here to keep R&R differentiated.
+=== 2026-07-01T03:05:05-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-02T02:50:09-07:00 start receptor-and-reason ===
+Episode script and stubs are written; `shipped.jsonl` appended. `SKIP_TTS=1` — audio, R2 publish, feed.xml update, and commit are handled by the orchestrator.
+
+**Candidate funnel — 2026-07-02**
+
+- **bioRxiv details API** (2026-06-25 → 2026-07-02): 1,186 preprints scanned; 414 CNS/pharm-keyword hits; 190 survived stricter relevance filter; ~30 substantive shortlist reviewed with abstracts, 10 full-text for lead/spotlight items.
+- **arXiv daily cache** (`/tmp/ai-nuggets-arxiv-cache.xml`): 500 entries in the cache; 343 in-window and topically relevant (agentic AI / clinical AI); top 40 reviewed. No arXiv item chosen today — the strongest agentic-AI-in-drug-discovery item was a bioRxiv preprint (F.A.D.E.); the LLM-audit item is also on bioRxiv.
+- **Tier 2/3 journals + press** (NPP, MP, BP, IJNP, Neuropharm, Psychiatric Times, ACNP/SOBP/ECNP): not directly queried in this run — bioRxiv corpus + arXiv cache carried the day and yielded 10 fresh items well above the floor.
+- **chemRxiv**: skipped (Cloudflare-gated from this host; not needed to hit floor).
+- **Ledger**: 55 prior items in `state/shipped.jsonl`, none of today's picks collide.
+
+Substantive shortlist (chosen marked ★):
+
+- ★ Multiregional SEA-AD atlas + multi-agent AI hypothesis workflow — https://www.biorxiv.org/content/10.64898/2026.07.01.734821v1
+- ★ Ketamine long-term anxiolytic in female WKY rats — https://www.biorxiv.org/content/10.64898/2026.06.26.734907v1
+- ★ Long-range inhibitory control of striatal CIN pause (β2-nAChR) — https://www.biorxiv.org/content/10.64898/2026.06.29.735329v1
+- ★ Hippocampal microcircuits constrain epileptiform activity (β3 CA1 KO) — https://www.biorxiv.org/content/10.64898/2026.06.25.734494v1
+- ★ Thalamus fine-scale development + SZ risk zones + neuroreceptor fingerprint — https://www.biorxiv.org/content/10.64898/2026.06.29.735354v1
+- ★ Submovement alterations in psychosis + chronic cannabis — https://www.biorxiv.org/content/10.64898/2026.06.25.734496v1
+- ★ Hippocampal DA + nutrient-dependent meal memory (D2R) — https://www.biorxiv.org/content/10.64898/2026.06.26.734911v1
+- ★ PKA regulatory subunit RI vs RII double KOs + AD implications — https://www.biorxiv.org/content/10.64898/2026.06.26.734839v1
+- ★ F.A.D.E. Fully Agentic Drug Engine — https://www.biorxiv.org/content/10.64898/2026.06.20.733481v1
+- ★ Claude Sonnet 4.6 audit of 72,644 preprint-to-publication pairs — https://www.biorxiv.org/content/10.64898/2026.06.30.735556v1
+- HCAR2/HCAR1 lactate/ketone SZ paper (10.64898/2026.06.26.734782) — dropped; solo-author preprint with speculative/rhetorical abstract framing ("thermodynamic governor", "coolant", "fuel mismatch"), full-text unavailable via r.jina.ai channel, insufficient signal-to-noise.
+- Multiregional AD entorhinal vulnerability (calbindin L2/3 excitatory) — dropped; redundant with SEA-AD 10-region pick.
+- Practical Use of Advanced AI Frameworks (3 case studies) — dropped; adjacent to prior "Real Science Is Harder Than Benchmarks" pick from 2026-06-29.
+- ARF1-C9orf72:SMCR8:WDR41 small-molecule ALS/FTD (v2) — dropped in favor of fresher v1 picks.
+- NeuroMark-SZ resting-state fMRI (v2) — dropped; v-update on older work.
+- Anle138b hIAPP T2D (v2) — dropped; outside CNS focus even given AD-adjacent scaffold.
+- Locus coeruleus-hippocampus offline (v3) — dropped; older version-3 update.
+- Dopamine internal state monkeys — dropped; slot conflict with HPC DA meal memory pick.
+=== 2026-07-02T03:01:22-07:00 done  receptor-and-reason (exit 0) ===
