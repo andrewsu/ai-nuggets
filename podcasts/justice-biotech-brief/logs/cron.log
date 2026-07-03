@@ -815,3 +815,36 @@ Sources:
 - [Orca-T Gains FDA Approval — AJMC](https://www.ajmc.com/view/orca-t-gains-fda-approval-for-matched-donor-stem-cell-transplant)
 - [A discarded Amgen T cell engager comes back at 92Bio — Endpoints News](https://endpoints.news/92bio-revives-a-t-cell-engager-it-had-transferred-to-amgen/)
 === 2026-07-02T02:46:59-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-03T02:40:17-07:00 start justice-biotech-brief ===
+Everything is in place: script + rss-item.xml stub + commit-msg stub. Since `SKIP_TTS=1`, the orchestrator will handle TTS, publish, feed, and commit.
+
+Wrote `podcasts/justice-biotech-brief/scripts/2026-07-03-virovbot-piryv-in-vivo-car-t-redosable.md` + `.rss-item.xml` + `.commit-msg` — pick is the viroVbot in-vivo CAR-T preprint (Ahmad group, Jamia Millia Islamia / IGIB, bioRxiv posted July 1, 2026). Body HTML not yet rendered — flagged abstract-only in the script per PIPELINE.md. Batch TTS + feed update + commit are the orchestrator's job.
+
+**Candidate funnel — 2026-07-02 to 2026-07-03**
+
+*bioRxiv (details API, all 190 items across 2 days pulled and keyword-filtered):*
+- 8 keyword hits (VEGF / PD-L1 / TCE / bispecific / CAR-T / ADC / JAK / immunotherapy / autoimmune):
+  - **Alam et al., "Safe Redosable Low-Immunogenic In Vivo CAR-T Therapy for B Cell Malignancies and Solid Tumors" — 10.64898/2026.06.30.735484 — CHOSEN** (direct hit on CAR-T; novel envelope-immunogenicity-first design; solid-tumor extension; redosing framing).
+  - Mapping the immune landscape in small cell lung cancer (10.64898/2026.06.29.735200) — descriptive T-cell atlas, no therapeutic hook — dropped.
+  - Fucoidan LNP for CAR-macrophage generation (10.64898/2026.07.01.735684) — macrophage delivery method, adjacent — dropped.
+  - "Evaluation of Retinal Safety of HIF-PHD Inhibitors" — VEGF keyword collateral; not immuno-onc — dropped.
+  - "Inferring differentiation trajectories from T cell clonotype distributions" — bioinformatics method — dropped.
+  - "DNA template heterogeneity and in vitro transcription… mRNA poly(A)" — mRNA-manufacturing, tangential — dropped.
+  - "Multimodal computational framework identifies B cell convergence in autoimmunity and ageing" — descriptive bioinformatics — dropped.
+  - "T cell receptor-like antibody" MHC-II influenza epitope (10.64898/2026.06.25.734564) — immunology basic — dropped.
+
+*News (Fierce Biotech, Endpoints, STAT, BioPharma Dive, Fierce Pharma, dated 2026-07-02):*
+- Roche divarasib beats sotorasib + adagrasib in Phase 3 head-to-head NSCLC (KRAS G12C) — big story but already the calibr-briefing spotlight today; targeted-oncology, not immuno — dropped for JBB.
+- Otsuka VOYXACT (sibeprenlimab) VISIONARY 2-yr eGFR positive (IgA nephropathy, APRIL biologic) — strong autoimmune fit, considered as runner-up; dropped in favor of CAR-T bullseye.
+- United Therapeutics acquires Thymmune ($300M) — iPSC thymic-cell platform, adjacent — dropped.
+- Ipsen/Memo Therapeutics BK-virus mAb (~€700M) — kidney transplant, not core beat — dropped.
+- Celea Therapeutics $180M for deupirfenidone IPF Phase 3 — fibrosis, off-beat — dropped.
+- Fosun psoriasis market entry ($32M) — small signal — dropped.
+- STAT mid-year sector recap, Bluebird post-mortem, FDA-AI-guidance opinion, Roche oncology reputation — commentary/sector, not therapeutic — dropped.
+
+*Policy / funder press (ARPA-H news, NIH press releases, NSF news):* nothing in-window (2026-07-02 or 2026-07-03) across all three; most recent items were 2026-07-01 (Alzheimer's blood biomarker at NIH; ARPA-H indoor-air) and off-beat anyway.
+
+*Source failures:* Fierce Pharma partly 403'd on WebFetch (news agent noted); NIH press page 403'd direct WebFetch, retrieved via r.jina.ai. No source-side failures forced any skip.
+
+Chosen: `2026-07-03-virovbot-piryv-in-vivo-car-t-redosable` — direct CAR-T bullseye on Justice's beat, novel platform framing (envelope-immunogenicity-first + envelope-library redosing), solid-tumor Claudin-18.2 extension. Abstract-only depth flagged in the script.
+=== 2026-07-03T02:50:04-07:00 done  justice-biotech-brief (exit 0) ===
