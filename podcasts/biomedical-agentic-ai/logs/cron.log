@@ -2166,3 +2166,36 @@ Spoken body: 955 words (under 1150 cap).
 
 **Selection rationale**: PreprintPaperTracker hits three of Andrew's listed interests simultaneously — LLM at biomedical scale, open-science instrumentation, and validated LLM-as-annotator methodology worth borrowing. Claim-level audit of 72k pairs with human-agreement calibration + locked codebook + open pipeline + open dashboard + retraction-rate-cuts-the-other-way secondary finding. Fresh v1 (2026-07-01), full text obtained via r.jina.ai on the `.full.pdf` route after `.full` HTML returned abstract-only.
 === 2026-07-02T02:08:53-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-03T02:00:16-07:00 start biomedical-agentic-ai ===
+All three stub files written and the RSS XML is valid. Wrapping up with the audit summary for cron.log.
+
+Episode published: **Self-expanding reaction ontology — a multi-agent LLM writes verifiable SMIRKS rules, grows 68 classes to 14,073, and matches the proprietary standard across 666,000 patent reactions**
+
+**Paper:** arXiv 2607.01061 (Armstrong, Dobbelaere, Olikauskas, Avila, Susanu, Waser, Schwaller — EPFL / NCCR Catalysis Switzerland / Ghent Laboratory for Chemical Technology, v1 posted 2026-07-01)
+**Files staged:** `2026-07-03-self-expanding-reaction-ontology-multi-agent-llm-verifiable-smirks.{md,rss-item.xml,commit-msg}` in `podcasts/biomedical-agentic-ai/scripts/`
+**Spoken body:** 978 words (under 1150 cap)
+**SKIP_TTS=1** — commit + audio + feed handled by orchestrator.
+
+### Candidate funnel — 2026-07-03
+
+- **bioRxiv (2026-07-02 → 2026-07-03, full pagination):** 188 unique DOIs across 7 pages; 14 keyword hits pre-filter. Substantive shortlist after discarding spurious matches (agent = chemotherapy/cryoprotection agent, prey-capture context, MHC-loading contexts, biocontrol):
+  - GeneBench-Pro (v3 update, 10.64898/2026.06.29.735386, genomics) — already runner-up on 2026-07-01 and 2026-07-02, skipped to avoid a hat trick
+  - Tabular Foundation Models Are Competitive Cellular Perturbation Predictors (10.64898/2026.06.28.735106, bioinformatics) — foundation-model biology, credible runner-up
+  - Knowledge-guided Bayesian optimization using pre-trained LLMs to identify superior genotypes from germplasm (10.64898/2026.06.28.735149, bioinformatics) — plant germplasm, off-brief
+- **arXiv (shared cache /tmp/ai-nuggets-arxiv-cache.xml, 500 entries within 2-day window):** 180 keyword + biomedical hits; substantive biomedical-agentic shortlist after strict filter:
+  - **CHOSEN** — Agentic generation of verifiable rules for deterministic, self-expanding reaction classification (2607.01061, Schwaller EPFL, v1 2026-07-01) — full text via r.jina.ai on /pdf
+  - World Feedback for Clinical Agents / MedAgentBench-v3 (2607.01470) — silent-finish ceiling audit + RL diagnosis, strong runner-up on the clinical-agent axis
+  - FaithMed: RL-trained faithful evidence-based medical reasoning with process-level rubrics (2607.01440) — strong medical LLM training story
+  - OntoLearner: Modular Python Library for Ontology Learning with LLMs (2607.01977) — 180 ontologies (incl. GO, ChEBI, DOID, OBI), first-of-its-kind OL benchmark; strong KG/ontology fit but framework-only
+  - MKGR: Multimodal Knowledge-Graph Representation for Cold-Start PPI Prediction (2607.01627) — biomed KG angle
+  - Graph-PRefLexOR: Graph-Native RL for Traceable Scientific Hypothesis Generation via Conceptual Recombination (2607.00924) — materials-focused, not biomedical
+  - AgentODE: LLM-Guided ODE Discovery + Parameter Inference from Small-Cohort Aggregate Data (2607.00733) — rare-disease modeling
+  - Discrete Diffusion Language Models for Interactive Radiology Report Drafting (2607.01436) — foundation-model radiology, not agentic
+  - Optimal Resource Utilization for Autonomous Laboratory Orchestrators (2607.01188) — MOF-synthesis scheduling
+- **PubMed (last 5 days, esearch + esummary on 200 IDs):** 21 keyword-relevance hits after title filter; substantive matches (BoneCoT bone-metastases foundation model, Physicians-and-AI-diverge LLM eval, LLM ECG classification, longitudinal LLM clinical knowledge) all narrower than the arXiv shortlist and none dominant on Andrew's agentic-AI + KG/ontology + open-science axes.
+- **ChemRxiv:** not queried today — arXiv already surfaced a chemistry-flavored dominant pick with full-text access.
+- **News/policy (ARPA-H, NIH, NSF, HHS):** ARPA-H news page had no agentic-AI/biomedical-AI items in the 07-01→07-03 window; NIH news page returned HTTP 403 from this IP — logged as a source-side outage per PIPELINE.md, no retry attempted because the arXiv + bioRxiv sweep already surfaced a dominant candidate.
+- **Sources with failures:** NIH news (`www.nih.gov/news-events/news-releases` HTTP 403 from this IP, skipped per source-level-failures rule).
+
+**Why the reaction-classification paper beat the runners-up:** three of Andrew's listed interests hit simultaneously — multi-agent LLM applied to a scientific problem, ontology construction and expansion, and open-science-worthy calibration (independent noise decomposition against a proprietary tool). The five-agent Chain-of-Verification architecture (coarse classifier, detailed classifier, verifier, generator, aggregator) is a templatable pattern for growing structured knowledge from data — directly transferable to biomedical ontologies, which is exactly the "AI for knowledge graphs, ontologies" bullet in his brief. The SMIRKS-writing second stage is a rare, concrete demonstration of using LLMs to emit inspectable symbolic artifacts rather than opaque probabilistic outputs, and the 68→14,073 expansion at 97.7% deterministic classification accuracy matching the proprietary NameRxn standard is a genuinely striking scale-and-precision result from Schwaller's group (anchor to Molecular Transformer / RXN Mapper). Runners-up considered: MedAgentBench-v3 is a strong benchmark-methodology paper but critical rather than constructive; OntoLearner hits Andrew's ontology bullet exactly but is a benchmark/framework paper without a substantive new result to report; FaithMed and AgentODE are narrower single-domain contributions; Tabular Foundation Models is a solid preprint but the show has been heavy on foundation-model biology recently. The chemistry framing is one step off "biomedical" but drug-synthesis planning is the explicit downstream application — thematically continuous with NMRAgent (2026-06-30) and consistent with the show's coverage of chemistry-adjacent agentic AI.
+=== 2026-07-03T02:11:00-07:00 done  biomedical-agentic-ai (exit 0) ===
