@@ -282,3 +282,38 @@ Files written to `podcasts/jinglin-ai-pulse/scripts/`:
 
 **Zefan_Cai direct signal:** WebSearch returned no fresh 48h tweet indexation — consistent gap flagged not fabricated (same behavior as last 5+ days).
 === 2026-07-02T02:42:12-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-03T02:30:16-07:00 start jinglin-ai-pulse ===
+All three stub files written. `SKIP_TTS=1` is active, so per PIPELINE.md I skip gen_tts, publish, feed edit, and commit — the orchestrator handles those after batch TTS.
+
+## Episode: 2026-07-03-program-as-weights-and-the-diffusion-migration
+
+**Meta-thesis** — the wrapper around the base model now compiles down into a small local artifact that doesn't need the base model at all.
+
+**Twitter Pulse (Hugging Face Daily July 3, top items):**
+- Program-as-Weights (arXiv 2607.02512, Waterloo+Cornell+Harvard) — HF #1, 92 upvotes, roughly 3× #2. 4B compiler → PEFT adapters on frozen 0.6B Qwen3 interpreter matching Qwen3-32B at ~1/50th memory. **CHOSEN — LEAD**
+- AgenticSTS (arXiv 2607.02255) — HF #3, 30 upvotes. Bounded-memory contract via typed retrieval. Direct 24h answer to yesterday's MemSyco-Bench. **CHOSEN**
+- Morphing / FlashMorph (arXiv 2606.30562, ByteDance Seed) — HF #4, 26 upvotes. Hybrid attention layer selection as budget-constrained optimization. **CHOSEN**
+- EvoPolicyGym (arXiv 2607.02440) — HF #2, 32 upvotes. Considered; less thematic fit + limited technical detail extractable.
+- AgenticDataBench (arXiv 2607.01647) — HF #5, 17 upvotes. Dropped as tail item.
+
+**Money Moves:**
+- TwelveLabs $100M Series B, Wed July 1 (NEA+NAVER co-led; AWS Trainium bundled). Video-native foundation models. **CHOSEN.** Together AI was yesterday's story — reused only as contrast (Nvidia GPU vs Trainium).
+- Venice $65M Series A / Quantum Systems $1.2B Series D — considered; dropped (off-topic or non-AI-core).
+
+**Podcast Deep Cut:**
+- Latent Space, "The Coolest Diffusion Research Isn't in LLMs" — Evan Feinberg (CEO) + Sergey Edunov (CTO, ex-Meta Llama 2/3 pretraining lead), Genesis Molecular AI. Pub Jul 1, 1h48m. PEARL model, sub-angstrom on OpenBind, SAPPHIRE agent + Incyte automated-lab loop. **CHOSEN.**
+- Other recent candidates: Latent Space Jun 24 (Databricks) — stale; Cognitive Revolution podcast list — no date-clear fresh episode.
+
+**Files created:**
+- `scripts/2026-07-03-program-as-weights-and-the-diffusion-migration.md` — 2319 spoken words (~13 min at 1.2× Voxtral)
+- `scripts/2026-07-03-program-as-weights-and-the-diffusion-migration.rss-item.xml` — validated parses
+- `scripts/2026-07-03-program-as-weights-and-the-diffusion-migration.commit-msg`
+
+Sources:
+- [HuggingFace Daily Papers 2026-07-03](https://huggingface.co/papers/date/2026-07-03)
+- [Program-as-Weights (arXiv 2607.02512)](https://arxiv.org/abs/2607.02512)
+- [AgenticSTS (arXiv 2607.02255)](https://arxiv.org/abs/2607.02255)
+- [Morphing into Hybrid Attention Models (arXiv 2606.30562)](https://arxiv.org/abs/2606.30562)
+- [TwelveLabs $100M Series B](https://www.globenewswire.com/news-release/2026/07/01/3320545/0/en/twelvelabs-raises-100-million-in-series-b-funding-to-build-video-superintelligence.html)
+- [Latent Space — The Coolest Diffusion Research Isn't in LLMs](https://www.latent.space/p/the-coolest-diffusion-research-isnt)
+=== 2026-07-03T02:41:44-07:00 done  jinglin-ai-pulse (exit 0) ===
