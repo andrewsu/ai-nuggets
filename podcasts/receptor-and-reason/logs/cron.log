@@ -1943,3 +1943,36 @@ Substantive shortlist (chosen marked ★):
 - Locus coeruleus-hippocampus offline (v3) — dropped; older version-3 update.
 - Dopamine internal state monkeys — dropped; slot conflict with HPC DA meal memory pick.
 === 2026-07-02T03:01:22-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-03T02:50:17-07:00 start receptor-and-reason ===
+Episode ready. Final summary follows.
+
+## Episode: 2026-07-03 (Receptor & Reason)
+
+Script, RSS-item stub, commit-msg stub written under `podcasts/receptor-and-reason/scripts/`. Shipped ledger appended. `SKIP_TTS=1` — no audio, no publish, no feed edit, no commit (orchestrator handles).
+
+**Selected items (10):**
+
+1. Copewell — multi-agent swarm for equitable mental wellness support (arXiv 2607.02245) — CHOSEN as opener
+2. Structural basis for direct NGF/TrkA blockade by analgesic antibody 42F5-15 (bioRxiv 10.64898/2026.06.30.735605)
+3. HCAR1/HCAR2 TAD collapse in schizophrenia — GWAS+Hi-C+eQTL (bioRxiv 10.64898/2026.06.26.734782)
+4. MCULE-5095997944 — ARF1 modulator for C9orf72 ALS/FTD (bioRxiv 10.64898/2026.01.24.701325)
+5. Prenatal CBD/THC sex-specific mPFC rewiring (bioRxiv 10.64898/2026.06.27.734813)
+6. StructureSAFE — structure-aware chemical language model (bioRxiv 10.64898/2026.06.28.735128)
+7. Active-GRPO — adaptive imitation/RL for molecular optimization (arXiv 2607.00531)
+8. MolSafeEval — safety benchmark for AI-generated molecules (arXiv 2607.00464)
+9. Cerebellar normative modeling → SCA3 biotypes predicting dTMS response (bioRxiv 10.64898/2026.06.24.734389)
+10. Slow-oscillatory tDCS during sleep modulates AD plasma biomarkers (bioRxiv 10.64898/2026.06.22.733841)
+
+**Candidate funnel:**
+
+- **bioRxiv (Tier 1 + Tier 2 + Tier 3)** — 8 days scanned (2026-06-26 through 2026-07-03), 1,282 preprints total across days; tight-filter shortlist 66 items with CNS-pharma / agentic-AI / comp-pharm signal; 8 chosen (items 2–6, 9, 10). Read in full via `scripts/fetch_preprint.py` (r.jina.ai channel): ARF1/C9orf72 (full body), SCA3 dTMS (full body), so-tDCS AD (full body); abstract-only for NGF/TrkA (posted 2026-07-01, body not yet rendered), SCZ HCAR TAD (posted 2026-07-01), prenatal CBD/THC, StructureSAFE, CSF proteomic clock (dropped in favor of so-tDCS), BRAF V600E (dropped — not neuropsych-adjacent).
+- **arXiv cache** (`/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, cs.AI ∪ cs.CL ∪ cs.MA ∪ q-bio) — 23 bio+agentic candidates in the 7-day window; 3 chosen (items 1, 7, 8). Full text via r.jina.ai for all three. No live arXiv call needed.
+- **Substantive shortlist (top runner-ups not chosen):**
+  - MolSight — graph-aware VLM for chemical image understanding (arXiv 2607.01982)
+  - FaithMed — LLM training for faithful evidence-based medical reasoning (arXiv 2607.01440)
+  - CSF proteomic aging clock across 10K samples (bioRxiv 10.64898/2026.06.26.734784)
+  - CBD Design of novel BRAF V600E inhibitors via sulfoximine bioisosterism (bioRxiv 10.64898/2026.06.25.734343)
+  - Alzheimer PV-neuron 40-Hz auditory-evoked deficit in APP/PS1 (bioRxiv 10.64898/2026.05.26.725476)
+  - RareDxR1 autonomous rare-disease diagnosis reasoning (arXiv 2607.00147)
+- **No source-level failures this run.** Psychiatric Times, society press pages, and Tier-3 journals scanned but yielded nothing new in the 7-day window that beat the bioRxiv/arXiv shortlist.
+=== 2026-07-03T03:02:26-07:00 done  receptor-and-reason (exit 0) ===
