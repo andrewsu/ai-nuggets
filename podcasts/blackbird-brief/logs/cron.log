@@ -326,3 +326,25 @@ Sources:
 - [Hai-Quan Mao — JHU Whiting School of Engineering](https://engineering.jhu.edu/faculty/hai-quan-mao/)
 - [Johns Hopkins Technology Ventures — Companies](https://ventures.jhu.edu/companies/)
 === 2026-07-02T02:26:28-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-03T02:10:16-07:00 start blackbird-brief ===
+All three stub files written for today's Sourcing Radar. The orchestrator will run batch TTS + commit at end of run.
+
+## Final summary — Blackbird 2026-07-03 (Sourcing Radar only; SKIP_TTS mode)
+
+**Files staged in `podcasts/blackbird-brief/scripts/`:**
+- `2026-07-03-radar-lieber-bdnf-dt-schizophrenia-upregulation.md` — script (~4,200 words; ~6-7 min)
+- `2026-07-03-radar-lieber-bdnf-dt-schizophrenia-upregulation.rss-item.xml` — RSS item stub with `__LENGTH__` + `__DURATION__` placeholders
+- `2026-07-03-radar-lieber-bdnf-dt-schizophrenia-upregulation.commit-msg` — commit message stub
+
+**Picks:**
+- **Lead — BDNF-DT + BDNF-AS-DT** (Bach/.../Weinberger/Martinowich/Ursini, *Mol Psychiatry* 2026-06-30, DOI 10.1038/s41380-026-03695-0, PMID 42380610). Lieber-anchored discovery of two previously-uncatalogued regulatory RNAs at the BDNF locus. BDNF-DT is activity-dependent, developmentally mirrors BDNF, and is driven by BDNF CRISPRa in hNPCs. BDNF-AS-DT (readthrough) is genetically-predicted lower with schizophrenia risk AND with the rs6265 C allele — offers a mechanistic route from the classical BDNF Val66Met genotype through the divergent-transcript layer to schizophrenia risk. Three-way intersection with Blackbird theses: (1) Lieber GPR52 schizophrenia program biomarker/stratification, (2) RNA-upregulation translation-activator platform target-map reshuffle (Camp4 competitive), (3) REST-BDNF axis (longer-arc). Add Gianluca Ursini to the Lieber Blackbird routing list.
+- **Second — Wong lab Dp16 Down syndrome metabolism** (Chen/.../Wong, bioRxiv v3 2026-07-01, DOI 10.64898/2026.01.13.699318). Watch-item, not sourcing lead. Foundational multi-tissue metabolic phenotype of the Dp16 mouse; no IP disclosure. Bookmark for future DS metabolic-therapeutic sourcing.
+
+**Candidate funnel (2026-06-30 to 2026-07-03):**
+- bioRxiv/medRxiv details API paginated (~450 records): 6 JHU/Lieber/UMB corresponding-institution hits. Wong Dp16 v3 chosen; JHU GLM-HMM (computational neuro method), Casadevall Cryptococcus (infectious disease microbiology), Hopkins ICU antifungal septic shock (clinical epi), Hopkins Bloomberg heat-wave (public health), UMB Krantz solo-author schizophrenia thesis (red-flag pattern) — all dropped.
+- PubMed (JHU 210 + UMB 85 + Lieber 5, entry-date 2026-06-30 to 2026-07-03): Bach BDNF-DT *Mol Psychiatry* chosen as lead; Ravichandran NAc atlas *Neuron* + Schiffers ac4C *Nature* already used as 2026-07-02 picks (skipped); Ferreira CDKN2A/ARF PDAC (Stanford-corresponding, not JHU-led — dropped); Liang NPTN autism/DD (Leibniz+GWU corresponding, not JHU-led — dropped though RNA-upregulation-adjacent); Rehg mPFC-LC (already 2026-06-28 radar — dropped); Punzi editorial letter (not primary — dropped); remaining items clinical epi / device / behavioral without therapeutic sourcing angle.
+- Institutional press (hub.jhu.edu, hopkinsmedicine.org, JHTV, UM Ventures, libd.org): no fresh in-window items beyond prior radar coverage.
+- Sources that failed transiently: hub.jhu.edu/research/ + biorxiv.org search returned 403 Cloudflare — r.jina.ai reader-proxy resolved both cleanly. BDNF-DT full text via r.jina.ai against nature.com (191k chars, clean parse).
+
+Paper links: https://www.nature.com/articles/s41380-026-03695-0 ; https://www.biorxiv.org/content/10.64898/2026.01.13.699318v3
+=== 2026-07-03T02:26:48-07:00 done  blackbird-brief (exit 0) ===
