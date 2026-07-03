@@ -1846,3 +1846,40 @@ Substantive shortlist:
 
 Spotlight rationale: Anthropic Claude Science is a direct continuation of yesterday's METiS spotlight thesis ("resets comp-co frame for Xaira and Isomorphic Labs"), fits Travis's PROMPT-specified interest in AI drug discovery "especially those associated with Anthropic and OpenAI," and delivers three concurrent strategic reads — foundation-model-lab race completes, Foresite/Xaira platform-only thesis pressured, Calibr grant program is a live action item through July 15.
 === 2026-07-02T02:31:07-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-03T02:20:16-07:00 start calibr-briefing ===
+All six files written. Since `SKIP_TTS=1`, TTS, R2 publish, feed update, and commit are handled by `publish_pending.py` after the batch job.
+
+## Final summary
+
+**Commit line:** deferred to orchestrator (SKIP_TTS batch mode).
+
+**Candidate funnel (Fri Jul 3, 2026):**
+
+Sources scanned (per PROMPT.md — headlines feeds): Fierce Biotech / Fierce Pharma, Endpoints News, STAT News, BioPharma Dive, GEN, Clinical Trials Arena, MedCity News, Pharma industry press releases. Endpoints.news homepage `WebFetch` returned 403 (once) and 200 (second try); Roche corporate press release page returned 403 — routed through endpoints.news + biopharmadive + pharmaphorum + medcitynews mirrors instead. No source-side outage worth flagging beyond that.
+
+Substantive shortlist after discarding stale (already-covered Jul 1–2) items:
+- Roche divarasib Ph3 Krascendo 1 head-to-head win vs Lumakras + Krazati in 2L KRAS G12C NSCLC (Roche press release + BioPharma Dive + Endpoints + Fierce + pharmaphorum + MedCity) — **CHOSEN (headline #1 + spotlight)**
+- Insilico Medicine + Takeda $600M AI drug discovery collab (BusinessWire/PRNewswire + Pharmaceutical-Technology + TipRanks) — **CHOSEN (headline #2)**
+- United Therapeutics ← Thymmune $140M+$160M iPSC thymic cell (BusinessWire + citybiz + BioSpace) — **CHOSEN (headline #3)**
+- Celea Therapeutics (PureTech spinout) $180M Series Seed for deupirfenidone IPF superiority Ph3 (BioPharma Dive + Yahoo Finance + Endpoints) — **CHOSEN (headline #4)**
+- Merck kills MK-1167 Ph2 Alzheimer's from Neuphoria (Endpoints + BioSpace + Fierce + Gurufocus) — **CHOSEN (headline #5)**
+- Arcturus + Thermo Fisher for ARCT-032 inhaled mRNA CF Ph3 (BusinessWire + Yahoo) — declined (manufacturing/CDMO partnership; Foresite/Calibr thesis fit weaker than the five above)
+- Abivax UC safety readout (BioPharma Dive) — declined (already covered as spotlight 6/30)
+- CBER Vijay Kumar OTP fallout / Karim Mikhail acting (BioPharma Dive) — declined (covered in 7/1 headlines)
+- BridgeBio + United Healthcare Thymmune-adjacent investment — declined as separate item (UTHR-Thymmune covers the mechanism)
+- Fangzhou + Fosun Pharma AI-powered psoriasis management (BioSpace) — declined (regional China distribution deal, thin thesis fit)
+
+Spotlight selection reasoning: divarasib is the largest single therapeutic-development read of the week — first prospective randomized head-to-head win of a second-generation KRAS G12C inhibitor over both approved first-generation drugs simultaneously — with direct read-across to Foresite AI-in-drug-discovery peer set (Xaira, Iambic, Isomorphic Labs) via KRAS's status as the paradigmatic structure-guided-design target.
+
+Full-text depth: Roche press release (via Endpoints/BioPharma Dive/pharmaphorum mirrors — Roche corporate 403'd), Insilico press release (via pharmaceutical-technology.com), UTHR press release (via BusinessWire), Celea press release (via BioSpace + Endpoints), Merck-Neuphoria (via multiple mirrors). No abstract-only picks.
+
+Sources:
+- [Roche divarasib Krascendo 1 head-to-head win (BioPharma Dive)](https://www.biopharmadive.com/news/roche-kras-lung-cancer-data-head-to-head/824344/)
+- [Roche's KRAS blocker best-in-class NSCLC (pharmaphorum)](https://pharmaphorum.com/news/roches-kras-drug-tops-its-rivals-lung-cancer-trial)
+- [Fierce Biotech: Roche orchestrates KRAS lung cancer win](https://www.fiercebiotech.com/biotech/roche-orchestrates-phase-3-kras-lung-cancer-win-over-amgen-and-bristol-myers)
+- [Roche divarasib superiority (Roche press release)](https://www.roche.com/media/releases/med-cor-2026-07-02)
+- [Insilico Medicine + Takeda $600M (Pharmaceutical Technology)](https://www.pharmaceutical-technology.com/news/insilico-takeda-ai-driven-drug-discovery/)
+- [United Therapeutics acquires Thymmune (BusinessWire)](https://www.businesswire.com/news/home/20260702920280/en/United-Therapeutics-Corporation-Acquires-Thymmune-Therapeutics)
+- [PureTech spins out Celea $180M IPF (BioPharma Dive)](https://www.biopharmadive.com/news/celea-puretech-idiopathic-pulmonary-fibrosis-raise/824330/)
+- [Merck scraps Ph2 Alzheimer's asset from Neuphoria (Endpoints)](https://endpoints.news/merck-scraps-a-phase-2-alzheimers-asset-from-partner-neuphoria/)
+=== 2026-07-03T02:31:07-07:00 done  calibr-briefing (exit 0) ===
