@@ -848,3 +848,30 @@ Wrote `podcasts/justice-biotech-brief/scripts/2026-07-03-virovbot-piryv-in-vivo-
 
 Chosen: `2026-07-03-virovbot-piryv-in-vivo-car-t-redosable` — direct CAR-T bullseye on Justice's beat, novel platform framing (envelope-immunogenicity-first + envelope-library redosing), solid-tumor Claudin-18.2 extension. Abstract-only depth flagged in the script.
 === 2026-07-03T02:50:04-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-04T02:40:09-07:00 start justice-biotech-brief ===
+All three artifacts are in place. Below is the run summary for the cron log.
+
+---
+
+## Justice's Biotech Brief — 2026-07-04
+
+**Selected pick:** DPP9 / IL-18 — first genetic risk factor for checkpoint inhibitor pneumonitis and a druggable therapy hypothesis (Brewer / Nassar / Choueiri / Gusev / Flavell, bioRxiv 10.64898/2026.06.30.735609, posted 2026-07-03). 4,397-patient clinico-genomics identifies DPP9 as first-ever genome-wide susceptibility gene for CIP; mechanism closes to CARD8-inflammasome → IL-18 pulse in monocytes; plasma IL-18 is elevated in patients before CIP onset; myeloid Dpp8/Dpp9 knockout mice recapitulate CIP and every phenotype collapses on IL-18 blockade; nominates tadekinig alfa / anti-IL-18 mAbs / CARD8 small-molecule inhibitors as rational rescue therapy. Third Flavell-lab CARD8 paper in a fortnight.
+
+**Files written** (SKIP_TTS=1 mode — orchestrator handles TTS + publish + feed + commit):
+- `scripts/2026-07-04-dpp9-il18-checkpoint-inhibitor-pneumonitis.md`
+- `scripts/2026-07-04-dpp9-il18-checkpoint-inhibitor-pneumonitis.rss-item.xml`
+- `scripts/2026-07-04-dpp9-il18-checkpoint-inhibitor-pneumonitis.commit-msg`
+
+**Candidate funnel:**
+- **bioRxiv** — 306 preprints scanned across the 2026-07-03 / 2026-07-04 window; 27 keyword matches (VEGF / PD-L1 / bispecific / CAR-T / CAR-M / ADC / JAK / checkpoint / IL-15 / Treg / trans-presentation); shortlist after discarding spurious matches:
+  - **10.64898/2026.06.30.735609 — DPP9 / IL-18 / checkpoint inhibitor pneumonitis (Flavell/Choueiri, Yale + DFCI)** ← **CHOSEN** (full-text-abstract-only; body render pending — abstract is substantive)
+  - 10.64898/2026.06.30.732683 — Trans-presentation of IL-15 by IL15Rα attenuates tumor immunosurveillance (Ramanathan, Sherbrooke) — read in full; strong immunology finding but murine-only, cytokine-engineering angle less clinically translatable this week
+  - 10.64898/2026.07.01.735684 — Fucoidan-coated LbL LNPs for CAR-Macrophage generation (bioengineering) — CAR-M interest but delivery-methodology paper, less on-beat
+  - 10.64898/2026.06.27.734105 — CD38 pathogenic T cell in autoimmune diabetes (immunology) — off-target class (Treg / T1D)
+  - 10.64898/2026.06.29.735200 — SCLC CD8+ T cell atlas (immunology) — biomarker/atlas, not a translational lever
+  - 10.64898/2026.06.29.734488 — k-mer tumor-antigen specificity indexing (bioinformatics) — tool paper
+- **News** — Endpoints (24 items last 48h), STAT (20), Fierce Biotech (sponsored/webinar cruft only). On-beat headlines: Roche divarasib Phase 3 KRAS G12C H2H (2026-07-02, covered by calibr-briefing 2026-07-02); Revolution Medicines KRAS combo data (covered by calibr-briefing 2026-07-04 in a parallel run); AstraZeneca × CSPC $1.7B deal (not immunology-primary); Scribe Therapeutics IPO filing (delivery platform, no readout). None matched Justice's translational-immunology brief tighter than the DPP9 preprint.
+- **Policy / funder** — ARPA-H news page most recent item July 1, 2026 (no July 2-4 releases); NIH press releases page had no dated July 2026 items visible on scrape. Nothing to add.
+
+**Why DPP9 beat the shortlist:** it is the only 2026-07-03/-04 item that closes a full clinical-genomics → mechanism → druggable-target loop on an immunotherapy problem, and the "top cause of ICI mortality with no genetic risk factor described until now" framing is a load-bearing translational milestone. IL-15 trans-presentation was a close second on scientific interest but is a small-scale murine study whose translational lever is less clear this week.
+=== 2026-07-04T02:47:26-07:00 done  justice-biotech-brief (exit 0) ===
