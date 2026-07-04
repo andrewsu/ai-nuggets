@@ -2199,3 +2199,25 @@ Episode published: **Self-expanding reaction ontology — a multi-agent LLM writ
 
 **Why the reaction-classification paper beat the runners-up:** three of Andrew's listed interests hit simultaneously — multi-agent LLM applied to a scientific problem, ontology construction and expansion, and open-science-worthy calibration (independent noise decomposition against a proprietary tool). The five-agent Chain-of-Verification architecture (coarse classifier, detailed classifier, verifier, generator, aggregator) is a templatable pattern for growing structured knowledge from data — directly transferable to biomedical ontologies, which is exactly the "AI for knowledge graphs, ontologies" bullet in his brief. The SMIRKS-writing second stage is a rare, concrete demonstration of using LLMs to emit inspectable symbolic artifacts rather than opaque probabilistic outputs, and the 68→14,073 expansion at 97.7% deterministic classification accuracy matching the proprietary NameRxn standard is a genuinely striking scale-and-precision result from Schwaller's group (anchor to Molecular Transformer / RXN Mapper). Runners-up considered: MedAgentBench-v3 is a strong benchmark-methodology paper but critical rather than constructive; OntoLearner hits Andrew's ontology bullet exactly but is a benchmark/framework paper without a substantive new result to report; FaithMed and AgentODE are narrower single-domain contributions; Tabular Foundation Models is a solid preprint but the show has been heavy on foundation-model biology recently. The chemistry framing is one step off "biomedical" but drug-synthesis planning is the explicit downstream application — thematically continuous with NMRAgent (2026-06-30) and consistent with the show's coverage of chemistry-adjacent agentic AI.
 === 2026-07-03T02:11:00-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-04T02:00:08-07:00 start biomedical-agentic-ai ===
+All three files in place for SKIP_TTS mode. No TTS/publish/feed/commit here — the orchestrator handles those after batch TTS finishes.
+
+Candidate funnel for 2026-07-04:
+
+- **bioRxiv** — 463 items scanned across 2026-07-02→2026-07-04 window, 13 keyword hits. Substantive shortlist:
+  - **GeneBench-Pro: Evaluating Multistage Statistical Reasoning in Genomics, Quantitative Biology, and Translational Biomedicine** (v3, 2026-07-02) https://www.biorxiv.org/content/10.64898/2026.06.29.735386v3 — **CHOSEN**
+  - Knowledge-guided Bayesian optimization using pre-trained LLMs (germplasm optimization) https://www.biorxiv.org/content/10.64898/2026.06.28.735149v1
+  - RD-OMICS: multi-omics data inventory in rare diseases https://www.biorxiv.org/content/10.64898/2026.06.29.735296v1
+  - Evo 2's Perception of Single Nucleotide Substitutions in Plant Genomes https://www.biorxiv.org/content/10.64898/2026.07.01.729829v1
+  - Unifying EM Multiverse via a Foundation Model https://www.biorxiv.org/content/10.1101/2025.04.13.648639v5
+- **arXiv** — 500-entry cache, ~79 bio+agent+LLM hits over last 2 days. Notable biomedical-relevant:
+  - OntoLearner: modular Python library for ontology learning with LLMs (broad, cross-domain) https://arxiv.org/abs/2607.01977
+  - Coding-agents can replicate scientific machine learning papers https://arxiv.org/abs/2607.02134
+  - Grounded autonomous research: fault-tolerant LLM corpus-to-manuscript pipeline (computational physics, not bio) https://arxiv.org/abs/2607.02329
+  - A rubric-based controlled comparison of frontier language models on expert-authored clinical reasoning tasks https://arxiv.org/abs/2607.02175
+  - Copewell: multi-agent swarm for mental wellness (already featured in receptor-and-reason 2026-07-03) https://arxiv.org/abs/2607.02245
+- **ChemRxiv** — not searched (no strong keyword pull from other sources; skipped after depth was reached in bioRxiv+arXiv).
+- **PubMed / news / funder pages** — not surveyed today; GeneBench-Pro was a decisively best candidate from the preprint pool that the show explicitly prioritizes.
+
+Chose GeneBench-Pro over runners-up because it is (a) directly on-target for Andrew's "agentic AI applied to biomedical research" priority, (b) a new benchmark from OpenAI with an interesting methodological insight (the notice-act gap) rather than yet another downstream application, (c) fresh (v3 posted 2026-07-02, within window), and (d) has full text available via r.jina.ai (read in full before drafting). Read in full: GeneBench-Pro. Abstract-only: the other bioRxiv shortlist items and the arXiv shortlist.
+=== 2026-07-04T02:08:07-07:00 done  biomedical-agentic-ai (exit 0) ===
