@@ -1585,3 +1585,32 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-07-04T03:26:54-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-07-04T03:26:54-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-07-04T05:05:00-07:00 start scripps-biomed-brief ===
+Files are in place. Script body is 786 words (~5 min at 1.2×); RSS stub validates when inserted into the feed.
+
+## Candidate funnel — 2026-07-04
+
+**Sources scanned** (bioRxiv, 2026-07-02 through 2026-07-04, 48h window):
+- bioengineering: 13 scanned → 4 relevant; biochemistry (07-03): 20 scanned → 6 relevant; biochemistry (07-02): 11 scanned → 3 relevant; pharmacology & toxicology: 3 scanned → 1 relevant; synthetic biology: 0 scanned; cancer biology / cell biology / molecular biology: 0 posted in window; immunology: 14 scanned → 2 relevant; bioinformatics: 30 scanned → 1 relevant (folded into others); genetics: 5 scanned → 0 relevant.
+
+**Shortlist opened in full** (all via jina.ai reader; all v1 bodies unrendered, abstract-only in the common case):
+- **[CHOSEN]** Sanchez-Guerrero, Umbaugh, Nguyen, Jaeschke, Ramachandran (KU Medical Center) — Delayed A2B adenosine receptor activation accelerates liver recovery after APAP overdose — `10.64898/2026.06.29.735109` v1
+- **[CHOSEN]** Chim, Idris, Correia (EPFL), Khmelinskaia (LMU/TU Dresden) — Interface-seeded generative de novo design of responsive functional oligomers — `10.64898/2026.07.02.736098` v1
+- **[CHOSEN]** Olenginski, Batey (CU Boulder) — Cryptic RNA binding sites are energetically accessible and chemically addressable (~1.4 kcal/mol) — `10.64898/2026.07.01.735868` v1
+- **[CHOSEN]** Pathak, Ahmed, Meyer, Utz, Davis, Annes (Stanford) — CD38 marks pathogenic autoreactive T cells in T1D; anti-CD38 mAb selective for diabetogenic T cells (spares Tregs) — `10.64898/2026.06.27.734105` v2
+- Khal, Boyce (Duke) — Disulfiram covalent GALE inhibitor v2 — `10.64898/2026.06.17.733026` v2 — **held** (already covered in 2026-06-19 episode)
+- Cheng, Leong (Columbia / SCUT) — 8-arm PEG-netilmicin NET-chromatin neutralizer for sepsis — `10.64898/2026.07.01.735684` v1 — **held** (covered on 2026-07-01)
+- Kwon, Giessen — permeable encapsulin protein nanocage for cytosolic protein delivery v2 — `10.64898/2026.04.06.716810` v2 — **held** (v2 update, not new)
+- Ayaz, Appella (NIDDK) — cell-penetrating thyclotides for peptide delivery — `10.64898/2026.07.01.735572` v1 — **held** (single delivery story competing with the four picks; brief 12k-char full text)
+- Brewer, Flavell (Yale) — DPP9-mediated inflammasome repression protects against checkpoint-inhibitor pneumonitis — `10.64898/2026.06.30.735609` v1 — **held** (DPP9 already covered on 2026-07-01 with same lab; back-to-back would be redundant; also covered elsewhere via receptor-and-reason today)
+- Alam, Ahmad (Jamia Millia) viroVbot v2 — `10.64898/2026.06.30.735484` v2 — **held** (covered on 2026-07-02)
+- Turner, Vahidi — MTb proteasome allosteric cooperativity — held (basic mechanism, less translational)
+- Poirier, Rauch — Zinc modulates tau fibril morphology — held (mechanism-focused, no drug handle yet)
+- Chandramouli, Kamat — Lipoprotein lipase as cholesteryl ester hydrolase — held (interesting target biology but tighter chemistry stories on shortlist)
+
+**Chosen four span**: new target validation with clear translational window (A2B/APAP), AI-native protein design of programmable circuits (Correia interface-seeded oligomers), foundational chemistry for RNA druggability (Batey cryptic pockets), and precision immunotherapy repositioning (Meyer/Stanford CD38 for T1D).
+
+**Pause/resume note**: `state/pause.json` deleted from working tree — user manually resumed the show after 2026-07-03 goodbye episode. The deletion will be staged by the orchestrator's `git add podcasts/scripps-biomed-brief/` in `publish_pending.py`, along with today's script and stubs.
+
+**SKIP_TTS=1**: script + `.rss-item.xml` (with `__LENGTH__` / `__DURATION__` tokens) + `.commit-msg` stubs written; TTS, R2 publish, feed edit, and commit deferred to the batch orchestrator.
+=== 2026-07-04T05:15:15-07:00 done  scripps-biomed-brief (exit 0) ===
