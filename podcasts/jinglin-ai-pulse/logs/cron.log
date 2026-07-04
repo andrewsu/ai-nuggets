@@ -317,3 +317,35 @@ Sources:
 - [TwelveLabs $100M Series B](https://www.globenewswire.com/news-release/2026/07/01/3320545/0/en/twelvelabs-raises-100-million-in-series-b-funding-to-build-video-superintelligence.html)
 - [Latent Space — The Coolest Diffusion Research Isn't in LLMs](https://www.latent.space/p/the-coolest-diffusion-research-isnt)
 === 2026-07-03T02:41:44-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-04T02:30:09-07:00 start jinglin-ai-pulse ===
+Stub XML parses cleanly when embedded in the feed's namespace. Episode ready for the batch TTS + orchestrator pass.
+
+## Candidate funnel (July 4, 2026)
+
+**Twitter / discourse pulse (last 48h)**
+- Alibaba to ban Claude Code by July 10 — The Information, US News, TheDecoder, Cybersecurity News. **CHOSEN**
+- Agents-A1 (Scaling the Horizon, Not the Parameters) — arXiv 2606.30616, Intern Science / Shanghai AI Lab, 47 authors. **CHOSEN**
+- EvoPolicyGym — arXiv 2607.02440, 41 upvotes HF. Considered; not chosen (weaker thesis fit).
+- FlashMorph — 2606.30562, 33 upvotes HF. **Dropped** (covered July 3).
+- Program-as-Weights / AgenticSTS. **Dropped** (covered July 3).
+- WorldDirector — 2607.02517, 18 upvotes. Considered; not chosen.
+
+**AI business / funding (last 7d)**
+- Meta Compute launch, July 1, 2026 — Bloomberg/TechCrunch/CNBC. **CHOSEN**
+- Quantum Systems $1.2B Series D at $8B, July 2. Considered; dropped as defense-not-AI-native.
+- 8090 Labs $135M Series A, June 29. Considered; dropped as narrower.
+- DeepSeek $7.5B external round with no voting rights (June 16). Out of 7d window; parked.
+- Moonshot HK IPO chatter. Parked.
+
+**Long-form podcasts (last 14d)**
+- Dwarkesh Podcast — Grant Sanderson, "AI and the future of math," June 30, ~1h33m. **CHOSEN**
+- Latent Space — Databricks / Zaharia + Xin. Runner-up; passed for tighter theoretical fit.
+- Latent Space — Feinberg/Edunov on diffusion. **Dropped** (used July 3).
+- WhynotTV — no fresh episode in window.
+- Lex Fridman #498 (Byzantine history). Off-topic.
+
+Ship-ready assets:
+- Script: `podcasts/jinglin-ai-pulse/scripts/2026-07-04-horizon-scaling-decoupling-and-the-grindability-frontier.md` (2144 spoken words)
+- Stubs: `.rss-item.xml` (parses in feed namespace) + `.commit-msg`
+- SKIP_TTS=1: batch TTS + publish + commit deferred to orchestrator per PIPELINE.md.
+=== 2026-07-04T02:40:32-07:00 done  jinglin-ai-pulse (exit 0) ===
