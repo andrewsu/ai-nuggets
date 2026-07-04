@@ -348,3 +348,18 @@ All three stub files written for today's Sourcing Radar. The orchestrator will r
 
 Paper links: https://www.nature.com/articles/s41380-026-03695-0 ; https://www.biorxiv.org/content/10.64898/2026.01.13.699318v3
 === 2026-07-03T02:26:48-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-04T02:10:08-07:00 start blackbird-brief ===
+Episode built and staged (SKIP_TTS mode; orchestrator handles TTS, R2 upload, feed update, commit).
+
+**Files written under `podcasts/blackbird-brief/scripts/`:**
+- `2026-07-04-radar-jhu-tdp43-packard-imaging-platform.md` — full script with sources, spoken text (~7 min), and candidate funnel
+- `2026-07-04-radar-jhu-tdp43-packard-imaging-platform.rss-item.xml` — RSS item with `__LENGTH__`/`__DURATION__` placeholders
+- `2026-07-04-radar-jhu-tdp43-packard-imaging-platform.commit-msg` — commit message
+
+**Radar picks (three-pick Sourcing Radar, Saturday):**
+1. **Lead — Jiou Wang lab, eLife 2026-07-03 (JHU-primary, Packard-Center funded)**: genetic-code-expansion Anap noncanonical-amino-acid labeling of TDP-43 and G3BP1 — a minimally-disruptive live-cell imaging platform that exposes GFP/YFP as measurably artifact-generating and opens the door to TDP-43-directed ALS drug screens that spare splicing. Screening-platform IP, JHU-owned. Blackbird routing via Packard.
+2. **Landscape wave — Wang lab (Arizona) + Pan P. Li lab (JHU Psychiatry), Nature Aging 2026-07-03**: XL20, a first-in-class small-molecule targeting TDP-43's conserved region, extends survival in A315T ALS mice without touching splicing. IP sits at Arizona; JHU's stake is Li's validation work. Category is about to attract IND-stage capital; adjacent JHU chemistry wants to move — Esther-led scoping.
+3. **Landscape signal — Chatterjee/Schlosser, JHU Bloomberg SPH, Sci Transl Med 2026-07-01**: AD proteome-wide association study nominates LILRB1 and SIRPα — both already drugged in oncology — as causal AD targets. Repurposing-thesis signal, not JHU-sourceable directly.
+
+**Portfolio-memory note flagged in the script (not yet written to `blackbird-portfolio.md`):** the JHU TDP-43 ecosystem is thicker than the current portfolio doc reflects — Jiou Wang lab, Pan P. Li lab, and the Packard Center for ALS Research are all worth adding as sourcing channels. Leaving that memory update to the next portfolio-doc refresh so it can be verified rather than pattern-matched from one day's coverage.
+=== 2026-07-04T02:29:53-07:00 done  blackbird-brief (exit 0) ===
