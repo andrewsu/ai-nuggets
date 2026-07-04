@@ -1883,3 +1883,35 @@ Sources:
 - [PureTech spins out Celea $180M IPF (BioPharma Dive)](https://www.biopharmadive.com/news/celea-puretech-idiopathic-pulmonary-fibrosis-raise/824330/)
 - [Merck scraps Ph2 Alzheimer's asset from Neuphoria (Endpoints)](https://endpoints.news/merck-scraps-a-phase-2-alzheimers-asset-from-partner-neuphoria/)
 === 2026-07-03T02:31:07-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-04T02:20:09-07:00 start calibr-briefing ===
+All done. Both scripts written to `podcasts/calibr-briefing/scripts/` with matching `.rss-item.xml` and `.commit-msg` stubs per SKIP_TTS convention. No `gen_tts.py`, `publish_episode.sh`, feed edit, or commit invoked — batch orchestrator (`scripts/publish_pending.py`) handles those after batch TTS finishes.
+
+## Files written
+
+- `2026-07-04-pharma-headlines.txt` (~1400 words, ~7 min headlines)
+- `2026-07-04-pharma-headlines.rss-item.xml` (stub with `__LENGTH__`/`__DURATION__` tokens)
+- `2026-07-04-pharma-headlines.commit-msg`
+- `2026-07-04-revmed-zoldonrasib-g12d-pdac-spotlight.txt` (~1900 words, ~10 min spotlight)
+- `2026-07-04-revmed-zoldonrasib-g12d-pdac-spotlight.rss-item.xml`
+- `2026-07-04-revmed-zoldonrasib-g12d-pdac-spotlight.commit-msg`
+
+XML stubs validated to parse cleanly.
+
+## Candidate funnel
+
+**Sources scanned** (headlines outlets from PROMPT.md):
+- Endpoints News, Fierce Biotech, Fierce Pharma, STAT News, BioPharma Dive, Pharmaletter, Barchart, GlobeNewswire, GSK.com IR, Vertex IR, Revolution Medicines IR, Renaissance Capital, BioSpace, SEC EDGAR filings — via WebSearch + WebFetch. `endpoints.news/` root and `statnews.com/` root returned HTTP 403 to WebFetch this run — one retry each also 403, worked around via targeted-URL searches. All other sources returned data.
+
+**Substantive shortlist (Fri–Sat July 3–4, 2026, plus catch-up items from mid-week):**
+- Revolution Medicines zoldonrasib Ph1/2 ESMO GI (Thu Jul 2) — 82% front-line KRAS G12D PDAC ORR + mFFX; 50% 2L ORR + 9.6-mo mPFS chemo-free doublet w/ daraxonrasib. **[SPOTLIGHT + HEADLINE #1]**
+- AstraZeneca–CSPC $1.77B siRNA CKD collab (Jul 2) — $30M upfront + $540M dev/reg + $1.2B commercial milestones through Jushi Biotech. **[HEADLINE #2]**
+- FDA expands Vertex/CRISPR Therapeutics Casgevy to age 2+ SCD/TDT (Wed Jul 1) — 53-day priority review, ~5.5K US kids eligible. **[HEADLINE #3]**
+- Scribe Therapeutics S-1 for $75M Nasdaq IPO (Fri Jul 3) — Doudna-founded in-vivo CRISPR, STX-1150 PCSK9 epigenetic silencing vs. Verve VERVE-102. **[HEADLINE #4]**
+- Angitia AGA111 (rhBMP-6) Ph3 termination (Fri Jul 3) — 5 mo after $130M Series D. **[HEADLINE #5]**
+- Neurogene $125M priced follow-on (Jul 2) — Rett gene therapy. Not picked (mid-tier financing, not category-defining).
+- Brii Bio ENRICH/ENHANCE Ph2b EOT HBV data (Jul 3) — 22.5% HBsAg loss. Not picked (China-focused, mid-tier readout).
+- Kimball–Helvoet Polymer €90M (Jul 3) — CDMO consumables acquisition. Not picked (adjacent to Calibr focus).
+- Anaveon CSO appointment (Jul 3) — Not picked (personnel).
+- GSK–Nuvalent $10.6B — Announced Jun 9, already spotlighted 2026-06-09. Excluded (duplicate).
+- Roche divarasib, Insilico–Takeda, UTHR–Thymmune, Celea, Merck MK-1167 — All shipped yesterday (2026-07-03). Excluded.
+=== 2026-07-04T02:34:17-07:00 done  calibr-briefing (exit 0) ===
