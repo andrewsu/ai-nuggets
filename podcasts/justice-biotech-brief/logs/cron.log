@@ -904,3 +904,24 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-07-05T02:55:35-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-07-05T02:55:35-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
+=== 2026-07-05T05:05:00-07:00 start justice-biotech-brief ===
+Script (1078 words, ~5-5.5 min at 1.2× Voxtral), RSS stub (XML-valid), and commit-msg stub are all written. `SKIP_TTS=1` so per PIPELINE.md I do not run TTS, publish to R2, edit feed.xml, or commit — the orchestrator handles those after batch TTS.
+
+## Justice's Biotech Brief 2026-07-05 — publish summary
+
+Committed / staged path (orchestrator will pick up): `podcasts/justice-biotech-brief/scripts/2026-07-05-ciita-mhc2-microbiome-mss-crc-checkpoint.{md,rss-item.xml,commit-msg}`
+
+**Pick**: Chung, Ozcelik, Zhang, ... Beyaz (CSHL + MIT Fox microbiome lab + Univ. Pittsburgh Hand lab), *Microbial induction of MHC-II expression in colon cancer cells overcomes immunotherapy resistance and limits metastasis*, bioRxiv 2026.06.30.735621 (posted 2026-07-04). A defined Helicobacter community induces tumor-intrinsic CIITA → MHC class II → converts MSS colorectal cancer (AKPS orthotopic model + human MSS PDOs) from checkpoint-refractory to a 71% complete-rejection rate under PD-1 + CTLA-4 (vs 10% in Helicobacter-negative controls). Necessary+sufficient tumor-intrinsic MHC-II is the newly druggable target one step upstream of the microbiome itself.
+
+**Candidate funnel**:
+
+- bioRxiv 2026-07-04 → 2026-07-05 (details API, full 59-paper corpus, both pages): 3 on-beat matches after keyword filter (VEGF/PD-L1/PD-1/TCE/bispecific/CAR-T/ADC/JAK/checkpoint/immunotherapy).
+  - Chung/Beyaz — MHC-II / CIITA / Helicobacter microbiome sensitizes MSS CRC to PD-1+CTLA-4 blockade (immunology) — **CHOSEN**. https://www.biorxiv.org/content/10.64898/2026.06.30.735621v1
+  - Sharma et al. — Colorectal cancers with distinct metastatic potential trigger divergent early T cell responses (immunology). https://www.biorxiv.org/content/10.64898/2026.06.30.735606v1
+  - TNFR1 peptide allosteric inhibitor — attenuates inflammation + RA pathology in hTNF-Tg mice (immunology; autoimmune-biologic-adjacent). https://www.biorxiv.org/content/10.64898/2026.06.30.735704v1
+- News (Fierce Biotech, Endpoints, STAT, BioPharma Dive, Fierce Pharma): landing pages showed no fresh 2026-07-03/04/05 items on Justice's beat; search-engine indexing lags most July 3-5 items by several days. Endpoints News homepage returned HTTP 403 to WebFetch. Nothing bar-clearing surfaced.
+- Policy/funder (ARPA-H, NIH, NSF): ARPA-H had one non-therapeutic item (BREATHE indoor air quality, 2026-07-01); NIH releases page returned 403; NSF had one non-therapeutic item (Air & Space Museum gallery). Nothing on-beat.
+- Body-HTML depth: bioRxiv had not rendered .full body HTML for the Beyaz paper 24h post-submission — fetched via `r.jina.ai` PDF-proxy, which returned a quantitative synopsis with specific species names, model panel, and 10/30/71% rejection-rate numbers. Grounded enough for the summary; not full-figure walk.
+
+**Chosen because**: MSS CRC is ~80-85% of colorectal cancer and has been checkpoint-blank since Keytruda's MSI-H approval; the 7× ICB rejection lift from a single tumor-cell transcription factor is the cleanest MSS-sensitization mechanism to hit bioRxiv this year, and has three visible translational arms (LBP, CIITA/MHC-II inducer, companion diagnostic) plus a TCE-design read-through (tumor MHC-II is the CD4-help lever the solid-tumor TCE field has designed away). No news pick surfaced that beat it.
+=== 2026-07-05T05:13:19-07:00 done  justice-biotech-brief (exit 0) ===
