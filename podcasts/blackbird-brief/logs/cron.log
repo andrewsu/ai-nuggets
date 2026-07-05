@@ -363,3 +363,31 @@ Episode built and staged (SKIP_TTS mode; orchestrator handles TTS, R2 upload, fe
 
 **Portfolio-memory note flagged in the script (not yet written to `blackbird-portfolio.md`):** the JHU TDP-43 ecosystem is thicker than the current portfolio doc reflects — Jiou Wang lab, Pan P. Li lab, and the Packard Center for ALS Research are all worth adding as sourcing channels. Leaving that memory update to the next portfolio-doc refresh so it can be verified rather than pattern-matched from one day's coverage.
 === 2026-07-04T02:29:53-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-05T02:10:11-07:00 start blackbird-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:37:48-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-05T02:37:48-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-07-05T02:37:48-07:00 session-limit reset at 5am is 8592s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:40:48-07:00 start blackbird-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:40:51-07:00 done  blackbird-brief (exit 0) (retry 1) ===
+=== 2026-07-05T02:40:52-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-07-05T02:40:52-07:00 session-limit reset at 5am is 8408s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:43:52-07:00 start blackbird-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:43:55-07:00 done  blackbird-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-05T02:43:55-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-07-05T02:43:55-07:00 session-limit reset at 5am is 8225s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:46:55-07:00 start blackbird-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:47:01-07:00 done  blackbird-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-05T02:47:01-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-07-05T02:47:01-07:00 session-limit reset at 5am is 8039s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:50:01-07:00 start blackbird-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:50:05-07:00 done  blackbird-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-05T02:50:05-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-07-05T02:50:05-07:00 session-limit reset at 5am is 7855s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:53:05-07:00 start blackbird-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:53:08-07:00 done  blackbird-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
