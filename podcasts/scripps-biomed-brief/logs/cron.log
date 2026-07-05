@@ -1643,3 +1643,47 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-07-05T03:15:35-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-07-05T03:15:35-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-07-05T05:05:00-07:00 start scripps-biomed-brief ===
+Script + rss-item + commit-msg written. `SKIP_TTS=1`, so no TTS, publish, feed edit, or commit here — the orchestrator will handle those after batch TTS.
+
+## Selection summary
+
+Basename: `2026-07-05-dpp9-cip-il18-mhcii-microbiome-crc-pah-synthcell-lpl-cholesterylesterase`
+
+Four bioRxiv preprints (all v1, posted July 3–4):
+1. **Brewer/Flavell (Yale + Dana-Farber + Broad)** — DPP9 as first genetic susceptibility gene for checkpoint-inhibitor pneumonitis (n≈4,400 clinico-genomics), mechanism via CARD8 inflammasome + IL-18, nominates IL-18 blockade
+2. **Chung/Beyaz (CSHL)** — microbial induction of tumor-intrinsic MHC-II via CIITA sensitizes MSS colorectal cancer to PD-1 + CTLA-4
+3. **Velioglu Ulubas/Noireaux/Engelhart/Adamala (Minnesota)** — synthetic cell coupling translation to metabolism via PAH module in liposomes
+4. **Chandramouli/Kamat (IISER Pune)** — ABPP identifies LPL as mammalian neutral cholesteryl-ester hydrolase
+
+## Candidate funnel
+
+- **bioRxiv pharmacology and toxicology** (2026-07-03 → 07-05): 3 scanned; 2 fresh non-withdrawn; A2B adenosine already shipped 2026-07-04 (excluded).
+- **bioRxiv biochemistry**: 23 scanned; substantive shortlist:
+  - Velioglu Ulubas/Adamala — Programming metabolic dependency in synthetic cells (10.64898/2026.07.01.735941) ← **chosen**
+  - Chandramouli/Kamat — LPL as cholesterylesterase (10.64898/2026.07.02.736233) ← **chosen**
+  - Chim/Correia/Khmelinskaia — interface-seeded oligomers (10.64898/2026.07.02.736098) — already shipped 2026-07-04 (excluded)
+  - Feltenstein/Drown — Protein aggregation capture top-down proteomics
+  - Song/Jane-wit — MAC internalized components as alarmins
+  - Sakai/Tsukamoto — Bistable UV opsin Gs-signaling (optogenetic tool)
+  - Harding/Craik — P22 VLP asparaginyl-ligase functionalization
+  - Turner/Vahidi — Mtb 20S proteasome allosteric cooperativity
+- **bioRxiv bioengineering**: 14 scanned; substantive shortlist:
+  - Kwon/Giessen — QtEnc permeable encapsulin for cytosolic protein delivery (v2 update, v1 was Apr — deprioritized on freshness)
+  - Passos Gibson — Fucoidan-LbL LNP for CAR-macrophages
+  - Whiting/Kubanek — Ultrasound-activated polymeric microdroplets
+  - Dryg/Ratner — Compliant precision-porous brain implants (v3)
+- **bioRxiv immunology**: 19 scanned; substantive shortlist:
+  - Brewer/Flavell — DPP9 CIP susceptibility (10.64898/2026.06.30.735609) ← **chosen**
+  - Chung/Beyaz — Microbial MHC-II in CRC (10.64898/2026.06.30.735621) ← **chosen**
+  - Pathak/Meyer — CD38 T1D (v2) — already shipped 2026-07-04 (excluded)
+  - Khinvasara — SCLC tumor-reactive CD8+ signature
+  - Riyed/Lo — TNFR1 allosteric peptide inhibitor for RA
+  - Leddy/O'Connell — CB2R constrained peptide antagonists for Crohn's
+  - Rexhepi/Ramanathan — IL-15 trans-presentation and tumor surveillance
+- **bioRxiv synthetic biology / cancer biology / cell biology / molecular biology / systems biology** (2026-07-03 → 07-05): all returned 0 fresh results.
+- **bioRxiv genetics**: 5 scanned; no biomedical-target candidates surfaced above the immunology/biochemistry picks.
+- **Cross-show dedup**: today's other shows cover OntoLearner (biomedical-agentic-ai), Wegovy UK MASH (calibr), and KRAS G12C/Abivax/Vertex Casgevy/JHU 3DEEP/Siliciano IPDA (blackbird) — no overlap with today's Scripps picks.
+
+Four chosen picks span human-genetics-to-druggable-pathway (DPP9), tumor-cell antigen presentation / microbiome (Beyaz), synthetic-cell / origins-of-life chemistry (Adamala), and chemical-biology deorphanization (Kamat) — hitting Scripps's new-target, new-modality, chemical-biology, and translational-impact interests without duplicating the July 4 episode.
+=== 2026-07-05T05:12:51-07:00 done  scripps-biomed-brief (exit 0) ===
