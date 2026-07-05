@@ -1944,3 +1944,30 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-07-05T02:53:34-07:00 done  calibr-briefing (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-07-05T02:53:34-07:00 FAILED: no usable output for calibr-briefing after all retries ===
+=== 2026-07-05T05:05:00-07:00 start calibr-briefing ===
+All four stub artifacts are in place. Per SKIP_TTS mode, I do not run gen_tts.py, publish_episode.sh, edit feed.xml, or commit — the orchestrator does that after batch TTS.
+
+## Run summary
+
+**Status:** re-invocation salvage — scripts, RSS stubs, and commit-msg stubs are all present from the earlier 2:38am partial run (which hit the session limit before writing commit-msgs). Wrote the two missing `.commit-msg` files. No new selection work needed; today's picks were already finalized:
+
+- **Headlines** (`2026-07-05-pharma-headlines.txt`) — 5 items led by Novo Nordisk Wegovy UK MHRA conditional MASH label, plus Brii Biosciences HBV Ph2b, Fosun-Junshi roconkibart, Celea day-2, UTHR-Thymmune day-2.
+- **Spotlight** (`2026-07-05-wegovy-mash-uk-approval-spotlight.txt`) — deep dive on Wegovy UK MASH approval: disease/MASH backdrop, ESSENCE Ph3, mechanism (post-EASL non-weight-mediated effects), Rezdiffra competitive read, wider pipeline lift, NICE + EMA path.
+
+Both RSS stubs parse as XML fragments; feed.xml untouched; nothing staged/committed (orchestrator handles both after batch TTS).
+
+## Candidate funnel
+
+**Sources scanned** (per earlier run captured in 2:38am artifacts): Endpoints News, Fierce Biotech, Fierce Pharma, STAT News, BioPharma Dive, Pharmaletter, Barchart, GlobeNewswire, GSK.com IR, Vertex IR, Revolution Medicines IR, Renaissance Capital, BioSpace, SEC EDGAR — via WebSearch + WebFetch. `endpoints.news/` root and `statnews.com/` root returned HTTP 403 to WebFetch — one retry each also 403, worked around via targeted-URL searches. All others returned data.
+
+**Substantive shortlist (Fri Jul 3, 2026, plus catch-up):**
+- Novo Nordisk Wegovy UK MHRA conditional MASH approval (Fri Jul 3) — 1st GLP-1 MASH label outside US **[SPOTLIGHT + HEADLINE #1]**
+- Brii Biosciences ENRICH/ENHANCE Ph2b EOT HBV data (Thu Jul 2) — ENRICH sequential 42.9% HBsAg loss largest immunotherapy-differentiated functional-cure signal; Vir arbitration overhang **[HEADLINE #2]**
+- Fosun-Junshi $32M upfront for greater-China rights to roconkibart JS005 anti-IL-17A (Thu Jul 2) — 91% PASI-90/65% PASI-100 class-leading, small-deal read on Chinese IL-17A pricing **[HEADLINE #3]**
+- Celea Therapeutics day-2 — $180M PureTech spinout launching SURPASS-IPF Ph3 head-to-head vs pirfenidone **[HEADLINE #4]**
+- UTHR-Thymmune day-2 — $140M upfront for iPSC thymic cell therapy, two-pillar tolerance with UThymoKidney xeno-kidney **[HEADLINE #5]**
+- Revolution Medicines zoldonrasib Ph1/2 (Thu Jul 2) — Excluded, spotlighted 2026-07-04
+- Roche divarasib, Insilico-Takeda, Merck MK-1167 — Excluded, shipped 2026-07-03/04
+- Neurogene $125M follow-on, Kimball-Helvoet Polymer €90M, Anaveon CSO appointment — Not picked (mid-tier/adjacent/personnel)
+- GSK-Nuvalent $10.6B — Excluded, spotlighted 2026-06-09
+=== 2026-07-05T05:07:27-07:00 done  calibr-briefing (exit 0) ===
