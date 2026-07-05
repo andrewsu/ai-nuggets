@@ -1614,3 +1614,32 @@ Files are in place. Script body is 786 words (~5 min at 1.2×); RSS stub validat
 
 **SKIP_TTS=1**: script + `.rss-item.xml` (with `__LENGTH__` / `__DURATION__` tokens) + `.commit-msg` stubs written; TTS, R2 publish, feed edit, and commit deferred to the batch orchestrator.
 === 2026-07-04T05:15:15-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-05T03:00:11-07:00 start scripps-biomed-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T03:00:15-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-05T03:00:15-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-05T03:00:15-07:00 session-limit reset at 5am is 7245s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T03:03:15-07:00 start scripps-biomed-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T03:03:19-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
+=== 2026-07-05T03:03:19-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-05T03:03:19-07:00 session-limit reset at 5am is 7061s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T03:06:19-07:00 start scripps-biomed-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T03:06:23-07:00 done  scripps-biomed-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-05T03:06:23-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-05T03:06:23-07:00 session-limit reset at 5am is 6877s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T03:09:23-07:00 start scripps-biomed-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T03:09:27-07:00 done  scripps-biomed-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-05T03:09:27-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-05T03:09:27-07:00 session-limit reset at 5am is 6693s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T03:12:27-07:00 start scripps-biomed-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T03:12:31-07:00 done  scripps-biomed-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-05T03:12:31-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-05T03:12:31-07:00 session-limit reset at 5am is 6509s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T03:15:31-07:00 start scripps-biomed-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T03:15:35-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-05T03:15:35-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===

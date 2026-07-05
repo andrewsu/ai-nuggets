@@ -875,3 +875,32 @@ All three artifacts are in place. Below is the run summary for the cron log.
 
 **Why DPP9 beat the shortlist:** it is the only 2026-07-03/-04 item that closes a full clinical-genomics → mechanism → druggable-target loop on an immunotherapy problem, and the "top cause of ICI mortality with no genetic risk factor described until now" framing is a load-bearing translational milestone. IL-15 trans-presentation was a close second on scientific interest but is a small-scale murine study whose translational lever is less clear this week.
 === 2026-07-04T02:47:26-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-05T02:40:11-07:00 start justice-biotech-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:40:15-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-05T02:40:15-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-05T02:40:15-07:00 session-limit reset at 5am is 8445s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:43:15-07:00 start justice-biotech-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:43:20-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-07-05T02:43:20-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-05T02:43:20-07:00 session-limit reset at 5am is 8260s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:46:20-07:00 start justice-biotech-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:46:23-07:00 done  justice-biotech-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-05T02:46:23-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-05T02:46:23-07:00 session-limit reset at 5am is 8077s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:49:23-07:00 start justice-biotech-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:49:27-07:00 done  justice-biotech-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-05T02:49:27-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-05T02:49:28-07:00 session-limit reset at 5am is 7893s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:52:28-07:00 start justice-biotech-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:52:31-07:00 done  justice-biotech-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-05T02:52:31-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-05T02:52:31-07:00 session-limit reset at 5am is 7709s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:55:31-07:00 start justice-biotech-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:55:35-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-05T02:55:35-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===

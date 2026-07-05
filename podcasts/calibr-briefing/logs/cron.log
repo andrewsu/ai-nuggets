@@ -1915,3 +1915,32 @@ XML stubs validated to parse cleanly.
 - GSK–Nuvalent $10.6B — Announced Jun 9, already spotlighted 2026-06-09. Excluded (duplicate).
 - Roche divarasib, Insilico–Takeda, UTHR–Thymmune, Celea, Merck MK-1167 — All shipped yesterday (2026-07-03). Excluded.
 === 2026-07-04T02:34:17-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-05T02:20:11-07:00 start calibr-briefing ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:38:09-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-05T02:38:09-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-07-05T02:38:09-07:00 session-limit reset at 5am is 8571s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:41:09-07:00 start calibr-briefing (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:41:14-07:00 done  calibr-briefing (exit 0) (retry 1) ===
+=== 2026-07-05T02:41:14-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-07-05T02:41:14-07:00 session-limit reset at 5am is 8386s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:44:14-07:00 start calibr-briefing (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:44:18-07:00 done  calibr-briefing (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-05T02:44:18-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-07-05T02:44:18-07:00 session-limit reset at 5am is 8202s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:47:18-07:00 start calibr-briefing (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:47:21-07:00 done  calibr-briefing (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-05T02:47:21-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-07-05T02:47:21-07:00 session-limit reset at 5am is 8019s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:50:21-07:00 start calibr-briefing (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:50:25-07:00 done  calibr-briefing (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-05T02:50:25-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-07-05T02:50:25-07:00 session-limit reset at 5am is 7835s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:53:25-07:00 start calibr-briefing (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:53:34-07:00 done  calibr-briefing (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-05T02:53:34-07:00 FAILED: no usable output for calibr-briefing after all retries ===

@@ -349,3 +349,32 @@ Ship-ready assets:
 - Stubs: `.rss-item.xml` (parses in feed namespace) + `.commit-msg`
 - SKIP_TTS=1: batch TTS + publish + commit deferred to orchestrator per PIPELINE.md.
 === 2026-07-04T02:40:32-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-05T02:30:11-07:00 start jinglin-ai-pulse ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:37:50-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-05T02:37:50-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-05T02:37:50-07:00 session-limit reset at 5am is 8590s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:40:50-07:00 start jinglin-ai-pulse (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:40:53-07:00 done  jinglin-ai-pulse (exit 0) (retry 1) ===
+=== 2026-07-05T02:40:53-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-05T02:40:54-07:00 session-limit reset at 5am is 8406s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:43:54-07:00 start jinglin-ai-pulse (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:43:57-07:00 done  jinglin-ai-pulse (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-05T02:43:57-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-05T02:43:57-07:00 session-limit reset at 5am is 8223s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:46:57-07:00 start jinglin-ai-pulse (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:47:01-07:00 done  jinglin-ai-pulse (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-05T02:47:01-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-05T02:47:01-07:00 session-limit reset at 5am is 8039s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:50:01-07:00 start jinglin-ai-pulse (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:50:05-07:00 done  jinglin-ai-pulse (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-05T02:50:05-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-05T02:50:05-07:00 session-limit reset at 5am is 7855s away (>3600s cap); sleeping 180s ===
+=== 2026-07-05T02:53:05-07:00 start jinglin-ai-pulse (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-05T02:53:09-07:00 done  jinglin-ai-pulse (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-05T02:53:09-07:00 FAILED: no usable output for jinglin-ai-pulse after all retries ===
