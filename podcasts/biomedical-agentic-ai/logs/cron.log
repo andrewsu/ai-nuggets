@@ -2221,3 +2221,30 @@ Candidate funnel for 2026-07-04:
 
 Chose GeneBench-Pro over runners-up because it is (a) directly on-target for Andrew's "agentic AI applied to biomedical research" priority, (b) a new benchmark from OpenAI with an interesting methodological insight (the notice-act gap) rather than yet another downstream application, (c) fresh (v3 posted 2026-07-02, within window), and (d) has full text available via r.jina.ai (read in full before drafting). Read in full: GeneBench-Pro. Abstract-only: the other bioRxiv shortlist items and the arXiv shortlist.
 === 2026-07-04T02:08:07-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-05T02:00:11-07:00 start biomedical-agentic-ai ===
+Files staged for the orchestrator. Publishing summary + candidate funnel below.
+
+Episode staged (SKIP_TTS mode — orchestrator will handle TTS/R2/feed/commit):
+
+- **Pick**: OntoLearner — an open-source library and 180-ontology benchmark showing LLM ontology learning is bottlenecked by structural mismatch, not model scale (arXiv 2607.01977, posted 2026-07-02, TIB Hannover + L3S + IBM Research).
+- **Why**: hits three Su Lab bullseyes at once — knowledge-graph/ontology infrastructure, agentic-LLM integration, and open-science + FAIR alignment. The empirical reframing ("failure modes scale with ontological complexity, not model size") is a stronger take than any of the other candidates in-window.
+- **Script**: 799 words in the spoken body (target ~800, cap 1150). Files at `podcasts/biomedical-agentic-ai/scripts/2026-07-05-ontolearner-180-ontology-benchmark-structural-mismatch.{md,rss-item.xml,commit-msg}`. Stub XML parses.
+
+## Candidate funnel
+
+bioRxiv (2026-07-04 → 2026-07-05, details API, full 59-entry collection paginated in 30-item pages):
+- 59 entries scanned; 5 hits on strict agent/KG keywords; 11 on broader AI keywords. After discarding spurious ("agent" = single-molecule tracking; "autonomous" = neural physiology), 1 substantive candidate.
+- Substantive shortlist:
+  - VirProtRAG — Literature-grounded viral protein function annotation with retrieval-augmented generation. https://www.biorxiv.org/content/10.64898/2026.07.03.736267v1
+
+arXiv (shared daily cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries; last posted 2026-07-02 — 07-03 US holiday + weekend, no fresher announcements):
+- 500 entries scanned; 213 broad-keyword hits; 30 after strict bio+agent intersection. After discarding spurious ("chemistry" in Earth-observation, "medic" as filler, "molecul" as chem-only), substantive shortlist for Su-lab audience:
+  - **OntoLearner** — A modular Python library for ontology learning with LLMs. https://arxiv.org/abs/2607.01977  ← CHOSEN
+  - Agentic generation of verifiable rules for deterministic, self-expanding reaction classification. https://arxiv.org/abs/2607.01061 — already shipped 2026-07-03; excluded.
+  - FaithMed — training LLMs for faithful evidence-based medical reasoning. https://arxiv.org/abs/2607.01440
+  - World Feedback for Clinical Agents (MedAgentBench-v3). https://arxiv.org/abs/2607.01470
+  - EO-Agents — three-agent LLM pipeline for Earth-observation hypothesis generation. https://arxiv.org/abs/2607.01584 (out-of-scope: not biomedical)
+  - RareDxR1 — autonomous rare-disease diagnosis. https://arxiv.org/abs/2607.00147 (2026-06-30, at the edge of the recency window)
+
+ChemRxiv / PubMed / news feeds / policy pages: not checked this run — OntoLearner surfaced as a clearly dominant pick from bioRxiv+arXiv coverage, so I ended search early. Gap noted for auditability.
+=== 2026-07-05T02:08:11-07:00 done  biomedical-agentic-ai (exit 0) ===
