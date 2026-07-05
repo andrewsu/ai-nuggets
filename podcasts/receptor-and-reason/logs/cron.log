@@ -2050,3 +2050,42 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-07-05T03:05:34-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-07-05T03:05:34-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-07-05T05:05:00-07:00 start receptor-and-reason ===
+All three artifacts written and shipped-ledger appended. Here's the run summary.
+
+## Episode 53 shipped (Sun, 2026-07-05)
+
+**Files written** (under `podcasts/receptor-and-reason/scripts/`):
+- `2026-07-05-receptor-and-reason.md` — script, 12 items, ~17-minute target
+- `2026-07-05-receptor-and-reason.rss-item.xml` — feed stub with `__LENGTH__` / `__DURATION__` placeholders
+- `2026-07-05-receptor-and-reason.commit-msg` — commit message stub
+- Appended one line to `state/shipped.jsonl` (12 items)
+
+Per `SKIP_TTS=1` protocol: no `gen_tts.py`, no `publish_episode.sh`, no `feed.xml` edit, no commit. The orchestrator handles all of that after batch TTS.
+
+## Candidate funnel
+
+- **bioRxiv details API**, 2026-06-28→2026-07-05 rolling 7-day window: 1,260 preprints scanned; ~332 keyword-relevant to CNS pharmacology / receptor biology / computational pharm; shipped-ledger dedup applied.
+- **arXiv daily cache** (cs.AI ∪ cs.CL ∪ cs.MA ∪ q-bio.QM ∪ q-bio.NC): 45 candidates with agentic-AI × biomedical intersect in the 7-day window.
+- **Pharmacology & Toxicology category**: 13 items; strongest (A2B adenosine for APAP overdose) already covered by Scripps Biomed Brief 2026-07-04, so skipped.
+- No source failures. No Tier 4 fallback needed — Tiers 1-3 exceeded the 8-item floor.
+
+**Shortlist that beat the picks**:
+- Fentanyl-diaphragm carotid-body paper (skipped — yesterday covered a related fentanyl overdose paper)
+- Adenosine A2B for APAP liver recovery (skipped — SBB coverage yesterday)
+- Interface-seeded de novo functional oligomer design, Correia lab (skipped — SBB coverage yesterday)
+
+**Picked (12, in order presented)**:
+1. LC-NA chemogenetic risk-taking + female-specific motor impulsivity (Winstanley) — bioRxiv 10.64898/2026.07.02.736138
+2. **v2** Cortical astrocyte α1a → sustained Ca → A1-adenosine learning (Sur, MIT) — bioRxiv 10.1101/2024.10.24.620009
+3. MDD dlPFC astrocyte multi-omics → PSAP-GPR37L1 axis (Turecki/Nagy) — 10.64898/2026.07.02.735636
+4. VTA-to-NAc vs VTA-to-PFC discordant fentanyl transcriptomics — 10.1101/2025.11.26.690827
+5. PB→CeA cholinergic eligibility trace for CFA (Stuber/Palmiter) — 10.64898/2026.07.02.734913
+6. Neonatal OTR blockade → adult pain hypersensitivity + sex-specific cognitive — 10.64898/2026.07.04.736474
+7. HuMiNAX humanized tauopathy chimeras (Li Gan) — 10.64898/2026.07.02.736124
+8. iPSC-microglia MAPT-S305N cross-protocol hypoactivity — 10.64898/2026.06.30.735652
+9. WAVE-complex CRISPR-tile + ML repurposing (montelukast/piperacetazine) — 10.64898/2026.06.30.735672
+10. FastBindRank Boltz-2 distillation for ultra-large screening — 10.64898/2026.06.29.735361
+11. Serotonin aptamer G-quadruplex-duplex hybrid NMR structure — 10.64898/2026.06.26.734732
+12. NeuroCogMap LLM cognitive parcellation — arXiv 2607.00397
+=== 2026-07-05T05:19:48-07:00 done  receptor-and-reason (exit 0) ===
