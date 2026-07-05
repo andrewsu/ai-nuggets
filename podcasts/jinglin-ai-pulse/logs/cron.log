@@ -378,3 +378,29 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-07-05T02:53:09-07:00 done  jinglin-ai-pulse (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-07-05T02:53:09-07:00 FAILED: no usable output for jinglin-ai-pulse after all retries ===
+=== 2026-07-05T05:05:00-07:00 start jinglin-ai-pulse ===
+Episode written. Since `SKIP_TTS=1`, the orchestrator will handle audio generation, R2 publish, feed insertion, and commit after batch TTS finishes.
+
+## Candidate funnel (2026-07-05)
+
+**Sources scanned:**
+- Hugging Face Daily Papers (July 3, July 4): 12 papers surveyed, top item WorldDirector fit today's world-model bifurcation angle; MrFlow / EvoPolicyGym / SkillCoach discarded (not agentic-scientific enough or overlaps with recent episodes).
+- AI Twitter / discourse convergence: Qwen-AgentWorld sustained top signal on Chinese-AI Twitter; WorldDirector rising among video-world-model researchers; Anthropic Claude Science widely covered (TechCrunch, HPCwire, MarkTechPost, pharmaphorum).
+- Investment news (last 7 days): MGX $49B close, Together AI $800M (used in prior episode), Quantum Systems $1.2B (defense, off-scope), Mistral rumored $3.5B raise (unconfirmed).
+- Long-form podcasts (last 14 days): Latent Space Databricks (June 24, 1h9m), Latent Space Genesis Molecular (used July 3), Dwarkesh Grant Sanderson (used July 4), Cognitive Revolution Elicit (used July 2), Andrew White Edison (January, outside window).
+
+**Substantive shortlist:**
+- WorldDirector — arXiv 2607.02517, video world model w/ persistent object identity — https://arxiv.org/abs/2607.02517 — **PICKED (Twitter Pulse story 1)**
+- Qwen-AgentWorld — arXiv 2606.24597, language world model, Apache 2.0, beats GPT-5.4/Claude Opus 4.8/Gemini 3.1 Pro on AgentWorldBench — https://arxiv.org/abs/2606.24597 — **PICKED (Twitter Pulse story 1)**
+- Anthropic Claude Science — June 30 workbench launch, 60+ skills incl. Evo 2/Boltz-2/OpenFold3 — https://www.anthropic.com/news/claude-science-ai-workbench — **PICKED (Twitter Pulse story 2)**
+- MGX Fund I $49B close July 1 — https://www.cnbc.com/2026/07/01/mgx-ai-fund-uae-49-billion.html — **PICKED (Money Moves)**
+- Latent Space "Why the Frontier Ecosystem must be Open" (Zaharia + Xin, Databricks, June 24) — https://www.latent.space/p/databricks — **PICKED (Podcast Deep Cut)**
+- MrFlow / EvoPolicyGym / SkillCoach / AutoMem — discarded (already covered adjacent themes, weaker biomedical relevance)
+- Isomorphic Labs $2.1B Series B (May 12) — folded into MGX Money Moves as vertical-concentration evidence, not a standalone story
+- Mistral $3.5B rumored raise — discarded (unconfirmed)
+
+**Files written for the orchestrator:**
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-05-substrate-versus-workflow-and-the-mgx-vertical.md`
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-05-substrate-versus-workflow-and-the-mgx-vertical.rss-item.xml`
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-05-substrate-versus-workflow-and-the-mgx-vertical.commit-msg`
+=== 2026-07-05T05:16:02-07:00 done  jinglin-ai-pulse (exit 0) ===
