@@ -1716,3 +1716,45 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-07-06T03:15:32-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-07-06T03:15:32-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-07-06T05:05:00-07:00 start scripps-biomed-brief ===
+Episode wrote. In SKIP_TTS mode per PIPELINE.md — audio, R2 publish, feed insertion, and commit are all deferred to the batch orchestrator. Below is the audit trail for the run.
+
+---
+
+**Scripps Biomedical Brief 2026-07-06 — funnel + picks**
+
+Sources scanned (bioRxiv, date range 2026-07-04 → 2026-07-06):
+- pharmacology and toxicology: 3 scanned, 2 relevant
+- bioengineering: 3 scanned, 0 relevant (materials/wound-healing/glia interface)
+- biochemistry: 8 scanned, 4 relevant
+- immunology: 10 scanned, 3 relevant (1 discarded — Chung/Beyaz CRC MHC-II already shipped in 2026-07-05 episode)
+- microbiology: 8 scanned, 0 top-tier for this show
+- neuroscience: 30 scanned, 0 selected (mostly disease biomarker / model / imaging; nothing chem-bio-native)
+- bioinformatics: 23 scanned, 3 relevant
+- synthetic biology, cancer biology, cell biology, genetics, molecular biology, systems biology: API returned empty for the date window
+- Industry news (Fierce Biotech, Fierce Pharma, Endpoints, STAT, etc.): not queried today — bioRxiv alone yielded a stronger four than a mixed slate; industry news typically slower over the July 4–6 weekend
+
+Substantive shortlist (after discarding spurious/off-topic matches):
+- CatESO — Differentiable Enzyme Sequence Optimization Guided by Substrate-Aware kcat Prediction (Gan, Zhang) https://www.biorxiv.org/content/10.64898/2026.07.04.736506v1 **[CHOSEN]**
+- The Microglial Protein sTREM2 Inhibits the Bacterial Functional Amyloid CsgA (Balistreri, Chapman, Kelly) https://www.biorxiv.org/content/10.64898/2026.07.03.736422v1 **[CHOSEN]**
+- Control-validated pan-proteome DL pipeline nominates GPR35 as target of ligiamycin A (Martin) https://www.biorxiv.org/content/10.64898/2026.07.01.735807v1 **[CHOSEN]**
+- Improving Generalizability in Whole-Cell Antibiotic Discovery Through Active Learning (Serrano, Sacchettini, Aldridge, Hu, Farhat) https://www.biorxiv.org/content/10.64898/2026.07.04.736489v1 **[CHOSEN]**
+- Novel ASK1 inhibitor SRT-015 for liver disease (Elias, Seal Rock Therapeutics) https://www.biorxiv.org/content/10.64898/2026.06.30.735673v1 — strong translational chem story but structurally close to the crowded ASK1-in-MASH space (selonsertib Ph3 failure); passed for higher-novelty picks
+- Suprachoroidal MP-AXT107 for choroidal neovascularization (Mirando, Popel, Campochiaro) https://www.biorxiv.org/content/10.64898/2026.06.30.735614v1 — solid modality but formulation-heavy, less chem-bio depth
+- Peptide allosteric TNFR1 inhibitor FKC (Riyed, Lo) https://www.biorxiv.org/content/10.64898/2026.06.30.735704v1 — receptor-selective peptide story but abstract lacks mechanistic depth on the allosteric handle
+- Atlas of SLiM-mediated human PPIs (Ivarsson, Davey) https://www.biorxiv.org/content/10.64898/2026.07.03.735260v1 — resource paper; interesting but not action-actionable for a 5-min episode
+- Anaerobic cryo-EM of methanogenic Mtr complex with nitrogenase-like cluster (Reif-Trauttmansdorff, Schuller) https://www.biorxiv.org/content/10.64898/2026.07.03.736320v1 — beautiful structural work but bioenergetics/methanogen basic biology, further from Scripps translational core
+- Single-molecule α-synuclein imaging (Syn-IMAGR) (Wang, Walt, Khurana) https://www.biorxiv.org/content/10.64898/2026.06.30.735576v1 — diagnostic tech, promising but less directly a "target/modality" story
+- GPC3 CAR-T with FKBP1A/TRAC double KO for HCC recurrence after liver transplant (Kocheise, Greten) https://www.biorxiv.org/content/10.64898/2026.06.30.735569v1 — excellent cell-therapy piece but already featured in a sibling show's episode this cycle
+
+All four chosen preprints opened in full via `scripts/fetch_preprint.py` (r.jina.ai channel); all four v1 with body HTML not yet rendered on bioRxiv — the fetches returned abstract + boilerplate only, as expected for &lt;24-72h-old v1 posts. Summaries are abstract-grounded per PIPELINE.md; noted in the RSS description and itunes:summary.
+
+Sources with failures: none this cycle.
+
+Files written under `podcasts/scripps-biomed-brief/scripts/`:
+- `2026-07-06-cateso-strem2-csga-ligiamycin-gpr35-al-antibiotic.md`
+- `2026-07-06-cateso-strem2-csga-ligiamycin-gpr35-al-antibiotic.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders)
+- `2026-07-06-cateso-strem2-csga-ligiamycin-gpr35-al-antibiotic.commit-msg`
+
+Batch TTS + R2 publish + feed insertion + commit will be handled by `scripts/publish_pending.py` after the nightly Garibaldi run.
+=== 2026-07-06T05:12:22-07:00 done  scripps-biomed-brief (exit 0) ===
