@@ -1687,3 +1687,32 @@ Four bioRxiv preprints (all v1, posted July 3–4):
 
 Four chosen picks span human-genetics-to-druggable-pathway (DPP9), tumor-cell antigen presentation / microbiome (Beyaz), synthetic-cell / origins-of-life chemistry (Adamala), and chemical-biology deorphanization (Kamat) — hitting Scripps's new-target, new-modality, chemical-biology, and translational-impact interests without duplicating the July 4 episode.
 === 2026-07-05T05:12:51-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-06T03:00:08-07:00 start scripps-biomed-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-06T03:00:12-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-06T03:00:12-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-06T03:00:12-07:00 session-limit reset at 5am is 7248s away (>3600s cap); sleeping 180s ===
+=== 2026-07-06T03:03:12-07:00 start scripps-biomed-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-06T03:03:16-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
+=== 2026-07-06T03:03:16-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-06T03:03:16-07:00 session-limit reset at 5am is 7064s away (>3600s cap); sleeping 180s ===
+=== 2026-07-06T03:06:16-07:00 start scripps-biomed-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-06T03:06:20-07:00 done  scripps-biomed-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-06T03:06:20-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-06T03:06:20-07:00 session-limit reset at 5am is 6880s away (>3600s cap); sleeping 180s ===
+=== 2026-07-06T03:09:20-07:00 start scripps-biomed-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-06T03:09:24-07:00 done  scripps-biomed-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-06T03:09:24-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-06T03:09:24-07:00 session-limit reset at 5am is 6696s away (>3600s cap); sleeping 180s ===
+=== 2026-07-06T03:12:24-07:00 start scripps-biomed-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-06T03:12:28-07:00 done  scripps-biomed-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-06T03:12:28-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-06T03:12:28-07:00 session-limit reset at 5am is 6512s away (>3600s cap); sleeping 180s ===
+=== 2026-07-06T03:15:29-07:00 start scripps-biomed-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-06T03:15:32-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-06T03:15:32-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===

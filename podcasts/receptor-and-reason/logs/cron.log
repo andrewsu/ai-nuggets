@@ -2089,3 +2089,32 @@ Per `SKIP_TTS=1` protocol: no `gen_tts.py`, no `publish_episode.sh`, no `feed.xm
 11. Serotonin aptamer G-quadruplex-duplex hybrid NMR structure — 10.64898/2026.06.26.734732
 12. NeuroCogMap LLM cognitive parcellation — arXiv 2607.00397
 === 2026-07-05T05:19:48-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-06T02:50:08-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-06T02:55:36-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-06T02:55:36-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-06T02:55:36-07:00 session-limit reset at 5am is 7524s away (>3600s cap); sleeping 180s ===
+=== 2026-07-06T02:58:36-07:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-06T02:58:40-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-07-06T02:58:40-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-06T02:58:40-07:00 session-limit reset at 5am is 7340s away (>3600s cap); sleeping 180s ===
+=== 2026-07-06T03:01:40-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-06T03:01:44-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-06T03:01:44-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-06T03:01:44-07:00 session-limit reset at 5am is 7156s away (>3600s cap); sleeping 180s ===
+=== 2026-07-06T03:04:44-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-06T03:04:48-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-06T03:04:48-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-06T03:04:48-07:00 session-limit reset at 5am is 6972s away (>3600s cap); sleeping 180s ===
+=== 2026-07-06T03:07:48-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-06T03:07:52-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-06T03:07:52-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-06T03:07:52-07:00 session-limit reset at 5am is 6788s away (>3600s cap); sleeping 180s ===
+=== 2026-07-06T03:10:52-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-06T03:10:56-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-06T03:10:56-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
