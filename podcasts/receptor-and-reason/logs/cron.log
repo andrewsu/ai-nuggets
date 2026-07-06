@@ -2118,3 +2118,50 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-07-06T03:10:56-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-07-06T03:10:56-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-07-06T05:05:00-07:00 start receptor-and-reason ===
+Script, RSS stub, commit-msg stub, and shipped ledger are all in place. Under SKIP_TTS=1, the orchestrator (`scripts/publish_pending.py`) will handle audio generation, R2 publish, feed update, and commit. Now the final summary for the cron log.
+
+## Run summary — receptor-and-reason 2026-07-06
+
+Wrote today's episode: 12 items, ~2,740 spoken words (~17 minutes).
+
+Files created (SKIP_TTS mode — no TTS, no publish, no feed edit, no commit):
+- `podcasts/receptor-and-reason/scripts/2026-07-06-receptor-and-reason.md`
+- `podcasts/receptor-and-reason/scripts/2026-07-06-receptor-and-reason.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders)
+- `podcasts/receptor-and-reason/scripts/2026-07-06-receptor-and-reason.commit-msg`
+- Appended one line to `podcasts/receptor-and-reason/state/shipped.jsonl`
+
+Lead: aPVT KOR conditional knockdown mediates morphine withdrawal + anxiety + fear in both sexes + KOR-agonist aversion in males only, while sparing analgesic/antipruritic effects (Liu-Chen lab). Two callback items to yesterday: neonatal oxytocin protection (bidirectional OT window with sex + domain specificity) and KCC2 differential regulation (chloride homeostasis). Strong computational block: class A GPCR sequence-independent activation collective variable, dynamic consensus pocket detection, control-validated DTI nominating GPR35 as ligiamycin A target, AgentODE for rare-disease ODE discovery.
+
+## Candidate funnel
+
+**Sources scanned:**
+- bioRxiv details API 2026-06-29 through 2026-07-06 — 1,248 items across all categories, 656 in neuroscience/pharmacology/bioinformatics/biophysics/genomics; keyword-scored to 181 relevant after dedup ledger filter (205 prior keys checked).
+- arXiv cache `/tmp/ai-nuggets-arxiv-cache.xml` — 500 entries, 31 with bio + agentic-AI keyword co-occurrence in last 7 days.
+- Tier 3 industry/journal press: no fresh items surfaced above bioRxiv/arXiv picks; skipped detailed scrape.
+
+**Substantive shortlist (all fresh, dedup-clean):**
+- KOR/aPVT/morphine withdrawal — bioRxiv 10.64898/2026.06.30.735625 **[picked, lead]**
+- VTA BDNF/cocaine incubation — bioRxiv 10.64898/2026.06.30.735717 **[picked]**
+- PACAPergic BAC looming-threat — bioRxiv 10.64898/2026.06.30.735686 **[picked]**
+- Neonatal oxytocin rescues NMS — bioRxiv 10.64898/2026.07.04.736473 **[picked, callback]**
+- KCC2 Ca-mode regulation — bioRxiv 10.64898/2026.07.02.736223 **[picked, callback]**
+- PS19 metaplasticity — bioRxiv 10.64898/2026.06.30.734148 **[picked, tauopathy pair]**
+- Surface AMPAR dSTORM in tauopathy — bioRxiv 10.1101/2024.07.22.604547 v3 **[picked, tauopathy pair]**
+- AD/FTD/HD vascular transcriptomics — bioRxiv 10.64898/2026.07.01.735865 **[picked]**
+- Class A GPCR activation CV — bioRxiv 10.64898/2026.06.25.734477 **[picked]**
+- Dynamic pocket detection MD — bioRxiv 10.64898/2026.06.27.734992 **[picked]**
+- GPR35/ligiamycin A DTI — bioRxiv 10.64898/2026.07.01.735807 **[picked, posted today]**
+- AgentODE — arXiv 2607.00733 **[picked, closer]**
+
+**Runners-up (not picked, quality-close):**
+- KCNQ2/3 GluN2D dentate LTP (already shipped)
+- Human microRNA brain atlas — bioRxiv 10.64898/2026.01.04.697535
+- ESCRT/TDP-43 MND — bioRxiv 10.64898/2026.07.01.735805
+- SOX1-OT astrocyte lncRNA — bioRxiv 10.64898/2026.07.03.736275
+- Hypothalamic Arc→PVH-CRH stress scalability — bioRxiv 10.64898/2026.06.30.735593
+- Autism voxel-based morphometry mega-analysis — bioRxiv 10.64898/2026.07.03.736397
+- RareDxR1 rare disease agent — arXiv 2607.00147
+
+**Source-level failures:** none — bioRxiv API and jina proxy both healthy; arXiv cache present. All 11 bioRxiv paper-link URLs resolved via `api.biorxiv.org/details/biorxiv/<doi>` (mix of `10.64898/` and `10.1101/` prefixes as returned).
+=== 2026-07-06T05:19:08-07:00 done  receptor-and-reason (exit 0) ===
