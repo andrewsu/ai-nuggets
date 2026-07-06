@@ -2248,3 +2248,23 @@ arXiv (shared daily cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries; last p
 
 ChemRxiv / PubMed / news feeds / policy pages: not checked this run — OntoLearner surfaced as a clearly dominant pick from bioRxiv+arXiv coverage, so I ended search early. Gap noted for auditability.
 === 2026-07-05T02:08:11-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-06T02:00:08-07:00 start biomedical-agentic-ai ===
+Script + stubs written. Under `SKIP_TTS=1` the orchestrator runs the TTS batch, publishes, updates feed.xml, and commits — I do not.
+
+Candidate funnel:
+- **bioRxiv** (2 days, 132 preprints scanned via details API paginated). Substantive shortlist after filtering:
+  - ClawBench — agentic-LLM evaluation framework for ACMG/AMP variant interpretation + variant calling (biorxiv 10.64898/2026.06.30.735646). Strong; abstract-only (v1 <24h).
+  - Task-adapted biological foundation models — scGPT + LINCS L1000 perturbation-centric embedding (biorxiv 10.64898/2026.06.30.735584). Strong; abstract-only.
+  - VirProtRAG — literature-grounded viral-protein-function RAG (biorxiv 10.64898/2026.07.03.736267). Moderate; abstract-only.
+- **arXiv** (cache 500 entries; live listing pulled — arXiv is stale past 2026-07-02 due to weekend; refetched live, still no post-July-2 entries): 0 matches in the recency window.
+- **PubMed** (search over 2026-07-01 to 2026-07-06 entry date, agentic/LLM/foundation-model/KG/ontology in title, biomed context): substantive shortlist:
+  - **KGRD** — KG-augmented multi-agent LLM for paediatric rare-disease diagnosis (npj Digital Medicine, 10.1038/s41746-026-02943-5) — **CHOSEN**
+  - BoneCoT — whole-body skeleton foundation model with CoT for bone metastases (Nat Biomed Eng)
+  - Bioprompt — GO-guided LLM prompts for cancer driver gene prediction (IEEE TCBB)
+  - Whole-body CT reference charts via LLM-ensemble report filtering (npj Digit Med)
+  - Explainable foundation model for dementia via retinal fundus (npj Digit Med)
+  - Agentic AI for Spatial Omics (highlight/perspective; Immunol Cell Biol) — too short-form
+- **ARPA-H / NIH / news**: no fresh AI-agent biomedical announcements July 4–6.
+
+Chosen: **KGRD** — peer-reviewed (npj Digital Medicine), directly aligned with the show's KG + agentic-AI + biomedical focus, most substantive abstract of the shortlist for a spotlight-depth episode. Full body not yet rendered (unedited early-access); flagged in-script.
+=== 2026-07-06T02:09:18-07:00 done  biomedical-agentic-ai (exit 0) ===
