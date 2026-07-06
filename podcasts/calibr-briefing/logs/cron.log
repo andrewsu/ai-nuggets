@@ -1971,3 +1971,23 @@ Both RSS stubs parse as XML fragments; feed.xml untouched; nothing staged/commit
 - Neurogene $125M follow-on, Kimball-Helvoet Polymer €90M, Anaveon CSO appointment — Not picked (mid-tier/adjacent/personnel)
 - GSK-Nuvalent $10.6B — Excluded, spotlighted 2026-06-09
 === 2026-07-05T05:07:27-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-06T02:20:08-07:00 start calibr-briefing ===
+All six files (two `.txt` scripts, two `.rss-item.xml` stubs, two `.commit-msg` stubs) are in place. In SKIP_TTS mode the orchestrator will handle TTS, R2 upload, feed insertion, and the commit — nothing else to do here.
+
+## Candidate funnel (Mon Jul 6 2026)
+
+Sources scanned: Fierce Biotech, Fierce Pharma, Endpoints News (403), STAT News, BioPharma Dive, BioSpace, Reuters/GlobeNewswire, Novo Holdings, Cancer Research Horizons, company sites (Myricx, BridgeBio), FDA.gov.
+
+Source-side note: Endpoints News homepage 403'd on WebFetch — worked around via targeted searches. All other primary sources reachable.
+
+Substantive shortlist (Jul 3–6 fresh news, dedup vs Jul 1–5 scripts):
+- Novartis to acquire Myricx Bio, $1.5B ($1.1B upfront + $400M milestones), NMTi-ADC payload — https://www.globenewswire.com/news-release/2026/07/06/3322135/ — **CHOSEN spotlight + lead headline**
+- STAT/Herper interview w/ Amodei walking back "10 yrs/yr" claim — https://www.statnews.com/2026/07/06/anthropic-ai-biotech-impact/ — **CHOSEN headline #2**
+- Biogen ends most Apellis preclinical R&D 1 mo post-close — https://endpoints.news/after-buying-apellis-for-5-6b-biogen-is-cutting-most-of-its-pipeline-work/ — **CHOSEN headline #3**
+- Sanofi Genzyme Ireland Waterford FDA warning letter (Altuviiio + Thymoglobulin) — https://www.fiercepharma.com/pharma/sanofi-unit-ireland-chided-fda-over-manufacturing-flubs-linked-altuviiio — **CHOSEN headline #4**
+- FDA CBER/OTP acting director Vijay Kumar steps down — https://www.biopharmadive.com/news/top-fda-gene-cell-therapy-regulator-step-down/824093/ — **CHOSEN headline #5**
+- FDA PreCheck pilot (Lilly, Regeneron + 5) — deprioritized (Jun 29 announce, older than the fresh cohort chosen)
+- Kimball-Helvoet Polymer $103M medical CDMO — deprioritized (device-CDMO adjacency, low Foresite fit)
+- BridgeBio $1B preferred from Sixth Street + KKR — already covered Jul 2
+- Ipsen-Memo, UTHR-Thymmune, Celea, AZ-CSPC, Novartis-Antares $105M, Casgevy pediatric, Angitia terminates, Merck-Neuphoria, Wegovy MASH UK — already covered on Jul 1–5
+=== 2026-07-06T02:33:05-07:00 done  calibr-briefing (exit 0) ===
