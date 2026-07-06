@@ -925,3 +925,21 @@ Committed / staged path (orchestrator will pick up): `podcasts/justice-biotech-b
 
 **Chosen because**: MSS CRC is ~80-85% of colorectal cancer and has been checkpoint-blank since Keytruda's MSI-H approval; the 7× ICB rejection lift from a single tumor-cell transcription factor is the cleanest MSS-sensitization mechanism to hit bioRxiv this year, and has three visible translational arms (LBP, CIITA/MHC-II inducer, companion diagnostic) plus a TCE-design read-through (tumor MHC-II is the CD4-help lever the solid-tumor TCE field has designed away). No news pick surfaced that beat it.
 === 2026-07-05T05:13:19-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-06T02:40:08-07:00 start justice-biotech-brief ===
+Episode drafted. SKIP_TTS=1 is set so per PIPELINE.md I wrote only the script + `.rss-item.xml` + `.commit-msg` stubs; TTS, R2 publish, feed edit, and commit are deferred to `publish_pending.py` after batch TTS.
+
+**Chosen item:** Kocheise, Bacil et al., Greten lab (NCI CCR), "Engineering CAR T Cells for Hepatocellular Carcinoma Recurrence after Liver Transplantation" (bioRxiv 10.64898/2026.06.30.735569v1, posted July 5, 2026). GPC3 CAR-T with FKBP1A + TRAC double CRISPR knockout — FKBP1A KO makes the CAR-T tacrolimus/sirolimus/everolimus-resistant while cyclosporine is retained as a pharmacologic off-switch (cyclosporine uses cyclophilin, not FKBP12). TRAC KO cuts alloreactivity. Full-body HTML fetched via `scripts/fetch_preprint.py` (r.jina.ai channel).
+
+**Candidate funnel (recency: last 2 days):**
+
+- **bioRxiv** — 74-entry 2-day collection (2026-07-05 → 2026-07-06) pulled in full via details API, three pages, filtered on immuno-oncology / CAR-T / TCE / ADC / VEGF-PD-L1 / JAK / checkpoint / autoimmune keyword set. Substantive shortlist after discarding spurious matches:
+  - Kocheise ... Greten (NCI CCR), GPC3 CAR-T with FKBP1A + TRAC double-KO for post-liver-transplant recurrent HCC — bioRxiv 10.64898/2026.06.30.735569v1 **[CHOSEN]**
+  - AXT107 suprachoroidal anti-VEGF peptide microparticles (Wilmer/Asclepix) — bioRxiv 10.64898/2026.06.30.735614v1 — dropped: VEGF-alone in ophthalmology (not immuno-oncology); also already covered by blackbird-brief today
+  - HCAR1 shared MS/schizophrenia neuroimmune checkpoint (Cambridge) — bioRxiv 10.64898/2026.06.30.735650v1 — dropped: further from Justice's translational-therapeutics daily; GWAS + target-nomination stage
+  - CellTFusion transcriptional-regulatory-network TME framework — bioRxiv 10.64898/2026.06.30.735682v1 — dropped: computational TME tool, not therapeutic
+  - Deciphering TME scRNA + AI framework in melanoma — bioRxiv 10.64898/2026.07.01.735754v1 — dropped: descriptive biomarker/target-nomination
+- **News / press feeds (Fierce Biotech, Endpoints, STAT, BioPharma Dive)** — top July 5–6 items: Novartis-Myricx $1.5B NMTi-ADC acquisition (dropped: calibr-briefing spotlighted it today, high overlap for Calibr-employed listener); Celea $180M raise (not on-beat); AZ-CSPC $30M kidney pact (Jul 3, borderline recency; not on-beat); United Therapeutics $140M thymic cell therapy acquisition (Jul 3, borderline recency).
+- **ARPA-H / NIH press** — no July 5–6 items posted (most recent ARPA-H item July 1; NIH page returned 403).
+
+Rejection rationale: Novartis-Myricx is Justice's biggest wheelhouse story of the day but is already covered at length in calibr-briefing 2026-07-06-novartis-myricx-nmti-adc-spotlight — Justice would get it twice. The Greten CAR-T paper is fresh, on-beat, closes a real translational deadlock, and has clean platform-portability implications for the TCE / autoimmune programs Justice tracks.
+=== 2026-07-06T02:45:47-07:00 done  justice-biotech-brief (exit 0) ===
