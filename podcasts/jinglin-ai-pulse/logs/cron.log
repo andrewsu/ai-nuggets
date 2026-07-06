@@ -404,3 +404,6 @@ Episode written. Since `SKIP_TTS=1`, the orchestrator will handle audio generati
 - `podcasts/jinglin-ai-pulse/scripts/2026-07-05-substrate-versus-workflow-and-the-mgx-vertical.rss-item.xml`
 - `podcasts/jinglin-ai-pulse/scripts/2026-07-05-substrate-versus-workflow-and-the-mgx-vertical.commit-msg`
 === 2026-07-05T05:16:02-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-06T02:30:08-07:00 start jinglin-ai-pulse ===
+Done. Episode drafted around the LongCat-2.0 "Owl Alpha" reveal + Microsoft Frontier Company as substrate-vs-workflow-camp hardening, with Dwarkesh's June 26 solo essay as the Deep Cut. Three SKIP_TTS artifacts in place; orchestrator will take it from here.
+=== 2026-07-06T02:42:44-07:00 done  jinglin-ai-pulse (exit 0) ===
