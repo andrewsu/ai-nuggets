@@ -5,9 +5,11 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-06-21 (afternoon update). Compiled from public sources
-(press releases, BioBuzz, Technical.ly, UM Ventures, company sites). Items
-marked ⚠ need confirmation._
+_Last verified: 2026-07-06 (Popel-Green-Pandey serial-founder cluster + OptaNova
+Pharma + Terebra Therapeutics + AsclepiX + Accelevir + Kalhor + Revivify added
+to new §2b JHU-adjacent Baltimore ecosystem section). Compiled from public
+sources (press releases, BioBuzz, Technical.ly, UM Ventures, company sites,
+PubMed, bioRxiv/medRxiv COI disclosures). Items marked ⚠ need confirmation._
 
 ---
 
@@ -163,6 +165,97 @@ competitors below. These are the "so what for Blackbird" hooks.
 
 ---
 
+## 2b. JHU-adjacent Baltimore ecosystem (not Blackbird portfolio; sourcing + landscape signal)
+
+Companies + programs that Blackbird does not currently own but that sit in the
+JHU / UMB / Lieber-adjacent Baltimore ecosystem and inform sourcing conversations,
+competitive landscape reads, or partnering opportunities. Update when a company
+raises, exits, or crosses a scientific milestone.
+
+### Popel + Green + Pandey serial-founder cluster (Wilmer / JHU BME) ⚠
+- **Founders (recurring):** Aleksander S. Popel, Ph.D. (JHU BME + Medicine +
+  Oncology; Popel Systems Biology Lab); Jordan J. Green, Ph.D. (JHU BME + INBT +
+  WSE Materials Science); Niranjan B. Pandey, Ph.D. (part-time JHU BME faculty +
+  full-time company-side operator); Adam C. Mirando, Ph.D. (JHU BME + AsclepiX);
+  Peter A. Campochiaro, MD (JHU Wilmer + BME; consultant/advisor). Serial
+  peptide-therapeutics spinout factory grounded in the Popel Lab's 15-year
+  human-protein-derived peptide platform.
+- **Three companies known as of 2026-07-06** (via COI disclosure on Mirando/Popel/
+  Pandey bioRxiv 2026.06.30.735614):
+    1. **AsclepiX Therapeutics, Inc.** (2014, Popel + Green cofounders). Lead
+       asset **AXT107 (gersizangitide)** — collagen-IV-derived anti-angiogenic
+       peptide disrupting α5β1 integrin + potentiating Ang2/Tie2 signaling.
+       DISCOVER Phase 1/2a suprachoroidal-injection trial in wet AMD (15 pts,
+       125/250/500 μg; enrollment complete May 2024; topline originally expected
+       Q2 2025 per company disclosure — **not yet publicly shipped**, either
+       delayed or embargoed). $10M raise July 2023. 2026-07-05 bioRxiv preprint
+       adds 9-month GLP tox in Göttingen minipigs supporting the suprachoroidal
+       microparticle formulation. Pending patent 19/105,901 (Mirando + Robinson
+       + Pandey inventors).
+    2. **Terebra Therapeutics, LLC** (Mirando + Pandey + Popel cofounders).
+       Stealth Hopkins-licensed **oncolytic peptide NF27 for rectal cancer**.
+       TEDCO Maryland Innovation Initiative-funded. Preprint 10.1101/2025.08.17
+       .668569 documents NF27 activity across multiple cancer types. Sits on
+       PitchBook (profile 895308-58).
+    3. **OptaNova Pharma** (Green + Popel + Pandey cofounders). ⚠ **Stealth-
+       stealth as of 2026-07-06.** Public footprint = Delaware LLC filing
+       (Wilmington DE) only. No press release, no website, no LinkedIn company
+       page, no PitchBook profile, no clinical trials, no cross-referenced
+       patents. COI on bioRxiv 2026.06.30.735614 is the first place OptaNova
+       has surfaced publicly. Almost certainly a peptide-therapeutics play
+       given the founder overlap and the Popel Lab's technology stack, but the
+       therapeutic area is unknown.
+- **Blackbird sourcing angle.** Founder cluster is the pattern. Serial peptide-
+  therapeutics spinout factory at Wilmer / JHU BME is exactly the "spinout
+  factory" Blackbird should be underwriting rather than watching from the
+  outside. Complements Aletira + Kalhor 3DEEP + Revivify Innovations as the
+  Wilmer + JHU BME + Center for Nanomedicine cluster.
+- **Open intelligence gaps (2026-07-06):**
+    - OptaNova Pharma therapeutic area, funding status, whether operating on
+      JHU-licensed IP or inventor-owned pre-Hopkins IP.
+    - AsclepiX DISCOVER Phase 1/2a topline result (publicly unshipped past
+      original Q2 2025 timeline).
+    - Whether JHTV is managing an active OptaNova license negotiation or
+      OptaNova is downstream of a JHTV-independent inventor filing.
+
+### Accelevir Diagnostics — HIV cure companion diagnostics (Baltimore-anchored) ⚠
+- **What:** Exclusive JHU license on IPDA (Intact Proviral DNA Assay;
+  PCT/US16/28822, R.F. Siliciano inventor). Baltimore-anchored HIV-cure-companion-
+  diagnostics company; Siliciano holds no equity.
+- **Fresh biomarker (2026-07-05 radar):** Siliciano lab PNAS paper (Garcia MA
+  first, Cohn LB + Siliciano JD/RF senior, DOI 10.1073/pnas.2608337123, PMID
+  42391404) introduces **Inhibitory Potential (IP)** — log-reduction in single-
+  round infection at physiologic autologous IgG — as a rebound-competency
+  biomarker layered on top of IPDA workflow. Natural franchise extension —
+  Phase 2/3 HIV cure trial stratifier.
+- **Watch:** Accelevir financing / partnership news; big-pharma HIV cure
+  programs (Merck islatravir, Gilead lenacapavir combos, ViiV cabotegravir,
+  academic ATI consortium) using IPDA or IP quantitation as trial-inclusion
+  stratifier.
+
+### Kalhor Lab spatial-omics platform (Wilmer/BME/Center for Epigenetics) ⚠
+- **What:** **3DEEP** (3D DNase-Enhanced Expression Profiling) — tissue-clearing
+  method extending in-situ spatial transcriptomics from ~10-30 μm to 400 μm
+  tissue depth with ~2-fold uniform detection center-to-surface. Bolt-on
+  positioning against 10x Xenium / Vizgen MERSCOPE / Bruker CosMx installed
+  base. Fresh JHTV patent application (Asami + Kalhor inventors; no assignee
+  disclosed). Reza Kalhor is a serial method-developer (prior MEMOIR/GESTALT-
+  family molecular recording + single-cell lineage tracing) whose prior tech
+  moved through industrial partnerships rather than spinouts.
+- **Publication:** *Cell* 2026-07-01, DOI 10.1016/j.cell.2026.06.014 (PMID
+  42385701).
+- **Watch:** JHTV patent status; Kalhor's disposition (spinout vs. license);
+  spatial-omics vendor BD reactions (Bruker, 10x, Vizgen); adjacent regenerative-
+  medicine and rare-disease deep-tissue phenotyping applications.
+
+### Revivify Innovations — corneal regenerative medicine (Wilmer) ⚠
+- **What:** Wilmer-adjacent company disclosed in the 2026-07-01 Eghrari/PS
+  medRxiv miR-184 EDICT preprint (per financial disclosure). Bridges into the
+  Aletira SELEXON adjacency (cell-type-selective genetic medicine delivery).
+- **Watch:** Company financing, IP licensing, clinical-development milestones.
+
+---
+
 ## 3. How to use this in the show
 
 - **Sourcing Radar (daily):** a JHU/UMB/Lieber paper is a strong lead if it has
@@ -184,3 +277,10 @@ competitors below. These are the "so what for Blackbird" hooks.
   patient-facing to clinician-marketplace required new IP filings.
 - Full 18-company list (only ~6 programs identified publicly so far).
 - Advisory board roster (blackbirdlab.org/advisors).
+- **OptaNova Pharma** (§2b): therapeutic area, funding status, JHTV license
+  status vs. inventor-owned IP.
+- **AsclepiX Therapeutics** (§2b): DISCOVER Phase 1/2a topline result status
+  (originally expected Q2 2025 per company disclosure — has not surfaced
+  publicly as of 2026-07-06).
+- **Terebra Therapeutics** (§2b): trial pipeline for NF27 rectal-cancer program
+  beyond preprint stage.

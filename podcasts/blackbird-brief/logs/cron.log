@@ -391,3 +391,27 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-07-05T02:53:05-07:00 start blackbird-brief (retry 5, --model claude-haiku-4-5-20251001) ===
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-07-05T02:53:08-07:00 done  blackbird-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-06T02:10:08-07:00 start blackbird-brief ===
+All three stub files are staged. In `SKIP_TTS=1` mode per PIPELINE.md, the orchestrator (`scripts/publish_pending.py`) handles TTS, R2 upload, feed insertion, and commit after batch TTS finishes.
+
+## Final summary — Blackbird 2026-07-06 (Sourcing Radar only; SKIP_TTS mode)
+
+**Files staged in `podcasts/blackbird-brief/scripts/`:**
+- `2026-07-06-radar-wilmer-asclepix-axt107-optanova.md` — script (~7 min spoken; ~4,300 words in script section; ~30KB with context + funnel)
+- `2026-07-06-radar-wilmer-asclepix-axt107-optanova.rss-item.xml` — RSS item stub with `__LENGTH__` + `__DURATION__` placeholders (validates as XML in feed namespace context)
+- `2026-07-06-radar-wilmer-asclepix-axt107-optanova.commit-msg` — commit message stub
+
+**Portfolio memory updated:** added `§2b JHU-adjacent Baltimore ecosystem` section to `podcasts/blackbird-brief/memory/blackbird-portfolio.md` capturing the Popel-Green-Pandey serial-founder cluster (AsclepiX + Terebra + OptaNova Pharma) plus Accelevir + Kalhor 3DEEP + Revivify — plus dated last-verified stamp and open-item tracking gaps.
+
+**Picks:**
+- **Lead — Mirando/Popel/Pandey suprachoroidal MP-AXT107** (bioRxiv 2026-07-05, DOI 10.64898/2026.06.30.735614). JHU BME + Wilmer + AsclepiX. Real IND-enabling 9-month GLP tox in Göttingen minipigs. **The Blackbird value is not the AXT107 asset story (AsclepiX is a known 2014 JHU spinout with $10M raised and Phase 1/2a completed enrollment) but the COI disclosure:** three companies — AsclepiX (known), Terebra Therapeutics (stealth, oncolytic peptide NF27 for rectal cancer, TEDCO MII-funded, JHU-licensed), and **OptaNova Pharma** (Green + Popel + Pandey cofounders, only a Delaware LLC filing publicly visible — new intel not in any prior Blackbird radar). Serial peptide-therapeutics spinout factory at Wilmer + JHU BME + Center for Nanomedicine → Blackbird Wilmer-cluster thesis reinforcement, with a specific this-week intelligence-gap ask on OptaNova license status routed to Esther + Hemaka.
+- **Second — Boyack/Eberhart/Peterson MYC-Meibomian sebaceous carcinoma** (*Am J Pathol* 2026-07-02, PMID 42392260). JHU Pathology + Wilmer + Tufts collaboration. Watch-item — MYC hard to drug, three cited compounds are research-grade, no patent/company disclosure, small addressable population. Becomes portfolio-adjacent if a MYC-degrader (PROTAC) campaign for ocular adnexal SebCA emerges at Wilmer in 12-18 months.
+
+**Candidate funnel (2026-07-03 to 2026-07-06):**
+- bioRxiv/medRxiv API paginated (~440 records): 7 JHU/Lieber/UMB corresponding-institution hits. Lead + 6 others dropped (Krantz solo-author HCAR1 red-flag repeat; Woodson/Zhang condensate already 2026-07-05; JHU APL connectomics-software; JHU SOM Piezo2 basic dev-neuro; JHU BME allosteric-regulation basic biophysics; U Maryland *College Park* wrong campus).
+- PubMed (JHU/Lieber/UMB affiliation, high-tier journals + broader-term filter, entry dates 2026-07-03 to 2026-07-06, ~99 records surveyed): PICK 2 (MYC-Meibomian). Ten+ other JHU/UMB coauthor-role or basic-science / clinical-workflow items dropped with rationale in funnel.
+- Institutional press (hub.jhu.edu, ventures.jhu.edu, hopkinsmedicine.org, libd.org, umventures.org, medschool.umaryland.edu via r.jina.ai proxy): no in-window fresh sourcing-actionable release (July 4 holiday + weekend suppressed press flow). JHTV news page items in window were either older republish, previously covered (Pomper/Dannals Pylarify Bayh-Dole; DecisionRx-JHU Bloomberg SPH), or infrastructure/showcase-tier (Pava Center Spring 2026 showcase).
+- Sources that failed transiently: `ventures.jhu.edu` WebFetch 403 (resolved via curl+r.jina.ai proxy); `libd.org` WebFetch returned cookies-consent shell (recurring pattern); `www.bizapedia.com` Cloudflare security check on OptaNova Pharma page (Delaware LLC confirmed at header level only); `pitchbook.com` 403 on Terebra Therapeutics page (subscription-gated).
+
+Paper links: https://www.biorxiv.org/content/10.64898/2026.06.30.735614v1 ; https://doi.org/10.1016/j.ajpath.2026.05.013
+=== 2026-07-06T02:23:31-07:00 done  blackbird-brief (exit 0) ===
