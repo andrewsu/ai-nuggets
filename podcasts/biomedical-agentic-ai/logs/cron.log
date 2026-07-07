@@ -2268,3 +2268,25 @@ Candidate funnel:
 
 Chosen: **KGRD** — peer-reviewed (npj Digital Medicine), directly aligned with the show's KG + agentic-AI + biomedical focus, most substantive abstract of the shortlist for a spotlight-depth episode. Full body not yet rendered (unedited early-access); flagged in-script.
 === 2026-07-06T02:09:18-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-07T02:00:11-07:00 start biomedical-agentic-ai ===
+Episode ready. In SKIP_TTS mode: script + rss-item stub + commit-msg stub written; orchestrator will run TTS, publish to R2, patch feed, and commit.
+
+**Ship line:** `podcasts/biomedical-agentic-ai/scripts/2026-07-07-togomcp-mcp-sparql-life-science-rdf-schema-context-decisive.md` (1003 words, under the 1150 cap) + `.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders) + `.commit-msg` stub.
+
+**Candidate funnel — 2026-07-07:**
+- bioRxiv (window 2026-07-06 → 2026-07-07): 157 items pulled via details API (full pagination); 12 survived keyword pass; substantive shortlist after discarding spurious matches ("agent" as chemical agent, "language model" as protein-thermostability model, etc.):
+  - **★ TogoMCP — Natural Language Querying of Life-Science Knowledge Graphs via Schema-Guided LLMs and the Model Context Protocol** (10.64898/2026.03.19.713030v1) — **chosen**
+  - Generalized cell phenotyping for spatial proteomics with language-informed vision models (10.1101/2024.11.02.621624) — v2 refresh, incremental
+- arXiv (cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries; last 2 days = 160 AI-relevant, 39 biomedical-tagged); substantive shortlist:
+  - Compressing the Validation Bottleneck: An Agentic Self-Driving Lab for Scientific Discovery (2607.04508) — thematic fit but no comparable ablation punch
+  - Toward Trustworthy Large Language Model Agents in Healthcare (2607.05055) — position/survey shape
+  - Multi-Large Language Model Orchestrated Severity Assessment of Clinical Records / MOSAIC (2607.05032)
+  - EEG-SpikeAgent: Agentic Closed-Loop Program Synthesis for Automated EEG Spike Detection (2607.04558)
+  - Medi-Gemma: Hybrid Clinical Decision Support with EMR Analytics + RAG (2607.04907)
+  - Predicting Therapeutic Outcome via Aligning Patient-Specific KG + Gene-Level Perturbation Representations (2607.04557) — adjacent to yesterday's KGRD pick
+  - URSA: Chemistry-Aware Benchmark for Utilitarian Retrosynthesis Assessment (2607.04688)
+  - Biological Motifs for Agentic Control (2607.04240)
+- PubMed / ChemRxiv / news+funders: not queried today — bioRxiv delivered a near-perfect audience fit (agentic AI + biomedical KG + MCP + open data at DBCLS) with a sharp editorial hook (ablation nulls out an elaborate protocol, MIE schema files are the only load-bearing component). Recording the gap for auditability rather than manufacturing runners-up.
+
+**Chosen:** TogoMCP. Direct hit on Andrew's stated interests (agentic AI, biomedical KGs, ontologies, data integration, open data/open science) with a general-principle finding that generalizes beyond the paper.
+=== 2026-07-07T02:06:21-07:00 done  biomedical-agentic-ai (exit 0) ===
