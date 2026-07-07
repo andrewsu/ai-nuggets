@@ -1758,3 +1758,32 @@ Files written under `podcasts/scripps-biomed-brief/scripts/`:
 
 Batch TTS + R2 publish + feed insertion + commit will be handled by `scripts/publish_pending.py` after the nightly Garibaldi run.
 === 2026-07-06T05:12:22-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-07T03:00:11-07:00 start scripps-biomed-brief ===
+You've hit your session limit · resets 7am (America/Los_Angeles)
+=== 2026-07-07T03:00:15-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-07T03:00:15-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-07T03:00:15-07:00 session-limit reset at 7am is 14445s away (>3600s cap); sleeping 180s ===
+=== 2026-07-07T03:03:15-07:00 start scripps-biomed-brief (retry 1) ===
+You've hit your session limit · resets 7am (America/Los_Angeles)
+=== 2026-07-07T03:03:19-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
+=== 2026-07-07T03:03:19-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-07T03:03:19-07:00 session-limit reset at 7am is 14261s away (>3600s cap); sleeping 180s ===
+=== 2026-07-07T03:06:19-07:00 start scripps-biomed-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 7am (America/Los_Angeles)
+=== 2026-07-07T03:06:24-07:00 done  scripps-biomed-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-07T03:06:24-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-07T03:06:24-07:00 session-limit reset at 7am is 14076s away (>3600s cap); sleeping 180s ===
+=== 2026-07-07T03:09:24-07:00 start scripps-biomed-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 7am (America/Los_Angeles)
+=== 2026-07-07T03:09:28-07:00 done  scripps-biomed-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-07T03:09:28-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-07T03:09:28-07:00 session-limit reset at 7am is 13892s away (>3600s cap); sleeping 180s ===
+=== 2026-07-07T03:12:28-07:00 start scripps-biomed-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7am (America/Los_Angeles)
+=== 2026-07-07T03:12:32-07:00 done  scripps-biomed-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-07T03:12:32-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-07T03:12:32-07:00 session-limit reset at 7am is 13708s away (>3600s cap); sleeping 180s ===
+=== 2026-07-07T03:15:32-07:00 start scripps-biomed-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7am (America/Los_Angeles)
+=== 2026-07-07T03:15:36-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-07T03:15:36-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
