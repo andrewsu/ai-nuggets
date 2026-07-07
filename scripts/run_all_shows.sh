@@ -91,6 +91,24 @@ STATUS_DIR="$REPO/logs/.phase1-status-$(date +%F)"
 # inside one day, but capture anyway).
 TODAY=$(date +%F)
 
+# Audit-send bookkeeping. The main-path EXIT trap fires run_daily_audit.sh
+# unless a catchup subshell was successfully spawned — in that case the
+# subshell will fire the audit when it finishes so the email reflects
+# post-catchup state. `run_daily_audit.sh` self-gates on logs/.audit-sent-*
+# so the 09:00 backstop cron and any duplicate trap fires can't produce
+# multiple emails. Historical bug this fixes: static 05:30 audit cron sent
+# "N shows FAILED" while catchup was still asleep waiting for the 7am
+# session-limit reset; the shows published cleanly ~08:00 with no follow-up.
+CATCHUP_SPAWNED=0
+audit_on_exit() {
+  local rc=$?
+  if [ "${CATCHUP_SPAWNED:-0}" -eq 0 ]; then
+    "$REPO/scripts/run_daily_audit.sh" >> "$REPO/logs/audit.log" 2>&1 || true
+  fi
+  return "$rc"
+}
+trap audit_on_exit EXIT
+
 # Cron's PATH is /usr/bin:/bin only. publish_episode.sh calls `npx wrangler`
 # which lives under nvm. Prepend the current node bin so child processes
 # (publish_pending.py → publish_episode.sh) see npx. Update on node upgrade.
@@ -248,8 +266,14 @@ spawn_catchup() {
       git push || true
     fi
     echo "=== $(date -Iseconds) catchup done ==="
+
+    # Fire the daily audit now that Phase 3 for the deferred set is done.
+    # run_daily_audit.sh is idempotent (marker-gated) so this is a no-op
+    # if the 09:00 backstop cron or an earlier fire already sent it.
+    "$REPO/scripts/run_daily_audit.sh" >> "$REPO/logs/audit.log" 2>&1 || true
   ) &
   disown
+  CATCHUP_SPAWNED=1
 }
 
 # AUP-retry / model-ladder wrapper. Returns when:
