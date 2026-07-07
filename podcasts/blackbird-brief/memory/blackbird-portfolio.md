@@ -5,11 +5,15 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-06 (Popel-Green-Pandey serial-founder cluster + OptaNova
-Pharma + Terebra Therapeutics + AsclepiX + Accelevir + Kalhor + Revivify added
-to new §2b JHU-adjacent Baltimore ecosystem section). Compiled from public
-sources (press releases, BioBuzz, Technical.ly, UM Ventures, company sites,
-PubMed, bioRxiv/medRxiv COI disclosures). Items marked ⚠ need confirmation._
+_Last verified: 2026-07-07 (Wong lab TDP-43 platform added to §2b JHU-adjacent
+Baltimore ecosystem section following Baghel/Burns/Wong Mol Neurodegener paper
+2026-07-04 disclosing TDP-43 LOF → caspase-3 tau cleavage mechanism +
+"no competing interests" JHTV-timing signal). Previously verified 2026-07-06
+(Popel-Green-Pandey serial-founder cluster + OptaNova Pharma + Terebra
+Therapeutics + AsclepiX + Accelevir + Kalhor + Revivify added to §2b). Compiled
+from public sources (press releases, BioBuzz, Technical.ly, UM Ventures,
+company sites, PubMed, bioRxiv/medRxiv COI disclosures, Google Patents). Items
+marked ⚠ need confirmation._
 
 ---
 
@@ -254,6 +258,50 @@ raises, exits, or crosses a scientific milestone.
   Aletira SELEXON adjacency (cell-type-selective genetic medicine delivery).
 - **Watch:** Company financing, IP licensing, clinical-development milestones.
 
+### Wong lab TDP-43 platform (JHU SOM Pathology + Neuroscience) — active sourcing lead ⚠
+- **Lab:** **Philip C. Wong, Ph.D.** (Departments of Pathology + Neuroscience,
+  JHU School of Medicine; wong@jhmi.edu). Foundational figure in TDP-43 cryptic
+  splicing biology — his group's 2015 *Science* paper first showed TDP-43
+  normally represses cryptic exon inclusion, and that loss of that repression is
+  a proximal event in ALS + FTD. Every TDP-43-directed clinical program traces
+  back to this discovery (Ionis-Amylyx TDP-43 splicing-corrector ASOs;
+  QurAlis TDP-43 splicing platform; Trace Neuroscience STMN2 cryptic-exon ASO).
+- **Foundational IP:** **WO2016205615A1** — "TDP-43 in degenerative disease,"
+  filed 2016 out of JHU. Field-of-use structure + active-license status not
+  publicly disclosed (open intelligence gap — see §4).
+- **Grant portfolio (translational-stage):** NIH R01NS095969 (continuous >10y) +
+  R33NS115161 + R61NS115161 (both translational-stage NIH mechanisms) +
+  Alzheimer's Drug Discovery Foundation GC-202402-2026079. Pattern of a lab
+  actively pushing toward translation.
+- **Industry-facing:** Speaking at **ALS Drug Development Summit 2026**.
+- **Fresh mechanism disclosure (2026-07-04):** Baghel MS, Burns GD (co-first),
+  ..., Sun S, Li T (now NIA), Ling JP, Wong PC (senior, corresponding), "TDP-43
+  dysfunction facilitates the pathological conversion of tau," *Molecular
+  Neurodegeneration*, DOI 10.1186/s13024-026-00968-8 (PMID 42401929). Open
+  access, CC-BY. **COI declared: none.** Key mechanistic claim: TDP-43 LOF in
+  forebrain excitatory neurons (Tau4R;CaMKII-CreER;Tardbp^f/f^ mouse + human
+  iPSC cortical neurons) → TDP-43-dependent cryptic splicing → caspase-3-
+  dependent endoproteolysis of endogenous tau → generates tau seed → accelerates
+  tauopathy → selective vulnerable-neuron loss. Temporal order established:
+  cryptic splicing precedes caspase-3 tau cleavage. **Indication-expansion
+  significance:** TDP-43 platform originally scoped to ALS+FTD (~80K US
+  patients, orphan pricing); this paper reframes the addressable market to the
+  ~40% of AD/ADRD patients with TDP-43 co-pathology (LATE-NC literature) — a
+  5–10 million-patient reframe. **Two therapeutic entry points:** (1) restore
+  TDP-43 splicing function (existing ASO camp — Ionis/Amylyx/QurAlis/Trace; AD
+  is now their expansion play); (2) block caspase-3-mediated tau cleavage in
+  TDP-43-deficient neurons — novel, less-crowded nomination (global caspase-3
+  inhibition breaks apoptosis, but a *context-specific* vulnerability
+  addressable via substrate-competitive or allosteric approaches is a distinct
+  medchem conversation). **The "no competing interests" declaration on the
+  2026-07-04 paper is the interesting negative signal** — Wong's baseline
+  WO2016205615A1 estate is not zero, so this suggests the specific
+  caspase-3-tau mechanism disclosed is not yet wrapped into an active license,
+  or existing licenses do not cover this claim. JHTV provisional-filing moment.
+- **Watch:** JHTV provisional filings on caspase-3-tau axis + Wong lab licensing
+  news (Ionis/QurAlis/Trace/Denali/Alector angle); Meghraj Baghel (co-first)
+  career trajectory as signal on where Wong lab platform IP travels next.
+
 ---
 
 ## 3. How to use this in the show
@@ -284,3 +332,9 @@ raises, exits, or crosses a scientific milestone.
   publicly as of 2026-07-06).
 - **Terebra Therapeutics** (§2b): trial pipeline for NF27 rectal-cancer program
   beyond preprint stage.
+- **Wong lab TDP-43 platform** (§2b): field-of-use structure + active-license
+  status of WO2016205615A1 (2016 JHU-filed foundational patent); whether a
+  fresh JHTV provisional on the caspase-3-tau axis in TDP-43-deficient neurons
+  is currently in prosecution; which of the existing TDP-43-splicing-restoration
+  clinical camps (Ionis/Amylyx/QurAlis/Trace) has an active partnering
+  conversation with JHTV on the Wong lab AD-indication reframe.

@@ -415,3 +415,27 @@ All three stub files are staged. In `SKIP_TTS=1` mode per PIPELINE.md, the orche
 
 Paper links: https://www.biorxiv.org/content/10.64898/2026.06.30.735614v1 ; https://doi.org/10.1016/j.ajpath.2026.05.013
 === 2026-07-06T02:23:31-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-07T02:10:11-07:00 start blackbird-brief ===
+All three stub files produced and portfolio memory updated. In SKIP_TTS mode I do not run gen_tts.py, publish_episode.sh, feed.xml edit, or the commit — the orchestrator handles those after batch TTS.
+
+## Final summary (logged to cron.log)
+
+**Episode shipped (SKIP_TTS stub mode):**
+- **Type:** Sourcing Radar (Tuesday — no Portfolio Watch)
+- **Lead pick (single-spotlight, ~7 min):** Baghel/Burns/**Philip C. Wong** (JHU SOM Pathology + Neuroscience), "TDP-43 dysfunction facilitates the pathological conversion of tau," *Molecular Neurodegeneration* 2026-07-04, DOI 10.1186/s13024-026-00968-8 (PMID 42401929), CC-BY open access.
+- **Sourcing thesis:** TDP-43 LOF → cryptic splicing → caspase-3-mediated tau endoproteolysis → tauopathy amplification + selective vulnerable-neuron loss. Reframes TDP-43 platform's addressable market from ALS/FTD (~80K US) to the ~40% of AD/ADRD with TDP-43 co-pathology (5–10M reframe). Two therapeutic entry points: (1) restore TDP-43 splicing (existing ASO camp — Ionis/Amylyx/QurAlis/Trace, now with AD expansion); (2) block caspase-3 tau cleavage in TDP-43-deficient neurons (novel, less crowded). Wong holds foundational WO2016205615A1 + industry-facing (ALS DD Summit 2026 speaker) + translational-stage NIH R33/R61 + "no competing interests" on this paper = JHTV provisional-filing moment.
+- **De-dup:** Confirmed distinct from 2026-07-04 Jiou Wang eLife TDP-43 imaging paper and 2026-07-04 XL20/Pan P. Li Nature Aging paper — different lab, different mechanism, different indication.
+- **Portfolio-memory updated:** added "Wong lab TDP-43 platform" as §2b JHU-adjacent Baltimore ecosystem entry; bumped last-verified to 2026-07-07; added Wong open items to §4.
+
+**Files produced (staged for orchestrator batch commit):**
+- `podcasts/blackbird-brief/scripts/2026-07-07-radar-jhu-wong-tdp43-tau-caspase3.md` (script + funnel)
+- `podcasts/blackbird-brief/scripts/2026-07-07-radar-jhu-wong-tdp43-tau-caspase3.rss-item.xml` (with `__LENGTH__` + `__DURATION__` placeholders; validated as parseable RSS fragment inside itunes-namespaced channel)
+- `podcasts/blackbird-brief/scripts/2026-07-07-radar-jhu-wong-tdp43-tau-caspase3.commit-msg`
+
+**Candidate funnel (recap; full detail in script):**
+- PubMed JHU/UMB/Lieber affiliation × 2026-07-04→07-07 entry-date filter: 100 total, ~10 JHU/UMB/Lieber senior-author hits. Selected the Wong Mol Neurodegener paper as lead.
+- bioRxiv/medRxiv 2026-07-04→07-07: 4 substantive JHU/UMB/Lieber hits — Mirando/Popel/Pandey MP-AXT107 (already covered 2026-07-06); Krantz solo-author HCAR1 (red-flag pattern; dropped); iHGR JHU medRxiv v2 (clinical decision support, already flagged); Hamilton/Kolodkin Piezo2 (basic neuroscience, already flagged).
+- Considered-but-dropped from PubMed sweep: Salzberg EviAnn Nature Methods (open-source bioinformatics tool, no spinout hook), Chang/Hung HPV-16 E7 vaccine (incremental), Konstantopoulos Galvanin Cell Research (commentary on non-JHU primary paper), Haith Nature Human Behaviour (review), Noback/Carr Lieber behavioral, plus multiple JHU descriptive-epidemiology + QI papers.
+- Institutional press: JHTV / Hopkins / UM Ventures / Lieber / BioBuzz all confirmed to have no fresh in-window release (freshest = 2026-06-09 GEn1E FDA designations, already covered).
+- **Selected: 1 lead — Baghel/Wong TDP-43-tau, Mol Neurodegener 2026-07-04, PMID 42401929, DOI 10.1186/s13024-026-00968-8.**
+=== 2026-07-07T02:32:01-07:00 done  blackbird-brief (exit 0) ===
