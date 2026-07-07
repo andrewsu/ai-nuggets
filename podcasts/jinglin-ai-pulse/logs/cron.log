@@ -407,3 +407,31 @@ Episode written. Since `SKIP_TTS=1`, the orchestrator will handle audio generati
 === 2026-07-06T02:30:08-07:00 start jinglin-ai-pulse ===
 Done. Episode drafted around the LongCat-2.0 "Owl Alpha" reveal + Microsoft Frontier Company as substrate-vs-workflow-camp hardening, with Dwarkesh's June 26 solo essay as the Deep Cut. Three SKIP_TTS artifacts in place; orchestrator will take it from here.
 === 2026-07-06T02:42:44-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-07T02:30:11-07:00 start jinglin-ai-pulse ===
+All three files are in place. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after writing the script and the two stubs; the orchestrator's batch TTS + `publish_pending.py` step will handle audio, feed insert, and commit.
+
+## Candidate funnel for 2026-07-07
+
+**Sources scanned:**
+- **AI Twitter / X (last 48h)** — WebSearch: no direct nitter access; used news roundups and secondary reporting as proxy signal
+- **AI investment / business news (last 3-7d)** — WebSearch on TechCrunch/Bloomberg/FT/aiweekly/Crunchbase; also unrot.co and startuphub.ai daily roundups
+- **Long-form AI podcasts (last 7-14d)** — Latent Space, Dwarkesh, MLST, WhynotTV
+- **AI community aggregators / conferences** — ICML 2026 opening, UN Geneva Dialogue
+
+**Substantive shortlist (after discarding pure hype):**
+- **ICML 2026 opens Seoul July 6, awards July 5** — record 23,918 submissions, diffusion sweeps Outstanding Paper (Flexibility Trap / High-Accuracy Sampling), Ball + Hackemann "Censor's Toolkit" position paper, Mnih/Silver A3C Time Test — https://blog.icml.cc/2026/07/05/announcing-the-icml-2026-awards **[CHOSEN – Twitter Pulse Story 1]**
+- **UN Global Dialogue on AI Governance, Geneva, July 6-7** — 193 states, Guterres/Bengio/Baerbock, three governance philosophies — https://www.un.org/global-dialogue-ai-governance **[CHOSEN – Twitter Pulse Story 2 / Money Moves]**
+- **White House voluntary AI standards framework, announcement expected week of July 7** — FT July 1 break; 3-lab regime (Anthropic/OpenAI/Google); "Model Customs" 30-day review; gates GPT-5.6 — https://towardsai.com/p/machine-learning/white-house-ai-standards-30-day-reviews-3-labs-and-a-classified-pass-bar **[CHOSEN – bundled into Story 2 / Money Moves]**
+- **Latent Space ep 212 "The Coolest Diffusion Research Isn't in LLMs" — Feinberg + Edunov, Genesis Molecular AI, July 1** — https://www.latent.space/p/the-coolest-diffusion-research-isnt **[CHOSEN – Podcast Deep Cut]**
+- Kling AI $2B at $18B (General Atlantic) — dropped, story is ~3 weeks old and already covered in prior episodes' subtext
+- Karpathy joining Anthropic (May 19) — dropped, already old news
+- Jim Fan RAISE Summit keynote July 7 (Paris) — dropped as thin (single keynote, no substance published yet)
+- WhynotTV — dropped: last episode Jan 17 2026, dormant
+- Dwarkesh — no new episode since June 26 essay-cast (already covered in July 6 Deep Cut)
+
+**Source failures:**
+- techtimes.com — HTTP 403 on direct WebFetch; extracted content via secondary reporting and the WebSearch summary
+- latent.space main podcast page WebFetch — 403-style content; used episode-specific URL + WebSearch to reconstruct
+
+Files written (script + rss-item stub + commit-msg stub) — orchestrator will handle audio, feed, and commit.
+=== 2026-07-07T02:41:19-07:00 done  jinglin-ai-pulse (exit 0) ===
