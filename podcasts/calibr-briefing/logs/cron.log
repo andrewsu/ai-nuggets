@@ -1991,3 +1991,29 @@ Substantive shortlist (Jul 3–6 fresh news, dedup vs Jul 1–5 scripts):
 - BridgeBio $1B preferred from Sixth Street + KKR — already covered Jul 2
 - Ipsen-Memo, UTHR-Thymmune, Celea, AZ-CSPC, Novartis-Antares $105M, Casgevy pediatric, Angitia terminates, Merck-Neuphoria, Wegovy MASH UK — already covered on Jul 1–5
 === 2026-07-06T02:33:05-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-07T02:20:11-07:00 start calibr-briefing ===
+All six files are in place per SKIP_TTS mode: two scripts, two `.rss-item.xml` stubs (both parse cleanly), and two `.commit-msg` stubs. The orchestrator (`scripts/publish_pending.py`) will pick these up after batch TTS runs on Garibaldi and handle audio + R2 upload + feed update + commit + push. I did not stage, commit, or push per SKIP_TTS instructions.
+
+Final summary for cron.log audit:
+
+## Candidate funnel
+
+**Fierce Biotech / Fierce Pharma** — surveyed via WebFetch (fierce direct hits returned 403; triangulated from BioSpace, GlobeNewswire, company IR).
+**Endpoints News / STAT News** — surveyed (STAT+ paywalled; Endpoints CDN 403).
+**BioPharma Dive / GEN / Clinical Trials Arena / Biocentury** — surveyed (Biocentury paywalled; GEN no dated Jul 6-7 hits; biotechvoyager.com DNS-failed).
+
+## Substantive shortlist (post-filter)
+
+- Vertex to acquire Crinetics Pharmaceuticals for $10B — https://www.statnews.com/2026/07/06/vertex-acquires-crinetics-pharmaceuticals/ ← **HEADLINES #1 + SPOTLIGHT**
+- BMS Krazati + cetuximab KRYSTAL-10 confirmatory fails in KRAS G12C mCRC — https://oncodaily.com/oncolibrary/gastrointestinal-oncology/krystal-10 ← **HEADLINES #2**
+- Vera Therapeutics atacicept FDA PDUFA today (July 7) for IgAN — https://ir.veratx.com/news-releases ← **HEADLINES #3**
+- Genentech gRED 103 layoffs + $25M/$490M Astex FBDD breast cancer collab — https://www.globenewswire.com/news-release/2026/07/06/3322174/0/en/ ← **HEADLINES #4**
+- Scribe Therapeutics S-1 for Nasdaq IPO on ML-engineered CasX epigenetic silencing — https://www.biopharmadive.com/news/scribe-gene-editing-ipo-listing/824469/ ← **HEADLINES #5**
+- Casgevy pediatric expansion to ages 2+ — stale (Jul 1), skipped
+- Roche divarasib Phase 3 KRAS G12C NSCLC win — already covered in 2026-07-03 spotlight, skipped
+- Amodei "10 yrs/yr" walkback interview — already covered in 2026-07-06 headlines, skipped
+- Ionis obudanersen REVEAL Phase 3 enrollment complete for Angelman — did not make final cut
+- United Therapeutics/Thymmune $140M+$160M — already covered in 2026-07-05 headlines, skipped
+- Sanofi Nexviazyme Baby-COMET Phase 3 infantile-onset Pompe — data drop Jul 8, held for tomorrow
+- BMS Krazati/Erbitux JAMA — did not make final cut
+=== 2026-07-07T02:39:05-07:00 done  calibr-briefing (exit 0) ===
