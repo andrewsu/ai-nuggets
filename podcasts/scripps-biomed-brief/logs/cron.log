@@ -1787,3 +1787,52 @@ You've hit your session limit · resets 7am (America/Los_Angeles)
 You've hit your session limit · resets 7am (America/Los_Angeles)
 === 2026-07-07T03:15:36-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-07-07T03:15:36-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-07-07T07:05:00-07:00 start scripps-biomed-brief ===
+Script and stubs written. Final summary follows.
+
+Today's episode of **Scripps Biomedical Brief** for Tuesday, July 7th (2026-07-07) is drafted with 4 bioRxiv preprints from the last 24–48h:
+
+1. **BoltzMol-1** (Boltz PBC + Corso + Passaro + Gitter + Kritzer) — ADMET-triaged Boltz-2 prospective virtual screening; 6/10 target hit rate at 28–96 compounds/target
+2. **Chiral β-lactone electrophiles** (Wang/Zhang UC Berkeley + McKenna/Schirle Novartis) — stereo-encoded covalent warheads modify WT-BTK and ibrutinib-resistant C481S at distinct sites; enantiomer-selected kinome subsets
+3. **DESTNI** (Rhee lab, SNU) — engineered desthiobiotin ligase from TurboID extends proximity labeling from spatial proteomics to spatial metabolomics
+4. **MPiN + KV1.3 allosteric pocket** (Tang lab, Hunan Normal) — previously uncharacterized extracellular pocket, non-contact selectivity via G427/H451, in vivo psoriasis efficacy
+
+Since `SKIP_TTS=1` is set, per PIPELINE.md I wrote:
+- `scripts/2026-07-07-boltzmol-btk-c481s-blactone-destni-kv13-mpin.md` — full script
+- `scripts/2026-07-07-boltzmol-btk-c481s-blactone-destni-kv13-mpin.rss-item.xml` — RSS `<item>` stub with `__LENGTH__` / `__DURATION__` placeholders
+- `scripts/2026-07-07-boltzmol-btk-c481s-blactone-destni-kv13-mpin.commit-msg` — commit message stub
+
+Skipped: `gen_tts.py`, `publish_episode.sh`, `feed.xml` edit, and commit — orchestrator handles those after batch TTS.
+
+## Candidate funnel
+
+- **bioRxiv scanned** (2026-07-05 → 2026-07-07):
+  - `pharmacology and toxicology`: 5 items
+  - `bioengineering`: 17 items
+  - `synthetic biology`: 0 items
+  - `biochemistry`: 22 items
+  - `cell biology`: 6 items
+  - `molecular biology`: 6 items
+  - `immunology`: 13 items
+  - `cancer biology`: 9 items
+- **arXiv / press feeds**: not queried today (bioRxiv/medRxiv is this show's primary source per PROMPT.md; the tail categories yielded ample candidates)
+- **medRxiv**: not queried today (biochemistry/bioengineering/immunology from bioRxiv were sufficient)
+
+Substantive shortlist (after discarding tangential hits):
+- BoltzMol-1 — https://www.biorxiv.org/content/10.64898/2026.07.04.736485v1 ✅ **CHOSEN**
+- β-lactone BTK(C481S) covalent warhead — https://www.biorxiv.org/content/10.64898/2026.07.03.736436v1 ✅ **CHOSEN**
+- DESTNI spatial metabolomics — https://www.biorxiv.org/content/10.64898/2026.07.05.736296v1 ✅ **CHOSEN**
+- MPiN + KV1.3 allosteric pocket — https://www.biorxiv.org/content/10.64898/2026.07.06.736759v1 ✅ **CHOSEN**
+- SRT-015 ASK1 inhibitor for liver diseases — https://www.biorxiv.org/content/10.64898/2026.06.30.735673v1
+- Suprachoroidal AXT107 microparticles — https://www.biorxiv.org/content/10.64898/2026.06.30.735614v1
+- Saturated mutagenesis of M-MLV RT for prime editing — https://www.biorxiv.org/content/10.64898/2026.07.06.736660v1
+- DNMT1 inhibition augments anti-tumor CD8+ T cell function — https://www.biorxiv.org/content/10.64898/2026.07.03.736412v1
+- SLC16A6 melanosome tyrosine transporter — https://www.biorxiv.org/content/10.64898/2026.07.06.736842v1
+- Nuclear adenosine metabolism vulnerability in TP53-loss — https://www.biorxiv.org/content/10.64898/2026.07.06.736733v1
+- Cysteine-mediated bortezomib resistance via α-ketoacid availability — https://www.biorxiv.org/content/10.64898/2026.07.06.736827v1
+- SLiM-mediated human PPI atlas (Ivarsson lab) — https://www.biorxiv.org/content/10.64898/2026.07.03.735260v1
+- Methanogenic Mtr complex nitrogenase-like cluster — https://www.biorxiv.org/content/10.64898/2026.07.03.736320v1
+- FCRL5 fucose-sensitive IgG-Fc receptor — https://www.biorxiv.org/content/10.64898/2026.07.01.735886v1
+
+**Depth notes**: All four chosen preprints are v1 posted 2026-07-06 or 2026-07-07; bodies have not yet rendered on bioRxiv (jina .full fetch returned Abstract-only for all four). Summaries are abstract-grounded per PIPELINE.md — noted in the RSS description footer. No source-level failures during search.
+=== 2026-07-07T07:11:26-07:00 done  scripps-biomed-brief (exit 0) ===
