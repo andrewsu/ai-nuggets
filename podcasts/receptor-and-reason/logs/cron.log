@@ -2194,3 +2194,32 @@ You've hit your session limit · resets 7am (America/Los_Angeles)
 You've hit your session limit · resets 7am (America/Los_Angeles)
 === 2026-07-07T03:11:05-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-07-07T03:11:05-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-07-07T07:05:00-07:00 start receptor-and-reason ===
+All three artifacts written and validated. Now the final summary for cron.log.
+
+Episode 55 of Receptor and Reason for 2026-07-07 is ready for batch TTS. Script at `podcasts/receptor-and-reason/scripts/2026-07-07-receptor-and-reason.md` (2856 words, 10 items, ~15 min at 1.2x); RSS item stub and commit-msg stub written alongside; shipped ledger appended. SKIP_TTS=1, so orchestrator will handle audio/publish/commit.
+
+**Candidate funnel:**
+
+- bioRxiv (7-day window, 2026-06-30 to 2026-07-07): 1,216 total preprints scanned across 3 date-range queries; 1,181 unique DOIs after version dedup; 390 passed broad neuro/pharma/AI keyword filter; 84 survived stricter dual-bucket filter (2 both-neuro-and-AI, 51 neuro, 33 AI-in-bio). Full text via `fetch_preprint.py` on 6 top candidates (CSF clock and POGZ had full body; KOR + HCAR1 + BoltzMol-1 + KV1.3 + CB2R had abstract-only because rendered <24-36h — noted in script for the KOR lead).
+- arXiv (7-day, from `/tmp/ai-nuggets-arxiv-cache.xml`): 31 items passed bio+agentic filter after cutoff-and-dedup.
+- Sibling shows today: biomedical-agentic-ai picked TogoMCP; calibr-briefing picked Vertex-Crinetics acquisition; justice-biotech-brief picked Novartis-Myricx NMTi ADC — no candidate overlap.
+
+**Substantive shortlist (post-filter):**
+
+- doi:10.64898/2026.07.01.735618 — Kappa opioid receptors in excitatory spinal neurons gate acute pain (Sheahan) **[CHOSEN — LEAD]**
+- doi:10.64898/2026.06.30.735650 — Shared SCZ-MS genomic architecture identifies un-drugged HCAR1 neuroimmune checkpoint **[CHOSEN]**
+- doi:10.64898/2026.07.03.735903 — Trauma-exposed adolescents reduced dACC glutamate modulation (1H fMRS) **[CHOSEN]**
+- doi:10.64898/2026.07.02.736104 — POGZ safeguards neuronal chromatin architecture (G9a/GLP boundary keeper) **[CHOSEN]**
+- doi:10.64898/2026.06.26.734784 — CSF proteomic aging clock across 10k+ proteomes **[CHOSEN]**
+- doi:10.64898/2026.06.29.735442 — CB2R constrained-peptide antagonists (O'Connell, phage display) **[CHOSEN]**
+- doi:10.64898/2026.07.06.736759 — KV1.3 novel extracellular allosteric pocket + MPiN inhibitor **[CHOSEN]**
+- doi:10.64898/2026.07.04.736485 — BoltzMol-1 Boltz-2-based prospective virtual screen **[CHOSEN]**
+- arxiv:2607.02944 — PRECEDE precedent-guided LLM co-scientist for side-effect-aware drug redesign **[CHOSEN]**
+- arxiv:2607.04558 — EEG-SpikeAgent agentic closed-loop program synthesis (VEPISET AUROC 0.935) **[CHOSEN]**
+- doi:10.64898/2026.07.03.736397 — Autism VBM mega-analysis (considered, dropped — imaging methods paper without immediate therapeutic hook)
+- doi:10.64898/2026.06.30.735709 — PKCδ HFD tonic GABA-A in DMV cardiac vagal (considered, dropped — cardiovascular tilt over CNS)
+- doi:10.64898/2026.06.30.735564 — Focused ultrasound BBB opening for LNP modRNA in NPC (considered, dropped — technical note)
+- arxiv:2607.03787 — OpenDDE open-source drug discovery engine (considered, dropped — third AI-drug-discovery item would over-index that block)
+- arxiv:2607.04557 — PREDIKTOR patient KG + gene-perturbation alignment (considered, dropped — oncology focus)
+=== 2026-07-07T07:17:50-07:00 done  receptor-and-reason (exit 0) ===
