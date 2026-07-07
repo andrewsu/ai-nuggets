@@ -943,3 +943,31 @@ Episode drafted. SKIP_TTS=1 is set so per PIPELINE.md I wrote only the script + 
 
 Rejection rationale: Novartis-Myricx is Justice's biggest wheelhouse story of the day but is already covered at length in calibr-briefing 2026-07-06-novartis-myricx-nmti-adc-spotlight — Justice would get it twice. The Greten CAR-T paper is fresh, on-beat, closes a real translational deadlock, and has clean platform-portability implications for the TCE / autoimmune programs Justice tracks.
 === 2026-07-06T02:45:47-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-07T02:40:11-07:00 start justice-biotech-brief ===
+All three stub artifacts are in place. Now the final candidate funnel summary for the log.
+
+**Episode: NMTi ADC payload class — Novartis buys Myricx Bio for up to $1.5B ($1.1B upfront + $400M milestones)**
+
+- **Script:** `podcasts/justice-biotech-brief/scripts/2026-07-07-nmti-adc-payload-novartis-myricx-b7h3-her2.md`
+- **RSS item stub:** written (placeholders `__LENGTH__` / `__DURATION__`)
+- **Commit message stub:** written
+- **SKIP_TTS mode:** batch TTS + publish + feed update + commit will be handled by `scripts/publish_pending.py` after Garibaldi TTS job completes.
+
+**Candidate funnel — 2026-07-07 justice-biotech-brief**
+
+- **bioRxiv (details API, 2026-07-06 to 2026-07-07):** 157 total scanned; 155 unique after dedup; keyword filter (VEGF/PD-L1/PD-1/TCE/bispecific/trispecific/CAR-T/ADC/JAK/checkpoint/immunotherapy) hit 5 substantive matches after discarding spurious hits ("tcr" → paleontology "Garamaudo" name, brain MRS "tcr", Ntsr1-Flp driver "tcr"):
+  - `10.64898/2026.07.03.736431` — CD16a membrane-distal domain allosterically regulates NK-cell ADCC (immunology) — solid mechanistic ADC-adjacent paper
+  - `10.64898/2026.07.03.736412` — Targeting DNMT1 augments anti-tumor CD8+ T cell function (immunology, epigenetic combo)
+  - `10.64898/2026.07.01.735834` — Chromatin checkpoint in macrophage maturation — weak fit (immunology infra, not therapeutic)
+  - `10.64898/2026.07.04.736425` — Benchmarking AlphaFold for antibody/TCR antigen recognition (bioinformatics)
+  - `10.64898/2026.07.01.735778` — Platelet GARP-dependent TGF-β1 in cardiac repair — weak fit (cardiology, not on-topic)
+- **News / product launches (Fierce Biotech + press-release feeds, Jul 6-7 window):**
+  - **Novartis to acquire Myricx Bio for up to $1.5B ($1.1B upfront + $400M milestones) — novel NMTi ADC payload class, B7-H3 + HER2 preclinical assets** — https://www.novartis.com/news/media-releases/novartis-agrees-acquire-myricx-bio-advancing-next-generation-antibody-drug-conjugate-innovation-novel-nmti-payload-expanding-options-cancer-patients ← **SELECTED**
+  - Genentech / Astex Pharmaceuticals — $25M upfront + up to $490M milestones for preclinical FBDD breast-cancer program (small-molecule cell-cycle inhibitor; not ADC/TCE/biologic) — https://www.globenewswire.com/news-release/2026/07/06/3322174/0/en/Astex-Announces-Exclusive-Research-Collaboration-and-License-Agreement-with-Genentech-for-Breast-Cancer-Therapy-Program.html
+  - Vera Therapeutics atacicept — PDUFA today for IgA nephropathy; no Vera wire seen as of run, being covered by calibr-briefing headline slot instead — https://ir.veratx.com/news-releases
+  - Scribe Therapeutics S-1 (PCSK9 epigenetic silencer, off-topic — cardiometabolic, not oncology/autoimmune biologic)
+- **Policy / funder announcements (ARPA-H / NIH / NSF, Jul 6-7 window):** nothing on-topic surfaced in scan.
+- **Source failures:** `endpoints.news/` returned HTTP 403 to WebFetch (Cloudflare); `fiercebiotech.com/*` article deep-fetches also 403; fell back to Fierce Biotech homepage listing + independent press-release fetch via globenewswire/novartis.com/myricxbio.com/biospace.com — all reachable, story fully triangulated across four independent sources.
+
+**Selection rationale:** Novartis-Myricx is the most direct hit on Justice's ADC brief and the most substantive strategic ADC development of the window. B7-H3 and HER2 targets are maximally crowded, so the differentiation lever is entirely the payload — N-myristoyltransferase inhibitors, a genuinely novel class orthogonal to the DXd/exatecan and MMAE/MMAF cross-resistance profiles that now dominate the field. Ed Tate's 20-year academic groundwork on NMT drug discovery underpins the mechanistic plausibility. Preprint alternatives were solid immunology but neither compared on translational immediacy or platform-level strategic impact.
+=== 2026-07-07T02:47:40-07:00 done  justice-biotech-brief (exit 0) ===
