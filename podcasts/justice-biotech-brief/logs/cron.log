@@ -971,3 +971,39 @@ All three stub artifacts are in place. Now the final candidate funnel summary fo
 
 **Selection rationale:** Novartis-Myricx is the most direct hit on Justice's ADC brief and the most substantive strategic ADC development of the window. B7-H3 and HER2 targets are maximally crowded, so the differentiation lever is entirely the payload — N-myristoyltransferase inhibitors, a genuinely novel class orthogonal to the DXd/exatecan and MMAE/MMAF cross-resistance profiles that now dominate the field. Ed Tate's 20-year academic groundwork on NMT drug discovery underpins the mechanistic plausibility. Preprint alternatives were solid immunology but neither compared on translational immediacy or platform-level strategic impact.
 === 2026-07-07T02:47:40-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-08T02:40:09-07:00 start justice-biotech-brief ===
+You've hit your session limit · resets 3:10am (America/Los_Angeles)
+=== 2026-07-08T02:47:32-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-08T02:47:33-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-08T02:47:33-07:00 session-limit hit; sleeping 1407s until 3:10am (+60s buffer) ===
+=== 2026-07-08T03:11:00-07:00 start justice-biotech-brief (retry 1) ===
+Episode is now complete. The previous 02:40 run wrote the script and RSS stub but the session-limit hit before the `.commit-msg`. I filled it in. Sanity-checking bioRxiv confirms nothing beats the atacicept FDA approval — the on-beat preprints are secondary.
+
+## Justice's Biotech Brief 2026-07-08 — publish summary
+
+**Session context:** This was a runner retry after the initial 2026-07-08T02:40 run hit a Claude session-limit mid-write. The prior session had already selected TRUTAKNA / atacicept, written the full script, and written the RSS stub — but was cut off before writing the `.commit-msg` and logging the funnel. This run completed both. No fresh search / re-pick was done; the prior selection is on-beat and clearly the day's dominant story.
+
+**Files in place** (`SKIP_TTS=1` — `publish_pending.py` handles TTS, R2 publish, feed edit, commit):
+- `podcasts/justice-biotech-brief/scripts/2026-07-08-trutakna-atacicept-baff-april-igan-fda-approval.md`
+- `podcasts/justice-biotech-brief/scripts/2026-07-08-trutakna-atacicept-baff-april-igan-fda-approval.rss-item.xml`
+- `podcasts/justice-biotech-brief/scripts/2026-07-08-trutakna-atacicept-baff-april-igan-fda-approval.commit-msg` (added by this run)
+
+**Pick:** Vera Therapeutics (Nasdaq: VERA) — FDA accelerated approval on 2026-07-07 for **TRUTAKNA (atacicept-vymj)** in adult primary IgA nephropathy. First and only dual BAFF+APRIL inhibitor approved for IgAN. Soluble TACI-Fc decoy pulls both cytokines out of solution, starving the pathogenic B-cell + plasmablast + long-lived plasma cell axis that produces galactose-deficient IgA1 (Gd-IgA1). ORIGIN 3 interim (n=203) delivered 42% placebo-adjusted proteinuria reduction (p<0.0001) at 36 weeks; secondary observational 68% Gd-IgA1 reduction — the pathogenic autoantigen itself. Safety in full 428-patient dataset: no serious/opportunistic infections, no hypogammaglobulinemia at 36 weeks (class-signal to watch on multi-year exposure). Primary URL: https://ir.veratx.com/news-releases/news-release-details/vera-therapeutics-receives-fda-accelerated-approval-trutaknatm
+
+**Candidate funnel (2026-07-08 window):**
+
+- **News / product launches / FDA regulatory (Jul 7–8):**
+  - **Vera Therapeutics TRUTAKNA (atacicept-vymj) FDA accelerated approval for IgAN — 2026-07-07 — CHOSEN.** https://ir.veratx.com/news-releases/news-release-details/vera-therapeutics-receives-fda-accelerated-approval-trutaknatm  Verified 200 OK; also covered as spotlight in calibr-briefing today (pharma-transactional lens); Justice gets the deeper translational-immunology lens on the mechanism.
+  - (Calibr-briefing today also carried the Vertex-Crinetics $10B deal on Jul 6 as spillover context — that item was calibr-briefing 2026-07-07 spotlight, not on Justice's beat.)
+- **bioRxiv details API (2026-07-07 → 2026-07-08, 245 total papers, paginated in full):** on-beat matches after title+abstract keyword filter (VEGF/PD-L1/PD-1/TCE/bispecific/trispecific/CAR-T/ADC/JAK/checkpoint/immunotherapy/BAFF/APRIL):
+  - Tetherin coordinates glycolytic + IFN signaling in adipocytes (immunometabolic checkpoint) — 10.64898/2026.07.06.735062 — mechanistic immunology, no near-term therapeutic hook.
+  - Folate-dependent purine synthesis sensitizes melanoma to immune attack via glycolysis suppression — 10.64898/2026.07.06.736685 — immuno-oncology mechanism paper, no clinical arm.
+  - CD47 blockade + anti-GD2 phagocytosis synergy in vitro but fails in vivo in immunocompetent chemoresistant model — 10.64898/2026.07.02.736004 — a negative-result CD47 paper, secondary.
+  - PSGL-1 blockade delays BRAF/MEK-inhibitor relapse in cutaneous melanoma — 10.64898/2026.07.02.736105 — checkpoint-adjacent mechanism, preclinical.
+  - NK-like networked CD8+ T-cell immunity in exceptional HIV controllers — 10.64898/2026.07.02.735504 — infectious-disease T-cell biology, off-beat.
+  - Rejected as spurious keyword hits: "isotropic ADC" (diffusion MRI, not antibody-drug conjugate); "checkpoint" in BehaviorScope-X (a compute-checkpoint mention); E2F1 in pulmonary arterial hypertension (VEGF pathway biology, not a therapeutic on Justice's beat).
+- **Policy / funder (ARPA-H / NIH / NSF):** no Jul 7–8 items on Justice's beat. ARPA-H most recent item was Jul 1 (BREATHE indoor air quality); NIH releases page consistently 403s to WebFetch from this IP; NSF Jul 7 items were non-therapeutic.
+- **Source failures / caveats:** Endpoints News and Fierce Biotech deep-page fetches routinely 403 from this IP; homepage listings scanned; the Vera approval was the dominant Jul 7 wire and reached us via the Vera IR press release + calibr's parallel coverage.
+
+**Selection rationale:** First-in-class FDA approval of a novel-mechanism autoimmune biologic that closes the dual-BAFF+APRIL vs APRIL-only class question in IgAN and opens indication-expansion across the entire plasmablast/plasma cell autoimmune universe (lupus nephritis, SLE, myasthenia gravis, Sjögren's, membranous nephropathy). Directly on Justice's beat (translational immunology / autoimmune biologics / Rodgers lab Calibr). Preprint alternatives on the day were solid but preclinical/mechanistic — none beat a same-day novel-mechanism FDA approval. The mechanism-repurposing story (Merck-Serono's ~2010 SLE failure revived by Vera through disease-mechanism matching) is also a validated regulatory precedent that AI-native platform companies (Xaira, Iambic, Isomorphic) will reference forward.
+=== 2026-07-08T03:15:40-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
