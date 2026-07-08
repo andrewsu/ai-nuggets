@@ -5,10 +5,13 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-07 (Wong lab TDP-43 platform added to §2b JHU-adjacent
-Baltimore ecosystem section following Baghel/Burns/Wong Mol Neurodegener paper
-2026-07-04 disclosing TDP-43 LOF → caspase-3 tau cleavage mechanism +
-"no competing interests" JHTV-timing signal). Previously verified 2026-07-06
+_Last verified: 2026-07-08 (Watkins lab ACSVL3 GBM platform, Raman lab DDX3/RK-33
+pediatric bone sarcoma immuno-combo, and Luetkens lab cathepsin B CAR-T
+trogocytosis added to §2b as active sourcing leads from the 2026-07-08 Sourcing
+Radar). Previously verified 2026-07-07 (Wong lab TDP-43 platform added to §2b
+JHU-adjacent Baltimore ecosystem section following Baghel/Burns/Wong Mol
+Neurodegener paper 2026-07-04 disclosing TDP-43 LOF → caspase-3 tau cleavage
+mechanism + "no competing interests" JHTV-timing signal). Previously verified 2026-07-06
 (Popel-Green-Pandey serial-founder cluster + OptaNova Pharma + Terebra
 Therapeutics + AsclepiX + Accelevir + Kalhor + Revivify added to §2b). Compiled
 from public sources (press releases, BioBuzz, Technical.ly, UM Ventures,
@@ -301,6 +304,128 @@ raises, exits, or crosses a scientific milestone.
 - **Watch:** JHTV provisional filings on caspase-3-tau axis + Wong lab licensing
   news (Ionis/QurAlis/Trace/Denali/Alector angle); Meghraj Baghel (co-first)
   career trajectory as signal on where Wong lab platform IP travels next.
+
+### Watkins lab ACSVL3 GBM platform (Kennedy Krieger + JHU Neurology) — active sourcing lead ⚠
+- **Lab:** **Paul A. Watkins, M.D., Ph.D.** (Kennedy Krieger Institute + Johns
+  Hopkins School of Medicine Neurology; watkins@kennedykrieger.org). >10-year
+  program on the acyl-CoA synthetase (ACS) family of fatty-acid activating
+  enzymes; active NIH R01 (NS062043).
+- **First-in-class target:** **ACSVL3** (very long-chain acyl-CoA synthetase 3;
+  SLC27A3-family). Selectively expressed in gliomas (U87MG + Mayo-22 + additional
+  glioma cell models) vs normal glial cells — clean expression differential.
+  Genetic knockdown/knockout collapses malignant phenotype: slower growth,
+  reduced invasion, GFAP induction (astrocyte-lineage differentiation).
+- **Tool compound:** **CB5 / grassofermata** — natural-product-derived
+  small-molecule ACSVL3 inhibitor. 3 μM = differentiation + reversible growth
+  arrest + reduced β-oxidation of C16-C24 FA; 10 μM = tumor-selective toxicity
+  (kills glioma, spares normal human fibroblasts). Clean therapeutic-window
+  read this early.
+- **Xenograft POC:** NOD/SCID subcutaneous U87MG xenografts, 2 mg/kg/day IP →
+  slowed growth by day 7, tumor shrinkage by day 12; tolerated up to
+  32 mg/kg/day (>16× therapeutic window on efficacy dose).
+- **Fresh disclosure (2026-07-08):** Clay EM, Shi X, Kolar EA, Liu Y, Lal B,
+  Watkins PA (senior corresponding), "Toward pharmacologic therapy for
+  glioblastoma: Characterization of the very long-chain acyl-CoA synthetase 3
+  (ACSVL3) inhibitor Grassofermata," bioRxiv v1 2026.07.07.736493. CC-BY-ND 4.0.
+  **COI declared: none.** Two candid caveats — Mayo-22 patient-derived xenograft
+  NOT significant (heterogeneity biology is real, first diligence question);
+  subcutaneous not orthotopic (no direct BBB data — grassofermata is small
+  enough that prior on brain penetration is reasonable but is a wet-lab
+  question).
+- **Sourcing significance:** GBM has had no new drug of consequence in 20 years.
+  First-in-class metabolic vulnerability + tool compound + Kennedy Krieger + JHU
+  IP stack + active NIH R01 + a lab program that has been methodically mapping
+  ACS-family biology for >10 years. Differentiation-inducing MOA (astrocytic
+  lineage commitment of GBM cells) is investor-legible narrative. Slots
+  alongside aSKY oncology thesis as a metabolic-target platform play.
+  **"No competing interests" + a natural-product chemotype available for
+  analog development suggests the JHTV filing/licensing surface is open** —
+  no active company disclosed yet, though it is uncertain whether provisionals
+  cover ACSVL3 composition-of-matter or grassofermata analogues.
+- **Watch:** JHTV patent-family status on ACSVL3 target + grassofermata
+  chemotype; orthotopic + BBB data (next-cycle validation); progression to a
+  Mayo-22-response mechanism (does PDX heterogeneity map to expression level or
+  co-mutation status); competing GBM metabolic-target programs.
+
+### Raman lab DDX3/RK-33 platform (JHU Oncology + Radiology + Pharmacology + SKCCC + BME) — active sourcing lead ⚠
+- **Lab / inventor:** **Venu Raman, Ph.D.** (JHU Oncology + Radiology +
+  Pharmacology + Sidney Kimmel Comprehensive Cancer Center). Inventor of RK-33,
+  a small-molecule DDX3 (DEAD-box RNA helicase) inhibitor. Prior clinical
+  development history through Phase 1 in adult solid tumors.
+- **Collaborators:** **Patrick Cahan, Ph.D.** (JHU BME + INBT + SKCCC — systems
+  biology + tumor microenvironment). **Danny Loeb, M.D., Ph.D.** (Einstein/
+  Montefiore; senior corresponding on the 2026-07-01 preprint — pediatric
+  sarcoma clinical + translational program).
+- **Mechanism:** DDX3 has opposite roles in tumor cells (unwinds dsRNA,
+  suppresses Type I IFN signaling) vs macrophages (supports pro-inflammatory
+  cytokine expression). RK-33 inhibition flips both dials in the same
+  therapeutic direction — dsRNA accumulation in tumor cells → Type I IFN
+  response + broader inflammatory gene expression; tumor-associated macrophages
+  polarize toward M1-like phenotype.
+- **Fresh disclosure (2026-07-01):** Weil BR, Peng H, ..., Cahan PA, Raman V,
+  Loeb DM (senior corresponding), "Innate immune microenvironmental remodeling
+  via DDX3 inhibition improves outcomes in pediatric bone sarcoma models,"
+  bioRxiv v1 2026.07.01.735844. **In immunocompetent osteosarcoma mice, RK-33 +
+  mifamurtide (only EU-approved OS immunostimulant) significantly reduces
+  metastatic burden ONLY in non-MYC-amplified backgrounds; MYC-amplified
+  backgrounds fail.** MYC-status patient-selection biomarker packaged with the
+  pharmacology.
+- **Sourcing significance:** Pediatric metastatic osteosarcoma survival has been
+  ~25% for decades — long-standing unmet need with orphan pricing available.
+  RK-33 composition-of-matter sits inside the JHU/SKCCC estate. The
+  immuno-combo indication + MYC-biomarker strategy is fresh. Rational combo
+  positioning with an already-approved (in EU) immunostimulant reduces
+  clinical-development risk. Genomic patient-selection biomarker landing in
+  the same package as the pharmacology reads as investor-current.
+- **Watch:** RK-33 IP status (composition-of-matter, method-of-use for OS,
+  MYC-stratification claims — is the composition still unencumbered or
+  licensed?); Raman lab's disposition (RK-33 has been through Ph1 already —
+  spinout, license-out, or academic-only path?); competing pediatric-oncology
+  strategics (Y-mAbs, Aadi Bioscience, Advaxis, Day One Biopharmaceuticals);
+  mifamurtide US regulatory status (currently EU-only — a US path for the
+  combo would need mifamurtide access).
+
+### Luetkens lab cathepsin B / CAR-T trogocytosis (UMB SOM + UMGCCC Fannie Angelos GMP Lab) — active sourcing lead ⚠
+- **Lab:** **Tim C. Luetkens, M.D.** (Associate Professor, UMSOM Microbiology +
+  Immunology; Director of Research and Development at UMGCCC Fannie Angelos
+  Cellular Therapeutics GMP Lab). First author **Kenneth Dietze, Ph.D.**
+  (Luetkens lab research fellow). Imaging collaboration: **Arpita Upadhyaya,
+  Ph.D.** (UMD College Park; lattice light-sheet microscopy).
+- **Mechanism:** CAR-T cells physically strip target-antigen fragments off
+  tumor cell surfaces and deposit those fragments onto themselves — CAR-mediated
+  trogocytosis (CMT). Dual damage: (a) tumor cells lose target antigen and
+  evade further killing (relapse); (b) CAR-T cells become shorter-lived
+  (persistence loss). Both are leading hypotheses for the ~5-year CAR-T
+  relapse pattern.
+- **Druggable node:** **Cathepsin B** (lysosomal cysteine protease) is required
+  for the CMT ripping process. Cathepsin B inhibition preserves CAR-T
+  persistence and augments tumor control in animal models. Small-molecule
+  adjunct thesis compatible with every commercial CAR-T (CD19 —
+  Kymriah/Yescarta/Breyanzi/Tecartus; BCMA — Abecma/Carvykti; next-generation
+  CD229 CAR-T currently in first-in-human trial at UMGCCC for B-cell
+  lymphoma) without touching cell engineering.
+- **Fresh disclosure (June 2026):** Dietze K, Nguyen K, Kiely EA, Upadhyaya A,
+  Owonikoko TK (UMGCCC Executive Director), Luetkens T (senior corresponding),
+  "CAR-mediated trogocytosis limits CAR-T persistence and is blocked by
+  cathepsin B inhibition," *Signal Transduction and Targeted Therapy* (Nature
+  portfolio) s41392-026-02654-z, published June 2026. Funding: MD Cigarette
+  Restitution Fund CH-649-CRF, NCI P30CA134274 + R21CA297125, NIH R35 GM145313,
+  NIAID T32 AI095190, ACS DBG-25-1434942-01-ET.
+- **Sourcing significance:** UMB IP inside the UM Ventures pipeline — same
+  co-investment agreement that produced **aSKY** — plus explicit UMGCCC
+  operational surface (the office running the CD229 first-in-human is the same
+  office publishing this). Cathepsin B chemistry space is tractable — broad-
+  spectrum cysteine-protease inhibitors are known, so both repurposing and de
+  novo composition-of-matter angles are viable (selective, cell-permeable,
+  biologically stable series is the medchem question). Adjunct-with-every-
+  approved-CAR-T commercial framing is investor-legible.
+- **Watch:** UM Ventures IP status on cathepsin B methods-of-use for CAR-T
+  combination + selective cathepsin B COM claims; Luetkens's disposition
+  (academic-only vs open to spinout structure); CAR-T strategic acquirer
+  interest (Bristol Myers Squibb, Gilead/Kite, Novartis, Johnson & Johnson,
+  Legend Biotech); cathepsin B inhibitor prior-art landscape (odanacatib was
+  cathepsin K; VBY-825 and MDL-28170 are historical cathepsin B tool
+  compounds).
 
 ---
 

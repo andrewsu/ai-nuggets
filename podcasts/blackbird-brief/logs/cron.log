@@ -439,3 +439,35 @@ All three stub files produced and portfolio memory updated. In SKIP_TTS mode I d
 - Institutional press: JHTV / Hopkins / UM Ventures / Lieber / BioBuzz all confirmed to have no fresh in-window release (freshest = 2026-06-09 GEn1E FDA designations, already covered).
 - **Selected: 1 lead — Baghel/Wong TDP-43-tau, Mol Neurodegener 2026-07-04, PMID 42401929, DOI 10.1186/s13024-026-00968-8.**
 === 2026-07-07T02:32:01-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-08T02:10:09-07:00 start blackbird-brief ===
+All stubs written; SKIP_TTS mode so no TTS/publish/commit here. Final funnel and summary follows.
+
+## Done — Blackbird Brief 2026-07-08 (Sourcing Radar; SKIP_TTS mode)
+
+Files written under `podcasts/blackbird-brief/scripts/`:
+- `2026-07-08-radar-jhu-kki-acsvl3-grassofermata-gbm.md` — the script
+- `2026-07-08-radar-jhu-kki-acsvl3-grassofermata-gbm.rss-item.xml` — RSS item stub (LENGTH + DURATION placeholders, XML-validated)
+- `2026-07-08-radar-jhu-kki-acsvl3-grassofermata-gbm.commit-msg` — commit message
+
+Portfolio memory updated (`podcasts/blackbird-brief/memory/blackbird-portfolio.md`): added three §2b sourcing leads — Watkins lab (Kennedy Krieger + JHU Neurology) ACSVL3/grassofermata GBM platform, Raman lab (JHU Oncology + SKCCC) DDX3/RK-33 pediatric bone sarcoma immuno-combo, Luetkens lab (UMB SOM + UMGCCC) cathepsin B / CAR-T trogocytosis.
+
+Wednesday = Sourcing Radar only (no Portfolio Watch until Sunday). No commit performed — `publish_pending.py` will commit after batch TTS.
+
+## Candidate funnel
+
+**bioRxiv (Stream B, past ~3–4 days, JHU/UMB/Lieber-affiliated preprints)** — ~40 scanned across search agent runs; ~8 survived first-pass affiliation + translational-relevance filter. Full text pulled via `scripts/fetch_preprint.py` (r.jina.ai reader proxy) for all three picks; no fetches fell through to abstract-only.
+
+**Institutional newsrooms + top journals + press (Streams B + A, past 3–5 days)** — searched hub.jhu.edu, hopkinsmedicine.org/news, ventures.jhu.edu, medschool.umaryland.edu/news, biobuzz.io, technical.ly/baltimore, Nature/Science/Cell portfolio for JHU+UMB+Lieber; JHU newsrooms 403'd via WebFetch, backfilled via WebSearch. US July 4 window suppressed institutional press output.
+
+Substantive shortlist after filtering:
+
+- **[CHOSEN — LEAD]** Clay/Shi/Kolar/Liu/Lal/Watkins, "Toward pharmacologic therapy for glioblastoma: Characterization of the very long-chain acyl-CoA synthetase 3 (ACSVL3) inhibitor Grassofermata," bioRxiv 2026-07-08 — https://www.biorxiv.org/content/10.64898/2026.07.07.736493v1 — Kennedy Krieger + JHU SOM Neurology
+- **[CHOSEN — PICK 2]** Weil/Peng/Cahan/Raman/Loeb, "Innate immune microenvironmental remodeling via DDX3 inhibition improves outcomes in pediatric bone sarcoma models," bioRxiv 2026-07-01 — https://www.biorxiv.org/content/10.64898/2026.07.01.735844v1 — JHU BME + SKCCC + Einstein/Montefiore
+- **[CHOSEN — PICK 3]** Dietze/Nguyen/Kiely/Upadhyaya/Owonikoko/Luetkens, "CAR-mediated trogocytosis limits CAR-T persistence and is blocked by cathepsin B inhibition," Signal Transduction and Targeted Therapy s41392-026-02654-z, June 2026 — https://www.nature.com/articles/s41392-026-02654-z — UMB SOM Microbiology & Immunology + UMGCCC + UMD College Park
+- Lui/Florea, "SpliSync: genomic language model correction of long-read RNA-seq splice sites," bioRxiv 2026-07-04 — https://www.biorxiv.org/content/10.64898/2026.07.04.736518v1 — JHU McKusick-Nathans / Computational Biology (dropped: strong ML platform but non-therapeutic, weaker sourcing lead vs the three chosen)
+- Hamilton et al., "Piezo2 refines AOS axonal projections and gates the optokinetic reflex," bioRxiv 2026-07-05 — https://www.biorxiv.org/content/10.64898/2026.06.30.735567v1 — JHU SOM (Kolodkin/Chaudhari) (dropped: mechanistic-only, no tool compound)
+- Martinez et al., "Cloudome: connectome proofreading definition-of-done," bioRxiv 2026-07-04 — https://www.biorxiv.org/content/10.64898/2026.06.30.735414v1 — JHU APL (dropped: infra/tooling, no therapeutic angle)
+- Lieber Institute schizophrenia GWAS → primary cilium program (bioRxiv 2026-06-09) — https://www.biorxiv.org/content/10.64898/2026.06.09.731172v1 (dropped: outside 3–4 day window; interesting for GPR52 adjacency, hold for future radar)
+- UMB Kahlert Institute inauguration + Ozempic-for-OUD trial launch — https://www.medschool.umaryland.edu/news/2026/kahlert-institute-for-addiction-medicine-inaugurates-new-facility-to-develop-treatments-for-addiction.html (dropped: institutional infrastructure signal, not a directly licensable IP lead)
+- UMB β-thalassemia RBC heme-import discovery (dropped: URL not fully verified in-window, defer to next cycle)
+=== 2026-07-08T02:29:42-07:00 done  blackbird-brief (exit 0) ===
