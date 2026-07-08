@@ -435,3 +435,46 @@ All three files are in place. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped 
 
 Files written (script + rss-item stub + commit-msg stub) — orchestrator will handle audio, feed, and commit.
 === 2026-07-07T02:41:19-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-08T02:30:09-07:00 start jinglin-ai-pulse ===
+Episode script + RSS stub + commit-msg stub are all in place; XML validates and SKIP_TTS=1 means the orchestrator will handle TTS, R2 publish, and feed.xml assembly after batch.
+
+**Ollie's AI Pulse — 2026-07-08 shipped (SKIP_TTS batch mode)**
+
+Script: `podcasts/jinglin-ai-pulse/scripts/2026-07-08-cowork-91-percent-not-coding-and-the-harness-thesis.md` (~2,400 spoken words, ~19 min at yesterday's TTS pace)
+
+**Meta-thesis:** The workflow camp from Sunday just got receipts. Anthropic's Cowork usage data (released with the mobile/web launch yesterday) shows only 8.7% of use is software development — the biggest tell yet that the coding-agent-wars framing was too narrow. Lilian Weng's July 4 harness-engineering essay is the theoretical vocabulary that closes the loop.
+
+**Segments:**
+- **Twitter Pulse:** (1) Claude Cowork mobile/web launch + the 91.3%-not-coding usage bombshell (33.4% business ops, 16.4% content, 8.7% dev); (2) ICML opens with Pascale Fung "Towards AI Agents in the Real World" keynote + Anthropic's J-space/global-workspace paper — same argument in two vocabularies (LLMs alone insufficient, model interior contains structure).
+- **Money Moves:** Fable 5 pricing transition extended 5 days to July 13 after user backlash ($10/$50 = 2x Opus 4.8); Meta ships Muse Image (Arena #2) + previews Muse Video (Arena #3) outside the covered-frontier-model tent.
+- **Deep Cut:** Lilian Weng, "Harness Engineering for Self-Improvement" (Lil'Log, July 4, ~28 min, 35 papers) — the vocabulary and the roadmap. Four moves: definition, thesis (harness > weights near-term), papers (ACE/MCE/Meta-Harness/ADAS/AFlow/STOP/Darwin Gödel Machine — all with biology duals), cautionary result (STOP degrades weak models — capability threshold).
+
+**Wrap:** Watch (1) whether substrate-camp voices engage the 91.3% number; (2) whether Fable 5 gets restored to subscriptions on schedule July 13.
+
+**Candidate funnel:**
+
+- **Twitter / AI discourse (last 24-48h, WebSearch across techcrunch/venturebeat/pymnts/9to5mac + Latent Space AINews + X post traffic):** ~24 items surfaced, ~10 substantive:
+  - [Chosen] Anthropic Claude Cowork on mobile/web + usage-data reveal — venturebeat.com/anthropic-brings-claude-cowork-to-mobile-and-web, techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork, claude.com/blog/cowork-web-mobile
+  - [Chosen] ICML 2026 opens Tue Jul 7, Pascale Fung invited talk — icml.cc/virtual/2026/invited-talk/67258, blog.icml.cc/2026/05/18
+  - [Chosen] Anthropic "A Global Workspace in Language Models" (J-space/J-lens) Sun Jul 6 — transformer-circuits.pub/2026/workspace, anthropic.com/research/global-workspace, venturebeat.com/anthropics-new-j-lens-reveals-a-silent-workspace
+  - Meta Muse Image/Muse Video launch Jul 7 — ai.meta.com/blog/introducing-muse-image-muse-video-msl (used in Money Moves)
+  - NVIDIA Nemotron-Labs-3-Puzzle-75B-A9B (compression) — huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16 (dropped, too infrastructure-y for today)
+  - Liquid AI Antidoom / FTPO — marktechpost.com/2026/07/07/liquid-ai-antidoom-doom-loops-ftpo, liquid.ai/blog/antidoom (dropped, narrow reasoning-eval fix)
+  - Meta layoffs 8,000 restructuring around AI (dropped, thin substantive angle)
+  - Karpathy → Anthropic (May 19 2026, not fresh)
+  - Cohere Transcribe Arabic (dropped, off-audience)
+  - Google Gemini API Managed Agents (dropped, incremental)
+- **AI investment/business (last 7d):**
+  - [Chosen for Money Moves] Fable 5 subscription-to-usage-credit transition day today, 5-day extension — forbes.com/sites/sandycarter/2026/07/07, techtimes.com/319767, finance.biggo.com/69786ec0
+  - [Chosen for Money Moves] Meta Muse Image/Video launch as substrate-outside-the-tent bet
+  - Together AI $800M Series C (Aramco lead, Jul 1) — covered last week
+  - Crusoe $3B talks @ $30B (Jul 2-3) — covered Sunday
+- **Long-form podcasts / essays (last 14d):**
+  - [Chosen] Lilian Weng, "Harness Engineering for Self-Improvement," lilianweng.github.io/posts/2026-07-04-harness (Jul 4, 28 min, 35 papers) — full fetch, verbatim quotes captured
+  - Dwarkesh × Grant Sanderson, "AI and the future of math" (Jun 30 release, referenced Jul 4 episode) — full fetch, but already featured Monday
+  - Latent Space ep 212 Genesis / Feinberg / Edunov (Jul 1) — already featured Tuesday
+  - WhynotTV Podcast — no new episode since January 2026 per Apple Podcasts/Podchaser (recorded gap noted)
+- **Community aggregators:** LessWrong debate on the J-space paper (feeds into story 2); AINews (Latent Space) Jul 6-7 issue confirmed the Cowork + J-space + Muse + Antidoom + Puzzle stack was the week's convergent signal.
+
+Source-side note: no source failures this run; WebFetch on venturebeat.com/anthropic-brings-claude-cowork returned 403 on the first attempt but the underlying article body was already retrievable via the sibling techcrunch coverage + the anthropic blog page, so I proceeded without a retry.
+=== 2026-07-08T02:40:46-07:00 done  jinglin-ai-pulse (exit 0) ===
