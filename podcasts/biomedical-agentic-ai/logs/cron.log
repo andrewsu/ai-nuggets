@@ -2290,3 +2290,50 @@ Episode ready. In SKIP_TTS mode: script + rss-item stub + commit-msg stub writte
 
 **Chosen:** TogoMCP. Direct hit on Andrew's stated interests (agentic AI, biomedical KGs, ontologies, data integration, open data/open science) with a general-principle finding that generalizes beyond the paper.
 === 2026-07-07T02:06:21-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-08T02:00:09-07:00 start biomedical-agentic-ai ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CcpKQDh7Th7qL1S375K5Z
+=== 2026-07-08T02:01:18-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-08T02:01:18-07:00 AUP-refusal detected for biomedical-agentic-ai; retrying in 180s ===
+=== 2026-07-08T02:04:18-07:00 start biomedical-agentic-ai (retry 1) ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CcpKp5JWRBKGyqW6zNCog
+=== 2026-07-08T02:06:41-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===
+=== 2026-07-08T02:06:41-07:00 AUP-refusal detected for biomedical-agentic-ai; retrying in 180s ===
+=== 2026-07-08T02:09:41-07:00 start biomedical-agentic-ai (retry 2, --model claude-sonnet-4-6) ===
+All checks pass: 860 words (under 1150), XML valid, arXiv URL live (HTTP 200). SKIP_TTS=1 so no TTS, no commit — the orchestrator handles that after batch TTS.
+
+---
+
+**Episode written: Biomedical Agentic AI — 2026-07-08**
+
+**Candidate funnel:**
+
+**bioRxiv** (2026-07-07/2026-07-08, all 239 papers scanned via paginated API):
+- 16 keyword hits; 15 were spurious ("agent" = pharmacological/biological agent, "llm" inside unrelated words, "foundation model" for non-AI papers, "ontology" for gene-regulatory networks)
+- 1 genuine hit: ORBIT (annotation-aware enrichment using ontology) — relevant to Andrew but not agentic AI
+
+**arXiv** (shared daily cache, 500 entries, filtered for biomedical + AI keywords):
+- 26 biomedical+AI hits after spurious-match removal
+- Substantive shortlist:
+  - **[CHOSEN]** "Compressing the Validation Bottleneck: An Agentic Self-Driving Lab for Scientific Discovery" — https://arxiv.org/abs/2607.04508 (ICML 2026 AI for Science Workshop; biology + materials science; prior-aware DOE loop + cost-aware surrogate agent)
+  - "Prompt-to-Paper: Agentic AI System for Bioinformatics" — https://arxiv.org/abs/2607.05456 (agentic bioinformatics paper generation with real experiment execution; dropped — paper-writing angle less fundamental)
+  - "FirstResearch: Auditable Question Formation for LLM Scientific Discovery Agents" — https://arxiv.org/abs/2607.05682 (auditable research question certificates; dropped — narrower contribution, single author)
+  - "Rethinking Scientific Discovery in the Agentic Era (SCION)" — https://arxiv.org/abs/2607.03863v2 (multi-agent scientific OS; dropped — v1 from July 4, more overview than primary research)
+  - "Finding H. pylori in the Fine Print: Evidence-Linked Multi-Agent Case Finding from Gastric Biopsy Reports" — https://arxiv.org/abs/2607.06435v1 (clinical NLP multi-agent; too narrow)
+  - "The Large Cancer Assistant (LCA)" — https://arxiv.org/abs/2607.06531v1 (clinical decision support orchestration; dropped — not specifically agentic science discovery)
+
+**PubMed** (last 5 days, 832 total, 8 from narrow agentic filter):
+- "EmulatRx — Empowering clinical trial design with agentic intelligence and real-world data" (Nature Communications, 2026-07-07, PMID 42414290) — strong candidate but Nature paywall, no PMC, no preprint; dropped per PIPELINE.md full-text rule
+- "From Executor to Orchestrator: The Pharmacology Scientist in the Age of Agentic AI" (Clin Pharmacol Ther, 2026-07-07) — review paper, not primary research
+- Other PubMed hits were clinical implementation papers or protocol studies, not primary agentic AI research
+
+**Policy/press** (ARPA-H, NIH checked): no relevant announcements in the July 7-8 window
+
+**Files written:**
+- `podcasts/biomedical-agentic-ai/scripts/2026-07-08-agentic-sdl-validation-bottleneck.md`
+- `podcasts/biomedical-agentic-ai/scripts/2026-07-08-agentic-sdl-validation-bottleneck.rss-item.xml`
+- `podcasts/biomedical-agentic-ai/scripts/2026-07-08-agentic-sdl-validation-bottleneck.commit-msg`
+=== 2026-07-08T02:20:18-07:00 done  biomedical-agentic-ai (exit 0) (retry 2, --model claude-sonnet-4-6) ===
