@@ -2017,3 +2017,39 @@ Final summary for cron.log audit:
 - Sanofi Nexviazyme Baby-COMET Phase 3 infantile-onset Pompe — data drop Jul 8, held for tomorrow
 - BMS Krazati/Erbitux JAMA — did not make final cut
 === 2026-07-07T02:39:05-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-08T02:20:09-07:00 start calibr-briefing ===
+Both RSS stubs parse as valid XML. All six files are in place.
+
+Final summary. Under SKIP_TTS mode, I skip TTS/publish/feed edits/commit per PIPELINE.md — the orchestrator handles those after batch TTS.
+
+**Candidate funnel (July 8, 2026):**
+
+Sources scanned:
+- STAT News, Endpoints News, Fierce Biotech, Fierce Pharma, BioPharma Dive — all reachable
+- Fierce Pharma home returned HTTP 403; substituted with Fierce Biotech
+- Detail searches for each shortlisted item
+
+Substantive shortlist (Jul 7–8, 2026):
+- Vera Therapeutics TRUTAKNA (atacicept-vymj) FDA accelerated approval for IgAN — first-in-class BAFF+APRIL dual inhibitor **[SPOTLIGHT + headline #1]**
+- Kailera oral GLP-1 HRS-7535 Ph3 China wins (HARBOR-1 + OUTSTAND-2) **[headline #2]**
+- MeiraGTx $400M Oberland non-dilutive royalty deal for eye gene therapies **[headline #3]**
+- Compass Pathways COMP360 psilocybin Ph3 COMP006 26-wk durability data **[headline #4]**
+- Kalohexis (Endevica spinout) confidential IPO on MC3R/MC4R non-GLP-1 obesity **[headline #5]**
+- Boehringer Ingelheim licenses PVT Orf virus platform for cancer vaccines — dropped (crowded slate)
+- Ipsen–Memo Therapeutics BKPyV antibody deal — dropped (July 1, too old)
+- AstraZeneca "$2.1B COPD" reference — dropped (couldn't verify)
+
+Written:
+- `scripts/2026-07-08-pharma-headlines.txt` (~5 min headlines)
+- `scripts/2026-07-08-vera-trutakna-igan-spotlight.txt` (~7 min spotlight)
+- `scripts/2026-07-08-pharma-headlines.rss-item.xml` (+`.commit-msg`)
+- `scripts/2026-07-08-vera-trutakna-igan-spotlight.rss-item.xml` (+`.commit-msg`)
+
+Sources:
+- [Vera Therapeutics TRUTAKNA press release (July 7)](https://www.globenewswire.com/news-release/2026/07/07/3323532/0/en/vera-therapeutics-receives-fda-accelerated-approval-for-trutakna-for-adult-patients-with-primary-iga-nephropathy.html)
+- [Kailera/Hengrui HRS-7535 Ph3 topline (July 7)](https://www.globenewswire.com/news-release/2026/07/07/3323036/0/en/kailera-therapeutics-announces-positive-topline-data-from-two-hengrui-pharma-phase-3-clinical-trials-of-oral-small-molecule-glp-1-receptor-agonist-hrs-7535-kai-7535.html)
+- [MeiraGTx–Oberland $400M deal (July 7)](https://www.globenewswire.com/news-release/2026/07/07/3323060/0/en/MeiraGTx-Announces-400-million-Strategic-Investment-by-Oberland-Capital-to-Support-Development-and-Commercialization-of-AAV2-hAQP1-and-Botaretigene-Sparoparvovec-bota-vec.html)
+- [Compass COMP006 26-wk durability (July 7)](https://ir.compasspathways.com/News--Events-/news/news-details/2026/Compass-Pathways-Announces-Six-Month-Data-from-Second-Phase-3-Trial-Confirming-Rapid-and-Durable-Profile/default.aspx)
+- [Kalohexis confidential IPO filing (July 7)](https://pharmaphorum.com/news/obesity-biotech-kalohexis-files-confidential-ipo)
+- [Endpoints News H2 M&A extension](https://endpoints.news/novartis-vertex-and-ipsen-extend-pharma-ma-spree-from-2026s-first-half/)
+=== 2026-07-08T02:31:34-07:00 done  calibr-briefing (exit 0) ===
