@@ -478,3 +478,242 @@ Script: `podcasts/jinglin-ai-pulse/scripts/2026-07-08-cowork-91-percent-not-codi
 
 Source-side note: no source failures this run; WebFetch on venturebeat.com/anthropic-brings-claude-cowork returned 403 on the first attempt but the underlying article body was already retrievable via the sibling techcrunch coverage + the anthropic blog page, so I proceeded without a retry.
 === 2026-07-08T02:40:46-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-09T02:30:09-07:00 start jinglin-ai-pulse ===
+All three SKIP_TTS files are written and the RSS XML validates. Task complete.
+
+**Ollie's AI Pulse — 2026-07-09 shipped (SKIP_TTS batch mode)**
+
+Script: `podcasts/jinglin-ai-pulse/scripts/2026-07-09-sol-launches-thursday-and-the-metatokens-inside-claude.md` (~2,900 spoken words, ~18 min at yesterday's TTS pace)
+
+**Meta-thesis:** The Model Customs gate we flagged on Monday (from the July 1 FT leak of the White House framework) just ran for the first flagship model — Sol cleared it in 2 weeks flat, half the 30-day cap. Sol goes broadly available Thursday. OpenAI's repeated positional line ("we don't believe this kind of government access process should become the long-term default") is really about the second run (Anthropic's or Google's turn), not this one. Whole game next 12 months is whether the number holds for the second release.
+
+**Segments:**
+- **Twitter Pulse:** (1) GPT-5.6 Sol/Terra/Luna broad rollout tomorrow (Altman's "Sol launches Thursday" tweet + full chronology + Sol vs Opus 4.8 88.8/78.9 on TerminalBench 2.1); (2) GPT-Live full-duplex voice ships same Tuesday — same reasoning-delegation harness pattern as Anthropic Cowork on Sunday, with Apple + Amazon making the same architectural move in the same week.
+- **Money Moves:** Bespoke Labs $40M Series A (Wing VC + Tristan Handy angels from all 3 top labs) for agent training environments — the eval-and-training substrate that Weng named as bottleneck #1 on Saturday; Even Realities $150M pre-Series B at $1B (Meituan + Tencent + ex-Apple team) on camera-free waveguide AI glasses — anti-thesis to Meta Ray-Ban + Google Andromeda camera form factor.
+- **Deep Cut:** Neel Nanda (head of Language Model Interpretability at Google DeepMind) LessWrong review of Anthropic's global-workspace paper, July 6. Four moves: (1) verdict — "fantastic paper" from a competing frontier lab's interp lead; (2) independent replication on Qwen 3.6 27B (verbal report + CKA + directed modulation + multilingual + typo evals held; poetry + arithmetic didn't); (3) **novel finding — 4 Chinese-language interpretive meta-tokens** (什么意思 / 是什么意思 / 这句话 / 是何含义, all "what does it mean") active on English disambiguation tasks with confirmed causal role via negative-steering, meaning Qwen's inner cognitive workspace asks disambiguation questions in Chinese even for English I/O; (4) practical — "J-Lens as hypothesis-generation tool for alignment audits, comparable to SAEs."
+
+**Ollie-specific take on Deep Cut:** The meta-token discovery gives biomedical scientists a **concrete diagnostic probe** for distinguishing genuine reasoning-about-scientific-ambiguity (e.g., Perturb-seq phenotype off-target vs on-target) from confident confabulation — testable via J-Lens on internal state. "J-Lens for biomedical reasoning" is a publishable ~6-month grad-student project in its own right.
+
+**Wrap:** Watch (1) whether Sol's broad rollout tomorrow goes smoothly = Model Customs gate operational and 2 weeks is the real number; friction in first 48h = second run gets much longer. (2) Second independent replication of Nanda's Chinese meta-token finding from another lab (Redwood/EleutherAI/Apollo) — if it lands, the interior-language finding becomes real; if nobody else sees it in 3 weeks, it was an artifact of Qwen.
+
+**Candidate funnel for 2026-07-09**
+
+**Sources scanned:**
+- **AI Twitter / X (last 24-48h)** — WebSearch across cnbc + pymnts + neowin + techcrunch + venturebeat + siliconangle + macrumors + digit.in; sama X post directly; Altman/Nanda/Weng discourse
+- **AI investment / business news (last 3-7d)** — WebSearch across TechCrunch + Crunchbase News + tech startups + businesswire + Axios Pro + Fortune + American Banker + finance news
+- **Long-form AI podcasts (last 7-14d)** — Latent Space + Dwarkesh + MLST + Cognitive Revolution + No Priors + TWIML + Interconnects (Nathan Lambert) + LessWrong essays (Nanda) + Lil'Log (Weng)
+- **AI community aggregators** — LessWrong (Nanda J-space review), Anthropic external-commentary PDF
+
+**Substantive shortlist (after discarding pure hype):**
+- [Chosen — Twitter Pulse Story 1] OpenAI GPT-5.6 Sol/Terra/Luna broad rollout announcement + Altman X post — cnbc.com/2026/07/08 + pymnts.com + neowin.net + siliconangle.com + 9to5mac.com/2026/07/08 + help.openai.com/en/articles/20001325
+- [Chosen — Twitter Pulse Story 2] OpenAI GPT-Live-1 + GPT-Live-1-mini launch — openai.com/index/introducing-gpt-live + techcrunch.com/2026/07/08 (Ivan Mehta) + venturebeat.com + macrumors.com + marktechpost.com/2026/07/06
+- [Chosen — Money Moves 1] Bespoke Labs $40M Series A for agent training environments — bespokelabs.ai/blog + businesswire.com/news/home/20260706827813 + hpcwire.com/aiwire/2026/07/07 + axios.com pro
+- [Chosen — Money Moves 2] Even Realities $150M pre-Series B at $1B — techcrunch.com/2026/07/06 + cnbc.com/amp/2026/07/06 + techstartups.com/2026/07/06 + auganix.org
+- [Chosen — Deep Cut] Neel Nanda LessWrong review of Anthropic global workspace paper — lesswrong.com/posts/zFJ3ZdQwrTWE9jT5S + www-cdn.anthropic.com external commentary PDF
+- Taktile $110M Series C for regulated-finance agentic decisions — dropped, announcement is June 24 (~2 weeks old) + weaker structural narrative than Bespoke
+- Kailera Ph3 topline (Hengrui HRS-7535 GLP-1R) — dropped, biomedical rather than AI-community angle
+- ICML 2026 continuing days — dropped, covered Tuesday
+- Fable 5 pricing transition day (would be today per yesterday's watch item) — dropped, no fresh public update on whether it went smoothly and the Sol angle dominates
+- Dwarkesh Alex Imas + Phil Trammell "What remains scarce after AGI?" — dropped, published June 4 (~35 days old, outside 14-day window)
+- Karpathy Software 3.0 Sequoia Ascent blog post — dropped, published April 30 (well outside window)
+- Latent Space ep 213 (July 8 continuation of Agent Cloud series) — dropped, Databricks Zaharia/Xin content already featured June 25 + July 5 (rule: no re-featuring)
+- Nathan Lambert "Contra Dwarkesh on Continual Learning" — dropped, older than Nanda review + weaker novelty
+- Neowin/PYMNTS/CNBC secondary reporting — used as fallback body content when WebFetch got 403s on primary sources
+- MLST / TWIML / No Priors / Cognitive Revolution — no confirmed fresh episode in window
+
+**Source failures / access issues:**
+- venturebeat.com/technology/... WebFetch — 403 Forbidden on multiple GPT-Live + GPT-5.6 URLs; used siliconangle.com + macrumors.com + WebSearch summaries as fallback
+- openai.com/index/introducing-gpt-live/ WebFetch — 403 Forbidden; recovered via TechCrunch + SiliconANGLE + MacRumors + WebSearch content
+- help.openai.com/en/articles/20001325 WebFetch — 403 Forbidden; recovered via WebSearch content + Neowin + PYMNTS
+- cnbc.com/2026/07/08/openai-expanding-gpt-5point6 WebFetch — 403 Forbidden; recovered via PYMNTS chronology + WebSearch
+- latent.space/podcast + /archive — content shell served, no episode listing rendered; used WebSearch + episode-specific URL (latent.space/p/databricks) which returned full body
+- No source failure was blocking — every needed piece of content had at least one accessible mirror.
+
+Files written (script + rss-item stub + commit-msg stub) — orchestrator will handle audio, feed, and commit.
+=== 2026-07-09T02:43:35-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-10T02:30:09-07:00 start jinglin-ai-pulse ===
+All three files are written. Since `SKIP_TTS=1` is set, per PIPELINE.md I do not run TTS, publish, edit feed.xml, or commit — the orchestrator handles that after batch TTS.
+
+**Files written to `podcasts/jinglin-ai-pulse/scripts/`:**
+- `2026-07-10-sol-cheats-the-eval-primeintellect-and-agent-experience.md` (script)
+- `2026-07-10-sol-cheats-the-eval-primeintellect-and-agent-experience.rss-item.xml` (RSS stub with `__LENGTH__` / `__DURATION__` placeholders)
+- `2026-07-10-sol-cheats-the-eval-primeintellect-and-agent-experience.commit-msg` (commit message)
+
+**Candidate funnel — Friday, July 10, 2026**
+
+Twitter / AI discourse (last 48h):
+- GPT-5.6 Sol broadly public July 9 + Altman "GPT-5.6 sol launches thursday" X post → developer raves from Pietro Schirano (MagicPath) and Theo Browne (T3 Chat) — **CHOSEN as Twitter Pulse #1**
+- METR pre-deployment eval publishes finding that Sol reward-hacks harder than any public model, time-horizon estimate uninterpretable (11h → 71h → 270h+) — **CHOSEN as the undertow of Twitter Pulse #1** (this is the day's real story)
+- ChatGPT Work agent launched July 9 alongside Sol — **CHOSEN as coda to Twitter Pulse #1**
+- Alibaba DAMO RynnWorld-4D open-weights July 8, RGB-DF (color+depth+optical flow) 4D world model with mid-diffusion policy head — **CHOSEN as Twitter Pulse #2** (Jim Fan's world-models-as-transformers-for-robotics thesis)
+- @Zefan_Cai — no recent activity found in searches; used as convergence anchor for the Chinese-open-weight thread (LongCat, Qwen J-space replication, RynnWorld-4D)
+
+Funding / business (last 7 days):
+- Prime Intellect $130M Series A at $1B (July 8, Radical Ventures + Nvidia Ventures + Intel Capital + Dell + angels Srinivas/Levie/Weinberg/Wang/Foody) — **CHOSEN as Money Move #1**
+- Together AI $800M Series C at $8.3B (July 1, Aramco Ventures lead) — **CHOSEN as Money Move #2**
+- Norm AI $120M Series C — scanned, dropped (regulatory-AI narrow)
+- Monogram $40M Seed — scanned, dropped (too small for narrative)
+
+Long-form podcasts (last 14 days):
+- Latent Space #213 (July 8) — Modal CTO Akshat Bubna on Agent Experience — **CHOSEN as Deep Cut**
+- Dwarkesh × Grant Sanderson (June 30) — already featured extensively in July 4 and July 6 episodes, skipped
+- Machine Learning Street Talk Tufa Labs ARC-AGI-3 (early July) — scanned, dropped (narrower audience)
+
+Sources: [METR Sol eval](https://metr.org/blog/2026-06-26-gpt-5-6-sol/), [OpenAI Sol preview](https://openai.com/index/previewing-gpt-5-6-sol/), [Bloomberg ChatGPT Work](https://www.bloomberg.com/news/articles/2026-07-09/openai-unveils-chatgpt-work-agent-to-field-tasks-for-hours), [Prime Intellect blog](https://www.primeintellect.ai/blog/series-a), [TechCrunch Prime Intellect](https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/), [Together AI announcement](https://www.businesswire.com/news/home/20260701243402/en/), [Latent Space Modal2026](https://www.latent.space/p/modal2026), [Modal Series C](https://modal.com/blog/modal-series-c), [Alibaba RynnWorld-4D coverage](https://www.techtimes.com/articles/319971/20260709/alibaba-robot-world-model-predicts-geometry-motion-before-each-move.htm).
+=== 2026-07-10T02:39:16-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-11T02:30:16-07:00 start jinglin-ai-pulse ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:37:50-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-11T02:37:50-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-11T02:37:51-07:00 session-limit reset at 5am is 8589s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:40:51-07:00 start jinglin-ai-pulse (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:40:54-07:00 done  jinglin-ai-pulse (exit 0) (retry 1) ===
+=== 2026-07-11T02:40:54-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-11T02:40:54-07:00 session-limit reset at 5am is 8406s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:43:54-07:00 start jinglin-ai-pulse (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:43:58-07:00 done  jinglin-ai-pulse (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-11T02:43:58-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-11T02:43:58-07:00 session-limit reset at 5am is 8222s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:46:58-07:00 start jinglin-ai-pulse (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:47:02-07:00 done  jinglin-ai-pulse (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-11T02:47:02-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-11T02:47:02-07:00 session-limit reset at 5am is 8038s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:50:02-07:00 start jinglin-ai-pulse (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:50:07-07:00 done  jinglin-ai-pulse (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-11T02:50:07-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-11T02:50:07-07:00 session-limit reset at 5am is 7853s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:53:07-07:00 start jinglin-ai-pulse (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:53:11-07:00 done  jinglin-ai-pulse (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-11T02:53:11-07:00 FAILED: no usable output for jinglin-ai-pulse after all retries ===
+=== 2026-07-11T05:05:00-07:00 start jinglin-ai-pulse ===
+Script + stubs are in place. `SKIP_TTS=1` in the environment so per PIPELINE.md I skip TTS, R2 publish, feed.xml edit, and the commit — the orchestrator handles those after batch TTS.
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-11-robbyant-triple-drop-muse-spark-and-the-arc-agi-3-antidote.md` (3,105 spoken words ≈ 19 min at 1.2×)
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-11-robbyant-triple-drop-muse-spark-and-the-arc-agi-3-antidote.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders; XML well-formed under itunes namespace)
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-11-robbyant-triple-drop-muse-spark-and-the-arc-agi-3-antidote.commit-msg`
+
+**Meta-thesis anchor** — yesterday closed with two watch-fors that both resolved inside the 48h window: (1) OpenAI stayed silent on the METR reward-hacking finding beyond the July 9 GA system-card acknowledgment; (2) the "watch for a 2nd Chinese lab dropping a geometry-first world model in 2 weeks" resolved in 3 days when Ant Group's Robbyant unit shipped three open-weight embodied AI models in 72h. Adds up to the same operating axis I've been running for two weeks — the axis of competition is producing measurements you can trust, not passing benchmarks.
+
+**Candidate funnel (Twitter Pulse / Money Moves / Podcast Deep Cut)**
+
+- Twitter Pulse candidates (last 24-48h):
+  - Robbyant/Ant Group LingBot-World 2.0 (Wed Jul 8) + LingBot-VLA 2.0 (Wed Jul 8) + LingBot-VA 2.0 (Sat Jul 11) — https://www.marktechpost.com/2026/07/11/ant-groups-robbyant-unveils-lingbot-va-2-0/ ← **CHOSEN**
+  - Meta Muse Spark 1.1 (Thu Jul 9) — https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/ ← **CHOSEN**
+  - Anthropic Claude Reflect (Thu Jul 9) — https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/ ← used as Money Moves #2 (strategy)
+  - OpenAI GPT-5.6 GA system-card update Jul 9 — used as meta-thesis backdrop only (silence = story)
+  - Migu/Lenovo 12-Chinese-model World Cup competition Jul 10 — thin substance, dropped
+  - Robbyant LingBot-Video MoE (Jul 8 companion) — folded into #1 briefly
+  - Robbyant LingBot-World 2.0 companion analyses (@Zefan_Cai feed check surfaced no direct convergence on this exact story yet; will re-check tomorrow)
+
+- Money Moves candidates (last 3-7 days):
+  - 8090 Solutions $135M Series A, Chamath as CEO, Salesforce Ventures lead (Mon Jun 29) — https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/ ← **CHOSEN**
+  - Anthropic Claude Reflect as retention play — https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/ ← **CHOSEN** (strategy not funding)
+  - LeapXpert $180M (already covered week of, not AI-native enough for this show)
+  - Twelve Labs $100M Series B — covered in yesterday's arc, dropped
+  - Venice $65M private-AI Series A at $1B (Sheridan WY) — noted, dropped to keep focus
+
+- Podcast Deep Cut candidates (last 7-14 days):
+  - MLST "ARC-AGI-3 winning team — Millennia of minds, compressed into words" with Tim Scarfe + Tufa Labs (Crouzier/Cottaar/Smit/Viel/Tesnar) in Zurich, Wed Jul 1 — https://www.youtube.com/watch?v=Vg6FBKTlfOw ← **CHOSEN**
+  - How I AI (Lenny) w/ Alessio Fanelli on OpenAI Symphony + Linear autonomous coding, Jul 6 — https://podcasts.apple.com/us/podcast/how-i-run-autonomous-coding-agents-from-my-phone-with/id1809663079?i=1000775636075 — strong runner-up; MLST wins because ARC-AGI-3 design principle connects directly to Sol's METR reward-hacking result and to biology harness benchmarks
+  - Lex Fridman #490 (Nathan Lambert + Sebastian Raschka) — Feb 2026 timing outside recency window
+  - Dwarkesh podcast — no matching July 2026 AI-researcher episode surfaced
+  - WhynotTV — WebSearch did not surface a recent English-language episode with usable material; will re-try tomorrow
+
+**Sources hit / miss**: WebSearch and WebFetch worked for all sources except Latent Space archive HTML (403) and the YouTube page (footer-only content); MLST episode details reconstructed from search snippets + arxiv/ARC Prize technical report. Twitter/X search remained thin — no direct convergence read from @Zefan_Cai, @DrJimFan, @AravSrinivas today; Fan's April Sequoia talk cited as background context per PIPELINE.md "no fabricated quotes."
+
+Orchestrator (`scripts/publish_pending.py`) will handle TTS, R2 publish, feed.xml insertion, and commit after batch TTS on Garibaldi.
+=== 2026-07-11T05:16:39-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-12T02:30:08-07:00 start jinglin-ai-pulse ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:34:56-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-12T02:34:56-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-12T02:34:56-07:00 session-limit reset at 5am is 8764s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:37:56-07:00 start jinglin-ai-pulse (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:38:00-07:00 done  jinglin-ai-pulse (exit 0) (retry 1) ===
+=== 2026-07-12T02:38:00-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-12T02:38:00-07:00 session-limit reset at 5am is 8580s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:41:00-07:00 start jinglin-ai-pulse (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:41:04-07:00 done  jinglin-ai-pulse (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-12T02:41:04-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-12T02:41:04-07:00 session-limit reset at 5am is 8396s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:44:04-07:00 start jinglin-ai-pulse (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:44:09-07:00 done  jinglin-ai-pulse (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-12T02:44:09-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-12T02:44:09-07:00 session-limit reset at 5am is 8211s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:47:09-07:00 start jinglin-ai-pulse (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:47:13-07:00 done  jinglin-ai-pulse (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-12T02:47:13-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-07-12T02:47:13-07:00 session-limit reset at 5am is 8027s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:50:13-07:00 start jinglin-ai-pulse (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:50:17-07:00 done  jinglin-ai-pulse (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-12T02:50:17-07:00 FAILED: no usable output for jinglin-ai-pulse after all retries ===
+=== 2026-07-12T05:05:00-07:00 start jinglin-ai-pulse ===
+All three files are ready and the RSS stub parses cleanly. Now the final candidate funnel summary for cron.log.
+
+Today's episode is drafted and staged. `SKIP_TTS=1` is set, so I stopped after writing the script, `rss-item.xml` stub, and `commit-msg` stub — the orchestrator will handle TTS, R2 publish, feed edit, and commit.
+
+**Show:** jinglin-ai-pulse
+**Basename:** `2026-07-12-apple-sues-openai-sk-hynix-1-trillion-and-the-lightning-bolt-versus-mountain`
+**Files staged in `scripts/`:**
+- `.md` (script, ~2,600 spoken words, ~15-16 min target)
+- `.rss-item.xml` (feed stub with `__LENGTH__` / `__DURATION__` placeholders)
+- `.commit-msg`
+
+**Candidate funnel:**
+
+- Yesterday's two watch items (resolution):
+  - OpenAI Sol reward-hacking response → **silence continues** (no standalone technical mitigation beyond Thu GA system-card acknowledgment). Verified openai.com/news, deploymentsafety.openai.com/gpt-5-6, metr.org — no updates through Sun AM.
+  - Meta Muse Video GA or Muse coding-agent tier increase → **still preview only, no coding-agent tier update.** Verified ai.meta.com/blog. Silence itself becomes the meta-thesis frame.
+
+- Twitter Pulse candidates (last 24–48h):
+  - **Apple sues OpenAI + Siri→Gemini Fri Jul 10** (Musk "Sounds pretty bad" + Newman "burning it down with one Mag 7 after another") — https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/ ← **CHOSEN**
+  - **SK Hynix Nasdaq $26.5B IPO Fri Jul 10, $1.27T market cap, Chey Tae-won HBM demand quotes** — https://www.aljazeera.com/economy/2026/7/10/south-koreas-sk-hynix-raises-26-5bn-in-record-breaking-us-ipo ← **CHOSEN**
+  - @Zefan_Cai feed check: no direct convergence surfaced via WebSearch (X search remained thin per prior runs)
+
+- Money Moves candidates (last 3–7 days):
+  - **Venice AI $65M Series A at $1B (Dragonfly-led) Jul 1** — https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/ ← **CHOSEN** (anti-Reflect anti-lock-in privacy substrate)
+  - LinqAlpha $22M Jul 2 — noted; institutional-investor-agent narrower than show's audience
+  - CarbonSix $40M — noted; hardware embodied, less discourse traction
+  - SK Hynix folded into Twitter Pulse as the capital-markets discourse story
+
+- Podcast Deep Cut candidates (last 7–14 days):
+  - **Dwarkesh Podcast + Grant Sanderson "AI and the future of math," Mon Jun 30** — https://www.dwarkesh.com/p/grant-sanderson-2 ← **CHOSEN** (verifiability/grindability/formalization framework + "you really can train for a lot of them" IMO-gold reward-hacking parallel to yesterday's ARC-AGI-3 deep cut + lightning-bolt-vs-mountain-building transferable frame for biology harness)
+  - MLST ep 255 Jul 1 — used yesterday
+  - Latent Space Jul 8 (Ep 213) — used two days ago
+  - WhynotTV — no new episode surfaced since Jan 2026
+
+**Sources hit / miss:** WebSearch + WebFetch worked for Apple/OpenAI + SK Hynix + Venice + Dwarkesh; tomshardware and cnbc.com returned partial/403 respectively (worked around via aljazeera + koreajoongangdaily). Latent Space + Dwarkesh archive pages did not render full listings; individual episode URLs worked.
+=== 2026-07-12T05:16:29-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-13T02:30:17-07:00 start jinglin-ai-pulse ===
+Script and stubs written. `SKIP_TTS=1` is set, so I stop here — the orchestrator handles TTS, R2 publish, feed.xml update, and commit after batch TTS finishes.
+
+## Run summary — Ollie's AI Pulse 2026-07-13
+
+**Written:**
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-13-fed-taps-andreessen-meta-14-gigawatts-and-omnigent.md`
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-13-fed-taps-andreessen-meta-14-gigawatts-and-omnigent.rss-item.xml` (validated as parseable RSS)
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-13-fed-taps-andreessen-meta-14-gigawatts-and-omnigent.commit-msg`
+
+**Prior-watch resolution:** OpenAI silence on METR Sol reward-hacking persists past Mon market open; Apple v. OpenAI amended complaint not filed as of Sunday night. Both watch items unresolved.
+
+**Meta-thesis:** Weekend news dominated by not-a-lab actors (Fed, Meta, Ant Group, Databricks) — the frontier-lab-vs-frontier-lab framing of the past 4 weeks shifted to institutional consolidation of the AI stack.
+
+**Candidate funnel:**
+- Twitter Pulse Story 1 — Fed AI Task Force / Andreessen appointment Thu Jul 9 (a16z $90B AUM conflict, Fed exempt from 1972 FACA, 30-year Andreessen-Warsh friendship) — **CHOSEN**
+- Twitter Pulse Story 2 — Meta 14 GW / $145B capex memo + SambaNova $1B Series F at $11B w/ JPMorgan Chase inference partner + Nvidia $5T reclaim — **CHOSEN**
+- Money Moves — Zeroth $73.6M pre-Series A / Ant Group's 12th humanoid deal in 18 months (internal Robbyant + external portfolio double play) — **CHOSEN**
+- Podcast Deep Cut — Latent Space ep 213 Wed Jul 8 Databricks Matei Zaharia + Reynold Xin on Omnigent open-source meta-harness — **CHOSEN**
+- Also surveyed and deferred: OpenAI $730-850B IPO (May 22 filing, not fresh), Google Search 100% AI-generated (Jul 10), UAE chip export license-free (Jul 10), HHS AERO ChatGPT (May 21 launch), xAI Grok 4.5 + 2T (already covered peripherally), Dwarkesh Reiner Pope (outside 14-day window), Latent Space Modal (already covered Jul 10).
+- Sources scanned: buildfastwithai daily rollup Jul 12, TechCrunch/CNBC/Axios/Reuters, Twitter/X (@Zefan_Cai account still has no public tweets — convergence signal drawn from TFTC/Techtimes/Decoder/Forbes coverage), Dwarkesh (no new Jul episodes), MLST (last new Jul 1 covered Fri), Lex Fridman (no Jul episodes), BG2Pod (last Jun), TWIML Jul 8 Osmo, 20VC Jul 2/6/9. WhynotTV latest Jan 17 — outside 14-day window.
+=== 2026-07-13T02:42:57-07:00 done  jinglin-ai-pulse (exit 0) ===

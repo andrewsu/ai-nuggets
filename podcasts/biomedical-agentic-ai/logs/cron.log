@@ -2337,3 +2337,135 @@ All checks pass: 860 words (under 1150), XML valid, arXiv URL live (HTTP 200). S
 - `podcasts/biomedical-agentic-ai/scripts/2026-07-08-agentic-sdl-validation-bottleneck.rss-item.xml`
 - `podcasts/biomedical-agentic-ai/scripts/2026-07-08-agentic-sdl-validation-bottleneck.commit-msg`
 === 2026-07-08T02:20:18-07:00 done  biomedical-agentic-ai (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-09T02:00:09-07:00 start biomedical-agentic-ai ===
+All three files are in place and the paper URL resolves. Since `SKIP_TTS=1`, per PIPELINE.md I skip TTS/publish/feed edit/commit — the orchestrator will handle those.
+
+## Candidate funnel (2026-07-09)
+
+**bioRxiv (2026-07-08 → 2026-07-09):** 481 items scanned across 5 paginated calls; broad-keyword filter yielded 12 hits, of which most were spurious ("agent" = chemical/pharmacologic agent, "benchmark" not AI-related). Substantive shortlist:
+- FEATMAP — Foundation-model embedding correction for medical AI — https://www.biorxiv.org/content/10.64898/2026.07.02.736184v1
+
+**arXiv (cache /tmp/ai-nuggets-arxiv-cache.xml, 500 entries, 2026-07-07 to 2026-07-08):** 87 biomedical + AI keyword hits after filtering. Substantive shortlist after discarding infra/non-bio agentic work:
+- **SpaCellAgent** — multi-agent LLM for single-cell/spatial trajectory inference (arXiv 2607.07467) — **CHOSEN**
+- Ensemble QSP — hierarchical memory for long-horizon PBPK modelling (arXiv 2607.07666, q-bio.QM)
+- Finding H. pylori in the Fine Print — multi-agent gastric-biopsy extraction (arXiv 2607.06435)
+- BioASQ 14b agent pipeline — answer-type-aware biomedical QA (arXiv 2607.06452)
+- Harrison.Rad 1.5 — radiology foundation model (arXiv 2607.05880)
+- Healthier LLMs — RAG for public-health QA (arXiv 2607.06641)
+- Multi-Analyst LLM Pipeline for 68 physiological corpora (arXiv 2607.06802)
+
+**PubMed:** skipped this cycle (arXiv + bioRxiv yielded a clearly dominant computational-biology-native pick).
+
+**News / policy feeds:** no fresh biomedical agentic-AI program launch surfaced in the last 24h that beats SpaCellAgent.
+
+**Chosen:** SpaCellAgent (arXiv 2607.07467, KDD 2026). It sits directly in Andrew's wheelhouse (single-cell / spatial computational biology + agentic AI), and the biological-evaluator loop — LLM reasoning on generated output for biological plausibility, not just code correctness — is the piece that differentiates it from prior LLM-driven single-cell agents (CellAgent 2024, PyEvoCell 2025, OmniCellAgent covered 2026-06-03). Full text read via r.jina.ai proxy against arxiv.org/html/2607.07467; script (860 words in spoken body, well under the 1150 cap) + `.rss-item.xml` stub with `__LENGTH__` / `__DURATION__` placeholders + `.commit-msg` stub written to `podcasts/biomedical-agentic-ai/scripts/`. SKIP_TTS=1, so orchestrator (`publish_pending.py`) will TTS, upload to R2, insert into feed.xml, and commit.
+=== 2026-07-09T02:06:59-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-10T02:00:09-07:00 start biomedical-agentic-ai ===
+Under SKIP_TTS mode, I stop here — no TTS, no R2 upload, no feed edit, no commit. The orchestrator `publish_pending.py` handles all that after batch TTS finishes.
+
+Final summary for cron.log:
+
+**Published today (2026-07-10):**
+
+- Script: `podcasts/biomedical-agentic-ai/scripts/2026-07-10-agent-authored-single-cell-embeddings-from-literature.md` (928 words spoken body, under 1150 cap)
+- RSS-item stub + commit-msg stub written alongside; enclosure length + duration left as tokens for `publish_pending.py`
+- Pick: **"Coding agents author interpretable single-cell embedding models from the literature"** (bioRxiv 10.64898/2026.07.07.737048 v1, posted 2026-07-09, Binder group at Freiburg). Inverts the single-cell foundation-model paradigm: a coding agent curates literature-cited marker-gene programs into a compositional embedding via a structured Python template — no MSigDB/GO, no training, no data. Interpretability is structural (every axis is named + cited), batch-robust by construction. Cleanest instance to date of "agent as model author" in biology.
+- SKIP_TTS=1 in env; steps 2 (TTS), 3 (R2), 4 (feed), and the commit are deferred to `publish_pending.py`.
+
+**Candidate funnel:**
+
+- bioRxiv 2026-07-09 → 2026-07-10 window: 567 items scanned (all pages pulled, `curl` API OK). 29 items matched agentic/LLM/KG/ontology/foundation-model keywords after discarding spurious "agent" hits. Substantive shortlist below.
+- arXiv shared cache `/tmp/ai-nuggets-arxiv-cache.xml` (2026-07-10 02:00): 500 entries, 15 biomed+agentic hits in the 2026-07-08 → 2026-07-10 window. No arXiv rate-limit issue (used shared cache).
+- News/product/funder (WebSearch): nothing agentic-biomed dominant in the last 1–2 days beyond BIO USA / NVIDIA BioNeMo already covered.
+
+Substantive shortlist:
+
+- **[CHOSEN]** Coding agents author interpretable single-cell embedding models from the literature — bioRxiv 10.64898/2026.07.07.737048 v1 (Brunn, Binder, Freiburg)
+- Mind the Alignment Gap: A Spatial Transcriptomics Benchmark for Scientific Coding Agents — bioRxiv 10.64898/2026.07.05.736638 v1 (companion work, similar cluster; abstract-only)
+- AptCancerDB: A Curated Knowledgebase and Translational Discovery Platform for Anticancer Aptamers — bioRxiv 10.64898/2026.07.02.735999 v1 (KB, not agentic per se)
+- Ideas Have Genomes: IG-Bench for scientific lineage reasoning — arXiv 2607.08758 (interesting but not biomed-specific)
+- Ensemble QSP: hierarchical memory for long-horizon multi-agent computational modeling — arXiv 2607.07666 (QSP-adjacent, less core to the show)
+- HCC-STAR clinical-reasoning LLM for hepatocellular carcinoma — arXiv 2607.08602 (clinical, off-center from Su's agentic AI focus)
+
+Depth notes:
+
+- Chosen pick: attempted full body via `fetch_preprint.py`; jina returned the .full HTML page but body sections are not yet rendered (posted 24h ago — matches PIPELINE.md's "12–36h" warning). Reading off the dense abstract and flagged this to the listener in the script. No close runner-up on today's list that is both agentic-AI and biomedical.
+=== 2026-07-10T02:09:07-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-11T02:00:16-07:00 start biomedical-agentic-ai ===
+Episode written. Under SKIP_TTS the orchestrator will handle audio, publish, and commit.
+
+## Candidate funnel — 2026-07-11 biomedical-agentic-ai
+
+- **bioRxiv** (2026-07-10 to 2026-07-11): 359 preprints scanned across full pagination; 20 keyword hits after spurious-match filter; substantive shortlist:
+  - `CellPilot — agentic framework piloting SLMs through autonomous single-cell annotation` (bioRxiv 10.64898/2026.07.06.736807) — strong but adjacent to yesterday's single-cell-agent episode
+  - `Autonomous computational prioritisation of colorectal cancer vulnerabilities via multi-scale AI swarms` (bioRxiv 10.64898/2026.07.05.736565)
+  - `Interpretable variant effect prediction from genomic foundation model embeddings` (probing Evo 2) (bioRxiv 10.64898/2026.04.10.717844)
+  - `Tokenizing single-cell transcriptomes as a native language for LLMs` (bioRxiv 10.1101/2025.10.22.684047)
+- **arXiv** (from `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries): 7 biomedical-agentic hits ≥2026-07-09:
+  - Ideas Have Genomes — scientific lineage reasoning benchmark (2607.08758)
+  - HCC clinical-reasoning LLM for risk stratification (2607.08602)
+  - OmniFood-Bench VLM nutrient reasoning (2607.08423)
+  - DrugGen 2 disease-aware LM for drug design (2607.08404)
+  - Game-theory multi-agent hallucination mitigation (2607.08403)
+  - MentalHospital virtual psychiatric encounter environment (2607.08257)
+  - Safety-oriented hypothetico-deductive framework for AI-assisted differential diagnosis (2607.08038)
+- **PubMed** (last 5 days): 300 IDs scanned; 40 keyword hits; two standouts:
+  - **Biomni — Autonomous biomedical research with an AI agent (Science 10.1126/science.adz4351, 2026-07-09)** — CHOSEN
+  - How to benchmark medical AI agents (PLoS Med 10.1371/journal.pmed.1005170, 2026-07-09) — perspective/editorial
+- **ChemRxiv / news / funder feeds**: skipped this run — the Science publication is a clearly dominant pick and Section 5 of PROMPT.md explicitly names "Nature/Science publications" as first-rate news candidates.
+
+Full text: read Biomni via bioRxiv preprint (10.1101/2025.05.30.656746) through jina reader (Science paywall CAPTCHA blocked direct fetch); preprint and Science paper share the same core content.
+=== 2026-07-11T02:08:41-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-12T02:00:08-07:00 start biomedical-agentic-ai ===
+Today's episode for `biomedical-agentic-ai` is written. `SKIP_TTS=1` so batch TTS + publish + commit happen later via `scripts/publish_pending.py`.
+
+**Pick:** Interaction-finder (bioRxiv 10.64898/2026.07.07.736901 v1, posted 2026-07-10, Lassmann group at The Kids Research Institute Australia). MIT-licensed LLM-guided literature-mining tool that returns biological entity associations with quote-level provenance. Fits Andrew's KG/ontology/open-science interests and diversifies away from the last three episodes' single-cell-agent focus.
+
+Files written:
+- `scripts/2026-07-12-interaction-finder-quote-verified-biomedical-associations-from-literature.md` — 899 spoken-body words
+- `scripts/…-from-literature.rss-item.xml` — RSS item with `__LENGTH__` / `__DURATION__` tokens
+- `scripts/…-from-literature.commit-msg` — commit message
+
+**Candidate funnel (2026-07-10 to 2026-07-12):**
+- **bioRxiv**: 469 unique preprints scanned across pages 0–450 (30-per-page corrected pagination after an initial 100-step miss); 30 keyword-narrow hits, of which the substantive agentic/biomedical-AI shortlist was:
+  - `10.64898/2026.07.06.736807` — **CellPilot**: agentic framework piloting SLMs through single-cell annotation (fresh, body not rendered)
+  - `10.64898/2026.07.07.736795` — Safeguarding open-weight genomic foundation models through weight locking (biosecurity)
+  - `10.64898/2026.07.07.736901` — **Interaction-finder** ✓ CHOSEN
+  - `10.64898/2026.07.10.735823` — AtlasLens: metadata-centric single-cell atlas exploration
+  - `10.64898/2026.07.05.736565` — Octopus (multi-scale autonomous discovery engine for CRC, IGF2/5-FU)
+- **arXiv**: shared cache (500 entries, 2026-07-06 to 07-09); 7 stricter biomed+agent hits — SpaCellAgent (already used 07-09), DrugGen 2, G-Frame, MentalHospital, AegisDx, HCC clinical-reasoning LLM, OmniFood-Bench. None dominated Interaction-finder for the target audience.
+- **Full-text status**: Interaction-finder abstract-only (bioRxiv body not rendered at 36h); supplemented with GitHub README. CellPilot also abstract-only. Octopus fully rendered. This is disclosed in the script.
+- **Selection rationale**: Interaction-finder's quote-level provenance for biomedical entity extraction is the most direct hit on Andrew's KG-construction/open-science focus; recent episodes had trended toward single-cell/generalist agents.
+=== 2026-07-12T02:09:24-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-13T02:00:16-07:00 start biomedical-agentic-ai ===
+Script and stub files are in place for the biomedical-agentic-ai episode.
+
+**Chosen: LongMedBench — a MIMIC-IV benchmark for long-horizon medical LLM agents, and the implicit-time collapse RAG memory does not rescue** (arXiv 2607.09322, posted 2026-07-10)
+
+- Script: `podcasts/biomedical-agentic-ai/scripts/2026-07-13-longmedbench-mimic-ehr-implicit-time-collapse.md` — 929 spoken words (under the 1150 cap)
+- RSS-item stub with `__LENGTH__`/`__DURATION__` placeholders; XML validated
+- commit-msg stub
+
+`SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, feed edit, and commit — the orchestrator handles those after batch TTS.
+
+## Candidate funnel
+
+Sources scanned (2026-07-11 → 2026-07-13 recency window; arXiv weekend gap means most recent submissions are 2026-07-10):
+
+- **bioRxiv** (details API, 2026-07-12 to 2026-07-13, 2 pages, 48 papers total): 6 keyword hits after "agent/LLM/foundation model/knowledge graph/ontology" filter. Weekend-thin corpus.
+- **arXiv** (`/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries covering 2026-07-07 to 2026-07-10): 44 hits on biomedical+agentic filter after tightening ("chemical agent"/"biological agent" false positives removed). No cache entries for 2026-07-11+ because arXiv doesn't publish Sat/Sun.
+- **PubMed**: skipped after the top-of-corpus arXiv/bioRxiv shortlist saturated; no evidence a PubMed-indexed article would beat the front-runners for a Sunday episode.
+- **Policy/press**: quick check — no ARPA-H/NIH/NSF agentic-biomedical program launches in window.
+
+Shortlist (biomedical + agentic, in-window, not already covered in a shipped episode):
+
+- LongMedBench — Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making (arXiv 2607.09322, 2026-07-10) — **CHOSEN**
+- Ensemble QSP — hierarchical memory multi-agent for QSP modeling (arXiv 2607.07666, 2026-07-08) — full-text opened; niche audience, HTML view 404
+- DrugGen 2 — disease-ontology-conditioned drug generation (arXiv 2607.08404, 2026-07-09) — full-text opened; incremental over DrugGen/DrugGPT
+- OCellus — language-model framework for single-cell/spatial biology (bioRxiv 10.64898/2026.07.08.737248, 2026-07-12) — single-cell theme covered heavily in last 4 episodes
+- SAGEAgent — self-evolving agent for cost-aware modality acquisition in cancer survival prediction (arXiv 2607.09521, 2026-07-10) — narrower framing, weaker generalizable takeaway
+- ALICE — pathology foundation model (arXiv 2607.09526, 2026-07-10) — foundation model paper, not agentic
+- G-Frame — game-theory multi-agent framework for LLM hallucination in scientific domains (arXiv 2607.08403, 2026-07-09) — general LLM methods paper, thin biomedical hook
+
+Why LongMedBench beat the shortlist: it is the first benchmark that measures what clinical AI vendors pitch — long-horizon reasoning across a real longitudinal EHR — and it surfaces a clean, replicable, opinionated finding (implicit temporal reasoning collapses from tau 0.925 to 0.423, RAG memory does not rescue it). Highest editorial payload per minute of listening for Andrew's agentic-biomedical audience, and the last four episodes have leaned single-cell / literature-mining / generalist-agent, so a benchmark-and-limits piece is a good change of pace.
+=== 2026-07-13T02:08:40-07:00 done  biomedical-agentic-ai (exit 0) ===

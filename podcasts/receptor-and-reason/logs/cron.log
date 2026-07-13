@@ -2223,3 +2223,293 @@ Episode 55 of Receptor and Reason for 2026-07-07 is ready for batch TTS. Script 
 - arxiv:2607.03787 — OpenDDE open-source drug discovery engine (considered, dropped — third AI-drug-discovery item would over-index that block)
 - arxiv:2607.04557 — PREDIKTOR patient KG + gene-perturbation alignment (considered, dropped — oncology focus)
 === 2026-07-07T07:17:50-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-08T02:50:09-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 3:10am (America/Los_Angeles)
+=== 2026-07-08T02:50:13-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-08T02:50:13-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-08T02:50:13-07:00 session-limit hit; sleeping 1247s until 3:10am (+60s buffer) ===
+=== 2026-07-08T03:11:00-07:00 start receptor-and-reason (retry 1) ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CcpQuxSGCE4WFpzVaQykA
+=== 2026-07-08T03:13:35-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-07-08T03:13:35-07:00 AUP-refusal detected for receptor-and-reason; retrying in 180s ===
+=== 2026-07-08T03:16:35-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-4-6) ===
+All three files written. Here's the candidate funnel summary:
+
+---
+
+**Candidate funnel — 2026-07-08**
+
+**Sources searched:**
+- bioRxiv neuroscience category (2026-07-02 → 2026-07-08): ~90+ items scanned (3 pages × 30), ~25 relevant
+- bioRxiv pharmacology and toxicology category (2026-07-02 → 2026-07-08): 13 items, 0 CNS-relevant after filter
+- arXiv cache (/tmp/ai-nuggets-arxiv-cache.xml, 15k lines): no CNS pharmacology / computational neuro items survived the relevance filter
+- Journals (Nature NPP, Mol Psychiatry, etc.): not independently fetched — arXiv/bioRxiv yield was sufficient
+
+**Shortlist after relevance filter (non-dedup):**
+- Motor cortex TMS → RVM opioid/NMDA analgesia (Mercer Lindsay, Scherrer, Schnitzer) — **CHOSEN #1 (lead)**
+- Arc GABA→PVH CRH HPA scalability (Cao et al.) — **CHOSEN #2**
+- Dissociating volatility/stochasticity → transdiagnostic (Fang & Piray) — **CHOSEN #3**
+- HPC engrams → mPFC flexible decisions (Julian, Tank, Brody) — **CHOSEN #4**
+- IL cortex dual-ensemble (Adlakha, Kuner) — **CHOSEN #5**
+- STN social motivation familiarity/hierarchy (Vignal, Baunez) — **CHOSEN #6**
+- DOI psychedelic active vision freely-moving mice (Skyberg, Niell) — **CHOSEN #7**
+- Astrocyte pannexin-1→microglia P2Y12 purinergic shielding (Haruwaka, Wu) — **CHOSEN #8**
+- BBB shuttle 8D3 TfR cryo-EM (Liu, Miller/AZ) — **CHOSEN #9**
+- SEA-AD multiregional AD atlas (Travaglini, Gabitto, Lein) — **CHOSEN #10**
+- Glia sickness behavior adrenergic-glutamatergic axis (Sehgal lab) — dropped (abstract-only, Drosophila)
+- STN social motivation: full text fetched; confirmed
+- AD atlas: full abstract fetched via bioRxiv MCP
+
+**Fetched in full:** items 1, 2, 3, 4, 5, 6, 7, 8, 9 (all via jina-full). Item 10 abstract via MCP.
+**Dedup check:** all 10 keys absent from shipped.jsonl.
+=== 2026-07-08T03:29:07-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-09T02:50:09-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-09T02:54:45-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-09T02:54:45-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-09T02:54:45-07:00 session-limit reset at 5am is 7575s away (>3600s cap); sleeping 180s ===
+=== 2026-07-09T02:57:45-07:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-09T02:57:50-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-07-09T02:57:50-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-09T02:57:50-07:00 session-limit reset at 5am is 7390s away (>3600s cap); sleeping 180s ===
+=== 2026-07-09T03:00:50-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-09T03:00:54-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-09T03:00:54-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-09T03:00:54-07:00 session-limit reset at 5am is 7206s away (>3600s cap); sleeping 180s ===
+=== 2026-07-09T03:03:54-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-09T03:03:58-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-09T03:03:58-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-09T03:03:58-07:00 session-limit reset at 5am is 7022s away (>3600s cap); sleeping 180s ===
+=== 2026-07-09T03:06:58-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-09T03:07:02-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-09T03:07:02-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-09T03:07:02-07:00 session-limit reset at 5am is 6838s away (>3600s cap); sleeping 180s ===
+=== 2026-07-09T03:10:02-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-09T03:10:06-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-09T03:10:06-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-07-10T02:50:09-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-10T02:59:54-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-10T02:59:54-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-10T02:59:54-07:00 session-limit reset at 5am is 7266s away (>3600s cap); sleeping 180s ===
+=== 2026-07-10T03:02:54-07:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-10T03:02:58-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-07-10T03:02:58-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-10T03:02:58-07:00 session-limit reset at 5am is 7082s away (>3600s cap); sleeping 180s ===
+=== 2026-07-10T03:05:58-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-10T03:06:03-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-10T03:06:03-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-10T03:06:03-07:00 session-limit reset at 5am is 6897s away (>3600s cap); sleeping 180s ===
+=== 2026-07-10T03:09:03-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-10T03:09:07-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-10T03:09:07-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-10T03:09:07-07:00 session-limit reset at 5am is 6713s away (>3600s cap); sleeping 180s ===
+=== 2026-07-10T03:12:07-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-10T03:12:11-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-10T03:12:11-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-10T03:12:11-07:00 session-limit reset at 5am is 6529s away (>3600s cap); sleeping 180s ===
+=== 2026-07-10T03:15:11-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-10T03:15:15-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-11T02:50:16-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:50:20-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-11T02:50:20-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-11T02:50:20-07:00 session-limit reset at 5am is 7840s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:53:20-07:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:53:24-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-07-11T02:53:24-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-11T02:53:24-07:00 session-limit reset at 5am is 7656s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:56:24-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:56:28-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-11T02:56:28-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-11T02:56:28-07:00 session-limit reset at 5am is 7472s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:59:28-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:59:32-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-11T02:59:32-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-11T02:59:32-07:00 session-limit reset at 5am is 7288s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T03:02:32-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T03:02:36-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-11T03:02:36-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-11T03:02:36-07:00 session-limit reset at 5am is 7104s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T03:05:36-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T03:05:41-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-11T03:05:41-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-07-11T05:05:00-07:00 start receptor-and-reason ===
+All three artifacts written. Under `SKIP_TTS=1`, `publish_pending.py` will run TTS + R2 upload + feed insertion + commit after the batch job finishes.
+
+Episode `2026-07-11-receptor-and-reason` — 10 items, ~2560 words (~16.5 min at 155 wpm).
+
+## Candidate funnel
+
+- **bioRxiv (Tier 1)** — pulled full 7-day window via details API, 570 items across 19 detail pages; ~238 items passed the CNS/psych/pharm keyword filter after category filter (`neuroscience` + `pharmacology and toxicology`); shortlist below.
+- **arXiv (Tier 2)** — read shared daily cache `/tmp/ai-nuggets-arxiv-cache.xml` (500 entries, `cs.AI∪cs.CL∪cs.MA∪q-bio`); ~1048 items with bio/agent keyword co-occurrence; filtered to CNS/pharm-strong items; shortlist below.
+- **chemRxiv / journals / press feeds (Tier 3)** — not surveyed today; bioRxiv+arXiv yielded 10 fresh candidates comfortably above the floor, so Tier 3 wasn't needed to fill the episode.
+
+## Shortlist (10 chosen, all fresh, no shipped-set collisions)
+
+- **CHOSEN — Lead:** arXiv 2607.07753 — A Transdiagnostic Space of Disorder-Like Phenotypes in RL Agents — https://arxiv.org/abs/2607.07753
+- **CHOSEN:** bioRxiv 10.64898/2026.07.06.736738 — Cortical brain organoids reveal druggable alt-splicing program in schizophrenia (clozapine MoA)
+- **CHOSEN:** bioRxiv 10.64898/2026.07.06.736894 — Patient-derived tau-seeded human neuronal chimeras (mature AD tau pathology)
+- **CHOSEN:** bioRxiv 10.64898/2026.07.09.737293 — Human MTL neurons link future reward coding with impulsivity
+- **CHOSEN:** bioRxiv 10.64898/2026.07.05.736606 — Striatal dopamine at learned sequence boundaries sustains birdsong
+- **CHOSEN:** bioRxiv 10.64898/2026.07.04.736458 — Astrocyte MPC2 anaplerosis controls seizure resistance
+- **CHOSEN:** bioRxiv 10.64898/2026.07.06.736739 — DSP-4 noradrenergic depletion reduces hippocampal astrocyte complexity
+- **CHOSEN:** bioRxiv 10.64898/2026.01.22.701190 v2 — IGF1 tripeptide (trofinetide mechanism) rescues Rett astrocytes via IGFBP2 degradation
+- **CHOSEN:** arXiv 2607.08404 — DrugGen 2 disease-aware generative LM for drug discovery
+- **CHOSEN:** bioRxiv 10.64898/2026.07.03.736403 — ORL-1 (nociceptin receptor) modulates Cav1.2 trafficking
+
+## Notable runners-up (not chosen)
+
+- bioRxiv 10.64898/2026.07.03.736438 — Slow-oscillatory tDCS during restricted sleep + cognition — good but competes with sleep/cognition item already covered recently
+- bioRxiv 10.64898/2026.07.02.736102 — Unified computational framework for DBS — solid but methods-heavy; deferred
+- bioRxiv 10.64898/2026.07.09.737423 — Learning temporal dependencies via local synaptic plasticity — computational neuro but less pharm-relevant
+- bioRxiv 10.64898/2026.07.09.737432 — Learning wiring rules of a mammalian cortical column — connectomics
+- bioRxiv 10.64898/2026.07.02.736189 — Glia-mediated brain-wide activity in Drosophila sickness — Drosophila cost against human/mouse mammalian items
+- arXiv 2607.07077 — Hyperbolic learning on brain graphs for disorder diagnosis — good but competing with the lead RL-agents item on similar computational-psychiatry ground
+- arXiv 2607.08533 — AI-guided stimuli discovery for autism perception studies — kept in reserve
+
+## Skipped (already shipped on 2026-07-10)
+
+- bioRxiv 10.64898/2026.07.02.736158 — Nociceptin/orphanin FQ in progressive MS
+- bioRxiv 10.64898/2026.04.01.715822 v2 — Cryo-EM structures of brain-derived GPCRs
+- bioRxiv 10.64898/2026.07.02.735135 — Computational demands shape seizure susceptibility in RNNs
+
+## Full-text depth log
+
+- Full text obtained via `fetch_preprint.py` (jina proxy): tau chimeras (117k chars), birdsong dopamine (107k chars), DBS framework (used only for context), astrocyte MPC2 seizure paper, DSP-4 astrocyte, ORL-1 Cav1.2.
+- Abstract-only (bioRxiv body not yet rendered <24h): SCZ organoid clozapine paper, human MTL impulsivity paper — kept because both are dominant picks in their respective slots, with abstracts self-contained enough to write summaries that don't overreach.
+- Abstract-only via bioRxiv API (helper fell through channel 3): Rett IGF1 peptide paper — kept because trofinetide mechanism is a specific therapeutic hook worth flagging.
+- arXiv full: 2607.07753 (lead) and 2607.08404 (DrugGen 2) via arxiv abs page + jina proxy for the lead.
+
+## Under SKIP_TTS=1
+
+Wrote three artifacts to `podcasts/receptor-and-reason/scripts/`:
+- `2026-07-11-receptor-and-reason.md`
+- `2026-07-11-receptor-and-reason.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders)
+- `2026-07-11-receptor-and-reason.commit-msg`
+
+Appended today's 10-item record to `state/shipped.jsonl`. No `gen_tts.py` / `publish_episode.sh` / `feed.xml` edit / commit — those run out of `publish_pending.py` after the batch TTS job on Garibaldi completes.
+=== 2026-07-11T05:16:25-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-12T02:50:09-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:50:13-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-12T02:50:13-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-12T02:50:13-07:00 session-limit reset at 5am is 7847s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:53:13-07:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:53:17-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-07-12T02:53:17-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-12T02:53:17-07:00 session-limit reset at 5am is 7663s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:56:17-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:56:20-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-12T02:56:20-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-12T02:56:20-07:00 session-limit reset at 5am is 7480s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:59:20-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:59:25-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-12T02:59:25-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-12T02:59:25-07:00 session-limit reset at 5am is 7295s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T03:02:25-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T03:02:29-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-12T03:02:29-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-12T03:02:29-07:00 session-limit reset at 5am is 7111s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T03:05:29-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T03:05:33-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-12T03:05:33-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-07-12T05:05:00-07:00 start receptor-and-reason ===
+Script, RSS stub, commit-msg stub, and shipped-ledger update all written. Now producing the final candidate funnel for the cron.log audit trail.
+
+Episode: Receptor & Reason 2026-07-12 (Episode 59) — 10 items across neuropsychopharm, computational psychiatry, and agentic AI in pharmacology. `SKIP_TTS=1` mode: script + `.rss-item.xml` + `.commit-msg` stubs written; ledger appended; TTS/feed/commit will be handled by `publish_pending.py` after batch TTS.
+
+## Candidate funnel
+
+**bioRxiv** — pulled all daily collections for 2026-07-06 through 2026-07-12 via details API (30 items/day, 9 for today so far). Filtered to neuroscience/pharmacology/bioinformatics/systems-biology categories → 64 items, then relevance-filtered to CNS pharmacology / psychiatric drug discovery / neuropharm / psychedelics.
+
+**arXiv** — read pre-fetched daily cache `/tmp/ai-nuggets-arxiv-cache.xml` (modified 02:00 local). Filtered by 7-day recency AND (agentic/LLM/multi-agent) AND biomedical → 32 items; broader CNS/drug-discovery scan → additional candidates. Cache OK; no live-API fallback needed.
+
+Shortlist (all fresh 2026-07-05..12, not in ledger; **★** = picked):
+
+- ★ arxiv:2607.07666 — Ensemble QSP: hierarchical memory multi-agent for autonomous QSP (Tewari, Kimko)
+- ★ doi:10.64898/2026.07.09.737546 — VTA acetylcholine gates appetitive+aversive incentive motivation (Fraser lab)
+- ★ doi:10.64898/2026.07.08.737337 — Calbindin upregulation in adult V1 inhibitory neurons reopens critical period (Gandhi/Sack, UC Irvine)
+- ★ doi:10.64898/2026.06.02.729484 — Psychedelic insights uniquely intense, meaningful, ineffable — meaning as mediator of belief change
+- ★ doi:10.64898/2026.07.10.737794 — Attention reshapes thalamocortical prediction-error learning (sEEG, mutual/co-information)
+- ★ doi:10.64898/2026.05.01.722186 — Dynamic optimism-pessimism bias in monkey BART (FEP + inverse-inference)
+- ★ doi:10.64898/2026.07.08.737201 — Maternal separation buffers cognitive bias via PFC mitochondrial recalibration
+- ★ doi:10.1101/2025.08.22.671714 — Trem2 R47H v2 reframe: earlier density finding walked back with better variance modeling
+- ★ doi:10.64898/2026.07.09.737550 — Retrosplenial scaffold-engram architecture with dissociable memory contributions
+- ★ arxiv:2607.06802 — Four-analyst LLM pipeline for auditable rule discovery across 68 physiological corpora
+- doi:10.64898/2026.06.29.735353 — Voclosporin vs cyclosporine mitochondrial function — dropped (renal, not neuro)
+- doi:10.64898/2026.07.09.737293 — MTL neurons intertemporal choice — already shipped 2026-07-11
+- doi:10.64898/2026.07.05.735345 — Astrocyte-microglia purinergic — already shipped 2026-07-08
+- doi:10.64898/2026.01.22.701190 — IGF1 tripeptide Rett astrocytes — already shipped 2026-07-11
+- arxiv:2607.08602 — HCC-STAR clinical reasoning LLM — dropped (oncology, not neuro)
+- arxiv:2607.08038 — AegisDx differential diagnosis framework — dropped (clinical, not neuropharm)
+- arxiv:2607.08404 — DrugGen 2 — already shipped 2026-07-11
+- arxiv:2607.08257 — MentalHospital — already shipped previously
+- doi:10.64898/2026.07.10.737866 — Zebra finch motor sequence — dropped (adjacent to shipped birdsong-DA piece)
+- doi:10.64898/2026.07.09.737187 — Spatial transcriptomics macaque cortex — dropped (too narrow for audience)
+- doi:10.64898/2026.07.06.735751 — Cortisol awakening response + Th1 — dropped (pilot n)
+- doi:10.64898/2026.07.06.732916 — Hippocampal engrams / prefrontal — already shipped 2026-07-08
+
+Full text fetched for lead item (Ensemble QSP via arXiv abs metadata; PDF available), plus all 8 bioRxiv items (jina proxy, all returned readable body except VTA-ACh and Egocentric-scaffolds which returned abstract-only). Trem2 preprint v2 confirmed via bioRxiv details API — v1 vs v2 title/conclusion mismatch is deliberate reframe, called out in the script.
+=== 2026-07-12T05:16:29-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-13T02:50:17-07:00 start receptor-and-reason ===
+Episode drafted and staged. SKIP_TTS mode is active so audio generation, R2 publish, feed update, and commit are deferred to the orchestrator.
+
+## Candidate funnel
+
+Sources scanned (recency window 2026-07-06 → 2026-07-13):
+
+- **bioRxiv (Tier 1 + 2)** — 1,903 total items across all categories via details API, 1,831 unique DOIs after paginated dedup. Filtered to 330 in relevant categories (neuroscience, bioinformatics, animal behavior, pharmacology, systems biology, biophysics) matching neuropsychopharm keyword battery. Ranked by strong-signal keyword density.
+- **arXiv (Tier 2)** — /tmp/ai-nuggets-arxiv-cache.xml (500 entries), 41 fresh items in category-relevant + biomedical + agentic-AI intersection after excluding driving/finance/malware/etc.
+- **Published journals (Tier 1.2), chemRxiv (Tier 3.2), industry pages (Tier 3.3), Psychiatric Times/society pages (Tier 1.3/1.4)** — not directly polled today; bioRxiv+arXiv corpus yielded well above the 10-item floor so did not fall back.
+- **Dedup ledger** — 205 unique shipped keys across 58 prior episodes checked.
+
+Substantive shortlist (14 items):
+
+- Psilocybin selectively rescues cognitive flexibility (Sohal, UCSF) — https://www.biorxiv.org/content/10.64898/2026.07.05.736652v1 **[CHOSEN — opener]**
+- SSRI citalopram amplifies real-world affect-reward coupling (Rutledge, Mason) — https://www.biorxiv.org/content/10.64898/2026.07.03.736315v1 **[CHOSEN]**
+- Hyperexcitability of female MRR→vHP 5-HT neurons (Amilhon) — https://www.biorxiv.org/content/10.1101/2025.08.17.670715v3 **[CHOSEN]**
+- Stress-induced motivational impairment ACC transcriptomics (Liston) — https://www.biorxiv.org/content/10.64898/2026.07.11.737837v1 **[CHOSEN — abstract-only]**
+- Entropy-regularized RL / tail of striatum (Mahajan+Seymour) — https://www.biorxiv.org/content/10.64898/2026.07.09.737461v1 **[CHOSEN — abstract-only]**
+- Operant ethanol mGlu2/3 in NAc (Hodge lab, UNC) — https://www.biorxiv.org/content/10.64898/2026.03.18.712674v2 **[CHOSEN]**
+- Dopamine compensates amyloid DMN dysfunction (Jagust) — https://www.biorxiv.org/content/10.64898/2026.07.07.736872v1 **[CHOSEN — abstract-only]**
+- SEA-AD DREAM Challenge (agentic AI + AD neuropathology) — https://www.biorxiv.org/content/10.64898/2026.07.02.736180v1 **[CHOSEN]**
+- MAPLE LLM-assisted QSP calibration schemas — https://www.biorxiv.org/content/10.64898/2026.03.05.709623v2 **[CHOSEN]**
+- MentalHospital LLM psychiatric SOAP-encounter benchmark — https://arxiv.org/abs/2607.08257 **[CHOSEN — light closer]**
+- Basal forebrain → lateral habenula sex-dependent ethanol/sucrose (skipped — didn't fit narrative arc, held for later)
+- Voluntary oral fentanyl DID model (skipped — negative-result-heavy, other AUD/OUD covered)
+- Protracted maturation proactive/reactive systems (skipped — developmental fMRI, low-mechanism)
+- PredHLM half-life prediction (skipped — held; less on-theme against MAPLE which was a stronger pharm+LLM pick)
+
+Source-level failures: none. bioRxiv details API and jina.ai reader proxy both worked cleanly. Three items (stress-motivation, entropy-RL, dopamine-DMN) fell to abstract-only because bioRxiv hadn't rendered v1 body HTML yet — flagged as such in the script per PIPELINE guidance.
+
+Note on cross-show overlap: `biomedical-agentic-ai` shipped LongMedBench today, so I did not pick it despite strong Alan relevance; MentalHospital replaces it as the closer.
+
+Files written (SKIP_TTS mode):
+- `podcasts/receptor-and-reason/scripts/2026-07-13-receptor-and-reason.md` (script, ~2,740 spoken words, ≈15 min)
+- `podcasts/receptor-and-reason/scripts/2026-07-13-receptor-and-reason.rss-item.xml` (RSS stub with `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/receptor-and-reason/scripts/2026-07-13-receptor-and-reason.commit-msg`
+- `podcasts/receptor-and-reason/state/shipped.jsonl` appended with today's 10-item record
+=== 2026-07-13T03:04:47-07:00 done  receptor-and-reason (exit 0) ===

@@ -1836,3 +1836,274 @@ Substantive shortlist (after discarding tangential hits):
 
 **Depth notes**: All four chosen preprints are v1 posted 2026-07-06 or 2026-07-07; bodies have not yet rendered on bioRxiv (jina .full fetch returned Abstract-only for all four). Summaries are abstract-grounded per PIPELINE.md — noted in the RSS description footer. No source-level failures during search.
 === 2026-07-07T07:11:26-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-08T03:00:09-07:00 start scripps-biomed-brief ===
+You've hit your session limit · resets 3:10am (America/Los_Angeles)
+=== 2026-07-08T03:00:13-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-08T03:00:13-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-08T03:00:13-07:00 session-limit hit; sleeping 647s until 3:10am (+60s buffer) ===
+=== 2026-07-08T03:11:00-07:00 start scripps-biomed-brief (retry 1) ===
+Script and stubs written. Since `SKIP_TTS=1`, TTS/publish/feed/commit are deferred to `publish_pending.py`. Final summary for the cron.log audit trail below.
+
+---
+
+## Scripps Biomedical Brief — 2026-07-08 (Wed)
+
+**Files written (SKIP_TTS mode):**
+- `podcasts/scripps-biomed-brief/scripts/2026-07-08-denovo-protein-protac-ctsc-amyloid-slc16a6-tp53-purine.md` (1094 words)
+- `podcasts/scripps-biomed-brief/scripts/2026-07-08-denovo-protein-protac-ctsc-amyloid-slc16a6-tp53-purine.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders)
+- `podcasts/scripps-biomed-brief/scripts/2026-07-08-denovo-protein-protac-ctsc-amyloid-slc16a6-tp53-purine.commit-msg`
+
+Publishing (audio, R2 upload, feed.xml insertion, commit) deferred to `scripts/publish_pending.py` per PIPELINE.md SKIP_TTS handling.
+
+**Candidate funnel:**
+
+Sources scanned (bioRxiv, 2026-07-06 to 2026-07-08 posting window):
+- pharmacology and toxicology: 4 items scanned, 0 shortlisted (mostly natural-product nanoparticle work + uranium tox)
+- bioengineering: 20 items scanned, 0 shortlisted (mostly scaffolds/cell-culture engineering)
+- biochemistry: 28 items scanned, 4 shortlisted
+- synthetic biology: 4 items scanned, 1 shortlisted
+- immunology: 20 items scanned, 1 shortlisted
+- cancer biology: 15 items scanned, 2 shortlisted
+- cell biology: 12 items scanned, 1 shortlisted
+
+Substantive shortlist (after discarding spurious matches):
+- Mylemans/Woolfson/Itzhaki de novo–designed protein PROTACs targeting BCL-xL via KLHL20 — https://www.biorxiv.org/content/10.64898/2025.12.22.695915v3 ← **CHOSEN (story 1)**, full text opened
+- Elias/Cravatt/Kelly (Scripps) intralysosomal amyloidogenesis by Cathepsin C — https://www.biorxiv.org/content/10.64898/2025.12.23.696283v2 ← **CHOSEN (story 2)**, full text opened
+- Cunningham/Bott/Adelmann/Rutter/Sabatini SLC16A6 melanosomal tyrosine transporter — https://www.biorxiv.org/content/10.64898/2026.07.06.736842v1 ← **CHOSEN (story 3)**, abstract-only (v1 posted 07-07, body not yet rendered)
+- Urgel-Solas/Sdelci/Janic/Vander Heiden nuclear adenosine metabolism + TP53-loss synthetic lethality via PFAS — https://www.biorxiv.org/content/10.64898/2026.07.06.736733v1 ← **CHOSEN (story 4)**, abstract-only (v1 posted 07-07, body not yet rendered)
+- Gan/Zhang CatESO differentiable enzyme sequence optimizer — https://www.biorxiv.org/content/10.64898/2026.07.04.736506v1 (abstract-only; skipped — yesterday's ep already carried an AI-native drug-discovery methods paper)
+- Balistreri/Chapman/Kelly (Scripps) sTREM2 inhibits bacterial CsgA amyloid — https://www.biorxiv.org/content/10.64898/2026.07.03.736422v1 (abstract-only; already featured on 2026-07-06 Scripps ep — de-duplicated)
+- Johns/Shah PTP1B substrate identification via photo-crosslinking — https://www.biorxiv.org/content/10.64898/2026.07.06.736853v1 (abstract-only; strong chem-bio but bumped for stronger new-target/new-modality picks)
+- Cho/Rajbhandari Tetherin immunometabolic checkpoint in adipocytes — https://www.biorxiv.org/content/10.64898/2026.07.06.735062v1 (abstract-only; interesting but bumped as less translationally near)
+- Deshmukh/Micevic DNMT1 augments anti-tumor CD8 T-cell function — https://www.biorxiv.org/content/10.64898/2026.07.03.736412v1 (bumped — DNMT1 is well-worn territory in tumor immunity)
+- Mylemans (Woolfson) is v3 (originally posted late 2025); accepted because the version bump indicates the finalized manuscript and no prior Scripps episode covered it. Kelly/Cravatt paper is v2 (originally posted late 2025); same rationale, plus Scripps affiliation makes it a natural fit.
+
+No source-level failures — all bioRxiv fetches via `scripts/fetch_preprint.py` returned via the jina reader proxy (no fall-through to abstract-only API for the two v2/v3 papers; the two brand-new v1 papers had bodies not yet rendered on bioRxiv, so the summaries there are abstract-grounded per PIPELINE.md guidance, and this is called out in the RSS description).
+=== 2026-07-08T03:19:26-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
+=== 2026-07-09T03:00:09-07:00 start scripps-biomed-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-09T03:00:13-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-09T03:00:13-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-09T03:00:13-07:00 session-limit reset at 5am is 7247s away (>3600s cap); sleeping 180s ===
+=== 2026-07-09T03:03:13-07:00 start scripps-biomed-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-09T03:03:17-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
+=== 2026-07-09T03:03:17-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-09T03:03:17-07:00 session-limit reset at 5am is 7063s away (>3600s cap); sleeping 180s ===
+=== 2026-07-09T03:06:17-07:00 start scripps-biomed-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-09T03:06:21-07:00 done  scripps-biomed-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-09T03:06:21-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-09T03:06:21-07:00 session-limit reset at 5am is 6879s away (>3600s cap); sleeping 180s ===
+=== 2026-07-09T03:09:21-07:00 start scripps-biomed-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-09T03:09:25-07:00 done  scripps-biomed-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-09T03:09:25-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-09T03:09:25-07:00 session-limit reset at 5am is 6695s away (>3600s cap); sleeping 180s ===
+=== 2026-07-09T03:12:25-07:00 start scripps-biomed-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-09T03:12:30-07:00 done  scripps-biomed-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-09T03:12:30-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-09T03:12:30-07:00 session-limit reset at 5am is 6510s away (>3600s cap); sleeping 180s ===
+=== 2026-07-09T03:15:30-07:00 start scripps-biomed-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-09T03:15:34-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-09T03:15:34-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-07-10T03:00:09-07:00 start scripps-biomed-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-10T03:00:14-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-10T03:00:14-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-10T03:00:14-07:00 session-limit reset at 5am is 7246s away (>3600s cap); sleeping 180s ===
+=== 2026-07-10T03:03:14-07:00 start scripps-biomed-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-10T03:03:18-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
+=== 2026-07-10T03:03:18-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-10T03:03:18-07:00 session-limit reset at 5am is 7062s away (>3600s cap); sleeping 180s ===
+=== 2026-07-10T03:06:18-07:00 start scripps-biomed-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-10T03:06:22-07:00 done  scripps-biomed-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-10T03:06:22-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-10T03:06:22-07:00 session-limit reset at 5am is 6878s away (>3600s cap); sleeping 180s ===
+=== 2026-07-10T03:09:22-07:00 start scripps-biomed-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-10T03:09:26-07:00 done  scripps-biomed-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-10T03:09:26-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-10T03:09:26-07:00 session-limit reset at 5am is 6694s away (>3600s cap); sleeping 180s ===
+=== 2026-07-10T03:12:26-07:00 start scripps-biomed-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-10T03:12:31-07:00 done  scripps-biomed-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-10T03:12:31-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-10T03:12:31-07:00 session-limit reset at 5am is 6509s away (>3600s cap); sleeping 180s ===
+=== 2026-07-10T03:15:31-07:00 start scripps-biomed-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-10T03:15:35-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-10T03:15:35-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-07-10T05:05:00-07:00 start scripps-biomed-brief ===
+All three files written. Per PIPELINE.md, `SKIP_TTS=1` is set, so TTS, R2 publish, feed.xml insert, and commit are deferred to `publish_pending.py`. Below is the final audit summary for `cron.log`.
+
+---
+
+## Scripps Biomedical Brief — 2026-07-10 (Fri)
+
+**Files written (SKIP_TTS mode):**
+- `podcasts/scripps-biomed-brief/scripts/2026-07-10-cd117-shielded-hspc-adamala-synthcell-acsvl3-glioma-pd1-mechano.md` (1013 words total; ~950 spoken)
+- `podcasts/scripps-biomed-brief/scripts/2026-07-10-cd117-shielded-hspc-adamala-synthcell-acsvl3-glioma-pd1-mechano.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders)
+- `podcasts/scripps-biomed-brief/scripts/2026-07-10-cd117-shielded-hspc-adamala-synthcell-acsvl3-glioma-pd1-mechano.commit-msg`
+
+Publishing (audio, R2 upload, feed.xml insertion, commit) deferred to `scripts/publish_pending.py` per PIPELINE.md SKIP_TTS handling.
+
+**Candidate funnel:**
+
+Sources scanned (bioRxiv, 2026-07-08 to 2026-07-10 posting window):
+- biochemistry: 19 items scanned, 4 shortlisted
+- cell biology: 30 items scanned, 3 shortlisted
+- cancer biology: 30 items scanned, 4 shortlisted
+- synthetic biology: 30 items scanned, 4 shortlisted
+- bioengineering: 26 items scanned, 3 shortlisted
+- immunology: 30 items scanned, 5 shortlisted
+- neuroscience: 30 items scanned, 1 shortlisted
+- pharmacology and toxicology: 4 items scanned, 0 shortlisted (mycotoxin/uranium tox not relevant)
+
+Substantive shortlist (after discarding spurious matches):
+- Marone/Jeker/Cathomen + D.R. Liu + Lieber CD117 epitope-shielded HSPC transplantation with toxin-free conditioning — https://www.biorxiv.org/content/10.64898/2026.07.07.736903v1 ← **CHOSEN (story 1)**, abstract-only (v1 posted 2026-07-08, body not yet rendered; abstract is comprehensive)
+- Gaut/Deich/Engelhart/Adamala fully chemically defined synthetic cell with complete cell cycle — https://www.biorxiv.org/content/10.64898/2026.07.01.735724v1 ← **CHOSEN (story 2)**, full text opened via jina reader
+- Clay/Watkins ACSVL3 grassofermata for glioblastoma — https://www.biorxiv.org/content/10.64898/2026.07.07.736493v1 ← **CHOSEN (story 3)**, comprehensive abstract with all key data
+- Alapan/Thomas confined T-cell migration mechanically controls PD-1 — https://www.biorxiv.org/content/10.64898/2026.07.03.736145v1 ← **CHOSEN (story 4)**, comprehensive abstract
+- Bregalda/Rizzolio VS1/STARD3 albumin-coated nanocrystals + fluoropyrimidines in CRC — https://www.biorxiv.org/content/10.64898/2026.07.07.737012v1 (full abstract; bumped for story 4 which is more novel-modality)
+- Yue/Kyprianou/Tewari neuroendocrine prostate cancer converges on fetal pulmonary neuroendocrine program — https://www.biorxiv.org/content/10.64898/2026.07.07.737089v1 (abstract-only; interesting but developmental-biology framing without direct therapeutic hook)
+- Zwiebel/Mann cell-type-resolved spatial proteogenomics — https://www.biorxiv.org/content/10.64898/2026.07.09.737478v1 (abstract-only; methodological but bumped for stronger therapeutic-modality picks)
+- Kalyesubula/Ntambi hepatic SCD deficiency ameliorates hyperglycemia via bile-acid signaling — https://www.biorxiv.org/content/10.64898/2026.07.07.737046v1 (interesting insulin-independent T1D angle; bumped)
+- Sathkumara/Kupz pulmonary Ag-enhanced BCG for TB in immunocompromised hosts — https://www.biorxiv.org/content/10.64898/2026.07.05.736631v1 (interesting vaccine platform; bumped as niche)
+- Martin/Francis MS2-capsid STING agonist TB vaccine — https://www.biorxiv.org/content/10.64898/2026.07.03.736450v1 (chemistry-forward vaccine; bumped, already-heavy on immunology)
+- Williams/Sheppard integrin αvβ8-TGFβ blockade in anti-tumor immunity — https://www.biorxiv.org/content/10.64898/2026.07.06.735099v1 (mechanistic; bumped, TGFβ inhibition ground well-trodden)
+- Chandra/Lusk mechanoresponsive NPC modulation by O-GlcNAc — https://www.biorxiv.org/content/10.64898/2026.07.07.737034v1 (cell-bio mechanistic; bumped as no direct therapeutic hook)
+- Gao et al camptothecin biosynthetic pathway heterologous reconstruction — https://www.biorxiv.org/content/10.64898/2026.06.23.733941v2 (v2 re-posting; bumped for stronger new-target/new-modality picks)
+- Woolfson/Boyle all-α-helical protein space via rational computational design — https://www.biorxiv.org/content/10.64898/2026.07.03.736327v1 (methodology; bumped, adjacent to yesterday's de novo PROTAC pick)
+
+Notes on source-level and depth handling:
+- No source-level failures — all bioRxiv fetches via `scripts/fetch_preprint.py` returned via the jina reader proxy successfully.
+- Adamala/Engelhart synthetic cell paper (story 2) had full body text rendered; summary is grounded in Introduction + section headers describing the full cell cycle.
+- CD117 (story 1), ACSVL3/grassofermata (story 3), and confined-migration/PD-1 (story 4) preprints were posted 2026-07-08 to 2026-07-09 with bodies still rendering; summaries are grounded in the full abstracts, all of which are content-rich (methods + effect sizes + tolerability).
+- Cross-show de-duplication check: Watkins/ACSVL3 was mentioned as radar in Blackbird Brief 2026-07-08 (different show, different subscriber) — not featured as a nugget on scripps-biomed-brief before, and the Scripps audience (chemists, drug discoverers) is the right audience for a full nugget on a first-in-class metabolic target with an in vivo tool compound.
+=== 2026-07-10T05:15:07-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-11T03:00:16-07:00 start scripps-biomed-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T03:00:20-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-11T03:00:20-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-11T03:00:20-07:00 session-limit reset at 5am is 7240s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T03:03:20-07:00 start scripps-biomed-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T03:03:24-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
+=== 2026-07-11T03:03:24-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-11T03:03:24-07:00 session-limit reset at 5am is 7056s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T03:06:24-07:00 start scripps-biomed-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T03:06:28-07:00 done  scripps-biomed-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-11T03:06:28-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-11T03:06:28-07:00 session-limit reset at 5am is 6872s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T03:09:28-07:00 start scripps-biomed-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T03:09:32-07:00 done  scripps-biomed-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-11T03:09:32-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-11T03:09:32-07:00 session-limit reset at 5am is 6688s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T03:12:32-07:00 start scripps-biomed-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T03:12:36-07:00 done  scripps-biomed-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-11T03:12:36-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-11T03:12:36-07:00 session-limit reset at 5am is 6504s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T03:15:36-07:00 start scripps-biomed-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T03:15:40-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-11T03:15:40-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-07-11T05:05:00-07:00 start scripps-biomed-brief ===
+Script (~934 words), RSS-item stub, and commit-msg stub written for `2026-07-11-aav-gelytac-cb1954-hrd-ev-d68-3dpol-mettl3-ar-scaffold`. SKIP_TTS=1 is set — no TTS/publish/feed-edit/commit; the orchestrator will pick up the stubs after batch TTS on Garibaldi.
+
+**Picks (all bioRxiv v1 posted 2026-07-09/10):**
+- **Story 1 — chosen.** Yang/Loh/…/Deisseroth/Bertozzi (Stanford), `10.64898/2026.07.05.736665v1` — AAV-delivered genetically encoded LYTACs; 85–89% endogenous IgG depletion for ~77 days from one dose; Granzyme-B and branaplam-gated conditional variants. Full body available.
+- **Story 2 — chosen.** Elia/Hill/…/Sundaram/Herzon/Bindra (Yale), `10.64898/2026.07.08.737246v1` — CB1954 repositioned as BRCA2-selective HRD agent; NQO2-vs-aziridine bifurcated mechanism; DDR-CRISPR-validated pathway dependency. Abstract-only.
+- **Story 3 — chosen.** Biswas/Wang/…/Renslo/Arkin/Arnold/Ruiz (Rutgers + UCSF), `10.64898/2026.07.09.737532v1` — EV-D68 3Dpol CFS + PicoGreen HTS; 5-aminoindazole scaffold at IC50 25 µM; discovers Thumb Site II and Index-Middle Finger Pocket. Abstract-only.
+- **Story 4 — chosen.** Kostlan/Phoenix/…/Fanning/Kregel (Loyola Chicago), `10.64898/2026.07.08.737095v1` — METTL3 is a non-enzymatic AR co-regulator; catalytic inhibitors fail while depletion works; PROTAC/glue strategy indicated. Abstract-only.
+
+**Candidate funnel (bioRxiv chemical-biology / pharmacology-toxicology / bioengineering + cancer-biology / cell-biology / synthetic-biology, 2026-07-09/10):**
+- Scanned ~120 items across 6 categories → 10 survived Scripps-audience relevance filter
+- Runners-up considered: αvβ8 vs pan-TGFβ integrin (Genentech); U2AF1 splice-decoy oligo (Karni, Hebrew U); STING-adjuvant MS2 VLP TB vaccine (Francis/Stanley, Berkeley); Type I-F3 CAST end-recognition structure (Kellogg, Cornell + Palermo, UCR); SOLAR lysosomal repair (Tan, Pitt); AI-informed neoantigen mRNA-LNP (SNU/Samsung, borderline hype)
+- Skipped: any B7-H3 ADC (Justice's beat; Ris-Rez is Justice's pick today), Sol/Anthropic launches (Ollie's beat)
+- All source fetches OK — bioRxiv API + jina.ai proxy; no source-level failures this run.
+=== 2026-07-11T05:16:21-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-12T03:00:09-07:00 start scripps-biomed-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T03:00:12-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-12T03:00:12-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-12T03:00:12-07:00 session-limit reset at 5am is 7248s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T03:03:12-07:00 start scripps-biomed-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T03:03:16-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
+=== 2026-07-12T03:03:16-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-12T03:03:16-07:00 session-limit reset at 5am is 7064s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T03:06:16-07:00 start scripps-biomed-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T03:06:20-07:00 done  scripps-biomed-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-12T03:06:20-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-12T03:06:20-07:00 session-limit reset at 5am is 6880s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T03:09:20-07:00 start scripps-biomed-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T03:09:24-07:00 done  scripps-biomed-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-12T03:09:24-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-12T03:09:24-07:00 session-limit reset at 5am is 6696s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T03:12:24-07:00 start scripps-biomed-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T03:12:29-07:00 done  scripps-biomed-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-12T03:12:29-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-12T03:12:29-07:00 session-limit reset at 5am is 6511s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T03:15:29-07:00 start scripps-biomed-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T03:15:33-07:00 done  scripps-biomed-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-12T03:15:33-07:00 FAILED: no usable output for scripps-biomed-brief after all retries ===
+=== 2026-07-12T05:05:00-07:00 start scripps-biomed-brief ===
+Episode drafted and staged for the batch TTS pipeline. Since `SKIP_TTS=1`, per PIPELINE.md I stopped after writing the script + `.rss-item.xml` + `.commit-msg` stubs; `publish_pending.py` will handle TTS, R2 upload, feed.xml edit, and commit after Garibaldi finishes batch synthesis.
+
+**Files written** (`podcasts/scripps-biomed-brief/scripts/2026-07-12-y4r-t1d-abe-domain-insert-trim28-aml-quantum-mhc-peptide.*`):
+- `.md` — 1007-word spoken script + show notes with 4 verified bioRxiv links + candidate funnel
+- `.rss-item.xml` — full `<item>` with `__LENGTH__`/`__DURATION__` placeholders (parses as XML)
+- `.commit-msg` — one-line commit message
+
+**Picks (all posted 2026-07-10, all bioRxiv DOI-prefix `10.64898/` verified via api.biorxiv.org):**
+1. **Y4R for T1D** (Persaud, Beck-Sickinger, Bewick) — full text — β-cell-centric GPCR pairs intrinsic cytoprotection with local immunomodulation; K22 delays disease onset in NY8.3 model
+2. **Domain-insertion ABE precision** (Müller, Southern, Niopek, Heidelberg) — full text — bulky-domain internal insert at TadA8e L68 narrows editing window and nearly eliminates Cas-independent off-targets; sfGFP variant is fluorescent
+3. **TRIM28 for AML differentiation** (Amos, Soto-Feliciano, Lowe, Koehler) — abstract-only complete — CRISPR-screened target + first-generation PHD-bromodomain probe, synergizes with menin inhibitors
+4. **Quantum-classical MHC-I peptide GAN** (Engdal et al, HERVolution/ORCA/Sparrow/Hadrup) — abstract-only complete — first end-to-end wet-lab-validated quantum-primed generative design; effect concentrated on understudied HLA alleles
+
+No source-side failures on today's run. Task list closed.
+=== 2026-07-12T05:16:04-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-13T03:00:17-07:00 start scripps-biomed-brief ===
+Script drafted, RSS item stub and commit-msg stub written. SKIP_TTS mode, so no audio generation, no feed edit, no commit — the orchestrator handles those after batch TTS.
+
+---
+
+**Scripps Biomedical Brief — 2026-07-13 (SKIP_TTS)**
+
+Files written (all in `podcasts/scripps-biomed-brief/scripts/`):
+- `2026-07-13-pd1-car-t-arthritis-nact-cotransporter-af3-multistate-voclosporin-mps.md` — 4-story script + show notes + candidate funnel
+- `2026-07-13-pd1-car-t-arthritis-nact-cotransporter-af3-multistate-voclosporin-mps.rss-item.xml` — RSS item stub with `__LENGTH__`/`__DURATION__` placeholders
+- `2026-07-13-pd1-car-t-arthritis-nact-cotransporter-af3-multistate-voclosporin-mps.commit-msg`
+
+**Picks:**
+1. Gur, Amit (Weizmann) — synovium-restricted armored PD-1-targeted CAR-T for RA (NR4A2-biosensor tissue gate + sTNFRII secretion armor)
+2. Sauer, Wang (NYU) — human NaCT (SLC13A5) cryo-EM in three states; sodium+substrate bind simultaneously vs sequential VcINDY mechanism
+3. Ye, Gumbart, Parks (Georgia Tech + Oak Ridge) — AlphaFold3/Boltz-2/Chai-1/BioEmu benchmark on 4 multi-state proteins reveals persistent PDB-dominant-state bias; small molecules barely move predictions; MSA-clustering workarounds inherit the bias
+4. Aryeh, Kelly, Himmelfarb (UW, with Aurinia) — voclosporin preserves mitochondrial function + proteostasis vs cyclosporine A in perfused proximal-tubule MPS; CsA primes ferroptosis, VCS elicits adaptive ERAD
+
+**Candidate funnel:**
+- bioengineering: 1 scanned, 0 substantive
+- pharmacology and toxicology: 3 scanned, 1 substantive → CHOSEN (Kelly voclosporin MPS)
+- biochemistry: 4 scanned, 1 substantive (DeGrado enzyme v2 — dropped as not fresh v1)
+- synthetic biology: 1 scanned, 0 Scripps-flavored
+- cancer biology: 1 scanned, 0 fresh v1
+- cell biology: 4 scanned, 0 fresh v1 with Scripps hook
+- immunology: 10 scanned, 3 substantive → CHOSEN (Amit CAR-T); Reshef donor-TCR R50 on shortlist; confined-T-cell PD-1 already featured 2026-07-10
+- biophysics: 9 scanned, 2 substantive → CHOSEN (NaCT NYU + Gumbart AI benchmark)
+- genetics: 5 scanned, 0 Scripps hook
+- microbiology: 10 scanned, 0 Scripps hook
+
+No source-side failures. All four picks are bioRxiv v1 posted 2026-07-11 to 2026-07-12; bodies not yet rendered — summaries grounded in the full abstracts per PIPELINE.md.
+=== 2026-07-13T03:08:13-07:00 done  scripps-biomed-brief (exit 0) ===

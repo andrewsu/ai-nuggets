@@ -2053,3 +2053,144 @@ Sources:
 - [Kalohexis confidential IPO filing (July 7)](https://pharmaphorum.com/news/obesity-biotech-kalohexis-files-confidential-ipo)
 - [Endpoints News H2 M&A extension](https://endpoints.news/novartis-vertex-and-ipsen-extend-pharma-ma-spree-from-2026s-first-half/)
 === 2026-07-08T02:31:34-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-09T02:20:09-07:00 start calibr-briefing ===
+Both scripts, stubs, and commit-msg files are in place. XML parses cleanly. In SKIP_TTS mode, so no audio generation / feed edit / commit — orchestrator handles those.
+
+## Candidate funnel
+
+**Sources scanned (Wed Jul 8 – Thu Jul 9 2026):** Fierce Biotech, Fierce Pharma, Endpoints News, STAT News, BioPharma Dive front page, BioSpace, GlobeNewswire, company IR pages.
+
+**Substantive shortlist:**
+- AstraZeneca-Sino Biopharm/CTTQ $2.1B TQC3721 (dual PDE3/4, COPD, Ohtuvayre fast-follower) — Fierce Biotech / BioPharma Dive / BioSpace — **CHOSEN (spotlight + headline #1)**
+- Prime Medicine wins Beam arbitration on PM647/AATD; PRME +16% — STAT / GlobeNewswire — **CHOSEN (headline #2)**
+- Revolution Medicines EMA phased review for daraxonrasib in 2L mPDAC (Jul 7) — GlobeNewswire / STAT / BioPharma Dive — **CHOSEN (headline #3)**
+- Saol Therapeutics resubmits SL1009 NDA for PDCD; 2nd post-Makary CRL reversal this week — BioSpace / BioPharma Dive — **CHOSEN (headline #4)**
+- Cyllene Therapeutics (fmr EG 427) €33M Series C, EG110A HSV-1 vector for neurogenic bladder — GlobeNewswire / BioSpace / Pharmaceutical Technology — **CHOSEN (headline #5)**
+- Sanofi commitments in EU antitrust probe over disparagement of CSL Fluad — Endpoints — passed (EU antitrust admin, low Foresite/Calibr relevance)
+- Novartis 322-person layoff / Genentech 103 gRED cuts — Fierce Biotech Layoff Tracker — passed (covered similar last week)
+- Vera Trutakna analyst follow-ups — passed (yesterday's spotlight)
+- Kailera HRS-7535 GLP-1 China Ph3 — passed (yesterday's headline #2)
+
+**Source failures:** Endpoints News homepage returned HTTP 403 to WebFetch, Fierce Biotech article URLs also 403; worked around via BioSpace / GlobeNewswire / allsci / cancernetwork / STAT which returned the same substantive stories. Full-text for the spotlight was obtained (PACER-II Ph2b endpoint data via ScienceDirect / ERS abstracts, Ohtuvayre commercial trajectory via Merck IR + trade press, deal terms via BioSpace + AllSci press release).
+=== 2026-07-09T02:34:59-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-10T02:20:09-07:00 start calibr-briefing ===
+All four files written for both episodes. `SKIP_TTS=1` is set, so per PIPELINE.md I stop here — the orchestrator (`publish_pending.py`) will run TTS in batch, publish to R2, update the feed, and commit.
+
+## Candidate funnel (Fri Jul 10 2026 Calibr briefing)
+
+**Sources scanned** (via general-purpose research agents):
+- BioPharma Dive, STAT News, Fierce Biotech, Fierce Pharma, Endpoints News (front pages)
+- BioSpace, Clinical Trials Arena, Reuters Healthcare, GlobeNewswire
+- Bloomberg Pharma preview, GEN News
+- Front-page 403s: Fierce Biotech, Endpoints. STAT+ paywall on ARPA-H tail
+- Cross-checked with WebSearch for "biotech news July 10 2026" + "FDA approval July 10 2026"
+
+**Substantive shortlist** (July 9-10 news, excluding yesterday's already-shipped items):
+
+- **AZ+Ionis Wainua/eplontersen CARDIO-TTRansform Ph3 FAILURE in ATTR-CM** — biopharmadive.com/news/astrazeneca-ionis-eplontersen-ttr-cardiomyopathy-study-results-failure/824799/ — **CHOSEN as Headlines #1 + Spotlight**
+- **Roche discontinues both Ionis Huntington's ASOs (tominersen + RG6496)** — biopharmadive.com/news/roche-tominersen-rg6496-huntington-end-development/824844/ — **CHOSEN as Headlines #2** (compound Ionis story same afternoon)
+- **GSK terminates $2.2B Alector immuno-neurology alliance** — biopharmadive.com/news/gsk-alector-deal-end-terminate-brain-drugs-neuroscience/824815/ — **CHOSEN as Headlines #3**
+- **ARPA-H THRIVE $160M for personalized CRISPR (GEMMABio+Profluent AI editors)** — statnews.com/2026/07/09/arpa-h-160-million-custom-gene-editing-funding-rare-disease/ — **CHOSEN as Headlines #4** (strong AI-native fit for audience)
+- **Ipsen Dysport BEOND Ph3 dual wins in episodic + chronic migraine** — globenewswire.com/news-release/2026/07/09/... — **CHOSEN as Headlines #5** (first botulinum ever in episodic)
+- Chemomab-Scipher reverse merger (AI patient stratification, RA nebokitug) — Jul 8, still fresh — skipped, tail item
+- McKinsey biopharma AI-R&D structural redesign report — biospace.com — skipped, thematic not news
+- Compass/Definium psychedelic double-header — Compass already partially covered yesterday
+- Amgen Tavneos regulatory pressure (FDA + EMA withdrawal push) — biospace.com/business/amgen-continues-to-defend-tavneos... — skipped, no fresh Jul 9-10 event
+- FDA freezes CRL transparency initiative — biospace.com/fda/fda-freezes-crl-trove... — skipped, policy-only
+- Satellos SAT-3247 DMD Ph2 6-mo interim — clinicaltrialsarena.com — skipped, small n=4 open-label
+- Northwest Biotherapeutics DCVax STAT investigation (Feuerstein) — skipped, feature not news
+- HHS AI drug R&D acceleration plan — skipped, policy narrative
+- BioNTech HER2 ADC + BMS bispecific launch prep — fiercepharma.com — skipped, tail item
+- Samsung Bioepis + Proteina Korean gov AI antibody collab — skipped, tail item
+
+**Selection rationale for Spotlight (AZ+Ionis CARDIO-TTRansform):** Biggest market-moving story of the week; clean silencer-vs-stabilizer mechanism intuition to unpack (background stabilizer compressed hard-endpoint delta the silencer class can produce); reshapes the $10-15B ATTR-CM market between Alnylam (Amvuttra), BridgeBio (Attruby), Pfizer (Vyndamax); abundant analyst commentary (Stifel Matteis, Jefferies Leuchten, Raymond James, BofA); direct read for silencer-class pipeline design (Alnylam nucresiran, Wave) and general lesson for Foresite/Calibr audience on trial-design-vs-mechanism attribution. Same-afternoon Roche/Ionis Huntington's compound story wove naturally into the spotlight as thread five.
+=== 2026-07-10T02:32:49-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-11T02:20:16-07:00 start calibr-briefing ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:35:48-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-11T02:35:48-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-07-11T02:35:48-07:00 session-limit reset at 5am is 8712s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:38:48-07:00 start calibr-briefing (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:38:52-07:00 done  calibr-briefing (exit 0) (retry 1) ===
+=== 2026-07-11T02:38:52-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-07-11T02:38:52-07:00 session-limit reset at 5am is 8528s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:41:52-07:00 start calibr-briefing (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:41:56-07:00 done  calibr-briefing (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-11T02:41:56-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-07-11T02:41:56-07:00 session-limit reset at 5am is 8344s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:44:56-07:00 start calibr-briefing (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:45:00-07:00 done  calibr-briefing (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-11T02:45:00-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-07-11T02:45:00-07:00 session-limit reset at 5am is 8160s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:48:00-07:00 start calibr-briefing (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:48:04-07:00 done  calibr-briefing (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-11T02:48:04-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-07-11T02:48:04-07:00 session-limit reset at 5am is 7976s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:51:05-07:00 start calibr-briefing (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:51:09-07:00 done  calibr-briefing (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-12T02:20:08-07:00 start calibr-briefing ===
+Both stubs parse cleanly when inserted into the feed. All artifacts are in place.
+
+Now the candidate funnel for the cron.log audit trail.
+
+Two Sunday episodes shipped for `calibr-briefing` (SKIP_TTS mode — orchestrator will pick up TTS + R2 + feed.xml + commit):
+
+- Headlines — `podcasts/calibr-briefing/scripts/2026-07-12-pharma-headlines.txt`
+- Spotlight — `podcasts/calibr-briefing/scripts/2026-07-12-gsk-hansoh-b7h3-adc-sclc-spotlight.txt`
+- Plus matching `.rss-item.xml` (with `__LENGTH__` / `__DURATION__`) and `.commit-msg` stubs for each.
+
+Spotlight: GSK-Hansoh risvutatug rezetecan (HS-20093, anti-B7-H3 topo-1 ADC) ARTEMIS-008 Phase 3 OS win vs topotecan in ~460-patient China SCLC, announced Fri Jul 10 — first-ever Phase 3 OS win for a B7-H3-targeted ADC in any tumor type. Seven threads: B7-H3/CD276 checkpoint-plus-ADC-target mechanism; ARTEMIS-008 data profile with clean grade-5 ILD signal; 25-yr SCLC landscape now inflecting with tarlatamab + ris-rez; head-to-head-in-class vs Daiichi/Merck I-DXd under partial FDA hold for grade-5 ILD; GSK $185M-upfront-plus-$1.7B-milestone deal economics; ADC platform + AI-native peer-set read; catalysts (WCLC Sep, EMBOLD SCLC-301 pivotal 2027, IDeate-Lung02 hold resolution, indication expansion).
+
+Candidate funnel for today (post-yesterday's ship list):
+
+- Fierce Biotech / BioPharma Dive / Fierce Pharma / STAT / Endpoints News — scanned; Endpoints and Fierce Biotech served 403 on top-level fetch, worked around via WebSearch + specific-article WebFetch.
+- Substantive shortlist after discarding items already shipped Jul 10–11 (Wainua ATTR-CM failure, Roche Huntington's, GSK-Alector, ARPA-H THRIVE, Dysport, Padcev+Keytruda MIBC, MindRank, Teva-Polpharma, AZ-Helix, Alchemab):
+  - **GSK/Hansoh ris-rez B7-H3 ADC ARTEMIS-008 SCLC Ph3 OS win (Jul 10)** — CHOSEN (spotlight + headline #1)
+  - **FDA 3rd CRL to Elevar/Hengrui camrelizumab+rivoceranib 1L HCC (Jul 10)** — CHOSEN (headline #2)
+  - **Bayer/Apollo €3B contraceptives-unit strategic equity (Jul 10)** — CHOSEN (headline #3)
+  - **Sanofi Sarclisa Escena SubQ OBI FDA approval (Jul 9)** — CHOSEN (headline #4)
+  - **Prime Medicine wins Beam AATD arbitration (Jul 8)** — CHOSEN (headline #5)
+  - Q32 Bio bempikibart AA readout — set for Jul 13, too early
+  - Parabilis Foresite-portfolio IPO — confirmed closed Jun 10–11, not fresh news
+=== 2026-07-12T02:33:47-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-13T02:20:17-07:00 start calibr-briefing ===
+Both episodes drafted and stubs written. Since `SKIP_TTS=1`, I did not run TTS, publish to R2, edit feed.xml, or commit — `publish_pending.py` will do that after batch TTS.
+
+**Files produced (both episodes):**
+- `2026-07-13-pharma-headlines.txt` (script)
+- `2026-07-13-pharma-headlines.rss-item.xml` (RSS stub with `__LENGTH__`/`__DURATION__`)
+- `2026-07-13-pharma-headlines.commit-msg` (commit stub)
+- `2026-07-13-biomni-stanford-ai-biomedical-agent-spotlight.txt` (script)
+- `2026-07-13-biomni-stanford-ai-biomedical-agent-spotlight.rss-item.xml` (RSS stub)
+- `2026-07-13-biomni-stanford-ai-biomedical-agent-spotlight.commit-msg` (commit stub)
+
+**Editorial picks:**
+- **Spotlight:** Biomni Stanford AI biomedical co-scientist paper (Science, Thu Jul 9), commercial spinout Phylo, and the read for AI-native drug-discovery peer set — hits the AI-in-drug-discovery focus area directly and builds on yesterday's ADC/AI-native platform discussion.
+- **Headlines (5, three from AAIC London opening weekend):** Biomni teaser · Leqembi SC autoinjector at AAIC · Roche ends both Huntington's programs (2nd Ionis hit in a week) · GSK ends Alector progranulin-antibody deal · INmune Bio XPro Phase 2 imaging data at AAIC.
+
+**Candidate funnel:**
+- **Endpoints News** — Biomni/Phylo funding coverage; Roche-Ionis HD termination; GSK-Alector termination; ARPA-H THRIVE $160M (Prime PM647 covered Sun; skipped today to diversify) — 4 relevant, 3 shortlisted.
+- **BioPharma Dive** — Roche Huntington's; AZ-Ionis Wainua ATTR-CM (already spotlight Jul 10, skipped); ARPA-H THRIVE; Biohaven leadership shuffle (skipped, too incremental); GSK-Alector — 5 items, 2 shortlisted.
+- **BioWorld** (Sun Jul 12) — "AI co-scientist at expert level" (Biomni), BCI story (skipped, not therapeutics), EMA CHMP Acadia Daybu Rett (skipped, June 26 not fresh), Bausch+Lomb glaucoma failure (Jul 9, stale for Mon), AZ-Ionis TTR-CM debate follow-up — 5 items, 1 shortlisted.
+- **PR Newswire / AAIC press** — Eisai/Biogen/BioArctic Leqembi SC AAIC Sun Jul 12; INmune Bio XPro Sun Jul 12; Vaccinex pepinemab Mon Jul 13 (mentioned as watch item, not lead — presenting later same day); Eisai etalanetug tau; Lilly Kisunla real-world updates — 5+ items, 3 shortlisted (2 in slate, 1 as watch).
+- **STAT News** — Roche Huntington's; ARPA-H THRIVE — 2 items, both covered elsewhere.
+
+**Shortlist ranked (chosen marked ★):**
+1. ★ Biomni/Phylo (Science, Jul 9) — https://www.science.org PubMed 42424436 — **SPOTLIGHT**
+2. ★ Leqembi SC autoinjector at AAIC — https://investors.biogen.com/news-releases/news-release-details/leqembir-subcutaneous-autoinjector-clinical-data-supports
+3. ★ Roche ends Huntington's programs — https://endpoints.news/roche-ends-work-on-tominersen-after-decade-of-trials-as-well-as-early-stage-huntingtons-asset/
+4. ★ GSK-Alector termination — https://www.biopharmadive.com/news/gsk-alector-deal-end-terminate-brain-drugs-neuroscience/824815/
+5. ★ INmune Bio XPro AAIC — https://www.globenewswire.com/news-release/2026/07/09/3324674/0/en/INmune-Bio-to-Present-Positive-Phase-2-Imaging-Data-for-XPro-in-Early-Alzheimer-s-Disease-at-AAIC.html
+6. Vaccinex pepinemab AAIC (Mon Jul 13 — mentioned as afternoon watch)
+7. ARPA-H THRIVE $160M — dropped (touched in yesterday's Prime Medicine discussion)
+8. Bausch+Lomb BL1107 glaucoma — dropped (Jul 9, stale)
+9. AZ-Ionis Wainua ATTR-CM debate — dropped (was Jul 10 spotlight)
+10. EMA CHMP Acadia Daybu Rett — dropped (Jun 26, stale)
+
+**Fetches:** Full-text read on Biomni (bioRxiv preprint via fetch_preprint.py — succeeded, ~70KB body) and Stanford HAI, Biogen/Eisai AAIC press release, and Endpoints/BioPharma Dive coverage on Roche-HD and GSK-Alector. Note: Foresite Labs / Foresite Capital portfolio has no direct new news July 12–13, so the spotlight leans on the AI-in-drug-discovery focus area and connects to yesterday's AI-native peer-set discussion.
+=== 2026-07-13T02:34:38-07:00 done  calibr-briefing (exit 0) ===

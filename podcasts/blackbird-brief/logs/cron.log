@@ -471,3 +471,186 @@ Substantive shortlist after filtering:
 - UMB Kahlert Institute inauguration + Ozempic-for-OUD trial launch — https://www.medschool.umaryland.edu/news/2026/kahlert-institute-for-addiction-medicine-inaugurates-new-facility-to-develop-treatments-for-addiction.html (dropped: institutional infrastructure signal, not a directly licensable IP lead)
 - UMB β-thalassemia RBC heme-import discovery (dropped: URL not fully verified in-window, defer to next cycle)
 === 2026-07-08T02:29:42-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-09T02:10:09-07:00 start blackbird-brief ===
+All artifacts are in place. Here's the run summary for the cron log.
+
+---
+
+**Blackbird Brief 2026-07-09 — Sourcing Radar (Thursday, radar-only day)**
+
+Script: `podcasts/blackbird-brief/scripts/2026-07-09-radar-jhu-huganir-snyder-synaptic-turnover-als.md`
+Stubs: `.rss-item.xml` (with `__LENGTH__` + `__DURATION__` placeholders) and `.commit-msg` written. SKIP_TTS=1 mode — no TTS, no publish, no feed edit, no commit (orchestrator handles these after batch TTS).
+
+**Editorial framing**: honest lean-day episode. After Monday-through-Wednesday cleared the strongest translational items (07-06 AsclepiX+OptaNova, 07-07 Wong caspase-3-tau, 07-08 triple pick Watkins+Cahan-Raman+Luetkens), Baltimore preprint funnel is thin. Three items — all platform signal, not licensable leads.
+
+**Picks:**
+1. **LEAD (platform signal)** — Huganir lab Snyder Neuroscience PNAS 2026-07-07 (DOI 10.1073/pnas.2602111123) — SILAM on 4,145 PSD proteins; sex-differentiated Gabrg2 stability + experience-dependent Shank3 stabilization; reframes sex-stratified PD-biomarker design as primary axis for Lieber GPR52 NewCo. Coffee with Huganir — relationship, not deal.
+2. **Arc-extender** — Jiou Wang JHU BSPH+Neuroscience PLoS Genetics 2026-07-08 (DOI 10.1371/journal.pgen.1012225) — Packard-funded, 239 ALS + 77 controls, 10 CNS regions; subtype-and-sex stratification framework; third Packard-anchored TDP-43 data point in a week (07-04 imaging, 07-07 Wong AD-reframe, 07-09 Wang framework). Blackbird translational-grant candidate to Wang lab.
+3. **Signal, not lead** — Lieber Carr+Barrow *Physiology & Behavior* 2026-07-04 (DOI 10.1016/j.physbeh.2026.115437) — post-weaning social-isolation adult reward-seeking phenotypes. Snapshot of GPR52 NewCo platform partner's scientific attention.
+
+**Candidate funnel:**
+- **bioRxiv (07-06 to 07-09 window)**: ~200 preprint titles scanned across cancer biology / immunology / neuroscience / pharmacology / bioengineering / molecular biology categories via bioRxiv MCP. **Zero fresh JHU/UMB/LIBD/KKI corresponding-author preprints** with translational IP after 07-06 through 07-08 already featured the surviving strong items (AXT107, Wong caspase-3-tau, Watkins ACSVL3, Cahan-Raman DDX3/RK-33, Luetkens cathepsin B).
+- **PubMed (07-06 to 07-09 window)**: 63 Baltimore-affiliated hits; deep-fetched metadata on ~20. Survivors above.
+- **Sources failing transiently**: direct WebFetch to biorxiv.org (Cloudflare 403), umventures.org/news (CAPTCHA/security-check page), r.jina.ai proxy of institutional newsroom pages (Varnish 500s and undated content); JHTV news reached but date-stamps not extractable. bioRxiv MCP + PubMed MCP both fine.
+- **Shortlist**:
+  - `PNAS` Huganir sex-differentiated PSD turnover (JHU Snyder Neuroscience) — https://doi.org/10.1073/pnas.2602111123 → **CHOSEN (lead)**
+  - `PLoS Genet` Jiou Wang ALS multi-region transcriptomics (JHU BSPH + Neuroscience, Packard funded) — https://doi.org/10.1371/journal.pgen.1012225 → **CHOSEN (arc-extender)**
+  - `Physiol Behav` Noback/Barrow/Carr post-weaning social isolation (Lieber Institute + JHU) — https://doi.org/10.1016/j.physbeh.2026.115437 → **CHOSEN (signal)**
+  - `Stroke` Sasannia/Nyquist WMH threshold cognitive decline (JHU Neurology + Kennedy Krieger F.M. Kirby) — rejected: clinical biomarker/staging work, no target/platform
+  - `PNAS` Wodeyar/Chinappen/Chu sleep-oscillation epilepsy motor memory (JHU + Kennedy Krieger Neurology) — rejected: mechanistic neuroscience but no drug/target angle
+  - `PLoS Biol` JHU BSPH gene drives (with Biocentis Srl) — rejected: vector-control platform sits outside Blackbird's therapeutic-IP altitude
+  - `Clin Exp Dermatol` Prurigo nodularis review (UMB Dermatology) — rejected: review not primary research
+  - `Am J Clin Nutr` DGA-chemical exposure (JHU BSPH minor coauthor) — rejected: environmental-health epidemiology, no translational IP
+  - `JCI` PTEN-ATRi HGSOC (Dana-Farber-led, JHU minor coauthor) — rejected: not JHU-IP
+- **Memory update**: added Huganir Snyder Neuroscience §2b entry (landscape/platform-visibility) and Jiou Wang §2b entry (Packard-arc completion) to `blackbird-portfolio.md`; refreshed "Last verified" line.
+
+Nothing spins out this week. Two Hopkins peer-reviewed papers + one Lieber signal shape platform thinking for the next few weeks — sex-stratified CNS drug development, TDP-43 patient-stratification biology, and Lieber platform-partner scientific focus.
+=== 2026-07-09T02:34:00-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-10T02:10:09-07:00 start blackbird-brief ===
+Episode is written and staged for the batch orchestrator. Under `SKIP_TTS=1` mode per PIPELINE.md, I do NOT run TTS, publish to R2, edit feed.xml, or commit — `scripts/publish_pending.py` handles all of that after the batch Voxtral job on Garibaldi finishes.
+
+**Files produced (Sourcing Radar for Friday 2026-07-10):**
+- `scripts/2026-07-10-radar-umb-katii-nac-lieber-cotwas-dacc-schizophrenia.md` — 42 lines / ~2,100 spoken words (~12 min at Voxtral 1.2×). No DOIs / URLs / bullets in the spoken portion (audited).
+- `scripts/2026-07-10-radar-umb-katii-nac-lieber-cotwas-dacc-schizophrenia.rss-item.xml` — full RSS item with `__LENGTH__` / `__DURATION__` placeholders; XML parses clean after escaping `pFDR<0.01` → `pFDR&lt;0.01`.
+- `scripts/2026-07-10-radar-umb-katii-nac-lieber-cotwas-dacc-schizophrenia.commit-msg` — one-line `Blackbird 2026-07-10: Radar — …` message.
+- `memory/blackbird-portfolio.md` — added UMB Schwarcz+Buchanan KAT II entry + two Lieber Institute platform items (Weinberger/Pergola INGENE-MODULE; Martinowich/Maynard/Hicks dACC atlas) to §2b, plus four new §4 open items.
+
+**Editorial framing:** Rare three-way schizophrenia convergence across two partner institutions in one week. UMB delivers human proof-of-mechanism for KAT II inhibition (validation + competitive clock + UM Ventures playbook lesson: the KAT II franchise Schwarcz co-founded went offshore to Kynexis / Forbion / Mitsubishi Tanabe, directly transferable warning to the cathepsin B CAR-T under Luetkens). Lieber's Nature Genetics coexpression-TWAS (766 SCZ genes, 641 novel) is priority-hit-sheet + patentable computational framework for the neuropsych NewCo. Lieber's Cell Reports dACC atlas is matched-donor cross-region platform substrate that pairs naturally with Kalhor 3DEEP.
+
+**Candidate funnel (2026-07-07 → 2026-07-10, JHU / UMB / Lieber / Kennedy Krieger):**
+
+- bioRxiv cancer biology (30 items scanned) — 1 JHU-adjacent surface (Brennen NEPC LSD1 v2 refresh — dropped, not new-DOI item)
+- bioRxiv neuroscience (30 items scanned) — 0 partner-institution items in window
+- bioRxiv pharmacology & toxicology (6 items scanned) — 0
+- bioRxiv immunology — search timed out on server, moved on per PIPELINE.md source-failure rule
+- medRxiv (all categories, 3 pages scanned) — 2 partner surfaces: **UMB Hare/Buchanan/Schwarcz KAT II NAC RCT (10.64898/2026.06.25.26356572, 2026-07-07) — CHOSEN LEAD**; JHU Paik anti-Ro-52 anti-synthetase syndrome cardiovascular retrospective (negative finding, low commercial angle — dropped)
+- Lieber Institute newsroom (libd.org) — 2 press releases 2026-07-08: **Rossi/Sportelli/Weinberger/Pergola Nature Genetics coexpression-TWAS — CHOSEN #2**; **Shah/Totty/Hicks/Martinowich Cell Reports dACC atlas — CHOSEN #3**
+- UM Ventures news — 0 items in window
+- UMSOM press releases — 1 item (Maron/Circulation Editor-in-Chief, non-scientific — dropped)
+- UMB central news — 0
+- BioBuzz Baltimore — 0 in window
+- hub.jhu.edu / hopkinsmedicine.org / ventures.jhu.edu — WebFetch returned 403 for all three; browser pass recommended (recorded as source-side unavailability per PIPELINE)
+
+Three schizophrenia items chosen. Sunday (2026-07-12) is a Portfolio Watch day — expect a Blackbird-portfolio-focused episode alongside the daily Sourcing Radar.
+=== 2026-07-10T02:36:18-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-11T02:10:16-07:00 start blackbird-brief ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011Ccv1j8waGKCd9wXQTTQPe
+=== 2026-07-11T02:13:06-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-11T02:13:06-07:00 AUP-refusal detected for blackbird-brief; retrying in 180s ===
+=== 2026-07-11T02:16:06-07:00 start blackbird-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:37:05-07:00 done  blackbird-brief (exit 0) (retry 1) ===
+=== 2026-07-11T02:37:05-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-07-11T02:37:05-07:00 session-limit reset at 5am is 8635s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:40:05-07:00 start blackbird-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:40:09-07:00 done  blackbird-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-11T02:40:09-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-07-11T02:40:09-07:00 session-limit reset at 5am is 8451s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:43:09-07:00 start blackbird-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:43:13-07:00 done  blackbird-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-11T02:43:13-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-07-11T02:43:13-07:00 session-limit reset at 5am is 8267s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:46:13-07:00 start blackbird-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:46:18-07:00 done  blackbird-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-11T02:46:18-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-07-11T02:46:18-07:00 session-limit reset at 5am is 8082s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:49:18-07:00 start blackbird-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:49:22-07:00 done  blackbird-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-12T02:10:08-07:00 start blackbird-brief ===
+All files are in place and stubs parse cleanly. Now the final summary for the cron log.
+
+## Blackbird Brief 2026-07-12 — run summary
+
+**Sunday two-episode day. Both scripts + stubs written; no TTS, no feed edit, no commit (SKIP_TTS mode — orchestrator handles).**
+
+**Files written:**
+- `podcasts/blackbird-brief/scripts/2026-07-12-radar-jhu-slusher-gcpii-pocd-hoag-emr-hydrogel.md`
+- `podcasts/blackbird-brief/scripts/2026-07-12-radar-jhu-slusher-gcpii-pocd-hoag-emr-hydrogel.rss-item.xml` (with `__LENGTH__` / `__DURATION__`)
+- `podcasts/blackbird-brief/scripts/2026-07-12-radar-jhu-slusher-gcpii-pocd-hoag-emr-hydrogel.commit-msg`
+- `podcasts/blackbird-brief/scripts/2026-07-12-portfolio-watch.md`
+- `podcasts/blackbird-brief/scripts/2026-07-12-portfolio-watch.rss-item.xml`
+- `podcasts/blackbird-brief/scripts/2026-07-12-portfolio-watch.commit-msg`
+- Portfolio memory updated (verification date; Slusher GCPII POCD indication-expansion trigger under §2 Gut-targeted bimodal therapeutic; Nxera NXE'149 GPR52 direct competitor detail under §2 Neuropsychiatric NewCo)
+
+**Sourcing Radar candidate funnel (2026-07-09 through 2026-07-12):**
+
+Sources scanned: PubMed with JHU / Kennedy Krieger / UMB / Lieber affiliation filters + bioRxiv JHU channel + JHTV newsroom + JHU Hub + UM Ventures news + Lieber news + UMSOM press. JHTV newsroom + JHU Hub returned HTTP 403 to WebFetch (Cloudflare); UM Ventures + Lieber sites had nothing new July 9-12.
+
+Substantive shortlist (Tier 1):
+- **[CHOSEN — LEAD]** Hasegawa/Kamiya + Slusher senior middle — astrocytic GCPII glymphatic-impairment POCD (Alzheimer's & Dementia, DOI 10.1002/alz.71666, PMID 42427142). *Indication-expansion for existing Blackbird Slusher GCPII portfolio into POCD via CNS-penetrant chemotype.*
+- **[CHOSEN — PICK 2]** Maqsood/Hoag UMSOP + Khashab/Ngamruengphong JHU GI — Na-alginate submucosal lifting hydrogel (Adv Healthc Mater, DOI 10.1002/adhm.71427, PMID 42435344). *Real device improvement on UM Ventures × Blackbird surface.*
+- **[CHOSEN — PICK 3 landscape note]** Prigge JHU Bloomberg SPH + Sigala Utah — apicoplast ACP-PKII antimalarial hub (bioRxiv 10.64898/2026.03.29.713301). *First-in-class target biology but antimalarial-margin below Blackbird's thesis.*
+- Wagner/Badjatia UMSOM Neurology — single-nostril transnasal cooling device (Ther Hypothermia Temp Manag, DOI 10.1177/21537658261468190). *Device-level clinical validation, 510(k)-scale IP.*
+- Thiessen Philbrook/Parikh JHU Nephrology — POC transplant kidney urinary biomarker panel (JASN, DOI 10.1681/ASN.0000001183). *Lateral-flow POC diagnostic for OPOs/transplant centers.*
+- Coon JHU APL — sleep-EEG foundation model (npj Digital Medicine, DOI 10.1038/s41746-026-02970-2). *Digital-health foundation-model pipeline.*
+- Danilova/Smith JHU SKCCC — FEST TCR replicate analysis toolkit (bioRxiv 10.64898/2026.06.18.733036). *Neoantigen-specific T-cell tool release.*
+- Weil/Peng/Cahan/Raman/Loeb (JHU/Einstein) — DDX3/RK-33 pediatric osteosarcoma (already covered 2026-07-08). *Excluded — prior coverage.*
+- Barrick JHU Biophysics — single-site vs pairwise-covariance protein stability (Nat Chem Biol, DOI 10.1038/s41589-026-02270-6). *JHU-GSK protein-engineering methodology.*
+- Zhang JHU Biophysics — reaction-diffusion condensate framework (bioRxiv 10.64898/2026.07.06.736877). *Condensate-modulator theory.*
+- DeFilippi/Christenson UMB — REPRIEVE HIV+statin inflammatory biomarkers (JACC Adv, DOI 10.1016/j.jacadv.2026.102984). *Diagnostic biomarker story.*
+- Ng Kennedy Krieger — WSS hair cortisol biomarker (Neuropsychology, DOI 10.1037/neu0001106). *Small-n rare-disease exploratory.*
+- Michael Lim JHU Neurosurgery co-author on Stanford anti-LAG-3 rGBM Ph1 (Nat Med, DOI 10.1038/s41591-026-04475-7). *Landscape mention only — weak JHU affiliation.*
+
+Excluded (already covered): Ahmed/Rehman CIB2/CIB3 (07-11), Ernst BECC470s (07-11), Merchenthaler/Prokai DHED (07-11), Huganir synaptic-turnover (07-09), Schwarcz/Buchanan KAT II (07-10), Weinberger/Pergola INGENE/MODULE (07-10), Martinowich/Hicks dACC (07-10), Baghel/Wong caspase-3-tau (07-07).
+
+Selection rationale: Slusher POCD paper is unusually valuable because it is indication-expansion for an existing Blackbird portfolio program on the world's deepest medchem stack in that target class — beats the Hoag hydrogel (real but 510(k)/device) and the Prigge apicoplast (real but antimalarial-margin).
+
+**Portfolio Watch candidate funnel (2026-07-06 through 2026-07-12):**
+
+Sources scanned: Fierce Biotech + Fierce Pharma + BioPharma Dive + Endpoints (paywall) + STAT + BioBuzz + company press feeds (Regeneron, Lilly, Sensorion, BMS, AbbVie, Roche, Amgen, Abivax, Vertex, GSK, Kynexis, Merck, Nxera) + FDA press. WebFetch to Fierce front page returned 403; used targeted searches.
+
+- **[CHOSEN — anchor]** Nxera Pharma NXE'149 GPR52 agonist actively shopping post-Boehringer walkaway Dec 2025 (Fierce Biotech + Pharmaceutical Technology). *Direct same-mechanism competitor to Lieber NewCo.*
+- **[CHOSEN]** Kynexis KYN-5356 KAT II Phase 2 CIAS Q4 2026 topline. *Reads out ahead of Lieber DC.*
+- **[CHOSEN]** BMS Cobenfy ADEPT-2 AD-psychosis reset (Psychiatric Times). *Muscarinic-class threat-softening for Lieber NewCo.*
+- **[CHOSEN]** FDA formally opened CBER OTP director search, applications due July 21 (Pink Sheet). *Aletira regulatory watch-item drag.*
+- **[CHOSEN]** Regeneron Otarmeni (ex-DB-OTO) sole approved OTOF-AAV, free-in-US floor. *Aletira non-OTOF positioning intact; bad for Sensorion.*
+- **[CHOSEN]** Merck tulisokibart ATLAS-UC Phase 3 induction win June 22 spillover + 3 new Ph2b indications. *Slusher GCPII IBD threat landscape.*
+- **[CHOSEN]** Vera TRUTAKNA (atacicept) FDA accelerated approval July 7 first dual BAFF+APRIL for IgAN. *Autoimmune cluster crowding read.*
+- **[CHOSEN]** Skyhawk SKY-0515 12-mo interim + FALCON-HD US expansion (HDBuzz + PR Newswire). *RNA translation-activator platform validation.*
+- **[CHOSEN]** FDA real-time clinical trials pilot RTCT selection criteria disseminated (FDA + Fierce). *1104health tailwind.*
+- Otsuka Voyxact/sibeprenlimab 2-yr VISIONARY IgAN eGFR readout July 2 — not selected; covered by Vera as autoimmune anchor.
+- Pfizer/Astellas/Merck Padcev+Keytruda MIBC neoadjuvant+adjuvant July 10 — noted; aSKY IO-landscape read did not need standalone item this week.
+- Revolution Medicines RAS-ON pipeline read — no fresh Q3 readout in window, deferred.
+- Aurinia LUPKYNIS PRESERVE lupus-nephritis Ph4 combo initiation July 6 — adjacent watch item, deferred.
+- Massive Bio Reticulum Nexus + April OpenAI partnership — folded into 1104health section as competitive pressure note.
+
+Source failures noted: Fierce front page (WebFetch 403), JHTV newsroom (WebFetch 403), JHU Hub (WebFetch 403), Endpoints (paywall — abstracts via search).
+
+The orchestrator will run TTS in a single batch, then insert both `.rss-item.xml` stubs (substituting `__LENGTH__` / `__DURATION__`) into `feed.xml`, upload the mp3s to R2, and commit — no action needed from this run.
+=== 2026-07-12T02:32:47-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-13T02:10:17-07:00 start blackbird-brief ===
+SKIP_TTS mode confirmed. Stubs are in place; the orchestrator will handle audio, feed edit, and commit. Summary below.
+
+---
+
+**Blackbird Brief — Sourcing Radar 2026-07-13 (Monday)**
+
+Files written:
+- `podcasts/blackbird-brief/scripts/2026-07-13-radar-jhu-hicks-spatial-agents-benchmark.md` — script (1293 spoken words; ~7 min at 1.2× TTS)
+- `.rss-item.xml` — RSS `<item>` stub with `__LENGTH__` / `__DURATION__` placeholders (parses OK)
+- `.commit-msg` — `Blackbird 2026-07-13: Radar — Chen/Hicks spatial-transcriptomics AI-agent benchmark canary + Lim/Grossman GBM LAG-3 Ph1 landscape context for Watkins ACSVL3`
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` — updated: top "Last verified" note refreshed; Chen/Hicks agent-eval extension added to Martinowich/Maynard/Hicks §2b entry; Lim GBM LAG-3 Ph1 landscape context added to Watkins ACSVL3 §2b entry.
+
+**Candidate funnel:**
+- bioRxiv JHU channel (via r.jina.ai): ~20 recent items scanned, 10 posted 2026-07-09 to 2026-07-10 with JHU authorship.
+- bioRxiv UMB search: 4 results in the 07-10 → 07-13 window (KIR2DL4 NIH-intramural; apicoplast repeat; Gao IMAGEN Stanford-primary; SMaHT genomics consortium) — none UMB-primary translational.
+- medRxiv JHU/UMB: 2 items (Jordan/Kritzer AD temporal modeling Mt-Sinai-primary; Shrestha enamel UNC-primary).
+- Kennedy Krieger channel: only the Watkins ACSVL3 preprint we already covered 2026-07-08.
+- Lieber Institute news: cookie-consent gate, no fresh items surfaced.
+- UMB News: HTTP 422 — one retry unsuccessful; proceeded with rest per PIPELINE.md.
+- Hopkins Medicine + JHTV newsrooms: dry (one fetal-disorder study, no research-translational items).
+- Nature Medicine search: surfaced Lim/Grossman/Ye anti-LAG-3 ± anti-PD-1 recurrent-GBM Phase 1 (2026-07-10).
+
+Substantive shortlist (JHU/UMB/Lieber-adjacent, 2026-07-09 → 2026-07-13):
+- **CHOSEN Pick 1 (lead, platform read)** — Chen (Stanford Stats) + Hicks (JHU Biostatistics, senior) "Mind the alignment gap: a spatial transcriptomics benchmark for scientific coding agents," bioRxiv 10.64898/2026.07.05.736638, 2026-07-09. https://www.biorxiv.org/content/10.64898/2026.07.05.736638v1
+- **CHOSEN Pick 2 (landscape context)** — Lim (Stanford, ex-JHU) + Grossman/Ye (JHU SKCCC) + ABTC 1501 anti-LAG-3 ± anti-PD-1 recurrent GBM Phase 1, *Nature Medicine* 2026-07-10, DOI 10.1038/s41591-026-04475-7. https://www.nature.com/articles/s41591-026-04475-7
+- Not picked: Gupta/Bishai JHU TB spatial immunity (no commercial angle); DDX3 v2 index date (v1 already covered 2026-07-08); Kliegman/Zhang biomolecular condensates (basic biophysics); Seydoux C. elegans P-granule mRNA (basic); Yang exposomic aging atlas (not JHU-primary); Bach malaria vaccine (not JHU-primary); Santana HFpEF heterogeneous effects (cardiology consortium); Kanchan orofacial clefts (population genetics, not translational).
+
+**Editorial framing.** Honest lean-Monday two-pick episode: Sunday cleared the strongest partner-institution items (Slusher/Kamiya GCPII POCD + Maqsood/Hoag hydrogel) and Monday morning offers no same-caliber sourceable lead. Pick 1 is a portfolio-scaffolding calibration signal from the same Hicks group producing the Lieber-Hopkins atlas platform. Pick 2 is same-week peer-reviewed landscape context that sharpens the Watkins ACSVL3 sourcing thesis Blackbird is diligencing. Baltimore preprint funnel expected to refill Tuesday/Wednesday on the normal end-of-week cadence.
+=== 2026-07-13T02:27:58-07:00 done  blackbird-brief (exit 0) ===

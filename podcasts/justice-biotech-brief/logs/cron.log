@@ -1007,3 +1007,186 @@ Episode is now complete. The previous 02:40 run wrote the script and RSS stub bu
 
 **Selection rationale:** First-in-class FDA approval of a novel-mechanism autoimmune biologic that closes the dual-BAFF+APRIL vs APRIL-only class question in IgAN and opens indication-expansion across the entire plasmablast/plasma cell autoimmune universe (lupus nephritis, SLE, myasthenia gravis, Sjögren's, membranous nephropathy). Directly on Justice's beat (translational immunology / autoimmune biologics / Rodgers lab Calibr). Preprint alternatives on the day were solid but preclinical/mechanistic — none beat a same-day novel-mechanism FDA approval. The mechanism-repurposing story (Merck-Serono's ~2010 SLE failure revived by Vera through disease-mechanism matching) is also a validated regulatory precedent that AI-native platform companies (Xaira, Iambic, Isomorphic) will reference forward.
 === 2026-07-08T03:15:40-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-07-09T02:40:09-07:00 start justice-biotech-brief ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011CcrGH3hZRkyjEyBhXmJ6T
+=== 2026-07-09T02:41:31-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-09T02:41:31-07:00 AUP-refusal detected for justice-biotech-brief; retrying in 180s ===
+=== 2026-07-09T02:44:31-07:00 start justice-biotech-brief (retry 1) ===
+Files written to `podcasts/justice-biotech-brief/scripts/`:
+- `2026-07-09-ateganosine-thio-101-part-c-cgas-sting-3l-nsclc.md` (script; ~975 words / ~6 min)
+- `2026-07-09-ateganosine-thio-101-part-c-cgas-sting-3l-nsclc.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders)
+- `2026-07-09-ateganosine-thio-101-part-c-cgas-sting-3l-nsclc.commit-msg`
+
+Sources:
+- [MAIA globenewswire release, July 8, 2026](https://www.globenewswire.com/news-release/2026/07/08/3324207/0/en/MAIA-Biotechnology-Reports-Strong-Initial-Efficacy-Data-in-Third-Line-Non-Small-Cell-Lung-Cancer-from-Phase-2-THIO-101-Part-C-Expansion-Trial.html)
+- [Nandakumar et al., Cancer Cell 2020, "Telomere Stress Potentiates STING-Dependent Anti-tumor Immunity"](https://www.cell.com/cancer-cell/fulltext/S1535-6108(20)30270-1)
+- [MAIA ateganosine pipeline page](https://maiabiotech.com/pipeline/thio/)
+=== 2026-07-09T02:54:36-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-07-10T02:40:09-07:00 start justice-biotech-brief ===
+All three artifacts written (script, RSS stub, commit-msg stub) and the RSS stub parses as valid XML. SKIP_TTS mode means no audio/publish/feed/commit steps here — the orchestrator does those after batch TTS on Garibaldi.
+
+## Episode selected
+
+**Title:** FT819 — off-the-shelf, iPSC-derived, TRAC-integrated 1XX anti-CD19 CAR-T with complete TCR knockout produces early clinical response in treatment-resistant systemic sclerosis without fludarabine (and in one case with no lymphoconditioning at all); Fate Therapeutics FT819-102 basket update, ISSCR Montreal July 9, 2026.
+
+**Files:**
+- `podcasts/justice-biotech-brief/scripts/2026-07-10-ft819-ipsc-cd19-car-t-scleroderma-fluda-free.md`
+- `podcasts/justice-biotech-brief/scripts/2026-07-10-ft819-ipsc-cd19-car-t-scleroderma-fluda-free.rss-item.xml`
+- `podcasts/justice-biotech-brief/scripts/2026-07-10-ft819-ipsc-cd19-car-t-scleroderma-fluda-free.commit-msg`
+
+## Candidate funnel
+
+**bioRxiv (2026-07-08 to 2026-07-09):** 939 unique entries pulled (paginated 33 pages via details API, cursor step 30); 62 items matched relevance keywords (VEGF, PD-L1, TCE, bispecific/trispecific, CAR-T, ADC, JAK, checkpoint, immunotherapy). Substantive shortlist after discarding spurious "myeloid"/"checkpoint" hits and off-topic keyword matches:
+- Dual HER2/HER3 ADCs in HER2-mutant lobular breast cancer — cancer biology, 2026-07-08 (10.64898/2026.06.18.733194) — strong candidate for the ADC beat.
+- Coordinated CD163⁺ monocyte + CD177⁺ neutrophil expansion marks severe neurotoxicity after CD19 CAR-T — immunology, 2026-07-09 (10.64898/2026.07.07.737099) — CAR-T neurotoxicity mechanism.
+- Radioligand therapy + CAR-T overcomes immunosuppressive prostate TME — 2026-07-09 (10.64898/2026.07.02.736191).
+- CLA-targeting CAR for PDAC — 2026-07-09 (10.64898/2026.07.03.736395).
+- Integrin αvβ8-mediated TGFβ blockade for antitumor immunity — 2026-07-09 (10.64898/2026.07.06.735099).
+- S100A9-dependent CXCR2hi neutrophils drive checkpoint resistance in metastatic TNBC — 2026-07-08 (10.64898/2026.06.09.731132).
+- STING agonist vaccine for TB (MS2 viral capsids) — 2026-07-09 (10.64898/2026.07.03.736450).
+
+**News & product launches (Fierce Biotech, STAT, Endpoints; last 1–2 days):** Endpoints RSS returned an empty feed (1 heading only, likely feed transient issue — proceeded with the others per PIPELINE.md). Fierce + STAT captured. Relevant items 2026-07-09:
+- **Fate Therapeutics FT819 off-the-shelf CD19 CAR-T early response in treatment-resistant SSc, ISSCR Montreal — CHOSEN.**
+- ARPA-H $160M for custom gene-editing medicines (funder announcement, not a Justice-beat pick).
+- Roche halting tominersen + second Huntington's asset — neurology, not on beat.
+- AstraZeneca/Ionis eplontersen (Wainua) ATTR-CM trial failure — cardio/amyloid, not on beat.
+- Prime wins Beam patent arbitration — off-beat.
+
+**Policy/funder (ARPA-H, NIH, NSF):** ARPA-H $160M gene-editing tranche was the day's material item; noted above.
+
+**Selection rationale.** FT819 is a double-hit on Justice's stated interests (CAR-T + autoimmune biologics), with a clean primary source (Fate's ISSCR PDF deck) and a genuinely non-obvious design lesson — no fludarabine and, in Regimen B, no lymphoconditioning at all — that materially reshapes the CAR-T-in-autoimmune modality if it holds. The HER2/HER3 ADC preprint is the strong runner-up and would be a legitimate pick on a lighter news day; the FT819 story wins on newsworthiness + design-lesson significance + Justice-beat alignment.
+=== 2026-07-10T02:48:24-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-11T02:40:16-07:00 start justice-biotech-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:40:20-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-11T02:40:20-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-11T02:40:20-07:00 session-limit reset at 5am is 8440s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:43:20-07:00 start justice-biotech-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:43:24-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-07-11T02:43:24-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-11T02:43:24-07:00 session-limit reset at 5am is 8256s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:46:24-07:00 start justice-biotech-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:46:28-07:00 done  justice-biotech-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-11T02:46:28-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-11T02:46:28-07:00 session-limit reset at 5am is 8072s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:49:28-07:00 start justice-biotech-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:49:32-07:00 done  justice-biotech-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-11T02:49:32-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-11T02:49:32-07:00 session-limit reset at 5am is 7888s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:52:32-07:00 start justice-biotech-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:52:36-07:00 done  justice-biotech-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-11T02:52:36-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-11T02:52:36-07:00 session-limit reset at 5am is 7704s away (>3600s cap); sleeping 180s ===
+=== 2026-07-11T02:55:36-07:00 start justice-biotech-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-11T02:55:40-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-11T02:55:40-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
+=== 2026-07-11T05:05:00-07:00 start justice-biotech-brief ===
+Script + stubs written. In SKIP_TTS mode I skip steps 2-4 and the commit — the orchestrator handles those after batch TTS. Now the audit summary.
+
+**Episode: Ris-Rez (risvutatug rezetecan / HS-20093) — first-ever Phase 3 OS win for a B7-H3 ADC in any tumor type**
+
+- Files written: `2026-07-11-ris-rez-b7h3-adc-artemis-008-sclc-ph3-os.md` + `.rss-item.xml` + `.commit-msg`
+- Primary source: GSK press release, Fri Jul 10, 2026 — https://www.gsk.com/en-gb/media/press-releases/gsk-s-licensor-hansoh-pharma-announces-positive-phase-iii-results-for-ris-rez-in-china-patient-population/
+- Angle: first pivotal proof-of-concept for the B7-H3 target class in *any* modality, in the ADC-graveyard disease SCLC — direct target-level de-risking for Calibr's adjacent B7-H3 CAR-T / TCE / radioconjugate work. Ties to the July 6 Novartis-Myricx NMTi episode (crowded target, DXd-class cross-resistance) and July 8 THIO-101 episode (TOP1i-driven DNA damage → cGAS/STING → PD-1 sensitization).
+
+**Candidate funnel (2026-07-10 → 2026-07-11 hard window):**
+
+- **bioRxiv**: 414 preprints scanned (389 on 07-10, 25 on 07-11, full paginated pull); 17 survived keyword filter; substantive shortlist:
+  - PTIm-mAb AI benchmark across 11 approved bispecifics (10.64898/2026.07.07.736933)
+  - VACINUS multi-epitope mRNA/LNP neoantigen vaccine (10.64898/2026.07.06.736667)
+  - APOBEC3 1q23.3 immune-cloaking mechanism (10.64898/2026.07.01.735125)
+  - TFAP2A drug-resistance vs antitumor immunity in melanoma (10.64898/2026.07.08.735861)
+  - MSS CRC immune-cold vulnerability prioritization (10.64898/2026.07.04.736484)
+  - No VEGFxPD-L1, JAK-ADC, or trispecific TCE preprints in window
+- **News (Fierce Biotech, Endpoints, STAT, Fierce Pharma, BioPharma Dive)**: homepage 403s on Fierce/Endpoints; keyword-searched around them. Substantive shortlist:
+  - Sanofi Sarclisa Escena FDA approval — subQ on-body injector, MM (format story)
+  - Merck Keytruda + Astellas/Pfizer Padcev perioperative MIBC FDA approval (already covered EU CHMP on 2026-06-27)
+  - **GSK/Hansoh Ris-Rez B7-H3 ADC ARTEMIS-008 Ph3 OS win in SCLC ← CHOSEN**
+  - Leads Biolabs opamtistomig (PD-L1×4-1BB) NMPA priority review — extrapulmonary neuroendocrine
+  - WuXi Biologics MFG8 FDA PLI clearance (supply-chain adjacent)
+  - Corcept relacorilant PDUFA (GR antagonist, ovarian; calendar only)
+- **Funders (ARPA-H, NIH, NSF)**: nothing in-window across all three.
+
+**Why Ris-Rez beat the field:** the only genuine Phase 3 pivotal readout in-window, on a target already dominating Justice's beat, in a disease that had been an ADC dead zone, with a direct de-risking read across modalities. Padcev/Keytruda MIBC was the alternative but was covered from the EU angle two weeks ago. No new episode by SKIP_TTS convention — orchestrator will TTS, publish, feed-update, and commit.
+=== 2026-07-11T05:13:55-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-12T02:40:09-07:00 start justice-biotech-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:40:13-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-12T02:40:13-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-12T02:40:13-07:00 session-limit reset at 5am is 8447s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:43:13-07:00 start justice-biotech-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:43:17-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-07-12T02:43:17-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-12T02:43:17-07:00 session-limit reset at 5am is 8263s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:46:17-07:00 start justice-biotech-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:46:22-07:00 done  justice-biotech-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-12T02:46:22-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-12T02:46:22-07:00 session-limit reset at 5am is 8078s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:49:22-07:00 start justice-biotech-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:49:26-07:00 done  justice-biotech-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-12T02:49:26-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-12T02:49:26-07:00 session-limit reset at 5am is 7894s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:52:26-07:00 start justice-biotech-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:52:30-07:00 done  justice-biotech-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-12T02:52:30-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-12T02:52:30-07:00 session-limit reset at 5am is 7710s away (>3600s cap); sleeping 180s ===
+=== 2026-07-12T02:55:30-07:00 start justice-biotech-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-12T02:55:34-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-12T02:55:34-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
+=== 2026-07-12T05:05:00-07:00 start justice-biotech-brief ===
+Script + stubs written. SKIP_TTS=1 is set, so the orchestrator will handle audio, R2 publish, feed update, and commit.
+
+**Today's pick:** Padcev + Keytruda US FDA approval (Jul 10) based on EV-304 / KEYNOTE-B15 — the head-to-head Phase 3 win over neoadjuvant gemcitabine + cisplatin in cisplatin-eligible MIBC. Read together with EV-303 (June 27 EU cisplatin-ineligible episode), the combined US label displaces cisplatin from first-line perioperative MIBC regardless of eligibility. HR 0.53 EFS, HR 0.65 OS, 55.8% vs 32.5% pCR. Directly on Justice's ADC + checkpoint beat and the natural follow-up to the June 27 episode that flagged EV-304 as the harder efficacy bar.
+
+### Candidate funnel
+
+- **bioRxiv 2026-07-11 → 2026-07-12** — full details API pulled (94 preprints across 4 cursor pages, all deduplicated). Filtered on title+abstract with VEGF/PD-L1/PD-1/T cell engager/TCE/bispecific/trispecific/CAR-T/ADC/JAK/immunotherapy/checkpoint keywords — 0 direct hits. Broadened to any oncology/therapy keyword; nearest-adjacent items were (a) structure-guided NAZ-mAb targeting p95-HER2 (10.64898/2026.07.07.736817, bioinformatics category, computational antibody design, not clinical) and (b) spatial mitochondrial lineage tracing in osteosarcoma (10.64898/2026.07.09.737611, bioinformatics, mechanism-only). Neither cleared the beat bar vs the news candidate.
+- **News (Fierce/Endpoints/STAT/BioPharma Dive)** — Jul 9–10 shortlist:
+  - Padcev + Keytruda US FDA approval for MIBC regardless of cisplatin eligibility (EV-304/KEYNOTE-B15, Merck/Pfizer/Astellas, Jul 10) — **CHOSEN**
+  - Sarclisa Escena FDA approval (SC isatuximab-irfc via CirCLIQ on-body injector, Sanofi, Jul 9–10) — first anticancer on-body injector; interesting delivery-innovation story but off Justice's core TCE/CAR-T/ADC/autoimmune-biologics beat
+  - GSK/Hansoh Ris-Rez ARTEMIS-008 SCLC Phase 3 OS win (Jul 10) — already covered as yesterday's Jul 11 episode; excluded per PIPELINE.md re-invocation rule
+  - Forte FB102 Phase 1b vitiligo (anti-CD122, Jul 10) — early-stage autoimmune signal, secondary to Padcev
+  - Novartis-Myricx NMTi ADC deal — already covered Jul 7 episode; out of window and out of scope
+- **ARPA-H / NIH / NSF** — ARPA-H THRIVE in-vivo precision genetic medicine cohort awards (Jul 9) noted; adjacent to Justice's beat but non-oncology/non-immunology and secondary to the FDA approval story.
+
+**Chosen:** `2026-07-12-padcev-keytruda-ev-304-mibc-us-fda-approval` — first US FDA approval of a platinum-free perioperative regimen for MIBC regardless of cisplatin eligibility, on a head-to-head Phase 3 vs neoadjuvant gemcitabine + cisplatin (the 30-year perioperative SOC).
+=== 2026-07-12T05:16:19-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-13T02:40:17-07:00 start justice-biotech-brief ===
+Script, RSS item stub, and commit-msg stub written. Publishing final summary for cron.log.
+
+Justice's Biotech Brief 2026-07-13 — episode ready for batch TTS. Selected item: PD-1-directed CAR-T cell for rheumatoid arthritis from Ido Amit's group at Weizmann (bioRxiv preprint posted July 12, 2026, doi 10.64898/2026.07.09.737520). Design combines (i) PDCD1 as a disease-state antigen selectively marking synovial disease-associated T cells (identified by single-cell multi-omics of human RA + mouse arthritis models), (ii) NR4A2-driven CAR-responsive biosensor for synovium-restricted activity, and (iii) sTNFRII armoring cassette that delivers Enbrel-mechanism anti-inflammatory tone locally and drives a tissue-reparative myeloid state. Preprint is abstract-only at the time of recording (bioRxiv HTML body not yet rendered ~24-36h post-posting); flagged in the script.
+
+Files written (SKIP_TTS=1 mode — no audio, no publish, no commit):
+- podcasts/justice-biotech-brief/scripts/2026-07-13-pd1-car-t-synovium-nr4a2-tnfrii-arthritis.md
+- podcasts/justice-biotech-brief/scripts/2026-07-13-pd1-car-t-synovium-nr4a2-tnfrii-arthritis.rss-item.xml (with `__LENGTH__` and `__DURATION__` placeholders)
+- podcasts/justice-biotech-brief/scripts/2026-07-13-pd1-car-t-synovium-nr4a2-tnfrii-arthritis.commit-msg
+
+Candidate funnel:
+
+- bioRxiv 2026-07-11 to 2026-07-13, details API, 6 pages pulled (cursor 0/30/60/90/120/150) — 164 unique preprints. Full corpus filtered by keyword set from PROMPT.md (VEGF, PD-L1/PD-1, TCE, bispecific/trispecific, CAR-T, ADC, JAK, checkpoint, plus target-specific tokens Nectin, HER2/3, EGFR, Claudin, BCMA, CD-nn, GPRC5D, DLL3, B7-H3, MMAE, deruxtecan, IL-2/13/15/18, TIGIT, LAG-3, TIM-3, 4-1BB, Treg, trog). 2 substantive hits:
+  - Synovium-Restricted Armored PD-1-Targeted CAR-T Cells Reprogram Immunity and Resolve Experimental Arthritis (Amit / Weizmann, immunology, 2026-07-12, doi 10.64898/2026.07.09.737520) — **CHOSEN**
+  - Structure-guided computational design and mechanistic understanding of the p95HER2-targeting NAZ-mAb antibody and its variants (bioinformatics, 2026-07-11, doi 10.64898/2026.07.07.736817) — computational antibody engineering paper, less mechanistically novel and no in vivo therapeutic data.
+- Fierce Biotech / Fierce Pharma — HTTP 403 on this IP, one retry same result. Skipped per source-level-failure rule.
+- Endpoints News — HTTP 403 (redirects to endpoints.news which also 403s). Skipped.
+- STAT News — accessible; July 12-13 headlines are pancreatic cancer daraxonrasib landscape piece, AAIC tau coverage, HHS SSRI deprescribing — none in Justice's beat.
+- BioPharma Dive — July 10 headlines already covered on prior episodes (Vera TRUTAKNA / Padcev-Keytruda EV-304 / GSK-Hansoh Ris-Rez / AstraZeneca-Ionis Wainua Cardio-TTRansform failure / Roche-Ionis tominersen discontinued). No new July 12-13 items in target list.
+- Q32 Bio SIGNAL-AA Part B 36-week readout — scheduled for 8:00am ET today (about 3 hours after this run), so data not yet released; cannot cover today.
+- Vaccinex pepinemab AAIC data — Alzheimer's, out of beat.
+- Bausch + Lomb BL1107 glaucoma miss — out of beat.
+- Forte Biosciences FB102 vitiligo Ph1b positive — autoimmune-adjacent but skin-only Phase 1b nanocap; the Amit preprint is a stronger CAR-T + autoimmune fit for Justice.
+- ARPA-H / NIH / NSF press pages — latest items July 9 and earlier; no fresh July 12-13 announcements in scope.
+
+Chosen: bioRxiv Amit lab PD-1-directed CAR-T for arthritis (2026-07-12). Selected over the p95HER2 paper on directly-relevant-to-Justice grounds (CAR-T + autoimmune + PD-1 vs. computational antibody design), and over Q32 Bio SIGNAL-AA on data-availability (Q32 readout is post-run).
+=== 2026-07-13T02:50:10-07:00 done  justice-biotech-brief (exit 0) ===
