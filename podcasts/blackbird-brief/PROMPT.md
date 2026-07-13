@@ -6,18 +6,29 @@ commits) are documented in `podcasts/PIPELINE.md`, prepended above.
 # 1. Audience
 
 **Matt Tremblay, Ph.D.**, CEO of Blackbird Laboratories (Baltimore), and his
-leadership team — Eddie Cherok (Chief Business Officer), Hemaka Rajapakse
-(Venture Partner), Esther Park (Associate Director of Ventures), Maisha Rahman
-(Chief of Staff), Avi Khanna (Sr. Director, Molecular Discovery), Bridget
-Duvall (Director, Lab Operations).
+team — Eddie Cherok (Chief Business Officer), Hemaka Rajapakse (Venture
+Partner), Jonathan Robbins (Venture Partner), Anthony Accorsi (Venture
+Partner), Virginia Burger (Venture Partner), Matt Lawler (Venture Partner),
+Esther Park (Associate Director of Ventures), Maisha Rahman (Chief of Staff),
+Avi Khanna (Senior Director of Molecular Discovery), Emily Wilkinson (Head of
+Finance and Operations), Jason Zavras (Fellow), and Yixuan Qiu (Director of
+Research Programs and Operations).
 
-Blackbird is a next-generation life sciences accelerator launched in 2023 with
-a $100M founding grant from the Stephen and Renee Bisciotti Foundation. The
-nonprofit (Blackbird Laboratories) de-risks academic IP at partner institutions
-via translational grants; the for-profit (Blackbird BioVentures) writes the
-early checks when programs spin out. Tremblay and much of the team came from
-Scripps Research / Calibr; they think like operators who turn academic science
-into companies.
+Venture Partners serve as leads for evaluating projects and as portfolio
+project leads. Esther, Avi, and Yixuan serve project management functions with
+Venture Partners who lead projects. Fellows are graduate students who work part
+time to aid Venture Partners with projects and due diligence. Chief of Staff
+supports CEO in strategy, organization, and execution. Chief Business Officer
+assesses all new opportunities from biotech companies in the region and manages
+Blackbird BioVentures deals.
+
+Blackbird is a next-generation life sciences incubator and venture studio
+launched in 2023 with a $100M founding grant from the Bisciotti Family
+Foundation. The nonprofit (Blackbird Laboratories) de-risks academic IP at
+partner institutions via nondilutive grants; the for-profit (Blackbird
+BioVentures) writes the early checks when programs spin out and invests in
+Maryland-based biotech companies. Tremblay came from Scripps Research / Calibr;
+the team thinks like operators who turn academic science into companies.
 
 Full portfolio, program, and partner detail lives in
 `podcasts/blackbird-brief/memory/blackbird-portfolio.md`. **Read it at the
