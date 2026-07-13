@@ -31,6 +31,7 @@ import glob
 import json
 import os
 import re
+import subprocess
 import sys
 import urllib.error
 import urllib.request
@@ -78,21 +79,53 @@ def events_for_date(log_path: Path, target_date: dt.date) -> list[tuple[dt.datet
     return out
 
 
+def committed_feed_source(feed_path: Path) -> str | None:
+    """Return the HEAD-committed contents of feed_path, or None if git can't
+    resolve it (not a git repo, path never committed, etc.).
+
+    publish_pending.py inserts the RSS item into the working-tree feed.xml
+    *before* running the commit, so the working tree can carry a "published"
+    item that the commit — and therefore `git push`, and therefore the URL
+    subscribers fetch — never received. In 2026-07 a stale pre-commit-hook
+    failure blocked publish commits for four straight days while the working
+    tree kept growing. Checking HEAD instead of the working tree is what
+    catches that.
+    """
+    try:
+        rel = feed_path.relative_to(REPO)
+    except ValueError:
+        return None
+    try:
+        out = subprocess.run(
+            ["git", "show", f"HEAD:{rel.as_posix()}"],
+            cwd=REPO, capture_output=True, text=True, timeout=10,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+    if out.returncode != 0:
+        return None
+    return out.stdout
+
+
 def unpublished_basenames(feed_path: Path, mp3s: list[Path]) -> list[str]:
-    """Return the subset of mp3 basenames (stems) that don't appear in feed.xml.
+    """Return the subset of mp3 basenames (stems) that aren't in the committed
+    feed.xml.
 
     publish_pending.py writes the basename into the RSS <guid> and enclosure
-    URL, so a simple substring test is enough — and misses the whole
-    per-show publish-side failure surface (feed edit + R2 upload + git
-    commit + push) that daily_audit's MP3-exists check silently green-lit
-    for two full days in 2026-07 while nothing was actually shipping.
+    URL, so a substring test is enough. We check the HEAD-committed version
+    rather than the working tree because the working tree lies during a
+    publish outage (see committed_feed_source docstring). If git can't tell
+    us what's committed, fall back to the working tree — better than
+    erroring out of the daily audit.
     """
-    if not feed_path.exists():
-        return [m.stem for m in mp3s]
-    try:
-        feed_src = feed_path.read_text(errors="replace")
-    except OSError:
-        return [m.stem for m in mp3s]
+    feed_src = committed_feed_source(feed_path)
+    if feed_src is None:
+        if not feed_path.exists():
+            return [m.stem for m in mp3s]
+        try:
+            feed_src = feed_path.read_text(errors="replace")
+        except OSError:
+            return [m.stem for m in mp3s]
     return [m.stem for m in mp3s if m.stem not in feed_src]
 
 
