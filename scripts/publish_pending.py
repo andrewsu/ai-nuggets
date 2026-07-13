@@ -146,23 +146,31 @@ def publish_one(slug, script, mp3, basename):
             log(f"  stderr: {r.stderr[:400]}")
         return False
 
-    # Read commit message, remove stubs, commit.
     commit_msg = stub_msg.read_text().strip()
-    stub_xml.unlink()
-    stub_msg.unlink()
 
     add_target = str((show_dir.relative_to(REPO)))
+    # Exclude the transient stubs from `git add` via pathspec so they never
+    # enter the index. Leaving them on disk until *after* the commit succeeds
+    # means a rejected commit (e.g. pre-commit hook) doesn't destroy the
+    # commit message the next retry needs.
+    #
     # flock so concurrent invocations don't stomp the index. (Not strictly
     # required in this script — we publish serially — but cheap insurance.)
     r = subprocess.run(
         ["flock", GIT_LOCK, "bash", "-c",
-         f"git add {add_target} && git commit -m \"$(cat <<'GITCOMMITEOF'\n{commit_msg}\nGITCOMMITEOF\n)\""],
+         f"git add {add_target} "
+         f"':(exclude,glob){add_target}/scripts/*.rss-item.xml' "
+         f"':(exclude,glob){add_target}/scripts/*.commit-msg' "
+         f"&& git commit -m \"$(cat <<'GITCOMMITEOF'\n{commit_msg}\nGITCOMMITEOF\n)\""],
         cwd=REPO, capture_output=True, text=True,
     )
     if r.returncode != 0:
         log(f"  FAIL: git commit rc={r.returncode}")
         log(f"  stderr: {r.stderr[:400]}")
         return False
+
+    stub_xml.unlink()
+    stub_msg.unlink()
     log(f"  committed {slug}/{basename}")
     return True
 
