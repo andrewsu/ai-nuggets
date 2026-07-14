@@ -2194,3 +2194,47 @@ Both episodes drafted and stubs written. Since `SKIP_TTS=1`, I did not run TTS, 
 
 **Fetches:** Full-text read on Biomni (bioRxiv preprint via fetch_preprint.py — succeeded, ~70KB body) and Stanford HAI, Biogen/Eisai AAIC press release, and Endpoints/BioPharma Dive coverage on Roche-HD and GSK-Alector. Note: Foresite Labs / Foresite Capital portfolio has no direct new news July 12–13, so the spotlight leans on the AI-in-drug-discovery focus area and connects to yesterday's AI-native peer-set discussion.
 === 2026-07-13T02:34:38-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-14T02:20:10-07:00 start calibr-briefing ===
+Both episodes for calibr-briefing 2026-07-14 are staged in SKIP_TTS mode. The orchestrator (`publish_pending.py`) will pick them up after batch TTS.
+
+## Files written
+
+- `podcasts/calibr-briefing/scripts/2026-07-14-pharma-headlines.txt` — 5-item headlines script (~1500 words)
+- `podcasts/calibr-briefing/scripts/2026-07-14-pharma-headlines.rss-item.xml` — RSS stub w/ `__LENGTH__` + `__DURATION__` placeholders
+- `podcasts/calibr-briefing/scripts/2026-07-14-pharma-headlines.commit-msg` — commit message
+- `podcasts/calibr-briefing/scripts/2026-07-14-gsk-jemperli-azur1-dmmr-rectal-spotlight.txt` — 8-thread spotlight (~2400 words)
+- `podcasts/calibr-briefing/scripts/2026-07-14-gsk-jemperli-azur1-dmmr-rectal-spotlight.rss-item.xml` — RSS stub
+- `podcasts/calibr-briefing/scripts/2026-07-14-gsk-jemperli-azur1-dmmr-rectal-spotlight.commit-msg` — commit message
+
+## Candidate funnel (July 14, 2026)
+
+**Sources scanned:**
+- Fierce Biotech / Fierce Pharma: web index (recent July 13 items surfaced; no July 14 unique items yet)
+- Endpoints News: web index (activity summary + Endpoints-11 announcement; no unique July 14 items)
+- STAT News / Pharmalot: web index (recent M&A + FDA-approvals macro pieces; no unique July 14 items)
+- BioPharma Dive: web index (VC funding tracker July 13; FDA hub-and-spoke rule July 13)
+- The Pharmaletter / RTTNews / BusinessWire / GlobeNewswire: multiple July 13 releases
+- BioSpace / PRNewswire: multiple July 12–13 releases
+- GSK, Ipsen, Q32 Bio, Insilico, Eisai investor-relations pages (full-text fetched for spotlight)
+
+**Substantive shortlist (July 12–14, 2026, ranked by significance for Travis's mandate):**
+
+- **GSK AZUR-1 Jemperli dostarlimab (Mon Jul 13)** — Ph2 pivotal in dMMR/MSI-H stage II/III locally advanced rectal cancer; 48-pt 6-mo completer 100% cCR w/ no surgery required; scale-up of Cercek/Diaz 2022 NEJM landmark; FDA National Priority Review Voucher — **HEADLINE #1 + SPOTLIGHT**
+- **Ipsen Iqirvo ELSPIRE Ph3b PBC (Mon Jul 13)** — 85% vs 23% ALP normalization at Wk 52 in milder-ALP earlier-stage PBC; potentially doubles addressable pop — **HEADLINE #2**
+- **Q32 Bio bempikibart SIGNAL-AA Ph2a Part B 36-wk (Mon Jul 13)** — anti-IL-7Rα in severe/very-severe alopecia areata including JAK-failure; shares +64% — **HEADLINE #3**
+- **Insilico + China Medical System (Sun Jul 12)** — 1.2B RMB (~$165M) AI-drug-discovery CNS deal via PandaOmics — **HEADLINE #4**
+- **Eisai etalanetug at AAIC 2026 London (Sun-Mon Jul 12–13)** — anti-MTBR-tau mAb, >90% plasma eMTBR-tau243 reduction at 9 mo in DIAD — **HEADLINE #5**
+- Bausch + Lomb BL1107 glaucoma Ph2 fail (Jul 9) — too stale, already covered in prior episode
+- Elevar rivoceranib/camrelizumab CRL (Jul 10) — too stale
+- Pharvaris deucrictibant NDA acceptance (Jul 6) — too stale
+- Drug Farm $55M Series D ALPK1 DF-003 (Jul 13) — solid AI-adjacent story but too niche for headlines given stronger candidates
+- Chemomab-Scipher AI-guided RA merger (Jul 12) — dropped for space
+- Vertex $10B Crinetics bid — already spotlighted Jul 7
+- INmune Bio XPro AAIC data — already covered in July 13 headlines
+
+**Sources with issues:**
+- Insilico press release direct URL (`insilico.com/news/…`) — connection refused; used mirror at stockhausen.org + techtimes.com
+- GSK press release URL returned the 2024 update rather than the July 13, 2026 announcement; verified July 13 details via RTTNews + MedCity News + BioPharm International
+
+**Chosen:** headlines above + spotlight on GSK Jemperli AZUR-1 (biggest paradigm-shift-in-the-making story of the week, hits Travis's general-therapeutic-development mandate hard, threads back to Calibr-Skaggs mechanism-based precision-medicine platform bet).
+=== 2026-07-14T02:35:35-07:00 done  calibr-briefing (exit 0) ===
