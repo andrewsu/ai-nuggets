@@ -2469,3 +2469,39 @@ Shortlist (biomedical + agentic, in-window, not already covered in a shipped epi
 
 Why LongMedBench beat the shortlist: it is the first benchmark that measures what clinical AI vendors pitch — long-horizon reasoning across a real longitudinal EHR — and it surfaces a clean, replicable, opinionated finding (implicit temporal reasoning collapses from tau 0.925 to 0.423, RAG memory does not rescue it). Highest editorial payload per minute of listening for Andrew's agentic-biomedical audience, and the last four episodes have leaned single-cell / literature-mining / generalist-agent, so a benchmark-and-limits piece is a good change of pace.
 === 2026-07-13T02:08:40-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-14T02:00:10-07:00 start biomedical-agentic-ai ===
+XML is valid, paper URL is live. Under `SKIP_TTS=1`, I stop here — TTS, R2 publish, feed edit, and commit are handled by the batch orchestrator.
+
+## Summary
+
+Today's episode for `biomedical-agentic-ai` is written. `SKIP_TTS=1` so batch TTS + publish + commit happen later via `scripts/publish_pending.py`.
+
+**Pick:** NAIS — the NVAITC AI Scientist (arXiv 2607.11084, posted 2026-07-13). NVIDIA AI Technology Center + China Medical University Hospital. Governed end-to-end agentic research system that ran a real 286,422-person hypertension GWAS through a broker/Kubeflow compliance boundary — the agent never touched a row of PHI. The load-bearing editorial claim: phenotype design (ICD-10+meds vs. lab-BP thresholds, 3,950-subject discordance, medication audit finding only 125 had any antihypertensive on record) is where the human-AI loop earned its keep, not PLINK2 execution.
+
+Files written:
+- `scripts/2026-07-14-nais-governed-ai-scientist-hospital-gwas-phenotype-orchestration.md` — 1037 spoken-body words (under 1150 cap)
+- `.rss-item.xml` — RSS item with `__LENGTH__`/`__DURATION__` placeholders; XML validated
+- `.commit-msg` — commit message stub
+
+## Candidate funnel — 2026-07-14 biomedical-agentic-ai
+
+- **bioRxiv** (2026-07-12 to 2026-07-13, full pagination): 5 substantive agentic/LLM/KG hits after spurious-match filter:
+  - `10.64898/2026.07.08.737248` — OCellus (LM framework for single-cell/spatial) — deferred from yesterday's shortlist; single-cell theme covered heavily last 5 episodes
+  - `10.64898/2026.07.10.737551` — ProtBLIP2-SST protein function prediction — foundation model, not agentic
+  - `10.64898/2026.07.08.737218` — Gene regulatory networks paper (loose "autonomy" hit)
+  - `10.64898/2026.07.10.737745` — biofilms/biological transduction (spurious keyword)
+  - `10.64898/2026.07.12.738054` — NPC1 deficiency (spurious "immune program")
+
+- **arXiv** (`/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, 2026-07-11 onward): 19 biomedical+agentic hits after tightening; substantive shortlist:
+  - **[CHOSEN]** `2607.11084` — NVAITC AI Scientist / hypertension GWAS (2026-07-13) — full text via jina reader
+  - `2607.10275` — Information-seeking failures of LLMs in agentic clinical reasoning (2026-07-11) — themed close to yesterday's LongMedBench limits piece; avoid back-to-back
+  - `2607.11175` — Self-Evolving Clinical Systems (2026-07-13) — survey/roadmap, less concrete
+  - `2607.11079` — SDABench "Are LLMs Ready for Scientific Discovery" (2026-07-13) — broad, multi-domain
+  - `2607.10522` — AMID autonomous medical imaging model dev (2026-07-12) — narrower scope
+  - `2607.11683` — RAGU GraphRAG engine (2026-07-13) — infra-focused, biomed benchmark is secondary
+  - `2607.11287` — Cardiac CT foundation model (2026-07-13) — foundation model, not agentic
+
+- **PubMed / news / funders**: skipped after the arXiv/bioRxiv shortlist saturated on a governance-first agent narrative that directly matches Andrew's KG/open-science/agentic-AI focus. No ARPA-H/NIH/NSF launches in window.
+
+**Why NAIS beat the shortlist**: it is the first paper putting an agentic AI scientist inside a hospital under real governance constraints with a 286k-person biomedical case study, and the phenotype-design-vs-execution editorial framing (3,950 discordant subjects → medication audit → only 125 on antihypertensives → team-directed rerun) is the highest editorial payload per minute for Andrew's audience. Diversifies from the last two limits-of-LLMs pieces with a positive-result deployment demo, and directly speaks to the governance layer that biomedical institutions are wrestling with.
+=== 2026-07-14T02:05:35-07:00 done  biomedical-agentic-ai (exit 0) ===
