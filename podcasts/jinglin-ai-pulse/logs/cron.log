@@ -717,3 +717,23 @@ Script and stubs written. `SKIP_TTS=1` is set, so I stop here — the orchestrat
 - Also surveyed and deferred: OpenAI $730-850B IPO (May 22 filing, not fresh), Google Search 100% AI-generated (Jul 10), UAE chip export license-free (Jul 10), HHS AERO ChatGPT (May 21 launch), xAI Grok 4.5 + 2T (already covered peripherally), Dwarkesh Reiner Pope (outside 14-day window), Latent Space Modal (already covered Jul 10).
 - Sources scanned: buildfastwithai daily rollup Jul 12, TechCrunch/CNBC/Axios/Reuters, Twitter/X (@Zefan_Cai account still has no public tweets — convergence signal drawn from TFTC/Techtimes/Decoder/Forbes coverage), Dwarkesh (no new Jul episodes), MLST (last new Jul 1 covered Fri), Lex Fridman (no Jul episodes), BG2Pod (last Jun), TWIML Jul 8 Osmo, 20VC Jul 2/6/9. WhynotTV latest Jan 17 — outside 14-day window.
 === 2026-07-13T02:42:57-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-14T02:30:10-07:00 start jinglin-ai-pulse ===
+Script and stubs are written. Summary:
+
+**Episode:** `2026-07-14-xi-at-waic-mcp-under-attack-and-the-100k-token-engineer`
+
+**Story picks:**
+- **Twitter Pulse #1:** Xi Jinping to deliver WAIC 2026 opening keynote Fri Jul 17 — first in-person appearance since 2018, converging with Google Gemini 3.5 Pro's expected same-day GA. Confirmed Mon-Tue by China MOFA + English government readouts.
+- **Twitter Pulse #2:** The Information (Mon Jul 13) — Google + Microsoft + Salesforce + Snowflake + ServiceNow announce shared enterprise AI backend protocol framed explicitly against Anthropic MCP; "cooperating in the foundation and knife-fighting in the market at the same time."
+- **Money Moves:** Sam Altman's $42.6B 5% OpenAI equity pitch to Trump/Lutnick/Bessent (sovereign wealth fund), paired with TSMC's Mon Jul 13 record Q2 NT$1.27T (+36% YoY, N3 + CoWoS sold out).
+- **Podcast Deep Cut:** 20VC Sat Jul 4, Sierra co-founder Clay Bavor — Open vs Frontier / $100K token budget per engineer / Forward-Deployed Engineers, with Microsoft's Mon $2.5B Frontier Company as parallel.
+
+**Watch item resolution:** All three of yesterday's watches (Gemini 3.5 Pro ship date, Fed AI Task Force framing, Ant Group 13th humanoid) still open — noted in cold open.
+
+**Stubs written** (per SKIP_TTS=1 protocol):
+- `.md` script (spoken body ~3,870 words, in line with recent 18-20 min episodes)
+- `.rss-item.xml` with `__LENGTH__` / `__DURATION__` placeholders — XML fragment validates
+- `.commit-msg`
+
+No TTS, R2 publish, feed edit, or commit performed — the batch orchestrator handles those after Voxtral finishes.
+=== 2026-07-14T02:44:12-07:00 done  jinglin-ai-pulse (exit 0) ===
