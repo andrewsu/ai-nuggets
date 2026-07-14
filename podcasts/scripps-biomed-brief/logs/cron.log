@@ -2107,3 +2107,42 @@ Files written (all in `podcasts/scripps-biomed-brief/scripts/`):
 
 No source-side failures. All four picks are bioRxiv v1 posted 2026-07-11 to 2026-07-12; bodies not yet rendered — summaries grounded in the full abstracts per PIPELINE.md.
 === 2026-07-13T03:08:13-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-14T03:00:10-07:00 start scripps-biomed-brief ===
+You've hit your session limit · resets 3:40am (America/Los_Angeles)
+=== 2026-07-14T03:00:14-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-14T03:00:14-07:00 session-limit detected for scripps-biomed-brief; computing reset-aware sleep ===
+=== 2026-07-14T03:00:14-07:00 session-limit hit; sleeping 2446s until 3:40am (+60s buffer) ===
+=== 2026-07-14T03:41:00-07:00 start scripps-biomed-brief (retry 1) ===
+Script drafted, RSS item stub and commit-msg stub written. SKIP_TTS mode, so no audio generation, no feed edit, no commit — the orchestrator handles those after batch TTS.
+
+---
+
+**Scripps Biomedical Brief — 2026-07-14 (SKIP_TTS)**
+
+Files written (all in `podcasts/scripps-biomed-brief/scripts/`):
+- `2026-07-14-baker-denovo-kinase-get3-retro-tmed-proteinopathy-retron-antimicrobial.md` — 4-story spoken script + show notes with 4 verified bioRxiv links + candidate funnel
+- `2026-07-14-baker-denovo-kinase-get3-retro-tmed-proteinopathy-retron-antimicrobial.rss-item.xml` — full `<item>` with `__LENGTH__`/`__DURATION__` placeholders (parses as XML)
+- `2026-07-14-baker-denovo-kinase-get3-retro-tmed-proteinopathy-retron-antimicrobial.commit-msg` — one-line commit message
+
+**Picks (all bioRxiv v1 posted 2026-07-13, DOI-prefix `10.64898/` verified via api.biorxiv.org):**
+1. **Bauer, Lee, Coventry et al. — Baker (IPD/UW) with Elowitz (Caltech) + Nabet (Fred Hutch)** — `10.64898/2026.07.10.737808v1` — de novo designed genetically encoded miniproteins that bind the FAK kinase domain and toggle between low-nanomolar inhibition and >2× activation of the same enzyme; kinase-domain conservation reframed as retargetability (FAK → Src)
+2. **Lee, Gu, Chan et al. — Sello (Brown → Caltech) + Clemons (Caltech) + Denic (Harvard)** — `10.64898/2026.07.11.737968v1` — cryo-EM resolves Retro-1/Retro-2 mechanism after a decade; both bind a cryptic pocket in Get3 and allosterically trap it in a stalled GET-pathway complex; GET pathway validated as therapeutic vulnerability
+3. **Riedl Khursigara, Goss et al. — Greka (Broad) with Mass Eye and Ear** — `10.64898/2026.07.10.737576v1` — TMED7-TMED2/9/10 cargo receptor entrapment complex as shared therapeutic node across kidney proteinopathy + rhodopsin-driven retinitis pigmentosa; small molecule BRD7635 rescues both in vivo (vision preservation in RP model)
+4. **Hibshman, Wang et al. — Nogales (UC Berkeley) + Shipman (Gladstone/UCSF)** — `10.64898/2026.07.11.737809v1` — cryo-EM + activation mechanism of type IX retron-Kva2; structural-fold recognition via msDNA binding enables computationally designed de novo synthetic triggers → bacterial defense repurposed as programmable antimicrobial platform
+
+**Candidate funnel** (bioRxiv 2026-07-12 to 2026-07-13, 11 categories, ~140 preprints scanned):
+- biochemistry: 18 scanned, 3 substantive (Baker ✓, Sello/Clemons ✓, EBV/methionine/ferroptosis runner-up)
+- biophysics: 12 scanned, 0 fresh Scripps hook
+- pharmacology/toxicology: 5 scanned, 1 borderline (AlfaDAX ActRIIA/B + semaglutide — unclear senior-lab pedigree)
+- bioengineering: 14 scanned, 1 substantive (Cho HCV CD81 miniprotein — held to avoid conceptual overlap with Baker)
+- immunology: 14 scanned, 2 considered (Sahm glioma T-cell infiltration; Huang hypoimmunogenic GINS — Y4R T1D already featured 2026-07-12)
+- cell biology: 19 scanned, 1 substantive (Greka TMED entrapment ✓)
+- molecular biology: 8 scanned, 1 substantive (Miles/Bayliss Aurora-A miniprotein — held, adjacent to Baker)
+- cancer biology: 13 scanned, 1 substantive (Villaume/Savona F1 ATP synthase for AML)
+- genetics: 6 scanned, 0 Scripps hook
+- microbiology: 30 scanned, 1 substantive (Hibshman/Nogales/Shipman retron ✓)
+- synthetic biology: 4 scanned, 0 Scripps hook
+- neuroscience: 30 scanned, 0 clean chemistry hook
+
+No source-side failures on today's run. All four picks are bioRxiv v1 posted 2026-07-13; bodies not yet rendered — summaries grounded in the full abstracts per PIPELINE.md.
+=== 2026-07-14T03:48:16-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
