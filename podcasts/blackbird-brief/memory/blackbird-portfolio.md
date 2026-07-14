@@ -5,25 +5,35 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-13 (Lean-Monday Sourcing Radar; no fresh sourceable
-partner-institution lead in the 3-4 day window after Sunday cleared the
-strongest translational items. Two picks: Pick 1 platform read — Chen (Stanford
-Statistics) + Hicks (JHU Biostatistics + Malone Center; co-developer of
-spatialLIBD stack + co-author on the Lieber-Hopkins matched-donor Visium
-atlases) bioRxiv preprint 2026-07-09 (10.64898/2026.07.05.736638) benchmarking
-A-I coding agents on 40 SABench spatial-alignment tasks; counter-intuitive
-finding that richer scaffolding + specialized package availability REDUCED
-mean composite alignment score from 0.43 to 0.36 (95% CI excludes zero) — a
-canary result Blackbird portfolio companies should internalize before
-committing to agent-scaffolding investments, added to the Martinowich +
-Maynard + Hicks section of §2b. Pick 2 landscape context — Lim (Stanford, ex-JHU
-Chair Neurosurgery) + Grossman/Ye (JHU SKCCC) + ABTC 1501 Nature Medicine
-2026-07-10 anti-LAG-3 ± anti-PD-1 Phase 1 in recurrent GBM (46 pts;
-descriptive 12-mo OS 34.8% mono / 52.2% combo; no confirmed RANO responses;
-11% long-term survivors correlated with baseline type-I IFN + T-cell clonality
-+ myeloid APC), added as landscape-input note under the Watkins ACSVL3 §2b
-entry — ambiguous checkpoint-combo signal in GBM sharpens the case for the
-mechanistically-orthogonal metabolic-vulnerability angle Watkins is pursuing.
+_Last verified: 2026-07-14 (Second consecutive lean-day Sourcing Radar; 2026-07-11..14
+bioRxiv window returned exactly one JHU-corresponding preprint — Bishai TB
+immunology, no discrete asset — medRxiv zero. Two Johns Hopkins-anchored
+peer-reviewed picks: Pick 1 methodology + scouting signal — Sternke (dual JHU
+T.C. Jenkins Biophysics + GSK Protein Design and Informatics) + Barrick (senior
+corresponding; JHU Biophysics) Nature Chemical Biology 2026-07-10
+(DOI 10.1038/s41589-026-02270-6; PMID 42432345) demonstrates Potts-model
+stability/activity trade-off in protein sequence design — single-site bias
+dominates stability (homeodomain ΔG ≈ −14 vs −8.2 kcal/mol H- vs HJ-optimized;
+same pattern across ADK+DHFR+PGK), pairwise covariance dominates activity
+(homeodomain DNA-binding Kd 8.9 nM H-optimized vs 343 nM HJ-optimized; enzyme
+k_cat higher in HJ-optimized batches) — added under new §2b "Barrick lab
+protein-design methodology" entry as diligence-discipline signal for
+AI-first protein-design pitch cohort Blackbird sees (Cyrus/Xaira/Chai/EvolvePro/Isomorphic
+Labs) + design-rule for Aletira SELEXON engineered-effector-protein extensions +
+Sternke JHU→GSK transition as scouting signal on Johns Hopkins protein-engineering
+IP flow. Pick 2 portfolio-adjacent framing — Kwon + Martinowich (Lieber CSO;
+senior corresponding) Neuropsychopharmacology Hot Topics commentary 2026-07-10
+(DOI 10.1038/s41386-026-02497-w; PMID 42432160) reframes neuronal-genetic-risk
+vs broader multicellular schizophrenia landscape (astrocytes + oligodendrocytes
++ microglia + endothelial cells + perineuronal nets + neurovasculature) as
+complementary not contradictory, integrated via shared developmental programs
++ cell-cell interactions + environmental input + adaptive responses — added to
+§2 Neuropsychiatric NewCo entry as biomarker/PD spec-sharpener ahead of DC
+declaration expected later 2026 (pair GPR52 neuronal-engagement biomarker with
+multicellular tissue-state readout via Martinowich-Maynard-Hicks matched-donor
+atlas infrastructure or equivalent imaging correlate). Previously verified 2026-07-13
+(Lean-Monday two-pick episode: Chen/Hicks agent-benchmark canary result + Lim/Grossman
+GBM LAG-3 Ph1 landscape context for Watkins ACSVL3).
 Previously verified 2026-07-12 (Sunday two-episode day. Sourcing Radar lead:
 Hasegawa/Kamiya senior corresponding + Barbara Slusher senior middle-author
 Alzheimer's & Dementia paper 2026-07 delivering an astrocytic GCPII-glymphatic
@@ -194,6 +204,32 @@ competitors below. These are the "so what for Blackbird" hooks.
   non-dopaminergic antipsychotics (KarXT/Cobenfy — muscarinic, Bristol Myers
   Squibb; emraclidine — AbbVie/Cerevel) reframing the schizophrenia market;
   Lieber Institute output.
+- **Biomarker/PD-spec-sharpener (2026-07-14 update):** Kwon SH + **Martinowich K**
+  (Lieber Institute CSO; senior corresponding), "Neuronal genetic risk within the
+  multicellular landscape of schizophrenia," *Neuropsychopharmacology* Hot Topics
+  commentary, DOI 10.1038/s41386-026-02497-w, PMID 42432160, 2026-07-10. **COI: none.**
+  Two-author Lieber synthesis explicitly names the interpretive tension between
+  (a) neuronal-population-anchored PGC wave-3 genetic risk (the Pergola trans-eQTL
+  641-novel-gene substrate the GPR52 pipeline sits on top of) and (b) broader
+  multicellular tissue-state alterations from postmortem molecular work — astrocytes,
+  oligodendrocytes, microglia, endothelial cells, perineuronal nets, neurovasculature.
+  Argues these are **complementary not contradictory** — integrated via shared
+  developmental programs + cell-cell interactions + environmental input + adaptive
+  responses. Programmatic question: how does neuronal vulnerability become wired
+  into a broader multicellular pathobiology. **Read for GPR52 NewCo DC declaration
+  (expected later 2026):** Lieber-CSO soft warning that the neuronal-target-alone
+  framing may not be fully sufficient — schizophrenia phenotype as a stable
+  multicellular state including glial + vascular contributions means a purely
+  neuronal agonist may not collapse the disease end-to-end. Does NOT change the
+  GPR52 thesis; DOES specify where the biomarker + PD strategy should evolve —
+  pair the GPR52 neuronal-engagement biomarker with a multicellular tissue-state
+  readout (spatial transcriptomics on a dosed Lieber postmortem cohort via the
+  Martinowich-Maynard-Hicks matched-donor atlas infrastructure, or an equivalent
+  imaging correlate capturing glial + vascular components). **Hemaka action:**
+  surface directly with Third Rock team ahead of DC declaration — the Third Rock
+  partner will be reading Martinowich's framing anyway. Not a criticism; a
+  specification of what "engagement across all three symptom domains" needs to
+  look like in a development plan taken to the FDA.
 - **Direct competitor (2026-07-12 update):** **Nxera Pharma** (formerly Sosei
   Heptares; London-headquartered specialty neuroscience) has **NXE'149**
   (formerly HTL-0016878), the only other Phase-2-ready GPR52 agonist in
@@ -331,6 +367,60 @@ raises, exits, or crosses a scientific milestone.
       original Q2 2025 timeline).
     - Whether JHTV is managing an active OptaNova license negotiation or
       OptaNova is downstream of a JHTV-independent inventor filing.
+
+### Barrick lab protein-design methodology (JHU T.C. Jenkins Biophysics) — diligence-discipline signal + JHU→GSK IP-flow scouting note ⚠
+- **Lab / people.** **Doug Barrick, Ph.D.** — Professor, T.C. Jenkins Department
+  of Biophysics, Johns Hopkins University; barrick@jhu.edu. Long-running program
+  on protein folding thermodynamics + sequence-alignment-derived design rules.
+  **Matt Sternke, Ph.D.** (first author on new paper) trained in the Barrick lab
+  and moved to **GSK Protein Design and Informatics** (Collegeville, PA) —
+  dual affiliation on the new paper is the JHU-to-GSK talent-and-IP-flow signal
+  a translational venture office should watch.
+- **Fresh disclosure (2026-07-10):** Sternke M (first; dual JHU Biophysics + GSK
+  Protein Design and Informatics), Tripp KW, Behera SP, ..., Barrick D (senior
+  corresponding), "Protein stability is determined by single-site bias rather
+  than pairwise covariance," *Nature Chemical Biology*, DOI 10.1038/s41589-026-02270-6,
+  PMID 42432345. Peer-reviewed. Code + multiple-sequence-alignments released on
+  GitHub. No COI or patent-application declaration surfaced through the
+  r.jina.ai proxy on the Nature Chemical Biology article page.
+- **Finding — stability/activity trade-off.** Barrick uses Potts models (the
+  sequence-covariance model class underpinning most modern AI-first protein
+  design) to build synthetic sequences that isolate two ingredients — **single-site
+  amino-acid preferences** (position-level conservation across the evolutionary
+  alignment) vs **pairwise correlations between positions** (co-evolutionary
+  co-variation). Most current design tools optimize both jointly. Barrick
+  separates them: one batch H-optimized (single-site only), one batch HJ-optimized
+  (single-site + pair correlations), measures stability + enzyme activity on each.
+  **Stability is dominated by single-site bias** (homeodomain folding ΔG ≈ −14
+  kcal/mol H-optimized vs −8.2 kcal/mol HJ-optimized; same pattern across
+  adenylate kinase + DHFR + phosphoglycerate kinase). **Activity is dominated by
+  pair correlations** (enzyme k_cat substantially higher in HJ-optimized batches;
+  homeodomain DNA-binding Kd 8.9 nM H-optimized vs 343 nM HJ-optimized —
+  ~40-fold affinity difference). Stability + activity live in different features
+  of the sequence.
+- **Blackbird relevance — two angles.** (1) **Diligence discipline for the
+  AI-first protein-design pitch cohort** Blackbird sees regularly through the
+  Venture Partner track (Cyrus Bio, Xaira, Chai Discovery, EvolvePro, Isomorphic
+  Labs). Platform claims about designing thermostable-and-active proteins in
+  one shot should be pressed on which objective the model actually optimizes —
+  Barrick names that as a trade-off not a free lunch. Diligence question:
+  does the platform quantify the trade-off explicitly, or hide it under a joint
+  objective? (2) **Design rule for the portfolio.** Aletira's SELEXON platform
+  stacks alternative-splicing modules on AAV; today's payloads are gene-therapy
+  transgenes, but any move into engineered effector proteins (more selective
+  recombinases, Cas variants for gene editing) will confront the same
+  stability-vs-activity trade. Applies equally to any future engineered-enzyme
+  or antibody-scaffold portfolio play.
+- **Scouting signal — Sternke JHU→GSK.** GSK Protein Design and Informatics is
+  running the industrial version of exactly this program. That's where Johns
+  Hopkins protein-engineering IP is flowing. Blackbird would need to move
+  faster to intercept the next Barrick-lab-adjacent asset before it leaves for a
+  big-pharma industrial partner.
+- **Watch.** JHTV biophysics-portfolio-manager status on any Barrick-lab IP
+  outside an active GSK option agreement; Sternke career trajectory as continued
+  signal on where Barrick-lab-adjacent methodology is monetized; any Barrick
+  follow-on papers extending the H-vs-HJ trade-off framework to antibody-scaffold
+  design or Cas-variant engineering (both directly portfolio-adjacent).
 
 ### Accelevir Diagnostics — HIV cure companion diagnostics (Baltimore-anchored) ⚠
 - **What:** Exclusive JHU license on IPDA (Intact Proviral DNA Assay;

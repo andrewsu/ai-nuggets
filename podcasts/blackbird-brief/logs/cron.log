@@ -654,3 +654,47 @@ Substantive shortlist (JHU/UMB/Lieber-adjacent, 2026-07-09 → 2026-07-13):
 
 **Editorial framing.** Honest lean-Monday two-pick episode: Sunday cleared the strongest partner-institution items (Slusher/Kamiya GCPII POCD + Maqsood/Hoag hydrogel) and Monday morning offers no same-caliber sourceable lead. Pick 1 is a portfolio-scaffolding calibration signal from the same Hicks group producing the Lieber-Hopkins atlas platform. Pick 2 is same-week peer-reviewed landscape context that sharpens the Watkins ACSVL3 sourcing thesis Blackbird is diligencing. Baltimore preprint funnel expected to refill Tuesday/Wednesday on the normal end-of-week cadence.
 === 2026-07-13T02:27:58-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-14T02:10:10-07:00 start blackbird-brief ===
+All three files written; portfolio memory updated; no commit made (SKIP_TTS orchestrator handles that). Final summary follows per PIPELINE.md.
+
+---
+
+## Blackbird Brief 2026-07-14 — run summary
+
+**SKIP_TTS mode. Script + stubs written; no TTS, no feed edit, no commit (orchestrator handles).**
+
+**Files written:**
+- `podcasts/blackbird-brief/scripts/2026-07-14-radar-jhu-barrick-protein-design-lieber-schizophrenia-multicell.md` (1,341 spoken words; ~7 min at 1.2× TTS)
+- `.rss-item.xml` — RSS `<item>` stub with `__LENGTH__` / `__DURATION__` placeholders (parses OK; guid + enclosure URL validated)
+- `.commit-msg` — full commit-title line
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` — updated: top "Last verified" note refreshed to 2026-07-14; new §2b entry for **Barrick lab protein-design methodology** (diligence discipline + JHU→GSK IP-flow scouting note); new Martinowich commentary block under §2 **Neuropsychiatric NewCo** as biomarker/PD spec-sharpener ahead of DC declaration.
+
+**Sourcing Radar candidate funnel (2026-07-11 → 2026-07-14):**
+
+Sources scanned:
+- bioRxiv API (author_corresponding_institution filter across 416 preprints, pages 0-4)
+- medRxiv API (30 items in window)
+- PubMed via MCP — three passes (top-tier journal + affiliation filter; broader therapy/drug/inhibitor TIAB filter; PI-name author-search across Barrick, Bishai, Slusher, Krupnick, Weinberger, Martinowich, Maynard, Hyde, Kleinman, Pergola, Bevan, Parikh CR, Prigge, Ahmed ZM, Riazuddin, Ernst RK, Wong PC)
+- r.jina.ai proxy on bioRxiv `johns hopkins` search page
+- `scripts/fetch_preprint.py` on Bishai TB preprint
+- LIBD news page — cookie-consent gate; alternate all-news URL 404
+- UM Ventures news — DNS ENOTFOUND (same failure as 2026-07-13)
+- JHTV news — reachable but headline-only
+
+Source failures noted: `libd.org/news` and `libd.org/news-events/all-news`; `ventures.umaryland.edu/news` DNS ENOTFOUND; JHTV news headlines only (no article-body access without individual fetches).
+
+Substantive shortlist (JHU/UMB/Lieber-anchored, 2026-07-09 → 2026-07-14):
+- **[CHOSEN — LEAD]** Sternke/Barrick *Nature Chemical Biology* 2026-07-10. DOI 10.1038/s41589-026-02270-6, PMID 42432345. JHU Biophysics primary; first-author dual JHU→GSK affiliation. Peer-reviewed methodology paper isolating single-site (stability) vs pairwise-covariance (activity) contributions to protein-sequence design. https://www.nature.com/articles/s41589-026-02270-6
+- **[CHOSEN — PICK 2]** Kwon/Martinowich *Neuropsychopharmacology* Hot Topics commentary 2026-07-10. DOI 10.1038/s41386-026-02497-w, PMID 42432160. Lieber Institute; two-author synthesis on multicellular schizophrenia landscape. Portfolio-adjacent to GPR52 NewCo. https://www.nature.com/articles/s41386-026-02497-w
+- Gupta/Bishai bioRxiv 2026-07-11 (10.64898/2026.07.07.737119) — sex-biased TB immunity via CXCR3/CD40L axis. JHU School of Medicine primary. Considered; not picked (TB venture-return category difficult + no discrete druggable asset).
+- Bevan lab *Langmuir* 2026-07-13 (10.1021/acs.langmuir.5c06545) — boronic-acid mucoadhesive coatings. JHU ChemBioEng. Considered; not picked (physical-chemistry journal placement + no therapeutic asset). File for delivery-chassis-adjacent watch on Slusher GCPII IBD.
+- Thiessen Philbrook/Parikh *JASN* 2026-07-09 (10.1681/ASN.0000001183) — donor urinary biomarker panel for kidney allocation. JHU Nephrology. Considered; not picked (510(k)-scale IP; below Blackbird thesis bar).
+- Kapoor/Arav-Boger *AAC* 2026-07-13 (10.1128/aac.01977-25, PMID 42439813) — MLS8091 first-in-mechanism HCMV helicase-primase inhibitor. Considered; not picked (Arav-Boger moved from JHU to MCW; JHU tie too weak).
+- Pantelyat *Movement Disord Clin Pract* 2026-07-12 — DUET RCT of NMT + HD-tDCS in CBS. Small RCT, not investable.
+
+Prior-episode hard exclusions confirmed and not duplicated today: Slusher/Kamiya GCPII POCD (07-12); Chen/Hicks agent benchmark (07-13); Lim/Grossman GBM LAG-3 (07-13); Ahmed/Rehman CIB2/CIB3 (07-11); Ernst BECC470s (07-11); Merchenthaler/Prokai DHED (07-11); Watkins ACSVL3 (07-08); Raman/Loeb DDX3/RK-33 (07-08); Luetkens cathepsin B (07-08); Wong TDP-43 (07-07); Kalhor 3DEEP (07-05); Ravichandran/Maynard NAc atlas (07-02); Chatterjee/Schlosser AD PWAS (07-04); Rossi/Pergola INGENE/MODULE (06-25); Bach/Ursini BDNF-DT (07-03).
+
+**Editorial framing.** Second consecutive lean day. Honest two-pick platform-and-landscape episode: (a) Barrick methodology paper delivers diligence discipline for the AI-first protein-design pitch cohort + design-rule for Aletira SELEXON engineered-effector-protein extensions + Sternke→GSK scouting signal on JHU protein-engineering IP flow; (b) Martinowich Hot Topics commentary in Lieber's own voice sharpens the biomarker/PD spec on GPR52 NewCo ahead of the DC declaration expected later 2026. Baltimore preprint pipeline expected to refill Wednesday/Thursday on the normal end-of-week cadence.
+
+The orchestrator will run TTS in a single batch, then insert the `.rss-item.xml` stub (substituting `__LENGTH__` / `__DURATION__`) into `feed.xml`, upload the mp3 to R2, and commit — no action needed from this run.
+=== 2026-07-14T02:38:24-07:00 done  blackbird-brief (exit 0) ===
