@@ -2513,3 +2513,56 @@ Files written (SKIP_TTS mode):
 - `podcasts/receptor-and-reason/scripts/2026-07-13-receptor-and-reason.commit-msg`
 - `podcasts/receptor-and-reason/state/shipped.jsonl` appended with today's 10-item record
 === 2026-07-13T03:04:47-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-14T02:50:10-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 3:40am (America/Los_Angeles)
+=== 2026-07-14T02:59:17-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-14T02:59:17-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-07-14T02:59:17-07:00 session-limit hit; sleeping 2503s until 3:40am (+60s buffer) ===
+=== 2026-07-14T03:41:00-07:00 start receptor-and-reason (retry 1) ===
+Here's the final audit summary for cron.log.
+
+## Run summary — Receptor & Reason 2026-07-14
+
+**Mode:** `SKIP_TTS=1` batch mode. Files written to `podcasts/receptor-and-reason/scripts/`:
+- `2026-07-14-receptor-and-reason.md` (script)
+- `2026-07-14-receptor-and-reason.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders)
+- `2026-07-14-receptor-and-reason.commit-msg`
+- Shipped ledger appended with 11-item record.
+
+**Commit:** deferred to `publish_pending.py` after batch TTS on Garibaldi. No `git add` or commit performed here.
+
+## Candidate funnel
+
+**bioRxiv (Tier 1 + 2)** — details API, 2026-07-07..2026-07-14, all subject categories: 2,011 items pulled, 556 after subject/keyword pre-filter, 148 after strong-signal neuropsychopharm/pharmacology filter, dedup-checked against shipped ledger (30+ prior episodes).
+
+**arXiv (Tier 2)** — read shared daily cache `/tmp/ai-nuggets-arxiv-cache.xml`, filtered to last 7 days + biology + agentic keywords: 102 candidates surfaced from the AI/LLM/agent tail relevant to biology.
+
+**Journal press pages (Tier 1)** — not queried this run; bioRxiv had adequate depth. Gap noted.
+
+**Society press pages (ACNP/SOBP/ECNP)** — not queried this run; no known major announcements in window. Gap noted.
+
+**Full-text fetches:** 10 items via `scripts/fetch_preprint.py` (9 jina-full HTML, 1 API abstract-only for the Kravitz NMDA striatal preprint posted 2026-07-10). 2 arXiv items via r.jina.ai. Adenylyl-cyclase and D2-spatial-transcriptomics landed on bioRxiv 2026-07-13; body not yet rendered — flagged as abstract-only in the script for the lead.
+
+## Shortlist (all Tier 1–3, dedup-cleared, in the running for today's episode)
+
+- (CHOSEN, LEAD) doi:10.64898/2026.07.10.737756 — Adenylyl cyclases combinatorially integrate opposing dopamine receptor signals (Elowitz, Caltech)
+- (CHOSEN) doi:10.64898/2026.07.12.737112 — D2-associated synaptic transcriptional attenuation in chronically stressed dorsal striatum (KIST)
+- (CHOSEN) doi:10.1101/2024.05.06.592735 v4 — Novel dopaminergic critic signal on erroneous strategy choices
+- (CHOSEN) doi:10.64898/2026.07.06.736480 — NMDA receptors control in vivo striatal calcium and action policy updating (Kravitz, WashU; abstract-only)
+- (CHOSEN) doi:10.64898/2026.07.08.737179 — Sex differences in acute responses to psychedelics (Ramaekers, Maastricht)
+- (CHOSEN) doi:10.64898/2026.07.08.737263 — Mu-opioid modulation of hypothalamic A11 dopamine pacemaking
+- (CHOSEN) doi:10.64898/2026.07.06.736848 — Voluntary oral fentanyl DID model with sex-dependent dependence (Pittsburgh)
+- (CHOSEN) doi:10.64898/2026.07.07.736860 — APOE4 × old-age interaction drives cerebrovascular ET-1 dysfunction
+- (CHOSEN) doi:10.1101/2025.11.03.686224 — M4 drug discovery integrated preclinical framework, GLP-1R exenatide exemplar (Cedersund)
+- (CHOSEN) arxiv:2607.10275 — Information-seeking failures of LLMs in agentic clinical reasoning (TU Munich/Charité)
+- (CHOSEN) doi:10.64898/2026.07.08.737358 — EcoXAI multi-agent knowledge-graph biomedical discovery (Alzheimer's drug repurposing → maraviroc)
+
+Runners-up considered and dropped:
+- doi:10.64898/2026.07.10.737850 — GBA1 distal regulatory signal in Parkinson's neuroinflammation (out — competing today with A11/fentanyl on opioid–DA thread; solid but genetics-heavy)
+- doi:10.64898/2026.07.11.737778 — Shared FTLD/AD lipidome+proteome signatures (out — AD coverage already anchored by APOE4 item)
+- doi:10.64898/2026.07.07.736457 — Proactive/reactive maturation predicting cognitive stability + psychopathology (out — thin single-item wedge for the psychopathology thread)
+- doi:10.64898/2026.07.09.737487 — AAV Parkin gene therapy for early-onset PD (out — dopamine slots already full)
+- doi:10.64898/2026.07.10.737625 — Circulating EV plasma aging signatures in mice (out — more aging biology than CNS pharm)
+- arxiv:2607.10871 — Contemplative LLM alignment framework in mental health (out — infrastructure/framework only, no result)
+- arxiv:2607.10559 — LLM agents inverse-design MOFs for gas separation (out — outside neuropsychopharm scope)
+=== 2026-07-14T04:01:03-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
