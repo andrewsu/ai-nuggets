@@ -1190,3 +1190,32 @@ Candidate funnel:
 
 Chosen: bioRxiv Amit lab PD-1-directed CAR-T for arthritis (2026-07-12). Selected over the p95HER2 paper on directly-relevant-to-Justice grounds (CAR-T + autoimmune + PD-1 vs. computational antibody design), and over Q32 Bio SIGNAL-AA on data-availability (Q32 readout is post-run).
 === 2026-07-13T02:50:10-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-14T02:40:10-07:00 start justice-biotech-brief ===
+All three files written. Per SKIP_TTS=1, no TTS, no publish, no feed edit, no commit — the orchestrator will handle those after batch audio.
+
+## Candidate funnel — 2026-07-14
+
+**bioRxiv (details API, 2026-07-13 / 2026-07-14 window)**
+- Full corpus fetched: 255 preprints across the two-day window (paginated fully).
+- 11 hits on relevance keyword filter (VEGF / PD-L1 / PD-1 / T cell engager / bispecific / trispecific / CAR-T / ADC / JAK / immunotherapy / checkpoint / TIL / etc.), after discarding spurious keyword matches:
+  - APOBEC3G expression marks TMB-high T-cell-inflamed tumor state, predicts checkpoint response — https://www.biorxiv.org/content/10.64898/2026.07.08.737369
+  - PCIF1 loss licenses antitumour immunity via cholesterol biosynthesis — https://www.biorxiv.org/content/10.64898/2026.07.11.737975
+  - Regulatory T cells establish IL-10-IL10R immunometabolic checkpoint limiting HSL lipolysis — https://www.biorxiv.org/content/10.64898/2026.07.12.738050
+  - Microbial invasion drives adenoma progression in early CRC — https://www.biorxiv.org/content/10.64898/2026.07.10.737736
+  - Inflammatory endothelial cells promote antigen-licensed CTL infiltration in glioma post-RT — https://www.biorxiv.org/content/10.64898/2026.07.08.737259
+  - Other 6 hits either off-topic (histology tool, hypoimmunogenic organoids, TCR software) or dated pre-window.
+- All abstract-only reads; strong methodologically but none rose above the news-side candidate.
+
+**News / press (Fierce Biotech, Endpoints, STAT — direct WebFetch 403'd; used WebSearch + PRNewswire/Stocktitan)**
+- Q32 Bio (QTTB) — SIGNAL-AA Part B 36-week topline (bempikibart IL-7Rα in severe AA including JAK-experienced) — 2026-07-13 — https://www.prnewswire.com/news-releases/q32-bio-announces-positive-36-week-topline-results-from-part-b-of-the-signal-aa-clinical-trial-of-bempikibart-in-alopecia-areata-302823403.html — **CHOSEN**
+- Ipsen — Iqirvo (elafibranor) Phase IIIb positive in PBC — 2026-07-13 — off-topic (liver, not immuno-onc/autoimmune-T-cell)
+- Novo Nordisk — Mim8 FRONTIER4 hemophilia A extension — 2026-07-13 — off-topic
+- Elevar Therapeutics — CRL for rivoceranib + camrelizumab (VEGF/PD-1) in HCC — 2026-07-13 — VEGF/PD-1-adjacent but negative regulatory news, second CRL, story already known
+- Biogen — diranersen tau Ph2 detailed data (AAIC July 14) — off-topic
+- Q32 Bio bempikibart was the strongest single Justice-relevant catalyst.
+
+**Policy / funder (ARPA-H / NIH / NSF)**
+- No new relevant program launch or funder announcement in the two-day window that intersects Justice's beat.
+
+**Chosen**: Bempikibart Q32 Bio SIGNAL-AA Part B — anti-IL-7Rα biologic Ph2a hit in severe AA including 36.4% JAK-experienced, with off-drug durability signal that differentiates from oral JAK class.
+=== 2026-07-14T02:54:14-07:00 done  justice-biotech-brief (exit 0) ===
