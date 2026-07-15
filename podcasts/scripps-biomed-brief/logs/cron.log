@@ -2146,3 +2146,31 @@ Files written (all in `podcasts/scripps-biomed-brief/scripts/`):
 
 No source-side failures on today's run. All four picks are bioRxiv v1 posted 2026-07-13; bodies not yet rendered — summaries grounded in the full abstracts per PIPELINE.md.
 === 2026-07-14T03:48:16-07:00 done  scripps-biomed-brief (exit 0) (retry 1) ===
+=== 2026-07-15T03:00:14-07:00 start scripps-biomed-brief ===
+Script, RSS-item stub, and commit-msg written. XML validates.
+
+**Summary — Scripps Biomedical Brief 2026-07-15**
+
+Basename: `2026-07-15-rifamycin-b-rnap-saga-kat2a-protac-nmdar-persister-basal-pdac`
+
+Four bioRxiv preprints selected:
+1. **Mosaei/Zenkin (Newcastle + Penn State)** — First crystal structure of rifamycin B and co-structure with bacterial RNAP; C-4 O-carboxymethyl salt bridge to fork loop 2 explains activity against rifampicin-resistant mutants
+2. **A. J. Deshpande / Vuori (Sanford Burnham Prebys)** — SAGA KAT2A/B PROTAC (GSK983/GSK699) in AML; mechanism via H3K9ac loss at MYC/MYB/HOXA → ENL condensate dissolution → SEC disruption
+3. **Punzi / Tonon (San Raffaele)** — Topoisomerase-inhibitor persisters activate NMDAR/NFE2L2 axis to resist ferroptosis; argues for NMDAR-blocker repurposing
+4. **Singhal / Tammela (MSKCC)** — Basal PDAC cell state maintains tumor via single-cytokine GM-CSF-driven immunosuppression
+
+SKIP_TTS mode: script + `.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders) + `.commit-msg` stubs written to `podcasts/scripps-biomed-brief/scripts/`. No `gen_tts.py`, no `publish_episode.sh`, no `feed.xml` edit, no `git add`/`commit` — orchestrator (`scripts/publish_pending.py`) handles those after batch TTS.
+
+## Candidate funnel
+
+bioRxiv preprints posted 2026-07-13 to 2026-07-14 scanned by category. Full-text checks used `scripts/fetch_preprint.py` (r.jina.ai proxy on `.full` HTML); all four picks returned abstract-only pages (bioRxiv body-rendering lag on v1s posted <36h ago) — following operating pattern of prior 3-4 days, shipping with abstracts noted as source. No source-side failures on today's run.
+
+- biochemistry: 26 scanned, 3 substantive → Mosaei rifamycin B **CHOSEN**; Wolfe FAIM insulin amyloid; Miller/Rothbart host-pathogen histone modification crosstalk
+- pharmacology/toxicology: 5 scanned, 0 substantive
+- bioengineering: 28 scanned, 3 considered (Adams/Soh split Lettuce aptamer; Bhuckory/Palanker subretinal photovoltaic; Lim/Thomasy AAV tyrosinase NHP)
+- cell biology: 30 scanned, 1 considered (Kornakov/Kapoor VPS4/CHMP7 centromere positioning)
+- immunology: 17 scanned, 2 substantive (Maruichi/Dillin UPRmt nutrient immunity — strong runner-up; Hage/Best NONO paraspeckle antiviral)
+- cancer biology: 21 scanned, 4 substantive → A. J. Deshpande/Vuori SAGA KAT2A/B PROTAC **CHOSEN**; Singhal/Tammela basal PDAC GM-CSF **CHOSEN**; Punzi/Tonon persister NMDAR/ferroptosis **CHOSEN**; Shen PCIF1 cholesterol
+- synthetic biology: 7 scanned, 2 considered (Tennenhouse/Fleishman CADAbRe v2 — not fresh v1; Hazra SAM synthetase)
+- microbiology: 30 scanned, 1 considered (Smith/Bharat CdrA biofilm structure)
+=== 2026-07-15T03:10:03-07:00 done  scripps-biomed-brief (exit 0) ===
