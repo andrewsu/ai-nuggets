@@ -2238,3 +2238,31 @@ Both episodes for calibr-briefing 2026-07-14 are staged in SKIP_TTS mode. The or
 
 **Chosen:** headlines above + spotlight on GSK Jemperli AZUR-1 (biggest paradigm-shift-in-the-making story of the week, hits Travis's general-therapeutic-development mandate hard, threads back to Calibr-Skaggs mechanism-based precision-medicine platform bet).
 === 2026-07-14T02:35:35-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-15T02:20:14-07:00 start calibr-briefing ===
+Both RSS stubs parse as valid XML. All six files are in place.
+
+## Ep 2026-07-15 shipped (SKIP_TTS mode — TTS + feed + commit happen in the orchestrator's batch step)
+
+Wrote to `podcasts/calibr-briefing/scripts/`:
+
+- `2026-07-15-pharma-headlines.txt` + `.rss-item.xml` + `.commit-msg`
+- `2026-07-15-celcuity-revtorpyk-pi3k-mtor-breast-spotlight.txt` + `.rss-item.xml` + `.commit-msg`
+
+**Selection funnel (candidate sources on July 15, 2026)**
+
+- **Fierce Biotech / Fierce Pharma (WebFetch 403 — used WebSearch instead)** — surfaced Celcuity Revtorpyk approval, AZ-Dizal $1.5B, Huyabio Ph3
+- **BioPharma Dive** — Biogen diranersen AAIC, AZ-Ionis eplontersen (already covered 07-10), Freenome, Vertex-Crinetics (already covered 07-07), Draig/MeiraGTx financings, Chinese licensing
+- **Endpoints (403 direct)** — WebSearch confirmed Attovia IPO filing, Parabilis IPO (stale — Jun 9)
+- **STAT News** — Biogen diranersen coverage, Q3 scorecard
+- **BioSpace + drugs.com** — Celcuity press release + FDA approval details, Huyabio press release
+- **PR Newswire / globenewswire** — Freenome / Eisai press releases
+
+**Substantive shortlist after discarding stale + previously-covered items:**
+
+- Celcuity Revtorpyk (gedatolisib) FDA accelerated approval, HR+/HER2-/PIK3CA-wild-type LA/M breast — Mon Jul 14 ← **SPOTLIGHT + headline #1**
+- Biogen/Ionis diranersen (BIIB080) Ph2 CELIA AAIC tau ASO — Tue Jul 14 ← **headline #2**
+- AstraZeneca-Dizal $1.5B Zegfrovy sunvozertinib EGFR-exon-20 lung license — Tue Jul 14 ← **headline #3**
+- HUYABIO HBI-8000 tucidinostat + nivolumab Ph3 melanoma — Tue Jul 14 ← **headline #4**
+- Freenome (Foresite portfolio) SimpleScreen CRC updated data + Abbott $70M milestone — Wed Jul 9 ← **headline #5**
+- Rejected: AZ-Ionis eplontersen ATTR-CM failure (already covered 07-10 spotlight), Vertex-Crinetics $10B (already covered 07-07 spotlight), Parabilis IPO (stale, Jun 9), Draig $65M Series B / MeiraGTx $400M (financing-only, tier 2)
+=== 2026-07-15T02:31:32-07:00 done  calibr-briefing (exit 0) ===
