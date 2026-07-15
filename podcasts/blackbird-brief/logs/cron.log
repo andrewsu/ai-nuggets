@@ -698,3 +698,40 @@ Prior-episode hard exclusions confirmed and not duplicated today: Slusher/Kamiya
 
 The orchestrator will run TTS in a single batch, then insert the `.rss-item.xml` stub (substituting `__LENGTH__` / `__DURATION__`) into `feed.xml`, upload the mp3 to R2, and commit — no action needed from this run.
 === 2026-07-14T02:38:24-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-15T02:10:14-07:00 start blackbird-brief ===
+All three files written; portfolio memory updated; no commit made (SKIP_TTS orchestrator handles that). Final summary follows per PIPELINE.md.
+
+---
+
+## Blackbird Brief 2026-07-15 — run summary
+
+**SKIP_TTS mode. Script + stubs written; no TTS, no feed edit, no commit (orchestrator handles).**
+
+**Files written:**
+- `podcasts/blackbird-brief/scripts/2026-07-15-radar-jhu-dawson-syn-pmo-rnasel-popel-fertig-hcc-spqsp.md` (1,654 spoken words; ~8-9 min at 1.2× TTS)
+- `.rss-item.xml` — RSS `<item>` stub with `__LENGTH__` / `__DURATION__` placeholders (parses OK; guid + enclosure URL validated)
+- `.commit-msg` — full commit-title line
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` — updated: (a) top "Last verified" note refreshed to 2026-07-15 with full pipeline-day rationale; (b) §2b Popel-Green-Pandey serial-founder cluster **updated with confirmed OptaNova active-founder status** (Popel equity now publicly disclosed in the PNAS COI) + new computational-oncology Popel-Fertig-Deshpande axis added; (c) new §2b **"Dawson lab α-synuclein RNase-L-recruiting PMO chimera platform"** entry as active sourcing lead + direct action item for JHTV conversation; (d) new §2b **"Richman Family Precision Medicine Center + Mahairaki lab iPSC-neuron platform"** entry as companion-Dx template landscape signal.
+
+**Sourcing Radar candidate funnel (2026-07-11 → 2026-07-15):**
+
+Sources scanned:
+- bioRxiv API (author_corresponding_institution filter × 2026-07-11..07-15 window, ~500 preprints across 5 pages)
+- medRxiv API (same window)
+- PubMed via MCP — three passes: (a) JHU/UMB/Lieber/Kennedy Krieger affiliation × 2026-07-12..07-15; (b) top-tier journals (Nature/Science/Cell family, Nat Med, Nat Biotech, Nat Chem Biol, STM, PNAS, Nat Commun); (c) named-PI author-search across the full portfolio-relevant PI list (Slusher, Wong PC, Jiou Wang, Watkins, Raman, Ahmed ZM, Riazuddin, Ernst RK, Merchenthaler, Prokai, Krupnick, Huganir, Weinberger, Pergola, Martinowich, Maynard, Hicks, Kalhor, Popel, Green, Pandey, Mirando, Siliciano, Schwarcz, Buchanan, Luetkens, Barrick, Bishai, Campochiaro, Mao XB, Dawson TM, Mahairaki)
+- r.jina.ai reader proxy on PNAS article pages (successful for both PNAS leads)
+
+Source failures noted: JHTV news + hub.jhu.edu returned HTTP 403 to WebFetch (auth wall — persistent); UM Ventures news DNS ENOTFOUND (persistent; noted 07-13, 07-14 too); LIBD news cookie-consent gate (persistent). Institutional-news routes remain unreachable; PubMed + bioRxiv API + PNAS full-text via r.jina.ai carried the day.
+
+Substantive shortlist (JHU/UMB/Lieber-anchored, 2026-07-12 → 2026-07-15):
+- **[CHOSEN — LEAD]** Wang N (first) + Mao X + Wang J (co-corresponding) + Dawson TM (senior) + Ying M (Kennedy Krieger). *PNAS* 2026-07-14, DOI 10.1073/pnas.2526461123, PMID 42446976. JHU Neurology + ICE + Kennedy Krieger. First-in-class PMO+RNase-L α-syn RNA-degrading chimera modality; provisional 63/901,296 jointly filed by U Chicago + JHU, not licensed. https://www.pnas.org/doi/10.1073/pnas.2526461123
+- **[CHOSEN — PICK 2]** Zhang S (first) + Popel AS + Fertig EJ (co-corresponding) + Deshpande A. *PNAS* 2026-07-14, DOI 10.1073/pnas.2525799123, PMID 42446991. JHU BME + Convergence + Bloomberg-Kimmel + UMB IGS + Greenebaum + UM Institute of Health Computing. Spatial-QSP + ABC-SMC HCC virtual-trial platform; Popel discloses OptaNova + Terebra equity — first public OptaNova disclosure. https://www.pnas.org/doi/10.1073/pnas.2525799123
+- **[CHOSEN — PICK 3]** Zivko C (first) + Mahairaki V (senior corresponding) + Lyketsos CG (senior). *Alz & Dem (NY) TRCI* 2026-07-12, DOI 10.1002/trc2.70271, PMID 42444751, PMC13357697. JHU Richman Center + Genetic Medicine + Lieber Institute (Farinelli, Ostlund, Das, Maher). iPSC-neuron companion-Dx template for memantine responder stratification. https://doi.org/10.1002/trc2.70271
+- Not picked (with reason): Nrf2/Treg HCC *Nat Commun* 10.1038/s41467-026-73485-3 — senior is Safinia at King's; Pearce (Bloomberg-Kimmel) coauthor only, not JHU-primary. TLR7 ischemic-injury *JACC BTS* 10.1016/j.jacbts.2026.101626 (Chao, UMB Shock Trauma) — mechanism paper, no discrete asset. NAc spatial atlas *Neuron* 10.1016/j.neuron.2026.06.002 — thematic overlap with 07-02 NAc + 07-10 dACC atlas coverage. Dorsal-horn DCC low-back-pain *Nat Commun* 10.1038/s41467-026-75423-9 — Xu Cao (JHU) co-corresponding, paper is Pittsburgh-led.
+
+Prior-episode hard exclusions confirmed and not duplicated today: Barrick protein-design methodology (07-14); Kwon/Martinowich multicellular schizophrenia commentary (07-14); Chen/Hicks agent-benchmark (07-13); Lim/Grossman GBM LAG-3 (07-13); Slusher/Kamiya GCPII POCD (07-12); Maqsood/Hoag EMR hydrogel (07-12); Hare/Schwarcz/Buchanan KAT II (07-10); Rossi/Pergola INGENE/MODULE (07-10); Shah/Totty/Hicks/Martinowich dACC atlas (07-10); Rehman/Ahmed CIB2/CIB3 (07-11); Ernst BECC470s (07-11); Merchenthaler/Prokai DHED (07-11); Wong PC TDP-43 caspase-3 tau (07-07); Watkins ACSVL3 (07-08); Raman/Loeb DDX3/RK-33 (07-08); Luetkens cathepsin B (07-08); Huganir Snyder synaptic turnover (07-09); Jiou Wang multi-region ALS (07-09); Bishai TB CXCR3/CD40L (considered 07-14, not picked).
+
+**Editorial framing.** Pipeline refill day after two consecutive lean days — the Baltimore preprint funnel is back on normal cadence. Genuine first-in-class translational-stage sourcing lead: the Dawson lab PMO+RNase-L α-syn RNA-degrading chimera modality is exactly what Blackbird should be underwriting — foundational Parkinson's franchise + MSA/DLB follow-on indications + provisional composition-of-matter filed at JHTV and unlicensed, with a complete-to-seed preclinical package. Two portfolio-adjacent PNAS reads behind it, both with direct implications for existing Blackbird theses: the Popel-Fertig virtual-trial platform confirms the cross-institution model the U-M Ventures × Blackbird co-investment agreement should be catalyzing AND surfaces the first public disclosure of Popel equity in OptaNova Pharma (previously stealth-stealth per §2b), and the Richman-Lieber iPSC memantine platform is a companion-Dx template that opens a pipeline-expansion route for the GPR52 neuropsych NewCo into AD precision medicine when it gets to a second-and-third-asset conversation.
+
+The orchestrator will run TTS in a single batch, then insert the `.rss-item.xml` stub (substituting `__LENGTH__` / `__DURATION__`) into `feed.xml`, upload the mp3 to R2, and commit — no action needed from this run.
+=== 2026-07-15T02:34:19-07:00 done  blackbird-brief (exit 0) ===

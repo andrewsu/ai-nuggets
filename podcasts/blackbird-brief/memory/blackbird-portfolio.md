@@ -5,9 +5,47 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-14 (Second consecutive lean-day Sourcing Radar; 2026-07-11..14
-bioRxiv window returned exactly one JHU-corresponding preprint — Bishai TB
-immunology, no discrete asset — medRxiv zero. Two Johns Hopkins-anchored
+_Last verified: 2026-07-15 (Pipeline refill day after two lean days. Three-item
+Sourcing Radar: Pick 1 (LEAD, direct sourcing item) — Wang N first author +
+Xiaobo Mao/Jingxin Wang co-corresponding + Ted Dawson senior + Kennedy Krieger's
+Mingyao Ying, PNAS 2026-07-14 (DOI 10.1073/pnas.2526461123; PMID 42446976),
+"Targeted α-synuclein mRNA degradation by PMO-based RNA-degrading chimeras" —
+first-in-class oligonucleotide modality (phosphorodiamidate morpholino conjugated
+to small-molecule warhead recruiting RNase L to 5'UTR of SNCA mRNA for cytoplasmic
+degradation; doubly orthogonal to incumbent ASO/RNase H field); complete-to-seed
+preclinical package (9-chimera screen → 4-D1 lead; RNase-L-dependent knockdown
+in HEK293T + humanized-SNCA-mouse cortical neurons + patient iPSC neurons;
+blocks fibril prion-like seeding; in-vivo mRNA lowering in humanized SNCA mouse);
+provisional 63/901,296 jointly filed by U Chicago + JHU, EXPLICITLY NOT LICENSED
+— added as new §2b "Dawson lab α-synuclein RNase-L-recruiting PMO chimera platform"
+entry, direct action-item sourcing lead for JHTV conversation this week. Pick 2
+portfolio-adjacent — Zhang/Popel + Fertig co-corresponding + Deshpande PNAS
+2026-07-14 (DOI 10.1073/pnas.2525799123; PMID 42446991), "Quantitative
+calibration of a spatial QSP model identifies fibroblast impact on HCC
+immunotherapy" (ABC-SMC-calibrated agent-based spQSP + fibroblast module +
+pretreatment spatial biomarker for atezo + TKI response; code on GitHub +
+Zenodo) — TWO Blackbird beats: (a) rare JHU-UMB co-corresponding structure
+(Popel JHU BME + Fertig UMB IGS/Greenebaum/UM Institute of Health Computing)
+exactly what the UM Ventures × Blackbird co-investment should catalyze; (b)
+**Popel discloses equity in OptaNova Pharma + Terebra Therapeutics — first
+public disclosure of active Popel equity in OptaNova** since 2026-07-06
+stealth-stealth flag (Delaware LLC filing only). §2b Popel-Green-Pandey cluster
+UPDATED with confirmed OptaNova active-founder status + new computational-oncology
+Popel-Fertig-Deshpande axis added. Pick 3 landscape signal — Zivko/Mahairaki
+senior corresponding + Lyketsos senior + Lieber Institute contributors (Farinelli,
+Ostlund, Das, Maher), Alzheimer's & Dementia (NY) TRCI 2026-07-12
+(DOI 10.1002/trc2.70271; PMID 42444751; PMC13357697), "Heterogeneous responses
+to memantine in Alzheimer's disease: A precision medicine approach using iPSC
+models" (19 iPSC-neuron lines from 12 AD + 7 CU, JHU ADRC + MATC + S-CitAD trial
+sourced; calcium influx -9.85%/-39% mean/range, ROS -26.05%/-72.21% mean/range,
+substantial across-line heterogeneity mirroring clinical response variability)
+— added as new §2b "Richman Family Precision Medicine Center + Mahairaki lab
+iPSC-neuron platform" entry as companion-Dx template for memantine/donanemab/
+lecanemab AD-drug responder stratification + pipeline-expansion route for the
+GPR52-anchored Lieber neuropsych NewCo into AD precision medicine.
+Previously verified 2026-07-14 (Second consecutive lean-day Sourcing Radar;
+2026-07-11..14 bioRxiv window returned exactly one JHU-corresponding preprint —
+Bishai TB immunology, no discrete asset — medRxiv zero. Two Johns Hopkins-anchored
 peer-reviewed picks: Pick 1 methodology + scouting signal — Sternke (dual JHU
 T.C. Jenkins Biophysics + GSK Protein Design and Informatics) + Barrick (senior
 corresponding; JHU Biophysics) Nature Chemical Biology 2026-07-10
@@ -347,26 +385,56 @@ raises, exits, or crosses a scientific milestone.
        TEDCO Maryland Innovation Initiative-funded. Preprint 10.1101/2025.08.17
        .668569 documents NF27 activity across multiple cancer types. Sits on
        PitchBook (profile 895308-58).
-    3. **OptaNova Pharma** (Green + Popel + Pandey cofounders). ⚠ **Stealth-
-       stealth as of 2026-07-06.** Public footprint = Delaware LLC filing
-       (Wilmington DE) only. No press release, no website, no LinkedIn company
-       page, no PitchBook profile, no clinical trials, no cross-referenced
-       patents. COI on bioRxiv 2026.06.30.735614 is the first place OptaNova
-       has surfaced publicly. Almost certainly a peptide-therapeutics play
-       given the founder overlap and the Popel Lab's technology stack, but the
-       therapeutic area is unknown.
+    3. **OptaNova Pharma** (Green + Popel + Pandey cofounders). **Popel active
+       equity confirmed 2026-07-15** — PNAS paper 10.1073/pnas.2525799123 COI
+       statement is the first public disclosure of active Popel equity in
+       OptaNova. Public footprint outside COI disclosures still limited (Delaware
+       LLC filing in Wilmington DE; no press release; no website; no LinkedIn
+       company page; no PitchBook profile; no clinical trials; no cross-referenced
+       patents). Therapeutic area still not publicly declared — the founder overlap
+       and the Popel Lab's technology stack point to a peptide-therapeutics play,
+       possibly with a computational-oncology overlay given the Popel-Fertig-Deshpande
+       spQSP direction, but this is inference not disclosure.
+- **Cross-institution computational-oncology axis (added 2026-07-15).** Same
+  2026-07-14 PNAS issue — Zhang S (first, JHU BME) + Popel AS + Fertig EJ
+  (co-corresponding; UMB SoM IGS + Greenebaum + UM Institute of Health Computing
+  + Medicine) + Deshpande A (JHU Oncology + Convergence Institute + Bloomberg-Kimmel
+  + Data Science & AI Institute), "Quantitative calibration of a spatial QSP model
+  identifies fibroblast impact on HCC immunotherapy," *PNAS* 123(29):e2525799123,
+  DOI 10.1073/pnas.2525799123, PMID 42446991. ABC-SMC calibration of agent-based
+  spQSP model to spatial-transcriptomics-observed patient tumor architecture;
+  fibroblast module reproduces CD8 T-cell exclusion; predicts atezolizumab + TKI
+  response in independent cohort; identifies pretreatment spatial biomarkers.
+  Code + models on GitHub + Zenodo. Funded by NIH U24CA284156 + U01CA253403 +
+  U01CA212007, DoD-MEDCOM 144517-CA220654P, Maryland Cancer Moonshot, Maryland
+  Cigarette Restitution Fund. **Rare JHU-UMB co-corresponding structure — exactly
+  the cross-institution model the UM Ventures × Blackbird co-investment agreement
+  should be catalyzing** (aSKY-track precedent). Virtual-clinical-trial + pretreatment
+  spatial-biomarker infrastructure is a live licensable asset — Genentech, AstraZeneca,
+  and BMS all run internal QSP groups but none have spatial-omics-calibrated versions
+  in production. Maturation moment for a Popel-Fertig-Deshpande computational-oncology
+  virtual-trial NewCo conversation. Action item — Eddie: check whether JHTV or
+  UM Ventures has an active conversation with either PI on the platform IP; if not,
+  this week is the moment.
 - **Blackbird sourcing angle.** Founder cluster is the pattern. Serial peptide-
-  therapeutics spinout factory at Wilmer / JHU BME is exactly the "spinout
+  therapeutics spinout factory at Wilmer / JHU BME plus a fresh computational-
+  oncology cross-institution axis with Fertig at UMB IHC is exactly the "spinout
   factory" Blackbird should be underwriting rather than watching from the
   outside. Complements Aletira + Kalhor 3DEEP + Revivify Innovations as the
   Wilmer + JHU BME + Center for Nanomedicine cluster.
-- **Open intelligence gaps (2026-07-06):**
+- **Open intelligence gaps (updated 2026-07-15):**
     - OptaNova Pharma therapeutic area, funding status, whether operating on
-      JHU-licensed IP or inventor-owned pre-Hopkins IP.
+      JHU-licensed IP or inventor-owned pre-Hopkins IP. Popel equity now
+      publicly confirmed (2026-07-14 PNAS COI) but company product line still
+      undeclared.
     - AsclepiX DISCOVER Phase 1/2a topline result (publicly unshipped past
       original Q2 2025 timeline).
     - Whether JHTV is managing an active OptaNova license negotiation or
       OptaNova is downstream of a JHTV-independent inventor filing.
+    - JHTV posture on the Popel-Fertig-Deshpande spQSP platform code + calibration
+      pipeline (GitHub + Zenodo deposit) — code-as-open, methods-as-provisional
+      is a common academic strategy that leaves composition-of-workflow patents
+      still available.
 
 ### Barrick lab protein-design methodology (JHU T.C. Jenkins Biophysics) — diligence-discipline signal + JHU→GSK IP-flow scouting note ⚠
 - **Lab / people.** **Doug Barrick, Ph.D.** — Professor, T.C. Jenkins Department
@@ -769,6 +837,24 @@ raises, exits, or crosses a scientific milestone.
 - **Findings — primate POC.** Chronic oral DHED in male and female marmosets treated with letrozole (aromatase inhibitor; models the estrogen-deprived state of adjuvant ER+ breast cancer patients on AI hormonal therapy) → (1) robust increase in brain 17β-estradiol levels across brain regions without affecting peripheral estrogen; (2) improved memory at short delays; prevented letrozole-induced cognitive slowing in a hippocampal-dependent memory task; (3) normalized hippocampal neuronal membrane potential + excitability; (4) reduced sleep fragmentation; (5) sex-differentiated effects on thermoregulation (opposite direction in males vs females) — authors flag as needing additional research.
 - **Sourcing significance — calendar-moment platform.** First-in-class, class-of-one CNS-selective estrogen prodrug in a defined unmet-need patient population: **AI-associated cognitive/sleep side effects drive nonadherence in ER+ breast cancer adjuvant hormonal therapy** (a large defined population with well-documented compliance failure). Extensible to menopausal cognition + HRT-averse populations. **Non-human primate efficacy** in the disease-relevant model is the diligence bar a translational-neurotherapeutics investor asks to see before writing a seed check. 11-year-old platform (2015 Sci Transl Med foundation) that has been publishing steadily but has not moved into a company vehicle — this is the calendar moment for a spinout conversation. **UMB-UNTHSC joint IP**; Merchenthaler + Prokai named inventors. **Comparators.** Essentially class of one — HRT is a low-fidelity substitute; SERMs (raloxifene, bazedoxifene) act peripherally, not centrally. Fits alongside the Lieber neuropsych NewCo thesis under UM Ventures × Blackbird surface.
 - **Watch:** UM Ventures IP-status probe on the DHED estate; active option-agreement or license terms with the UNTHSC side of the joint patent estate; whether Prokai has parallel entrepreneurship footprint at UNTHSC that could serve as the founding operator; competitive positioning vs any hormone-replacement re-entry programs (e.g., Sermonix, Duavee).
+
+### Dawson lab α-synuclein RNase-L-recruiting PMO chimera platform (JHU Institute for Cell Engineering + Neurology + INBT + Kennedy Krieger + U Chicago Genetic Medicine) — active sourcing lead + first-in-class RNA-degrader modality ⚠
+- **Lab / people.** **Ted M. Dawson, M.D., Ph.D.** — Leonard and Madlyn Abramson Professor in Neurodegenerative Diseases; Director, Institute for Cell Engineering (ICE); JHU Departments of Neurology + Snyder Neuroscience + Physiology, Pharmacology & Therapeutics + Institute for NanoBioTechnology (INBT). One of the foundational Parkinson's disease figures in academic neurology. **Xiaobo Mao, Ph.D.** (co-corresponding; JHU Neurology + INBT + Materials Science and Engineering) — long-running program on α-synuclein transmission, prion-like propagation, and structural biology, spans neurology into materials-science-adjacent delivery-chemistry work. **Jingxin Wang, Ph.D.** (co-corresponding; JHU Neurology) — medicinal chemistry. **Ning Wang** (first author; JHU ICE + Neurology, moved to U Chicago Genetic Medicine as of publication) — the trainee driving the RDC chemistry. **Mingyao Ying, Ph.D.** (Hugo W. Moser Research Institute at Kennedy Krieger + U Chicago Genetic Medicine) — trainee-adjacent stem-cell + oligonucleotide biology.
+- **Fresh disclosure (2026-07-14):** Wang N (first), Hegde S, Tang Z, Liu H, Feng G, Niu L, Liu B, Li H, Zhang X, Gadhave K, Kumbhar R, Jiang L, Liu Y, Luo M, Zhang S, Dawson TM (senior), Pantelyat A, Rosenthal LS, Ying M, Mao X (co-corresponding), Wang J (co-corresponding), "Targeted α-synuclein mRNA degradation by PMO-based RNA-degrading chimeras," *Proceedings of the National Academy of Sciences* 123(29):e2526461123, DOI 10.1073/pnas.2526461123, PMID 42446976. Peer-reviewed.
+- **Modality — RIBOTAC in PMO chemistry.** **Phosphorodiamidate morpholino oligonucleotide (PMO)** — the Sarepta-family backbone chemistry, the safest and most translationally established oligonucleotide chemistry we have — conjugated to a small-molecule warhead that binds and activates **RNase L**, the endogenous cytoplasmic 2-5A-dependent nuclease. The morpholino tags the 5′ untranslated region of **SNCA** messenger-RNA; the warhead recruits RNase L to that transcript-bound complex; the endogenous nuclease cleaves the α-synuclein mRNA. **Two orthogonal differentiations at once** from the field-incumbent gapmer-ASO approach: (a) PMO backbone rather than gapmer ASO chemistry; (b) cytoplasmic RNase L recruitment rather than nuclear RNase H recruitment. Either alone is a modality-differentiation story a translational investor takes a meeting on; together they define a new class.
+- **Preclinical package — complete-to-seed.** (1) Screen of 9 chimeras narrowed to lead **4-D1**. (2) Dose-dependent SNCA mRNA + α-synuclein protein knockdown in HEK293T, **RNase-L-dependent** — meaning the effect vanishes in RNase-L-KO cells, which is the exact target-engagement control an FDA reviewer will ask for. (3) Effect replicates in primary cortical neurons from a **humanized SNCA mouse** and in **patient iPSC-derived cortical neurons**. (4) Blocks **prion-like seeding** by patient-derived α-synuclein fibrils; rescues fibril-driven cytotoxicity. (5) **In-vivo α-synuclein mRNA lowering** in the humanized SNCA mouse. That is the exact preclinical sequence a Series-A committee wants to see before writing a check.
+- **IP — the operator-relevant beat.** Provisional patent application **63/901,296**, "Phosphorodiamidate morpholino oligonucleotides and uses thereof," jointly filed by **the University of Chicago and Johns Hopkins University**; named inventors **Ning Wang, Xiaobo Mao, Jingxin Wang**. Explicitly **not licensed** as of publication. **No royalties or other financial compensation received.** JHTV is telling anyone paying attention that the program is at term-sheet moment. **Funding:** NIH R35GM147498 (J. Wang), Parkinson's Foundation PF-IMP-1045798 + PF-JFA-1933 (Mao/Wang), Maryland Stem Cell Research Foundation 2019-MSCRFD-4292 + 2024-MSCRFD-6394 (Mao).
+- **Sourcing significance — direct sourcing lead.** α-synuclein is a decade-long graveyard for direct-binding modalities against an intrinsically disordered target. Prasinezumab and cinpanemab as antibodies washed out at Phase 2. The Biogen α-syn ASO (BIIB101) failed its Phase 1 futility read last year and is off the board. Every remaining clinical α-syn-lowering program in humans runs on RNase-H ASOs. This is a first-in-class orthogonal modality on **both** dimensions — chemistry and nuclease-recruitment — with the composition-of-matter filing at JHTV, unlicensed. Foundational Parkinson's franchise with **multiple system atrophy (MSA)** + **dementia with Lewy bodies (DLB)** as follow-on indications for the same asset. **Fits JHU Life Sciences Research Initiative timeline** (backfill over next 2 years); composition-of-matter filed today. Founding cast for a next-generation R-N-A-degrader startup is already on the manuscript.
+- **Diligence questions.** (1) **Innate-immunity signaling at chronic dose.** RNase L is part of the interferon response — activating it globally would trigger immune signaling and toxicity. The RDC theory is target-conditional activation only (RNase L is recruited only when the PMO is bound to its target transcript). Chronic-dosing innate-immune readouts (type-I IFN gene expression, ISG signatures) need to be pulled from the supplement. (2) **CNS delivery of PMO.** Sarepta's PMO chemistry is IV/subcutaneous for muscle (exon-skipping in DMD); CNS delivery is not their franchise, and Ionis has ASO-to-CNS know-how competitors do not. Route selection (intrathecal? ICV?), PK, and CNS biodistribution numbers need to be diligenced. (3) **In-vivo readout details** in the humanized SNCA mouse — route, dose, magnitude of lowering, biodistribution, duration — pull from supplement.
+- **Watch.** JHTV license negotiation status on provisional 63/901,296; movement of Ning Wang to U Chicago as a signal on whether the U Chicago side of the joint IP takes founding-operator role or JHU keeps operational control; whether Ted Dawson's other current company affiliations (Neuraly, Valted Seq) conflict with a new NewCo formation; competing next-gen α-syn modality programs (aggregate-directed antibodies, small-molecule aggregation inhibitors like UCB0599 at Phase 2 for MSA); Sarepta/Ionis posture on the PMO chemistry space in CNS indications.
+
+### Richman Family Precision Medicine Center + Mahairaki lab iPSC-neuron responder-stratification platform (JHU Genetic Medicine + JHU Alzheimer's Disease Research Center + Lieber Institute contributors) — landscape signal + companion-Dx template ⚠
+- **Lab / people.** **Vasiliki Mahairaki, Ph.D.** — Assistant Professor, JHU Department of Genetic Medicine + Faculty, Richman Family Precision Medicine Center of Excellence in Alzheimer's Disease; senior corresponding. **Constantine G. Lyketsos, M.D., M.H.S.** — Bloomberg Distinguished Professor, JHU Department of Psychiatry and Behavioral Sciences; Director, JHU Alzheimer's Disease Research Center + Chair of Psychiatry at JHU Bayview + Director, Richman Family Precision Medicine Center of Excellence in AD; senior. **Brady J. Maher, Ph.D.** (Lieber Institute + JHU Psychiatry + Snyder Neuroscience) as contributing PI. **Federica Farinelli, Isaac Ostlund, Debamitra Das** (all Lieber Institute) as contributors — extends the Lieber-Hopkins-collaboration footprint from neuropsychiatry into AD precision medicine.
+- **Fresh disclosure (2026-07-12):** Zivko C (first), Sagar R, Ahmed W, Xydia A, Farinelli F, Ostlund I, Das D, Maher BJ, Lyketsos CG, Mahairaki V (senior corresponding), "Heterogeneous responses to memantine in Alzheimer's disease: A precision medicine approach using iPSC models," *Alzheimer's & Dementia (New York, N.Y.) — Translational Research and Clinical Interventions* 12(3):e70271, DOI 10.1002/trc2.70271, PMID 42444751, PMC13357697 (open access CC-BY).
+- **Platform.** 19 patient-derived iPSC lines (12 AD + 7 CU, sourced through JHU ADRC + Memory and Alzheimer's Treatment Center + the S-CitAD Escitalopram-for-Agitation trial) differentiated to NgN2 excitatory glutamatergic cortical neurons. Comparable electrophysiology between AD + CU lines at baseline (capacitance ~2.5 pF, membrane resistance ~7500 MΩ, VGSC peak current density ~−200 pA/pF). Two functional assays: (a) fluorescence-based **calcium influx** (Fluo-4 AM; glutamate/glycine 2/2 to 100/100 μM stimulation to activate NMDA receptors); (b) fluorescence-based **oxidative stress** (CellROX Green; menadione 1-50 μM redox cycling). 24-hour memantine pre-treatment reduces calcium influx by −9.85% mean (range 0 to −39%, with AD_8 at −39% the max responder) and ROS by −26.05% mean (range −4.23% to −72.21%, with AD_1 at −72% the max responder). Substantial across-line heterogeneity — the platform captures inter-individual variability mirroring the well-documented heterogeneous clinical response of memantine in the AD population. Exploratory / hypothesis-generating; N-power for correlation stratification analyses estimated at >1000/group per authors.
+- **Blackbird relevance — three angles.** (1) **Companion-diagnostic template.** Memantine is a generic (pennies per dose) that helps roughly a third of the patients who take it. A lightweight iPSC-neuron functional-assay platform that pre-selects responders converts a $50/mo generic into a precision-medicine-selectable tool. The same platform template extends directly to **donanemab, lecanemab**, and the next wave of AD symptomatic + disease-modifying drugs at meaningful per-patient cost. (2) **Richman Family Precision Medicine Center of Excellence** sits inside the same JHU Alzheimer's Disease Research Center that Lyketsos runs — the natural home for iPSC-based patient stratification for AD as an incubated program. Not yet a spinout candidate, but a platform with real commercial optionality. (3) **Lieber Institute contributor list** (Farinelli, Ostlund, Das, Maher) extends the Lieber-Hopkins-collaboration footprint from neuropsychiatry into AD precision medicine. Natural pipeline expansion route for the **GPR52-anchored Lieber neuropsych NewCo** when it gets to a second-and-third asset conversation — an AD symptomatic-drug companion-Dx platform is an adjacent, complementary asset with cross-atlas synergies (Martinowich-Maynard-Hicks matched-donor atlas infrastructure could feed molecular context to the iPSC platform).
+- **Industry posture — Lyketsos consulting rolodex.** Consultant/advisor to Roche, Avanir, Karuna, Maplight, Axsome, GW Research Limited, Merck, EXCIVA GmbH, Otsuka, IntraCellular Therapies, Medesis, BMS, IQVIA. No equity disclosed. Deep industry visibility a companion-Dx platform out of the Richman Center would need to build partnering conversations. All authors other than Lyketsos declared no COI.
+- **Watch.** Whether the Mahairaki-Lyketsos platform extends into donanemab + lecanemab responder assays (natural next paper); whether the S-CitAD trial cohort produces additional iPSC lines for expanded power; JHTV posture on Richman Center IP — precision-medicine center-attached platforms often stay pre-competitive but the assay-panel IP is a licensable atomic unit; whether the Lieber contributor track (Maher, Farinelli, Ostlund, Das) opens up a Lieber-Hopkins-precision-medicine cross-cycle collaboration paper on the neuropsych NewCo second-and-third-asset conversation.
 
 ---
 
