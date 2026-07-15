@@ -1219,3 +1219,28 @@ All three files written. Per SKIP_TTS=1, no TTS, no publish, no feed edit, no co
 
 **Chosen**: Bempikibart Q32 Bio SIGNAL-AA Part B — anti-IL-7Rα biologic Ph2a hit in severe AA including 36.4% JAK-experienced, with off-drug durability signal that differentiates from oral JAK class.
 === 2026-07-14T02:54:14-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-15T02:40:14-07:00 start justice-biotech-brief ===
+All three files are written. Per SKIP_TTS=1, no TTS/publish/feed edit/commit — the orchestrator handles those after batch audio.
+
+## Candidate funnel — 2026-07-15
+
+**bioRxiv (details API, 2026-07-14 / 2026-07-15 window)**
+- Full corpus fetched: 233 preprints across two-day window, paginated (cursors 0/30/60/90/120/150/180/210).
+- Keyword filter (VEGF, PD-L1, PD-1, TCE, bispecific/trispecific, CAR-T, ADC, JAK, checkpoint, IL-2/7/13/17/18/23, TIGIT/LAG-3/TIM-3, 4-1BB, OX40, Treg, BCMA, HER2/3, EGFR, Claudin, Nectin, MMAE, deruxtecan, autoimmune) applied to title + abstract.
+- Only substantive hit: Quantifying target antigen-dependent CAR T-cell performance against AML — https://www.biorxiv.org/content/10.1101/2024.12.16.628628v3 (mathematical modeling / Bayesian inference of CD33/CD117/CD123/CD371 CAR-T dynamics against TP53-WT vs TP53-KO MOLM13; full text via jina.ai OK; interesting but a math-modeling paper, not therapeutic development novelty).
+- Remaining immunology/cancer-biology titles were off-beat (basal-cell pancreatic ca, MYC-HCC mitophagy, HCC/ICC lineage tracing, UPRMT nutrient immunity, NONO chromatin/antiviral, ELRi T-cell migration technique).
+
+**News / press (direct WebFetch on Fierce/Endpoints/STAT 403s from this IP; used WebSearch + GlobalNewswire + Manila Times mirror)**
+- NextCure / Avere Therapeutics — reverse merger + Hansoh in-license + $320M PIPE for AVR-001 (oral IL-23R cyclic peptide antagonist) — 2026-07-14 — https://www.globenewswire.com/news-release/2026/07/14/3326655/0/en/nextcure-and-avere-therapeutics-announce-merger-to-advance-once-weekly-oral-il-23-therapy.html — **CHOSEN**
+- AstraZeneca / Dizal — $600M upfront for global rights to Zegfrovy (sunvozertinib, EGFR ex20ins) — 2026-07-14 — targeted small molecule, EGFR NSCLC only, not a good fit for Justice's biologic/CAR-T/ADC/TCE beat.
+- Agenus (AGEN) — discontinues Phase 3 BATTMAN in late-line MSS mCRC to fund neoadjuvant ROBBIN (BOT+BAL); $340M oversubscribed PIPE announced 2026-07-13. Checkpoint-immunotherapy adjacent, MSS colon cancer is Justice's beat, but this is a strategic decision, not fresh clinical data.
+- CS2009 — Cstone PD-1/VEGF/CTLA-4 trispecific — ASCO 2026 highlights (May/June recap), not a July 14-15 fresh readout.
+- AACR 2026 bispecific ADC coverage (BCG039 Nectin-4×TROP2, BCG026 FAP×GPC1, etc.) — May 4 review article, out of recency window.
+- Bempikibart Q32 SIGNAL-AA — already covered in yesterday's episode.
+
+**Policy / funder**
+- ARPA-H $160M for personalized genetic medicines / umbrella trials for rare pediatric diseases — 2026-07-14 — off-beat (rare pediatric personalized medicine, not immuno-onc/autoimmune biologics).
+- NIH / NSF — no fresh 2026-07-14/15 announcements in scope.
+
+**Chosen**: Avere Therapeutics / NextCure reverse merger + $320M PIPE + Hansoh ex-Greater-China license for AVR-001 (oral IL-23R cyclic peptide antagonist). Selected over the CAR-T-AML modeling preprint (which is a computational-methods paper, not therapeutic novelty) and over Agenus BATTMAN discontinuation (strategic move, not new clinical data). Fits Justice's beat on modality-shift in autoimmune biologics (oral peptide vs injectable mAb vs oral JAK), Chinese asset flow with strategic-equity twist (Hansoh both licensor and lead PIPE investor — same company behind GSK-partnered B7-H3 ADC HS-20093/Ris-Rez covered earlier in this feed), and reverse-merger + PIPE capital vehicles for Phase-2b-ready autoimmune biotech.
+=== 2026-07-15T02:53:18-07:00 done  justice-biotech-brief (exit 0) ===
