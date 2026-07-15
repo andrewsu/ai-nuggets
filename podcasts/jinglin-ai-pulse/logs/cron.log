@@ -737,3 +737,32 @@ Script and stubs are written. Summary:
 
 No TTS, R2 publish, feed edit, or commit performed — the batch orchestrator handles those after Voxtral finishes.
 === 2026-07-14T02:44:12-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-15T02:30:14-07:00 start jinglin-ai-pulse ===
+Script and stubs written for `2026-07-15-compute-is-a-physical-object-nys-moratorium-xai-turbines-and-the-glean-application-layer`.
+
+**Story picks:**
+- **Twitter Pulse #1 (compute-as-physical-object):** NY Gov Hochul Tue Jul 14 signs first US statewide moratorium on hyperscale data centers (50 MW+, 1-yr env-permit pause, GEIS + 60-day Community Investment Framework) paired with Reuters Jul 14 analysis of xAI's 59 unpermitted natural-gas turbines at Colossus 2 in Southaven MS + DOJ's Jun 15 national-security defense of those turbines (first-of-its-kind legal shield). NY vs MS as opposite state equilibria this month.
+- **Twitter Pulse #2:** T-2 to Xi WAIC keynote — Seoul Economic Daily "China Narrows US Gap" (Jul 15) + Modern Diplomacy "China's AI Governance Model vs. the West" (Jul 14) framings; Gemini 3.5 Pro same-day GA still unconfirmed.
+- **Money Moves:** Helsing $1.8B Series E at $18B (JPMorgan + Lightspeed + Iconiq + Goldman, largest EU defense-startup round in history, WV manufacturing for 2,000+ HX-2/mo) + PixVerse $439M Series C extension at $2B+ (Alibaba-led, R1 real-time world model, 150M registered / 15M MAU).
+- **Podcast Deep Cut:** 20VC Sat Jul 11 with Glean's Arvind Jain — "The Paranoid Optimist: Why Model Labs Are an Asset, Not the Enemy." Sequel + structural counterpoint to last week's Bavor Sierra pick (same show, same host). Four moves: frontier labs are enablers not competitors; real fear is institutional learning accreting inside agents you don't own; 90%+ enterprise use cases already handled by many models incl open source + majority-open-source in 3 yr; Microsoft bundling is the actual competitor. Together Bavor + Jain = mid-July 2026 enterprise-AI operator consensus.
+
+**Watch item resolution:** All three of yesterday's watches still open (Xi Fri, Anthropic response silence at 48h, Gemini 3.5 Pro no model card yet).
+
+**Stubs written** (per `SKIP_TTS=1` protocol):
+- `.md` script (spoken body ~3,900 words → ~22-24 min at natural pace, in line with recent 20-min episodes)
+- `.rss-item.xml` with `__LENGTH__` / `__DURATION__` placeholders — parses as valid XML
+- `.commit-msg`
+
+No TTS, R2 publish, feed edit, or commit performed — the batch orchestrator handles those after Voxtral finishes.
+
+**Candidate funnel:**
+
+Sources scanned:
+- Twitter/discourse queries (4) — convergence pivoted from yesterday's Xi/MCP axis to the compute-as-physical-object axis (NY moratorium + xAI turbines + DOJ shield all landing same day Jul 14); @Zefan_Cai X account still no public post activity
+- Funding/business queries (5) — Helsing + PixVerse + NY moratorium + xAI Reuters + Anthropic-Samsung + Google-caps-Meta + Bespoke $40M + Helsing WV mfr
+- Podcast queries (4) — 20VC Sat Jul 11 Jain CHOSEN; 20VC Jul 13 Abrahami (Wall Street misread Wix/Base44) considered but off-topic; 20VC Jul 9 Jason/Rory; Dwarkesh no new since Jun 30; Latent Space Jul 8 Databricks (covered); MLST Jul 1 Tufa (covered)
+
+Shortlist chosen: NY moratorium (Story 1a), xAI turbines Reuters + DOJ shield (Story 1b), T-2 Xi WAIC (Story 2), Helsing $1.8B (Money Moves 1), PixVerse $439M (Money Moves 2), 20VC Jain (Deep Cut).
+
+Not chosen: Abrahami/Wix (Wall Street-vibe-coding angle less relevant to biology-AI focus); Anthropic-Samsung + OpenAI 5%-equity (reprises); Google Cloud Next Gemini Enterprise (yesterday's coalition adjacent); Boston Dynamics Spot Gemini Robotics (last week); ByteDance Seedream 5.0 Pro (image-gen off-focus); Unitree IPO (stale); Startups $510B H1 (too macro); Bespoke $40M (Fri tail); Senate patent hearing / UNESCO gender gap / Chicago Law devices ban (adjacent policy); nurses layoff (healthcare workforce off-focus).
+=== 2026-07-15T02:43:17-07:00 done  jinglin-ai-pulse (exit 0) ===
