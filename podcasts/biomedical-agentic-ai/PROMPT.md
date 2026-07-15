@@ -29,12 +29,13 @@ one source fails transiently (arXiv 429, bioRxiv 5xx, etc.) follow the
 source-level-failures rule in `PIPELINE.md` — proceed with the rest, note
 the gap in the funnel, ship the day's episode.
 
-1. **bioRxiv** — recent preprints (last 2 days) in bioinformatics, genomics,
+1. **bioRxiv** — recent preprints (last 4 days) in bioinformatics, genomics,
    systems biology, pharmacology.
    - Use the details API: `curl 'https://api.biorxiv.org/details/biorxiv/YYYY-MM-DD/YYYY-MM-DD'`
-     for yesterday and today. **Pull the FULL collection, not a sample.**
+     with the start date 3 days before today and the end date today.
+     **Pull the FULL collection, not a sample.**
      Paginate via the `cursor` field if `messages[0].count` exceeds the
-     page size; the typical 2-day window is 400–700 entries. Filter the
+     page size; the typical 4-day window is 800–1400 entries. Filter the
      entire collection by relevance keywords ("agent", "LLM", "foundation
      model", "autonomous", "multi-agent", "knowledge graph", "ontology")
      applied to title + abstract.
@@ -49,7 +50,7 @@ the gap in the funnel, ship the day's episode.
      The runner pre-fetches the arXiv listing API once per day for the
      category union of every show, so individual shows don't need to hit
      arXiv themselves. Filter the cached Atom feed for submissions within
-     the last 2 days and biomedical relevance.
+     the last 4 days and biomedical relevance.
    - **If the cache is missing or empty** (runner pre-fetch failed), fall
      back to a live listing call:
      `curl 'https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.CL+OR+cat:q-bio+OR+cat:cs.MA&sortBy=submittedDate&sortOrder=descending&max_results=200'`
@@ -64,11 +65,11 @@ the gap in the funnel, ship the day's episode.
      back to `site:arxiv.org` web search for the same window. Indexing
      lag means you'll miss same-day submissions, but it beats dropping
      arXiv entirely.
-3. **ChemRxiv** — recent preprints (last 2 days) relevant to biomedical
+3. **ChemRxiv** — recent preprints (last 4 days) relevant to biomedical
    AI agents. Use WebSearch with `site:chemrxiv.org` plus a relevance
    keyword (e.g., `site:chemrxiv.org agent 2026`); the public API is
    gated by Cloudflare from this host. Filter result snippets to the
-   last 2 days.
+   last 4 days.
 4. **PubMed** — recently indexed articles (last 5 days) covering agentic
    AI / LLMs applied to biomedicine. The window is wider than the
    preprint sources because PubMed indexing lags real publication by a
@@ -84,7 +85,7 @@ the gap in the funnel, ship the day's episode.
    - Discard the usual spurious keyword matches ("chemical agent",
      "biological agent", "LLM" inside an unrelated word) before
      shortlisting.
-5. **News and product launches** — last 1–2 days. Headlines from
+5. **News and product launches** — last 3 days. Headlines from
    science-news outlets covering AI in biomedicine, Nature/Science
    publications, and open-source tool releases.
 6. **Policy / funder announcements** — daily check of major US biomedical
@@ -97,12 +98,25 @@ the gap in the funnel, ship the day's episode.
    Any agentic-AI / biomedical-AI program launch on these pages is a
    first-rate candidate (e.g., ARPA-H IGoR launch 2026-05-05).
 
-**Recency is a hard filter, not a hint.** Items posted or announced
-outside the stated windows are out-of-scope regardless of merit and do
-not belong on the candidate shortlist — not even as honorable mentions.
-If the last 2 days are thin, the candidate list is short or empty.
-"No fresh candidate today, skipping" is an acceptable outcome; reaching
-back to plug a 2- or 4-week-old paper is not.
+**Recency is a hard filter, not a hint.** Each source has its own window —
+4 days for bioRxiv, arXiv, and ChemRxiv; 3 days for news and product
+launches; 5 days for PubMed. Items posted or announced outside their
+source's window are out-of-scope regardless of merit and do not belong on
+the candidate shortlist — not even as honorable mentions. If the recent
+window is thin, the candidate list is short or empty. "No fresh candidate
+today, skipping" is an acceptable outcome; reaching back to plug a 2- or
+4-week-old paper is not.
+
+**One carve-out — full-text deferrals.** Full text must be readable
+before an item is eligible (see "Full text is an eligibility gate" in
+`PIPELINE.md`). A preprint that was in-window when first seen but only
+abstract-only then — typically because bioRxiv hadn't rendered the body
+yet — stays eligible once its full text renders, even if that lands a day
+or two past the original 2-day window. It was surfaced in-window and
+deferred for a mechanical reason, so picking it up when it becomes
+readable is not "reaching back." This is the *only* exception to the
+recency filter: it covers items already surfaced and deferred, never a
+paper you'd be discovering fresh outside the window.
 
 # 3. Episode format
 

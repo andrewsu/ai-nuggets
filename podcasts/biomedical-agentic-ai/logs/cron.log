@@ -2505,3 +2505,44 @@ Files written:
 
 **Why NAIS beat the shortlist**: it is the first paper putting an agentic AI scientist inside a hospital under real governance constraints with a 286k-person biomedical case study, and the phenotype-design-vs-execution editorial framing (3,950 discordant subjects → medication audit → only 125 on antihypertensives → team-directed rerun) is the highest editorial payload per minute for Andrew's audience. Diversifies from the last two limits-of-LLMs pieces with a positive-result deployment demo, and directly speaks to the governance layer that biomedical institutions are wrestling with.
 === 2026-07-14T02:05:35-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-15T02:00:14-07:00 start biomedical-agentic-ai ===
+All three stub files are in place. XML validated. `SKIP_TTS=1` is set, so per PIPELINE.md I stop here — the orchestrator handles TTS, R2 publish, feed edit, and commit.
+
+## Summary
+
+Today's episode for `biomedical-agentic-ai` is written.
+
+**Pick:** RAGU — a multi-step GraphRAG engine with a compact domain-adapted extractor (arXiv 2607.11683, posted 2026-07-13), out of ITMO University and Novosibirsk State. The load-bearing editorial claim: language skills (comprehension, extraction, in-context reasoning) scale weakly with model size while world knowledge scales steeply, so a 7B model fine-tuned for language skills is enough to build a biomedical KG. Meno-Lite-0.1 (7B) beats Qwen2.5-32B by +12.5% harmonic mean on the IE benchmark, driven by relation extraction (F1 0.347 vs 0.239). RAGU leads Evidence Recall 84% vs ≤76% on Medical GraphRAG-Bench; the "HippoRAG dominates multi-hop" story is largely an answer-format artifact. Two orders of magnitude cheaper than GPT-4-class API extraction on a single consumer GPU, MIT + Apache 2.0 + Hugging Face.
+
+Files:
+- `scripts/2026-07-15-ragu-compact-graphrag-language-skills-scale-weakly.md` — 1047 spoken-body words (under 1150 cap)
+- `.rss-item.xml` — RSS item with `__LENGTH__` / `__DURATION__` placeholders; XML validated
+- `.commit-msg`
+
+## Candidate funnel — 2026-07-15 biomedical-agentic-ai
+
+- **bioRxiv** (details API, 2026-07-12 to 2026-07-15, full 18-page pagination, 519 unique preprints): 19 substantive agentic/LLM/KG hits. Live shortlist:
+  - `10.64898/2026.05.11.723319` MechAInistic v3 (multi-agent metabolic-model reasoner) — v3 posted 2026-07-14, but v2 already featured 2026-05-14; excluded
+  - `10.64898/2026.06.16.732577` VFB-MCP v2 (NL access to Drosophila ontology-led KB) — v1 already featured 2026-06-22; excluded
+  - `10.64898/2026.07.08.737358` EcoXAI (autonomous agentic ecosystem for XAI + biomedical discovery) — v1 posted 2026-07-13, body **not rendered** by bioRxiv, abstract-only via jina; ineligible per full-text eligibility gate; deferred
+  - `10.64898/2026.07.08.737248` OCellus (LLM framework for single-cell/spatial/perturbation biology) — body not rendered, still abstract-only 3 days post-submission; already deferred yesterday; ineligible
+  - `10.1101/2025.07.10.664265` Transplant-Agents v2 — originally posted 2025-07-16 (a year old, then titled Auto-MedCalc); outside recency window
+  - `10.64898/2026.02.20.707076` CellAwareGNN v2 — v1 from 2026-02-23, outside window
+  - Several other spurious "agent"/"autonomy" matches filtered
+- **arXiv** (`/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, 2026-07-11 to 2026-07-14): 43 biomedical+agentic hits after keyword+biomed filter. Substantive shortlist (full-text-verified):
+  - **[CHOSEN]** `2607.11683` — RAGU (2026-07-13), multi-step GraphRAG + language-world scaling claim + Meno-Lite-0.1 KG-construction win — full text via arXiv HTML
+  - `2607.11464` — FAIR GraphRAG (2026-07-13), FAIR Digital Objects as graph nodes for gastroenterology KG; framework-heavy, RNA-seq case study
+  - `2607.12051` — Agentic systems for breast cancer treatment (2026-07-13), 72 clinical cases × 1,147 rubrics, Claude Opus 4.8 D&C+SA best (global score 0.594); themes overlap with 2026-07-13 LongMedBench
+  - `2607.12886` — Pythia, multi-agent autonomous clinical symptom detection (2026-07-14); narrower
+  - `2607.12527` — OrthoPilot, LLM MSK care system (2026-07-14); narrower
+  - `2607.12474` — Mechanistic World Models, autonomous discovery perspective piece (2026-07-14); no experiments
+  - `2607.12480` — TRACE, auditable agentic commitments schema (2026-07-14); protocol paper, no biomedical case
+  - `2607.11226` — Heterogeneous Agent Cohorts (2026-07-13); safety-focused, not biomedical
+  - `2607.11175` — Self-Evolving Clinical Systems (2026-07-13); survey/roadmap
+  - `2607.10508` — Confining Nondeterminism (2026-07-11); vision paper, no results
+  - `2607.11079` — SDABench (2026-07-13); mentioned in yesterday's funnel
+- **PubMed** (esearch reldate=5, 300 results): only 5 title-level agentic+biomedical hits after spurious-match filter; nothing dominated the arXiv shortlist. Notable: "Integrating multi-type features and knowledge graph for graded prediction of drug-induced liver injury" (pmid:42447101) — journal article, secondary to preprint pool.
+- **Policy/press/funders**: quick check — no ARPA-H/NIH/NSF/HHS agentic-biomedical program launches in the 3-day window.
+
+**Why RAGU beat the shortlist:** hits Andrew's core interests (KG construction, agentic AI, open science, data integration) with a load-bearing, testable, opinionated hypothesis (language skills scale weakly), a concrete empirical win (7B beats 32B by 12.5% on KG construction, driven by relation extraction), and unusually strong open-science posture (MIT + Apache 2.0 + HF + pip). Two orders of magnitude cost delta is the actionable takeaway. Diversifies from the last three episodes (governed AI scientist, clinical benchmark limits, quote-verified literature mining) with a scaling-law + methods-cleanup story that a KG-building listener can actually use this week.
+=== 2026-07-15T02:16:15-07:00 done  biomedical-agentic-ai (exit 0) ===
