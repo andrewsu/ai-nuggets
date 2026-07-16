@@ -766,3 +766,32 @@ Shortlist chosen: NY moratorium (Story 1a), xAI turbines Reuters + DOJ shield (S
 
 Not chosen: Abrahami/Wix (Wall Street-vibe-coding angle less relevant to biology-AI focus); Anthropic-Samsung + OpenAI 5%-equity (reprises); Google Cloud Next Gemini Enterprise (yesterday's coalition adjacent); Boston Dynamics Spot Gemini Robotics (last week); ByteDance Seedream 5.0 Pro (image-gen off-focus); Unitree IPO (stale); Startups $510B H1 (too macro); Bespoke $40M (Fri tail); Senate patent hearing / UNESCO gender gap / Chicago Law devices ban (adjacent policy); nurses layoff (healthcare workforce off-focus).
 === 2026-07-15T02:43:17-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-16T02:30:09-07:00 start jinglin-ai-pulse ===
+Three files written. `SKIP_TTS=1` is set, so per PIPELINE.md I stop here — no TTS, no R2 publish, no feed.xml edit, no commit. The orchestrator (`scripts/publish_pending.py`) will handle those after batch TTS.
+
+## Candidate funnel
+
+**Sources scanned (last 24-48h Twitter/X + last 3-7d business + last 14d podcasts):**
+- **AI Twitter/X discourse** — 6 targeted searches; substantive convergence: (a) Hassabis "Framework for Frontier AI" July 14 Substack + Axios exclusive; (b) Dimon "ballistic missiles" Mythos quote July 15; (c) Paul Graham "Fable → 2031" thought-experiment thread from July 7 (too old + speculative); (d) Zefan Cai — only academic-project activity in July (KVCache-Factory + R-KV), no substantive Twitter debate found this window. Failure note: X/nitter direct search returned only GitHub/scholar profile pages, no live post excerpts — worked from mainstream coverage of X posts instead.
+- **AI investment/business** — TechCrunch + Bloomberg + Crunchbase + AlleyWatch + CNBC. July 15 recorded 8 rounds totaling $1.022B; Neko Health $700M dwarfs all others.
+- **Long-form AI podcasts** — Latent Space (Databricks Xin already used yesterday), 20VC (Glean/Jain already used yesterday), Dwarkesh (latest publicly-listed episode is late June), Lex Fridman (no July episode surfaced), TWIML (Wiltschko/Osmo July 8), WhynotTV (nothing new since May 1 胡渊鸣 episode), MLST (Tufa Labs ARC-AGI-3 July ep).
+
+**Substantive shortlist:**
+- Demis Hassabis, "A Framework for Frontier AI and the Dawning of a New Age," Substack + Axios exclusive, Jul 14 — **PICKED (Twitter Pulse 1)**
+- Jamie Dimon "ballistic missiles" Mythos comment, Bloomberg + Quartz, Jul 15 — **PICKED (Twitter Pulse 2)**
+- Neko Health $700M Series C at ~$7B, TechCrunch + press wire, Jul 15 — **PICKED (Money Moves 1)**
+- Anaconda acquires Kilo Code, Anaconda blog + New Stack + Yahoo, Jul 15 — **PICKED (Money Moves 2)**
+- Alex Wiltschko (Osmo) on TWIML, olfactory intelligence, ep 132 Jul 8 — **PICKED (Podcast Deep Cut)**
+- Emergent (India) $130M Series C unicorn, TechCrunch Jul 15 — dropped (thinner strategic signal than Neko for Ollie)
+- MLST/Tufa Labs ARC-AGI-3 team, MLST Jul 2026 — dropped (ARC-AGI-3 already covered on Jul 11 via robbyant episode)
+- Fable 5 / Opus 5 / "Honeycomb" leak, techtimes + New Stack, Jul 12 — dropped (rumor tier; nothing shipped)
+- NY moratorium propagation to other states — dropped (no state has moved yet; kept in wrap as watch item)
+- Xi WAIC preview coverage — folded into wrap as T-1 watch (already covered Jul 15)
+
+**Files written (SKIP_TTS mode, three stubs per PIPELINE.md):**
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-16-hassabis-finra-dimon-mythos-neko-700m-and-osmo-olfactory-intelligence.md` (35 KB, ~3,140 spoken words)
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-16-hassabis-finra-dimon-mythos-neko-700m-and-osmo-olfactory-intelligence.rss-item.xml` (validated well-formed with placeholder `__LENGTH__` + `__DURATION__` tokens)
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-16-hassabis-finra-dimon-mythos-neko-700m-and-osmo-olfactory-intelligence.commit-msg`
+
+Handing off to `publish_pending.py`.
+=== 2026-07-16T02:40:41-07:00 done  jinglin-ai-pulse (exit 0) ===
