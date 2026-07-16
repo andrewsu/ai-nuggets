@@ -2546,3 +2546,33 @@ Files:
 
 **Why RAGU beat the shortlist:** hits Andrew's core interests (KG construction, agentic AI, open science, data integration) with a load-bearing, testable, opinionated hypothesis (language skills scale weakly), a concrete empirical win (7B beats 32B by 12.5% on KG construction, driven by relation extraction), and unusually strong open-science posture (MIT + Apache 2.0 + HF + pip). Two orders of magnitude cost delta is the actionable takeaway. Diversifies from the last three episodes (governed AI scientist, clinical benchmark limits, quote-verified literature mining) with a scaling-law + methods-cleanup story that a KG-building listener can actually use this week.
 === 2026-07-15T02:16:15-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-16T02:00:09-07:00 start biomedical-agentic-ai ===
+All three files written. Since `SKIP_TTS=1`, per PIPELINE.md I skip TTS/R2/feed edit/commit — `publish_pending.py` handles those after batch TTS finishes.
+
+Episode published as stubs. Candidate funnel below.
+
+## Today's episode
+**EcoXAI — a knowledge-graph-grounded agentic ecosystem that autonomously repurposes Maraviroc for Alzheimer's** (bioRxiv v1, posted 2026-07-13). Jason Moore's group at Cedars-Sinai. 847-word spoken body.
+
+## Candidate funnel (biomedical-agentic-ai, 2026-07-16)
+
+**bioRxiv** (2026-07-13→2026-07-16, 645 unique DOIs across 23 paginated pages, 27 keyword hits after filter). Substantive shortlist after discarding false positives (e.g., "agent" = "chemical agent", "coding agent" as engineering aside, non-agentic uses of "LLM"):
+- **CHOSEN**: EcoXAI — Autonomous Agentic Ecosystem for XAI + Biomedical Discovery (v1, 2026-07-13) — https://www.biorxiv.org/content/10.64898/2026.07.08.737358v1
+- Transplant-Agents / Auto-MedCalc — Multi-Agent AI for post-transplant biomarker discovery + risk scoring (v2, 2026-07-14) — https://www.biorxiv.org/content/10.1101/2025.07.10.664265v2
+- MechAInistic — LLM-guided Multi-Agent for genome-scale metabolic models (v3, 2026-07-14) — previously covered 2026-05-14, updated version
+- VFB-MCP — Natural-language access to Drosophila ontology-led KB (v2, 2026-07-14) — previously covered 2026-06-22
+- EcoXAI benchmark item: Systematic evaluation and benchmarking of text summarization for biomedical literature (v4, 2026-07-16) — refresh of older work
+
+**arXiv** (shared daily cache /tmp/ai-nuggets-arxiv-cache.xml, last 4 days, 23 keyword hits). Substantive shortlist after discarding out-of-scope (insurance, actor-critic RL benchmarks, brand-answer variance study, etc.):
+- A Self-Evolving Agent for Longitudinal Personal Health Management (2026-07-15) — arxiv.org/abs/2607.13940
+- Agentic systems for breast cancer treatment recommendations (2026-07-13) — arxiv.org/abs/2607.12051
+- A Multi-Agent System for Autonomous, Fine-Tuning-Free Clinical Symptom Detection (2026-07-14) — arxiv.org/abs/2607.12886
+- FAIR GraphRAG: A RAG Approach for Semantic Data Analysis (2026-07-13) — arxiv.org/abs/2607.11464
+- The Path to Self-Evolving Clinical Systems: Scaling Medical Agents from Assistance to Autonomy (2026-07-13) — arxiv.org/abs/2607.11175 (review-style)
+- Are LLMs Ready for Scientific Discovery? A Capability-Oriented Benchmark for AI Scientists (2026-07-13) — arxiv.org/abs/2607.11079
+- Improving Molecular Property Prediction in SLMs Using Graph-based Tools (2026-07-14) — arxiv.org/abs/2607.13115
+- NVAITC AI Scientist / NAIS (2026-07-13) — already covered 2026-07-14; excluded
+- ChemRxiv / PubMed / news+policy: not surveyed in depth this run; time budget spent on the strong bioRxiv+arXiv corpus. No source-level failures.
+
+**Why EcoXAI beat the field**: fresh v1 (not a version update); direct hit on the show's core beat (agentic AI + biomedical knowledge graphs + open/reproducible tooling); ships a concrete, verifiable result (Maraviroc→AD with independent literature support) rather than another benchmark; makes a substantive architectural argument (decomposed pipeline stages + discovery memory + explicit KG grounding over monolithic-chat + RAG); demonstrated on a local 27B model at academic cost, which is the shape Su Lab-style groups can actually adopt.
+=== 2026-07-16T02:08:02-07:00 done  biomedical-agentic-ai (exit 0) ===
