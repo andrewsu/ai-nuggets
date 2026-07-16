@@ -2174,3 +2174,22 @@ bioRxiv preprints posted 2026-07-13 to 2026-07-14 scanned by category. Full-text
 - synthetic biology: 7 scanned, 2 considered (Tennenhouse/Fleishman CADAbRe v2 — not fresh v1; Hazra SAM synthetase)
 - microbiology: 30 scanned, 1 considered (Smith/Bharat CdrA biofilm structure)
 === 2026-07-15T03:10:03-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-16T03:00:09-07:00 start scripps-biomed-brief ===
+All three files written. In SKIP_TTS mode, the orchestrator handles TTS batch generation, R2 upload, feed insertion, and commit.
+
+**Summary of today's Scripps Biomedical Brief episode (2026-07-16):**
+
+Four bioRxiv preprints selected from ~130 scanned across biochemistry / pharmacology / bioengineering / cell biology / immunology / cancer biology / synthetic biology / molecular biology / microbiology (2026-07-14 through 2026-07-15):
+
+1. **de la Peña / Fischer / Jones (Dana-Farber + Neomorph)** — covalent molecular glue EM12-FS imidazylates CRBN His353 and cryo-EM of the ternary NTAQ1-CRBN-DDB1 complex shows a non-canonical neosubstrate interface stabilized by a T-shaped C-H/π interaction — covalent CRBN engineering as a new axis for induced-proximity pharmacology beyond the G-loop degron.
+2. **Covaleda / Adibekian / Farrés** — 3,200-fragment cysteine-focused screen against ALDH1A3 catalytic cysteine yields acrylamide Z34; 2.26 Å cryo-EM shows the same warhead in two mutually exclusive conformations (substrate vs. cofactor channel) — two productive elaboration vectors off a single covalent handle.
+3. **Zak / Varner (UCSD)** — KRAS-G12D lung tumors expand tissue-resident alveolar macrophages via IL-34; macrophages return IGF-1 driving tumor proliferation and ferroptosis protection; IL-34 blockade collapses the loop and human IL34/IGF1 correlate with poor survival.
+4. **Bayat / Pardee** — MDMI structure-guided peptide-protein interface design pipeline crushes false-positive rate from 70% to near zero on all-negative benchmark, finds active peptides >50% diverged from wild-type on split-GFP testbed.
+
+Files:
+- `scripts/2026-07-16-crbn-covalent-glue-aldh1a3-il34-kras-lung-mdmi-peptide.md`
+- `scripts/2026-07-16-crbn-covalent-glue-aldh1a3-il34-kras-lung-mdmi-peptide.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders)
+- `scripts/2026-07-16-crbn-covalent-glue-aldh1a3-il34-kras-lung-mdmi-peptide.commit-msg`
+
+No source-side failures. All four picks are v1 posted 2026-07-14/15 on bioRxiv; bodies not yet rendered, summaries grounded in the full abstracts per PIPELINE.md guidance.
+=== 2026-07-16T03:06:06-07:00 done  scripps-biomed-brief (exit 0) ===
