@@ -5,7 +5,56 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-15 (Pipeline refill day after two lean days. Three-item
+_Last verified: 2026-07-16 (UMB-anchored three-picker Sourcing Radar. Pick 1 (LEAD,
+direct sourcing lead) — Li Y first + Wei Chao senior corresponding, all UMB SoM
+Anesthesiology + Center for Shock, Trauma and Anesthesiology Research, JACC Basic
+Transl Sci 2026-07-14 (DOI 10.1016/j.jacbts.2026.101626, PMID 42447539),
+"TLR7 Inhibition Limits Ischemic Cardiac Injury by Disrupting ITGAM-Dependent
+Immune-Endothelial Interactions" — mouse LAD-ligation IR (45 min ischemia + 24 h
+reperfusion) shows TLR7 KO + pharmacological inhibition with enpatoran
+(Merck KGaA-developed selective TLR7/8 antagonist in autoimmune-indication
+clinical trials: SLE, CLE, myositis) both cut MI/AAR ratio, non-additive
+epistasis with genetic KO confirms target; snRNA-seq localizes mechanism to
+TLR7-driven inflammatory endothelial + coordinated myeloid program converging
+on ITGAM (CD11b) integrin upregulation; anti-ITGAM antibody (Bio X Cell BE0007)
+phenocopies TLR7 KO; enpatoran 5 mg/kg IP cuts MI/AAR by 35-76% across
+prevention/treatment/early-rescue windows (peri-procedural PCI window is the
+clinical use-case); **PCT/US2025/037133 "Methods of Treating Ischemia/Reperfusion
+Injury" filed as UMB IP** — enpatoran composition-of-matter is Merck KGaA's but
+MoU for cardio-reperfusion is UMB's = cross-licensing leverage; direct
+UM Ventures × Blackbird BioVentures co-investment sourcing lead — added as new
+§2b "Chao lab TLR7-ITGAM cardiac IR platform (UMB SoM Anesthesiology + Center for
+Shock Trauma and Anesthesiology Research)" entry. Pick 2 platform paper — Wang J
+first + Liang Y senior corresponding UMB SoM Diagnostic Radiology (with Walczak P
+co-supervisor UMB + K. Wang JHU BME + J. Xu Kennedy Krieger F.M. Kirby Center for
+Functional Brain Imaging) Adv Sci 2026-07-14 (DOI 10.1002/advs.202515913,
+PMID 42447126, PMC13367743 open access), "Intravital Multimodal Imaging of
+Human Cortical Organoid Transplantation in a Mouse Model of Chronic Stroke" —
+MIPOT (Multimodal Imaging Platform for Organoid Tracking) integrates 9.4 T MRI
++ Luc2-mCherry bioluminescence + surgical microscopy + intravital two-photon
+multicolor calcium imaging via 3D-printed removable head-fixation adapter;
+hiPSC KOLF2.1J cortical organoids into cleared photothrombotic-stroke cavities
+in C57BL/6J mice; BLI drops ~50%/25%/17%/5% D4/D7/D10/D14; no behavioral efficacy,
+authors frame as tracking platform not therapeutic; "authors declare no conflicts
+of interest" — added as new §2b "Walczak + Liang MIPOT multimodal imaging
+platform (UMB Diagnostic Radiology cross JHU BME cross Kennedy Krieger Kirby
+Center)" entry as licensable cross-institution imaging chassis, alongside Kalhor
+3DEEP as second Baltimore cross-institution imaging tool worth underwriting.
+Pick 3 (framing, tail item) — Gould TD first UMB SoM Psychiatry + Pharmacology-
+Physiology and Drug Discovery + Neurobiology (co-inventor 2R,6R-hydroxynorketamine
+licensed by Perception Neuroscience → acquired by ATAI; UMB owns royalties)
++ Mathew SJ + Fava M + Shekhar A, J Psychopharmacol 2026-07-13
+(DOI 10.1177/02698811261456206, PMID 42438931), "Enhancing plasticity to treat
+depression and other central nervous system diseases using event-driven
+pharmacology" — proposes EDP as design framework for the plastogen class of CNS
+drugs (ketamine + classical psychedelics + non-hallucinogenic neuroplastogens)
+distinct from occupancy-driven pharmacology; UMB Neuropharmacology thought
+leadership positioning; design-space read on Lieber neuropsych NewCo second-and-
+third-asset pipeline expansion (GPR52 lead is correctly chronic-agonist
+occupancy-driven; the pipeline expansion question is whether second/third shots
+should sit in the plastogen/EDP class) — added as new §2b "Gould lab UMB
+Neuropharmacology + Drug Discovery" landscape entry.
+Previously verified 2026-07-15 (Pipeline refill day after two lean days. Three-item
 Sourcing Radar: Pick 1 (LEAD, direct sourcing item) — Wang N first author +
 Xiaobo Mao/Jingxin Wang co-corresponding + Ted Dawson senior + Kennedy Krieger's
 Mingyao Ying, PNAS 2026-07-14 (DOI 10.1073/pnas.2526461123; PMID 42446976),
@@ -857,6 +906,181 @@ raises, exits, or crosses a scientific milestone.
 - **Watch.** Whether the Mahairaki-Lyketsos platform extends into donanemab + lecanemab responder assays (natural next paper); whether the S-CitAD trial cohort produces additional iPSC lines for expanded power; JHTV posture on Richman Center IP — precision-medicine center-attached platforms often stay pre-competitive but the assay-panel IP is a licensable atomic unit; whether the Lieber contributor track (Maher, Farinelli, Ostlund, Das) opens up a Lieber-Hopkins-precision-medicine cross-cycle collaboration paper on the neuropsych NewCo second-and-third-asset conversation.
 
 ---
+
+### Chao lab TLR7-ITGAM cardiac ischemia-reperfusion platform (UMB SoM Anesthesiology + Center for Shock, Trauma and Anesthesiology Research) — active sourcing lead + filed methods-of-use PCT ⚠
+- **Lab / people.** **Wei Chao, M.D., Ph.D.** — Professor, Department of Anesthesiology,
+  University of Maryland School of Medicine; Director, Translational Research Program;
+  Center for Shock, Trauma and Anesthesiology Research (STAR); senior corresponding
+  wchao@som.umaryland.edu. **Yijia Li, M.D., Ph.D.** (first author on new paper;
+  UMB Anesthesiology + STAR postdoc; AHA postdoctoral fellowship). Yang Yang, Chanhee
+  Park, Boyang Ren, Brittney Williams, Lin Zou — all UMB Anesthesiology + STAR.
+  **Amol Shetty** (UMB Institute for Genome Sciences) contributed the bioinformatics
+  side of the snRNA-seq analysis. Chao holds NIH R35-GM140822 (Maximizing Investigators'
+  Research Award — top-tier long-cycle NIGMS funding).
+- **Fresh disclosure (2026-07-14):** Li Y, Yang Y, Park C, Ren B, Li R (MD Anderson
+  Biostatistics), Shetty A, Williams B, Li Z (MD Anderson Biostatistics), Zou L,
+  Chao W (senior corresponding), "TLR7 Inhibition Limits Ischemic Cardiac Injury by
+  Disrupting ITGAM-Dependent Immune-Endothelial Interactions," *JACC: Basic to
+  Translational Science* 11(8):101626, DOI 10.1016/j.jacbts.2026.101626, PMID
+  42447539, published online 2026-07-14. Open access. **IP disclosure verbatim:**
+  "A patent application related to use of TLR7/8 antagonist for treatment of cardiac
+  ischemia–reperfusion injury has been filed (PCT/US2025/037133, 'Methods of Treating
+  Ischemia/Reperfusion Injury'). The authors have reported that they have no
+  relationships relevant to the contents of this paper to disclose." Funding: NIH
+  R35-GM140822 (Chao); AHA 26POST1559348 (Li).
+- **Mechanism.** Mouse LAD-ligation IR model, 45 min ischemia + 24 h reperfusion.
+  Genetic TLR7 KO + pharmacological inhibition with **enpatoran** (Merck KGaA-developed
+  selective TLR7/8 antagonist; MEK KGaA is pursuing enpatoran clinically in **systemic
+  lupus erythematosus + cutaneous lupus erythematosus + myositis**) both cut infarct
+  size (MI/AAR ratio) non-additively — epistasis confirms target. snRNA-seq localizes
+  mechanism to TLR7-driven inflammatory endothelial program + coordinated myeloid
+  program, both converging on **ITGAM (CD11b, α_M integrin)** upregulation. Anti-ITGAM
+  antibody (Bio X Cell BE0007) blockade phenocopies TLR7 KO — significantly smaller
+  infarct + markedly reduced neutrophil + monocyte infiltration + epistasis with
+  TLR7 loss.
+- **Effect sizes.** Enpatoran 5 mg/kg IP reduces MI/AAR by **35-76%** across four
+  dosing windows: prevention (1 h pre-ischemia), treatment (35 min during ischemia),
+  early rescue (30 min post-ischemia), late rescue (2 h post-ischemia). Prevention +
+  early-rescue windows work; late-rescue efficacy starts falling off. Peri-procedural
+  PCI (stent placement + related percutaneous coronary intervention) is the clinical
+  use case; the dosing-window story maps cleanly to a peri-procedural Phase 2 protocol.
+- **Blackbird sourcing significance — direct sourcing lead.** UMB SoM methods-of-use
+  IP (PCT/US2025/037133) on a cardio-reperfusion indication where enpatoran's
+  autoimmune-indication development at Merck KGaA is de-risking the tox package.
+  Cross-licensing leverage: enpatoran composition-of-matter is Merck KGaA's, but
+  UMB owns methods-of-use for cardio-IR. Whoever wants to develop enpatoran into cardio
+  needs a UMB license, and UMB can shop the MoU claim to any TLR7-only or TLR7/8
+  inhibitor competitor program broadly. Sits directly on the UM Ventures × Blackbird
+  BioVentures co-investment surface — same track that produced aSKY. Peri-procedural
+  anti-inflammatory adjunct slots into every interventional-cardiology franchise
+  (Bristol Myers Squibb, Novartis Cardiovascular, CSL Behring). Chao's R35 =
+  maximum-security academic funding + STAR = deepest translational-anesthesiology
+  infrastructure in the US.
+- **Diligence questions.** (1) TLR7 blockade impact on acute viral defense in
+  peri-procedural window — short duration probably fine; needs immunopharmacology
+  characterization. (2) Whether MoU claims cover competitor TLR7-only or TLR7/8
+  molecules broadly, or are narrowed to enpatoran specifically. (3) Large-animal
+  or human ex-vivo replication of the ITGAM/CD11b axis before Phase 2 — reperfusion
+  biology varies enough between mouse and human that the diligence read wants
+  translation evidence.
+- **Watch.** UM Ventures IP-status on PCT/US2025/037133 prosecution + national-phase
+  filings; whether UM Ventures has an active licensing conversation with Merck KGaA
+  on cardio-reperfusion or is positioning to shop the MoU to a competitor TLR7/8
+  inhibitor program; Chao lab follow-on translational work (large-animal replication,
+  additional TLR7/8 antagonist series validation); Center for Shock Trauma and
+  Anesthesiology Research as a broader translational-anesthesiology sourcing pipeline
+  beyond this one program.
+
+### Walczak + Liang MIPOT multimodal imaging platform (UMB SoM Diagnostic Radiology cross JHU BME cross Kennedy Krieger F.M. Kirby Center) — landscape signal + licensable cross-institution imaging chassis ⚠
+- **Lab / people.** **Yajie Liang, Ph.D.** — Assistant Professor, UMB SoM Department
+  of Diagnostic Radiology and Nuclear Medicine; senior corresponding
+  yajie.liang@som.umaryland.edu. **Piotr Walczak, M.D., Ph.D.** — Professor, UMB SoM
+  Diagnostic Radiology + Nuclear Medicine; co-supervisor. **Miroslaw Janowski, M.D.,
+  Ph.D.** — UMB Diagnostic Radiology co-author. Longstanding UMB translational-imaging
+  bench, particularly CNS cell + gene therapy tracking. **Kexin Wang** (JHU
+  Biomedical Engineering + Kennedy Krieger F.M. Kirby Center for Functional Brain
+  Imaging) + **Jiadi Xu, Ph.D.** (Kirby Center + JHU School of Medicine Russell H.
+  Morgan Department of Radiology and Radiological Science) provided the MRI-analysis
+  contribution. **Tian-Ming Fu, Ph.D.** (Princeton ECE + Omenn Darling Bioengineering
+  Institute) contributed to the multimodal viral labeling system. Cyclosporin A
+  immunosuppression protocol for humanized-neuron xenografts.
+- **Fresh disclosure (2026-07-14):** Wang J (first), Qiao G, Tan H, Russel C, Yang B,
+  Li MJ, Wang K, Xu J, Chu C, Janowski M, Fu T-M, Walczak P (co-supervisor), Liang Y
+  (senior corresponding), "Intravital Multimodal Imaging of Human Cortical Organoid
+  Transplantation in a Mouse Model of Chronic Stroke," *Advanced Science* 2026,
+  DOI 10.1002/advs.202515913, PMID 42447126, PMC13367743 (open access CC-BY).
+  **COI verbatim:** "The authors declare no conflicts of interest." No patent, licensing,
+  equity, or advisory disclosures anywhere in the extracted text. Funding block absent
+  from the extracted PMC full text — needs re-check from publisher HTML if a
+  funding-source diligence is needed.
+- **Platform.** MIPOT (Multimodal Imaging Platform for Organoid Tracking) integrates
+  four modalities on one animal: 9.4 T MRI (T2w + DTI/ADC/FA); bioluminescence imaging
+  via Luc2-mCherry dual reporter driven by human ubiquitin C promoter; intraoperative
+  surgical/light microscopy; intravital two-photon fluorescence microscopy using
+  multicolor viral labels (cytosolic mCherry/TagBFP/iRFP-682 + nuclear H2B-GCaMP6s).
+  Engineering novelty is a two-component 3D-printed removable head-fixation adapter
+  (PLA on Bambu Lab X1-Carbon; STL files in supplement) that cycles the same animal
+  through metal-free MRI + BLI + rigid-fixation TPFM sequentially.
+- **Experimental design + honest read.** hiPSC (KOLF2.1J, male XY) cortical organoids
+  at day 56 differentiation, quartered + injected into cleared photothrombotic
+  Rose-Bengal stroke cavities in 3-4 mo male C57BL/6J mice at motor cortex, 10-day
+  infarct maturation, cyclosporin A immunosuppression. BLI signal drops to ~50% at D4,
+  ~25% at D7, ~17% at D10, ~5% at D14 (n=15). Endpoint histology at 2 + 4 weeks
+  confirms limited human-graft persistence — STEM121+ / Ku80+ cells present but sparse
+  TUJ1 co-labeling in cortex. **No behavioral/functional efficacy data.** Authors
+  explicitly frame as tracking platform, not therapeutic candidate. Incidental
+  hippocampal graft placements in 4/14 animals showed better neurite extension +
+  TUJ1 — authors flag as descriptive only.
+- **Blackbird relevance — two beats.** (1) **Licensable imaging chassis.** MIPOT is
+  generalizable per the discussion to any organoid or CNS cell-therapy transplant
+  experiment. Sits alongside Kalhor 3DEEP (§2b Kalhor lab spatial-omics) as cross-
+  institution Baltimore imaging tools worth underwriting as licensable diligence
+  infrastructure rather than as drug programs. Applies to Neuraly + Valted + Aletira
+  orbit and any group developing CNS cell/organoid therapies. (2) **UM Ventures ×
+  Blackbird ecosystem read.** This paper crosses UMB Diagnostic Radiology (Walczak +
+  Liang + Janowski) with JHU BME (K. Wang) with Kennedy Krieger Kirby Center (Xu) in
+  a single manuscript — exact operating pattern the UM Ventures × Blackbird
+  co-investment surface is meant to seed. Walczak + Liang are the UMB translational-
+  imaging bench Blackbird should already be tracking; this paper puts them on the map
+  with a real cross-institution product. Reality-check read on CNS cell-therapy sector:
+  the honest ~25% graft-persistence readout says every group graft-transplanting into
+  infarct cavities needs longitudinal imaging like this to stop misreading their own
+  experiments.
+- **Watch.** UM Ventures IP-status on any MIPOT-associated method/apparatus filings
+  (nothing disclosed in this paper; the 3D-printed head-fixation adapter is a specific
+  engineering asset worth checking); Walczak + Liang commercial disposition (past
+  academic-only track or open to spinout?); whether MIPOT gets pulled into a Neuraly
+  or Aletira diligence-tool relationship as CNS cell/gene-therapy programs mature;
+  Kalhor 3DEEP + MIPOT joint imaging-platform cluster underwriting as a Baltimore
+  translational-imaging thesis.
+
+### Gould lab UMB Neuropharmacology + Drug Discovery — EDP framework paper on the plastogen class + Perception Neuroscience royalty estate ⚠
+- **Lab / people.** **Todd D. Gould, M.D.** — Professor, University of Maryland
+  School of Medicine, Departments of Psychiatry, Pharmacology-Physiology and Drug
+  Discovery, and Neurobiology; also Veterans Affairs Maryland Health Care System.
+  **Co-inventor of (2R,6R)-hydroxynorketamine** — the active metabolite of ketamine
+  that was licensed by **Perception Neuroscience** and subsequently rolled into
+  **ATAI Life Sciences** via Perception acquisition. **UMB owns royalties on the
+  (2R,6R)-HNK estate.** One of the more productive translational-neuropharmacology
+  benches in academic psychiatry.
+- **Fresh disclosure (2026-07-13):** Gould TD (first), Mathew SJ (Texas A&M College
+  of Medicine + Baylor + VA), Fava M (MGH Psychiatry), Shekhar A (University of
+  Pittsburgh SoM), "Enhancing plasticity to treat depression and other central
+  nervous system diseases using event-driven pharmacology," *Journal of
+  Psychopharmacology* 2026, DOI 10.1177/02698811261456206, PMID 42438931.
+  Design-framework / opinion paper; co-authors are the depression + neuropsychiatric
+  trialist establishment (Fava at MGH is the pre-eminent depression clinical trialist;
+  Mathew ex-Baylor now Texas A&M co-authored the Perception HNK Phase 2 work;
+  Shekhar is Pitt Med dean and long-time Indiana neuropsychiatric drug discovery).
+- **Framework.** Proposes **event-driven pharmacology (EDP)** as design framework for
+  the class of CNS drugs where a **transient binding event produces sustained changes
+  in neuroplasticity that outlast drug exposure** — ketamine as paradigm case,
+  classical psychedelics as extension, non-hallucinogenic neuroplastogens as
+  design target. Distinct from **occupancy-driven pharmacology** (stable receptor
+  occupancy over time, direct exposure-response). Argument: developing rapid-acting
+  plastogens with the traditional occupancy-driven dose-optimization model is
+  counterproductive — you optimize the dose for stable receptor occupancy and
+  paradoxically get few durable benefits + more side effects, because you miss the
+  actual underlying pharmacology. New biomarker + clinical-dose-optimization methods
+  needed for EDP-class assets.
+- **Blackbird relevance — landscape signal, not a sourcing lead.** (1) UMB
+  Neuropharmacology + Drug Discovery thought-leadership positioning on how to design
+  + evaluate the plastogen class shapes diligence conversations on every ketamine-
+  adjacent and psychedelic-adjacent asset the venture community sees for the next
+  two years — the Bavarian-inference bounds a translational investor uses when reading
+  a plastogen pitch will start invoking EDP framing. (2) **Design-space read for the
+  Lieber neuropsych NewCo second-and-third-asset conversation.** The GPR52-agonist
+  lead is by design chronic-agonist occupancy-driven (three-symptom-domain thesis)
+  — correct for the mechanism, not a mistake. But the pipeline expansion question is
+  whether the neuropsych NewCo's second + third shots should sit in the plastogen/EDP
+  class rather than the chronic-agonist class. Design-space input for Hemaka + Third
+  Rock conversation on NewCo pipeline shape, not a fresh sourcing lead.
+- **Watch.** Whether Gould has additional in-prosecution IP outside the (2R,6R)-HNK
+  license to Perception Neuroscience — his current work on translationally-tractable
+  neuroplastogens is worth tracking as a UMB pipeline signal; whether the UMB Drug
+  Discovery Program is positioning any next-generation neuroplastogen chemotype for
+  a new licensing conversation; Perception Neuroscience Phase 2 readouts in TRD as
+  the natural (2R,6R)-HNK clinical calendar for anyone paying attention.
 
 ## 3. How to use this in the show
 

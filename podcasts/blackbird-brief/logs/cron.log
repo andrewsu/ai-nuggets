@@ -735,3 +735,28 @@ Prior-episode hard exclusions confirmed and not duplicated today: Barrick protei
 
 The orchestrator will run TTS in a single batch, then insert the `.rss-item.xml` stub (substituting `__LENGTH__` / `__DURATION__`) into `feed.xml`, upload the mp3 to R2, and commit — no action needed from this run.
 === 2026-07-15T02:34:19-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-16T02:10:09-07:00 start blackbird-brief ===
+## Blackbird Brief — Sourcing Radar for 2026-07-16 — DONE (SKIP_TTS mode)
+
+Since `SKIP_TTS=1` is the nightly-cron default, I stopped after step 1 of PIPELINE.md: script + rss-item.xml stub + commit-msg stub. The orchestrator (`scripts/publish_pending.py`) will handle batch TTS, R2 publish, feed edit, and commit.
+
+**Files written** to `podcasts/blackbird-brief/scripts/`:
+
+- `2026-07-16-radar-umb-chao-tlr7-itgam-cardiac-ir-walczak-mipot-organoid-gould-edp.md` — script (21 KB, ~6-7 min spoken)
+- `.rss-item.xml` — full item with `__LENGTH__` + `__DURATION__` placeholders
+- `.commit-msg` — `Blackbird 2026-07-16: Radar — UMB Chao TLR7-ITGAM cardiac IR + filed methods-of-use PCT + MIPOT organoid imaging + Gould EDP framework`
+
+Memory `blackbird-portfolio.md` updated with three new §2b entries: **Chao lab TLR7-ITGAM cardiac IR platform**, **Walczak+Liang MIPOT multimodal imaging platform**, and **Gould lab UMB Neuropharmacology / EDP framework**. `_Last verified_` bumped to 2026-07-16.
+
+**Candidate funnel (per PIPELINE.md audit):**
+
+- Sources scanned: bioRxiv (neuroscience, cancer biology, bioengineering, pharmacology, immunology, genetics, molecular biology, cell biology) 2026-07-13..07-16 (~300 preprints); medRxiv same window; PubMed via MCP — JHU/KKI × therapy filter (75 hits), UMB SoM (22), Lieber Institute (10), named-PI author-search across ~35 tracked PIs.
+- Source failures: ScienceDirect direct URL 403/CAPTCHA on the JACC BTS lead paper — routed through `r.jina.ai` reader proxy successfully; jacc.org 403; hub.jhu.edu / ventures.jhu.edu institutional-news still auth-walled; UM Ventures DNS still down.
+- Substantive shortlist (chosen items marked ✅):
+  - ✅ **[LEAD, Pick 1]** Li Y + Chao W senior corresponding (UMB SoM Anesthesiology + Center for Shock Trauma and Anesthesiology Research), *JACC BTS* 2026-07-14 — TLR7/ITGAM cardiac IR + **PCT/US2025/037133 filed**.
+  - ✅ **[Pick 2]** Wang J + Liang Y senior corresponding (UMB Diagnostic Radiology; with Walczak co-supervisor, JHU BME K. Wang, KKI Kirby Center J. Xu), *Adv Sci* 2026-07-14 — MIPOT platform. Honest ~25% graft persistence at 2 wk.
+  - ✅ **[Pick 3, tail/framing]** Gould TD first (UMB SoM Psychiatry + Pharmacology + Drug Discovery + Neurobiology), *J Psychopharmacol* 2026-07-13 — event-driven-pharmacology framework for the plastogen class.
+  - Skipped: JCI bone-cerebrovascular-axis review (Wang J/Cao X/Wan M, JHU Orthopaedic Surgery+BME — review only); Trends Immunol biomaterial-macrophage review (Popov/Mao HQ/Nagy JHU BME — review only); Addict Biol fentanyl transcriptomics from Maynard (Lieber + JHU Psych, basic bulk-RNA-seq, no asset); French/Roemmich/Raghavan medRxiv stroke-recovery patterns (health-services, below investor bar); Delgado Herrera "KRAS on Empty" commentary in Cancer Res (UMB authors are commentators on a Oklahoma+UNC paper, not a UMB asset — noted as landscape for aSKY); Sherman/Ernst Photobacterium lipid A paper (basic microbiology, not BECC470s adjuvant series).
+
+The orchestrator will pick up the three stub files after batch TTS on Garibaldi completes.
+=== 2026-07-16T02:28:38-07:00 done  blackbird-brief (exit 0) ===
