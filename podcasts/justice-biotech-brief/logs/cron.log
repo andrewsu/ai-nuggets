@@ -1244,3 +1244,32 @@ All three files are written. Per SKIP_TTS=1, no TTS/publish/feed edit/commit —
 
 **Chosen**: Avere Therapeutics / NextCure reverse merger + $320M PIPE + Hansoh ex-Greater-China license for AVR-001 (oral IL-23R cyclic peptide antagonist). Selected over the CAR-T-AML modeling preprint (which is a computational-methods paper, not therapeutic novelty) and over Agenus BATTMAN discontinuation (strategic move, not new clinical data). Fits Justice's beat on modality-shift in autoimmune biologics (oral peptide vs injectable mAb vs oral JAK), Chinese asset flow with strategic-equity twist (Hansoh both licensor and lead PIPE investor — same company behind GSK-partnered B7-H3 ADC HS-20093/Ris-Rez covered earlier in this feed), and reverse-merger + PIPE capital vehicles for Phase-2b-ready autoimmune biotech.
 === 2026-07-15T02:53:18-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-16T02:40:09-07:00 start justice-biotech-brief ===
+Script and stubs written and RSS validates. SKIP_TTS is set, so I'm skipping TTS/R2/feed/commit — the orchestrator handles those.
+
+Today's episode: **KEYTRUDA (pembrolizumab) — first Phase 3 PD-1 monotherapy to beat platinum doublet in first-line dMMR endometrial cancer (KEYNOTE-C93)**, published by Merck July 15 2026.
+
+## Candidate funnel
+
+**bioRxiv (2 days, 2026-07-15 → 2026-07-16):** 205 preprints scanned across full corpus (paginated, not sampled); 198 unique after dedupe. 7 keyword hits after filter on VEGF/PD-L1/PD-1/TCE/bispecific/trispecific/CAR-T/ADC/JAK/checkpoint/immunotherapy. Substantive shortlist after discarding spurious matches:
+
+- IL-2 nanoparticles that preferentially expand CD8 T cells and reprogram TME — bioengineering / immunology (10.64898/2026.07.14.738558)
+- CD19-4-1BBL bispecific antibody-fusion protein against high-risk CLL (10.64898/2026.07.09.737515) — full text needed but relevant; secondary candidate
+- SIGLEC1 as macrophage-CD8 T cell interaction mediator + ICB response biomarker in melanoma (10.64898/2026.07.09.737484)
+- LARP4 B-cell metabolic checkpoint for plasma cell differentiation as SLE target (10.64898/2026.07.10.737704)
+- GLUT1 epigenetic rewiring drives senescence resistance + blunts immunotherapy in ESCC (10.64898/2026.07.15.738372)
+
+**News / press (last 1-2 days, July 15-16 2026):**
+
+- **Merck KEYTRUDA KEYNOTE-C93 topline (July 15 2026)** — pembrolizumab monotherapy beats platinum doublet chemo on PFS in first-line dMMR advanced/recurrent endometrial cancer. First Phase 3 of any PD-1 inhibitor as monotherapy to beat platinum doublet in the frontline setting. 299 patients. OS immature but trending. **CHOSEN.**
+- BioWorld "In the clinic for July 15" — behind paywall, unable to read
+- Endpoints News homepage — 403 on WebFetch and jina proxy; unable to survey
+- Fierce Biotech homepage — 403 on both channels; unable to survey
+- Fierce Pharma "Crescent $80M Kelun deal ADC + PD-1×VEGF bispecific" — surfaced in search but content dates to Dec 2025 (not fresh)
+
+**Policy / funder (ARPA-H, NIH, NSF):** not surveyed in detail once the fresh Merck Phase 3 became the clear lead; recording the gap.
+
+**Sources with access failures noted:** Fierce Pharma / Fierce Biotech / Endpoints News direct fetch all returned HTTP 403 (both raw and via r.jina.ai proxy — jina reports a domain-level rate-limit block on fiercepharma.com through Jul 16 2026 10:29 UTC due to prior abuse). Merck.com press page was reachable directly and provided the full C-93 release.
+
+**Rationale for pick:** C-93 sits at the intersection of Justice's core interests (checkpoint immunotherapy, biomarker-defined subsets) and the deeper design question that runs through his VEGF×PD-1 bispecific, trispecific TCE, and CAR-T work — when a biomarker-defined subgroup earns the right to drop the cytotoxic backbone. Distinct from yesterday's AVR-001 (autoimmune / capital-structure story) and from prior recent episodes (BL-B01D1 ADC, Ris-Rez B7H3 ADC, bempikibart IL-7Rα).
+=== 2026-07-16T02:49:41-07:00 done  justice-biotech-brief (exit 0) ===
