@@ -2266,3 +2266,32 @@ Wrote to `podcasts/calibr-briefing/scripts/`:
 - Freenome (Foresite portfolio) SimpleScreen CRC updated data + Abbott $70M milestone — Wed Jul 9 ← **headline #5**
 - Rejected: AZ-Ionis eplontersen ATTR-CM failure (already covered 07-10 spotlight), Vertex-Crinetics $10B (already covered 07-07 spotlight), Parabilis IPO (stale, Jun 9), Draig $65M Series B / MeiraGTx $400M (financing-only, tier 2)
 === 2026-07-15T02:31:32-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-16T02:20:09-07:00 start calibr-briefing ===
+Both episodes are drafted and staged for the batch TTS/publish orchestrator. Nothing to commit — SKIP_TTS mode is active, so the orchestrator (`scripts/publish_pending.py`) handles TTS, R2 upload, feed insertion, and per-episode commits after the shared TTS batch finishes.
+
+## Files written
+
+- `podcasts/calibr-briefing/scripts/2026-07-16-pharma-headlines.txt` — 5-item headlines script (~3-5 min)
+- `podcasts/calibr-briefing/scripts/2026-07-16-pharma-headlines.rss-item.xml` — RSS item stub w/ `__LENGTH__` + `__DURATION__` placeholders
+- `podcasts/calibr-briefing/scripts/2026-07-16-pharma-headlines.commit-msg`
+- `podcasts/calibr-briefing/scripts/2026-07-16-chai-discovery-ai-antibody-design-spotlight.txt` — 8-thread spotlight (~7-8 min)
+- `podcasts/calibr-briefing/scripts/2026-07-16-chai-discovery-ai-antibody-design-spotlight.rss-item.xml`
+- `podcasts/calibr-briefing/scripts/2026-07-16-chai-discovery-ai-antibody-design-spotlight.commit-msg`
+
+Both `.rss-item.xml` stubs are well-formed XML (validated).
+
+## Candidate funnel
+
+Sources scanned: Fierce Biotech, Endpoints News, STAT, BioPharma Dive, BioSpace, Fierce Pharma, SEC EDGAR, press releases.
+
+Shortlist (Jul 14-15 2026 events):
+- **Chai Discovery $400M Series C at $3.8B** — AI drug discovery, Index-led, OpenAI+Thrive existing, unveils Chai-3 zero-shot Ab-design model, Pfizer license + custom model + Lilly + Novartis (Tue Jul 14) — **CHOSEN SPOTLIGHT + HEADLINE #1**
+- **J&J Q2 2026 earnings + $750M pharma-mfg restructure** — sales $25.3B beat, Innovative Medicines +7.8%, FY26 raised to $101.1B, restructure through FY29 extends $55B onshoring (Wed Jul 15) — **CHOSEN #2**
+- **Nava Therapeutics $89M Series A stealth emergence** — immunotropic ionizable LNP, in-vivo CAR-T + kidney, RA Capital + Leaps by Bayer + PureTech (Wed Jul 15) — **CHOSEN #3**
+- **Braveheart Bio S-1 (BRVE) + Attovia S-1 (ATTO)** — cardiac-myosin + IL-31 Dupixent challenger, biotech IPO wave (Tue-Wed Jul 14-15) — **CHOSEN #4**
+- **Eli Lilly-Oura equity + LillyDirect** — wearable-GLP-1 monitoring, Medicare GLP-1 Bridge pilot (Tue Jul 15) — **CHOSEN #5**
+- Draig Therapeutics $65M Series B (AMPA modulator MDD) — deferred
+- Vertex Casgevy age-2 label expansion — Jul 1, too old
+- Zydus-Sterling / Takeda-Indonesia / Adneuris-Conba — small deals, deferred
+- Scribe Therapeutics + Apnimed S-1s — mentioned in-line under IPO-wave item
+=== 2026-07-16T02:34:26-07:00 done  calibr-briefing (exit 0) ===
