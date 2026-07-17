@@ -2295,3 +2295,36 @@ Shortlist (Jul 14-15 2026 events):
 - Zydus-Sterling / Takeda-Indonesia / Adneuris-Conba — small deals, deferred
 - Scribe Therapeutics + Apnimed S-1s — mentioned in-line under IPO-wave item
 === 2026-07-16T02:34:26-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-17T02:20:08-07:00 start calibr-briefing ===
+API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy (https://www.anthropic.com/legal/aup). Try rephrasing the request in a new session or change your model.
+
+Request ID: req_011Cd7QBUTQhmwTDAfLJpALQ
+=== 2026-07-17T02:34:06-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-17T02:34:06-07:00 AUP-refusal detected for calibr-briefing; retrying in 180s ===
+=== 2026-07-17T02:37:06-07:00 start calibr-briefing (retry 1) ===
+Both episodes are already drafted, staged, and validated — this is a retry after the first run's response was AUP-blocked at 02:34, but the script/stub/commit-msg files were all written successfully at 02:27–02:33 before that. SKIP_TTS=1 mode is active, so nothing further to do here — the orchestrator handles batch TTS, R2 upload, feed insertion, and commits.
+
+## Ep 2026-07-17 staged (SKIP_TTS mode)
+
+Files already in place at `podcasts/calibr-briefing/scripts/`:
+
+- `2026-07-17-pharma-headlines.txt` (2,150 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-07-17-merck-lipfendra-oral-pcsk9-spotlight.txt` (2,511 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as well-formed XML when wrapped with the `itunes:` + `content:` namespace declarations (which come from `feed.xml`'s channel root at insertion time).
+
+## Candidate funnel (July 17, 2026)
+
+**Sources scanned:** Fierce Biotech, Fierce Pharma, Endpoints News, STAT News, BioPharma Dive, BioSpace, Merck / Lilly / Kalshi / Veradermics investor-relations & press releases.
+
+**Shortlist (Jul 15–16, 2026 events, ranked for Travis's mandate):**
+
+- **Merck Lipfendra (enlicitide decanoate) FDA approval (Wed Jul 16)** — 1st-and-only oral PCSK9 inhibitor worldwide, macrocyclic-peptide modality, 56%/59% placebo-adj LDL reductions in CORALreef Lipids/HeFH, $315/30-day list, priority-review-voucher 5-mo review, RBC (Huynh) >$5B peak, Leerink clinically-interchangeable-w/-injectable-PCSK9 — **SPOTLIGHT + HEADLINE #1**
+- **Eli Lilly-AtaiBeckley acquisition (Wed Jul 16)** — $2.8B upfront + up to $1B CVRs = up to $3.8B, Ph3 BPL-003 mebufotenin benzoate 5-MeO-DMT intranasal spray for TRD, Lilly's 11th 2026 acquisition + 1st psychedelic bet — **HEADLINE #2**
+- **Merck-Kelun sacituzumab tirumotecan OptiTROP-Lung-06 (Wed Jul 16)** — 1st Ph3 ADC+PD-1+chemo triplet beats PD-1+chemo doublet in 1L NSCLC (65% risk reduction) — **HEADLINE #3**
+- **Kalshi + AppliedXL biopharma prediction-market contracts (Wed Jul 16)** — 13 CFTC-regulated contracts on Ph3 outcomes + FDA decisions from ≥$500M-cap sponsors — **HEADLINE #4**
+- **Veradermics (MANE) Ph2 Study '207' VDPHL01 (Wed Jul 15)** — extended-release oral minoxidil for female pattern hair loss, 88.9–90% patient-reported improvement, +9% shares — **HEADLINE #5**
+- Deferred / rejected: any Chai Discovery follow-on (covered in yesterday's spotlight), J&J Q2 (covered in yesterday's headline), Nava Therapeutics (covered yesterday), Braveheart / Attovia S-1s (covered yesterday), Lilly-Oura (covered yesterday).
+
+**Chosen:** headlines above + spotlight on Merck Lipfendra oral PCSK9 approval — biggest therapeutic-development story on the tape, first-in-modality (oral macrocyclic-peptide vs. flat protein-protein interface), directly relevant to Calibr-Skaggs small-molecule cardiometabolic discovery, and reads through to the broader oral-macrocyclic-peptide platform landscape.
+=== 2026-07-17T02:39:01-07:00 done  calibr-briefing (exit 0) (retry 1) ===

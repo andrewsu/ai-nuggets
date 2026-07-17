@@ -2193,3 +2193,20 @@ Files:
 
 No source-side failures. All four picks are v1 posted 2026-07-14/15 on bioRxiv; bodies not yet rendered, summaries grounded in the full abstracts per PIPELINE.md guidance.
 === 2026-07-16T03:06:06-07:00 done  scripps-biomed-brief (exit 0) ===
+=== 2026-07-17T02:50:08-07:00 start scripps-biomed-brief ===
+Wrote today's script + SKIP_TTS stubs (script, `.rss-item.xml`, `.commit-msg`). `publish_pending.py` will do the audio, feed insert, and commit after batch TTS. No source failures this run.
+
+## Selection summary (2026-07-17)
+
+Yesterday's 4 picks (CRBN covalent glue, ALDH1A3, IL-34/IGF-1 KRAS, MDMI) excluded. bioRxiv v1 posts dated 2026-07-16 all returned abstract-only via r.jina.ai (bioRxiv body-render lag <36h) → treated as ineligible today per PIPELINE full-text-gate rule; multiple strong v1 candidates deferred for tomorrow. Final 4 picks are all v2/v3 revisions posted 2026-07-15/16 with full body available.
+
+Chosen:
+- **TNKS PROTAC IWR1-POMA** (Wang/Chen, UT Southwestern, 10.1101/2025.09.22.677768 v3) — reframes WNT-drug failure via TNKS scaffolding/AXIN puncta rigidification of destruction complex
+- **Generative de novo TMB nanopores** (Philomin/Baker, 10.64898/2026.06.04.729630 v2) — TMB_RFD2 + TMB_MPNN on 117k-member distillation set; 48 functional 10-16-strand asymmetric barrels; His3-Cu gating; helicase-driven ssDNA threading; hybrid polymer-lipid membrane at 200 mV
+- **GPR17 agonist galinex for ALS** (Raffaele/Bonifacino/Lecca, 10.64898/2026.04.28.721299 v2) — paradoxical sustained agonism → GPR17 internalization → releases oligodendrocyte differentiation brake; female SOD1G93A survival/motor benefit
+- **Digital twin of SC-islet differentiation** (Sanchez-Castro/Millman, WashU, 10.64898/2026.04.27.721124 v2) — validates STAT1 (exocrine driver) and ZEB1 (dynamic endocrine regulator diverting β vs SIC fate)
+
+Deferred v1-abstract-only shortlist worth revisiting: Cho/Kavrakova NPC1L1 cholesterol flippase for gastric cancer (10.64898/2026.07.15.738777); Rihtar/Jerala ER-degron ON/OFF CAR T with tamoxifen + ARV-471 (10.64898/2026.07.15.738628); Wang/Demirer evoCAST plant genome integration (10.64898/2026.07.15.738807); Chen/Qin RNA-dependent thermal proteome profiling atlas (10.64898/2026.07.15.738841); Malatesta/Mattevi L2HGDH-COQ metabolon (10.64898/2026.07.16.738879); Mukherjee/Somasundaram SEZ6 as GSC-specific angiogenic target (10.64898/2026.07.15.738615); Suzuki/Bird Tegavivint in Wnt-HCC (10.64898/2026.07.14.738585); Ataca Atilla/Green BCMA density trogocytosis attenuates CAR T (10.64898/2026.07.15.738803).
+
+Runner-up with full body (not chosen today): Solli/Wei/Li Fas-FADD-CASP8 as cancer-cell-intrinsic determinant of CTL killing (10.64898/2026.06.14.732110 v2); Baugh/Ergun DRUG-seq primary-cell drug response atlas (10.1101/2025.06.03.657593 v2).
+=== 2026-07-17T03:03:53-07:00 done  scripps-biomed-brief (exit 0) ===

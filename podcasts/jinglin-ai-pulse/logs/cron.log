@@ -795,3 +795,29 @@ Three files written. `SKIP_TTS=1` is set, so per PIPELINE.md I stop here — no 
 
 Handing off to `publish_pending.py`.
 === 2026-07-16T02:40:41-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-17T02:30:08-07:00 start jinglin-ai-pulse ===
+Episode written for jinglin-ai-pulse 2026-07-17. `SKIP_TTS=1` is set, so per PIPELINE.md I've written only the script + rss-item.xml + commit-msg stubs; the batch TTS orchestrator will handle audio, feed update, and commit.
+
+**Selected topic:** Moonshot's Kimi K3 open-MoE release Thu Jul 16 (2.8T params, Kimi Delta Attention, weights Jul 27, industry-wide "DeepSeek moment" convergence) paired with Xi Jinping's WAIC keynote Fri Jul 17 + the 29-nation WAICO treaty signed Thu Jul 16 as the PRC counter-institution to Tuesday's Hassabis FINRA proposal. Money Moves: Microagi $55M Germany-record seed for robot demonstration data. Deep Cut: WhynotTV Ep #5 with Danfei Xu — "human data is robot data in disguise" / "behavior clone a human" as the reference architecture Microagi's Atlas is now instantiating.
+
+**Candidate funnel:**
+
+- Twitter/X + AI community discourse (last 48h):
+  - Kimi K3 release 2026-07-16 — Moonshot AI's 2.8T open-weight MoE. Broad community reaction (Angelopoulos, Lambert, Mostaque, Mollick, Krishnan, Xu, Agarwal, Delangue, Chintala, Willison). **CHOSEN — Twitter Pulse #1.**
+  - Xi Jinping WAIC 2026 keynote 2026-07-17 — Action Plan on Cooperation in AI Development, 5,000-slot Global South training commitment, MAZU 30-country meteorological system. **CHOSEN — Twitter Pulse #2 (paired with WAICO).**
+  - WAICO 29-nation treaty signing 2026-07-16 in Shanghai. **CHOSEN as institutional pair with Xi keynote.**
+  - Huawei Atlas 950 SuperPoD debut at WAIC (8,192 NPUs, claimed 6.7× NVL144). **Woven into the WAIC piece as the compute companion.**
+  - Gemini 3.5 Pro 2026-07-17 target — no Google DeepMind confirmation as of publication; leak-based specs only. **Kept in the wrap watch list, not featured.**
+  - Anthropic response to Hassabis/Dimon — still silent through Thu Jul 16. **Kept in wrap.**
+- AI investment / business (last 3-7d):
+  - Microagi $55M seed 2026-07-16 (Munich, largest-ever German seed, F1-engineer team, factory demonstration-data platform). **CHOSEN — Money Moves.**
+  - Sable $45M / Beacon Security $13M / Xenter $58.25M — noted but less signal-rich than Microagi; **skipped.**
+- Long-form AI podcasts (last 14d, WhynotTV primary):
+  - WhynotTV Podcast #5 — Danfei Xu (Georgia Tech + Nvidia, EgoMimic/UMI/Robomimic) — "human data is robot data in disguise" + "behavior clone a human." Older than 14d (May 1 release) but WhynotTV runs at slow cadence, is the show's primary source, and the argument chain is direct-read alignment with today's Microagi funding. **CHOSEN — Podcast Deep Cut.**
+  - Latent Space AINews Kimi K3 wrap 2026-07-16 — considered as a within-window alternative; instead used as a citation inside Twitter Pulse #1 rather than the Deep Cut.
+  - Latent Space with Ethan He on xAI Grok Imagine (Jun 1) — considered but less thematically tied to today's stories; **skipped.**
+  - Lex Fridman #490 State of AI in 2026 with Lambert + Raschka — Jan 31, out of window; **skipped.**
+  - TWIML with Alex Wiltschko (Osmo, Jul 8) — used yesterday; **excluded.**
+
+**Sources for further reading:** [VentureBeat — Kimi K3 release](https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems), [SiliconANGLE Kimi K3](https://siliconangle.com/2026/07/16/chinas-moonshot-throws-gauntlet-kimi-k3-worlds-largest-open-weights-model/), [MarkTechPost Kimi K3 architecture](https://www.marktechpost.com/2026/07/16/moonshot-ai-releases-kimi-k3-a-2-8-trillion-parameter-open-moe-model-with-kimi-delta-attention-and-1m-context/), [Simon Willison — Kimi K3 pelican](https://simonwillison.net/2026/Jul/16/kimi-k3/), [OfficeChai community reactions](https://officechai.com/ai/beginning-of-a-new-era-ai-community-reacts-to-kimi-k3s-release-with-implications-for-tech-geopolitics/), [Xinhua — 29 nations sign WAICO](https://english.news.cn/20260716/2d364f232dd7456c8edf1d67d5125d37/c.html), [Singju Post — Xi WAIC transcript](https://singjupost.com/transcript-xi-jinpings-keynote-speech-at-world-ai-conference-2026/), [Seoul Economic Daily — Huawei Atlas 950 SuperPoD](https://en.sedaily.com/international/2026/07/17/huawei-unveils-atlas-950-superpod-linking-thousands-of-ai), [Sifted — Microagi $55M seed](https://sifted.eu/articles/munich-robotics-startup-microagi-raises-55m-germanys-largest-ever-seed-round), [WhynotTV Podcast (Tairan He)](https://tairanhe.com/podcast_en).
+=== 2026-07-17T02:43:56-07:00 done  jinglin-ai-pulse (exit 0) ===
