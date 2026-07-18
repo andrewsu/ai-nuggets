@@ -1312,3 +1312,24 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-07-18T02:58:24-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-07-18T02:58:24-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
+=== 2026-07-18T05:05:00-07:00 start justice-biotech-brief ===
+Episode published for 2026-07-18. SKIP_TTS mode: script + rss-item stub + commit-msg written to `podcasts/justice-biotech-brief/scripts/`. Orchestrator will handle TTS, R2 publish, feed update, and commit.
+
+## Candidate funnel
+
+- **bioRxiv** (2 days, 2026-07-17 → 2026-07-18): 284 items scanned, paginated in full (10 pages via cursor 0-270); 44 keyword hits (VEGF / PD-L1 / T cell engager / TCE / bispecific / trispecific / CAR-T / ADC / JAK / immunotherapy / checkpoint / immune).
+- **News / product launches**: Fierce Biotech + Fierce Pharma + Endpoints News fronts returned HTTP 403 to WebFetch; worked around via WebSearch queries + direct-URL fetches on BioPharma Dive, GlobeNewsWire, STAT News, ir.jaspertherapeutics.com. STAT Readout (Jul 16) + BioPharma Dive top-5 + biopharmawatch FDA calendar + biobucks BD tracker + globenewswire biotech tag searched.
+- **Policy / funders**: not surveyed today — pipeline flags this as acceptable when source-side (Fierce/Endpoints) already yields sufficient candidates in beat.
+
+**Substantive shortlist after discarding out-of-beat + already-covered:**
+- Jasper–Kira reverse merger + $132M PIPE + KP-104 (bifunctional-complement Ph2) + **KP-701 (preclinical CD79B×CD32B B-cell-silencing bispecific)** — https://www.globenewswire.com/news-release/2026/07/16/3328849/0/en/jasper-therapeutics-announces-merger-with-kira-pharmaceuticals.html — **CHOSEN** (July 16, in-beat: bispecific + autoimmune biologic + B-cell-directed modality; complements this week's bempikibart + AVR-001 non-JAK-alternative arc)
+- bioRxiv 10.64898/2026.07.12.738084 "Integrating activation-induced costimulation and cytokine signals enhance TCR-based cell therapies" (Watanabe/Mamonkin, Baylor) — DSR = 4-1BBL ecto + cMPL endo, signals 2+3 armoring for TCR-T + soluble TCEs — **DEFERRED** (v1 posted 2026-07-17; body HTML not yet rendered via r.jina.ai — abstract-only; per PIPELINE full-text eligibility gate, revisit later day)
+- bioRxiv 10.64898/2026.07.12.738073 "ITPKB is a conserved regulator of NK cell desensitization" (Raulet, UC-Berkeley) — pharmacological ITPKB inhibition boosts NK degranulation + CAR-NK efficacy — **DEFERRED** (v1 2026-07-17; abstract-only)
+- bioRxiv 10.64898/2026.07.17.739058 "Engineered endothelial cell grafts…CAM tumor models" (Bonn) — perfused mammalian-endothelium CAM platform for TCE testing (validates with DLL3-tarlatamab SCLC) — **DEFERRED** (v1 2026-07-17; abstract-only)
+- Kelun-Merck sac-TMT OptiTROP-Lung06 — **SKIP** (covered in yesterday's episode)
+- Fabhalta full IgAN approval (Jul 17) — **SKIP** (small-molecule complement, adjacent to but out of Justice's biologic/TCE/ADC beat; heavy overlap with calibr-briefing coverage)
+- Merck oral PCSK9 (Lipfendra) — **OUT OF BEAT** (cardiovascular)
+- GSK camlipixant discontinuation — **OUT OF BEAT** (respiratory P2X3)
+- Cytokinetics aficamten ACACIA-HCM Ph3 topline (Jul 17) — **OUT OF BEAT** (cardiovascular)
+- Molecular Partners MP0317 DARPin CD40×FAP cholangio Ph2 initiation (Jul 16) — considered but Ph2 *initiation* not readout; MP0317 story less proximate to Justice's core beats than KP-701 bispecific silencing
+=== 2026-07-18T05:22:14-07:00 done  justice-biotech-brief (exit 0) ===
