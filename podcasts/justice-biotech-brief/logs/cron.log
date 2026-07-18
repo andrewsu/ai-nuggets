@@ -1283,3 +1283,32 @@ Episode written for justice-biotech-brief 2026-07-17. Per PIPELINE.md SKIP_TTS=1
 - News (Fierce Biotech / Endpoints homepages 403'd; BioPharma Dive + trade press covered): **Kelun-Biotech / Merck sac-TMT OptiTROP-Lung06 PD-L1-negative NSCLC** — *chosen*; Celcuity gedatolisib PDUFA July 17 (breast, small molecule PI3K/AKT/mTOR — off-beat); BriaCell Bria-IMT Sunnybrook site opening (metastatic breast, no fresh readout); Biogen diranersen tau (Alzheimer's — off-beat); Merck Lipfendra enlicitide oral PCSK9 FDA approval (cardiometabolic — off-beat); Lilly-AtaiBeckley $3.8B acquisition (psychedelic neuropsych — off-beat); Veradermics VDPHL01 Ph2 (female pattern hair loss — off-beat).
 - Funder pages (ARPA-H / NIH / NSF): not reached — trade-press catalyst dominates the day and directly serves Justice's beat.
 === 2026-07-17T02:51:02-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-18T02:40:11-07:00 start justice-biotech-brief ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-18T02:43:03-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-18T02:43:03-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-18T02:43:03-07:00 session-limit reset at 5am is 8277s away (>3600s cap); sleeping 180s ===
+=== 2026-07-18T02:46:03-07:00 start justice-biotech-brief (retry 1) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-18T02:46:07-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-07-18T02:46:07-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-18T02:46:07-07:00 session-limit reset at 5am is 8093s away (>3600s cap); sleeping 180s ===
+=== 2026-07-18T02:49:07-07:00 start justice-biotech-brief (retry 2, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-18T02:49:11-07:00 done  justice-biotech-brief (exit 0) (retry 2, --model claude-sonnet-4-6) ===
+=== 2026-07-18T02:49:11-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-18T02:49:11-07:00 session-limit reset at 5am is 7909s away (>3600s cap); sleeping 180s ===
+=== 2026-07-18T02:52:11-07:00 start justice-biotech-brief (retry 3, --model claude-sonnet-4-6) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-18T02:52:15-07:00 done  justice-biotech-brief (exit 0) (retry 3, --model claude-sonnet-4-6) ===
+=== 2026-07-18T02:52:15-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-18T02:52:15-07:00 session-limit reset at 5am is 7725s away (>3600s cap); sleeping 180s ===
+=== 2026-07-18T02:55:15-07:00 start justice-biotech-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-18T02:55:20-07:00 done  justice-biotech-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-18T02:55:20-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-07-18T02:55:20-07:00 session-limit reset at 5am is 7540s away (>3600s cap); sleeping 180s ===
+=== 2026-07-18T02:58:20-07:00 start justice-biotech-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5am (America/Los_Angeles)
+=== 2026-07-18T02:58:24-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-07-18T02:58:24-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
