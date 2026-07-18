@@ -802,3 +802,25 @@ You've hit your session limit · resets 5am (America/Los_Angeles)
 You've hit your session limit · resets 5am (America/Los_Angeles)
 === 2026-07-18T02:56:32-07:00 done  blackbird-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-07-18T02:56:32-07:00 FAILED: no usable output for blackbird-brief after all retries ===
+=== 2026-07-18T05:05:00-07:00 start blackbird-brief ===
+All four artifacts are in place. This was a resumed run — the earlier attempts at 02:10, 02:25, 02:47, 02:50, 02:53, 02:56 hit session limits after script + mp3 were written at 02:44 and 03:23 respectively, but the SKIP_TTS stub files (`.rss-item.xml`, `.commit-msg`) were never emitted. I wrote both stubs and validated that the composed feed parses as valid XML.
+
+## Blackbird Brief — Sourcing Radar for 2026-07-18 (Saturday) — DONE (SKIP_TTS mode, completed from partial prior run)
+
+**Files present** under `podcasts/blackbird-brief/`:
+
+- `scripts/2026-07-18-radar-jhu-zaidi-mkras-vax-interception-corti-umb-cygb-hlhs-enzgfm.md` — script (15 KB, ~10:57 spoken, from prior run)
+- `episodes/2026-07-18-radar-jhu-zaidi-mkras-vax-interception-corti-umb-cygb-hlhs-enzgfm.mp3` — audio (5.25 MB, 656.7 s, from prior run — SKIP_TTS was intended but TTS ran anyway on one of the retries; `publish_pending.py` will pick up the existing MP3 rather than re-render)
+- `scripts/2026-07-18-*.rss-item.xml` — new, RSS `<item>` with `__LENGTH__` / `__DURATION__` placeholders; validated as valid XML after mock substitution and validated inside the composed `feed.xml`
+- `scripts/2026-07-18-*.commit-msg` — new, single-line commit message with `Blackbird 2026-07-18` prefix
+
+**Selection (from the existing 02:44 script — I did not re-select):**
+
+- **Pick 1 (LEAD)** — Haldar SD (first, MD Anderson/formerly JHU) + Zaidi N (senior corresponding, JHU Bloomberg-Kimmel/SKCCC). *Cancer Discovery* 2026-07-16 (DOI 10.1158/2159-8290.CD-25-2245, PMID 42458705, NCT05013216). First-in-human phase-one mKRAS-VAX for pancreatic-cancer *interception* in n=20 hereditary-predisposition individuals (BRCA1/2, PALB2, Lynch, FPC). 90% T-cell response, TCR clonotypes persist ≤2 y, zero PDAC progression over median 16.5-mo follow-up. Commercial vehicle: Adventris Pharmaceuticals (YC-backed JHU spinout; Jaffee co-founder+CSO; Zaidi+Yarchoan equity). Direct action for Eddie + JHTV oncology desk; competitive read for aSKY.
+- **Pick 2 (UM Ventures × Blackbird sourcing surface, IP white-space)** — Clark A (first) + Corti P (senior corresponding, UMB SoM Biochem/CBOTH). bioRxiv v1 2026-07-16 (DOI 10.64898/2026.03.13.711730). Cygb-KO zebrafish disrupts NO/sGC/cGMP signaling during cardiac progenitor migration → HLHS-like ventricle; Bayer Cinaciguat (clinical-stage sGC activator) fully rescues stroke volume + wall thickness. Opens congenital heart disease for the Verquvo/Adempas sGC-activator/stimulator class. COI: none. Mechanism-first paper, no patent — provisional-filing window.
+- **Pick 3 (landscape/diligence framing, not a sourcing lead)** — Wang C (first, Henan Medical) + Yu Y + Wang T + Shen Y (JHU CS, co-corresponding). *Nat Commun* 2026-07-17 (DOI 10.1038/s41467-026-75283-3, PMID 42469205). EnzGFM enzyme foundation model beats standard PLMs by 13-20% across four benchmarks at 2-5× throughput. 8/9 authors + all funding Chinese, no patents. Not a JHU-anchored sourcing lead; the benchmark set is now the public reference every AI-first protein-design pitch (Cyrus, Xaira, Chai, EvolvePro, Basecamp, Ginkgo) should be pressed on for enzyme-design differentiation claims — direct diligence read for Aletira SELEXON extension conversations.
+
+**Editorial framing.** The Zaidi + Jaffee mKRAS-VAX Cancer Discovery readout is the strongest single JHU immuno-oncology datapoint of the week — first solid-tumor cancer-interception vaccine paper, first-mover regulatory template for the AACR Cancer Interception pathway, and pipeline expansion at Adventris that reshapes its Series-B financing conversation. The Corti UMB cytoglobin paper is the surprise pick — mechanism-first, clean-COI, NIH-funded, opens a completely new indication for a clinically-validated small-molecule drug class, and lands squarely on the UM Ventures × Blackbird co-investment surface. EnzGFM is a landscape signal, not a lead — but the benchmark set is a useful diligence-framing artifact for every AI-first protein-design pitch this month.
+
+The orchestrator (`scripts/publish_pending.py`) will pick up the four artifacts on its next run — MP3 already present so no gap-fill needed; RSS insertion, R2 upload via `publish_episode.sh`, and single commit will proceed normally.
+=== 2026-07-18T05:09:56-07:00 done  blackbird-brief (exit 0) ===
