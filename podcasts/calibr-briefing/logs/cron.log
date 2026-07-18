@@ -2328,3 +2328,38 @@ Both RSS stubs parse as well-formed XML when wrapped with the `itunes:` + `conte
 
 **Chosen:** headlines above + spotlight on Merck Lipfendra oral PCSK9 approval — biggest therapeutic-development story on the tape, first-in-modality (oral macrocyclic-peptide vs. flat protein-protein interface), directly relevant to Calibr-Skaggs small-molecule cardiometabolic discovery, and reads through to the broader oral-macrocyclic-peptide platform landscape.
 === 2026-07-17T02:39:01-07:00 done  calibr-briefing (exit 0) (retry 1) ===
+=== 2026-07-18T02:20:11-07:00 start calibr-briefing ===
+Both episodes are drafted and staged for the batch TTS + commit orchestrator. SKIP_TTS=1 is set, so I skipped gen_tts.py, publish_episode.sh, feed.xml edit, and the commit itself per PIPELINE.md.
+
+Files written for 2026-07-18:
+- `scripts/2026-07-18-pharma-headlines.txt` (2,419 words, ~5 min headlines roundup)
+- `scripts/2026-07-18-pharma-headlines.rss-item.xml` (stub with `__LENGTH__` / `__DURATION__`)
+- `scripts/2026-07-18-pharma-headlines.commit-msg`
+- `scripts/2026-07-18-novartis-fabhalta-igan-full-approval-spotlight.txt` (2,361 words, ~7 min deep dive)
+- `scripts/2026-07-18-novartis-fabhalta-igan-full-approval-spotlight.rss-item.xml`
+- `scripts/2026-07-18-novartis-fabhalta-igan-full-approval-spotlight.commit-msg`
+
+XML validates in both stubs under `xmlns:itunes` context.
+
+Candidate funnel for 2026-07-18 (Sat) — items published Fri Jul 17 or Sat Jul 18:
+
+- BioPharma Dive homepage — accessible; primary source
+- STAT News / Pharmalot — accessible
+- Endpoints News — 403 on homepage; recovered via search snippets
+- Fierce Biotech / Fierce Pharma — 403 on homepage; recovered via search
+- BioSpace — 403 on article pages; press-release pages accessible
+- Novartis / GSK / Takeda / Mission Therapeutics investor pages — accessible
+- Genetic Engineering & Biotech News — no unique Jul 17/18 items surfaced
+- Clinical Trials Arena — no unique Jul 17/18 items surfaced
+
+Substantive shortlist (all Jul 17):
+- **Novartis Fabhalta (iptacopan) full FDA approval in primary IgAN on APPLAUSE-IgAN 24-mo eGFR-slope** — https://www.novartis.com/news/media-releases/novartis-fabhalta-iptacopan-receives-fda-traditional-approval-first-and-only-complement-inhibitor-significantly-slow-kidney-function-decline-primary-igan — **CHOSEN (headline #1 + spotlight)**
+- **GSK discontinues camlipixant (P2X3) after mixed CALM-1/CALM-2 Ph3** — https://www.gsk.com/en-gb/media/press-releases/gsk-provides-an-update-on-calm-1-and-calm-2-phase-iii-trials — **CHOSEN (headline #2)**
+- **Takeda zasocitinib Ph3 hard-to-treat sites subgroup data (scalp/palms/nails)** — https://www.takeda.com/newsroom/newsreleases/2026/zasocitinib-phase3-clinical-trial-results/ — **CHOSEN (headline #3)**
+- **BioPharma Dive AI-drug-discovery mid-2026 scorecard (Insilico rentosertib to Ph3, Recursion REC-4881 43% polyp reduction, Verge fail)** — https://www.biopharmadive.com/news/ai-drug-discovery-insilico-recursion-verge/825367/ — **CHOSEN (headline #4, Foresite AI-thesis tie-in)**
+- **Mission Therapeutics divests MTX652 (USP30 inhibitor) to Dimerix for up to $292M in AKI** — https://www.globenewswire.com/news-release/2026/07/17/3328928/0/en/Mission-Therapeutics-strikes-deal-worth-up-to-292-million-for-Dimerix-Ltd-to-develop-Acute-Kidney-Injury-asset-MTX652-sharpens-focus-on-its-CNS-pipeline.html — **CHOSEN (headline #5)**
+- Insmed TPIP 12-mo OLE PAH data — Jul 16, already featured Jul 17 briefing — dropped
+- Jasper Therapeutics all-stock merger with Kira Pharmaceuticals — Jul 16 — dropped for freshness
+
+Spotlight beat GSK camlipixant and BioPharma Dive AI scorecard on: (1) landmark first-in-class full-approval-on-hard-endpoint precedent, (2) direct Calibr nephrology-and-complement-chemistry read-through, (3) 5-mechanism competitive landscape depth including the Vera Trutakna atacicept approval featured Jul 8, (4) Novartis's own three-mechanism IgAN franchise construction.
+=== 2026-07-18T02:38:53-07:00 done  calibr-briefing (exit 0) ===
