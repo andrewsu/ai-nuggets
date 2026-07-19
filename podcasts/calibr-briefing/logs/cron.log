@@ -2363,3 +2363,42 @@ Substantive shortlist (all Jul 17):
 
 Spotlight beat GSK camlipixant and BioPharma Dive AI scorecard on: (1) landmark first-in-class full-approval-on-hard-endpoint precedent, (2) direct Calibr nephrology-and-complement-chemistry read-through, (3) 5-mechanism competitive landscape depth including the Vera Trutakna atacicept approval featured Jul 8, (4) Novartis's own three-mechanism IgAN franchise construction.
 === 2026-07-18T02:38:53-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-19T02:20:11-07:00 start calibr-briefing ===
+Both scripts and both sets of stubs are in place. Per PIPELINE.md with SKIP_TTS=1: no audio generation, no R2 publish, no feed edit, no commit — orchestrator handles all of that after batch TTS.
+
+Files written for today's episodes:
+- `podcasts/calibr-briefing/scripts/2026-07-19-pharma-headlines.txt` (headlines script, ~28KB, five items)
+- `podcasts/calibr-briefing/scripts/2026-07-19-pharma-headlines.rss-item.xml` (RSS stub with __LENGTH__ / __DURATION__ placeholders)
+- `podcasts/calibr-briefing/scripts/2026-07-19-pharma-headlines.commit-msg`
+- `podcasts/calibr-briefing/scripts/2026-07-19-sonothera-ultrasound-nonviral-gene-therapy-spotlight.txt` (spotlight script, ~16KB, deep dive)
+- `podcasts/calibr-briefing/scripts/2026-07-19-sonothera-ultrasound-nonviral-gene-therapy-spotlight.rss-item.xml`
+- `podcasts/calibr-briefing/scripts/2026-07-19-sonothera-ultrasound-nonviral-gene-therapy-spotlight.commit-msg`
+
+## Candidate funnel — Sunday July 19, 2026 Calibr briefing
+
+Weekend brief. Yesterday (July 18) covered the July 17 Friday news bucket (Novartis Fabhalta full approval + GSK camlipixant discontinuation + Takeda zasocitinib subgroup + BioPharma Dive AI scorecard + Mission-Dimerix MTX652). Today's picks are fresh biology-and-modality signals that Friday-heavy bucket left on the table, plus Saturday/Sunday incremental.
+
+**Sources surveyed:**
+- Fierce Biotech / Fierce Pharma: WebFetch 403 for both; substitute via web-search summaries of their July 17-18 items (GSK camlipixant, Fabhalta full approval already covered; SonoThera Series-B via cross-ref)
+- Endpoints News: WebFetch 403; substitute via web-search
+- STAT News: SonoThera profile confirmed (STAT+ paywall for full body, but headline + framing captured via web search)
+- BioPharma Dive: fetched homepage — items visible only through July 17
+- BioSpace: press-release aggregator, several items retrieved
+- PharmaLetter / MMM Online / RSM Weekly Life Sciences Roundup: mid-July recaps
+
+**Substantive shortlist (spurious keyword matches discarded):**
+- ✅ Insmed T-P-I-P 12-mo PAH OLE + PALM-PAH Phase 3 launch (Jul 16) — investor.insmed.com press release
+- ✅ SonoThera STAT profile of ultrasound-mediated non-viral gene delivery (Jul 17) — statnews.com/2026/07/17/sonathera-ultrasound-duchenne-muscular-dystrophy-treatment/ (STAT+ paywall body; company page + Series-B press release provided full context)
+- ✅ enGene board reshuffle + detalimogene H2 2026 BLA (Jul 16) — biospace.com press release
+- ✅ Veradermics VDPHL01 Phase 2 female pattern hair loss (Jul 15) — Yahoo Finance press release
+- ✅ InnoCare soficitinib TYK2 vitiligo Phase 2 (Jul 16) — globenewswire.com press release
+- ⚪ Roche divarasib Krascendo-1 Phase 3 (Jul 2) — passed as too old for this-week's lead
+- ⚪ Chai Discovery $400M Series C at $3.8B (Jul 14) — heavy AI-in-antibody-design story, but covered as thread in yesterday's AI-scorecard piece; would repeat too much
+- ⚪ Insilico rentosertib Phase 3 initiation (Jul 8) — covered in yesterday's AI scorecard
+- ⚪ CSL Seqirus flu vaccine shipment (Jul 18) — genuinely today's news but not a Foresite/Calibr-adjacent signal
+- ⚪ Xaira leadership changes (Jul 6) — too old
+- ⚪ Vertex-Crinetics acquisition (Jul 6) — too old; announcement week already priced
+
+**Picked for headlines:** Insmed TPIP (lead) + SonoThera STAT profile + enGene detalimogene + Veradermics VDPHL01 + InnoCare soficitinib.
+**Picked for spotlight:** SonoThera — richest modality-thesis narrative with ARCH/Foresite-adjacent investor read-across and 18-24 month resolution window before 2027 DMD first-in-human.
+=== 2026-07-19T02:41:29-07:00 done  calibr-briefing (exit 0) ===
