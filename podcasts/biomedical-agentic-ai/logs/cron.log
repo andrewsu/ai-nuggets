@@ -2604,3 +2604,34 @@ All three artifacts written under `SKIP_TTS=1` mode (script, RSS-item stub with 
 
 **Why BioPathfinder beat the shortlist:** it's the only shortlist item that closes the AI-to-wet-lab loop (Curator → Planner → Reviewer → Bioinfo Analyst → virtual knockout → flow cytometry → xenograft survival curves), and it treats agent reproducibility as a scored dimension. Fits Andrew's agentic-AI + knowledge-graph-adjacent + evidence-integration interests, and doesn't overlap with the last three days of episodes (VFB-MCP ontology, EcoXAI drug repurposing KG, RAGU GraphRAG).
 === 2026-07-18T02:08:19-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-19T02:00:11-07:00 start biomedical-agentic-ai ===
+Wrote today's episode script and stub files. SKIP_TTS=1 is set, so the orchestrator (`publish_pending.py`) will run TTS, R2 upload, feed insertion, and commit after the batch TTS job.
+
+**Pick: SemVac — LLMs read the vaccine literature to nominate antigens, and chain-of-thought reasoning hurts**
+
+Paper: SemVac (bioRxiv 10.64898/2026.07.13.737696, posted 2026-07-17), from the Academy of Military Medical Sciences (Beijing) + National University of Defense Technology (Changsha). Benchmarks 14 frontier LLMs on protective-antigen prediction from PaperBLAST-retrieved biomedical literature; the striking finding is that explicit chain-of-thought reasoning consistently *reduces* precision (by up to 7.6%) while raising recall (up to 8.4%) on biology-discovery tasks — verbose traces manufacture biologically plausible but unfounded mechanisms.
+
+## Candidate funnel
+
+**bioRxiv** — 563 items in 2026-07-16 → 2026-07-19 window (409 new); 29 v1s hit relevance keywords; substantive shortlist after discarding spurious matches ("chemical/therapeutic/pathogenic agent", "LLM inside unrelated word", "autonomous piRNA/retrotransposon"):
+
+- **SemVac: A Semantic Vaccinology Paradigm Powered by LLMs for Antigen Discovery** — https://www.biorxiv.org/content/10.64898/2026.07.13.737696v1 — **CHOSEN**
+- Σ0-EvoCell: An AI-Native Ontology... — https://www.biorxiv.org/content/10.64898/2026.07.15.738795v1 — full-body HTML unrendered on bioRxiv; abstract-only. Single-author speculative-manifesto tone (author affiliated with a biotech company); would defer if body rendered. Ineligible today.
+- Biological Continued Pretraining Reshapes Capability Profile of a Foundation Model — https://www.biorxiv.org/content/10.64898/2026.07.06.736700v1 — full-body HTML unrendered. Ineligible today; worth revisiting.
+- Evo 2 viral-genome benchmark — https://www.biorxiv.org/content/10.64898/2026.07.14.738542v1 — interesting foundation-model benchmark, less on-brand
+- gANCHOR CAR-T foundation model — https://www.biorxiv.org/content/10.64898/2026.07.11.737994v1 — too close to yesterday's BioPathfinder CAR-T episode
+- BioPathfinder — already shipped 2026-07-18
+
+**arXiv** — cache has 500 entries covering 2026-07-13 to 2026-07-16 (no 07-17/18/19 yet). Biomedical-relevance filter:
+- AutoSynthesis: agentic system for automated meta-analysis — https://arxiv.org/abs/2607.15247 — strong candidate, but demo cases (HCI, education, psychology) are non-biomedical
+- Multi-LLM Collaborative MRI Report Generation for Brain Oncology — https://arxiv.org/abs/2607.14581
+- MamaBench: LLM Robustness in Maternal and Child Health Diagnosis — https://arxiv.org/abs/2607.14385
+- MonteRET: AI Agent + Multimodal LLMs for Chest CT Report Generation — https://arxiv.org/abs/2607.14264
+- HealthClaw: Self-Evolving Agent for Longitudinal Personal Health Management — https://arxiv.org/abs/2607.13940
+
+**PubMed** — 1,783 items in 2026-07-14 → 2026-07-19 entry-date window under agent/LLM/foundation-model/KG/ontology terms; nothing surfaced that dominates the SemVac pick.
+
+**ChemRxiv / news / funder feeds** — light scan; no dominant candidate.
+
+**Selection rationale**: SemVac is directly biomedical (vaccinology, Mpox proteome), LLM-heavy, tests an open-weight model competitively (Kimi K2 beats specialized PLGDL), and contains a counterintuitive methodological finding — chain-of-thought hurts precision in biology discovery — that is directly actionable for anyone building LLM-over-literature pipelines. That combination fits the show better than the ontology/foundation-model preprints whose bodies bioRxiv hadn't rendered yet, and beats the arXiv agentic-scaffold papers on biomedical directness.
+=== 2026-07-19T02:11:34-07:00 done  biomedical-agentic-ai (exit 0) ===
