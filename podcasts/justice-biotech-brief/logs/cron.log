@@ -1333,3 +1333,42 @@ Episode published for 2026-07-18. SKIP_TTS mode: script + rss-item stub + commit
 - Cytokinetics aficamten ACACIA-HCM Ph3 topline (Jul 17) — **OUT OF BEAT** (cardiovascular)
 - Molecular Partners MP0317 DARPin CD40×FAP cholangio Ph2 initiation (Jul 16) — considered but Ph2 *initiation* not readout; MP0317 story less proximate to Justice's core beats than KP-701 bispecific silencing
 === 2026-07-18T05:22:14-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-19T02:40:11-07:00 start justice-biotech-brief ===
+Stubs written. Now the final summary for cron.log.
+
+## Justice's Biotech Brief — 2026-07-19
+
+**Episode picked:** DSR (dual stimulatory receptor) — 4-1BBL ectodomain × cMPL endodomain, arms TCR-T, bispecific TCE-secreting T, and CD19 chimeric-TCR cells with antigen-gated signal 2 + signal 3, delivering durable persistence and tumor control across three cell-therapy modalities without exogenous cytokine (Baylor Center for Cell and Gene Therapy preprint, bioRxiv 2026.07.12.738084, posted July 17 2026).
+
+**Files written** (SKIP_TTS=1, orchestrator will publish):
+- `scripts/2026-07-19-dsr-dual-stimulatory-receptor-tcr-tce-signal2-signal3.md`
+- `scripts/2026-07-19-dsr-dual-stimulatory-receptor-tcr-tce-signal2-signal3.rss-item.xml`
+- `scripts/2026-07-19-dsr-dual-stimulatory-receptor-tcr-tce-signal2-signal3.commit-msg`
+
+**Candidate funnel:**
+
+- **bioRxiv 2026-07-17→2026-07-19**: 300 unique preprints scanned across pages (via api.biorxiv.org details, cursored to full corpus); 21 matched the show's keyword list (VEGF/PD-L1/TCE/bispecific/trispecific/CAR-T/ADC/JAK/checkpoint/autoimmune). Substantive shortlist after removing spurious matches (weight-cycling DC paper, epigenetics survival predictors, lupus NET pathology, breast-cancer impedance glove, DNAm proxies):
+  - **DSR — dual stimulatory receptor for TCR-T / TCE / chimeric TCR** — https://www.biorxiv.org/content/10.64898/2026.07.12.738084v1 — Jul 17 v1 — **PICKED**
+  - ITPKB regulator of NK-cell desensitization — https://www.biorxiv.org/content/10.64898/2026.07.12.738073v1 — Jul 17 v1 — strong runner-up (Raulet lab, NK cell engager read-through); read full PDF, on-topic but less directly TCE-relevant than DSR
+  - CAR-T monitoring via Raman spectroscopy — https://www.biorxiv.org/content/10.64898/2026.02.22.707331v2 — Jul 18 v2 — bioengineering/monitoring paper, not clinical enough; jina only returned abstract for v2, so full-text ineligible today anyway
+  - Engineered endothelial cell grafts for T cell recruitment in CAM tumor models — https://www.biorxiv.org/content/10.64898/2026.07.17.739058v1 — preclinical model paper, less on-topic
+  - TCGA NET-associated immunothrombosis re-analysis — https://www.biorxiv.org/content/10.64898/2026.07.14.738403v1 — bioinformatics reanalysis, thin novelty
+  - DSR-full-text confirmation: bioRxiv `.full` HTML rendered abstract-only (12,736 chars); fetched real body via `r.jina.ai` on the PDF URL (90,898 chars) — full-text eligibility satisfied. Same escape hatch confirmed ITPKB body.
+- **News / press feeds (recency window: last 1–2 days = Jul 17–19)**:
+  - BioPharma Dive RSS OK (10 items scanned); FiercePharma & FierceBiotech RSS OK but currently webinar/premium-only (no news items); STAT RSS OK; Endpoints RSS returned HTTP 403, worked around via `r.jina.ai` against endpoints channels (`/rd/`, `/pharma/`, `/deals/`, `/`, article pages).
+  - Substantive shortlist (in-window):
+    - Endpoints — Celcuity got its cancer drug approved. Then its stock dipped — https://endpoints.news/celcuity-got-its-cancer-drug-approved-then-its-stock-dipped/ — Jul 17 — off-beat (PI3K/mTOR pan-inhibitor gedatolisib for HR+/HER2- breast cancer, not TCE/CAR-T/JAK/immunotherapy); teaser only, paywalled body
+    - BioPharma Dive — Arbutus/Sanofi mRNA suits + InnoCare TYK2 soficitinib Phase 3 AD + Phase 2 vitiligo — https://www.biopharmadive.com/news/arbutus-sanofi-mrna-insmed-innocare-tyk2-chai-argenx/825420/ — Jul 17 — TYK2 (JAK-family) is on-topic but the underlying readouts are Jul 15–16 (edge of window), and it's a China-only sub-Sotyktu asset — not a headline pick
+    - Endpoints — Dimerix buys kidney injury drug; Arpeggio winding down — Jul 17 — kidney focus, off-beat for Justice
+    - Endpoints — Biogen mixed Alzheimer's data + 2 startups — Jul 18 weekly roundup — Alzheimer's-driven, off-beat, body paywalled
+    - Endpoints — GSK drops Phase 3 cough drug — Jul 17 — off-beat
+    - Endpoints — Nava Therapeutics $89M LNP for T cells + kidney — Jul 15 — out of window
+    - Endpoints — Attovia I&I IPO filing — Jul 15 — out of window
+    - Endpoints — Braveheart IPO filing (Hengrui obscufilamin) — Jul 15 — out of window
+    - Endpoints — Mirador Kira KP-301/KP-402 acquisition — Jul 17 — already covered in yesterday's episode (2026-07-18-kp701-kp104-jasper-kira)
+- **Policy / funder pages**: ARPA-H news, NIH press releases, NSF news all fetched OK; no fresh on-beat items in the Jul 17–19 window.
+
+**Selection rationale:** DSR beat all news candidates on both fit and freshness — on-topic (TCE / TCR-T / cell therapy is dead-center for Justice's Rodgers-lab beat), fresh (Jul 17 v1, inside 2-day window), full-text obtainable via jina→PDF, and mechanistically the strongest single translational-immunology preprint in this window. It also carries direct trispecific-TCE read-through via the CD123-secreting TCE-T experiment, which no in-window news item matches. ITPKB was the closest runner-up but reads primarily as NK-cell target biology rather than a therapeutic-modality result.
+
+**Not committed** — orchestrator (`scripts/publish_pending.py`) will run batch TTS, publish to R2, insert the RSS item into `feed.xml`, and commit after all shows finish today's runs.
+=== 2026-07-19T02:55:47-07:00 done  justice-biotech-brief (exit 0) ===
