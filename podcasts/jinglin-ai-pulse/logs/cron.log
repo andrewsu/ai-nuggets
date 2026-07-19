@@ -853,3 +853,36 @@ Long-form AI podcasts (last 7-14 days):
 - No Priors Biohub/Zuckerberg/Rives (Jun 18) — outside window; content overlaps
 - Cognitive Revolution Ramin Hasani Liquid AI (Jul 4) — plausible, deferred
 === 2026-07-18T02:42:51-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-19T02:30:11-07:00 start jinglin-ai-pulse ===
+The script + stubs are staged. Since `SKIP_TTS=1`, I'm not running gen_tts, publishing to R2, or committing — the orchestrator does that after batch TTS.
+
+## Candidate funnel (Ollie's AI Pulse, Sunday 2026-07-19)
+
+**Twitter / discourse (24-48h window, Sat Jul 18 → Sun Jul 19 AM):**
+- Dean W. Ball (OpenAI Head of Strategic Futures) tweet thread Fri Jul 17 — K3 concession + "decelerationist" + "AI communism" — https://x.com/deanwball/status/2078133895766114412 — **CHOSEN (Twitter Pulse story 1)**
+- Axios "AI race splits in two" synthesis Sat Jul 18 + underlying OpenRouter data — https://www.axios.com/2026/07/18/china-ai-open-source-kimi-anthropic-openai — **CHOSEN (Twitter Pulse story 2)**
+- TechCrunch "Kimi: Threat or Menace?" Sat Jul 18 discourse recap — https://techcrunch.com/2026/07/18/kimi-threat-or-menace/ — folded into Ball story
+- "Kimi K3 identifies as Claude" distillation controversy — deferred (single-conversation anecdote, weak evidence — Kalanick/Hashim quoted inside Ball recap instead)
+- Zefan_Cai direct feed — no direct hits in web search; discourse instead reconstructed from convergent voices (Ball, Kalanick, Hashim, Sacks recap)
+
+**Investment / business (3-7 day window):**
+- Anthropic Fable-5-back-in-Max announcement Fri Jul 17 — https://www.anthropic.com/news/redeploying-fable-5 + https://x.com/claudeai/status/2078302415804379218 — **CHOSEN (Money Moves piece 2 / doubles as Anthropic-silence-resolution)**
+- Walden Robotics $300M seed / $1.1B out of stealth Tue Jul 15 — https://www.waldenrobotics.com/news/walden-robotics-launches-from-stealth — **CHOSEN (Money Moves piece 1)**
+- Emergent (India) $130M Series C at $1.5B unicorn — noted, less Ollie-relevant
+- Cognichip $60M Series A foundation-model-for-chip-design — noted, on-thesis but overlapping with Walden's substrate story
+- Singularity $80M Series A air defense — off-thesis
+
+**Podcast content (7-14 day window):**
+- The Cognitive Revolution Sun Jul 12, Davidad "Alignment with Awakening" — https://www.cognitiverevolution.ai/alignment-with-awakening-davidad-on-moral-realism-ai-wisdom-why-his-p-doom-is-down-to-5/ — **CHOSEN (Podcast Deep Cut)**
+- MLST Jul 1 Tufa Labs ARC-AGI-3 team — noted, older, ARC-AGI-3 already covered in earlier episode (2026-07-11)
+- WhynotTV — no new episodes since Ep #5 (Danfei Xu) which was used yesterday
+- Latent Space Jul 16 Ep 214 — title/guest not surfaced in search, skipped
+- Dwarkesh Podcast — no confirmed Jul 14-19 episode surfaced
+
+**Source failures:** none material — wccftech.com and axios.com WebFetches returned 403/402 but content was reconstructable via WebSearch snippets and mirror coverage.
+
+**Files staged (SKIP_TTS mode — orchestrator handles audio + commit):**
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-19-anthropic-fable-5-back-ai-communism-walden-robotics-and-davidad-p-doom-5.md` (script, 3,547 spoken words)
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-19-anthropic-fable-5-back-ai-communism-walden-robotics-and-davidad-p-doom-5.rss-item.xml` (feed item stub with `__LENGTH__`/`__DURATION__` placeholders — parses as XML)
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-19-anthropic-fable-5-back-ai-communism-walden-robotics-and-davidad-p-doom-5.commit-msg` (commit message stub)
+=== 2026-07-19T02:47:17-07:00 done  jinglin-ai-pulse (exit 0) ===
