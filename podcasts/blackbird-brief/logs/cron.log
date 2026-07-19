@@ -824,3 +824,61 @@ All four artifacts are in place. This was a resumed run — the earlier attempts
 
 The orchestrator (`scripts/publish_pending.py`) will pick up the four artifacts on its next run — MP3 already present so no gap-fill needed; RSS insertion, R2 upload via `publish_episode.sh`, and single commit will proceed normally.
 === 2026-07-18T05:09:56-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-19T02:10:11-07:00 start blackbird-brief ===
+Episode files complete. Final summary log for cron.log follows:
+
+---
+
+## Blackbird Brief — 2026-07-19 (Sunday two-episode day) — final summary
+
+**Episode 1 — Sourcing Radar**
+- Script: `podcasts/blackbird-brief/scripts/2026-07-19-radar-jhu-fried-fibrous-proteins-looped-translation-umb-mint-hdx-docking.md`
+- Stubs: `.rss-item.xml` (parses OK), `.commit-msg` written (`Blackbird 2026-07-19: Radar — ...`).
+
+**Episode 2 — Portfolio Watch**
+- Script: `podcasts/blackbird-brief/scripts/2026-07-19-portfolio-watch.md`
+- Stubs: `.rss-item.xml` (parses OK), `.commit-msg` written (`Blackbird 2026-07-19: Portfolio Watch — ...`).
+
+SKIP_TTS=1 mode confirmed — no `gen_tts.py`, no `publish_episode.sh`, no feed edit, no commit. `publish_pending.py` will render both stubs and commit after batch TTS.
+
+### Sourcing Radar — candidate funnel
+
+**Search window:** 2026-07-15 through 2026-07-19. **Institutions:** JHU + UMB + Lieber Institute.
+
+bioRxiv/medRxiv (~600 records scanned across cancer, neuro, immuno, molecular biology, biochem, biophys, synbio, systems bio, cell bio, bioeng, pharm, genomics, physiology, microbiology, genetics, etc.):
+- Xie/Fried, "Synthesis of Ultra-Large Fibrous Proteins from Bacteria via a Looped-Translation System," bioRxiv 2026-07-17, DOI 10.64898/2026.07.16.738376 — **CHOSEN (LEAD, Pick 1).** Active JHTV patent filing declared in manuscript.
+- Lowe/Deredge/Freel Meyers, "MInt-HDX: Leveraging HDX-MS and Machine-Learning to Improve Protein-Ligand Docking," bioRxiv 2026-07-16, DOI 10.64898/2026.07.14.738285 — **CHOSEN (Pick 2).** Cross-institution UMB SoP + JHU SoM Pharmacology; COI clean = JHTV + UM Ventures joint provisional-filing window open.
+- Steiner/Kohr, perinatal heavy-metal pediatric cardiac transcriptome (JHU BSPH), bioRxiv 2026-07-17, DOI 10.64898/2026.07.11.737950 — DROPPED. Exposure-biomarker set, no direct IP / no target-nomination payload.
+- Liu/Leroux/Lindquist beta-binomial pain trials biostatistics (JHU BME + BSPH), bioRxiv 2026-07-18, DOI 10.64898/2026.05.07.721507 — DROPPED. Endpoint-methods tool; low direct IP.
+- Toska/Pagano NYU-led FOXA1-PBX1 interactomics (JHU coauthor), DOI 10.64898/2026.07.16.738938 — DROPPED. NYU-led IP.
+- Elisseeff/JHU cellular senescence bone-marrow aging on Guryanova U-Florida-led paper, DOI 10.64898/2026.07.16.736849 — DROPPED. U-Florida-led IP.
+- Chatterjee/JHU rare-variant burden on Baylor-led, DOI 10.64898/2026.07.13.26357993 — DROPPED. Genetics stats, no target.
+- Datta/Wu JHU cause-of-death multimodal benchmark, DOI 10.64898/2026.07.13.26357980 — DROPPED. Global-health ML.
+
+UMB corresponding-author bioRxiv search returned 4 hits, mostly citation-bibliography false positives (only Deredge MInt-HDX qualified). Lieber Institute search returned 4 hits, all false positives. Genuinely thin harvest for Baltimore-region translational preprints this weekend outside the two picks.
+
+No source-level failures. bioRxiv MCP + r.jina.ai reader-proxy for full text both healthy.
+
+### Portfolio Watch — items scanned / grouped
+
+**Window:** 2026-07-12 through 2026-07-19. **Sources:** FDA press, Fierce Biotech, Endpoints News, Fierce Pharma, STAT News, BioPharma Dive, Genengnews, company IR pages, JHU Hub.
+
+- Aletira / AAV regulatory: **FDA revokes Sarepta Elevidys AAVrh74 platform-technology designation** (first-ever; ALF fatalities driver) — CHOSEN as lead. **CBER OTP permanent-director search opens; applications due Monday July 21** — CHOSEN (regulatory-drift continuation). **Sensorion pivots SENS-501 OTOF → SENS-601 GJB2** — CHOSEN (competitor pivot; validates GJB2 white-space + SELEXON supporting-cell extension).
+- aSKY: **GSK closes Nuvalent acquisition $10.6B Tuesday July 15** (zidesamtinib Sept 18 PDUFA + neladalkib Nov 27 PDUFA) — CHOSEN. **Adventris/Zaidi mKRAS-VAX interception Cancer Discovery pub July 16** — CHOSEN (formalized cancer-interception thesis; already covered in Saturday Radar). **Elicio $15M registered direct offering July 2** — CHOSEN (competitor weakness signal, spillover from just outside window).
+- Lieber GPR52: **Nxera quiet on NXE'149** (earned separate $10M AbbVie GPCR milestone but no partnership update) — CHOSEN. **Kynexis KYN-5356 Ph2 Q4 no update** — CHOSEN. **No emraclidine + no Cobenfy news** — CHOSEN as tailwind aggregation.
+- Slusher GCPII: no new tulisokibart/obefazimod headlines in window — noted as stable. **Vera TRUTAKNA atacicept IgAN FDA approval July 7** — mentioned (spillover, autoimmune-approval-velocity validation).
+- RNA translation-activator: **Skyhawk FALCON-HD US/Canada/UK expansion** (>175pt, >10 countries, >20 sites) — CHOSEN. **CAMP4 routine inducement grant July 17** — mentioned (no material change).
+- 1104health: **Massive Bio launches TrialRelay** (OpenAI partnership; direct enrollment-orchestration category competition) — CHOSEN. **FDA RTCT pilot selection criteria late July + pilots August** — CHOSEN as action framing.
+- Ecosystem sourcing: **JHU LSRI initial proposal deadline hit July 15** — CHOSEN (Weeraratna committee; $80M/yr internal translational funding).
+
+No source failures. Web searches on Fierce/Endpoints/STAT/GSK/Sarepta/Sensorion IR healthy.
+
+### Portfolio memory updated
+
+`podcasts/blackbird-brief/memory/blackbird-portfolio.md`:
+- `_Last verified:_` header updated to 2026-07-19 with full Radar + Portfolio Watch summary.
+- New §2b entry: **"Fried lab JHU Chemistry looped-translation ultra-large-fibrous-protein biomanufacturing platform"** (active JHTV patent filing declared; second fully-incubated BioHub NewCo candidate model alongside Aletira).
+- New §2b entry: **"Deredge (UMB SoP) + Freel Meyers (JHU SoM Pharmacology) MInt-HDX cross-institution ML/HDX-MS docking platform"** (COI clean; open JHTV + UM Ventures joint provisional-filing surface; second cross-institution JHU + UMB computational-tools paper in <1 month alongside Popel-Fertig spatial-QSP PNAS 2026-07-14).
+
+Both Radar items chosen with full text read via `scripts/fetch_preprint.py` → r.jina.ai reader proxy (channel 1 succeeded on both bioRxiv preprints).
+=== 2026-07-19T02:31:00-07:00 done  blackbird-brief (exit 0) ===
