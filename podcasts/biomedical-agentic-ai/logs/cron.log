@@ -2635,3 +2635,31 @@ Paper: SemVac (bioRxiv 10.64898/2026.07.13.737696, posted 2026-07-17), from the 
 
 **Selection rationale**: SemVac is directly biomedical (vaccinology, Mpox proteome), LLM-heavy, tests an open-weight model competitively (Kimi K2 beats specialized PLGDL), and contains a counterintuitive methodological finding — chain-of-thought hurts precision in biology discovery — that is directly actionable for anyone building LLM-over-literature pipelines. That combination fits the show better than the ontology/foundation-model preprints whose bodies bioRxiv hadn't rendered yet, and beats the arXiv agentic-scaffold papers on biomedical directness.
 === 2026-07-19T02:11:34-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-20T02:00:14-07:00 start biomedical-agentic-ai ===
+Script + stubs written and XML validated. Since `SKIP_TTS=1` is set, I follow the batch-mode instructions: no TTS, no R2 publish, no feed edit, no commit — the orchestrator handles those after batch TTS completes.
+
+---
+
+Final summary — cron.log audit record
+
+**Commit**: deferred to orchestrator (SKIP_TTS=1).
+
+**Pick**: Medea — verification-first omics agent for therapeutic reasoning across biological contexts (bioRxiv v3, 2026-07-17). Marinka Zitnik lab (Harvard) + Trey Ideker lab (UCSD). Four modules (planning, execution, literature reasoning, consensus) with verification checks and calibrated abstention. ~5,679 analyses across target nomination / synthetic lethality / immunotherapy response; +46% / +22% / +24% over backbone LLM. Anti-leakage argument: unpublished yeast EMAP screen of 238,046 gene-gene pairs recovers experimentally measured hits.
+
+**Candidate funnel**:
+- bioRxiv (details API, 2026-07-17→2026-07-20): 412 total items, 353 unique across 14 paginated pages. Relevance-filter shortlist (agent / LLM / KG / ontology / autonomous keywords, discarding false positives):
+  - `10.64898/2026.01.16.696667v3` Medea: An AI agent for therapeutic reasoning across biological contexts — Zitnik + Ideker. **CHOSEN.**
+  - `10.64898/2026.07.14.738415v1` PrimeKG-Plus: literature-derived expansion of PrimeKG (LLM-assisted curation, rare neurological diseases). Strong but not agentic.
+  - `10.64898/2026.07.13.737696v1` SemVac — already shipped 2026-07-19.
+- arXiv (cached listing, /tmp/ai-nuggets-arxiv-cache.xml, 500 entries, biomedical + agentic filter): 74 hits. Top biomedical-relevant candidates:
+  - 2607.15544 EpiNarrate — agentic epi-narrative generation.
+  - 2607.15776 NeurOWL — neural-symbolic OWL ontology reasoning (biomedical relevance mentioned, not evaluated).
+  - 2607.15079v2 BrainPilot — multi-agent brain-science discovery, less compelling than Medea.
+  - 2607.15620 AEGIS — assay-aware protocol validation for OT-2 robots.
+  - 2607.15380 LLMs as unified multimodal learners for clinical prediction.
+- ChemRxiv: not queried in depth given strong bioRxiv candidate; noted as a gap in this run's funnel.
+- PubMed: not queried in depth; strong bioRxiv candidate on hand.
+- News / press / policy: `agentic AI biomedical July 2026` scan surfaced NVIDIA BioNeMo Agent Toolkit (BIO USA June), Autonomize Genie AI (Jul 7), Biomni — none newer than 3 days and none stronger than Medea.
+
+**Why Medea beat the others**: (1) it's a genuine agentic system evaluated on ~5,700 open-ended analyses, not a benchmark demo; (2) it explicitly targets the field's chronic context-slip failure mode with verification wired into planning/execution/consensus; (3) the unpublished yeast EMAP experiment is a real anti-leakage control that the rest of the biomedical-agent literature is not running; (4) fits the show's audience precisely — agentic AI + biomedical KG + tool-use + calibrated reasoning; (5) Zitnik lab was already flagged in the show's PROMPT as an anchor group.
+=== 2026-07-20T02:09:37-07:00 done  biomedical-agentic-ai (exit 0) ===

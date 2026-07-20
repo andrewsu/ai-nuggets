@@ -1,0 +1,4 @@
+Script body: 5434 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2837 chars) -> 135.6s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2596 chars) -> 124.0s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-07-20-medea-verification-first-omics-agent-yeast-synthetic-lethality.mp3 [mistral] 2,251,172 bytes, 281.4s
