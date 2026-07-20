@@ -882,3 +882,34 @@ No source failures. Web searches on Fierce/Endpoints/STAT/GSK/Sarepta/Sensorion 
 
 Both Radar items chosen with full text read via `scripts/fetch_preprint.py` → r.jina.ai reader proxy (channel 1 succeeded on both bioRxiv preprints).
 === 2026-07-19T02:31:00-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-20T02:10:14-07:00 start blackbird-brief ===
+All three artifacts in place. `SKIP_TTS=1` is set so the orchestrator handles audio, R2 publish, feed update, and commit.
+
+**The Blackbird Brief — Sourcing Radar 2026-07-20**
+
+Two peer-reviewed picks that both landed Thursday 2026-07-17 direct-to-final into top-tier journals:
+
+- **Pick 1 (LEAD)** — Yamauchi/Bosmans/**Brock** (JHU Sidney Kimmel + Ghent/VUB), *Sci Adv* 12(29):eaed3221, DOI 10.1126/sciadv.aed3221, PMID 42467787, PMCID PMC13378580 (OA). "A neurocutaneous NaV1.8 channelopathy underlies a genetic subtype of primary idiopathic hyperhidrosis." SCN10A p.R14L gain-of-function drives hereditary PIH in 18.8% of families; A-887826 rescues sweating ~70% in KI mice; AQP5 modifier as second target lane. **Two Blackbird commercial angles**: (a) genotype-stratified label-expansion for the Vertex/Latigo/Merck NaV1.8 class (JHTV IP on method+biomarker, not composition-of-matter); (b) JHTV-ownable AQP5 sweat-gland target NOT encumbered by Vertex/AbbVie.
+- **Pick 2** — Annis/Vitolo/**Martin** (UMB Greenebaum + Pharm/Physiol), *Breast Cancer Res* 28, DOI 10.1186/s13058-026-02346-0, PMID 42469948 (OA). "MCAM mediates microtentacle generation, homotypic clustering, and reattachment of non-adherent breast tumor cells." COI verbatim confirms UMB SoM owns patents on microtentacles + microfluidic cell tethering with Martin as inventor. Attaches existing UMB patent portfolio to MCAM/CD146 driver + FDA-approved vinorelbine repurposing hook in TNBC.
+
+## Candidate funnel
+
+- **bioRxiv 2026-07-17..19** (JHU/UMB/Lieber affiliation queries): ~40 items surveyed via jina-proxied search + MCP; 5 substantive candidates surfaced.
+- **PubMed 2026-07-15..19** (JHU/UMB/Lieber affiliation): 8 substantive candidates surfaced.
+- **Institutional newsrooms** (hub.jhu.edu, hopkinsmedicine.org/news, ventures.jhu.edu, umaryland.edu/news, libd.org): scanned; no additional standalone leads.
+
+Shortlist (post spurious-match filter):
+- ✅ **Brock/Bosmans NaV1.8/SCN10A hyperhidrosis** — Sci Adv 2026-07-17 (PMCID PMC13378580) — **PICKED LEAD**
+- ✅ **Martin MCAM/TetherChip TNBC** — Breast Cancer Res 2026-07-17 (OA) — **PICKED**
+- ❌ Radulescu/Weinberger LIBD SCZ neuron-oligodendroglia — Nat Commun 2026-07-16 (already covered 2026-07-17)
+- ❌ Haldar/Zaidi mKRAS-VAX Ph1 pancreatic interception — Cancer Discov 2026-07-16 (already covered 2026-07-18)
+- ❌ Wang/Shen EnzGFM enzyme PLM — Nat Commun 2026-07-17 (already covered 2026-07-18)
+- ❌ Zhang/Popel/Fertig HCC spatial QSP — PNAS 2026-07-14 (already covered 2026-07-15)
+- ❌ Nagy BACH1 macrophage plasticity — Immunity 2026-07-17 (Nagy at JHACH Florida, out of Baltimore remit; paywalled)
+- ❌ Celia/Fava PR3+ granulocytes lupus nephritis — Rheumatology 2026-07-17 (Cloudflare-blocked full text; abstract-only ineligible)
+- ❌ Woodward/Badjatia UMB Shock Trauma ML triage — Physiol Meas 2026-07-17 (paywalled, abstract-only ineligible)
+
+Sources surveyed: bioRxiv (jina-proxied search + MCP), medRxiv, PubMed (JHU/UMB/Lieber affiliation queries 2026-07-15..19), JHU Hub, Hopkins Medicine news, JHTV news, UMaryland news, LIBD news. No source-side failures.
+
+Memory updated: `podcasts/blackbird-brief/memory/blackbird-portfolio.md` header advanced with 2026-07-20 annotation (Brock lab + Martin lab added to §2b tracked-lab pipeline; Brock added to tracked-PI list; UM Ventures TetherChip patent-portfolio audit flagged as action item).
+=== 2026-07-20T02:34:39-07:00 done  blackbird-brief (exit 0) ===

@@ -5,7 +5,78 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-19 (Sunday two-episode day. **Sourcing Radar** — Pick 1 (LEAD)
+_Last verified: 2026-07-20 (Monday Sourcing Radar, two peer-reviewed picks that both landed
+Thursday 2026-07-17 direct-to-final into top-tier journals with no preprint runway. **Pick 1
+(LEAD, direct sourcing item)** — Yamauchi S first + Bosmans F co-senior (Ghent/VUB) + Brock MV
+senior corresponding (Departments of Surgery, Oncology, and Medicine + Sidney Kimmel
+Comprehensive Cancer Center, Johns Hopkins School of Medicine; mbrock1@jhmi.edu),
+*Science Advances* 12(29):eaed3221, 2026-07-17 (DOI 10.1126/sciadv.aed3221; PMID 42467787;
+**PMCID PMC13378580 open access**), "A neurocutaneous NaV1.8 channelopathy underlies a genetic
+subtype of primary idiopathic hyperhidrosis" — WES on 32 multigenerational hyperhidrosis
+families identifies SCN10A gain-of-function variants enriched at 18.8% cases vs 6.8% controls
+(p=0.0155-0.0249); lead variant p.R14L doubles NaV1.8 peak current density (52→106 pA/pF,
+P<0.01) with -9 mV hyperpolarizing activation V½ shift in ND7/23 + identical doubling in mouse
+NaV1.8; NaV1.8 co-localized with ChAT+ postganglionic cholinergic sudomotor neurons in human
+thoracic sympathetic ganglia; R14L knock-in mice sweat 48-50% more (iodine-starch), reciprocal
+C1288W LoF KI mice ~35% less. **Pharmacology:** NaV1.8-preferential inhibitor A-887826
+(10 mg/kg IP) rescues sweating by 68-70% both sexes; glycopyrrolate 72.8%, guanfacine 64.9%,
+CBD 53%; **translational caveat verbatim "clinically advanced human-optimized NaV1.8 inhibitor
+suzetrigine exhibits markedly reduced potency on mouse NaV1.8"** = mouse rescue does not
+automatically translate to Vertex Journavx. **AQP5 p.A193V surfaces as sweat-gland-level
+modifier** (accelerated osmotic swelling + highly pronounced permeability change at 72h,
+P<0.0001) = second druggable target lane distal to sympathetic-neuron NaV1.8 axis. COI: no
+competing interests declared; funding NIH R01NS126398 + 3UM1HG006542 + FWO Vlaanderen + Horizon
+Europe MSCA-DN + AHA + Dysautonomia International + Banks Family Foundation. **Blackbird
+commercial lanes:** (a) genotype-stratified label-expansion for Vertex suzetrigine (Journavx,
+approved acute post-surgical pain + chronic-neuropathic-pain running) + Latigo Ph1 NaV1.8
+blocker + Merck LTG-001 — R14L carrier population is Ph2 enrichment substrate (~200pt,
+iodine-starch/gravimetry endpoint); tuck-in-indication conversation for Vertex/Latigo/Merck.
+**NaV1.8 composition-of-matter is Vertex + AbbVie owned; JHU/JHTV IP is on the
+genotype-stratification method + biomarker patient-selection algorithm side.** (b) **AQP5
+sweat-gland second-target lane** NOT encumbered by Vertex/AbbVie composition-of-matter =
+JHTV-ownable target-directed IP around AQP5 modulators in eccrine hyperhidrosis + potentially
+xerostomia (salivary) + lacrimal-gland indications on LoF end. Malcolm Brock runs the JHU
+thoracic-sympathectomy clinical program with direct access to the hereditary-hyperhidrosis
+patient cohort that would enroll into any genotype-stratified Ph2 = diligence-legible clinical
+asset alongside the mechanistic biology. Added as new §2b "Brock lab NaV1.8/SCN10A + AQP5
+hereditary hyperhidrosis platform (JHU SoM Surgery + Oncology + Medicine + Sidney Kimmel CCC,
+with Bosmans Ghent/VUB electrophysiology partnership)" entry; Brock added to tracked-PI list.
+**Pick 2** — Annis DA first + Vitolo MI co-senior corresponding + Martin SS senior corresponding
+(Marlene & Stewart Greenebaum NCI Comprehensive Cancer Center + Department of Pharmacology and
+Physiology + Graduate Program in Molecular Medicine, UMB School of Medicine;
+ssmartin@som.umaryland.edu), *Breast Cancer Research* 28, 2026-07-17 (DOI
+10.1186/s13058-026-02346-0; PMID 42469948; **CC-BY-NC-ND 4.0 open access via BioMed Central**),
+"Melanoma cell adhesion molecule (MCAM) mediates microtentacle generation, homotypic
+clustering, and reattachment of non-adherent breast tumor cells" — MCF-10A OE + CRISPR MCAM-KO
+in TNBC lines: MCAM upregulates vimentin + α-tubulin acetylation (microtubule-stabilization PTM
+signature) + microtentacle (McTN) protrusions + homotypic cell clustering + reattachment on
+TetherChip + migration on xCelligence RTCA; all phenotypes reverse in MCAM-KO. **FDA-approved
+vinorelbine (vinca-alkaloid microtubule agent, on-market generic for NSCLC) blocks all
+MCAM-driven microtentacle-supported phenotypes** = repurposing hypothesis testable with
+on-formulary compound; mechanism bridge is MCAM→microtubule cytoskeleton stabilization.
+**COI verbatim: "The University of Maryland School of Medicine owns patents on the subject of
+microtentacles and microfluidic cell tethering that list one of the authors on the current
+manuscript (Stuart S. Martin) as an inventor."** Funding: METAvivor Foundation; NIH R01-CA154624
++ R01-CA124704 (Martin); NCI T32CA154274; NIGMS T32GM008181; Greenebaum P30-CA134274; MD
+Cigarette Restitution Fund CH-649-CRF. **Blackbird commercial threads:** (a) **TetherChip
+microfluidic-cell-tethering platform** as licensable anti-metastatic drug-screening substrate —
+competitive landscape Angle PLC Parsortix + Menarini Silicon Biosystems CellSearch (both
+enumeration only, do not resolve cluster/reattachment biology); TetherChip is substrate for
+anti-metastatic-drug screening, defensible category; UMB ownership on the record. (b) **MCAM/
+CD146 as anti-metastatic biologic target in TNBC** — existing antibody landscape via Prothena
+in melanoma but no current commercial program has microtentacle-cluster-reattachment mechanism
+as anchor thesis in TNBC subset; target-directed conversation for UM Ventures × Blackbird
+co-investment track. (c) **Vinorelbine repurposing in MCAM-high TNBC** — window-opener
+investigator-initiated Ph2 at Greenebaum with TetherChip as PD biomarker builds
+MCAM-anti-metastatic story on human formulary-drug economics. Not new IP — Martin lab has been
+building around microtentacle biology + TetherChip for a decade — but first paper attaching the
+patent portfolio to a defined molecular driver (MCAM), a defined disease (TNBC), and a
+repurposable FDA-approved drug (vinorelbine). Added as new §2b "Martin lab UMB Greenebaum
+microtentacle + TetherChip anti-metastatic platform in TNBC via MCAM/CD146 driver" entry;
+Martin added to UM Ventures × Blackbird co-investment surface tracked-lab list; UM Ventures
+existing-patent-portfolio audit conversation on TetherChip + microtentacle claim scope +
+open licensing status flagged as action item for Yixuan/Avi.
+Previously verified 2026-07-19 (Sunday two-episode day. **Sourcing Radar** — Pick 1 (LEAD)
 Xie Q first + Fried SD senior corresponding, JHU Department of Chemistry (with Shoulders MD MIT
 Chemistry as transcript-engineering collaborator), *bioRxiv* v1 2026-07-17 (DOI
 10.64898/2026.07.16.738376), "Synthesis of Ultra-Large Fibrous Proteins from Bacteria via a

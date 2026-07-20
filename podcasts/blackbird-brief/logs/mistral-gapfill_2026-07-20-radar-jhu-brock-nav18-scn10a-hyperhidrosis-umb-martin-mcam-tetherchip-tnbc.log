@@ -1,0 +1,9 @@
+Script body: 17559 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/7 (2866 chars) -> 154.1s ✓
+  [mistral:en_paul_neutral] chunk 2/7 (2989 chars) -> 135.6s ✓
+  [mistral:en_paul_neutral] chunk 3/7 (2995 chars) -> 166.0s ✓
+  [mistral:en_paul_neutral] chunk 4/7 (2910 chars) -> 132.5s ✓
+  [mistral:en_paul_neutral] chunk 5/7 (2656 chars) -> 132.9s ✓
+  [mistral:en_paul_neutral] chunk 6/7 (2960 chars) -> 150.9s ✓
+  [mistral:en_paul_neutral] chunk 7/7 (176 chars) -> 7.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/blackbird-brief/episodes/2026-07-20-radar-jhu-brock-nav18-scn10a-hyperhidrosis-umb-martin-mcam-tetherchip-tnbc.mp3 [mistral] 7,476,706 bytes, 934.6s
