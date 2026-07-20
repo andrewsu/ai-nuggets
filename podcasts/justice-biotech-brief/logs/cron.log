@@ -1372,3 +1372,33 @@ Stubs written. Now the final summary for cron.log.
 
 **Not committed** — orchestrator (`scripts/publish_pending.py`) will run batch TTS, publish to R2, insert the RSS item into `feed.xml`, and commit after all shows finish today's runs.
 === 2026-07-19T02:55:47-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-20T02:40:14-07:00 start justice-biotech-brief ===
+Script written, both stubs in place, XML parses. Under `SKIP_TTS=1` I stop here — orchestrator handles TTS batching, R2 publish, feed update, and commit.
+
+**Today's pick: AK146D1 (TROP2 × Nectin-4 bispecific ADC) + ivonescimab, Phase 2 first patient dosed 2026-07-20 (Akeso AK146D1-201).**
+
+Candidate funnel:
+
+- bioRxiv (2026-07-19 → 2026-07-20 window): scanned 381 unique preprints across 3 API pages; 12 strong-keyword matches after weeding out short-token false positives (`til`, `bite` inside unrelated words).
+  - Substantive shortlist:
+    - Engineered endothelial cell grafts + CAM tumor model with tarlatamab TCE — preclinical model paper, bioengineering, 2026-07-17
+    - ITPKB constrains NK antitumor immunity — 2026-07-17, immunology (CAR-NK adjacent)
+    - Dynamic Raman monitoring of CAR-T identity — 2026-07-18, bioengineering v2 update
+    - Inflammatory arthritis disrupts ocular immune privilege — 2026-07-17, autoimmune
+    - Pan-cancer NETs immunothrombosis scoring — 2026-07-17
+    - Weight loss + adipose dendritic cells / costimulation — 2026-07-17
+    - Integrating activation-induced costim + cytokine (DSR) — already shipped 2026-07-19; excluded
+    - Medea AI therapeutic reasoning — already shipped by biomedical-agentic-ai today; excluded
+- News / press (2026-07-19 → 2026-07-20, ~48h): scanned Fierce Biotech / Endpoints / STAT / BioSpace / PRN wire / Bloomberg / regional.
+  - Substantive shortlist:
+    - **Akeso AK146D1 + ivonescimab Ph2 first patient dosed (2026-07-20)** — CHOSEN
+    - Kyverna miv-cel autoimmune CAR-T BLA path in stiff person syndrome — BioSpace, 2026-07-20 (strong B-option)
+    - Samsung Biologics $1.8B all-cash tender for PolyPeptide — 2026-07-19 (immunology-thin)
+    - BreezeBio × LigaChem mRNA cancer vaccine R&D deal — 2026-07-20
+    - Antengene ATG-022 (CLDN18.2 ADC) + ATG-037 (oral CD73) ESMO 2026 abstracts announced — 2026-07-20
+    - Neuronata-R conditional approval retained in South Korea (ALS) — 2026-07-19 (peripheral)
+- ARPA-H / NIH / NSF: no items landing in the 48h window that meet the audience filter.
+- No source-level failures this run.
+
+Why AK146D1 wins over Kyverna miv-cel: the Kyverna BLA-timing feature is a strong autoimmune-CAR-T narrative but reports on-track pathway rather than a today-datable event; the Akeso announcement is a same-day first-patient-dosed with a genuinely first-of-its-kind design (bispecific ADC on top of a bispecific IO backbone) that lands directly on all three of Justice's stated top interests — VEGF×PD-L1/PD-1 bispecifics, bispecific TCE-adjacent design geometry, and ADC platform news — in a single molecule pairing.
+=== 2026-07-20T02:53:03-07:00 done  justice-biotech-brief (exit 0) ===

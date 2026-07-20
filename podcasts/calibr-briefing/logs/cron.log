@@ -2402,3 +2402,48 @@ Weekend brief. Yesterday (July 18) covered the July 17 Friday news bucket (Novar
 **Picked for headlines:** Insmed TPIP (lead) + SonoThera STAT profile + enGene detalimogene + Veradermics VDPHL01 + InnoCare soficitinib.
 **Picked for spotlight:** SonoThera — richest modality-thesis narrative with ARCH/Foresite-adjacent investor read-across and 18-24 month resolution window before 2027 DMD first-in-human.
 === 2026-07-19T02:41:29-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-20T02:20:14-07:00 start calibr-briefing ===
+Both stub XMLs parse cleanly. Now the final summary logged to cron.log (per PIPELINE.md).
+
+Today's Calibr briefing — two episodes drafted for Monday July twentieth, twenty twenty-six.
+
+**Headlines** — `2026-07-20-pharma-headlines.txt` — five items led by Monday's BioSpace feature on Kyverna Therapeutics' path to first-FDA-approved autoimmune CAR-T (miv-cel rolling BLA in stiff-person syndrome, RMAT + priority-review, Q4 2026 completion, KYSA-8 pivotal Ph2 n=26 median 46% T25FW p=0.0003, 100% off chronic immunotherapies), followed by BioSpace T1D disease-modifying-therapy landscape post-Tzield, Otsuka centanafadine PDUFA Fri Jul 24 first-in-class NDSRI for ADHD, Jasper-Kira complement all-stock merger + $132M PIPE, and STAT News LifeMD-Novo telehealth-obesity investigation.
+
+**Spotlight** — `2026-07-20-kyverna-autoimmune-cart-spotlight.txt` — deep dive on Kyverna's miv-cel path to first-FDA-approved autoimmune CAR-T; KYSA-8 pivotal data in stiff-person syndrome + KYSA-6 gMG Ph2 52-wk + early progressive-MS data + competitive landscape vs Cabaletta rese-cel and in-vivo peers (Capstan, Create Medicines, Umoja) + differentiation vs Amgen/JnJ/AZ-Alexion/argenx gMG franchise + strategic read for Foresite portfolio positioning on ex-vivo autologous autoimmune CAR-T thesis.
+
+**SKIP_TTS mode** — `SKIP_TTS=1` is exported; per PIPELINE.md I wrote each script plus its `.rss-item.xml` stub (with `__LENGTH__` and `__DURATION__` placeholders) and `.commit-msg` stub, and did NOT call `gen_tts.py`, `publish_episode.sh`, edit `feed.xml`, or run `git add`/`git commit`. The orchestrator (`scripts/publish_pending.py`) will handle publish + commit after batch TTS finishes on Garibaldi.
+
+## Candidate funnel
+
+**Sources scanned:**
+- STAT News (via WebFetch of `statnews.com/2026/07/20/`) — 4 articles scanned, 1 substantive biotech (LifeMD investigation)
+- BioSpace `/news` — 2 items dated Mon Jul 20 (Kyverna feature + T1D landscape), both substantive
+- BioPharma Dive homepage — nothing new past Jul 16
+- Fierce Biotech / Fierce Pharma — HTTP 403 direct, backfilled via search
+- Endpoints News — HTTP 403 direct
+- Pharma Letter, BioSpace, GlobeNewswire — via search
+- WebSearch on ~15 targeted queries covering July 17-20 news, deals, PDUFA calendar, and specific companies (Kyverna, Cabaletta, Jasper-Kira, Otsuka centanafadine, Sanofi Tzield, SAB Bio, Eledon, Vertex zimislecel, Sana Biotech, Fabhalta, GSK camlipixant, Takeda zasocitinib, AZ-Dizal, Kelun-Biotech)
+
+**Substantive shortlist (after discarding items already shipped Jul 17/18/19):**
+- Kyverna Therapeutics feature (BioSpace Mon Jul 20, Annalee Armstrong) — first-autoimmune-CAR-T-BLA + KYSA-8 SPS + KYSA-6 gMG + MS **[CHOSEN — spotlight + headline #1]**
+- Type-1-diabetes pipeline landscape (BioSpace Mon Jul 20, Michael Gibney) — Tzield/SAB-142/tegoprubart/zimislecel/Sana **[CHOSEN — headline #2]**
+- Otsuka centanafadine PDUFA Fri Jul 24 — first-in-class NDSRI for ADHD **[CHOSEN — headline #3]**
+- Jasper-Kira all-stock acquisition complete Thu Jul 16 + $132M PIPE — KP-104 bifunctional complement + briquilimab + KP-701 **[CHOSEN — headline #4]**
+- STAT News LifeMD-Novo Nordisk Wegovy telehealth investigation (Mon Jul 20, Elaine Chen) **[CHOSEN — headline #5]**
+- Vertex povetacicept PDUFA Nov 30 (old — Jun 1 BLA acceptance) — deferred, prior coverage
+- Vertex-Crinetics $10B closing — old (Jul 6)
+- AstraZeneca-Dizal Zegfrovy $1.5B (Jul 14) — deferred, prior news window
+- Rani Therapeutics-PegBio oral obesity collaboration — thin
+- GSK camlipixant / Insmed TPIP OLE / Fabhalta full approval / Takeda zasocitinib PsO / Mission-Dimerix MTX652 / enGene board / Veradermics VDPHL01 / InnoCare soficitinib vitiligo — all already shipped Thu-Sat Jul 17/18/19
+
+Sources:
+- [BioSpace: Kyverna feature](https://www.biospace.com/business/how-kyverna-rode-car-ts-autoimmune-wave-to-the-fdas-door)
+- [BioSpace: T1D pipeline landscape](https://www.biospace.com/drug-development/type-1-diabetes-pipeline-making-remarkable-progress-toward-insulin-independence)
+- [STAT News: LifeMD/Novo Nordisk investigation](https://www.statnews.com/2026/07/20/)
+- [Kyverna rolling BLA initiation (May 12)](https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-therapeutics-announces-initiation-rolling-sps-bla)
+- [Kyverna KYSA-8 AAN primary analysis](https://ir.kyvernatx.com/news-releases/news-release-details/kyverna-presents-registrational-trial-primary-analysis-miv-cel)
+- [Otsuka centanafadine PDUFA July 24](https://www.medicaldaily.com/centanafadine-fda-decision-july-24-2026-adhd-non-stimulant-children-adults-otsuka-476083)
+- [Jasper–Kira all-stock merger](https://www.globenewswire.com/news-release/2026/07/16/3328849/0/en/jasper-therapeutics-announces-merger-with-kira-pharmaceuticals.html)
+- [Sanofi Tzield June 2026 stage-3 approval](https://www.drugs.com/newdrugs/sanofi-s-tzield-approved-u-s-delay-onset-stage-3-type-1-diabetes-young-children-6768.html)
+- [Cabaletta 2027 rese-cel BLA guidance](https://www.cabalettabio.com/investors/news-events/press-releases/detail/128/cabaletta-bio-announces-2027-rese-cel-bla-submission)
+=== 2026-07-20T02:49:24-07:00 done  calibr-briefing (exit 0) ===

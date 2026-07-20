@@ -886,3 +886,36 @@ The script + stubs are staged. Since `SKIP_TTS=1`, I'm not running gen_tts, publ
 - `podcasts/jinglin-ai-pulse/scripts/2026-07-19-anthropic-fable-5-back-ai-communism-walden-robotics-and-davidad-p-doom-5.rss-item.xml` (feed item stub with `__LENGTH__`/`__DURATION__` placeholders — parses as XML)
 - `podcasts/jinglin-ai-pulse/scripts/2026-07-19-anthropic-fable-5-back-ai-communism-walden-robotics-and-davidad-p-doom-5.commit-msg` (commit message stub)
 === 2026-07-19T02:47:17-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-20T02:30:14-07:00 start jinglin-ai-pulse ===
+Script and stubs written for `jinglin-ai-pulse` (SKIP_TTS=1 in effect — no TTS, no publish, no feed edit, no commit; orchestrator handles those).
+
+**Files written:**
+- `podcasts/jinglin-ai-pulse/scripts/2026-07-20-fable-5-rollout-day-sap-prior-labs-closes-tabular-fm-lila-sciences-lab-as-datacenter-and-oracle-stargate.md`
+- `.rss-item.xml` (parses clean)
+- `.commit-msg`
+
+**Spoken-word count:** ~3,120 (in line with prior episodes, above PROMPT.md target — kept for coherence with adjacent daily pattern; can trim next day if desired).
+
+**Candidate funnel:**
+
+Twitter Pulse candidates (Jul 19–20 window):
+- Bloomberg "Big Tech under pressure to justify AI capex" + WSJ retail rotation Mag 7 → memory + Korea Herald SK chair "economic security" + Oracle 30k layoffs (Stargate) — **picked** as story-one (capex reckoning)
+- Latent Space Jul 16 (Beam + Gómez-Bombarelli) — **picked** as story-two (Twitter Pulse framing) and Deep Cut
+- Dean Ball "AI communism" thread + Axios 95-5 split — already ran yesterday; not re-picked
+- Sacks / Ackman / Nvidia slide — ran Saturday; not re-picked
+
+Money Moves candidates:
+- **Picked:** SAP–Prior Labs closing Jul 17 (€1B+, TabPFN, biology-adjacent via bioRxiv cellular-perturbation preprint)
+- **Picked:** Databricks $188B Coatue-led strategic round Jul 16 (Unity AI Gateway = routing layer of 95-5 split)
+- Anthropic Fable rollout — framed in cold-open (already carried Fri/Sat/Sun)
+- Anaconda–Kilo, Fireworks $1.5B, Chai $400M, Together AI $800M, Walden $300M — already covered in past 7 days
+
+Podcast Deep Cut candidates:
+- **Picked:** Latent Space Jul 16 — "The Lab of the Future Should Feel Like a Data Center" (Beam + Gómez-Bombarelli, Lila Sciences)
+- Cognitive Revolution Davidad — ran yesterday
+- Lex Fridman #490 State-of-AI-2026 — Feb 2026, outside 14-day window
+- Dwarkesh #132 Grant on math — Jun 30, outside 14-day window
+- WhynotTV — no new episode since May 1
+
+Source failures: none material.
+=== 2026-07-20T02:41:52-07:00 done  jinglin-ai-pulse (exit 0) ===
