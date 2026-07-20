@@ -103,7 +103,7 @@ CATCHUP_SPAWNED=0
 audit_on_exit() {
   local rc=$?
   if [ "${CATCHUP_SPAWNED:-0}" -eq 0 ]; then
-    "$REPO/scripts/run_daily_audit.sh" >> "$REPO/logs/audit.log" 2>&1 || true
+    AUDIT_FROM_PIPELINE=1 "$REPO/scripts/run_daily_audit.sh" >> "$REPO/logs/audit.log" 2>&1 || true
   fi
   return "$rc"
 }
@@ -270,7 +270,9 @@ spawn_catchup() {
     # Fire the daily audit now that Phase 3 for the deferred set is done.
     # run_daily_audit.sh is idempotent (marker-gated) so this is a no-op
     # if the 09:00 backstop cron or an earlier fire already sent it.
-    "$REPO/scripts/run_daily_audit.sh" >> "$REPO/logs/audit.log" 2>&1 || true
+    # AUDIT_FROM_PIPELINE=1 opts out of the in-progress pgrep gate — we
+    # ARE the pipeline, and the parent run_all_shows.sh is still alive.
+    AUDIT_FROM_PIPELINE=1 "$REPO/scripts/run_daily_audit.sh" >> "$REPO/logs/audit.log" 2>&1 || true
   ) &
   disown
   CATCHUP_SPAWNED=1
@@ -297,7 +299,7 @@ run_show() {
   for attempt in 1 2 3 4 5 6; do
     case "$attempt" in
       1|2) model_arg="" ;;
-      3|4) model_arg="--model claude-sonnet-4-6" ;;
+      3|4) model_arg="--model claude-sonnet-5" ;;
       5|6) model_arg="--model claude-haiku-4-5-20251001" ;;
     esac
     tag=""

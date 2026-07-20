@@ -76,10 +76,12 @@ Fetch order by source type:
     3. `api.biorxiv.org` metadata + abstract — always reachable
        (API subdomain isn't behind Cloudflare), but body-less.
   When the helper falls through to channel 3 it prints a note to stderr
-  saying so. Treat that as "abstract-only" per the depth rules above —
-  prefer dropping the item unless it's a clearly dominant pick. A common
-  abstract-only case is a preprint posted in the last ~12–36h: bioRxiv
-  hasn't finished rendering the body HTML yet. Use the DOI prefix the
+  saying so. That means full text is unavailable, so the item is not
+  eligible today (see "Full text is an eligibility gate" below) — defer it
+  and pick something whose body you can read. A common cause is a preprint
+  posted in the last ~12–36h: bioRxiv hasn't finished rendering the body
+  HTML yet, so re-check it on a later day rather than dropping it for good.
+  Use the DOI prefix the
   details API returned (`10.1101/` vs. `10.64898/`; see "Paper-link URLs"
   below) — a wrong prefix yields "no record for this DOI" from every
   channel.
@@ -95,16 +97,32 @@ Fetch order by source type:
   any linked technical companion — white paper, GitHub README, model
   card, system card, accompanying preprint.
 
-If the full text is genuinely unobtainable for a pick that requires
-it, prefer **dropping the item and using the next-best candidate**
-over a summary that may misread the work. The exception is a clearly
-dominant item with no close runner-up — in that case, say so in the
-script in one short phrase (e.g., "going off the abstract here — the
-preprint is request-only") so the listener knows the depth of the
-take.
+**Full text is an eligibility gate, not a disclosure.** An item whose
+full text you cannot read is **not eligible to be selected** for a pick
+that requires full text — there is no "go off the abstract but tell the
+listener" escape hatch anymore, not even for a clearly dominant item.
+Drop it and use the next-best candidate whose full text you *can* read.
+Never ship a summary of a paper you only read the abstract of.
 
-Note in the candidate funnel which items you opened in full vs.
-abstract-only, and which fetches hit auth walls.
+Distinguish two reasons full text is unavailable, because they have
+different consequences for future days:
+
+- **Not yet available (transient).** The most common case is a preprint
+  posted in the last ~12–36h whose body HTML bioRxiv hasn't finished
+  rendering (the helper falls through to channel 3). This is a *deferral*,
+  not a rejection. The item is ineligible **today** but remains a live
+  candidate on subsequent days, and becomes eligible the moment its full
+  text renders. Do **not** treat "was abstract-only yesterday" as a reason
+  to exclude it later — re-check it and pick it up once the body is
+  readable. See the recency carve-out in the show's PROMPT.md.
+- **Genuinely unobtainable (permanent).** Auth wall with no preprint,
+  request-only preprint, retracted/withdrawn source. These will not
+  improve on a later day; drop the item and move on.
+
+Note in the candidate funnel which items you opened in full vs. which
+were deferred for lack of available full text (and why — not-yet-rendered
+vs. auth wall vs. request-only), so a deferred-but-promising item is easy
+to spot and revisit on a later day.
 
 ## Writing for audio
 
@@ -116,6 +134,15 @@ look fine on a page can be useless or actively annoying when spoken.
 - **No tables, bullet lists, or markdown structure in the spoken portion.**
   Use prose with natural transitions ("first", "the second thing", "one
   caveat").
+- **No pseudo-headings at the start of paragraphs.** The generator has
+  drifted into opening paragraphs with a one-word or short-phrase label —
+  "Framing.", "Case study.", "Architecture.", "The catch." — as an inline
+  section header. Read aloud, that lands as an abrupt, stilted announcement
+  with no grammatical connection to what follows. Cut the label and open
+  with a real sentence, or fold the idea into the sentence itself: not
+  "Architecture. The system runs three agents..." but "The architecture is
+  where it gets interesting — three agents...". The listener should never
+  be able to tell where a heading used to be.
 - **Spell out or rephrase anything that's hard to say.** Greek letters,
   unusual symbols, chemical formulas, alphanumeric identifiers, ticker
   symbols, dollar amounts — read them the way a human would say them, not

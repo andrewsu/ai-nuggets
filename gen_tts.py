@@ -30,6 +30,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import time
 
 import requests
 
@@ -38,6 +39,11 @@ from lib.show import load as load_show
 MISTRAL_URL = "https://api.mistral.ai/v1/audio/speech"
 MISTRAL_CHUNK_MAX = 3000
 CHUNK_RETRIES = 2
+# 429s from Mistral don't count against CHUNK_RETRIES — a rolling rate-limit
+# window can persist minutes past its trigger, so we let it retry as long as
+# real progress is being made. Cap the total wait per chunk defensively.
+RATE_LIMIT_MAX_ATTEMPTS = 8
+RATE_LIMIT_DEFAULT_WAIT = 60
 
 VOXTRAL_DEFAULT_URL = "http://localhost:8000/v1/audio/speech"
 # Voxtral's AR decoder accumulates conditioning drift in long generations
@@ -277,20 +283,45 @@ def synthesize_chunks(chunks, synth_fn, label):
     for i, chunk in enumerate(chunks):
         min_dur = len(chunk) / MAX_CHARS_PER_SECOND
         last_err = None
-        for attempt in range(1, CHUNK_RETRIES + 2):
+        attempt = 0
+        rate_limit_hits = 0
+        while attempt < CHUNK_RETRIES + 1:
+            attempt += 1
+            audio = None
             try:
                 audio = synth_fn(chunk)
-                dur = mp3_bytes_duration(audio)
-                if dur < min_dur:
-                    last_err = f"chunk duration {dur:.1f}s < floor {min_dur:.1f}s (likely truncated)"
-                    print(f"  [{label}] chunk {i+1}/{len(chunks)} attempt {attempt} FAILED: {last_err}")
+            except requests.HTTPError as e:
+                resp = getattr(e, "response", None)
+                if resp is not None and resp.status_code == 429:
+                    rate_limit_hits += 1
+                    if rate_limit_hits > RATE_LIMIT_MAX_ATTEMPTS:
+                        raise RuntimeError(
+                            f"{label} chunk {i+1} still 429 after {rate_limit_hits} attempts"
+                        ) from e
+                    try:
+                        wait = int(resp.headers.get("Retry-After", RATE_LIMIT_DEFAULT_WAIT))
+                    except (TypeError, ValueError):
+                        wait = RATE_LIMIT_DEFAULT_WAIT
+                    print(f"  [{label}] chunk {i+1}/{len(chunks)} 429 rate-limited "
+                          f"(hit {rate_limit_hits}/{RATE_LIMIT_MAX_ATTEMPTS}); sleeping {wait}s")
+                    time.sleep(wait)
+                    attempt -= 1  # a 429 doesn't consume a retry slot
                     continue
-                print(f"  [{label}] chunk {i+1}/{len(chunks)} ({len(chunk)} chars) -> {dur:.1f}s ✓")
-                parts.append(audio)
-                break
+                last_err = str(e)
+                print(f"  [{label}] chunk {i+1}/{len(chunks)} attempt {attempt} error: {e}")
+                continue
             except Exception as e:
                 last_err = str(e)
                 print(f"  [{label}] chunk {i+1}/{len(chunks)} attempt {attempt} error: {e}")
+                continue
+            dur = mp3_bytes_duration(audio)
+            if dur < min_dur:
+                last_err = f"chunk duration {dur:.1f}s < floor {min_dur:.1f}s (likely truncated)"
+                print(f"  [{label}] chunk {i+1}/{len(chunks)} attempt {attempt} FAILED: {last_err}")
+                continue
+            print(f"  [{label}] chunk {i+1}/{len(chunks)} ({len(chunk)} chars) -> {dur:.1f}s ✓")
+            parts.append(audio)
+            break
         else:
             raise RuntimeError(f"{label} chunk {i+1} failed after retries: {last_err}")
     return parts

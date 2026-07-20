@@ -16,7 +16,7 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=32gb
 #SBATCH --gres=gpu:1
-#SBATCH --time=00:45:00
+#SBATCH --time=01:00:00
 #SBATCH --output=logs/tts-batch_%j.out
 #SBATCH --error=logs/tts-batch_%j.err
 
@@ -52,10 +52,22 @@ cleanup() {
 }
 trap cleanup EXIT
 
-# Wait for /v1/models 200. Cold-load takes ~5-7 min.
+# Wait for /v1/models 200. Cold-load is dominated by two things:
+#   (1) weight+torch.compile warmup: 5-8 min hot, ~10-12 min cold-GPFS.
+#   (2) vllm_omni's own orchestrator startup_timeout, hardcoded at 600s in
+#       async_omni_engine.py:271 (init_timeout default). If Stage 1 hasn't
+#       finished its init handshake within 600s of the orchestrator thread
+#       starting, the APIServer self-terminates with TimeoutError regardless
+#       of how patient this outer loop is. The 2026-07-20 cold run tripped
+#       this at t+13min: Stage 1 was ~90s from ready when the 600s cliff hit.
+#       To lift it, pass `--init-timeout 1200 --stage-init-timeout 600` to
+#       `vllm serve` above — but verify those flags on this vllm_omni build
+#       first (`vllm serve --help | grep timeout` on a compute node).
+# Outer window here is deliberately generous (30 min) so a slow-GPFS morning
+# doesn't fail *this* loop before vLLM has a chance to fail its inner one.
 echo "=== waiting for vLLM /v1/models ==="
 READY=0
-for i in $(seq 1 90); do
+for i in $(seq 1 180); do
   CODE=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 5 "http://127.0.0.1:$PORT/v1/models" 2>/dev/null || echo 000)
   if [ "$CODE" = "200" ]; then
     echo "[t+$((i*10))s] vLLM ready"
@@ -64,7 +76,7 @@ for i in $(seq 1 90); do
   sleep 10
 done
 if [ "$READY" != "1" ]; then
-  echo "ERROR: vLLM never became ready within 15 min" >&2
+  echo "ERROR: vLLM never became ready within 30 min" >&2
   tail -30 "logs/vllm_$SLURM_JOB_ID.err" >&2 || true
   exit 1
 fi
