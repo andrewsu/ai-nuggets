@@ -1,0 +1,9 @@
+ERROR: forced provider mistral failed: mistral:en_paul_neutral chunk 5 failed after retries: 429 Client Error: Too Many Requests for url: https://api.mistral.ai/v1/audio/speech
+Script body: 18255 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/7 (2918 chars) -> 136.6s ✓
+  [mistral:en_paul_neutral] chunk 2/7 (2983 chars) -> 151.5s ✓
+  [mistral:en_paul_neutral] chunk 3/7 (2744 chars) -> 142.4s ✓
+  [mistral:en_paul_neutral] chunk 4/7 (2857 chars) -> 160.1s ✓
+  [mistral:en_paul_neutral] chunk 5/7 attempt 1 error: 429 Client Error: Too Many Requests for url: https://api.mistral.ai/v1/audio/speech
+  [mistral:en_paul_neutral] chunk 5/7 attempt 2 error: 429 Client Error: Too Many Requests for url: https://api.mistral.ai/v1/audio/speech
+  [mistral:en_paul_neutral] chunk 5/7 attempt 3 error: 429 Client Error: Too Many Requests for url: https://api.mistral.ai/v1/audio/speech
