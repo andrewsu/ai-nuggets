@@ -5,7 +5,61 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-20 (Monday Sourcing Radar, two peer-reviewed picks that both landed
+_Last verified: 2026-07-21 (Tuesday Sourcing Radar — DRY PREPRINT WEEK. Full bioRxiv/medRxiv
+sweep of the 2026-07-17→21 window returned NO JHU/UMB/Lieber corresponding-author preprint with
+a commercializable asset (only strictly-qualifying in-window JHU-corresponding preprint was
+John K. Kim JHU Biology C. elegans FOXO/DAF-16 dauer developmental biology, 10.64898/2026.07.18.739353,
+no drug hook). JHU-collaborator-but-corresponding-elsewhere items logged: FOXA1–PBX1 pioneer complex
+in ER+ breast cancer (corr. Pagano NYU; JHU co-author Eneda Toska; 10.64898/2026.07.16.738938);
+RBM20 E-domain-variant DCM not rescued by gene replacement (corr. Parikh Stanford; JHU co-author
+C.A. James; negative de-risking result; 10.64898/2026.07.13.738343); ORC–HP1 heterochromatin IDR
+(corr. Botchan Berkeley; JHU co-author James Berger). Single peer-reviewed lead — a Baltimore
+COMPANY, not a paper. **Pick 1 (LEAD, regional company + platform sourcing lead)** — Guo Z first +
+Yun S (Islex Therapeutics, CEO/co-founder) + Golson ML + Fu D senior corresponding (Department of
+Physiology, Pharmacology & Therapeutics, Johns Hopkins School of Medicine), *Diabetes* 2026-07-20
+(DOI 10.2337/db26-0183; PMID 42474296), "Islet-Targeted ZnT8 Antibodies Protect Pancreatic β-Cells
+From Inflammatory Stress." **Full-text gate note: ADA article Cloudflare/subscription-gated, NO
+preprint or PMC copy this run — new-paper results taken from the published abstract; platform
+mechanism grounded in the FULLY-READ 2023 foundational paper (Diabetes 72(2):184; DOI 10.2337/db22-0477;
+PMID 36448936; PMCID PMC9876881).** Treated as a company/platform sourcing lead (not a full-text
+paper deep-dive) to honor PIPELINE full-text eligibility gate. **Platform (2023, read in full):** target
+ZnT8 (zinc transporter 8 / SLC30A8), major T1D autoantigen presenting an extracellular epitope
+essentially only on the beta-cell surface, surfaced coupled to glucose-stimulated insulin secretion
+= molecular zip-code for the beta cell; Fu lab cloned mAb43 vs the native surface epitope —
+subnanomolar affinity (0.42 ± 0.05 nM), strictly conformation-specific, systemic dosing homes to
+pancreas (pancreas-to-serum ratio 24.6–66.2, no signal elsewhere), glucose stimulation raised
+ZnT8-mediated uptake ~31-fold, mAb43–IL-2-mutein fusion delivered immunomodulatory cargo
+islet-selectively = a beta-cell-homing antibody chassis addressing the islet in vivo through the
+bloodstream. **New paper (abstract):** humanized Fc-silenced "Isle43" is internalized and acts as a
+ZnT8-selective molecular chaperone inside the beta cell — enhances ER protein-folding capacity,
+attenuates HLA-I hyperexpression, robustly induces PD-L1 (reinforces local immune checkpoint; used
+as direct PD marker of on-target ZnT8-chaperoning); durable pancreatic retention + dose-dependent
+reversal of new-onset T1D in NOD mice + sustained remission after cessation + protection of human
+islet-graft function in vivo. 2024 predecessor (Diabetes 73(5):806) already showed prevention +
+reversal in NOD. Mechanism matured "mask/deliver → repair beta-cell proteostasis + flip local immune
+switch." **Company: Islex Therapeutics, LLC (Baltimore) — JHU spinout, founded 2023, CEO/co-founder
+Shumei Yun; only disclosed capital is NSF SBIR Phase I award #2432114 "Islet Targeted Restorative
+Therapy for T1D," $275,000, PI Yun, 2024-09-15→2025-08-31; targets stage-3 T1D + LADA + severe
+insulin-dependent T2D.** Differentiated lane vs teplizumab/Tzield (systemic anti-CD3
+immunosuppressant, approved) and cell-replacement players (Vertex stem-cell-derived islets, Sana
+hypoimmune engineered islets = transplant products): preserve the patient's own beta cells via
+islet-local delivery, no systemic immunosuppression, no transplant. GRANT-STAGE = precisely the
+Blackbird BioVentures / BioHub window, and precisely the Baltimore program that gets pulled to
+Boston/Bay Area if unengaged (cf. Aluco → San Carlos, Kynexis → NL out-migration pattern). Actions:
+Eddie — time-sensitive: is Islex raising, cap table + JHTV license structure, seed/co-investment fit +
+BioHub bench; pin down what ZnT8-chassis IP JHTV filed vs licensed to Islex (2023 paper declared no
+patents/no COI). Avi/Yixuan — antibody-as-intracellular-chaperone novelty + human-islet-graft data +
+PD-L1 translational readout. Added as new §2b "Fu lab JHU + Islex Therapeutics islet-targeted ZnT8
+antibody platform (beta-cell-homing antibody chassis / disease-modifying T1D)" entry; Islex added to
+tracked-company list; Dax Fu + Shumei Yun added to tracked founder/PI list. **Watch (passed):**
+Romero MR … Colas AR senior corresponding (Sanford Burnham Prebys, La Jolla), "Sulfotransferase
+signaling sustains fibroblast identity and antagonizes therapeutic cardiac reprogramming," *Nat
+Commun* 2026-07-17 (DOI 10.1038/s41467-026-75583-8; PMID 42469251) — druggable node PIP4K2C
+inhibition enhances direct cardiac reprogramming / myocardial repair; JHU Division of Cardiology
+co-authors Chulan Kwon + Mark Ranek + Sean Murphy + Peter Andersen, but corresponding author
+out-of-region and full text abstract-only this run; logged as cardiac-reprogramming landscape watch
+(Tenaya-adjacent modality), not featured.
+Previously verified 2026-07-20 (Monday Sourcing Radar, two peer-reviewed picks that both landed
 Thursday 2026-07-17 direct-to-final into top-tier journals with no preprint runway. **Pick 1
 (LEAD, direct sourcing item)** — Yamauchi S first + Bosmans F co-senior (Ghent/VUB) + Brock MV
 senior corresponding (Departments of Surgery, Oncology, and Medicine + Sidney Kimmel
@@ -594,6 +648,61 @@ Companies + programs that Blackbird does not currently own but that sit in the
 JHU / UMB / Lieber-adjacent Baltimore ecosystem and inform sourcing conversations,
 competitive landscape reads, or partnering opportunities. Update when a company
 raises, exits, or crosses a scientific milestone.
+
+### Fu lab JHU + Islex Therapeutics — islet-targeted ZnT8 antibody platform (disease-modifying T1D) ⚠
+- **Discovery route — 2026-07-21 Sourcing Radar (LEAD, single-lead dry-preprint-week episode).**
+  Guo Z first + Yun S (Islex) + Golson ML + Fu D senior corresponding (Department of Physiology,
+  Pharmacology & Therapeutics, JHU School of Medicine), "Islet-Targeted ZnT8 Antibodies Protect
+  Pancreatic β-Cells From Inflammatory Stress," *Diabetes* 2026-07-20 (DOI 10.2337/db26-0183;
+  PMID 42474296). ADA full text Cloudflare/subscription-gated, no preprint/PMC this run — new-paper
+  results from abstract; platform grounded in fully-read 2023 paper (DOI 10.2337/db22-0477; PMID
+  36448936; PMC9876881) + 2024 reversal paper (Diabetes 73(5):806).
+- **Platform.** ZnT8 (zinc transporter 8 / SLC30A8) is a major T1D autoantigen presenting an
+  extracellular epitope essentially only on the beta-cell surface, surfaced in a manner coupled to
+  glucose-stimulated insulin secretion = molecular zip-code for the beta cell. Fu lab cloned mAb43
+  vs the native surface epitope: subnanomolar affinity (0.42 ± 0.05 nM), strictly conformation-
+  specific, systemic dosing homes to pancreas (pancreas-to-serum ratio 24.6–66.2, no signal
+  elsewhere), glucose stimulation raised ZnT8-mediated uptake ~31-fold; mAb43–IL-2-mutein fusion
+  delivered immunomodulatory cargo islet-selectively. Core asset = a beta-cell-homing antibody
+  chassis addressing the islet in vivo through the bloodstream without touching the rest of the body.
+- **New paper (abstract).** Humanized Fc-silenced "Isle43": internalized, acts as a ZnT8-selective
+  molecular chaperone inside the beta cell — enhances ER protein-folding capacity, attenuates HLA-I
+  hyperexpression, robustly induces PD-L1 (reinforces local immune checkpoint; direct PD marker of
+  on-target ZnT8-chaperoning); durable pancreatic retention, dose-dependent reversal of new-onset
+  T1D in NOD mice, sustained remission after cessation, protection of human islet-graft function
+  in vivo. Mechanism matured across three papers "mask/deliver → repair beta-cell proteostasis +
+  flip local immune switch."
+- **Competitive lane.** Differentiated vs teplizumab/Tzield (approved systemic anti-CD3
+  immunosuppressant) and vs cell-replacement (Vertex stem-cell-derived islets, Sana hypoimmune
+  engineered islets = transplant products requiring immunosuppression/engineering): preserve the
+  patient's own beta cells via islet-local delivery, no systemic immunosuppression, no transplant.
+  Humanized Fc-silent antibody + clean PD-L1 biomarker = developable-looking profile.
+- **Company: Islex Therapeutics, LLC** — see tracked-company entry below.
+- **Actions (2026-07-21).** Eddie — time-sensitive Blackbird BioVentures sourcing conversation: is
+  Islex raising, cap table + JHTV license structure, seed/co-investment fit, BioHub bench to keep
+  in Baltimore; pin down exactly what ZnT8-antibody-chassis IP JHTV filed vs licensed to Islex
+  (2023 platform paper declared no patents / no COI). Avi/Yixuan — science diligence on the
+  antibody-as-intracellular-chaperone novelty claim + human-islet-graft data + PD-L1 translational
+  readout into a first-in-human design. Dax Fu + Shumei Yun added to tracked PI/founder list.
+
+### Islex Therapeutics, LLC (Baltimore) — JHU spinout, disease-modifying T1D, tracked-company for Chief Business Officer first-read ⚠
+- **Profile.** Baltimore-based JHU spinout, founded 2023; CEO & co-founder **Shumei Yun**
+  (co-author on the Fu-lab ZnT8 papers, Islex affiliation on the 2026 *Diabetes* paper). Platform
+  = re-engineered ZnT8 cell-surface autoantibodies (Fu lab, JHU Physiology, Pharmacology &
+  Therapeutics) as an islet-targeted beta-cell-homing antibody chassis; lead humanized Fc-silent
+  candidate "Isle43." Indications: stage-3 (clinically overt) T1D + LADA + severe insulin-dependent
+  T2D.
+- **Capital.** Only disclosed funding is **NSF SBIR Phase I award #2432114**, "Islet Targeted
+  Restorative Therapy for Type 1 Diabetes," **$275,000**, PI Shumei Yun, 2024-09-15 → 2025-08-31.
+  Grant-stage, humanized lead, no disclosed institutional venture capital = the Blackbird
+  BioVentures / BioHub incubation window, and the exact profile that out-migrates to Boston/Bay Area
+  if unengaged locally (cf. Aluco → San Carlos, Kynexis → Netherlands).
+- **Watch.** Any Series Seed/A raise or venture participation; JHTV license roster appearance;
+  Delaware LLC → C-corp conversion; IND-enabling milestones on Isle43; ZnT8-chassis patent
+  applications (Fu / Yun inventors; JHU assignee) and their license status to Islex; company website
+  / LinkedIn / PitchBook updates; any partnering with T1D-immunotherapy or islet-transplant players.
+- **Links.** https://www.islextherapeutics.com/ ; NSF/SBIR https://www.sbir.gov/awards/208358 ;
+  papers 10.2337/db26-0183, 10.2337/db22-0477 (PMC9876881).
 
 ### Popel + Green + Pandey serial-founder cluster (Wilmer / JHU BME) ⚠
 - **Founders (recurring):** Aleksander S. Popel, Ph.D. (JHU BME + Medicine +

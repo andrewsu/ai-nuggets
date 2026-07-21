@@ -1,0 +1,5 @@
+Script body: 8395 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2831 chars) -> 154.3s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2925 chars) -> 152.7s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (2637 chars) -> 133.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/blackbird-brief/episodes/2026-07-21-radar-jhu-fu-znt8-islex-t1d-antibody.mp3 [mistral] 3,540,785 bytes, 442.6s

@@ -913,3 +913,27 @@ Sources surveyed: bioRxiv (jina-proxied search + MCP), medRxiv, PubMed (JHU/UMB/
 
 Memory updated: `podcasts/blackbird-brief/memory/blackbird-portfolio.md` header advanced with 2026-07-20 annotation (Brock lab + Martin lab added to §2b tracked-lab pipeline; Brock added to tracked-PI list; UM Ventures TetherChip patent-portfolio audit flagged as action item).
 === 2026-07-20T02:34:39-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-21T02:10:09-07:00 start blackbird-brief ===
+All files are in place. ~1,350 spoken words ≈ 5.5–6 minutes at 1.2×, appropriate for a focused single-lead day.
+
+## Run summary — Blackbird Brief, Sourcing Radar, Tuesday 2026-07-21
+
+**Episode shipped (SKIP_TTS mode — script + `.rss-item.xml` + `.commit-msg` stubs written; orchestrator will do TTS/R2/feed/commit):**
+`2026-07-21-radar-jhu-fu-znt8-islex-t1d-antibody`
+
+**Structure:** Single-lead episode. This was a genuinely dry preprint week for the thesis, so one strong Baltimore-company lead rather than off-thesis padding (per PIPELINE thin-day guidance).
+
+**Candidate funnel:**
+
+- **bioRxiv/medRxiv (delegated full sweep, window 07-17→07-21):** Only one strictly-qualifying JHU-corresponding-author preprint — Kim lab (JHU Biology) FOXO/DAF-16 dauer developmental biology, `10.64898/2026.07.18.739353` — **off-thesis, no asset, dropped.** JHU-collaborator-but-corresponding-elsewhere items logged as landscape (FOXA1–PBX1/NYU; RBM20-DCM/Stanford; ORC–HP1/Berkeley). UMB and Lieber returned **zero** qualifying corresponding-author preprints.
+- **PubMed peer-reviewed (JHU/UMB/Baltimore, edat 07-17→07-21):** ~49 JHU hits, mostly clinical/epi. Shortlist after filtering:
+  - ✅ **CHOSEN (LEAD)** — Guo/Yun/Fu, "Islet-Targeted ZnT8 Antibodies Protect Pancreatic β-Cells From Inflammatory Stress," *Diabetes* 07-20, DOI 10.2337/db26-0183, PMID 42474296. JHU Fu lab + **Baltimore JHU spinout Islex Therapeutics** (CEO Shumei Yun, NSF SBIR $275K). Humanized Fc-silent Isle43, disease-modifying T1D.
+  - ⚠ *watch (passed)* — Romero…Colas, sulfotransferase/PIP4K2C cardiac reprogramming, *Nat Commun* 07-17, DOI 10.1038/s41467-026-75583-8 — corresponding author at Sanford Burnham (JHU cardiology co-authors only); full text abstract-only this run.
+  - ✗ Lieber items (maternal-immune cohort; fentanyl transcriptomics) — no asset.
+
+**Full-text gate handling:** The lead's own new *Diabetes* paper is Cloudflare/subscription-gated with no preprint or PMC copy, so it was **not** treated as a full-text paper deep-dive. Instead it ran as a **company + platform sourcing lead**, with the platform mechanism grounded in the **fully-read 2023 foundational paper** (PMC9876881) plus the company/NSF public record, and the 2026 results explicitly flagged as abstract-sourced. No summary was shipped of a paper read only in abstract as if it were full-text.
+
+**Memory updated:** `blackbird-portfolio.md` — new "last verified" log entry, new §2b "Fu lab JHU + Islex Therapeutics ZnT8 platform" entry, new "Islex Therapeutics, LLC" tracked-company entry, and Dax Fu + Shumei Yun added to the tracked PI/founder list.
+
+**No commit/push performed** (SKIP_TTS=1). Staging will cover `podcasts/blackbird-brief/` including the updated memory file.
+=== 2026-07-21T02:26:49-07:00 done  blackbird-brief (exit 0) ===
