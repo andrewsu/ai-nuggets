@@ -1,0 +1,9 @@
+Script body: 14740 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/6 (2834 chars) -> 145.9s ✓
+  [mistral:en_paul_neutral] chunk 2/6 (2806 chars) -> 142.9s ✓
+  [mistral:en_paul_neutral] chunk 3/6 (2898 chars) -> 142.6s ✓
+  [mistral:en_paul_neutral] chunk 4/6 (2845 chars) -> 140.0s ✓
+  [mistral:en_paul_neutral] chunk 5/6 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/6 (2955 chars) -> 157.1s ✓
+  [mistral:en_paul_neutral] chunk 6/6 (397 chars) -> 21.1s ✓
+Done: podcasts/jinglin-ai-pulse/episodes/2026-07-21-china-open-weights-escalation-gap-collapses-to-3-5-months-cogs-reframing-cuspai-materials-foundry-and-etched.mp3 [mistral] 6,332,125 bytes, 791.5s
