@@ -1,0 +1,5 @@
+Script body: 7375 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2834 chars) -> 130.9s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2930 chars) -> 144.3s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (1609 chars) -> 74.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-07-21-tempus-personalis-mrd-oncology-spotlight.mp3 [mistral] 3,150,829 bytes, 393.8s

@@ -2447,3 +2447,32 @@ Sources:
 - [Sanofi Tzield June 2026 stage-3 approval](https://www.drugs.com/newdrugs/sanofi-s-tzield-approved-u-s-delay-onset-stage-3-type-1-diabetes-young-children-6768.html)
 - [Cabaletta 2027 rese-cel BLA guidance](https://www.cabalettabio.com/investors/news-events/press-releases/detail/128/cabaletta-bio-announces-2027-rese-cel-bla-submission)
 === 2026-07-20T02:49:24-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-21T02:20:09-07:00 start calibr-briefing ===
+Both episodes for 2026-07-21 are written and staged for batch TTS. `SKIP_TTS=1` was set, so I stopped after writing the scripts and stubs — the orchestrator (`publish_pending.py`) will run TTS, publish to R2, update `feed.xml`, and commit each episode after the batch job.
+
+**Today's episodes — Calibr briefing 2026-07-21**
+
+- **Headlines** (`2026-07-21-pharma-headlines`) — six items, AI-in-oncology-diagnostics through-line: Tempus→Personalis; BMS's NVIDIA Vera Rubin "AI factory"; Halozyme–Incyte ENHANZE subcutaneous mutCALR mAb deal; Latigo's Nasdaq IPO (Nav1.8 non-opioid pain); Shionogi cefiderocol pediatric sNDA; late-July KarXT/sepiapterin Phase 3 catalyst watch.
+- **Spotlight** (`2026-07-21-tempus-personalis-mrd-oncology-spotlight`) — deep dive on Tempus's ~$1.5B all-stock acquisition of Personalis: the diagnosis→monitoring data-loop logic, the MRD data flywheel, competitive landscape (Natera Signatera / Guardant / Exact Sciences), the inherited Personalis–Natera tension, and why the acquirer fell ~8% despite a strong strategic case (full press release read via SEC/reprint; analyst commentary from Needham and Bloomberg Intelligence).
+
+**Candidate funnel (2026-07-21)**
+
+Sources scanned: Fierce Biotech + Endpoints front pages both HTTP 403 to direct fetch → routed via WebSearch + BioPharma Dive front page (fetched OK) + targeted searches. No source-side gap that changed selection.
+
+Substantive shortlist (July 20–21, fresh):
+- Tempus AI → Personalis, ~$1.5B all-stock, AI precision oncology / MRD — **CHOSEN (spotlight + headline 1)**. Full text obtained (SEC-adjacent reprint); analyst reaction available.
+- Bristol Myers Squibb + NVIDIA "most powerful AI factory in life sciences," Vera Rubin — **CHOSEN (headline 2)**
+- Halozyme + Incyte ENHANZE, subcutaneous mutCALR mAb (INCA033989) in MPNs — **CHOSEN (headline 3)**
+- Latigo Biotherapeutics Nasdaq IPO, Nav1.8 non-opioid pain (LTG-001) — **CHOSEN (headline 4)**
+- Shionogi cefiderocol pediatric sNDA (HABP/VABP + cUTI) — **CHOSEN (headline 5)**
+- Late-July Phase 3 catalysts: BMS KarXT (Alzheimer's psychosis) + PTC sepiapterin (PKU) — **CHOSEN (headline 6, preview)**
+
+Considered, not used:
+- Eli Lilly / AtaiBeckley $2.8–3.8B psychedelics — deal is Jul 16 (stale as a headline); only July 20 analyst commentary was fresh, so dropped to keep the roundup to genuine Jul 20–21 items.
+- Zymeworks / Theravance ($929M, Yupelri COPD) — late-June, stale.
+- Tempus/Personalis was announced Jul 20 but not covered in yesterday's calibr episode, so it's eligible and clearly the day's dominant story.
+
+Not repeated from yesterday's shipped episodes (Kyverna spotlight; Akeso AK146D1, Otsuka centanafadine, Jasper–Kira, LifeMD, T1D landscape).
+
+Note: `memory/calibr-pipeline.md` referenced in PROMPT.md does not exist in this workspace — worked from the PROMPT focus areas instead.
+=== 2026-07-21T02:28:56-07:00 done  calibr-briefing (exit 0) ===
