@@ -122,7 +122,13 @@ def extract_script_body(path):
         # Stop at the next section heading so trailing sections (candidate
         # funnel, show notes, etc.) don't get narrated.
         text = re.split(r"(?m)^## ", text, maxsplit=1)[0]
-    lines = [l for l in text.strip().split("\n") if not l.strip().startswith("Paper link:")]
+    # Drop metadata lines that some show templates append inside the Script
+    # section (no heading to delimit them): "Paper link:" and trailing
+    # "Source:" URL blocks. Narrating raw URLs violates the no-URLs-in-body
+    # rule and, on the Mistral path, truncates the final chunk (the model
+    # emits only a few seconds of audio for a URL-dense chunk).
+    _DROP = ("Paper link:", "Source:")
+    lines = [l for l in text.strip().split("\n") if not l.strip().startswith(_DROP)]
     return apply_pronunciation_subs("\n".join(lines).strip())
 
 
