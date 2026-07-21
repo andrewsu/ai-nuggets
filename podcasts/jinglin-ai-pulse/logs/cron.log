@@ -919,3 +919,29 @@ Podcast Deep Cut candidates:
 
 Source failures: none material.
 === 2026-07-20T02:41:52-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-21T02:30:09-07:00 start jinglin-ai-pulse ===
+Done. `SKIP_TTS=1`, so per PIPELINE I've written the script plus the two transient stubs (`.rss-item.xml` with `__LENGTH__`/`__DURATION__` placeholders, validated as well-formed XML, and `.commit-msg`), and I skip TTS, R2 publish, feed edit, and commit — the orchestrator handles those after batch TTS.
+
+## Run summary — jinglin-ai-pulse, 2026-07-21 (first run of the day)
+
+**Published (pending batch TTS):** `2026-07-21-china-open-weights-escalation-gap-collapses-to-3-5-months-cogs-reframing-cuspai-materials-foundry-and-etched` — 2,285 spoken words (~13 min). Stubs written; no commit (SKIP_TTS mode).
+
+**Editorial shape:** Twitter Pulse — the China open-weights escalation (Kimi K3 + Qwen3.8-Max preview + imminent DeepSeek V4 + Moonshot compute pause) as convergence, then Ben Thompson's COGS/marginal-cost reframing. Money Moves — CuspAI (AI-for-science) + Etched (inference ASIC), both bets on the same COGS thesis. Deep Cut — Nathan Lambert's Interconnects "Kimi K3: The open-weights escalation" (full argument chain). Deep-cut source read in full (eligibility gate met).
+
+### Candidate funnel
+
+- **Twitter/X + community aggregators (discourse, last 48h):** ~9 threads scanned; survived relevance filter:
+  - Kimi K3 vs DeepSeek V4 Pro vs GLM-5.2 comparison (MarkTechPost) — **CHOSEN (Pulse lead)**
+  - Alibaba Qwen3.8-Max preview at WAIC, "second only to Fable 5," no benchmarks (MarkTechPost/OfficeChai/QZ) — **CHOSEN**
+  - DeepSeek official V4 imminent, peak/off-peak pricing, price-killer (aibase/explainx) — **CHOSEN**
+  - Moonshot pauses new K3 subscriptions for compute (TechStartups) — **CHOSEN**
+  - Ben Thompson/Stratechery "Who's Afraid of Chinese Models?" COGS reframing (Techmeme) — **CHOSEN (Pulse story 2)**
+  - @Zefan_Cai — no fresh (last-48h) trackable post found; his KV-cache work surfaced but dated 2025. Noted, not used.
+  - "AI world models debate" (avikde.me), Anthropic IPO/S-1 (confidential June 1 — stale), Google DMA order (covered yesterday) — discarded as stale/duplicative.
+- **Investment/business (last 7d):** ~6 items; shortlist:
+  - CuspAI $450M Series B @ $2.6B + AI Materials Foundry, Max Welling (Medium/TechFundingNews/GBAF) — **CHOSEN (Money Moves 1)**
+  - Etched dual $10B/$20B rounds, $1B pre-ship inference-ASIC demand (PYMNTS/TechCrunch/WSJ) — **CHOSEN (Money Moves 2)**
+  - Databricks $188B (used yesterday), Tempus→Personalis $1.5B (biomed, covered by sibling show), Hut 8 $9.8B lease — discarded/deferred.
+- **Long-form podcasts (last 14d):** Nathan Lambert, *Interconnects* "Kimi K3: The open-weights escalation" (Jul 20) — **CHOSEN (Deep Cut)**. Rejected: WhynotTV (latest May 1, out of window); Latent Space "Lila Sciences" (Jul 16, used yesterday); ChinaTalk×Latent Space "What It Takes to Compete in AI" (2024, stale); Dwarkesh Adam Brown (Jul 10, general relativity — off-topic); Lex #490 (Feb 2026, stale).
+- **Source failures:** none (all WebSearch/WebFetch calls returned).
+=== 2026-07-21T02:41:15-07:00 done  jinglin-ai-pulse (exit 0) ===
