@@ -2663,3 +2663,29 @@ Final summary — cron.log audit record
 
 **Why Medea beat the others**: (1) it's a genuine agentic system evaluated on ~5,700 open-ended analyses, not a benchmark demo; (2) it explicitly targets the field's chronic context-slip failure mode with verification wired into planning/execution/consensus; (3) the unpublished yeast EMAP experiment is a real anti-leakage control that the rest of the biomedical-agent literature is not running; (4) fits the show's audience precisely — agentic AI + biomedical KG + tool-use + calibrated reasoning; (5) Zitnik lab was already flagged in the show's PROMPT as an anchor group.
 === 2026-07-20T02:09:37-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-21T02:00:09-07:00 start biomedical-agentic-ai ===
+All three files are written and the RSS stub parses. In `SKIP_TTS=1` mode I stop here (no TTS, no publish, no feed edit, no commit — the orchestrator handles those). Here's the run log.
+
+---
+
+## Episode shipped — biomedical-agentic-ai, 2026-07-21
+
+**Pick:** *Intern-BioBreaker — an agentic red-teamer jailbreaks frontier LLMs into hazardous biology, and where the guardrail really has to live* (arXiv 2607.18056, posted 2026-07-20, Shanghai AI Laboratory + Fudan biomedical engineering). Full text read via `r.jina.ai` PDF reader (no local PDF tooling; WebFetch returned binary, arXiv HTML 404'd). Spoken body 772 words (cap 1150). Editorial angle: the abstract advertises a wet-lab pipeline (DNA synthesis / expression / mass-spec) that was **deliberately not executed** — the real, demonstrated result is in-silico filter-evasion plus a genuinely agentic red-teaming attacker, so "wet-lab validated" oversells.
+
+### Candidate funnel
+
+- **bioRxiv** (411 total in window 07-18→07-21, pulled full collection, 268 unique parsed; step-30 pagination after an initial step-100 miss): ~6 keyword survivors. Substantive shortlist:
+  - PrimeKG-Plus — LLM-assisted literature expansion of a precision-medicine KG (`10.64898/2026.07.14.738415`, 07-18) — **best thematic fit, DEFERRED: full text not yet rendered (jina returns abstract-only, 1614 chars), stays eligible when body renders**
+  - Tabular Foundation Models as perturbation predictors (`.../2026.06.28.735106`) — foundation model, not agentic
+  - BioReason-Pro protein-function reasoning (`10.64898/2026.03.19.712954`) — old original date/revision, recency questionable
+- **arXiv** (daily cache `/tmp/ai-nuggets-arxiv-cache.xml`, 13.7k lines, read OK): biomedical+agentic survivors within 07-18→07-21 window:
+  - **An Early Warning of Emerging Biosecurity Risks in Frontier LLMs** (2607.18056, 07-20) — **CHOSEN**, full text read
+  - Real-World Eval of an AI Agent Drafting Translational Impact Summaries (2607.16989, 07-18) — agentic, deployed, but niche (CTSA reporting)
+  - Benchmarking Resource-Efficient LLMs for Biomedical Topic Ontology Generation (2607.17902, 07-20) — benchmark, not agentic
+  - OntoExtend (2607.17963, 07-20) — ontology, non-biomedical use cases
+  - AutoSynthesis multi-agent meta-analysis (2607.15247, 07-16), NeurOWL (2607.15776, 07-17), SciForge (2607.16038, 07-17) — **out of window (07-16/07-17), excluded**
+- **PubMed** (esearch reldate 5, 120 hits, esummary on top 40): one near-miss — "A knowledge-enhanced domain-aware LLM agent for atrial fibrillation management" (07-20), clinical/niche, likely auth-walled; not stronger than the pick.
+- **ChemRxiv / news / funder pages:** not separately swept today — the arXiv biosecurity story clearly dominated the in-window field; no source outage.
+
+**No source outages.** Stubs written: `.rss-item.xml` (placeholders `__LENGTH__`/`__DURATION__`, parses OK) and `.commit-msg`.
+=== 2026-07-21T02:12:32-07:00 done  biomedical-agentic-ai (exit 0) ===

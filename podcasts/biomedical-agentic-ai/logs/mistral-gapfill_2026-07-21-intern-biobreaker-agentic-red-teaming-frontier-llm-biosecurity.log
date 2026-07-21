@@ -1,0 +1,4 @@
+Script body: 4885 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2807 chars) -> 131.0s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2077 chars) -> 105.3s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-07-21-intern-biobreaker-agentic-red-teaming-frontier-llm-biosecurity.mp3 [mistral] 2,031,116 bytes, 253.9s
