@@ -1,0 +1,4 @@
+Script body: 4942 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2951 chars) -> 134.3s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (1990 chars) -> 93.9s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-07-21-lgr5-met-adc-combination-crc-reciprocal-resistance.mp3 [mistral] 2,132,471 bytes, 266.5s

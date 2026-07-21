@@ -1402,3 +1402,27 @@ Candidate funnel:
 
 Why AK146D1 wins over Kyverna miv-cel: the Kyverna BLA-timing feature is a strong autoimmune-CAR-T narrative but reports on-track pathway rather than a today-datable event; the Akeso announcement is a same-day first-patient-dosed with a genuinely first-of-its-kind design (bispecific ADC on top of a bispecific IO backbone) that lands directly on all three of Justice's stated top interests — VEGF×PD-L1/PD-1 bispecifics, bispecific TCE-adjacent design geometry, and ADC platform news — in a single molecule pairing.
 === 2026-07-20T02:53:03-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-21T02:40:09-07:00 start justice-biotech-brief ===
+XML is well-formed. Per `SKIP_TTS=1` mode I've stopped after writing the script + two stubs (no TTS, no R2 publish, no feed edit, no commit — the orchestrator does those). Here's the run record.
+
+---
+
+**Justice's Biotech Brief — 2026-07-21**
+
+**Episode shipped:** LGR5 & MET ADCs — colorectal tumors escape an LGR5-targeting ADC by turning LGR5 down and switching MET on; a reciprocally-reinforcing dual-ADC combination delays relapse in patient-derived xenografts (NCI-funded bioRxiv preprint, posted July 20 2026).
+- Script: `scripts/2026-07-21-lgr5-met-adc-combination-crc-reciprocal-resistance.md`
+- Stubs written: `.rss-item.xml` (validated well-formed) + `.commit-msg`. SKIP_TTS=1 → no audio/publish/feed/commit here; orchestrator finalizes.
+
+**Candidate funnel**
+
+*bioRxiv* (details API, full 2-day collection pulled: 2026-07-20 = 272 entries, 2026-07-21 = 27; 299 total, paginated). Keyword filter (VEGF/PD-(L)1/TCE/bispecific/trispecific/CAR-T/ADC/JAK/checkpoint/etc.) → ~13 hits, most spurious ("checkpoint" = cell-cycle, "nectin" inside gene lists, "car-t" from anti-CD3/CD28). Substantive shortlist:
+- **LGR5/MET ADC combination in CRC** — 10.64898/2026.07.18.739355, posted 07-20 — full text read via `fetch_preprint.py` (jina channel, 7.6k chars). **← CHOSEN** (in-window, on-target ADC interest, real mechanistic finding).
+- JAK/TYK2 inhibitors in ulcerative colitis colonic epithelium — 10.64898/2026.07.20.739113 — JAK-adjacent but small-mol inhibitor mechanistic study, not JAK ADC / not therapeutic-development news; weaker fit.
+- "Deep learning representations of Immune Health" (07-15) and "in-silico pMHC binding" (07-14) — out of the 2-day window.
+
+*News (Fierce / Endpoints / STAT / BioSpace / BioPharma Intl)* — Fierce and Endpoints homepages returned HTTP 403 to WebFetch; BioSpace fetched. July 20-21 items in scope came up empty for Justice's beat — July 20 headlines were Lilly/AtaiBeckley (psychedelics), FDA rejection-transparency policy, 2026 IPO class, Vertex IgA nephropathy, T1D pipeline (latter two covered by sibling shows). Strong-looking hits were all out of window: CS2009 PD-1/VEGF/CTLA-4 trispecific + ivonescimab HARMONi-6 (ASCO 2026, May/June); Zelgen ZG006 DLL3 trispecific (pivotal started Dec 2025); 92Bio NTB-928 FOLR1×CD3 TCE (businesswire dated **July 1** — verified via URL slug `20260701`, out of the 1-2 day window). Note: yesterday's episode already covered the Akeso AK146D1 ivonescimab-combo story, so the VEGF×PD-1 lane was fresh-checked but not repeatable today.
+
+*Policy/funder* — ARPA-H news page: latest item July 9 (rare-disease curative-medicines awards); nothing July 20-21. (NIH/NSF not separately fetched after ARPA-H showed no fresh in-window item and a strong bioRxiv pick was in hand.)
+
+No source hard-failed beyond the two WebFetch 403s (Fierce/Endpoints), which were routed around via search + BioSpace — small recall hit, not a blocker.
+=== 2026-07-21T02:48:08-07:00 done  justice-biotech-brief (exit 0) ===
