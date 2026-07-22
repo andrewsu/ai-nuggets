@@ -1426,3 +1426,28 @@ XML is well-formed. Per `SKIP_TTS=1` mode I've stopped after writing the script 
 
 No source hard-failed beyond the two WebFetch 403s (Fierce/Endpoints), which were routed around via search + BioSpace — small recall hit, not a blocker.
 === 2026-07-21T02:48:08-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-22T02:40:09-07:00 start justice-biotech-brief ===
+Everything is in place. SKIP_TTS=1, so I've written the script plus the two transient stubs and stopped short of TTS/publish/commit (the orchestrator handles those). XML validates and the paper URL/DOI prefix (10.64898/, v1, posted 2026-07-21) is verified in-window.
+
+---
+
+## Run summary — justice-biotech-brief, 2026-07-22
+
+**Published (pending batch TTS):** `2026-07-22-rmev-mg53-oncolytic-measles-mg53-pyroptosis-pdl1-nsclc`
+Title: *rMeV-MG53 — an MG53-armed oncolytic measles virus drives pyroptosis, turns cold lung tumors hot, and sensitizes them to PD-L1 blockade*
+Source: bioRxiv 10.64898/2026.07.15.738733 v1, posted 2026-07-21 (Haichang Li lab, Ohio State). Full text read via the `.full.pdf` through r.jina.ai (the `.full` HTML body had not rendered yet — abstract-only — but the PDF carried the complete 34-page manuscript).
+
+### Candidate funnel
+
+**bioRxiv** (full 2-day collection pulled, not sampled): 299 items (Jul 21) + 13 (Jul 22) = 312 scanned. Relevance-filtered shortlist (immuno-oncology / immunotherapy, spurious keyword hits like "adc" in "diffusion-exchange" discarded):
+- ✅ **Engineering Oncolytic Measles Virus with MG53 … Checkpoint Immunotherapy in NSCLC** — 10.64898/2026.07.15.738733 — **CHOSEN** (cancer immunotherapy, PD-L1 combination; full text obtained via PDF).
+- Supramolecular hydrogel viscoelasticity regulates in situ tertiary lymphoid neogenesis — 10.64898/2026.07.20.739456 — strong immuno-onco fit (TLS + checkpoint); `.full` HTML abstract-only, PDF route not pursued once measles selected. Live deferral candidate.
+- Tumor-derived stearic acid → macrophage Egr2 suppresses anti-tumor immunity (breast cancer) — 10.64898/2026.07.15.738781 — immunosuppression mechanism; abstract-only HTML. Deferral candidate.
+- AI-Driven Design of Nanobinders Targeting TSLPR (type 2 inflammation, JAK-STAT) — 10.64898/2026.07.20.739581 — autoimmune-biologics adjacent; v1 posted today. Deferral candidate.
+
+**News (Fierce Biotech/Pharma, Endpoints, STAT, BioPharma Dive), last 1–2 days:** surveyed. Fierce Biotech front page returned HTTP 403; Endpoints 403 (both direct and post-redirect). STAT (Jul 21) and Fierce Pharma (Jul 21) reachable — all off-theme for this show (rare-disease pricing, Amgen tax settlement, Sanofi exec moves, Gilead/Merck weekly HIV pill, Novartis PCSK9, Novo/Lilly GLP-1 ad dispute). On-theme bispecific/ADC/VEGF stories that surfaced (ivonescimab HARMONi-6, iza-bren TNBC, Roche divarasib) are all ASCO / early-July — **out of the 1–2-day window**, excluded on recency. No fresh on-theme headline.
+
+**Funder pages:** ARPA-H news checked — nothing Jul 20–22 (latest Jul 9). NIH/NSF not individually fetched given no thematic lead.
+
+Selected the measles/MG53 preprint as the single best in-window item whose full text is readable: squarely in Justice's cancer-immunotherapy/checkpoint lane, novel arming payload, mechanism pinned down, clean anti-PD-L1 combination readout.
+=== 2026-07-22T02:50:49-07:00 done  justice-biotech-brief (exit 0) ===
