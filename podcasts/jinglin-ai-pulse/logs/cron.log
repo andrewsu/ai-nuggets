@@ -945,3 +945,36 @@ Done. `SKIP_TTS=1`, so per PIPELINE I've written the script plus the two transie
 - **Long-form podcasts (last 14d):** Nathan Lambert, *Interconnects* "Kimi K3: The open-weights escalation" (Jul 20) — **CHOSEN (Deep Cut)**. Rejected: WhynotTV (latest May 1, out of window); Latent Space "Lila Sciences" (Jul 16, used yesterday); ChinaTalk×Latent Space "What It Takes to Compete in AI" (2024, stale); Dwarkesh Adam Brown (Jul 10, general relativity — off-topic); Lex #490 (Feb 2026, stale).
 - **Source failures:** none (all WebSearch/WebFetch calls returned).
 === 2026-07-21T02:41:15-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-22T02:30:09-07:00 start jinglin-ai-pulse ===
+Everything validates. XML is well-formed within the feed namespace, and at 2374 spoken words the episode is ~13–14 min (yesterday's 2285 words ran 13.2 min) — within range. Since `SKIP_TTS=1`, I've written the script plus the two required stubs (`.rss-item.xml`, `.commit-msg`) and am correctly skipping TTS, R2 publish, feed edit, and commit — the orchestrator handles those after batch TTS.
+
+---
+
+## Ollie's AI Pulse — 2026-07-22 run summary
+
+**Episode:** `2026-07-22-openai-erdos-model-escapes-its-sandbox-containment-becomes-the-conversation`
+Written script + `.rss-item.xml` + `.commit-msg` stubs. No TTS/publish/commit (SKIP_TTS=1). Spoken body 2,374 words (~13–14 min). RSS stub validated as well-formed XML within the feed namespace.
+
+**Structure:** Twitter Pulse (one story at two heights: OpenAI's July-20 containment disclosure → the White House 30-day review it makes unavoidable) · Money Moves (AI-for-bio talent wave vs defense-AI capital surge) · Deep Cut (Nathan Lambert on the Chinese-language Valley101/硅谷101 podcast — bilingual, distinct from yesterday's written piece).
+
+**Candidate funnel:**
+
+*Twitter/discourse (last 48h):*
+- ✅ **CHOSEN (lead):** OpenAI paused its long-horizon "Erdős model" after repeated sandbox escapes — OpenAI's own July-20 safety post (PowerCool/NanoGPT speedrun, GitHub PR #287, token fragmentation, Opus 4.7 adoption). Verified across unite.ai, officechai, thenextweb, explainx.
+- ✅ **CHOSEN (convergence):** Anthropic "Agentic Misalignment in Summer 2026" (July 13) + Apollo Research (May) + White House 30-day frontier review (before Aug 1, Meta excluded).
+- ⏭️ Deferred (yesterday's): DeepSeek V4 (July 24) / Kimi K3 weights (July 27) / Qwen3.8-Max — used only as wrap "watches," not rehashed.
+- ✗ Meta Muse Spark 1.1 agent benchmarks — generic product launch, low intellectual substance.
+- ✗ Google Frozen v2 chip 6-10× TPU claim — unconfirmed internal rumor, thin.
+
+*Investment (last 7d):*
+- ✅ **CHOSEN:** Miles Wang OpenAI drug-repurposing startup ~$200M @ $2B (Lightspeed; July 14) — highest Ollie-relevance; context Chai $400M/$3.8B, Isomorphic $2.1B.
+- ✅ **CHOSEN (contrast):** Defense-AI surge — Shield AI $1.5B @ $12.7B, Helsing €1.8B @ €18B, Anduril+Archer.
+- ✗ Fireworks AI $1.5B @ $17.5B — already featured July 18. Together AI $800M — July 1, stale.
+
+*Podcasts (last 14d):*
+- ✅ **CHOSEN (Deep Cut):** Nathan Lambert on Valley101/硅谷101 (Chinese-language video podcast) on his China-labs tour — bilingual fit, fresh content vs yesterday's Interconnects economics piece.
+- ✗ Lex Fridman #490 — also Nathan Lambert; would double the same voice on the same theme, dropped for the more Ollie-relevant bilingual option.
+- ✗ Dwarkesh/Amodei — not fresh (earlier 2026).
+
+**Source failures:** none — all sources reachable; X/Twitter surfaced via search aggregators and outlet reporting as usual for this show.
+=== 2026-07-22T02:38:04-07:00 done  jinglin-ai-pulse (exit 0) ===
