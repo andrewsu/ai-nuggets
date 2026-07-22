@@ -2689,3 +2689,40 @@ All three files are written and the RSS stub parses. In `SKIP_TTS=1` mode I stop
 
 **No source outages.** Stubs written: `.rss-item.xml` (placeholders `__LENGTH__`/`__DURATION__`, parses OK) and `.commit-msg`.
 === 2026-07-21T02:12:32-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-22T02:00:09-07:00 start biomedical-agentic-ai ===
+All three files are in place and valid. In `SKIP_TTS=1` mode, I stop here — no TTS, R2 publish, feed edit, or commit (the orchestrator handles those after batch TTS).
+
+## Episode published (script + stubs written)
+
+**Show:** biomedical-agentic-ai · **Date:** 2026-07-22 (Wednesday)
+**Title:** BioSecBench-Surveillance — agents run the right genomics pipeline, then make the wrong calls around it
+**Source:** arXiv 2607.19262 (posted 2026-07-21), LatchBio + Aclid · full text read via jina reader
+**Spoken body:** 858 words (cap 1150)
+
+Files written to `scripts/`:
+- `2026-07-22-biosecbench-surveillance-agents-genomic-surveillance-judgment-gap.md`
+- `.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders) — validated well-formed
+- `.commit-msg`
+
+**The take:** A verifiable, execution-based benchmark (100 expert-reviewed evaluations, deterministic grading) showing that even the best agent configs (Opus 4.8, GPT‑5.5) clear only ~50% of real pathogen-genomic-surveillance tasks. The load-bearing finding: agents usually run the *right* workflow but botch the surrounding analyst judgment (reference/threshold/filter/normalization) — the tool-calling is solved, the judgment isn't. Plus a clean model-vs-harness point (same OpenAI model refused 27–29% under one harness, 8–9% under another).
+
+---
+
+### Candidate funnel
+
+**bioRxiv** (window 2026-07-19→22, full collection 651 items, keyword-filtered): ~46 relevance hits. Top on-theme, both deferred — body HTML not yet rendered (jina fell through to abstract-only), re-check on a later day:
+- ChatGEM — agentic architecture for interactive genome-scale metabolic model simulation (10.64898/2026.07.20.739662) — **abstract-only, deferred**
+- PrimeKG-Plus — literature-derived expansion of a precision-medicine KG (10.64898/2026.07.14.738415) — **abstract-only, deferred**
+- OmicsLake (agent-aware data lineage), GeneBench-Pro, GeneAutomate — noted, lower priority
+
+**arXiv** (daily cache, 500 entries, in-window agentic+biomedical): 25 hits. Substantive shortlist:
+- BioSecBench-Surveillance — AI agents on pathogen genomic surveillance (2607.19262) — **✓ CHOSEN** (full text read)
+- Do AI-Native Biotechs Need Departments? / Company World Models for drug development (2607.18696) — read; strong but more speculative/thin extraction, single-author
+- PEARL — auditable repair for scientific reasoning graph extraction (2607.17917)
+- PathAgentBench (2607.19261); MedDDC-Eval (2607.18999); OntoBook (2607.18927); Research-topic ontology generation benchmark (2607.17902)
+
+**PubMed** (edat 2026/07/17–22, agentic/LLM/KG × biomedical): 100 matches; scanned top 30 — no item beat the arXiv/bioRxiv leads for this show's agentic-AI-in-biomedicine focus.
+**ChemRxiv / news / funder pages:** not the day's strongest lane; no in-window item competitive with the chosen pick.
+
+No source hard-failed this run.
+=== 2026-07-22T02:09:55-07:00 done  biomedical-agentic-ai (exit 0) ===
