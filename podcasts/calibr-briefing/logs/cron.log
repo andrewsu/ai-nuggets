@@ -2476,3 +2476,31 @@ Not repeated from yesterday's shipped episodes (Kyverna spotlight; Akeso AK146D1
 
 Note: `memory/calibr-pipeline.md` referenced in PROMPT.md does not exist in this workspace — worked from the PROMPT focus areas instead.
 === 2026-07-21T02:28:56-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-22T02:20:09-07:00 start calibr-briefing ===
+All six files are in place. Both episodes are written and staged for the batch TTS orchestrator (SKIP_TTS mode — no audio, publish, feed edit, or commit from me).
+
+## Calibr briefing — 2026-07-22 — run complete
+
+**Episodes produced (2):**
+- **Headlines** (`2026-07-22-pharma-headlines`) — 5 items, all fresh from July 21.
+- **Spotlight** (`2026-07-22-dimension-capital-ai-biotech-fund-spotlight`) — deep dive on Dimension Capital's $800M third fund and the AI-drug-discovery money.
+
+**Why the spotlight:** Dimension's raise is the day's strongest match for Travis's focus areas — AI in drug discovery + the Foresite Labs techbio thesis. It gave rich analytical material (the science-and-compute thesis, the Anthropic/Coefficient exit, the Chai markup we covered last week, the unresolved "no AI-designed drug approved yet" gap) and a clean three-tier read that maps directly onto Foresite/ARCH's Xaira bet. Full text was read via TechCrunch + BioPharma Dive.
+
+Files written: two scripts (`.txt`), two `.rss-item.xml` stubs (validated well-formed, `__LENGTH__`/`__DURATION__` placeholders), two `.commit-msg` stubs. Per SKIP_TTS, I did not run `gen_tts.py`, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles all of that after batch TTS.
+
+### Candidate funnel
+
+Sources scanned: Fierce Biotech (403 on homepage), Endpoints (403), BioPharma Dive, Clinical Trials Arena, MedCity, BioWorld, Semafor, TechCrunch, company IR, plus targeted web search. General-web search carried the day; the two paywalled homepages 403'd but their story-level coverage was fully reachable via the confirming searches, so no recall gap.
+
+Shortlist (all July 21 2026 unless noted):
+- **Novo Nordisk sues Eli Lilly over "misleading" GLP-1 obesity ads** (CNBC/STAT/Bloomberg) — ✅ headline #1 (lead)
+- **GSK ends camlipixant (P2X3) in chronic cough after mixed Ph3** (Fierce/Endpoints/BioPharma Dive) — ✅ headline #2
+- **Agios scraps tebapivat (PK activator) in sickle cell after Ph2** (Clinical Trials Arena/Fierce) — ✅ headline #3
+- **Novartis Q2 beat, Kisqali first $1B US quarter** (Novartis/Motley Fool/Qz) — ✅ headline #4
+- **Dimension Capital closes $800M third fund** (TechCrunch/BioPharma Dive) — ✅ headline #5 + **SPOTLIGHT**
+- Veradermics oral VDPHL01 Ph2 in female pattern hair loss — dropped (July 15, stale)
+- BMS NVIDIA "AI factory" — dropped (covered July 21)
+- Jasper/Kira merger — dropped (covered July 20)
+- Xaira / Foresite portfolio — no fresh July 21–22 news; used as spotlight comparison context
+=== 2026-07-22T02:27:36-07:00 done  calibr-briefing (exit 0) ===
