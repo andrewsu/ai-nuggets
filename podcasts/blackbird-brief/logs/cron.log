@@ -937,3 +937,25 @@ All files are in place. ~1,350 spoken words ≈ 5.5–6 minutes at 1.2×, approp
 
 **No commit/push performed** (SKIP_TTS=1). Staging will cover `podcasts/blackbird-brief/` including the updated memory file.
 === 2026-07-21T02:26:49-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-22T02:10:09-07:00 start blackbird-brief ===
+SKIP_TTS mode — I'm done with the write phase (script + two stubs + memory update). The orchestrator handles batch TTS, publish, feed, and commit. No `git add`/commit from me.
+
+## Run complete — Blackbird Brief Sourcing Radar, 2026-07-22 (Wed)
+
+**Episode:** `2026-07-22-radar-jhu-hlmr1-masld-lncrna-corin-corest-atrt` — Sourcing Radar (daily), two peer-reviewed JHU picks, ~6.2 min at 1.2×. Script + `.rss-item.xml` (validated, `__LENGTH__`/`__DURATION__` placeholders) + `.commit-msg` written; `memory/blackbird-portfolio.md` log updated (new §2b entries + Ruan and Raabe added to tracked-PI list). No commit — orchestrator will publish/commit after batch TTS.
+
+### Candidate funnel
+
+**Sources swept (window 2026-07-18→22):**
+- **bioRxiv** — 696 records via api.biorxiv.org details API; filtered on corresponding institution → 5 hits, all out of scope (JHU C. elegans dauer dev-bio, already logged 07-21, no drug hook; 2× U-Maryland **College Park** ≠ UMB; JHU Bloomberg biostatistics methods). 0 survived.
+- **medRxiv** — 183 records, same filter → 3 JHU-corresponding hits: PCI/TAVR renal-outcomes meta-analysis (clinical, no asset); **PNH complement "spectosis"-rebuttal** (mechanistic, no discrete asset, touches no portfolio program — *passed, logged as watch*); social-adversity/aging-clocks epi (no asset). 0 survived.
+- **PubMed** — JHU affiliation, 115 edat hits (triaged top 40 by pub date, + targeted therapeutic-term query); UMB/Lieber affiliation → only 2 hits, both off-thesis. Peer-reviewed set dominated by clinical/imaging/policy/bioethics work.
+
+**Substantive shortlist:**
+- ✅ **CHOSEN — Pick 1 (LEAD):** Ruan lab, JHU Endocrinology + Johns Hopkins All Children's — *hLMR1*, hepatocyte-specific/human-specific lncRNA repressing hepatic amino-acid catabolism + ureagenesis in MASLD/MASH. PLoS One, full text read. First-in-class, oligonucleotide-tractable (ASO/GalNAc-siRNA), no patents disclosed = open JHTV window. https://doi.org/10.1371/journal.pone.0353674
+- ✅ **CHOSEN — Pick 2 (watch/partner):** Raabe lab, JHU Pediatric Oncology — CoREST inhibitor *corin* (bifunctional LSD1/HDAC) as differentiation therapy extending survival in SMARCB1-null ATRT xenografts. Neuro-Oncology. Strong data + rare-pediatric-PRV economics, but corin is Cole's (Harvard) molecule → JHU owns use-not-composition; cross-institution licensing play. Note: co-author Jeffrey Rubens now at Pfizer. https://doi.org/10.1093/neuonc/noag160
+- ⏭️ PNH complement/inflammasome medRxiv preprint (JHU-corr) — no asset, no portfolio touch — passed.
+- ❌ hLMR1-adjacent off-thesis JHU peer-reviewed items (autoimmune-encephalitis score, GLP-1 adhesive-capsulitis letter, CBT-homework meta-analysis) — discarded.
+
+Second consecutive thin-preprint week; both leads are peer-reviewed rather than preprint. Tight two-pick episode over off-thesis padding, per PIPELINE.
+=== 2026-07-22T02:22:44-07:00 done  blackbird-brief (exit 0) ===

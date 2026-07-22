@@ -5,7 +5,74 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-21 (Tuesday Sourcing Radar — DRY PREPRINT WEEK. Full bioRxiv/medRxiv
+_Last verified: 2026-07-22 (Wednesday Sourcing Radar — SECOND consecutive thin preprint week.
+Full bioRxiv/medRxiv sweep of the 2026-07-18→22 window (696 bioRxiv + 183 medRxiv records pulled
+via api.biorxiv.org details API, filtered on author_corresponding_institution) returned NO
+JHU/UMB/Lieber corresponding-author preprint with a commercializable asset — only a JHU-Biology
+C. elegans FOXO/DAF-16 dauer paper (already logged 07-21, no drug hook), a JHU-corresponding
+medRxiv PNH-complement mechanistic rebuttal ("Complement drives PNH red cell hemolysis
+independently of inflammasome activation," 10.64898/2026.07.20.26358486 — argues against the
+NLRP3-Caspase-8 "spectosis" model; no discrete JHU asset, touches no Blackbird program; PASSED),
+and University-of-Maryland-COLLEGE-PARK items (out of scope — not UMB medical). So two
+PEER-REVIEWED JHU picks, both published 2026-07-21. **Pick 1 (LEAD, novel-target sourcing lead,
+FULL TEXT READ)** — Jaso-Vera ME first + Ruan X senior corresponding (Division of Endocrinology,
+Diabetes & Metabolism, Johns Hopkins School of Medicine + Institute for Fundamental Biomedical
+Research, Johns Hopkins All Children's Hospital, St. Petersburg FL), *PLoS One* 21(7):e0353674,
+2026-07-21 (DOI 10.1371/journal.pone.0353674; PMID 42479790; open access), "hLMR1, a
+hepatocyte-specific long noncoding RNA that represses amino acid catabolism through pre-mRNA
+interaction in human liver." **COI verbatim "The authors have no relevant financial or
+non-financial interests to disclose"; NO patents mentioned = JHTV provisional window likely still
+open.** Funding: JHU institutional + AHA 23SCEFIA1156649 (Ruan) + AHA 24DIVSUP1291162 (Jaso-Vera)
++ JHACH ACRI fellowship (Takaoka) + NIH DK099257 (Soto-Gutierrez, Pitt) + Pitt Center for
+Transcriptional Medicine. **Science:** hLMR1 = "human liver metabolic regulator 1," a
+hepatocyte-specific AND human-specific lncRNA acting as a BRAKE on hepatic amino-acid catabolism +
+ureagenesis — the pathways impaired-with-no-prior-molecular-explanation in MASLD/MASH. Humanized-liver
+mouse (human hepatocytes 15–80% of liver by circulating human albumin): knockdown broadly upregulates
+AA-degradation genes (SDS, GLS2, AASS) + urea-cycle enzymes (ASS1, CPS1, ARG1). Mechanism = hLMR1
+base-pairs to the pre-mRNAs of those genes via a 12-nt complementary motif (nt 587–598);
+full-length overexpression completely blocks glucagon-induced SDS/CPS1/HGD, Δ587–598 mutant has
+NO effect. Human relevance: expression climbs healthy→MASH reciprocal to SDS/ASS1; one-week
+low-carb intervention lowers hLMR1 + raises catabolic enzymes. **Blackbird thesis:** first-in-class
+(not me-too) liver-restricted human-specific REPRESSOR RNA → you win by knocking it down; authors
+explicitly nominate ASO or GalNAc-conjugated siRNA (verbatim: "pharmacological suppression of
+hLMR1—using antisense oligonucleotides or GalNAc-conjugated siRNAs—could simultaneously ameliorate
+hyperlipidemia and hyperglycemia") = the de-risked Ionis/Alnylam GalNAc-to-liver playbook pouring
+drug into exactly and only the cell type this target lives in. MASH field (resmetirom/Madrigal
+approved + FGF21/incretin crowd) ALL works lipid/fibrosis — nobody drugs hepatic NITROGEN
+metabolism; AA/urea-cycle arm also opens a hyperammonemia / urea-cycle-disorder ORPHAN lane
+(liver siRNA restoring ureagenesis = clean orphan story). Early (target validation in humanized
+mouse, no therapeutic molecule yet) but right stage for a venture studio — found-a-company around
+ownable foundational biology. **Actions:** Eddie — Ruan + JHTV filing-status conversation,
+TIME-SENSITIVE (no patents disclosed). Avi/Yixuan — target-novelty + freedom-to-operate diligence,
+is the 587–598 pre-mRNA-hybridization mechanism defensible + modality-agnostic; human-specificity
+as both moat AND preclinical-model constraint (humanized-liver mice only). Added as new §2b
+"Ruan lab JHU Endocrinology hLMR1 hepatocyte-specific liver-lncRNA metabolic-target platform
+(oligonucleotide-tractable, MASLD/MASH + urea-cycle-disorder lanes)" entry; Xiangbo Ruan added to
+tracked-PI list. **Pick 2 (translational watch / cross-institution partner item, ABSTRACT-GROUNDED
+— OUP full text CAPTCHA-gated this run, corresponding author + rich abstract obtained)** —
+Geethadevi A first + Cole PA (Harvard Medical School/Brigham & Women's) + Rubens J (NOW AT PFIZER
+INC.) + Raabe EH senior corresponding (Division of Pediatric Oncology, JHU School of Medicine +
+Johns Hopkins Hospital + Department of Pathology, JHU SoM; email at jhmi.edu) + Alani RM
+co-corresponding (Department of Dermatology, Boston University), *Neuro-Oncology* advance access
+2026-07-21 (DOI 10.1093/neuonc/noag160; PMID 42479134), "The CoREST complex inhibitor, corin,
+decreases tumor growth, increases cellular differentiation and extends lifespan in ATRT xenograft
+models." **Science:** ATRT (most common malignant infant brain tumor) driven by SMARCB1 loss →
+crippled SWI/SNF → dependence on the CoREST repressor complex; corin = bifunctional small molecule
+tethering an LSD1 inhibitor to an HDAC1/2 inhibitor. Inhibits ATRT growth across every epigenetic
+subgroup, drives neuronal differentiation + apoptosis, increases chromatin accessibility at
+neuronal-differentiation/synaptic genes (ATAC-seq + RNA-seq), suppresses orthotopic tumor growth
+with significant lifespan extension; on-target PD via increased H3K9ac + H3K4me1 in xenografts;
+RCOR2 knockdown phenocopies corin + desensitizes cells = CoREST-complex target validation.
+**Blackbird read (CANDID / IP-caveated):** enormous unmet need + real rare-pediatric-disease
+PRIORITY-REVIEW-VOUCHER economics, BUT corin is NOT a JHU molecule — it is Philip Cole's compound
+and Cole is now at Harvard/BWH, so composition-of-matter sits elsewhere; JHU owns the USE (the
+CoREST-dependency-in-SMARCB1-null-tumors thesis + ATRT method-of-treatment). Cross-institution
+licensing/partnering play, not a clean spin-out; broader LSD1-inhibitor field already clinical-stage.
+Intelligence note: co-author Jeffrey Rubens now at Pfizer (pediatric-neuro-oncology talent flow).
+Added as new §2b "Raabe lab JHU Pediatric Oncology CoREST/corin differentiation-therapy in
+SMARCB1-null ATRT (use-not-composition IP; Cole/Harvard molecule)" entry; Eric Raabe added to
+tracked-PI list. Watch + relationship item, NOT the founding opportunity Pick 1 is.
+Previously verified 2026-07-21 (Tuesday Sourcing Radar — DRY PREPRINT WEEK. Full bioRxiv/medRxiv
 sweep of the 2026-07-17→21 window returned NO JHU/UMB/Lieber corresponding-author preprint with
 a commercializable asset (only strictly-qualifying in-window JHU-corresponding preprint was
 John K. Kim JHU Biology C. elegans FOXO/DAF-16 dauer developmental biology, 10.64898/2026.07.18.739353,
