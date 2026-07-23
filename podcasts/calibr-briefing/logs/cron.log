@@ -2504,3 +2504,31 @@ Shortlist (all July 21 2026 unless noted):
 - Jasper/Kira merger — dropped (covered July 20)
 - Xaira / Foresite portfolio — no fresh July 21–22 news; used as spotlight comparison context
 === 2026-07-22T02:27:36-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-23T02:20:11-07:00 start calibr-briefing ===
+Both episodes are written and staged for the batch pipeline. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the scripts plus the transient `.rss-item.xml` and `.commit-msg` stubs and stopped short of TTS, R2 publish, feed edits, and commit — the orchestrator (`publish_pending.py`) handles those after batch TTS.
+
+## Calibr briefing — Thursday, July 23, 2026
+
+**Episode 1 — Headlines (5 items):**
+1. **Trump's 100% generic-drug tariff** (Tue Jul 22) — 0% for two years from Aug 1, then 100%, then 200%; aimed at reshoring the segment that's ~90% of US prescriptions and >50% India-supplied.
+2. **FDA approves GSK's Jideytro (zidesamtinib)** — ROS1-selective TKI for pretreated ROS1+ NSCLC, ~2 months ahead of its Sep 18 date (ARROS-1 ORR 44%); GSK's first lung-cancer drug, from the ~$10.6B Nuvalent buyout.
+3. **Anthropic deepens rare-disease drug discovery** — Claude-credit grants + its own preclinical programs (bought Coefficient ~$400M; Novartis CEO on board) — AI focus area.
+4. **House passes FDA Modernization Act 3.0** — allows non-animal/computational testing methods; regulatory tailwind for in-silico development.
+5. **Arrowhead plozasiran** — spotlight teaser.
+
+**Episode 2 — Spotlight:** Arrowhead's positive Phase 3 SHASTA-3/4 for plozasiran (quarterly APOC3-silencing RNAi, already approved as Redemplo in ultra-rare FCS) in severe hypertriglyceridemia — TGs down 79%/81%, a statistically significant 78% cut in acute pancreatitis, and a sharpening two-horse APOC3 race with Ionis's olezarsen on dosing, tolerability, and price.
+
+### Candidate funnel
+Sources scanned: BioPharma Dive (homepage, fetched OK), Fierce Biotech / Endpoints (403 — homepages blocked to this IP; recovered items via targeted WebSearch, no retry loop), STAT, GSK/Arrowhead/Ionis IR + trade press (BioPharm Intl, Pharmaceutical Technology, CancerNetwork, France24/Bloomberg/CBS on tariffs). Arrowhead IR press-release WebFetch timed out once; substituted BioPharma Dive's full write-up for spotlight detail.
+
+Shortlist (July 22–23, fresh; excludes yesterday's Novo-v-Lilly / GSK-camlipixant / Agios / Novartis-Q2 / Dimension items):
+- Trump 100% generic-drug tariff — france24.com/…/20260722-trump-announces-100-tariffs — **CHOSEN (headline 1)**
+- GSK Jideytro/zidesamtinib FDA approval — gsk.com press release / cancernetwork.com — **CHOSEN (headline 2)**
+- Anthropic rare-disease drug programs + grants — statnews.com/2026/07/21 — **CHOSEN (headline 3)**
+- FDA Modernization Act 3.0 House passage — fiercebiotech.com/cro/… — **CHOSEN (headline 4)**
+- Arrowhead plozasiran SHASTA-3/4 sHTG — biopharmadive.com/news/…/825909 / ir.arrowheadpharma.com — **CHOSEN (headline 5 + SPOTLIGHT)**
+- Vertex–Crinetics $10B ($85/sh, Palsonify/paltusotine) — dropped: deal dates to Jul 6, not fresh
+- Retatrutide TRIUMPH-1 obesity (~28%) / ASCO GLP-1 cancer data — dropped: not clearly Jul 22–23
+
+Nothing skipped for content-bar reasons; source outages (Fierce/Endpoints 403, one IR timeout) were worked around, not fatal.
+=== 2026-07-23T02:31:06-07:00 done  calibr-briefing (exit 0) ===
