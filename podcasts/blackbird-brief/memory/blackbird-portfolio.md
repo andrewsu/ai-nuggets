@@ -5,7 +5,80 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-22 (Wednesday Sourcing Radar — SECOND consecutive thin preprint week.
+_Last verified: 2026-07-23 (Thursday Sourcing Radar — THIRD consecutive thin preprint week.
+Four-day bioRxiv/medRxiv corresponding-author sweep (2026-07-18→23; 962 bioRxiv + 262 medRxiv
+records via api.biorxiv.org details API, filtered on author_corresponding_institution) returned NO
+JHU/UMB/Lieber corresponding-author preprint with a commercializable asset: a JHU-Biology
+FOXO/DAF-16 C. elegans dauer paper (already logged, no drug hook), a JHU-corresponding iPSC-cardiomyocyte
+maturation preprint (10.64898/2026.07.21.739858, "In Vivo Bioincubation Promotes Maturation of Human
+iPSC-Derived Cardiomyocytes in Neonatal Rat and Pig Hearts," Kwon lab, v1 2026-07-22 — ABSTRACT-ONLY
+DEFERRAL, body not yet rendered; developmental-biology platform, no drug — RE-CHECK once full text
+renders), a zebrafish swim-bout NN methods v3, and JHU/UMB-corresponding clinical/epi medRxiv items
+(staged PCI+TAVR renal outcomes; PNH complement-vs-inflammasome mechanistic [logged/passed 07-22];
+social-adversity aging clocks; UMB women's-birth-experiences global-health — all no asset). So two
+peer-reviewed Johns Hopkins picks with precise vetting notes. **Pick 1 (LEAD as company-shaped
+sourcing FLAG — NEWSROOM/ABSTRACT-GROUNDED, PNAS body PAYWALLED, NOT a full read) — DCTPP1 inhibitors
+as a decitabine resistance-breaker.** Glenn Hauk (first) + Jianyong Liu + William G. Nelson (Kimmel
+Cancer Center director) + Srinivasan "Vasan" Yegnasubramanian (co-corresponding; Oncology/Pathology/
+Radiation Oncology; director, inHealth precision medicine; syegnasu@jhmi.edu) + James M. Berger
+(co-corresponding; director, JHM Institute for Basic Biomedical Sciences; jmberger@jhmi.edu), all JHU
+School of Medicine + Sidney Kimmel Comprehensive Cancer Center. "Structural and cellular insights into
+DCTPP1 antagonists and their synergistic action with DNMT inhibitors," *PNAS* 123(25):e2534029123,
+published 2026-06-15 (DOI 10.1073/pnas.2534029123; PMID 42296362; PDB 9YSM–9YSP). **Vetting gate note:
+PNAS body subscription-gated — isOpenAccess=N, not in PMC/EPMC, no preprint (EPMC MED-only record); no
+biorxiv preprint of this exact work (the 2024 bioRxiv "triptolide/DCTPP1" is a DIFFERENT paper).
+Briefed from the authors' full Significance section + Abstract + Johns Hopkins/EurekAlert press release
+(dated July 15, 2026; hopkinsmedicine /2026/07/ + eurekalert 1136235 + medicalxpress) — treated as a
+flag-and-chase lead, explicitly NOT presented as a full-text deep read, to honor PIPELINE full-text
+eligibility gate; hence not the formal full-text lead pick (that is Pick 2, read in full).**
+**COI verbatim: "The authors have filed for a provisional patent related to this work."** Funding:
+NCI R35-CA263778 (Berger); P50-CA272391 prostate SPORE (Yegnasubramanian); P30-CA006973 (Sidney Kimmel
+CCC); Commonwealth Foundation + Irving Hansen Foundation + Prostate Cancer Foundation (Yegnasubramanian);
+JHU ChemCore ran the HTS. **Science (per Significance+Abstract):** DCTPP1 = nucleotide pyrophosphatase
+surveilling the dNTP pool, hydrolyzing deoxy-5-methylcytosine triphosphates + other modified nucleotides
+to block misincorporation into DNA (preserves genomic stability + epigenetic programming). Because
+nucleoside-analog DNMT inhibitors (decitabine, azacitidine) work BY misincorporation into DNA, DCTPP1
+is a cell-intrinsic RESISTANCE factor degrading their efficacy → inhibit DCTPP1 to potentiate the drug.
+10,000-compound HTS yielded existing + previously-unreported inhibitor classes at sub-micromolar
+potency; X-ray crystallography solved THREE distinct classes bound in DCTPP1's nucleotide pocket
+(contacting a tryptophan pair + two critical histidines mimicking substrate); biochemical assays w/
+modified scaffolds confirmed interactions; cell-based = significant synergy of lead inhibitors +
+decitabine blocking PROSTATE cancer cell growth; loss/gain-of-function confirmed DCTPP1-dependence.
+**Blackbird thesis:** resistance-breaker layered on ALREADY-APPROVED oncology drugs (installed MDS/AML
+hypomethylating-agent market + demonstrated solid-tumor/prostate path); novel-target + tool inhibitors
+already at crystal-structure resolution + provisional patent ALREADY FILED (live JHTV window); NCE value
+capture (the inhibitor) on a generic backbone; heavyweight founding/SAB nucleus (Berger structural
+biology + IBBS director; Yegnasubramanian inHealth + prostate/epigenetics; Nelson Kimmel director).
+Diligence gaps before real: chemical-matter NOVELTY + freedom-to-operate (authors describe BOTH new and
+known inhibitor classes) + combination-drug regulatory/pricing story. **Actions:** Eddie — JHTV filing
+status + whether Berger/Yegnasubramanian are contemplating a vehicle. Avi/Yixuan — pull full paper +
+patent when it publishes; pressure-test chemistry novelty + FTO. Berger (already logged 07-21 as ORC–HP1
+co-author, corr. Botchan) upgraded to senior-corresponding on an oncology druggable-target paper; add
+Yegnasubramanian + Nelson + DCTPP1-inhibitor/decitabine-potentiation target to tracked-PI/target list.
+**Pick 2 (fresh, FULL TEXT READ — the formal full-text pick; platform-watch/relationship, NOT a
+spinout) — Jain lab JHU host-directed TB-meningitis therapy in a new human brain-organoid model.**
+Carlos E. Ruiz-Gonzalez (first) + Medha Singh + … William R. Bishai + Sanjay K. Jain (senior
+corresponding), JHU (Center for Infection and Inflammation Imaging Research). "Host-directed treatments
+for tuberculous meningitis utilizing a multi-platform approach across mouse and human models," *Nat
+Commun* 2026-07-21 (DOI 10.1038/s41467-026-75202-6; PMID 42481504; nature.com OA via jina proxy —
+idp.nature.com auth-wall on direct fetch, not yet in PMC). **COI verbatim: "The authors declare no
+competing interests."** Funding: NIH R01-AI145435-A1 + R01-AI153349 + R56-AI179012-A1 + R01-AI190038 +
+S10-OD030381-A1 (all S.K.J.) + NIAID intramural. **Science:** TB-meningitis damage is CNS-neuroinflammation-
+driven; steroids (dexamethasone) cut mortality ~25% but not neuro deficits. 12 immunomodulatory drugs
+(11 classes; FDA-approved or in trials elsewhere) tested as isoniazid adjuncts across a mouse TB-meningitis
+model (mortality/neuro-deficit/MRI endpoints) + a NEWLY-DEVELOPED immune-vascularized human brain organoid
+model of TB meningitis + patient PBMCs. Bestatin (aminopeptidase inhibitor), imatinib (TKI), roflumilast
+(PDE-4 inhibitor), and a PARP-1 inhibitor significantly reduced BOTH mortality and neuro deficits vs
+the dexamethasone reference, via neuroinflammation suppression (abstract also named thalidomide/pomalidomide
++ semaglutide as outperforming SOC). **Blackbird read (CANDID):** drugs are repurposed generics (no COI,
+no patent) + TB meningitis is a global-health indication (BARDA/foundation economics, not venture returns)
+= NOT a drug spin-out. The ownable/licensable asset is the immune-vascularized human brain organoid
+NEUROINFLAMMATION screening chassis — adjacent to tracked Baltimore imaging/model platforms (Walczak/Liang
+MIPOT, Kalhor 3DEEP). Plus a relationship worth having (Jain/Bishai infectious-disease + molecular-imaging
+group; Jain has imaging-tracer IP history). Log as platform-watch + relationship item; look if the organoid
+model is spun out/licensed as a neuroinflammation screening tool. Add Sanjay K. Jain (JHU CIIIR) to
+tracked-PI list as neuroinflammation brain-organoid-platform lead.
+Previously verified 2026-07-22 (Wednesday Sourcing Radar — SECOND consecutive thin preprint week.
 Full bioRxiv/medRxiv sweep of the 2026-07-18→22 window (696 bioRxiv + 183 medRxiv records pulled
 via api.biorxiv.org details API, filtered on author_corresponding_institution) returned NO
 JHU/UMB/Lieber corresponding-author preprint with a commercializable asset — only a JHU-Biology

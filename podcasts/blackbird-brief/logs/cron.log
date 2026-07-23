@@ -959,3 +959,33 @@ SKIP_TTS mode — I'm done with the write phase (script + two stubs + memory upd
 
 Second consecutive thin-preprint week; both leads are peer-reviewed rather than preprint. Tight two-pick episode over off-thesis padding, per PIPELINE.
 === 2026-07-22T02:22:44-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-23T02:10:11-07:00 start blackbird-brief ===
+Production complete for this thin Thursday. Per `SKIP_TTS=1` I've written the script and the two stub files (`.rss-item.xml`, `.commit-msg`), skipped TTS/publish/feed/commit (the orchestrator handles those after batch TTS), and updated the portfolio memory. XML validates; no bare ampersands.
+
+---
+
+## Blackbird Brief — Sourcing Radar, Thursday 2026-07-23 (final run summary)
+
+**Episode written (no commit — SKIP_TTS batch mode):**
+`2026-07-23-radar-jhu-dctpp1-decitabine-synergy-jain-tbm-brain-organoid-hdt` (Sourcing Radar; ~5–6 min, short by design — third consecutive thin preprint week). Stubs: `.rss-item.xml` (placeholders `__LENGTH__`/`__DURATION__`), `.commit-msg`.
+
+**Candidate funnel:**
+
+- **bioRxiv sweep** (2026-07-18→23, 962 records via details API, corresponding-institution filter): 5 Baltimore-corresponding, 0 with a commercializable asset.
+  - `10.64898/2026.07.18.739353` FOXO/DAF-16 C. elegans dauer (JHU Biology) — no drug hook, already logged. Rejected.
+  - `10.64898/2026.07.21.739858` iPSC-cardiomyocyte in-vivo bioincubation maturation (JHU, Kwon) — **v1 abstract-only, body not rendered → deferral; re-check.**
+  - `10.64898/2026.01.11.698899` zebrafish swim-bout NN (v3, methods) — rejected.
+  - `10.64898/2026.05.07.721507` pain-trajectory Beta-Binomial stats (v2) — rejected.
+- **medRxiv sweep** (262 records): JHU staged PCI+TAVR renal outcomes (clinical), PNH complement-vs-inflammasome (logged/passed 07-22), social-adversity aging clocks (epi), UMB women's-birth-experiences conflict settings (global health) — 0 assets.
+- **PubMed** (JHU/UMB/Lieber + therapeutic terms, 07-19→23; 42 hits): mostly multi-center clinical/meta-analyses. One JHU-corresponding therapeutic paper → Jain TB-meningitis (selected, Pick 2). Corin/ATRT and Islex/ZnT8 already covered.
+- **Institutional newsroom** (Hopkins Medicine, July): **DCTPP1 inhibitor / decitabine synergy** (PNAS, June 15; newsroom push July 15) → selected as Pick 1 (flag-and-chase).
+
+**Substantive shortlist:**
+1. ✅ **CHOSEN (Pick 1 / lead commercial flag)** — DCTPP1 antagonists synergize with decitabine, Hauk/Nelson/Yegnasubramanian/Berger, JHU SoM + Kimmel — https://doi.org/10.1073/pnas.2534029123 . Novel druggable target, 3 crystal-structure inhibitor classes, **provisional patent filed**. *PNAS body paywalled (not OA, no PMC/preprint) → briefed from Significance + Abstract + JHU press; explicitly a flag-and-chase, not the full-text pick.*
+2. ✅ **CHOSEN (Pick 2 / formal full-text pick)** — Jain lab host-directed TB-meningitis therapy + new immune-vascularized human brain-organoid model, JHU — https://doi.org/10.1038/s41467-026-75202-6 . Read in full; repurposed generics + global-health indication → platform-watch on the organoid chassis, not a spinout.
+3. ⏸ Deferred — JHU iPSC-cardiomyocyte bioincubation preprint (abstract-only; re-check when full text renders).
+
+**Memory updated:** portfolio `_Last verified_` → 2026-07-23; DCTPP1 target + Yegnasubramanian + Nelson + Sanjay Jain added to tracked-PI/target list; Berger upgraded to senior-corresponding on an oncology target paper; cardiomyocyte preprint flagged for re-check.
+
+**Compliance note:** the full-text eligibility gate is honored — the formal full-text pick (Jain) was read in full; DCTPP1 is presented transparently as a newsroom/abstract-grounded flag with the paywall stated in-script, not summarized as a paper I read in full.
+=== 2026-07-23T02:28:29-07:00 done  blackbird-brief (exit 0) ===
