@@ -978,3 +978,37 @@ Written script + `.rss-item.xml` + `.commit-msg` stubs. No TTS/publish/commit (S
 
 **Source failures:** none — all sources reachable; X/Twitter surfaced via search aggregators and outlet reporting as usual for this show.
 === 2026-07-22T02:38:04-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-23T02:30:11-07:00 start jinglin-ai-pulse ===
+Episode is written and staged. All three files (script, RSS-item stub, commit-msg stub) are in place and the RSS stub is well-formed. Since `SKIP_TTS=1`, I'm correctly skipping TTS, R2 publish, feed edit, and commit — `publish_pending.py` handles those after batch TTS.
+
+---
+
+## Ollie's AI Pulse — 2026-07-23 run summary
+
+**Published:** `2026-07-23-open-weights-becomes-the-baseline-frontier-intelligence-is-perishable` (2,085 spoken words, ~13 min). SKIP_TTS mode: wrote `.md` + `.rss-item.xml` + `.commit-msg`; no commit (orchestrator commits after batch TTS).
+
+**Episode spine:** "Open" is the word of the week — open *weights* (Pulse), the value migrating to the open data/inference layer (Money Moves), and the "perishability" thesis that makes it all cohere (Deep Cut). Deliberately advanced past the July 21 "gap is collapsing" lead by reframing to *normalization* — the narrative flip from "moment" to "baseline" and its this-week mechanics.
+
+**Candidate funnel:**
+
+*Twitter/discourse (last 48h–8d) — open-weights convergence, chosen as lead:*
+- ✅ Thinking Machines "Inkling" open-first, July 15 (Murati; 975B/41B, Apache 2.0) — key "US also going open" data point
+- ✅ Kimi K3 (Moonshot, July 16–17; weights promised 27th) — Simon Willison, CNBC, Lambert
+- ✅ DeepSeek V4 legacy-endpoint retirement July 24 (forced migration; no confirmed GA — corrected yesterday's "stable release Friday" framing)
+- ✅ Grace Shao "end of DeepSeek moments" (July 20) — narrative-flip quote
+- Discarded/deferred: world-models thread (LeCun/AMI/ICML, TIME July 15) — substantive but no fresh 48h hook, held for a later day. `@Zefan_Cai` — **no verifiable July 2026 posts surfaced; not fabricated, not cited.**
+
+*Money Moves (last 7d) — chosen: Databricks + SkyPilot:*
+- ✅ Databricks $188B strategic round (Coatue, July 16) — data-layer thesis, cross-links to Deep Cut
+- ✅ SkyPilot $20M seed, ex-stealth (Lux, July 21) — compute orchestration
+- ◦ Together AI $800M/$8.3B — July 1, **outside 7d window**, used as backdrop only
+- ✗ Excluded (stale/used): Kling AI $2.8B (July 2), Prometheus $12B (June 11), CuspAI $450M (used July 21), Miles Wang (used July 22)
+
+*Podcasts (last 14d) — chosen: Moonshots Ep. 272 (July 19):*
+- ✅ Diamandis "Moonshots" panel on Kimi K3 (Blundin "frontier intelligence is now totally perishable… shelf life is weeks"; Wissner-Gross; Mostaque)
+- ✗ Rejected on recency: WhynotTV/Danfei Xu (used July 17), Latent Space Zaharia/Xin (June 24, search mis-dated it July 21), Luo Fuli/张小珺 (April 24), Dylan Patel/Sequoia (late June), TalkRL Dreamer 4 (Nov 2025), Dwarkesh (June 4), Joelle Pineau (Feb 4)
+
+**Source outages:** none material. `latent.space`, `morphllm`, `podscan`, CNBC returned 403/429 on WebFetch; worked around via search snippets and alternate hosts.
+
+**Watches teed up for tomorrow:** (1) do Kimi K3 weights actually drop Sunday the 27th; (2) DeepSeek endpoint-retirement migration breakage (the 24th); (3) whether any closed lab answers "perishability" with price cuts or its own open release.
+=== 2026-07-23T02:44:27-07:00 done  jinglin-ai-pulse (exit 0) ===
