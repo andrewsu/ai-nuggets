@@ -2726,3 +2726,35 @@ Files written to `scripts/`:
 
 No source hard-failed this run.
 === 2026-07-22T02:09:55-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-23T02:00:11-07:00 start biomedical-agentic-ai ===
+Everything validated. Per `SKIP_TTS=1` mode, I've written the script and the two transient stubs and stopped before TTS/publish/feed/commit — the orchestrator handles those.
+
+---
+
+## Run summary — biomedical-agentic-ai — 2026-07-23
+
+**Selected:** NLKGQ — "Natural Language Access to Domain-Specific Metadata: A Reusable Framework for LLM Query Generation" (arXiv 2607.18029, posted 2026-07-20, Max Planck Institute for Biological Cybernetics). Full text read via arXiv HTML. Contrarian, on-brand for the KG/ontology/data-integration audience: a well-designed OWL ontology lets a local LLM write correct SPARQL zero-shot (100% on 21 neuroimaging competency questions), no fine-tuning/RAG/multi-agent — the ontology's human-readable annotations dominate accuracy, and OWL beats auto-generated SQL 100% vs 57%.
+
+**Candidate funnel:**
+
+- **bioRxiv** (details API, 2026-07-20→07-23): 836 unique preprints pulled (full collection, 29 pages of 30; two pages needed a short-timeout re-fetch after two 2-min curl-batch timeouts). 66 keyword hits; substantive agentic/KG shortlist:
+  - ChatGEM: agentic architecture for genome-scale metabolic model simulation (10.64898/2026.07.20.739662, v2) — **strongest bioRxiv item, but DEFERRED: full text unavailable (body not rendered; fetch_preprint fell through to abstract-only). Re-check on a later day — likely eligible once bioRxiv renders the v2 body.**
+  - Blood-brain-barrier agent-based model (2026-07-21) — "agent-based model," not agentic AI; off-brand.
+  - GeneAutomate (browser annotation platform), ProtSyntax / GDTR / CpGPT (foundation models, not agentic) — not agentic-AI-applied.
+- **arXiv** (shared daily cache, 500 entries): biomedical-agentic shortlist —
+  - Natural Language Access to Domain-Specific Metadata / NLKGQ (2607.18029) — **CHOSEN.**
+  - Do AI-Native Biotechs Need Departments? Company World Models for drug development (2607.18696) — strong, novel, but org/business-strategy angle, less core to KG/ontology emphasis.
+  - PEARL: Auditable Repair for Scientific Reasoning Graph Extraction (2607.17917) — KG-adjacent but general science, not specifically biomedical.
+  - PathAgentBench (2607.19261), MedDDC-Eval (2607.18999) — medical-agent benchmarks; solid but less aligned than NLKGQ.
+  - BioSecBench-Surveillance (2607.19262) — already shipped in yesterday's episode; excluded.
+- **PubMed** (edat 2026-07-18→07-23): 214 hits, top 28 metadata reviewed. Mostly clinical-application pieces (LLMs for dental injuries, SPECT workflow blueprint, "AI dilemma in pediatrics") — none matched the agentic-AI-for-biomedical-research bar as well as NLKGQ.
+- **ChemRxiv** (`site:chemrxiv.org` search): all hits out of the 4-day window (May/Mar/Feb 2026) — none fresh.
+- **News / product launches & policy pages:** no fresh (last-3-days) agentic-biomedical-AI launch or funder announcement surfaced that beat the arXiv pick.
+
+No source hard-failed this run (two bioRxiv curl batches timed out at 2 min but completed on re-fetch; full 836-entry collection was covered).
+
+**Files written** (SKIP_TTS mode — no TTS/publish/feed/commit; orchestrator will handle):
+- `scripts/2026-07-23-nlkgq-owl-ontology-llm-sparql-zero-shot.md`
+- `scripts/2026-07-23-nlkgq-owl-ontology-llm-sparql-zero-shot.rss-item.xml` (XML validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `scripts/2026-07-23-nlkgq-owl-ontology-llm-sparql-zero-shot.commit-msg`
+=== 2026-07-23T02:11:36-07:00 done  biomedical-agentic-ai (exit 0) ===
