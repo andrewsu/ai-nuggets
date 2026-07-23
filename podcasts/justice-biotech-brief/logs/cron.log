@@ -1451,3 +1451,24 @@ Source: bioRxiv 10.64898/2026.07.15.738733 v1, posted 2026-07-21 (Haichang Li la
 
 Selected the measles/MG53 preprint as the single best in-window item whose full text is readable: squarely in Justice's cancer-immunotherapy/checkpoint lane, novel arming payload, mechanism pinned down, clean anti-PD-L1 combination readout.
 === 2026-07-22T02:50:49-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-23T02:40:11-07:00 start justice-biotech-brief ===
+The episode is ready. Stub files written; XML validated; SKIP_TTS mode so the orchestrator handles TTS, publish, feed, and commit.
+
+## Run summary — justice-biotech-brief, 2026-07-23
+
+**Selected:** Ivonescimab — Western OS hazard ratio in Phase 3 HARMONi matures to 0.76, matching Asia across three data cutoffs; de-risks the PD-1×VEGF bispecific's Nov 14 2026 FDA decision in EGFR-mutant NSCLC (Summit Therapeutics press release, July 22 2026). Squarely Justice's #1 interest (VEGF×PD-(L)1); fresh in-window news event; primary source read in full via multiple accessible mirrors (CancerNetwork, INN, Applied Clinical Trials) after the corporate IR page WAF-blocked automated fetch.
+
+**Candidate funnel:**
+
+bioRxiv (2026-07-22 + 2026-07-23, full collection pulled: 279 entries across both days, all paginated) — relevance survivors after discarding false keyword hits ("cart"→white sharks, "jak"→ELK3/TSLP incidental):
+- Mechanisms regulating combination effect of ADCs and cancer immunotherapy (10.64898/2026.07.17.738956, posted 07-22) — highly relevant (ADC/TCE + ADC/CPI synergy, TNF/TNFR + M6PR mechanisms). **Deferred: full text unavailable** — bioRxiv body not yet rendered, `fetch_preprint.py` fell through to abstract-only channel 3. Ineligible today per full-text gate; re-check on a later day.
+- A Synthetic Microbial Therapy Rewires Antitumor Immunity Across Multiple Cancer Types (10.64898/2026.07.19.735925, posted 07-22) — checkpoint/immunotherapy adjacent, secondary relevance; not pursued once the ivonescimab news dominated.
+- AI-Driven Design of Nanobinders Targeting the TSLPR Heterodimer Interface (10.64898/2026.07.20.739581, posted 07-22) — autoimmune/Type-2-inflammation adjacent (TSLP–JAK), tangential to core beat.
+
+News / press (Fierce Biotech, Endpoints, STAT, BioPharma Dive, IR/SEC):
+- **Ivonescimab HARMONi updated OS — Summit, July 22 2026 — CHOSEN.**
+- CS2009 PD-1/VEGF/CTLA-4 trispecific highlights — out of window (ASCO 2026, June).
+- General web/news indexing lagged for 07-22/07-23 (mostly stale roundups); no other in-window item beat the pick.
+
+Policy/funder pages (ARPA-H / NIH / NSF): no in-window item matching the beat surfaced. No source hard-failed this run.
+=== 2026-07-23T02:46:46-07:00 done  justice-biotech-brief (exit 0) ===
