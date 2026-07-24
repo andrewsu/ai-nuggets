@@ -2653,3 +2653,35 @@ All shortlisted items opened in full via `fetch_preprint.py` (bioRxiv) or WebFet
 === 2026-07-21T02:00:09-07:00 paused receptor-and-reason (18.71d cold, paused_at=1784278808) ===
 === 2026-07-22T02:00:09-07:00 paused receptor-and-reason (19.71d cold, paused_at=1784278808) ===
 === 2026-07-23T02:00:11-07:00 paused receptor-and-reason (20.71d cold, paused_at=1784278808) ===
+=== 2026-07-24T02:00:08-07:00 resumed receptor-and-reason (fresh GET after pause; removed pause.json) ===
+=== 2026-07-24T02:50:08-07:00 start receptor-and-reason ===
+The MEMORY.md index entry for this memory already exists (the hook mentions r.jina.ai). Everything is done. Here is the run summary for the audit log.
+
+---
+
+## Receptor & Reason — 2026-07-24 run complete (SKIP_TTS mode)
+
+**Status:** Show resumed after the download-driven auto-pause (last real episode 2026-07-16; `2026-07-17-goodbye` + `pause.json` deleted upstream → resume). Wrote script, `.rss-item.xml` stub (with `__LENGTH__`/`__DURATION__` placeholders), `.commit-msg` stub, and appended the 10-item dedup record to `state/shipped.jsonl`. Did **not** run TTS/publish/feed-edit/commit — the orchestrator handles those.
+
+**Episode:** 10 items, ~15 min, all fresh within the 7-day window (2026-07-17 → 07-24); no Tier 4 needed.
+
+### Candidate funnel
+- **bioRxiv (Tier 1/2/3):** 1,421 unique preprints scanned across 2026-07-17→24 (full collection, paginated at 30/page). 515 passed CNS/pharmacology relevance and dedup filter; ~55 shortlisted; 10 selected. All chosen items had full text confirmed via direct `r.jina.ai` fetch.
+- **arXiv (Tier 2):** shared daily cache (`/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries) scanned; 44 bio+agentic hits in window, but all were tangential for a CNS audience (EEG foundation models, medical-AI-agent safety, general drug-dev world models). None beat the bioRxiv Tier-1/3 crop — no arXiv item selected.
+- **Journals / Psychiatric Times / society pages / chemRxiv / industry (Tiers 1–3):** bioRxiv carried the day at the 8-12-item target; not separately exhausted.
+- **Source failures:** none. Note: `fetch_preprint.py` flaked today — its r.jina.ai channel fell through to abstract-only for *every* DOI (including old, definitely-rendered ones); direct `curl` to `r.jina.ai` returned full bodies. Worked around by fetching directly. (Memory updated.)
+
+### Selected (all → shipped.jsonl)
+1. **[CHOSEN-LEAD]** Psychedelic drug action at dendrites gated by state + 5-HT2A (Kwan lab) — `10.64898/2026.07.16.738983`
+2. **[CHOSEN]** Psilocybin asymmetric RL + mPFC recoding under uncertainty (Moghaddam lab) — `10.64898/2026.07.16.733837`
+3. **[CHOSEN]** Orexin→supramammillary threat-to-approach + accumbens dopamine — `10.64898/2026.07.18.739326`
+4. **[CHOSEN]** dHPC/BLA→NAc glutamate brakes on cannabinoid addiction — `10.64898/2026.07.17.739252`
+5. **[CHOSEN]** D1 (motivation) vs nicotinic (impulsivity) in nicotine SA — `10.64898/2026.07.16.739006`
+6. **[CHOSEN]** CBD/THC/terpene synergistic DRG nociceptor silencing — `10.64898/2026.07.17.739255`
+7. **[CHOSEN]** Nav1.7 vs Nav1.8 (suzetrigine) human DRG biophysics — `10.64898/2026.03.26.714428`
+8. **[CHOSEN]** CAFE: orthosteric-blocker trick for allosteric/cryptic co-folding (Boltz-2) — `10.64898/2026.07.19.739466`
+9. **[CHOSEN]** GEM-GPT cell-type-resolved systems-pharmacology molecule generation — `10.64898/2026.07.17.739269`
+10. **[CHOSEN-CLOSE]** Value overgeneralization tracks subclinical bipolar symptoms — `10.64898/2026.07.12.737635`
+
+Notable non-picks: cocaine-relapse mushroom-spine ensembles (`738740`), Target Preference Maps ML (`668090`), BBB agent-based model (`739661`), corticostriatal-development/alcohol-risk (`738690`), microbiome-nigrostriatal PD (`737943`) — all held as future candidates.
+=== 2026-07-24T03:03:58-07:00 done  receptor-and-reason (exit 0) ===
