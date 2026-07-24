@@ -5,7 +5,59 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-23 (Thursday Sourcing Radar — THIRD consecutive thin preprint week.
+_Last verified: 2026-07-24 (Friday Sourcing Radar — FOURTH consecutive thin preprint week.
+Four-day bioRxiv/medRxiv corresponding-author sweep (2026-07-20→24; 1072 bioRxiv + 259 medRxiv records via
+api.biorxiv.org details API, filtered on author_corresponding_institution) returned NO JHU/UMB/Lieber
+corresponding-author preprint with a commercializable asset — only items already logged: Kim JHU-Biology
+C. elegans FOXO/DAF-16 dauer (no drug hook); Kwon JHU iPSC-cardiomyocyte in-vivo bioincubation
+(10.64898/2026.07.21.739858, still ABSTRACT-ONLY, body not rendered — keep re-checking); Yi JHU zebrafish
+swim-bout NN methods v3; Chanda JHU PCI+TAVR renal-outcomes meta-analysis; Ranjan JHU PNH complement-vs-
+inflammasome (passed 07-22); Higgins-Tejera JHU social-adversity aging clocks. NOTE: the sweep regex must use a
+word-boundary for "UMB" — bare substring "umb" false-positives on "colUMBia" (all Columbia University hits this
+run were spurious). Peer-reviewed journals in-window were heavy on clinical trials / reviews / collaborator-only
+work: Azad JHU copanlisib+nivolumab MSS-CRC NEGATIVE Ph1/2 (Nat Commun, DOI 10.1038/s41467-026-72985-6, NCT03711058,
+ORR primary not met); Cell autoantibody-immunosurveillance COMMENTARY (Bastard/Casanova corr; JHU Chi V. Dang
+co-author; CDI Labs Baltimore [Tyler Hulett] co-author — CDI Labs = Baltimore proteome-array company worth noting);
+Pitt motor-thalamus DBS speech/swallowing (JHU Neurosurg co-author J.C. Ho only); Henan-led EnzGFM enzyme protein-
+language-model (JHU CS Yiqing Shen minor co-author; already logged 07-18); UMD-COLLEGE-PARK amorphous ferroelectric
+(Ren lab, out of scope — materials, not UMB medical). The Oct-2025 JHU/UMB osteosarcoma paper (Ramesh first + Aaron
+James senior, JHU Pathology; CGRP/TrkA/NGF neuron-tumor axis; bupivacaine + rimegepant repurposing reduce tumor
+innervation/angiogenesis/growth; PNAS 2025-10-28, DOI 10.1073/pnas.2500161122) RE-SURFACED via a fresh EurekAlert
+push (eurekalert 1103672) but is OUT of the recency window — repurposed generics, no IP mentioned; log as a
+neuron-cancer/CGRP-in-bone-cancer target-biology note, not eligible today. **So two watch-grade Johns Hopkins items,
+NEITHER a clean spin-out.** **Anchor (FULL TEXT READ, open access) — Green/Tzeng JHU non-viral gene-delivery plasmid
+engineering.** Jordan J. Green (senior) + Stephany Y. Tzeng, JHU School of Medicine Department of Biomedical
+Engineering (+ Oncology/Sidney Kimmel CCC, INBT, Bloomberg~Kimmel, Materials Science, Neurosurgery, Ophthalmology),
+"Engineering of episomal plasmid structure to enhance non-viral Poly(beta-amino ester) nanoparticle gene delivery to
+liver and brain cancer cells," *PLoS One* 2026-07-23 (DOI 10.1371/journal.pone.0352468). **COI verbatim: JHU has
+filed patents on the polymer tech (Green + Tzeng inventors); Green holds positions at Cove Therapeutics, Dome
+Therapeutics, and OncoSwitch Therapeutics; Tzeng is manager/co-founder of OncoSwitch Therapeutics.** Funding: NIH
+R01CA228133, R37CA246699, P41EB024495, R01EY031097, P41EB028239 + Goldhirsh-Yellin Foundation. **Science:** 14
+episomal reporter plasmids varying promoter (CMV/CAG/EF1α), backbone (Z1/pUNO1/Nanoplasmid), length (~2000–7000 bp)
+and antibiotic marker, packaged in PBAE nanoparticles, across 6 HCC lines (Hep3B; Hepa1-6; Hepa1c1c7; porcine A92/
+A272/B239) + 3 brain lines (glioma CT-2A; astrocytoma CCF-STTG1; meningioma IOMM-Lee). CMV beat CAG/EF1α at day 3;
+the minimal antibiotic-free Nanoplasmid (~2,096 bp) won %GFP+ in 5/6 HCC + gMFI in all 6 + luciferase in 2/3 brain
+lines and is the cleanest for FDA translation (no antibiotic-resistance gene). **Blackbird read (CANDID):** strong
+platform BUT incremental optimization of an ALREADY-spun-out franchise — value largely captured (Cove/Dome/
+OncoSwitch). Real value = ecosystem intelligence on a Baltimore gene-therapy company cluster from one JHU lab,
+adjacent to the tracked Mao-lab anionic-LNP delivery chassis; the antibiotic-free minimal-plasmid CMC detail is a
+de-risking data point for any non-viral program. NOT a fresh sourcing opportunity. **Action:** Eddie — map
+OncoSwitch/Dome/Cove financing + indication split. Added Jordan Green + Stephany Tzeng to tracked-PI list; Cove
+Therapeutics + Dome Therapeutics + OncoSwitch Therapeutics + CDI Labs (Baltimore) to tracked-company list. **Watch
+(ABSTRACT-ONLY — Immunity Elsevier-paywalled, NOT a full read) — BACH1 as a "pioneer repressor" of macrophage
+plasticity.** László Nagy (senior corresponding; lnagy@jhmi.edu), JHU SoM Department of Medicine / Institute for
+Fundamental Biomedical Research at Johns Hopkins All Children's Hospital (St. Petersburg FL), "The transcription
+factor BACH1 couples chromatin priming and repression to enable macrophage plasticity and adaptation," *Immunity*
+2026-07-17 (DOI 10.1016/j.immuni.2026.06.022; PMID 42468527). **Science (abstract):** heme-regulated repressor BACH1
+binds inactive + active regulatory regions incl. latent enhancers, recruits NuRD, both primes chromatin
+accessibility AND actively represses transcription ("pioneer repression"), redistributes in cis to promoters on
+inflammatory cue, constrains 3D chromatin architecture; Bach1 deletion impairs macrophage polarization + tissue
+adaptation + resilience in systemic/regenerative inflammation. **Blackbird read:** BACH1 is already an active drug-
+discovery target elsewhere; this sharpens tuning it for macrophage-driven inflammation/fibrosis/regeneration — but
+fundamental mechanism, no asset, no disclosed IP. Target-biology watch + relationship with a heavyweight
+immunometabolism PI now inside our primary partner institution (note: Nagy's JHU appointment runs through the
+All Children's/St. Petersburg FL campus). Added László Nagy to tracked-PI list.
+Previously verified 2026-07-23 (Thursday Sourcing Radar — THIRD consecutive thin preprint week.
 Four-day bioRxiv/medRxiv corresponding-author sweep (2026-07-18→23; 962 bioRxiv + 262 medRxiv
 records via api.biorxiv.org details API, filtered on author_corresponding_institution) returned NO
 JHU/UMB/Lieber corresponding-author preprint with a commercializable asset: a JHU-Biology

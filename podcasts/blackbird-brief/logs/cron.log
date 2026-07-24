@@ -989,3 +989,31 @@ Production complete for this thin Thursday. Per `SKIP_TTS=1` I've written the sc
 
 **Compliance note:** the full-text eligibility gate is honored — the formal full-text pick (Jain) was read in full; DCTPP1 is presented transparently as a newsroom/abstract-grounded flag with the paywall stated in-script, not summarized as a paper I read in full.
 === 2026-07-23T02:28:29-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-24T02:10:08-07:00 start blackbird-brief ===
+Episode complete. All three transient files are in place; under `SKIP_TTS=1` the orchestrator will handle TTS, R2 publish, feed insertion, and the commit.
+
+## Blackbird Brief — Friday, July 24, 2026 (Sourcing Radar)
+
+**Type:** Sourcing Radar (daily). Short, honest episode — a genuinely thin day.
+
+**Commit line (orchestrator will apply):** `Blackbird 2026-07-24: Radar — Green/Tzeng JHU PBAE non-viral gene-delivery plasmid engineering + BACH1 pioneer-repressor macrophage-plasticity target biology (Nagy lab JHU, watch); fourth thin preprint week, no founding-bar item`
+
+### Candidate funnel
+
+**Stream B — Partner-institution research (Sourcing Radar)**
+
+- **bioRxiv/medRxiv corresponding-author sweep** (2026-07-20→24 via api.biorxiv.org details API, filtered on `author_corresponding_institution`): scanned **1072 bioRxiv + 259 medRxiv**. JHU/UMB/Lieber corresponding-author hits after removing spurious "col**umb**ia" substring matches — **6 items, all already logged, none with a new ownable asset**:
+  - Kim (JHU) — *C. elegans* FOXO/DAF-16 dauer — no drug hook
+  - Kwon (JHU) — iPSC-cardiomyocyte in-vivo bioincubation — still abstract-only (body not rendered); re-check
+  - Yi (JHU) — zebrafish swim-bout NN methods v3
+  - Chanda (JHU) — PCI+TAVR renal-outcomes meta-analysis; Ranjan (JHU) — PNH complement (passed 07-22); Higgins-Tejera (JHU) — social-adversity aging clocks
+  - → **Fourth consecutive thin preprint week.**
+- **PubMed journals in-window (edat 2026-07-18→24):** 128 affiliation hits; top by pub_date were clinical trials / reviews / collaborator-only work. Non-eligible standouts: Azad JHU copanlisib+nivolumab MSS-CRC (Nat Commun, **negative** Ph1/2); Cell autoantibody-immunosurveillance **commentary** (JHU Dang co-author; CDI Labs Baltimore co-author); Pitt DBS speech/swallowing (JHU minor co-author); Henan-led EnzGFM (JHU minor co-author, logged 07-18); UMD-**College Park** ferroelectric (out of scope).
+- **Newsroom:** JHU/UMB osteosarcoma CGRP/TrkA/NGF pain-drug repurposing (Ramesh/James, PNAS) re-surfaced via a fresh EurekAlert push but **dated Oct 28 2025 — out of recency window**, dropped.
+
+**Substantive shortlist (both watch-grade; neither a clean spin-out):**
+- ✅ **CHOSEN (fully-read anchor)** — Green/Tzeng JHU BME PBAE non-viral gene-delivery plasmid engineering (antibiotic-free minimal Nanoplasmid = CMC/manufacturing-readiness win), *PLoS One* 2026-07-23 — https://doi.org/10.1371/journal.pone.0352468 — platform already spun out (Cove/Dome/OncoSwitch), so framed as ecosystem intelligence, not a fresh deal.
+- ✅ **CHOSEN (abstract-only watch; Immunity paywalled)** — BACH1 "pioneer repressor" of macrophage plasticity, Nagy lab JHU, *Immunity* 2026-07-17 — https://doi.org/10.1016/j.immuni.2026.06.022 — target-biology watch + relationship; no asset/IP.
+
+**Memory updated:** added Jordan Green, Stephany Tzeng, László Nagy to tracked-PI list; Cove/Dome/OncoSwitch Therapeutics + CDI Labs to tracked-company list; noted the sweep-regex `UMB` word-boundary fix and the fourth thin week.
+=== 2026-07-24T02:24:36-07:00 done  blackbird-brief (exit 0) ===
