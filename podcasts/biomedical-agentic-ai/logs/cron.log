@@ -2758,3 +2758,35 @@ No source hard-failed this run (two bioRxiv curl batches timed out at 2 min but 
 - `scripts/2026-07-23-nlkgq-owl-ontology-llm-sparql-zero-shot.rss-item.xml` (XML validated, `__LENGTH__`/`__DURATION__` placeholders)
 - `scripts/2026-07-23-nlkgq-owl-ontology-llm-sparql-zero-shot.commit-msg`
 === 2026-07-23T02:11:36-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-24T02:00:08-07:00 start biomedical-agentic-ai ===
+Everything is in place. Under `SKIP_TTS=1` I skip audio generation, R2 publish, feed edit, and the commit — the orchestrator handles those after batch TTS. Here is the run record.
+
+---
+
+## biomedical-agentic-ai — 2026-07-24
+
+**Published (pending batch TTS):** `2026-07-24-company-world-model-ai-native-biotech-departments`
+Script + `.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders) + `.commit-msg` stubs written. Spoken body 901 words (cap 1150). No commit (SKIP_TTS mode).
+
+**Chosen:** "Do AI-Native Biotechs Need Departments? Benchmarking Company World Models for AI-Driven Drug Development" (arXiv 2607.18696, posted 2026-07-21) — full text read via arXiv HTML/jina. Agentic-AI systems-design for drug development; proposes replacing human-org-chart agent decomposition with a shared "Company World Model" (asset-to-value state + operators + explicit value function), then benchmarks it on 45 retrospective drug-program decision cases with blinded judging. Novel, on-brand, and unusually self-critical (neutral-judge stress test kills the naive claim). Distinct from the recent run of clinical/benchmark-agent picks.
+
+### Candidate funnel
+
+**bioRxiv** — pulled full 4-day collection (2026-07-21→24), 800 records, ~70 keyword hits. Substantive agentic/KG shortlist, **all abstract-only (bodies not yet rendered — deferrals, not rejections; re-check on later days):**
+- ChatGEM — agentic COBRApy/RAG platform for genome-scale metabolic models (2026.07.20.739662) — *deferred, body not rendered*
+- MechAInistic — LLM multi-agent reasoning over constraint-based metabolic models (2026.05.11.723319 v4) — *deferred, body not rendered* (note: two GEM-agent papers same week = emerging trend)
+- PrimeKG-Plus — LLM-assisted literature expansion of a precision-medicine KG (2026.07.14.738415) — *deferred; strong KG fit, revisit*
+- IOBRpy — dual-agent multi-omics immuno-oncology toolkit (2026.07.17.739055) — *deferred*
+- OmicsLake — agent-aware data lineage for Bioconductor (2026.07.17.739088) — *deferred*
+- (excluded: EcoXAI 2026.07.08.737358 = already shipped 07-16; GeneBench-Pro = shipped 07-04)
+
+**arXiv** — shared daily cache (500 entries), 208 biomedical∩agentic matches in-window. Shortlist:
+- **Do AI-Native Biotechs Need Departments? (2607.18696)** — full text read → **CHOSEN**
+- CLARK: closed-loop reasoning over KGs (2607.19996) — full text read, **not biomedical → dropped**
+- Causal dictionary learning in genomic language models (2607.19618) — bioinformatics but not agentic; lower fit
+- Bayesian uncertainty in medical AI agents (2607.20582) — plausible, less novel than pick
+
+**PubMed** — MCP search, edat 07-19→24, 111 hits; 40 reviewed. On-brand: RelAgent (multi-agent molecular relationship grounding, *Bioinformatics*); "Enabling interoperability across health data sources using LLMs" (*PLOS Digit Health*). Both solid tool papers but less conceptually novel than the pick.
+
+**ChemRxiv / News / Funder pages** — no in-window agentic-biomedical item beating the pick; no source outages this run.
+=== 2026-07-24T02:09:31-07:00 done  biomedical-agentic-ai (exit 0) ===
