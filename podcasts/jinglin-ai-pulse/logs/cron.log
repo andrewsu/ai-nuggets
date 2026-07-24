@@ -1012,3 +1012,36 @@ Episode is written and staged. All three files (script, RSS-item stub, commit-ms
 
 **Watches teed up for tomorrow:** (1) do Kimi K3 weights actually drop Sunday the 27th; (2) DeepSeek endpoint-retirement migration breakage (the 24th); (3) whether any closed lab answers "perishability" with price cuts or its own open release.
 === 2026-07-23T02:44:27-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-24T02:30:08-07:00 start jinglin-ai-pulse ===
+All files are in place and validated. Since `SKIP_TTS=1`, I've correctly skipped TTS/publish/feed/commit — the orchestrator handles those after batch TTS. Here's the run summary.
+
+---
+
+## Ollie's AI Pulse — 2026-07-24 — run complete (SKIP_TTS mode)
+
+**Episode:** `2026-07-24-open-weights-is-not-open-access-the-14-terabyte-asterisk`
+Wrote script (1,953 spoken words, ~13 min), `.rss-item.xml` stub (XML-validated with namespaces), and `.commit-msg` stub. No TTS/publish/feed/commit — orchestrator will handle after batch TTS.
+
+**Angle:** Deliberately a *sharpening* of yesterday's episode rather than a repeat. Yesterday celebrated "open weights = run frontier models in your firewall"; today's fresh discourse thread — **open weights ≠ open access** — is the asterisk on that promise, told in three faces (physical / political / infrastructural), which kept continuity while being genuinely new material.
+
+### Candidate funnel
+
+**Twitter/X + discourse** (recency filter 48h; direct X access thin, so worked via aggregated commentary):
+- ✅ **"Open weights ≠ open access" / the 1.4TB reckoning** (techi.com July 24; digitalapplied "new gap"; editorialge "openwashing") — **CHOSEN, Twitter Pulse beat 1.**
+- ✅ **"OpenAI is scared of open-weight models"** (TechCrunch July 20; Dean Ball / LeCun / Casado / Delangue / Hancock / Bresnick; UK AISI cyber-gap) — **CHOSEN, Twitter Pulse beat 2.**
+- ⤵️ Oversight Board LLM political-speech study — real but off-theme for today's arc; dropped.
+- ⤵️ DeepSeek legacy-endpoint retirement (today) — already covered as a "watch" in yesterday's episode; folded implicitly, not re-led.
+
+**Money / business** (7-day filter):
+- ✅ **Cathedral — $160M at $1.4B, a16z+Sequoia, ex-DOGE founders, military cyber, "buy a datacenter first"** (July 22) — **CHOSEN, Money Moves.** Ties governance thread + "compute is the moat" thread.
+- ⤵️ Glow $180M Series A / Cathedral roundup peers — thinner signal; dropped.
+- ⤵️ Prometheus (Bezos) $12B — **out of window** (June 11); dropped.
+
+**Podcasts** (14-day filter):
+- ✅ **All-In, July 18** (Calacanis local-compute "token maxing"; Chamath "2.5 Californias"; Sacks "power, permits, land, cooling") — **CHOSEN, Deep Cut.** Practical bridge to the 1.4TB problem.
+- ⤵️ Nathan Lambert on AI Proem re China labs — excellent but **May 19, out of window**; dropped (was already used 07-21/07-22 anyway).
+- ⤵️ WhynotTV (primary source) — latest episode May 1, **out of window**; unavailable today.
+- ⤵️ Latent Space #216 (July 22, on-theme) — no quotable content obtainable; dropped in favor of All-In.
+
+**Sources with issues:** Direct `Zefan_Cai` X feed not retrievable via WebSearch (returned academic profiles only) — Chinese-community signal represented instead through the China-open-models governance discourse. No hard source outages.
+=== 2026-07-24T02:38:15-07:00 done  jinglin-ai-pulse (exit 0) ===
