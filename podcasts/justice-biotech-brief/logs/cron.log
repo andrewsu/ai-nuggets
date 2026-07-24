@@ -1472,3 +1472,68 @@ News / press (Fierce Biotech, Endpoints, STAT, BioPharma Dive, IR/SEC):
 
 Policy/funder pages (ARPA-H / NIH / NSF): no in-window item matching the beat surfaced. No source hard-failed this run.
 === 2026-07-23T02:46:46-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-24T02:40:08-07:00 start justice-biotech-brief ===
+I've completed a thorough survey across all three source types. Here's the situation and my decision.
+
+All genuinely on-theme fresh candidates today are bioRxiv preprints posted 2026-07-22 whose body HTML bioRxiv hasn't rendered yet — I confirmed this three ways (the `fetch_preprint.py` helper fell through to abstract-only, a direct `r.jina.ai` pull returned only the abstract + page chrome with no Introduction/Results/Discussion, and the ISAC/CAR-T papers behaved identically). Per PIPELINE.md's full-text eligibility gate, these are **deferrals, not rejections** — ineligible today, live candidates the moment their bodies render (likely tomorrow). No fresh (July 23–24) news item in Justice's niches surfaced with a readable primary source: the closest FDA actions (Sanofi's subcutaneous Sarclisa approval, Elevar's rivoceranib/camrelizumab CRL) both landed July 9–10, outside the recency window.
+
+**No episode today.** This is the guide's sanctioned "fresh candidates exist but none are eligible / no fresh eligible candidate" outcome — I'm not reaching back to plug a stale paper, and I'm not shipping an abstract-only summary. Nothing written, nothing committed.
+
+---
+
+## Candidate funnel — justice-biotech-brief 2026-07-24
+
+**bioRxiv** (details API, full 2-day window):
+- 2026-07-24: `no posts found` (not yet posted).
+- 2026-07-23 batch: 234 entries pulled in full (8 pages, cursor 0→210). Relevance filter → on-theme shortlist below.
+
+On-theme bioRxiv shortlist (all posted 07-22, **all body-not-yet-rendered → DEFERRED**, revisit next run):
+- **Tuning T-cell immunological synapse by modular DNA-Nanobody engagers** (Chames lab) — 10.64898/2026.07.22.740045 — trispecific OR-gate TCE, linker-geometry decoupling of killing vs. cytokine release. *Strongest fit (trispecific TCE is a named interest); would be a clear pick once rendered.*
+- **Immune-stimulating antibody conjugate targeting CD47 + TLR9 (aCD47-CpG)** — 10.64898/2026.07.22.739359 — ISAC bridging innate/adaptive, deep in vivo regressions.
+- **Single-cell foundation models predict durable CAR T response** — 10.64898/2026.07.22.740224 — scFM decision-support for CD19 CAR-T persistence.
+- (Off-niche, not shortlisted: Eya3-macrophage TNBC target biology; HNSCC syngeneic model; endometrial-cancer immune profiling; Uni-TINT T/ILC atlas.)
+
+**News / press (Fierce Biotech, Endpoints, STAT, BioPharma Dive, newswires)** — swept for July 23–24 in TCE / bispecific / CAR-T / ADC / VEGF×PD-1 / JAK niches:
+- No fresh, on-theme readout with a clean primary source. Out-of-window near-misses: Sanofi subcutaneous Sarclisa approval (07-09), Elevar rivoceranib+camrelizumab CRL (07-10, VEGFR2×PD-1 combo — would have fit, but stale). Fierce/Endpoints homepages returned HTTP 403 to WebFetch.
+
+**Policy / funders (ARPA-H, NIH, NSF)**: ARPA-H THRIVE teams (07-09), NSF SBIR pitch portal — out of window and off-niche.
+
+**Source failures:** none material — bioRxiv API, web search, and r.jina.ai all responsive; only the fetch helper's channel-1 hit one transient jina failure (recovered on manual retry, but body still unrendered).
+
+Decision: **skip 2026-07-24**; three strong preprints deferred for the next run once bioRxiv renders their bodies.
+=== 2026-07-24T02:46:57-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-24T02:46:57-07:00 no usable output for justice-biotech-brief; retrying in 180s ===
+=== 2026-07-24T02:49:57-07:00 start justice-biotech-brief (retry 1) ===
+Episode is written and staged (SKIP_TTS mode — no TTS, no feed edit, no commit; the orchestrator handles those). The stubs validate. Here is the run audit.
+
+---
+
+## Justice's Biotech Brief — run summary for 2026-07-24
+
+**Episode shipped:** `2026-07-24-cevostamab-fcrh5-cd3-bispecific-tce-myeloma-phase1`
+**Pick:** Cevostamab (FcRH5×CD3 bispecific T-cell engager) — mature 324-patient Phase 1 in relapsed/refractory multiple myeloma, *Nature Medicine*, published July 22 2026 (open access; full text read via authenticated redirect). Squarely on Justice's core T-cell-engager beat; opinion-worthy target-sequencing framing (FcRH5 as a non-cross-resistant third redirector target after BCMA and GPRC5D).
+
+Files written (no commit — SKIP_TTS=1): `.md` script, `.rss-item.xml` (placeholder LENGTH/DURATION, XML-validated), `.commit-msg`.
+
+### Candidate funnel
+
+**bioRxiv + medRxiv** — pulled the FULL 2026-07-22→07-24 collection (biorxiv 501, medrxiv 141 = 642 scanned; 07-24 not yet posted). 25 keyword matches; substantive on-topic shortlist below — **all deferred: body HTML not yet rendered (abstract-only via API), which is the full-text eligibility gate. Re-check on later days:**
+- Tuning T-cell immunological synapse by modular DNA-Nanobody engagers (trispecific OR-gate TCE) — 10.64898/2026.07.22.740045 — strongest on-topic; deferred (not rendered)
+- Mechanisms regulating combination of ADCs and cancer immunotherapy (ADC+TCE/CPI, TNF/TNFR axis) — 10.64898/2026.07.17.738956 — deferred (not rendered)
+- Single-cell foundation models predict durable CAR T response — 10.64898/2026.07.22.740224 — deferred
+- Immune-stimulating antibody conjugate targeting CD47+TLR9 — 10.64898/2026.07.22.739359 — deferred
+
+**News / press (Fierce Biotech, Endpoints, STAT, BioSpace, Clinical Trials Arena, BioWorld)** — no fresh (07-23/07-24), on-topic, uncovered item with a readable primary source. Fresh-looking headlines resolved out: GSK/Hansoh ris-rez B7-H3 ADC Ph3 (July 10, already covered 07-11); BioNTech/DualityBio B7-H3 ADC Ph3 (Feb 28); Amgen tarlatamab approval (May 2024). Fierce/BMJ/Nature homepages Cloudflare-403 on direct fetch.
+
+**PubMed (edat 2026-07-22→07-24)** — 96 hits; ~30 metadata reviewed. On-topic, genuinely fresh shortlist:
+- **FcRH5×CD3 cevostamab Phase 1, R/R myeloma — Nat Med (10.1038/s41591-026-04522-3) — CHOSEN** (open access, full text obtained)
+- IL-10-armored ultralow-dose CAR-T in R/R DLBCL — JAMA Oncol (10.1001/jamaoncol.2026.2490) — strong but full text not obtainable (paywall, no OA)
+- CAR-independent T-cell responses confound CAR-T preclinical models — J Immunother Cancer (10.1136/jitc-2026-015074) — excellent opinion piece but Cloudflare-blocked on every channel (jina/curl/WebFetch 403), not yet in EPMC/Unpaywall → ineligible under full-text gate today; worth revisiting once indexed
+- Dual DLL3/CD56 4-1BB CAR-T in SCLC — Cancer Res (10.1158/0008-5472.CAN-25-5261) — on-topic, paywalled
+- ROR1 ADCs (zilovertamab vedotin, VLS-211) vs B-ALL PDX — Hemasphere (PMC13390736) — readable fallback, preclinical
+- Vobramitamab duocarmazine B7-H3 ADC Ph1 final (discontinued) — Cancer (PMC13392588) — readable fallback, negative wrap-up
+
+**Policy/funder pages (ARPA-H / NIH / NSF)** — not surveyed this run; the PubMed/journal channel produced a dominant on-topic pick. Flagging the gap for audit.
+
+Cevostamab beat the readable alternatives on impact + fit: it's a high-journal, on-beat T-cell-engager clinical dataset with a clean editorial angle, versus preclinical (Hemasphere) or a negative program wrap-up (vobramitamab). The two arguably stronger fresh items (jitc CAR-T modeling caution; JAMA Oncol armored CAR-T) were blocked by the full-text gate, not by content.
+=== 2026-07-24T03:04:07-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
