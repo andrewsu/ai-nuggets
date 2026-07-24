@@ -2532,3 +2532,25 @@ Shortlist (July 22–23, fresh; excludes yesterday's Novo-v-Lilly / GSK-camlipix
 
 Nothing skipped for content-bar reasons; source outages (Fierce/Endpoints 403, one IR timeout) were worked around, not fatal.
 === 2026-07-23T02:31:06-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-24T02:20:08-07:00 start calibr-briefing ===
+Both stubs are well-formed. In `SKIP_TTS=1` mode I've done everything I should: written both scripts and their transient `.rss-item.xml` + `.commit-msg` stubs. TTS, R2 publish, feed insertion, and the commit are all handled by the batch orchestrator (`publish_pending.py`) — I've skipped them per PIPELINE.
+
+## Run summary — calibr-briefing, Fri Jul 24 2026
+
+**Episodes written (SKIP_TTS mode — stubs written, no TTS/publish/commit):**
+- `2026-07-24-pharma-headlines` — 5-item roundup
+- `2026-07-24-revolution-medicines-daraxonrasib-ras-pancreatic-spotlight` — deep dive **[SPOTLIGHT]**
+
+**Candidate funnel** (sources scanned: Fierce Biotech/Pharma, Endpoints, STAT DC Diagnosis, BioPharma Dive, company IR, FDA/PDUFA calendars; all reachable, no source outages):
+
+Fresh, focus-relevant shortlist (Jul 22–24, none repeating yesterday's Jul 23 episode):
+- **[CHOSEN — spotlight + headline #1]** Revolution Medicines — FDA accepts NDA for daraxonrasib (oral RAS(ON) multi-selective inhibitor) in 2L metastatic PDAC via National Priority Voucher pilot; RASolute 302 OS 13.2 vs 6.7 mo, HR 0.40. Named focus company + Iambic AI tie-in. Full text read (Dana-Farber, allsci, ASCO Post, RevMed IR).
+- **[CHOSEN — headline #2]** Eli Lilly retatrutide (GIP/GLP-1/glucagon triple agonist) TRIUMPH-2/-3 Ph3 — powerful weight loss (~22–30%), inconclusive CV outcomes; BLA Q1 2027.
+- **[CHOSEN — headline #3]** J&J MonumenTAL-6 — Tecvayli (anti-BCMA) + Talvey (anti-GPRC5D) cut progression/death risk 89%, death 62% in earlier-line RRMM.
+- **[CHOSEN — headline #4]** Otsuka centanafadine (first-in-class NE/DA/5-HT triple reuptake inhibitor) — FDA decision for ADHD due today (Jul 24 PDUFA).
+- **[CHOSEN — headline #5]** Repligen to acquire BioLife Solutions (~$1.5B, CryoStor biopreservation media) — cell-therapy supply-layer consolidation.
+
+Not chosen (older/stale or lower fit): Vertex–Crinetics $10B (Jul 6), Lilly–AtaiBeckley $3.8B psychedelics (Jul 16), Padcev+Keytruda MIBC approval (Jul 10), Pharvaris deucrictibant HAE NDA acceptance, Roche/Argenx earnings.
+
+Spotlight full text confirmed (RASolute 302 data via NEJM/Dana-Farber/ASCO Post; NDA-acceptance details via allsci; pipeline/analyst via RevMed IR + Truist).
+=== 2026-07-24T02:28:49-07:00 done  calibr-briefing (exit 0) ===
