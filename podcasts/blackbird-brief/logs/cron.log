@@ -1017,3 +1017,30 @@ Episode complete. All three transient files are in place; under `SKIP_TTS=1` the
 
 **Memory updated:** added Jordan Green, Stephany Tzeng, László Nagy to tracked-PI list; Cove/Dome/OncoSwitch Therapeutics + CDI Labs to tracked-company list; noted the sweep-regex `UMB` word-boundary fix and the fourth thin week.
 === 2026-07-24T02:24:36-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-25T02:10:13-07:00 start blackbird-brief ===
+All three files are in place and the spoken script is clean of URLs/DOIs. Episode is ready for the batch pipeline.
+
+---
+
+**Blackbird Brief — Sourcing Radar, Saturday 2026-07-25 — published (SKIP_TTS batch mode: script + rss-item + commit-msg stubs written; portfolio memory updated; TTS/R2/feed/commit deferred to orchestrator).**
+
+**Candidate funnel**
+
+Sources surveyed (recency window 2026-07-21→25):
+- **bioRxiv sweep** (details API, corresponding-author filter): 1092 scanned → 6 JHU/UMB corr-author hits; **medRxiv**: 262 scanned → 4 hits (all clinical/epi, no asset).
+- **PubMed journals** — JHU affiliation (edat 07-22→25): 53 total, ~33 triaged; UMB/Lieber (edat 07-21→25): 21. Almost all clinical trials, reviews, or basic/collaborator work.
+- **Newsrooms** (JHU Medicine, Lieber, UMB): nothing new+company-shaped not already logged (DCTPP1 and KRAS-VAX already featured; Lieber nucleus-accumbens atlas = no asset).
+- Fifth consecutive thin preprint week — but the full-text gate finally cleared via a readable lead.
+
+Substantive shortlist (title | URL):
+- ★ **CHOSEN LEAD (full text read via PDF)** — Suk lab UMB aCD47-CpG CD47×TLR9 immune-stimulating antibody conjugate | https://www.biorxiv.org/content/10.64898/2026.07.22.739359v1
+- ★ **CHOSEN Pick 2 (abstract-only, Elsevier paywall; flag-and-chase)** — Ferrer UMB Greenebaum GSTT1/CD133/FGFR PDAC stem-like biomarker-repurposing | https://doi.org/10.1016/j.canlet.2026.218733
+- ★ **CHOSEN Watch (abstract-only, body unrendered; deferral)** — Watanabe/Bergles JHU "skoupocytosis" / ABHD16a | https://www.biorxiv.org/content/10.64898/2026.07.22.740182v1
+- Deferral — Krantz UMB single-molecule-proteomics translocase perspective (body unrendered) | https://www.biorxiv.org/content/10.64898/2026.07.20.739629v1
+- Deferral — Kwon JHU iPSC-cardiomyocyte in-vivo bioincubation (still abstract-only) | 10.64898/2026.07.21.739858
+- Ecosystem note (not featured; incremental, paywalled) — Doloff JHU BME long-acting crystalline co-formulated depot | https://doi.org/10.1016/j.ijpharm.2026.127215
+- Trap/landscape (Georgetown-corresponding, JHU+UMB co-authors only) — Weiner CD44 stromal-checkpoint PDAC | 10.1158/2326-6066.CIR-25-1481
+- Trap (Weill-Cornell-corresponding, JHU co-authors) — Chandwani KRAS-mutant PDAC lineage reversion | 10.1016/j.devcel.2026.06.016
+
+**Lead take:** UMB's Suk lab (relocated from the JHU Center for Nanomedicine cluster to the new UM-MIND institute) built an antigen-agnostic, Fc-independent CD47×TLR9 ISAC that converts silent phagocytosis into durable anti-tumor immunity across NHL and TNBC — differentiated from every antigen-restricted clinical ISAC. Live patent filing + Maryland Innovation Initiative/TEDCO funding = an open UM Ventures window and the strongest UMB lead of the month; actions logged for Eddie (filing status/vehicle) and Avi/Yixuan (FTO vs anti-CD47 estate + linker patents).
+=== 2026-07-25T02:29:59-07:00 done  blackbird-brief (exit 0) ===

@@ -5,7 +5,111 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-24 (Friday Sourcing Radar — FOURTH consecutive thin preprint week.
+_Last verified: 2026-07-25 (Saturday Sourcing Radar — FIFTH consecutive thin preprint week, BUT it
+finally broke with a strong full-text-readable UMB lead. Four-day bioRxiv/medRxiv corresponding-author
+sweep (2026-07-21→25; 1092 bioRxiv + 262 medRxiv records via api.biorxiv.org details API, filtered on
+author_corresponding_institution, UMB regex word-boundaried to avoid "colUMBia") returned a handful of
+partner-institution preprints; all fresh company-shaped ones EXCEPT the lead had unrendered bodies
+(deferrals): Watanabe/Bergles JHU skoupocytosis (see Watch below, body not rendered); Krantz UMB
+"Dynamical Translocases and the Mathematical Imperative for Single-Molecule Proteomics" (10.64898/
+2026.07.20.739629, biophysics PERSPECTIVE proposing anthrax-toxin protective-antigen translocase + PIML
+for label-free protein sequencing, >90% amino-acid-class classification — a single-molecule-proteomics
+platform idea in the Quantum-Si/Nautilus/Oxford Nanopore space; abstract-only, body not rendered = DEFER
++ re-check, add Bryan A. Krantz UMB to watch); Kwon JHU iPSC-cardiomyocyte in-vivo bioincubation
+(10.64898/2026.07.21.739858, STILL abstract-only, keep re-checking); Yi JHU zebrafish swim-bout NN methods.
+Peer-reviewed journals in-window were again heavy on clinical trials/reviews/collaborator-only work; two
+"traps" worth logging so we don't chase them as partner leads: Cancer Immunol Res "Periductal Fibroblast
+Density Defines Lymphocyte Exclusion via a CD44-Dependent Stromal Checkpoint in PDAC" (10.1158/2326-6066.
+CIR-25-1481) is GEORGETOWN-corresponding (Louis M. Weiner) with JHU (Won Jin Ho, Atul Deshpande) + UMB
+(Elana Fertig) co-authors only — names a druggable CD44/MMP14 "stromal checkpoint" to overcome CAF-driven
+immune exclusion, log as competitive/landscape target-biology, not a partner sourcing lead; Dev Cell
+"Molecular dynamics driving phenotypic divergence among KRAS mutants in pancreatic tumorigenesis"
+(10.1016/j.devcel.2026.06.016) is WEILL-CORNELL-corresponding (Rohit Chandwani) with JHU co-authors (S.D.
+Leach, M. Cleveland) — KRAS-mutant-specific lineage-reversion biology, not a JHU lead. Also noted but
+NOT featured: Doloff lab JHU BME long-acting co-formulated crystalline drug-depot platform ("Formulation
+and assessment of long-acting pharmaceutical co-formulated crystals," Int J Pharm 702:127215, DOI
+10.1016/j.ijpharm.2026.127215; corr. Joshua C. Doloff jcdoloff@jhu.edu, JHU BME + Translational
+Therapeutics and Regenerative Engineering Center [D. Scott Wilson co-author] + INBT + Oncology/Kimmel;
+UMB School of Pharmacy co-authors Pilli + Kane) — genuine drug-delivery platform BUT incremental (model
+system curcumin/piperine, Elsevier-paywalled, no PMC); log as JHU BME/TRECstim controlled-release
+ecosystem note, add Joshua Doloff to watch. **LEAD (FULL TEXT READ via bioRxiv v1.full.pdf through the
+jina proxy — the HTML .full body had NOT rendered [helper fell through to API abstract], but the PDF
+text-extracted cleanly, which satisfied the full-text eligibility gate) — Suk lab UMB aCD47-CpG
+immune-stimulating antibody conjugate (ISAC).** Byoungjae Kong (first) + Seung Woo Chung (JHU
+Ophthalmology) + Daiheon Lee + Gijung Kwak + Jung Soo Suk (senior corresponding; jsuk@som.umaryland.edu),
+Department of Neurosurgery + University of Maryland Medicine Institute for Neuroscience Discovery
+(UM-MIND), University of Maryland School of Medicine (Suk ALSO holds JHU Ophthalmology + JHU Neurosurgery
++ UMD College Park Fischell Bioengineering appointments — he came up through the JHU Center for
+Nanomedicine cluster [cf. the tracked Wilmer + JHU BME + CNM cluster] and is now building at UMB's new
+UM-MIND institute = concrete ecosystem-migration intel, and a rare JHU→UMB move onto the UM Ventures side).
+"An immune-stimulating antibody conjugate spatiotemporally targeting CD47 and TLR9 elicits macrophage-
+dependent tumor clearance and durable anti-cancer adaptive immunity," *bioRxiv* v1 2026-07-23 (DOI
+10.64898/2026.07.22.739359; cancer biology). **COI verbatim: "J.S.S. and S.W.C. are inventors on a patent
+application related to the aCD47-CpG conjugate technology described in this manuscript. The remaining
+authors declare no competing interests."** Funding: NIH R01NS119609 (J.S.S.); **Maryland Innovation
+Initiative (MII) of TEDCO, award 0722-005 (J.S.S.)** = Maryland state translational capital, precisely the
+Blackbird/Maryland ecosystem; Sejong Science Fellowship NRF Korea (B.K.); Greenebaum CCC flow core.
+**Science:** CD47 = ubiquitous "don't-eat-me" macrophage checkpoint; anti-CD47 mAbs (magrolimab/Gilead —
+note AML Ph3 magrolimab+ven+aza failed on risk/benefit; ALX Oncology; Pfizer/Trillium) drive phagocytosis
+but clearance is "immunologically silent" → no durable adaptive immunity, recurrence. aCD47-CpG covalently
+links anti-CD47 (mouse MIAP410 / human B6H12) to a TLR9-agonist CpG oligo via non-cleavable Sulfo-SMCC,
+CpG 3′-conjugated to preserve potency; DAR 1–4 screened, DAR 3 optimal (NF-κB plateaus beyond DAR 3).
+Core insight = TLR9 is restricted to the endosome/phagolysosome — the SAME compartment where engulfed
+tumor antigen is processed — so the conjugate guarantees the identical macrophage that engulfs the tumor
+(CD47 blockade) receives the intracellular co-stim signal, a spatiotemporal coupling you CANNOT get by
+co-dosing two free drugs. Conjugate shows an initial phagocytosis delay (attenuated CD47 affinity) then
+surpasses naked aCD47 after ~8h (TLR9-driven sustained phagocytosis); upregulates CD80/CD86/CD40 + iNOS
+(M1) + TNFα/IL-6/IL-12; boosts MHC-I cross-presentation + OT-I CD8 proliferation + IFN-γ (naked aCD47 does
+NOT). In vivo: MTD 10 mg/kg; tumor-dominant biodistribution despite CD47 sinks; human Raji NHL xenograft →
+profound regression ABOLISHED by clodronate macrophage depletion (macrophage-dependent), M1:M2 shift only
+with conjugate; immunocompetent systemic A20 NHL → reduced burden + extended survival + complete day-106
+rechallenge resistance (durable memory); orthotopic syngeneic 4T1 TNBC (cold) → tumor + lung-metastasis
+suppression, enriched macrophages/monocytes/CD8/effector+central-memory T cells, Treg depletion; human
+MDA-MB-231 TNBC recapitulated. **Blackbird read (STRONG — strongest UMB lead of the month):** (1)
+Differentiation — every clinical ISAC (Bolt Biotherapeutics BDC-1001 + cohort) hangs a TLR7/8/9/STING
+payload off a tumor-specific antibody (HER2/EGFR/CD22) and needs FcγR engagement = antigen-restricted;
+aCD47-CpG rides a ubiquitous pan-cancer myeloid checkpoint, lowers phagocytic threshold intrinsically,
+works Fc-INDEPENDENTLY (potent on mouse IgG1 w/ minimal activating-FcγR affinity) → enables an Fc-silent
+backbone to cut systemic toxicity; antigen-agnostic + Fc-independent = differentiated platform position
+(vs the recent aCD47-listeriolysin-O conjugate that needs cytosolic release). (2) Dealability — LIVE
+patent application (Suk + Chung inventors) + TEDCO/MII state funding = open UM Ventures licensing window
+NOW. (3) Ecosystem — nanomedicine builder from the JHU CNM cluster now on the UM Ventures × Blackbird
+co-investment surface alongside tracked Chao (TLR7-ITGAM) + Martin (MCAM/TetherChip). **Actions:** Eddie —
+UM Ventures filing status + is Suk contemplating a vehicle + BioHub/BioVentures fit at this preclinical
+stage. Avi/Yixuan — freedom-to-operate vs the anti-CD47 antibody estate + ISAC linker patents (conjugate
+chemistry = where value AND risk sit); Fc-silencing + human-conjugate manufacturability/CMC. Added Jung
+Soo Suk to tracked-PI list + new §2b "Suk lab UMB Neurosurgery/UM-MIND aCD47-CpG CD47×TLR9 immune-
+stimulating antibody conjugate platform (antigen-agnostic, Fc-independent; NHL + TNBC; live patent +
+TEDCO/MII funding)" entry. **Pick 2 (ABSTRACT-ONLY — Cancer Letters Elsevier-paywalled [ScienceDirect
+returns only JS, no PMC], NOT a full read; flag-and-chase) — Ferrer lab UMB Greenebaum GSTT1/CD133/FGFR
+PDAC stem-like axis.** Deborah de la Caridad Delgado Herrera (first) … Elana J. Fertig (co-author; already
+tracked) + Christina M. Ferrer (senior corresponding; cferrer@som.umaryland.edu), UMB School of Medicine +
+Marlene and Stewart Greenebaum Comprehensive Cancer Center + UMB Institute for Genome Sciences. "GSTT1
+promotes stemness and FGFR inhibitor sensitivity in pancreatic cancer through regulation of CD133 (PROM1),"
+*Cancer Letters* 2026 in press (DOI 10.1016/j.canlet.2026.218733; edat 2026-07-24). **Science (abstract):**
+a slow-cycling, highly metastatic GSTT1+ PDAC subpopulation is stem-like (tumor-sphere formation, PROM1/
+CD133, Wnt+FGF); CD133+GSTT1+ human cells define a maximal stem-like state; FGFR-inhibitor sensitivity is
+context-dependent (tumor-sphere conditions only); FGFR3 tracks GSTT1/CD133; GSTT1 knockdown lowers CD133 +
+alters FGFR-inhibitor sensitivity; in patient-derived organoids, GSTT1/PROM1 co-expression predicts
+enhanced response to the approved multi-kinase inhibitor nintedanib. **Blackbird read:** GSTT1 is germline-
+polymorphic (common whole-gene null) = ready-made patient-stratification biomarker; commercial shape =
+companion-biomarker + repurposed-approved-drug (nintedanib) play in PDAC on the UM Ventures × Blackbird
+surface, NOT a new molecule. Diligence: whether Greenebaum filed on the biomarker; lower conviction than
+Suk until full paper readable. Added Christina Ferrer + GSTT1/CD133/FGFR-in-PDAC stem-cell target to
+tracked list (Fertig already tracked via Popel-Fertig-Deshpande spatial-QSP + MInt-HDX). **Watch (ABSTRACT-
+ONLY — body not yet rendered, DEFERRAL to re-read) — Watanabe/Bergles JHU "skoupocytosis."** Rachel Pepper
+(first) … Dwight E. Bergles + Shigeki Watanabe (senior corresponding), JHU (Cell Biology / Neuroscience).
+"Microglia extract neuronal proteolytic organelles via skoupocytosis," *bioRxiv* v1 2026-07-24 (DOI
+10.64898/2026.07.22.740182). **Science (abstract):** microglia transiently contact neuronal membranes and
+pinch off a small portion of the process containing an oversized proteolytic organelle (rest left intact) —
+a new clearance route ("skoupocytosis," Greek for garbage) bypassing retrograde organelle transport; PS
+lipase ABHD16a accumulates at these sites, converting phosphatidylserine → lyso-PS to initiate it (traces
+to a JHU Cell Biology 2024 seminar "a role for homeostatic microglia in synaptic proteostasis"; no newsroom
+release yet). **Blackbird read:** no asset, no disclosed IP, body not rendered (couldn't read in full) —
+but a defined druggable enzyme (ABHD16a) gating neuronal proteostasis is seed-grade neurodegeneration
+target biology. Target-biology watch + deferral; added Shigeki Watanabe + ABHD16a/skoupocytosis to
+tracked PI/target list, re-read on full-text render.
+Previously verified 2026-07-24 (Friday Sourcing Radar — FOURTH consecutive thin preprint week.
 Four-day bioRxiv/medRxiv corresponding-author sweep (2026-07-20→24; 1072 bioRxiv + 259 medRxiv records via
 api.biorxiv.org details API, filtered on author_corresponding_institution) returned NO JHU/UMB/Lieber
 corresponding-author preprint with a commercializable asset — only items already logged: Kim JHU-Biology
