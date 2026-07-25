@@ -1537,3 +1537,32 @@ Files written (no commit — SKIP_TTS=1): `.md` script, `.rss-item.xml` (placeho
 
 Cevostamab beat the readable alternatives on impact + fit: it's a high-journal, on-beat T-cell-engager clinical dataset with a clean editorial angle, versus preclinical (Hemasphere) or a negative program wrap-up (vobramitamab). The two arguably stronger fresh items (jitc CAR-T modeling caution; JAMA Oncol armored CAR-T) were blocked by the full-text gate, not by content.
 === 2026-07-24T03:04:07-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-07-25T02:40:13-07:00 start justice-biotech-brief ===
+Done. Under `SKIP_TTS=1` I've written the script plus the two stub files (RSS item + commit message); the orchestrator handles TTS, R2 publish, feed insertion, and commit. Here's the run record.
+
+---
+
+## Justice's Biotech Brief — 2026-07-25
+
+**Selected:** Tec-Tal (teclistamab + talquetamab) — first dual-antigen bispecific T-cell-engager combination posts Phase 3 PFS HR 0.11 in earlier-line R/R myeloma (MonumenTAL-6, J&J topline)
+
+Squarely on Justice's core beat (T-cell engagers / bispecifics), genuinely novel (first Phase 3 of *combining* two proven bispecifics vs. the single-molecule trispecific route), and the biggest number in the space this week. Primary source (J&J/PRNewswire press release) read in full for numbers, arms, and safety framing.
+
+### Candidate funnel
+
+**bioRxiv** (details API, full 2-day collection): 2026-07-24 = 258 entries, 2026-07-25 = 7 entries. Keyword-filtered whole corpus. On-beat survivors after discarding spurious matches (γδ-T-cell engineering platforms, "cart"→cartilage, "cd3"→marker mentions):
+- Ovarian-cancer-on-chip for PD-L1-blockade response profiling — 10.64898/2026.07.21.739796 — device/model paper, not a therapeutic readout; off-beat, dropped.
+- No preprint on VEGF×PD-(L)1, JAK-ADC, trispecific/bispecific TCE therapeutics in window. bioRxiv thin today.
+
+**News / press (last 1–2 days), on-beat shortlist:**
+- **Tec-Tal / MonumenTAL-6** (J&J, Jul 23) — PFS HR 0.11, OS HR 0.38, 3-arm Ph3, dual BCMA+GPRC5D bispecific combo. **← CHOSEN**
+- Epcoritamab / EPCORE DLBCL-1 (Genmab/AbbVie, Jul 23) — CD3×CD20 bispecific *missed* US OS endpoint. Strong on-beat, but a single-drug OS miss clarification; used as the sharpening same-day contrast inside the chosen episode rather than as its own pick.
+- Innovent IBI3003 trispecific (BCMA×GPRC5D×CD3) Ph3 — first-patient-dosed was Jun 21, out of recency window; referenced as the trispecific foil, not selected.
+- Sutro STRO-004 / Astellas TROP2 ADC, Oncomatryx $67M — funding/pipeline notes, no fresh clinical readout; dropped.
+
+**Source failures:** none blocking. WebFetch 403'd on fiercebiotech.com, jnj.com, and onclive.com (bot walls); the J&J release was read in full via the PRNewswire mirror, so no full-text gap for the pick.
+
+**Recency:** chosen item announced Jul 23 (2 days), within the news window. bioRxiv corpus limited to 2026-07-24/25.
+
+No commit or push performed (SKIP_TTS batch mode) — stubs left in `scripts/` for `publish_pending.py`.
+=== 2026-07-25T02:45:48-07:00 done  justice-biotech-brief (exit 0) ===
