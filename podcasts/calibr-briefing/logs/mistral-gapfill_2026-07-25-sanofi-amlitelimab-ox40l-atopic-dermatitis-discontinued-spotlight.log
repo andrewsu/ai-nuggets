@@ -1,0 +1,5 @@
+Script body: 6661 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2998 chars) -> 140.6s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2927 chars) -> 151.4s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (734 chars) -> 32.2s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-07-25-sanofi-amlitelimab-ox40l-atopic-dermatitis-discontinued-spotlight.mp3 [mistral] 2,785,324 bytes, 348.1s

@@ -2554,3 +2554,25 @@ Not chosen (older/stale or lower fit): Vertex–Crinetics $10B (Jul 6), Lilly–
 
 Spotlight full text confirmed (RASolute 302 data via NEJM/Dana-Farber/ASCO Post; NDA-acceptance details via allsci; pipeline/analyst via RevMed IR + Truist).
 === 2026-07-24T02:28:49-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-25T02:20:13-07:00 start calibr-briefing ===
+Both stubs parse and all six files are in place. Since `SKIP_TTS=1`, I've correctly stopped here — no TTS, no R2 publish, no feed edit, no commit (the orchestrator's `publish_pending.py` handles all of that after batch TTS).
+
+## Run summary — Calibr Briefing, 2026-07-25 (Saturday)
+
+Two episodes written (script + `.rss-item.xml` + `.commit-msg` stubs each). No audio/publish/commit this run — `SKIP_TTS` mode.
+
+**Chosen:**
+- **Headlines** (`2026-07-25-pharma-headlines`) — 5 items.
+- **Spotlight** (`2026-07-25-sanofi-amlitelimab-ox40l-atopic-dermatitis-discontinued-spotlight`) — Sanofi walking away from amlitelimab in atopic dermatitis. Full text read: Sanofi/GlobeNewswire press release + supporting coverage (BioPharma Dive, Fierce, Clinical Trials Arena, SEC filings) on the OX40L mechanism, Kymab origin, OCEANA Phase 3, and the crowded AD market.
+
+**Candidate funnel** (sources scanned: Fierce Pharma/Biotech, Endpoints, STAT, BioPharma Dive, GEN + targeted searches):
+
+- **Sanofi — will not file amlitelimab in atopic dermatitis; halts AD development (Jul 24)** — *chosen: SPOTLIGHT + headline #1.* Positive Phase 3, killed on differentiation.
+- **Scribe Therapeutics IPO ~$129M, first gene-editing IPO in 2+ years (Jul 23)** — *chosen: headline #2.* Doudna-cofounded, PCSK9/Lp(a) in vivo editors.
+- **FDA peptide adcomm concludes — emideltide voted down, most backed (Jul 24)** — *chosen: headline #3.*
+- **Novo Nordisk seeks preliminary injunction vs Lilly GLP-1 ads (Jul 24)** — *chosen: headline #4.*
+- **Ipsen Bylvay (odevixibat) fails Phase 3 in biliary atresia (Jul 24)** — *chosen: headline #5.*
+- Considered, not used: GSK Jideytro (zidesamtinib) first lung-cancer approval — **already covered Jul 23**, excluded. Retatrutide TRIUMPH-2/-3, J&J MonumenTAL-6, Repligen/BioLife — **already covered Jul 24**, excluded. Merck alimatravir PrEP LMIC licensing (Jul 24) — shortlisted, dropped for stronger items. Anthropic rare-disease drug discovery (Jul 21) and Xaira partner-hunt — AI-relevant but stale (covered/older), dropped.
+
+**Source notes:** No source-side outages. Fierce Biotech/Endpoints homepages 403'd on direct WebFetch; recovered full coverage via WebSearch + Fierce Pharma/BioPharma Dive fetches and primary press release, so no recall loss. Note: `memory/calibr-pipeline.md` referenced in PROMPT.md does not exist on disk — proceeded without it.
+=== 2026-07-25T02:28:23-07:00 done  calibr-briefing (exit 0) ===
