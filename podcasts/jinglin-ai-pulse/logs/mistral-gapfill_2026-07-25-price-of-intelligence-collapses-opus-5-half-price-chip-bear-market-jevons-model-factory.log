@@ -1,0 +1,7 @@
+Script body: 11523 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2791 chars) -> 153.3s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2871 chars) -> 138.1s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2792 chars) -> 124.1s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2988 chars) -> 127.4s ✓
+  [mistral:en_paul_neutral] chunk 5/5 (77 chars) -> 4.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-07-25-price-of-intelligence-collapses-opus-5-half-price-chip-bear-market-jevons-model-factory.mp3 [mistral] 4,611,178 bytes, 576.4s

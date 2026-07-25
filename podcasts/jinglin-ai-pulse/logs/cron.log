@@ -1045,3 +1045,36 @@ Wrote script (1,953 spoken words, ~13 min), `.rss-item.xml` stub (XML-validated 
 
 **Sources with issues:** Direct `Zefan_Cai` X feed not retrievable via WebSearch (returned academic profiles only) — Chinese-community signal represented instead through the China-open-models governance discourse. No hard source outages.
 === 2026-07-24T02:38:15-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-25T02:30:13-07:00 start jinglin-ai-pulse ===
+1,930 spoken words — squarely in the 10–15 minute target. Everything for SKIP_TTS mode is complete: script + `.rss-item.xml` stub (validated) + `.commit-msg` stub written. No TTS, publish, feed edit, or commit — the orchestrator handles those.
+
+---
+
+## Ollie's AI Pulse — 2026-07-25 run summary
+
+**Episode:** `2026-07-25-price-of-intelligence-collapses-opus-5-half-price-chip-bear-market-jevons-model-factory` (1,930 spoken words, ~13 min)
+
+**Theme:** The price of intelligence collapsed from both ends in 48h (open Kimi K3 + closed Opus 5's half-price launch); labs, the stock market, and researchers are all repricing what's scarce — and disagreeing. Continues the week's open-weights arc (baseline → not-open-access/compute-is-the-moat → today's market repricing) without rehashing.
+
+**Segments:** Twitter Pulse — (1) Claude Opus 5 (July 24) as a competitive-necessity price move; (2) chip bear market + the Jevons-paradox debate. Money Moves — the $3.3T semiconductor repricing; supply-side (TSMC/ASML capacity up) vs. stock market. Deep Cut — Latent Space "Inside the Model Factory" (July 24), Poolside's Eiso Kant: the factory, not the model, is the moat.
+
+**Candidate funnel:**
+
+- **Twitter/X + discourse (24–48h):**
+  - ✅ **CHOSEN (Pulse beat 1)** — Claude Opus 5 launch, July 24 (anthropic.com/news/claude-opus-5; tech-ish "what actually changed"). Substantive: closed frontier forced onto performance-per-dollar.
+  - ✅ **CHOSEN (Pulse beat 2)** — Chip bear market + Jevons paradox debate (finbold SOX bear-market; FourWeekMBA Kimi-K3-Jevons; intellectia overcapacity). Convergence: stock market vs. supply chain publicly disagreeing.
+  - Kimi K3 July-27 weights drop (techi/Nathan Lambert/HF) — already the spine of the July 23–24 episodes; kept only as the recurring "Sunday watch" item, not re-led.
+  - @Zefan_Cai — no fresh 24–48h X activity surfaced (searches returned academic/HF profile pages only); no usable signal today.
+  - Dropped as thin/off-brief: FLUX 3 (BFL), Gigatoken tokenizer, Microsoft Mage, FrontierModelReasoningTournament leaderboard — product/leaderboard items without a live debate.
+
+- **Investment/business news (last 7d):**
+  - ✅ **CHOSEN (Money Moves)** — the ~$3.3T semiconductor repricing (live/ongoing) + July-1 "Meta Compute" ~$200B day as the earlier crack (context only, honestly flagged as older).
+  - AI funding roundups (Harvey $200M/$2.1B, Lovable, Glean, Hebbia; Promethus $12B) — real but no strategic through-line to today's theme; passed.
+
+- **Long-form podcasts (last 14d):**
+  - ✅ **CHOSEN (Deep Cut)** — Latent Space "Inside the Model Factory," Eiso Kant/Poolside, July 24 (latent.space/p/poolside; BigGo corroboration). Fresh, substantive argument chain + direct quotes; ties the week's throughline into research philosophy.
+  - WhynotTV — latest episode May 1, 2026 (outside 14-day window), skipped.
+  - Dwarkesh "next paradigm"/continual learning — June 26 (outside window), skipped.
+
+**Source-side notes:** No source outages. Verified Opus 5 across three independent pages (incl. anthropic.com) after one source flagged a July-23 "miss" then July-24 ship — consistent. All discourse/quote claims grounded in fetched full pages, not abstracts. `.rss-item.xml` validated as well-formed XML; zero unescaped ampersands.
+=== 2026-07-25T02:38:09-07:00 done  jinglin-ai-pulse (exit 0) ===
