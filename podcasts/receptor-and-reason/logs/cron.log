@@ -2685,3 +2685,40 @@ The MEMORY.md index entry for this memory already exists (the hook mentions r.ji
 
 Notable non-picks: cocaine-relapse mushroom-spine ensembles (`738740`), Target Preference Maps ML (`668090`), BBB agent-based model (`739661`), corticostriatal-development/alcohol-risk (`738690`), microbiome-nigrostriatal PD (`737943`) — all held as future candidates.
 === 2026-07-24T03:03:58-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-25T02:50:13-07:00 start receptor-and-reason ===
+Episode published (SKIP_TTS mode — script, RSS-item stub, and commit-msg stub written; ledger appended; orchestrator will handle TTS/publish/commit). Here's the run record.
+
+---
+
+## Receptor & Reason — 2026-07-25 — run summary
+
+**Mode:** `SKIP_TTS=1` → wrote `2026-07-25-receptor-and-reason.{md,rss-item.xml,commit-msg}`, appended to `state/shipped.jsonl` (64 lines). No TTS/publish/feed/commit (orchestrator does those). Stub XML validated; no raw ampersands.
+
+**Episode:** 10 items, dopamine-and-reward-heavy. Lead = miR-10a-5p as the accumbens-localized trait-vulnerability substrate for pramipexole-induced impulse-control disorders.
+
+### Candidate funnel
+
+**bioRxiv (Tier 1 core)** — full 7-day window (2026-07-18→07-25) paginated in full: **1,430 unique preprints scanned**. Category-filtered to neuroscience / pharmacology&tox / animal-behavior (432) → **134 CNS-pharmacology-relevant, unshipped**. bioinformatics/systems-bio/biophysics scanned separately for agentic/computational drug items (~35 hits).
+
+**arXiv (Tier 2)** — shared daily cache (`/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries) read; 219 biomedical+agentic hits, ~43 strongly relevant. None beat the bioRxiv Tier 1/comp slate for a neuropsychopharm audience today; not selected (MSBraM EEG foundation model and "Chemical CoT molecular scratchpad" were the closest, held in reserve).
+
+**Journals (Tier 1)** — WebSearch of NPP/Mol Psych/Biol Psych/Neuropharm: one live hit (*Mol Psychiatry* "Integrated 5-HT2A–TrkB and G-protein signaling," ~1wk) — psychedelic-plasticity, but yesterday's episode was psychedelic-heavy and it's a journal auth-wall; not selected.
+
+**Shortlist → 10 chosen (★):**
+- ★ miR-10a-5p / NAc / pramipexole ICDs `739499` — **LEAD** (full text)
+- ★ Two-mode geometry of striatal dopamine release `740623`
+- ★ VTA astrocyte Gq gates cocaine associations `739241`
+- ★ Met-enkephalin volume transmission brakes fear learning `739254`
+- ★ Mesohabenular glutamate & learned helplessness `739922`
+- ★ CNIH3 = molecular signature of slow AMPA receptors `739851`
+- ★ Mediodorsal thalamus subdivisions: affective vs sensory pain `739109`
+- ★ Target Preference Maps (drug-receptor ML) `10.1101/2025.08.01.668090` — comp (full text, 175KB)
+- ★ CHIMIYA-1 ADMET foundation model + TDC leakage lesson `739289`
+- ★ Edge-controllability predicts rTMS response in depression `737986` (light close)
+
+**Deferred (not-yet-rendered, re-check in 1–2 days):**
+- **Estimating Cardiac 5-HT2B Safety Margins for Repeated Low-Dose Psilocybin** `10.64898/2026.07.19.739440` — would have been the lead (computational exposure-response + psychedelic safety, ΔTIA valvulopathy model). Body not rendered (27KB, abstract-only via direct curl); ineligible under the full-text gate as a lead. **Strong candidate to lead a future episode.**
+- Most other fresh v1s (posted ≤2 days: dopamine-geometry, CNIH3, VTA-astrocyte, LHb, α-synuclein TPD, etc.) were abstract-only rendered; the chosen ones with self-contained abstracts were kept as tighter ~1-min items per the multi-item carve-out, while α-synuclein supramolecular-TPD `739556` was **dropped** (abstract cut off before results → material question unresolved, defer).
+
+**Infrastructure note (logged to memory):** `fetch_preprint.py`'s jina channel returned abstract-only for *every* DOI including a definitely-rendered v11 — same failure as 2026-07-24, same DOI. Confirmed persistent helper bug; worked around with direct `curl` to r.jina.ai (>60KB ≈ full body). Memory updated with the size-check heuristic and a suggestion to fix `try_jina_full_html`.
+=== 2026-07-25T03:10:34-07:00 done  receptor-and-reason (exit 0) ===
