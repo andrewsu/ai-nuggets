@@ -2790,3 +2790,40 @@ Script + `.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders) + `.com
 
 **ChemRxiv / News / Funder pages** — no in-window agentic-biomedical item beating the pick; no source outages this run.
 === 2026-07-24T02:09:31-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-25T02:00:13-07:00 start biomedical-agentic-ai ===
+All files are in place and the RSS stub is valid in feed context. Since `SKIP_TTS=1`, I've correctly skipped TTS generation, R2 publish, the `feed.xml` edit, and the commit — the orchestrator handles batch TTS and commits the two stubs.
+
+Here is today's run summary for the log.
+
+---
+
+## Episode published (script + stubs written; SKIP_TTS batch mode)
+
+**Show:** biomedical-agentic-ai — **2026-07-25**
+**Pick:** *"Bayesian uncertainty estimation improves clinical decision making in medical AI agents"* (arXiv 2607.20582, posted 2026-07-22)
+**Basename:** `2026-07-25-uncertainty-flag-clinical-llm-agent` — spoken body **833 words** (cap 1150)
+**Why it won:** Fully-readable, in-window, on-brand *agentic* pick with a crisp, transferable design take — a GPT-5.1 clinical-decision-support agent ignores a model's uncertainty when handed raw numbers (sensitivity 0.63) but acts on the identical information as a pre-thresholded binary flag, cutting confident misdiagnoses on unreliable findings 8.5%→2.7%. Representation, not availability, governs whether an agent can use uncertainty — a principle that generalizes to any probabilistic-model-into-agent pipeline.
+
+### Candidate funnel
+
+**bioRxiv** (details API, 2026-07-22→07-25, **793 scanned**, ~120 keyword hits; most spurious — receptor "agonist"/"agent", generic ML). Substantive agentic shortlist:
+- MetaClaw — auditable agentic metagenomic/multi-omics (10.64898/2026.07.21.739769, v1) — **DEFERRED: full text not yet rendered (abstract-only via fetch_preprint); re-check on a later day**
+- IOBRpy — agentic dual-agent immuno-oncology (10.64898/2026.07.17.739055, v1) — **DEFERRED: full text not yet rendered**
+- EcoXAI — KG-grounded multi-agent biomedical discovery (10.64898/2026.07.08.737358, **v2**) — out of window (orig Jul 8)
+- GeneKnow — auditable evidence synthesis (10.64898/2026.05.28.728511, **v2**) — out of window (orig May 28)
+- MechAInistic — multi-agent reasoning over metabolic models (10.64898/2026.05.11.723319, **v4**) — out of window (orig May 11)
+- STAR Suite — AI-agent-assisted transcriptomics engine (10.64898/2026.03.09.710580, **v5**) — out of window (orig Mar)
+
+**arXiv** (daily cache, 500 entries, **~59 agentic+biomed in last 4 days**). Substantive shortlist:
+- Bayesian uncertainty in medical AI agents — 2607.20582 — **✅ CHOSEN**
+- BioSecBench-Surveillance — 2607.19262 — **excluded: already shipped as the July 22 episode**
+- CLARK: closed-loop reasoning over knowledge graphs — 2607.19996 — on-theme (KG) but non-agentic, generic medical classification
+- SciExplore: benchmark for autonomous scientific agents — 2607.20926 — redundant with the recent BioSecBench benchmark episode
+- Agent-Guided Relational Concept Discovery (surgical margin + biochemical KG) — 2607.21437 — agentic+KG but niche; PDF wouldn't text-extract
+- Auditing Evidence Use in Medical LLM Diagnosis — 2607.20848 — eval methodology, not a capability
+- Causal dictionary learning in genomic LMs — 2607.19618 — strong science but non-agentic (passed over to keep agentic cadence)
+
+**PubMed** (MCP search): run, dominated by broad keyword-translation noise (187k hits); no in-window item beat the arXiv candidate. **ChemRxiv / news / funder pages:** not separately surveyed today — minor recall gap, noted; a strong in-window arXiv pick carried the day.
+
+**Note:** `2607.20582` appears in a prior day's cron.log funnel (passed over relative to that day's stronger pick, never shipped) — eligible today.
+=== 2026-07-25T02:15:29-07:00 done  biomedical-agentic-ai (exit 0) ===

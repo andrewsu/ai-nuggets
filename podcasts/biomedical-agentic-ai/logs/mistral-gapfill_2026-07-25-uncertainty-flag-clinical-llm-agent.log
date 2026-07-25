@@ -1,0 +1,4 @@
+Script body: 5019 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2870 chars) -> 151.0s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2148 chars) -> 104.0s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-07-25-uncertainty-flag-clinical-llm-agent.mp3 [mistral] 2,104,468 bytes, 263.0s
