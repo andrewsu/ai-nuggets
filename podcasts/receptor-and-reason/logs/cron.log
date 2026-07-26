@@ -2722,3 +2722,32 @@ Episode published (SKIP_TTS mode — script, RSS-item stub, and commit-msg stub 
 
 **Infrastructure note (logged to memory):** `fetch_preprint.py`'s jina channel returned abstract-only for *every* DOI including a definitely-rendered v11 — same failure as 2026-07-24, same DOI. Confirmed persistent helper bug; worked around with direct `curl` to r.jina.ai (>60KB ≈ full body). Memory updated with the size-check heuristic and a suggestion to fix `try_jina_full_html`.
 === 2026-07-25T03:10:34-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-26T02:50:09-07:00 start receptor-and-reason ===
+Today's episode is written and staged. In `SKIP_TTS` mode I stopped short of TTS/publish/feed/commit, as PIPELINE requires — the batch orchestrator will handle those from the stubs I left.
+
+## Receptor & Reason — 2026-07-26 (10 items, ~2,300 words / ~15 min)
+
+**Selection:** A psychedelics-and-computation day. Opened on a Tier-1 + computational lead, sequenced by topical adjacency, built down to a light closer. Full text read for the lead (the other bioRxiv v1s posted ~2 days ago rendered abstract-only — bodies not yet rendered — but their abstracts are self-contained with quantitative results, so they're fine as mid-length items).
+
+1. **LEAD** — Cardiac 5-HT2B safety of repeated low-dose psilocybin (exposure-response model; full text read)
+2. Psychedelic DOI lowers cortical network modularity (awake-mouse widefield imaging)
+3. Tx2Mol — de novo molecular design from gene-expression signatures
+4. Chemical chain-of-thought as a hallucination-prone molecular scratchpad (arXiv)
+5. Supramolecular peptide-amphiphile targeted protein degradation of α-synuclein
+6. Basal-ganglia model of Parkinsonian freezing where the standard DBS formulation fails (negative result)
+7. Neonatal medial-pulvinar lesions → schizophrenia-relevant prefrontal deficits (marmoset)
+8. NDUFV2 pseudogene → Complex I / mitochondrial deficits in schizophrenia
+9. HDAC3 inhibition → biphasic memory persistence via nuclear NF-κB
+10. **CLOSE** — "Dark magic mushroom" *Galerina indica* co-produces psilocybin + amatoxins
+
+## Candidate funnel
+
+- **bioRxiv (Tier 1/2)** — 1,465 items in the 7-day window (2026-07-19→07-26) pulled in full via details API; 602 loose relevance hits → 108 tight CNS-pharm candidates after dedup against the 649-key shipped ledger. 9 bioRxiv picks chosen.
+- **arXiv (Tier 2)** — daily cache present (500 entries); ~231 bio+agentic matches in window, mostly noise. Substantive shortlist: *Chemical Chain-of-Thought…Molecular Scratchpad* (2607.20935, **chosen**), MSBraM EEG foundation model (2607.21402), *Do AI-Native Biotechs Need Departments?* (2607.18696), causal dictionary learning in genomic LMs (2607.19618). No live arXiv call needed.
+- **Journals / Psychiatric Times / society pages / chemRxiv / industry (Tier 1/3)** — not separately queried this run; the bioRxiv + arXiv corpus yielded a full 10-item slate well above the floor, so Tier 4 was not activated.
+- **Dedup** — 10-item record appended to `state/shipped.jsonl`; no collisions with prior episodes.
+
+**Not shipped (deferred, notable):** none blocked by permanent unavailability. The three abstract-only bioRxiv picks (739656, 739736, 739556) were kept because their abstracts are self-contained; bodies should render on later re-checks.
+
+Stubs written (`.rss-item.xml` validated as well-formed XML, `.commit-msg`), spoken body clean of URLs/DOIs/headings. No commit made (SKIP_TTS).
+=== 2026-07-26T03:05:05-07:00 done  receptor-and-reason (exit 0) ===
