@@ -5,7 +5,7 @@ commits) are documented in `podcasts/PIPELINE.md`, prepended above.
 
 # 1. Audience
 
-**Matt Tremblay, Ph.D.**, CEO of Blackbird Laboratories (Baltimore), and his
+Matt Tremblay, Ph.D., CEO of Blackbird Laboratories (Baltimore), and his
 team — Eddie Cherok (Chief Business Officer), Hemaka Rajapakse (Venture
 Partner), Jonathan Robbins (Venture Partner), Anthony Accorsi (Venture
 Partner), Virginia Burger (Venture Partner), Matt Lawler (Venture Partner),
@@ -14,21 +14,28 @@ Avi Khanna (Senior Director of Molecular Discovery), Emily Wilkinson (Head of
 Finance and Operations), Jason Zavras (Fellow), and Yixuan Qiu (Director of
 Research Programs and Operations).
 
+Address daily greeting to the Blackbird Team, not only CEO.
+
 Venture Partners serve as leads for evaluating projects and as portfolio
 project leads. Esther, Avi, and Yixuan serve project management functions with
-Venture Partners who lead projects. Fellows are graduate students who work part
-time to aid Venture Partners with projects and due diligence. Chief of Staff
-supports CEO in strategy, organization, and execution. Chief Business Officer
-assesses all new opportunities from biotech companies in the region and manages
-Blackbird BioVentures deals.
+Venture Partners who lead projects. Fellows are graduate students who work
+part time to aid Venture Partners with projects and due diligence. Chief of
+Staff supports CEO in strategy, organization, and execution. Chief Business
+Officer assesses all new opportunities from biotech companies in the region
+and manages Blackbird BioVentures deals.
 
 Blackbird is a next-generation life sciences incubator and venture studio
 launched in 2023 with a $100M founding grant from the Bisciotti Family
 Foundation. The nonprofit (Blackbird Laboratories) de-risks academic IP at
 partner institutions via nondilutive grants; the for-profit (Blackbird
 BioVentures) writes the early checks when programs spin out and invests in
-Maryland-based biotech companies. Tremblay came from Scripps Research / Calibr;
-the team thinks like operators who turn academic science into companies.
+Maryland-based biotech companies. Tremblay came from Scripps Research /
+Calibr; the team thinks like operators who turn academic science into
+companies. Note that we can source programs from institutions outside of
+Maryland as long as the science is compelling and there is a path to
+establishing a Baltimore nexus. In other words, we can license technologies
+from any university in the country as long as we build a company in
+Baltimore.
 
 Full portfolio, program, and partner detail lives in
 `podcasts/blackbird-brief/memory/blackbird-portfolio.md`. **Read it at the
@@ -42,14 +49,14 @@ file as part of the run.
 This is an **executive intelligence briefing**, not a science-news show. Every
 item must answer "so what for Blackbird?" The audience wants:
 
-- **Commercializable research from partner institutions** (the daily focus) —
+- **Commercializable research from partner institutions** (the weekly focus) —
   fresh work out of **Johns Hopkins (primary)**, the **University of Maryland,
   Baltimore**, and the **Lieber Institute for Brain Development** with a
   credible path to a startup: a novel target, a platform technology, a
   first-in-class modality, or a translational result with clear IP and
   unmet-need pull. Frame each as a *sourcing lead* — "here's a paper Blackbird
   should look at, who's behind it, and why it could be a company."
-- **Portfolio-relevant news** (the weekly focus) — anything that moves the
+- **Portfolio-relevant news** (the daily focus) — anything that moves the
   thesis, competitive landscape, or risk profile of an existing Blackbird
   company or program. Competitor readouts, new entrants, deals, M&A, FDA
   actions, platform validation, IP, and partnering signals in the same
@@ -72,12 +79,12 @@ Two episode types. **Every episode's title and opening line must state which
 type it is** ("Sourcing Radar" or "Portfolio Watch") so the listener always
 knows the mode.
 
-## Type A — Sourcing Radar (DAILY)
+## Type A — Sourcing Radar (WEEKLY, Sundays)
 
-Runs every day. ~5–7 minutes. Focus: commercializable research from partner
-institutions (Stream B below).
+Runs weekly on Sundays. ~5–7 minutes. Focus: commercializable research from
+partner institutions (Stream B below).
 
-- **Cold open:** one sentence naming the type and the single best lead today.
+- **Cold open:** one sentence naming the type and the best leads of the week.
 - **The radar:** 2–3 picks. For each: the science in plain terms, the
   institution and group/PI, the IP/commercial angle (novel target? platform?
   defensible? unmet need?), competitive context, and a candid read on whether
@@ -93,12 +100,12 @@ translational investor take the meeting?" bar, follow PIPELINE.md: a thin day
 is a short episode or, if truly empty after surveying sources, no episode —
 do not pad with off-thesis filler.
 
-## Type B — Portfolio Watch (WEEKLY, Sundays)
+## Type B — Portfolio Watch (DAILY)
 
-Runs on Sundays only. ~6–9 minutes. Focus: news bearing on existing Blackbird
-companies and programs over the past week (Stream A below).
+Runs daily. ~6–9 minutes. Focus: news bearing on existing Blackbird companies
+and programs over the past week (Stream A below).
 
-- **Cold open:** one sentence naming the type and the week's most important
+- **Cold open:** one sentence naming the type and the day's most important
   development for the portfolio.
 - **The watch:** walk the items that touch portfolio programs. For each: what
   happened, which Blackbird company/program it touches, and the implication —
@@ -109,12 +116,12 @@ companies and programs over the past week (Stream A below).
 - **Episode basename:** `YYYY-MM-DD-portfolio-watch`.
 
 On Sundays the show produces **both** a Sourcing Radar and a Portfolio Watch
-episode (two episodes, one commit). On all other days, Sourcing Radar only.
+episode (two episodes, one commit). On all other days, Portfolio Watch only.
 
 # 3. Search strategy
 
-Recency window: Sourcing Radar = past ~3–4 days (daily cadence); Portfolio
-Watch = past ~7 days. If a source fails transiently, follow PIPELINE.md (one
+Recency window: Sourcing Radar = past ~7 days; Portfolio Watch = past ~3–4
+days (daily cadence). If a source fails transiently, follow PIPELINE.md (one
 short retry, then proceed with the rest — never abort the run).
 
 **Stream A — Portfolio & competitive news** (Portfolio Watch)
@@ -128,14 +135,16 @@ short retry, then proceed with the rest — never abort the run).
 
 **Stream B — Partner-institution research** (Sourcing Radar)
 
-- Preprints: bioRxiv / medRxiv filtered to JHU, UMB, or Lieber Institute
-  author affiliations. Use `scripts/fetch_preprint.py` for full text
+- Preprints: bioRxiv / medRxiv filtered primarily to JHU, UMB, or Lieber
+  Institute author affiliations. Use `scripts/fetch_preprint.py` for full text
   (bioRxiv 403s direct fetches).
 - Journals: Nature, Science, Cell, Nature Medicine, Nature Biotech, Nature
   Chemical Biology, Science Translational Medicine, NEJM.
 - Institutional newsrooms / tech-transfer: Johns Hopkins Hub & Hopkins
   Medicine news, Johns Hopkins Technology Ventures (JHTV), UMB / UM Ventures,
-  Lieber Institute news.
+  Lieber Institute news. However, we are open to sourcing from other
+  institutions with the mandate of developing the program and launching a
+  newco in Baltimore.
 - Selection bar: would a translational investor take a meeting? Prioritize
   novel mechanism, platform-ability, defensible IP, and unmet need over
   incremental findings.
@@ -147,16 +156,16 @@ short retry, then proceed with the rest — never abort the run).
 - Always connect a drug/asset to its target or mechanism, and a paper to its
   commercial angle. Every item ends on the "so what for Blackbird" beat.
 - Tone: sharp, candid, operator-to-operator — a trusted analyst briefing the
-  CEO. Bring in analyst/expert commentary and competitive context where
-  available. Don't pad; a tight short episode beats a thin long one.
+  CEO and full team. Bring in analyst/expert commentary and competitive
+  context where available. Don't pad; a tight short episode beats a thin long
+  one.
 
 ## Audio conventions
 
 - Pronounce "JHU" as "Johns Hopkins." Say "Lieber Institute," spell "UMB" as
   the letters "U-M-B," and say "Blackbird BioHub."
 - Pronounce portfolio/program names naturally: "Aletira" (ah-leh-TEER-ah),
-  "aSKY" (say "a-sky"), "GPR52" as "G-P-R fifty-two," "GCPII" as
-  "G-C-P-two," "SELEXON" (seh-LEX-on).
+  "GPR52" as "G-P-R fifty-two," "SELEXON" (seh-LEX-on).
 - Spell out dollar amounts and identifiers the way a person says them.
 
 # 5. TTS & distribution
