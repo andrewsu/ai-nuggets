@@ -1044,3 +1044,47 @@ Substantive shortlist (title | URL):
 
 **Lead take:** UMB's Suk lab (relocated from the JHU Center for Nanomedicine cluster to the new UM-MIND institute) built an antigen-agnostic, Fc-independent CD47×TLR9 ISAC that converts silent phagocytosis into durable anti-tumor immunity across NHL and TNBC — differentiated from every antigen-restricted clinical ISAC. Live patent filing + Maryland Innovation Initiative/TEDCO funding = an open UM Ventures window and the strongest UMB lead of the month; actions logged for Eddie (filing status/vehicle) and Avi/Yixuan (FTO vs anti-CD47 estate + linker patents).
 === 2026-07-25T02:29:59-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-26T02:10:09-07:00 start blackbird-brief ===
+All six files are in place, both scripts have `## Script` headings, and the biorxiv paper URL resolves in the API (the pre-commit hook will pass). Everything's ready for the batch TTS orchestrator. Per SKIP_TTS mode (`SKIP_TTS=1`), I've correctly **not** run TTS, published to R2, edited `feed.xml`, or committed — `publish_pending.py` does all of that after batch TTS.
+
+Here is the run summary for the log.
+
+---
+
+## Blackbird Brief — 2026-07-26 (Sunday, two episodes)
+
+**Cadence note:** First Sunday under the new schedule — Sourcing Radar flipped to **weekly/Sundays**, Portfolio Watch stays **daily**. Both episodes produced today.
+
+### Episode 1 — Sourcing Radar (inaugural weekly roundup)
+`2026-07-26-radar-weekly-roundup-suk-cd47-dctpp1-hlmr1`
+
+A fresh corresponding-author sweep (bioRxiv + medRxiv, 2026-07-20→26) plus a PubMed affiliation pass (07-23→26, 167 records) confirmed **no new full-text-eligible, company-shaped partner-institution lead** beyond what the week's daily radars already surfaced — so today runs as a ranked roundup of the week's three most deal-ready leads:
+
+1. **LEAD — Suk lab UMB aCD47-CpG immune-stimulating antibody conjugate** (full text read 07-25; antigen-agnostic + Fc-independent CD47×TLR9 platform; live patent + TEDCO/MII funding = open UM Ventures window). *Chosen as week's #1.*
+2. **JHU DCTPP1 inhibitors** as a decitabine resistance-breaker (PNAS; flag-and-chase, body paywalled; provisional filed).
+3. **Ruan lab JHU hLMR1** liver-lncRNA MASH/urea-cycle target (PLoS One, full text read; no patents disclosed = time-sensitive).
+
+### Episode 2 — Portfolio Watch
+`2026-07-26-portfolio-watch`
+
+Thin window; **no portfolio-company news**. Signal = precision-NSCLC/RAS landscape hardening around **aSKY Therapeutics**, two same-day (07-22) FDA milestones:
+- **GSK/Nuvalent zidesamtinib (Jideytro)** approved in ROS1+ NSCLC (GSK's first lung approval) — *chosen, lead*.
+- **Revolution Medicines daraxonrasib** RAS(ON) NDA accepted in PDAC — *chosen, more direct KRAS/RAS comp*.
+- Landscape note (just outside window): 1104health competitor Massive Bio × FOMAT site-network expansion.
+
+### Candidate funnel
+- **bioRxiv/medRxiv sweep (07-20→26):** 15 JHU/UMB corresponding-author hits. *(Cursor-stride bug caught: details API page size is 30, not 100.)* Fresh/new items all ineligible or off-thesis:
+  - Suk aCD47-CpG ISAC (10.64898/2026.07.22.739359) — **featured** (shipped 07-25; carried as week's #1).
+  - Kwon iPSC-cardiomyocyte bioincubation (739858) — deferral, still body-unrendered 07-26.
+  - Krantz single-molecule proteomics perspective (739629) — deferral, still unrendered.
+  - Watanabe skoupocytosis (740182) — deferral, still unrendered.
+  - JHU single-cell perturbation DE benchmark (739620) — methods, no asset; passed.
+  - UMD-College-Park (Tbx2 photoreceptor, West Nile, cortical auditory) — out of scope.
+  - medRxiv (PCI+TAVR renal, PNH complement, aging clocks, Nigeria/DRC birth) — clinical/epi, no asset.
+- **PubMed journals (07-23→26):** 167 records, all clinical/epi/review/collaborator-only; nothing new company-shaped (Green PBAE, Nat Commun copanlisib, Cancer Immunol Res CD44 already logged).
+- **Press (Portfolio, past ~4d):** zidesamtinib FDA approval ✅**chosen**; daraxonrasib NDA ✅**chosen**; Massive Bio×FOMAT (07-20, borderline, landscape note).
+
+**Memory updated:** new 2026-07-26 log entry + aSKY competitive-landscape update (zidesamtinib approval, neladalkib NDA, daraxonrasib NDA).
+
+No commit performed (SKIP_TTS batch mode) — orchestrator will generate audio, publish, update the feed, and commit.
+=== 2026-07-26T02:27:55-07:00 done  blackbird-brief (exit 0) ===

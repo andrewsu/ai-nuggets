@@ -5,7 +5,43 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-25 (Saturday Sourcing Radar — FIFTH consecutive thin preprint week, BUT it
+_Last verified: 2026-07-26 (Sunday two-episode day — FIRST under the new cadence: Sourcing Radar flipped to
+WEEKLY/Sundays, Portfolio Watch stays DAILY. **Sourcing Radar = inaugural weekly roundup.** A fresh
+corresponding-author sweep of 2026-07-20→26 (note: bioRxiv/medRxiv details API page size is 30, not 100 — cursor
+must increment by the returned page length or records are silently skipped; the earlier one-off run that returned
+"zero hits" was a cursor-stride bug, not an empty week) surfaced 15 JHU/UMB hits, and a PubMed affiliation pass over
+2026-07-23→26 (167 records) confirmed NO NEW full-text-eligible, company-shaped partner-institution lead beyond what
+the week's daily radars already featured. The only genuinely-new preprints were all ineligible/off-thesis: the three
+abstract-only deferrals still un-rendered (Kwon iPSC-cardiomyocyte in-vivo bioincubation 10.64898/2026.07.21.739858;
+Krantz single-molecule-proteomics-via-dynamical-translocases PERSPECTIVE 10.64898/2026.07.20.739629; Watanabe/Bergles
+skoupocytosis 10.64898/2026.07.22.740182 — re-checked 07-26, ALL still body-unrendered = keep deferring), plus a JHU
+methods/benchmark preprint "Beyond Expression Prediction: Benchmarking Differential Expression Classification in
+Single-Cell Perturbation Models" (10.64898/2026.07.20.739620 — no asset/IP, like the 07-13 Hicks spatial-agents
+benchmark) and out-of-scope UMD-College-Park items (Tbx2 photoreceptor, West Nile vectors, cortical auditory).
+So the weekly Radar was run as a **ranked roundup of the week's 3 most deal-ready leads**, all previously vetted:
+(1) LEAD = **Suk lab UMB aCD47-CpG ISAC** (full text read 07-25; strongest UMB lead of the month; antigen-agnostic +
+Fc-independent CD47×TLR9 platform; live patent [Suk+Chung] + TEDCO/MII funding = open UM Ventures window; NHL + cold
+TNBC, day-106 rechallenge memory) — re-featured as the week's #1 despite shipping 07-25, appropriate for the new
+weekly-digest format; (2) **Berger/Yegnasubramanian JHU DCTPP1 inhibitors** as a decitabine/DNMT-inhibitor
+resistance-breaker (PNAS 10.1073/pnas.2534029123; body paywalled = flag-and-chase; provisional filed; NCE on generic
+backbone); (3) **Ruan lab JHU hLMR1** hepatocyte-specific liver-lncRNA MASH/urea-cycle repressor target (PLoS One
+10.1371/journal.pone.0353674; full text read; ASO/GalNAc-siRNA modality; NO patents disclosed = TIME-SENSITIVE JHTV
+window). Radar basename 2026-07-26-radar-weekly-roundup-suk-cd47-dctpp1-hlmr1.
+**Portfolio Watch = precision-NSCLC / RAS landscape hardening around aSKY Therapeutics** (thin window; NO
+portfolio-company news in past ~4 days). Two same-day (2026-07-22) regulatory milestones: **FDA approved GSK's
+zidesamtinib (Jideytro), a ROS1-selective TKI, in previously-treated ROS1+ NSCLC** — GSK's first-ever lung-cancer
+approval, ~2 months ahead of PDUFA, fast payoff on the ~$10.6B Nuvalent acquisition; sibling **neladalkib (ALK) NDA
+under FDA review, Nov 27 2026 target**. Zidesamtinib + neladalkib = exactly the GSK-Nuvalent axis in aSKY's watch
+list; category validation but different drivers (ROS1/ALK, not KRAS) = landscape more than head-to-head. And **FDA
+accepted Revolution Medicines' daraxonrasib (oral multi-selective RAS(ON) inhibitor) NDA in previously-treated
+metastatic PDAC**, into the FDA Commissioner's National Priority Voucher pilot (Ph3 RASolute 302; broader Ph3 program
+includes NSCLC) = the more direct KRAS/RAS comp aSKY's undisclosed KRAS-frame mechanism must differentiate against.
+Action logged: Eddie + aSKY team refresh the competitive map (diligence hygiene, not a fire drill). Landscape note
+(just outside window, ~2026-07-20): 1104health competitor **Massive Bio** expanded AI cancer-trial prescreening onto
+FOMAT's large clinical-site network — enrollment-space consolidation + AI-matching hardening into incumbents.
+URLs verified (FDA/GlobeNewswire/PRNewswire 200; Businesswire blocked my fetcher but Morningstar mirror resolves).
+Portfolio Watch basename 2026-07-26-portfolio-watch.
+Previously verified 2026-07-25 (Saturday Sourcing Radar — FIFTH consecutive thin preprint week, BUT it
 finally broke with a strong full-text-readable UMB lead. Four-day bioRxiv/medRxiv corresponding-author
 sweep (2026-07-21→25; 1092 bioRxiv + 262 medRxiv records via api.biorxiv.org details API, filtered on
 author_corresponding_institution, UMB regex word-boundaried to avoid "colUMBia") returned a handful of
@@ -814,6 +850,23 @@ competitors below. These are the "so what for Blackbird" hooks.
 - **Watch:** disclosed MOA once filed; aSKY's positioning vs. competing
   NSCLC kinase entrants (e.g. GSK/Nuvalent zidesamtinib + neladalkib post-
   June 2026 acquisition); further UM Ventures × Blackbird co-investments.
+- **Competitive-landscape update (2026-07-26 Portfolio Watch):** two same-day
+  (2026-07-22) FDA milestones hardened the precision-NSCLC/RAS field around aSKY.
+  (a) **FDA approved GSK's zidesamtinib (Jideytro)**, a ROS1-selective TKI, in
+  previously-treated ROS1+ NSCLC — GSK's first-ever lung-cancer approval, ~2
+  months ahead of PDUFA, a fast payoff on the ~$10.6B Nuvalent acquisition;
+  **neladalkib (ALK) NDA under FDA review, Nov 27 2026 target.** These are the
+  exact GSK-Nuvalent axis flagged above; category validation but different
+  oncogenic drivers (ROS1/ALK, not KRAS) = landscape validation more than a
+  head-to-head threat. (b) **FDA accepted Revolution Medicines' daraxonrasib**
+  (oral multi-selective RAS(ON) inhibitor) NDA in previously-treated metastatic
+  PDAC, into the FDA National Priority Voucher pilot (Ph3 RASolute 302; broader
+  Ph3 program includes NSCLC) — the more direct KRAS/RAS comparator aSKY's
+  undisclosed KRAS-frame mechanism must define itself against. Read: RAS-mutant
+  oncology is de-risking fast at the regulatory level = tailwind for the science
+  AND a rising differentiation bar. **Action:** Eddie + aSKY team refresh the
+  competitive map now; the undisclosed-mechanism gap gets more expensive as the
+  field matures.
 
 ### Neuropsychiatric NewCo (schizophrenia) — Lieber Institute + Third Rock ✅
 - **What:** **GPR52 agonist** program for schizophrenia. GPR52 is a
