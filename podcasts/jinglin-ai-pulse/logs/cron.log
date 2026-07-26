@@ -1078,3 +1078,35 @@ Wrote script (1,953 spoken words, ~13 min), `.rss-item.xml` stub (XML-validated 
 
 **Source-side notes:** No source outages. Verified Opus 5 across three independent pages (incl. anthropic.com) after one source flagged a July-23 "miss" then July-24 ship — consistent. All discourse/quote claims grounded in fetched full pages, not abstracts. `.rss-item.xml` validated as well-formed XML; zero unescaped ampersands.
 === 2026-07-25T02:38:09-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-26T02:30:09-07:00 start jinglin-ai-pulse ===
+Everything is in place. Since `SKIP_TTS=1`, I've correctly skipped TTS generation, R2 publish, `feed.xml` editing, and the commit — the orchestrator (`publish_pending.py`) handles those after batch TTS. The script (1,993 spoken words, within the 1,500–2,200 target) and both stub files are written; the RSS item parses as valid XML with both placeholder tokens intact.
+
+---
+
+## Run summary — jinglin-ai-pulse, 2026-07-26 (Sunday)
+
+**Published:** `2026-07-26-open-weights-relocate-the-moat-prompt-injection-is-engineering-not-immunity-agent-cloud` (SKIP_TTS mode — script + `.rss-item.xml` + `.commit-msg` stubs written; no TTS/publish/commit, per pipeline).
+
+**Episode shape:** The week's "what's actually scarce" arc reaches its head on the eve of Kimi K3's open-weight drop. Twitter Pulse (K3's 1.4TB "open ≠ runnable" reframe + the Opus 5 prompt-injection "0%" claim vs. the permissions-not-model contrarian) → Money Moves (Anduril at $100B) → Deep Cut (Latent Space #216, Databricks' Zaharia & Xin). Unifying throughline: the model is the cheap part; value has moved to the substrate (compute rack, governance layer, data/memory, defensible market).
+
+### Candidate funnel
+
+**Twitter/discourse (last 48h):**
+- ✅ **Kimi K3 open weights land July 27 (00:00 UTC), the 1.4TB catch** — techi.com, explainx.ai, HF, kimi-k2.org. *Chosen (Pulse beat 1)* — closes the openwashing test promised in the 07-25 episode; license still unpublished at recording.
+- ✅ **Opus 5 "solved" browser prompt injection (0% w/ Auto Mode; 3.7% naked)** — the-decoder, blockchain.news; contrarian: Oleria ("govern the permissions"), OpenAI's "may never be solved." *Chosen (Pulse beat 2).*
+- ⬜ Opus 5 launch / benchmarks — covered in depth 07-25, skipped as stale.
+- ⬜ @Zefan_Cai — only academic-profile hits surfaced (KV-cache/multimodal papers), no fresh 48h discourse signal; noted, not usable.
+- ⬜ HN: "Kimi K3 built Windows XP in browser," "context engineering for Claude 5 gen," "Research Engineer at a Big LLM Lab" — real but thinner than the two chosen.
+
+**Investment/business (last 7d):**
+- ✅ **Anduril in talks at $100B (TechCrunch, Jul 24)** — 3x in ~12mo, $2.2B 2025 revenue, defense-tech VC >$12B H1. *Chosen (Money Moves).*
+- ⬜ Etched $10.3B (Jul 23) — already featured 07-21.
+- ⬜ Together AI $800M (Jul 1), DeepMind-founder $300M pre-seed (Jul 16), Valar Atomics $6B — older/less on-thesis.
+
+**Podcasts (last 14d — hard recency filter):**
+- ✅ **Latent Space #216 — Zaharia & Xin, Databricks (Jul 22)** — "Why the Frontier Ecosystem must be Open"; agent security via stateful/contextual policies, LTAP/"continuous data corruption," "vector DB should never have been a category." *Chosen (Deep Cut)* — fresh, ties directly to the prompt-injection and "what's scarce" threads.
+- ⬜ Latent Space "Model Factory"/Poolside (Jul 23) — used 07-25; not reused.
+- ⬜ Dwarkesh × Dario (Feb), Dwarkesh × Karpathy, "Economics of AGI" (Jun 4), TWIML × Raschka (Feb 26), 张小珺 × 罗福莉 (#138, Apr 24) — all outside the 14-day window; deferred.
+
+**Source issues:** No hard outages. `podtail.com` and `podcastaddict.com` returned 403 to WebFetch (worked around via search + `latent.space` direct). No X/Twitter API access — discourse signal reconstructed from aggregators and outlet coverage, as the fallback path anticipates.
+=== 2026-07-26T02:39:26-07:00 done  jinglin-ai-pulse (exit 0) ===
