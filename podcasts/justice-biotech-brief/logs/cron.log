@@ -1566,3 +1566,30 @@ Squarely on Justice's core beat (T-cell engagers / bispecifics), genuinely novel
 
 No commit or push performed (SKIP_TTS batch mode) — stubs left in `scripts/` for `publish_pending.py`.
 === 2026-07-25T02:45:48-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-26T02:40:09-07:00 start justice-biotech-brief ===
+All artifacts are in place and validated. Since `SKIP_TTS=1`, I've stopped before TTS/publish/feed/commit — the orchestrator handles those. Here's the run summary for the log.
+
+---
+
+## Justice's Biotech Brief — 2026-07-26 — episode staged (SKIP_TTS batch mode)
+
+**Selected:** EB103 — CD19-redirected ARTEMIS synthetic-TCR T-cell therapy; Estrella Immunopharma's STARLIGHT-1 opens dose-expansion + reports durable CRs with low CRS in R/R B-cell NHL (press release July 24, 2026).
+
+**Why it won:** Squarely on Justice's T-cell-therapy beat and the most *novel* on-topic item in the window — the differentiator is signaling architecture (native TCR/CD3 engagement vs the car-T chimeric tail), a mechanistic angle a synthetic-immunology bench cares about. Beat the Gilead CHMP item, which is a regulatory milestone on already-known data. Read in full across the BusinessWire/BioSpace release + CancerNetwork corroboration (n=9 escalation, dose-level-2 all-CR, 6-mo durability, low-grade CRS/ICANS, no treatment-related SAEs). Written with explicit skeptic's brakes (tiny N, microcap hype).
+
+**Candidate funnel:**
+
+- **bioRxiv** (details API, full 2-day collection 2026-07-25→26): 41 preprints pulled (not sampled), keyword-filtered. Substantive on-topic matches after discarding basic-science/off-beat hits: none clinical/translational enough for this show's headline focus. Closest: MAIT-cell anti-tumor immunity (cancer bio), SynNotch force-transmission imaging (bioengineering) — basic mechanism, and new `10.64898` DOIs likely not-yet-rendered. Deferred, not selected.
+- **News / press (Fierce, Endpoints, STAT, BioSpace, GlobeNewswire/BusinessWire):** Fierce Biotech + Endpoints front pages 403'd WebFetch; worked via search/BioSpace. Weekend (Jul 25–26) news thin; freshest on-topic items cluster Jul 24.
+  - ✅ **EB103 / ARTEMIS STARLIGHT-1** (Estrella, Jul 24) — *chosen*. https://www.businesswire.com/news/home/20260724356360/en/
+  - Gilead Trodelvy + Keytruda CHMP positive opinion, 1L PD-L1+ mTNBC, ASCENT-04 (Jul 24) — strong ADC+IO story but regulatory milestone on known data. https://www.biospace.com/press-releases/chmp-recommends-gileads-trodelvy-plus-keytruda-in-pd-l1-positive-first-line-metastatic-triple-negative-breast-cancer
+  - Enhertu + pertuzumab CHMP, 1L HER2+ mBC (Jul 24) — regulatory, known data.
+  - J&J Tec-Tal MonumenTAL-6 — already shipped in yesterday's (07-25) episode; excluded.
+- **Funders (ARPA-H / NIH / NSF):** ARPA-H only Jul 24 item was an "ARPA-101" explainer (off-topic). No on-topic funder news in window.
+
+**Staged files** (orchestrator does TTS → R2 → feed → commit):
+- `scripts/2026-07-26-eb103-artemis-cd19-synthetic-tcr-tcell-therapy-bnhl.md` (712-word spoken body, ~5 min)
+- `.rss-item.xml` (validated, parses) + `.commit-msg`
+
+No `git add`/`commit`/`push` performed (SKIP_TTS mode).
+=== 2026-07-26T02:46:09-07:00 done  justice-biotech-brief (exit 0) ===
