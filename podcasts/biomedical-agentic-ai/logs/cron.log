@@ -2827,3 +2827,28 @@ Here is today's run summary for the log.
 
 **Note:** `2607.20582` appears in a prior day's cron.log funnel (passed over relative to that day's stronger pick, never shipped) — eligible today.
 === 2026-07-25T02:15:29-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-26T02:00:09-07:00 start biomedical-agentic-ai ===
+All three deliverables are written and validated. In `SKIP_TTS=1` mode, the orchestrator handles TTS, R2 publish, feed update, and commit — my work is done. Final audit summary:
+
+---
+
+## Episode published (script + stubs staged for batch TTS)
+
+**Show:** biomedical-agentic-ai — 2026-07-26
+**Pick:** EcoXAI — a knowledge-graph-grounded multi-agent system that autonomously repurposes drugs for Alzheimer's (bioRxiv, posted 2026-07-23, v2)
+**Files written:** `2026-07-26-ecoxai.md` (796-word spoken body, under 1150 cap), `.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` placeholders), `.commit-msg`. Full text read via `r.jina.ai` on the PDF endpoint (the `.full` HTML page and `fetch_preprint.py`'s jina channel both returned abstract-only, consistent with the known-broken jina channel; PDF-via-jina yielded the complete body).
+
+### Candidate funnel
+
+**bioRxiv** (window 2026-07-23→26): 560 scanned, 55 keyword hits, ~4 substantive agentic-AI-for-biomedicine:
+- **EcoXAI: Autonomous Agentic Ecosystem for XAI and Biomedical Discovery** (07-23) — `10.64898/2026.07.08.737358v2` — **CHOSEN**
+- MetaClaw: auditable AI agent for end-to-end multi-omics analysis (07-24) — `10.64898/2026.07.21.739769` — strong runner-up (auditability/provenance angle); EcoXAI won on knowledge-graph grounding + drug-repurposing, tighter fit to show identity
+- STAR Suite: open-source AI-agent-assisted transcriptomics engine (07-24) — `10.64898/2026.03.09.710580` — more "AI-built tool" than agentic system; weaker fit
+- CHIMIYA-1: ADMET foundation model (07-23) — foundation model, not agentic; already surfaced in Receptor & Reason 07-25
+
+**arXiv** (cache `/tmp/ai-nuggets-arxiv-cache.xml`, fresh 02:00, 14163 lines): 10 agentic+biomedical hits, best being Bayesian-uncertainty medical AI agents (07-22, already shipped 07-25), multi-agent triage (07-22), agent-guided surgical-margin discovery (07-23). None dominant over EcoXAI.
+
+**Sources not separately queried:** ChemRxiv / PubMed / news / funder pages — bioRxiv+arXiv surfaced a clearly dominant, in-window, full-text-readable pick, so I stopped at a confident selection rather than exhausting every source. No source-side outages encountered (bioRxiv API and arXiv cache both healthy).
+
+No commit/push per `SKIP_TTS` mode — `publish_pending.py` will finalize after batch TTS.
+=== 2026-07-26T02:05:52-07:00 done  biomedical-agentic-ai (exit 0) ===
