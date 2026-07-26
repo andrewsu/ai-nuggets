@@ -2576,3 +2576,36 @@ Two episodes written (script + `.rss-item.xml` + `.commit-msg` stubs each). No a
 
 **Source notes:** No source-side outages. Fierce Biotech/Endpoints homepages 403'd on direct WebFetch; recovered full coverage via WebSearch + Fierce Pharma/BioPharma Dive fetches and primary press release, so no recall loss. Note: `memory/calibr-pipeline.md` referenced in PROMPT.md does not exist on disk — proceeded without it.
 === 2026-07-25T02:28:23-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-26T02:20:09-07:00 start calibr-briefing ===
+Both stubs are well-formed. All deliverables for today's calibr-briefing are in place. Since `SKIP_TTS=1`, I've correctly skipped TTS, R2 publish, feed edits, and the commit — the batch orchestrator handles those from the stubs.
+
+---
+
+## Calibr briefing — Sunday, 2026-07-26 — run complete
+
+**Two episodes written** (scripts + `.rss-item.xml` + `.commit-msg` stubs, no commit per SKIP_TTS mode):
+- `2026-07-26-pharma-headlines` — 4-item roundup (quiet weekend)
+- `2026-07-26-merck-alimatravir-hiv-prep-access-spotlight` — spotlight (full text of Merck PR + STAT read before drafting)
+
+**Note:** `memory/calibr-pipeline.md` referenced in PROMPT.md is not present in this environment; proceeded from the PROMPT's focus areas.
+
+### Candidate funnel
+
+Sources surveyed via web across the show's headline set (Fierce Biotech/Pharma, Endpoints, STAT, BioPharma Dive, Clinical Trials Arena, GEN, press releases). Weekend → thin fresh flow; strong filtering against items already shipped this week.
+
+**Shortlist — fresh (Jul 23–24), un-covered → SELECTED:**
+- ✅ **SPOTLIGHT + lead headline** — Merck details pre-approval, royalty-free access plan for **alimatravir** (once-monthly oral HIV PrEP): 7 generic licenses / 129 LMICs, Gates-backed (Jul 24). Full text read. — merck.com PR + statnews.com
+- ✅ Headline 2 — **Amgen** submits data, requests FDA hearing to keep **Tavneos (avacopan)** after CDER's withdrawal proposal over trial-data manipulation + NEJM retraction (Jul 23). — amgen.com / medscape
+- ✅ Headline 3 — **Verdiva Bio** hires ex-Metsera CMO **Steve Marso** as obesity talent wars chase oral drugs (Jul 23). — endpoints.news / biospace
+- ✅ Headline 4 — Two-speed labor market: **Amgen** ~40 cuts + **Clinuvel** sheds a fifth / moves HQ to US (Jul 23–24). — fiercebiotech layoff tracker
+
+**Considered but excluded:**
+- MonumenTAL-6 (Tec+Tal myeloma, HR 0.11) — already a headline 7/24; detailed data not yet released → repeat
+- Lilly retatrutide TRIUMPH-2/3 — headline 7/24 → repeat
+- GSK Jideytro (zidesamtinib) ROS1 lung cancer approval — headline 7/23 → repeat
+- Novo v. Lilly obesity ad injunction — headline 7/25 → repeat
+- Roche divarasib KRAS G12C Ph3 win (Jul 2) → stale
+- Insilico/Takeda AI collab (Jul 1); Formation Bio candidate sales (2025); Biogen diranersen anti-tau AAIC (Jul 14) → stale for a daily
+
+**Source failures:** none material. (The single background `find /` was slow and killed; did not affect selection.)
+=== 2026-07-26T02:36:58-07:00 done  calibr-briefing (exit 0) ===
