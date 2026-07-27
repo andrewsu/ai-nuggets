@@ -1,0 +1,4 @@
+Script body: 4647 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2947 chars) -> 140.6s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (1698 chars) -> 74.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-07-27-dagforge.mp3 [mistral] 1,890,055 bytes, 236.2s

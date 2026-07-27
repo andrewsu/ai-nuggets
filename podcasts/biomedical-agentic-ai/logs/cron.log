@@ -2852,3 +2852,35 @@ All three deliverables are written and validated. In `SKIP_TTS=1` mode, the orch
 
 No commit/push per `SKIP_TTS` mode — `publish_pending.py` will finalize after batch TTS.
 === 2026-07-26T02:05:52-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-27T02:00:16-07:00 start biomedical-agentic-ai ===
+All artifacts are in place. Since `SKIP_TTS=1`, I've stopped after writing the script and the two batch-mode stubs (no TTS, publish, feed edit, or commit — the orchestrator does those).
+
+## Episode published (batch-mode staged): biomedical-agentic-ai — 2026-07-27
+
+**Pick:** DAGForge — an agent that turns biomedical literature into auditable, evidence-linked causal graphs (arXiv 2607.21859, posted 2026-07-23, Mass General/Harvard). Full text read via arXiv HTML (`arxiv.org/html`). Spoken body 767 words (cap 1150).
+
+Files written to `podcasts/biomedical-agentic-ai/scripts/`:
+- `2026-07-27-dagforge.md` (script)
+- `2026-07-27-dagforge.rss-item.xml` (validated well-formed; `__LENGTH__`/`__DURATION__` placeholders)
+- `2026-07-27-dagforge.commit-msg`
+
+**Why it won:** squarely on-theme — agentic AI + biomedical knowledge structuring + provenance/auditability + literature integration + reproducibility. The editorially interesting angle is the LLM-does-atoms / deterministic-solver-does-structure split, and the reframing of its "false positives" (87% carry a verified verbatim excerpt).
+
+### Candidate funnel
+
+**bioRxiv** (window 2026-07-24→07-27): 418/431 entries pulled (13 pages lost to transient API 500s/timeouts across retries — small recall gap noted). Strong-keyword shortlist:
+- MetaClaw — auditable AI agent for end-to-end multi-omics analysis (10.64898/2026.07.21.739769, v1) — **top on-theme candidate, DEFERRED**: full text not rendered (r.jina.ai returned abstract-only, ~28KB; body HTML not yet up for a 3-day-old v1). Ineligible today per full-text gate; re-check on a later day.
+- PlantMetWiki — FAIR knowledge graph for plant metabolism (10.64898/2026.07.22.733699) — on-theme but narrower (plant); not fetched, lower priority than DAGForge.
+- Spatium (protein LM for spatial proteomics), AINN-Express (VHH expression foundation model), AI-enabled virtual-cell CD8 T-cell modeling — foundation-model, not agentic; passed over.
+
+**arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 2026-07-23/24): biomedical∩agentic shortlist:
+- **DAGForge** — auditable causal DAG authoring from biomedical literature (2607.21859) — **CHOSEN**, full text read.
+- BrainAgent / "When LMs Meet NeuroGraphs" — agentic LLM for brain-network classification (2607.22082) — read abstract; narrower, DAGForge stronger fit.
+- DeepER-Med / SciExplore / IDEAgent — general scientific-agent work, not biomedical-specific enough.
+
+**PubMed** (edat 2026-07-22→07-27, 103 hits, top 40 scanned): mostly clinical-LLM-application papers (diagnosis, documentation, lit-screening). On-theme: RelAgent (multi-agent molecular relationship grounding, Bioinformatics); "interoperability across health data via LLMs" (PLOS Dig Health). Neither beat DAGForge for this audience.
+
+**News / product launches** (last 3 days): nothing fresh in-window; top web hits (NVIDIA BioNeMo Agent Toolkit, ToolUniverse, DeepEvidence) were June or earlier — out of window, excluded.
+
+**Policy/funder pages:** no new agentic-AI/biomedical program launches surfaced this window.
+=== 2026-07-27T02:12:48-07:00 done  biomedical-agentic-ai (exit 0) ===
