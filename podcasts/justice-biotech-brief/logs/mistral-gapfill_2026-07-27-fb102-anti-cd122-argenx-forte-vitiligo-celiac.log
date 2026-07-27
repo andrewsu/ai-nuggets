@@ -1,0 +1,4 @@
+Script body: 5400 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2917 chars) -> 154.5s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2482 chars) -> 129.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-07-27-fb102-anti-cd122-argenx-forte-vitiligo-celiac.mp3 [mistral] 2,312,821 bytes, 289.1s

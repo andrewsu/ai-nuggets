@@ -1593,3 +1593,31 @@ All artifacts are in place and validated. Since `SKIP_TTS=1`, I've stopped befor
 
 No `git add`/`commit`/`push` performed (SKIP_TTS mode).
 === 2026-07-26T02:46:09-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-27T02:40:16-07:00 start justice-biotech-brief ===
+Validated and well-formed. In SKIP_TTS mode the orchestrator handles TTS/publish/commit, so my work is done. Here's the run record.
+
+---
+
+## Justice's Biotech Brief — 2026-07-27 — run summary
+
+**Episode shipped (stubs written; TTS/commit deferred to orchestrator):**
+`2026-07-27-fb102-anti-cd122-argenx-forte-vitiligo-celiac`
+**FB102 — anti-CD122 antibody anchors argenx's $2.2B acquisition of Forte Biosciences, with Phase 1b proof-of-concept in vitiligo and celiac.** Primary source: argenx/GlobeNewswire press release + STAT, both July 27 2026. Read in full to ground the summary (mechanism: CD122 = shared IL-2/IL-15 receptor β-chain; IL-15 as the survival cytokine for resident-memory T cells and NK cells; JAK-alternative framing vs topical ruxolitinib in vitiligo; deal terms; Phase 1b vitiligo/celiac data).
+
+### Candidate funnel
+
+**bioRxiv (2-day window):**
+- 2026-07-26 — full collection pulled (30 entries). Keyword hits: IL-13 tuft-cell CD45 "checkpoint", Sialyl-Tn tumor-EV→DC dysfunction, mTOR-biased HCC. All basic/tangential immunology; none in Justice's translational TCE/CAR-T/ADC/VEGF×PD-L1/JAK lane. **0 selected.**
+- 2026-07-27 — only 3 entries populated this early; API then rate-limited my IP (empty responses after repeated calls, ~4 retries with pacing also empty). Treated as not-yet-rendered/thin — noted gap, proceeded per source-failure rule.
+
+**News (Endpoints / STAT / Fierce):**
+- Fierce Biotech/Pharma — blocked (r.jina.ai abuse block on fiercebiotech.com until 10:15 UTC; DDoS suspicion). Not readable this run; gap noted.
+- Endpoints — accessible via proxy but cache topped out at July 25 10:00 UTC; nothing in the 26–27 window, and July 24–25 items (Sanofi nixes OX40L antibody; Mirador/Kira Tavneos rival; Nuvalent approval) are out-of-window and off-beat.
+- **STAT — `argenx to acquire Forte Biosciences` (July 27, 07:26 UTC). ← CHOSEN.** Fresh, in-window, squarely on Justice's autoimmune-biologics/JAK-alternative beat.
+
+**General web search:** indexing lag for the 26–27 window; surfaced only stale/conference material — discarded: BioNTech/BMS PD-L1×VEGF SCLC (Sept 2025), CS2009 PD-1/VEGF/CTLA-4 trispecific (ASCO 2026), BioNTech–DualityBio ADC (undated/older). None in-window.
+
+**Policy/funder (ARPA-H/NIH/NSF):** not separately swept this run once a strong on-target in-window pick surfaced — minor recall note.
+
+**Selection rationale:** the argenx/Forte deal is the only fresh (July 27) candidate that lands directly on Justice's stated interests (autoimmune biologics; the recurring JAK-alternative thread), with a real mechanism (anti-CD122 / IL-15 blockade) and clinical proof-of-concept rather than a bare M&A headline.
+=== 2026-07-27T02:54:18-07:00 done  justice-biotech-brief (exit 0) ===
