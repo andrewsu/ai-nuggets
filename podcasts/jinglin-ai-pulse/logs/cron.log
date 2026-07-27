@@ -1110,3 +1110,36 @@ Everything is in place. Since `SKIP_TTS=1`, I've correctly skipped TTS generatio
 
 **Source issues:** No hard outages. `podtail.com` and `podcastaddict.com` returned 403 to WebFetch (worked around via search + `latent.space` direct). No X/Twitter API access — discourse signal reconstructed from aggregators and outlet coverage, as the fallback path anticipates.
 === 2026-07-26T02:39:26-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-27T02:30:16-07:00 start jinglin-ai-pulse ===
+XML parses; spoken body is 1,833 words (~11–13 min, within target). SKIP_TTS=1 is set, so per PIPELINE.md I've stopped after writing the script plus the two stubs — the orchestrator handles batch TTS, publish, feed, and commit. No pre-existing `2026-07-27-*` scripts, so this is a first run.
+
+Here is today's run summary for the audit log.
+
+---
+
+**Ollie's AI Pulse — 2026-07-27 — episode shipped (SKIP_TTS batch mode)**
+
+Script: `2026-07-27-kimi-k3-lands-open-is-thinner-than-hoped-attention-rotates-to-world-models.md` (1,833 spoken words, ~11–13 min). Stubs written: `.rss-item.xml` (validated as well-formed XML, `__LENGTH__`/`__DURATION__` placeholders) + `.commit-msg`. No TTS/publish/feed/commit performed — left to `publish_pending.py`.
+
+**Editorial arc:** This is the payoff of the week-long "what's scarce underneath a free model" arc — Kimi K3's open weights actually landed (00:00 UTC July 27, a day early) — and it opens the next thread: the moment intelligence went free, the community's attention rotated to world models.
+
+**Candidate funnel:**
+
+*Twitter Pulse (discourse, last 24–48h):*
+- **[CHOSEN, beat 1]** Kimi K3 open weights landed — cryptobriefing / explainx / techtimes / rohitai / simonwillison. The openwashing test resolved: "hidden harness contract" (open checkpoint, closed operating envelope) + independent quality 3rd not 1st (AA Elo ~1547).
+- **[CHOSEN, beat 2]** LeCun vs Andrew Gordon Wilson X thread on world models / Moravec paradox (explainx); convergence w/ AMI Labs' Pascal Fung ICML keynote (July 7). Highly relevant to Ollie's biological-world-models interest.
+- @Zefan_Cai — checked (PROMPT key signal source); no fresh public posts surfaced in the last 48h, skipped.
+
+*Money Moves (last 7d):*
+- **[CHOSEN]** PsiBot / Lingchu — ~$100M at $1.48B, Chery + Lens (Bloomberg/TheNextWeb/TechTimes, July 23). World models/VLA; ties the pivot to capital; China embodied-AI ~$15.5B H1 (~5x YoY), 3→22 unicorns.
+- Databricks $188B (July 16) — strong but 11 days old and would repeat yesterday's Databricks deep cut; skipped.
+- Nous Research $1.5B, Helsing $1.8B, Harvey/Lovable/Glean — noted, not selected (PsiBot pairs better with the world-models thread).
+
+*Podcast Deep Cut (last 14d):*
+- **[CHOSEN]** Innovator Coffee EP-38, "World Models: The Missing Layer…" (July 4), Stanford/Fei-Fei-Li-lab researchers ChongKai Gao & JunFan Zhu. Next-physical-state vs next-token; 5 routes (JEPA/Dreamer/VLA/diffusion/hybrid); missing layer = deployment (tactile/eval/calibration).
+- WhynotTV (primary source) — checked; no fresh July 2026 episode indexed (latest ~Jan 2026), skipped.
+- Latent Space #216 (Databricks) — already used in yesterday's episode, excluded.
+- Dwarkesh–Dario / Sutton / Karpathy — all older than the 14-day window (Feb 2026 / 2025), skipped.
+
+No source-level outages this run (one WebFetch 403 on techtimes; substituted via search snippets + other outlets, no recall loss).
+=== 2026-07-27T02:37:29-07:00 done  jinglin-ai-pulse (exit 0) ===

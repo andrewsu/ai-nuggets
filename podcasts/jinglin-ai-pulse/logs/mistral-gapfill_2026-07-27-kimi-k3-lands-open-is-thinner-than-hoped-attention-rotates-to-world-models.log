@@ -1,0 +1,7 @@
+Script body: 11027 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2954 chars) -> 166.0s ✓
+  [mistral:en_paul_neutral] chunk 2/4 attempt 1 FAILED: chunk duration 106.9s < floor 109.0s (likely truncated)
+  [mistral:en_paul_neutral] chunk 2/4 (2724 chars) -> 117.9s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2914 chars) -> 131.2s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (2432 chars) -> 125.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-07-27-kimi-k3-lands-open-is-thinner-than-hoped-attention-rotates-to-world-models.mp3 [mistral] 4,574,398 bytes, 571.8s
