@@ -2751,3 +2751,29 @@ Today's episode is written and staged. In `SKIP_TTS` mode I stopped short of TTS
 
 Stubs written (`.rss-item.xml` validated as well-formed XML, `.commit-msg`), spoken body clean of URLs/DOIs/headings. No commit made (SKIP_TTS).
 === 2026-07-26T03:05:05-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-27T02:50:16-07:00 start receptor-and-reason ===
+All outputs are in place and clean. Episode production is complete.
+
+## Receptor & Reason — 2026-07-27 — published (SKIP_TTS batch mode)
+
+Wrote the script, RSS-item stub (with `__LENGTH__`/`__DURATION__` placeholders), and commit-msg stub to `podcasts/receptor-and-reason/scripts/`, and appended the 9-item record to `state/shipped.jsonl`. Per `SKIP_TTS=1`, I did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator (`publish_pending.py`) handles those after batch TTS.
+
+**9 items, drugs-and-mechanisms Monday:**
+1. **LEAD** — Elunetirom (Autobahn), a brain-targeted TRβ prodrug: TrkB-dependent, 5-HT2A-independent neuroplasticity + mito biogenesis — a differentiated antidepressant mechanism (in vitro)
+2. Duloxetine broadly disrupts RNA–protein interactions off-target (competes with aspartate at PyrB)
+3. ¹⁹F-qNMR: agonists set G-αs efficacy via conformational populations *and* cycling kinetics
+4. Shape-guided diffusion for warhead-preserving staged molecular growth
+5. Cross-disease AD/PD/HD transcriptomics → shared NF-κB axis for FDA repurposing
+6. Dorsal-raphe→BLA projection is load-bearing for adaptive stress coping
+7. Ketamine EEG: spectral power decodes (~0.71), phase connectivity fails (subject-specific)
+8. Individualized parcellation improves schizophrenia rs-fMRI sensitivity; symptom links don't replicate
+9. **CLOSE** — FAE-20 (Rhodiola rosea) enhances cognitive flexibility via arousal, not hippocampus
+
+## Candidate funnel
+
+- **bioRxiv (Tier 1):** ⚠️ `api.biorxiv.org` **HTTP 500 outage** — 07-22 and 07-23 collection days returned nothing; 07-20/07-21/07-24 paginated only partially. Multiple retries (sync + background) failed. Proceeded with a **partial 583-DOI scan** of the 7-day window (items dated on failed days recovered as later-day revisions). Tightened to 47 strong-signal, then 28 in-window neuro/pharm candidates. Full text obtained for all 9 picks via the **`.full.pdf`-through-r.jina.ai** route (the `.full` HTML jina route returned abstract-only — memory updated).
+- **arXiv (Tier 2):** cache present (500 entries), 52 bio+agentic hits in window. Top on-brand item (`2607.22082`, agentic LLM for brain-network analysis) couldn't be grounded in full text (WebFetch too vague) → **dropped** per the full-text eligibility gate. Chemical-CoT (`2607.20935`) and DAGForge (`2607.21859`) already shipped/used.
+- **Tiers 3–4:** not needed — 9 fresh full-text Tier-1 items cleared the floor.
+
+Shortlist (★ = chosen): ★Elunetirom TRβ · ★duloxetine RNA-protein · ★Gαs efficacy qNMR · ★shape-guided diffusion · ★AD/PD/HD repurposing · ★raphe-BLA stress · ★ketamine EEG · ★scz parcellation · ★FAE-20 · Huntingtin neuropeptide/clock (dropped — jina fetch timed out) · serotonin DOWN-states / ALDH1A1-αSyn / oleuropein (out-of-window DOI dates).
+=== 2026-07-27T03:15:18-07:00 done  receptor-and-reason (exit 0) ===
