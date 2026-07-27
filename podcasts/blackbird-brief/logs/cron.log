@@ -1088,3 +1088,29 @@ Thin window; **no portfolio-company news**. Signal = precision-NSCLC/RAS landsca
 
 No commit performed (SKIP_TTS batch mode) — orchestrator will generate audio, publish, update the feed, and commit.
 === 2026-07-26T02:27:55-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-27T02:10:16-07:00 start blackbird-brief ===
+All deliverables are in place. Episode complete.
+
+## Blackbird Brief — 2026-07-27 (Monday) — Portfolio Watch
+
+**Episode type:** Portfolio Watch only. Sourcing Radar is now weekly/Sundays, so no Radar today.
+
+**Mode:** `SKIP_TTS=1` — wrote the script plus `.rss-item.xml` and `.commit-msg` stubs; did **not** run TTS, publish to R2, edit `feed.xml`, or commit. The orchestrator (`publish_pending.py`) handles batch TTS + publish + commit + push.
+
+**Outcome:** A quiet-catalyst week — **no Blackbird portfolio-company news** in the ~past-week window. Ran a candid status read on the two threads genuinely in motion, per PIPELINE's "thin day = short episode, don't pad" guidance.
+
+### Candidate funnel
+
+Stream A press sweep (Fierce Biotech/Pharma, Endpoints, STAT, BioPharma Dive, BioBuzz, GlobeNewswire/PRNewswire/BusinessWire) + target/modality/company queries across every program:
+
+- **RAS/NSCLC (aSKY):** daraxonrasib NDA + GSK zidesamtinib/neladalkib — already covered 07-26; Roche divarasib Krascendo-1 KRAS G12C head-to-head win — covered 07-05; JHU mKRAS-VAX/Adventris — covered 07-18. → **no new catalyst; no-change note only.**
+- **GPR52 / schizophrenia (Lieber + Third Rock NewCo):** Nxera's NXE'149 (only other Phase-2-ready GPR52 agonist) still **unsold** as of today since Boehringer's Dec-2025 walk-away; broader non-dopaminergic wave (Cobenfy gradual launch + missed adjunctive study; Neurocrine M4 NBI-1117568 in Phase 3) shows novelty isn't the moat. → **CHOSEN — lead item.**
+- **Genetic medicine / RNAi:** Arrowhead plozasiran (Redemplo) SHASTA-3/-4 Phase 3 win in sHTG (07-22): GalNAc-siRNA/APOC3, TG −81%, pancreatitis −78%/−100% in highest-risk, quarterly dosing, FDA filing by year-end. → **CHOSEN — item 2** (validates the quarterly liver GalNAc-siRNA route behind the hLMR1 sourcing thesis; de-risks Aletira + the RNA-upregulation platform).
+- **IBD/TL1A (Slusher GCPII):** tulisokibart (June) and duvakitug (Feb) — both stale, out of window. Passed.
+- **Hearing-loss gene therapy (Aletira watch):** Sensorion pivot (June 11), Regeneron Otarmeni (April) — stale. Passed.
+- **1104health:** Massive Bio–FOMAT (07-20) — covered 07-26. Passed.
+
+**So-what actions carried:** Hemaka + Third Rock — sharpen the GPR52 best-in-class/all-three-domains differentiation case ahead of the later-2026 DC declaration (market bar is head-to-head-grade proof, not first-in-class-ness); Eddie's aSKY competitive-map refresh already open.
+
+Memory (`blackbird-portfolio.md`) updated with the dated 07-27 entry. Basename: `2026-07-27-portfolio-watch`. RSS fragment validated as well-formed XML.
+=== 2026-07-27T02:19:59-07:00 done  blackbird-brief (exit 0) ===

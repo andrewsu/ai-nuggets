@@ -5,7 +5,33 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-26 (Sunday two-episode day — FIRST under the new cadence: Sourcing Radar flipped to
+_Last verified: 2026-07-27 (Monday — Portfolio Watch only; Sourcing Radar not run, it is now WEEKLY/Sundays).
+**Quiet-catalyst week: NO Blackbird portfolio-company news in the ~past-week window.** A full Stream-A press sweep
+(Fierce/Endpoints/STAT/BioPharma Dive/BioBuzz + target/modality queries across every program) found the RAS/NSCLC catalysts
+already covered (daraxonrasib NDA + GSK zidesamtinib/neladalkib = 07-26; Roche divarasib Krascendo-1 head-to-head KRAS G12C
+win = covered 07-05; JHU mKRAS-VAX/Adventris = 07-18), so Portfolio Watch ran as a candid status read on the two threads
+genuinely in motion. **(1) GPR52 / schizophrenia landscape (Lieber + Third Rock NewCo; DC declaration expected later 2026).**
+Nxera's NXE'149 — the only other Phase-2-ready GPR52 agonist — REMAINS UNSOLD as of 07-27 (Boehringer walked from its option
+Dec 2025; Nxera shopping since, targeting a 2026 big-pharma/specialty-neuro buyer; no buyer surfaced). Read: same-mechanism
+rival still unfunded/unpartnered = MODEST REPRIEVE on the 07-12 calendar risk (our NewCo isn't yet racing a resourced Phase 2
+competitor); live watch — a Q3 pickup by Otsuka / BMS-via-Karuna / Neurocrine / AbbVie-via-Cerevel resets the clock (rival
+12–24mo ahead). Harder signal from the broader non-dopaminergic wave = novelty ≠ moat: Cobenfy (BMS; first muscarinic/non-
+dopaminergic antipsychotic) has had a gradual launch and its adjunct-to-atypicals schizophrenia study MISSED; Neurocrine's
+M4-selective NBI-1117568 is in Phase 3. So-what for DC declaration: value case can't lean on first-in-class-ness — must be
+best-in-class GPR52 chemistry across all three symptom domains + biomarker/PD package, and (per Martinowich 07-10) pair
+neuronal-engagement with a multicellular tissue-state readout. Hemaka + Third Rock action STANDS (differentiation is the whole
+ballgame; market bar = head-to-head-grade proof). **(2) Genetic-medicine modality TAILWIND — Arrowhead plozasiran (Redemplo)
+Phase 3 win, 07-22.** SHASTA-3 + SHASTA-4 in severe hypertriglyceridemia met ALL endpoints: TG down up to 81%, acute
+pancreatitis down 78% overall / 100% in highest-risk sHTG, clean safety, once-q3mo SC dosing; FDA supplemental filing by YE,
+full data at ESC Congress Aug 30. Plozasiran = GalNAc-conjugated siRNA suppressing hepatic APOC3 = the liver-directed RNAi
+playbook. NOT a direct portfolio hit, but de-risks the modality Aletira (cell-selective genetic medicines) + the RNA-
+upregulation/translation-activator platform live in, and is DIRECT VALIDATION of the once-quarterly liver-directed GalNAc-siRNA
+route the hLMR1 sourcing thesis (Ruan lab, JHU Endocrinology; ranked in the 07-26 weekly radar) is predicated on = when
+deciding whether to found a company around a knock-this-down liver target, another quarterly GalNAc-siRNA clearing Ph3 with a
+clean safety read is the de-risking datapoint you want. Tailwind, not threat. **(3) aSKY — no change since 07-26** (RAS/NSCLC
+map stands; competitive-map refresh already on Eddie's list). URLs verified (GlobeNewswire/Fierce/PRNewswire/Arrowhead IR/
+Businesswire seen in search). Portfolio Watch basename 2026-07-27-portfolio-watch.
+Previously verified 2026-07-26 (Sunday two-episode day — FIRST under the new cadence: Sourcing Radar flipped to
 WEEKLY/Sundays, Portfolio Watch stays DAILY. **Sourcing Radar = inaugural weekly roundup.** A fresh
 corresponding-author sweep of 2026-07-20→26 (note: bioRxiv/medRxiv details API page size is 30, not 100 — cursor
 must increment by the returned page length or records are silently skipped; the earlier one-off run that returned
