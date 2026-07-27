@@ -2609,3 +2609,32 @@ Sources surveyed via web across the show's headline set (Fierce Biotech/Pharma, 
 
 **Source failures:** none material. (The single background `find /` was slow and killed; did not affect selection.)
 === 2026-07-26T02:36:58-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-27T02:20:16-07:00 start calibr-briefing ===
+Both stubs are well-formed and the scripts are clean (no URLs/markdown/DOIs). Word counts land in target (~3.5 min headlines, ~5.7 min spotlight). Since `SKIP_TTS=1`, I've stopped after writing the two scripts plus their `.rss-item.xml` and `.commit-msg` stubs — the batch orchestrator handles TTS, R2 publish, feed insertion, and commit.
+
+---
+
+## Calibr Briefing — 2026-07-27 (Monday) — run complete
+
+**Episodes written (SKIP_TTS batch mode; stubs emitted, no local TTS/publish/commit):**
+- `2026-07-27-pharma-headlines` — 5-item roundup + week-ahead
+- `2026-07-27-replimune-rp1-melanoma-adcom-spotlight` — deep dive
+
+**Candidate funnel**
+
+Sources scanned (general biotech/pharma press; Fierce Biotech, Endpoints, BioPharma Dive front pages returned HTTP 403 to direct fetch — worked candidates via targeted web search + reachable primary/secondary sources):
+- *Fierce Biotech / Endpoints* — front pages 403; individual stories recovered via search. Not a content gap.
+- *BioPharma Dive* — front page fetched (dates sparse); weekend roundup fetched in full.
+- *Calibr pipeline reference* — `calibr-pipeline.md` is specified to live in workspace memory (not the repo) and was **not present on disk**; selection proceeded on the show's three focus areas. Flagging so it can be restored.
+
+Substantive shortlist (after discarding stale/June items like Zymeworks–Theravance and the June RP1 acceptance itself):
+- **Replimune RP1 (vusolimogene oderparepvec) + nivolumab — FDA CTGTAC adcom Wed Jul 29, decision Aug 2** — ✅ SPOTLIGHT + headline #1 (twice-rejected, company-defining, single-arm/contribution-of-components debate, field-wide read-through). Full detail read (merlintrader, BioSpace, IR/8-K search).
+- **AstraZeneca camizestrant (Etcamah) EU approval, 1L ESR1-mut ER+ breast cancer, SERENA-6 (56% PFS benefit, ctDNA-guided switch)** — ✅ headline #2 (Jul 23).
+- **J&J MonumenTAL-6: Talvey + Tecvayli + pomalidomide, earlier-line myeloma (89%/62% risk reductions)** — ✅ headline #3 (Jul 21).
+- **Novo Nordisk seeks preliminary injunction vs Lilly over "misleading" GLP-1 obesity ads** — ✅ headline #4 (Jul 24 escalation).
+- **Formation Bio hires Michael Ehlers (ex-Biogen/Pfizer) as CSO/Head of R&D** — ✅ headline #5 (AI-in-drug-development focus area; Jul 22).
+- *Week-ahead:* AAIC (Jul 27–31), BMS Cobenfy in Alzheimer's psychosis, PTC sepiapterin in PKU — folded into headlines close.
+- Not selected: Saol SL1009 NDA resubmission, Pharvaris deucrictibant NDA acceptance (thinner relevance to focus areas / less timely).
+
+**Note for maintainer:** the workspace `memory/calibr-pipeline.md` referenced in PROMPT.md is missing from the environment — worth restoring so future Calibr-Skaggs-pipeline crossovers can be surfaced.
+=== 2026-07-27T02:30:43-07:00 done  calibr-briefing (exit 0) ===
