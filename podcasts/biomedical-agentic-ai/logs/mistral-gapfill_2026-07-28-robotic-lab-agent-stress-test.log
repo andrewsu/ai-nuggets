@@ -1,0 +1,4 @@
+Script body: 5167 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2989 chars) -> 136.3s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2177 chars) -> 107.3s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-07-28-robotic-lab-agent-stress-test.mp3 [mistral] 2,173,222 bytes, 271.6s

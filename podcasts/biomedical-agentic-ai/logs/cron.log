@@ -2884,3 +2884,34 @@ Files written to `podcasts/biomedical-agentic-ai/scripts/`:
 
 **Policy/funder pages:** no new agentic-AI/biomedical program launches surfaced this window.
 === 2026-07-27T02:12:48-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-28T02:00:11-07:00 start biomedical-agentic-ai ===
+Episode written and staged for the batch orchestrator. Final run summary below.
+
+---
+
+## Episode published (staged for batch TTS) — biomedical-agentic-ai 2026-07-28
+
+**Mode:** `SKIP_TTS=1` — wrote script + `.rss-item.xml` + `.commit-msg` stubs; skipped TTS/R2/feed/commit (orchestrator `publish_pending.py` handles those). Both stubs validated (RSS-item parses in feed namespace; arXiv URL returns 200; spoken body 812 words, under the 1150 cap).
+
+**Selected:** *Stress-testing large language model agents in a robotic chemistry laboratory* (arXiv, posted 2026-07-25; USTC Hefei + Birmingham). A real 45-workstation robotic catalysis lab used as a benchmark for "scientific agency." 6 harnesses × 9 frontier models × 32 tasks × 3 trials = 4,608 trials; only **3.3%** executable, best (Claude Code + Claude Opus 4.7) **28.1%**. Two payloads: (1) competence is a property of the whole model-agent-lab stack — plan quality and dispatch were nearly decoupled; (2) in open-ended 5-round closed-loop mode the strongest planner tuned parameters but never replanned — kept design flaws a chemist would catch, optimized within the box. Full text read via `mutool` (arXiv PDF too large for WebFetch, abs=abstract-only, jina empty).
+
+### Candidate funnel
+
+**bioRxiv** (window 07-25→07-28): 427 posts pulled in full (paginated), 60 keyword hits, substantive shortlist after discarding spurious matches ("chemical agent", "biocontrol agents", etc.):
+- PrimeKG-Plus — rare-disease-enriched precision medicine knowledge graph (07-27) — strong topical fit, but KG-resource update, not agentic
+- Ontology-guided harmonization for cross-repository metabolomics discovery (07-27) — data integration/ontology; solid but narrower
+- PlantMetWiki — FAIR knowledge graph for plant metabolic pathways (07-26) — plant-scoped
+- Several single-cell foundation-model / virtual-cell papers — adjacent, not agentic
+
+**arXiv** (shared daily cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, within 4 days): 18 agentic+biomedical hits; shortlist:
+- **2607.23045 — Stress-testing LLM agents in a robotic chemistry lab → CHOSEN**
+- 2607.23290 — RareLens: end-to-end rare-disease care via aligning divergent LLM reasoning (clinical decision support; strong but clinical, not research)
+- 2607.22824 — Agentic Autoresearch for CT Reconstruction (nice "ideal-data leaderboards mislead" insight, niche imaging)
+- 2607.23975 — Plato-Bio: verification-first biological novelty screening (mostly a software-contract/audit paper, thin prospective results)
+
+**PubMed** (reldate 5d, agentic/LLM/KG ∩ biomedical): 27 indexed; overwhelmingly clinical LLM-application studies and reviews (e.g., "Agentic and Generative AI for Drug Discovery" — review). No primary-research story stronger than the arXiv lead.
+
+**Sources not separately queried:** ChemRxiv, funder pages, general news — no failures encountered on the queried sources; the robotic-lab paper dominated the field, so no additional recall was needed to make the call.
+
+The robotic-lab paper beat PrimeKG-Plus and RareLens because it's the show's core theme (agentic AI *doing* biomedical/scientific research), it's rigorous and opinionated, and its "local tuning vs. genuine replanning" finding transfers directly to Andrew's own agentic-KG work.
+=== 2026-07-28T02:11:43-07:00 done  biomedical-agentic-ai (exit 0) ===
