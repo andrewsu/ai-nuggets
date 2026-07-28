@@ -1114,3 +1114,25 @@ Stream A press sweep (Fierce Biotech/Pharma, Endpoints, STAT, BioPharma Dive, Bi
 
 Memory (`blackbird-portfolio.md`) updated with the dated 07-27 entry. Basename: `2026-07-27-portfolio-watch`. RSS fragment validated as well-formed XML.
 === 2026-07-27T02:19:59-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-28T02:10:11-07:00 start blackbird-brief ===
+Episode complete. Today is **Tuesday, July 28th, 2026** — a daily **Portfolio Watch** episode only (Sourcing Radar is weekly/Sundays). Running in SKIP_TTS mode, so I wrote the script + the two transient stubs and updated the memory; the orchestrator will handle TTS, R2 publish, feed insertion, and the commit.
+
+**Episode:** `2026-07-28-portfolio-watch` — Portfolio Watch (~5 min, 739 words)
+
+**Lead / only substantive item:** CAMP4 Therapeutics' CMP-002 cleared for first-in-human (July 27) — an antisense oligonucleotide that *up*-regulates gene expression (targets regulatory RNA to raise SYNGAP1 protein in haploinsufficient SYNGAP1-related disorder). Australian TGA/HREC clearance triggered a second financing close worth up to $50M. Framed as the clearest validation to date of the "turn-the-protein-up" modality Blackbird's **RNA translation-activator platform** lives in — and, candidly, a pace-setter that starts a differentiation clock (action: Avi + platform leads). GPR52 NewCo and aSKY carried as one-line no-change notes (nothing moved since 07-27), per the show's "tight short beats thin long" rule.
+
+---
+
+**Candidate funnel — Portfolio Watch 2026-07-28** (Stream A press sweep, ~3–4 day window; all sources reachable, no outages)
+
+- **RNA-upregulation / translation-activator lane** — 1 scanned, 1 selected:
+  - ✅ **CHOSEN** — CAMP4 CMP-002 Australian FIH clearance, SYNGAP1 (GlobeNewswire, 07-27) — fresh, in-window, direct platform read-across
+- **aSKY / RAS-NSCLC** — daraxonrasib NDA (07-22) + GSK zidesamtinib/neladalkib (07-22) → stale, covered 07-26; no new catalyst → one-line no-change
+- **GPR52 / schizophrenia** — Nxera GPR52 rival still unsold (no new deal since Dec 2025 walk-away); Cobenfy/emraclidine/Neurocrine all stale → one-line no-change
+- **IBD / GCPII** — TL1A tulisokibart ATLAS-UC covered 07-12; nothing new
+- **Aletira / hearing gene therapy** — Regeneron Otarmeni (OTOF) = FDA-approved **2026-04-23**, far out of window (noted, not featured)
+- **1104health / trial-enrollment** — Massive Bio–FOMAT = 07-20, covered 07-26; nothing new
+- **Blackbird direct** — no portfolio-company-issued news this window
+
+**Skipped per SKIP_TTS:** gen_tts, publish_episode.sh, feed.xml edit, git add/commit (orchestrator handles). Memory updated: new 07-28 log entry + CMP-002 datapoint added to the §2 RNA translation-activator entry.
+=== 2026-07-28T02:16:10-07:00 done  blackbird-brief (exit 0) ===

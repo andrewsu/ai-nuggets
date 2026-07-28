@@ -5,7 +5,28 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-27 (Monday — Portfolio Watch only; Sourcing Radar not run, it is now WEEKLY/Sundays).
+_Last verified: 2026-07-28 (Tuesday — Portfolio Watch only). **One substantive fresh in-window item, and it lands directly on a Blackbird
+platform. LEAD = CAMP4 Therapeutics CMP-002 cleared for first-in-human (07-27), direct validation of the RNA translation-activator /
+upregulation modality.** Australia's TGA + local HREC cleared CAMP4 to start a Phase 1/2 FIH trial of CMP-002, an ASO that works OPPOSITE
+to knockdown ASOs — it targets regulatory RNA (regRNA) upstream of a gene to release the brake and RAISE target-protein expression. Target
+SYNGAP1; indication SYNGAP1-related disorder (rare haploinsufficient neurodevelopmental condition, >10,000 US pts, universal ID + ~85%
+epilepsy, no approved DMT); intrathecal. Preclinical: dose-dependent SYNGAP protein up in patient neurons, phenotype reversal in humanized
+haploinsufficient mice, seizure reduction, broad brain distribution in NHP. Financing: clearance triggered 2nd close of a Sept-2025 SPA =
+up to $50M (Janus Henderson, Vivo, 5AM, Balyasny, Adage, Coastlands, Trails Edge, CURE SYNGAP1). RAP Platform maps regRNAs → ASOs across
+>1,200 haploinsufficient / partial-LOF disorders. **So-what:** clearest validation to date of the "turn-the-protein-up" lane our RNA
+translation-activator platform (§2) lives in — knockdown drugs don't apply to LOF/haploinsufficiency; CAMP4 (the named competitor in that
+lane) has now (a) shown a regulator will let RNA-upregulation into humans and (b) framed the >1,200-disorder commercial prize we should be
+framing. Candid read cuts both ways: VALIDATION (not a threat to a specific asset — we have no competing SYNGAP1 program) BUT a PACE-SETTER
+= the leading independent RNA-upregulation company is now FIH + freshly funded, so the window to stake a differentiated wedge (targeting
+mechanism vs regRNA-ASO; delivery vs intrathecal; disease set) is a live clock. **Action logged: Avi + platform leads define the defensible
+angle now.** Added CMP-002/CAMP4 FIH datapoint to §2 RNA translation-activator entry. Other threads NO CHANGE since 07-27 (kept to one-line
+no-change notes, no re-coverage/padding): (i) GPR52 NewCo — Nxera's Phase-2-ready GPR52 rival STILL unsold this window = modest timing
+reprieve holds; Q3 pickup by Otsuka/BMS-Karuna/Neurocrine/AbbVie-Cerevel resets clock. (ii) aSKY — no new RAS/NSCLC catalyst; map stands
+(daraxonrasib NDA/PDAC, GSK zidesamtinib approved ROS1, neladalkib/ALK under review). Sweep also confirmed STALE-within-window (already
+covered, NOT re-featured): Regeneron Otarmeni OTOF hearing-loss gene therapy = FDA-approved 2026-04-23, way out of window (Aletira watch
+space but old news); Massive Bio–FOMAT = 07-20, covered 07-26; daraxonrasib/GSK milestones = 07-22, covered 07-26; Arrowhead plozasiran
+SHASTA-3/4 = 07-22, covered 07-27. URLs verified (GlobeNewswire/CAMP4 IR 200). Portfolio Watch basename 2026-07-28-portfolio-watch.
+Previously verified 2026-07-27 (Monday — Portfolio Watch only; Sourcing Radar not run, it is now WEEKLY/Sundays).
 **Quiet-catalyst week: NO Blackbird portfolio-company news in the ~past-week window.** A full Stream-A press sweep
 (Fierce/Endpoints/STAT/BioPharma Dive/BioBuzz + target/modality queries across every program) found the RAS/NSCLC catalysts
 already covered (daraxonrasib NDA + GSK zidesamtinib/neladalkib = 07-26; Roche divarasib Krascendo-1 head-to-head KRAS G12C
@@ -991,6 +1012,25 @@ competitors below. These are the "so what for Blackbird" hooks.
   name to confirm.
 - **Watch:** translation-activating oligos / "RNA upregulation" players (e.g.
   Camp4, others); antisense/oligo platforms.
+- **Modality-validation datapoint (2026-07-28 Portfolio Watch):** **CAMP4
+  Therapeutics' CMP-002 cleared for first-in-human (07-27).** Australia's TGA +
+  local HREC cleared a Phase 1/2 FIH trial of CMP-002 — an ASO that targets
+  regulatory RNA (regRNA) upstream of a gene to RAISE target-protein expression
+  (opposite of knockdown ASOs). Target SYNGAP1; indication SYNGAP1-related
+  disorder (haploinsufficient neurodevelopmental disease, >10,000 US pts, no
+  approved DMT); intrathecal. Strong preclinical package (patient neurons →
+  humanized mice → NHP). Clearance triggered a 2nd financing close worth up to
+  $50M (Janus Henderson, Vivo, 5AM, Balyasny, CURE SYNGAP1). CAMP4's RAP Platform
+  addresses >1,200 haploinsufficient/partial-LOF disorders. **Read for OUR
+  platform:** clearest clinical/regulatory + financing validation to date of the
+  "turn-the-protein-up" modality this platform lives in — CAMP4 (the named
+  competitor in the lane) has shown a regulator will allow RNA-upregulation into
+  humans AND put an investor-backed number on the >1,200-disorder prize.
+  Validation, NOT a threat to a specific asset (no competing SYNGAP1 program) —
+  but a PACE-SETTER: leading independent RNA-upregulation co. now FIH + funded =
+  live clock to stake a differentiated wedge (targeting mechanism vs regRNA-ASO;
+  delivery vs intrathecal; disease set). Action: Avi + platform leads define the
+  defensible angle now.
 
 ### 1104health — clinical-trial enrollment marketplace ✅
 - **What:** Clinical-trial enrollment and access platform. **Pivoted from a
