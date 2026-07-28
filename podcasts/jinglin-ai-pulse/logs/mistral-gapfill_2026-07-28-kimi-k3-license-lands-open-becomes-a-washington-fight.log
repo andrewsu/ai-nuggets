@@ -1,0 +1,6 @@
+Script body: 10724 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2972 chars) -> 147.6s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2961 chars) -> 153.3s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2746 chars) -> 136.6s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (2042 chars) -> 99.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-07-28-kimi-k3-license-lands-open-becomes-a-washington-fight.mp3 [mistral] 4,483,701 bytes, 560.4s

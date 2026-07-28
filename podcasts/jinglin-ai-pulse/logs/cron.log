@@ -1143,3 +1143,31 @@ Script: `2026-07-27-kimi-k3-lands-open-is-thinner-than-hoped-attention-rotates-t
 
 No source-level outages this run (one WebFetch 403 on techtimes; substituted via search snippets + other outlets, no recall loss).
 === 2026-07-27T02:37:29-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-28T02:30:11-07:00 start jinglin-ai-pulse ===
+All three files are written, the RSS item parses, the spoken body is clean (no URLs/headings/bullets), and the script is 1,728 words — inside the 1,500–2,200 target. Since `SKIP_TTS=1`, I've stopped before TTS/publish/feed/commit; the orchestrator handles those.
+
+## Run summary — jinglin-ai-pulse, 2026-07-28
+
+**Episode shipped (script + stubs written):** `2026-07-28-kimi-k3-license-lands-open-becomes-a-washington-fight`
+
+The lead was a direct payoff to yesterday's explicit watch-list ("watch whether K3's real license and its full technical report land this week"). Both landed July 27, and the story split cleanly into a technical axis (Moonshot answered the "hidden harness contract" critique by shipping kernels/MoE libs/agent tooling) and a legal axis (a bespoke revenue-tiered license), which then collided with a live Washington policy fight — a fresh, well-sourced continuation rather than a rehash.
+
+**Candidate funnel**
+
+- **Twitter/X discourse (last 48h)** — scanned ~5 threads; 3 substantive:
+  - Kimi K3 revenue-tiered license reveal + "open weight vs open source" verdict (Nathan Lambert @natolambert verbatim; VentureBeat; XenoSpectrum) — **CHOSEN (Twitter Pulse, 2 beats)**. Convergence across ≥4 accounts/outlets in 24h.
+  - LeCun vs world-models thread — dropped (covered fully yesterday; nothing new).
+  - avikde.me "world models debate" essay — dropped (dated Jan 14 2026, outside recency).
+- **Investment/business (last 7d)** — scanned ~6 items; 2 substantive:
+  - "Open Weights and American AI Leadership" letter, July 24 (Nvidia/Microsoft/Meta + ~25; OpenAI quietly signed; Anthropic/Google absent) — **CHOSEN (Money Moves)**; ties the license directly to a possible Chinese-open-model ban.
+  - Together AI $800M / $8.3B — used as supporting context (round dated July 1, outside the 7-day headline window, so framed as through-line not headline).
+  - Harvey/Lovable/Glean/Hebbia July rounds — dropped (generic enterprise, no intellectual substance).
+- **Long-form podcasts (last 14d)** — scanned WhynotTV (primary), Latent Space, Dwarkesh, Interconnects:
+  - WhynotTV — dropped; latest episode is Jan 17 2026 (out of window).
+  - Latent Space #216 (Databricks) — dropped; used yesterday.
+  - **Nathan Lambert / Interconnects podcast, July 22 recap episode (full companion posts read July 20 & 22)** — **CHOSEN (Deep Cut)**. Argument chain: open-closed gap 6–9mo → 3–5mo; capital-efficiency thesis; the counterintuitive distillation-is-fading claim (contra Ben Thompson) grounded in the shift to large-scale RL; Dean Ball's decelerationist/accelerationist frame.
+
+**Full-text grounding:** license terms cross-confirmed across Unite.AI, XenoSpectrum, and Lambert's own note; Deep Cut grounded in two full Interconnects posts (the podcast's companion write-ups). VentureBeat 403'd on direct fetch but its substance (harness tooling, "open with a caveat") was corroborated via the search-result excerpt and the HF/Northflank/XenoSpectrum coverage.
+
+**Source failures:** none — all four source classes returned usable candidates.
+=== 2026-07-28T02:37:09-07:00 done  jinglin-ai-pulse (exit 0) ===
