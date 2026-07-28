@@ -2777,3 +2777,32 @@ Wrote the script, RSS-item stub (with `__LENGTH__`/`__DURATION__` placeholders),
 
 Shortlist (★ = chosen): ★Elunetirom TRβ · ★duloxetine RNA-protein · ★Gαs efficacy qNMR · ★shape-guided diffusion · ★AD/PD/HD repurposing · ★raphe-BLA stress · ★ketamine EEG · ★scz parcellation · ★FAE-20 · Huntingtin neuropeptide/clock (dropped — jina fetch timed out) · serotonin DOWN-states / ALDH1A1-αSyn / oleuropein (out-of-window DOI dates).
 === 2026-07-27T03:15:18-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-28T02:50:11-07:00 start receptor-and-reason ===
+The spoken body is clean (no URLs, DOIs, headings, or bullets) at ~1,800 words / ~10–12 min audio. Episode is complete.
+
+---
+
+## Receptor & Reason — 2026-07-28 run summary
+
+**Episode written:** `2026-07-28-receptor-and-reason` (9 items). Stubs (`.rss-item.xml`, `.commit-msg`) written; ledger appended (9 keys). `SKIP_TTS=1` → TTS/publish/feed/commit deferred to orchestrator. No prior script for today (first run).
+
+### Candidate funnel
+
+**bioRxiv (Tier 1/2)** — window 07-21…07-28, full collection paginated: **1,512 papers scanned** → 230 survived category (neuroscience + pharmacology/toxicology) + relevance keyword filter → shortlist below after re-ranking and full-text eligibility checks. Full-text availability was the binding constraint: several top-scored picks were fresh v1s (posted 07-26/07-27) rendering **abstract-only** (transient deferral) — used only as concise, self-contained items; the substantive/lead treatments went to items with rendered full text.
+
+Shortlist (★ = chosen; FT = full text read; ABS = abstract-only, concise item):
+- ★ FT miR-223 microglial Aβ clearance in App-KI mice — 738977 **(LEAD)**
+- ★ FT PNAG microbial material + anti-PNAG vaccine in AD — 739171
+- ★ FT Transglutaminase-2 deletion / astrocyte metabolism in repetitive mTBI — 738974
+- ★ ABS VRAC as non-monoaminergic antidepressant target (zebrafish) — 740018
+- ★ ABS Prefrontal GABAergic CB1, sex-dependent emotion — 740323
+- ★ FT ProDock multi-engine rank-resolved virtual screening — 740457
+- ★ ABS scGENet: foundation-model embeddings → interpretable PD gene networks — 740813
+- ★ ABS Wild-type huntingtin / pacemaker-neuron trafficking + sleep — 740122
+- ★ ABS Genipin rescues α-syn sleep deficits, Drosophila PD — 738995 **(CLOSE)**
+- ▫ FT diesel-exhaust → microglial Aβ clearance (739493); FT nigral→STN PD signatures (739149); FT spatial-transcriptomics DA vulnerability (739121) — held (breadth/AD-overload); epilepsy+Fisetin in-silico (720518) dropped (v2 revision of an April base, recency borderline + weakest).
+
+**arXiv (Tier 2)** — daily cache present (07-28 02:00). 16 bio+agentic items in the 7-day window; all clinical-LLM / healthcare-interoperability flavored. Closest on-target was *Plato-Bio* (verification-first biological novelty screening, 2607.23975) — **dropped**: thin results (one rediscovery task + AlphaFold RMSD spot-check) and off Alan's neuropsychopharm center vs. the bioRxiv field. No arXiv pick.
+
+**Tier 1 journals / Psychiatric Times / societies** — surveyed via web. Notable but **out of the 7-day window or not preprint-full-text**: COMP360 psilocybin Phase 3 readout (published 07-07, 21 d old); centanafadine ADHD PDUFA 07-24 (press/FDA action, ADHD). Nothing selected. No source-level outages this run.
+=== 2026-07-28T03:15:07-07:00 done  receptor-and-reason (exit 0) ===
