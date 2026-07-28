@@ -1,0 +1,4 @@
+Script body: 5596 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2822 chars) -> 136.3s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2773 chars) -> 125.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-07-28-argenx-forte-cd122-immunology-spotlight.mp3 [mistral] 2,346,257 bytes, 293.3s

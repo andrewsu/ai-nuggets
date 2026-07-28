@@ -2638,3 +2638,36 @@ Substantive shortlist (after discarding stale/June items like Zymeworks–Therav
 
 **Note for maintainer:** the workspace `memory/calibr-pipeline.md` referenced in PROMPT.md is missing from the environment — worth restoring so future Calibr-Skaggs-pipeline crossovers can be surfaced.
 === 2026-07-27T02:30:43-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-28T02:20:11-07:00 start calibr-briefing ===
+Both stubs parse as valid XML and both scripts are clean (no URLs, DOIs, or markdown). Word counts land in target (~3.5 min headlines, ~6 min spotlight). Since `SKIP_TTS=1`, I stop after writing the scripts plus their `.rss-item.xml` and `.commit-msg` stubs — the batch orchestrator handles TTS, R2 publish, feed insertion, and the commit.
+
+---
+
+## Calibr Briefing — 2026-07-28 (Tuesday) — run complete
+
+**Episodes written (SKIP_TTS batch mode; stubs emitted, no local TTS/publish/commit):**
+- `2026-07-28-pharma-headlines` — 4-item roundup
+- `2026-07-28-argenx-forte-cd122-immunology-spotlight` — deep dive (argenx PR read in full + MedCity analysis + competitive/analyst detail before drafting; full-text gate satisfied)
+
+**Candidate funnel**
+
+Sources scanned via targeted web search across the show's headline set (Fierce Biotech/Pharma front pages returned HTTP 403 to direct fetch; Endpoints 403; BioPharma Dive front page fetched but sparsely dated — worked candidates via search + primary/secondary sources). No content gap; the day's fresh items surfaced across multiple outlets.
+
+- *Fierce Biotech / Endpoints* — front pages 403 (recurring); individual stories recovered via search.
+- *BioPharma Dive* — fetched; homepage dating sparse.
+- *`memory/calibr-pipeline.md`* — still **not present** on disk (flagged 07-26 and 07-27); proceeded on the PROMPT's three focus areas. Worth restoring for Calibr-Skaggs/Foresite crossovers.
+
+Substantive shortlist (fresh Jul 27–28, after discarding stale/covered items):
+- **Argenx to acquire Forte Biosciences ~$2.2B ($77/sh cash, 86% premium) for anti-CD122 antibody FB102** (Jul 27) — ✅ **SPOTLIGHT + headline #1**. Biggest fresh calibr-relevant development: major M&A, first-in-class immunology mechanism (IL-2/IL-15 shared beta chain), rich competitive/analyst landscape, multi-indication Vyvgart-playbook read-through. (Note: also justice-biotech-brief's 07-27 pick, but separate single-subscriber feed — no listener overlap; it is the day's top story for Travis.)
+- **Q2 2026 earnings beats — AstraZeneca (core EPS +18%, oncology +15%), Novartis, Merck** (Jul 27) — ✅ headline #2; Pfizer Aug 4.
+- **Gossamer Bio reacquires worldwide seralutinib rights from Chiesi (no upfront, capped royalty); Sept NDA in PAH despite PROSERA Phase 3 primary-endpoint miss at adjusted alpha; stock jumped** (Jul 27) — ✅ headline #3 (ties to FDA-flexibility theme).
+- **Replimune RP1 FDA cell/gene adcom votes Wed Jul 29 (decision Aug 2)** — ✅ headline #4 (yesterday's spotlight; today framed as tomorrow's binary event + FDA-flexibility read-through, not re-covered in depth).
+
+Considered but not selected:
+- **AI-in-drug-discovery focus area** — no genuinely fresh, dated Jul 27–28 item (latest were BIO-2026/JPM-era: Insilico $2.5B SK Biopharm, Isomorphic $2.1B Series B, Xaira 07-06 promotions). Did **not** pad headlines with a stale AI item; noted Xaira is itself Foresite Labs-backed for future crossover.
+- BioNTech JPT Peptide closure / restructuring — announced early May, stale.
+- Vertex $10B Crinetics bid, Pfizer sigvotatug vedotin Ph3 miss, Astellas cell/gene consolidation — older/undated or thinner relevance.
+- Parabilis Medicines IPO + Regeneron PIPE (Foresite portfolio, direct hit) — late-June, stale for a daily.
+
+**Source failures:** Fierce Biotech / Endpoints front-page 403s (recurring, non-material — stories recovered via search). No content-bar shortfall; two episodes shipped.
+=== 2026-07-28T02:29:49-07:00 done  calibr-briefing (exit 0) ===
