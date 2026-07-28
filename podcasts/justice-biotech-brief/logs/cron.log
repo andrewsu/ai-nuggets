@@ -1621,3 +1621,34 @@ Validated and well-formed. In SKIP_TTS mode the orchestrator handles TTS/publish
 
 **Selection rationale:** the argenx/Forte deal is the only fresh (July 27) candidate that lands directly on Justice's stated interests (autoimmune biologics; the recurring JAK-alternative thread), with a real mechanism (anti-CD122 / IL-15 blockade) and clinical proof-of-concept rather than a bare M&A headline.
 === 2026-07-27T02:54:18-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-28T02:40:11-07:00 start justice-biotech-brief ===
+The episode is written. Under `SKIP_TTS=1` I've stopped at the script plus the two transient stubs (`.rss-item.xml`, `.commit-msg`); the orchestrator handles batch TTS, R2 publish, feed insertion, and the commit. Final audit summary follows.
+
+---
+
+**Justice's Biotech Brief — 2026-07-28**
+
+**Chosen:** Sonesitatug vedotin (Sone-Ve; formerly AZD0901 / CMG901) — first anti-CLDN18.2 ADC to post a Phase 3 overall-survival win in 2L+ gastric/GEJ/esophageal adenocarcinoma (CLARITY-Gastric01), while the co-primary PFS endpoint only trended. AstraZeneca press release, July 27 2026. Full text read via the BioSpace/BusinessWire mirror (AZ's own page and Fierce Biotech were bot-blocked — see gaps).
+
+**Why it beat the field:** on-target ADC readout with a genuinely opinionated angle for Justice's beat — a modality validation (CLDN18.2 as a payload-delivery target, not just a naked-antibody/ADCC target à la zolbetuximab) plus biomarker expansion (25% vs 75% cutoff, ~60% of patients), and an unusual OS-positive / PFS-not-significant discordance worth commenting on. Bonus read-through to his TCE interest via AZ's CLDN18.2×CD3 engager AZD5863.
+
+**Candidate funnel:**
+
+bioRxiv — full 2-day collection pulled (238 on 07-27 + 18 on 07-28 = 253 unique after dedup), keyword-filtered on title+abstract. ~10 keyword hits, most spurious ("ADC maps" = diffusion-MRI; "checkpoint" = cell-cycle; "cd3" = unrelated). Substantive shortlist:
+- Cullin-1 genome-wide CRISPR screen enhancing CD19-directed immunotherapy (CAR-T/CAR-NK) — 10.64898/2026.07.26.740751, cancer biology, 07-26. On-target but mechanistic preprint; outranked by an OS-positive Phase 3.
+- CD47-driven pro-tumorigenic dysfunction in DLBCL/TNBC — 10.64898/2026.07.25.740652, checkpoint/immunotherapy, 07-25. Secondary interest.
+- RASAL3 regulation of human T-cell motility — 10.64898/2026.07.24.740537. Too basic.
+
+News / press (Endpoints front page read via r.jina.ai; STAT via WebFetch):
+- **AZ Claudin 18.2 ADC OS win — CHOSEN.**
+- Sanofi nixes Kymab OX40L antibody in eczema — immunology but a negative discontinuation.
+- Mirador unveils Kira-originated drug rivaling Tavneos — autoimmune, thin/pipeline-reveal.
+- Nava Therapeutics emerges, $89M LNP targeting T cells/kidney — early newco, no data.
+- Legend CEO resigns; Scribe IPO; Crystalys gout raise — business, off-beat.
+- STAT: argenx/Forte $2.2B (already shipped 07-27), Sarepta CEO, Capricor DMD adcomm, AATD gene-editing feature — off-beat or already covered.
+
+**Source gaps (per PIPELINE source-failure rule):**
+- Fierce Biotech — WebFetch HTTP 403 and r.jina.ai abuse-block ("DDoS suspected, blocked until 10:05 UTC"); front page not readable this run.
+- Endpoints/AstraZeneca primary pages — CloudFront 403 to bots; primary source recovered in full via BioSpace mirror, so no content loss for the pick.
+- ARPA-H / NIH / NSF funder pages — not surveyed this run; a dominant clinical readout was already in hand, but flagging the omission.
+=== 2026-07-28T02:49:31-07:00 done  justice-biotech-brief (exit 0) ===
