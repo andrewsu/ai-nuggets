@@ -2915,3 +2915,31 @@ Episode written and staged for the batch orchestrator. Final run summary below.
 
 The robotic-lab paper beat PrimeKG-Plus and RareLens because it's the show's core theme (agentic AI *doing* biomedical/scientific research), it's rigorous and opinionated, and its "local tuning vs. genuine replanning" finding transfers directly to Andrew's own agentic-KG work.
 === 2026-07-28T02:11:43-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-29T02:00:16-07:00 start biomedical-agentic-ai ===
+Episode written. In `SKIP_TTS=1` mode, I've stopped after writing the script plus the two stub files (`.rss-item.xml`, `.commit-msg`) — no TTS, no R2 publish, no feed edit, no commit; the orchestrator handles those after batch TTS.
+
+---
+
+**Episode shipped (pending batch TTS): `2026-07-29-ai-sleep-co-scientist`**
+
+Pick: **AI Sleep Co-Scientist** — "Agentic AI-enabled discovery across large-scale sleep physiology" (arXiv 2607.25175, posted 2026-07-28; Stanford — James Zou's biomedical data science group + Emmanuel Mignot's sleep lab, with Together AI). Full text read via PDF→`mutool` (27k words). Spoken body: 799 words (cap 1150).
+
+Why it won: squarely in the show's wheelhouse — genuinely agentic (three specialist agents + sub-agents, human-in-the-loop), applied to real biomedical *discovery* at scale (124k polysomnograms, 50+ TB), with a knowledge/infrastructure thesis (the moat is the schema-validated substrate + executable provenance + independent critic, not the model) and an unusually candid failure analysis whose real lesson — evaluation, not generation, is the frontier — echoes recurring show throughlines. Distinct from recent picks (robotic-lab stress test 07-28, DAGForge 07-27, EcoXAI 07-26, MEDEA 07-20).
+
+**Candidate funnel:**
+
+- **bioRxiv** (details API, 2026-07-26→29, 209 unique preprints scanned; agentic/LLM/KG filter → 5 substantive):
+  - PG-LLM: benchmarking general LMs for protein variant ranking (07-28) — benchmark, thin agentic angle
+  - Ontology-Guided Pathway Activity / MEK inhibitor sensitivity (07-28) — "ontology" = GO pathway analysis, not agentic/LLM
+  - Interpretable gene networks from single-cell foundation models, Parkinson's (07-27) — foundation model not agentic; already featured elsewhere (Receptor & Reason 07-28, scGENet)
+  - Mixture-of-Experts protein-ligand affinity (07-28); Spaceland 3D atlas (07-27) — ML, not agentic
+- **arXiv** (shared daily cache, 500 entries, 2026-07-25→28; biomedical∩agentic filter → shortlist):
+  - **Agentic AI-enabled discovery across large-scale sleep physiology** (2607.25175) — **CHOSEN**
+  - GraphRareBench — auditable graph-evidence rare-disease diagnosis (2607.24878) — strong KG angle, but a benchmark
+  - Cardiologent — multi-agent arrhythmia clinical decision support (2607.25340) — more clinical than research
+  - PatientAgentBench (2607.25485); RareLens (2607.23290); OPERA biomedical image routing (2607.25108) — narrower fit
+- **PubMed** (E-utilities/MCP, edat 2026-07-24→29; 1515 raw hits, term-broad): all sampled hits spurious keyword matches ("anti-cancer agents", "foundation model" imaging, scYeast foundation model — none agentic); none rivaled the pick.
+- **ChemRxiv / news / funder pages:** not separately surveyed today — arXiv carried a clearly dominant in-window candidate; no source-side outages encountered.
+
+No source failures. bioRxiv thin on the agentic axis this window; arXiv carried the day.
+=== 2026-07-29T02:09:27-07:00 done  biomedical-agentic-ai (exit 0) ===
