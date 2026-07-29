@@ -1652,3 +1652,30 @@ News / press (Endpoints front page read via r.jina.ai; STAT via WebFetch):
 - Endpoints/AstraZeneca primary pages — CloudFront 403 to bots; primary source recovered in full via BioSpace mirror, so no content loss for the pick.
 - ARPA-H / NIH / NSF funder pages — not surveyed this run; a dominant clinical readout was already in hand, but flagging the omission.
 === 2026-07-28T02:49:31-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-29T02:40:16-07:00 start justice-biotech-brief ===
+Done. The script and both SKIP_TTS stubs are written and the RSS item is valid XML. In SKIP_TTS mode I do not run TTS, publish to R2, edit the feed, or commit — the batch orchestrator (`publish_pending.py`) handles those after TTS.
+
+## Candidate funnel — Justice's Biotech Brief, 2026-07-29
+
+**Recency window:** bioRxiv 2026-07-28→29; news/press 2026-07-28→29.
+
+**bioRxiv** — pulled full collections: 294 records (07-28) + 4 (07-29), 298 unique. Keyword-filtered on VEGF/PD-(L)1/TCE/bispecific/trispecific/CAR-T/ADC/JAK/immunotherapy/checkpoint. Substantive matches after discarding false hits ("cart"→bioprint/cartilage/etc.):
+- TCR-T cells with CD8-41BB fusion receptors enhance anti-tumor activity (`10.64898/2026.07.27.739613`)
+- Safety profiling of CAR-T cells on an organotypic human tissue platform (`10.64898/2026.07.25.740527`)
+- BioPathfinder multi-agent CAR-T engineering platform, v2 (`10.64898/2026.07.15.738646`)
+- Focused-ultrasound blood-tumor-barrier opening augments intratumor T cells in glioma (`10.64898/2026.07.26.740799`)
+→ all solid but preprint-tier; none outranked the day's regulatory headline.
+
+**News / press (Fierce, Endpoints, STAT, BioSpace)** — Fierce homepage/article direct fetch 403'd (Cloudflare); worked via WebSearch + STAT/BioSpace fetches. Shortlist:
+- **Replimune RP1 (vusolimogene oderparepvec) + nivolumab** — FDA briefing docs (STAT + BioSpace, July 28) call the single-arm IGNYTE package "not interpretable"; CTGTAC adcom July 30, PDUFA Aug 2; third attempt. **← CHOSEN** (freshest, highest-impact, squarely cancer-immunotherapy; timely preview, vote not yet cast).
+- Sonesitatug vedotin / CLARITY-Gastric01 — **already shipped 07-28**, excluded.
+- Epcoritamab EPCORE DLBCL-1 OS miss — July 23, outside window.
+- BioNTech/DualityBio ADC & BNT327 VEGF×PD-L1 — coverage all early-2026/late-2025, not fresh.
+- ISB 2001 trispecific, Tec-Tal — no new last-48h data (Tec-Tal shipped 07-25).
+
+**Policy/funder** (ARPA-H/NIH/NSF) — no relevant last-48h therapeutic item.
+
+**Source failures:** Fierce Biotech direct WebFetch = HTTP 403 (Cloudflare); routed around via search + other outlets, no recall gap on the lead story.
+
+**Chosen episode:** `2026-07-29-rp1-vusolimogene-oderparepvec-oncolytic-nivolumab-melanoma-fda-adcom` (841-word spoken body, ~5.5 min).
+=== 2026-07-29T02:47:22-07:00 done  justice-biotech-brief (exit 0) ===
