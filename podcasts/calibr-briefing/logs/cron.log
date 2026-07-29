@@ -2671,3 +2671,32 @@ Considered but not selected:
 
 **Source failures:** Fierce Biotech / Endpoints front-page 403s (recurring, non-material — stories recovered via search). No content-bar shortfall; two episodes shipped.
 === 2026-07-28T02:29:49-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-29T02:20:16-07:00 start calibr-briefing ===
+Both fragments are well-formed. Today's episode is complete.
+
+## Summary — Calibr Briefing, Wednesday July 29, 2026
+
+Two scripts written, plus the transient `.rss-item.xml` and `.commit-msg` stubs for each (SKIP_TTS mode — TTS, R2 publish, feed update, and commit are left to the orchestrator).
+
+- **Headlines** (`2026-07-29-pharma-headlines`) — 4 items
+- **Spotlight** (`2026-07-29-replimune-rp1-briefing-docs-spotlight`) — Replimune RP1 as the single-arm accelerated-approval bellwether
+
+I made one deliberate editorial call worth flagging: RP1 was the July 27 spotlight and a July 28 headline, but today's FDA reviewer **briefing documents** (posted July 28, adcom **tomorrow** July 30) are genuinely new and material — the "not interpretable" verdict, the reanalysis halving ORR (~34% → <16%), the ~28% stock drop, and the post-Prasad angle. I framed the spotlight around the sector-wide precedent rather than re-previewing the vote, and I did **not** claim any vote outcome (the meeting hasn't happened).
+
+### Candidate funnel
+
+Sources — WebSearch/WebFetch across STAT, BioSpace, BioWorld, Endpoints, Fierce, BioPharma Dive, PRNewswire, FDA, ASCO/JCO. Fierce Biotech / Endpoints / BioPharma Dive homepages **403'd** to WebFetch (bot protection); worked around via WebSearch + reachable mirrors.
+
+Shortlist (July 28–29 window):
+- **Replimune RP1 FDA briefing docs → adcom July 30** — *CHOSEN (spotlight + headline #1)*. Fresh, dominant, timely. `bioworld.com/.../732939`, `biospace.com/.../not-interpretable`
+- **Incyte Q2 + Vega/latarcibart von Willebrand ($1.25B, closed Jul 6)** — *CHOSEN (headline #2)*. `sec.gov INCY 8-K`, `investor.incyte.com/.../vga039-latarcibart-isth`
+- **Yescarta CAR-T toxicity genetic markers (Science Immunology, 236 pts)** — *CHOSEN (headline #3)*. `fiercebiotech.com/research/study-yescarta-patients-reveals-genetic-red-flags`
+- **Section 232 pharma tariffs effective July 31** — *CHOSEN (headline #4)*. `crowell.com/.../section-232-tariffs`
+- Kelun-Biotech sac-TMT + Keytruda Ph3 win — dropped, dated **July 14** (stale)
+- Zidesamtinib/Jideytro FDA approval — dropped, dated **July 22** (Nuvalent/GSK; stale)
+- Theravance/Zymeworks $929M merger — dropped, **June 28** (stale)
+- Lilly retatrutide TRIUMPH-2/-3 obesity data — dropped, **July 23** (6 days old)
+- No fresh AI-drug-discovery deal in window (Isomorphic May, Genesis/Incyte May, Xaira Jul 8) — not forced.
+
+Note: the `memory/calibr-pipeline.md` referenced in PROMPT.md does not exist in the workspace — proceeded from the PROMPT focus areas.
+=== 2026-07-29T02:30:27-07:00 done  calibr-briefing (exit 0) ===
