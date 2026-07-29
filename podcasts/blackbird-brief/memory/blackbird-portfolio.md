@@ -5,7 +5,8 @@ Defines what "portfolio-relevant" means and lists the people, targets,
 institutions, and competitors to track. **Keep current** — update when a
 program advances, a competitor moves, or a new spinout/lead appears.
 
-_Last verified: 2026-07-28 (Tuesday — Portfolio Watch only). **One substantive fresh in-window item, and it lands directly on a Blackbird
+_Last verified: 2026-07-29 (Wednesday — Portfolio Watch only). **Quiet day for direct portfolio-company catalysts; the day's lead is REGULATORY and lands on 1104health.** LEAD = **FDA Oncology Center of Excellence finalized THREE cancer clinical-trial eligibility guidances (posted 07-27, Federal Register 07-28)** — performance status, laboratory values, washout periods/concomitant meds — instructing sponsors to drop scientifically-unjustified exclusions. Framing stat: <5% of cancer pts in treatment enroll in trials while >70% are willing; restrictive eligibility is a named cause. These are an execution step inside **Operation TrialBlazer** (department-wide HHS initiative announced 2026-06-22; spans FDA, NIH/NCI, ARPA-H, ONC, and the HHS **Office of Inspector General**). **So-what for Blackbird:** clean read = demand-side TAILWIND for 1104health (Blackbird BioVentures; Rose Wang; clinician-embedded community-oncology enrollment marketplace + pharma-subsidy for coordination). Looser eligibility raises the point-of-care match rate = more eligible pts/screen = more value/screen + more rational sponsor subsidy = stickier product. Candid nuance: does NOT fix the coordination-reimbursement gap (that IS the model; guidance doesn't touch it), AND Operation TrialBlazer seats the HHS OIG + a payment/access-reform workstream at the table = the exact policy space where anti-kickback/safe-harbor rules on paying physicians for trial work could clarify (helpfully) or tighten. **Action: Rose Wang's team read the TrialBlazer payment track as closely as the eligibility guidances; airtight compliance before national rollout.** Competitive tailwind NOT proprietary (Massive Bio–FOMAT ~07-20, Tempus TIME phase-1 ride the same thesis) = differentiation must stay on workflow+subsidy as raw AI matching commoditizes. Added TrialBlazer datapoint to §2 1104health entry. Other threads NO CHANGE (one-line no-change notes, no re-coverage): aSKY (RAS/NSCLC map stands since 07-26 — zidesamtinib approved, daraxonrasib NDA, neladalkib under review); GPR52 NewCo (Nxera rival still unsold = modest reprieve holds; Q3 pickup resets clock); RNA translation-activator platform (no change since 07-28 CAMP4 CMP-002 FIH). Sweep: WebSearch across Fierce/Endpoints/STAT/BioPharma Dive/BioBuzz + target/modality/company queries for every program + a general 07-28 biotech-news scan; only genuinely-fresh in-window portfolio-relevant item was the FDA eligibility guidances. Hearing-loss lane checked (Sensorion SENS-501 OTOF discontinued was June, out of window; Aletira seed April, out of window). URLs verified 200 (RAPS/Federal Register ×3/Pharmaletter; HHS TrialBlazer PDF 403s the fetcher but is real). Portfolio Watch basename 2026-07-29-portfolio-watch.
+Previously verified 2026-07-28 (Tuesday — Portfolio Watch only). **One substantive fresh in-window item, and it lands directly on a Blackbird
 platform. LEAD = CAMP4 Therapeutics CMP-002 cleared for first-in-human (07-27), direct validation of the RNA translation-activator /
 upregulation modality.** Australia's TGA + local HREC cleared CAMP4 to start a Phase 1/2 FIH trial of CMP-002, an ASO that works OPPOSITE
 to knockdown ASOs — it targets regulatory RNA (regRNA) upstream of a gene to release the brake and RAISE target-protein expression. Target
@@ -1054,6 +1055,32 @@ competitors below. These are the "so what for Blackbird" hooks.
   Trial Library, Beacon Sutter); pharma sponsor-side spend on community-oncology
   enrollment (BMS, Merck, Pfizer trial-enrollment partnerships); FDA / DOJ stance
   on physician-coordination subsidies (anti-kickback safe-harbor considerations).
+- **Regulatory tailwind + watch (2026-07-29 Portfolio Watch):** **FDA Oncology
+  Center of Excellence finalized three cancer clinical-trial eligibility guidances**
+  (posted 2026-07-27; Federal Register 2026-07-28) — (i) performance status
+  (broaden beyond fittest-only ECOG/Karnofsky; adults only), (ii) laboratory values
+  (avoid blanket blood-count/lab cutoffs reflecting disease/age/comorbidity not real
+  safety risk), (iii) washout periods & concomitant meds (justify scientifically vs
+  blanket exclusion). Framing stat: **<5% of cancer pts in treatment enroll in trials
+  while >70% are willing**, restrictive eligibility named as a cause. Execution step
+  inside **Operation TrialBlazer** (department-wide HHS initiative announced
+  2026-06-22; FDA + NIH/NCI + ARPA-H + ONC + **HHS Office of Inspector General**).
+  **So-what:** demand-side TAILWIND — looser eligibility expands the pool a community
+  oncologist can match at the point of care = higher match rate/screen = more value
+  per screen + more rational pharma subsidy = stickier workflow product. **Candid
+  nuance (both sides):** (a) does NOT fix the coordination-reimbursement gap that is
+  the CORE of the model — the guidance touches eligibility, not who pays for
+  coordination; (b) Operation TrialBlazer explicitly seats the **HHS OIG + a
+  payment/access-reform workstream** = the exact policy space where anti-kickback/
+  safe-harbor rules on paying physicians for trial-related work could be clarified
+  (helpfully) OR tightened. The same initiative that widens 1104health's addressable
+  market also governs the legality of its revenue mechanism. **Action:** Rose Wang's
+  team — read the TrialBlazer payment-reform track as closely as the eligibility
+  guidances; make the compliance/safe-harbor story airtight before the national
+  rollout. Competitive: tailwind is NOT proprietary — Massive Bio (FOMAT community-site
+  network ~2026-07-20) and Tempus (TIME network, phase-1 activation) ride the same
+  thesis; 1104health differentiation must stay on clinician-workflow-plus-subsidy as
+  raw AI matching commoditizes.
 
 ---
 

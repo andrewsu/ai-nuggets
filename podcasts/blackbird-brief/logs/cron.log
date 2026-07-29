@@ -1136,3 +1136,38 @@ Episode complete. Today is **Tuesday, July 28th, 2026** — a daily **Portfolio 
 
 **Skipped per SKIP_TTS:** gen_tts, publish_episode.sh, feed.xml edit, git add/commit (orchestrator handles). Memory updated: new 07-28 log entry + CMP-002 datapoint added to the §2 RNA translation-activator entry.
 === 2026-07-28T02:16:10-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-29T02:10:16-07:00 start blackbird-brief ===
+Everything is written and validated. Under `SKIP_TTS=1` I stop here (no TTS, no publish, no feed edit, no commit — the orchestrator does those after batch TTS). Here's the run summary.
+
+---
+
+## Blackbird Brief — Portfolio Watch, Wednesday 2026-07-29
+
+**Episode type:** Portfolio Watch (daily). No Sourcing Radar today (Radar is weekly/Sundays only). Not a re-invocation — no prior `2026-07-29-*` script existed.
+
+**Files written** (SKIP_TTS mode — orchestrator will TTS, publish to R2, insert feed item, and commit):
+- `scripts/2026-07-29-portfolio-watch.md` (spoken script, `## Script` heading; verified no URLs/DOIs in body)
+- `scripts/2026-07-29-portfolio-watch.rss-item.xml` (stub with `__LENGTH__`/`__DURATION__`; well-formed XML, no naked ampersands)
+- `scripts/2026-07-29-portfolio-watch.commit-msg`
+- Updated `memory/blackbird-portfolio.md` (header run-log + §2 1104health entry)
+
+**Selection:** Portfolio-catalyst-quiet day (RAS/NSCLC, GPR52, IBD, hearing-loss lanes all already covered or out of window). Led with the one genuinely-fresh, on-thesis item — a regulatory development landing on 1104health — and gave one-line no-change notes on the other live threads. Tight episode over padded, per PIPELINE.
+
+### Candidate funnel
+
+**Stream A — portfolio & competitive press (WebSearch sweep; no source outages):**
+- **1104health / trial-enrollment** → **CHOSEN (LEAD).** FDA OCE finalized 3 cancer trial eligibility guidances (performance status, lab values, washout/concomitant meds); posted 07-27, Federal Register 07-28; execution step of HHS **Operation TrialBlazer**. Stat: <5% of cancer pts enroll vs >70% willing. Demand-side tailwind for 1104health's clinician-embedded marketplace; candid nuance on the coordination-reimbursement gap + HHS OIG anti-kickback/safe-harbor watch. URLs 200-verified.
+  - raps.org/resource/fda-finalizes-three-guidances-to-broaden-cancer-clinical-trial-eligibility.html
+  - federalregister.gov …/2026-15185 (performance status), …/2026-15187 (lab values), …/2026-15186 (washout)
+  - thepharmaletter.com/final-fda-guidances-to-expand-participation-in-cancer-clinical-trials
+- **aSKY (RAS/NSCLC)** — no new catalyst since 07-26 (GSK zidesamtinib approved / RevMed daraxonrasib NDA / neladalkib under review). No-change note.
+- **GPR52 NewCo** — Nxera rival still unsold this window; reprieve holds. No-change note.
+- **RNA translation-activator / CAMP4** — CMP-002 FIH (07-27) already covered 07-28. No-change note.
+- **Gut-restricted GCPII (Slusher IBD)** — no fresh TL1A/IBD readout in window (Merck ATLAS-UC 06-22, Roche afimkibart Ph3 ongoing — both stale/covered). Discarded.
+- **Aletira / hearing-loss** — nearest items out of window (Sensorion SENS-501 OTOF discontinuation = June; Aletira seed = April). Discarded.
+- **Blackbird BioVentures/Laboratories direct** — no in-window news. Discarded.
+
+**Discarded keyword/landscape noise:** general 07-28 biotech roundup (Sarepta CEO, Apnimed IPO, Capricor DMD, Oak Hill SPAC) — no portfolio line.
+
+No git operations performed (SKIP_TTS=1).
+=== 2026-07-29T02:17:39-07:00 done  blackbird-brief (exit 0) ===
