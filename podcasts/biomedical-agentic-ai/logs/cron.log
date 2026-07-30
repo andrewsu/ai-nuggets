@@ -2943,3 +2943,35 @@ Why it won: squarely in the show's wheelhouse — genuinely agentic (three speci
 
 No source failures. bioRxiv thin on the agentic axis this window; arXiv carried the day.
 === 2026-07-29T02:09:27-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-30T02:00:09-07:00 start biomedical-agentic-ai ===
+Everything validates. Since `SKIP_TTS=1`, I've written the script plus the two required stub files and stopped there — the orchestrator (`publish_pending.py`) handles TTS, R2 publish, feed insertion, and commit after batch TTS. Here is the run record.
+
+## Episode published (script + stubs staged for batch TTS)
+
+**Show:** biomedical-agentic-ai — **2026-07-30**
+**Pick:** *BioPathfinder — a multi-agent system turns fragmented CAR-T patient data into a validated therapeutic target* (bioRxiv, v2 posted 2026-07-28)
+
+Files written to `podcasts/biomedical-agentic-ai/scripts/`:
+- `2026-07-30-biopathfinder.md` (spoken body: 788 words, ≈5 min, under the 1150 cap)
+- `2026-07-30-biopathfinder.rss-item.xml` (validated; `__LENGTH__`/`__DURATION__` placeholders)
+- `2026-07-30-biopathfinder.commit-msg`
+
+Full text obtained via direct `r.jina.ai` fetch of the PDF (89 KB body — `fetch_preprint.py` and the `.full` HTML both fell through to abstract-only; the PDF channel carried it). DOI prefix `10.64898/` confirmed against the bioRxiv API.
+
+### Candidate funnel
+
+**bioRxiv** (window 07-27→07-30; full collection paginated, 756 entries, filtered on strong keywords):
+- ✅ **BioPathfinder: Evidence-guided multi-agent platform for CAR-T hypothesis discovery** — `10.64898/2026.07.15.738646` — **CHOSEN**. Multi-agent + provenance-aware evidence base (KG-like) + closed-loop with in vivo validation. Bullseye for the show.
+- PrimeKG-Plus: rare-disease-enriched precision-medicine knowledge graph — `10.64898/2026.07.14.738415` — KG resource update, not agentic; runner-up on topic fit.
+- Ontology-guided harmonization of public metabolomics studies — `10.64898/2026.07.23.740366` — ontology/data-integration, but not agentic AI.
+- Manifold Agentic Reasoning (POMDPs on Riemannian spaces) — `10.64898/2026.07.26.740848` — "bioinformatics" category but a pure ML/geometry paper, not biomedical.
+
+**arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 07-26→07-30):
+- Agentic AI-enabled discovery across large-scale sleep physiology — `2607.25175` — strong, but **already shipped yesterday** (2026-07-29 episode).
+- CogEEGAgent — `2607.25045` — featured elsewhere in the network 07-29; skipped for variety.
+- GuideSkill / ClinLens / Cardiologent / PatientAgentBench / OPERA — clinical-agent items, narrower than BioPathfinder's discovery+validation loop.
+
+**PubMed / ChemRxiv / news / funder pages:** not separately surveyed today — a clearly dominant, in-window, full-text-readable bioRxiv pick was in hand, and the arXiv cache corroborated no stronger agentic-biomedical candidate. (Noted as a small recall gap per PIPELINE, not a source outage.)
+
+No source outages this run. No second episode warranted.
+=== 2026-07-30T02:08:18-07:00 done  biomedical-agentic-ai (exit 0) ===

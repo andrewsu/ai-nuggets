@@ -1,0 +1,4 @@
+Script body: 5085 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2998 chars) -> 163.0s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2085 chars) -> 102.2s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-07-30-biopathfinder.mp3 [mistral] 2,144,801 bytes, 268.1s
