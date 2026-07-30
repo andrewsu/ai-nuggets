@@ -2700,3 +2700,32 @@ Shortlist (July 28–29 window):
 
 Note: the `memory/calibr-pipeline.md` referenced in PROMPT.md does not exist in the workspace — proceeded from the PROMPT focus areas.
 === 2026-07-29T02:30:27-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-30T02:20:09-07:00 start calibr-briefing ===
+Both RSS fragments are well-formed and all six files are in place. Episode is ready for the batch pipeline. Final run summary below.
+
+---
+
+## Calibr Briefing — Thursday, July 30, 2026 — DONE (SKIP_TTS mode)
+
+Wrote both episodes + transient stubs (`.rss-item.xml`, `.commit-msg`) for each. TTS, R2 publish, feed update, and commit are left to the batch orchestrator (`publish_pending.py`), which commits per-episode using each basename's own `.commit-msg`.
+
+**Episodes**
+- **Headlines** — `2026-07-30-pharma-headlines` (4 items, ~4 min)
+- **Spotlight** — `2026-07-30-capricor-deramiocel-dmd-adcom-spotlight` (~7–8 min): Capricor's deramiocel voted down 9-3 by the FDA cell/gene therapy adcom — a Duchenne cardiomyopathy cell therapy that failed on the statistics, not the biology (full text read via BioPharma Dive + BioSpace).
+
+**Candidate funnel** (sources scanned: Fierce Biotech/Pharma, Endpoints, BioPharma Dive, BioSpace, plus targeted web search)
+- **Endpoints (endpoints.news)** — WebFetch 403 (Forbidden) both attempts; covered via search snippets and other outlets. *Source-side outage, per PIPELINE.*
+- **Fierce Biotech homepage** — WebFetch 403 on the article; homepage search used instead.
+
+Shortlist (relevance-filtered):
+- ✅ **Capricor deramiocel voted down 9-3 (CTGTAC, Jul 29)** — biopharmadive.com/.../826465 — **CHOSEN: spotlight + headline #1** (fresh, definitive outcome, full text readable, extends the FDA evidence-bar narrative)
+- ✅ **Replimune RP1 adcom votes today (Jul 30)** — fda.gov CTGTAC / biospace — **CHOSEN: headline #2** (vote result not yet out at run time; presented as "votes today," not summarized as a spotlight — full outcome unreadable, so ineligible for the deep dive; also spotlighted Jul 27 & 29)
+- ✅ **Sarepta names Michael Severino CEO (eff. Jul 28)** — businesswire / biopharmadive — **CHOSEN: headline #3** (DMD throughline with Capricor)
+- ✅ **GSK $2.5B/£1.9B restructuring (Q2 earnings)** — biopharmadive / statnews — **CHOSEN: headline #4**
+- ⏸️ MapLight ZEPHYR schizophrenia readout (-70%) — Jul 27, older; not selected
+- ⏸️ Argenx/Forte $2.2B CD122 deal — already the Jul 28 spotlight; excluded
+- ⏸️ Vertex/Crinetics $10B (Palsonify) — announced Jul 6, stale
+- ⏸️ Financings (Claris Bio $118M, Crystalys $130M) — minor, cut for time
+
+Editorial note: the Foresite/Calibr-specific pipeline reference (`memory/calibr-pipeline.md`) doesn't exist in the workspace, so selection leaned on PROMPT.md's general-therapeutic-development focus (FDA actions / clinical readouts / market movers), where all four items sit squarely.
+=== 2026-07-30T02:28:17-07:00 done  calibr-briefing (exit 0) ===
