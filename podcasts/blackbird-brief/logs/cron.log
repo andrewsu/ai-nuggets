@@ -1171,3 +1171,31 @@ Everything is written and validated. Under `SKIP_TTS=1` I stop here (no TTS, no 
 
 No git operations performed (SKIP_TTS=1).
 === 2026-07-29T02:17:39-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-30T02:10:09-07:00 start blackbird-brief ===
+All deliverables are in place. Today's episode is complete.
+
+## Blackbird Brief — 2026-07-30 (Thursday) — Portfolio Watch
+
+**SKIP_TTS mode**: wrote script + two transient stubs (`.rss-item.xml`, `.commit-msg`); did **not** run TTS / publish to R2 / edit `feed.xml` / commit — the orchestrator (`publish_pending.py`) handles those after batch TTS. Updated `memory/blackbird-portfolio.md` (run-log entry + durable Aletira landscape note).
+
+**Episode type:** Portfolio Watch (daily). Thursday → no Sourcing Radar (weekly/Sundays).
+
+**Editorial call:** genuinely quiet direct-catalyst tape — **no in-window (07-27→30) company-specific event lands on any Blackbird program.** Rather than manufacture a catalyst (07-28 had CAMP4, 07-29 had the FDA guidances — I won't invent a third), I ran a candid **positioning read on the flagship Aletira**, which every recent daily lead talked around. Anchor: the 2026 Sarepta Elevidys AAV safety reckoning validates SELEXON's off-target-expression premise (with the honest caveat that SELEXON governs expression, not capsid biodistribution), while the OTOF hearing-loss lead lane has consolidated (Regeneron Otarmeni approved + free; Lilly/Akouos advancing; Sensorion dropped SENS-501). Plus tight forward markers on the other five threads.
+
+### Candidate funnel
+Sources swept: Fierce/Endpoints/STAT/BioPharma Dive/BioBuzz/Pharmaletter + PubMed/SEC via WebSearch; target/modality/company queries for all six programs + general late-July biotech scan. No source outages.
+
+Shortlist (all judged **out-of-window or already-covered**, hence no fresh catalyst):
+- GPR52 / Nxera NXE'149 — rival still **unsold** (no change since 07-27). *(no change)*
+- aSKY / KRAS — RevMed daraxonrasib NDA (covered 07-26); BBOT BBO-8520 G12C-NSCLC data due H2-2026 (not yet); RevMed Q2 call **Aug 5** = next marker; Krazati/adagrasib+cetuximab **KRYSTAL-10 confirmatory failure** in G12C mCRC = ESMO-GI early-July (OOW); zoldonrasib BTD Jan-2026 / VS-7375 fast track 2025 (OOW). *(no fresh catalyst)*
+- CAMP4 CMP-002 FIH — covered 07-28. RNA translation-activator platform *(no change)*.
+- 1104health / FDA eligibility guidances — covered 07-29 (TrialBlazer payment-track watch stands).
+- IBD / GCPII — TL1A tulisokibart covered 07-12 *(quiet)*.
+- **Aletira / AAV modality + OTOF hearing-loss** — no fresh 07-27→30 headline; standing landscape (Elevidys safety reckoning; Regeneron Otarmeni free-in-US; Sensorion SENS-501 discontinued ~June) → **CHOSEN as an honestly-framed positioning read**, not a catalyst.
+
+**Chosen for episode:** Aletira positioning read (lead) + 5 one-line forward markers.
+
+URLs: BioBuzz Aletira profile verified via fetch (confirms "off-target expression… primary source of toxicity" framing); FDA Elevidys / Regeneron Otarmeni / Akouos AK-OTOF from live search link-lists. RSS stub validated as well-formed XML, no raw ampersands; `GPR52`→"G-P-R fifty-two" for TTS.
+
+Basename: `2026-07-30-portfolio-watch`.
+=== 2026-07-30T02:23:49-07:00 done  blackbird-brief (exit 0) ===
