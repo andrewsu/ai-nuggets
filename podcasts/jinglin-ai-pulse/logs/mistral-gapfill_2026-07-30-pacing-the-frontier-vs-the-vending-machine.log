@@ -1,0 +1,6 @@
+Script body: 10972 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2932 chars) -> 144.7s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2937 chars) -> 130.0s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2899 chars) -> 131.8s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (2201 chars) -> 97.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-07-30-pacing-the-frontier-vs-the-vending-machine.mp3 [mistral] 4,502,718 bytes, 562.8s

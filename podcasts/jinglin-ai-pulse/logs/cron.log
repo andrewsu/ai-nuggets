@@ -1210,3 +1210,31 @@ Files written:
 
 No source outages this run.
 === 2026-07-29T02:40:59-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-30T02:30:09-07:00 start jinglin-ai-pulse ===
+The stub is valid XML. In SKIP_TTS mode my work is complete: script + two stubs written, no TTS/publish/feed/commit (the orchestrator handles those). This is the first jinglin-ai-pulse run for today. Here's the run summary for the log.
+
+---
+
+**Episode shipped (SKIP_TTS mode):** `2026-07-30-pacing-the-frontier-vs-the-vending-machine`
+
+Wrote the script plus the two transient stubs (`.rss-item.xml`, validated as well-formed; `.commit-msg`). No TTS/publish/feed/commit — `publish_pending.py` does those after batch TTS. Spoken length ~1,836 words (in the 1,500–2,200 target).
+
+**Editorial throughline:** the AI community split into two conversations today — a governance letter fearing a capability we don't have yet, vs. an eval + an acquisition responding to the autonomy we already deployed. Deliberately pivots off yesterday's sandbox-escape/Nvidia-backstop/Labenz-China episode to fresh material.
+
+**Candidate funnel:**
+
+- **Twitter/X + AI discourse (last 48h)** — scanned ~6 aggregator/news surfaces (buildfastwithai July 29, radicaldatascience, techtimes, thenextweb, explainx, llm-stats). Direct `Zefan_Cai` handle search returned only academic profiles, no in-window posts — logged as a thin source, carried by the broader discourse scan. Substantive shortlist:
+  - **★ CHOSEN (lead)** — "Pacing the Frontier" open letter, 1,100+ frontier-lab employees; OpenAI/Anthropic company-level endorsement; regulatory-capture counter-charge — https://explainx.ai/blog/pacing-the-frontier-ai-employees-letter-july-2026
+  - WSJ Silicon Valley backlash at Anthropic (safety-as-moat) — folded into the lead as the rhyming critique.
+  - Sandbox-escape package-proxy vulnerability detail (Wired) — **excluded**, covered fully yesterday.
+  - xAI v. Minnesota AG lawsuit — excluded (Twitter drama / no technical substance per PROMPT avoid-list).
+- **Investment/business (last 7d)** — scanned TechCrunch/Crunchbase/Globes/PYMNTS. Shortlist:
+  - **★ CHOSEN (Money Moves)** — Cyera acquires Oasis Security ~$1B for AI-agent identity security (July 28); agent-security M&A tripled — https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/
+  - Etched $10.3B (July 23) — used as one-line backdrop.
+  - Databricks $188B, Together AI $8.3B, Pangram $9M — excluded (Databricks used yesterday; others thin/off-theme).
+- **Podcasts (last 14d)** — WhynotTV confirmed stale (per memory). Checked Cognitive Revolution (only fresh ep = Labenz China Pt 1, used yesterday; no Pt 2 yet), Dwarkesh, Latent Space, Interconnects, No Priors — no genuinely in-window episode both fresh and on-theme.
+  - **★ CHOSEN (Deep Cut)** — Andon Labs Vending-Bench, Claude Opus 5 "ruthless" results freshly reported July 29 (TechCrunch), with Petersson's "real life vs. game" argument chain and the "reality is the final eval" philosophy (Latent Space). Anchored on the fresh July 29 results rather than a dated episode, and honestly framed as such — https://techcrunch.com/2026/07/29/claude-opus-5-became-downright-ruthless-when-tasked-with-running-a-vending-machine/
+  - Andon Labs Cognitive Revolution ep (Aug 2025) and Latent Space "Reality: The Final Eval" (June 4) — out of window, used only for eval-philosophy scaffolding, not as the recency anchor.
+
+No source hard-failed (no 429/5xx); one WebFetch 403 on techtimes' second URL was covered by the buildfast + explainx summaries. `Zefan_Cai` handle search was thin (academic profiles only) — noted above.
+=== 2026-07-30T02:38:19-07:00 done  jinglin-ai-pulse (exit 0) ===
