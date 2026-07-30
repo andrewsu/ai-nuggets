@@ -2838,3 +2838,42 @@ Today's episode of **Receptor & Reason** (2026-07-29) is written and staged for 
 
 Ledger: appended line 68 (10 items, verified parseable). Deliverables: `2026-07-29-receptor-and-reason.md` + `.rss-item.xml` (XML validated, `__LENGTH__`/`__DURATION__` tokens intact) + `.commit-msg`.
 === 2026-07-29T03:15:13-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-30T02:50:09-07:00 start receptor-and-reason ===
+All 9 bioRxiv DOIs resolve and the arXiv abstract returns 200; the RSS-item XML is well-formed. In `SKIP_TTS=1` mode, the per-episode TTS/publish/feed/commit steps are the orchestrator's job — my deliverables (script, RSS-item stub, commit-msg stub, dedup-ledger append) are all in place.
+
+Episode complete. Final run record below.
+
+---
+
+## Receptor & Reason — 2026-07-30 run summary
+
+**Mode:** `SKIP_TTS=1` — wrote script + `.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders) + `.commit-msg` stubs; appended dedup ledger. Did **not** run TTS/publish/feed/commit (orchestrator does those). 10 items, all fresh (in the 7-day window), no Tier 4 needed.
+
+### Candidate funnel
+
+**Tier 1/2 bioRxiv** (window 2026-07-24 → 07-30): 1185 records pulled with full pagination, 1144 unique DOIs. Relevance filter → ~790 loose hits, tightened to ~60 strong-signal on-topic. **Full-text eligibility gate applied via direct r.jina.ai render checks** — this drove selection heavily this run.
+
+**arXiv Tier 2** (shared daily cache, 7-day, cs.AI/CL/MA/q-bio): read cache (no live call needed). ~234 loose bio+agentic, 9 targeted drug/neuro-agentic. CogEEGAgent already shipped 07-29 (dedup). Chose the EEG-foundation-model stress-test.
+
+**Sources not queried this run (recall gap, logged honestly):** the Tier 1 journals (Neuropsychopharmacology, Mol Psychiatry, Biol Psychiatry, IJNP, Neuropharmacology), Psychiatric Times, society press pages, chemRxiv, and industry feeds were not individually swept — bioRxiv + the arXiv cache already yielded a full slate of 10 fresh, readable, on-topic items. Flagging as a recall hit, not a content-bar failure.
+
+### Deferred — full text not yet rendered (fresh v1s; eligible on a later day, NOT rejected)
+- **Dopamine D1 receptor graded activation** — `10.64898/2026.07.28.741251` (wanted as lead; body unrendered)
+- **GluA3-preferring AMPAR PAM BRD3290 (schizophrenia)** — `10.64898/2026.07.26.740780` (wanted as #2; body unrendered)
+- **Psilocybin behavioral factors, N≈693 mice** — `10.64898/2026.07.24.740586` (body unrendered)
+- Network-pharmacology fungal autophagy modulators for tauopathies — `10.64898/2026.07.24.740367`; PRIME Bayesian TMS hotspot mapping — `10.64898/2026.07.24.740646`; progranulin microglia lipid — `740601`; Mavchen pose-prediction — `740840` (all abstract-only today)
+
+### Shortlist → shipped (all 10 chosen, full text read)
+1. **[LEAD] TRPML1 lysosomal-Ca failure as pre-plaque initiating lesion in AD astrocytes** — `10.64898/2026.07.23.740052` ✓
+2. SASP-driven directional senescence spread across human brain cell types (DPP-4/CXCR7 blocks) — `10.64898/2026.02.10.705129` ✓
+3. Approved-drug NLRP3 screen: fluoxetine/duloxetine as sex-dependent inflammasome blockers — `10.64898/2026.03.05.709979` ✓
+4. Small-molecule circadian-amplitude enhancers (JAK3/PDE-1/RyR), cell-autonomous in SCN — `10.64898/2026.07.23.740283` ✓
+5. Early-life-stress resilience as sex-specific caudal-dorsal LC state — `10.1101/2025.10.11.681820` ✓
+6. Unpredictable (not merely intermittent) ethanol access → aversion-resistant drinking — `10.64898/2026.03.31.715677` ✓
+7. Rett memory failure = unconstrained mis-targeted behavioral-timescale plasticity — `10.64898/2026.01.29.702595` ✓
+8. Generative replay in V1 during sleep ripples, hippocampus-taught inference — `10.64898/2026.07.24.740539` ✓
+9. Connectivity parcellation refines depression-TMS DLPFC target — `10.1101/2025.11.19.689337` ✓
+10. **[CLOSE]** EEG foundation models fail dataset-identity/negative-control stress tests — `arxiv:2607.24519` ✓
+
+Dedup ledger appended (10 keys). All 9 bioRxiv DOIs verified `ok` against the details API, arXiv abs `200`, RSS-item XML well-formed.
+=== 2026-07-30T03:10:12-07:00 done  receptor-and-reason (exit 0) ===
