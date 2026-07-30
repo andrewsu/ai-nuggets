@@ -1679,3 +1679,33 @@ Done. The script and both SKIP_TTS stubs are written and the RSS item is valid X
 
 **Chosen episode:** `2026-07-29-rp1-vusolimogene-oderparepvec-oncolytic-nivolumab-melanoma-fda-adcom` (841-word spoken body, ~5.5 min).
 === 2026-07-29T02:47:22-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-30T02:40:09-07:00 start justice-biotech-brief ===
+Episode written. Here's the run summary for the audit log.
+
+---
+
+**Justice's Biotech Brief — 2026-07-30 — PUBLISHED (SKIP_TTS mode)**
+
+**Pick:** RINVOQ (upadacitinib) — European Commission approval (July 29) for severe alopecia areata in patients 12+, on the Phase 3 UP-AA program. Full primary source (AbbVie press release) read via WebFetch. Chosen because it's the only candidate clearing every hard gate cleanly: genuinely fresh (net-new July 29 regulatory event), verified primary source read in full, and on-brand for the show's established autoimmune/JAK territory (cf. bempikibart 07-14, avr-001 07-15), with a coherent throughline to Justice's named "JAK-ADC" interest.
+
+Files written (no TTS/publish/feed/commit — orchestrator handles those):
+- `scripts/2026-07-30-rinvoq-upadacitinib-jak-severe-alopecia-areata-eu-approval.md`
+- `…​.rss-item.xml` (validated; `__LENGTH__`/`__DURATION__` placeholders present)
+- `…​.commit-msg`
+
+**Candidate funnel:**
+
+_bioRxiv_ (219 items scanned across 07-29 + 07-30, full collections; filtered on VEGF/PD-(L)1/TCE/bispecific/trispecific/CAR-T/ADC/JAK/checkpoint):
+- Catch-bond engineering vs high-affinity maturation for TCR-T in solid tumors (10.64898/2026.07.26.740839) — strongly on-brand — **DEFERRED: body not rendered** (jina 38 KB, abstract-only; helper fell to API abstract). Re-check on a later day.
+- Fitness-guided CAR screening workflow in primary T cells (10.64898/2026.07.28.741207) — on-brand but methods-y — **DEFERRED: body not rendered** (jina 26 KB, abstract-only).
+- Remaining keyword hits were spurious (CD3/JAK/checkpoint inside unrelated papers).
+
+_News / press (last 1–2 days; Fierce/Endpoints/STAT blocked WebFetch + jina — BioPharma Dive homepage + WebSearch + delegated agent sweep carried the day):_
+- **RINVOQ (upadacitinib) EC approval, severe alopecia areata — July 29 — CHOSEN.** https://news.abbvie.com/2026-07-29-…
+- Merck MK-2010 (PD-1×VEGF) + sac-TMT (TROP2 ADC) trial listing posted-then-pulled — ~July 29 — most on-brand topically but **DROPPED: fails full-text/verified-primary gate** (Fierce unreadable; ClinicalTrials.gov listing deleted).
+- J&J completes $1B Firefly Bio acquisition (Firelink degrader-antibody-conjugate platform, pan-KRAS) — close July 29 — verified, on-brand (ADC frontier), but **not chosen: substance was announced June 8** (deal-close = fresh hook on out-of-window substance; loses to a net-new event under strict recency).
+- Out-of-window (excluded, not honorable mentions): GSK/Nuvalent Jideytro/zidesamtinib approval (July 22), J&J MonumenTAL-6 (July 23), Summit/Akeso ivonescimab HARMONi OS update (July 22). Off-brand fresh items: Arrowhead plozasiran, Novo/Lilly legal, pharma earnings.
+- Replimune RP1 CTGTAC adcom (July 30) — excluded, featured yesterday; vote not yet held at run time (2:40 AM PDT).
+
+_Funder pages:_ ARPA-H — only a July 29 personnel change (new head of commercialization services), no program/award. NIH/NSF — nothing in-window on-brand.
+=== 2026-07-30T03:01:15-07:00 done  justice-biotech-brief (exit 0) ===

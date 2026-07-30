@@ -1,0 +1,4 @@
+Script body: 4088 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2986 chars) -> 139.3s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (1100 chars) -> 48.9s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-07-30-rinvoq-upadacitinib-jak-severe-alopecia-areata-eu-approval.mp3 [mistral] 1,744,605 bytes, 218.0s
