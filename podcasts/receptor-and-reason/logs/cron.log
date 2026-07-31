@@ -2877,3 +2877,39 @@ Episode complete. Final run record below.
 
 Dedup ledger appended (10 keys). All 9 bioRxiv DOIs verified `ok` against the details API, arXiv abs `200`, RSS-item XML well-formed.
 === 2026-07-30T03:10:12-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-07-31T02:50:14-07:00 start receptor-and-reason ===
+All artifacts are in place for SKIP_TTS mode (script, RSS-item stub with placeholders, commit-msg stub, dedup ledger appended; no TTS/publish/feed/commit per SKIP_TTS=1). Here is the run record.
+
+## Receptor & Reason — 2026-07-31 — DONE (SKIP_TTS mode)
+
+**Output written** (orchestrator will TTS + publish + commit):
+- `scripts/2026-07-31-receptor-and-reason.md` — 9 items, ~2,070 words (~13 min), clean of URLs/DOIs/headings
+- `scripts/2026-07-31-receptor-and-reason.rss-item.xml` — validates as XML, `__LENGTH__`/`__DURATION__` placeholders
+- `scripts/2026-07-31-receptor-and-reason.commit-msg`
+- `state/shipped.jsonl` — 9-item record appended
+
+### Candidate funnel
+
+**Recency window:** 2026-07-24 → 2026-07-31 (7 days). Ledger loaded: 69 prior episodes.
+
+- **bioRxiv neuroscience** — full window paginated (~270 records scanned); ~40 CNS-pharm/psychiatry-relevant, ~15 substantive after dedup.
+- **bioRxiv pharmacology & toxicology** — 15 in window (complete); ~6 relevant.
+- **bioRxiv bioinformatics + systems biology** (Tier 2) — ~55 scanned; ~8 agentic/drug-design relevant.
+- **arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, present, 2026-07-31 02:00) — 46 neuro/pharma+agent matches after tightening; 2 selected.
+- **Source failures:** direct bioRxiv details-API paginator hung twice (killed); pivoted to bioRxiv MCP `search_preprints` (clean). No recall loss.
+
+**Full-text gate (decisive today):** bioRxiv's render queue left almost every fresh pick abstract-only (~26 KB stubs). Confirmed rendered full text: **fungal-autophagy (740367, 147 KB)** only. arXiv PDFs fully readable. So the **lead was drawn from a full-text item** (FEV review); the abstract-only Tier-1 items (opioid reward, BRD3290, etc.) were treated at self-contained-abstract depth, never overclaimed. The 07-30 episode had deferred BRD3290 for unrendered full text — its full abstract is now complete, so it was eligible today.
+
+### Shortlist (★ = chosen, 9 total)
+- ★ arXiv 2607.27556 — Evaluating Agentic Bioinformatics (FEV framework) — **LEAD**, full text
+- ★ 10.64898/2026.07.28.741269 — Chst9 accumbens MSNs gate opioid reward (Day lab)
+- ★ 10.64898/2026.07.26.740780 — GluA3-preferring AMPA PAM BRD3290 (Broad)
+- ★ 10.64898/2026.07.25.740691 — mGluR control of trans-thalamic communication (Wang, NYU)
+- ★ 10.64898/2026.07.27.740889 — PEP-3 LRRK2-PP1 peptide for PD (Inserm)
+- ★ 10.64898/2026.07.27.741059 — Boldine dual-site SARM1 inhibitor (Penn)
+- ★ 10.64898/2026.07.24.740367 — Fungal-metabolite autophagy modulators for tauopathies (full text)
+- ★ arXiv 2607.28190 — MADRS LLM depression-trial pipeline (Clario), full text
+- ★ 10.64898/2026.07.24.740586 — Psilocybin behavioral-factor dataset, N=693 (Nautiyal) — **CLOSE**
+
+**Notable excluded (dedup hits):** VTA astrocytes / drug-cue (739241) and dopamine-transmission modes (740623) — both already shipped. Strong-but-unrendered alternates deferred to a later day: LINE-1/cGAS neuronal senescence in AD (740588, Gage — 403/not rendered), chronic-fentanyl female mice (741002), SPAK/TRPV4 hydrocephalus (740775).
+=== 2026-07-31T03:17:45-07:00 done  receptor-and-reason (exit 0) ===
