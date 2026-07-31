@@ -1,0 +1,8 @@
+Script body: 12616 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2943 chars) -> 162.8s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2998 chars) -> 126.9s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2952 chars) -> 142.8s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2969 chars) -> 143.3s ✓
+  [mistral:en_paul_neutral] chunk 5/5 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/5 (749 chars) -> 35.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-07-31-claude-cracks-crypto-and-defense-quietly-wins.mp3 [mistral] 5,237,490 bytes, 654.7s

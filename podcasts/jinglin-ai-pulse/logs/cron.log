@@ -1238,3 +1238,41 @@ Wrote the script plus the two transient stubs (`.rss-item.xml`, validated as wel
 
 No source hard-failed (no 429/5xx); one WebFetch 403 on techtimes' second URL was covered by the buildfast + explainx summaries. `Zefan_Cai` handle search was thin (academic profiles only) — noted above.
 === 2026-07-30T02:38:19-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-07-31T02:30:14-07:00 start jinglin-ai-pulse ===
+Done. The script (2,121 spoken words, ~13 min at 1.2×) and both `SKIP_TTS` stubs are written and validated. Per `SKIP_TTS=1`, I did not run TTS, publish, edit `feed.xml`, or commit — the orchestrator handles those.
+
+---
+
+**Ollie's AI Pulse — 2026-07-31 — run summary**
+
+Shipped: `2026-07-31-claude-cracks-crypto-and-defense-quietly-wins` (+ `.rss-item.xml` with `__LENGTH__`/`__DURATION__` placeholders, + `.commit-msg`). XML validated well-formed; body 2,121 words.
+
+**Episode architecture** (one throughline — *when an AI can break hard math, who's ahead, attacker or defender?*):
+- **Twitter Pulse:** Anthropic Frontier Red Team's Claude Mythos cryptanalysis — real novel HAWK-256 flaw (lattice automorphism, ~2^64→2^38, 60h, survived 2yr expert review) + novel "Möbius Bridge" 7-round AES-128 speedup (200–800×). Nugget: crypto is unfakeable ground truth (contra gameable evals), and *verification* not discovery was the bottleneck.
+- **Money Moves:** Nvidia ~$5B → Ilya Sutskever's SSI (Vera Rubin, 10× compute) — Nvidia as "central bank of the frontier"; + groundcover $100M Series C (agent observability) as the watch-the-agents counter-trend.
+- **Deep Cut:** Adam Gleave (FAR.AI) on The Cognitive Revolution (~13h old) — career offense-pessimist now says "defense dominant for LLM agents with the right technologies"; AI Security Leaderboard results; forced/monitored CoT as structural edge; "own goals" (US models refused to help forensics on the HF breach → responders used open-weight GLM 5.2); ~10%→~1% risk is coordination, not breakthroughs.
+
+**Candidate funnel:**
+
+*Twitter/discourse & general web (last 48h):*
+- ✅ **CHOSEN** — Anthropic Claude Mythos cryptanalysis (HAWK/AES), broad convergence: Hacker News, Decrypt, CSO Online, Quantum Insider, Dataconomy — anthropic.com/research/discovering-cryptographic-weaknesses
+- FCC ban on Chinese humanoid robots (security backdoors), Jul 30 — real but thin/geopolitical, no technical nugget
+- OpenAI academic access (100k scientists free through 2027), Jul 30 — product/access, low intellectual substance
+- GPT-5.6 family (Sol/Terra/Luna), Sol first to win an ARC-AGI-3 public game — already in prior-week coverage arc; no fresh argument today
+- "Pacing the Frontier" letter — **excluded, shipped yesterday (07-30)**
+- Zefan_Cai feed — no in-window signal surfaced via search (academic-profile hits only); no fabricated handle/quote used
+
+*Investment/business (last 7d):*
+- ✅ **CHOSEN** — Nvidia ~$5B → SSI, Jul 27 (TechCrunch/Bloomberg); confirmed Vera Rubin, valuation ~$32B, Sutskever quote
+- ✅ **CHOSEN (secondary)** — groundcover $100M Series C, Jul 29 (BusinessWire/Calcalist/TNW)
+- Databricks $188B, Kling $18B, Harvey/Lovable/Glean rounds — older or already-referenced backdrop
+- Groundcover chosen over Prentis ($100M/$1B, Jul 27) for tighter fit to the verification/monitoring theme
+
+*Podcasts (last 14d, Jul 17–31):*
+- ✅ **CHOSEN** — The Cognitive Revolution, Adam Gleave / FAR.AI (~Jul 30–31), in-window & on-theme
+- Cognitive Revolution "Nathan Goes to China Part 1" (Jul 27) — in-window, strong Chinese-community fit; held as runner-up
+- Deferred as **out-of-window**: Latent Space "Axiom/Carina Hong" (Jun 3), Information Bottleneck "Szegedy" (Apr 29), Dwarkesh math/"Grant" (Jul 4), MLST Tufa Labs (Jul 1), TWIML #767 (May 7), ThursdAI "Z/L Continuum" (Apr 13) — several are excellent verification-bottleneck material worth revisiting if re-aired
+- WhynotTV (named primary): still no in-window episodes (consistent with existing memory note)
+
+No source outages this run.
+=== 2026-07-31T02:41:09-07:00 done  jinglin-ai-pulse (exit 0) ===
