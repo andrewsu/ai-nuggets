@@ -1199,3 +1199,25 @@ URLs: BioBuzz Aletira profile verified via fetch (confirms "off-target expressio
 
 Basename: `2026-07-30-portfolio-watch`.
 === 2026-07-30T02:23:49-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-07-31T02:10:14-07:00 start blackbird-brief ===
+All three artifacts are in place and correct. Episode production for `blackbird-brief` on 2026-07-31 is complete (SKIP_TTS mode — TTS, R2 publish, feed update, and commit are left to the orchestrator).
+
+## Run summary — Blackbird Brief, Friday 2026-07-31 (Portfolio Watch only; not a Sunday)
+
+**Outcome:** Shipped one short, honest Portfolio Watch. Basename `2026-07-31-portfolio-watch`. Script (~826 words, ~5–6 min) + `.rss-item.xml` (placeholders `__LENGTH__`/`__DURATION__`) + `.commit-msg` written; portfolio memory updated.
+
+**Tape read:** Genuinely quiet direct-catalyst tape for a 5th straight day — **no in-window (07-28→31) readout/financing/deal/filing landed on any Blackbird program.** Rather than pad, ran a tight brief anchored on the one fresh, decision-relevant forward marker, with tight no-change watch-items.
+
+**Candidate funnel (Stream A — industry press + per-program target/modality/company queries):**
+- **aSKY / mutant-RAS** — Revolution Medicines Q2 call set for **Aug 5** (announced 07-29, in-window) → **CHOSEN as lead (forward marker).** daraxonrasib NDA (07-22) covered 07-26; zoldonrasib G12D-NSCLC data = AACR April (OOW); RASolute 302 = April (OOW).
+- **Aletira / AAV safety** — Fierce "Sarepta FDA go-ahead for immunosuppressive Elevidys regimen" → **REJECTED, stale** (pub 2025-11-25; ENDEAVOR Cohort 8 sirolimus study enrollment underway 2026-03-16, OOW). Positioning read already done 07-30. Aired as backdrop watch only.
+- **GPR52 NewCo (Lieber/Third Rock)** — Nxera rival still unsold (no change since 12/2025) → watch-item, no change.
+- **RNA translation-activator** — CAMP4 CMP-002 FIH covered 07-28 → watch-item, clock running.
+- **1104health** — FDA eligibility guidances covered 07-29 → TrialBlazer payment-track compliance watch stands.
+- **GCPII/IBD (Slusher)** — TL1A (tulisokibart) ATLAS-UC = June (OOW), quiet.
+- **Islex/ZnT8, general biotech scan** — nothing fresh/portfolio-relevant.
+
+No source outages this run. URLs verified via live search (GlobeNewswire RevMed earnings-date + daraxonrasib NDA; UM BioPark aSKY; GlobeNewswire Nxera + CAMP4). No preprint URLs in the diff (pre-commit URL check n/a).
+
+Sources: [RevMed Q2 date](https://www.globenewswire.com/news-release/2026/07/29/3335558/0/en/revolution-medicines-to-report-financial-results-for-second-quarter-2026-after-market-close-on-august-5-2026.html), [daraxonrasib NDA](https://www.globenewswire.com/news-release/2026/07/22/3331714/0/en/Revolution-Medicines-New-Drug-Application-for-Daraxonrasib-Accepted-for-Review-by-U-S-FDA-for-Previously-Treated-Metastatic-Pancreatic-Cancer.html), [Nxera GPR52](https://www.globenewswire.com/news-release/2025/12/18/3208254/0/en/Nxera-Pharma-to-Regain-Full-Rights-to-GPR52-Agonist-Program-for-Schizophrenia.html), [CAMP4 FIH](https://www.globenewswire.com/news-release/2026/07/27/3333378/0/en/CAMP4-Therapeutics-Secures-Australian-Regulatory-Clearance-to-Initiate-First-in-Human-Clinical-Trial-of-CMP-002-in-Patients-With-SYNGAP1-Related-Disorder.html).
+=== 2026-07-31T02:17:50-07:00 done  blackbird-brief (exit 0) ===
