@@ -1709,3 +1709,33 @@ _News / press (last 1–2 days; Fierce/Endpoints/STAT blocked WebFetch + jina �
 
 _Funder pages:_ ARPA-H — only a July 29 personnel change (new head of commercialization services), no program/award. NIH/NSF — nothing in-window on-brand.
 === 2026-07-30T03:01:15-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-07-31T02:40:14-07:00 start justice-biotech-brief ===
+Episode is written and staged for the batch pipeline. Since `SKIP_TTS=1`, I've skipped TTS/publish/feed/commit (the orchestrator handles those) and written the script plus both transient stubs. XML validates.
+
+---
+
+## Run summary — justice-biotech-brief, 2026-07-31
+
+**Selected:** *In vivo CAR-T — J&J options Sail Biomedicines in a bet worth up to $3.4B on off-the-shelf immune reset for autoimmune disease* (J&J press release, announced July 29; covered by BioPharma Dive/Endpoints July 30). Full primary text read via r.jina.ai; deal terms and Sail platform (endless-RNA circular RNA + targeted LNPs, transient non-integrative in vivo CAR-T) grounded across the J&J release, BioPharma Dive, and Sail/ASGCT materials. Squarely on-brief: CAR-T + autoimmune biologics, the hottest translational-immunology frontier, with a real arguable thesis (transient sweep vs durable engraftment).
+
+### Candidate funnel
+
+**bioRxiv** (full 2-day collection pulled: 254 on 07-30 + 19 on 07-31 = 273 entries; keyword-filtered on title+abstract). Most "BiTE" hits were substring false positives. Substantive on-brief shortlist:
+- Modular counterplays shape condensation and signaling of CAR — `10.64898/2026.07.27.741008` — CAR biophysics, mechanistic basic science, not therapeutic-development altitude.
+- Copper chelation reprograms TME to enhance ICB in mesothelioma — `10.64898/2026.07.28.740857` — preclinical.
+- Targeting NuRD/CHD4 impairs Foxp3+ Treg, promotes anti-tumor immunity — `10.64898/2026.07.30.741771` — preclinical.
+- PD1+TIGIT+ Tph cells in early RA — `10.64898/2026.07.28.740434` — biomarker, not therapeutic.
+- Microfluidic T-Chip for clinical-scale CAR-T manufacturing — `10.64898/2026.07.30.741793` — process engineering.
+→ None beat a major on-brief deal for this "Biotech & Pharma Headlines"-led audience.
+
+**News / press** (BioPharma Dive homepage index + targeted searches; Fierce/Endpoints/STAT block direct fetch):
+- **J&J ↔ Sail Biomedicines — in vivo CAR-T, autoimmune immune reset (up to ~$3.4B)** — 07-29/30 — **CHOSEN.**
+- AbCellera ↔ Vertex — multispecific TCE for autoimmune, $28M upfront — 07-29 — on-brief but discovery-stage/thin; folded into the chosen episode as the same-day throughline.
+- GSK Jideytro (ROS1+ NSCLC) speedy approval post-Nuvalent — 07-30 — major approval but outside Justice's niche interests.
+- Replimune RP1 FDA panel win — 07-30 — already shipped 07-29.
+- argenx/Forte (FB102 anti-CD122) — already shipped 07-27.
+
+**Policy/funder** (ARPA-H / NIH / NSF): no in-window items surfaced in the general sweep; not a limiting factor given the strong news pick.
+
+No source outages this run. One-episode day; no second episode warranted after excluding already-shipped items.
+=== 2026-07-31T02:48:36-07:00 done  justice-biotech-brief (exit 0) ===

@@ -1,0 +1,4 @@
+Script body: 4840 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2958 chars) -> 137.1s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (1881 chars) -> 94.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-07-31-sail-in-vivo-car-t-jnj-immune-reset-autoimmune.mp3 [mistral] 2,016,697 bytes, 252.1s
