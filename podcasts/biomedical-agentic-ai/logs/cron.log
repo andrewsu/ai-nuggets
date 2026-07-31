@@ -2975,3 +2975,29 @@ Full text obtained via direct `r.jina.ai` fetch of the PDF (89 KB body — `fetc
 
 No source outages this run. No second episode warranted.
 === 2026-07-30T02:08:18-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-07-31T02:00:14-07:00 start biomedical-agentic-ai ===
+The stub XML parses. Everything for SKIP_TTS mode is done — script, RSS-item stub, and commit-msg stub written; no TTS/publish/feed/commit (the orchestrator handles those). Here's the run summary.
+
+---
+
+**Episode published (SKIP_TTS mode — stubs written, orchestrator will batch-TTS and commit):**
+
+`2026-07-31-embl-ai-librarian` — **EMBL AI Librarian — an agent-first knowledge layer that turns Europe PMC into citable evidence for LLM agents** (arXiv 2607.28229, posted 2026-07-30). 804 spoken words (~5 min). Full text read via arXiv PDF → mutool.
+
+**Why it won:** Bullseye for this audience — agentic AI + open-science data-integration infrastructure. A model-agnostic LLM controller drives Europe PMC's *live* search (no private index) to return auditable, citable evidence snippets; the real argument is architectural (wrap open curated infrastructure vs. build a 744 GB dense-vector moat). From Fabio Petroni's lab (KILT/RAG lineage) + EMBL-EBI + Saez-Rodriguez. Open-source.
+
+**Candidate funnel:**
+
+- **bioRxiv** (details API, 2026-07-28→07-31): 883 unique preprints scanned, 50 keyword hits. Substantive shortlist:
+  - BioPathfinder — multi-agent CAR-T hypothesis discovery (10.64898/2026.07.15.738646) — **already shipped 2026-07-30**, excluded.
+  - Ontology-guided harmonization of public metabolomics studies (10.64898/2026.07.23.740366) — on-theme (ontology/data integration) but not agentic; runner-up.
+  - genesetGPT — LLM functional gene-set summarization (10.64898/2026.07.27.741117) — narrower tool.
+  - "General-purpose LMs integrate structured biological evidence" (10.64898/2026.06.10.727770); "Tracking claim changes preprint→publication with LLMs" (10.64898/2026.06.30.735556) — both older DOIs, meta-science.
+- **arXiv** (shared daily cache, 500 entries, in-window 07-28→07-30): ~55 relevance hits. Substantive shortlist:
+  - **EMBL AI Librarian** (2607.28229) — **CHOSEN.**
+  - Evaluating Agentic Bioinformatics / FEV framework (2607.27556) — strong meta-work; second choice.
+  - SciDataSailor — agentic scientific-data exploration (2607.28098); LabEvolver — wet-lab agent memory (2607.27690); AskChem — claim-centered chemistry literature (2607.28618). All viable, less on-theme than the winner.
+- **ChemRxiv / PubMed / news / funder pages:** not separately queried once a clearly dominant in-window pick was in hand from bioRxiv+arXiv; no source outages encountered.
+
+No source failures. Winner beat the field on audience fit (open-science knowledge infrastructure + agents), novelty of the architectural claim, and pedigree.
+=== 2026-07-31T02:07:43-07:00 done  biomedical-agentic-ai (exit 0) ===

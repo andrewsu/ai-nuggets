@@ -1,0 +1,4 @@
+Script body: 5057 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2904 chars) -> 147.8s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2152 chars) -> 130.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-07-31-embl-ai-librarian.mp3 [mistral] 2,157,758 bytes, 269.7s
