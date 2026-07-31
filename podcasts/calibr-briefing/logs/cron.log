@@ -2729,3 +2729,34 @@ Shortlist (relevance-filtered):
 
 Editorial note: the Foresite/Calibr-specific pipeline reference (`memory/calibr-pipeline.md`) doesn't exist in the workspace, so selection leaned on PROMPT.md's general-therapeutic-development focus (FDA actions / clinical readouts / market movers), where all four items sit squarely.
 === 2026-07-30T02:28:17-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-07-31T02:20:14-07:00 start calibr-briefing ===
+Both fragments are well-formed. Both episodes are written and staged for the batch pipeline. Since `SKIP_TTS=1`, I correctly skipped TTS generation, R2 publish, feed edits, and the commit — the orchestrator handles those after batch TTS.
+
+## Run summary — Calibr Briefing, 2026-07-31
+
+**Two episodes written** (script + `.rss-item.xml` + `.commit-msg` stubs each, per SKIP_TTS batch mode):
+
+1. **Headlines** — `2026-07-31-pharma-headlines`
+2. **Spotlight** — `2026-07-31-replimune-rp1-adcomm-win-spotlight`
+
+**Spotlight pick:** Replimune's RP1 winning a 10-3 FDA advisory vote (July 30) — the day's biggest therapeutic-development story, and it resolves the "two votes, two days" arc I teased in yesterday's episode (same CTGTAC panel that voted 9-3 against Capricor on July 29). Distinct analytical frame from my prior two Replimune episodes (which were pre-vote/briefing-doc setups): the vote outcome itself, the same-panel contrast, the White House-pressure governance overhang, and the oncolytic-modality landscape. Full text of the BioPharma Dive vote article read via WebFetch.
+
+**Candidate funnel:**
+
+- *BioPharma Dive homepage (WebFetch):* scanned ~10 headlines → fresh (July 30–31) survivors below.
+- *WebSearch (general biotech/pharma, AI-in-drug-discovery, Foresite portfolio, Q2 earnings):* ~8 queries.
+
+Shortlist (fresh, July 30–31 unless noted):
+- **Replimune RP1 10-3 favorable CTGTAC vote, REPL +127% AH, PDUFA Aug 2** — biopharmadive.com/news/.../826619/ — **CHOSEN (spotlight + headlines lead)**
+- **Alnylam –29% on Amvuttra Q2 miss + 2026 TTR guidance cut** — biopharmadive.com/.../826654/ — **CHOSEN (headline 2)**
+- **Bristol Myers Squibb Q2 beat, FY guidance raised to ~$49-50B** — qz.com/bristol-myers... — **CHOSEN (headline 3)**
+- **Xaira (ARCH/Foresite Labs, Tessier-Lavigne) exits stealth, hunts data partners, 4.9B-param virtual-cell model** — biospace.com/.../secretive-ai-drug-hunter-xaira — **CHOSEN (headline 4; AI/Foresite fit)** — note: mid-July item, included as the standing AI-in-drug-discovery watch item given direct Foresite Labs relevance.
+- Crescent Biopharma Q2 financials (July 30) — minor, dropped.
+- Octapharma US manufacturing site (July 30) — low relevance, dropped.
+
+Discarded as stale (>1 week, not fresh today): GSK Jideytro/zidesamtinib approval (July 22); Lilly retatrutide filing plan (July 23); argenx/Forte (July 28, already my July 28 spotlight).
+
+**Sources failing:** none — Fierce/Endpoints/STAT surfaced via search snippets as usual (WebFetch-blocked per memory); BioPharma Dive homepage read cleanly.
+
+**Note:** `calibr-pipeline.md` (referenced in PROMPT.md as living in `memory/`) is not present in the repo or workspace — proceeded on the stated focus areas (general therapeutic development, AI in drug discovery, Foresite portfolio).
+=== 2026-07-31T02:28:22-07:00 done  calibr-briefing (exit 0) ===
