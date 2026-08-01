@@ -1276,3 +1276,43 @@ Shipped: `2026-07-31-claude-cracks-crypto-and-defense-quietly-wins` (+ `.rss-ite
 
 No source outages this run.
 === 2026-07-31T02:41:09-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-01T02:30:24-07:00 start jinglin-ai-pulse ===
+The stub is well-formed XML with both placeholder tokens and no unescaped entities. Since `SKIP_TTS=1`, I'm done here — no TTS, publish, feed edit, or commit (the orchestrator handles those after batch TTS). Files written:
+
+- `scripts/2026-08-01-openai-astra-and-the-return-of-the-verification-question.md` (1,983 spoken words, ~13 min)
+- `.rss-item.xml` stub (validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `.commit-msg` stub
+
+---
+
+## Ollie's AI Pulse — 2026-08-01 run summary
+
+**Episode:** OpenAI previews multi-agent "Astra" to US senators + a report claiming 10 solved math problems → the community rotates to the verification question (same shape as yesterday's crypto story). Money Moves: agent-security funding convergence. Deep Cut: Nathan Labenz on China.
+
+**Throughline:** When a machine produces results faster than we can check them, who does the checking — and do we trust them? Deliberately continuous with yesterday's Claude-cracks-crypto episode (verification-as-bottleneck), which strengthens the arc rather than repeating it.
+
+### Candidate funnel
+
+**Twitter/discourse (last 48h)** — scanned ~6 threads; convergence found on Astra:
+- ✅ **OpenAI "Astra" preview to US regulators** (The Information via Wall St Engine, The Decoder, Yellow) — **CHOSEN, lead.** Convergence across finance/tech press + math community reaction within 24h.
+- ✅ **OpenAI "Ten advances in mathematics" report** (openai.com — 403'd on direct fetch, sourced via search + Marcus) — **CHOSEN, paired with lead.** Non-sofic groups result.
+- ✅ **Verification debate** — Thomas Bloom (nice proof, zero citations), Cal Newport ("superhuman patience"), Kareem Carr ("numerator but no denominator") via Gary Marcus's Substack — **CHOSEN, the meta-narrative.**
+- ❌ LeCun/AMI Labs world-models debate — no fresh data point (last substantive news May–June 2026); running theme, deferred.
+- ❌ DeepMind Genie 3 world models — no new July result; stale.
+
+**Money / business (last 7d)** — scanned Crunchbase weekly, TechStartups July 28 roundup, crescendo/aifunding:
+- ✅ **Agent-security convergence: Hush Security ($30M A), Act Security ($60M stealth), Bloom Security ($20M seed)** — **CHOSEN.** One-week, three-company pattern + 10:1 asymmetry vs. July's $1.8B+ agent-capability funding.
+- ❌ Neko Health $700M Series C (Ollie-relevant biomed AI) — dated July 15, outside 7-day window; dropped.
+- ❌ Nvidia–SSI $5B, groundcover $100M — used in yesterday's episode; referenced only as callback.
+
+**Podcasts (last 14d)** — scanned Cognitive Revolution, Latent Space, MLST, Dwarkesh, TWIML:
+- ✅ **The Cognitive Revolution — "Nathan Goes to China – Part 1" (July 27)** — **CHOSEN.** Real argument chain (capability commoditized / apps carry censorship not models / Doubao emotional adoption / WeChat distribution punchline); direct fit for Ollie's Chinese-AI-community interest; counterweight to the Astra frame.
+- ❌ Cognitive Revolution — Adam Gleave (July 30) — used yesterday.
+- ❌ Latent Space #217 Databricks (July 28) — product-heavy, weaker argument chain.
+- ❌ Latent Space "Age of Async Agents" — dated May 28, stale.
+- ❌ Dwarkesh — last episode June 30, outside window.
+
+**Source failures:** openai.com/index/ten-advances HTTP 403 on WebFetch (routed around via search snippets + Marcus's piece, which quotes the primary reactions); crescendo homepage returned only ≤July-10 items on one fetch (second query surfaced Aug-1 items).
+
+**Recency:** all discourse items ≤48h; funding ≤7d (agent-security rounds July 28–Aug 1); podcast July 27 (within 14d).
+=== 2026-08-01T02:39:42-07:00 done  jinglin-ai-pulse (exit 0) ===
