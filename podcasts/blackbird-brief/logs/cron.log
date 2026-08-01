@@ -1221,3 +1221,29 @@ No source outages this run. URLs verified via live search (GlobeNewswire RevMed 
 
 Sources: [RevMed Q2 date](https://www.globenewswire.com/news-release/2026/07/29/3335558/0/en/revolution-medicines-to-report-financial-results-for-second-quarter-2026-after-market-close-on-august-5-2026.html), [daraxonrasib NDA](https://www.globenewswire.com/news-release/2026/07/22/3331714/0/en/Revolution-Medicines-New-Drug-Application-for-Daraxonrasib-Accepted-for-Review-by-U-S-FDA-for-Previously-Treated-Metastatic-Pancreatic-Cancer.html), [Nxera GPR52](https://www.globenewswire.com/news-release/2025/12/18/3208254/0/en/Nxera-Pharma-to-Regain-Full-Rights-to-GPR52-Agonist-Program-for-Schizophrenia.html), [CAMP4 FIH](https://www.globenewswire.com/news-release/2026/07/27/3333378/0/en/CAMP4-Therapeutics-Secures-Australian-Regulatory-Clearance-to-Initiate-First-in-Human-Clinical-Trial-of-CMP-002-in-Patients-With-SYNGAP1-Related-Disorder.html).
 === 2026-07-31T02:17:50-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-01T02:10:24-07:00 start blackbird-brief ===
+Episode written and staged for the batch pipeline. Here is the run record.
+
+## Blackbird Brief — 2026-08-01 (Saturday, Portfolio Watch only)
+
+**Episode:** `2026-08-01-portfolio-watch` — a candid **quiet-tape, week-ahead** brief. Script + `.rss-item.xml` + `.commit-msg` stubs written; `blackbird-portfolio.md` updated. `SKIP_TTS=1`, so no TTS/publish/feed/commit — `publish_pending.py` will batch those and commit `podcasts/blackbird-brief/`.
+
+**State of the tape:** SIXTH straight day with **no in-window (07-29→08-01) company-specific catalyst** (readout/financing/deal/filing) on any Blackbird program. Did not manufacture a story and did not re-air yesterday's RevMed anchor as fresh — reframed as a Saturday week-ahead across the whole portfolio (rotating off the recent single-program deep dives).
+
+### Candidate funnel
+Sources swept: WebSearch (Fierce / BioPharma Dive / BioBuzz / Pharmaletter / Contract Pharma Friday Brief) + target/modality/company queries for every program + general 07-29→31 biotech scan. No source outages.
+
+**Portfolio-relevant, in-window:**
+- RevMed Q2 earnings-date release (Aug 5 after close) — GlobeNewswire, dated 07-29. **In-window but = the 07-31 anchor**; used as a *calendar marker*, not re-aired as fresh. **[LEAD — the one must-watch, as aSKY competitive input]**
+- Aletira AAV backdrop — no company news; **August AAV FDA-decision calendar** (Ultragenyx DTX401 GSD-Ia decision Aug 23; UX111 MPS-IIIA Sept 19) as the freshest live thread → **[featured as landscape read]**
+
+**Checked & rejected (off-thesis / OOW / already covered):**
+- Replimune RP1 harsh FDA review + 10-3 AdCom (07-29→31) — calibr-briefing beat, not a Blackbird hit
+- Argenx buys Forte Biosciences $2.2B (07-28); AbbVie Rinvoq EU (07-30); Viatris weekly patch (07-31); Caldera/Synlogic + Artis mergers — no portfolio line
+- Sanofi-Teva duvakitug TL1A — OOW / already-logged IBD crowding (aired as one-line GCPII watch)
+- Ultragenyx UX111 CRL = **July 2025** (old); daraxonrasib NDA / zoldonrasib data — already covered
+
+**Aired one-line no-change watch items:** GPR52 NewCo (Nxera rival still unsold — reprieve holds); RNA translation-activator (CAMP4 FIH clock); 1104health (TrialBlazer payment-track / anti-kickback compliance); GCPII-IBD (TL1A crowding).
+
+All show-note URLs verified via search (GlobeNewswire ×3, BioBuzz, Fierce). RSS item fragment validated as well-formed XML.
+=== 2026-08-01T02:18:15-07:00 done  blackbird-brief (exit 0) ===
