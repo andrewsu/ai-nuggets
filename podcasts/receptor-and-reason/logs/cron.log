@@ -2913,3 +2913,34 @@ All artifacts are in place for SKIP_TTS mode (script, RSS-item stub with placeho
 
 **Notable excluded (dedup hits):** VTA astrocytes / drug-cue (739241) and dopamine-transmission modes (740623) — both already shipped. Strong-but-unrendered alternates deferred to a later day: LINE-1/cGAS neuronal senescence in AD (740588, Gage — 403/not rendered), chronic-fentanyl female mice (741002), SPAK/TRPV4 hydrocephalus (740775).
 === 2026-07-31T03:17:45-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-01T02:50:24-07:00 start receptor-and-reason ===
+Everything for today's episode is written. In `SKIP_TTS=1` mode I've stopped before TTS/publish/feed/commit (the orchestrator handles those after batch TTS). Here's the run record.
+
+## Run summary — receptor-and-reason 2026-08-01
+
+**Shipped:** `2026-08-01-receptor-and-reason.md` (10 items, ~2,233 spoken words ≈ 12–13 min at 1.2×). Stubs written (`.rss-item.xml`, `.commit-msg`); dedup ledger appended (line 71). No commit — deferred to orchestrator per SKIP_TTS.
+
+### Candidate funnel
+
+**bioRxiv (Tier 1/2)** — full window 2026-07-25→08-01 pulled & paginated: 1,325 unique papers scanned → 139 neuro/pharma-relevant after dedup-ledger exclusion. Shortlist (14) read in depth; full text fetched for the lead.
+
+**arXiv (Tier 2)** — shared daily cache (`/tmp/ai-nuggets-arxiv-cache.xml`, 2:00 fetch, present): filtered to 23 bio+agentic in-window → 3 read closely. **EC-Reason-Bench** chosen; GuideSkill (clinical dx) and "From Minds to Models" (IAT/sentiment) passed over as off-audience.
+
+**Tier 3/press** — not separately harvested; Tier 1/2 supplied a full 10-item slate, so Tier 4 fallback not activated.
+
+**Selected shortlist (★ = shipped):**
+- ★ Cerebellar predictive+instructive dopamine-reward encoding (NINDS) — **LEAD**, full text read (v4)
+- ★ NAc-core dopamine scaled by available reinforcers (GRAB-DA, rats)
+- ★ Longitudinal fentanyl-abstinence behavior, female mice
+- ★ TUG-2604, fully Gi-biased GPR183 agonist (pharm/tox)
+- ★ N-terminal pyroglutamylation → allosteric GPCR subtype selectivity
+- ★ Rhodopsin deep mutational scanning / biophysical pleiotropy
+- ★ AiPP — ESMC-based proteome-wide cysteine ligandability atlas
+- ★ EC-Reason-Bench — LLM enzyme-classification is knowledge- not reasoning-bound (arXiv)
+- ★ LINE-1 retrotransposons drive AD neuronal senescence; nRTI/ASO reversal
+- ★ 2,6-diaminopurine tunes perivascular AQP4X via UGA read-through — **CLOSE**
+
+**Deferred (not eligible today):** "Striatal acetylcholine enables latent-state creation during reversal learning" (10.64898/2026.07.29.741321, v1) — strong computational+cholinergic candidate and my original intended lead, but full text not yet rendered (`.full` returned abstract-only, 28 KB, no Results/Methods). Transient not-yet-available per the eligibility gate; **re-check on a later day**.
+
+**Source failures:** none — all sources reachable; no retries needed.
+=== 2026-08-01T03:06:14-07:00 done  receptor-and-reason (exit 0) ===
