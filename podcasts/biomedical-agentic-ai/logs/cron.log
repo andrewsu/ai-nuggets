@@ -3001,3 +3001,30 @@ The stub XML parses. Everything for SKIP_TTS mode is done — script, RSS-item s
 
 No source failures. Winner beat the field on audience fit (open-science knowledge infrastructure + agents), novelty of the architectural claim, and pedigree.
 === 2026-07-31T02:07:43-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-01T02:00:24-07:00 start biomedical-agentic-ai ===
+All three files are written and valid. In SKIP_TTS mode I stop here — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles all of that after batch TTS). Here is the run record.
+
+## Episode shipped — biomedical-agentic-ai, 2026-08-01
+
+**Selected:** FEV — "Evaluating Agentic Bioinformatics through Function, Evidence, and Validation" (arXiv 2607.27556, v1 posted 2026-07-30, University of Alabama at Birmingham). Full text read via `mutool` PDF extraction (32.8k words). Script 786 words (cap 1150). Files written: script `.md`, `.rss-item.xml` stub, `.commit-msg` stub. No commit (SKIP_TTS=1).
+
+**Why it won:** Dead-center on the show's thesis — a framework/survey arguing agentic bioinformatics should be judged on the inspectable workflow *trace* (Function/Evidence/Validation), not final-answer correctness. Fresh (v1), opinionated, and a change of pace from this show's recent literature-agent episode. The Evidence axis explicitly includes knowledge graphs/ontologies, hitting Andrew's data-integration interests.
+
+### Candidate funnel
+
+**bioRxiv** (2026-07-29→08-01): 617 unique entries pulled (full paginated collection, ~46 AI-relevant after keyword filter). Shortlist:
+- HARMONY — ontology-guided harmonization of public metabolomics repos — strong Andrew fit (ontology/open-data) but *no LLM/agent component*; off-brand for an agentic-AI show
+- PHI-Reason — LLM reasoning over structured biological evidence records — novel, but a June preprint revised 07-30 (recency-borderline)
+- genesetGPT — LLM gene-set summarization — solid but incremental
+- Manifold Agentic Reasoning — ML-methods, not biomedical
+
+**arXiv** (cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries): biomedical-relevant shortlist:
+- **Evaluating Agentic Bioinformatics (FEV)** — 2607.27556 — **CHOSEN**
+- AskChem — claim-centered chemistry literature infra — on-brand but overlaps yesterday's embl-ai-librarian literature theme
+- BioVLN — lab-robot visual navigation — overlaps 07-28 robotic-lab-agent episode
+- ClinLens — clinical coding-agent benchmark; GuideSkill; MADRS pipeline — more clinical than core
+
+**PubMed** (reldate 5, 300 ids): mostly clinical LLM applications (radiotherapy planning agents, neurodegenerative-care review) — none beat the arXiv/bioRxiv leaders for this audience.
+
+**Source failures:** none — all four sources returned (one bioRxiv pagination loop timed out mid-run and was completed in a second pass).
+=== 2026-08-01T02:10:12-07:00 done  biomedical-agentic-ai (exit 0) ===
