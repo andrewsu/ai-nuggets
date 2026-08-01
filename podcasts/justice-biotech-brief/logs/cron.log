@@ -1739,3 +1739,38 @@ Episode is written and staged for the batch pipeline. Since `SKIP_TTS=1`, I've s
 
 No source outages this run. One-episode day; no second episode warranted after excluding already-shipped items.
 === 2026-07-31T02:48:36-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-01T02:40:24-07:00 start justice-biotech-brief ===
+All three stub files are in place and validated. Since `SKIP_TTS=1`, I've stopped before TTS/publish/feed/commit — the orchestrator handles those. Here's the run record.
+
+---
+
+## Justice's Biotech Brief — 2026-08-01
+
+**Selected:** Opamtistomig (LBL-024) — a PD-L1×4-1BB bispecific antibody completes Phase 2 enrollment in first-line biliary tract cancer (Leads Biolabs, July 30 2026). Chosen for the mechanism, not the milestone: it's a live example of conditional/tumor-localized 4-1BB agonism (PD-L1-anchored), the field's answer to the 4-1BB agonist graveyard (urelumab hepatotoxicity, utomilumab too weak), being pushed deliberately into immune-cold indications. Sits directly on Justice's beat (bispecifics, checkpoint, costimulation; cousin of the PD-L1×VEGF bispecifics and the dual-stimulatory-receptor work). Full text: read the primary press release + prior ASCO/EP-NEC efficacy data and FDA fast-track record for grounding.
+
+**Files written** (SKIP_TTS mode — no TTS, no feed edit, no commit; orchestrator will finish):
+- `scripts/2026-08-01-opamtistomig-lbl024-pdl1-41bb-bispecific-biliary-cold-tumor-costimulation.md`
+- `.rss-item.xml` (validated well-formed; `__LENGTH__`/`__DURATION__` placeholders present)
+- `.commit-msg`
+
+### Candidate funnel
+
+**bioRxiv** (07-31 + 08-01): pulled full collection, 199 raw / **196 unique**; 19 keyword hits after full-corpus filter. None both fresh *and* on-target for Justice; shortlist after discarding spurious matches:
+- Microfluidic T-Chip for clinical-scale CAR-T manufacturing (07-30 bioeng) — process tool, not clinical; passed.
+- Tumor-hepatocyte lactate/TGF-β axis of CD8 exhaustion / immunotherapy resistance in SCLC liver mets (07-30) — mechanism, tangential; passed.
+- "Topologically Engineered Tetrahedral Antibody Architectures for Multispecific Therapy" (multispecific/CD19) — **recency fail** (2022 preprint, v2 revision); excluded.
+- Remaining hits were "checkpoint"/"cytokine"/"JAK" keyword collisions in unrelated biology (spindle-assembly checkpoint, microbiology, cardiac) — discarded.
+
+**News / press (last 1–2 days)** — BioPharma Dive homepage (works via WebFetch), BioSpace, Stock Titan clinical-trials feed, GlobeNewswire/PRNewswire/BusinessWire searches. Fierce Biotech (403) and Endpoints (redirect + known block) not fetchable — noted gap; other sources carried the day.
+- **Opamtistomig / LBL-024 PD-L1×4-1BB bispecific, Phase 2 biliary tract enrollment complete** — GlobeNewswire, 07-30. **← SELECTED.**
+- Leads Biolabs' own molecule; solid primary source + prior EP-NEC data readable.
+- AbCellera–Vertex multispecific TCE deal for autoimmune — 07-29, **recency fail** (3 days, outside 1–2-day window); also already referenced in yesterday's Justice episode. Excluded.
+- J&J JNJ-95566692 CD79b×CD20×CD3 trispecific TCE (NCT07308132) — on-target, but trial start 2026-01-20, no results yet, trigger event not in-window and the ApexOnco writeup was paywalled/403. Passed.
+- Crescent Biopharma Q2 update (CR-001 PD-1×VEGF bispecific) — 07-30 earnings, no new clinical data. Passed.
+- Kelun OptiTROP-Lung06 (sac-TMT + Keytruda) — not fresh, and already featured in Justice's 07-17 episode. Excluded.
+- Sail/J&J, Replimune RP1, Novo ziltivekimab — recent but already covered by Justice or sibling shows. Excluded.
+
+**Policy/funder** — ARPA-H news (latest 07-29, a personnel note; nothing on-topic); NIH/NSF not surfacing in-window biologics items. No candidate.
+
+**Recency note:** the pick is a 2-day-old (07-30) enrollment milestone — at the edge of the 1–2-day news window and a soft peg — but it was the strongest fresh, on-target, full-text-readable primary source available, and it supports a substantive mechanistic take. The real event (October ESMO readout) is flagged in the episode.
+=== 2026-08-01T02:49:56-07:00 done  justice-biotech-brief (exit 0) ===
