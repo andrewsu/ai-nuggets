@@ -2760,3 +2760,22 @@ Discarded as stale (>1 week, not fresh today): GSK Jideytro/zidesamtinib approva
 
 **Note:** `calibr-pipeline.md` (referenced in PROMPT.md as living in `memory/`) is not present in the repo or workspace — proceeded on the stated focus areas (general therapeutic development, AI in drug discovery, Foresite portfolio).
 === 2026-07-31T02:28:22-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-01T02:20:24-07:00 start calibr-briefing ===
+Both stubs are well-formed and all files are in place. Today's **Travis' Daily Briefing** (calibr-briefing, 2026-08-01) is written and ready for the batch pipeline.
+
+## Summary
+
+**Spotlight — Novo Nordisk's ZEUS failure.** The day's dominant story and the clean scientific pick for a working-scientist audience: Novo's phase 3 ZEUS trial of ziltivekimab (anti-IL-6 antibody) missed its primary endpoint in 6,300+ ASCVD/CKD/inflammation patients. The drug engaged its target perfectly — hsCRP down >90%, free IL-6 down — yet cardiovascular events were dead flat (HR 0.99), with more serious infections. I built the deep dive around what makes this a *landmark*: it's the cleanest test yet of the inflammation hypothesis of atherosclerosis, a textbook decoupling of target engagement from clinical benefit, contrasted against the CANTOS/canakinumab result that launched the field — with the generalizable lesson for biomarker-led and AI-designed programs. Full announcement read; Novo/Corvidia backstory verified.
+
+**Headlines (4 items):** ZEUS lead → GSK–Relation Therapeutics AI-discovery pact (up to $110M perturbation "data factory," MORGAN model — hits Travis's AI focus area) → Apnimed's upsized $192M IPO for the first oral sleep-apnea pill (+38%, IPO window open) → Sanofi's "rebuild trust with Regeneron" + axed amlitelimab/itepekimab, plus the Replimune RP1 PDUFA landing tomorrow (Aug 2).
+
+## Candidate funnel
+
+- **BioPharma Dive index (WebFetch, works):** ~6 fresh headlines scanned. Survivors: Novo ZEUS ✅ (chosen — spotlight + headline lead); Sanofi–Regeneron ✅ (headline); Apnimed IPO ✅ (headline). Already-covered/rejected: Replimune AdComm (aired 07-27/29/31 — used only as a forward-looking PDUFA note), Alnylam plunge (aired 07-31), Argenx/Forte (aired 07-28).
+- **Targeted searches:** GSK–Relation Therapeutics AI deal ✅ (headline, GlobeNewswire 07-30 verified); Foresite portfolio scan — no fresh in-window portfolio hit; Apnimed backers confirmed Shionogi/Morningside/Alpha Wave (not Foresite → framed as general IPO signal, not a portfolio item).
+- **AI-drug-discovery scan (Xaira/Isomorphic/Recursion/Iambic):** no dated Aug-1 item; only evergreen content — not forced. Relation–GSK carried the AI beat.
+- **Stale-trap rejected:** initial broad search surfaced Pfizer sigvotatug vedotin (June 22, OOW) and H1-review M&A items — excluded.
+- **Sources failing:** STAT (paywall, no named quotes extracted) — worked around via Novo's own release + AHA/CANTOS literature for the scientific framing. No source outages.
+
+Note on a detail I flagged while verifying: the BioPharma Dive primary source states Sanofi has a "new CEO, Belén Garijo." I kept the headline phrasing to "new leadership" rather than naming the individual, since that's the only attribution and it's peripheral to the substance.
+=== 2026-08-01T02:28:01-07:00 done  calibr-briefing (exit 0) ===
