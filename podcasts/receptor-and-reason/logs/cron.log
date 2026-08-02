@@ -2944,3 +2944,42 @@ Everything for today's episode is written. In `SKIP_TTS=1` mode I've stopped bef
 
 **Source failures:** none — all sources reachable; no retries needed.
 === 2026-08-01T03:06:14-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-02T02:50:09-07:00 start receptor-and-reason ===
+All artifacts are in place and validated. Since `SKIP_TTS=1`, TTS/publish/feed/commit are handled downstream by the orchestrator. Here's the run's audit record.
+
+---
+
+## Receptor & Reason — 2026-08-02 — run summary
+
+**Mode:** `SKIP_TTS=1` → wrote script + `.rss-item.xml` + `.commit-msg` stubs, appended dedup ledger. No TTS/R2/feed/commit (orchestrator does those).
+
+**Episode:** 10 items, ~14 min. Computational-neuro lead cluster → plasticity → sensory/state gain → neuroimmune + pharmacology → psychiatric close. Files written; RSS XML well-formed (placeholders intact); ledger line valid JSON (10 items).
+
+### Candidate funnel
+
+**bioRxiv — Tier 1 (neuroscience + pharmacology & toxicology, 2026-07-26→08-02):** full neuroscience collection paged exhaustively (~286 items across 10 pages) + pharmacology (14 items, complete). ~30 survived relevance filter for CNS-pharm/psychiatric/computational.
+
+**arXiv — Tier 2 (agentic AI in comp bio):** shared daily cache read (500 entries, 07-28→07-30); 205 agentic/bio matches scanned. **Editorial call:** the agentic-LLM items were weak neuropsychopharm fits (chemistry lit-synthesis, wet-lab agents, clinical-reasoning benchmarks); the computational-neuro bioRxiv items serve the "computational" appetite far better and on-target, so Tier 1 carried the day. arXiv contributed 0 items. (Cache capped pre-07-31, a known recall limit.)
+
+**Journals / Psychiatric Times / society pages:** not separately queried — Tier 1 bioRxiv yielded well above the 10-item floor of fresh, full-text-readable candidates.
+
+**Full-text eligibility gate (notable deferrals — abstract-only today, bioRxiv not-yet-rendered, re-check later):**
+- `741321` Striatal ACh enables latent-state creation (Kellendonk) — *intended lead, deferred*
+- `741201` KCNJ6/GIRK2 gain-of-function + drug repurposing
+- `740148` Songbird single-neuron credit assignment (Fee)
+- `741073` Neurotensin brake on exploratory drive; `741426` Rett astrocyte cholesterol; `740919` traveling beta in parkinsonian STN; `740397` PAA amyloid; `741031` PD M1 dysfunction
+
+**Dedup hits excluded (already shipped):** `739656` psychedelic DOI modularity, `739929` diphenhydramine sleep, `740018` VRAC depression, `740743` PVN noradrenaline, `740223` thalamostriatal LID, `740780` BRD3290, `740726` GPR183 agonists, `740588` LINE-1, `741080` AQP4 readthrough.
+
+### Shortlist → **chosen (all 10)**
+- ✅ `741034` Climbing fibers = gradient of a loss function (Shadmehr) — **LEAD**
+- ✅ `671131` Coupled neuron–synapse persistent oscillations (Abbott)
+- ✅ `726898` Distance-to-criticality gradient governs cortical dynamics
+- ✅ `741020` Astrocytes instructively regulate neuronal translation / APOE (Klann)
+- ✅ `740801` Neuropil aggrecan, not PNNs, closes the critical period
+- ✅ `740090` Insulin gates olfactory gain via Kv1.3 in periglomerular cells
+- ✅ `740496` Circadian phase reconfigures the visual-thalamus code
+- ✅ `740442` gp130 neuron–microglia neuroprotective loop
+- ✅ `740775` TRPV4–SPAK axis (ZT-1a) for post-hemorrhagic hydrocephalus
+- ✅ `740831` Sleep reactivation of positive self-evaluation × depression — **CLOSE**
+=== 2026-08-02T03:04:40-07:00 done  receptor-and-reason (exit 0) ===
