@@ -1247,3 +1247,29 @@ Sources swept: WebSearch (Fierce / BioPharma Dive / BioBuzz / Pharmaletter / Con
 
 All show-note URLs verified via search (GlobeNewswire ×3, BioBuzz, Fierce). RSS item fragment validated as well-formed XML.
 === 2026-08-01T02:18:15-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-02T02:10:09-07:00 start blackbird-brief ===
+Everything is in place. In `SKIP_TTS=1` mode I've written the two scripts plus their transient `.rss-item.xml` and `.commit-msg` stubs, and updated the portfolio memory — no TTS, R2 publish, feed edit, or commit (the orchestrator handles those and will stage `podcasts/blackbird-brief/` including the memory file).
+
+## Run summary — Blackbird Brief, Sunday 2026-08-02 (two-episode day)
+
+**Episode A — Sourcing Radar** (`2026-08-02-radar-umb-rassool-sting-dnmti-tp53-aml`)
+**Episode B — Portfolio Watch** (`2026-08-02-portfolio-watch`)
+
+### Sourcing Radar candidate funnel (window 2026-07-27 → 08-02)
+- **bioRxiv/medRxiv corresponding-author sweep:** 1240 bioRxiv + 387 medRxiv scanned; JHU/UMB/Lieber/KKI affiliation filter → 11 bioRxiv + 6 medRxiv hits. After discarding methods/tools/basic-neuro/clinical-epi: **1 company-shaped, full-text-eligible lead.**
+- **★ CHOSEN LEAD — Rassool lab, UMB Greenebaum:** "STING agonists + epigenetic drugs potentiate ZNFX1-driven inflammatory necroptosis in TP53-mutated AML" (bioRxiv v1, 07-28; DOI 10.64898/2026.07.27.741029). **Full text read** via direct r.jina.ai (88 KB body; helper fell through to abstract-only). Candid IP read: use/biomarker/combination play — decitabine generic, STING agonist C92 is Curadev's (donated), no UMB patent disclosed → watch-and-partner, not a composition-of-matter newco. JHU Baylin/Topper co-authors = the JHU×UMB epigenetic-immuno axis.
+- Also crossed, **not leads:** Kwon SF3B2 cardiomyocyte splicing (target biology, no asset); JHU tool/methods preprints (Neuropixels-1536 probe, ImpuT2T pangenome patching, real-time MRI-AI, SureQuant proteomics); Krantz UMB metabolic-gating perspective (no program). medRxiv all clinical/epi/device.
+- Sources: none failed.
+
+### Portfolio Watch candidate funnel (window 2026-07-30 → 08-02) — **7th straight quiet direct-catalyst day**
+- **Stream-A sweep:** WebSearch across Fierce / BioPharma Dive / BioBuzz / Pharmaletter + target/modality/company queries for every program (RevMed/RAS, Nxera/GPR52, Sarepta-Elevidys/OTOF-hearing, Islex/ZnT8, CAMP4/SYNGAP1, tulisokibart/TL1A) + general 07-31→08-02 biotech scan + Baltimore/UM-Ventures check.
+- **★ CHOSEN LEAD — CAMP4 up-to-$50M second private-placement close, imminent** (within 5 business days of 07-27; verified via WebFetch). Bears on the RNA translation-activator platform: the pace-setter competitor removes money as its constraint → Avi's differentiation task now urgent.
+- One-line standing watch items (no re-coverage): RevMed Q2 call Aug 5 (aSKY competitive input, not fresh); Nxera GPR52 rival still unsold; Aletira August gene-therapy calendar / SELEXON post-Elevidys; 1104health eligibility-guidance tailwind + TrialBlazer compliance; GCPII/IBD TL1A crowding.
+- Rejected as OOW/off-thesis: Vertex $10B Crinetics bid; Regeneron Otarmeni (April); daraxonrasib ASCO/NEJM (May/June). No source failures.
+
+### Verification
+- Both `.rss-item.xml` fragments well-formed (with itunes namespace); bioRxiv lead DOI resolves 200 with correct title; CAMP4 GlobeNewswire URL live.
+- Memory `blackbird-portfolio.md` updated: new dated 2026-08-02 log entry (Radar + Watch), CAMP4 financing datapoint added to §2 RNA-platform entry, Rassool/Baer + Curadev/C92 added to tracked lists.
+
+Stubs will be consumed by `publish_pending.py` after batch TTS; the orchestrator does the R2 publish, feed insert, and commit (staging `podcasts/blackbird-brief/`, memory file included).
+=== 2026-08-02T02:24:24-07:00 done  blackbird-brief (exit 0) ===
