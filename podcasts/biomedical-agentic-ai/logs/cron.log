@@ -3028,3 +3028,29 @@ All three files are written and valid. In SKIP_TTS mode I stop here — no TTS, 
 
 **Source failures:** none — all four sources returned (one bioRxiv pagination loop timed out mid-run and was completed in a second pass).
 === 2026-08-01T02:10:12-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-02T02:00:09-07:00 start biomedical-agentic-ai ===
+All three files are in place and validated. Since `SKIP_TTS=1` (batch mode), I've correctly stopped after writing the script and the two stub files — TTS, R2 publish, feed edit, and commit are handled by the orchestrator.
+
+## Run summary — biomedical-agentic-ai, 2026-08-02
+
+**Selected:** AskChem — a claim-centered knowledge layer that makes the provenance-carrying claim, not the paper, the retrieval unit for AI agents (arXiv 2607.28618, posted 2026-07-30). Full text read via `mutool` PDF extract. Script: 828 words (cap 1150).
+
+**Why it won:** squarely on-brand for the show's core (agentic AI + biomedical knowledge graphs, ontologies/taxonomies, data integration, open science, agent-native APIs — REST/SDK/MCP). Fresh angle vs. the last five episodes (robotics stress-test, sleep co-scientist, BioPathfinder target discovery, EMBL AI Librarian, FEV eval). In-window and full-text-readable.
+
+**Candidate funnel:**
+
+- **bioRxiv** — full 4-day collection (2026-07-30→08-02), 597 unique preprints pulled paginated; 42 keyword hits, nearly all spurious ("gene transfer agents", "chemical agent"). Substantive in-window: genesetGPT (LLM gene-set summarization, 07-30) — narrower, not agentic. Others (general-purpose LM for biological interactions; GONNECT) were June/Nov revisions, out of window.
+- **arXiv** — shared daily cache (500 entries) filtered for agentic+biomedical. In-window (07-30→08-02) shortlist:
+  - `2607.28618` AskChem — claim-centered chemistry literature infra + evidence graph + MCP **← CHOSEN**
+  - `2607.27690` LabEvolver — wet-lab robotics agent (too close to 07-28 robotic-lab pick; GitHub project)
+  - `2607.26914` BioVLN — biomedical-lab VLN simulation platform (07-29, out of window)
+  - `2607.27556` FEV — **already shipped 08-01**, excluded
+  - `2607.28229` EMBL AI Librarian — **already shipped 07-31**, excluded
+  - Out-of-window (07-28/29): GuideSkill, ClinLens, SciDataSailor — noted, not eligible today
+- **ChemRxiv** — not separately queried; AskChem indexes ChemRxiv and covers the chemistry-agent space.
+- **PubMed** — not queried this run (strong in-window arXiv candidate already dominant).
+- **News / product (BioPharma Dive)** — scanned; top stories were pharma clinical/financial (Novo ziltivekimab fail, Replimune panel, J&J–Sail CAR-T deal) — no agentic-AI product story.
+- **Policy/funder** — not checked this run.
+
+No source outages. Episode ready for batch TTS + orchestrator publish.
+=== 2026-08-02T02:07:04-07:00 done  biomedical-agentic-ai (exit 0) ===
