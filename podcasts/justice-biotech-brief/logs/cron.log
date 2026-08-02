@@ -1774,3 +1774,34 @@ All three stub files are in place and validated. Since `SKIP_TTS=1`, I've stoppe
 
 **Recency note:** the pick is a 2-day-old (07-30) enrollment milestone — at the edge of the 1–2-day news window and a soft peg — but it was the strongest fresh, on-target, full-text-readable primary source available, and it supports a substantive mechanistic take. The real event (October ESMO readout) is flagged in the episode.
 === 2026-08-01T02:49:56-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-02T02:40:09-07:00 start justice-biotech-brief ===
+The stub is well-formed. In `SKIP_TTS=1` mode the per-episode TTS, R2 publish, feed edit, and commit are all handled downstream by the orchestrator, so my work is done. Here is the run record.
+
+---
+
+**Episode published (script + stubs written; SKIP_TTS batch mode):**
+`2026-08-02-satralizumab-enspryng-il6r-mogad-meteoroid-relapse`
+
+**Pick:** Satralizumab (Enspryng) — Chugai filed the anti–IL-6R antibody in Japan (Jul 31 2026) for MOGAD relapse prevention, on the back of the first positive global phase 3 in the disease (METEOROID, 68% relapse-risk reduction). Framed for Justice's autoimmune-biologics interest: the mechanistic story is IL-6R blockade outrunning B-cell depletion in a demyelinating disease where anti-CD20 has underperformed.
+
+Wrote: `.md` script, `.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders, XML validated), `.commit-msg`. No TTS / R2 / feed edit / commit per SKIP_TTS rules.
+
+**Candidate funnel (window: Jul 31 – Aug 2 2026):**
+
+- **bioRxiv** — Aug 2 not yet posted (Sunday); Aug 1 full collection pulled = 42 items; Jul 31 also pulled (197) as backstop. Keyword-filtered on-target survivors, all weak for a clinical/translational brief:
+  - EZH1/2 inhibition improves immunotherapy response via MHC-II de-repression (cancer bio) — a *revision* of a June preprint surfacing in the Aug-1 window; not fresh news, off the clinical beat. Dropped.
+  - FITdb functional immunogenomics database (immunology) — tool/DB, off-target. Dropped.
+  - Microfluidic T-Chip for CAR-T manufacturing (bioeng) — process, not therapeutic. Dropped.
+  - Remainder were basic tumor-biology "tumor/immune" keyword hits. Dropped.
+- **News (Fierce/Endpoints/STAT/BioPharma Dive)** — Fierce blocks WebFetch **and** r.jina.ai (403/DDoS block until Aug 2 10:20 UTC); Endpoints 403 via WebFetch. Worked from BioPharma Dive (loads) + web search. Substantive shortlist:
+  - **Satralizumab/Enspryng MOGAD filing** — Chugai, Jul 31, verified official release. ✅ **CHOSEN** (in-window, on-target autoimmune biologic, real phase-3 substance).
+  - Chugai's sibling item = same story.
+  - Celcuity/gedatolisib NCCN Category-1 listing (~Aug 1) — PI3K/mTOR, not immunotherapy. Off-target.
+  - Sanofi/Regeneron "rebuild trust" (Jul 31) — corporate, already on other shows. Off-beat.
+  - AbCellera×Vertex multispecific TCE deal — on-target but **Jul 29, outside window**. Excluded on recency.
+  - Pfizer sigvotatug vedotin ph3 NSCLC miss — **Jun 21**, stale (Fierce recap only). Excluded.
+  - Pumitamig (BNT327) VEGF×PD-L1 SCLC — data from WCLC'25/ELCC'26/ASCO'26, stale. Excluded.
+- **Funders** — ARPA-H news: latest Jul 29 (commercialization head), nothing Jul 30–Aug 2. NIH/NSF: nothing in-window on beat.
+
+**Note:** thin weekend for both preprints and news; the Chugai filing was the strongest verified, in-window, on-target item.
+=== 2026-08-02T02:47:27-07:00 done  justice-biotech-brief (exit 0) ===
