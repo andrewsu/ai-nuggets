@@ -1316,3 +1316,38 @@ The stub is well-formed XML with both placeholder tokens and no unescaped entiti
 
 **Recency:** all discourse items ≤48h; funding ≤7d (agent-security rounds July 28–Aug 1); podcast July 27 (within 14d).
 === 2026-08-01T02:39:42-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-02T02:30:09-07:00 start jinglin-ai-pulse ===
+The episode is written and staged. Here's the run summary.
+
+## Ollie's AI Pulse — 2026-08-02 (published, SKIP_TTS batch mode)
+
+**Episode:** "Conjuring worlds vs. running the real one" — 1,926 spoken words (~13 min). Throughline: the AI world spent the weekend oscillating between spectacle and dread, with the unifying take that *capability is the easy part now; reliability in contact with reality is the hard part.*
+
+- **Twitter Pulse** — (1) Claude Opus 5 one-shotting playable 3D games from a single prompt (Min Choi, Matt Shumer, Pietro Schirano demos), with the sharp category correction that this is *not* a world model like Genie 3/Sora — it writes editable code (Fei-Fei Li's renderer/planner/simulator lens). (2) The dread counter-current: Fields medalist Jacob Tsimerman quitting math for OpenAI safety, and METR's call for independent agent-misbehavior investigations after the Hugging Face escape.
+- **Money Moves** — the "world model" bet in two currencies: Western physical-AI megarounds (Atoms ~$1.7B, Odyssey ~$310M) vs. the state-backed Chinese embodied-AI wave roaring back after a 3-year VC drought (~330M yuan/day).
+- **Deep Cut** — Netic CEO Melisa Tokmak on No Priors (July 31): the least-solved problem in AI is boring, mission-critical real-world execution, not conjuring worlds or doom. "We should be building for the real world."
+
+**Files written** (no TTS/publish/feed/commit — orchestrator handles those): script `.md`, `.rss-item.xml` (validated well-formed, `__LENGTH__`/`__DURATION__` placeholders), `.commit-msg`.
+
+### Candidate funnel
+
+**Twitter/X discourse (last 48h):**
+- ✅ **Claude Opus 5 → playable 3D games** (trending Aug 1–2; Min Choi, Shumer, Schirano) — **CHOSEN (lead)**
+- ✅ **Jacob Tsimerman → OpenAI safety** (announced July 23, actively discussed into Aug 2) — **CHOSEN**
+- ✅ **METR: independent agent-misbehavior investigations** (July 28 post, coverage into Aug 2) — **CHOSEN**
+- ⏭️ LeCun/AMI world-models debate — too old (March), no fresh trigger
+- ⏭️ Zefan_Cai — no verifiable fresh (48h) post found; skipped rather than fabricate
+
+**Investment (last 7d, plus recent context):**
+- ✅ **Chinese VC / embodied-AI revival** (Aug 2) — **CHOSEN (fresh anchor)**
+- ✅ **Atoms $1.7B (a16z) + Odyssey $310M** — physical-AI pattern (Atoms ~2wk old; framed as context) — **CHOSEN**
+- ⏭️ Flourish $500M (June), Chai $400M — too old
+
+**Podcasts (last 14d):**
+- ✅ **No Priors — Melisa Tokmak/Netic (July 31)** — **CHOSEN (Deep Cut)**
+- ⏭️ Cog Rev Gleave (July 30) — used in 07-31 episode; Cog Rev China Pt1 (July 27) — used 08-01; Latent Space Databricks — used 07-26; Noam Brown/No Priors (June 26), Fei-Fei Li a16z (June), Dwarkesh×3Blue1Brown (July 1), Liquid AI (early July) — all outside 14-day window
+
+**Source note:** No source-side outages; all picks read via full-text fetch (the-decoder, Crunchbase, METR blog, Quanta/BigGo, No Priors RSS + coverage).
+
+One judgment call worth flagging: I could not find a fresh (≤14-day), quotable, *non-repeating* podcast among the show's usual sources, since the strongest recent episodes were already used on 07-26/07-31/08-01. I chose the freshest legitimately-new option (Netic on No Priors, July 31) rather than repeat a Deep Cut — it fit the "build for the real world" throughline cleanly.
+=== 2026-08-02T02:47:36-07:00 done  jinglin-ai-pulse (exit 0) ===
