@@ -2779,3 +2779,21 @@ Both stubs are well-formed and all files are in place. Today's **Travis' Daily B
 
 Note on a detail I flagged while verifying: the BioPharma Dive primary source states Sanofi has a "new CEO, Belén Garijo." I kept the headline phrasing to "new leadership" rather than naming the individual, since that's the only attribution and it's peripheral to the substance.
 === 2026-08-01T02:28:01-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-02T02:20:09-07:00 start calibr-briefing ===
+Both episodes for **calibr-briefing** are written and staged for the batch pipeline. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote scripts plus the transient `.rss-item.xml` / `.commit-msg` stubs and stopped before TTS, R2 publish, feed edit, and commit — the orchestrator (`publish_pending.py`) does those.
+
+**Episodes shipped (Sunday, August 2, 2026 — quiet weekend tape):**
+
+1. **Headlines** (`2026-08-02-pharma-headlines`) — 4 items: J&J's ~$2.6B option on Sail Biomedicines (lead/spotlight tease); Replimune RP1 PDUFA due today after the 10–3 adcomm win; Lilly + Resilience $750M US KwikPen expansion; BMS Q2 beat-and-raise clouded by Cobenfy + milvexian delays.
+2. **Spotlight** (`2026-08-02-jnj-sail-in-vivo-car-t-spotlight`) — deep dive on the J&J/Sail deal and the in vivo CAR-T land grab: the option-not-acquisition structure, the immune-reset thesis in autoimmune disease, the RNA-nanoparticle vs. lentiviral fault line, the competitive field (AbbVie/Capstan+Umoja, AZ/EsoBiotec, Lilly/Kelonia+Orna, BMS/Orbital, Kite/Interius), and safety as the gating hurdle.
+
+**Candidate funnel:**
+
+- **Replimune RP1 (PDUFA today, Aug 2)** — biggest potential story, but no decision announcement found as of this Sunday run; also already the subject of 4 spotlights/mentions this week (07-27/29/31, 08-01). Kept as headlines watch-item, not a 5th spotlight. ✔ headline
+- **J&J / Sail Biomedicines in vivo CAR-T** (BioPharma Dive, J&J PR — announced ~07-28) — major (~$2.6B), directly on-target (immune-reset, Flagship-adjacent VC world), and **never covered by this show**. Full details read via BioPharma Dive; J&J PR itself 403'd on fetch (used for context only). ✔ **SPOTLIGHT + headline lead**
+- **Lilly + Resilience $750M US GLP-1 manufacturing** (07-30) — fresh, on-target (incretin supply/onshoring). ✔ headline
+- **BMS Q2 earnings — beat/raise + Cobenfy/milvexian delays** (07-30) — fresh macro. ✔ headline
+- Considered and dropped: Chugai satralizumab MOGAD Japan filing (minor); Polpharma Entyvio biosimilar acceptance (minor); Celcuity gedatolisib NCCN listing (minor); AbbVie Rinvoq EU indications (07-30, minor); garetosmab FOP + Moderna flu PDUFAs (upcoming, folded into the FDA-calendar frame); Novo ZEUS / GSK-Relation / Apnimed / Sanofi-Regeneron (all covered 08-01).
+
+**Source note:** No arXiv/bioRxiv needed (news show). Fierce/Endpoints/STAT not directly fetchable (WebFetch blocks) — used WebSearch + BioPharma Dive/BioSpace, consistent with prior runs. Also noted: `memory/calibr-pipeline.md` referenced in PROMPT.md does not exist at that path (nor in workspace) — a standing gap, didn't block today's selection.
+=== 2026-08-02T02:28:16-07:00 done  calibr-briefing (exit 0) ===
