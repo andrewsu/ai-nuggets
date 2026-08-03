@@ -2983,3 +2983,36 @@ All artifacts are in place and validated. Since `SKIP_TTS=1`, TTS/publish/feed/c
 - ✅ `740775` TRPV4–SPAK axis (ZT-1a) for post-hemorrhagic hydrocephalus
 - ✅ `740831` Sleep reactivation of positive self-evaluation × depression — **CLOSE**
 === 2026-08-02T03:04:40-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-03T02:50:09-07:00 start receptor-and-reason ===
+Everything is in place. SKIP_TTS mode — I've written the script and the two transient stubs, appended the dedup ledger, and left TTS/publish/feed/commit to the orchestrator.
+
+**Run complete — Receptor & Reason, 2026-08-03 (9 items).**
+
+Files written:
+- `scripts/2026-08-03-receptor-and-reason.md` (script, `## Script`)
+- `scripts/2026-08-03-receptor-and-reason.rss-item.xml` (stub, `__LENGTH__`/`__DURATION__` placeholders, XML-validated in itunes ns)
+- `scripts/2026-08-03-receptor-and-reason.commit-msg`
+- Appended today's 9-item record to `state/shipped.jsonl`
+
+**Candidate funnel:**
+
+Sources scanned (7-day window, 2026-07-27→08-03):
+- **bioRxiv** (details API, all pages): 1,069 items across 7 days → 380 keyword hits → 354 after dedup → 37 strong neuropsychopharm candidates.
+- **arXiv** (shared daily cache, 500 entries; latest submissions 07-31, weekend listing lag): 27 bio+agentic recent hits.
+- **Journals (Tier 1/2/3)** — not directly reachable via WebFetch (Nature/Elsevier auth walls, per memory); bioRxiv/arXiv carried the day.
+
+Substantive shortlist (★ = chosen):
+- ★ D1R graded activation — `10.64898/2026.07.28.741251` (full text ✓) — **LEAD**
+- ★ M1 microcircuit dysfunction in progressive parkinsonism — `10.64898/2026.07.27.741031` (full text ✓)
+- ★ AMPA GluA1 phosphorylation & adolescent LTP maturation — `10.64898/2026.07.30.741885` (abstract; not-yet-rendered, self-contained tail)
+- ★ Minocycline vs. hypoxia-panic via PAG microglia — `10.64898/2026.07.29.741424` (abstract; posted 08-02, not yet rendered, self-contained tail)
+- ★ SeekBrain multi-agent neuroscience discovery — `arxiv:2607.29347` (full text via PDF ✓)
+- ★ CyberNeuro privacy-preserving agentic neuroimaging workbench — `arxiv:2607.28841` (abstract, self-contained)
+- ★ MGMG cell-morphology-guided molecule generation — `10.1101/2025.07.11.664424` (abstract, self-contained)
+- ★ ADMET quantum-inspired preprocessing — `10.64898/2026.06.30.735582` (abstract, self-contained tail)
+- ★ Dynamic connectivity in smartphone addiction (rs-fMRI) — `10.64898/2026.07.26.740792` (abstract; light closer)
+
+Considered, not picked: serotonin-receptor amoeboid melanoma migration (`741069`, peripheral, not CNS); Blumea anxiolytic extract (`740683`, weak phytochemical); Boltz2ESI enzyme-substrate co-folding (`741672`, biocatalysis, off-audience); Abca7 AD proteome (`741021`), AD plasma nanoparticle corona (`740710`) — solid but crowded AD lane recently. MADRS Pipeline (`2607.28190`) and Agentic Bioinformatics eval (`2607.27556`) excluded by dedup ledger (shipped 07-31).
+
+No source outages this run. All picks passed the dedup ledger.
+=== 2026-08-03T03:03:28-07:00 done  receptor-and-reason (exit 0) ===
