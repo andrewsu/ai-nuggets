@@ -11,7 +11,29 @@
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/calibr-briefing/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                                                                            <item>
+            <title>Pharma Headlines — Monday, August 3, 2026: Alnylam prints a record quarter (Amvuttra tops $1B) but cuts FY transthyretin guidance $200M on normalizing second-line demand — stock down ~28%, ~$10.8B wiped + Replimune's oncolytic RP1 melanoma PDUFA (Aug 2) still undecided + Moderna's Ph3 norovirus vaccine misses its interim bar as next-gen flu shot mFLUSIVA wins a unanimous adcomm + uniQure says it would welcome an FDA adcomm for its Huntington's gene therapy + Capricor's CEO won't rule out suing the FDA after a 9-3 deramiocel vote</title>
+            <description>Your biotech and pharma briefing for Monday, August 3, 2026 — the tape wakes up after a quiet weekend with a genuine market mover on top. Five items.
+
+    1. LEAD (and today's spotlight): Alnylam reported a record quarter yet fell ~28%. Its transthyretin (TTR) franchise — Amvuttra and Onpattro — booked just over $1B (up 89% YoY), with Amvuttra alone crossing $1B in a single quarter for the first time; total revenue was $1.29B (up 67%) and EPS beat. But management cut full-year TTR guidance by $200M, to $4.2–4.5B (from $4.4–4.7B), and the stock shed roughly $10.8B of market value. Amvuttra's $1.01B also missed the ~$1.05B consensus, the second miss in three quarters. The stated cause: a pull-forward of "second-line" switching demand that has now normalized.
+
+    2. Replimune's RP1 (vusolimogene oderparepvec), an oncolytic HSV-1 paired with Bristol Myers' Opdivo for anti-PD-1-refractory melanoma, had its FDA action date this past Saturday, August 2 — the payoff on the 10-3 advisory-panel win. As of recording there is still no announcement; given the weekend date the decision could land today. RP1 has been rejected twice before.
+
+    3. Moderna beat on earnings and held its 10% growth target, but its phase 3 norovirus vaccine (mRNA-1403) missed the interim efficacy bar — too few infections to call — so the trial extends into a fourth season and a definitive readout likely slips to 2027–2028. Offsetting: a unanimous adcomm win for next-gen flu vaccine mFLUSIVA, with an FDA decision expected ~Aug 5. Shares still fell ~6%.
+
+    4. uniQure said it would welcome an FDA advisory committee for its Huntington's disease gene therapy — a striking confidence move (companies usually dread adcoms), landing as scrutiny of rare-disease and gene-therapy approvals tightens across the agency.
+
+    5. Capricor's standoff escalated: after last week's 9-3 adcomm vote against deramiocel (cell therapy for Duchenne cardiomyopathy), the CEO won't rule out legal action against the FDA — a rare public threat that underscores how bitter the accelerated-approval fights in small, fatal diseases have become.</description>
+            <link>https://www.biospace.com/business/alnylam-absorbs-10-8b-blowback-after-cutting-full-year-guidance-for-ttr-franchise</link>
+            <guid isPermaLink="false">2026-08-03-pharma-headlines</guid>
+            <pubDate>Mon, 03 Aug 2026 13:00:00 +0000</pubDate>
+            <enclosure url="https://podcast.su-lab.workers.dev/p/calibr-briefing/u/travis/2026-08-03-pharma-headlines.mp3" length="1454123" type="audio/mpeg"/>
+            <itunes:duration>182</itunes:duration>
+            <itunes:summary>Monday, August 3, 2026 briefing (5 items). LEAD/spotlight: Alnylam printed a record quarter — TTR franchise (Amvuttra + Onpattro) topped $1B (up 89% YoY), Amvuttra alone crossed $1B for the first time, total revenue $1.29B, EPS beat — yet the stock fell ~28% (~$10.8B wiped) after management cut full-year TTR guidance by $200M to $4.2–4.5B, citing normalized "second-line" switching demand; Amvuttra's $1.01B also missed ~$1.05B consensus. Plus: Replimune's RP1 melanoma PDUFA (Aug 2) is still undecided as of recording; Moderna's phase 3 norovirus vaccine misses its interim bar (readout slips to 2027–28) while next-gen flu shot mFLUSIVA wins a unanimous adcomm (decision ~Aug 5); uniQure would welcome an FDA adcomm for its Huntington's gene therapy; and Capricor's CEO won't rule out suing the FDA after a 9-3 deramiocel vote. Links in show notes.</itunes:summary>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
+
+    <item>
             <title>Spotlight — Alnylam's $10.8B selloff on a record quarter: why a two-hundred-million-dollar guidance cut matters more than a $1B Amvuttra quarter, how the transthyretin silencers-vs-stabilizers war reshaped the market, and why a rival's failed heart trial (CARDIO-TTRansform) is the key to reading "normalizing second-line demand"</title>
             <description>Today's spotlight uses Alnylam's Q2 2026 to explain how a company can print its best-ever quarter and still lose ~$10.8B of value in an afternoon — a market-maturing story, not a drug-failure story.
 
