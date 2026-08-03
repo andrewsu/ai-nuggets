@@ -1273,3 +1273,25 @@ Everything is in place. In `SKIP_TTS=1` mode I've written the two scripts plus t
 
 Stubs will be consumed by `publish_pending.py` after batch TTS; the orchestrator does the R2 publish, feed insert, and commit (staging `podcasts/blackbird-brief/`, memory file included).
 === 2026-08-02T02:24:24-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-03T02:10:09-07:00 start blackbird-brief ===
+Today's episode is written and staged. Here's the run record.
+
+## The Blackbird Brief — 2026-08-03 (Monday, Portfolio Watch only)
+
+Sourcing Radar is weekly/Sundays, so today is Portfolio Watch only. `SKIP_TTS=1`, so I wrote the script + two transient stubs (`.rss-item.xml`, `.commit-msg`) and left TTS/publish/feed/commit to the orchestrator. Portfolio memory updated (new 08-03 entry + §2 RNA translation-activator wedge detail).
+
+**Episode:** `2026-08-03-portfolio-watch` — Portfolio Watch, eighth straight quiet direct-catalyst day. Lead is the follow-through on Sunday's live thread: **CAMP4 Therapeutics' second private placement closes today** (on/about Aug 3 per its Form 8-K), with now-precise figures (up to $50.1M gross, ~32.7M shares/pre-funded warrants; Leerink lead agent; Coastlands + Janus Henderson/Vivo/5AM/Balyasny/Adage/Trails Edge/CURE SYNGAP1). It funds the named independent competitor in our RNA translation-activator lane. To avoid re-airing yesterday, the fresh value is making the "differentiation wedge" concrete along three axes — mechanism (translation- vs CAMP4's transcriptional level), delivery (peripheral white space vs their intrathecal CNS), and disease set — as this-week's work for Avi/platform leads.
+
+### Candidate funnel (Stream A, window 07-31→08-03)
+- **General biotech tape (Fierce/BioPharma Dive/Pharmaletter/RTTNews):** scanned; fresh items all off-thesis → Replimune RP1+nivo melanoma FDA decision (calibr beat), Capricor deramiocel DMD-cardiomyopathy negative briefing docs/CEO-vs-FDA (allogeneic cell therapy, *not* AAV-selectivity → not an Aletira hit), Celcuity gedatolisib NCCN (breast PI3K), Argenx/Forte + J&J/Sail (already logged). None selected.
+- **BioBuzz / Baltimore-Maryland:** Syngene/Bora/biomanufacturing + MOORE-Bio workforce — ecosystem/real-estate, off-thesis per PROMPT. None selected.
+- **Per-program queries:**
+  - RNA translation-activator / CAMP4 — **CHOSEN (lead):** second-tranche close dated on/about today; corrected figures verified via 8-K + stocktitan mirror.
+  - aSKY / RevMed (daraxonrasib, zoldonrasib, RASolute 305) — no fresh in-window catalyst; RevMed Q2 call **Wed Aug 5** flagged as calendar-only competitive input (not re-aired as news).
+  - GPR52 NewCo / Nxera NXE'149 — still unsold/unpartnered; unchanged.
+  - Aletira / Sarepta Elevidys / OTOF — no fresh company news; landscape unchanged.
+  - GCPII-IBD / TL1A (tulisokibart, duvakitug) — no fresh catalyst; crowding thesis unchanged.
+  - 1104health — no new guidance; TrialBlazer compliance watch stands.
+
+No source failures. All URLs verified. No commit/push performed (orchestrator handles it after batch TTS).
+=== 2026-08-03T02:16:58-07:00 done  blackbird-brief (exit 0) ===
