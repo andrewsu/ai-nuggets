@@ -1805,3 +1805,38 @@ Wrote: `.md` script, `.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placehold
 
 **Note:** thin weekend for both preprints and news; the Chugai filing was the strongest verified, in-window, on-target item.
 === 2026-08-02T02:47:27-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-03T02:40:09-07:00 start justice-biotech-brief ===
+Memory updated (the MEMORY.md index already points to this file). 
+
+Episode is complete. Since `SKIP_TTS=1`, I've written the script plus the two stub files and stopped before TTS/publish/feed/commit — the orchestrator (`publish_pending.py`) will run batch TTS and commit.
+
+---
+
+## Justice's Biotech Brief — 2026-08-03 run summary
+
+**Selected:** *Ipilimumab — anti-CTLA-4 destabilizes tumor Tregs by agonizing CTLA-4 to fire TGF-β signaling, not by blocking it* (bioRxiv, WanJun Chen lab / NIH-NIDCR, v1 posted 2026-08-01). Full text read in full via direct `.full.pdf` + mutool (see funnel note).
+
+**Files written** (SKIP_TTS mode — no TTS/publish/feed/commit):
+- `scripts/2026-08-03-ipilimumab-anti-ctla4-treg-destabilization-tgfbeta.md`
+- `.rss-item.xml` (validated well-formed, placeholders intact)
+- `.commit-msg`
+
+### Candidate funnel
+
+**bioRxiv** (window 2026-08-01→08-03; full 2-day collection pulled, 109 unique papers across all pages — 75 + 32 + 2): 4 survived the immuno-oncology relevance filter:
+- ✅ **CTLA-4 engagement destabilizes intratumor Tregs** `10.64898/2026.07.28.741328` — **CHOSEN**. Only candidate whose full text I could actually obtain (direct browser-UA PDF + mutool; jina routes both failed). Freshest + most on-theme (checkpoint MoA).
+- CD4 T cells + myeloid remodel pancreatic TME for immunotherapy `10.64898/2026.07.28.741325` — deferred, body not rendered (abstract-only, ~32KB via jina).
+- Solid-tumor TME reorders CD155/CD112 hierarchy shaping checkpoint blockade `10.64898/2026.07.29.741502` — deferred, not rendered.
+- EZH1/2 inhibition (valemetostat) boosts anti-PD1 via MHC-II + neutrophils `10.64898/2026.06.01.725956` — v3 of a June paper (science ~2 mo old, recency-weak); also HTML abstract-only.
+
+**News / press (Fierce, Endpoints, STAT, BioPharma Dive, BioSpace, StockTitan)** — thin weekend window (Aug 1–2 = Sat/Sun; Aug 3 = Mon, empty so far). In-window items were off the core immuno-oncology theme:
+- Moleculin MIRACLE R/R AML interim (37% CRc), Aug 2 — off-core, small.
+- Mezzion udenafil ADPKD (preclinical); Ratio Therapeutics $70M Series C; ClearPoint/Aspen Parkinson's RMAT — all off-theme.
+- Pluvicto mHSPC label-expansion FDA approval — **rejected**: dated July 31 (3 days out, outside 1–2-day news window) and off-theme (radioligand).
+- Sanofi/Kali KT501 CD19×BCMA×CD3 trispecific TCE ($1.2B) — **rejected**: on-theme but the deal is from March 23 (a Fierce re-surfacing), far out of window.
+- Replimune RP1 (Aug 2 PDUFA) — no decision posted yet; also already featured 07-29 and off-core.
+
+**Policy/funder pages** — no relevant in-window items.
+
+No source hard-failed this run.
+=== 2026-08-03T02:53:08-07:00 done  justice-biotech-brief (exit 0) ===
