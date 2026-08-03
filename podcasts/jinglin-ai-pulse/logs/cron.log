@@ -1351,3 +1351,41 @@ The episode is written and staged. Here's the run summary.
 
 One judgment call worth flagging: I could not find a fresh (≤14-day), quotable, *non-repeating* podcast among the show's usual sources, since the strongest recent episodes were already used on 07-26/07-31/08-01. I chose the freshest legitimately-new option (Netic on No Priors, July 31) rather than repeat a Deep Cut — it fit the "build for the real world" throughline cleanly.
 === 2026-08-02T02:47:36-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-03T02:30:09-07:00 start jinglin-ai-pulse ===
+Everything is in place for `SKIP_TTS` batch mode: the script, the RSS item stub (with `__LENGTH__`/`__DURATION__` placeholders, well-formed XML), and the commit-msg stub. Spoken body is 1,910 words (~12–13 min, within the 1,500–2,200 target). Per PIPELINE, I've skipped TTS, publish, feed edit, and the commit — the orchestrator handles those after batch TTS.
+
+Here is the run summary for the log.
+
+---
+
+## Ollie's AI Pulse — 2026-08-03 — DONE (SKIP_TTS mode)
+
+**Episode:** `2026-08-03-the-moat-question` — *The moat question.*
+**Throughline:** In one week Chinese open-weight labs matched capability, gave weights away, and collapsed inference economics — and AI Twitter openly debated whether Western closed-frontier valuations survive. Counterweight: OpenAI's Astra produced *verifiable* new math. Value is fleeing to the two edges of the stack (power/silicon at the bottom; verifiable results + taste at the top).
+
+**Files written** (no commit — orchestrator commits after batch TTS):
+- `scripts/2026-08-03-the-moat-question.md` (script, 1,910 spoken words)
+- `scripts/2026-08-03-the-moat-question.rss-item.xml` (well-formed; `__LENGTH__`/`__DURATION__` placeholders)
+- `scripts/2026-08-03-the-moat-question.commit-msg`
+
+**Candidate funnel:**
+
+*Twitter Pulse* (3 research agents dispatched in parallel; recency ≤48h):
+- ★ **Qwen3.8-Max launch** — #1 HN (544 pts), moat/commodity debate — `news.ycombinator.com/item?id=49150470` — **CHOSEN (lead A)**
+- ★ **DeepSeek V4-Flash pricing** (14¢/28¢ per M tokens, ~97-99% cheaper) — **CHOSEN (paired w/ Qwen as economics half)**
+- ★ **OpenAI Astra — 10 math problems w/ Lean 4 proofs; Bloom reversal** — `siliconangle.com/.../openais-astra-solves-10...` — **CHOSEN (counterweight)**. Fresh *evolution* of Aug 1-2's "what does 'solved' mean" thread (new: machine-checkable proofs + skeptic flip).
+- Excluded: Karpathy/Opus-5 "Pelican" (same event as Aug 2's Opus 5 coverage). Zefan_Cai — no in-window viral post found.
+
+*Money Moves* (recency ≤7d):
+- ★ **Moonshot AI ~$3.5B @ ~$35B on open-weight Kimi K3** — `theaiinsider.tech/...` / Bloomberg — **CHOSEN (lead)** — perfect convergence with the moat thesis.
+- ★ **AMD ~$14B/15yr/530MW Core Scientific compute deal** — `datacenterknowledge.com/...` — **CHOSEN (pivot: moat migrates to power/silicon)**
+- Simile $200M synthetic-users @ $2B — held (off-throughline).
+- Rejected as stale: Anthropic–MSFT–Nvidia (Nov 2025), Fireworks/Baseten/Nebius/Flourish (all outside 7-day window).
+
+*Podcast Deep Cut* (recency ≤14d):
+- ★ **Latent Space — Akshay Nathan (OpenAI), "Codex from 0 to 10M Users" (Jul 28)** — `latent.space/p/chatgpt-work` — **CHOSEN**. Verified verbatim quotes; ties into the moat/taste throughline.
+- Alt held: Latent Space — Xaira "Causal models need causal data" (biomed-fit, but no verified verbatim quotes).
+- WhynotTV — confirmed stale (last activity ~May 2026).
+
+**Verification:** All chosen source URLs and key figures/quotes re-fetched and confirmed (Latent Space quotes, HN Qwen thread, Astra/Lean/Bloom, Moonshot figures). X.com tweet URLs were not directly openable, so no verbatim tweet quotes are presented as such — HN comments are attributed as anonymous commenters; Bloom's "big news" is framed as per-reporting.
+=== 2026-08-03T02:39:44-07:00 done  jinglin-ai-pulse (exit 0) ===
