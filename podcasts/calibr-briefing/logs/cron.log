@@ -2797,3 +2797,24 @@ Both episodes for **calibr-briefing** are written and staged for the batch pipel
 
 **Source note:** No arXiv/bioRxiv needed (news show). Fierce/Endpoints/STAT not directly fetchable (WebFetch blocks) — used WebSearch + BioPharma Dive/BioSpace, consistent with prior runs. Also noted: `memory/calibr-pipeline.md` referenced in PROMPT.md does not exist at that path (nor in workspace) — a standing gap, didn't block today's selection.
 === 2026-08-02T02:28:16-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-03T02:20:09-07:00 start calibr-briefing ===
+Both stubs are well-formed. Everything for SKIP_TTS mode is complete: two scripts, two RSS-item stubs, two commit-msg stubs. No TTS/publish/feed-edit/commit (the orchestrator handles those after batch TTS).
+
+## Run summary — calibr-briefing, Monday 2026-08-03
+
+**Episodes written (SKIP_TTS mode — scripts + `.rss-item.xml` + `.commit-msg` stubs each):**
+- `2026-08-03-pharma-headlines` — 5-item roundup
+- `2026-08-03-alnylam-ttr-guidance-cut-spotlight` — deep dive
+
+**Spotlight pick:** Alnylam's Q2 — a record quarter (Amvuttra tops $1B) that still triggered a ~28% / ~$10.8B selloff on a $200M TTR guidance cut. Chosen for its analytical spine: the "normalizing second-line demand" cut is the commercial shadow of a clinical fact — Ionis/AZ's rival silencer eplontersen missed CARDIO-TTRansform when added on top of a stabilizer, reframing the whole silencers-vs-stabilizers war. Fresh, uncovered, market-mover, and RNAi (a modality Travis tracks).
+
+**Candidate funnel:**
+- *General web / press (BioPharma Dive homepage ✓, BioSpace homepage ✓, WebSearch across Fierce/Endpoints/STAT — the latter three block direct fetch, surveyed via search):*
+  - **Alnylam** TTR guidance cut / Amvuttra >$1B / ~$10.8B blowback (Jul 30 earnings) — **CHOSEN (spotlight + headline #1)**. Verified: BioSpace, investing.com, StockTitan, BigGo.
+  - **Replimune RP1** PDUFA (Aug 2, Sat) — decision still unannounced as of recording — **headline #2** (continuity; not spotlight — already spotlighted 07-27/07-29/07-31, and no confirmed outcome; full-text gate would bar a summary of an unresolved decision).
+  - **Moderna** norovirus Ph3 interim miss + mFLUSIVA unanimous adcomm (Jul 31) — **headline #3**.
+  - **uniQure** welcomes possible Huntington's gene-therapy adcomm (Jul 31) — **headline #4**.
+  - **Capricor** CEO won't rule out suing FDA post 9-3 deramiocel vote (Jul 31) — **headline #5**.
+- *Discarded / not featured:* Novo ZEUS anti–IL-6 CV failure (already the Aug-1 spotlight); GSK/Relation AI pact, Apnimed IPO, Sanofi/amlitelimab (covered Aug-1); J&J/Sail, Lilly/Resilience, BMS Q2 (covered Aug-2); Vertex/Crinetics $10B (dated ~Jul 6, out of window); Karyopharm Ph3 miss, Scribe IPO (thinner); AI-drug-discovery focus area — no in-window fresh hook (Insilico/Takeda Jul 1, rentosertib Jul 7, Anthropic/Coefficient Jun 30 all out of window).
+- *Source note:* Replimune IR page timed out (WebFetch 60s) and SEC EDGAR 403'd the fetcher UA; RP1 outcome corroborated only up to the Jul 30 adcomm across multiple outlets — treated as pending, not fabricated.
+=== 2026-08-03T02:33:40-07:00 done  calibr-briefing (exit 0) ===
