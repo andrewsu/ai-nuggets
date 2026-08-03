@@ -3054,3 +3054,32 @@ All three files are in place and validated. Since `SKIP_TTS=1` (batch mode), I'v
 
 No source outages. Episode ready for batch TTS + orchestrator publish.
 === 2026-08-02T02:07:04-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-03T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written and staged for the batch pipeline. Final run summary follows.
+
+---
+
+## biomedical-agentic-ai — 2026-08-03
+
+**Selected:** *Detailed curation of biological samples and experimental designs for genomics using LLM-supported agentic workflows* (bioRxiv, posted 2026-07-30, Pavlidis lab / UBC — the Gemma resource). Full text read in full via r.jina.ai on the PDF (84 KB / 28 pages; the `.full` HTML and `fetch_preprint.py` both returned abstract-only).
+
+Why it won: bullseye for this audience — agentic AI applied to biomedical data curation, ontology grounding, data integration, and an *open* production resource (GEO/Gemma) with released code + a 500-study benchmark. A real deployment with honest, hype-cutting engineering lessons (mechanical-first, provenance-everywhere; multi-agent adjudication and self-revision added little; the LLM's own confidence was anti-predictive of its errors), not another leaderboard.
+
+Deliverables (SKIP_TTS mode — no TTS/R2/feed/commit; orchestrator handles those):
+- `scripts/2026-08-03-gemma-curation-agent-ontology-metadata.md` (834-word body, under the 1150 cap)
+- `.rss-item.xml` (validates with itunes ns; `__LENGTH__`/`__DURATION__` placeholders) + `.commit-msg`
+- Paper URL confirmed live via bioRxiv details API (10.64898/ prefix, v1) — passes the pre-commit URL hook.
+
+### Candidate funnel
+
+- **bioRxiv** — 306 in window (2026-07-31→08-03), full collection pulled; ~26 survived relevance filter. Substantive shortlist:
+  - ✅ **Gemma LLM-supported agentic curation** — 10.64898/2026.07.30.741874 — *chosen*
+  - Operationalising LLM-assisted literature screening for systematic reviews — 10.64898/2026.07.29.741127 (LLM-assisted, not agentic; ecology corpus)
+  - GONNECT: critical eval of biologically-informed neural nets (GO in autoencoders) — 10.1101/2025.11.06.686983 (v2 of older work; not agentic)
+  - Detailed-curation neighbors (deep-learning bio: co-folding enzyme specificity, protein LMs) — on-topic-adjacent, not agentic
+- **arXiv** — shared daily cache (14.5k lines) read; strong biomedical-agentic hits:
+  - SeekBrain — autonomous multi-agent for neuroscience discovery (2607.29347) — runner-up; strong but neuroscience-analysis-specific, less KG/ontology/data-integration
+  - Scaling Scientific Discovery Environments for Turn-Level Agentic RL / SciDisco (2607.28990) — methods-heavy RL
+  - MOT-SR — tool-augmented symbolic regression (2607.29561); Beyond Component Testing — validating agentic AI systems survey (2607.29405)
+- **ChemRxiv / PubMed / news / funder pages** — PubMed esearch returned 300 IDs in window; nothing in the shortlist beat the Gemma pick for this audience. No source outages this run.
+=== 2026-08-03T02:08:45-07:00 done  biomedical-agentic-ai (exit 0) ===
