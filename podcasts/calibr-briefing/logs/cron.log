@@ -2818,3 +2818,36 @@ Both stubs are well-formed. Everything for SKIP_TTS mode is complete: two script
 - *Discarded / not featured:* Novo ZEUS anti–IL-6 CV failure (already the Aug-1 spotlight); GSK/Relation AI pact, Apnimed IPO, Sanofi/amlitelimab (covered Aug-1); J&J/Sail, Lilly/Resilience, BMS Q2 (covered Aug-2); Vertex/Crinetics $10B (dated ~Jul 6, out of window); Karyopharm Ph3 miss, Scribe IPO (thinner); AI-drug-discovery focus area — no in-window fresh hook (Insilico/Takeda Jul 1, rentosertib Jul 7, Anthropic/Coefficient Jun 30 all out of window).
 - *Source note:* Replimune IR page timed out (WebFetch 60s) and SEC EDGAR 403'd the fetcher UA; RP1 outcome corroborated only up to the Jul 30 adcomm across multiple outlets — treated as pending, not fabricated.
 === 2026-08-03T02:33:40-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-04T02:20:11-07:00 start calibr-briefing ===
+Both episodes are written and staged as stubs. In `SKIP_TTS=1` mode I stop here — the batch orchestrator (`publish_pending.py`) generates audio, uploads to R2, inserts the feed items, and commits. All files are in place and validated:
+
+- `2026-08-04-pharma-headlines.txt` + `.rss-item.xml` + `.commit-msg`
+- `2026-08-04-astrazeneca-bristol-myers-megamerger-spotlight.txt` + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs are well-formed XML with escaped entities; enclosure/guid/link/pubDate finalized, `__LENGTH__`/`__DURATION__` left as placeholders.
+
+---
+
+## Run summary — calibr-briefing, 2026-08-04 (Tue)
+
+Two episodes written (SKIP_TTS mode; audio/publish/commit deferred to orchestrator).
+
+**Headlines** (5 items): AstraZeneca–Bristol Myers Squibb ~$400B merger talks [LEAD] + Supernus–Indivior all-stock CNS merger of equals + BioNTech names Sobi's Guido Oelkers CEO (succeeds Ugur Sahin) + Pfizer Q2 earnings this morning + Replimune RP1 melanoma PDUFA still undecided (Aug 2 date passed).
+
+**Spotlight** [CHOSEN]: The reported AstraZeneca–Bristol Myers Squibb ~$400B megamerger talks — the US-revenue/tariff-and-MFN-pricing rationale, BMS as a cheap patent-cliff target, the IO antitrust/divestiture risk, and the read-through for BMS partners (incl. Replimune's Opdivo-based RP1).
+
+### Candidate funnel
+- **General web / news feeds** (WebSearch + BioPharma Dive homepage): ~7 distinct fresh items scanned; 5 survived relevance + recency (Aug 1–4) + not-already-covered filter.
+- **AI-in-drug-discovery scan** (Xaira / Iambic / Revolution Medicines): scanned, 0 fresh — the surfaced Iambic–RevMed collaboration is older, not in-window. No AI item today.
+
+Shortlist (post-filter):
+- AstraZeneca–BMS ~$400B merger talks (FT report Aug 2; AZ −7%, BMS +6% Aug 3) — https://www.pharmexec.com/view/astrazeneca-bristol-myers-squibb-held-merger-talks-report **[CHOSEN — headlines lead + spotlight]**
+- Supernus–Indivior all-stock CNS merger of equals (Aug 3) — https://endpoints.news/supernus-indivior-to-merge-and-form-cns-focused-drugmaker/ **[headlines]**
+- BioNTech names Guido Oelkers CEO (Aug 3) — https://endpoints.news/biontech-names-sobis-guido-oelkers-as-incoming-ceo/ **[headlines]**
+- Pfizer Q2 2026 earnings, reports Aug 4 pre-open — https://www.tikr.com/blog/pfizer-reports-q2-2026-earnings-august-4-a-fresh-approval-helps-but-covid-decides-the-guidance **[headlines]**
+- Replimune RP1 PDUFA (Aug 2) still undecided as of Aug 4 — https://www.biopharmadive.com/news/replimune-rp1-fda-vote-advisory-committee-melanoma-drug/826619/ **[headlines]**
+
+Dropped as already-covered/stale: Alnylam TTR guidance cut (spotlight 08-03), J&J–Sail in-vivo CAR-T (08-02), Novo ziltivekimab ZEUS (08-01), argenx–Forte (07-28), Moderna/uniQure/Capricor (08-03). Pluvicto mHSPC approval and Celcuity/gedatolisib NCCN listing surfaced but freshness unconfirmed — deferred in favor of confirmed Aug 1–4 items.
+
+No source outages this run.
+=== 2026-08-04T02:27:52-07:00 done  calibr-briefing (exit 0) ===
