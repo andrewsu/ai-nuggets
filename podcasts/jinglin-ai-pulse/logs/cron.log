@@ -1389,3 +1389,39 @@ Here is the run summary for the log.
 
 **Verification:** All chosen source URLs and key figures/quotes re-fetched and confirmed (Latent Space quotes, HN Qwen thread, Astra/Lean/Bloom, Moonshot figures). X.com tweet URLs were not directly openable, so no verbatim tweet quotes are presented as such — HN comments are attributed as anonymous commenters; Bloom's "big news" is framed as per-reporting.
 === 2026-08-03T02:39:44-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-04T02:30:11-07:00 start jinglin-ai-pulse ===
+Episode is written and staged for the batch pipeline. In `SKIP_TTS=1` mode I've stopped before TTS/publish/feed/commit (the orchestrator handles those from the stubs). Here's the run record.
+
+---
+
+**Ollie's AI Pulse — 2026-08-04 — published (script + stubs written; SKIP_TTS batch mode)**
+
+Episode: `2026-08-04-llms-reward-expertise` — 1,888 spoken words (~11 min). Files written: `.md` script, `.rss-item.xml` (well-formed, no unescaped ampersands, `__LENGTH__`/`__DURATION__` placeholders), `.commit-msg`. No gen_tts/publish/feed/commit per SKIP_TTS.
+
+**Theme (meta-narrative):** The community converged on one question — does AI level the playing field or reward existing expertise? Answer from four directions: expertise wins; value is fleeing raw intelligence toward verification and judgment (in models and humans).
+
+**Candidate funnel:**
+
+*Twitter/HN discourse (last 48h):*
+- ✅ **"LLMs reward expertise"** — Sean Goedecke, #2 on HN (930 pts) — CHOSEN (Pulse lead). Tao "talking-to-mathematicians mode"; human is the bottleneck.
+- ✅ **NEJM AI automation-bias RCT** (physicians 84.9%→73.3% on confident-wrong advice) — CHOSEN (Pulse, the "expertise trap"; strong fit for Ollie's field).
+- ✅ **JFrog "SQLite Critical CVEs or LLM Slop?"** — #5 on HN (711 pts) — CHOSEN (Pulse, the "expertise tax"; 54/55 CVEs fabricated).
+- ~ "Prevent cognitive debt by retyping LLM code" (483 pts) — folded in as a one-line supporting beat.
+- ✗ Qwen3.8-Max (#1, 1,075 pts) — already covered 08-03.
+- ✗ "Ten advances in mathematics" (535 pts, 821 comments) — this is OpenAI Astra, covered 08-03.
+- ✗ Apple v. OpenAI trade-secret injunction (Aug 4) — drama, no technical substance.
+- ✗ "Pacing the Frontier" letter / HuggingFace machine-speed attack — late-July, already covered 07-30.
+
+*Money/business (last 7d):*
+- ✅ **Valar Atomics $1B at $6B** (Sequoia/Shaun Maguire), Aug 3 — CHOSEN. Live Nvidia Blackwell reactor demo; 30 MW waterless Nvidia AI factory.
+- ✅ **Abbott freezes Texas data-center grid connections**, Aug 3 (474 GW queue, 5× record peak, ~90% data centers) — CHOSEN (grid-side counterpoint).
+- ✗ OLIX $312M Series B (photonic inference chips) — good but redundant given Valar carries the "physical layer" beat.
+- ✗ MiniMax H3 geo-restricted open weights — interesting, held for a future open-weights-geopolitics day.
+
+*Podcast (last 14d):*
+- ✅ **Latent Space — "Inside the Model Factory," Eiso Kant (Poolside)** — CHOSEN (Deep Cut). "Factory is the moat" + Peng Ming's verbatim "verification over raw intelligence" — closes the day's loop.
+- ✗ Dwarkesh–Dario (Feb 2026) — outside 14-day window.
+- ✗ Latent Space Akshay Nathan — was yesterday's Deep Cut. (Note: Latent Space used two days running; vary source tomorrow if possible.)
+
+**Sources failing:** HN item API returned one HTTP 429 (`item?id=49158000`); recovered story detail via WebSearch + the seangoedecke primary. No source outage forced a gap.
+=== 2026-08-04T02:40:10-07:00 done  jinglin-ai-pulse (exit 0) ===
