@@ -1295,3 +1295,28 @@ Sourcing Radar is weekly/Sundays, so today is Portfolio Watch only. `SKIP_TTS=1`
 
 No source failures. All URLs verified. No commit/push performed (orchestrator handles it after batch TTS).
 === 2026-08-03T02:16:58-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-04T02:10:10-07:00 start blackbird-brief ===
+All three artifacts are in place and the memory is updated. In `SKIP_TTS=1` mode I stop before TTS/publish/feed/commit — the orchestrator handles those. Final audit summary follows.
+
+---
+
+**Blackbird Brief — 2026-08-04 (Tuesday) — Portfolio Watch only**
+
+Wrote (SKIP_TTS mode — no TTS/publish/feed/commit; stubs left for `publish_pending.py`):
+- `scripts/2026-08-04-portfolio-watch.md`
+- `scripts/2026-08-04-portfolio-watch.rss-item.xml` (placeholders `__LENGTH__`/`__DURATION__`; XML validated)
+- `scripts/2026-08-04-portfolio-watch.commit-msg`
+- Updated `memory/blackbird-portfolio.md` (new 2026-08-04 entry; demoted prior top entry)
+
+**Candidate funnel**
+
+Stream A (portfolio & competitive news, window ~08-01→08-04) — swept via research agent across Fierce / BioPharma Dive / Endpoints / STAT / BioBuzz + per-program target/modality/company queries + general biotech scan:
+
+- **AstraZeneca–Bristol Myers Squibb ~$400B merger talks** (FT, broke 08-02; CNBC/Bloomberg/Endpoints/STAT) — **CHOSEN as lead.** Genuinely fresh, in-window; lands on portfolio buyer landscape (BMS = Cobenfy owner + short-list GPR52-NewCo buyer; oncology-antitrust overlap = aSKY/KRAS frame). Framed candidly as rumor/landscape-signal, not catalyst. Verified via r.jina.ai (CNBC body, dated 2026-08-02).
+- CAMP4 second private placement (~$50.1M) — expected to close on/about 08-03; **EDGAR (CIK 1736730) shows no confirming 8-K after 07-27 as of this AM.** Yesterday's lead → one-line watch note, not re-led.
+- RevMed Q2 call Wed Aug 5 after close — calendar event (aSKY mutant-RAS input), not fresh news; standing board.
+- Nxera GPR52 rival / TL1A (tulisokibart, duvakitug) / Sarepta-Elevidys / Regeneron OTOF / Ultragenyx DTX401 / Islex-ZnT8 / 1104health — **no in-window news**; all prominent hits recycled Dec-2025→June-2026. Standing-board one-liners only.
+- Rejected OOW/off-thesis: BioNTech CEO change (08-03, not portfolio-relevant); DTX401 still pre-PDUFA (Aug 23).
+
+Ninth straight quiet direct-catalyst day; led on the one genuinely fresh, thesis-relevant macro item rather than padding. No commit (orchestrator pushes after batch TTS).
+=== 2026-08-04T02:19:47-07:00 done  blackbird-brief (exit 0) ===
