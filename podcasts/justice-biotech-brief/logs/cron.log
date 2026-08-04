@@ -1840,3 +1840,29 @@ Episode is complete. Since `SKIP_TTS=1`, I've written the script plus the two st
 
 No source hard-failed this run.
 === 2026-08-03T02:53:08-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-04T02:40:11-07:00 start justice-biotech-brief ===
+Everything is in place. Per SKIP_TTS mode I've written the script plus the two transient stubs (`.rss-item.xml`, `.commit-msg`) and skipped TTS/publish/feed/commit — the orchestrator handles those after batch TTS.
+
+---
+
+**Justice's Biotech Brief — 2026-08-04 run complete**
+
+Episode selected: **AstraZeneca–Bristol Myers — a ~$400B megamerger rumor that would put two of the biggest checkpoint and ADC franchises under one roof**
+Files written: `2026-08-04-astrazeneca-bristol-myers-400b-pharma-megamerger-io-adc.{md,rss-item.xml,commit-msg}` (SKIP_TTS=1 — no audio/publish/commit; orchestrator will finalize).
+
+**Candidate funnel**
+
+*bioRxiv / medRxiv (recency window Aug 3–4, 2026):* pulled full collections — biorxiv 193 (Aug 3) + 1 (Aug 4); medrxiv 81 (Aug 3) + 0 (Aug 4). Keyword filter (VEGF, PD-(L)1, TCE, bispecific, trispecific, CAR-T, ADC, JAK, checkpoint, CD3, 4-1BB, CTLA-4) over title+abstract. Substantive survivors after discarding spurious matches:
+- MLL4/KMT2D mutations increase immune activity / predict checkpoint efficacy in CRC (10.64898/2026.07.31.742076) — tangential to Justice's core targets; not a therapeutic-development story.
+- Next-gen mpox vaccine w/ immunomodulatory peptide (10.64898/2026.07.31.742137) — "PD-1"/"checkpoint" keyword hits, off-beat.
+- (All others were spurious: "vegf" in a glioblastoma spatial-transcriptomics paper, "jak" inside unrelated words, "adc" substring, etc.) → **no strong on-brief preprint in window.**
+
+*News / press (Fierce, Endpoints, STAT, BioPharma Dive; last 1–2 days):* Fierce homepage 403 (WebFetch) and jina-blocked (DDoS-suspect); Endpoints homepage jina returned cookie boilerplate only — worked around via BioPharma Dive (WebFetch OK) + targeted WebSearch. Shortlist:
+- **AstraZeneca–Bristol Myers ~$400B merger talks (FT Aug 2, confirmed Reuters; coverage Aug 3)** — https://www.biopharmadive.com/news/astrazeneca-bristol-myers-acquisition-rumors-deal-megamerger/826843/ — **CHOSEN.** Only dominant, genuinely fresh (Aug 2–3) story; squarely in Justice's "Biotech & Pharma Headlines / Therapeutic Development" interest and rich in IO/ADC/cell-therapy landscape implications. Read in full across BioPharma Dive + PharmExec (CNBC 403'd).
+- AbCellera–Vertex multispecific TCE collaboration — **out of window** (Jul 29); strong fit but stale.
+- Ivonescimab HARMONi-6, BMS iza-bren TNBC, Pfizer sigvotatug vedotin, various trispecific-TCE items — all **ASCO/June or earlier**, out of window.
+
+*Policy/funder (ARPA-H/NIH/NSF):* no in-window items surfaced in searches; not a gap that changed selection.
+
+Note on cross-show overlap: calibr-briefing also led with the AZ/BMS rumor today; PIPELINE only bars repeating an item **within the same show** on the same day, so it remains the correct single best pick for this brief, written to Justice's IO/ADC/cell-therapy angle rather than the market-headlines angle.
+=== 2026-08-04T02:47:16-07:00 done  justice-biotech-brief (exit 0) ===
