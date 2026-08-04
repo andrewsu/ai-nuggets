@@ -3016,3 +3016,30 @@ Considered, not picked: serotonin-receptor amoeboid melanoma migration (`741069`
 
 No source outages this run. All picks passed the dedup ledger.
 === 2026-08-03T03:03:28-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-04T02:50:11-07:00 start receptor-and-reason ===
+Everything is in place and consistent with recently-shipped episodes (~10–11 min actual). SKIP_TTS mode is active, so per PIPELINE.md I've stopped after writing the script + the two stub files and appending the dedup ledger — the orchestrator handles TTS, R2 publish, feed update, and commit.
+
+## Run summary — receptor-and-reason, 2026-08-04
+
+**Episode:** 10 items, ~1,870 spoken words (≈10–11 min at 1.2×, in line with recent episodes). Script + `.rss-item.xml` + `.commit-msg` stubs written; ledger appended (now 74 lines).
+
+**Candidate funnel (window 2026-07-28 → 2026-08-04, rolling 7 days):**
+
+- **bioRxiv (Tier 1/2/3):** 1,263 postings in window → 1,217 unique DOIs pulled (full pagination) → 722 keyword hits → 238 after tight CNS-pharm/computational scoring → ~12 read in full. Full text obtained via `r.jina.ai` on `.full` pages (the `fetch_preprint.py` jina channel fell through to abstract-only, as memory notes; direct curl recovered full bodies for all 10 picks).
+- **arXiv (Tier 2):** shared cache `/tmp/ai-nuggets-arxiv-cache.xml` (500 entries) → 53 bio+agentic hits in window. None were neuropsychopharm-specific — the biomedical ones were medical-LLM sycophancy/triage/EHR benchmarks (MedPRESS, medical sycophancy, CT-PrepAgent) and general agentic ML (KC-Agent, CRAFTS chemical-process). No arXiv item beat the bioRxiv Tier-1 field; none selected. No 429s (cache used).
+- **Journals / Psychiatric Times / society pages:** not separately queried this run — the bioRxiv corpus alone yielded well above the 8–12 floor with strong Tier-1 material, so Tier 4 was not activated.
+
+**Shortlist (✓ = selected, all 10 chosen):**
+- ✓ KCNJ6 G154C / GIRK2 gain-of-function channelopathy + FDA-drug repurposing (nefazodone, eletriptan) — **LEAD** — doi:10.64898/2026.07.28.741201
+- ✓ Dopamine dips / estradiol → punishment-resistant reward-seeking — doi:10.64898/2026.08.01.742224
+- ✓ Adolescent stress → latent CeA→SNL→tail-of-striatum dopamine circuit / punishment resistance — doi:10.64898/2026.07.29.741478 (paired with above)
+- ✓ Striatal acetylcholine as latent-state-creation signal in reversal learning — doi:10.64898/2026.07.29.741321
+- ✓ Neurotensin lateral-septum brake on exploration under threat — doi:10.64898/2026.07.29.741073
+- ✓ ADGRD1/GPR133 orphan adhesion GPCR — hippocampal vulnerability phenotype — doi:10.64898/2026.07.28.741204
+- ✓ Rett astrocytes fail to lipidate ApoE (SREBP2→ABCA1 axis) — doi:10.64898/2026.07.29.741426
+- ✓ DODock/DOScore physics+ML docking, prospective VS wins — doi:10.64898/2026.08.03.742480
+- ✓ Interpretable Bayesian-network AT1R allostery map → fragment NAM Q2 — doi:10.64898/2026.08.01.742107
+- ✓ Zebra-finch vocal biomarkers separating aging from α-synuclein — **CLOSE** — doi:10.64898/2026.07.26.740830
+
+Notable near-misses left on the table: schizophrenia-heritability-in-young-brain-regulatory-elements (08-01), striatal value-guided decision dissociation (07-31), Fragile-X ultrasonic-vocalization trajectory (08-01), PG-MLD molecular representation distillation (Tier 3, dropped to avoid a third docking/ML item), PHI-Reason structured-evidence LLM inference (Tier 2, too far from CNS). All within the window and revisitable.
+=== 2026-08-04T03:01:14-07:00 done  receptor-and-reason (exit 0) ===
