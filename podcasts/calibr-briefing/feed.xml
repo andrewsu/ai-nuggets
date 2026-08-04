@@ -11,7 +11,29 @@
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/calibr-briefing/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                                                    <item>
+                <title>Pharma Headlines — Tuesday, August 4, 2026: AstraZeneca and Bristol Myers Squibb reportedly held talks on a ~$400B megamerger (AZ -7%, BMS +6% as the market reads AZ as overpaying) + Supernus and Indivior agree to an all-stock CNS merger of equals (~$2.2B revenue, keeps Supernus name) + BioNTech names Sobi's Guido Oelkers to succeed co-founder Ugur Sahin as CEO + Pfizer reports Q2 this morning (~$0.68 adj. EPS, ~$14.4B revenue; COVID and a new bladder-cancer approval in focus) + Replimune's oncolytic RP1 melanoma PDUFA (Aug 2) still undecided two days on</title>
+                <description>Your biotech and pharma briefing for Tuesday, August 4, 2026 — one rumored deal towers over everything. Five items.
+
+        1. LEAD (and today's spotlight): The Financial Times reported over the weekend that AstraZeneca and Bristol Myers Squibb held merger talks over recent months — a combination worth ~$400B (AZ ~$260B, BMS ~$130B). Neither confirmed. The tell was the tape: AZ fell ~7% Monday (one of the FTSE's worst) while BMS rose ~6% in U.S. premarket — the pattern of a buyer seen as overpaying. Analysts were perplexed (Jefferies: "if there is one company that doesn't need financial engineering, it's AZ"; Citi: surprising given a best-in-class pipeline).
+
+        2. Supernus and Indivior announced an all-stock merger of equals to form a CNS-focused company keeping the Supernus name — Supernus's ADHD/Parkinson's franchises plus Indivior's Sublocade/opioid-use-disorder business. Supernus holders get ~43.5%, Indivior investors get a $1B special cash dividend; the combined entity targets ~$2.2B revenue and ~$125M in annual synergies. CEO Jack Khattar leads it; close expected Q4 2026.
+
+        3. BioNTech named Guido Oelkers as incoming CEO, succeeding co-founder Ugur Sahin. Oelkers comes from Swedish rare-disease firm Sobi, where he more than quadrupled revenue over nine years — a commercial operator taking over a science-led mRNA company as it pivots from COVID into oncology. He starts by February 2027.
+
+        4. Pfizer reports Q2 this morning: consensus ~$0.68 adjusted EPS (down ~13% YoY) on ~$14.4B revenue. Watch the COVID franchise (full-year COVID expectation already cut to $5B) and whether last month's bladder-cancer approval helps the oncology story; it's also the departing CFO's final call.
+
+        5. Update on a tracked catalyst: Replimune's RP1 (oncolytic HSV + Bristol Myers' Opdivo) for anti-PD-1-refractory melanoma had its FDA action date this past Saturday (Aug 2). Two days on, still no decision despite the 10-3 adcomm win; for a drug rejected twice before, every extra day is worth noting.</description>
+                <link>https://www.cnbc.com/2026/08/03/astrazeneca-bristol-myers-squibb-merger-talks.html</link>
+                <guid isPermaLink="false">2026-08-04-pharma-headlines</guid>
+                <pubDate>Tue, 04 Aug 2026 13:00:00 +0000</pubDate>
+                <enclosure url="https://podcast.su-lab.workers.dev/p/calibr-briefing/u/travis/2026-08-04-pharma-headlines.mp3" length="1536878" type="audio/mpeg"/>
+                <itunes:duration>192</itunes:duration>
+                <itunes:summary>Tuesday, August 4, 2026 briefing (5 items). LEAD/spotlight: the FT reported AstraZeneca and Bristol Myers Squibb held talks on a ~$400B megamerger (AZ ~$260B, BMS ~$130B; neither confirmed); AZ fell ~7% while BMS rose ~6%, the pattern of a buyer seen as overpaying, and analysts were perplexed given AZ's best-in-class pipeline. Plus: Supernus and Indivior agree to an all-stock CNS merger of equals (~$2.2B revenue, keeps Supernus name, ~$125M synergies, close Q4 2026); BioNTech names Sobi's Guido Oelkers to succeed co-founder Ugur Sahin as CEO; Pfizer reports Q2 this morning (~$0.68 adj. EPS, ~$14.4B revenue; COVID guidance and a new bladder-cancer approval in focus, departing CFO's last call); and Replimune's oncolytic RP1 melanoma PDUFA (Aug 2) is still undecided two days on. Links in show notes.</itunes:summary>
+                <itunes:explicit>false</itunes:explicit>
+            </item>
+
+    <item>
                 <title>Spotlight — The ~$400B AstraZeneca–Bristol Myers Squibb merger talks: why a company with a best-in-class pipeline would chase a megadeal, why it's really a bet on U.S. revenue and the tariff/MFN-pricing environment, where the oncology antitrust landmines are, and the read-through for BMS partners like Replimune</title>
                 <description>Today's spotlight is the biggest story on the tape: an FT report that AstraZeneca and Bristol Myers Squibb held merger talks over recent months — a combination worth close to $400B that would be the first truly transformative large-cap pharma deal in a decade.
 
