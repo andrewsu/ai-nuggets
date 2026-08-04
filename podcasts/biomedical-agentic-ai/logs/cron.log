@@ -3083,3 +3083,35 @@ Deliverables (SKIP_TTS mode — no TTS/R2/feed/commit; orchestrator handles thos
   - MOT-SR — tool-augmented symbolic regression (2607.29561); Beyond Component Testing — validating agentic AI systems survey (2607.29405)
 - **ChemRxiv / PubMed / news / funder pages** — PubMed esearch returned 300 IDs in window; nothing in the shortlist beat the Gemma pick for this audience. No source outages this run.
 === 2026-08-03T02:08:45-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-04T02:00:10-07:00 start biomedical-agentic-ai ===
+Everything validates. In `SKIP_TTS=1` mode, I've written the script and the two stub files (`.rss-item.xml`, `.commit-msg`); the orchestrator handles TTS, R2 publish, feed insertion, and commit. Done for today.
+
+---
+
+## Episode shipped: biomedical-agentic-ai — 2026-08-04
+
+**Pick:** CORA — an agentic clinical retrieval assistant shows a citation persuades physicians even when the model is wrong
+`podcasts/biomedical-agentic-ai/scripts/2026-08-04-cora-citation-reliance.md` (718 spoken words) + `.rss-item.xml` + `.commit-msg` stubs. No commit (SKIP_TTS batch mode).
+Paper: "Large language models improve physician accuracy but lead to false reliance" (arXiv 2608.00817, posted 2026-08-01, DKFZ Heidelberg) — full text read via mutool PDF extract.
+
+### Candidate funnel
+
+**bioRxiv** (window 08-01→08-04): 303 scanned, 28 keyword hits, ~4 substantive after discarding "chemical/antiviral agent" false positives.
+- Detailed curation of biological samples/experimental designs for genomics using LLM-supported agentic workflows (10.64898/2026.07.30.741874) — **perfect fit but ALREADY SHIPPED yesterday (2026-08-03 Gemma episode)**; also body still not rendered on `.full` today (jina 27KB, Abstract+Footnotes only) → deferred/duplicate.
+- STAR Suite: transcriptomics processing via AI-assisted development (10.64898/2026.03.09.710580) — AI-assisted dev tool, weakly agentic; passed.
+- Operationalising LLM-assisted literature screening for systematic reviews (10.64898/2026.07.29.741127) — ecology audience, off-target.
+- Enzyme-substrate specificity via co-folding foundation model (10.64898/2026.07.30.741672) — foundation model, not agentic; passed.
+
+**arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries; 44 biomed-agentic hits since 07-31). Shortlist (readable PDFs):
+- **Large language models improve physician accuracy but lead to false reliance (2608.00817)** — agentic RAG (CORA) + 46-physician study; grounding-miscalibration finding. ✅ **CHOSEN**
+- Gene Ontology-Guided Hierarchical Spatial Gene Expression Prediction / MSGR (2608.00405) — ontology-as-prior, on-theme but not agentic; runner-up.
+- When Retrieval Helps and Distracts: Biomedical Claim Verification (2608.01409) — eval paper, less punchy.
+- Abduction Without a Body? Scientific Hypothesis Generation (2608.02505) — conceptual/position piece.
+- Beyond Gene Reconstruction: cell representations (2608.00985) — foundation-model method, not agentic.
+
+**PubMed** (edat 07-30→08-04): 207 matches, 40 metadata-scanned; near-all clinical LLM readability/decision-support notes (dental, ophthalmology, vascular patient-education), none agentic-research on-target.
+
+**ChemRxiv / news / funder pages:** no in-window agentic-biomedical item beating CORA; not the day's story.
+
+Why CORA over MSGR: the show heavily weights *agentic* AI, and CORA is the day's one item pairing a real agentic-RAG system with a controlled human study and a genuinely non-obvious, opinionated result (citations persuade independent of correctness → answer-citation faithfulness is the unshipped hard problem) — directly relevant to grounded/KG-backed agent builders.
+=== 2026-08-04T02:07:22-07:00 done  biomedical-agentic-ai (exit 0) ===
