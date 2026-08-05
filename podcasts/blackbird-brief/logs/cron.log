@@ -1320,3 +1320,27 @@ Stream A (portfolio & competitive news, window ~08-01→08-04) — swept via res
 
 Ninth straight quiet direct-catalyst day; led on the one genuinely fresh, thesis-relevant macro item rather than padding. No commit (orchestrator pushes after batch TTS).
 === 2026-08-04T02:19:47-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-05T02:10:09-07:00 start blackbird-brief ===
+Episode written and staged for the batch pipeline. Here's the run summary.
+
+---
+
+## The Blackbird Brief — Portfolio Watch, 2026-08-05 (Wednesday)
+
+**Episode:** `2026-08-05-portfolio-watch` (Portfolio Watch only — not Sunday, no Sourcing Radar). Written in SKIP_TTS mode: script + `.rss-item.xml` stub (with `__LENGTH__`/`__DURATION__` placeholders) + `.commit-msg`. TTS, R2 publish, feed update, and commit are left to the batch orchestrator per PIPELINE.md.
+
+**Lead:** CAMP4 Therapeutics' second private-placement tranche **closed (confirmed) Aug 4** — the resolution of yesterday's "watch-for-the-paperwork" item. Fresh analytical angle (not a re-recite of the prior 3-axis wedge): read the **structure** — ~$50.1M gross, bulk in pre-funded warrants at $1.53-ish, the pre-committed Sept-2025 insider syndicate, mechanically triggered by the 07-27 SYNGAP1 clearance = an insider milestone tranche at a sub-$2 price, **not** a market re-rating. Tempered validation, but money is off the RNA-translation-activator pace-setter's constraint list → wedge work now on a live clock.
+**Also aired:** RevMed Q2 tonight after close (aSKY mutant-RAS competitive-intel calendar event, not news); AZ–BMS merger rumor unchanged (no confirmation/denial since Aug 2–3, no re-litigation); standing board one-liners (GPR52/Nxera still unsold; 1104health OIG anti-kickback RFI **Aug 24 comment deadline**; Aletira/Ultragenyx Aug 23; GCPII/IBD TL1A crowding).
+
+### Candidate funnel
+Stream A sweep via research agent (WebSearch across Fierce/Endpoints/STAT/BioPharma Dive/GEN/BioBuzz/GlobeNewswire + per-program target/modality/company queries + general Aug 2–5 scan). **Tenth straight quiet direct-catalyst day** — no readout/deal/filing landed squarely on a Blackbird company.
+
+In-window shortlist (Aug 2–5):
+- **CAMP4 second closing ~$50.1M, Aug 4** — https://www.biospace.com/press-releases/camp4-therapeutics-announces-second-closing-of-100-million-private-placement — **CHOSEN (lead)**; only clean confirmed in-window event; verified via WebFetch.
+- AZ–BMS ~$400B merger rumor — no fresh Aug 4–5 development (FT Aug 2, reaction Aug 3); already led 08-04 → **one-line no-change, not re-litigated**.
+- RevMed Q2 earnings — Aug 5 after close, **release not public at run time** → aired as calendar event, not news.
+
+Nothing in-window for: GPR52/Nxera, TL1A/GCPII, Aletira/AAV-OTOF, 1104health (OIG RFI itself is 06-24, but Aug 24 deadline surfaced as a durable forward marker). Rejected OOW/off-thesis: Moderna mRNA-1010 PDUFA Aug 5 (off-thesis); recycled Nxera/TL1A/Sarepta/OTOF/Massive-Bio hits (Dec-2025→July-2026).
+
+**Memory updated:** top log entry (08-05), CAMP4 §2 entry (confirmed close + structure read), 1104health §2 entry (OIG RFI Aug 24 deadline). Script verified free of URLs/DOIs/heading artifacts; RSS stub validated as well-formed XML.
+=== 2026-08-05T02:18:52-07:00 done  blackbird-brief (exit 0) ===
