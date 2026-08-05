@@ -1,0 +1,4 @@
+Script body: 5154 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2978 chars) -> 135.8s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2175 chars) -> 98.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-08-05-pumitamig-bnt327-pdl1-vegf-bispecific-rosetta-seven-pivotal-trials.mp3 [mistral] 2,087,750 bytes, 260.9s

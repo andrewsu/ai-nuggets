@@ -1866,3 +1866,31 @@ Files written: `2026-08-04-astrazeneca-bristol-myers-400b-pharma-megamerger-io-a
 
 Note on cross-show overlap: calibr-briefing also led with the AZ/BMS rumor today; PIPELINE only bars repeating an item **within the same show** on the same day, so it remains the correct single best pick for this brief, written to Justice's IO/ADC/cell-therapy angle rather than the market-headlines angle.
 === 2026-08-04T02:47:16-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-05T02:40:09-07:00 start justice-biotech-brief ===
+All three files are written. Episode complete (SKIP_TTS mode — TTS, publish, feed, and commit are handled by the orchestrator).
+
+## Episode shipped: justice-biotech-brief 2026-08-05
+
+**Pick:** Pumitamig (BNT327/BMS986545) — BioNTech and Bristol Myers push their PD-L1×VEGF bispecific into a seven-trial pivotal program. Source: BioNTech Q2 2026 corporate update, Aug 4 2026 (fresh, in-window, full text read). Squarely on Justice's stated #1 interest (VEGF×PD-L1), with a genuine on-theme ADC angle (the B7-H3 novel/novel combination).
+
+Files written (no commit — orchestrator commits after batch TTS):
+- `2026-08-05-pumitamig-...seven-pivotal-trials.md` (script)
+- `.rss-item.xml` (validated well-formed) + `.commit-msg` stubs
+
+### Candidate funnel
+
+**bioRxiv** — pulled full 08-04 collection (336 entries; 08-05 not yet posted). 20 keyword hits; after discarding spurious matches (~15 were keyword artifacts, e.g. "cd3", "car t"→"cardiac", "jak"→JAK2 in unrelated MPN/COVID work), substantive on-theme shortlist:
+- Systematic De-Risking of TCR-Mimic Therapeutics (proteome-wide off-target + trivalent TCE design) — immunology, best fit — **DEFERRED: full text not yet rendered (abstract-only via jina+API); revisit when body renders**
+- Humanized Anti-PD-1 Antibodies via Conditional Kernel-Elastic Autoencoder — **DEFERRED: not yet rendered**
+- Ewing sarcoma tumor-CAF continuum / immunotherapeutic targets; gut metabolites revitalize CD8 in osteosarcoma — **DEFERRED: not rendered**
+- *Entire 08-04 batch was unrendered → no bioRxiv item eligible today (full-text gate).*
+
+**News / press (last 1–2 days)** — BioPharma Dive homepage (WebFetch OK), Fierce clinical-data (403, known block), multiple WebSearches, BioNTech/globenewswire IR:
+- **BioNTech Q2 2026 update (Aug 4)** — pumitamig PD-L1×VEGF + B7-H3/HER2 ADCs — **CHOSEN**
+- Iza-bren (BL-B01D1, EGFR×HER3 bispecific ADC) TNBC Phase III topline — **REJECTED: recency trap, actually Feb 26 2026**
+- Gotistobart (anti-CTLA-4) PRESERVE-003 NSCLC OS win + tolerability — **REJECTED: Nature Medicine paper dated Mar 27 2026 (per PubMed, DOI 10.1038/s41591-026-04323-8); topline Dec 2025**
+- AstraZeneca–BMS megamerger — **EXCLUDED: already shipped as yesterday's (08-04) episode**
+- Pfizer cost-cutting / GLP-1 drop, BMS outlook, Replimune RP1 FDA panel — off-theme or already-covered asset
+
+**Policy/funders** — ARPA-H news page checked; nothing in-window on cancer/immunotherapy (latest relevant items late July, off-theme).
+=== 2026-08-05T02:54:53-07:00 done  justice-biotech-brief (exit 0) ===
