@@ -11,7 +11,29 @@
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/calibr-briefing/feed.xml" rel="self" type="application/rss+xml"/>
 
-                                                                                                                                                                                                                                                                                                                                                                        <item>
+                                                                                                                                                                                                                                                                                                                                                                            <item>
+                <title>Pharma Headlines — Wednesday, August 5, 2026: Moderna's mRNA flu vaccine (mFLUSIVA) faces its FDA decision today, poised to be the first mRNA seasonal flu shot licensed in the U.S. + Pfizer beats Q2 and adds $2.5B in cost cuts while quietly dropping the Metsera oral GLP-1 and a GIPR antagonist + Vertex beats and raises guidance but faces a CF rival ~50x smaller (Sionna) + GSK's ~$2.5B restructuring braces for the dolutegravir HIV cliff + Apnimed's upsized $192M IPO signals the biotech IPO window reopening</title>
+                <description>Your biotech and pharma briefing for Wednesday, August 5, 2026 — earnings season does most of the driving, plus one landmark FDA decision due today. Five items.
+
+            1. LEAD (and today's spotlight): Today is the FDA's PDUFA decision date for Moderna's mRNA seasonal flu vaccine, mRNA-1010 (branded mFLUSIVA). If it clears, it is the first mRNA influenza vaccine ever licensed in the U.S. VRBPAC backed it 9-0 in June — twice, for ages 50-64 and 65+ — and FDA reviewers flagged no major deficiencies. The remarkable part isn't the science but that it's happening inside an administration that spent the year tearing up mRNA vaccine contracts.
+
+            2. Pfizer beat Q2 (strong Eliquis demand) and announced another $2.5B in cost cuts, on top of a program now targeting ~$9.7B in net savings by 2029. The telling move was a quiet pipeline cleanout: Pfizer dropped the oral GLP-1 obesity pill it just paid ~$10B to acquire with Metsera (PF'6796) and killed a Phase 2 GIPR antagonist after reviewing competing data.
+
+            3. Vertex also beat — CF sales topped $3.2B and it raised full-year guidance to ~$13.1B — but analysts keep circling the overhang from a rival ~50x smaller: Sionna Therapeutics (~$2.3B vs Vertex's ~$121B), whose protein stabilizer is designed to layer on top of Vertex's own Trikafta. Raymond James said the Sionna data "looms large."
+
+            4. Theme worth naming: big pharma is cutting hard to brace for patent cliffs. Pfizer's $2.5B sits alongside GSK's ~$2.5B (£1.9B) restructuring to fund late-stage trials ahead of the 2028-2030 loss of exclusivity on its HIV backbone dolutegravir (a &gt;$5B product). Same season saw Alnylam lose ~a third of its value (~$12B) on a modest TTR guidance cut — which we went deep on Monday. Little mercy for cliffs or normalizing demand right now.
+
+            5. Brighter signal for the financing environment: the biotech IPO window is cracking open. Apnimed priced an upsized offering at $16/share to raise $192M (ticker APMD) to fund the launch of AD109 — a once-daily pill that could be the first oral drug for obstructive sleep apnea, having cut nightly breathing-interruption events by ~47% in Phase 3, with a PDUFA date of Feb 2027.</description>
+                <link>https://www.biopharmadive.com/news/moderna-mflusiva-mrna-flu-vaccine-fda-committee-vote/823275/</link>
+                <guid isPermaLink="false">2026-08-05-pharma-headlines</guid>
+                <pubDate>Wed, 05 Aug 2026 13:00:00 +0000</pubDate>
+                <enclosure url="https://podcast.su-lab.workers.dev/p/calibr-briefing/u/travis/2026-08-05-pharma-headlines.mp3" length="1656416" type="audio/mpeg"/>
+                <itunes:duration>207</itunes:duration>
+                <itunes:summary>Wednesday, August 5, 2026 briefing (5 items). LEAD/spotlight: today is the FDA's PDUFA decision date for Moderna's mRNA flu vaccine mRNA-1010 (mFLUSIVA) — poised to be the first mRNA seasonal flu shot licensed in the U.S.; VRBPAC backed it 9-0 (both age groups) in June and reviewers flagged no major deficiencies, remarkable given an administration otherwise dismantling mRNA. Plus: Pfizer beat Q2 on Eliquis and added $2.5B in cost cuts (toward ~$9.7B by 2029) while quietly dropping the Metsera oral GLP-1 it just bought and a GIPR antagonist; Vertex beat and raised guidance (~$13.1B, CF sales &gt;$3.2B) but faces a rival ~50x smaller, Sionna, whose stabilizer layers on Trikafta ("looms large" — Raymond James); GSK's ~$2.5B (£1.9B) restructuring braces for the 2028-2030 dolutegravir HIV cliff, echoing Pfizer and the unforgiving tape that cut Alnylam ~$12B; and Apnimed's upsized $192M IPO (APMD) for oral sleep-apnea drug AD109 signals the biotech IPO window reopening. Links in show notes.</itunes:summary>
+                <itunes:explicit>false</itunes:explicit>
+            </item>
+
+    <item>
                 <title>Spotlight — Moderna's mRNA flu vaccine faces its FDA decision today: the first mRNA seasonal influenza shot in the U.S., a whiplash regulatory saga (Feb refusal-to-file → reversal → 9-0 adcomm), and the paradox of an approval landing inside an administration gutting mRNA — plus why approval won't equal access</title>
                 <description>Today's spotlight is a landmark that's also a paradox: the FDA is due to decide today on Moderna's mRNA seasonal flu vaccine, mRNA-1010 (mFLUSIVA). If approved, it's the first mRNA influenza vaccine ever licensed in the U.S. — landing inside an administration that has spent the year dismantling mRNA vaccine work.
 
