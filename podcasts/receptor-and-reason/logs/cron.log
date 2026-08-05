@@ -3043,3 +3043,35 @@ Everything is in place and consistent with recently-shipped episodes (~10–11 m
 
 Notable near-misses left on the table: schizophrenia-heritability-in-young-brain-regulatory-elements (08-01), striatal value-guided decision dissociation (07-31), Fragile-X ultrasonic-vocalization trajectory (08-01), PG-MLD molecular representation distillation (Tier 3, dropped to avoid a third docking/ML item), PHI-Reason structured-evidence LLM inference (Tier 2, too far from CNS). All within the window and revisitable.
 === 2026-08-04T03:01:14-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-05T02:50:09-07:00 start receptor-and-reason ===
+Everything for SKIP_TTS mode is complete: script, RSS-item stub, commit-msg stub written, and the ledger appended (75 lines). Per PIPELINE.md I stop before TTS/publish/feed/commit — the orchestrator handles those after batch TTS.
+
+Here is the run's audit record.
+
+---
+
+**Receptor & Reason — 2026-08-05 — shipped (SKIP_TTS mode; script + stubs written, ledger appended, no commit per batch pipeline)**
+
+**Recency window:** 2026-07-29 → 2026-08-05 (rolling 7 days).
+
+**Candidate funnel:**
+
+- **bioRxiv (Tier 1 + Tier 2):** full window pulled via details API — 1,299 records / 1,259 unique DOIs. Categories: 239 neuroscience, 17 pharmacology/toxicology, 18 animal behavior, 98 bioinformatics, 28 systems biology, 33 genomics. Filtered to ~120 CNS-pharm/comp-bio-relevant, unshipped, posted in window.
+- **arXiv (Tier 2):** shared daily cache `/tmp/ai-nuggets-arxiv-cache.xml` (500 entries) — 31 bio+agentic matches in window.
+- **Rendering gate (critical today):** the r.jina.ai 60 KB threshold cleanly separated rendered vs. not-yet-rendered. **Every 08-04-posted preprint was abstract-only (not rendered), so ineligible today per the full-text gate** — this knocked out today's strongest pure-pharma picks. Deferred (revisit once rendered): Setd1a schizophrenia rescue by LSD1/TAK-418 inhibitor (742543), SonoKet focused-ultrasound ketamine (741494), ophthalmate striatal signaling (742629), TRIM9/mGluR5 sex-specific AD (741783), dark-kinase druggability (741784), psychedelics ALTERD app (741354), primary-cilia striatal (741876), transcriptome-spiking human prefrontal (741879), clusterin AD (741791). Ineligible sources this run: none failed (both bioRxiv and arXiv cache healthy).
+
+**Substantive shortlist (rendered + full-text read):**
+- ✅ Traveling beta waves in parkinsonian STN — 740919 (LEAD)
+- ✅ Nav1.3 drives early CA3 hyperexcitability in 5xFAD — 741298
+- ✅ ABCA7 whole-brain proteome / insulin+neuroinflammation — 741021
+- ✅ Lifespan architecture of human EEG (n=1,763) — 741219
+- ✅ Mavchen-1 conformational-ensemble pose prediction — 740840
+- ✅ "How Bias Shapes the Leaderboard" scoring-function critique — 740774
+- ✅ Kinase-inhibitor protonation/tautomer on binding (MCCE) — 741060
+- ✅ Alphabet of allostery (transfer-entropy dictionary) — 741458
+- ✅ PHI-Reason LLM over structured biological evidence — 727770
+- ✅ Activation-guided neuron intervention → AD language phenotypes in LLM — arXiv 2608.03067
+- ○ Considered, not selected: genesetGPT (741117), general LM bio-evidence dup, Abca7 vs. other AD items (kept one), Manifold Agentic Reasoning (740848, too abstract), UT-018 ethanol redox (741198, abstract-only), TumorBoard multi-agent neuro-oncology (out of core lane).
+
+**All 10 selected are fresh (in-window), unshipped, and read in full.** Ledger now 75 lines. Back tomorrow — several held-over 08-04 pharmacology preprints should be rendered and eligible.
+=== 2026-08-05T03:05:31-07:00 done  receptor-and-reason (exit 0) ===
