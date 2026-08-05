@@ -2851,3 +2851,31 @@ Dropped as already-covered/stale: Alnylam TTR guidance cut (spotlight 08-03), J&
 
 No source outages this run.
 === 2026-08-04T02:27:52-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-05T02:20:09-07:00 start calibr-briefing ===
+Both stubs are well-formed. Everything is in place. Since `SKIP_TTS=1`, I've stopped after writing the scripts and stubs — no TTS, R2 publish, feed edit, or commit (the orchestrator handles those after batch TTS).
+
+## Run summary — calibr-briefing, 2026-08-05
+
+**Two episodes written** (scripts + `.rss-item.xml` + `.commit-msg` stubs, `SKIP_TTS=1` so no audio/publish/commit):
+
+- **Headlines** — `2026-08-05-pharma-headlines` (~4 min, 5 items)
+- **Spotlight** — `2026-08-05-moderna-mrna-flu-vaccine-spotlight` (~7 min): Moderna's mRNA seasonal flu vaccine mRNA-1010 (mFLUSIVA), whose FDA decision is due **today** — poised to be the first mRNA flu shot licensed in the U.S. Covers the science (~27% relative efficacy vs standard shot, NEJM), the whiplash saga (Feb refusal-to-file → reversal → Prasad/Makary exits → 9-0 adcomm), the paradox that HHS is simultaneously gutting mRNA at BARDA (22 projects, ~$500M, incl. Moderna's $766M bird-flu contract), and the key nuance for Travis: **approval ≠ access** — the binding constraint has moved downstream to the immunization advisory committee and payers.
+
+### Candidate funnel
+
+Sources scanned: BioPharma Dive homepage (best index; WebFetch works), plus targeted WebSearch across Fierce/Endpoints/STAT/CNBC/BioSpace (WebFetch of Endpoints/Pharmacy Times 403'd — routed around via search + BioPharma Dive per source-access memory).
+
+Shortlist (Aug 4–5 window):
+- **Moderna mRNA-1010 (mFLUSIVA) PDUFA today** — first mRNA seasonal flu vaccine; vaccine-politics angle → **CHOSEN (spotlight + headlines lead)**
+- **Pfizer Q2 beat + $2.5B more cost cuts + Metsera GLP-1/GIPR pipeline drops** → **CHOSEN (headline 2)**
+- **Vertex Q2 beat/raise + Sionna (~50x smaller) CF overhang** → **CHOSEN (headline 3)**
+- **GSK ~$2.5B/£1.9B restructuring vs dolutegravir HIV cliff** → **CHOSEN (headline 4, cost-cut theme)**
+- **Apnimed upsized $192M IPO (APMD), oral OSA drug AD109** → **CHOSEN (headline 5, IPO-window sentiment)**
+- Alnylam −30%/~$12B on TTR guidance cut — brief callback only (full spotlight already shipped Mon Aug 3)
+- AstraZeneca–BMS megamerger — skipped (spotlight yesterday, no fresh Aug 4–5 development)
+- J&J/Sail in-vivo CAR-T option — skipped (spotlight Aug 2)
+- Replimune RP1 melanoma decision — no fresh confirmation since Aug 4; dropped for today
+- Isomorphic/Xaira/Iambic AI-drug-discovery capital stack — no dated Aug 4–5 news hook; deferred
+
+No source-level outages. All facts verified against ≥1 fetchable source; both RSS stubs validated as well-formed XML.
+=== 2026-08-05T02:29:12-07:00 done  calibr-briefing (exit 0) ===

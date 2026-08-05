@@ -1,0 +1,4 @@
+Script body: 3878 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2972 chars) -> 144.3s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (904 chars) -> 51.6s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-08-05-pharma-headlines.mp3 [mistral] 1,656,416 bytes, 207.0s
