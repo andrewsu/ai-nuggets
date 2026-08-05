@@ -1,0 +1,6 @@
+Script body: 11174 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2973 chars) -> 177.1s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2900 chars) -> 146.9s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2970 chars) -> 133.7s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (2327 chars) -> 115.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-08-05-post-training-beats-scale-and-the-compute-squeeze.mp3 [mistral] 4,579,204 bytes, 572.4s

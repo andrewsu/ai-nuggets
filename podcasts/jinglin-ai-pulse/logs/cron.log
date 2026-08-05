@@ -1425,3 +1425,36 @@ Episode: `2026-08-04-llms-reward-expertise` — 1,888 spoken words (~11 min). Fi
 
 **Sources failing:** HN item API returned one HTTP 429 (`item?id=49158000`); recovered story detail via WebSearch + the seangoedecke primary. No source outage forced a gap.
 === 2026-08-04T02:40:10-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-05T02:30:09-07:00 start jinglin-ai-pulse ===
+Everything validates and I'm in `SKIP_TTS=1` batch mode, so I've written the script plus the `.rss-item.xml` and `.commit-msg` stubs and correctly skipped TTS, R2 publish, feed edit, and commit (the orchestrator handles those).
+
+## Episode shipped — Ollie's AI Pulse 2026-08-05
+
+**Basename:** `2026-08-05-post-training-beats-scale-and-the-compute-squeeze` (~1,875 spoken words, ≈11–12 min)
+
+**Meta-narrative:** the field rotating away from "make it bigger" toward post-training recipes, cost-per-task, and compute economics.
+- **Twitter Pulse:** DeepSeek's July-31 V4 Flash refresh (same 284B MoE, gains from re-post-training alone, ~7→54 on a coding-agent bench, beats its own bigger V4 Pro at ⅓ the price) + Niklas Gruhn's "meat proxy" coinage via Simon Willison.
+- **Money Moves:** Horizon3 $250M/$2B for autonomous pentesting; Anthropic hires ex-CA Supreme Court Justice Tino Cuéllar as first Chief Global Affairs Officer.
+- **Deep Cut:** Dwarkesh Patel's Aug-3 essay "Why smarter AI models could drive up compute prices 10x" — the through-line that makes efficiency survival, not novelty.
+
+All full-text/primary sources were read before drafting; every source URL is verified. No overlap with the last 10 episodes (checked).
+
+### Candidate funnel
+- **AI Twitter / discourse (last 48h):**
+  - ✅ **CHOSEN** DeepSeek V4 Flash 0731 — post-training-beats-scale (Artificial Analysis, MarkTechPost, OpenRouter) — full text read.
+  - ✅ **CHOSEN** "meat proxy" (Niklas Gruhn → Simon Willison, Aug 3) — full text read.
+  - ⏭ LeCun vs. Wilson world-models-vs-LLM thread — evergreen, covered 08-02 ("conjuring worlds"), skipped.
+  - ⏭ Open-weights / "Pacing the Frontier" letters (Simon Willison Aug 2) — heavily covered 07-26/07-28/07-30, skipped as rehash.
+  - ⏭ MiniMax-H3 omni-modal video on Apple Silicon — interesting but niche, cut for space.
+  - ⚠ @Zefan_Cai — no fresh in-window tweet found via search; did not fabricate; DeepSeek item covers the Chinese-lab-efficiency signal.
+- **Investment/business (last 7d):**
+  - ✅ **CHOSEN** Horizon3 $250M Series E at $2B (TechCrunch, Aug 3) — full text read.
+  - ✅ **CHOSEN** Anthropic hires Tino Cuéllar as first Chief Global Affairs Officer (Anthropic newsroom + CNBC/Crimson, Aug 4) — verified.
+  - ⏭ Databricks $188B / Anduril $100B / OpenAI-Anthropic mega-rounds — stale (weeks old), skipped.
+- **Long-form podcasts (last 14d):**
+  - ✅ **CHOSEN (Deep Cut)** Dwarkesh Patel, "Why smarter AI models could drive up compute prices 10x" (essay + video, Aug 3) — argument chain reconstructed from primary/secondary.
+  - ⚠ WhynotTV (named primary) — known stale (per memory), no in-window episode; used Dwarkesh instead per the show's fallback list.
+  - ⏭ Latent Space — used two days running (Poolside 08-04, OpenAI Codex 08-03); rotated to Dwarkesh to avoid repetition.
+
+No source-side outages this run.
+=== 2026-08-05T02:37:02-07:00 done  jinglin-ai-pulse (exit 0) ===
