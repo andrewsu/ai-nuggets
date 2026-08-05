@@ -3115,3 +3115,31 @@ Paper: "Large language models improve physician accuracy but lead to false relia
 
 Why CORA over MSGR: the show heavily weights *agentic* AI, and CORA is the day's one item pairing a real agentic-RAG system with a controlled human study and a genuinely non-obvious, opinionated result (citations persuade independent of correctness → answer-citation faithfulness is the unshipped hard problem) — directly relevant to grounded/KG-backed agent builders.
 === 2026-08-04T02:07:22-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-05T02:00:09-07:00 start biomedical-agentic-ai ===
+Everything's in place. XML parses, arXiv URL resolves (200), and under SKIP_TTS mode I've written the script plus the two stubs and stopped short of TTS/publish/feed/commit as required.
+
+---
+
+## Run summary — biomedical-agentic-ai, 2026-08-05
+
+**Episode shipped (stubs written, awaiting batch TTS + orchestrator commit):**
+ANCHOR-RE — a training-free neuro-symbolic agent that stops LLMs from inventing biomedical relations. arXiv 2608.03154 (posted 2026-08-04), UIUC + Minnesota. Full text read via `mutool` (10.5k words). Spoken body: 887 words (cap 1150).
+
+**Why it won:** squarely on-brand (agentic AI + biomedical KG construction + ontology grounding), fresh, and opinionated-worthy — the Verifier learning rejection rules from the LLM's *own* systematic false positives, plus the honest finding that KB grounding pays off only in proportion to ontology coverage. Beats recent episodes without repeating them (curation agent 08-03, citation-reliance 08-04, agentic bioinformatics 08-01).
+
+**Candidate funnel:**
+
+- **bioRxiv** — 563 preprints scanned (full paginated collection, 2026-08-02→08-05); 47 keyword hits, substantive shortlist:
+  - Detailed curation of genomics samples via LLM agentic workflows — *already shipped 08-03 (this is the Gemma paper)*
+  - Scientific computing in the age of agentic AI: a field report — perspective piece, thinner take
+  - MAOMAO: ontology-guided FAIR peptide-toxicity resource — on-brand (ontology/FAIR) but not agentic AI
+  - Iterative co-creation of harmonized primate ontologies + CCF — ontology, not agentic
+  - Pervasive Backdoor Vulnerabilities in Genomic Foundation Models — interesting, security angle
+- **arXiv** — daily cache (`/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, fetched 02:00); ~130 agentic hits, biomedical shortlist:
+  - **ANCHOR-RE — agentic neuro-symbolic biomedical relation extraction (2608.03154) ← CHOSEN**
+  - TumorBoard: multi-agent decision support for neuro-oncology (2608.03190) — clinical DSS
+  - CoEvoKG: co-evolving KGs with self-evolving search agents (2608.01904) — KG but not biomedical
+  - Agents Catching Agents: benchmark gaming in clinical multi-agent systems (2608.03744) — critique
+  - Learning Clinical-Trial Strategy: offline policy for decision agents (2608.03606)
+- **PubMed / ChemRxiv / news / funder pages** — not separately queried this run; the two preprint sources yielded a clearly dominant, in-window, full-text-readable pick and no source-side outage forced a wider sweep. No transient source failures observed.
+=== 2026-08-05T02:07:25-07:00 done  biomedical-agentic-ai (exit 0) ===

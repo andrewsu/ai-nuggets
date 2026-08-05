@@ -1,0 +1,4 @@
+Script body: 5548 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2958 chars) -> 153.3s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2589 chars) -> 133.6s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-08-05-anchor-re-biomedical-relation-extraction.mp3 [mistral] 2,299,237 bytes, 287.4s
