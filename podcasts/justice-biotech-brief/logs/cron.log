@@ -1894,3 +1894,29 @@ Files written (no commit — orchestrator commits after batch TTS):
 
 **Policy/funders** — ARPA-H news page checked; nothing in-window on cancer/immunotherapy (latest relevant items late July, off-theme).
 === 2026-08-05T02:54:53-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-06T02:40:09-07:00 start justice-biotech-brief ===
+The RSS item is well-formed. In `SKIP_TTS=1` mode I've written the script plus the two required stubs (`.rss-item.xml`, `.commit-msg`) and skipped TTS/publish/feed/commit — the orchestrator handles those after batch TTS. Here's the run summary.
+
+---
+
+## Justice's Biotech Brief — 2026-08-06
+
+**Published (pending batch TTS):** `ATTOBODY — Attovia's biparatopic VHH multispecific platform lands a $289M IPO, from an IL-31 itch biologic to a trispecific for IBD`
+
+Attovia priced its upsized ~$289M IPO Aug 5 (closing Aug 6). The nugget for Justice isn't the raise — it's a pure-play **multispecific-antibody company aimed at immunology & inflammation**: the ATTOBODY biparatopic VHH platform (two camelid single-domain antibodies binding two epitopes on one target), with an IL-31 itch biologic (ATTO-1310, Phase 1b showing rapid deep itch relief), an IL-13×IL-31 bispecific (ATTO-2306), and a **trispecific TL1A×IL-23×α4β7 Fc-fusion for IBD** (ATTO-1091). Squarely on his stated interests (autoimmune biologics + trispecific engagers) and the same modality migration he tracks in oncology.
+
+### Candidate funnel
+
+**bioRxiv** (2-day window, 2026-08-05 + 06; full collection pulled: 235 + 4 = 239 entries, keyword-filtered on title+abstract):
+- `Dual-Specific Antibody Design Using AI` (multibodies / biparatopic IgG, 2 in IND-enabling) — strong on-theme, but **full body not yet rendered** (helper → abstract-only; direct r.jina.ai = 36KB, <60KB threshold). **Deferred** (not-yet-rendered), ineligible today per full-text gate; re-check on a later day.
+- `LNP platform for non-viral CRISPR-HDR CAR T generation` — on-theme, but **abstract-only** (r.jina.ai = 33KB). **Deferred**, ineligible today.
+- X6632 pan-ID inhibitor / non-viral CAR T CRISPR (HIV) / MolX foundation model — weak/spurious keyword matches, dropped.
+
+**News (Fierce Biotech, Endpoints, BioPharma Dive; Aug 5–6):**
+- Merck MK-2010 PD-1×VEGF NSCLC data — on-theme but the readout is **AACR 2026 (April)**, out of window. Dropped.
+- AbCellera/Vertex multispecific-TCE deal — on-theme but announced **July 29**, out of window. Dropped.
+- **Attovia $289M IPO (Aug 5–6)** — on-theme (autoimmune biologics + multispecifics), primary source readable (GlobeNewswire pricing release + Form S-1 via jina). **← CHOSEN.**
+- Off-theme, dropped: Moderna flu FDA approval, Takeda orexin approval, Revolution Medicines pancreatic launch prep (covered by sibling shows), Sanofi lung-study suspension, fecal-transplant peanut trial, Lilly/Amgen pipeline cuts, various IPOs/financings (Braveheart, Expedition, Claris, Crystalys).
+
+No source outages this run; all sources reachable.
+=== 2026-08-06T02:48:58-07:00 done  justice-biotech-brief (exit 0) ===
