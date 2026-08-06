@@ -1344,3 +1344,30 @@ Nothing in-window for: GPR52/Nxera, TL1A/GCPII, Aletira/AAV-OTOF, 1104health (OI
 
 **Memory updated:** top log entry (08-05), CAMP4 §2 entry (confirmed close + structure read), 1104health §2 entry (OIG RFI Aug 24 deadline). Script verified free of URLs/DOIs/heading artifacts; RSS stub validated as well-formed XML.
 === 2026-08-05T02:18:52-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-06T02:10:09-07:00 start blackbird-brief ===
+Episode written and staged for the batch pipeline. Summary follows.
+
+---
+
+## Blackbird Brief — 2026-08-06 Portfolio Watch (published to pipeline)
+
+**Type:** Portfolio Watch (daily). Thursday → no Sourcing Radar (that's weekly/Sundays).
+
+**Mode:** `SKIP_TTS=1` — wrote script + `.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders) + `.commit-msg` stubs. Did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator does that after batch TTS. RSS fragment validated as well-formed XML.
+
+**Files:**
+- `scripts/2026-08-06-portfolio-watch.md`
+- `scripts/2026-08-06-portfolio-watch.rss-item.xml`
+- `scripts/2026-08-06-portfolio-watch.commit-msg`
+- Updated `memory/blackbird-portfolio.md` (new top entry; demoted 08-05 to "Previously verified")
+
+### Candidate funnel
+Full Stream-A sweep (research agent: Fierce/Endpoints/STAT/BioPharma Dive/GEN/BioBuzz/GlobeNewswire + target/modality/company queries across all programs, 2026-08-02→06) + direct RevMed + AZ-BMS chases. **Eleventh straight quiet DIRECT-catalyst day** (no readout/deal/filing lands squarely on a Blackbird company).
+
+Three in-window items surfaced:
+- **Revolution Medicines Q2** (reported 08-05 after close, public 08-06) — **CHOSEN AS LEAD.** The anticipated aSKY competitive-intel read, now content rather than calendar. daraxonrasib NDA accepted in 2L PDAC (National Priority Voucher pilot) + EMA phased review + EAP reaching 2,000+ patients / launch readiness; BTD in non-G12C RAS NSCLC; first-line lung combos 85% (elironrasib/G12C) & 82% (zoldonrasib/G12D); $3.9B cash. Read for aSKY: reference-setter's great quarter keeps raising the bar the undisclosed KRAS-antibody mechanism must clear. [BioSpace release + SEC 8-K exhibit, verified]
+- **AZ–Bristol Myers merger rumor DENIED** (senior source to Reuters, 08-05) — **CHOSEN (second item).** Reverses Tuesday's thread in our favor: BMS stays independent, keeps Cobenfy, stays on the GPR52 NewCo's buyer map. [Fierce Pharma / BioSpace, verified]
+- **CAMP4 ~$50.1M second close** (08-04) — **NOT re-covered**; was yesterday's (08-05) lead. One-line board mention only, per no-re-coverage rule.
+
+All six other beats (aSKY/AVS Bio, GPR52/Nxera/Cobenfy, TL1A/GCPII, Aletira/OTOF/Sarepta, 1104health/TrialBlazer, Baltimore/JHU/UMB/Lieber): **nothing fresh in window** — everything traced back to pre-window events. No padding.
+=== 2026-08-06T02:18:43-07:00 done  blackbird-brief (exit 0) ===
