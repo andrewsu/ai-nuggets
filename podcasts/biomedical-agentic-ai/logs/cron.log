@@ -3143,3 +3143,30 @@ ANCHOR-RE — a training-free neuro-symbolic agent that stops LLMs from inventin
   - Learning Clinical-Trial Strategy: offline policy for decision agents (2608.03606)
 - **PubMed / ChemRxiv / news / funder pages** — not separately queried this run; the two preprint sources yielded a clearly dominant, in-window, full-text-readable pick and no source-side outage forced a wider sweep. No transient source failures observed.
 === 2026-08-05T02:07:25-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-06T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written and staged for the batch pipeline. Final run summary:
+
+---
+
+**Episode published (SKIP_TTS mode):** biomedical-agentic-ai — 2026-08-06
+
+**Pick:** OntoCodex — a five-agent framework for biomedical ontology enrichment (npj Health Systems, published 2026-08-05, Cui Tao's group at Mayo Clinic). Five coordinated agents (decision/orchestrator, ontology-reading/schema parse, knowledge-base concept extraction, terminology→OMOP/SNOMED/RxNorm/LOINC mapping, deterministic OWL-writing script generation) that close the loop from concept discovery to formal OWL construction. Read in full via r.jina.ai. Take: accuracy numbers are a feasibility demo (MedlinePlus corpus, tiny sets, prompt-engineering-driven gains), but the schema-aware, OMOP-grounded, human-in-the-loop, KGCL-friendly *architecture* is the real value for KG builders.
+
+**Artifacts written** (no TTS/publish/feed/commit — orchestrator handles those):
+- `scripts/2026-08-06-ontocodex-ontology-enrichment.md` (spoken body: 800 words, under 1150 cap)
+- `.rss-item.xml` (XML validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `.commit-msg`
+
+**Candidate funnel:**
+- **bioRxiv** — 750 unique in 08-03→08-06 window; ~19 keyword hits, none genuinely agentic-biomedical (mostly foundation-model/ontology-in-abstract false positives, e.g. LLM-lit-screening, scMaize, MAOMAO peptide-tox resource). 0 shortlisted.
+- **arXiv** (cache, pre-fetched OK) — ~59 biomedical×agentic hits. Shortlist:
+  - `2608.03154` ANCHOR-RE — agentic neuro-symbolic biomedical relation extraction — **dominant fit, but DROPPED: already shipped as yesterday's episode (2026-08-05)**
+  - `2608.03190` TumorBoard — multi-agent neuro-oncology decision support
+  - `2608.03154`/`2608.03744` clinical multi-agent benchmark-gaming; `2608.04872` A-SR agentic symbolic regression
+- **PubMed** (300 ids, 5-day window) — shortlist:
+  - **OntoCodex — multi-agent biomedical ontology enrichment (npj Health Syst) → CHOSEN**
+  - CiteSure (RAG biomedical citation, JAMIA); "Can agentic AI dent Eroom's Law?" (Drug Discov Today review); "LLM-enhanced sepsis prediction" (npj Health Syst)
+- **ChemRxiv / news / funder pages** — not separately queried; PubMed+arXiv+bioRxiv carried the day with a clear on-target winner. Minor recall gap noted.
+
+**Note:** Near-miss caught — the day's top candidate (ANCHOR-RE) was yesterday's exact shipped pick; the 4-day window overlaps prior days. Saved a memory to grep `feed.xml` before finalizing. OntoCodex is distinct and equally on-target for this audience (ontologies, OWL, OMOP, data integration, agentic AI).
+=== 2026-08-06T02:11:02-07:00 done  biomedical-agentic-ai (exit 0) ===
