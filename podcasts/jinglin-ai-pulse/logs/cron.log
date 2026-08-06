@@ -1458,3 +1458,33 @@ All full-text/primary sources were read before drafting; every source URL is ver
 
 No source-side outages this run.
 === 2026-08-05T02:37:02-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-06T02:30:09-07:00 start jinglin-ai-pulse ===
+Done. SKIP_TTS is set, so per PIPELINE I've written the script and the two transient stubs (`.rss-item.xml`, `.commit-msg`) and skipped TTS/publish/feed/commit — the orchestrator handles those after batch TTS.
+
+## Episode: Ollie's AI Pulse 2026-08-06 — "The weights are the commodity"
+
+**Files written** (`podcasts/jinglin-ai-pulse/scripts/2026-08-06-the-weights-are-the-commodity.*`): `.md` script (1,775 spoken words, ~11–12 min), `.rss-item.xml` (validated, 0 raw ampersands, placeholders for length/duration), `.commit-msg`.
+
+**Through-line:** open weights (GLM-5.2) now match the frontier for free, so the contest has relocated to the three layers around the weights — governance/safety, enterprise deployment, and power/serving.
+
+### Candidate funnel
+
+**Twitter/X + discourse aggregators** (scanned ~12 threads; last 48h; 5 substantive):
+- ✅ **SaferAI report on Z.ai GLM-5.2 open-weight safety gap** (Aug 4) — *chosen, Twitter Pulse lead.* Full text: TechCrunch + Interconnects (Nathan Lambert).
+- ✅ **Alex Karp / Palantir "Marxist" shareholder letter** (Aug 3) — *chosen, Twitter Pulse #2.* Full text: TechCrunch + Benzinga.
+- ❌ World-models debate (Fei-Fei Li / LeCun / Sutskever) — real convergence but no fresh 48h spike, and covered twice already (08-02, 07-27). Dropped.
+- ❌ Sam Altman "pace AI development" — already the 07-30 episode. Dropped.
+- ❌ Kimi K3 on 16× GB10 local run — thin; Kimi covered repeatedly. Dropped.
+
+**Investment/business** (last 7 days; 4 scanned):
+- ✅ **Anthropic–Volta $10B six-year compute deal** (Aug 4) — *chosen, Money Moves.*
+- ❌ **Valar Atomics $1B/$6B** — already featured 08-04. Excluded (repeat).
+- ❌ **Horizon3 $250M/$2B** — already featured 08-05. Excluded (repeat).
+- ⚠️ Baseten $1.5B Series F at $13B — from **June 2026**, outside the 7-day window; used only as deep-cut background color, not a money move.
+
+**Podcasts** (last 14 days):
+- ✅ **Latent Space, "Inference Is the New Training" — Baseten's Philip Kiely & Ali Taha** (Aug 3) — *chosen, Deep Cut.* Distinct from the 08-04 Latent Space (Poolside) episode; ties inference economics to the through-line.
+- ❌ Dwarkesh (compute prices) — used 08-05. WhynotTV — stale (per memory). MLST — no in-window episode.
+
+No source outages this run.
+=== 2026-08-06T02:38:37-07:00 done  jinglin-ai-pulse (exit 0) ===
