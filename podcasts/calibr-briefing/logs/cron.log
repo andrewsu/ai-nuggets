@@ -2879,3 +2879,42 @@ Shortlist (Aug 4–5 window):
 
 No source-level outages. All facts verified against ≥1 fetchable source; both RSS stubs validated as well-formed XML.
 === 2026-08-05T02:29:12-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-06T02:20:09-07:00 start calibr-briefing ===
+Both episodes for calibr-briefing 2026-08-06 are written and staged for the batch pipeline (SKIP_TTS mode). Here's the run summary.
+
+---
+
+## Calibr Briefing — Thursday, August 6, 2026
+
+**Episodes produced (2):**
+- `2026-08-06-pharma-headlines` — 5-item roundup, earnings-season obesity split
+- `2026-08-06-revolution-medicines-ras-franchise-spotlight` — deep dive on RevMed's Q2 / RAS(ON) franchise
+
+Each has its `.txt` script, `.rss-item.xml` stub (with `__LENGTH__`/`__DURATION__` tokens), and `.commit-msg` stub. RSS XML validated well-formed; escaping clean. Per SKIP_TTS mode I did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator handles those after batch TTS.
+
+**Headlines slate:**
+1. **Novo Nordisk Q2** (Aug 6, freshest) — beat but −6% on oral Wegovy destocking + soft FY outlook; CagriSema up-to-14% weight loss
+2. **Eli Lilly Q2** (Aug 5) — beat + raise to $85–87B, tirzepatide +91%, +$4.5B capex for orforglipron/retatrutide; the widening obesity gap is the day's through-line
+3. **Revolution Medicines Q2** — spotlight tease
+4. Two resolved follow-ups — Moderna mFLUSIVA approved; AZ–BMS merger denied
+5. **Attovia** upsized $289M IL-31 IPO — second reopened-window listing in two days
+
+**Spotlight: Revolution Medicines** — named focus-area company, verified full text, market mover. FDA NDA acceptance into the National Priority Voucher pilot (2L PDAC), multi-selective RAS(ON) vs. the mutant-selective G12C wave, ~doubled pancreatic OS (13.2 vs 6.7 mo, HR ~0.40), 85%/82% first-line lung combo ORRs, and the pre-revenue-spending-like-commercial franchise on $3.9B cash. Caveats aired: small/early lung cohorts, $644M quarterly loss.
+
+**Candidate funnel:**
+- *General headlines (Fierce/Endpoints/STAT/BioPharma Dive/GEN/BioSpace/Reuters, via research agent — sources that block WebFetch were reached via search/aggregators):* ~12 Aug 5–6 items scanned → shortlist below.
+  - Novo Nordisk Q2 (−6% on oral Wegovy) — **CHOSEN #1**
+  - Eli Lilly Q2 (beat+raise, tirzepatide) — **CHOSEN #2**
+  - Revolution Medicines Q2 — **CHOSEN #3 + SPOTLIGHT**
+  - Moderna mFLUSIVA approval — **CHOSEN #4a** (yesterday's spotlight resolved)
+  - AZ–BMS merger denied — **CHOSEN #4b** (Tuesday's spotlight reversed)
+  - Attovia $289M IPO (IL-31) — **CHOSEN #5**
+  - Royalty Pharma Q2 beat/raise — cut (thin for this audience)
+  - UroGen Q2 (ZUSDURI launch) — cut
+  - Pfizer $2.5B cost cuts — cut (covered Aug 5)
+  - Merck/tulisokibart, Capricor adcomm, Regeneron/Amgen Q2 — cut (unverified Aug 5–6 dates / already covered)
+- *AI-in-drug-discovery (Xaira/Iambic/Isomorphic/Recursion/Anthropic/OpenAI):* 0 verified in-window items — all late-June/July or older (Claude Science, Insilico–Takeda, Isomorphic ISM8969). None eligible.
+- *Foresite Capital/Labs portfolio:* 0 verified in-window items; only 10x Genomics Q2 *date* (Aug 6, results pending, peripheral tie). None eligible.
+
+**Notes:** Full text read for the spotlight (RevMed BioSpace release, WebFetch). Recorded a project memory that the PROMPT-referenced `memory/calibr-pipeline.md` does not exist on this host (a full `find /` returned nothing) so future runs don't hunt for it.
+=== 2026-08-06T02:35:01-07:00 done  calibr-briefing (exit 0) ===
