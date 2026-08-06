@@ -3075,3 +3075,31 @@ Here is the run's audit record.
 
 **All 10 selected are fresh (in-window), unshipped, and read in full.** Ledger now 75 lines. Back tomorrow — several held-over 08-04 pharmacology preprints should be rendered and eligible.
 === 2026-08-05T03:05:31-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-06T02:50:09-07:00 start receptor-and-reason ===
+Today's Receptor & Reason episode is written and staged for the batch pipeline. In `SKIP_TTS` mode I wrote the script plus the two transient stubs and appended the dedup record; TTS, R2 publish, feed edit, and commit are left to the orchestrator.
+
+**Episode: Receptor & Reason 2026-08-06 — 9 items**
+
+Notable continuity: two of today's leads (ophthalmate; the SETD1A/LSD1-inhibitor schizophrenia rescue) are exactly the pharmacology preprints yesterday's episode *held over* for un-rendered full text — their bodies are now up, so they lead today. One fresh item (psilocybin synaptic-plasticity map, posted Aug 5) is still abstract-only and held for a coming episode per the eligibility gate.
+
+**Candidate funnel**
+
+- **bioRxiv** (Tier 1/2), 7-day window (07-30→08-06): 923 preprints pulled across all categories (paginated), 399 passed a broad neuro/pharma/comp-bio relevance filter, 46 survived a weighted high-signal CNS-pharm/drug-discovery/agentic score ≥6 after dedup. Opened in full (curl r.jina.ai directly; helper's jina channel returns abstract-only): ophthalmate ✓, SETD1A/TAK-418 ✓, dopamine-ramps ✓, dendrite-SNc ✓, Ptarmigan-1 ✓, Boltz2ESI ✓. Abstract-only (self-contained, tail-eligible): Sob-AM2, sialylated ApoE2. **Deferred (not-yet-rendered):** psilocybin plasticity (741703) — re-check on a later day.
+- **arXiv** (Tier 2), cache `/tmp/ai-nuggets-arxiv-cache.xml` (15074 lines, present): 52 agentic+bio candidates in window; nearly all general-agent/clinical-LLM papers, not neuropsychopharm — BrainBench (EEG-LLM benchmark) selected as the light closer; TumorBoard, ANCHOR-RE, clinical-trial-agent noted but weaker fit than Tier-1 bioRxiv.
+- **Sources not hit:** journal RSS (NPP/Mol Psych/Biol Psych), Psychiatric Times, society pages, chemRxiv — Tier-1 bioRxiv corpus alone yielded a comfortable 9-item slate, so I didn't fan out further. No source-side outages.
+
+**Shortlist → selection** (✓ = shipped):
+- ✓ Ophthalmate striatal neuromodulator — 10.64898/2026.08.03.742629 **(LEAD)**
+- ✓ Dorsomedial dopamine ramps down / interval timing — 10.64898/2026.08.01.742215
+- ✓ Dendrite-specific inputs onto SNc dopamine neurons — 10.64898/2026.08.02.742307
+- ✓ SETD1A schizophrenia rescue via TAK-418 (LSD1) — 10.64898/2026.08.03.742543
+- ✓ TREM2 inducer Sob-AM2 in 5xFAD — 10.64898/2026.07.31.741838
+- ✓ Recombinant sialylated ApoE2 therapy — 10.64898/2026.07.30.741628
+- ✓ Ptarmigan-1 structure-free virtual screening — 10.64898/2026.07.28.741295
+- ✓ Boltz2ESI co-folding enzyme-substrate — 10.64898/2026.07.30.741672
+- ✓ BrainBench EEG-LLM benchmark — arxiv:2608.04156 **(CLOSE)**
+- ✗ psilocybin plasticity (741703) — deferred, full text not rendered
+- ✗ LLM-agentic genomics curation (741874) — 403 on full text; weakest Tier-2, dropped
+
+Spoken body: 2180 words (~12 min at 1.2×), clean of URLs/DOIs/headings/bullets; RSS-item stub validates as XML with `__LENGTH__`/`__DURATION__` placeholders; dedup ledger now 76 lines.
+=== 2026-08-06T03:03:33-07:00 done  receptor-and-reason (exit 0) ===
