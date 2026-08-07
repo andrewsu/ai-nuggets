@@ -1371,3 +1371,27 @@ Three in-window items surfaced:
 
 All six other beats (aSKY/AVS Bio, GPR52/Nxera/Cobenfy, TL1A/GCPII, Aletira/OTOF/Sarepta, 1104health/TrialBlazer, Baltimore/JHU/UMB/Lieber): **nothing fresh in window** — everything traced back to pre-window events. No padding.
 === 2026-08-06T02:18:43-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-07T02:10:10-07:00 start blackbird-brief ===
+All deliverables are in place. ~1,060 spoken words ≈ 6.5–7 minutes at the show's cadence — appropriate for a substantive-but-quiet day.
+
+## Blackbird Brief — Portfolio Watch, Friday 2026-08-07 — done (SKIP_TTS batch mode)
+
+Wrote the script + the two batch stubs (`.rss-item.xml`, `.commit-msg`) and updated the portfolio memory. Did **not** run TTS / publish / feed-edit / commit — `SKIP_TTS=1`, so `publish_pending.py` handles those after batch TTS.
+
+**Candidate funnel (Stream A — Portfolio & competitive news, window 08-04→08-07):**
+
+Direct portfolio catalysts: **twelfth straight quiet day** — nothing new landed on a Blackbird program.
+- Revolution Medicines / RAS / aSKY — nothing new post-Q2 (Q2 covered 08-06); aSKY/AVS Bio only an undated LinkedIn post → skip
+- CAMP4 $50.1M second close — 08-04, **already covered 08-05/08-06** → not re-aired
+- AZ–Bristol Myers merger denial — 08-05 Reuters, **already covered 08-06**, no follow-on → not re-aired
+- GPR52/Nxera/Cobenfy/Neurocrine, TL1A/tulisokibart/duvakitug, Islex/ZnT8, Baltimore/JHU/UMB/Lieber — all pre-window → nothing fresh
+- Off-thesis in-window: Moderna mRNA flu approval, Takeda narcolepsy (Orzeyful), Zymeworks–Theravance M&A → rejected
+
+**Shortlist of genuinely fresh, in-window, on-thesis items:**
+- ★ **CHOSEN (lead, landscape read for Aletira):** two more pediatric gene-editing deaths in China surfaced — HuidaGene HG302 CRISPR Duchenne boy (disclosed 08-05; immune reaction → ARDS) and the cover-up of a 6-year-old girl's death (dual-AAV9 base editor into CSF, trillions of viral particles, thrombotic microangiopathy, non-fatal condition). STAT 08-05 / Bloomberg 08-06 / Science.
+- **Secondary (underwriting datapoint):** Aurora Therapeutics (Doudna) killed its lead personalized gene-editing program 08-04 (STAT).
+
+**The read I aired** was deliberately candid rather than a validation lap: both deaths sit on the **capsid-dose/biodistribution** axis, which SELEXON does *not* govern — so I flagged explicitly that we must not pitch these as proof SELEXON prevents them. The legitimately-ours argument is therapeutic-index/precision, plus a genuinely new angle — the girl's non-fatal indication maps onto Aletira's non-fatal hearing-loss lead, so the safety bar is rising both for us and for our pitch. Standing board (1104health OIG deadline Aug 24, Ultragenyx Aug 23, GPR52/Nxera, GCPII/IBD) got one line each, no re-coverage.
+
+One note for you: several claude.ai connectors (Asana, BioRender, Canva, Dropbox, Smartsheet, Synapse.org, Zoom, Adobe) are unauthorized — not needed for this run, but they'd require authorization via claude.ai connector settings if you ever want them here.
+=== 2026-08-07T02:20:40-07:00 done  blackbird-brief (exit 0) ===
