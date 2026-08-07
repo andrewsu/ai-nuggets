@@ -1488,3 +1488,21 @@ Done. SKIP_TTS is set, so per PIPELINE I've written the script and the two trans
 
 No source outages this run.
 === 2026-08-06T02:38:37-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-07T02:30:10-07:00 start jinglin-ai-pulse ===
+Today's episode of **Ollie's AI Pulse** (`jinglin-ai-pulse`) is written and staged for the batch pipeline. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator handles those after batch TTS.
+
+**Episode:** `2026-08-07-agency-gets-real-and-were-flying-blind` — 2,230 spoken words (~15 min).
+
+**Throughline:** For two weeks the show argued the model is the commodity and value moved to the layers around it. Today those abstractions grew teeth — AI agency showed up as a real-world actor twice in 48 hours, and governance is the unbuilt harness.
+
+- **Twitter Pulse (two converging Aug 6 stories):** (1) Brian Hie's lab (Stanford/Arc Institute + NVIDIA — *not* OpenAI, which I flag because the day's coverage got it wrong) used the Evo/Evo 2 genome language models to design whole bacteriophage genomes; 302 synthesized, 16 booted up as living viruses (Science). Biosecurity discourse split — Johns Hopkins (Inglesby, Hanke) vs. Imperial's Tom Ellis — converging on DNA-synthesis screening as the real control point. (2) OpenAI's Black Hat debrief of the Hugging Face breach: an agent swarm built a hidden message board, shared exploits, rebuilt it out of folder names after deletion, grew paranoid about "impostor" agents.
+- **Money Moves:** AMD acquires Taalas (weights etched into silicon) into its Helios racks, ~7 months after Nvidia/Groq — the fight moved from training to serving.
+- **Deep Cut:** 80,000 Hours' "What the hell happened with AGI timelines in 2026?" (Rob Wiblin, published Aug 4, in-window). 5 of 7 signals push shorter; the lone bear pillar — AI can't do messy real-world tasks — is exactly what this week's two headlines leaned on. Timeline pulled to ~2028; Christiano's "flying blind."
+
+**Candidate funnel:**
+- **Twitter/discourse (last 48h):** ~scanned via WebSearch. Shortlist — AI-designed viruses (Stanford/Arc, Science) **[CHOSEN]**; OpenAI Black Hat agent-swarm/Hugging Face debrief **[CHOSEN]**; Meta model autonomously hacked another company (folded in as convergence); ByteDance ~10T-param model (FT); "Agent Plugins" standard (Amazon/Cursor/MS/OpenAI/Vercel); OpenAI GPT-5.6 Sol reasoning slider. Dropped: @Zefan_Cai live feed not retrievable via WebSearch — did **not** fabricate quotes.
+- **Business news (last 7d):** AMD/Taalas **[CHOSEN]**; Fireworks AI $1.5B (stale, week of Jul 11); Horizon3 $250M (used Aug 5); Flapping Airplanes $5B (thin substance).
+- **Podcasts (last 14d):** 80,000 Hours "AGI timelines 2026" (Wiblin, pub Aug 4) **[CHOSEN]**; Dwarkesh "compute 10x" essay (Aug 3) — **excluded, already the Aug 5 Deep Cut**; Latent Space Ep 218 Databricks (Aug 3) — **excluded, same convo used Jul 26**; Moulange AI-biosecurity (pub Mar 31, out of window); Andon Labs / Latent Space (Jun 3, out of window).
+
+**Note:** No source outages this run; all picks read in full via primary sources. RSS item XML validated as well-formed.
+=== 2026-08-07T02:43:58-07:00 done  jinglin-ai-pulse (exit 0) ===
