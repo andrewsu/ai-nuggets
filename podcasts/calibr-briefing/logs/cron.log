@@ -2918,3 +2918,34 @@ Each has its `.txt` script, `.rss-item.xml` stub (with `__LENGTH__`/`__DURATION_
 
 **Notes:** Full text read for the spotlight (RevMed BioSpace release, WebFetch). Recorded a project memory that the PROMPT-referenced `memory/calibr-pipeline.md` does not exist on this host (a full `find /` returned nothing) so future runs don't hunt for it.
 === 2026-08-06T02:35:01-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-07T02:20:10-07:00 start calibr-briefing ===
+All six files are in place and the stubs are clean. Since `SKIP_TTS=1`, I've correctly skipped TTS, R2 publish, feed edits, and the commit — the orchestrator handles those from the stubs.
+
+**Today's episode is complete.** Both scripts and their transient stubs are written for `calibr-briefing`, dated Friday, August 7, 2026.
+
+---
+
+## Run summary — calibr-briefing, 2026-08-07
+
+**Episodes produced (2):**
+- `2026-08-07-pharma-headlines` — 683 words (~4.5 min), 5-item roundup
+- `2026-08-07-replimune-rp1-approval-spotlight` — 1024 words (~7 min), deep dive
+
+**Candidate funnel**
+
+*Sources swept (via 2 parallel research agents; no source-side failures):*
+- General biotech/pharma tape (Fierce, Endpoints, STAT, BioPharma Dive, GEN, BioSpace, Reuters/CNBC/Bloomberg) — ~15 items scanned, ~9 in-window (Aug 5–7) survived relevance
+- AI-in-drug-discovery + Foresite/Foresite Labs portfolio — both buckets **quiet in-window**; no fresh financing/IPO/M&A/model release from named AI or Foresite companies Aug 5–7
+
+*Substantive in-window shortlist (Aug 5–7):*
+- **Replimune Tudriqev (RP1) FDA accelerated approval** (Aug 6) — statnews.com/2026/08/06/replimune-melanoma-drug-rp1-fda-approves-phase-3-confirmatory-trial — **CHOSEN: headlines lead + SPOTLIGHT** (full text read: STAT + Replimune GlobeNewswire PR)
+- Takeda oveporexton/Orzeyful, first orexin-2 agonist, narcolepsy T1 (Aug 5) — statnews.com/2026/08/05/takeda-narcolepsy-drug-fda-approval-orzeyful — **CHOSEN: headline #2**
+- Tarsus → Alkeus, up to $800M, gildeuretinol/Stargardt (Aug 6) — biopharmadive.com/news/alkeus-tarsus-acquire-stargardt-drug-startup-boger/827243 — **CHOSEN: headline #3**
+- Braveheart Bio IPO $382.5M, +~66% (Hengrui cardiac myosin inhibitor, Camzyos rival) (Aug 6) — biopharmadive.com/news/braveheart-cardiac-drugs-ipo-pricing/826973 — **CHOSEN: headline #4**
+- Recursion Q2 + Genentech first validated-target option (Aug 5) — globenewswire.com/…/recursion-reports-second-quarter…-genentech-options-first-neuroscience-target… — **CHOSEN: headline #5 (AI lane)**
+- Merck Enflonsia sBLA accepted, 2nd RSV season (Aug 6) — considered, cut for space
+- Phylo–Chugai agentic-AI pact (Aug 4) — borderline OOW, cut
+- Eli Lilly Q2 blowout, Moderna mFlusiva approval, Attovia IPO — **already shipped in 08-05/08-06 episodes**, not re-aired
+
+*Selection note:* The Replimune approval is the day's single biggest development and the payoff of a saga this show tracked (07-27/07-29/07-31); prior episodes covered the briefing docs and the adcomm vote, not the approval, so the Aug 6 accelerated approval is genuinely fresh — and the spotlight's frame (what an approval means vs. a vote; only the 2nd U.S. oncolytic; the post-Prasad single-arm bar) is distinct from earlier coverage. AI/Foresite buckets were quiet in-window, so the AI angle rode along as headline #5 (Recursion/Genentech) rather than the spotlight.
+=== 2026-08-07T02:30:44-07:00 done  calibr-briefing (exit 0) ===
