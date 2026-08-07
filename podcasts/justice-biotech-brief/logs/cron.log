@@ -1920,3 +1920,36 @@ Attovia priced its upsized ~$289M IPO Aug 5 (closing Aug 6). The nugget for Just
 
 No source outages this run; all sources reachable.
 === 2026-08-06T02:48:58-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-07T02:40:10-07:00 start justice-biotech-brief ===
+I'll wait for the background retry job to complete or the fallback wakeup to fire.
+=== 2026-08-07T02:46:08-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-07T02:46:08-07:00 no usable output for justice-biotech-brief; retrying in 180s ===
+=== 2026-08-07T02:49:08-07:00 start justice-biotech-brief (retry 1) ===
+Pausing here — no more polling. The background loop will re-invoke me when it either catches a successful render or exhausts all 8 attempts (~4 more minutes). I'll resume then.
+=== 2026-08-07T03:02:53-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-08-07T03:02:53-07:00 no usable output for justice-biotech-brief; retrying in 180s ===
+=== 2026-08-07T03:05:53-07:00 start justice-biotech-brief (retry 2, --model claude-sonnet-5) ===
+## Justice's Biotech Brief — 2026-08-07 run complete
+
+**Episode selected:** Tudriqev (RP1) — Replimune's oncolytic virus clears the FDA on the third try, angled toward the regulatory precedent (contribution-of-components, single-arm data, reported White House intervention) rather than re-explaining a mechanism this show already covered on 07-29.
+
+Files written (SKIP_TTS mode — no TTS/publish/feed/commit; orchestrator finalizes): `.md`, `.rss-item.xml` (validated well-formed), `.commit-msg`.
+
+### Candidate funnel
+
+**bioRxiv** (full collection, 2026-08-05–07 window: 505 unique biorxiv + 123 medrxiv entries, keyword-filtered on title+abstract): 17 biorxiv substantive hits, 6 medrxiv (mostly spurious). Every on-theme survivor was full-text-gated out as not-yet-rendered (checked via `fetch_preprint.py` and direct r.jina.ai for the two strongest — "Dual-Specific Antibody Design Using AI" and "alpha2,3-sialylation restrains bispecific TCE immunity" — both abstract-only, deferred to a later day):
+- Dual-Specific Antibody Design Using AI (multibodies, posted 08-03) — deferred, not rendered
+- alpha2,3-sialylation on naive T cells restrains TCE anti-tumor immunity (posted 08-06, directly on TCE mechanism) — deferred, not rendered
+- Developmental reversion / checkpoint resistance in kidney cancer, supramolecular site-specific ADCs, TOPII/MUS81 sensitizing T-DXd — all deferred, not rendered
+
+**News/press** (BioPharma Dive, Fierce Biotech/Pharma, STAT, GlobeNewswire, targeted searches on VEGF×PD-L1, trispecific TCE, JAK-ADC): thin window overall.
+- **Replimune/Tudriqev FDA approval (Aug 6)** — **CHOSEN.** Read in full across BioPharma Dive, Replimune's press release, STAT, and corroborating outlets for the White House-intervention detail.
+- Compass Therapeutics Q2 update, tovecimig (DLL4×VEGF-A bispecific) — **rejected as recency trap**: the dramatic "confounding OS data" story is from April 27, 2026; Aug 6 was just a routine earnings reiteration.
+- J&J/Sail in vivo CAR-T "$2.6B" coverage — **rejected as recency trap**: same July 29 deal justice already covered 07-31; a BioPharma Dive re-surfacing, no new terms.
+- Takeda orexin approval, Alkeus/Tarsus, Braveheart IPO, LifeMine, Moderna flu vaccine — off-theme, dropped.
+- No VEGF×PD-L1, JAK-ADC, or trispecific-TCE news item cleared both the recency and substance bar today.
+
+**Policy/funders** (ARPA-H, NIH, NSF): nothing in-window on oncology/immunology.
+
+No source hard-failed this run.
+=== 2026-08-07T03:17:26-07:00 done  justice-biotech-brief (exit 0) (retry 2, --model claude-sonnet-5) ===
