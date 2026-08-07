@@ -3170,3 +3170,34 @@ Episode written and staged for the batch pipeline. Final run summary:
 
 **Note:** Near-miss caught — the day's top candidate (ANCHOR-RE) was yesterday's exact shipped pick; the 4-day window overlaps prior days. Saved a memory to grep `feed.xml` before finalizing. OntoCodex is distinct and equally on-target for this audience (ontologies, OWL, OMOP, data integration, agentic AI).
 === 2026-08-06T02:11:02-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-07T02:00:10-07:00 start biomedical-agentic-ai ===
+API Error: Connection closed mid-response. The response above may be incomplete.
+=== 2026-08-07T02:02:26-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-07T02:02:26-07:00 no usable output for biomedical-agentic-ai; retrying in 180s ===
+=== 2026-08-07T02:05:26-07:00 start biomedical-agentic-ai (retry 1) ===
+Everything validates. In `SKIP_TTS=1` batch mode, I skip TTS, R2 publish, feed edit, and the commit — the orchestrator handles those after batch TTS. Done.
+
+---
+
+## Run summary — biomedical-agentic-ai, 2026-08-07
+
+**Selected:** CASCADE — an agentic perturbation predictor built to test whether an MCP tool call is actually true, not just plausible (arXiv 2608.05359, posted 2026-08-05). Full text read via `mutool` (WebFetch PDF extract failed on binary). Script 829 words (cap 1150). Stub files written; no TTS/publish/commit (SKIP_TTS=1).
+
+**Why it won:** Concrete agentic biomedical tool (LangGraph + MCP over ARACNe networks) whose real contribution is a validation methodology — testing the *directional* claim an MCP tool call surfaces against real TCGA/METABRIC patient data, not just plausibility. Opinionated, honest result (matches but doesn't beat curated knowledge; gene-specific; agent grounding itself imperfect) — squarely in the show's recent rigor-focused lane and Andrew's agentic-AI + data-integration interests.
+
+**Candidate funnel:**
+- **bioRxiv** (2026-08-04→08-07): 828 unique preprints pulled (full collection, 29 pages, parallelized after a first serial attempt timed out); ~70 hit agentic/AI keywords. Shortlist:
+  - *Scientific computing in the age of agentic AI: an exploratory field report* (bioinformatics, 08-05, v2) — strong thematic fit — **DEFERRED: full text abstract-only (bioRxiv body not yet rendered, helper fell to API channel 3). Revisit when it renders.**
+  - *MAOMAO: An Ontology-Guided FAIR Resource for Harmonized Peptide Toxicity Data* (08-04) — ontology/FAIR fit but not agentic AI; passed over.
+  - *From Wikipedia to AI: Measuring 25 years of synthesis of human genetics research…* (08-04) — Wikidata-adjacent but a measurement study, not agentic; passed over.
+  - *Charting the small-molecule universe from mass spectra with neuro-symbolic AI* (08-06) — AI method, not agentic/biomed-KG focus; passed over.
+- **arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, fresh 02:00, 14.7k lines): ~199 agentic+biomedical matches in the 4-day window. Shortlist:
+  - **CASCADE** (2608.05359, 08-05) — **CHOSEN.**
+  - *DoctorAgents: agentic AutoML refinement for small clinical temporal data* (2608.05375, 08-05) — solid but applied-ML, less KG/open-science; runner-up.
+  - *EpiBench: Can LLMs Understand Epitopes for Antibody Drug Discovery?* (2608.06022, 08-06) — benchmark, narrower.
+  - *EviGraph: Evidence-Guided Autonomous Research Agents* (2608.04738v2) — domain-general, not biomedical.
+  - *Hierarchical Server Architecture for Agentic Science* (2608.05332) — infra, not biomedical.
+- **ChemRxiv / PubMed / news / funder pages:** not separately queried this run — arXiv + bioRxiv surfaced a clearly dominant, on-theme pick well inside the recency window. Recorded as a minor recall gap, not a source outage.
+
+**No already-shipped conflict:** feed grep confirms CASCADE not previously featured (recent picks: OntoCodex, ANCHOR-RE, CORA, Gemma curation agent, AskChem…).
+=== 2026-08-07T02:12:47-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===
