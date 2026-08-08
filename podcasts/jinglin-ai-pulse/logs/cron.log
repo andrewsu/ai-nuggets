@@ -1506,3 +1506,42 @@ Today's episode of **Ollie's AI Pulse** (`jinglin-ai-pulse`) is written and stag
 
 **Note:** No source outages this run; all picks read in full via primary sources. RSS item XML validated as well-formed.
 === 2026-08-07T02:43:58-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-08T02:30:10-07:00 start jinglin-ai-pulse ===
+Everything is in place — the RSS stub is well-formed XML and the spoken body is 1,816 words (within the 1,500–2,200 target). Since `SKIP_TTS=1`, I stop before TTS/publish/feed-edit/commit; the orchestrator handles those after batch TTS.
+
+Here's the run summary for the audit log.
+
+---
+
+**Ollie's AI Pulse — 2026-08-08 — published (script + stubs written; SKIP_TTS batch mode)**
+
+Episode: `2026-08-08-alibaba-weaponizes-open-weights-and-safety-with-chinese-characteristics`
+- Twitter Pulse: Qwen3.8-Max — Alibaba matches GPT-5.6 pricing, claims top of OSWorld agent leaderboard, open-sources its flagship next week to commoditize the frontier; live debate over vendor-only benchmarks and a license OstrisAI reads as fencing out the West.
+- Money Moves: Hadrian's $1.37B defense-manufacturing round (capital rotating from models to atoms); brief agent-orchestration commoditization note (Naïve, Sapiom).
+- Deep Cut: The Cognitive Revolution, "Nathan Goes to China – Part 2: AI Safety with Chinese Characteristics" (Aug 2) — Labenz's "but China is built on not-looking" argument.
+
+**Candidate funnel**
+
+Twitter/discourse (last 48h):
+- ✅ **CHOSEN** — Qwen3.8-Max open-weights offensive + benchmark/license skepticism (Aug 3 release, weights due wk of Aug 10) — genuinely fresh, live convergence, extends the show's open-weights arc without repeating specifics.
+- DeepSeek V4 Flash / Dwarkesh compute essay — already shipped 08-05; skipped.
+- GLM-5.2 safety gap / Palantir / Anthropic–Volta / Baseten inference — already shipped 08-06; skipped.
+- Evo genome LMs / OpenAI Black Hat swarm / AMD-Taalas — already shipped 08-07; skipped.
+- World-models debate (LeCun JEPA vs Fei-Fei Li spatial vs Genie 3) — substantive but no fresh 48h hook and heavily covered (06-24, 07-27, 08-02); deferred.
+- Benchmark-contamination / eval-validity (SWE-Bench Verified inflation) — substantive but source material is May–June, not 48h-fresh; folded as supporting context into the Qwen item instead of standing alone.
+
+Investment/business (last 7d):
+- ✅ **CHOSEN** — Hadrian $1.37B Series D at ~$8B, Aug 6 (defense manufacturing) — fresh, strategic-direction signal, uncovered.
+- Prometheus $12B / $41B — June 11, stale; skipped.
+- Fireworks AI $1.5B — July 17, shipped 07-18; skipped.
+- Naïve $28.5M + Sapiom $35M (agent orchestration) — used as a brief secondary beat.
+
+Podcasts (last 14d):
+- ✅ **CHOSEN** — The Cognitive Revolution, "Nathan Goes to China – Part 2" (Aug 2) — in-window, concrete argument chain, directly reinforces the China/open-weights lead.
+- WhynotTV — stale (latest May 1); confirmed, skipped (matches standing memory note).
+- Dwarkesh — on August hiatus (latest June 30); unavailable.
+- Latent Space "Inference is the new training" (Aug 3) — shipped 08-06; skipped.
+- Ramin Hasani / Liquid AI (Cognitive Revolution) — July 4, outside 14-day window; deferred.
+
+No source outages this run. Stubs written (`.rss-item.xml` validated as well-formed, `.commit-msg`); no TTS/publish/feed-edit/commit performed per SKIP_TTS convention.
+=== 2026-08-08T02:40:29-07:00 done  jinglin-ai-pulse (exit 0) ===
