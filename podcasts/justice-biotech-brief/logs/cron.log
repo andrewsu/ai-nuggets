@@ -1953,3 +1953,34 @@ Files written (SKIP_TTS mode — no TTS/publish/feed/commit; orchestrator finali
 
 No source hard-failed this run.
 === 2026-08-07T03:17:26-07:00 done  justice-biotech-brief (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-08-08T02:40:10-07:00 start justice-biotech-brief ===
+Both stubs are well-formed. In SKIP_TTS mode I stop here — no TTS, R2 publish, feed edit, or commit (the orchestrator handles those after batch TTS). Here is the run's audit record.
+
+---
+
+## Justice's Biotech Brief — 2026-08-08 run summary
+
+**Episode shipped (script + stubs written; SKIP_TTS batch mode):**
+`2026-08-08-im1240-captn3-masked-trispecific-cd3-5t4-nkg2a-tce-nk-engager`
+**IM1240** — Purple Biotech's Aug-7 Q2 update disclosed preclinical data on a **capped-CD3 × 5T4 × NKG2A trispecific** (CAPTN-3 platform) that engages both T cells and NK cells: masked CD3 arm to widen the therapeutic window; NHP data showing ~8× half-life / 16× exposure vs. uncapped and minimal IL-6/TNF-α at 10 mg/kg vs. cytokine release at 0.03 mg/kg uncapped; all patient-derived tumor samples responsive (incl. PD-1- and checkpoint-resistant). Directly on his stated "trispecific T-cell engagers / new approaches" interest.
+
+### Candidate funnel
+
+**bioRxiv** (details API, full 2-day corpus: 245 on 08-07 + 13 on 08-08 = 258 scanned; keyword-filtered title+abstract → 14 hits, ~8 spurious ["nectin"→bat echolocation, "adc"→age-related change, etc.]):
+- BCL11B ablation in CD8 TILs blocks exhaustion / boosts stemness (immunology, 08-07) — strong fit **but full body not yet rendered** (abstract-only via API and r.jina.ai <60 KB) → **ineligible today, deferred**.
+- Spatial multi-omics of immunosuppressive macrophage–T-cell interactions in AML (08-07) — not rendered → deferred.
+- Myeloid-targeted RNA nanotherapeutics rewire cholesterol → anti-tumor immunity, GBM (08-07) — not rendered → deferred.
+- Immune-metabolic PET/MRI under combined immunotherapy + anti-angiogenic (08-07) — imaging, VEGF-adjacent; not rendered → deferred.
+- *All Aug-7 preprints are fresh v1s and not-yet-rendered — the known recency/rendering trap; none pass the full-text eligibility gate.*
+
+**News / press (last 1–2 days):**
+- **Purple Biotech Q2 — IM1240 trispecific** (globenewswire, 08-07) — **CHOSEN.** Fresh, on-target, primary source readable in full.
+- Replimune/Tudriqev (RP1) FDA melanoma approval (BioPharma Dive, 08-06) — **already shipped 08-07 (tudriqev episode)**, excluded as duplicate.
+- Whitehawk Q2 earnings, ADC pipeline (08-06) — earnings mention only, no data; too thin.
+- Intellia ATTR gene-therapy safety signal (08-07); Takeda narcolepsy/orexin approval (08-07) — off-beat for Justice.
+- AbelZeta C-CAR168 CD20/BCMA bispecific CAR-T, lupus nephritis (07-27); Allogene ALLO-329 Nature Comms (04-15); Oblenio LBL-051 trispecific (08-04) — all **out of the 1–2-day window**, excluded.
+
+**Funders:** ARPA-H — one Aug-6 item (autonomous robotic stroke surgery), off-beat. NIH/NSF press pages — WebFetch 403 (transient block); noted as gap, not fatal given news coverage carried the day.
+
+No source outages beyond the NIH/NSF 403. Content bar met via the news axis; bioRxiv contributed only deferrals today.
+=== 2026-08-08T02:50:45-07:00 done  justice-biotech-brief (exit 0) ===
