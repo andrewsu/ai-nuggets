@@ -2949,3 +2949,28 @@ All six files are in place and the stubs are clean. Since `SKIP_TTS=1`, I've cor
 
 *Selection note:* The Replimune approval is the day's single biggest development and the payoff of a saga this show tracked (07-27/07-29/07-31); prior episodes covered the briefing docs and the adcomm vote, not the approval, so the Aug 6 accelerated approval is genuinely fresh — and the spotlight's frame (what an approval means vs. a vote; only the 2nd U.S. oncolytic; the post-Prasad single-arm bar) is distinct from earlier coverage. AI/Foresite buckets were quiet in-window, so the AI angle rode along as headline #5 (Recursion/Genentech) rather than the spotlight.
 === 2026-08-07T02:30:44-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-08T02:20:10-07:00 start calibr-briefing ===
+Both fragments are well-formed. Since `SKIP_TTS=1`, I've correctly stopped after writing the scripts and the four transient stubs — the orchestrator (`publish_pending.py`) will run batch TTS, publish to R2, update the feed, and commit. No TTS/publish/feed-edit/commit from me.
+
+## Run summary — calibr-briefing, 2026-08-08 (Saturday)
+
+Two episodes written (Headlines + Spotlight). `SKIP_TTS=1`, so scripts + `.rss-item.xml` + `.commit-msg` stubs written; batch TTS/publish/commit deferred to the orchestrator. RSS fragments validated as well-formed XML.
+
+**Episodes**
+- Headlines: `2026-08-08-pharma-headlines`
+- Spotlight: `2026-08-08-latigo-nonopioid-pain-ipo-spotlight` (full text read: Latigo IPO pricing, phase 2b / NEJM data, competitive landscape)
+
+**Candidate funnel**
+
+Sources scanned: BioPharma Dive homepage index (works via WebFetch), WebSearch across Fierce/Endpoints/STAT/BioSpace/Renaissance (most block direct WebFetch — used search snippets + reachable mirrors). No source outages.
+
+Shortlist (deduped against feed.xml — recent picks already shipped: Replimune RP1 8/7 & 8/6 & 7/31 & 7/29, Revolution Med RAS 8/6, Takeda orexin, Moderna flu 8/5, AZ-BMS merger 8/4, Attovia/Braveheart/Apnimed IPOs 8/6-8/7, Alkeus/Tarsus, J&J Sail 8/2, Novo ziltivekimab 8/1, Alnylam 8/3):
+- **Latigo Biotherapeutics** — upsized $345.6M IPO Aug 7, oral Nav1.8 non-opioid pain, NEJM phase 2, Journavx rival; **Foresite Capital investor** → **CHOSEN (spotlight + headline lead)**. Strongest: fresh, direct portfolio tie, mechanism-rich, category-defining.
+- **LifeMine Therapeutics** — $263M (Bezos/Gates/RA Capital), calcineurin-activation-inhibitor transplant drug, ML fungal-genome mining (Verdine) → headline #2
+- **Intellia** — HLA-allele culprit for CRISPR liver-tox (Aug 7), de-risking read → headline #3
+- **BioNTech** — Guido Oelkers named CEO, Sahin to new mRNA startup (Aug 3, still week's news) → headline #4
+- **Arrowhead** — bought PRV for plozasiran vs Ionis in sHTG (Aug 6) → headline #5
+- Considered/dropped: CDC director confirmation (policy, low portfolio relevance); Jasper/Kira (Jul 16, stale); Revolution compassionate-use demand (spotlight was 8/6); CSPC/AZ China plant, Vedanta (Aug 5, minor).
+
+Note: PROMPT's `memory/calibr-pipeline.md` still absent on host (known); used general Foresite/portfolio context instead.
+=== 2026-08-08T02:26:25-07:00 done  calibr-briefing (exit 0) ===
