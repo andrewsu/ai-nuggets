@@ -3144,3 +3144,39 @@ Nine-item episode written; audio/publish/feed/commit are deferred to the orchest
 - ○ Tau reduction in 5xFAD `10.64898/2026.08.03.741071` — dropped to avoid AD overload
 - ○ GLP-1R–Gs cryo-EM `10.64898/2026.08.03.742488`; Cell-permeable Gi inhibitor `10.64898/2026.08.02.742274`; NanoBiT GPCR platform `10.64898/2026.07.09.737439` — solid but lower-priority vs. the chosen set
 === 2026-08-07T03:21:54-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-08-08T02:50:10-07:00 start receptor-and-reason ===
+Everything is complete. Here is the final run summary (logged to cron.log).
+
+---
+
+## Receptor & Reason — 2026-08-08 — RUN COMPLETE (SKIP_TTS mode)
+
+**Artifacts written** (no TTS/publish/feed/commit — orchestrator handles those):
+- `scripts/2026-08-08-receptor-and-reason.md` (~2,014 spoken words, ~11–13 min, clean of URLs/DOIs)
+- `scripts/2026-08-08-receptor-and-reason.rss-item.xml` (placeholders `__LENGTH__` / `__DURATION__`; XML validated with namespaces)
+- `scripts/2026-08-08-receptor-and-reason.commit-msg`
+- `state/shipped.jsonl` — appended 11-item record (valid JSON)
+
+**Episode: 10 segments / 11 preprints.** 4 read in full text (LEAD + 3 material items); 7 abstract-only tail items (all self-contained, ≤75 s each, per PIPELINE multi-item carve-out).
+
+### Candidate funnel
+- **bioRxiv (Tier 1/2/3):** scanned full collection Aug 1–8 (~1,470 posts); 192 relevant-unshipped after keyword + category + dedup filter. Shortlisted ~14; opened full text on the material picks.
+- **arXiv (Tier 2):** shared cache (`/tmp/ai-nuggets-arxiv-cache.xml`, 02:00 pre-fetch) parsed for bio×agentic in-window; ~34 hits, mostly clinical-decision AI — none beat Tier 1. Notable-but-passed: CASCADE (agentic gene-regulatory perturbation), DelusionEval (chatbot delusion behaviors).
+- **Fetch note:** r.jina.ai 429'd on a parallel burst; recovered by serial fetching (memory updated).
+
+### Shortlist → decisions (● chosen)
+- ● Psilocybin excitatory-plasticity spatial map — `741703` (LEAD, full text)
+- ● GPR151 habenula orphan GPCR / inflammation-depression — `742327` (abstract)
+- ● Kappa-opioid PET in titi-monkey partner separation — `739928` (full text)
+- ● Mu-opioid availability × emotion-regulation fMRI — `739761` (abstract)
+- ● Dopaminergic state-vs-trait pessimism — `741818` (full text)
+- ● Guanosine metabolism / NDKs / GCH1 in Parkinson's — `741503` (full text, Ryan lab)
+- ● Pro-inflammatory microglia / IRF7 / minocycline in alcohol — `741570` (abstract)
+- ● Histamine-core/GABA-rim synaptic-vesicle architecture — `743008` (abstract)
+- ● Nesso-1 (Recursion) binding-affinity model — `742196` (abstract) + ● ClinOracle patient-cell GNN — `742378` (abstract) [paired comp-pharm beat]
+- ● ALTERD naturalistic psychedelic/cannabis/meditation/dream reports — `741354` (light closer, abstract)
+- ○ **Deferred (not-yet-rendered v1 full text):** multi-agent GPCR-lipid allosteric-site workflow `743397` (ideal agentic-pharma fit — revisit when body renders); parabrachial oxytocin-receptor social-distress circuit `743398`.
+- ○ Not selected: NMDA-density AD continuum `743051`, DNA-nanocage levodopa `742731`, fentanyl self-admin `741697`, AD-resilience oligogenic `742644` (topic saturation / weaker fit).
+
+No source outages. Recency window (7 days) respected; no Tier 4 fallback needed.
+=== 2026-08-08T03:06:38-07:00 done  receptor-and-reason (exit 0) ===
