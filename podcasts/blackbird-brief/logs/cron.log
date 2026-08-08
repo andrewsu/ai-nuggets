@@ -1395,3 +1395,31 @@ Direct portfolio catalysts: **twelfth straight quiet day** — nothing new lande
 
 One note for you: several claude.ai connectors (Asana, BioRender, Canva, Dropbox, Smartsheet, Synapse.org, Zoom, Adobe) are unauthorized — not needed for this run, but they'd require authorization via claude.ai connector settings if you ever want them here.
 === 2026-08-07T02:20:40-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-08T02:10:09-07:00 start blackbird-brief ===
+Episode written and staged for the batch orchestrator. Final run summary below (this is the cron.log audit record).
+
+---
+
+**Blackbird Brief — Portfolio Watch, 2026-08-08 (Saturday)**
+
+**Episode:** `2026-08-08-portfolio-watch` — quiet-tape week-ahead edition (~1,160 words / ~6–7 min). Script + `rss-item.xml` stub (`__LENGTH__`/`__DURATION__` placeholders) + `commit-msg` written. **SKIP_TTS=1** → no TTS/publish/feed-edit/commit (orchestrator handles). Portfolio memory updated with the 08-08 verification entry.
+
+**Disposition: THIRTEENTH straight quiet direct-catalyst day.** No in-window (08-05→08-08) readout/deal/filing landed on a Blackbird company, AND all three genuinely in-window items were already aired — so nothing re-covered. Rather than pad or manufacture, ran a candid Saturday week-ahead on the two hard, dated calendar markers that need action now.
+
+**Candidate funnel (Stream A — industry press sweep via research agent; Fierce/Endpoints/STAT/BioPharma Dive/GEN/BioBuzz + per-program target/modality/company queries + general tape):**
+
+In-window items found — all ALREADY AIRED, not re-covered:
+- Two China pediatric gene-editing deaths (HuidaGene HG302 disclosed 08-05) — *08-07's lead*
+- Revolution Medicines Q2 blowout + daraxonrasib NDA acceptance (08-05 a.c.) — *08-06's lead*
+- AZ–Bristol Myers merger rumor — covered 08-06, denied 08-05; 08-06/07 was follow-on reaction only → story settled
+
+Chosen content (forward-looking, both verified fresh, neither a re-air):
+- ✅ **LEAD — Ultragenyx DTX401 AAV gene therapy (GSD type Ia) FDA decision, PDUFA Aug 23** → Aletira read. Fresh reframe vs 08-01/08-07: first systemic-AAV verdict to land *after* the safety backdrop darkened this week = a live test of the agency's risk tolerance; outcome-conditional read; SELEXON caveat kept; timing input for Geoff Lynn's raise. (GlobeNewswire 3242633; corroborated stocktitan/BioSpace)
+- ✅ **SECOND — HHS OIG anti-kickback/beneficiary-inducement RFI, comments due Aug 24** → 1104health. Needs a filing from Rose Wang's team; drafting starts this weekend. Accuracy note logged: RFI headline is *participant* remuneration, but it reopens the AKS safe-harbor framework 1104health's model lives in. (Federal Register 2026-06-24, doc 2026-12676; Hall Render/H&K/Ropes & Gray confirm 08-24)
+
+Standing board, one line each (no re-coverage): GPR52 NewCo (Nxera rival still unsold, reprieve holds); RNA translation-activator platform (CAMP4 FIH + funded 08-04, 3-axis wedge is this week's task); aSKY (nothing new since 08-06 RevMed Q2, RAS bar rising); GCPII/IBD (TL1A crowding, differentiate on enteric-pain).
+
+Sources failing: none — full sweep completed.
+
+Tomorrow (Sunday) is the two-episode day: weekly **Sourcing Radar** + **Portfolio Watch**.
+=== 2026-08-08T02:19:43-07:00 done  blackbird-brief (exit 0) ===
