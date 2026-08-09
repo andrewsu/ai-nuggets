@@ -1545,3 +1545,40 @@ Podcasts (last 14d):
 
 No source outages this run. Stubs written (`.rss-item.xml` validated as well-formed, `.commit-msg`); no TTS/publish/feed-edit/commit performed per SKIP_TTS convention.
 === 2026-08-08T02:40:29-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-09T02:30:07-07:00 start jinglin-ai-pulse ===
+All three SKIP_TTS artifacts are written and the RSS stub validates. Per SKIP_TTS mode, I skip TTS, R2 publish, feed edit, and commit — the orchestrator handles those after batch TTS.
+
+Here is the run's audit record.
+
+---
+
+**Ollie's AI Pulse — 2026-08-09 — SHIPPED (SKIP_TTS mode)**
+
+Episode: `2026-08-09-discovery-loop-and-the-recursive-self-improvement-consensus`
+Script 1,747 spoken words (~11–12 min at 1.2×). Wrote `.md` + `.rss-item.xml` (placeholders present, XML validates) + `.commit-msg`. No prior-episode overlap (grep-checked Discovery Loop, Kokotajlo, Lumilens, recursive-self-improvement lead).
+
+**Segments:** Twitter Pulse — Google exodus / Discovery Loop + the recursive-self-improvement convergence (Clark/Kaplan/Pachocki). Money Moves — Lumilens optical interconnect vs. Discovery Loop's seed-on-a-thesis. Deep Cut — Lawfare *Scaling Laws*, Kokotajlo "AI 2040: Plan A" (Aug 7).
+
+**Candidate funnel:**
+
+*Twitter/discourse (last 48h, plus live analysis of a Wed-Aug-5 break):*
+- ✅ **CHOSEN (lead)** — Dean/Ghemawat/Le/Vinyals leave Google → Discovery Loop; DeepMind reshuffle (Hassabis→Chair, Kavukcuoglu→SVP). Verified: TechCrunch, Bloomberg, GeekWire, NYT quote, Spyglass/Siegler analysis. Directly in Ollie's wheelhouse (automate science/drug discovery).
+- ✅ **CHOSEN (convergence)** — Recursive self-improvement now stated openly by labs: Clark 60%/2028, Kaplan, Pachocki (TIME, Aug 7).
+- ⬇️ Gemini Robotics 2 whole-body humanoid (Aug 7) — real but thinner take; folded out.
+- ⬇️ OpenAI GPT-5.6 Sol / unlimited free chat (Aug 8) — product launch, low intellectual substance per PROMPT "avoid."
+- ⬇️ Qwen3.8-Max open-source drop — covered 08-08; excluded.
+
+*Investment news (last 7d):*
+- ✅ **CHOSEN** — Lumilens $700M+ Series C, ~$5.5B val, optical interconnect (stealth exit Aug 6). Verified: BusinessWire/SiliconANGLE/finsmes.
+- ✅ **CHOSEN (contrast)** — Discovery Loop seed (Radical/Khosla/Kleiner/Lightspeed/Doerr/Alphabet).
+- ⬇️ Volta $300M/$2.4B (Aug 4) — already covered in 08-06 episode; excluded to avoid repeat.
+- ⬇️ Chai Discovery $400M, Fireworks $1.5B — mid-July, outside 7-day window.
+
+*Podcasts (last 14d):*
+- ✅ **CHOSEN** — Lawfare *Scaling Laws*, Kokotajlo "AI 2040: Plan A" (**Aug 7**), full argument chain + quotes fetched from lawfaremedia.org.
+- ⬇️ No Priors/Karpathy (Mar 2026), OpenAI Pod Ep.10 (Nov 2025), 80,000 Hours/Kokotajlo robot-economy (Oct 2025), Latent Space "adversarial-reasoning" (Feb 2026) — all outside 14-day window.
+- ⬇️ Interconnects "open models recap" (fresh) — thematically redundant with recent open-weights episodes.
+- WhynotTV (named primary) — still stale, no in-window episode (consistent with standing memory note).
+
+No source outages this run; all picks read in full at their primary source.
+=== 2026-08-09T02:39:46-07:00 done  jinglin-ai-pulse (exit 0) ===
