@@ -1423,3 +1423,34 @@ Sources failing: none — full sweep completed.
 
 Tomorrow (Sunday) is the two-episode day: weekly **Sourcing Radar** + **Portfolio Watch**.
 === 2026-08-08T02:19:43-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-09T02:10:07-07:00 start blackbird-brief ===
+All memory edits landed cleanly. Both episodes are fully prepared. Since `SKIP_TTS=1` (batch mode), I correctly skipped TTS, R2 publish, feed edit, and commit — the orchestrator (`publish_pending.py`) will do those from the stub files after batch TTS. Here's the final audit record.
+
+---
+
+## Blackbird Brief — run complete for Sunday, 2026-08-09 (Sunday double)
+
+**Mode:** `SKIP_TTS=1` batch mode → wrote scripts + `.rss-item.xml` + `.commit-msg` stubs for both episodes; no TTS / publish / feed edit / commit (orchestrator handles those). Memory updated. No `git add`/`git commit`/`git push`.
+
+**Files written** (`podcasts/blackbird-brief/scripts/`):
+- `2026-08-09-radar-umb-hamza-slc49a3-heme-transporter.{md, rss-item.xml, commit-msg}`
+- `2026-08-09-portfolio-watch.{md, rss-item.xml, commit-msg}`
+- Updated `memory/blackbird-portfolio.md` (new top log entries + Aletira Intellia datapoint)
+
+### Episode A — Sourcing Radar (weekly; window 2026-08-02→08-09)
+**Candidate funnel** (Stream B, corresponding-author affiliation sweep via research agent):
+- bioRxiv: 1,322 scanned → 17 genuine JHU/UMB/Lieber/KKI corresponding hits (1 spurious "Lieber" surname discarded); most were methods/tools/basic-science.
+- medRxiv: 363 scanned → 7 hits, all clinical-epi/methods — **no asset leads**.
+- Substantive shortlist:
+  - **[CHOSEN — LEAD, full text read]** Hamza (UMB SoM) — SLC49A3 as a novel conserved heme exporter; 10.64898/2026.07.31.742071 (v1 dated 08-03). Candid read: **watch-not-build** — early target-ID, no molecule, and COI discloses PI is founder/president of Rakta Therapeutics (heme-transporter diagnostics) → FTO/alignment question first.
+  - **[DEFERRED — not lead-eligible today]** Elisseeff (JHU, serial founder) — uterine-fibroid cellular-senescence atlas; 10.64898/2026.08.06.743362 (v1 08-07). Scientifically most investable (huge underserved market), but v1 body not yet rendered (transient) → revisit next week; descriptive atlas, not an asset.
+  - [pass] Fuerst (UMB IBBR) — HCV E1E2 nanoparticle vaccine (generic scaffold, weak commercial pull).
+- Journals / JHTV / Hopkins-Medicine / Lieber newsrooms: nothing new dated in-window.
+
+### Episode B — Portfolio Watch (daily; window 2026-08-06→08-09)
+**Candidate funnel** (Stream A sweep across Fierce/Endpoints/STAT/BioPharma Dive/GEN/BioBuzz + per-program target/modality/company queries): **14th straight quiet direct-catalyst day** — nothing landed squarely on a Blackbird company.
+- **[CHOSEN — LEAD]** Intellia Q2 update (08-06; verified BioSpace + GlobeNewswire 3340073): HLA-C\*05:01 tied to the worst liver tox from nex-Z (systemic LNP in-vivo CRISPR, ATTR). Genuinely fresh, in-window, not previously aired → landscape/watch read for **Aletira** (candid caveat kept: host-immune axis, not SELEXON's expression-selectivity axis; new angle = precision-by-patient-selection rhymes with precision-by-cell-selectivity).
+- Rejected as out-of-window/already-aired: RevMed Q2 (08-05, aired 08-06); CAMP4 tranche (08-04, aired 08-05); China gene-editing deaths (aired 08-07); AZ–BMS rumor (settled); Otarmeni OTOF (Apr 2026). Standing calendar (Aug 23 Ultragenyx PDUFA; Aug 24 OIG comment deadline) kept to one-liners — covered in full 08-08, no re-coverage.
+
+**No source-side outages this run.** Both bioRxiv paper URLs verified against the details API (pre-commit hook will re-check on the orchestrator's commit).
+=== 2026-08-09T02:28:29-07:00 done  blackbird-brief (exit 0) ===
