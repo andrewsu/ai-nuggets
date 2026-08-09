@@ -3232,3 +3232,28 @@ All artifacts are written and validated. `SKIP_TTS=1` is set, so per PIPELINE I'
 
 The EBI GrEBI/MCP paper is the standout deferred candidate — it should be picked up as soon as its bioRxiv body HTML renders.
 === 2026-08-08T02:09:37-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-09T02:00:07-07:00 start biomedical-agentic-ai ===
+Done. In SKIP_TTS mode I've written the three required artifacts (script, RSS-item stub with `__LENGTH__`/`__DURATION__` placeholders, and commit-msg stub); the orchestrator handles TTS, R2 publish, feed insertion, and the commit. Here is the run record.
+
+---
+
+**Episode shipped (SKIP_TTS mode): `2026-08-09-epibench-llm-antibody-epitope-reasoning`**
+Title: *EpiBench — a benchmark shows frontier LLMs still can't ground antibody-epitope reasoning in sequence* (arXiv 2608.06022, posted 2026-08-06). Spoken body 845 words (~5 min). Full text read via arXiv PDF (mutool).
+
+**Candidate funnel**
+
+- **bioRxiv** (details API, 2026-08-06→08-09, full collection): 524 scanned, 52 keyword hits. Strongest on-theme candidates were all v1s posted 08-07 with **bodies not yet rendered** (r.jina.ai returned <60KB = abstract-only) → **deferred per full-text eligibility gate**, live for later days:
+  - `AI semantics for biomedical data integration` (EMBL-EBI; ontologies + KG + MCP for multi-omic queries) — 10.64898/2026.08.03.742514 — deferred (not-yet-rendered). *Best on-theme fit; revisit.*
+  - `Collaborative multi-agent intelligence uncovers subtype-selective allosteric GPCR sites` — 10.64898/2026.08.06.743397 — deferred.
+  - `PhysioMap: ontology-grounded causal knowledge graph of human physiology` (Hoehndorf) — 10.64898/2026.08.03.742471 — deferred.
+  - `Charting the small-molecule universe from mass spectra with neuro-symbolic AI` (AIMe) — 10.64898/2026.08.05.743095 — deferred.
+- **arXiv** (shared daily cache, 500 entries): biomedical-relevance shortlist of readable PDFs:
+  - `EpiBench: Can LLMs Understand Epitopes for Antibody Drug Discovery?` — 2608.06022 — **CHOSEN** (readable, concrete, opinionated negative result, fresh domain).
+  - `Tracing the Heart / nMAS` multi-agent HF feature engineering — 2608.06366 — passed (validated on 500 *dummy* records, weak significance).
+  - `EviGraph: Evidence-Guided Autonomous Research Agents` — 2608.04738 — passed (not biomedical; theme overlaps last week's DAGForge/evidence-grounding run).
+  - `CASCADE` — 2608.05359 — excluded (already shipped 2026-08-07).
+- **PubMed** (edat 08-04→08-09): 97 hits; mostly network-pharmacology docking studies, LLM-in-education/chatbot pieces. Nothing agentic-biomedical dominant (`CGX` KG retrieval for heart failure noted but narrow).
+- **ChemRxiv / news / policy (ARPA-H, NIH, NSF, HHS):** not separately surveyed — a clearly dominant readable arXiv pick was in hand and the recency window was thin; noted as a small recall gap.
+
+Selection rationale: every perfectly on-theme item (agentic + KG/ontology/data-integration) was a not-yet-rendered v1 deferral. EpiBench was the strongest **fully-readable** candidate — a leak-controlled benchmark with a hard, useful take (frontier LLMs at coin-flip AUROC for epitope discrimination; region recall collapsing 81%→13% as antigens lengthen; escape prediction barely above random; specialist BepiPred-3.0 still wins). Revisit the four deferred bioRxiv preprints — especially the EMBL-EBI data-integration paper — once their bodies render.
+=== 2026-08-09T02:08:39-07:00 done  biomedical-agentic-ai (exit 0) ===
