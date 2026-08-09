@@ -1984,3 +1984,29 @@ Both stubs are well-formed. In SKIP_TTS mode I stop here — no TTS, R2 publish,
 
 No source outages beyond the NIH/NSF 403. Content bar met via the news axis; bioRxiv contributed only deferrals today.
 === 2026-08-08T02:50:45-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-09T02:40:07-07:00 start justice-biotech-brief ===
+Done. In SKIP_TTS mode the orchestrator handles TTS, R2 publish, feed insertion, and commit — I've written the script plus the two required stubs. Final audit summary:
+
+---
+
+**Justice's Biotech Brief — 2026-08-09**
+
+**Selected:** BI-1808 — first-in-class anti-TNFR2 antibody takes FDA Fast Track (Aug 7) in platinum-resistant ovarian cancer with pembrolizumab, on a Treg-depleting / checkpoint-reviving mechanism (interim Phase 2a: 24% chemo-free ORR, 56% DCR, 10.3-mo mPFS vs ~8% pembro-monotherapy benchmark).
+
+**Candidate funnel**
+
+*bioRxiv* (window 2026-08-08 today+yesterday; 08-09 = 0 posts, 08-08 = 21 posts; full 08-07 collection also scanned):
+- 2 keyword hits, both spurious/off-target — a cocaine-aversion GWAS ("adc" substring) and a re-versioned June NAT10 HNSCC paper. 0 on-target. No eligible preprint.
+
+*News / press / funders* (Fierce, Endpoints, STAT all block WebFetch+jina; used BioPharma Dive, BioSpace press-release index, WebSearch, ARPA-H/NIH pages; NIH page 403'd):
+- BioInvent — BI-1808 anti-TNFR2 FDA Fast Track, platinum-resistant ovarian + pembro (08-07) — **CHOSEN**. On-target (checkpoint/Treg immuno-oncology), fresh, full text readable.
+- Janux Therapeutics Q2 (08-07) — masked TCE pure-play; JANX008 EGFR-TRACTr **discontinued**, JANX007 data pushed to H1'27. Status update, no fresh data — passed.
+- BioNTech/BMS pumitamig (BNT327) PD-L1×VEGF SCLC "first global data" (Fierce headline) — traced to a **2025** BMS release; same asset already covered 08-05. Out of window/duplicate.
+- Ivonescimab HARMONi Western OS update (Summit) — late-July, already featured 07-23. Out of window.
+- BlossomHill $150M IPO, Latigo $345.6M IPO (08-07) — off-target (EGFR macrocyclics; Nav1.8 pain).
+- J&J/Sail in-vivo CAR-T; argenx/Forte FB102; Tudriqev RP1 approval — all already featured (07-31, 07-27, 08-07).
+
+*Source failures:* NIH news-releases page HTTP 403 (WebFetch); Fierce Biotech blocked on both WebFetch and r.jina.ai (DDoS-abuse block). Compensated via BioPharma Dive + BioSpace + targeted search; noted, not fatal.
+
+Weekend was genuinely thin (BioSpace's newest press releases dated 08-07, at the 2-day edge of the news window). BI-1808 was the freshest genuinely on-target, full-text-readable item and cleanly distinct from recent episodes — it beat the field. Files written: `.md` script, `.rss-item.xml` (placeholders `__LENGTH__`/`__DURATION__`, XML validated), and `.commit-msg`.
+=== 2026-08-09T02:47:29-07:00 done  justice-biotech-brief (exit 0) ===
