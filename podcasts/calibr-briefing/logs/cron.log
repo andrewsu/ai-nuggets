@@ -2974,3 +2974,32 @@ Shortlist (deduped against feed.xml — recent picks already shipped: Replimune 
 
 Note: PROMPT's `memory/calibr-pipeline.md` still absent on host (known); used general Foresite/portfolio context instead.
 === 2026-08-08T02:26:25-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-09T02:20:07-07:00 start calibr-briefing ===
+Both RSS stubs are well-formed. Everything for today's episode is in place. Since `SKIP_TTS=1`, I've stopped before TTS/publish/feed/commit — the batch orchestrator (`publish_pending.py`) will generate audio, publish to R2, insert the feed items, and commit each episode.
+
+## Run summary — calibr-briefing, Sunday, August 9, 2026
+
+**Two episodes written (SKIP_TTS batch mode):**
+- `2026-08-09-pharma-headlines` — 5-item roundup
+- `2026-08-09-garetosmab-fop-fda-spotlight` — deep dive on Regeneron's garetosmab / FOP
+
+Each has its `.txt` script, `.rss-item.xml` stub (with `__LENGTH__`/`__DURATION__` placeholders), and `.commit-msg` stub. No TTS, no R2 publish, no feed edit, no commit — left to the orchestrator.
+
+**Candidate funnel** (Saturday→Sunday is a genuinely quiet news window; multiple sources confirmed Aug 6–7 as the newest wire):
+
+- **BioPharma Dive** (homepage via WebFetch, ~10 headlines scanned): freshest were Aug 7 items — most already shipped this week (Replimune peak-sales, Intellia HLA, IPO tally). Survivor: $6B YTD IPO tally (macro note).
+- **BioSpace** (homepage via WebFetch, ~5 Aug 7 items): Vistagen fasedienol phase 2 fail, Intellia (shipped), Ensoma layoffs, Replimune. Survivor: Vistagen.
+- **Fierce Biotech** — HTTP 403 (WebFetch + direct both blocked, known access issue); covered via targeted WebSearch instead. Not a recall gap: the Regeneron OPTIMA/FOP story surfaced through Fierce's search-indexed coverage.
+- **WebSearch sweeps** (biotech Aug 8–9, FDA/PDUFA week of Aug 10, AI drug discovery, Foresite portfolio, China licensing): garetosmab FOP catalyst, BlossomHill IPO, Structure oral GLP-1 phase 3 start.
+- **Foresite portfolio news page** — nothing new since June 12, 2026; no fresh portfolio-specific item today (Latigo already shipped Aug 8).
+
+Shortlist (post-filter):
+- Regeneron **garetosmab** — FDA decision this month for FOP; anti-Activin A antibody; 2020 phase 2 deaths → clean phase 3 (OPTIMA, 90–94% lesion cut). ← **SPOTLIGHT + headline #1**
+- **BlossomHill Therapeutics** — upsized $150M IPO (BLSM), macrocyclic pan-EGFR, Jean Cui/Turning Point; soft debut. ← **headline #2**
+- **Structure Therapeutics** — first phase 3 patients dosed, oral GLP-1 aleniglipron (obesity). ← **headline #3**
+- **Vistagen** — fasedienol phase 2 (nasal pherine, social anxiety), safety met but underpowered. ← **headline #4**
+- **$6B YTD biotech IPO** record. ← **headline #5**
+- Not selected (stale, June): Ipsen/Kartos, Zymeworks/Theravance, KKR/Integer, Curium/Lantheus.
+
+Why garetosmab won the spotlight: freshest genuinely-imminent catalyst (this-month PDUFA), full text obtainable and read (Regeneron OPTIMA + BLA releases, LUMINA-1 safety history, Sohonos/palovarotene competitive limitations), and analytically richest — a rational ligand-level mechanism, a near-death safety scare turned clean phase 3, and a first-line-standard fight against a flawed incumbent, with the label as the real story.
+=== 2026-08-09T02:29:23-07:00 done  calibr-briefing (exit 0) ===
