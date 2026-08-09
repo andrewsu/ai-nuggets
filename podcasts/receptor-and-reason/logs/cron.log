@@ -3180,3 +3180,35 @@ Everything is complete. Here is the final run summary (logged to cron.log).
 
 No source outages. Recency window (7 days) respected; no Tier 4 fallback needed.
 === 2026-08-08T03:06:38-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-09T02:50:07-07:00 start receptor-and-reason ===
+Everything is in place. Script is clean for audio (~2,140 words ≈ 12 min delivered at 1.2×, comparable to recent episodes). In SKIP_TTS mode the orchestrator handles TTS, R2 publish, feed insertion, and commit — my job (script + `.rss-item.xml` + `.commit-msg` stubs + ledger append) is complete.
+
+---
+
+## Run summary — Receptor & Reason, 2026-08-09 (Sunday)
+
+**Published:** `2026-08-09-receptor-and-reason` — 9 segments, all bioRxiv (Tier 1/3). Script, RSS-item stub, and commit-msg stub written; dedup ledger appended (line 79). No TTS/publish/commit (SKIP_TTS=1, orchestrator finishes).
+
+### Candidate funnel
+
+**bioRxiv (Tier 1/2/3)** — full 7-day window (Aug 3–9) pulled with pagination: 193/336/235/258/245/21/0 = **1,288 preprints scanned**; 691 passed a broad relevance sweep, re-scored to a ~60-item high-precision shortlist (pharmacology / drug discovery / psychedelics / agentic-AI / CNS mechanism). Cross-checked against 78 prior shipped records.
+
+**arXiv (Tier 2)** — daily cache present (14.7k lines, 02:00). 143 agentic+bio items in window; near-all generic agentic-AI infra with no CNS/neuropsychopharm signal (CASCADE regulatory-network agent and OPERA optical-lab agent were the only biomedical touches, both off-topic). No pick — Tier 1 dominated.
+
+**Substantive shortlist (readable full text unless noted):**
+- ✅ **CHOSEN LEAD** — Cellular/synaptic actions of dopamine during behavior (`742858`) — in vivo whole-cell shows phasic DA doesn't tune excitability; gates D1-SPN learning plasticity
+- ✅ Sex-divergent NMDA-receptor loss across AD continuum (`743051`)
+- ✅ AMPAR-PAM CX1632 in Rett — neonatal window (`742773`)
+- ✅ GLP-1R-Gs precoupled HDX-MS dynamics (`742488`)
+- ✅ CryoLigATE cryo-EM ligand-density DL (`742718`)
+- ✅ De novo ligand-induced conformational switch / biosensor (`742366`)
+- ✅ CYP450 pharmacogene variant-effect predictors break down (`741616`)
+- ✅ Bmal1 dorsomedial-striatum × alcohol, ovarian-hormone-dependent (`742221`, abstract-only tail)
+- ✅ **CLOSE** — Protein restriction biases NAc dopamine toward protein food (`741998`, abstract-only tail)
+
+**Deferred (full text not-yet-rendered — eligibility gate; re-check later):**
+- Collaborative multi-agent GPCR-lipid-interface allosteric sites (`743397`, posted 08-07) — would have been the LEAD; body unrendered (API abstract-only + r.jina.ai 26KB abstract page). Strong revisit candidate.
+- α-Synuclein corticostriatal presynaptic aggregates impair glutamate transmission (`742532`, posted 08-07) — 31KB, unrendered.
+
+**Not selected:** NanoBiT GPCR platform (`737439`, v2 — core content pre-window); numerous single-cell-foundation-model / non-CNS docking items downweighted as off-audience.
+=== 2026-08-09T03:03:03-07:00 done  receptor-and-reason (exit 0) ===
