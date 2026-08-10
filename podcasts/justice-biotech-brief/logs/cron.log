@@ -2010,3 +2010,61 @@ Done. In SKIP_TTS mode the orchestrator handles TTS, R2 publish, feed insertion,
 
 Weekend was genuinely thin (BioSpace's newest press releases dated 08-07, at the 2-day edge of the news window). BI-1808 was the freshest genuinely on-target, full-text-readable item and cleanly distinct from recent episodes — it beat the field. Files written: `.md` script, `.rss-item.xml` (placeholders `__LENGTH__`/`__DURATION__`, XML validated), and `.commit-msg`.
 === 2026-08-09T02:47:29-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-10T02:40:10-07:00 start justice-biotech-brief ===
+I've now surveyed every source the brief specifies. Here's the outcome.
+
+## Decision: No episode today — content bar not met
+
+Justice's Biotech Brief requires a **fresh (Aug 9–10), on-topic (IO / antibody / TCE / ADC / VEGF×PD-(L)1 / JAK / CAR-T), full-text-readable** item. After a full sweep, the only on-topic fresh candidates are two bioRxiv preprints whose bodies bioRxiv hasn't finished rendering — a transient deferral, not a rejection — and there's no on-topic news in the window. Per PIPELINE.md, full text is a hard eligibility gate and "no fresh candidate today, skipping" is the correct call over reaching back for a stale item. No script, stubs, or commit were produced (SKIP_TTS mode).
+
+## Candidate funnel — 2026-08-10
+
+**bioRxiv** (full 2-day collection pulled: 135 papers on 08-09 + 6 on 08-10 = 141 scanned; keyword-filtered on title+abstract):
+- `B7-H4 represents a site-specific immunotherapy target in small bowel GIST` (10.64898/2026.08.04.742601, immunology, posted live 08-09) — **on-topic, DEFERRED**: v1 body not yet rendered (API → abstract only; r.jina `.full` returns abstract+chrome only, no Results/Methods; PDF-via-jina empty). Re-check on a later day.
+- `Siglec-15 is a glyco-immune checkpoint in prostate cancer` (10.64898/2026.08.07.743480, cancer biology, posted 08-10) — **on-topic, DEFERRED**: same not-yet-rendered state. Re-check on a later day.
+- `First-in-Class Cereblon-Recruiting RIPK1 Degraders` (10.64898/2026.04.10.717852) — discarded: spurious "checkpoint" keyword; it's an old April revision reposted, out of window.
+
+**News** (BioPharma Dive homepage via WebFetch ✓; Endpoints homepage + last-48h list via r.jina ✓; Fierce homepage WebFetch 403 → covered via search; ~6 targeted web searches):
+- Newest Endpoints items in the 48h window are all off Justice's therapeutic focus: BINSA China-deal Senate bill, "China biotech will slow" commentary, Grail screening-test adcomm (Aug 8, liquid biopsy — not IO/antibody), and a Saturday newsletter roundup. No fresh bispecific/TCE/ADC/VEGF/JAK readout or deal.
+- On-topic clinical items that surfaced (Cullinan TCE update, Genmab epcoritamab Ph3, Tudriqev/Replimune, Attovia IPO) are all Aug 6–7 — outside the 1–2 day news window and/or already shipped. Not reached for.
+
+**Journals**: no fresh (Aug 9–10), on-topic, full-text-readable paper surfaced across searches.
+
+**Funder pages**: ARPA-H (WebFetch ✓) newest Aug 6; NIH (WebFetch 403 → r.jina ✓) newest Aug 7 (NHGRI director appointment, off-topic); NSF (WebFetch ✓) newest Aug 7, non-biomedical. Nothing in-window on-topic.
+
+**Sources failed**: Fierce Biotech + NIH homepage WebFetch returned 403 (known blockers) — both routed around via web search / r.jina, so no recall gap. No hard source outages.
+
+The two deferred preprints are genuinely on-brief and should be picked up as soon as their full text renders on a subsequent run.
+=== 2026-08-10T02:46:31-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-10T02:46:31-07:00 no usable output for justice-biotech-brief; retrying in 180s ===
+=== 2026-08-10T02:49:31-07:00 start justice-biotech-brief (retry 1) ===
+Done. All three files written; SKIP_TTS mode means I stop here (no TTS, publish, feed edit, or commit — the orchestrator handles those). Here's the run record.
+
+---
+
+**Justice's Biotech Brief — 2026-08-10**
+
+**Episode shipped:** Lacutamab — first-in-class anti-KIR3DL2 antibody heads into a confirmatory Phase 3 (TELLOMAK-3) in cutaneous T-cell lymphoma on a Sobi partnership.
+- Script: `scripts/2026-08-10-lacutamab-kir3dl2-sobi-tellomak-3-ctcl-sezary.md`
+- Stubs written (`.rss-item.xml` + `.commit-msg`); XML validated well-formed. No commit (SKIP_TTS=1 → `publish_pending.py` handles TTS/R2/feed/commit).
+- Primary source: Innate Pharma press release, Aug 10, 2026 (fetched in full). Grounding data: TELLOMAK Phase 2 (Sézary ORR ~43%, mDoR 25.6 mo, gr3+ TRAEs <10%; MF ORR ~20%).
+
+**Candidate funnel**
+
+*bioRxiv* (details API, full collection): 2026-08-09 = 30 entries, 2026-08-10 = 6 entries (thin weekend). Relevance survivors:
+- Siglec-15 glyco-immune checkpoint in prostate cancer (2026-08-10 coll.) — on-theme (checkpoint) but target-discovery biology, not therapeutic development; not selected.
+- B7-H4 site-specific immunotherapy target in small-bowel GIST (2026-08-09 coll.) — on-theme but target-discovery; not selected.
+- Others (kinase-motif cancer targets, engineered protein circuits, Piezo1/STING, IL-17A antiviral) — off Justice's core beat.
+
+*News / press (last 1–2 days):* Fierce Biotech homepage 403s WebFetch (per memory); worked around via BioPharma Dive, BioSpace, StockTitan, PRNewswire/GlobeNewswire, RTTNews, Innate IR.
+- **Innate Pharma / Sobi — lacutamab to Phase 3 (Aug 10)** ✓ CHOSEN — fresh, in-window, squarely on-theme (immuno-oncology antibody), real data behind it, strong mechanistic angle.
+- Akeso AK146D1 (TROP2/Nectin-4 bispecific ADC) + ivonescimab, first-patient-dosed (Aug 10) — very on-theme but no data (first-patient-dosed), ivonescimab already covered twice; not selected.
+- Innate/Silence divesiran PV Phase 2 (Aug 9) — off-theme (siRNA, hematology).
+- IDEAYA/Servier darovasertib OptimUM-02 registrational readout — **stale (April 13, 2026)**, discarded.
+- Novartis–Myricx NMTi ADC payload deal — **stale (July 6, 2026)**, discarded.
+- Genmab epcoritamab + lenalidomide Ph3 DLBCL — Aug 6, outside 1–2 day window.
+
+*Policy/funder (ARPA-H / NIH / NSF):* no in-window items relevant to the beat.
+
+No source aborted the run; Fierce homepage block was routed around, not a content gap.
+=== 2026-08-10T02:57:03-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
