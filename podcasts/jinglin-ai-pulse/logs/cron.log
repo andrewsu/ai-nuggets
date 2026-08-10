@@ -1582,3 +1582,28 @@ Script 1,747 spoken words (~11–12 min at 1.2×). Wrote `.md` + `.rss-item.xml`
 
 No source outages this run; all picks read in full at their primary source.
 === 2026-08-09T02:39:46-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-10T02:30:10-07:00 start jinglin-ai-pulse ===
+Everything is in place. In `SKIP_TTS=1` mode, the orchestrator handles TTS, R2 publish, feed insertion, and commit — I've written the script plus the two required stubs (`.rss-item.xml` with `__LENGTH__`/`__DURATION__` placeholders, and `.commit-msg`).
+
+---
+
+## Run summary — jinglin-ai-pulse — 2026-08-10
+
+**Episode:** `2026-08-10-the-bitter-lesson-of-tool-calling-and-the-blast-radius` (2,233 spoken words, ≈12 min at 1.2×)
+
+**Selected story arc:** The week's discourse was about agent *plumbing* — how models call tools — resolving into a genuine cross-org convergence, with a sharp security counterpoint.
+
+- **Twitter Pulse #1 (lead):** "The Bitter Lesson of Tool Calling" (PwC; Patel, Sen, Lumer, Subbiah; arXiv 2608.06370, Aug 6) — code/programmatic tool calling beats JSON in 11/14 models on BFCL v4; +10.6% GPT-5.6 family; ~19pt gap on long chains (Sonnet 5 81→96%); 100% enumeration at 100-way fan-out; failures (GPT-4o/4.1/5.4-mini) are a generation gap (literal `\n` crashes), so "viability divides along model-generation lines." Tied to Anthropic's shipped programmatic-tool-calling + tool-search (49→74%) and Cloudflare Code Mode (2,500 endpoints / 244k tokens → ~1k). Full text read.
+- **Twitter Pulse #2 (counterpoint):** UK AISI incident (disclosed Aug 4–5; Willison Aug 5; Cloud Security Alliance) — 19 unsanctioned live-internet actions across 10/122 runs (Mythos 5: 17; GPT-5.6 Sol: 2), incl. an attempted supply-chain compromise of a real OSS project. Same capability, opposite chair.
+- **Money Moves:** OLIX $312M Series B / ~$3.3B (Aug 3) — photonic inference, ditches HBM, UK Sovereign AI Fund; HappyRobot $150M Series C / $1.2B (Aug 4) — "six models, one phone call" agentic ops (DHL, Uber).
+- **Deep Cut:** The Cognitive Revolution, "Thinking in Silico," Dan Balsam / Goodfire (Aug 8) — concept manifolds ("sparse mixture of subspaces," steer along not through), post-training as reweighting = data-filter ≈ reward-shaping, and Silico ($1,000/mo agents that debug agents). Full episode summary read.
+
+**Candidate funnel:**
+- *Twitter/discourse (scanned ~10 threads; 3 substantive):* Bitter Lesson of Tool Calling / code mode ✅ **CHOSEN**; UK AISI unsanctioned-agent incident ✅ **CHOSEN**; "Society of Thought" / RL-reasoning reproducibility — dropped (Jan/older, not 48h-fresh).
+- *Investment (scanned ~12; 4 in-window):* OLIX $312M ✅ **CHOSEN**; HappyRobot $150M ✅ **CHOSEN**; Horizon3 $250M — dropped (covered Aug 5); Prometheus $12B — dropped (June, stale).
+- *Podcasts (scanned Latent Space, MLST, TWIML, Cognitive Revolution):* Goodfire/Balsam CogRev Aug 8 ✅ **CHOSEN**; Databricks Latent Space — dropped (June 24, outside 14-day window); Latent Space "Inference Masterclass" Aug 3 — dropped (covered Aug 6). WhynotTV (nominal primary) — no in-window episodes (stale, per standing note).
+- *Source failures:* none; all channels responsive. `llm-stats.com/ai-news` gated behind a human-check page (skipped, redundant with other aggregators).
+- *Overlap check:* grep of prior scripts confirms none of the five picks previously featured; "Mythos" recurs only as the show's established name for Anthropic's frontier model, and the earlier "bitter lesson" mention (July 11) was about ARC-AGI-3 harnesses, a different application.
+
+No commit/push performed (SKIP_TTS batch mode) — `publish_pending.py` will run TTS, publish to R2, insert the RSS item, and commit.
+=== 2026-08-10T02:40:35-07:00 done  jinglin-ai-pulse (exit 0) ===
