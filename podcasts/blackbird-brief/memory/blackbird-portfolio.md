@@ -1032,6 +1032,42 @@ competitors below. These are the "so what for Blackbird" hooks.
   GPR52 chemistry" story now while first-Phase-2 framing is still available;
   Third Rock conversation on whether to compress DC timing from later 2026 into
   Q3.
+- **Landscape/bar-raiser (2026-08-10 Portfolio Watch LEAD; competitive, NOT a
+  same-mechanism rival):** **MapLight Therapeutics** (Series D $372.5M, Jul 2025,
+  Forbion + Goldman Sachs Life Sciences) posted **positive Phase 2 ZEPHYR topline
+  on 2026-07-27** for **ML-007C-MA** — an **M1/M4 muscarinic agonist** (betovumeline)
+  co-formulated with an anticholinergic (fesoterodine), SAME broad mechanism class
+  as **Cobenfy** (xanomeline-trospium), NOT GPR52. ZEPHYR = 307 inpatients, acute
+  psychosis, 25 US sites. **Twice-daily 210/3mg MET primary:** 4.5-pt PANSS
+  separation vs placebo at wk 5 (mITT effect size ~0.37, p=0.015; completers ~6.0-pt,
+  ES 0.50, p=0.002); CGI-S + PANSS-positive also sig. **Once-daily 330/6mg MISSED
+  primary** (separation on some secondaries only). Standouts: (a) **clean tolerability**
+  — only 2.0% GI discontinuations at BID, no metabolic signal, no EPS, no urinary
+  retention, no titration failures; (b) **cognition signal** — ES ~0.51 (p=0.041) in
+  baseline-cognitively-impaired subgroup, DECORRELATED from PANSS improvement (argued
+  as a real, separate pro-cognitive effect). Caveats: 4.5-pt is MODEST (below Cobenfy's
+  registration trials); QD arm failed; next gate = End-of-Phase-2 mtg on whether ZEPHYR
+  alone can serve as a pivotal. **Commercial reality check surfaced same-day (BioSpace
+  2026-08-10):** Cobenfy — first-in-class non-dopaminergic antipsychotic, first new
+  mechanism in schizophrenia in 35y — booked only **$155M in 2025 vs >$310M forecast**,
+  dragged by GI tolerability (careful patient selection) + access. **Read for GPR52 NewCo
+  (bar-raising, NOT a threat to the thesis):** MapLight is NOT a same-mechanism rival like
+  Nxera (muscarinic vs our orphan-GPCR agonist) — but it plants a funded, clinically-
+  validated competitor on the TWO axes our value case rests on: (1) **tolerability** — a
+  clean mechanism doesn't sell itself (Cobenfy's $155M proves it); MapLight showed a
+  muscarinic CAN be engineered to clean tolerability, so "better tolerated than old
+  atypicals" is now table stakes, and our clean-GPCR tolerability story must be at least
+  as good and articulable; (2) **cognition** — the reason GPR52 justifies a NewCo is
+  reaching all three symptom domains; MapLight just planted a flag on INDEPENDENT
+  cognition, so "we also reach cognition" is no longer clean white space. **Defensible
+  story can't be "non-dopaminergic + hits cognition"** — must be materially bigger/broader
+  efficacy than a muscarinic's modest 4.5-pt signal, OR a cognition/negative-symptom
+  mechanism muscarinics can't reach. **Actions (Hemaka + Third Rock, ahead of later-2026
+  DC declaration):** TPP must answer MapLight directly on tolerability + breadth of the
+  cognition claim (not old atypicals, not just Cobenfy's launch — this specific dataset);
+  fold Cobenfy's $155M reality into the value case (novelty/first is NOT the moat — design
+  commercial/access in now). Note: MapLight ZEPHYR readout was NEVER covered in this brief
+  before 08-10; the 07-27 data was pulled forward via the in-window 08-10 BioSpace analysis.
 
 ### Gut-targeted bimodal therapeutic — Crohn's & ulcerative colitis (JHU) ✅
 - **What:** Oral, **gut-restricted GCPII (glutamate carboxypeptidase II)

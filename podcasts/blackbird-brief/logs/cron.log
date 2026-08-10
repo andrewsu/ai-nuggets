@@ -1454,3 +1454,37 @@ All memory edits landed cleanly. Both episodes are fully prepared. Since `SKIP_T
 
 **No source-side outages this run.** Both bioRxiv paper URLs verified against the details API (pre-commit hook will re-check on the orchestrator's commit).
 === 2026-08-09T02:28:29-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-10T02:10:10-07:00 start blackbird-brief ===
+All three stub files are valid and in place. In SKIP_TTS batch mode, I skip TTS/publish/feed/commit — the orchestrator handles those. Deliverables complete.
+
+**Episode published (batch-mode staged): Blackbird Brief — Portfolio Watch, Monday 2026-08-10.**
+
+Today is a Monday, so Portfolio Watch only (no Sunday Sourcing Radar). Files written to `podcasts/blackbird-brief/scripts/`:
+- `2026-08-10-portfolio-watch.md` (script, `## Script` heading)
+- `2026-08-10-portfolio-watch.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders — validated as well-formed XML)
+- `2026-08-10-portfolio-watch.commit-msg`
+
+Also updated `memory/blackbird-portfolio.md` with the MapLight competitive datapoint under the schizophrenia NewCo section.
+
+**Lead:** MapLight Therapeutics' Phase 2 ZEPHYR muscarinic readout (never before covered here), pulled current by today's BioSpace analysis pairing it with Cobenfy's soft 2025 commercial numbers ($155M vs >$310M forecast). Framed as a bar-raiser — not a same-mechanism rival like Nxera — for the Lieber/Third Rock GPR52 NewCo on its two value-case axes: tolerability (now table stakes) and cognition (no longer clean white space). Candidly flagged the July 27 readout date.
+
+---
+
+### Candidate funnel — Portfolio Watch 2026-08-10 (window ~Aug 6–10)
+
+**Sources swept:** trade press (BioPharma Dive, BioSpace, Fierce, STAT, GEN, Pharmaletter/PharmTech weekly roundups) + per-program target/modality/company queries across all six programs + Blackbird/BioBuzz/Baltimore.
+
+- **Schizophrenia NewCo (GPR52):** BioSpace (Aug 10) "As BMS' Cobenfy struggles… MapLight knocks on the door" → MapLight ZEPHYR Ph2 (M1/M4 muscarinic) + Cobenfy $155M/2025 traction. **← CHOSEN (lead).** Fresh in-window analysis peg; MapLight data never covered here; directly bars-raises the NewCo's tolerability + cognition story.
+- **aSKY (KRAS/RAS oncology):** RevMed Q2 (Aug 5) — RASolve 308 zoldon+pembro G12D NSCLC initiated, RASolute 303 first-line. Already covered Aug 6/8; no change → one-line board.
+- **Aletira (SELEXON/AAV):** No fresh news. Ultragenyx DTX401 AAV PDUFA Aug 23 (standing watch); Intellia HLA disclosure was Aug 9 lead → one-line board, no re-litigation.
+- **RNA translation-activator:** CAMP4 — no new event since Aug 4 close; FIH + funded → one-line board.
+- **1104health:** No new event; HHS OIG anti-kickback comment deadline Aug 24 → one-line board (action live).
+- **Gut GCPII/IBD:** TL1A landscape (Merck tulisokibart) unchanged in window → one-line board.
+- **Blackbird direct:** BioBuzz/press — nothing new in window.
+
+**Discarded (off-thesis):** FDA Aug 6–7 actions (melanoma viral immunotherapy, Moderna mRNA flu vaccine, screwworm EUA), Curium–Lantheus ~$8B radiopharma M&A — no line to a Blackbird program/partner.
+
+**Source failures:** none material; all queries returned.
+
+**Direct-catalyst tape:** 15th straight day with no Blackbird company's own readout/financing/deal/filing — but a genuine, substantive competitive datapoint carried the day (not a manufactured story). Mode: SKIP_TTS batch — TTS, R2 publish, feed insert, and commit deferred to `publish_pending.py`.
+=== 2026-08-10T02:20:10-07:00 done  blackbird-brief (exit 0) ===
