@@ -3003,3 +3003,27 @@ Shortlist (post-filter):
 
 Why garetosmab won the spotlight: freshest genuinely-imminent catalyst (this-month PDUFA), full text obtainable and read (Regeneron OPTIMA + BLA releases, LUMINA-1 safety history, Sohonos/palovarotene competitive limitations), and analytically richest — a rational ligand-level mechanism, a near-death safety scare turned clean phase 3, and a first-line-standard fight against a flawed incumbent, with the label as the real story.
 === 2026-08-09T02:29:23-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-10T02:20:10-07:00 start calibr-briefing ===
+Both episodes are written and staged for the batch pipeline. Final audit record below.
+
+## Calibr 2026-08-10 — run complete (SKIP_TTS batch mode)
+
+Two episodes written (scripts + `.rss-item.xml` + `.commit-msg` stubs; XML validated, tokens present). No TTS/publish/feed/commit performed — `scripts/publish_pending.py` handles those after batch TTS.
+
+- **Headlines** — `2026-08-10-pharma-headlines` — LEAD: AbCellera's ABCL635 (anti-NK3R antibody) Phase 2 readout in menopausal hot flashes.
+- **Spotlight** — `2026-08-10-qalsody-als-reversal-spotlight` — Biogen/Ionis' Qalsody (tofersen) showing signs of *reversal* in SOD1-ALS.
+
+### Candidate funnel
+Weekend (Aug 8–9) was quiet on the wire; Monday (Aug 10) is readout-driven. Sources scanned: BioPharma Dive (homepage + RSS feed), BioSpace (homepage), RTTNews FDA calendar, GEN/Fierce/Endpoints (blocked to WebFetch+jina — per memory), Foresite portfolio news page (jina; cached to June, no fresh items), + targeted WebSearch. No source outages beyond the known Fierce/Endpoints/STAT paywall blocks.
+
+Substantive shortlist (after discarding stale/off-topic):
+- **AbCellera ABCL635 anti-NK3R antibody, Phase 2 VMS/menopause topline — Aug 10 (before open)** → **HEADLINE LEAD**. `investors.abcellera.com/...ABCL635...August-10-2026`
+- **Biogen/Ionis Qalsody (tofersen) SOD1-ALS symptom reversal — Aug 10 BioSpace feature** → **SPOTLIGHT** (fully readable). `biospace.com/drug-development/biogens-targeted-als-treatment-is-reversing-decline...`
+- Compass Pathways COMP360 psilocybin, rolling NDA on track Q4 — headline #3
+- Bristol Myers Cobenfy vs MapLight's betovumeline (split Phase 2 ZEPHYR, Jul 27) — headline #4
+- Curium–Lantheus radiopharma merger, up to ~$8B (Aug 3) — headline #5
+- Considered & dropped: GSK/Nuvalent (June, stale); Sun Pharma/Organon (April, stale); Zymeworks/Theravance (Jun 29, stale); Expedition Therapeutics $115M Series B (Aug 5, redundant with Aug 9's IPO/financing theme).
+
+### Eligibility note
+AbCellera's ABCL635 topline released ~7:30am ET today was **not yet crawlable** (WebSearch not indexed; IR/StockTitan/BusinessWire/EDGAR all 403 or teaser-only) at run time. Per PIPELINE's full-text eligibility gate, it could not be the spotlight — so it leads Headlines framed honestly (reported this morning; cites management's pre-set bar of ≥20% placebo-adjusted hot-flash reduction / ≥2 fewer/day; no hit-or-miss asserted). Spotlight went to the fully-readable Qalsody feature. Logged this recurring constraint to memory (`reference_intraday_readouts_uncrawlable`).
+=== 2026-08-10T02:34:28-07:00 done  calibr-briefing (exit 0) ===
