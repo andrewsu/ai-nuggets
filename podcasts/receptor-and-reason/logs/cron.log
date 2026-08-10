@@ -3212,3 +3212,33 @@ Everything is in place. Script is clean for audio (~2,140 words ≈ 12 min deliv
 
 **Not selected:** NanoBiT GPCR platform (`737439`, v2 — core content pre-window); numerous single-cell-foundation-model / non-CNS docking items downweighted as off-audience.
 === 2026-08-09T03:03:03-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-10T02:50:10-07:00 start receptor-and-reason ===
+Today's episode of **Receptor & Reason** (2026-08-10) is written and staged for the batch pipeline. In `SKIP_TTS` mode I wrote the script plus the two transient stubs and appended the dedup record; the orchestrator will handle TTS, R2 upload, feed insertion, and commit.
+
+**Deliverables**
+- `scripts/2026-08-10-receptor-and-reason.md` — 10-item script, 2,266 words (~12 min at 1.2× TTS)
+- `scripts/2026-08-10-receptor-and-reason.rss-item.xml` — full `<item>` with `__LENGTH__`/`__DURATION__` placeholders (XML-validated)
+- `scripts/2026-08-10-receptor-and-reason.commit-msg`
+- `state/shipped.jsonl` — appended today's 10 keys (80 lines total)
+
+**Episode lineup (all fresh, within 7-day window; no Tier 4 needed):**
+1. **LEAD** — Multi-agent GPCR subtype-selective allosteric discovery (agentic AI/comp pharm; *full text*) — on-brand; Claude-orchestrated 5–6-agent pipeline over dMaSIF surface fingerprints + paired docking, with the LLM barred from overriding deterministic gates. Opinionated take on the false-positive lesson (fast-docking selectivity was mostly artifact) and blast-radius discipline.
+2. Neuromuscular AChR allosteric gating pathways (biophysics; abstract)
+3. Cortex-restricted α-synuclein → corticostriatal glutamate failure, no dopamine loss (PD; *full text*)
+4. Levodopa MEG microstate dynamics track motor gain (PD; abstract)
+5. Oligogenic Alzheimer's resilience in the RELN-COLBOS carrier (AD genetics; *full text*)
+6. NTSR1 agonist PD149163 rescues autism olfactory generalization (receptor pharm; *full text*)
+7. Open oral fentanyl self-administration model (addiction; abstract)
+8. Parabrachial oxytocin-receptor threat neurons (circuits; abstract)
+9. Fear vs safety learning receptor signatures (circuits; abstract)
+10. **CLOSE** — Out-of-body EEG: flattened hierarchy + elevated complexity, psychedelic-like (consciousness; abstract)
+
+**Candidate funnel**
+- **bioRxiv (Tier 1):** 1,392 unique preprints in the Aug 3–10 window paginated in full; 60 drug/receptor-relevant unshipped in neuroscience/pharmacology/animal-behavior, plus targeted scans of bioinformatics (Tier 2) and biochemistry/biophysics (structural pharm). 10 selected above.
+- **arXiv (Tier 2):** shared cache present (500 entries, spanning Aug 5–7); 24 bio+agentic hits, all clinical-admin/health-assistant AI — low signal for this show, none selected.
+- **Journals / Psychiatric Times / society pages (Tiers 1–3):** not separately crawled; bioRxiv corpus over-delivered the 8–12 item target, so no source-failure gap to log.
+- **Deferred (not-yet-rendered full text, re-check later):** "A foundational in vivo platform for predicting human health outcomes" (bioRxiv 2026.08.03.742611, posted Aug 9) — a strong ML/comp-pharm lead candidate that rendered abstract-only; ineligible today under the full-text gate, live for a future day.
+- **Excluded for topical repetition:** "Assessing Computational Models for Pharmacogenomic Variant Interpretation" and "PG-LLM" — the 08-09 episode already ran a CYP450 variant-effect-prediction item.
+
+Note on infrastructure: `fetch_preprint.py`'s jina channel still falls through to abstract-only; I pulled full text by curling `r.jina.ai` on the `.full.pdf` endpoint directly (the `.full` HTML is abstract-only for these `10.64898` preprints), with backoff through the Cloudflare 429s — consistent with the known-broken-jina memory.
+=== 2026-08-10T03:08:26-07:00 done  receptor-and-reason (exit 0) ===
