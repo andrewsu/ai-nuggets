@@ -1607,3 +1607,36 @@ Everything is in place. In `SKIP_TTS=1` mode, the orchestrator handles TTS, R2 p
 
 No commit/push performed (SKIP_TTS batch mode) — `publish_pending.py` will run TTS, publish to R2, insert the RSS item, and commit.
 === 2026-08-10T02:40:35-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-11T02:30:10-07:00 start jinglin-ai-pulse ===
+All three stub files are written and the RSS item validates. In `SKIP_TTS` mode I stop here — the orchestrator handles TTS, R2 publish, feed update, and commit. Here is the run record.
+
+---
+
+## Ollie's AI Pulse — 2026-08-11 — run complete (SKIP_TTS mode)
+
+**Episode:** `2026-08-11-probing-the-black-box-and-continual-learnings-moat`
+**Files written:** `.md` script (1,977 spoken words, ~13 min), `.rss-item.xml` (validated), `.commit-msg`. No TTS/publish/feed/commit — left to `publish_pending.py`.
+
+**Through-line:** opacity — the labs disclose less, so the community reverse-engineers the black box; today's opacity and tomorrow's continual-learning economics are the same story.
+
+### Candidate funnel
+
+**Twitter Pulse / discourse (last 48h):**
+- ✅ **CHOSEN** — Shrivu Shankar, "Exploring Claude/GPT Knowledge Cutoffs" (Aug 10) — behavioral probing of training cutoffs; Opus 4.7+ share one Dec-2025 base; **Opus 5 May-on-paper / Jan-in-behavior anomaly**. Primary source read in full.
+- ✅ **CHOSEN** — Meta **Muse Glimmer** (Aug 10): 30B, Apache-2.0, single-GPU "always-on local agent"; Zuckerberg's open-weights/distillation defense; ties to on-device-agents HN thread.
+- ⚪ Considered, dropped for lack of a fresh 48h hook — world-models vs LLMs / LeCun's AMI Labs (all concrete developments ≤ March 2026, evergreen not news).
+- ⚪ Multi-agent-debate academic thread — no fresh community catalyst.
+
+**Money Moves (last 7d):**
+- ✅ **CHOSEN** — **Erebor** (Palmer Luckey's bank) raising ~$1.5B at $8B, deposits ~$4B since March (Aug 10) — banking the AI/defense/hard-tech buildout.
+- ✅ **CHOSEN (context)** — compute-capex convergence: TSMC July +45% YoY, Intel $15B offering, Korea $3.5B chip fund, Naver→gigawatt (all Aug 10).
+- ❌ Atoms $1.7B (a16z) — **stale**, dated July 18–24 roundup. Excluded.
+- ❌ Odyssey $310M world-model — **stale**, June 13–18 roundup. Excluded.
+- ❌ Fireworks/Chai Discovery — July 11–17 roundup, out of window.
+
+**Podcast Deep Cut (last 14d):**
+- ✅ **CHOSEN** — Dwarkesh Patel, "8 Predictions for the Era of Continual Learning" (Aug 7) — saxophone analogy, static-safety-eval decay, commodity→moat economics. Primary source read in full.
+- ⚪ Latent Space "Inference Engineering Masterclass" (Aug 3, Baseten) — viable but less thematically tied.
+
+**Notes:** WhynotTV confirmed still stale (memory holds) — used Dwarkesh instead. No fabricated quotes; all quotes verified against primary sources. No Zefan_Cai fresh signal found (search returned only academic profiles) — not name-dropped rather than invented.
+=== 2026-08-11T02:37:10-07:00 done  jinglin-ai-pulse (exit 0) ===
