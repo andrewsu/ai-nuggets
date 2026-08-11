@@ -2068,3 +2068,29 @@ Done. All three files written; SKIP_TTS mode means I stop here (no TTS, publish,
 
 No source aborted the run; Fierce homepage block was routed around, not a content gap.
 === 2026-08-10T02:57:03-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-08-11T02:40:11-07:00 start justice-biotech-brief ===
+Episode written and staged for the batch pipeline. Since `SKIP_TTS=1`, I wrote the script plus the two stub files (`.rss-item.xml`, `.commit-msg`) and did **not** run TTS, publish, edit the feed, or commit — `publish_pending.py` does all of that after batch TTS.
+
+**Today's pick — Justice's Biotech Brief 2026-08-11**
+Sonelokimab (MoonLake) — a ~40 kDa trivalent IL-17A/F **Nanobody (VHH)** posts a positive Phase 3 IZAR-1 topline in biologic-naïve psoriatic arthritis (42% ACR50, all secondaries met). The take is skeptical-but-interested: topline is **absolute response only** (placebo delta and comparator arms stay blinded to H1 2027), and MoonLake's own framing ("consistent with other IL-17A/F programs," i.e. bimekizumab) means the case rests on the **format** — tissue penetration, dosing, manufacturing — not a higher efficacy ceiling. Framed as the furthest-along validation of the VHH platform migrating antibody engineering from oncology into inflammation (ties to the Aug-6 Attovia episode), with an HS BLA due end-September.
+
+---
+
+**Candidate funnel — 2026-08-11**
+
+- **bioRxiv** (full collection, 278 items over 08-10/08-11): 16 keyword hits, ~3 on-target. All fresh (new `10.64898` prefix), **bodies not yet rendered → deferred** per full-text eligibility gate:
+  - L1CAMxCD3 bispecific TCE in PDAC (`…743835`, 08-11) — strongest on-target; abstract-only, jina/PDF unavailable → **deferred, re-check by 08-13**
+  - Siglec-15 glyco-immune checkpoint, prostate cancer (`…743480`, 08-10) — abstract-only
+  - IL-4Rα miniprotein antagonist (`…743794`, 08-10) — abstract-only
+- **medRxiv** (178 items): 7 hits, 2 on-target, both **not rendered → deferred**:
+  - MAdCAM-1×IL-22 gut-specific bispecific for IBD (`…26359969`, 08-10)
+  - Dual-checkpoint + radiation durable CR in pancreatic cancer (`…26359422`, 08-10)
+- **News / press** (Fierce, Endpoints, STAT, BioPharma Dive, newswires):
+  - **Sonelokimab / MoonLake IZAR-1 Phase 3 PsA win** (GlobeNewswire, 08-10) — fresh, readable primary source, on-target (autoimmune biologic + novel VHH format) → **CHOSEN**
+  - RevMed/BeOne RAS(ON) Asia licensing deal (08-10) — oncology but small-molecule/business, less in-lane
+  - argenx efgartigimod ADAPT OCULUS (ocular MG) — **out of window** (early July)
+  - AbCellera ABCL635 NK3R VMS Phase 2 (08-10) — off-lane (women's health) and already used by calibr sister show
+  - Jazz/Actio ($820M, epilepsy), Adalvo/Gedeon Richter (tirzepatide), Oculis/Accure, Vedanta ($60M) — off-lane
+- **Funders** (ARPA-H): latest 08-06 (autonomous stroke surgery), off-lane. NIH/NSF not surfaced with in-window on-target items.
+- No source-level outages this run.
+=== 2026-08-11T02:54:36-07:00 done  justice-biotech-brief (exit 0) ===
