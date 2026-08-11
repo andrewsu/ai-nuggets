@@ -1032,6 +1032,31 @@ competitors below. These are the "so what for Blackbird" hooks.
   GPR52 chemistry" story now while first-Phase-2 framing is still available;
   Third Rock conversation on whether to compress DC timing from later 2026 into
   Q3.
+- **Competitor clock LIVE (2026-08-11 Portfolio Watch LEAD; Nxera Q2/H1 FY2026,
+  reported 2026-08-07):** on its Q2 earnings call Nxera management said they are
+  in **"advanced discussions with several parties"** to partner NXE'149 and expect
+  to execute **at least one major out-license in H2 2026**; CEO explicit it is
+  **"not our intention to conduct global phase II studies ourselves"** — they've
+  taken the asset to its logical inflection point and want a large fully-funded
+  pharma partner for global Ph2/Ph3. This flips the 8-month "unsold, so no
+  same-mechanism race yet" reprieve: the process moved from passive shopping
+  (since the Dec-2025 Boehringer walk-away) to an **active, late-stage deal
+  process with a stated close window measured in months**. **Read for our NewCo:**
+  the calendar risk above is no longer hypothetical — a buyer this half puts our
+  DC declaration (expected later 2026) 12-24 months behind a funded, same-mechanism
+  rival; the "best-in-class GPR52 chemistry / first-differentiated-Phase-2" framing
+  now has a shelf life of **this half, not open-ended**. Two additional notes: (a)
+  Nxera itself flagged on the call that muscarinic momentum (**MapLight's Ph2
+  ZEPHYR readout**, the 08-10 lead) has strengthened the competitive picture — the
+  field consolidates from two sides at once (same-mechanism buyer + validated
+  adjacent class); (b) Nxera positions GPR52 for **schizophrenia AND psychosis in
+  Alzheimer's disease** (very large, no approved drug) — a broad-indication buyer
+  validates the target but raises the buyer's incentive to move fast = further
+  window compression. **Actions (Hemaka + Third Rock):** lock the differentiation
+  story now (depreciating in real time); decide on compressing DC timing vs holding
+  for the cleaner molecule; watch the deal tape — a Nxera partner announcement (and
+  buyer identity) resets our clock precisely and signals which indications/geographies
+  get contested.
 - **Landscape/bar-raiser (2026-08-10 Portfolio Watch LEAD; competitive, NOT a
   same-mechanism rival):** **MapLight Therapeutics** (Series D $372.5M, Jul 2025,
   Forbion + Goldman Sachs Life Sciences) posted **positive Phase 2 ZEPHYR topline

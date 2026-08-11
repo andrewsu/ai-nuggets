@@ -1488,3 +1488,26 @@ Also updated `memory/blackbird-portfolio.md` with the MapLight competitive datap
 
 **Direct-catalyst tape:** 15th straight day with no Blackbird company's own readout/financing/deal/filing — but a genuine, substantive competitive datapoint carried the day (not a manufactured story). Mode: SKIP_TTS batch — TTS, R2 publish, feed insert, and commit deferred to `publish_pending.py`.
 === 2026-08-10T02:20:10-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-11T02:10:10-07:00 start blackbird-brief ===
+All three files are in place and the RSS stub validates. Since `SKIP_TTS=1`, I've skipped TTS, R2 publish, feed edit, and the commit — the orchestrator handles those after batch TTS. Memory updated with the fresh Nxera competitive datapoint.
+
+---
+
+**Blackbird Brief — Portfolio Watch, 2026-08-11 (Tuesday; daily Portfolio Watch only, no Radar)**
+
+Wrote `2026-08-11-portfolio-watch.md` + `.rss-item.xml` + `.commit-msg` stubs. No commit (SKIP_TTS batch mode). Updated `memory/blackbird-portfolio.md` GPR52 section with the Nxera Q2 competitor-clock update.
+
+**Candidate funnel** (recency window ~Aug 7–11; no Blackbird company had its own catalyst — 16th straight quiet direct-catalyst day):
+
+Industry press / earnings scanned — Fierce, Endpoints, STAT, BioPharma Dive homepage, BioSpace, Life Science Daily roundup (Aug 10), company IR:
+- **Nxera Pharma Q2/H1 FY2026 (Aug 7) — GPR52/NXE'149 out-license now "advanced discussions," intent to sign a major pharma partner in H2 2026, won't run Ph2 itself** ← **CHOSEN (lead).** Direct same-mechanism rival to the Lieber/Third Rock GPR52 NewCo; flips the 8-month "unsold" reprieve to a live competitor clock. Full text via earnings-call transcript (management quotes). https://www.globenewswire.com/news-release/2026/08/07/3340927/0/en/nxera-pharma-operational-highlights-and-consolidated-results-for-the-second-quarter-2026.html
+- Alnylam ~$12B market-cap drop (Aug 6) — RNA-therapeutics sentiment caution; folded as a one-line landscape note under the CAMP4/translation-activator lane, not a lead (siRNA/knockdown, not our modality; sentiment not substance).
+- Scribe Therapeutics gene-editing IPO — priced **July 23** (outside window); BioPharma Dive Aug-10 piece is retrospective. Dropped (stale).
+- Revolution Medicines daraxonrasib expanded-access / Q2 — already covered Aug 5–6; nothing new in window. Standing one-liner (aSKY).
+- Ultragenyx DTX401 AAV decision (PDUFA **Aug 23**) — already the standing Aletira date; one-liner (now 12 days out).
+- HHS OIG anti-kickback comment deadline (**Aug 24**) — standing 1104health item; one-liner (13 days out).
+- Merck tulisokibart TL1A (ATLAS-UC, Jun 22) — no fresh in-window move; standing GCPII/IBD crowding one-liner.
+- MapLight/Cobenfy — **yesterday's (Aug 10) lead; not re-featured** (referenced only as the second consolidation vector Nxera itself flagged).
+
+No source outages this run.
+=== 2026-08-11T02:17:07-07:00 done  blackbird-brief (exit 0) ===
