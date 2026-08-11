@@ -3027,3 +3027,34 @@ Substantive shortlist (after discarding stale/off-topic):
 ### Eligibility note
 AbCellera's ABCL635 topline released ~7:30am ET today was **not yet crawlable** (WebSearch not indexed; IR/StockTitan/BusinessWire/EDGAR all 403 or teaser-only) at run time. Per PIPELINE's full-text eligibility gate, it could not be the spotlight — so it leads Headlines framed honestly (reported this morning; cites management's pre-set bar of ≥20% placebo-adjusted hot-flash reduction / ≥2 fewer/day; no hit-or-miss asserted). Spotlight went to the fully-readable Qalsody feature. Logged this recurring constraint to memory (`reference_intraday_readouts_uncrawlable`).
 === 2026-08-10T02:34:28-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-11T02:20:10-07:00 start calibr-briefing ===
+Both fragments are well-formed. All deliverables for today's calibr-briefing episode are written; since `SKIP_TTS=1`, I've stopped before TTS/publish/feed/commit — the orchestrator (`publish_pending.py`) will handle audio, R2 upload, feed insertion, and the commits.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-08-11-pharma-headlines.txt` + `.rss-item.xml` + `.commit-msg`
+- `2026-08-11-abcellera-nk3r-antibody-spotlight.txt` + `.rss-item.xml` + `.commit-msg`
+
+---
+
+**Candidate funnel — Calibr 2026-08-11**
+
+Coverage window Aug 8–11; freshest news dated Aug 10 (Aug 11 wire quiet at cron time). Sources scanned: BioPharma Dive homepage, Endpoints (403/blocked, worked around via search), STAT Pharmalot, Fierce (index only), Life Science Daily weekly roundup, plus targeted web search + company IR pages.
+
+Source notes / failures:
+- Endpoints News homepage — HTTP 403 to WebFetch; substituted targeted WebSearch on endpoints.news items. Fierce homepage — index only, no per-article fetch needed.
+- AbCellera IR press release — read in full (spotlight full-text gate met).
+
+Shortlist (after discarding stale/off-topic matches):
+- **AbCellera ABCL635 positive Phase 2 in menopausal VMS** (Aug 10) — anti-NK3R antibody, 83% vs 33% frequency, 58% vs 12% severity, single SC dose, clean safety, stock +~33%. **← CHOSEN: headlines lead + SPOTLIGHT.** Fits AI-in-drug-discovery focus; first wholly-owned Phase 2 for the platform. Full text read.
+- **Jazz → Actio Biosciences, up to $1.3B** (Aug 10) — first-in-class KCNT1 inhibitor, rare genetic epilepsy. **← CHOSEN (headline #2).**
+- **Sanofi Pompe-drug shortage (Myozyme, Nexviazyme)** after FDA warning at Waterford plant (Aug 9–10, STAT). **← CHOSEN (headline #3).**
+- **aTyr Pharma ~60% layoff, all-in on efzofitimod in ILD** (Aug 7) — within window. **← CHOSEN (headline #4).**
+- **FDA novel-approval pace (29 YTD vs 21) + hot IPO window ($6B+)** — macro color. **← CHOSEN (headline #5).**
+- Ipsen/Kartos (navtemadlin) — dropped, June 29 deal, stale.
+- Zymeworks/Theravance (Yupelri COPD) — dropped, June 29 deal, stale.
+- Nvidia/Lilly AI supercomputer — dropped, Oct 2025/Jan 2026, stale (BioPharma Dive homepage feature, not fresh news).
+- Scribe gene-editing IPO — dropped, July 23 pricing, already stale/covered by prior sector notes.
+- Curium/Lantheus, Replimune, Moderna flu, Latigo, Braveheart, Attovia, Sionna CF, garetosmab, Qalsody — all featured in prior episodes (Aug 1–10); excluded to avoid repeats.
+
+Spotlight rationale: AbCellera is the day's most analyzable and strategically important item and sits squarely in the AI-in-drug-discovery focus area — the readout is a referendum on whether an AI antibody-discovery engine can become a drug company, and it validates a platform built for hard-to-drug GPCRs. Genuinely new vs yesterday (yesterday previewed the pre-open readout; today has the actual data).
+=== 2026-08-11T02:27:41-07:00 done  calibr-briefing (exit 0) ===
