@@ -3285,3 +3285,30 @@ All three files are written and valid. In `SKIP_TTS=1` batch mode, my job ends h
 
 **Note:** the day's best *topical* fits (AI-semantics data integration, PhysioMap) were fresh bioRxiv v1s deferred purely because their full text hasn't rendered — worth re-checking over the next 1–2 days per the full-text carve-out. Fisher-R1 won among readable, in-window candidates.
 === 2026-08-10T02:10:36-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-11T02:00:10-07:00 start biomedical-agentic-ai ===
+Episode files are written. Under SKIP_TTS mode, the orchestrator will handle TTS, R2 publish, feed insertion, and commit. Here is the run summary.
+
+---
+
+## Episode shipped: biomedical-agentic-ai — 2026-08-11
+
+**Pick: GatorOnco** — "An agentic generative large language model for treatment planning of colorectal cancer" (arXiv 2608.09142, posted 2026-08-10, University of Florida / GatorTron group). An 8-billion-parameter agentic LLM that matches board oncologists on colorectal treatment planning — and beats a general model ~9× its size — by baking agentic RAG over live NCCN guidelines into RL training. Full text read via mutool; script 795 words (~5 min). Files written: `.md` script, `.rss-item.xml` stub (validated XML), `.commit-msg` stub. No commit (SKIP_TTS=1).
+
+### Candidate funnel
+
+**bioRxiv** (details API, window 2026-08-08→08-11, 863 unique preprints paginated, 44 keyword hits → in-window relevant shortlist):
+- **Addressing challenges in agentic retrieval of structured data from biomedical databases (BioChirp)** — 10.64898/2026.04.25.720782 v2 (08-09) — *dominant fit, DEFERRED: full text unreadable.* Every bioRxiv route Cloudflare-blocked today (jina .full/.full.pdf → 429 even after 3-min cooldown; direct browser-UA PDF → error 1015 IP rate-limit; not in EPMC full-text corpus; no repo found). Recorded to memory to revisit.
+- Decoding Prokaryotic Whole Genomes with a Product-Contextualized LLM — 10.64898/2025.12.03.692003 (08-09) — genomics FM, not agentic; bioRxiv-blocked anyway.
+- ProtJEPA (protein world model, 08-09), agent-based BBB model (08-09), agent-based nematode plasticity model (08-10) — ABM/architecture, not agentic-AI fit.
+
+**arXiv** (daily cache, 500 entries, 91 agentic∩biomedical hits):
+- **An agentic generative LLM for treatment planning of colorectal cancer (GatorOnco)** — 2608.09142 (08-10) — **✅ CHOSEN** (readable, in-window, rigorous blind eval).
+- Model Discovery Agent — 2608.09696 (08-10) — read full: generic dynamical systems, not biomedical. Dropped.
+- Coupled Graph–Policy Distillation for Medication Safety — 2608.09443 — narrow ML method, weaker fit.
+
+**PubMed** (esearch reldate=5, 54 hits, two esummary batches): all clinical-LLM applications (readability studies, chatbots, decision support); "Agentic and Generative AI for Drug Discovery" (Jul 27) is a review. Nothing stronger than the arXiv pick.
+
+**ChemRxiv / news / funder pages**: not separately surveyed once GatorOnco was locked as a strong, readable in-window pick; bioRxiv + arXiv + PubMed carried the day.
+
+**Note for next run:** revisit the deferred BioChirp agentic-retrieval preprint once bioRxiv's route recovers — it's a near-perfect fit for this show and was blocked purely for mechanical (Cloudflare) reasons.
+=== 2026-08-11T02:19:51-07:00 done  biomedical-agentic-ai (exit 0) ===
