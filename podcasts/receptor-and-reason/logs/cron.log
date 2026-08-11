@@ -3242,3 +3242,37 @@ Today's episode of **Receptor & Reason** (2026-08-10) is written and staged for 
 
 Note on infrastructure: `fetch_preprint.py`'s jina channel still falls through to abstract-only; I pulled full text by curling `r.jina.ai` on the `.full.pdf` endpoint directly (the `.full` HTML is abstract-only for these `10.64898` preprints), with backoff through the Cloudflare 429s — consistent with the known-broken-jina memory.
 === 2026-08-10T03:08:26-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-11T02:50:11-07:00 start receptor-and-reason ===
+I understand the house style now — warm roadmap intro, flowing prose per item, opinionated, anchoring tool compounds. I'll wait for the fetch loop to report which full texts rendered before locking the lead. Standing by for the monitor.
+=== 2026-08-11T03:02:03-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-11T03:02:03-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-08-11T03:05:03-07:00 start receptor-and-reason (retry 1) ===
+The Aug 7 batch is taking a while (bioRxiv API latency per page). The monitor is armed to notify me when the hits file appears. I'll pause here and resume when it fires.
+=== 2026-08-11T03:11:02-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-08-11T03:11:02-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-08-11T03:14:02-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-5) ===
+Good — that lands right in the 12–18 minute target. Everything is written and validated. Here's the final summary for the log.
+
+## Candidate funnel — 2026-08-11
+
+**Sources scanned** (rolling 7-day window, 2026-08-05 to 2026-08-11):
+- **bioRxiv** (neuroscience, pharmacology/toxicology, bioinformatics, systems biology): ~1,150 records paginated in full, 358 in relevant categories screened → 34-item shortlist after relevance filtering.
+- **arXiv** (cs.AI/cs.CL/cs.MA/q-bio.QM/q-bio.NC): cache + one supplementary live call (no 429s) → 11 candidates after excluding today's biomedical-agentic-ai LEAD (GatorOnco) as a cross-show dedup.
+- **Journals via PubMed** (Neuropsychopharmacology, Molecular Psychiatry, Biol Psychiatry, IJNP, PNPBP, Neuropharmacology): worked well; Mol Psychiatry unusually rich this week (12 in-window items). IJNP: only an obituary, no science. Psychiatric Times: blocked (403); WebSearch found nothing dated in-window. ACNP/SOBP/ECNP/CINP/WFSBP: no in-window scientific announcements, only logistics.
+- **Tier 3** (CPT:PSP, Clin Pharm Ther, Drug Discovery Today, chemRxiv, industry): journals via PubMed worked (37 items screened); chemRxiv blocked/inconclusive (Cloudflare + search-lag); most named industry programs (AstraZeneca, Genentech CLADD, Xaira, Iambic, Insitro) had nothing in-window except Recursion.
+
+**Chosen for today's episode** (9 items, dedup-checked against full ledger):
+1. **Model Discovery Agent** (arXiv 2608.09696) — LEAD
+2. Recursion/Genentech agentic Target Discovery Agent (press)
+3. ATLAS agentic medication-safety system (arXiv 2608.09443)
+4. Genotypic Triggers backdoor AMP models (arXiv 2608.06779)
+5. Pharmacogenomic variant benchmark, CYP2C9 (bioRxiv, tail)
+6. p75NTR/RhoA/ROCK Tau mechanism (Molecular Psychiatry)
+7. Sodium butyrate / human fear extinction (Molecular Psychiatry)
+8. Sex-specific BLA→AcbC binge-drinking circuit (Neuropsychopharmacology)
+9. Psilocybin empathy dissociation (bioRxiv, tail) — CLOSE
+
+**Deferred** (not-yet-rendered/inaccessible full text, noted in RSS description for revisit): psilocybin miRNA companion preprint (bioRxiv 742716, too fresh); maternal NKG2D/fetal-neurodevelopment paper (Mol Psychiatry, Nature paywall bypass returned references only, no body).
+
+All script, stub, and ledger files are written under `podcasts/receptor-and-reason/`; per `SKIP_TTS=1`, no TTS/publish/feed/commit steps were run — that's for the batch orchestrator.
+=== 2026-08-11T03:39:34-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-5) ===
