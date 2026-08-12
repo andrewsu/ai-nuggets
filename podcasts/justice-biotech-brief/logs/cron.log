@@ -2094,3 +2094,28 @@ Sonelokimab (MoonLake) — a ~40 kDa trivalent IL-17A/F **Nanobody (VHH)** posts
 - **Funders** (ARPA-H): latest 08-06 (autonomous stroke surgery), off-lane. NIH/NSF not surfaced with in-window on-target items.
 - No source-level outages this run.
 === 2026-08-11T02:54:36-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-12T02:40:08-07:00 start justice-biotech-brief ===
+That note already documents today's exact scenario (the 2026-08-03 direct-PDF-via-mutool ladder, re-confirmed today on a fresh new-prefix v1) — no new non-obvious fact to add, so I'll leave it to avoid duplication.
+
+Everything is done for SKIP_TTS mode. Final run summary below.
+
+---
+
+## Justice's Biotech Brief — 2026-08-12 ✅
+
+**Shipped:** `L1CAMxCD3 bispecific T-cell engager — a pancreatic-cancer TCE keeps working in patient tumor slices with the full immunosuppressive microenvironment intact`
+
+Script + `.rss-item.xml` + `.commit-msg` stubs written to `scripts/`. **SKIP_TTS=1**, so no TTS/publish/feed/commit — the orchestrator (`publish_pending.py`) handles those. RSS stub validated as well-formed XML.
+
+**Why this pick:** posted 08-11 (in the 2-day window), squarely on Justice's core T-cell-engager interest, and — decisively — the *methodology* is the story: two Fc-silenced L1CAMxCD3 IgG-(L)-scFv engagers taken up a stringency ladder ending in patient-derived organotypic slice cultures with intact TME and the tumor's own exhausted TILs as the only effectors, still driving apoptosis + T-cell activation at low antigen density. That's a far harder bar than the usual donor-PBMC-plus-cell-line assay, and it's exactly where solid-tumor engagers die. Full text confirmed read (direct browser-UA `.full.pdf` → `mutool`, 55pp/133KB — r.jina.ai was 429-throttled).
+
+### Candidate funnel
+- **bioRxiv** (details API, full 2-day collection 08-11→08-12): 282 preprints scanned; 12 survived keyword filter (TCE/bispecific/ADC/checkpoint/antibody). Substantive shortlist after discarding off-topic keyword hits (antibody-ML tools, TLS spatial-biology, sulfotyrosine biophysics, withdrawn vaccine-ML):
+  - **✅ L1CAMxCD3 bispecific TCE in PDAC** — `10.64898/2026.08.10.743835` — full text read, **CHOSEN**. (Was deferred 08-11 for un-rendered body; PDF recovered today.)
+  - MAdCAM-1×IL-22 IBD bispecific (deferred 08-11) — `10.64898/2026.08.07.26359969` — posted 08-10, now **out of 2-day window** + no bioRxiv API record; dropped.
+- **News/press** (Fierce/Endpoints/STAT, BioPharma Dive, WebSearch): no in-window (08-11/08-12) clinical readout or approval in Justice's core areas surfaced. BioPharma Dive homepage indexed only through ~08-10; Fierce Biotech 403s WebFetch (known). No dominant fresh news story to displace the preprint.
+- **Policy/funder** (ARPA-H/NIH/NSF): not separately swept — the on-target, fully-readable preprint was clearly the day's best pick.
+- **Source gaps:** r.jina.ai returned HTTP 429 (rate limit) on first fetch; recovered via direct browser-UA PDF + mutool. bioRxiv API timed out once (retried, succeeded).
+
+**Memory:** retired the stale `project_deferred_justice_preprints_0811` note (L1CAMxCD3 now shipped; MAdCAM item aged out) and removed its MEMORY.md line.
+=== 2026-08-12T02:51:16-07:00 done  justice-biotech-brief (exit 0) ===
