@@ -3276,3 +3276,35 @@ Good — that lands right in the 12–18 minute target. Everything is written an
 
 All script, stub, and ledger files are written under `podcasts/receptor-and-reason/`; per `SKIP_TTS=1`, no TTS/publish/feed/commit steps were run — that's for the batch orchestrator.
 === 2026-08-11T03:39:34-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-08-12T02:50:08-07:00 start receptor-and-reason ===
+I'll wait for the monitor to fire (days 08-10, 08-11, 08-12 remain). Standing by.
+=== 2026-08-12T03:02:23-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-12T03:02:23-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-08-12T03:05:23-07:00 start receptor-and-reason (retry 1) ===
+All nine paper DOIs resolve. The episode is complete. Since `SKIP_TTS=1`, I've stopped at the stub stage — the orchestrator will run batch TTS, publish to R2, update `feed.xml`, and commit.
+
+## Run summary — receptor-and-reason, 2026-08-12
+
+**Published (SKIP_TTS stubs written):** `2026-08-12-receptor-and-reason.md` (script, 2169 spoken words ≈ 11.8 min), `.rss-item.xml`, `.commit-msg`. Dedup ledger appended (82 lines).
+
+**Candidate funnel:**
+
+- **bioRxiv (Tier 1 + Tier 2/3)** — full window sweep 08-05→08-12, 1,208 unique preprints paginated per-day (one transient read-timeout dropped part of 08-07; small recall hit). 158 passed the relevance keyword filter; ~30 shortlisted; 9 chosen. One page-source outage logged.
+- **arXiv (Tier 2)** — FAILED. Daily cache empty ("Rate exceeded"); two live listing calls returned HTTP 429 / rate-limit HTML; web-search fallback surfaced only out-of-window (early-August, pre-08-05) items. Dropped for the day.
+- **Nature journals (Tier 1)** — Neuropsychopharmacology & Molecular Psychiatry both 303-redirect to `idp.nature.com` login wall; unreadable.
+- **Psychiatric Times (Tier 1)** — HTTP 403 to WebFetch; web-search returned only quarterly/monthly reviews, nothing in-window.
+- **Industry (Tier 3)** — Recursion/Genentech neuroscience-target item was the top hit but already shipped 08-11 (dedup).
+
+**Shortlist → episode (all bioRxiv, all deduped against ledger):**
+1. ✅ **RABIN/LRRC57** presynaptic Rab decoy-brake, levetiracetam-rescuable seizures — `743108` **(LEAD, full text read)**
+2. ✅ HOMER1 R297W de novo variant, mGluR5-calcium scaffold — `741753`
+3. ✅ DMT reprograms microglial inflammation via sigma-1/serotonergic — `742931` *(abstract; body not yet rendered, flagged in-script)*
+4. ✅ Lateral-habenula subtype value/movement coding — `743065`
+5. ✅ Arc capsid signaling sets sleep depth (Drosophila) — `743357`
+6. ✅ NDST1 substrate-reduction virtual screen for Sanfilippo C — `743834`
+7. ✅ Boltz-Perturb co-folding pose recovery — `742877`
+8. ✅ De novo binder pocket-vs-global-score study — `743643`
+9. ✅ Aripiprazole/vorapaxar suppress HBV via host STAT3 — `743121` **(CLOSE)**
+
+**Deferred (not-yet-rendered full text, revisit):** cortico-thalamic multi-head self-attention theory of cognition — `743205` (posted 08-10, extraordinary claim, abstract-only). DMT (`742931`) was kept as a non-lead abstract item but should also be re-checked once its body renders.
+=== 2026-08-12T03:40:56-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
