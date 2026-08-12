@@ -980,6 +980,23 @@ competitors below. These are the "so what for Blackbird" hooks.
   AND a rising differentiation bar. **Action:** Eddie + aSKY team refresh the
   competitive map now; the undisclosed-mechanism gap gets more expensive as the
   field matures.
+- **Competitive read SHARPENED to the G12D-selective subfield (2026-08-12 Portfolio
+  Watch, board item; landscape-consolidation read, NOT a fresh single catalyst):**
+  the bar for aSKY's undisclosed KRAS-frame antibody is no longer just pan-RAS
+  daraxonrasib — it's the **KRAS G12D-SELECTIVE** subfield the "KRAS frame" points
+  at, and that subfield has hardened. Revolution Medicines' G12D-selective
+  **zoldonrasib (RMC-9805)** carries **FDA Breakthrough Therapy designation in KRAS
+  G12D NSCLC** (previously PD-(L)1 + platinum treated) and moves into **three Phase 3
+  trials in 2026** — two first-line metastatic PDAC (incl. RASolute 305, KRAS-G12D-
+  specific, chemo ± zoldonrasib) and one first-line NSCLC; early NSCLC data ~61% ORR /
+  ~89% DCR at 1200 mg. Add **Incyte's INCB161734** (G12D-selective; ~80% disease
+  control, 37% ORR in heavily-pretreated G12D PDAC, 2026 ASCO-GI) and a **G12D-targeted
+  degrader (setidegrasib)** now in clinic (early NSCLC + PDAC activity). Read: the exact
+  niche a KRAS-frame antibody must define against is filling with approaching-
+  registrational small molecules PLUS a new modality (degraders). This consolidated
+  while the brief watched pan-RAS. **Action stands + more urgent:** refresh the aSKY
+  competitive map against the **G12D-selective set specifically**; cost of keeping the
+  mechanism undisclosed keeps rising monthly.
 
 ### Neuropsychiatric NewCo (schizophrenia) — Lieber Institute + Third Rock ✅
 - **What:** **GPR52 agonist** program for schizophrenia. GPR52 is a

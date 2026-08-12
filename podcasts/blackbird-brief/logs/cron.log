@@ -1511,3 +1511,26 @@ Industry press / earnings scanned — Fierce, Endpoints, STAT, BioPharma Dive ho
 
 No source outages this run.
 === 2026-08-11T02:17:07-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-12T02:10:08-07:00 start blackbird-brief ===
+All artifacts are in place (~1,190-word script → ~7 min at 1.2× TTS). Below is the run record for `cron.log`.
+
+---
+
+**Blackbird Brief — Portfolio Watch, Wednesday 2026-08-12 (Type B, daily). SKIP_TTS=1 batch mode.**
+
+Wrote script + `.rss-item.xml` stub (`__LENGTH__`/`__DURATION__` placeholders) + `.commit-msg` stub. Updated `memory/blackbird-portfolio.md` (aSKY G12D-selective sharpening). **No TTS / R2 / feed edit / commit** — orchestrator (`publish_pending.py`) handles those. Not a Sunday, so Portfolio Watch only (no Sourcing Radar).
+
+**Selection outcome:** genuinely quiet direct-catalyst tape continues (~17th day). No Blackbird company had a readout/financing/deal/filing. Full lane sweep found **nothing new in the past 3–4 days** that moves a portfolio thesis. Per PROMPT/PIPELINE, shipped a tight, honest brief — no manufactured lead, no repeat of yesterday's Nxera story. Anchored on the two hard dates now inside two weeks + one genuinely sharpened competitive read.
+
+**Candidate funnel (Stream A — portfolio/competitive news):**
+- Revolution Medicines — newest SEC 8-K = Aug 5 Q2 print (already covered Aug 6); EMA Pathfinder daraxonrasib review dated **Jul 7** (stale). Not fresh. *But* zoldonrasib G12D-selective (FDA Breakthrough in G12D NSCLC + 3 Phase 3 starts) → **sharpened aSKY read (used, board item).**
+- Ultragenyx DTX401 (GSD Ia) — FDA decision **Aug 23**, now 11 days out. **CHOSEN as lead** (Aletira landscape/safety-bar read; climate-read framing, not SELEXON validation). Link: BioSpace mirror (IR page blocks this IP; 200 OK).
+- 1104health / Operation TrialBlazer — OIG anti-kickback comment deadline **Aug 24**, 12 days out. **CHOSEN, item 2** (needs comment letter from Rose Wang's team now).
+- Nxera GPR52 NXE'149 — Aug 7 Q2 call = **yesterday's lead**; today carried as standing deal-tape watch only (no re-litigation).
+- CAMP4 — CTA (NL/CCMO Phase 1b CMP-001) + $100M PIPE both from **Nov 2025 Q3 / Aug 4** (already covered). No change; board note.
+- MapLight ZEPHYR (Aug 10 lead), Sarepta Elevidys, Cobenfy/Neurocrine/emraclidine, Alnylam, TL1A (duvakitug/tulisokibart/afimkibart), KRAS G12D (INCB161734, setidegrasib), hearing-loss otoferlin — all surveyed; **all Apr–Jul or already covered**, none fresh. GCPII/IBD carried as no-change board note (TL1A crowding).
+
+**Sources checked:** SEC EDGAR (RVMD submissions API), BioPharma Dive homepage (WebFetch OK; no matching Aug 8–12 items), WebSearch across all portfolio lanes. No source outages this run (Ultragenyx & RevMed IR pages block direct curl from this IP — worked around via BioSpace/EDGAR mirrors).
+
+**Episode:** `2026-08-12-portfolio-watch` — lead: Ultragenyx gene-therapy decision (Aug 23) as Aletira safety-bar climate read; + OIG comment deadline (Aug 24) for 1104health; + sharpened aSKY G12D-selective competitive read; standing watch on GPR52 deal tape, CAMP4/RNA-activator, GCPII/IBD.
+=== 2026-08-12T02:19:37-07:00 done  blackbird-brief (exit 0) ===
