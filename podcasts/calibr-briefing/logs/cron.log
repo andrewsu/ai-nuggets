@@ -3058,3 +3058,37 @@ Shortlist (after discarding stale/off-topic matches):
 
 Spotlight rationale: AbCellera is the day's most analyzable and strategically important item and sits squarely in the AI-in-drug-discovery focus area — the readout is a referendum on whether an AI antibody-discovery engine can become a drug company, and it validates a platform built for hard-to-drug GPCRs. Genuinely new vs yesterday (yesterday previewed the pre-open readout; today has the actual data).
 === 2026-08-11T02:27:41-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-12T02:20:08-07:00 start calibr-briefing ===
+Both episodes are written and staged for the batch orchestrator (SKIP_TTS mode — no TTS, publish, feed edit, or commit performed, per PIPELINE.md). Files created:
+
+- `scripts/2026-08-12-pharma-headlines.txt` + `.rss-item.xml` + `.commit-msg`
+- `scripts/2026-08-12-itm-radiopharma-crl-spotlight.txt` + `.rss-item.xml` + `.commit-msg`
+
+XML stubs validated well-formed; source URLs verified resolving.
+
+---
+
+## Calibr Briefing — 2026-08-12 run summary
+
+**Episodes produced:** Headlines (`2026-08-12-pharma-headlines`) + Spotlight (`2026-08-12-itm-radiopharma-crl-spotlight`). Both handed off to `publish_pending.py` for batch TTS/commit.
+
+**Spotlight:** ITM's FDA complete response letter for the lutetium-177 radioligand ITM-11 in GEP-NETs — rejected on manufacturing/CMC, not clinical data — as the clearest proof yet that supply chain is the binding moat/risk in radiopharma.
+
+### Candidate funnel
+
+**General web / press feeds** (WebSearch + BioPharma Dive; Fierce Biotech/Pharma 403 to WebFetch as expected — worked around via search + press releases/STAT/Medscape/AWS blog):
+
+Substantive in-window (Aug 8–12), not previously featured (checked feed.xml — none present):
+- **ITM-11 CRL (radiopharma, GEP-NETs)** — itm-radiopharma.com PR / STAT / Fierce Pharma / Medscape — **✅ CHOSEN (spotlight + headline lead)**
+- **Novo Nordisk × AWS agentic-AI drug-discovery pact** — aws.amazon.com industries blog — **✅ CHOSEN (headline #2, AI focus)**
+- **Silence Therapeutics divesiran Phase 2 SANRECO (polycythemia vera, TMPRSS6 siRNA)** — CancerNetwork — **✅ CHOSEN (headline #3)**
+- **Sobi × Innate Pharma lacutamab license (anti-KIR3DL2, CTCL)** — sobi.com PR — **✅ CHOSEN (headline #4)**
+- **BioMarin discontinues BMN 401 (ENPP1 deficiency, split Phase 3)** — biomarin.com PR — **✅ CHOSEN (headline #5)**
+
+Considered and dropped:
+- Vertex/Crinetics ~$10B — **out of window** (announced Jul 6; M&A-close recency trap)
+- AbCellera ABCL635, Jazz/Actio, Sanofi Pompe, aTyr, MoonLake sonelokimab, Replimune — already shipped in prior episodes
+- Innovent × Daiichi Sankyo commercialization; Inizio Engage AI platform — thinner / off-focus, not selected
+
+**Sources with failures this run:** Fierce Biotech/Pharma and GlobeNewswire returned 403/timeout to WebFetch; routed around via WebSearch + accessible mirrors (STAT, Medscape, AWS blog, company IR pages). No day-skipping outage.
+=== 2026-08-12T02:30:44-07:00 done  calibr-briefing (exit 0) ===
