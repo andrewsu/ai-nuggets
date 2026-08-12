@@ -1640,3 +1640,39 @@ All three stub files are written and the RSS item validates. In `SKIP_TTS` mode 
 
 **Notes:** WhynotTV confirmed still stale (memory holds) — used Dwarkesh instead. No fabricated quotes; all quotes verified against primary sources. No Zefan_Cai fresh signal found (search returned only academic profiles) — not name-dropped rather than invented.
 === 2026-08-11T02:37:10-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-12T02:30:08-07:00 start jinglin-ai-pulse ===
+Everything validates. In `SKIP_TTS=1` mode I skip audio generation, R2 publish, feed edit, and the commit — the orchestrator does those after batch TTS. The script plus the two stubs (`.rss-item.xml`, `.commit-msg`) are in place. Spoken length ~2,300 words (~11 min after the 1.2× speedup), within the 10–15 min target.
+
+---
+
+**Ollie's AI Pulse — 2026-08-12 — run summary**
+
+Episode written: `2026-08-12-machine-scale-reasoning-a-math-bound-falls-and-a-reasoning-leak`
+Throughline — reasoning going *machine-scale* seen from three angles (capability / cost / risk):
+- **Twitter Pulse:** (1) Anthropic's unreleased Claude moving a proven Riemann-zeta lower bound 41.6%→67.2% via ~60 subagents / 31M tokens (verifiable, Conrey & Goldston reviewed; *not* a proof of RH) — "future of math" vs "orchestrated search" debate; (2) "Stealing Reasoning Traces from Proprietary LLM APIs" (ELLIS Tübingen / Max Planck) — hidden encrypted CoT blobs interchangeable across sessions/users/models, 367 PII + 182 credentials recovered; (3) DeepSeek V4 Flash 0731 vs GPT-5.6 Luna cheap-cascade economics.
+- **Money Moves:** Cognition/Devin in talks at $40B+ (Bloomberg, today) + ex-OpenAI CPO Kevin Weil's ~$150M AI-for-science raise.
+- **Deep Cut:** Dwarkesh × Ryan Greenblatt (posted ~Aug 11–12), "What happens once AI can automate AI research?" — the containerizable/verifiable automatability thesis and the reward-hacking-generalization crux.
+
+**Candidate funnel**
+
+Twitter/discourse (last 48h):
+- ✅ Claude / Riemann zeta bound (Anthropic, Aug 10–11) — **CHOSEN (Pulse lead)** — https://www.anthropic.com/research/riemann-zeta
+- ✅ "Stealing Reasoning Traces from Proprietary LLM APIs" (arXiv 2608.09867, Aug 10; Simon Willison Aug 11) — **CHOSEN (Pulse 2)**
+- ✅ DeepSeek V4 Flash 0731 vs GPT-5.6 Luna (Wes Roth / Zain / together.ai) — **CHOSEN (Pulse 3)**
+- ⏭️ Encrypted-CoT interchange framing dispute — folded into Pulse 2
+- ✖️ Pacing/RSI letter + HuggingFace machine-speed cyberattack — late-July stories, already covered by prior episodes (Aug 7–10); dropped as stale
+- ✖️ Knowledge-cutoffs (Shrivu Shankar), Meta Muse Glimmer, Zuckerberg open-weights — covered in yesterday's episode
+
+Investment/business (last 7d):
+- ✅ Cognition $40B+ talks (Bloomberg 2026-08-12) — **CHOSEN (Money lead)**
+- ✅ Kevin Weil AI-for-science, ~$150M @ $750M+ (~Aug 11–12) — **CHOSEN (Money 2)**
+- ⏭️ Anthropic–Riot 20-yr $9.1B compute deal; Accel $3.5B; CoreWeave/Super Micro; Gemini 1B MAU — compute-capex convergence already covered Aug 11; dropped to avoid rehash
+
+Podcasts (last 7–14d):
+- ✅ Dwarkesh × Ryan Greenblatt, "What happens once AI can automate AI research?" (~Aug 11–12) — **CHOSEN (Deep Cut)** — grounded via episode page transcript summary
+- ✖️ Dwarkesh × Grant Sanderson "AI and the future of math" — thematically perfect but **June 30**, outside the 14-day window; dropped
+- ✖️ Dwarkesh continual learning (Aug 7) — used in yesterday's episode
+- ✖️ TWIML/Raschka (Feb), Interconnects/No Priors/Cognitive Rev — no groundable in-window episode surfaced
+
+Sources: all searchable/fetchable; Bloomberg 403'd on WebFetch but the story is confirmed via Seeking Alpha + Silicon Republic. No source outages affected selection.
+=== 2026-08-12T02:39:47-07:00 done  jinglin-ai-pulse (exit 0) ===
