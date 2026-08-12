@@ -3312,3 +3312,28 @@ Episode files are written. Under SKIP_TTS mode, the orchestrator will handle TTS
 
 **Note for next run:** revisit the deferred BioChirp agentic-retrieval preprint once bioRxiv's route recovers — it's a near-perfect fit for this show and was blocked purely for mechanical (Cloudflare) reasons.
 === 2026-08-11T02:19:51-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-12T02:00:08-07:00 start biomedical-agentic-ai ===
+Episode is fully prepared under `SKIP_TTS` mode (script + RSS-item stub with `__LENGTH__`/`__DURATION__` placeholders + commit-msg stub written; TTS, R2 publish, feed edit, and commit are left to the batch orchestrator per PIPELINE).
+
+## Run summary — biomedical-agentic-ai, 2026-08-12
+
+**Selected:** InfoFlowEX — "A unified framework and benchmark for generalizable biomedical knowledge extraction and applications with large language models" (Cell Reports Medicine, pub 2026-08-11). Full text read via `r.jina.ai` on cell.com (100 KB, complete). Squarely in Andrew's lane: ontology-guided data integration, LLM knowledge extraction, KG expansion (PrimeKG), open corpus (Zenodo) + code (GitHub). 741-word body.
+
+**Candidate funnel:**
+
+- **bioRxiv** (window 08-09→08-12): full collection paginated (661 in window; ~1,013 unique loaded across overlapping pages), 89 keyword hits, ~6 in-window on-topic after discarding spurious matches ("chemical agent", agent-based models, embedding/PLM papers):
+  - `agentic retrieval of structured data from biomedical databases` (BioChirp, 10.64898/2026.04.25.720782 v2, 08-09) — **dominant pick but DEFERRED again**: full text unreadable on every route (fetch_preprint abstract-only; curl/WebFetch r.jina.ai → Cloudflare 429; EPMC inEPMC=N). Memory updated.
+  - ProtJEPA (protein world model, 08-09) — representation model, not agentic; skip.
+  - "Dynamic knowledge representation of BBB … agent-based model" (08-09) — classical ABM, not LLM-agentic; skip.
+  - PPI-embedding map / product-contextualized genome LLM / fastVEP (08-09) — not agentic/KG-integration; skip.
+- **arXiv** — **SOURCE OUTAGE**: shared cache `/tmp/ai-nuggets-arxiv-cache.xml` = "Rate exceeded" (14 B); two live API calls + one WebFetch to export.arxiv.org all returned "Rate exceeded"/HTTP 429 (IP-blocked). Fell back to `site:arxiv.org` web search — only surfaced out-of-window (May/Jun) items; no confirmable in-window candidate. Gap noted.
+- **PubMed** (edat 08-07→08-12): 89 hits, ~40 reviewed. On-topic readable shortlist:
+  - `InfoFlowEX` (42580345, Cell Rep Med) — **CHOSEN**.
+  - KGNN TNBC drug repurposing (42576503) — GNN, not LLM/agentic; Chinese-language; skip.
+  - HiHPO protein-phenotype (42574413) — graph contrastive, HPO ontology, not agentic; skip.
+  - Vestibular conversational LLM agent (42572244) — real agentic deployment but clinical triage, off Andrew's research lane; skip.
+- **ChemRxiv** — `site:chemrxiv.org` search: all out-of-window (Mar–Jun 2026); nothing fresh.
+- **News / product / funders** — scanned (NVIDIA BioNeMo Agent Toolkit = June, out of window); no in-window agentic-biomedical launch.
+
+**Note:** BioChirp remains the standing deferred candidate; revisit once bioRxiv Cloudflare/full-text renders.
+=== 2026-08-12T02:13:09-07:00 done  biomedical-agentic-ai (exit 0) ===
