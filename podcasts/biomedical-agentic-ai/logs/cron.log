@@ -3337,3 +3337,32 @@ Episode is fully prepared under `SKIP_TTS` mode (script + RSS-item stub with `__
 
 **Note:** BioChirp remains the standing deferred candidate; revisit once bioRxiv Cloudflare/full-text renders.
 === 2026-08-12T02:13:09-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-13T02:00:13-07:00 start biomedical-agentic-ai ===
+Episode is written and staged for the batch pipeline. Final run summary below.
+
+---
+
+## Episode shipped: `2026-08-13-sable-agentic-hit-to-lead`
+
+**Pick:** SABLE (Synthetically-accessible Agentic Bayesian Ligand Exploration) — an open-source agentic hit-to-lead framework (arXiv 2608.11483, posted 2026-08-11, Tropsha lab, UNC Chapel Hill). The angle: it deliberately demotes the LLM to interface/router and walls off all quantitative judgment behind explicit, auditable, swappable tools (HEALER enumeration, Boltz-2 oracle, Bayesian optimization) — motivated by ChemCrow's finding that LLMs can't reliably judge chemical outputs. On-brand for agentic-AI-for-biomedical-research + open science, and a fresh architectural take that dovetails with the show's recent verification-themed run without repeating it.
+
+Full text read via `mutool` on the PDF (69K chars). Spoken body: **768 words** (cap 1150). `SKIP_TTS=1` detected → wrote script + `.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders, validated as XML) + `.commit-msg`; **skipped TTS, R2 publish, feed edit, and commit** per pipeline batch mode. No git actions taken.
+
+### Candidate funnel
+
+**bioRxiv** (871 unique scanned, 2026-08-10→08-13; 30/page paginated fully):
+- ✱ *Virtual-cell verification enables self-auditing AI discovery for immune rejuvenation* (10.64898/2026.08.04.742916) — **top-fit but DEFERRED**: full body not rendered (fetch_preprint → abstract-only) + r.jina.ai 429-blocked the session across 4 retries. Noted in memory to revisit.
+- *A Guided AI Framework for Harmonisation to the OMOP CDM* (10.64898/2026.08.07.742453) — very on-brand (data integration) but v1 unrendered + jina 429; also we've run heavy ontology/curation lately.
+- SEA-AD DREAM Challenge (v2 revision), AI-designed WWP1 peptide inhibitors — weaker/less agentic.
+
+**arXiv** (500 cached entries filtered):
+- **✓ SABLE — 2608.11483 — CHOSEN** (full text read)
+- AMIE (Video), Google DeepMind expert-level video consultations (2608.09861) — buzzy but telehealth-consultation, off Andrew's research/KG/open-data lane.
+- Social Chain of Thought (2608.11420) — multi-agent Dx, incremental.
+- ChemWorld (2608.10792) — agent-experimentation infra; runner-up.
+- *Beyond Cash Flows* biotech valuation (2608.10175) — off-brand (finance).
+
+**PubMed** (300 PMIDs, reldate 5) — scanned; nothing beating the arXiv/bioRxiv leads. **ChemRxiv / news / funder pages** — no in-window agentic-biomedical item stronger than SABLE.
+
+No source outages this run. The one gap is the jina/Cloudflare 429 that blocked full-text on the two strongest bioRxiv fits — both deferred (mechanical render-lag), not rejected.
+=== 2026-08-13T02:11:52-07:00 done  biomedical-agentic-ai (exit 0) ===
