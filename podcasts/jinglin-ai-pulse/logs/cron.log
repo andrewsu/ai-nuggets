@@ -1676,3 +1676,34 @@ Podcasts (last 7–14d):
 
 Sources: all searchable/fetchable; Bloomberg 403'd on WebFetch but the story is confirmed via Seeking Alpha + Silicon Republic. No source outages affected selection.
 === 2026-08-12T02:39:47-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-13T02:30:13-07:00 start jinglin-ai-pulse ===
+2,130 spoken words — right in the 1,500–2,200 target (~13 minutes at 1.2× TTS). Done. Since `SKIP_TTS=1`, I wrote the script plus the two transient stubs and skipped TTS, R2 publish, feed edit, and commit — the orchestrator (`publish_pending.py`) handles those after batch TTS.
+
+## Run summary — jinglin-ai-pulse, 2026-08-13
+
+**Episode:** *Autonomous agents go to war, and Nvidia gives the model away* — throughline: the model is now a commodity, so the value and the danger fled the artifact into compute/power, apps, the offense/defense split, and the RL training environment.
+
+**Files written** (`scripts/2026-08-13-autonomous-agents-go-to-war-and-nvidia-gives-the-model-away.*`): `.md` (2,130 spoken words), `.rss-item.xml` (validated well-formed, `__LENGTH__`/`__DURATION__` placeholders), `.commit-msg`.
+
+**Candidate funnel:**
+
+*Twitter/X + AI news discourse (last 48h)*
+- ✅ **Taiwan autonomous AI cyberattack** (Dream security firm; slashdot/securityaffairs/united24) — CHOSEN, lead. First documented end-to-end autonomous agent attack on a government; open Hermes/OpenClaw frameworks jailbroken as a "pen test."
+- ✅ **OpenAI GPT-5.6-Cyber / Daybreak Red + SAFE reporting coalition** (OpenAI blog, Forbes, TechTimes) — CHOSEN, folded into lead as the offense/defense convergence.
+- ✅ **Nvidia Nemotron 3.5 Lightning + NeMo Switchyard** (Nvidia blog, CNBC, SiliconANGLE, MarkTechPost) — CHOSEN, Pulse #2.
+- ⏳ Latent-reasoning paradigm (BDH-CQ, recurrent depth) — dropped; couldn't establish sharp 48h Twitter convergence, would have been constructed.
+- ✗ Riemann-zeta result / reasoning-trace leak / Cognition $40B / DeepSeek V4 Flash — excluded, all shipped in yesterday's (08-12) episode.
+- ✗ @Zefan_Cai feed — no retrievable recent posts (X profile not crawlable via WebSearch).
+
+*Money moves (last 7d)*
+- ✅ **Anthropic–Riot Platforms** 20-yr, 191MW, ~$9.1B (up to $16.1B) power lease + possible fall IPO (DCD, Bloomberg, CNBC) — CHOSEN, framed via Dwarkesh's compute-repricing thesis.
+- ✅ **Lovable** $400M at $13.3B (Bloomberg, SiliconANGLE) — CHOSEN, app-layer repricing.
+- ✗ Prometheus $12B/$41B (June 11), MiniMax M3 (June 1), Fireworks/Chai/Blacksmith — excluded, stale or off-theme.
+
+*Podcast Deep Cut (last 14d)*
+- ✅ **Simon Mo (vLLM/Inferact) on AI + a16z, Aug 6** — CHOSEN, read in full. "The moat is the RL environment, not the weights or data."
+- ✗ Nathan Lambert "On China's open-source AI trajectory" — dropped: dated Sept 2025 (out of window) and not a podcast.
+- ✗ Dwarkesh compute-economics essay — used as an analytical lens inside Money Moves rather than the Deep Cut, to avoid back-to-back-Dwarkesh (08-12 was also Dwarkesh).
+
+**Sources:** no source-level outages this run; all picks read from primary/near-primary pages before drafting.
+=== 2026-08-13T02:40:33-07:00 done  jinglin-ai-pulse (exit 0) ===
