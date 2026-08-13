@@ -2119,3 +2119,30 @@ Script + `.rss-item.xml` + `.commit-msg` stubs written to `scripts/`. **SKIP_TTS
 
 **Memory:** retired the stale `project_deferred_justice_preprints_0811` note (L1CAMxCD3 now shipped; MAdCAM item aged out) and removed its MEMORY.md line.
 === 2026-08-12T02:51:16-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-13T02:40:13-07:00 start justice-biotech-brief ===
+Episode written and staged. `SKIP_TTS=1`, so I stopped before TTS/publish/feed/commit — the orchestrator (`publish_pending.py`) will batch those.
+
+## Justice's Biotech Brief — 2026-08-13
+
+**Chosen:** IFX-101 & IFX-201 — Infinimmune's $75M Series A (co-led by Playground Global + Regeneron's venture arm, w/ Merck GHI Fund & RA Capital) for a 10x-Genomics-born antibody-discovery platform; anti-IL-13 me-better (IFX-201) + anti-IL-22 first-in-class swing (IFX-101) for atopic dermatitis. The take: the incumbent whose Dupixent franchise it chases is buying the discovery engine, not the two eczema antibodies. Files: `.md` + `.rss-item.xml` + `.commit-msg` (XML validated).
+
+### Candidate funnel
+
+**bioRxiv** (full 2-day collection: 08-12 = 207 items, 08-13 = 4 items; filtered on VEGF/PD-(L)1/TCE/bispecific/trispecific/CAR-T/ADC/JAK/checkpoint/etc.). 14 keyword hits on 08-12, 3 genuinely Justice-relevant — **all fresh 08-12 v1s with bodies not yet rendered → ineligible (full-text gate), deferred:**
+- Shark VNAR anti-FAP occluded epitope (cryo-EM) — 10.64898/2026.08.11.744296 — abstract-only
+- Papillary immunosuppressive niches (PAI-1→LRP1-JAK1-STAT6, Treg/CTL exclusion) — 10.64898/2026.08.11.744324 — abstract-only
+- Glucocorticoid signalling in DCs for glioblastoma (NR3C1 CRISPR) — 10.64898/2026.08.07.742730 — jina 403 + API 504, then abstract-only
+- (08-13 sole hit: RobustCell adversarial-robustness transcriptomics — off-topic)
+
+**News (Fierce/Endpoints/STAT/BioPharma Dive/Fierce Pharma).** Fierce & Endpoints block WebFetch and jina (Fierce anon-blocked until 10:05 UTC); general web search lagged (only evergreen/old results). BioPharma Dive homepage (works via WebFetch) gave the dated Aug 11–12 list:
+- **Infinimmune $75M Series A, antibody platform, IL-22/IL-13 for AD (Aug 11)** ✅ *chosen* — fresh, fully readable, fits "autoimmune biologics/antibody"
+- Definium LSD pill for GAD (Aug 12) — off-topic
+- Silence 'differentiated' data / polycythemia vera (Aug 12) — already covered by calibr 08-12
+- K2 Therapeutics CEO appointment (Aug 11) — leadership, not therapeutic
+- Epicrispr $90M epigenetic editing, muscle disease (Aug 11) — off-topic
+- On-topic deals that surfaced in search but were **out of window**: AbbVie/IGI $700M trispecific (Jul 2025); BeOne/Huahui trispecific PD-1/CTLA-4/VEGF (Apr 2026); Lepu/Excalipoint TCE $857M (Aug 2025)
+
+**Policy/funder:** ARPA-H news — one Aug 6 stroke-robotics item, nothing immunology/oncology. No source outages this run (Fierce/Endpoints are chronic WebFetch blocks, routed around via BioPharma Dive + search).
+
+Three strong deferred bioRxiv candidates recorded to memory for revisit once their bodies render.
+=== 2026-08-13T02:59:43-07:00 done  justice-biotech-brief (exit 0) ===
