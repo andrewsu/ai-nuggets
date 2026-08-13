@@ -3092,3 +3092,34 @@ Considered and dropped:
 
 **Sources with failures this run:** Fierce Biotech/Pharma and GlobeNewswire returned 403/timeout to WebFetch; routed around via WebSearch + accessible mirrors (STAT, Medscape, AWS blog, company IR pages). No day-skipping outage.
 === 2026-08-12T02:30:44-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-13T02:20:13-07:00 start calibr-briefing ===
+Both stubs are well-formed and all six files are in place. Today's calibr-briefing episode is written and staged for the batch TTS orchestrator (SKIP_TTS=1, so no audio/publish/feed/commit steps — those run downstream).
+
+## Calibr 2026-08-13 — run complete
+
+**Two episodes written** (`.txt` scripts + `.rss-item.xml` + `.commit-msg` stubs each):
+
+1. **Pharma Headlines** — six-item roundup, leading with today's spotlight.
+2. **Spotlight — Lilly's retatrutide black-market lawsuits** — deep dive on why Lilly is spending legal firepower defending an unapproved drug: the triple-agonist mechanism and surgery-adjacent Phase 3 efficacy, the 14,000-listing grey market inherited from the compounding era, the platform/payments enforcement strategy, and what it signals about the obesity TAM.
+
+### Candidate funnel
+
+Sources scanned: BioPharma Dive (homepage index — the reliable one; Fierce Biotech 403'd WebFetch, covered via search), plus targeted WebSearch across Endpoints/STAT/Fierce/PR wires. Window: Aug 10–13.
+
+**Shortlist (fresh, full text confirmed):**
+- **Lilly sues 6 sellers of black-market retatrutide** (Aug 12) — biopharmadive/827659, Lilly IR — ★ **CHOSEN: spotlight + headline lead**
+- **Sionna CF corrector fails on sweat chloride, −92%** (Aug 10) — biopharmadive/827431 — headline #2
+- **Definium LSD pill (DT120) clears first Phase 3 in GAD** (Aug 12) — biopharmadive/827669, Endpoints — headline #3
+- **Vaderis $152.5M Series B + Phase 3 HEROIC, oral AKT inhibitor engasertib in HHT** (Aug 11) — biopharmadive/827466 — headline #4
+- **Boulevard Bio launches, $65M Deerfield, BAFF/APRIL bispecific in IgAN** (Aug 12) — biopharmadive/827583 — headline #5
+- **AI clinical-monitoring agent ≈ $21M/oncology program** (Aug 12, Fierce) — headline #6
+
+**Considered, dropped:**
+- Vertex/Crinetics $10B — real but **July 6**, stale; dropped.
+- Lilly retatrutide *also* appeared in 08-05/08-06 scripts (positive Phase 3), but the **lawsuit** angle is new — not a repeat pick.
+- Trump childhood-vaccine EO, Infinimmune eczema Series A, Aura Biosciences layoffs, MK-6240 tau-PET decision — cut for space/lower relevance to focus areas.
+
+**Source notes:** Fierce Biotech homepage returned HTTP 403 to WebFetch and one Lilly-IR WebFetch timed out; both were recovered via WebSearch + BioPharma Dive/CNBC, so no coverage gap. No hard source outages.
+
+Downstream (`publish_pending.py`) will render length/duration, upload to R2, insert both `<item>`s into `feed.xml`, and commit per-episode with the Calibr-prefixed messages.
+=== 2026-08-13T02:28:37-07:00 done  calibr-briefing (exit 0) ===
