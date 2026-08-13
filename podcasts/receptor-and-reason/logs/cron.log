@@ -3308,3 +3308,30 @@ All nine paper DOIs resolve. The episode is complete. Since `SKIP_TTS=1`, I've s
 
 **Deferred (not-yet-rendered full text, revisit):** cortico-thalamic multi-head self-attention theory of cognition — `743205` (posted 08-10, extraordinary claim, abstract-only). DMT (`742931`) was kept as a non-lead abstract item but should also be re-checked once its body renders.
 === 2026-08-12T03:40:56-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-08-13T02:50:13-07:00 start receptor-and-reason ===
+Today's episode of **Receptor & Reason** (2026-08-13) is produced. In `SKIP_TTS` mode, so the script + `.rss-item.xml` + `.commit-msg` stubs are written and the ledger is updated; the orchestrator will handle TTS, R2 publish, feed insertion, and the commit.
+
+**Episode: 9 segments, ~1,875 spoken words (~13 min)**
+
+1. **DT120 / lysergide phase 3 in GAD** (LEAD, Psychiatric Times/Definium) — single-dose oral LSD tablet, HAM-A −11.6 vs −6.2, d≈0.8, first new GAD mechanism in ~20y; caveats = functional unblinding (50 µg arm reads out next month) and multi-hour clinic monitoring.
+2. **TCB-2 multidimensional phenotyping** (bioRxiv, full text) — serotonin-2A agonist effects only partially blocked by volinanserin.
+3. **Psychedelics & astrocytes** (Mol Psychiatry perspective, abstract).
+4. **Psilocybin circulating microRNAs** (bioRxiv, full text).
+5. **Semaglutide → orexin + basal-forebrain cholinergic → hippocampal ACh** (bioRxiv, full text).
+6. **Cocaine-abstinence autocrine enkephalin gating striatopallidal GABA** (bioRxiv, full text).
+7. **Mesocortical assembloids self-sorting into disease-prone states** (bioRxiv, full text).
+8. **NLRP3 inflammasome as psychiatric target** (Mol Psychiatry review, abstract).
+9. **DegradeQuery — counterfactual pretraining for PROTAC degradation** (arXiv, full text; CLOSE).
+
+**Candidate funnel**
+
+- **Tier 1 bioRxiv** (neuroscience + pharmacology, window 08-06→08-13): fetched the full ~1,248-item collection day-by-day (multi-day-range API broke at offset 390; also ~37 s/request — noted to memory). ~326 relevance/dedup survivors; strong CNS-pharma shortlist ~15. Chose TCB-2, psilocybin-miRNA, semaglutide-orexin, cocaine-enkephalin, mesocortical assembloids.
+- **Tier 1 journals** (via subagent + PubMed, Nature/Elsevier auth-walled): chose the two Mol Psychiatry reviews (psychedelics-astrocytes, NLRP3). Psychiatric Times DT120 = lead; oveporexton NT1 approval **dropped as out-of-window (08-05)**.
+- **Tier 2 arXiv** (shared cache): ~200 bio+agentic hits, almost all generic LLM. SABLE hit-to-lead skipped (it's today's biomedical-agentic-ai sibling pick). Chose DegradeQuery (Tier 3 comp-pharma closer).
+- **Deferred (full text not yet rendered, 08-11/12 postings)**: FTO/morphine, DMT vs 5-MeO-DMT, JAK/epilepsy, psilocybin cog-flex null, gut×LRRK2 — all logged to memory to revisit.
+- **Source gaps**: r.jina.ai→bioRxiv full text intermittently 429 (worked around with spaced retries); Nature/Elsevier bodies auth-walled (used PubMed abstracts for the two reviews only).
+
+All 9 paper URLs were validated by successful fetch; dedup ledger appended (9 items); `feed.xml` correctly untouched.
+
+*(Two items — NLRP3 and psychedelics-astrocytes reviews — were sourced via PubMed: [10.1038/s41380-026-03821-y](https://doi.org/10.1038/s41380-026-03821-y) and [10.1038/s41380-026-03816-9](https://doi.org/10.1038/s41380-026-03816-9).)*
+=== 2026-08-13T04:17:32-07:00 done  receptor-and-reason (exit 0) ===
