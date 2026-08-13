@@ -1534,3 +1534,30 @@ Wrote script + `.rss-item.xml` stub (`__LENGTH__`/`__DURATION__` placeholders) +
 
 **Episode:** `2026-08-12-portfolio-watch` — lead: Ultragenyx gene-therapy decision (Aug 23) as Aletira safety-bar climate read; + OIG comment deadline (Aug 24) for 1104health; + sharpened aSKY G12D-selective competitive read; standing watch on GPR52 deal tape, CAMP4/RNA-activator, GCPII/IBD.
 === 2026-08-12T02:19:37-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-13T02:10:13-07:00 start blackbird-brief ===
+All three files are in place and well-formed. In `SKIP_TTS=1` mode I stop here — the orchestrator handles TTS, R2 publish, feed insertion, and commit (which will sweep in the corrected `memory/blackbird-portfolio.md` via `git add podcasts/blackbird-brief/`).
+
+---
+
+## Run summary — blackbird-brief, 2026-08-13 (Thursday → Portfolio Watch only)
+
+**Episode written:** `2026-08-13-portfolio-watch` (script + `.rss-item.xml` + `.commit-msg` stubs; SKIP_TTS batch mode). Memory file corrected.
+
+**Lead (fresh, decision-relevant, corrects the brief's own standing framing):** For weeks this brief tied the **Aug-24 HHS OIG anti-kickback comment deadline** to 1104health's core question — pharma-funded **physician** coordination subsidies. Fresh in-window legal analysis (Hall Render, Sidley, Holland & Knight, Nat'l Law Review) is unanimous that the RFI covers **trial-participant/patient** remuneration only (stipends, travel, childcare, completion incentives) — **not** physician/site coordination. Correction changes the action: comment by Aug-24 on the *patient* question; the *physician-subsidy* question is unresolved and lives on a slower CMS/OIG track. Silver lining and genuine tailwind: the **Operation TrialBlazer roadmap explicitly names the physician-reimbursement gap** — HHS stating 1104health's thesis back. Net: thesis tailwind stronger, near-term de-risking weaker (opposite of prior framing).
+
+**Board (no fresh direct catalysts — quiet-tape day):** Aletira/Ultragenyx DTX401 FDA decision Aug-23 (10 days out, climate read); aSKY — Lilly olomorasib Breakthrough in KRAS **G12C** pancreatic (adjacent, not the G12D subfield; no core change); GPR52 NewCo (Nxera out-license deal watch); CAMP4/RNA-activator, GCPII/IBD — no change.
+
+**Candidate funnel:**
+- Industry press / web sweep (Stream A) — ~8 queries across all six programs; substantive shortlist after discarding already-shipped items:
+  - **OIG RFI scope correction + TrialBlazer physician-reimbursement validation (1104health)** — Hall Render / Sidley / HHS TrialBlazer roadmap — **✓ CHOSEN (lead)**. Fresh in-window analysis; corrects prior episodes.
+  - Ultragenyx DTX401 PDUFA Aug-23 (Aletira) — no new news since 08-12 countdown; board mention only.
+  - Lilly olomorasib G12C pancreatic Breakthrough (aSKY) — real but adjacent mutation (G12C≠G12D) + dated ~08-03; board one-liner.
+  - Revolution Medicines Q2 / zoldonrasib-daraxonrasib — already shipped 08-06/08-12; skipped.
+  - CAMP4 $50.1M second close — already shipped 08-03→08-05; skipped.
+  - MapLight ZEPHYR / Cobenfy — already shipped 08-10; skipped.
+  - Nxera NXE'149 out-license intent — already shipped 08-11/08-12; deal-tape watch only.
+  - TL1A (Merck tulisokibart, Sanofi/Teva duvakitug) — already covered; no new readout; board one-liner.
+- No source-level outages this run. Two WebFetch 403s (Ropes & Gray, Federal News Network) routed around via Sidley/Hall Render, which carried the read.
+
+**Memory updated:** added a dated **SCOPE CORRECTION** to the 1104health section of `blackbird-portfolio.md` fixing the participant-vs-physician conflation for future runs.
+=== 2026-08-13T02:17:02-07:00 done  blackbird-brief (exit 0) ===

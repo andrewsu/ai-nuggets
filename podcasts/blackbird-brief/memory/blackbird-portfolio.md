@@ -1267,6 +1267,30 @@ competitors below. These are the "so what for Blackbird" hooks.
   deadline** — the exact policy surface governing paying physicians for trial
   coordination (the 07-29 double-edge). Action: Rose Wang's team get a comment or
   position paper in before 08-24; cheap insurance ahead of national rollout.
+- **SCOPE CORRECTION (2026-08-13 Portfolio Watch LEAD; corrects the 07-29 → 08-12
+  framing above):** the 08-05 marker + several prior episodes mischaracterized the
+  Aug-24 OIG RFI as governing **physician/site coordination subsidies** (the core of
+  1104health's revenue model). It does NOT. Unanimous legal read (Hall Render, Sidley,
+  Holland & Knight, Nat'l Law Review): the RFI covers remuneration to **trial
+  PARTICIPANTS / patients only** — travel, lodging, childcare, meals, time stipends,
+  enrollment/completion incentives; whether AKS safe harbors / Beneficiary-Inducements
+  CMP exceptions should protect them; 12 enumerated questions (safeguards, value caps,
+  IRB role, anti-steering, phase-tiering). **It is explicitly not about paying
+  physicians/sites for coordination.** Corrected map = TWO payment questions in
+  Operation TrialBlazer on TWO clocks: (1) **patient remuneration** = the Aug-24 RFI;
+  (2) **physician/site reimbursement gap** = 1104health's actual thesis, which the
+  **TrialBlazer roadmap NAMES explicitly** ("participating in a clinical trial creates
+  administrative burden, workflow disruption and lacks a reimbursement structure that
+  reflects that investment," esp. community care) = HHS stating 1104health's thesis
+  back = **durable tailwind**, BUT it runs through a slower CMS+OIG structural
+  reimbursement track (quarters, not the Aug-24 window). **Revised action:** (a) Rose
+  Wang's team still comment by Aug-24, but on the **patient-remuneration** question
+  specifically (patient stipends/travel/completion incentives drive enrollment+retention
+  economics inside a community-onc marketplace; 1104health has a real-world view worth
+  filing); (b) do NOT treat Aug-24 as the date the physician-subsidy compliance question
+  closes — it's alive, now roadmap-validated as a barrier, and needs engagement on the
+  longer reimbursement-structure track. **Net: thesis tailwind STRONGER, near-term
+  regulatory de-risking WEAKER — opposite of the earlier framing.**
 
 ---
 
