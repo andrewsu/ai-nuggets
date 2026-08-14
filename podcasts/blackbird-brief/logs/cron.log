@@ -1561,3 +1561,36 @@ All three files are in place and well-formed. In `SKIP_TTS=1` mode I stop here �
 
 **Memory updated:** added a dated **SCOPE CORRECTION** to the 1104health section of `blackbird-portfolio.md` fixing the participant-vs-physician conflation for future runs.
 === 2026-08-13T02:17:02-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-14T02:10:12-07:00 start blackbird-brief ===
+All files are in place and the RSS stub is valid XML. Since `SKIP_TTS=1`, I've correctly skipped TTS generation, R2 publish, feed edit, and commit — the orchestrator (`publish_pending.py`) handles those after batch TTS. Here is the run audit for the log.
+
+---
+
+## Blackbird Brief — Portfolio Watch, 2026-08-14 (Friday)
+
+**Episode produced:** `2026-08-14-portfolio-watch` (daily Portfolio Watch; no Sourcing Radar — that runs Sundays). Script + `.rss-item.xml` + `.commit-msg` stubs written; portfolio memory updated with a new Adventris entry. SKIP_TTS mode → no audio/publish/commit (orchestrator will finish).
+
+**Tape read:** Genuine quiet-catalyst day — no Blackbird company had a readout, financing, deal, or filing in the past 3–4 days. Rather than a 5th consecutive countdown to the two hard August dates, led with a coverage-gap close surfaced while doing the live aSKY KRAS-map homework.
+
+**Candidate funnel:**
+
+*Industry press / competitive news (Stream A):*
+- Ultragenyx DTX401 (GSD1a AAV) — FDA PDUFA **Aug 23** → Aletira climate read. *Not fresh (accepted Feb); no-change board item, 9 days out.*
+- OIG anti-kickback RFI — comment deadline **Aug 24** (patient remuneration) → 1104health. *Not fresh; corrected 08-13; no-change closer.*
+- Nxera GPR52 NXE'149 out-license — "H2 2026," no announcement yet → schizophrenia NewCo. *No-change; deal tape watch.*
+- daraxonrasib RASolute 302 (13.2 vs 6.7mo OS) / zoldonrasib G12D → aSKY. *Checked date = April/covered; folded as landscape context, not a fresh item.*
+- Intellia HLA-C\*05:01 liver-tox → Aletira. *Already led 08-09; skipped.*
+- Merck tulisokibart TL1A, MapLight muscarinic, Sarepta Elevidys, CAMP4 2nd tranche, Lieber nucleus accumbens atlas — *all previously covered or stale; no-change.*
+- BioBuzz BioHealth roundup (Aug 7), Maryland BIITC/Start-Up Zone — *generic ecosystem, off-thesis, skipped per PROMPT.*
+
+**★ CHOSEN LEAD — Adventris Pharmaceuticals / mKRAS-VAX** (Blackbird BioHub resident; JHU-licensed; co-founders Jaffee + Zaidi). Off-the-shelf KRAS peptide vaccine, three phase 1 readouts grounded via PubMed full metadata/abstract:
+- Resected PDAC + ipi/nivo: 11/12 T-cell response — [DOI](https://doi.org/10.1038/s41467-026-68324-4)
+- Metastatic MMRp/MSS CRC + nivo/ipi: 75% ex vivo / 100% expanded — [DOI](https://doi.org/10.1038/s41467-026-74711-8)
+- **Interception (the differentiated one):** 20 high-risk pre-cancer, vaccine alone, 90% response, durable 2y, no PDAC at 16.5mo — [DOI](https://doi.org/10.1158/2159-8290.CD-25-2245)
+
+So-what: gives Blackbird KRAS exposure on a *second modality* in a setting (adjuvant/MRD/interception) the small-molecule armada aSKY competes against can't reach — the aSKY competitive map needs a vaccine/interception column. **Open item flagged in memory:** confirm whether Adventris is a BioVentures position or an ecosystem neighbor.
+
+**Board closers (all no-change):** Aletira (Ultragenyx Aug 23), 1104health (OIG Aug 24, patient side), GPR52 NewCo (Nxera clock), CAMP4/RNA-activator (funded, wedge urgent), GCPII/IBD (TL1A crowding).
+
+**Source attribution:** Adventris/mKRAS-VAX data via **PubMed** (DOIs above). No source outages this run.
+=== 2026-08-14T02:20:21-07:00 done  blackbird-brief (exit 0) ===

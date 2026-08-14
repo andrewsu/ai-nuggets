@@ -1301,6 +1301,45 @@ JHU / UMB / Lieber-adjacent Baltimore ecosystem and inform sourcing conversation
 competitive landscape reads, or partnering opportunities. Update when a company
 raises, exits, or crosses a scientific milestone.
 
+### Adventris Pharmaceuticals — JHU KRAS-vaccine company, Blackbird BioHub resident (mKRAS-VAX; aSKY landscape adjacency) ⚠
+- **Surfaced 2026-08-14 Portfolio Watch (LEAD, quiet-catalyst day — coverage-gap
+  close, not a fresh event).** A Baltimore company (co-founders **Elizabeth M.
+  Jaffee** + **Neeha Zaidi**, JHU Bloomberg Kimmel Institute for Cancer
+  Immunotherapy) that **licensed mKRAS-VAX from Johns Hopkins**. **Resident at the
+  Blackbird BioHub** and featured at the spring showcase (BioBuzz). Directory
+  address 1812 Ashland Ave (JHU BioPark area). YC-backed; ~$500K seed (2023).
+- **CONFIRMED:** BioHub residency + JHU license. **NOT confirmed:** a Blackbird
+  BioVentures investment (open item — determines portfolio vs. ecosystem-neighbor
+  status; find the ownership line). The BioHub showcase piece grouped it among
+  "portfolio companies planning Series A + BioHub graduation," but that may mean
+  resident/tenant, not BioVentures-invested.
+- **Asset — mKRAS-VAX:** off-the-shelf pooled synthetic long-peptide vaccine
+  targeting the six common KRAS mutations (G12V/G12A/G12R/G12C/G12D, G13D) — trains
+  T cells against the mutation itself (modality = vaccine, distinct from small
+  molecule / antibody / degrader).
+- **Three phase 1 readouts (per PubMed), staking three points on the disease
+  timeline:** (1) **resected PDAC** + ipilimumab/nivolumab — 11/12 significant
+  mKRAS T-cell response, grade 1-2 AEs (Nat Commun, pub 2026-02-10, DOI
+  10.1038/s41467-026-68324-4; NCT04117087). (2) **metastatic MMRp/MSS CRC**
+  (checkpoint-refractory) + nivo/ipi, 13 pts — 75% ex vivo / 100% expanded T-cell
+  response (Nat Commun, pub 2026-06-23, DOI 10.1038/s41467-026-74711-8). (3) **THE
+  DIFFERENTIATED ONE — cancer INTERCEPTION**: 20 hereditary-PDAC-predisposed
+  individuals w/ radiographic pancreatic lesion (no cancer yet), **vaccine ALONE
+  (no checkpoint)** — 18/20 (90%) significant mKRAS T-cell response, TCR clones
+  persist up to 2y, cyst reduction/resolution ~38% vs ~7% unvaccinated, no PDAC at
+  ~16.5mo median follow-up (Cancer Discovery, pub 2026-07-16, DOI
+  10.1158/2159-8290.CD-25-2245; NCT05013216). Caveats: n=20, single-arm, immune
+  endpoint, prevention is a long/expensive endpoint to actually prove.
+- **So-what for aSKY (see §2 aSKY entry):** the KRAS landscape the brief has tracked
+  as hardening (daraxonrasib pivotal PDAC OS win + NDA under review; G12D-selective
+  zoldonrasib Breakthrough + 3 Ph3s; Incyte G12D inhibitor; setidegrasib degrader)
+  is ALL aimed at established/metastatic disease — the board aSKY's antibody competes
+  on. The vaccine modality plays a DIFFERENT board: adjuvant / MRD / interception in
+  high-risk pre-cancer, settings a metastatic-disease inhibitor was never designed
+  for. **Net: Blackbird has KRAS exposure on two modalities across 3-4 settings, one
+  (Adventris) literally in the BioHub.** Action (Eddie + team): add a
+  vaccine/interception column to the aSKY competitive map; confirm Adventris ownership.
+
 ### Fu lab JHU + Islex Therapeutics — islet-targeted ZnT8 antibody platform (disease-modifying T1D) ⚠
 - **Discovery route — 2026-07-21 Sourcing Radar (LEAD, single-lead dry-preprint-week episode).**
   Guo Z first + Yun S (Islex) + Golson ML + Fu D senior corresponding (Department of Physiology,
