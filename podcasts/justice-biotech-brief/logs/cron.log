@@ -2146,3 +2146,30 @@ Episode written and staged. `SKIP_TTS=1`, so I stopped before TTS/publish/feed/c
 
 Three strong deferred bioRxiv candidates recorded to memory for revisit once their bodies render.
 === 2026-08-13T02:59:43-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-14T02:40:12-07:00 start justice-biotech-brief ===
+Episode is written and staged for the batch pipeline. Here's the run summary.
+
+---
+
+## Justice's Biotech Brief — 2026-08-14
+
+**Pick:** **IDP-001** — InduPro's proximity-guided bispecific EGFR antibody-drug conjugate enters the clinic on a $77M Series B (Sanofi, Lilly, and Merck's MRL Ventures all in).
+
+Fresh news item (announced Aug 12). Chosen because it hits multiple of Justice's stated interests at once — ADCs, bispecifics, newcos, clinical data — with a genuinely novel platform thesis worth explaining: instead of hunting for a single tumor-clean antigen, InduPro maps which surface proteins sit *physically adjacent* on tumor cells (proximity labeling) and builds a bispecific requiring a co-localized *pair* that appears on cancer but not normal tissue. The take centers on that conceptual shift and the three-pharma syndicate as the tell, with the platform's extension into T-cell engagers as the forward-looking hook. Held explicitly as a platform-validation bet (no efficacy, TAPA-E1 undisclosed, first-in-human).
+
+`SKIP_TTS=1` — wrote the script + `.rss-item.xml` + `.commit-msg` stubs; skipped TTS/R2/feed/commit for the batch orchestrator. XML validated; BioSpace source link returns 200.
+
+### Candidate funnel
+- **bioRxiv** (details API, full corpus — API returned empty on first two attempts, succeeded after a ~20s pause + longer timeout; per memory, slow-API day): 08-13 = 184 papers pulled/filtered; 08-14 = only 1 paper (not yet populated at cron time). After keyword filter + discarding spurious hits ("tce"→unrelated, "cart"→"cartilage"):
+  - Tumor-colonizing *Bifidobacterium longum* intratumoral delivery (PD-L1 mention) — tangential, engineered-bacteria, not therapeutic-dev core.
+  - Tissue-resident memory B cells augment anti-cancer immunity via IgA — on-target tumor immunology but basic biology, no translational hook.
+  - *Deferred picks from 08-13 (papillary immunosuppressive niches 744324; shark-VNAR anti-FAP 744296): re-checked, STILL not rendered (abstract-only / API 500). Memory updated — approaching permanent-unobtainable.*
+- **News / press (Fierce, BioPharma Dive, web)** — survived filter:
+  - **InduPro IDP-001 — $77M Series B + first-patient dosing, proximity-guided bispecific ADC (EGFR × TAPA-E1)** ✅ **CHOSEN**
+  - MacroGenics/Gilead — $10M option exercise on a preclinical TRIDENT bispecific (Aug 11; preclinical + small, less substantive)
+  - Boulevard Bio — $65M out of stealth, autoimmune (BLVD101, early Ph1 healthy-volunteer data)
+  - PDS Biotech — discontinued Ph3 head & neck to prioritize Ph2 CRC (off Justice's core targets)
+- **Policy/funder (ARPA-H / NIH / NSF):** not surfaced in fresh window; no gap material to the pick.
+
+No source aborted the run; bioRxiv API required a retry (transient empty responses), noted above.
+=== 2026-08-14T02:48:52-07:00 done  justice-biotech-brief (exit 0) ===
