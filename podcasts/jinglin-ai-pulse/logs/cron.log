@@ -1707,3 +1707,40 @@ Sources: all searchable/fetchable; Bloomberg 403'd on WebFetch but the story is 
 
 **Sources:** no source-level outages this run; all picks read from primary/near-primary pages before drafting.
 === 2026-08-13T02:40:33-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-14T02:30:12-07:00 start jinglin-ai-pulse ===
+Episode written and staged for the batch pipeline. Final audit record:
+
+## Ollie's AI Pulse — 2026-08-14 published (SKIP_TTS batch mode)
+
+**Episode:** `2026-08-14-intelligence-stops-being-the-scarce-input`
+**Theme:** Raw intelligence stopped being the scarce input — every fight moved to the layer around the model (compute/pricing, ownership, efficiency, context). Script is 2,156 spoken words (~13 min at 1.2×). Wrote `.md` + `.rss-item.xml` (validated well-formed, placeholders present) + `.commit-msg`. No TTS/publish/feed-edit/commit per SKIP_TTS — orchestrator will handle those.
+
+**Segments:**
+- **Cold open** — Claude's Riemann-bound result as framing hook (already featured 08-12, used only for color, not re-picked).
+- **Twitter Pulse** — (1) DeepSeek V4-Pro-0813 GA: flat general IQ, agentic/cyber gains, Aug-17 price hike up to 12×; (2) River AI / Babuschkin's "own vs. rent" thesis.
+- **Money Moves** — Anthropic–Decart ~$6B (efficiency, not capacity) + CodeRabbit $143M/$1.5B (governing machine-written code).
+- **Deep Cut** — Flo Crivello, The Cognitive Revolution (Aug 10): "context beats intelligence" / von Neumann thought experiment (verified quotes).
+- **Wrap** — Aug 17 DeepSeek peak pricing as the referendum on the theme.
+
+**Candidate funnel:**
+
+*Twitter/X discourse (agent swept ~15 topics; X feeds CAPTCHA-walled, corroborated via TechCrunch/Hacker News/SCMP/aggregators; @Zefan_Cai feed not directly readable):*
+- Claude Riemann-zeta bound + Tao/Gowers autonomy debate — https://www.anthropic.com/research/riemann-zeta — **already featured 08-12; used as cold-open framing only, not re-picked**
+- "Stealing Reasoning Traces" CoT portability — https://arxiv.org/abs/2608.09867 — **already featured 08-12, dropped**
+- Recursive-self-improvement papers + Irving vs. Greenblatt alignment-generalization — https://www.dwarkesh.com/p/ryan-greenblatt — **dropped: Greenblatt/Dwarkesh/self-improvement heavily covered 08-09 & 08-12 (source fatigue)**
+- DeepSeek V4-Pro-0813 GA + 12× price hike — https://www.scmp.com/tech/big-tech/article/3363895/... — **CHOSEN (Pulse 1)** ✓
+- River AI / Babuschkin $1.1B user-owned AI — https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/ — **CHOSEN (Pulse 2)** ✓
+
+*AI business/funding (last 7d):*
+- Anthropic–Decart ~$6B — https://fortune.com/2026/08/13/anthropic-said-in-talks-to-buy-startup-decart-for-6-billion/ — **CHOSEN (Money 1)** ✓
+- CodeRabbit $143M @ $1.5B — https://www.businesswire.com/news/home/20260812311754/... — **CHOSEN (Money 2)** ✓
+- SpaceX–Cursor $60B close-progress — slightly stale (June deal), dropped
+- Bitdeer $4.7B Norway data-center (Aug 4, out of window); Atoms/Chai (too old) — dropped
+
+*Long-form podcasts (last ~14d):*
+- Flo Crivello, The Cognitive Revolution (Aug 10) "context beats intelligence" — https://www.cognitiverevolution.ai/lindy-teammate-flo-crivello-... — **CHOSEN (Deep Cut)** ✓
+- Zvi Mowshowitz, The Cognitive Revolution (Aug 5) unipolar/multipolar poison — backup, dropped
+- Dwarkesh "compute 10× more expensive" (Jul 29) — out of window + source fatigue, dropped
+
+**Verification notes:** DeepSeek benchmarks/pricing, Anthropic–Decart terms, River AI round, and Crivello quotes all confirmed against primary sources. Dropped two agent claims that didn't hold: the unverified V4-Pro Terminal-Bench jump (SCMP says it *struggled* at terminal tasks — reframed around cybersecurity strength) and River AI's unconfirmed ~$5B valuation / $100M founder stake.
+=== 2026-08-14T02:41:38-07:00 done  jinglin-ai-pulse (exit 0) ===
