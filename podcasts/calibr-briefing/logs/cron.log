@@ -3123,3 +3123,29 @@ Sources scanned: BioPharma Dive (homepage index — the reliable one; Fierce Bio
 
 Downstream (`publish_pending.py`) will render length/duration, upload to R2, insert both `<item>`s into `feed.xml`, and commit per-episode with the Calibr-prefixed messages.
 === 2026-08-13T02:28:37-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-14T02:20:12-07:00 start calibr-briefing ===
+Both parse cleanly. Both episodes are written and staged for the batch orchestrator.
+
+## Calibr 2026-08-14 — done (SKIP_TTS batch mode)
+
+Wrote both scripts plus their `.rss-item.xml` and `.commit-msg` stubs; TTS, R2 publish, feed edit, and commit are left to `publish_pending.py` per PIPELINE.md.
+
+**Spotlight — Neurocrine's Vykat XR safety cloud (Prader-Willi hyperphagia).** Three months after the ~$2.9B Soleno buyout, three PWS patient organizations flagged 7 deaths and 100+ serious adverse events in FDA FAERS (edema/respiratory/cardiac) for Vykat XR (diazoxide choline ER). The take: the signal maps onto diazoxide's known KATP-opener liabilities (fluid retention, pulmonary-hypertension link) in the frailest possible population — but FAERS is uncontrolled and PWS baseline mortality is already 1–3%/yr; the groups urged slower titration/monitoring, not withdrawal. Real risk per BMO is physician caution capping a >$2B launch, not a black-box. Tied to Aardvark's abandoned TAS2R rival ARD-101 (its own cardiac/QRS hold) — the whole hyperphagia field is hitting cardiac walls. Full text read on all key sources.
+
+**Headlines (5, ~4–5 min):** (1) Vykat XR/Neurocrine [lead/spotlight] · (2) Taiho/Cullinan zipalertinib first-line Phase 3 win in EGFR exon 20 NSCLC vs J&J's Rybrevant · (3) PTC outbids Astellas for Sangamo's Fabry gene therapy ST-920 out of bankruptcy (Lilly takes prion program) · (4) Zealand sells rusfertide (PV) royalties to Royalty Pharma for up to $100M ahead of Q3 PDUFA · (5) AI-discovery rounds — Beyang (~$30M), Remepy ($36M).
+
+### Candidate funnel
+Sources scanned: BioPharma Dive homepage, BioSpace homepage, Fierce Biotech (HTTP 403 — skipped, one attempt), Endpoints (301→endpoints.news, not re-fetched), plus targeted web searches.
+
+Shortlist (fresh, Aug 13–14, not previously shipped):
+- **Neurocrine/Vykat XR PWS safety signal — 7 deaths/100+ SAEs** — biospace.com/drug-development/deaths-reported-after-treatment-with-neurocrines-approved-prader-willi-drug ✅ **SPOTLIGHT + headline #1**
+- **Taiho/Cullinan zipalertinib REZILIENT3 first-line Phase 3 win** — biopharmadive.com/news/taiho-cullinan-zipalertinib-egfr-exon20-lung-cancer-results/827785/ ✅ headline #2
+- **PTC wins Sangamo Fabry (ST-920) bankruptcy auction; Lilly takes prion program** — fiercebiotech.com/biotech/ptcs-211m-bid-wins-sangamo-auction... ✅ headline #3
+- **Zealand → Royalty Pharma, rusfertide royalties up to $100M** — biospace.com/deals/zealand-sells-milestone-royalty-rights... ✅ headline #4
+- **Beyang ~$30M Series A / Remepy $36M Series A (AI discovery)** — biospace/thepharmaletter ✅ headline #5
+- Trump childhood-vaccine EO — dropped (Aug 10, outside recency window)
+- Aardvark ARD-101 formal wind-down — folded into spotlight, not a standalone headline
+- Aura Biosciences layoffs / PDS Biotech pivot / psychedelic-manufacturing — passed over (lower relevance)
+
+Excluded as already shipped: retatrutide, Sionna CF, Definium LSD, Vaderis, Boulevard, Silence divesiran, ITM CRL (Aug 12–13 episodes).
+=== 2026-08-14T02:27:45-07:00 done  calibr-briefing (exit 0) ===
