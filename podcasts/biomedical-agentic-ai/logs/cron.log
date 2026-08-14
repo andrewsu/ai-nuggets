@@ -3366,3 +3366,30 @@ Full text read via `mutool` on the PDF (69K chars). Spoken body: **768 words** (
 
 No source outages this run. The one gap is the jina/Cloudflare 429 that blocked full-text on the two strongest bioRxiv fits — both deferred (mechanical render-lag), not rejected.
 === 2026-08-13T02:11:52-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-14T02:00:12-07:00 start biomedical-agentic-ai ===
+All three files are written. Episode is ready for the batch-TTS orchestrator to pick up.
+
+## Episode shipped (SKIP_TTS mode — stubs written, no TTS/publish/commit)
+
+**Pick:** BioChirp — deterministic retrieval that stops AI agents from silently gutting biomedical databases
+`podcasts/biomedical-agentic-ai/scripts/2026-08-14-biochirp-deterministic-biomedical-retrieval.md` (903-word body, under the 1150 cap)
+Paper: bioRxiv `10.64898/2026.04.25.720782v2`, posted 2026-08-09, IIIT-Delhi.
+
+**Why it won:** Near-perfect fit for the show's core — agentic AI over biomedical databases, data integration/APIs, knowledge-graph retrieval, reproducibility, open science (public deployment + MCP gateway). It quantifies a silent-failure trap (best MCP agent returned 99 of 4,473 CML targets, ~2%, no error), then fixes it via interpretation–execution separation: LLMs map intent/terminology, a deterministic Steiner-tree schema planner + executor retrieve every record with zero LLM in the loop. This was the **dominant deferred pick from 2026-08-11** (full text was Cloudflare-blocked then), now readable via direct `r.jina.ai` curl — picked up under the PROMPT full-text-deferral carve-out.
+
+### Candidate funnel
+- **arXiv** (shared cache, 500 entries scanned): 115 bio+agentic hits. Substantive shortlist — none on the show's data-integration/KG core:
+  - Intern-S2-Preview: Scientific Agentic Foundation Model (2608.13505)
+  - OmniScientist: An Omni-Modal Omni-Discipline AI Scientist (2608.13558)
+  - MARC v1: Open-Source Multi-Agent Framework for Clinical AI Reasoning (2608.13476)
+  - Static-analysis-guided agentic AI translation → Rust for bioinformatics (2608.13029)
+- **bioRxiv** (details API, degraded today — only 30/day returned; 08-13 & 08-14 responses 500-errored/unparseable):
+  - SpatialAgent: An Autonomous AI Agent for Spatial Biology (08-12) — on-brand but more niche than BioChirp; noted, not picked
+  - Learning the Language of the Microbiome with Transformers (08-12)
+- **PubMed** (2026/08/09–08/14): 32 hits, nothing dominant on-core.
+- **Deferred-pick recheck (carve-out):**
+  - **BioChirp** (10.64898/2026.04.25.720782v2) — full text now readable → **CHOSEN**
+  - Virtual-cell self-auditing (10.64898/2026.08.04.742916) — also now readable; remains a live unpicked candidate for a near-term run.
+
+Memory updated: deleted the resolved BioChirp deferral; marked the virtual-cell pick as now-readable and still available.
+=== 2026-08-14T02:06:24-07:00 done  biomedical-agentic-ai (exit 0) ===
