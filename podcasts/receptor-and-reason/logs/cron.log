@@ -3335,3 +3335,44 @@ All 9 paper URLs were validated by successful fetch; dedup ledger appended (9 it
 
 *(Two items — NLRP3 and psychedelics-astrocytes reviews — were sourced via PubMed: [10.1038/s41380-026-03821-y](https://doi.org/10.1038/s41380-026-03821-y) and [10.1038/s41380-026-03816-9](https://doi.org/10.1038/s41380-026-03816-9).)*
 === 2026-08-13T04:17:32-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-14T02:50:12-07:00 start receptor-and-reason ===
+Episode complete. Here is the final run summary for the audit log.
+
+---
+
+**Receptor & Reason — 2026-08-14 — SHIPPED (11 items)**
+
+Mode: `SKIP_TTS=1` (batch). Wrote script + `.rss-item.xml` + `.commit-msg` stubs; appended dedup ledger. No TTS/publish/feed/commit — orchestrator handles those.
+
+**Files written:**
+- `scripts/2026-08-14-receptor-and-reason.md`
+- `scripts/2026-08-14-receptor-and-reason.rss-item.xml` (`__LENGTH__`/`__DURATION__` placeholders; validated as XML)
+- `scripts/2026-08-14-receptor-and-reason.commit-msg`
+- `state/shipped.jsonl` +1 line (84 total, all valid JSON)
+
+**Candidate funnel (window 2026-08-08 → 2026-08-14, rolling 7 days):**
+
+- **Journals (Tier 1)** — surveyed via PubMed + open nature.com/ScienceDirect pages. ~18 relevant in-window; shortlist of 9 all reachable for content. Picked 8 (dropped the naturalistic-psychedelics/executive-function survey, PNPBP 111888 — low-rigor).
+- **bioRxiv (Tier 1/2)** — neuroscience category surveyed via MCP (page 1, 30 items, 08-08→08-10) + details-API cross-check attempted; MCP intermittently 503/timeout and the raw details-API sweep of 08-11→08-14 failed (transient 500s). Coverage partial; no bioRxiv item beat the journal slate, so none picked. Logged gap.
+- **arXiv (Tier 2/3)** — shared daily cache (500 entries), 46 domain×agentic candidates. Picked 2: SABLE (2608.11483, agentic hit-to-lead) and PRISM (2608.12717, LLM×aphasia interpretability).
+- **Psychiatric Times / society pages / industry** — scanned; in-window items (CTx-1301 ADHD PK, xanomeline/trospium clinical experience, entactogen podcast) all weaker than picks; no datable in-window CNS agentic-AI industry item. DT120 already shipped 08-13.
+
+**Shortlist → chosen (all 11 marked ✓ = in episode, ordered as aired):**
+1. ✓ Paternal epigenetic inheritance → methamphetamine taking (NPP) — LEAD
+2. ✓ The neuropsychopharmacology of treatment discontinuation (NPP perspective)
+3. ✓ Low-dose lithium, neuroprotection & brain aging in BD (NPP)
+4. ✓ 7T MRSI neurometabolites, early-phase schizophrenia (NPP)
+5. ✓ Chondrolectin-SST interneurons in schizophrenia, region-selective (Mol Psych)
+6. ✓ Glial-neuronal GABA crosstalk (Mol Psych review)
+7. ✓ Hippocampal teneurin-4 → oligodendrocyte block → depression (Neuropharmacology)
+8. ✓ nAChR in mood dysregulation (PNPBP review)
+9. ✓ Disentangling risk vs resilience genes, adversarial NN (Mol Psych)
+10. ✓ SABLE agentic hit-to-lead (arXiv 2608.11483)
+11. ✓ PRISM LLM×aphasia interpretability (arXiv 2608.12717) — CLOSE
+
+**Not picked (in shortlist):** paternal-lithium/other NPP items redundant with chosen; parvalbumin-under-stress review (IJNP), GDF15 biomarker, HRT×brain-structure ML, BMI→depression MR (theme overlap with #9); psychedelics/executive-function survey (low rigor).
+
+**Deferred cleanup:** the 5 bioRxiv picks deferred on 08-13 (FTO/morphine, DMT vs 5-MeO-DMT, JAK/epilepsy, psilocybin cog-flex null, gut×LRRK2) never rendered full text and have now aged past the 7-day window — dropped, stale memory note deleted.
+
+Full text read for lead + both DEEP items (#1, #2) and SABLE; abstract/metadata-level (with numbers) sufficient for the rest per PIPELINE multi-item rules.
+=== 2026-08-14T03:06:57-07:00 done  receptor-and-reason (exit 0) ===
