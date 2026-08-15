@@ -1744,3 +1744,38 @@ Episode written and staged for the batch pipeline. Final audit record:
 
 **Verification notes:** DeepSeek benchmarks/pricing, Anthropic–Decart terms, River AI round, and Crivello quotes all confirmed against primary sources. Dropped two agent claims that didn't hold: the unverified V4-Pro Terminal-Bench jump (SCMP says it *struggled* at terminal tasks — reframed around cybersecurity strength) and River AI's unconfirmed ~$5B valuation / $100M founder stake.
 === 2026-08-14T02:41:38-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-15T02:30:10-07:00 start jinglin-ai-pulse ===
+All three artifacts are in place and the RSS stub is valid XML. Since `SKIP_TTS=1`, I stop here — the batch TTS job and `publish_pending.py` will generate audio, fill the placeholders, update `feed.xml`, and commit.
+
+## Ollie's AI Pulse — 2026-08-15 — run complete
+
+**Episode:** `2026-08-15-post-training-ate-the-base-model` — "The base model stopped mattering" (1,679 spoken words, ~11 min pre-1.2× speedup)
+
+**Artifacts written** (SKIP_TTS batch mode — no audio/feed/commit by me):
+- `scripts/2026-08-15-post-training-ate-the-base-model.md`
+- `scripts/2026-08-15-post-training-ate-the-base-model.rss-item.xml` (validated well-formed; `__LENGTH__`/`__DURATION__` placeholders)
+- `scripts/2026-08-15-post-training-ate-the-base-model.commit-msg`
+
+**Segments:** Twitter Pulse — (1) GLM-5.3 [LEAD] + (2) Torchwright as foil · Money Moves — Situational Awareness → Source Foundry · Deep Cut — No Priors (Chess.com) · Throughline — value/danger moved into the post-training/scaffolding layer around frozen weights.
+
+### Candidate funnel
+
+**Twitter/X discourse (last 48h):**
+- ✅ **GLM-5.3, Z.ai/Zhipu (Aug 14)** — same 743B base as 5.2, all gains from scaled post-training; emergent multi-stage exploit-chain cyber; weights held back ~2wk for safety. **[CHOSEN, lead]** Strong convergence w/ this week's DeepSeek agentic+cyber tilt & Simon Mo "moat is the RL environment."
+- ✅ **Torchwright / "Out of Distribution" (Aug 11)** — compile multiplication into Phi-3 weights, no training, 100% to 12 digits. **[CHOSEN, foil]** Intellectual counterpoint to GLM.
+- ⬜ World-model debate (LeCun AMI Labs / Kunlun) — dropped: no fresh 48h anchor (March/May 2026 material).
+- ⬜ Cambridge "Politician/Liar/Obedient Worker" multi-agent governance paper — held in reserve; less fresh convergence.
+- ⬜ Meta Muse Glimmer + Zuckerberg manifesto — already covered 08-11.
+
+**Money moves (last 7d):**
+- ✅ **Situational Awareness → Source Foundry, $400M/$500M (Aug 9)** — Aschenbrenner doubles down on ASML/EUV challenger post-near-collapse. **[CHOSEN]**
+- ⬜ Databricks +$5B (wk of Aug 8) — real but generic; folded out for tighter arc.
+- ⬜ Anthropic $65B / Cognition $40B / Lovable $400M / Chai $400M — rejected: $65B & Chai are **not fresh** (May & Jul 14 respectively); Cognition & Lovable already covered (08-12/08-13).
+
+**Podcasts (last 14d):**
+- ✅ **No Priors ep. 173, Erik Allebest / Chess.com (Aug 13)** — superhuman-AI re-mediation argument chain. **[CHOSEN]** Chosen for freshness + variety (Cognitive Revolution used 3× this week; interpretability used 08-10).
+- ⬜ Anthropic global-workspace/J-space (paper Jul 6; CogRev discussion undated) — dropped: interpretability repeat + uncertain episode date.
+- ⬜ Interconnects "new RL scaling laws" — thematically perfect but Oct 2025, out of window.
+
+**Sources:** no source outages; WebSearch + WebFetch across TechCrunch, Unite.AI/MarkTechPost, ood.dev, No Priors feed all reachable.
+=== 2026-08-15T02:38:00-07:00 done  jinglin-ai-pulse (exit 0) ===

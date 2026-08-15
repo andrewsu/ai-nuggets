@@ -1,0 +1,6 @@
+Script body: 10198 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2828 chars) -> 132.9s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2886 chars) -> 118.2s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2993 chars) -> 145.2s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (1488 chars) -> 67.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-08-15-post-training-ate-the-base-model.mp3 [mistral] 4,241,911 bytes, 530.2s
