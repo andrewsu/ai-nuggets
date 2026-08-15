@@ -3393,3 +3393,31 @@ Paper: bioRxiv `10.64898/2026.04.25.720782v2`, posted 2026-08-09, IIIT-Delhi.
 
 Memory updated: deleted the resolved BioChirp deferral; marked the virtual-cell pick as now-readable and still available.
 === 2026-08-14T02:06:24-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-15T02:00:10-07:00 start biomedical-agentic-ai ===
+Everything validates. I'm in batch mode (`SKIP_TTS=1`), so the script and the two stub files are written and TTS/publish/feed-edit/commit are correctly left to the orchestrator. Here's the run summary.
+
+---
+
+## Episode published (batch mode) — biomedical-agentic-ai, 2026-08-15
+
+**Pick:** *Static analysis-guided agentic AI translation enables Rust as a full stack bioinformatics language* — Johan Henriksson (Umeå University / SciLifeLab), arXiv 2608.13029, posted 2026-08-13 (in-window). Full text read via mutool PDF extraction.
+
+**Why it won:** Bullseye for this show — agentic AI aimed at the open-science infrastructure problem (research-software maintenance), with a shared prompt+tool release and a striking, concrete result. The novel methodological hook is using **classic static analysis as a deterministic guardrail** around LLM code translation: tree-sitter ASTs feed a call-graph/complexity comparator, an input/output hashing instrument, and lockstepped-debugger bisimulation to catch exactly the silent failures LLMs produce (swapped comparisons, wrong int types, reordered float ops shifting p-values, algorithm substitution). Showcase: his single-cell pipeline Bascet dropped Conda/containers into one 200 MB binary (80× smaller), 20 min → 1–2 min builds, 3× faster steps, native Windows. Reinforces a recurring show theme — don't trust the model's self-judgment; wall it behind a deterministic verifier. Spoken body 929 words (cap 1150).
+
+**Files written** (stubs for orchestrator; no TTS/commit per SKIP_TTS):
+- `scripts/2026-08-15-agentic-rust-bioinformatics.md`
+- `scripts/2026-08-15-agentic-rust-bioinformatics.rss-item.xml` (XML-validated in namespaced context; `__LENGTH__`/`__DURATION__` placeholders)
+- `scripts/2026-08-15-agentic-rust-bioinformatics.commit-msg`
+
+### Candidate funnel
+- **bioRxiv — FAILED (source outage).** Details API returned HTTP 200 with empty body across all dates (08-12→08-15), both biorxiv and medrxiv, on 3 retries each; range+cursor calls same; MCP `search_preprints` wrapper same (JSON-decode on empty). Even a date that succeeded on a prior run now returns empty → server-side outage, not our query. Skipped per PIPELINE source-failure rule.
+- **arXiv — surveyed (cache, 500 entries, 08-11→08-13).** ~60 keyword hits; biomedical shortlist after discarding spurious matches:
+  - **2608.13029 — Static-analysis-guided agentic Rust translation for bioinformatics ✅ CHOSEN** (agentic AI + bioinformatics + open science; dominant fit)
+  - 2608.13476 — MARC v1: open-source multi-agent clinical reasoning framework
+  - 2608.13558 — OmniScientist: omni-modal AI scientist
+  - 2608.12036 — Mechanist: AI as a scientific instrument
+  - 2608.13331 — Training AI scientists to replicate research
+  - 2608.13256 — Knowledge-guided generative synthetic transcriptomics
+  - 2608.12590 — Auditable agentic AI for thyroid ultrasound diagnosis
+- **ChemRxiv / PubMed / news / policy — not exhaustively swept.** arXiv carried a clearly dominant, deeply on-target, in-window candidate; I stopped the net there rather than burn the window chasing a marginal upgrade. Flagging honestly so it's auditable. The deferred virtual-cell self-auditing pick (now readable) remains a live future candidate — not forced today since one strong pick suffices.
+=== 2026-08-15T02:06:54-07:00 done  biomedical-agentic-ai (exit 0) ===

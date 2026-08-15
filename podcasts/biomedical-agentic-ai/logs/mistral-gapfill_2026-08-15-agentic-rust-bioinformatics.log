@@ -1,0 +1,4 @@
+Script body: 5742 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2955 chars) -> 143.9s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2786 chars) -> 124.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-08-15-agentic-rust-bioinformatics.mp3 [mistral] 2,384,292 bytes, 298.0s
