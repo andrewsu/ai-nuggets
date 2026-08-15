@@ -1,0 +1,5 @@
+Script body: 6931 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2919 chars) -> 124.9s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2953 chars) -> 130.5s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (1057 chars) -> 53.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-08-15-capricor-deramiocel-fda-spotlight.mp3 [mistral] 2,782,816 bytes, 347.8s

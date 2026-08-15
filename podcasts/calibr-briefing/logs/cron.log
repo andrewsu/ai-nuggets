@@ -3149,3 +3149,31 @@ Shortlist (fresh, Aug 13–14, not previously shipped):
 
 Excluded as already shipped: retatrutide, Sionna CF, Definium LSD, Vaderis, Boulevard, Silence divesiran, ITM CRL (Aug 12–13 episodes).
 === 2026-08-14T02:27:45-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-15T02:20:10-07:00 start calibr-briefing ===
+All six files are in place and clean for audio. Since `SKIP_TTS=1`, I've stopped after writing the scripts and transient stubs — the orchestrator (`publish_pending.py`) will do batch TTS, R2 publish, feed insertion, and the per-episode commits.
+
+## Run summary — calibr-briefing, Saturday 2026-08-15
+
+**Episodes written (2):**
+- `2026-08-15-pharma-headlines` — 5-story roundup
+- `2026-08-15-capricor-deramiocel-fda-spotlight` — deep dive
+
+Each has its `.txt` script, `.rss-item.xml` (placeholders `__LENGTH__`/`__DURATION__`), and `.commit-msg` stub. Both RSS stubs validated as well-formed XML in the feed namespace. No TTS/publish/feed/commit performed (SKIP_TTS mode).
+
+**Candidate funnel** (Saturday — weekend tape; freshest verified items are Aug 12–14):
+
+Sources scanned: BioPharma Dive homepage, Endpoints, BioSpace, Foresite portfolio-news page, plus targeted web search (Fierce/STAT block WebFetch per memory).
+
+Shortlist (relevance-filtered):
+- **Capricor deramiocel — FDA one week out (PDUFA Aug 22); CEO pivot to upper-limb indication after 9-3 adcomm, stock +60%** — CHOSEN (spotlight + headline #1). biopharmadive.com/news/…827770; Lancet HOPE-3; ajmc.com adcomm.
+- **Cytokinetics sues BMS/MyoKardia over aficamten (Myqorzo) vs Camzyos** — CHOSEN (headline #2). endpoints.news/cytokinetics-brings-patent-suit…
+- **Pfizer/Valneva Lyme vaccine — EMA validates MAA, >70% VALOR efficacy, Valneva +20%** — CHOSEN (headline #3). biospace.com press release.
+- **China out-licensing surge — upfronts +230% since 2022 to ~$172M (BioPharma Dive analysis)** — CHOSEN (headline #4). biopharmadive.com/news/…758283.
+- **Boulevard Bio launch — $65M (Deerfield, Georg Schett), BAFF/APRIL bispecific in IgAN** — CHOSEN (headline #5). biopharmadive.com/news/…827583.
+- Definium DT120 (LSD) Phase 3 GAD win — DROPPED (already covered in 08-13 headlines).
+- InduPro $77M Series B — DROPPED (already covered as IDP-001 episode, 08-14).
+- Isomorphic Labs $2.1B Series B — DROPPED (May 2026, stale; not fresh AI-discovery news).
+- NeOnc NEO100 glioma Phase 2a; Rigel "Veppanu"; Skye/Redx; Capricor's own "Veppanu"-style items — set aside (weaker/unverified relative to picks).
+
+Source failures: none — all sources reachable. No dedicated AI-in-discovery headline today (nothing fresh past items already covered); lineup led with the higher-signal FDA/clinical/deal stories instead.
+=== 2026-08-15T02:27:42-07:00 done  calibr-briefing (exit 0) ===
