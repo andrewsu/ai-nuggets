@@ -1292,6 +1292,44 @@ competitors below. These are the "so what for Blackbird" hooks.
   longer reimbursement-structure track. **Net: thesis tailwind STRONGER, near-term
   regulatory de-risking WEAKER — opposite of the earlier framing.**
 
+### Clasp Therapeutics — JHU-born precision immuno-oncology (TCR-mimic bispecific T-cell engagers) ✅
+- **What:** Off-the-shelf **TCR-mimic bispecific T-cell engagers** ("pHLAre" = precise
+  HLA-redirecting engagers). Unlike surface-antigen TCEs, they target the tumor-**specific
+  peptide fragment of a mutant oncogenic driver presented on HLA** — one arm binds the
+  mutant-peptide/HLA complex, the other binds CD3 on a T cell, so only mutation-bearing
+  cells are killed. Antibody-like, off-the-shelf, absolute-specificity pitch.
+- **Origin / IP:** **Johns Hopkins** spinout, formed 2020, built on the work of **Bert
+  Vogelstein** and **Drew Pardoll** (Bloomberg~Kimmel immunotherapy institute — the SAME
+  Hopkins immuno-oncology bench Adventris traces to). Maryland nexus: offices in **Rockville,
+  MD** + Cambridge, MA.
+- **Blackbird ownership (CONFIRMED):** launched publicly **March 2024 with a $150M Series A**
+  led by **Catalio Capital, Third Rock Ventures, Novo Holdings**; **Blackbird BioVentures is a
+  named participant** (verified via Clasp launch materials + JHTV announcement). ⚠ Blackbird's
+  check size / ownership % / follow-on rights NOT yet confirmed — pull from Eddie/Emily records.
+- **Pipeline (two KRAS-board hooks):**
+  - **CLSP-1025** (lead) — targets **p53 R175H** on HLA-A*02:01; first-in-human Phase 1
+    **GUARDIAN-101** in advanced solid tumors (first patient dosed ~Apr 2025); **monotherapy
+    readout expected in 2026** = genuine near-term catalyst + first in-patient test of the
+    platform.
+  - **CLSP-5282** — **KRAS G12V** TCE on HLA-A*03:01; unveiled AACR 2026 (Apr); now in its own
+    Phase 1 (**SENTINEL-101**, NCT07650357). Preclinically kills HARDER against KRAS-inhibitor-
+    resistant tumors + enhanced by combination with small-molecule KRAS inhibitors → positioned
+    to layer on top of / after the daraxonrasib-class drugs, not compete head-to-head.
+- **Strategic read (surfaced 2026-08-15 Portfolio Watch LEAD; coverage-gap correction, NOT a
+  fresh catalyst):** closes the 08-14 Adventris "is it ours?" ownership question by finding the
+  confirmed KRAS check. **Blackbird now holds THREE distinct modalities against mutant KRAS
+  across the full disease timeline** — [[aSKY]] (UMB, antibody vs undisclosed KRAS frame; owned),
+  Adventris (BioHub, synthetic long-peptide vaccine; adjuvant/interception), Clasp (TCR-mimic
+  bispecific TCE; established refractory disease). The "hardening" KRAS field now maps as
+  antibody / small molecule / degrader / vaccine / TCE, and Blackbird has a stake in three of
+  five (Clasp confirmed-funded). **Connective tissue:** Third Rock co-leads Clasp AND is our
+  venture partner on the **GPR52 schizophrenia NewCo** (Lieber) — a deliberate channel for
+  read-through on the Clasp Phase 1 and Third Rock's KRAS-immunotherapy thinking. **Actions:**
+  (a) Eddie + Emily pull actual Clasp + Adventris positions; (b) add a **T-cell-engager column
+  (Clasp)** to the aSKY competitive map alongside the vaccine/interception column (08-14).
+- **Watch:** GUARDIAN-101 (p53 R175H) Phase 1 monotherapy readout (2026); SENTINEL-101 (KRAS
+  G12V) progression; competing neoantigen/pHLA-directed TCEs; Third Rock signaling.
+
 ---
 
 ## 2b. JHU-adjacent Baltimore ecosystem (not Blackbird portfolio; sourcing + landscape signal)

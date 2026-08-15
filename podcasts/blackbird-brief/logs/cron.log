@@ -1594,3 +1594,29 @@ So-what: gives Blackbird KRAS exposure on a *second modality* in a setting (adju
 
 **Source attribution:** Adventris/mKRAS-VAX data via **PubMed** (DOIs above). No source outages this run.
 === 2026-08-14T02:20:21-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-15T02:10:10-07:00 start blackbird-brief ===
+Everything validates. In SKIP_TTS mode I've written the script and both stubs, updated the portfolio memory, and (correctly) skipped TTS, R2 publish, feed edit, and commit — the orchestrator handles those after batch TTS.
+
+**Final summary — Blackbird Brief, 2026-08-15 (Saturday → Portfolio Watch only; Sourcing Radar runs tomorrow, Sunday)**
+
+Episode written: `2026-08-15-portfolio-watch` — Portfolio Watch (Type B). Stubs (`.rss-item.xml`, `.commit-msg`) written; `memory/blackbird-portfolio.md` updated (new confirmed portfolio company: Clasp Therapeutics). No commit (SKIP_TTS=1 — orchestrator commits post-batch-TTS).
+
+**Verdict:** Another genuinely quiet direct-catalyst day — no Blackbird company had a readout, financing, deal, or filing in the Aug 12–15 window. Rather than a countdown, the episode closes the ownership question left open in the 08-14 Adventris episode and surfaces a confirmed-but-untracked portfolio company.
+
+**Candidate funnel:**
+
+Portfolio-thread searches (Stream A), scanned → survived relevance:
+- **KRAS/aSKY** (RevMed, G12D-selective, BBOT, Clasp): RevMed Q2 (Aug 5) already covered; BBO-8520 data Jan 2026, update H2'26 — not fresh; **Clasp Therapeutics → CHOSEN as lead.**
+- **GPR52/schizophrenia** (Nxera, MapLight, Cobenfy, emraclidine): Nxera Q2 (Aug 7) covered; MapLight IPO = Sept–Oct 2025 (old); no new partner announcement. No-change.
+- **Aletira/gene-therapy** (Ultragenyx DTX401, AAV safety, hearing loss): Ultragenyx PDUFA confirmed **Aug 23** (8 days out); Otarmeni approval = April 2026 (old). No-change; standing item.
+- **RNA-activator/CAMP4**: second tranche closed Aug 4 (covered); CMP-002 Australia+Argentina Phase 1/2, Q4'26 start. No-change.
+- **GCPII/IBD** (Merck TL1A): tulisokibart ATLAS-UC win = June 2026 (covered). No-change.
+- **1104health** (OIG RFI): comment deadline **Aug 24** (9 days out), patient-remuneration (corrected 08-13). No-change; standing item.
+- Baltimore/JHU/UMB/Lieber spinout sweep: nothing fresh in-window.
+
+Shortlist (substantive):
+- **Clasp Therapeutics** — Johns Hopkins spinout (Vogelstein + Pardoll), TCR-mimic bispecific T-cell engagers; **Blackbird BioVentures a confirmed named investor** in the $150M Series A (Mar 2024); lead p53 R175H program CLSP-1025 in GUARDIAN-101 Phase 1 (readout expected 2026), KRAS G12V program CLSP-5282 now in Phase 1. `https://ventures.jhu.edu/news/clasp-therapeutics-launches-with-150-million-investment-in-pioneering-precision-immuno-oncology/` — **CHOSEN.**
+  - Rationale: resolves yesterday's Adventris "is it ours?" action with a confirmed check, and re-maps Blackbird's KRAS exposure as three modalities (antibody/aSKY, vaccine/Adventris, TCE/Clasp) across the disease spectrum — high strategic value, non-padding, with a live 2026 Phase 1 catalyst and a Third Rock read-through channel (Third Rock co-leads Clasp *and* partners the GPR52 NewCo).
+
+Sources failed: none.
+=== 2026-08-15T02:18:04-07:00 done  blackbird-brief (exit 0) ===
