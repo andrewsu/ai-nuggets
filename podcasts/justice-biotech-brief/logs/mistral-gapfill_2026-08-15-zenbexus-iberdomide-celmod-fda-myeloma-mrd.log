@@ -1,0 +1,4 @@
+Script body: 3695 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2910 chars) -> 140.1s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (784 chars) -> 38.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-08-15-zenbexus-iberdomide-celmod-fda-myeloma-mrd.mp3 [mistral] 1,626,741 bytes, 203.3s

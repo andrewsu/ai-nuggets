@@ -2173,3 +2173,32 @@ Fresh news item (announced Aug 12). Chosen because it hits multiple of Justice's
 
 No source aborted the run; bioRxiv API required a retry (transient empty responses), noted above.
 === 2026-08-14T02:48:52-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-15T02:40:10-07:00 start justice-biotech-brief ===
+Episode is written and staged for the batch orchestrator. Here's the run record.
+
+## Run summary — justice-biotech-brief, 2026-08-15
+
+**Shipped:** Zenbexus (iberdomide) — first CELMoD (cereblon-modulating protein degrader) to win FDA accelerated approval, in myeloma, on a minimal-residual-disease-negative CR endpoint.
+
+Three stub files written (SKIP_TTS mode — no TTS/publish/feed/commit; orchestrator handles those):
+- `2026-08-15-zenbexus-iberdomide-celmod-fda-myeloma-mrd.md`
+- `.rss-item.xml` (validated well-formed)
+- `.commit-msg`
+
+**Why this beat the field:** Fresh (FDA/BMS/STAT coverage Aug 13–14), full text readable (BMS release + FDA + STAT), and genuinely significant on two axes Justice cares about — an immunology mechanism (CELMoD degrades Ikaros/Aiolos → T/NK costimulation; the immune-conditioning backbone for antibody, TCE, and CAR-T combinations) and a therapeutic-development/regulatory precedent (first RRMM approval on MRD-negative CR, which resets registrational-endpoint expectations for the next wave of myeloma combos).
+
+## Candidate funnel
+
+- **bioRxiv (last 2 days): SOURCE FAILURE — full outage.** `api.biorxiv.org/details/biorxiv/{08-13,08-14,08-15}` returned HTTP 200 with empty body; direct curl, the bioRxiv MCP `search_preprints`, and `fetch_preprint.py` all failed with `Expecting value: line 1 column 1`. One retry after a pause — still empty. Zero bioRxiv candidates this run. Deferred 08-13 candidates (papillary 744324 etc.) also unreadable (jina 403 / EPMC no body / API down); now 4 days old and never rendered — treating as effectively permanent, dropping.
+- **Fierce Biotech / Endpoints / STAT:** Fierce homepage 403s WebFetch and jina (DDoS block until 10:21 UTC); Endpoints/STAT not directly crawlable. Worked around via BioPharma Dive homepage + web search + biobucks trackers.
+- **News shortlist (on-target, dated):**
+  - **Zenbexus (iberdomide) — first CELMoD FDA approval, myeloma, MRD-neg CR endpoint (Aug 13/14)** — *CHOSEN*. https://news.bms.com/...ZENBEXUS...
+  - Bristol Myers Zenbexus, STAT coverage (Aug 14) — same story.
+  - InduPro IDP-001 EGFR bispecific ADC (Aug 12) — already shipped 08-14, excluded.
+  - Boulevard Bio $65M launch — trispecific CD19/BCMA/CD3 TCE + BAFF/APRIL bispecific (Aug 12) — bullseye topic but 3 days old, outside the 1–2-day news window; noted for the record.
+  - Replimune RP1/Tudriqev melanoma approval (Aug 14 rebound coverage) — already shipped 08-07, excluded.
+  - Zipalertinib, PTC/Sangamo Fabry, Jazz/Actio — off Justice's immunotherapy beat.
+- **Policy/funder pages (ARPA-H/NIH/NSF):** nothing on-topic in window.
+
+One editorial note: this is an immunomodulatory-degrader/therapeutic-development pick rather than a core TCE/VEGF/JAK-ADC item — a consequence of bioRxiv being fully dark and news sources heavily blocked today. It's a defensible fit (CELMoD immunology + major therapeutic-development headline), but if there's a preference to skip rather than reach outside the immunotherapy core on thin-source days, that's a quick brief-update to make.
+=== 2026-08-15T02:46:43-07:00 done  justice-biotech-brief (exit 0) ===
