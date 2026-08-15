@@ -3376,3 +3376,24 @@ Mode: `SKIP_TTS=1` (batch). Wrote script + `.rss-item.xml` + `.commit-msg` stubs
 
 Full text read for lead + both DEEP items (#1, #2) and SABLE; abstract/metadata-level (with numbers) sufficient for the rest per PIPELINE multi-item rules.
 === 2026-08-14T03:06:57-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-15T02:50:10-07:00 start receptor-and-reason ===
+The script, RSS stub, and commit-msg are written and the dedup ledger is updated. Per SKIP_TTS mode (which is set), I'm skipping TTS/R2/feed/commit — the orchestrator handles those. Here is the run summary for the log.
+
+---
+
+**Receptor & Reason — 2026-08-15 — published (SKIP_TTS batch mode)**
+
+Script: `podcasts/receptor-and-reason/scripts/2026-08-15-receptor-and-reason.md` (9 segments). Stubs written (`.rss-item.xml`, `.commit-msg`); ledger appended. TTS/publish/feed/commit deferred to `publish_pending.py`.
+
+**Candidate funnel**
+
+- **bioRxiv (Tier 1 + 2) — SOURCE OUTAGE, logged.** Details API (`api.biorxiv.org/details/...`) returned HTTP 200 with **empty body** on every date-range query, including known-good historical dates; the MCP `search_preprints` tool failed identically (both hit the same backend); r.jina.ai proxy of the API also returned empty. One-DOI endpoint responded 200 (fast), so the host is reachable — the date-interval endpoint itself was down. One retry per PIPELINE, then proceeded. Web-search fallback (`site:biorxiv.org`) surfaced only stale (March-2026-and-older) indexed items, nothing in-window. **Net: zero fresh Tier-1/2 preprints today** — hence a journals day.
+- **arXiv (Tier 2/3):** shared daily cache read (500 entries); 225 bio+agentic hits after keyword filter. Substantive on-target shortlist after discarding generic-AI noise: `2608.13029` Rust-bioinformatics agentic translation ✅CHOSEN; `2608.11483` agentic hit-to-lead — **excluded, already shipped 2026-08-14**; `2608.13476` MARC clinical multi-agent, `2608.13505` Intern-S2 — tangential, dropped.
+- **Nature NPP:** 3 fresh in-window not-yet-shipped: amisulpride/social-reward ✅CHOSEN(LEAD); inflammaging/LLD perspective ✅CHOSEN; theta-gamma × CR+tDCS ✅CHOSEN. (3 others were shipped 08-14.)
+- **Molecular Psychiatry:** BMI-cluster MR ✅CHOSEN; prenatal metabolomics/autism ✅CHOSEN; prenatal autism-traits (2 others shipped 08-14).
+- **Biological Psychiatry (in-press):** neonatal miRNA/ADHD ✅CHOSEN; stress×episodic-memory ✅CHOSEN; selection-bias-in-precision-neuroimaging commentary ✅CHOSEN; autism-biomarker-consortia review + Tonegawa obituary — dropped.
+- **IJNP:** Cloudflare bot-wall (WebFetch + jina both blocked) — skipped, logged.
+- **Psychiatric Times:** homepage 403; web-search surfaced only quarterly pipeline reviews / older news, nothing new in-window.
+
+**Selected (9):** amisulpride social-reward dopamine probe (LEAD) · BMI-cluster MR → appetite-specific depression · inflammaging late-life depression · prenatal metabolomics → autism · neonatal 19-miRNA ADHD signature · early-life-stress → episodic-memory mediation · theta-gamma coupling treatment moderator · selection bias in precision neuroimaging · agentic Python/C→Rust bioinformatics translation (CLOSE). Full text read for all but the two shortest tail items. No Tier-4 fallback needed. Dedup ledger appended (valid JSON).
+=== 2026-08-15T03:01:24-07:00 done  receptor-and-reason (exit 0) ===
