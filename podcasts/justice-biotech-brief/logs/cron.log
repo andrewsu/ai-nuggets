@@ -2202,3 +2202,29 @@ Three stub files written (SKIP_TTS mode — no TTS/publish/feed/commit; orchestr
 
 One editorial note: this is an immunomodulatory-degrader/therapeutic-development pick rather than a core TCE/VEGF/JAK-ADC item — a consequence of bioRxiv being fully dark and news sources heavily blocked today. It's a defensible fit (CELMoD immunology + major therapeutic-development headline), but if there's a preference to skip rather than reach outside the immunotherapy core on thin-source days, that's a quick brief-update to make.
 === 2026-08-15T02:46:43-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-16T02:40:11-07:00 start justice-biotech-brief ===
+Valid XML with both placeholders intact. Episode is staged for the batch orchestrator. Here is the run's audit record.
+
+---
+
+**Justice's Biotech Brief — 2026-08-16 (Sunday)**
+
+**Selected:** Felzartamab — anti-CD38 antibody clears its first global approval (China, 2nd-line multiple myeloma); the contrast with Biogen's billion-dollar autoimmune/kidney bet on the same plasma-cell-depletion mechanism. Full text read across Endpoints (paywalled — headline/lede only), biotech-insider, pharmaceutical-technology, and Biogen/HI-Bio deal sources. Files written (SKIP_TTS mode — no TTS/publish/feed/commit; orchestrator handles those): script `.md`, `.rss-item.xml` (validated, placeholders intact), `.commit-msg`.
+
+**Candidate funnel:**
+
+- **bioRxiv** (details API, day-by-day): 2026-08-15 = 30 posts pulled in full; 2026-08-16 not yet posted (count=None). Only 2 loose keyword matches, neither on-target:
+  - p140Cap breast-cancer chemosensitivity (cancer biology, not immunotherapy) — discarded
+  - Focused-framework-sampling anti-amyloid-β antibody (Alzheimer's antibody engineering, not oncology/immunology) — discarded
+- **News / press (last 1–2 days = Fri 08-14 / Sat 08-15):**
+  - ✅ **Felzartamab China NMPA approval, 2nd-line MM** (Endpoints, 08-14) — CHOSEN. On-target (anti-CD38 antibody; hits cancer immunotherapy + autoimmune biologics), fresh, major therapeutic-development headline, full text obtainable.
+  - Zenbexus/iberdomide FDA MM approval (STAT/BioPharma Dive, 08-14) — already shipped 08-15, excluded
+  - InduPro/IDP-001 bispecific ADC (BioPharma Dive roundup, 08-14) — already shipped 08-14, excluded
+  - ADC Therapeutics / Zynlonta strategic review (Endpoints, ~08-13/14) — on-target (CD19 ADC) but a business/strategic story, weaker; not chosen
+  - Cytokinetics v. Bristol Myers patent suit (08-14) — cardiac, off-beat
+  - Capricor Duchenne, PTC/Sangamo Fabry, Lilly retatrutide, Rigel Veppanu pricing, Zealand/rusfertide — off-beat
+  - Moleculin MIRACLE AML, HCW9302 alopecia (Q2 earnings, 08-14) — thin/off-beat
+- **Out of window (noted, not eligible):** Taiho/Cullinan zipalertinib first-line EGFR-exon20 NSCLC Phase 3 win (BioPharma Dive, 08-13) — 3 days old and a small-molecule TKI (marginal fit); Oblenio LBL-051 / Boulevard Bio trispecific TCE items (June–early Aug) — all older than the window.
+- **Policy/funder:** ARPA-H news (latest 08-12 lymphatic imaging, 08-06 stroke robotics) — nothing on-target. NIH/NSF not separately surfaced anything in-window.
+- **Source outages:** Fierce Biotech blocked to WebFetch (403) and to r.jina.ai (anti-abuse block until 10:34 UTC; still active at run time ~09:42 UTC) — skipped per source-failure rule, one retry not attempted to preserve the window; Endpoints homepage read via r.jina.ai instead (WebFetch 403). Coverage of the day's top story was unaffected.
+=== 2026-08-16T02:49:35-07:00 done  justice-biotech-brief (exit 0) ===
