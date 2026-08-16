@@ -3397,3 +3397,35 @@ Script: `podcasts/receptor-and-reason/scripts/2026-08-15-receptor-and-reason.md`
 
 **Selected (9):** amisulpride social-reward dopamine probe (LEAD) · BMI-cluster MR → appetite-specific depression · inflammaging late-life depression · prenatal metabolomics → autism · neonatal 19-miRNA ADHD signature · early-life-stress → episodic-memory mediation · theta-gamma coupling treatment moderator · selection bias in precision neuroimaging · agentic Python/C→Rust bioinformatics translation (CLOSE). Full text read for all but the two shortest tail items. No Tier-4 fallback needed. Dedup ledger appended (valid JSON).
 === 2026-08-15T03:01:24-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-16T02:50:11-07:00 start receptor-and-reason ===
+Episode is complete. All SKIP_TTS-mode deliverables are written (script, RSS stub, commit-msg stub, dedup ledger appended); TTS/publish/feed/commit are left to the orchestrator per PIPELINE.
+
+## Receptor & Reason — 2026-08-16 — run summary
+
+**Episode shipped (SKIP_TTS mode):** 10 items, ~2,080 spoken words (≈12.5 min). Script + `.rss-item.xml` + `.commit-msg` stubs written; `state/shipped.jsonl` appended (now 86 lines, all valid JSON). No TTS/R2/feed/commit performed (orchestrator handles these).
+
+**Window:** rolling 7 days, 2026-08-09 → 2026-08-16.
+
+### Candidate funnel by source
+- **bioRxiv (Tier 1 + 2):** full corpus pulled day-by-day, ~1,344 unique preprints (first bash pull under-paginated days 08-09→08-14 to one page each; re-fetched in Python with complete pagination — 08-16 not yet posted). Tight CNS/psychiatric/comp-pharm filter → 105 on-topic; substantive psychopharm shortlist below.
+- **Nature journals (NPP, MP):** listing pages auth-wall WebFetch; read via r.jina.ai. ~13 in-window; most NPP/MP standouts already shipped 08-14/08-15.
+- **Elsevier (Neuropharmacology, PNPBP):** ScienceDirect CAPTCHA-walled; abstracts retrieved via **PubMed** (per PubMed terms, these three are attributed to PubMed: [10.1016/j.pnpbp.2026.111894](https://doi.org/10.1016/j.pnpbp.2026.111894), [10.1016/j.pnpbp.2026.111891](https://doi.org/10.1016/j.pnpbp.2026.111891), [10.1016/j.neuropharm.2026.111150](https://doi.org/10.1016/j.neuropharm.2026.111150)).
+- **IJNP / Biological Psychiatry / CNNI:** surveyed; in-window items were non-pharmacology or already shipped.
+- **arXiv (shared cache /tmp/ai-nuggets-arxiv-cache.xml):** 198 bio+agentic hits in window; nearly all generic LLM/agent papers. On-topic bio items were already shipped (Rust-bioinformatics 08-15, PRISM aphasia 08-14, hit-to-lead 08-14) or off-topic — none picked.
+- **Psychiatric Times / industry:** 4 in-window CNS news items (DT120 already shipped 08-13; Tauklarify, viloxazine ER Ph4, CTx-1301 PK fresh). Tier 2/3 journals (Nat Biotech, npj Dig Med, Cell Systems, CPT:PSP, DDT) blocked (idp.nature loop / 403 / 402) — logged, no live items lost that changed selection.
+
+### Substantive shortlist (✓ = chosen)
+- ✓ FTO/m6Am morphine reward+tolerance vs analgesia — biorxiv 10.64898/2026.08.06.743062 (**LEAD**, full text read)
+- ✓ DMT vs 5-MeO-DMT dissociation — 10.64898/2026.08.06.743248
+- ✓ MDMA + exposure, learned-helplessness PTSD — 10.64898/2026.08.06.743271
+- ✓ Oxytocin-receptor Gi extinction hub (lateral septum) — 10.64898/2026.08.08.743644
+- ✓ β-arrestin-2 sex-specific AD (APP/PS1) — 10.64898/2026.08.10.743981
+- ✓ Polyamine stress response / schizophrenia framework — pnpbp.2026.111894
+- ✓ Kynurenine × psychotropics, FACE-BD bipolar — pnpbp.2026.111891
+- ✓ Dimethyl fumarate (Nrf2) VPA-autism, female-specific — neuropharm.2026.111150
+- ✓ LungChat multi-agent multi-omics / DART repurposing — 10.64898/2026.08.08.743577 (Tier 2; abstract-only, brief tail mention — full text not yet rendered)
+- ✓ FDA florquinitau/Tauklarify (MK-6240) tau-PET approval — Lantheus press (**CLOSE**)
+- Not picked: microglial epigenomic-priming perspective (Girgenti, NPP 08-15, thin primary data); Neurabin I & adolescent-alcohol astrocyte (MP 08-15, off the psychopharm center); ECT neurotransmitter-mapping, HRT double-ML, viloxazine ER Ph4, CTx-1301 PK (solid but lower-novelty tail); Gouteng network-pharmacology/ML antiepileptic (low-signal TCM docking).
+
+All picks passed the dedup ledger; no collisions.
+=== 2026-08-16T03:06:26-07:00 done  receptor-and-reason (exit 0) ===
