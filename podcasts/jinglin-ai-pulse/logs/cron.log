@@ -1779,3 +1779,29 @@ All three artifacts are in place and the RSS stub is valid XML. Since `SKIP_TTS=
 
 **Sources:** no source outages; WebSearch + WebFetch across TechCrunch, Unite.AI/MarkTechPost, ood.dev, No Priors feed all reachable.
 === 2026-08-15T02:38:00-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-16T02:30:11-07:00 start jinglin-ai-pulse ===
+Done. Script (1,648 spoken words, ~10–12 min) and both SKIP_TTS stub files are written and validated. Here is the run record.
+
+---
+
+## Ollie's AI Pulse — run summary for 2026-08-16
+
+**Episode:** `2026-08-16-off-the-scaling-axis` — theme: the frontier is converging/accelerating, but the week's fresh ideas and fresh money point *off the scaling axis*.
+
+**Mode:** SKIP_TTS=1 → wrote script + `.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders) + `.commit-msg`. Did **not** run gen_tts, publish to R2, edit feed.xml, or commit — orchestrator handles those.
+
+**Segments shipped:**
+- Twitter Pulse (1): Gemini 3.7 Flash (Aug 13) — 23-day cadence, "algorithmic gains" (Kilpatrick); the real signal is frontier convergence (AA index 56 vs 57 for GPT-5.6 Terra / Muse Spark 1.2).
+- Twitter Pulse (2, lead idea): **Pathway BDH-CQ** (arXiv 2608.09888, Aug 10) — 150M post-transformer, recurrent latent reasoning (no chain-of-thought), new ARC-AGI-1 cost-accuracy record.
+- Twitter Pulse (3): **OpenART** (arXiv 2608.00677) — #1 trending; self-evolving agent red-teaming arena.
+- Money Moves: **River AI** $1.1B / ~$5B (Babuschkin, "user-owned AI", Aug 11) + **Databricks** $5B at $190B.
+- Big idea (compressed Deep Cut): world-models debate — Fei-Fei Li quote + **BabyVision** (Zefan Cai coauthor), tied to BDH-CQ's wordless reasoning.
+
+**Candidate funnel:**
+- **Twitter/discourse (last 48h):** Gemini 3.7 Flash ✅ CHOSEN · BDH-CQ ✅ CHOSEN · OpenART ✅ CHOSEN · GLM-5.3 (Aug 14) — dropped, was 08-15 lead · DeepSeek V4-Pro-0813 — dropped, was 08-14 lead.
+- **Money (last 7d):** River AI $1.1B ✅ CHOSEN · Databricks $5B/$190B ✅ CHOSEN · Cognition $40B — DROPPED (used 08-12 & 08-13) · Lovable $13.3B — DROPPED (used 08-13) · CodeRabbit $143M, River AI neolab, Form Energy — surveyed, not lead.
+- **Podcasts (last 14d):** none eligible. Dwarkesh latest June 30; Cognitive Revolution July 9; No Priors (Erik Allebest already used 08-13); Lex #490 & TWIML #762 = Feb; a16z Fei-Fei = June 2025; Interconnects "perpetual catch-up" = Feb, Aug-10 item was a book announcement; Dwarkesh compute-10x essay already used 08-05. → Deep Cut **compressed** into the world-models "big idea" close (meta-narrative), documented rather than faking a fresh episode.
+- **Aggregators:** HF trending (Aug 13) surfaced OpenART (#1) and BDH-CQ — used to confirm community traction.
+
+**Notes:** No source outages this run. Recency check against `feed.xml` caught three already-used stories (Cognition, Lovable, Dwarkesh compute essay) and prevented repeats. XML stub validated well-formed.
+=== 2026-08-16T02:43:16-07:00 done  jinglin-ai-pulse (exit 0) ===
