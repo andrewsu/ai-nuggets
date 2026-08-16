@@ -1620,3 +1620,30 @@ Shortlist (substantive):
 
 Sources failed: none.
 === 2026-08-15T02:18:04-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-16T02:10:11-07:00 start blackbird-brief ===
+Episodes for **blackbird-brief** (Sunday, 2026-08-16 — two-episode day) are written and staged for the batch pipeline. `SKIP_TTS=1` is set, so per PIPELINE I wrote scripts + `.rss-item.xml` + `.commit-msg` stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Files written** (`podcasts/blackbird-brief/scripts/`):
+- `2026-08-16-radar-jhu-kornberg-lxr-remyelination-ms.md` + `.rss-item.xml` + `.commit-msg`
+- `2026-08-16-portfolio-watch.md` + `.rss-item.xml` + `.commit-msg`
+
+Memory updated: prepended today's dated verification entry to `blackbird-portfolio.md`, added a tracked-lead section for the Kornberg LXR lead, closed the Elisseeff fibroid deferral as a watch, and corrected the bioRxiv-API pagination reference (page size is now **30**, not 100 — a stride-100 sweep silently drops ~⅔ of each day).
+
+---
+
+**CANDIDATE FUNNEL — 2026-08-16**
+
+**SOURCING RADAR (Stream B — partner-institution research, window 08-09→08-16)**
+- bioRxiv: 1,344 scanned → 6 genuine JHU/UMB/Lieber/KKI corresponding-author hits. medRxiv: 424 → 8 (all epi/informatics, no asset). Journals + newsrooms (Hopkins Medicine, JHTV, UM Ventures, Lieber): 0 new in-window. **Lieber + Kennedy Krieger silent.**
+- Pagination note: API now returns **30 records/page** — first pass (stride 100) found only 1 hit; stride-30 refetch recovered the true 6.
+- Shortlist (✅ = full text read/eligible):
+  - ✅ **Kornberg (JHU Neurology, Calabresi co-author) — LXR activation overcomes inflammatory blockade of remyelination in MS** — bioRxiv 10.64898/2026.08.07.743529 — **CHOSEN (LEAD)**. Novel mechanism + human validation + in-vivo repair + clean unencumbered IP; the build = brain-penetrant, liver-sparing LXRβ modulator.
+  - ✅ **Elisseeff (JHU) — senescent-cell networks in human fibroids** — bioRxiv 10.64898/2026.08.06.743362 — **CHOSEN (SECONDARY)**; deferred 08-09 lead, now rendered; closed as watch-not-build (thin/derivative IP + heavy founder COI: Unity/Aegeria equity).
+  - ✅ Rosenberg (JHU Pathology) 20-plex serial IHC — 10.64898/2026.08.06.743188 — rejected (undefendable, services-only).
+  - Krantz (UMB) HCAR1 GWAS; Claypool (JHU) yeast Djp1 — noted, not leads.
+
+**PORTFOLIO WATCH (Stream A — window 08-13→08-16)**
+- Full Fierce/Endpoints/STAT/BioPharma Dive/GEN/BioSpace/BioBuzz + per-program sweep. **15th straight quiet direct-catalyst day** — no in-window readout/deal/filing on any Blackbird company; only geographic item (BioBuzz 08-13 roundup) had no Blackbird line.
+- **CHOSEN LEAD:** Ultragenyx DTX401 AAV PDUFA **Aug 23** (7 days) — post-Elevidys safety-climate read for Aletira + timing input for Geoff Lynn's raise. **Second dated marker:** HHS OIG trial-remuneration comment deadline **Aug 24** (8 days) — 1104health filing on the patient-payment question. Standing board (no-change): GPR52/Nxera out-license (no buyer yet), aSKY (KRAS G12D bar), Clasp (p53 Ph1 this year), CAMP4/RNA-activator, GCPII/IBD.
+- Excluded as already-aired/OOW: RevMed Q2, CAMP4 close, Intellia HLA, MapLight ZEPHYR, Nxera Q2, KRAS-G12D read, 1104health scope correction, Clasp/Adventris KRAS map, LB Pharma/Minerva SCZ Q2.
+=== 2026-08-16T02:32:13-07:00 done  blackbird-brief (exit 0) ===
