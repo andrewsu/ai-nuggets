@@ -3177,3 +3177,29 @@ Shortlist (relevance-filtered):
 
 Source failures: none — all sources reachable. No dedicated AI-in-discovery headline today (nothing fresh past items already covered); lineup led with the higher-signal FDA/clinical/deal stories instead.
 === 2026-08-15T02:27:42-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-16T02:20:11-07:00 start calibr-briefing ===
+Both stubs parse. All six files are in place, and per SKIP_TTS batch mode I'm skipping TTS/publish/feed/commit (the orchestrator handles those). Here's the run record.
+
+---
+
+## Calibr Briefing — Sunday, August 16, 2026 — run complete (SKIP_TTS batch mode)
+
+**Episodes written** (scripts + `.rss-item.xml` + `.commit-msg` stubs, no TTS/publish/feed/commit — orchestrator handles those):
+- `2026-08-16-pharma-headlines` — 5-item roundup
+- `2026-08-16-wuxi-1260h-injunction-spotlight` — deep dive on the WuXi AppTec ruling
+
+**Context:** Sunday of a dead summer weekend — no genuinely fresh (Aug 15–16) breaking primary news across sources. Per PIPELINE weekend guidance, shipped the best available structural stories (Aug 7–14 events with live Aug 14–15 follow-on coverage) plus a week-ahead FDA calendar. Cross-checked all picks against the feed's last ~10 days to avoid repeats.
+
+**Candidate funnel:**
+
+_General web / press feeds_ (BioPharma Dive homepage ✓; Fierce Biotech HTTP 403; BioSpace news ✓; Endpoints weekly — body paywalled, trending list readable via jina; MarketBeat FDA calendar ✓):
+- **WuXi AppTec 1260H injunction** (Boasberg, D.C., Aug 7; Law.com/SCMP/Bloomberg/Endpoints Aug 8–14) — **CHOSEN: headline #1 + SPOTLIGHT**. Foresite-relevant (China licensing + CDMO supply chain), rich analytical thesis, live story.
+- **Amgen Tavneos / avacopan** — EC revocation (Aug 6), NEJM retraction, FDA CDER withdrawal proposal + Amgen hearing request — **CHOSEN: headline #2**. Data-integrity megastory, not previously covered.
+- **Akeso ivonescimab (PD-1/VEGF bispecific), China 1L squamous NSCLC, HARMONi-6** (Aug 12) — first regimen to beat PD-1+chemo on OS in a Phase 3; Summit holds US rights — **CHOSEN: headline #3**. Ties to China-ascendance theme.
+- **Moderna mFlusiva** — first FDA-approved mRNA flu shot, adults 50+ (Aug 5, CNN update Aug 14) — **CHOSEN: headline #4**. Major first, not previously covered.
+- **Week-ahead FDA calendar** — Merck SC Keytruda Qlex (Aug 17), Savara Molbreevi/aPAP (Aug 22), Jazz Ziihera/biliary (Aug 25), Gilead bictegravir+lenacapavir/HIV (Aug 27) — **CHOSEN: headline #5**.
+- Considered, not used: Skye Bioscience/Redx fibrosis deal (Aug 14, too small); Trump MMR-split order + vaccine-maker pushback (policy, thin); Exelixis product-hop patent question; PDUFA VIII "America First" commitments; Rigel/Veppanu vepdegestrant availability (attribution uncertain — dropped rather than risk it).
+- Already covered in prior episodes (excluded): Capricor deramiocel, Cytokinetics v. BMS, Pfizer/Valneva Lyme, China-licensing 230%, Boulevard Bio, Neurocrine Vykat, Taiho/Cullinan zipalertinib, PTC/Sangamo, Zenbexus/iberdomide, Lilly retatrutide.
+
+_Foresite/Calibr angle:_ `calibr-pipeline.md` absent (known); the WuXi spotlight and ivonescimab/China items map directly to Foresite's heavy China-licensing deal flow and portfolio CDMO exposure.
+=== 2026-08-16T02:29:15-07:00 done  calibr-briefing (exit 0) ===
