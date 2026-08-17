@@ -1216,6 +1216,26 @@ competitors below. These are the "so what for Blackbird" hooks.
   the named independent RNA-upregulation competitor is now FIH + fully funded into the
   clinic → the 3-axis differentiation wedge (above) is now on a LIVE clock, write it down
   this week. Paperwork watch from 08-04 = RESOLVED.
+- **Q2 update + FIH TIMELINE CORRECTION (2026-08-17 Portfolio Watch LEAD; CAMP4 Q2
+  results reported 2026-08-13):** three durable facts + one correction to our own map.
+  (1) **Cash runway now reaches END OF 2028** (post the ~$50.1M second tranche); financing
+  removed as a constraint for 2+ years; Q2 net loss $33.5M (incl. ~$20.9M non-cash derivative
+  revaluation); HQ moved to Watertown, MA. (2) **CMP-002 (SYNGAP1) regulatory footprint
+  widened** — now cleared to start in BOTH **Australia AND Argentina** (Argentina ANMAT is
+  NEW vs the 07-27 Australia-only clearance), + **EU + UK filings** submitted to open more
+  sites. (3) **Analyst Day Sept 28, 2026** — trial design + **early discovery pipeline**.
+  **CORRECTION to prior briefs:** this file/show repeatedly called CAMP4 "first-in-human and
+  fully funded." **NOT yet FIH** — CAMP4 has CLEARANCE to begin but has **not dosed a patient**;
+  own guidance = **first-in-human INITIATES Q4 2026**. So the pace-setter is on the clinic's
+  doorstep, not through it → our platform has slightly MORE runway than the "already FIH"
+  shorthand implied. **Use going forward:** describe CAMP4 as "funded through 2028, cleared in
+  AU+AR / filed EU+UK, first dosing expected Q4 2026," NOT "first-in-human." **Action (Avi +
+  platform leads):** the **Sept 28 analyst day is the single most useful forward event on this
+  beat** — not SYNGAP1 mechanics but the EARLY PIPELINE; ">1,200 disorders" is a framing number,
+  and named programs = a map of which diseases/tissues CAMP4 takes next, which by subtraction
+  defines our white space (translation-step mechanism vs upstream regRNA; delivery beyond their
+  intrathecal/CNS route = liver/muscle/peripheral haploinsufficiency open; disorders we own that
+  they don't). Parse the early pipeline the day it drops.
 
 ### 1104health — clinical-trial enrollment marketplace ✅
 - **What:** Clinical-trial enrollment and access platform. **Pivoted from a

@@ -1647,3 +1647,32 @@ Memory updated: prepended today's dated verification entry to `blackbird-portfol
 - **CHOSEN LEAD:** Ultragenyx DTX401 AAV PDUFA **Aug 23** (7 days) — post-Elevidys safety-climate read for Aletira + timing input for Geoff Lynn's raise. **Second dated marker:** HHS OIG trial-remuneration comment deadline **Aug 24** (8 days) — 1104health filing on the patient-payment question. Standing board (no-change): GPR52/Nxera out-license (no buyer yet), aSKY (KRAS G12D bar), Clasp (p53 Ph1 this year), CAMP4/RNA-activator, GCPII/IBD.
 - Excluded as already-aired/OOW: RevMed Q2, CAMP4 close, Intellia HLA, MapLight ZEPHYR, Nxera Q2, KRAS-G12D read, 1104health scope correction, Clasp/Adventris KRAS map, LB Pharma/Minerva SCZ Q2.
 === 2026-08-16T02:32:13-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-17T02:10:08-07:00 start blackbird-brief ===
+SKIP_TTS mode is active, so I've written the script and both stubs and skipped TTS/publish/feed/commit (the orchestrator handles those). The portfolio memory is updated with the durable CAMP4 correction. Done.
+
+---
+
+## Run summary — Blackbird Brief, Monday 2026-08-17
+
+**Episode shipped (1):** Portfolio Watch (daily). Monday → no Sourcing Radar (weekly, Sundays only).
+
+**Files written** (SKIP_TTS mode — no TTS/publish/feed/commit; orchestrator finishes):
+- `scripts/2026-08-17-portfolio-watch.md`
+- `scripts/2026-08-17-portfolio-watch.rss-item.xml` (validated: XML OK)
+- `scripts/2026-08-17-portfolio-watch.commit-msg`
+- `memory/blackbird-portfolio.md` — corrected the standing "CAMP4 first-in-human" characterization (it's cleared but **not yet dosed**; FIH is Q4 2026) + added runway-to-2028, Argentina clearance, Sept 28 analyst day.
+
+**Direct-catalyst tape:** quiet again — no Blackbird company had a readout, financing, deal, or filing land Aug 14–17. Not a skip day (fresh in-window portfolio-relevant item found).
+
+**Candidate funnel:**
+- **CAMP4 Therapeutics Q2 (reported 08-13)** — *CHOSEN LEAD*. Fresh, in-window, touches the RNA translation-activator platform (pace-setter). Genuinely new: runway to end-2028, CMP-002 SYNGAP1 now cleared in Australia **+ Argentina** and filed EU/UK, Sept 28 analyst day. Also **corrects our own map** — CAMP4 is not yet first-in-human (dosing Q4 2026). [biospace.com CAMP4 Q2]
+- Ultragenyx DTX401 FDA decision **Aug 23** (6 days out) — confirmed PDUFA; climate read for Aletira. Board item, no change since 08-16.
+- HHS OIG trial-remuneration comment deadline **Aug 24** (7 days out) — 1104health. Board item, no change.
+- Nxera NXE'149 GPR52 out-license — still "advanced discussions," **no buyer announced**. GPR52 NewCo watch, no change.
+- Revolution Medicines KRAS G12D (zoldonrasib/daraxonrasib) — Q2 update was Aug 5 (out of window; already covered). aSKY board item, no change.
+- Clasp CLSP-1025 p53 GUARDIAN-101 — no update; Phase 1 readout still "this year." No change.
+- FDA "first gene therapy for genetic hearing loss" (Regeneron Otarmeni) — **discarded**: April 23, 2026, already covered; not fresh.
+- Merck tulisokibart TL1A / IBD — no fresh Aug 14–17 event (ATLAS-UC was June); GCPII/IBD board item, no change.
+
+**Sources failing:** none material; industry-press homepage indexing was thin via search but company PRs (CAMP4, Ultragenyx, RevMed, Nxera) were all reachable.
+=== 2026-08-17T02:16:20-07:00 done  blackbird-brief (exit 0) ===
