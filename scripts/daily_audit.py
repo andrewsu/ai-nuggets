@@ -143,6 +143,10 @@ def classify(slug: str, target_date: dt.date) -> dict:
     failed = [(ts, msg) for ts, msg in evts if msg.startswith(f"FAILED:")]
     no_episode = [(ts, msg) for ts, msg in evts if msg.startswith(f"no episode produced for {slug}")]
     aup = [(ts, msg) for ts, msg in evts if msg.startswith(f"AUP-refusal detected for {slug}")]
+    # Deliberate skip: run_all_shows.sh logs "SKIPPED: <slug> ..." when a show
+    # surveyed its sources and chose not to publish (content bar not met). This
+    # is a by-design non-event, like PAUSED — not "needs attention".
+    skipped = [(ts, msg) for ts, msg in evts if msg.startswith(f"SKIPPED: {slug}")]
 
     # The mp3 is the canonical local artifact, but the subscriber-visible
     # artifact is a matching item in feed.xml. Both must be present for
@@ -162,6 +166,8 @@ def classify(slug: str, target_date: dt.date) -> dict:
         status = "PAUSED"
     elif not starts:
         status = "NO_RUN"
+    elif skipped:
+        status = "SKIPPED"
     elif failed:
         status = "FAILED"
     elif starts and not dones:
@@ -181,6 +187,7 @@ def classify(slug: str, target_date: dt.date) -> dict:
         "retries": retries,
         "aup_count": len(aup),
         "no_episode_count": len(no_episode),
+        "skip_reason": (skipped[-1][1].split("): ", 1)[-1] if skipped else ""),
         "mp3s": [p.name for p in mp3s],
         "unpublished": unpublished,
         "log_path": log_path,
@@ -195,6 +202,7 @@ STATUS_ICON = {
     "NO_RUN": "MISS",
     "NO_EPISODE": "NOEP",
     "NOT_PUBLISHED": "UNPB",
+    "SKIPPED": "SKIP",
 }
 
 
@@ -206,9 +214,10 @@ def fmt_time(ts: dt.datetime | None) -> str:
 
 def render_summary(reports: list[dict], target_date: dt.date) -> tuple[str, str]:
     # PAUSED is intentional (subscriber went cold; scripts/check_activity.py
-    # skipped generation by design), so it doesn't count as "needs attention"
-    # for the daily subject line or the diagnostics tail.
-    bad = [r for r in reports if r["status"] not in ("SUCCESS", "PAUSED")]
+    # skipped generation by design) and SKIPPED is intentional (the show chose
+    # not to publish because the content bar wasn't met), so neither counts as
+    # "needs attention" for the daily subject line or the diagnostics tail.
+    bad = [r for r in reports if r["status"] not in ("SUCCESS", "PAUSED", "SKIPPED")]
     subject = f"[ai-nuggets] {target_date.isoformat()} audit: "
     if not bad:
         subject += f"all {len(reports)} shows OK"
@@ -227,6 +236,8 @@ def render_summary(reports: list[dict], target_date: dt.date) -> tuple[str, str]
             extras.append(f"{r['no_episode_count']} no-ep")
         if r["unpublished"]:
             extras.append(f"{len(r['unpublished'])} not in feed")
+        if r.get("skip_reason"):
+            extras.append(f"skip: {r['skip_reason'][:80]}")
         extra = f" ({', '.join(extras)})" if extras else ""
         when = fmt_time(r["last_event"])
         lines.append(f"  {icon}  {r['slug']:30s}  {when} PT{extra}")

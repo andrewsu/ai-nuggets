@@ -29,6 +29,28 @@ the run.**
   met (no fresh candidates after surveying available sources), not for
   source-side outages.
 
+### Signaling a deliberate skip
+
+When you *do* decide to skip the day because the content bar isn't met,
+end your run by writing this sentinel on a line of its own, as the very
+last thing you output:
+
+```
+NUGGETS_SKIP: <one-line reason>
+```
+
+e.g. `NUGGETS_SKIP: bioRxiv API outage + no fresh on-target news, nothing clears the recency gate`.
+
+This is load-bearing. A deliberate skip produces no files, which the
+runner otherwise cannot distinguish from a genuine failure — without the
+sentinel it retries you through the entire model ladder (Opus → Sonnet →
+Haiku) and the daily audit flags the show as "needs attention." The
+sentinel tells `scripts/run_all_shows.sh` the skip was intentional: it
+records the outcome, stops immediately (no retries), and `daily_audit.py`
+reports the show as `SKIP` rather than `FAIL`. Emit it only for a real
+content-bar skip — never when a source merely failed (proceed with the
+other sources per above) or when you actually published.
+
 ## Writing the summary
 
 Episode summaries center on **overall significance** of the work and

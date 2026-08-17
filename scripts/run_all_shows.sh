@@ -281,7 +281,15 @@ spawn_catchup() {
 # AUP-retry / model-ladder wrapper. Returns when:
 #  - Claude exits 0 AND an mp3 was produced (legacy mode) OR a script
 #    stub set was produced (SKIP_TTS mode); or
+#  - the show deliberately skipped today (emitted a NUGGETS_SKIP: sentinel
+#    because the content bar wasn't met — see PIPELINE.md); or
 #  - all retries are exhausted (logs "FAILED: ...").
+#
+# The deliberate-skip path matters: a legitimate "no fresh candidate today"
+# produces no files, which is otherwise indistinguishable from a real
+# failure. Without the sentinel a correct skip burns all 6 model rungs
+# (including the Haiku fallback, which has been seen to hallucinate a
+# permission prompt) and trips a false "needs attention" in daily_audit.py.
 run_show() {
   local prompt="$1"
   local slug="$2"
@@ -290,7 +298,7 @@ run_show() {
   mkdir -p "$(dirname "$log")" "$STATUS_DIR"
   rm -f "$status_file"  # clear stale entry from a mid-day rerun
 
-  local attempt tag out model_arg today produced script base
+  local attempt tag out model_arg today produced script base skip_reason deliberate_skip=""
   # Outcome bookkeeping. Updated by every iteration's failure-classification
   # so the value left after the loop reflects the LAST failure mode — that's
   # what determines whether this show is deferrable.
@@ -354,6 +362,21 @@ run_show() {
       done
       shopt -u nullglob
     fi
+    # Deliberate skip: the show surveyed its sources and chose not to publish
+    # today (content bar not met). It signals this with a NUGGETS_SKIP:
+    # sentinel on its own line (see PIPELINE.md). Honor it immediately — no
+    # retry ladder, no audit flag — but only when nothing was produced, since
+    # a real skip writes no files. AUP / session-limit are classified above
+    # and `continue` before reaching here, so they can't be masked by a stray
+    # sentinel.
+    if [ -z "$produced" ] && grep -qE '^[[:space:]]*NUGGETS_SKIP:' "$out"; then
+      skip_reason=$(grep -oE '^[[:space:]]*NUGGETS_SKIP:.*' "$out" | head -1 \
+                      | sed -E 's/^[[:space:]]*NUGGETS_SKIP:[[:space:]]*//' | cut -c1-200)
+      deliberate_skip="${skip_reason:-bar_not_met}"
+      echo "=== $(date -Iseconds) SKIPPED: $slug deliberate skip (bar not met): $deliberate_skip ===" | tee -a "$log"
+      rm -f "$out"
+      break
+    fi
     if [ "$attempt" -lt 6 ] && [ -z "$produced" ]; then
       [ -z "$last_failure" ] && last_failure="no_output"
       echo "=== $(date -Iseconds) no usable output for $slug; retrying in 180s ===" | tee -a "$log"
@@ -372,9 +395,12 @@ run_show() {
   # Write per-show outcome for the post-Phase-1 collector. One line:
   #   "SUCCESS"
   #   "DEFER <reset-string>"        e.g. "DEFER 5am"
+  #   "SKIP <reason>"               deliberate skip, bar not met (non-failure)
   #   "FAIL <last-failure-mode>"    e.g. "FAIL aup", "FAIL no_output"
   if [ -n "$produced" ]; then
     echo "SUCCESS" > "$status_file"
+  elif [ -n "$deliberate_skip" ]; then
+    echo "SKIP $deliberate_skip" > "$status_file"
   elif [ "$last_failure" = "session_limit" ] && [ -n "$last_reset" ]; then
     echo "DEFER $last_reset" > "$status_file"
   else
@@ -509,7 +535,7 @@ echo "$(date -Iseconds) Phase 1 outcomes: ${#SUCCEEDED[@]} succeeded, ${#DEFERRE
 [ "${#SUCCEEDED[@]}" -gt 0 ] && echo "  succeeded: ${SUCCEEDED[*]}"
 [ "${#DEFERRED[@]}" -gt 0 ]  && echo "  deferrable (session-limit): ${DEFERRED[*]}"
 [ "${#FAILED[@]}" -gt 0 ]    && echo "  failed: ${FAILED[*]}"
-[ "${#SKIPPED[@]}" -gt 0 ]   && echo "  skipped (paused): ${SKIPPED[*]}"
+[ "${#SKIPPED[@]}" -gt 0 ]   && echo "  skipped (paused / bar-not-met): ${SKIPPED[*]}"
 
 ##############################################################################
 # Phase 2 + 3 (skipped in LEGACY_TTS mode — each show already committed).
