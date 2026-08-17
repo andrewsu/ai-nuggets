@@ -3203,3 +3203,41 @@ _General web / press feeds_ (BioPharma Dive homepage ✓; Fierce Biotech HTTP 40
 
 _Foresite/Calibr angle:_ `calibr-pipeline.md` absent (known); the WuXi spotlight and ivonescimab/China items map directly to Foresite's heavy China-licensing deal flow and portfolio CDMO exposure.
 === 2026-08-16T02:29:15-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-17T02:20:08-07:00 start calibr-briefing ===
+Both stubs are well-formed. Today's episode is fully staged for the batch pipeline.
+
+## Calibr Briefing — Monday, August 17, 2026
+
+Both episodes written and staged (SKIP_TTS=1, so no TTS/publish/feed/commit — the orchestrator handles those). Files in `podcasts/calibr-briefing/scripts/`:
+- `2026-08-17-pharma-headlines.{txt,rss-item.xml,commit-msg}`
+- `2026-08-17-bms-zenbexus-celmod-spotlight.{txt,rss-item.xml,commit-msg}`
+
+**Spotlight:** BMS's Zenbexus (iberdomide) accelerated approval — "two firsts in one": the first CELMoD (targeted protein degrader engineered to outdo the IMiDs it descends from) *and* the first myeloma drug the FDA cleared on an MRD-negative complete-response endpoint (41% vs 21%), plus the franchise strategy off the Revlimid/Pomalyst patent cliff toward mezigdomide.
+
+**Headlines (5):** Zenbexus (lead/spotlight) · Braveheart Bio's $380M+ IPO reopening the window · Sentynl/Mereo alvelestat for AATD lung disease · Skye/Redx → Fibrx (pan-ROCK, fibrostenotic Crohn's) · China licensing upfronts up ~230% since 2022.
+
+### Candidate funnel
+
+Quiet summer weekend — genuinely fresh Aug 16–17 hard news was thin; nearly all substantive items landed Aug 10–14. Selected the strongest *uncovered* stories after cross-checking Aug 11–16 episodes to avoid repeats.
+
+Sources scanned:
+- **BioPharma Dive homepage** (WebFetch OK) — best index; ~12 items surveyed.
+- **Fierce Biotech** — HTTP 403 on WebFetch (per known block); recovered items via WebSearch summaries instead.
+- **BioSpace, Endpoints, STAT, GlobeNewswire, Merck/BMS/FDA PRs, Foresite news page** — via WebSearch/WebFetch.
+- **Foresite portfolio news page** — no August 2026 entries (latest June 12, 2026); no portfolio-specific pick available.
+
+Shortlist (✓ = used today; ✗ = excluded, reason):
+- ✓ BMS Zenbexus/iberdomide first CELMoD + MRD approval — uncovered — **SPOTLIGHT + headline 1**
+- ✓ Braveheart Bio $382M IPO (BHB-1893, cardiac myosin inhibitor, HCM) — uncovered — **headline 2**
+- ✓ Sentynl/Mereo alvelestat license (neutrophil elastase, AATD-LD) — uncovered — **headline 3**
+- ✓ Skye/Redx → Fibrx Therapeutics (RXC008 pan-ROCK, Crohn's) — uncovered — **headline 4**
+- ✓ China in-licensing premium data (upfronts +230% since 2022) — macro — **headline 5**
+- ✗ Definium DT120 (LSD) Phase 3 GAD win — already covered in 08-13 headlines
+- ✗ Cullinan/Taiho zipalertinib Phase 3; PTC/Sangamo Fabry gene therapy — covered 08-14
+- ✗ Jazz/Actio $820M KCNT1 epilepsy — covered 08-11
+- ✗ Cytokinetics v. BMS aficamten patent suit — covered 08-15
+- ✗ Insilico rentosertib Phase III (AI/TNIK, IPF); RevMed–Iambic AI collab — too stale (Jul 7, 2026 and Jul 2025)
+- ✗ Merck Keytruda Qlex + Padcev MIBC — the confirmable PR is the Nov 2025 cisplatin-ineligible approval; couldn't verify a genuine Aug 17 outcome, so not asserted
+
+RSS stubs validated as well-formed XML (fixed one raw `&` → `&amp;` in "R&D").
+=== 2026-08-17T02:31:23-07:00 done  calibr-briefing (exit 0) ===
