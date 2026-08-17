@@ -1805,3 +1805,21 @@ Done. Script (1,648 spoken words, ~10–12 min) and both SKIP_TTS stub files are
 
 **Notes:** No source outages this run. Recency check against `feed.xml` caught three already-used stories (Cognition, Lovable, Dwarkesh compute essay) and prevented repeats. XML stub validated well-formed.
 === 2026-08-16T02:43:16-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-17T02:30:08-07:00 start jinglin-ai-pulse ===
+Episode complete. 1,859 spoken words (~12 min, within the 10–15 min target). Running in SKIP_TTS batch mode, so I wrote the script plus the two transient stubs and stopped there — the orchestrator (`publish_pending.py`) will do TTS, R2 publish, feed insertion, and commit.
+
+**Ollie's AI Pulse — 2026-08-17 — "The Plumbing Is the Frontier"**
+
+Theme: nobody shipped a smarter model this week, so the AI world argued about the layers *around* the frozen model. Distinct from yesterday's "off the scaling axis" — today's throughline is serving, routing, and memory.
+
+- **Twitter Pulse:** (1) OpenAI's Ultrafast preview running GPT‑5.6 Sol on Cerebras wafer-scale silicon — same weights, ~750 tok/s, up to 14× faster — reframed as speed becoming its own capability axis at agent scale (with the vendor-benchmark/limited-preview caveats up front). (2) Stripe's $7B+ acquisition of OpenRouter — the routing chokepoint and cross-market demand signal, with neutrality flagged as the fragile asset.
+- **Money Moves:** Cognition/Devin in talks at $40B (up from $26B in May; run-rate ~$492M→$1B) — pairing with Stripe to show the model tier squeezed between a well-priced routing layer and app layer.
+- **Deep Cut:** a real two-sided argument — Dwarkesh Patel's "8 Predictions for the Era of Continual Learning" vs. Nathan Lambert's "Contra Dwarkesh" — with direct quotes from both, resolving to the shared punchline (the frozen model isn't the moat).
+- **Wrap:** watch whether OpenRouter stays neutral under Stripe.
+
+**Candidate funnel:**
+- **Twitter/X + community aggregators (scanned ~12 threads/HF trending):** survivors — Cerebras/Ultrafast GPT‑5.6 Sol (Aug 13, actively debated) ✓CHOSEN; Stripe/OpenRouter (Aug 16) ✓CHOSEN; DeepMind reorg, Hassabis→Chairman (Aug 12) — dropped, off-theme + outside 48h; open-weight cluster Qwen3.8/GLM‑5.2/GLM‑5.3 (Aug 14) — dropped, contested/self-reported vs audited numbers too noisy to cite; ABot‑World‑0 (Aug 3), MatrAIx 8.3B personas (Aug 4) — dropped, >14d and paper-layer (belongs to Ollie's biomed-ai show); BDH‑CQ/OpenART/Gemini 3.7 Flash/River AI/Databricks/BabyVision — excluded, all featured yesterday.
+- **Investment news (last 7d):** Cognition $40B (Aug 12) ✓CHOSEN; Stripe/OpenRouter $7B (Aug 16) ✓CHOSEN; Harvey $150M, Perplexity $300M, Mistral Series C — noted, thinner strategic signal.
+- **Podcasts (last 14d):** Dwarkesh "8 Predictions for Continual Learning" (Aug 7) + Lambert "Contra Dwarkesh" rebuttal ✓CHOSEN (two-sided chain, full text read); Latent Space "Baseten" (Aug 3, inference) — on-theme runner-up, edged out; WhynotTV — still no in-window episodes (per standing memory note).
+- All picks read in full; no source outages this run.
+=== 2026-08-17T02:38:26-07:00 done  jinglin-ai-pulse (exit 0) ===

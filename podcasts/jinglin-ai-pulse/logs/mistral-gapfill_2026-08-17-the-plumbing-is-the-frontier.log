@@ -1,0 +1,6 @@
+Script body: 11003 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2884 chars) -> 142.7s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2967 chars) -> 140.4s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2872 chars) -> 132.9s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (2276 chars) -> 108.0s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-08-17-the-plumbing-is-the-frontier.mp3 [mistral] 4,358,731 bytes, 544.8s
