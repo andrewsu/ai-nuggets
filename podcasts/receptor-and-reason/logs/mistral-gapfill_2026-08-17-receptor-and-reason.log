@@ -1,0 +1,7 @@
+Script body: 12968 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2775 chars) -> 127.5s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2788 chars) -> 123.3s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2815 chars) -> 137.4s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2908 chars) -> 128.4s ✓
+  [mistral:en_paul_neutral] chunk 5/5 (1678 chars) -> 74.3s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/receptor-and-reason/episodes/2026-08-17-receptor-and-reason.mp3 [mistral] 5,287,854 bytes, 661.0s

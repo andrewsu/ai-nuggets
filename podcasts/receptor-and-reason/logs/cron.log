@@ -3429,3 +3429,33 @@ Episode is complete. All SKIP_TTS-mode deliverables are written (script, RSS stu
 
 All picks passed the dedup ledger; no collisions.
 === 2026-08-16T03:06:26-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-17T02:50:08-07:00 start receptor-and-reason ===
+All artifacts are in place and validated. Here is the run summary.
+
+## Receptor & Reason — 2026-08-17 — DONE (SKIP_TTS mode)
+
+**Episode written:** `podcasts/receptor-and-reason/scripts/2026-08-17-receptor-and-reason.md` — 10 items, ~1,992 spoken words (~12–13 min, within the 12–18 target). Stubs written: `.rss-item.xml` (validated as well-formed) and `.commit-msg`. Dedup ledger appended (now 87 lines). No TTS/publish/feed/commit performed — the orchestrator (`publish_pending.py`) will do those after batch TTS.
+
+### Source outages (logged)
+- **bioRxiv Tier 1 — full outage.** `api.biorxiv.org/details` returned HTTP 200 with an empty body on every query (direct curl, sandbox-off, jina proxy, and the bioRxiv MCP — even for historical 2024 dates). One retry via jina proxy also empty. Proceeded on journals + arXiv per PIPELINE. This is the dominant Tier-1 engine, so a real recall hit — flagged in the episode intro.
+- **Nature TOCs / article bodies** auth-wall via WebFetch; read via r.jina.ai proxy instead (worked for open article pages).
+- **Lancet Neurology** body paywalled (jina rendered only the author block) → guanabenz kept **out of the lead** per the full-text eligibility gate; used its complete structured trial report as a hedged non-lead item.
+
+### Candidate funnel
+- **arXiv** (shared daily cache, 500 entries, 08-12→08-14): ~74 agentic+bio hits scanned; most off-topic for CNS. Shortlist: Localize-Then-Reason molecular VLM ✓CHOSEN; Static-analysis agentic Rust bioinformatics ✗ (shipped 08-15); PRISM aphasia ✗ (shipped 08-14); Intern-S2, MARC v1 (off-target for audience).
+- **PubMed / target journals** (edat 08-10→08-17, 32 hits) + broad neuropharm sweep (134 + 220 hits): substantive shortlist below (⇒ chosen ★, dropped reason in parens).
+  - ★ Adolescent alcohol → astrocyte-synaptic coupling, dHipp (Mol Psych, s41380-026-03817-8) — **LEAD**
+  - ★ NOP receptors + alcohol, longitudinal primate PET (Basic Clin Pharmacol Toxicol, bcpt.70282)
+  - ★ Guanabenz in vanishing white matter, phase 1/2 (Lancet Neurol, S1474-4422(26)00241-3)
+  - ★ White-matter DTI meta-analysis in autism (Biol Psychiatry CNNI, bpsc.2026.08.002)
+  - ★ Neurabin-1 (PPP1R9A) haploinsufficiency iPSC neurons (Mol Psych, s41380-026-03818-7)
+  - ★ Tail-of-VTA maternal behavior pharmacology (Neuropharmacology, 111147)
+  - ★ Parvalbumin interneurons under stress review (IJNP, pyag043)
+  - ★ Viloxazine ER real-world Phase 4 in comorbid ADHD (Psychiatric Times)
+  - ★ Defining 'psychedelic' (J Psychopharmacol, Carhart-Harris) — **CLOSE**
+  - Epigenomic priming of microglia (NPP, s41386-026-02528-6) — DROPPED (full text unobtainable; abstract not available, jina rendered refs only)
+  - Voltage-gated ion channels review; synaptotagmin-11 schizophrenia (Letter); HCAR1/Purkinje — DROPPED (no readable abstract, or pub date Aug 3 outside 7-day window)
+  - Amisulpride social-reward fMRI; BMI clustered-MR; inflammaging; prenatal metabolomics; theta-gamma tDCS; neonatal miRNA ADHD; episodic-memory ABCD; DMF valproate; GABA crosstalk; NLRP3; methamphetamine epigenetics — **DEDUP EXCLUDED** (shipped 08-14/15/16)
+
+**Notable dedup save:** the day's obvious lead (amisulpride, s41386-026-02521-z), plus the BMI clustered-MR and the agentic-Rust-bioinformatics papers, were all already shipped in the 08-15 "journals day" episode — caught via the feed after an initial topic-grep missed them, then confirmed against `shipped.jsonl`. All three excluded and the lead reselected.
+=== 2026-08-17T03:09:14-07:00 done  receptor-and-reason (exit 0) ===
