@@ -1,0 +1,4 @@
+Script body: 5112 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2920 chars) -> 141.5s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2191 chars) -> 104.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-08-17-self-auditing-ai-discovery.mp3 [mistral] 2,168,207 bytes, 271.0s

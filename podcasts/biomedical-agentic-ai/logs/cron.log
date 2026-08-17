@@ -3441,3 +3441,35 @@ Episode written and staged for the batch pipeline (SKIP_TTS mode — no TTS/publ
 
 No source outages this run.
 === 2026-08-16T02:16:29-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-17T02:00:08-07:00 start biomedical-agentic-ai ===
+All files written. In `SKIP_TTS` mode the orchestrator handles TTS, R2 publish, feed insertion, and commit, so my work is done. Here is the run summary.
+
+---
+
+## Episode published (stubbed for batch TTS): biomedical-agentic-ai — 2026-08-17
+
+**Pick:** *"Virtual-cell verification enables self-auditing AI discovery for immune rejuvenation"* (bioRxiv, posted 2026-08-11, DOI 10.64898/2026.08.04.742916) — a self-correcting agentic discovery framework whose **Analyzer–Planner–Auditor** agent revises its own scoring objective against wet-lab data, built on CellQ (RVQ→LLM virtual-cell verifier) and PACE (directional immune-aging phenotype panel). Full text fetched and read in full via direct `r.jina.ai` (115 KB). This is a **recency carve-out pickup**: surfaced in-window on 08-13, deferred for render-lag, readable since 08-14, shipped today.
+
+Files written (no commit — `SKIP_TTS=1`):
+- `scripts/2026-08-17-self-auditing-ai-discovery.md` (820-word spoken body, under 1150 cap)
+- `scripts/2026-08-17-self-auditing-ai-discovery.rss-item.xml` (validated; `__LENGTH__`/`__DURATION__` placeholders)
+- `scripts/2026-08-17-self-auditing-ai-discovery.commit-msg`
+
+### Candidate funnel
+
+**bioRxiv (last 4 days, 08-14→08-17):** ❌ **source outage** — details API returned HTTP 200 with empty body (`content-length: 0`) on every day/date; direct curl and the bioRxiv MCP `search_preprints` both failed (`Expecting value: line 1 column 1`). One retry after 20s pause also empty. No fresh bioRxiv corpus available today; noted per PIPELINE source-failure rule. (LungChat, the top 08-16 deferral, re-checked: still abstract-only, 29 KB — deferral stays live.)
+
+**arXiv (cached listing, 500 entries; newest 08-14, in-window):** ~73 bio+agent keyword hits → substantive shortlist after discarding clinical-imaging/generic-LLM noise:
+- Wyvern — agentic grounded multimodal report generation (08-14); not biomedical-specific. Pass.
+- MedClaw — agent harness for surgical-video reasoning (08-14); clinical vision, not research-agentic. Pass.
+- MARC v1 — open-source multi-agent clinical reasoning framework (08-13); clinical QA, weaker KG/data-integration fit. Pass.
+- Novel Knowledge-Guided Generative Transcriptomic Data — gene-graph GANs (08-13); not agentic. Pass.
+- Localize-Then-Reason (VLSR) — molecular-property visual reasoning (08-13); not multi-agent. Pass.
+- (Rust-bioinformatics and Intern-S2 already shipped 08-15 / 08-16.)
+
+**PubMed (last 5 days).** Based on articles retrieved from PubMed, the recent agentic/LLM-biomed set was dominated by clinical-imaging/foundation-model work; nearest-adjacent items — MedHopper agentic RAG multi-hop biomedical QA ([DOI](https://doi.org/10.1093/database/baag047), but pub-dated Jan 2026, out of window) and Eli Lilly's Model Gateway MLOps review naming LLM agents ([DOI](https://doi.org/10.1016/j.drudis.2026.104767), pub 08-14) — neither a compelling agentic-research story. Pass.
+
+**ChemRxiv / news / funder pages:** no in-window agentic-biomedical item outcompeting the pick; not pursued further given the dominant carve-out candidate.
+
+**Chosen:** ✅ Virtual-cell self-auditing discovery agent — clearest fit for the show's brand (agentic AI for biomedical research, self-correcting AI scientist, single-cell/LLM data integration), and a legitimate readable-now deferral. The `virtual-cell` deferral memory has been deleted (resolved) and its MEMORY.md pointer removed.
+=== 2026-08-17T02:06:59-07:00 done  biomedical-agentic-ai (exit 0) ===
