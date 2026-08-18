@@ -1823,3 +1823,40 @@ Theme: nobody shipped a smarter model this week, so the AI world argued about th
 - **Podcasts (last 14d):** Dwarkesh "8 Predictions for Continual Learning" (Aug 7) + Lambert "Contra Dwarkesh" rebuttal ✓CHOSEN (two-sided chain, full text read); Latent Space "Baseten" (Aug 3, inference) — on-theme runner-up, edged out; WhynotTV — still no in-window episodes (per standing memory note).
 - All picks read in full; no source outages this run.
 === 2026-08-17T02:38:26-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-18T02:30:10-07:00 start jinglin-ai-pulse ===
+Done. `SKIP_TTS=1` is set, so I wrote the script plus the two transient stubs and stopped there — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator handles those after batch TTS).
+
+**Files written** (`podcasts/jinglin-ai-pulse/scripts/`):
+- `2026-08-18-who-wrote-this.md` — 2,311 spoken words (~10 min)
+- `2026-08-18-who-wrote-this.rss-item.xml` — validated as XML, `__LENGTH__` / `__DURATION__` placeholders in place
+- `2026-08-18-who-wrote-this.commit-msg`
+
+**Episode: "Who Wrote This?"** — through-line is the provenance problem (溯源). Twitter Pulse: Anthropic's SynthID-Text watermark and the Gruber craft objection, plus the real limit (sparse in fact-dense prose, near-absent in code, dies on a rewrite); the Wiz/Snowflake chain where Copilot wrote the injection bug, Copilot Autofix cleared it, and an autonomous red-team agent exploited it in five days; the Hanover Institute fake think tank engineered to be cited by chatbots; MOSS-VL as the open-provenance counterpoint. Money Moves: Groq's $350M down round at $3.5B, abandoning its own silicon to resell Nvidia GPUs — a direct rebuttal to yesterday's Cerebras story. Deep Cut: Goodfire's Dan Balsam on concept manifolds, with the genome-model tree-of-life finding aimed at the Scripps audience.
+
+**Candidate funnel**
+
+Twitter/X + aggregators (HN front page 2026-08-17, HF Daily Papers 08-17 & 08-18) — ~30 items scanned, 8 survived relevance:
+- **[CHOSEN]** Anthropic text watermark + Gruber critique — daringfireball.net (788 pts / 694 comments), anthropic.com/news/claude-text-watermark, TechCrunch 08-15, The Decoder, Gizmodo
+- **[CHOSEN]** AI-generated Copilot Autofix → Snowflake Jira compromise — wiz.io/blog/red-agent-snowflake-copilot-cicd-bug (369 pts)
+- **[CHOSEN]** Israel's fake think tank targeting chatbots — responsiblestatecraft.org/israel-influence-chatgpt/ (478 pts)
+- **[CHOSEN]** MOSS-VL Technical Report (OpenMOSS), 430 upvotes — arxiv.org/abs/2608.15045
+- MegaParts, 3D part-aware generation, 504 upvotes (Shanghai AI Lab) — arxiv.org/abs/2608.14783 — off-target for this audience
+- Qwen 3.8 27B overthinking, Simon Willison (774 pts) — simonwillison.net/2026/Aug/16/qwen-38-27b/ — good item, cut for length; Qwen 3.8 already covered 08-03/08-08
+- "GPT 5.6 Sol is the best vision model OpenAI ever released" (338 pts) — GPT-5.6 Sol covered yesterday
+- HarnessEval-W / VibeWorlding (58 / 44 upvotes) — world-model benchmarks, covered 08-16
+
+Investment/business news (TechCrunch AI, Bloomberg, Crunchbase) — ~12 items, 5 survived:
+- **[CHOSEN]** Groq $350M at $3.5B, neocloud pivot — techcrunch.com/2026/08/17/groq-raises-350m-...
+- **[CHOSEN]** Anthropic run rate $65B — techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/
+- Nvidia $1.5B into SoftBank data center developer — same capital-into-atoms story told 08-11/08-15
+- Wispr $280M at $2B — thin intellectual substance
+- Lovable $400M at $13.3B, Cognition $40B — both already shipped (08-13, 08-17)
+
+Podcasts (last 14 days) — 4 shows checked:
+- **[CHOSEN]** The Cognitive Revolution, "Thinking in Silico: Goodfire CTO Dan Balsam" (Aug 8)
+- Cognitive Revolution, Flo Crivello (Aug 8) — used 08-14; Zvi Mowshowitz (Aug 4) — used 07-30
+- Latent Space, Dwarkesh — episode listings didn't render via WebFetch (Substack shell page, no archive data); Dwarkesh's continual-learning piece was used 08-11/08-17 anyway
+- WhynotTV — still stale, no in-window episodes (known since 07-29)
+
+No source outages this run.
+=== 2026-08-18T02:45:58-07:00 done  jinglin-ai-pulse (exit 0) ===
