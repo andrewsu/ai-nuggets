@@ -3241,3 +3241,35 @@ Shortlist (✓ = used today; ✗ = excluded, reason):
 
 RSS stubs validated as well-formed XML (fixed one raw `&` → `&amp;` in "R&D").
 === 2026-08-17T02:31:23-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-18T02:20:10-07:00 start calibr-briefing ===
+Both scripts and their batch-TTS stubs are written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped audio generation, R2 publish, feed edit, and the commit — the orchestrator handles those after batch TTS.
+
+**Files written (`podcasts/calibr-briefing/scripts/`):**
+- `2026-08-18-pharma-headlines.txt` (966 words, ~5.5 min) + `.rss-item.xml` + `.commit-msg`
+- `2026-08-18-argenx-fcrn-myositis-spotlight.txt` (1,429 words, ~7.9 min) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs validate as XML with `__LENGTH__` / `__DURATION__` placeholders.
+
+**Candidate funnel — Calibr Briefing, 2026-08-18**
+
+Sources scanned:
+- **Endpoints News** (via r.jina.ai index) — 24 stories on the front index; 11 inside the 24-hour window, 8 substantive. Article bodies are paywalled past the lede, so each pick was re-sourced to a press release or an open outlet.
+- **BioSpace** — homepage index, 9 items Aug 17–18, 6 relevant; full text readable via jina.
+- **BioPharma Dive** — homepage readable but carries no visible datelines; used only for cross-check.
+- **STAT News** — index readable, 2 Aug-17 biotech items; both STAT+ paywalled, no usable body.
+- **Fierce Biotech / Fierce Pharma** — **FAILED**: WebFetch HTTP 403, and r.jina.ai returns `AbuseAlleviationError` (domain-level block on `www.fiercebiotech.com` until 2026-08-18 09:49 UTC). Not retried; headlines recovered via web search instead.
+- **Press releases** — GlobeNewswire (argenx), AstraZeneca, OmniAb/investors, Tanabe: all fully readable.
+
+Shortlist (after discarding stale/off-target):
+- **[CHOSEN — headlines #1 + SPOTLIGHT]** argenx Phase 3 ALKIVIA win, Vyvgart Hytrulo in autoimmune myositis — https://www.globenewswire.com/news-release/2026/08/17/3345813/0/en/argenx-announces-positive-topline-results-from-phase-3-alkivia-trial-of-efgartigimod-in-autoimmune-myositis.html (full PR read; +16.7%)
+- **[CHOSEN — #2]** EyePoint Duravyu misses in pivotal LUGANO wet AMD, −70% — https://www.biospace.com/drug-development/eyepoints-phase-3-fail-sends-stock-spiraling-amid-next-gen-amd-race
+- **[CHOSEN — #3]** AstraZeneca discontinues eVOLVE-Lung02 (volrustomig) — https://www.astrazeneca.com/media-centre/press-releases/2026/update-on-evolve-lung02-phase-iii-trial.html ; paired with Enhertu + Tagrisso/Orpathys wins — https://endpoints.news/astrazeneca-touts-separate-late-stage-lung-cancer-wins-with-tagrisso-enhertu/
+- **[CHOSEN — #4]** Summit/Akeso ivonescimab: third China approval, label shows HARMONi-6 PFS degrading; Leerink cuts — https://www.biospace.com/drug-development/summit-akesos-china-approval-celebration-cut-short-as-survival-benefit-degrades
+- **[CHOSEN — #5]** Leo Pharma licenses Tanabe's dersimelagon (oral MC1R agonist), up to $435M — https://endpoints.news/leo-pharma-to-license-tanabes-rare-disease-drug-for-pain-with-sun-exposure/ (freshest item, posted 07:00 UTC today)
+- **[CHOSEN — #6]** Lilly/OmniAb ion-channel deal up to $370M — https://investors.omniab.com/investors/news/news-details/2026/OmniAb-Announces-Global-Collaboration-and-License-Agreement-for-Ion-Channel-Program-with-Eli-Lilly--Company/default.aspx ; + Sanofi cuts 229 at Blueprint Medicines
+- Not used — Biogen felzartamab China approval; Cytokinetics patent suit vs BMS; Abcuro $66M; Celcuity second-factory review; ICER on AZ's hypertension drug; Germany drug-pricing probe (all ≥3 days old, outside window)
+- Not used — Endpoints "AI will be better than doctors at some medical tasks" and BioSpace's cell/gene + AI opinion piece: both commentary, no primary development; no fresh Xaira/Iambic/Isomorphic/Recursion news surfaced today
+- Not used — WuXi AppTec stock rally (Bloomberg): follow-on to the Aug 16 spotlight, no new development
+
+Spotlight choice: argenx over ivonescimab. Ivonescimab was already the Aug 16 headline item and figured in the Aug 16 WuXi spotlight (51 prior mentions in the feed), so it got a full headline slot with the new Leerink detail instead. The argenx result is unshipped, has real mechanistic content (FcRn/IgG causality in myositis), and is squarely on-target for Calibr's autoimmune work.
+=== 2026-08-18T02:32:49-07:00 done  calibr-briefing (exit 0) ===
