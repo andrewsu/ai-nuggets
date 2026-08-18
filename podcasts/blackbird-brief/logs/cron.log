@@ -1676,3 +1676,37 @@ SKIP_TTS mode is active, so I've written the script and both stubs and skipped T
 
 **Sources failing:** none material; industry-press homepage indexing was thin via search but company PRs (CAMP4, Ultragenyx, RevMed, Nxera) were all reachable.
 === 2026-08-17T02:16:20-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-18T02:10:10-07:00 start blackbird-brief ===
+Episode published for `blackbird-brief` — 2026-08-18 Portfolio Watch.
+
+**Files written** (SKIP_TTS batch mode, so script + stubs only; no TTS, no R2 publish, no `feed.xml` edit, no commit — `publish_pending.py` does those):
+- `podcasts/blackbird-brief/scripts/2026-08-18-portfolio-watch.md` — 1,834 words, ~9 min
+- `podcasts/blackbird-brief/scripts/2026-08-18-portfolio-watch.rss-item.xml` — validated as XML, both placeholder tokens present
+- `podcasts/blackbird-brief/scripts/2026-08-18-portfolio-watch.commit-msg`
+- `memory/blackbird-portfolio.md` — new 08-18 log entry plus new competitor entries under Aletira and the GPR52 NewCo
+
+**Lead — a recall miss, corrected on air.** Skylark Bio dosed the first child in SONIX (Phase 1/2, SKY-GJB2) on Aug 11 and our sweeps missed it. It matters because the design *is* Aletira's: an engineered broad-transduction AAV capsid plus cell-specific expression control, delivering GJB2 to the cochlear supporting cells that natively make connexin 26. GJB2 is the volume target in genetic deafness (~200,000+ in US/EU) and the field has consolidated onto it — otoferlin is spoken for by Regeneron's Otarmeni, and Sensorion dropped its own OTOF program in June to lead with GJB2. The open diligence question is what Skylark's control element actually is; if they've filed on splicing, that needs answering before the Series A.
+
+**Two things I corrected in our own standing framing**, both flagged as corrections in the script:
+- The brief has been calling the Ultragenyx date a read on the safety bar ratcheting *up*. Capricor (Aug 14) shows the other half — an agency rigorous on evidence but flexible on path. Reframed: an agency that rewards narrowing rewards precision, which is a stronger raise argument than the one we'd been making.
+- The memory file recorded Aug 23 as a Saturday. It's a **Sunday**, and Capricor's Aug 22 is a Saturday, so Ultragenyx realistically prints Friday the 21st or Monday the 24th — possibly the same day as the OIG filing.
+
+**Candidate funnel** (window Aug 14–18; sources per Stream A):
+
+| Source/beat | Scanned | In-window & relevant |
+|---|---|---|
+| Gene therapy / Aletira | ~5 indexes | 1 (Capricor) — **chosen**; Ultragenyx: no news, Aug 23 stands |
+| Oncology / aSKY, Clasp, GCPII-IBD | ~30 queries | 2 AZ items — **chosen**; nothing on the programs themselves |
+| Neuro / RNA / trials / Blackbird direct | ~40 queries | Leal **chosen**; OIG docket **chosen**; zero GPR52 news; zero Blackbird mentions |
+
+Shortlist, with what was picked:
+- **CHOSEN** Skylark Bio SKY-GJB2 first patient dosed (Aug 11, catch-up) — [BioSpace](https://www.biospace.com/press-releases/skylark-bio-doses-first-patient-in-sonix-phase-1-2-trial-of-sky-gjb2-for-gjb2-related-pediatric-deafness)
+- **CHOSEN** Capricor amended BLA / PDUFA extension (Aug 14) — [BioSpace](https://www.biospace.com/drug-development/capricor-soars-on-potential-fda-review-extension-filing-amendments)
+- **CHOSEN** HHS OIG docket audit: deadline firm, 8 comments, no trade-association filing — [regulations.gov](https://www.regulations.gov/docket/HHSIG-2026-0034)
+- **CHOSEN** Leal Therapeutics $30M + Lilly, Phase 1b/2a glutaminase inhibitor (Aug 17) — [PR Newswire](https://www.prnewswire.com/news-releases/leal-therapeutics-announces-30-million-series-a-extension-and-initiation-of-phase-1b2a-clinical-trial-of-ltx-001-in-schizophrenia-302851387.html)
+- **CHOSEN** AZ SAFFRON win + eVOLVE-Lung02 discontinuation, same day (Aug 17) — [StockTitan](https://www.stocktitan.net/news/AZN/tagrisso-osimertinib-plus-savolitinib-demonstrated-statistically-448zghk76aa5.html), [BioSpace](https://www.biospace.com/drug-development/astrazeneca-pulls-plug-on-late-stage-lung-cancer-trial-extending-losing-streak)
+- Mentioned, one day out of window: Sarah Cannon + Merck community-site oncology trials (Aug 13)
+- Rejected off-thesis: Summit/Akeso ivonescimab, Amgen Tavneos EU withdrawal, J&J/AbelZeta CAR-T return, Sanofi–Blueprint layoffs, CGT CDMO market PR
+
+**Source failures and traps, logged:** Fierce Biotech, Endpoints, STAT, Businesswire, AstraZeneca.com, JHTV and FDA newsroom all 403 (including via `r.jina.ai`); `ir.ultragenyx.com` and `ir.revmed.com` time out at 60s; regulations.gov HTML 403s but the v4 API works and is the right way to audit an RFI docket. Two date traps caught and *not* aired as fresh: CGTLive re-datelines old news with current bylines (J&J/Sail, actually Jul 29), and bioxconomy re-datelined the Jul 7 Krazati KRYSTAL-10 miss to Aug 17.
+=== 2026-08-18T02:31:16-07:00 done  blackbird-brief (exit 0) ===
