@@ -3473,3 +3473,29 @@ Files written (no commit — `SKIP_TTS=1`):
 
 **Chosen:** ✅ Virtual-cell self-auditing discovery agent — clearest fit for the show's brand (agentic AI for biomedical research, self-correcting AI scientist, single-cell/LLM data integration), and a legitimate readable-now deferral. The `virtual-cell` deferral memory has been deleted (resolved) and its MEMORY.md pointer removed.
 === 2026-08-17T02:06:59-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-18T02:00:10-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote the script plus the two stubs and made no TTS/R2/feed/commit changes — `publish_pending.py` handles those.
+
+**Files written:**
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-18-pertmind-perturbation-rl-environments.md` (930 words spoken body, under the 1150 cap)
+- `.rss-item.xml` stub (XML-validated, `__LENGTH__` / `__DURATION__` placeholders)
+- `.commit-msg` stub
+
+**Pick:** PertMind — *Eliciting Emergent Biological Reasoning in LLM via Reinforcement Learning on Cellular Perturbation Data* (arXiv 2608.16419, posted 2026-08-17). Read in full via PDF → `mutool`. Cellular perturbation atlases as RL environments where measured gene responses are the verifiable reward; a leakage-controlled Reactome pathway-direction reward as intermediate signal, with the shuffled-label and prompt-only ablations that show biological alignment (not reward density) is doing the work; and transfer with no task-specific training to reverse perturbation inference, unseen double perturbations, screen prioritization, and GO process naming. The retrieval context is an open-world KG over PubChem/DrugBank/UniProt/GO/Reactome/STRING/CORUM, and the diminishing gain from augmenting GeneAgent is a nice data point on a model partially absorbing the graph.
+
+**Candidate funnel**
+
+- **bioRxiv** (08-15→08-18, details API day-by-day, 466 unique scanned): 32 keyword hits, 0 substantive agentic/LLM-system matches. Nearest: *Learning protein function through autonomous experimental interaction* (10.64898/2026.08.14.744985) — autonomous experimentation, not agentic AI. Window is genuinely thin.
+- **arXiv** (shared daily cache, 500 entries, 08-14→08-17): 305 keyword hits → 28 biomedical+agentic shortlist. Substantive:
+  - **PertMind** — RL on perturbation atlases — `arxiv.org/abs/2608.16419` — **CHOSEN**
+  - AutoResearchEval/ARFT — 100 frontier research tasks, 800 trajectories, 45 failure patterns — `2608.14905` (strong, but thematically adjacent to yesterday's self-auditing episode)
+  - GRA — schema-agnostic agent over hybrid knowledge graphs — `2608.15834` (great KG fit, but the benchmark is industrial, not biomedical)
+  - BaT — self-evolving medical research agent with stage rubrics — `2608.16211`
+  - ScienceFlow — long-horizon autoresearch agent — `2608.14354`
+  - Grounding Healthcare LLMs in a Causal Knowledge Graph — `2608.15382`
+  - Valhalla — layered knowledge-state framework — `2608.15193`
+- **PubMed** (reldate=5, 400 records): 223 keyword hits → 26 title-strong. Only on-target item: CAVE-Onc, graph-constrained agentic validation for CDISC oncology submissions (PMID 42599988) — narrower scope than the arXiv leaders.
+- **ChemRxiv**: no in-window (last 4 days) agentic items; newest relevant hit is 2026-07-28.
+- **Policy/funder**: ARPA-H's only 08-15→08-18 item is HHS STREAM (weed management) — off-topic. **NIH news-releases page returned HTTP 403 to WebFetch** — source gap, not retried further. NSF/HHS not separately reachable in window.
+- **Deferred, re-checked**: LungChat (10.64898/2026.08.08.743577) is *still* abstract-only 4 days after posting — ineligible again today; memory updated to flag it as possibly permanently unrendered.
+=== 2026-08-18T02:07:39-07:00 done  biomedical-agentic-ai (exit 0) ===
