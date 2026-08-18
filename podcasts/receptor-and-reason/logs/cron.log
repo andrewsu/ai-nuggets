@@ -3459,3 +3459,32 @@ All artifacts are in place and validated. Here is the run summary.
 
 **Notable dedup save:** the day's obvious lead (amisulpride, s41386-026-02521-z), plus the BMI clustered-MR and the agentic-Rust-bioinformatics papers, were all already shipped in the 08-15 "journals day" episode — caught via the feed after an initial topic-grep missed them, then confirmed against `shipped.jsonl`. All three excluded and the lead reselected.
 === 2026-08-17T03:09:14-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-18T02:50:10-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 7am (America/Los_Angeles)
+=== 2026-08-18T03:06:33-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-18T03:06:33-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-08-18T03:06:33-07:00 session-limit reset at 7am is 14067s away (>3600s cap); sleeping 180s ===
+=== 2026-08-18T03:09:33-07:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 7am (America/Los_Angeles)
+=== 2026-08-18T03:09:39-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-08-18T03:09:39-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-08-18T03:09:39-07:00 session-limit reset at 7am is 13881s away (>3600s cap); sleeping 180s ===
+=== 2026-08-18T03:12:39-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-5) ===
+You've hit your session limit · resets 7am (America/Los_Angeles)
+=== 2026-08-18T03:12:44-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-08-18T03:12:44-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-08-18T03:12:44-07:00 session-limit reset at 7am is 13696s away (>3600s cap); sleeping 180s ===
+=== 2026-08-18T03:15:44-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-5) ===
+You've hit your session limit · resets 7am (America/Los_Angeles)
+=== 2026-08-18T03:15:49-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-08-18T03:15:49-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-08-18T03:15:49-07:00 session-limit reset at 7am is 13511s away (>3600s cap); sleeping 180s ===
+=== 2026-08-18T03:18:49-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7am (America/Los_Angeles)
+=== 2026-08-18T03:18:54-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-08-18T03:18:54-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-08-18T03:18:54-07:00 session-limit reset at 7am is 13326s away (>3600s cap); sleeping 180s ===
+=== 2026-08-18T03:21:54-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7am (America/Los_Angeles)
+=== 2026-08-18T03:21:59-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-08-18T03:21:59-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
