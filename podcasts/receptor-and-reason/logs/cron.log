@@ -3488,3 +3488,39 @@ You've hit your session limit · resets 7am (America/Los_Angeles)
 You've hit your session limit · resets 7am (America/Los_Angeles)
 === 2026-08-18T03:21:59-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-08-18T03:21:59-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-08-18T07:05:00-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I skipped TTS, R2 publish, feed edit, and the commit — the orchestrator handles those from the stubs.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-08-18-receptor-and-reason.md` — 3,285 spoken words, ≈18 min at the show's observed 3.0 words/sec
+- `podcasts/receptor-and-reason/scripts/2026-08-18-receptor-and-reason.rss-item.xml` — validated XML, `__LENGTH__` / `__DURATION__` placeholders intact
+- `podcasts/receptor-and-reason/scripts/2026-08-18-receptor-and-reason.commit-msg`
+- `podcasts/receptor-and-reason/state/shipped.jsonl` — appended 11 keys (88 lines total)
+
+**Candidate funnel**
+
+Sources scanned (recency window 2026-08-11 → 2026-08-18):
+- **bioRxiv details API** — 1,427 preprints, pulled day-by-day with full pagination (first pass silently truncated at 30/day; re-run corrected). 471 keyword hits → 60 after restricting to neuro/pharm/bioinformatics categories with a pharmacology-strength filter and removing already-shipped keys.
+- **arXiv** — shared daily cache (500 entries), 188 in-window bio + agentic hits.
+- **Nature NPP / Molecular Psychiatry** — listing pages via r.jina.ai; 7 in-window items, 5 already shipped.
+- **Biological Psychiatry + CNNI** — in-press page; 8 in-window, 4 already shipped.
+- **Elsevier / Wiley / Oxford (Neuropharmacology, PNPBP, IJNP, J Psychopharmacol, Br J Pharmacol, Mol Pharmacol)** — via PubMed, 40 in-window records.
+- **Psychiatric Times** — r.jina.ai returned an upstream reset; WebFetch retry succeeded. 4 new in-window items, none beat the shortlist.
+- **IJNP advance-articles page** — r.jina.ai returned 481 bytes (empty); covered instead through PubMed. Logged as a partial source gap, no recall loss.
+
+Shortlist and disposition (★ = shipped today):
+- ★ JAK inhibition overcomes first-line drug resistance in epilepsy — biorxiv 10.64898/2026.08.06.743311 (**LEAD**, full text)
+- ★ LXR remodeling of oligodendrocyte lipid metabolism overcomes inflammatory remyelination block — 10.64898/2026.08.07.743529 (full text)
+- ★ Radiprodil GluN2B subunit-dependent inhibition — 10.1111/bph.70630
+- ★ Glutamatergic antipsychotics / synaptic vs extrasynaptic NMDA — 10.1111/bph.70646
+- ★ AUT00206 Kv3.1/3.2 modulator in sub-chronic PCP — 10.1177/02698811261473459
+- ★ SETD1A thalamo-prefrontal synchrony — 10.1038/s41386-026-02532-w (full text)
+- ★ Persisting perceptual abnormalities in psychedelic users — 10.64898/2026.08.10.743999 (abstract only, not yet rendered)
+- ★ Selective SV2C ligands by AI-enhanced virtual screening — 10.64898/2026.08.11.744237 (abstract only, not yet rendered)
+- ★ PertMind — arxiv:2608.16419 (PDF read in full via mutool)
+- ★ Nociceptor-restricted CB1 in chronic vs acute analgesia — 10.64898/2026.08.12.744456 (abstract only, not yet rendered)
+- ★ Methadone / 5F-ADB hERG interaction — 10.1111/bph.70635
+- Not picked: epigenomic priming of microglia (s41386-026-02528-6, Nature paywall, no preprint — permanently unobtainable); rTMS neurochemistry in AUD (s41380-026-03815-w, full text read, cut for space); cannabis and psychosis-onset meta-analysis (S0006-3223(26)01385-5); normative sgACC-DLPFC rTMS targeting in MDD; photocaged adenosine A1 agonist in epileptic slices (10.1016/j.neuropharm.2026.111152); teneurin-4 knockdown and oligodendrocyte differentiation; ECT multimodal neuroimaging (pnpbp.2026.111890); LRRK2 in enteric glia (bph.70623); psilocybin-assisted psychotherapy for SUD systematic review; CTx-1301, Ingrezza and xanomeline/trospium items from Psychiatric Times.
+
+**Deferred, worth re-checking once bioRxiv renders the body:** the SV2C ligand-discovery, nociceptor-CB1, psychedelic-PPA, and LLM gene-perturbation-atlas preprints — all fell through to the abstract-only channel today (not-yet-rendered, not paywalled). `fetch_preprint.py`'s jina channel failed on every candidate; full text came from curling r.jina.ai directly against the `.full` pages, and the PDF fallback 429s through the proxy.
+=== 2026-08-18T07:22:09-07:00 done  receptor-and-reason (exit 0) ===
