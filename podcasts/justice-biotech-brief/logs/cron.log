@@ -2382,3 +2382,32 @@ Policy/funder pages (ARPA-H, NIH, NSF): no on-target items in window.
 
 Notes for future runs: the bioRxiv details API page size is **30**, not 100 — a `len(coll) < 100` break condition silently truncates 309 papers to 30. Also, yesterday's run (2026-08-17) shipped nothing — it failed through the full model ladder on a bioRxiv outage plus a Haiku retry that stopped to ask permission questions rather than searching.
 === 2026-08-18T02:48:38-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-19T02:40:09-07:00 start justice-biotech-brief ===
+Published (SKIP_TTS batch mode — script + both stubs written; TTS, R2, feed insert, and commit are the orchestrator's steps).
+
+**Episode:** `2026-08-19-regn7041-anti-cd3-antibody-uveitis-titan-terminated-one-patient`
+**Title:** REGN7041 — first-in-human anti-CD3 antibody for uveitis terminated after a single patient, cause unidentified
+Files: `.md` (1,000-word spoken body), `.rss-item.xml` (with `__LENGTH__`/`__DURATION__`, XML-validated), `.commit-msg`
+
+The pick's load-bearing fact came from the registry, not the press coverage: TITAN's **actual enrollment is 1**. Regeneron's only REGN7041 trial opened 2025-12-17, closed 2026-07-21, flipped to TERMINATED on 08-17 with `whyStopped: "Unfavorable benefit-risk assessment"` — one patient dosed, and that was the whole clinical program. Route of administration is *not* disclosed (`"Administered as per the protocol"`), so the script explicitly declines to assert intravitreal delivery and instead reasons from what the protocol measured (serum **and** intraocular-fluid PK, ADA magnitude, all five sites retina practices).
+
+## Candidate funnel
+
+**bioRxiv** (details API, day-by-day per known pagination bug) — 556 scanned across 08-17/18/19 (309 / 230 / 17); 31 keyword hits; ~4 substantive after discarding noise (most "hits" were `STAT3` matching the JAK/STAT keyword, or `ADC`/`TCE` inside unrelated words):
+- L1CAMxCD3 bispecific in PDAC models — `10.64898/2026.08.10.743835v2` — **excluded, already shipped 2026-08-12** (v2 re-post; caught by feed grep)
+- The microbiome determines the phenotype in CTLA-4 insufficient mice and men — `10.64898/2026.08.14.742114`
+- KDM5D restrains CD8+ T cell antitumor immunity via TCR and cholesterol-exhaustion programs — `10.64898/2026.07.23.740424`
+- Multimodal cell communication networks nominate immunotherapies for RCC subgroups — `10.64898/2026.08.17.744644`
+
+**News / press** (Endpoints index via jina, BioPharma Dive, BioSpace; both WebSearch sweeps) — in-window (08-18/19) shortlist:
+- **REGN7041 anti-CD3 mAb, TITAN terminated, non-infectious posterior uveitis** — ClinicalTrials.gov NCT07218770 + BioSpace 08-18 — **← CHOSEN** (full text read: BioSpace body via jina + full CTG v2 API record)
+- Third death in China's opaque trials, this time in vivo CAR-T (RiboX RXIM002, autoimmune) — endpoints.news — **strongest-relevance item, DEFERRED: permanently unobtainable full text.** Endpoints paywall cuts after one sentence; no other outlet has covered it. Would have been the pick otherwise (direct sequel to the 07-31 in-vivo CAR-T episode). Revisit only if a readable outlet picks it up.
+- CSL calls Tavneos withdrawal in Europe a "significant headwind" — endpoints.news — commercial/regulatory, small molecule, weaker take
+- Sandoz–Henlius $322M deal for up to 10 biosimilars — biospace.com — oncology biosimilars, deal-only
+- LEO/Tanabe dersimelagon $435M — already covered by calibr-briefing 08-18
+- Off-target, dropped: Amylyx avexitide, Takeda orexin, Novo oral obesity, Teva IRA appeal, Heidi Overton FDA pick, BioMarin bone deal, EMD Serono layoffs, CDMO growth, Hong Kong biotech
+
+**Policy / funders** — ARPA-H: 2 items in window, both off-target (small-business ecosystem impact story 08-18; HHS STREAM weed management 08-17). NIH press releases: **WebFetch HTTP 403, no retry path found, skipped.** NSF: not reached (deprioritized after NIH block; no on-target signal expected).
+
+**Source failures:** Fierce Biotech unreadable on both channels — WebFetch 403 on homepage and on the article URL; `r.jina.ai` returned `AbuseAlleviationError` (domain-wide block until 10:07 UTC today). Used it as a headline lead via WebSearch only. nih.gov news-releases 403 on WebFetch. Neither gap changed the outcome — Fierce's own version of the REGN7041 story is the same reporting, and the primary registry record carried the harder facts.
+=== 2026-08-19T02:48:34-07:00 done  justice-biotech-brief (exit 0) ===

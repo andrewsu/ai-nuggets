@@ -1,0 +1,6 @@
+Script body: 6149 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 attempt 1 FAILED: chunk duration 111.2s < floor 113.0s (likely truncated)
+  [mistral:en_paul_neutral] chunk 1/3 (2826 chars) -> 148.7s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2922 chars) -> 130.3s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (399 chars) -> 19.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-08-19-regn7041-anti-cd3-antibody-uveitis-titan-terminated-one-patient.mp3 [mistral] 2,660,981 bytes, 332.6s
