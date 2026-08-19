@@ -3273,3 +3273,41 @@ Shortlist (after discarding stale/off-target):
 
 Spotlight choice: argenx over ivonescimab. Ivonescimab was already the Aug 16 headline item and figured in the Aug 16 WuXi spotlight (51 prior mentions in the feed), so it got a full headline slot with the new Leerink detail instead. The argenx result is unshipped, has real mechanistic content (FcRn/IgG causality in myositis), and is squarely on-target for Calibr's autoimmune work.
 === 2026-08-18T02:32:49-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-19T02:20:09-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scripts + transient stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator handles all four after batch TTS).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-08-19-pharma-headlines.txt` (1,203 words, ~6½ min) + `.rss-item.xml` + `.commit-msg`
+- `2026-08-19-amylyx-avexitide-pbh-spotlight.txt` (1,462 words, ~8 min) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs validate as XML with the `itunes:` namespace bound; spoken text contains no URLs, DOIs, decimals, `p=` notation, or raw alphanumeric drug codes.
+
+**Candidate funnel**
+
+Sources scanned:
+- **BioPharma Dive homepage** (WebFetch) — worked, but only surfaced items through Aug 14; no Aug 17–19 dates exposed. Low yield this run.
+- **Endpoints News** — `WebFetch` 403; `r.jina.ai/endpoints.news/news/` worked and was the highest-value index (newest-first list + per-article timestamps). Bodies paywalled.
+- **Fierce Biotech / Fierce Pharma** — `WebFetch` 403 **and** `r.jina.ai` returned `AbuseAlleviationError` (domain-level block until 10:07 GMT). Headlines recovered indirectly via WebSearch + a Lambda Biologics aggregator.
+- **BioSpace** — homepage + articles worked via WebFetch; best dated Aug 18–19 index.
+- **STAT News** — not directly readable; used only as a corroborating search hit (Overton).
+- **Primary sources** — amylyx.com, chugai-pharm.co.jp, PR Newswire, Business Wire, ClinicalTrials.gov, PMC, MBX investor site: all readable.
+- **Foresite Capital news page** — worked, but nothing newer than Aug 2025. No portfolio-specific item today.
+- **AI-in-drug-discovery sweep** (Xaira / Iambic / Isomorphic / Recursion) — no Aug 18–19 news; only Evaxion's AI-designed vaccine pivot qualified.
+
+Substantive shortlist (spurious matches discarded):
+- ✅ **CHOSEN — spotlight + headline #1** — Amylyx avexitide Phase 3 LUCIDITY win in post-bariatric hypoglycemia — https://www.amylyx.com/news/amylyx-pharmaceuticals-announces-positive-topline-results-from-phase-3-lucidity-clinical-trial-of-avexitide-in-post-bariatric-hypoglycemia (full press release read; plus BioPharma Dive, BioSpace, Phase 2b PMC data, MBX competitor filings)
+- ✅ **CHOSEN #2** — Trump to nominate Heidi Overton as FDA commissioner (Aug 18, 9:24 PM EDT — freshest item) — https://endpoints.news/trump-to-pick-heidi-overton-to-lead-the-fda/
+- ✅ **CHOSEN #3** — BioMarin to acquire Alesta for $275M upfront / up to $490M (ALE1, oral hypophosphatasia) — https://www.prnewswire.com/news-releases/biomarin-to-acquire-alesta-therapeutics-to-gain-ale1-a-potential-first-oral-therapy-for-hypophosphatasia-adding-an-important-clinical-program-to-biomarins-pipeline-302854068.html
+- ✅ **CHOSEN #4** — Third death in China's investigator-initiated trials, RiboX's circular-RNA in vivo CAR-T — https://endpoints.news/exclusive-third-death-revealed-in-chinas-popular-but-opaque-trials/
+- ✅ **CHOSEN #5** — Regeneron ends anti-CD3 uveitis study on unexplained safety event — https://www.biospace.com/drug-development/regeneron-ends-eye-disease-study-due-to-antibodys-safety-profile
+- ✅ **CHOSEN #6** — Appeals court revives part of Teva's IRA case; 38% Austedo cut Jan 2027 — https://endpoints.news/federal-appeals-court-revives-part-of-tevas-ira-case-as-austedo-price-cuts-loom/
+- ✅ **CHOSEN #7 (quick hits)** — Sandoz–Henlius $322M biosimilars; Chugai→GSK AID351 dengue antibody; Evaxion EVX-05 AI-designed glioblastoma vaccine with Duke; Q2 oral-obesity scorecard (oral Wegovy ~$496M vs Foundayo $98M)
+- ❌ CSL calls Tavneos European withdrawal a "significant headwind" — follow-on to the Aug 16 episode's item, no new substance
+- ❌ FDA approves Tauklarify (tau PET tracer) — diagnostic, dated Aug 18 but thin for this audience
+- ❌ Takeda/orexin narcolepsy wave; Hong Kong biotech bridge; CDMO growth forecast — trend features, not events
+- ❌ EMD Serono cuts 20 in Massachusetts — below the bar
+- ❌ "Trump takes credit for lower list prices"; "Epic is under pressure" — policy/health-tech commentary, off-focus
+- ❌ Skye/Redx → Fibrx ($125M) — already shipped in the Aug 17 episode
+
+No source failure blocked selection; Fierce's jina block cost only redundant coverage of items reached elsewhere.
+=== 2026-08-19T02:36:26-07:00 done  calibr-briefing (exit 0) ===

@@ -1,0 +1,6 @@
+Script body: 9477 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2938 chars) -> 169.3s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2854 chars) -> 135.8s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2995 chars) -> 124.0s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (687 chars) -> 39.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-08-19-amylyx-avexitide-pbh-spotlight.mp3 [mistral] 3,873,062 bytes, 484.1s
