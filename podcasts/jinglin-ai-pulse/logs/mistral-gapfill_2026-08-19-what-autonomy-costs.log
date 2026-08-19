@@ -1,0 +1,8 @@
+Script body: 16646 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/6 (2942 chars) -> 142.0s ✓
+  [mistral:en_paul_neutral] chunk 2/6 (2828 chars) -> 144.9s ✓
+  [mistral:en_paul_neutral] chunk 3/6 (2970 chars) -> 141.6s ✓
+  [mistral:en_paul_neutral] chunk 4/6 (2936 chars) -> 141.2s ✓
+  [mistral:en_paul_neutral] chunk 5/6 (2743 chars) -> 125.2s ✓
+  [mistral:en_paul_neutral] chunk 6/6 (2220 chars) -> 93.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-08-19-what-autonomy-costs.mp3 [mistral] 6,732,530 bytes, 841.5s

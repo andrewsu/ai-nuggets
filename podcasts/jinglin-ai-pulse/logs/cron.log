@@ -1860,3 +1860,39 @@ Podcasts (last 14 days) — 4 shows checked:
 
 No source outages this run.
 === 2026-08-18T02:45:58-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-19T02:30:09-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did not run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Published artifacts**
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-19-what-autonomy-costs.md` — 2,671 spoken words, ≈12.7 min at the show's 1.2× rate
+- `…​.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders), `…​.commit-msg`
+
+**Episode:** "What Autonomy Costs." Throughline — two frontier labs published within a day of each other on the *same* capability (a model given GPUs, tools, and 24–48h of unsupervised runtime) and framed it in opposite directions. Anthropic shipped it as a scientific instrument; OpenAI quarantined it. Both now pay for it in compute.
+
+- **Twitter Pulse:** (1) Anthropic's protein-design report — 354 confirmed binders against 14 of 15 targets, 22–35% hit rates vs. a 10–15% baseline, externally tested by Adaptyv Bio and Twist. The read: Claude has no protein model inside it; the gain is orchestration of the field's existing tools. Honest caveats kept — MBP defeated all 90 designs, and Opus 4.8 beat the more capable Mythos preview on TNF-α. Shkreli's pushback quoted verbatim, with the observation that it lands on the modality, not the automation. (2) OpenAI's pacing post — two-week RL pause, largest frontier run still on hold, and the ~20% monitoring overhead; I explicitly corrected the widespread headline error (Astra *may* meet the Critical threshold; OpenAI did not conclude it does). (3) Cerebras CS-4, compressed to a beat.
+- **Money Moves:** Unitree's +629% Shanghai debut (~$66B) and Temporal at $12B+.
+- **Deep Cut:** Latent Space, Aug 11 — Chai Discovery's McPartlon & Patil on the BioAI phase shift, with two verbatim quotes and the full argument chain (tools→pipeline economics → the JPM break → structural models became binding models → "binding models unlock design" → one-shotting molecules). It's the tool layer explaining itself one week before the orchestration layer got its headline.
+
+**Candidate funnel**
+
+- *AI news aggregators (aiweekly.co, llm-stats, general web)* — ~30 items scanned across Aug 18–19, 9 survived relevance filter.
+- *Twitter/X discourse* — X search returns are thin from this IP (no usable `from:` results); used aggregator + primary-source convergence instead, per the PROMPT's fallback. Recorded as a partial-source gap, not a failure.
+- *Podcasts* — Latent Space, No Priors (RSS), Cognitive Revolution scanned; Dwarkesh has nothing since Jun 30.
+
+Shortlist (✓ = used):
+- ✓ Anthropic, "How Claude is accelerating protein design and analytical chemistry" — anthropic.com/research/Claude-accelerates-protein-design *(read in full)*
+- ✓ Shkreli critique — finance.yahoo.com/healthcare/articles/pharma-bro-martin-shkreli-slams-052159178.html
+- ✓ OpenAI, "Pacing model development in an era of cyber-critical capabilities" *(read in full via r.jina.ai; direct fetch 403s)*
+- ✓ OpenAI/Hugging Face incident post *(read in full, background)*
+- ✓ Cerebras CS-4 / Nexus — theregister.com (Aug 19)
+- ✓ Unitree STAR Market debut — scmp.com
+- ✓ Temporal ~$500M at $12B+ — Bloomberg via TradingView
+- ✓ Latent Space, "The BioAI Phase Shift" (Aug 11) — latent.space/p/chai-discovery
+- ✗ Andon Labs' Luna firing a human employee — TIME exclusive dated Aug 14, outside the 48h discourse window
+- ✗ OpenAI teen ChatGPT, Alipay agentic commerce, Rillet $100M — product/vertical news, no intellectual substance
+- ✗ HarnessEval-W (#1 HF trending) — world-model eval; the world-models thread ran Aug 16, and today's frame was stronger
+- ✗ No Priors Biohub episode (Zuckerberg/Chan/Rives) — ideal audience fit but published Jun 10, well outside the 14-day podcast window
+- ✗ Stripe/OpenRouter close, Copilot/Snowflake chain — both already shipped (Aug 17, Aug 18)
+
+Two link notes: the Register URL needed its trailing article ID to resolve, now fixed; the two `openai.com` links return 403 to automated fetchers but are live pages (read via the reader proxy).
+=== 2026-08-19T02:41:44-07:00 done  jinglin-ai-pulse (exit 0) ===
