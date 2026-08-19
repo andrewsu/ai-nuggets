@@ -1710,3 +1710,57 @@ Shortlist, with what was picked:
 
 **Source failures and traps, logged:** Fierce Biotech, Endpoints, STAT, Businesswire, AstraZeneca.com, JHTV and FDA newsroom all 403 (including via `r.jina.ai`); `ir.ultragenyx.com` and `ir.revmed.com` time out at 60s; regulations.gov HTML 403s but the v4 API works and is the right way to audit an RFI docket. Two date traps caught and *not* aired as fresh: CGTLive re-datelines old news with current bylines (J&J/Sail, actually Jul 29), and bioxconomy re-datelined the Jul 7 Krazati KRYSTAL-10 miss to Aug 17.
 === 2026-08-18T02:31:16-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-19T02:10:09-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-08-19-portfolio-watch.md` (1,911 words, ~9.5 min)
+- `.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders present)
+- `.commit-msg` (one line, `Episode: Blackbird 2026-08-19: …`)
+- `memory/blackbird-portfolio.md` updated — new header block plus five new bullets in the Aletira section and a Fibrx entry in the GCPII/IBD section
+
+**Episode: Portfolio Watch (Wednesday → daily type only)**
+
+The lead is original work rather than a headline: yesterday's episode issued an action item ("pull the SONIX protocol + Skylark patent estate"), and I closed it.
+
+- **The control element is not splicing — and not a promoter either.** Skylark's only published application worldwide (WO2025179016A1, priority 2024-02-20, published 2025-08-28) claims an **engineered 3′ UTR** built from pieces of the target gene's own native 3′ UTR. The promoters recited are ordinary ubiquitous ones, so restriction happens post-transcriptionally, at the other end of the same molecule. SELEXON's layer is untaken, but the nearest IP neighbour is closer than the promoter case would have been → upgrades the ask to a real FTO opinion. Wrinkle: that filing covers the **pendrin** program, not GJB2 — set a docket watch.
+- **The protocol is smaller/softer than the press release:** n=10, study start 2026-05-28 (dosing announced ~10 weeks later), **safety-only primary**, ABR secondary. Year-end "preliminary data" is safety plus a handful of thresholds from ten children.
+- **New competitive axis: they own a delivery device** (SKY-CAT) with its own endpoint — a combination product, and a moat orthogonal to expression control that Aletira has no answer to.
+- **Investor gap filled:** Arkin, at "note to Series A" — lean, not a juggernaut; their safety pitch leans on micro-dosing.
+
+Second item: **Fibrx Therapeutics** (Aug 14, never aired) — $125M, GI-restricted oral pan-ROCK inhibitor for fibrostenotic Crohn's, Phase 1 showing gut tissue exposure without systemic breakthrough. Validates the gut-restriction architecture for Slusher's GCPII program while claiming the **fibrosis** axis, leaving **pain** as the last open axis.
+
+Third: the NEJM/CHOP Elevidys cardiotoxicity letter — vector arrived at high copy number, protein didn't (<1% of normal dystrophin), 5′-biased transcripts read as incomplete cassette packaging. Sharpens the expression argument but raises a cassette-length/packaging-integrity diligence question, since SELEXON adds sequence.
+
+**Candidate funnel**
+
+| Source | Scanned | Survived relevance filter |
+|---|---|---|
+| ClinicalTrials.gov v2 (MCP) | 1 targeted (NCT07627971) | 1 — **CHOSEN, lead** |
+| Google Patents XHR (assignee: Skylark Bio) | 1 published app worldwide | 1 — **CHOSEN, lead** |
+| BioSpace `/news` index (Aug 17–19) | 16 dated headlines | 0 on-portfolio |
+| Endpoints/Lambda Aug-19 roundup | 5 items | 1 — **CHOSEN** (Fibrx) |
+| Web/press sweep, gene-therapy safety | ~10 | 1 — **CHOSEN** (NEJM/CHOP) |
+| regulations.gov v4 API (HHSIG-2026-0034) | 8 comments | 1 — **CHOSEN** (no-movement update) |
+| BioBuzz (Baltimore/MD) | 8 items Aug 13–18 | 0 on-portfolio |
+| UM Ventures news | newest 2026-07-28 | 0 (nothing in window) |
+| Lieber Institute newsroom / GPR52 | — | 0 |
+| Fierce Biotech homepage | — | **FAILED: HTTP 403** (Fierce Pharma article pages fetch; homepage does not) — routed around via BioSpace + search |
+| GEN drug-discovery topic page | — | **FAILED: serves 2006-era content to fetchers** — dropped |
+| NEJM article page | — | **FAILED: Cloudflare/CAPTCHA** on both WebFetch and r.jina.ai — read via NeurologyLive through r.jina.ai |
+| federalregister.gov HTML | — | **FAILED: 403/bot-gate** — deadline taken from law-firm alerts + regulations.gov API |
+
+Shortlist after discarding off-thesis matches:
+- **SONIX protocol, NCT07627971** — clinicaltrials.gov/study/NCT07627971 — **CHOSEN (lead)**
+- **WO2025179016A1, Skylark Bio 3′ UTR** — patents.google.com/patent/WO2025179016A1/en — **CHOSEN (lead)**
+- **Skye/Redx → Fibrx, $125M, RXC008** — ir.skyebioscience.com/news-releases/detail/261/… — **CHOSEN**
+- **NEJM 2026;395(6):615-617, Samelson-Jones et al.** — doi.org/10.1056/NEJMc2518477 — **CHOSEN**
+- **HHS OIG docket HHSIG-2026-0034** — regulations.gov API — **CHOSEN**
+- Sensorion SENS-601 CTAs Canada/France — rejected, dated 2026-06-09, not new
+- Neurocrine NBI-1117568 M4 Phase 2 — rejected, Aug 2024 data, Phase 3 began Apr 2025
+- China gene-editing deaths (Fierce follow-up) — rejected, aired 08-07/08-08
+- AbelZeta CAR-T return, TEDCO hire, Nuquantic/JHU-APL eDNA — rejected, Maryland ecosystem but no program line
+- Regeneron eye-study stop, EyePoint Ph3 fail, Sandoz-Henlius, LEO-Tanabe, Amylyx, orexin/narcolepsy — rejected, off-thesis
+
+One caveat worth flagging: the two lead findings come from primary records I pulled myself rather than from an in-window news event, and the third item's underlying NEJM letter published in late July (only the molecular analysis was worked through on Aug 18). The script states both dates plainly rather than implying fresh catalysts.
+=== 2026-08-19T02:35:55-07:00 done  blackbird-brief (exit 0) ===
