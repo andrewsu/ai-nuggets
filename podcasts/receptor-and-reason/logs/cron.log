@@ -3524,3 +3524,60 @@ Shortlist and disposition (★ = shipped today):
 
 **Deferred, worth re-checking once bioRxiv renders the body:** the SV2C ligand-discovery, nociceptor-CB1, psychedelic-PPA, and LLM gene-perturbation-atlas preprints — all fell through to the abstract-only channel today (not-yet-rendered, not paywalled). `fetch_preprint.py`'s jina channel failed on every candidate; full text came from curling r.jina.ai directly against the `.full` pages, and the PDF fallback 429s through the proxy.
 === 2026-08-18T07:22:09-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-19T02:50:09-07:00 start receptor-and-reason ===
+Episode written and staged. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, the `feed.xml` edit, and the commit — the orchestrator handles those after batch TTS.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-08-19-receptor-and-reason.md` (3,373 spoken words ≈ 18 min, 11 items)
+- `podcasts/receptor-and-reason/scripts/2026-08-19-receptor-and-reason.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders; XML validated)
+- `podcasts/receptor-and-reason/scripts/2026-08-19-receptor-and-reason.commit-msg`
+- Appended one record (11 keys) to `state/shipped.jsonl` — now 89 lines, all parseable.
+
+All 7 bioRxiv paper links verified against the details API (prefix `10.64898`, all v1); arXiv abs page returns 200.
+
+---
+
+## Candidate funnel — 2026-08-19
+
+**Sources scanned**
+
+| Source | Scanned | Survived filter |
+|---|---|---|
+| bioRxiv details API, posting dates 08-13→08-19, fully paginated day-by-day | 1,106 unique preprints | 114 (neuro/pharm/bioinformatics/systems categories × pharmacology terms) |
+| arXiv shared daily cache `/tmp/ai-nuggets-arxiv-cache.xml` (08-15→08-18) | 500 entries | 170 keyword-matched → 8 substantive after discarding spurious "agent"/"LLM" hits |
+| PubMed entry-date 08-13→08-20, Tier-1 CNS journals (Neuropharmacology, PNPBP, IJNP, J Psychopharmacol, BJP, Biol Psychiatry, BP:CNNI, NPP) | 40 | 12 |
+| Nature NPP + Molecular Psychiatry TOCs (via `r.jina.ai`) | 40 | 13 in 7-day window |
+| PubMed, Tier-2/3 journals (CPT:PSP, CPT, Drug Discov Today, Nat Biotech, npj Digit Med, Brief Bioinform, Cell Syst) | 42 | 0 on-target |
+| Psychiatric Times front page | 6 recent | 0 clearing the bar |
+| ACNP / SOBP / ECNP press | — | no new announcements |
+
+**Source-level failures**
+- `nature.com` direct WebFetch → 303 to `idp.nature.com` (auth wall). Recovered via `r.jina.ai` proxy; no recall lost.
+- ScienceDirect articles-in-press → HTTP 403. Covered instead through PubMed entry-date queries.
+- bioRxiv `.full` HTML route returned abstract-only (not-yet-rendered) for 5 of 7 picks; all recovered via `r.jina.ai` on `.full.pdf`.
+- WebFetch's own summary of arXiv 2608.16951 was materially wrong (misread Delta V as a baseline); re-extracted with `mutool draw -F txt` and wrote from that.
+
+**Shortlist** (✓ = shipped today)
+
+- ✓ Semaglutide-induced satiation, nausea and food reward suppression mediated by area postrema GLP-1R — biorxiv.org/content/10.64898/2026.08.10.744052v1 — **LEAD**
+- ✓ Dopaminergic modulation of social reward anticipation in depression: amisulpride vs placebo — nature.com/articles/s41386-026-02521-z
+- ✓ Effects of dopamine and serotonin on persistence for delayed rewards in humans — biorxiv.org/content/10.64898/2026.08.11.744183v1
+- ✓ LSD enhances inter-brain synchrony and felt connectedness in romantic couples — biorxiv.org/content/10.64898/2026.08.13.744639v1
+- ✓ BHLHE41 modulation of excitability/plasticity conveys lithium non-responsiveness — nature.com/articles/s41380-026-03822-x
+- ✓ Interneuron NMDAR hypofunction → input-specific E/I imbalance in mPFC — biorxiv.org/content/10.64898/2026.08.12.744479v1
+- ✓ Monovalent TfR1 VHH-Fc delivery of siRNA/ASO across the BBB (Ionis) — biorxiv.org/content/10.64898/2026.08.13.744307v1
+- ✓ Benchmarking docking protocols for GPCR allosteric modulators — biorxiv.org/content/10.64898/2026.08.12.744492v1
+- ✓ MERIT: mechanism-driven trial-outcome prediction + repositioning — biorxiv.org/content/10.64898/2026.08.09.743088v1
+- ✓ The Little Scientist: LLM agent-driven discovery via the scientific method — arxiv.org/abs/2608.16951
+- ✓ Cannabis use and age-related acceleration of psychosis onset (meta-analysis) — doi.org/10.1016/j.biopsych.2026.06.025
+- Targeted optical uncaging of an adenosine A1 agonist in epileptic hippocampal slices — **dropped**: DOI 10.1016/j.neuropharm.2026.111152 not yet registered (404), PubMed abstract truncated before results → full text unobtainable today, revisit
+- Cross-species mapping of nucleus accumbens DBS — nature.com/articles/s41380-026-03828-5 — cut, no pharmacology
+- rTMS for alcohol use disorder, MRS crossover RCT — nature.com/articles/s41380-026-03815-w — cut for the amisulpride item (better drug hypothesis)
+- Normative modeling of sgACC-DLPFC connectivity for personalized rTMS in MDD — doi 10.1016/j.biopsych.2026.07.025 — cut, device not drug, two rTMS items already competing
+- CYP450 genetic/epigenetic determinants in psychopharmacology (review) — doi 10.1016/j.pnpbp.2026.111893 — cut, review with no new data
+- Psilocybin-assisted psychotherapy for SUD as a complex intervention (systematic review) — doi 10.1177/02698811261473436 — cut, LSD item covers psychedelics
+- GLP-1R/semaglutide-adjacent: LRRK2 in enteric glia and PD gut barrier — doi 10.1111/bph.70623 — cut for space
+- Evidence-constrained mechanistic synthesis for drug discovery — biorxiv 10.64898/2026.08.17.745376 — cut, urticaria case study, no CNS relevance
+- An interoperable research agent network for scientific discovery — biorxiv 10.64898/2026.08.13.744542 — deferred again; still competing with the sibling show's coverage of the same corpus
+- A Persistent Fleet of AI Scientists — biorxiv 10.64898/2026.08.16.745122 — skipped, shipped by biomedical-agentic-ai today
+=== 2026-08-19T03:06:23-07:00 done  receptor-and-reason (exit 0) ===
