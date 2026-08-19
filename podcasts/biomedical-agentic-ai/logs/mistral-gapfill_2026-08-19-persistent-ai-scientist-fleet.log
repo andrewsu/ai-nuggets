@@ -1,0 +1,4 @@
+Script body: 5668 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2985 chars) -> 135.9s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2682 chars) -> 127.0s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-08-19-persistent-ai-scientist-fleet.mp3 [mistral] 2,304,879 bytes, 288.1s
