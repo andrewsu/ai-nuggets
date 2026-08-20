@@ -3581,3 +3581,37 @@ All 7 bioRxiv paper links verified against the details API (prefix `10.64898`, a
 - An interoperable research agent network for scientific discovery — biorxiv 10.64898/2026.08.13.744542 — deferred again; still competing with the sibling show's coverage of the same corpus
 - A Persistent Fleet of AI Scientists — biorxiv 10.64898/2026.08.16.745122 — skipped, shipped by biomedical-agentic-ai today
 === 2026-08-19T03:06:23-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-20T02:50:11-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so I stopped at the script + stub files as `PIPELINE.md` specifies — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Shipped:** `podcasts/receptor-and-reason/scripts/2026-08-20-receptor-and-reason.md` — 10 items, 3,115 spoken words (~17.4 min at the show's measured 179 wpm), plus `.rss-item.xml` (validated XML, `__LENGTH__`/`__DURATION__` placeholders) and `.commit-msg`. Ledger appended: 1 line, 10 keys, all DOI-form.
+
+## Candidate funnel
+
+**bioRxiv details API** (Tier 1 + Tier 2, 2026-08-14 → 08-20, day-by-day with cursor pagination): 1,128 records fetched, 1,092 unique DOIs. 176 survived the CNS-pharmacology / agentic-AI relevance filter; 14 were already in the dedup ledger, leaving 162 fresh.
+
+**arXiv** (Tier 2): shared cache `/tmp/ai-nuggets-arxiv-cache.xml` present but holds only 500 entries spanning 08-17 → 08-19 — no live call made. 178 matched agentic+bio keywords; nearly all were LLM-infrastructure papers with no biomedical substance. Best on-target: Eureka (meta-agent orchestration for scientific discovery), "Science Done on a Machine by a Machine" (AI agents in computational chemistry), PertMind (RL on cellular perturbation data). All lost to the two bioRxiv Tier 2 picks.
+
+**Journals:** *Neuropsychopharmacology* and *Molecular Psychiatry* TOCs are auth-walled to `WebFetch` (303 → `idp.nature.com`); recovered via `r.jina.ai`. 8 fresh NPP items (3 already shipped), 11 fresh Mol Psych items (4 already shipped). *Biological Psychiatry* in-press page — HTTP 403, no retry path, **skipped**. IJNP advance-articles via jina returned 481 bytes (empty), **skipped**. Paywalled abstracts recovered from PubMed (`10.1038/s41380-026-03828-5`, `10.1038/s41380-026-03827-6`).
+
+**Psychiatric Times:** 7 recent items, all already in the ledger — including the DT120 (lysergide) Phase 3 Voyage GAD readout, shipped 08-13. No fresh item.
+
+Shortlist and disposition:
+
+- **CHOSEN** Brain-wide reconfiguration of burst firing by psilocybin, 5-HT2A-dependent — biorxiv 10.64898/2026.08.14.744865 (LEAD, full text)
+- **CHOSEN** rTMS for alcohol use disorder, sham-controlled crossover proton MRS — 10.1038/s41380-026-03815-w (full text, OA)
+- **CHOSEN** Astrocyte STAT3, glutamate homeostasis, binge ethanol — 10.64898/2026.08.11.744063 (abstract, self-contained)
+- **CHOSEN** vlPAG glucocorticoid–endocannabinoid crosstalk, CB1 desensitization — 10.1038/s41386-026-02529-5 (full text, OA)
+- **CHOSEN** Bile acid / CDCA rescue of early-caregiving social deficit — 10.64898/2026.08.14.742173 (full text via direct PDF + mutool)
+- **CHOSEN** Anoctamin 2 deletion, dopamine signaling, inhibitory control — 10.1038/s41386-026-02525-9 (abstract, paywalled)
+- **CHOSEN** Working memory limits and D1 modulation in macaque probabilistic reasoning — 10.64898/2026.08.12.744547 (full text)
+- **CHOSEN** Learning protein function through autonomous experimental interaction — 10.64898/2026.08.14.744985 (full text)
+- **CHOSEN** A Persistent Fleet of AI Scientists — 10.64898/2026.08.16.745122 (full text)
+- **CHOSEN** MoSeq syllables vs. scalar locomotion features, reanalysis — 10.64898/2026.08.12.744023 (CLOSE, abstract)
+- Cross-species NAc DBS mesocorticolimbic mapping — 10.1038/s41380-026-03828-5 — drafted then cut for runtime; abstract-only and the weakest of the set
+- Metabolomic random-forest classifier for treatment-resistant schizophrenia — 10.1038/s41380-026-03827-6 — drafted then cut for runtime
+- Deep in vivo brain metabolomics, cocaine neurochemical states — 10.64898/2026.08.14.744954 — **deferred**, jina PDF 429'd, not re-attempted; strong candidate, revisit
+- Also considered and passed over: GluD1/GluN2B at subicular synapses, dithiocarbamates disrupting TDP-43 proteostasis, AB-free kava anxiolytic, canine SLC6A3 social-anxiety GWAS, prenatal THC and PFC excitability, LifeSciBench, GUIA interoperable agent network (shipped by a sibling show today)
+
+One methodological note worth flagging: five of six fresh bioRxiv v1s had abstract-only `.full` HTML but complete bodies via the PDF route, so the "not-yet-rendered → defer" rule would have wrongly dropped most of today's picks. I recorded the new jina failure signature (~210–310 bytes with an iframe warning = extraction failure, go direct with a browser UA, *not* a rate limit) in the bioRxiv access memory.
+=== 2026-08-20T03:26:43-07:00 done  receptor-and-reason (exit 0) ===
