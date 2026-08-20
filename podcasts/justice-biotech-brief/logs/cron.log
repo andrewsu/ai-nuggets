@@ -2411,3 +2411,28 @@ The pick's load-bearing fact came from the registry, not the press coverage: TIT
 
 **Source failures:** Fierce Biotech unreadable on both channels — WebFetch 403 on homepage and on the article URL; `r.jina.ai` returned `AbuseAlleviationError` (domain-wide block until 10:07 UTC today). Used it as a headline lead via WebSearch only. nih.gov news-releases 403 on WebFetch. Neither gap changed the outcome — Fierce's own version of the REGN7041 story is the same reporting, and the primary registry record carried the harder facts.
 === 2026-08-19T02:48:34-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-20T02:40:11-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped at the script plus the two transient stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written** to `podcasts/justice-biotech-brief/scripts/`:
+- `2026-08-20-iza-bren-blb01d1-egfr-her3-bispecific-adc-panku-lung01-pfs.md` (1,052 spoken words, in line with recent episodes)
+- `…​.rss-item.xml` (validated as XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg` (single line)
+
+**Pick:** Iza-bren / BL-B01D1 (izalontamab brengitecan), Biokin's EGFR×HER3 bispecific ADC, met the PFS primary endpoint at a prespecified interim of Phase 3 PANKU-Lung01. The take: the second arm here is a *delivery amplifier* rather than a second pharmacology (dual engagement → internalization; HER3 enriched by prior TKI) — but PFS against pemetrexed-platinum in this exact slot is the bar patritumab deruxtecan cleared in HERTHENA-Lung02 (5.8 vs 5.4 mo, HR 0.77) before OS came in flat (16.0 vs 15.9, HR 0.98) and the BLA was withdrawn. Biokin disclosed no HR, medians, event counts, cutoff, or safety.
+
+**Full text read** (eligibility gate satisfied): the primary SSE voluntary disclosure PDF (announcement 2026-060, Chinese, extracted with `mutool`), the Fierce Pharma article in full via `r.jina.ai`, and the ClinicalTrials.gov NCT06382116 record (confirming PFS as sole primary, OS secondary, comparator, chemo-naive population).
+
+**Candidate funnel**
+
+- **bioRxiv** (details API, 2026-08-19 + 2026-08-20, full collection): 224 scanned → 6 keyword hits → 1 substantive after discarding spurious matches ("checkpoint" in an influenza paper, "CD3" inside `CD34`/gene names, generic "tumor microenvironment"):
+  - Integration of clinical and T-cell immune profiling to predict early response to CD3xBCMA bispecific antibody immunotherapy in Multiple Myeloma — `10.64898/2026.08.17.743749` (not chosen: biomarker/profiling study, weaker than a Phase 3 readout)
+  - *Note:* first pass paginated by stride 100 and silently truncated to 30/day; refetched at stride 30 (real page size) for the full 224.
+- **News / product launches** (Endpoints index via jina, Fierce Biotech + Fierce Pharma via jina, BioSpace + BioPharma Dive via WebFetch): ~40 headlines scanned, 4 on-target:
+  - **Iza-bren (BL-B01D1) EGFR×HER3 bispecific ADC meets PFS in Phase 3 PANKU-Lung01** — https://clinicaltrials.gov/study/NCT06382116 — **CHOSEN**
+  - Merck/Moderna personalized mRNA cancer vaccine declares Phase 3 success — https://endpoints.news/merck-moderna-declare-phase-3-success-for-personalized-cancer-vaccine/ (adjacent modality; no readable efficacy detail beyond "met endpoint")
+  - Tolerance Bio licenses efineptakin alfa (long-acting IL-7) from NeoImmuneTech, up to $260M — https://www.fiercebiotech.com/biotech/tolerance-bio-jumps-phase-2-260m-deal-thymus-targeting-fusion-protein (licensing deal, no data)
+  - Amgen scraps $500M+ TScan inflammation collaboration — https://www.fiercebiotech.com/biotech/amgen-abandons-500m-inflammation-team-tscan-therapeutics (partnership unwind, no data)
+- **Policy / funder pages**: ARPA-H news — nothing dated 08-19/08-20 (most recent 08-18, small-business ecosystem piece). NIH and NSF not reached this run; no gap expected given the on-target Phase 3 readout already in hand.
+- **Source failures**: Endpoints article bodies paywalled (jina returns headline + timestamp only) — worked around via Fierce Pharma. `WebFetch` 403 on both Endpoints and Fierce (expected); jina succeeded on Fierce this run.
+=== 2026-08-20T02:50:21-07:00 done  justice-biotech-brief (exit 0) ===
