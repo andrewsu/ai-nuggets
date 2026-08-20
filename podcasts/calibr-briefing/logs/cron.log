@@ -3311,3 +3311,36 @@ Substantive shortlist (spurious matches discarded):
 
 No source failure blocked selection; Fierce's jina block cost only redundant coverage of items reached elsewhere.
 === 2026-08-19T02:36:26-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-20T02:20:11-07:00 start calibr-briefing ===
+Both episodes are written and validated. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scripts + transient stubs — no TTS, no R2 publish, no feed edit, no commit (`publish_pending.py` does those after batch TTS).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-08-20-pharma-headlines.txt` (1,342 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-08-20-moderna-merck-neoantigen-spotlight.txt` (1,458 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as valid XML with `__LENGTH__`/`__DURATION__` placeholders intact; both scripts are free of URLs, IDs, markdown, and pseudo-headings.
+
+**Candidate funnel**
+
+Sources scanned:
+- **BioPharma Dive** homepage — reachable, but stale for this window (newest dated item was an Aug 19 "What We're Reading" link). 0 usable.
+- **BioSpace** homepage + `/news` — ~16 items dated Aug 19–20; Aug 20 was job-trend/opinion features only, so the real news day was Aug 19. 4 survived relevance.
+- **Endpoints News** index via `r.jina.ai` — 24 items, newest-first with timestamps; 9 dated Aug 19 (post-dating yesterday's cron). Bodies paywalled as expected, so each lead was paired with a primary release or readable substitute. 7 survived.
+- **Fierce Biotech/Pharma, STAT** — not fetched directly (known 403/jina block per prior runs); reached only as WebSearch leads.
+- Primary sources read in full: Moderna/Merck press release, Regeneron GlobeNewswire, Anthropic research post, Teva GlobeNewswire, CSL newsroom, BioSpace Enveda article, Clinical Trials Arena, Boston Globe.
+
+Shortlist (Aug 19–20, after discarding items already shipped in the Aug 19 episode — Amylyx, Overton, BioMarin/Alesta, RiboX, REGN7041, Teva IRA, Sandoz/Henlius, Chugai/GSK, Evaxion, oral-obesity scorecard):
+- **CHOSEN — headlines lead + spotlight** — Merck/Moderna intismeran autogene Phase 3 INTerpath-001 win in resected melanoma — https://news.modernatx.com/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-plus-keytruda-met-endpoints-of-rfs-and-dmfs-in-melanoma
+- **CHOSEN (2)** — FDA approves Regeneron's garetosmab / Pasatru in FOP — https://www.globenewswire.com/news-release/2026/08/19/3347919/0/en/pasatru-garetosmab-grts-first-and-only-fda-approved-treatment-demonstrating-reduction-in-new-heterotopic-ossification-ho-lesions-and-clinician-assessed-flare-ups-in-a-placebo-contr.html
+- **CHOSEN (3)** — Enveda ENV-308 oral Lac-Phe mimetic clears Phase 1 — https://www.biospace.com/drug-development/envedas-exercise-simulating-obesity-tablet-clears-early-clinical-test
+- **CHOSEN (4)** — Anthropic/Claude autonomous protein-binder campaign + Endpoints analysis — https://www.anthropic.com/research/Claude-accelerates-protein-design
+- **CHOSEN (5)** — amylin receptor-selectivity debate ahead of Lilly's mid-stage data — https://endpoints.news/amylin-design-debate-heats-up-as-lillys-crucial-mid-stage-weight-loss-data-near/
+- **CHOSEN (6)** — Biokin EGFRxHER3 bispecific ADC, fourth China Phase 3 win — https://endpoints.news/bristol-myers-partner-biokin-says-bispecific-adc-clears-fourth-cancer-trial-in-china/
+- **CHOSEN (7, quick hits)** — Amgen terminates TScan Crohn's collab; Teva ecopipam priority review; CSL on the EU Tavneos revocation
+- Not used — Trump/Overton FDA follow-ups (two BioSpace + one Endpoints piece): nomination already covered Aug 19; these are analyst-reaction follow-ons.
+- Not used — Skye/Redx → Fibrx Therapeutics, $125M: dated Aug 14, out of window.
+- Not used — 2026 IPO tracker, layoff tracker, "7 M&A deals where layoffs followed", NJ hiring, Hong Kong biotech bridge: recurring trackers/features, not net-new events.
+- Not used — Takeda orexin/narcolepsy feature, Epic health-tech piece, Trump-vs-IRA list-price piece, "AI will beat doctors" conference roundup: commentary rather than events.
+
+One note for your awareness: the companies released **no effect size** for INTerpath-001 — no hazard ratio, curves, or medians — so the spotlight is explicit that only direction and significance are known today, and it leans on the early-interim stop and the KEYNOTE-942 replication rather than implying a magnitude.
+=== 2026-08-20T02:34:08-07:00 done  calibr-briefing (exit 0) ===
