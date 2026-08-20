@@ -1764,3 +1764,24 @@ Shortlist after discarding off-thesis matches:
 
 One caveat worth flagging: the two lead findings come from primary records I pulled myself rather than from an in-window news event, and the third item's underlying NEJM letter published in late July (only the molecular analysis was worked through on Aug 18). The script states both dates plainly rather than implying fresh catalysts.
 === 2026-08-19T02:35:55-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-20T02:10:11-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Shipped:** `podcasts/blackbird-brief/scripts/2026-08-20-portfolio-watch.md` (Portfolio Watch, ~1,770 words / ~9.8 min), plus `.rss-item.xml` (validated XML, `__LENGTH__`/`__DURATION__` placeholders) and `.commit-msg`. `memory/blackbird-portfolio.md` updated with the 08-20 log entry and durable bullets in the Aletira and Clasp sections.
+
+**Episode contents**
+- **LEAD (Aletira, four ways):** FDA accelerated approval 2026-08-19 of Ultragenyx's **GENGLYCOS** (ex-DTX401) — AAV8, G6Pase under the gene's **own native promoter** so hepatocytes still answer to insulin and cortisol. (1) The ladder — Skylark restricts at the 3′UTR, Ultragenyx at the promoter, SELEXON at the splice; that shared premise now has an FDA approval behind it. (2) The correction, on the record first: 71% transaminase elevations, corticosteroids to *all* patients, 24% adrenal insufficiency, 10% anaphylaxis — expression control is not an immunology answer, so the SELEXON claim must narrow to off-target expression. (3) The post-marketing **control arm is patients excluded by anti-AAV8 antibodies** — a systemic-delivery tax the ear largely avoids. (4) The approval carried a rare pediatric **priority review voucher**; program revived Feb 2026, sunsets 2029-09-30, vouchers trading at $180–200M — arithmetic that argues for licensing SELEXON into a partner's IND rather than racing alone.
+- **Item 2:** Merck/Moderna **INTerpath-001** hit RFS and DMFS (n=1,137, resected melanoma) — first Phase 3 win for an individualized neoantigen therapy, validating the premise under Adventris and Clasp while pricing the bespoke route, which makes shared-neoantigen off-the-shelf approaches worth more. No hazard ratios disclosed; interim analysis.
+- **Item 3:** HHS OIG docket re-pulled — still 8 comments, most recent 08-14, two business days left.
+- Short no-change lines: gut/GCPII (duvakitug Ph2b publication reinforces "pain is the open axis"), GPR52/Nxera, CAMP4, aSKY, Clasp, Skylark/Sensorion, zero Blackbird mentions.
+
+**Candidate funnel**
+- *Industry press (Endpoints all-news + Cell/Gene channel, BioSpace index, BioBuzz, Fierce):* ~60 items scanned 08-17→08-20; 4 survived relevance.
+  - ✅ **CHOSEN** — Ultragenyx GENGLYCOS accelerated approval, 08-19 — `ir.ultragenyx.com/news-releases/news-release-details/ultragenyx-announces-us-fda-approval-genglycostm-gene-therapy`
+  - ✅ **CHOSEN** — Merck/Moderna INTerpath-001 Phase 3, 08-19 — `merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial…`
+  - ✅ **CHOSEN (short line)** — duvakitug RELIEVE UCCD Phase 2b published 08-18 — `healio.com/news/gastroenterology/20260818/…`
+  - ✂️ Xcellon acquires NextCure's Beltsville cGMP facility (BioBuzz, ~08-19) — Maryland capacity, no Blackbird program touch; cut per the PROMPT's ecosystem rule.
+- *Primary/regulatory sources:* regulations.gov v4 (HHSIG-2026-0034, 8 comments — ✅ chosen); RPD PRV reauthorization + 2026 voucher comps (✅ folded into lead).
+- *Deferred / cut:* Intellia HLA-allele explanation for nex-z liver toxicity — genuinely on-thesis but dated **08-07, out of window**, never aired; revisit only if it recurs.
+- *Source failures:* `fiercebiotech.com` blocked the reader proxy (rate-limit/abuse block) and Endpoints article pages 403 to WebFetch — covered via the Endpoints index listing, BioSpace, and primary press releases instead. No retry loop.
+=== 2026-08-20T02:28:59-07:00 done  blackbird-brief (exit 0) ===
