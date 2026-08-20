@@ -1896,3 +1896,31 @@ Shortlist (✓ = used):
 
 Two link notes: the Register URL needed its trailing article ID to resolve, now fixed; the two `openai.com` links return 403 to automated fetchers but are live pages (read via the reader proxy).
 === 2026-08-19T02:41:44-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-20T02:30:11-07:00 start jinglin-ai-pulse ===
+Episode written for **jinglin-ai-pulse**, 2026-08-20 — *Generation Was Never the Bottleneck*.
+
+`SKIP_TTS=1` was set in the environment, so per PIPELINE.md I skipped `gen_tts.py`, `publish_episode.sh`, the `feed.xml` edit, and the commit, and instead wrote the two transient stubs for `publish_pending.py`:
+
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-20-generation-was-never-the-bottleneck.md` — 2,520 spoken words (≈12.7 min at this show's measured 3.3 words/sec, mid-range on the 10–15 min target)
+- `…​.rss-item.xml` — final values plus `__LENGTH__` / `__DURATION__`; validated as parseable XML
+- `…​.commit-msg`
+
+Every item was read in the primary source (Ornith blog + HF model card + HN thread, Tao's arXiv HTML, all four news articles, the podcast episode page). All quotes are verbatim from those fetches; nothing paraphrased into quotation marks.
+
+**Episode shape**
+- **Twitter Pulse** — Ornith-1.5's closed self-improvement loop (task proposal + scaffold generation + rollouts, jointly optimized under GRPO), with the reward design as the real story and the HN deflation that it's post-training on Qwen3.5/Gemma 4; then Tao's ICM lecture text arguing generation was never the bottleneck.
+- **Money Moves** — SpaceX/Cursor closing at $60B and the denied Cognition approach, Stripe/OpenRouter as token-spend expense management, Binance Agent OS. Thesis: capital is buying control surfaces, not models.
+- **Deep Cut** — Flo Crivello on The Cognitive Revolution (Aug 10): the coordination-problem case for banning the Chinese open weights his company runs on, and Labenz's unresolved pushback.
+
+**One deviation worth flagging:** the show's named primary signal source is X/Twitter (@Zefan_Cai et al.), and X is not fetchable from this host — `x.com` needs auth and the `xcancel` mirror returns a browser-verification challenge. Rather than fabricate attributions, I sourced the discourse layer from venues I could actually read and quote (Hacker News front page and item threads, Hugging Face daily papers, primary docs) and attributed traction to those venues. I saved this as a memory so future runs don't re-discover it.
+
+**Candidate funnel**
+
+- **X/Twitter — FAILED.** `xcancel.com/Zefan_Cai` → browser-verification challenge; `WebSearch site:x.com` → profile landing pages only, no dated post content. No retry succeeded. Substituted HN + HF papers.
+- **Hacker News front page** — ~10 stories scanned, 6 AI-relevant. Shortlist: Ornith-1.5 (195 pts / 68 comments) **[CHOSEN]**; Mathematics in the age of AI (167 / 196) **[CHOSEN]**; OpenRouter joining Stripe (836 / 438) **[CHOSEN, as Money Moves]**; Extensible Software in the age of LLMs (150 / 61); Unsloth Dynamic 3.0 GGUFs (265 / 94); Launch HN: OneCLI (76 / 22).
+- **Hugging Face daily papers** — 6 scanned, all on-topic but none beat the lead: Zetta ζ embodied harness (104); SemComp-Bench (90); Co-RL (75); OmniScientist (70); SemaPLC (67); SPADE (32).
+- **TechCrunch AI** — 18 items across Aug 18–20. Shortlist: Binance Agent OS **[CHOSEN]**; Stripe/OpenRouter rationale **[CHOSEN]**; Cognition/SpaceX denial **[CHOSEN]**; OpenAI revoked cyber-program access; AI isn't close to curing cancer; Relativity Networks $22M; Cursor launches GitHub rival.
+- **Funding** — Crunchbase weekly roundup was July 17 (stale). Aug 11–17 roundup: Databricks $5B, River AI $1.1B seed, Lovable $400M C, CodeRabbit $143M C — all real but weaker than the acquisition thesis; skipped.
+- **Podcasts** — Latent Space (Aug 18/15 are written posts, not interviews); Dwarkesh Aug 11 Greenblatt **rejected: already the Deep Cut on 2026-08-12**; Interconnects Aug 17 (Nvidia — overlaps the 08-13 episode); MLST channel listing unfetchable (YouTube returned footer-only). The Cognitive Revolution, Crivello/Lindy (Aug 10) **[CHOSEN]** — same show as the 08-18 Deep Cut but a different episode, picked on thematic fit with the Ornith-on-Qwen lead.
+- Checked `feed.xml` and all August scripts for prior coverage: no overlap on Ornith, Tao, Binance/Agent OS, x402, or the SpaceX/Cursor deal. Stripe/OpenRouter appeared on 08-17 as the deal itself; today's angle is the newly-reported rationale.
+=== 2026-08-20T02:45:06-07:00 done  jinglin-ai-pulse (exit 0) ===
