@@ -3541,3 +3541,47 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 **Policy / funders** — ARPA-H, NIH checked; nothing agentic-AI in window (ARPA-H's most recent items are a weed-management program launch 08-17 and a small-business impact story 08-18). NSF/HHS not separately fetched after the first two came back empty.
 === 2026-08-19T02:09:31-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-20T02:00:10-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did not run TTS, publish to R2, edit `feed.xml`, or commit — `scripts/publish_pending.py` handles those after batch TTS.
+
+**Today's pick:** GUIA — "An interoperable research agent network for scientific discovery" (bioRxiv `10.64898/2026.08.13.744542`, posted 2026-08-18, Edwin Cheung's group, University of Macau). Full text read in full (92KB / 47 pages via the paced `.full.pdf` jina route). 854 spoken words.
+
+The take: the field has shipped a dozen siloed biomedical agents; this is the first paper treating that fragmentation as the problem. Load-bearing number is the microbiome result — GUIA alone 45%, bare model 35%, fixed-roster competitor 34%, and 93% after plugging in somebody else's unmodified Eubiota platform — held against the near-null cross-server clinical-agent gain, which together show the payoff is proportional to non-overlap (and that routing under overlap is unsolved, as the authors concede). Real wet-lab validation (CASZ1 → knockdown, ChIP, proliferation). Two critiques: a paper arguing against gatekeeping ships GUIA behind a registration form while depending on every integrated agent being public on GitHub; and cross-server agents pass messages but not files, so the hard part of distributed science is untouched.
+
+Files written:
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-20-guia-interoperable-agent-network.md`
+- `...rss-item.xml` (2 placeholder tokens, XML-validated)
+- `...commit-msg`
+
+**Candidate funnel**
+
+bioRxiv (2026-08-17 → 08-20, day-by-day pagination at stride 30, merged + deduped): 741 unique records scanned, 67 keyword hits, 8 substantive after discarding spurious matches.
+- **An interoperable research agent network for scientific discovery** (GUIA) — `10.64898/2026.08.13.744542v1` — **CHOSEN**
+- A Persistent Fleet of AI Scientists (Chester) — `10.64898/2026.08.16.745122v1` — already shipped as 2026-08-19
+- From Lab Notes to Linked Data: MeSyTo, ontology-driven metadata for toxicological omics — `10.64898/2026.08.14.736375v1` — strongest runner-up (ontology/metadata beat), narrower scope
+- Assessing the Reliability of LLM-Generated Phenotype-Genotype Associations — `10.64898/2026.08.13.744701v1`
+- Automating Contextualized Biomedical Knowledge Graphs (AutoBioKG) — `10.64898/2026.01.14.699420v2` — January original, weak recency
+- Learning protein function through autonomous experimental interaction — `10.64898/2026.08.14.744985v1`
+- SVlog, logic programming for structural variation — `10.64898/2026.08.11.744322v1`
+- PG-LLM protein variant ranking benchmark — `10.64898/2026.07.27.741045v3`
+
+arXiv (shared daily cache, 500 entries, 08-17 → 08-19; no 08-20 announcements yet): 103 title-level relevance hits, shortlist:
+- Artifact-centered Claim-aware Observability for Autonomous Scientific Agents — `2608.18312` — deprioritized, provenance/observability was yesterday's beat
+- Traceable Trust for action-ready AI in bioscience — `2608.17997` — same overlap
+- Eureka: Task-Conditioned Meta-Agent Orchestration for Scientific Discovery — `2608.19047`
+- Self-prompting and cross-model consensus for reproducible literature data extraction — `2608.19025`
+- MissDiag: incomplete-knowledge robustness in KGQA / KG-RAG — `2608.18489`
+- Neuro-symbolic learning over OWL 2 DL — `2608.17741`
+- AutoResearch: Insight In, Hallucination Out — `2608.17906`
+- Science Done on a Machine by a Machine: AI Agents in Computational Chemistry — `2608.18508`
+
+PubMed (reldate 5, 94 hits, 8 substantive): IAN omics-analysis system (Cell Rep Methods); autonomous multimodal ophthalmic diagnosis agent (Cell Rep Med); unified benchmark for biomedical knowledge extraction with LLMs (Cell Rep Med); ED-triage-agent; locally-executed agentic framework for systematic reviews; group size effects in LLM multi-agent systems (PNAS); Fifteen challenges for generative AI in cell biology (Cell); agentic AI in precision medicine review (Drug Discov Today).
+
+ChemRxiv: 0 in-window — all `site:chemrxiv.org` agentic hits were March–May 2026.
+
+News / product launches: nothing in-window that beat the preprint; NVIDIA and Biomni items are outside the 3-day window.
+
+Funder pages: ARPA-H — no AI item in window (most recent AI story 07-23). NSF — only the 08-17 $1.5B foundational-research NOFO announcement, not agentic-AI specific. **NIH press releases — HTTP 403 from this host, skipped** (no retry attempted; single-source gap). HHS not reached.
+
+Memory updated: the 08-19 GUIA deferral is marked resolved, LifeSciBench (`10.64898/2026.08.13.744657`) remains open with the PDF route untried, and I recorded that a ~400-byte jina response is a retryable rate limit rather than a not-yet-rendered deferral — GUIA's body was almost certainly readable yesterday.
+=== 2026-08-20T02:09:34-07:00 done  biomedical-agentic-ai (exit 0) ===
