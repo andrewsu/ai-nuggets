@@ -3645,3 +3645,10 @@ You've hit your session limit · resets 7:10am (America/Los_Angeles)
 You've hit your session limit · resets 7:10am (America/Los_Angeles)
 === 2026-08-21T03:05:38-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-08-21T03:05:38-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-08-21T07:15:00-07:00 start receptor-and-reason ===
+Nothing changed. The run stands as reported:
+
+- 10-item episode led by MASCOT, script + both SKIP_TTS stubs written, ledger appended with 10 keys, no commit (orchestrator's job).
+- Still blocked behind Cloudflare `error code: 1015`: DrugEvolve (`745117`) and the brain-metabolomics/cocaine preprint (`744954`).
+- Recovered but unused: the dopamine-as-striatal-gain-regulator paper (`745105`, 2.6 MB PDF) — logged in memory as the first pick for the next run.
+=== 2026-08-21T07:48:11-07:00 done  receptor-and-reason (exit 0) ===
