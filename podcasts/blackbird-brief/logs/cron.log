@@ -1785,3 +1785,31 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 - *Deferred / cut:* Intellia HLA-allele explanation for nex-z liver toxicity — genuinely on-thesis but dated **08-07, out of window**, never aired; revisit only if it recurs.
 - *Source failures:* `fiercebiotech.com` blocked the reader proxy (rate-limit/abuse block) and Endpoints article pages 403 to WebFetch — covered via the Endpoints index listing, BioSpace, and primary press releases instead. No retry loop.
 === 2026-08-20T02:28:59-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-21T02:10:08-07:00 start blackbird-brief ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:34:11-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-21T02:34:11-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-08-21T02:34:11-07:00 session-limit reset at 7:10am is 16609s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:37:11-07:00 start blackbird-brief (retry 1) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:37:16-07:00 done  blackbird-brief (exit 0) (retry 1) ===
+=== 2026-08-21T02:37:16-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-08-21T02:37:16-07:00 session-limit reset at 7:10am is 16424s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:40:17-07:00 start blackbird-brief (retry 2, --model claude-sonnet-5) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:40:21-07:00 done  blackbird-brief (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-08-21T02:40:21-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-08-21T02:40:21-07:00 session-limit reset at 7:10am is 16239s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:43:21-07:00 start blackbird-brief (retry 3, --model claude-sonnet-5) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:43:26-07:00 done  blackbird-brief (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-08-21T02:43:26-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-08-21T02:43:26-07:00 session-limit reset at 7:10am is 16054s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:46:26-07:00 start blackbird-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:46:31-07:00 done  blackbird-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-08-21T02:46:31-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-08-21T02:46:31-07:00 session-limit reset at 7:10am is 15869s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:49:31-07:00 start blackbird-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:49:35-07:00 done  blackbird-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
