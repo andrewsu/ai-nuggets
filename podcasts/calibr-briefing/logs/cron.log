@@ -3373,3 +3373,36 @@ You've hit your session limit · resets 7:10am (America/Los_Angeles)
 You've hit your session limit · resets 7:10am (America/Los_Angeles)
 === 2026-08-21T02:47:34-07:00 done  calibr-briefing (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-08-21T02:47:34-07:00 FAILED: no usable output for calibr-briefing after all retries ===
+=== 2026-08-21T07:15:00-07:00 start calibr-briefing ===
+Both episodes are written and staged for the batch pipeline. Summary follows.
+
+---
+
+**Run type:** resumption of a truncated run. The 02:20 cron hit a session limit mid-run — it wrote `2026-08-21-pharma-headlines.txt` at 02:30, then the whole retry ladder (Opus → Sonnet → Haiku) failed in ~5s each and the runner logged `FAILED: no usable output`. Phase 2 batch TTS still synthesized an mp3 from that orphan script at 03:10, but no spotlight, no stubs, no feed entry, no commit.
+
+**What I did:** verified and repaired the salvaged headlines script, wrote the missing spotlight, and staged both for Phase 2/3. `SKIP_TTS=1` is set, so no TTS, no R2 publish, no feed edit, no commit — per PIPELINE.md batch mode.
+
+**Corrections to the salvaged headlines script** (all verified against primary sources):
+- **Scribe item was materially wrong.** It said "$150M raised at $21.50/share… up 43% from pricing." Actual: upsized IPO priced 2026-07-23 at **$15.00** (8,580,000 shares, $128.7M gross; ~$150M with the overallotment), plus a 500,000-share Sanofi private placement. $21.50 was the **first-day close**; $31.05 Wednesday is ~2× the offer, +43% off the first-day close. Rewrote with the real comparison the source piece makes (Kailera $625M, −31%; Parabilis $670M, +25%) and the correct Bannister attribution (Leerink ECM, banked the deal).
+- **Item 6 duplicated the Aug 19 episode** (third China IIT death). Replaced with the genuinely new development: Reps. Moolenaar and Cline asking FDA to refuse Chinese trial data from un-audited sites, plus the April House appropriations bill.
+- Fixed "first gene therapy *after* five approvals" → first gene therapy and **fifth** approval overall; added the Aug 23 action date it beat.
+- Genentech cuts: 103 jobs, largely gRED, ~350 YTD (was stated as "103 R&D positions"); Roche NC confirmed at ~$2B/2029; dropped an unverifiable biotech-index comparison.
+
+**Spotlight** — `2026-08-21-ultragenyx-gsd1a-gene-therapy-spotlight.txt`, built on the full press release, full prescribing-information safety section, the Week-96 ICIEM release, and analyst coverage. Three arguments: (1) the **native G6PC promoter + enhancer** is the deliberate anti-default — a rheostat, not a switch, because G6Pase sits inside the insulin/cortisol loop; (2) accelerated approval on **grams of cornstarch** is a burden-of-care endpoint, not a surrogate biomarker, and only holds up because the euglycemia and fasting-tolerance data explain why the burden fell — with the honest caveat that investigator titration is why placebo still fell 10%; (3) the underpriced part is **Bedford**: UX111's July 2025 CRL was CMC plus inspection observations at that plant, Genglycos is made there start-to-finish, and TD Cowen calls it a de-risking for the Sept 19 Sanfilippo decision (caveated — UX111 supply also spans Andelyn in Columbus). Plus the safety tax (steroids for all, 71% transaminase elevation, 24% adrenal insufficiency, contraindicated in the fibrosis GSDIa itself causes, ~25% seropositive and ineligible) and why that's Beam's opening with BEAM-301.
+
+**One operational action worth flagging:** I deleted `episodes/2026-08-21-pharma-headlines.mp3`. `tts-batch.slurm` skips any script that already has an mp3 (`[ -f "$output" ] && continue`), so leaving it would have shipped the uncorrected audio against the corrected script. Both mp3s will now be generated in Phase 2 (or gap-filled via Mistral in Phase 2.5). Saved this to memory since it's not in PIPELINE.md.
+
+**Candidate funnel:**
+- **Endpoints News** index via `r.jina.ai` — 24 items newest-first; 10 dated Aug 20. Bodies paywalled; each paired with a primary release or readable substitute.
+- **BioSpace** homepage — 8 items Aug 20, 0 for Aug 21. **BioPharma Dive, Fierce Pharma, MedCity, CGTlive** — read directly.
+- **Primary sources read in full:** Ultragenyx Genglycos release incl. full safety section (via jina), Ultragenyx UX111 CRL release, Ultragenyx Week-96 Phase 3 release, Scribe IPO pricing release.
+- ✅ **CHOSEN — lead + spotlight** — Ultragenyx Genglycos accelerated approval in GSDIa — https://ir.ultragenyx.com/news-releases/news-release-details/ultragenyx-announces-us-fda-approval-genglycostm-gene-therapy
+- ✅ **CHOSEN (2)** — Scribe's cheaply priced IPO as the 2026 pricing lesson — https://www.biospace.com/business/scribes-early-stage-ipo-standout-defies-biotechs-derisking-trend
+- ✅ **CHOSEN (3)** — Network Bio launches on $50M + NVIDIA cfRNA foundation model — https://www.biospace.com/press-releases (via GenomeWeb/Pharmaletter coverage)
+- ✅ **CHOSEN (4)** — Roche/Genentech $750M Hillsboro device fill-finish — https://www.biospace.com/drug-delivery/roche-pours-750m-into-oregon-manufacturing-plant-as-obesity-push-expands
+- ✅ **CHOSEN (5)** — FDA rejects Osteal's Nexchange Kit — https://endpoints.news/fda-rejects-osteal-combo-therapy-to-treat-joint-implant-infections/
+- ✅ **CHOSEN (6)** — Moolenaar/Cline letter on Chinese trial data — https://endpoints.news/china-iit-deaths-prompt-lawmakers-to-request-fda-clampdown/
+- ✅ **CHOSEN (7, quick hits)** — Lilly/Amplitude taRNA vaccines; Otsuka scraps psychedelic; gray-market retatrutide study; WuXi Bio chromatography divestiture; PhRMA CEO shortlist
+- ❌ Regeneron Pasatru FOP approval, Merck/Moderna post-Keytruda analysis — both shipped in the Aug 19 and Aug 20 episodes
+- ❌ "Three deaths in China shake trust" feature, Trump-2.0-federal-research study, FDA digital-health approach, Epic AI, Novo lower-dose oral Wegovy Phase 3, "7 M&A deals where layoffs followed" — commentary/features/trackers rather than net-new events for this audience
+=== 2026-08-21T07:31:21-07:00 done  calibr-briefing (exit 0) ===
