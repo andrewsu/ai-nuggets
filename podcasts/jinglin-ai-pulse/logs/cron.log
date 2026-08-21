@@ -1953,3 +1953,24 @@ You've hit your session limit · resets 7:10am (America/Los_Angeles)
 You've hit your session limit · resets 7:10am (America/Los_Angeles)
 === 2026-08-21T02:48:24-07:00 done  jinglin-ai-pulse (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-08-21T02:48:24-07:00 FAILED: no usable output for jinglin-ai-pulse after all retries ===
+=== 2026-08-21T07:15:00-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md batch mode I wrote the script plus the two transient stubs and did **not** run `gen_tts.py`, `publish_episode.sh`, edit `feed.xml`, or commit — `publish_pending.py` does all of that after batch TTS.
+
+**Published files** (`podcasts/jinglin-ai-pulse/scripts/`):
+- `2026-08-21-thirty-and-one-hundred.md` — 2,377 spoken words, ≈12 min (calibrated against 08-20: 2,520 words → 775s)
+- `2026-08-21-thirty-and-one-hundred.rss-item.xml` — validated: parses standalone, parses when inserted into `feed.xml`, both placeholders present, guid unique
+- `2026-08-21-thirty-and-one-hundred.commit-msg`
+
+**Episode:** *Thirty and One Hundred.* Lead is that a benchmark score has stopped being a property of a model. NVIDIA's AVO hit 100.00 RHAE on the ARC-AGI-3 public set running Claude Opus 5 (183/183 levels, 6,624 actions vs. VISTA's 7,542 with the same model) while ARC Prize measures Opus 5 alone at ~30% — NVIDIA itself says that's not a controlled ablation and is public-set-only, and the script says so. What survives the caveats is that AVO sent *zero image tokens* on a 64×64 text grid where VISTA renders a 512×512 PNG. DeepSeek shipped V4-Flash-Vision-Exp the same morning arguing the reverse; the buried tell is 27.3 on Agents' Last Exam beating flagship V4-Pro's 25.7 purely because text-only models don't see the multimodal items. Reconciliation is representational, not about scale. Third: Ox Alpha, anonymous on OpenRouter, 1M context, free, with dax's tokenizer fingerprint matching GLM-5.3 off by a constant 75-token wrapper.
+
+**Candidate funnel**
+
+- **Hacker News front page** — 8 AI items scanned, 4 survived: DeepSeek-v4-flash-vision (263 pts) **[CHOSEN]**; Ox Alpha (205 pts / 159 comments) **[CHOSEN]**; Nvidia AVO/ARC-AGI-3 **[CHOSEN, lead]**; Anna's Archive "AI companies destroy physical books" (318 pts) — strong traction but a different theme (data provenance), cut for coherence.
+- **HF daily papers (08-20 + 08-21)** — 32 scanned, 0 chosen. Top items (Zetta ζ 205, 4DAnyone 162, SemComp-Bench 154) are paper-shaped; `jinglin-biomed-ai-brief` covers papers.
+- **Primary docs** — DeepSeek changelog + Vision guide read in full via `r.jina.ai` (WebFetch fails on `api-docs.deepseek.com`: Scripps TLS interception, cert altnames are `*.scripps.edu`). NVIDIA AVO blog read in full via `r.jina.ai`. ARC Prize Opus 5 results page, OpenRouter Ox Alpha page read directly.
+- **Money/business** — 12 items scanned, 2 chosen: Etched $700M at $21B **[CHOSEN]**, micro1 $100M→$500M gross run rate **[CHOSEN]**. Rejected as already-shipped: River AI $1.1B and Databricks $5B (both covered 2026-08-16), Cognition $40B (08-17), Fireworks $1.5B (July, outside window).
+- **Podcasts** — Dwarkesh × Ryan Greenblatt, Aug 11 **[CHOSEN]**, transcript fetched in full (156KB) and quotes verified against it. Rejected: Dwarkesh × Eric Jang (May, out of window); Cognitive Revolution (used 08-18 and 08-20), Latent Space (08-19).
+- **X/Twitter** — not directly readable from this host (known: xcancel returns a browser challenge, x.com needs auth). Discourse signal sourced from HN + primary docs + community writeups; the dax tokenizer-fingerprint claim is attributed as unconfirmed speculation, per the brief's rule against fabricated attribution.
+
+Two notes for you: `WhynotTV` remains stale (no in-window episodes), so the Deep Cut used Dwarkesh again — that's now three of the last five episodes drawing on Dwarkesh/Interconnects/Cognitive Revolution, and the podcast source pool for this show is getting thin. And I dropped the Anna's Archive story despite it being the highest-engagement AI item on HN today; if you'd rather the show track raw community attention over thematic coherence, that call should flip.
+=== 2026-08-21T07:28:27-07:00 done  jinglin-ai-pulse (exit 0) ===
