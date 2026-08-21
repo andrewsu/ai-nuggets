@@ -1924,3 +1924,32 @@ Every item was read in the primary source (Ornith blog + HF model card + HN thre
 - **Podcasts** — Latent Space (Aug 18/15 are written posts, not interviews); Dwarkesh Aug 11 Greenblatt **rejected: already the Deep Cut on 2026-08-12**; Interconnects Aug 17 (Nvidia — overlaps the 08-13 episode); MLST channel listing unfetchable (YouTube returned footer-only). The Cognitive Revolution, Crivello/Lindy (Aug 10) **[CHOSEN]** — same show as the 08-18 Deep Cut but a different episode, picked on thematic fit with the Ornith-on-Qwen lead.
 - Checked `feed.xml` and all August scripts for prior coverage: no overlap on Ornith, Tao, Binance/Agent OS, x402, or the SpaceX/Cursor deal. Stripe/OpenRouter appeared on 08-17 as the deal itself; today's angle is the newly-reported rationale.
 === 2026-08-20T02:45:06-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-21T02:30:08-07:00 start jinglin-ai-pulse ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:32:59-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-21T02:32:59-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-08-21T02:32:59-07:00 session-limit reset at 7:10am is 16681s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:35:59-07:00 start jinglin-ai-pulse (retry 1) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:36:04-07:00 done  jinglin-ai-pulse (exit 0) (retry 1) ===
+=== 2026-08-21T02:36:04-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-08-21T02:36:04-07:00 session-limit reset at 7:10am is 16496s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:39:04-07:00 start jinglin-ai-pulse (retry 2, --model claude-sonnet-5) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:39:09-07:00 done  jinglin-ai-pulse (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-08-21T02:39:09-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-08-21T02:39:09-07:00 session-limit reset at 7:10am is 16311s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:42:09-07:00 start jinglin-ai-pulse (retry 3, --model claude-sonnet-5) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:42:14-07:00 done  jinglin-ai-pulse (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-08-21T02:42:14-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-08-21T02:42:14-07:00 session-limit reset at 7:10am is 16126s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:45:14-07:00 start jinglin-ai-pulse (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:45:18-07:00 done  jinglin-ai-pulse (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-08-21T02:45:18-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-08-21T02:45:18-07:00 session-limit reset at 7:10am is 15942s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:48:19-07:00 start jinglin-ai-pulse (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:48:24-07:00 done  jinglin-ai-pulse (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-08-21T02:48:24-07:00 FAILED: no usable output for jinglin-ai-pulse after all retries ===

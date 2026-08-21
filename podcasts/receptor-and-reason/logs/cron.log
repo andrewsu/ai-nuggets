@@ -3615,3 +3615,33 @@ Shortlist and disposition:
 
 One methodological note worth flagging: five of six fresh bioRxiv v1s had abstract-only `.full` HTML but complete bodies via the PDF route, so the "not-yet-rendered → defer" rule would have wrongly dropped most of today's picks. I recorded the new jina failure signature (~210–310 bytes with an iframe warning = extraction failure, go direct with a browser UA, *not* a rate limit) in the bioRxiv access memory.
 === 2026-08-20T03:26:43-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-21T02:50:08-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:50:13-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-21T02:50:13-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-08-21T02:50:13-07:00 session-limit reset at 7:10am is 15647s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:53:13-07:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+Client.listTools() called but server does not advertise tools capability - returning empty list
+=== 2026-08-21T02:53:19-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-08-21T02:53:19-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-08-21T02:53:19-07:00 session-limit reset at 7:10am is 15461s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:56:19-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-5) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:56:24-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-08-21T02:56:24-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-08-21T02:56:24-07:00 session-limit reset at 7:10am is 15276s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:59:24-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-5) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:59:29-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-08-21T02:59:29-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-08-21T02:59:29-07:00 session-limit reset at 7:10am is 15091s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T03:02:29-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T03:02:34-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-08-21T03:02:34-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-08-21T03:02:34-07:00 session-limit reset at 7:10am is 14906s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T03:05:34-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T03:05:38-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-08-21T03:05:38-07:00 FAILED: no usable output for receptor-and-reason after all retries ===

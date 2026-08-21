@@ -3344,3 +3344,32 @@ Shortlist (Aug 19–20, after discarding items already shipped in the Aug 19 epi
 
 One note for your awareness: the companies released **no effect size** for INTerpath-001 — no hazard ratio, curves, or medians — so the spotlight is explicit that only direction and significance are known today, and it leans on the early-interim stop and the KEYNOTE-942 replication rather than implying a magnitude.
 === 2026-08-20T02:34:08-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-21T02:20:08-07:00 start calibr-briefing ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:32:10-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-21T02:32:10-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-08-21T02:32:10-07:00 session-limit reset at 7:10am is 16730s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:35:10-07:00 start calibr-briefing (retry 1) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:35:15-07:00 done  calibr-briefing (exit 0) (retry 1) ===
+=== 2026-08-21T02:35:15-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-08-21T02:35:15-07:00 session-limit reset at 7:10am is 16545s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:38:15-07:00 start calibr-briefing (retry 2, --model claude-sonnet-5) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:38:20-07:00 done  calibr-briefing (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-08-21T02:38:20-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-08-21T02:38:20-07:00 session-limit reset at 7:10am is 16360s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:41:20-07:00 start calibr-briefing (retry 3, --model claude-sonnet-5) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:41:25-07:00 done  calibr-briefing (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-08-21T02:41:25-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-08-21T02:41:25-07:00 session-limit reset at 7:10am is 16175s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:44:25-07:00 start calibr-briefing (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:44:29-07:00 done  calibr-briefing (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-08-21T02:44:29-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-08-21T02:44:29-07:00 session-limit reset at 7:10am is 15991s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:47:29-07:00 start calibr-briefing (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:47:34-07:00 done  calibr-briefing (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-08-21T02:47:34-07:00 FAILED: no usable output for calibr-briefing after all retries ===

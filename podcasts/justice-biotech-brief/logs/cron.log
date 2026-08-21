@@ -2436,3 +2436,32 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped at the script
 - **Policy / funder pages**: ARPA-H news — nothing dated 08-19/08-20 (most recent 08-18, small-business ecosystem piece). NIH and NSF not reached this run; no gap expected given the on-target Phase 3 readout already in hand.
 - **Source failures**: Endpoints article bodies paywalled (jina returns headline + timestamp only) — worked around via Fierce Pharma. `WebFetch` 403 on both Endpoints and Fierce (expected); jina succeeded on Fierce this run.
 === 2026-08-20T02:50:21-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-21T02:40:08-07:00 start justice-biotech-brief ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:40:13-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-21T02:40:13-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-08-21T02:40:13-07:00 session-limit reset at 7:10am is 16247s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:43:13-07:00 start justice-biotech-brief (retry 1) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:43:18-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-08-21T02:43:18-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-08-21T02:43:18-07:00 session-limit reset at 7:10am is 16062s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:46:18-07:00 start justice-biotech-brief (retry 2, --model claude-sonnet-5) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:46:23-07:00 done  justice-biotech-brief (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-08-21T02:46:23-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-08-21T02:46:23-07:00 session-limit reset at 7:10am is 15877s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:49:23-07:00 start justice-biotech-brief (retry 3, --model claude-sonnet-5) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:49:28-07:00 done  justice-biotech-brief (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-08-21T02:49:28-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-08-21T02:49:28-07:00 session-limit reset at 7:10am is 15692s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:52:28-07:00 start justice-biotech-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:52:33-07:00 done  justice-biotech-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-08-21T02:52:33-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-08-21T02:52:33-07:00 session-limit reset at 7:10am is 15507s away (>3600s cap); sleeping 180s ===
+=== 2026-08-21T02:55:33-07:00 start justice-biotech-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 7:10am (America/Los_Angeles)
+=== 2026-08-21T02:55:38-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-08-21T02:55:38-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
