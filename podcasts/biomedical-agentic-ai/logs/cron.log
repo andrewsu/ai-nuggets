@@ -3585,3 +3585,41 @@ Funder pages: ARPA-H — no AI item in window (most recent AI story 07-23). NSF 
 
 Memory updated: the 08-19 GUIA deferral is marked resolved, LifeSciBench (`10.64898/2026.08.13.744657`) remains open with the PDF route untried, and I recorded that a ~400-byte jina response is a retryable rate limit rather than a not-yet-rendered deferral — GUIA's body was almost certainly readable yesterday.
 === 2026-08-20T02:09:34-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-21T02:00:08-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Files written**
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-21-brain-researcher-analytic-rigor.md` (946 spoken words, under the 1150 cap)
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-21-brain-researcher-analytic-rigor.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-21-brain-researcher-analytic-rigor.commit-msg`
+
+**Pick:** Brain Researcher (arXiv 2608.19902, posted 2026-08-20, Poldrack group at Stanford) — full PDF text read via `mutool`. Link verified HTTP 200.
+
+**Candidate funnel**
+
+- **bioRxiv** (2026-08-18 → 08-21, day-by-day, 571 unique records; 08-21 empty at cron time): 40 keyword hits, 6 substantive after discarding spurious matches.
+  - Assessing the Reliability of LLM-Generated Phenotype-Genotype Associations Through External Validation — `10.64898/2026.08.13.744701` — **deferred, abstract-only** (helper fell through to API channel; not-yet-rendered). Would otherwise have been the top contender.
+  - LifeSciBench — `10.64898/2026.08.13.744657` — still unread (carried from 08-19 deferral).
+  - From Lab Notes to Linked Data: MeSyTo, ontology-driven metadata for toxicological omics — `10.64898/2026.08.14.736375` — on-brief but a schema/tool release, no AI-agent angle.
+  - AutoBioKG (contextualized biomedical KG construction) — `10.64898/2026.01.14.699420` v2+v3 on 08-19 — January preprint revision, out of window.
+  - Single-cell foundation models benefit from cross-modal training — `10.64898/2026.08.14.744845` — foundation model, not agentic.
+  - Cryptic binding sites are detected but not ranked — `10.64898/2026.08.11.743381` v2 — good negative result, off-brief.
+- **arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, 319 in-window; 106 after biomed∩agentic filter): shortlist —
+  - Brain Researcher — https://arxiv.org/abs/2608.19902 — **CHOSEN**
+  - Eureka: Task-Conditioned Meta-Agent Orchestration for Scientific Discovery — https://arxiv.org/abs/2608.19047 — physics/math demos, thin biomedical tie
+  - Self-prompting and cross-model consensus for literature data extraction — https://arxiv.org/abs/2608.19025
+  - Science Done on a Machine by a Machine: AI Agents in Computational Chemistry — https://arxiv.org/abs/2608.18508 — perspective/survey
+  - SGHA: Evidence-Grounded Research Problem Discovery with Local LLMs — https://arxiv.org/abs/2608.17501
+  - Do LLMs Know a Good Hypothesis When They See One? — https://arxiv.org/abs/2608.17270
+  - Evidence-Grounded Multi-Agent System for Bio-Robot Design — https://arxiv.org/abs/2608.19699
+- **PubMed** (reldate=5, 100 PMIDs returned; 90 keyword hits, 4 substantive):
+  - LabBridge: LLM agent for LOINC standardization / cross-lingual semantic interoperability — https://www.jmir.org/2026/1/e92499 — runner-up, full text fetched, lost on story strength
+  - Data leakage in KG-embedding benchmarks for biomedical link prediction — doi:10.1093/bioinformatics/btag608
+  - Locally executed agentic AI for systematic-review screening — doi:10.2106/JBJS.OA.26.00102
+  - Entering the agentic era of AI in drug discovery (Nat Chem Biol) — comment, no abstract
+- **ChemRxiv**: WebSearch surfaced nothing inside the 4-day window (newest relevant item was 2026-07-28).
+- **News / product launches**: nothing in-window and on-target. Nature Biotech "Agentic AI and the rise of in silico team science" hit the `idp.nature.com` auth wall — permanent, dropped.
+- **Funders**: ARPA-H — nothing AI-related 08-16→08-21 (STREAM is weed management). NIH news releases — 403 on WebFetch, read via `r.jina.ai`, no AI program launches. NSF/HHS not separately checked after two clean misses.
+
+One note for the log: the show has now run four consecutive episodes in the agentic-science-infrastructure lane (self-auditing objectives, fleet provenance, agent interoperability, and today's analytic governance). Today's mechanism is distinct — multiverse-exposed claim scoping with six adjudicated claim states — and it was the strongest readable item, but if the KG/ontology lane stays thin the rotation is worth watching. The deferred phenotype-genotype curation preprint is the natural corrective once it renders; I saved it to memory.
+=== 2026-08-21T02:08:10-07:00 done  biomedical-agentic-ai (exit 0) ===
