@@ -2465,3 +2465,33 @@ You've hit your session limit · resets 7:10am (America/Los_Angeles)
 You've hit your session limit · resets 7:10am (America/Los_Angeles)
 === 2026-08-21T02:55:38-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-08-21T02:55:38-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
+=== 2026-08-21T07:15:00-07:00 start justice-biotech-brief ===
+Episode written for 2026-08-21. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, the `feed.xml` edit, and the commit — `publish_pending.py` will do those after batch TTS.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-08-21-abbv-1480-rc148-pd1-vegf-bispecific-squamous-nsclc-wclc.md` — 1,080 spoken words (siblings run 1,017–1,054 → ~345 s)
+- `…​.rss-item.xml` — full item with `__LENGTH__` / `__DURATION__` placeholders; validated as well-formed XML
+- `…​.commit-msg`
+
+**Pick:** ABBV-1480 (RC148) — AbbVie's PD-1×VEGF bispecific, licensed from RemeGen in January for $650M up front / up to $4.95B in milestones. This morning's WCLC preview carries its first clinical data: 90.0% ORR in squamous (27/30) and 75.9% in non-squamous (22/29) at the 10 mg/kg recommended Phase 3 dose, plus no grade ≥3 hemorrhages. The take argues the 90% is nearly meaningless (single-arm, open-label, 30 patients, all 24 sites in China, against a 559-patient randomized global benchmark of 58.4%) and that the hemorrhage line is the load-bearing one — squamous histology being bevacizumab's twenty-year absolute contraindication — but that zero events in ~59 patients caps the risk near 5–6%, fully consistent with HARMONi-6's 1.9%. Right question, underpowered answer. The registry work turned up the real story: RemeGen's China Phase 3 uses the soft tislelizumab control HARMONi-6 used, while AbbVie's own 940-patient global trial opening Sept 22 is squamous-only against pembrolizumab plus chemo with **PFS and OS as co-primary endpoints** and ORR demoted to secondary — the honest experiment nobody in this class has finished.
+
+**Candidate funnel**
+
+*bioRxiv (details API, 08-20 + 08-21):* 283 entries pulled day-by-day — the API returned inconsistent `total` values (124 vs. 241 for the same day) and intermittent empty pages, so a first pass silently truncated at 180; a retry-until-non-empty refetch recovered the full 283. 21 keyword hits, 4 substantive after discarding spurious matches. **All 4 deferred — not-yet-rendered, abstract-only via both `fetch_preprint.py` and direct `r.jina.ai` on `.full`**, so ineligible under the full-text gate (saved to memory for a later run):
+- LIME — Tumor-tropic *E. coli* as living T and NK cell engagers, claims it beat tarlatamab in SCLC models — `10.64898/2026.08.18.745642` *(runner-up overall)*
+- TROP2-targeting chimeras (TRTACs) for membrane protein degradation + drug delivery — `10.64898/2026.08.19.745708`
+- PD-1-targeted IL-2v expands a stem-like CD8 subset distinct from anti-PD-1 — `10.64898/2026.08.17.745170`
+- Proximity directs transglutaminase site selectivity in native antibody modification (ADC conjugation) — `10.64898/2026.08.18.745451`
+
+*News / press (Endpoints index, BioPharma Dive, BioSpace, Fierce Biotech, PR wires):* ~60 headlines scanned, 6 on-target.
+- **ABBV-1480 (RC148) PD-1×VEGF, 1L NSCLC Phase 1b — AbbVie newsroom, Aug 21 → CHOSEN**
+- RXIM002 — RiboX circRNA in vivo CAR-T death in a China IIT, plus two GOP lawmakers asking FDA to reject unaudited Chinese trial data (Aug 21). Most on-target modality-wise; **dropped because the two Endpoints exclusives carrying the primary reporting are hard-paywalled** — jina returns only the lede. Backstory (Aug 8 IND press release, Fierce Aug 17 IIT analysis) is readable if this becomes pickable later.
+- BioNTech pumitamig + elfetabart drozuntecan (B7H3 ADC) WCLC combo preview, Aug 20 — pumitamig already covered 2026-08-05
+- Werewolf → Ambros reverse merger, $150M PIPE, Aug 21 — INDUKINE IO platform implicitly valued at $47.5M; readable but the surviving asset is a CRPS-1 bisphosphonate
+- Pheast PHST001 anti-CD24 macrophage checkpoint, Fierce Aug 21 — CEO interview, no new data
+- Merck/Moderna intismeran Phase 3 melanoma win, Aug 19–20 — major IO event but topline-only (no hazard ratio disclosed) and at the edge of the 1–2 day window
+
+*Fierce Biotech access note:* homepage and articles 403 via `WebFetch`; readable via `curl -H "x-no-cache: true" r.jina.ai/<url>` (the cached snapshot returns only a tracker pixel).
+
+*Policy / funder:* ARPA-H newest item Aug 18, nothing on-target. NIH press releases page returned HTTP 403 via WebFetch — one source down, noted per the source-level-failure rule. NSF not reached; not consequential given the day's clear winner.
+=== 2026-08-21T07:28:19-07:00 done  justice-biotech-brief (exit 0) ===
