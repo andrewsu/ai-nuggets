@@ -3652,3 +3652,44 @@ Nothing changed. The run stands as reported:
 - Still blocked behind Cloudflare `error code: 1015`: DrugEvolve (`745117`) and the brain-metabolomics/cocaine preprint (`744954`).
 - Recovered but unused: the dopamine-as-striatal-gain-regulator paper (`745105`, 2.6 MB PDF) — logged in memory as the first pick for the next run.
 === 2026-08-21T07:48:11-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-22T02:50:12-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus both transient stubs and stopped short of TTS, R2 publish, feed edit, and commit — `publish_pending.py` picks those up after batch TTS.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-08-22-receptor-and-reason.md` (3,231 words, ~18 min at 1.2×, 11 items)
+- `…rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…commit-msg`
+- `state/shipped.jsonl` — one appended line, 11 keys (now 92 lines)
+
+**Candidate funnel**
+
+Sources scanned:
+- **bioRxiv details API** — 1,225 unique preprints across 2026-08-17→08-22 (day-by-day, paginated; 08-16 returned 0 items). 122 survived category + neuropsychopharm/computational relevance filter after dedup against the shipped ledger.
+- **arXiv** — shared daily cache (`/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries), 37 matched agentic × biomedical since 08-15. No dedup hits.
+- **Journals** — Neuropsychopharmacology (7 new), Molecular Psychiatry (10 new), Biological Psychiatry in-press (4 in window). *Failed sources:* Neuropharmacology/ScienceDirect → captcha through jina; IJNP/academic.oup.com → captcha; CPT:PSP → Cloudflare verification. All logged, run proceeded.
+- **Psychiatric Times** — 6 in-window items, 4 read in full.
+
+Shortlist (✓ = chosen):
+- ✓ Brain Researcher, agentic harness for neuroimaging — arXiv 2608.19902 **(LEAD)**
+- ✓ Science Done on a Machine by a Machine — arXiv 2608.18508
+- ✓ PerturbTrace — biorxiv 10.64898/2026.08.18.745260 *(abstract-only, self-contained, flagged in script)*
+- ✓ Evidence-constrained mechanistic synthesis — biorxiv 10.64898/2026.08.17.745376
+- ✓ Domain-adapted molecular language models — arXiv 2608.17567
+- ✓ mu-opioid slows A11 dopamine pacemaking — 10.1038/s41386-026-02531-x
+- ✓ ZI–LHb dual regulation in PTSD model — 10.1038/s41380-026-03796-w
+- ✓ Antipsychotic response trajectories in medication-naive FEP — 10.1038/s41386-026-02515-x
+- ✓ Neurobehavioral effects of FUS-mediated BBB opening — biorxiv 10.64898/2026.08.12.744037
+- ✓ Mitragynine NIH phase 1 for OUD — psychiatrictimes.com/view/kratom-component-in-clinical-trial-for-opioid-use-disorder
+- ✓ PT00114 pre-IND, GAD — psychiatrictimes.com/view/fda-feedback-paves-way-for-new-ind-filing-for-pt00114-in-generalized-anxiety-disorder
+- Eureka meta-agent orchestration — arXiv 2608.19047 — dropped, physics/math only, no bio angle
+- Logit-energy hypothesis ranking — arXiv 2608.17270 — read in full, cut for length
+- PP-01 cannabis withdrawal NIDA grant — read in full, cut (mechanism too vague to say anything)
+- Psilocybin lengthens hippocampal sharp-wave ripples — biorxiv 10.64898/2026.08.17.745042 — **deferred, abstract-only** (would have been a top-3 pick)
+- Exact-residue atlas of opioid receptor wiring — biorxiv 10.64898/2026.08.14.744957 — deferred, abstract-only
+- Dopamine as striatal gain regulator — biorxiv 10.64898/2026.08.16.745105 — deferred again (read 08-21, unreachable today)
+- DrugEvolve — biorxiv 10.64898/2026.08.16.745117 — deferred, abstract-only
+- Naloxone/conditioned-fear sex differences — biorxiv 10.64898/2026.08.20.745978 — deferred, abstract-only
+- Normative sgACC–DLPFC rTMS targeting — S0006-3223(26)01470-8 — dropped, paywalled with no preprint
+
+The bioRxiv deferrals are all the shared-IP rate limit rather than render lag in most cases: direct browser-UA `.full.pdf` returned `error code: 1015` on the first attempt of the run, because biomedical-agentic-ai runs ahead of this show and had already spent the budget. I've recorded that in memory along with the workaround that carried the day — arXiv PDFs via `mutool`, and nature.com full text via `r.jina.ai`, which both worked cleanly.
+=== 2026-08-22T03:06:34-07:00 done  receptor-and-reason (exit 0) ===
