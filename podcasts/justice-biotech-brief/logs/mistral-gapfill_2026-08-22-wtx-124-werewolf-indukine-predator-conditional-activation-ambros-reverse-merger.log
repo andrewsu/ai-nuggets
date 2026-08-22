@@ -1,0 +1,5 @@
+Script body: 6772 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2986 chars) -> 131.7s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2862 chars) -> 139.2s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (922 chars) -> 37.9s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-08-22-wtx-124-werewolf-indukine-predator-conditional-activation-ambros-reverse-merger.mp3 [mistral] 2,769,232 bytes, 346.1s

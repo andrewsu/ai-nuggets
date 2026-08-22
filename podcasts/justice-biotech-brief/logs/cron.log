@@ -2495,3 +2495,36 @@ Episode written for 2026-08-21. `SKIP_TTS=1` is set, so per PIPELINE.md I skippe
 
 *Policy / funder:* ARPA-H newest item Aug 18, nothing on-target. NIH press releases page returned HTTP 403 via WebFetch — one source down, noted per the source-level-failure rule. NSF not reached; not consequential given the day's clear winner.
 === 2026-08-21T07:28:19-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-22T02:40:12-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two stubs and left TTS, R2 publish, feed insertion, and the commit to `publish_pending.py`.
+
+**Files written** (no commit — batch mode):
+- `podcasts/justice-biotech-brief/scripts/2026-08-22-wtx-124-werewolf-indukine-predator-conditional-activation-ambros-reverse-merger.md` (1,045 spoken words, ~6 min)
+- `…​.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders; validated as parseable XML)
+- `…​.commit-msg`
+
+**Chosen:** WTX-124 / WTX-330 — Werewolf's tumor-protease-activated IL-2 and IL-12 INDUKINEs become "legacy assets" in the Aug 21 Ambros reverse merger that prices the whole PREDATOR platform at $47.5M, eight months after the company pivoted to a masked T-cell-engager platform.
+
+---
+
+### Candidate funnel — 2026-08-22
+
+**bioRxiv (08-21 + 08-22, day-by-day paginated): 856 records scanned → 7 keyword hits → 1 substantive**
+- `10.64898/2026.08.17.743749` — Integration of clinical and T-cell immune profiling to predict early response to CD3xBCMA bispecific antibody immunotherapy in multiple myeloma — **DEFERRED, abstract-only** (both `fetch_preprint.py` and direct jina; no body sections)
+- Other 6 hits were spurious ("checkpoint" = cell-cycle, "VEGF" in an ApoE4 thrombosis paper, "CD3" as a flow marker, "nanobody" in an epitope-prediction benchmark, "tumor microenvironment" in a bioprinting paper). 08-22 was barely populated at cron time (12 records).
+- **Deferred-pick retest (per memory, LIME first):** LIME 745642 (living T/NK cell engagers, beat tarlatamab), PD1-IL2v 745170 — both **still abstract-only** on day two; TRTACs 745708 hit a jina upstream-connect error. All remain deferrals; LIME nearing the not-going-to-render line.
+
+**News / press (last 1–2 days): ~90 headlines scanned across 5 indexes → 8 on-target → 3 fresh and non-duplicative**
+- ✅ **CHOSEN** — Werewolf/Ambros all-stock merger + $150M PIPE, Aug 21 — `globenewswire.com/news-release/2026/08/21/3349041/`
+- Akeso AK157D1 (B7-H3 ADC) NMPA clearance for Phase 1, Aug 21 — on-target but IND-only, no data; thesis largely a rerun of the AK146D1 episode (Jul 20)
+- Leads Biolabs opamtistomig (PD-L1×4-1BB) NDA accepted with priority review, Aug 21 + WCLC 1L NSCLC abstract, Aug 20 — asset already covered Aug 1
+- ✗ EC approves Tecvayli (teclistamab) + daratumumab, Aug 21 — **rerun**: the MajesTEC-3 substance shipped Jun 28 as the CHMP positive opinion; the EC decision adds no new data
+- ✗ BioNTech pumitamig + elfetabart drozuntecan "first global data," Aug 20 — read in full: it is an abstract-title announcement, **zero efficacy numbers** (data comes Sept 12–15 at WCLC); pumitamig also covered Aug 5
+- ✗ J&J returns prizlon-cel bispecific CAR-T to AbelZeta — Aug 17, out of window
+- ✗ Merck/Moderna intismeran Phase 3 melanoma win — Aug 19–20, and a vaccine story
+- ✗ Three deaths in China IITs / GOP lawmakers press FDA on Chinese trial data, Aug 21 — policy, no asset
+
+**Policy / funder pages:** ARPA-H latest Aug 18 (out of window); NSF latest Aug 17 (out of window); NIH Aug 21 item is an NICHD director appointment (off-target). No candidates.
+
+**Source failures:** Fierce Biotech — `r.jina.ai` returned a domain-level `AbuseAlleviationError` (DDoS suspected) blocking until 10:41 UTC, retried once at 09:45 UTC, still blocked; Fierce Pharma via jina returned 237 bytes. WebFetch 403s both. Gap covered by Endpoints, BioPharma Dive, BioSpace, and direct primary-source press releases. Two memory files updated (deferred-picks retest log; jina domain-block behavior + the BioSpace index gotcha).
+=== 2026-08-22T02:55:46-07:00 done  justice-biotech-brief (exit 0) ===
