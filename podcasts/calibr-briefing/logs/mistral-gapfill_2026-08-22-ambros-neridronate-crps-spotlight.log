@@ -1,0 +1,6 @@
+Script body: 9839 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2874 chars) -> 139.0s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2995 chars) -> 156.0s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2758 chars) -> 114.4s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (1209 chars) -> 53.0s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-08-22-ambros-neridronate-crps-spotlight.mp3 [mistral] 4,079,325 bytes, 509.9s

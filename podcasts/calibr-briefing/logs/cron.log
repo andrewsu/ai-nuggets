@@ -3406,3 +3406,40 @@ Both episodes are written and staged for the batch pipeline. Summary follows.
 - ❌ Regeneron Pasatru FOP approval, Merck/Moderna post-Keytruda analysis — both shipped in the Aug 19 and Aug 20 episodes
 - ❌ "Three deaths in China shake trust" feature, Trump-2.0-federal-research study, FDA digital-health approach, Epic AI, Novo lower-dose oral Wegovy Phase 3, "7 M&A deals where layoffs followed" — commentary/features/trackers rather than net-new events for this audience
 === 2026-08-21T07:31:21-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-22T02:20:12-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set in this environment, so per PIPELINE.md I stopped at scripts + stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-08-22-pharma-headlines.txt` (1,089 words, ~5:15) + `.rss-item.xml` + `.commit-msg`
+- `2026-08-22-ambros-neridronate-crps-spotlight.txt` (1,544 words, ~7:25) + `.rss-item.xml` + `.commit-msg`
+
+Both stubs validate as XML with `__LENGTH__`/`__DURATION__` placeholders intact; `feed.xml` still parses.
+
+**Spotlight thesis:** Werewolf (HOWL) reverse-merges into Ambros with a $150M PIPE (RA Capital / Janus Henderson) to fund neridronate in CRPS-1. The angle is that Grünenthal ran this exact amino-bisphosphonate at the exact same 400 mg / four-infusion / ten-day regimen through Phase 3 and stopped for futility in 2019 — and the eligibility criteria explain why: Grünenthal enrolled CRPS up to **two years'** duration, refractory (≥2 prior failed treatments), no warm-phase or bone-scan requirement, both CRPS types. Varenna's positive Italian trials enrolled **acute** disease. CRPS-RISE restores that population (≤6 months, warm subtype, centrally-read positive triple-phase bone scan, CRPS-2 excluded, Pain Catastrophizing Scale ≥40 excluded). Same dose, different patient — a clean natural experiment, with the honest counter-risk that backward-derived enrichment often fails forward, and that the enriched cohort is also the one most likely to remit spontaneously.
+
+Per PubMed's attribution requirement, the two clinical references are cited in-script and carry DOI links in the show notes: Varenna et al., *Rheumatology* 2013 ([10.1093/rheumatology/kes312](https://doi.org/10.1093/rheumatology/kes312)) and the open-label extension, *Ther Adv Musculoskelet Dis* 2022 ([10.1177/1759720X221142274](https://doi.org/10.1177/1759720X221142274)).
+
+**Candidate funnel**
+
+Window: news breaking after Friday's cron (~13:00 UTC Aug 21) through Saturday 09:30 UTC. Saturday itself had no new items — this is a Friday-afternoon roundup.
+
+- **Endpoints News** (via `r.jina.ai` index — worked): 22 recent items scanned, 6 net-new since last cron.
+- **BioSpace** (WebFetch — worked): 4 Aug-21 items, all net-new.
+- **BioPharma Dive** (WebFetch — worked, but homepage carried no dated Aug 20–22 items).
+- **Fierce Biotech / Fierce Pharma** — FAILED. jina returned `AbuseAlleviationError` (domain-level DDoS block) on three attempts spanning 09:30–10:00 UTC; block window kept extending (09:43 → 10:24). Skipped.
+- **STAT** — 403, not attempted beyond search indexing.
+- **Federal Register API**, **ClinicalTrials.gov**, **PubMed**, **GlobeNewswire (via jina)** — all worked; used for primary verification.
+
+Shortlist after discarding stale/already-covered items:
+- **CHOSEN (headlines lead + spotlight)** — Werewolf/Ambros merger + $150M PIPE, neridronate CRPS-1 — https://www.globenewswire.com/news-release/2026/08/21/3349041/0/en/werewolf-therapeutics-and-ambros-therapeutics-announce-merger-agreement-and-concurrent-oversubscribed-150-million-private-placement.html
+- **CHOSEN** — Capricor deramiocel PDUFA today + Kaos Capital activist campaign — https://www.biospace.com/business/capricor-investor-calls-for-change-as-company-awaits-decision-on-duchenne-candidate
+- **CHOSEN** — HHS RFI on federal vaccine recommendation categories — https://www.federalregister.gov/documents/2026/08/24/2026-17250/request-for-information-categories-used-in-federal-vaccine-recommendations-and-the-role-of-shared
+- **CHOSEN** — Novo Nordisk OASIS 5, lower-dose oral semaglutide — https://www.biospace.com/drug-development/novo-nordisk-starts-trialing-lower-maintenance-doses-of-oral-wegovy
+- **CHOSEN** — Bavarian Nordic H1 + guidance raise + DKK 750M buyback + Lyme Phase 1 to 2028 — https://www.globenewswire.com/news-release/2026/08/21/3348889/0/en/bavarian-nordic-reports-strong-first-half-2026-results.html
+- **CHOSEN (quick hits)** — Neumora leadership transition / Replimune CCO — https://endpoints.news/replimune-lands-commercial-chief-after-hard-fought-approval-neumora-changes-ceos-names-cmo/
+- Rejected — GOP lawmakers on Chinese trial data; Genentech $750M Hillsboro; PhRMA CEO shortlist: all shipped in the Aug 21 episode.
+- Rejected — Endpoints Bioregnum on federal research funding: lede unreadable behind paywall, no verifiable fact.
+- Rejected — no AI-in-drug-discovery news in window (Endpoints AI channel's newest item is the Aug 19 Anthropic analysis, already covered Aug 20).
+
+**Foresite angle:** no direct portfolio news Friday. The spotlight connects through the non-opioid pain thread — Latigo (Foresite-backed, IPO covered Aug 8) and Vertex's Journavx as the class context against which a bisphosphonate-for-pain bet reads.
+=== 2026-08-22T02:36:40-07:00 done  calibr-briefing (exit 0) ===
