@@ -1974,3 +1974,42 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md batch mode I wrote the
 
 Two notes for you: `WhynotTV` remains stale (no in-window episodes), so the Deep Cut used Dwarkesh again — that's now three of the last five episodes drawing on Dwarkesh/Interconnects/Cognitive Revolution, and the podcast source pool for this show is getting thin. And I dropped the Anna's Archive story despite it being the highest-engagement AI item on HN today; if you'd rather the show track raw community attention over thematic coherence, that call should flip.
 === 2026-08-21T07:28:27-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-22T02:30:12-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE I skipped `gen_tts.py`, `publish_episode.sh`, the `feed.xml` edit, and the commit — `publish_pending.py` will do those after batch TTS.
+
+**Files written:**
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-22-the-tests-you-can-see.md` — 2,888 spoken words (~13–14 min at 1.2×)
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-22-the-tests-you-can-see.rss-item.xml` — validated as XML standalone and inserted into the live feed; `__LENGTH__` / `__DURATION__` placeholders in place
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-22-the-tests-you-can-see.commit-msg` — single line
+
+**Episode spine — "The Tests You Can See."** Three items published this week in unrelated fields with the same finding: the score you can optimize isn't the thing you wanted.
+
+## Candidate funnel
+
+**Twitter/X — unavailable from this host** (documented: xcancel serves a browser challenge, x.com needs auth). Substituted HN front page + Hacker News Algolia + Hugging Face daily papers per the standing workaround. No retry attempted.
+
+**Hugging Face daily papers (Aug 21) — 14 scanned, 4 on-target:**
+- EnvHarness: Awakening Static Worlds for Agent Learning — 243 upvotes — arXiv 2608.19880 — **CHOSEN** (full text read via mutool)
+- SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science? — 58 — arXiv 2608.19799 — **CHOSEN (lead)** (full text read via mutool)
+- FACET: Preserving Source Intent and Executable State in Terminal Task Synthesis — 111 — arXiv 2608.18580 — **CHOSEN (supporting)**, abstract-only, one-sentence mention
+- SkillEvo / MemTrapBench — thematically adjacent, cut for length
+
+**Hacker News — 5 AI stories on front page, 1 chosen:**
+- "AI boosted homework scores, then exam scores dropped" (Economist, 307 pts / 318 comments) — **CHOSEN**; grounded in CEPR DP21577 (Strömberg/Lei/Wu). Economist itself unfetchable from this host; used CEPR + AIED summaries + HN thread for numbers and discourse
+- "I'm becoming AI-blind" (361) / "Claudette" (267) / sub-50ms TTS (144) / Autolith (64) — no substantive technical claim, dropped
+
+**Money (last 7 days) — 8 deals scanned, 2 chosen:**
+- Nvidia–Poolside $6B non-exclusive Model Factory license + $1B at $12B, 109 job offers — **CHOSEN** (Newcomer paywalled past the lede; confirmed via Bloomberg/Yahoo/TNW)
+- Astromech $20M at $3.8B (Lamm/Church, Colossal spinout) — **CHOSEN**
+- Google–Marvell $12.2B warrant — **CHOSEN as one-sentence pattern evidence**
+- Higgsfield $400M at $5.4B / Anthropic IPO prep / Broadcom debt / Rebellions / Twin1 — dropped (no strategic signal, or already covered)
+- Etched, micro1, Groq, Databricks, Cognition, Stripe–OpenRouter — already shipped in prior episodes
+
+**Podcasts (last 14 days) — 4 in-window candidates, 1 chosen:**
+- MLST Aug 10, "AI Is Learning at the Wrong Level of Abstraction" — Matthieu Wyart — **CHOSEN**. Grounded in Korchinski/Favero/Wyart arXiv 2605.27734 (full text read) + Random Hierarchy Model, PRX 14 031001. Episode audio/transcript not retrievable; argument chain attributed as argued, no invented quotes
+- TWIML #773 (Porikli, Qualcomm) — thematically apt ("realism isn't correctness") but a CVPR paper roundup, thin
+- MLST Aug 21 (Adam Becker) / Apollo Research Jul 31 — out of scope or out of window
+- WhynotTV — still stale (no in-window episodes); Dwarkesh has shipped nothing since Aug 11, used yesterday
+
+**Continuity used:** EnvHarness's resettability limitation directly restates Dwarkesh's containerization counter from the Aug 21 episode; the Poolside deal prices the Eiso Kant "Model Factory is the moat" thesis from this show's July 25 Deep Cut. Verified against `feed.xml` that EnvHarness, Astromech, Wyart, SWE-bench Science and the learning-penalty study have no prior coverage.
+=== 2026-08-22T02:48:55-07:00 done  jinglin-ai-pulse (exit 0) ===

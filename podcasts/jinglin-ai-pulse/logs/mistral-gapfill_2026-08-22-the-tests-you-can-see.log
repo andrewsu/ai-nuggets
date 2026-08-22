@@ -1,0 +1,10 @@
+Script body: 17948 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/7 (2984 chars) -> 130.2s ✓
+  [mistral:en_paul_neutral] chunk 2/7 (2874 chars) -> 120.0s ✓
+  [mistral:en_paul_neutral] chunk 3/7 (2865 chars) -> 135.6s ✓
+  [mistral:en_paul_neutral] chunk 4/7 (2889 chars) -> 143.3s ✓
+  [mistral:en_paul_neutral] chunk 5/7 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/7 (2786 chars) -> 142.2s ✓
+  [mistral:en_paul_neutral] chunk 6/7 (2922 chars) -> 137.7s ✓
+  [mistral:en_paul_neutral] chunk 7/7 (621 chars) -> 25.6s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-08-22-the-tests-you-can-see.mp3 [mistral] 7,286,744 bytes, 910.8s
