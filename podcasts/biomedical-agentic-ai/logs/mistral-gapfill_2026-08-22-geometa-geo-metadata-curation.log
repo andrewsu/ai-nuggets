@@ -1,0 +1,4 @@
+Script body: 5886 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2910 chars) -> 129.5s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2975 chars) -> 128.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-08-22-geometa-geo-metadata-curation.mp3 [mistral] 2,338,943 bytes, 292.3s

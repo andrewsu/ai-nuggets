@@ -3623,3 +3623,47 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plu
 
 One note for the log: the show has now run four consecutive episodes in the agentic-science-infrastructure lane (self-auditing objectives, fleet provenance, agent interoperability, and today's analytic governance). Today's mechanism is distinct — multiverse-exposed claim scoping with six adjudicated claim states — and it was the strongest readable item, but if the KG/ontology lane stays thin the rotation is worth watching. The deferred phenotype-genotype curation preprint is the natural corrective once it renders; I saved it to memory.
 === 2026-08-21T02:08:10-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-22T02:00:12-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-22-geometa-geo-metadata-curation.md` (892 spoken words, cap 1150)
+- `…​.rss-item.xml` (validated as XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** GEOMeta — "Automating scientific annotations for open transcriptomic profiles via multi-stage agents", bioRxiv, posted 2026-08-20, Michigan State. Full text read (57pp via `r.jina.ai` on the `.full.pdf` — the `.full` HTML and `fetch_preprint.py` both returned abstract-only).
+
+---
+
+## Candidate funnel
+
+**bioRxiv** (2026-08-19 → 08-22, day-by-day, stride 30) — 2,291 records fetched / 1,016 unique after dedup; 155 broad keyword hits; ~14 substantive after discarding spurious matches ("latency reversing agent", "chemical agent", "autonomous" in physiology).
+- **★ CHOSEN** — Automating scientific annotations for open transcriptomic profiles via multi-stage agents (GEOMeta) — https://www.biorxiv.org/content/10.64898/2026.08.19.745739v1
+- PerturbTrace: Evaluating Feedback Use by AI Co-Scientist Agents in Perturbation Discovery — 10.64898/2026.08.18.745260 *(strong; show ran PertMind 08-18 and CASCADE 08-07)*
+- CryoForge: A Self-Correcting Agent for Cryo-EM Model Building — 10.64898/2026.08.15.745007
+- DrugEvolve: An AI System for Autonomous Algorithm Evolution in Drug Development — 10.64898/2026.08.16.745117
+- Learning protein function through autonomous experimental interaction — 10.64898/2026.08.14.744985
+- MeSyTo: Ontology-Driven Metadata in Toxicological Omics (v2) — 10.64898/2026.08.14.736375
+- Multi-agent molecular optimization → IV anesthetic (MASCOT) — 10.64898/2026.08.17.745149 *(covered by receptor-and-reason 08-21)*
+- GUIA — 10.64898/2026.08.13.744542 *(shipped 08-20)*; AutoBioKG v2–v4 — 10.64898/2026.01.14.699420 *(January preprint, out of window)*
+- **Deferred, full text unreadable:** LLM phenotype-genotype external validation (10.64898/2026.08.13.744701) and LifeSciBench (10.64898/2026.08.13.744657) — both Cloudflare **429** on the jina PDF route today (rate budget spent earlier in the run). Still live candidates.
+
+**arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml` (500 entries, tops out at 08-20); 208 in-window + relevant; one live paced call for 08-21/22 returned nothing newer than 08-20.
+- Scientific Data Skills (SciDSK) — https://arxiv.org/abs/2608.19625 *(runner-up; full text read, 55KB. Bullseye on agent-ready data services/FAIR but non-biomedical and thin evaluation)*
+- Symposium: Trust via Auditable Records for AI Scientist Communities — 2608.19511
+- Artifact-centered Claim-aware Observability for Autonomous Scientific Agents — 2608.18312
+- Traceable Trust for action-ready AI in bioscience — 2608.17997
+- Self-prompting + cross-model consensus for literature data extraction — 2608.19025
+- SWE-bench Science — 2608.19799; Eureka meta-agent orchestration — 2608.19047; AI Agents in Computational Chemistry (Perspective) — 2608.18508
+- Brain Researcher — 2608.19902 *(shipped 08-21)*
+
+**PubMed** (`reldate=5`) — 112 records, 20 relevant after filtering.
+- *Autonomous biomedical research with an AI agent* (Biomni), Science 393:6813 — **rejected as out-of-window**: `pubdate 2026-08-20` is the print issue; PubMed entry date is 2026-07-09 and the show covered it 2026-07-11. Saved as a memory.
+- Entering the agentic era of AI in drug discovery (Nat Chem Biol, 08-19) — commentary, no primary result
+- Clinical Laboratory Terminology Standardization via an LLM-Based Agent (JMIR, 08-20) — on-brief but narrow
+- Autonomous multimodal AI agent for ophthalmic diagnosis (Cell Rep Med, 08-18); ED-triage-agent (Int J Med Inform, 08-18)
+
+**ChemRxiv** — `site:chemrxiv.org` search returned nothing inside the 4-day window (newest on-topic hit was 2026-07-28).
+
+**Policy / funders** — ARPA-H, NIH checked; no agentic-AI or biomedical-AI program launches in window (ARPA-H's most recent are STREAM weed management 08-17 and a small-business impact story 08-18).
+=== 2026-08-22T02:09:30-07:00 done  biomedical-agentic-ai (exit 0) ===
