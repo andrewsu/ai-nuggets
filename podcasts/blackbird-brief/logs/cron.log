@@ -1813,3 +1813,30 @@ You've hit your session limit · resets 7:10am (America/Los_Angeles)
 === 2026-08-21T02:49:31-07:00 start blackbird-brief (retry 5, --model claude-haiku-4-5-20251001) ===
 You've hit your session limit · resets 7:10am (America/Los_Angeles)
 === 2026-08-21T02:49:35-07:00 done  blackbird-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-08-22T02:10:12-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-08-22-portfolio-watch.md` (~1,680-word spoken body, ~9 min)
+- `podcasts/blackbird-brief/scripts/2026-08-22-portfolio-watch.rss-item.xml` (validated XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/blackbird-brief/scripts/2026-08-22-portfolio-watch.commit-msg`
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` updated — new 2026-08-22 run entry, a durable "what staking the pain axis costs" block in the gut GCPII section, and a market-condition read in the Clasp section
+
+**Episode: Portfolio Watch, Saturday 2026-08-22**
+
+Lead is original comparative work, not a press-release recap. Werewolf/Ambros (08-21, $150M oversubscribed PIPE, $500M valuation, Nasdaq shell at $47.5M) is only interesting because I pulled the CRPS-RISE protocol and Grünenthal's two terminated Phase 3s side by side: **same molecule, same 400 mg cumulative IV dose over Days 1/4/7/10, same Week-12 pain-intensity primary endpoint.** Grünenthal stopped at a pooled interim futility analysis in 2019. Everything Ambros changed is the entry door — warm subtype only, ≤6 months from onset, positive centrally-read triple-phase bone scan, CRPS-2/NOS excluded, Pain Catastrophizing Scale ≥40 excluded, eDiary run-in. Five enrichment gates on an unchanged drug.
+
+That converts into three Blackbird reads: the Slusher gut-restricted GCPII program's pain axis needs a *stratification package*, not a novel mechanism (with the candid limit that bisphosphonate biology doesn't transfer); Eddie now has the reverse-merger template priced twice in eight days; and Werewolf — a conditionally-activated-cytokine platform company that became a 6.8% listing vehicle — is the clarifying read for Clasp.
+
+Then: today is Capricor's PDUFA (the live test of the "agency rewards narrowing" frame under the SELEXON pitch, with Kaos Capital demanding board seats the day before); the congressional China-data letter, where the HuidaGene death is now publicly attributed to complement and cytokine activation after high-dose systemic AAV — our own durable line in someone else's words; and a correction to yesterday's episode on the OIG docket deadline (Monday 5 p.m. ET, one working morning left, not zero).
+
+**Candidate funnel**
+- Endpoints News index — 24 items scanned, 4 in-window survived relevance (Ambros reverse merger ✅ CHOSEN; GOP lawmakers/China trial data ✅ CHOSEN; Otsuka psychedelic trial ✅ tail line; Neumora CEO title — cut, no program touch)
+- BioSpace — 16 items (08-19→08-21), 3 survived (Werewolf/Ambros ✅; Capricor activist ✅ CHOSEN; China gene-therapy deaths ✅)
+- Fierce Biotech — **HTTP 403 from this IP, direct and via r.jina.ai; skipped per PIPELINE.md** (recovered its two 08-21 items via search; neither portfolio-relevant)
+- BioBuzz — 8 items, all Greater-Philadelphia regional, 0 survived
+- ClinicalTrials.gov v2 — 5 neridronate/CRPS trials pulled, 3 read in full (NCT07210515, NCT03530345, NCT03560986) ✅ the lead's analytical core
+- regulations.gov v4 — docket HHSIG-2026-0034 re-pulled, still 8 comments, no movement
+- Program sweeps returning nulls: GPR52/Nxera, CAMP4, Clasp, Adventris, aSKY/KRAS-G12D, Skylark, Sensorion, JHU/UMB/Lieber spinouts, Blackbird direct mentions
+- Cut as out-of-window: NIH/federal research-funding items (2025-era; JHU's ~$200M/yr indirect-cost exposure is durable context, not news)
+=== 2026-08-22T02:26:56-07:00 done  blackbird-brief (exit 0) ===
