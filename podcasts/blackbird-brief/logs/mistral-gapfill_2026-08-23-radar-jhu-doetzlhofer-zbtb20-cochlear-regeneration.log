@@ -1,0 +1,6 @@
+Script body: 9774 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2980 chars) -> 137.9s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2971 chars) -> 133.1s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2822 chars) -> 137.5s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (998 chars) -> 49.5s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/blackbird-brief/episodes/2026-08-23-radar-jhu-doetzlhofer-zbtb20-cochlear-regeneration.mp3 [mistral] 4,105,030 bytes, 513.1s

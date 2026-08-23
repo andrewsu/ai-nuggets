@@ -1840,3 +1840,36 @@ Then: today is Capricor's PDUFA (the live test of the "agency rewards narrowing"
 - Program sweeps returning nulls: GPR52/Nxera, CAMP4, Clasp, Adventris, aSKY/KRAS-G12D, Skylark, Sensorion, JHU/UMB/Lieber spinouts, Blackbird direct mentions
 - Cut as out-of-window: NIH/federal research-funding items (2025-era; JHU's ~$200M/yr indirect-cost exposure is durable context, not news)
 === 2026-08-22T02:26:56-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-23T02:10:09-07:00 start blackbird-brief ===
+Both episodes are written. Since `SKIP_TTS=1` is set, I stopped at Phase 1 per PIPELINE.md — scripts plus transient stubs, no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written** (`podcasts/blackbird-brief/scripts/`):
+- `2026-08-23-radar-jhu-doetzlhofer-zbtb20-cochlear-regeneration.md` + `.rss-item.xml` + `.commit-msg` — 1,600 words
+- `2026-08-23-portfolio-watch.md` + `.rss-item.xml` + `.commit-msg` — 1,688 words
+- `memory/blackbird-portfolio.md` updated: new 2026-08-23 log entry, a Kynexis financing bullet in the KAT-II section, an Aletira pre-IND regulatory-rule correction, and a new §2b entry for the Doetzlhofer lab.
+
+**Candidate funnel**
+
+*Stream B — preprints (Sourcing Radar).* Day-by-day `api.biorxiv.org` details sweep 08-17→08-23: **1,576 bioRxiv + 702 medRxiv** records scanned; **19** with a JHU / UMB / Lieber / Kennedy Krieger corresponding institution. Substantive shortlist:
+- ✅ **CHOSEN (LEAD)** — Loss of Zbtb20 disrupts cochlear supporting cell differentiation… (Doetzlhofer, JHU SOM) — https://www.biorxiv.org/content/10.64898/2026.08.19.745776v1 — *full text via `r.jina.ai` on the `.full.pdf` after the `.full` HTML came back abstract-only*
+- ✅ **CHOSEN (watch, not build)** — Bile acid signaling… early caregiving adversity (Opendak, Kennedy Krieger + Haughey, JHU) — https://www.biorxiv.org/content/10.64898/2026.08.14.742173v1 — full text read
+- ⏸ **DEFERRED, not-yet-rendered** — Single-Molecule Proteomics via a Dynamic Translocase (Krantz, UMB) — https://www.biorxiv.org/content/10.64898/2026.08.17.745284v1 — jina→PDF retry hit 429; retry first next run
+- ✗ Leptomeningeal blood–CSF barrier atlas (JHU) — descriptive, no target
+- ✗ Astrocytic Stat3 in prion disease (Baskakov, UMB) — honest negative
+- ✗ Stem cell secretome proteomics platform (Hao, UMD) — methods
+- ✗ ΔDGAT1 Toxoplasma vaccine (Coppens, JHU) — niche
+- PubMed high-impact affiliation sweep 08-16→08-24: 9 hits, none buildable; Lieber had zero corresponding-author preprints.
+
+*Stream A — news (Portfolio Watch), 08-20→08-23.* BioSpace, BioPharma Dive, GlobeNewswire/BusinessWire, ClinicalTrials.gov, regulations.gov v4, PubMed. **Fierce Biotech failed** — 403 direct and blocked at `r.jina.ai` for suspected abuse until 09:36 UTC today; **Endpoints** 403s WebFetch intermittently and its jina render returns nav only. Proceeded on the remaining sources.
+- ✅ **CHOSEN (LEAD)** Kynexis €40M Series A extension → €97M, led by Novartis Venture Fund; KAT-II inhibitor KYN-5356, CIAS Phase 2 enrollment complete, topline end-2026
+- ✅ **CHOSEN** Capricor — correction: FDA's own briefing document contradicts the "hit its primary" framing this show has been using; the lesson is analysis-plan provenance, not narrowing
+- ✅ **CHOSEN** BMS × Chai Discovery + the AIntibody blinded benchmark in *Nature Biotechnology*, same day
+- ✅ **CHOSEN** HHS OIG docket HHSIG-2026-0034 — closes tomorrow 5pm ET, still 8 comments
+- ✅ **CHOSEN (short)** Weinberger/Boehringer COMT review; Scribe IPO market note
+- ↩ Ultragenyx Genglycos — **already the 08-20 lead**, so reused only as the one-paragraph contrast case to Capricor rather than re-reported
+- ✗ Heidi Overton FDA nomination — cut, consistent with the 08-20 call (real context, moves no program)
+- ✗ Off-thesis: Roche Oregon plant, Novo oral Wegovy, Regeneron rare bone disease, Moderna stock reaction, GLP-1 market commentary; BioBuzz 08-14→08-23 was Nuquantic (JHU APL, non-therapeutic) and AbelZeta (covered 08-17)
+- Nulls: Clasp, Adventris, aSKY, CAMP4, Skylark, Sensorion, GPR52/Nxera — nothing in window. **Zero Blackbird direct mentions.**
+
+One thing worth flagging: I could not confirm any FDA action on Capricor's 08-22 PDUFA — the company's IR page is still topped by its 08-13 Q2 release as of this morning, so the episode reports the date passing in silence rather than an outcome.
+=== 2026-08-23T02:40:40-07:00 done  blackbird-brief (exit 0) ===
