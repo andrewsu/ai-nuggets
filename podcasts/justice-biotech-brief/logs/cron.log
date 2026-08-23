@@ -2528,3 +2528,22 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus
 
 **Source failures:** Fierce Biotech — `r.jina.ai` returned a domain-level `AbuseAlleviationError` (DDoS suspected) blocking until 10:41 UTC, retried once at 09:45 UTC, still blocked; Fierce Pharma via jina returned 237 bytes. WebFetch 403s both. Gap covered by Endpoints, BioPharma Dive, BioSpace, and direct primary-source press releases. Two memory files updated (deferred-picks retest log; jina domain-block behavior + the BioSpace index gotcha).
 === 2026-08-22T02:55:46-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-23T02:40:09-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-08-23-lime-living-bacterial-t-cell-nk-engagers-tarlatamab-head-to-head.md` (1,023 words, ~5 min)
+- `…​.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** LIME — tumor-tropic *E. coli* displaying tandem scFvs as living T/NK engagers (Romee/Aguirre, Dana-Farber), DOI `10.64898/2026.08.18.745642`, verified 200 against the bioRxiv details API. Beats tarlatamab head-to-head on tumor growth (p=0.0185) and survival (p=0.0463) in DLL3+ H69 xenografts, with >10¹⁰ CFU/g tumor and an inverted cytokine signature (high intratumoral, low plasma) versus tarlatamab's. Script pushes back on the paper's un-testable "minimal CRS risk" claim, the scaffold-alone inflammatory confound, the 13 nm-synapse-vs-2 µm-bacterium problem the authors concede, and the VNP20009 precedent.
+
+**How it became eligible:** this was a four-day deferral. `fetch_preprint.py` again returned abstract-only, but a direct `r.jina.ai` curl on the `.full` page returned 287 KB with complete Results/Methods/Discussion. I've recorded in memory that the helper's abstract-only verdict is not authoritative — direct curl first, check byte count.
+
+**Candidate funnel:**
+- **bioRxiv 08-22 + 08-23** — 33 records total (30 + 3; weekend collapse), 1 keyword hit, 0 substantive after discarding it (`745433` proteomics of cancer-associated T cells — only "tumor-infiltrating" matched, and it's abstract-only anyway).
+- **Deferred bioRxiv retest (4 items)** — LIME `745642` ✅ **CHOSEN** (full text rendered); `743749` CD3xBCMA myeloma response prediction, `745170` PD1-IL2v stem-like CD8, `745708` TRTACs — all still abstract-only via both channels, deferred again.
+- **News (Endpoints index, BioSpace, BioPharma Dive)** — scanned 08-21/08-22; nothing on-target. Fresh items were policy (RFK Jr. vaccine recommendations, GOP letter on Chinese trial data), reverse mergers, manufacturing, and vaccines. The on-target news in range (iza-bren bispecific ADC 08-20, ABBV-1480 08-21) was already shipped on 08-20 and 08-21.
+- **Fierce Biotech via r.jina.ai** — HTTP 403, no retry value; gap noted. Covered by the Endpoints/BioSpace overlap.
+- **Policy/funder pages** — not reached; the pick was settled and ARPA-H/NIH/NSF have no weekend cadence. Flagging this as a genuine gap in today's sweep rather than a clean pass.
+=== 2026-08-23T02:46:02-07:00 done  justice-biotech-brief (exit 0) ===

@@ -1,0 +1,5 @@
+Script body: 6729 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2863 chars) -> 132.1s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2846 chars) -> 142.0s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (1018 chars) -> 51.5s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-08-23-lime-living-bacterial-t-cell-nk-engagers-tarlatamab-head-to-head.mp3 [mistral] 2,910,084 bytes, 363.7s
