@@ -3693,3 +3693,30 @@ Shortlist (✓ = chosen):
 
 The bioRxiv deferrals are all the shared-IP rate limit rather than render lag in most cases: direct browser-UA `.full.pdf` returned `error code: 1015` on the first attempt of the run, because biomedical-agentic-ai runs ahead of this show and had already spent the budget. I've recorded that in memory along with the workaround that carried the day — arXiv PDFs via `mutool`, and nature.com full text via `r.jina.ai`, which both worked cleanly.
 === 2026-08-22T03:06:34-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-23T02:50:09-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` is set, so I followed batch mode: script plus the two transient stubs, ledger appended, no TTS/R2/feed/commit (the orchestrator does those after batch TTS).
+
+**Published artifacts**
+- `podcasts/receptor-and-reason/scripts/2026-08-23-receptor-and-reason.md` — 11 items, ~3,320 spoken words (≈19 min at this show's measured 175 wpm effective rate, in line with the last five episodes at 18–19 min)
+- `…rss-item.xml` with `__LENGTH__` / `__DURATION__` placeholders (validated as XML)
+- `…commit-msg`
+- `state/shipped.jsonl` — appended one record with 11 keys (93 lines total)
+
+**Lineup** (all full-text read; all within the rolling 7-day window, all DOIs verified against the bioRxiv details API)
+
+1. **LEAD** — Fossat lab, Bordeaux: raphe magnus serotonin neurons are pro-nociceptive when silenced *and* when driven hard; at a fixed 5 Hz, going from 5 ms to 100 ms pulses flips analgesia to hyperalgesia in the same animals. 5-HT2C carries tonic analgesia (most enriched spinal serotonin transcript, holds in human dorsal horn); 5-HT3 on glutamatergic neurons carries the hyperalgesia.
+2. Exact-residue opioid receptor atlas (Wyoming) — activation rewires 35% more contacts while global similarity moves 2.5%, 85% away from the ligand; none of 32 association tests survive correction, and they say so.
+3. Fluoxetine PBPK in the elderly (CPT:PSP) — the age effect is real but *slow*: 1.15-fold at day 10, 2-fold at day 50; CYP2D6 barely moves total active moiety.
+4. DrugEvolve (Zhejiang) · 5. CIFM generative virtual tissue (Thomson, Caltech) · 6. GEOMeta (Chen, Michigan State)
+7. In vivo brain metabolomics, cocaine as neurochemical "equalizer" (Kennedy, Michigan) · 8. Supramammillary β2 nicotinic substrate (Ikemoto, NIDA) · 9. Insular PV interneurons, adolescence and alcohol (UNIFESP) · 10. CKD → central amygdala AT1 (Shenzhen) · 11. Lateral hypothalamic GABA output is not modular (Sciolino, UConn)
+
+**Candidate funnel**
+- **bioRxiv** (Tier 1 + 2): 1,576 items pulled day-by-day across 2026-08-17→08-23 with full cursor pagination (page size is 30; day totals ran to 425, so the unpaginated first page would have missed ~80%). 200 survived keyword+category filtering after removing 920 already-shipped keys; ~75 substantive after discarding spurious matches. 8 chosen.
+- **arXiv**: shared daily cache read (500 entries), 180 with pub date ≥08-16 matching agentic+biomedical filters. Nothing beat the bioRxiv/journal field today — closest were 2608.17270 (energy scoring vs. LLM-as-judge for hypothesis ranking) and 2608.19625 (Scientific Data Skills). No arXiv items selected.
+- **Nature journals**: listing pages 303-redirect to `idp.nature.com`; recovered via `nature.com/npp.rss` and `mp.rss`. 6 new NPP/MP items found, but **5 of 6 are paywalled and jina returns the reference list only** — dropped under the full-text gate. Only the open-access MP white-matter paper was readable, and it lost to stronger picks.
+- **Wiley**: Br J Pharmacol feed (90 items) → 1 in-window CNS candidate (bph.70629, ProTx-III in SMA zebrafish, read in full) held in reserve at 11 items. CPT:PSP feed → the fluoxetine PBPK pick.
+- **Elsevier** (Neuropharmacology, PNPBP, Biol Psychiatry, BP:CNNI, Drug Discovery Today): feeds scanned, but they carry **no dates** and ScienceDirect is captcha-walled — recency unverifiable and full text unobtainable, so logged as scanned-but-ineligible.
+- **Deferred-pick retest** (per memory, done first): DrugEvolve and the opioid atlas both rendered and shipped. Psilocybin sharp-wave-ripples, dopamine-gain-regulator, and naloxone/fear are still abstract-only; the direct browser-UA PDF route returned `error code: 1015` on first attempt, as it has for this show since 08-22.
+
+**Two corrections to standing notes**, recorded in memory: the "~3–4-day bioRxiv HTML render lag" is per-preprint, not date-driven (one-day-old preprints rendered while three-day-old ones didn't), and a 5-worker parallel jina batch drew zero 429s at 03:00. Also, `ascpt.onlinelibrary.wiley.com` is no longer Cloudflare-walled, which makes a previously "permanently walled" CPT:PSP item eligible again.
+=== 2026-08-23T03:11:05-07:00 done  receptor-and-reason (exit 0) ===
