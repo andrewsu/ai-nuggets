@@ -3443,3 +3443,33 @@ Shortlist after discarding stale/already-covered items:
 
 **Foresite angle:** no direct portfolio news Friday. The spotlight connects through the non-opioid pain thread — Latigo (Foresite-backed, IPO covered Aug 8) and Vertex's Journavx as the class context against which a bisphosphonate-for-pain bet reads.
 === 2026-08-22T02:36:40-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-23T02:20:09-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the scripts plus stub files only — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator handles those after batch TTS).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-08-23-pharma-headlines.txt` (1,300 words, ~6.7 min) + `.rss-item.xml` + `.commit-msg`
+- `2026-08-23-abcuro-klrg1-ibm-spotlight.txt` (1,742 words, ~9 min) + `.rss-item.xml` + `.commit-msg`
+
+XML fragments validated as well-formed with `__LENGTH__`/`__DURATION__` placeholders intact; scripts checked for URLs, DOIs, markdown, and pseudo-headings.
+
+**One thing to flag up front:** the tape was genuinely dark. Nothing was published anywhere between Friday afternoon and the run — Endpoints' newest item was a 23-hour-old weekly recap, BioPharma Dive's newest article was Friday, Clinical Trials Arena's newest was Friday 14:32 UTC, and every Saturday-visible item had already shipped in the Aug 22 episode. Rather than skip, I built the day on uncovered Aug 18–21 items plus a week-ahead block. That's an honest widening of the window, and the script says so out loud in its second sentence.
+
+**Candidate funnel**
+
+| Source | Scanned | Survived |
+|---|---|---|
+| Endpoints News (jina index) | 15 | 0 net-new (newest = 23h recap; all "yesterday" items already shipped Aug 22) |
+| BioPharma Dive (jina index) | ~25 | 2 uncovered (GLP-1 cost/perception 8/21; Formation Bio 8/12 — dropped, too stale) |
+| Clinical Trials Arena | ~40 | 4 uncovered (Abcuro, ASPIRE, AC Immune, Scancell) |
+| BioSpace `/news` | 10 | 0 net-new |
+| Fierce Pharma (jina) | 10 | 2 uncovered (Xspray CRL, Aurinia/Teva) |
+| Fierce Biotech | — | **FAILED** — 403 on WebFetch *and* on `r.jina.ai`; skipped |
+| BusinessWire newsroom | — | **FAILED** — 403 via jina; individual PR fetch timed out at 60s, substituted the BioSpace mirror |
+| Targeted searches (Capricor/Savara PDUFAs, Foresite portfolio, AI-in-discovery, Aug 22 wires) | — | 0 net-new (Capricor still silent; Savara's Nov 22 extension is April news) |
+
+Shortlist: **Abcuro $66M Series D / ulviprubart in IBM — CHOSEN, spotlight + headline lead** · Aurinia–Teva to Dec 2036 — chosen · Xspray 4th CRL for Dasynoc — chosen · AC Immune ACI-19764 NLRP3 Ph1 — chosen · Mount Sinai ASPIRE chemo-free HR+/HER2+ — chosen · GLP-1 prescriber/affordability data — chosen · Piramal/Yapan Bio 74% — chosen · Scancell iSCIB1+ MHRA Ph3, Adaptin Bio GBM enrollment, PhRMA CEO search, Formation Bio CSO hire, Takeda orexin — dropped (thin, paywalled, or stale).
+
+Abcuro won the spotlight because it's the only item that hits the Foresite-portfolio focus area directly (Foresite re-upped from the Series C), it hadn't appeared in any prior episode, and the analytics are real: a pre-specified subgroup where both dose arms landed on the identical −1.3 vs placebo −2.6, and a placebo arm that declined *faster* in less-severe patients — a floor-effect signature arguing the endpoint, not the biology, ate the primary. The counter-case (p=0.066 is still a miss, undisclosed subgroup size, and a round a third the size of the last one with one new outside name) is in the script too.
+
+I also saved a memory on the weekend publishing gap, since this show runs daily from cron at 02:00 and will hit the same empty Sunday every week.
+=== 2026-08-23T02:37:34-07:00 done  calibr-briefing (exit 0) ===

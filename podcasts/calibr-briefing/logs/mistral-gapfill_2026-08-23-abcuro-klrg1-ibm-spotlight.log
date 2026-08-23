@@ -1,0 +1,6 @@
+Script body: 10915 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2897 chars) -> 140.9s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2900 chars) -> 134.6s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2849 chars) -> 135.1s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (2266 chars) -> 102.9s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-08-23-abcuro-klrg1-ibm-spotlight.mp3 [mistral] 4,520,481 bytes, 565.0s
