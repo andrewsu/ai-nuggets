@@ -3667,3 +3667,34 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 **Policy / funders** — ARPA-H, NIH checked; no agentic-AI or biomedical-AI program launches in window (ARPA-H's most recent are STREAM weed management 08-17 and a small-business impact story 08-18).
 === 2026-08-22T02:09:30-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-23T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written for 2026-08-23. `SKIP_TTS=1` is set, so I stopped at the script plus the two transient stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (`publish_pending.py` does those after batch TTS).
+
+**Published artifacts**
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-23-praxis-autonomous-experimental-interaction.md` — 898 words in the spoken body (cap 1150); no URLs, DOIs, markdown structure, or pseudo-headings
+- `...praxis-autonomous-experimental-interaction.rss-item.xml` — validated as XML, `__LENGTH__` / `__DURATION__` placeholders in place
+- `...praxis-autonomous-experimental-interaction.commit-msg`
+
+**Pick:** PRAXIS — *Learning protein function through autonomous experimental interaction* (bioRxiv `10.64898/2026.08.14.744985`, posted 2026-08-17, Romero lab at Duke with Pascal Notin). Read in full (90KB body, Intro→Methods). Three uncertainty-driven agents on a shared model and shared experimental memory drove a robotic lab unattended for 25 rounds / ~1 month, engineering glycoside hydrolase specificity toward xylose and mannose. The take I built the episode around: no LLM anywhere in the reasoning loop, a month of full autonomy buys 132 measurements, the headline fold-changes are detection-limit artifacts the authors themselves flag, and the genuinely novel evidence is the fixed 1,000-chimera probe set scored with every round's checkpoint — you can watch the model's prior get corrected on sequences it never tested.
+
+**Candidate funnel**
+
+- **bioRxiv** (08-20→08-23, day-by-day, 955 records after dedup; my first pass used stride-100 pagination and silently truncated to 93 — refetched at the API's real 30-record page size). 90 keyword hits → 12 substantive after discarding "chemical agent" / "llm"-inside-a-word noise:
+  - **CHOSEN** — Learning protein function through autonomous experimental interaction — https://www.biorxiv.org/content/10.64898/2026.08.14.744985v1
+  - MASCOT, multi-agent molecular optimization → rapid-recovery IV anesthetic candidate with animal studies — `10.64898/2026.08.17.745149` (strongest runner-up; passed over as closer to SABLE, shipped 08-13)
+  - DrugEvolve, autonomous algorithm evolution across the drug pipeline — `10.64898/2026.08.16.745117`
+  - CryoForge, evidence-gated self-correcting cryo-EM model-building agent — `10.64898/2026.08.15.745007`
+  - OncoGenRAG, grounded oncology variant interpretation — `10.64898/2026.08.20.746121`
+  - **KRAKEN, provenance-tracked KG (Biolink Model, Translator KG Open + RTX-KG2 + ROBOKOP, MCP server) — `10.64898/2026.08.18.745544` — DEFERRED, body not yet rendered** (jina 200/31KB, abstract + boilerplate only). Best on-brief candidate of the day on topic fit; retest first tomorrow.
+  - LifeSciBench — `10.64898/2026.08.13.744657` — still unread, third run
+  - LLM phenotype-genotype external validation — `10.64898/2026.08.13.744701` — DEFERRED, bioRxiv-side Cloudflare 429 on the PDF route as the *first* jina call of the run, so the path is blocked rather than rate-budgeted
+  - MeSyTo ontology metadata v2, AutoBioKG v4 (January preprint), PerturbTrace, KG-embedding leakage benchmark — out on recency or already covered
+  - Already shipped this week: GUIA (08-20), Persistent AI Scientist fleet (08-19), GEOMeta (08-22)
+- **arXiv** — daily cache (500 entries) read first; it truncates at 2026-08-20T18:00, so I made one live paced range query for 08-20T17:00→08-24, which returned 11 items ending at the identical timestamp. arXiv has announced nothing newer, so the cache is complete coverage. 101 relevance hits; shortlist: Symposium (auditable records for AI-scientist communities, `2608.19511`), Artifact-centered Claim-aware Observability for Autonomous Scientific Agents (`2608.18312`), Eureka meta-agent orchestration (`2608.19047`), self-prompting cross-model consensus for literature data extraction (`2608.19025`), neuro-symbolic OWL 2 DL (`2608.17741`). All passed over as weaker than PRAXIS; the agent-community items also overlap heavily with Chester and GUIA this week.
+- **ChemRxiv** — `site:chemrxiv.org` search returned nothing inside the 4-day window (newest relevant items March–June 2026). No candidates.
+- **PubMed** (reldate 5, date-sorted, 155 records fetched with abstracts) — 117 hits, almost all clinical-LLM evaluation. Nearest misses: *Entering the agentic era of AI in drug discovery* (Nat Chem Biol, commentary), *LLMs enhance annotation of enzymes in metagenomes* (Sci Adv), LLM-agent clinical lab terminology standardization (JMIR Med Inform), KG-embedding data-leakage benchmark (Bioinformatics). Nothing beat the pick.
+- **News / product launches** — no on-target agentic-biomedical launch inside the 3-day window; searches surfaced only June–July items.
+- **Policy / funders** — ARPA-H news latest is 08-18 (small-business ecosystem) and 08-17 (HHS STREAM); nothing agentic-AI in window. NIH/NSF/HHS produced no in-window agentic-AI program news.
+
+One recurring tool problem worth flagging: `scripts/fetch_preprint.py`'s jina channel reported "abstract only" for PRAXIS, whose body a direct `curl r.jina.ai/...v1.full` returned at 90KB on the first try. The helper's jina channel is unreliable enough that it will cost you eligible picks — I'd use direct curl as the primary route until it's fixed.
+=== 2026-08-23T02:08:13-07:00 done  biomedical-agentic-ai (exit 0) ===
