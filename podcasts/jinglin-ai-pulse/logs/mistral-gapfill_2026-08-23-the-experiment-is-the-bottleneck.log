@@ -1,0 +1,10 @@
+Script body: 15875 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/6 (2981 chars) -> 141.8s ✓
+  [mistral:en_paul_neutral] chunk 2/6 (2862 chars) -> 146.8s ✓
+  [mistral:en_paul_neutral] chunk 3/6 (2883 chars) -> 124.4s ✓
+  [mistral:en_paul_neutral] chunk 4/6 (2930 chars) -> 145.0s ✓
+  [mistral:en_paul_neutral] chunk 5/6 (2957 chars) -> 138.9s ✓
+  [mistral:en_paul_neutral] chunk 6/6 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 6/6 attempt 1 FAILED: chunk duration 49.1s < floor 50.3s (likely truncated)
+  [mistral:en_paul_neutral] chunk 6/6 (1257 chars) -> 55.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-08-23-the-experiment-is-the-bottleneck.mp3 [mistral] 6,467,335 bytes, 808.4s

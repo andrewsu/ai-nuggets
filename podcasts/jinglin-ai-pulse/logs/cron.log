@@ -2013,3 +2013,35 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE I skipped `gen_tts.py`, `p
 
 **Continuity used:** EnvHarness's resettability limitation directly restates Dwarkesh's containerization counter from the Aug 21 episode; the Poolside deal prices the Eiso Kant "Model Factory is the moat" thesis from this show's July 25 Deep Cut. Verified against `feed.xml` that EnvHarness, Astromech, Wyart, SWE-bench Science and the learning-penalty study have no prior coverage.
 === 2026-08-22T02:48:55-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-23T02:30:09-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md batch mode I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `scripts/publish_pending.py` does that after the batch TTS job.
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-23-the-experiment-is-the-bottleneck.md` (2,612 spoken words, ~16 min)
+- `…the-experiment-is-the-bottleneck.rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `…the-experiment-is-the-bottleneck.commit-msg`
+
+**Episode: "The Experiment Is the Bottleneck"** — one claim from three directions: the scarce input in AI research right now isn't ideas, it's a trustworthy experiment.
+
+- **Lead** — Prime Intellect's "Measuring Autonomous AI Research": 153 autonomous runs, 18 frontier models, 8×H200 each, up to 8.7 days, everything public. No model produced a genuinely new method, yet Fable 5 closed 81.7% of the human gap and Kimi K2.7 closed 7.2%. The separator is experimental hygiene — 62 of ~100 runs measured the speedrun's noise themselves (and cluster at the top), 42 independently discovered that same-seed reruns move the loss and rebuilt screening around shared-seed comparison, strong models re-ablated after every merge. Includes their own disclosed ~54-step variance band (which puts the 24-hour ordering inside noise) and METR's contamination caveat from the HN thread.
+- **Pulse 2** — Level1Techs' "Why your local LLM feels dumber than it is" (HN front page today, 344 pts): weights fixed, serving stack varied; INT4 KV cache breaks a tool call permanently, a community INT8 build beats first-party FP8, Nvidia's NVFP4 comes last at ~50% top-1 flips by 88k context. Pairs against the speedrun as the same GPU fact encountered as a silent failure instead of an instrument.
+- **Pulse 3** — the new MCP roadmap (Aug 22) as an admission that the harness is a variable.
+- **Money** — Starcloud $250M at $2.3B, where the binding constraint has moved to launch slots; Rillet $100M at $1B closed in 48 hours off a routine board meeting.
+- **Deep Cut** — Joon Sung Park (Simile) on Latent Space, Aug 21: causal data is scarce because "the world is our ground truth, but it happens once"; his 85–86% digital-twin figure is denominated in each human's own two-week test-retest consistency; frontier models fail as simulators because they were optimized to be rational.
+
+**Candidate funnel**
+
+- **Hugging Face daily papers** — page had not rolled past 2026-08-21 (weekend); 26 items scanned, top 4 all shipped in yesterday's episode. Survivors not yet covered: MemTrapBench (31), SkillEvo (29), Repo0 (17), "Thinking in a Low-Resource Language" (13), "Towards Quantifying Benchmark Optimization in ASR" (9), QuoteBench (7) — all thin relative to the lead, none chosen.
+- **Hacker News front page** — 7 AI items scanned, 4 substantive:
+  - NanoGPT Speedrun Frontier (98 pts) — https://www.primeintellect.ai/research/nanogpt-speedrun — **CHOSEN (lead)**
+  - Why your local LLM feels dumber than it is (344 pts) — https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917 — **CHOSEN**
+  - New MCP Roadmap (206 pts) — https://blog.modelcontextprotocol.io/posts/mcp-roadmap/ — **CHOSEN (short)**
+  - Munder Difflin agent harness (277 pts) — https://munderdiffl.in/ — not opened; novelty-toy, no measurement
+  - A week of using Codex more than Claude (192 pts) — anecdotal preference post, dropped
+- **Business/funding (TechCrunch AI, 7-day window)** — Starcloud $250M **CHOSEN**, Rillet $100M **CHOSEN**; Micro1, Stripe/OpenRouter, OpenAI privacy already covered or off-beat. No new Aug 22–23 rounds — weekend.
+- **Podcasts (14-day window)** — Latent Space "Simulation: the new Scaling Law — Joon Sung Park" (Aug 21) **CHOSEN**, full transcript read. Dwarkesh: nothing since Aug 11 (used). Interconnects: nothing since Aug 17. MLST video list not fetchable (YouTube returned footer only). Latent Space "The Evolution of the Agent Harness" (Aug 22) looked relevant but I could not resolve its real URL — dropped rather than cite an unverified link.
+- **X/Twitter** — not attempted; unreadable from this host (xcancel challenge, x.com needs auth). Discourse signal sourced from HN traction + primary docs, per standing practice.
+- **Full text**: Prime Intellect blog + results explorer, Level1Techs post, MCP roadmap, both TechCrunch pieces, and the complete Latent Space transcript were all read in full. All cited URLs returned HTTP 200.
+
+One note: the show's PROMPT.md nominally targets 1,500–2,200 spoken words, but this show has been shipping 2,377–2,888 for the past week; at 2,612 today's episode sits mid-range for what's actually going out rather than for what the brief says. Worth reconciling one way or the other.
+=== 2026-08-23T02:42:56-07:00 done  jinglin-ai-pulse (exit 0) ===
