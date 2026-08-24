@@ -3473,3 +3473,40 @@ Abcuro won the spotlight because it's the only item that hits the Foresite-portf
 
 I also saved a memory on the weekend publishing gap, since this show runs daily from cron at 02:00 and will hit the same empty Sunday every week.
 === 2026-08-23T02:37:34-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-24T02:20:09-07:00 start calibr-briefing ===
+Published today's `calibr-briefing` episode pair (SKIP_TTS mode — scripts + stubs written; batch TTS and the commit are the orchestrator's job).
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-08-24-pharma-headlines.txt` (1,501 words)
+- `podcasts/calibr-briefing/scripts/2026-08-24-gossamer-seralutinib-spotlight.txt` (2,271 words)
+- `.rss-item.xml` + `.commit-msg` stubs for both (XML validated)
+- No `gen_tts.py`, no R2 publish, no `feed.xml` edit, no commit — per PIPELINE.md's SKIP_TTS section.
+
+**Editorial call:** Monday 02:20 PDT is the same dead window as Sunday, so the lead came from an uncovered Friday-afternoon wire release — Gossamer Bio's up-to-$250M private placement, whose initial closing is dated today. It's a three-tranche structure priced on regulatory events rather than data ($25M now at a $0.1399 common-equivalent, $125M committed only on FDA acceptance of the seralutinib NDA inside 2026, up to $100M of warrants at $0.187 exercisable only on approval), against a $57M cash position and an ~$85M market cap, after PROSERA missed 6MWD at p=0.0320 vs a pre-specified alpha of 0.025. That made a deliberate pair with yesterday's Abcuro spotlight: two near-misses, two opposite answers, and RA Capital / Samsara / Rock Springs in both syndicates.
+
+**Candidate funnel**
+
+Sources scanned:
+- Endpoints News (`r.jina.ai/endpoints.news/news/`) — index returned; newest item was a Sunday weekly recap, everything below it Aug 22 or older and already shipped Aug 21–23.
+- BioSpace `/latest-news-press-releases` — the productive source. ~30 items Aug 21–24; 8 survived relevance.
+- BioSpace article (Aug 24) — the only net-new editorial item anywhere.
+- BioPharma Dive homepage — **degraded**: served stale Aug 13–14 headlines (yesterday's run saw Aug 21). Not usable, no retry value.
+- Fierce Biotech — **failed**: `r.jina.ai` AbuseAlleviationError, domain blocked until Aug 24 09:55 UTC. Fierce Pharma via jina returned a 4-line tracker stub. Skipped both.
+- Clinical Trials Arena — index returned; newest was the Orum item, rest already covered.
+- STAT — not attempted (403s per standing note).
+- Targeted verification: PROSERA topline (Feb 23), TORREY Phase 2, IMPRES 2013, Gossamer Jul 27 FDA/Chiesi release, Gossamer Q2, Winrevair Phase 3 set, Jazz PDUFA date.
+
+Shortlist after discarding wire noise (inducement grants, Nasdaq compliance, office openings, a thyroid-tablet recall):
+- **CHOSEN — headlines lead + spotlight** · Gossamer Bio, up to $250M structured private placement, seralutinib · ir.gossamerbio.com/news-releases/news-release-details/gossamer-bio-announces-250-million-structured-private-placement/
+- **CHOSEN #2** · Scholar Rock, apitegromab regulatory update (EU MAA withdrawn Aug 20; Catalent Indiana stripped from US BLA) · biospace.com/press-releases/scholar-rock-provides-update-on-global-apitegromab-regulatory-progress-across-u-s-europe-and-japan
+- **CHOSEN #3** · "Capricor, Replimune reviews signal FDA's return to reliability" (Aug 24) · biospace.com/fda/capricor-replimune-reviews-signal-fdas-return-to-reliability-but-every-application-will-stand-alone
+- **CHOSEN #4** · Orum ORM-1153, CD123–GSPT1 degrader-antibody conjugate IND cleared · biospace.com/press-releases/orum-therapeutics-announces-u-s-fda-clearance-of-an-ind-application-for-orm-1153...
+- **CHOSEN #5** · Alvotech–Lotus, durvalumab + emicizumab biosimilars, up to ~$150M · biospace.com/press-releases/alvotech-announces-licensing-and-commercialization-agreement-with-lotus-pharmaceutical...
+- **CHOSEN #6** · Antengene interim results, first-ever profitability · biospace.com/press-releases/antengene-announces-2026-interim-results...
+- Passed — RFK Jr. / HHS vaccine-recommendation step: the underlying RFI was covered Aug 22.
+- Passed — third death in China's expedited trials + Moolenaar/Cline letter to FDA: covered Aug 21 (item six).
+- Passed — Genentech $750M Oregon plant, Bavarian Nordic, Replimune CCO, Neumora CEO, PhRMA search, Ramaswamy reverse merger: all covered Aug 21–22.
+- Passed — Shape Memory Medical $10M, Novotech Tokyo office, MustGrow, Piramal: below the bar or off-target.
+
+Memory updated: `reference_weekend_news_gap.md` now records that Monday 02:00 is the same dead window as Sunday, and that the reliable Monday vein is uncovered Friday-afternoon wire releases on BioSpace `/latest-news-press-releases` — a Friday release carrying a Monday-dated event is the ideal Monday lead.
+=== 2026-08-24T02:36:10-07:00 done  calibr-briefing (exit 0) ===
