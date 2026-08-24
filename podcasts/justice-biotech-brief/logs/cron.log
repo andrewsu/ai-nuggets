@@ -2547,3 +2547,30 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plu
 - **Fierce Biotech via r.jina.ai** — HTTP 403, no retry value; gap noted. Covered by the Endpoints/BioSpace overlap.
 - **Policy/funder pages** — not reached; the pick was settled and ARPA-H/NIH/NSF have no weekend cadence. Flagging this as a genuine gap in today's sweep rather than a clean pass.
 === 2026-08-23T02:46:02-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-24T02:40:09-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set in the environment, so per `PIPELINE.md` I stopped after writing the script plus the two transient stubs — no `gen_tts.py`, no R2 publish, no `feed.xml` edit, no commit. `publish_pending.py` picks these up after batch TTS.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-08-24-cd3xbcma-bispecific-day4-cxcl10-lymphopenia-response-biomarker.md` (1,078 words, ~5.5 min at 1.2×)
+- `…​.rss-item.xml` (validated as parseable XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** *Integration of clinical and T-cell immune profiling to predict early response to CD3xBCMA bispecific antibody immunotherapy in Multiple Myeloma* — Institut Cochin / Université Paris Cité, `10.64898/2026.08.17.743749` (v1, posted 08-21). DOI prefix and title verified against the bioRxiv details API. Full text read in full (85 KB with real Results/Methods sections).
+
+The take: the first-week pharmacodynamics are universal (64% lymphocyte crash by day 4, CXCL10 78 → 300 pg/mL, transient γδ/CD8 activation) and — the structurally interesting part — never recur under weekly dosing. Responders are the ones with the *bigger* crash and the bigger CXCL10 rise, while CRS predicts nothing. So the toxicity-shaped signal is the efficacy signal, and the toxicity everyone actually grades isn't.
+
+**Candidate funnel**
+
+- **bioRxiv** (08-22 / 08-23 / 08-24, day-by-day, full collections): 136 + 99 + 8 = 242 unique records. 6 keyword hits, all spurious or off-target — CD3+ infiltrate in CVB3 myocarditis; a CAR-target-screening framework review; α-synuclein nanobody CAR iTregs in Parkinson's; DNCB hormesis in THP-1; ZFP36L1 KO in TNBC; a peristaltic intestinal organoid. Nothing survived the relevance filter as a lead.
+- **Deferred-list retest** (batched direct `r.jina.ai` curl on `.full`, per the standing memory note):
+  - `10.64898/2026.08.17.743749` CD3×BCMA myeloma — **RESOLVED** (85 KB, 9 real headings) → **CHOSEN**
+  - `10.64898/2026.08.19.745708` TROP2 TRTACs — still chrome-only (30 KB), day 5
+  - `10.64898/2026.08.17.745170` PD1-IL2v stem-like CD8 — still chrome-only (30 KB), day 7
+  - `10.64898/2026.08.18.745451` transglutaminase ADC site-selectivity — still chrome-only (30 KB), day 6
+- **News / press** — Fierce Biotech: **HTTP 403 direct and only 675 bytes via `r.jina.ai`, fully blocked today**, skipped. Endpoints News (via jina), BioPharma Dive, BioSpace `/latest-news-press-releases` and `/clinical-research` all read fine but showed nothing net-new after 08-21 — the expected Monday weekend gap. Shortlist after discarding covered items (pumitamig WCLC 08-20 already run 08-05; iza-bren already run 08-20; volrustomig already run 08-18):
+  - Akeso AK157D1 (B7-H3 ADC) NMPA Phase 1 clearance, 08-21, planned combos with ivonescimab and cadonilimab — https://www.akesobio.com/en/media/akeso-news/260821/ — squarely on-target but data-free IND paperwork
+  - Merck/Moderna intismeran autogene Phase 3 melanoma win, 08-19/08-20 — out of window and off Justice's stated interests
+- **Policy / funders** — ARPA-H news: most recent items 08-18 and earlier, nothing in window. NIH and NSF not separately queried after ARPA-H came up empty and the pick was settled; noting that as the one gap in today's source sweep.
+
+Memory updated: the deferred-justice file now records the resolution, and the confirmed rule that bioRxiv bodies render at ~3 days with `>60 KB` **plus** real `^## Results` headings as the diagnostic — the three remaining items are past that lag and should be dropped after one more retest.
+=== 2026-08-24T02:46:44-07:00 done  justice-biotech-brief (exit 0) ===
