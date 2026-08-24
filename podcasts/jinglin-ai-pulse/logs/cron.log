@@ -2045,3 +2045,24 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md batch mode I wrote the
 
 One note: the show's PROMPT.md nominally targets 1,500–2,200 spoken words, but this show has been shipping 2,377–2,888 for the past week; at 2,612 today's episode sits mid-range for what's actually going out rather than for what the brief says. Worth reconciling one way or the other.
 === 2026-08-23T02:42:56-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-24T02:30:09-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two stub files and did not run TTS, publish, edit `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-24-the-cheap-sibling.md` — 2,284 spoken words (~13 min), 19 verified source lines
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-24-the-cheap-sibling.rss-item.xml` — validated as XML, `__LENGTH__` / `__DURATION__` placeholders in place
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-24-the-cheap-sibling.commit-msg`
+
+**Episode: "The Cheap Sibling"** — one spine across all four sections: the frontier premium is eroding on three axes (price, capability floor, refusal behavior), and the same intra-family asymmetry that makes cheap siblings attractive is also a security hole.
+
+- *Twitter Pulse*: FT/Ramp — Fable 5 never past ~11% of corporate Anthropic spend across ~70k companies, weeks before a $2T+ IPO; the 450-comment HN thread blames reliability and a one-command switching cost, not capability, with two counterweights the thread supplied itself. Then the two front-page reverse-engineering reports (GLM-5.3 rooting a Fire tablet for $266 total; Qwen 3.8 27B recovering an obfuscated RSA key in 30 min on one desktop) and the axis nobody prices — the top-voted read that the American models fell back to their safeguards. Short third item on agent.md.
+- *Money Moves*: Inherent's $50M seed and Faraday — a 27B agent directing GPT-5.5 Codex as a tool, reportedly beating Opus 4.8 and GPT-5.5 on held-out replication domains (flagged as unreplicated, their judge and their harness choice); plus DOJ vs. a16z on interlocking AI board seats.
+- *Podcast Deep Cut*: MLST (Aug 22) with Shumailov & Panfilov on "Stealing Reasoning Traces from Proprietary LLM APIs" — full paper text read via `mutool`, including the appendix where they refuse to call the Kimi-prefill result distillation.
+
+**Candidate funnel**
+- HN front page + live front page: ~12 AI items scanned, 5 substantive. Shortlist: Anthropic/FT model economics (498/450) **[chosen]**; GLM-5.3 Fire tablet (650/280) **[chosen]**; Qwen 3.8 27B reverse engineering (340/146) **[chosen]**; agent.md (306/132) **[chosen, short]**; MCP roadmap — dropped, used yesterday; paulg "if I were 17" (95/181) — no technical substance; AI Chip Architectures (78) — off-brief.
+- HF daily papers (2026-08-24): 10 scanned, 3 plausibly relevant (MoE hyperparameter transfer, Graph Engineering for LLM agents, on-policy distillation duality); none beat the discourse items on convergence signal, and the show's remit is the social/intellectual layer.
+- TechCrunch AI + web search, last 7 days: 8 items scanned; Starcloud, Rillet, Micro1, Etched, Poolside/Nvidia, Marvell/Google all already shipped this month. New: Inherent $50M **[chosen]**, DOJ/a16z **[chosen]**.
+- Podcast feeds pulled directly (RSS, not search): MLST, Dwarkesh, Latent Space, TWIML, No Priors, Cognitive Revolution. In-window and unused: MLST Aug 22 Shumailov/Panfilov **[chosen]**; MLST Aug 20 Adam Becker singularity (thin on new argument); No Priors Aug 20 Max Hodak (neurotech, off-brief). Latent Space Aug 21 and Dwarkesh Aug 11 already used.
+- Sources that failed: X/Twitter direct — unreadable from this host (known); ft.com and archive.today — paywall/CAPTCHA, so the FT was sourced via the HN thread plus PYMNTS secondary and the verified canonical FT URL; YouTube transcript (rescript, youtubetotranscript) — JS/CAPTCHA walls, so the deep cut quotes come from the paper text I extracted in full, with the episode's own argument attributed indirectly rather than as quotes.
+=== 2026-08-24T02:45:50-07:00 done  jinglin-ai-pulse (exit 0) ===
