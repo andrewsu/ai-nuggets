@@ -3698,3 +3698,45 @@ Episode written for 2026-08-23. `SKIP_TTS=1` is set, so I stopped at the script 
 
 One recurring tool problem worth flagging: `scripts/fetch_preprint.py`'s jina channel reported "abstract only" for PRAXIS, whose body a direct `curl r.jina.ai/...v1.full` returned at 90KB on the first try. The helper's jina channel is unreliable enough that it will cost you eligible picks — I'd use direct curl as the primary route until it's fixed.
 === 2026-08-23T02:08:13-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-24T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written. In `SKIP_TTS=1` batch mode, so no TTS, no R2 publish, no feed edit, no commit — the orchestrator handles those after batch TTS.
+
+**Files written (3):**
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-24-lifescibench-expert-life-science-tasks.md` (875 spoken words, under the 1150 cap)
+- `…​.rss-item.xml` (validated as XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Chosen:** LifeSciBench — OpenAI, bioRxiv `10.64898/2026.08.13.744657`, posted 2026-08-18, details-API-listed 2026-08-22. Full text read in full (73.6KB, Intro→Discussion→Appendix) — this was a standing deferral since 08-19 that finally rendered today on its sixth retest.
+
+---
+
+### Candidate funnel
+
+**bioRxiv** (details API, 2026-08-21 → 08-24, day-by-day + paginated): 668 records scanned, 39 survived keyword filter, 6 substantive after discarding spurious "agent" matches.
+- **LifeSciBench: Evaluating Language Models on Realistic, Expert-Level Tasks in the Life Sciences** — https://www.biorxiv.org/content/10.64898/2026.08.13.744657v1 — **CHOSEN** (full text opened)
+- KRAKEN: provenance-tracked KG for multiomic/wellness research — `10.64898/2026.08.18.745544` — **deferred, not-yet-rendered** (HTTP 200, 30.9KB, abstract-only; 2nd consecutive day)
+- Assessing Reliability of LLM-Generated Phenotype-Genotype Associations — `10.64898/2026.08.13.744701` — **deferred, likely permanent** (`.full` abstract-only; PDF route Cloudflare-429s for this host)
+- EcoXAI: Autonomous Agentic Ecosystem for Explainable AI — `10.64898/2026.07.08.737358` — v3 of a July preprint, weak as today's news
+- OncoGenRAG: evidence-grounded RAG for oncology variant interpretation — `10.64898/2026.08.20.746121` — on-brief but modest scope
+- MeSyTo ontology-driven metadata for toxicological omics — `10.64898/2026.08.14.736375` v2 — low priority, not opened
+
+**arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, 2026-08-18→08-21; one paced live call confirmed no newer submissions — weekend gap): 322 in-window, 80 relevance hits, 3 substantive.
+- Symposium: Trust via Auditable Records for Communities of AI Scientist Agents — https://arxiv.org/abs/2608.19511
+- SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science? — https://arxiv.org/abs/2608.19799
+- An Evidence-Grounded Multi-Agent System for High-Level Bio-Robot Design — https://arxiv.org/abs/2608.19699
+- (Brain Researcher, https://arxiv.org/abs/2608.19902, excluded — shipped as the 08-21 episode)
+
+**PubMed** (E-utilities, `reldate=5`): 877 matched server-side, top 300 fetched and filtered, 4 substantive.
+- Searching the Druggable Genome using Large Language Models (Bioinformatics) — PMID 42631692
+- PregBase: knowledge base for pregnancy (Artif Intell Med) — PMID 42628173
+- Quality-aware multi-source fusion for Medical Concept Normalization with LLMs (JBI) — PMID 42628772
+- AI-augmented discovery of autophagy regulators (Autophagy) — PMID 42625531
+
+**ChemRxiv** (`site:chemrxiv.org` web search): 0 in-window (last 4 days); newest agentic hit was 2026-07-28.
+
+**News / product launches** (last 3 days): 0 in-window. Nearest items (Causaly–Syneos, NVIDIA Proteina-Complexa, IQVIA.ai) all predate 08-21.
+
+**Policy / funders:** ARPA-H news — newest item 2026-08-18, nothing in-window. **NIH press releases — HTTP 403 from this host, skipped** (not retried; no retry budget spent, gap noted here). NSF and HHS not reached after the NIH failure.
+
+**Why LifeSciBench won:** it's the only in-window item that is both a first-rate audience fit and readable in full — and its actual content is stronger than the leaderboard framing suggests. The rubric-vs-pass-rate gap, the artifact penalty that survives regression adjustment, and the generate/construct floor are three concrete, transferable claims about where biomedical agents break. It also carries a real open-science hook for this listener: the most carefully built life-science eval yet is one OpenAI built, won, and judged, with no promise of public release.
+=== 2026-08-24T02:08:19-07:00 done  biomedical-agentic-ai (exit 0) ===
