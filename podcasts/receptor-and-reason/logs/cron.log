@@ -3720,3 +3720,24 @@ Episode written. `SKIP_TTS=1` is set, so I followed batch mode: script plus the 
 
 **Two corrections to standing notes**, recorded in memory: the "~3–4-day bioRxiv HTML render lag" is per-preprint, not date-driven (one-day-old preprints rendered while three-day-old ones didn't), and a 5-worker parallel jina batch drew zero 429s at 03:00. Also, `ascpt.onlinelibrary.wiley.com` is no longer Cloudflare-walled, which makes a previously "permanently walled" CPT:PSP item eligible again.
 === 2026-08-23T03:11:05-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-24T02:50:09-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, feed edit, and the commit — the orchestrator does those after batch TTS.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-08-24-receptor-and-reason.md` — 3,116 spoken words, ~18 min at this show's measured rate
+- `podcasts/receptor-and-reason/scripts/2026-08-24-receptor-and-reason.rss-item.xml` — validates as XML under the itunes namespace, `__LENGTH__`/`__DURATION__` placeholders in place
+- `podcasts/receptor-and-reason/scripts/2026-08-24-receptor-and-reason.commit-msg`
+- `state/shipped.jsonl` — appended, 94 lines, all parse
+
+**Candidate funnel**
+
+- **bioRxiv** (Tier 1 + 2): 1,848 records fetched day-by-day for 08-17→08-24 with cursor pagination, 1,776 unique DOIs. Neuroscience 376, bioinformatics 155, pharmacology/toxicology 24, animal behavior 38. Keyword+category filter → 28; full title sweep of all pharmacology/behavior/neuroscience entries on top of that.
+- **arXiv**: shared cache `/tmp/ai-nuggets-arxiv-cache.xml` (500 entries, newest 08-21 — Fri, so no weekend gap). 44 passed the agentic-AI ∩ biomedical filter.
+- **Journals**: NPP + Molecular Psychiatry via `nature.com/<jrnl>.rss`; 15 journals via Crossref `created`-sorted listings. **Gaps logged:** Wiley `showFeed` returned 0 items for psp4/cpt/bph; Crossref 429'd on Biol Psychiatry (one retry not attempted — Elsevier bodies are unreadable anyway); Neuron ISSN 404s.
+- **Walled, dropped:** science.org (2 strong Sci Transl Med picks — MAPT splicing modulators, sortilin/progranulin FTD), academic.oup.com (both IJNP items), ScienceDirect bodies (Neuropharmacology, PNPBP, Drug Discovery Today incl. "Can agentic AI dent Eroom's Law?"), nature.com early-access accepted manuscripts (npj TRD transportability), 4 paywalled NPP/MP articles.
+- **Deferred:** all 7 rolling bioRxiv deferrals retested and still abstract-only (26–31 KB), plus 7 new ones. Psilocybin sharp-wave-ripples window closes 08-27.
+
+**Shipped (11, all read in full):** ① c-Src inhibitor NXP900 prevents morphine tolerance by stripping β-arrestin2 efficacy (BJP, LEAD) ② tramadol co-administration doubles MME (CPT) ③ gabapentin+opioids target trial emulation (CPT) ④ Kv4/SK phase-space account of pacemaker noise robustness (bioRxiv) ⑤ reciprocal 7q11.23 organoids (bioRxiv) ⑥ azosome photorelease of oxytocin in CA2 (bioRxiv) ⑦ nine brain proglucagon populations (bioRxiv) ⑧ single-cell PBPK (CPT:PSP) ⑨ AIntibody blinded prospective benchmark (Nat Biotech) ⑩ LLM binder shortlisting, ICML GenBio (arXiv) ⑪ ten therapeutic moves in LLM psychotherapy (arXiv).
+
+One thing worth flagging: four of my initial picks turned out to be already shipped on 08-20/21/22 — Nature-family RSS surfaces articles days *after* their accepted-manuscript DOI registration, so they re-enter the 7-day window looking fresh. I caught it before drafting and back-filled, and I've recorded the guard in memory (dedup-check every candidate key, journal DOIs included, before spending fetch budget).
+=== 2026-08-24T03:10:39-07:00 done  receptor-and-reason (exit 0) ===
