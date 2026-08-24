@@ -1873,3 +1873,30 @@ Both episodes are written. Since `SKIP_TTS=1` is set, I stopped at Phase 1 per P
 
 One thing worth flagging: I could not confirm any FDA action on Capricor's 08-22 PDUFA — the company's IR page is still topped by its 08-13 Q2 release as of this morning, so the episode reports the date passing in silence rather than an outcome.
 === 2026-08-23T02:40:40-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-24T02:10:09-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so I stopped at the script + stubs per PIPELINE.md — the orchestrator does TTS, R2 publish, feed update, and the commit.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-08-24-portfolio-watch.md` (1,670-word spoken body, ~7 min at 1.2×)
+- `podcasts/blackbird-brief/scripts/2026-08-24-portfolio-watch.rss-item.xml` (XML validated; `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/blackbird-brief/scripts/2026-08-24-portfolio-watch.commit-msg`
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` updated (new 08-24 header block; new bullets under Aletira, the GCPII gut program, and 1104health)
+
+**Episode shape — Portfolio Watch, Monday 2026-08-24**
+1. **LEAD (original work).** Today's only trade item is a BioSpace analysis on FDA "returning to reliability" (Replimune approved on the third try four days late; uniQure and REGENXBIO both reversed into Q3 accelerated-approval filings; Disc Medicine resubmitting). The finding I added: all three gene-therapy cases ran through CBER's **Office of Therapeutic Products, which has had no permanent director since June 2025** — Vijay Kumar left end of June 2026, acting CBER chief Karim Mikhail is double-hatted, no permanent hire as of today. That upgrades yesterday's SELEXON pre-IND instruction from "align early" to "get a formal written response," and it resolves the file's standing ⚠ "CBER director unverified" flag. Capricor stated precisely: action date passed in silence, two unconfirmed readings live, lesson unaffected either way.
+2. **Slate/Fulcrum** ($245M, dual PACAP/VIP antibody in-licensed from DartsBio, never dosed in a patient) — uncovered, a week old, and flagged as such, because it makes Thursday's Ambros deal a pattern: ~$395M into pain in five days, both via Nasdaq shells, neither on a self-discovered molecule.
+3. **1104health** — OIG docket closes 5 p.m. ET today, re-pulled this morning: still 8 comments, 1104health not among them.
+4. Nulls + forward calendar.
+
+**Candidate funnel**
+- *BioSpace homepage* — 11 items scanned Aug 20–24; 1 published today → **CHOSEN as lead**. Also surfaced the China gene-therapy-deaths item (already covered 08-22, reused only as a diligence hook).
+- *Endpoints News index (via r.jina.ai)* — 24 items scanned; article bodies 403 behind login. "Chronic pain biotech co-founded by Ramaswamy joins reverse merger train" = the Ambros deal, already covered 08-21.
+- *BioPharma Dive* — 4 dated items Aug 19–24; only today's is sponsored content. Surfaced **Slate/Fulcrum (08-17)** → **CHOSEN as item 2**.
+- *Fierce Biotech* — HTTP 403 direct and via jina, both attempts; skipped.
+- *GEN* — homepage carries no day-level dates; nothing in-window.
+- *BioBuzz* (Baltimore/Maryland) — 20 items scanned back to 08-12; nothing later than 08-18 and nothing touching a Blackbird program.
+- *Targeted portfolio queries* — Nxera/GPR52, Skylark, Sensorion, Clasp, Adventris, aSKY, CAMP4, Revolution Medicines/KRAS G12D, JHTV, UM Ventures, "Blackbird Laboratories/BioVentures": **all null in window**.
+- *regulations.gov v4 API* — docket HHSIG-2026-0034 re-pulled: 8 comments, newest 2026-08-14.
+- *Capricor IR + SEC EDGAR* — IR page current as of today, newest release still 08-13; EDGAR browse endpoint 403.
+- Considered and cut: Techstars × JHU × CareFirst healthcare-AI accelerator (ecosystem, touches no program); Regeneron FOP approval, Moderna/Merck follow-on, Roche/Genentech capex, RFK vaccine policy (off-thesis).
+=== 2026-08-24T02:24:11-07:00 done  blackbird-brief (exit 0) ===
