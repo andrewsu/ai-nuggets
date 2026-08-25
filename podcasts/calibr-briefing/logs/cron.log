@@ -3510,3 +3510,39 @@ Shortlist after discarding wire noise (inducement grants, Nasdaq compliance, off
 
 Memory updated: `reference_weekend_news_gap.md` now records that Monday 02:00 is the same dead window as Sunday, and that the reliable Monday vein is uncovered Friday-afternoon wire releases on BioSpace `/latest-news-press-releases` — a Friday release carrying a Monday-dated event is the ideal Monday lead.
 === 2026-08-24T02:36:10-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-25T02:20:10-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scripts and stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-08-25-pharma-headlines.txt` (1,693 words, 9 items + week ahead)
+- `podcasts/calibr-briefing/scripts/2026-08-25-roche-hanmi-crf2-obesity-spotlight.txt` (1,839 words)
+- Matching `.rss-item.xml` (XML-validated, `__LENGTH__` / `__DURATION__` placeholders) and one-line `.commit-msg` stubs for each.
+
+**Candidate funnel**
+
+Sources scanned:
+- **Endpoints News** (via `r.jina.ai` index) — 15 headlines scanned, 7 in-window (last 24h), 6 relevant. Article *bodies* paywalled (403 direct, jina returns stub); used for discovery + cross-check only.
+- **BioSpace** `/latest-news-press-releases` — 30 items scanned across Aug 24–25, 12 relevant. Full text readable; primary source for the day.
+- **BioPharma Dive** homepage — scanned, no in-window dated items surfaced (trackers only); no unique candidates.
+- **Fierce Biotech / Fierce Pharma** — `r.jina.ai` returned an empty snapshot (Biotech) and HTTP 403 (Pharma). One retry via search-result URL also empty. **Skipped**; Roche/Hanmi item it carried was fully covered by BioSpace + MedCity + PR Newswire.
+- **STAT** — unreadable from this host (known), skipped.
+- Supplemental: PR Newswire (Hanmi release), MedCity News, ADA/EASD abstract search, JACC/PNAS urocortin-2 cardiovascular literature, Law360/Georgetown tracker for the IRA ruling.
+
+Shortlist after discarding non-substantive wire noise (reverse splits, buybacks, personnel, congress-presentation notices):
+- **Roche/Genentech licenses Hanmi HM17321, $190M up front / up to $2.3B** — biospace.com/deals/roche-bets-up-to-2-3b-in-hanmi-pact-for-next-gen-weight-loss-drug — **CHOSEN (headline #1 + SPOTLIGHT)**
+- **FDA approves Imaavy (nipocalimab) for wAIHA, first-ever** — biospace.com/press-releases/fda-approves-imaavy-nipocalimab-aahu-... — **CHOSEN (#2)**
+- **Capricor deramiocel PDUFA extended to Nov 22** — biospace.com/fda/capricors-duchenne-therapy-has-new-life-after-fda-grants-3-month-extension — **CHOSEN (#3)**; resolves the thread left open Aug 23–24
+- **Regenxbio RGX-121 clinical hold, 5/48 spinal masses** — biospace.com/fda/regenxbios-hunter-syndrome-gene-therapy-hit-by-fda-hold-... — **CHOSEN (#4)**
+- **Kollar-Kotelly rejects Merck's IRA challenge** — endpoints.news/dc-judge-rejects-mercks-ira-case-... — **CHOSEN (#5)**; body paywalled, reconstructed from Law360 + Georgetown litigation tracker
+- **Antengene ATG-201 CD19xCD3 masked engager, Australia clearance** + **Astellas ASP2138 CLDN18.2xCD3 into Ph3** — **CHOSEN (#6, paired)**
+- **Boehringer BI 3031185 voluntary Phase 1 hold** — **CHOSEN (#7)**
+- **Alkermes alixorexton Vibrance-1 in The Lancet Neurology** — **CHOSEN (#8)**
+- **Curium/Lantheus 177Lu-PSMA-I&T supply pitch vs Pluvicto** — **CHOSEN (#9)**
+- Moolenaar/Cline letter to FDA on Chinese trial data — dropped, covered Aug 21
+- Bausch + Lomb dry-eye Phase 3 despite Phase 2 miss — dropped, thin and Endpoints-body-locked
+- Kennedy/MMR vaccine policy — dropped, out of focus areas
+- Leads Biolabs opamtistomig PD-L1x4-1BB expansion; Celltrion Omlyclo 300 mg; Savara ERS encore; Barinthus/Clywedog — dropped as routine
+- Massachusetts biopharma jobs report; Piramal/Yapan follow-ons — dropped
+
+Spotlight rationale: Roche/Hanmi beat the nipocalimab approval because it is the day's only story that changes a strategic axis rather than a label — and the mechanism (CRF2 agonism) carries a specific, checkable cardiovascular liability that the coverage uniformly omitted. Full text read for the spotlight: Hanmi's PR Newswire release, MedCity's mechanism piece, BioSpace's deal story, Hanmi's ADA/EASD preclinical presentations (abstract page 403'd; data recovered from Hanmi IR releases), plus the urocortin-2 cardiovascular literature (PNAS murine hemodynamics, JACC:HF UNICORN, Cardiovascular Drugs and Therapy review) and the BELIEVE / EMBRAZE / COURAGE comparator results.
+=== 2026-08-25T02:30:07-07:00 done  calibr-briefing (exit 0) ===
