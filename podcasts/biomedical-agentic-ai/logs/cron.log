@@ -3740,3 +3740,44 @@ Episode written. In `SKIP_TTS=1` batch mode, so no TTS, no R2 publish, no feed e
 
 **Why LifeSciBench won:** it's the only in-window item that is both a first-rate audience fit and readable in full — and its actual content is stronger than the leaderboard framing suggests. The rubric-vs-pass-rate gap, the artifact penalty that survives regression adjustment, and the generate/construct floor are three concrete, transferable claims about where biomedical agents break. It also carries a real open-science hook for this listener: the most carefully built life-science eval yet is one OpenAI built, won, and judged, with no promise of public release.
 === 2026-08-24T02:08:19-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-25T02:00:10-07:00 start biomedical-agentic-ai ===
+Episode written for 2026-08-25. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Files written**
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-25-labbridge-loinc-terminology-agent.md` (948 words in spoken body, under the 1150 cap)
+- `…-labbridge-loinc-terminology-agent.rss-item.xml` (validated as XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `…-labbridge-loinc-terminology-agent.commit-msg`
+
+**Chosen:** LabBridge — LLM-agentic LOINC terminology standardization, JMIR, published 2026-08-20 (PubMed entrez 08-20, inside the 5-day window). Full text read in full via `r.jina.ai` on jmir.org. The take centers on three things the authors are unusually candid about: 90% accuracy is against a curated 1,487-code core list and falls to 41%/39% on the full 104,054-code ontology; the "agentic" validation loop is worth only 1–3 points while retrieval is worth everything (two direct-prompt baselines score literally 0.00); and the gold standard's two annotators agreed only 63.4% of the time, so beating human agreement means aligning with one adjudicating physician.
+
+---
+
+## Candidate funnel
+
+**bioRxiv** (08-22 → 08-25, day-by-day paginated per known cursor bug): 491 unique records scanned, 34 keyword hits, ~5 substantive after discarding spurious matches.
+- KRAKEN provenance-tracked multiomic KG — `10.64898/2026.08.18.745544` — **deferred, 4th consecutive failure**: `.full` HTML 30.9KB abstract-only, `v1.full.pdf` via jina = bioRxiv Cloudflare 429. Highest-priority deferral, now likely permanent; memory updated.
+- OncoGenRAG (evidence-grounded retrieval + BioBERT for variant interpretation) — `10.64898/2026.08.20.746121`
+- Plant Bioengineering Atlas knowledge graph — `10.64898/2026.08.21.746270` — off-brief (plant, not biomedical)
+- EcoXAI autonomous agentic ecosystem — `10.64898/2026.07.08.737358` **v3** — out of window (July preprint revision, per the AutoBioKG precedent)
+- CodonMamba mRNA foundation model — `10.64898/2026.08.24.746601` — foundation model, not agentic
+
+**arXiv** (shared daily cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, 08-21 → 08-24): 162 hits on bio-AND-agentic filter; 13 abstracts pulled, 3 opened in full.
+- Lit2Test / "What Proves You Wrong" — `2608.22948` — **read in full**; excellent falsifiable-ideation benchmark but neighborhoods are ICLR ML papers, not biomedical
+- OaK, dynamic ontology for LLM agents — `2608.22974` — **read in full**; ontology+agentic bullseye but evaluated only on TravelPlanner/CRMArenaPro/ToolQA
+- Aligning Biomedical Texts and Knowledge Graphs (CTD-Align) — `2608.23214` — **read in full**; biomedical KG, but not agentic
+- SSE-Bio self-evolving biomedical multi-hop agent — `2608.22132`
+- CDEG decision-critical evidence for diagnostic agents — `2608.22899`
+- Molecular LLM Agents autonomy ladder — `2608.23104` (survey)
+- ATHENA agentic NAS for EHR — `2608.21712`; Clin-REACT OMOP-aligned ICU reasoning — `2608.22622`; BioMed-Agent-RL — `2608.21864`
+
+**PubMed** (reldate 5): 64 records, 5 substantive after discarding LLM-in-medical-education / chatbot-survey noise.
+- **LabBridge LOINC agent** — PMID 42623484 — **CHOSEN**
+- Data leakage in biomedical KG embedding link prediction — PMID 42623034 (Bioinformatics; OUP body walled, no PMC, ineligible)
+- MCP toolset-first paradigm for intelligent computation — PMID 42622462 (J Phys Chem Lett, not biomedical)
+- "Autonomous biomedical research with an AI agent" (Science) — PMID 42424436 — **rejected as recency trap**: print date 08-20 but `history[].pubmed` = 2026-07-09, i.e. July news
+- AI-augmented autophagy regulator discovery — PMID 42625531
+
+**ChemRxiv:** not queried separately; PubMed/arXiv/bioRxiv yield was sufficient and the chemistry-agent candidates surfaced there (`2608.22967` closed-loop Bayesian molecular design) were dominated by the pick.
+
+**Policy/funder pages:** ARPA-H news and NIH news-releases both fetched cleanly — no agentic-AI or biomedical-AI program launches. Nothing on-brief.
+=== 2026-08-25T02:08:08-07:00 done  biomedical-agentic-ai (exit 0) ===
