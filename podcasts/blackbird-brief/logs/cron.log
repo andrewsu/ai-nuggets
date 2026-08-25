@@ -1900,3 +1900,26 @@ Episode written. `SKIP_TTS=1` is set, so I stopped at the script + stubs per PIP
 - *Capricor IR + SEC EDGAR* — IR page current as of today, newest release still 08-13; EDGAR browse endpoint 403.
 - Considered and cut: Techstars × JHU × CareFirst healthcare-AI accelerator (ecosystem, touches no program); Regeneron FOP approval, Moderna/Merck follow-on, Roche/Genentech capex, RFK vaccine policy (off-thesis).
 === 2026-08-24T02:24:11-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-25T02:10:10-07:00 start blackbird-brief ===
+Published today's episode (SKIP_TTS mode — script + stubs written, no TTS/feed/commit; the orchestrator handles those).
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-08-25-portfolio-watch.md` (~1,990 spoken words, ~10 min)
+- `podcasts/blackbird-brief/scripts/2026-08-25-portfolio-watch.rss-item.xml` (validated as XML; `__LENGTH__`/`__DURATION__` placeholders)
+- `podcasts/blackbird-brief/scripts/2026-08-25-portfolio-watch.commit-msg`
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` — new 2026-08-25 run log entry + four durable bullets added to the Aletira section
+
+**Candidate funnel (Portfolio Watch, window 2026-08-22 → 08-25)**
+
+Sources scanned: Endpoints News index (13 items, 4 in-window), BioSpace news + homepage (~40 headlines), BioPharma Dive homepage (~20), BioBuzz news index (~25), plus targeted queries per program (Nxera/GPR52, Skylark/Sensorion/hearing, RevMed/RAS, Clasp, Adventris, CAMP4, Blackbird entities, JHTV). Fierce Biotech **failed both channels** — `r.jina.ai` returns only a 1×1 tracker pixel, WebFetch 403s; substituted BioSpace/BioPharma Dive/primary PR. Logged in memory as durable.
+
+Shortlist after discarding off-thesis matches:
+- **CHOSEN (lead)** — FDA clinical hold on REGENXBIO RGX-121, MPS II, 08-24 — prnewswire 302858018 / biopharmadive 828578
+- **CHOSEN (item 2)** — Capricor deramiocel PDUFA extended 08-22 → 11-22 on a major amendment, 08-24 — capricor.com PR detail/354
+- **CHOSEN (item 3, gap correction)** — Heidi Overton nominated FDA commissioner, 08-19 — biopharmadive 828264
+- Supporting, folded in: Kaos Capital activist demands at Capricor, 08-21; REGENXBIO RGX-111 January hold / PLAG1 integration event, 01-28 (never previously covered here)
+- Cut: Endpoints "Option-to-acquire deals remain rare" 08-24 (relevant to BioVentures deal structuring but body paywalled/unreadable — not covered from a headline); Roche–Hanmi $2.3B obesity; Cellares layoffs; Boehringer safety-event suspension; Merck IRA ruling; AbelZeta CAR-T reclaim (Maryland but not a Blackbird program)
+- Verified quiet: RevMed/RAS, GPR52 (zero items, Nxera still unsold), CAMP4, Clasp, Adventris, aSKY, Skylark, Sensorion, 1104health; zero Blackbird mentions in-window
+
+The lead is a genuine reversal of a third of yesterday's own lead — the REGENXBIO CRL reversal I cited as proof of FDA gene-therapy flexibility was suspended ~18 hours later — so the episode carries two explicit self-corrections: expression control is not a genotoxicity answer, and a written Type A agreement is not durable against new safety data.
+=== 2026-08-25T02:25:52-07:00 done  blackbird-brief (exit 0) ===
