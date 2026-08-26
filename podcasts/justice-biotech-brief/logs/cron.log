@@ -2575,3 +2575,39 @@ The take: the first-week pharmacodynamics are universal (64% lymphocyte crash by
 Memory updated: the deferred-justice file now records the resolution, and the confirmed rule that bioRxiv bodies render at ~3 days with `>60 KB` **plus** real `^## Results` headings as the diagnostic — the three remaining items are past that lag and should be dropped after one more retest.
 === 2026-08-24T02:46:44-07:00 done  justice-biotech-brief (exit 0) ===
 === 2026-08-25T02:00:09-07:00 paused justice-biotech-brief (14.45d cold; goodbye episode 2026-08-25-goodbye prepared for Phase 2/3) ===
+=== 2026-08-26T02:00:09-07:00 resumed justice-biotech-brief (fresh GET after pause; removed pause.json) ===
+=== 2026-08-26T02:40:09-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped at the script + the two transient stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written:**
+- `podcasts/justice-biotech-brief/scripts/2026-08-26-zanidatamab-ziihera-biparatopic-her2-bispecific-first-line-gea-approval.md` (1,147 spoken words, ~5 min)
+- `…​.rss-item.xml` (validated as well-formed XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Show state:** the show was paused 2026-08-25 (goodbye episode, no downloads in ~14 days); the runner deleted `state/pause.json` on a fresh GET, so this is the resume episode.
+
+**Pick:** Zanidatamab (Ziihera) — FDA approved two regimens 2026-08-25 in first-line HER2+ gastroesophageal adenocarcinoma, the first displacement of trastuzumab from this front line since ToGA in 2010. The episode is built on the antibody-engineering angle (ECD4 + ECD2 on one molecule → trans-crosslinking → HER2 caps → internalization/degradation *and* complement-dependent cytotoxicity that trastuzumab+pertuzumab doesn't deliver), plus two skeptical reads: the control arm carried no checkpoint inhibitor even though enrollment ran to Feb 2025, three years after pembrolizumab became US standard; and the PD-L1 subgroups run backwards, with the anomaly sitting in the control arm's 15.8-month OS rather than the experimental arm's 29.7.
+
+**Candidate funnel**
+
+bioRxiv (details API, day-by-day, full collection): 261 unique records (08-25: 247, 08-26: 14). 47 keyword hits, 39 spurious ("biologic", stray "CD3"/"checkpoint"). Substantive shortlist:
+- NGFR suppresses antigen presentation, limits ICB response in HNSCC — `10.64898/2026.08.24.746602`
+- Combined VEGF + Ang-2 + PD-1 blockade reprograms GBM endothelium — `10.1101/2022.09.03.506476` (v2 of a 2022 preprint; on-target topic, weak as news)
+- TROP2-targeted alpha vs beta radionuclide conjugates, computational microdosimetry — `10.64898/2026.08.19.745876`
+- CellCage single-cell CAR-T cytotoxicity platform — `10.64898/2026.08.21.746043`
+- FMNL1 overexpression boosts T-cell infiltration in solid tumors — `10.64898/2026.08.20.744715`
+- IL-12 restores anti-GD2 CAR-T/CAR-iNKT serial killing in GBM — `10.64898/2026.08.23.746558`
+- C1Q myeloid remodelling in early BCMA CAR-T response — `10.64898/2026.08.23.746487` (too close to the 08-24 BCMA episode)
+- ABCB1 efflux drives resistance to VpreB1-targeted ADCs in B-ALL — `10.64898/2026.08.24.746792`
+
+Deferred-list retest (2 of 3 now resolved, eligible for tomorrow): TRTACs `745708` rendered at day 7 (90.7 KB, 10 headings); PD1-IL2v `745170` rendered at day 9 (75.4 KB, incl. `## Results`); transglutaminase ADC `745451` still empty at day 8.
+
+News (Endpoints index, BioSpace, web search): Fierce Biotech and BioSpace both returned empty via `r.jina.ai` — BioSpace recovered via WebFetch, Fierce skipped. Shortlist:
+- **FDA approves Ziihera/zanidatamab + Tevimbra + chemo in 1L HER2+ GEA — CHOSEN**
+- Ivonescimab + chemo beats durvalumab + chemo on OS in 1L biliary tract cancer (HARMONi-GI1, China) — dead-center on his VEGF×PD-(L)1 beat but zero numbers disclosed, and the show ran three VEGF×PD-(L)1 episodes in the past month (07-23, 08-05, 08-21)
+- Bristol Myers terminates Cellares Cell Shuttle for Breyanzi manufacturing
+- ARCH + Population Health license Haisco type-2 inflammation asset into new NewCo Sentivera ($75.9M up front)
+- J&J Imaavy (nipocalimab) label expansion
+- Amgen vs. academic centers on conflicts in FDA's expedited IND pilot (tarlatamab STREAM-SCLC)
+- NEJM full text was 403 behind the paywall; the trial's numbers were sourced from the BeOne/Jazz releases and the Jazz NEJM-publication release, all fetched in full.
+=== 2026-08-26T02:52:19-07:00 done  justice-biotech-brief (exit 0) ===
