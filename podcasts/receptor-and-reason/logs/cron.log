@@ -3783,3 +3783,39 @@ Two things worth flagging:
 
 I also refined the bioRxiv rendering rule: readability tracks the **DOI-suffix submission date** (~8-day lag), not the posting date — which is why the psilocybin ripple preprint became eligible today after four days of deferral.
 === 2026-08-25T03:03:36-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-26T02:50:09-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-08-26-receptor-and-reason.md` — 3,179 spoken words, ~17.5 min at this show's measured 181 wpm, 11 items
+- `…/2026-08-26-receptor-and-reason.rss-item.xml` — validated XML, `__LENGTH__` / `__DURATION__` placeholders intact
+- `…/2026-08-26-receptor-and-reason.commit-msg`
+- `podcasts/receptor-and-reason/state/shipped.jsonl` — appended line 96 (11 keys)
+
+**Candidate funnel**
+
+Sources scanned:
+- **bioRxiv details API**, 2026-08-19→08-26 day-by-day: 1,950 records / 1,879 unique DOIs → 1,107 passed relevance → 231 CNS-pharmacology-relevant after dedup against 954 shipped keys
+- **Crossref**, 22 journals from 2026-08-19: 5 ISSNs 404'd (wrong ISSN — corrected and re-run), 3 hit HTTP 429 (retried serially, all recovered). ~140 articles → ~35 on-target
+- **arXiv shared cache** (`/tmp/ai-nuggets-arxiv-cache.xml`): 500 entries, 53 matched agentic+bio. **Gap:** cache only spans 08-23→08-25, so 08-19→08-22 arXiv was not covered — logged, not retried (rate limit)
+- **Psychiatric Times**: 5 in-window items, 3 already shipped
+- **Wiley** (previously CAPTCHA-walled): readable again today via `doi.org` — this supplied the lead
+
+Shortlist (chosen marked ✓):
+
+- ✓ `10.1002/cpt.70453` — Brain ECF vs. brain membrane as the biophase for D2 PET occupancy (**LEAD**)
+- ✓ `10.1038/s41380-026-03833-8` — LDT somatostatin→cholinergic disinhibition in depression
+- ✓ `10.64898/2026.08.20.746077` — InterPLM sparse-autoencoder features for neuropeptide precursors *(deferral resolved)*
+- ✓ `10.64898/2026.08.19.745667` — PandaDock *(deferral resolved)*
+- ✓ Clearmind MDMA+PEA patent / FDA July 2026 psychedelic guidance
+- ✓ Roche Elecsys pTau217 FDA clearance
+- ✓ `10.1038/s44220-026-00698-2` — binge-eating / anorexia GWAS
+- ✓ `10.1038/s41380-026-03813-y` — gut microbiome ↔ brain E/I (included with skeptical framing)
+- ✓ `arxiv:2608.24790` — perturbation audit of medical chain-of-thought
+- ✓ `arxiv:2608.23898` — BenchBench-Protocol
+- ✓ `arxiv:2608.22752` — the compaction cliff
+- ✗ `s41386-026-02525-9` (ANO2/dopamine), `s41386-026-02530-y` (somatosensory hedonic feeding), `s41380-026-03831-w` (maternal sleep deprivation/Trem2), `s44220-026-00714-5` (vestibular stim PTSD RCT) — paywalled; **note:** three of these returned 37–106 KB that was pure reference list, so byte count is not a readability test
+- ✗ Deferred, still abstract-only: psilocybin/visual-change-detection `745777`, trazodone-in-AD `746036`, CYP2C19-deletion NN `746170`, EEG-foundation-model reliability `745052`, 6-methylnicotine `746016`, α2-adrenergic selectivity `745649` (rate-limited to 2 KB again — fetch it first and alone next run)
+
+Memory updated: Wiley wall lifted, the byte-count-is-not-readability correction, corrected journal ISSNs, and the refreshed deferral list.
+=== 2026-08-26T03:06:57-07:00 done  receptor-and-reason (exit 0) ===
