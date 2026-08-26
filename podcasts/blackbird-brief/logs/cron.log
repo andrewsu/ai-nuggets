@@ -1923,3 +1923,43 @@ Shortlist after discarding off-thesis matches:
 
 The lead is a genuine reversal of a third of yesterday's own lead — the REGENXBIO CRL reversal I cited as proof of FDA gene-therapy flexibility was suspended ~18 hours later — so the episode carries two explicit self-corrections: expression control is not a genotoxicity answer, and a written Type A agreement is not durable against new safety data.
 === 2026-08-25T02:25:52-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-26T02:10:09-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, feed edit, and the commit — the orchestrator handles those after batch TTS.
+
+**Files written** (`podcasts/blackbird-brief/scripts/`):
+- `2026-08-26-portfolio-watch.md` — 1,834 spoken words (~7 min at 1.2×), lint-clean (no URLs, bullets, headings, or pseudo-headings in the spoken body)
+- `2026-08-26-portfolio-watch.rss-item.xml` — validated XML, `__LENGTH__` / `__DURATION__` placeholders
+- `2026-08-26-portfolio-watch.commit-msg`
+
+**Memory updated:** `podcasts/blackbird-brief/memory/blackbird-portfolio.md` (new 2026-08-26 header block; durable JHTV FY2026 scoreboard + translational-funds entries added to §1 Partner institutions) and `reference_biotech_news_source_access.md` (Fierce now hard-403s on both channels; JHU newsrooms readable via jina).
+
+---
+
+## Candidate funnel — Portfolio Watch, 2026-08-26 (Wed)
+
+No fresh portfolio-company event was on the tape, so the run pivoted to the partner-institution and capital-environment beats. Both produced original material.
+
+**Sources swept**
+- BioPharma Dive homepage + /topic/biotech + /topic/gene-therapy — worked, dated index. ~50 items scanned, 4 survived relevance.
+- BioSpace /latest-news-press-releases + /business — worked. ~17 scanned, 3 survived.
+- Endpoints News — `WebFetch` 403; `r.jina.ai/endpoints.news/` returned relative timestamps only, `/news/` and `/channel/news/` unusable this run. **Partial failure**, covered by BioPharma Dive + BioSpace.
+- Fierce Biotech — **FAILED**: HTTP 403 on both direct `WebFetch` and `r.jina.ai` (homepage, /biotech, and a specific article). Cost one on-thesis piece ("Early-stage funding slumps toward post-pandemic low"); seed-gap claim sourced to MassBio + BioPharma Dive instead.
+- STAT /category/biotech — dated index returned; nothing new for 08-25/26.
+- GEN — undated index, no usable items.
+- BioBuzz + BioHealth Capital Region roundup 2026-08-21 (uncovered here until now) — read in full; no JHU/UMB/Blackbird item.
+- JHTV `ventures.jhu.edu/news/` + JHU Hub — via jina. **New recurring source.**
+- Targeted thread checks (all null): GPR52/Nxera, CAMP4, Clasp/Adventris/aSKY, Revolution Medicines/RAS, Skylark/Sensorion/otoferlin, IBD-GCPII, trial-enrollment FDA/CMS policy, AAV-sector read-across.
+
+**Shortlist after discarding spurious matches**
+- ✅ **CHOSEN (lead)** — JHTV FY2026 annual report, ~$100M revenue · https://hub.jhu.edu/2026/08/25/johns-hopkins-tech-ventures-annual-report/ (+ https://ventures.jhu.edu/news/introducing-jhtvs-fy26-annual-report-the-next-step-moving-research-forward/)
+- ✅ **CHOSEN (item 2)** — MassBio 2026 Industry Snapshot, seed $4.65M vs Series A $79.6M · https://www.biopharmadive.com/news/massbio-industry-biotech-vc-ipo-funding-licensing/828621/ · https://www.massbio.org/news/recent-news/massachusetts-biopharma-sees-strong-resurgence-of-capital-even-as-workforce-numbers-lag/
+- ✅ **CHOSEN (item 2)** — Biotech IPOs approach "escape velocity," 25 YTD, Leerink's two yellow flags · https://www.biospace.com/business/biotech-ipos-approach-escape-velocity-barring-yellow-flags-that-could-threaten-rebound
+- ✅ **CHOSEN (item 3)** — JHTV nine translational-fund awards (Schneck in vivo CAR-T, Won Jin Ho PTPN22, Guan MRGPRX1) · https://ventures.jhu.edu/news/from-cancer-detection-to-carbon-capture-nine-promising-johns-hopkins-innovators-awarded/
+- ⬜ Barclays' Emily Field on CNBC, M&A freeze over (08-24) — used as a one-line sentiment datapoint only; deals she cited were previously announced · https://247wallst.com/investing/2026/08/24/top-biopharma-analyst-sees-biotech-ma-market-reopening-after-a-long-freeze/
+- ❌ China's Haisco / Sentivera NewCo, ARCH + Population Health Partners — interesting structure for Eddie, off-thesis; principle already logged 08-24
+- ❌ Techstars AI Health Baltimore (JHU + CareFirst) — surfaced as if current, **verified as the 2024 launch**; dropped
+- ❌ Jazz Ziihera GEA approval; Cellares 100-person layoff; Bausch + Lomb dry eye; Curium radiopharma; Lilly Foundayo UK; SVB women's-health reset — no line to a Blackbird company, program, or partner institution
+- ❌ REGENXBIO RGX-121 hold — fully covered as yesterday's lead; only the new sell-side sentiment read carried forward
+
+**Two accuracy notes carried into the script:** sources conflict on whether JHTV's 111 U.S. patents were *filed* or *granted* (the script says neither), and the 17 startups / $151M span all of Johns Hopkins, not just life sciences — stated as an explicit caveat in the show notes.
+=== 2026-08-26T02:24:24-07:00 done  blackbird-brief (exit 0) ===
