@@ -3546,3 +3546,40 @@ Shortlist after discarding non-substantive wire noise (reverse splits, buybacks,
 
 Spotlight rationale: Roche/Hanmi beat the nipocalimab approval because it is the day's only story that changes a strategic axis rather than a label — and the mechanism (CRF2 agonism) carries a specific, checkable cardiovascular liability that the coverage uniformly omitted. Full text read for the spotlight: Hanmi's PR Newswire release, MedCity's mechanism piece, BioSpace's deal story, Hanmi's ADA/EASD preclinical presentations (abstract page 403'd; data recovered from Hanmi IR releases), plus the urocortin-2 cardiovascular literature (PNAS murine hemodynamics, JACC:HF UNICORN, Cardiovascular Drugs and Therapy review) and the BELIEVE / EMBRAZE / COURAGE comparator results.
 === 2026-08-25T02:30:07-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-26T02:20:09-07:00 start calibr-briefing ===
+Both scripts and stubs are written. `SKIP_TTS=1` is set, so per `PIPELINE.md` I stopped before TTS, R2 publish, feed edit, and commit — the orchestrator handles those after batch TTS.
+
+**Files written**
+
+- `podcasts/calibr-briefing/scripts/2026-08-26-pharma-headlines.txt` (1,434 words)
+- `podcasts/calibr-briefing/scripts/2026-08-26-jazz-zanidatamab-1l-gea-spotlight.txt` (2,149 words)
+- matching `.rss-item.xml` stubs (XML-validated with the `itunes:` namespace bound; `__LENGTH__` / `__DURATION__` placeholders in place) and one-line `.commit-msg` stubs for each
+
+**Candidate funnel**
+
+Sources scanned:
+- **Endpoints News** (via `r.jina.ai/https://endpoints.news/news/`) — index returned newest-first; ~24 items scanned, 8 net-new since yesterday's cron
+- **BioSpace `/latest-news-press-releases`** — WebFetch, ~10 dated items Aug 25–26
+- **BioPharma Dive homepage** — WebFetch worked; homepage dates lag (showed "22 hours ago" not Aug 26), so used it for article-level fetches
+- **Fierce Biotech / Fierce Pharma** — FAILED. jina returned `AbuseAlleviationError` on `fiercebiotech.com` (block expiry Wed Aug 26 09:33 GMT); retried after expiry and it still returned the 677-byte block payload. `fiercepharma.com` returned a 237-byte tracker stub. Skipped.
+- **STAT** — not attempted (403s per standing note)
+- **Endpoints AI channel** — scanned; newest AI-drug-discovery item is 6 days old, so no fresh AI pick today
+- **NEJM** (`10.1056/NEJMoa2517729`) — CAPTCHA wall. Full-text gate satisfied instead via Jazz's approval PR, Jazz's NEJM-publication PR (carrying the prespecified PD-L1 subgroup numbers), Zymeworks' PR, ASCO Post's ASCO GI writeup, and Oncology News Central — all read in full.
+
+Shortlist after discarding stale/covered items:
+- **Ziihera (zanidatamab) 1L HER2+ GEA approval** — Jazz IR / GlobeNewswire (Aug 25, 14:23 UTC) — **CHOSEN, spotlight + headline lead**
+- **Haisco → Sentivera NewCo, ARCH + Population Health Partners** — BioSpace (Aug 25) — **CHOSEN, item 2**
+- **BMS terminates Cellares, ~100 layoffs** — Endpoints / BioSpace layoff tracker (Aug 25) — **CHOSEN, item 3**
+- **Roche/Lilly Elecsys pTau217 FDA clearance** — BioPharma Dive (Aug 25) — **CHOSEN, item 4**
+- **Biotech IPOs "escape velocity," Leerink's Bannister** — BioSpace (Aug 25) — **CHOSEN, item 5**
+- **Amgen vs. academic centers on FDA's qualified-research-institution IND pilot** — Endpoints (Aug 26, 14h) — **CHOSEN, item 6**
+- **Bausch + Lomb Phase 3 on missed dry-eye primary** — Endpoints exclusive — **CHOSEN, item 7**
+- **Lilly launches Foundayo (orforglipron) in the UK** — BioSpace (Aug 25) — **CHOSEN, item 8**
+- Sword Health / Headspace acquisition (Endpoints, 11h) — dropped, digital health, off-brief
+- OmicsBank $2.25M seed — dropped, too small
+- J&J Imaavy label expansion; Capricor PDUFA extension; Regenxbio hold; Merck IRA ruling — all shipped in the Aug 25 episode
+- BioMarin/Alesta ($275M + $215M, ALE1 oral HPP) — Aug 18, out of window
+- Regeneron Pasatru FOP approval — shipped Aug 20
+
+Note on the spotlight: the day's marquee item was fully readable, so no recency/full-text compromise was needed. Iambic's IAM1363/zanidatamab combination cohort (Oct 2025) is used as context, not as news.
+=== 2026-08-26T02:32:14-07:00 done  calibr-briefing (exit 0) ===
