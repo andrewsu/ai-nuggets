@@ -3781,3 +3781,31 @@ Episode written for 2026-08-25. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote
 
 **Policy/funder pages:** ARPA-H news and NIH news-releases both fetched cleanly — no agentic-AI or biomedical-AI program launches. Nothing on-brief.
 === 2026-08-25T02:08:08-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-26T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two stub files and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Files written**
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-26-kraken-agent-ready-knowledge-graph.md` (922 words spoken body, under the 1150 cap)
+- `…​.rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** KRAKEN — *A provenance-tracked knowledge graph for multiomic and wellness research* (bioRxiv, posted 2026-08-22), ISB / Phenome Health, ARPA-H PATH. Read in full (62.5KB, all 13 sections). This was the top open deferral: abstract-only on 08-22 through 08-25, and on 08-25 it had been written off as "probably never rendering." It rendered today. I've corrected that memory and saved the general lesson — clean-200-but-body-less is still render lag at five days, so consecutive-failure count is not evidence of permanence.
+
+Editorial angle: not the node count, but the paper's claim that agent-readiness is a design property a KG can have or lack (preview/slim/full MCP response modes, structured errors, runtime constraint discovery), plus its refusal to reconcile source predicates — a hidden harmonization can't be undone, a preserved distinction can be ignored. Caveats kept in: served-not-distributed, and it validates no assertion.
+
+**Candidate funnel**
+
+- **bioRxiv** (08-23→08-26, day-by-day, 609 records / 602 unique): 43 keyword hits, 4 substantive after discarding spurious "agent" matches.
+  - EcoXAI: Autonomous Agentic Ecosystem for Explainable AI and Biomedical Discovery
+  - ASAREE: An Analytical Sandbox for Agentic AI Research, Engineering, and Experimentation
+  - Plant Bioengineering Atlas: A Knowledge Graph of Genes, DNA Constructs, and Plant Traits (off-audience — plant)
+  - PhageLysData: an evidence-aware and AI-ready dataset of phage lytic enzymes
+  - **✅ CHOSEN — KRAKEN** `https://www.biorxiv.org/content/10.64898/2026.08.18.745544v1` (deferral carve-out; posted 08-22, full text first readable today)
+- **Deferral retests:** KRAKEN → resolved. `744701` (LLM phenotype-genotype validation) and MeSyTo not retested this run, still open.
+- **arXiv** (shared cache, 500 entries, 155 biomedical since 08-22): shortlist — BenchBench-Protocol (wet-lab protocol reasoning) `2608.23898`; LUCAID (agentic lung-cancer pathology) `2608.23803`; Aligning Biomedical Texts and Knowledge Graphs `2608.23214`; Toward Effective and Reliable LLM Agents via Dynamic Ontology `2608.22974`; Molecular LLM Agents survey `2608.23104v2`. None beat KRAKEN on audience fit.
+- **PubMed** (reldate 5, 722 hits, 400 fetched): 36 title matches after discarding "chemical/contrast/hypomethylating agent" noise — all clinical LLM-evaluation studies (retinal fundus diagnosis, surgical exams, preanesthetic GPT-4o). Nothing on-brief.
+- **ChemRxiv**: 1 in-window item — Universal Structure Generator, a structure-prep plugin for agentic computational-chemistry frameworks (08-25). Off-audience (computational chemistry, not biomedical).
+- **News / product launches**: Causaly–Syneos agentic-AI partnership (08-18, out of the 3-day window). Nothing else fresh.
+- **Policy / funders**: ARPA-H news — latest 08-18, nothing agentic-AI. NIA is hosting an agentic-AI-and-robotics workshop 08-27 (future event, not a launch).
+- **Source failures**: none. bioRxiv API was slow (~30–40s/request, known) but complete; one script re-run was needed for a local type bug, not a source error.
+=== 2026-08-26T02:07:09-07:00 done  biomedical-agentic-ai (exit 0) ===
