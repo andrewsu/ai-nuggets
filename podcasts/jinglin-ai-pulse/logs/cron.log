@@ -2089,3 +2089,49 @@ The strongest material is the report's negative result: on the nanoGPT speedrun 
 - **Podcasts** — Latent Space "The Evolution of the Agent Harness" (Aug 22, in the podcast feed with audio) ✅ CHOSEN as Deep Cut. Rejected on recency: Cognitive Revolution / Goodfire Dan Balsam (Aug 8, 17 days — outside the 14-day window, and a strong future candidate); No Priors / Noam Brown on broken benchmark grids (June — would have been an ideal thematic pair); MLST latest is Aug 22, already used yesterday; TWIML ep 773 (Aug 12, Qualcomm image generation) — in-window but thin and off-theme. WhynotTV still stale per standing note.
 - **Source failures** — laude.org/headlong 404 (correct path found via search); larsfaye.com 403; openai.com/index 403 (Cloudflare — the 13.3%→38.3% two-settings result is attributed to the Latent Space essay's citation rather than asserted from the primary page); Thomson Reuters press URL 404; one HN item hit 429.
 === 2026-08-25T02:46:48-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-26T02:30:09-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md batch mode I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-26-hand-tuning-is-over.md` — 2,244 spoken words (~15 min)
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-26-hand-tuning-is-over.rss-item.xml` — validated as XML, `__LENGTH__` / `__DURATION__` placeholders
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-26-hand-tuning-is-over.commit-msg`
+
+**Episode:** "Hand-Tuning Is Over" — Jalapeño's real disclosure is a nine-month tape-out with Codex writing kernels faster than the compiler authors; ten independent groups automating the agent harness inside one review cycle; and Joon Sung Park as the counterweight on the one domain where no verifiable signal exists.
+
+---
+
+## Candidate funnel — jinglin-ai-pulse, 2026-08-26
+
+**Twitter/X (@Zefan_Cai and peers) — 0 items usable.** X/Twitter remains unreadable from this host (x.com requires auth, xcancel serves a browser challenge). Substituted HN front page + Hugging Face daily papers + primary docs as the discourse proxy, per established practice for this show.
+
+**Hacker News front page — 4 AI items scanned, 3 survived:**
+- ✅ **CHOSEN** — OpenAI Jalapeño: Better than Nvidia Blackwell (477 pts) — https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia
+- ✅ **CHOSEN** — Qwen 3.8-Flash-Next releasing tomorrow, 125B a6B (323 pts) — https://news.ycombinator.com/item?id=49432317
+- ⬜ Training AI to Paint with Code (208 pts) — https://surya.website/rling-qwen-to-paint-with-code — read in full; genuinely good reward-design writeup (pairwise judging beat absolute scoring; 13,500 → under 2,000 output tokens) but its research date is March 2026 and it's a solo hobby project, so it lost the third Pulse slot to the harness convergence
+- ⬜ Show HN: Raspberry Pi + Qwen local car AI (138 pts) — no intellectual substance per PROMPT's exclusions
+
+**Hugging Face daily papers (2026-08-26) — 14 scanned, 4 on-target, 3 chosen:**
+- ✅ **CHOSEN** — AutoSaddler (45 up), POSTECH/KAIST/SUSTech/Microsoft — https://arxiv.org/abs/2608.23041 — **full text read** (PDF via `mutool draw -F txt`; WebFetch could not extract it)
+- ✅ **CHOSEN** — Recuris / Recursive Experiential-Working Memory Evolution (16 up) — https://arxiv.org/abs/2608.24876 — abstract only, 60-second tail mention
+- ✅ **CHOSEN** — CAFE: Self-Improving Search Agents Need Co-Evolving Feedback (2 up) — https://arxiv.org/abs/2608.24794 — abstract only, one-clause mention
+- ⬜ Meta^n: Recursive Self-Improvement through Emergent Depth (2 up) — fourth paper on the same theme, cut for length
+- ⬜ Annotations as Rollouts (65 up, top of page) — video MLLM RL; off-brief for the discourse layer
+- ⬜ WeMM-Embedding (49 up), On-Policy Self-Distillation in Diffusion (40 up), Game2World, LAION-BVD, others — off-brief
+
+**Investment / business news — 3 leads, 1 chosen:**
+- ✅ **CHOSEN** — XPeng's Dogotix, $900M+ at ~$6.3B, IDG/Tencent/Alibaba — https://www.caixinglobal.com/2026-08-25/xpeng-to-raise-900-million-for-robotics-unit-102477787.html
+- ⬜ Hugging Face $13B sale talks — already led Money Moves on 08-25
+- ⬜ Nvidia insider-sales / price-target items — only low-quality aggregator sourcing; dropped per "real, verified URLs only"
+
+**Long-form podcasts — 4 candidates, 1 chosen:**
+- ✅ **CHOSEN (Deep Cut)** — Latent Space, "Simulation: the new Scaling Law — Joon Sung Park, Simile AI," Aug 21 (5 days) — https://www.latent.space/p/simile
+- ⬜ Latent Space, "Causal Models Need Causal Data — Xaira's X-Cell" — July 21, **36 days old, outside the 14-day window**; used only as a one-line callback inside the takeaway
+- ⬜ MLST, Apollo Research on measuring reward-seeking — Aug 10, 16 days, just outside the window; strong candidate to hold for a future episode
+- ⬜ Dwarkesh × Grant Sanderson on AI and math — June 2026, far outside the window
+- ⬜ WhynotTV (the show's nominal primary podcast) — still no in-window episodes findable; consistent with the standing staleness note
+
+**Sources that failed:** `technode.com` 403; `openai.com/index/...jalapeno...` 403 (worked around via ServeTheHome's Hot Chips writeup + OpenAI's claims as relayed there); The Register article 404 on both URL forms; one HN item page 429 on first try. None blocked the run.
+
+**Deliberate factual restraint:** the Qwen 125B/6B/51B-N-gram figures were pulled from the ModelScope page before it was edited down, so the script says "well-attested if not confirmed" rather than stating them as official; and I flagged the Jalapeño ramp as a small footprint this year with the real volume in 2027 (SemiAnalysis's reporting), rather than repeating OpenAI's headline "large-scale deployment by end of 2026."
+=== 2026-08-26T02:44:53-07:00 done  jinglin-ai-pulse (exit 0) ===
