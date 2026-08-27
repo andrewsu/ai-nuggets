@@ -3819,3 +3819,41 @@ Shortlist (chosen marked ✓):
 
 Memory updated: Wiley wall lifted, the byte-count-is-not-readability correction, corrected journal ISSNs, and the refreshed deferral list.
 === 2026-08-26T03:06:57-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-27T02:50:10-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE I stopped at the script + stubs and did not run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does those after batch TTS.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-08-27-receptor-and-reason.md` (11 items, ~3,400 spoken words, ≈18.6 min at the show's measured words-per-second — in family with the last six episodes, marginally over the 12–18 min target)
+- `…rss-item.xml` (validates as XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `…commit-msg`
+- `state/shipped.jsonl` appended (97 lines)
+
+**Candidate funnel**
+
+*Source outcomes*
+- **bioRxiv details API — hard failure.** `api.biorxiv.org` returned `ECONNREFUSED` on every request across the whole run (curl, urllib, WebFetch); `connect.biorxiv.org` RSS dead; the bioRxiv MCP server returned an internal error. Retried well past the one-quick-retry rule before switching.
+- **Fallback used: Europe PMC `SRC:PPR` search** (~4,400 preprints in window; 18 keyword queries → 69 unique bioRxiv/medRxiv hits after dedup). Recall is materially worse than a day-by-day details sweep — this is the run's known gap.
+- **Crossref journal sweep** — 22 journals, 21 returned; *npj Digital Medicine* HTTP 429, not retried. 155 articles scanned.
+- **arXiv** — shared daily cache (500 entries, covers 08-24→08-26), 209 relevance matches.
+- **Psychiatric Times** — 6 items in window, **all 6 already shipped**; contributed nothing.
+- Full text: `r.jina.ai` worked throughout. 8 nature.com articles were auth-walled (abstract-only, verified by heading grep, not byte count); those items were dropped, not summarized.
+
+*Shortlist → picks* (✔ = shipped)
+- ✔ alpha-2A/alpha-2C selectivity benchmark, five controls — bioRxiv 2026.08.18.745649 **(LEAD)**
+- ✔ EEG-FM reliability vs. disease sensitivity — bioRxiv 2026.08.19.745052
+- ✔ ProteinDB proteomics for PK-Sim — 10.1002/psp4.70316
+- ✔ RELEASE antidepressant deprescribing trial — medRxiv 2026.08.19.26360323
+- ✔ DLPFC tDCS × open-label placebo — 10.1038/s41386-026-02516-w
+- ✔ PSILAUT low-dose psilocybin in autism — medRxiv 2026.08.19.26360794
+- ✔ vmPFC→posterior piriform, diminished interest — 10.1038/s41380-026-03836-5
+- ✔ Lithium for SNAP25 encephalopathies — 10.1038/s41386-026-02535-7
+- ✔ Anabolic steroids, MALDI-MSI monoamines + lipidome — 10.1038/s41386-026-02508-w
+- ✔ HealthBench-Psych — arXiv 2608.25071
+- ✔ Federation Is Nearly Free, Reasoning Is Not — arXiv 2608.25215
+- ✗ Neurosymbolic Alignment for clinical LMs (2608.24534) — read in full, cut for length
+- ✗ Smarcc2/HDAC autism rescue, zebrafish→bedaquiline translation — readable, lost on priority
+- ✗ Dropped for auth wall: alpha-synuclein targeted degradation, DORA falls/delirium in dementia, D1 agonists review, AM6545 in fragile X, Nat Med psilocybin-translation piece, sgACC/TMS
+- ✗ Still abstract-only (deferred, re-check): psilocybin visual change detection, chronic trazodone in AD mice, CYP2C19 deletion detection, multimodal ADMET, 6-methyl nicotine vapor
+
+Two memories updated: the receptor-and-reason deferral list (two items resolved and shipped; today's walled/readable split recorded) and a new reference on the bioRxiv API outage and the Europe PMC workaround.
+=== 2026-08-27T03:07:47-07:00 done  receptor-and-reason (exit 0) ===
