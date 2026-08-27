@@ -2611,3 +2611,31 @@ News (Endpoints index, BioSpace, web search): Fierce Biotech and BioSpace both r
 - Amgen vs. academic centers on conflicts in FDA's expedited IND pilot (tarlatamab STREAM-SCLC)
 - NEJM full text was 403 behind the paywall; the trial's numbers were sourced from the BeOne/Jazz releases and the Jazz NEJM-publication release, all fetched in full.
 === 2026-08-26T02:52:19-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-27T02:40:10-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-08-27-trtacs-trop2-lysosome-targeting-receptor-degrader-adc-hybrid.md` (1,187 spoken words, ~5 min)
+- `...rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `...commit-msg`
+
+**Pick:** TRTACs — TROP2 repurposed as a tumor-selective lysosome-targeting receptor rather than an ADC target. Read in full (90,757 bytes, Results/Methods present).
+
+## Candidate funnel
+
+**bioRxiv — SOURCE FAILED.** `api.biorxiv.org` resolved (143.48.220.72) but refused TCP on 443 (`curl: (7)`, ~80 ms) on every attempt, sandboxed and unsandboxed; the bioRxiv MCP `search_preprints` also returned an internal error. Zero corpus scanned. Proceeded per PIPELINE's source-level-failure rule. `r.jina.ai` was unaffected, so deferred-item full text was still retrievable.
+
+**Deferred-list retest** (3 DOIs, direct jina curl on `.full`):
+- `10.64898/2026.08.19.745708` TRTACs — 90,757 B, 10 headings → **readable, CHOSEN**
+- `10.64898/2026.08.17.745170` PD1-IL2v stem-like CD8 — 404 B (jina proxy error, not chrome; was readable 08-26) → deferred again
+- `10.64898/2026.08.18.745451` transglutaminase ADC site-selectivity — 404 B (same) → deferred
+
+**News** (Endpoints ~24 headlines, BioSpace latest, Fierce Biotech 403 direct *and* via jina). On-target shortlist:
+- Ivonescimab + chemo beats durvalumab + chemo on OS, 1L biliary tract cancer, HARMONi-GI1, 682 pts — https://www.biospace.com/press-releases/ivonescimab-plus-chemotherapy-demonstrates-significant-overall-survival-benefit-versus-durvalumab-plus-chemotherapy-in-first-line-biliary-tract-cancer-harmoni-gi1-meets-primary-endpoint — *runner-up; zero numbers released, China-only, and the show has run PD-1×VEGF three times this month (07-23 ivonescimab, 08-05 pumitamig, 08-21 ABBV-1480). Folded in as a closing note instead.*
+- Spyre drops RA for anti-TL1A after modest Ph2 — negative/thin
+- RevMed daraxonrasib FDA approval, mPDAC — KRAS, off Justice's immunotherapy/TCE/ADC axis
+- BMS ends Cellares cell-therapy pact; Cellares rebuts — manufacturing, covered obliquely elsewhere
+- "CAR Ts will only treat autoimmune diseases if we can scale delivery" (BioSpace) — opinion piece, no primary data
+
+**Policy/funder:** not reached — the bioRxiv outage and news sweep consumed the window; no ARPA-H/NIH/NSF check this run.
+=== 2026-08-27T02:47:34-07:00 done  justice-biotech-brief (exit 0) ===
