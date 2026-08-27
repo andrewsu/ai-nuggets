@@ -3583,3 +3583,50 @@ Shortlist after discarding stale/covered items:
 
 Note on the spotlight: the day's marquee item was fully readable, so no recency/full-text compromise was needed. Iambic's IAM1363/zanidatamab combination cohort (Oct 2025) is used as context, not as news.
 === 2026-08-26T02:32:14-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-27T02:20:10-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` was set in the environment, so per PIPELINE.md I skipped `gen_tts.py`, the R2 publish, the `feed.xml` edit, and the commit — the orchestrator does those after batch TTS. Files written:
+
+```
+podcasts/calibr-briefing/scripts/
+  2026-08-27-pharma-headlines.txt                        (1,964 words, ~5-6 min)
+  2026-08-27-pharma-headlines.rss-item.xml               (stub, __LENGTH__/__DURATION__)
+  2026-08-27-pharma-headlines.commit-msg
+  2026-08-27-revmed-daraxonrasib-pdac-spotlight.txt      (2,830 words, ~8 min)
+  2026-08-27-revmed-daraxonrasib-pdac-spotlight.rss-item.xml
+  2026-08-27-revmed-daraxonrasib-pdac-spotlight.commit-msg
+```
+
+Both stubs parse as valid XML. Scripts contain no headings, bullets, URLs, DOIs, or pseudo-heading labels (three — "The trial.", "The economics.", "One honest limitation." — were caught and folded into real sentences).
+
+## Candidate funnel
+
+**News window:** Aug 26 00:00 → Aug 27 02:30 PDT (run time). Endpoints' index topped out at Aug 26 1:40 PM ET on two fetches 30 min apart, so Aug 26 is the whole window.
+
+| Source | Result |
+|---|---|
+| Endpoints (`r.jina.ai/endpoints.news/news/`) | Index worked, newest-first with exact timestamps — 10 in-window items. Bodies paywalled; every pick re-sourced to a primary release or BioSpace. |
+| BioSpace `/latest-news-press-releases` | Worked, 10 dated headlines (Aug 26–27). Article bodies via jina. |
+| BioSpace `/search-press-releases` | Worked — surfaced the Immuneering competitor-reaction release, which no news index carried. |
+| BioPharma Dive | Homepage worked but returned **no Aug 26–27 dates** (undated top stories). Individual article fetched fine via WebFetch. |
+| STAT `/category/biotech/` | Dated index worked (bodies paywalled). Two Aug 27 items noted, both paywalled: "Moderna's magic algorithm", BIOSECURE loophole. |
+| Fierce Biotech / Fierce Pharma | **Still hard-403 via jina** (4th consecutive run). Fierce Biotech returned nothing; Fierce Pharma returned nav only. Skipped. |
+| FDA (press announcement + OCE approval page) | Both read in full via jina. |
+| GlobeNewswire / company IR | RevMed approval + ASCO releases, Spyre, Immuneering all read in full via jina. |
+| NEJM (RASolute 302) | **Blocked** — Cloudflare security verification. Satisfied the full-text gate from the FDA label text + RevMed's ASCO release, which carries the complete subgroup, safety and PRO tables. |
+
+**Shortlist (all Aug 26 unless noted):**
+- ✅ **CHOSEN — spotlight + lead:** FDA approves Rasonque (daraxonrasib), Revolution Medicines — [FDA](https://www.fda.gov/news-events/press-announcements/fda-approves-first-class-targeted-therapy-metastatic-pancreatic-cancer) / [RevMed](https://www.globenewswire.com/news-release/2026/08/26/3351615/0/en/u-s-fda-approves-revolution-medicines-rasonque-daraxonrasib-the-first-broad-ras-targeted-medicine-in-metastatic-pancreatic-cancer.html). Foresite portfolio alumnus; first RAS(ON) approval; first targeted therapy in PDAC.
+- ✅ Biohaven → SK Biopharmaceutical, Kv7/opakalim, up to $795M — [BioSpace](https://www.biospace.com/deals/biohaven-could-get-up-to-795m-in-epilepsy-alliance-with-sk-bio)
+- ✅ Summit/Akeso ivonescimab beats Imfinzi, HARMONi-GI1 biliary tract cancer — [BioSpace](https://www.biospace.com/drug-development/summit-akeso-tout-biliary-cancer-win-for-pd-1-vegf-in-china-but-details-are-pending)
+- ✅ Spyre SPY072 TL1A hits significance in RA, shelved anyway (Aug 25) — [GlobeNewswire](https://www.globenewswire.com/news-release/2026/08/25/3350866/0/en/spyre-therapeutics-announces-topline-results-from-the-rheumatoid-arthritis-sub-study-of-the-skyway-phase-2-trial-of-spy072.html)
+- ✅ Cellares publicly rebuts BMS — [Endpoints](https://endpoints.news/cellares-rebukes-bristol-myers-criticism-of-its-cell-therapy-technology/)
+- ✅ Faro $37.3M Series B, agentic AI in clinical development (AI focus area) — [Endpoints](https://endpoints.news/exclusive-faro-raises-37m-series-b-to-speed-up-clinical-trials-with-ai/)
+- ✅ MassBio report: broken funding barbell, 3,600 jobs lost, China passes Europe — [MassBio](https://www.massbio.org/news/recent-news/biopharma-dive-young-startups-miss-out-on-biotech-venture-funding-rebound-massbio-says/)
+- ✅ Immuneering same-day repositioning to first-line PDAC — [BioSpace PR](https://www.biospace.com/press-releases/immuneering-comments-on-todays-fda-approval-in-second-line-metastatic-pancreatic-cancer-reiterates-focus-on-first-line-patients)
+- ⚠️ Aurora Therapeutics uncertain future — Endpoints ran it Aug 26, but the underlying event (lead PKU program scrapped, CEO Ed Kaye out) broke **Aug 4** via STAT. Folded in as an illustration inside the MassBio item rather than presented as fresh news.
+- ⏭️ Gilead bictegravir/lenacapavir — PDUFA is **today**; nothing posted at 2:30 AM. Led the week-ahead with the pending status stated, no outcome implied.
+- ❌ Dropped as stale/covered yesterday: Haisco/Sentivera, BMS–Cellares termination (the *rebuttal* is new), Jazz Ziihera, Amgen/QRI pilot, Bausch + Lomb.
+- ❌ Dropped for no readable body: STAT's "Moderna's magic algorithm" and BIOSECURE-loophole pieces (paywall, no primary equivalent), Mesoblast revenue, NeoGenomics Medicare coverage, AIVITA vaccine platform (off-target).
+
+One memory update: appended the same-day-competitor-reaction technique to `reference_biotech_news_source_access.md` — the Immuneering release was the strongest competitive-landscape input of the run and appeared on no news index.
+=== 2026-08-27T02:39:00-07:00 done  calibr-briefing (exit 0) ===

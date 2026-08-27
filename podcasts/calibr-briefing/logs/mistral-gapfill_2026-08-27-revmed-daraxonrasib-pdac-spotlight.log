@@ -1,0 +1,11 @@
+Script body: 18611 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/7 (2964 chars) -> 151.5s ✓
+  [mistral:en_paul_neutral] chunk 2/7 (2987 chars) -> 130.1s ✓
+  [mistral:en_paul_neutral] chunk 3/7 (2896 chars) -> 143.0s ✓
+  [mistral:en_paul_neutral] chunk 4/7 (2873 chars) -> 133.9s ✓
+  [mistral:en_paul_neutral] chunk 5/7 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/7 (2985 chars) -> 146.5s ✓
+  [mistral:en_paul_neutral] chunk 6/7 (2858 chars) -> 127.3s ✓
+  [mistral:en_paul_neutral] chunk 7/7 attempt 1 FAILED: chunk duration 40.6s < floor 41.7s (likely truncated)
+  [mistral:en_paul_neutral] chunk 7/7 (1042 chars) -> 44.5s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-08-27-revmed-daraxonrasib-pdac-spotlight.mp3 [mistral] 7,736,677 bytes, 967.1s
