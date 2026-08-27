@@ -1,0 +1,7 @@
+Script body: 12874 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2916 chars) -> 132.1s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2936 chars) -> 134.3s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2923 chars) -> 186.4s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2954 chars) -> 125.7s ✓
+  [mistral:en_paul_neutral] chunk 5/5 (1141 chars) -> 60.3s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/blackbird-brief/episodes/2026-08-27-portfolio-watch.mp3 [mistral] 5,436,021 bytes, 679.5s

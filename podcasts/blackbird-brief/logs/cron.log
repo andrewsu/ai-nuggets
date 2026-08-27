@@ -1963,3 +1963,34 @@ No fresh portfolio-company event was on the tape, so the run pivoted to the part
 
 **Two accuracy notes carried into the script:** sources conflict on whether JHTV's 111 U.S. patents were *filed* or *granted* (the script says neither), and the 17 startups / $151M span all of Johns Hopkins, not just life sciences — stated as an explicit caveat in the show notes.
 === 2026-08-26T02:24:24-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-27T02:10:10-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — no `gen_tts.py`, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-08-27-portfolio-watch.md` — Portfolio Watch, 2,044 spoken words (~10 min at the show's measured 3.4 words/sec; sibling episodes run 1,673–1,996 words / 8:20–9:44)
+- `podcasts/blackbird-brief/scripts/2026-08-27-portfolio-watch.rss-item.xml` — validated as XML both standalone (in namespace context) and merged into `feed.xml`
+- `podcasts/blackbird-brief/scripts/2026-08-27-portfolio-watch.commit-msg`
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` — updated: new 2026-08-27 header block (6 items + quiet threads), plus targeted appends to the Aletira, Clasp, Adventris, Neuropsychiatric NewCo, GCPII and 1104health sections, and 3 new open items
+
+**Candidate funnel**
+
+| Source | Scanned | Survived relevance filter |
+|---|---|---|
+| BioPharma Dive homepage | ~12 headlines | 3 |
+| BioSpace latest-news/press-releases | 10 (Aug 26–27) | 3 |
+| Endpoints News index (via r.jina.ai) | 10 (last 24h) | 5 |
+| Fierce Biotech | — | **FAILED** — HTTP 403 from this host, both direct and via r.jina.ai; not retried past one attempt |
+| BioBuzz (news + BioHealth Capital Region) | 8 (Aug 24–26) | 0 with a Blackbird line |
+| Targeted portfolio queries (hearing-loss GT, GPR52/Nxera, CAMP4, Clasp/KRAS, Blackbird mentions, JHU/UMB/Lieber/UM Ventures) | 7 queries | 2 (both background, no fresh event) |
+
+Shortlist after discarding off-thesis matches:
+- **CHOSEN — LEAD:** FDA approves RASONQUE (daraxonrasib), first broad RAS-targeted drug in metastatic PDAC, **no companion diagnostic** — fda.gov/drugs/resources-information-approved-drugs/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma
+- **CHOSEN:** Spyre SPY072 anti-TL1A misses its own bar in RA — biopharmadive.com/news/spyre-rheumatoid-arthritis-drug-study-results-skyway/828809/
+- **CHOSEN:** Regeneron providing Otarmeni free in the US + the voucher's second proof point — fda.gov/news-events/press-announcements/fda-approves-first-ever-gene-therapy-treatment-genetic-hearing-loss-under-national-priority-voucher
+- **CHOSEN:** Aurora Therapeutics kills lead PKU program, cuts staff — biospace.com/business/bespoke-gene-editing-outfit-abandons-lead-program-cuts-several-employees
+- **CHOSEN:** SK Biopharmaceuticals / Biohaven Kv7 epilepsy licence, $400M upfront — biopharmadive.com/news/biohaven-sk-opakalim-epilepsy-drug-deal/828799/
+- **CHOSEN:** Faro $37.3M Series B co-led by Merck GHI + S32 — endpoints.news/exclusive-faro-raises-37m-series-b-to-speed-up-clinical-trials-with-ai/
+- Cut: Summit/Akeso ivonescimab biliary Phase 3 (China-only, no portfolio line); Cellares/BMS rebuttal (cut 08-26); MassBio "most challenging year" (same snapshot led yesterday); Vitruvias recall; United Therapeutics ralinepag; Sword/Headspace; BioSpace obesity + job-market features.
+
+Two things worth flagging: Endpoints article bodies are paywalled, so its index was usable for discovery but every detail is sourced to BioPharma Dive, BioSpace, GlobeNewswire, FDA and SEC instead — that's now logged in memory. And the script came in above the show's usual length even after three trim passes; if you want it strictly inside 9 minutes, the Faro item is the one I'd drop.
+=== 2026-08-27T02:31:10-07:00 done  blackbird-brief (exit 0) ===
