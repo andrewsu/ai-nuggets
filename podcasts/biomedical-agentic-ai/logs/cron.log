@@ -3809,3 +3809,37 @@ Editorial angle: not the node count, but the paper's claim that agent-readiness 
 - **Policy / funders**: ARPA-H news — latest 08-18, nothing agentic-AI. NIA is hosting an agentic-AI-and-robotics workshop 08-27 (future event, not a launch).
 - **Source failures**: none. bioRxiv API was slow (~30–40s/request, known) but complete; one script re-run was needed for a local type bug, not a source error.
 === 2026-08-26T02:07:09-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-27T02:00:10-07:00 start biomedical-agentic-ai ===
+Episode written. SKIP_TTS mode, so script + stubs only — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Published (pending batch):** `2026-08-27-bixbench3-study-scale-agents` — 931 words spoken body (cap 1150).
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-27-bixbench3-study-scale-agents.md`
+- `...rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `...commit-msg`
+
+**Candidate funnel**
+
+- **bioRxiv** (2026-08-24 → 08-27, details API, full collection): 788 scanned (249 + 247 + 292; 08-27 empty at cron time), 34 survived the keyword filter, 5 substantive after discarding "chemical/antiparasitic agent" matches. *First pass silently truncated at 90 items — the details API page size is 30, not 100; refetched.*
+  - ASAREE: An Analytical Sandbox for Agentic AI Research, Engineering, and Experimentation — https://www.biorxiv.org/content/10.64898/2026.08.20.746074v1
+  - NeuroGraphBench: Interacting with Drosophila Connectomes at Scale — https://www.biorxiv.org/content/10.64898/2026.08.22.746456v1
+  - CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry — https://www.biorxiv.org/content/10.64898/2026.08.24.746336v1
+  - Plant Bioengineering Atlas: A Knowledge Graph of Genes, DNA Constructs, and Plant Traits — https://www.biorxiv.org/content/10.64898/2026.08.21.746270v1
+  - EcoXAI: Autonomous Agentic Ecosystem for Explainable AI and Biomedical Discovery (v4 of a July preprint; out of window as new) — https://www.biorxiv.org/content/10.64898/2026.07.08.737358v4
+- **arXiv** (shared daily cache, 500 entries, submissions ≥ 08-23): 47 relevant, 5 shortlisted.
+  - **BixBench3: Benchmarking AI agents on research-study-scale computational biology tasks — https://arxiv.org/abs/2608.25286 — CHOSEN** (full text read via mutool)
+  - Federation Is Nearly Free, Reasoning Is Not: Tradeoffs for AI Co-Scientists in Protein Characterization — https://arxiv.org/abs/2608.25215
+  - HypoForge: Self-Improving Multi-Agent Hypothesis Generation and Testing — https://arxiv.org/abs/2608.25770
+  - FrontierChallenge: Evaluating Scientific Workflow Completion — https://arxiv.org/abs/2608.24979
+  - LUCAID: Agentic Multimodal AI for Lung Cancer Precision Pathology — https://arxiv.org/abs/2608.23803
+- **PubMed** (reldate=5, term-filtered): 87 returned, 41 title-relevant, 2 on-brief.
+  - Coala: converting CWL-described command-line tools into agentic toolsets (Bioinformatics) — https://pubmed.ncbi.nlm.nih.gov/42647176/
+  - Searching the Druggable Genome using Large Language Models (Bioinformatics) — https://pubmed.ncbi.nlm.nih.gov/42631692/
+- **ChemRxiv**: not queried this run — the arXiv/bioRxiv/PubMed shortlist already contained a dominant candidate whose full text was in hand. Recall gap noted.
+- **News / funder-policy** (ARPA-H, NIH, NSF, HHS; 3-day window): 0 on-brief. Newest ARPA-H item is STREAM, Aug 17 (out of window); NIH releases are personnel + organoids; NSF is K-12 AI education.
+
+**Deferral list worked.** Two long-pending full-text deferrals finally rendered today and are now closed:
+- **LungChat** (multi-agent multi-omics, LungMAP) — rendered at **13 days**, well past the 5–6 day precedents. Readable but too stale to lead a "today's nugget," so it lost to BixBench3. Recorded as ship-only-if-thin, otherwise stale.
+- **LLM-generated phenotype-genotype associations / external validation** — rendered after being called "likely permanent" on 08-23. That's the second time a permanence call has been wrong (KRAKEN was the first); memory updated to stop making them.
+
+**Why BixBench3 beat the field:** it's the only item in the window that measures the thing this show is actually about — whether an agent can carry a whole computational study from raw data to result — and its interesting findings are the non-obvious ones. The failure profile is non-monotonic in analysis depth (0.30 → 0.44 → 0.24), so the first step out of raw data is nearly as hard as the deep end; performance collapses with data volume rather than with reasoning difficulty; and cost buys nothing across a 367-fold spread. Against LifeSciBench (shipped 08-24) it's a different measurement entirely — execution of a pipeline versus rubric-graded expert Q&A — and it pairs as a callback with the show's 2026-05-02 episode on the original BixBench saturating.
+=== 2026-08-27T02:07:00-07:00 done  biomedical-agentic-ai (exit 0) ===

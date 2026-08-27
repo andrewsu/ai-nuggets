@@ -1,0 +1,4 @@
+Script body: 5604 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2983 chars) -> 155.1s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2620 chars) -> 126.3s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-08-27-bixbench3-study-scale-agents.mp3 [mistral] 2,407,906 bytes, 301.0s
