@@ -191,27 +191,60 @@ multiple episodes.
 
 **Runner behavior — follow these steps every run:**
 
-1. **At run start:** read every line of `state/shipped.jsonl`. Build
-   a set of shipped keys. If the file is missing, treat as empty set
-   (it will be created on first append).
-2. **During candidate filtering:** for each candidate item, compute
-   its key per the precedence above. Exclude any candidate whose key
-   is in the shipped set.
-3. **After picks are finalized and the script is written:** append
-   exactly one new line to `shipped.jsonl` with today's record. Use
-   the structure shown above. Do not edit or reorder existing lines —
+The ledger is ~1.7 KB per episode and grows forever. **Never read it
+into context** — no `cat`, no Read tool, no dumping the key list. Every
+access goes through `scripts/shipped_keys.py`, which keeps the file on
+disk and hands back only what you asked for.
+
+1. **At run start:** nothing to load. `python3 scripts/shipped_keys.py
+   receptor-and-reason --stats` prints the ledger's size for the log
+   without emitting any keys.
+2. **During candidate filtering — before spending any fetch budget:**
+   write every candidate as one `key<TAB>title` line and pipe the whole
+   list through the filter:
+
+   ```bash
+   python3 scripts/shipped_keys.py receptor-and-reason \
+       < candidates.tsv > fresh.tsv
+   ```
+
+   Only the lines in `fresh.tsv` are eligible. Matching is done on
+   normalized keys, so a case difference, an arXiv version suffix, a
+   `https://doi.org/` prefix, a bioRxiv DOI vs. its bare
+   `biorxiv:YYYY.MM.DD.NNNNNN` form, and a URL carrying `utm_*` params
+   or a fragment all resolve to the same item. The stderr summary is the
+   dedup number for the cron.log funnel.
+
+   **Always supply the title.** A candidate whose title matches a
+   shipped title is dropped even when its key differs — that is what
+   catches an article re-entering the window under a second DOI, which
+   is the standing Nature-family RSS trap. If you are certain an item is
+   a genuine follow-up rather than the same work, re-run with
+   `--keep-title-matches` and say so in the log.
+3. **After picks are finalized and the script is written:** append with
+   the same `key<TAB>title` format the filter emits:
+
+   ```bash
+   python3 scripts/shipped_keys.py receptor-and-reason --append \
+       --basename YYYY-MM-DD-receptor-and-reason < picks.tsv
+   ```
+
+   It verifies the whole ledger parses before writing, then appends
+   exactly one line. Do not edit or reorder existing lines by hand —
    append-only.
 
-**Failure modes:**
+**Failure modes** (all enforced by the script — this is what its exit
+codes mean, not extra work for you):
 
-- File missing → treat as empty set, create on first append.
-- File corrupt (any line unparseable as JSON) → log the gap to
-  `logs/cron.log`, treat as empty set for the run, **do not
-  overwrite** the file — exit without appending so the existing data
-  can be manually recovered.
-- Item key collision (same key, different titles) → treat as a dedup
-  hit (skip the candidate). Log a warning to `logs/cron.log` if the
-  titles differ noticeably.
+- File missing → empty set, created on first append.
+- File corrupt (any line unparseable as JSON) → the filter prints the
+  bad line numbers to stderr, which lands in `logs/cron.log`, and treats
+  the ledger as empty so the episode can still be produced; `--append`
+  **refuses** (exit 3) and leaves the file untouched so the data can be
+  recovered by hand. If you see this, fix the ledger before the next
+  run — a run under an empty set can ship a repeat.
+- Item key collision (same key, different titles) → dedup hit, candidate
+  dropped, warning printed with both titles.
 
 # 4. Episode format
 
