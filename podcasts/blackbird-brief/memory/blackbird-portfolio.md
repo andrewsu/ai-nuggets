@@ -19,33 +19,39 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
 
 ## 1. The organization
 
-- **Blackbird Laboratories, Inc.** — nonprofit life-sciences accelerator,
-  Baltimore. Makes translational grants into partner-institution research to
+- **Blackbird Laboratories, Inc.** — nonprofit life-sciences
+  incubator/venture studio, Baltimore. Makes translational grants into partner-institution research to
   de-risk academic IP toward startup formation.
 - **Blackbird BioVentures** — for-profit venture arm; the early investor that
   participates when a program is ready to spin out.
-- **Founding grant:** $100M from the Stephen and Renee Bisciotti Foundation
+- **Founding grant:** $100M from the Bisciotti Family Foundation
   (Steve Bisciotti owns the Baltimore Ravens; "Blackbird" ≈ Raven). Created
   Jan 2023, public launch Nov 2023.
-- **Scale (as reported mid-2025):** ~18 companies backed; ~20 exploratory
-  research projects; 4 licensed programs. ~75% of companies in Baltimore,
-  ~95% in Maryland.
-- **Blackbird BioHub** — ~35–42k sq ft wet-lab incubator at **City Garage**,
+- **Scale (as reported mid-2026):** ~22 companies backed; ~22 exploratory
+  research projects; 4 licensed programs. ~90% of companies with a Baltimore
+  nexus.
+- **Blackbird BioHub** — 42k sq ft wet-lab incubator at **City Garage**,
   Baltimore Peninsula (former bus depot). Private benches, office suites,
-  shared instruments, on-site vivarium. Opened March 2026; helped by a $2M
-  Maryland "Build Our Future" grant. Home base for incubated spinouts.
+  shared instruments, on-site vivarium. Opened February 2026; helped by a $2M
+  Maryland "Build Our Future" grant. Home base for incubated spinouts and
+  others in the region.
 
-### Leadership
+### Team
 - **Matt Tremblay, Ph.D.** — CEO, founding board member. Ex-COO of Scripps
   Research and its drug-discovery arm Calibr. (Primary audience.)
 - **Eddie Cherok, Ph.D.** — Chief Business Officer. Ex-Scripps/Calibr corp dev.
+- **Matt Lawler** — Venture Partner.
+- **Virginia Burger, Ph.D.** — Venture Partner (ML/AI, compbio).
+- **Anthony Accorsi, Ph.D.** — Venture Partner (muscle biology/neuroscience).
+- **Jon Robbins, M.D., Ph.D.** — Venture Partner.
 - **Hemaka Rajapakse, Ph.D.** — Venture Partner (project mgmt, NewCo
   leadership, scientific diligence).
+- **Maisha Rahman, Ph.D.** — Chief of Staff.
 - **Esther Park, Ph.D.** — Associate Director of Ventures (started as an
   inaugural Blackbird Fellow).
-- **Maisha Rahman, Ph.D.** — Chief of Staff.
-- **Avinash (Avi) Khanna, Ph.D.** — Sr. Director, Molecular Discovery.
-- **Bridget Duvall** — Director, Lab Operations (ran BioHub buildout).
+- **Avi Khanna, Ph.D.** — Sr. Director, Molecular Discovery (chemistry).
+- **Yixuan Qiu, Ph.D.** — Director of Research and Operations.
+- **Jason Zavras** — Venture Fellow.
 
 ### Partner institutions
 - **Johns Hopkins University / Johns Hopkins Medicine** — anchor partner.
@@ -85,6 +91,8 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
   (co-investment agreement with Blackbird; "MPower" branding).
 - **Lieber Institute for Brain Development (LIBD)** — neuropsychiatry; affiliated
   with JHU. Source of the schizophrenia program.
+- **Open to partnering with institutions outside of Maryland**, so long as the
+  spinout company is launched and based in Baltimore.
 
 ### Programs (talent pipeline)
 - **Blackbird Fellows** — paid (~10 hrs/wk) fellowships for near-graduation JHU
@@ -100,6 +108,35 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
 
 Track news touching any of the targets, modalities, indications, PIs, or
 competitors below. These are the "so what for Blackbird" hooks.
+
+### Current spinouts (started as Blackbird projects)
+_Last update: 2026-08-28_
+1. **Neuropsych NewCo** (schizophrenia, GPR52) — detail below.
+2. **Aletira Therapeutics** — detail below.
+3. **1104health** — detail below.
+4. **NuGate Therapeutics** — detail below.
+5. **Winnow Therapeutics** — detail below.
+6. **Artemyx** — detail below.
+7. **Biolinco** — detail below.
+
+**Clasp Therapeutics** is tracked in this section too, but it is a JHU-born
+company Blackbird BioVentures invested in, not a Blackbird-incubated project.
+
+### Current projects in early stage (pre-spinout)
+_Last update: 2026-08-28_
+Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
+oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
+autoimmune diseases (Blackbird funded the **Intergalactic Center for
+Autoimmunity and Immuno-Oncology**).
+
+These are program themes, not named companies. Treat them as standing sourcing
+and landscape interests: a paper or deal that lands on one of these is
+portfolio-relevant even though there is no company to name yet.
+
+### Terminated programs — do not cover ❌
+_Last update: 2026-08-28_
+Entries kept so a future run does not re-adopt them from public sources. See
+the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
 - **What:** Cell-type-**selective** genetic medicines. **SELEXON** platform uses
@@ -451,54 +488,14 @@ competitors below. These are the "so what for Blackbird" hooks.
   priority with a 61-day precedent; the regulatory timeline in the model is not a fixed 10-12 months, and that NPV is currently unclaimed.**
 - **COMPETITIVE-INTELLIGENCE BLACKOUT (logged 2026-08-28; see the 2026-08-28 header entry for detail).** **Eli Lilly no longer discloses Phase 1 projects** on its public pipeline ("Phase 1 projects are no longer disclosed"; page current as of 2026-08-05). Lilly is the large-cap in this space — **Akouos** (Oct 2022, $487M; otoferlin gene therapy) plus a **>$1.12B Seamless Therapeutics recombinase deal (2026-01-28)** for hearing-loss mutations, over a reported portfolio of **OTOF, AK-CLRN1 (Usher 3A), GJB2, AK-antiVEGF**. Only **"OTOF Gene Therapy / Hearing Loss," Phase 2** remains visible; **GJB2 — Aletira's indication — is not on the page at all.** **ClinicalTrials.gov is now the surveillance instrument**: it still shows NCT06517888 (anti-VEGF, vestibular schwannoma, Phase 1/2, recruiting since 2025-01-17) and NCT07503613 (LTFU, opened 2026-03-02), neither on the pipeline page, and **no GJB2 or CLRN1 trial at all → Lilly's GJB2 work is still preclinical as of 2026-08-28.**
 
-### aSKY Therapeutics — UMB oncology spinout ✅
-- **What:** Oncology therapeutic from the lab of **Alexander "Sasha" Krupnick,
-  MD** (UMB / UM School of Medicine). First project of the **UM Ventures ×
-  Blackbird co-investment** agreement; UMB IP licensed to the startup.
-- **Status:** Founded 2022, HQ Owings Mills, MD. Foundational UMB IP licensed;
-  ~$740K raised. AVS Bio partnership disclosed for antibody engineering with a
-  KRAS frame (LinkedIn, late 2025) — ⚠ specific target/MOA still not formally
-  disclosed publicly. Krupnick's lab work spans lung-cancer NK-cell biology
-  (which led to a first-in-class retargeted cytokine effort in 2015) plus
-  KRAS-pathway regulation; the company likely sits at the intersection.
-- **Watch:** disclosed MOA once filed; aSKY's positioning vs. competing
-  NSCLC kinase entrants (e.g. GSK/Nuvalent zidesamtinib + neladalkib post-
-  June 2026 acquisition); further UM Ventures × Blackbird co-investments.
-- **Competitive-landscape update (2026-07-26 Portfolio Watch):** two same-day
-  (2026-07-22) FDA milestones hardened the precision-NSCLC/RAS field around aSKY.
-  (a) **FDA approved GSK's zidesamtinib (Jideytro)**, a ROS1-selective TKI, in
-  previously-treated ROS1+ NSCLC — GSK's first-ever lung-cancer approval, ~2
-  months ahead of PDUFA, a fast payoff on the ~$10.6B Nuvalent acquisition;
-  **neladalkib (ALK) NDA under FDA review, Nov 27 2026 target.** These are the
-  exact GSK-Nuvalent axis flagged above; category validation but different
-  oncogenic drivers (ROS1/ALK, not KRAS) = landscape validation more than a
-  head-to-head threat. (b) **FDA accepted Revolution Medicines' daraxonrasib**
-  (oral multi-selective RAS(ON) inhibitor) NDA in previously-treated metastatic
-  PDAC, into the FDA National Priority Voucher pilot (Ph3 RASolute 302; broader
-  Ph3 program includes NSCLC) — the more direct KRAS/RAS comparator aSKY's
-  undisclosed KRAS-frame mechanism must define itself against. Read: RAS-mutant
-  oncology is de-risking fast at the regulatory level = tailwind for the science
-  AND a rising differentiation bar. **Action:** Eddie + aSKY team refresh the
-  competitive map now; the undisclosed-mechanism gap gets more expensive as the
-  field matures.
-- **Competitive read SHARPENED to the G12D-selective subfield (2026-08-12 Portfolio
-  Watch, board item; landscape-consolidation read, NOT a fresh single catalyst):**
-  the bar for aSKY's undisclosed KRAS-frame antibody is no longer just pan-RAS
-  daraxonrasib — it's the **KRAS G12D-SELECTIVE** subfield the "KRAS frame" points
-  at, and that subfield has hardened. Revolution Medicines' G12D-selective
-  **zoldonrasib (RMC-9805)** carries **FDA Breakthrough Therapy designation in KRAS
-  G12D NSCLC** (previously PD-(L)1 + platinum treated) and moves into **three Phase 3
-  trials in 2026** — two first-line metastatic PDAC (incl. RASolute 305, KRAS-G12D-
-  specific, chemo ± zoldonrasib) and one first-line NSCLC; early NSCLC data ~61% ORR /
-  ~89% DCR at 1200 mg. Add **Incyte's INCB161734** (G12D-selective; ~80% disease
-  control, 37% ORR in heavily-pretreated G12D PDAC, 2026 ASCO-GI) and a **G12D-targeted
-  degrader (setidegrasib)** now in clinic (early NSCLC + PDAC activity). Read: the exact
-  niche a KRAS-frame antibody must define against is filling with approaching-
-  registrational small molecules PLUS a new modality (degraders). This consolidated
-  while the brief watched pan-RAS. **Action stands + more urgent:** refresh the aSKY
-  competitive map against the **G12D-selective set specifically**; cost of keeping the
-  mechanism undisclosed keeps rising monthly.
-
+### aSKY Therapeutics — UMB oncology spinout ❌ TERMINATED
+_Last update: 2026-08-28_
+- **Status: TERMINATED — do not cover.** Oncology program from the lab of
+  **Alexander "Sasha" Krupnick, MD** (UMB / UM School of Medicine), originally
+  the first project of the UM Ventures × Blackbird co-investment agreement.
+  The company may still be publicly visible; that is not a reason to re-adopt
+  it. KRAS-landscape news is no longer portfolio-relevant on aSKY's account
+  (Clasp remains a live KRAS-adjacent holding).
 ### Neuropsychiatric NewCo (schizophrenia) — Lieber Institute + Third Rock ✅
 - **What:** **GPR52 agonist** program for schizophrenia. GPR52 is a
   schizophrenia-risk-gene-linked orphan GPCR pursued as a route to **all three
@@ -647,214 +644,19 @@ competitors below. These are the "so what for Blackbird" hooks.
   collecting on the same molecule a **third** time through a royalty stack that survived two ownership changes is a **template for papering a
   Blackbird out-license**.
 
-### Gut-targeted bimodal therapeutic — Crohn's & ulcerative colitis (JHU) ✅
-- **What:** Oral, **gut-restricted GCPII (glutamate carboxypeptidase II)
-  inhibitor** — bimodal: dampen inflammation **and** ameliorate enteric-nervous-
-  system pain. From **Prof. Barbara Slusher** & colleagues, **JHU Drug
-  Discovery**.
-- **Status:** Funded Blackbird collaboration/program. ⚠ confirm whether spun out
-  / company name.
-- **Indication-expansion trigger (2026-07-12):** Hasegawa Y, ..., Slusher B
-  (senior middle-author; JHU Drug Discovery + Pharmacology & Molecular
-  Sciences), Kamiya A (senior corresponding), "Glutamate carboxypeptidase II
-  activation in astrocytes mediates glymphatic impairment and cognitive
-  vulnerability in the aging brain following surgery," *Alzheimer's & Dementia*
-  22(7):e71666, 2026, DOI 10.1002/alz.71666, PMID 42427142. **COI: none.**
-  Funding NIH NIA/NIDA/NIMH. Aged C57BL/6 abdominal-surgery POCD model.
-  **Male-specific** vulnerability in recognition + spatial memory. Hippocampal
-  astrocyte scRNA-seq identifies GCPII-upregulating subpopulation; AQP4
-  polarization collapses at astrocytic endfeet (glymphatic impairment).
-  Astrocyte-specific GCPII KD + Slusher lab's 2-PMPA both rescue cognition +
-  AQP4 polarization + hippocampal glutamate. **Second brain-selective
-  indication for the Slusher GCPII estate** (existing program is peripheral,
-  gut-restricted): POCD is ~10-20M/yr US elderly surgeries with no approved
-  therapy + sex-biomarker-selectable Phase 2 design (male ≥65, AQP4 imaging
-  surrogate, peri-op dosing). Kamiya = mechanism/imaging partner, Slusher =
-  medchem stack — translationally coherent Hopkins-campus team. Diligence
-  questions: existing CNS-penetrant chemotype status, brain PK + target
-  engagement biomarkers in aged animals, regulatory endpoint scoping (no formal
-  FDA POCD guidance).
-- **Watch:** IBD (Crohn's/UC) competitive landscape — oral & gut-restricted
-  agents, IBD-associated pain; GCPII/NAALADase biology. **New competitive
-  threats (2026-07-12 Portfolio Watch):** Merck tulisokibart TL1A ATLAS-UC
-  Phase 3 induction win June 22 + 3 new Ph2b indications (IBD MOA-crowding
-  acceleration); Vera TRUTAKNA (atacicept) FDA accelerated approval July 7 as
-  first dual BAFF+APRIL for IgAN (5th IgAN drug / 4th mechanism in ~2 years =
-  autoimmune-cluster draining fast; IBD bucket already has TL1A + IL-23 + miRNA
-  + integrin-α4β7 staked). Differentiation must lead on the pain axis or
-  positioning is not defensible. **Second-indication watch:** CNS-penetrant
-  GCPII in POCD (see indication-expansion trigger above).
-- **THE FIBROSIS AXIS JUST GOT CLAIMED, AND THE ARCHITECTURE JUST GOT VALIDATED —
-  FIBRX THERAPEUTICS (2026-08-14; aired 2026-08-19 Portfolio Watch, second item):**
-  **Skye Bioscience + Redx Pharma** agreed to combine (UK scheme of arrangement;
-  close expected **Q4 2026**) into **Fibrx Therapeutics, Inc.**, Nasdaq-listed,
-  with **$125M** of new money: ~**$68M PIPE** (Abingworth, British Business Bank,
-  NEXTBio Capital, 5AM Ventures, Redmile) + **$36M Series A** led by **Abingworth**
-  (with British Business Bank, Redmile) + **up to $22M equity line** from a
-  Redmile-affiliated fund ($5M warrant component). Redx management runs it —
-  **CEO Lisa Anson** (20 years AstraZeneca), CFO Peter Collum, **CMO Mei-Lun Wang,
-  MD** (paediatric gastroenterologist), CSO Caroline Phillips, CTO Cliff Jones.
-  Funded **into 2029 and through the Phase 2 readout**. Ownership on close:
-  pre-transaction Redx ~46.17% / Skye ~5.38% / new investors ~48.45%; ~934.2M
-  fully-diluted shares. CVRs: Skye holders get 90% of net nimacimab-monetisation
-  proceeds (12-month window); select Redx holders get 100% of legacy-asset proceeds
-  over 15 years.
-  **LEAD ASSET RXC008 — an oral, GI-RESTRICTED pan-ROCK inhibitor for FIBROSTENOTIC
-  CROHN'S**, i.e. the stricturing/fibrotic axis of the disease, where the current
-  answer is **surgery** and **no approved therapy addresses the underlying
-  fibrosis**. **FDA Fast Track (Jan 2026)**, open US IND, **Phase 2 commencing H2
-  2026, topline H2 2028**. **Phase 1 showed favourable tolerability with gut TISSUE
-  EXPOSURE and NO clinically relevant SYSTEMIC BREAKTHROUGH and no hypotension.**
-  Rest of pipeline: **zelasudil (RXC007)**, next-gen selective ROCK2 inhibitor
-  completing Phase 2 in IPF (positioned for partnering), plus a preclinical
-  **discoidin domain receptor (DDR)** program for kidney/lung/liver fibrosis (IND
-  planned 2027).
-  **SO-WHAT — TWO-SIDED, AND BOTH HALVES ARE USABLE.**
-  **(a) VALIDATING, and it is a CITATION not a landscape note:** that Phase 1
-  result — gut tissue exposure with no clinically relevant systemic breakthrough —
-  **is precisely the clinical-pharmacology package our gut-restricted GCPII program
-  has to produce**, and a real syndicate just put **$125M** behind "oral,
-  gut-restricted small molecule in Crohn's" as a fundable, de-riskable
-  ARCHITECTURE, having demonstrated the restriction IN HUMANS. Use it in Hemaka's
-  deck as third-party proof that the architecture funds.
-  **(b) NARROWING — the durable line: CROHN'S IS BEING STAKED AXIS BY AXIS, AND
-  PAIN IS NOW THE LAST OPEN ONE.** Inflammation was already thoroughly spoken for
-  (TL1A, IL-23, integrin-α4β7, S1P, JAK). As of 2026-08-14 **FIBROSIS is spoken for
-  too**, with money AND a Fast Track behind it. **NOTHING in the Fibrx package
-  touches PAIN.** So the standing instruction above — differentiation must lead on
-  the enteric-nervous-system pain axis or the positioning is not defensible — is no
-  longer merely true; **it now describes the last unstaked axis in the indication.**
-  Build the program's positioning on that sentence and stop hedging it.
-- **WHAT STAKING THE PAIN AXIS ACTUALLY COSTS — THE AMBROS/NERIDRONATE TEMPLATE (2026-08-22 Portfolio Watch
-  LEAD; event 2026-08-21):** Ambros Therapeutics took **neridronate**, an old amino-bisphosphonate licensed from
-  Abiogen and approved in Italy for CRPS-1 since 2014, reverse-merged it into **Werewolf Therapeutics'** Nasdaq
-  shell with an oversubscribed **$150M PIPE** (RA Capital + Janus Henderson), on top of a **$125M Series A**
-  (2025-12-16) — **~$275M in eight months at a $500M valuation for a molecule GRÜNENTHAL ALREADY FAILED WITH.**
-  Grünenthal's two Ph3s (NCT03530345 n=182, NCT03560986 n=267) were **terminated in 2019 at a pre-planned pooled
-  interim FUTILITY analysis** (criterion: observed drug-vs-placebo mean difference ≥ −0.3 on the 11-pt NRS).
-  **Ambros's CRPS-RISE (NCT07210515) keeps the SAME molecule, SAME 400 mg cumulative IV dose over Days 1/4/7/10,
-  and SAME primary endpoint (average pain intensity, 11-pt NRS, Week 12). Everything that changed is the ENTRY
-  DOOR:** ≤6 months from onset (vs up to 2 years), **warm subtype only**, **positive centrally-read triple-phase
-  bone scan**, CRPS-2/NOS excluded, no-inciting-event cases excluded, **Pain Catastrophizing Scale ≥40 excluded**,
-  eDiary run-in — five enrichment gates where Grünenthal had none and instead *required* prior failure of ≥2
-  treatments (a chronic, refractory, heterogeneous population).
-  **DURABLE LESSON FOR THIS PROGRAM: the money for a pain asset does not buy a novel mechanism, it buys a
-  STRATIFICATION PACKAGE.** So the program question is **not** "does gut-restricted GCPII inhibition relieve
-  visceral pain" but **"which IBD patients, identified by what OBJECTIVE measure, BEFORE dosing?"** If an
-  enrichable subpopulation exists — a visceral-hypersensitivity phenotype, an imaging or biomarker readout, a
-  disease-duration window — **that is the registration path, and it belongs in the plan at the PRECLINICAL stage**,
-  not discovered after a Phase 2 misses on all-comers. **Action (Hemaka + Slusher team): specify the enrichment
-  strategy now.** **CANDID LIMITS to state alongside it:** neridronate acts on bone resorption, not the enteric
-  nervous system; and CRPS-1 is an orphan indication with NO approved therapy, a far cleaner regulatory setup than
-  pain in Crohn's where every patient is already on an approved anti-inflammatory. **What transfers is trial
-  architecture and financing, not biology.**
-  Sources: https://investors.werewolftx.com/news-releases/news-release-details/werewolf-therapeutics-and-ambros-therapeutics-announce-merger
-  · https://clinicaltrials.gov/study/NCT07210515 · https://clinicaltrials.gov/study/NCT03530345
-  **STRUCTURAL FOOTNOTE (Eddie):** the route to Nasdaq here is a **reverse merger
-  into a shell with contingent value rights** paying legacy holders out of the old
-  assets — **17 such deals in 2026, the most since 2018** (Avere's $820M raise
-  leading the trend) — a live **exit template** for a Phase-2-ready Baltimore asset
-  that does not want to run a conventional offering.
-  Source: https://ir.skyebioscience.com/news-releases/detail/261/skye-bioscience-and-redx-pharma-announce-transaction-agreement-and-125-million-in-financings
-
-- **THE PAIN-FINANCING PATTERN IS NOW TWO IN FIVE DAYS — SLATE MEDICINES (2026-08-24 Portfolio Watch, second item; event 2026-08-17, previously uncovered here).** **Fulcrum Therapeutics + Slate Medicines** all-stock reverse merger; combined company operates as **Slate Medicines, Inc.** on Nasdaq (**SLTE**), Fulcrum holders ~5% / Slate ~95%, CEO **Gregory Oakes**; **oversubscribed $245M concurrent private placement**, funded **into 2029**. Lead asset **SLTE-1009**, a mAb binding **both PACAP and VIP** for **migraine prevention**, **in-licensed from China-based DartsBio Pharmaceuticals**; company positions dual targeting as superior to PACAP-only agents. **Stage: Phase 1 in HEALTHY VOLUNTEERS in Australia, preliminary data mid-2027 — never been in a patient.** **Together with Ambros/Werewolf (08-21, $150M PIPE, neridronate ex-Abiogen): ~$395M into pain assets in five days, both via reverse merger into a Nasdaq shell, NEITHER on a self-discovered molecule.** **HARDENED DURABLE LINE (supersedes nothing in the 08-22 entry, sharpens it): the money in pain buys a STRATIFICATION PACKAGE, and there are exactly two templates for producing one — an OBJECTIVE ENROLLMENT CRITERION (Ambros: ≤6 months from onset, warm subtype, positive centrally-read bone scan, PCS<40, eDiary run-in) or a RECEPTOR-SELECTIVITY ARGUMENT on a de-risked target class (Slate: dual PACAP/VIP vs PACAP-only). ACTION (Hemaka + Slusher team): pick which template the gut-restricted GCPII program is running and write it into the PRECLINICAL plan — not the Phase 2 protocol.** **CANDID LIMIT: SLTE-1009 is a systemic antibody for migraine; there is no biological read-through to gut-restricted small-molecule GCPII inhibition. What transfers is financing architecture and the stratification discipline.** Sources: https://ir.fulcrumtx.com/news-releases/news-release-details/fulcrum-therapeutics-and-slate-medicines-announce-merger · https://www.biopharmadive.com/news/slate-fulcrum-reverse-merger-migraine-anti-pacap/828007/
-- **STRUCTURAL FOOTNOTE UPDATE (Eddie; amends the 08-22 reverse-merger note):** the reverse-merger-into-a-shell window is **NOT restricted to Phase-2-ready assets** — Slate executed one with a molecule that has never been dosed in a patient. A large committed financing plus a clean story is sufficient. **Second-order diligence hook: both of these assets were in-licensed from outside the US (Italy; China) in the same week two Republican members of Congress asked Commissioner Diamantas to discount Chinese clinical data absent recent FDA site audits — know which data package came from where, and whether the sites have been inspected, before looking at any such deal.**
-
-- **REPOSITION THE PROGRAM AS A COMBINATION PARTNER, NOT A MONOTHERAPY (2026-08-27 Portfolio Watch item 2; event 2026-08-25).**
-  **Spyre's SPY072 (anti-TL1A) cleared statistical significance but not its own bar in the 143-patient SKYWAY rheumatoid-arthritis sub-study**
-  (low dose −1.9 vs −1.3 placebo on DAS28-CRP; high dose missed the primary), **RA monotherapy dropped**, stock **−13%** and **>$1B of market
-  value erased**; PsA + axSpA due **Q4 2026**, UC + hidradenitis suppurativa through **2027–2028**; sell-side read "the core IBD combo thesis is
-  intact." **SO-WHAT:** the target class carrying **~$10B+ of deal value** (Merck/Prometheus; Sanofi/Teva duvakitug) has now publicly signalled
-  it may not carry a **monotherapy** label outside the gut ⇒ IBD tilts to **combination regimens**, and the ideal partner for a systemic
-  anti-TL1A antibody is **oral, gut-restricted, non-overlapping mechanism, adding no systemic immunosuppression** — a precise description of this
-  program. **ACTION (Matt + Avi): rewrite the positioning document from a monotherapy story to a COMBINATION-PARTNER story; the buyer set is the
-  TL1A owners.** Transferable second read: >$1B lost on a *statistically significant* result — the market prices **effect size, not proof of
-  mechanism**.
-
-### RNA-based "translation activator" platform — mRNA upregulation ✅
-- **What:** RNA therapeutics that **upregulate** target protein by boosting
-  mRNA translation (vs. the usual knockdown/silencing) — relevant to
-  haploinsufficiency / loss-of-function disease. ⚠ PI / institution / company
-  name to confirm.
-- **Watch:** translation-activating oligos / "RNA upregulation" players (e.g.
-  Camp4, others); antisense/oligo platforms.
-- **Modality-validation datapoint (2026-07-28 Portfolio Watch):** **CAMP4
-  Therapeutics' CMP-002 cleared for first-in-human (07-27).** Australia's TGA +
-  local HREC cleared a Phase 1/2 FIH trial of CMP-002 — an ASO that targets
-  regulatory RNA (regRNA) upstream of a gene to RAISE target-protein expression
-  (opposite of knockdown ASOs). Target SYNGAP1; indication SYNGAP1-related
-  disorder (haploinsufficient neurodevelopmental disease, >10,000 US pts, no
-  approved DMT); intrathecal. Strong preclinical package (patient neurons →
-  humanized mice → NHP). Clearance triggered a 2nd financing close worth up to
-  $50M (Janus Henderson, Vivo, 5AM, Balyasny, CURE SYNGAP1). CAMP4's RAP Platform
-  addresses >1,200 haploinsufficient/partial-LOF disorders. **Read for OUR
-  platform:** clearest clinical/regulatory + financing validation to date of the
-  "turn-the-protein-up" modality this platform lives in — CAMP4 (the named
-  competitor in the lane) has shown a regulator will allow RNA-upregulation into
-  humans AND put an investor-backed number on the >1,200-disorder prize.
-  Validation, NOT a threat to a specific asset (no competing SYNGAP1 program) —
-  but a PACE-SETTER: leading independent RNA-upregulation co. now FIH + funded =
-  live clock to stake a differentiated wedge (targeting mechanism vs regRNA-ASO;
-  delivery vs intrathecal; disease set). Action: Avi + platform leads define the
-  defensible angle now.
-- **Financing-pace update (2026-08-02 Portfolio Watch LEAD):** CAMP4's FIH
-  clearance tripped a condition on a Sept-2025 private placement; the **second
-  tranche of up to $50M** (Janus Henderson, Vivo, 5AM, Balyasny, Adage,
-  Coastlands, Trails Edge, CURE SYNGAP1; Leerink lead) was disclosed 07-27 as
-  **expected to close within five business days** = imminent as of 08-02. The
-  pace-setter has now removed money as its constraint (FIH + freshly funded), so
-  the differentiated-wedge task moves from important to **urgent**.
-- **Close landed + wedge specified (2026-08-03 Portfolio Watch LEAD):** the second
-  tranche's actual close date is **on or about 2026-08-03** (CAMP4 Form 8-K,
-  filed 07-27); corrected figures = **up to $50.1M gross** for **up to 32,721,172
-  shares/pre-funded warrants**, Leerink lead placement agent (Piper Sandler,
-  Cantor, Wedbush co-agents), Coastlands lead investor + Janus Henderson/Vivo/5AM/
-  Balyasny/Adage/Trails Edge/CURE SYNGAP1. Pace-setter now fully funded + in the
-  clinic. **The differentiation wedge, made concrete along three axes (Avi/platform
-  leads, this week):** (1) **mechanism** — CAMP4 acts at the transcriptional door
-  (ASO vs upstream regulatory RNA, releasing a brake to raise transcript); acting
-  at **translation** (efficiency of reading existing mRNA → protein) is a different
-  chemistry + IP estate with a dose-control/reversibility edge on some targets — if
-  our platform is genuinely translation-level, sharpen that distinction rather than
-  describing by analogy to CAMP4; (2) **delivery** — CAMP4 is intrathecal/CNS, so
-  every liver/muscle/peripheral haploinsufficiency is non-overlapping white space if
-  our delivery reaches it; (3) **disease set** — >1,200 disorders is a framing number
-  not a pipeline; plant our flag where translation-step upregulation has a biological
-  edge AND CAMP4 is absent, not SYNGAP1/marquee names.
-- **Close CONFIRMED + read the structure (2026-08-05 Portfolio Watch LEAD):** CAMP4
-  announced the **second closing on 2026-08-04** (BioSpace PR; verified) — **~$50.1M
-  gross** = 10,756,498 common shares at **$1.53** + 39,306 shares at $1.65 (insiders) +
-  **21,925,368 pre-funded warrants at $1.5299** (i.e. the bulk of the deal is warrants),
-  same Sept-2025 syndicate (Coastlands lead, Janus Henderson, Vivo, 5AM, Balyasny, Adage,
-  Trails Edge, CURE SYNGAP1; Leerink lead agent), triggered by the 07-27 CMP-002 SYNGAP1
-  clearance. **Analytical angle = the STRUCTURE tempers the validation read:** this is a
-  pre-committed insider milestone tranche at a sub-$2 price, NOT a hot new round at a
-  step-up — insiders honoring a Sept-2025 SPA on a regulatory trigger, not the market
-  re-rating the science. What it unambiguously does = removes money as CAMP4's constraint;
-  the named independent RNA-upregulation competitor is now FIH + fully funded into the
-  clinic → the 3-axis differentiation wedge (above) is now on a LIVE clock, write it down
-  this week. Paperwork watch from 08-04 = RESOLVED.
-- **Q2 update + FIH TIMELINE CORRECTION (2026-08-17 Portfolio Watch LEAD; CAMP4 Q2
-  results reported 2026-08-13):** three durable facts + one correction to our own map.
-  (1) **Cash runway now reaches END OF 2028** (post the ~$50.1M second tranche); financing
-  removed as a constraint for 2+ years; Q2 net loss $33.5M (incl. ~$20.9M non-cash derivative
-  revaluation); HQ moved to Watertown, MA. (2) **CMP-002 (SYNGAP1) regulatory footprint
-  widened** — now cleared to start in BOTH **Australia AND Argentina** (Argentina ANMAT is
-  NEW vs the 07-27 Australia-only clearance), + **EU + UK filings** submitted to open more
-  sites. (3) **Analyst Day Sept 28, 2026** — trial design + **early discovery pipeline**.
-  **CORRECTION to prior briefs:** this file/show repeatedly called CAMP4 "first-in-human and
-  fully funded." **NOT yet FIH** — CAMP4 has CLEARANCE to begin but has **not dosed a patient**;
-  own guidance = **first-in-human INITIATES Q4 2026**. So the pace-setter is on the clinic's
-  doorstep, not through it → our platform has slightly MORE runway than the "already FIH"
-  shorthand implied. **Use going forward:** describe CAMP4 as "funded through 2028, cleared in
-  AU+AR / filed EU+UK, first dosing expected Q4 2026," NOT "first-in-human." **Action (Avi +
-  platform leads):** the **Sept 28 analyst day is the single most useful forward event on this
-  beat** — not SYNGAP1 mechanics but the EARLY PIPELINE; ">1,200 disorders" is a framing number,
-  and named programs = a map of which diseases/tissues CAMP4 takes next, which by subtraction
-  defines our white space (translation-step mechanism vs upstream regRNA; delivery beyond their
-  intrathecal/CNS route = liver/muscle/peripheral haploinsufficiency open; disorders we own that
-  they don't). Parse the early pipeline the day it drops.
-
+### Gut-targeted bimodal therapeutic — Crohn's & ulcerative colitis (JHU) ❌ TERMINATED
+_Last update: 2026-08-28_
+- **Status: TERMINATED — do not cover.** Oral, gut-restricted GCPII inhibitor
+  from **Prof. Barbara Slusher** & colleagues, JHU Drug Discovery.
+- **Blackbird remains open to other Barbara Slusher projects** — the Slusher
+  lab stays a live sourcing relationship; only this program is dead. IBD /
+  TL1A / gut-restricted competitive news is no longer portfolio-relevant.
+### RNA-based "translation activator" platform — mRNA upregulation ❌ TERMINATED
+_Last update: 2026-08-28_
+- **Status: TERMINATED — do not cover.** RNA therapeutics that upregulate
+  target protein by boosting mRNA translation; **PI was Jeff Coller (JHU)**.
+  CAMP4 and other RNA-upregulation players are no longer tracked on this
+  program's account.
 ### 1104health — clinical-trial enrollment marketplace ✅
 - **What:** Clinical-trial enrollment and access platform. **Pivoted from a
   patient-facing model to a clinician-focused marketplace** that embeds clinical-
@@ -943,6 +745,45 @@ competitors below. These are the "so what for Blackbird" hooks.
   trial-cycle-time company proves strategic money now underwrites this problem directly — **that is the investor profile to be in front of**. But
   the capital bought the **protocol / structured-data layer, not enrollment**, and recruitment is still the single largest block of months lost in
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
+
+### NuGate Therapeutics — ALS/FTD antisense spinout ✅
+_Last update: 2026-08-28_
+- **What:** Oligonucleotide-based medicine (**ASO**) against a highly
+  sought-after target profile that could treat **all forms of ALS and FTD**.
+- **Science:** leverages biology pioneered at JHU across decades and multiple
+  labs — **Jeff Rothstein** and **Alyssa Coyne**.
+- **Status:** resident in the **Blackbird BioHub**.
+- **Watch:** ASO/oligo platforms in ALS-FTD (Ionis, QurAlis, Amylyx, Trace);
+  TDP-43 and C9orf72 biology; nucleocytoplasmic transport.
+
+### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
+_Last update: 2026-08-28_
+- **What:** novel immunology platform that **selectively treats T-cell-mediated
+  autoimmune disease**; T-cell engager platform with potential in ankylosing
+  spondylitis and others.
+- **Science:** launched from the **Max Konig**, **Bert Vogelstein** and **Drew
+  Pardoll** labs.
+- **Status:** originated in Maryland, **now based in Boston** — a live instance
+  of the Baltimore-nexus leakage pattern this brief tracks.
+- **Watch:** T-cell engagers redirected at autoimmunity; antigen-specific
+  tolerance platforms; ankylosing spondylitis / axial spondyloarthritis.
+
+### Artemyx — cfDNA diagnostics for chronic disease ✅
+_Last update: 2026-08-28_
+- **What:** non-invasive **blood tests** for diagnosis and monitoring of chronic
+  disease — AI-powered analysis of **cell-free DNA** to predict liver fibrosis,
+  systemic lupus erythematosus, rheumatoid arthritis, inflammatory bowel
+  disease and endometriosis.
+- **Science:** originated in **Victor Velculescu's** lab (JHU).
+- **Watch:** liquid-biopsy and cfDNA-fragmentomics companies outside oncology;
+  reimbursement precedent for chronic-disease monitoring assays.
+
+### Biolinco — barcoded antibody production ✅
+_Last update: 2026-08-28_
+- **What:** **barcoded antibody production.**
+- **Science:** founders are postdocs in **Reza Kalhor's** lab (JHU) — same lab
+  behind the spatial-omics platform tracked in §2b.
+- **Watch:** DNA-barcoded antibody / multiplexed proteomics reagent platforms.
 
 ### Clasp Therapeutics — JHU-born precision immuno-oncology (TCR-mimic bispecific T-cell engagers) ✅
 - **What:** Off-the-shelf **TCR-mimic bispecific T-cell engagers** ("pHLAre" = precise
@@ -1906,17 +1747,14 @@ raises, exits, or crosses a scientific milestone.
   **post-daraxonrasib stratum** now that RASONQUE is approved in previously treated PDAC? And what is the multiplied
   **eligible fraction** (G12V prevalence × HLA-A*03:01 frequency) Clasp is underwriting?
 - **Eligible-fraction row (added 2026-08-27):** build and maintain the addressable-fraction column of the KRAS
-  competitive map for Clasp, Adventris and aSKY — the biomarker-free RASONQUE label makes it the number a pharma
+  competitive map for Clasp and Adventris — the biomarker-free RASONQUE label makes it the number a pharma
   corp-dev team computes first.
 - **Aletira pricing answer (added 2026-08-27):** written position on the Otarmeni-is-free anchor for the Series A deck,
   plus the GJB2-vs-OTOF population arithmetic that answers it.
-- aSKY: disclosed target / MOA.
 - Schizophrenia NewCo: company name; DC timing confirmation.
-- Crohn's/colitis GCPII program: spinout status / name.
-- RNA upregulation platform: PI, institution, company name.
 - 1104health: Blackbird BioVentures round size / lead; whether the pivot from
   patient-facing to clinician-marketplace required new IP filings.
-- Full 18-company list (only ~6 programs identified publicly so far).
+- Full ~22-company list (7 spinouts + Clasp named so far).
 - Advisory board roster (blackbirdlab.org/advisors).
 - **OptaNova Pharma** (§2b): therapeutic area, funding status, JHTV license
   status vs. inventor-owned IP.

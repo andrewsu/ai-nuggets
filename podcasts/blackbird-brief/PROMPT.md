@@ -42,6 +42,12 @@ Full portfolio, program, and partner detail lives in
 start of every run** — it defines what "portfolio-relevant" means and lists the
 people, targets, and institutions to track.
 
+**Terminated programs are out of scope.** Entries in the reference marked
+❌ TERMINATED are dead programs — do not build items around them, and do not
+treat their competitive, regulatory or financing news as portfolio-relevant.
+Check an entry's status marker before writing it into an episode. If one slips
+through, note it and move on; it is not worth aborting or reworking a run over.
+
 **Keep it current by editing in place.** When you learn something new and
 durable about a program, partner, or competitor, revise that entry's existing
 lines and bump its `_Last update:_` date. **Never append a dated run entry,
@@ -180,24 +186,59 @@ episodes. Same contract as `receptor-and-reason`.
 
 **Runner behavior — follow these steps every run:**
 
-1. **At run start:** read every line of `state/shipped.jsonl` and build a set
-   of shipped keys. Missing file → empty set (created on first append).
-2. **During candidate filtering:** compute each candidate's key and exclude any
-   whose key is already in the set. A follow-up that adds genuinely new
-   information (a readout on a deal you already covered) is *not* a duplicate —
-   it has its own source URL and its own key.
-3. **After picks are final and the script is written:** append exactly one line
-   for today's episode. Sundays produce two lines, one per episode. Append
-   only — never edit or reorder existing lines.
+The ledger grows forever. **Never read it into context** — no `cat`, no
+Read tool, no dumping the key list. Every access goes through
+`scripts/shipped_keys.py`, which keeps the file on disk and hands back only
+what you asked for.
 
-**Failure modes:**
+1. **At run start:** nothing to load. `python3 scripts/shipped_keys.py
+   blackbird-brief --stats` prints the ledger's size for the log without
+   emitting any keys.
+2. **During candidate filtering — before spending any fetch budget:** write
+   every candidate as one `key<TAB>title` line and pipe the whole list
+   through the filter:
 
-- File missing → treat as empty set, create on first append.
-- Any line unparseable as JSON → log the gap to `logs/cron.log`, treat as empty
-  for the run, **do not overwrite the file**, and skip the append so the data
-  can be recovered by hand.
-- Key present with a noticeably different title → treat as a dedup hit (skip
-  the candidate) and log a warning.
+   ```bash
+   python3 scripts/shipped_keys.py blackbird-brief < candidates.tsv > fresh.tsv
+   ```
+
+   Only the lines in `fresh.tsv` are eligible. Matching is done on
+   normalized keys: case, an `https://doi.org/` prefix, a bioRxiv DOI vs.
+   its bare `biorxiv:` form, an arXiv version suffix, a `NCT########` in
+   either case, and a URL's query string, fragment, `utm_*` params or `www.`
+   all resolve to the same item. The stderr summary is the dedup number for
+   the cron.log funnel.
+
+   **Supply the title.** A candidate whose title matches a shipped title is
+   dropped even when its key differs, which catches the same item re-entering
+   under a second URL. This is where the follow-up rule bites: a readout on a
+   deal you already covered is *not* a duplicate, and if it reuses the
+   original title the filter will drop it. When that happens, re-run with
+   `--keep-title-matches`, keep only the item you meant, and note it in the
+   log.
+3. **After picks are final and the script is written:** append with the same
+   `key<TAB>title` format the filter emits, one call per episode — Sundays
+   produce two lines, so run it twice with the two basenames:
+
+   ```bash
+   python3 scripts/shipped_keys.py blackbird-brief --append \
+       --basename YYYY-MM-DD-portfolio-watch < picks.tsv
+   ```
+
+   It verifies the whole ledger parses before writing, then appends exactly
+   one line. Do not edit or reorder existing lines by hand — append-only.
+
+**Failure modes** (all enforced by the script — this is what its exit codes
+mean, not extra work for you):
+
+- File missing → empty set, created on first append.
+- Any line unparseable as JSON → the filter prints the bad line numbers to
+  stderr, which lands in `logs/cron.log`, and treats the ledger as empty so
+  the episode can still be produced; `--append` **refuses** (exit 3) and
+  leaves the file untouched so the data can be recovered by hand. Fix it
+  before the next run — a run under an empty set can ship a repeat.
+- Key present with a noticeably different title → dedup hit, candidate
+  dropped, warning printed with both titles.
 
 **Backfill note:** lines before 2026-08-28 were reconstructed from the archived
 episode scripts. 34 early episodes carried no machine-extractable identifiers
