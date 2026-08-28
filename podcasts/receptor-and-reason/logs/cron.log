@@ -3857,3 +3857,40 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE I stopped at the script + stubs a
 
 Two memories updated: the receptor-and-reason deferral list (two items resolved and shipped; today's walled/readable split recorded) and a new reference on the bioRxiv API outage and the Europe PMC workaround.
 === 2026-08-27T03:07:47-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-28T02:50:12-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, feed edit and the commit — the orchestrator does those after batch TTS. Script + both stubs are in place and the dedup ledger is appended.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-08-28-receptor-and-reason.md` (3,586 spoken words, ~20 min, 11 items)
+- `…2026-08-28-receptor-and-reason.rss-item.xml` (validated XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `…2026-08-28-receptor-and-reason.commit-msg`
+- `state/shipped.jsonl` +1 line, 11 keys
+
+All 11 paper-link URLs were re-fetched and confirmed to resolve to the correct papers (two needed a retry through a transient Cloudflare challenge).
+
+**Candidate funnel**
+
+*Source outcomes*
+- **bioRxiv details API — DOWN, second consecutive day.** `Connection refused` on 143.48.220.72:443 (curl + urllib). One retry, same. Fell back to Europe PMC `SRC:PPR` per the documented workaround. Recall gap is real: 12 fielded title queries surfaced 53 unique bioRxiv/medRxiv items vs. the ~1,900 a day-by-day sweep would return.
+- **arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml` present, 500 entries covering 08-25→08-27. 203 passed the bio+agentic filter after dedup.
+- **Crossref journal sweep** — 23 journals, 0 failures, 180 items since 08-20; 45 substantive after discarding issue/abstract/correction records; 12 were already-shipped (the ledger check paid for itself again).
+- **Full-text gate** — 12 deferred preprints retested via jina; 7 newly rendered. 12 journal articles fetched; 9 were reference-list-only walls (nature.com early access), 3 readable.
+
+*Shortlist → chosen (11 marked ✓)*
+
+✓ Psilocybin collapses visual change detection — biorxiv 2026.08.21.745777 **(LEAD)**
+✓ Transient mitochondrial switch, adolescent cannabis — 10.1038/s41386-026-02539-3
+✓ Chronic trazodone, APP NL-F — biorxiv 2026.08.20.746036
+✓ Neuromelanin-MRI sexual dimorphism / normalization — 10.1038/s41380-026-03841-8
+✓ In silico multi-armed-bandit DBS programming — biorxiv 2026.08.20.745844
+✓ BALMS longitudinal mental-health sensing — arxiv 2608.27219
+✓ TrialCode Agent — medrxiv 2026.08.20.26360962
+✓ BixBench3 — arxiv 2608.25286
+✓ nnCNV CYP2C19 deletions — biorxiv 2026.08.21.746170
+✓ Trimole-Hybrid ADMET — biorxiv 2026.08.24.746660
+✓ 6-methyl nicotine vapor (Taffe/Scripps) — biorxiv 2026.08.20.746016
+
+Not chosen: PFC glucocorticoid receptors (2026.08.21.745892) and mechanism-annotated single-cell perturbation benchmark (2026.08.19.745729) — both **rendered today, unshipped, first in line tomorrow**; CDIRAs uncertainty metric (10.1002/psp4.70326, readable but thin); PAM-DB (2026.08.20.745895); rare-disease LLM allocation (2608.25236); EEG-FM parameter-efficient adaptation (2608.24727). Deferred for lack of full text: Nav1.9 (2026.08.22.746445) and 5-HT/OFC/alcohol (2026.08.19.745752) still abstract-only; mGluR-II/NALCN (2026.08.21.746377) and BindScreen (2026.08.24.746801) still returning proxy errors. Permanently blocked today: UCB-J PET in autism, vestibular stim PTSD RCT, D1 agonists review, cannabis stress RCT, α-synuclein degrader, AM6545 fragile X, multi-agent Clinical Trial Center — all nature.com references-only walls.
+
+One thing worth flagging: I updated the readability heuristic in memory. Heading count is *not* a discriminator either — two of today's picks came back as accepted-manuscript PDF text with 1–2 markdown headings and complete bodies, while a 50 KB zero-heading file was pure references. The reliable test is a case-insensitive search for a Discussion/Results section.
+=== 2026-08-28T03:10:52-07:00 done  receptor-and-reason (exit 0) ===
