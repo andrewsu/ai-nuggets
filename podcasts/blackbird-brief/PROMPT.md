@@ -40,9 +40,16 @@ Baltimore.
 Full portfolio, program, and partner detail lives in
 `podcasts/blackbird-brief/memory/blackbird-portfolio.md`. **Read it at the
 start of every run** — it defines what "portfolio-relevant" means and lists the
-people, targets, and institutions to track. Keep it current: when you learn
-something new and durable about a program, partner, or competitor, update that
-file as part of the run.
+people, targets, and institutions to track.
+
+**Keep it current by editing in place.** When you learn something new and
+durable about a program, partner, or competitor, revise that entry's existing
+lines and bump its `_Last update:_` date. **Never append a dated run entry,
+"Last verified" block, daily log, or episode recap to this file** — that is how
+it previously grew to five times its useful size. It is a reference, not a
+journal: each program should be described once, currently. Per-episode
+narrative belongs in the episode script; per-item dedup belongs in
+`state/shipped.jsonl` (§3a below).
 
 ## What they care about
 
@@ -149,6 +156,55 @@ short retry, then proceed with the rest — never abort the run).
   novel mechanism, platform-ability, defensible IP, and unmet need over
   incremental findings.
 
+# 3a. Deduplication ledger
+
+A persistent state file prevents the same item from being covered in multiple
+episodes. Same contract as `receptor-and-reason`.
+
+**Path:** `podcasts/blackbird-brief/state/shipped.jsonl`
+
+**Format:** one JSON object per published episode, newline-delimited:
+
+```jsonl
+{"date":"2026-08-28","basename":"2026-08-28-portfolio-watch","items":[{"key":"url:https://...","title":"..."}]}
+```
+
+**Key precedence (highest first):**
+
+1. DOI — `doi:10.xxxx/yyyy` (papers, preprints)
+2. Canonical URL — `url:<url>` for news, press releases, filings, pipeline
+   pages. Strip query strings, fragments and trailing slashes. Use the URL of
+   the **specific item**, never a section index or homepage.
+3. Trial ID — `nct:NCT########`, only when the item is a registry record with
+   no article behind it.
+
+**Runner behavior — follow these steps every run:**
+
+1. **At run start:** read every line of `state/shipped.jsonl` and build a set
+   of shipped keys. Missing file → empty set (created on first append).
+2. **During candidate filtering:** compute each candidate's key and exclude any
+   whose key is already in the set. A follow-up that adds genuinely new
+   information (a readout on a deal you already covered) is *not* a duplicate —
+   it has its own source URL and its own key.
+3. **After picks are final and the script is written:** append exactly one line
+   for today's episode. Sundays produce two lines, one per episode. Append
+   only — never edit or reorder existing lines.
+
+**Failure modes:**
+
+- File missing → treat as empty set, create on first append.
+- Any line unparseable as JSON → log the gap to `logs/cron.log`, treat as empty
+  for the run, **do not overwrite the file**, and skip the append so the data
+  can be recovered by hand.
+- Key present with a noticeably different title → treat as a dedup hit (skip
+  the candidate) and log a warning.
+
+**Backfill note:** lines before 2026-08-28 were reconstructed from the archived
+episode scripts. 34 early episodes carried no machine-extractable identifiers
+and are absent from the ledger; the 3–7 day recency window makes their items
+ineligible anyway.
+
+
 # 4. Format & audio
 
 - Real, verified URLs only — never fabricate. URLs go in show notes, not the
@@ -184,4 +240,5 @@ Single commit per run (covers both episodes on Sundays).
 
 Once scripts are written, follow `PIPELINE.md` to generate audio, publish to
 R2, update the feed, and commit. Stage only `podcasts/blackbird-brief/`
-(including `memory/blackbird-portfolio.md` if you updated it).
+(including `state/shipped.jsonl`, and `memory/blackbird-portfolio.md` if you
+updated it).
