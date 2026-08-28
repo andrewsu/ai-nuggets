@@ -2639,3 +2639,35 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 **Policy/funder:** not reached — the bioRxiv outage and news sweep consumed the window; no ARPA-H/NIH/NSF check this run.
 === 2026-08-27T02:47:34-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-28T02:40:12-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per `podcasts/PIPELINE.md` I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `scripts/publish_pending.py` does that after batch TTS.
+
+**Files written**
+- `podcasts/justice-biotech-brief/scripts/2026-08-28-lisraya-brepocitinib-tyk2-jak1-dermatomyositis-fda-approval.md` (1,112 spoken words)
+- `…rss-item.xml` (validated; also simulated the `publish_pending.py` insertion — resulting `feed.xml` parses)
+- `…commit-msg`
+
+**Pick:** Lisraya (brepocitinib) — FDA approval 2026-08-27, first-in-class TYK2/JAK1 inhibitor, first targeted therapy in dermatomyositis. The angle is the pharmacological bet: the type I IFN receptor recruits TYK2 on one chain and JAK1 on the other, so a dual inhibitor covers the whole receptor where deucravacitinib (allosteric, TYK2-selective) or upadacitinib (JAK1-selective) each cover half — and the price is that ATP-site binding earns the full JAK class boxed warning where Sotyktu has none. Read the Priovant press release in full (including complete safety section), plus VALOR numbers and the 2021 Roivant/Pfizer founding terms. Never covered on this feed (0 hits for brepocitinib/dermatomyositis/Priovant in scripts or feed).
+
+**Candidate funnel**
+
+- **bioRxiv details API — FAILED.** `api.biorxiv.org` connection-refused on every request for both 2026-08-27 and 2026-08-28 (second consecutive day of the outage first seen 08-27). One retry, same result.
+- **Europe PMC `SRC:PPR` fallback** — 4 keyword queries over 2026-08-26→08-28, 16 hits total, all with `firstPublicationDate` 2026-08-26 (EPMC has not yet indexed 08-27/08-28 preprints — real recall gap). Substantive shortlist after discarding spurious matches:
+  - ABCB1-mediated drug efflux drives resistance to VpreB1-targeted ADCs in B-ALL — `10.64898/2026.08.24.746792`
+  - CD24 as a conserved innate immune checkpoint in colorectal cancer — `10.64898/2026.08.25.746757`
+  - VISTA expression marks a differentiated cancer-cell state, regulates actin cytoskeleton — `10.64898/2026.08.24.746888`
+  - None beat a first-in-class approval on the show's stated interests; not opened in full.
+- **Endpoints News** (via `r.jina.ai`, index readable with exact timestamps; article bodies paywalled) — 27 headlines scanned, 12 inside the 1–2 day window. On-target shortlist:
+  - **Roivant/Priovant — Lisraya (brepocitinib) FDA approval, dermatomyositis** (Aug 27, 5:27 PM EDT) → **CHOSEN**
+  - Akeso/Summit — ivonescimab PD-1×VEGF Phase 3 OS win in first-line biliary tract cancer (Aug 26) + CEO Q&A (Aug 27) — **excluded: already covered as the closing item in yesterday's episode, and still no numbers released**
+  - Spyre — anti-TL1A dropped in RA after modest Phase 2 (Aug 27)
+  - Generate:Biomedicines — early respiratory data disclosed after ERS poster leak (Aug 27)
+  - AstraZeneca/Amgen Tezspire and Biokin Phase 3 wins (Aug 27) — Biokin's iza-bren covered 08-20
+  - FDA approves Ziihera frontline gastric (Aug 26) — covered 08-26
+- **Fierce Biotech / Fierce Pharma — FAILED.** `WebFetch` 403; `r.jina.ai` returned an empty document for both homepages on retry. Skipped.
+- **STAT News** — not readable from this host (known).
+- **Policy/funder pages** (ARPA-H, NIH) — fetched via `r.jina.ai`, no items dated Aug 25–28 surfaced; nothing on-target.
+- **BioSpace `/latest-news-press-releases`** — page returned boilerplate only, no article index extracted.
+
+**Primary sources read in full:** Priovant GlobeNewswire release (approval, VALOR efficacy and steroid-sparing detail, complete boxed warning and warnings/precautions, pipeline); VALOR primary-endpoint figures and the 2021 Roivant–Pfizer/Priovant terms verified against Roivant, Pfizer and NEJM listings. No list price is public — the script says so rather than guessing.
+=== 2026-08-28T02:48:57-07:00 done  justice-biotech-brief (exit 0) ===
