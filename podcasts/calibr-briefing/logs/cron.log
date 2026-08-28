@@ -3630,3 +3630,35 @@ Both stubs parse as valid XML. Scripts contain no headings, bullets, URLs, DOIs,
 
 One memory update: appended the same-day-competitor-reaction technique to `reference_biotech_news_source_access.md` — the Immuneering release was the strongest competitive-landscape input of the run and appeared on no news index.
 === 2026-08-27T02:39:00-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-28T02:20:12-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set in this environment, so per PIPELINE.md I stopped after the scripts plus the two transient stubs each — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files written**
+
+- `podcasts/calibr-briefing/scripts/2026-08-28-pharma-headlines.txt` (1,988 words)
+- `podcasts/calibr-briefing/scripts/2026-08-28-generate-tslp-golukibart-spotlight.txt` (2,546 words)
+- matching `.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` placeholders) and `.commit-msg` for each
+
+**Candidate funnel**
+
+| Source | Result |
+|---|---|
+| Endpoints (`r.jina.ai/endpoints.news/news/`) | Index worked, newest-first with relative timestamps — 11 in-window items (Aug 27). **All bodies paywalled**; every pick re-sourced to a primary filing, PR or BioSpace/BioPharma Dive. |
+| BioSpace `/latest-news-press-releases` | Worked, 10 dated headlines (Aug 27–28). Bodies readable via WebFetch. |
+| BioPharma Dive | Homepage worked (undated, as usual); individual articles fetched fine. |
+| Fierce Biotech / Fierce Pharma | **Hard-403 again** — both direct WebFetch and via jina (5th consecutive run). Skipped. |
+| SEC EDGAR (`curl`) | Worked perfectly — GENB 8-K + Exhibit 99.1 gave all three ERS posters in full. This was the run's best source. |
+| astrazeneca.com | 403 direct and via jina; Tezspire CROSSING re-sourced to BioSpace. |
+| GlobeNewswire / Yahoo Finance / company IR | Roivant/Priovant Lisraya PR, MDA release, Gilead, Moderna all readable. |
+| Foresite Capital portfolio-news page | Worked — **no new portfolio item**; most recent are Khartis (Aug 13) and Latigo IPO (Aug 6). RevMed covered as an alumnus follow-on. |
+
+**Shortlist (Aug 27–28 unless noted)**
+
+- ✅ **CHOSEN — spotlight:** Generate Biomedicines ERS poster leak + 8-K — [SEC Ex-99.1](https://www.sec.gov/Archives/edgar/data/2100782/000119312526365556/ck0002100782-ex99_1.htm) / [BioSpace](https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentally-leaked-ahead-of-european-conference). Full text of all three posters read. AI-in-drug-discovery focus area; supporting reads on Upstream Bio VALIANT, tezepelumab NAVIGATOR/COURSE, Uniquity solrikitug.
+- ✅ **Headlines lead:** FDA approves Lisraya (brepocitinib), first targeted therapy in dermatomyositis — [Roivant/Priovant](https://www.globenewswire.com/news-release/2026/08/27/3352364/34323/en/priovant-announces-fda-approval-of-lisraya-brepocitinib-for-adults-with-dermatomyositis-now-available-in-the-u-s.html)
+- ✅ Tezspire phase 3 CROSSING win in EoE; ✅ Gilead Bixlenvo approval; ✅ Moderna $2B converts; ✅ Fifth Circuit rejects PhRMA on IRA; ✅ Truist/Leerink on Rasonque; ✅ Outer Bio launch; ✅ RayzeBio Indiana plant + Lilly hiding phase 1.
+- ❌ Dropped as stale: Biokin/BMS iza-bren PANKU-Lung01 (Endpoints ran it Aug 27, but the readout was **Aug 18** — recency trap), Cellares/BMS, MassBio, Biohaven, Faro, Aurora, Akeso Q&A (all covered yesterday).
+- ❌ Dropped for no readable body: Endpoints' CMS GLP-1 pilot piece and its Lilly phase 1 feature (paywalled; the Lilly item survived only because the underlying fact is verifiable on Lilly's own pipeline page). Metriport $26M and the "studio-to-firm" VC piece cut for space/off-target.
+
+One judgment call worth flagging: I put the AI story in the spotlight rather than the dermatomyositis approval. The Lisraya approval is the bigger single news event and leads the headlines, but the Generate posters are a named focus area, I had complete primary full text, and the analysis (the AI-designed affinity gain being surplus once biomarker suppression saturates at 300 mg, against Upstream Bio's 56%-vs-39% precedent) is worth more to Travis than a fourth approval spotlight in five days.
+=== 2026-08-28T02:36:27-07:00 done  calibr-briefing (exit 0) ===
