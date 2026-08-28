@@ -2170,3 +2170,30 @@ Shortlist after discarding noise:
 
 One note: the GLM-5.3-Flash vendor blog was unreadable (`r.jina.ai` returned an unrelated cached document, WebFetch returned empty), so those numbers are cross-checked across MarkTechPost and TestingCatalog rather than quoted from Z.ai directly. I saved that trap and the HN item-ID verification route to memory.
 === 2026-08-27T02:43:54-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-28T02:30:12-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Files written** (`podcasts/jinglin-ai-pulse/scripts/`):
+- `2026-08-28-thirty-percent-at-the-bench.md` — 2,813 spoken words (≈14 min)
+- `2026-08-28-thirty-percent-at-the-bench.rss-item.xml` — validated as XML, `__LENGTH__`/`__DURATION__` placeholders
+- `2026-08-28-thirty-percent-at-the-bench.commit-msg` — single line
+
+**Episode shape:** Terminal-Bench-Science (30.0% for Opus 5 on 70 expert-curated science workflows; 920 proposals → 70 tasks) and Anthropic's Model Hardware Standard preview (QuEra: a four-person, months-long, 58%-at-150s laser-relock script replaced by an overnight four-role Claude loop reaching 695/700 = 99.3%, shipped as a deterministic agent-free program) as the two halves of "can agents do science." Then French-Owen's *Small Models Have Arrived* as apparent counterpoint that actually converges — his own carve-out is hard science, and Luna finishes last at 3.3%. Money: Nvidia–Hugging Face at $12.9B. Deep cut: Dylan Patel on Dwarkesh, revenue-per-megawatt → outbidding → most usable flops in two labs by end-2028.
+
+**Candidate funnel**
+
+- **Hacker News front page + /news** — ~20 AI-related items scanned, 8 substantive:
+  - **Nvidia agrees to acquire Hugging Face for $13B** (1894 pts) — https://news.ycombinator.com/item?id=49458161 — **CHOSEN (Money Moves)**
+  - **Small Models Have Arrived** (634 pts) — https://calv.info/small-models-have-arrived — **CHOSEN (Pulse 3)**
+  - **Previewing the Model Hardware Standard** (115 pts) — https://news.ycombinator.com/item?id=49468834 — **CHOSEN (Pulse 2)**
+  - **Terminal-Bench-Science** (86 pts) — https://news.ycombinator.com/item?id=49472820 — **CHOSEN (Pulse 1, lead)**
+  - The load-bearing vocabulary of Claude (514 pts) — https://louisabraham.github.io/load-bearing/ — dropped: site is JS-rendered, could not read methodology or frequency numbers
+  - Gemini Omni 1.1 Flash (249) / Gemini-3.5-Transcribe (280) — dropped: product launches, no intellectual substance per PROMPT
+  - CEO fired developers, developers build open-source AI CEO (973 pts) — dropped: drama without technical insight
+  - The turbulent AI era is here (293 pts) — dropped: opinion, no new data point
+- **TechCrunch AI (Aug 26–28)** — 27 items scanned, 3 substantive: Barret Zoph → Google (**CHOSEN, short**); Instinct $350M at $2.5B and Amazon tripling Nvidia order (dropped for space — Nvidia/HF is the stronger money story); "100 companies call for action on rogue AI" (dropped: yesterday's episode covered the rogue-agent thread at length)
+- **Hugging Face daily papers (Aug 28)** — 18 papers scanned, top 3 relevance-filtered (PAWBench 69↑, ACE-lens agentic data 51↑, TTPO 49↑); none used — the day's discourse was announcement-driven and the show's paper coverage belongs to Ollie's other feed
+- **Long-form podcasts** — Dwarkesh × Dylan Patel, Aug 25 (**CHOSEN**, full transcript read, 92 KB). Latent Space had nothing newer than Aug 21 (used Aug 23 and 26); No Priors newest is Aug 6; MLST and Cognitive Revolution used Aug 24 and 27
+- **X/Twitter** — not attempted as a primary source; unreadable from this host (xcancel challenge, x.com needs auth). Discourse signal sourced from HN threads and attributed as such, per the standing workaround
+- **Source failures:** `www.terminal-bench-science.ai` returns a mismatched TLS certificate to WebFetch from this host (presents `*.scripps.edu`); retrieved via `r.jina.ai`. CNBC MHS article 403s to WebFetch; dropped from sources rather than cited unread. Bloomberg opinion piece 403s; dropped and the script's attribution corrected to The Information + CNBC.
+=== 2026-08-28T02:41:23-07:00 done  jinglin-ai-pulse (exit 0) ===
