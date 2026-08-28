@@ -1994,3 +1994,39 @@ Shortlist after discarding off-thesis matches:
 
 Two things worth flagging: Endpoints article bodies are paywalled, so its index was usable for discovery but every detail is sourced to BioPharma Dive, BioSpace, GlobeNewswire, FDA and SEC instead — that's now logged in memory. And the script came in above the show's usual length even after three trim passes; if you want it strictly inside 9 minutes, the Faro item is the one I'd drop.
 === 2026-08-27T02:31:10-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-28T02:10:12-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those).
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-08-28-portfolio-watch.md` (~1,780 spoken words, ≈9.8 min)
+- `podcasts/blackbird-brief/scripts/2026-08-28-portfolio-watch.rss-item.xml` (`__LENGTH__` / `__DURATION__` placeholders; XML validated)
+- `podcasts/blackbird-brief/scripts/2026-08-28-portfolio-watch.commit-msg`
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` updated (new 2026-08-28 header entry, Aletira competitor note, 3 new open items)
+
+**Episode: Portfolio Watch — Friday 2026-08-28**
+
+LEAD is original to this brief rather than taken from the tape. Eli Lilly's public pipeline page now reads, under the Phase 1 heading, "Phase 1 projects are no longer disclosed" (current as of Aug 5; Endpoints ran the industry debate 08-27). Lilly is the large-cap in inner-ear genetic medicine — Akouos ($487M, Oct 2022), Seamless Therapeutics recombinases (>$1.12B, Jan 2026) — and exactly one hearing entry survives in public: OTOF gene therapy, Phase 2. **GJB2, Aletira's and Skylark's indication, is gone**, one day after the Aurora post-mortem told every venture partner to name whoever might preempt them. I verified the workaround myself: ClinicalTrials.gov still returns NCT06517888 (anti-VEGF, vestibular schwannoma, Phase 1/2, recruiting since 2025-01-17) and NCT07503613 (LTFU, opened 2026-03-02), neither on the pipeline page — and **no GJB2 or CLRN1 trial at all, so Lilly's GJB2 work is still preclinical today**.
+
+Then: Tezspire's Phase 3 CROSSING win in eosinophilic esophagitis, which paired with Tuesday's anti-TL1A miss says systemic biologics win gut/epithelial disease on potency (so the Slusher GCPII differentiator is route and tissue restriction, not effect size); Leerink locating the KRAS whitespace in *tolerability* rather than potency; the FDA Expedited IND pilot, whose sponsor–Qualified Research Institution structure describes the BioHub paired with Johns Hopkins, with applications opening next month; and Redesign Health renaming itself from studio to firm.
+
+**Candidate funnel**
+
+Sources scanned (Portfolio Watch window 08-25→08-28, excluding items shipped 08-27):
+- BioPharma Dive (dated topic index) — ~25 items scanned, 3 in window, 2 relevant
+- Endpoints News index — ~24 items scanned, 9 in window, 3 relevant (**bodies paywalled**)
+- BioSpace latest — ~13 items in window, 2 relevant
+- BioBuzz BioHealth Capital Region — **zero articles dated 08-27 or 08-28**
+- Technical.ly Maryland — no life-sciences item in window
+- Targeted queries: hearing loss/Skylark/Sensorion, GPR52/Nxera, Clasp/Adventris, CAMP4, TL1A/IBD, KRAS, JHU/UMB/Lieber, Blackbird Labs/BioVentures — all null
+- Primary sources opened in full: lilly.com pipeline, ClinicalTrials.gov API (Lilly + hearing), amgen.com CROSSING PR, thefdalawblog.com, redesignhealth.com
+- **Source failures:** Fierce Biotech and Fierce Healthcare HTTP 403 to this host on both direct fetch and r.jina.ai; Endpoints article bodies paywalled (headlines/timestamps used, details re-sourced); FDA press-announcements page 404; GEN and BioPharma Dive homepages render without per-item dates
+
+Shortlist:
+- **[CHOSEN]** Lilly Phase 1 non-disclosure — lilly.com/science/research-development/pipeline · endpoints.news/lillys-move-to-hide-phase-1-pipeline-draws-mixed-reviews/
+- **[CHOSEN]** Tezspire Phase 3 CROSSING in EoE — biopharmadive.com/news/astrazeneca-amgen-tezpire-eosinophilic-esophagitis-results/828946/
+- **[CHOSEN]** Rasonque analyst reaction, Truist/Leerink — biospace.com/business/revmed-could-become-next-oncology-titan-with-rasonque-nod
+- **[CHOSEN]** FDA Expedited IND pilot / QRIs — thefdalawblog.com/2026/08/fdas-expedited-ind-pilot-comes-into-focus/
+- **[CHOSEN]** Redesign Health studio→firm — endpoints.news/why-one-venture-investor-is-going-from-studio-to-firm/
+- [held] Curium–Lantheus up to $8B — on-thesis for JHU (Pylarify royalty) but agreement dated 08-03, three weeks stale, no 08-27/28 development; logged for revisit on the shareholder vote
+- [cut] Gilead lenacapavir expansion; Roivant Lisraya approval; ITM 177Lu-edotreotide; AstraZeneca ESC gene-silencer failure; Generate:Biomedicines poster leak; RayzeBio $173M; Metriport $26M; Cellares/BMS rebuttal; Akeso/Summit Q&A; BioSpace job-market features — no line to a Blackbird program
+=== 2026-08-28T02:27:34-07:00 done  blackbird-brief (exit 0) ===
