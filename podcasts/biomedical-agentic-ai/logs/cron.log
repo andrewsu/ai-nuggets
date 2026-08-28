@@ -3843,3 +3843,37 @@ Episode written. SKIP_TTS mode, so script + stubs only — no TTS, no R2 publish
 
 **Why BixBench3 beat the field:** it's the only item in the window that measures the thing this show is actually about — whether an agent can carry a whole computational study from raw data to result — and its interesting findings are the non-obvious ones. The failure profile is non-monotonic in analysis depth (0.30 → 0.44 → 0.24), so the first step out of raw data is nearly as hard as the deep end; performance collapses with data volume rather than with reasoning difficulty; and cost buys nothing across a 367-fold spread. Against LifeSciBench (shipped 08-24) it's a different measurement entirely — execution of a pipeline versus rubric-graded expert Q&A — and it pairs as a callback with the show's 2026-05-02 episode on the original BixBench saturating.
 === 2026-08-27T02:07:00-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-28T02:00:12-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-28-co-scientist-real-world-validation.md` (862 words spoken body, cap 1150)
+- `...rss-item.xml` (validated XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `...commit-msg`
+
+**Pick:** "Accelerating Scientific Research with Gemini in the Real-World" — arXiv 2608.26701, posted 2026-08-27, Google DeepMind + Duke/Columbia/Texas A&M. Full text read via `mutool` extraction of the PDF (287 KB of text). URL verified 200.
+
+**Candidate funnel**
+
+bioRxiv (2026-08-25 → 08-28, day-by-day, API recovered from yesterday's outage): 816 scanned, 62 keyword hits, ~4 substantive after discarding spurious matches ("antiparasitic agent", "biological control agent"):
+- ASAREE: An Analytical Sandbox for Agentic AI Research, Engineering, and Experimentation — 10.64898/2026.08.20.746074
+- NeuroGraphBench: Interacting with Drosophila Connectomes at Scale — 10.64898/2026.08.22.746456
+- CytoGate-Bench: an LLM benchmark for cross-panel cell gating in cytometry — 10.64898/2026.08.24.746336
+- EcoXAI: Autonomous Agentic Ecosystem for Explainable AI and Biomedical Discovery — 10.64898/2026.07.08.737358
+
+arXiv (shared daily cache, 500 entries, filtered to ≥2026-08-24 + agentic∩biomedical): 137 pass, substantive shortlist:
+- **Accelerating Scientific Research with Gemini in the Real-World — arxiv.org/abs/2608.26701 — CHOSEN**
+- AgentFold: Closed-Loop Agentic Search for Protein Folding Model Design — 2608.26747 (runner-up; strong, ~5,000 GPU-hours of agent-driven ESMFold modification)
+- HypoForge: multi-agent hypothesis generation/testing via skill learning — 2608.25770
+- Federation Is Nearly Free, Reasoning Is Not: AI Co-Scientists in Protein Characterization — 2608.25215 (already covered in receptor-and-reason 08-27)
+- Homo-RAG: homology-guided RAG for cross-species gene function — 2608.25466
+
+PubMed (reldate=5, 97 returned): shortlist
+- Coala: converting CWL-described command-line tools into agentic toolsets — Bioinformatics, 08-26 (closest to the open-standards/interoperability lane; held as a live candidate)
+- TrialScout links published results to trial registrations using an LLM — J Clin Epidemiol
+- Group size effects and collective misalignment in LLM multi-agent systems — PNAS
+
+ChemRxiv, news/product launches, funder pages: not separately queried — the arXiv/PubMed/bioRxiv sweep surfaced a dominant, fully-readable item from a major lab and the day's selection was settled. Noting the gap for auditability.
+
+**Why it won:** it's the only candidate that both reaches physical experiments and audits itself honestly — a 90% → 46% → 4% invalidating-hallucination gradient that isolates the objective function rather than model capability, and an autonomously discovered medical-QA scaffold that crushes autoraters while blinded physicians see nothing on 8 of 9 dimensions. That second result is a negative finding published against their own headline, and it's the most transferable thing in the day's corpus.
+=== 2026-08-28T02:05:43-07:00 done  biomedical-agentic-ai (exit 0) ===
