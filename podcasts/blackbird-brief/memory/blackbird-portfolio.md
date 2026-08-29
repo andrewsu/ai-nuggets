@@ -76,7 +76,36 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     proof-of-concept/validation), **Zizic Translational Fund** (first cycle
     2026, biomedicine-weighted). Award announcements name PI, department, and
     project before publication — **put the announcement page on a standing
-    sweep** (https://ventures.jhu.edu/news/).
+    sweep** (https://ventures.jhu.edu/news/). **Reach it via `r.jina.ai/<url>` —
+    both `ventures.jhu.edu` and `hub.jhu.edu` 403 a direct fetch, which produced a
+    false "no JHU item on the tape" null on 2026-08-29 before the run caught it.**
+  - **CURRENT AWARD CYCLE (posted 2026-08-16; logged 2026-08-29) — 9 faculty from 89
+    applications, amounts not disclosed. SOURCING LONGLIST; two hit named Blackbird
+    program themes:** **Yun Guan, MD PhD** (Anesthesiology & Critical Care Medicine,
+    Zizic) — **MRGPRX1 allosteric modulators for non-addictive pain relief** ⇒ direct
+    hit on the *non-opioid pain management* pre-spinout theme; **Jonathan Schneck, MD
+    PhD** (Pathology, Zizic) — **in-vivo CAR-T generation via targeted polymeric mRNA
+    nanoparticles for autoimmune therapy** ⇒ Winnow adjacency. Remainder: **Susanna
+    Thon** (ECE, Cohen — photoelectrochemical carbon capture), **Zongwei Zhou** (CS +
+    Oncology, Cohen — early-cancer-detection AI, already deployed in China),
+    **Mohammad Rezaee** (Radiation Oncology, Thalheimer — biomolecular dosimeter),
+    **Christine O'Hersey** (postdoc, Thalheimer — Hypermelt microfluidic
+    rare-methylation detection), **Won Jin Ho** (SKCCC, Thalheimer — immunotherapy for
+    immune-resistant cancers), **Mary Austin, DPT** (SOM, Thalheimer — UrInControl OTC
+    pessary for stress urinary incontinence), **Garry Cutting, MD** (Pediatrics &
+    Medicine, Zizic — targeted genetic editing for inherited and acquired lung
+    disease). **Guan and Schneck are the two to work up first.**
+    https://ventures.jhu.edu/news/from-cancer-detection-to-carbon-capture-nine-promising-johns-hopkins-innovators-awarded/
+  - **SEPARATE JHU SOURCING LEAD, unworked (surfaced 2026-08-29): Bin Wu lab (JHU SOM
+    Biophysics & Biophysical Chemistry) with Shalini Oberdoerffer (NCI), *Nature*,
+    2026-07-01** — the **N4-acetylcytidine (ac4C)** mRNA modification lets ribosomes
+    translate **~2x faster** than **N1-methylpseudouridine (m1Psi)**, the modification
+    in every approved mRNA vaccine, with less ribosomal congestion and fewer premature
+    terminations/frameshifts; mechanism established by single-molecule nascent-peptide
+    imaging developed in the Wu lab. NIH-funded; **no patent or licensing status
+    disclosed — that is the first question for JHTV.** This is a *cassette chemistry*
+    play, distinct from (and not a revival of) the TERMINATED RNA translation-activator
+    program. https://hub.jhu.edu/2026/08/26/experimental-mrna-cancer-infectious-diseases-therapeutics/
   - **JHU Life Sciences Research Initiative** (launched 2026-06-10): $80M/yr
     for two years of internal funding into translational/basic life sciences
     research. Two tracks — **Transformational Science Team Awards** ($40M/yr
@@ -123,7 +152,7 @@ _Last update: 2026-08-28_
 company Blackbird BioVentures invested in, not a Blackbird-incubated project.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-08-28_
+_Last update: 2026-08-29_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases (Blackbird funded the **Intergalactic Center for
@@ -132,6 +161,26 @@ Autoimmunity and Immuno-Oncology**).
 These are program themes, not named companies. Treat them as standing sourcing
 and landscape interests: a paper or deal that lands on one of these is
 portfolio-relevant even though there is no company to name yet.
+
+**COPD theme — TSLP has consolidated, and the differentiator is a PROPERTY not a target
+(added 2026-08-29 Portfolio Watch item 4).** Two independent wins for the epithelial alarmin
+**TSLP** in a single week across two organs: **Tezspire (tezepelumab) Phase 3 CROSSING in
+eosinophilic esophagitis** (2026-08-27) and **Generate Biomedicines' GB-0895 / golukibart**
+Phase 1b in **COPD** (posters inadvertently published on the **ERS 2026** website 2026-08-25,
+~2 weeks pre-embargo; disclosed by SEC filing; GNRT $20.38 → $16.57). Golukibart data: **40 COPD
+patients**, rapid and sustained reductions across **four** disease biomarkers, "broad and durable
+anti-inflammatory activity" **≥6 months** in eosinophil-high patients, well tolerated, **half-life
+approaching 100 days** (~89 days in the earlier asthma cohort); company went **Phase 1 → Phase 3
+directly** in severe asthma (SOLAIRIA-1/2, ~1,600 patients). Generate: Flagship-founded 2018, CEO
+**Mike Nally**, **$400M Feb-2026 IPO**, **$457.4M** cash into mid-2028. **SO-WHAT: (1) if the
+Blackbird COPD work points DOWNSTREAM of TSLP, revisit that positioning now. (2) DURABLE FRAME
+FOR VIRGINIA BURGER — what AI protein design bought here is a ~3-month HALF-LIFE (monthly
+injection → quarterly), i.e. a PROPERTY, not a novel target. ML design is currently competitive on
+properties (half-life, developability, manufacturability), which is a cheaper and more reliable
+place to compete than target discovery. Ask any AI-pitching program which PROPERTY it is buying
+and whether that property earns a line on the label. (3) Operational note for BioHub companies: a
+society website can break your embargo and force a same-day SEC disclosure.** Source:
+https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentally-leaked-ahead-of-european-conference
 
 ### Terminated programs — do not cover ❌
 _Last update: 2026-08-28_
@@ -644,6 +693,23 @@ _Last update: 2026-08-28_
   collecting on the same molecule a **third** time through a royalty stack that survived two ownership changes is a **template for papering a
   Blackbird out-license**.
 
+- **A PRICE ON "APPROVED IN NEUROPSYCHIATRY," AND IT IS UNDER $60M CASH (2026-08-29 Portfolio Watch
+  item 3; event 2026-08-28).** **BioXcel Therapeutics (New Haven CT) filed CHAPTER 11.** Lead asset
+  **Igalmi (BXCL501)**, sublingual dexmedetomidine film, **FDA-approved 2022** for **acute agitation
+  in schizophrenia and bipolar I/II**, with a **pending at-home-use sNDA (PDUFA 2026-11-14)** and an
+  agitation-in-Alzheimer's program. **Teva is stalking-horse bidder at $57.5M upfront + up to $67.5M
+  milestones (≤$125M)**; **$19M DIP**; product stays available; competing bids permitted. **READ:
+  pairs with Cobenfy's $155M 2025 revenue vs >$310M forecast (see the 08-10 entry) — TWO independent
+  datapoints that FDA APPROVAL IN NEUROPSYCHIATRY IS NOT A COMMERCIAL OUTCOME.** Igalmi's binding
+  constraint was arguably **channel + reimbursement** (acute, episodic, hospital-administered), **not
+  mechanism** — which is the point: mechanism was never the constraint. Against the 08-27 SK/Biohaven
+  comparable ($400M cash for a de-risked Kv7 activator at Phase 2/3), **CNS capital is available but
+  highly opinionated: it pays for DE-RISKED MECHANISM AT LATE CLINICAL STAGE and pays very little for
+  a commercialized asset that cannot fund itself.** **ACTION (Hemaka + Third Rock, ahead of the
+  later-2026 DC declaration): the value case needs a CHANNEL AND ACCESS plan sitting BESIDE the
+  three-symptom-domain efficacy story, not behind it.** Source:
+  https://www.biospace.com/business/bioxcel-files-for-bankruptcy-will-sell-assets-to-teva-for-up-to-125m
+
 ### Gut-targeted bimodal therapeutic — Crohn's & ulcerative colitis (JHU) ❌ TERMINATED
 _Last update: 2026-08-28_
 - **Status: TERMINATED — do not cover.** Oral, gut-restricted GCPII inhibitor
@@ -747,7 +813,7 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-08-28_
+_Last update: 2026-08-29_
 - **What:** Oligonucleotide-based medicine (**ASO**) against a highly
   sought-after target profile that could treat **all forms of ALS and FTD**.
 - **Science:** leverages biology pioneered at JHU across decades and multiple
@@ -755,9 +821,29 @@ _Last update: 2026-08-28_
 - **Status:** resident in the **Blackbird BioHub**.
 - **Watch:** ASO/oligo platforms in ALS-FTD (Ionis, QurAlis, Amylyx, Trace);
   TDP-43 and C9orf72 biology; nucleocytoplasmic transport.
+- **COMPARATOR-DRIFT RULE — the standing design question for this program (added 2026-08-29
+  Portfolio Watch item 2; event 2026-08-28).** **CARDIO-TTRansform MISSED:** AstraZeneca +
+  Ionis's **eplontersen** (antisense TTR silencer, already approved as Wainua in ATTRv
+  polyneuropathy), **>1,400** patients with transthyretin cardiomyopathy on background care,
+  **140 weeks** — CV events or death **29% vs 32%** placebo, a gap investigators themselves
+  called clinically meaningless; Alnylam −~5% on read-through. **Investigators' own explanation:
+  heart-failure care improved during the trial and the population was broader than Alnylam's
+  positive HELIOS-B — 81% on stabilizers vs 53%.** Analyst line: "the incremental benefit of
+  combining a silencer with a stabilizer is smaller than previously assumed."
+  **NOT A MODALITY FAILURE — the ASO delivered its pharmacology; what failed was INCREMENTAL
+  BENEFIT against a standard of care that improved for three years mid-trial.**
+  **DURABLE LINE: knockdown is not the endpoint; the residual disease left for you to address AT
+  READOUT is the endpoint.** For NuGate the headroom is currently wide (ALS standard of care has
+  not meaningfully moved in a decade) — **but the mirror-image risk is live: if Ionis, QurAlis,
+  Amylyx or Trace lands a TDP-43 splicing-restoration agent that becomes BACKGROUND THERAPY
+  before NuGate reads out, NuGate inherits exactly this failure mode.** **ACTION (Jon Robbins +
+  Anthony): power the design against the standard of care that will exist AT READOUT, not
+  today's.** Applies verbatim to Aletira and the GPR52 NewCo. Sources:
+  https://www.biopharmadive.com/news/astrazeneca-ionis-eplontersen-nejm-cardio-ttransform-results/829057/ ·
+  https://www.biospace.com/drug-development/worse-than-expected-wainua-data-muddies-water-for-ttr-silencers
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-08-28_
+_Last update: 2026-08-29_
 - **What:** novel immunology platform that **selectively treats T-cell-mediated
   autoimmune disease**; T-cell engager platform with potential in ankylosing
   spondylitis and others.
@@ -767,6 +853,26 @@ _Last update: 2026-08-28_
   of the Baltimore-nexus leakage pattern this brief tracks.
 - **Watch:** T-cell engagers redirected at autoimmunity; antigen-specific
   tolerance platforms; ankylosing spondylitis / axial spondyloarthritis.
+- **NAMED COMPARATOR FOR THE TPP, AND THE MARKET-SIZE ANSWER, IN ONE APPROVAL (added 2026-08-29
+  Portfolio Watch item 5; event 2026-08-27/28).** **FDA approved LISRAYA (brepocitinib),
+  Priovant Therapeutics (Roivant)** — an **oral TYK2/JAK1 inhibitor**, the **first orally
+  available targeted drug for dermatomyositis**. Phase 3 **VALOR**: among patients on **≥7.5
+  mg/day prednisone-equivalent** at baseline, **45% discontinued corticosteroids entirely vs
+  29%** placebo; **broad label**, all adults regardless of presentation or prior treatment.
+  **Boxed warning** for serious infections, malignancy, MACE, thrombosis and death (JAK class);
+  analysts saw "no major surprises." Incidence **~1 in 100,000/yr**. **Leerink: ~$49M (2027) →
+  $1.1B (2029) → $1.8B (2032) in dermatomyositis ALONE**, up to **$4.2B by 2032** multi-indication
+  (cutaneous sarcoidosis, non-infectious uveitis with Phase 3 data later in 2026, lichen
+  planopilaris). **TWO USES: (1) the MARKET-SIZE ANSWER to the standing objection that
+  selective-autoimmunity indications are too small — an ultra-rare T-cell-mediated disease
+  supports a $1.8B single-indication forecast; (2) the WHITESPACE is explicit — that value is
+  delivered by BROAD KINASE INHIBITION carrying a five-item boxed warning, which is precisely
+  what a selective T-cell engager sells against.** **ACTION (Jon Robbins + Eddie): name Lisraya as
+  the comparator COLUMN in the Winnow TPP with the boxed warning as the differentiating ROW.**
+  **CANDID LIMIT: brepocitinib is an approved ORAL PILL; a bispecific engager is neither —
+  convenience and price run against Winnow and the TPP must say so.** Sources:
+  https://www.biospace.com/fda/priovant-nabs-first-fda-approval-for-targeted-tablet-in-dermatomyositis ·
+  https://www.biopharmadive.com/news/fda-priovant-pfizer-lisraya-brepocitinib-approved/829021/
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
 _Last update: 2026-08-28_
@@ -852,6 +958,39 @@ _Last update: 2026-08-28_
   conversations this quarter.** Caveats: no HRs, interim, and adjuvant melanoma on top of
   pembrolizumab is the friendliest possible setting — the other eight indications decide
   whether it travels.
+  - **THE CLASS SPLIT NINE DAYS LATER, AND THE SPLITTING VARIABLE IS COMBINATION, NOT PLATFORM
+    (2026-08-29 Portfolio Watch LEAD; event 2026-08-28). SUPERSEDES the unqualified
+    "class is validated" reading above.** **BioNTech + Genentech TERMINATED the Phase 2
+    BNT122-01 trial of autogene cevumeran** (IV uridine-mRNA lipoplex iNeST encoding **up to 20**
+    patient-specific neoantigens) as **adjuvant MONOTHERAPY** in **ctDNA-positive, surgically
+    resected high-risk stage II / stage III colorectal cancer**, versus **watchful waiting**;
+    ~**200** patients planned. The independent **DSMB** "identified a numerical imbalance in
+    overall survival between the treatment arms" and judged continuation "unlikely to change the
+    efficacy outcome"; **no new safety signals**, not a safety decision. **Direction of the
+    imbalance NOT disclosed — say that limit out loud, while noting a DSMB does not halt a trial
+    over an imbalance favouring the drug.** **The futility boundary was crossed in OCTOBER 2025**,
+    called immature, and the study ran **~10 more months**. BNTX −7.5% (~$103); Moderna −6% in
+    sympathy. **The pancreatic Phase 2 (IMcode003) is unaffected — and it is a COMBINATION study
+    (Tecentriq + chemo).** BMO: the result questions whether vaccine-induced responses **alone**
+    can prevent recurrence without concurrent checkpoint inhibition or chemotherapy.
+    **THE DURABLE READ: the class WON in melanoma with pembrolizumab underneath it and LOST in
+    colorectal with nothing underneath it ⇒ the weak step is PRIMING / effector delivery, NOT
+    neoantigen selection.**
+    - **CLASP (the favourable half, and a SHARPER sentence than the 08-20 one):** a TCR-mimic
+      bispecific **supplies the effector bridge** (mutant-peptide/HLA arm + CD3 arm) instead of
+      asking the patient to mount a de novo response — **the modality DELETES the step that just
+      failed in public.** Word it narrowly: this does not prove engagers work, it localizes where
+      the class breaks, and Clasp is not built on that joint. **Action (Hemaka + Virginia +
+      Anthony): into Clasp partnering conversations this quarter, in exactly that wording.**
+    - **ADVENTRIS (§2b) — the uncomfortable half: the failed design is STRUCTURALLY theirs** —
+      peptide vaccine, given alone, into minimal residual disease, against surveillance.
+      **Action (Eddie): what combination data exist, and what is the comparator arm.**
+    - **QUALIFIES THE 08-27 ELIGIBLE-FRACTION THESIS: BNT122-01 selected on ctDNA (two gates) and
+      SELECTION DID NOT RESCUE IT.** Patient selection buys enrichment, not efficacy — keep the
+      eligible-fraction row, but stop treating biomarker selection as a de-risking argument on
+      its own.
+    - Sources: https://www.biospace.com/drug-development/biontech-halts-mid-stage-trial-of-personalized-mrna-vaccine-in-colorectal-cancer ·
+      https://www.sec.gov/Archives/edgar/data/0001776985/000177698526000061/form6-kcrc28aug2026.htm
 
 ---
 

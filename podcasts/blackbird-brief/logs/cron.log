@@ -2030,3 +2030,32 @@ Shortlist:
 - [held] Curium–Lantheus up to $8B — on-thesis for JHU (Pylarify royalty) but agreement dated 08-03, three weeks stale, no 08-27/28 development; logged for revisit on the shareholder vote
 - [cut] Gilead lenacapavir expansion; Roivant Lisraya approval; ITM 177Lu-edotreotide; AstraZeneca ESC gene-silencer failure; Generate:Biomedicines poster leak; RayzeBio $173M; Metriport $26M; Cellares/BMS rebuttal; Akeso/Summit Q&A; BioSpace job-market features — no line to a Blackbird program
 === 2026-08-28T02:27:34-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-29T02:10:09-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped at the script + stubs and left TTS, R2 publish, feed insert, and the commit to `publish_pending.py`.
+
+**Published (pending batch TTS):** `podcasts/blackbird-brief/scripts/2026-08-29-portfolio-watch.md` — Portfolio Watch, 1,812 spoken words (~9.8 min at the show's realized rate), plus `.rss-item.xml` and `.commit-msg` stubs. Ledger appended (47 episodes, 205 unique keys). `memory/blackbird-portfolio.md` updated in place, five entries revised, no dated log appended.
+
+**Candidate funnel**
+
+- **BioSpace homepage + `/latest-news-press-releases`** — ~33 items scanned, 6 on-thesis.
+- **BioPharma Dive homepage** — ~15 scanned, 3 on-thesis.
+- **Endpoints `/news/` index via jina** — 24 headlines scanned, 5 on-thesis (bodies paywalled; each paired to a readable source).
+- **BioBuzz via jina** — 8 items, newest 2026-08-26, 0 touching Blackbird.
+- **Technical.ly Baltimore** — 7 items, 1 JHU license (Nuquantic eDNA device, non-therapeutic).
+- **JHTV `ventures.jhu.edu/news` + `hub.jhu.edu`** — 403 on direct fetch, **recovered via `r.jina.ai`**; 2 Sourcing Radar leads found (see correction below).
+- **fiercebiotech.com** — HTTP 403 direct *and* via jina, skipped.
+- Targeted searches: Nxera/GPR52, Skylark/Sensorion/GJB2, Clasp/Adventris/Blackbird, Lieber, autoimmune TCEs — all null in window.
+- **Dedup:** 11 candidates → 10 fresh (1 shipped 08-28: RevMed/Rasonque). Tezspire/EoE passed on a distinct URL but was manually excluded as 08-28's item 2.
+
+**Shortlist and picks**
+
+- ✅ **LEAD** — BioNTech/Genentech terminate Phase 2 BNT122-01 (autogene cevumeran monotherapy, ctDNA+ resected CRC) — biospace.com/drug-development/biontech-halts-mid-stage-trial-of-personalized-mrna-vaccine-in-colorectal-cancer
+- ✅ CARDIO-TTRansform miss, eplontersen — biopharmadive.com/news/astrazeneca-ionis-eplontersen-nejm-cardio-ttransform-results/829057/
+- ✅ BioXcel Chapter 11, Teva stalking-horse — biospace.com/business/bioxcel-files-for-bankruptcy-will-sell-assets-to-teva-for-up-to-125m
+- ✅ Generate Biomedicines ERS poster leak, golukibart COPD — biospace.com/drug-development/generate-bio-drops-as-data-accidentally-leaked-ahead-of-european-conference
+- ✅ FDA approves Lisraya (brepocitinib) in dermatomyositis — biospace.com/fda/priovant-nabs-first-fda-approval-for-targeted-tablet-in-dermatomyositis
+- ✗ Genentech/DualityBio ADC, Mounjaro CV, CRISPR Tx lipid editing, Cellares/BMS, MassBio — off-thesis
+- ✗ HopStone Capital JHU application window — $10k student grant, generic ecosystem
+
+**One correction I made mid-run, flagged in-episode:** my first sweep hit 403s on both JHU newsrooms and I had drafted "no Hopkins item on the tape." The jina retry turned up the two best sourcing leads of the day — the JHTV translational-fund awards (9 PIs from 89 applications, of which **Yun Guan's MRGPRX1 non-addictive analgesia** hits the non-opioid pain theme and **Jonathan Schneck's in-vivo CAR-T via mRNA nanoparticles** is Winnow-adjacent) and a Bin Wu *Nature* paper on ac4C-modified mRNA translating ~2× faster than m1Ψ. Both are recorded in the reference and teed up for tomorrow's Sunday Radar. I rewrote the null and added the rule to memory: a blocked source is not a negative finding.
+=== 2026-08-29T02:27:47-07:00 done  blackbird-brief (exit 0) ===
