@@ -2671,3 +2671,36 @@ Episode written. `SKIP_TTS=1` is set, so per `podcasts/PIPELINE.md` I wrote the 
 
 **Primary sources read in full:** Priovant GlobeNewswire release (approval, VALOR efficacy and steroid-sparing detail, complete boxed warning and warnings/precautions, pipeline); VALOR primary-endpoint figures and the 2021 Roivant–Pfizer/Priovant terms verified against Roivant, Pfizer and NEJM listings. No list price is public — the script says so rather than guessing.
 === 2026-08-28T02:48:57-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-29T02:40:09-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/justice-biotech-brief/scripts/2026-08-29-autogene-cevumeran-neoantigen-mrna-vaccine-crc-futility.md`
+- `…​.rss-item.xml` (XML-validated, `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg` (single line)
+
+**Pick:** Autogene cevumeran — BioNTech/Genentech terminated the Phase 2 BNT122-01 trial (Fri 2026-08-28) after the DSMB found a numerical OS imbalance. The angle is the design: MSI-high excluded, vaccine as monotherapy vs watchful waiting in ctDNA-positive resected CRC — the pure form of the individualized-neoantigen hypothesis, with nothing underneath it — set against Merck/Moderna's INTerpath-001 win nine days earlier *on top of* pembrolizumab. The hinge fact is from IMcode001 (ESMO 2025, read in full via jina): 47/56 patients (83.9%) mounted ex vivo neoantigen-specific T cell responses at a median 9.4% of the circulating TCR repertoire, persisting a year — and ORR was numerically *lower* on the combination (41.7% vs 48.8%). Priming is not the rate-limiting step.
+
+---
+
+**Candidate funnel**
+
+*bioRxiv* (details API, day-by-day 08-27→08-29, full collections): 457 items scanned (254 on 08-27, 203 on 08-28, 0 yet for 08-29 at 02:40 PDT). API intermittently 503'd — retried each page, all pages recovered. 29 survived the keyword filter; substantive shortlist after discarding spurious hits ("ADC" inside unrelated words, "cd3" in a quail paper, "pd1" in a maize paper):
+- GABAergic circuit activation induces a therapeutically responsive state for anti-PD-L1 in glioblastoma — https://www.biorxiv.org/content/10.64898/2026.08.26.747200v1
+- Fusion-derived phospho-neoepitopes define a candidate neoantigen repertoire in MASLD-HCC — https://www.biorxiv.org/content/10.64898/2026.08.26.747243v1
+- Multi-compartment immune/tumor reprogramming by IFNα2 overcomes colon cancer immunotherapy resistance (v2) — https://www.biorxiv.org/content/10.64898/2026.06.26.734809v2
+- High-avidity TCR signaling drives an NKG2A+ CD8 exhaustion state in human tumors (v2) — https://www.biorxiv.org/content/10.64898/2026.05.29.728765v2
+- CAR-macrophages activate anti-tumor T cells in the absence of phagocytosis (v3) — https://www.biorxiv.org/content/10.64898/2026.03.11.710792v3
+- LGR5 + MET ADC combination in preclinical CRC (v2) — **dedup drop**, this is a new version of the paper shipped 2026-07-21
+
+*News / product launches*: Fierce Biotech + Fierce Pharma RSS (readable), BioSpace latest, BioPharma Dive, Endpoints index. Shortlist:
+- **Autogene cevumeran Phase 2 CRC termination** (08-28) — **CHOSEN**
+- Genentech–DualityBio ADC pact, $45M upfront / up to $1B, DUPAC non-cytotoxic payload platform (08-28) — https://www.biospace.com/deals/genentech-strikes-second-asia-deal-in-a-week-betting-up-to-1b-in-oncology-adc-alliance-with-dualitybio — on-target but discovery-stage, no data
+- Tezspire Phase 3 win in eosinophilic esophagitis, Amgen/AZ (08-27) — https://www.fiercepharma.com/pharma/amgen-az-tezspire-phase-3-eosinophilic-esophagitis-turning-heat-dupixent
+- Takeda/Protagonist rusfertide FDA approval in polycythemia vera (08-28) — not immuno-oncology
+- BioXcel Chapter 11 / Teva stalking-horse (08-28) — off-target for this show
+
+*Source failures*: Fierce Biotech article bodies unreadable — WebFetch 403, `r.jina.ai` returned an AbuseAlleviationError block on the domain until 09:44 UTC, direct curl with browser UA hit a Cloudflare interstitial. Headlines/dates still obtained via the Fierce RSS feeds, which are unblocked. Endpoints article bodies are paywalled (jina returns the signup wall); headlines + timestamps obtained. BioNTech's own press release is not yet in their IR RSS or search indexes, so the announcement was sourced from BioSpace (full text read), RTTNews (full text read), and the ClinicalTrials.gov protocol record.
+
+*Policy / funders*: not surveyed — the news sweep produced a clearly dominant on-target item and ARPA-H/NIH/NSF have no bearing on it. Noting the gap rather than implying coverage.
+=== 2026-08-29T02:49:35-07:00 done  justice-biotech-brief (exit 0) ===
