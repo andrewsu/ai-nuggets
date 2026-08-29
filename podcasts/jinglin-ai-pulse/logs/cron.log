@@ -2197,3 +2197,39 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus
 - **X/Twitter** — not attempted as a primary source; unreadable from this host (xcancel challenge, x.com needs auth). Discourse signal sourced from HN threads and attributed as such, per the standing workaround
 - **Source failures:** `www.terminal-bench-science.ai` returns a mismatched TLS certificate to WebFetch from this host (presents `*.scripps.edu`); retrieved via `r.jina.ai`. CNBC MHS article 403s to WebFetch; dropped from sources rather than cited unread. Bloomberg opinion piece 403s; dropped and the script's attribution corrected to The Information + CNBC.
 === 2026-08-28T02:41:23-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-29T02:30:09-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md batch mode I wrote the script plus the two stub files and did not run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Published (pending batch TTS):** `2026-08-29-give-the-agents-tenure` — 2,968 spoken words, ~14.4 min at the show's 1.2× voice (calibrated against the last four episodes: 2,813 words → 818 s).
+
+Files:
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-29-give-the-agents-tenure.md`
+- `…rss-item.xml` (validated as XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `…commit-msg`
+
+**Through-line:** the environment, not the model, is the live variable. Lead is the Station — a simulated research *institution* (200-tick lifespans, 40 ticks of enforced solitude, tenure at 100, inheritable lineages, peer-reviewed archive, mandatory holidays) whose top-contributing mechanism, credited in 23 of 28 spotlight results, is the holiday. It runs a generation-old model mix and still produced novel mathematics.
+
+**Candidate funnel**
+
+Sources scanned:
+- **Hacker News** front page + /news (~40 items, 5 AI-relevant) — no failures
+- **Hugging Face daily papers** (10 items, Aug 28) — scanned, none beat the HN/press items
+- **TechCrunch AI** (6 items, Aug 27–28) — no failures
+- **AINews / Latent Space feed** (14 items) — no failures
+- **Podcast RSS**: Latent Space, Dwarkesh (Cognitive Revolution's own RSS returned only a channel title; the site page worked)
+- **X/Twitter**: not directly readable from this host (known); discourse sourced via HN, AINews reaction roundups, and one verified primary tweet
+- One transient failure: `news.ycombinator.com/item?id=49461817` returned HTTP 429; not retried, item wasn't needed
+
+Substantive shortlist:
+- ★ **Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment** (the Station) — arxiv.org/abs/2608.23691 — *chosen, lead*; full text via mutool
+- ★ **Anthropic, "Automated researchers can reliably mitigate alignment failures"** — *chosen*
+- ★ **TIME / Alex Heath, "Inside OpenAI's Reboot"** (Astra, AGI-by-year-end) — *chosen*
+- ★ **OpenAI cuts off Cursor after SpaceX's $60B acquisition** (HN 509 pts) — *chosen, Money Moves*; page 403s WebFetch, read via r.jina.ai
+- ★ **Open-weight companies as acquisition targets** + **GLM-5.3 open-weight** (HN 689 pts) — *chosen, Money Moves*
+- ★ **Anima Anandkumar on Latent Space**, "foundation models for language, not for physics" (Aug 26) — *chosen, Deep Cut*
+- **Lambda's $1B JP Morgan debt** — chosen as a one-line coda
+- *Not chosen:* "The load-bearing vocabulary of Claude" (662 pts, 429 on fetch, thin against the day's slate); US sanctions on the A/I Collective (586 pts, infrastructure/policy, off-brief); Anthropic's Pentagon blacklist court win (adjacent to Cursor but a second legal story); "I accidentally turned LLM memory into program analysis" (143 pts); HF papers world-model cluster (PAWBench, GameWAM, TTPO — on-topic but no community convergence signal today)
+- *Excluded as already shipped:* Nvidia/Hugging Face (08-27, 08-28), GLM-5.3-Flash (08-27), Qwen3.8-Flash-Next (08-26, 08-27), Dwarkesh × Dylan Patel (08-28)
+
+I also appended a note to the podcast-sourcing memory: Substack *landing* pages return no episode list, so enumerate episodes from `/feed` instead.
+=== 2026-08-29T02:39:31-07:00 done  jinglin-ai-pulse (exit 0) ===

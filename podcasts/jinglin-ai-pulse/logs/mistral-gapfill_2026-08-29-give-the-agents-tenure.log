@@ -1,0 +1,10 @@
+Script body: 18223 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/7 (2889 chars) -> 123.1s ✓
+  [mistral:en_paul_neutral] chunk 2/7 (2857 chars) -> 123.7s ✓
+  [mistral:en_paul_neutral] chunk 3/7 (2967 chars) -> 135.4s ✓
+  [mistral:en_paul_neutral] chunk 4/7 (2996 chars) -> 148.2s ✓
+  [mistral:en_paul_neutral] chunk 5/7 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/7 (2944 chars) -> 127.6s ✓
+  [mistral:en_paul_neutral] chunk 6/7 (2974 chars) -> 140.2s ✓
+  [mistral:en_paul_neutral] chunk 7/7 (590 chars) -> 27.0s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-08-29-give-the-agents-tenure.mp3 [mistral] 7,346,512 bytes, 918.3s
