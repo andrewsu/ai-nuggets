@@ -3894,3 +3894,25 @@ Not chosen: PFC glucocorticoid receptors (2026.08.21.745892) and mechanism-annot
 
 One thing worth flagging: I updated the readability heuristic in memory. Heading count is *not* a discriminator either — two of today's picks came back as accepted-manuscript PDF text with 1–2 markdown headings and complete bodies, while a 50 KB zero-heading file was pure references. The reliable test is a case-insensitive search for a Discussion/Results section.
 === 2026-08-28T03:10:52-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-29T02:50:09-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so I stopped at the script + stubs and left TTS, R2 publish, `feed.xml`, and the commit to `publish_pending.py`.
+
+**Artifacts** (`podcasts/receptor-and-reason/scripts/`): `2026-08-29-receptor-and-reason.md` (11 items, ~3,190 spoken words ≈ 18.2 min), `.rss-item.xml` (validated, `__LENGTH__`/`__DURATION__` placeholders), `.commit-msg`. Ledger appended: 12 keys, 99 episodes.
+
+## Candidate funnel
+
+**Sources scanned**
+- **bioRxiv + medRxiv details API** (08-22→08-29, day-by-day): 1,765 unique records → 652 relevance hits → 630 after dedup (22 already shipped). *Failure logged:* first sweep silently truncated to 30/day because the page size is 30, not 100 — re-run corrected. Intermittent 503s throughout; ~6 retries/8s each.
+- **Crossref, 26 journals** (from-created 08-22): 261 articles → ~110 relevant. IJNP, Alzheimer's & Dementia, Briefings in Bioinformatics, ACS Chem Neuro returned 0.
+- **arXiv shared cache** (500 entries, 08-25→08-27): 187 bio+agentic in-window.
+- **Deferred-pick retest**: 9 previously abstract-only preprints — **all 9 rendered today**, including one that had returned ~0 KB for three days (that was always proxy error, never render state).
+- **Failed/walled**: nature.com Neuropsychopharmacology worse than prior days — BDNF/prophylactic-ketamine, D1-agonist review, and the cannabis stress RCT all paywalled. npj Digital Medicine returned abstract-only despite being OA (3 items dropped).
+
+**Shipped (11 items, 12 links)** — lead: scDrugPerturb-Bench `biorxiv:2026.08.19.745729`; then ABE-Ralph `arxiv:2608.26753`; DBS matters-arising + reply `10.1038/s41531-026-01496-4` / `-01534-1`; movement-responsive DBS `medrxiv:2026.08.20.26360021`; PARES `biorxiv:2026.08.21.746216`; CSF p-tau205 `10.1038/s41380-026-03838-3`; mGluR/NALCN `biorxiv:2026.08.21.746377`; OFC 5-HT1A/alcohol `biorxiv:2026.08.19.745752`; heroin-vs-cocaine mPFC `biorxiv:2026.08.18.743579`; PFC glucocorticoid `biorxiv:2026.08.21.745892`; EEG-FM adaptation `arxiv:2608.24727`.
+
+**Cut for length** (full text read, still live): M1 mAChR / neurovascular coupling `biorxiv:2026.08.18.745579`, Nav1.9 `746445`, 5-HT genes in IDH-mutant glioma `746569`, OCD MD–VLPFC `10.1038/s41386-026-02523-x`.
+
+**Deferred — not eligible today, full text hasn't rendered.** Highest priority for tomorrow is `medrxiv:2026.08.25.26361305`, pseudo-monopolar subthalamic sensing: it directly tests the fix the DBS matters-arising proposes for the bipolar-localization problem, so it's a natural follow-up to today's item. Also `biorxiv:2026.08.23.746502` (psilocybin / 5-MeO-DMT frontoparietal beta state) and `biorxiv:2026.08.25.747126` (covalent allosteric HCN modulators, never fetched).
+
+One judgment call worth flagging: the episode ran long at 12 items, so I dropped the M1 mAChR item — the thinnest evidence in the set (acute single dose, surrogate endpoint) — rather than trimming every item toward summary. Alzheimer's is still covered by the p-tau205 piece.
+=== 2026-08-29T03:16:36-07:00 done  receptor-and-reason (exit 0) ===

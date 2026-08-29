@@ -1,0 +1,11 @@
+Script body: 22111 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/8 (2977 chars) -> 136.9s ✓
+  [mistral:en_paul_neutral] chunk 2/8 (2882 chars) -> 154.0s ✓
+  [mistral:en_paul_neutral] chunk 3/8 (2993 chars) -> 147.9s ✓
+  [mistral:en_paul_neutral] chunk 4/8 (2957 chars) -> 170.7s ✓
+  [mistral:en_paul_neutral] chunk 5/8 (2929 chars) -> 145.8s ✓
+  [mistral:en_paul_neutral] chunk 6/8 (2968 chars) -> 131.9s ✓
+  [mistral:en_paul_neutral] chunk 7/8 (2954 chars) -> 129.1s ✓
+  [mistral:en_paul_neutral] chunk 8/8 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 8/8 (1442 chars) -> 67.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/receptor-and-reason/episodes/2026-08-29-receptor-and-reason.mp3 [mistral] 9,192,429 bytes, 1149.0s
