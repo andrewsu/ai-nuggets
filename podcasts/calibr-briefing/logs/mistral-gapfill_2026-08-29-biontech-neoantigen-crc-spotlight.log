@@ -1,0 +1,7 @@
+Script body: 11918 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2943 chars) -> 176.1s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2917 chars) -> 141.7s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2895 chars) -> 128.9s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2859 chars) -> 131.0s ✓
+  [mistral:en_paul_neutral] chunk 5/5 (299 chars) -> 12.6s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-08-29-biontech-neoantigen-crc-spotlight.mp3 [mistral] 4,954,741 bytes, 619.3s

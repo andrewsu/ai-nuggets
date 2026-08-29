@@ -3662,3 +3662,41 @@ Both episodes are written. `SKIP_TTS=1` is set in this environment, so per PIPEL
 
 One judgment call worth flagging: I put the AI story in the spotlight rather than the dermatomyositis approval. The Lisraya approval is the bigger single news event and leads the headlines, but the Generate posters are a named focus area, I had complete primary full text, and the analysis (the AI-designed affinity gain being surplus once biomarker suppression saturates at 300 mg, against Upstream Bio's 56%-vs-39% precedent) is worth more to Travis than a fourth approval spotlight in five days.
 === 2026-08-28T02:36:27-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-29T02:20:09-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scripts + stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit. `publish_pending.py` will do all four after batch TTS.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-08-29-pharma-headlines.txt` (2,203 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-08-29-biontech-neoantigen-crc-spotlight.txt` (1,897 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as XML with `__LENGTH__`/`__DURATION__` placeholders intact; both scripts are clean of URLs, DOIs, markdown structure, and pseudo-headings.
+
+**Spotlight take:** the BioNTech/Genentech termination is a controlled experiment against the Moderna/Merck Phase 3, not a contradiction of it. The stopped trial inverted three of INTerpath-001's design choices — vaccine monotherapy instead of a pembrolizumab backbone in both arms, microsatellite-stable colorectal cancer with MSI-high explicitly excluded instead of melanoma, watchful waiting instead of an active comparator. The Phase 1 record (71% of 90 evaluable patients across 213 treated mounted neoantigen-specific T cells; 8/16 in MSK's pancreatic study with three-year persistence) locates the failure in tumor immunology rather than in the prediction pipeline — which moves the diligence question away from the epitope predictor everyone models as the moat.
+
+---
+
+**Candidate funnel — 2026-08-29 (Fri 08-28 news window)**
+
+Sources scanned:
+- Endpoints News index (jina) — worked, ~12 items in window, 9 relevant. Article bodies paywalled (jina returns byline + timestamp only).
+- BioSpace `/latest-news-press-releases` (WebFetch) — worked, 30 items, 10 news + 20 wire PRs; bodies readable, primary full-text source for 5 picks.
+- BioPharma Dive (WebFetch homepage) — **degraded**: returned only 2 dated items out of ~30. Recovered via `r.jina.ai` render, which gave the full newest-first list. Memory updated.
+- **Fierce Biotech / Fierce Pharma — FAILED.** Both domains returned jina `AbuseAlleviationError` DDoS blocks with explicit expiries (09:44 and 10:02 UTC, i.e. after the cron window). Not retried per the timestamped-block rule. Recall hit absorbed by BioSpace + BioPharma Dive.
+- STAT — not attempted (bodies unreadable from this host).
+- Targeted verification: ClinicalTrials.gov MCP (NCT04486378), PMC (Nature Medicine Phase 1), CRISPR Tx IR release via jina, BioNTech 6-K via curl+mutool (turned out to be the 2021 filing, not the termination), WebSearch for rusfertide/ACACIA/pacibekitug/ProFound.
+
+Shortlist after discarding noise:
+- **[SPOTLIGHT + item 1]** BioNTech/Genentech terminate Ph2 autogene cevumeran in resected CRC — biospace.com/drug-development/biontech-halts-mid-stage-trial-of-personalized-mrna-vaccine-in-colorectal-cancer
+- **[headline 2]** FDA approves Mounjaro (tirzepatide) for CV risk reduction, SURPASS-CVOT — biospace.com/fda/lilly-joins-novo-in-cardiovascular-space-after-fda-nod-for-glp-1-gip-agonist-mounjaro
+- **[headline 3]** FDA approves Mimrylo (rusfertide), first hepcidin mimetic, in PV — fda.gov/news-events/press-announcements/fda-approves-first-drug-its-kind-polycythemia-vera-rare-blood-disorder
+- **[headline 4]** ESC/NEJM: Cytokinetics ACACIA-HCM in non-obstructive HCM — ir.cytokinetics.com (Hot Line, Aug 28)
+- **[headline 5]** ESC/NEJM: CRISPR Tx CTX310 one-year ANGPTL3 durability — ir.crisprtx.com
+- **[headline 6]** ESC/NEJM: full CARDIO-TTRansform, eplontersen HR 1.14 on tafamidis — biopharmadive.com/news/astrazeneca-ionis-eplontersen-nejm-cardio-ttransform-results/829057/
+- **[headline 7]** Novartis takes pacibekitug to Ph3 post-ZEUS — endpoints.news/esc26-novartis-pushes-ahead-with-its-il-6-inhibitor-despite-novos-failure/
+- **[headline 8]** Genentech/DualityBio ADC payload deal, $45M + $1B — biospace.com/deals/genentech-strikes-second-asia-deal-in-a-week...
+- **[headline 9]** BioXcel Chapter 11, Teva stalking horse up to $125M — biospace.com/business/bioxcel-files-for-bankruptcy-will-sell-assets-to-teva-for-up-to-125m
+- **[headline 9, sub]** ProFound/Gates Foundation $35M, agentic AI in preeclampsia — biopharmadive.com/news/fda-covid-vaccines-moderna-generate-profound-bixlenvo/828929/
+- **[headline 9, sub]** Moderna convert upsized to $2.6B (corrects yesterday's $2.0B) — same URL
+
+Rejected as already shipped: Priovant/Lisraya, Tezspire in EoE, Gilead Bixlenvo, Generate poster leak, Outer Bio, Fifth Circuit/IRA (all in the 08-28 episode); Revolution Medicines analyst notes (08-27 and 08-28); Roche/Hanmi (08-25 spotlight).
+=== 2026-08-29T02:35:10-07:00 done  calibr-briefing (exit 0) ===

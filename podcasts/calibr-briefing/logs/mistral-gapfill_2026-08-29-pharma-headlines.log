@@ -1,0 +1,9 @@
+Script body: 14433 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2838 chars) -> 141.1s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2935 chars) -> 138.9s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2920 chars) -> 139.9s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2931 chars) -> 134.7s ✓
+  [mistral:en_paul_neutral] chunk 5/5 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/5 attempt 1 FAILED: chunk duration 100.5s < floor 112.2s (likely truncated)
+  [mistral:en_paul_neutral] chunk 5/5 (2805 chars) -> 137.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-08-29-pharma-headlines.mp3 [mistral] 6,037,882 bytes, 754.7s
