@@ -3916,3 +3916,34 @@ Episode written. `SKIP_TTS=1` was set, so I stopped at the script + stubs and le
 
 One judgment call worth flagging: the episode ran long at 12 items, so I dropped the M1 mAChR item — the thinnest evidence in the set (acute single dose, surrogate endpoint) — rather than trimming every item toward summary. Alzheimer's is still covered by the p-tau205 piece.
 === 2026-08-29T03:16:36-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-30T02:50:08-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE I stopped after the script + stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-08-30-receptor-and-reason.md` — 3,431 spoken words, 11 items (in line with the last three episodes at ~19 min)
+- `…/2026-08-30-receptor-and-reason.rss-item.xml` — validated as XML, `__LENGTH__` / `__DURATION__` placeholders in place
+- `…/2026-08-30-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, now 100 episodes / 1,010 unique keys
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| bioRxiv details API, 08-23→08-30 | 1,493 | 195 T1 / 19 T2 | full day-by-day sweep, cursor advanced by returned count |
+| medRxiv details API, same window | 326 | (incl. above) | — |
+| arXiv shared cache | 500 entries | 52 | cache covers only 08-25→08-27 (500-entry cap); newest arXiv record is 08-27, so 08-28+ not yet announced |
+| Nature RSS (NPP / Mol Psych / Transl Psych) | 24 | 12 | `nature.com/npp.rss` 303s without `-L`; refetched with redirect-follow |
+| ScienceDirect RSS (Biol Psych, CNNI, Neuropharm, PNP&BP, DDT) | 321 | — | feeds are **undated**, so 7-day window unverifiable; DDT's two agentic-AI pieces dated via Crossref to 08-04 and 08-19 → out of window |
+| Psychiatric Times | — | 0 | direct fetch 403s; readable via jina but the index carries no dates |
+| ECNP press page | — | 0 | URL 404s (returns a cookie-consent shell) |
+
+Dedup: 46 candidates → 34 fresh (12 already shipped, incl. five arXiv items and three NPP articles picked up on 08-28/29).
+
+**Shipped (11):** SOX11/perisynaptic-net gating of fluoxetine (Hen, Columbia) · 5-HT7 inverse agonism vs. tau in Drosophila (Shcherbata, Hannover) · M1 PAM restores neurovascular coupling in P301S · baclofen + anti-PD-L1 in GL261 (Vannini, CNR) · GABA-drug meta-analysis in autism · SMARCC2/romidepsin (Yan, Buffalo; Mol Psych) · IV methylphenidate Phase 1 in acute DoC (Edlow, MGH) · PRISM-TRD iTBS target engagement · psilocybin/5-MeO-DMT beta state · Neural Impact Score organoids (Kathuria, JHU) · AgentFold.
+
+**Deferred / dropped, worth revisiting**
+- Abstract-only (not yet rendered): CBD × fentanyl-bound μ-opioid MD; "Disrupted neuropeptide-signaling after early-life stress"; pseudo-monopolar STN beta for DBS contacts. The psilocybin/5-MeO-DMT beta item is *also* still abstract-only — I used it as a tail item under PIPELINE's carve-out for multi-item shows and said so in the script.
+- Auth-walled with no preprint, so ineligible: NPP's BDNF-promoter-VI ketamine paper (Denny lab) and the D1-agonist Hot Topics piece — jina returns abstract/2 paragraphs then the paywall; Mol Psych's `[¹¹C]`UCB-J autism PET returns references only.
+
+One flag on the lead: its abstract claims evidence of this plasticity "in the adult human brain," but the actual human data is bulk-transcriptomic decline of SOX11 across the lifespan. I stated that gap explicitly in the script rather than repeating the abstract's framing.
+=== 2026-08-30T03:05:28-07:00 done  receptor-and-reason (exit 0) ===
