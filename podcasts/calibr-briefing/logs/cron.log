@@ -3700,3 +3700,41 @@ Shortlist after discarding noise:
 
 Rejected as already shipped: Priovant/Lisraya, Tezspire in EoE, Gilead Bixlenvo, Generate poster leak, Outer Bio, Fifth Circuit/IRA (all in the 08-28 episode); Revolution Medicines analyst notes (08-27 and 08-28); Roche/Hanmi (08-25 spotlight).
 === 2026-08-29T02:35:10-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-30T02:20:08-07:00 start calibr-briefing ===
+Clean. Both episodes are written and staged for the batch TTS orchestrator.
+
+**Published (scripts + stubs written; `SKIP_TTS=1`, so no `gen_tts.py`, no R2 publish, no feed edit, no commit — `publish_pending.py` handles those after batch TTS):**
+
+- `podcasts/calibr-briefing/scripts/2026-08-30-pharma-headlines.txt` (~2,000 words) + `.rss-item.xml` + `.commit-msg`
+- `podcasts/calibr-briefing/scripts/2026-08-30-milvexian-factor-xia-spotlight.txt` (~1,885 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs validate as XML; `Paper link` targets verified live (ESC press release 200, ClinicalTrials.gov 200).
+
+**Candidate funnel**
+
+Source scan:
+- **Endpoints News** (via r.jina.ai index) — 24 items scanned, 1 net-new since yesterday's run (ESC26 relaxin, posted 03:19 EDT today). Article bodies paywalled after the first sentence; used only for discovery.
+- **escardio.org press releases** — 18 releases scanned across Aug 29–30, 17 net-new. Primary source for the episode; full text readable via jina.
+- **BioSpace /latest-news-press-releases** — 20 items scanned, **0 net-new** (newest is Aug 28, all shipped yesterday).
+- **BioPharma Dive** — 5 items, 0 net-new.
+- **Fierce Biotech — FAILED.** Direct WebFetch HTTP 403; r.jina.ai returns `AbuseAlleviationError`, domain blocked until 10:09 UTC today. Skipped. Fierce Pharma via jina returned nav-only.
+- **Medscape / Healio / HCPLive / news-medical / Mirage** — used for investigator and discussant quotes; HCPLive and Medscape direct 403/402, Medscape readable via jina.
+- **NEJM** — Cloudflare CAPTCHA on `10.1056/NEJMoa2608717`; spotlight grounded instead in the full ESC press release, the full Medscape trial report (Steg's three explanations + Sabatine's discussion verbatim), and the published LIBREXIA-AF/dosing design papers.
+
+Shortlist (all ESC Munich; ✅ = shipped):
+- ✅ **LIBREXIA ACS / milvexian** — Hot Line 3, Aug 29, NEJM — *spotlight*
+- ✅ **LUMINARA / AZD5462** oral RXFP1 agonist — Hot Line 6, today, *Circulation*
+- ✅ **STAREE** atorvastatin >70 primary prevention — NEJM
+- ✅ **SWITCH SWEDEHEART** registry-randomized prasugrel vs ticagrelor — NEJM
+- ✅ **PREMIUM** aspirin-free prasugrel at primary PCI — NEJM
+- ✅ **AMUNDSEN** evolocumab pre-PCI (Amgen)
+- ✅ **Met-HeFT + H-HeFT** (DANHEART)
+- ✅ **TIME-HF** nurse-led care, India — *Circulation*
+- ✅ **PRESC1SE-MI** 0/1-h troponin — *The Lancet*
+- ✅ **Fifth Universal Definition of MI**; statins/dementia in T2D folded in
+- ✗ TRANQUILITY (pacibekitug) — shipped Aug 29
+- ✗ Curium/Lantheus $8B — Aug 3, stale
+- ✗ Hot Line 7/8/9 (TAVI cluster, PVI-SHAM-AF, SHASTA-3/4 plozasiran) — presented after the cron window; flagged as "still to come today"
+
+Two notes worth flagging: the weekend business-news gap held exactly as expected (zero net-new non-ESC items since Friday), and Fierce Biotech is jina-blocked until later this morning, so it may be worth a retry on tomorrow's run.
+=== 2026-08-30T02:33:36-07:00 done  calibr-briefing (exit 0) ===
