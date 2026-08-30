@@ -3920,3 +3920,49 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I stopped after the sc
 
 I also updated the `api.biorxiv.org` memory: the multi-day outage has recovered, the new failure mode is intermittent 503s mid-sweep, and Europe PMC is a weak substitute for a fresh bioRxiv window.
 === 2026-08-29T02:09:02-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-30T02:00:08-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + the two stub files — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-30-civic-fact-curation-verification.md` (902 spoken words, cap 1150)
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-30-civic-fact-curation-verification.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/biomedical-agentic-ai/scripts/2026-08-30-civic-fact-curation-verification.commit-msg`
+
+**Pick:** CIViC-Fact — AI-assisted verification of cancer variant interpretations (bioRxiv v3, posted 2026-08-29). Paper URL returns HTTP 200. Full text read via `r.jina.ai` on `.full.pdf` (108 KB, 38 pp) after `.full` HTML came back abstract-only — the known PDF-first path.
+
+---
+
+### Candidate funnel
+
+**bioRxiv + medRxiv details API** (2026-08-27 → 08-30, day-by-day, cursor advanced by returned `count`): 720 unique records scanned (biorxiv 254/265/87/0; medrxiv 66/51/3/0) → 58 keyword hits → 8 substantive after discarding "biological control agent" / "therapeutic agent" / agent-based-model matches:
+- **CIViC-Fact: AI-assisted verification of cancer variant interpretations** — `10.1101/2025.09.10.675443v3` — **CHOSEN**
+- ASAREE: Analytical Sandbox for Agentic AI Research, Engineering, and Experimentation — `10.64898/2026.08.20.746074v2` — full text read (4-pp applications note); runner-up, too thin for a 5-min deep dive
+- OmicsFM brings proteomics into the foundation model era — `10.64898/2026.08.25.747021v1` — full text read; not agentic
+- A pretrained unified model enables cellular functional profile prediction (InsilicoCell) — `10.64898/2026.08.25.746866v1`
+- Visual LLM-guided consensus spatial domain detection with L-STAR — `10.64898/2026.08.25.747158v1` — 2-para brief report
+- Drivers of Oncologist Preference of AI-Generated Literature Review — `10.64898/2026.08.24.26361252v1`
+- A complementary learning system for continual episodic memory in LLMs — `10.64898/2026.08.24.746712v1`
+- SPIRIT-CONSORT-ELM: element-level RCT reporting assessment with LLMs — `10.64898/2026.06.06.26354746`
+
+**arXiv** — shared cache read (500 entries, 08-25 → 08-27); newest arXiv date is 08-27 on both cache and a live listing call (weekend announcement pause), so no 08-28/08-29 submissions exist to scan. 187 relevance hits → shortlist:
+- HypoForge: self-improving multi-agent hypothesis generation/testing — `2608.25770`
+- Homo-RAG: homology-guided RAG for cross-species gene function prediction — `2608.25466`
+- Beyond Execution: Auditing Experimental Fidelity in LLM-Driven Scientific Research (ABE-Ralph) — `2608.26753` — dropped, thematically duplicates 08-28's Co-Scientist hallucination audit
+- Surgical Alignment in Knowledge Graph Training for Clinical Diagnosis — `2608.26587`
+- VINCENT: cross-drug synergy explanation — `2608.25841`
+- Praxist: solution lineages for autonomous R&D — `2608.25955` — not biomedical
+- Already shipped: AgentFold `2608.26747` (08-29), Co-Scientist `2608.26701` (08-28), BixBench3 `2608.25286` (08-27)
+
+**PubMed** — E-utilities, `reldate=5`, 976 matching, 400 fetched → 52 after keyword filter → shortlist:
+- Knowledge graph-guided multiple sclerosis identification, two health systems (PLOS Digit Health) — PMID 42664299
+- Agentic systems in computational pathology (J Transl Med, review) — PMID 42665811
+- Autonomous agentic AI in health care: friend or foe? (Lancet Digit Health, comment) — PMID 42665468
+- AI agents in clinical medicine: delegation, supervision, correlated failure — PMID 42667591
+- Deep active learning experimental design for synergistic genetic interactions — PMID 42666872
+
+**Policy / funders** — ARPA-H news: nothing since 2026-08-18, no AI items. NIH news-releases: **HTTP 403 from this host** (source failure, not retried further per PIPELINE.md). NSF/HHS not reached after the NIH 403; noted as a gap.
+
+**ChemRxiv / news** — not surveyed; the bioRxiv and arXiv shortlists already carried a dominant on-target pick and the Sunday news window is empty (see the weekend-news-gap pattern).
+
+One note on the pick: CIViC-Fact's v1 dates to 2025-09-10; it entered the shortlist because v3 was **posted 2026-08-29**, inside the 4-day window, and the details API returns it in the 08-29 collection. That's a genuine in-window posting event, not a reach-back, but it is a revision rather than a new preprint — flagging it since the recency filter is a hard gate.
+=== 2026-08-30T02:08:18-07:00 done  biomedical-agentic-ai (exit 0) ===
