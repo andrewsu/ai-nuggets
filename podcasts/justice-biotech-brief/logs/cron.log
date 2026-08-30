@@ -2704,3 +2704,30 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 *Policy / funders*: not surveyed — the news sweep produced a clearly dominant on-target item and ARPA-H/NIH/NSF have no bearing on it. Noting the gap rather than implying coverage.
 === 2026-08-29T02:49:35-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-30T02:40:08-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md batch mode I stopped after the script + two stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those).
+
+**Published (pending batch TTS):** `podcasts/justice-biotech-brief/scripts/2026-08-30-pd1-il2v-stem-like-cd8-tdln-bifurcation.{md,rss-item.xml,commit-msg}`
+
+**PD1-IL2v — the effector-versus-exhaustion decision gets made in the lymph node, before the T cell ever sees the tumor.** All-Roche pRED Zurich preprint, last-authored by Laura Codarri Deak. Full text read (75,450 bytes, 8 sections). RSS item validated as XML.
+
+### Candidate funnel
+
+**bioRxiv** (details API, day-by-day 08-27 → 08-30): 254 / 265 / 87 / 0 = **601 unique records**, 28 keyword hits, **0 fresh on-target survivors**.
+- Only apparently on-target hit — LGR5+MET ADC combination in CRC (`10.64898/2026.07.18.739355`) — is a **v2 of a paper this show already shipped 2026-07-21**. Discarded on dedup.
+- Remaining 27 spurious/off-target ("ADC" inside an ASO paper, "CD3" in quail hypothalamus and maize inflorescence, checkpoint = cell-cycle, etc.).
+
+**Deferred-list retest** (direct `r.jina.ai` curl on `.full`) — both resolved:
+- ✅ **PD-1-targeted IL-2v expands a novel stem-like T cell subset** — `10.64898/2026.08.17.745170` — 75 KB — **CHOSEN**
+- ✅ **Proximity directs microbial transglutaminase site selectivity in native antibody modification** — `10.64898/2026.08.18.745451` — 98 KB, **rendered at day 12** after 403-byte proxy errors on 08-26/27. Runner-up; still unshipped and eligible next run (logged to memory).
+
+**News / press** — dead weekend tape, nothing dated 08-29 or 08-30 anywhere:
+- BioSpace `/latest-news-press-releases` — newest 08-28; every on-target item already shipped (BioNTech CRC futility → 08-29 ep; Priovant/Lisraya → 08-28 ep).
+- Endpoints — newest substantive item 08-28 (AstraZeneca relaxin pill, cardiology, off-beat).
+- BioPharma Dive — homepage tops out 08-27. Clinical Trials Arena — newest 08-28 (ESC congress, cardiology).
+- **Fierce Biotech — HTTP 403 both direct and via `r.jina.ai`. Source failed; proceeded per PIPELINE.md.**
+
+**Policy/funder:** ARPA-H newest 08-18. Nothing in window.
+
+**Targeted searches** (trispecific TCE, PD-1×VEGF / PD-L1×VEGF weekend announcements): no in-window items.
+=== 2026-08-30T02:46:24-07:00 done  justice-biotech-brief (exit 0) ===
