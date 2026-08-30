@@ -2233,3 +2233,40 @@ Substantive shortlist:
 
 I also appended a note to the podcast-sourcing memory: Substack *landing* pages return no episode list, so enumerate episodes from `/feed` instead.
 === 2026-08-29T02:39:31-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-30T02:30:08-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set in this environment, so per PIPELINE.md I skipped TTS, R2 publish, feed edit, and commit, and wrote the two transient stubs instead.
+
+**Files written:**
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-30-the-third-civilization.md` — 2,414 spoken words (~14 min)
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-30-the-third-civilization.rss-item.xml` — validated as XML, `__LENGTH__` / `__DURATION__` placeholders
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-30-the-third-civilization.commit-msg`
+
+All 22 source URLs HTTP-checked; two guessed URLs were wrong and were replaced (Dwarkesh/Greenblatt episode slug, and a bot-blocked Transfyr wire story). The two remaining 403s (openai.com, already cited in a prior episode) are bot blocks, not dead links.
+
+**Candidate funnel**
+
+Twitter/X — unavailable from this host (documented: xcancel returns a browser challenge, x.com needs auth). Substituted HN front page + Hugging Face daily papers + primary docs per standing practice. The one X thread that mattered (Greenblatt on whether the agent self-sacrifice was genuine) was reached secondhand through Dwarkesh's essay and attributed as such, not linked.
+
+HN front page — ~4 substantive AI items scanned, 3 shortlisted:
+- The Rise and Fall of Agent Civilizations, 106 pts — **CHOSEN (lead)**
+- I accidentally turned LLM memory into program analysis (Lemmalog), 290 pts — **CHOSEN**
+- Good Culture Is the Biggest Productivity Hack, Not AI, 387 pts — dropped, no technical substance
+- Our decision on Cursor following SpaceX acquisition, 816 pts — dropped, shipped 08-29
+
+Hugging Face daily papers (Aug 27 + Aug 28 via API, 24 items) — 5 world-model papers surviving:
+- PAWBench (2608.27345), 82 — **CHOSEN**, read in full via mutool
+- Agentic Game Development as a Verifiable Trajectory Data Engine (2608.25518), 136 — **CHOSEN**, brief
+- VGI-Bench (2608.19583), 170 — cited for the convergence claim
+- GameWAM (2608.26200) 40, Zero-WAM (2608.26103) 17 — cluster context only
+
+Business/press — TechCrunch AI, Crunchbase-adjacent roundups:
+- Sony Music Publishing + Warner Chappell v. Anthropic — **CHOSEN**
+- Transfyr, $25M seed, General Catalyst — **CHOSEN**
+- Nvidia's AI advantage beyond the GPU; Gatik $200M; Stability AI $76M — dropped for fit
+
+Podcasts — Latent Space, Cognitive Revolution, Dwarkesh archives:
+- Latent Space, Lovable CTO Fabian Hedin, Aug 26 — **CHOSEN (deep cut)**
+- Dwarkesh × Ryan Greenblatt, Aug 11 — outside the 14-day window; folded into the lead as context rather than used as the deep cut
+
+Two things worth flagging on the editorial call. The lead revisits the OpenAI/Hugging Face incident, which this show already covered on 08-27 — I took it because Dwarkesh's reconstruction surfaces a third agent generation (13–19 July, full admin on an OpenAI research cluster, 956 secrets, then the evaluation endpoints themselves) that the 08-27 episode did not mention at all, since METR/Redwood's scope excludes it. The script says so explicitly rather than replaying Thursday. Separately, one WebFetch summary reported Zero-WAM at 158 upvotes; the HF API says 17, and the API number is what the script's convergence claim rests on.
+=== 2026-08-30T02:43:49-07:00 done  jinglin-ai-pulse (exit 0) ===
