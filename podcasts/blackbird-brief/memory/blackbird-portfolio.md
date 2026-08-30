@@ -118,6 +118,20 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     on the submitted-project longlist.
 - **University of Maryland, Baltimore (UMB)** — via **UM Ventures, Baltimore**
   (co-investment agreement with Blackbird; "MPower" branding).
+  - **NEW SHARED INFRASTRUCTURE — a concrete answer to the Baltimore-nexus objection (added 2026-08-30 Portfolio
+    Watch item 4; announced week of 2026-08-21).** **NSF awarded the University of Maryland $17.3M over four years**
+    for the **CRAB Lab** (Collaborative for the Realization of Autonomous Biomanufacturing) — an AI-enabled,
+    **remotely programmable** automated biomanufacturing facility, **one of 20 nodes in a ~$400M national network**.
+    **Housed at the Institute for Bioscience and Biotechnology Research (IBBR), Rockville — a joint venture of UMCP,
+    UMB and NIST**, so a partner institution is a **co-owner** and this sits inside the existing relationship. PI
+    **William Bentley** (with Gregory Payne, Martha Wang, Alan Liu, Hussain Dahodwala). **Ginkgo Bioworks** deploying
+    **11 robotic units** plus software; measurement tools developed with **NIST and FDA**. **Thirty biopharmaceutical
+    companies get initial access** via the Advanced Mammalian Biomanufacturing Innovation Center; workforce hub at
+    **Universities at Shady Grove** across nine USM institutions. **WHY IT MATTERS: the most common founder objection
+    to a Baltimore build is process development and manufacturing capacity. ACTION (Maisha + Emily): into the
+    Baltimore-nexus deck with the access mechanism spelled out. (Yixuan): ask UM Ventures what the actual path is for
+    a Blackbird BioHub company to get instrument time, and what it costs.**
+    https://biobuzz.io/news/umd-wins-17-3-million-to-build-a-national-cloud-lab-for-biomanufacturing-with-training-built-into-the-foundation/
 - **Lieber Institute for Brain Development (LIBD)** — neuropsychiatry; affiliated
   with JHU. Source of the schizophrenia program.
 - **Open to partnering with institutions outside of Maryland**, so long as the
@@ -152,7 +166,7 @@ _Last update: 2026-08-28_
 company Blackbird BioVentures invested in, not a Blackbird-incubated project.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-08-29_
+_Last update: 2026-08-30_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases (Blackbird funded the **Intergalactic Center for
@@ -181,6 +195,26 @@ place to compete than target discovery. Ask any AI-pitching program which PROPER
 and whether that property earns a line on the label. (3) Operational note for BioHub companies: a
 society website can break your embargo and force a same-day SEC disclosure.** Source:
 https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentally-leaked-ahead-of-european-conference
+
+**CARDIAC FIBROSIS theme — RXFP1 has been measured three times on HAEMODYNAMICS and never once on FIBROSIS
+(added 2026-08-30 Portfolio Watch item 3; event 2026-08-30, ESC Congress, Munich).** **AstraZeneca's AZD5462**, a
+**once-daily oral RXFP1 (relaxin receptor) agonist**, read out **Phase 2b LUMINARA** in chronic heart failure
+(presenter **James Januzzi**, MGH/Harvard). **Pre-set bar, from the published rationale-and-design paper:** randomised,
+double-blind, placebo-controlled, dose-ranging; **~360 participants — 220 with LVEF ≤35% (Cohort A), 140 with LVEF
+41–55% (Cohort B)** — 1:1:1:1 to three once-daily doses or placebo for **24 weeks**; **primary endpoints = change in
+end-systolic volume index (A) and systemic vascular resistance index (B)**. Same-morning trade coverage (Endpoints,
+paywalled body) headlines "shows promise" and reads it as improving cardiac function in some but not all patients;
+**full numbers were not readable at run time — the bar is logged, not a verdict. PULL THE FULL DATASET WHEN POSTED.**
+**DURABLE READ (Anthony Accorsi + Jon Robbins), independent of today's numbers:** relaxin is the canonical
+**antifibrotic** hormone, which is why RXFP1 keeps attracting capital and keeps disappointing — injectable
+**serelaxin** failed in acute HF, AstraZeneca's own peptide agonist **AZD3427** was dropped on efficacy while the
+company explicitly kept AZD5462 ("dosing matters"). **Every RXFP1 trial to date has measured haemodynamics over
+weeks-to-months. Nobody has tested relaxin biology against a fibrosis endpoint on a fibrosis timescale.** Any
+Blackbird programme pitching an antifibrotic mechanism needs an endpoint and a duration that can register fibrosis, or
+it will be scored as a mechanism failure on a surrogate reporting vascular tone at 24 weeks. Sources:
+https://endpoints.news/esc26-astrazenecas-relaxin-pill-shows-promise-in-mid-stage-heart-failure-trial/ ·
+https://academic.oup.com/eschf/article/13/3/xvaf007/8415024 ·
+https://www.fiercebiotech.com/biotech/astrazeneca-drops-heart-failure-asset-over-phase-2-efficacy-data
 
 ### Terminated programs — do not cover ❌
 _Last update: 2026-08-28_
@@ -536,6 +570,26 @@ the individual entries below, each marked ❌ TERMINATED.
   mechanism**, and one of its two proof points is in Aletira's exact indication ⇒ **genetic hearing loss is a demonstrated national health
   priority with a 61-day precedent; the regulatory timeline in the model is not a fixed 10-12 months, and that NPV is currently unclaimed.**
 - **COMPETITIVE-INTELLIGENCE BLACKOUT (logged 2026-08-28; see the 2026-08-28 header entry for detail).** **Eli Lilly no longer discloses Phase 1 projects** on its public pipeline ("Phase 1 projects are no longer disclosed"; page current as of 2026-08-05). Lilly is the large-cap in this space — **Akouos** (Oct 2022, $487M; otoferlin gene therapy) plus a **>$1.12B Seamless Therapeutics recombinase deal (2026-01-28)** for hearing-loss mutations, over a reported portfolio of **OTOF, AK-CLRN1 (Usher 3A), GJB2, AK-antiVEGF**. Only **"OTOF Gene Therapy / Hearing Loss," Phase 2** remains visible; **GJB2 — Aletira's indication — is not on the page at all.** **ClinicalTrials.gov is now the surveillance instrument**: it still shows NCT06517888 (anti-VEGF, vestibular schwannoma, Phase 1/2, recruiting since 2025-01-17) and NCT07503613 (LTFU, opened 2026-03-02), neither on the pipeline page, and **no GJB2 or CLRN1 trial at all → Lilly's GJB2 work is still preclinical as of 2026-08-28.**
+- **AAV LONG-TAIL SAFETY — the risk shape that transfers, and the pre-IND ask (added 2026-08-30 Portfolio Watch LEAD; event 2026-08-24).**
+  **REGENXBIO (Rockville, MD) RGX-121** — one-time **AAV** gene therapy delivering iduronate-2-sulfatase to the CNS by **intracisternal or
+  intraventricular** injection for **Hunter syndrome (MPS II)**, partnered with **NS Pharma**, CAMPSIITE trial — was placed on **FDA clinical
+  hold** after enhanced MRI surveillance found **small nodules or cystic masses on spine imaging in five participants dosed 3–6 years earlier**.
+  **All asymptomatic**, radiologists called them **"likely benign"**, no brain abnormalities, all five **clinically stable or improved** on
+  neurocognitive/neurobehavioral assessment. CEO **Curran Simpson**: findings appear "unique and limited" to this programme; **BLA will not be
+  resubmitted near-term**; shares **−22% to −26%**. Outside comment (**Roberto Giugliani**): may reflect **MPS II progression itself**.
+  **Eight-month sequence:** Jan 2026 hold on RGX-121 *and* RGX-111 after a **CNS tumour** in an RGX-111 patient → Feb **BLA rejected** → Apr
+  partial hold lifted → Jun FDA agrees to review resubmission on existing data → **Aug, new hold on a different signal.**
+  **THREE-PART READ. (1) DO NOT OVER-CLAIM: this is a dose / capsid / route / biodistribution problem, NOT an expression-restriction problem.
+  SELEXON does not address this failure mode — no slide may say it does.** (2) **THE RISK SHAPE TRANSFERS EVEN THOUGH THE MECHANISM DOES NOT.**
+  Signal surfaced **3–6 years post-dose, asymptomatic, only because someone was imaging.** Aletira's lead indication is congenital hearing loss
+  and **Skylark's SONIX doses children 9 months–7 years** (n=10, primary endpoint safety only, preliminary data guided year-end 2026) ⇒ **a clean
+  12-month pediatric safety report tells you materially less than the market will price it as telling you. Do not over-read Skylark's winter data
+  in either direction.** (3) **ACTION (Geoff Lynn + Hugh Wells + Avi; Eddie on the financing half): does the development plan already specify
+  long-term structural imaging of the cochlea and auditory pathway plus a decades-long follow-up registry, written into the PRE-IND package rather
+  than bolted on after an agency asks? REGENXBIO surfaced this because it had already stood up enhanced surveillance — cheap early, expensive
+  late. Frame it as a Series A diligence ASSET: after eight months of AAV holds, investors are pricing long-tail safety, and a programme that has
+  already costed a multi-decade monitoring obligation reads differently from one that has not.**
+  Source: https://regenxbio.gcs-web.com/news-releases/news-release-details/regenxbio-announces-regulatory-update-rgx-121-mps-ii
 
 ### aSKY Therapeutics — UMB oncology spinout ❌ TERMINATED
 _Last update: 2026-08-28_
@@ -843,7 +897,7 @@ _Last update: 2026-08-29_
   https://www.biospace.com/drug-development/worse-than-expected-wainua-data-muddies-water-for-ttr-silencers
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-08-29_
+_Last update: 2026-08-30_
 - **What:** novel immunology platform that **selectively treats T-cell-mediated
   autoimmune disease**; T-cell engager platform with potential in ankylosing
   spondylitis and others.
@@ -873,6 +927,19 @@ _Last update: 2026-08-29_
   convenience and price run against Winnow and the TPP must say so.** Sources:
   https://www.biospace.com/fda/priovant-nabs-first-fda-approval-for-targeted-tablet-in-dermatomyositis ·
   https://www.biopharmadive.com/news/fda-priovant-pfizer-lisraya-brepocitinib-approved/829021/
+- **SELECTIVITY IS NOW AN APPROVABLE AND MARKETED AXIS — the other half of the TPP row (added 2026-08-30 Portfolio Watch item 2;
+  event 2026-08-24).** **FDA approved IMAAVY (nipocalimab-aahu), Johnson & Johnson**, as the **first-ever treatment for warm autoimmune haemolytic
+  anaemia (wAIHA)** in adults and children ≥12 currently/previously on corticosteroids. Mechanism: **immunoselective FcRn (neonatal Fc receptor)
+  blocker** — accelerates clearance of pathogenic IgG while, per J&J's own framing, **preserving broader immune function**. **Phase 2/3 ENERGY
+  (NCT04119050), n=115, three arms:** at the approved **30 mg/kg IV q4w**, **23.7% durable haemoglobin response by week 24 vs 7.7% placebo**
+  (Hb ≥10 g/dL and ≥2 g/dL rise sustained ≥28 days, no rescue); **median first response 4.1 vs 12.1 weeks**; fatigue +3.5 points. Second
+  indication for the molecule after gMG (April 2025). **wAIHA incidence ~1–3 per 100,000/yr; prevalence ~1 in 8,000.**
+  **DO NOT STRETCH THE ANALOGY — wAIHA is ANTIBODY-mediated, Winnow is T-CELL-mediated. The read is the AXIS, not the target.** Set beside
+  **Lisraya** (same week, boxed warning, broad kinase inhibition): **two first-ever rare-autoimmune approvals in one week, one selling
+  potency-with-a-warning and one selling SELECTIVITY AS THE PRODUCT ⇒ selectivity is approvable, marketable and commercially rewarded in rare
+  autoimmunity, not an academic preference.** Also note both indications sit at **~1–3 per 100,000/yr** while analysts model billion-dollar
+  franchises — keep that citation ready as the empirical answer to "antigen-selective indications are too small."
+  Source: https://www.jnj.com/media-center/press-releases/fda-approves-imaavy-nipocalimab-aahu-as-first-ever-treatment-for-warm-autoimmune-hemolytic-anemia-waiha-representing-a-landmark-advancement-for-patients
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
 _Last update: 2026-08-28_
@@ -1569,7 +1636,8 @@ raises, exits, or crosses a scientific milestone.
 - **Design.** Paired snRNA-seq (Chromium; n=10 libraries) + Visium spatial transcriptomics (n=17 capture areas) on dorsal anterior cingulate cortex (Brodmann areas 33 + 24 + 32) from 10 adult neurotypical donors — the same 10 donors previously profiled for the Lieber dlPFC atlas (Huuki-Myers 2024 Science). Non-negative matrix factorization (NMF, k=75) to project cell-type-specific gene expression programs from snRNA-seq into SRT. Open data + interactive portal at research.libd.org/spatialdACC/.
 - **Three findings.** (1) **L4-absence confirmed at spatial-molecular resolution.** Canonical L4 markers RORB, PVALB collapse into L5 in the agranular dACC; direct within-donor contrast with L4-present dlPFC. (2) **Two novel L6 sublayers.** L6a marker KCTD8; L6b markers ADRA2A + CRHBP — divergent from dlPFC L6, new territory for cognitive-control target discovery. (3) **Von Economo neurons (VENs) mapped to deep L5.** NMF61 pattern is dACC-L5-ET-specific (VAT1L, SULF2, HAPLN4, FEZF2, GABRQ, POU3F1 markers). smFISH confirmation. Mouse retroviral tracing infers VEN axonal projections to amygdala, ventral tegmental area, pons + prefrontal cortex — first molecular-level connectivity read on the VEN population. VEN loss is documented in schizophrenia, suicidal psychosis, and ASD.
 - **Sourcing significance.** Platform-substrate, not direct spinout. Two Blackbird-relevant angles. (1) **Second matched-donor Visium atlas from Lieber in a year** (post-dlPFC 2024) — strengthens the case for a Lieber Institute × Kalhor 3DEEP deep-tissue spatial-omics cross-cycle collaboration; a 400-μm-depth spatial method paired with the Lieber donor collection is the natural next-cycle platform paper. (2) **dACC atlas nominates the tissue block for target discovery in cognitive control + reward processing + pain** — three symptom domains that the Lieber neuropsych NewCo pipeline should be probing for second-and-third assets beyond the GPR52 lead.
-- **Watch:** whether the Lieber-Hopkins matched-donor Visium program extends into additional regions (Wilmer/BME/Center-for-Nanomedicine-adjacent atlas targets: hippocampal subfields, striatum, amygdala); Kalhor lab (§2b) response to the dACC atlas as a candidate deep-tissue 3DEEP substrate; whether Martinowich's group has any consulting/advisory-board footprint downstream from spatialLIBD industrial adoption (10x Genomics, Bruker, Vizgen partnerships).
+- **THE AMYGDALA IS THE NEXT ATLAS — and it is substrate, not an asset (added 2026-08-30 Sourcing Radar lead 2; preprint posted 2026-08-26).** Martinowich K (senior), Hicks SC + Page SC + Hyde TM + Maynard KR (co-senior), Bach SV, Valentine MR, Tippani M, Maguire SE, Del Rosario Alvia I, Miller RA, Kleinman JE, "Multiscale spatial transcriptomics resolves the cellular and molecular architecture of the human amygdala," bioRxiv 10.64898/2026.08.22.746381v1. **The "amygdala" watch line below is now answered.** **Design:** nine **neurotypical** donors; **>1.1M cells**; **Visium + Xenium + VisiumHD** integrated; **13 spatial domains** across the basolateral complex (LA, BL, PL, BM), central, medial and cortical nuclei, and the intercalated islands. **Findings:** each BLA subdivision carries distinct excitatory neuron classes; **three transcriptionally distinct intercalated neuron populations**, two forming spatially separate islands adjacent to the BLA; refined cell-type diversity across CeA + amygdalostriatal transition. **Psychiatric-risk localisation is METHOD-DEPENDENT — say it out loud in any pitch.** **gsMap** (spatial heritability partitioning / S-LDSC) → broad enrichment across **all** grey matter, minimal white-matter/endothelial signal, and enrichment magnitude **scales with GWAS power** (SCZ ranks highest *because* its GWAS is most powered; height is a clean negative control). **scDRS** (MAGMA top-1,000-gene disease scores) → real heterogeneity, **BM and LA consistently top-ranked** across donors and psychiatric traits; MDD signal in BM driven partly by **NEGR1, RBFOX1, PCLO** (plus RTN1/GPM6A/VAMP2/CCK); SCZ signal in LA driven largely by **NRGN**. **BLACKBIRD READ: a resource, not a licensable asset — neurotypical donors only, no cases and no controls, so it localises ALREADY-KNOWN genetic risk rather than nominating targets. Value = a spatial filter downstream of the Weinberger/Pergola coexpression-TWAS target-generation work above. ACTION (Hemaka): is the next atlas in this series being chosen against a PROGRAMME or against a grant?** **No competing interests**; funding R01DA053581 + the Lieber Institute; F32MH123620. — https://www.biorxiv.org/content/10.64898/2026.08.22.746381v1
+- **Watch:** whether the Lieber-Hopkins matched-donor Visium program extends into additional regions (hippocampal subfields, striatum — amygdala now delivered, see above); Kalhor lab (§2b) response to the dACC atlas as a candidate deep-tissue 3DEEP substrate; whether Martinowich's group has any consulting/advisory-board footprint downstream from spatialLIBD industrial adoption (10x Genomics, Bruker, Vizgen partnerships).
 - **AI-agent-evaluation extension (2026-07-13 radar).** Chen YT (Stanford Statistics; first) + Hicks SC (senior corresponding; JHU Biostatistics), "Mind the alignment gap: a spatial transcriptomics benchmark for scientific coding agents," bioRxiv v1 2026.07.05.736638, posted 2026-07-09. Repurposes SABench (spatial-alignment benchmark) into 40 hidden-scored executable tasks for A-I coding agents. Three scaffolding conditions × Codex-CLI on gpt-5.3-codex xhigh: Basic prompt vs Package-Aware prompt (naming PASTE + Spateo + SPACEL + STAligner) vs Full+Prior (pre-built venv). **Counter-intuitive result:** mean composite alignment score DROPPED from 0.43 (Basic) to 0.36 (FPP), 95% CI [-0.11, -0.03] excluding zero — even as specialized-package use rose from ~20% to 72% (PASTE2). Trace inspection: richer scaffolding induced unnecessary coordinate transformations, brittle package-first workflows, infrastructure failures. Agents in Basic reasoned from first principles + landed on performant heuristics; agents in FPP deferred to specialized tools + lost the plot. **Blackbird relevance.** Same Hicks group producing the Lieber-Hopkins dlPFC 2024 + dACC 2026 atlases is now embedding agent-eval methodology in the same domain — a canary result for Blackbird portfolio-co CTOs (Aletira, aSKY, Lieber neuropsych NewCo, 1104health) before committing to agent-scaffolding investments. Diligence discipline: inspect agent traces, not just final output scores. Strengthens Kalhor 3DEEP chassis-cluster underwriting rationale (atlases + deep-tissue platform + agent-eval methodology all clustering in same Hopkins-Wilmer-BME-Lieber orbit). Not a spinout paper; a portfolio-scaffolding calibration signal + platform-adjacency read.
 
 ### Ahmed + Riazuddin cEAR Lab CIB2/CIB3 hearing gene therapy (UMB SoM Otorhinolaryngology + Molecular Biology & Biochemistry + Ophthalmology) — active sourcing lead + direct Aletira portfolio adjacency ⚠
@@ -1861,6 +1929,31 @@ raises, exits, or crosses a scientific milestone.
 - **DILIGENCE ASK (one experiment, and it is the whole investment case): does MDK–PTPRZ1 activation raise hair-cell counts in an ADULT mouse cochlea in vivo after noise or ototoxic damage, with an ABR readout?**
 - **Actions:** **Esther** — open the conversation this week. **Eddie** — provisional-filing moment on the **MDK–PTPRZ1 axis specifically**, not on ZBTB20. **Avi** — is there existing chemical matter (MDK mimetics, PTPRZ1 agonists/antagonists) to in-license around, and who holds it?
 
+### Kathuria lab multi-region brain organoid + Neural Impact Score (JHU BME + Neurosurgery) → **Organotics, Inc.** — BioVentures / BioHub lead, NOT a licensing lead + sourcing-latency case ⚠
+_Last update: 2026-08-30_
+- **Lab / people.** **Annie Kathuria, Ph.D.** — Department of Biomedical Engineering, Johns Hopkins University, with a Neurosurgery / Johns Hopkins Medical Institutes affiliation; senior + funding-acquisition author. **Genevieve Stein-O'Brien, Ph.D.** (JHU) supervised the spatial-transcriptomics arm. First author **A.P.**; student co-authors Vanshita Singh, Om Sadul, Nitya Lagadapati, Kaustubh Joshi; Ryan Palaganas + Jon Sundstrom on spatial.
+- **Fresh disclosure (bioRxiv, posted 2026-08-26; 2026-08-30 Sourcing Radar LEAD).** "The Neural Impact Score benchmarks drugs in Multi-Region Brain Organoids." Full text read. — https://www.biorxiv.org/content/10.64898/2026.08.26.746777v1
+- **The substrate.** Vascularized human iPSC-derived **Multi-Region Brain Organoid (MRBO)** — cortical, midbrain, brainstem, glial, choroid plexus, ependymal, retinal and mesenchymal pericyte-like populations plus an endogenous **endothelial compartment**; aged **200 days**; cortical compartment aligns to the **GW18–GW22** human fetal window. Prior work from the same lab produced the "whole-brain" organoid covered by JHTV in 2025.
+- **The product.** **Neural Impact Score (NIS)** — converts snRNA-seq + bulk RNA-seq + proteomics + multi-electrode-array electrophysiology into **signed** scores across four **locked** categories (neurodevelopment, neuroinflammation, neurodegeneration, longevity/resilience) plus a composite. Locked feature dictionary ⇒ scores external datasets **without retraining**.
+- **Panel + results.** GLP-1R agonist, bupropion, fluoxetine, fingolimod, SC79 (Akt activator). Fingolimod highest neurodevelopment (**0.53**); GLP-1 highest longevity in panel (**0.91**) with negative neuroinflammation and neurodegeneration; fluoxetine longevity **0.54** with negative inflammation/degeneration. **Load-bearing result:** bupropion + fluoxetine show **near-chance directional agreement with rat brain at the individual-gene level** while **category-level scores match in sign**; for GLP-1 the systems **invert** (MRBO semaglutide −0.023 / liraglutide +0.018 vs murine dorsal vagal complex +0.020 / −0.001), attributed to the organoid's **endothelial compartment** — GLP-1R agonists act on vascular endothelium, which neuron-focused rodent comparators cannot capture by design.
+- **IP POSTURE — THE FOOTNOTE THAT CHANGES THE PLAY.** "A.K. is a co-founder and equity holder of **Organotics, Inc.**, which has **licensed intellectual property related to the technology described in this work from Johns Hopkins University**." Kathuria + two student authors are inventors on **JHU Provisional Patent Application No. 64/135,767**. ⇒ **NOT a Blackbird Labs licensing lead.**
+- **Organotics, Inc.** — launched **July 2026**, **Maryland-based** JHU spinout; hiring **AI scientists and research technicians in-state**; stated indications **schizophrenia, bipolar disorder, major depression, PTSD, and Alzheimer's disease with a focus on women**; NIS is the company's named analysis tool; positioning is "precision organoid intelligence." **Funding / investors NOT disclosed.** — https://biobuzz.io/news/organotics-launches-to-advance-neurological-drug-discovery-with-human-brain-organoids-and-ai/ · https://www.organotics.ai/
+- **BLACKBIRD READ — three actions.** **(1) Eddie (CBO first-read, not Esther):** BioVentures diligence + **Blackbird BioHub tenancy** conversation, not a JHTV license conversation. **(2) Hemaka / Lieber neuropsych NewCo:** a human-tissue CNS liability screen in **overlapping indications** now exists in-state — evaluate as a **service relationship** ahead of the DC declaration. **(3) Virginia Burger + Maisha — SOURCING-LATENCY QUESTION:** a JHU BME AI-plus-human-tissue platform formed a Maryland company in **July**; the technical paper landed in **August**. Did we see it in July? If not, **what sensor should have fired on a JHTV license plus a company formation and did not?** (Second Maryland-nexus company in this file met *after* formation rather than before.)
+- **Candid limits / diligence ask.** Five compounds, all approved drugs or tool molecules, **healthy control tissue only**, hand-defined categories, **no clinical anchor** — nobody has shown NIS predicts a human outcome, and the cross-species claim is unfalsifiable in the direction that matters (when human and rodent disagree, the framework cannot say which is right). **ASK: score a blinded compound set with known divergent human vs. animal outcomes and show NIS would have called them.**
+- **Watch:** Organotics financing (currently undisclosed); whether JHTV licensed the MRBO composition and the NIS scoring method together or separately; whether Organotics is a BioHub tenancy candidate; NAM/new-approach-methodology regulatory momentum (FDA, NIH, EMA, OECD) as the tailwind under the whole category.
+
+### Chatterjee lab GdpP / cyclic-di-AMP β-lactam tolerance in *S. aureus* (UMB School of Medicine) — active sourcing lead on the *chronic infections* theme ⚠
+_Last update: 2026-08-30_
+- **Lab / people.** **Som S. Chatterjee, Ph.D.** — University of Maryland Baltimore; senior + corresponding. Co-authors **Vaibhav D. Hayatnagarkar**, **Stefano Giulieri** + **Benjamin P. Howden** (Doherty Institute, Melbourne), **Steven Y.C. Tong**, **Vance G. Fowler** (Duke), Poon R, Bose S, Parsons JB. **Multi-institution consortium — the IP conversation is not single-assignee.**
+- **Fresh disclosure (bioRxiv, posted 2026-08-24; 2026-08-30 Sourcing Radar lead 3).** "Loss of GdpP function in *Staphylococcus aureus* confers β-lactam-specific antibiotic tolerance and promotes invasive infection." Full text read. — https://www.biorxiv.org/content/10.64898/2026.07.27.740951v1
+- **Mechanism.** **GdpP** is the phosphodiesterase that hydrolyses the second messenger **cyclic-di-AMP (CDA)**. Loss of function → CDA accumulates → tolerance **specific to the β-lactam class**, including **ceftaroline**, and **independent of *mecA* and *blaZ***; present in both MRSA and MSSA backgrounds. Tolerance **correlates with intracellular CDA concentration** (a dial, not a switch). **No** tolerance to vancomycin or daptomycin — prior reports attributed to second-site mutations in clinical isolates. **Bacitracin** (lipid-carrier recycling inhibitor) **reverses** it. ΔgdpP caused higher mortality than wild type in *Galleria mellonella* under β-lactam treatment. Proposed downstream: KupB/GlnPQ osmolyte compensation, VraTSR cell-wall stress regulon.
+- **Clinical evidence (CAMERA-2 within-host evolution).** Across **288 infection episodes and 663 nasal-colonisation episodes**: **five independent *gdpP* truncation acquisitions — all during bacteraemia, all after β-lactam exposure, 80% MRSA**; **9-fold enrichment over background, p = 0.0028**; **zero** in nasal carriage. Adjusted dN/dS **6 in bacteraemia vs 0.5 in carriage**. One MRSA episode showed **within-host convergent evolution** (independent frameshifts at positions 387 then 383).
+- **Commercial read — *chronic infections* is a named pre-spinout theme.** **(a) THE DIAGNOSTIC IS THE STRONGER SHAPE.** Tolerance is invisible to MIC-based susceptibility testing (the paper uses ScanLag + a Tolerance-Disk test); a ***gdpP* truncation call on a sequenced bloodstream isolate is a binary "your β-lactam will fail" readout that EMERGES DURING THERAPY** — i.e. it lives exactly where a companion test has to live to be worth anything. **(b) THE RESENSITISER IS THINNER.** Bacitracin is generic and systemically nephrotoxic (probe, not product), and because the phenotype is caused by **loss** of an enzyme you cannot inhibit your way out — an asset has to attack downstream.
+- **Candid limit + next step.** The clinical enrichment rests on **five events**. Validation = a **large retrospective sequencing cohort of bacteraemia isolates** before any check is written.
+- **IP posture / route.** Funded by **NIAID AI165510 + AI195530** to Chatterjee; Albrecht Foundation fellowship for V.D.H. Declared disclosures belong to the **co-authors** (Fowler: grants + personal fees across multiple companies, ValanBio options, UpToDate royalties; Tong: AstraZeneca advisory board) — **no UMB-side company or license declared**. **Route: UM Ventures.**
+- **Pairs with (same week, opposite direction):** "Fibrin barriers limit vancomycin penetration into staphylococcal abscess communities and maintain *S. aureus* in an unstressed, transcriptionally-responsive state," **Johns Hopkins Bloomberg School of Public Health**, posted 2026-08-24 — https://www.biorxiv.org/content/10.64898/2026.01.20.700504v1 · **One paper says the drug never arrives; the other says the bug does not care. Use the pair as the framing slide if we build on the chronic-infections theme.**
+- **Watch:** UM Ventures IP posture on a *gdpP*-genotype tolerance assay; whether Chatterjee has founder intent or prefers licensing; whether the Doherty Institute co-assignment complicates a Baltimore-nexus build; other CDA-pathway tolerance determinants outside the *gdpP* locus.
+
 ### Elisseeff lab fibroid-senescence atlas (JHU) — WATCH, not a build (deferred 08-09 lead, closed 2026-08-16) ⚠
 - **Lab / people.** **Jennifer H. Elisseeff, Ph.D.** (JHU; senior) with Mostafa Borahay + James Segars (JHU Gyn/Ob) and **Elana Fertig** (UMB genome sciences). "Senescent cell networks link matrix remodeling and vascular dysfunction in human fibroids," bioRxiv v1 2026-08-07 (DOI 10.64898/2026.08.06.743362) — full text NOW RENDERED (157KB) and read 2026-08-16.
 - **Science.** First single-cell "senotype" map of human uterine fibroids: senescent cells concentrate in mural (~61%), fibroblast, and a fibroid-expanded endothelial compartment; drive ECM remodeling (collagen VI / COL6A3), impaired vessel maturation, and immune signaling via TEAD4/YAP mechanosensing programs. Translational hook: in tissue from a JHU Phase I injectable-collagenase fibroid trial (Singh/Borahay), collagenase reduced both ECM density + p16+ senescent burden.
@@ -1888,6 +1981,11 @@ raises, exits, or crosses a scientific milestone.
 - **Eligible-fraction row (added 2026-08-27):** build and maintain the addressable-fraction column of the KRAS
   competitive map for Clasp and Adventris — the biomarker-free RASONQUE label makes it the number a pharma
   corp-dev team computes first.
+- **Organotics / Kathuria (added 2026-08-30):** what is Organotics' financing status and investor set (undisclosed as of today)? Did JHTV license the MRBO composition and the NIS scoring method together or separately, and is any field of use unencumbered? Is the company a Blackbird BioHub tenancy candidate, and would it run a CNS liability screen as a service for the Lieber NewCo? **And the process question: what sensor should have fired on a July 2026 JHTV license plus Maryland company formation, and why did it not?**
+- **LUMINARA / AZD5462 (added 2026-08-30):** pull the full Phase 2b dataset once posted (end-systolic volume index in the LVEF ≤35% cohort; systemic vascular resistance index in the 41–55% cohort) and log whether any fibrosis-relevant secondary was collected at all.
+- **CRAB Lab access (added 2026-08-30):** what is the actual path and cost for a Blackbird BioHub company to get instrument time on the NSF-funded automated biomanufacturing node at IBBR, which UMB co-owns? (Yixuan → UM Ventures.)
+- **Aletira long-tail safety plan (added 2026-08-30):** does the development plan already specify long-term structural imaging of the cochlea and auditory pathway plus a decades-long follow-up registry, written into the pre-IND package? Is it costed, and is it in the Series A narrative?
+- **Chatterjee GdpP (added 2026-08-30):** UM Ventures IP posture on a *gdpP*-genotype tolerance assay; Chatterjee's founder intent vs. licensing preference; whether Doherty Institute co-assignment complicates a Baltimore-nexus build.
 - **Aletira pricing answer (added 2026-08-27):** written position on the Otarmeni-is-free anchor for the Series A deck,
   plus the GJB2-vs-OTOF population arithmetic that answers it.
 - Schizophrenia NewCo: company name; DC timing confirmation.

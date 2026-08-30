@@ -2059,3 +2059,25 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped at the script
 
 **One correction I made mid-run, flagged in-episode:** my first sweep hit 403s on both JHU newsrooms and I had drafted "no Hopkins item on the tape." The jina retry turned up the two best sourcing leads of the day — the JHTV translational-fund awards (9 PIs from 89 applications, of which **Yun Guan's MRGPRX1 non-addictive analgesia** hits the non-opioid pain theme and **Jonathan Schneck's in-vivo CAR-T via mRNA nanoparticles** is Winnow-adjacent) and a Bin Wu *Nature* paper on ac4C-modified mRNA translating ~2× faster than m1Ψ. Both are recorded in the reference and teed up for tomorrow's Sunday Radar. I rewrote the null and added the rule to memory: a blocked source is not a negative finding.
 === 2026-08-29T02:27:47-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-30T02:10:08-07:00 start blackbird-brief ===
+Both Sunday episodes are written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-08-30-radar-jhu-kathuria-brain-organoid-neural-impact-score.md` (+ `.rss-item.xml`, `.commit-msg`)
+- `podcasts/blackbird-brief/scripts/2026-08-30-portfolio-watch.md` (+ `.rss-item.xml`, `.commit-msg`)
+- `state/shipped.jsonl` — 2 lines appended (5 radar keys, 4 watch keys; ledger now 49 episodes / 214 unique keys)
+- `memory/blackbird-portfolio.md` — edited in place: AAV long-tail-safety bullet on Aletira, IMAAVY selectivity bullet on Winnow, RXFP1/cardiac-fibrosis note on the pre-spinout themes, CRAB Lab under the UMB partner entry, amygdala atlas folded into the existing Martinowich/Hicks entry, two new §2b lead entries (Kathuria→Organotics, Chatterjee GdpP), five new open items
+
+**Sourcing Radar picks**
+1. **LEAD** — Kathuria lab (JHU BME + Neurosurgery), Neural Impact Score on a vascularized day-200 multi-region brain organoid. The load-bearing result is that human-organoid and rat-brain drug responses agree in sign at the category level while agreeing at chance at the gene level. **The COI section is the story: the IP is already licensed to Organotics, a Maryland JHU spinout launched in July** — so it's a BioVentures/BioHub call plus a sourcing-latency question, not a licensing lead.
+2. Lieber Institute human amygdala spatial atlas (Martinowich/Hicks) — substrate, not an asset; the subnuclear-specificity claim is method-dependent (gsMap says smeared, scDRS says BM/LA).
+3. UMB Chatterjee — GdpP loss → cyclic-di-AMP → β-lactam-specific tolerance, invisible to MIC testing, with truncations selected during bacteraemia (9×, p=0.0028) and absent from 663 nasal-carriage episodes. Diagnostic before drug; the clinical enrichment rests on five events.
+
+**Portfolio Watch items**
+1. **LEAD** — REGENXBIO RGX-121 back on FDA clinical hold over asymptomatic spine-MRI nodules found 3–6 years post-dose. Read for Aletira in three parts, including an explicit *do not* — SELEXON does not address this failure mode; what transfers is the risk *shape*, and the action is a long-term imaging/registry plan in the pre-IND package.
+2. IMAAVY (nipocalimab) approved as first-ever wAIHA treatment on an immunoselective FcRn mechanism → selectivity as a rewarded commercial axis for Winnow.
+3. LUMINARA/AZD5462 at ESC this morning — handled as a calendar item: the pre-set bar stated, no verdict claimed, since the data weren't readable at run time.
+4. $17.3M NSF automated-biomanufacturing node at IBBR, which UMB co-owns.
+
+**Funnel** — bioRxiv 08-23→08-30: 1,445 unique, 18 partner-institution corresponding authors, 5 read in full, 3 selected. medRxiv: 322 unique, 2 partner-institution, both irrelevant. Europe PMC affiliation search returned 0 for the window (index lag — saved as a memory). Source failures: fiercebiotech.com 403s directly and via jina; Endpoints bodies paywalled; BioSpace index doesn't expose article URLs. One dedup catch worth noting: the Lisraya/brepocitinib approval re-entered under a Roivant IR URL — it shipped 08-29 and is referenced only as context, not re-covered.
+=== 2026-08-30T02:34:31-07:00 done  blackbird-brief (exit 0) ===
