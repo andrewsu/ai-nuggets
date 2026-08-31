@@ -3738,3 +3738,25 @@ Shortlist (all ESC Munich; ✅ = shipped):
 
 Two notes worth flagging: the weekend business-news gap held exactly as expected (zero net-new non-ESC items since Friday), and Fierce Biotech is jina-blocked until later this morning, so it may be worth a retry on tomorrow's run.
 === 2026-08-30T02:33:36-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-08-31T02:20:08-07:00 start calibr-briefing ===
+Both episodes are written and staged for the batch pipeline.
+
+**Published (SKIP_TTS mode — scripts + stubs written; `publish_pending.py` will do TTS, R2, feed, commit):**
+
+- `podcasts/calibr-briefing/scripts/2026-08-31-pharma-headlines.txt` (1,789 words)
+- `podcasts/calibr-briefing/scripts/2026-08-31-repatha-vesalius-mortality-spotlight.txt` (1,924 words)
+- Matching `.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` tokens) and single-line `.commit-msg` for each.
+
+**Spotlight:** Amgen's VESALIUS-CV mortality analysis (ESC late-breaker + *Circulation*, 3:18am ET today). The take: the 20% all-cause death reduction is arithmetically correct, prespecified, and statistically uncertified — the hierarchy broke one step above at coronary heart disease death (105 vs 117, HR 0.89, p=0.39), and the NEJM primary paper says conclusions may not be drawn. The under-covered detail: only 39 of the 105 fewer deaths were cardiovascular, so two-thirds of the all-cause difference sits where LDL lowering has no mechanism. Counterweight is the CTTC calibration (35% observed vs 31% predicted major coronary events) and the JACC total-events paper (55 vs 31 events prevented per 1,000 over five years), plus why Amgen needs a mortality claim rather than a MACE claim against Merck's $315/month oral PCSK9.
+
+**Candidate funnel**
+
+- *ESC Congress press office* — 20 releases scanned across Aug 29–31; 11 survived relevance; used: plozasiran, PVI-SHAM-AF, TAVI-PCI, DANISH-CRT, ASPIRED, REACT, CRHCP.
+- *Corporate wire (StockTitan live feed, PR Newswire, GlobeNewswire)* — 7 items Aug 30–31; 5 used: Amgen Repatha (chosen, spotlight), BioMarin/Ascendis settlement, Arrowhead SHASTA-3/4, BridgeBio acoramidis, Alnylam HELIOS-B, Alvotech AVT80.
+- *Endpoints News* — index readable via jina; article bodies paywalled (the ESC26 Arrowhead/Ionis piece was inaccessible; substituted BioPharma Dive for the RBC and TD Cowen analyst quotes).
+- *Fierce Biotech* — HTTP 403 direct and via jina, both attempts; skipped. Fierce Pharma homepage readable, nothing newer than Aug 29.
+- *BioSpace / BioPharma Dive* — scanned; nothing net-new past Aug 28 except the press-release feed.
+- *AI in drug discovery* — searched; no substantive news over the weekend, noted as such in the episode.
+
+Shortlist not chosen: BridgeBio acoramidis CMR reversal (strong, but a substudy claim without a peer-reviewed companion I could read); Arrowhead plozasiran (spotlighted July 23 on the topline — carried as headline #2 with the full dataset instead); BioMarin/Ascendis settlement (best non-cardio candidate, kept as headline #3); PVI-SHAM-AF.
+=== 2026-08-31T02:35:13-07:00 done  calibr-briefing (exit 0) ===

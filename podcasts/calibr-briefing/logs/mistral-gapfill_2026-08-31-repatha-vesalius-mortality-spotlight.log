@@ -1,0 +1,7 @@
+Script body: 12378 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2907 chars) -> 145.0s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2981 chars) -> 127.3s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2864 chars) -> 140.0s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2947 chars) -> 149.1s ✓
+  [mistral:en_paul_neutral] chunk 5/5 (675 chars) -> 29.5s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-08-31-repatha-vesalius-mortality-spotlight.mp3 [mistral] 5,141,777 bytes, 642.7s
