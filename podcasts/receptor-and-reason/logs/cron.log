@@ -3947,3 +3947,43 @@ Dedup: 46 candidates → 34 fresh (12 already shipped, incl. five arXiv items an
 
 One flag on the lead: its abstract claims evidence of this plasticity "in the adult human brain," but the actual human data is bulk-transcriptomic decline of SOX11 across the lifespan. I stated that gap explicitly in the script rather than repeating the abstract's framing.
 === 2026-08-30T03:05:28-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-08-31T02:50:08-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after the batch TTS job.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-08-31-receptor-and-reason.md` — 3,208 spoken words (≈18 min at the show's measured 174 wpm), 11 items
+- `.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders in place)
+- `.commit-msg`
+- Ledger appended: 11 keys, now 101 episodes / 1,021 unique keys
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| bioRxiv details API, 08-25→08-31 day-by-day | 1,186 | 62 title-level | full 7-day collection, stride-by-returned-count pagination |
+| medRxiv details API, same window | 230 | (in above) | 08-31 returned 0 records |
+| arXiv shared cache | 500 | 114 bio×agentic, 7 pharm/neuro | **cache covers only 08-26→08-28** (500-entry cap); Sunday, so nothing past Fri 08-28 exists |
+| Crossref, 24 journals from 08-24 | 148 | ~35 | discovery only — see below |
+| Dedup filter | 43 submitted | **28 fresh** | 15 already shipped (trazodone, psilocybin/change-detection, 6-methyl nicotine, lithium/SNAP25, adolescent-cannabis mitochondria, tDCS/placebo, movement-responsive DBS, BALMS, and 7 more) |
+
+**Source-level failures / gaps**
+- **Every Nature-family body was unreadable.** `s41386-026-02536-6` and `-02537-5` hit `Access options`; `s41380-026-03812-z` (UCB-J PET in autism — the highest-value journal item) returned 52 KB of *references only, no prose*; two npj Parkinson's papers returned ~9.5 KB abstracts. Elsevier titles (Neuropharmacology, PNPBP, JPET) returned ~2.4 KB. All dropped under the full-text eligibility gate rather than summarized from abstracts.
+- jina failed twice on `2026.08.24.746613` and `2026.08.24.746804`; both deferred.
+
+**Shipped (all 11 read in full)** — lead first
+1. `2026.08.26.747402` CRHR1 saturation after early-life adversity → CRHR2 rescue (Baram) — **LEAD**
+2. `2026.08.25.747126` ABPP in intact brain cells → covalent allosteric HCN modulators (Cravatt/Scripps)
+3. `2026.08.24.746716` A2A vs A2B selectivity from metadynamics
+4. `2026.08.24.745890` RCDO closed-loop RL compound optimization
+5. `2026.08.22.746387` organoid perturbation foundation models → autism candidates
+6. `2026.08.24.746680` CB1 on D1-positive hippocampal cells / incidental associations
+7. `2026.08.24.746811` blunted fear-evoked striatal dopamine, family history of psychosis
+8. `2026.08.25.26361320` patterned trigeminal nerve stimulation, LC-dependent
+9. `2026.08.25.26361305` pseudo-monopolar beta sensing for DBS contacts
+10. `2026.08.22.746445` native Nav1.9 in human DRG vs TG
+11. `2026.08.26.747240` glutamatergic neuron–meningioma synapses
+
+**Cut for length, not quality:** `2026.08.20.745912` (oxycodone across 20 HRDP strains) — full text read, ready to ship tomorrow.
+
+One methodological finding worth flagging: four preprints came back abstract-only on the `.full` page but returned complete bodies (53–92 KB) from `r.jina.ai` on the **`.full.pdf`** URL. bioRxiv render lag is no longer a reason to defer an item — I saved that as a memory and closed out the whole rolling deferral list.
+=== 2026-08-31T03:10:46-07:00 done  receptor-and-reason (exit 0) ===
