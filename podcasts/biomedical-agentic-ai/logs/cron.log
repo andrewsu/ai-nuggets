@@ -3966,3 +3966,35 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 One note on the pick: CIViC-Fact's v1 dates to 2025-09-10; it entered the shortlist because v3 was **posted 2026-08-29**, inside the 4-day window, and the details API returns it in the 08-29 collection. That's a genuine in-window posting event, not a reach-back, but it is a revision rather than a new preprint — flagging it since the recency filter is a hard gate.
 === 2026-08-30T02:08:18-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-08-31T02:00:08-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + the two transient stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Published (pending batch TTS):** `2026-08-31-agents-for-everyone-biocurator-workshop`
+- Script: `podcasts/biomedical-agentic-ai/scripts/2026-08-31-agents-for-everyone-biocurator-workshop.md` — 921 spoken words (cap 1150)
+- Stubs: `.rss-item.xml` (validated as XML, `__LENGTH__` / `__DURATION__` placeholders) and `.commit-msg`
+- Pick: "Agents for Everyone: A Workshop Framework for Building Agentic AI Capabilities in a Distributed Curation Community" — arXiv 2608.27675, posted 2026-08-27, Mungall/Berkeley Lab + Caltech + SIB, for the Gene Ontology Consortium. Full text read in full (PDF via `mutool`, incl. appendices C/D).
+
+**Candidate funnel**
+
+- **bioRxiv** (details API, 08-28→08-31, day-by-day, cursor advanced by returned count): 402 records scanned, 23 keyword hits, 3 substantive after discarding spurious matches ("llm" inside words, agent-based models, "autonomous" in cell biology):
+  - Visual LLM-guided consensus spatial domain detection with L-STAR — `10.64898/2026.08.25.747158`
+  - OmicsFM brings proteomics into the foundation model era — `10.64898/2026.08.25.747021`
+  - CIViC-Fact v3 — `10.1101/2025.09.10.675443` — **excluded, shipped 2026-08-30**
+- **arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, dates 08-26→08-28 — cache cap, and 08-28 Fri is genuinely the newest submission date so no live call needed): ~200 in-window entries, 6 substantive:
+  - **Agents for Everyone (GO Consortium) — 2608.27675 — CHOSEN**
+  - Accelerating Scientific Research with Gemini in the Real-World — 2608.26701 — **excluded, shipped 2026-08-28**
+  - Expert Knowledge & Machine Understanding: Bridging Reactome's Ontology with LLM Semantic Embeddings — 2608.28178
+  - AGENT-O: Semantic Agent Card Framework for Interoperable Healthcare AI Agents — 2608.28345
+  - FedEHR-Agents: Federated Agentic Optimization for Automated EHR Modeling — 2608.27856
+  - MAIL: hypothesis generation in chemistry — 2608.28315
+- **PubMed** (E-utilities, `reldate=5`, `history[].pubmed` used for recency): 86 hits, 4 substantive:
+  - Coala: converting CWL-described command-line tools into agentic toolsets (Bioinformatics, PMID 42647176) — strongest runner-up, MCP↔CWL, tool definitions as data
+  - TrialScout: LLM linking publications to trial registrations (J Clin Epidemiol, 42648652)
+  - Knowledge graph-guided MS identification from two health systems (PLOS Dig Health, 42664299)
+  - AI agents in clinical medicine: delegation, supervision, correlated failure (Ir J Med Sci, 42667591) — essay
+- **ChemRxiv** (WebSearch, `site:chemrxiv.org`): 0 in-window (newest hits July 2026 and earlier).
+- **News / product launches** (3-day window): nothing net-new on-target; NIA's agentic-AI-and-robotics workshop was 08-27 but has no primary artifact to read.
+- **Funder pages**: ARPA-H news and NIH press releases checked — newest NIH item 08-24 (personnel), nothing agentic-AI. No source failures this run.
+
+Why it won: Coala was the closest competitor and squarely on-brief (standards, APIs, tool interop), but *Agents for Everyone* is the rarer artifact — instrumented telemetry from a real biocuration consortium actually using agents, with a load-bearing negative result (silent tool-fallback defeating an MCP guardrail) and a deployment lesson that generalizes to any knowledgebase group.
+=== 2026-08-31T02:05:35-07:00 done  biomedical-agentic-ai (exit 0) ===

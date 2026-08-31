@@ -1,0 +1,4 @@
+Script body: 5633 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2940 chars) -> 128.9s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2692 chars) -> 122.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-08-31-agents-for-everyone-biocurator-workshop.mp3 [mistral] 2,199,972 bytes, 275.0s
