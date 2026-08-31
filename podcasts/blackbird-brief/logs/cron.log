@@ -2081,3 +2081,26 @@ Both Sunday episodes are written. `SKIP_TTS=1` was set, so per PIPELINE.md I wro
 
 **Funnel** — bioRxiv 08-23→08-30: 1,445 unique, 18 partner-institution corresponding authors, 5 read in full, 3 selected. medRxiv: 322 unique, 2 partner-institution, both irrelevant. Europe PMC affiliation search returned 0 for the window (index lag — saved as a memory). Source failures: fiercebiotech.com 403s directly and via jina; Endpoints bodies paywalled; BioSpace index doesn't expose article URLs. One dedup catch worth noting: the Lisraya/brepocitinib approval re-entered under a Roivant IR URL — it shipped 08-29 and is referenced only as context, not re-covered.
 === 2026-08-30T02:34:31-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-08-31T02:10:08-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script plus the two stub files — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those).
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-08-31-portfolio-watch.md` (1,887-word spoken body + show notes)
+- `podcasts/blackbird-brief/scripts/2026-08-31-portfolio-watch.rss-item.xml` (validated XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/blackbird-brief/scripts/2026-08-31-portfolio-watch.commit-msg`
+- `podcasts/blackbird-brief/state/shipped.jsonl` — 8 keys appended (ledger now 50 episodes / 222 unique keys)
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` — edited in place: Neuropsych NewCo (BMS bidder-set demotion + stated buying criteria), NuGate (route-of-administration comparator drift), Artemyx (p-tau217 clearance/channel/moat), cardiac-fibrosis theme (GenePHIT), §1 (the $45M BD comparator), Clasp (financing-sequence template), Adventris (trans-amplifying RNA vector), plus 4 new open items
+
+**Episode — Portfolio Watch, Monday 2026-08-31**
+1. **LEAD (GPR52 NewCo):** BMS's 08-31 neuroscience interview — organic label expansion around Cobenfy, not acquisition; Truist says BD isn't a priority ⇒ move BMS **down** the NXE'149 bidder set. More valuable: Rhodes stated the buying criteria out loud (genetics picks the target, biomarkers pick and monitor the patient), which makes the biomarker package a bidder-stated requirement before DC declaration. Third read for NuGate on BBB shuttles for ASOs.
+2. **Artemyx:** FDA clearance of Roche/Lilly Elecsys p-tau217 (08-24) — the non-oncology clearance precedent, the reference-lab channel, and Quest shipping a rival three-marker panel the same day it agreed to distribute.
+3. **Aletira + cardiac fibrosis:** AskBio GenePHIT baseline at ESC — 170+ patients, 64 sites, 12 countries, intracoronary AAV without immunosuppression; raises the execution ceiling, and still measures function rather than scar.
+4. **Sourcing economics (Eddie/Matt):** NSCEB report set against Genentech's two Asia deals in a week — $45M upfront to DualityBio is the number our academic assets are priced against.
+5. **Clasp:** Moderna's $2.6B convertible raise nine days after the melanoma readout, as the sequencing template for GUARDIAN-101.
+
+**Candidate funnel**
+- BioSpace `/latest-news-press-releases`: ~30 scanned, 10 on-thesis, 4 picked. BioPharma Dive homepage: 30 scanned, 5 on-thesis, 2 picked. BioBuzz: 21 scanned, 0 net-new (index stalled at 08-26). JHTV `/news/`: 12 scanned, 0 new since the two already shipped. Targeted searches (GPR52/Nxera, hearing-loss gene therapy, ALS/TDP-43 ASO, autoimmune T-cell engagers, Baltimore/JHU, Clasp/Adventris/Blackbird): all null in-window.
+- Dedup filter: 12 candidates → 11 fresh; **Spyre SPY072 TL1A RA miss dropped — already shipped 2026-08-27**.
+- Source failures: `fiercebiotech.com` 403 on both WebFetch and `r.jina.ai`; `endpoints.news/news/` index rendered via jina with **all headlines and article URLs stripped** (new failure mode, logged to memory) and 403s on WebFetch; `globenewswire.com` timed out on WebFetch — the AskBio release was read in full via the BioSpace mirror through jina.
+- One item deliberately kept off-air: PitchBook lists a **2026-07-09 Blackbird Laboratories investment in "Alchemity"** that isn't in the reference file and isn't findable in any press source. It's in the show notes and the open-items list as an internal records question rather than an assertion.
+=== 2026-08-31T02:27:42-07:00 done  blackbird-brief (exit 0) ===

@@ -36,6 +36,23 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
   Maryland "Build Our Future" grant. Home base for incubated spinouts and
   others in the region.
 
+- **THE BD COMPARATOR OUR ACADEMIC ASSETS ARE PRICED AGAINST (added 2026-08-31 Portfolio Watch item 4; events 2026-08-25 to
+  2026-08-28).** Two stories that only mean something together. **(a)** The **National Security Commission on Emerging Biotechnology
+  (NSCEB)** — congressionally created 2022, findings April 2025, **sunsets end of 2026** — reports that China passed the US on
+  **clinical trials** six years ago, then on **natural-science publications**, and now runs **3x as many Phase 1 trials**; **72%** of
+  surveyed senior US industry/academic leaders think China's biomedical sector improves faster and **85%** expect the US to lose its
+  lead within ten years. 36 recommendations drew bipartisan action, 9 landed in executive orders; policy response so far is the
+  **BIOSECURE Act (signed Dec 2025)** and **Operation TrialBlazer (summer 2026)**. **(b)** **Genentech's second Asia deal in a week:
+  $45M upfront + up to $1B milestones + tiered royalties to DualityBio (China)** for ADCs on the **DUPAC** short-half-life payload
+  platform, **with DualityBio running discovery through Phase 1a** before Genentech takes over — days after committing **up to $2.3B
+  to Hanmi (Korea)** for the non-incretin weight-loss peptide **HM17321**. **DURABLE READ (Eddie + Matt): $45M upfront is what buys a
+  large pharma a discovery-through-early-clinical partnership with an experienced foreign platform company. That is the line item
+  sitting in the comparison column when a Blackbird program walks into the same corp-dev group. The implication is not defensive —
+  the differentiator has to be a package the buyer CANNOT source abroad: human data, or a genuinely unencumbered
+  composition-of-matter position. A well-run preclinical package is not it.** Sources:
+  https://www.biospace.com/policy/china-poses-increasing-security-risk-as-us-biotech-innovation-edge-erodes ·
+  https://www.biospace.com/deals/genentech-strikes-second-asia-deal-in-a-week-betting-up-to-1b-in-oncology-adc-alliance-with-dualitybio
+
 ### Team
 - **Matt Tremblay, Ph.D.** — CEO, founding board member. Ex-COO of Scripps
   Research and its drug-discovery arm Calibr. (Primary audience.)
@@ -166,7 +183,7 @@ _Last update: 2026-08-28_
 company Blackbird BioVentures invested in, not a Blackbird-incubated project.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-08-30_
+_Last update: 2026-08-31_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases (Blackbird funded the **Intergalactic Center for
@@ -215,6 +232,24 @@ it will be scored as a mechanism failure on a surrogate reporting vascular tone 
 https://endpoints.news/esc26-astrazenecas-relaxin-pill-shows-promise-in-mid-stage-heart-failure-trial/ ·
 https://academic.oup.com/eschf/article/13/3/xvaf007/8415024 ·
 https://www.fiercebiotech.com/biotech/astrazeneca-drops-heart-failure-asset-over-phase-2-efficacy-data
+
+**CARDIAC FIBROSIS theme, second measurement in two days on the WRONG AXIS — and an AAV operational-ceiling datapoint for
+Aletira (added 2026-08-31 Portfolio Watch item 3; presented 2026-08-29, ESC Congress, Munich).** **AskBio (wholly owned Bayer
+subsidiary)** presented **baseline participant characteristics** from **Phase 2 GenePHIT** for **umiposgene parvec (AB-1002)** —
+adaptive, randomised, double-blind, placebo-controlled, multicentre; **>170 participants randomised across 64 sites in 12 countries**
+(US, Canada, UK, AT, DE, NL, ES, BE, HU, PL, BG, RO); **non-ischaemic cardiomyopathy, NYHA III, reduced EF**, all on contemporary GDMT
+(beta-blocker, ARNI, SGLT2i, MRA); **one-time antegrade INTRACORONARY infusion via a STANDARD CATHETER with NO IMMUNE SUPPRESSION**;
+endpoints **CV death, change in NYHA class, LVEF, six-minute walk distance**; ~half with prior AF, ~45% with an ICD.
+**NCT05598333 / EUCT 2024-510581-17-00. Initial efficacy + safety H1 2027.** Mechanism: AAV-delivered **constitutively active
+inhibitor-1 (I-1c)** blocking **protein phosphatase 1**, to restore intracellular calcium handling and contractility. PI **Timothy D.
+Henry**; CDO/CMO **Canwen Jiang**. **TWO READS, NEITHER A RESULT. (a) ALETIRA / Series A framing (Geoff Lynn): a randomised,
+double-blind, placebo-controlled, 64-site, 12-country AAV trial run WITHOUT immunosuppression through a standard interventional
+catheter is now DEMONSTRATED** — that raises what an investor assumes a gene-therapy company should be able to execute, and is a
+useful counterweight to the month-long run of AAV clinical holds (REGENXBIO 08-24, Elevidys). **(b) CARDIAC FIBROSIS (Anthony + Jon):
+the endpoints are EF, NYHA, 6MWD and CV death — contractility and function again.** Set beside the LUMINARA/RXFP1 entry below:
+**measuring function instead of fibrosis is the FIELD'S DEFAULT, not one sponsor's blind spot, which makes a trial designed to
+register scar available to us as differentiation.** Source:
+https://www.biospace.com/press-releases/askbio-presents-baseline-characteristics-from-phase-2-heart-failure-gene-therapy-trial-of-umiposgene-parvec-ab-1002-at-european-society-of-cardiology-congress
 
 ### Terminated programs — do not cover ❌
 _Last update: 2026-08-28_
@@ -764,6 +799,32 @@ _Last update: 2026-08-28_
   three-symptom-domain efficacy story, not behind it.** Source:
   https://www.biospace.com/business/bioxcel-files-for-bankruptcy-will-sell-assets-to-teva-for-up-to-125m
 
+
+- **A NAMED BIDDER DESCRIBED ITS BUYING CRITERIA IN PUBLIC, AND MOVED ITSELF DOWN THE LIST (2026-08-31 Portfolio Watch LEAD;
+  published 2026-08-31).** BioSpace long-form interview with **Ken Rhodes (VP, neuroscience)** and **Laura Gault (SVP, head of
+  neuroscience development)** at **Bristol Myers Squibb**. BMS exited neuro in 2013; the re-entry was built on the **$74B Celgene
+  merger (2019)** — **ozanimod / Zeposia**, approved in MS March 2020, and the neuroimmunology organisation around it — **not** on
+  the **$14B Karuna** purchase that brought **Cobenfy**. Pipeline as described: **irafamdastat** (dual FAAH/MAGL inhibitor) Ph2 in
+  MS spasticity *and* AD agitation; **moponetug** (anti-MTBR-tau, Prothena) Ph2 disease-modifying AD; **BAN2803** (BioArctic
+  BrainTransporter transferrin-receptor BBB shuttle, pyroglutamate-Aβ; Dec-2024 licence, $100M upfront / $1.25B milestones);
+  **evifacotrep** (TRPC4/5) Ph1 mood/anxiety; **Cobenfy label expansion into bipolar-1 mania, AD agitation, AD cognition, paediatric
+  autism irritability**. **ADEPT / AD-psychosis readouts delayed again to 2027** (possible interim later in 2026). **Truist: BMS deals
+  "may be done to expand core TAs (e.g., neuroscience) but doesn't appear to be [a] primary focus"; "Cobenfy is viewed as an anchor
+  asset in a broader neuroscience portfolio."**
+  **(1) BIDDER-SET UPDATE (Hemaka): MOVE BMS DOWN the NXE'149 bidder list — do NOT strike it off.** BMS is filling its
+  schizophrenia-adjacent white space by expanding the label of an asset it already owns, and its own analysts read BD as
+  not-a-priority. Against Nxera's stated intent to execute **at least one major out-license in H2 2026**, the likelier buyer is
+  Otsuka, Neurocrine, AbbVie/Cerevel, Novartis or SK Biopharmaceuticals.
+  **(2) THE MORE VALUABLE HALF — the buyer stated his purchase criteria.** Rhodes: *"The genetics have taught us what the most
+  valuable targets are likely to be. The biomarkers have taught us how to make sure that we have the right patients in our clinical
+  trials and how to monitor the response to therapy."* And candidly: *"In psychiatric disease, our understanding of the causal
+  biology is not quite as mature."* **GPR52 IS the genetics-first target he describes — but a DC declared with no biomarker and no
+  patient-selection story satisfies only HALF of a named buyer's own stated recipe.** This converges with the **2026-08-27** deal-
+  comparable read (**first-in-human receptor occupancy, not the DC, is the value inflection**) and with **Martinowich's** warning
+  that a purely neuronal readout may not capture a multicellular disease state. **ACTION (Hemaka + Third Rock): the biomarker/PD
+  package is now a BIDDER-STATED REQUIREMENT, not a nice-to-have. Surface before DC declaration.**
+  Source: https://www.biospace.com/drug-development/bms-neuro-renaissance-was-built-on-back-of-celgene-mega-merger
+
 ### Gut-targeted bimodal therapeutic — Crohn's & ulcerative colitis (JHU) ❌ TERMINATED
 _Last update: 2026-08-28_
 - **Status: TERMINATED — do not cover.** Oral, gut-restricted GCPII inhibitor
@@ -867,7 +928,7 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-08-29_
+_Last update: 2026-08-31_
 - **What:** Oligonucleotide-based medicine (**ASO**) against a highly
   sought-after target profile that could treat **all forms of ALS and FTD**.
 - **Science:** leverages biology pioneered at JHU across decades and multiple
@@ -895,6 +956,15 @@ _Last update: 2026-08-29_
   today's.** Applies verbatim to Aletira and the GPR52 NewCo. Sources:
   https://www.biopharmadive.com/news/astrazeneca-ionis-eplontersen-nejm-cardio-ttransform-results/829057/ ·
   https://www.biospace.com/drug-development/worse-than-expected-wainua-data-muddies-water-for-ttr-silencers
+
+- **THE COMPARATOR-DRIFT RULE ALSO APPLIES TO ROUTE, NOT JUST EFFICACY (added 2026-08-31 Portfolio Watch item 1;
+  same BMS interview).** BMS's **Ken Rhodes** on brain-shuttle technology: there is now *"good clinical support ... suggesting that
+  shuttle technology can deliver those types of medicines [ASOs, siRNA] into muscle, into heart, into other tissues, including the
+  nervous system,"* and BMS has undisclosed earlier-stage programs incorporating various shuttle technologies (cf. Roche's
+  **trontinemab** Brainshuttle and its **$2B+ Manifold Bio** BBB deal). **If systemically dosed CNS oligonucleotides arrive inside
+  NuGate's development window, the comparator for an INTRATHECAL ASO stops being "no treatment" and becomes "a subcutaneous
+  injection."** Same discipline as the eplontersen entry above, applied to **route of administration**. **ACTION (Jon Robbins):
+  stand up a watch on transferrin-receptor / BBB-shuttle-conjugated oligonucleotide programs entering the clinic.**
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
 _Last update: 2026-08-30_
@@ -942,7 +1012,7 @@ _Last update: 2026-08-30_
   Source: https://www.jnj.com/media-center/press-releases/fda-approves-imaavy-nipocalimab-aahu-as-first-ever-treatment-for-warm-autoimmune-hemolytic-anemia-waiha-representing-a-landmark-advancement-for-patients
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
-_Last update: 2026-08-28_
+_Last update: 2026-08-31_
 - **What:** non-invasive **blood tests** for diagnosis and monitoring of chronic
   disease — AI-powered analysis of **cell-free DNA** to predict liver fibrosis,
   systemic lupus erythematosus, rheumatoid arthritis, inflammatory bowel
@@ -950,6 +1020,25 @@ _Last update: 2026-08-28_
 - **Science:** originated in **Victor Velculescu's** lab (JHU).
 - **Watch:** liquid-biopsy and cfDNA-fragmentomics companies outside oncology;
   reimbursement precedent for chronic-disease monitoring assays.
+- **THE CLEARANCE PRECEDENT, THE COMMERCIAL CHANNEL AND THE MOAT THREAT, ALL IN ONE EVENT (added 2026-08-31 Portfolio Watch item 2;
+  FDA clearance 2026-08-24).** **FDA cleared Roche + Eli Lilly's Elecsys Phospho-Tau (217P) Plasma test** — first and only
+  FDA-cleared **single-biomarker** blood test that can both **rule in and rule out** amyloid pathology using validated cutoffs
+  **across primary AND specialty care**; validated in people **55+** with cognitive symptoms; Labcorp describes performance as
+  **comparable to CSF and PET**; CE mark May 2026. **Third FDA-cleared AD blood test in ~15 months** (Fujirebio Lumipulse May 2025;
+  C2N PrecivityAD2 the week before). **Labcorp: nationwide within months. Quest (same day): AD-Detect-branded service in Q4 2026,
+  folded into AD-Detect panels 2027 — AND Quest simultaneously launched its OWN LDT**, *AD-Detect ABeta 42/40, p-tau217, and ApoE
+  Evaluation*, a **three-marker panel** claiming a **10% indeterminate rate vs the 15–20% CEOi benchmark**, attributed explicitly by
+  Quest to combining markers.
+  **THREE DURABLE READS FOR ARTEMYX. (1) PRECEDENT:** the agency is clearing blood tests for a **chronic, NON-ONCOLOGY** disease on
+  comparability to imaging and CSF — the precedent this entry's reimbursement question was waiting for, and it sits outside oncology
+  where every liquid-biopsy precedent used to live. **(2) CHANNEL, not sales force:** the route to market is **Quest and Labcorp**,
+  and both committed within **24 hours** of clearance ⇒ **build reference-lab relationships DURING validation, not after.**
+  **(3) THE THREAT:** Quest did not merely distribute — it shipped a **rival multi-analyte panel the same day** and claimed a better
+  indeterminate rate. **The distributor is also the competitor, and its counter-move to a single-analyte test is to add analytes.**
+  An analytics-first cfDNA diagnostic must assume the reference lab will try to rebuild the moat; **Artemyx's defensibility argument
+  has to survive a Quest scientist reading the paper.** Sources:
+  https://newsroom.questdiagnostics.com/2026-08-24-Quest-Diagnostics-to-Offer-FDA-Cleared-Roche-pTau217-Blood-Test-to-Assess-Alzheimers-Disease-Pathology ·
+  https://www.biopharmadive.com/news/roche-eli-lilly-get-fda-nod-for-new-alzheimers-blood-test/828720/
 
 ### Biolinco — barcoded antibody production ✅
 _Last update: 2026-08-28_
@@ -993,6 +1082,13 @@ _Last update: 2026-08-28_
   read-through on the Clasp Phase 1 and Third Rock's KRAS-immunotherapy thinking. **Actions:**
   (a) Eddie + Emily pull actual Clasp + Adventris positions; (b) add a **T-cell-engager column
   (Clasp)** to the aSKY competitive map alongside the vaccine/interception column (08-14).
+- **THE FINANCING IS THE DELIVERABLE, NOT THE DATA — sequencing template for GUARDIAN-101 (added 2026-08-31 Portfolio Watch item 5;
+  event 2026-08-28).** **Moderna raised $2.6B in upsized convertible notes due 2032** for its cancer portfolio and debt repayment,
+  **nine days after** the Phase 3 melanoma result with Merck added roughly **$45B** of market value; shares gave back ~**10%** on the
+  offering. **READ (Hemaka + Eddie): with the CLSP-1025 p53 R175H monotherapy readout as Clasp's near-term catalyst, this is the
+  executable sequence — the data event is not the deliverable, the financing executed within DAYS of it is, and the ~10% discount is
+  the price of speed. Form the view on what Clasp does in the two weeks AFTER the readout BEFORE the readout.** Source:
+  https://www.biopharmadive.com/news/fda-covid-vaccines-moderna-generate-profound-bixlenvo/828929/
 - **Watch:** GUARDIAN-101 (p53 R175H) Phase 1 monotherapy readout (2026); SENTINEL-101 (KRAS
   G12V) progression; competing neoantigen/pHLA-directed TCEs; Third Rock signaling.
 - **MARKET-CONDITION READ, NOT A CATALYST (2026-08-22 Portfolio Watch, third read on the lead item):**
@@ -1097,7 +1193,13 @@ raises, exits, or crosses a scientific milestone.
 - **Asset — mKRAS-VAX:** off-the-shelf pooled synthetic long-peptide vaccine
   targeting the six common KRAS mutations (G12V/G12A/G12R/G12C/G12D, G13D) — trains
   T cells against the mutation itself (modality = vaccine, distinct from small
-  molecule / antibody / degrader).
+  molecule / antibody / degrader). **Vector detail (added 2026-08-31, from the company's
+  own public descriptor): the platform pairs "engineered, cross-reactive antigens" with a
+  "next-generation TRANS-AMPLIFYING RNA vector" — i.e. the delivery arm is self-amplifying
+  RNA, not only synthetic long peptide. Relevant to the 08-29 BNT122-01 read: the failure
+  there was PRIMING, and a trans-amplifying vector is precisely an attempt to buy more
+  priming from the same antigen set. ⚠ Confirm which construct is in each of the three
+  Phase 1 readouts before using this in a comparison.**
 - **Three phase 1 readouts (per PubMed), staking three points on the disease
   timeline:** (1) **resected PDAC** + ipilimumab/nivolumab — 11/12 significant
   mKRAS T-cell response, grade 1-2 AEs (Nat Commun, pub 2026-02-10, DOI
@@ -1972,6 +2074,10 @@ _Last update: 2026-08-30_
   and call the implication (tailwind / threat / validation / watch-item).
 
 ## 4. Open items to fill in (next research passes)
+- **"Alchemity" — reference-file gap or bad data (added 2026-08-31):** PitchBook's public investor profile lists **Blackbird Laboratories' most recent investment as 2026-07-09 in a company called "Alchemity."** No such entry exists in this file, and the company is not findable in press coverage, BioBuzz or JHTV materials. **Emily + Eddie: confirm internally whether this is a real position.** (Same sweep surfaced a durable descriptor for the §2b Adventris entry: its KRAS vaccine pairs **engineered cross-reactive antigens with a next-generation trans-amplifying RNA vector** — folded in there.)
+- **NXE'149 bidder set (updated 2026-08-31):** BMS moved DOWN after the 08-31 BioSpace interview (organic label expansion, Truist says BD not a primary focus). Re-rank and re-work **Otsuka, Neurocrine, AbbVie/Cerevel, Novartis, SK Biopharmaceuticals** — which of them has a stated appetite for a Phase-2-ready novel-mechanism CNS asset, and who has cash allocated this half?
+- **GPR52 biomarker package (added 2026-08-31):** the buyer's stated recipe is genetics + biomarkers. What is the actual PD/receptor-occupancy plan, is there a PET tracer path for GPR52, and what patient-selection hypothesis would a Phase 2 carry? This is now the gating item for the DC narrative, not a downstream question.
+- **AAV trial-execution benchmark (added 2026-08-31):** GenePHIT ran 64 sites in 12 countries without immunosuppression. Pull the AskBio operational model (site activation, capsid, dose, immunogenicity monitoring) as the reference point for what Aletira's Series A should claim it can execute.
 - **Lilly inner-ear surveillance (added 2026-08-28):** stand up a scheduled ClinicalTrials.gov sponsor query (Lilly/Akouos + inner ear / hearing) and a watch on patent application publications from the Lilly–Seamless Therapeutics recombinase collaboration; the pipeline page will no longer show a GJB2 program before Phase 2.
 - **JHU as a Qualified Research Institution (added 2026-08-28):** is JHTV or the Hopkins clinical research office preparing an Expedited IND Pilot QRI application (window opens September 2026, launch Q4 2026)? If not, does Blackbird raise it — and what is our written answer on the conflict-of-interest question when the university advises a sponsor it holds equity in?
 - **Curium–Lantheus and the Pylarify royalty (added 2026-08-28):** what happens to JHU's Pylarify royalty stream when Lantheus goes private under Curium (agreement 2026-08-03, close guided H1 2027)? Confirm whether the JHU licence sits with Lantheus or a subsidiary, and whether the CVR milestones touch Pylarify volumes.
