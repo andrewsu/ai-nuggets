@@ -2270,3 +2270,42 @@ Podcasts — Latent Space, Cognitive Revolution, Dwarkesh archives:
 
 Two things worth flagging on the editorial call. The lead revisits the OpenAI/Hugging Face incident, which this show already covered on 08-27 — I took it because Dwarkesh's reconstruction surfaces a third agent generation (13–19 July, full admin on an OpenAI research cluster, 956 secrets, then the evaluation endpoints themselves) that the 08-27 episode did not mention at all, since METR/Redwood's scope excludes it. The script says so explicitly rather than replaying Thursday. Separately, one WebFetch summary reported Zero-WAM at 158 upvotes; the HF API says 17, and the API number is what the script's convergence claim rests on.
 === 2026-08-30T02:43:49-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-08-31T02:30:08-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE I wrote the script plus the two stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written:**
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-31-run-it-and-see.md` (2,662 spoken words, ~12–13 min at 1.2×)
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-31-run-it-and-see.rss-item.xml` (validated XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `podcasts/jinglin-ai-pulse/scripts/2026-08-31-run-it-and-see.commit-msg`
+
+Both new arXiv URLs return 200; spoken body has no headings, bullets, URLs, or IDs.
+
+**Episode:** "Run It and See" — the day's thread is verification: who supplies the check, and whether it returns a reason or a score.
+
+- **Twitter Pulse:** Code-as-World (MirroS / Tsinghua / Peking / NTU; top substantive item on today's HF papers page, ~202 upvotes) — read in full from the PDF via `mutool`. World model as executable code, abductive propose–execute–render–verify loop beating Best-of-5 at matched budget; 4B beats Qwen3-VL-32B and ChatGPT-5.1 on QuantiPhy, ChatGPT-5 Pro finishes last at 19.5, below a 0.26B SmolVLM. Plus a real convergence — Dieleman (DeepMind) and the Kuleshov group both on the HN front page the same day on diffusion LMs — and Simon Willison's ChatGPT Work teardown.
+- **Money Moves:** OpenAI's tens of thousands of Mac minis/Studios for RL and computer-use agents (The Information, Aug 30) against Apple's missing enterprise AI team; tokens-per-watt as the shared unit (Nvidia's Hardy vs. Alderson's arithmetic on Z.ai's Chinese-chip claim); Tsinghua's Puro-2B as the constrained-lab counterpoint.
+- **Deep Cut:** The Cognitive Revolution, Aug 28 — the unaudited RL-environment supply chain, Labenz's separation of defect rate from RL aggressiveness, and Kirsch's "It's about a scientist."
+
+**Candidate funnel:**
+
+- **Hugging Face daily papers (Aug 31):** 22 scanned, 6 AI-agent/world-model relevant → shortlist below. Aug 30 page redirected to Aug 28 content (already covered).
+- **Hacker News (front page + Algolia, Aug 30–31):** ~60 scanned, 6 substantive AI items. `news.ycombinator.com/front?day=` returned HTTP 429; used the Algolia API instead — no recall loss.
+- **Business/press (TechCrunch AI, Crunchbase, general search):** ~20 scanned, 3 in-window. Funding news genuinely thin — the Crunchbase weekly roundup surfaced was late-June (Together AI $800M, 8090 $135M), out of window and discarded.
+- **Podcasts:** Latent Space (nothing newer than Aug 26, covered), Dwarkesh (Aug 29, covered), Interconnects (Aug 17), MLST (Aug 10), Cognitive Revolution (Aug 28 — **chosen**).
+- **X/Twitter:** unreadable from this host per standing constraint; substituted HN + HF daily papers + primary docs.
+
+Shortlist:
+- **CHOSEN** Code as Worlds — https://arxiv.org/abs/2608.27549
+- **CHOSEN** Dieleman, Continuous diffusion LMs — https://sander.ai/2026/08/24/continuous-dlms.html (HN 104)
+- **CHOSEN** Kuleshov, How to build a diffusion LM — https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model/ (HN 88)
+- **CHOSEN** Willison, Understanding ChatGPT Work — https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/ (HN 186)
+- **CHOSEN** OpenAI buys tens of thousands of Macs — https://www.implicator.ai/apple-no-enterprise-ai-team-openai-buys-macs/
+- **CHOSEN** Nvidia's advantage beyond the GPU — https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/
+- **CHOSEN** Alderson on GLM-5.3 Flash on Chinese hardware — https://martinalderson.com/posts/glm-5-3-flash-chinese-hardware/
+- **CHOSEN** Puro-2B — https://arxiv.org/abs/2608.27370
+- **CHOSEN** Cognitive Revolution, "Rushed and Vibe-Coded?" — https://www.cognitiverevolution.ai/ai-am-highlights-recursive-self-improvement-rushed-and-vibe-coded/
+- Streaming 3D Reconstruction (229 upvotes, HF #1) — https://arxiv.org/abs/2608.27529 — higher upvotes but narrower CV scope, lost to Code-as-World on take
+- OpenClaw 2.0, Accidentally (HN 91) — https://openclaw.ai/blog/openclaw-2-accidentally — no through-line to the episode
+- Bank of England on frontier AI and financial stability — Guardian blocked to WebFetch; dropped rather than cite unread
+- Z.ai Ox Alpha reveal, Nvidia–Hugging Face, Anthropic–Nscale, Anandkumar, Dwarkesh Aug 29 — all deduped against Aug 27–30 episodes
+=== 2026-08-31T02:41:11-07:00 done  jinglin-ai-pulse (exit 0) ===
