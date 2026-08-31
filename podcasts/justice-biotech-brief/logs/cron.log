@@ -2731,3 +2731,36 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md batch mode I stopped af
 
 **Targeted searches** (trispecific TCE, PD-1×VEGF / PD-L1×VEGF weekend announcements): no in-window items.
 === 2026-08-30T02:46:24-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-08-31T02:40:08-07:00 start justice-biotech-brief ===
+Episode published for `justice-biotech-brief` (SKIP_TTS batch mode — script + stubs written; TTS, R2 publish, feed insert and commit are the orchestrator's steps).
+
+**Episode:** `2026-08-31-dupac-dualitybio-genentech-adc-payload-resistance`
+**Title:** DUPAC — Genentech pays $45M up front for a payload platform whose whole reason to exist is that topoisomerase-1 ADCs will stop working
+**Primary source:** DualityBio/Genentech PR Newswire release, 2026-08-28 (read in full)
+**Files:** `.md` (1,202 spoken words), `.rss-item.xml` (validated XML, `__LENGTH__`/`__DURATION__` placeholders), `.commit-msg`
+
+**The take:** the ADC field is a payload monoculture — Enhertu, Dato-DXd, patritumab deruxtecan, Trodelvy, sac-TMT all carry a topoisomerase-1 inhibitor, and five years of differentiation went into the antibody rather than the warhead. Payload resistance is a class property, not a target property. DualityBio, which built the monoculture via its DITAC platform (trastuzumab pamirtecan, plus the TROP2 and B7-H3 conjugates), is now selling Genentech the antidote. Priced skeptically: three AACR-family abstracts are the entire public evidence base, mechanisms of DUP5/9/10 unnamed, no human data, and a ~4% upfront-to-milestone ratio plus a carry-through-Phase-1a structure make it option pricing, not conviction.
+
+## Candidate funnel
+
+**bioRxiv** (details API, day-by-day 08-29/30/31, cursor advanced by returned `count`): 137 unique records (87 / 41 / 9 — weekend collapse). 3 keyword hits, 0 substantive:
+- Tumour-derived glucocorticoids / ROR1 CAR-T — `10.1101/2025.01.28.632923` — **v2 of a January 2025 preprint**, not fresh (the v-repost dedup trap)
+- T-cell density / TIGIT in primary prostate cancer — `10.64898/2026.08.27.747524` — descriptive correlative immunology, off-target
+- Promoter-proximal pausing — `10.64898/2026.06.01.729264` — spurious ("checkpoint"), v2
+
+**Deferred-preprint retest** (direct `r.jina.ai` curl on `.full`, all now readable):
+- Transglutaminase site-selectivity ADC conjugation — `10.64898/2026.08.18.745451` — 98,724 B / 10 headings, full text read. Runner-up. Real result (N- vs C-terminal fusion flips native IgG1 labeling from Lys65 to hinge Lys225, generalizes across IgG1s, MMAE conjugate is antigen-specific) but no in vivo and a single payload demo — lost to a fresh event.
+- Shark VNAR anti-FAP occluded epitope — `10.64898/2026.08.11.744296` — 80,794 B, readable
+- PAI-1→LRP1-JAK1-STAT6 immunosuppressive niches — `10.64898/2026.08.11.744324` — 110,143 B, readable
+- Both 08-11 items **excluded on recency (20 days)**, not merit; deferral list closed.
+
+**News** (Monday weekend-gap pattern — Endpoints, BioSpace, BioPharma Dive all top out Friday 08-28):
+- **Genentech/DualityBio DUPAC ADC payload deal** — 08-28 — **CHOSEN**
+- RevMed daraxonrasib/Rasonque early FDA approval in pancreatic adenocarcinoma — 08-26, out of window, and blackbird-brief's beat
+- HUTCHMED SANOVO savolitinib + osimertinib PFS win — 08-30 — small-molecule TKI, off-target
+- AstraZeneca/Amgen Tezspire eosinophilic esophagitis win — 08-28 — no Phase 3 data disclosed
+- Takeda/Protagonist rusfertide (MIMRYLO) FDA approval — 08-30 — hepcidin mimetic, off-target
+- Aug 30 press-release wire was ~90% ESC 2026 cardiology; nothing on-target
+
+**Source failures:** `fiercebiotech.com` — 403 direct and via `r.jina.ai` (jina returned an explicit domain-level abuse block through 10:36 UTC); skipped, no retry. Endpoints article bodies paywalled after the lede — resolved by reading the linked PR Newswire primary release instead. First bioRxiv sweep crashed on `total` returned as a string; re-run with an int cast succeeded.
+=== 2026-08-31T02:48:33-07:00 done  justice-biotech-brief (exit 0) ===

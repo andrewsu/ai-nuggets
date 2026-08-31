@@ -1,0 +1,5 @@
+Script body: 7703 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2786 chars) -> 135.5s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2834 chars) -> 133.5s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (2081 chars) -> 87.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-08-31-dupac-dualitybio-genentech-adc-payload-resistance.mp3 [mistral] 3,204,746 bytes, 400.6s
