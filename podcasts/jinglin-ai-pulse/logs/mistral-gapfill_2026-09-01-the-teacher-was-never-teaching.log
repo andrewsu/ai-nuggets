@@ -1,0 +1,8 @@
+Script body: 16154 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/6 (2978 chars) -> 122.4s ✓
+  [mistral:en_paul_neutral] chunk 2/6 (2861 chars) -> 133.5s ✓
+  [mistral:en_paul_neutral] chunk 3/6 (2955 chars) -> 141.6s ✓
+  [mistral:en_paul_neutral] chunk 4/6 (2836 chars) -> 129.3s ✓
+  [mistral:en_paul_neutral] chunk 5/6 (2972 chars) -> 152.4s ✓
+  [mistral:en_paul_neutral] chunk 6/6 (1547 chars) -> 77.9s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-09-01-the-teacher-was-never-teaching.mp3 [mistral] 6,570,571 bytes, 821.3s

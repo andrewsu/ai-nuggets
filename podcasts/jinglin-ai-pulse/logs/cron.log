@@ -2309,3 +2309,33 @@ Shortlist:
 - Bank of England on frontier AI and financial stability — Guardian blocked to WebFetch; dropped rather than cite unread
 - Z.ai Ox Alpha reveal, Nvidia–Hugging Face, Anthropic–Nscale, Anandkumar, Dwarkesh Aug 29 — all deduped against Aug 27–30 episodes
 === 2026-08-31T02:41:11-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-01T02:30:09-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does those after batch TTS.
+
+**Episode: `2026-09-01-the-teacher-was-never-teaching`** (2,612 spoken words, ~14 min at 1.2×)
+
+Theme: the signal you're paying for is not the signal doing the work.
+
+**Candidate funnel**
+
+Sources scanned:
+- **Hugging Face daily papers** (2026-09-01 page, 30 items; 08-31 page, 31 items) — 8 survived relevance filter
+- **Hacker News top ~70** (front page + new) — 5 AI-substantive items after discarding non-AI (Playa Phone, RuneScape, OpenShot, etc.)
+- **AI funding/business news** (WebSearch across Crunchbase/TechCrunch/startuphub, Aug 24–31) — 3 survived
+- **Long-form AI podcasts** — RSS pulled for The Cognitive Revolution, Latent Space, Dwarkesh, MLST, TWIML, Interconnects; 6 in-window episodes, 5 rejected as already-shipped by this feed (Anandkumar, Bronson Schoen/Apollo, Balsam/Goodfire, Shumailov/Panfilov, Dwarkesh agent civilizations)
+- **X/Twitter** — not attempted; unreadable from this host (xcancel challenge, x.com needs auth), per standing note
+
+Shortlist:
+- **[CHOSEN — lead]** Ding & Zhang, "Does On-Policy Distillation Really Distill?" (Purdue) — arxiv.org/abs/2608.31046 — full PDF read
+- **[CHOSEN]** PaperGym, rubric criterion leakage (Zhejiang / Apple) — arxiv.org/abs/2608.31119 — full PDF read
+- **[CHOSEN]** Rehberger, "Breaking Claude Code Opus 5 and Auto Mode" (HN 370) — embracethered.com — full read
+- **[CHOSEN — money]** Deep Cogito $43M Series A (Aug 26) — unite.ai
+- **[CHOSEN — money]** Lambda $1B private debt vs Microsoft lease (Aug 28) — techcrunch.com
+- **[CHOSEN — deep cut]** Pete Johnson / MongoDB on The Cognitive Revolution (pub. today) — full show notes read
+- **[CHOSEN — deep cut pair]** Cal Paterson, "Agent memory as a file format" (HN 174) — calpaterson.com
+- Mentioned only: AutoSciRub (2608.31076), "Scaling LRMs beyond Human Supervision" (2608.31075) — supporting convergence
+- Considered, dropped: DreamX-Creator (64 up, video gen, off-audience); Normalized LoRA (33, incremental); Lucida (40, real-to-sim, off-theme); CogEvol (23, product report); LoopArena (94, but 08-28 and the loop-engineering angle overlaps 08-25's harness episode); GPU World (HN 218 — a $100K fiction contest, no technical content); Google Antigravity /boost (product launch, no substance); Alice AI $140M (thinner sourcing than the two chosen rounds)
+- Rejected on dedup: Apple Mac demand (shipped 08-31), Kuleshov diffusion LM (08-31), ChatGPT Work tool reference (08-31)
+
+No source failures this run.
+=== 2026-09-01T02:43:31-07:00 done  jinglin-ai-pulse (exit 0) ===
