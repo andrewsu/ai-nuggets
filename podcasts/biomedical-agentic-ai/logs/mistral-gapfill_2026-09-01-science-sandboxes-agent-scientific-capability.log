@@ -1,0 +1,5 @@
+Script body: 6106 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2980 chars) -> 134.6s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2845 chars) -> 148.9s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (279 chars) -> 12.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-09-01-science-sandboxes-agent-scientific-capability.mp3 [mistral] 2,506,127 bytes, 313.2s

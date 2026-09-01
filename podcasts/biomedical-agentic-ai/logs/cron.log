@@ -3998,3 +3998,44 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 Why it won: Coala was the closest competitor and squarely on-brief (standards, APIs, tool interop), but *Agents for Everyone* is the rarer artifact — instrumented telemetry from a real biocuration consortium actually using agents, with a load-bearing negative result (silent tool-fallback defeating an MCP guardrail) and a deployment lesson that generalizes to any knowledgebase group.
 === 2026-08-31T02:05:35-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-01T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Files written** (`podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-09-01-science-sandboxes-agent-scientific-capability.md` — 992 spoken words (cap 1150)
+- `2026-09-01-science-sandboxes-agent-scientific-capability.rss-item.xml` — validated XML, `__LENGTH__`/`__DURATION__` placeholders
+- `2026-09-01-science-sandboxes-agent-scientific-capability.commit-msg`
+
+**Chosen:** "Science sandboxes measure the scientific capability of AI agents" — arXiv 2608.30165, posted 2026-08-31, Broad Institute / Jackson Lab / Yale (Lander, Sabeti). Full PDF read via `mutool`. Paper URL verified HTTP 200.
+
+## Candidate funnel
+
+**arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries — capped, covers 08-29 through 08-31 only; 08-28 not represented). 213 passed the agentic×biomedical keyword filter; substantive shortlist after discarding spurious matches:
+- **Science sandboxes measure the scientific capability of AI agents** — https://arxiv.org/abs/2608.30165 ← **CHOSEN**
+- An Agentic Retrobiosynthesis Framework with Learned Frontier Selection — https://arxiv.org/abs/2608.30702
+- LLMs Interpret, Embeddings Organize, Graphs Emerge (ASKS) — https://arxiv.org/abs/2608.29612
+- AdaPath: query-adaptive path-finding for multi-hop biomedical KGQA — https://arxiv.org/abs/2608.30556
+- Quantitative Evidence Mining for Plausibility-Aware Biomedical AI — https://arxiv.org/abs/2608.30393
+- MedAgent-R1: faithfulness-gated RL for evidence-grounded medical reasoning — https://arxiv.org/abs/2608.30676
+- Beyond Correctness: validity-oriented evaluation of biomedical LLM judges — https://arxiv.org/abs/2608.29127
+- COGTRL: cognitive traces via RL for discovery assistance — https://arxiv.org/abs/2608.30109
+- GPAgentBench-2K: clinical action-space agent benchmark — https://arxiv.org/abs/2608.30188
+- When Does Bigger Help? LLM scale for ontology learning — https://arxiv.org/abs/2608.31118
+- Ideation Arena: expert pairwise evaluation of LLM research ideas — https://arxiv.org/abs/2608.29696
+
+**bioRxiv** (details API, day-by-day 08-28→09-01, 621 unique records; first sweep attempt crashed on a string/int `total` and was re-run). 43 keyword hits; substantive after dropping "therapeutic/antifungal/imaging agent" noise:
+- Every Cure Knowledge Graph: a unified biomedical KG for drug repurposing — 10.64898/2026.08.26.747253 ← **strongest runner-up, squarely on-brief; revisit tomorrow**
+- Audited vibe coding suggests partial fetal-like convergence of tumor proteomes — 10.64898/2026.08.26.745609
+- Visual LLM-guided consensus spatial domain detection with L-STAR — 10.64898/2026.08.25.747158
+- S2F-Agent: verifiable genome interpretation — 10.64898/2026.05.13.724757 (v2 of a May preprint; out of window as a fresh discovery)
+
+**PubMed** (reldate 5, 4,083 hits, top 300 fetched): 16 title matches, all clinical LLM evaluations or spurious ("hemostatic agent", "multi-agent consensus control"). Nothing clearing the bar.
+
+**ChemRxiv** (`site:chemrxiv.org` web search): all results Feb–Apr 2026. Nothing in the 4-day window.
+
+**News / product launches**: no net-new on-target item in the 3-day window.
+
+**Policy / funders**: ARPA-H announced the RAPID program on 2026-08-31 — up to $98.5M/4.5yr to UNC, Sage Bionetworks, FDNA and Probably Genetic for rare-disease AI diagnostics, with in-kind support from OpenAI, Anthropic, AWS and Google. In-window and a genuine candidate; passed over because it is dataset/infrastructure funding with no agentic-AI content and no technical companion to read. NIH/NSF/HHS: nothing on-target.
+
+No source failures. No deferrals for unreadable full text — the chosen item's PDF extracted cleanly.
+=== 2026-09-01T02:09:26-07:00 done  biomedical-agentic-ai (exit 0) ===
