@@ -3987,3 +3987,42 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote the script plus the tw
 
 One methodological finding worth flagging: four preprints came back abstract-only on the `.full` page but returned complete bodies (53–92 KB) from `r.jina.ai` on the **`.full.pdf`** URL. bioRxiv render lag is no longer a reason to defer an item — I saved that as a memory and closed out the whole rolling deferral list.
 === 2026-08-31T03:10:46-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-01T02:50:09-07:00 start receptor-and-reason ===
+Episode published (script + stubs; `SKIP_TTS=1`, so audio, R2 upload, feed edit and commit are the orchestrator's job).
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-09-01-receptor-and-reason.md` — 3,213 spoken words (≈19.5 min at this show's measured rate), 11 items
+- `…/2026-09-01-receptor-and-reason.rss-item.xml` — with `__LENGTH__` / `__DURATION__` placeholders
+- `…/2026-09-01-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, now 102 episodes / 1,042 items
+
+All 11 paper URLs verified live (bioRxiv/medRxiv details API for preprints, HTTP 200 for the rest). Simulated feed insertion parses as valid XML.
+
+**Candidate funnel**
+
+bioRxiv + medRxiv details API, 2026-08-25 → 09-01, day-by-day, full collections with cursor paging: 1,837 records scanned (biorxiv 1,215 / medrxiv 349 + 09-01 partial) → 307 keyword-relevant → 83 narrowed on title-level pharmacology in CNS/pharm/biophys/chem categories + 41 Tier-2 computational → 38 dedup-checked → 33 fresh (5 already shipped: 5-HT/tau modifier, 6-methylnicotine, psilocybin change-detection, CRHR1/early-life stress, A2A-A2B selectivity).
+
+arXiv shared cache (`/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, covers 08-29→08-31 only — the 500 cap again bites): 169 bio×agentic hits, 3 neuro/pharma hits. Two selected.
+
+Journals: Nature-family RSS (npp, mp, tp, nbt, npjdigitalmed) + PubMed EDAT window for 14 journals → 26 candidates → 20 fresh (6 shipped, incl. the D2-occupancy CPT paper).
+
+**Source failures logged**
+- ScienceDirect RSS (`rss.sciencedirect.com/publication/science/<ISSN>`) now 404s for all six journals — replaced with PubMed EDAT queries, which worked.
+- Wiley `onlinelibrary.wiley.com` is behind a CAPTCHA via `r.jina.ai` (regression from prior runs) — killed the CPT:PSP ternary-binding-model and BJP bupropion/K-ATP items.
+- Oxford Academic RSS path for IJNP 404s; covered via PubMed instead (0 hits in window).
+- bioRxiv Varnish threw intermittent HTTP 500s on `.full.pdf` and `.full` for much of the run; the `.full` route recovered partway and rescued 5 items. Three good candidates never rendered a body and are **deferred, not rejected**: `2026.08.24.746800` (connectomic dopamine-neuron disinhibition accelerates extinction — high value, overturns the dopamine-dip account), `2026.08.25.746975` (fluoxetine × macrophage lipid landscape in treatment-resistant depression), `2026.08.24.746712` (complementary learning system for continual episodic memory in LLMs). Also unfetched: `2026.08.26.745682` (SYNGAP1 splice-switching therapeutic window — strong), `2026.08.26.747285` (gabapentinoid PK/PD in *C. elegans*), `2026.08.30.747968` (CYP2C9 cryo-EM dimer-of-trimers), `2026.08.21.746268` (K2P presynaptic organisation).
+- Nature-family bodies: only `s41380-026-03852-5` was readable. `s41380-026-03846-3` (closed-loop tACS in methamphetamine use disorder) and `s41380-026-03812-z` (UCB-J PET in autism) both returned references-only; `s41386-026-02540-w` (D1 agonists review) is access-walled; Translational Psychiatry `s41398-026-04371-1` and `-04368-w` came back abstract-only. All discovery-only, so none were used.
+
+**Selected (all read in full)**
+1. LEAD — LC-restricted P364S tau, Braak stage 0 as hyperactivity not degeneration — Mol Psychiatry `10.1038/s41380-026-03852-5`
+2. Nav subtype knockdown × neuroinflammation — `10.64898/2026.08.24.746613`
+3. Cortical TRPV1 → TRPA1 gain control — `10.64898/2026.08.24.746688`
+4. Nav1.5 semi-synthesis + voltage-clamp fluorometry, lidocaine — `10.64898/2026.08.24.746605`
+5. Fluorogenic rolipram, subcellular PDE4 engagement — `10.64898/2026.08.22.746441`
+6. CysLENS cysteine ligandability — `10.64898/2026.08.26.747357`
+7. Oxytocin × human social salience network in autism — `10.64898/2026.08.24.26361211`
+8. PS128 + escitalopram RCT in MDD — `10.64898/2026.08.25.26361081`
+9. One Policy Is Enough (chemistry tool learning) — `arxiv:2608.30952`
+10. Agentic retrobiosynthesis, learned frontier selection — `arxiv:2608.30702`
+11. Unsupervised nuisance-perturbation evaluation of scFMs — `10.64898/2026.08.22.746357`
+=== 2026-09-01T03:14:00-07:00 done  receptor-and-reason (exit 0) ===
