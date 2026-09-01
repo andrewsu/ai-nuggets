@@ -53,6 +53,22 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
   https://www.biospace.com/policy/china-poses-increasing-security-risk-as-us-biotech-innovation-edge-erodes ·
   https://www.biospace.com/deals/genentech-strikes-second-asia-deal-in-a-week-betting-up-to-1b-in-oncology-adc-alliance-with-dualitybio
 
+- **THE BUYER'S PRICE IS ALREADY CAPPED — MOST-FAVORED-NATION AGREEMENTS NOW COVER ~89% OF THE BRANDED MARKET (added 2026-09-01
+  Portfolio Watch item 5; announced 2026-08-31).** The administration announced MFN pricing agreements with **nine additional
+  manufacturers — Alcon, Astellas, BeOne Medicines, BridgeBio, CSL, Kyowa Kirin, Sun Pharma, Teva and UCB** — on top of earlier deals
+  with **17 large manufacturers**, bringing the roster to **26 companies covering ~89% of the branded drug market** (administration's
+  figure). Terms as reported: **Medicaid price concessions** plus **commitments to launch FUTURE drugs in the US at prices pegged to
+  what other developed countries pay**; the group committed **≥$19.6B in near-term US manufacturing** (some donating API to a
+  government stockpile); signatories **expect to avoid tariffs and new Medicare drug-pricing models**. **Counterweight to state out
+  loud:** Public Citizen (Peter Maybarduk) — **no evidence any signatory has actually cut a US launch price**; analysts attribute the
+  current decline mostly to **Medicare negotiation and market forces**. **DURABLE READ (Matt + Eddie): the load-bearing clause is the
+  FUTURE-LAUNCH-PRICE commitment — the acquirer of a Blackbird asset has pre-committed the US launch price of a drug that does not
+  exist yet, and knows it before we walk in.** Set beside **Cobenfy at $155M in 2025 vs >$310M forecast** and **BioXcel's Chapter 11
+  with an approved neuropsychiatric drug and a ≤$125M stalking-horse bid**: three signals that **mechanism was never the constraint and
+  the REVENUE LINE is the part being repriced. ACTION: revisit the US price assumption in every program value case.** Sources:
+  https://www.axios.com/2026/08/31/trump-new-drug-price-deals ·
+  https://www.whitehouse.gov/fact-sheets/2026/08/fact-sheet-president-donald-j-trump-announces-deal-with-nine-additional-pharmaceutical-manufacturers-to-lower-drug-prices-for-americans/
+
 ### Team
 - **Matt Tremblay, Ph.D.** — CEO, founding board member. Ex-COO of Scripps
   Research and its drug-discovery arm Calibr. (Primary audience.)
@@ -183,7 +199,7 @@ _Last update: 2026-08-28_
 company Blackbird BioVentures invested in, not a Blackbird-incubated project.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-08-31_
+_Last update: 2026-09-01_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases (Blackbird funded the **Intergalactic Center for
@@ -192,6 +208,21 @@ Autoimmunity and Immuno-Oncology**).
 These are program themes, not named companies. Treat them as standing sourcing
 and landscape interests: a paper or deal that lands on one of these is
 portfolio-relevant even though there is no company to name yet.
+
+**CHRONIC INFECTIONS theme — the INSTRUMENT half is being built four miles away (added 2026-09-01 Portfolio Watch item 6; TEDCO
+investment 2026-08-25, BioBuzz coverage 08-27).** **TEDCO invested $750,000 in Astek Diagnostics (Baltimore)** from its Seed Funds and
+Life Science Investment Fund. The **Jiddu Platform** returns **antibiotic susceptibility results in under an hour** vs the **48–72
+hours** of culture, targeting **UTI, sepsis and wound infections**; a **MedStar Health Research Institute-sponsored pilot (concluded
+Nov 2023)** reported **~96.97% accuracy** identifying UTI infections and susceptibilities in ~1 h against ~50% for dipstick
+urinalysis. Founder/CEO **Mustafa Al-Adhami** (mechanical engineering PhD, **UMBC**; company founded 2020): **first clinical placement
+guided for fall 2026**. **Non-dilutive ladder: $250K (Apr 2024) → $500K (Jun 2025) → $750K (Aug 2026).** **SO-WHAT (Yixuan + Eddie):
+our live lead on this theme is the Chatterjee lab *gdpP* / cyclic-di-AMP β-lactam-tolerance work at UMB (see §2b), whose entire
+clinical proposition depends on reading a tolerance phenotype fast enough to change therapy. A rapid phenotypic susceptibility
+platform in the same city is either a COLLABORATOR or a competitor's differentiator — have the conversation before it is the second
+one.** Secondary: the 250/500/750 escalation is the same milestone-based non-dilutive structure Blackbird Laboratories runs, executed
+three times on one company in Baltimore — worth learning how TEDCO set those milestones. Sources:
+https://biobuzz.io/news/tedco-puts-750000-behind-astek-diagnostics-as-its-rapid-infection-test-nears-the-clinic/ ·
+https://www.tedcomd.com/news-events/press-releases/2026/tedco-invests-750000-astek-diagnostics
 
 **COPD theme — TSLP has consolidated, and the differentiator is a PROPERTY not a target
 (added 2026-08-29 Portfolio Watch item 4).** Two independent wins for the epithelial alarmin
@@ -625,6 +656,24 @@ the individual entries below, each marked ❌ TERMINATED.
   late. Frame it as a Series A diligence ASSET: after eight months of AAV holds, investors are pricing long-tail safety, and a programme that has
   already costed a multi-decade monitoring obligation reads differently from one that has not.**
   Source: https://regenxbio.gcs-web.com/news-releases/news-release-details/regenxbio-announces-regulatory-update-rgx-121-mps-ii
+- **THE MARKET PUT A NUMBER ON THE FREEDOM-TO-OPERATE QUESTION: ~ONE FIFTH OF NET SALES (added 2026-09-01 Portfolio Watch item 3;
+  settlement announced 2026-08-31).** **BioMarin and Ascendis settled** their achondroplasia patent litigation. BioMarin grants Ascendis
+  a **non-exclusive, worldwide licence** to **navepegritide** (active ingredient of Ascendis's approved weekly drug **Yuviwel**, ex-
+  TransCon CNP) in **achondroplasia, hypochondroplasia and other indications**; Ascendis pays **18–20% royalties on net sales,
+  geography-dependent, through 2030-05-20**. The asserted patent was BioMarin's **European claim over long-acting variants of C-type
+  natriuretic peptide — a CLASS COMPOSITION claim, not a product claim** — filed as a complaint in Jan 2025 against then-unapproved
+  TransCon CNP; the court rejected Ascendis's attempt to delay in March 2026 after the **Feb 2026** Yuviwel approval. **BMO: "a win-win."
+  Stifel: a settlement was expected but not the rate — "a high-teens/20% royalty is at the high end of these types of agreements."**
+  Both firms read it as freeing BioMarin to focus on **BMN 333** (next-gen weekly long-acting CNP; preliminary Phase 3 data 2027).
+  **READ ONE (Eddie + Avi + Hugh Wells) — THE COST OF BEING THE SECOND ENTRANT INTO A CLAIMED SPACE IS ~20% OF NET SALES FOR THE
+  COMMERCIAL LIFE OF THE PRODUCT.** That is the number now sitting behind the **2026-08-19 freedom-to-operate upgrade** on Skylark's
+  **WO2025179016A1** (engineered **3'UTR** claims — one element over from where SELEXON restricts). **"Probably fine" is now an answer
+  with a price attached to being wrong; get the counsel opinion before the raise, not after.**
+  **READ TWO, and it is the constructive half — BioMarin is LOSING MARKET SHARE AND KEEPING THE ECONOMICS, and analysts scored that as a
+  good outcome. That is precisely the SECOND MONETISATION PATH written into this entry on 08-25: license the expression layer into
+  someone else's IND on a defined timeline, in parallel with our own program. A composition or method position broad enough to tax a
+  competitor's APPROVED product can be worth more than a program you funded to the finish line and lost.** Source:
+  https://www.biospace.com/business/biomarin-nabs-big-royalties-in-achondroplasia-patent-settlement-with-ascendis
 
 ### aSKY Therapeutics — UMB oncology spinout ❌ TERMINATED
 _Last update: 2026-08-28_
@@ -825,6 +874,22 @@ _Last update: 2026-08-28_
   package is now a BIDDER-STATED REQUIREMENT, not a nice-to-have. Surface before DC declaration.**
   Source: https://www.biospace.com/drug-development/bms-neuro-renaissance-was-built-on-back-of-celgene-mega-merger
 
+- **OUR OWN VENTURE PARTNER JUST PRICED ITS EXIT AT FIRST-IN-HUMAN DATA (added 2026-09-01 Portfolio Watch LEAD; announced 2026-08-31).**
+  **Eli Lilly agreed to acquire Merida Biosciences for up to $2.875B in cash** (see the Winnow entry for the science). The part that
+  matters here is the **provenance and the clock**: Merida **launched 2025-04-08 with a $121M Series A co-led by Bain Capital Life
+  Sciences, BVF Partners and THIRD ROCK VENTURES** (with GV and Perceptive Xontogeny), and it was **built inside Third Rock** — founder/
+  CSO **Dario Gutierrez** was a Third Rock **EIR**; COO **Dodzie Sogah** was a Third Rock **venture partner**; CPO **Tara Reagan** was
+  Third Rock's **VP of HR**; CEO **Adam Townsend** joined 2025. **Seventeen months from launch to sale, on ONE molecule, sold on
+  INITIAL PHASE 1 DATA** — Lilly said so explicitly (*"initial Phase 1 data already pointing to the potential for improved efficacy and
+  safety"*).
+  **DURABLE READ (Hemaka): this is the house playbook of the firm that is our venture partner on GPR52, executed in public, and it
+  converges with two reads already in this entry — the 08-27 SK/Biohaven comparable ("first-in-human receptor occupancy, not the DC, is
+  the value inflection") and the 08-31 BMS bidder-criteria read (genetics + biomarkers). Three independent routes, one destination.**
+  **ACTION: open the DC-timing and biomarker/PD-package conversation with Third Rock using THEIR OWN MOST RECENT EXIT as the reference
+  case — it is a far easier conversation than arguing from comparables in someone else's therapeutic area.** Sources:
+  https://www.prnewswire.com/news-releases/lilly-to-acquire-merida-biosciences-to-advance-treatments-for-serious-autoimmune-and-allergic-diseases-302864686.html ·
+  https://www.biospace.com/deals/deal-hungry-lilly-strikes-up-to-2-9b-immuno-play-for-merida
+
 ### Gut-targeted bimodal therapeutic — Crohn's & ulcerative colitis (JHU) ❌ TERMINATED
 _Last update: 2026-08-28_
 - **Status: TERMINATED — do not cover.** Oral, gut-restricted GCPII inhibitor
@@ -967,7 +1032,7 @@ _Last update: 2026-08-31_
   stand up a watch on transferrin-receptor / BBB-shuttle-conjugated oligonucleotide programs entering the clinic.**
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-08-30_
+_Last update: 2026-09-01_
 - **What:** novel immunology platform that **selectively treats T-cell-mediated
   autoimmune disease**; T-cell engager platform with potential in ankylosing
   spondylitis and others.
@@ -1010,6 +1075,41 @@ _Last update: 2026-08-30_
   autoimmunity, not an academic preference.** Also note both indications sit at **~1–3 per 100,000/yr** while analysts model billion-dollar
   franchises — keep that citation ready as the empirical answer to "antigen-selective indications are too small."
   Source: https://www.jnj.com/media-center/press-releases/fda-approves-imaavy-nipocalimab-aahu-as-first-ever-treatment-for-warm-autoimmune-hemolytic-anemia-waiha-representing-a-landmark-advancement-for-patients
+- **SELECTIVITY NOW HAS A PRICE, NOT JUST A LABEL — AND IT IS UP TO $2.875B FOR A PHASE 1 ASSET (added 2026-09-01 Portfolio Watch LEAD;
+  announced 2026-08-31).** **Eli Lilly to acquire Merida Biosciences (Cambridge, MA) for up to $2.875 billion in cash** — upfront plus
+  contingent milestones, **split NOT disclosed**; close guided **Q4 2026**. Merida's platform: engineered **Fc biotherapeutics** that
+  (i) selectively bind a specific **pathogenic antibody**, (ii) route it to specialized liver cells for **lysosomal degradation** via
+  the Fc arm, and (iii) **inhibit the B cells producing it** by agonising **FcγRIIB rather than FcγRIIA** (their stated
+  toxicity-avoidance choice); antibody-like PK / long half-life. Lilly's framing: *"addresses the biological cause of these diseases,
+  rather than broadly suppressing the immune system, as many current therapies do."* Assets: **MER511**, Phase 1 in **Graves' disease
+  and thyroid eye disease** (both driven by thyroid-stimulating immunoglobulins acting on the TSH receptor; Graves' ≈**3M** in the US,
+  **25–40%** progress to TED, **approved treatments exist for both and none target the causal autoantibodies**); **MER769**,
+  preclinical, food allergy / asthma / CSU; earlier work in **membranous nephropathy**. Lilly's Francisco Ramírez-Valle cited
+  **"initial Phase 1 data already pointing to the potential for improved efficacy and safety."** BMO: "a strategic use of capital …
+  diversifying their I&I pipeline."
+  **THIRD DATAPOINT IN SIX DAYS ON THE SELECTIVITY AXIS, AND THE FIRST THAT IS A PRICE:** 08-29 **Lisraya** (value delivered by broad
+  kinase inhibition with a five-item boxed warning) → 08-30 **Imaavy** (selectivity approved and marketed) → 08-31 **Merida** (up to
+  $2.9B paid for precision-instead-of-suppression at Phase 1). **ACTION (Jon Robbins + Eddie): all three go in ONE row of the Winnow
+  TPP.** **KEEP THE IMAAVY DISCIPLINE: Merida is ANTIBODY-mediated, Winnow is T-CELL-mediated — the read is the AXIS, not the target.**
+  What is genuinely closer than Lisraya: **Merida is a biologic with antibody-like PK and a convenient schedule, not a pill, which
+  retires the convenience-and-price caveat attached to the brepocitinib comparison.** Sources:
+  https://www.prnewswire.com/news-releases/lilly-to-acquire-merida-biosciences-to-advance-treatments-for-serious-autoimmune-and-allergic-diseases-302864686.html ·
+  https://www.biospace.com/deals/deal-hungry-lilly-strikes-up-to-2-9b-immuno-play-for-merida
+- **THE ADJACENT LANE FILLED UP THE SAME DAY — IN VIVO CAR-T FOR AUTOIMMUNITY (added 2026-09-01 Portfolio Watch item 2; announced
+  2026-08-31).** **ArsenalBio (South San Francisco)** announced a **strategic shift out of autologous cell therapy for solid tumors and
+  into in vivo CAR T, explicitly including autoimmune disease**, with a **substantial workforce reduction**, a core team retained, and
+  language about **"evaluate strategic opportunities for ArsenalBio's technologies and assets."** The load-bearing sentence: the company
+  **"generated clinical data demonstrating the feasibility of nonviral engineering of synthetic circuits functioned and translated in
+  human clinical trials."** CEO **Ken Drazan**: *"we now believe this technology is enabling outside of solid tumors."*
+  **TWO DURABLE READS. (a) PLATFORM DISCIPLINE (Virginia Burger) — sharper than the 08-22 Werewolf entry, because Werewolf could NOT get
+  an asset over the line and ArsenalBio says it COULD. What failed was not the platform; it was where the platform was pointed. "The
+  technology is enabling outside of solid tumors" is a company telling you the platform never selected the indication.** Standing
+  diligence question for every platform pitch at the BioHub. **(b) SOURCING (Esther Park): the 08-29 JHTV Zizic award list flagged
+  Jonathan Schneck (JHU Pathology) — in vivo CAR-T generation via targeted polymeric mRNA nanoparticles for autoimmune therapy — as one
+  of two to work up first. A company with years of T-cell engineering infrastructure and human clinical experience has now declared that
+  exact destination its whole strategy: it VALIDATES the axis and puts well-resourced incumbents in the lane before a JHU program is
+  licensable. Move it up the queue; the first question is what the nanoparticle does that ArsenalBio cannot.** Source:
+  https://www.biospace.com/press-releases/arsenalbio-announces-new-focus-on-in-vivo-car-t-programs-to-leverage-investment-in-t-cell-engineering
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
 _Last update: 2026-08-31_
@@ -1089,6 +1189,30 @@ _Last update: 2026-08-28_
   executable sequence — the data event is not the deliverable, the financing executed within DAYS of it is, and the ~10% discount is
   the price of speed. Form the view on what Clasp does in the two weeks AFTER the readout BEFORE the readout.** Source:
   https://www.biopharmadive.com/news/fda-covid-vaccines-moderna-generate-profound-bixlenvo/828929/
+  - **THE SAME RULE PRICED AT THE OTHER END, PLUS THE FIRST REGISTRATIONAL p53 DATASET AND THE ELIGIBLE-FRACTION ROW COMING HOME
+    (added 2026-09-01 Portfolio Watch item 4; both events 2026-08-31).** **PMV Pharmaceuticals (Princeton; PMVP)** reported updated
+    interim **ovarian** data from the **Phase 2 pivotal portion of PYNNACLE** (NCT04585750) for **rezatapopt (PC14586)** — a
+    **first-in-class small-molecule p53 REACTIVATOR** binding the pocket in the **TP53 Y220C** mutant to restore wild-type
+    tumour-suppressor function; **2000 mg QD, single-arm, registrational, ~70 sites, five cohorts** (ovarian, lung, breast,
+    endometrial, other). Data at a **2026-05-14 cutoff: 76 evaluable patients, ORR 46% (35/76 — 4 confirmed CRs, 29 confirmed PRs, 2
+    unconfirmed PRs; investigator-assessed RECIST 1.1); median time to response 1.3 months; median DoR 10.0 months** (confirmed only);
+    mostly **Grade 1–2** treatment-related AEs, **5%** discontinuation for treatment-related AEs. **Primary-analysis enrolment in
+    platinum-resistant/refractory ovarian is COMPLETE; recent FDA meeting supports an ACCELERATED-APPROVAL NDA, submission guided Q1
+    2027**; full-cohort update at a **Q4 2026** medical meeting. Fast Track + Orphan Drug in ovarian/fallopian/primary peritoneal.
+    **SAME DAY, the financing:** priced an underwritten offering of **22,055,000 shares + pre-funded warrants for up to 19,900,000
+    shares, each with an accompanying five-year warrant** (41,955,000 warrants, exercise **$1.21**, adjustable on a specified
+    regulatory milestone); combined price **$1.21**; **gross ~$50.8M**; sole book-runner **TD Cowen**; closing **2026-09-02**.
+    **THREE READS. (1) TAILWIND: p53 is now a REGISTRATIONAL oncology target with FDA alignment on accelerated approval — direct
+    support for the premise under CLSP-1025 (p53 R175H). (2) THE ELIGIBLE-FRACTION ROW, NOW INSIDE p53 rather than by analogy from the
+    KRAS board: rezatapopt needs ONE gate (the mutation); CLSP-1025 needs TWO multiplied gates (mutation AND HLA-A\*02:01) — and the
+    comparator computing that ratio is a ONCE-DAILY ORAL PILL at 46% ORR / 10-month DoR. The answer has to be DEPTH AND DURABILITY IN
+    REFRACTORY DISEASE, not mechanism elegance. (3) THE FINANCING RULE, PRICED BOTH WAYS: Moderna raised $2.6B at a ~10% discount nine
+    days after a Phase 3 win; PMV raised $50.8M the SAME DAY at $1.21 with a warrant on EVERY share. Same rule — the data event is not
+    the deliverable, the financing beside it is. The variable is not news quality; it is what the balance sheet looked like the day
+    before. ACTION (Hemaka + Eddie): decide what Clasp does the week after the GUARDIAN-101 monotherapy readout while it is still a
+    choice.** Sources:
+    https://www.globenewswire.com/news-release/2026/08/31/3353671/0/en/pmv-pharmaceuticals-announces-updated-promising-rezatapopt-monotherapy-interim-ovarian-cancer-data-from-pynnacle-phase-2-pivotal-trial.html ·
+    https://www.biospace.com/press-releases/pmv-pharma-announces-pricing-of-oversubscribed-50-million-public-offering-of-securities
 - **Watch:** GUARDIAN-101 (p53 R175H) Phase 1 monotherapy readout (2026); SENTINEL-101 (KRAS
   G12V) progression; competing neoantigen/pHLA-directed TCEs; Third Rock signaling.
 - **MARKET-CONDITION READ, NOT A CATALYST (2026-08-22 Portfolio Watch, third read on the lead item):**
@@ -2074,6 +2198,11 @@ _Last update: 2026-08-30_
   and call the implication (tailwind / threat / validation / watch-item).
 
 ## 4. Open items to fill in (next research passes)
+- **Third Rock exit-timing precedent (added 2026-09-01):** Merida went from a $121M Series A (2025-04-08) to a Lilly acquisition at up to $2.875B (2026-08-31) in seventeen months on initial Phase 1 data. What were the actual milestone gates, how much of the $2.875B is upfront, and what did Third Rock own at exit? Hemaka: get the deal structure from the Third Rock side and use it to frame the GPR52 DC-vs-FIH timing decision.
+- **Skylark 3'UTR FTO opinion, now priced (added 2026-09-01):** the BioMarin/Ascendis settlement values an encumbered composition position at 18–20% of net sales through the patent term. Commission the counsel opinion on WO2025179016A1's 3'UTR claims — scope, prosecution status, and whether a parallel GJB2 filing has published — before the Aletira Series A opens, and set the assignee docket watch that the 08-19 entry called for.
+- **Clasp eligible fraction vs a one-gate comparator (added 2026-09-01):** with rezatapopt (TP53 Y220C, no HLA gate, oral, 46% ORR / 10-month DoR) heading for a Q1-2027 accelerated-approval filing, compute CLSP-1025's multiplied eligible fraction (R175H prevalence × HLA-A*02:01 frequency) and the depth/durability differentiation the TCE has to show against an oral pill in the same mutation class.
+- **US price assumption across the portfolio (added 2026-09-01):** MFN agreements now cover ~89% of the branded market and include future-launch-price commitments. Which of our plausible acquirers has signed, and what does the capped US price do to the NPV in each program's value case? (Eddie + Emily.)
+- **Astek Diagnostics × Chatterjee gdpP (added 2026-09-01):** is there a collaboration to be had between Astek's sub-hour phenotypic susceptibility platform and the UMB β-lactam-tolerance genotype work — and what were TEDCO's milestone gates across the $250K/$500K/$750K ladder? (Yixuan.)
 - **"Alchemity" — reference-file gap or bad data (added 2026-08-31):** PitchBook's public investor profile lists **Blackbird Laboratories' most recent investment as 2026-07-09 in a company called "Alchemity."** No such entry exists in this file, and the company is not findable in press coverage, BioBuzz or JHTV materials. **Emily + Eddie: confirm internally whether this is a real position.** (Same sweep surfaced a durable descriptor for the §2b Adventris entry: its KRAS vaccine pairs **engineered cross-reactive antigens with a next-generation trans-amplifying RNA vector** — folded in there.)
 - **NXE'149 bidder set (updated 2026-08-31):** BMS moved DOWN after the 08-31 BioSpace interview (organic label expansion, Truist says BD not a primary focus). Re-rank and re-work **Otsuka, Neurocrine, AbbVie/Cerevel, Novartis, SK Biopharmaceuticals** — which of them has a stated appetite for a Phase-2-ready novel-mechanism CNS asset, and who has cash allocated this half?
 - **GPR52 biomarker package (added 2026-08-31):** the buyer's stated recipe is genetics + biomarkers. What is the actual PD/receptor-occupancy plan, is there a PET tracer path for GPR52, and what patient-selection hypothesis would a Phase 2 carry? This is now the gating item for the DC narrative, not a downstream question.

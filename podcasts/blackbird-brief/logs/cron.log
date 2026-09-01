@@ -2104,3 +2104,40 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 - Source failures: `fiercebiotech.com` 403 on both WebFetch and `r.jina.ai`; `endpoints.news/news/` index rendered via jina with **all headlines and article URLs stripped** (new failure mode, logged to memory) and 403s on WebFetch; `globenewswire.com` timed out on WebFetch — the AskBio release was read in full via the BioSpace mirror through jina.
 - One item deliberately kept off-air: PitchBook lists a **2026-07-09 Blackbird Laboratories investment in "Alchemity"** that isn't in the reference file and isn't findable in any press source. It's in the show notes and the open-items list as an internal records question rather than an assertion.
 === 2026-08-31T02:27:42-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-01T02:10:09-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, the feed edit, and the commit — the orchestrator does those after batch TTS.
+
+**Files produced**
+- `podcasts/blackbird-brief/scripts/2026-09-01-portfolio-watch.md` — Portfolio Watch, 6 items, ~2,180 spoken words
+- `podcasts/blackbird-brief/scripts/2026-09-01-portfolio-watch.rss-item.xml` — validated XML, `__LENGTH__` / `__DURATION__` placeholders
+- `podcasts/blackbird-brief/scripts/2026-09-01-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — 8 keys appended (51 episodes, 230 unique keys)
+- `memory/blackbird-portfolio.md` — edited in place, +131 lines across Winnow, GPR52 NewCo, Aletira, Clasp, the chronic-infections theme, the org-level BD/pricing comparator, and §4 open items
+
+**Candidate funnel**
+
+| Source | Scanned | On-thesis | Result |
+|---|---|---|---|
+| BioSpace news + press-release index | ~105 | 9 | 6 built |
+| BioPharma Dive homepage | 24 | 1 | nothing net-new past 08-31 |
+| BioBuzz `/news` | 21 | 3 | 1 built (Astek) |
+| Axios / White House (policy) | 1 | 1 | built |
+| Company primaries (Lilly, Merida, PMV, ArsenalBio) | 6 | 6 | read in full |
+| JHTV `/news`, Lieber `/news`, Nxera IR | 3 | 0 | confirmed null |
+| Endpoints News index | — | — | **failed** (jina renders nav only, 4th run) |
+| Fierce Biotech | — | — | **failed** (jina `AbuseAlleviationError`, blocked until 09:31 UTC) |
+| Sensorion PR page | — | — | **failed** (jina 15 s navigation timeout) |
+
+Dedup: 12 candidates in, 12 fresh, 0 ledger hits.
+
+Shortlist and disposition:
+- **CHOSEN — LEAD** Lilly to acquire Merida Biosciences, up to $2.875B — `prnewswire.com/.../302864686.html`
+- **CHOSEN** ArsenalBio pivots to in vivo CAR T, heavy layoffs — `biospace.com/press-releases/arsenalbio-announces-new-focus-on-in-vivo-car-t-programs...`
+- **CHOSEN** BioMarin/Ascendis settlement, 18–20% royalties — `biospace.com/business/biomarin-nabs-big-royalties-in-achondroplasia-patent-settlement-with-ascendis`
+- **CHOSEN** PMV rezatapopt PYNNACLE ovarian interim + same-day $50.8M pricing — `globenewswire.com/.../3353671/...` · `biospace.com/press-releases/pmv-pharma-announces-pricing-of-oversubscribed-50-million-public-offering-of-securities`
+- **CHOSEN** Nine more MFN pricing agreements, 26 companies / ~89% of branded market — `axios.com/2026/08/31/trump-new-drug-price-deals`
+- **CHOSEN** TEDCO $750K into Astek Diagnostics (Baltimore) — `biobuzz.io/news/tedco-puts-750000-behind-astek-diagnostics-...`
+- Not built: Takeda/Protagonist rusfertide PV approval; Arrowhead Redemplo split readout; AN2 epetraborole; Barinthus/Clywedog (people-only, Geoff Lynn lineage); Protaryx Medical; McKesson/Precision Medicine Group.
+
+The lead is genuinely two items in one — the Winnow selectivity read is the obvious half, but the load-bearing half is that Third Rock, our own GPR52 venture partner, sold a 17-month-old company on initial Phase 1 data. That independently confirms the 08-27 and 08-31 conclusions that first-in-human, not the development candidate, is where the GPR52 program's value sits.
+=== 2026-09-01T02:31:47-07:00 done  blackbird-brief (exit 0) ===
