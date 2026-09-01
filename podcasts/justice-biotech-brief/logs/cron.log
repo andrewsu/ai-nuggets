@@ -2764,3 +2764,30 @@ Episode published for `justice-biotech-brief` (SKIP_TTS batch mode — script + 
 
 **Source failures:** `fiercebiotech.com` — 403 direct and via `r.jina.ai` (jina returned an explicit domain-level abuse block through 10:36 UTC); skipped, no retry. Endpoints article bodies paywalled after the lede — resolved by reading the linked PR Newswire primary release instead. First bioRxiv sweep crashed on `total` returned as a string; re-run with an int cast succeeded.
 === 2026-08-31T02:48:33-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-01T02:40:09-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` will do that after batch TTS.
+
+**Published:** `2026-09-01-rapcel-zolacel-autoimmune-car-t-halt-iec-hs` — *Rap-cel and zola-cel — three deaths halt the two biggest autoimmune CAR-T programs, and the toxicity is welded to the efficacy* (1,096 words, ~5 min). RSS item validates as XML; the `Paper link` (BioPharma Dive) was fetched successfully this run.
+
+Files written to `podcasts/justice-biotech-brief/scripts/`: `.md`, `.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders), `.commit-msg`.
+
+**Candidate funnel**
+
+bioRxiv — 277 unique records swept day-by-day across 2026-08-30 (41), 08-31 (229), 09-01 (7); 50 keyword hits, 47 spurious ("biologic" in plant/amyloid papers, "JAK" in unrelated contexts). Substantive shortlist:
+- Disruption of the interferon-gamma axis limits CAR T cell efficacy against AML — https://www.biorxiv.org/content/10.64898/2026.08.28.747900v1
+- Multiple mechanisms regulate the nanoscale organization of PD-L1 at the cell surface — https://www.biorxiv.org/content/10.64898/2026.08.31.748200v1
+- Higher T-cell density in primary prostate cancer, reduced CD8 effector fraction, increased TIGIT — https://www.biorxiv.org/content/10.64898/2026.08.27.747524v1
+
+No bispecific, T-cell-engager, ADC or autoimmune-biologic preprints in the window. All three above are basic biology without a translational hook; none opened in full (news item dominated before the full-text gate applied).
+
+News / press — Endpoints, Fierce Biotech, BioPharma Dive, BioSpace all read cleanly. Shortlist:
+- **Novartis halts 8 autoimmune rap-cel trials after 3 IEC-HS deaths; BMS pauses zola-cel** — https://www.biopharmadive.com/news/novartis-bristol-myers-autoimmune-cell-therapy-trial-halt/829218/ ← **CHOSEN**
+- Lilly to buy Merida Biosciences for up to $2.88B (autoimmune/TED) — BioSpace, 08-31
+- Trump announces nine new drug-pricing deals with midsize biotechs — Endpoints, 08-31
+- Electra Therapeutics files IPO for Phase 2/3 immunology asset — Fierce, 08-31
+- Arrowhead vs Ionis triglyceride safety claim; AstraZeneca relaxin pill Ph2 — off-target for this audience
+
+Source failures: none. Endpoints article body is paywalled (headline index readable); facts were confirmed independently via Fierce Biotech and BioPharma Dive.
+
+Why it won: dead-center on two of Justice's stated interests (CAR T, autoimmune biologics), and it carries a design argument rather than just an event — expansion is both the efficacy engine and the leading toxicity suspect for T-Charge/NEX-T products, which turns the read-across into an architecture question and lands on dose-titratable CD19xCD3 engagers (CLN-978 EULAR 2026 data, verified separately). Deferred-list note: the transglutaminase ADC preprint (`10.64898/2026.08.18.745451`) is still readable and unshipped, but at 14 days it has hit the deferral cap — I recorded that it should ship on the next thin day or be closed.
+=== 2026-09-01T02:47:29-07:00 done  justice-biotech-brief (exit 0) ===
