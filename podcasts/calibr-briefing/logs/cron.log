@@ -3760,3 +3760,42 @@ Both episodes are written and staged for the batch pipeline.
 
 Shortlist not chosen: BridgeBio acoramidis CMR reversal (strong, but a substudy claim without a peer-reviewed companion I could read); Arrowhead plozasiran (spotlighted July 23 on the topline — carried as headline #2 with the full dataset instead); BioMarin/Ascendis settlement (best non-cardio candidate, kept as headline #3); PVI-SHAM-AF.
 === 2026-08-31T02:35:13-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-01T02:20:09-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per `PIPELINE.md` I stopped after the scripts + stubs — no `gen_tts.py`, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-09-01-pharma-headlines.txt` (1,728 words) + `.rss-item.xml` + `.commit-msg`
+- `podcasts/calibr-briefing/scripts/2026-09-01-autoimmune-car-t-halt-spotlight.txt` (1,851 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as XML; scripts contain no URLs, DOIs, markdown, or numbered-list syntax.
+
+**Candidate funnel**
+
+Sources scanned (window: Aug 31 all day → Sep 1 09:40 UTC):
+- **Endpoints News** (jina index, recovered from the 08-31 regression) — 29 items with relative ages; 6 inside the window, all 6 relevant
+- **BioSpace** `/latest-news-press-releases` — 6 dated Aug 31, 4 relevant; `/search-press-releases` — 10 wire items Aug 31, 3 substantive
+- **STAT** `/category/biotech/` — 4 items Aug 31, 1 hard-news (MFN), 3 features
+- **BioPharma Dive** homepage — **stale**: nothing newer than Aug 28 via WebFetch; the one Aug-31 article was reached by direct URL and read in full
+- **Fierce Biotech / Fierce Pharma** — **failed**: jina `AbuseAlleviationError` (domain block), 4 retries incl. past the stated 09:31:23 UTC expiry all returned the byte-identical cached 403. Story sourced from BioPharma Dive + Reuters instead
+- **GEN** drug-discovery index — returned a 2006 archive page, no usable index
+- Primary/verification: Novartis GlobeNewswire ad hoc release, Reuters wire (via brecorder), Lilly/BioSpace, White House MFN fact sheet, ClinicalTrials.gov API v2 (6 NCT records), news-medical (Calibr IND)
+
+Shortlist (in-window):
+- **Novartis halts 8 rap-cel autoimmune/neuro trials after 3 IEC-HS deaths; BMS pauses zola-cel** — biopharmadive.com/news/.../829218/ — **CHOSEN (spotlight + headline 1)**
+- **Novartis remibrutinib positive in REMODEL-1/-2, relapsing MS** (Sep 1, 05:15 UTC ad hoc) — globenewswire.com/news-release/2026/09/01/3353785 — **CHOSEN (headline 2)**
+- **Lilly to acquire Merida Biosciences, up to $2.875B** — biospace.com/deals/deal-hungry-lilly-strikes-up-to-2-9b-immuno-play-for-merida — **CHOSEN (headline 3)**
+- **Trump: 9 more MFN deals (midsize), 26 total / 89% of branded market** — whitehouse.gov fact sheet + statnews.com/2026/08/31/... — **CHOSEN (headline 4)**
+- **ARCH Venture Partners raising ~$3B for Fund XIV** — endpoints.news/arch-venture-partners-targets-3-billion-raise-for-latest-fund/ — **CHOSEN (headline 5, Foresite/Xaira link)**
+- **Electra Therapeutics S-1, up to $100M (pan-SIRP, sHLH)** — endpoints.news/sanofi-backed-electra-files-for-ipo-... — **CHOSEN (headline 6)**
+- **AN2 epetraborole PV data at SOHO 2026** — biospace.com/press-releases/an2-therapeutics-presents-clinical-... — **CHOSEN (headline 7)**
+- **PMV Pharma $50M oversubscribed offering** — biospace.com/press-releases/pmv-pharma-announces-pricing-... — **CHOSEN (headline 8)**
+- **Leqembi: Canada's Drug Agency final positive reimbursement rec** — biospace.com/press-releases/canadas-drug-agency-issues-final-positive-... — **CHOSEN (headline 9)**
+- BMS neuro renaissance / Celgene; China as security risk; STAT radiopharma dosing; STAT mRNA politics — features, no news event — **mentioned as reading, not headline slots**
+- BioMarin/Ascendis achondroplasia royalty settlement; Arrowhead SHASTA-3/-4 analyst split — **excluded, shipped in the 2026-08-31 episode**
+- Takeda/Protagonist rusfertide approval; BioNTech/Genentech mRNA vaccine Ph2 termination — **excluded, shipped 2026-08-29**
+- Genentech/DualityBio ADC deal (Aug 28); CMS GLP-1 pilot; Medicare-negotiation litigation dead end — **out of window (3–4 days)**
+
+Full text opened for every chosen item. Nothing deferred for unavailable full text.
+
+**Two judgment calls worth flagging.** The registry still lists the paused rap-cel lupus and vasculitis studies as `RECRUITING` (verified May/June), so the public record hasn't caught up — I said so in the spotlight rather than implying the holds are visible there. And on Calibr's own switchable CAR-T: the April 2026 autoimmune IND clearance is well documented, but `NCT06913608` reads `WITHDRAWN — Business Decision` (March 3, 2026) and the ABBV-461 breast-cancer combo `TERMINATED` (May 2026). I used the switch as the conceptual counterpoint and stated the registry status plainly without asserting whether the program is live — that discrepancy is unresolved from public sources and is Travis' own program, so it seemed wrong to guess either way.
+=== 2026-09-01T02:37:05-07:00 done  calibr-briefing (exit 0) ===

@@ -1,0 +1,7 @@
+Script body: 12191 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2867 chars) -> 133.4s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2990 chars) -> 156.0s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2800 chars) -> 121.5s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2828 chars) -> 122.3s ✓
+  [mistral:en_paul_neutral] chunk 5/5 (701 chars) -> 31.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-09-01-autoimmune-car-t-halt-spotlight.mp3 [mistral] 5,214,920 bytes, 651.8s
