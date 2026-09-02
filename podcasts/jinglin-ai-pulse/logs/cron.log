@@ -2339,3 +2339,51 @@ Shortlist:
 
 No source failures this run.
 === 2026-09-01T02:43:31-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-02T02:30:24-07:00 start jinglin-ai-pulse ===
+Published for batch TTS. All three files are in place; per `SKIP_TTS=1` I did not run `gen_tts.py`, touch `feed.xml`, or commit — `publish_pending.py` handles those.
+
+**Episode:** `2026-09-02-the-same-model-two-doors` — 3,322 spoken words (~15 min)
+
+Files written:
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-02-the-same-model-two-doors.md`
+- `...rss-item.xml` (validated as well-formed XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `...commit-msg` (single line)
+
+**Candidate funnel**
+
+*X/Twitter (direct): unavailable from this host — xcancel returns a browser challenge, x.com requires auth. Substituted HN front page + Algolia top-stories-by-date + HF daily papers as the discourse proxy, per standing practice.*
+
+Hugging Face daily papers (2026-09-02) — 20 scanned, 4 substantive for this show:
+- StudentSim, Microsoft Research (243 upvotes) — https://huggingface.co/papers/2609.01591
+- SMELT: scaling laws for compute-matched MoE looped transformers, ByteDance Seed (55)
+- ZimaBlue: world action models from video pre-training (36)
+- H3-World: language understanding into world control (29)
+
+Hacker News (front page + all >100-point stories since 2026-09-01) — 60 scanned, 11 AI-substantive:
+- **Claude Fable 5.1 and Mythos 5.1, 1,235 pts — CHOSEN (co-lead)** — https://news.ycombinator.com/item?id=49525378
+- **Path to Astra: critical capabilities and frontier safeguards, 157 pts — CHOSEN (co-lead)** — https://news.ycombinator.com/item?id=49527595
+- **How accurate have Ed Zitron's AI skeptic predictions been? 696 pts — CHOSEN** — https://news.ycombinator.com/item?id=49526069
+- **I trained a small transformer in 1.5hrs and it beats many LLMs, 616 pts — CHOSEN (counterweight)** — https://news.ycombinator.com/item?id=49519939
+- **Show HN: 104GB Qwen3.8-Flash-Next on a 48GB Mac at ~12 tok/s, 209 pts — CHOSEN (counterweight)** — https://news.ycombinator.com/item?id=49524447
+- My local model setup on an M4 Pro Mac Mini, 197 pts — one-line mention
+- Atlas: A World Model for Spatial Intelligence (World Labs), 223 pts — read in full; cut for length, no room after the two-lab lead
+- The ChatGPT/Codex app bundles a full copy of LibreOffice (Willison), 408 pts — cut, low intellectual substance
+- The Emergent Symbolic Structure of Artificial Neural Networks, 136 pts — not read in full, deferred
+- The efficient frontier of LLM inference (Baseten), 118 pts — cut
+- Apple's forensic evidence in the OpenAI trade-secret suit, 215 pts — cut, litigation without technical payload
+
+Investment/business (TechCrunch AI, last 7 days) — 7 scanned, 4 on-target:
+- **AfterQuery becomes YC's fastest-ever unicorn at $3.2B — CHOSEN**
+- **AIR raises $50M to vet agent skills and add-ons — CHOSEN**
+- Sequoia-incubated Empirik launches with $21M — cut
+- Pentagon ships its own ChatGPT/Grok — cut
+
+Long-form podcasts (last 14 days):
+- **Dwarkesh Podcast, "Ajeya Cotra – Inside the OpenAI agent swarm that hacked Hugging Face," Sep 1, 2h20m — CHOSEN (deep cut)**, full transcript read
+- Latent Space, "PRO-NOT Welcome" (Sep 1) — written piece, no episode; cut
+- The Cognitive Revolution — nothing newer than the Pete Johnson episode used yesterday
+- MLST — no episode found past Aug 10
+- WhynotTV (the show's named primary) — still no in-window episodes; standing gap since 07-29
+
+No source failures this run. All 14 cited URLs return 200 except `openai.com/index/path-to-astra/`, which 403s to automated fetchers but is the canonical page (read via the reader proxy, and it's the URL behind the HN submission).
+=== 2026-09-02T02:48:11-07:00 done  jinglin-ai-pulse (exit 0) ===
