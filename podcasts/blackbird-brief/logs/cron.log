@@ -2141,3 +2141,40 @@ Shortlist and disposition:
 
 The lead is genuinely two items in one — the Winnow selectivity read is the obvious half, but the load-bearing half is that Third Rock, our own GPR52 venture partner, sold a 17-month-old company on initial Phase 1 data. That independently confirms the 08-27 and 08-31 conclusions that first-in-human, not the development candidate, is where the GPR52 program's value sits.
 === 2026-09-01T02:31:47-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-02T02:10:24-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script plus the two stub files — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files produced**
+- `podcasts/blackbird-brief/scripts/2026-09-02-portfolio-watch.md` — Portfolio Watch, 6 items, 2,066 spoken words
+- `podcasts/blackbird-brief/scripts/2026-09-02-portfolio-watch.rss-item.xml` — validated XML, `__LENGTH__` / `__DURATION__` placeholders
+- `podcasts/blackbird-brief/scripts/2026-09-02-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — 9 keys appended (52 episodes, 239 unique keys)
+- `memory/blackbird-portfolio.md` — edited in place, +122 lines across Winnow (3 new entries), the GPR52 NewCo (bidder-set strike + biomarker instrument question), §1 (BD-comparator update, new exit-map entry), and 6 new open items
+
+**Episode — Portfolio Watch, Wednesday 2026-09-02**
+1. **LEAD (Winnow):** Novartis halted eight autoimmune trials of rap-cel after three IEC-HS deaths; BMS paused zola-cel enrollment. William Blair fingers the rapid-manufacturing platforms both share — which puts expansion on **one knob** as both the efficacy engine and the toxicity driver. That is a control-architecture row for the Winnow TPP backed by a clinical event, with two limits stated first (blinatumomab HLH; CD19/B-cell vs T-cell-mediated). Sharpens yesterday's ArsenalBio read: in vivo CAR-T has *less* control over expansion, not more.
+2. **Alumis (Winnow + GPR52):** envudeucitinib missed BICLA and every key secondary in 408 lupus patients, with no response rate disclosed in any arm — while working in the IFNGS-high subgroup the trial failed to enrol. The mirror image of the 08-29 BioNTech rule, and the invoice for having genetics without biomarkers.
+3. **Roche/Simcere:** $75M upfront for a CD79A/CD19/CD3 trispecific built to deplete B cells *while limiting cytokine release* — the engager route paid for in the same week the cell route stopped. Genentech is Roche, so the Asian-platform BD comparator moves from $45M to $75M.
+4. **BMS (GPR52):** ~80% of revenue exposed by 2031 with the AZ merger dead, and milvexian's 2027 Phase 3 the only thing standing between BMS and a 40–50% drawdown. Strike BMS from the near-term NXE'149 bidder set. Cobenfy H1 2026 = $119M.
+5. Thirty-second footnote: JCI blood immune-network study in 84 treatment-naive schizophrenia patients, used only to force the GPR52 biomarker instrument choice.
+6. **Reverse mergers** 17 of 19 in Q3 — reframes the Werewolf ending as a deliberate third exit door.
+
+**Candidate funnel**
+
+| Source | Scanned | On-thesis | Result |
+|---|---|---|---|
+| BioSpace latest news + press releases | 30 | 12 | 6 built |
+| Endpoints News index | 24 | 7 | 2 built (bodies paywalled; read via BioSpace/BioPharma Dive/primary) |
+| BioPharma Dive homepage | 3 visible | 3 | 1 built |
+| JHTV `/news/` via jina | 12 | 0 net-new | index renders all items with today's date — unusable for recency |
+| BioBuzz `/news` | 21 | 0 net-new | **index still stalled at 08-28** (4th consecutive run) |
+| Targeted searches (Blackbird/BioHub, Nxera/GPR52, GJB2 hearing gene therapy, Clasp/NuGate/Artemyx/Winnow/Aletira) | — | 0 | all confirmed null in-window |
+
+Dedup: 15 candidates in, **15 fresh, 0 ledger hits**.
+
+Not built: GSK mRNA flu Phase 3; ARPA-H $125M on-demand RNA manufacturing (Endpoints body paywalled, no primary found in time); Lilly dealmaking/VC returns (paywalled); ARCH $3B fund; Novartis remibrutinib MS wins; Telix BiPASS; Ono/Aitia; Electra IPO filing; Cellares layoffs.
+
+Two things worth flagging:
+- **Length overrun.** At 2,066 spoken words this runs ~11 minutes against the brief's ~6–9 minute target. I made three compression passes and cut ~240 words; getting to 9 minutes required dropping a whole item with a real "so what," so I kept the content and am flagging the overrun instead. Recent shipped episodes have run 10–12 minutes, so this is in line with practice but not with the spec — worth a decision on whether the spec or the practice is wrong.
+- **Alumis disclosed no response rates.** The IFNGS-high subgroup claim is the company's own characterization with no numbers attached, in either the press release or the trade coverage. I said that explicitly on air rather than repeating "robust responses" as fact, and logged the missing prevalence figure as an open item.
+=== 2026-09-02T02:31:25-07:00 done  blackbird-brief (exit 0) ===

@@ -52,6 +52,30 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
   composition-of-matter position. A well-run preclinical package is not it.** Sources:
   https://www.biospace.com/policy/china-poses-increasing-security-risk-as-us-biotech-innovation-edge-erodes ·
   https://www.biospace.com/deals/genentech-strikes-second-asia-deal-in-a-week-betting-up-to-1b-in-oncology-adc-alliance-with-dualitybio
+  - **BENCHMARK UPDATED — $75M UPFRONT FOR AN EARLY-CLINICAL ASSET, FROM THE SAME ACQUIRER (added 2026-09-02 Portfolio Watch item 3;
+    announced 2026-09-01).** **Roche paid Simcere Zaiming $75M upfront, up to $1.53B in milestones plus royalties, for SIM0660** — a
+    **CD79A × CD19 × CD3 trispecific** already in early-stage clinical trials. **Genentech IS Roche**, so this is the same buyer that
+    paid **$45M upfront to DualityBio** days earlier: **three Asia deals in eight days — $2.3B to Hanmi, up to $1B to DualityBio, now
+    Simcere — one acquirer, all ex-US platform companies.** **The comparator moves from $45M (discovery-through-Phase-1a) to $75M
+    (early-clinical, in-hand). The lesson does not move: the differentiator has to be something the buyer cannot source in Shanghai or
+    Seoul.** Sources: https://www.biospace.com/drug-development/roche-finds-another-oncology-gem-in-asia-with-1-5b-b-cell-disease-partnership ·
+    https://endpoints.news/roche-taps-simcere-for-trispecific-t-cell-engager-pact-with-75m-upfront/
+
+- **THE EXIT MAP HAS THREE PUBLIC-MARKET DOORS, NOT TWO — REVERSE MERGERS ROSE 1,600% IN Q3 (added 2026-09-02 Portfolio Watch item 6;
+  published 2026-09-02).** Per **Leerink Partners**: **20 biotech IPOs and 19 reverse mergers year-to-date**, close to 1:1 — but
+  **17 of the 19 reverse mergers landed in Q3 alone, against ONE in Q2**, while IPO cadence stayed flat and reverse-merger activity was
+  dormant through most of 2025. **Maha Katabi (Sofinnova Investments)** on the appeal: *"You see who's in the syndicate and how the
+  deal plays out"* before trading, where an IPO stays uncertain until pricing day. **Jack Bannister (Leerink)** on the cost: **4–6
+  months to close vs weeks**, so investors must *"wear six months of market risk"* — which filters out hedge funds seeking a quick exit.
+  Context: **>70 biopharma M&A deals in H1 2026 vs 30 in H1 2025**; Katabi notes sponsors now run several paths in parallel.
+  **READ (Emily + Eddie): this SUPERSEDES the framing in the 08-22 Werewolf entry (Clasp section), which filed the reverse merger as a
+  FAILURE ENDING ($47.5M Nasdaq listing vehicle, legacy holders at 6.8%). One quarter later it is the most-used door to the public
+  market and sophisticated syndicates choose it deliberately. Consequences: (a) model THREE public-market paths for a Blackbird
+  spinout, not two — the third is slower but shows the syndicate before the stock trades; (b) 17 transactions in a quarter implies a
+  growing inventory of cash-carrying shells with dead pipelines, so COUNTERPARTY SELECTION now matters more than the mechanism; (c) the
+  load-bearing number is the M&A count — this is a LIQUIDITY YEAR, and Clasp's post-readout financing, Aletira's Series A and the
+  GPR52 DC-vs-FIH timing call are all being decided into a window someone should be asking when it closes.** Source:
+  https://www.biospace.com/business/biopharma-reverse-mergers-rise-1-600-in-q3-to-rival-ipos
 
 - **THE BUYER'S PRICE IS ALREADY CAPPED — MOST-FAVORED-NATION AGREEMENTS NOW COVER ~89% OF THE BRANDED MARKET (added 2026-09-01
   Portfolio Watch item 5; announced 2026-08-31).** The administration announced MFN pricing agreements with **nine additional
@@ -890,6 +914,37 @@ _Last update: 2026-08-28_
   https://www.prnewswire.com/news-releases/lilly-to-acquire-merida-biosciences-to-advance-treatments-for-serious-autoimmune-and-allergic-diseases-302864686.html ·
   https://www.biospace.com/deals/deal-hungry-lilly-strikes-up-to-2-9b-immuno-play-for-merida
 
+- **BIDDER-SET: STRIKE BMS FROM THE NEAR-TERM LIST — SUPERSEDES THE 08-31 "MOVE DOWN, DO NOT STRIKE OFF" CALL (added 2026-09-02
+  Portfolio Watch item 4; published 2026-09-02).** The 08-31 demotion rested on soft evidence (an interview plus a Truist note that BD
+  is not a primary focus). **The hard reason: with the AstraZeneca merger talks COLLAPSED, ~80% of BMS revenue faces generic or
+  biosimilar competition by 2031 and the merger would have been the buffer.** What remains is **milvexian**, an **oral factor XIa
+  inhibitor**, **Phase 3 LIBREXIA-AF** in atrial fibrillation, **data expected 2027**. **Raghuram Selvaraju (H.C. Wainwright):**
+  failure means a **40–50% stock decline**, leaves BMS "hanging by a thread" with insufficient backup programs, and *"if BMS blows up
+  with milvexian, there may be a feeding frenzy once the carnage is over."* **Seamus Fernandez (Guggenheim): 60% probability of
+  success in AF, 70% in secondary stroke prevention.** **READ (Hemaka): a company whose next three years rest on a single Phase 3 that
+  its friendlier analysts handicap at 60/40 does not write a check this half for a Phase-2-ready novel-mechanism CNS asset — and if
+  milvexian misses, BMS becomes a TARGET rather than a buyer. Remove BMS from the near-term bidder set for Nxera's stated H2-2026
+  out-license window. Working list: OTSUKA, NEUROCRINE, ABBVIE/CEREVEL, NOVARTIS, SK BIOPHARMACEUTICALS.**
+  **COBENFY NUMBER UPDATED (supersedes the FY2025-only datapoint used since 08-10): H1 2026 = $119M ($56M Q1 + $63M Q2, +81% y/y)**
+  against **FY2025 $155M vs a >$310M forecast** — real growth on a pace that still does not close the gap; Selvaraju separately flags
+  the **AD-agitation label expansion running into the elderly side-effect profile.** **Third consecutive datapoint that mechanism was
+  never the constraint — keep the CHANNEL AND ACCESS plan beside the three-symptom-domain efficacy story, not behind it.** Source:
+  https://www.biospace.com/business/stripped-of-astrazeneca-safety-net-bms-could-face-carnage-if-high-risk-clinical-trial-fails
+- **BIOMARKER PACKAGE — THE INSTRUMENT QUESTION IS CENTRAL-ENGAGEMENT *OR* PERIPHERAL-STATE, AND THE PLAN MUST SAY WHICH (added
+  2026-09-02 Portfolio Watch item 5; published 2026-09-02).** The open item since 08-31 has been framed almost entirely as **central
+  target engagement — is there a PET tracer path for GPR52.** A **Journal of Clinical Investigation** paper from **Helena Reyes-Gopar
+  and Douglas F. Nixon (Feinstein Institutes)** with **George Washington** and **King's College London** is the reminder that this is
+  a choice, not a given: gene/transposable-element co-expression networks in **blood immune cells** of **84 recently diagnosed,
+  TREATMENT-NAIVE schizophrenia patients vs 97 controls** show **HERVs and LINE-1 elements acting as high-connectivity hubs in
+  controls and losing those connections in patients**, with immune genes the most tightly linked — positioning them as nodes linking
+  systemic inflammation to disease pathobiology. **NOT a target and NOT a validated biomarker (n=84, case-control, no demonstration it
+  tracks treatment response).** **SO-WHAT (Hemaka + Yixuan): a first-episode, treatment-naive molecular state readable in an ACCESSIBLE
+  TISSUE is a different and far cheaper instrument than receptor occupancy, answering a different question. Decide explicitly which
+  the development plan is buying — central engagement, peripheral state, or both — because what Phase 1 COLLECTS only gets decided
+  once. Lieber's matched-donor cohort infrastructure makes us a plausible contributor here rather than a consumer.** Converges with
+  **Martinowich's** multicellular warning (07-14 entry above). Source:
+  https://www.biospace.com/press-releases/feinstein-institutes-researchers-find-jumping-genes-at-the-center-of-blood-immune-networks-disrupted-in-schizophrenia
+
 ### Gut-targeted bimodal therapeutic — Crohn's & ulcerative colitis (JHU) ❌ TERMINATED
 _Last update: 2026-08-28_
 - **Status: TERMINATED — do not cover.** Oral, gut-restricted GCPII inhibitor
@@ -1032,7 +1087,7 @@ _Last update: 2026-08-31_
   stand up a watch on transferrin-receptor / BBB-shuttle-conjugated oligonucleotide programs entering the clinic.**
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-01_
+_Last update: 2026-09-02_
 - **What:** novel immunology platform that **selectively treats T-cell-mediated
   autoimmune disease**; T-cell engager platform with potential in ankylosing
   spondylitis and others.
@@ -1110,6 +1165,66 @@ _Last update: 2026-09-01_
   exact destination its whole strategy: it VALIDATES the axis and puts well-resourced incumbents in the lane before a JHU program is
   licensable. Move it up the queue; the first question is what the nanoparticle does that ArsenalBio cannot.** Source:
   https://www.biospace.com/press-releases/arsenalbio-announces-new-focus-on-in-vivo-car-t-programs-to-leverage-investment-in-t-cell-engineering
+- **THE COMPETING MODALITY STOPPED, AND THE REASON IS STRUCTURAL — ADD A CONTROL-ARCHITECTURE ROW TO THE TPP (added 2026-09-02
+  Portfolio Watch LEAD; Novartis paused 2026-08-24, public 2026-09-01).** **Novartis halted EIGHT trials of rapcabtagene autoleucel
+  (rap-cel)**, an autologous **CD19 CAR-T**, after **three deaths from immune effector cell-associated hemophagocytic syndrome
+  (IEC-HS)** — a hyperinflammatory reaction **distinct from CRS**, with no standard rescue. Scope: **Phase 2 AUTOGRAPH** in **SLE,
+  systemic sclerosis, idiopathic inflammatory myopathies**, plus **Phase 1/2** in **RA, generalized myasthenia gravis and MS**;
+  **oncology studies unaffected and still enrolling.** **BMS separately and voluntarily paused autoimmune enrolment for
+  zolacabtagene autoleucel (zola-cel)** over **"transient and reversible inflammatory events"** — no deaths, but a **February
+  publication of its Phase 1 already documented one IEC-HS case.** **William Blair (Sami Corwin): the RAPID-MANUFACTURING PLATFORMS
+  COMMON TO BOTH** yield a less-differentiated product that expands harder in the patient and "could be driving increased cell
+  expansion and the reported toxicities" — though indication and patient predisposition to a hyperinflammatory state may contribute.
+  Still advancing in the lane: **Cabaletta Bio** (late-stage myositis), **Kyverna** (stiff person syndrome filing guided year-end,
+  pivotal gMG enrolling).
+  - **DURABLE READ (Jon Robbins + Eddie): EXPANSION IS THE EFFICACY ENGINE AND THE TOXICITY DRIVER ON ONE KNOB.** You cannot dial
+    down the expansion causing the hyperinflammation without dialling down the B-cell depletion causing the remission. **A bispecific
+    engager is a DOSED DRUG — titratable, interruptible, discontinuable, and it requires no lymphodepletion. A living, expanding cell
+    product offers none of those controls. ACTION: add a CONTROL-ARCHITECTURE row to the Winnow TPP, beside the Lisraya
+    boxed-warning row (08-29) and the Merida/Imaavy selectivity row (08-30/09-01). The claim is "CONTROLLABLE," not "SAFER."**
+  - **TWO LIMITS, STATE THEM BEFORE AN INVESTOR DOES. (a) Engagers are not exempt from this biology — blinatumomab has produced HLH
+    and CRS is the class toxicity of CD3 engagement; an engager buys DOSE CONTROL, not exemption. (b) Keep the Imaavy discipline:
+    these are CD19 products depleting B CELLS, Winnow is T-CELL-mediated. The read is the CONTROL ARCHITECTURE, not the target.**
+  - **(Virginia Burger) — SHARPENS THE 09-01 ARSENALBIO ENTRY ABOVE:** ArsenalBio declared in-vivo CAR-T for autoimmunity its whole
+    strategy on 08-31, and **generating cells inside the patient affords LESS control over expansion than the ex-vivo route that just
+    stopped, not more.** This does not retire the **Schneck** sourcing lead — it **changes the first question** from "what does the
+    nanoparticle do that ArsenalBio cannot" to **"what does it do about expansion kinetics you cannot observe until the patient is
+    already inflamed."** Sources:
+    https://www.biospace.com/drug-development/novartis-pauses-car-t-studies-due-to-3-deaths-bms-follows-suit-after-safety-events ·
+    https://www.biopharmadive.com/news/novartis-bristol-myers-autoimmune-cell-therapy-trial-halt/829218/
+- **THE BROAD-KINASE COLUMN FAILED IN LUPUS, AND THE CAUSE WAS PATIENT SELECTION (added 2026-09-02 Portfolio Watch item 2; announced
+  2026-09-01).** **Alumis's LUMUS Phase 2b of envudeucitinib (ESK-001)** — a next-generation **oral TYK2 inhibitor** — in **408**
+  autoantibody-positive, moderately-to-severely active **SLE** patients, three doses vs placebo, **48 weeks**, top dose **40 mg BID
+  with maximal target engagement**. **MISSED the primary endpoint (BICLA at week 48) in the overall population, and missed every key
+  secondary — CLASI-50, SRI-4, LLDAS and corticosteroid reduction.** Well tolerated, no new safety signals. **NO RESPONSE RATE
+  DISCLOSED IN ANY ARM.** Company's account: **IFNGS-high (type-I interferon gene signature) patients showed "robust clinical
+  responses"** on primary and key secondaries but were **"unexpectedly under-represented,"** reducing overall response. CEO **Martin
+  Babler** frames a **"multi-indication opportunity across Type I interferon-driven diseases"** and is taking it to the agency for a
+  Phase 3 discussion; **psoriasis NDA still guided 4Q 2026.**
+  - **READ ONE — TPP (Jon Robbins + Eddie):** TYK2 is the **same broad-kinase column that produced the Lisraya dermatomyositis
+    approval nine days earlier**, and it just failed in lupus with a molecule **cleaner and better engaged than the approved one.
+    Broad kinase inhibition wins where ONE PATHWAY DOMINATES the disease and loses where the POPULATION IS HETEROGENEOUS** — a
+    structural argument for a clone-selective agent, and more persuasive than any tolerability comparison.
+  - **READ TWO — THE SELECTION RULE, NOW STATED IN BOTH DIRECTIONS (Hemaka; bears on GPR52 more than on Winnow).** The **08-29
+    BNT122-01** entry (see Clasp) established that **selecting patients buys enrichment, not efficacy**. This is the **mirror image:
+    FAILING to select can bury a real effect inside an unselected population.** Same rule twice — **the enrichment hypothesis must be
+    PRE-SPECIFIED, POWERED AND AGREED before the trial, not discovered in the subgroup table.** Ken Rhodes stated the buyer's half two
+    days earlier (genetics picks the target, biomarkers pick the patients); **Alumis is the invoice for having the first and not the
+    second — 408 patients and a failed readout on a drug that may well work.** Sources:
+    https://www.biospace.com/press-releases/alumis-announces-topline-results-from-envudeucitinib-phase-2b-trial-in-systemic-lupus-erythematosus-sle ·
+    https://endpoints.news/alumis-tyk2-drug-fails-in-lupus-trial-ceo-sees-clear-path-forward/
+- **THE ENGAGER ROUTE TO THE SAME B-CELL BIOLOGY GOT PAID FOR IN THE SAME WEEK THE CELL ROUTE STOPPED (added 2026-09-02 Portfolio
+  Watch item 3; announced 2026-09-01).** **Roche licensed SIM0660 from Simcere Zaiming** (subsidiary of China's Simcere
+  Pharmaceutical Group) — a **trispecific antibody targeting CD79A, CD19 and CD3**, engaging T cells against two B-cell antigens and
+  explicitly designed to **trigger T-cell-mediated killing while LIMITING CYTOKINE RELEASE**. **$75M upfront, up to $1.53B
+  milestones, plus royalties**; asset in **early-stage clinical trials**. Roche's collaboration covers **malignancies** (newly
+  diagnosed and R/R B-cell lymphoma), with the release naming **lupus and arthritis** among potential applications and possible
+  benefit after prior CD20- or CD19-directed therapy. **SO-WHAT (Eddie): in the same week the CELL-based route to deep B-cell
+  depletion in autoimmunity stopped over uncontrolled expansion, a large pharma paid for the ENGAGER route to the same biology, with
+  limited cytokine release as the stated design intent. Nobody has drawn that line publicly — draw it in a partnering
+  conversation.** (BD-comparator half of this event is logged in §1.) Sources:
+  https://www.biospace.com/drug-development/roche-finds-another-oncology-gem-in-asia-with-1-5b-b-cell-disease-partnership ·
+  https://endpoints.news/roche-taps-simcere-for-trispecific-t-cell-engager-pact-with-75m-upfront/
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
 _Last update: 2026-08-31_
@@ -2198,6 +2313,12 @@ _Last update: 2026-08-30_
   and call the implication (tailwind / threat / validation / watch-item).
 
 ## 4. Open items to fill in (next research passes)
+- **Winnow control-architecture row, evidenced (added 2026-09-02):** assemble the actual comparison behind the new TPP row — IEC-HS and CRS incidence and grade distribution for autoimmune CD19 CAR-T (rap-cel, zola-cel, Cabaletta, Kyverna) against the published HLH/CRS rates for CD3 bispecifics (blinatumomab as the worst case). The claim we can defend is dose control, and it needs numbers behind it before an investor asks. (Jon Robbins + Eddie.)
+- **Does Winnow lymphodeplete? (added 2026-09-02):** the control-architecture argument assumes it does not. Confirm the dosing and premedication regimen in Winnow's own development plan before the sentence goes in a deck.
+- **Rapid-manufacturing platforms as the suspect variable (added 2026-09-02):** William Blair fingers the accelerated-expansion manufacturing common to rap-cel and zola-cel. Pull what is public on Novartis T-Charge and BMS NEX-T, and whether any autoimmune CAR-T using conventional manufacturing has reported IEC-HS at this rate — this determines whether the read is "CAR-T in autoimmunity" or "these two products."
+- **Alumis IFNGS-high numbers (added 2026-09-02):** no response rates were disclosed in any arm. Watch for the full LUMUS dataset at a medical meeting — specifically the IFNGS-high prevalence in the trial versus the expected ~60-80% in SLE, and the BICLA delta in that subgroup. That prevalence gap is the whole story and it is currently unquantified.
+- **GPR52 biomarker instrument choice (added 2026-09-02; sharpens the 08-31 open item):** the plan must state whether it is buying central receptor occupancy (PET tracer path) or a peripheral treatment-naive state readout, or both. Cost, feasibility and what each buys in a Phase 2 patient-selection hypothesis. Is there a Lieber cohort that could contribute a peripheral arm? (Hemaka + Yixuan.)
+- **Reverse-merger shell inventory (added 2026-09-02):** if this is now a real third exit door, who is maintaining the list of cash-carrying Nasdaq shells with dissolved pipelines, and what does diligence on one look like? Ask Leerink or Sofinnova for the counterparty screen they use. (Emily + Eddie.)
 - **Third Rock exit-timing precedent (added 2026-09-01):** Merida went from a $121M Series A (2025-04-08) to a Lilly acquisition at up to $2.875B (2026-08-31) in seventeen months on initial Phase 1 data. What were the actual milestone gates, how much of the $2.875B is upfront, and what did Third Rock own at exit? Hemaka: get the deal structure from the Third Rock side and use it to frame the GPR52 DC-vs-FIH timing decision.
 - **Skylark 3'UTR FTO opinion, now priced (added 2026-09-01):** the BioMarin/Ascendis settlement values an encumbered composition position at 18–20% of net sales through the patent term. Commission the counsel opinion on WO2025179016A1's 3'UTR claims — scope, prosecution status, and whether a parallel GJB2 filing has published — before the Aletira Series A opens, and set the assignee docket watch that the 08-19 entry called for.
 - **Clasp eligible fraction vs a one-gate comparator (added 2026-09-01):** with rezatapopt (TP53 Y220C, no HLA gate, oral, 46% ORR / 10-month DoR) heading for a Q1-2027 accelerated-approval filing, compute CLSP-1025's multiplied eligible fraction (R175H prevalence × HLA-A*02:01 frequency) and the depth/durability differentiation the TCE has to show against an oral pill in the same mutation class.
