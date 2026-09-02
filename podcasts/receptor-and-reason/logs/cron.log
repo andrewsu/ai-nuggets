@@ -4026,3 +4026,31 @@ Journals: Nature-family RSS (npp, mp, tp, nbt, npjdigitalmed) + PubMed EDAT wind
 10. Agentic retrobiosynthesis, learned frontier selection — `arxiv:2608.30702`
 11. Unsupervised nuisance-perturbation evaluation of scFMs — `10.64898/2026.08.22.746357`
 === 2026-09-01T03:14:00-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-02T02:50:24-07:00 start receptor-and-reason ===
+Episode published (batch mode — `SKIP_TTS=1`, so audio/R2/feed/commit are the orchestrator's job).
+
+**Files written** to `podcasts/receptor-and-reason/scripts/`:
+- `2026-09-02-receptor-and-reason.md` — 11 items, 2,943 words, est. 17.7 min (in the 12–18 min target)
+- `2026-09-02-receptor-and-reason.rss-item.xml` — `__LENGTH__` / `__DURATION__` placeholders, parses as valid XML
+- `2026-09-02-receptor-and-reason.commit-msg`
+
+Ledger appended: 11 keys, now 103 episodes / 1,043 unique keys.
+
+## Candidate funnel
+
+**bioRxiv/medRxiv details API** (day-by-day, 08-26→09-02): 1,498 bioRxiv + 394 medRxiv scanned in full. 246 survived keyword+category relevance filtering; 33 shortlisted; **14 already shipped** (serotonin/Tau modifier, psilocybin/5-MeO-DMT beta state, HCN covalent modulators, A2A/A2B kinetics, striatal DA family-history, M1 mAChR neurovascular, early-life-stress neuropeptide, endocannabinoid-DA, closed-loop RL compound optimization, EcoXAI, TRPV1, Nav subtypes, HDAC3, organoid autism). One 504 Gateway Timeout on 09-01 cursor 210, recovered on retry.
+
+**arXiv**: shared cache had only 2 days of coverage (500-entry cap, 08-31/09-01), so I ran two live date-range queries covering the full 7 days — 88 items, 14 shortlisted, 4 already shipped.
+
+**Journals**: Nature-family RSS (npp/mp/nbt/npjdigitalmed) 32 in-window, 24 fresh. Wiley (CPT:PSP, CPT) 10 in-window. **All ScienceDirect journals contributed zero** — their RSS is undated, and Crossref-dating the 10 keyword-shortlisted items showed every one fell outside the 7-day window (latest 08-25).
+
+**Source gaps**: Int J Neuropsychopharmacology and Briefings in Bioinformatics Oxford RSS both 404. Psychiatric Times' August pipeline review is behind a registration wall (403 direct, wall via jina) — not eligible as a full-text pick, so I sourced the Axsome item from the primary press release instead. npj Digital Medicine bodies were unreadable (jina truncates to acknowledgements, direct fetch returns a JS shell, not yet in Europe PMC) — three otherwise-promising items dropped on the full-text gate. Nature npp/mp bodies are paywalled except `s41386-026-02534-8`.
+
+**Two things worth flagging:**
+
+1. **A recency trap cost me a pick.** "Individual Differences in Dopaminergic Modulation of Exploration-Exploitation Behaviour" appeared in the 08-27 day-file and was an ideal Tier 1 hit — it's **v6 of a preprint first posted 2026-01-31** with a byte-identical abstract. The details API reports each version's date, so revised preprints re-enter every recency window indefinitely, and neither dedup nor the full-text gate catches it. I version-checked every remaining bioRxiv pick (all v1, in-window DOI dates) and dropped two more on the same grounds (ASAREE v2 of 08-20, S2F-Agent v2 of May, Q-MOL v3 of Aug 2025). Saved to memory.
+
+2. **I cut the episode from 12 items to 11.** My first draft ran 20.1 min. Rewording only got it to 18.5, so I dropped the weakest item (mentalization in humans vs. LLMs) rather than keep shaving prose — it was the least actionable of the set, and Tier 2 stays represented by the lead and the cross-tissue proteomics item.
+
+**Shortlisted, not picked** (all fresh and full-text-readable, worth revisiting): gabapentinoid PK/PD in *C. elegans*; GABA-B receptors gating sex-specific NAc plasticity; cryo-EM of a triazole α-conotoxin GI mimetic at muscle nAChR; rare-variant architecture of autism across neuropsychiatric disorders (medRxiv); DBS axon-model complexity comparison; HDAC11 inhibitors in silico + in vitro; Chemi-Proteome Language Attention Network.
+=== 2026-09-02T03:21:02-07:00 done  receptor-and-reason (exit 0) ===
