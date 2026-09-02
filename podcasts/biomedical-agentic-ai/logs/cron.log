@@ -4039,3 +4039,40 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 No source failures. No deferrals for unreadable full text — the chosen item's PDF extracted cleanly.
 === 2026-09-01T02:09:26-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-02T02:00:24-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — TTS, R2 publish, feed update and commit are the orchestrator's job.
+
+**Files written** (`podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-09-02-ec-kg-unified-repurposing-knowledge-graph.md` — 895 spoken words (cap 1150)
+- `2026-09-02-ec-kg-unified-repurposing-knowledge-graph.rss-item.xml` — validated XML, `__LENGTH__`/`__DURATION__` placeholders in place
+- `2026-09-02-ec-kg-unified-repurposing-knowledge-graph.commit-msg`
+
+**Pick:** "Every Cure Knowledge Graph: A Unified Biomedical Knowledge Graph for Drug Repurposing" (bioRxiv v1, posted 2026-08-31). Full text read via `r.jina.ai` on the `.full.pdf` URL after `fetch_preprint.py` fell through to abstract-only. Paper URL prefix (`10.64898/`) confirmed against the bioRxiv details API.
+
+---
+
+## Candidate funnel — 2026-09-02
+
+**bioRxiv** (2026-08-30 → 09-02, day-by-day sweep, cursor advanced by returned `count`): 600 records scanned (41 / 229 / 318 / 12 per day), 21 survived keyword+relevance filter, 6 substantive after discarding spurious matches. One 504 and one read timeout, both recovered on retry.
+- **✅ CHOSEN** — Every Cure Knowledge Graph: A Unified Biomedical KG for Drug Repurposing — `10.64898/2026.08.26.747253v1`
+- S2F-Agent: sequence-to-function orchestration — `10.64898/2026.05.13.724757` (v2 of a May preprint; out of window as a fresh discovery)
+- CyChat: conversational Cytoscape app — `10.64898/2026.08.28.747833`
+- TigerAI: LLM-generated genetic evidence platform — `10.64898/2026.08.29.748046`
+- SNAIL: bioinformatics software NER from literature — `10.64898/2026.08.26.731133`
+- Gut microbiome metadata in NCBI SRA — `10.64898/2026.08.31.742652`
+
+**arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, covering 08-31 and 09-01 only — cache 500-cap again clips the 4-day window): 179 passed agentic∩biomedical filter, 12 shortlisted.
+- **Runner-up** — MedAgent-R1: faithfulness-aware RL for evidence-grounded medical reasoning — `arxiv.org/abs/2608.30676` (full text read via mutool; a complete draft was written and then set aside — outcome-only RL raises accuracy 5 points while citation fabrication goes 16.5%→31.8%, fixed by a multiplicative gate. Passed over because it would be the fourth consecutive "the composite metric hides the failure" episode after 08-31, 09-01, and because EC-KG sits closer to the listener's own field. Worth picking up on a later day.)
+- AdaPath: multi-hop implicit biomedical KGQA — `2608.30556`
+- Dr. Claw: AI scientist workspace — `2609.00365`
+- LLM judges verify presence, not absence (omission blindness) — `2608.31016`
+- EvoSCM, EGT-KG, Sci-ZSEL, ontology-learning scale study, healthcare-agent workflow benchmark, S3C-LLM, cancer-genomics AI review, IdeaForecastBench
+
+**PubMed** (reldate=5, term-filtered): 400 PMIDs, 64 passed filter, 3 substantive — agentic orchestration at ALS beamline 5.3.1 (materials, not biomedical); LLM-assisted data harmonization pipeline (JMIR AI); protein language models + Gene Ontology for functional residues.
+
+**ChemRxiv**: nothing in the 4-day window (newest hits were July 2026 and earlier).
+
+**Policy / funders**: ARPA-H announced RAPID awards 08-31 — up to $98.5M/4.5 years to UNC, Sage Bionetworks, FDNA and Probably Genetic for rare-disease AI-ready datasets. Real candidate, ranked below EC-KG (announcement-level detail only, no agentic/technical substance to summarize). NIH/NSF/HHS: nothing on-target.
+
+**News / product launches**: nothing net-new in the 3-day window.
+=== 2026-09-02T02:12:56-07:00 done  biomedical-agentic-ai (exit 0) ===

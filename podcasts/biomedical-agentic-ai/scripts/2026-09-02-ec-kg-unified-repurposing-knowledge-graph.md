@@ -1,0 +1,29 @@
+# EC-KG — merging three biomedical knowledge graphs, and the noise that arrives with the coverage
+
+## Script
+
+Today's pick is a bioRxiv preprint from Every Cure, with the Renaissance Computing Institute and UNC Chapel Hill, describing the Every Cure Knowledge Graph. If you've spent time in the Translator ecosystem the author list will look familiar. And the question underneath it matters more the more we point agents at knowledge graphs: what actually happens when you merge three of them?
+
+Here's the setup. There are several serious biomedical knowledge graphs in circulation — RTX-KG2, ROBOKOP, PrimeKG — and anyone building on top of them picks one, because that's the practical choice, and then quietly inherits that graph's ingestion pipeline and its blind spots. They're complementary in principle. In practice you can't just concatenate them. The same drug carries three identifiers, the same relationship is expressed in three predicate vocabularies, and once you stack them you can no longer tell where any given claim came from.
+
+So this is a provenance-first merge. Seven million nodes, eighty-one million edges, ninety-five primary data sources, everything normalized to the Biolink Model. Two engineering choices are worth knowing about, and both are about refusing to lose information.
+
+The first is that identifiers get resolved through Babel's node normalizer, which groups equivalent identifiers into cliques and picks a preferred one — but each source graph is normalized separately, before merging, so you can still compute a normalization rate per source afterwards. The second is the one I'd underline. Edges are merged on subject, predicate, object, and the knowledge source. So when two databases make the same assertion you get a single edge carrying both provenances — about half a million edges gained overlapping publication records, three million gained independent supporting sources — and that's precisely what you need to compute confidence downstream. And when two sources disagree about the same pair, both edges stay. They don't adjudicate. Conflicting claims are preserved and labeled rather than resolved.
+
+That decision has a sharp consequence inside the paper. PrimeKG doesn't track provenance at the edge level, so when it got merged in they had to treat the entire graph as one opaque knowledge source among ninety-five, even though it ingests more than twenty sources underneath. That's the cost of skipping provenance, made concrete: your graph becomes one citation instead of twenty.
+
+Now the part I actually want you to hear, because this is where the paper is honest with itself. Merging is supposed to reveal connections that none of the constituent graphs had on their own. They test that properly. They take a hundred drug-disease pairs with known off-label use, enumerate every indirect path up to three hops, and compare against a hundred randomly rewired versions of the same graphs as a null model. At two hops, indirect paths go from about twelve hundred in the largest source graph to about twenty-three hundred in the merged one, comfortably above the rewired null. So the integration is generating real semantic structure and not merely edge density.
+
+Then look at three hops. RTX-KG2 alone offers about five million paths between a drug and a disease. The merged graph offers close to fourteen million. That's the combinatorial blowup you'd predict, and to their credit they don't hide from it — they classify the path shapes that exist only in the merged graph, find three hundred forty-eight of them, and report that forty-five percent are biomedically meaningful. The rest route through node types like "human" and "food." Most of the newly available paths are junk.
+
+So integration buys coverage and buys noise in the same motion, and the thing that makes that trade survivable is exactly the provenance layer. You have to be able to ask of any path where each hop came from, or you have no basis on which to filter.
+
+The downstream validation is deliberately unglamorous — Node2Vec embeddings, a random forest, predicting drug-disease treatment edges with the training edges stripped out to prevent leakage. On the standard test set of approved indications, PrimeKG's curated character wins on disease-level ranking, which is exactly what you'd expect from a graph assembled out of clinical curation. On off-label indications — the out-of-distribution case that repurposing actually cares about — the merged graph wins. Reporting both splits is the right call, and the second one is the interesting one.
+
+And then there's the limitation they put in writing, which is worth more than the benchmark. Strong performance on data science metrics, they say, does not always translate into real-world plausibility of the predicted repurposing opportunities. This is a group that runs the clinical follow-through — botulinum toxin A for major depressive disorder, lenalidomide and dexamethasone for a subgroup of Rosai-Dorfman disease — so they have watched that gap open up in front of them.
+
+Why this belongs on your radar beyond the resource itself: as we point agents at biomedical knowledge graphs, the graph stops being a database and becomes the agent's evidence base. An agent traversing a merged graph with no edge-level provenance cannot distinguish a claim asserted by four independent curated sources from one text-mined a single time out of an abstract — and it will narrate both with identical confidence. The real contribution here isn't the seven million nodes. It's that after the merge, the ninety-five sources are still individually addressable.
+
+It's on Hugging Face under a permissive license, with a pipeline reproducible in about three hours on one machine with enough memory.
+
+Paper link: https://www.biorxiv.org/content/10.64898/2026.08.26.747253v1
