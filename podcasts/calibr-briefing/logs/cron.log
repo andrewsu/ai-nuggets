@@ -3799,3 +3799,41 @@ Full text opened for every chosen item. Nothing deferred for unavailable full te
 
 **Two judgment calls worth flagging.** The registry still lists the paused rap-cel lupus and vasculitis studies as `RECRUITING` (verified May/June), so the public record hasn't caught up — I said so in the spotlight rather than implying the holds are visible there. And on Calibr's own switchable CAR-T: the April 2026 autoimmune IND clearance is well documented, but `NCT06913608` reads `WITHDRAWN — Business Decision` (March 3, 2026) and the ABBV-461 breast-cancer combo `TERMINATED` (May 2026). I used the switch as the conceptual counterpoint and stated the registry status plainly without asserting whether the program is live — that discrepancy is unresolved from public sources and is Travis' own program, so it seemed wrong to guess either way.
 === 2026-09-01T02:37:05-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-02T02:20:24-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, feed edit, and commit, and wrote the transient stubs instead.
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-09-02-pharma-headlines.txt` (1,983 words) + `.rss-item.xml` + `.commit-msg`
+- `podcasts/calibr-briefing/scripts/2026-09-02-alumis-tyk2-lupus-spotlight.txt` (2,060 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs validate as XML (with the `itunes:` namespace bound); no URLs, DOIs, or markdown in the spoken text.
+
+**Spotlight:** Alumis' Phase 2b LUMUS miss for envudeucitinib (ESK-001) in SLE — a Foresite Capital portfolio print (led the March 2024 $259M Series C), shares −58%. The analytical spine is that the surviving argument is a prespecified interferon-gene-signature-high subgroup reported *with no numbers at all*, that this wasn't a target-engagement failure (dose-dependent IFN suppression, AEs below placebo), and that the governing precedent — anifrolumab's TULIP-1/TULIP-2 — cuts against Alumis' own premise: in TULIP-2 the IFNGS-high subgroup ran ~48% vs ~30.7% placebo, essentially the same delta as the overall population, so enrichment did not lower placebo response or widen separation. BMS's POETYK-SLE Phase 3s, not Alumis, will settle TYK2 in lupus.
+
+**Candidate funnel**
+
+Sources scanned:
+- Endpoints News index via `r.jina.ai` — WORKED (still recovered); ~20 items, 9 net-new since yesterday's cron
+- BioSpace `/latest-news-press-releases` + `/press-releases` — WORKED; ~40 items, ~12 substantive after discarding investor-conference/inducement-grant noise
+- BioPharma Dive — article-level fetch worked
+- BioWorld via jina — WORKED (exact intraday share price + investor framing)
+- Fierce Biotech via jina — FAILED (238-byte 1×1 tracker probe), not retried per the known cached-block behavior
+- Clinical Trials Arena — index returned nothing newer than Aug 28; no Sept items
+- SEC EDGAR 8-K — FAILED (`curl` 0 bytes, WebFetch 403); numbers not recoverable
+- STAT — not attempted (bodies paywalled, index not needed)
+
+Shortlist:
+- **CHOSEN (spotlight + headline 1)** Alumis envudeucitinib LUMUS Phase 2b SLE miss — https://www.biopharmadive.com/news/alumis-lupus-tyk2-inhibitor-lumus-study-failure/829286/ · primary: https://www.globenewswire.com/news-release/2026/09/01/3354011/0/en/alumis-announces-topline-results-from-envudeucitinib-phase-2b-trial-in-systemic-lupus-erythematosus-sle.html
+- **CHOSEN** Roche/Simcere SIM0660 CD79a×CD19×CD3 trispecific, $75M/$1.53B — https://www.biospace.com/drug-development/roche-finds-another-oncology-gem-in-asia-with-1-5b-b-cell-disease-partnership
+- **CHOSEN** ArsenalBio cuts 99 (majority of staff) for in vivo CAR-T — https://www.biospace.com/business/arsenalbio-sacrifices-majority-of-staff-in-pivot-to-in-vivo-car-t
+- **CHOSEN** BMS unhedged into milvexian after AZ talks died — https://www.biospace.com/business/stripped-of-astrazeneca-safety-net-bms-could-face-carnage-if-high-risk-clinical-trial-fails
+- **CHOSEN** BioMarin/Ascendis achondroplasia settlement, 18–20% royalties — https://www.biospace.com/business/biomarin-nabs-big-royalties-in-achondroplasia-patent-settlement-with-ascendis
+- **CHOSEN** Arrowhead plozasiran sHTG, analysts split — https://www.biospace.com/drug-development/arrowheads-new-redemplo-findings-in-severe-hypertriglyceridemia-have-analysts-split
+- **CHOSEN** GSK mRNA flu HA+NA into Phase 3 — https://www.biospace.com/drug-development/gsk-to-launch-phase-3-trial-for-mrna-based-flu-vaccine-amid-resurgence-for-the-modality
+- **CHOSEN** ARPA-H $125M / 5 teams, on-demand personalized RNA — https://endpoints.news/arpa-h-awards-125m-for-manufacturing-custom-rna-therapies-on-demand/
+- **CHOSEN (AI)** BigHat BHB810 CDH17 ADC, first AI-designed program dosed — https://www.biospace.com/press-releases/bighat-biosciences-announces-first-patient-dosed-in-phase-1-trial-evaluating-bhb810-a-novel-cdh17-directed-antibody-drug-conjugate-for-the-treatment-of-gastric-cancer-and-other-advanced-gastrointestinal-tumors
+- **CHOSEN (AI)** Ono/Aitia causal-AI neuro discovery option — https://www.biospace.com/press-releases/ono-pharma-enters-into-a-drug-discovery-partnership-with-aitia-in-neurological-diseases
+- **CHOSEN** Reverse mergers 17 in Q3 vs 1 in Q2 — https://www.biospace.com/business/biopharma-reverse-mergers-rise-1-600-in-q3-to-rival-ipos
+- **CHOSEN (brief)** Cellares laid off 68 in New Jersey — BioSpace layoff tracker
+- Passed: "Health Tech meets AI giants" (Gemini/Zocdoc, not therapeutic); Lilly-dealmaking-spreads-VC-wealth (mentioned in one line, follows Monday's Merida item); aTyr efzofitimod timing update, Telix BiPASS enrollment, Ultragenyx GSDIa 96-week publication, Styx/ZoeNCure ADC agreement (all thin); Novartis Rhapsido MS follow-up, MFN takeaways, ARCH $3B, Electra S-1, Merida (all shipped yesterday)
+=== 2026-09-02T02:33:58-07:00 done  calibr-briefing (exit 0) ===
