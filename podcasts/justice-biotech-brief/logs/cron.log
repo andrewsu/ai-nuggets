@@ -2791,3 +2791,35 @@ Source failures: none. Endpoints article body is paywalled (headline index reada
 
 Why it won: dead-center on two of Justice's stated interests (CAR T, autoimmune biologics), and it carries a design argument rather than just an event — expansion is both the efficacy engine and the leading toxicity suspect for T-Charge/NEX-T products, which turns the read-across into an architecture question and lands on dose-titratable CD19xCD3 engagers (CLN-978 EULAR 2026 data, verified separately). Deferred-list note: the transglutaminase ADC preprint (`10.64898/2026.08.18.745451`) is still readable and unshipped, but at 14 days it has hit the deferral cap — I recorded that it should ship on the next thin day or be closed.
 === 2026-09-01T02:47:29-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-02T02:40:24-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md batch mode I stopped after the script plus the two stub files — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those).
+
+**Files written**
+- `podcasts/justice-biotech-brief/scripts/2026-09-02-sim0660-cd79a-cd19-cd3-trispecific-tce-roche-simcere.md` (1,218 words, ~5 min)
+- `…​.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** SIM0660 — Simcere Zaiming's CD79a × CD19 × CD3 trispecific T cell engager licensed to Roche (announced 2026-09-01, $75M up front / up to $1.530B).
+
+The take: the antigen pairing is the story, not the money. CD79a turns on before immunoglobulin heavy-chain rearrangement and before CD20, and turns off *after* CD20 — persisting into the late plasma cell stage, where CD19 is lost (Chu & Arber, *Appl Immunohistochem Mol Morphol* 2001). So a CD79a+CD19 pair aims at exactly the antibody-secreting compartment that survives rituximab/obinutuzumab in autoimmunity, and at the fallback marker pathologists use when CD20 is lost after anti-CD20 therapy in lymphoma. The skeptical counterweight: the workhorse clinical CD79a reagent HM57 binds an *intracellular* epitope, and CD79b is the chain with the validated surface epitope (hence polatuzumab vedotin) — so an extracellular grip on CD79a at primary-B-cell density is the load-bearing unsupported claim, and I verified there is no ClinicalTrials.gov registration for the molecule. Platform logic is credible from sibling SIM0500 (GPRC5D × BCMA × CD3, AbbVie-optioned Jan 2025), which discloses a deliberately low-affinity CD3 arm recovering potency via dual-antigen avidity. It also slots into a Roche board that already holds Polivy, two CD20×CD3 engagers, obinutuzumab approved in lupus nephritis (Oct 2025), and a 30-patient Phase 2 of mosunetuzumab in SLE opened May 2026 (NCT07598396) — and it's the direct sequel to yesterday's autoimmune CAR-T episode.
+
+**Candidate funnel**
+
+bioRxiv (details API, day-by-day sweep 08-31 → 09-02): 559 records pulled in full (229 + 318 + 12); 33 survived keyword filter; substantive shortlist after discarding spurious matches (`checkpoint` → cell-cycle/spindle, `JAK1` → introgression, `BCMA` → unrelated):
+- Multiple mechanisms regulate the nanoscale organization of PD-L1 at the cell surface — https://www.biorxiv.org/content/10.64898/2026.08.31.748200
+- Disruption of the interferon-gamma axis limits CAR T cell efficacy against AML — https://www.biorxiv.org/content/10.64898/2026.08.28.747900
+- Antibody-dependent priming of spontaneous germinal centers by autoreactive B cells — https://www.biorxiv.org/content/10.64898/2026.08.27.745373
+- KDM5D restrains CD8+ T cell antitumor immunity through TCR and cholesterol-exhaustion programs — https://www.biorxiv.org/content/10.64898/2026.07.23.740424
+
+News (BioSpace `/latest-news-press-releases`, Endpoints index via jina, BioPharma Dive homepage): ~25 items scanned, 4 on-target:
+- **SIM0660 → Roche, CD79a×CD19×CD3 trispecific TCE, $75M/$1.53B — CHOSEN** — https://www.prnewswire.com/news-releases/simcere-zaiming-enters-exclusive-license-agreement-with-roche-for-sim0660-global-development-302866230.html
+- ArsenalBio cuts "majority" of staff pivoting to in vivo CAR-T — https://www.biospace.com/business/arsenalbio-sacrifices-majority-of-staff-in-pivot-to-in-vivo-car-t (on-target but a layoff story, thin biology)
+- Alumis TYK2 fails lupus Phase 3 — already the calibr-briefing spotlight today; and per memory the topline is number-free
+- Novartis Rhapsido/remibrutinib Phase 3 MS safety data — covered by calibr-briefing 09-01
+
+Policy (ARPA-H / NIH / NSF): ARPA-H 09-01 "selects teams to make made-to-order genetic medicine manufacturing possible" and 08-31 AI-for-rare-disease awards — both off-target for this show.
+
+Source failures: **Fierce Biotech** — `WebFetch` homepage 403; `r.jina.ai` returned a domain-level `AbuseAlleviationError` (DDoS suspected, "blocked until Wed Sep 02 2026 10:31:37 GMT"), so per the known cached-past-expiry behavior I did not retry and sourced the story from the PR Newswire primary release plus BioSpace, PharmExec and BioPharm International. **Endpoints News** — index readable via jina (best recency filter of the run), article body paywalled. **BioPharma Dive** — homepage stale, nothing newer than 08-28.
+
+One note on the bioRxiv sweep: my first script crashed on `messages[0].total` being a string, so it exited 0 having collected only day one. I caught it from the stderr log and reran; the 559-record figure above is from the complete sweep.
+=== 2026-09-02T02:50:38-07:00 done  justice-biotech-brief (exit 0) ===
