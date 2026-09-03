@@ -60,6 +60,17 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     (early-clinical, in-hand). The lesson does not move: the differentiator has to be something the buyer cannot source in Shanghai or
     Seoul.** Sources: https://www.biospace.com/drug-development/roche-finds-another-oncology-gem-in-asia-with-1-5b-b-cell-disease-partnership ·
     https://endpoints.news/roche-taps-simcere-for-trispecific-t-cell-engager-pact-with-75m-upfront/
+  - **AND NOW A DISCOUNT ON THAT COMPARATOR — FDA says site inspectability is a MATERIAL regulatory-strategy factor (added
+    2026-09-03 Portfolio Watch item 3; published 2026-09-02).** Four senior FDA officials — **Michael Davis (CDER), Karim Mikhail
+    (CBER), Michelle Tarver (CDRH), R. Angelo de Claro (Oncology Center of Excellence)** — published an editorial stating that
+    inspection access is **"not an administrative footnote"** and that sponsors building a regulatory strategy around data from sites
+    the agency cannot reach should **"think again."** Reps. **John Moolenaar** and **Ben Cline** are pushing FDA to reject Chinese
+    data without recent audits. FDA will **add bioresearch-monitoring inspectors at foreign offices, expand remote assessments,
+    strengthen reviewer training, and publish inspection findings.** Context: China was **<8% of global trials in 2010** and
+    **overtook the US in annual registered trials in 2020**. **READ (Eddie): this does not reverse the $45M/$75M Asia-platform
+    comparator, but it attaches a discount that did not exist a week ago — and it is the first argument in a while FOR the value of a
+    clinical package run under FDA inspection.** Source:
+    https://www.biospace.com/fda/fda-raises-bar-for-foreign-site-inspections-as-china-trials-surge
 
 - **THE EXIT MAP HAS THREE PUBLIC-MARKET DOORS, NOT TWO — REVERSE MERGERS ROSE 1,600% IN Q3 (added 2026-09-02 Portfolio Watch item 6;
   published 2026-09-02).** Per **Leerink Partners**: **20 biotech IPOs and 19 reverse mergers year-to-date**, close to 1:1 — but
@@ -189,6 +200,19 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     Baltimore-nexus deck with the access mechanism spelled out. (Yixuan): ask UM Ventures what the actual path is for
     a Blackbird BioHub company to get instrument time, and what it costs.**
     https://biobuzz.io/news/umd-wins-17-3-million-to-build-a-national-cloud-lab-for-biomanufacturing-with-training-built-into-the-foundation/
+  - **THE SAME VENDOR IS NOW INSIDE TWO FEDERAL MANUFACTURING PROGRAMS (added 2026-09-03 Portfolio Watch item 6; announced
+    2026-09-02).** **ARPA-H awarded up to $125M across five teams** under its **GIVE program (Genetic Medicines and Individualized
+    Manufacturing for Everyone)** to build systems that produce a **personalized RNA medicine in under a week**. Largest award: **up
+    to $54.5M to Waterfall Scientific**, prime on a six-company consortium named **ESCALATOR** — **Ansa Biotechnologies, Volta Labs,
+    Polymorphic Biosciences, Tensentric, Ginkgo Bioworks** — for end-to-end **continuous-flow cell-free mRNA synthesis + LNP
+    formulation + microfluidics + analytics**. **Ginkgo is in this consortium AND is the company deploying 11 robotic units into the
+    CRAB Lab above, which UMB co-owns. Same vendor, two federal programs, one inside a partner institution — a concrete line for the
+    Baltimore-nexus deck (Maisha) and a better reason for the UM Ventures instrument-access call (Yixuan) than the one we had on
+    08-30.** **STRATEGIC READ: non-dilutive federal capital is currently pointed at MANUFACTURING, not discovery. A Blackbird program
+    whose hard problem is a MAKING problem has a funding channel a target-discovery program does not — worth an honest pass over the
+    pre-spinout list.** Sources:
+    https://www.biospace.com/press-releases/waterfall-scientific-awarded-up-to-54-5-million-from-arpa-h-to-lead-consortium-developing-continuous-flow-cell-free-mrna-manufacturing-and-characterization-platform ·
+    https://endpoints.news/arpa-h-awards-125m-for-manufacturing-custom-rna-therapies-on-demand/
 - **Lieber Institute for Brain Development (LIBD)** — neuropsychiatry; affiliated
   with JHU. Source of the schizophrenia program.
 - **Open to partnering with institutions outside of Maryland**, so long as the
@@ -329,6 +353,26 @@ the individual entries below, each marked ❌ TERMINATED.
 - **Watch:** AAV/gene-therapy tissue-selectivity and cell-type-specific
   promoter/splicing approaches; otology/hearing-loss gene therapy (e.g.
   Regeneron/Decibel, Eli Lilly/Akouos, Sensorion); RNA-splicing platforms.
+- **WHICH KIND OF SAFETY DOES SELEXON BUY? — get this sentence right before the Series A (added 2026-09-03 Portfolio Watch
+  item 3; events published 2026-09-02).** Two previously **undisclosed deaths** in Chinese **investigator-initiated** gene-therapy
+  trials became public. **(a)** A **six-year-old girl** treated **March 2025** for **Snijders-Blok-Campeau syndrome** (R1025W in
+  ***CHD3***): the **CRISPR base editor was too large for one vector, so it was split across two AAV9 vectors and injected into the
+  CSF** — **trillions of viral particles**. She **died on day 7 of thrombotic microangiopathy**, judged **"definitely related"** by
+  the hospital's ethics board. **All four monkeys in the preceding toxicology study had moderate-to-severe liver damage and one
+  high-dose animal had kidney injury — and the ethics committee approved before it had reviewed the final tox report.** The death was
+  **not disclosed** when the related preclinical work published in *Nature* in **Feb 2026**. **(b)** A boy in **HuidaGene's** CRISPR
+  **DMD** IIT **died of ARDS**; unconfirmed for ~a year. **China's Order 818** (issued Oct 2025, in force May 2026) now mandates
+  large-animal models, **GMP** product, **5-business-day SAE reporting** and **automatic suspension** on an SAE.
+  **THE DURABLE ALETIRA READ (Geoff Lynn): the consensus is that VECTOR DOSE killed her, not the edit — complement-driven TMA at very
+  high capsid load, the same toxicity behind this month's run of AAV clinical holds. Cell-type-selective EXPRESSION does not fix
+  VECTOR-DOSE toxicity. SELEXON restricts WHERE the transgene is expressed; it does not reduce HOW MANY capsids are injected. If the
+  Series A narrative leans on "safer gene therapy," the diligence question back is WHICH safety — and the honest answer today is
+  transgene safety, not capsid safety. The version of the claim that DOES reach dose: if restricting expression lets you achieve
+  effect at lower total vector, that is a strong dose argument, but it must be SHOWN as a dose-response in target tissue, not
+  asserted from mechanism. ACTION: get that experiment into the data room.** Secondary: do not let this file as a China story — **the
+  tox package was ignored, not absent.** Sources:
+  https://www.fiercebiotech.com/biotech/after-2-undisclosed-gene-therapy-deaths-can-china-iit-alternative-regulatory-path-still-be ·
+  https://crisprmedicinenews.com/news/brain-directed-gene-editing-ends-in-death/
 - **DIRECT COMPETITOR NOW CLINICAL in the lead indication (2026-08-18 Portfolio
   Watch LEAD; event dated 2026-08-11, caught a week late):** **Skylark Bio**
   (Cambridge MA, out of stealth 08-11; CEO **Jodi Cook, PhD**; sci. advisor
@@ -1048,7 +1092,7 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-08-31_
+_Last update: 2026-09-03_
 - **What:** Oligonucleotide-based medicine (**ASO**) against a highly
   sought-after target profile that could treat **all forms of ALS and FTD**.
 - **Science:** leverages biology pioneered at JHU across decades and multiple
@@ -1086,8 +1130,31 @@ _Last update: 2026-08-31_
   injection."** Same discipline as the eplontersen entry above, applied to **route of administration**. **ACTION (Jon Robbins):
   stand up a watch on transferrin-receptor / BBB-shuttle-conjugated oligonucleotide programs entering the clinic.**
 
+- **THE OPEN-LABEL-PACKAGE RULE — a whole CNS antisense program died of an inference, not of chemistry (added 2026-09-03
+  Portfolio Watch LEAD; announced 2026-09-02).** **Ultragenyx's apazunersen (GTX-102)** — intrathecal ASO inhibiting **UBE3A-AS**
+  to lift imprinted silencing of the paternal *UBE3A* allele in **Angelman syndrome** — **missed the Phase 3 *Aspire* primary**
+  (change from baseline in **Bayley-4 cognitive raw score**) **and the key secondary** (net response on the **Multidomain Responder
+  Index**: cognition, receptive communication, behavior, gross motor, sleep). **~129 participants, ages 4–17, genetically confirmed
+  full maternal *UBE3A* deletion.** Company language is the load-bearing part: **no differences between treated and control groups on
+  the composite OR on the mean change of any of the five individual endpoints.** **Safety consistent with Phase 1/2 — the
+  oligonucleotide did not fail.** Program held **Breakthrough / Orphan / Rare Pediatric Disease / Fast Track** (FDA) and **Orphan /
+  PRIME** (EMA) off a Phase 1/2 + long-term-extension package the company and the patient community both read as showing real
+  developmental gains; Kakkis: *"Based on everything we observed in the robust Phase 1/2 … we are disappointed."* Ultragenyx will
+  decide the program's **disposition** and implement **significant expense reductions** — a commercial-stage company, cutting hard
+  the morning after one CNS Phase 3. **DURABLE RULE: zero separation across five independent domains is the signature of an effect
+  that was never there, not an underpowered trial. What failed is the inference from OPEN-LABEL DEVELOPMENTAL SCALES to a controlled
+  trial — a control arm subtracts out maturation, expectancy and rater drift.** **LIVE READ-THROUGH:** **Ionis's obudanersen
+  (ION582)** — same target, same mechanism — is in **Phase 3 REVEAL**, ~200 patients, **2:1 vs placebo, 52 weeks, quarterly 80 mg,
+  Active–Recruiting as of 2026-08-27**, two-arm since a Dec-2025 amendment, **also Breakthrough-designated off its own open-label
+  Phase 1/2. Its de-risking precedent evaporated; mechanism-vs-endpoint gets answered on Ionis's money — watch for it.**
+  **ACTION (Anthony + Hemaka): ALS/FTD has what Angelman lacks — a fluid biomarker. Tofersen missed its primary functional endpoint
+  and reached the market on neurofilament. Make NfL the EVIDENTIARY SPINE of the NuGate package, not a supporting secondary, and pick
+  a functional endpoint that can move inside a trial we can afford.** Sources:
+  https://ir.ultragenyx.com/news-releases/news-release-details/ultragenyx-announces-phase-3-aspire-results-angelman-syndrome ·
+  https://ir.ionis.com/news-releases/news-release-details/first-patient-dosed-pivotal-phase-3-reveal-clinical-study-ion582
+
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-02_
+_Last update: 2026-09-03_
 - **What:** novel immunology platform that **selectively treats T-cell-mediated
   autoimmune disease**; T-cell engager platform with potential in ankylosing
   spondylitis and others.
@@ -1225,6 +1292,24 @@ _Last update: 2026-09-02_
   conversation.** (BD-comparator half of this event is logged in §1.) Sources:
   https://www.biospace.com/drug-development/roche-finds-another-oncology-gem-in-asia-with-1-5b-b-cell-disease-partnership ·
   https://endpoints.news/roche-taps-simcere-for-trispecific-t-cell-engager-pact-with-75m-upfront/
+
+- **THE PROVOCATION-DESIGN QUESTION — a 50-patient, single-dose, 8-week histology readout in a chronic autoimmune disease (added
+  2026-09-03 Portfolio Watch item 4; topline 2026-09-02).** **Teva's TEV-53408**, an **anti-IL-15 monoclonal antibody**, met its
+  primary endpoint in a **placebo-controlled Phase 2a gluten-challenge study in celiac disease**: **50 adults** on a gluten-free diet
+  with **minimal baseline intestinal damage**, **a single dose**, then **two weeks later a six-week daily gluten challenge**; at
+  **week 8**, statistically significant and clinically meaningful **prevention of gluten-induced intestinal damage vs placebo**, plus
+  **lower GI symptom scores**. **Well tolerated, no safety signals. FDA Fast Track** already granted. Analyst peak sales **$1.5–2B**.
+  IL-15 licenses **intraepithelial lymphocyte cytotoxicity** — a tissue-resident T-cell axis, adjacent to Winnow's biology.
+  **DURABLE READ (Jon + Anthony): the DESIGN is the transferable asset, not the target. They bought an 8-week endpoint by PROVOKING
+  the disease on a schedule instead of waiting for a flare. Standing question for every autoimmune/inflammation program on the
+  pre-spinout list: is there a provocation that converts a chronic endpoint into an 8-week one? For Winnow's T-cell-mediated
+  indications a challenge model is not obvious and may not exist — but a company that can run a 50-patient proof of mechanism is
+  STRUCTURALLY CHEAPER TO FINANCE, and that lands in the term sheet.** Convergence worth logging: in a single week the **cell route
+  killed three patients** (Novartis rap-cel), the **broad-kinase route missed in lupus** (Alumis envudeucitinib), and a **cytokine
+  antibody hit in fifty patients**. **Controllable, dosed, selective — three TPP columns picking up outside evidence in seven days.**
+  Sources:
+  https://www.tevapharm.com/news-and-media/latest-news/teva-announces-positive-topline-results-from-phase-2a-study-in-celiac-disease-for-its-anti-il-15-antibody/ ·
+  https://clinicaltrials.gov/study/NCT06807463
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
 _Last update: 2026-08-31_
@@ -2217,6 +2302,23 @@ raises, exits, or crosses a scientific milestone.
 - **Sourcing significance — direct sourcing lead + platform IP.** Platform IP wraps every downstream therapeutic program touching the anionic corner of LNP design space. Three separate multi-billion-dollar therapeutic areas fall out: (1) **Tolerogenic mRNA for autoimmunity** — Cabaletta + Vor Bio + Kernel active competitive space; splenic-biased delivery is the workhorse formulation for tolerance induction. (2) **In-vivo mRNA-CAR-T** — Umoja Biopharma + Capstan Therapeutics + Orbital Therapeutics + Cartesian Therapeutics + Moderna are racing toward this as commercial CAR-T economics wobble; in-vivo formulation skips the ex-vivo T-cell engineering step. (3) **T-cell-directed cancer vaccines** targeted at splenic marginal-zone antigen presentation. Bolt-on to any existing anionic-LNP program a Blackbird portfolio-adjacent NewCo might be building. **Direct portfolio adjacency to Luetkens UMB cathepsin-B-CAR-T story** (§2b) — an in-vivo mRNA-CAR-T formulation chassis pairs with an adjunct that preserves CAR-T persistence for a two-asset NewCo thesis.
 - **Diligence questions.** (1) **IP status.** Is the cleavable-cholesterol crosslinker composition-of-matter filed at JHTV, and is the tunable-length claim inside that filing or a separate application? Manuscript itself does not disclose a filing. (2) **Extension breadth.** Whether the crosslinker chemistry generalizes to other anionic helper lipids (DOTAP variants, phosphatidylserine derivatives, non-cholesterol anchors) or is limited to the cholesterol-anchor formulation demonstrated here. (3) **Mao founder disposition.** Mao has serial INBT-anchored commercial history — does he carve this out as its own platform vehicle, add it to an existing partnership, or license out non-exclusively? Different investment thesis in each case.
 - **Watch.** JHTV posture on the crosslinker composition-of-matter + tunable-length medicinal-chemistry claim; Mao founder disposition; anionic-LNP splenic-biased mRNA competitive landscape (Nutcracker Therapeutics, Anjarium Biosciences, Orbital Therapeutics, Cartesian Therapeutics, Umoja Biopharma, Capstan Therapeutics); pairing conversation with Luetkens cathepsin-B-CAR-T UMB program as a candidate two-asset NewCo thesis on in-vivo mRNA-CAR-T + persistence-preserving adjunct.
+- **ROUND-SIZE COMPARABLE, AND WHAT THE MARKET IS ACTUALLY BUYING (added 2026-09-03 Portfolio Watch item 2; out of stealth
+  2026-09-02).** **Typewriter Therapeutics** — **$56M Series A** led by **AN Venture Partners** + **RA Capital Management** (with
+  ANRI, Gemseki, SBI US Gateway Fund) — for **target-primed reverse transcription (TPRT)** on the **R2 retrotransposon**, from
+  **Prof. Emeritus Haruhiko Fujiwara (University of Tokyo)**; founded **Feb 2022**. **Two-part all-RNA therapy:** payload mRNA
+  encoding the R2 protein + a second RNA carrying the therapeutic gene; they assemble intracellularly, insert the gene at a specific
+  site, then the machinery degrades with the mRNA. **LNP-delivered, non-viral, re-dosable.** **Matthew Stanton** CEO, **Leanne
+  Peiser** CSO, **Mikael Dolsten** (ex-Pfizer CSO) board, **Stanley Riddell** (Fred Hutch) SAB. Initial focus **in vivo CAR T +
+  genetic liver disease**; **first NHP studies late 2026**; proof-of-concept so far in **humanized mouse models**.
+  **READ (Virginia + Avi): $56M PRE-PRIMATE for a delivery-plus-insertion platform with a named academic origin and a heavyweight
+  board is the price anchor for the Mao conversation. And note WHAT was sold — not a target, not even a cargo, but INSERTION-SITE
+  CONTROL and RE-DOSABILITY. Properties, not biology — the same shape as the Generate half-life frame (COPD theme entry).**
+  **Two diligence questions to carry into any comparison: (1) the R2 family's native landing site sits in the ribosomal RNA gene
+  repeats — is that where a payload belongs in a human T cell? (2) permanent CAR insertion in vivo carries an
+  integration/clonal-expansion question a transient mRNA CAR does not.** Sequence context: ArsenalBio cut 99 staff to go all-in on
+  in vivo (08-31/09-01) → Novartis + BMS halted the *ex vivo* autoimmune trials (09-01/09-02) → this round (09-02). Sources:
+  https://www.prnewswire.com/news-releases/typewriter-therapeutics-emerges-from-stealth-with-56-million-series-a-financing-to-pursue-in-vivo-car-t-medicines-302866871.html ·
+  https://endpoints.news/typewriter-raises-56m-for-jumping-gene-technology-and-in-vivo-car-t-therapies/
 
 ### Aluco BioSciences (San Carlos CA) — Lieber-adjacent West Coast neurology + endocrine biotech, tracked-company for Chief Business Officer first-read ⚠
 - **What.** California-incorporated biotech (Delaware / California SoS 2024-03-24 filing; located at 733 Industrial Rd, San Carlos, CA 94070). Public website (alucobio.com) is a soft-launch placeholder as of 2026-07-17. Positioning language: "neurological and endocrine disease areas"; "novel approach to drug development"; "compounds tailored to specific disease indications." No public team, target, platform, or funding disclosure yet.
@@ -2257,6 +2359,23 @@ raises, exits, or crosses a scientific milestone.
 - **CANDID CATCH / the build.** Mechanism/target-validation paper, NOT a molecule (tool compounds only). LXR has a KNOWN liability: broad LXRα activation drives hepatic steatosis + hypertriglyceridemia (stalled prior LXR programs). The company = "build or in-license a brain-penetrant, liver-sparing LXR modulator against a newly validated rationale"; paper notes **LXRβ** is the isotype expressed in OPCs = natural handle for a selective/liver-sparing molecule. That selectivity is both the central risk AND the moat.
 - **Actions.** Avi — is a β-selective, CNS-penetrant LXR modulator tractable medchem + who already has chemical matter to in-license around (LXRβ-biased modulators, prior-art landscape). Eddie — open the JHTV field-of-use conversation now (provisional-filing moment; Kornberg + Calabresi is founding-team caliber).
 - **Watch.** JHTV provisional-filing status on the LXR-remyelination-in-MS use/mechanism; Kornberg + Calabresi founder disposition; competitive remyelination programs (anti-LINGO estate, clemastine follow-ons, other metabolic-reprogramming approaches); any commercial LXRβ-selective/liver-sparing chemistry programs to in-license.
+- **THE CONTROL ARM JUST MOVED — a SECOND BTK inhibitor hit disability progression, so this is an ADD-ON program now (added
+  2026-09-03 Portfolio Watch item 5; announced 2026-09-02).** **Novartis' remibrutinib (Rhapsido)** — a **BTK inhibitor**, already
+  approved in **chronic spontaneous urticaria** (Sept 2025) — reported **Phase 3 REMODEL-1 and REMODEL-2** in relapsing MS: **lower
+  annualized relapse rate vs teriflunomide** (active comparator), **larger reductions in inflammatory brain lesions**, and **benefit
+  on 3- and 6-month confirmed disability progression** at **nominal** statistical significance; **figures not yet released** (detail
+  at an upcoming medical meeting). **No concerning liver signal** — material for a class where **Roche's fenebrutinib sat on FDA
+  clinical hold in late 2023 over liver injury**. Fenebrutinib was the **first** BTK inhibitor to reach nominal significance on
+  progression. **Novartis files 2027; Roche targets FDA clearance in 2026.**
+  **DURABLE READ (Esther + Hemaka): two BTK inhibitors now move progression and NOT ONE of them repairs myelin. Both halves matter.
+  Good: progression is a demonstrably movable endpoint, and two large pharma now have a commercial reason to want a stackable repair
+  agent. Hard: the control arm for any remyelination asset from here is a patient ALREADY ON A BTK INHIBITOR, so the trial is an
+  ADD-ON trial and the effect must be visible on top of a drug that is already slowing the disease. THE QUESTION FOR KORNBERG AND
+  CALABRESI IS NO LONGER WHETHER LXR ACTIVATION RESTORES OPC MATURATION UNDER IFN-γ — the paper answered that in mouse and human
+  cells — IT IS WHAT THE ADD-ON READOUT IS. Calabresi runs MS trials; myelin imaging vs a visual-pathway measure vs something else
+  decides financeable-program vs very-good-paper. Thirty-minute conversation.** This is the same comparator-drift discipline logged
+  under NuGate: power against the standard of care that will exist AT READOUT. Source:
+  https://www.biospace.com/drug-development/novartis-rhapsido-cuts-ms-progression-in-phase-3-trial-teeing-up-roche-battle
 
 ### Doetzlhofer lab ZBTB20 / midkine–PTPRZ1 cochlear supporting-cell regeneration (JHU SOM Solomon H. Snyder Neuroscience + Otolaryngology–HNS / Center for Hearing and Balance) — active sourcing lead + 2026-08-23 Radar LEAD + direct Aletira payload adjacency ⚠
 - **Lab / people:** **Angelika Doetzlhofer, Ph.D.** (senior). First author **Charles T. Morgan** (NIDCD F31 fellow); **Zia Ur Rehman** (now UTMB Otolaryngology). Zbtb20-floxed mice from **Ulrich Mueller (JHU SOM)**. Lab's prior line of work: **LIN28B / TRIM71 / HMGA2** reprogramming of cochlear supporting cells.
