@@ -1,0 +1,9 @@
+Script body: 15314 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/6 (2977 chars) -> 134.3s ✓
+  [mistral:en_paul_neutral] chunk 2/6 (2994 chars) -> 147.7s ✓
+  [mistral:en_paul_neutral] chunk 3/6 (2750 chars) -> 137.4s ✓
+  [mistral:en_paul_neutral] chunk 4/6 (2710 chars) -> 123.8s ✓
+  [mistral:en_paul_neutral] chunk 5/6 (2947 chars) -> 136.4s ✓
+  [mistral:en_paul_neutral] chunk 6/6 attempt 1 FAILED: chunk duration 36.5s < floor 37.2s (likely truncated)
+  [mistral:en_paul_neutral] chunk 6/6 (931 chars) -> 37.3s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-09-03-the-part-you-cant-read.mp3 [mistral] 6,271,730 bytes, 783.9s

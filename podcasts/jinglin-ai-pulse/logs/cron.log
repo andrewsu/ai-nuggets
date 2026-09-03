@@ -2387,3 +2387,44 @@ Long-form podcasts (last 14 days):
 
 No source failures this run. All 14 cited URLs return 200 except `openai.com/index/path-to-astra/`, which 403s to automated fetchers but is the canonical page (read via the reader proxy, and it's the URL behind the HN submission).
 === 2026-09-02T02:48:11-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-03T02:30:10-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I skipped TTS, R2 publish, feed edit, and the commit — the orchestrator handles those after batch TTS.
+
+**Files written** (`podcasts/jinglin-ai-pulse/scripts/`):
+- `2026-09-03-the-part-you-cant-read.md` — 2,476 spoken words (~12 min at this show's 1.2× rate; recent episodes run 205 wpm effective)
+- `2026-09-03-the-part-you-cant-read.rss-item.xml` — validated as XML, `__LENGTH__` / `__DURATION__` tokens in place
+- `2026-09-03-the-part-you-cant-read.commit-msg` — one line
+
+**Episode structure**
+- **Twitter Pulse 1 (lead):** The Information's report that Astra uses *recurrent depth* / "opaque recurrence," and the 24-hour public fight — Buck Shlegeris and Ryan Greenblatt (Redwood), Zvi Mowshowitz, and OpenAI chief scientist Jakub Pachocki answering on the record. The take: chain-of-thought records were the forensic instrument in the agent-swarm retrospective, so this is a monitorability cost charged by the capability jump itself — the reverse of a safety tax. Flagged the epistemic status explicitly (paywalled, single source, no published architecture).
+- **Twitter Pulse 2:** Google's cyber gate inversion — Gemini 3.8 Flash Cyber behind the 650-partner Fairwind Program inside the CodeMender harness, publishing *patching* numbers and stating it prioritized fixing over exploitation — set against AISLE's 6–0 field result on curl versus a public, timestamped zero from Mythos and Codex Security. Caveats read out loud (all six Low severity, one codebase, vendor marketing).
+- **Twitter Pulse 3:** Muse Spark 1.3's two SKUs for the same model (12.5× input for the no-training tier), the Mistral opt-out doc at 440 HN points, and the US brief in NYT v. OpenAI.
+- **Money Moves:** HiddenLayer $100M against Gartner's $2.83B securing-AI estimate; Palo Alto's $500M for Console.
+- **Deep Cut:** Latent Space's "PRs NOT Welcome" — Vercel's software factory, Grammel's trust-in-agent-configuration argument, Schott naming the succession cost himself — resolved against curl, where the real variable is whether the sender bears a cost for being wrong.
+
+**Candidate funnel**
+
+- **Hacker News front page** — 70 items scanned, 14 AI-relevant, 6 shortlisted:
+  - ✅ Gemini 3.8 Flash and 3.8 Flash Cyber (1,014 pts) — hn=49537553 — **chosen**
+  - ✅ Six curl CVEs after OpenAI and Anthropic came back with zero (167 pts) — hn=49536114 — **chosen**
+  - ✅ Muse Spark 1.3 (579 pts) — hn=49541256 — **chosen**
+  - ✅ Mistral training opt-out (440 pts) — hn=49535284 — **chosen**
+  - ✅ The Emergent Symbolic Structure of Artificial Neural Networks (287 pts, arXiv 2608.29530) — **chosen** (compressed to a counterweight beat)
+  - ⬜ Fable 5.1 World Modeling (244 pts) — deferred; world models are on-brief but yesterday's episode already led on Fable 5.1
+  - ⬜ Manufactured sources behind AI recommendations (412 pts) — real AEO story, held for a day when it can anchor a segment
+  - ⬜ Go grandmaster defeats KataGo (41 pts) — **rejected on recency**: URL slug dates it to July 21, 2026
+- **Investment / business news (TechCrunch AI, 25 items, last 3 days)** — 4 shortlisted:
+  - ✅ HiddenLayer $100M Series B — **chosen**
+  - ✅ Palo Alto Networks $500M for Console — **chosen**
+  - ✅ US government sides with OpenAI on training data — **chosen** (folded into the data-pricing segment)
+  - ⬜ Wonderful doubles to $5B; Empirik launches with $21M — no strategic signal beyond "AI rounds are big"
+- **Long-form podcasts** — Dwarkesh, Latent Space, Interconnects feeds checked:
+  - ✅ Latent Space, "PRs NOT Welcome" (Sep 1) — **chosen as Deep Cut**
+  - ⬜ Dwarkesh, Ajeya Cotra (Sep 1) — used in yesterday's episode; referenced as a callback only
+  - ⬜ Dwarkesh, "The Rise and Fall of Agent Civilizations" — already used Aug 30
+  - ⬜ Interconnects — newest post is Aug 17, outside the 14-day podcast window
+- **Source failures / gaps:**
+  - `r.jina.ai/huggingface.co` — HTTP 403 `AbuseAlleviationError`, domain-level block until 09:55 UTC. Worked around with direct `curl` to `huggingface.co/papers/date/2026-09-03`; 24 papers scanned, none selected (papers are the sister show's beat).
+  - **X/Twitter — not readable from this host** (documented limitation; xcancel serves a browser challenge, x.com requires auth). @Zefan_Cai's feed was **not** read today. All X-sourced quotes in the script come from secondary reporting that reproduces them verbatim — TechCrunch's Sep 2 piece and Zvi Mowshowitz's Substack post — and the script attributes them as written posts rather than implying direct feed access.
+  - The Information is paywalled; its report is cited through TechCrunch and Zvi, both of which quote Amir Efrati directly, and the script says so on air.
+=== 2026-09-03T02:43:20-07:00 done  jinglin-ai-pulse (exit 0) ===
