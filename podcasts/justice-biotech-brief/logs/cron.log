@@ -2823,3 +2823,38 @@ Source failures: **Fierce Biotech** — `WebFetch` homepage 403; `r.jina.ai` ret
 
 One note on the bioRxiv sweep: my first script crashed on `messages[0].total` being a string, so it exited 0 having collected only day one. I caught it from the stderr log and reran; the 559-record figure above is from the complete sweep.
 === 2026-09-02T02:50:38-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-03T02:40:10-07:00 start justice-biotech-brief ===
+All three artifacts are written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — no `gen_tts.py`, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+## Run summary — Justice's Biotech Brief, 2026-09-03
+
+**Shipped (staged for batch TTS): Ivonescimab — PD-1 × VEGF bispecific beats pembrolizumab on overall survival in HARMONi-2, and the endpoint that was supposed to expose it did not**
+
+Files written to `podcasts/justice-biotech-brief/scripts/`:
+- `2026-09-03-ivonescimab-harmoni-2-pd1-vegf-bispecific-overall-survival-pembrolizumab.md` (1,351 words)
+- `...rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` tokens in place)
+- `...commit-msg`
+
+Full text read before drafting: Akeso PR Newswire release (verbatim body), Summit Therapeutics parallel release (verbatim body), Summit's April 2025 interim-OS release, the Lancet Oncology HARMONi primary-analysis reporting, and ClinicalTrials.gov records for HARMONi-2/-3/-7 (enrollment, site counts, sponsor, single- vs multi-region).
+
+### Candidate funnel
+
+**bioRxiv** (details API, day-by-day 09-01/09-02/09-03) — 431 unique records scanned (318 / 95 / 20; the two latest days barely populated at cron time), 24 keyword hits, **0 survived relevance**. Every hit was spurious or off-target: "checkpoint" as spindle/cell-cycle checkpoint (Cryptococcus spindle position, m1A58 tRNA, PIF1 G-quadruplex), JAK/STAT basic biology (Nup93 paralogs, polycythemia vera, archaic introgression), VEGF in ophthalmology (aqueous humor outflow, retinal photoreceptors), plus one v4 repost of a mouse Treg reference landscape.
+
+**News / press** — Fierce Biotech: **failed** (HTTP 403 direct and via `r.jina.ai`; now consistently blocked, not intermittent). Endpoints via `r.jina.ai` and BioSpace `/latest-news-press-releases` both returned; PR Newswire, Summit IR and Akeso IR all readable.
+
+Shortlist after discarding off-target items:
+- **Ivonescimab HARMONi-2 interim OS met vs pembrolizumab** — Akeso 09-02 17:00 ET — [PR Newswire](https://www.prnewswire.com/news-releases/ivonescimab-meets-overall-survival-key-secondary-endpoint-in-interim-analysis-of-phase-iii-harmoni-2-study-demonstrating-statistically-significant-and-clinically-meaningful-benefit-versus-pembrolizumab-in-first-line-pd-l1-positiv-302867930.html) — **CHOSEN**. Squarely on his named VEGF/PD-L1 interest, and the first head-to-head OS win for the class.
+- "Deaths in Novartis CAR-T trial force a reckoning over acceptable risk in autoimmune disease" — Endpoints, 14h — follow-up analysis of the halt already shipped as the 09-01 episode; excluded as a re-pick.
+- Typewriter Therapeutics $56M Series A, R2-retrotransposon target-primed reverse transcription for in vivo CAR-T — on-target platform item but preclinical and data-free.
+- Teva TEV-'408 anti-IL-15 Phase 2a hit in celiac gluten challenge — autoimmune biologic, 50 patients, topline only.
+- ArsenalBio cuts 99 staff pivoting to in vivo CAR-T — 09-02, business rather than data.
+
+**Policy/funder** — ARPA-H (newest: $125M RNA-manufacturing award, 09-02), NIH and NSF press pages checked via the Endpoints/BioSpace indexes; nothing on-target beyond the FDA foreign-trial-data inspection story, which is sector context rather than a Justice pick.
+
+### Housekeeping
+
+Closed the show's rolling bioRxiv deferral list in memory: the transglutaminase ADC site-selectivity preprint (`10.64898/2026.08.18.745451`) is now 16 days old and never got picked, so it's retired under the ~2-week deferral cap rather than rolled forward a sixth time. No open deferrals remain for this show.
+
+One thing worth flagging for a future prompt tweak: this is the third consecutive run where bioRxiv contributed zero on-target candidates, and the false-positive rate is concentrated in two keywords — `checkpoint` (cell-cycle, not immune) and `jak` (JAK/STAT basic biology, plus substring hits). Tightening those two would cut most of the scanning cost without losing recall.
+=== 2026-09-03T02:48:08-07:00 done  justice-biotech-brief (exit 0) ===

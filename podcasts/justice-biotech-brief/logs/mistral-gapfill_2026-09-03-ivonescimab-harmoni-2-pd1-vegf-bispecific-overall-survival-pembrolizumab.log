@@ -1,0 +1,5 @@
+Script body: 8508 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2993 chars) -> 143.5s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2705 chars) -> 168.2s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (2807 chars) -> 119.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-09-03-ivonescimab-harmoni-2-pd1-vegf-bispecific-overall-survival-pembrolizumab.mp3 [mistral] 3,596,373 bytes, 449.5s
