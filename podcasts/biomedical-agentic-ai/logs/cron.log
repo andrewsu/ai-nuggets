@@ -4076,3 +4076,31 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 **News / product launches**: nothing net-new in the 3-day window.
 === 2026-09-02T02:12:56-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-03T02:00:10-07:00 start biomedical-agentic-ai ===
+Episode written for 2026-09-03. `SKIP_TTS=1` was set, so I stopped after the script plus the two batch-mode stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those).
+
+**Files written**
+- `podcasts/biomedical-agentic-ai/scripts/2026-09-03-tigerai-llm-genetic-evidence-curation.md` (928 spoken words, under the 1150 cap)
+- `...rss-item.xml` (validates as XML; `__LENGTH__` / `__DURATION__` placeholders in place)
+- `...commit-msg`
+
+**Pick:** TigerAI — GPT-5 run over the same 13,022 target-indication pairs as Minikel et al.'s hand curation, scored not on annotator agreement but on whether its genetic-support labels predict clinical launch (RS 2.74 vs 2.63, 20.5% vs 12.4% coverage among launched programmes). Full text read via `r.jina.ai` on the `.full.pdf` URL (the `.full` HTML was abstract-only). The take centers on two things the abstract buries: GPT-4o under the identical protocol finds twice the coverage and lands *below* the human baseline, so calibration is the product; and tool use is disabled in the methods, so the "source-linked evidence ledger" is recalled, not retrieved. The extra coverage is concentrated almost entirely in launched programmes (+8.1 points, vs +1.5 early), which is the shape outcome-knowledge leakage would produce — their leakage scan was lexical and can't detect it.
+
+---
+
+**Candidate funnel**
+
+- **bioRxiv** — full day-by-day details-API sweep 2026-08-31→09-03, 662 records (229/318/95/20). Keyword filter → 40 hits, 34 discarded as spurious ("chemical agent", "non-autonomously", "LLM" inside words). Substantive shortlist:
+  - TigerAI: AI-powered genetic evidence platform — `10.64898/2026.08.29.748046` — **CHOSEN**
+  - CyChat: conversational Cytoscape app for no-code reproducible network analysis — `10.64898/2026.08.28.747833`
+  - BloClaw: capability-gated AI4S workstation for auditable computational biology — `10.64898/2026.08.26.747436` (design paper; explicitly reports no benchmark results yet)
+  - Audited vibe coding / fetal-like convergence of tumor proteomes — `10.64898/2026.08.26.745609`
+  - SNAIL: bioinformatics software NER from literature — `10.64898/2026.08.26.731133`
+  - Every Cure Knowledge Graph — `10.64898/2026.08.26.747253` — excluded, shipped 2026-09-02
+- **arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries (08-31: 22, 09-01: 319, 09-02: 159; 500-cap truncation on 08-31 noted). 107 biomedical-title hits → shortlist: NS-Copilot (2609.01971), HyGRAIL (2609.02056, materials KG not biomedical), ClinTraceBench (2609.01111), ToolGate (2609.02067), Ontology-ranker fusion for rare disease (2609.02473), multi-agent medical fault points (2609.02191), EvoSCM (2609.01526), ReTA EHR-graph augmentation (2609.01839).
+- **PubMed** — two queries (pdat reldate 5 → 4,706, too broad; narrowed title/abstract query → 118; edat reldate 5 → 27). Shortlist: LLMs build inconsistent KGs from one immune-checkpoint corpus (PMID 42682840), AResKGLM (42685265), agentic systems in computational pathology review (42665811), DeepAL + SPOKE for synergistic gene pairs (42666872), TeroSeek (42681866).
+- **ChemRxiv** — `site:chemrxiv.org` search returned nothing inside the 4-day window (newest relevant hit was 2026-07-28, XPS agent framework). No candidates.
+- **News / product launches** — nothing on-target in the 3-day window; searches surfaced only June 2026 items (NVIDIA BioNeMo Agent Toolkit) and general AI news.
+- **Policy / funders** — ARPA-H, NIH, NSF news pages checked; no agentic-AI or biomedical-AI program launches. (NIH's 09-02 items were an NLM director appointment and a GLP-1 lifespan study.)
+- **Source failures** — bioRxiv details API returned one HTTP 504 (cursor 30 on 08-31) and Cloudflare 429'd `r.jina.ai` once on the TigerAI PDF; both recovered on retry. No source dropped.
+=== 2026-09-03T02:09:04-07:00 done  biomedical-agentic-ai (exit 0) ===

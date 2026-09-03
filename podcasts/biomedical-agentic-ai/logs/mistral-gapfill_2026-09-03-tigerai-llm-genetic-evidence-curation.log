@@ -1,0 +1,4 @@
+Script body: 5629 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2957 chars) -> 135.6s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2671 chars) -> 127.2s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-09-03-tigerai-llm-genetic-evidence-curation.mp3 [mistral] 2,237,797 bytes, 279.7s
