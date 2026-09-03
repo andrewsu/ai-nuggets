@@ -3837,3 +3837,41 @@ Shortlist:
 - **CHOSEN (brief)** Cellares laid off 68 in New Jersey — BioSpace layoff tracker
 - Passed: "Health Tech meets AI giants" (Gemini/Zocdoc, not therapeutic); Lilly-dealmaking-spreads-VC-wealth (mentioned in one line, follows Monday's Merida item); aTyr efzofitimod timing update, Telix BiPASS enrollment, Ultragenyx GSDIa 96-week publication, Styx/ZoeNCure ADC agreement (all thin); Novartis Rhapsido MS follow-up, MFN takeaways, ARCH $3B, Electra S-1, Merida (all shipped yesterday)
 === 2026-09-02T02:33:58-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-03T02:20:10-07:00 start calibr-briefing ===
+Both episodes are written and staged. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the transient stubs and did not run TTS, publish to R2, edit the feed, or commit — `publish_pending.py` handles all of that after batch TTS.
+
+**Files written**
+
+- `podcasts/calibr-briefing/scripts/2026-09-03-pharma-headlines.txt` (2,256 words, ~11 min)
+- `podcasts/calibr-briefing/scripts/2026-09-03-ultragenyx-angelman-aso-spotlight.txt` (2,472 words, ~12 min)
+- Matching `.rss-item.xml` stubs (both validate as XML, `__LENGTH__` / `__DURATION__` placeholders) and `.commit-msg` stubs
+
+**Candidate funnel**
+
+Sources scanned:
+- **Endpoints News** (via `r.jina.ai` index) — 24 items scanned, 9 in-window (past ~24h) and on-target. Article bodies paywalled; used the index for discovery, then primary releases for facts.
+- **BioPharma Dive** — homepage + AI topic page; 5 items, 4 on-target. AI topic URL 404s.
+- **BioSpace** — `/latest-news-press-releases`, 10 items dated Sept 2–3, 6 on-target.
+- **Fierce Biotech** — HTTP 403 direct and via jina on both the homepage and the RSS endpoint. One retry, also 403. **Skipped**; recovered its content indirectly via search.
+- **GEN AI topic page** — returned a 2020-vintage cached page via jina, no usable dates. **Skipped.**
+- **STAT** — readable via jina this time (unusual), but only a thin summary; used for framing only.
+- Targeted searches for the AI-in-drug-discovery focus area returned **nothing net-new for Sept 2–3** — the last fresh items (BigHat, Ono/Aitia) shipped in yesterday's episode.
+
+Shortlist after discarding stale and already-shipped items:
+- **Ultragenyx apazunersen (GTX-102) Phase 3 Aspire failure in Angelman** — globenewswire 2026-09-02 — **CHOSEN, headlines lead + spotlight**
+- **Novartis remibrutinib REMODEL-1/-2 in relapsing MS** — novartis.com media release — **CHOSEN, item 2**
+- **uniQure AMT-130 BLA + UK MAA in Huntington's** — uniqure.gcs-web.com — **CHOSEN, item 3**
+- **Teva TEV-'408 anti-IL-15 Phase 2a in celiac** — ir.tevapharm.com — **CHOSEN, item 4**
+- **Asha Das overruled CBER review team on Replimune RP1** — endpoints.news — **CHOSEN, item 5**
+- **FDA raising bar on foreign trial data / China site inspections** — biospace.com — **CHOSEN, item 6**
+- **China gene-editing deaths → AAV dose debate (HuidaGene HG302)** — endpoints.news — **CHOSEN, item 7**
+- **MHRA bars Tavneos for new UK patients** — biospace.com / bioworld.com — **CHOSEN, item 8**
+- **Typewriter Therapeutics $56M Series A, R2 retrotransposon TPRT** — prnewswire — **CHOSEN, item 9**
+- **ARCH Venture targeting $3B fund** (Xaira co-lead with Foresite Labs) — endpoints.news — **CHOSEN, item 10**
+- Novartis/Bristol autoimmune CAR-T halt follow-ups — **dropped, shipped 09-01 spotlight and 09-02 headlines**
+- ArsenalBio 99 layoffs; ARPA-H $125M RNA; Lilly/Merida; GSK mRNA flu; Trump pricing deals; Electra IPO; K Health — **dropped, all shipped 09-01/09-02**
+- Foresite Labs' Jorge Reis-Filho hire — **dropped, Aug 19, outside recency window**
+- BioSpace careers/hiring pieces — **dropped, not on-target**
+
+Spotlight rationale: the Angelman failure beat the field on three counts — it is the largest single-day value move (-44.7%, ~$1.14B), it is a *clean* null across six prespecified measures rather than an ambiguous miss, and it carries a transferable methodological finding (natural-history-controlled open-label trials in pediatric neurodevelopmental disease are close to uninterpretable) that reprices Ionis's REVEAL and Oak Hill's BEACON and speaks directly to Travis's AI focus area on the limits of target certainty. Full text read: Ultragenyx press release (verbatim), Nov 2024 FAST summit Phase 1/2 data, Aspire design releases, Ionis REVEAL and HALOS releases, Roche/Oak Hill rugonersen history, Q2 2026 financials.
+=== 2026-09-03T02:34:49-07:00 done  calibr-briefing (exit 0) ===

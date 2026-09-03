@@ -1,0 +1,8 @@
+Script body: 15470 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/6 (2976 chars) -> 136.8s ✓
+  [mistral:en_paul_neutral] chunk 2/6 (2981 chars) -> 134.4s ✓
+  [mistral:en_paul_neutral] chunk 3/6 (2984 chars) -> 149.3s ✓
+  [mistral:en_paul_neutral] chunk 4/6 (2830 chars) -> 120.1s ✓
+  [mistral:en_paul_neutral] chunk 5/6 (2989 chars) -> 121.0s ✓
+  [mistral:en_paul_neutral] chunk 6/6 (705 chars) -> 29.0s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-09-03-ultragenyx-angelman-aso-spotlight.mp3 [mistral] 6,374,339 bytes, 796.8s
