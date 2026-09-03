@@ -4054,3 +4054,35 @@ Ledger appended: 11 keys, now 103 episodes / 1,043 unique keys.
 
 **Shortlisted, not picked** (all fresh and full-text-readable, worth revisiting): gabapentinoid PK/PD in *C. elegans*; GABA-B receptors gating sex-specific NAc plasticity; cryo-EM of a triazole α-conotoxin GI mimetic at muscle nAChR; rare-variant architecture of autism across neuropsychiatric disorders (medRxiv); DBS axon-model complexity comparison; HDAC11 inhibitors in silico + in vitro; Chemi-Proteome Language Attention Network.
 === 2026-09-02T03:21:02-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-03T02:50:10-07:00 start receptor-and-reason ===
+Episode published to the pipeline. Running under `SKIP_TTS=1`, so per PIPELINE.md I wrote the script plus the two transient stubs and appended the ledger; TTS, R2 publish, feed edit, and commit are the orchestrator's steps.
+
+**Written:**
+- `podcasts/receptor-and-reason/scripts/2026-09-03-receptor-and-reason.md` — 11 items, ~2,970 spoken words (≈17 min at this show's measured rate)
+- `…2026-09-03-receptor-and-reason.rss-item.xml` — validated XML, `__LENGTH__`/`__DURATION__` tokens in place
+- `…2026-09-03-receptor-and-reason.commit-msg`
+- Ledger: 11 keys appended, now 104 episodes / 1,054 unique keys
+
+All 11 paper URLs verified live against the bioRxiv details API and arXiv (correct `10.64898/` prefix throughout).
+
+## Candidate funnel
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| bioRxiv details API, 08-27→09-03, day-by-day | 1,309 records → 932 v1 in-window | 142 shortlisted | full sweep, cursor advanced by returned `count` |
+| arXiv daily cache | 500 (only 08-31→09-02; 500-entry cap) | 172 bio+agentic, 1 strong | cache is ~95% cs.CL/cs.AI, almost no q-bio.NC |
+| arXiv live q-bio.NC/QM | 200 (44 in-window) | 8 | one call, no 429 |
+| Nature RSS (npp, mp, nbt) | 24 | 15 | **paywalled** — `npp` and `mp` bodies cut at "preview of subscription content" |
+| ScienceDirect RSS | 0 | — | **failed**: `rss.sciencedirect.com` 404s behind Cloudflare; recovered via PubMed E-utilities |
+| PubMed (11 journals, EDAT 08-26→09-03) | 76 | 22 | one HTTP 429, retried with pacing |
+| Elsevier full text (Biol Psychiatry, BPCNNI, Neuropharmacology) | — | — | **failed**: jina returns "Are you a robot?" captcha page |
+| Oxford (IJNP), Wiley (CPT:PSP) | — | — | **failed**: 403 at DOI resolution and jina |
+
+**Chosen (all full text read):** goal-pursuit hypoalgesia under naloxone (lead) · parabrachial–amygdala + IPACc withdrawal aversion · GABA-B sex-specific NAc plasticity · spaced iTBS in isolated PFC · QM/MD of AMPAR acyl-imidazole labeling · lipid-ASO CNS delivery · Evotec AD microglial state screen · OpenBind · NS-Copilot · HPA/ACTH model · gabapentinoid PK/PD in nematodes.
+
+**Deduped out (11):** the Colquhoun ligand-binding-kinetics update, prefrontal GluN1 ablation, AdaptiveFlow, psilocybin beta state, LC–hippocampus, pupil/neurochemistry, intranasal nor-BNI, CBD–fentanyl MD, TigerAI, LC tau, PFC–piriform, closed-loop RL compound optimization — all shipped in prior episodes.
+
+**Shortlisted but not selected:** Biol Psychiatry orexin-1 vs orexin-2 control of dopamine neurons, BPCNNI nociceptin/NOP-1A PET sex differences, IJNP vornorexant vs lemborexant, npp D1 agonists and cognition — each dropped **only** because full text was unobtainable (Elsevier captcha / Oxford 403 / Nature paywall), not on merit. The orexin pair in particular would have made a strong item; worth retrying if institutional access becomes available. BloClaw (AI4S workstation) was passed over for OpenBind — it's a design paper that explicitly reports no benchmark results yet.
+
+One caveat on my own selection: the HPA/ACTH item is an unvalidated simulation with no parameter fitting, and I say so in the script rather than dressing it up — it earned its slot as the day's only readable Tier 3 computational-pharmacology item, which is a consequence of the publisher access failures above, not of it beating better-evidenced work.
+=== 2026-09-03T03:09:35-07:00 done  receptor-and-reason (exit 0) ===
