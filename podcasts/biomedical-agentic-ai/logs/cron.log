@@ -4104,3 +4104,44 @@ Episode written for 2026-09-03. `SKIP_TTS=1` was set, so I stopped after the scr
 - **Policy / funders** — ARPA-H, NIH, NSF news pages checked; no agentic-AI or biomedical-AI program launches. (NIH's 09-02 items were an NLM director appointment and a GLP-1 lifespan study.)
 - **Source failures** — bioRxiv details API returned one HTTP 504 (cursor 30 on 08-31) and Cloudflare 429'd `r.jina.ai` once on the TigerAI PDF; both recovered on retry. No source dropped.
 === 2026-09-03T02:09:04-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-04T02:00:08-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written:**
+- `podcasts/biomedical-agentic-ai/scripts/2026-09-04-medcp-ehr-knowledge-graph-agent.md` (932-word spoken body, under the 1150 cap)
+- `podcasts/biomedical-agentic-ai/scripts/2026-09-04-medcp-ehr-knowledge-graph-agent.rss-item.xml` (validated as XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/biomedical-agentic-ai/scripts/2026-09-04-medcp-ehr-knowledge-graph-agent.commit-msg`
+
+**Pick:** MedCP — Baranzini's group (UCSF) with SDSC, published today in Frontiers in Artificial Intelligence. An MCP server exposing UCSF's de-identified OMOP EHR and the SPOKE knowledge graph to one agent. Read in full (Frontiers OA HTML). The take centers on procedural auditability vs. parametric interpretability, and on the paper's own external-replication example (523 matched pairs, 25 events, HR 0.71 vs. the original's 16,271-pair null) as evidence that query-writing was never the rate limiter — cohort size was.
+
+---
+
+## Candidate funnel
+
+**bioRxiv** (2026-09-01 → 09-04, day-by-day details API, cursor advanced by returned `count`): 869 records swept, 58 keyword hits, ~8 substantive after discarding spurious matches ("chemical agent", "autonomous" in cell biology).
+- From Prompt to Provenance: BloClaw, a Capability-Gated AI4S Workstation for Auditable Computational Biology — 10.64898/2026.08.26.747436
+- Bio-Babel: autonomous cross-language reconstruction of agent-ready computational biology ecosystems — 10.64898/2026.08.30.743167
+- CyChat: a conversational Cytoscape app for no-code, reproducible network analysis — 10.64898/2026.08.28.747833
+- Evaluating LLMs as Tools to Navigate Researchers in Rapidly Evolving Research Landscapes — 10.64898/2026.09.02.748827
+- An annotation-overlap-flagged rare-disease gene-prioritisation benchmark and PMC index recipe — 10.64898/2026.08.30.748028
+- De novo design of ligand binding proteins using large language models alone — 10.64898/2026.09.02.748987
+- TigerAI — 10.64898/2026.08.29.748046 — **already shipped 2026-09-03**
+
+**arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, covers 09-01 → 09-03 only — cap bites again): 156 agentic∩biomedical hits, 7 substantive.
+- Bioinfoysis Technical Report — arxiv.org/abs/2609.03871 — **runner-up, full text read via mutool.** BixBench SOTA 82.44% (169/205); ablations are the real story (−22.4 pts w/o memory, −36.6 w/o skills). Passed over: BixBench was covered 08-27, it's a vendor technical report, and abstract/intro/Table 2 disagree on the LAB-Bench numbers (27.81→64.13 vs 41.65→69.69).
+- A computable representation of the physical laboratory enables verifiable workflows — arxiv.org/abs/2609.03621 — full text read; chemistry self-driving lab, thin evaluation (four prompts), off-target for a biomedical show.
+- HyGRAIL: hypothesis discovery over knowledge graphs — arxiv.org/abs/2609.02056 — KG-native but evaluated on MatKG (materials), not biomedical.
+- Learning to Fuse LLMs with Ontology Rankers for Rare-Disease Diagnosis — arxiv.org/abs/2609.02473
+- A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms — arxiv.org/abs/2609.04170 (math conjectures, not biomedical)
+- EvoSCM — arxiv.org/abs/2609.01526; Can LLMs Discover Scientific Laws — arxiv.org/abs/2609.01552
+
+**PubMed** (E-utilities, reldate=5): 4,991 matches, 300 retrieved, 13 survived title filter — all clinical-LLM applications (chart summarization, guideline appraisal, adverse-event detection), none agentic-AI-for-research. Nothing shortlisted.
+
+**ChemRxiv**: WebSearch `site:chemrxiv.org` returned no in-window (last 4 days) agentic items; snippets dated April/May/July 2026. Effectively a null source today, not a failure.
+
+**News / product launches**: general web search surfaced the Frontiers article (**chosen**) plus only out-of-window items (Stanford July feature, Nature Biotech perspective).
+
+**Policy / funder pages**: ARPA-H, NIH, NSF, HHS — not reached this run; the pick was settled from primary literature. Recording the gap rather than papering over it.
+
+**Chosen:** MedCP — https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1883853/full
+=== 2026-09-04T02:07:29-07:00 done  biomedical-agentic-ai (exit 0) ===
