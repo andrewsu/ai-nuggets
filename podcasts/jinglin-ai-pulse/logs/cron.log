@@ -2428,3 +2428,39 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I skipped TTS, R2 publ
   - **X/Twitter — not readable from this host** (documented limitation; xcancel serves a browser challenge, x.com requires auth). @Zefan_Cai's feed was **not** read today. All X-sourced quotes in the script come from secondary reporting that reproduces them verbatim — TechCrunch's Sep 2 piece and Zvi Mowshowitz's Substack post — and the script attributes them as written posts rather than implying direct feed access.
   - The Information is paywalled; its report is cited through TechCrunch and Zvi, both of which quote Amir Efrati directly, and the script says so on air.
 === 2026-09-03T02:43:20-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-04T02:30:08-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE I stopped after the script plus the two transient stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-04-the-dial-nobody-has-turned.md` — 2,643 spoken words (≈14 min at this show's observed rate; the last three episodes ran 2,476–3,320 words / 13–16 min)
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-04-the-dial-nobody-has-turned.rss-item.xml` — validated as XML with placeholders substituted
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-04-the-dial-nobody-has-turned.commit-msg`
+
+**Episode: "The Dial Nobody Has Turned"**
+GPT-6 Astra shipped, which turned yesterday's unfalsifiable opaque-recurrence argument into numbers — several of them published by OpenAI itself. Twitter Pulse: Brockman's "welcome to the AGI era"; the 99.9% vs 62.7% ARC-AGI-3 split across harnesses on identical weights (with the winning run the *cheaper* one); OpenAI's own table showing Astra losing the Artificial Analysis Intelligence Index and HLE to Claude Fable 5.1 while dominating agentic/cyber; OpenAI's self-reported monitorability decline, attributed to token efficiency rather than architecture; then Rauno Arike's LessWrong treatment resolving the recurrence panic against Greenblatt's configurable-dial objection and Geoffrey Irving's circuit-complexity retort. Money Moves: Nvidia–Hugging Face at $12.9B (Delangue approached Huang), counterweighted by IFM's K2 Horizon full-lifecycle Apache 2.0 release the same day, plus Armature's 17k-session study of agent tool selection. Deep Cut: swyx at Latent Space on 20B+ tokens of Astra — the unlock is supervision bandwidth, not reasoning quality. Wrap: the G20 Carolina Principles landing the same week.
+
+**Candidate funnel**
+
+- **Hacker News front page** — 90 items scanned, 14 AI-relevant, 6 shortlisted. X/Twitter unreachable from this host as usual (xcancel challenge, x.com needs auth), so HN + HF daily papers + Techmeme substituted for the Twitter Pulse signal; discourse quotes sourced through LessWrong/Latent Space/Axios, which quote the X posts directly.
+- **Hugging Face daily papers (2026-09-03)** — 16 papers scanned, 0 selected (all agent-harness/self-evolution papers; none beat the launch-day news for this show's social/business remit).
+- **Techmeme (2026-09-03)** — 5 top stories, 2 selected (Nvidia/HF, G20), 2 already shipped 09-03 (Muse Spark 1.3, Gemini 3.8 Flash), 1 dropped (Microsoft Azure segment reporting — no intellectual substance).
+- **Podcast sweep** — Latent Space archive (4 recent), Cognitive Revolution archive (6 recent). WhynotTV still stale per standing note.
+
+Shortlist:
+- **CHOSEN** GPT-6 Astra launch — https://openai.com/index/gpt-6-astra/ (1,782p HN) — full text read via r.jina.ai (openai.com 403s WebFetch directly)
+- **CHOSEN** ARC Prize on Astra/ARC-AGI-3 — https://arcprize.org/blog/astra (210p)
+- **CHOSEN** Axios, "Welcome to the AGI era" — https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman
+- **CHOSEN** Rauno Arike, Astra's recurrent architecture — https://www.lesswrong.com/posts/PLisnSFir8y5AHkmP/how-concerned-should-we-be-about-astra-s-recurrent (130p) — full text via LessWrong GraphQL API after r.jina.ai returned 429 twice
+- **CHOSEN** Nvidia acquires Hugging Face, $12.9B — https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html (313p)
+- **CHOSEN** IFM K2 Horizon — https://ifm.ai/blog/k2/ (297p)
+- **CHOSEN** Armature, 17k coding-agent runs — https://armature.tech/blog/which-tools-coding-agents-install (217p)
+- **CHOSEN** Latent Space, swyx on 20B tokens of Astra — https://www.latent.space/p/astra
+- **CHOSEN** G20 Carolina Principles — https://qz.com/g20-us-light-touch-ai-framework-chapel-hill-090326
+- Simon Willison on Astra — https://simonwillison.net/2026/Sep/3/gpt6-astra/ — used as corroboration for the harness caveat, not a standalone item
+- Qwen 3.8 27B on Cerebras at 1500 tok/s — https://news.ycombinator.com/item?id=49554520 (555p) — dropped, inference-speed announcement without an argument
+- Anil Dash, "VC isn't VC anymore" — https://www.anildash.com/2026/09/02/cancer-capital/ (271p) — dropped, essay rather than a deal; no new data point
+- Google Antigravity TOS suspension thread (315p), Trellner "manufactured sources" (506p) — dropped, adjacent to AI but not this show's remit
+- Muse Spark 1.3 (680p), Gemini 3.8 Flash Cyber (1,144p), Claude Fable/Mythos 5.1 (1,407p), Mistral opt-out (490p) — all already shipped in the 09-02 and 09-03 episodes
+
+**Source failures:** `r.jina.ai` returned HTTP 429 on LessWrong twice (worked around via the site's GraphQL API); `openai.com`, `cnbc.com`, and `qz.com` 403 direct WebFetch/curl (read via r.jina.ai — the qz.com URL is confirmed live via search index only). No source was dropped from the run.
+=== 2026-09-04T02:39:20-07:00 done  jinglin-ai-pulse (exit 0) ===
