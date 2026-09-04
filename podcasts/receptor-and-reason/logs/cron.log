@@ -4086,3 +4086,44 @@ All 11 paper URLs verified live against the bioRxiv details API and arXiv (corre
 
 One caveat on my own selection: the HPA/ACTH item is an unvalidated simulation with no parameter fitting, and I say so in the script rather than dressing it up — it earned its slot as the day's only readable Tier 3 computational-pharmacology item, which is a consequence of the publisher access failures above, not of it beating better-evidenced work.
 === 2026-09-03T03:09:35-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-04T02:50:09-07:00 start receptor-and-reason ===
+Episode published (script + stubs written; SKIP_TTS mode, so batch TTS, R2 publish, feed update and commit are the orchestrator's steps).
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-09-04-receptor-and-reason.md` (9 items, 3,124 spoken words ≈ 18–19 min at this show's measured 168 wpm)
+- `podcasts/receptor-and-reason/scripts/2026-09-04-receptor-and-reason.rss-item.xml` (validates as XML; `__LENGTH__` / `__DURATION__` placeholders in place)
+- `podcasts/receptor-and-reason/scripts/2026-09-04-receptor-and-reason.commit-msg`
+- Ledger appended: 9 keys, now 105 episodes / 1,073 items
+
+## Candidate funnel
+
+**bioRxiv + medRxiv details API** (day-by-day, 2026-08-28 → 09-04): 1,927 records fetched → 839 unique v1 preprints with in-window DOI dates → 303 passed the CNS-pharm / comp-pharm / agentic filter → 27 substantive shortlist after discarding keyword noise. API healthy; page size 30, cursor advanced by returned count.
+
+**arXiv**: shared daily cache present (500 entries, but only 09-01 → 09-03 — the 500-cap covers 3 of the 7 window days). Supplemented with one live `cat:q-bio.QM OR cat:q-bio.NC` call (400 entries, no 429). 179 bio+agentic hits → 5 substantive.
+
+**Journal RSS**: `nature.com/npp.rss`, `nbt.rss`, `npjdigitalmed.rss` all dated and usable. **`nature.com/mp.rss` returned a 303 stub** (Molecular Psychiatry effectively unread today); the `r.jina.ai` fallback for it timed out. ScienceDirect feeds (Biological Psychiatry, BP:CNNI, Neuropharmacology, PNPBP, Drug Discovery Today, Cell Systems) fetched fine but are **undated print-issue listings**, so no recency filter was possible — logged as a recall gap.
+
+**Psychiatric Times**: read; 6 items, all either out-of-window primaries (pramipexole/PRIME-PRAXOL was Nature Medicine, June 12) or not-yet-readable.
+
+**Dedup**: 36 candidates → 34 fresh. Two dropped, both Nature-family: `10.1038/s41386-026-02534-8` (key match) and the *Nature Biotechnology* adaptive virtual-screening paper (title match under a different key — the standing RSS trap).
+
+**Full-text gate**: 14 of 22 preprint full texts retrieved. Deferred for **Cloudflare 429, not render lag** (all confirmed as rate-limiting, retested repeatedly): NMDA co-agonism at PFC fast-spiking interneurons (`2026.08.30.747826`), de novo ligand-binding protein design with LLMs alone (`2026.09.02.748987`), CYP3A4 cryo-EM (`2026.09.01.748687`), H3R in neuropathic pain (`2026.08.28.746833`), conotoxin-mimetic nAChR structure (`2026.08.31.748223`), INFORME (`2026.08.28.747735`). All are live candidates for tomorrow — the first two are strong.
+
+**Shortlist and picks** (✓ = shipped)
+
+✓ Dopaminergic therapy amplifies hallucination susceptibility in PD — medRxiv `2026.09.01.26361921`
+✓ Serotonergic anxiety is a stress-intensity-dependent state — bioRxiv `2026.08.28.747812`
+✓ CB2 activation during epileptogenesis — bioRxiv `2026.08.30.748087`
+✓ Scorpion toxin BMK86-P1 / KCNA2 — bioRxiv `2026.08.28.747831`
+✓ Allosteric pathways govern Gα coupling selectivity — bioRxiv `2026.08.28.747882`
+✓ Interpretable Symptom Vectors for Depression — arXiv 2609.01832
+✓ Bioinfoysis — arXiv 2609.03871
+✓ Bio-Babel — bioRxiv `2026.08.30.743167`
+✓ Substance use ≠ TMS response — medRxiv `2026.09.01.26361949`
+— Postmortem mGluR systematic review `2026.08.29.748003` — read in full, cut for length
+— CYP2C9 cryo-EM dimer-of-trimers `2026.08.30.747968` — read in full, cut for length
+— In vitro ketamine and immune sensitization `2026.08.28.26361493` — read in full, cut (effects only at supratherapeutic 6 µM)
+— Caffeine during synaptogenesis `2026.08.28.747753`; BET inhibition in NPC1 `2026.08.31.747771`; PLM embeddings for drug-target affinity `2026.08.31.748056`; glucocorticoids and 24-h opioid use `2026.08.31.26361793`; adverse drug withdrawal signals in FAERS/EudraVigilance `2026.08.29.26361707`; TigerAI `2026.08.29.748046` — all fresh and readable, held over
+
+One judgment call worth flagging: the script came in at ~3,120 words against a 12–18-minute target, which projects to roughly 18–19 minutes. I cut three fully-read items to get there rather than compress the remaining nine into recaps, since the brief prizes the take over coverage.
+=== 2026-09-04T03:22:21-07:00 done  receptor-and-reason (exit 0) ===
