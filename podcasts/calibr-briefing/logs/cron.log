@@ -3875,3 +3875,42 @@ Shortlist after discarding stale and already-shipped items:
 
 Spotlight rationale: the Angelman failure beat the field on three counts — it is the largest single-day value move (-44.7%, ~$1.14B), it is a *clean* null across six prespecified measures rather than an ambiguous miss, and it carries a transferable methodological finding (natural-history-controlled open-label trials in pediatric neurodevelopmental disease are close to uninterpretable) that reprices Ionis's REVEAL and Oak Hill's BEACON and speaks directly to Travis's AI focus area on the limits of target certainty. Full text read: Ultragenyx press release (verbatim), Nov 2024 FAST summit Phase 1/2 data, Aspire design releases, Ionis REVEAL and HALOS releases, Roche/Oak Hill rugonersen history, Q2 2026 financials.
 === 2026-09-03T02:34:49-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-04T02:20:08-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after writing the scripts plus the transient `.rss-item.xml` and `.commit-msg` stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-09-04-pharma-headlines.txt` (1,911 words) + rss-item + commit-msg
+- `2026-09-04-ionis-zanvastro-alexander-spotlight.txt` (2,038 words) + rss-item + commit-msg
+
+Both RSS stubs parse as valid XML with `__LENGTH__` / `__DURATION__` placeholders intact.
+
+---
+
+**Candidate funnel — calibr-briefing, 2026-09-04**
+
+Sources scanned (news window: Sept 3 news for a Sept 4 briefing):
+- Endpoints News index (r.jina.ai) — 8 items, 8 relevant. Article bodies paywalled; sourced from primaries instead.
+- BioPharma Dive homepage — 10 items, 5 net-new.
+- BioSpace latest news — 10 items, 7 net-new.
+- Fierce Biotech homepage — 10 items, 6 net-new. **Article bodies failed** (403 direct; r.jina.ai returned empty cached shells all attempts) — routed around via primaries/BioSpace/search.
+- Fierce Pharma homepage — 10 items, 3 net-new.
+- STAT — headline + partial only (paywall, per known limitation).
+- Primaries opened in full: ClinicalTrials.gov API v2 (NCT04849741 design record), Ionis approval PR via StockTitan, Ionis topline PR (r.jina.ai), HUTCHMED/GSK PR, endaxd.org, BioSpace articles.
+
+Shortlist (net-new, after discarding items already shipped 09-01→09-03 — Ultragenyx/Angelman, remibrutinib, uniQure, Teva IL-15, Replimune CBER, ARPA-H, ArsenalBio, Cellares SSF, Roche/Simcere):
+- **FDA approves Zanvastro (zilganersen), first therapy for Alexander disease** — biospace.com/fda/fda-approves-ionis-antisense-drug-as-first-targeted-therapy-for-alexander-disease — **CHOSEN: spotlight + headline 1**
+- Summit/Akeso ivonescimab meets OS vs Keytruda, HARMONi-2 — biospace.com/drug-development/summit-akesos-ivonescimab-bests-mercks-keytruda-in-china-trial-again — **CHOSEN (headline 2)**
+- GSK licenses HUTCHMED HMPL-A830 (KRAS payload on anti-EGFR antibody), $110M up front / $1.295B — globenewswire 2026/09/03 — **CHOSEN (3)**
+- AbbVie etentamig Phase 3 CERVINO win in myeloma — fiercebiotech.com/biotech/abbvies-bispecific-t-cell-engager-shows-promise-ph-3-multiple-myeloma-trial — **CHOSEN (4)**
+- RevMed daraxonrasib NEJM RAS-mutant NSCLC data — biospace.com/drug-development/revmeds-newly-approved-rasonque-could-hold-up-in-non-small-cell-lung-cancer — **CHOSEN (5, Foresite portfolio)**
+- Superluminal Medicines $60M Series B, MC4R/GPCR-activation AI — biopharmadive.com/news/superluminal-medicines-obesity-ai-drug-discovery-series-b/829552/ — **CHOSEN (6, AI focus area)**
+- Pfizer → Medicus Pharma CD228 ADC (PF-08046031) — fiercebiotech.com/biotech/pfizer-offloads-scrapped-seagen-adc-medicus-pharma-1b-deal — **CHOSEN (7)**
+- Novartis–Alteogen ALT-B4 option/license up to $3.2B — prnewswire 302867513 — **CHOSEN (8)**
+- TScan 75% layoff + Novartis Kleinbasel 130 + Cellares NJ 68 — biospace layoff tracker — **CHOSEN (9)**
+- Replimune FDA review documents; Merck BD chief on deal flow — fiercepharma / endpoints — **CHOSEN (10, as follow-up notes)**
+- Roche UCN2/CRF2 obesity color piece — dropped, body unreadable and the Hanmi deal itself already shipped 08-25
+- Psilocybin neuropathic pain (mouse) — dropped, off-audience
+- Health-tech investor trends; Benelux biotech; Fresenius warning letter; Novartis MS marketing campaign — dropped, below bar
+
+Spotlight rationale: the Zanvastro approval landed ~14 hours after we shipped a spotlight on the apazunersen failure and names Ionis directly in the read-across, so it isolates the causal variable (endpoint slope direction + disclosed target-engagement biomarker) rather than repeating the story. Full text confirmed the trial was a true blinded intrathecal placebo comparator, not the "untreated controls" the wire coverage described — a correction the episode makes explicitly.
+=== 2026-09-04T02:35:47-07:00 done  calibr-briefing (exit 0) ===
