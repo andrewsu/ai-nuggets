@@ -2215,3 +2215,38 @@ Dedup: 14 candidates → 14 fresh (0 shipped, 0 title matches) against 276 ledge
 
 One thing to flag: this ran long. Six items at full analytical depth puts it near 14 minutes against the brief's 6–9, and the show has been drifting that way for a week (recent episodes were already ~11). I trimmed twice rather than cutting an item, since every item carried a distinct portfolio read — but if you want these back inside the window, the fix is four items, not shorter sentences.
 === 2026-09-03T02:30:04-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-04T02:10:08-07:00 start blackbird-brief ===
+Episode script written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + the two transient stubs — no `gen_tts.py`, no R2 publish, no `feed.xml` edit, and no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-09-04-portfolio-watch.md` (spoken body 2,074 words ≈ 11.2 min at this show's measured 3.08 words/sec — over the 6–9 min spec in PROMPT.md, but in line with the last three episodes at 11.2/11.6/13.6 min)
+- `podcasts/blackbird-brief/scripts/2026-09-04-portfolio-watch.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/blackbird-brief/scripts/2026-09-04-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — appended 8 keys (54 episodes, 274 items)
+- `memory/blackbird-portfolio.md` — edited in place: NuGate (endpoint-selection rule), Aletira (Sensorion GJB2, Replimune retraction, uniQure structure), Clasp (sixth KRAS column, eligible-fraction demonstration, daraxonrasib), §1 BD comparator (fourth Asia upfront). `_Last update:_` bumped on NuGate and Winnow.
+
+**Candidate funnel**
+
+Sources scanned (window 2026-09-01 → 09-04):
+- BioSpace homepage — 22 items scanned, 9 on-thesis
+- BioPharma Dive — 6 items, 4 on-thesis
+- Fierce Biotech — direct fetch 403, retrieved via `r.jina.ai`; 6 items, 1 on-thesis
+- Endpoints News index via `r.jina.ai` — relative timestamps only, no absolute dates; used as corroboration, not discovery
+- BioBuzz — 21 items; **BioHealth Capital Region roundup still 2026-08-28**, September output Greater-Philadelphia only → no net-new Baltimore item
+- JHTV newsroom via `r.jina.ai` — 1 new item (2026-09-04, machine-vision/physical-AI startup), off-thesis
+- Targeted searches: Nxera/GPR52 (zero in-window), GJB2 hearing-loss gene therapy (hit), Blackbird/JHU spinout news (zero in-window)
+
+Dedup: 10 candidates → 10 fresh (0 shipped, 0 title matches) against 284 ledger keys.
+
+Shortlist (✅ = shipped today):
+- ✅ **LEAD** FDA approves Ionis' Zanvastro (zilganersen) for Alexander disease — biospace.com/fda/fda-approves-ionis-antisense-drug-as-first-targeted-therapy-for-alexander-disease
+- ✅ Sensorion ANSM clearance, HearConnex Phase 1/2 of SENS-601 in GJB2 — biospace.com/press-releases/sensorion-announces-approval-of-clinical-trial-application-in-france-for-sens-601...
+- ✅ Replimune would have been rejected but for a senior CBER official (Asha Das memo) — biospace.com/fda/replimunes-melanoma-drug-would-have-been-rejected-again-if-not-for-senior-cber-official
+- ✅ TScan cuts 75%, pauses Phase 3 ALLOHA-2, pivots to in vivo — biospace.com/job-trends/tscan-cuts-75-of-workforce-while-shifting-focus-to-solid-tumor-program
+- ✅ uniQure files AMT-130 BLA in Huntington's — biospace.com/fda/uniqure-files-for-fda-uk-approval-of-first-gene-therapy-for-huntingtons-disease
+- ✅ GSK–HUTCHMED, $110M upfront for HMPL-A830 — biospace.com/deals/gsk-inks-another-asia-alliance-betting-up-to-1-3b-for-hutchmeds-cancer-therapy
+- ✅ (rider) RevMed Rasonque NSCLC Phase 1/2 in NEJM — biospace.com/drug-development/revmeds-newly-approved-rasonque-could-hold-up-in-non-small-cell-lung-cancer
+- ✅ (nulls note only) Autoimmune CAR-T post-mortem — biopharmadive.com/news/autoimmune-cell-therapy-safety-novartis-bristol-kyverna-cabaletta/829413/
+- ✗ Superluminal AI obesity Series B — no portfolio line; obesity is not a program theme
+- ✗ Pfizer offloads Seagen ADC to Medicus — no portfolio line
+=== 2026-09-04T02:25:36-07:00 done  blackbird-brief (exit 0) ===

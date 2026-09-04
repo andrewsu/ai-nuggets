@@ -71,6 +71,15 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     comparator, but it attaches a discount that did not exist a week ago — and it is the first argument in a while FOR the value of a
     clinical package run under FDA inspection.** Source:
     https://www.biospace.com/fda/fda-raises-bar-for-foreign-site-inspections-as-china-trials-surge
+  - **FOURTH NINE-FIGURE ASIA UPFRONT IN TEN DAYS, AND THE FIRST FROM A DIFFERENT ACQUIRER — this stops being a Roche habit and becomes
+    the market (added 2026-09-04 Portfolio Watch item 6; announced 2026-09-03).** **GSK paid HUTCHMED $110M upfront, up to $1.185B in
+    milestones plus royalties, for HMPL-A830** — an EGFR-antibody-delivered small-molecule KRAS inhibitor, **Phase 1**, worldwide rights
+    ex-greater-China (science half logged under Clasp). **Running tally in ~10 days: Hanmi (up to $2.3B) · DualityBio ($45M up,
+    discovery-through-Ph1a) · Simcere ($75M up, early-clinical) — all Roche/Genentech — now GSK at $110M up for Phase 1.** GSK's third
+    Asia move of 2026 (Alteogen Jan, Siran ~$1B Jun). **DURABLE READ (Eddie + Matt): the comparator column is not one acquirer's
+    preference; it is the prevailing price of a discovery-through-early-clinical partnership with an experienced ex-US platform company.
+    The differentiator still has to be something the buyer CANNOT source in Shanghai or Seoul — human data run under FDA inspection
+    (see the 09-03 discount above), or a genuinely unencumbered composition-of-matter position.**
 
 - **THE EXIT MAP HAS THREE PUBLIC-MARKET DOORS, NOT TWO — REVERSE MERGERS ROSE 1,600% IN Q3 (added 2026-09-02 Portfolio Watch item 6;
   published 2026-09-02).** Per **Leerink Partners**: **20 biotech IPOs and 19 reverse mergers year-to-date**, close to 1:1 — but
@@ -742,6 +751,63 @@ the individual entries below, each marked ❌ TERMINATED.
   someone else's IND on a defined timeline, in parallel with our own program. A composition or method position broad enough to tax a
   competitor's APPROVED product can be worth more than a program you funded to the finish line and lost.** Source:
   https://www.biospace.com/business/biomarin-nabs-big-royalties-in-achondroplasia-patent-settlement-with-ascendis
+- **SECOND CLINICAL GJB2 PROGRAM CLEARED, AND PART 2 DOSES BOTH COCHLEAE (added 2026-09-04 Portfolio Watch item 2; ANSM approval
+  2026-08-31, announced 2026-09-03).** **Sensorion** received **ANSM** authorisation in France — at the conclusion of a **Fast Track
+  assessment** — to start **HearConnex**, a **Phase 1/2** trial of **SENS-601** (AAV gene therapy delivering *GJB2*) in **children with
+  congenital DFNB1A (recessive GJB2) hearing loss**. **Two-part, open-label: Part 1** = safety/tolerability after **UNILATERAL
+  intra-cochlear** administration across **two ascending-dose cohorts**; **Part 2** = efficacy in an expansion cohort after
+  **BILATERAL intra-cochlear** administration at the selected dose. **The trial ALSO assesses safety, tolerability, performance and
+  usability of Sensorion's own injection system.** Sites: France, **Canada pending Health Canada**, **Australia and US planned**.
+  **First patient dosing targeted EARLY 2027; clinical data throughout 2027.** Preclinical package with **Prof. Christine Petit**
+  (Institut Pasteur); French PI **Prof. Natalie Loundon**: *"Bringing gene therapy into the clinic for this population requires a
+  highly specialized surgical and audiological environment."* **Capsid serotype and any expression-control element NOT disclosed** — a
+  **SENS-601 Program Day on 2026-09-22** (Petit + **Dr. Sharon Cushing**) is the most likely place that detail surfaces; **calendar it.**
+  - **(1) THE CLOCK, SIZED:** Skylark dosed **2026-05-28**; Sensorion doses **early 2027** ⇒ the first-to-second gap in clinical GJB2 is
+    **~8 months, not years**, and **two funded competitors will hold human cochlear gene-therapy data before Aletira files an IND.**
+    Framing for the Series A: **not outgunned on capital, behind on the clock** — differentiation must sit on a layer neither contests
+    (alternative splicing is still untaken; Skylark restricts via an engineered 3'UTR, per the 08-19 patent work).
+  - **(2) NEW FIELD FACT — BILATERAL AAV DOSING IN CHILDREN, and it lands on the axis SELEXON does NOT govern.** Every safety signal
+    tracked in this file for a month traces to **capsid load, not cassette design** (CHD3 TMA death, RGX-121/RGX-111 holds, Elevidys
+    myocarditis with higher cardiac VCN than skeletal muscle). **Bilateral intra-cochlear dosing doubles capsid load in a compartment
+    continuous with CSF.** A signal there will be read as a **modality** problem in the ear and will land on our pre-IND regardless of
+    mechanism. **ACTION (Geoff Lynn + Hugh Wells): put "a competitor's bilateral-dosing decision is a regulatory input to our program"
+    in the risk register, and fold it into the long-term imaging/surveillance argument (08-25, 08-30).**
+  - **(3) DELIVERY — SECOND DATAPOINT IN THREE WEEKS.** Skylark's **SKY-CAT** has its own secondary endpoint; Sensorion now runs its
+    **own injection system** as a co-equal object of study. **The 08-19 question is unanswered and appreciating: what is Aletira's
+    delivery answer in the ear, and is it someone else's device whose label someone else will own?**
+  - **(4) CORRECTION TO THIS FILE — amends the 08-19 note that "Sensorion claims THREE populations for SENS-601 including ADULTS with
+    early-onset presbycusis." HearConnex enrols PEDIATRIC CONGENITAL ONLY. Both first-in-human GJB2 trials are severe-to-profound
+    RECESSIVE PEDIATRIC disease; the ADULT population — the larger one — is UN-ENTERED by anybody, and it is where expression
+    restriction matters most because you are treating a partially functioning ear.** Sources:
+    https://www.biospace.com/press-releases/sensorion-announces-approval-of-clinical-trial-application-in-france-for-sens-601-its-investigational-gene-therapy-for-the-treatment-of-gjb2-related-hearing-loss ·
+    https://hearinghealthmatters.org/hearing-news-watch/2026/sensorion-gene-therapy-sens-601/
+- **RETRACTION OF THIS FILE'S OWN "THE PATH EXISTS AND IT IS PRECEDENTED" CITATION — the Replimune proof point was ONE OFFICIAL
+  OVERRULING HER REVIEW TEAM (added 2026-09-04 Portfolio Watch item 3; memos released 2026-09-03, memo dated 2026-08-06).** The 08-24
+  entry above cites **Replimune TUDRIQEV** as one of three proof points that the path exists. Newly released review documents show
+  **Asha Das, director of CBER's OFFICE OF CLINICAL EVALUATION, overruled the primary review team** to grant accelerated approval. The
+  reviewers **had agreed to reject** — a **third** rejection after **July 2025** and **April 2026** — finding Replimune *"hadn't
+  sufficiently addressed deficiencies"* in the prior CRLs. Das approved *"having carefully considered the totality of evidence and the
+  advisory committee's input, and exercising the regulatory flexibility afforded under the accelerated approval pathway,"* with **"full
+  acknowledgment of the remaining uncertainties"** and explicit expectation of verification in **Phase 3 IGNYTE-3 — topline September
+  2030**. The **July adcomm voted 10–3 in favour** on data panelists called **"messy."**
+  **CONSEQUENCES. (a) STOP using Replimune as evidence of a repeatable PROCESS** — it is precedent for **individual senior discretion
+  after a favourable adcomm**, which a sponsor cannot plan around. Do not put it in the Series A deck as a process claim. **(b) NOTE THE
+  OFFICE: Das runs Clinical Evaluation; Aletira's IND goes to the OFFICE OF THERAPEUTIC PRODUCTS, which still has NO permanent director
+  since June 2025.** So the 08-24 instruction is **HARDENED, not softened** — get the endpoint and the SAP into the official WRITTEN
+  record at pre-IND, because the alternative is depending on individual discretion in an office that does not currently have the
+  individual. Sources: https://www.biospace.com/fda/replimunes-melanoma-drug-would-have-been-rejected-again-if-not-for-senior-cber-official ·
+  https://endpoints.news/cber-official-overruled-review-teams-rejection-of-new-replimune-melanoma-drug/
+- **THE EVIDENTIARY STRUCTURE CBER IS CURRENTLY ACCEPTING IN A CNS GENETIC MEDICINE (added 2026-09-04 Portfolio Watch item 5; filed
+  2026-09-02).** **uniQure submitted a BLA to FDA and a marketing application to the UK MHRA for AMT-130** in **Huntington's disease**
+  — **the first genetic medicine ever filed in HD**. **AAV**, **direct surgical intraparenchymal injection via burr hole**. Package:
+  **three-year Phase 1/2 data vs a PROPENSITY-SCORE-MATCHED EXTERNAL CONTROL from the Enroll-HD natural-history database**, showing
+  **75% slowing of progression**; **confirmatory trial of ~200 patients, 2:1 vs standard care**, planned. **With priority review, a
+  decision lands ~late April / early May 2027.** William Blair models **$3.2B peak by 2035**. (Closes the "BLA Q3 2026" marker in the
+  08-24 entry.) **SO-WHAT (Geoff Lynn + Hugh Wells): the read is the STRUCTURE, not the science — external natural-history control +
+  post-approval confirmatory trial is the package the agency is accepting right now in a CNS genetic medicine, and CONGENITAL HEARING
+  LOSS HAS BETTER NATURAL-HISTORY DATA THAN HUNTINGTON'S (newborn screening, ABR thresholds, biallelic genotype). ACTION: is that
+  structure in Aletira's development plan, and does the pre-IND ask include agreement on the external-control SOURCE?** Source:
+  https://www.biospace.com/fda/uniqure-files-for-fda-uk-approval-of-first-gene-therapy-for-huntingtons-disease
 
 ### aSKY Therapeutics — UMB oncology spinout ❌ TERMINATED
 _Last update: 2026-08-28_
@@ -1092,7 +1158,7 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-09-03_
+_Last update: 2026-09-04_
 - **What:** Oligonucleotide-based medicine (**ASO**) against a highly
   sought-after target profile that could treat **all forms of ALS and FTD**.
 - **Science:** leverages biology pioneered at JHU across decades and multiple
@@ -1153,8 +1219,35 @@ _Last update: 2026-09-03_
   https://ir.ultragenyx.com/news-releases/news-release-details/ultragenyx-announces-phase-3-aspire-results-angelman-syndrome ·
   https://ir.ionis.com/news-releases/news-release-details/first-patient-dosed-pivotal-phase-3-reveal-clinical-study-ion582
 
+- **THE ENDPOINT-SELECTION RULE, AND THE FINANCEABLE TRIAL SHAPE — the counterpart to the open-label-package rule above, 24 hours later
+  (added 2026-09-04 Portfolio Watch LEAD; approved 2026-09-03).** **FDA approved Ionis's ZANVASTRO (zilganersen)** for **Alexander
+  disease (AxD)** — an ultra-rare leukodystrophy (**~1 in 3 million**) driven by mutant **GFAP** accumulating in astrocytes; the ASO
+  lowers GFAP production. **50 mg QUARTERLY INTRATHECAL. STANDARD approval (not accelerated), label covers ALL AGES, >2 weeks ahead of
+  the 2026-09-22 PDUFA, plus a RARE PEDIATRIC DISEASE PRIORITY REVIEW VOUCHER.** **THE TRIAL IS THE POINT:** global, multicentre,
+  **randomised, double-blind, controlled**; **54 participants, 13 sites, 8 countries, ages 1.5–53**; **2:1** for a **60-week
+  double-blind period** then OLE; two dose cohorts (25/50 mg) with **50 mg** pivotal. **ONE primary — percent change from baseline in
+  gait speed on the 10-Meter Walk Test at week 60: 33.3% least-squares mean difference vs control, p=0.041** in patients ≥5 y; ages
+  **2–4** improved on **GMFM-88**; secondaries (Most Bothersome Symptom, PGI-S/PGI-C, CGI-C) consistently favoured drug. Safety:
+  vomiting, back pain, cough, headache, post-LP syndrome ≥25%; **aseptic meningitis** reported (one serious case, dose interruption +
+  IV dexamethasone pretreatment); serious TEAEs **less** frequent than control. CEO **Brett Monia**: *"our first independent launch
+  from our industry-leading neurology pipeline."* Lead investigator **Amy Waldman** (CHOP).
+  - **DURABLE RULE (Anthony + Jon + Hemaka) — this SPECIFIES the open-label-package rule above, it does not replace it.** Ultragenyx:
+    ~129 children, a **five-domain composite**, zero separation on all five. Ionis: **54 patients, ONE prespecified functional
+    primary**, p=0.041, **standard** approval. Same modality, same route, opposite outcomes ⇒ **the variable is ENDPOINT SELECTION, not
+    chemistry and not budget.** **Keep NfL as the evidentiary spine (Qalsody is Ionis's own precedent) AND add the design half: a
+    54-patient, 2:1, 60-week double-blind trial with one prespecified functional primary is FINANCEABLE AT SEED STAGE.** Gait speed
+    worked because the **untreated slope is steep and a stopwatch has no rater variance** — **ACTION: identify the ALS/FTD analogue
+    (measure with steep natural decline + minimal rater variance) and agree it with the division IN WRITING at pre-IND.**
+  - **COMPETITIVE + PRV.** (a) **Ionis** is on NuGate's watch list and now has an **independent commercial neurology franchise**
+    (SPINRAZA, WAINUA, QALSODY) plus **12 clinical-stage neurology programs** — **the most plausible partner for a JHU antisense asset
+    is now also a better-capitalised competitor for the same shelf space.** (b) Ionis **collected an RPD voucher**; 2026 sale prices
+    **$180M–$200M**, and FDA may not award RPD PRVs after **2029-09-30** — the same arithmetic logged under Aletira. **Reinforces
+    "license the platform/asset into a partner already in the clinic" as an explicit second monetisation path.** Sources:
+    https://www.biospace.com/fda/fda-approves-ionis-antisense-drug-as-first-targeted-therapy-for-alexander-disease ·
+    https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
+
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-03_
+_Last update: 2026-09-04_
 - **What:** novel immunology platform that **selectively treats T-cell-mediated
   autoimmune disease**; T-cell engager platform with potential in ankylosing
   spondylitis and others.
@@ -1494,6 +1587,41 @@ _Last update: 2026-08-28_
   **(c) Modality-order read:** of the five-column KRAS board, the **small-molecule column took the largest indication with chemistry, not
   immunology** — the bar for a novel immunologic modality is now "what does it add that the pill cannot do," and resistance + combination are
   the only remaining answers.
+
+- **A SIXTH COLUMN ON THE KRAS BOARD — TARGETED DELIVERY OF THE SMALL MOLECULE (added 2026-09-04 Portfolio Watch item 6; announced
+  2026-09-03).** **GSK licensed HMPL-A830 from HUTCHMED: $110M upfront, up to $1.185B in development/regulatory/commercial milestones,
+  plus royalties.** The asset is an **antibody-targeted therapy conjugate (ATTC)** — an **EGFR-targeting monoclonal antibody carrying a
+  small-molecule KRAS inhibitor** — in **Phase 1** for **colorectal, pancreatic and lung cancer**. HUTCHMED runs Phase 1; **GSK takes
+  development thereafter and worldwide rights except mainland China, Hong Kong, Macau, Taiwan.** GSK oncology R&D head **Hesham
+  Abdullah**: *"The dual KRAS-EGFR mechanism … has the potential to significantly improve upon current standard of care."* GSK's third
+  Asia move of 2026 (Alteogen Jan; Siran acquisition ~$1B Jun). **UPDATE THE BOARD to six columns: antibody · small molecule · degrader ·
+  vaccine (Adventris) · engager (Clasp) · TARGETED DELIVERY of the small molecule — the new column aims at the same resistance/combination
+  space CLSP-5282 was positioned into at AACR 2026.** (BD-comparator half logged in §1.) Sources:
+  https://www.biospace.com/deals/gsk-inks-another-asia-alliance-betting-up-to-1-3b-for-hutchmeds-cancer-therapy ·
+  https://www.biopharmadive.com/news/gsk-hutchmed-egfr-kras-cancer-drug-deal-china/829542/
+
+- **THE ELIGIBLE-FRACTION ROW NOW HAS A DEMONSTRATION, NOT AN ANALOGY: THE MOST CLINICALLY ADVANCED HLA-RESTRICTED T-CELL COMPANY RAN OUT
+  OF MONEY AT PHASE 3 (added 2026-09-04 Portfolio Watch item 4; announced 2026-09-02/03).** **TScan Therapeutics** is cutting **75% of
+  its workforce (~104 of 138)** — second cut in under a year after **30% in Nov 2025**; **CFO Jason Amello and CMO Chrystal Louis depart
+  effective 2026-09-02**; **Phase 3 ALLOHA-2 of lead asset TSC-101 PAUSED for insufficient capital**; internal manufacturing shut;
+  **heme + autoimmune programs up for partnership**. Survivors: **two IN VIVO T-cell candidates against PRAME and MAGE-A4** —
+  preclinical data **Q1 2027**, first IND **Q3 2027**, Phase 1 **Q4 2027**. Reorg cost **~$4.1M**, savings **~$55M through 2027**, cash
+  into **Q4 2027**. **SO-WHAT (Hemaka + Eddie): file this in the ELIGIBLE-FRACTION row (opened 08-27, extended 09-01). CLSP-1025 needs
+  p53 R175H AND HLA-A\*02:01; CLSP-5282 needs KRAS G12V AND HLA-A\*03:01 — the row is not about mechanistic elegance, it is about
+  ENROLLMENT VELOCITY, which decides whether the trial you designed is the trial you can afford. Pair with the Moderna/PMV financing rule
+  (08-31/09-01): decide what Clasp does the week AFTER the GUARDIAN-101 readout while it is still a choice.** Secondary (Virginia +
+  Esther): **fourth in-vivo-cell-therapy declaration in five days** — ArsenalBio 08-31, Novartis/BMS ex-vivo halts 09-01/02, Typewriter
+  $56M 09-02, now a company **abandoning a Phase 3 to get there**. Raises the urgency of the **Schneck** JHU lead; does not answer it.
+  Source: https://www.biospace.com/job-trends/tscan-cuts-75-of-workforce-while-shifting-focus-to-solid-tumor-program
+
+- **DARAXONRASIB DATA IN A SECOND TUMOUR TYPE — the 08-27 open action is still open (added 2026-09-04, same item; published
+  2026-09-03).** **Revolution Medicines** published updated **Phase 1/2** data for **RASONQUE (daraxonrasib)** in previously treated
+  **RAS-mutant NSCLC** in the ***NEJM***: **42% ORR, 16-month median OS in a 38-patient cohort at 160–220 mg**; **no Grade 4/5
+  treatment-related AEs**, Grade 3 in **25%**; rash and diarrhoea most common. RAS mutations in **~30%** of lung cancer, and **KRAS
+  non-G12C has no approved targeted therapy**. **Phase 3 RASolve 301** started May 2025, **readout December 2027**; Truist calls the
+  cohort *"the most ph.III-relevant subgroup."* **OPEN ACTION (Eddie), unchanged since 08-27: does SENTINEL-101 (NCT07650357) carry a
+  POST-DARAXONRASIB STRATUM in protocol? If not, why not — the resistance market now has a second tumour type and a dated Phase 3.**
+  Source: https://www.biospace.com/drug-development/revmeds-newly-approved-rasonque-could-hold-up-in-non-small-cell-lung-cancer
 
 ## 2b. JHU-adjacent Baltimore ecosystem (not Blackbird portfolio; sourcing + landscape signal)
 
