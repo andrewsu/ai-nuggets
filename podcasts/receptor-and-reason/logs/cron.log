@@ -4127,3 +4127,56 @@ Episode published (script + stubs written; SKIP_TTS mode, so batch TTS, R2 publi
 
 One judgment call worth flagging: the script came in at ~3,120 words against a 12–18-minute target, which projects to roughly 18–19 minutes. I cut three fully-read items to get there rather than compress the remaining nine into recaps, since the brief prizes the take over coverage.
 === 2026-09-04T03:22:21-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-05T02:50:10-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 3:30am (America/Los_Angeles)
+=== 2026-09-05T03:15:24-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-05T03:15:24-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-09-05T03:15:24-07:00 session-limit hit; sleeping 936s until 3:30am (+60s buffer) ===
+=== 2026-09-05T03:31:00-07:00 start receptor-and-reason (retry 1) ===
+Episode published (script + stubs written; `SKIP_TTS=1`, so batch TTS, R2 publish, feed update and commit are the orchestrator's steps).
+
+This was a **retry after the 02:50 run hit the session limit at 03:15**. That run had written a complete 11-item script but no stubs and no ledger entry, so I salvaged and verified it rather than re-running the sweep.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-09-05-receptor-and-reason.md` (9 items, 3,219 spoken words ≈ 18.4 min at this show's measured ~175 wpm)
+- `podcasts/receptor-and-reason/scripts/2026-09-05-receptor-and-reason.rss-item.xml` (validates as XML; `__LENGTH__`/`__DURATION__` in place)
+- `podcasts/receptor-and-reason/scripts/2026-09-05-receptor-and-reason.commit-msg`
+- Ledger appended: 9 keys, now 106 episodes / 1,082 items
+- No stale mp3 existed for today, so batch TTS will synthesize from the edited script
+
+## Verification pass (this is the retry's real work)
+
+All 11 salvaged items re-verified from source: Crossref confirmed every DOI, title and creation date (all inside the 7-day window); dedup filter returned 11/11 fresh against 1,878 ledger match-forms; full text re-read for all 11 (9 via `r.jina.ai`, plus JAMA Psychiatry and IJNP via `WebFetch` after the proxy route returned ~480-byte errors and PMC showed the JAMA record embargoed to 2027-09-02).
+
+Facts checked out on every quoted number. **Five corrections applied:**
+
+1. **Fabricated derived number** — "the D2 slope is roughly half a percent of binding potential per hour" is not in the paper; Table 1 gives β ≈ −0.0046 BP units/hour in left putamen (≈0.16%). Replaced with the actual quantity.
+2. **Overstated null** — "neither interaction appeared for dopamine": the daylength×D2 interaction was tested and null, but trait anxiety was only ever tested on the opioid arm. Now stated precisely.
+3. **Misattribution** — "Lauri Nummenmaa's group at Turku"; he's 5th of 6 authors. Changed to "the Turku PET Centre."
+4. **Ambiguous contrast** — "rectification index point seven two versus point four one" ran opposite to the paragraph's other pairs; PF is 0.41 and CF is 0.72. Now labeled explicitly.
+5. **Overstated effect** — SR-knockout LTP was "none at all"; the figure shows a significant reduction (p=0.002) with 10-minute short-term potentiation intact in both arms.
+
+## Editorial change
+
+The salvaged script ran 3,768 words ≈ 21.5 min, well over the 12–18 min target. I cut two items rather than compressing nine into recaps: the **FGFR1 high-speed-AFM paper** (`2026.09.02.748842`, least on-brief — not CNS) and **C-PLANK** (`2026.08.26.747036`, Tier 3, and the brief's tier rule favors keeping the Tier-1 orexin NMA head-to-head). Both were read in full and are dedup-clean, so they remain live candidates. Also tightened four paragraphs.
+
+## Candidate funnel
+
+The originating run's funnel was lost with the truncation — it never printed one. What I can reconstruct: the picks include two items yesterday's log listed as deferred-for-Cloudflare-429 (`2026.08.30.747826`, NMDA co-agonism) and read-but-cut-for-length (`2026.08.29.748003`, mGluR review), which is consistent with a normal sweep having run. I did not re-run source discovery; per the re-invocation rule the selection process would have been identical, and the surviving work product was complete.
+
+**Shipped (✓), all full text read this session:**
+
+- ✓ Striatal dopamine release meta-analysis, 92 [11C]raclopride studies — Mol Psychiatry `10.1038/s41380-026-03826-7` **(LEAD)**
+- ✓ Diurnal/seasonal MOR and D2 availability — bioRxiv `2026.09.01.748534`
+- ✓ Glutamate concentration tunes AMPA conductance-state occupancy — Nat Neuroscience `10.1038/s41593-026-02414-w`
+- ✓ NMDA co-agonism at prefrontal fast-spiking interneurons — bioRxiv `2026.08.30.747826`
+- ✓ Postmortem mGluR systematic review — bioRxiv `2026.08.29.748003`
+- ✓ Endogenous inverse agonism at melanocortin receptors — bioRxiv `2026.09.03.748715`
+- ✓ Ket-BD, serial ketamine in TRBD — JAMA Psychiatry `10.1001/jamapsychiatry.2026.2658`
+- ✓ Vornorexant vs lemborexant NMA — IJNP `10.1093/ijnp/pyag047`
+- ✓ ALLIANCE certified-LLM RCT — medRxiv `2026.08.29.26361715`
+- — FGFR1 conformational dynamics `2026.09.02.748842` — read in full, cut for length/fit, live candidate
+- — C-PLANK `2026.08.26.747036` — read in full, cut for length, live candidate
+
+**Access notes for future runs:** `jamanetwork.com` and `academic.oup.com` both 403 the `r.jina.ai` route but **read cleanly via `WebFetch`** — worth trying before writing either off, since the standing memory lists Oxford as a hard wall. Crossref 429s at 5 parallel workers on single-work lookups; 4 with an 8s backoff was clean.
+=== 2026-09-05T03:49:09-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
