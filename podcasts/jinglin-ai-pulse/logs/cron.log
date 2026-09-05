@@ -2464,3 +2464,43 @@ Shortlist:
 
 **Source failures:** `r.jina.ai` returned HTTP 429 on LessWrong twice (worked around via the site's GraphQL API); `openai.com`, `cnbc.com`, and `qz.com` 403 direct WebFetch/curl (read via r.jina.ai — the qz.com URL is confirmed live via search index only). No source was dropped from the run.
 === 2026-09-04T02:39:20-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-05T02:30:10-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so I stopped at the script plus the two transient stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator handles those after batch TTS).
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-05-the-forgotten-door.md` (3,283 spoken words, ~16 min)
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-05-the-forgotten-door.rss-item.xml` (`__LENGTH__` / `__DURATION__` placeholders, item validated as XML)
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-05-the-forgotten-door.commit-msg`
+
+**Candidate funnel — 2026-09-05**
+
+*Twitter/X direct: skipped as a source.* xcancel serves a browser challenge and x.com requires auth from this host (long-standing). Discourse signal sourced from HN front page + HF daily papers + primary docs instead.
+
+- **Hacker News front page (2026-09-04)** — 10 AI-relevant stories scanned, 6 substantive:
+  - ✅ **CHOSEN (lead)** — Discovery of a new OpenAI agent message board — https://collusion.wiki/ (1,707 pts / 1,315 comments; full report read via r.jina.ai — direct fetch fails on a TLS cert mismatch from this host)
+  - ✅ **CHOSEN (item 2)** — Formalizing Fermat's Last Theorem — https://www.anthropic.com/research/formalizing-fermats-last-theorem (617 pts; full post read)
+  - ✗ Corporate America is getting hooked on open-source AI (NYT, 296 pts) — **dropped: full text unobtainable.** NYT paywalled; r.jina.ai returned an abuse-block on the whole domain until 10:29 UTC. Only the HN thread was readable, which doesn't clear the eligibility gate.
+  - ✗ Can AI design circuit boards yet? (eebench.org, 258 pts; Astra 69.3, first place) — real but thinner than the three chosen threads; cut for length
+  - ✗ IBM Bob (269 pts), Google AI Mode pricing study (381 pts) — off-target for this show
+  - ✗ GPT-6 Astra on OpenRouter (218 pts) — Astra covered in full yesterday
+
+- **Hugging Face daily papers (2026-09-04)** — 10 scanned. Top item "Compile by Training" (271 upvotes) and "Terminal-Universe" (223) are on-target but belong to the sibling papers show (`jinglin-biomed-ai-brief` / paper-led shows); no convergence signal from the discourse layer. None selected.
+
+- **Investment news (last 7d)** — 2 selected:
+  - ✅ Crusoe, $3B+ at ~$30B, Atreides/Valor co-led, Mubadala Capital participating (Bloomberg/TechCrunch, Sep 3) — plus the $13B five-year Jane Street GPU contract
+  - ✅ Gimlet Labs, $300M Series B at $3B, a16z-led with Sapphire, M12, Arm (GlobeNewswire/SiliconANGLE, Sep 4)
+  - ✗ Moment (Ghana fintech, $22M) — off-target
+
+- **Long-form podcasts (last 14d)** — 6 feeds checked:
+  - ✅ **CHOSEN (deep cut)** — ChinaTalk, Jordan Schneider × Joshua Saxe, "Cyber Apocalypse, Now?" (Sep 2) — full transcript published; quotes verbatim
+  - ✗ TWIML #775, Justin Johnson (World Labs) on world models / spatial AI (Sep 1) — strongly on-target for Ollie but **no transcript anywhere** (twimlai.com, /go/775, tapesearch 403, no YouTube transcript found). Deferred rather than risk paraphrased quotes; revisit if a transcript appears.
+  - ✗ Dwarkesh × Ajeya Cotra (Sep 1) — already the deep cut on 2026-09-02
+  - ✗ Latent Space — newest interview is Anima Anandkumar (Aug 26), used 08-29; "PRs NOT Welcome" (Sep 1) used 09-03; Astra piece (Sep 3) used 09-04
+  - ✗ Cognitive Revolution / AI Daily Brief (Sep 3–4) — descriptions only, no transcripts published
+  - ✗ Interconnects — nothing since Aug 17; MLST, No Priors, a16z, Sequoia Training Data — nothing fresh and on-target with readable text
+  - ✗ WhynotTV (the brief's named primary) — still no in-window episodes
+
+- **Chinese-language discourse** — ✅ **CHOSEN (item 3)** ChinaTalk, Irene Zhang, "China on the Hugging Face Incident" (Sep 3), read in full: Zhou Hongwei 周鸿祎 on attack cost vs. capability, CCTV Yuyuan Tantian's 美国病 treatise. Note: I used ChinaTalk's English translations rather than reconstructing the Chinese originals, since the source only published translations for Zhou's quotes.
+
+One judgment call worth flagging: at ~16 minutes this runs over the brief's 10–15 minute target (yesterday was 13 min; 09-02 was comparably long). The day had three independently strong threads and I chose density over dropping one — say the word if you'd rather I hold the line on runtime.
+=== 2026-09-05T02:47:55-07:00 done  jinglin-ai-pulse (exit 0) ===
