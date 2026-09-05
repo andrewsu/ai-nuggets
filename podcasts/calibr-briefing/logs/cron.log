@@ -3914,3 +3914,44 @@ Shortlist (net-new, after discarding items already shipped 09-01→09-03 — Ult
 
 Spotlight rationale: the Zanvastro approval landed ~14 hours after we shipped a spotlight on the apazunersen failure and names Ionis directly in the read-across, so it isolates the causal variable (endpoint slope direction + disclosed target-engagement biomarker) rather than repeating the story. Full text confirmed the trial was a true blinded intrathecal placebo comparator, not the "untreated controls" the wire coverage described — a correction the episode makes explicitly.
 === 2026-09-04T02:35:47-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-05T02:20:10-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, feed edit, and commit, and wrote the transient stubs instead.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-09-05-pharma-headlines.txt` (1,806 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-09-05-adarx-sirna-ipo-spotlight.txt` (2,366 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as valid XML with `__LENGTH__` / `__DURATION__` placeholders; spoken text is free of URLs, DOIs, and markdown.
+
+---
+
+**Candidate funnel — 2026-09-05 (covering Friday 2026-09-04)**
+
+Sources scanned:
+- **Endpoints News** (`r.jina.ai` index): 25 items scanned, 5 net-new since yesterday's episode. Article bodies **paywalled** — index headlines + timestamps only; substituted primary sources for every item used.
+- **BioSpace** latest-news + press releases: ~40 items scanned, 8 net-new.
+- **BioPharma Dive**: ~20 items scanned, 1 net-new (weekly charts).
+- **Fierce Biotech** — `r.jina.ai` returned HTTP 403 `AbuseAlleviationError` (domain-level block until 09:29 UTC); direct `WebFetch` also 403. Skipped, no retry loop.
+- **Fierce Pharma** — jina returned empty body. Skipped.
+- **GEN** — `/topics/drug-discovery/` returned a cached 2006 article (wrong page). Skipped.
+- **STAT News** — unreadable from this host (known).
+- **SEC EDGAR** (primary, full text read): ADARx S-1, 1.1 MB text extraction.
+- Targeted web searches for Sept 4 approvals / Phase 3 readouts / AI-in-discovery news: nothing net-new on target.
+
+Substantive shortlist:
+- ✅ **CHOSEN (spotlight + lead headline)** — ADARx Pharmaceuticals S-1, Nasdaq "ADRX" — https://www.sec.gov/Archives/edgar/data/1802369/000119312526383838/d903461ds1.htm — full text read
+- ✅ **CHOSEN** — Intellia $400M OrbiMed term loan — https://ir.intelliatx.com/news-releases/news-release-details/intellia-therapeutics-secures-non-dilutive-debt-facility-orbimed
+- ✅ **CHOSEN** — Menarini / Gan & Lee bofanglutide Europe, €726M — https://www.prnewswire.com/news-releases/gan--lee-and-menarini-group-partner-to-advance-bofanglutide-in-europe-302868846.html
+- ✅ **CHOSEN** — Truist "biotech is back" survey — https://www.biospace.com/business/biotech-is-back-with-h1-progress-smoothing-glide-path-through-end-of-year-truist
+- ✅ **CHOSEN** — Lilly M&A concentration / China deal tally — https://www.biopharmadive.com/news/charts-biotech-deals-china-alumis-ultragenyx-stock/829635/
+- ✅ **CHOSEN** — Tarsus closes $450M Alkeus acquisition — https://www.globenewswire.com/news-release/2026/09/04/3356553/0/en/tarsus-pharmaceuticals-completes-acquisition-of-alkeus-pharmaceuticals-expanding-leadership-in-eye-care.html
+- ✅ **CHOSEN** — NeuShen $80M+ Series B — https://endpoints.news/us-china-biotech-neushen-gets-80m-to-develop-brain-health-drugs/
+- ✅ **CHOSEN** — Lindus Health → Lindus Therapeutics pivot — https://www.lindustx.com/
+- ✅ **CHOSEN** — CEPI/Gavi Bundibugyo Ebola vaccine funding gap — https://endpoints.news/the-race-to-make-new-ebola-vaccines-faces-a-cash-crunch/
+- ❌ Gilead Bixlenvo HIV STR approval — surfaced by search as Sept 4, verified as **August 27**; recency trap, dropped
+- ❌ Mabwell anti-ST2 COPD Phase Ib/IIa, Rein Therapeutics ERS late-breaker — folded into week-ahead only (congress opens today)
+- ❌ MassBio/SCbio Drive accelerator cohort, Neovia patent filing, Agilent scanner launch — below bar
+- ❌ TScan 75% layoffs, Ionis Zanvastro approval, ivonescimab OS, GSK-HUTCHMED, AbbVie etentamig, RevMed NEJM, Pfizer-Medicus, Novartis-Alteogen, Superluminal, Merck M&A comments — all shipped in the 2026-09-04 episodes; excluded as duplicates
+
+The OrbiMed connection (30.8% of ADARx / lender to Intellia's CRISPR knockout of the same gene) was not reported anywhere I found — it came out of cross-reading the S-1 cap table against Friday's Intellia release, and it's the spine of the spotlight.
+=== 2026-09-05T02:33:23-07:00 done  calibr-briefing (exit 0) ===
