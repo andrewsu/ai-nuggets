@@ -35,6 +35,31 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
   shared instruments, on-site vivarium. Opened February 2026; helped by a $2M
   Maryland "Build Our Future" grant. Home base for incubated spinouts and
   others in the region.
+- **BioHub resident companies — each selected to contribute a SHARED CAPABILITY to the building
+  (added 2026-09-05; source = BioBuzz BioHub Showcase coverage, 2026-05-29).** As of the May 2026
+  showcase: **80% of space built out**, **9 companies** moved in or signed, eventually **100+
+  researchers**. Named residents/featured companies: **Aletira Therapeutics** (§2), **Adventris
+  Pharmaceuticals** (§2b), **National Center to Accelerate Cures**, and two that had been missing
+  from this file entirely:
+  - **EPOCH Epigenetics, Inc.** (Baltimore) — epigenetic + multi-omic **host-response diagnostics**;
+    measures the body's epigenetic response to disease and environmental exposure rather than hunting
+    scarce circulating tumor DNA. Founder **Eric Van Gieson**, former **DARPA program manager**.
+    **Runs a CLIA-certified lab and is making it available to other BioHub tenants** to pilot
+    regulated assays and generate revenue without building their own. **Adjacency: Artemyx (cfDNA
+    diagnostics) — a same-building CLIA path and a contrasting analyte philosophy.**
+  - **Myologica** — **muscle-focused preclinical CRO**, led by **Ramzi Khairallah**; built the
+    compact, cost-efficient **vivarium behind the Blackbird space** and offers animal-study capacity
+    to every company in the building on a flexible service basis.
+  **SO-WHAT (Esther Park + Yixuan Qiu): these are portfolio infrastructure, not just tenants.** Any
+  pre-spinout program needing rodent work or a regulated-assay pilot should be routed to them before
+  it buys the capability outside. Also a **process note**: two resident companies were absent from
+  this reference for months — the tenancy roster should be a maintained field, not a showcase recap.
+  Other showcase datapoints worth holding: **22 projects initiated, 5 graduated with IP licensed into
+  newco, 22 investments, 17 new company starts, 14 BioVentures investments at $1–5M initial checks,
+  $500M of state capacity to invest through exit.** Quotes: **Travis Young** (Scripps/Calibr) —
+  "what you built here in just such a short period of time looks like what we built over 10 years";
+  **Christy Wyskiel** (JHU) — "an ecosystem here that rivals some of the best in the US."
+  Source: https://biobuzz.io/news/baltimores-biotech-bet-comes-into-focus-at-blackbird-labs-biohub-showcase-event/
 
 - **THE BD COMPARATOR OUR ACADEMIC ASSETS ARE PRICED AGAINST (added 2026-08-31 Portfolio Watch item 4; events 2026-08-25 to
   2026-08-28).** Two stories that only mean something together. **(a)** The **National Security Commission on Emerging Biotechnology
@@ -256,7 +281,7 @@ _Last update: 2026-08-28_
 company Blackbird BioVentures invested in, not a Blackbird-incubated project.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-09-01_
+_Last update: 2026-09-05_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases (Blackbird funded the **Intergalactic Center for
@@ -338,6 +363,22 @@ the endpoints are EF, NYHA, 6MWD and CV death — contractility and function aga
 **measuring function instead of fibrosis is the FIELD'S DEFAULT, not one sponsor's blind spot, which makes a trial designed to
 register scar available to us as differentiation.** Source:
 https://www.biospace.com/press-releases/askbio-presents-baseline-characteristics-from-phase-2-heart-failure-gene-therapy-trial-of-umiposgene-parvec-ab-1002-at-european-society-of-cardiology-congress
+
+**ONCOLOGY SURFACE TARGETS theme — a Seagen-built ADC against a novel antigen cleared at $12M UPFRONT, which is both a supply
+channel and a repricing (added 2026-09-05 Portfolio Watch item 4; announced 2026-09-04).** **Pfizer licensed PF-08046031** — an
+early-stage **ADC against melanotransferrin (CD228)**, acquired with **Seagen** — to **Medicus Pharma (Pennsylvania)**.
+**$12M upfront, $15M on the first anniversary, >$1B in development/regulatory/sales milestones, tiered royalties**; Pfizer also
+made a **$2M commitment to Medicus** and **retains review-and-comment rights on development plans plus periodic progress
+reports**. Context: **sigvotatug vedotin failed Phase 3 in NSCLC (June 2026)**, **SGN-MesoC2 discontinued (July 2026)**;
+**Starboard Value** has said publicly Pfizer "significantly overpaid" for the **$43B** Seagen deal.
+**SO-WHAT, two halves. (a) OPPORTUNITY (Eddie + Avi): big-pharma shelves are a cheap in-licensing channel for this theme** —
+a validated tumour surface antigen with a fully built conjugate from the best ADC shop in the industry became available for
+$12M cash because it lost a portfolio review, and it does not require us to invent the molecule. **ACTION: stand up a standing
+screen on divested / shelved large-pharma assets across our theme areas (oncology surface targets, chronic infections, COPD,
+cardiac fibrosis). We do not currently run one.** **(b) REPRICING: $12M upfront is the number in a buyer's head** when we bring
+a partner-institution program to corp dev — not the milestone headline. Same lesson as the DualityBio ($45M) / Simcere ($75M) /
+Hanmi comparators: **the upfront is what a preclinical asset is worth, and it is small.** Source:
+https://www.biospace.com/deals/pfizer-punts-seagen-adc-further-muddying-value-of-the-43b-buyout
 
 ### Terminated programs — do not cover ❌
 _Last update: 2026-08-28_
@@ -1055,6 +1096,47 @@ _Last update: 2026-08-28_
   **Martinowich's** multicellular warning (07-14 entry above). Source:
   https://www.biospace.com/press-releases/feinstein-institutes-researchers-find-jumping-genes-at-the-center-of-blood-immune-networks-disrupted-in-schizophrenia
 
+- **THE PRODUCT BEING SOLD IN GPCR DISCOVERY IS NOW *BIAS*, NOT POTENCY — and Lilly is paying up to $1.3B for it
+  (added 2026-09-05 Portfolio Watch item 2; announced 2026-09-03).** **Superluminal Medicines (Boston)** closed an
+  **oversubscribed $60M Series B** — **BVF Partners** lead; **Deep Track Capital** + **Perceptive Advisors** new;
+  **RA Capital, Insight Partners, NVIDIA, Catalio, Eli Lilly, Cooley, Gaingels** existing. **$213M total venture.**
+  **Platform (GPCR-only):** **agentic cryo-EM** producing **hundreds of empirical GPCR structures**; GPCR-focused
+  **co-folding models**; **de novo design across diverse pocket conformations**; predictive ADME/tox; GPCR biophysics to
+  **explore FUNCTIONAL SELECTIVITY at scale**. **Lead:** selective **BIASED MC4R agonist**, **oral QD**, **Phase 1 by
+  end-2026** in **Bardet-Biedl syndrome + hypothalamic obesity** (then Prader-Willi, GLP-1 combination). CEO **Cony
+  D'Cruz**. Competes with injectables **Rhythm's Imcivree (setmelanotide)** and **Neurocrine's Vykat XR**.
+  **Separate Lilly collaboration worth up to $1.3B** for small-molecule GPCRs in cardiometabolic/obesity.
+  **SO-WHAT (Hemaka + Yixuan), two directions. (a) TAILWIND:** large pharma is paying nine figures for the exact capability
+  Blackbird bought with a **$2M nine-month med-chem campaign** — orphan-GPCR agonism is a funded, priced discipline right
+  now; good backdrop for Third Rock partnering. **(b) THE ACTIONABLE HALF — THE VOCABULARY MOVED.** Superluminal sells
+  **signalling bias / functional selectivity** as the product, industrialised. **At DC declaration the diligence question
+  will not be affinity for GPR52 — it will be WHICH SIGNALLING ARM the agonist recruits, whether that was CHOSEN or
+  INHERITED, and what PD readout proves it in a patient.** Same gap as the 08-31 / 09-02 GPR52 biomarker open items, now a
+  competitive-language problem too. **CANDID LIMIT: Superluminal has not dosed a human; MC4R has a long history of
+  compounds that engaged well and never became drugs.** Sources:
+  https://www.prnewswire.com/news-releases/superluminal-medicines-announces-oversubscribed-60-million-series-b-financing-to-advance-lead-program-in-rare-genetic-forms-of-obesity-into-the-clinic-302868367.html ·
+  https://www.biopharmadive.com/news/superluminal-medicines-obesity-ai-drug-discovery-series-b/829552/
+- **NOVEL MECHANISM IN SCHIZOPHRENIA KEEPS GETTING LESS SCARCE — third clinical-stage entrant in three weeks (added
+  2026-09-05 Portfolio Watch item 3; announced 2026-09-04).** **NeuShen Therapeutics (Shanghai + Boston)**, founded by
+  **Joan Huaqiong Shen** (former CEO of **I-Mab**; board-certified psychiatry + neurology; previously Lilly, Wyeth, Pfizer,
+  Janssen), closed an **oversubscribed Series B of >$80M** — led by an **undisclosed industry investor**, with **B Capital,
+  Legend Capital, Matrix Partners China, ZhenFund, Shanghai State-owned Capital Investment** and returning **Lilly Asia
+  Ventures**. **Three clinical-stage CNS assets:** **NS-136 (laviclidine)**, **muscarinic M4 PAM**, **Phase 2 schizophrenia
+  ENROLLING (NCT07521683)** + **Phase 2 Alzheimer's agitation cleared in BOTH China and the US**; **NS-041 (zolankalner)**,
+  **KCNQ2/3 activator**, Phase 2 PoC focal-onset seizures, MDD Phase 2 in preparation; **NS-079**, **non-hallucinogenic
+  5-HT2A partial agonist**, Phase 1 FIH in Australia for treatment-resistant depression.
+  **SO-WHAT (Hemaka): the 2026-08-18 Leal read, hardened.** Three weeks, two new non-dopaminergic mechanisms into the clinic
+  in schizophrenia (Leal's GLS1 glutaminase inhibitor into Ph1b/2a with Lilly money; now an M4 PAM into Ph2 with $80M+ and
+  dual-market clearance). **Differentiation was never novelty — it is three-domain coverage, cognitive and negative
+  especially. The DC package must LEAD with three-domain data.**
+  **SO-WHAT (Eddie) — NXE'149 BIDDER-SET SIGNAL: LILLY IS MISSING FROM OUR LIST.** Lilly Asia Ventures is in NeuShen; Lilly
+  is on Superluminal's cap table AND holds the $1.3B GPCR collaboration; Lilly funded Leal's Series A extension. **Lilly is
+  writing into three adjacent CNS/GPCR theses at once. Add and rank it alongside Otsuka, Neurocrine, AbbVie/Cerevel,
+  Novartis, SK Biopharmaceuticals.** Secondary: NS-136's AD-agitation Phase 2 cleared in **both** China and the US is the
+  structural answer to the 09-02 FDA foreign-inspection item — run the US arm, don't import the data. Sources:
+  https://endpoints.news/us-china-biotech-neushen-gets-80m-to-develop-brain-health-drugs/ ·
+  https://allsci.com/news/venture-financing/neushen-therapeutics-funding-raises-usd-80m-to/
+
 ### Gut-targeted bimodal therapeutic — Crohn's & ulcerative colitis (JHU) ❌ TERMINATED
 _Last update: 2026-08-28_
 - **Status: TERMINATED — do not cover.** Oral, gut-restricted GCPII inhibitor
@@ -1247,7 +1329,7 @@ _Last update: 2026-09-04_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-04_
+_Last update: 2026-09-05_
 - **What:** novel immunology platform that **selectively treats T-cell-mediated
   autoimmune disease**; T-cell engager platform with potential in ankylosing
   spondylitis and others.
@@ -1403,6 +1485,48 @@ _Last update: 2026-09-04_
   Sources:
   https://www.tevapharm.com/news-and-media/latest-news/teva-announces-positive-topline-results-from-phase-2a-study-in-celiac-disease-for-its-anti-il-15-antibody/ ·
   https://clinicaltrials.gov/study/NCT06807463
+
+- **CONTROL ARCHITECTURE IS NOW EVIDENCED, NOT ASSERTED — a Phase 3 win built on a DELIBERATELY WEAKENED CD3 ARM (added
+  2026-09-05 Portfolio Watch LEAD; topline 2026-09-03, trade coverage 09-04).** **AbbVie's etentamig (ABBV-383)**, a
+  **BCMA x CD3 bispecific**, met **both primary endpoints** of Phase 3 **CERVINO** in triple-class-exposed relapsed/refractory
+  multiple myeloma vs **standard available therapies** — the **first randomised Phase 3 monotherapy win for a BCMA T-cell
+  engager**. **421 randomised**, median **3 prior lines**, **393 evaluable at interim**, median follow-up **11.4 months**;
+  **ORR 74.0% vs 45.7%**; **PFS HR 0.40**; IDMC **unblinded early**. Full data: plenary, **International Myeloma Society,
+  Glasgow, 2026-09-23/26**.
+  **THE SAFETY TABLE IS THE ASSET: CRS 28.3%, predominantly grade 1, ZERO grade ≥3; ONE grade-1 ICANS; fewer severe
+  infections.** Cross-trial comparators: **~73% (Tecvayli), >50% (Elrexfio), 46% (Lynozyfic)**. **Single step-up dose then
+  Q4W** vs two step-ups and longer step-down for competitors.
+  **DESIGN:** **low-affinity CD3 binding domain** (explicitly to reduce CRS + infections) + **high-avidity BIVALENT BCMA
+  domain** + **retained FcRn binding** for monthly dosing.
+  **SO-WHAT (Jon Robbins + Eddie): this is the EVIDENCE the 2026-09-02 control-architecture row was missing.** Potency and
+  toxicity are **separable knobs in an engager** — the claim a living, expanding cell product cannot make. Put the CERVINO
+  numbers in the Winnow TPP beside the Novartis IEC-HS halt.
+  **THREE LIMITS, into the deck first:** (1) CRS comparisons are **cross-trial, topline-PR, denominators not broken out** —
+  directional until Glasgow; (2) **BCMA is a very high-density plasma-cell antigen, which is what makes the
+  avidity-for-affinity trade work** — on a low-density or heterogeneous target the trade may not be available; (3) the actual
+  differentiator is **administration setting (outpatient/community)** = commercial, not biological.
+  Sources: https://news.abbvie.com/2026-09-03-AbbVie-Announces-Positive-Topline-Results-from-the-Phase-3-CERVINO-Trial-Showing-Etentamig-Significantly-Improved-Response-Rate-and-Progression-Free-Survival-in-Patients-with-Relapsed-Refractory-Multiple-Myeloma ·
+  https://www.biopharmadive.com/news/abbvie-multiple-myeloma-etentamig-phase-3-trial-results/829672/
+- **THE OPERATIONS LEG OF THE CAR-T ARGUMENT — the flagship automation vendor failed commercial qualification at its largest
+  customer (added 2026-09-05 Portfolio Watch item 5; BioPharma Dive feature + Cellares cuts reported 2026-09-04).**
+  **BEST CASE:** **Legend Biotech Raritan NJ** — capacity **up to 10,000 patients/yr**, **99% manufacturing success (Q1
+  2026)**, **median 29-day US turnaround**, **>95% on-time**; **Carvykti $657M in Q2 2026, +50% YoY, 348 sites, 19 markets**.
+  Legend also running **LB2501** in vivo CAR-T (CD19/CD20), 12-patient Phase 1, no DLTs.
+  **STRUCTURAL PROBLEM:** Cellipont COO **Mike O'Mara** — *"When you scale an autologous cell therapy, you don't scale up,
+  you scale out."* Every patient = a full run, a reserved slot, a treatment-centre schedule, QC release, courier window; a
+  cancelled procedure wastes an unrecoverable slot. Second O'Mara line worth keeping: *"The most common misconception is that
+  there will always be time later to optimize the manufacturing process."*
+  **THE AUTOMATION ANSWER FAILED:** **BMS terminated its Cellares partnership** — the **Cell Shuttle "could not meet the
+  necessary requirements"** to make commercial **Breyanzi** batches. **168 US layoffs** (South San Francisco + **68 at
+  Bridgewater NJ**), **terminations by 2026-10-20**, primarily software engineers, QC/design and manufacturing specialists —
+  **two months after topping off a $327M Series D**.
+  **SO-WHAT (Jon Robbins + Virginia Burger): third leg in two weeks — 08-29/08-30 selectivity (Lisraya, Imaavy), 09-02 safety
+  (3 IEC-HS deaths, 8 halted trials), now operations. An off-the-shelf engager is a VIAL, not a slot. The manufacturing gap is
+  NOT closing on the timeline the field assumed.** **CANDID LIMIT: Legend executes a well-run autologous product at 99%, and
+  engagers carry their own step-up dosing and monitoring burden — the claim is that autologous cost and coordination are
+  STRUCTURAL, not that they are impossible.** Sources:
+  https://www.biopharmadive.com/news/the-hidden-scale-out-problem-behind-car-t-growth/829405/ ·
+  https://www.biospace.com/business/bms-ends-cellares-pact-over-cell-therapy-production-problems-triggering-layoffs
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
 _Last update: 2026-08-31_
@@ -2560,6 +2684,11 @@ _Last update: 2026-08-30_
   and call the implication (tailwind / threat / validation / watch-item).
 
 ## 4. Open items to fill in (next research passes)
+- **Shelved / divested large-pharma asset screen (added 2026-09-05):** Pfizer's CD228 ADC cleared at $12M upfront. Who owns a standing screen on deprioritised big-pharma assets in our theme areas, what is the source (BD conference lists, 8-Ks, pipeline-page diffs, banker outreach), and what does a first pass surface? (Eddie + Avi.)
+- **Add Lilly to the NXE'149 bidder set and rank it (added 2026-09-05):** Lilly Asia Ventures in NeuShen, Lilly on Superluminal's cap table plus a $1.3B GPCR collaboration, Lilly funding Leal's Series A extension — three adjacent CNS/GPCR theses in three weeks, and Lilly is not on our list. Where does it sit against Otsuka, Neurocrine, AbbVie/Cerevel, Novartis, SK Biopharmaceuticals? (Eddie.)
+- **GPR52 signalling-bias statement (added 2026-09-05; sharpens the 08-31 and 09-02 biomarker items):** the DC package needs a written answer to WHICH signalling arm the agonist recruits, whether that profile was chosen or inherited from the chemistry, and what PD readout demonstrates it in a patient. Superluminal has made functional selectivity the industry's default vocabulary; we should not be asked this cold. (Hemaka + Yixuan.)
+- **CERVINO full dataset at IMS Glasgow, 2026-09-23/26 (added 2026-09-05):** pull the CRS/ICANS denominators, infection rates and the step-up-dose schedule for the Winnow TPP row, and check whether AbbVie reports any target-density or BCMA-expression analysis that speaks to whether the avidity-for-affinity trade travels to a lower-density antigen. (Jon Robbins.)
+- **Clasp target-density answer (added 2026-09-05):** a TCR-mimic engager sees peptide-HLA at hundreds-to-thousands of copies/cell, so the etentamig avidity trade is not available. What is CLSP-1025's stated approach to the potency/CRS trade-off, and does the development plan say it? Pair with the standing eligible-fraction item. (Avi.)
 - **Winnow control-architecture row, evidenced (added 2026-09-02):** assemble the actual comparison behind the new TPP row — IEC-HS and CRS incidence and grade distribution for autoimmune CD19 CAR-T (rap-cel, zola-cel, Cabaletta, Kyverna) against the published HLH/CRS rates for CD3 bispecifics (blinatumomab as the worst case). The claim we can defend is dose control, and it needs numbers behind it before an investor asks. (Jon Robbins + Eddie.)
 - **Does Winnow lymphodeplete? (added 2026-09-02):** the control-architecture argument assumes it does not. Confirm the dosing and premedication regimen in Winnow's own development plan before the sentence goes in a deck.
 - **Rapid-manufacturing platforms as the suspect variable (added 2026-09-02):** William Blair fingers the accelerated-expansion manufacturing common to rap-cel and zola-cel. Pull what is public on Novartis T-Charge and BMS NEX-T, and whether any autoimmune CAR-T using conventional manufacturing has reported IEC-HS at this rate — this determines whether the read is "CAR-T in autoimmunity" or "these two products."

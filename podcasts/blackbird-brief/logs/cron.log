@@ -2250,3 +2250,42 @@ Shortlist (✅ = shipped today):
 - ✗ Superluminal AI obesity Series B — no portfolio line; obesity is not a program theme
 - ✗ Pfizer offloads Seagen ADC to Medicus — no portfolio line
 === 2026-09-04T02:25:36-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-05T02:10:10-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-09-05-portfolio-watch.md` (script 2,263 words + show notes)
+- `podcasts/blackbird-brief/scripts/2026-09-05-portfolio-watch.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/blackbird-brief/scripts/2026-09-05-portfolio-watch.commit-msg`
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` — edited in place: new BioHub-residents block in §1 (EPOCH Epigenetics, Myologica, plus showcase metrics), CERVINO + CAR-T-operations entries under Winnow, Superluminal + NeuShen entries under Neuropsych NewCo, Pfizer/Medicus under the oncology-surface-targets theme, five new §4 open items, `_Last update:_` bumped on two entries
+- `podcasts/blackbird-brief/state/shipped.jsonl` — 12 keys appended (now 55 episodes / 267 unique keys)
+
+**Type:** Portfolio Watch (Saturday — no Sourcing Radar; that runs Sundays).
+
+**Candidate funnel**
+
+| Source | Scanned | Survived relevance |
+|---|---|---|
+| BioSpace (homepage + latest news/PRs) | ~45 items, Sep 1–5 | 6 |
+| Endpoints News index | 24 items, newest-first | 5 |
+| BioPharma Dive homepage | 5 top stories | 3 |
+| Fierce Biotech / Fierce Pharma | **FAILED** — HTTP 403 direct and via `r.jina.ai`; not retried past one alternate route; covered by overlap with the other three | — |
+| BioBuzz (Baltimore/BioHealth) | ~20 items since 08-28 | 0 in-window (one May-2026 article used only for the reference-file fix) |
+| FDA press announcements | 5 items, Sep 1–5 | 0 (breast-cancer accelerated approval and newborn-nutrition action both off-thesis) |
+| Targeted searches (GJB2/hearing gene therapy, ALS-FTD ASO, JHU/UMB spinouts, AAV holds) | — | 0 net-new |
+
+Dedup: 14 candidates → 14 fresh (0 ledger hits).
+
+**Shortlist and disposition**
+- ✅ **LEAD** — AbbVie etentamig, Phase 3 CERVINO — biospace.com/drug-development/abbvies-t-cell-engager-delivers-survival-benefit-in-phase-3-multiple-myeloma-study
+- ✅ **Item 2** — Superluminal $60M Series B, biased MC4R / GPCR platform — prnewswire + biopharmadive.com/news/superluminal-medicines-obesity-ai-drug-discovery-series-b/829552/
+- ✅ **Item 3** — NeuShen $80M+ Series B, three clinical CNS assets — endpoints.news/us-china-biotech-neushen-gets-80m-to-develop-brain-health-drugs/
+- ✅ **Item 4** — Pfizer punts Seagen CD228 ADC to Medicus — biospace.com/deals/pfizer-punts-seagen-adc-further-muddying-value-of-the-43b-buyout
+- ✅ **Item 5** — CAR-T scale-out feature + BMS/Cellares termination — biopharmadive.com/news/the-hidden-scale-out-problem-behind-car-t-growth/829405/
+- ✅ **Item 6** — Truist H1 scorecard + Merck BD chief + ADARx S-1 — three URLs in show notes
+- ⬜ Teva IL-15 celiac — already covered 09-03
+- ⬜ Typewriter $56M — already covered 09-03
+- ⬜ Menarini/Gan & Lee GLP-1, Lindus CRO sale, MassBio/SCbio accelerator cohort, Novartis–Alteogen, Intellia/OrbiMed debt, Tarsus–Alkeus — no line to a Blackbird company, program or partner
+
+**Note on sourcing:** Endpoints article bodies are paywalled to both direct fetch and the jina proxy from this host, so the NeuShen, Merck and ADARx items were grounded in the primary company/aggregator coverage listed in the show notes rather than the Endpoints body. The Superluminal and CERVINO items were read in full from the press releases and trade coverage.
+=== 2026-09-05T02:26:01-07:00 done  blackbird-brief (exit 0) ===
