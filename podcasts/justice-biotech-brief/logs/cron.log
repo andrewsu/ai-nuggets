@@ -2887,3 +2887,42 @@ Policy/funder: ARPA-H, NIH and NSF news pages had nothing in-window on-target (t
 
 Deferred-preprint list: no open deferrals (closed 2026-09-03 when the transglutaminase ADC preprint was retired at the ~2-week cap).
 === 2026-09-04T02:48:54-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-05T02:40:10-07:00 start justice-biotech-brief ===
+Episode written for `justice-biotech-brief`. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written**
+- `podcasts/justice-biotech-brief/scripts/2026-09-05-hmpl-a830-kras-egfr-attc-gsk-hutchmed.md` (1,315 words)
+- `…​.rss-item.xml` (validated as parseable XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** HMPL-A830 — HUTCHMED's first-in-class KRAS-EGFR "antibody-targeted therapy conjugate," licensed to GSK Thursday 2026-09-03 for $110M up front / up to $1.295B. The angle: the payload is a KRAS inhibitor, i.e. an oral drug you can already prescribe, which inverts the ADC field's founding premise; and the anti-EGFR antibody isn't a vehicle but the CodeBreaK-300-validated combination partner, so an approved drug combination has been collapsed into one molecule. The load-bearing critique is that EGFR's highest normal expression (skin, gut) is exactly where daraxonrasib's dose-limiting toxicity lives — so the whole case hinges on whether the undisclosed payload is *mutant*-selective, which HUTCHMED's "highly selective" phrasing does not establish.
+
+Sources read in full: GlobeNewswire/BioSpace/HUTCHMED press release, ClinicalTrials.gov NCT07718581 protocol (design, PK species, exclusion criteria), HUTCHMED AACR 2026 abstract listing (HMPL-A580 payload data), FDA daraxonrasib approval + label toxicity, CodeBreaK 300 efficacy.
+
+**Candidate funnel**
+
+*bioRxiv (details API, 2026-09-03 → 09-05, day-by-day, cursor-advanced):* 663 records fetched, 656 unique DOIs; 116 keyword hits, ~10 substantive after discarding "biologic"/"car t"-inside-a-word noise.
+- Lymphomimetic synthetic immune niche (CCL21 + ICAM1) accelerates CAR-T expansion — `10.64898/2026.08.30.748076` — shortlisted, manufacturing-side, narrower than the pick
+- Microbial valerate and CAR-T dysbiosis in B-cell lymphoma — `10.64898/2026.09.01.748711` — shortlisted
+- Ex vivo human tumor slices beat mouse models for oncolytic virus response — `10.64898/2026.09.01.748437`
+- Siglec-7/9 ligands across LuCaP PDX series (glyco-immune checkpoint) — `10.64898/2026.09.02.748828`
+- Salmonella-delivered GSDMD potentiates PD-1 blockade — `10.64898/2026.09.02.748795`
+- BAGEL-CAR: Bits-to-Binders competition reflections — `10.64898/2026.09.02.748856`
+- Immune-cell-depleted DLBCL, reduced MHC-I — `10.64898/2026.09.01.748487`
+- Excluded as version bumps outside window: Selective Immune Silencing by Targeted TGF-β Mimics (v2 of Jan preprint)
+
+*News / press (Endpoints index, BioSpace latest + press releases, BioPharma Dive, targeted searches):* ~60 items scanned, 8 on-target and in the 2-day window.
+- **HMPL-A830 KRAS-EGFR ATTC → GSK, $110M/$1.295B (2026-09-03) — CHOSEN**
+- Pfizer licenses CD228 ADC PF-08046031 to Medicus, $12M up front (09-03) — on-target, but a divestment with no new science
+- AbbVie etentamig CERVINO Phase 3 — already shipped 2026-09-04
+- Summit/Akeso ivonescimab HARMONi-2 OS — already shipped 2026-09-03
+- Novartis/BMS autoimmune CAR-T halts — already shipped 2026-09-01
+- Teva anti-IL-15 single-shot celiac readout (09-03) — autoimmune biologic, in window, second choice
+- TScan cuts 75% of staff, pauses Phase 3 (09-04) — corporate, thin
+- Mabwell anti-ST2 9MW1911 Phase Ib/IIa in COPD at ERS (09-04) — off-target indication
+- Rejected on recency: Third Arc $52M Series A extension / ARC101 CLDN6×CD3 TCE (Feb 2026, surfaced by search as if recent)
+
+*Policy / funders (ARPA-H, NIH, NSF):* nothing new in window; the ARPA-H $125M on-demand RNA manufacturing award is 3 days old and off-target.
+
+*Source failures:* `fiercebiotech.com` returned HTTP 403 both direct and via `r.jina.ai` — covered indirectly via domain-restricted search; `hutch-med.com` English release path 404s (site redesign), read via the Chinese-path release and the GlobeNewswire/BioSpace mirrors. `curl` cannot reach globenewswire.com from this host (HTTP/2 INTERNAL_ERROR, then timeout on HTTP/1.1), but WebFetch retrieved the release body from that exact URL, so the `Paper link:` is verified.
+=== 2026-09-05T02:51:56-07:00 done  justice-biotech-brief (exit 0) ===
