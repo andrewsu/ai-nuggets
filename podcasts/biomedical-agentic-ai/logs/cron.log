@@ -4145,3 +4145,44 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 **Chosen:** MedCP — https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1883853/full
 === 2026-09-04T02:07:29-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-05T02:00:10-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` was set, so I wrote the script plus the two transient stubs and stopped short of TTS, R2 publish, feed edit, and commit — `publish_pending.py` does those after batch TTS.
+
+**Today's pick:** Karenina — "Turning Domain Expertise into Multi-Dimensional Evaluation of Biomedical AI with Karenina" (bioRxiv, posted 2026-09-04, v1, EMBL-EBI / Open Targets / Saez-Rodriguez, open source under the biocypher org). Full text read via `r.jina.ai` on the `.full.pdf` (the `.full` HTML was still abstract-only). Script is 990 words, under the 1150 cap.
+
+Files written:
+- `podcasts/biomedical-agentic-ai/scripts/2026-09-05-karenina-multidimensional-biomedical-eval.md`
+- `…​.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders; XML validated)
+- `…​.commit-msg`
+
+---
+
+## Candidate funnel
+
+**bioRxiv** (details API, 2026-09-01 → 09-05, day-by-day, cursor-paginated): 1,076 records / 1,060 unique scanned; 63 keyword hits; 8 survived after discarding spurious matches ("cytoskeletal agents", "non-cell-autonomous", "therapeutic agent") and version-bumps of out-of-window originals.
+- **CHOSEN** — Turning Domain Expertise into Multi-Dimensional Evaluation of Biomedical AI with Karenina — https://www.biorxiv.org/content/10.64898/2026.09.01.748513v1
+- Evaluating LLMs as Tools to Navigate Researchers in Rapidly Evolving Research Landscapes — 10.64898/2026.09.02.748827
+- An annotation-overlap-flagged rare-disease gene-prioritisation benchmark and PMC index recipe — 10.64898/2026.08.30.748028
+- De novo design of ligand binding proteins using large language models alone — 10.64898/2026.09.02.748987
+- scRep / TomatoPGFM / scRNA-seq foundation-model scaling recipes / agent-based 3D cancer model — foundation-model or ABM papers, not agentic AI
+- Excluded as version bumps of out-of-window preprints: MetaClaw (v2), *AI semantics for biomedical data integration* (v2), Bio-Babel-adjacent items, GO-priors critique (v3)
+
+**arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries covering 09-01 → 09-03 only — the 500-entry cap again gives <3 days; one live listing call confirmed nothing announced past 09-03): 500 scanned, 117 bio×agentic hits, shortlist:
+- A computable representation of the physical laboratory enables verifiable workflows — arxiv.org/abs/2609.03621
+- HyGRAIL: Cost-Aware, Evidence-Grounded Hypothesis Discovery over KGs — 2609.02056 (MatKG, not biomedical)
+- Learning to Fuse LLMs with Ontology Rankers for Rare-Disease Diagnosis — 2609.02473
+- NS-Copilot (autonomous neuroscience analysis) — 2609.01971; ArcticSwarm — 2609.01870; EvoSCM — 2609.01526; Emergent Cheating and Whistleblowing in Autonomous Research Swarms — 2609.04170
+- Bioinfoysis Technical Report — 2609.03871 (already covered on receptor-and-reason 09-04)
+
+**PubMed** (E-utilities, reldate=5, `history[].pubmed` dates): 400 PMIDs fetched, 186 relevance hits, 36 with an agentic/LLM term in the title. Best: ICTV virus taxonomy ontology API (GigaScience); 311,751-meta-analysis AI-agent bias audit (J Glob Health); LLMs → medical specialists via knowledge injection (Cell Rep Med). None beat Karenina on fit.
+
+**ChemRxiv**: `site:chemrxiv.org` WebSearch returned **zero in-window items** (only Jan–Jul 2026), and the site/API/jina are all Cloudflare-gated from this host. Routed around via the Crossref API on DOI prefix `10.26434` filtered by posted date — 216 preprints enumerated, ~17 AI/ML hits. Best: experiment-calibrated in-silico AI co-scientist for ALD passivation; OptoMatKG (ontology + evidence-constrained auditing); An Amdahl Framework for Agentic Computational Science. All materials/chemistry domain.
+
+**News / product launches** (09-02 → 09-05): HuggingFace daily papers (67, zero bio-agent items), Nature / Nat Biotech / Nat Methods / NMI RSS, GenomeWeb sections, DeepMind, Anthropic, Arc, and GitHub releases for 8 bio-AI agent repos (Biomni, ToolUniverse, paper-qa, state — **no releases in window**). Live candidates: AI BioDesign accelerator, ~$95M, Allen Institute + UW + Fred Hutch (09-03); MedCP in Frontiers in AI (09-04, already shipped as yesterday's episode).
+- Failed sources: science.org (403 direct + Cloudflare via jina), openai.com/news (403), genomeweb.com homepage (403/404, section pages worked), nature.com news listing (303 → idp.nature.com, worked around via RSS), insideprecisionmedicine.com (404), Semantic Scholar date-filtered search (no usable results). Endpoints AI channel loaded but shows only relative timestamps, so it can't support a hard 3-day window.
+- Stale, not broken: FutureHouse news (newest Nov 2025), CZI newsroom (Jul 2026), EMBL-EBI news (27 Aug 2026).
+
+**Policy / funders**: ARPA-H, NIH, NSF, HHS press pages all read cleanly. One in-window item — ARPA-H RAPID, up to $98.5M across four teams for AI-enabled rare-disease diagnosis (09-01). Real candidate, but an awards announcement with no technical companion loses to a readable open-source framework paper for this show.
+
+**One operational note worth flagging:** the bioRxiv details API hung for ~15 minutes on the 2026-09-03 request at cursor 420 (448 total) — no exception, no retry line, just a stall — then recovered on its own and completed the day. That's a new failure shape versus the documented cursor-390 truncation, and a fixed per-request timeout won't catch it since the socket stays open.
+=== 2026-09-05T02:10:04-07:00 done  biomedical-agentic-ai (exit 0) ===
