@@ -3955,3 +3955,37 @@ Substantive shortlist:
 
 The OrbiMed connection (30.8% of ADARx / lender to Intellia's CRISPR knockout of the same gene) was not reported anywhere I found — it came out of cross-reading the S-1 cap table against Friday's Intellia release, and it's the spine of the spotlight.
 === 2026-09-05T02:33:23-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-06T02:20:12-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scripts and stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those).
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-09-06-pharma-headlines.txt` (1,658 words)
+- `podcasts/calibr-briefing/scripts/2026-09-06-pelacarsen-lpa-horizon-spotlight.txt` (1,974 words)
+- matching `.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` tokens) and `.commit-msg` stubs for each
+
+**Candidate funnel**
+
+Sources scanned:
+- **Endpoints News** (`r.jina.ai/endpoints.news/news/`) — index working, newest item a 23-hour-old weekly recap; nothing net-new; **did not carry the pelacarsen story at all**
+- **BioPharma Dive** homepage — working, and the source of the day's lead (article 829736, published Sat 09-05 12:51 on a Friday-evening event)
+- **BioSpace** `/latest-news-press-releases` — working; newest editorial Sept 4, newest wire release Sept 4
+- **Clinical Trials Arena** `/news/` — working, ~40 headlines; dates confirmed individually
+- **STAT** — article readable via jina (byline + first 3 grafs, then paywall); confirmed Sept 4 21:07 UTC
+- **Fierce Biotech / Fierce Pharma** — both 237–322 byte tracker-pixel responses via jina, homepage and article; **failed, skipped** (intermittent per prior runs)
+- Primary sources read in full: Novartis media release, Ionis BusinessWire release, ClinicalTrials.gov NCT04023552, Am Heart J design paper (PMID 40185318), Burgess JAMA Cardiol MR (PMID 29926099), pelacarsen Phase 2b NEJM (PMID 31893580), pelacarsen MOA review (PMID 40781022), VESALIUS-CV Lp(a) analysis (PMID 42183757), plus the four live Phase 3 Lp(a) trial records
+
+Shortlist after dedup against every prior `scripts/*.txt` (Endpoints/BioSpace/CTA had ~25 items already shipped Sept 2–5 — ADARx, Intellia/OrbiMed, Menarini, Truist, Tarsus/Alkeus, NeuShen, Lindus, CEPI, TScan, Medicus/Pfizer, Superluminal, Alteogen, Merck BD, remibrutinib, ivonescimab, AbbVie etentamig):
+
+- **✅ CHOSEN (headlines lead + spotlight)** — Novartis/Ionis pelacarsen misses Lp(a)HORIZON — never covered; broke 16:30 ET Friday, after the 09-05 cron's window
+- **✅ CHOSEN** — Argo BW-20805 prekallikrein siRNA, Phase 2 HAE, 96% attack reduction q24w
+- **✅ CHOSEN** — Climb Bio CLYM116 anti-APRIL sweeper antibody, first-in-human, IgA nephropathy
+- **✅ CHOSEN** — Mabwell 9MW1911 anti-ST2 Phase 1b/2a in COPD at ERS 2026
+- **✅ CHOSEN** — ARPA-H GIVE program, up to $125M for distributed RNA manufacturing
+- **✅ CHOSEN** — Treeline/Roche BCL6-degrader + CD20×CD3 bispecific collaboration
+- **✅ CHOSEN** — Ocugen ArMaDa3 Phase 3 start (OCU410, geographic atrophy)
+- **✅ CHOSEN** — Norroy 177Lu-NYM032 NMPA Phase 3 clearance (PSMA radioligand)
+- ❌ Sensorion HearConnex France approval — thin, cut for time
+- ❌ MassBio/SCbio Drive accelerator cohort; Neovia patent filing; Markel travel-reimbursement scheme; TrialAssure/EMA — below bar
+
+One note worth flagging: the 09-05 episode shipped without pelacarsen despite the release predating that cron by ~10 hours. I appended the diagnosis to `reference_weekend_news_gap.md` — the Saturday 02:00 run sits in a hole where the wires have a Friday after-close release but no index has indexed it, and European (CET-evening) releases fall into it most often.
+=== 2026-09-06T02:37:24-07:00 done  calibr-briefing (exit 0) ===
