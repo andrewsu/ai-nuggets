@@ -4186,3 +4186,45 @@ Files written:
 
 **One operational note worth flagging:** the bioRxiv details API hung for ~15 minutes on the 2026-09-03 request at cursor 420 (448 total) — no exception, no retry line, just a stall — then recovered on its own and completed the day. That's a new failure shape versus the documented cursor-390 truncation, and a fixed per-request timeout won't catch it since the socket stays open.
 === 2026-09-05T02:10:04-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-06T02:00:12-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the two transient stubs and did not run TTS, publish, edit the feed, or commit.
+
+**Files written:**
+- `podcasts/biomedical-agentic-ai/scripts/2026-09-06-sphere-synthetic-twin-agent-analysis.md` (980 words spoken body, under the 1150 cap; no digits/symbols/URLs in the spoken portion)
+- `.rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `.commit-msg`
+
+**Pick:** SPHERE — "Unlocking Sensitive Data with SPHERE in the Age of AI" (bioRxiv v1, posted 2026-09-05, Zihuai He / Stanford, with Zou, Desai, Altman, Wyss-Coray). Full text obtained (104 KB, 32pp) via `r.jina.ai` on the `.full.pdf` URL after `fetch_preprint.py` fell through to abstract-only and the first jina attempt hit a Cloudflare 429. The take: a model-free transform that preserves first and second moments exactly, so a four-agent Virtual Lab that never touches the real records writes a pipeline that transfers *identically* — plus the first open individual-level ADRC release with no IRB gate — set against the fact that the algorithm and the privacy derivations are withheld pending a patent, so the claim justifying that release cannot currently be audited.
+
+---
+
+**Candidate funnel**
+
+- **bioRxiv** (2026-09-03 → 09-06, day-by-day details API): 719 records swept, 65 keyword hits, 8 substantive after discarding spurious matches ("chemical agent", "therapeutic agent", "foundation model" on single-cell atlases).
+  - ★ **SPHERE — Unlocking Sensitive Data with SPHERE in the Age of AI** — https://www.biorxiv.org/content/10.64898/2026.09.01.748580v1 — **CHOSEN**
+  - Bio-Babel: autonomous cross-language reconstruction of agent-ready computational biology ecosystems (Qiu lab, Stanford) — https://www.biorxiv.org/content/10.64898/2026.08.30.743167v1 — strong runner-up, 3-sentence abstract, not fetched in full; **live candidate for a later day**
+  - De novo design of ligand binding proteins using large language models alone (DeGrado, UCSF) — https://www.biorxiv.org/content/10.64898/2026.09.02.748987v1 — flashy, but LLM-as-designer rather than agentic/KG
+  - Annotation-overlap-flagged rare-disease gene-prioritisation benchmark + PMC index recipe — https://www.biorxiv.org/content/10.64898/2026.08.30.748028v1
+  - Evaluating LLMs as Tools to Navigate Rapidly Evolving Research Landscapes (cancer DRP survey) — https://www.biorxiv.org/content/10.64898/2026.09.02.748827v1 — thin
+  - AI semantics for biomedical data integration (EMBL-EBI; OLS + GrEBI MCP server) — **excluded: v2 version-bump of an 08-03 preprint, out of window.** Very on-target; flag if a v1-equivalent event recurs
+  - MetaClaw (auditable metagenomics agent) — excluded, v2 of 07-21
+  - Karenina — already shipped 2026-09-05
+- **arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries covering 09-01→09-03; one live listing call confirmed nothing past 09-03 exists yet): 115 relevance hits, shortlist:
+  - HyGRAIL: Cost-Aware and Evidence-Grounded Scientific Hypothesis Discovery over Knowledge Graphs — https://arxiv.org/abs/2609.02056
+  - A computable representation of the physical laboratory enables verifiable workflows — https://arxiv.org/abs/2609.03621
+  - NS-Copilot: LLM-Driven Agent System for Autonomous Neuroscience Analysis — https://arxiv.org/abs/2609.01971
+  - A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms — https://arxiv.org/abs/2609.04170
+  - Learning to Fuse LLMs with Ontology Rankers for Rare-Disease Diagnosis — https://arxiv.org/abs/2609.02473
+- **PubMed** (reldate 5, edat): 171 IDs, 144 keyword hits, shortlist:
+  - LLMs build inconsistent knowledge graphs from one immune-checkpoint corpus (Front Immunol, 09-02) — https://doi.org/10.3389/fimmu.2026.1937268 — **closest competitor**; full text read (four LLMs, one prompt, one corpus: expert precision 0.914 across all four, pairwise edge Jaccard 0.06–0.11, majority vote loses to the best single model). Lost to SPHERE on newsworthiness only; **worth revisiting if a slow day**
+  - Orchestrating agentic systems at ALS beamline 5.3.1 with Osprey and Bluesky (J Synchrotron Rad) — not biomedical
+  - Programmatic access to ICTV virus taxonomy through a public ontology API (GigaScience, 09-04) — open-data/ontology fit, no AI angle
+  - AResKGLM: graph-grounded LM for multi-hop AMR reasoning (Brief Bioinform)
+  - Digital twins are funhouse mirrors: Five systematic distortions (Sci Adv) — social-science digital twins, off-target
+  - MedCP (Front AI, 09-04) — already shipped 2026-09-04
+- **ChemRxiv**: `site:chemrxiv.org` search returned nothing inside the 4-day window (newest relevant hit was 2026-07-28). No in-window candidates.
+- **News / product launches**: nothing net-new on-target in the 3-day window (Sunday weekend gap; the one "September 2026" hit was the Frontiers MedCP paper already shipped 09-04).
+- **Policy / funders**: ARPA-H, NIH, NSF news pages checked — no agentic-AI or biomedical-AI program launches in window (NIH's newest items are an NLM director appointment and a GLP-1 lifespan study).
+
+**Source failures:** `fetch_preprint.py` jina channel returned abstract-only for SPHERE (bioRxiv body not yet rendered, 1-day-old preprint); recovered via `r.jina.ai` on the `.full.pdf` URL. First `.full.pdf` attempt returned a Cloudflare 429 from this host IP; a retry plus a WebFetch of the same jina URL both succeeded. Frontiers `fimmu` full text 524'd through curl+jina; read via WebFetch instead.
+=== 2026-09-06T02:11:02-07:00 done  biomedical-agentic-ai (exit 0) ===
