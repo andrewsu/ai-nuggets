@@ -4180,3 +4180,35 @@ The originating run's funnel was lost with the truncation — it never printed o
 
 **Access notes for future runs:** `jamanetwork.com` and `academic.oup.com` both 403 the `r.jina.ai` route but **read cleanly via `WebFetch`** — worth trying before writing either off, since the standing memory lists Oxford as a hard wall. Crossref 429s at 5 parallel workers on single-work lookups; 4 with an 8s backoff was clean.
 === 2026-09-05T03:49:09-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-09-06T02:50:12-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-09-06-receptor-and-reason.md` — 3,120 spoken words, 8 items (~17 min at the show's measured rate)
+- `.rss-item.xml` (validated as XML, and validated when inserted into the live feed) and `.commit-msg` stubs
+- Ledger appended: 8 keys, 107 episodes total
+
+**Candidate funnel**
+
+Recency window 2026-08-30 → 2026-09-06. Ledger at run start: 106 episodes, 1,082 items.
+
+- **bioRxiv details API** — day-by-day sweep, 8 days, 1,402 records, 1,001 v1-in-window. Neuroscience/pharmacology + CNS-keyword filter → 76 Tier 1; agentic/foundation-model titles → 9 Tier 2. 23 taken to dedup, **8 already shipped**, 15 fresh.
+- **arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries but only covers 09-01 → 09-03 (500-entry cap; Sunday, nothing past Thursday). 38 agentic+bio matches; top two (NS-Copilot, Bioinfoysis) both already shipped. No arXiv pick today.
+- **Journals via Crossref** — 22 ISSNs, 5 workers. Briefings in Bioinformatics HTTP 429 (skipped, no retry — one of 22), Lancet Neurology ISSN 404s (bad ISSN in my list, not an outage). ~180 journal-articles scanned → 35 relevant → dedup dropped 5 (incl. `s41587-026-03217-x` and `s41386-026-02534-8`).
+- **Full-text gate** — jina rate-limited hard for ~40 min (408/305/198-byte replies). Two items **failed and are deferred**: `2026.08.28.747847` (astrocyte NAc rhythm / binge drinking, 6 failures) and `10.1002/cpt.70469` (CPT AI Cautionary Guide). `s41593-026-02421-x` (mito calcium/addiction) returned references-only — no body. `s41531-026-01552-z`, `s41531-026-01519-0`, `s41380-026-03862-3` abstract-only; `s41386-026-02551-7` access-walled. All logged to the rolling deferral memory.
+
+**Shortlist and picks** (✓ = shipped today)
+
+✓ Satoprodil GluN2B NAM, two Phase 2 MDD trials — `10.1038/s41386-026-02538-4` (LEAD)
+✓ α2δ-2 couples Ca²⁺ entry to release in PV interneurons — `10.64898/2026.08.31.748347`
+✓ Fingolimod exacerbates tau pathology — `10.64898/2026.09.01.748583`
+✓ H3 receptors / NGF-driven neuropathic pain — `10.64898/2026.08.28.746833`
+✓ 2-AG and cocaine self-administration in marmosets — `10.64898/2026.09.01.748459`
+✓ WES in OCD/chronic tic disorders, 36 risk genes — `10.1038/s41593-026-02419-5`
+✓ De novo ligand-binder design with LLMs alone — `10.64898/2026.09.02.748987`
+✓ Scaling recipes for scRNA-seq foundation models — `10.64898/2026.08.31.747783`
+— MOR in RVM, neuropathic pain — `10.64898/2026.08.26.747135` (PDF route dropped the Results/Discussion prose; deferred pending `.full` HTML)
+— Nutraceuticals NMA for MDD, voice-biomarker foundation model, scorpion toxin/KCNA2, FlexiTAC, Chemi-Proteome LAN — deferred, listed in memory
+
+One correction worth flagging: my first pass described α2δ-2 as "one of the four auxiliary subunits" of voltage-gated calcium channels; it's one of four α2δ *isoforms*, and I fixed that in the script before finishing.
+=== 2026-09-06T03:11:27-07:00 done  receptor-and-reason (exit 0) ===
