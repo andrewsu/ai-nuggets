@@ -2926,3 +2926,35 @@ Sources read in full: GlobeNewswire/BioSpace/HUTCHMED press release, ClinicalTri
 
 *Source failures:* `fiercebiotech.com` returned HTTP 403 both direct and via `r.jina.ai` — covered indirectly via domain-restricted search; `hutch-med.com` English release path 404s (site redesign), read via the Chinese-path release and the GlobeNewswire/BioSpace mirrors. `curl` cannot reach globenewswire.com from this host (HTTP/2 INTERNAL_ERROR, then timeout on HTTP/1.1), but WebFetch retrieved the release body from that exact URL, so the `Paper link:` is verified.
 === 2026-09-05T02:51:56-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-06T02:40:12-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script plus the two transient stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written:**
+- `podcasts/justice-biotech-brief/scripts/2026-09-06-tev-53408-anti-il15-celiac-gluten-challenge-vh-cd.md` (1,345 spoken words)
+- `…​.rss-item.xml` (validated as XML, no unescaped ampersands, `__LENGTH__`/`__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** TEV-53408 (Teva's anti-IL-15 mAb) — Phase 2a celiac topline, announced Wed 2026-09-02. Single subcutaneous dose, 6-week supervised gluten challenge, n=50. Primary Vh:Cd met (0.45 difference, 95% CI 0.06–0.84); IEL density held flat (+0.37 vs +27.60 placebo). The angle: Amgen ran nearly the identical experiment with AMG 714 in 2019 (same primary, same Finnish sites) and missed it (−2.49% / +6.39%, both n.s.) while hitting the same IEL biomarker — so the episode is about which of the two readings of that 2019 result was right, the fragility of this primary vs. the emphatic secondary, and the Vh:Cd/IEL dissociation. Callback to the FB102/argenx anti-CD122 episode (2026-07-27), where I explicitly said to watch the H2 celiac readout.
+
+**Candidate funnel**
+
+*bioRxiv (details API, day-by-day 09-03 → 09-06, full collection):* 719 records scanned (448 / 210 / 61 / 0), 38 survived keyword filter, ~6 substantive after discarding spurious matches ("CAR T" in a Grewia biogeography paper, "linker" in chromatin, "ADC" in a methylation array). Nothing clearing the bar against the news item:
+- Lymphomimetic synthetic immune niche (CCL21 + ICAM1) accelerates CAR T expansion — `10.64898/2026.08.30.748076`
+- Microbial valerate and CAR T dysbiosis, MD Anderson — `10.64898/2026.09.01.748711`
+- Fc domains with absolute FcγRIIa- vs FcγRI-selectivity, UT Austin — `10.64898/2026.08.31.748147`
+- Notch as master regulator of CD8 exhaustion — `10.64898/2026.09.01.748651`
+- Salmonella-delivered GSDMD potentiates PD-1 blockade — `10.64898/2026.09.02.748795`
+- Siglec-7/9 ligands across LuCaP PDX, glyco-immune checkpoint — `10.64898/2026.09.02.748828`
+
+*News (Sunday 2am — weekend gap, zero net-new Sat/Sun; fell back to uncovered Wed 09-02 → Fri 09-04):*
+- **TEV-53408 anti-IL-15 Phase 2a celiac, Teva, 09-02 — CHOSEN**
+- Pfizer divests melanotransferrin ADC PF-08046031 to Medicus, $12M up front, 09-03/04 — runner-up; real ADC story but a thin asset
+- TScan cuts 75% of workforce, pivots to solid-tumor TCR-T, 09-03/04
+- Typewriter raises $56M, jumping-gene in vivo CAR-T, 09-03
+- Novartis/Alteogen subcutaneous delivery deal, 09-04
+- Already shipped, excluded: etentamig CERVINO (09-04 ep), ivonescimab HARMONi-2 OS (09-03 ep), HMPL-A830/GSK (09-05 ep), Novartis/BMS autoimmune CAR-T halt (09-01 ep), Replimune RP1 (07-29, 08-07 eps)
+
+*Policy:* ARPA-H — one September item (09-01, made-to-order genetic medicine manufacturing), off-target. NIH/NSF nothing on-target.
+
+*Source failures:* Fierce Biotech HTTP 403 both direct and via `r.jina.ai` (two routes, no retry loop); Endpoints article bodies 403 (paywall) — headline index via jina was readable and sufficient. PubMed direct 403'd on cookies; the AMG 714 abstract was recovered via `r.jina.ai`. Proceeded on the remaining sources per PIPELINE.md.
+=== 2026-09-06T02:48:01-07:00 done  justice-biotech-brief (exit 0) ===
