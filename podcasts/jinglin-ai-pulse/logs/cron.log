@@ -2504,3 +2504,45 @@ Episode written. `SKIP_TTS=1` is set, so I stopped at the script plus the two tr
 
 One judgment call worth flagging: at ~16 minutes this runs over the brief's 10–15 minute target (yesterday was 13 min; 09-02 was comparably long). The day had three independently strong threads and I chose density over dropping one — say the word if you'd rather I hold the line on runtime.
 === 2026-09-05T02:47:55-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-06T02:30:12-07:00 start jinglin-ai-pulse ===
+Episode written and staged for the batch TTS pipeline.
+
+**Published:** `podcasts/jinglin-ai-pulse/scripts/2026-09-06-who-checks-the-work.md` — "Who Checks the Work" (3,603 spoken words, ≈18 min)
+
+`SKIP_TTS=1` is set, so per PIPELINE.md I skipped `gen_tts.py`, `publish_episode.sh`, the `feed.xml` edit, and the commit, and instead wrote the two transient stubs alongside the script:
+- `2026-09-06-who-checks-the-work.rss-item.xml` (validated: parses standalone with the itunes namespace bound, and parses when simulated into `feed.xml`)
+- `2026-09-06-who-checks-the-work.commit-msg`
+
+Spoken body lints clean: no headings, bullets, URLs, DOIs or arXiv IDs; no pseudo-heading paragraph openers.
+
+**Editorial thread:** four items that all turn out to be the same story about who grades the work, and how every outer layer is failing — OpenAI's disclosure taxonomy, human competence erosion, automated grading environments, and McGrath's argument for moving the check to the gradient.
+
+**Candidate funnel**
+
+Hacker News (last 60h, >80 points): 74 stories scanned, 11 AI-substantive, 5 shortlisted
+- ✅ Can AI design circuit boards yet? (408p) — https://eebench.org/blog/can-ai-design-circuit-boards-yet/ — **CHOSEN**
+- ✅ AI handles incidents, engineers lose touch with their systems (382p) — https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems — **CHOSEN**
+- ✅ LLMs as a Cognitive Virus (270p) — https://arxiv.org/abs/2609.03344 — **CHOSEN**
+- ✗ Corporate America is getting hooked on open-source AI (325p, NYT) — WebFetch blocked at nytimes.com, dropped per full-text gate
+- ✗ "Next-token predictor" is the wrong mental model (155p) — rehashes a well-known position, no new data point
+- ✗ Portal by Spotify cut Claude Code token usage 90% (258p) — product/tooling, thin intellectual substance
+- ✗ collusion.wiki / FLT (2,186p / 754p) — already shipped in yesterday's episode
+
+Hugging Face daily papers (Sep 5): 5 top papers scanned
+- ✅ Terminal-Universe (Qwen, 268 upvotes) — https://arxiv.org/abs/2609.04148 — **CHOSEN**
+- ✗ Compile by Training (314 upvotes, UWaterloo) — strong but off today's thread
+- ✗ LLaDA-Image, Random Attention, Conditional Experience Transfer — no discourse traction
+
+Investment/business (TechCrunch AI, last 72h): 8 items scanned, 3 shortlisted
+- ✅ Nscale $3.5B pre-IPO ($2B from Nvidia) — **CHOSEN**
+- ✅ XDOF Series B talks at ~$1.2B — **CHOSEN**
+- ✗ Seattle Times/Newsday sue OpenAI + Microsoft — incremental on the copyright thread covered Sep 3
+
+Podcasts (last 14d): MLST, Latent Space, Interconnects, Dwarkesh, Cognitive Revolution checked
+- ✅ MLST, "Designing How AI Grows" — Tom McGrath, Sep 2, 1:40:14 — **CHOSEN**
+- ✗ Latent Space "Five Days With Grok Bot" (Sep 5) — product review, no argument chain
+- ✗ Interconnects "Teaching Everyone to Fish for Tokens" — Aug 17, outside the 14-day window
+- ✗ Cognitive Revolution / Dwarkesh / ChinaTalk — used in the last four episodes
+
+**Source failures:** X/Twitter unreadable from this host (known: xcancel returns a browser challenge, x.com needs auth), so @Zefan_Cai and the named accounts were substituted with HN + HF daily papers as the attention proxy, per standing practice. NYT article body unfetchable (`Claude Code is unable to fetch from www.nytimes.com`) — item dropped rather than summarized from the headline. MLST transcript at rescript.info is JS-rendered and returned an empty body via both jina and WebFetch; rather than paraphrase quotes from audio I couldn't read, the deep cut quotes McGrath's own written essay (which the episode explicitly builds on) and says so on air.
+=== 2026-09-06T02:47:26-07:00 done  jinglin-ai-pulse (exit 0) ===
