@@ -1240,7 +1240,25 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-09-04_
+_Last update: 2026-09-06_
+- **CAUSAL-VS-CORRELATED RULE — the second half of the biomarker instruction (added 2026-09-06
+  Portfolio Watch LEAD; event 2026-09-04).** **Lp(a)HORIZON**: Novartis/Ionis **pelacarsen**, a
+  GalNAc-conjugated ASO against apolipoprotein(a), lowered Lp(a) by **~80% in 8,323 patients**
+  with elevated Lp(a) and established CVD on guideline-directed therapy and **missed the primary
+  composite** (CV death, non-fatal MI, non-fatal stroke, urgent coronary revascularisation
+  requiring hospitalisation). CMO **Shreeram Aradhye**: lower Lp(a) was observed and did not
+  translate into reduced CV risk. **THE MODALITY WORKED PERFECTLY. THE TARGET DID NOT.**
+  **DURABLE LINE: NfL is a TARGET-ENGAGEMENT biomarker, and target engagement is exactly what
+  pelacarsen proved while failing.** Tofersen reached the market on NfL because SOD1 ALS has a
+  **monogenic causal chain** — the mutation causes the disease, so lowering the protein has a
+  mechanistic claim on outcome. **Any NuGate target whose link from the RNA to the clinical
+  phenotype is ASSOCIATIVE rather than CAUSAL is running the pelacarsen bet, not the tofersen
+  bet. ACTION (Jon Robbins + Avi Khanna): write a causal-vs-correlated answer per target BEFORE
+  the biomarker plan is drafted.** Sits beside the 08-29 comparator-drift rule and the 09-03/09-04
+  endpoint-selection pair (Ultragenyx apazunersen vs Ionis Zanvastro) — three distinct antisense
+  failure modes in one week, none of them chemistry. Sources:
+  https://www.globenewswire.com/news-release/2026/09/04/3356808/0/en/novartis-announces-lp-a-horizon-phase-iii-topline-results-for-pelacarsen-in-patients-with-elevated-lp-a-and-established-cardiovascular-disease-cvd.html ·
+  https://www.biopharmadive.com/news/novartis-ionis-pelacarsen-lpa-horizon-study-results-fail/829736/
 - **What:** Oligonucleotide-based medicine (**ASO**) against a highly
   sought-after target profile that could treat **all forms of ALS and FTD**.
 - **Science:** leverages biology pioneered at JHU across decades and multiple
@@ -1630,6 +1648,18 @@ _Last update: 2026-08-28_
     choice.** Sources:
     https://www.globenewswire.com/news-release/2026/08/31/3353671/0/en/pmv-pharmaceuticals-announces-updated-promising-rezatapopt-monotherapy-interim-ovarian-cancer-data-from-pynnacle-phase-2-pivotal-trial.html ·
     https://www.biospace.com/press-releases/pmv-pharma-announces-pricing-of-oversubscribed-50-million-public-offering-of-securities
+- **THE DEGRADATION-ROUTE QUESTION UNDER CLSP-1025, AND A BALTIMORE LAB THAT OWNS IT (added 2026-09-06 Sourcing Radar LEAD).**
+  **Achuth Padmanabhan** (UMBC Biological Sciences + University of Maryland Greenebaum Comprehensive Cancer Center, achuth1@umbc.edu)
+  established in *Nat Commun* 9:1270 (2018), from Baylor with **Bert O'Malley** — https://doi.org/10.1038/s41467-018-03599-w — that the
+  deubiquitinase **USP15 is the selective upstream regulator of p53-R175H turnover**, and that the small molecule **MCB-613** drives
+  R175H ubiquitination, nuclear export and **LYSOSOME-mediated** degradation through it. **CLSP-1025 is a TCR-mimic engager against the
+  p53 R175H peptide on HLA-A\*02:01.** TCE potency scales with **peptide-HLA copy number on the tumour surface**; copy number is
+  downstream of how the mutant protein is degraded and by which route — and the **lysosomal route does not feed MHC class I
+  presentation**. **THIS IS AN OPEN QUESTION, NOT A FINDING:** nobody has measured whether modulating USP15 (or anything else that
+  shifts R175H between lysosomal and proteasomal turnover) changes R175H peptide presentation. **It is precisely the standing
+  target-density item (§4, added 2026-09-05), and there is an investigator four miles from the BioHub with eight years on the
+  degradation biology of this exact mutant. ACTION (Avi Khanna + Jon Robbins): take the meeting; want the answer whichever way it comes
+  out.** Padmanabhan's current programme is the **USP15–ZNF217 loop in ovarian cancer** — see his entry in §2b.
 - **Watch:** GUARDIAN-101 (p53 R175H) Phase 1 monotherapy readout (2026); SENTINEL-101 (KRAS
   G12V) progression; competing neoantigen/pHLA-directed TCEs; Third Rock signaling.
 - **MARKET-CONDITION READ, NOT A CATALYST (2026-08-22 Portfolio Watch, third read on the lead item):**
@@ -2529,6 +2559,21 @@ raises, exits, or crosses a scientific milestone.
   whether the neuropsych NewCo's second + third shots should sit in the plastogen/EDP
   class rather than the chronic-agonist class. Design-space input for Hemaka + Third
   Rock conversation on NewCo pipeline shape, not a fresh sourcing lead.
+- **A PERIPHERALLY RESTRICTED INDICATION FOR THE PLASTOGEN CLASS (added 2026-09-06 Portfolio Watch item 2; *Science* paper published 2026-09-03,
+  https://doi.org/10.1126/science.aec6116).** MD Anderson (**Patrick Dougherty**, pain medicine; **Moran Amit**, head & neck surgery) show that
+  **psilocybin given BEFORE neurotoxic chemotherapy prevents pain hypersensitivity in mice, with protection maintained up to 8 months**.
+  Mechanism: **5-HT2A agonism on PERIPHERAL sensory neurons** preserves **mitochondrial axonal transport** to distal endings, which the terminals
+  need to survive once the toxin clears — shown directly by live-cell imaging of mitochondrial transport in **human peripheral nerve** ex vivo.
+  CIPN affects **up to 68%** of patients during treatment and **~30%** beyond six months; standard of care is ice packs and duloxetine.
+  **Phase 2 NeuroGuard (NCT07227909)**, MD Anderson-sponsored, breast/colorectal/head-and-neck, not-yet-recruiting as of 2026-09-06.
+  **THREE READS. (a) If the action is 5-HT2A on a DRG neuron and not cortex, the hallucinogenic effect is a LIABILITY TO ENGINEER OUT, not the
+  mechanism — so a non-brain-penetrant, peripherally restricted 5-HT2A agonist is a STRICTLY BETTER drug here, and peripheral restriction is a
+  more tractable chemistry problem than central signalling bias. This is the cleanest indication the EDP/plastogen class has been handed, and
+  UMB has the bench (Hemaka: input to the neuropsych NewCo second-and-third-asset conversation).** (b) **Indication design is the transferable
+  asset** — prevention of CIPN buys a pre-identified population, a **scheduled insult**, a defined pre-insult dosing window and an endpoint on the
+  chemotherapy calendar; ask every non-opioid-pain program whether a prevention framing (surgery, chemotherapy, radiation) is available to it.
+  (c) **Capital signal:** psychedelic money has gone entirely to psychiatry — AbbVie/Gilgamesh **$1.2B**, Otsuka/Transcend **$700M**,
+  Lilly/AtaiBeckley **$2.8B upfront**. **Nobody is bidding for peripheral 5-HT2A.**
 - **Watch.** Whether Gould has additional in-prosecution IP outside the (2R,6R)-HNK
   license to Perception Neuroscience — his current work on translationally-tractable
   neuroplastogens is worth tracking as a UMB pipeline signal; whether the UMB Drug
@@ -2666,6 +2711,78 @@ _Last update: 2026-08-30_
 - **Pairs with (same week, opposite direction):** "Fibrin barriers limit vancomycin penetration into staphylococcal abscess communities and maintain *S. aureus* in an unstressed, transcriptionally-responsive state," **Johns Hopkins Bloomberg School of Public Health**, posted 2026-08-24 — https://www.biorxiv.org/content/10.64898/2026.01.20.700504v1 · **One paper says the drug never arrives; the other says the bug does not care. Use the pair as the framing slide if we build on the chronic-infections theme.**
 - **Watch:** UM Ventures IP posture on a *gdpP*-genotype tolerance assay; whether Chatterjee has founder intent or prefers licensing; whether the Doherty Institute co-assignment complicates a Baltimore-nexus build; other CDA-pathway tolerance determinants outside the *gdpP* locus.
 
+### Padmanabhan lab USP15–ZNF217 loop (UMBC Biological Sciences + University of Maryland Greenebaum Comprehensive Cancer Center) — active sourcing lead + direct Clasp p53-R175H adjacency ⚠
+_Last update: 2026-09-06_
+- **Lab / people. Achuth Padmanabhan, Ph.D.** — Department of Biological Sciences, **UMBC**, 1000 Hilltop Circle, Baltimore MD 21250; joint
+  **UMGCCC**; achuth1@umbc.edu. Trainees on the current paper: Ayokunnumi Ogunsanya, Fatimah Alfaran, Swethakumar Basavarajaiah.
+  Prior appointment Baylor College of Medicine (O'Malley/Richards labs).
+- **The two-paper arc.** (1) **ZNF217 established as the driver** — Wardrup et al., *npj Precis Oncol* 9:392 (2025-12-04),
+  https://doi.org/10.1038/s41698-025-01153-8: ZNF217 overexpression drives proliferation, metastasis and chemoresistance in ovarian cancer,
+  induces metastatic phenotypes in fallopian tube cells, DNA-binding-dependent. (2) **The druggable node** — bioRxiv 2026-08-31,
+  https://www.biorxiv.org/content/10.64898/2026.08.30.748158v1: **USP15 is the first identified regulator of ZNF217 protein stability.**
+  USP15 knockdown depletes ZNF217 protein while ZNF217 **mRNA rises**; MG132 rescues the protein; shRNA-resistant USP15 re-expression restores
+  it. Reciprocally ZNF217 overexpression raises USP15 protein with **no change in USP15 mRNA** — a post-transcriptional positive-feedback loop.
+  Functional: USP15 knockdown in ZNF217-high ovarian cells suppresses viability/proliferation, vimentin, MMP7/MMP9, migration, Matrigel invasion,
+  fibronectin/collagen adhesion, anoikis resistance and spheroid formation; **IP xenograft, Foxn1 nude, n=6/group — reduced tumour burden and
+  significantly prolonged survival**; **re-sensitises to carboplatin, paclitaxel and doxorubicin**.
+- **Commercial thesis.** Targeted degradation run **backwards** — remove the DUB protecting an undruggable transcription factor instead of
+  recruiting an E3 to destroy a druggable one. **No clinical USP15 inhibitor exists**; ubiquitin-variant USP15 inhibitors reported (*Structure*,
+  2019), USP15 an established AML target (*Leukemia*, 2021, https://doi.org/10.1038/s41375-021-01394-z). Clinical/near-clinical DUB comparators:
+  USP1, USP7, USP30.
+- **Gaps that must close before it is licensable (the grant thesis).** (a) **ZNF217 never shown to be a DIRECT USP15 substrate** — no binding, no
+  chain analysis; authors concede it. (b) **All shRNA** — genetic knockdown ≠ catalytic inhibition; needs a catalytically dead rescue or a tool
+  inhibitor. (c) Single engineered-overexpression background (OVCA420-ZNF217), no PDX, no endogenously ZNF217-high line. (d) **USP15 pleiotropy**
+  (TGF-β/SMURF2, TRIM25, T-cell-intrinsic immune functions) = on-target immunological liability to characterise early.
+- **IP posture.** DoD grant **HT9425-23-1-0351** to A.P. (+ NIH T32 GM158458) → Bayh-Dole, **UMBC-owned**. Licensable today is a biology position
+  plus a patient-selection hypothesis (ZNF217-high ovarian), **not composition of matter**. **The Blackbird instrument is a translational grant
+  buying the three gap-closing experiments, not a licence.** ACTION (Esther Park + Avi Khanna): confirm with UM Ventures whether a provisional has
+  been filed on the USP15–ZNF217 axis.
+- **WHY THIS IS OUR PAPER — see the Clasp entry (§2).** Padmanabhan's *Nat Commun* 2018 work made USP15 the selective upstream regulator of
+  **p53-R175H** turnover via a **lysosome-mediated** route. **CLSP-1025 targets p53 R175H peptide on HLA-A\*02:01** and its potency scales with
+  peptide-HLA copy number, which is downstream of degradation route — and the lysosomal route does not feed MHC-I. Open question, not a finding.
+  **Take the meeting for this reason and evaluate the ovarian thesis while in the room.**
+- **Baltimore nexus.** UMBC + UMGCCC — outside the three named partner institutions, which is the case the mandate explicitly contemplates.
+
+### Jabra-Rizk lab Candida auris clinical collection (UMB School of Medicine / School of Dentistry) — BORROW, not a build; capability + cohort for the chronic-infections theme ⚠
+_Last update: 2026-09-06_
+- **Lab / people. Mary Ann Jabra-Rizk** (senior), with T. Wang, T. Ma, C. Zhou, R. Gonzalez Martinez, N. E. Putnam and **J. Kathleen Johnson**
+  (clinical microbiology), University of Maryland, Baltimore. Preprint posted 2026-08-31 —
+  https://www.biorxiv.org/content/10.64898/2026.08.26.747207v1
+- **The asset is the collection, not a molecule.** **53 isolates / 38 unique patients** from their own institution, WGS + SNP phylogeny (52 clade I,
+  1 clade III), with **matched serial isolates from 8 patients**. Resistance: **100% fluconazole**, 11% amphotericin B, **15% echinocandin**,
+  **7.5% resistant to all four**. Universal ERG11 Y132F + CDR1 E709D + TAC1B A583S, plus a **previously unreported TAC1B T385I**; FKS1 D642Y/F635Y,
+  an **R641G never linked to echinocandin resistance in this organism**, and M690I in both a resistant and a susceptible isolate. **One resistant
+  isolate carried D642Y at 31% allele frequency, below the calling threshold — hetero-resistance / an emerging subclone under therapy.** One
+  patient's susceptible isolate became MDR with F635Y eight months later.
+- **The phenotype that matters.** Biofilm formation and aggregation vary widely **within a single patient over time**, not by clade.
+  Aggregative/robust-biofilm isolates show **>8-fold ALS4112** and **>250-fold SCF1** adhesin expression vs non-aggregative poor formers.
+  **A genotype-blind, within-patient phenotype swing is exactly what a rapid PHENOTYPIC susceptibility platform exists to catch.**
+- **Transmission signal.** Seven closely related clade I isolates from three transplant patients in the same surgical ICU concurrently, all of whom
+  died within days of each other — visible only because they sequenced.
+- **Read.** No molecule; an anti-adhesin against C. auris is a hard commercial case on addressable population. **What it is: capability + cohort
+  access for the CHRONIC INFECTIONS theme** — the same shape as the [[Chatterjee lab]] *gdpP* / cyclic-di-AMP β-lactam-tolerance lead (a phenotype
+  the standard clinical assay reports as treatable), and directly relevant to the Astek Diagnostics adjacency logged under the theme in §2.
+  **ACTION (Yixuan Qiu): at the next Chatterjee conversation, ask whether this collection and the biofilm/aggregation assays are available to the
+  tolerance programme.**
+
+### Wirtz + Wu VITAL-3D volumetric drug-response platform (JHU Chemical & Biomolecular Engineering + INBT + Oncology + BME + Pathology) — diligence instrument + BioHub shared-capability candidate, NOT a therapeutics newco ⚠
+_Last update: 2026-09-06_
+- **Lab / people. Denis Wirtz** (JHU Vice Provost for Research, serial founder) and **Pei-Hsun Wu**, co-corresponding; Chongguang Jin, Tiffany Chu,
+  Qiming Zhang. Preprint posted 2026-09-02 — https://www.biorxiv.org/content/10.64898/2026.08.31.748448v1
+- **Platform.** **VITAL** — Hoechst 33342 + propidium iodide, 2× objective covering an entire 96-well field, volumetric z-stack through a collagen
+  gel, automated single-cell live/dead classification. **<2 h for 96 samples; >95% counting accuracy** to 30,000 cells/well (2D) and 15,000 (3D).
+- **The result that matters: EC₅₀ is real and largely irrelevant.** EC₅₀ broadly concordant 2D vs 3D across 5 breast lines. New metrics nGR (N_t/N_0),
+  EC_P (partial inhibition), EC_F (full arrest), EC_D (net cell loss). At each line's own EC₅₀: **SUM-149 grew 5.4× in 2D and fell to 20% of starting
+  population in 3D; MCF-7 expanded 9.3× in 2D and sat at nGR = 1.01 in 3D.** MDA-MB-231 EC_D at 120 h: **0.68 ± 0.05 µM (3D) vs 0.13 ± 0.01 µM (2D)**;
+  across the panel EC_D vs EC₅₀ **r = −0.09 (2D) / 0.30 (3D)** — **potency does not predict killing**, it tracks EC_P (onset of inhibition, r = 0.96).
+  Face validity: tamoxifen failed to separate ER⁺ MCF-7 from TNBC lines in 2D and separated at 120 h in 3D; olaparib resolved BRCA1-mutant SUM-149 in
+  3D only.
+- **Candid read.** Tools/services, not a venture-scale therapeutics company; defensible position is the analysis pipeline, not hardware. Stated limits:
+  immortalised lines in collagen, no stroma or immune compartment, no PDX, divergence mechanism undetermined. **TWO USES ANYWAY: (a) DILIGENCE
+  INSTRUMENT — require every oncology programme we read to answer CYTOSTATIC vs CYTOTOXIC explicitly rather than quoting a monolayer EC₅₀/IC₅₀;
+  (b) BioHub SHARED-CAPABILITY candidate on the EPOCH Epigenetics CLIA-lab template (Yixuan Qiu + Esther Park).** Wirtz is JHU Vice Provost for
+  Research — assume JHTV has already triaged this; ask them what they concluded.
+
 ### Elisseeff lab fibroid-senescence atlas (JHU) — WATCH, not a build (deferred 08-09 lead, closed 2026-08-16) ⚠
 - **Lab / people.** **Jennifer H. Elisseeff, Ph.D.** (JHU; senior) with Mostafa Borahay + James Segars (JHU Gyn/Ob) and **Elana Fertig** (UMB genome sciences). "Senescent cell networks link matrix remodeling and vascular dysfunction in human fibroids," bioRxiv v1 2026-08-07 (DOI 10.64898/2026.08.06.743362) — full text NOW RENDERED (157KB) and read 2026-08-16.
 - **Science.** First single-cell "senotype" map of human uterine fibroids: senescent cells concentrate in mural (~61%), fibroblast, and a fibroid-expanded endothelial compartment; drive ECM remodeling (collagen VI / COL6A3), impaired vessel maturation, and immune signaling via TEAD4/YAP mechanosensing programs. Translational hook: in tissue from a JHU Phase I injectable-collagenase fibroid trial (Singh/Borahay), collagenase reduced both ECM density + p16+ senescent burden.
@@ -2684,8 +2801,12 @@ _Last update: 2026-08-30_
   and call the implication (tailwind / threat / validation / watch-item).
 
 ## 4. Open items to fill in (next research passes)
+- **Downside structure on single-readout BioVentures positions (added 2026-09-06; Emily Wilkinson + Eddie Cherok).** Royalty Pharma split its **$500M Ionis agreement $150M against pelacarsen royalties / $350M against Spinraza royalties**; pelacarsen went to **zero** (no milestones) and RP still expects **full recoupment and a modest positive return**, with the Spinraza interest reverting to Ionis at **$550M** of payments — a **1.1× return on total funded** — and reaffirmed its 2030 Portfolio Receipts target of ≥$4.7B the same day. **The binary was bought as an OPTION ON AN ANNUITY, sized so a zero costs the upside and not the principal.** Write down what our downside structure looks like on every position where one readout is the whole thesis, starting with **Clasp / GUARDIAN-101**. Equity-side version of the same lesson from the 09-04 charts: Alumis to ~$10 on the lupus miss, Ultragenyx halved on Angelman — mid-caps with one defining readout each. Source: https://www.globenewswire.com/news-release/2026/09/04/3356846/0/en/royalty-pharma-announces-update-on-novartis-phase-3-topline-results-for-pelacarsen.html
+- **Does USP15 modulation change p53-R175H peptide-HLA presentation? (added 2026-09-06; Avi Khanna + Jon Robbins.)** Padmanabhan's 2018 *Nat Commun* result routes R175H degradation through a **lysosomal** pathway, which does not feed MHC-I. CLSP-1025's potency scales with peptide-HLA copy number. Nobody has measured whether shifting R175H between lysosomal and proteasomal turnover changes presentation. Merge with the standing Clasp target-density item and put it to Clasp and to Padmanabhan (§2b) in the same week.
+- **No-capital top-of-funnel touchpoint (added 2026-09-06; Esther Park + Maisha Rahman).** MassBio + SCbio's free 8-week **Drive** accelerator selected 10 startups (5 techbio, 5 therapeutics; 7 US-based, 4 in MA) with an eligibility cap of **<$1.5M prior equity** — curriculum, weekly mentors, Boston + Charleston demo days, bench access via ADA Forsyth. That is a competing FIRST TOUCH **upstream** of where a Blackbird Labs grant lands, costing mentor time rather than capital. (1) Do we have a no-capital touchpoint for founders earlier than a Labs grant? (2) Is a BioHub demo day with bench access a cheaper sourcing instrument than we assume? Note half the cohort is computational — same signal as the Kathuria/Organotics sourcing-latency case. Source: https://www.biospace.com/business/10-life-sciences-startups-selected-for-accelerator-program
+- **Lp(a)HORIZON full dataset — the subgroup that decides a class (added 2026-09-06).** Novartis will present at an unnamed congress. The analysis to pull is **outcome by baseline Lp(a) and by magnitude of reduction** (Jefferies' ask), which determines whether the deeper-suppression programmes — Amgen **olpasiran** (>95% mid-stage), Lilly **lepodisiran**, Silence **zerlasiran** — survive. Relevant to us only as the cleanest public worked example of separating a target failure from a modality failure.
 - **Shelved / divested large-pharma asset screen (added 2026-09-05):** Pfizer's CD228 ADC cleared at $12M upfront. Who owns a standing screen on deprioritised big-pharma assets in our theme areas, what is the source (BD conference lists, 8-Ks, pipeline-page diffs, banker outreach), and what does a first pass surface? (Eddie + Avi.)
-- **Add Lilly to the NXE'149 bidder set and rank it (added 2026-09-05):** Lilly Asia Ventures in NeuShen, Lilly on Superluminal's cap table plus a $1.3B GPCR collaboration, Lilly funding Leal's Series A extension — three adjacent CNS/GPCR theses in three weeks, and Lilly is not on our list. Where does it sit against Otsuka, Neurocrine, AbbVie/Cerevel, Novartis, SK Biopharmaceuticals? (Eddie.)
+- **Lilly ranks FIRST on the NXE'149 bidder set — ANSWERED 2026-09-06, follow-up open (opened 2026-09-05).** BioPharma Dive's 09-04 chart set: **Lilly has announced 12 acquisitions since the start of 2026 — 4× its nearest competitors (Gilead, GSK, Novartis) — for at least $31.5B, double the next most active acquirer, and roughly HALF were preclinical or Phase 1 stage** (including Merida Bio at up to $2.9B, upfront undisclosed). Add to the three adjacent CNS/GPCR theses already logged (Lilly Asia Ventures in NeuShen; Lilly on Superluminal's cap table plus a $1.3B GPCR collaboration; Lilly funding Leal's Series A extension). **RANK LILLY FIRST, ahead of Otsuka, Neurocrine, AbbVie/Cerevel, Novartis and SK Biopharmaceuticals. The load-bearing fact is not the total — it is that half of twelve were done AT OUR STAGE, so the GPR52 programme does not need a Phase 2 readout to be transactable.** **STILL OPEN (Eddie):** half of twelve implies a repeatable preclinical diligence process — find out what it asks for, because it is effectively a specification for our DC package. Source: https://www.biopharmadive.com/news/charts-biotech-deals-china-alumis-ultragenyx-stock/829635/
 - **GPR52 signalling-bias statement (added 2026-09-05; sharpens the 08-31 and 09-02 biomarker items):** the DC package needs a written answer to WHICH signalling arm the agonist recruits, whether that profile was chosen or inherited from the chemistry, and what PD readout demonstrates it in a patient. Superluminal has made functional selectivity the industry's default vocabulary; we should not be asked this cold. (Hemaka + Yixuan.)
 - **CERVINO full dataset at IMS Glasgow, 2026-09-23/26 (added 2026-09-05):** pull the CRS/ICANS denominators, infection rates and the step-up-dose schedule for the Winnow TPP row, and check whether AbbVie reports any target-density or BCMA-expression analysis that speaks to whether the avidity-for-affinity trade travels to a lower-density antigen. (Jon Robbins.)
 - **Clasp target-density answer (added 2026-09-05):** a TCR-mimic engager sees peptide-HLA at hundreds-to-thousands of copies/cell, so the etentamig avidity trade is not available. What is CLSP-1025's stated approach to the potency/CRS trade-off, and does the development plan say it? Pair with the standing eligible-fraction item. (Avi.)

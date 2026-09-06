@@ -2289,3 +2289,24 @@ Dedup: 14 candidates → 14 fresh (0 ledger hits).
 
 **Note on sourcing:** Endpoints article bodies are paywalled to both direct fetch and the jina proxy from this host, so the NeuShen, Merck and ADARx items were grounded in the primary company/aggregator coverage listed in the show notes rather than the Endpoints body. The Superluminal and CERVINO items were read in full from the press releases and trade coverage.
 === 2026-09-05T02:26:01-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-06T02:10:12-07:00 start blackbird-brief ===
+Both of today's episodes are written and staged for the batch pipeline. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped before TTS, R2 publish, feed edit and commit — `publish_pending.py` picks those up.
+
+**Files written** (`podcasts/blackbird-brief/scripts/`):
+- `2026-09-06-radar-umbc-padmanabhan-usp15-znf217.md` + `.rss-item.xml` + `.commit-msg`
+- `2026-09-06-portfolio-watch.md` + `.rss-item.xml` + `.commit-msg`
+
+Ledger appended (57 episodes, 277 unique keys). `memory/blackbird-portfolio.md` edited in place — NuGate, Clasp and Gould entries revised, three new §2b lab entries, the Lilly open item answered, four new open items.
+
+**Sourcing Radar** — lead is Padmanabhan's UMBC/UMGCCC preprint identifying USP15 as the first known regulator of ZNF217 protein stability, which converts an undruggable transcription factor into a DUB-inhibitor problem (in vivo tumour burden, survival, chemo-sensitisation). The reason to take the meeting isn't the ovarian thesis, which needs three experiments before it's licensable — it's that the same investigator's 2018 *Nat Commun* paper made USP15 the selective regulator of **p53-R175H** turnover via a lysosomal route, and Clasp's CLSP-1025 is a TCR-mimic engager against p53 R175H on HLA-A\*02:01 whose potency scales with peptide-HLA copy number. Flagged as an open question, not a finding. Picks 2 and 3 (Wirtz/Wu VITAL-3D; Jabra-Rizk's *C. auris* collection) are called candidly as a diligence instrument and a borrow, not builds.
+
+**Portfolio Watch** — lead is Lp(a)HORIZON: ~80% target suppression in 8,323 patients, no outcome benefit. Framed as the week's third antisense event and the only *target-validation* failure, which specifies (and limits) Thursday's NuGate neurofilament instruction. The transferable asset is Royalty Pharma's structure — the binary bought as an option on an annuity, full recoupment expected with pelacarsen at zero. Plus the *Science* psilocybin/CIPN paper for the non-opioid pain theme, Lilly's 12 acquisitions / $31.5B (half preclinical–Ph1) closing yesterday's bidder-ranking item, and the MassBio/SCbio accelerator as a top-of-funnel competitive read.
+
+**Candidate funnel**
+- **bioRxiv/medRxiv:** 1,967 records swept day-by-day, 2026-08-29 → 09-06; 12 version-1 partner-institution hits; 7 shortlisted, 3 chosen, all read in full text. Zero Lieber corresponding-author preprints.
+- **Stream A news:** Fierce Biotech/Pharma RSS (25 each), BioPharma Dive RSS (10), BioSpace, BioBuzz (21, all Greater Philadelphia), Endpoints, plus per-theme targeted searches. 4 items chosen.
+- **Source failures:** Fierce homepages 403 to WebFetch and empty via jina → recovered via their RSS feeds, no recall loss. Endpoints index via jina returned navigation chrome only. GEN RSS returned zero items. `hub.jhu.edu` 403. bioRxiv `.full.pdf` via jina returned 408-byte proxy errors twice before succeeding on retry.
+- **Dedup:** 20 candidates filtered across three passes, 1 dropped as already shipped (BioSpace Ionis/Alexander URL). Ionis, Ultragenyx, ArsenalBio, Teva and Replimune were excluded by hand as already-covered events rather than new ones.
+
+One judgment call worth surfacing: the radar runs ~1,840 spoken words against a stated 5–7 minute target. That's in line with the show's actual recent length (the 08-30 radar was 1,660), so I matched the feed rather than the spec — say the word if you want these tightened toward the written target.
+=== 2026-09-06T02:33:37-07:00 done  blackbird-brief (exit 0) ===
