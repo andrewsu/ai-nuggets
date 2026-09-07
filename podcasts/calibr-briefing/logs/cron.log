@@ -3989,3 +3989,42 @@ Shortlist after dedup against every prior `scripts/*.txt` (Endpoints/BioSpace/CT
 
 One note worth flagging: the 09-05 episode shipped without pelacarsen despite the release predating that cron by ~10 hours. I appended the diagnosis to `reference_weekend_news_gap.md` — the Saturday 02:00 run sits in a hole where the wires have a Friday after-close release but no index has indexed it, and European (CET-evening) releases fall into it most often.
 === 2026-09-06T02:37:24-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-07T02:20:09-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scripts plus the transient stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Files written**
+
+- `podcasts/calibr-briefing/scripts/2026-09-07-pharma-headlines.txt` (11.8 KB, 1,730 words)
+- `podcasts/calibr-briefing/scripts/2026-09-07-camizestrant-ctdna-switch-spotlight.txt` (16.0 KB, 2,551 words)
+- matching `.rss-item.xml` stubs (XML-validated, `__LENGTH__` / `__DURATION__` placeholders) and `.commit-msg` stubs for each
+
+**Candidate funnel**
+
+Sources scanned (Monday/Labor Day run — thin domestic tape, so I mined Friday-afternoon wire releases and live ERS Barcelona per the weekend-gap playbook):
+
+- **Endpoints News** — index readable via `r.jina.ai`, article bodies paywalled; 24 headlines scanned, 2 net-new (Novo ziltivekimab, Claret Fund IV)
+- **BioSpace latest-news + press releases** — ~30 items for Sept 6 scanned, 4 substantive
+- **BioPharma Dive** — 30 headlines scanned, all Sept 1–2, nothing net-new
+- **Fierce Biotech / Fierce Pharma** — HTTP 403 direct and via jina, one retry each also failed, skipped
+- **Clinical Trials Arena** — 8 headlines, all already shipped
+- **ERS Congress 2026 (Barcelona, day 2–3)** — GRI Bio, Insmed, AstraZeneca/tozorakimab, Pulmovant preview
+- **ClinicalTrials.gov (MCP)** — 11 ziltivekimab records, used to pin HERMES/ATHENA/ARTEMIS identities and enrollment
+- **PubMed (MCP)** — SERENA-6 critique full text
+
+Shortlist after discarding stale and already-shipped items:
+
+- Novo Nordisk stops HERMES + ATHENA (ziltivekimab, HFpEF) for DMC futility — `endpoints.news/novo-nordisk-cans-two-more-trials-of-il-6-heart-drug-for-futility/` — **chosen, headline lead**
+- Camizestrant (ETCAMAH) FDA accelerated approval + Guardant360 CDx companion diagnostic, Sept 4 — `ascopost.com/news/september-2026/fda-approves-camizestrant-combination-regimen-for-locally-advanced-or-metastatic-breast-cancer/` — **chosen, spotlight** (uncovered by the Sept 5 and Sept 6 episodes; prior coverage was the May 27 PDUFA spotlight only)
+- GRI Bio GRI-0621 Phase 2a IPF late-breaker, ERS Sept 6 — **chosen**
+- Insmed ENCORE 12-month ARIKAYCE analysis, ERS — **chosen**
+- AstraZeneca tozorakimab FRONTIER-4 mechanistic data, ERS — **chosen**
+- Claret Capital Fund IV, €575M close, Sept 7 — **chosen**
+- Tarsus completes Alkeus acquisition, Sept 4 — **chosen, logged briefly** (close of an Aug 6 deal, not new news)
+- Pulmovant/Roivant PHocus topline — **deferred to week-ahead**; data present Tuesday Sept 8, 12:15 CEST
+- Thyme Care $125M Series E (Foresite portfolio, Sept 2) — dropped, outside window
+- Camizestrant EU approval (July 20) — folded into the spotlight as context, not a headline
+
+**Spotlight full text**: read in full — the SERENA-6 critique in *npj Breast Cancer* (via PubMed, [10.1038/s41523-026-00894-4](https://doi.org/10.1038/s41523-026-00894-4)), the ASCO Post and OncoDaily approval coverage, the Guardant Health IR release, and the Friends of Cancer Research ODAC write-up. AstraZeneca's own press release 403s from this host on both `astrazeneca.com` and `astrazeneca-us.com`, direct and via jina; its content was recovered from StockTitan's reproduction, which carried the named quotes, boxed warning and confirmatory-trial language.
+
+One caveat worth flagging: the Novo HERMES/ATHENA stoppage rests on Endpoints' reporting plus ClinicalTrials.gov trial identities. I could not find a Novo company announcement or 6-K for it, and the registry still lists both trials as active-not-recruiting (normal registry lag). The script attributes it to Endpoints explicitly rather than to Novo.
+=== 2026-09-07T02:34:28-07:00 done  calibr-briefing (exit 0) ===
