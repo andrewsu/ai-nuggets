@@ -2958,3 +2958,33 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 *Source failures:* Fierce Biotech HTTP 403 both direct and via `r.jina.ai` (two routes, no retry loop); Endpoints article bodies 403 (paywall) — headline index via jina was readable and sufficient. PubMed direct 403'd on cookies; the AMG 714 abstract was recovered via `r.jina.ai`. Proceeded on the remaining sources per PIPELINE.md.
 === 2026-09-06T02:48:01-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-07T02:40:09-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script plus the two transient stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written:**
+- `podcasts/justice-biotech-brief/scripts/2026-09-07-notch1-notch2-cd8-exhaustion-tex-progenitor-pdl1-reinvigoration.md` (1,352 spoken words)
+- `….rss-item.xml` (validated as XML via ElementTree, `>`/`<` escaped, `__LENGTH__`/`__DURATION__` placeholders)
+- `….commit-msg`
+
+**Pick:** Notch1/Notch2 in CD8 T cell exhaustion — bioRxiv `10.64898/2026.09.01.748651` v1, posted 2026-09-05, Nathalie Labrecque's lab (IRCM) with Ivan Maillard (Penn) and Christian Siebel (Genentech). Full text read via `r.jina.ai` on `.full.pdf` (100 KB, complete Results/Discussion/Methods/figure legends). The angle: E8I-cre deletion of both receptors in mature CD8 cells only makes chronic-LCMV exhaustion *worse* while **inflating** the TCF-1⁺ progenitor pool ~4× (34% vs 8.2% at day 21), and anti-PD-L1 from day 23–35 does nothing in those mice — so progenitor frequency and checkpoint salvageability came apart in the same animal, which is a direct counterexample to using stem-like fraction as a durability surrogate for CAR T / engager products. Sorted-progenitor transfers (not pseudotime) carry it; the mechanism is KLF2-licensed egress, so stuck cells keep eating TCR and TGF-β signal. Callback to the 2026-08-30 Roche PD1-IL2v episode, which located the same fork in the draining lymph node.
+
+Caveats stated in-script: deletion is untimed; the anti-DLL1/4 timing blockade is a discussion sentence with no figure callout; an anti-IFNAR (MAR1-5A3) protocol is written out dose-by-dose in Methods with no result anywhere in Results, Discussion or figure legends (and the Discussion still lists IFN-I exposure vs. sensitivity as open); anti-PD-L1 is n=2 experiments with the subset panel 1-of-2; no tumor model at all.
+
+**Candidate funnel**
+
+*bioRxiv (details API, day-by-day 09-04 → 09-07, cursor advanced by returned `count`):* 370 records (210 / 61 / 83 / 16), 243 at version 1, 55 keyword hits, 4 substantive after discarding spurious matches ("TIL" inside `Tilman`/`until`/`fertility`, "CAR T" in a *Grewia* biogeography paper, "ADC" in a methylation-array paper, "PD-1"/"PD-L1" in a preeclampsia lncRNA paper).
+- **Notch as master regulator of CD8 Tex differentiation — `10.64898/2026.09.01.748651` — CHOSEN** (full text read)
+- Endothelin receptor blockade potentiates adoptive T cell and CAR T therapies — `10.64898/2026.09.02.748239` — strongest on-target candidate, **DEFERRED: full text unavailable.** `.full` abstract-only (34 KB, no Results/Discussion section); `.full.pdf` via jina returned the 408-byte Cloudflare `error 429` body on 5 spaced sequential attempts, while two other bioRxiv PDFs fetched fine (100 KB, 122 KB) from the same worker minutes apart — so a per-document block/render lag, not a host rate limit. Not-yet-rendered, revisit.
+- Fc2KG/Fc5 absolutely FcγRIIa- vs FcγRI-selective aglycosylated Fc domains, Georgiou lab — `10.64898/2026.08.31.748147` — full text in hand (122 KB), shortlisted, lost on translational reach
+- BAGEL-CAR: Bits-to-Binders competition reflections — `10.64898/2026.09.02.748856`
+
+*News / press (Labor Day, federal holiday; per the weekend-gap rule I fell back to uncovered Wed–Fri):* Endpoints index + channel pages, BioSpace latest-news-press-releases (30 items), BioPharma Dive, plus targeted searches on PD-1×VEGF, trispecific TCE and JAK-ADC. Nothing net-new and on-target.
+- Novo Nordisk halts HERMES and ATHENA for ziltivekimab futility after ZEUS (today, ~1h before run) — anti-IL-6 biologic but cardiovascular; thin for this audience and the ZEUS parent story is old
+- INBRX-106 (hexavalent OX40 agonist) + pembrolizumab, HexAgon Phase 2 primary endpoint in 1L PD-L1+ HNSCC — **webcast is Tue 09-08 5:00 a.m. PT; results are not out.** Strongest upcoming on-target item — lead with it tomorrow
+- ETCAMAH (camizestrant) US approval, pelacarsen Lp(a)HORIZON topline — in window, off-target (oral SERD / ASO)
+- Already shipped, excluded: AbbVie etentamig CERVINO (09-04 ep), Pfizer→Medicus CD228 ADC divestment (09-06 runner-up), ivonescimab HARMONi-2 OS (09-03 ep), HMPL-A830/GSK (09-05 ep), TEV-53408 celiac (09-06 ep)
+
+*Policy / funders:* ARPA-H — one September item (09-01, made-to-order genetic medicine manufacturing), off-target. NIH closed for Labor Day; latest releases 09-01/09-02, off-target. NSF nothing on-target.
+
+*Source failures:* Fierce Biotech unreadable — `r.jina.ai` returned an explicit `AbuseAlleviationError` blocking anonymous access to the domain until 10:01 UTC today, and WebFetch on Endpoints article bodies 403s (paywall); the Endpoints headline index via jina was readable and sufficient. `biopharmadive.com` homepage returned no dated items past 09-02. `nih.gov/news-events/news-releases` 403'd WebFetch (covered via search). Wiley 403'd the group's 2021 *Advanced Therapeutics* paper and it isn't PubMed-indexed. Proceeded on the remaining sources per PIPELINE.md.
+=== 2026-09-07T02:52:56-07:00 done  justice-biotech-brief (exit 0) ===
