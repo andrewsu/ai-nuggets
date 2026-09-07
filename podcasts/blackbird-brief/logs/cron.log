@@ -2310,3 +2310,25 @@ Ledger appended (57 episodes, 277 unique keys). `memory/blackbird-portfolio.md` 
 
 One judgment call worth surfacing: the radar runs ~1,840 spoken words against a stated 5–7 minute target. That's in line with the show's actual recent length (the 08-30 radar was 1,660), so I matched the feed rather than the spec — say the word if you want these tightened toward the written target.
 === 2026-09-06T02:33:37-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-07T02:10:09-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run `gen_tts.py`, `publish_episode.sh`, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-09-07-portfolio-watch.md` (2,412 spoken words, in line with the recent 2,063–2,545 band)
+- `podcasts/blackbird-brief/scripts/2026-09-07-portfolio-watch.rss-item.xml` (validates as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/blackbird-brief/scripts/2026-09-07-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — 8 keys appended (58 episodes, 325 match forms)
+- `memory/blackbird-portfolio.md` — 5 entries revised **in place** (Artemyx `_Last update:_` → 2026-09-07; new sub-entries under Aletira, the cardiac-fibrosis theme, the chronic-infections/Astek entry, and Accelevir). No dated journal appends.
+
+**Episode — Portfolio Watch, Monday 2026-09-07 (window 09-04 → 09-07)**
+
+- **LEAD** — FDA accelerated approval (09-04) of AstraZeneca's **camizestrant/ETCAMAH** on a ctDNA-detected ESR1 mutation *before* radiographic progression, plus **Guardant360 CDx** as the first FDA-approved liquid-biopsy CDx for **longitudinal** testing (3-month retest interval) — granted **over ODAC's 6–3 no vote** of 2026-04-30. Artemyx gets the monitoring precedent it was waiting for, and the candid half: AstraZeneca funded the Phase 3 that put the assay in the label, so the action is protocol-design conversations with sponsors, not reference labs.
+- **ITEM 2** — Novo stops **HERMES (n=4,899)** and **ATHENA (n=680)** for futility, this morning's only net-new item. Population was pre-enriched for inflammation, so the usual post-null "better selection" rescue is foreclosed; plus a governance read on killing a paid-for trial.
+- **ITEM 3** — UCL micro-bladder under flow: nitrofurantoin passes the static susceptibility assay and fails the organ; phage clears the intracellular reservoirs. Sharpens the Astek Diagnostics conversation; tools are public, so borrow not build.
+- **ITEM 4** — NewBiologix/Synastra stable rAAV producer line: a structural answer to Aletira's open packaging-integrity item.
+- **ITEM 5** — Venetoclax cuts intact SIV reservoir through day 294; demand signal for Accelevir's product.
+
+**Source failures worth flagging:** `r.jina.ai` rate-limit-blocked fiercebiotech.com mid-run (routed via its RSS, no recall loss); Endpoints bodies are paywalled and WebFetch 403s the domain — this cost the Lindus asset-hunting item, which was on-thesis but failed the full-text eligibility gate and is deferred; GlobeNewswire org search returned an empty shell and Novo's newsroom is a JS template, so the ziltivekimab trial parameters came from ClinicalTrials.gov rather than the primary release.
+
+**Dedup:** 21 candidates → 17 fresh, 4 dropped as already shipped 09-05 (ADARx IPO, AbbVie etentamig, Truist survey, Merck M&A).
+=== 2026-09-07T02:34:31-07:00 done  blackbird-brief (exit 0) ===

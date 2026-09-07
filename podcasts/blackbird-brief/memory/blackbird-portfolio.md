@@ -305,6 +305,26 @@ one.** Secondary: the 250/500/750 escalation is the same milestone-based non-dil
 three times on one company in Baltimore — worth learning how TEDCO set those milestones. Sources:
 https://biobuzz.io/news/tedco-puts-750000-behind-astek-diagnostics-as-its-rapid-infection-test-nears-the-clinic/ ·
 https://www.tedcomd.com/news-events/press-releases/2026/tedco-invests-750000-astek-diagnostics
+  - **SPEED IS ONE AXIS; PHYSIOLOGICAL REALISM IS ANOTHER — the antibiotic passes the assay and fails the organ (added
+    2026-09-07 Portfolio Watch item 3; *Nature Communications*, coverage 2026-09-04).** **Jennifer Rohn (UCL Centre for Kidney
+    and Bladder Health)** with **Ramon Garcia Maset** (first/co-corresponding) and Oxford collaborators built a **3D human
+    micro-bladder with FLOWING URINE** and tested **uropathogenic *E. coli***. Under flow, UPEC adhered better, invaded the
+    urothelium more and established **protected INTRACELLULAR reservoirs**; **nitrofurantoin — potent in the static,
+    nutrient-rich broth susceptibility test hospitals actually run — struggled to clear it.** A **phage cocktail (LCPR1)** alone
+    also struggled under flow but, unlike the antibiotic, **inhibited intracellular bacterial communities, preserved urothelial
+    viability and induced cytokine/chemokine secretion**; **combination beat either alone.** ~400M UTIs/yr. **Device design and
+    image-analysis tools released FREELY.**
+    **THEME READ: this is the chronic-infections proposition in its cleanest experimental form — the phenotype that makes an
+    infection chronic is not measured by the test that guides therapy. Same shape as the Chatterjee lab *gdpP* / cyclic-di-AMP
+    β-lactam-tolerance lead at UMB (§2b), where tolerance is invisible to MIC.**
+    **ASTEK READ (Yixuan + Eddie) — sharpens the conversation above rather than replacing it: a one-hour result from a STATIC
+    assay is a fast answer to a question the bladder is not asking. The interesting version of the Astek relationship is
+    whether a rapid phenotypic platform can be run UNDER FLOW — that is a collaboration thesis, not a criticism.**
+    **BORROW, NOT BUILD (Esther): tools are public — same shape as the Jabra-Rizk *Candida auris* collection. Worth an hour on
+    whether a flow micro-organ assay belongs in the BioHub shared-capability set alongside Myologica's vivarium and EPOCH's
+    CLIA lab.** Sources:
+    https://www.genengnews.com/topics/translational-medicine/micro-bladder-model-demonstrates-how-phage-therapy-could-help-to-reduce-recurrent-utis/ ·
+    paper https://doi.org/10.1038/s41467-026-76589-y
 
 **COPD theme — TSLP has consolidated, and the differentiator is a PROPERTY not a target
 (added 2026-08-29 Portfolio Watch item 4).** Two independent wins for the epithelial alarmin
@@ -363,6 +383,30 @@ the endpoints are EF, NYHA, 6MWD and CV death — contractility and function aga
 **measuring function instead of fibrosis is the FIELD'S DEFAULT, not one sponsor's blind spot, which makes a trial designed to
 register scar available to us as differentiation.** Source:
 https://www.biospace.com/press-releases/askbio-presents-baseline-characteristics-from-phase-2-heart-failure-gene-therapy-trial-of-umiposgene-parvec-ab-1002-at-european-society-of-cardiology-congress
+
+**CARDIAC FIBROSIS / INFLAMMATION theme — the inflammation hypothesis in heart failure just lost its best-funded champion, and
+the usual post-null rescue is foreclosed (added 2026-09-07 Portfolio Watch item 2; reported 2026-09-07).** **Novo Nordisk
+stopped HERMES and ATHENA — its two remaining Phase 3 heart-failure trials of ziltivekimab, a once-monthly anti-IL-6 antibody —
+for futility.** Registry-verified parameters: **HERMES (NCT05636176), n=4,899 randomised**, HFpEF/HFmrEF **plus systemic
+inflammation**, primary = time to first CV death / HF hospitalisation / urgent HF visit, up to 48 months, primary completion had
+been estimated 2027-07; **ATHENA (NCT06200207), n=680**, same population, primary = **12-month change in KCCQ clinical summary
+score**, **primary completion had been estimated 2026-10 — stopped for futility ~4 weeks from the finish line.** Context:
+**ZEUS failed 2026-07-31** in >6,300 patients with ASCVD + CKD + inflammation at **HR 0.99**, despite documented IL-6 and hsCRP
+lowering; **non-cash impairment charge in Q3**.
+**READ (Anthony Accorsi + Jon Robbins): this is the FOURTH heart-failure measurement in nine days and the FIRST that is NOT an
+instrument problem.** RXFP1/LUMINARA measured haemodynamics not fibrosis (08-30); AskBio GenePHIT measures EF/NYHA/6MWD not
+scar (08-31); Lp(a)HORIZON was the right instrument returning a decisive negative (09-04). **Here the population was
+PRE-ENRICHED for systemic inflammation and target engagement was documented, which forecloses the standard post-null rescue
+(better patient selection) because selection was already built in. Any Blackbird cardiac programme routing its thesis through
+inflammation owes an answer to what it knows that ziltivekimab did not.**
+**SECOND READ — GOVERNANCE (Emily Wilkinson + Eddie Cherok): Novo is eating an impairment and killing ~5,600 ENROLLED patients'
+worth of running Phase 3 rather than let it read out on a mechanism it no longer believes. The venture default is the opposite —
+"let it finish, the money is spent." It is not spent: the marginal cost of finishing is the team and capital that stay locked up.
+ACTION: decide in advance who at Blackbird has the authority to make that call on a portfolio programme.** Sources:
+https://endpoints.news/novo-nordisk-cans-two-more-trials-of-il-6-heart-drug-for-futility/ (headline confirmed; body paywalled —
+trial parameters from ClinicalTrials.gov) · https://clinicaltrials.gov/study/NCT05636176 ·
+https://clinicaltrials.gov/study/NCT06200207 ·
+https://www.globenewswire.com/news-release/2026/07/31/3336733/0/en/novo-nordisk-provides-update-on-the-zeus-phase-3-trial-in-people-with-ascvd-ckd-and-inflammation.html
 
 **ONCOLOGY SURFACE TARGETS theme — a Seagen-built ADC against a novel antigen cleared at $12M UPFRONT, which is both a supply
 channel and a repricing (added 2026-09-05 Portfolio Watch item 4; announced 2026-09-04).** **Pfizer licensed PF-08046031** — an
@@ -570,6 +614,21 @@ the individual entries below, each marked ❌ TERMINATED.
   what is our FULL-vs-EMPTY capsid and GENOME-INTEGRITY data on a SELEXON-containing
   vector at the intended dose? Avi + Hugh should hold that number and that assay
   BEFORE the question arrives — "probably fine" is not a data-room answer.**
+- **A STRUCTURAL ANSWER TO THAT QUESTION IS NOW A PARTNER CATEGORY, NOT A HOPE (added 2026-09-07 Portfolio Watch item 4;
+  announced 2026-09-05).** **NewBiologix (Switzerland)** signed with **Synastra Biotechnology (Türkiye; Üsküdar University +
+  Unifon-Biotech GSYF)** to build a **STABLE PRODUCER CELL LINE** on its **Xcell** platform for Synastra's investigational
+  **AAV micro-dystrophin DMD candidate**, with an option to convert to a commercial licence. Thesis: **replace repeated
+  transient transfection with genetically engineered, stable producer lines** so rAAV output is reproducible and scalable;
+  CEO **Igor Fisch**: "Gene therapy will not reach its full potential unless manufacturing evolves with it."
+  **READ (Geoff Lynn + Avi Khanna + Hugh Wells): the open cassette-length / packaging-integrity item above came from the
+  Elevidys letter, where cardiac VCN was HIGH, micro-dystrophin was <1% of normal and transcripts were 5′-biased — delivery
+  succeeded and PACKAGING failed. A stable producer line is one of the few STRUCTURAL answers to that failure mode, because a
+  genetically defined line makes the same genome every batch and transient transfection does not. Two implications: (1) this
+  is a partner category to engage BEFORE the Series A — a cell-line agreement is a data-room artifact, not a CMC chore;
+  (2) it reinforces the 09-03 strategic point that capital is currently pointed at MANUFACTURING rather than discovery, so a
+  programme whose hard problem is a MAKING problem has a funding and partnering channel a target-discovery programme does
+  not.** Source:
+  https://www.genengnews.com/topics/bioprocessing/newbiologix-and-synastra-join-forces-to-advance-raav-manufacturing-for-duchenne-gene-therapy/
 - **Regulatory-climate REFRAME (2026-08-18; supersedes the "safety bar ratcheted
   up" shorthand):** the Capricor sequence (08-14: amend BLA with 24-mo HOPE-3
   extension data, **NARROW to the endpoint actually hit — upper-limb function**;
@@ -1547,7 +1606,41 @@ _Last update: 2026-09-05_
   https://www.biospace.com/business/bms-ends-cellares-pact-over-cell-therapy-production-problems-triggering-layoffs
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
-_Last update: 2026-08-31_
+_Last update: 2026-09-07_
+- **THE MONITORING PRECEDENT — a recurring blood draw in an ASYMPTOMATIC, NON-PROGRESSING patient is now written into an
+  FDA companion-diagnostic approval (added 2026-09-07 Portfolio Watch LEAD; FDA accelerated approval 2026-09-04, AstraZeneca
+  release 2026-09-06).** **AstraZeneca's ETCAMAH (camizestrant)** + a CDK4/6 inhibitor was approved in HR-positive,
+  HER2-negative advanced breast cancer **"upon detection of ESR1 mutation during aromatase inhibitor and CDK4/6 inhibitor
+  therapy, based on an FDA-authorized test"** — the indication is a **molecular event, not progression**. **SERENA-6** is the
+  first global, double-blind, registrational Phase 3 to use a **ctDNA-guided switch before radiographic progression** (blood
+  draw at each routine scan every 2–3 months; on emergent ESR1 without progression, swap the endocrine partner and continue
+  the CDK4/6i): **mPFS 16.0 vs 9.2 months (HR 0.44; p<0.00001); PFS2 25.7 vs 19.1 (HR 0.63); OS immature (HR 0.87)**;
+  ~37,000 eligible US women/yr; continued approval contingent on a confirmatory trial.
+  **Concurrently, Guardant360 CDx was approved as the FIRST FDA-APPROVED LIQUID-BIOPSY CDx FOR LONGITUDINAL TESTING in breast
+  cancer, with repeat testing recommended EVERY THREE MONTHS during therapy** — 29th CDx indication for the platform, >300M
+  covered lives. **Helmy Eltoukhy: "a landmark shift in how we define disease progression."**
+  **READ (a) — PRECEDENT:** the reimbursable unit in molecular diagnostics has been a **one-time test that picks a drug**;
+  this is **per-patient recurring revenue written into a CDx label**, which is the model Artemyx's liver-fibrosis / SLE / RA /
+  IBD monitoring thesis needs. Companion to the 08-31 Roche/Lilly p-tau217 entry above (the chronic, non-oncology precedent);
+  **this is the MONITORING precedent, and it is the harder one.**
+  **READ (b) — THE CANDID HALF, AND THE ACTION (Eddie Cherok): Guardant did NOT generate this evidence. AstraZeneca ran the
+  registrational Phase 3 and carried the assay into the label; the diagnostic got its indication as a PASSENGER. No
+  diagnostics-only company funds SERENA-6. So the live question is not analytical performance — it is WHICH THERAPEUTIC
+  DECISION THE TEST CHANGES AND WHOSE PHASE 3 PROVES IT. ACTION: name the liver-fibrosis and lupus drug programmes whose
+  enrichment/switching problem our assay solves and get into their PROTOCOL-DESIGN conversations now. The 08-31 instruction
+  (reference-lab relationships during validation) is the CHANNEL; this is the EVIDENCE ENGINE, and it sits upstream of it.**
+  **READ (c) — REGULATORY (Matt + Eddie), portable beyond Artemyx: ODAC voted 6–3 on 2026-04-30 that the switching strategy
+  had NOT shown clinically meaningful benefit** — on **instrument grounds** (immature OS, thin PROs, no crossover, and a
+  control arm that kept receiving a therapy already known to have failed molecularly, so measured PFS may be the size of the
+  head start). AstraZeneca supplied **ctDNA-clearance-correlated-with-longer-term-efficacy** analyses at ASCO (2026-06-02),
+  FDA extended the clock and approved anyway. **Second approval over the agency's own apparatus in five days (cf. the
+  Replimune CBER override, covered 09-04). Set against the pelacarsen null (09-04): two tests of "when does a biomarker
+  license a conclusion" in one week, opposite answers, because in one case outcomes were measured and in the other they are
+  not yet. Regulatory risk in 2026 turns less on the evidentiary standard than on WHO IS EXERCISING DISCRETION — which is
+  upside for a thin-but-well-told package and makes precedent a weaker predictor.** Sources:
+  https://www.biospace.com/press-releases/etcamah-camizestrant-in-combination-with-a-cdk4-6-inhibitor-approved-in-the-us-for-1st-line-advanced-hr-positive-breast-cancer ·
+  https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-Announces-Landmark-FDA-Approval-of-Guardant360-CDx-as-Companion-Diagnostic-for-AstraZenecas-ETCAMAH-camizestrant-in-Advanced-Breast-Cancer/default.aspx ·
+  https://www.onclive.com/view/fda-odac-votes-against-clinical-benefit-of-switching-to-camizestrant-in-hr-breast-cancer-after-esr1-mutation-detection
 - **What:** non-invasive **blood tests** for diagnosis and monitoring of chronic
   disease — AI-powered analysis of **cell-free DNA** to predict liver fibrosis,
   systemic lupus erythematosus, rheumatoid arthritis, inflammatory bowel
@@ -2035,6 +2128,19 @@ raises, exits, or crosses a scientific milestone.
   programs (Merck islatravir, Gilead lenacapavir combos, ViiV cabotegravir,
   academic ATI consortium) using IPDA or IP quantitation as trial-inclusion
   stratifier.
+- **DEMAND SIGNAL — a cure field that starts producing durable primate reservoir-reduction results needs exactly this assay
+  (added 2026-09-07 Portfolio Watch item 5; *Nature Microbiology*, coverage 2026-09-04).** **Mirko Paiardini's group (Emory
+  National Biomedical Research Center)**, first author **Tomas Raul Wiche Salinas**: 24 SIV-infected rhesus macaques, ART from
+  day 14, then **10 daily doses of venetoclax** (approved BCL-2 inhibitor) ± CD8α depletion. **Intact SIV DNA in CD4+ T cells
+  fell rapidly vs ART alone and remained lower through day 294**, months after dosing stopped; reservoir also reduced in
+  **lymph nodes**; absolute circulating infected-cell number reduced. **Incomplete:** surviving CD4s were partly
+  apoptosis-resistant (higher BCL-2/BCL-xL, lower PUMA); **no analytical treatment interruption, so rebound is untested.**
+  **SO-WHAT: the readout of this study IS Accelevir's product category (intact-reservoir quantitation), and a repurposed,
+  already-approved oncology drug is a cheap enough intervention that more groups will run it. Mirrors the 09-07 Artemyx lead in
+  reverse: the assay's value is created by somebody else's trial, so the commercial question is which sponsor's protocol it
+  lands in.** Source:
+  https://www.genengnews.com/topics/infectious-diseases/cancer-drug-reduces-siv-reservoir-in-macaques-may-inform-hiv-cure-strategies/ ·
+  paper https://doi.org/10.1038/s41564-026-02464-7
 
 ### Kalhor Lab spatial-omics platform (Wilmer/BME/Center for Epigenetics) ⚠
 - **What:** **3DEEP** (3D DNase-Enhanced Expression Profiling) — tissue-clearing
