@@ -4239,3 +4239,25 @@ Thread: **the sign is the finding** — effects running opposite to what the mec
 
 2. **Full-text gate losses.** ScienceDirect is CAPTCHA-walled through jina, so every Elsevier candidate was ineligible — including the Biological Psychiatry orexin-receptor-1-vs-2 dopamine paper, which would otherwise have made the episode. Wiley (CPT AI Cautionary Guide) also CAPTCHA'd, second day running. nature.com references-only walls: schizophrenia genetic architecture (`s41380-026-03862-3`), suicidal-ideation LLM (`s41746-026-03198-w`), macaque frontopolar translation, menstrual-cycle/SUD. The psilocybin anxiolytic review (`s41386-026-02551-7`) is a hard paywall with no preprint — permanent, drop it. **Deferred for jina 429s** (proxy error, not render lag): `2026.09.02.748774` PromptBio, `2026.09.02.748775` OmniSyn, `2026.08.31.747771` BET inhibition in Niemann-Pick C neurons, `2026.08.26.747060` schizophrenia × adolescent alcohol, `2026.08.28.747847` astrocyte NAc rhythm (now four days of failures). WebFetch on the same jina URLs also 429'd, so the host IP was saturated rather than the single channel — the workaround in memory did not help today.
 === 2026-09-07T03:15:43-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-08T02:50:13-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I stopped after the script + stubs — no `gen_tts.py`, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files produced**
+- `podcasts/receptor-and-reason/scripts/2026-09-08-receptor-and-reason.md` — 3,204 spoken words, 12 items, ~17.5 min projected
+- `podcasts/receptor-and-reason/scripts/2026-09-08-receptor-and-reason.rss-item.xml` — `__LENGTH__` / `__DURATION__` placeholders intact, XML validated
+- `podcasts/receptor-and-reason/scripts/2026-09-08-receptor-and-reason.commit-msg` — single line
+- Ledger appended: 12 keys under `2026-09-08-receptor-and-reason` (109 episodes)
+
+**Episode thread:** the endogenous brake — cases where the useful pharmacology is a constraint the body already imposes.
+
+**Candidate funnel**
+
+- **bioRxiv + medRxiv details API**, 2026-09-01→09-08, day-by-day, cursor advanced by returned `count`: 1,844 records / 1,809 unique DOIs scanned → 727 keyword hits → 85 title-level CNS-pharm hits + 18 agentic-AI hits → 40 shortlisted → **19 fresh after dedup (21 already shipped)**. Sweep ran clean, no 503s.
+- **arXiv**: shared cache (500 entries, 09-02→09-04) + one live 400-result query. Newest submission in the whole category union was **09-04** — Labor Day killed Monday's announcement, and the 09-04 items were already mined by the 09-07 episode. **Zero net-new; 0 items contributed.**
+- **Crossref journal sweep**, 24 journals, `from-created-date:2026-09-01`: all 24 returned, 0 failures. 43 substantive candidates → **37 fresh after dedup (6 already shipped)**.
+- **Full-text gate**: 20 fetch attempts. Read in full — anti-NMDAR1 (107 KB), OmniSyn, LD-IL-2, glucocorticoid/CA3, parcel-guided rTMS, PLM-embeddings, conotoxin. Abstract-only/walled and therefore held to short items or dropped — norketamine and psilocybin review (access wall), psychedelic phosphoproteomics, lipid GWAS, SAK3, Mother-Child AI agent, LRRK2, `cpt.70469`. **Dropped for unreadable body:** Nat Neuro mitochondrial-calcium/addiction (`s41593-026-02421-x`) — references-only for the second time in a week.
+
+**Selected (12):** anti-NMDAR1 autoantibodies/TBI *(LEAD)* · Neuron GluN3A glycinergic circuit · low-dose IL-2 vs latent sensitization · acetaminophen DAGL/MAGL/CB1 · corticosterone→noradrenaline→CA3 inference · parcel-guided rTMS · psychedelic phosphoproteomic signature · psychotropic lipid GWAS · LRRK2 Roc-COR chemical genetics · OmniSyn · shelved-pipeline agentic AI + CPT ML cautionary guide.
+
+**One correction during the run:** I initially included the vornorexant-vs-lemborexant network meta-analysis (`10.1093/ijnp/pyag047`). It had been correctly dropped by the dedup filter as a 09-05 pick, but I re-introduced it later from a PubMed metadata call and never re-checked it; `--append` caught it. I removed it from the script and RSS stub, renumbered, and repaired the ledger line I had just written (validated every line parses before swapping the file). The item count went 13 → 12. I've recorded the trap — items entering *after* the batch filter are unguarded, so re-filter the final roster, not just the candidate sweep.
+=== 2026-09-08T03:22:14-07:00 done  receptor-and-reason (exit 0) ===
