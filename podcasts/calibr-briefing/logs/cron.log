@@ -4028,3 +4028,34 @@ Shortlist after discarding stale and already-shipped items:
 
 One caveat worth flagging: the Novo HERMES/ATHENA stoppage rests on Endpoints' reporting plus ClinicalTrials.gov trial identities. I could not find a Novo company announcement or 6-K for it, and the registry still lists both trials as active-not-recruiting (normal registry lag). The script attributes it to Endpoints explicitly rather than to Novo.
 === 2026-09-07T02:34:28-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-08T02:20:13-07:00 start calibr-briefing ===
+Both episodes for `calibr-briefing` are written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scripts + transient stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit. `publish_pending.py` picks these up after batch TTS.
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-09-08-pharma-headlines.txt` (1,925 words)
+- `podcasts/calibr-briefing/scripts/2026-09-08-insilico-aging-clocks-spotlight.txt` (2,264 words)
+- matching `.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` placeholders) and one-line `.commit-msg` for each
+
+**Candidate funnel**
+
+Sources scanned:
+- **Endpoints News** (`r.jina.ai/endpoints.news/news/`) — index worked, newest item 4h old; everything in the last 24h was follow-on coverage of items already shipped (camizestrant approval, pelacarsen analysis, Novo IL-6). 0 net-new.
+- **BioPharma Dive** — homepage via jina, 30 KB, newest article Friday/Saturday (pelacarsen, 829736). 0 net-new.
+- **BioSpace** `/latest-news-press-releases` — 5 Sept-8 analysis pieces + 19 Sept-7 wire releases; jina stripped the PR titles, recovered them via WebFetch. Best-yielding source of the run.
+- **Clinical Trials Arena** — index + 2 articles, carries Sept-7/8 items with exact timestamps.
+- **Fierce Biotech / Fierce Pharma** — jina `AbuseAlleviationError`, domain blocked until 10:16 UTC (≈40 min past record time); per prior runs the cached block outlives its stated expiry, so tried once and moved on. WebFetch 403s. **Skipped.**
+- **STAT / Biocentury / Biotech Voyager** — not reached; the day's set was already covered.
+
+Substantive shortlist (spurious/stale matches discarded — Third Arc Bio's $52M was February, Tarsus/Alkeus was a close, ERS items already shipped):
+- **Roivant/Pulmovant PHocus mosliciguat PH-ILD topline** — presents 6:15am ET today, uncrawlable at record time → **CHOSEN, headline lead, no verdict asserted**
+- **Novo Nordisk STEP Young Phase 3** (GlobeNewswire, full text read) → **CHOSEN, item 2**
+- **Insilico rentosertib proteomic aging clocks, Nature Biotechnology** (full text read, 173 KB, CC-BY) → **CHOSEN, spotlight**
+- **BioSpace opinion: foundation models in drug discovery** (Avicenna; names Claude Science) → **CHOSEN, item 4**
+- **Clover SCB-1022 / SCB-1033 Phase 2** → **CHOSEN, item 5**
+- **Rezubio RZ-520 dual FDA+NMPA IND, first cohort dosed** → **CHOSEN, item 6**
+- **Aptar/Aceso ACT-101 inhaled ASO in CF** → **CHOSEN, item 6b**
+- **SynAct resomelagon ADVANCE reanalysis** → **CHOSEN, item 7**
+- Acepodia ACE723 FDA clearance; Ascendis ESPE 2026 data; Samsung Biologics CDMO acquisition; Truist "biotech is back" survey — scanned, not selected (thin or undated)
+
+Spotlight full-text gate satisfied: the Nature Biotechnology paper is open access and read in full (Results, Discussion, Methods, competing interests, peer-review disclosure), plus the Phase 2a Nature Medicine summary and the July Phase 3 initiation release for the regimen mismatch that anchors the analysis. One durable reference saved to memory: OA nature.com articles return their whole body via `r.jina.ai`, with the caveat that OA doesn't guarantee it.
+=== 2026-09-08T02:34:17-07:00 done  calibr-briefing (exit 0) ===
