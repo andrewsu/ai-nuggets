@@ -2567,3 +2567,40 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 Two memories updated: openai.com/system-card fetching via jina, and the X-mirror status (the "Nitter resumes" story does not change reachability here).
 === 2026-09-07T02:45:14-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-08T02:30:13-07:00 start jinglin-ai-pulse ===
+All three files are in place. The standalone-parse error above is just the `itunes:` prefix being undefined outside the feed root — the meaningful check (inserting the item into the real `feed.xml` and parsing) passed.
+
+`SKIP_TTS=1` is set, so per PIPELINE.md I stopped after writing the script plus the two stubs: no `gen_tts.py`, no R2 publish, no `feed.xml` edit, no commit. `publish_pending.py` will do those after batch TTS.
+
+**Episode:** `2026-09-08-nobody-is-blocked-on-capability` — 2,772 spoken words (~14 min at the show's 1.2× voice, in line with the last three episodes at 2,919–3,603 words / 14–18 min).
+
+Through-line: four unrelated-looking front-page items are all last-mile stories — the capability exists and the binding constraint is the distance to the world.
+
+**Candidate funnel**
+
+Hacker News front page (90 items scanned, ~14 AI-relevant, 6 substantive after discarding product noise):
+- **CHOSEN** — Dan Luu, "How well do agents use test/verification techniques?" (82 pts) — https://danluu.com/agentic-testing/ (read in full, ~9k words)
+- **CHOSEN** — jyn, "We have a year to fix security everywhere" (222 pts, 186 comments) — https://jyn.dev/a-year-to-fix-security/ (read in full)
+- **CHOSEN** — "Is mathematics about to enter the conservatory?" (132 pts, 138 comments) — https://mbmccoy.dev/posts/mathematical-conservatory/ (read in full)
+- **CHOSEN (Money)** — "Mistral raises €3B" (426 pts, 294 comments) — https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/ (primary announcement read in full; HN thread mined for sentiment)
+- Passed: "Your intellectual fly is open when you use an LLM" (722 pts) — 2025 repost, no new data point
+- Passed: Economist "AI jobs apocalypse postponed" (85 pts) — paywalled, no primary access
+- Passed: "I tested 10 model/harness combinations on a Three.js task" (79 pts) — dominated by Dan Luu on the same axis
+- Passed: "An Alien Mind" (474 pts) — shipped in yesterday's episode
+
+Investment/business (TechCrunch AI category, Crunchbase AI section):
+- **CHOSEN (Money)** — Lyte, $165M Series C at $1.6B, Maverick Silicon led, Sep 2 — https://news.crunchbase.com/venture/robotics-ai-startup-lyte-seriesc-raise-maverick/ (picked over larger rounds because its $47.4B/521-deal physical-AI context is the hinge of the deep cut)
+- Passed: Seattle Times/Newsday sue OpenAI; Anthropic settlement claims — litigation, no strategic signal
+- Passed: Crusoe $3B, Fluidstack $1.5B — both shipped Sep 5 and Sep 7
+
+Long-form podcasts (Latent Space, Dwarkesh, Cognitive Revolution, ChinaTalk, MLST checked):
+- **CHOSEN (Deep Cut)** — The Cognitive Revolution, "AI:AM Highlights: Welcome to the AGI Era," pub Sep 5 — https://www.cognitiverevolution.ai/ai-am-highlights-welcome-to-the-agi-era/ (212 KB quote-level episode notes read in full; used Timothy B. Lee's argument chain plus Angela Yeung's eval-budget admission, honoring the notes' own attribution warnings)
+- Passed: Nathan Labenz's "opaque serial depth to n steps per token" proposal from the same tape — strong, but CoT monitorability ran Sep 3, 4 and 7
+- Passed: Dwarkesh/Ajeya Cotra (Sep 1), ChinaTalk/Joshua Saxe (Sep 2), MLST/Tom McGrath (Sep 2) — all already shipped
+
+Source failures:
+- **Hugging Face daily papers — HTTP 403 via r.jina.ai** (domain-level abuse block on huggingface.co until 10:04 UTC today, unrelated to this run). No retry possible from this IP; skipped.
+- **X/Twitter — unreadable from this host** (known: xcancel serves a browser challenge, x.com needs auth). @Zefan_Cai's feed could not be sampled directly; the two X citations in the script (MacIver, Gary Bernhardt) come via Dan Luu's quoted text. Discourse signal sourced from HN front page + primary docs instead.
+- **z.ai GLM-5.3-Flash blog — r.jina.ai returned an unrelated cached document**, and a direct curl returned 604 bytes of shell. GLM-5.3-Flash's specs (MIT, 320B/18B active, 1M context, Aug 26) verified via WebSearch across four secondary sources; the benchmark figures verified against Z.ai's own model guide at docs.z.ai.
+- One unverified HN claim dropped: that Mistral now hosts GLM-5.2. Could not confirm; not in the script.
+=== 2026-09-08T02:39:51-07:00 done  jinglin-ai-pulse (exit 0) ===
