@@ -2988,3 +2988,28 @@ Caveats stated in-script: deletion is untimed; the anti-DLL1/4 timing blockade i
 
 *Source failures:* Fierce Biotech unreadable — `r.jina.ai` returned an explicit `AbuseAlleviationError` blocking anonymous access to the domain until 10:01 UTC today, and WebFetch on Endpoints article bodies 403s (paywall); the Endpoints headline index via jina was readable and sufficient. `biopharmadive.com` homepage returned no dated items past 09-02. `nih.gov/news-events/news-releases` 403'd WebFetch (covered via search). Wiley 403'd the group's 2021 *Advanced Therapeutics* paper and it isn't PubMed-indexed. Proceeded on the remaining sources per PIPELINE.md.
 === 2026-09-07T02:52:56-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-08T02:40:13-07:00 start justice-biotech-brief ===
+Published (SKIP_TTS mode — script + stubs written, orchestrator handles batch TTS, R2, feed and commit).
+
+**Episode:** `2026-09-08-tarlatamab-dll3-ihc-predictive-biomarker-sp347`
+Tarlatamab — DLL3 by IHC predicts who benefits, on the exact assay Rova-T left behind
+Files: `.md` (1,266 words), `.rss-item.xml` (XML validated, `__LENGTH__`/`__DURATION__` placeholders), `.commit-msg`
+
+## Candidate funnel
+
+**bioRxiv details API** — 09-06/07/08 swept day-by-day, 293 unique records (81 / 200 / 12; 09-08 barely populated at cron time). 23 keyword hits; 20 spurious or off-target (`checkpoint` as cell-cycle/spindle, `adc`/`pd1`/`tce` as substrings, `vegf` in developmental biology and ophthalmology, `antibody` in reagent methods). Substantive shortlist:
+
+- **← CHOSEN** DLL3 expression predicts response and long-term outcome in SCLC patients treated with tarlatamab — `10.64898/2026.09.03.749238` v1, posted 09-07, MD Anderson (Byers/Gay) — https://www.biorxiv.org/content/10.64898/2026.09.03.749238v1
+- Enzyme Activation of Triggerable Polymeric Lysosome Targeting Chimeras (tPolyTACs; EGFR/PD-L1/cMET extracellular degradation, LTR-independent) — `10.64898/2026.09.03.749226` v1, 09-07 — adjacent to the TRTAC episode of 08-27, but a chemistry-platform paper with no in vivo
+- Myeloid Lectin Profiling Identifies SYK as a Targetable Node for Remodeling TAMs in Breast Cancer — `10.64898/2026.09.04.749378` v1, 09-08 — R406 repurposing on a 3D TME model; TAM biology, not a biologic
+- Endothelin receptor blockade potentiates adoptive T cell and CAR T therapies — `10.64898/2026.09.02.748239` v1, 09-06 — **still deferred**, `.full.pdf` 429'd a sixth time, `.full` 34 KB chrome-only
+- Fc domains with absolute FcγRIIa-vs-FcγRI selectivity (Georgiou lab) — `10.64898/2026.08.31.748147` — full text confirmed readable (147 KB), but API date is 09-04 → **out of the hard 2-day window, closed**
+
+**News / press** — Endpoints (index + R&D channel), BioPharma Dive, BioSpace latest-news-press-releases, Clinical Trials Arena all live and current. Zero on-target items: freshest were Beam AATD base editing at ERS, a Novartis Avidity-acquired neuromuscular Phase 3 failure, Novo Wegovy pediatric obesity, Rezubio RZ-520 inhaled first cohort, and the AstraZeneca oral SERD approval from the holiday weekend. Nothing in immuno-oncology, TCE, ADC, bispecific or VEGF×PD-(L)1.
+- `fiercebiotech.com` 669 bytes and `fiercepharma.com` 142 bytes via r.jina.ai — **blocked today**, one attempt each, skipped.
+- r.jina.ai served a **stale cached** Endpoints index on first fetch (missed two 1-hour-old stories); `-H "x-no-cache: true"` fixed it. Recorded in memory.
+
+**Policy / funders** — ARPA-H newest 09-01 (GIVE awards), NIH newest 09-02, NSF not on-target. Nothing in window.
+
+Two full-text-access notes worth flagging: the chosen paper was rescued by a **third fetch route** — the abstract page's own `content/biorxiv/early/2026/09/07/<id>.full.pdf` link — after `.full` returned abstract-only chrome and `v1.full.pdf` returned Cloudflare 429s twice. That's now in `reference_biorxiv_pdf_via_jina.md`, and it's the first thing to try on the endothelin deferral next run.
+=== 2026-09-08T02:49:26-07:00 done  justice-biotech-brief (exit 0) ===
