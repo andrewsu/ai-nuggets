@@ -281,7 +281,7 @@ _Last update: 2026-08-28_
 company Blackbird BioVentures invested in, not a Blackbird-incubated project.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-09-05_
+_Last update: 2026-09-08_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases (Blackbird funded the **Intergalactic Center for
@@ -326,8 +326,8 @@ https://www.tedcomd.com/news-events/press-releases/2026/tedco-invests-750000-ast
     https://www.genengnews.com/topics/translational-medicine/micro-bladder-model-demonstrates-how-phage-therapy-could-help-to-reduce-recurrent-utis/ ·
     paper https://doi.org/10.1038/s41467-026-76589-y
 
-**COPD theme — TSLP has consolidated, and the differentiator is a PROPERTY not a target
-(added 2026-08-29 Portfolio Watch item 4).** Two independent wins for the epithelial alarmin
+**COPD theme — the UPSTREAM ALARMIN LAYER IS CONTESTED AT FOUR POINTS ON ONE PATHWAY, and every differentiator on offer is a PROPERTY or a POPULATION, never a target
+(opened 2026-08-29 Portfolio Watch item 4; four-seat map added 2026-09-08 Portfolio Watch LEAD).** Two independent wins for the epithelial alarmin
 **TSLP** in a single week across two organs: **Tezspire (tezepelumab) Phase 3 CROSSING in
 eosinophilic esophagitis** (2026-08-27) and **Generate Biomedicines' GB-0895 / golukibart**
 Phase 1b in **COPD** (posters inadvertently published on the **ERS 2026** website 2026-08-25,
@@ -345,6 +345,70 @@ place to compete than target discovery. Ask any AI-pitching program which PROPER
 and whether that property earns a line on the label. (3) Operational note for BioHub companies: a
 society website can break your embargo and force a same-day SEC disclosure.** Source:
 https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentally-leaked-ahead-of-european-conference
+  - **THE FOUR SEATS, MEASURED AT ERS CONGRESS 2026 (Barcelona, 2026-09-05 → 09-09; added 2026-09-08 Portfolio Watch LEAD).**
+    **IL-33 LIGAND — AstraZeneca's tozorakimab.** THREE positive Phase 3s in COPD on the annualized rate of moderate-to-severe
+    exacerbations: **OBERON + TITANIA** (topline **2026-03-27**, replicate double-blind placebo-controlled, **2,306 randomized**,
+    **300 mg q4w**, 52 weeks) and **MIRANDA** (topline **2026-04-20**, **1,454 randomized**, **300 mg q2w**, 52 weeks); LTE
+    **PROSPERO**, **1,713 randomized**, primary = **severe** exacerbations only over **104 weeks**. All enrolled **irrespective of
+    blood eosinophil count, irrespective of smoking status, across all lung-function severity stages**, and the effect held in
+    former smokers (primary population) **and** in the overall population including current smokers. Chief investigator **Frank
+    Sciurba** (Pittsburgh). **>5,400 patients randomized on this pathway and NOT ONE exacerbation rate ratio disclosed.**
+    **IL-33 RECEPTOR (ST2) — Mabwell (Shanghai; 688062.SH, 02493.HK), 9MW1911, presented 2026-09-04.** Phase Ib/IIa
+    (9MW1911-C03), randomized double-blind placebo-controlled dose escalation, **80 participants**, IV **100/300/600/900 mg q4w**,
+    former smokers with moderate-to-severe COPD, **most with eosinophils ≤300 cells/µL**. **Annualized moderate-to-severe
+    exacerbations −24% (600 mg) / −81% (900 mg); annualized SEVERE exacerbations −47% / −100%.** **Phase IIb enrollment COMPLETE;
+    Phase III expected ~end-2026; FDA has cleared the IND for a US Phase IIa.** **Denominator caveat to carry: 80 patients across
+    five arms ≈ 16/arm, so −100% on severe exacerbations is an artifact, not an effect size.**
+    **TSLP LIGAND —** Tezspire (AstraZeneca) + Generate's golukibart, per the entry above.
+    **TSLP RECEPTOR — Upstream Bio (Waltham MA; Nasdaq UPB), verekitug, full Phase 2 VALIANT presented 2026-09-08** (late-breaking
+    oral). **NCT06196879**: global randomized double-blind placebo-controlled dose-ranging, **478 patients with severe asthma
+    enrolled REGARDLESS of baseline eosinophils or any type-2 biomarker**, all ≥24 weeks of treatment (up to 60). **100 mg q12w
+    reduced the annualized exacerbation rate 56% vs placebo (p<0.001)**, other dose arms also significant; **FEV₁, FeNO and ACQ-6
+    all improved at week 24 with separation by week 2**. LTE **VALOUR** enrolled with >90% retention, data H2 2027. **Phase 3 Q1
+    2027 at 400 mg q12w in severe asthma + CRSwNP, broad populations, no biomarker restriction; a separate Phase 2 in COPD is
+    ONGOING.** CMO **Aaron Deykin**; PI **Michael Wechsler** (National Jewish). Only known TSLP-receptor antagonist in development.
+    **THE READ (Virginia Burger) — this SUPERSEDES the 08-29 "TSLP has consolidated" framing, which was too narrow.** The contest
+    is not TSLP; it is **the whole alarmin layer, attacked at ligand AND receptor for BOTH alarmins**. And every entrant sells the
+    same two things, neither of which is a target: **a PROPERTY** (quarterly dosing, at-home administration, extended interval) or
+    **a POPULATION** (all-comers, irrespective of eosinophils). ⇒ **"We act upstream" is now the CROWDED claim.** A Blackbird COPD
+    differentiator must be **a property none of the four holds** (route, interval, cost of goods) or **a position DOWNSTREAM of
+    where all four converge**. The 08-29 question is unchanged and now urgent: **which property, and does it earn a line on the
+    label.**
+    **AND A COMPARATOR PROBLEM, NOT AN ALARMIN PROBLEM (ERS, 2026-09-07).** **Chloe Bloom (National Heart & Lung Institute,
+    Imperial College London)**, presented by **Bohee Lee**: **four parallel observational studies in UK electronic medical records,
+    20,000–22,000 participants each, GLP-1 receptor agonist vs SULFONYLUREA as active comparator — ~40% fewer asthma attacks and
+    20% fewer COPD exacerbations.** Bloom: *"The findings from this study are encouraging, but they should not change treatment
+    decisions on their own."* **Apply the NuGate comparator-drift rule (08-29): a cheap, marketed, non-biologic drug that much of
+    the COPD population will be taking for METABOLIC reasons, cutting exacerbations 20% in an UNSELECTED population, is exactly the
+    background therapy that converts a real effect into an unimpressive increment AT READOUT. Into the design assumptions now.**
+    Sources: https://www.prnewswire.com/news-releases/ers-2026--mabwell-presents-phase-ibiia-clinical-results-of-anti-st2-monoclonal-antibody-9mw1911-in-copd-patients-302870024.html ·
+    https://www.globenewswire.com/news-release/2026/09/08/3357341/0/en/upstream-bio-presents-results-from-the-phase-2-valiant-trial-of-verekitug-for-the-treatment-of-severe-asthma-in-oral-presentation-at-ers-congress-2026.html ·
+    https://www.news-medical.net/news/20260907/GLP-1-treatment-linked-to-4025-fewer-asthma-attacks.aspx ·
+    https://www.nasdaq.com/press-release/tozorakimab-met-primary-endpoint-phase-iii-miranda-trial-patients-copd-2026-04-20
+
+**PARKINSON'S theme — the constraint the field names is DIAGNOSTIC LATENCY, not target choice, and the inflammasome lane is
+already priced (added 2026-09-08 Portfolio Watch item 4; published 2026-09-08).** **Jefferies: ~$8B market by 2035**, *"one of the
+largest untapped opportunities in neuroscience"*; population expected to exceed **2 million** across US + Europe within ten years;
+standard of care is still **levodopa** (motor symptoms only). **Alpha-synuclein under strain:** **Biogen + Denali discontinued the
+Phase 2b of BIIB122 / DNL151 (LRRK2 inhibitor) in May 2026** for failing to slow progression; **Roche + Prothena's prasinezumab
+missed primaries in PASADENA and PADOVA** and is in **Phase 3 PARAISO, readout 2029** — Jefferies' **Alyna Shamsi** is openly
+doubtful PARAISO resolves the absent dose-response. **Diversification:** **AC Immune's ACI-7104** (active anti-α-synuclein
+immunotherapy, **FDA Fast Track granted ~2026-09-01**, Phase 2 part-one data by end-2026; interim CEO **Martin Zügel**) plus
+**ACI-19764** against **NLRP3**; **NLRP3 lane = Eli Lilly (agreed to acquire Ventyx Therapeutics for $1.2B earlier in 2026),
+Roche, NodThera, Insilico Medicine, Brenig**; **LRRK2 continues** at **Denali (now only in gene-variant carriers)**, **Brenig,
+Neuron23, Ionis**.
+  - **READ ONE (Hemaka): NLRP3 in neurodegeneration is NOT white space, and the buyer who took it is LILLY** — ranked FIRST on the
+    NXE'149 bidder set on 09-06 for exactly this behaviour (12 acquisitions in 2026, ~half preclinical/Phase 1). A Blackbird
+    Parkinson's programme routed through inflammasome biology enters a lane with a priced incumbent.
+  - **READ TWO (Anthony Accorsi + Jon Robbins) — THE SELECTION RULE, THIRD INSTANCE IN TWO WEEKS.** **Sneha Mantri (CMO,
+    Parkinson's Foundation): "One of the big reasons why disease-modifying drugs have failed over and over is because of a delay in
+    recognition and diagnosis"** — easier to preserve function than to regain it. Set beside **Denali narrowing to variant carriers
+    after its miss**, the **09-02 Alumis** case (failing to select BURIED a probably-real lupus effect) and the **08-29 BNT122-01**
+    case (selecting on ctDNA did NOT rescue the trial). ⇒ **Every Parkinson's value case must state WHICH PATIENT it treats and HOW
+    THAT PATIENT IS FOUND before it states the mechanism. In this indication the enrichment strategy is not a downstream detail —
+    it is why the field has a graveyard.** Secondary: the named constraint is a **detection / stratification** problem, which is an
+    **Artemyx-adjacent** surface rather than a therapeutics one. Source:
+    https://www.biospace.com/drug-development/reeling-from-past-failures-parkinsons-pipeline-enters-era-of-diversification
 
 **CARDIAC FIBROSIS theme — RXFP1 has been measured three times on HAEMODYNAMICS and never once on FIBROSIS
 (added 2026-08-30 Portfolio Watch item 3; event 2026-08-30, ESC Congress, Munich).** **AstraZeneca's AZD5462**, a
@@ -1606,7 +1670,7 @@ _Last update: 2026-09-05_
   https://www.biospace.com/business/bms-ends-cellares-pact-over-cell-therapy-production-problems-triggering-layoffs
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
-_Last update: 2026-09-07_
+_Last update: 2026-09-08_
 - **THE MONITORING PRECEDENT — a recurring blood draw in an ASYMPTOMATIC, NON-PROGRESSING patient is now written into an
   FDA companion-diagnostic approval (added 2026-09-07 Portfolio Watch LEAD; FDA accelerated approval 2026-09-04, AstraZeneca
   release 2026-09-06).** **AstraZeneca's ETCAMAH (camizestrant)** + a CDK4/6 inhibitor was approved in HR-positive,
@@ -1641,6 +1705,25 @@ _Last update: 2026-09-07_
   https://www.biospace.com/press-releases/etcamah-camizestrant-in-combination-with-a-cdk4-6-inhibitor-approved-in-the-us-for-1st-line-advanced-hr-positive-breast-cancer ·
   https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-Announces-Landmark-FDA-Approval-of-Guardant360-CDx-as-Companion-Diagnostic-for-AstraZenecas-ETCAMAH-camizestrant-in-Advanced-Breast-Cancer/default.aspx ·
   https://www.onclive.com/view/fda-odac-votes-against-clinical-benefit-of-switching-to-camizestrant-in-hr-breast-cancer-after-esr1-mutation-detection
+  - **SECOND MONITORING PRECEDENT IN FIVE DAYS, AND THIS ONE IS NON-ONCOLOGY, CHRONIC, AND A DE-ESCALATION DECISION (added
+    2026-09-08 Portfolio Watch item 2; presented at ERS Congress 2026).** **COPERNICOS** (protocol *Trials*, DOI
+    10.1186/s13063-025-09032-0; **NCT04481555**) — **randomized, double-blinded, multicenter, FOUR-ARM** trial of **eosinophil-
+    guided, time-updated, person-specific REDUCTION of inhaled corticosteroid therapy** (plus a prophylactic low-dose azithromycin
+    arm) in **severe or very severe COPD**; the first prospective randomized test of the strategy. **Mechanic: blood eosinophils
+    measured every 3rd month; <0.3 × 10⁹ cells/L → ICS PAUSED for the next 3 months; ≥0.3 × 10⁹ cells/L → ICS continued or
+    resumed.** Result as presented: patients below the threshold can reduce ICS **without a significant increase in
+    severe-exacerbation risk**. **Jørgen Vestbo** on the barrier: clinicians must accept **measuring the biomarker over time** and
+    spending more time explaining why a patient may not need a drug they are on.
+    **READ (Eddie Cherok) — this WIDENS the 09-07 action rather than repeating it. The decision this test drives is STOPPING a
+    drug, which changes WHO FUNDS THE EVIDENCE: no inhaler manufacturer pays for COPERNICOS, an academic consortium ran it, and the
+    beneficiary is the PAYER. So "which therapeutic decision does our assay change and whose Phase 3 proves it" has a THIRD answer
+    — DE-ESCALATION, sponsored by a payer or health system rather than a pharma company, which is a different BD motion with
+    different evidence requirements. Settle it before the liver-fibrosis validation plan is fixed.** Secondary: the barrier Vestbo
+    names is **BEHAVIOURAL** (willingness to re-measure and to de-prescribe), so analytic performance, channel (08-31) and
+    **clinician workflow** are three separate gates. Sources:
+    https://www.ajmc.com/view/copernicos-trial-eosinophil-guided-ics-reduction-safe-in-copd-vestbo-says (403s both WebFetch and
+    r.jina.ai; verified via search extracts + the protocol paper) ·
+    https://trialsjournal.biomedcentral.com/articles/10.1186/s13063-025-09032-0
 - **What:** non-invasive **blood tests** for diagnosis and monitoring of chronic
   disease — AI-powered analysis of **cell-free DNA** to predict liver fibrosis,
   systemic lupus erythematosus, rheumatoid arthritis, inflammatory bowel
@@ -1818,6 +1901,24 @@ _Last update: 2026-08-28_
       its own.
     - Sources: https://www.biospace.com/drug-development/biontech-halts-mid-stage-trial-of-personalized-mrna-vaccine-in-colorectal-cancer ·
       https://www.sec.gov/Archives/edgar/data/0001776985/000177698526000061/form6-kcrc28aug2026.htm
+    - **THE OPERATIONAL PROOF OF THE 08-20 SENTENCE, AND IT REUSES THE CAR-T PHRASE VERBATIM (added 2026-09-08 Portfolio Watch
+      item 3; published 2026-09-08).** BioSpace feature on the manufacturing consequences of the melanoma win. To make
+      **intismeran autogene**, Moderna **sequences a patient's tumour and healthy cells, runs automated bioinformatics to pick up
+      to 34 patient-specific neoantigens**, and formulates the mRNA in an LNP; **turnaround is down to ~6 weeks (from ~7–8 weeks in
+      2019)**, and Guggenheim (2026-08-21, citing MSKCC's **Benjamin Greenbaum**) thinks **under one month** is reachable. Dedicated
+      **Massachusetts** facility; President **Stephen Hoge** said in July — BEFORE the readout — that it supports the vaccine "for
+      several years" and "satisfies the initial indication" of melanoma. **Roberta Duncan** (The Modeste Duncan Group; board,
+      Alliance for mRNA Medicines): the industry's focus has moved from **scaling up** to **"scaling out and scaling down,"** and
+      biotechs without in-house capability need CDMOs **"willing to invest in miniaturizing scale, because they're all built for
+      large-scale manufacturing."**
+      **READ (Hemaka + Eddie): this is the OPERATIONAL PROOF of the 08-20 sentence — the readout validates the biology AND prices
+      the individualized route in public, which makes SHARED-NEOANTIGEN, OFF-THE-SHELF versions worth MORE. An off-the-shelf
+      TCR-mimic engager (Clasp) is a VIAL made once; a shared-neoantigen peptide vaccine (Adventris) is also made once. Into
+      partnering conversations in that wording.** **Note the phrase: the 09-05 Winnow entry logged Cellipont COO Mike O'Mara —
+      "when you scale an autologous cell therapy, you don't scale up, you scale out" — alongside BMS terminating Cellares. Same
+      sentence, different modality, three days apart.** **CANDID LIMIT: Moderna IS executing (~6 weeks and falling, purpose-built
+      plant), so the claim is about who ELSE can, not that it is impossible.** Source:
+      https://www.biospace.com/drug-delivery/moderna-and-mercks-mrna-success-fuels-focus-on-scaling-out-and-scaling-down
 
 ---
 
@@ -2907,6 +3008,7 @@ _Last update: 2026-09-06_
   and call the implication (tailwind / threat / validation / watch-item).
 
 ## 4. Open items to fill in (next research passes)
+- **Tozorakimab exacerbation rate ratio in the EOSINOPHIL-LOW stratum (added 2026-09-08; Virginia Burger).** Three positive Phase 3s in COPD (OBERON, TITANIA, MIRANDA), **>5,400 patients randomized, and no exacerbation rate ratio disclosed in any of them.** The COPD theme's positioning decision turns on the effect size **in the eosinophil-low stratum specifically**: if the broad-population effect is carried by the eosinophil-high tail, then "works irrespective of eosinophils" is a **labelling** claim rather than a biological one, and the white space we assumed had closed has not. Full OBERON/TITANIA data were promised to a medical meeting; ERS 2026 ran 09-05 → 09-09 — pull it the moment AstraZeneca posts.
 - **Downside structure on single-readout BioVentures positions (added 2026-09-06; Emily Wilkinson + Eddie Cherok).** Royalty Pharma split its **$500M Ionis agreement $150M against pelacarsen royalties / $350M against Spinraza royalties**; pelacarsen went to **zero** (no milestones) and RP still expects **full recoupment and a modest positive return**, with the Spinraza interest reverting to Ionis at **$550M** of payments — a **1.1× return on total funded** — and reaffirmed its 2030 Portfolio Receipts target of ≥$4.7B the same day. **The binary was bought as an OPTION ON AN ANNUITY, sized so a zero costs the upside and not the principal.** Write down what our downside structure looks like on every position where one readout is the whole thesis, starting with **Clasp / GUARDIAN-101**. Equity-side version of the same lesson from the 09-04 charts: Alumis to ~$10 on the lupus miss, Ultragenyx halved on Angelman — mid-caps with one defining readout each. Source: https://www.globenewswire.com/news-release/2026/09/04/3356846/0/en/royalty-pharma-announces-update-on-novartis-phase-3-topline-results-for-pelacarsen.html
 - **Does USP15 modulation change p53-R175H peptide-HLA presentation? (added 2026-09-06; Avi Khanna + Jon Robbins.)** Padmanabhan's 2018 *Nat Commun* result routes R175H degradation through a **lysosomal** pathway, which does not feed MHC-I. CLSP-1025's potency scales with peptide-HLA copy number. Nobody has measured whether shifting R175H between lysosomal and proteasomal turnover changes presentation. Merge with the standing Clasp target-density item and put it to Clasp and to Padmanabhan (§2b) in the same week.
 - **No-capital top-of-funnel touchpoint (added 2026-09-06; Esther Park + Maisha Rahman).** MassBio + SCbio's free 8-week **Drive** accelerator selected 10 startups (5 techbio, 5 therapeutics; 7 US-based, 4 in MA) with an eligibility cap of **<$1.5M prior equity** — curriculum, weekly mentors, Boston + Charleston demo days, bench access via ADA Forsyth. That is a competing FIRST TOUCH **upstream** of where a Blackbird Labs grant lands, costing mentor time rather than capital. (1) Do we have a no-capital touchpoint for founders earlier than a Labs grant? (2) Is a BioHub demo day with bench access a cheaper sourcing instrument than we assume? Note half the cohort is computational — same signal as the Kathuria/Organotics sourcing-latency case. Source: https://www.biospace.com/business/10-life-sciences-startups-selected-for-accelerator-program

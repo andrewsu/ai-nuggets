@@ -2332,3 +2332,28 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus
 
 **Dedup:** 21 candidates → 17 fresh, 4 dropped as already shipped 09-05 (ADARx IPO, AbbVie etentamig, Truist survey, Merck M&A).
 === 2026-09-07T02:34:31-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-08T02:10:13-07:00 start blackbird-brief ===
+Episode published (SKIP_TTS mode — batch TTS, R2 publish, feed insert and commit are the orchestrator's steps).
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-09-08-portfolio-watch.md` — Portfolio Watch, 1,841 spoken words (~9–10 min), `## Script` + `## Show notes`
+- `podcasts/blackbird-brief/scripts/2026-09-08-portfolio-watch.rss-item.xml` — stub with `__LENGTH__` / `__DURATION__`; XML-validated
+- `podcasts/blackbird-brief/scripts/2026-09-08-portfolio-watch.commit-msg` — one line, `Blackbird 2026-09-08:` prefix
+- `state/shipped.jsonl` — appended 7 keys (59 episodes, 332 match forms)
+- `memory/blackbird-portfolio.md` — edited in place: COPD theme entry retitled and extended with the four-seat ERS map (supersedes the narrower 08-29 "TSLP has consolidated" framing); **new PARKINSON'S theme entry**; COPERNICOS nested under the Artemyx monitoring-precedent entry; "scaling out and scaling down" nested under the Clasp INTerpath entry; one new §4 open item; two date stamps bumped
+
+**Episode contents** — Portfolio Watch, window 2026-09-05 → 09-08. Monday was Labor Day and the US tape was near-empty, so the substance came from ERS Congress 2026 (Barcelona, 09-05→09-09).
+
+1. **LEAD — COPD theme.** The upstream alarmin layer is now contested at four points on one pathway: IL-33 ligand (AstraZeneca's tozorakimab — three positive Phase 3s, >5,400 randomized, **zero** exacerbation rate ratios disclosed), IL-33 receptor ST2 (Mabwell's new Phase Ib/IIa: −24%/−81% at 600/900 mg off ~16 patients an arm — denominator caveat stated on air), TSLP ligand (Tezspire, golukibart), TSLP receptor (Upstream Bio's verekitug: −56% in 478 biomarker-unselected patients, quarterly Phase 3 Q1 2027, COPD Phase 2 running). Nobody sells a target — only a *property* or a *population*, which is Virginia's 08-29 frame with a week of data behind it. Plus a GLP-1-vs-sulfonylurea comparison in ~22,000 UK records cutting COPD exacerbations 20%: comparator drift arriving in our own indication.
+2. **Artemyx** — COPERNICOS makes a three-monthly eosinophil count the trigger for *stopping* an inhaled steroid. Second monitoring precedent in five days, and the first where the payer funds the evidence — a third answer to Monday's "whose Phase 3 proves it."
+3. **Clasp + Adventris** — the mRNA industry conceding the hard problem is "scaling out and scaling down," three days after the identical sentence in cell therapy.
+4. **Parkinson's theme** — alpha-synuclein failing, Lilly already priced NLRP3 at $1.2B, and both the analyst and the Parkinson's Foundation name diagnostic latency, not target choice, as the constraint. Third instance in two weeks of the selection rule.
+
+**Candidate funnel.** Sources swept: BioSpace homepage + latest-news + business/deals/fda/drug-development indexes, BioPharma Dive, Endpoints index, GEN, JHTV news, BioBuzz; targeted searches on ERS COPD late-breakers, tozorakimab, GPR52/Nxera, hearing-loss gene therapy, AAV holds, autoimmune T-cell engagers, Sept 5–8 financings. 12 candidates dedup-filtered across two passes → 12 fresh, 0 already shipped.
+
+*Source failures:* **fiercebiotech.com** blocked at `r.jina.ai` (`AbuseAlleviationError`, anonymous access suspended until 10:11 UTC) and 403 on direct WebFetch — contributed nothing. **ajmc.com** 403s both channels, so COPERNICOS detail was rebuilt from search extracts plus the published protocol paper and flagged as such in show notes. **medicalxpress.com** returned ~300–500-byte proxy errors twice (used News-Medical's account instead). The `r.jina.ai` cache of `endpoints.news/news/` was ~4 days stale.
+
+*Rejected:* tozorakimab FRONTIER-4 ERS proteomics (on-theme, failed the full-text gate — AJMC 403); Beeline Medicines' $300M Series A (stale, April 2026); Altesa/Trevi respiratory items and the Benelux, CDMO and AI-opinion features (no programme line); TScan layoff tracker (dedup, shipped 09-04); JHTV's one new post (Occuli machine vision — off-thesis).
+
+One thing to flag: I used the tozorakimab Phase 3s as **established context only**, not as a fresh event — the toplines are March 27 and April 20, and the full OBERON/TITANIA numbers are still not public as of this run, so no ERS effect size is asserted anywhere in the script. That gap is now a tracked open item.
+=== 2026-09-08T02:36:10-07:00 done  blackbird-brief (exit 0) ===
