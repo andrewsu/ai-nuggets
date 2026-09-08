@@ -4260,3 +4260,35 @@ Episode published (SKIP_TTS mode — script + stubs written, no TTS/commit; the 
 
 One editorial note worth flagging: this is the second EHR-agent episode in four days. The finding is genuinely distinct from MedCP's and directly contradicts part of it, which is why I ran it, but if that adjacency isn't what you want I'd rather know than keep guessing — the runners-up (the model-retirement reproducibility paper, or MErlin's agent-skill-as-software-distribution angle once it renders) would have taken the show somewhere else.
 === 2026-09-07T02:09:48-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-08T02:00:13-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, the feed edit, and the commit, and wrote the two transient stubs for `publish_pending.py` instead.
+
+**Published (pending batch TTS):** `2026-09-08-merlin-toolkit-as-agent-skill`
+- Script: `podcasts/biomedical-agentic-ai/scripts/2026-09-08-merlin-toolkit-as-agent-skill.md` — 1067 words spoken body (cap 1150; in line with the last three episodes at 980–1047 → 276–305 s)
+- Stubs: `.rss-item.xml` (validated as XML with the `itunes` namespace bound; `__LENGTH__`/`__DURATION__` placeholders in place), `.commit-msg`
+- Pick: *From code to natural language: MErlin — a multiomics toolkit for bacterial epigenomics delivered as Claude agent skill*, bioRxiv v1 posted 2026-09-06, `10.64898/2026.09.02.748773` (prefix confirmed against the details API). Full text read in full via `r.jina.ai` on the `.full.pdf` URL, 65 KB / 19 pages.
+
+**Candidate funnel**
+
+- **bioRxiv** — day-by-day sweep 09-05…09-08, 357 records fetched, 253 version-1 in-window; 12 survived the keyword filter, 6 substantive after discarding spurious "agent" hits (DNA-damaging agents, autonomous thyroid nodules, causal agent of clubroot):
+  - **MErlin — multiomics toolkit as a Claude agent skill** — `10.64898/2026.09.02.748773` — **CHOSEN**
+  - Real Science Is Harder Than Benchmarks II (antibody properties, lipid-RNA) — `10.64898/2026.09.03.749176` — rejected: Part I was this show's 2026-06-28 episode, same five frameworks, same conclusion ("confirms and extends"); marginal editorial value
+  - PromptBio: agentic platform for end-to-end computational biomedical research — `10.64898/2026.09.02.748774` — runner-up, but structurally close to several recent episodes
+  - OmniSyn (synthesis-native LLM, proteome-scale generative library) — `10.64898/2026.09.02.748775`
+  - BOTANIC-1 (plant genomic foundation models, agent-callable) — `10.64898/2026.09.04.749355` — plant, weak biomedical fit
+  - InstaNovo-FM (self-supervised proteomics foundation model) — `10.64898/2026.09.03.747733` — not agentic
+  - SPHERE — `10.64898/2026.09.01.748580` — already shipped 09-06
+- **arXiv** — shared cache (500 entries, 09-02…09-04) plus one live listing call (400 entries, also topping out at 09-04 — nothing submitted after Friday is indexed yet, consistent with the Labor Day gap). 188 in-window, 80 keyword hits, 4 substantive:
+  - TruthInsightBench (discovery-vs-reproduction benchmark, 40 blind tasks) — `arxiv.org/abs/2609.05079` — strongest arXiv candidate; deferred, four recent episodes have been evaluation frameworks
+  - Model Retirement Creates Reproducibility Risk in Biomedical AI — `2609.04699` — covered in yesterday's receptor-and-reason
+  - Molecular Déjà Vu (digit-level retrieval) — `2609.05381` — covered in yesterday's receptor-and-reason
+  - Building a research-software catalog with a coding agent — `2609.04711` — too close to yesterday's coding-agent episode
+- **ChemRxiv** — `site:chemrxiv.org` search returned nothing inside the 4-day window (newest relevant hit was 2026-07-28); 0 candidates
+- **PubMed** — `reldate=5`, 829 matches, 400 summaries fetched, 34 after dropping spurious "agent" senses, 2 substantive:
+  - Programmatic access to ICTV virus taxonomy through a public ontology API (GigaScience, `published-online` verified 2026-09-04) — good ontology/open-data fit but no AI or agent component at all
+  - LLM-driven knowledge graph learning for herb-macromolecule interaction (Int J Biol Macromol) — low-signal venue
+- **News / product launches** (3-day window) — nothing net-new on target. The Frontiers in AI EHR-plus-knowledge-graph agent framework surfacing in search is the paper this show shipped on 09-04 as MedCP
+- **Policy / funders** — ARPA-H newest item 09-01 (genetic-medicine manufacturing, no AI angle), NIH newest 09-02 (NLM director appointment); NSF/HHS not reached after those two came back empty in-window. `nih.gov` 403s WebFetch — read via `r.jina.ai`
+
+Why MErlin beat the field: it's the only item whose argument cuts against the field's direction rather than adding to it — keep the implementation fixed and audited and let the model supply request-parsing and refusal, because on-the-fly code "is not reviewed, not versioned, not tested, and not the same twice." That lands as a direct counterpoint to yesterday's Epic-warehouse episode (an agent rigorously self-consistent within a run and inconsistent across runs), and it's the closest anyone has come to the packaging-discipline gap this show flagged in the 2026-06-23 BioNeMo episode.
+=== 2026-09-08T02:09:40-07:00 done  biomedical-agentic-ai (exit 0) ===
