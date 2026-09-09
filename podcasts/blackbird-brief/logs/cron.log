@@ -2357,3 +2357,42 @@ Episode published (SKIP_TTS mode — batch TTS, R2 publish, feed insert and comm
 
 One thing to flag: I used the tozorakimab Phase 3s as **established context only**, not as a fresh event — the toplines are March 27 and April 20, and the full OBERON/TITANIA numbers are still not public as of this run, so no ERS effect size is asserted anywhere in the script. That gap is now a tracked open item.
 === 2026-09-08T02:36:10-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-09T02:10:08-07:00 start blackbird-brief ===
+Episode written and staged for the batch pipeline. `SKIP_TTS=1` was set, so per PIPELINE.md I skipped `gen_tts.py`, `publish_episode.sh`, the `feed.xml` edit and the commit — `publish_pending.py` does those after batch TTS.
+
+**Published artifacts**
+- `podcasts/blackbird-brief/scripts/2026-09-09-portfolio-watch.md` — Portfolio Watch, 2,248 spoken words (≈12 min at this show's measured 188 wpm)
+- `…rss-item.xml` — final values with `__LENGTH__` / `__DURATION__` placeholders; test-splices into `feed.xml` and parses (96 items)
+- `…commit-msg` — single line, `Blackbird 2026-09-09:` prefix
+- `state/shipped.jsonl` — 6 keys appended (60 episodes, 317 items)
+- `memory/blackbird-portfolio.md` — 8 in-place edits, no dated run entries appended
+
+One deviation to flag: the episode runs ~12 minutes against the PROMPT's ~6–9 minute target. That matches recent house practice (09-03 was 2,541 words, 09-07 was 2,415), and trimming to spec would have meant dropping an item with a real portfolio line. Flagging rather than deciding for you.
+
+**Candidate funnel**
+
+| Source | Scanned | Survived relevance filter |
+|---|---|---|
+| BioSpace (latest news + press releases) | 10 dated 09-08/09-09 | 5 |
+| Endpoints News (homepage) | 10 | 3 (bodies paywalled; sourced from primary releases instead) |
+| BioPharma Dive (homepage) | 6 | 2 |
+| Fierce Biotech | 0 — **HTTP 403 from this IP**, no retry attempted (BioSpace/Endpoints/BioPharma Dive carried the same items) |
+| JHTV newsroom (via `r.jina.ai`) | 12 posts | **1 new** since 09-08 |
+| BioBuzz Baltimore/BHCR | 21 posts | 0 new (nothing since 09-04, all already covered) |
+| Lieber Institute newsroom | 4 posts | 0 (silent since 2026-07-21) |
+| Targeted searches: GPR52/Nxera · GJB2 hearing-loss gene therapy · Blackbird/Clasp/Artemyx/Winnow | — | 0 new |
+
+Dedup: 16 candidates → 15 fresh (1 already shipped) against 332 ledger keys. Two more were dropped by hand as **semantic** duplicates the URL filter can't catch — BioSpace's Novo/IL-6 piece (= ziltivekimab, covered 09-07) and its camizestrant FDA-nod piece (covered 09-07 LEAD).
+
+**Shortlist — chosen marked ✓**
+- ✓ **LEAD** Tozorakimab full OBERON/TITANIA at ERS + NEJM — astrazeneca.com press release *(closes yesterday's named open item: eosinophil-low = **−23%**, vs −34% at ≥150 and −43% at ≥300)*
+- ✓ Novartis HARBOR Phase 3 miss, del-desiran — novartis.com media release *(NuGate; MARINA had already shown delivery + DMPK knockdown + splicing correction)*
+- ✓ Amgen DeLLphi-305 OS win, tarlatamab + durvalumab — prnewswire.com *(Clasp; engager safety denominators for Winnow/CERVINO)*
+- ✓ Evommune EVO756 Phase 2b miss in atopic dermatitis — biospace.com *(non-opioid pain theme; the Guan MRGPRX1 JHTV lead)*
+- ✓ JHTV adds a DSAI translational-funding track — ventures.jhu.edu
+- ✓ Crossover rounds / IPO pipeline — biospace.com *(completes the 09-02 three-doors exit map)*
+- ✗ Inhibrx OX40 + Keytruda in head & neck — no portfolio line
+- ✗ Roivant PHocus PH-ILD Phase 2 — no Blackbird programme in PH-ILD
+- ✗ BrainChild Bio $116M pediatric CAR-T · Moonwalk $70M RNAi · Pharvaris HAE · Structure obesity · Sandoz plant · CBER/CDER appointments — off-thesis
+- ✗ "Beyond China: five overseas destinations" — comparator thread worked hard 09-02/03/04, no new number; held for a slower day
+=== 2026-09-09T02:30:00-07:00 done  blackbird-brief (exit 0) ===

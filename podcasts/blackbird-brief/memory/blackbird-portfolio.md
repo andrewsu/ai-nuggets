@@ -121,6 +121,21 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
   load-bearing number is the M&A count — this is a LIQUIDITY YEAR, and Clasp's post-readout financing, Aletira's Series A and the
   GPR52 DC-vs-FIH timing call are all being decided into a window someone should be asking when it closes.** Source:
   https://www.biospace.com/business/biopharma-reverse-mergers-rise-1-600-in-q3-to-rival-ipos
+  - **THE CROSSOVER DOOR GETS ITS VOLUMES, AND THE NAMED CONSTRAINT IS FINANCIALS NOT SCIENCE (added 2026-09-09 Portfolio Watch
+    item 5b; published 2026-09-09).** **PitchBook projects ~$4.22B across ~28 crossover rounds in 2026; 20 biotech IPOs completed
+    YTD vs 8 in ALL of 2025.** Typical crossover→IPO lag **5–6 months**, compressible to **3–4** by well-prepared companies, some
+    recent lags out to **15 months**. **Kailera Therapeutics: $600M Series B crossover (Oct 2025) → record $625M IPO ~6 months
+    later**, already in Phase 3 at IPO. **Eikon Therapeutics: $381M IPO, technically a DOWN round** from a $517M Series B.
+    **Vega Therapeutics** (Sofinnova via Star Therapeutics) **acquired by Incyte for up to $2B** (Jun 2026). **Investor pool is
+    shifting toward sovereign wealth funds and large-pharma venture arms (Sanofi, Lilly)** alongside Fidelity and Janus Henderson.
+    **Maha Katabi (Sofinnova) — the same person behind the reverse-merger argument above:** *"The limiting factor is having your
+    financials in order."* **Ben Zercher (PitchBook):** elevated crossover activity "indicates they're anticipating the IPO window
+    will stay open"; this cohort is **"disciplined"** vs the pandemic's **"frothy"** pace. **READ (Emily Wilkinson + Eddie Cherok):
+    this COMPLETES the three-door map — known relative volumes, and the constraint on the FASTEST door is AUDIT-READY FINANCIALS,
+    the cheapest item on the list to fix and the only one that must be fixed YEARS early, which is exactly the stage Blackbird
+    spinouts are at.** **COMPETITIVE NOTE: Generate:Biomedicines — the COPD/TSLP competitor logged 08-29 — is IN this IPO class and
+    taking GB-0895 to Phase 3. Our competitors are financing through this window.** Source:
+    https://www.biospace.com/business/steady-stream-of-crossover-rounds-stock-biotechs-ipo-pipeline
 
 - **THE BUYER'S PRICE IS ALREADY CAPPED — MOST-FAVORED-NATION AGREEMENTS NOW COVER ~89% OF THE BRANDED MARKET (added 2026-09-01
   Portfolio Watch item 5; announced 2026-08-31).** The administration announced MFN pricing agreements with **nine additional
@@ -176,7 +191,16 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     **Cohen Translational Engineering Fund** (Whiting School of Engineering),
     **Louis B. Thalheimer Fund for Translational Research** (university-wide
     proof-of-concept/validation), **Zizic Translational Fund** (first cycle
-    2026, biomedicine-weighted). Award announcements name PI, department, and
+    2026, biomedicine-weighted), and — **NEW as of 2026-09-08 (logged 2026-09-09)** — a **DSAI track** run with the **Johns
+    Hopkins Data Science and AI Institute**, opened with the **Fall 2026 cycle**: one streamlined application across multiple
+    funding sources, milestone-driven awards, and a package including **research engineering and staff support** as well as money,
+    for proof-of-concept, prototype development and technical validation across all JHU disciplines. **SCREEN TO APPLY (Yixuan Qiu
+    + Esther Park): the DSAI track explicitly funds BROADER-IMPACT outcomes — open-source tools and DATA PRODUCTS — alongside
+    licensing, startups and partnerships, so it will produce excellent awardees whose IP position is DELIBERATELY NON-EXCLUSIVE by
+    the time we meet them. Sweep it AND screen for exclusivity.** (Virginia Burger): this is where AI-adjacent Hopkins work
+    surfaces first.
+    https://ventures.jhu.edu/news/johns-hopkins-expands-translational-funding-program-with-new-support-for-data-science-and-ai-innovation/
+    Award announcements name PI, department, and
     project before publication — **put the announcement page on a standing
     sweep** (https://ventures.jhu.edu/news/). **Reach it via `r.jina.ai/<url>` —
     both `ventures.jhu.edu` and `hub.jhu.edu` 403 a direct fetch, which produced a
@@ -185,7 +209,23 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     applications, amounts not disclosed. SOURCING LONGLIST; two hit named Blackbird
     program themes:** **Yun Guan, MD PhD** (Anesthesiology & Critical Care Medicine,
     Zizic) — **MRGPRX1 allosteric modulators for non-addictive pain relief** ⇒ direct
-    hit on the *non-opioid pain management* pre-spinout theme; **Jonathan Schneck, MD
+    hit on the *non-opioid pain management* pre-spinout theme. **THE FAMILY NOW HAS CLINICAL DATA, AND IT SPLITS BY AXIS (added
+    2026-09-09 Portfolio Watch item 4).** **Evommune's EVO756**, a **first-in-class ORAL MRGPRX2 antagonist**, has now failed
+    **two** Phase 2b trials in one summer: **chronic spontaneous urticaria** (missed primary at week 12, indication discontinued)
+    and **atopic dermatitis (NCT07150845; 121 adults, moderate-to-severe, 12 weeks, primary = % change in EASI at week 12 —
+    MISSED at EVERY dose, secondaries no better, indication dropped)**. Well tolerated throughout; **the ONE indication Evommune
+    keeps is MIGRAINE PROPHYLAXIS.** MRGPRX2 is expressed on **mast cells AND peripheral sensory neurons** — **the
+    MAST-CELL/inflammation axis lost twice and the NEURONAL axis is the one that survived, which is Guan's axis.** **TWO
+    CONSEQUENCES, OPPOSITE DIRECTIONS (Esther Park + Avi Khanna). Against: the family carries two Phase 2b failures on the public
+    tape, so any Mas-related-GPCR partner conversation now opens with a question that did not exist before — and the correct
+    answer (X1 ≠ X2, different ligands; allosteric modulation toward analgesia ≠ antagonism of degranulation; neither failure
+    touches the pain hypothesis) is DEFENSIVE, and defensive answers cost money in diligence. For: a competitor spent two Phase 2b
+    trials establishing that this family's INFLAMMATION story is weak and is now pointing its remaining capital at a neuronal,
+    pain-adjacent indication — convergent evidence for the thesis, free. ACTION (sharpened, not changed): when the Guan work goes
+    up, slide one is WHY X1 IS NOT X2 and slide two is a competitive map that INCLUDES A MIGRAINE PROGRAMME, because that is where
+    the family's clinical money now sits.** Sources:
+    https://www.biospace.com/press-releases/evommune-announces-top-line-results-from-evo756-phase-2b-trial-in-moderate-to-severe-atopic-dermatitis ·
+    https://clinicaltrials.gov/study/NCT07150845 ; **Jonathan Schneck, MD
     PhD** (Pathology, Zizic) — **in-vivo CAR-T generation via targeted polymeric mRNA
     nanoparticles for autoimmune therapy** ⇒ Winnow adjacency. Remainder: **Susanna
     Thon** (ECE, Cohen — photoelectrochemical carbon capture), **Zongwei Zhou** (CS +
@@ -281,7 +321,7 @@ _Last update: 2026-08-28_
 company Blackbird BioVentures invested in, not a Blackbird-incubated project.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-09-08_
+_Last update: 2026-09-09_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases (Blackbird funded the **Intergalactic Center for
@@ -326,8 +366,8 @@ https://www.tedcomd.com/news-events/press-releases/2026/tedco-invests-750000-ast
     https://www.genengnews.com/topics/translational-medicine/micro-bladder-model-demonstrates-how-phage-therapy-could-help-to-reduce-recurrent-utis/ ·
     paper https://doi.org/10.1038/s41467-026-76589-y
 
-**COPD theme — the UPSTREAM ALARMIN LAYER IS CONTESTED AT FOUR POINTS ON ONE PATHWAY, and every differentiator on offer is a PROPERTY or a POPULATION, never a target
-(opened 2026-08-29 Portfolio Watch item 4; four-seat map added 2026-09-08 Portfolio Watch LEAD).** Two independent wins for the epithelial alarmin
+**COPD theme — the UPSTREAM ALARMIN LAYER IS CONTESTED AT FOUR POINTS ON ONE PATHWAY; the two differentiators on offer were a PROPERTY or a POPULATION, and as of 2026-09-09 the POPULATION lane is TAKEN
+(opened 2026-08-29 Portfolio Watch item 4; four-seat map added 2026-09-08 Portfolio Watch LEAD; full tozorakimab dataset + eosinophil gradient added 2026-09-09 Portfolio Watch LEAD).** Two independent wins for the epithelial alarmin
 **TSLP** in a single week across two organs: **Tezspire (tezepelumab) Phase 3 CROSSING in
 eosinophilic esophagitis** (2026-08-27) and **Generate Biomedicines' GB-0895 / golukibart**
 Phase 1b in **COPD** (posters inadvertently published on the **ERS 2026** website 2026-08-25,
@@ -350,9 +390,24 @@ https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentall
     exacerbations: **OBERON + TITANIA** (topline **2026-03-27**, replicate double-blind placebo-controlled, **2,306 randomized**,
     **300 mg q4w**, 52 weeks) and **MIRANDA** (topline **2026-04-20**, **1,454 randomized**, **300 mg q2w**, 52 weeks); LTE
     **PROSPERO**, **1,713 randomized**, primary = **severe** exacerbations only over **104 weeks**. All enrolled **irrespective of
-    blood eosinophil count, irrespective of smoking status, across all lung-function severity stages**, and the effect held in
-    former smokers (primary population) **and** in the overall population including current smokers. Chief investigator **Frank
-    Sciurba** (Pittsburgh). **>5,400 patients randomized on this pathway and NOT ONE exacerbation rate ratio disclosed.**
+    blood eosinophil count, irrespective of smoking status, across all lung-function severity stages**. Chief investigator **Frank
+    Sciurba** (Pittsburgh).
+    **FULL OBERON/TITANIA DATASET RELEASED 2026-09-09** (ERS oral presentation 6571, final day of congress; **published
+    simultaneously in the *New England Journal of Medicine***), which CLOSES the "not one rate ratio disclosed" gap logged 09-08.
+    **Primary population (former smokers): moderate + severe exacerbations −29% (OBERON) and −34% (TITANIA). Overall population
+    (current + former smokers): −30% and −29%.** Safety: tolerability favourable vs placebo, **injection-site reactions the ONLY
+    identified adverse drug reaction**. Separate ERS poster: reduces the number of lung segments with **mucus plugs** in the
+    integrated analysis.
+    **THE GRADIENT, AND IT IS THE COMMERCIALLY LOAD-BEARING RESULT — pooled eosinophil subgroup analysis: BEC <150 cells/µL
+    −23%; BEC ≥150 −34%; BEC ≥300 −43%.** ⇒ **"Works irrespective of eosinophils" is TRUE as a statistical claim and MISLEADING
+    as a commercial one.** Every prior COPD biologic needed eosinophil selection to show an effect at all; this one does not —
+    but the bottom-stratum patient gets **roughly half** the benefit of the top-stratum patient, and that stratum is a large
+    share of the COPD population and exactly the share the type-2-high drugs never served.
+    **CANDID LIMIT + STANDING ACTION (Avi Khanna): the subgroups are POOLED and POST HOC and the confidence intervals are not in
+    hand. The load-bearing number is NOT the −23% point estimate — it is whether the INTERACTION TEST on eosinophil count is
+    significant.** Significant ⇒ the gradient is real biology and the eosinophil-low patient is a distinct target. Not
+    significant ⇒ one effect size with noise across strata, and there is no residual population to build on. **Read the NEJM
+    paper for that one number.**
     **IL-33 RECEPTOR (ST2) — Mabwell (Shanghai; 688062.SH, 02493.HK), 9MW1911, presented 2026-09-04.** Phase Ib/IIa
     (9MW1911-C03), randomized double-blind placebo-controlled dose escalation, **80 participants**, IV **100/300/600/900 mg q4w**,
     former smokers with moderate-to-severe COPD, **most with eosinophils ≤300 cells/µL**. **Annualized moderate-to-severe
@@ -374,6 +429,12 @@ https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentall
     differentiator must be **a property none of the four holds** (route, interval, cost of goods) or **a position DOWNSTREAM of
     where all four converge**. The 08-29 question is unchanged and now urgent: **which property, and does it earn a line on the
     label.**
+    **AND AS OF 2026-09-09 THE *POPULATION* LANE IS CLOSED — one of the two differentiators on offer is spoken for.** AstraZeneca
+    took **all-comers, in NEJM, with replicate Phase 3s**. So the population claim can no longer be a Blackbird differentiator; it
+    can only be a **residual** one. **THE RESIDUAL IS THE POSITION: the eosinophil-low patient (BEC <150) who is now TREATED and
+    only MODESTLY HELPED at −23% on top of best available therapy.** That is a defined, measurable, underserved population rather
+    than a rhetorical one, and as of this writing it is **the only unowned position on the alarmin pathway**. It is contingent on
+    the interaction test above — verify before it goes in a deck.
     **AND A COMPARATOR PROBLEM, NOT AN ALARMIN PROBLEM (ERS, 2026-09-07).** **Chloe Bloom (National Heart & Lung Institute,
     Imperial College London)**, presented by **Bohee Lee**: **four parallel observational studies in UK electronic medical records,
     20,000–22,000 participants each, GLP-1 receptor agonist vs SULFONYLUREA as active comparator — ~40% fewer asthma attacks and
@@ -1363,7 +1424,7 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-09-06_
+_Last update: 2026-09-09_
 - **CAUSAL-VS-CORRELATED RULE — the second half of the biomarker instruction (added 2026-09-06
   Portfolio Watch LEAD; event 2026-09-04).** **Lp(a)HORIZON**: Novartis/Ionis **pelacarsen**, a
   GalNAc-conjugated ASO against apolipoprotein(a), lowered Lp(a) by **~80% in 8,323 patients**
@@ -1382,6 +1443,34 @@ _Last update: 2026-09-06_
   failure modes in one week, none of them chemistry. Sources:
   https://www.globenewswire.com/news-release/2026/09/04/3356808/0/en/novartis-announces-lp-a-horizon-phase-iii-topline-results-for-pelacarsen-in-patients-with-elevated-lp-a-and-established-cardiovascular-disease-cvd.html ·
   https://www.biopharmadive.com/news/novartis-ionis-pelacarsen-lpa-horizon-study-results-fail/829736/
+- **THE INSTRUMENT RULE — the companion to the causal-vs-correlated instruction above, and the fourth antisense failure mode in
+  two weeks (added 2026-09-09 Portfolio Watch item 2; announced 2026-09-08).** **Novartis's Phase 3 HARBOR MISSED** for
+  **del-desiran** (delpacibart etedesiran, ex-AOC 1001) — an **antibody-oligonucleotide conjugate**: humanized antibody against
+  **transferrin receptor 1 (TfR1)**, heavily expressed on muscle, conjugated to an **siRNA against DMPK**, the gene whose expanded
+  repeat causes **myotonic dystrophy type 1**. **HARBOR (NCT06411288): ~150 participants, randomised double-blind
+  placebo-controlled, q8w dosing over 54 weeks, primary endpoint = video hand-opening time (vHOT)**, a measure of hand myotonia —
+  **no separation**; "evidence of clinical activity" claimed in unspecified secondary/exploratory measures. **Novartis −12/13%;
+  Dyne Therapeutics −22%** on read-through even though its **z-basivarsen** inherits frontrunner status; **Oppenheimer: a "$12B
+  disappointment"** (the whole Avidity acquisition price); **Cantor's Eric Schmidt cut Dyne's PoS 50% → 25% citing MEASUREMENT
+  VARIABILITY IN THE HAND-RELAXATION ENDPOINT ITSELF**; **Jefferies' Michael Leuchten** on Novartis diligence and BD approach.
+  **THE LOAD-BEARING PRIOR: Phase 1/2 MARINA had ALREADY shown dose-dependent siRNA delivery INTO MUSCLE, reduced DMPK mRNA, AND
+  improved RNA missplicing** — the disease's actual molecular pathology, corrected. **So the conjugate reached the tissue, the
+  target was engaged, the splicing defect moved, and the functional endpoint did not.**
+  **WHY THIS IS THE WORST OF THE FOUR (Jon Robbins + Avi Khanna): here the causal chain is as good as it gets** — repeat expansion
+  → toxic RNA → drug degrades it → splicing corrects. Set beside **comparator drift** (08-29, CARDIO-TTRansform), **endpoint
+  selection** (09-03/09-04) and **correlated-not-causal target** (09-06, pelacarsen): four distinct antisense failure modes in two
+  weeks, **none of them chemistry**. ⇒ **NEW RULE, a companion to the causal-vs-correlated answer rather than a replacement:
+  before the biomarker plan is drafted, answer whether the CLINICAL INSTRUMENT we will be judged on can register the effect size we
+  expect at the sample size we can afford. NfL proves target engagement; del-desiran proves you can engage the target, correct the
+  molecular defect, and still lose to a video camera timing how fast a hand opens.**
+  **SECOND READ (Eddie Cherok + Matt Tremblay) — the buy side.** The asset that failed was **a platform company with proprietary
+  delivery technology and a lead already in Phase 3** — the most de-risked thing on the shelf — **at $12B**. That is the far end of
+  the barbell from the $45M/$75M/$110M ex-US platform upfronts in §1, and it just got harder to defend internally. **A corp-dev
+  group that watched this will ask about the clinical instrument before the mechanism.** **THIRD READ (Anthony Accorsi): del-brax
+  (FSHD) and del-zota (DMD) remain inside the $12B package and both are muscle — watch whether Novartis frames this as an ENDPOINT
+  problem or a PLATFORM problem, because that call reprices conjugate-mediated muscle delivery for everyone.** Sources:
+  https://www.novartis.com/news/media-releases/novartis-provides-update-delpacibart-etedesiran-del-desiran-phase-iii-harbor-study-treatment-myotonic-dystrophy-type-1-dm1 ·
+  https://www.biospace.com/drug-development/novartis-12b-avidity-acquisition-hits-phase-3-speedbump-as-dystrophy-drug-disappoints
 - **What:** Oligonucleotide-based medicine (**ASO**) against a highly
   sought-after target profile that could treat **all forms of ALS and FTD**.
 - **Science:** leverages biology pioneered at JHU across decades and multiple
@@ -1836,6 +1925,32 @@ _Last update: 2026-08-28_
   target-density item (§4, added 2026-09-05), and there is an investigator four miles from the BioHub with eight years on the
   degradation biology of this exact mutant. ACTION (Avi Khanna + Jon Robbins): take the meeting; want the answer whichever way it comes
   out.** Padmanabhan's current programme is the **USP15–ZNF217 loop in ovarian cancer** — see his entry in §2b.
+- **THE CEILING AND THE BAR MOVED IN THE SAME ANNOUNCEMENT — an off-the-shelf engager won OVERALL SURVIVAL in FIRST-LINE
+  MAINTENANCE (added 2026-09-09 Portfolio Watch item 3; announced 2026-09-08).** **Amgen's Phase 3 DeLLphi-305** met its primary
+  endpoint: **tarlatamab (Imdelltra, DLL3 × CD3 T-cell engager) + durvalumab vs durvalumab alone as FIRST-LINE MAINTENANCE** in
+  extensive-stage SCLC **whose disease had NOT progressed** after durvalumab + platinum + etoposide. **563 patients randomised
+  1:1**; **OS met at pre-specified interim**, secondary **PFS and ORR also met**; **magnitudes NOT disclosed** — detail promised at
+  an unnamed congress. Step-up dosing **1 mg C1D1, 10 mg D8 and D15, then q2w**; treated and untreated asymptomatic **brain
+  metastases allowed**. **Jay Bradner** (EVP R&D); **Jacob Sands** (Dana-Farber): "among the most compelling survival results I
+  have witnessed in my career." DLL3 is on **85–96% of SCLC cells**, minimally on healthy tissue.
+  **READ (Hemaka Rajapakse) — CEILING RAISED: the class entered solid tumours as third-line salvage and now has a randomised OS
+  win in patients who are STILL RESPONDING. A vial, made once. This is the best available proof point for the COMMERCIAL FORM
+  Clasp sells, and it landed the same week the industry conceded in public that the individualised route is a manufacturing
+  problem (09-08 item 3).**
+  **BAR RAISED, AND THE CANDID HALF: DLL3 is a LINEAGE antigen; Clasp's target is a MUTANT PEPTIDE on a single HLA allele. This
+  validates the MODALITY and the COMMERCIAL FORM and NOT the specificity thesis — do not let it be used as if it did. And once the
+  class holds an OS win in first-line maintenance off a lineage antigen, a mutant-peptide engager must state WHAT THE SPECIFICITY
+  BUYS: tolerability permitting higher/longer dosing, or access to tumours with NO lineage antigen. "More specific" now has to cash
+  out in a number.**
+  **ENGAGER SAFETY DENOMINATORS (Jon Robbins — arrives ahead of the Glasgow CERVINO dataset). Pooled safety population n=473:
+  CRS 57% (268/473)** — G1 39%, G2 15%, **G3 1.7%, G4 0.2%**; **recurrent CRS 24%**. **Neurologic toxicity 65%, ≥G3 7%, fatal
+  0.2%; ICANS signs/symptoms 10%**, recurrent 1.5%. Post-infusion monitoring 1–2 h (6–8 h in Europe) on C1D1 and C1D8. **READ:
+  this is MAINTENANCE therapy in NON-PROGRESSING patients and two-thirds get some neurologic toxicity — the price the field has
+  decided is payable for an engager survival benefit. Carry it into CERVINO (IMS Glasgow 09-23/26) and into the WINNOW TPP, where
+  the question is harder because autoimmune patients are not dying of cancer.** **OPEN ITEM: when Amgen presents the detail, pull
+  the OS hazard ratio and the brain-metastasis subgroup contribution.** Sources:
+  https://www.prnewswire.com/news-releases/imdelltra-in-combination-with-imfinzi-demonstrated-landmark-improvement-in-overall-survival-in-first-line-extensive-stage-small-cell-lung-cancer-302872305.html ·
+  https://www.stocktitan.net/news/AMGN/imdelltra-in-combination-with-imfinzi-demonstrated-landmark-cl32oehz2rm7.html
 - **Watch:** GUARDIAN-101 (p53 R175H) Phase 1 monotherapy readout (2026); SENTINEL-101 (KRAS
   G12V) progression; competing neoantigen/pHLA-directed TCEs; Third Rock signaling.
 - **MARKET-CONDITION READ, NOT A CATALYST (2026-08-22 Portfolio Watch, third read on the lead item):**
