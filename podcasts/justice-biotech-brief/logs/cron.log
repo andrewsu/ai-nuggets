@@ -3013,3 +3013,29 @@ Files: `.md` (1,266 words), `.rss-item.xml` (XML validated, `__LENGTH__`/`__DURA
 
 Two full-text-access notes worth flagging: the chosen paper was rescued by a **third fetch route** — the abstract page's own `content/biorxiv/early/2026/09/07/<id>.full.pdf` link — after `.full` returned abstract-only chrome and `v1.full.pdf` returned Cloudflare 429s twice. That's now in `reference_biorxiv_pdf_via_jina.md`, and it's the first thing to try on the endothelin deferral next run.
 === 2026-09-08T02:49:26-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-09T02:40:08-07:00 start justice-biotech-brief ===
+Published today's episode (batch mode — `SKIP_TTS=1`, so script + stubs only; the orchestrator handles TTS, R2, feed, and commit).
+
+**Episode:** `2026-09-09-tarlatamab-dellphi-305-dll3-cd3-first-line-maintenance-os`
+**Pick:** Amgen's DeLLphi-305 Phase 3 interim (announced 09-08, 1:53pm ET) — tarlatamab + durvalumab vs durvalumab alone as first-line maintenance in ES-SCLC. 563 patients, OS primary met at pre-specified interim, PFS and ORR also met, **no numbers disclosed**.
+
+Editorial spine: it's the first clean read on a CD3 bispecific in a solid tumor where the T cell compartment *hasn't* been through years of salvage; the arithmetic win that only ~40% of these patients ever reach second line; the monitoring window cut from the label's 22–24h in-facility plus 48h-near-hospital down to 1–2h with no new safety signals; the unrun comparison against IMforte's lurbinectedin+atezolizumab maintenance (PFS HR 0.54, OS HR 0.73, but 38% vs 22% grade 3–4 from myelosuppression) where tarlatamab's edge is orthogonal toxicity; and no DLL3 criterion anywhere in the NCT06211036 eligibility — one day after the DLL3-biomarker episode.
+
+Files written: `.md` (1,184 words), `.rss-item.xml` (validated, `__LENGTH__`/`__DURATION__` placeholders), `.commit-msg`.
+
+**Candidate funnel**
+
+- **bioRxiv** (09-07/08/09, details API day-by-day): 458 unique records (201/238/19) → 27 keyword hits → **0 new on-target**. All spurious (`checkpoint` = cell-cycle, `jak` = JAK/STAT basic biology, `cd3` = CD3 as a gene name, `adc`/`tce` as substrings, `vegf` in CNS/ophthalmic biology). The one squarely on-target hit was the tarlatamab DLL3 preprint already shipped 09-08.
+- **Deferred-list retest:** endothelin receptor blockade + CAR T (`10.64898/2026.09.02.748239`) **RESOLVED** — 112,559 bytes / 45 pages with real Results/Discussion via the *plain* `.full.pdf` path (the `early/` path 429'd again). Full text in hand, **unshipped, live for the next run**; it lost on event size only. Aging out ~09-12 on the 2-day window.
+- **News** — all live and current: Endpoints (index only; article bodies paywalled even via jina), BioSpace, BioPharma Dive, Clinical Trials Arena. `fiercebiotech.com` 677 bytes and `fiercepharma.com` 8,613 bytes of nav-only chrome via `r.jina.ai` — **blocked today**, one retry each, skipped.
+- **Policy/funder:** ARPA-H newest 09-08 (off-target), NIH newest 09-02, both scanned, nothing on-beat.
+
+On-target shortlist:
+- **Tarlatamab + durvalumab, DeLLphi-305 1L-maintenance ES-SCLC OS win** — amgen.com/newsroom/press-releases/2026/09/imdelltra-in-combination-with-imfinzi… — **CHOSEN**
+- Arlocabtagene autoleucel, GPRC5D CAR-T, Phase 2 QUINTESSENTIAL topline in r/r myeloma — clinicaltrialsarena.com/news/bms-positive-data-quintessential-study/ — runner-up, lost on event size
+- INBRX-106, hexavalent OX40 agonist + pembrolizumab beats pembro alone in head & neck — biospace.com (09-08)
+- BrainChild Bio, $116M for pivotal pediatric brain tumor CAR-T — endpoints.news (09-08)
+- Endothelin receptor blockade potentiates adoptive T cell and CAR T therapies — biorxiv.org/content/10.64898/2026.09.02.748239v1 — resolved deferral, deferred again
+
+Two source-access lessons worth flagging, both saved to memory: `grep -c '^## '` returns **0** on a fully-rendered jina PDF extraction (no markdown headings in PDF text) — that diagnostic only applies to `.full` HTML, and it nearly cost the endothelin deferral another day. And corporate newsroom index pages are the reliable bridge from a paywalled Endpoints headline to a citable primary source: Amgen's release carried the label's monitoring requirements and the reference list that supplied the IMforte citation, neither of which the trade coverage had.
+=== 2026-09-09T02:50:17-07:00 done  justice-biotech-brief (exit 0) ===
