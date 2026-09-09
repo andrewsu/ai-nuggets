@@ -4261,3 +4261,52 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I stopped after the sc
 
 **One correction during the run:** I initially included the vornorexant-vs-lemborexant network meta-analysis (`10.1093/ijnp/pyag047`). It had been correctly dropped by the dedup filter as a 09-05 pick, but I re-introduced it later from a PubMed metadata call and never re-checked it; `--append` caught it. I removed it from the script and RSS stub, renumbered, and repaired the ledger line I had just written (validated every line parses before swapping the file). The item count went 13 → 12. I've recorded the trap — items entering *after* the batch filter are unguarded, so re-filter the final roster, not just the candidate sweep.
 === 2026-09-08T03:22:14-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-09T02:50:08-07:00 start receptor-and-reason ===
+Episode script and publish stubs are written. Here's the run record.
+
+**Published (SKIP_TTS mode — script + stubs only, no TTS/R2/feed/commit; orchestrator will finish):**
+- `podcasts/receptor-and-reason/scripts/2026-09-09-receptor-and-reason.md` (3,223 words ≈ 13–15 min, 12 items)
+- `podcasts/receptor-and-reason/scripts/2026-09-09-receptor-and-reason.rss-item.xml` (validates as XML, both placeholder tokens present, validated against an inserted-into-feed parse)
+- `podcasts/receptor-and-reason/scripts/2026-09-09-receptor-and-reason.commit-msg`
+- Ledger appended: 12 keys → 110 episodes, 1,125 items
+
+**Candidate funnel**
+
+bioRxiv + medRxiv details API, day-by-day 09-02→09-09, full collections with cursor paging:
+- Scanned 1,843 records (bioRxiv 1,355: 95/448/210/61/83/201/238/19; medRxiv 488: 83/70/78/15/23/110/109/0)
+- 265 survived the v1-only + CNS-pharm/agentic relevance filter → **244 fresh, 21 already shipped**; 110 in the tight neuro/psychopharm slice
+
+Crossref journal sweep (21 target journals, `from-created-date:2026-09-02`):
+- 227 journal-articles; 103 after dropping front matter and off-topic → **93 fresh, 10 already shipped**
+- `Clin Pharmacol Ther` and `Drug Discovery Today` returned HTTP 429 on the first pass at 5 workers; both succeeded on retry
+
+arXiv (shared daily cache, 500 entries):
+- Cache covered only **09-06 to 09-08** (189/226/85) — the 500-entry cap ate 09-02→09-05, which the 09-07/09-08 episodes had already mined. 116 items passed the bio × agentic filter, 0 dedup hits, none Tier-1 competitive. Logged as a recall gap, not retried.
+
+Full text: 15 fetches attempted, **13 succeeded** (29–148 KB of real body). Two failed on a mechanism worth naming — bioRxiv served an HTML PDF-viewer wrapper, so `r.jina.ai` returned a ~305-byte "iframe hidden" reply on 12 spaced retries; `x-with-iframe` needs a paid key, cache-busting and the `early/` path give the same wrapper, and the `.full` HTML route answered normally throughout, so this was *not* throttling. Both are deferrals, recorded in memory.
+
+**Shortlist and picks** (✓ = shipped today)
+
+| Item | Source |
+|---|---|
+| ✓ Transition intermediates encode ligand efficacy at MOR–Gi — **LEAD** | biorxiv 2026.09.02.748988 |
+| ✓ MEL-steered PharmacoNet, synthon docking prescreen | biorxiv 2026.09.02.748684 |
+| ✓ Grin2c and the cocaine engram in mPFC | biorxiv 2026.09.03.749214 |
+| ✓ IntA/EA cocaine attenuate cocaine-vs-food choice | Neuropsychopharm 10.1038/s41386-026-02542-8 |
+| ✓ Xylazine reshapes chronic fentanyl sleep/respiration | biorxiv 2026.09.02.748951 |
+| ✓ Semaglutide brainstem→hypothalamus circuits | biorxiv 2026.09.04.749561 |
+| ✓ Education + APOE ε4 vs GLP-1/dementia confounding | medrxiv 2026.09.04.26362304 |
+| ✓ EAAT3 overexpression and executive dysfunction | biorxiv 2026.09.03.749220 |
+| ✓ Habenular cell-subtype transcriptomics across defeat phenotypes | Mol Psychiatry 10.1038/s41380-026-03843-6 |
+| ✓ Acute LSD → hippocampal control of DMN reorganisation | biorxiv 2026.09.03.748807 |
+| ✓ Who is reached by Oregon supervised psilocybin services | medrxiv 2026.09.03.26362170 |
+| ✓ bioq, agent-native CLI over 38 drug-discovery tools | biorxiv 2026.09.03.749148 |
+| **deferred** — Gpr12 thalamic lipid GPCR / anandamide / working memory (Rockefeller) | biorxiv 2026.09.03.749183 |
+| **deferred** — DMS GABA dynamics reshaped by semaglutide | biorxiv 2026.09.03.749293 |
+| read, cut for length — 20-Hz tTIS striatal Glx (primary endpoint p=0.066) | biorxiv 2026.09.02.749008 |
+| read, dropped as duplicative of bioq — BioMCP-TS | biorxiv 2026.09.03.749120 |
+| dropped, abstract-only — LLM assistance & physician decisions, multi-country RCT | npj Dig Med 10.1038/s41746-026-03111-5 |
+| dropped, no body — antipsychotic metabolic dysregulation in youth | Nat Ment Health 10.1038/s44220-026-00721-6 |
+
+The Gpr12 preprint is the one to grab the day it renders — cryo-EM of a thalamic orphan receptor with anandamide as the endogenous ligand and cAMP suppression that tracks working-memory duration is a lead item, and it lost today only to a retrieval failure.
+=== 2026-09-09T03:14:30-07:00 done  receptor-and-reason (exit 0) ===
