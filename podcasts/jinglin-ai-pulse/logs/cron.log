@@ -2604,3 +2604,31 @@ Source failures:
 - **z.ai GLM-5.3-Flash blog — r.jina.ai returned an unrelated cached document**, and a direct curl returned 604 bytes of shell. GLM-5.3-Flash's specs (MIT, 320B/18B active, 1M context, Aug 26) verified via WebSearch across four secondary sources; the benchmark figures verified against Z.ai's own model guide at docs.z.ai.
 - One unverified HN claim dropped: that Mistral now hosts GLM-5.2. Could not confirm; not in the script.
 === 2026-09-08T02:39:51-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-09T02:30:08-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so I followed batch mode: script plus the two transient stubs, no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-09-the-rumor-was-the-prompt.md` — 3,149 spoken words (~15.4 min at this show's measured 3.4 words/sec; recent episodes ran 13.7–17.6 min)
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-09-the-rumor-was-the-prompt.rss-item.xml` — parses clean, both placeholder tokens present
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-09-the-rumor-was-the-prompt.commit-msg`
+
+**Episode**: "The Rumor Was The Prompt." Twitter Pulse is the Navier–Stokes affair read as three documents in sequence — Buckmaster/Alpöge's Lean-verified forced-blowup results with credit handed to Córdoba and Martínez-Zoroa; Buckmaster's four-page account of the Sunday call with Bubeck (plus Bubeck's "false and inflammatory" rebuttal); and OpenAI's own post confirming the effort launched on Sept 1 *in response to the rumor*, ran ~10,000 concurrent agents and ~300B output tokens, and cannot rule out that de-identified usage data helped train the model. I verified the technical caveat against Fefferman's official Clay PDF: statements (A)/(B) require `f ≡ 0` while (C)/(D) permit a smooth forcing term, so the "leeway clause" resolves the prize without touching the unforced question. Then Tao's three-day arc (bounded-gaps counterfactual → ETP opportunity cost → non-renewable-resource thread). Money Moves is Cognition. Deep Cut pairs Anandkumar's Latent Space episode with her group's unforced-Euler PINN result posted 12 days later, which Tao independently called "AI-light."
+
+**Candidate funnel**
+
+- **Hacker News front page** — 70 stories scanned, 12 AI-relevant. Shortlist:
+  - ✅ *On the Navier–Stokes Millennium Prize Problem* (1,259 pts / 1,005 comments) — openai.com/index/navier-stokes-solution/ — **CHOSEN, lead**
+  - ✅ *Navier-Stokes – Tristan Buckmaster [pdf]* (1,653 pts / 701) — cims.nyu.edu/~tristanb/statement.pdf — **CHOSEN**
+  - ✅ *Tao: Open math problems being non-renewably mined by AI* (362 pts / 318) — **CHOSEN**
+  - ✅ *I resigned from Anthropic today* (562 pts / 735) — **CHOSEN, coda** (via Politico + WSJ headline; X post itself unreadable)
+  - ✗ *Muse – Meta's personal AI agent* (500 pts) — product launch, no intellectual substance per brief
+  - ✗ *AlphaGenome Atlas* (560 pts) — strong Ollie fit, drafted then cut for length; worth picking up
+  - ✗ *Mercury 2.5*, *Kimi K3 at 1 tok/s off four SSDs*, *Qwen3.8 quantization benchmarks*, *ChatGPT Images 2.5*, *Codex + quantum computing*, *AI Has a Discovery Problem* — real but dominated
+  - ✗ *Dan Luu agentic testing* (183 pts) — shipped 09-08
+- **Mastodon (mathstodon)** — Tao's timeline, 20 posts; 5 in-window threads used. Buckmaster's release post confirmed.
+- **X/Twitter** — **FAILED**. `r.jina.ai` now returns JSON `AbuseAlleviationError` 403 for x.com (shared-IP DDoS suspicion), x.com needs auth. @Zefan_Cai feed not reachable. Routed Bubeck's, Coxon's and Hubinger's posts through Politico, TechCrunch, Scientific American and OfficeChai, which quote them verbatim; noted in memory.
+- **HF daily papers** — 37 scanned for 09-08/09-09; top item NeoHorse-1 (175 upvotes, recursive self-improvement via agentic post-training). Nothing beat the math cluster; no pick.
+- **Funding / business** — 5 in-window rounds. ✅ Cognition $2B at $48B (**CHOSEN**); Wonderful $550M at $5B (drafted, cut for length); Sapien at $180M, AIR $50M (shipped 09-02), Thinking Machines rumored — not picked.
+- **Podcast RSS** — Dwarkesh, Latent Space, MLST feeds checked. ✅ Latent Space, Anandkumar, Aug 26, 1:23:31 (**CHOSEN** — Deep Cut). Runner-up: MLST *AI 2040: Plan A report* with Kokotajlo & Larsen (Sep 8), a live candidate for tomorrow. Skipped as already-shipped: MLST/McGrath (09-06), Dwarkesh/Cotra (09-02). WhynotTV still stale.
+- **URL check** — all 22 source URLs verified 200 except openai.com and politico.eu (403 to curl, both fetched fine via jina — real pages). Dropped `tensorlab.cms.caltech.edu` (unreachable from this host, 000 on two attempts) and the two source lines for items I cut during trimming.
+=== 2026-09-09T02:44:29-07:00 done  jinglin-ai-pulse (exit 0) ===
