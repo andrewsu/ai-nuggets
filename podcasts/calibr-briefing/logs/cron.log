@@ -4059,3 +4059,38 @@ Substantive shortlist (spurious/stale matches discarded — Third Arc Bio's $52M
 
 Spotlight full-text gate satisfied: the Nature Biotechnology paper is open access and read in full (Results, Discussion, Methods, competing interests, peer-review disclosure), plus the Phase 2a Nature Medicine summary and the July Phase 3 initiation release for the regimen mismatch that anchors the analysis. One durable reference saved to memory: OA nature.com articles return their whole body via `r.jina.ai`, with the caveat that OA doesn't guarantee it.
 === 2026-09-08T02:34:17-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-09T02:20:08-07:00 start calibr-briefing ===
+Both episodes are written and staged for the batch pipeline.
+
+**Files written** (SKIP_TTS=1, so no TTS, no R2 publish, no feed edit, no commit — `publish_pending.py` handles those):
+
+- `podcasts/calibr-briefing/scripts/2026-09-09-pharma-headlines.txt` (2,020 words)
+- `podcasts/calibr-briefing/scripts/2026-09-09-novartis-avidity-del-desiran-spotlight.txt` (1,996 words)
+- matching `.rss-item.xml` stubs (validated as XML, `__LENGTH__`/`__DURATION__` placeholders in place) and identical one-line `.commit-msg` stubs for both
+
+**Candidate funnel**
+
+Sources scanned (news day = Tue Sep 8 + early Wed Sep 9):
+- Endpoints News index via `r.jina.ai` — ~20 items scanned, 13 on-target. Article bodies paywalled (jina returns nav only), so every pick was re-sourced from primary press releases/other trades.
+- Fierce Biotech homepage via jina — 9 items; **article bodies failed**: jina returned a 313-byte tracker-probe cached snapshot, WebFetch 403s the domain. One retry after 25s also failed. Routed around via primary releases.
+- BioPharma Dive homepage + article — worked via WebFetch.
+- Primary press releases (Novartis, Pulmovant/globenewswire, Amgen/PRNewswire, BioSpace) + WebSearch for analyst commentary — carried the day.
+
+Shortlist (chosen marked ✅):
+- ✅ **Novartis del-desiran HARBOR Phase 3 miss, vHOT, $12B Avidity** — spotlight + headline lead
+- ✅ **Pulmovant/Roivant PHocus: −56.3% placebo-adj PVR, +35.2m 6MWD** — headline 2
+- ✅ Amgen DeLLphi-305 (tarlatamab + durvalumab, 1L maintenance ES-SCLC, OS at interim, n=563)
+- ✅ BMS QUINTESSENTIAL arlo-cel (GPRC5D CAR-T) topline
+- ✅ Pharvaris CHAPTER-3 deucrictibant XR, 83% HAE attack reduction
+- ✅ Anthropic recruiting life-sciences corp-dev lead (up to $600K)
+- ✅ Beam BEAM-302 AATD, 18-month durability at ERS
+- ✅ Spyre SPY003 SKYLINE Part A (IL-23, UC)
+- ✅ Inhibrx INBRX-106 HexAgon Phase 2 (OX40 + pembro, HNSCC)
+- ✅ Evommune EVO756 second Phase 2b miss (MRGPRX2, AD)
+- ✅ Moonwalk $70M Series B; BrainChild Bio $116M; Sernova/Seraxis merger
+- ✅ FDA: Davis (CDER), Mikhail (CBER), Koplow (tobacco), Seehafer (deputy commissioner, tech/AI)
+- ✗ Novo ziltivekimab HERMES/ATHENA terminations — **dropped as duplicate**, shipped in the Sept 7 headlines
+- ✗ Sandoz $300M Slovenia biosimilar plant, Krazati withdrawal completed, Sanofi/AZ ERS detail items — below the bar (tozorakimab already covered Sept 7)
+
+One factual note worth flagging: Novartis's Tuesday move is reported inconsistently across outlets (8.85%–13.5%). Both scripts use the NYSE close of ~$138.51, about −10%, which is the CNBC/Bloomberg-consistent print, and describe it as the worst day since March 2020.
+=== 2026-09-09T02:35:03-07:00 done  calibr-briefing (exit 0) ===
