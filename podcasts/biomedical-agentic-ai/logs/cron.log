@@ -4292,3 +4292,41 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publi
 
 Why MErlin beat the field: it's the only item whose argument cuts against the field's direction rather than adding to it — keep the implementation fixed and audited and let the model supply request-parsing and refusal, because on-the-fly code "is not reviewed, not versioned, not tested, and not the same twice." That lands as a direct counterpoint to yesterday's Epic-warehouse episode (an agent rigorously self-consistent within a run and inconsistent across runs), and it's the closest anyone has come to the packaging-discipline gap this show flagged in the 2026-06-23 BioNeMo episode.
 === 2026-09-08T02:09:40-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-09T02:00:08-07:00 start biomedical-agentic-ai ===
+Published today's episode (SKIP_TTS batch mode — script and stubs written, orchestrator will do TTS/R2/feed/commit).
+
+**Pick:** OntologyBench — a UBC / BC Children's Hospital Research Institute benchmark (arXiv v1, posted 2026-09-08, full text read via `mutool` on the PDF) asking whether dense retrieval can satisfy structured biomedical constraints. Grounding works; conjunction doesn't. A Phenomizer-style information-content baseline from 2009 scores 0.739 nDCG@10 on phenotype-triplet→disease against 0.313 for the best ontology-fine-tuned embedder and 0.169 off-the-shelf, 58.5% of failures are subset-not-conjunction matches, and neither ColBERT-style reranking nor LLM candidate scoring (Qwen3.6-27B, Gemma4-31B, GPT-5.4-mini) recovers anything — 0.313 → 0.315, partly because 17.9% of queries have no relevant disease in the top 50 to reorder. Directly relevant to the retrieval substrate under most of this show's back catalog.
+
+Files written:
+- `podcasts/biomedical-agentic-ai/scripts/2026-09-09-ontologybench-compositional-retrieval.md` (905 spoken words, under the 1150 cap)
+- `…​.rss-item.xml` (validated as XML with the itunes namespace bound; `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg`
+
+`https://arxiv.org/abs/2609.08174` verified HTTP 200.
+
+**Candidate funnel**
+
+- **bioRxiv** — 541 records swept day-by-day 09-06→09-09 (cursor advanced by returned `count`, page size 30); 29 keyword hits, 8 substantive:
+  - PromptBio: An Agentic Platform for End-to-End Computational Biomedical Research — 10.64898/2026.09.02.748774 (vendor platform paper, weakest evaluation of the shortlist)
+  - Real Science Is Harder Than Benchmarks II: Antibody Properties, Lipid-RNA Interactions — 10.64898/2026.09.03.749176 (**part I already shipped 2026-06-28**; part II confirms rather than extends)
+  - Democratizing Agentic Access to Bioinformatics and Biopharmaceutical Databases with BioMCP-TS — 10.64898/2026.09.03.749120 (strong runner-up; MCP-server genre heavily covered 08-14, 08-20, 09-04, 09-07)
+  - bioq: agent-native CLI to a fleet of AI drug-discovery methods — 10.64898/2026.09.03.749148
+  - Agent-driven Model Development for RNA 3D Structure Prediction (Sanofi, QuickFold) — 10.64898/2026.09.08.749228 (near-duplicate genre of AgentFold, shipped 08-29)
+  - BioSecBench-Function — 10.64898/2026.09.03.749010
+  - BOTANIC-1 long-context plant genomic foundation models — 10.64898/2026.09.04.749355
+  - MErlin agent skill — 10.64898/2026.09.02.748773 (**shipped yesterday**)
+- **medRxiv** — 242 records swept same window; 20 keyword hits, 3 substantive:
+  - UKB-KG: Knowledge Graph for the UK Biobank — 10.64898/2026.09.02.26361902 (closest competitor; 292K triples from ~9,200 papers, but precision self-assessed by GPT-5.4, and two KG-resource episodes ran 08-26 and 09-02)
+  - From Clinical Free Text to Auditable Concepts — 10.64898/2026.09.02.26362086
+  - Real-world drug use in ATC and ICD-10 — 10.64898/2026.09.06.26362128
+- **arXiv** — shared cache read (500 entries, histogram covers 09-06→09-08 only; the 500-entry cap truncates the 4-day window, no live call made); 30 relevance survivors, 7 substantive:
+  - **OntologyBench — 2609.08174 (CHOSEN)**
+  - MorphoOrgaAgent (autonomous organoid analysis) — 2609.08696
+  - DrugReason (KG + LLM multi-view repurposing) — 2609.06779
+  - DianShi-RxnDB (24M patent reactions, MCP service) — 2609.06703
+  - ObGynLongBench — 2609.07601; SentryLine — 2609.08364; TabBench-Bio — 2609.07441
+- **PubMed** — 300 PMIDs from the term-filtered `reldate=5` esearch, 138 keyword hits, 5 substantive after discarding "chemical/contrast/therapeutic agent"-class noise: LLM agent for clinical data analysis (10.2196/99597 — too close to 09-07's episode), MetaboAnnotate (10.1021/acs.analchem.6c01717), cancer semantic-interoperability ontology (10.2196/85607), LLM-driven KG for herb-macromolecule interactions (10.1016/j.ijbiomac.2026.154371), automated reference intervals with agents (10.1016/j.clinbiochem.2026.111200)
+- **ChemRxiv** — `site:chemrxiv.org` WebSearch returned nothing inside the 4-day window (newest on-target hit was 2026-07-28); zero candidates
+- **News / product launches** — genengnews.com AI topic page served stale content via WebFetch (returned a 2020 article, no September items); general search surfaced only out-of-scope launches (Proofpoint SOC agent, CluePoints clinical data review 09-03, CIQ Fuzzball 4.2 09-03). Zero on-target candidates.
+- **Policy / funders** — ARPA-H 09-08 "Calling the next generation of health disruptors" (recruiting call, not a program launch); NSF 09-08 item is a podcast on wearables; **nih.gov/news-events/news-releases and hhs.gov/about/news both HTTP 403 from this IP — source gap, not checked**.
+=== 2026-09-09T02:09:29-07:00 done  biomedical-agentic-ai (exit 0) ===
