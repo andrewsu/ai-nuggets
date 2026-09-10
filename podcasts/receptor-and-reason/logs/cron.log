@@ -4310,3 +4310,45 @@ Full text: 15 fetches attempted, **13 succeeded** (29–148 KB of real body). Tw
 
 The Gpr12 preprint is the one to grab the day it renders — cryo-EM of a thalamic orphan receptor with anandamide as the endogenous ligand and cAMP suppression that tracks working-memory duration is a lead item, and it lost today only to a retrieval failure.
 === 2026-09-09T03:14:30-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-10T02:50:09-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-09-10-receptor-and-reason.md` (3,290 spoken words, ~18 min)
+- `podcasts/receptor-and-reason/scripts/2026-09-10-receptor-and-reason.rss-item.xml` (`__LENGTH__` / `__DURATION__` placeholders; XML validated)
+- `podcasts/receptor-and-reason/scripts/2026-09-10-receptor-and-reason.commit-msg`
+- Dedup ledger appended: 11 keys, now 111 episodes / 1,136 items.
+
+**Episode: "the interval"** — 11 items, ordered clinical → mechanistic → computational → agentic.
+
+**Candidate funnel**
+
+- **bioRxiv/medRxiv details API** (09-04→09-10, day-by-day, paginated): 1,414 records → 1,389 unique DOIs → 1,022 v1-in-window → 390 relevance-filtered → **370 fresh** after dedup (20 already shipped). 12 full-text fetches attempted; 6 read in full, 3 landing-page-only, 3 rate-limited.
+- **Crossref journal sweep** (21 journals, from-created-date 2026-09-03): 198 candidates → **188 fresh** (9 already shipped, 1 dup). 100 of the IJNP hits were CINP conference abstracts (`pyag040.*`) — no full text, all ineligible.
+- **arXiv**: shared cache (500 entries) covered 09-07→09-09 only; 54 items passed the bio × agentic filter, all dedup-clean, **none Tier-1-competitive**. No live API call needed.
+- **Psychiatric Times / press**: homepage readable; 5 in-window items → 4 selected, 1 rejected on recency.
+- **Source failures**: bioRxiv Cloudflare 429'd the `.full.pdf` endpoint from this host for ~40 min (worked around via WebFetch on the jina URL); NEJM CAPTCHA-walled (used Takeda's newsroom release for the numbers); nature.com returned references-only or access-walled for 6 of 7 articles.
+
+**Shortlist → picks** (✓ = shipped)
+
+✓ DT120 lysergide ODT, 2nd FDA breakthrough designation, MDD — Definium/BioSpace (**lead**)
+✓ COMP360 52-week open-label, phase 3 — Compass/BioSpace
+✓ GlyphAllo phase 1 driving simulation — Seaport/BioSpace
+✓ Oveporexton, two phase 3 trials — `10.1056/NEJMoa2601598`
+✓ Endocannabinoids in adolescent NSSI, longitudinal — `10.1038/s41398-026-04391-x`
+✓ APOE mRNA editing — `biorxiv:2026.09.03.749263`
+✓ Activity-dependent myelination / infantile amnesia — `biorxiv:2026.09.03.749197`
+✓ A2A unbinding kinetics, lipids at the transition state — `biorxiv:2026.09.07.749808`
+✓ C5aR1-selective peptide agonists — `biorxiv:2026.09.02.746116`
+✓ Real Science Is Harder Than Benchmarks II — `biorxiv:2026.09.03.749176`
+✓ Agent-driven RNA 3D model development (QuickFold) — `biorxiv:2026.09.08.749228`
+
+— PromptBio agentic platform — `biorxiv:2026.09.02.748774` — full text read, cut for length only; ready to ship
+— Gpr12 lipid/anandamide thalamic GPCR — `biorxiv:2026.09.03.749183` — landing page only, 2nd day deferred
+— DMS GABA × GLP-1 agonism — `biorxiv:2026.09.03.749293` — landing page only
+— Ketamine dose-response awake fMRI — `biorxiv:2026.09.03.749142` — landing page only
+— Locus coeruleus dopamine in hippocampus / low-testosterone NAc BBB — `748730`, `749088` — fetch rate-limited
+— Pramipexole for anhedonia (Nature Medicine) — **rejected**: Psychiatric Times ran it 09-03 but `published-online` is 2026-06-12, out of window
+
+One caveat worth flagging: the oveporexton efficacy and safety figures come from Takeda's newsroom release rather than the NEJM paper itself, which is CAPTCHA-walled from this host. The script attributes them as the phase 3 program's reported results and doesn't claim anything the sponsor didn't state.
+=== 2026-09-10T03:18:52-07:00 done  receptor-and-reason (exit 0) ===
