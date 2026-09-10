@@ -4330,3 +4330,34 @@ Files written:
 - **News / product launches** — genengnews.com AI topic page served stale content via WebFetch (returned a 2020 article, no September items); general search surfaced only out-of-scope launches (Proofpoint SOC agent, CluePoints clinical data review 09-03, CIQ Fuzzball 4.2 09-03). Zero on-target candidates.
 - **Policy / funders** — ARPA-H 09-08 "Calling the next generation of health disruptors" (recruiting call, not a program launch); NSF 09-08 item is a podcast on wearables; **nih.gov/news-events/news-releases and hhs.gov/about/news both HTTP 403 from this IP — source gap, not checked**.
 === 2026-09-09T02:09:29-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-10T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script plus the two stub files — no TTS, no R2 publish, no feed edit, no commit; `publish_pending.py` handles those after batch TTS.
+
+**Episode:** `2026-09-10-emet-scoped-link-prediction-lusc` — "Emet — an agent asks a knowledge graph narrow questions, and two of four untested drug pairs hold up in cells" (1133 words in the spoken body, under the 1150 cap). Full text read (28-page PDF via the jina PDF route).
+
+## Candidate funnel
+
+**bioRxiv** (2026-09-07 → 09-10, day-by-day details API sweep): 658 records pulled, 44 survived the keyword filter, 8 substantive after discarding spurious "agent" matches.
+- **Novel Target Combinations in LUSC proposed by the Emet AI Research Environment** — https://www.biorxiv.org/content/10.64898/2026.09.04.749404v1 — **CHOSEN**
+- Agent-driven Model Development for RNA 3D Structure Prediction (Sanofi, QuickFold, 297 iterations) — 10.64898/2026.09.08.749228 — strong, but near-duplicate of AgentFold shipped 08-29
+- Real Science Is Harder Than Benchmarks II (Kosmos, K-Dense, ToolUniverse, BioAgents, AI Scientist-v2 on real pharma studies) — 10.64898/2026.09.03.749176 — best runner-up, unshipped, worth picking up
+- BioMCP-TS: agentic access to 50+ databases with in-process WebAssembly Bioconductor — 10.64898/2026.09.03.749120 — on-brief but the MCP/skill vein was mined 09-04 and 09-08
+- BioSecBench-Function (111 evals, Opus 5 under Claude Code 50.3%) — 10.64898/2026.09.03.749010
+- bioq: agent-native CLI to 38 drug-discovery tools — 10.64898/2026.09.03.749148 — already written up on receptor-and-reason 09-09
+- BOTANIC-1 plant gLMs in the agentic era — 10.64898/2026.09.04.749355 — plant, off-audience
+- LLM-assisted bacterial pathogen text mining — 10.1101/2025.07.29.667369 — v2 of a July preprint, out of window
+
+**arXiv** (shared cache, 500 entries, 09-07 to 09-09 — capped, so 09-10 not covered): 205 keyword hits, 8 substantive.
+- MorphoOrgaAgent (multi-agent organoid analysis, SAM3 + Cellpose) — arxiv.org/abs/2609.08696
+- AgentIdeaBench (33 LLMs, static vs active ideation) — 2609.07611
+- OntologyAligner (HPO normalization) — 2609.10055 — skipped, 09-09 episode was already OntologyBench
+- ObGynLongBench — 2609.07601; Safe to Stop? clinical stopping — 2609.09678; SentryLine oncology living guidelines — 2609.08364; Online Surrogate Repair — 2609.07655
+
+**PubMed** (reldate 5): 958 hits, 400 fetched, 235 keyword hits, 2 substantive — BioData Mining "cognitive personality priors in agentic AI" (PMID 42711704), JMIR "Performance, Failures, and Oversight of an LLM Agent for Clinical Data Analysis" (42709964).
+
+**Funder pages:** ARPA-H launched **ADVOCATE** on 09-09 ($62.7M, agentic clinical AI for cardiovascular care, first-of-its-kind FDA-authorization package required within 24 months, Stanford building the supervisory overseer agent). Genuinely first-rate and fully readable — the runner-up, lost only because it's care delivery rather than research and the show ran three EHR/clinical items in the last week. NIH/NSF/HHS: nothing agentic in-window.
+
+**ChemRxiv / news:** no in-window on-target items (best ChemRxiv hits were March–July 2026).
+
+**Source failures:** none fatal. bioRxiv `.full` HTML for the chosen preprint returned the landing page (abstract-only, "Follow this preprint"), and the `.full.pdf` via `r.jina.ai` 429'd twice; a ~2-minute backoff got the full 77 KB body. arXiv cache is capped at 500 entries so 2026-09-10 submissions were not visible.
+=== 2026-09-10T02:13:22-07:00 done  biomedical-agentic-ai (exit 0) ===
