@@ -105,6 +105,21 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     preference; it is the prevailing price of a discovery-through-early-clinical partnership with an experienced ex-US platform company.
     The differentiator still has to be something the buyer CANNOT source in Shanghai or Seoul — human data run under FDA inspection
     (see the 09-03 discount above), or a genuinely unencumbered composition-of-matter position.**
+  - **THE COMPARATOR GAINS A VENTURE ROW — A SYNDICATE RAN THE SAME TRADE, AND IT IS A COMPETITOR FOR OUR CAPITAL RATHER THAN OUR
+    BUYER (added 2026-09-10 Portfolio Watch item 7; announced 2026-09-09).** **Solstice Oncology (founded February 2026) raised a
+    $225M Series A led by RA Capital Management**, with **Canaan Partners** and **Forbion**. Sole asset: **porustobart**, a
+    next-generation **CTLA-4 antibody licensed from Harbour BioMed (China)** — **~$105M of value at signing: $50M upfront + $5M
+    near-term cash + $50M equity in Solstice**, plus up to **$1.1B in commercial milestones** on ex-China sales. FDA-cleared for
+    **Phase 2 in neoadjuvant advanced colon cancer** plus one undisclosed indication; combination with **Keytruda**, enrolment
+    **Q4 2026**, data **H2 2027**. CEO **Caroline Loew**. Rationale: a short half-life permits flexible dosing and a better safety
+    profile than first-generation CTLA-4; Harbour's Phase 1b showed **30% ORR** in late-line colon cancer on the combination.
+    **DURABLE READ (Eddie + Matt): every prior row in this thread is a LARGE PHARMA buying an ex-US clinical asset ($45M / $75M /
+    $110M upfront). This is a VENTURE SYNDICATE running the identical trade — RA Capital did not fund a discovery programme; it
+    bought a clinical asset for $50M cash and put $225M behind operating it. ⇒ A newco can now be assembled from an in-licensed
+    clinical asset FASTER and with LESS SCIENTIFIC RISK than by de-risking academic IP, which makes this a competitor for the
+    capital that would otherwise fund a Blackbird spinout, not merely for the acquirer at the end. THE COUNTER-ARGUMENT IS THE
+    ONE WE HAVE ALWAYS HAD AND SHOULD STATE MORE OFTEN: they own a LICENCE; we own COMPOSITION OF MATTER.** Source:
+    https://www.biospace.com/business/solstice-rises-with-225m-to-develop-next-gen-ctla-4-drug-from-china
 
 - **THE EXIT MAP HAS THREE PUBLIC-MARKET DOORS, NOT TWO — REVERSE MERGERS ROSE 1,600% IN Q3 (added 2026-09-02 Portfolio Watch item 6;
   published 2026-09-02).** Per **Leerink Partners**: **20 biotech IPOs and 19 reverse mergers year-to-date**, close to 1:1 — but
@@ -223,7 +238,11 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     trials establishing that this family's INFLAMMATION story is weak and is now pointing its remaining capital at a neuronal,
     pain-adjacent indication — convergent evidence for the thesis, free. ACTION (sharpened, not changed): when the Guan work goes
     up, slide one is WHY X1 IS NOT X2 and slide two is a competitive map that INCLUDES A MIGRAINE PROGRAMME, because that is where
-    the family's clinical money now sits.** Sources:
+    the family's clinical money now sits.** **AND A NEW COLUMN ON THE MAP (added 2026-09-10): Encoded Therapeutics' ETX301
+    targets Nav1.7 (SCN9A) for POST-AMPUTATION NEUROMA PAIN, IND planned 2027, funded inside the $275M Series F logged under
+    Aletira. A GENETIC MEDICINE has entered this theme. The Guan work is small-molecule allosteric modulation, so this is not
+    head-to-head — but the competitive map for non-opioid pain now needs a GENE-THERAPY column beside the small-molecule one,
+    and a well-capitalised neurology platform is the entrant.** Sources:
     https://www.biospace.com/press-releases/evommune-announces-top-line-results-from-evo756-phase-2b-trial-in-moderate-to-severe-atopic-dermatitis ·
     https://clinicaltrials.gov/study/NCT07150845 ; **Jonathan Schneck, MD
     PhD** (Pathology, Zizic) — **in-vivo CAR-T generation via targeted polymeric mRNA
@@ -461,6 +480,18 @@ Neuron23, Ionis**.
   - **READ ONE (Hemaka): NLRP3 in neurodegeneration is NOT white space, and the buyer who took it is LILLY** — ranked FIRST on the
     NXE'149 bidder set on 09-06 for exactly this behaviour (12 acquisitions in 2026, ~half preclinical/Phase 1). A Blackbird
     Parkinson's programme routed through inflammasome biology enters a lane with a priced incumbent.
+    - **QUALIFIED 2026-09-10 (Portfolio Watch item 5; announced 2026-09-09) — "OCCUPIED" AND "PRICED" ARE DIFFERENT FACTS, AND
+      ONLY ONE IS ESTABLISHED.** **NodThera Inc. renamed REZERA Inc.** (Boston HQ; R&D Cambridge UK) and announced that its lead
+      NLRP3 inhibitor **ruvonoflast (ex-NT-0796)** goes to **Phase 3 in PERIPHERAL ARTERY DISEASE, initiating H1 2027** after
+      regulatory alignment on core trial elements (~**800 patients** per trade reporting). **Phase 2 RESOLVE-1 enrolled 176
+      participants** with and without type 2 diabetes; ruvonoflast has now been studied in **>400 participants across five
+      trials**. Second programme **trabzanoflast (ex-NT-0150)** for neurologic disease reports **Phase 1 topline Q4 2026**. New
+      leadership: CEO **Geoff McDonough**, CFO **Chris Guiffre**, CMO **Jyothis George**; McDonough calls it a potential "first
+      disease-modifying therapy for a condition that impacts 230 million people worldwide." **READ (Hemaka + Anthony): the most
+      experienced pure-play NLRP3 company in the world just priced a VASCULAR indication above the brain and left its
+      brain-penetrant molecule in Phase 1. The incumbents hold the neuro lane on paper; nobody with a decade of inflammasome
+      chemistry is running the pivotal there. That does not reopen the lane, but it downgrades "already priced" to "claimed."**
+      Source: https://www.globenewswire.com/news-release/2026/09/09/3358575/0/en/nodthera-inc-changes-name-to-rezera-inc-and-announces-ruvonoflast-phase-3-development-program.html
   - **READ TWO (Anthony Accorsi + Jon Robbins) — THE SELECTION RULE, THIRD INSTANCE IN TWO WEEKS.** **Sneha Mantri (CMO,
     Parkinson's Foundation): "One of the big reasons why disease-modifying drugs have failed over and over is because of a delay in
     recognition and diagnosis"** — easier to preserve function than to regain it. Set beside **Denali narrowing to variant carriers
@@ -555,6 +586,7 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
+_Last update: 2026-09-10_
 - **What:** Cell-type-**selective** genetic medicines. **SELEXON** platform uses
   **alternative RNA splicing** to restrict transgene expression to target cell
   types — bolt-on to any vector (e.g. AAV) to cut off-target expression.
@@ -592,6 +624,43 @@ the individual entries below, each marked ❌ TERMINATED.
   tox package was ignored, not absent.** Sources:
   https://www.fiercebiotech.com/biotech/after-2-undisclosed-gene-therapy-deaths-can-china-iit-alternative-regulatory-path-still-be ·
   https://crisprmedicinenews.com/news/brain-directed-gene-editing-ends-in-death/
+- **THE LAYER GOT PRICED — $275M AND A PIVOTAL TRIAL FOR CELL-TYPE-SELECTIVE EXPRESSION CONTROL, AND THE SAME DOCUMENT CARRIES
+  TWO ARGUMENTS AGAINST US (added 2026-09-10 Portfolio Watch LEAD; announced 2026-09-09).** **Encoded Therapeutics (South San
+  Francisco) closed a $275M Series F**, co-led by **GV** (Alphabet) and an undisclosed healthcare fund, with **ARCH Venture
+  Partners, Braidwell, Farallon, Illumina Ventures, Invus, Janus Henderson, Matrix Capital, Nolan Capital, RTW, SoftBank Vision
+  Fund 2, Venrock**. CEO **Kartik Ramamoorthi**. Proceeds: pivotal + expansion studies through age 18, **commercial-scale in-house
+  GMP manufacturing**, and **ETX301 toward a 2027 IND**. *Note: this syndicate is substantially the crossover cohort logged in §1
+  on 09-09 from the PitchBook data — the money that stocks the IPO pipeline bought expression control.*
+  **THE CONSTRUCT (the load-bearing fact): ETX101 = AAV9 carrying a small engineered transcription factor (eTF-SCN1A) under the
+  REGABA cell-selective regulatory element**, restricting expression to **GABAergic inhibitory interneurons**; the eTF binds a
+  conserved region upstream of the *SCN1A* transcription start site and **upregulates the patient's ENDOGENOUS gene. It does not
+  deliver a cDNA — it delivers a switch for one.**
+  **CLINICAL (POLARIS Ph1/2 — ENDEAVOR US, EXPEDITION UK, WAYFINDER Australia; 16th European Epilepsy Congress):** median monthly
+  countable seizure reduction **~76% at DL3 (n=5)** and **~60% at DL4 (n=9)**; **at 52 weeks 79% (DL3, n=3) and 89% (DL4, n=5)**;
+  follow-up to **117 weeks**; Bayley-4 cognitive gains toward neurotypical trajectories in children treated **before age 2**.
+  Designations: **Breakthrough, RMAT, Fast Track, Rare Pediatric Disease, Orphan (FDA + EMA)**.
+  **ARGUMENT AGAINST US #1 — THE CASSETTE, AND IT NOW RUNS THE WRONG WAY (Avi Khanna + Hugh Wells).** The open item since 08-19
+  asks what a selective exon costs in **kilobases**, because the Elevidys letter showed a cassette at the packaging limit yields
+  truncated genomes and 5'-biased transcripts — vector everywhere, protein nowhere. **Encoded's structural answer is to carry
+  almost nothing. SELEXON ADDS sequence; Encoded SUBTRACTS it.** An investor who has read that letter will make the comparison
+  for us. **ACTION: full-vs-empty capsid and genome-integrity data on a SELEXON-containing vector at the intended dose, in the
+  data room BEFORE the Series A — "probably fine" is not an answer to a competitor with a smaller cassette.**
+  **ARGUMENT AGAINST US #2 — THIRD INDEPENDENT FALSIFICATION OF THE BROAD SAFETY CLAIM.** With cell-selective expression **and**
+  a minimal cassette: **transaminase elevations in 7 of 21 patients, thrombocytopenia in 3 of 21**, all resolved, **no
+  treatment-related SAEs**. Genuinely clean — and the liver still saw it. Carry beside the **08-20 immunology limit** (Genglycos)
+  and the **08-25 genotoxicity limit** (REGENXBIO). **Expression control governs neither the capsid nor the dose. The narrow
+  claim survives; the broad "safety platform" claim is now falsifiable in public three times over.**
+  **AND THE ORIGINAL READ — THE PIVOTAL IS THE TRIAL SHAPE THAT FAILED IN ANGELMAN (Anthony Accorsi + Hemaka Rajapakse).**
+  **ENDEAVOR Part 2 = 30 infants/young children aged 6 months–4 years, OPEN-LABEL, NO CONTROL ARM, primaries = seizure AND
+  neurodevelopmental outcomes**; first patient dosed **2026-05-06 at UCSF**, enrolment complete end-2026, initial data end-2027.
+  Compare the **09-03 open-label-package rule** (NuGate entry) off Ultragenyx's apazunersen. **SPLIT THE PACKAGE: the SEIZURE half
+  is defensible uncontrolled** — countable events, patient is his own baseline, untreated slope does not spontaneously bend;
+  **the NEURODEVELOPMENTAL half (Bayley-4 / Vineland) is the Angelman inference verbatim.** ⇒ **RULE TO TURN ON OURSELVES:
+  congenital hearing loss has machine-measured ABR thresholds. That is worth more than any behavioural scale we might add, and it
+  is a reason to resist adding one.** Sources:
+  https://www.biospace.com/press-releases/encoded-therapeutics-raises-275-million-in-series-f-financing-to-advance-etx101-through-pivotal-development-and-accelerate-its-precision-genetic-medicines-neurology-pipeline ·
+  https://encoded.com/programs/etx101-for-dravet-syndrome/ ·
+  https://encoded.com/encoded-therapeutics-doses-first-patient-in-pivotal-study-of-etx101-for-dravet-syndrome-and-reports-broader-portfolio-progress/
 - **DIRECT COMPETITOR NOW CLINICAL in the lead indication (2026-08-18 Portfolio
   Watch LEAD; event dated 2026-08-11, caught a week late):** **Skylark Bio**
   (Cambridge MA, out of stealth 08-11; CEO **Jodi Cook, PhD**; sci. advisor
@@ -823,10 +892,12 @@ the individual entries below, each marked ❌ TERMINATED.
   - **THE LADDER (use this framing):** constitutive viral promoter → synthetic
     tissue-specific promoter (Hemgenix LP1, Roctavian HLP, Elevidys MHCK7, all already
     approved) → **NATIVE regulatory element** (Ultragenyx = promoter; **Skylark = 3'UTR**,
-    per the 08-19 patent work) → **SELEXON = alternative SPLICING**. Three companies, three
-    elements on the same molecule, one shared premise — and as of 08-19 that premise has an
-    **FDA approval** behind it. Strongest external citation the thesis has. **Geoff Lynn to
-    use within the week.**
+    per the 08-19 patent work; **Encoded = engineered cell-selective PROMOTER**, per the 09-10 entry
+    below) → **SELEXON = alternative SPLICING**. Four companies, three elements on the same molecule,
+    one shared premise — and as of 08-19 that premise has an **FDA approval** behind it, as of 09-10 a
+    **$275M round and a pivotal trial**. Strongest external citation the thesis has, and now also the
+    clearest statement of where Aletira sits: **every rung on this ladder carries capital AND clinical
+    data except ours.** **Geoff Lynn to use both halves.**
   - **THE LIMIT — say it before an investor does. Native-promoter control did NOT make the
     product safe.** Label: ALT/AST elevation **71%**; **corticosteroids to ALL patients** as
     standard mitigation; **adrenal insufficiency 24%** (a toxicity of the MITIGATION);
@@ -923,7 +994,7 @@ the individual entries below, each marked ❌ TERMINATED.
     2026-09-19** — another temperature read and another potential voucher.
 
 - **REGULATORY RULE FOR THE PRE-IND — CORRECTION TO THIS FILE'S OWN 08-18 FRAMING (2026-08-23 Portfolio Watch, second item):** this brief has been treating the Capricor deramiocel decision as the live test of whether FDA "rewards NARROWING." **It is not that test.** FDA's **2026-07-27 briefing document** says HOPE-3 **"did not meet its pre-specified primary and secondary efficacy endpoints"** and that the agency **"considers [the] analyses based on the post-study SAP versions to be post-hoc and exploratory"**; the final **SAP v3.0 is dated 2025-11-24, one day before unblinding**, and per the securities complaint (S.D. Cal.; class period 2025-12-17 → 2026-07-26; lead-plaintiff deadline 2026-09-28) **was never submitted to or agreed with FDA before the resubmission**. The **2026-08-22 PDUFA passed with no announcement**; STAT (2026-08-20) reported the therapy is heading for a rejection. **DURABLE LINE (replaces the earlier one for this case): the agency will let you make a SMALL claim, but only the claim you WROTE DOWN IN ADVANCE, in a plan it has seen. Narrowing is fine; choosing the endpoint after seeing the shape of the data is not.** **Contrast case: Genglycos cleared four days EARLY on a PRE-AGREED burden-of-care surrogate with a two-year confirmatory PMR accepted (see the 08-20 entry). ACTION (Hugh Wells + Avi): for the SELEXON expression-control package, the ENDPOINT and the ANALYSIS are the parts to agree with the division early and IN WRITING.**
-- **WHO ACTUALLY REVIEWS THE SELEXON IND, AND WHY THAT MAKES "IN WRITING" NON-NEGOTIABLE (2026-08-24 Portfolio Watch LEAD; original work — RESOLVES the ⚠ "current CBER director UNVERIFIED" caveat carried in the 08-18 entry above).** The reviewing office is **CBER's Office of Therapeutic Products (OTP)**. **OTP has had NO PERMANENT DIRECTOR SINCE JUNE 2025.** Acting director **Vijay Kumar** stepped down **end of June 2026**; **Karim Mikhail**, **acting director of CBER** since **2026-05-20** (after Katherine Szarama's brief acting tenure following **Vinay Prasad's late-April 2026 exit**), took OTP **on top of running the center**; FDA said it would advertise the permanent role internally and externally and **had named no one as of 2026-08-24**. Commissioner: **Kyle Diamantas (acting)**. **So-what: the 08-23 instruction ("agree the endpoint and the analysis with the division early") is UPGRADED, not repeated — a productive call with an acting, double-hatted official has no half-life. Hugh Wells + Avi: request a FORMAL WRITTEN RESPONSE at pre-IND, put the endpoint and the SAP in the official record, and treat verbal alignment as unrecorded until it comes back on paper.** Precedent value for the raise: three gene-therapy reversals ran through this office in four months (**uniQure AMT-130**, Phase 1/2 accepted for accelerated approval with a Phase 3 confirmatory, BLA Q3 2026; **REGENXBIO NAVSUNLI/RGX-121**, Feb-2026 CRL reversed in June, no additional studies and no untreated control arm, resubmission Q3 2026; plus **Replimune TUDRIQEV** approved 2026-08-06 on the third submission, four days late, ORR 24.2% / DOR 14.1 mo in 91 of 140, 10–3 adcomm). **Frame as "the path exists and it is precedented," NOT "the agency has gotten easier" — Mizuho's Uy Ear: reconsiderations "remain highly case-specific"; ex-CBER Donald Fink: agreement on study design "does not ensure regulatory approval."** Sources: https://www.biospace.com/fda/capricor-replimune-reviews-signal-fdas-return-to-reliability-but-every-application-will-stand-alone · https://www.biopharmadive.com/news/top-fda-gene-cell-therapy-regulator-step-down/824093/ · https://www.aabb.org/news-resources/news/article/2026/05/20/szarama-departs-cber--karim-mikhail-named-acting-director
+- **WHO ACTUALLY REVIEWS THE SELEXON IND, AND WHY THAT MAKES "IN WRITING" NON-NEGOTIABLE (2026-08-24 Portfolio Watch LEAD; original work — RESOLVES the ⚠ "current CBER director UNVERIFIED" caveat carried in the 08-18 entry above).** The reviewing office is **CBER's Office of Therapeutic Products (OTP)**. **OTP has had NO PERMANENT DIRECTOR SINCE JUNE 2025.** Acting director **Vijay Kumar** stepped down **end of June 2026**; **Karim Mikhail**, **acting director of CBER** since **2026-05-20** (after Katherine Szarama's brief acting tenure following **Vinay Prasad's late-April 2026 exit**), took OTP **on top of running the center**; FDA said it would advertise the permanent role internally and externally and **had named no one as of 2026-08-24**. Commissioner: **Kyle Diamantas (acting)**. **UPDATED 2026-09-10 (event 2026-09-08): HHS made the CENTER directorships PERMANENT — Karim Mikhail confirmed permanent director of CBER, Michael Davis permanent director of CDER** (both acting since mid-May 2026), plus **Bret Koplow** at CTP and **Jared Seehafer** as the agency's **first-ever Deputy Commissioner for Technology and Artificial Intelligence**. **RBC: "much-needed leadership continuity … do not expect another 'larger-than-life' commissioner." William Blair: the interim stretch was "caretaker mode."** Heidi Overton's commissioner nomination is still pending Senate confirmation. **CRITICALLY, THE REVIEWING OFFICE DID NOT MOVE: OTP still has NO permanent director, the search is still open, and nothing in the 09-08 announcement touches it — so the instruction below is UNAMENDED, not softened.** Texture worth holding: **Mikhail has been at FDA under 18 months**, after a commercial career at **Merck and Amarin**, with degrees from **Cairo University** and **ESCP** — a commercial executive, not a career reviewer, now permanently running the center that reviews gene therapy. **(Virginia Burger): the agency now has a NAMED, PERMANENT owner for AI, and he founded a quality-management-software company — the person to route any model-derived evidence question to.** Sources: https://www.biospace.com/fda/acting-cber-cder-heads-become-permanent-as-fda-works-to-restore-stability · https://www.raps.org/resource/fda-names-permanent-cder-cber-directors-new-deputy-commissioner-for-ai.html **So-what: the 08-23 instruction ("agree the endpoint and the analysis with the division early") is UPGRADED, not repeated — a productive call with an acting, double-hatted official has no half-life. Hugh Wells + Avi: request a FORMAL WRITTEN RESPONSE at pre-IND, put the endpoint and the SAP in the official record, and treat verbal alignment as unrecorded until it comes back on paper.** Precedent value for the raise: three gene-therapy reversals ran through this office in four months (**uniQure AMT-130**, Phase 1/2 accepted for accelerated approval with a Phase 3 confirmatory, BLA Q3 2026; **REGENXBIO NAVSUNLI/RGX-121**, Feb-2026 CRL reversed in June, no additional studies and no untreated control arm, resubmission Q3 2026; plus **Replimune TUDRIQEV** approved 2026-08-06 on the third submission, four days late, ORR 24.2% / DOR 14.1 mo in 91 of 140, 10–3 adcomm). **Frame as "the path exists and it is precedented," NOT "the agency has gotten easier" — Mizuho's Uy Ear: reconsiderations "remain highly case-specific"; ex-CBER Donald Fink: agreement on study design "does not ensure regulatory approval."** Sources: https://www.biospace.com/fda/capricor-replimune-reviews-signal-fdas-return-to-reliability-but-every-application-will-stand-alone · https://www.biopharmadive.com/news/top-fda-gene-cell-therapy-regulator-step-down/824093/ · https://www.aabb.org/news-resources/news/article/2026/05/20/szarama-departs-cber--karim-mikhail-named-acting-director
 - **ORIGIN PI, for the record (surfaced 2026-08-24; not previously written down in this file):** the SELEXON splicing-based expression-control science traces to **Jonathan Ling's lab at Johns Hopkins** (BioBuzz Aletira spinout profile). Relevant because Ling's cryptic-exon/splicing work is the same intellectual estate the **Wong lab and Jiou Wang lab TDP-43 entries in §2b** sit next to — worth checking with JHTV whether the licensed field-of-use is drawn narrowly enough that a second splicing-control program from that campus could land elsewhere.
 - **NEW ADJACENT SOURCING LEAD IN THE LEAD INDICATION — see the Doetzlhofer entry in §2b (2026-08-23 Radar LEAD).** JHU's Doetzlhofer lab identifies ZBTB20 as the maintained repressor of cochlear supporting-cell regenerative plasticity and MDK–PTPRZ1 as the druggable node beneath it. **The targeting liability that creates (a proliferation axis with oncology history, needing restriction to supporting cells at a controlled level in a semi-enclosed compartment) is precisely SELEXON's premise — evaluate as a SECOND PAYLOAD, not only as a standalone NewCo.**
 
@@ -1559,7 +1630,7 @@ _Last update: 2026-09-09_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-05_
+_Last update: 2026-09-10_
 - **What:** novel immunology platform that **selectively treats T-cell-mediated
   autoimmune disease**; T-cell engager platform with potential in ankylosing
   spondylitis and others.
@@ -1654,6 +1725,19 @@ _Last update: 2026-09-05_
     engager is a DOSED DRUG — titratable, interruptible, discontinuable, and it requires no lymphodepletion. A living, expanding cell
     product offers none of those controls. ACTION: add a CONTROL-ARCHITECTURE row to the Winnow TPP, beside the Lisraya
     boxed-warning row (08-29) and the Merida/Imaavy selectivity row (08-30/09-01). The claim is "CONTROLLABLE," not "SAFER."**
+  - **THE ROW GETS WRITTEN BY ONE SPONSOR'S OWN TWO DECISIONS, NINE DAYS APART (added 2026-09-10 Portfolio Watch item 4;
+    announced 2026-09-09).** **BMS reported that arlocabtagene autoleucel (arlo-cel), a GPRC5D-directed CAR T, MET its primary
+    endpoint in the Phase 2, open-label, single-arm QUINTESSENTIAL study** in relapsed/refractory myeloma **exposed to four
+    prior classes** (PI, anti-CD38, IMiD, **BCMA-targeting**) — "significant improvements in overall and complete response
+    rates," **magnitudes withheld pending a congress**. **BMO: a "key derisking event"**; analysts read arlo-cel and Gilead's
+    BCMA-directed **anito-cel (FDA decision 2026-12-23)** as addressing "increasingly distinct patient populations." **READ
+    (Jon Robbins): this is NOT inconsistent with the 09-01/09-02 halts above — it IS the control-architecture argument, stated
+    by the same company's portfolio decisions. BMS voluntarily paused AUTOIMMUNE enrolment for zola-cel over inflammatory
+    events on 2026-09-01 and claimed an ONCOLOGY pivotal win for a different CAR T on 2026-09-09. The risk-benefit that clears
+    in quadruple-refractory myeloma does not clear in lupus. Put BOTH decisions, with dates, in the Winnow TPP.** **NO SAFETY
+    NUMBERS RELEASED** ⇒ nothing yet for the denominators; **OPEN ITEM: watch whether arlo-cel detail lands at IMS Glasgow
+    (09-23/26) beside CERVINO.** Source:
+    https://www.biospace.com/drug-development/bms-clinches-pivotal-win-for-myeloma-car-t-in-key-derisking-event
   - **TWO LIMITS, STATE THEM BEFORE AN INVESTOR DOES. (a) Engagers are not exempt from this biology — blinatumomab has produced HLH
     and CRS is the class toxicity of CD3 engagement; an engager buys DOSE CONTROL, not exemption. (b) Keep the Imaavy discipline:
     these are CD19 products depleting B CELLS, Winnow is T-CELL-mediated. The read is the CONTROL ARCHITECTURE, not the target.**
@@ -1677,6 +1761,26 @@ _Last update: 2026-09-05_
     approval nine days earlier**, and it just failed in lupus with a molecule **cleaner and better engaged than the approved one.
     Broad kinase inhibition wins where ONE PATHWAY DOMINATES the disease and loses where the POPULATION IS HETEROGENEOUS** — a
     structural argument for a clone-selective agent, and more persuasive than any tolerability comparison.
+    - **THE MIRROR IMAGE, NINE DAYS LATER — AND IT CORRECTS THE TEMPTING VERSION OF READ ONE (added 2026-09-10 Portfolio Watch
+      item 3; topline 2026-09-09).** **Beeline Medicines' afimetoran** — a selective, oral, once-daily, **equipotent inhibitor
+      of TLR7 and TLR8** — **MET the primary in a global Phase 2 in SLE. NCT04895696: 248 adults aged 18–70**, active
+      moderate-to-severe SLE, **1:1:1:1** across three once-daily doses and placebo, **48 weeks**, on background medication
+      **including corticosteroids with MANDATORY tapering**. **All three dose groups beat placebo on SRI-4 at week 48,
+      p<0.001 across all doses**; secondaries consistent (disease activity, skin, joints, steroid reduction, PGA, QoL); well
+      tolerated, no new signals. **RESPONSE PERCENTAGES NOT DISCLOSED.** FDA **Fast Track** May 2025. Advancing to pivotal
+      development in **both systemic and cutaneous** lupus. CEO **Saqib Islam**; CMO **Nathalie Franchimont**.
+      **THE READ IS NOT "SELECTIVE BEATS BROAD" (Jon Robbins + Eddie Cherok).** Afimetoran sits **UPSTREAM, on the innate
+      receptors that drive the very type-I interferon axis Alumis said it needed to select for — and it worked WITHOUT
+      selecting**, in an unselected population, on the same endpoint horizon, nine days apart. ⇒ **THE DEFENSIBLE WINNOW TPP
+      SENTENCE: either your target is the DOMINANT DRIVER IN UNSELECTED PATIENTS, or you PRE-SPECIFY AND POWER the enrichment.
+      Alumis had neither; Beeline had the first. This supersedes any framing that treats selectivity per se as the variable.**
+      **SECOND READ — THE DIVESTED-ASSET SCREEN NOW HAS A RESULT (Eddie Cherok): afimetoran was DISCOVERED AT BRISTOL MYERS
+      SQUIBB and licensed to Beeline in July 2025**; Beeline had already closed a **$426.3M Series A (June 2026)**. The §4
+      standing item opened 09-05 (who owns a screen on shelved/divested large-pharma assets) was prompted by Pfizer clearing a
+      Seagen CD228 ADC at **$12M upfront**. **A divested big-pharma asset just WON A PHASE 2 — a far better argument for
+      standing that screen up than the ADC was.** Sources:
+      https://www.globenewswire.com/news-release/2026/09/09/3358503/0/en/beeline-medicines-announces-positive-topline-results-from-global-phase-2-study-of-afimetoran-in-systemic-lupus-erythematosus.html ·
+      https://endpoints.news/beeline-medicines-reports-promising-phase-2-lupus-data/
   - **READ TWO — THE SELECTION RULE, NOW STATED IN BOTH DIRECTIONS (Hemaka; bears on GPR52 more than on Winnow).** The **08-29
     BNT122-01** entry (see Clasp) established that **selecting patients buys enrichment, not efficacy**. This is the **mirror image:
     FAILING to select can bury a real effect inside an unselected population.** Same rule twice — **the enrichment hypothesis must be
@@ -1759,7 +1863,7 @@ _Last update: 2026-09-05_
   https://www.biospace.com/business/bms-ends-cellares-pact-over-cell-therapy-production-problems-triggering-layoffs
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
-_Last update: 2026-09-08_
+_Last update: 2026-09-10_
 - **THE MONITORING PRECEDENT — a recurring blood draw in an ASYMPTOMATIC, NON-PROGRESSING patient is now written into an
   FDA companion-diagnostic approval (added 2026-09-07 Portfolio Watch LEAD; FDA accelerated approval 2026-09-04, AstraZeneca
   release 2026-09-06).** **AstraZeneca's ETCAMAH (camizestrant)** + a CDK4/6 inhibitor was approved in HR-positive,
@@ -1809,7 +1913,25 @@ _Last update: 2026-09-08_
     — DE-ESCALATION, sponsored by a payer or health system rather than a pharma company, which is a different BD motion with
     different evidence requirements. Settle it before the liver-fibrosis validation plan is fixed.** Secondary: the barrier Vestbo
     names is **BEHAVIOURAL** (willingness to re-measure and to de-prescribe), so analytic performance, channel (08-31) and
-    **clinician workflow** are three separate gates. Sources:
+    **clinician workflow** are three separate gates.
+    - **THIRD ANSWER, AND A JHU ONE — DISCARD-VS-TRANSPLANT, PAID FOR BY NOBODY (added 2026-09-10 Portfolio Watch item 6;
+      JHTV feature posted 2026-09-09 19:05 UTC).** **Chirag R. Parikh (JHU Division of Nephrology)**: three urinary
+      biomarkers in deceased-donor urine — **uromodulin (UMOD), osteopontin (OPN), YKL-40** — added to the standard **Kidney
+      Donor Profile Index (KDPI)**. In **474 deceased donors with paired kidney transplants**, discrimination improved from
+      **AUC 0.80 -> 0.86**; modelling across **>1,500 donors** suggests **~20% fewer unnecessary biopsies** and **~7% more
+      kidneys returned to transplant**, against a **~25% discard rate** and **>92,000 Americans waiting**. **~20-30 minutes,
+      inexpensive LATERAL-FLOW assay, on urine already collected.** Published in *JASN*; **IP licensed through JHTV**; 15+
+      years NIH-funded. Companion *Scientific Reports* paper: the lateral-flow devices were run inside the clinical workflow of
+      **two organ procurement organizations - 958 samples from 879 donors, April 2022-April 2025.**
+      **READ (Eddie Cherok) - the cleanest available worked example of this entry's own question.** The decision is **discard
+      vs transplant**; the beneficiary is the **transplant centre and the payer**; the comparator is **an existing index, not
+      nothing**; and the evidence was generated **inside an operational workflow with no pharma sponsor.** Third distinct
+      answer alongside **switching** (09-07, SERENA-6/Guardant360) and **de-escalation** (09-08, COPERNICOS). **HONEST LIMITS:
+      the underlying publication is NOT new and prospective studies are still ahead - what was new on 09-09 is JHTV flagging
+      the LICENCE. SOURCING QUESTION (Esther Park): who holds it.** Sources:
+      https://ventures.jhu.edu/news/a-30-minute-test-could-help-save-donor-kidneys-every-year/ ·
+      https://www.nature.com/articles/s41598-026-48155-5
+    Sources:
     https://www.ajmc.com/view/copernicos-trial-eosinophil-guided-ics-reduction-safe-in-copd-vestbo-says (403s both WebFetch and
     r.jina.ai; verified via search extracts + the protocol paper) ·
     https://trialsjournal.biomedcentral.com/articles/10.1186/s13063-025-09032-0
@@ -3123,6 +3245,10 @@ _Last update: 2026-09-06_
   and call the implication (tailwind / threat / validation / watch-item).
 
 ## 4. Open items to fill in (next research passes)
+- **SELEXON cassette cost in kilobases, and the genome-integrity assay (added 2026-09-10; Avi Khanna + Hugh Wells).** This was a nice-to-know when it was raised on 08-19 off the Elevidys packaging letter. Encoded's $275M round makes it a comparison an investor will run: their construct carries a small engineered transcription factor plus a short regulatory element and upregulates an endogenous gene; **SELEXON adds sequence to a cassette.** Needed before the Series A opens, not after: (a) what a selective exon costs in kb; (b) full-vs-empty capsid ratio and genome-integrity data on a SELEXON-containing vector at the intended dose; (c) a dose-response in target tissue if we intend to claim that restricting expression lets us reach effect at lower total vector.
+- **Who holds the JHTV licence on the Parikh donor-kidney biomarker panel? (added 2026-09-10; Esther Park.)** UMOD/OPN/YKL-40 plus KDPI, AUC 0.80 -> 0.86, ~20-30-minute lateral flow, IP licensed through JHTV, lateral-flow devices already validated inside two organ procurement organizations. Is the licensee a company, an OPO consortium, or a reference lab — and is any field of use unencumbered? Secondary (Eddie): it is the cleanest worked example of the Artemyx "which decision does the test change and who funds the evidence" question, so worth reading the licence structure even if we never touch the asset.
+- **Does the ALS/FTD functional endpoint survive the Encoded/Angelman test? (added 2026-09-10; Anthony Accorsi + Jon Robbins.)** Encoded is taking a **30-patient, open-label, no-control-arm** pivotal with seizure AND neurodevelopmental co-primaries — the seizure half is defensible uncontrolled (countable events, self-baseline, steep untreated slope), the developmental half is the inference that killed apazunersen in Angelman. Apply the same split to the NuGate package and to Aletira: which of our candidate endpoints are machine-measured with a steep natural slope (ABR thresholds; the 09-04 Zanvastro gait-speed analogue), and which are rater-scored scales that need a control arm we may not be able to afford. Write the list before the pre-IND ask is drafted.
+- **Divested-asset screen — the 09-05 item now has a RESULT, so re-ask it with urgency (updated 2026-09-10; Eddie Cherok + Avi Khanna).** Afimetoran was discovered at Bristol Myers Squibb, licensed to Beeline in July 2025, and hit its Phase 2 primary in SLE on 09-09 at p<0.001 across all three doses. The original prompt (Pfizer's CD228 ADC at $12M upfront) showed the assets are CHEAP; this shows they can also be GOOD. Who owns the screen, what is the source (BD conference lists, 8-Ks, pipeline-page diffs, banker outreach), and what does a first pass over our theme areas surface?
 - **Tozorakimab exacerbation rate ratio in the EOSINOPHIL-LOW stratum (added 2026-09-08; Virginia Burger).** Three positive Phase 3s in COPD (OBERON, TITANIA, MIRANDA), **>5,400 patients randomized, and no exacerbation rate ratio disclosed in any of them.** The COPD theme's positioning decision turns on the effect size **in the eosinophil-low stratum specifically**: if the broad-population effect is carried by the eosinophil-high tail, then "works irrespective of eosinophils" is a **labelling** claim rather than a biological one, and the white space we assumed had closed has not. Full OBERON/TITANIA data were promised to a medical meeting; ERS 2026 ran 09-05 → 09-09 — pull it the moment AstraZeneca posts.
 - **Downside structure on single-readout BioVentures positions (added 2026-09-06; Emily Wilkinson + Eddie Cherok).** Royalty Pharma split its **$500M Ionis agreement $150M against pelacarsen royalties / $350M against Spinraza royalties**; pelacarsen went to **zero** (no milestones) and RP still expects **full recoupment and a modest positive return**, with the Spinraza interest reverting to Ionis at **$550M** of payments — a **1.1× return on total funded** — and reaffirmed its 2030 Portfolio Receipts target of ≥$4.7B the same day. **The binary was bought as an OPTION ON AN ANNUITY, sized so a zero costs the upside and not the principal.** Write down what our downside structure looks like on every position where one readout is the whole thesis, starting with **Clasp / GUARDIAN-101**. Equity-side version of the same lesson from the 09-04 charts: Alumis to ~$10 on the lupus miss, Ultragenyx halved on Angelman — mid-caps with one defining readout each. Source: https://www.globenewswire.com/news-release/2026/09/04/3356846/0/en/royalty-pharma-announces-update-on-novartis-phase-3-topline-results-for-pelacarsen.html
 - **Does USP15 modulation change p53-R175H peptide-HLA presentation? (added 2026-09-06; Avi Khanna + Jon Robbins.)** Padmanabhan's 2018 *Nat Commun* result routes R175H degradation through a **lysosomal** pathway, which does not feed MHC-I. CLSP-1025's potency scales with peptide-HLA copy number. Nobody has measured whether shifting R175H between lysosomal and proteasomal turnover changes presentation. Merge with the standing Clasp target-density item and put it to Clasp and to Padmanabhan (§2b) in the same week.

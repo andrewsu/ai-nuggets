@@ -2396,3 +2396,40 @@ Dedup: 16 candidates → 15 fresh (1 already shipped) against 332 ledger keys. T
 - ✗ BrainChild Bio $116M pediatric CAR-T · Moonwalk $70M RNAi · Pharvaris HAE · Structure obesity · Sandoz plant · CBER/CDER appointments — off-thesis
 - ✗ "Beyond China: five overseas destinations" — comparator thread worked hard 09-02/03/04, no new number; held for a slower day
 === 2026-09-09T02:30:00-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-10T02:10:09-07:00 start blackbird-brief ===
+Episode written and staged for the batch pipeline.
+
+**Published:** `2026-09-10-portfolio-watch` (Portfolio Watch, daily — Thursday, so no Sourcing Radar)
+
+`SKIP_TTS=1` was set, so per PIPELINE.md batch mode I wrote the script plus the two transient stubs (`.rss-item.xml` with `__LENGTH__`/`__DURATION__` placeholders, validated as XML in the feed's `itunes:` namespace; `.commit-msg`) and did **not** run `gen_tts.py`, publish to R2, touch `feed.xml`, or commit. `publish_pending.py` does those. Ledger appended (61 episodes / 325 items). `memory/blackbird-portfolio.md` revised in place.
+
+**Candidate funnel**
+
+| Source | Scanned | Survived relevance | Notes |
+|---|---|---|---|
+| BioSpace | 20 | 6 | homepage via WebFetch, worked |
+| Endpoints News (index via `r.jina.ai`) | 24 | 5 | index readable; **all article bodies paywalled** — routed every pick to primary press releases instead |
+| BioPharma Dive | ~2 dated | 1 | homepage gives few explicit dates |
+| BioBuzz | 5 | 0 | Baltimore tape is people-moves only |
+| JHTV newsroom | 5 | 1 | via `r.jina.ai` (403s direct) |
+| **Fierce Biotech** | 0 | 0 | **FAILED — `r.jina.ai` returned only a tracking-pixel stub, no article listing. Not retried; other sources carried the day.** |
+
+Shortlist after discarding off-thesis matches — **✅ = shipped**:
+- ✅ Encoded Therapeutics $275M Series F / ETX101 — **LEAD** (Aletira)
+- ✅ Acting CBER/CDER heads made permanent (Aletira + NuGate pre-IND)
+- ✅ Beeline afimetoran Phase 2 lupus win (Winnow)
+- ✅ BMS arlo-cel GPRC5D CAR-T Phase 2 win (Winnow/Clasp)
+- ✅ NodThera → Rezera, ruvonoflast Phase 3 (Parkinson's theme)
+- ✅ JHTV / Parikh donor-kidney urine test (Artemyx)
+- ✅ Solstice Oncology $225M + porustobart (BD comparator)
+- ✅ August layoffs −90% YoY (show notes only; cut from audio for length)
+- ✗ Kura/Caspian diabetes spinout, TwoStep ADC, Tyra bladder, Pharvaris, PDUFA VIII opinion, FDA rejection-disclosure, "Beyond China" — no line to a program
+
+Dedup: 16 candidates → 16 fresh; final roster re-filtered separately (8/8 survived) per the standing rule that late additions are unguarded.
+
+**Two things worth flagging:**
+
+1. **Length.** The script is 2,181 words ≈ 11.5 min against the brief's 6–9 min spec. I cut it three times (2,877 → 2,516 → 2,271 → 2,181) and dropped the labor-market paragraph to show notes. Getting to 9 min would mean cutting a whole program-touching item, so I stopped. Worth noting the last four episodes have all run 10–12 min — if the 6–9 target is real, the roster size needs to come down to ~4 items, not the copy.
+
+2. **The lead's second half is unflattering, deliberately.** Encoded's round validates Aletira's thesis and simultaneously argues that our cassette is *bigger* than a competitor's and that the expression-control layer doesn't buy capsid safety (third public falsification). I also flagged that Encoded's pivotal is the same open-label/developmental-scale structure that killed Ultragenyx's Angelman program seven days ago — and split it, because the seizure endpoint is defensible uncontrolled while the developmental half is not. That split is the episode's original contribution and it's also a rule turned back on Aletira.
+=== 2026-09-10T02:31:53-07:00 done  blackbird-brief (exit 0) ===
