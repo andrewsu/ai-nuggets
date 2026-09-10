@@ -3039,3 +3039,24 @@ On-target shortlist:
 
 Two source-access lessons worth flagging, both saved to memory: `grep -c '^## '` returns **0** on a fully-rendered jina PDF extraction (no markdown headings in PDF text) — that diagnostic only applies to `.full` HTML, and it nearly cost the endothelin deferral another day. And corporate newsroom index pages are the reliable bridge from a paywalled Endpoints headline to a citable primary source: Amgen's release carried the label's monitoring requirements and the reference list that supplied the IMforte citation, neither of which the trade coverage had.
 === 2026-09-09T02:50:17-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-10T02:40:09-07:00 start justice-biotech-brief ===
+Published today's episode. `SKIP_TTS=1` was set, so per PIPELINE I wrote the script plus the two transient stubs and stopped short of TTS, R2 publish, feed edit, and commit — `publish_pending.py` will do those after batch TTS.
+
+**Files written:**
+- `podcasts/justice-biotech-brief/scripts/2026-09-10-ts-104-twostep-pip-polyspecific-integrin-peptide-drug-conjugate-ind.md` (1,365 spoken words, ~7 min at 1.2×, in line with the last five episodes)
+- `…​.rss-item.xml` (validated: parses standalone and after simulated 4-space insert into `feed.xml`)
+- `…​.commit-msg`
+
+**Pick:** TS-104 — TwoStep Therapeutics' $62.5M Series A + FDA IND clearance (Business Wire, 2026-09-09). Read in full: the press release *and* the linked 2025 scientific poster, which is where the substance is. Both `Paper link:` URLs verified HTTP 200.
+
+The angle: PIP is an engineered knottin binding five tumor integrins, carrying one MMAE. The load-bearing experiment is a head-to-head against sigvotatug vedotin in Detroit 562 where the αvβ6 ADC's tumors escaped by antigen loss (αvβ6 H-score 42→2, total αv only 91→48) and PIP-MMAE then regressed already-resistant tumors — an additive second failure mode for the Phase 3 OS miss **this show covered on 2026-06-23**, and Pfizer Ventures co-led the round. The cleanest control is a format-, molar- and receptor-matched win over zelenectide pevedotin that isolates the binder; I noted that Bicycle has since deprioritized Duravelo-2, so both benchmarks are wounded and the bar is softer than the slide implies. Pushback centered on the unquantified active-conformation-selectivity claim being the only thing separating five integrins' coverage from five integrins' normal-tissue footprint.
+
+**Candidate funnel:**
+
+- **bioRxiv details API** — 457 records swept day-by-day for 09-08/09/10 (238 + 202 + 17); 316 were version 1 with an in-window date. Loose keyword pass: 54 hits, nearly all spurious (`biologic`→"biological", `cd3`→"Syndecan-3"/"CD34", `adc`→substring). Tight word-boundary regex: **7 hits, 0 on-target** — the JAK matches were virology/neuroscience (astrocytic JAK2-STAT3; Powassan NS5/TYK2; gammaherpesvirus cytokine signaling), plus a SYK/TAM myeloid paper, a sialome/CRC paper, an immune-doublet atlas, and an mRNA-LNP lipid paper. No preprint cleared the bar; the news channel carried the day.
+- **Endpoints News** — index read for the full 48h window. Shortlist: TwoStep ADC twist, $62.5M *(chosen)*; BMS GPRC5D CAR-T Phase 2 win; Inhibrx OX40 + cancer-vaccine combo; Tyra Phase 2 bladder; Beeline lupus. Article body paywalled → routed to the company's own Business Wire release + poster.
+- **BioPharma Dive** — headlines pulled; on-target items were already-shipped episodes (ivonescimab 09-03, autoimmune CAR-T halts 09-01) or off-target (pelacarsen).
+- **BioSpace** `/latest-news-press-releases` — scanned; nothing on-target net-new.
+- **Fierce Biotech — FAILED.** `r.jina.ai` returned an empty body; direct WebFetch returned HTTP 403. No retry attempted beyond those two channels; proceeded per the source-level-failures rule. Recall gap noted.
+- **Funder pages** — ARPA-H `/news` and NIH news-releases returned no matching content to the scrape; NSF surfaced only an off-target STC award. The ARPA-H cardiology AI awards did surface via Endpoints/BioSpace and are off-target for this show.
+=== 2026-09-10T02:48:42-07:00 done  justice-biotech-brief (exit 0) ===
