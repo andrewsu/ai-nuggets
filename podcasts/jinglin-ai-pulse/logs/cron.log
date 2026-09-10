@@ -2632,3 +2632,39 @@ Episode written. `SKIP_TTS=1` was set, so I followed batch mode: script plus the
 - **Podcast RSS** — Dwarkesh, Latent Space, MLST feeds checked. ✅ Latent Space, Anandkumar, Aug 26, 1:23:31 (**CHOSEN** — Deep Cut). Runner-up: MLST *AI 2040: Plan A report* with Kokotajlo & Larsen (Sep 8), a live candidate for tomorrow. Skipped as already-shipped: MLST/McGrath (09-06), Dwarkesh/Cotra (09-02). WhynotTV still stale.
 - **URL check** — all 22 source URLs verified 200 except openai.com and politico.eu (403 to curl, both fetched fine via jina — real pages). Dropped `tensorlab.cms.caltech.edu` (unreachable from this host, 000 on two attempts) and the two source lines for items I cut during trimming.
 === 2026-09-09T02:44:29-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-10T02:30:09-07:00 start jinglin-ai-pulse ===
+Episode written. Per `SKIP_TTS=1`, I wrote the script plus both transient stubs and made no TTS call, feed edit, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Published:** `podcasts/jinglin-ai-pulse/scripts/2026-09-10-what-a-token-buys.md` (2,573 spoken words ≈ 12.2 min at this show's measured 211 wpm-of-finished-audio rate) + `.rss-item.xml` + `.commit-msg` stubs. RSS item validated as parseable XML; all 13 external URLs in the source block returned HTTP 200.
+
+**Episode spine:** four items that are all arguments about the same denominator — what one unit of compute buys.
+
+**Candidate funnel**
+
+Hacker News front page (80 stories scanned, 22 AI-relevant, 9 shortlisted):
+- DeepSeek v4.1 Flash — 299 pts / 125 comments — https://news.ycombinator.com/item?id=49639090 — **CHOSEN** (lead)
+- GPT-6 Astra, looped transformers, and hidden reasoning (Raschka) — 421 pts — https://news.ycombinator.com/item?id=49627370 — **CHOSEN**
+- What will our economic future look like? (Anthropic) — 209 pts / 401 comments — https://news.ycombinator.com/item?id=49626373 — **CHOSEN**
+- Shopify acquires Tailwind — 1,025 pts — https://news.ycombinator.com/item?id=49626190 — **CHOSEN**
+- Desert Ant Labs: local, fast models on device — 444 pts — https://news.ycombinator.com/item?id=49624823 — **CHOSEN**
+- OpenAI might have stolen another major proof (Capraro) — 217 pts — dropped, Navier-Stokes story carried in full 09-09
+- Tao, "All grown-ups were once children" — 162 pts — dropped, Tao's non-renewable-resource thread ran 09-09
+- Qwen 3.8 follows GPT-5.5 Pro reasoning prefills — 211 pts — dropped for length; folds into the same hidden-CoT theme
+- AlphaGenome Atlas (594 pts), Meta Muse (644 pts), Cognition/RSA-260 — dropped as sibling-show territory or already covered
+
+Investment/business (Crunchbase venture index + TechCrunch + targeted search, last 7 days): Mistral $3.5B at $24B, Cognition $2B at $48B, Crusoe, FluidStack, Lyte all **already shipped** 09-07/09-08. Chai Discovery $400M and the Crunchbase weekly roundup surfaced by search were July — failed the recency gate. Net-new: Shopify/Tailwind and Desert Ant Labs.
+
+Podcasts (7 feeds fetched; Cognitive Revolution and Gradient Dissent RSS 404'd, one retry each, skipped):
+- TWIML #776, Chris Potts, "Do AI Tokenomics Matter More Than Model Benchmarks?" (Sep 9) — **CHOSEN as Deep Cut**
+- MLST "AI 2040: Plan A" — Kokotajlo & Larsen (Sep 8) — passed over: the underlying report is July 9, so the argument isn't new
+- MLST "Designing How AI Grows" — Tom McGrath — already the 09-06 deep cut
+- a16z "OpenAI Researchers on the Future of Mathematical Reasoning" (Sep 8) — dropped, 09-09 covered that ground
+- Interconnects "When will average people feel AI's impact?" (Sep 9) — folded conceptually into the Anthropic econ item
+- Dwarkesh/Ajeya Cotra, No Priors, Lex, Sequoia — nothing in-window and uncovered
+
+**Two sourcing notes worth flagging:**
+1. TWIML publishes no transcript for #776, so the deep cut is built on the Bigspin CPI study the episode is based on (read in full), with the script saying explicitly that I'm not quoting from the audio. This is the second week running that a podcast deep cut needed that caveat — the show's `PROMPT.md` names transcript extraction as a core deliverable, and the transcript availability just isn't there for most feeds. Worth deciding whether to bias future deep cuts toward podcasts that publish transcripts.
+2. `r.jina.ai` is currently returning a domain-wide `AbuseAlleviationError` block for `huggingface.co` (unrelated prior abuse, expires 10:26 UTC today). Direct `WebFetch` on the model card worked and carried the DeepSeek facts, so no recall loss — but the jina→HF channel is down for anyone running before that expiry.
+
+I also caught and corrected two errors in my own draft before finalizing: I had attributed an SSD-offload throughput benchmark to DeepSeek V4.1 when the Hacker News commenter was actually reporting it for Qwen's equivalent memory (the script now frames the offload as mechanism-inference rather than a published DeepSeek benchmark), and I had conflated Desert Ant's phone-vs-desktop audio numbers.
+=== 2026-09-10T02:40:12-07:00 done  jinglin-ai-pulse (exit 0) ===
