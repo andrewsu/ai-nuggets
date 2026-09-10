@@ -4094,3 +4094,44 @@ Shortlist (chosen marked ✅):
 
 One factual note worth flagging: Novartis's Tuesday move is reported inconsistently across outlets (8.85%–13.5%). Both scripts use the NYSE close of ~$138.51, about −10%, which is the CNBC/Bloomberg-consistent print, and describe it as the worst day since March 2020.
 === 2026-09-09T02:35:03-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-10T02:20:09-07:00 start calibr-briefing ===
+Both episodes are written. Since `SKIP_TTS=1` is set, I skipped TTS, R2 publish, the feed edit, and the commit — `publish_pending.py` handles those after batch TTS.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-09-10-pharma-headlines.txt` (2,147 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-09-10-beeline-afimetoran-tlr78-lupus-spotlight.txt` (2,289 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs validate as XML under the `itunes:` namespace and carry `__LENGTH__` / `__DURATION__` placeholders.
+
+---
+
+## Candidate funnel
+
+**Sources**
+- Endpoints News index (`r.jina.ai`) — ~25 items scanned, 14 in-window; **article bodies paywalled**, so every Endpoints item was verified against its primary press release
+- BioSpace latest-news + press releases — ~20 scanned, 11 in-window
+- BioPharma Dive homepage + 3 full articles — 3 opened in full
+- **Fierce Biotech / Fierce Pharma — FAILED.** `r.jina.ai` returned 238 bytes twice; `WebFetch` returned HTTP 403. Proceeded without it per PIPELINE.
+- STAT — not attempted (unreadable from this host)
+- Primary PRs / registries read in full: Bayer, Beeline (afimetoran + June Series A), Kura/Caspian, TwoStep, Lasker Foundation, ClinicalTrials.gov `NCT04895696` and `NCT05617677`, OncLive
+
+**Shortlist (Sept 9 evening → Sept 10 AM)**
+- ✅ **CHOSEN — headline lead** · Bayer sevabertinib (Hyrnuo) 1L accelerated approval, HER2-mutant NSCLC — biospace.com press release + onclive.com + Bayer full label safety
+- ✅ **CHOSEN — spotlight** · Beeline afimetoran Phase 2 SLE win — globenewswire.com/…/beeline-medicines-announces-positive-topline-results… (full text) + NCT04895696
+- ✅ Kura → Caspian Therapeutics, $50M, menin for diabetes — globenewswire (full text)
+- ✅ Encoded $275M Series F, ETX101 Dravet — biospace PR + encoded.com program page
+- ✅ Solstice Oncology $225M, porustobart CTLA-4 — biopharmadive.com (full)
+- ✅ TwoStep $62.5M + IND, TS-104 — biospace PR (full text)
+- ✅ NodThera → Rezera, ruvonoflast NLRP3 Phase 3 in PAD — globenewswire
+- ✅ Compass COMP005 52-week Part C, 13-pt MADRS — biospace PR
+- ✅ Tyra dabogratinib SURF302, 57% vs 70% bar — biopharmadive.com (full)
+- ✅ ARPA-H → UpDoc / Tempus AI / Atman Health, agentic AI in cardiology
+- ✅ Insilico GENESIS-IPF-3 first patient dosed — prnewswire
+- ✅ Lasker 2026 (orexin; Chugai factor IX/X bispecific; Michael J. Fox) — laskerfoundation.org
+- ✅ Market color: Aug layoffs −90% YoY, Merck NJ +53, Sandoz Slovenia $300M, ABPI UK investment
+- ❌ Novo ziltivekimab trial cancellations — already covered 2026-09-07 (futility stop); same story family
+- ❌ FDA rejection-disclosure proposal; "why apps want your medical records"; Sanofi/AZ #ERS26 detail — cut for time, ERS covered 09-08/09-09
+- ❌ Krazati withdrawal completed / Wegovy ages 6–12 — Wegovy pediatric shipped 09-08
+
+**Why afimetoran beat sevabertinib for the spotlight:** it is a direct, eight-day callback to the 09-02 Alumis spotlight (Foresite portfolio) on whether lupus trials are decided by mechanism or by endpoint — and the enpatoran WILLOW Cohort B miss on BICLA gives the same mechanism an opposite result, which makes the SRI-4-versus-BICLA and joint/rash-enrollment analysis the actual story. The Bayer approval leads the headlines instead.
+=== 2026-09-10T02:37:59-07:00 done  calibr-briefing (exit 0) ===
