@@ -4135,3 +4135,45 @@ Both RSS stubs validate as XML under the `itunes:` namespace and carry `__LENGTH
 
 **Why afimetoran beat sevabertinib for the spotlight:** it is a direct, eight-day callback to the 09-02 Alumis spotlight (Foresite portfolio) on whether lupus trials are decided by mechanism or by endpoint — and the enpatoran WILLOW Cohort B miss on BICLA gives the same mechanism an opposite result, which makes the SRI-4-versus-BICLA and joint/rash-enrollment analysis the actual story. The Bayer approval leads the headlines instead.
 === 2026-09-10T02:37:59-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-11T02:20:09-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the transient stubs and left TTS, R2 publish, feed insertion, and the commit to `publish_pending.py`.
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-09-11-pharma-headlines.txt` (2,163 words)
+- `podcasts/calibr-briefing/scripts/2026-09-11-novartis-governance-spotlight.txt` (1,815 words)
+- Matching `.rss-item.xml` stubs (validated as XML, `__LENGTH__`/`__DURATION__` tokens intact) and `.commit-msg` stubs for both.
+
+Scripts checked clean for markdown, bullets, URLs, and DOIs.
+
+**Candidate funnel**
+
+Sources scanned:
+- **Endpoints News index** (via `r.jina.ai` + `x-no-cache`) — 21 KB, healthy, newest item 15h old. 16 items scanned, 8 net-new since yesterday's run.
+- **BioSpace `/latest-news-press-releases`** — 30 items scanned across Sep 10–11, 13 relevant.
+- **BioPharma Dive homepage** — dates stripped again (known failure mode); yielded only the Sep 10 Reuters link, which turned out to be the lead.
+- **Clinical Trials Arena `/news/`** — healthy; 24 items scanned, 3 net-new.
+- **Fierce Biotech / Fierce Pharma** — `r.jina.ai` returned `AbuseAlleviationError`, blocked until 09:41 GMT. Skipped per the no-retry-loop rule.
+- **Reuters** — `r.jina.ai` blocked (729 bytes). Recovered via three syndication mirrors (investing.com, globalbankingandfinance.com, 933thedrive.com), which between them carried the verbatim Samra quotes, the governance/comp demands, and the full named-investor roster.
+- **STAT** — not attempted (bodies paywalled, story already fully sourced).
+
+Shortlist after discarding wire noise (appointments, inducement grants, conference participation):
+- **Novartis board under investor pressure — Artisan Partners / David Samra** — **CHOSEN (lead headline + spotlight)**
+- **FDA partial clinical hold, Biohaven BHV-7000 (opakalim), Kv7** — CHOSEN
+- **FDA leadership made permanent + first Deputy Commissioner for Technology and AI (Seehafer)** — CHOSEN
+- **CDER psychedelics framework in NEJM, ahead of the Sept 14 hearing** — CHOSEN
+- **Takeda: Andy Plump retiring June 2027** — CHOSEN
+- **Disc Medicine RALLY-MF Phase 2, DISC-0974 anti-hemojuvelin, at SOHO** — CHOSEN
+- **BioMarin CANOPY-HCH-3, vosoritide in hypochondroplasia, NDA filed** — CHOSEN
+- **BridgeBio Oncology narrows KRAS strategy (BBO-8520 + pembro)** — CHOSEN
+- **Shionogi redasemtide misses in acute ischemic stroke** — CHOSEN
+- **Modalis + Exegenesis, MDL-201 epigenome-edited utrophin in DMD** — CHOSEN
+- **Yarrow Bioscience $150M at $26, YB-101 anti-TSHR** — CHOSEN
+- **Breakthrough T1D international consensus on population screening (Diabetologia)** — CHOSEN
+- **MFN reshaping launch sequencing (Numerof survey, n=157)** — CHOSEN (closing policy note)
+- Lonza US factory / Samsung Bio $262M contract — dropped, manufacturing-only, no portfolio nexus
+- Oura IPO filing — dropped, health-tech device, off-target
+- "Endpoints 11 winners" retrospective; "blueprint for clinical AI" — dropped, paywalled feature copy, no primary source
+- August layoffs, UK investment recovery, FDA rejection-disclosure paper — dropped, covered yesterday or thin
+
+One note on the spotlight's construction: the shareholder indictment is only half right, and I said so on air rather than relaying it — pelacarsen is an Ionis-licensed asset, not an acquisition, and FDA accepted the del-zota BLA for priority review the same day HARBOR missed, so "goes to zero" does not survive contact with the pipeline. I also appended a durable note to the source-access memory on reconstructing blocked Reuters exclusives from the syndication ring.
+=== 2026-09-11T02:33:40-07:00 done  calibr-briefing (exit 0) ===

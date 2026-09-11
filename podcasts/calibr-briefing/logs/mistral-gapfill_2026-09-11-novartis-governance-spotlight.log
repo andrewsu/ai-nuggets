@@ -1,0 +1,6 @@
+Script body: 11361 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2731 chars) -> 134.8s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2921 chars) -> 143.6s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2965 chars) -> 125.6s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (2741 chars) -> 131.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-09-11-novartis-governance-spotlight.mp3 [mistral] 4,617,030 bytes, 577.1s
