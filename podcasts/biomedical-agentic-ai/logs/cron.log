@@ -4361,3 +4361,30 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 **Source failures:** none fatal. bioRxiv `.full` HTML for the chosen preprint returned the landing page (abstract-only, "Follow this preprint"), and the `.full.pdf` via `r.jina.ai` 429'd twice; a ~2-minute backoff got the full 77 KB body. arXiv cache is capped at 500 entries so 2026-09-10 submissions were not visible.
 === 2026-09-10T02:13:22-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-11T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two stub files and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written**
+- `podcasts/biomedical-agentic-ai/scripts/2026-09-11-assayloop-amortized-hit-discovery.md` (885 spoken words, under the 1150 cap)
+- `...rss-item.xml` (validated as XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `...commit-msg`
+
+**Pick:** AssayLoop / AssayBench-Loop — "Biology-in-the-loop: Amortized Adaptive Hit Discovery in CRISPR Screens", Genentech, arXiv 2609.11877 (v1, 2026-09-10). Full text read from the PDF via `mutool`. The take: 1,389 historical CRISPR screens turn adaptive hit discovery from something you evaluate into something you train; the labels-removed ablation shows frontier LLMs barely degrade when outcome feedback is stripped (Gemini 4.71 → 4.38), so they're priors not learners; two purpose-built agentic harnesses (2.39, 2.76) lose to a plain prompted LLM, to a generic Haiku coding agent (3.20), and to 2008-vintage BPMF on the raw hit matrix (4.49).
+
+**Candidate funnel**
+
+- **bioRxiv — FAILED.** `api.biorxiv.org/details` returned HTTP 200 with a zero-byte body for all four window days (09-08…09-11), all cursors, old dates, and single-DOI lookups; 6 retries/page at 8s each, 0 records. The `claude_ai_bioRxiv` MCP server wraps the same API and failed identically. Partial fallback via `connect.biorxiv.org/biorxiv_xml.php` gave 30 items, all dated 09-11, zero agentic/KG/ontology matches. Source skipped per PIPELINE.md; memory updated with the new outage signature.
+- **arXiv — 500 cached entries** (09-08 → 09-10; the 500-entry cap means no 09-11 coverage), 180 passed the agentic∩biomedical keyword filter, ~9 substantive after discarding spurious matches:
+  - ✅ **Biology-in-the-loop: Amortized Adaptive Hit Discovery in CRISPR Screens** — https://arxiv.org/abs/2609.11877 — **CHOSEN**
+  - MorphoOrgaAgent: multi-agent autonomous organoid analysis — https://arxiv.org/abs/2609.08696
+  - Autonomous Chemical Mechanistic Discovery (ARCHE) — https://arxiv.org/abs/2609.11147
+  - OntologyAligner: biomedical ontology normalization — https://arxiv.org/abs/2609.10055 (strong fit, but third ontology-normalization episode in ~2.5 weeks and two days after OntologyBench)
+  - NLPCC 2026 Task 11 / AgentActionBench: agent-based experiment reproduction — https://arxiv.org/abs/2609.11117
+  - Sci-MMR: evidence-grounded multimodal scientific reasoning — https://arxiv.org/abs/2609.11243
+  - The widening evaluation gap in medical LLM research — https://arxiv.org/abs/2609.11770
+  - Avatar: LLM orchestration of scientific workflows — https://arxiv.org/abs/2609.10509
+  - Target leakage audit, cardiovascular screening — https://arxiv.org/abs/2609.11838
+- **ChemRxiv** — `site:chemrxiv.org` searches surfaced nothing inside the 4-day window (newest hits were March/April 2026).
+- **PubMed — 300 records** (reldate=5), 46 keyword hits, ~3 substantive after discarding med-ed/clinical-chatbot noise: HAIant (Molecular Plant), Quinex quantitative extraction (The Innovation), Moltbook AI-agent network (Advanced Science). All weaker fits than the arXiv lead.
+- **Funder/policy** — ARPA-H posted ADVOCATE on 09-09 (FDA-authorized clinical AI for cardiovascular care) and an EHI recruitment call on 09-08; the detail page 404'd on fetch, and ADVOCATE is clinical-AI rather than agentic/KG, so it stayed off the shortlist. NIH/NSF/HHS: nothing on-target.
+=== 2026-09-11T02:06:45-07:00 done  biomedical-agentic-ai (exit 0) ===

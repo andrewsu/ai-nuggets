@@ -1,0 +1,27 @@
+# AssayLoop — an LLM picks the first three rounds of a CRISPR screen, then gets handed off
+
+Paper link: https://arxiv.org/abs/2609.11877
+
+## Script
+
+Today's paper comes out of Genentech, and it is the most honest accounting I have seen of what a language model actually contributes to closed-loop experiment selection.
+
+The setting is adaptive hit discovery in CRISPR screens. You have a genome-scale library, you cannot afford to test all of it, so you pick a few hundred genes, read out which ones are hits, and use that to decide what to test next. Here it is ten rounds, a hundred genes a round, about five percent of the library in total. This is the small, tractable version of the lab-in-the-loop story everyone is selling right now — the agent that designs the next experiment.
+
+What is new is the resource. They assembled thirteen hundred and eighty-nine published CRISPR screens across five phenotype families — viability, drug and environmental response, host-pathogen, reporter readouts, trafficking and structure — and split them by time: everything before 2021 to train on, twenty screens from after 2021 to test on. That is two orders of magnitude larger than the benchmark this subfield has been using, which contained four immunology screens. And the size changes the question you are allowed to ask. With four screens you can only evaluate an acquisition strategy. With thirteen hundred you can train one.
+
+So that is what they do. AssayFormer is a transformer that takes a plain-language description of the screen plus the list of genes already tested and whether each one hit, and scores every remaining gene. It is not a model of the biology. It is a model of how to choose. Completed experiments become training data for the act of experimenting. And it is the best single method in the paper.
+
+Now the part worth sitting with. They also ran the frontier models as acquisition policies — Gemini, GPT, Claude, Qwen, GLM, Kimi — prompted with the screen description and, each round, the accumulated results. The models do well early. Their prior biological knowledge is real: they know which genes belong in a ferroptosis screen before a single well has been read. But then the authors ran the control that matters. Same models, outcome labels stripped out of the prompt. Blind. And performance barely moves — Gemini goes from an enrichment factor of four point seven down to four point four. The model is not learning from the experiment. It is re-ranking its priors and calling that adaptation.
+
+That result should propagate. There is a whole genre of agentic hit-discovery harness whose entire pitch is feedback-driven refinement, and two of them, purpose-built for exactly this task, sit in the comparison table at enrichment factors of two point four and two point eight. Worse than a plain language model handed the screen description. Worse than a generic coding agent running on Haiku with raw access to the training screens. And well behind Bayesian probabilistic matrix factorization — a 2008 method, run on nothing but the binary hit matrix — at four point five. The scaffolding is losing to the data.
+
+Their system, AssayLoop, is the concession that falls out of this. Let the language model run the first three rounds as a warm start, then hand off to the trained policy for the remaining seven. That combination beats either piece alone: enrichment factor five point seven, and twenty-eight percent of all hits recovered after touching five percent of the library. It is not an ensemble and it is not a debate between agents. It is a schedule, and the schedule says the language model's useful contribution has an expiry date about three rounds in.
+
+Two more things. The scaling curve runs on screens, not parameters. Performance more than doubles across the range of training-set sizes with no visible plateau, while a forty-fold increase in model capacity buys essentially nothing. If you want a better experiment-picker, go find more old screens. That makes the public archive of completed, published screens the actual asset here — an argument for data sharing that does not have to appeal to anybody's better nature.
+
+And because the policy updates its scores the moment you tell it something hit, you can interrogate it. Add MYC to the history as a hit and it raises its bid on spliceosome factors, which matches a decade of work on MYC-driven spliceosome vulnerability. Add MDM2 and it reaches for ribosome biogenesis genes, which is the nucleolar surveillance route to p53 stabilization. Those pairs were filtered out of every interaction database the authors checked, so the model is not reciting STRING back at them. And roughly half the reciprocal pairs are asymmetric — observing A moves B up while observing B moves A down — which no symmetric similarity embedding can express at all.
+
+The honest limits: this is retrospective. Twenty test screens, binary hit labels treated as ground truth, no replicate noise modeled, and nothing has yet run in a live loop where the policy's own choices generate the next round's data. That is the experiment that decides whether any of it holds.
+
+But the framing is the contribution. Treat your archive of finished screens as a training set for decision-making, then measure what the language model adds using the labels-removed control. You get a number instead of a vibe. Most agentic-science papers never run that control. This one did, and the number is small.

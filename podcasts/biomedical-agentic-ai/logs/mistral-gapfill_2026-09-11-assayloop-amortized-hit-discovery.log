@@ -1,0 +1,4 @@
+Script body: 5299 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2983 chars) -> 137.7s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2314 chars) -> 113.6s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-09-11-assayloop-amortized-hit-discovery.mp3 [mistral] 2,239,051 bytes, 279.8s
