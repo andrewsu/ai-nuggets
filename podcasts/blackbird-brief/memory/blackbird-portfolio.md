@@ -105,6 +105,23 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     preference; it is the prevailing price of a discovery-through-early-clinical partnership with an experienced ex-US platform company.
     The differentiator still has to be something the buyer CANNOT source in Shanghai or Seoul — human data run under FDA inspection
     (see the 09-03 discount above), or a genuinely unencumbered composition-of-matter position.**
+  - **AND NOW THE *BUY SIDE* IS UNDER PUBLIC BOARD PRESSURE, WHICH MOVES THE MONEY OUT OF UPFRONT AND INTO MILESTONES
+    (added 2026-09-11 Portfolio Watch item 5; reported 2026-09-10/11).** **Eight Novartis shareholders told Reuters** that
+    **del-desiran's Phase 3 failure** (covered 09-09) — the second major setback in days — raised questions over the **$12B
+    Avidity purchase (2025)** and other acquisitions. **Shares fell 11% in one day, ~$30B of market value, erasing all gains since
+    the start of the year.** **Artisan Partners** MD **David Samra**: *"The party is over"* — calling for a **board shakeup and a
+    dealmaking overhaul**, naming chairman **Giovanni Caforio**. The **$2.9B MorphoSys** takeover cited as another poor deal, with
+    an **$800M impairment** booked between taking a controlling stake (May) and closing (October). **US patents on Cosentyx,
+    Kisqali and Kesimpta expire 2029–2031**, so the buying cannot stop.
+    **DURABLE READ (Eddie Cherok + Emily Wilkinson + Hemaka Rajapakse): under board pressure an acquirer does not do FEWER deals —
+    it changes the TERMS and the EVIDENCE BAR. More weight on a HUMAN proof-of-concept, less on a platform narrative, and more of
+    the consideration moved from UPFRONT into MILESTONES.** Same conclusion as the 09-05 $12M Pfizer/Medicus repricing, arriving
+    from the acquirer's GOVERNANCE rather than from the asset. ⇒ **Doubles the case for the standing divested/shelved-asset screen
+    (09-05 action, still not stood up): a pressured acquirer pays LESS for what we sell and divests MORE of what we could buy.**
+    **GOVERNANCE PAIRING (Emily Wilkinson): the 09-07 Novo item asked who at Blackbird has authority to KILL a running programme.
+    This is the other half — who is accountable for the deals that were DONE. Decide both in advance, not in the week it matters.**
+    Sources: https://www.biospace.com/business/novartis-board-faces-investor-scrutiny-after-m-a-misfires-and-r-d-flops ·
+    https://www.investing.com/news/stock-market-news/novartis-investors-turn-spotlight-on-ma-after-trial-setbacks-4897220
   - **THE COMPARATOR GAINS A VENTURE ROW — A SYNDICATE RAN THE SAME TRADE, AND IT IS A COMPETITOR FOR OUR CAPITAL RATHER THAN OUR
     BUYER (added 2026-09-10 Portfolio Watch item 7; announced 2026-09-09).** **Solstice Oncology (founded February 2026) raised a
     $225M Series A led by RA Capital Management**, with **Canaan Partners** and **Forbion**. Sole asset: **porustobart**, a
@@ -361,7 +378,14 @@ our live lead on this theme is the Chatterjee lab *gdpP* / cyclic-di-AMP β-lact
 clinical proposition depends on reading a tolerance phenotype fast enough to change therapy. A rapid phenotypic susceptibility
 platform in the same city is either a COLLABORATOR or a competitor's differentiator — have the conversation before it is the second
 one.** Secondary: the 250/500/750 escalation is the same milestone-based non-dilutive structure Blackbird Laboratories runs, executed
-three times on one company in Baltimore — worth learning how TEDCO set those milestones. Sources:
+three times on one company in Baltimore — worth learning how TEDCO set those milestones.
+**UPDATED 2026-09-11 (Maryland RealLIST Innovators 2026, published 09-10): CSO **Christopher Skipwith** named to the list; Astek is
+sited at the **UNIVERSITY OF MARYLAND BioPARK** (not just "Baltimore"), and the platform is **expanding beyond urine into CSF,
+effluent and blood.** ⇒ The overlap with our chronic-infections theme is WIDENING, which shortens the window on the
+collaborator-or-competitor conversation above. Also logged from the same list as an unworked JHU-linked sourcing lead:
+**Christopher Adrian Johnston / DUA** — engineered proteins for CAR-T in solid tumours, built on a Johns Hopkins PhD thesis.
+Source: https://biobuzz.io/news/five-of-marylands-15-reallist-innovators-for-2026-have-ties-to-life-sciences-and-healthcare/**
+Sources:
 https://biobuzz.io/news/tedco-puts-750000-behind-astek-diagnostics-as-its-rapid-infection-test-nears-the-clinic/ ·
 https://www.tedcomd.com/news-events/press-releases/2026/tedco-invests-750000-astek-diagnostics
   - **SPEED IS ONE AXIS; PHYSIOLOGICAL REALISM IS ANOTHER — the antibiotic passes the assay and fails the organ (added
@@ -384,6 +408,21 @@ https://www.tedcomd.com/news-events/press-releases/2026/tedco-invests-750000-ast
     CLIA lab.** Sources:
     https://www.genengnews.com/topics/translational-medicine/micro-bladder-model-demonstrates-how-phage-therapy-could-help-to-reduce-recurrent-utis/ ·
     paper https://doi.org/10.1038/s41467-026-76589-y
+  - **THIRD INSTRUMENT IN ELEVEN DAYS, AND THE THREE ANSWER THREE DIFFERENT QUESTIONS — ours is the one nobody is selling
+    (added 2026-09-11 Portfolio Watch item 2; announced 2026-09-11).** **Nutromics** (Melbourne AU + San Diego CA; CEO/co-founder
+    **Peter Vranes**) received **FDA Breakthrough Device Designation** for a **wearable vancomycin therapeutic-drug-monitoring
+    patch** — a "lab-on-a-patch" pairing **DNA-based sensors with minimally invasive microneedles** to read drug concentration
+    **continuously and in real time** instead of by periodic blood draw. FDA cited **workflow, accessibility, and returning
+    actionable results / modified dosing sooner than standard of care**. **First-in-human data in *Nature Biotechnology*,
+    February 2026**; ICU studies run in Australia, US studies in preparation; **~2.9M US patients/yr on vancomycin**; **US launch
+    targeted 2027**.
+    **THE MAP (Yixuan Qiu + Eddie Cherok + Avi Khanna): Astek = WHICH DRUG, <1 h, STATIC assay. Rohn/UCL micro-bladder = DOES IT
+    WORK IN A REALISTIC ORGAN, under flow, against intracellular reservoirs. Nutromics = HOW MUCH DRUG IS IN THIS PATIENT NOW
+    (pharmacokinetics).** Our live lead — the **Chatterjee *gdpP* / cyclic-di-AMP β-lactam TOLERANCE** work at UMB — needs the
+    **MIDDLE** question, and that is **the only one of the three with no commercial owner, no designation and no launch date.**
+    ⇒ **The instrumentation around this theme is filling in from both ends and leaving the middle open: either the gap we build
+    in, or the reason the theme stays a research programme.** Source:
+    https://www.biospace.com/press-releases/nutromics-receives-fda-breakthrough-device-designation
 
 **COPD theme — the UPSTREAM ALARMIN LAYER IS CONTESTED AT FOUR POINTS ON ONE PATHWAY; the two differentiators on offer were a PROPERTY or a POPULATION, and as of 2026-09-09 the POPULATION lane is TAKEN
 (opened 2026-08-29 Portfolio Watch item 4; four-seat map added 2026-09-08 Portfolio Watch LEAD; full tozorakimab dataset + eosinophil gradient added 2026-09-09 Portfolio Watch LEAD).** Two independent wins for the epithelial alarmin
@@ -661,6 +700,35 @@ _Last update: 2026-09-10_
   https://www.biospace.com/press-releases/encoded-therapeutics-raises-275-million-in-series-f-financing-to-advance-etx101-through-pivotal-development-and-accelerate-its-precision-genetic-medicines-neurology-pipeline ·
   https://encoded.com/programs/etx101-for-dravet-syndrome/ ·
   https://encoded.com/encoded-therapeutics-doses-first-patient-in-pivotal-study-of-etx101-for-dravet-syndrome-and-reports-broader-portfolio-progress/
+- **THE COMPETING SELECTIVITY LAYER IS THE *CAPSID*, AND IT REACHES DOSE — which is why the SELEXON claim must NARROW to survive
+  (added 2026-09-11 Portfolio Watch LEAD; announced 2026-09-11, agreement effective 2026-09-14).** **Modalis Therapeutics**
+  (TOKYO: 4883; founded 2016, R&D in Massachusetts; CEO **Haruhiko Morita**) signed a **research collaboration and license
+  agreement** with **Exegenesis Bio** (Horsham PA + Hangzhou; CEO **Zhenhua Wu**), taking rights to **EMC181 — an engineered
+  AAV capsid with high MUSCLE tropism and explicit LIVER-DETARGETING** — for **MDL-201** in Duchenne. Payload = **CRISPR-GNDM**
+  (Guide Nucleotide-Directed Modulation) epigenome editing, which **activates endogenous UTROPHIN without cutting
+  double-stranded DNA** and is **mutation-agnostic** because utrophin is a different gene from dystrophin.
+  **THE DURABLE READ (Geoff Lynn + Hugh Wells + Avi Khanna) — this is the direct answer to the 09-10 line "expression control
+  governs neither the capsid nor the dose."** Capsid engineering governs **both**: which organ is transduced, and how much
+  vector that organ must receive. ⇒ **Two selectivity layers now compete for the same slide, and ours is not the one that
+  speaks to dose. THE SENTENCE THAT SURVIVES: a CAPSID picks an ORGAN; SELEXON picks a CELL TYPE WITHIN an organ.** No
+  engineered capsid distinguishes cochlear supporting cells from hair cells, or inhibitory interneurons from the excitatory
+  neuron beside them. **Do NOT claim organ selectivity or dose reduction from mechanism — claim the residual problem, which is
+  real and unowned.**
+  **AND IT PROMOTES THE LEAD INDICATION FROM "good biology fit" TO "strongest ground for the argument."** An **intracochlear
+  injection already solves organ targeting geographically** — local delivery, small total dose, liver largely out of the
+  picture — so **in the ear, tropism and liver-detargeting buy very little because the anatomy has already bought them**, and
+  the residual problem is exactly the **08-18 Skylark question** (connexin 26 into SUPPORTING cells, not hair cells, at roughly
+  the right level; gap junctions are dose-sensitive). **Series A framing: our lead indication is the setting where the
+  competing layer is worth LEAST and ours is worth MOST.**
+  **THE BOLT-ON JUST GOT PRICED (Eddie Cherok + Emily Wilkinson).** A bolt-on delivery layer was licensed into someone else's
+  programme as a **research collaboration whose current-year financial impact the licensee publicly called IMMATERIAL, with no
+  revision to guidance.** ⇒ **That is the public comparable for "bolt-on to any vector" AS A BUSINESS MODEL, and it is small** —
+  the 09-05 $12M Pfizer/Medicus repricing seen from the licensee's side. **Aletira must be a PRODUCT company with SELEXON
+  inside; out-licensing the layer is a second revenue line, not the valuation.**
+  **CASSETTE ARGUMENT, SECOND INDEPENDENT INSTANCE IN TWO DAYS:** Encoded upregulates endogenous *SCN1A*; Modalis upregulates
+  endogenous utrophin. **Neither delivers a gene; both deliver a switch.** The 08-19 kilobase item is now a **pattern**, not one
+  competitor's choice. Source:
+  https://www.biospace.com/press-releases/exegenesis-bio-and-modalis-collaborate-to-advance-mdl-201-for-duchenne-muscular-dystrophy
 - **DIRECT COMPETITOR NOW CLINICAL in the lead indication (2026-08-18 Portfolio
   Watch LEAD; event dated 2026-08-11, caught a week late):** **Skylark Bio**
   (Cambridge MA, out of stealth 08-11; CEO **Jodi Cook, PhD**; sci. advisor
@@ -1963,10 +2031,21 @@ _Last update: 2026-09-10_
   https://www.biopharmadive.com/news/roche-eli-lilly-get-fda-nod-for-new-alzheimers-blood-test/828720/
 
 ### Biolinco — barcoded antibody production ✅
-_Last update: 2026-08-28_
-- **What:** **barcoded antibody production.**
+_Last update: 2026-09-11_
+- **What:** **barcoded antibody production.** JHTV's own commercial framing (2026
+  Blaze Award citation) is sharper and worth reusing: **"DNA barcoding technology
+  to improve drug MANUFACTURABILITY"** — i.e. positioned as a bioprocess /
+  developability tool, not only a multiplexed-reagent play.
 - **Science:** founders are postdocs in **Reza Kalhor's** lab (JHU) — same lab
   behind the spatial-omics platform tracked in §2b.
+- **People:** **Kevin Wen** (JHU Whiting School of Engineering) — named founder on
+  the JHTV award citation.
+- **Recognition:** **2026 JHTV Blaze Award, Alumni category ($15,000)**, awarded
+  through the **Pava Marie LaPere Center for Entrepreneurship**. *Note for Eddie /
+  Maisha: the top prizes in that same programme are the **Bisciotti Foundation
+  Awards** ($30k first / $20k second) — our founding funder is also the named
+  sponsor of JHTV's student-venture prize, which is a warm channel into the
+  pre-formation JHU founder pool, not just a coincidence.*
 - **Watch:** DNA-barcoded antibody / multiplexed proteomics reagent platforms.
 
 ### Clasp Therapeutics — JHU-born precision immuno-oncology (TCR-mimic bispecific T-cell engagers) ✅
@@ -2047,6 +2126,26 @@ _Last update: 2026-08-28_
   target-density item (§4, added 2026-09-05), and there is an investigator four miles from the BioHub with eight years on the
   degradation biology of this exact mutant. ACTION (Avi Khanna + Jon Robbins): take the meeting; want the answer whichever way it comes
   out.** Padmanabhan's current programme is the **USP15–ZNF217 loop in ovarian cancer** — see his entry in §2b.
+- **A FUNDED SMALL-MOLECULE COMPETITOR WITH 63% ORR IN THE *NAÏVE* SETTING CHOSE THE *POST-INHIBITOR* PATIENT ANYWAY — which
+  validates CLSP-5282's position and sets its bar in the same announcement (added 2026-09-11 Portfolio Watch item 4; announced
+  2026-09-08, stock reaction covered 09-10).** **BridgeBio Oncology Therapeutics (BBOT)** reported **BBO-8520** data — an oral
+  direct **KRAS-G12C inhibitor binding both the ON and OFF states** — and narrowed strategy. **Monotherapy, 2L+ G12C-inhibitor-
+  NAÏVE NSCLC: ORR 63% (26/41), DCR 100% (41/41), 21/28 eligible still on treatment beyond 6 months, no grade 3 liver enzyme
+  elevations. Combination with pembrolizumab, 2L+ G12C-inhibitor-EXPERIENCED NSCLC: ORR 75% at 500 mg QD, 53% across all doses
+  (N=17).** **PRIORITIZED: the pembrolizumab combination in the EXPERIENCED population, plus BBO-11818 / BBO-10203 combinations.**
+  CEO **Pedro J. Beltran**. **$344.1M cash at 2026-06-30, runway into 2028** — so this is a CHOICE, not a constraint. Catalysts:
+  **Q4 2026** BBO-11818 / BBO-10203 monotherapy update; **mid-2027** expanded combination dataset plus CRC and PDAC cohorts.
+  **READ (Jon Robbins + Avi Khanna + Eddie Cherok), four parts. (1) VALIDATION BY CAPITAL ALLOCATION: a well-capitalized company
+  with a differentiated binder and 63% ORR in naïve patients declined the naïve setting and went post-inhibitor, in combination
+  with a checkpoint inhibitor — precisely CLSP-5282's stated position. (2) AND IT SETS THE BAR: everyone is converging on that
+  population, and a ONCE-DAILY ORAL PILL plus Keytruda gets there first. (3) ELIGIBLE-FRACTION ROW (per 09-01): the pill needs
+  ONE gate (mutation); our engagers need TWO multiplied gates (mutation AND HLA). (4) The market marked BBOT DOWN for narrowing
+  — that is how it currently prices "we will take the refractory population" as a strategy.**
+  **ADVENTRIS READ, and it runs the other way: if the small molecules hold the naïve setting and then converge on the resistant
+  one, the INTERCEPTION / ADJUVANT window a synthetic long-peptide vaccine plays in is the one stretch of the disease timeline
+  nothing in this announcement contests.** Sources:
+  https://www.biospace.com/press-releases/bbot-announces-new-bbo-8520-data-highlights-strategic-focus-on-2l-nsclc-bbo-8520-combination-as-well-as-bbo-11818-and-bbo-10203-combinations-in-kras-mutant-cancers ·
+  https://endpoints.news/bridgebio-oncology-slides-as-it-tightens-the-scope-of-its-kras-program/ (headline only; body paywalled)
 - **THE CEILING AND THE BAR MOVED IN THE SAME ANNOUNCEMENT — an off-the-shelf engager won OVERALL SURVIVAL in FIRST-LINE
   MAINTENANCE (added 2026-09-09 Portfolio Watch item 3; announced 2026-09-08).** **Amgen's Phase 3 DeLLphi-305** met its primary
   endpoint: **tarlatamab (Imdelltra, DLL3 × CD3 T-cell engager) + durvalumab vs durvalumab alone as FIRST-LINE MAINTENANCE** in
@@ -2319,6 +2418,31 @@ raises, exits, or crosses a scientific milestone.
   Delaware LLC → C-corp conversion; IND-enabling milestones on Isle43; ZnT8-chassis patent
   applications (Fu / Yun inventors; JHU assignee) and their license status to Islex; company website
   / LinkedIn / PitchBook updates; any partnering with T1D-immunotherapy or islet-transplant players.
+- **THE FINDING MECHANISM ARRIVED BEFORE THE DRUGS — and it screens for the SAME PROTEIN Islex targets, while building a
+  population Islex is pointed DOWNSTREAM of (added 2026-09-11 Portfolio Watch item 3; published 2026-09-10).**
+  **Breakthrough T1D convened ~30 international experts**; consensus published in ***Diabetologia*** — *"International consensus
+  guidance for general population screening for islet autoantibodies to diagnose early-stage type 1 diabetes"* — **endorsed by
+  20 global diabetes societies** incl. **EASD** and **ISPAD**. **Recommendation: first screen at ages 2–4 during routine
+  preventive visits; rescreen negatives at 6–8 and again at 10–15; confirm any positive with a second test. ≥2 persistent islet
+  autoantibodies = stage 1 or 2 T1D, with progression to stage 3 highly likely.** Cited benefits: lower DKA at diagnosis,
+  access to disease-delaying intervention, trial access. Builds on the 2024 monitoring consensus.
+  **READ ONE — THE SCREEN AND THE DRUG POINT AT THE SAME PROTEIN. ZnT8 is one of the islet autoantibodies this guidance tells
+  paediatricians to look for, and it is also the beta-cell surface address the Fu-lab chassis uses to home to the islet.** The
+  autoantibody that FINDS the patient and the epitope that DELIVERS the drug are the same epitope — a genuinely unusual
+  diagnostic/therapeutic coincidence, and a good opening line on a first call.
+  **READ TWO — THE CANDID ONE, A POSITIONING QUESTION FOR EDDIE'S FIRST READ (not a science objection). The guidance builds
+  infrastructure for finding STAGE 1–2, PRE-SYMPTOMATIC patients with beta cells still present. Islex's stated indications are
+  STAGE 3, LADA and severe insulin-dependent T2D, and its mechanism is beta-cell PRESERVATION.** Preservation is worth the most
+  exactly where this pathway delivers patients, and the company is currently pointed downstream of it. **Much cheaper to ask
+  now than after a Series A.**
+  **READ THREE — THE SELECTION RULE, RESOLVED THE OTHER WAY (Anthony Accorsi + Jon Robbins).** Where the **09-08 Parkinson's**
+  entry recorded an absent finding mechanism as why that field has a graveyard, **T1D just had 20 societies endorse one, at
+  named ages, inside routine paediatric care, AHEAD of the disease-modifying drugs.** ⇒ **Infrastructure a therapeutic can be
+  built on rather than a hope attached to one. Put it to any programme claiming an early-intervention indication: who is
+  building YOUR version of it.** Sources:
+  https://www.biospace.com/press-releases/breakthrough-t1d-convened-paper-outlines-first-international-consensus-guidance-on-general-population-screening-for-early-stage-type-1-diabetes ·
+  https://www.breakthrought1d.org/news-and-updates/t1d-screening-consensus-guidance/ (*Diabetologia* DOI not resolvable at run
+  time 2026-09-11 — cited by title/journal/date; resolve before it goes in a deck)
 - **Links.** https://www.islextherapeutics.com/ ; NSF/SBIR https://www.sbir.gov/awards/208358 ;
   papers 10.2337/db26-0183, 10.2337/db22-0477 (PMC9876881).
 
@@ -3226,6 +3350,37 @@ _Last update: 2026-09-06_
   INSTRUMENT — require every oncology programme we read to answer CYTOSTATIC vs CYTOTOXIC explicitly rather than quoting a monolayer EC₅₀/IC₅₀;
   (b) BioHub SHARED-CAPABILITY candidate on the EPOCH Epigenetics CLIA-lab template (Yixuan Qiu + Esther Park).** Wirtz is JHU Vice Provost for
   Research — assume JHTV has already triaged this; ask them what they concluded.
+
+### CraniUS Therapeutics (Baltimore) — JHU spinout, skull-embedded CNS drug-delivery platform; REGULATORY-SEQUENCING template + a delivery ROUTE on the shelf ⚠
+_Last update: 2026-09-11_
+- **Profile.** Baltimore neurotechnology company, **founded 2021, Johns Hopkins spinout**. Founder / Executive Chairman / CMO
+  **Dr Chad Gordon** (Hopkins surgeon who founded the field of **neuroplastic surgery**; 15+ years on the temporal cranial space
+  as a therapeutic-delivery site). COO/CTO **Mark Wladkowski**. **$20M Series B closed January 2026.**
+- **What just happened (2026-09-10).** **FDA 510(k) clearance, submission K261058, for the CraniUS Plate** — a **Class II
+  preformed alterable cranioplasty plate**, individually designed and manufactured per patient, for cranial defects from trauma,
+  tumour resection and decompressive craniectomy. Framed as **"NeuroPASS 1."**
+- **The platform behind it (INVESTIGATIONAL, not authorized).** **NeuroPASS** — a fully implantable, skull-embedded architecture
+  with **refillable reservoirs, a miniature pump, catheters and wireless charging**, supporting programmable targeted infusions
+  and intended to **BYPASS THE BLOOD–BRAIN BARRIER**; prior **convection-enhanced-delivery** evidence. Wladkowski: *"a cleared,
+  manufacturable base that the rest of the platform is designed to build on. The architecture is configurable by intent, so brain
+  access, diagnostics, and drug delivery can be added to the same base as each of those programs matures and is authorized on
+  its own."*
+- **WHY WE TRACK IT — READ ONE, THE TRANSFERABLE LESSON IS REGULATORY SEQUENCING (Esther Park + Virginia Burger + Avi Khanna).**
+  They isolated the **one component of a moonshot that could clear on its own** — a passive structural plate — cleared it, and
+  now every ambitious module bolts onto something that already carries **a clearance, a manufacturing process and a quality
+  system**. ⇒ **STANDING ACTION: for any Blackbird programme with a device or combination-product element, ask which piece can
+  clear FIRST and what that clearance buys the rest.**
+- **READ TWO, HELD LOOSELY — it is a ROUTE, and its customers are CNS assets that fail on brain EXPOSURE rather than on
+  mechanism.** Nothing in the portfolio needs it today (the **Lieber GPR52** programme is an oral small molecule intended to be
+  brain-penetrant), **but a locally implanted, refillable, programmable reservoir being built four miles from the BioHub is worth
+  knowing before a programme needs one.** Relevant to any future CNS biologic / oligonucleotide.
+- **HONEST LIMITS.** One Class II clearance on the **simplest** component; a $20M Series B; **every interesting module still
+  investigational**; the release disclosed **neither commercial availability timing nor first users**. Not a licensing lead —
+  a landscape and pattern entry.
+- **Watch.** NeuroPASS module authorizations (brain access / diagnostics / drug delivery), any pharma co-development or
+  device-drug combination partnership, Series C, BioHub proximity/collaboration, JHTV licence roster.
+- Sources: https://biobuzz.io/news/baltimores-cranius-therapeutics-wins-fda-clearance-for-its-patient-specific-cranial-implant/ ·
+  https://www.biospace.com/press-releases/cranius-therapeutics-closes-20-million-series-b-round-to-advance-neuropass-platform-towards-future-commercialization
 
 ### Elisseeff lab fibroid-senescence atlas (JHU) — WATCH, not a build (deferred 08-09 lead, closed 2026-08-16) ⚠
 - **Lab / people.** **Jennifer H. Elisseeff, Ph.D.** (JHU; senior) with Mostafa Borahay + James Segars (JHU Gyn/Ob) and **Elana Fertig** (UMB genome sciences). "Senescent cell networks link matrix remodeling and vascular dysfunction in human fibroids," bioRxiv v1 2026-08-07 (DOI 10.64898/2026.08.06.743362) — full text NOW RENDERED (157KB) and read 2026-08-16.

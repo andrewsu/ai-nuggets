@@ -2433,3 +2433,35 @@ Dedup: 16 candidates → 16 fresh; final roster re-filtered separately (8/8 surv
 
 2. **The lead's second half is unflattering, deliberately.** Encoded's round validates Aletira's thesis and simultaneously argues that our cassette is *bigger* than a competitor's and that the expression-control layer doesn't buy capsid safety (third public falsification). I also flagged that Encoded's pivotal is the same open-label/developmental-scale structure that killed Ultragenyx's Angelman program seven days ago — and split it, because the seizure endpoint is defensible uncontrolled while the developmental half is not. That split is the episode's original contribution and it's also a rule turned back on Aletira.
 === 2026-09-10T02:31:53-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-11T02:10:09-07:00 start blackbird-brief ===
+Episode published for `blackbird-brief` — 2026-09-11 Portfolio Watch (Friday, so Portfolio Watch only; no Sourcing Radar).
+
+`SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does those after batch TTS.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-09-11-portfolio-watch.md` (2,238 spoken words)
+- `podcasts/blackbird-brief/scripts/2026-09-11-portfolio-watch.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders in place)
+- `podcasts/blackbird-brief/scripts/2026-09-11-portfolio-watch.commit-msg`
+- Ledger appended: 7 keys, now 62 episodes / 353 match forms
+- `memory/blackbird-portfolio.md` updated **in place** (6 entries revised, 1 added — no dated run log appended)
+
+**Roster**
+
+| # | Item | Program touched | Read |
+|---|---|---|---|
+| LEAD | Modalis licenses Exegenesis's muscle-tropic, **liver-detargeting** AAV capsid for its utrophin-activating epigenome editor | Aletira / SELEXON | The competing selectivity layer is the **capsid**, and unlike SELEXON it reaches organ exposure *and* dose. Forces the claim to narrow to what a capsid can't do — cell type *within* an organ — which makes hearing loss the strongest ground, since an intracochlear injection already buys what a capsid sells. Plus: the bolt-on got priced as an "immaterial" research collaboration |
+| 2 | Nutromics wins Breakthrough Device Designation for a continuous vancomycin patch | Chronic infections + Chatterjee (UMB) | Third instrument in 11 days; the three answer three different questions, and the tolerance-phenotype one our lead needs is the only one with no commercial owner |
+| 3 | 20 diabetes societies endorse general-population islet-autoantibody screening (*Diabetologia*) | Islex / Fu lab | Screens for the same ZnT8 epitope Islex's drug uses as its delivery address — while building a stage-1/2 population Islex is pointed downstream of |
+| 4 | BridgeBio Oncology: 63% ORR in KRAS-inhibitor-naive patients, goes post-inhibitor anyway | Clasp, Adventris | Validates CLSP-5282's positioning by capital allocation *and* sets its bar with a once-daily pill |
+| 5 | Eight Novartis shareholders + Artisan Partners put the board's dealmaking under public pressure | BD-comparator thread | Board pressure changes terms, not volume: money moves out of upfront into milestones on the buy side of our exit |
+| 6 | CraniUS (JHU spinout) clears the one component of a BBB-bypass moonshot that could clear alone | JHU partner beat | Regulatory-sequencing template, plus a CNS delivery route four miles from the BioHub |
+
+**Funnel:** ~95 items across BioSpace (homepage + press-release index), BioPharma Dive, Endpoints, BioBuzz, JHTV, plus targeted searches on hearing-loss gene therapy, ALS/FTD ASOs, autoimmune TCEs, and non-opioid pain → 15 passed the relevance filter → 15 fresh against the ledger → 7 taken (6 aired + 1 folded addendum).
+
+**Caveats worth flagging:**
+- **Endpoints bodies are paywalled** — the BBOT story returned only navigation chrome via `r.jina.ai`, so every number came from the underlying press release; Endpoints supplied headline + stock direction only.
+- **The *Diabetologia* DOI would not resolve at run time.** I cited the guidance by title/journal/date rather than guessing a DOI, and noted in the reference file that it must be resolved before it goes in a deck.
+- **BioSpace's Novartis URL is `/business/...`, not `/c-suite/...`** — my first fetch 404'd; recovered via search. Reuters original wasn't directly readable, so detail came from BioSpace/investing.com write-ups and a Bloomberg headline.
+- **The JHTV President's Venture Fellowship / Blaze story is dated 2026-07-22** — outside the window, so I kept it out of the spoken body. It does contain a durable portfolio fact (Biolinco won a Blaze Alumni Award; founder Kevin Wen; JHTV frames the tech as "DNA barcoding to improve drug manufacturability"; the programme's top prizes are the Bisciotti Foundation Awards), which I folded into the reference file and logged in show notes as a reference update rather than airing it as news.
+- **Length:** 2,238 spoken words ≈ 12 minutes, above the brief's stated 6–9 minutes. That's in line with the show's actual recent run (09-05: 2,263; 09-07: 2,415; 09-09: 2,248 words / 588–774s durations), so the whole series has been drifting long. I trimmed ~550 words from my first draft and stopped there rather than dropping a portfolio item — but if you want these genuinely at 6–9 minutes, that means about four items per episode, not six, and that's your call to make.
+=== 2026-09-11T02:33:01-07:00 done  blackbird-brief (exit 0) ===
