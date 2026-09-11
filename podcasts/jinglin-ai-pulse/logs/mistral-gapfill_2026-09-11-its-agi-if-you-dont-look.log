@@ -1,0 +1,10 @@
+Script body: 19884 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/7 (2905 chars) -> 125.1s ✓
+  [mistral:en_paul_neutral] chunk 2/7 (2914 chars) -> 136.3s ✓
+  [mistral:en_paul_neutral] chunk 3/7 (2990 chars) -> 132.7s ✓
+  [mistral:en_paul_neutral] chunk 4/7 (2892 chars) -> 132.1s ✓
+  [mistral:en_paul_neutral] chunk 5/7 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/7 (2981 chars) -> 144.7s ✓
+  [mistral:en_paul_neutral] chunk 6/7 (2919 chars) -> 151.5s ✓
+  [mistral:en_paul_neutral] chunk 7/7 (2277 chars) -> 98.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-09-11-its-agi-if-you-dont-look.mp3 [mistral] 8,088,390 bytes, 1011.0s

@@ -2668,3 +2668,22 @@ Podcasts (7 feeds fetched; Cognitive Revolution and Gradient Dissent RSS 404'd, 
 
 I also caught and corrected two errors in my own draft before finalizing: I had attributed an SSD-offload throughput benchmark to DeepSeek V4.1 when the Hacker News commenter was actually reporting it for Qwen's equivalent memory (the script now frames the offload as mechanism-inference rather than a published DeepSeek benchmark), and I had conflated Desert Ant's phone-vs-desktop audio numbers.
 === 2026-09-10T02:40:12-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-11T02:30:09-07:00 start jinglin-ai-pulse ===
+All 19 source URLs return 200. Episode written; `SKIP_TTS=1` is set, so TTS, R2 publish, feed edit, and commit are left to the orchestrator, with the two stubs in place.
+
+**Published (pending batch TTS):** `podcasts/jinglin-ai-pulse/scripts/2026-09-11-its-agi-if-you-dont-look.md` (3,261 spoken words, ~13 min) plus `.rss-item.xml` and `.commit-msg` stubs. RSS item XML validated.
+
+**Episode spine:** one question in four costumes — what happens when nobody reads the output.
+- **Pulse 1** — Armin Ronacher's "Astra for Coding: Why Are We Doing This Again?" (HN #1 today, 310 pts): AI engineering as Neijuan / 内卷; a 35-hour unsupervised Astra run producing 79 commits, 75k net lines, ~$1,200, nothing of value; token-golfed tool-call style leaking into committed tests; "It's AGI if you don't look."
+- **Pulse 2** — Cognition's SWE-2 doing the inverse deliberately: reward = success − λ·cost, λ pinned to the local slope of the base model's Pareto curve; median steps-to-first-edit 48 → 18. Plus the Terminal-Bench 2.1-vs-4 benchmaxxing argument and the Kimi K3 base ("Kimi in a trench coat").
+- **Pulse 3** — Anthropic's September threat report (seven PRC labs harvesting reasoning traces, incl. Moonshot/DeepSeek relaying their own customers to Claude) → Andreas Thom's Mastodon thread, Sellke's one-sentence denial, and his structural argument that publication no longer bundles result, credit and understanding.
+- **Money** — Google's €13bn Finland package and 22-year Fortum/Loviisa PPA (~5% of national power) against OpenAI pausing Pro sign-ups for lack of compute.
+- **Deep cut** — Nathan Lambert, Interconnects (Sep 10): lossy self-improvement, the inverted risk ranking, and the line that answers Ronacher's agent-collusion question.
+
+**Candidate funnel**
+- *Hacker News (front page + 48h >120pts):* ~90 stories scanned, 14 AI-relevant. Shortlist: Ronacher/Astra (49654229) **chosen**; Cognition SWE-2 (49645443) **chosen**; Anthropic threat report (49647300) **chosen**; Thom/OpenAI-math-trust (49639408) **chosen**; Google–Finland nuclear (49652105) **chosen**; OpenAI Agents API (49649213) — product launch, no argument; Lean-4 proof commentary (49650326) — 09-09 rehash; Capraro bsky (49643112) — subsumed by Thom; YuE2 music (49652028) — off-audience; "Nine coding harnesses" (49651221) — thin; Anthropic surveillance/Prospect (49628704) — >48h and policy-only.
+- *X/Twitter:* unreadable from this host (xcancel challenge, x.com auth-walled, jina 403s) — substituted HN + Mastodon API, per standing workaround. Mastodon returned the full Thom threads.
+- *Investment/business (TechCrunch AI feed, Crunchbase venture index):* 20 items scanned, 5 shortlisted — Google/Finland **chosen**; OpenAI Pro pause **chosen**; Listen Labs $1.5B round scrubbed for Salesforce talks; Nvidia 70% growth; Mistral €3.5B (covered 09-08).
+- *Podcasts (7 feeds):* a16z "OpenAI Researchers on the Future of Mathematical Reasoning" (Sellke/Sawhney, Sep 8) — **dropped despite being the best thematic fit: no transcript or article page exists, a16z.com 404s the slug, so full text was unobtainable**; a16z "Who Grades the AI Models?" — same problem; MLST Kokotajlo/Larsen on AI 2040 Plan A — full text reachable but Plan A was already the 08-09 deep cut; Dwarkesh/Ajeya Cotra — Cotra covered on 08-30, 09-02, 09-03; TWIML 776 — used yesterday; Latent Space /p/aeo — off-topic. Interconnects chosen on full text.
+- *Dedup:* all five picks checked against the full script archive. The non-sofic *announcement* was covered 08-01 and 08-03 — today's item is the training-data/credit dispute, which is new, and the script explicitly calls back rather than re-narrating.
+=== 2026-09-11T02:46:08-07:00 done  jinglin-ai-pulse (exit 0) ===
