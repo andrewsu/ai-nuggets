@@ -1,0 +1,6 @@
+Script body: 9935 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2956 chars) -> 168.9s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2916 chars) -> 144.5s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2802 chars) -> 119.9s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (1258 chars) -> 55.3s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-09-11-ct-202-nectin4-cd3-dual-ph-dependent-tce-first-patient-dosed.mp3 [mistral] 4,196,354 bytes, 524.5s

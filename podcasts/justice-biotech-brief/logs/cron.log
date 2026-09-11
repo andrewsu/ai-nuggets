@@ -3060,3 +3060,32 @@ The angle: PIP is an engineered knottin binding five tumor integrins, carrying o
 - **Fierce Biotech — FAILED.** `r.jina.ai` returned an empty body; direct WebFetch returned HTTP 403. No retry attempted beyond those two channels; proceeded per the source-level-failures rule. Recall gap noted.
 - **Funder pages** — ARPA-H `/news` and NIH news-releases returned no matching content to the scrape; NSF surfaced only an off-target STC award. The ARPA-H cardiology AI awards did surface via Endpoints/BioSpace and are off-target for this show.
 === 2026-09-10T02:48:42-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-11T02:40:09-07:00 start justice-biotech-brief ===
+Published today's episode. `SKIP_TTS=1` was set, so per `PIPELINE.md` I wrote the script plus the two transient stubs and stopped short of TTS, R2 publish, feed edit, and commit — `publish_pending.py` handles those after batch TTS.
+
+**Files written:**
+- `podcasts/justice-biotech-brief/scripts/2026-09-11-ct-202-nectin4-cd3-dual-ph-dependent-tce-first-patient-dosed.md` (1,544 spoken words, ~8.4 min at 1.2×)
+- `….rss-item.xml` — validated standalone and after a simulated 4-space insert into `feed.xml` (95 items, parses clean); `__LENGTH__`/`__DURATION__` each present once
+- `….commit-msg`
+
+**Pick:** CT-202 — Context Therapeutics dosed the first patient (announced Wed 09-09) in the Phase 1a/1b of a dual pH-dependent Nectin-4 × CD3 engager. Read in full: the release, the ClinicalTrials.gov record, and the SITC 2025 poster, which is where the substance is. All three `Paper link:` URLs verified HTTP 200.
+
+The angle: Nectin-4 is simultaneously the best-validated solid-tumor ADC target and the cleanest on-target/off-tumor liability in oncology — boxed warning for SJS/TEN, because the antigen sits on keratinocytes, sweat glands and hair follicles. So aiming a *self-amplifying* CD3 effector at it should be strictly worse than the ADC, which bounds its damage by payload delivered. The load-bearing weakness is in Context's own poster: the pH window is only **1.9×–4.9×** in T-cell-activation EC50 between pH 6.0 and 7.4 — less than one dose-escalation step. The real evidence is a format-matched cyno head-to-head (WT engager from enfortumab + SP34 binders gave ~30× higher IL-6 and depleted T/B/NK above 1 mg/kg; CT-202 clean to 25 mg/kg), **except SP34 is the hot CD3 clone the field already engineered away from** — etentamig, which this show covered 09-04, got the same clean table from a weak CD3 arm and no mask, so the missing control is a pH-insensitive affinity-matched variant. I also flagged the protocol tell (exclusion: history of severe skin toxicity) and that enrollment is "Nectin-4-positive" with no density cutoff when NECTIN4-amplified urothelial patients respond to enfortumab vedotin 27/28 vs 32% non-amplified.
+
+**Candidate funnel**
+
+- **bioRxiv + medRxiv** (09-09/10/11, details API day-by-day): **744 records** → 475 version-1 in-window → 29 keyword hits → **0 on-target.** Nearest misses: a deep-learning-designed natural-ligand CD70 CAR binder (`10.64898/2026.09.06.749651`) and an antibody-CDR-grafting language model (`10.64898/2026.09.06.749721`) — engineering-adjacent, neither worth a spotlight. False positives dominated by `checkpoint` (cell-cycle), `jak` (JAK/STAT), `antibody`, and `Fc` (functional connectivity).
+  - API opened in the **silent-empty-200 outage** mode; a backgrounded 6-attempt retry loop recovered on attempt 3 (~40–60s), so no fallback was needed.
+- **Deferred list: now CLOSED.** Endothelin blockade + CAR T (`10.64898/2026.09.02.748239`) retired **unshipped** — full text in hand since 09-09 but 5 days old and outside the hard 2-day window.
+- **News** — Endpoints (index + R&D), BioSpace, BioPharma Dive, Clinical Trials Arena and `fiercebiotech.com` all live and current; **`fiercepharma.com` returned 685 bytes (blocked)**. Nothing on-beat in 48h: freshest were FDA psychedelics guidance, Biohaven's partial hold, BridgeBio KRAS, Encoded's $275M, Tyra's bladder miss.
+- **The pick came from a GlobeNewswire keyword sweep, not the trade press** — `bispecific`, `trispecific`, `T cell engager`, `antibody-drug conjugate`, `PD-1 VEGF` each returned dated on-target wire items no outlet covered. Saved to memory as a standing addition to the news pass.
+- **Policy/funder** — ARPA-H, NIH and NSF scanned; nothing on-beat (the ARPA-H cardiology AI awards are off-target for this show).
+
+On-target shortlist:
+- **CT-202, Nectin-4 × CD3 dual pH-dependent TCE, first patient dosed** — biospace.com press-release mirror — **CHOSEN**
+- Adagene / Third Arc Bio — first lead candidate under broadened masked-CD3-engager collaboration (09-10) — runner-up, thinner (deal milestone, no data); folded into the episode as a same-week second data point on the conditional-engager thesis
+- Solstice Oncology — $225M launch for porustobart, Treg-depleting CTLA-4 antibody in MSS colorectal (09-09) — real and on-target, lost on substance available to read
+- Bionyra BYN-001 — long-acting anti-IL-25 mAb, first healthy volunteers dosed (09-11) — freshest item of the day but off-beat (atopic dermatitis, Phase 1 healthy volunteers)
+
+Two access lessons saved to memory: **globenewswire article URLs curl 000 from this host** (jina reads them fine) so link the BioSpace mirror for durability; and when a press-release pick's substance lives in a conference poster, **the poster may be a single Squarespace JPEG** — grep the jina output for the `images.squarespace-cdn.com` URL, fetch it with `?format=2500w`, and Read it as an image. That's how the EC50 pH table, the WT-comparator design and the NHP cytokine/PK panels were recovered; no imagemagick or PIL on this host, so request the largest size and read it whole.
+=== 2026-09-11T03:00:39-07:00 done  justice-biotech-brief (exit 0) ===
