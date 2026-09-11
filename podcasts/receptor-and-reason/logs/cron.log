@@ -4352,3 +4352,40 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus
 
 One caveat worth flagging: the oveporexton efficacy and safety figures come from Takeda's newsroom release rather than the NEJM paper itself, which is CAPTCHA-walled from this host. The script attributes them as the phase 3 program's reported results and doesn't claim anything the sponsor didn't state.
 === 2026-09-10T03:18:52-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-11T02:50:09-07:00 start receptor-and-reason ===
+Script, RSS stub, and commit-msg stub written; ledger updated. Running under `SKIP_TTS=1`, so TTS, R2 publish, feed edit, and commit are left to `publish_pending.py` per PIPELINE.md.
+
+**Files written (`podcasts/receptor-and-reason/scripts/`):**
+- `2026-09-11-receptor-and-reason.md` — 3,455 spoken words (~19 min)
+- `2026-09-11-receptor-and-reason.rss-item.xml` — validated, `__LENGTH__`/`__DURATION__` placeholders
+- `2026-09-11-receptor-and-reason.commit-msg`
+
+Ledger: 11 keys appended, 112 episodes / 1,147 items.
+
+---
+
+## Candidate funnel — 2026-09-11
+
+**Sources scanned**
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| bioRxiv details API, 09-05→09-11, day-by-day | 1,188 records → 803 v1-in-window | 232 broad / 44 tight | API healthy today (yesterday's silent-empty-200 outage cleared) |
+| arXiv shared cache `/tmp/ai-nuggets-arxiv-cache.xml` | 500 entries (09-08→09-10 only; 500-cap) | 46 bio+agentic | |
+| arXiv live q-bio date-range query (09-05→09-11) | 41 | 9 | covered the cache's blind spot back to 09-05 |
+| Neuropsychopharmacology, Molecular Psychiatry, Nat Biotech, npj Digital Medicine (RSS) | 32 | 16 | `nature.com/<j>.rss` 303s to `idp.nature.com`; `feeds.nature.com/<j>/rss/current` works |
+| Biol Psychiatry, BP:CNNI, Neuropharmacology, PNP, Drug Discovery Today, Cell Systems (ScienceDirect RSS) | 180 | 24 in-window | ISSN must be dash-less in the URL; dates live in `<description>`, not `pubDate` |
+| Psychiatric Times | 10 | 1 new | 4 of 5 drug items already shipped 09-10 |
+
+**Dedup:** 44 candidates → 32 fresh (11 already shipped, 1 title-match under a second key). Final 11-item roster re-filtered: all clear.
+
+**Notable drops:** satoprodil (GluN2B NAM in MDD), μ-opioid transition-state intermediates, LSD/DMN, OmniSyn, LRRK2 chemical genetics — all shipped in prior episodes.
+
+**Selected (all 11 shipped):** GPR12/anandamide; GluN3A/alcohol/VTA; BNST CRH wakefulness; OCD psychotherapy EWAS; SERT×ELS sex flip; complement C4/5XFAD; ADMET-EvO; ARCHE; FGPO tool selection; ABLE; network-structured Bayesian pharmacogenomics.
+
+**Two things worth flagging:**
+
+1. **Full-text gate.** Six picks were read in full (GPR12 via `r.jina.ai` on the `.full` HTML with `x-no-cache`, the two Nature articles, three arXiv PDFs via `mutool`). Three bioRxiv picks — GluN3A, complement C4, and SERT×ELS — returned landing pages rather than bodies (posted 09-10/09-11, render lag), so they ran as short abstract-only items and the script says so out loud in two of the three. `AutoScreen`, `PromptBio`, and the `Emet` LUSC preprint were dropped for the same reason rather than padded in.
+
+2. **`.full.pdf` via jina is currently broken for bioRxiv** — it returns a ~200-byte iframe stub, not the body. The `.full` HTML path worked. That contradicts the standing memory note recommending `.full.pdf` over `.full`; I'll leave the memory alone for now since one day isn't a trend, but if it repeats tomorrow the note needs inverting.
+=== 2026-09-11T03:10:22-07:00 done  receptor-and-reason (exit 0) ===
