@@ -2465,3 +2465,38 @@ Episode published for `blackbird-brief` — 2026-09-11 Portfolio Watch (Friday, 
 - **The JHTV President's Venture Fellowship / Blaze story is dated 2026-07-22** — outside the window, so I kept it out of the spoken body. It does contain a durable portfolio fact (Biolinco won a Blaze Alumni Award; founder Kevin Wen; JHTV frames the tech as "DNA barcoding to improve drug manufacturability"; the programme's top prizes are the Bisciotti Foundation Awards), which I folded into the reference file and logged in show notes as a reference update rather than airing it as news.
 - **Length:** 2,238 spoken words ≈ 12 minutes, above the brief's stated 6–9 minutes. That's in line with the show's actual recent run (09-05: 2,263; 09-07: 2,415; 09-09: 2,248 words / 588–774s durations), so the whole series has been drifting long. I trimmed ~550 words from my first draft and stopped there rather than dropping a portfolio item — but if you want these genuinely at 6–9 minutes, that means about four items per episode, not six, and that's your call to make.
 === 2026-09-11T02:33:01-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-12T02:10:08-07:00 start blackbird-brief ===
+Episode written. Running with `SKIP_TTS=1`, so per PIPELINE.md I stopped after the script + the two stub files — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-09-12-portfolio-watch.md` (2,206 spoken words, ~7 min)
+- `podcasts/blackbird-brief/scripts/2026-09-12-portfolio-watch.rss-item.xml` (validated XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `podcasts/blackbird-brief/scripts/2026-09-12-portfolio-watch.commit-msg`
+- `podcasts/blackbird-brief/state/shipped.jsonl` — 7 keys appended (63 episodes / 320 unique keys)
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` — edited in place: Aletira, Winnow, Islex bumped to `2026-09-12`; new §1 "Spinout-structure comparators" subsection (Kura/Caspian shape + Frazier capital weather); new §2b DUA entry
+
+**Candidate funnel**
+
+Recency window 2026-09-08 → 2026-09-12. Type: Portfolio Watch (Saturday, daily).
+
+| Source | Scanned | Relevant |
+|---|---|---|
+| BioSpace latest news + press releases | ~45 | 5 |
+| GlobeNewswire keyword sweeps (`gene therapy`, `autoimmune`, `T cell engager`) via r.jina.ai | ~150 | 6 |
+| BioBuzz / BioHealth Capital Region | 12 | 4 |
+| Targeted searches (otology, GPR52/Nxera, CD19 TCE autoimmune, TCR-mimic pHLA, cfDNA, ALS ASO, Nav1.8, VEXAS/gout/cardiac fibrosis) | — | 0 in window |
+
+Shortlist and disposition:
+- **PICKED (lead)** — Opus Genetics OPGx-BEST1 Cohort 1 + FDA Type C · globenewswire 09-09
+- **PICKED** — Adagene / Third Arc Bio masked CD3 engager lead candidate (+ Adagene/Exelixis $2M milestone 09-09) · globenewswire 09-10
+- **PICKED** — Kura Oncology launches Caspian Therapeutics, $50M · globenewswire 09-09
+- **PICKED** — Sernova + Seraxis → BetaNova Biotherapeutics · sernova.com 09-08
+- **PICKED** — DUA / RealLIST Innovators Maryland · technical.ly 09-10
+- **PICKED** — Frazier Life Sciences $1.1B+ public fund · biospace 09-11
+- Discarded — CraniUS 510(k) clearance: **already aired 09-11 item 6**. The batch filter missed it (prior episode keyed the BioBuzz URL, this candidate entered via PRNewswire); caught by hand against the portfolio reference. Genuine near-miss.
+- Discarded — Novartis triple-asset stumble (all three components already covered 09-06, 09-09, 09-03); Novartis/BMS CAR-T pause (**caught by the dedup filter**, shipped 09-03); ARPA-H ADVOCATE (JHU/APL is an evaluator, no portfolio line); Ethris inhaled respiratory mRNA (too thin for the COPD theme); CAMP4 MHRA clearance (RNA-upregulation = ❌ TERMINATED theme); Disc/Silence polycythemia vera; Pharming Joenja; apitegromab SMA approval.
+
+**Source failures** — `fiercebiotech.com`: HTTP 403 to WebFetch, and `r.jina.ai` returned `AbuseAlleviationError` (anonymous access to the domain blocked until 09:18 UTC today after prior rate-limit abuse); skipped, no viable retry. `ventures.jhu.edu/news`: HTTP 403 to WebFetch — the JHTV newsroom was not surveyed this run.
+
+**Dedup** — batch: 10 candidates → 9 fresh (1 already shipped). Final 7-key roster re-filtered: 7/7 fresh against 62 episodes / 353 keys.
+=== 2026-09-12T02:26:41-07:00 done  blackbird-brief (exit 0) ===

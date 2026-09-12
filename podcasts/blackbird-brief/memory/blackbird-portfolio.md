@@ -185,6 +185,29 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
   https://www.axios.com/2026/08/31/trump-new-drug-price-deals ·
   https://www.whitehouse.gov/fact-sheets/2026/08/fact-sheet-president-donald-j-trump-announces-deal-with-nine-additional-pharmaceutical-manufacturers-to-lower-drug-prices-for-americans/
 
+### Spinout-structure comparators (how other people carve assets out)
+_Last update: 2026-09-12_
+- **THE KURA / CASPIAN SHAPE — the IP parent keeps ~HALF THE COMPANY (added 2026-09-12 Portfolio Watch item 3; announced 2026-09-09).** **Kura Oncology (Nasdaq: KURA) launched Caspian Therapeutics, Inc.**, a separately financed
+  company for **diabetes and cardiometabolic disease**, around **KO-7246** — a next-generation, highly selective **menin inhibitor purpose-designed for chronic metabolic disease** (not oncology) — plus related IP and know-how
+  contributed by Kura. **$50M led by BVF Partners**, with the **T1D Fund**, **Invus**, **Montanova**, **Eli Lilly and Company**, Kura itself, Kura leadership and biotech entrepreneurs. **Kura retains ~50% fully diluted plus board
+  representation**; CEO **Troy Wilson** becomes **Executive Chairman**; **Robert Spencer, Ph.D.** (ex-Cara, ex-Merck) is President & COO. **Biology:** menin is a **brake on beta-cell proliferation**; inhibition expands **functional
+  beta-cell mass** and raises **endogenous insulin**, with preclinical effects **persisting after treatment cessation** in T1D and T2D models and in human islet systems. **IND "as soon as practicable"**; Phase 1 reads safety +
+  **beta-cell function**; **preclinical data at EASD 2026-09-29.**
+  **WHY IT IS IN THIS FILE (Matt Tremblay + Eddie Cherok + Emily Wilkinson).** Blackbird does the same de-risking work and typically converts it into **a licence plus an early BioVentures check**; Kura converted it into **half the
+  company and the chair**. The difference is that Kura *is* the IP-owning entity, which we are not — but the shape is worth pressure-testing. **TWO STANDING QUESTIONS: (1) is there a structure in which a Laboratories grant
+  converts to something closer to Kura's ~50% than to a royalty; (2) which venture-philanthropy fund is the T1D-Fund-equivalent for EACH of our therapeutic themes? The T1D Fund exists to sit beside exactly this kind of round, and
+  no equivalent is in any of our rounds today.**
+  **CANDID:** menin inhibitors carry an oncology safety history, and this is a chronic indication in otherwise-well patients — "purpose-designed for chronic metabolic disease" is the entire bet, and **EASD on the 29th is the test
+  of whether the preclinical package speaks to selectivity against the haematopoietic menin biology.** Source:
+  https://www.globenewswire.com/news-release/2026/09/09/3358492/35186/en/kura-oncology-launches-caspian-therapeutics-with-50-million-financing-to-advance-menin-inhibition-as-a-potential-disease-modifying-approach-for-diabetes.html
+- **THE CAPITAL WEATHER OUR SPINOUTS RAISE INTO (added 2026-09-12 Portfolio Watch item 6; published 2026-09-11).** **Frazier Life Sciences closed >$1.1B** in new commitments for its **public fund** (~**$2.8B** since its 2021
+  launch) — public companies with flexibility for **late-stage private crossovers**. Listed exits: **Verona → Merck ($10B)**, **Alpine → Vertex ($4.9B)**, **Cerevel → AbbVie ($8.7B)**, **Carmot → Roche ($2.7B)**, **Avidity →
+  Novartis ($12B)**. Accompanying analysis: a **"selective recovery"**, capital **concentrated in later-stage, de-risked assets with near-term clinical catalysts** and away from early-stage companies with less tested science.
+  **READ (Emily Wilkinson + Eddie Cherok): two of those five exits are ours to think about — CEREVEL is the muscarinic thesis that created the market the Lieber GPR52 programme aims at, and AVIDITY's lead asset failed Phase 3 in
+  the week of 2026-09-08 AFTER a $12B acquisition. Both got the exit anyway. ⇒ "Near-term clinical catalyst" is the phrase to design toward; crossover money is available on the FAR SIDE of a de-risking event, which is precisely
+  the product Blackbird Laboratories manufactures. ACTION: every programme plan should name the single event that converts the asset from "early-stage" to "de-risked," and how fast we can buy it.** Source:
+  https://www.biospace.com/business/frazier-adds-1-1b-to-small-and-mid-sized-biotech-fund
+
 ### Team
 - **Matt Tremblay, Ph.D.** — CEO, founding board member. Ex-COO of Scripps
   Research and its drug-discovery arm Calibr. (Primary audience.)
@@ -625,7 +648,22 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-09-10_
+_Last update: 2026-09-12_
+- **THE SELECTIVITY LADDER — three answers in three days, and OURS IS THE NARROWEST RUNG (added 2026-09-12 Portfolio Watch LEAD; event 2026-09-09). Plus the ENDPOINT TEMPLATE, which is the more valuable half.**
+  **09-10 Encoded ($275M Series F):** expression control governs neither the capsid nor the dose. **09-11 Modalis/Exegenesis:** selectivity bought at the **CAPSID** (organ + dose). **09-12 Opus Genetics:** selectivity bought at the
+  **ROUTE / COMPARTMENT**. **Opus Genetics (Nasdaq: IRD) BIRD-1 Cohort 1 — OPGx-BEST1, subretinal AAV for BEST1-related retinal disease (BVMD + ARB), n=5, 1.5 × 10⁹ vg/eye** (4–5 logs below a systemic AAV dose): all 5 clinically
+  meaningful visual-function improvement; **microperimetry 3/4 evaluable, BCVA 3/5**, vitelliform material down in 67% of BVMD, intraretinal fluid down in 100% of ARB; **no SAEs, no DLTs, no intraocular inflammation**. Cohort 2
+  (4.5 × 10⁹) over-enrolled to 8, dosing complete Q4 2026, 3-mo data Q2 2027, possible **Phase 3 dosing 2027**. **Opus needs no liver-detargeting because nothing systemic ever happens.**
+  **⇒ DURABLE LINE: in a compartmentalized sensory organ the ROUTE already buys the organ and the dose; the only layer left to sell is CELL TYPE WITHIN THE ORGAN (RPE vs photoreceptor; hair cell vs supporting cell vs spiral
+  ganglion neuron). That strip is genuinely SELEXON's — and it is the WHOLE of it. Say the narrow thing in the deck before a diligence team says it for us.**
+  **⇒ THE ENDPOINT TEMPLATE, AND THE ACTION (Matt Tremblay + Geoff Lynn). FDA Type C aligned on a pivotal endpoint of ≥3 dB microperimetry improvement at ≥5 prespecified loci PLUS a patient-reported outcome, in a randomized
+  controlled trial — accepted off a 5-patient open-label cohort in an ultra-rare inherited SENSORY disease** (BCVA, LLVA, contrast sensitivity also acceptable). Second sensory-organ precedent in five months: **FDA approved
+  Regeneron's OTARMENI (lunsotogene parvec-cwha) 2026-04-23** — first **dual-AAV1** gene therapy, biallelic **OTOF** hearing loss, single-arm **n=24 (20 evaluable, 80% improved hearing)**, **61 days post-filing** under the
+  Commissioner's **National Priority Voucher** (6th NPV approval, first gene therapy). **ACTION: establish what the otoferlin programmes have agreed with the agency, and whether a Type C-able functional + PRO endpoint exists for a
+  hearing-loss indication — BEFORE we are choosing one under time pressure.**
+  **HONEST LIMITS:** n=5, open-label, no untreated control, "clinically meaningful" sponsor-defined, 3/4 on the endpoint that counts, and the eye is the most permissive organ in gene therapy. Sources:
+  https://www.globenewswire.com/news-release/2026/09/09/3358458/0/en/opus-genetics-announces-positive-low-dose-cohort-1-data-from-phase-1-2-clinical-trial-of-opgx-best1-and-successful-fda-type-c-meeting-with-potential-phase-3-dosing-in-2027.html ·
+  https://www.fda.gov/news-events/press-announcements/fda-approves-first-ever-gene-therapy-treatment-genetic-hearing-loss-under-national-priority-voucher
 - **What:** Cell-type-**selective** genetic medicines. **SELEXON** platform uses
   **alternative RNA splicing** to restrict transgene expression to target cell
   types — bolt-on to any vector (e.g. AAV) to cut off-target expression.
@@ -1698,7 +1736,20 @@ _Last update: 2026-09-09_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-10_
+_Last update: 2026-09-12_
+- **THE COMPETING ROUTE TO A SAFE ENGAGER IS THE MASK, AND A WELL-CAPITALIZED ONCOLOGY+I&I PLAYER JUST BOUGHT IT RATHER THAN BUILDING IT (added 2026-09-12 Portfolio Watch item 2; announced 2026-09-10).**
+  **Adagene** (Nasdaq: ADAG; CEO Peter Luo) announced **Third Arc Bio selected its FIRST LEAD CANDIDATE** under an **amended** strategic collaboration (original Nov 2025) for **masked CD3 T cell engagers** using **SAFEbody®** —
+  masking that **shields the binding domain and is activated in the tumor microenvironment**. Target and economics undisclosed; **total potential development + commercial milestones payable to Adagene INCREASED** vs. the original.
+  **Third Arc Bio:** founded 2022 (Omega seed); CEO **Peter F. Lebowitz, M.D., Ph.D.**, ex-**Global Head of Oncology R&D at Johnson & Johnson** (joined Jan 2024); **$165M Series A** (Vida Ventures lead; Cormorant + Hillhouse
+  co-leads) **plus a $52M extension led by a16z**; lead **ARC101**, a **CLDN6** TCE in Phase 1; **stated remit spans solid tumors AND immunology & inflammation.**
+  **READ #1 — TWO ROUTES TO ONE SAFETY PROMISE (Jon Robbins + Hemaka Rajapakse). Restrict WHICH ANTIGEN the engager sees (Winnow) or restrict WHERE it switches on (masking).** A >$217M company run by someone who has shipped
+  engagers, building in both oncology and I&I, chose to **license** the second route. **OUR ANSWER, WHICH MUST EXIST IN WRITING: a mask keyed to the TUMOR microenvironment has nothing to unmask it in an inflamed joint —
+  protease-triggered masking is a tumor trick and does not obviously port to autoimmunity. The moment someone ports it, antigen selectivity stops being the only route to a safe engager.**
+  **READ #2 — THE BOLT-ON LAYER, NOW PRICED (Eddie Cherok + Emily Wilkinson). 2026-09-09: Adagene took a $2.0M milestone from Exelixis** for **XB404**, a SAFEbody-masked **ROR1/2 ADC**, plus a further payment on candidate
+  selection for a second SAFEbody ADC. **2026-09-10: increased potential milestones from Third Arc.** Same technology, two partners, two days. **⇒ A selectivity layer is paid in MILESTONES not upfront, paid REPEATEDLY across
+  partners, and modest per deal.** Third data point in one week for the bolt-on model (cf. 09-11 Modalis, financial impact "immaterial"; the Aletira entry above). Sources:
+  https://www.globenewswire.com/news-release/2026/09/10/3359432/0/en/adagene-announces-that-third-arc-bio-has-selected-first-lead-candidate-under-amended-strategic-collaboration-for-development-of-masked-cd3-t-cell-engagers-utilizing-safebody-techno.html ·
+  https://www.globenewswire.com/news-release/2026/09/09/3358564/0/en/adagene-achieves-milestone-in-collaboration-with-exelixis-for-advancement-of-safebody-antibody-drug-conjugate-candidates.html
 - **What:** novel immunology platform that **selectively treats T-cell-mediated
   autoimmune disease**; T-cell engager platform with potential in ankylosing
   spondylitis and others.
@@ -2443,6 +2494,20 @@ raises, exits, or crosses a scientific milestone.
   https://www.biospace.com/press-releases/breakthrough-t1d-convened-paper-outlines-first-international-consensus-guidance-on-general-population-screening-for-early-stage-type-1-diabetes ·
   https://www.breakthrought1d.org/news-and-updates/t1d-screening-consensus-guidance/ (*Diabetologia* DOI not resolvable at run
   time 2026-09-11 — cited by title/journal/date; resolve before it goes in a deck)
+- **A NEIGHBOUR, A COMPARATOR AND A POSSIBLE PARTNER, 25 MILES AWAY — CALL BEFORE THE NASDAQ LISTING (added 2026-09-12 Portfolio Watch item 4; announced 2026-09-08).**
+  **Sernova Biotherapeutics (TSX: SVA) + Seraxis Holdings signed a DEFINITIVE MERGER AGREEMENT to form BETANOVA BIOTHERAPEUTICS, HQ Germantown, Maryland**, existing shareholders of each holding **~50%**; close expected
+  **November 2026** (Sernova shareholder + court + regulatory approval; **$5M break fee**; ~11% of Sernova insider shares committed in favour; Noble Capital Markets advised). **$10M lined up from existing investors**, window open
+  to end of September; **Nasdaq listing intended early 2027**. CEO-designate **Jonathan Rigby**; **Will Rust, Ph.D.** President & CSO. **The two halves:** Sernova's **Cell Pouch** (implantable, vascularizing housing for
+  insulin-producing cells; Phase 1/2 at U Chicago under **Piotr Witkowski** — most first-cohort patients reaching **insulin independence**, sustained >3 yr in some, islet survival 1 to >5 yr) plus Seraxis's **cGMP,
+  commercial-scale stem-cell-derived pancreatic islet cells**. **Pipeline: SR-02** (allogeneic + immune-tolerizing) Phase 1/2 dosing **early 2027**, data **mid-2027**; **SR-03** (gene-edited immune evasion) **IND H2 2027**.
+  **READ #1 — THE COMPONENT-OWNERSHIP RULE (Hemaka Rajapakse + Jon Robbins).** A device with no scalable cell source and a cell source with nowhere durable to live; neither could sell half a product. The resolution was a
+  **50/50 merger plus a $10M bridge** — a statement about **leverage**, not science. **STANDING RULE: wherever a Blackbird programme needs a component we do not own, decide EARLY whether to license, buy or merge; the price of
+  that decision rises every round and is cheapest before either side has a clinical asset to protect.**
+  **READ #2 — GEOGRAPHY (Eddie Cherok).** BetaNova will work **disease-modifying T1D ~25 miles from the BioHub** while Islex sits in Baltimore with a humanized lead and **$275k of NSF money as its only disclosed capital.**
+  **Neighbour, comparator, possibly partner — worth a call BEFORE a Nasdaq listing changes their posture.** Sits beside the Breakthrough T1D screening-consensus entry above: one week produced the **finding mechanism** and two
+  opposite therapeutic bets (BetaNova's cell replacement; Caspian's menin-driven beta-cell regeneration, §1) on the population it will produce. Sources:
+  https://sernova.com/press_releases/sernova-and-seraxis-enter-definitive-merger-agreement-to-create-a-differentiated-type-1-diabetes-islet-cell-replacement-biotech-company-betanova-biotherapeutics/ ·
+  https://biobuzz.io/news/sernova-and-seraxis-to-merge-forming-betanova-biotherapeutics-in-bid-for-a-type-1-diabetes-functional-cure/
 - **Links.** https://www.islextherapeutics.com/ ; NSF/SBIR https://www.sbir.gov/awards/208358 ;
   papers 10.2337/db26-0183, 10.2337/db22-0477 (PMC9876881).
 
@@ -3381,6 +3446,17 @@ _Last update: 2026-09-11_
   device-drug combination partnership, Series C, BioHub proximity/collaboration, JHTV licence roster.
 - Sources: https://biobuzz.io/news/baltimores-cranius-therapeutics-wins-fda-clearance-for-its-patient-specific-cranial-implant/ ·
   https://www.biospace.com/press-releases/cranius-therapeutics-closes-20-million-series-b-round-to-advance-neuropass-platform-towards-future-commercialization
+
+### DUA (Baltimore) — JHU thesis → 2026 solid-tumor cell-therapy incorporation we did NOT source; PRE-FORMATION-CHANNEL signal, not a lead ⚠
+_Last update: 2026-09-12_
+- **What.** **DUA** (dua.earth; "tree" in Ghanaian), Baltimore cancer biotech **founded 2026** by **Christopher Adrian Johnston** out of his **Johns Hopkins Ph.D. thesis**, built around **"velocity receptors"** — engineered
+  proteins intended to help **CAR-T cells physically reach solid tumors** that have historically resisted them. His framing: *"If you imagine us as the therapy cell, the velocity receptors are like our feet."* Named to
+  **Technical.ly's RealLIST Innovators 2026 Maryland** (published 2026-09-10).
+- **WHY IT IS HERE — A PATTERN, NOT A LEAD (Esther Park + Maisha Rahman + Eddie Cherok).** A list entry is not diligence and nobody can judge the science from one. **The signal is that a Hopkins thesis incorporated in Baltimore in
+  2026, in solid-tumor cell therapy — adjacent to Clasp and to the oncology-surface-targets theme — without us. The question is not whether DUA is good; it is whether the PRE-FORMATION Hopkins founder pool reaches us before it
+  incorporates.** Pairs with the Biolinco note that the **Bisciotti Foundation Awards** are the top prizes in JHTV's own student-venture programme — a warm, already-sponsored channel into that pool we are not working
+  systematically. **ACTION: decide whether to work the JHTV student-venture / Blaze pipeline deliberately rather than opportunistically.**
+- **Watch.** Any DUA financing, JHTV licence-roster appearance, or publication naming the velocity-receptor IP. Source: https://technical.ly/workforce/reallist-innovators-2026-maryland/
 
 ### Elisseeff lab fibroid-senescence atlas (JHU) — WATCH, not a build (deferred 08-09 lead, closed 2026-08-16) ⚠
 - **Lab / people.** **Jennifer H. Elisseeff, Ph.D.** (JHU; senior) with Mostafa Borahay + James Segars (JHU Gyn/Ob) and **Elana Fertig** (UMB genome sciences). "Senescent cell networks link matrix remodeling and vascular dysfunction in human fibroids," bioRxiv v1 2026-08-07 (DOI 10.64898/2026.08.06.743362) — full text NOW RENDERED (157KB) and read 2026-08-16.
