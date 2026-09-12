@@ -3089,3 +3089,35 @@ On-target shortlist:
 
 Two access lessons saved to memory: **globenewswire article URLs curl 000 from this host** (jina reads them fine) so link the BioSpace mirror for durability; and when a press-release pick's substance lives in a conference poster, **the poster may be a single Squarespace JPEG** — grep the jina output for the `images.squarespace-cdn.com` URL, fetch it with `?format=2500w`, and Read it as an image. That's how the EC50 pH table, the WT-comparator design and the NHP cytokine/PK panels were recovered; no imagemagick or PIL on this host, so request the largest size and read it whole.
 === 2026-09-11T03:00:39-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-12T02:40:08-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script plus the two transient stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Published (pending batch TTS):** `2026-09-12-eftilagimod-alfa-tacti-004-n-glycan-root-cause-manufacturing-scale`
+- `scripts/…​.md` (1,402 spoken words)
+- `scripts/…​.rss-item.xml` (validates as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `scripts/…​.commit-msg`
+
+---
+
+## Candidate funnel — justice-biotech-brief, 2026-09-12
+
+**bioRxiv** (details API, day-by-day sweep 09-10 → 09-12; 592 entries: 354 / 219 / 19). Full corpus filtered on title+abstract against the PROMPT keyword set → 18 keyword hits, 12 spurious (`checkpoint` = cell-cycle checkpoint, `CD3` = a marker in an scRNA-seq panel, `immunotherapy` = anti-Aβ). Substantive shortlist:
+- `10.64898/2026.09.06.749651` — Deep learning-based modeling enhances efficacy of natural-ligand CAR binders targeting CD70 (v1, 09-10) — best preprint of the window; CD27-ligand-derived CAR binder, on-beat for CAR-T
+- `10.64898/2026.09.07.749773` — CD112-TIGIT/PVRIG axis mediates NK evasion in decitabine-treated AML (v1, 09-10)
+- `10.64898/2026.09.06.749721` — Generative LM for antibody CDR grafting and de novo design (v1, 09-10)
+- `10.64898/2026.06.03.729692` — Patient-derived IgG amplifies FcγR-dependent colitis during checkpoint blockade — **excluded on recency: v2 version-bump of a June preprint**
+- `10.64898/2026.07.05.736665` — AAV-delivered LYTACs for sustained antibody depletion in vivo — **excluded on recency: v3 version-bump of a July preprint**
+
+**News / press** (Fierce Biotech, Endpoints, BioPharma Dive, BioSpace latest + press-releases, GlobeNewswire keyword search on bispecific / T-cell engager / ADC / PD-L1, all via r.jina.ai). Thin Friday for this beat. Shortlist:
+- **Immutep — efti development update + TACTI-004 root cause analysis** (09-11) — https://www.biospace.com/press-releases/immutep-outlines-focused-development-strategy-for-eftilagimod-alfa-efti — **CHOSEN**
+- Adagene / Third Arc Bio — first lead candidate under amended masked-CD3-TCE collaboration (09-10) — on-beat but candidate-selection news with no data, and immediately duplicative of yesterday's masked-TCE episode (CT-202)
+- Amgen eyes broader Imdelltra use (09-11, BioPharma Dive brief) — tarlatamab already covered 09-08 and 09-09
+- Corbus (09-11, 4:01pm EDT), InnoCare ICP-B381 bispecific ADC, SOTIO SOT109 CADENCIA-01 — Corbus headline not retrievable from the IR index render; the other two date to 09-09, outside the window
+- Moderna/Merck mRNA cancer vaccine feature (Fierce, 09-11) — analysis piece, and autogene cevumeran covered 08-29
+
+**Policy/funder** — ARPA-H / NIH / NSF: nothing on-beat in window.
+
+**Source failures:** `fiercebiotech.com/biotech` section page returned a 245-byte empty render via jina (homepage worked, used that instead). GlobeNewswire's jina render strips article hyperlinks — resolved individual items via WebSearch + BioSpace mirrors per the usual workaround. `aacrjournals.org` 403s WebFetch (AIPAC paper) — the primary-endpoint result was confirmed from the ASCO Post and CancerNetwork write-ups plus the CCR abstract, and AIPAC is background context here, not the pick.
+
+**Why the Immutep item beat the CD70 CAR preprint:** it's the rarer artifact — a named causal hypothesis for a Phase 3 futility stop, with a mechanistically coherent failure mode (glycan-driven loss of avidity in an MHC-class-II-clustering agonist) that is directly transferable to Justice's own Fc-fusion and multispecific work, and a checkable counter-hypothesis (efti is 0-for-2 in randomized placebo-controlled trials; AIPAC missed PFS years before the 2,000 L scale-up, and the glycan story doesn't touch it). Full text of the primary source was read end-to-end; TACTI-004 design/futility, INSIGHT-003 single-arm OS, and the AIPAC primary-endpoint miss were each verified against independent sources before drafting.
+=== 2026-09-12T02:49:33-07:00 done  justice-biotech-brief (exit 0) ===
