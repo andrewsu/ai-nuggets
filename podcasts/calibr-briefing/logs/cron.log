@@ -4177,3 +4177,40 @@ Shortlist after discarding wire noise (appointments, inducement grants, conferen
 
 One note on the spotlight's construction: the shareholder indictment is only half right, and I said so on air rather than relaying it — pelacarsen is an Ionis-licensed asset, not an acquisition, and FDA accepted the del-zota BLA for priority review the same day HARBOR missed, so "goes to zero" does not survive contact with the pipeline. I also appended a durable note to the source-access memory on reconstructing blocked Reuters exclusives from the syndication ring.
 === 2026-09-11T02:33:40-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-12T02:20:08-07:00 start calibr-briefing ===
+Both episodes are written and staged for the batch TTS pipeline.
+
+**Files written** (`SKIP_TTS=1`, so no audio/publish/feed/commit — `publish_pending.py` will handle those):
+
+- `podcasts/calibr-briefing/scripts/2026-09-12-pharma-headlines.txt` (1,795 words)
+- `podcasts/calibr-briefing/scripts/2026-09-12-exelixis-zanzalintinib-handoff-spotlight.txt` (1,882 words)
+- matching `.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` placeholders) and `.commit-msg` stubs for each
+
+**Spotlight:** Exelixis squeezed from both ends of its only strategic question. The FDA's three-month major-amendment extension (Dec 3 → Mar 3, 2027) reads off STELLAR-303's split co-primaries — ITT hit at HR 0.80 on a 1.5-month median gain, while the no-liver-metastasis subgroup (the population the IO biology predicts, since hepatic mets delete activated CD8 T cells) delivered 3.2 months and missed at p=0.1185 — against 60% vs 37% grade 3+ TRAEs over a 14-year-old regorafenib comparator, which makes "contribution of components" a real reviewer question. The underpriced event is Handa's laurylsulfate cabozantinib clearing 505(b)(2) two weeks after the compound patent lapsed and days after the Federal Circuit locked MSN's malate generic out to 2030: a non-substitutable branded competitor that erodes slower than a generic but never expires.
+
+**Candidate funnel**
+
+| Source | Scanned | Survived |
+|---|---|---|
+| BioPharma Dive RSS | 10 | 3 |
+| Fierce Biotech / Fierce Pharma RSS | 48 | 6 (bodies **inaccessible** — 403 to both WebFetch and r.jina.ai; routed around via primary sources) |
+| Endpoints News index + stream | 25 | 4 (bodies paywalled; Alzheon dropped for that reason) |
+| BioSpace latest + press releases | ~40 | 5 |
+| Clinical Trials Arena / Pharmaceutical Technology RSS | 20 | 3 |
+| Primary (SEC 8-K, Exelixis IR, Handa PR, Lancet via PubMed, CAFC) | 7 | 7 |
+
+Shortlist (✓ = used):
+- ✓ FDA extends zanzalintinib+atezolizumab mCRC review to Mar 3, 2027 — endpoints.news/fda-extends-review-of-exelixis-colorectal-cancer-drug-candidate/ **[spotlight + lead]**
+- ✓ Handa OMCAZIO final approval — biospace.com/press-releases/handa-oncology-receives-fda-final-approval-for-omcaziotm-cabozantinib-capsules **[spotlight]**
+- ✓ Disc DISC-3405 RESTORE-PV vs Silence divesiran — biospace.com/drug-development/disc-sets-up-polycythemia-vera-challenge-but-silence-maintains-lead
+- ✓ Karyopharm debt deferral / Evommune EVO756 / Tectora / Encoded — biopharmadive.com/news/imdelltra-bridgebio-oncology-evommune-encoded-tectora/830056/
+- ✓ NICE draft rejection of lenacapavir PrEP — pharmaceutical-technology.com/news/hiv-charities-lament-nice-snub-for-gileads-twice-yearly-lenacapavir/
+- ✓ Daiichi Sankyo wins ¥203.3B IHH/Fortis dismissal
+- ✓ AbbVie atogepant Phase 3 LUNA in menstrual migraine
+- ✓ AAM biosimilar-void report; ✓ Frazier $1.1B+ fund
+- ✗ Amgen Imdelltra + Imfinzi DeLLphi-305 — **dropped as duplicate**, shipped 2026-09-09
+- ✗ Alzheon fundraise despite Phase 3 miss — Endpoints paywall, no readable alternative
+- ✗ Fierce "future of RAS inhibitors" feature — 403 on every channel
+- ✗ TenNor rifaquizinone Phase IIa — body wouldn't render
+- ✗ Exegenesis/Modalis Duchenne, Samsung Bio $262M, Novartis peer-drag — already shipped 09-11
+=== 2026-09-12T02:35:44-07:00 done  calibr-briefing (exit 0) ===
