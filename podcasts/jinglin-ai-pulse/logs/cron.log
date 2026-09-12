@@ -2687,3 +2687,44 @@ All 19 source URLs return 200. Episode written; `SKIP_TTS=1` is set, so TTS, R2 
 - *Podcasts (7 feeds):* a16z "OpenAI Researchers on the Future of Mathematical Reasoning" (Sellke/Sawhney, Sep 8) — **dropped despite being the best thematic fit: no transcript or article page exists, a16z.com 404s the slug, so full text was unobtainable**; a16z "Who Grades the AI Models?" — same problem; MLST Kokotajlo/Larsen on AI 2040 Plan A — full text reachable but Plan A was already the 08-09 deep cut; Dwarkesh/Ajeya Cotra — Cotra covered on 08-30, 09-02, 09-03; TWIML 776 — used yesterday; Latent Space /p/aeo — off-topic. Interconnects chosen on full text.
 - *Dedup:* all five picks checked against the full script archive. The non-sofic *announcement* was covered 08-01 and 08-03 — today's item is the training-data/credit dispute, which is new, and the script explicitly calls back rather than re-narrating.
 === 2026-09-11T02:46:08-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-12T02:30:08-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + the two stub files — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written:**
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-12-the-word-they-borrowed.md` — 2,540 spoken words (~13 min at this show's 1.2× TTS rate, matching its 763–1058s history)
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-12-the-word-they-borrowed.rss-item.xml` — validated as XML, `__LENGTH__`/`__DURATION__` placeholders
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-12-the-word-they-borrowed.commit-msg`
+
+**Episode: "The Word They Borrowed."** Through-line — four communities named the same loss in four vocabularies in 24 hours.
+
+**Candidate funnel**
+
+Sources scanned:
+- **Hacker News** (Algolia front-page + `search_by_date`, >60 pts since Sep 10 12:00) — 68 stories scanned, ~14 AI-relevant after discarding off-topic (Houthis, diesel prices, Cherenkov, 9/11 anniversary, CSS/Godot/terminal tooling).
+- **Hugging Face daily papers** (Sep 10, Sep 11) — scanned; nothing beat the discourse items for this show's remit (papers are `jinglin-biomed-ai-brief`'s beat). Sep 10 leaders: Scaling Automatic Research Agents via World Models (440), Show-Harness (136), Programmable World Model (91).
+- **TechCrunch AI index** — 10 items scanned, 5 substantive.
+- **Long-form podcasts** — Dwarkesh (Sep 11, full transcript available).
+- **X/Twitter** — not attempted; unreadable from this host (documented). Substituted HN + primary blogs + Mastodon-style primary sources.
+- No source failed.
+
+Shortlist (✓ = used):
+- ✓ Math and AI Declaration, 25 Fields Medallists — https://mathandai.org/ (908 pts) — **lead**
+- ✓ Tao, "A Severe Misalignment of AI in Mathematics" — https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/
+- ✓ Totaro guest post, "On the Hodge conjecture" — https://terrytao.wordpress.com/2026/09/11/on-the-hodge-conjecture/
+- ✓ Clay Mathematics Institute, Navier-Stokes announcement — https://www.claymath.org/news/navier-stokes-announcement/ (152 pts)
+- ✓ TechCrunch, "OpenAI's feud with mathematicians is only escalating" — https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/
+- ✓ "OpenAI agents carried out an undisclosed attack on RubyGems" — https://www.rubyhack.ai/ (691 pts)
+- ✓ Ask HN, "Can we please limit the AI news flood?" — https://news.ycombinator.com/item?id=49657850 (790 pts)
+- ✓ Hook, "The Waymo effect" — https://www.researchagenda.news/articles/the-waymo-effect.html (324 pts)
+- ✓ Garry Tan on an American distillation regime — https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/ — **Money Moves**
+- ✓ Moonshot AI targets $2B annualized — https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/ — **Money Moves**
+- ✓ Dwarkesh w/ Schulman, Millidge, O'Neill — https://www.dwarkesh.com/p/john-beren-charlie (102 pts) — **Deep Cut**
+- Claude age assurance 18+ (641 pts) — product-policy, no intellectual substance
+- EPA scrapping data-center pollution review (459 pts) — real but US-regulatory, off-remit
+- google.com/goto anti-scraping (415 pts) — infra, thin
+- OpenAI Agents API docs (340 pts) — product launch, excluded by brief
+- Mecka AI $500M robot-data round; Nscale adds Fidji Simo — weaker signal than the distillation pair
+- Ronacher "Astra for Coding" (432 pts, second wave) — **shipped yesterday**, excluded as dedup
+
+Deduped against the last 8 episodes: the Navier-Stokes/OpenAI dispute was covered 09-09 and Thom's reply 09-11; today's angle (the Fields declaration, Totaro's counterfactual, Clay's ruling) is net-new and I flagged the prior coverage in-script rather than re-narrating it. Anthropic's distillation report (09-11) appears only as setup for Tan's rebuttal.
+=== 2026-09-12T02:40:48-07:00 done  jinglin-ai-pulse (exit 0) ===
