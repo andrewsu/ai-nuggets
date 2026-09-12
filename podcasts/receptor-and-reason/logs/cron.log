@@ -4389,3 +4389,39 @@ Ledger: 11 keys appended, 112 episodes / 1,147 items.
 
 2. **`.full.pdf` via jina is currently broken for bioRxiv** — it returns a ~200-byte iframe stub, not the body. The `.full` HTML path worked. That contradicts the standing memory note recommending `.full.pdf` over `.full`; I'll leave the memory alone for now since one day isn't a trend, but if it repeats tomorrow the note needs inverting.
 === 2026-09-11T03:10:22-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-12T02:50:08-07:00 start receptor-and-reason ===
+Episode is written and staged. Final run summary:
+
+---
+
+**Published: Receptor & Reason — 2026-09-12** (11 items, ~3,300 spoken words ≈ 18–19 min)
+
+`SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+Files written:
+- `podcasts/receptor-and-reason/scripts/2026-09-12-receptor-and-reason.md`
+- `...2026-09-12-receptor-and-reason.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `...2026-09-12-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, 113 episodes.
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Dedup-clean |
+|---|---|---|---|
+| bioRxiv + medRxiv (09-05→09-12, day-by-day, paginated) | 1,341 v1 preprints | 654 | 628 (26 already shipped) |
+| Crossref journal sweep (18 ISSNs, from-created 09-05) | 144 | ~60 | 134 fresh of 144 |
+| arXiv shared cache (500 entries, covering 09-08→09-10 only) | 500 | 110 bio×agentic | 108 (2 shipped 09-11) |
+| Psychiatric Times / BioSpace news tier | 5 headlines | 4 | **0 usable** — see below |
+
+Source gaps: Nature Mental Health Crossref call failed (1 of 18, not retried — no candidate loss, other Nature-family journals covered). No arXiv coverage of 09-11/09-12 (cache only spans 09-08→09-10).
+
+**Chosen (all read in full):** CACNA1C long-read isoforms (lead) · MAO-B PET in TRD · subcallosal-cingulate DBS sensing + home ketamine · PD motor invigoration/DAT PET · DMS GABA + semaglutide · VGLUT3 T8I/NAc acetylcholine · astrocytic α7–JAK2-STAT3 · mismatch-negativity/microglia null · LLM digital-standardized-patient bias audit · AssayLoop CRISPR (Genentech) · medical-LLM evaluation gap.
+
+**Two things worth flagging:**
+
+1. **The news tier was a dedup near-miss.** All three strong Psychiatric Times items (COMP360 52-week, DT120 breakthrough designation, GlyphAllo driving study) passed `shipped_keys.py` as *fresh* — the ledger holds the BioSpace URLs we linked on 09-10, and these were psychiatrictimes.com URLs for the same events. Different domain, different normalized key, no title overlap. I caught it by grepping prior scripts and dropped all three. URL-key dedup is per-domain and therefore weak for press items; I've recorded this in memory.
+
+2. **The episode runs ~18.7 min against a 12–18 min target.** I cut one item (substantia nigra connectivity gradients — its AUC of 0.98 in n=94 wasn't credible) and trimmed ~440 words, but trimming further would have started removing substance rather than padding. Recent episodes have run 18–19.5 min, so this is in line with practice but outside the stated spec.
+
+**Failed to render after 6 attempts:** medRxiv `2026.09.08.26362568` (MDD genetic risk → motor cortex PVALB⁺ interneurons) — high value, deferred for retest. Wiley (CPT, CPT:PSP) is now CAPTCHA-walled via the jina proxy, which contradicts prior guidance and makes those journals discovery-only.
+=== 2026-09-12T03:14:39-07:00 done  receptor-and-reason (exit 0) ===
