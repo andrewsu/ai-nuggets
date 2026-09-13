@@ -4214,3 +4214,40 @@ Shortlist (✓ = used):
 - ✗ TenNor rifaquizinone Phase IIa — body wouldn't render
 - ✗ Exegenesis/Modalis Duchenne, Samsung Bio $262M, Novartis peer-drag — already shipped 09-11
 === 2026-09-12T02:35:44-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-13T02:20:08-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md batch mode I stopped after the scripts and stubs — no TTS, no R2 upload, no `feed.xml` edit, no commit (the orchestrator does those).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-09-13-pharma-headlines.txt` (1,542 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-09-13-ivonescimab-harmoni2-os-spotlight.txt` (1,560 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as valid XML under the `itunes:` namespace, carry `__LENGTH__`/`__DURATION__` placeholders, 4-space item indent matching feed siblings, and `travis` Worker enclosure URLs. Both `.commit-msg` files carry the same combined `Calibr 2026-09-13: <headlines> + <spotlight>` message, matching how 09-11 and 09-12 landed (the first episode processed sweeps the whole show directory).
+
+**Candidate funnel**
+
+Sources scanned (Sunday 02:20 PDT — the trade press is dark after Friday, but WCLC 2026 opened Saturday in Seoul and its press program is live):
+- **BioPharma Dive** — homepage fetched, newest items Sept 11; all already shipped.
+- **BioSpace** `/latest-news-press-releases` — fetched, newest Sept 11; all already shipped except Samsung Biologics.
+- **Endpoints News** — homepage + `/news/` fetched. Newest item was the Akeso piece, timestamped **Sept 12, 21:46 EDT**. Bodies paywalled (used for discovery only).
+- **Fierce Biotech** — `r.jina.ai` returned an `AbuseAlleviationError` (domain blocked until Sept 13 09:32 UTC). **Failed, skipped.**
+- **Fierce Pharma** — jina returned a tracker-pixel cached snapshot, no content. **Failed, skipped.**
+- **STAT News** — not attempted (unreadable from this host per prior runs).
+- **WCLC 2026 press program** — mined via PRNewswire, medicalxpress, OncoDaily, CancerNetwork, targetedonc (403 on WebFetch).
+
+Shortlist after discarding already-shipped items:
+- HARMONi-2 OS detail, ivonescimab vs pembrolizumab — prnewswire.com/…-harmoni-2-presented-at-wclc-2026-302876953.html — **CHOSEN (spotlight + headline 1)**
+- TAISHAN-302, tam-peli B7-H3 ADC vs topotecan — medicalxpress.com/news/2026-09-tam-peli-survival-months-relapsed.html — **CHOSEN**
+- ARTEMIS-008, risvutatug rezetecan (Hansoh/GSK) — cancernetwork.com/view/risvutatug-rezetecan-improves-overall-survival-in-relapsed-sclc-trial — **CHOSEN**
+- MAVERICK / SWOG S1827, PCI vs MRI surveillance — medicalxpress.com/news/2026-09-trial-mri-surveillance-brain-small.html — **CHOSEN**
+- DeLLphi-309, extended-interval tarlatamab — medicalxpress.com/news/2026-09-interval-tarlatamab-dosing-safety-previously.html — **CHOSEN**
+- EVOKE-03 negative, Trodelvy + pembrolizumab — oncodaily.com/oncolibrary/lung-oncology/wclc-2026 — **CHOSEN**
+- Alzheon fundraise despite Phase 3 miss — endpoints.news/alzheon-outlines-plans-for-major-fundraising-round-…/ — **CHOSEN** (kept short; Endpoints body paywalled, only the headline claim asserted)
+- Lonza US factory + Samsung Bio $262M — endpoints.news/lonza-to-build-new-us-factory-samsung-bio-signs-262m-contract/ — **CHOSEN**
+- DeLLphi-305 first-line maintenance — numbers still embargoed; topline shipped 09-09, mentioned as pending only
+- Merck M&A chief on deal flow — endpoints.news/mercks-top-dealmaker-…/ — dropped, dated Sept 3
+- ARPA-H ADVOCATE cardiovascular AI (Tempus/UpDoc/Atman) — dropped, already shipped 09-10
+- Takeda's Andy Plump retirement — dropped, already shipped 09-11
+- REZILIENT3, ADAURA 8-year, PAPILLON, ARROS-1, IMpower030, DESTINY-Lung04 — all embargoed until Monday's Presidential Symposium 2; moved to the week-ahead block
+
+One judgment call worth flagging: the Alzheon item rests on an Endpoints headline whose body I could not read, so the script asserts only that a raise is planned despite a Phase 3 miss, attributed to Endpoints, plus mechanism background on ALZ-801 that is independently established.
+=== 2026-09-13T02:36:43-07:00 done  calibr-briefing (exit 0) ===
