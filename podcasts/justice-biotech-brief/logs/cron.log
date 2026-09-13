@@ -3121,3 +3121,29 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 **Why the Immutep item beat the CD70 CAR preprint:** it's the rarer artifact — a named causal hypothesis for a Phase 3 futility stop, with a mechanistically coherent failure mode (glycan-driven loss of avidity in an MHC-class-II-clustering agonist) that is directly transferable to Justice's own Fc-fusion and multispecific work, and a checkable counter-hypothesis (efti is 0-for-2 in randomized placebo-controlled trials; AIPAC missed PFS years before the 2,000 L scale-up, and the glycan story doesn't touch it). Full text of the primary source was read end-to-end; TACTI-004 design/futility, INSIGHT-003 single-arm OS, and the AIPAC primary-endpoint miss were each verified against independent sources before drafting.
 === 2026-09-12T02:49:33-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-13T02:40:08-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` was set, so per `PIPELINE.md` I skipped TTS, R2 publish, feed edit, and the commit — the orchestrator handles those after batch TTS.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-09-13-ivonescimab-harmoni-2-os-pdl1-subgroups-wclc.md` (1,426 spoken words)
+- `2026-09-13-ivonescimab-harmoni-2-os-pdl1-subgroups-wclc.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `2026-09-13-ivonescimab-harmoni-2-os-pdl1-subgroups-wclc.commit-msg`
+
+**Pick:** Ivonescimab — WCLC 2026 late-breaking abstract with detailed HARMONi-2 overall survival (PR Newswire, posted today 02:59 ET). ITT HR 0.73 (0.57–0.95), median OS 30.8 vs 22.6 months, P=0.009, 234 events in 398 patients. This show covered the numberless topline on 09-03 and staked a specific prediction on the hazard ratio, so the number landing is a genuine follow-up event, not a repeat. The episode's argument is that the headline number isn't the finding: PFS was flat across PD-L1 strata (0.54 low / 0.48 high, per the Lancet primary analysis) while OS is steep (0.85 / 0.58) — so the PD-L1-independent component separates curves without extending lives, and the VEGF arm reads as an avidity handle rather than a second mechanism. Plus 45.5% squamous, with the bevacizumab exclusion criteria verbatim (72.2% central, 10% cavitation, 6.7% vessel encasement) and no apparent bleeding increase.
+
+**Candidate funnel**
+
+- **bioRxiv** (details API, day-by-day 09-11/12/13): 350 records fetched, 345 unique (218/118/9), 241 version-1 in-window. 5 keyword hits, **all spurious** — `nectin` inside unrelated strings in two neuro/bone papers, `cd3` as a flow panel marker, `immune checkpoint` in a prostate sialome paper. 0 on-target. No full text fetched (none warranted selection).
+- **News indexes:** Endpoints ✅ (20.6 KB via jina + `x-no-cache`), BioPharma Dive ✅ (26.7 KB), BioSpace ✅ (11.9 KB), **Fierce Biotech ✗ (675 bytes = blocked)**, GlobeNewswire subjectcode index ✗ (1.2 KB = blocked).
+- **GlobeNewswire keyword sweep:** hyphenated keywords returned empty result blocks; URL-encoded spaces plus `?pageSize=50` worked. Newest on-target wire items were 09-09/09-10.
+- Policy/funder pages (ARPA-H, NIH, NSF) not fetched — no plausible on-beat item for this audience on a Sunday 02:40 run, and the day's lead was already a fully-readable primary source.
+
+Substantive shortlist:
+- ✅ **CHOSEN** — Ivonescimab HARMONi-2 OS detail, WCLC 2026 — https://www.prnewswire.com/news-releases/ivonescimab-versus-pembrolizumab-in-first-line-pd-l1-positive-nsclc-positive-overall-survival-results-from-harmoni-2-presented-at-wclc-2026-302876953.html
+- Cellectis allogeneic CAR-T corporate update, 09-11 — wire release, no data
+- Adagene / Third Arc Bio masked-CD3 partnership amendment, 09-10 — already a runner-up on 09-11
+- Crescent Biopharma (PD-1 × VEGF), 09-09 — outside the 1–2 day news window
+- GT Biopharma TriKE platform webcast, 09-11 — promotional, no data
+
+Sources: [PR Newswire / Akeso](https://www.prnewswire.com/news-releases/ivonescimab-versus-pembrolizumab-in-first-line-pd-l1-positive-nsclc-positive-overall-survival-results-from-harmoni-2-presented-at-wclc-2026-302876953.html), [Endpoints News](https://endpoints.news/akeso-details-survival-win-for-its-pd-1xvegf-drug-versus-keytruda/), [Lung Cancers Today](https://www.lungcancerstoday.com/post/phase-3-harmoni-2-study-ivonescimab-shows-os-benefit-in-pd-l1-positive-advanced-nsclc), [The Lancet HARMONi-2 primary analysis](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)02722-3/abstract), [oncologynexus](https://oncologynexus.com/harmoni-2-ivonescimab-improves-os-vs-pembrolizumab-in-nsclc)
+=== 2026-09-13T02:49:25-07:00 done  justice-biotech-brief (exit 0) ===
