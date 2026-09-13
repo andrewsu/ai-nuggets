@@ -4425,3 +4425,24 @@ Source gaps: Nature Mental Health Crossref call failed (1 of 18, not retried —
 
 **Failed to render after 6 attempts:** medRxiv `2026.09.08.26362568` (MDD genetic risk → motor cortex PVALB⁺ interneurons) — high value, deferred for retest. Wiley (CPT, CPT:PSP) is now CAPTCHA-walled via the jina proxy, which contradicts prior guidance and makes those journals discovery-only.
 === 2026-09-12T03:14:39-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-13T02:50:08-07:00 start receptor-and-reason ===
+Episode published (script + batch-mode stubs written; TTS, R2 publish, feed and commit are the orchestrator's under `SKIP_TTS=1`).
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-09-13-receptor-and-reason.md` (11 items, ~3,400 words)
+- `podcasts/receptor-and-reason/scripts/2026-09-13-receptor-and-reason.rss-item.xml` (validated: parses standalone and when spliced into `feed.xml`)
+- `podcasts/receptor-and-reason/scripts/2026-09-13-receptor-and-reason.commit-msg`
+- Ledger appended: 114 episodes, 1,169 items
+
+**Candidate funnel**
+
+- **bioRxiv details API** (day-by-day 09-06→09-13, version==1 only): 1,428 records scanned → 440 passed relevance filter → **415 fresh** after dedup (25 already shipped). Sweep clean, no outages.
+- **medRxiv details API** (same window): 514 records → 179 relevant → **173 fresh** (6 shipped).
+- **Crossref journal sweep** (22 ISSNs, `from-created-date:2026-09-06`): 168 journal-articles after dropping the IJNP `pyag040.` conference-abstract block → **159 fresh** (9 shipped). Briefings in Bioinformatics and Alzheimer's & Dementia returned 0 items; no failures.
+- **arXiv — TOTAL FAILURE, logged gap.** Shared cache `/tmp/ai-nuggets-arxiv-cache.xml` was 14 bytes of `Rate exceeded.`; live 400-result query failed 6/6 (429, 429, 503, 429, 429, 429) across ~12 min of backoff; `site:arxiv.org` WebSearch fallback returned only 2602–2608 papers, nothing in window. **Zero arXiv items today.**
+- **News tier**: Psychiatric Times homepage read (article pages still 403). COMP005/DT120/GlyphAllo all shipped 09-10 — dropped. Xanomeline/trospium real-world piece traced to a Frontiers paper + APA 2026 presentation, out of the 7-day window.
+
+Shortlist → **selected (11)**: SORDINO silent awake-mouse fMRI (lead) · donepezil 7T rs-fMRI · MDD polygenic risk → M1 PVALB⁺/CNNM2 · ESCRT-I/TSG101 NMDAR trafficking · PQBP1/PPAR-γ/pioglitazone · Kalirin–Rac1 covalent molecular glue · ShEPhERD-2 · PD dopamine agonists & uncued risk · oromucosal oxytocin/atosiban · FAERS ibogaine/mitragynine arrhythmia · ADHD polygenic scores + info-theoretic ceiling.
+
+Two things worth flagging: the **final-roster re-filter caught 2 of 11 picks as already shipped** (OCD psychotherapy EWAS, shipped 09-11; parcel-guided rTMS) — I'd selected them by hand from the raw candidate lists rather than the filtered ones, and replaced both. And `.full` returned the landing page for **all 12** preprints tried today, with `.full.pdf` recovering every one — the opposite of yesterday's ordering. Both are now in the rolling memory file, along with today's nature.com wall state and the unshipped-but-read candidates.
+=== 2026-09-13T03:08:27-07:00 done  receptor-and-reason (exit 0) ===
