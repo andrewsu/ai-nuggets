@@ -4427,3 +4427,33 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md batch mode I stopped af
 
 **Policy / funders**: ARPA-H ADVOCATE program launch, 2026-09-09 — https://arpa-h.gov/news — FDA-authorized clinical AI for cardiovascular care; in-window but clinical-AI regulatory, not agentic research AI, and weaker for this audience than MutexaGPT. NIH news releases (fetched via `r.jina.ai`; direct curl and WebFetch both 403 from this host) — nothing AI-related in window. NSF news page returned a 342-byte stub, no items; HHS not reached — neither gap affected the outcome.
 === 2026-09-12T02:07:20-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-13T02:00:08-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per `PIPELINE.md` I skipped TTS, R2 publish, the feed edit, and the commit — the orchestrator does those after batch TTS.
+
+**Files written** (all in `podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-09-13-autoscreen-functional-genomics-co-scientist.md` — 876 spoken words (cap 1150)
+- `2026-09-13-autoscreen-functional-genomics-co-scientist.rss-item.xml` — validated as XML, `__LENGTH__`/`__DURATION__` placeholders
+- `2026-09-13-autoscreen-functional-genomics-co-scientist.commit-msg`
+
+**Pick:** AutoScreen (bioRxiv, posted 2026-09-10) — Le Cong's lab at Stanford, with Leskovec, Altman, Regev. Full text read in full (89 KB via `r.jina.ai` on `.full`, all six sections). Paper URL verified HTTP 200.
+
+---
+
+### Candidate funnel
+
+**bioRxiv** — day-by-day details API sweep of 2026-09-10 → 09-13; 704 unique records pulled (354/219/122/9 per day), all pages. 68 keyword hits, 34 after tightening to agentic/LLM/KG/ontology terms, 4 substantive after discarding spurious matches ("agent" = infectious agent, "cognitive agents", etc.):
+- **AutoScreen: AI Co-Scientist System for Target Discovery in Functional Genomics** — https://www.biorxiv.org/content/10.64898/2026.09.06.749678v1 — **CHOSEN**
+- Agent-driven Model Development for RNA 3D Structure Prediction (Sanofi; 297 agent iterations → QuickFold) — https://www.biorxiv.org/content/10.64898/2026.09.08.749228v2 — runner-up, strong but a v2 and a narrower "case study" claim; lost on wet-lab validation and scope
+- scOLAR: Ontology-Anchored Open-Set Annotation of Single-Cell RNA-seq — https://www.biorxiv.org/content/10.64898/2026.09.05.749179v1 — on-brief for the ontology beat but a supervised-classifier paper, not agentic
+- GEM-GPT (systems pharmacology) — v2 of a 2026-07-17 preprint, out of window as a fresh pick
+
+**arXiv** — **FAILED.** Shared cache `/tmp/ai-nuggets-arxiv-cache.xml` contained a 14-byte body reading `Rate exceeded.` (not empty, so it passed a naive existence check). Live listing call returned the same 14 bytes; one 70s-backoff retry also returned it. `rss.arxiv.org` returned valid RSS with zero items (Sunday — arXiv pauses weekend announcements). Proceeded without arXiv; noted as a recall gap. Memory saved so future runs test cache *content*, not presence.
+
+**PubMed** — esearch `reldate=5`, 1,171 hits, 400 fetched, 35 survived the strong-keyword filter. All either clinical-LLM evaluation (radiology reports, triage, patient Q&A), off-domain (financial ontology induction), or already shipped (MutexaGPT, 09-12). Nothing on-brief. One near-miss: *Align Entities With Ontologies: LLM-Enhanced Inductive Subgraph Reasoning Over Ontology-Based KGs* (TPAMI) — right beat, wrong domain (not biomedical).
+
+**ChemRxiv** — `site:chemrxiv.org` search returned nothing inside the 4-day window; newest on-topic results were March/April/May 2026. Zero candidates.
+
+**News / product launches** — no on-target launch in the 3-day window. Nearest items (CluePoints clinical-data-review agents, CIQ Fuzzball 4.2) were 09-03 and off-brief.
+
+**Funder pages** — ARPA-H news checked: newest item is 09-09 ("world's first bid to build FDA-authorized clinical AI for cardiovascular care"), four days out, so out of window. `nih.gov/news-events/news-releases` returned HTTP 403 to WebFetch — second source-side gap.
+=== 2026-09-13T02:07:46-07:00 done  biomedical-agentic-ai (exit 0) ===
