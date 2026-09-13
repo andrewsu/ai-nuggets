@@ -137,6 +137,20 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     capital that would otherwise fund a Blackbird spinout, not merely for the acquirer at the end. THE COUNTER-ARGUMENT IS THE
     ONE WE HAVE ALWAYS HAD AND SHOULD STATE MORE OFTEN: they own a LICENCE; we own COMPOSITION OF MATTER.** Source:
     https://www.biospace.com/business/solstice-rises-with-225m-to-develop-next-gen-ctla-4-drug-from-china
+  - **THE COLUMN WIDENS FROM ONE COUNTRY TO FIVE, AND AUSTRALIA QUALIFIES THE 09-03 INSPECTABILITY DISCOUNT (added 2026-09-13
+    Portfolio Watch item 3; published 2026-09-09).** The ex-US asset search has moved past China, with transactions attached to each
+    venue. **South Korea** (Songdo cluster) — **Hanmi–Roche $2.3B**, **Hanmi–Lilly $1.2B**, GSK and Lilly both into **ABL Bio**.
+    **Australia** — decades of Western trial track record and **FDA/EMA acceptance of the data**; **Telix–Regeneron $4.3B
+    radiopharma (April 2026)**. **Hong Kong** — **second-largest biotech IPO venue globally, >$17.5B raised since the 2018
+    reforms**; Axiom Biosciences pursuing a $150–200M listing. **India** — **Sun Pharma acquired Organon for $11.75B (2026)**;
+    patent filings up **>4x since 2016**; population 1.47B. **Canada** — preferred for Phase 2 and gene therapy; **AbCellera–Jazz
+    $2.46B**; **Zymeworks–Jazz $50M upfront + $1.4B**. Drivers cited: **BIOSECURE (signed Dec 2025)** plus the cost of testing
+    unproven biology in the US alone.
+    **READ (Eddie Cherok + Matt Tremblay) — THIS QUALIFIES THE 09-03 ENTRY ABOVE.** Australia is a direct counterexample to the
+    inspectability discount: an established venue whose data the FDA already accepts, with no meaningful haircut. ⇒ **"FDA-inspectable
+    human data" is a NARROWER differentiator than it was scored on 09-03. The durable one is an UNENCUMBERED
+    COMPOSITION-OF-MATTER POSITION, and that should now be the only thing we claim in this column.** Source:
+    https://www.biospace.com/business/beyond-china-five-other-overseas-destinations-for-biopharma-dollars
 
 - **THE EXIT MAP HAS THREE PUBLIC-MARKET DOORS, NOT TWO — REVERSE MERGERS ROSE 1,600% IN Q3 (added 2026-09-02 Portfolio Watch item 6;
   published 2026-09-02).** Per **Leerink Partners**: **20 biotech IPOs and 19 reverse mergers year-to-date**, close to 1:1 — but
@@ -186,7 +200,7 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
   https://www.whitehouse.gov/fact-sheets/2026/08/fact-sheet-president-donald-j-trump-announces-deal-with-nine-additional-pharmaceutical-manufacturers-to-lower-drug-prices-for-americans/
 
 ### Spinout-structure comparators (how other people carve assets out)
-_Last update: 2026-09-12_
+_Last update: 2026-09-13_
 - **THE KURA / CASPIAN SHAPE — the IP parent keeps ~HALF THE COMPANY (added 2026-09-12 Portfolio Watch item 3; announced 2026-09-09).** **Kura Oncology (Nasdaq: KURA) launched Caspian Therapeutics, Inc.**, a separately financed
   company for **diabetes and cardiometabolic disease**, around **KO-7246** — a next-generation, highly selective **menin inhibitor purpose-designed for chronic metabolic disease** (not oncology) — plus related IP and know-how
   contributed by Kura. **$50M led by BVF Partners**, with the **T1D Fund**, **Invus**, **Montanova**, **Eli Lilly and Company**, Kura itself, Kura leadership and biotech entrepreneurs. **Kura retains ~50% fully diluted plus board
@@ -207,6 +221,59 @@ _Last update: 2026-09-12_
   the week of 2026-09-08 AFTER a $12B acquisition. Both got the exit anyway. ⇒ "Near-term clinical catalyst" is the phrase to design toward; crossover money is available on the FAR SIDE of a de-risking event, which is precisely
   the product Blackbird Laboratories manufactures. ACTION: every programme plan should name the single event that converts the asset from "early-stage" to "de-risked," and how fast we can buy it.** Source:
   https://www.biospace.com/business/frazier-adds-1-1b-to-small-and-mid-sized-biotech-fund
+- **DURATION IS NOW A VENTURE PRODUCT — a debut fund closed at $410M on a FIFTEEN-YEAR clock (added 2026-09-13 Portfolio Watch item 4;
+  announced 2026-09-09).** **Luma Group (New York)** closed **LumaBio Fund I at $410M**, its inaugural fund, **structured as a 15-year
+  investment vehicle** with explicit flexibility to hold highest-conviction companies **from discovery through commercialisation**.
+  **Managing Member Joshua Fink; Co-Founder and Partner Themasap Khan, Ph.D.** LP base: **financial institutions, SOVEREIGN WEALTH
+  FUNDS, insurance companies, family offices, UHNW individuals.** Invests **early**, in companies combining biology, chemistry, physics
+  and AI. Portfolio since 2023: **Altos Labs, Arsenal Biosciences, Integrated Biosciences, Character Biosciences, Aeovian, Curve
+  Biosciences, SciThera, Coultreon, Vaccine Company** plus stealth. **First exit: Eli Lilly acquired Vaccine Company for up to $1.55B.**
+  **READ (Emily Wilkinson + Eddie Cherok + Matt Tremblay) — PAIRS WITH AND PARTLY UNDERCUTS THE FRAZIER ENTRY ABOVE.** Frazier is
+  crossover capital on the FAR SIDE of a de-risking event. Luma is **the other end of the barbell — and it is the end we assumed was
+  ours.** Patient capital is the structural advantage a nonprofit with an endowment-scale founding grant holds over a 10-year fund, and a
+  dedicated venture firm has now raised that duration as a **product**, from the LP base where duration actually lives. ⇒ **(a) "We can
+  wait longer than a fund can" is a weaker STANDALONE claim and should come out of the pitch as one. (b) CONSTRUCTIVE: a 15-year fund is
+  the natural co-investor for a programme whose value event is six years out, which describes most of what Blackbird Laboratories funds
+  — Luma is a NAME for the empty venture-philanthropy / long-duration column the Kura-Caspian entry opened on 09-12 (T1D Fund is the
+  other). Put entries in that column, not question marks.** Source:
+  https://www.prnewswire.com/news-releases/luma-group-successfully-closes-lumabio-fund-i-at-410-million-302873363.html
+
+- **LICENSING MECHANICS — THE SIGNING-TO-CLOSING WINDOW, AND WHY A CLEAN DATA ROOM IS NOT ALIGNMENT (added 2026-09-13 Portfolio Watch
+  LEAD; licence 2026-08-26, FDA hold letter 2026-09-04, disclosed 2026-09-09/10).** **Biohaven** licensed its **Kv7 ion-channel
+  platform**, led by **opakalim (ex-BHV-7000, a selective Kv7.2/7.3 activator, Phase 2/3 focal epilepsy)**, exclusively worldwide to
+  **SK Biopharmaceuticals**: **$350M cash AT CLOSING + $50M next year + $150M development/regulatory milestones + tiered royalties
+  mid-teens to low-twenties on US net sales; up to $795M across the platform.** SK also **assumes Biohaven's obligations to Knopp
+  Biosciences**, the original developer. **Nine days later the FDA issued a PARTIAL CLINICAL HOLD** over a **metabolite identified in
+  rodent toxicology** — insufficient information to assess human risk — **pausing NEW enrolment** pending clarifying nonclinical work.
+  Existing patients continue; **>1,200 dosed programme-wide, >600 in active dosing**; pivotal **BHV7000-303** finished enrolling June
+  2026 and is unaffected (topline 2H 2026); **BHV7000-302** new enrolment paused. **Biohaven states all metabolite and clinical data
+  were disclosed to SK before signing**, and **HSR filings were still being completed — the transaction had NOT closed.**
+  **FOUR DURABLE LESSONS FOR BLACKBIRD AS LICENSOR.** **(1) (Eddie + Emily) The money is payable AT CLOSING and the regulatory event
+  landed in the gap. Decide IN ADVANCE which regulatory events inside the signing-to-closing window we carry and which reprice.**
+  **(2) (Hemaka) Disclosure is not alignment — both parties held the same rodent data; the buyer paid, the regulator stopped
+  enrolment. ⇒ Pre-IND / Type C MEETING MINUTES are worth more in our data room than another hundred pages of primary data; they are
+  the only document that reports what the AGENCY thinks.** **(3) (Avi + Jon) The failure was in the NONCLINICAL package, not efficacy
+  and not a clinical safety signal after 1,200 dosed patients. Applies directly to NuGate's ASO, the GPR52 development candidate still
+  guided for later in 2026, and Aletira's first vector: metabolite/impurity characterisation is not where schedule savings live.**
+  **(4) Royalty stack: SK assumed the obligations to Knopp. When a Blackbird programme is licensed out, WE ARE KNOPP in that sentence
+  — academic-origin obligations travel through every downstream transaction and are renegotiated by nobody, which is the argument for
+  getting the FIRST licence right rather than fast.** Sources:
+  https://www.sec.gov/Archives/edgar/data/0001935979/000193597926000077/bhvn-20260904.htm ·
+  https://ir.biohaven.com/news-releases/news-release-details/biohaven-and-sk-biopharmaceuticals-enter-strategic-global
+
+- **MFN ARRIVES AS A PORTFOLIO PREFERENCE, NOT ONLY A PRICE CAP — and this half points our way (added 2026-09-13 Portfolio Watch item 2;
+  published 2026-09-10).** **Numerof & Associates, "Pharma's Commercial Reset"** — **157 pharma leaders across 67 companies.** Launching
+  a drug is no longer *"a straight math exercise"*; manufacturers now **sequence launches country by country** based on what an accepted
+  price in one market does to the achievable price elsewhere, and **some are reconsidering low-price markets entirely**. Interviewee:
+  *"The policy environment is like an earthquake; it's not going to settle down soon."* **Three named structural consequences: pricing
+  considerations enter clinical development FROM PHASE 1/2 ONWARD; market access and distribution teams integrate years earlier; and the
+  portfolio preference is SHIFTING TOWARD TARGETED THERAPIES FOR SMALLER, WELL-DEFINED POPULATIONS and away from multi-indication
+  blockbusters.** **READ (Matt + Eddie + Emily): the 09-01 MFN entry above said the buyer has pre-committed the launch price of a drug
+  that does not exist yet. This is the same force expressed as WHAT THE BUYER NOW WANTS TO OWN — and one mechanism / one tightly defined
+  population / one narrow first indication is exactly the asset shape a Blackbird programme produces. Say it out loud in partnering
+  conversations. COROLLARY: if pricing enters THEIR development at Phase 1, it enters OURS at the grant decision — every value case
+  should carry a LAUNCH-SEQUENCING assumption, not just a US price.** Source:
+  https://www.biospace.com/drug-development/drugmakers-cherry-pick-launch-regions-as-mfn-creates-policy-environment-like-an-earthquake
 
 ### Team
 - **Matt Tremblay, Ph.D.** — CEO, founding board member. Ex-COO of Scripps
@@ -527,6 +594,31 @@ https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentall
     https://www.globenewswire.com/news-release/2026/09/08/3357341/0/en/upstream-bio-presents-results-from-the-phase-2-valiant-trial-of-verekitug-for-the-treatment-of-severe-asthma-in-oral-presentation-at-ers-congress-2026.html ·
     https://www.news-medical.net/news/20260907/GLP-1-treatment-linked-to-4025-fewer-asthma-attacks.aspx ·
     https://www.nasdaq.com/press-release/tozorakimab-met-primary-endpoint-phase-iii-miranda-trial-patients-copd-2026-04-20
+  - **AND A CANDIDATE FOR WHAT THE RESIDUAL PATIENT'S DISEASE ACTUALLY IS — MUCIN COMPOSITION, NOT MUCIN AMOUNT (added 2026-09-13
+    Sourcing Radar LEAD; preprint posted 2026-09-10).** **Gregg Duncan lab (Sahana Kumar, Allison Boboltz), Fischell Department of
+    Bioengineering, University of Maryland, College Park.** CRISPR **MUC5B** and **MUC5AC** knockout airway cultures used to harvest
+    near-pure mucus stocks, recombined at **75:25 / 50:50 / 25:75 at FIXED total protein** and transplanted onto washed **primary
+    NHBE** cultures. **Mucociliary transport falls monotonically as MUC5AC rises: ~29.7 → 23.4 → 19.2 µm/s (~1.5-fold);** network pore
+    size falls and microviscosity rises (**2.6 → ~3.2–3.9 mPa·s**); **CILIARY BEAT FREQUENCY IS UNCHANGED across every condition — the
+    cilia are fine, the cargo is not.** **Monomucin gels transport equivalently**, so MUC5AC is not innately untransportable; the
+    deficit is a **MIXTURE** effect and a **TETHERING** effect when MUC5AC is layered onto a MUC5B-predominant surface. In **IL-13
+    (10 ng/mL, 7 d) asthma-like cultures**, **MUC5B supplementation improved transport and MUC5AC did not**, despite adding
+    substantial total mucus load.
+    **CANDID LIMITS: the direct MUC5B-vs-MUC5AC comparison WITHIN the IL-13 arm was NOT significant (authors' own text); n=3; in vitro
+    only; competing interests declared NONE, i.e. no IP on file.** Funded by the Cystic Fibrosis Foundation, NIH R01 HL160540 /
+    F31 HL176146, UMD Grand Challenges.
+    **COMPETITIVE CONTEXT: Arrowhead's ARO-MUC5AC (inhaled RNAi silencing MUC5AC) has been in Phase 1/2a in asthma and COPD since
+    2022** — the "lower the bad mucin" lane is funded and clinical, and this work SUPPORTS it rather than challenging it. The unowned
+    direction is **raising MUC5B**, which is not a product: gel-forming mucins are enormous, heavily O-glycosylated polymers nobody
+    manufactures recombinantly at therapeutic scale.
+    **THEME READ (Virginia Burger + Avi Khanna): the 09-09 conclusion was that the ONLY unowned position on the alarmin pathway is the
+    RESIDUAL eosinophil-low COPD patient treated to only ~−23%. This is the best available argument that that residual is a
+    MUCUS-MECHANICS phenotype — obstruction as a MATERIAL property downstream of where all four alarmin entrants converge (cf.
+    tozorakimab's own ERS mucus-plug poster). TWO DILIGENCE QUESTIONS, NOT A LICENCE: (1) does the MUC5B:MUC5AC ratio stratify real
+    sputum — if yes, the residual population stops being rhetorical and becomes a stratification asset; (2) is there a tractable way to
+    move the ratio that is NOT a recombinant mucin. If (2) is no, this is a WATCH item plus a candidate BioHub shared capability (same
+    shape as the Wirtz/Wu VITAL-3D call, §2b) and we should say so rather than funding a manufacturing problem.** Source:
+    https://www.biorxiv.org/content/10.64898/2026.09.08.750178v1
 
 **PARKINSON'S theme — the constraint the field names is DIAGNOSTIC LATENCY, not target choice, and the inflammasome lane is
 already priced (added 2026-09-08 Portfolio Watch item 4; published 2026-09-08).** **Jefferies: ~$8B market by 2035**, *"one of the
@@ -1736,7 +1828,16 @@ _Last update: 2026-09-09_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-12_
+_Last update: 2026-09-13_
+- **A THIRD ROUTE TO THE SAME SAFETY PROMISE, AND IT IS AT OUR ANCHOR INSTITUTION (added 2026-09-13 Sourcing Radar pick 2).** The two
+  routes logged on 09-12 were **restrict WHICH ANTIGEN the engager sees (Winnow)** and **restrict WHERE it switches on (masking,
+  Adagene/Third Arc)**. The **Hamad lab x-mab** work at JHU SOM Pathology (full entry in §2b) is a third: **restrict by THE RECEPTOR
+  ITSELF** — a germline-encoded IgM that reportedly binds a conserved CDR3α motif shared by diabetogenic TCR clonotypes and strips
+  CD69 off islet-reactive tissue-resident memory T cells. **It is not an engager and it is not competitive with Winnow's chemistry,
+  but it competes for the same SENTENCE in a partner's head: "we remove the pathogenic T cell without immunosuppression."**
+  ⇒ **Winnow's answer to "why an engager rather than a natural antibody against the TCR" should exist in writing, and the honest
+  version is about POTENCY AND CONTROL (a redirected cytotoxic T cell kills; an IgM that downregulates a retention molecule
+  relocates), not about selectivity.**
 - **THE COMPETING ROUTE TO A SAFE ENGAGER IS THE MASK, AND A WELL-CAPITALIZED ONCOLOGY+I&I PLAYER JUST BOUGHT IT RATHER THAN BUILDING IT (added 2026-09-12 Portfolio Watch item 2; announced 2026-09-10).**
   **Adagene** (Nasdaq: ADAG; CEO Peter Luo) announced **Third Arc Bio selected its FIRST LEAD CANDIDATE** under an **amended** strategic collaboration (original Nov 2025) for **masked CD3 T cell engagers** using **SAFEbody®** —
   masking that **shields the binding domain and is activated in the tumor microenvironment**. Target and economics undisclosed; **total potential development + commercial milestones payable to Adagene INCREASED** vs. the original.
@@ -3249,6 +3350,64 @@ raises, exits, or crosses a scientific milestone.
   in vivo (08-31/09-01) → Novartis + BMS halted the *ex vivo* autoimmune trials (09-01/09-02) → this round (09-02). Sources:
   https://www.prnewswire.com/news-releases/typewriter-therapeutics-emerges-from-stealth-with-56-million-series-a-financing-to-pursue-in-vivo-car-t-medicines-302866871.html ·
   https://endpoints.news/typewriter-raises-56m-for-jumping-gene-technology-and-in-vivo-car-t-therapies/
+
+### Hamad lab x-mab antigen-specific T1D immunotherapy (JHU School of Medicine, Department of Pathology + Johns Hopkins Comprehensive Diabetes Center) — active sourcing lead + direct Winnow adjacency ⚠
+_Last update: 2026-09-13_
+- **WHAT (surfaced 2026-09-13 Sourcing Radar pick 2; JHU Hub feature 2026-09-09; paper in *The Journal of Immunology*, April 2026).**
+  **Abdel-Rahim A. Hamad** (Pathology, JHU SOM), with **Rafid Al-Hallaf** (research fellow) and **Thomas W. Donner** (Johns Hopkins
+  Comprehensive Diabetes Center). The asset is **x-mab**, a **germline-encoded IgM autoantibody** derived from the **"X cell"** — a
+  **dual-expresser lymphocyte carrying BOTH a TCR and a BCR**, described by this group in *Cell* in 2019. Proposition: remove the
+  **~2% of islet-reactive T cells** that destroy beta cells **without immunosuppression**.
+- **PER THE PUBLISHED ABSTRACT** (full text NOT read — see the access note below): in the **nonobese diabetic mouse**, x-mab
+  **prevents disease onset, induces durable remission and preserves functional islets without disrupting systemic immune
+  homeostasis**; it selectively engages **islet-reactive CD4 and CD8 tissue-resident memory T cells in pancreas and pancreatic lymph
+  nodes**; engagement **downregulates CD69**, the Trm retention molecule, reducing pathogenic pancreatic T cells; it **recognises the
+  analogous CD69+ cells from human T1D patients and downregulates CD69 ex vivo**; and structural modelling localises binding to a
+  **conserved CDR3α SGGGGS motif shared by human and mouse diabetogenic clonotypes**.
+- **WHY IT IS A LEAD RATHER THAN A PAPER (Jon Robbins + Hemaka Rajapakse) — DIRECT WINNOW ADJACENCY FROM THE OPPOSITE DIRECTION.**
+  **Winnow restricts WHICH ANTIGEN the engager can see. x-mab restricts by THE RECEPTOR ITSELF** — a key cut to a conserved shape in
+  the pathogenic clone's TCR. **Broader than antigen restriction if the motif is genuinely private, and catastrophic if it is not; the
+  privacy of that motif is the whole bet and it is a single experiment.**
+- **CANDID FLAG — THE BIOLOGY WAS PUBLICLY CONTESTED.** A 2021 *Cell* exchange reported **non-reproduction** of dual-expresser /
+  public-clonotype enrichment in T1D patients, with a **formal reply from this group** arguing the methods were not followed
+  (PMIDs 31150624 and 33545037). **Any partner finds this in the first hour. The counter-argument to have ready: the ASSET is an
+  antibody with a defined binding mode, not a cell type, so the dispute over the source cell is less load-bearing than it looks — but
+  that argument is DEFENSIVE and defensive arguments cost money in diligence.**
+- **ACCESS NOTE (carry until resolved).** The 2026 *J Immunol* paper is **closed access — Unpaywall reports no OA location, no PMC
+  deposit and no preprint**; r.jina.ai on academic.oup.com returns a CAPTCHA wall. **Everything above is the abstract plus the
+  institutional feature. READING THE FULL PAPER IS DILIGENCE STEP ONE** and is the reason this was pick 2 rather than the Radar lead.
+- **IP / STATE-LADDER STATUS (Esther Park — question one for JHTV).** No licensing status disclosed. Funders include the **Maryland
+  Innovation Initiative**, the **W. M. Keck Foundation**, the **Norman Raab Foundation**, a **Breakthrough T1D Innovative Award**, and
+  NIH (**R01 AI099027**, **T32HD044355**). **MII money means the state translational ladder is already engaged and JHTV has almost
+  certainly looked at this — ask before assuming it is open.**
+- **LANDSCAPE, AND WHY THE TIMING MATTERS.** Both recent moves in T1D are **DOWNSTREAM**: **Caspian Therapeutics** (Kura carve-out,
+  $50M + Lilly, 2026-09-09 — menin inhibition to expand beta-cell mass) and **BetaNova** (Sernova + Seraxis, Germantown MD, cell
+  replacement). Plus **Islex Therapeutics** (Baltimore, JHU, ZnT8 islet-homing) on the first-read list. **Nobody in that set is
+  stopping the attack. This is the missing arm, and it is at our anchor institution.**
+- Sources: https://hub.jhu.edu/2026/09/09/federal-funds-support-type-1-diabetes-treatment/ ·
+  https://doi.org/10.1093/jimmun/vkag056 (closed access)
+
+### *Candida albicans* / TG2 / MGAT5 colorectal-cancer axis (JHU SOM Division of Gastroenterology & Hepatology + King's College London) — WATCH, not a build; combine with the UMB *Candida* capability ⚠
+_Last update: 2026-09-13_
+- **Janet F. Staab** and **Nicholas C. Zachos** (JHU SOM GI & Hepatology) with **Julian R. Naglik** (King's College London); preprint
+  posted **2026-09-11**. **Tumour-selective interaction:** *C. albicans* invades CRC lines (SW480, LoVo, HCT 116) but **NOT healthy
+  patient-derived colon organoid monolayers**; **healthy colonic epithelium expresses almost no TG2** (undetectable protein in healthy
+  organoid lysates) while **TG2 is elevated in CRC**. In TG2-high SW480, hyphal invasion triggers an injury response that **activates
+  TG2**, which **covalently crosslinks the hyphal adhesin Hwp1 to the tumour cell — candidalysin-dependent** (an *ece1* deletion strain
+  fails to activate TG2 even at 16 h, so **cytotoxicity, not contact, is the trigger**), giving a **feed-forward loop** that holds more
+  fungus at the tumour niche. **Independently of TG2**, infection drives EMT-like change (E-cadherin loss, altered N-cadherin
+  glycosylation, variable Snail1) and raises **MGAT5** activity and β(1-6)-branched N-glycans, increasing migration. **Swainsonine
+  restored migration to control in infected SW480 but NOT HCT 116, and did NOT block the EMT markers — motility and phenotype are
+  separable arms.** Funded by NIH R21DE021972, the Sherlock Hibbs Endowment, JHU GI/Hepatology; BBSRC for Naglik. **No competing
+  interests declared → no IP on file.**
+- **WHY NOT A COMPANY:** no IP, an old α-mannosidase II tool compound with a poor clinical history, and an antifungal-adjunct CRC trial
+  will not be funded off cell-line data.
+- **WHY IT STAYS ON THE RADAR (Esther Park):** cleanest statement yet of the **chronic-infections thesis** — the organism that changes
+  the outcome is not the thing anyone measures, and the mycobiome is measured **never** in CRC care — plus a testable **TG2-high
+  stratification hypothesis** that could be run on existing tissue. **PRACTICAL ACTION (small): the isolates came from the Johns
+  Hopkins Hospital clinical mycology lab (Sean Zhang), which is now the SECOND Baltimore *Candida* capability beside the standing
+  BORROW item on Mary Ann Jabra-Rizk's *C. auris* collection at UMB. Combine into ONE capability note, not two maybes.**
+- Source: https://www.biorxiv.org/content/10.64898/2026.09.09.750446v1
 
 ### Aluco BioSciences (San Carlos CA) — Lieber-adjacent West Coast neurology + endocrine biotech, tracked-company for Chief Business Officer first-read ⚠
 - **What.** California-incorporated biotech (Delaware / California SoS 2024-03-24 filing; located at 733 Industrial Rd, San Carlos, CA 94070). Public website (alucobio.com) is a soft-launch placeholder as of 2026-07-17. Positioning language: "neurological and endocrine disease areas"; "novel approach to drug development"; "compounds tailored to specific disease indications." No public team, target, platform, or funding disclosure yet.

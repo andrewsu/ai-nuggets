@@ -2500,3 +2500,24 @@ Shortlist and disposition:
 
 **Dedup** — batch: 10 candidates → 9 fresh (1 already shipped). Final 7-key roster re-filtered: 7/7 fresh against 62 episodes / 353 keys.
 === 2026-09-12T02:26:41-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-13T02:10:08-07:00 start blackbird-brief ===
+Both of Sunday's episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the two transient stubs per episode and did not run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Sourcing Radar — `2026-09-13-radar-umd-duncan-mucin-ratio`** (2,237 words)
+- **LEAD (full text read):** Kumar/Boboltz/Duncan, Fischell BME, UMD College Park — CRISPR MUC5B/MUC5AC knockout airway cultures recombined at fixed total protein show mucociliary transport falling ~29.7 → 19.2 µm/s as MUC5AC rises *with ciliary beat frequency unchanged*; monomucin gels transport identically, so it's a mixture/tethering effect; MUC5B (not MUC5AC) restores transport in IL-13 cultures. Candid: the within-IL-13 comparison is **not** significant (authors' own text), n=3, no IP on file, and Arrowhead's inhaled ARO-MUC5AC has owned the MUC5AC-lowering lane clinically since 2022. Read: names a candidate disease for the residual eosinophil-low COPD patient the 09-08/09-09 ERS analysis left as the only unowned position.
+- **Pick 2:** Hamad lab x-mab (JHU SOM Pathology) — germline IgM reading a conserved CDR3α motif on diabetogenic TCRs; direct Winnow adjacency from the opposite direction; MII funding; the 2021 *Cell* reproducibility dispute flagged.
+- **Pick 3 (watch, full text read):** Staab/Zachos JHU — *Candida albicans* activates TG2 in a candidalysin-dependent injury response to crosslink itself onto CRC cells; MGAT5 branching drives migration separably from EMT.
+
+**Portfolio Watch — `2026-09-13-portfolio-watch`** (1,979 words)
+- **LEAD:** FDA partial clinical hold on opakalim landed **between signing and closing** on Biohaven's $350M-at-closing Kv7 licence to SK, over rodent-toxicology metabolite data Biohaven says SK had before signing. Four licensor lessons.
+- Numerof's 157-leader survey (MFN pushes pricing into Phase 1/2 and shifts buyer preference toward small, well-defined populations — our asset shape); the ex-US comparator widening to five venues, with Australia narrowing the 09-03 inspectability argument; Luma's $410M debut fund on a **15-year** clock; and the FDA's first Deputy Commissioner for Technology and AI.
+
+Two things worth flagging:
+
+1. **A dedup false negative I caught by hand, not by the filter.** BetaNova (Sernova + Seraxis) passed `shipped_keys.py` as fresh because 09-12 shipped it under the `sernova.com` URL while my candidate came in under the BioBuzz URL. Same failure mode as CraniUS on 09-12 — second occurrence in three days. I dropped the item and appended *every* source URL for today's picks to the ledger rather than just the primary one.
+2. **Source failure:** `fiercebiotech.com` was blocked to both WebFetch (403) and r.jina.ai (`AbuseAlleviationError`, domain-wide until 09:32 UTC) for the whole run. I recovered headlines from its RSS feed, but two relevant bodies — the de Claro OCE interview and a RAS-inhibitor feature with a Clasp line — were unreadable and dropped.
+
+The Hamad *J Immunol* paper is closed access with no OA copy or preprint (Unpaywall confirms), so it is ineligible as the Radar lead under the full-text gate. I made it pick 2, grounded strictly in the published abstract plus the JHU announcement, and said so explicitly in the script.
+
+Reference file updated in place (five entries, no dated log appended): §1 gains the five-geography comparator widening, the Numerof portfolio-preference read, the Biohaven licensing-mechanics lessons and Luma under the capital map; the COPD theme gains the mucin-ratio lead; §2b gains new Hamad and *Candida*/TG2 entries; Winnow gains the x-mab cross-reference.
+=== 2026-09-13T02:42:29-07:00 done  blackbird-brief (exit 0) ===
