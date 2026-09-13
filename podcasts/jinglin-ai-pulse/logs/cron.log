@@ -2728,3 +2728,33 @@ Shortlist (✓ = used):
 
 Deduped against the last 8 episodes: the Navier-Stokes/OpenAI dispute was covered 09-09 and Thom's reply 09-11; today's angle (the Fields declaration, Totaro's counterfactual, Clay's ruling) is net-new and I flagged the prior coverage in-script rather than re-narrating it. Anthropic's distillation report (09-11) appears only as setup for Tan's rebuttal.
 === 2026-09-12T02:40:48-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-13T02:30:08-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did not run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does those after batch TTS.
+
+**Files written:**
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-13-the-clause-that-does-the-work.md` (2,331 spoken words, ~13–14 min at 1.2×)
+- `…/2026-09-13-the-clause-that-does-the-work.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…/2026-09-13-the-clause-that-does-the-work.commit-msg`
+
+**Episode:** "The Clause That Does the Work" — Amodei's *We Must Pace the Frontier* and the same-day endorsements from Altman and Musk, read against the one clause that is actually a commitment (reviewers publish without editorial control, vs. OpenAI's current program which reserves publication approval); the Hacker News regulatory-capture reading and Jacob Gold's open-weights counter-proposal; Bengio's independent mechanistic route to the same word; Real-SWE as the cold shower on "advancing drastically faster"; Altman's IPO deferral plus Nvidia's contingent exposure; deep cut on MLST's Kokotajlo/Larsen episode and Plan A's July sentence predicting exactly this essay.
+
+## Candidate funnel
+
+**Hacker News (front page, Sep 11 00:00 → Sep 13 07:49 UTC, ≥60 pts):** 90 stories scanned, 24 AI-relevant, 9 substantive after discarding rehash of yesterday's episode (math declaration, RubyGems, Waymo effect, AI-news-flood threads, Tan/distillation, Dwarkesh) and non-AI items.
+
+- **CHOSEN (lead)** — Dario Amodei, "We Must Pace the Frontier" (642 pts, 900 comments) — https://darioamodei.com/post/we-must-pace-the-frontier
+- **CHOSEN** — Jacob Gold, "An open letter to Dario: if you mean it, open the weights" (286) — https://jacob.gold/posts/open-letter-to-dario-amodei-about-open-weights/
+- **CHOSEN** — Yoshua Bengio, "Why are AI agents lying, cheating and coordinating?" (188) — https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating
+- **CHOSEN** — Specific Labs, "Real-SWE" (238) — https://withspecific.com/benchmarks/real-swe
+- **CHOSEN (money)** — Altman: IPO 'ill-advised' in 2026 (89) — https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/
+- **CHOSEN (money)** — The Economist, "Nvidia is the central bank of AI" (477) — https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai *(published Sep 3, surfaced Sep 12 — 10 days, slightly outside the 7-day investment window; used as structural backdrop, dated in the script's source block)*
+- Cut — Xe Iaso, "Everyone should slow down AI development except for me" (453) — satire, strong signal but expendable for length — https://xeiaso.net/notes/2026/everyone-slowdown-but-me/
+- Cut — Terry Tao, "After Math" (68) — follow-up to yesterday's math story, rehash risk — https://terrytao.wordpress.com/2026/09/12/after-math/
+- Cut — Carmack, "Don't be the out of touch Kung Fu master" (121) and Moonshot-serves-Claude (63) — both X-hosted, unreadable from this host
+
+**Podcast feeds (14-day window):** 5 feeds probed. Latent Space latest Aug 26 (stale). TWIML #776 already shipped Sep 10. No Priors Sep 10 (Coinbase, off-target). `feeds.megaphone.fm/machinelearningstreettalk` and `/thecognitiverevolution` return 119-byte errors — MLST reachable via `anchor.fm/s/1e4a0eac/podcast/rss`.
+- **CHOSEN (deep cut)** — MLST, "AI 2040: Plan A — Kokotajlo & Larsen" (Sep 8, 1:29:46); underlying report read in full via r.jina.ai
+- Considered — MLST, "Edward Hughes on replication" (Sep 11) — strong but off today's through-line
+
+**Source failures:** CoinDesk returned a Vercel security checkpoint (324 bytes); routed around via TechCrunch + Unite.AI, which independently corroborate the Altman and Musk posts and the same X status IDs. X/Twitter remains unreadable from this host per standing note — all social claims sourced through secondary outlets that quote them verbatim.
+=== 2026-09-13T02:41:37-07:00 done  jinglin-ai-pulse (exit 0) ===
