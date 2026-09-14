@@ -4457,3 +4457,49 @@ Episode written. `SKIP_TTS=1` is set, so per `PIPELINE.md` I skipped TTS, R2 pub
 
 **Funder pages** — ARPA-H news checked: newest item is 09-09 ("world's first bid to build FDA-authorized clinical AI for cardiovascular care"), four days out, so out of window. `nih.gov/news-events/news-releases` returned HTTP 403 to WebFetch — second source-side gap.
 === 2026-09-13T02:07:46-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-14T02:00:08-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the script + the two stubs — no TTS, no R2 publish, no feed edit, no commit (`publish_pending.py` does those after batch TTS).
+
+**Published (staged for batch TTS):** `2026-09-14-hypokg-evidence-disciplined-hypotheses`
+— *HypoKG — knowledge graph paths don't make better biomedical hypotheses, they make more honest ones* (arXiv 2609.12260, v1 posted 2026-09-10, University of Georgia). Spoken body 1017 words (cap 1150). Full text read via `arxiv.org/pdf` + `mutool` (17pp, ~10.2k words). RSS-item fragment validated by simulated insertion into the live feed.
+
+## Infrastructure note (read this first)
+
+`r.jina.ai` was **TLS-intercepted** from this host all run — served cert was `CN=*.scripps.edu`, `subjectAltName does not match r.jina.ai`. curl exits 60, and **`WebFetch` fails identically**, so it is not a workaround. Other hosts were 200 the same minute. Combined with `www.biorxiv.org` returning 429 to direct requests, **bioRxiv full text was wholly unobtainable today** — every bioRxiv candidate was ineligible under the full-text gate. Saved as a memory with a one-call detection check, plus the routes that still work.
+
+## Candidate funnel
+
+**bioRxiv** — details API severely degraded (repeated 504/503/read-timeout; day-by-day sweep with 12 retries × 15s eventually cleared 3 of 4 days).
+- 09-11: 219 scanned → 9 keyword hits → 0 on-target (nearest: scOLAR, ontology-anchored scRNA-seq annotation — a method, not agentic)
+- 09-12: 122 scanned → 9 hits → 0 on-target
+- 09-13: 112 scanned → 7 hits → 2 on-target, **both deferred, full text unobtainable** (channel-3 fallback confirmed):
+  - Agentic-AI-ready genome-wide poxvirus-host interaction screen refined by a protein language model — `10.64898/2026.09.10.750412`
+  - Iterative Gene Enrichment Analysis: interpretable networks for human and AI-assisted biological insights — `10.64898/2026.09.06.749570`
+- 09-14: silent empty 200 (67 bytes) after 12 retries — nothing posted yet / API gap
+
+**arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml` was 14 bytes ("Rate exceeded."); live API 429'd on 3 attempts across ~5 min; jina proxy blocked. **Routed around via `arxiv.org/list/<cat>/2026-09` listing HTML** (cs.AI, cs.CL, cs.MA, q-bio) — 2,643 entries parsed, dates confirmed per-candidate on `abs/` pages.
+- `2609.12260` HypoKG: Evidence-Disciplined Biomedical Hypothesis Generation Beyond Endpoint Knowledge — **CHOSEN** (10 Sep)
+- `2609.11147` Autonomous Chemical Mechanistic Discovery through Agentic Reasoning and Validation (10 Sep) — chemistry, not biomedical
+- `2609.11569` EXYGEN: Knowledge Graph Understanding at Scale (11 Sep) — enterprise KG, not biomedical
+- `2609.12746` LAST-CQ: agentic text-to-Cypher self-refinement (11 Sep) — KG querying, generic
+- `2609.11770` The widening evaluation gap in medical LLM research 2023–2026 (10 Sep) — meta-research
+- `2609.11117` NLPCC 2026 Shared Task 11: Agent-Based Experiment Reproduction (10 Sep) — task overview
+- `2609.10121` ADMET-EvO self-evolving scientific agent; `2609.10055` OntologyAligner (both 9 Sep) — **out of window**
+- `2609.11877` Biology-in-the-loop / CRISPR hit discovery — **dedup: already shipped 09-11 as AssayLoop**
+
+**PubMed** — 952 hits on the term query, 400 fetched; 583 keyword → 233 AI-relevant → 118 title-level → **28 actually in the 5-day window by `history[].pubmed`** (the `pdat` filter admitted items back to Aug/Jul — the print-issue trap).
+- PMID 42711704 — A framework for cognitive personality priors in agentic AI: personas in autonomous team science (BioData Mining, 09-09; Moore/Tatonetti) — read in full via PMC; **runner-up, but it is an editorial with zero experiments**
+- PMID 42726620 Align Entities With Ontologies (TPAMI, 09-11) — generic KG benchmarks, paywalled
+- PMID 42727083 Teaching MCP/RAG/AI agents to a hospital workforce (JMIR MedEd, 09-11) — training program
+- PMID 42728483 Biomedical LLMs for pharmacoepidemiologic study design (09-12) — ontology-code mapping angle, thin
+- Remainder: clinical-LLM evaluation noise (patient Q&A, report QC, vignettes)
+- Near-misses just outside window: MetaboAnnotate multiagent metabolite annotation (09-08), EUCAIM hyperontology (09-08)
+
+**ChemRxiv** — WebSearch only; nothing in window (site had scheduled maintenance 09-13). Nearest was an optical-materials LLM benchmark, 09-04.
+
+**News / product launches** — nothing on-target in the 3-day window; Sunday-into-Monday gap as expected.
+
+**Policy / funders** — ARPA-H: "world's first bid to build FDA-authorized clinical AI for cardiovascular care" (09-09) — genuinely interesting but **5 days old, out of the 3-day window**. NIH press 403'd via WebFetch and returned nothing via curl; NSF/HHS not reached before the pick was settled — recorded as a gap.
+
+**Why HypoKG won:** it is the only in-window item that is simultaneously on the show's core beat (biomedical KG + LLM reasoning), readable in full, and carries a result that changes how you'd build. The finding is an inversion — endpoint-only prompting wins the aggregate rubric and four criteria of five, but loses the one criterion measuring whether the claim is proportionate to the evidence — and it is backed by two controls most papers in this area skip: a shuffled-path intervention that drops grounding 0.793 while leaving novelty untouched, and a blinded within-path expert study where all three raters unanimously flagged the endpoint-only hypothesis as speculative on 50 of 55 paths.
+=== 2026-09-14T02:22:48-07:00 done  biomedical-agentic-ai (exit 0) ===
