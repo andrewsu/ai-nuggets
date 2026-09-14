@@ -4446,3 +4446,31 @@ Shortlist → **selected (11)**: SORDINO silent awake-mouse fMRI (lead) · donep
 
 Two things worth flagging: the **final-roster re-filter caught 2 of 11 picks as already shipped** (OCD psychotherapy EWAS, shipped 09-11; parcel-guided rTMS) — I'd selected them by hand from the raw candidate lists rather than the filtered ones, and replaced both. And `.full` returned the landing page for **all 12** preprints tried today, with `.full.pdf` recovering every one — the opposite of yesterday's ordering. Both are now in the rolling memory file, along with today's nature.com wall state and the unshipped-but-read candidates.
 === 2026-09-13T03:08:27-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-14T02:50:08-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped at the script + stub files — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-09-14-receptor-and-reason.md` (12 items, ~3,490 spoken words ≈ 19½ min)
+- `podcasts/receptor-and-reason/scripts/2026-09-14-receptor-and-reason.rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `podcasts/receptor-and-reason/scripts/2026-09-14-receptor-and-reason.commit-msg`
+- Ledger appended: 12 keys → 115 episodes, 1,181 items
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Fresh after dedup |
+|---|---|---|---|
+| bioRxiv + medRxiv details API (09-07→09-14, day-by-day) | 1,981 | 792 | 755 |
+| Crossref journal sweep (26 ISSNs, online-pub 09-07→09-14) | 291 | 148 | 149* |
+| Psychiatric Times / news tier | 4 | 4 | 1 |
+| arXiv | **0 — source failed** | — | — |
+
+\*includes 9 non-relevance drops before dedup; dedup caught 8 already-shipped + 1 title match.
+
+- **arXiv: total loss.** Shared cache `/tmp/ai-nuggets-arxiv-cache.xml` was 14 bytes of `Rate exceeded.`; live 400-result query failed 6/6 (429/429/503/429/429/429) over ~7 min. Second run in a row. Zero Tier-2 arXiv items today.
+- **r.jina.ai: dead from this host** — TLS-intercepted by the Scripps network (cert `*.scripps.edu`), and WebFetch shares the egress so it failed identically. Worked around by direct `curl` with a Safari UA, which returned full bodies from biorxiv/medrxiv and nature.com; Oxford journals came via Europe PMC `fullTextXML`.
+- **bioRxiv render lag** gated selection: everything posted 09-11→09-13 returned the landing page only, so the roster is built from 09-07→09-10 postings. 16 promising items deferred (listed in memory), including `2026.09.06.749750` (Kv3.1 blockade by MK-801) which is the best unclaimed lead for a later day.
+
+**Shipped (all read in full)** — lead: locus-coeruleus-derived dopamine in ~3 µm domains in CA1 selecting ramping neurons and shifting action timing, D1-dependent. Then BLA dopamine as self-generated-exploration salience; MCHR1 antagonism acting only at contingency change; mGluR/β-arrestin 2:1 and 2:2 stoichiometries and megacomplexes; direct-to-biology cereblon glue screening; evolutionary-similarity target deconvolution of ginsenosides; PET-microdose-informed PBPK for dolutegravir; the ELISA single-cell agent; SABER's LLM-proposed behavioural factors; multi-agent medical exam-item generation; BPD interoception after DBT; and lifestyle therapy non-inferior to CBT at 8 weeks.
+
+Three preprint URLs were re-verified live (200); one returned 429 (throttle, not 404) — its prefix came straight from the details API, so the pre-commit URL check should pass.
+=== 2026-09-14T03:24:03-07:00 done  receptor-and-reason (exit 0) ===
