@@ -3147,3 +3147,28 @@ Substantive shortlist:
 
 Sources: [PR Newswire / Akeso](https://www.prnewswire.com/news-releases/ivonescimab-versus-pembrolizumab-in-first-line-pd-l1-positive-nsclc-positive-overall-survival-results-from-harmoni-2-presented-at-wclc-2026-302876953.html), [Endpoints News](https://endpoints.news/akeso-details-survival-win-for-its-pd-1xvegf-drug-versus-keytruda/), [Lung Cancers Today](https://www.lungcancerstoday.com/post/phase-3-harmoni-2-study-ivonescimab-shows-os-benefit-in-pd-l1-positive-advanced-nsclc), [The Lancet HARMONi-2 primary analysis](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)02722-3/abstract), [oncologynexus](https://oncologynexus.com/harmoni-2-ivonescimab-improves-os-vs-pembrolizumab-in-nsclc)
 === 2026-09-13T02:49:25-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-14T02:40:08-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md batch mode I stopped after writing the script plus the two transient stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator handles those after batch TTS).
+
+**Files written**
+- `podcasts/justice-biotech-brief/scripts/2026-09-14-gotistobart-ph-sensitive-ctla4-preserve-003-squamous-nsclc.md` (1,464 words, ~5 min)
+- `…​.rss-item.xml` (XML-validated, `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** Gotistobart (BNT316/ONC-392) — BioNTech/OncoC4's pH-sensitive anti-CTLA-4, updated OS from the non-pivotal stage 1 of Phase 3 PRESERVE-003, presented today at WCLC 2026 in Seoul (mini-oral MO07.04) and released on GlobeNewswire 2026-09-14. 18.5 vs 10.0 months, HR 0.56, nominal P=0.0295, N=45 vs 42. Full text read: the Nature Medicine paper on the same cohort (`s41591-026-04323-8`, via PMC13278949 — 69 KB with Results/Methods/Discussion).
+
+Editorial spine: the headline number is the weakest part. Median PFS was 2.4 vs 2.6 months with a HR crossing 1 and 48.9% progressive disease — the drug builds a tail (ORR 20% vs 4.8%, 12-month PFS 25.2% vs exactly 0%) rather than shifting a distribution. Stage 1 enrolled 217 patients, not 87; the 126 non-squamous patients did numerically *worse* than docetaxel, which is what drove the DMC futility call and the FDA's October 2024 partial hold — so today's number is the subgroup that generated the enrichment hypothesis, reported back as confirmation of it. Also flagged: the HR drifted 0.46 → 0.56 between the 14.5- and 25.4-month cuts, and the "PRESERVE" safety branding is parity with docetaxel (44.4% vs 48.8% grade 3+), with 4.5× the discontinuation rate.
+
+**Candidate funnel**
+
+- **bioRxiv + medRxiv (09-12 → 09-14)** — 306 records swept day-by-day with cursor pagination; 257 were v1 with an in-window date (09-12: 103, 09-13: 154, **09-14: 0** — nothing posted yet at 02:40 PDT). 7 keyword hits, **all spurious**: `nectin` inside unrelated text (tau/astrocyte, fracture healing), `cd3` as a flow-panel marker, `pd1` inside a word, `checkpoint` = cell-cycle or an FDG-PET correlate. Zero on-target. Tenth run in ~twelve with a null bioRxiv channel for this show.
+- **News / press** — shortlist after discarding off-beat items:
+  - ✅ **CHOSEN** Gotistobart PRESERVE-003 stage 1 OS update, WCLC MO07.04 — https://www.globenewswire.com/news-release/2026/09/14/3360734/0/en/biontech-and-oncoc4-present-updated-data-showing-gotistobart-nearly-doubled-median-overall-survival-versus-standard-of-care-chemotherapy-in-previously-treated-squamous-non-small-ce.html
+  - GSK/Hansoh risvutatug rezetecan, B7-H3 ADC Phase 3 SCLC, 18.5 vs 10.3 mo — real and on-target, lost on being a China-only registrational readout already well-covered; note the coincidental 18.5 (different story)
+  - SystImmune iza-bren new global data at WCLC — this show shipped iza-bren 2026-08-20
+  - Whitehawk PTK7 ADC real-world analyses at WCLC — too thin (retrospective, no trial data)
+  - Cullinan/Taiho zipalertinib REZILIENT3 — small-molecule TKI, off-beat
+  - Enhertu DESTINY-Lung04, Rybrevant exon20 OS, Tagrisso ADAURA 8-yr — off-beat for this show
+- **Policy** — ARPA-H checked, nothing since 09-09; nothing in window.
+- **Source failures:** `r.jina.ai` **TLS-intercepted by the Scripps network** (cert served is `*.scripps.edu`), which killed every jina route at once including the GlobeNewswire keyword sweep that carried the 09-11 run. `clinicaltrialsarena.com` 403. `fiercebiotech.com` article bodies 403 to curl *and* WebFetch (index pages fine). `investors.biontech.de` 403. Worked around by parsing Fierce's index JSON-LD for the drug name and headline number, then using WebFetch on the GlobeNewswire article URL (curl returns 000 there, WebFetch does not) and PMC for the companion paper. Both workarounds recorded in memory.
+=== 2026-09-14T02:53:11-07:00 done  justice-biotech-brief (exit 0) ===
