@@ -4251,3 +4251,30 @@ Shortlist after discarding already-shipped items:
 
 One judgment call worth flagging: the Alzheon item rests on an Endpoints headline whose body I could not read, so the script asserts only that a raise is planned despite a Phase 3 miss, attributed to Endpoints, plus mechanism background on ALZ-801 that is independently established.
 === 2026-09-13T02:36:43-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-14T02:20:08-07:00 start calibr-briefing ===
+Both episodes for 2026-09-14 are written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the scripts plus the two transient stubs each and stopped — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-09-14-pharma-headlines.txt` (+ `.rss-item.xml`, `.commit-msg`)
+- `podcasts/calibr-briefing/scripts/2026-09-14-destiny-lung04-her2-nsclc-spotlight.txt` (+ `.rss-item.xml`, `.commit-msg`)
+
+**Spotlight:** DESTINY-Lung04 — Enhertu's first-line HER2-mutant NSCLC win (PFS 14.3 vs 8.3 mo, HR 0.63, ORR 70%) set against an interim OS of 29.3 vs 33.1 months (HR 1.15, 46.9% mature), 20.8% adjudicated ILD with four deaths, and a first line two oral HER2 TKIs already reached on accelerated approval.
+
+**Candidate funnel**
+
+WCLC 2026 Seoul, NSCLC Presidential Symposium (Sept 13–14) — 6 registrational datasets scanned, 6 used:
+- DESTINY-Lung04, Enhertu 1L HER2m NSCLC — biospace.com/press-releases/enhertu-demonstrated-a-median-progression-free-survival-of-14-3-months… — **CHOSEN (spotlight + headline 1)**; full press release read
+- ADAURA 8-yr landmark, osimertinib — biospace.com/press-releases/tagrisso-osimertinib-demonstrated-unprecedented-eight-year-landmark-survival… — **chosen (2)**
+- REZILIENT3, zipalertinib + chemo (Cullinan/Taiho) — biospace.com/press-releases/zipalertinib-plus-chemotherapy-demonstrates-6-month-median-progression-free-survival-benefit… — **chosen (3)**
+- PAPILLON final OS, amivantamab (J&J) — jnj.com/media-center/press-releases/new-overall-survival-data-and-treatment-experience-improvements… — **chosen (4)**
+- ARROS-1 TKI-naive cohort, zidesamtinib (Nuvalent) — medicalxpress.com/news/2026-09-zidesamtinib-response-ros1-positive-lung.html — **chosen (5)**
+- IMpower030 final, perioperative atezolizumab (Roche) — medicalxpress.com/news/2026-09-perioperative-atezolizumab-chemotherapy-event-free.html — **chosen (6)**
+- DeLLphi-305, tarlatamab + durvalumab — amgen.com/newsroom/press-releases/2026/09/imdelltra-in-combination-with-imfinzi… — **chosen (7)**; still no median/HR/p-value disclosed
+
+General news sweep (BioSpace latest + press releases, BioPharma Dive, ILCN, web search) — ~60 items scanned, 9 on-target, 7 discarded as already covered (Insilico GENESIS-IPF-3 → 09-10; Bayer sevabertinib → 09-10; Solstice $225M → 09-10; Andy Plump → 09-11; reverse mergers → 09-12; Sernova/Seraxis → 09-09; Disc RESTORE-PV → 09-12):
+- Scholar Rock Isembyld (apitegromab) FDA approval, Sept 11 — statnews.com/2026/09/11/scholar-rock-spinal-muscular-atrophy-isembyld-clinical-trial-fda-approval/ — **chosen (8)**; gap-fill, the 09-12 and 09-13 week-aheads still listed it as pending Sept 30
+- Pharming Joenja pediatric approval, Sept 11 — pharming.com/our-news/fda-approves-pharming-joenja-as-first-treatment-for-children-with-apds-in-the-us — **chosen (8)**
+- FDA psychedelics public hearing, today — fda.gov/news-events/…/considerations-potential-future-therapeutic-use-psychedelic-drugs-public-hearing-09142026 — **chosen (week ahead)**
+
+Source failures: `fiercebiotech.com` HTTP 403 via WebFetch; `astrazeneca.com` and `onclive.com` 403 (routed around via the BioSpace/CancerNetwork mirrors); `r.jina.ai` unreachable from this host today (TLS interception + HTTP 000 on curl) — BioSpace index was retrieved before it started failing.
+=== 2026-09-14T02:31:27-07:00 done  calibr-briefing (exit 0) ===
