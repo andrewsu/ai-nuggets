@@ -2521,3 +2521,25 @@ The Hamad *J Immunol* paper is closed access with no OA copy or preprint (Unpayw
 
 Reference file updated in place (five entries, no dated log appended): §1 gains the five-geography comparator widening, the Numerof portfolio-preference read, the Biohaven licensing-mechanics lessons and Luma under the capital map; the COPD theme gains the mucin-ratio lead; §2b gains new Hamad and *Candida*/TG2 entries; Winnow gains the x-mab cross-reference.
 === 2026-09-13T02:42:29-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-14T02:10:08-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I skipped TTS, R2 publish, `feed.xml`, and the commit — `publish_pending.py` will do those after batch TTS.
+
+**Blackbird 2026-09-14 — Portfolio Watch** (Monday; the Sourcing Radar ran yesterday on its Sunday cadence, so today is Portfolio Watch only).
+
+Files written:
+- `podcasts/blackbird-brief/scripts/2026-09-14-portfolio-watch.md` (1,936 spoken words, ~8 min; no URLs/markdown in the spoken body)
+- `…/2026-09-14-portfolio-watch.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…/2026-09-14-portfolio-watch.commit-msg`
+- `memory/blackbird-portfolio.md` edited in place (4 entries, no appended run log)
+- `state/shipped.jsonl` +1 line, 11 keys
+
+**Items shipped**
+
+1. **LEAD — Scholar Rock's apitegromab approved 09-13 for SMA with a label requiring the patient to already be on an SMN2-targeted therapy.** +2.2 HFMSE points in 188 patients. Read for Aletira: a decade after SMN therapy arrived, the residual functional deficit was still large enough and *measurable* enough to support a second approved product — and Otarmeni's "80% improved, not normal" says hearing has the same residual. The binding constraint is the instrument, which makes it a pre-IND item.
+2. **Whitehawk/Tempus PTK7 real-world analyses at WCLC** — turned into a three-question antigen checklist for the oncology surface targets theme, plus the limit they buried (PTK7-low enriched for KEAP1/STK11).
+3. **Cancer vaccine field sorts by setting, not platform** — every positive signal in resected/early disease, every clean failure in metastatic. Validates Adventris's interception board; carried with the mRNA funding thaw and Jeff Coller's (JHU) quote.
+4. **FDA psychedelic hearing today at White Oak**, docket open to Oct 5 — the agency is codifying the supervised-setting cost structure a peripheral non-hallucinogenic analgesic would not carry. Sharpens the 09-06 non-opioid-pain item.
+5. **Short — the Novartis repricing.** Vontobel deleted a $3B peak-sales line; Guggenheim cut 2033 sales 45%. A usable number for the downside branch of a value case.
+
+**Two candid notes on the run.** It was a genuine weekend-gap day — the 09-13 episode had already taken everything through 09-11, so this is built on 09-12→09-14 items, several of which are analysis pieces rather than events. And two sources failed: `endpoints.news` 403'd WebFetch and returned only page chrome via jina (bodies unread, skipped), and `biobuzz.io/feed/` returns an empty 1KB stub — I recovered its headlines from `/news/` instead. Both are logged in the funnel. Dedup ran clean: 11/11 fresh on the batch pass and 11/11 on the final re-filter.
+=== 2026-09-14T02:24:22-07:00 done  blackbird-brief (exit 0) ===
