@@ -2758,3 +2758,37 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plu
 
 **Source failures:** CoinDesk returned a Vercel security checkpoint (324 bytes); routed around via TechCrunch + Unite.AI, which independently corroborate the Altman and Musk posts and the same X status IDs. X/Twitter remains unreadable from this host per standing note — all social claims sourced through secondary outlets that quote them verbatim.
 === 2026-09-13T02:41:37-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-14T02:30:08-07:00 start jinglin-ai-pulse ===
+Episode written and staged for the batch pipeline.
+
+**`2026-09-14-it-just-kept-looking`** — 2,342 spoken words (~13 min at the show's 1.2× rate), with three stub-mode artifacts in `podcasts/jinglin-ai-pulse/scripts/`: the script, the `.rss-item.xml` (placeholders intact, parses clean), and the one-line `.commit-msg`.
+
+`SKIP_TTS=1` was set in the environment, so per PIPELINE.md I skipped TTS, R2 publish, the feed edit, and the commit — `publish_pending.py` picks those up after batch TTS.
+
+**Candidate funnel**
+
+- **Hacker News** (front page + 48h stories above 80 points, via Algolia): 62 stories scanned, 14 AI-relevant, 6 not already shipped this week.
+- **TechCrunch AI feed**: 19 items scanned, 5 in-window and uncovered.
+- **Crunchbase venture index**: weekly roundups + 4 September AI rounds; Cognition, Mistral, Crusoe/Fluidstack, Moonshot all already shipped on earlier days.
+- **Podcast RSS** (Dwarkesh, Latent Space, MLST, TWIML): 24 episodes scanned, 1 fresh and unused.
+- **Interconnects RSS**: 404 from the Substack podcast endpoint; got the post via direct fetch instead.
+- **X/Twitter**: not attempted — unreadable from this host (`reference_x_twitter_unreadable`). Sourced discourse from HN threads and primary posts, per the standing workaround.
+- **r.jina.ai**: still TLS-intercepted by the Scripps network (cert is `*.scripps.edu`). All full text came from direct `curl` + `mutool` + WebFetch; no full-text item was lost to it today.
+
+Shortlist, chosen marked ✓:
+
+- ✓ Vals AI, "Claude Fable 5.1 Solves the Cyphral Distich" (919 pts) — https://www.vals.ai/blogs/fable-solves-cyphral-distich
+- ✓ Dean Valentine, "Astra and Fable still hack on simple variants of alignment evals from 2025" (437 pts) — https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment
+- ✓ Bryan Cantrill, "The contagion of fear" (213 pts) — https://bcantrill.dtrace.org/2026/09/13/the-contagion-of-fear/
+- ✓ TechCrunch, "What's behind the AI industry's latest warnings of doom?" + Obama/Sacks items
+- ✓ Mecka AI ~$500M Sequoia round, robot training data — https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/
+- ✓ Huang's circular-financing rebuttal (Goldman Sachs, Sep 10) + Nscale/Fidji Simo pre-IPO board add
+- ✓ MLST, Edward Hughes (Sep 11) + arXiv 2608.13331 "Training AI Scientists to Replicate Research" — read in full via `mutool`
+- Terence Tao, "After Math" (141 pts) — passed; the math/OpenAI thread carried the Sep 11 and Sep 12 episodes
+- Armin Ronacher, "P(doom)" (156 pts) — passed; Cantrill makes the same argument with a sharper mechanism
+- "Aligned to whom?" (177 pts) — passed; thinner than the Valentine result on the same theme
+- Interconnects open-models reading list (109 pts) — cut in trimming; the open-weights thread has no forcing event yet
+- Paul Graham, "Making Startups Powerful" (206 pts) — passed, off-target for this show
+
+One note on framing I want to flag rather than bury: the Vals AI post is bylined August 31 but only reached the HN front page Saturday, and the Valentine post is dated September 8. Both are inside the 48-hour *discourse* window rather than the publication window, and the script says so explicitly ("front-paged Saturday") rather than implying they broke yesterday.
+=== 2026-09-14T02:44:14-07:00 done  jinglin-ai-pulse (exit 0) ===
