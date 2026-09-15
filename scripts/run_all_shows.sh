@@ -33,6 +33,12 @@
 #                          further than this many seconds away it falls
 #                          back to the standard 180s retry sleep (default
 #                          3600 = 60 min).
+#   CRED_WARN_DAYS=N       days of remaining OAuth refresh-token life below
+#                          which the pre-flight check (and the daily audit
+#                          email) start warning (default 5). The token is
+#                          set ~28 days out by each interactive /login and
+#                          cannot be renewed from cron, so an expiry is a
+#                          hard outage — see scripts/check_credentials.py.
 #   PAUSE_INACTIVE=1       consult scripts/check_activity.py before Phase 1
 #                          and skip shows whose subscriber hasn't
 #                          downloaded in the last N days (see PAUSE_THRESHOLD_DAYS).
@@ -84,6 +90,13 @@ GARIBALDI_STAGE_DIR=ai-nuggets-stage   # relative to remote $HOME
 # so mid-day reruns don't see stale state from prior days.
 STATUS_DIR="$REPO/logs/.phase1-status-$(date +%F)"
 
+# Touched by the first run_show() that sees an auth failure mid-run (the
+# token can lapse *between* the pre-flight check and a late show's launch,
+# since launches are staggered by STAGGER_SECONDS). Every other show and
+# the launch loop bail out on sight: re-authentication is impossible from
+# here, so retrying on another model rung or another show cannot help.
+AUTH_SENTINEL="$STATUS_DIR/.auth-failed"
+
 # TODAY is the date of this run as captured at script start. Used by Phase 2
 # (TTS_BATCH_DATE), Phase 3 (--date), and the deferred-catchup subshell —
 # the subshell must use the original date so it doesn't accidentally produce
@@ -134,6 +147,40 @@ fi
 
 git pull origin main || echo "WARN: git pull origin main failed; continuing" >&2
 
+# Pre-flight: the CLI's OAuth refresh token is set ~28 days out by each
+# interactive /login and CANNOT be renewed from cron. Once it lapses,
+# `claude -p` prints "Failed to authenticate: OAuth session expired and
+# could not be refreshed" and exits 0 — which the retry ladder reads as
+# no_output, so every show burns all six rungs for nothing (2026-09-15:
+# 6 shows, 36 identical failures, 65 min, zero episodes). Check first.
+#   EXPIRED (rc 20) → abort before Phase 1; the EXIT-trap audit email
+#                     carries the ALERT note from check_credentials.py.
+#   WARN    (rc 10) → log it and run normally; daily_audit.py puts the
+#                     same note in the morning email (CRED_WARN_DAYS).
+mkdir -p "$STATUS_DIR"
+rm -f "$AUTH_SENTINEL"   # clear stale sentinel from a mid-day rerun
+set +e
+cred_status=$(python3 "$REPO/scripts/check_credentials.py" 2>&1)
+cred_rc=$?
+set -e
+case "$cred_rc" in
+  20)
+    echo "=== $(date -Iseconds) ABORT: Claude credentials unusable: $cred_status ==="
+    echo "Run \`claude\` on this host and /login — cron cannot renew the refresh token."
+    echo "Phase 1 not attempted; no shows were run."
+    exit 1
+    ;;
+  10)
+    echo "$(date -Iseconds) WARN: Claude credentials expiring soon: $cred_status"
+    ;;
+  0)
+    echo "$(date -Iseconds) credentials $cred_status"
+    ;;
+  *)
+    echo "$(date -Iseconds) WARN: check_credentials.py exited $cred_rc ($cred_status); failing open"
+    ;;
+esac
+
 # Pre-fetch arXiv listing once for the whole run so multiple shows don't
 # burst the same IP and trip a tarpit. The category union covers every
 # show's needs (cs.AI, cs.CL, cs.MA, q-bio supercategory). Each show's
@@ -179,6 +226,24 @@ sleep_until_reset() {
   fi
   echo "=== $(date -Iseconds) session-limit hit; sleeping ${sleep_secs}s until $reset_str (+60s buffer) ===" | tee -a "$log"
   sleep "$sleep_secs"
+}
+
+# Sleep up to $1 seconds between Phase-1 launches, waking early if a show
+# already running raises AUTH_SENTINEL. A plain `sleep $STAGGER_SECONDS`
+# would hold the launch loop for the full stagger (600s by default) after
+# the run is already known to be doomed.
+stagger_sleep() {
+  local remaining="$1"
+  while [ "$remaining" -gt 0 ]; do
+    [ -e "$AUTH_SENTINEL" ] && return
+    if [ "$remaining" -gt 10 ]; then
+      sleep 10
+      remaining=$((remaining - 10))
+    else
+      sleep "$remaining"
+      remaining=0
+    fi
+  done
 }
 
 # Spawn a backgrounded catchup subshell for the DEFERRED set. Reads the
@@ -298,7 +363,11 @@ run_show() {
   mkdir -p "$(dirname "$log")" "$STATUS_DIR"
   rm -f "$status_file"  # clear stale entry from a mid-day rerun
 
-  local attempt tag out model_arg today produced script base skip_reason deliberate_skip=""
+  # produced= must be initialised here, not just at its assignment below:
+  # the auth-failure branches `break` out of the attempt loop before that
+  # assignment is reached, and `set -u` would kill this subshell when the
+  # status writer reads it.
+  local attempt tag out model_arg today produced="" script base skip_reason deliberate_skip=""
   # Outcome bookkeeping. Updated by every iteration's failure-classification
   # so the value left after the loop reflects the LAST failure mode — that's
   # what determines whether this show is deferrable.
@@ -310,6 +379,11 @@ run_show() {
       3|4) model_arg="--model claude-sonnet-5" ;;
       5|6) model_arg="--model claude-haiku-4-5-20251001" ;;
     esac
+    if [ -e "$AUTH_SENTINEL" ]; then
+      echo "=== $(date -Iseconds) ABORT $slug: another show hit an OAuth failure; not retryable ===" | tee -a "$log"
+      last_failure="auth_expired"
+      break
+    fi
     tag=""
     [ "$attempt" -gt 1 ] && tag=" (retry $((attempt-1))${model_arg:+, $model_arg})"
     out=$(mktemp)
@@ -319,6 +393,19 @@ run_show() {
         | "$CLAUDE" -p --permission-mode auto $model_arg
       echo "=== $(date -Iseconds) done  $slug (exit $?)$tag ==="
     } 2>&1 | tee -a "$log" > "$out"
+    # Auth failure first: the CLI exits 0 on it, so without this branch it
+    # falls through to the no_output path and burns the whole ladder. There
+    # is no retry that helps — /login is interactive — so raise the sentinel
+    # and stop the entire run.
+    if grep -q "Failed to authenticate" "$out"; then
+      last_failure="auth_expired"
+      last_reset=""
+      touch "$AUTH_SENTINEL"
+      echo "=== $(date -Iseconds) OAuth failure for $slug: $(grep -m1 'Failed to authenticate' "$out") ===" | tee -a "$log"
+      echo "=== $(date -Iseconds) not retryable; aborting run (run /login on this host) ===" | tee -a "$log"
+      rm -f "$out"
+      break
+    fi
     if grep -q "session limit · resets" "$out"; then
       last_failure="session_limit"
       last_reset=$(grep -oE 'session limit · resets [0-9]{1,2}(:[0-9]{2})?(am|pm)' "$out" \
@@ -499,8 +586,21 @@ for prompt in podcasts/*/PROMPT.md; do
   if [ -n "${SKIP_SLUGS[$slug]:-}" ]; then
     continue
   fi
+  # Don't burn the stagger sleep once we already know the run is doomed —
+  # the remaining shows only need marking, not spacing out.
   if [ "$first" -eq 0 ]; then
-    sleep "$STAGGER_SECONDS"
+    stagger_sleep "$STAGGER_SECONDS"
+  fi
+  # Re-check after the stagger sleep: a show launched earlier may have hit an
+  # OAuth failure while we slept, and launching more would just reproduce it.
+  # Mark the unattempted shows explicitly so the outcome collector and the
+  # audit email name the cause instead of reporting no_status_file / NO_RUN.
+  if [ -e "$AUTH_SENTINEL" ]; then
+    mkdir -p "$REPO/podcasts/$slug/logs"
+    echo "FAIL auth_expired_not_attempted" > "$STATUS_DIR/$slug"
+    echo "=== $(date -Iseconds) ABORT $slug: not attempted (OAuth failure earlier in this run) ===" \
+      | tee -a "$REPO/podcasts/$slug/logs/cron.log"
+    continue
   fi
   first=0
   run_show "$prompt" "$slug" &
@@ -536,6 +636,9 @@ echo "$(date -Iseconds) Phase 1 outcomes: ${#SUCCEEDED[@]} succeeded, ${#DEFERRE
 [ "${#DEFERRED[@]}" -gt 0 ]  && echo "  deferrable (session-limit): ${DEFERRED[*]}"
 [ "${#FAILED[@]}" -gt 0 ]    && echo "  failed: ${FAILED[*]}"
 [ "${#SKIPPED[@]}" -gt 0 ]   && echo "  skipped (paused / bar-not-met): ${SKIPPED[*]}"
+if [ -e "$AUTH_SENTINEL" ]; then
+  echo "  CAUSE: Claude OAuth session expired mid-run — run \`claude\` on this host and /login."
+fi
 
 ##############################################################################
 # Phase 2 + 3 (skipped in LEGACY_TTS mode — each show already committed).

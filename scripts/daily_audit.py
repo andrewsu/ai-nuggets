@@ -37,6 +37,9 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from check_credentials import credential_note  # noqa: E402  (needs sys.path above)
+
 REPO = Path(__file__).resolve().parent.parent
 PODCASTS = REPO / "podcasts"
 
@@ -147,6 +150,15 @@ def classify(slug: str, target_date: dt.date) -> dict:
     # surveyed its sources and chose not to publish (content bar not met). This
     # is a by-design non-event, like PAUSED — not "needs attention".
     skipped = [(ts, msg) for ts, msg in evts if msg.startswith(f"SKIPPED: {slug}")]
+    # OAuth expiry: run_all_shows.sh logs "OAuth failure for <slug>" on the
+    # show that hit it and "ABORT <slug>" on the ones it then stopped. This
+    # needs its own status because the fix is a one-line human action
+    # (/login) and no amount of re-running helps until then.
+    auth = [
+        (ts, msg)
+        for ts, msg in evts
+        if msg.startswith(f"OAuth failure for {slug}") or msg.startswith(f"ABORT {slug}")
+    ]
 
     # The mp3 is the canonical local artifact, but the subscriber-visible
     # artifact is a matching item in feed.xml. Both must be present for
@@ -162,6 +174,8 @@ def classify(slug: str, target_date: dt.date) -> dict:
         status = "SUCCESS"
     elif mp3s:
         status = "NOT_PUBLISHED"
+    elif auth:
+        status = "AUTH"
     elif pause_state.exists() and not starts:
         status = "PAUSED"
     elif not starts:
@@ -203,6 +217,7 @@ STATUS_ICON = {
     "NO_EPISODE": "NOEP",
     "NOT_PUBLISHED": "UNPB",
     "SKIPPED": "SKIP",
+    "AUTH": "AUTH",
 }
 
 
@@ -225,6 +240,12 @@ def render_summary(reports: list[dict], target_date: dt.date) -> tuple[str, str]
         subject += f"{len(bad)}/{len(reports)} shows need attention"
 
     lines = [f"Daily audit {target_date.isoformat()}", ""]
+    # The CLI's OAuth refresh token expires ~28 days after each interactive
+    # /login and can't be renewed from cron; when it lapses every show fails
+    # as no_output. Surface it here while there's still runway to act.
+    cred = credential_note()
+    if cred:
+        lines.extend([cred, ""])
     for r in reports:
         icon = STATUS_ICON.get(r["status"], r["status"])
         extras = []
