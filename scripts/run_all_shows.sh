@@ -185,15 +185,35 @@ esac
 # burst the same IP and trip a tarpit. The category union covers every
 # show's needs (cs.AI, cs.CL, cs.MA, q-bio supercategory). Each show's
 # PROMPT.md tells Claude to read from this cache instead of curling arXiv.
+#
+# Freshness alone is not enough: when arXiv is tarpitting it answers with a
+# 14-byte HTTP 200 body reading "Rate exceeded.", and curl happily saves it.
+# A same-day poison file passes the -newermt test, so every show for the
+# rest of the day reads an empty cache and silently loses the arXiv channel
+# (found in the 2026-09-15 cache while re-running that night's episodes).
+# Require at least one <entry> to accept the cache, and retry the fetch a
+# few times with backoff before giving up.
 ARXIV_CACHE=/tmp/ai-nuggets-arxiv-cache.xml
-if [ -z "$(find "$ARXIV_CACHE" -newermt "$(date +%F)" 2>/dev/null)" ]; then
+arxiv_cache_usable() {
+  [ -s "$ARXIV_CACHE" ] && grep -q '<entry>' "$ARXIV_CACHE"
+}
+if [ -z "$(find "$ARXIV_CACHE" -newermt "$(date +%F)" 2>/dev/null)" ] || ! arxiv_cache_usable; then
   rm -f "$ARXIV_CACHE"
-  curl -s --max-time 90 \
-    -A 'ai-nuggets/1.0 (https://github.com/andrewsu/ai-nuggets)' \
-    'https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.CL+OR+cat:cs.MA+OR+cat:q-bio&sortBy=submittedDate&sortOrder=descending&max_results=500' \
-    -o "$ARXIV_CACHE.tmp" \
-    && mv "$ARXIV_CACHE.tmp" "$ARXIV_CACHE" \
-    || rm -f "$ARXIV_CACHE.tmp"
+  for arxiv_try in 1 2 3 4; do
+    [ "$arxiv_try" -gt 1 ] && sleep 60
+    curl -s --max-time 90 \
+      -A 'ai-nuggets/1.0 (https://github.com/andrewsu/ai-nuggets)' \
+      'https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.CL+OR+cat:cs.MA+OR+cat:q-bio&sortBy=submittedDate&sortOrder=descending&max_results=500' \
+      -o "$ARXIV_CACHE.tmp"
+    if [ -s "$ARXIV_CACHE.tmp" ] && grep -q '<entry>' "$ARXIV_CACHE.tmp"; then
+      mv "$ARXIV_CACHE.tmp" "$ARXIV_CACHE"
+      echo "$(date -Iseconds) arXiv cache: $(grep -c '<entry>' "$ARXIV_CACHE") entries (attempt $arxiv_try)"
+      break
+    fi
+    echo "$(date -Iseconds) arXiv cache attempt $arxiv_try unusable ($(wc -c < "$ARXIV_CACHE.tmp" 2>/dev/null || echo 0) bytes): $(head -c 60 "$ARXIV_CACHE.tmp" 2>/dev/null)"
+    rm -f "$ARXIV_CACHE.tmp"
+  done
+  arxiv_cache_usable || echo "$(date -Iseconds) WARN: no usable arXiv cache; shows must fall back to their other sources"
 fi
 
 # Sleep until the wallclock time named in a session-limit CLI message
