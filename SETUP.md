@@ -90,7 +90,19 @@ inside `scripts/publish_episode.sh`).
 
 The Anthropic key is **not** read from `.env` — Claude Code manages
 its own auth via `claude login`. Do that once interactively before the
-first cron run.
+first cron run, and expect to repeat it **roughly monthly**: the OAuth
+refresh token in `~/.claude/.credentials.json` is set about 28 days out
+by each login and cannot be renewed from cron. Check how much runway is
+left at any time with:
+
+```bash
+scripts/check_credentials.py     # OK / WARN / EXPIRED + the expiry date
+```
+
+`run_all_shows.sh` runs that check pre-flight and aborts rather than
+attempting any show on dead credentials, and the daily audit email
+carries a warning note once fewer than `CRED_WARN_DAYS` (default 5) days
+remain.
 
 ## 3. Point the Worker fallback at your fork
 
@@ -198,6 +210,12 @@ the dashboard.
 - **Claude Code not on PATH under cron.** Cron does not source
   `~/.bashrc`. Either use the absolute path in `CLAUDE=` (already the
   default) or symlink `claude` into `/usr/local/bin/`.
+- **Every show fails with `no_output` on the same night.** Almost always
+  the Claude Code OAuth session expired — `claude -p` prints `Failed to
+  authenticate: OAuth session expired and could not be refreshed` and
+  exits 0, so it looks like an empty run. The audit email reports those
+  shows as `AUTH`; confirm with `scripts/check_credentials.py` and fix by
+  running `claude` interactively on the host and typing `/login`.
 - **`wrangler` can't authenticate under cron.** `scripts/publish_episode.sh`
   sources `.env` precisely to pick up `CLOUDFLARE_API_TOKEN`. If the
   upload fails with auth errors, confirm the token is in `.env` and has
