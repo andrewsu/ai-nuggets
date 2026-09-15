@@ -2543,3 +2543,27 @@ Files written:
 
 **Two candid notes on the run.** It was a genuine weekend-gap day — the 09-13 episode had already taken everything through 09-11, so this is built on 09-12→09-14 items, several of which are analysis pieces rather than events. And two sources failed: `endpoints.news` 403'd WebFetch and returned only page chrome via jina (bodies unread, skipped), and `biobuzz.io/feed/` returns an empty 1KB stub — I recovered its headlines from `/news/` instead. Both are logged in the funnel. Dedup ran clean: 11/11 fresh on the batch pass and 11/11 on the final re-filter.
 === 2026-09-14T02:24:22-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-15T02:10:32-07:00 start blackbird-brief ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:10:35-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-15T02:10:35-07:00 no usable output for blackbird-brief; retrying in 180s ===
+=== 2026-09-15T02:13:35-07:00 start blackbird-brief (retry 1) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:13:38-07:00 done  blackbird-brief (exit 0) (retry 1) ===
+=== 2026-09-15T02:13:38-07:00 no usable output for blackbird-brief; retrying in 180s ===
+=== 2026-09-15T02:16:38-07:00 start blackbird-brief (retry 2, --model claude-sonnet-5) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:16:41-07:00 done  blackbird-brief (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-09-15T02:16:41-07:00 no usable output for blackbird-brief; retrying in 180s ===
+=== 2026-09-15T02:19:41-07:00 start blackbird-brief (retry 3, --model claude-sonnet-5) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:19:44-07:00 done  blackbird-brief (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-09-15T02:19:44-07:00 no usable output for blackbird-brief; retrying in 180s ===
+=== 2026-09-15T02:22:44-07:00 start blackbird-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:22:47-07:00 done  blackbird-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-09-15T02:22:47-07:00 no usable output for blackbird-brief; retrying in 180s ===
+=== 2026-09-15T02:25:47-07:00 start blackbird-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:25:50-07:00 done  blackbird-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-09-15T02:25:50-07:00 FAILED: no usable output for blackbird-brief after all retries ===

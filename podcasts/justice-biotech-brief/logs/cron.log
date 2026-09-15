@@ -3172,3 +3172,27 @@ Editorial spine: the headline number is the weakest part. Median PFS was 2.4 vs 
 - **Policy** — ARPA-H checked, nothing since 09-09; nothing in window.
 - **Source failures:** `r.jina.ai` **TLS-intercepted by the Scripps network** (cert served is `*.scripps.edu`), which killed every jina route at once including the GlobeNewswire keyword sweep that carried the 09-11 run. `clinicaltrialsarena.com` 403. `fiercebiotech.com` article bodies 403 to curl *and* WebFetch (index pages fine). `investors.biontech.de` 403. Worked around by parsing Fierce's index JSON-LD for the drug name and headline number, then using WebFetch on the GlobeNewswire article URL (curl returns 000 there, WebFetch does not) and PMC for the companion paper. Both workarounds recorded in memory.
 === 2026-09-14T02:53:11-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-15T02:40:33-07:00 start justice-biotech-brief ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:40:35-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-15T02:40:35-07:00 no usable output for justice-biotech-brief; retrying in 180s ===
+=== 2026-09-15T02:43:35-07:00 start justice-biotech-brief (retry 1) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:43:38-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-09-15T02:43:38-07:00 no usable output for justice-biotech-brief; retrying in 180s ===
+=== 2026-09-15T02:46:38-07:00 start justice-biotech-brief (retry 2, --model claude-sonnet-5) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:46:41-07:00 done  justice-biotech-brief (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-09-15T02:46:41-07:00 no usable output for justice-biotech-brief; retrying in 180s ===
+=== 2026-09-15T02:49:41-07:00 start justice-biotech-brief (retry 3, --model claude-sonnet-5) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:49:44-07:00 done  justice-biotech-brief (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-09-15T02:49:44-07:00 no usable output for justice-biotech-brief; retrying in 180s ===
+=== 2026-09-15T02:52:44-07:00 start justice-biotech-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:52:47-07:00 done  justice-biotech-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-09-15T02:52:47-07:00 no usable output for justice-biotech-brief; retrying in 180s ===
+=== 2026-09-15T02:55:47-07:00 start justice-biotech-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:55:50-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-09-15T02:55:50-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===

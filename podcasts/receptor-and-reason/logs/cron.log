@@ -4474,3 +4474,27 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped at the script
 
 Three preprint URLs were re-verified live (200); one returned 429 (throttle, not 404) — its prefix came straight from the details API, so the pre-commit URL check should pass.
 === 2026-09-14T03:24:03-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-15T02:50:33-07:00 start receptor-and-reason ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:50:35-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-15T02:50:35-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-09-15T02:53:35-07:00 start receptor-and-reason (retry 1) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:53:38-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-09-15T02:53:38-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-09-15T02:56:38-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-5) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:56:41-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-09-15T02:56:41-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-09-15T02:59:41-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-5) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:59:44-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-09-15T02:59:44-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-09-15T03:02:44-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T03:02:47-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-09-15T03:02:47-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-09-15T03:05:47-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T03:05:50-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-09-15T03:05:50-07:00 FAILED: no usable output for receptor-and-reason after all retries ===

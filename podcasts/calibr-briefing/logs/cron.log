@@ -4278,3 +4278,27 @@ General news sweep (BioSpace latest + press releases, BioPharma Dive, ILCN, web 
 
 Source failures: `fiercebiotech.com` HTTP 403 via WebFetch; `astrazeneca.com` and `onclive.com` 403 (routed around via the BioSpace/CancerNetwork mirrors); `r.jina.ai` unreachable from this host today (TLS interception + HTTP 000 on curl) — BioSpace index was retrieved before it started failing.
 === 2026-09-14T02:31:27-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-15T02:20:32-07:00 start calibr-briefing ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:20:35-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-15T02:20:35-07:00 no usable output for calibr-briefing; retrying in 180s ===
+=== 2026-09-15T02:23:35-07:00 start calibr-briefing (retry 1) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:23:38-07:00 done  calibr-briefing (exit 0) (retry 1) ===
+=== 2026-09-15T02:23:38-07:00 no usable output for calibr-briefing; retrying in 180s ===
+=== 2026-09-15T02:26:38-07:00 start calibr-briefing (retry 2, --model claude-sonnet-5) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:26:41-07:00 done  calibr-briefing (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-09-15T02:26:41-07:00 no usable output for calibr-briefing; retrying in 180s ===
+=== 2026-09-15T02:29:41-07:00 start calibr-briefing (retry 3, --model claude-sonnet-5) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:29:44-07:00 done  calibr-briefing (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-09-15T02:29:44-07:00 no usable output for calibr-briefing; retrying in 180s ===
+=== 2026-09-15T02:32:44-07:00 start calibr-briefing (retry 4, --model claude-haiku-4-5-20251001) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:32:47-07:00 done  calibr-briefing (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-09-15T02:32:47-07:00 no usable output for calibr-briefing; retrying in 180s ===
+=== 2026-09-15T02:35:47-07:00 start calibr-briefing (retry 5, --model claude-haiku-4-5-20251001) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:35:50-07:00 done  calibr-briefing (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-09-15T02:35:50-07:00 FAILED: no usable output for calibr-briefing after all retries ===

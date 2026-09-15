@@ -2792,3 +2792,27 @@ Shortlist, chosen marked ✓:
 
 One note on framing I want to flag rather than bury: the Vals AI post is bylined August 31 but only reached the HN front page Saturday, and the Valentine post is dated September 8. Both are inside the 48-hour *discourse* window rather than the publication window, and the script says so explicitly ("front-paged Saturday") rather than implying they broke yesterday.
 === 2026-09-14T02:44:14-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-15T02:30:32-07:00 start jinglin-ai-pulse ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:30:35-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-15T02:30:35-07:00 no usable output for jinglin-ai-pulse; retrying in 180s ===
+=== 2026-09-15T02:33:35-07:00 start jinglin-ai-pulse (retry 1) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:33:38-07:00 done  jinglin-ai-pulse (exit 0) (retry 1) ===
+=== 2026-09-15T02:33:38-07:00 no usable output for jinglin-ai-pulse; retrying in 180s ===
+=== 2026-09-15T02:36:38-07:00 start jinglin-ai-pulse (retry 2, --model claude-sonnet-5) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:36:41-07:00 done  jinglin-ai-pulse (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-09-15T02:36:41-07:00 no usable output for jinglin-ai-pulse; retrying in 180s ===
+=== 2026-09-15T02:39:41-07:00 start jinglin-ai-pulse (retry 3, --model claude-sonnet-5) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:39:44-07:00 done  jinglin-ai-pulse (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-09-15T02:39:44-07:00 no usable output for jinglin-ai-pulse; retrying in 180s ===
+=== 2026-09-15T02:42:44-07:00 start jinglin-ai-pulse (retry 4, --model claude-haiku-4-5-20251001) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:42:47-07:00 done  jinglin-ai-pulse (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-09-15T02:42:47-07:00 no usable output for jinglin-ai-pulse; retrying in 180s ===
+=== 2026-09-15T02:45:47-07:00 start jinglin-ai-pulse (retry 5, --model claude-haiku-4-5-20251001) ===
+Failed to authenticate: OAuth session expired and could not be refreshed
+=== 2026-09-15T02:45:50-07:00 done  jinglin-ai-pulse (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-09-15T02:45:50-07:00 FAILED: no usable output for jinglin-ai-pulse after all retries ===
