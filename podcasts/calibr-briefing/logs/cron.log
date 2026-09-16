@@ -4302,3 +4302,82 @@ Failed to authenticate: OAuth session expired and could not be refreshed
 Failed to authenticate: OAuth session expired and could not be refreshed
 === 2026-09-15T02:35:50-07:00 done  calibr-briefing (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-09-15T02:35:50-07:00 FAILED: no usable output for calibr-briefing after all retries ===
+=== 2026-09-15T09:33:30-07:00 start calibr-briefing ===
+Both episodes are written. Per `SKIP_TTS=1`, I stopped after the scripts and stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-09-15-pharma-headlines.txt` (1,566 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-09-15-gsk-chimagen-trispecific-tce-spotlight.txt` (1,444 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as valid XML; both `<link>` URLs return HTTP 200.
+
+**Candidate funnel — Calibr Briefing, 2026-09-15**
+
+Sources:
+- BioSpace `/latest-news-press-releases` — 10 items scanned, 7 on-target. Highest-yield channel today.
+- Fierce Pharma — 7 items scanned, 2 on-target (3 were marketing-campaign items, discarded).
+- BioPharma Dive — 2 dated items, 1 on-target (Electra IPO terms).
+- Fierce Biotech — **HTTP 403 from this IP, skipped** (no retry; BioSpace/Fierce Pharma covered the same ground).
+- Endpoints News — **HTTP 403 via WebFetch on both `endpts.com` and `endpoints.news`, skipped**; recovered the Chimagen story via WebSearch + BioSpace.
+- STAT / Biocentury / Clinical Trials Arena / GEN — not reachable; `r.jina.ai` is **TLS-intercepted on the Scripps network** today (cert served is `*.scripps.edu`), which took out the jina fallback route for all of them.
+- Foresite Capital portfolio-news page — scanned, nothing in September 2026 (latest: Khartis 08-13, Latigo IPO 08-06).
+- AI-in-drug-discovery sweep (Xaira / Iambic / Isomorphic / OpenAI / Anthropic) — no net-new items dated 09-14 or 09-15.
+
+Shortlist (title — source):
+- GSK acquires Chimagen trispecific TCE for multiple myeloma, up to $750M — biospace.com/deals/gsk-bags-chimagens-trispecific-t-cell-engager-in-deal-worth-up-to-750m — **CHOSEN: headline #1 + SPOTLIGHT**
+- FDA approves Curium's BEXLUTRY, first radioligand equivalent (505(b)(2) vs Lutathera) — biospace.com/press-releases/curium-announces-fda-approval-of-bexlutry... — **chosen, headline #2**
+- Sanofi/Cheplapharm: 20 mature medicines + 3 sites for 26.4% equity — sanofi.com press release 2026-09-14 — **chosen, #3**
+- BioNTech/OncoC4 gotistobart PRESERVE-003 stage 1, OS 18.5 vs 10.0 mo — globenewswire 2026-09-14 — **chosen, #4**
+- Sionna cuts 46% of staff, keeps only dual NBD1-corrector combo — biospace.com/biospace-layoff-tracker — **chosen, #5**
+- Electra Therapeutics sets IPO terms, ~$325M — renaissancecapital / biopharmadive — **chosen, #6**
+- FDA opens Operation TrialBlazer applications — biospace.com/fda/fda-opens-operation-trialblazer-for-applications... — **chosen, #7**
+- Definium DT120 ODT Phase 3 Panorama positive in GAD + FDA psychedelics hearing — ir.definiumtx.com PR 2026-09-14 — **chosen, #8**
+- GSK cuts 650 jobs, closes German vaccine site — biospace.com/business/... — chosen, folded into #1
+- Cullinan/Taiho plan FDA filing despite 3 deaths — dropped, zipalertinib covered in full 09-14
+- PDUFA VIII stakeholder positioning; AAM generics pricing alarm — dropped, no news event
+- Thyme Care $125M Series E (Foresite) — dropped, 09-02, outside window
+
+Spotlight rationale: largest-value transaction of the day, directly adjacent to Calibr's cell-engager work, and the only item with enough substrate for a deep read — the repeated Chimagen architecture (two high-affinity tumor arms, one low-affinity CD3 arm) lets the episode go at *why* the myeloma field is buying dual-antigen engagers, i.e. the antigen-escape genomics, rather than recapping deal terms. Full text read: GSK press release, BioSpace deal coverage, the October 2024 CMG1A46 release, and the Blood characterization of J&J's ramantamig for the competitive read.
+
+One environment note worth flagging for tomorrow: `r.jina.ai` is currently unusable from this host (Scripps TLS interception), so the Endpoints/STAT/GEN fallback route is down until that clears.
+=== 2026-09-15T09:45:05-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-16T02:20:10-07:00 start calibr-briefing ===
+Both scripts are written and validated. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after writing the scripts plus the two stub files each — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Published (pending batch TTS): Calibr 2026-09-16**
+
+- `podcasts/calibr-briefing/scripts/2026-09-16-pharma-headlines.txt` (1,743 words, ~9 items + week ahead)
+- `podcasts/calibr-briefing/scripts/2026-09-16-arrowhead-dual-rnai-dimer-spotlight.txt` (1,599 words)
+- `.rss-item.xml` + `.commit-msg` stubs written alongside each; both XML fragments parse clean.
+
+**Candidate funnel**
+
+Sources scanned (news-only show; no preprint sweep):
+- BioPharma Dive — homepage + /news, ~12 items scanned, 4 fresh
+- BioSpace — /latest-news-press-releases + /news, ~14 scanned, 6 fresh
+- Fierce Biotech — 5 dated items, 4 fresh; **article bodies HTTP 403 from this IP** — headline-level only, detail sourced elsewhere
+- Fierce Pharma — 6 dated items, 2 fresh
+- Endpoints News — **homepage HTTP 403**, recovered 4 items via search index
+- STAT News — Readout partially readable, rest paywalled (Syntis Bio item dropped, no accessible data)
+- Clinical Trials Arena — 5 items, 3 fresh
+- GEN — homepage undated, no usable items
+- GlobeNewswire (`?pageSize=50`) — ~26 releases, 3 relevant
+- `r.jina.ai` — **TLS-intercepted by the Scripps network** (cert `*.scripps.edu`); every jina route unusable today, worked around with direct WebFetch
+
+Shortlist after discarding stale/off-target:
+- **Arrowhead ARO-DIMER-PA, first dual-gene RNAi in humans, stock −9%** — biospace.com/press-releases/arrowhead-pharmaceuticals-announces-interim-topline-clinical-data-for-the-first-dual-functional-rnai-therapeutic-for-the-treatment-of-mixed-hyperlipidemia — **CHOSEN (spotlight + headline 1)**
+- **Vera ORIGIN 3 final, atacicept, 104-week eGFR** — globenewswire 3361855 — chosen (headline 2)
+- **Cellectis quits CAR-T for in vivo TALE editing of APOC3/PCSK9** — globenewswire 3360712 — chosen (headline 3, spotlight counterpoint)
+- **Novo terminates Ascendis TransCon metabolic/CV pact** — globenewswire 3361592 — chosen (4)
+- **Takeda zasocitinib NDA priority review** — takeda.com newsroom — chosen (5)
+- **Contineum/J&J MOONLIGHT-1 miss in MDD** — businesswire 20260914716616 — chosen (6)
+- **Legend Biotech appoints Ingrid Zhang CEO** — globenewswire 3362012 — chosen (7)
+- **BioMarin drops Voxzogo in Noonan** + **Ocular Therapeutix AXPAXLI pre-NDA** — biomarin.com statement / globenewswire 3361910 — chosen (8, paired)
+- **Xaira wins Fierce AI Innovation Award (X-Atlas/Pisces, X-Cell)** — chosen (9, AI-in-discovery focus area)
+- Lilly ends two Ph2 obesity studies (naperiglipron) — dropped, "strategic business reasons" only, no substance
+- Summit/Akeso ivonescimab WCLC follow-up — dropped, spotlighted 2026-09-13
+- FDA Operation TrialBlazer, psychedelics hearing, GSK/Chimagen, Sionna, Curium, Sanofi-Cheplapharm — dropped, all covered 2026-09-15
+- PDUFA VIII prep, "5 biotechs launching", biotech AI hiring — dropped, trend pieces with no event
+
+Spotlight rationale: Arrowhead beat Vera because the Vera readout is confirmatory data on an already-approved drug, while Arrowhead is a first-in-class platform result with a contradictory market reaction — and Cellectis independently picking the identical target pair 24 hours earlier gave the analysis a second, opposing datapoint on the same thesis.
+=== 2026-09-16T02:30:30-07:00 done  calibr-briefing (exit 0) ===
