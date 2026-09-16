@@ -151,6 +151,63 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     human data" is a NARROWER differentiator than it was scored on 09-03. The durable one is an UNENCUMBERED
     COMPOSITION-OF-MATTER POSITION, and that should now be the only thing we claim in this column.** Source:
     https://www.biospace.com/business/beyond-china-five-other-overseas-destinations-for-biopharma-dollars
+  - **AND THE LADDER NOW BOTTOMS OUT BELOW US — A *PRECLINICAL* ASSET BOUGHT OUTRIGHT FOR UP TO $750M (added 2026-09-15 Portfolio Watch
+    item 2; announced 2026-09-15).** **GSK is acquiring a trispecific T cell engager from Chimagen Biosciences** (Chinese; Shanghai +
+    Chengdu, founded 2016; multi-specific antibody platform spanning **cancer AND autoimmune disease**) — binds T cells plus **two**
+    validated tumour-associated antigens, for **multiple myeloma**, **full global rights**, **total potential value up to $750M**
+    (undisclosed upfront + development and commercial milestones). **THE ASSET IS PRECLINICAL; Phase 1 expected 2027.** **Hesham
+    Abdullah (GSK global head of oncology R&D):** it "complements our existing portfolio in multiple myeloma." **GSK's SECOND Chimagen
+    deal** — in **2024** GSK paid **$300M upfront + $550M milestones** for **CMG1A46**, a CD19xCD20 TCE now in **Phase 1 in B-cell
+    malignancies AND B-cell-dependent autoimmune disorders**. GSK is concurrently cutting ~$2.5B of cost over three years (650 layoffs
+    announced the same week).
+    **DURABLE READ (Eddie Cherok + Matt Tremblay): every prior rung on this ladder — DualityBio $45M (discovery→Ph1a), Simcere $75M
+    (early-clinical), HUTCHMED $110M (Phase 1), Solstice/Harbour $50M cash (Ph2-ready) — had a molecule characterised against a
+    clinical or near-clinical bar. This one has never been in a person and will not be for over a year. ⇒ THE EX-US COMPARATOR COLUMN
+    NOW REACHES THE EXACT STAGE AT WHICH A BLACKBIRD ASSET IS SOLD, and the 09-13 conclusion is unchanged and more load-bearing: the
+    only differentiator worth claiming is an UNENCUMBERED COMPOSITION-OF-MATTER POSITION.**
+    **INFERENCE, FLAGGED AS SUCH (do not state as fact): the upfront was NOT printed, where the same buyer and same seller disclosed
+    $300M upfront in 2024. The usual reason an upfront goes undisclosed is that it is small relative to the headline. If a preclinical
+    trispecific from an experienced platform company commands an unprintable upfront, that is the figure our preclinical package is
+    compared against.** Sources:
+    https://www.biospace.com/deals/gsk-bags-chimagens-trispecific-t-cell-engager-in-deal-worth-up-to-750m ·
+    https://www.gsk.com/en-gb/media/press-releases/gsk-to-acquire-potential-best-in-class-t-cell-engager-tce-for-multiple-myeloma-from-chimagen-biosciences
+
+- **THE FDA OPENED A PRE-IND ROLLING-REVIEW PILOT WHOSE ELIGIBILITY DESCRIPTION IS OUR OPERATING MODEL — APPLICATIONS CLOSE 2026-10-30
+  (added 2026-09-15 Portfolio Watch LEAD; announced 2026-09-15).** **Operation TrialBlazer** is the department-wide HHS roadmap launched
+  **2026-06-22** (FDA + NIH + ARPA-H + HHS OIG) to keep early clinical research in the US. Its operative piece is the **Expedited IND
+  Pilot Program**, opened for comment by Federal Register notice **2026-06-24, Docket FDA-2026-N-4699**, comments closed **2026-08-24**.
+  **As of 2026-09-15 it is TAKING APPLICATIONS.**
+  **MECHANISM:** a **drug sponsor pairs with a "Qualified Research Institution" (QRI)** — academic medical centre, CRO, or health system
+  with relevant scientific depth — and **the pair applies jointly**. FDA then **reviews and accepts individual IND components on a
+  ROLLING basis during the PRE-IND phase** rather than waiting for a complete submission. **Initial cohort 8-10 sponsor-QRI pairs;
+  selection and launch Q4 2026. APPLICATION DEADLINE 2026-10-30.**
+  **QUOTES: Michael Davis (CDER)** — the pairing lets FDA "review and accept individual components on a rolling review during the
+  pre-IND phase, rather than waiting for all components to begin review." **Karim Mikhail (CBER)** — the goal is to "identify and
+  resolve issues earlier, **reduce the risk of clinical holds** and make the path to first-in-human trials more predictable."
+  **Kyle Diamantas (Acting Commissioner)** — the pilot "also tests if the partnership can accelerate what happens after the FDA allows
+  a clinical trial to proceed."
+  **WHY IT IS OURS (Matt Tremblay + Maisha Rahman + Avi Khanna): every Blackbird programme sits in exactly this window — nonprofit
+  grant → de-risked academic asset → spinout → first IND (Aletira, NuGate, the GPR52 NewCo are all pre-IND) — and the QRI half of the
+  application is JHU / UMB / Hopkins Medicine, counterparties we ALREADY hold grant relationships with, which is the thing most
+  sponsors would have to go build.** Set against the running clinical-hold thread (Biohaven's partial hold landing between signing and
+  closing on a $350M licence over nonclinical data the buyer had already seen, 09-13; REGENXBIO 08-25; the summer AAV holds), **the
+  most expensive event available to a Blackbird asset in the year before first patient is a hold on the FIH protocol, and hold-risk
+  reduction is the agency's own stated objective.**
+  **CANDID LIMITS: (a) 8-10 slots against the whole US industry is a lottery — an application is cheap optionality, not a plan.
+  (b) As described at the RFI stage, QRI pre-review was ADVISORY ONLY, with FDA retaining full decision authority and the 30-day IND
+  clock UNCHANGED. If that is still the shape, the benefit is process discipline and early signal, NOT calendar time — CONFIRM before
+  a programme commits.**
+  **COMPANION — PDUFA VIII (public meeting 2026-09-16; FYs 2028-2032; reauthorisation due 2027-09-30; FDA work plans to Congress
+  2027-01-15).** FDA has proposed a **50% NDA fee reduction (~$2.3M)** for products with early-stage US trials. **Jeremy Levin (Ovid
+  CEO): the incentive "arrives near the end of development" but must influence decisions made years earlier — which is precisely the
+  argument FOR TrialBlazer, since it arrives at pre-IND where the decision is actually made.** Also in the docket: a push
+  (International Pemphigus & Pemphigoid Foundation; Christopher Freeman) for a **standing cross-functional Rare Disease Regulatory
+  Science and Review capability** inside FDA — the review function Aletira and NuGate will both stand in front of — plus a
+  **risk-based CMC life-cycle** proposal.
+  **ACTION (open): decide whether we apply, with which programme and which institution. Deadline 2026-10-30.** Sources:
+  https://www.biospace.com/fda/fda-opens-operation-trialblazer-for-applications-hoping-to-reshore-early-trials ·
+  https://www.biospace.com/fda/rare-disease-reform-cmc-risk-reshoring-us-trials-top-of-mind-ahead-of-pdufa-viii-meeting ·
+  https://www.fda.gov/industry/fda-actions-accelerate-and-modernize-early-and-late-stage-clinical-development
 
 - **THE EXIT MAP HAS THREE PUBLIC-MARKET DOORS, NOT TWO — REVERSE MERGERS ROSE 1,600% IN Q3 (added 2026-09-02 Portfolio Watch item 6;
   published 2026-09-02).** Per **Leerink Partners**: **20 biotech IPOs and 19 reverse mergers year-to-date**, close to 1:1 — but
@@ -200,7 +257,27 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
   https://www.whitehouse.gov/fact-sheets/2026/08/fact-sheet-president-donald-j-trump-announces-deal-with-nine-additional-pharmaceutical-manufacturers-to-lower-drug-prices-for-americans/
 
 ### Spinout-structure comparators (how other people carve assets out)
-_Last update: 2026-09-13_
+_Last update: 2026-09-16_
+- **THE MAYO / PRECURE SHAPE — A NONPROFIT ACADEMIC MEDICAL CENTRE TOOK *MAJORITY* OWNERSHIP OF AN OPERATING COMPANY, AND THE
+  CORPORATE PARTNER PAID IN PLATFORM RATHER THAN CASH (added 2026-09-16 Portfolio Watch item 5; announced 2026-09-15).**
+  **Mayo Clinic and Thermo Fisher Scientific launched Precure, LLC. Mayo is the MAJORITY owner; Thermo Fisher is founding partner
+  and MINORITY owner. Capitalisation NOT disclosed.** The contributed asset is **one million biospecimens** plus **several years of
+  longitudinal de-identified clinical data**, integrated with genomics and proteomics; **Thermo Fisher's contribution is the Olink
+  Explore HT platform, Orbitrap mass spectrometry, kits and reagents** — instruments and consumables, not a cheque. Mayo also
+  contributes the **clinical pathway for validation and implementation**, and states that **any financial return is reinvested in
+  its nonprofit mission of patient care, research and education.**
+  **WHY IT IS IN THIS FILE (Matt Tremblay + Maisha Rahman + Emily Wilkinson).** Strip the specifics and this is **the Blackbird
+  Laboratories / Blackbird BioVentures architecture — nonprofit de-risking, for-profit ownership, returns recycled into the
+  mission — applied to a DATA asset instead of a molecule, at a scale we have not attempted.** Two differences worth noting: Mayo
+  **is** the asset-owning institution (as with Kura/Caspian, we are not), and the corporate partner bought in with **capability
+  in kind**, which is a structure we have never used with an instrument or CRO partner. **Johns Hopkins holds a comparable
+  specimen and clinical-data estate and has no such vehicle.**
+  **CANDID: capitalisation is undisclosed, so this cannot be priced** — the structure is the transferable part, not the terms.
+  **ACTION: an hour with JHTV on whether the institution has ever looked at this shape. Not as a Blackbird programme — because the
+  answer tells us what our anchor partner is willing to put INTO a company.** *Competitive/moat read for Artemyx logged under that
+  entry in §2.* Sources:
+  https://www.biospace.com/press-releases/mayo-clinic-and-thermo-fisher-scientific-launch-precure-llc-to-identify-signs-of-disease-before-symptoms-appear ·
+  https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-and-thermo-fisher-scientific-launch-precure-llc-to-identify-signs-of-disease-before-symptoms-appear/
 - **THE KURA / CASPIAN SHAPE — the IP parent keeps ~HALF THE COMPANY (added 2026-09-12 Portfolio Watch item 3; announced 2026-09-09).** **Kura Oncology (Nasdaq: KURA) launched Caspian Therapeutics, Inc.**, a separately financed
   company for **diabetes and cardiometabolic disease**, around **KO-7246** — a next-generation, highly selective **menin inhibitor purpose-designed for chronic metabolic disease** (not oncology) — plus related IP and know-how
   contributed by Kura. **$50M led by BVF Partners**, with the **T1D Fund**, **Invus**, **Montanova**, **Eli Lilly and Company**, Kura itself, Kura leadership and biotech entrepreneurs. **Kura retains ~50% fully diluted plus board
@@ -619,6 +696,35 @@ https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentall
     move the ratio that is NOT a recombinant mucin. If (2) is no, this is a WATCH item plus a candidate BioHub shared capability (same
     shape as the Wirtz/Wu VITAL-3D call, §2b) and we should say so rather than funding a manufacturing problem.** Source:
     https://www.biorxiv.org/content/10.64898/2026.09.08.750178v1
+  - **A THIRD DIFFERENTIATOR APPEARS — THE *SETTING*, NOT A PROPERTY OR A POPULATION — AND IT IMMEDIATELY FAILED TO REGISTER ON THE
+    ENDPOINT THAT DEFINES IT. COPD TOPLINE DUE WITHIN DAYS (added 2026-09-16 Portfolio Watch item 3; announced 2026-09-15).**
+    **Connect Biopharma (Nasdaq: CNTB; CEO Barry Quart, Pharm.D.), rademikibart** — fully human mAb against **IL-4Rα**, the Dupixent
+    receptor. **Seabreeze STAT Asthma (CBP-201-206): n=160 randomised 1:1 (79 drug / 81 placebo)**, adults + adolescents with asthma
+    and type-2 inflammation, **eosinophils ≥300 cells/µL**, **all presenting with an ACUTE EXACERBATION**; **single 600 mg
+    subcutaneous dose on top of standard of care**; 28-day primary assessment + 8-week safety follow-up.
+    **PRIMARY = treatment failure within 28 days** (death, hospital (re)admission, ED (re)visit, unscheduled visit for worsening
+    symptoms, or treatment intensification): **66% reduction vs placebo, p=0.153 — NOT SIGNIFICANT**, which the company attributes
+    to **lower-than-projected overall failure rates**. **SECONDARIES: post-bronchodilator FEV₁ at week 1 — 250 mL vs 120 mL,
+    a 130 mL difference, p=0.023 (CLEARED); 50% reduction in ED/unscheduled visits.** Safety clean (1 SAE on drug vs 3 on placebo).
+    **READ ONE — THE MAP GETS A THIRD AXIS (Virginia Burger).** The 09-08/09-09 conclusion was that every alarmin-layer entrant
+    sells a **PROPERTY** or a **POPULATION**, and that AstraZeneca **closed the population lane**, leaving the **eosinophil-low
+    residual patient** as the only unowned position. **Connect sells neither — it sells a SETTING: the acute exacerbation / rescue
+    window, one dose on top of existing therapy. Add it to the four-seat map as a distinct axis.**
+    **READ TWO — IT IS THE 09-09 INSTRUMENT RULE IN A DIFFERENT DISEASE.** The biology moved visibly in **seven days** (130 mL of
+    FEV₁ is not subtle) and **the endpoint they will be judged on did not clear, because the CONTROL ARM FAILED LESS OFTEN THAN THE
+    PROTOCOL ASSUMED.** Same lesson as del-desiran at cheaper tuition. ⇒ **Ask whether the clinical instrument can register the
+    effect size you expect at the sample size you can afford — AND what happens if the comparator behaves better than the power
+    calculation.**
+    **KOL TEXTURE:** the named clinical voice is **Michael Wechsler, MD, Director of the Cohen Family Asthma Institute (National
+    Jewish)** — **the same investigator who was PI on Upstream Bio's verekitug Phase 2 VALIANT**, presented at ERS eight days
+    earlier. The KOL bench in this indication is small and already spoken for on all sides.
+    **THE CALENDAR ITEM, AND IT IS THE DELIVERABLE: Phase 2 Seabreeze STAT COPD (CBP-201-207) topline is guided for LATER IN
+    SEPTEMBER 2026**, with **FDA engagement afterwards to align on a Phase 3 registrational programme**. **If it clears on the same
+    endpoint, the acute-exacerbation SETTING becomes a claimed lane and the eosinophil-low residual stays our only unowned
+    position. If it misses the same way, COPD's binding problem is the ENDPOINT nobody can power, not the mechanism.** Either
+    answer changes a positioning decision currently being made blind. **Watch (Virginia + Avi).** Sources:
+    https://www.globenewswire.com/news-release/2026/09/15/3361907/0/en/connect-biopharma-announces-positive-preliminary-topline-data-from-its-global-phase-2-study-of-rademikibart-as-an-add-on-treatment-for-acute-exacerbations-in-adult-and-adolescent-p.html ·
+    https://www.fiercebiotech.com/biotech/connect-biopharma-missing-asthma-primary-endpoint-sends-investors-spiraling-about-copd
 
 **PARKINSON'S theme — the constraint the field names is DIAGNOSTIC LATENCY, not target choice, and the inflammasome lane is
 already priced (added 2026-09-08 Portfolio Watch item 4; published 2026-09-08).** **Jefferies: ~$8B market by 2035**, *"one of the
@@ -749,7 +855,21 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-09-14_
+_Last update: 2026-09-16_
+- **THE MARKET-SIZE LINE IN THE DECK IS A *PREVALENCE* NUMBER; THE ONE THAT MATTERS IS THE *DIAGNOSED* NUMBER — and the sponsor is
+  expected to pay the difference (added 2026-09-15 Portfolio Watch item 4; announced 2026-09-11).** **GeneDx + Beren Therapeutics**
+  launched a fully sponsor-funded, no-cost, no-insurance genome/variant testing programme for **Niemann-Pick type C** (full entry under
+  Artemyx). **The number: ~475 US children believed to have infantile-onset NPC, ~175 diagnosed — two-thirds unidentified, and the drug
+  developer is financing the search.**
+  **READ (Geoff Lynn + Avi Khanna): "GJB2 ≈ 200,000 people US+EU" is a PREVALENCE figure. The operative figure for a trial and a launch
+  is how many carry a confirmed MOLECULAR diagnosis. Newborn hearing screening detects hearing loss; it does not genotype anyone. And
+  Skylark's SONIX requires confirmed BIALLELIC GJB2 variants for enrolment, so patient identification is already a rate limiter on a
+  TEN-child study. TWO QUESTIONS TO ANSWER: (1) what fraction of severe-to-profound congenital SNHL in the US carries a molecular
+  diagnosis, and (2) who pays for that panel today? If the answers are "a minority" and "nobody," patient-finding is a COST LINE WE OWN,
+  it belongs in the Series A budget, and it is a legitimate reason to build a sequencing-company relationship years before approval.**
+  Sits alongside the 09-14 instrument gap (HFMSE equivalent) as the second pre-IND item that is about MEASUREMENT AND ASCERTAINMENT
+  rather than biology. Source:
+  https://biobuzz.io/news/gaithersburgs-genedx-teams-with-beren-therapeutics-to-close-the-diagnostic-gap-on-a-rare-neurodegenerative-disease/
 - **THE RESIDUAL A GENETIC MEDICINE LEAVES BEHIND IS ITSELF AN APPROVABLE MARKET — AND THE BINDING CONSTRAINT IS THE INSTRUMENT, NOT THE BIOLOGY (added 2026-09-14 Portfolio Watch LEAD; approved 2026-09-13).**
   **FDA approved Scholar Rock's ISEMBYLD (apitegromab-mstn)** — fully human IgG4 mAb binding **promyostatin and latent myostatin** — for **SMA in adults and pediatric patients ≥2 years WHO ARE CURRENTLY RECEIVING an SMN2-targeted treatment** (nusinersen or risdiplam). **The label mandates the incumbent.** The mechanism is **muscle**, not the genetic defect.
   **Pivotal SAPPHIRE:** global randomised double-blind placebo-controlled Phase 3, **n=188**, ages 2–21, 5q SMA, 9 countries, all on background SMN2 therapy. Primary = change in **HFMSE** at 1 year, **+2.2 points, p=0.0121 (NOMINAL)**; key secondary **34.2% vs 13.5%** reaching a ≥3-point HFMSE gain, **OR 3.8, p=0.0125 (NOMINAL)**. Safety DB >500 individuals, some >7 years on drug. **CANDID LIMITS: both p-values are nominal rather than alpha-controlled in a testing hierarchy and the agency approved anyway** (a current-discretion datapoint, same column as the Replimune/CBER entry below); **fractures 9% treated vs 2% placebo** in a paediatric population.
@@ -870,6 +990,19 @@ _Last update: 2026-09-14_
   revision to guidance.** ⇒ **That is the public comparable for "bolt-on to any vector" AS A BUSINESS MODEL, and it is small** —
   the 09-05 $12M Pfizer/Medicus repricing seen from the licensee's side. **Aletira must be a PRODUCT company with SELEXON
   inside; out-licensing the layer is a second revenue line, not the valuation.**
+  - **FOURTH COMPARABLE IN ONE WEEK, AND THE FIRST WITH A PER-PROGRAM NUMBER (added 2026-09-16 Portfolio Watch LEAD, second read;
+    announced 2026-09-15).** **Eli Lilly / QurCan Therapeutics** (full entry under NuGate): Lilly took **multiple CNS/PNS research
+    programs** on QurCan's **systemic, repeat-dosable polymer-lipid nanoparticle (TERP/C-TERP)** delivery platform for
+    **undisclosed upfront + a strategic equity investment + up to US$237M PER PROGRAM in milestones + tiered royalties**, with
+    **Lilly leading research, clinical development and commercialization.** **THE SET, ONE WEEK: 09-09 Adagene/Exelixis $2.0M
+    milestone (masked ROR1/2 ADC) · 09-10 Adagene/Third Arc, potential milestones INCREASED (masked CD3 TCEs) · 09-11
+    Modalis/Exegenesis capsid, licensee called current-year impact IMMATERIAL · 09-15 QurCan/Lilly, $237M/program.**
+    **CONSISTENT SHAPE (Eddie + Emily): a delivery or selectivity layer is paid in MILESTONES not upfront, PER PROGRAM not per
+    platform, and the LICENSEE RUNS THE ASSET.** ⇒ **This is the clearest number yet behind the 08-25 second-monetisation path and
+    it CONFIRMS the conclusion above rather than softening it: licensing SELEXON into someone else's IND is a revenue line, not the
+    valuation.** **DO NOT read the QurCan science across to the ear — the cochlea's problem is not the BBB, and per the 09-11
+    entry an intracochlear injection already solves organ targeting geographically.** Source:
+    https://www.fiercebiotech.com/biotech/lilly-pledges-237m-program-cns-genetic-med-collab-canadian-biotech
   **CASSETTE ARGUMENT, SECOND INDEPENDENT INSTANCE IN TWO DAYS:** Encoded upregulates endogenous *SCN1A*; Modalis upregulates
   endogenous utrophin. **Neither delivers a gene; both deliver a switch.** The 08-19 kilobase item is now a **pattern**, not one
   competitor's choice. Source:
@@ -1708,7 +1841,7 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-09-09_
+_Last update: 2026-09-16_
 - **CAUSAL-VS-CORRELATED RULE — the second half of the biomarker instruction (added 2026-09-06
   Portfolio Watch LEAD; event 2026-09-04).** **Lp(a)HORIZON**: Novartis/Ionis **pelacarsen**, a
   GalNAc-conjugated ASO against apolipoprotein(a), lowered Lp(a) by **~80% in 8,323 patients**
@@ -1791,6 +1924,46 @@ _Last update: 2026-09-09_
   NuGate's development window, the comparator for an INTRATHECAL ASO stops being "no treatment" and becomes "a subcutaneous
   injection."** Same discipline as the eplontersen entry above, applied to **route of administration**. **ACTION (Jon Robbins):
   stand up a watch on transferrin-receptor / BBB-shuttle-conjugated oligonucleotide programs entering the clinic.**
+  - **THE WATCH FIRED, AND BOTH HALVES OF THE SENTENCE ARE NOW IN ONE PORTFOLIO — LILLY'S (added 2026-09-16 Portfolio Watch LEAD;
+    announced 2026-09-15).** **Eli Lilly signed an exclusive research and collaboration agreement with QurCan Therapeutics**
+    (BioLabs Toronto, 661 University Ave.; founded **2018** as **Nanology Labs**; CEO/co-founder **Dr. Mohammad Ali Amini**,
+    CSO/co-founder **Dr. Shirley Wu**, Leslie Dan Faculty of Pharmacy, U Toronto; CBO **Dr. John Reid**, ex-AstraZeneca/UHN)
+    covering **multiple research programs in CNS and PNS disease**. Terms: **undisclosed upfront + a strategic EQUITY investment
+    from Lilly**, research support, **up to US$237M PER PROGRAM** in research/development/commercial milestones, tiered royalties;
+    **Lilly leads research, clinical development and commercialization.**
+    **THE PLATFORM IS THE POINT: TERP (Target-Engineered Responsive Polymer)** — a **polymer-lipid nanoparticle (PLNP)** for
+    **systemic, non-viral, REPEAT-DOSABLE** delivery of **mRNA, DNA, ASO and siRNA**, with a CNS variant (**C-TERP**) designed to
+    cross the **BBB** via "dual-specific transport pathways." QurCan's own framing: administration into brain or CSF is
+    **invasive**; systemic dosing gives **broad distribution across deep brain regions**.
+    **THE OTHER HALF, ALREADY LILLY'S (context, 2024-06-03): exclusive global licence from QurAlis to QRL-204, a
+    SPLICE-SWITCHING ASO restoring UNC13A function in ALS and FTD** — **$45M upfront + equity, up to $577M milestones**, tiered
+    royalties. **QurAlis is on this program's watch list above.** => **One company now holds a splice-switching oligonucleotide in
+    NuGate's exact indication and intellectual estate AND has bought a systemic, repeat-dosable route into the brain.**
+    **CANDID LIMITS: QurCan is RESEARCH-STAGE — no named molecule, no IND, no clinical data; the BBB claim is PRECLINICAL (the
+    largest graveyard in neuro delivery); C-TERP's mechanism is undisclosed and cannot be externally assessed. Lilly bought an
+    OPTION, priced like one.** => **The comparator is not here yet, but the buyer with the most to gain has paid to build it.
+    ACTION (Jon Robbins): convert this watch from PASSIVE to a NAMED CALENDAR ITEM.** Sources:
+    https://www.fiercebiotech.com/biotech/lilly-pledges-237m-program-cns-genetic-med-collab-canadian-biotech ·
+    https://qurcan.com/ ·
+    https://www.prnewswire.com/news-releases/quralis-grants-lilly-exclusive-global-license-for-qrl-204-a-potentially-first-in-class-precision-therapy-that-restores-unc13a-function-in-als-and-ftd-302156943.html
+- **NEUROFILAMENT LIGHT WAS RUN AS A PHASE 2 *PRIMARY* ENDPOINT IN ALS AND DID NOT MOVE — AND THE 09-06 CAUSAL RULE IS WHY THAT
+  DOES NOT FALSIFY OUR SPINE (added 2026-09-16 Portfolio Watch item 2; reported 2026-09-15).** **Axoltis Pharma (Lyon), NX210c** —
+  a **synthetic 12-amino-acid peptide derived from SCO-spondin**, claimed to restore BBB function, protect neurons and improve
+  neurotransmission. **Phase 2 SEALS: n=82, double-blind randomised multicentre, France; IV 5 or 10 mg/kg vs placebo, 3x/week for
+  FOUR WEEKS; follow-up to 10 months. PRIMARY = change at week six in NfL AND Qalb (CSF/serum albumin quotient). NEITHER showed a
+  significant treatment effect.** Company led instead with **post-hoc ALSFRS-R at week 10: monthly decline 0.77 (5 mg/kg), 1.06
+  (10 mg/kg), 1.57 (placebo) — a 51% reduction vs placebo at the LOW dose**, plus a **significant plasma claudin-5 reduction at the
+  HIGH dose**. Fuller data at **Society for Neuroscience, 2026-11-15**.
+  **READ (Jon Robbins + Avi Khanna), three parts. (1)** Four weeks of dosing is almost certainly too short to bend an NfL curve —
+  weak evidence about the biomarker, strong evidence about trial design. **(2) THE SHAPE IS THE PROBLEM: the dose that won on
+  FUNCTION (5 mg/kg) is not the dose that engaged the TARGET (claudin-5 at 10 mg/kg)** — an inverse relationship across two
+  readouts, **post hoc**, at ~**27/arm**. That is the **09-03 apazunersen/Angelman shape in miniature**, and it gets discounted to
+  zero in diligence. **(3) AND THIS IS WHY THE SPINE HOLDS:** per the **09-06 causal-vs-correlated rule**, tofersen reached the
+  market on NfL because **SOD1 ALS has a monogenic causal chain**; **a barrier-repair peptide has NO causal claim on NfL on a
+  four-week clock.** => **KEEP NfL as NuGate's evidentiary spine. This is the invoice for making a biomarker PRIMARY without owning
+  the causal argument — write the causal paragraph before the biomarker plan (restated, not new).** Sources:
+  https://www.fiercebiotech.com/biotech/axoltis-misses-mark-phase-2-als-study-still-strives-move-towards-clinic ·
+  https://european-biotechnology.com/latest-news/axoltis-als-drug-misses-phase-2-endpoint/
 
 - **THE OPEN-LABEL-PACKAGE RULE — a whole CNS antisense program died of an inference, not of chemistry (added 2026-09-03
   Portfolio Watch LEAD; announced 2026-09-02).** **Ultragenyx's apazunersen (GTX-102)** — intrathecal ASO inhibiting **UBE3A-AS**
@@ -1843,7 +2016,28 @@ _Last update: 2026-09-09_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-13_
+_Last update: 2026-09-16_
+- **THE BUYER WE MOST WANT ALREADY BOUGHT THE *OTHER HALF OF THE IMMUNE SYSTEM* — and that is the differentiation sentence (added
+  2026-09-15 Portfolio Watch item 2; announced 2026-09-15).** **GSK acquired a preclinical trispecific TCE from Chimagen Biosciences
+  for up to $750M** (full entry in §1). The relevant fact for us is the SELLER's other asset: **GSK's 2024 Chimagen deal ($300M upfront
+  + $550M milestones) was CMG1A46, a CD19xCD20 TCE now in Phase 1 in B-cell malignancies AND B-CELL-DEPENDENT AUTOIMMUNE DISORDERS.**
+  **READ (Jon Robbins + Hemaka Rajapakse): GSK's autoimmune engager bet is B-CELL DEPLETION. Winnow is antigen-specific T-CELL
+  redirection. B-cell depletion in autoimmunity is now extremely crowded (CAR-T, engagers, everyone); antigen-specific T-cell targeting
+  is not. ⇒ That distinction belongs in the FIRST paragraph of the Winnow deck, not the fifth — the buyer we most want has already spent
+  money on the other half of the immune system and can tell the difference.** Note this is the fourth route to "a safe engager" logged in
+  four days: antigen (Winnow) · mask (Adagene/Third Arc, 09-12) · receptor itself (Hamad x-mab, 09-13) · and now **cell lineage**
+  (deplete B cells instead of touching T cells at all).
+- **THE BENEFIT-RISK INVERSION — in autoimmunity the safety table IS the product (added 2026-09-15 Portfolio Watch item 5; reported
+  2026-09-15).** **Cullinan/Taiho will file zipalertinib in 1L EGFR-exon-20 NSCLC off Phase 3 REZILIENT3 (n=280): PFS 14.5 vs 8.5
+  months, ~50% risk reduction, interim OS benefit 28% — with THREE septic-shock deaths in the treatment arm determined by the companies
+  to be RELATED to the study regimen, and grade 3+ AEs 87% vs 54.4%.** William Blair: "The efficacy appears robust." Set beside the
+  09-13 Scholar Rock approval on two NOMINAL p-values: **current review discretion is running on the MAGNITUDE OF BENEFIT, not the
+  cleanliness of the safety table.**
+  **THE INVERSION (Jon Robbins): Winnow's indications do not kill on a six-month clock, so there is no survival delta available to
+  purchase that tolerance with. The same agency that will accept three septic-shock deaths in refractory lung cancer will accept
+  approximately zero in ankylosing spondylitis. ⇒ In autoimmunity the safety table is not a section of the package, it is the product —
+  which is the whole argument for antigen selectivity, now with the oncology side of the trade priced in public.** Source:
+  https://www.biospace.com/drug-development/despite-3-patient-deaths-cullinan-taiho-plan-fda-filing-for-lung-cancer-pill-on-survival-benefit
 - **A THIRD ROUTE TO THE SAME SAFETY PROMISE, AND IT IS AT OUR ANCHOR INSTITUTION (added 2026-09-13 Sourcing Radar pick 2).** The two
   routes logged on 09-12 were **restrict WHICH ANTIGEN the engager sees (Winnow)** and **restrict WHERE it switches on (masking,
   Adagene/Third Arc)**. The **Hamad lab x-mab** work at JHU SOM Pathology (full entry in §2b) is a third: **restrict by THE RECEPTOR
@@ -1976,6 +2170,34 @@ _Last update: 2026-09-13_
   - **TWO LIMITS, STATE THEM BEFORE AN INVESTOR DOES. (a) Engagers are not exempt from this biology — blinatumomab has produced HLH
     and CRS is the class toxicity of CD3 engagement; an engager buys DOSE CONTROL, not exemption. (b) Keep the Imaavy discipline:
     these are CD19 products depleting B CELLS, Winnow is T-CELL-mediated. The read is the CONTROL ARCHITECTURE, not the target.**
+  - **FOURTH TPP ROW — COMMERCIAL DISPLACEMENT, ON THE RECORD, FROM THE PARTY BEING DISPLACED (added 2026-09-16 Portfolio Watch
+    item 4; board approval 2026-09-11, announced 2026-09-14).** **Cellectis (Nasdaq: CLLS; co-founder/CEO André Choulika, Ph.D.)**
+    announced a **strategic transformation out of allogeneic cell therapy into in vivo gene editing**, **exiting lasme-cel (B-cell
+    ALL) and eti-cel (non-Hodgkin lymphoma)** — both clinical-stage allogeneic CAR-T — and seeking partners for them. **Shares
+    −43%**, near all-time lows (~$2). New company: two **preclinical LNP-delivered** programmes in severe dyslipidemias —
+    **HEAL-101**, a **TALE base editor vs APOC3** for severe hypertriglyceridemia (preclinical mean base editing **>70%**, APOC3
+    reduction **~70%**, triglyceride decrease **~45–76%**; **preliminary Phase 1 data H2 2027**) and **HEAL-201**, a **TALE
+    epigenetic modulator vs PCSK9** for severe hypercholesterolemia (mean editing **>90%**, PCSK9 decrease **>90%**; **preliminary
+    clinical data H1 2028**) — each **~1–2M patients US/EU**. **Cash runway into H2 2028.** Partnerships retained: **AstraZeneca,
+    Allogene, Servier, Iovance**.
+    **THE REASON IS THE ITEM, AND IT IS ECONOMICS NOT SAFETY.** Verbatim: "**the rapid emergence of bispecific antibodies and in
+    vivo CAR-T approaches has intensified competition**"; plus "continued and recently accelerated advances in frontline treatment
+    regimens have lowered relapse rates, reducing the number of patients progressing to later lines of therapy," "resulting in
+    slower enrollment, a potentially longer and more costly development pathway."
+    **READ (Jon Robbins + Eddie Cherok): this is a FOURTH row for the Winnow TPP and a different KIND of row** — beside
+    **selectivity** (08-29 Lisraya / 08-30 Imaavy / 09-01 Merida), **control architecture** (09-02 Novartis IEC-HS halt / 09-05
+    AbbVie CERVINO / 09-10 BMS's own two decisions) and **operations** (09-05 Cellares/BMS + the scale-out problem). **A company
+    whose founder built a career on allogeneic cell therapy states in its own release that BISPECIFIC ANTIBODIES took its market.
+    It is worth more than any argument we could construct, because we did not construct it.**
+    **TWO DISCIPLINES. (a) Cellectis went to CARDIOVASCULAR LIPIDS, not autoimmunity** — not a new competitor in Winnow's lane;
+    **validation of Winnow's commercial FORM arriving as an obituary.** **(b) THE SHARPER POINT IS INSIDE CHOULIKA'S OWN QUOTE:**
+    *"Gene surgery has the potential to transform the treatment of high-risk metabolic diseases by delivering long-lasting benefits
+    through a single IV injection."* **PERMANENCE is the in vivo editing pitch — and permanence is exactly what cannot be titrated,
+    interrupted or discontinued in an autoimmune patient who turns out to be inflamed in a way you did not predict. That is the
+    control-architecture argument in its strongest form, and it now applies to the in vivo route ArsenalBio declared its whole
+    strategy on 08-31 and Cellectis has just joined.** Sources:
+    https://www.biospace.com/press-releases/cellectis-announces-strategic-transformation-to-in-vivo-gene-editing-company ·
+    https://www.biopharmadive.com/news/cellectis-restructure-in-vivo-gene-editing-allogeneic-heart-disease/830281/
   - **(Virginia Burger) — SHARPENS THE 09-01 ARSENALBIO ENTRY ABOVE:** ArsenalBio declared in-vivo CAR-T for autoimmunity its whole
     strategy on 08-31, and **generating cells inside the patient affords LESS control over expansion than the ex-vivo route that just
     stopped, not more.** This does not retire the **Schneck** sourcing lead — it **changes the first question** from "what does the
@@ -2098,7 +2320,34 @@ _Last update: 2026-09-13_
   https://www.biospace.com/business/bms-ends-cellares-pact-over-cell-therapy-production-problems-triggering-layoffs
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
-_Last update: 2026-09-10_
+_Last update: 2026-09-16_
+- **THE ASSAY IS NOT A PASSENGER — IT IS THE WHOLE FRANCHISE. The drug WITHOUT the diagnostic just failed (added 2026-09-15 Portfolio
+  Watch item 3; reported 2026-09-14). THIS SUPERSEDES READ (b) OF THE 09-07 ENTRY BELOW.** **AstraZeneca's SERENA-4 Phase 3 MISSED its
+  primary PFS endpoint** — **ETCAMAH (camizestrant) + palbociclib vs anastrozole + palbociclib** in **upfront FIRST-LINE** ER+/HER2−
+  advanced breast cancer, **no biomarker selection, no molecular switch**. Numerical PFS improvement only. **Susan Galbraith (EVP
+  Oncology Haematology R&D):** "Whilst we are disappointed by the SERENA-4 outcome, it sharpens our focus on maximising the number of
+  patients who can benefit from Etcamah today based on SERENA-6." **Leerink cut peak sales ~$2.9B → ~$830M**; analysts had assigned
+  **~20% probability of success**. CAMBRIA-1 (early breast cancer) reports **H1 2027**.
+  **REVISED READ.** On 09-07 we filed the Guardant360 CDx as having got its indication **as a passenger** on AstraZeneca's Phase 3.
+  Eight days later the **non-diagnostic version of the same drug failed. ⇒ The molecularly guided indication is not a niche carve-out
+  of a large franchise; it IS the franchise. The version needing no assay did not work; the version that requires one is the only
+  version that exists. The assay is the reason there is a product.** That is a materially STRONGER precedent for the Artemyx monitoring
+  thesis than we credited on 09-07.
+  **THE HARDER HALF — AND IT KEEPS THE 09-07 ACTION ALIVE (Eddie Cherok): this makes the diagnostic's entire value contingent on ONE
+  sponsor's ONE trial, and SERENA-6 is an ACCELERATED approval with a confirmatory trial still owed. If that confirmation fails, the
+  CDx indication goes with it. ⇒ Artemyx must be inside MORE THAN ONE sponsor's protocol-design conversation.** Sources:
+  https://www.biospace.com/drug-development/astrazenecas-newly-approved-cancer-pill-fails-late-stage-study-blocking-path-to-bigger-market ·
+  https://www.astrazeneca.com/media-centre/press-releases/2026/update-serena-4-phase-iii-trial.html
+- **THE SPONSOR PAYS FOR PATIENT-FINDING — a second, cheaper business shape for a diagnostic (added 2026-09-15 Portfolio Watch item 4;
+  announced 2026-09-11).** **GeneDx (Gaithersburg, MD) + Beren Therapeutics — "NPC GenomeComplete"** for **Niemann-Pick disease type C**:
+  **no-cost testing, no insurance required**, targeted **NPC1/NPC2** variant testing with **48-hour** results for urgent cases, plus
+  ExomeDx/GenomeDx. **Beren finances the entire programme** and is developing **adrabetadex** (expanded access) for the same disease.
+  **~475 US children are believed to have infantile-onset NPC; ~175 carry a diagnosis — roughly two-thirds of US patients are
+  unidentified, and the THERAPEUTIC sponsor is paying for the search.** **READ (Eddie Cherok): distinct from the SERENA-6 shape above —
+  there the assay picks the therapy; here the assay CREATES the market. A diagnostics company can be paid by a drug sponsor for
+  patient-finding without ever being in a registrational protocol.** Cross-reference the Aletira entry, where the same arithmetic applies
+  to GJB2. Source:
+  https://biobuzz.io/news/gaithersburgs-genedx-teams-with-beren-therapeutics-to-close-the-diagnostic-gap-on-a-rare-neurodegenerative-disease/
 - **THE MONITORING PRECEDENT — a recurring blood draw in an ASYMPTOMATIC, NON-PROGRESSING patient is now written into an
   FDA companion-diagnostic approval (added 2026-09-07 Portfolio Watch LEAD; FDA accelerated approval 2026-09-04, AstraZeneca
   release 2026-09-06).** **AstraZeneca's ETCAMAH (camizestrant)** + a CDK4/6 inhibitor was approved in HR-positive,
@@ -2166,6 +2415,27 @@ _Last update: 2026-09-10_
       the LICENCE. SOURCING QUESTION (Esther Park): who holds it.** Sources:
       https://ventures.jhu.edu/news/a-30-minute-test-could-help-save-donor-kidneys-every-year/ ·
       https://www.nature.com/articles/s41598-026-48155-5
+      - **FOURTH SHAPE, AND IT SITS *UPSTREAM* OF THE OTHER THREE — PLUS THE MOAT THREAT (added 2026-09-16 Portfolio Watch item 5;
+        announced 2026-09-15).** **Mayo Clinic and Thermo Fisher Scientific launched Precure, LLC. Mayo is the MAJORITY owner;
+        Thermo Fisher is founding partner and MINORITY owner. Capitalisation NOT disclosed.** The asset: molecular data from **ONE
+        MILLION BIOSPECIMENS** linked to **several years of longitudinal de-identified clinical data**, integrating **genomic and
+        proteomic** information in a highly standardised setting, with AI/large-scale analytics. **Thermo Fisher contributes**
+        proteomics expertise, the **Olink Explore HT** platform, **Orbitrap** mass spectrometry, kits and reagents; **Mayo
+        contributes** the biospecimens and longitudinal clinical data, clinical/research leadership, data-science capability and
+        **the clinical pathway for validation and implementation.** Disease focus: cancer, cardiometabolic, neurological,
+        immune-mediated. Quotes: **Gianrico Farrugia, M.D.** (President & CEO, Mayo) and **Marc Casper** (Chairman & CEO, Thermo
+        Fisher). Mayo states any financial return is **reinvested in its nonprofit mission**.
+        **READ (Eddie Cherok): this is a FOURTH answer to this entry's standing question and it sits ABOVE the other three, because
+        the party that owns a million longitudinally linked specimens SETS THE STANDARD every later assay is compared against.**
+        Artemyx's thesis — cfDNA fragmentomics for liver fibrosis, SLE, RA, IBD, endometriosis — **requires serial samples from the
+        same patients across years**, which is exactly the asset Mayo just put inside an operating company with an instrument maker
+        attached. **TWO QUESTIONS: (1) is Artemyx's validation cohort something Hopkins CONTROLS, something we RENT, or a GAP in
+        the plan? (2) Does our defensibility argument survive a multi-omics platform with a million specimens and proteomics
+        bolted on deciding to build the panel itself?** That second is **the 08-31 Quest lesson** (the distributor becomes the
+        competitor by adding analytes) **with an academic medical centre's cohort behind it.** *Structural read logged separately
+        in §1 spinout-structure comparators.* Sources:
+        https://www.biospace.com/press-releases/mayo-clinic-and-thermo-fisher-scientific-launch-precure-llc-to-identify-signs-of-disease-before-symptoms-appear ·
+        https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-and-thermo-fisher-scientific-launch-precure-llc-to-identify-signs-of-disease-before-symptoms-appear/
     Sources:
     https://www.ajmc.com/view/copernicos-trial-eosinophil-guided-ics-reduction-safe-in-copd-vestbo-says (403s both WebFetch and
     r.jina.ai; verified via search extracts + the protocol paper) ·

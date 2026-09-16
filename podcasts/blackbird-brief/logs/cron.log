@@ -2567,3 +2567,44 @@ Failed to authenticate: OAuth session expired and could not be refreshed
 Failed to authenticate: OAuth session expired and could not be refreshed
 === 2026-09-15T02:25:50-07:00 done  blackbird-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-09-15T02:25:50-07:00 FAILED: no usable output for blackbird-brief after all retries ===
+=== 2026-09-15T09:23:30-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped before TTS, R2 publish, feed edit, and commit — `publish_pending.py` will do those after batch TTS.
+
+**Published (pending batch TTS): `2026-09-15-portfolio-watch`**
+
+Files written:
+- `podcasts/blackbird-brief/scripts/2026-09-15-portfolio-watch.md` (2,143 spoken words, 5 items)
+- `podcasts/blackbird-brief/scripts/2026-09-15-portfolio-watch.rss-item.xml` (validated; `__LENGTH__` / `__DURATION__` placeholders in place)
+- `podcasts/blackbird-brief/scripts/2026-09-15-portfolio-watch.commit-msg`
+- `podcasts/blackbird-brief/state/shipped.jsonl` — 6 keys appended (67 episodes, 350 unique keys)
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` — edited in place (§1 ×2, Aletira, Winnow, Artemyx)
+
+**Roster**
+1. **LEAD** — FDA opened applications for the Expedited IND Pilot under Operation TrialBlazer (09-15). Sponsor + Qualified Research Institution apply jointly; rolling acceptance of IND components pre-IND; 8–10 pairs; **deadline 2026-10-30**. The QRI half of the application is JHU/UMB — counterparties Blackbird already holds grant relationships with — and Mikhail's stated objective is hold-risk reduction, which is the exact thread through Biohaven/REGENXBIO/the summer AAV holds. Candid limits carried: 8–10 slots is a lottery, and the RFI-stage design had QRI review advisory only with the 30-day clock unchanged. PDUFA VIII fee-discount + Levin's critique folded in as the companion.
+2. GSK buys a **preclinical** trispecific TCE from Chimagen (China) for up to $750M — the ex-US comparator ladder drops below its clinical rungs to the stage Blackbird actually sells at. Second read cuts Winnow's way: GSK's autoimmune engager bet from the same seller is B-cell depletion, not antigen-specific T-cell redirection.
+3. SERENA-4 missed — which **revises our own 09-07 Artemyx read upward**: the version of camizestrant needing no diagnostic doesn't work, so the ctDNA-guided indication isn't a carve-out, it's the whole franchise. Harder half kept: that value now rests on one accelerated approval's confirmatory trial.
+4. GeneDx/Beren fund free NPC sequencing (475 believed / 175 diagnosed) → the GJB2 "200,000" line is a prevalence number; patient-finding is an Aletira cost line.
+5. Cullinan/Taiho file with three treatment-related deaths — benefit-risk discretion runs on magnitude, which inverts hard for a non-lethal autoimmune indication.
+
+**Source notes:** `r.jina.ai` is TLS-intercepted on the Scripps network today (cert served is `*.scripps.edu`), killing every jina full-text route; BioSpace, BioBuzz, BioPharma Dive and astrazeneca.com resolved directly. Fierce Biotech returned HTTP 403 on both homepage and `/rss/xml` from this IP — one retry, same result, skipped per PIPELINE.md. Dedup: 18 candidates → 15 fresh (CraniUS, the cancer-vaccine item and the mRNA item were already shipped). CraniUS was also a recency trap — the 510(k) cleared 2026-07-29, BioBuzz wrote it up 09-10.
+=== 2026-09-15T09:37:30-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-16T02:10:10-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and left TTS, R2 publish, `feed.xml` and the commit to `publish_pending.py`.
+
+**Published:** `podcasts/blackbird-brief/scripts/2026-09-16-portfolio-watch.md` (Portfolio Watch, 2,470 spoken words), plus `.rss-item.xml` (validated XML, `__LENGTH__`/`__DURATION__` placeholders intact) and `.commit-msg`.
+
+**Ledger:** 5 keys appended → 68 episodes, 374 items.
+
+**Reference file updated in place** (no run-log appended): NuGate, Aletira, Winnow, Artemyx `_Last update:_` bumped to 2026-09-16; COPD theme gained a third-axis sub-bullet; §1 spinout-structure comparators gained the Mayo/Precure shape.
+
+**Items (LEAD first):**
+1. **Lilly × QurCan Therapeutics** — Lilly bought a systemic, non-viral, repeat-dosable polymer-lipid nanoparticle with a BBB-crossing CNS variant (undisclosed upfront + equity, up to $237M/program, Lilly leads everything). Set beside the UNC13A splice-switching ASO Lilly licensed from QurAlis in June 2024, **both halves of NuGate's 08-31 route-comparator rule now sit in one portfolio**. Flagged candidly: QurCan is research-stage and the BBB claim preclinical, so it's an option, not a comparator yet. Second read — fourth bolt-on layer priced in a week, and the shape is consistent (milestones, per program, licensee runs it), which confirms rather than softens the Aletira conclusion.
+2. **Axoltis SEALS** — NfL run as a Phase 2 *primary* in ALS and missed; the dose that won post-hoc on function isn't the dose that engaged the target. Does **not** falsify NfL as NuGate's spine — the 09-06 causal-vs-correlated rule is why.
+3. **Connect Biopharma** — a third COPD differentiator (the acute-exacerbation *setting*) that immediately failed to register on the endpoint defining it. **COPD topline lands before month-end** — the actionable calendar item.
+4. **Cellectis** — quit allogeneic CAR-T naming bispecific antibodies in its own release; a fourth Winnow TPP row written by the displaced party, with the permanence-vs-titratability point from Choulika's own quote.
+5. **Mayo/Precure** — moat threat to Artemyx and a structural comparator for Blackbird's own nonprofit/for-profit architecture.
+
+**Source failures (logged in the script's source note, none aborted the run):** `r.jina.ai` still TLS-intercepted on the Scripps network (second day) — also killed `pharmashots.com`. Fierce RSS returned 200 but every Fierce *article body* 403s to both WebFetch and curl; worked around via RSS descriptions plus primary press releases. BioSpace's `latest-news-press-releases` HTML renders with no `href` attributes at all (JS-hydrated) and its `.rss` is empty — the per-section `.rss` endpoints work and are the better entry point. BioBuzz `/feed/` empty (HTML page fine). **JHTV `ventures.jhu.edu/news/` 403s both routes, so no JHTV newsroom check was possible today** — worth noting since that's a standing Stream B source.
+
+Two in-window-adjacent Maryland items were deliberately left out as outside the 3–4 day window and flagged in the funnel for a later run: Sernova+Seraxis → BetaNova (Germantown MD, T1D, announced 09-08) and ARPA-H's $62.7M ADVOCATE award (09-09, Johns Hopkins APL as external evaluator only).
+=== 2026-09-16T02:30:42-07:00 done  blackbird-brief (exit 0) ===
