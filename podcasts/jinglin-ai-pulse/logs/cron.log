@@ -2816,3 +2816,77 @@ Failed to authenticate: OAuth session expired and could not be refreshed
 Failed to authenticate: OAuth session expired and could not be refreshed
 === 2026-09-15T02:45:50-07:00 done  jinglin-ai-pulse (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-09-15T02:45:50-07:00 FAILED: no usable output for jinglin-ai-pulse after all retries ===
+=== 2026-09-15T09:43:30-07:00 start jinglin-ai-pulse ===
+Episode published (batch mode — script + stubs written, orchestrator will do TTS, R2, feed, and commit).
+
+**Script:** `podcasts/jinglin-ai-pulse/scripts/2026-09-15-the-human-seed-still-matters.md` — 2,420 spoken words, ~13 min. Stubs written: `.rss-item.xml` (XML validated, `__LENGTH__`/`__DURATION__` placeholders intact) and `.commit-msg`. No `gen_tts.py`, no `publish_episode.sh`, no `feed.xml` edit, no commit — `SKIP_TTS=1` was set.
+
+**Through-line:** four RSI papers landed on arXiv the same day (Sep 14) while a safety lab opened a platform for handing real companies to agents — and the two best-resourced sources both report that the human contribution has concentrated into *choosing* rather than *generating*.
+
+**Candidate funnel**
+
+Sources scanned:
+- **Hacker News front page** (90 stories via Firebase API) — ~14 AI-relevant, 5 substantive
+- **Hugging Face daily papers** (40 items) — 4 survived as a same-day convergence cluster
+- **TechCrunch AI category** (33 headlines, Sep 10–15) — 6 relevant, 2 used
+- **Substack archives** (Latent Space, Interconnects) — 1 in-window Deep Cut
+- **X/Twitter** — unreadable from this host (xcancel suspended, and its own suspension notice was the #1 HN story at 737 points); substituted HN + HF convergence per standing practice. @Zefan_Cai feed not retrievable.
+
+Shortlist:
+- ★ **Pion, an agent to run any company autonomously** — Andon Labs, 470 pts / 567 comments — https://andonlabs.com/blog/why-we-built-pion
+- ★ **Atria Dawn: The Dawn of Agentic Superintelligence** — 364 HF upvotes, 143 authors, Fudan-led — https://arxiv.org/abs/2609.15818
+- ★ **Dream-RSI** — 253 HF upvotes — https://arxiv.org/abs/2609.14858
+- ★ **RSIAgent** — https://arxiv.org/abs/2609.15364
+- ★ **AIUC $40M Series A** (Kvist/Dattani, SOC-2-for-agents) — https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/
+- ★ **Salesforce/Nvidia Koa** — brief mention — https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/
+- ★ **Latent Space: Richard Socher of Recursive** (92 min, full transcript) — https://www.latent.space/p/recursive
+- Discovery Foundation Models — https://arxiv.org/abs/2609.15973 — cited in funnel, cut from script for length
+- "Dario, Please" (594 pts) + Wired on slowdown legality + Huang's "we're not going to let it happen" — **dropped**, the Dario pacing debate ran on 09-13 and 09-14
+- OpenAI buys Glass Imaging, $300M (110 pts) — **dropped**, camera acquisition with no strategic read for this audience
+- Sakana predictive-coding backprop alternative (113 pts) — **dropped**, belongs in Ollie's papers show
+- "A beginning for mathematics" (Daniel Litt, 263 pts) — **dropped**, math/AI saga covered 09-09 and 09-12
+- MIT Tech Review "RSI might not come so quickly" — cited as context only; Aug 18 piece, outside the news window
+
+Two notes for the record: **`r.jina.ai` is TLS-intercepted on this network today** (cert served is `*.scripps.edu`), so every jina full-text route was dead — direct `curl` with a Safari UA carried the whole run. And full text was read for all picks: Pion post, Atria Dawn PDF via `mutool` (the decision-attribution numbers in the script come from §4, not the abstract), and the Socher transcript.
+=== 2026-09-15T09:55:43-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-16T02:30:10-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so I stopped at the script plus the two stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written** (all under `podcasts/jinglin-ai-pulse/scripts/`):
+- `2026-09-16-the-freedom-they-gave-up.md` — 2,571 spoken words (≈12.7 min at the show's 1.2× rate; in line with the last five episodes' 2,330–2,540)
+- `2026-09-16-the-freedom-they-gave-up.rss-item.xml` — validated as XML, `__LENGTH__`/`__DURATION__` placeholders intact
+- `2026-09-16-the-freedom-they-gave-up.commit-msg`
+
+**Episode:** theme is constraint — who sells it, who pays for it, what it buys. Twitter Pulse leads on TypeSafe AI's System One model Jev (the day's top AI story) and the 390-comment thread fighting it, paired against Jay Kruer's "bearish after Navier-Stokes" essay that reaches the opposite prescription from the same diagnosis, plus a Johns Hopkins continual-learning result where composition beat scale. Money Moves: Profound's $180M at $1.8B, OpenAI–Glass Imaging, and Hugging Face's $100M compute demand. Deep Cut: Alex Duffy on Latent Space — identical railroad game, two training designs, only the terminal-agent one transferred to finance.
+
+**Candidate funnel**
+
+- **Hacker News** (front page + Algolia `search_by_date`, last 36h, points>50): 60 stories scanned, 14 AI-relevant, 5 shortlisted. Pulled the full 389-comment tree via `/api/v1/items/` for verbatim quotes rather than a summarizer.
+  - ✅ Introducing System One Models and Jev (1,367 pts / 390 c) — https://news.ycombinator.com/item?id=49717558 — **CHOSEN, lead**
+  - ✅ Why I'm still bearish on LLMs after Navier-Stokes (223 / 243) — https://news.ycombinator.com/item?id=49715927 — **CHOSEN**
+  - ✅ Hugging Face is billing OpenAI $100M for hacking it (144 / 49) — **CHOSEN, short beat**
+  - ⬜ Gemini 3.8 Live (409 / 265) — product launch, no new argument; dropped per PROMPT's "avoid generic launches"
+  - ⬜ We got admin access to Baseten's production GitHub (275 / 153) — off-theme; Baseten already appeared 09-12
+  - ⬜ Google copied our open-source code, removed engineers' names (131 / 13) — research-ethics, thin primary source
+  - ⬜ Anthropic co-founder on mandatory kill switches, BBC (56 / 115) — covered ground
+- **Hugging Face daily papers** (09-15 and 09-16): 20 scanned, 6 substantive, 4 already shipped yesterday (Atria Dawn, Dream-RSI, RSIAgent, Discovery Foundation Models).
+  - ✅ Continual Learning Mechanisms Compose for Long-Horizon Memorization (273 up) — https://arxiv.org/abs/2609.06986 — **CHOSEN, short beat**
+  - ⬜ The Last AI Built by Humans (47 up) — RSI was yesterday's whole theme; rehash
+  - ⬜ StepAudio 3 Realtime / Music (StepFun, 30 + 20 up) — held; the Think-While-Speaking latency trade fits the theme but the episode was already over budget
+  - ⬜ AI for Games in the Foundation Model Era (86 up) — survey, weaker than the Good Start Labs interview on the same subject
+- **Business/funding press** (TechCrunch AI + funding tag, WebSearch across Fortune/CNBC/FinSMEs, last 7d): 12 items scanned, 4 fresh.
+  - ✅ Profound, $180M Series D at $1.8B (Sep 15) — **CHOSEN**
+  - ✅ OpenAI buys Glass Imaging, >$300M (Sep 14, WSJ-sourced) — **CHOSEN**
+  - ⬜ CADDi $114M at $1.2B (Sep 15) — manufacturing AI, off-audience
+  - ⬜ Superhuman acquires Fathom (Sep 14) — productivity tooling, no strategic signal
+- **Long-form podcasts** (Dwarkesh, Latent Space, Interconnects, TWIML, MLST, Cognitive Revolution archives): 18 recent items scanned; the 7 strongest were already used 09-02 through 09-15.
+  - ✅ Latent Space, Alex Duffy / Good Start Labs (Sep 15) — **CHOSEN, Deep Cut**. Flagging honestly: this is a written Latent Space interview, not an audio episode, and the script presents it that way.
+  - ⬜ Dwarkesh, Schulman/Millidge/O'Neill on RSI (Sep 11) — already used 09-12
+  - ⬜ Cognitive Revolution, Anton Leicht on AI politics — viable but off today's theme
+- **X/Twitter**: not sourced directly — unreadable from this host (x.com needs auth, xcancel serves a browser challenge). Twitter Pulse was built from HN, HF daily papers, and primary vendor/author documents, per the standing workaround.
+- **`r.jina.ai`**: unavailable all run — TLS-intercepted on the Scripps network (cert presents `*.scripps.edu`), so curl and WebFetch both fail. Routed around it with direct `curl` under a Safari UA plus local HTML-to-text extraction; no source was lost to this.
+
+All 12 cited URLs were HTTP-verified (200 after redirects) before the script was finalized, including the community `Qwen-2.5-1B-RLCD` repo referenced in the wrap.
+
+One memory file updated: the HN reference note now records that `hn.algolia.com/api/v1/items/<id>` returns the whole comment tree (the reason today's quotes are verbatim rather than paraphrased), and that `search_by_date` needs `--data-urlencode` or it returns a non-JSON body.
+=== 2026-09-16T02:43:26-07:00 done  jinglin-ai-pulse (exit 0) ===
