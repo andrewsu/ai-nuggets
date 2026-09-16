@@ -4527,3 +4527,83 @@ Failed to authenticate: OAuth session expired and could not be refreshed
 Failed to authenticate: OAuth session expired and could not be refreshed
 === 2026-09-15T02:15:51-07:00 done  biomedical-agentic-ai (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-09-15T02:15:51-07:00 FAILED: no usable output for biomedical-agentic-ai after all retries ===
+=== 2026-09-15T09:13:30-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1`, so I wrote the script plus the two transient stubs and left TTS, R2 publish, feed edit, and the commit to `publish_pending.py`.
+
+**Published:** `2026-09-15-virtuous-machines-human-participant-study` — *Virtuous Machines — an agent stack recruits 288 humans, runs the study, and writes the paper* (929 spoken words, under the 1150 cap)
+
+**Pick:** "Closing the Empirical Loop: Autonomous AI Agents Conduct End-to-end Research With Human Participants," *Advanced Science*, published online 2026-09-14 (DOI 10.1002/advs.76675), from Explore Science, Brisbane + University of Queensland / QBI / Sydney. Full text read in full via Europe PMC `fullTextXML` (226 KB, complete Methods + Results + Discussion).
+
+The take centers on two things the abstract doesn't lead with: the pre-registration check (the system had to commit to hypotheses before data access, and they were mostly violated — a cheap, hard-to-game test against confabulation), and the anchoring failure mode (front-of-pipeline conceptual errors propagate and never get reversed, so oversight belongs in the first hour, not over the draft). It also flags the caveat the abstract soft-pedals: three studies, one data collection — Studies 2 and 3 computed their own sample sizes of 120 and 566, then analyzed Study 1's 277 datasets anyway.
+
+## Candidate funnel
+
+**Source outcomes**
+- **bioRxiv** — 558 records swept day-by-day 09-12→09-15 (122/112/243/81, paginated at 30/page); 390 unique v1 in-window; 34 keyword hits; 4 substantive after discarding spurious matches ("chemical agent", "llm" inside words, `ontolog` in a paleontology title).
+- **medRxiv** — 162 records swept; 142 unique v1 in-window; 10 keyword hits, 1 substantive.
+- **PubMed** — 1,365 matches on the term query, 400 fetched and parsed; 42 keyword hits; 5 substantive. **1 chosen.**
+- **arXiv — FAILED.** Shared cache `/tmp/ai-nuggets-arxiv-cache.xml` absent. Three live calls to `export.arxiv.org` at 0s / +200s / +500s all returned the 14-byte HTTP 200 `Rate exceeded.` body. `site:arxiv.org` WebSearch fallback returned only papers indexed weeks-to-months earlier — nothing in the 4-day window. arXiv contributed zero candidates today.
+- **ChemRxiv** — `site:chemrxiv.org` search returned nothing inside the 4-day window (newest hit 2026-04-06).
+- **News / product launches** — nothing on-target in the 3-day window.
+- **Funder pages** — ARPA-H 200 (newest in-window item is a 09-14 cancer impact story, not agentic AI); NSF 200 (09-14 $20M deep-tech commercialization pilot, off-target); **NIH press 403** from this IP. No program launches qualified.
+- **Infrastructure note:** `r.jina.ai` is TLS-intercepted on this network (resolves to private 172.29.200.35, serves a `*.scripps.edu` cert), killing every jina full-text route for a second consecutive day.
+
+**Shortlist**
+- ✅ **CHOSEN** — Closing the Empirical Loop: Autonomous AI Agents Conduct End-to-end Research With Human Participants — https://pmc.ncbi.nlm.nih.gov/articles/PMC13573717/
+- Agentic-AI-ready genome-wide poxvirus-host interaction screen (ICARus), `10.64898/2026.09.10.750412` — **DEFERRED, full text unavailable.** `.full` HTML: clean 200 / 82 KB but abstract-only (render lag, posted 09-13). `.full.pdf` direct curl: 17-byte 429 on 5 spaced attempts. jina route dead. Second day deferred; retest when jina egress returns.
+- Iterative Gene Enrichment Analysis (iGEA), `10.64898/2026.09.06.749570` — deferred, same channel outage; lower priority.
+- Computable longitudinal patient journeys from structured and unstructured EHR data, Nature Medicine, `10.1038/s41591-026-04695-x` (online 09-10) — strongly on-brief (LLM extraction → ontology-embedded KG → agentic query interface) but **ineligible: full text permanently unobtainable.** `idp.nature.com` 303 auth wall, Safari-UA curl returns abstract + author info only, no license, no preprint exists.
+- miRAssist, `10.64898/2026.09.10.750642` — LLM interface is a thin wrapper on a random-forest scorer; weaker.
+- Hybrid lexical-semantic retrieval over SNOMED CT, `10.64898/2026.09.10.26362796` (medRxiv) — on the ontology beat but not agentic, and adjacent to LabBridge (08-25) and OntologyBench (09-09).
+- Multi-Agent collaboration for AI-generated medical examination items, npj Digital Medicine `10.1038/s41746-026-03187-z` — a 2-page commentary, not a study.
+
+Dedup-checked every shortlisted item against all 08/09 episode paper links and script text (`prolific`, `advs.`, `Virtuous Machines`, `Explore Science`, `mental rotation` — all clean). Two memory files updated with today's fetch-channel findings.
+=== 2026-09-15T09:26:31-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-16T02:00:10-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Files written:**
+- `podcasts/biomedical-agentic-ai/scripts/2026-09-16-heartvar-constrained-llm-variant-curation.md` (979 spoken words, cap 1150)
+- `…rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…commit-msg`
+
+**Pick:** HeartVar — *An LLM-Assisted Tool for Clinical Classification of Variants in Cardiovascular Disease Cohorts* (bioRxiv v1, posted 2026-09-15), Victor Chang Cardiac Research Institute. Full text read via the PDF route (24 pages, 52 KB of extracted body). The take: 19 of the 28 ACMG criteria computed deterministically before the model sees anything, exactly 7 judgment criteria handed to the LLM, tier assigned by the server — plus the benchmark-reading lesson that GeneBe's 58% concordance is largely answer-key leakage via PP5/BP6, which HeartVar excludes (precision 72% vs 39%).
+
+---
+
+## Candidate funnel — 2026-09-16
+
+**bioRxiv** (details API, day-by-day 09-13→09-16, 595 entries fetched, 53 keyword hits, ~7 substantive after discarding "chemical/therapeutic agent" and "LLM"-in-word matches):
+- **HeartVar: An LLM-Assisted Tool for Clinical Classification of Variants in Cardiovascular Disease Cohorts** — https://www.biorxiv.org/content/10.64898/2026.09.10.750569v1 — **CHOSEN**
+- Agentic-AI-ready genome-wide poxvirus-host interaction screen refined by a protein language model — `10.64898/2026.09.10.750412` — *deferred, full text unavailable* (`.full` HTML returned the 17-byte 429 on this article; same DOI also failed 09-15 per prior run)
+- Iterative Gene Enrichment Analysis (iGEA) — `10.64898/2026.09.06.749570` — LLM-assisted exploration is downstream of the real contribution
+- Large Language Models Predict Human Social Behavior via Interpretable Mechanisms (MindEvolve) — `10.64898/2026.09.06.749667` — cognitive science, not biomedical
+- miRAssist — `10.64898/2026.09.10.750642` — LLM is a query interface bolted onto a random forest
+- Heterogeneous GNN + prior knowledge for TNBC drug repurposing (PRECISION) — `10.64898/2026.09.08.750045` — KG-flavored but no LLM/agent
+- SemVac (LLM-powered antigen discovery) — `10.64898/2026.07.13.737696` — **out of window**, v2 version bump on a July 13 preprint
+
+**arXiv** (shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries = 09-13→09-15 only, 09-13 truncated by the 500-entry cap; 444 bio-relevant, 37 after requiring biomed core + agentic signal):
+- Biomedical Reference Generation Remains Unreliable across 26 Large Language Models — https://arxiv.org/abs/2609.14988 — **runner-up, full text read**; 24,518 responses, 55.4% fabricated, verifiability ≠ accuracy. Lost on being an audit of LLMs rather than agentic biomedical work
+- HypoEvolve: Genetic Algorithms Enable Multi-Agent LLMs to Discover Scientific Hypotheses — https://arxiv.org/abs/2609.15938 — full text read; strong, but HypoKG shipped 09-14 and AutoScreen 09-13
+- EvoOntology: A Self-Evolving Ontology Layer for Data Agents — https://arxiv.org/abs/2609.15779 — full text read; ontology-as-MCP-server is on-brief, evaluation is non-biomedical
+- Symbolic Separation: Grounding Deep Agents in Knowledge Graphs — https://arxiv.org/abs/2609.17107 — full text read; 43%→86% on real DB questions, but domain is datacenter telemetry
+- Discovery Foundation Models (Zetema/GALILEO) — https://arxiv.org/abs/2609.15973 — position paper
+- ScienceBuddy — https://arxiv.org/abs/2609.17523 — product release, four task families, thin on results
+- Also shortlisted, not opened: scKITE (`2609.14970`), EMR (`2609.15161`), SeqMaestro (`2609.14882`), CLEAR (`2609.16301`), MedTRACE (`2609.14823`), Four Ledgers (`2609.15015`)
+
+**PubMed** (E-utilities, `reldate=5`, 1,186 hits, 300 fetched, 45 after relevance filter; dates read from `history[].pubmed`, not `pubdate`):
+- Unifying temporal knowledge graph and LLMs for biomedical hypothesis generation — J Biomed Inform, 09-15 — thematically crowded against HypoKG
+- Real-World Use of Controlled Terminologies, Ontologies, and Vocabularies for Evidence Generation — JMIR Med Inform, 09-15 — survey, no system
+- AI Agents for Multimodal Oncology Diagnosis — JMIR Cancer, 09-15
+- CPS-Net decentralized multi-agent transformer — J Med Syst, 09-15
+- Multi-agent collaboration for AI-generated medical exam items — npj Digit Med, 09-15
+- Closing the Empirical Loop (Advanced Science, 09-14) — **excluded, shipped 2026-09-15** as "Virtuous Machines"
+
+**ChemRxiv** — WebSearch `site:chemrxiv.org` + agent keywords: 0 items in the 4-day window (newest relevant hits are March/July 2026).
+
+**News / product launches (3-day window)** — no in-window on-target item. Searches surfaced only the Nature Biotech perspective, NVIDIA GTC/BIO USA coverage, and IQVIA.ai, all well outside 09-13→09-16.
+
+**Policy / funders** — ARPA-H news: ADVOCATE (clinical AI for cardiovascular, 09-09) and GIVE (09-01) both out of the 3-day window. NIH news-releases page **HTTP 403 from this host** — one source failed, proceeded per PIPELINE.md. NSF/HHS not reached after NIH 403; noted as a gap.
+
+**Infrastructure note:** `r.jina.ai` is TLS-intercepted on this network again (cert `*.scripps.edu`), so every jina full-text route was unavailable. Direct `curl` with a Safari UA on `<id>v1.full.pdf` + `mutool draw -F txt` worked first try and carried the episode — this contradicts yesterday's conclusion that an unrendered preprint has no rescue path with jina down; memory updated.
+=== 2026-09-16T02:11:08-07:00 done  biomedical-agentic-ai (exit 0) ===
