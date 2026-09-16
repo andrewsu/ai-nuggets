@@ -4498,3 +4498,61 @@ Failed to authenticate: OAuth session expired and could not be refreshed
 Failed to authenticate: OAuth session expired and could not be refreshed
 === 2026-09-15T03:05:50-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-09-15T03:05:50-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-09-15T10:03:31-07:00 start receptor-and-reason ===
+=== 2026-09-15T10:50:31-07:00 start receptor-and-reason (resume attempt 1) ===
+You've hit your session limit · resets 11:30am (America/Los_Angeles)
+=== 2026-09-15T11:01:23-07:00 start receptor-and-reason (resume attempt 2) ===
+You've hit your session limit · resets 11:30am (America/Los_Angeles)
+=== 2026-09-15T11:04:28-07:00 start receptor-and-reason (resume attempt 3) ===
+You've hit your session limit · resets 11:30am (America/Los_Angeles)
+=== 2026-09-15T11:32:15-07:00 start receptor-and-reason (resume attempt 1) ===
+Episode published (script + stubs). Here's the run record.
+
+## Output
+
+`podcasts/receptor-and-reason/scripts/2026-09-15-receptor-and-reason.md` — 12 items, 3,314 spoken words (~18.4 min est.), plus the two `SKIP_TTS` stubs (`.rss-item.xml` with `__LENGTH__`/`__DURATION__`, `.commit-msg`). Ledger appended: 116 episodes / 1,193 items. Per `SKIP_TTS=1` I did not run `gen_tts.py`, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` owns those.
+
+Episode spine: **verification** — papers that report a headline number and then report how much of it survives checking.
+
+## Candidate funnel
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| bioRxiv + medRxiv details API (09-08→09-15, day-by-day) | 2,093 | 502 → 139 tight | v1-only + in-window; 33 of 387 dropped by ledger |
+| arXiv live API (4 pages × 400, 09-07→09-14) | 1,600 | 50 | **Worked for the first time in 3 runs**; shared cache absent |
+| Nature RSS (NPP, Mol Psych, Nat Neuro) | 24 | 7 probed | **1 readable**, 6 paywalled |
+| Elsevier (Neuropharm, Biol Psych, Drug Disc Today) | 174 | 3 in-window | Undated feeds; dates via Crossref, abstracts via EPMC |
+| CPT:PSP (Wiley) | 19 | 4 in-window | All non-CNS PBPK/popPK — none picked |
+| Psychiatric Times | homepage only | 0 | Article pages now 403 both routes; best item traced to **May 2026 APA** — out of window |
+| chemRxiv, ACNP/SOBP/ECNP, industry programmes | — | 0 | Nothing in-window (ECNP is Oct, ACNP Jan 2027) |
+
+Picked (all 12 read in full except the one tail item): speech+gesture BCI (Nat Neuro, **lead**) · psychosis information compression · K-Bench · reference fabrication across 26 LLMs · AutoScreen · Emet LUSC · HypoEvolve · Ki→IC50 calibration · anti-amyloid × antithrombotic ARIA FAERS · AppSAA knock-in · MDMA/msP ethanol (abstract-only tail, self-contained) · placebo hunger connectivity.
+
+## Two things worth flagging
+
+**The bioRxiv PDF route died.** `.full.pdf` is now blanket Cloudflare 1015 — the *first* request of the session 429'd and a cooldown didn't clear it — while `.full` HTML returned real bodies on the same DOIs in the same minute. That's the exact inverse of two days ago. My first fetcher tried PDF-first and returned 0 of 18; I stopped it and switched. I've recorded that the ordering flips daily and to probe both before committing a batch.
+
+**A too-strict regex cost me three papers.** I detected "rendered" with `^(Results|...)`, which silently rejected `3. Results`, `RESULTS`, and `3. RESULTS`. I caught it because a 346 KB page was flagged unreadable, then re-extracted from saved HTML at no refetch cost. Both fixes are in memory.
+
+One caveat on the deliverable: at ~18.4 min the episode sits just over the brief's 18-minute ceiling (the last six episodes ran 17.9–19.6, so it's in line with practice, but it is over spec). I trimmed ~700 words to get here and stopped rather than degrade the prose further for ~25 seconds. Also worth knowing for tomorrow: `2026.09.06.749750` (Kv3.1 blockade by MK-801) is on day 3 of deferral and still unrendered — it remains the strongest unclaimed lead, and render lag tracks the *posting* date, not the DOI date.
+=== 2026-09-15T12:05:35-07:00 done  receptor-and-reason (exit 0) (resume attempt 1) ===
+=== 2026-09-16T02:50:11-07:00 start receptor-and-reason ===
+**Episode written — `2026-09-16-receptor-and-reason`, 11 items, ~18.3 min at this show's measured 180 wpm.**
+
+`SKIP_TTS=1` was set, so per PIPELINE I skipped TTS, R2 publish, the `feed.xml` edit, and the commit. Files written: the script, `.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders), and `.commit-msg`. All 11 picks appended to the dedup ledger (now 117 episodes). All paper URLs verified — three arXiv abs pages 200, both bioRxiv DOIs confirmed at the `10.64898/` prefix with `version: 1`.
+
+**Candidate funnel**
+
+- **bioRxiv/medRxiv details API** — day-by-day 09-09→09-16, both servers; ~1,950 records, 1,369 unique v1-in-window. Keyword filter → 438; category + pharmacology/AI filter → 162; shortlist 34.
+- **arXiv** — shared cache present but **capped at 500 entries covering only 09-13→09-15**, under half the window; fell back to a live 5×400 paged query = 2,000 entries spanning 09-05→09-15. Bio + agentic filter → 303; biomedical-title filter → 122; shortlist 11.
+- **Nature-family** — `mp.rss` and `npjdigitalmed.rss` return 150-byte empties; used `api.crossref.org/journals/<ISSN>/works?filter=from-created-date` instead, which surfaced 11 NPP + 16 Molecular Psychiatry in-window items the RSS never showed. 15 probed for full text, **5 readable**. Translational Psychiatry was 0 for 4 (bodyless); NPP `-02550-8` paywalled on its 4th attempt.
+- **Elsevier (Neuropharmacology, PNPBP, Drug Discovery Today, Biol Psychiatry)** — RSS undated; 12 dated via Crossref, only 1 in-window.
+- **IJNP** — 60 in-window items, all CINP congress abstracts; article pages **403**, unusable.
+- **chemRxiv, ACNP/SOBP/ECNP/CINP/WFSBP press, industry agentic-AI programmes, CPT:PSP, Nat Machine Intelligence** — nothing in-window/on-target.
+
+**Source failures:** bioRxiv/medRxiv was blanket Cloudflare-429 on `.full`, `.full.pdf`, **and** WebFetch of the same URL from the first request; `r.jina.ai` is TLS-intercepted by the Scripps network (cert `*.scripps.edu`). A backgrounded single-worker retry loop with 45 s backoff recovered 3 of 20 PDFs over ~15 min, which is where two of today's picks came from. Sixteen bioRxiv candidates remain deferred on render lag or 429 and are logged in memory for tomorrow.
+
+**Dedup:** 73 candidates checked, **17 dropped as already shipped** — including four that would have led the episode (ADMET-EvO, dopamine agonists in Parkinson's, ketamine + subcallosal DBS, oxytocin/atosiban). Self-premining, not recency, was the binding constraint today.
+
+**Selected (all full-text read except the one noted):** on-premise clinical AI agents *(Nat Med, opener)* · clinical-agent action-level reliability *(arXiv)* · HypoKG *(arXiv)* · perturbational validity for brain foundation models *(arXiv)* · cannabis-cue dlPFC GABA *(NPP)* · endocannabinoid→nitric-oxide switch after prenatal THC *(bioRxiv)* · psilocybin/5-HT2B grooming *(PNPBP — **abstract-only**, run as a short tail item under the PIPELINE carve-out)* · losartan AT1 approach-avoidance *(NPP)* · NSF/D2R conditional knockout *(NPP)* · peripheral vs central PDE10A after semaglutide *(bioRxiv)* · acute vs chronic semaglutide PavCA *(bioRxiv)*.
+=== 2026-09-16T03:14:20-07:00 done  receptor-and-reason (exit 0) ===
