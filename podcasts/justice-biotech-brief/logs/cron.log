@@ -3196,3 +3196,69 @@ Failed to authenticate: OAuth session expired and could not be refreshed
 Failed to authenticate: OAuth session expired and could not be refreshed
 === 2026-09-15T02:55:50-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-09-15T02:55:50-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
+=== 2026-09-15T09:53:31-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md batch mode I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after the batch TTS job.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-09-15-chimagen-myeloma-trispecific-tce-gsk-750m.md` (1,420 spoken words)
+- `…rss-item.xml` (validates as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…commit-msg`
+
+**Pick:** GSK acquiring a preclinical trispecific T cell engager for multiple myeloma from Chimagen Biosciences — undisclosed upfront, up to $750M total, Phase 1 in 2027, **targets not disclosed**. Announced today 07:03 ET. Read the GSK press release in full plus the ASH 2020 primary abstract on Chimagen's TRIAD platform and the J&J JNJ-5322 Phase 1 release for the competitive benchmark.
+
+---
+
+## Candidate funnel — 2026-09-15
+
+**Source health:** `r.jina.ai` TLS-intercepted by the Scripps network (cert `*.scripps.edu`) — checked first, so the entire jina channel class was skipped rather than retried. Direct browser-UA curl carried the run: BioSpace 200, BioPharma Dive 200, Fierce Biotech index 200 (article bodies still 403), Fierce Pharma 200, Endpoints index 200 (bodies paywalled), gsk.com PR 200/474 KB. `nih.gov` news-releases **403** — only source-side gap, low relevance for this show. ARPA-H 200, NSF 200. api.biorxiv.org healthy.
+
+**bioRxiv** (09-13 / 09-14 / 09-15, full paginated sweep): 437 unique records (112 / 243 / 82) → 15 keyword hits → **0 on-target**. All spurious: `checkpoint` in adjacent basic immunology, `JAK2` in an MPN nanoparticle paper, `VEGF` in acute lung injury, `CD3` as an IHC marker. Nearest misses (γδCAR-T in ovarian ascites `10.64898/2026.09.08.749386`; closed automated CAR-T manufacturing `10.64898/2026.09.08.748871`) are adjacent, not TCE/ADC/bispecific. No new deferrals opened; deferral list remains closed.
+
+**News / press** — substantive shortlist, all 09-14/09-15:
+- ✅ **CHOSEN** — GSK acquires Chimagen trispecific TCE for myeloma, up to $750M — `gsk.com/en-gb/media/press-releases/gsk-to-acquire-potential-best-in-class-t-cell-engager-tce-for-multiple-myeloma-from-chimagen-biosciences/`
+- WCLC '26 ADC round-up / AstraZeneca spotlight — `biopharmadive.com/news/wclc-2026-adc-b7h3-china-study-results-astrazeneca/830247/` — WCLC already covered 09-13 and 09-14
+- Summit/Akeso ivonescimab WCLC survival — `biopharmadive.com/news/summit-akeso-wclc-2026-ivonescimab-lung-cancer-survival/830318/` — **dup**, shipped 09-03 and 09-13
+- BioNTech gotistobart survival ahead of pivotal — `endpoints.news/...` — **dup**, shipped 09-14
+- TwoStep $62.5M for an ADC twist — `endpoints.news/cancer-biotech-twostep-gets-62-5m-...` — **dup**, shipped 09-10
+- Cellectis quits CAR-T for in vivo editing — `biopharmadive.com/news/cellectis-restructure-in-vivo-gene-editing-allogeneic-heart-disease/830281` — on-adjacent, no data
+- Connect Biopharma IL-4/IL-13 misses Phase 2 asthma — `fiercebiotech.com` — autoimmune biologic, but a mid-stage miss with no mechanism angle
+- Cullinan/Taiho press ahead with filing despite 3 deaths — small-molecule, off-target for this show
+
+**Funder pages:** ARPA-H newest 09-14 (cancer impact story, no award/program news); NSF 09-14 ($20M SBIR deep-tech commercialization pilot) — neither on-target.
+
+**Why the pick beat the field:** trispecific T cell engagers are an explicit stated interest, this is a same-day primary-source announcement with no prior coverage in the feed, and it sits directly on top of two episodes Justice heard in the last two weeks (SIM0660 trispecific 09-02, etentamig's attenuated CD3 arm 09-04) — which is what let the episode argue that GSK bought the CD3 attenuation, not the third specificity.
+=== 2026-09-15T10:04:32-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-16T02:40:11-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md batch mode I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after the batch TTS job. (Note: 09-15's stubs are also still pending, so the batch has two episodes to clear.)
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-09-16-il2it-ose-targeted-bispecific-il2-treg-engager.md` (1,466 spoken words; no markdown/URLs/DOIs in the spoken body)
+- `…rss-item.xml` (validates as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…commit-msg`
+
+**Pick:** `10.64898/2026.09.10.750022` — Klatzmann (Sorbonne) with Binder (Vienna) and Mallat, **inflammation-targeted bispecific IL-2**: wild-type IL-2 dimerized on a C4BPβ fragment plus an scFv against oxidation-specific epitopes. Read in full (37-page PDF, 12,795 words, Results + Discussion + Methods). Independently verified the three external claims the script leans on — efavaleukin alfa's futility terminations, LUPIL-2's missed ITT primary, and rezpegaldesleukin's Phase 2b results.
+
+---
+
+## Candidate funnel — 2026-09-16
+
+**Source health:** `r.jina.ai` **still TLS-intercepted** by the Scripps network (cert `*.scripps.edu`) — and confirmed today that **WebFetch fails the same way**, so the entire jina channel class was unavailable, not just curl. Worked around by fetching bioRxiv `.full.pdf` with a Safari UA and extracting with `mutool`: the 17-byte 429 hit twice, then **200 / 7.3 MB on attempt 3**. `nih.gov/news-events/news-releases` **403** (only source-side gap; low relevance here). GlobeNewswire keyword search **curl 000** on all three queries, with no jina fallback available — real recall gap today. Fierce Biotech/Pharma RSS, Endpoints RSS, BioPharma Dive, BioSpace, ARPA-H, NSF all 200. api.biorxiv.org healthy.
+
+**bioRxiv** (09-14 / 09-15 / 09-16, full paginated sweep, day-by-day): 483 unique DOI+version records (243 / 221 / 19) → 29 keyword hits → **1 on-target**. Shortlist after discarding spurious matches (`nectin` inside "connective"/"nectin" substrings, `JAK2` in an MPN liposome paper, `VEGF` in acute lung injury, `CD3` as an IHC marker, `TCR` inside "sTCR"/plant-genome noise):
+- ✅ **CHOSEN** — Targeting IL-2 to inflamed tissues via oxidation-specific epitopes enables third-generation bispecific IL-2 therapeutics — `biorxiv.org/content/10.64898/2026.09.10.750022v1` (v1, posted 09-15; note the DOI slug reads 09-10)
+- Patient-derived ascites reveals functional advantages of γδCAR T-cells in the ovarian TME — `10.64898/2026.09.08.749386` — adjacent, and 09-14 (already surveyed yesterday)
+- Closed, automated CAR-T manufacturing, research to point of care — `10.64898/2026.09.08.748871` — process engineering, no therapeutic claim; 09-14
+- Melanoma suppresses the galectin-9–glycan axis in DCs, limiting Treg expansion — `10.64898/2026.09.09.749950` — basic tumor immunology, no modality angle
+- Patient-derived monoclonal anti-HPA-1a activates platelets through FcγRIIa — `10.64898/2026.09.10.750554` — `bispecific` was a spurious hit; alloimmune, not a biologic program
+
+**News / press** — window is 09-15 from ~11:00 ET (where yesterday's 09:53 run stopped) through 02:40 PDT today, which is thin by construction. Everything net-new was off-target: FDA's Operation Trialblazer Phase 1 pilot, first radioligand generic, Sionna layoffs, Axoltis ALS miss, Klomp/Warren MFN hearing, GSK's German vaccine site, Centric recall, BioMarin/Voxzogo, Sanofi–Cheplapharm. Two on-adjacent items from earlier on 09-15 that yesterday's run did not take:
+- RegCell, $66M to take Nobel-winning Tregs into the clinic — `endpoints.news/regcell-lands-44m-series-a-to-take-nobel-winning-tregs-into-clinic/` — a financing with no data; the bioRxiv pick covers the same Treg-augmentation thesis with a mechanism
+- Vera eyes full approval for Trutakna in IgAN — `endpoints.news/vera-eyes-full-approval-for-trutakna-in-igan-following-positive-readout/` — autoimmune biologic, but a confirmatory readout on an already-approved drug
+- GSK/Chimagen trispecific — **dup**, shipped 09-15
+
+**Funder pages:** ARPA-H newest 09-14, NSF newest 09-14 — both out of window and both already checked yesterday. NIH 403.
+
+**Deferrals:** endothelin-receptor-blockade + adoptive T cell/CAR-T (`10.64898/2026.09.02.748239`, opened 09-07) **still deferred** — `.full.pdf` returned the 17-byte 429 on all 4 attempts today. This is a sticky per-DOI throttle rather than render lag, since a sibling preprint's PDF came back 200 in the same session. Window closes ~09-21; one more attempt before closing.
+
+**Why the pick beat the field:** it's the only in-window item that is simultaneously on an explicit stated interest (autoimmune biologics, bispecifics), fully readable, and carrying a result that changes how to think about the class — plain systemic IL-2 made imiquimod psoriasis *worse* than no treatment while the OSE-targeted construct halved it, which reframes a decade of IL-2 mutein failures as a spatial problem rather than a dose-response one. It also sits directly on top of the 09-01 autoimmune CAR-T halt episode as the augmentation-branch counterpart to that toxicity ceiling, and the buried residue in the AlphaFold3 close-state model is V91 — the exact residue efavaleukin alfa mutates.
+=== 2026-09-16T02:52:59-07:00 done  justice-biotech-brief (exit 0) ===
