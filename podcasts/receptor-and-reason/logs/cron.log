@@ -4556,3 +4556,24 @@ One caveat on the deliverable: at ~18.4 min the episode sits just over the brief
 
 **Selected (all full-text read except the one noted):** on-premise clinical AI agents *(Nat Med, opener)* · clinical-agent action-level reliability *(arXiv)* · HypoKG *(arXiv)* · perturbational validity for brain foundation models *(arXiv)* · cannabis-cue dlPFC GABA *(NPP)* · endocannabinoid→nitric-oxide switch after prenatal THC *(bioRxiv)* · psilocybin/5-HT2B grooming *(PNPBP — **abstract-only**, run as a short tail item under the PIPELINE carve-out)* · losartan AT1 approach-avoidance *(NPP)* · NSF/D2R conditional knockout *(NPP)* · peripheral vs central PDE10A after semaglutide *(bioRxiv)* · acute vs chronic semaglutide PavCA *(bioRxiv)*.
 === 2026-09-16T03:14:20-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-17T02:50:11-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE batch mode I wrote the script plus the two transient stubs and left TTS, R2 publish, feed edit, and the commit to `publish_pending.py`.
+
+**Published:** `podcasts/receptor-and-reason/scripts/2026-09-17-receptor-and-reason.md` — 12 items, ~2,935 spoken words (≈16 min at the show's measured rate), plus `.rss-item.xml` (validated as XML with the itunes namespace) and `.commit-msg`. Ledger appended: 118 episodes, 1,216 items.
+
+## Candidate funnel
+
+**bioRxiv** (details API, day-by-day 09-10…09-17, threaded 16 workers) — 1,188 items swept across 7 day-files; 09-10 never returned after 8 retries (**gap: bioRxiv 09-10 missing**). ~110 survived the CNS-pharm/agentic-AI title filter.
+**medRxiv** — 469 items across 7 days; 09-17 genuinely empty (nothing posted by 3am). ~120 survived.
+**arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml` present but capped at 500 entries covering only 09-14…09-16, so ran the live paged query: 4×400 results, no 429s. 1,600 unique entries, 153 after a title-anchored biomedical + agentic filter.
+**Journals (Crossref `from-created-date`)** — NPP 9, Molecular Psychiatry 18, Translational Psychiatry 17, npj Digital Medicine 29, Neuropharmacology 8, PNPBP 12, Drug Discovery Today 4, Biological Psychiatry 7, BP:CNNI 1, CPT 9, CPT:PSP 3, Nature Biotech 17, Cell Systems 3, Briefings in Bioinformatics 1.
+**Psychiatric Times** — homepage readable (68 article slugs) but every article page is a 5,493-byte Cloudflare 403 on both curl and WebFetch. Discovery-only, no items eligible.
+**Society press (ACNP/SOBP/ECNP/CINP/WFSBP), chemRxiv, industry agentic-AI programmes** — nothing in-window.
+**Dedup** — 103 candidates filtered across 7 batches; 12 already-shipped. The final-roster re-filter caught 2 more (PQBP1/PPARγ and CACNA1C isoforms), replaced by the drug-naive peripheral-organ meta-analysis and MANAS-2.
+
+**Chosen (all 12, full text read except as noted):** SV2C cryo-EM + striatal dopamine release *(lead)* · ileal TGR5/INT-777 depression · odour cueing TMR in PTSD · DMN-cTBS nicotine cue-reactivity in schizophrenia · ketone monoester + theta-burst *(null)* · drug-naive peripheral-organ meta-analysis · DiffDose · PrecepTron/GRAND-ROUNDS · MANAS-2 · Platonic brain bridge · structure-is-not-mechanism · Kv3.1/MK-801 *(abstract-only, PIPELINE tail carve-out, disclosed in the script)*.
+
+**Deferred for lack of readable full text** (all 17-byte Cloudflare 429, not render lag — a sibling PDF hit 200/9.7 MB in the same session): 4-aminopyridine Kv structure, bavachin dual Trk agonist, scACORN, autonomous 5xFAD spatial mapping, melatonin MT1, Scn8a cis modifier, CB1 synthetic-cannabinoid profiling, and 10 others — all recorded in memory for a first-thing retry tomorrow.
+
+Two notes worth flagging: the **bioRxiv 09-10 day-file is a real recall gap** in today's sweep, and I spent early fetch budget on 403s because I assumed the `10.1101/` DOI prefix for deferred items instead of reading it off the details API — every post in this window is `10.64898/`. Both are now in the show's memory file.
+=== 2026-09-17T03:20:04-07:00 done  receptor-and-reason (exit 0) ===
