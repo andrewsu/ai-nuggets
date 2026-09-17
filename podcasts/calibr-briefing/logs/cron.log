@@ -4381,3 +4381,45 @@ Shortlist after discarding stale/off-target:
 
 Spotlight rationale: Arrowhead beat Vera because the Vera readout is confirmatory data on an already-approved drug, while Arrowhead is a first-in-class platform result with a contradictory market reaction — and Cellectis independently picking the identical target pair 24 hours earlier gave the analysis a second, opposing datapoint on the same thesis.
 === 2026-09-16T02:30:30-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-17T02:20:10-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scripts plus the transient stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-09-17-pharma-headlines.txt` (1,801 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-09-17-novo-anthropic-claude-science-spotlight.txt` (1,584 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs validate as XML with the `itunes:` namespace bound.
+
+---
+
+**Candidate funnel — calibr-briefing, 2026-09-17**
+
+Source access this run: `r.jina.ai` was **TLS-intercepted** (cert served is `*.scripps.edu`), killing every jina route. Fell back to plain `curl` + Safari UA, which covered all seven index pages. **Fierce Biotech/Pharma article bodies blocked** — index returned 862 KB of headlines but every `/biotech/<slug>` returned a uniform 5,490-byte Cloudflare interstitial; used Fierce for discovery only and sourced those stories elsewhere. `globenewswire.com` article URLs returned 0 bytes as usual.
+
+| Source | Scanned | Survived relevance filter |
+|---|---|---|
+| BioPharma Dive | 42 headlines | 6 |
+| Endpoints (index only, bodies paywalled) | ~50 | 8 |
+| Fierce Biotech + Fierce Pharma (index only) | ~22 | 7 |
+| BioSpace news + press releases | ~80 | 5 |
+| GEN | ~30 | 0 fresh (see below) |
+| Clinical Trials Arena | ~40 | 0 net-new |
+
+Shortlist after discarding stale/duplicate matches — **✓ = used**:
+- ✓ **SPOTLIGHT** Novo + Anthropic, Claude Science into R&D — biospace.com/press-releases/novo-and-anthropic-will-collaborate-to-advance-drug-discovery-with-claude
+- ✓ Novartis discontinues lifonebart (TREM2) after Phase 2 ASTRALS miss in ALS — biospace.com/drug-development/novartis-halts-trem2-targeting-als-program-in-4th-trial-stumble-in-a-month
+- ✓ Novartis pays Sironax $125M for BBB platform — biopharmadive.com/news/novartis-125m-for-blood-brain-barrier-crossing-platform-Sironax/830560/
+- ✓ Skyhawk SKY-0515, 15-month Huntington's data — biopharmadive.com/news/skyhawk-huntingtons-drug-rna-splicing-results/830537/
+- ✓ Sling $123M Series C, linsitinib Phase 3 Orbit — biopharmadive.com/news/sling-linsitinib-series-c-financing-thyroid-eye-disease/830452/
+- ✓ Connect Biopharma rademikibart Seabreeze STAT Asthma — sec.gov/Archives/edgar/data/0001835268/000183526826000034/exhibit991.htm
+- ✓ Longeveron ELPIS II miss — investingnews.com mirror of the GlobeNewswire release
+- ✓ BMS/Ono v. Amgen over ABP 206 — medicaldialogues.in / Law360 (FiercePharma body blocked)
+- ✓ RegCell $66M — businesswire.com/news/home/20260915919580
+- ✗ Encoded $275M Series F (Dravet) — **Sept 9, out of window**
+- ✗ Kymera STAT6 degrader Phase 1 / Insilico IPF Phase 3 plans — both **June 2025 articles recycled onto GEN's front page undated**; caught on byline check, dropped
+- ✗ Novo drops "Nordisk" (Sept 14), FDA Operation TrialBlazer, Sionna layoffs, Cellectis pivot, radioligand generic, Enhertu NICE — already shipped or stale; the rebrand was folded into the spotlight as context rather than run as a headline
+
+Two judgment calls worth flagging: the Connect Biopharma story was genuinely contradictory in secondary coverage (Seeking Alpha called it a failure, the company headline called it positive) and only the 8-K exhibit resolved it — 66% relative reduction at p=0.153 on the primary, +130 mL FEV1 at p=0.023 on the key secondary, with the CEO conceding the miss in his own quote. And Novo–Anthropic beat Novartis for the spotlight because the show's brief specifically calls out AI-in-drug-discovery companies associated with Anthropic and OpenAI, and because Novo's published NovoScribe results gave the analysis a hard quantitative baseline to argue against rather than just a press release to recap.
+
+Sources: [BioPharma Dive](https://www.biopharmadive.com/news/novo-anthropic-ai-drug-discovery-development-deal/830540/), [BioSpace — Novo/Anthropic release](https://www.biospace.com/press-releases/novo-and-anthropic-will-collaborate-to-advance-drug-discovery-with-claude), [Anthropic — Claude Science](https://www.anthropic.com/news/claude-science-ai-workbench), [Claude — Novo Nordisk case study](https://claude.com/customers/novo-nordisk), [BioSpace — Novartis ALS](https://www.biospace.com/drug-development/novartis-halts-trem2-targeting-als-program-in-4th-trial-stumble-in-a-month), [BioPharma Dive — Sironax](https://www.biopharmadive.com/news/novartis-125m-for-blood-brain-barrier-crossing-platform-Sironax/830560/), [BioPharma Dive — Skyhawk](https://www.biopharmadive.com/news/skyhawk-huntingtons-drug-rna-splicing-results/830537/), [BioPharma Dive — Sling](https://www.biopharmadive.com/news/sling-linsitinib-series-c-financing-thyroid-eye-disease/830452/), [SEC 8-K — Connect Biopharma](https://www.sec.gov/Archives/edgar/data/0001835268/000183526826000034/exhibit991.htm), [Longeveron ELPIS II](https://investingnews.com/longeveron-announces-topline-results-from-elpis-ii-phase-2b-clinical-trial-evaluating-laromestrocel-as-a-potential-treatment-for-hypoplastic-left-heart-syndrome/), [BMS/Ono v. Amgen](https://medicaldialogues.in/news/industry/pharma/bristol-myers-ono-sue-amgen-to-block-proposed-opdivo-biosimilar-in-us-179377), [RegCell](https://www.businesswire.com/news/home/20260915919580/en/RegCell-Secures-$66-Million-of-Additional-Funding-to-Bring-Nobel-Winning-Immune-Tolerance-Science-to-the-Clinic), [CNBC — Novo rebrand](https://www.cnbc.com/2026/09/14/novo-nordisk-rebrands-to-novo-ceo-mike-doustdar.html), [Deutsche Bank rating](https://www.boerse.de/nachrichten/DEUTSCHE-BANK-RESEARCH-Novo-Nordisk-sell/38599613)
+=== 2026-09-17T02:34:06-07:00 done  calibr-briefing (exit 0) ===
