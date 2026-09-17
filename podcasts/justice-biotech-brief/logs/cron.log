@@ -3262,3 +3262,29 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md batch mode I wrote the 
 
 **Why the pick beat the field:** it's the only in-window item that is simultaneously on an explicit stated interest (autoimmune biologics, bispecifics), fully readable, and carrying a result that changes how to think about the class — plain systemic IL-2 made imiquimod psoriasis *worse* than no treatment while the OSE-targeted construct halved it, which reframes a decade of IL-2 mutein failures as a spatial problem rather than a dose-response one. It also sits directly on top of the 09-01 autoimmune CAR-T halt episode as the augmentation-branch counterpart to that toxicity ceiling, and the buried residue in the AlphaFold3 close-state model is V91 — the exact residue efavaleukin alfa mutates.
 === 2026-09-16T02:52:59-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-17T02:40:10-07:00 start justice-biotech-brief ===
+Episode published (batch mode — `SKIP_TTS=1`, so script + two stubs only; no TTS, no R2 upload, no feed edit, no commit — `publish_pending.py` handles those after batch TTS).
+
+**Files written:**
+- `podcasts/justice-biotech-brief/scripts/2026-09-17-mosunetuzumab-celestimo-cd20-cd3-doublet-drops-rituximab.md`
+- `…​.rss-item.xml` (parses clean as XML)
+- `…​.commit-msg`
+
+**Pick:** Mosunetuzumab — CELESTIMO wins Phase 3 in 2L+ follicular lymphoma by replacing rituximab instead of adding to it.
+
+The editorial spine, all independently verified: Genentech's positive topline is numberless, and the interesting thing is *why* it's a doublet. Epcoritamab was engineered for a CD20 epitope spanning ECL1+ECL2, deliberately distinct from the ECL2 site rituximab and obinutuzumab share — so AbbVie/Genmab could build a triplet, and did, winning EPCORE FL-1 first (Lancet, Dec 2025; PFS HR 0.21, ORR 95% vs 79%). Mosunetuzumab's CD20 arm is the **2H7 clone — rituximab's own epitope**, so Genentech couldn't cleanly build the triplet and is now marketing the constraint as simplicity. The constraint may be the better drug: their own 54-patient CELESTIMO extension arm (ASH 2025 #1800) shows ORR 96.3% / CR 87% / CRS 27.8% against the triplet's 95% / 83% / ~35% CRS with 33% grade 3+ infections.
+
+The strongest finding — and the most reusable — is a structural one I'd flag for future readouts in this indication: **AUGMENT put R² at 39.4 months median PFS; EPCORE FL-1's R² control arm managed 11.7.** Same regimen, 3.4× apart. AUGMENT *required* rituximab sensitivity, while EPCORE FL-1 and CELESTIMO both require prior anti-CD20 exposure, exclude neither for rituximab refractoriness, yet explicitly protect the lenalidomide backbone both arms share. The comparator's only differentiating drug is the unprotected one. Per the 09-13 lesson on numberless toplines, the script stakes a falsifiable marker: read CELESTIMO's control arm before its hazard ratio.
+
+**Candidate funnel:**
+- **bioRxiv** — 492 unique DOI+version swept day-by-day (09-15: 221, 09-16: 256, 09-17: 15); 13 v1-in-window keyword hits; **0 on-target**. The only immunology-relevant hit (`10.64898/2026.09.10.750022`) was the IL-2IT preprint already shipped 09-16 — the dedup re-filter caught it.
+- **Trade press** — all live via direct browser-UA curl (jina was TLS-intercepted again, third run running; checked first, no time burned): BioSpace 200, BioPharma Dive 200, Fierce Biotech + Fierce Pharma indexes 200, Endpoints index 200, Clinical Trials Arena 200 (was 403 on 09-14 — it flaps). 6 on-beat BioSpace items, all dated today.
+- **Shortlist (all 2026-09-17):**
+  - ✅ **CELESTIMO / mosunetuzumab + lenalidomide Phase 3 PFS win** — *chosen*
+  - Akeso **AK158D1**, EGFR/TROP2 bispecific ADC, NMPA Phase I clearance — on-beat, but an IND clearance with no data
+  - **WuXi XDC** out-licenses WuXiTecan-2 payload-linker platform to Ona Therapeutics — platform deal, no asset
+- **Policy/funders** — ARPA-H, NIH, NSF: nothing on-target.
+- **Deferrals** — none open. The endothelin preprint (retired 09-11 on recency) 429'd once more; I've noted in memory to stop retesting it.
+
+Two things worth knowing about the run itself: the bioRxiv sweep's output file was a **stale copy from 09-16** still on disk (the exact trap flagged in memory) — I removed it before parsing rather than trusting it. And the JSON-LD extractor that carried the 09-14 pick returned near-nothing today; plain anchor-text extraction found the 6 on-beat items instead. Both lessons are saved.
+=== 2026-09-17T02:49:28-07:00 done  justice-biotech-brief (exit 0) ===
