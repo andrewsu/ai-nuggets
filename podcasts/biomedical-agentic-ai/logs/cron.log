@@ -4607,3 +4607,21 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus
 
 **Infrastructure note:** `r.jina.ai` is TLS-intercepted on this network again (cert `*.scripps.edu`), so every jina full-text route was unavailable. Direct `curl` with a Safari UA on `<id>v1.full.pdf` + `mutool draw -F txt` worked first try and carried the episode — this contradicts yesterday's conclusion that an unrendered preprint has no rescue path with jina down; memory updated.
 === 2026-09-16T02:11:08-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-17T02:00:09-07:00 start biomedical-agentic-ai ===
+Done. Today's `biomedical-agentic-ai` episode is published in batch-mode form.
+
+**Shipped artifacts** (in `podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-09-17-wetrobo-coding-agent-lab-kit.md` — 856-word spoken body
+- `2026-09-17-wetrobo-coding-agent-lab-kit.rss-item.xml` — validated XML, `__LENGTH__`/`__DURATION__` placeholders intact
+- `2026-09-17-wetrobo-coding-agent-lab-kit.commit-msg`
+
+No TTS, no R2 upload, no `feed.xml` edit, no commit — correct under `SKIP_TTS=1`; `publish_pending.py` finishes those after batch TTS.
+
+The pick is WetRobo (arXiv `2609.18435`, posted 09-16, Tsuda lab at U. Tokyo with NYU/DeepMind/RIKEN), read in full from the PDF. It beat scACORN and HPOQuest mainly on shape: the show has run five agent-orchestration-over-omics episodes in the last ten days, and WetRobo offers something those didn't — an actual controlled cross-lab comparison (π0.5 fine-tuned on Lab X demos: 10/10 in Lab X, 0/10 in Lab Y; coding agent from the same kit: 10/10 in both) plus an argument about the unit of distribution that lands on Andrew's open-data interests.
+
+Two caveats I'd flag on the run itself:
+- **NIH news-releases returned HTTP 403** to WebFetch, and I settled the pick before reaching NSF and HHS. The funder channel is therefore only partly covered today — ARPA-H was the one page I read, and its newest item (09-09) was outside the 3-day window anyway. Recorded in the funnel.
+- **api.biorxiv.org was in a 504/hang window** for the first ~8 minutes. The sweep did complete in full (735 records, all four days, no failed pages), so bioRxiv is not a gap — but it consumed most of the run's wall time before I found that a 45-second curl timeout cleared what a 120-second Python timeout could not.
+
+I also wrote both of those operational findings to memory, including a note never to use `pkill -f` here — it matched the harness's own shell wrapper and SIGTERM'd several of my background tasks mid-run, which is why a few sweep attempts died with exit 144.
+=== 2026-09-17T02:19:54-07:00 done  biomedical-agentic-ai (exit 0) ===
