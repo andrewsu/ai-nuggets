@@ -2890,3 +2890,36 @@ All 12 cited URLs were HTTP-verified (200 after redirects) before the script was
 
 One memory file updated: the HN reference note now records that `hn.algolia.com/api/v1/items/<id>` returns the whole comment tree (the reason today's quotes are verbatim rather than paraphrased), and that `search_by_date` needs `--data-urlencode` or it returns a non-JSON body.
 === 2026-09-16T02:43:26-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-17T02:30:10-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run `gen_tts.py`, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written** (`podcasts/jinglin-ai-pulse/scripts/`):
+- `2026-09-17-who-gets-to-vouch.md` — 3,346 spoken words (~14.5 min at 1.2×)
+- `2026-09-17-who-gets-to-vouch.rss-item.xml` — parses as valid XML, `__LENGTH__`/`__DURATION__` placeholders
+- `2026-09-17-who-gets-to-vouch.commit-msg`
+
+**Episode:** *who gets to vouch* — theme is who is allowed to certify what a model is and what it will do, and that every answer today was about incentives rather than evidence.
+
+**Candidate funnel**
+
+Sources swept:
+- **Hacker News** (Algolia, created since Sep 15, >100 points): 80 stories scanned, ~14 AI-relevant after discarding non-AI (BBC/EU, surveillance, PS2 chip, macOS review). Shortlist below.
+- **Hugging Face daily papers** (Sep 16 + Sep 17): 42 papers scanned. A visible recursive-self-improvement cluster (Dream-RSI, ModularRSI, Generalized Agent Iteration, ScienceBuddy, "The Last AI Built by Humans"); top-upvoted Sep 17 item was ScienceIDE (63). None beat the discourse items on substance-per-minute; not used.
+- **Podcast feeds**: Latent Space RSS (8 items) — two new since yesterday's episode. Dwarkesh's most recent is Sep 1 (Ajeya Cotra), 16 days old, outside the 14-day window. Cognitive Revolution feed returned a 119-byte empty body — **failed source**, not retried further.
+- **Funding/business**: WebSearch across Sep 15–16 roundups, plus direct verification of each round used.
+- **X/Twitter**: not attempted as a primary source — unreadable from this host (xcancel serves a browser challenge, x.com requires auth). Discourse sourced from HN threads + primary docs instead, per standing practice.
+- **r.jina.ai**: **failed source** — TLS-intercepted by the Scripps network (cert served is `*.scripps.edu`, no SAN match), which kills every jina full-text route. Worked around with direct `curl` + a Safari UA on all five primary pages, and by pulling JS-rendered dashboards from their own JSON APIs.
+
+Shortlist (✅ = used):
+- ✅ Suleyman, "A warning about 'model welfare'" — 215 pts / 602 comments — https://mustafa-suleyman.ai/a-warning-about-model-welfare — **lead**, read in full plus the 95-comment top level
+- ✅ Xiaomi Mimo v2.6 live RL dashboard — 430 pts — https://mimo.xiaomi.com/rl/ — **second item**; page is JS-only, so data came from its `api/live`, `api/status`, `api/notices`, `api/benchmarks`, `api/runs` endpoints
+- ✅ DeepSeek v4.1 Flash KV-cache architecture — 114 pts — https://zartbot.github.io/blog/model_arch/dsv41flash_arch/en.html — short beat
+- ✅ Factory $200M at $5B; ✅ VerifAIX $5M seed — **Money Moves** barbell
+- ✅ Rune Kvist / AIUC, Latent Space (Sep 16, full transcript in page) — https://www.latent.space/p/aiuc — **deep cut**
+- ❌ "Why I'm still bearish on LLMs after Navier-Stokes" — 473/619 — **already covered** in the Sep 16 episode (Jay Kruer's specification argument); dropped as a repeat
+- ❌ TypeSafe Jev reverse-implementation (127 pts), Profound $180M, OpenAI/Glass Imaging, HF billing OpenAI $100M — all covered Sep 16
+- ❌ HarnessTax coding-agent harness study — 123/52 — site is JS-rendered and the GitHub README 404s; only the HN thread was readable, so it failed the full-text gate
+- ❌ Nvidia CUDA-in-Rust (677 pts), Mistral × Mozilla (564), Gemini 3.8 Live (482), qorl 4B query planner (547), Claude Cowork merge (220), OpenAI Sponsored Agents (156), DeepMind Institute (171) — all live candidates, cut for time against a tighter thematic spine
+
+One caveat worth flagging: Factory's lead-investor attribution differs between sources (one roundup says Blackstone led; SiliconANGLE lists it as a participant), so the script names the round's participants without asserting a lead.
+=== 2026-09-17T02:47:01-07:00 done  jinglin-ai-pulse (exit 0) ===
