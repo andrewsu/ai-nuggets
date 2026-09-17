@@ -257,7 +257,18 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
   https://www.whitehouse.gov/fact-sheets/2026/08/fact-sheet-president-donald-j-trump-announces-deal-with-nine-additional-pharmaceutical-manufacturers-to-lower-drug-prices-for-americans/
 
 ### Spinout-structure comparators (how other people carve assets out)
-_Last update: 2026-09-16_
+_Last update: 2026-09-17_
+- **OPTION-TO-ACQUIRE vs EXCLUSIVE LICENCE, BOTH RESOLVED IN THE SAME THREE DAYS ON EQUIVALENT ENABLING-LAYER ASSETS — AND THE
+  BIGGER BIOBUCKS ENVELOPE WAS THE ONE THAT PAID NOTHING (added 2026-09-17 Portfolio Watch LEAD).** **Novartis/Sironax:** exclusive
+  **option** granted 2025-07-09 (up to $175M upfront + near-term), held **14 months**, **exercised** 2026-09-16 for **$125M at
+  close**, full global rights, **no milestones or royalties disclosed**. **Novo/Ascendis:** exclusive worldwide **licence** signed
+  2024-11, up to **$285M** lead-programme milestones + sales milestones + tiered mid-single-digit royalties + a **$100M** closing
+  milestone, licensee bearing development costs — **terminated after ~22 months**, rights revert, **"neither party has any
+  continuing financial obligations to the other."** ⇒ **Structural lesson for how Blackbird carves out and monetises an enabling
+  layer: the option-to-acquire ends the relationship (worse upside, much better certainty), the royalty licence preserves upside but
+  attaches the licensor's fate to a programme it does not run. BOTH sold 14–22 months of exclusivity during which the platform
+  company could not shop its own core technology — price and cap that window.** Full detail and the Aletira/SELEXON read live in
+  the Aletira entry.
 - **THE MAYO / PRECURE SHAPE — A NONPROFIT ACADEMIC MEDICAL CENTRE TOOK *MAJORITY* OWNERSHIP OF AN OPERATING COMPANY, AND THE
   CORPORATE PARTNER PAID IN PLATFORM RATHER THAN CASH (added 2026-09-16 Portfolio Watch item 5; announced 2026-09-15).**
   **Mayo Clinic and Thermo Fisher Scientific launched Precure, LLC. Mayo is the MAJORITY owner; Thermo Fisher is founding partner
@@ -524,7 +535,7 @@ _Last update: 2026-08-28_
 company Blackbird BioVentures invested in, not a Blackbird-incubated project.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-09-09_
+_Last update: 2026-09-17_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases (Blackbird funded the **Intergalactic Center for
@@ -533,6 +544,45 @@ Autoimmunity and Immuno-Oncology**).
 These are program themes, not named companies. Treat them as standing sourcing
 and landscape interests: a paper or deal that lands on one of these is
 portfolio-relevant even though there is no company to name yet.
+
+**VEXAS SYNDROME theme — THE CLEANEST REGULATORY-SEQUENCING TEMPLATE WE HAVE SEEN, AND IT SAYS VEXAS IS A *PIVOTAL-ENABLING*
+INDICATION RATHER THAN A SMALL MARKET TO APOLOGISE FOR (opened 2026-09-17 Portfolio Watch item 3; IPO expected to price
+2026-09-17).** **Electra Therapeutics (Nasdaq: ETRA)** is taking a **broad** immune-depleting antibody — **ipsoprubart (ELA026)**,
+a **pan-SIRP mAb that selectively depletes pathological myeloid cells and T cells** (full entry under Winnow) — to the public
+market at **~$325M gross / ~$976M fully diluted**, and the indication it chose for the pivotal is **secondary hemophagocytic
+lymphohistiocytosis: rare, rapidly lethal, hyperinflammatory.** **THAT CHOICE BOUGHT THREE THINGS: (1) FDA Breakthrough Therapy +
+FDA Fast Track + EMA PRIME; (2) a registrational study that is OPEN-LABEL and SINGLE-ARM at 156 patients (NCT05416307); (3) a
+primary endpoint of 56-DAY SURVIVAL.** Expansion into T-cell malignancies and broader I&I comes AFTER.
+**DELIBERATE CONTRAST WITH THE COPD THREAD ABOVE:** the 09-16 Connect Biopharma read was that COPD's binding constraint is **the
+endpoint nobody can power** — n=160, primary missed at **p=0.153** because the control arm failed less often than the protocol
+assumed. **Electra's control arm is death.** Same class of molecule problem, opposite trial economics, and the difference is
+**entirely the indication, not the science.**
+**THE READ (Hemaka Rajapakse + Jon Robbins): INDICATION SELECTION IS A FINANCING DECISION MADE AT THE BENCH. VEXAS has the Electra
+shape — rare, severe, adult-onset, molecularly defined by a somatic UBA1 mutation, no approved therapy — so for a myeloid-directed
+agent it is the indication that BUYS the designations, the single-arm pivotal and the hard endpoint. Stop framing it as a small
+market.** **CANDID LIMIT: a single-arm survival primary works when natural history is catastrophic and well characterised (the
+uniQure/AMT-130 external-control point, 09-04) and is fragile when the benchmark is contested — so the VEXAS version of this needs
+its natural-history source agreed with the agency up front, the same ask now standing in the Aletira pre-IND.** Sources:
+https://www.fiercebiotech.com/biotech/electra-aims-342m-ipo-power-inflammatory-drugs-push-through-phase-3 ·
+https://clinicaltrials.gov/study/NCT05416307
+
+**GOVERNANCE — WHO HAS AUTHORITY TO STOP A PROGRAMME: the 2026-09-07 action now has a template at OUR scale, not Novo's (added
+2026-09-17 Portfolio Watch item 5; board approved 2026-09-09, announced 2026-09-15 → 09-16).** **Sionna Therapeutics** (Waltham MA;
+Nasdaq SION) is cutting **46% of its workforce — 27 of 59 employees** — after **SION-719** failed as an add-on to Vertex's
+Trikafta. **Phase 2a PreciSION CF: n=15, placebo-adjusted sweat chloride reduction −1.0 mmol/L, p=0.7**; ~**$2B** of market value
+destroyed. **Not a wind-down:** a **SION-451 + SION-2222 dual combination goes to Phase 2a in Q1 2027**, with **cash runway
+extended into H2 2029**.
+**READ ONE — THE INSTRUMENT RULE, FOURTH INSTANCE: a 15-patient study that could not have registered a real effect was still
+allowed to be the verdict on a company.** Same shape as del-desiran (08-31), Connect's n=160 asthma primary (09-16) and the
+Rohn/UCL micro-bladder point (09-07). **Standing question unchanged: can the instrument register the effect size you expect at the
+sample size you can afford — and what happens if the comparator behaves better than the power calculation?**
+**READ TWO — GOVERNANCE (Maisha Rahman + Emily Wilkinson). This CLOSES the 09-07 action** taken off Novo killing HERMES and ATHENA
+for futility ~4 weeks from the finish line. **Sionna is that decision executed at venture scale: a 59-person company, a board call
+inside ~4 weeks of the data, a NAMED replacement trial with a quarter attached, and a runway number. That is the shape of the memo
+— decision owner, trigger, replacement plan, runway — not just the principle.** **CANDID: $2B is market-CAP destruction, not cash
+burned, and 27 people is a real human cost at a small absolute number; do not conflate the two when citing this.** Sources:
+https://endpoints.news/sionna-cuts-nearly-half-of-staff-as-it-lines-up-second-attempt-at-cystic-fibrosis/ ·
+https://www.fiercebiotech.com/biotech/sionna-lays-46-workforce-strategic-shift-after-cystic-fibrosis-trial-fail
 
 **CHRONIC INFECTIONS theme — the INSTRUMENT half is being built four miles away (added 2026-09-01 Portfolio Watch item 6; TEDCO
 investment 2026-08-25, BioBuzz coverage 08-27).** **TEDCO invested $750,000 in Astek Diagnostics (Baltimore)** from its Seed Funds and
@@ -855,7 +905,7 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-09-16_
+_Last update: 2026-09-17_
 - **THE MARKET-SIZE LINE IN THE DECK IS A *PREVALENCE* NUMBER; THE ONE THAT MATTERS IS THE *DIAGNOSED* NUMBER — and the sponsor is
   expected to pay the difference (added 2026-09-15 Portfolio Watch item 4; announced 2026-09-11).** **GeneDx + Beren Therapeutics**
   launched a fully sponsor-funded, no-cost, no-insurance genome/variant testing programme for **Niemann-Pick type C** (full entry under
@@ -1003,6 +1053,61 @@ _Last update: 2026-09-16_
     valuation.** **DO NOT read the QurCan science across to the ear — the cochlea's problem is not the BBB, and per the 09-11
     entry an intracochlear injection already solves organ targeting geographically.** Source:
     https://www.fiercebiotech.com/biotech/lilly-pledges-237m-program-cns-genetic-med-collab-canadian-biotech
+  - **COMPARABLES FIVE AND SIX, THREE DAYS APART, AND THEY BRACKET THE WHOLE DISTRIBUTION — THE STRUCTURE THAT PAYS IS THE ONE
+    WHERE THE BUYER WANTS TO *OWN* THE LAYER, NOT RENT IT. THIS SUPERSEDES THE "MILESTONES NOT UPFRONT" SHAPE ABOVE AS THE
+    OPERATIVE CONCLUSION (added 2026-09-17 Portfolio Watch LEAD; announced 2026-09-16 and 2026-09-14).**
+    **(a) THE ONE THAT PAID — NOVARTIS / SIRONAX.** Novartis **exercised its exclusive option to acquire full global rights** to
+    the brain delivery platform of **Sironax** (Waltham MA; President/CEO **Dr. Shefali Agarwal**; 2025 Endpoints 11 list).
+    **$125M to Sironax on closing.** Asset = **proprietary brain delivery modules** engineered for in vivo transport of
+    **monoclonal antibodies, peptides, proteins, gene therapies and other large biologics** across the BBB; a ROUTE, all
+    modalities, not tied to a molecule. **Structure: 2025-07-09 Sironax granted Novartis an exclusive OPTION to acquire the Brain
+    Delivery Module (BDM) platform, eligible for up to $175M in upfront and near-term payments, with Novartis evaluating the
+    platform "within an option period." Novartis held it 14 MONTHS, then exercised. NO milestones and NO royalties disclosed in
+    either release.** Novartis signatory: **Robert Baloh, Global Head of Neuroscience, Biomedical Research.** Sironax **retains
+    rights to selected assets** using the platform.
+    **(b) THE ONE THAT DID NOT — NOVO / ASCENDIS.** **Ascendis Pharma (Nasdaq: ASND; CEO Jan Mikkelsen) regains exclusive rights to
+    TransCon-technology products in metabolic and cardiovascular disease, including once-monthly TransCon semaglutide**, after
+    termination of the **November 2024** Novo Nordisk collaboration. Release language: **all licences granted to Novo revert, and
+    "neither party has any continuing financial obligations to the other."** **THE ORIGINAL DEAL WAS THE BIGGER ONE ON PAPER
+    (2024-11-04): exclusive WORLDWIDE licence to TransCon in metabolic disease + product-by-product exclusive in cardiovascular;
+    lead programme a once-monthly GLP-1 RA; up to $285M in upfront + development + regulatory milestones on the lead programme,
+    PLUS sales-based milestones, PLUS escalating tiered mid-single-digit royalties on global net sales, PLUS a $100M milestone
+    payable at closing; Novo bore early development, clinical, regulatory, commercial manufacturing and commercialisation costs,
+    and also received rights to expand resulting metabolic products into other therapeutic areas. Duration to termination:
+    ~22 months.**
+    **THE READ (Eddie Cherok + Emily Wilkinson + Geoff Lynn): the LARGER headline envelope paid out to ZERO and reverted; the
+    SMALLER, royalty-free, buy-it-outright envelope produced $125M in cash and a clean transfer of ownership. A royalty licence
+    keeps the licensor's fate attached to a programme the licensor does not run, and Ascendis just demonstrated that fate can
+    resolve to nothing.**
+    **THE UNPRICED COST — EXCLUSIVITY DURATION. Sironax sold 14 months of inability to shop its own core technology; Ascendis sold
+    22 and got the asset back. In an option or exclusive-licence deal the consideration is TIME, and the option fee is what the
+    buyer pays for the right to take it. ACTION (Eddie + Emily): in any SELEXON structure we entertain, price the exclusivity
+    window explicitly and CAP it.**
+    **THE CONSTRUCTIVE READ — SIRONAX IS THE WORKED EXAMPLE OF THE CONCLUSION ABOVE (Geoff Lynn + Hugh Wells).** The proceeds fund
+    **three Sironax programmes already in Phase 1b/2**: **SIR2501**, first-in-class allosteric **SARM1** inhibitor (neuroaxonal
+    damage; ALS + chemotherapy-induced peripheral neuropathy; **FDA Fast Track**); **SIR4156**, globally first-in-class allosteric
+    **NAMPT activator** (metabolic dysfunction); **SIR9900**, selective brain-penetrant allosteric **RIPK1** inhibitor
+    (inflammatory/immunological disease). ⇒ **Sell the chassis for non-dilutive capital; be a product company with the chassis
+    inside. And the CEILING on a pure delivery/selectivity chassis sold as a chassis — global, all modalities, terminal — is
+    $125M. That is a ceiling, not a target.**
+    **NOVARTIS TEXTURE (carries to the NuGate entry): in the same ~30 days Novartis lost pelacarsen's Phase 3 CV outcomes study,
+    del-desiran's Phase 3 in myotonic dystrophy (from the $12B Avidity acquisition), suspended rapcabtagene autoleucel across
+    immunology and neurology after three deaths, and discontinued VHB937 in ALS — and paid $125M for a route into the brain. When
+    the targets fail, the money moves to the route.** Sources:
+    https://www.globenewswire.com/news-release/2026/09/16/3363045/0/en/sironax-announces-option-exercise-and-asset-purchase.html ·
+    https://www.sironax.com/sironax-grants-novartis-exclusive-option-to-acquire-its-brain-delivery-platform-while-retaining-rights-to-advance-selected-therapeutic-assets/ ·
+    https://www.globenewswire.com/news-release/2026/09/14/3361592/0/en/ascendis-to-regain-rights-to-transcon-technology-in-metabolic-and-cardiovascular-diseases.html ·
+    https://www.globenewswire.com/news-release/2024/11/04/2973903/0/en/Ascendis-Pharma-and-Novo-Nordisk-Sign-Collaboration-for-Development-and-Commercialization-of-TransCon-Technology-based-Products-in-Metabolic-and-Cardiovascular-Diseases.html
+  - **SECONDARY, NOT-FOR-THE-DECK — IATROGENIC HEARING LOSS IS A LABEL-LEVEL, COMMERCIALLY LOAD-BEARING LIABILITY IN A NON-OTOLOGY
+    INDICATION (added 2026-09-17 Portfolio Watch item 4, second read; announced 2026-09-16).** **Sling Therapeutics** leads the
+    safety section of its linsitinib release with **"no drug-related hearing problems"** at the 150 mg BID dose, because
+    **IGF-1R blockade is associated with hearing impairment and the incumbent (Amgen's Tepezza, $576M in Q2, +14% YoY) carries that
+    liability.** ⇒ **A $576M-per-quarter franchise is being attacked partly on the ear, and there is no therapy for the hearing
+    loss it causes.** **CANDID: acquired ototoxic hearing loss is a DIFFERENT ETIOLOGY from hereditary SNHL and is NOT a line
+    extension claimable off current Aletira data.** But it is a real second market for a cochlea-restricted payload, and the
+    sponsors who would fund it sit in **oncology and immunology, not otology**. **ACTION (Hugh Wells): one hour on whether any
+    SELEXON-restricted construct has an ototoxicity-protection story. Nothing in a deck until it does.** Source:
+    https://www.biospace.com/business/sling-catches-123m-series-c-for-thyroid-eye-disease-pill
   **CASSETTE ARGUMENT, SECOND INDEPENDENT INSTANCE IN TWO DAYS:** Encoded upregulates endogenous *SCN1A*; Modalis upregulates
   endogenous utrophin. **Neither delivers a gene; both deliver a switch.** The 08-19 kilobase item is now a **pattern**, not one
   competitor's choice. Source:
@@ -1841,7 +1946,39 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-09-16_
+_Last update: 2026-09-17_
+- **A 251-PATIENT ALS PHASE 2 MISSED ITS CLINICAL PRIMARY *AND* ITS NfL SECONDARY, WHICH IS THE BEST AVAILABLE DEFENCE OF THE 09-03
+  "NfL AS THE EVIDENTIARY SPINE" DECISION — AND IT CLOSES THE STRESS TEST OPENED 09-16 (added 2026-09-17 Portfolio Watch item 2;
+  reported 2026-09-16).** **Novartis discontinued VHB937 / lifonebart in ALS** after Phase 2 **ASTRALS** missed. Molecule =
+  **antibody TREM2 stabiliser/activator**, i.e. a **microglial / neuroinflammatory** mechanism, not neuron-intrinsic.
+  **REGISTRY-VERIFIED PRE-SET BAR — NCT06643481: n=251, early-stage ALS, start 2024-10-17, primary completion 2026-06-23, status
+  ACTIVE_NOT_RECRUITING with NO stop reason filed. PRIMARY = Combined Assessment of Function and Survival (CAFS): composite of
+  PAV-free survival and change in ALSFRS-R. SECONDARIES INCLUDE ALSFRS-R total, slow vital capacity (% predicted),
+  RATIO-TO-BASELINE SERUM NEUROFILAMENT LIGHT, time to death/PAV, PGI-C, CGI-C, ALSAQ-5, EQ-5D-5L, SF-12, serum + CSF PK,
+  immunogenicity. Reported outcome: failed BOTH primary and secondary endpoints.**
+  **THE ALZHEIMER'S COHORT CONTINUES — NCT07094516**, early Alzheimer's, **RECRUITING**, start 2025-08-07, primary completion
+  **2028-09-14**. No safety rationale was stated anywhere; some trade coverage framed the stop as benefit-risk, which the registry
+  does not support and the continuing AD study argues against. **Logged as an EFFICACY discontinuation.**
+  **READ ONE (Anthony Accorsi + Jon Robbins) — THE ENDPOINT QUESTION IS SETTLED, AND IN OUR FAVOUR. HOLD THE 09-03 ACTION.** The
+  09-16 entry logged **Axoltis SEALS** (NfL run as a PRIMARY in ALS, did not move) as a stress test of making NfL the evidentiary
+  spine. **ASTRALS is the mirror image — clinical function-and-survival composite as PRIMARY, serum NfL among the SECONDARIES. Two
+  ALS Phase 2s in 48 hours, the biomarker on opposite sides of the primary line, identical verdict, and in BOTH trials the
+  biomarker AGREED with the clinical outcome. NfL produced NO FALSE POSITIVE when the mechanism was wrong** — precisely the
+  property required of an evidentiary spine, and the 09-06 causal-vs-correlated rule is satisfied because NfL is being used as a
+  FILTER, not as the claim. Supporting precedent: the only cell-autonomous, genetically anchored ALS drug ever marketed reached
+  approval **on this biomarker** with a clinical primary that missed.
+  **READ TWO (Hemaka Rajapakse) — THE FAILURES ARE IN A DIFFERENT NEIGHBOURHOOD; SAY SO EARLY AND LABEL IT HONESTLY.** Both of
+  this week's misses are **non-cell-autonomous**: Axoltis NX210c acts on **BBB integrity**, VHB937 on a **microglial receptor**.
+  NuGate is a **cell-intrinsic, genetically anchored ASO** out of the **Rothstein + Coyne** Johns Hopkins lineage. Put the
+  distinction in the first two minutes of any BD conversation this month — the default read a partner brings to the room in late
+  September 2026 is "ALS is a graveyard." **This is a LANE argument, not evidence; present it as one.**
+  **READ THREE — INDICATION PORTABILITY, THE UNCOMFORTABLE ONE. Novartis killed the INDICATION and kept the MOLECULE, because
+  TREM2 has a second disease home funded to 2028. NuGate's stated breadth — "all forms of ALS and FTD" — is breadth WITHIN one
+  disease axis, not a second home. ACTION (Hemaka + Anthony): name NuGate's second indication and state whether any preclinical
+  package exists behind it. Cheap this quarter, very expensive after a miss.** Sources:
+  https://www.biospace.com/drug-development/novartis-halts-trem2-targeting-als-program-in-4th-trial-stumble-in-a-month ·
+  https://www.fiercebiotech.com/biotech/novartis-ends-als-program-after-phase-2-flop-adding-rd-woes ·
+  https://clinicaltrials.gov/study/NCT06643481 · https://clinicaltrials.gov/study/NCT07094516
 - **CAUSAL-VS-CORRELATED RULE — the second half of the biomarker instruction (added 2026-09-06
   Portfolio Watch LEAD; event 2026-09-04).** **Lp(a)HORIZON**: Novartis/Ionis **pelacarsen**, a
   GalNAc-conjugated ASO against apolipoprotein(a), lowered Lp(a) by **~80% in 8,323 patients**
@@ -2016,7 +2153,50 @@ _Last update: 2026-09-16_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-16_
+_Last update: 2026-09-17_
+- **"SELECTIVELY DEPLETE PATHOLOGICAL T CELLS" IS OUR SENTENCE, AND THE FIFTH COMPANY TO SAY IT IS PRICING ON NASDAQ — "SELECTIVE"
+  HAS STOPPED BEING THE DIFFERENTIATOR AND THE *AXIS* OF SELECTIVITY HAS BECOME IT (added 2026-09-17 Portfolio Watch item 3; IPO
+  expected to price 2026-09-17).** **Electra Therapeutics (Nasdaq: ETRA)**: **~21.7M shares at $14–16 ≈ $325M gross**, fully
+  diluted market value **~$976.1M at the midpoint**; bookrunners **Jefferies, TD Cowen, Evercore ISI, Cantor Fitzgerald**; follows
+  a **$183M Series C (Oct 2025)**. Asset **ipsoprubart (ELA026)** — a **pan-SIRP monoclonal antibody designed to selectively
+  deplete pathological MYELOID cells and T cells**. Pivotal **SURPASS, NCT05416307**: Phase **2/3**, **secondary hemophagocytic
+  lymphohistiocytosis (sHLH)**, **n=156**, **OPEN-LABEL and NON-RANDOMISED**, start 2022-05-19, primary completion **2027-06**,
+  **Part 2 Cohort A primary = 56-DAY SURVIVAL RATE** in malignancy-associated HLH with lymphoma as the trigger; **FDA Breakthrough
+  Therapy + FDA Fast Track + EMA PRIME**. Supporting Phase 1b: **100% eight-week overall survival and 100% overall response in 12
+  frontline malignancy-associated HLH patients** — a reason to run the pivotal, **not a result**. Second programme **NCT07465835**,
+  Phase 1 in **R/R T/NK-cell malignancies**, n=84, recruiting since 2026-02-17.
+  **THE FIVE AXES, ALL LOGGED WITHIN FIVE DAYS (Jon Robbins + Hemaka Rajapakse): ANTIGEN (Winnow) · MASK (Adagene/Third Arc,
+  09-12) · THE RECEPTOR ITSELF (Hamad x-mab, 09-13) · CELL LINEAGE (GSK/Chimagen B-cell depletion, 09-15) · CELL STATE, i.e. a
+  surface protein carried by the pathological cell (Electra, today).** Electra's is **the most advanced — registrational with three
+  designations — and the one asking the public market for $325M.** ⇒ **Winnow's axis is still the narrowest of the five, but that
+  claim now has to survive being made in a room where four named competitors exist and one has a ticker. Into the first paragraph
+  alongside the 09-15 B-cell-depletion distinction.**
+  **CANDID LIMITS ON ELECTRA, AND THE THIRD IS THE HONEST SUMMARY.** (a) Single-arm survival against a historical/external
+  benchmark is the **uniQure/AMT-130 structure** logged 09-04 and is fragile when the benchmark is contested. (b) n=12 at
+  100%/100% is not an effect size. (c) **Pan-SIRP depletion of myeloid cells AND T cells is broadly immunosuppressive — the
+  opposite of Winnow's proposition — and its safety table in a NON-LETHAL autoimmune indication is unanswered. Electra did not
+  solve selectivity; it chose a population where getting selectivity wrong is tolerable.** Sources:
+  https://www.fiercebiotech.com/biotech/electra-aims-342m-ipo-power-inflammatory-drugs-push-through-phase-3 ·
+  https://www.renaissancecapital.com/IPO-Center/News/121638/antibody-biotech-electra-therapeutics-sets-terms-for-325-million-ipo ·
+  https://clinicaltrials.gov/study/NCT05416307 · https://clinicaltrials.gov/study/NCT07465835
+- **THE INVERSION EXTENDS TO *ROUTE*: ONE VALIDATED TARGET, FOUR ENTRANTS, AND NOT ONE COMPETING ON MECHANISM — THE WORST EFFICACY
+  NUMBER IN THE SET JUST GOT FUNDED (added 2026-09-17 Portfolio Watch item 4; announced 2026-09-16).** **Sling Therapeutics** raised
+  a **$123M Series C led by Forbion** (with **TPG Life Sciences Innovations** and **Sectoral Asset Management**) and simultaneously
+  launched **Phase 3 ORBIT** for **linsitinib**, the **only late-stage ORAL small-molecule IGF-1R blocker**, in **thyroid eye
+  disease**: **150 mg BID vs placebo, n=130**, primary = **proptosis response in the study eye without worsening of the fellow
+  eye**, initial data **mid-2028**; **FDA Fast Track**. Prior **Phase 2b/3 LIDS: 52% proptosis response at 24 weeks**; no
+  drug-related hearing problems or menstrual disruption at 150 mg BID; transaminase elevations that resolved without organ
+  dysfunction. **THE FIELD: Amgen Tepezza** (IV, approved 2020, **Q2 revenue $576M, +14% YoY**) · **Amgen subcutaneous Tepezza**
+  (**76.7%** proptosis response at 24 weeks, Phase 3 April 2026) · **Viridian Lumvoa** (IV, fewer doses, FDA approval June 2026) ·
+  **Sling linsitinib** (oral, **52%**).
+  **READ (Jon Robbins + Virginia Burger): the 09-15 benefit-risk inversion extends one step. In autoimmunity the DELIVERY BURDEN is
+  also the product, and this field pays for convenience at roughly a 25-POINT EFFICACY DISCOUNT.** ⇒ **THE UNCOMFORTABLE COROLLARY,
+  AND IT BELONGS IN THE DECK: a T-cell engager is the most burdensome route on the board — infused, monitored, with a
+  cytokine-release profile to explain. In a field whose competitive axis is ROUTE, Winnow cannot win on convenience and must not
+  try. Its differentiation has to be DEPTH and DURABILITY — one course, durable drug-free remission — which is the one claim a
+  chronic daily pill structurally cannot make, is sharper than "antigen-specific," and unlike "antigen-specific" is directly
+  testable in the clinic.** Sources: https://www.biospace.com/business/sling-catches-123m-series-c-for-thyroid-eye-disease-pill ·
+  https://www.fiercebiotech.com/biotech/sling-reels-123m-series-c-funding-its-oral-tepezza-rival-eye-disease
 - **THE BUYER WE MOST WANT ALREADY BOUGHT THE *OTHER HALF OF THE IMMUNE SYSTEM* — and that is the differentiation sentence (added
   2026-09-15 Portfolio Watch item 2; announced 2026-09-15).** **GSK acquired a preclinical trispecific TCE from Chimagen Biosciences
   for up to $750M** (full entry in §1). The relevant fact for us is the SELLER's other asset: **GSK's 2024 Chimagen deal ($300M upfront
