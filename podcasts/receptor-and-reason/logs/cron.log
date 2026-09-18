@@ -4577,3 +4577,51 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE batch mode I wrote the sc
 
 Two notes worth flagging: the **bioRxiv 09-10 day-file is a real recall gap** in today's sweep, and I spent early fetch budget on 403s because I assumed the `10.1101/` DOI prefix for deferred items instead of reading it off the details API — every post in this window is `10.64898/`. Both are now in the show's memory file.
 === 2026-09-17T03:20:04-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-18T02:50:25-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I skipped TTS, R2 publish, the feed edit, and the commit — the orchestrator (`publish_pending.py`) handles those after batch TTS.
+
+**Files written** (`podcasts/receptor-and-reason/scripts/`):
+- `2026-09-18-receptor-and-reason.md` — 12 items, 3,279 spoken words (~18 min; 09-16 ran 18.3 min at 3,339 words)
+- `2026-09-18-receptor-and-reason.rss-item.xml` — validates as XML under the itunes namespace, `__LENGTH__`/`__DURATION__` placeholders intact
+- `2026-09-18-receptor-and-reason.commit-msg`
+- Ledger appended: 12 keys, now 119 episodes
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Shortlisted |
+|---|---|---|---|
+| bioRxiv details API (09-11→09-18, day-by-day, 16 threads) | 1,497 v1 records | 854 topical → 288 tight | 26 |
+| medRxiv details API (same window) | 476 v1 records | (included above) | 8 |
+| arXiv (live 5×400 paged + 500-entry shared cache, deduped) | 2,000 unique | 188 bio-title in window | 16 |
+| Crossref Nature-family (NPP, Mol Psych, IJNP) | 32 | 9 | 8 |
+| Crossref Elsevier (Neuropharm, PNPBP, DDT, Biol Psych, BP:CNNI) | 29 | 8 | 4 (late — see dedup note) |
+| Crossref ASCPT (CPT, CPT:PSP) | 15 | 0 CNS | 0 |
+| Psychiatric Times | ~68 slugs | 0 readable (bodies Cloudflare-403) | 0 |
+| ECNP / ACNP / CINP / WFSBP press | — | 0 in-window | 0 |
+| chemRxiv | — | search dashboard HTTP 403 | 0 |
+| Industry agentic-AI programmes | — | 0 in-window | 0 |
+
+**Dedup:** 59 candidates → 54 fresh (5 previously shipped). Final-roster re-filter caught one more — `10.1016/j.neuropharm.2026.111187` (MDMA/msP rats) was shipped 09-15; it slipped in because the Elsevier channel was queried *after* the batch filter ran. Replaced with the m6A/AUD medRxiv preprint. All 12 final keys pass.
+
+**Shortlist and picks** (★ = selected)
+
+★ 4-aminopyridine/Kv closed-state cryo-EM — biorxiv 10.64898/2026.09.12.751153
+★ CB1 residue-interaction patterns, synthetic cannabinoid efficacy — biorxiv …2026.09.08.748791
+★ Dual-State Query GPCR bioactivity — arxiv 2609.16468
+★ Psilocybin/SAPAP3 social novelty — 10.1038/s41380-026-03879-8
+★ m6A across 8 brain regions in AUD — medrxiv …2026.09.16.26363234
+★ Cocaine head-shaking in marmosets — biorxiv …2026.09.11.749290
+★ [11C]nicotine PET, salts vs free base — 10.1038/s41386-026-02559-z
+★ Antihypertensive class / ADRD two-source replication — medrxiv …2026.09.11.26362859
+★ AI agents at the brain-computer interface — medrxiv …2026.09.13.26362955
+★ LLM judges for patient communication — medrxiv …2026.09.16.26363176
+★ Immune world model — arxiv 2609.14709
+★ Neural noise / rare-event replay — arxiv 2609.18033
+— Closed-loop auditory stimulation in early AD (read in full, deferred: sleep/memory ran two weeks running)
+— Guanfacine α2A in Lisket rats; intranasal MCH anhedonia; β-hydroxybutyrate review (EPMC abstracts, tail-eligible)
+— CliniCIRCA, CBT-aligned counseling steering, SeqMaestro, procedural molecular pretraining, LLM genetic-severity agents (arXiv PDFs read, unshipped)
+
+**Source-side notes:** `r.jina.ai` is TLS-intercepted by the Scripps network for a fourth straight run (cert `*.scripps.edu`), so every jina full-text route is dead — all bioRxiv reads went through `.full.pdf` + `mutool`, which was wide open today (8 of 11 first-try 200s; 3 transient 17-byte 429s). One real bug on my side: medRxiv DOIs fetched against `www.biorxiv.org` return a 302 with zero bytes, which cost two fetches before I caught it. I also briefly had three fetch workers running after editing the script mid-run; killed the two strays by PID.
+
+Unrelated to this run: `2026-09-15-receptor-and-reason.{commit-msg,rss-item.xml}` are still sitting untracked in `scripts/` with no matching mp3 — leftovers from an earlier truncated run that `publish_pending.py` never cleaned up.
+=== 2026-09-18T03:09:08-07:00 done  receptor-and-reason (exit 0) ===
