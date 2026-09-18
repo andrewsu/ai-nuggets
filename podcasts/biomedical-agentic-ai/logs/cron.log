@@ -4625,3 +4625,39 @@ Two caveats I'd flag on the run itself:
 
 I also wrote both of those operational findings to memory, including a note never to use `pkill -f` here — it matched the harness's own shell wrapper and SIGTERM'd several of my background tasks mid-run, which is why a few sweep attempts died with exit 144.
 === 2026-09-17T02:19:54-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-18T02:00:23-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1`, so per `PIPELINE.md` I stopped after the script + the two stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator handles those after batch TTS).
+
+**Published:** `2026-09-18-paper2agent-paper-as-callable-server` — Paper2Agent — a paper and its repo compiled into a callable, tested MCP server (862 words in the spoken body, cap 1150). Full text read in full from nature.com (open access, ~80 KB body incl. Main/Discussion/Methods).
+
+## Candidate funnel — biomedical-agentic-ai, 2026-09-18
+
+**Sources scanned**
+- **bioRxiv details API** (09-15 → 09-18, day-by-day, one worker): 801 entries pulled (221/256/314/10 per day). 22 survived keyword filter; 6 substantive after discarding spurious "agent" hits. *Note: first sweep attempt used a shell `&` background and died silently; re-run with the tool's background flag succeeded.*
+- **arXiv** shared cache `/tmp/ai-nuggets-arxiv-cache.xml`: 500 entries, covering 09-15/16/17 only (500-entry cap, no 09-18). 229 keyword hits → 27 with a biomedical term in the title.
+- **PubMed** E-utilities, `reldate=5`: 1,379 PMIDs, all fetched via `esummary` and filtered on `history[].pubmed` (not `pubdate`). 143 after keyword filter; big 09-16/09-17 cluster in Nature / Science / Cell / Nature Medicine.
+- **ChemRxiv** (`site:chemrxiv.org` WebSearch): nothing in the 4-day window — newest hits were March/July 2026. No candidates.
+- **Policy/funder:** ARPA-H news 200 OK; NSF 200 OK; **NIH press releases HTTP 403 (Cloudflare)** and **HHS press room HTTP 403 (Akamai)** — both skipped per the source-failure rule.
+- **Full-text infrastructure:** `r.jina.ai` is TLS-intercepted on the Scripps network again (cert served is `*.scripps.edu`), so every jina route was dead. Worked around it with direct `curl` + Safari UA on nature.com, which returned the complete body.
+
+**Shortlist**
+- ★ **CHOSEN** — Reimagining research papers as interactive and reliable AI agents (Paper2Agent) — Nature, online 09-16 — https://www.nature.com/articles/s41586-026-11044-y
+- The Virtual Biotech: a multi-agent AI framework for therapeutic discovery — Science, 09-17 — doi:10.1126/science.aeg6779
+- scBaseCount: an AI agent-curated, standardized, auto-updated single-cell data repository — Cell, 09-17 — doi:10.1016/j.cell.2026.08.025
+- Toward autonomous science with agentic artificial intelligence — Cell, 09-17 (perspective) — doi:10.1016/j.cell.2026.08.052
+- On-premise medical AI agents for reliable clinical decision-making — Nature Medicine, 09-16 — doi:10.1038/s41591-026-04609-x
+- ARPA-H ADVOCATE awards — $62.7M agentic clinical AI for cardiovascular care, Atman Health / Tempus AI / UpDoc — arpa-h.gov, 09-16/17
+- ScienceIDE: turning the world's scientific codebase into agent-learnable environments — arXiv 2609.19134 (09-16)
+- HPOQuest: rare-disease diagnostic agent using active phenotype acquisition — arXiv 2609.18431 (09-16)
+- LLM agents for evidence-based genetic disease severity classification — arXiv 2609.19569 (09-17)
+- Hyperbolic graph representation learning for differential diagnosis on biomedical KGs — arXiv 2609.18481 (09-16)
+- scACORN: agent orchestration of specialized small language models for single-cell interpretation — bioRxiv 10.64898/2026.09.10.750801 (09-16)
+- From Prompt to Pipeline: LLM coding agents for reproducible bioinformatics pipelines — bioRxiv 10.64898/2026.09.11.751004 (09-17)
+- Multi-agentic system for primer design in qPCR and LAMP diagnostics — bioRxiv 10.64898/2026.09.15.751771 (09-16)
+- Microscope control with a natural language agent — bioRxiv 10.64898/2026.09.15.751723 (09-17)
+- Autonomous AI-driven nanoscale spatial mapping in 5xFAD Alzheimer's model — bioRxiv 10.64898/2026.09.09.750448 (09-16)
+
+**Why Paper2Agent won:** it's the only in-window item sitting squarely on all three of the show's audience axes at once — agentic AI for research, open science/reproducibility policy, and APIs as the unit of data integration — and it's a Nature research article with a large-scale evaluation (100 papers, no manual cleanup) rather than a single case study. Its "agentifiability as a reproducibility metric" argument is the part worth an episode. ADVOCATE was the runner-up but is clinical care delivery, off Andrew's core interests; the Science and Cell items are strong and remain in window tomorrow if worth revisiting.
+
+**Dedup:** HeartVar (bioRxiv 750569) and Virtuous Machines (Advanced Science, doi 10.1002/advs.76675) both resurfaced in this window and were correctly excluded — shipped 09-16 and 09-15. No prior coverage of Paper2Agent in any show's scripts.
+=== 2026-09-18T02:08:08-07:00 done  biomedical-agentic-ai (exit 0) ===

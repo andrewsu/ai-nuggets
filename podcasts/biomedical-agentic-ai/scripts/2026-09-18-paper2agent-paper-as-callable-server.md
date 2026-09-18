@@ -1,0 +1,27 @@
+# Paper2Agent — a paper and its repo compiled into a callable, tested MCP server
+
+Paper link: https://www.nature.com/articles/s41586-026-11044-y
+
+## Script
+
+Today's pick went up in Nature two days ago, from Stanford — Jonathan Pritchard's and James Zou's groups. It's called Paper2Agent, and the one-line version is that it takes a paper and its public code repository and automatically compiles them into a Model Context Protocol server, so you can ask the paper a question in plain language and it runs its own methods on your data.
+
+If you've spent any time wiring up M-C-P servers, the idea will feel obvious in retrospect. The idea isn't what makes this worth five minutes. Two design choices underneath it are, plus one claim in the discussion that I think is the most useful thing in the paper.
+
+Start with the first choice: the language model does not write analysis code at query time. Paper2Agent runs a pipeline of sub-agents — one provisions an isolated environment, one scans the repo for tutorials, one executes those tutorials end to end, one rewrites each executed tutorial into standalone parameterized functions, and one writes tests against the tutorial's own outputs. Numbers have to match within three percent. Figures have to match by perceptual hash. A function that fails six repair attempts gets its tool decorator stripped and never ships. What you end up with is frozen, tested code, each tool carrying a link back to the source line it came from. At query time the model is only choosing which tool to call and with what arguments.
+
+That's why it beats the obvious baseline. Point Claude Code at the same repository and ask the same three hundred questions and you get eighty percent; the pre-built server gets ninety-one. It's also cheaper — about twenty cents and a minute and a half per query, against thirty-eight cents and four minutes. The gain isn't reasoning. It's that somebody paid the setup cost once and everyone downstream inherits it.
+
+The second choice is the load-bearing one, and it's easy to miss: the tutorial is the oracle. There's no external ground truth anywhere in this system. Correct means "reproduces what the repo's own notebook produced." That is a completely defensible engineering decision, and it also defines the ceiling. A paper agent is, at bottom, a parameterized tutorial. It will reliably do what the authors already demonstrated, on your data instead of theirs. It is not going to carry the method somewhere the tutorial never went.
+
+Which brings me to the claim I actually want to flag. They ran this over a hundred computational biology papers with no manual cleanup and no code edits. Seventy-four agentified. Five hundred ninety-three of five hundred ninety-nine proposed tools passed validation — so when it works, it works cleanly. The twenty-six failures break down as: no executable code, missing data or model artifacts, environments that couldn't be resolved, and scripts that don't generalize past one hard-coded path. And the authors write that the ease with which a paper can be turned into an agent may itself be a practical measure of reproducibility.
+
+I think that's right, and it's a bigger deal than the tool. We have spent twenty years asking for data availability and code availability statements, and we got them, and they are frequently satisfied by a repository nobody can run. Agentifiability is an executable test of the same claim, and it fails loudly rather than quietly. The authors go further and float an "agent availability" section alongside data and code. Whatever you make of that as publishing policy, the diagnostic is nearly free, and somebody should be running it across the literature.
+
+The discovery case study is the flashiest part, and I'd read it carefully. They wired three paper agents together — AlphaGenome, a reporter-assay-coupled CRISPR interference screen, and a CD-four T-cell Perturb-seq dataset — to nominate the causal gene at a psoriasis locus. AlphaGenome's agent put G-P-R-1-3-7 on top. The system then proposed ten validation strategies, a human picked one, and correlating the regulatory-element perturbation signature against gene-knockdown signatures singled out that same gene, significantly only under stimulation. The cross-screen signature-correlation trick isn't in either source paper, so there is a real methodological contribution sitting in there. But note where the human sat, right at the decision point — and note that the paper says so plainly.
+
+The more honest demonstration is smaller and more interesting. Asked to reinterpret a variant associated with L-D-L cholesterol, the agent nominated SORT-one, where the original AlphaGenome paper had emphasized two other genes at the locus. The authors then checked the expression-Q-T-L catalog and found all three are strong liver signals with near-identical scores. The agent didn't overturn anything. It re-ran the locus in a single prompt and made the ambiguity legible. At scale, that's the actual use case — not a better answer, but a cheap, systematic way to ask how load-bearing a published conclusion really was.
+
+They're clear-eyed about their own benchmark too, and it's worth quoting the spirit of it: scoring against a single reference answer measures faithful execution, not analytical validity. Remember that the next time you see a leaderboard for an agentic science system.
+
+The code is on GitHub, the demo servers are up on Hugging Face Spaces, and the paper is open access.
