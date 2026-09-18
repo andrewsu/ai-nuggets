@@ -690,6 +690,11 @@ https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentall
     Phase III expected ~end-2026; FDA has cleared the IND for a US Phase IIa.** **Denominator caveat to carry: 80 patients across
     five arms ≈ 16/arm, so −100% on severe exacerbations is an artifact, not an effect size.**
     **TSLP LIGAND —** Tezspire (AstraZeneca) + Generate's golukibart, per the entry above.
+    **BOTH ALARMINS IN ONE MOLECULE — A FIFTH SEAT THE 09-08 MAP MISSED, AND THE MOST CROWDING-RELEVANT ONE (added 2026-09-18 Portfolio Watch
+    item 3).** **Roche holds a long-acting bispecific targeting BOTH TSLP AND IL-33**, licensed from **China's Qyuns Therapeutics in October 2025 for
+    $75M upfront against up to ~$995M in milestones**, in development for **COPD and asthma**. ⇒ **The alarmin layer is more contested than the
+    four-seat map said: the crowded claim is no longer "we act upstream" but "we act on the upstream layer at all." This makes the RESIDUAL
+    eosinophil-low position (09-09) both more valuable and more urgent** — it is the only position none of the five seats occupies.
     **TSLP RECEPTOR — Upstream Bio (Waltham MA; Nasdaq UPB), verekitug, full Phase 2 VALIANT presented 2026-09-08** (late-breaking
     oral). **NCT06196879**: global randomized double-blind placebo-controlled dose-ranging, **478 patients with severe asthma
     enrolled REGARDLESS of baseline eosinophils or any type-2 biomarker**, all ≥24 weeks of treatment (up to 60). **100 mg q12w
@@ -905,7 +910,40 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-09-17_
+_Last update: 2026-09-18_
+- **A 17-PATIENT SINGLE-ARM AAV TRIAL AGAINST A 27-PATIENT EXTERNAL NATURAL-HISTORY COHORT CLEARED *STANDARD FULL* APPROVAL — AND THE LABEL WROTE
+  ASCERTAINMENT INTO THE INDICATION. This ANSWERS the 09-04 external-control action, REFRAMES the 09-14 instrument action, and PROMOTES the 09-15
+  diagnosed-vs-prevalence point from a budget line to a label constraint (added 2026-09-18 Portfolio Watch LEAD; approved 2026-09-17).**
+  **FDA granted standard full approval of FAYUVI (rebisufligene etisparvovec-hopf), formerly UX111**, to **Ultragenyx (Nasdaq: RARE)** for
+  **neurologic manifestations of MPS IIIA (Sanfilippo syndrome type A) in pediatric patients with PRESERVED NEURODEVELOPMENTAL FUNCTION** —
+  single-dose **IV AAV9** delivering a functional **SGSH** gene. First-ever approved therapy for the disease; **Priority Review Voucher** granted;
+  orphan + fast track + breakthrough. ~**3,000–5,000 patients** in commercially accessible geographies, **median life expectancy 15 years**.
+  **PIVOTAL TRANSPHER A:** open-label, single-arm, multicenter; **mITT N=17** vs an **external matched untreated natural-history cohort N=27**;
+  endpoint = **mean change in Bayley-III Cognitive raw score from 24 to 60 months of age** (a TRAJECTORY across a developmental window, not
+  change-from-baseline at a visit); **+23.5 points, p<0.0001**; **clinical data now to nearly 8 years**; CSF heparan sulfate as supporting biomarker.
+  **THE ASK WAS ACCELERATED; THE GRANT WAS FULL.** The Jan-2026 resubmission sought **accelerated** approval on **CSF heparan sulfate as a
+  surrogate**; the agency granted **full approval on the clinical cognitive endpoint, no confirmatory trial owed.** ⇒ Read as *an 8-year clinical
+  dataset being strong enough that the biomarker shortcut was unnecessary* — NOT as the agency blessing the shortcut.
+  **READ ONE (Geoff Lynn + Hugh Wells) — THE EXTERNAL-CONTROL ACTION IS ANSWERED GENEROUSLY.** 17-vs-27 cleared a FULL approval in a pediatric,
+  neurological, ultra-rare setting. What carried it: natural history that is **catastrophic, stereotyped and ALREADY CHARACTERISED in a cohort
+  somebody had built years earlier.** ⇒ **The natural-history cohort is a dataset you assemble years before you need it.**
+  **READ TWO — THE 09-14 INSTRUMENT ACTION GETS A CHEAPER SHAPE. Ultragenyx did not invent an endpoint; it borrowed a decades-old validated
+  infant/toddler developmental scale and supplied the COMPARATOR.** ⇒ **Reframed action: which validated pediatric speech / language /
+  auditory-processing measures already have natural-history data in GENETICALLY CONFIRMED children? If none, fund the COHORT, not a bespoke
+  instrument.**
+  **READ THREE — ASCERTAINMENT IS NOW A LABEL CONSTRAINT.** "Preserved neurodevelopmental function" means the label only covers children found
+  before they decline. ⇒ **In a progressive pediatric disease FDA will write ascertainment into the indication, and undiagnosed patients are
+  OUTSIDE the label, not late to it.** Newborn hearing screening detects hearing loss; it does not genotype anyone. **Into the Series A model.**
+  **CMC, NOT BIOLOGY, SET THE TIMELINE: CRL July 2025** on **chemistry, manufacturing and controls + facility inspection observations**, with
+  **no issues raised on the clinical package or clinical inspections.** Second instance this month of manufacturing readiness setting the schedule.
+  **AAV SAFETY FOR OUR FILE:** liver enzyme increased **85%**, thrombocytopenia **19%**, TMA warning (no cases in-programme), **malignancy risk from
+  vector integration**, **corticosteroids mandated from 1 day pre-infusion through ≥8 weeks post**, 3-month shedding precautions.
+  **BUSINESS-MODEL FOOTNOTE (Matt Tremblay + Eddie Cherok):** vector built by **Haiyan Fu + Doug McCarty** at **Ohio State / Nationwide Children's**,
+  licensed to **Abeona**, then **out-licensed to Ultragenyx when Abeona hit funding constraints DESPITE positive clinical data.** Both the argument
+  for the incubator model and the argument for knowing early who the eventual holder of the asset is. Sources:
+  https://www.biospace.com/press-releases/ultragenyx-announces-approval-of-fayuvi-gene-therapy-the-first-ever-fda-approved-treatment-for-sanfilippo-syndrome-type-a-mps-iiia ·
+  https://www.biospace.com/press-releases/fda-approves-first-gene-therapy-for-pediatric-patients-with-sanfilippo-syndrome-type-a ·
+  https://curesanfilippofoundation.org/2026/01/ultragenyx-resubmits-ux111-to-fda-for-accelerated-approval-of-sanfilippo-type-a/
 - **THE MARKET-SIZE LINE IN THE DECK IS A *PREVALENCE* NUMBER; THE ONE THAT MATTERS IS THE *DIAGNOSED* NUMBER — and the sponsor is
   expected to pay the difference (added 2026-09-15 Portfolio Watch item 4; announced 2026-09-11).** **GeneDx + Beren Therapeutics**
   launched a fully sponsor-funded, no-cost, no-insurance genome/variant testing programme for **Niemann-Pick type C** (full entry under
@@ -1565,6 +1603,30 @@ _Last update: 2026-08-28_
   it. KRAS-landscape news is no longer portfolio-relevant on aSKY's account
   (Clasp remains a live KRAS-adjacent holding).
 ### Neuropsychiatric NewCo (schizophrenia) — Lieber Institute + Third Rock ✅
+_Last update: 2026-09-18_
+- **THE PSYCHIATRIC-INDICATION TAX, QUANTIFIED: A MOLECULE CLEARED 1,500 PATIENT-YEARS OF *NEUROLOGY* SAFETY AND THEN HIT A NEUROPSYCHIATRIC AE
+  SIGNAL ITS OWN PHASE 2 IN THE SAME INDICATION HAD NOT SEEN (added 2026-09-18 Portfolio Watch item 4; announced 2026-09-17).**
+  **Xenon Pharmaceuticals (Nasdaq: XENE)** submitted its **NDA for azetukalner in focal seizures** — a **Kᵥ7 potassium channel opener** — on positive
+  **Phase 2b X-TOLE + Phase 3 X-TOLE2**, with **>1,500 patient-years** of epilepsy safety/exposure. **In the SAME release: a voluntary pause on
+  new-patient enrollment in the Phase 3 MDD (X-NOVA2) and bipolar-depression (X-CEED) studies, "following an analysis of neuropsychiatric adverse
+  events in these studies."** Enrolled patients continue; **epilepsy studies unaffected**; done **with the DSMB**; **expected temporary**;
+  **dose-regimen modifications under evaluation**. X-NOVA2 at **~360 of 450 (~80%)**, stated still powered for the **HAM-D17** primary; will complete
+  the 6-week dosing period and unblind; **topline slips to Q1 2027**.
+  **THE LOAD-BEARING SENTENCE: the events, their RATE and their SEVERITY are "consistent with the known safety and tolerability profile of
+  azetukalner and its mechanism" — and "had not previously been seen in the Phase 2 X-NOVA clinical study in MDD."** Same molecule, same mechanism,
+  same indication; Phase 2 did not surface it.
+  **READ ONE: a CNS molecule can clear a large NEUROLOGY safety base and still throw a neuropsychiatric signal the moment it runs in a PSYCHIATRIC
+  population at Phase 3 scale. A GPR52 agonist aimed at positive, negative AND cognitive domains is in psychiatric patients from first patient
+  onward, with NO neurology detour available to build that base first.**
+  **READ TWO — THE ACTIONABLE ONE (Avi Khanna + Yixuan Qiu): Xenon found this through an ANALYSIS of adverse events, which means the events were
+  being captured in a form that supported one. ACTION: put STRUCTURED neuropsychiatric ascertainment — prospectively collected rating scales, not
+  adverse-event free text — into the GPR52 Phase 1 and Phase 2 protocols, not in after a signal.**
+  **READ THREE — THE LEVER: Xenon kept the programme and reached for the DOSE REGIMEN. For a Gs-coupled GPCR agonist that is the same lever, and it is
+  a Phase 1 exposure-and-occupancy question. Answer it before Phase 2 rather than after.**
+  **CANDID ON THE TRANSFER: an ion-channel opener with a mechanism-linked CNS AE profile is NOT the same liability as an orphan receptor whose
+  striatal-restricted expression is the entire selectivity argument. What transfers is (a) the ascertainment lesson and (b) the epistemic point — a
+  Phase 2 in psychiatry powered for EFFICACY said nothing reliable about TOLERABILITY at scale.** Source:
+  https://www.biospace.com/press-releases/xenon-announces-azetukalner-nda-submission-to-fda-for-focal-seizures-and-provides-update-on-psychiatry-clinical-program
 - **What:** **GPR52 agonist** program for schizophrenia. GPR52 is a
   schizophrenia-risk-gene-linked orphan GPCR pursued as a route to **all three
   symptom domains** (positive, negative, cognitive). Built with **Lieber
@@ -2153,7 +2215,49 @@ _Last update: 2026-09-17_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-17_
+_Last update: 2026-09-18_
+- **ROCHE PAID $1B IN MILESTONES FOR THE *SEARCH*, NOT A MOLECULE — AND THE SELLER'S OWN MARKETING FRAMES WINNOW'S APPROACH AS THE THING TO BEAT
+  (added 2026-09-18 Portfolio Watch item 3; announced 2026-09-17).** **Roche + Dualitas Therapeutics (California): $36.5M upfront**, milestones
+  **up to $1B**, **tiered royalties**; Roche takes **all** preclinical, regulatory, manufacturing and commercial activity; focus **immunological and
+  inflammatory conditions**, **no indications named**. What was bought is the **DualScreen Bispecific Discovery Engine**, which Dualitas says screens
+  **"more than 300,000 bispecific combinations"** and positions explicitly against bispecifics that **"narrowly focus on pre-determined target pairs
+  of known biology."**
+  **THE READ (Jon Robbins + Virginia Burger) — THAT IS A COMPETITOR'S FRAMING OF OUR APPROACH, AND IT SHARPENS THE FIRST-PARAGRAPH PROBLEM.** Winnow
+  is **one deliberately chosen pairing on a mechanistic hypothesis.** If a large pharma will pay $1B in milestones for hypothesis-free search across
+  300,000 pairings, **the question is not WHICH PAIR — it is what the chosen pair claims that an unbiased screen would not find. The defensible
+  answer is the REASON the pair works (an antigen presented only on the pathological cell), not the pair itself. The pair is findable; the reason is
+  the IP.**
+  **DEAL-SHAPE RIDER: $36.5M against a $1B headline is <4% upfront** — sixth instance this month of the milestones-not-upfront shape, and the **first
+  showing it holds for a DISCOVERY ENGINE** rather than a delivery/selectivity layer (cf. the 09-17 Sironax/Ascendis read under Aletira). Sources:
+  https://www.biospace.com/deals/roche-bets-up-to-1b-to-advance-next-gen-bispecifics-with-dualitas ·
+  https://www.biopharmadive.com/news/roche-dualitas-bispecific-antibodies-immune/830573/
+- **AN *APPROVED* CAR-T WITH RMAT DESIGNATION IS MOVING INTO LUPUS, AND IT MAKES THE "DEPTH AND DURABILITY" CLAIM BETTER THAN WE CAN (added
+  2026-09-18 Portfolio Watch item 6; designation announced 2026-09-09, surfaced regionally 2026-09-17).** **Autolus Therapeutics plc** (dual HQ
+  **London + Gaithersburg, MD**) received **FDA RMAT designation** for **obecabtagene autoleucel (obe-cel)** in **SLE and lupus nephritis** on
+  **Phase 1b CARLYSLE** data. Obe-cel is **already marketed as AUCATZYL** for adult **r/r B-cell ALL**. Pivotal **Phase 2 LUMINA** enrolling across
+  **five countries**, data **2028**. CDO **Dr. Matthias Will**.
+  **THE READ (Jon Robbins): this is B-CELL DEPLETION again — same lane as the 09-15 GSK/Chimagen CD19xCD20 purchase — so the crowd is still not on
+  our ANTIGEN axis. BUT the 09-17 conclusion was that Winnow cannot compete on convenience and must compete on DEPTH AND DURABILITY (one course,
+  durable drug-free remission). That is precisely the claim a CAR-T makes best, and Autolus will make it with an APPROVED product, an existing
+  manufacturing base and a designation. ⇒ The competitor to beat on that sentence is the CELL THERAPY, not the chronic pill.**
+  **CANDID: no patient numbers, response rates or safety findings from CARLYSLE were disclosed by the company or the coverage — there is no effect
+  size to compare against.** Source:
+  https://biobuzz.io/news/gaithersburgs-autolus-wins-fda-rmat-status-to-push-its-approved-leukemia-car-t-into-lupus/
+- **THE IPO PRICED AND UPSIZED, AND THE WINDOW'S ENTRY BAR IS NOW STATED AS DATA: PHASE 2 (updates the entry below; priced 2026-09-17, trading
+  2026-09-18 as ETRA).** **Electra banked $350M**, upsized from the ~$325M/​~$976M-fully-diluted terms in the entry below. **21st biotech IPO to
+  price in 2026; 11th to raise ≥$300M — matching all of 2021 and beating the prior four years combined. EVERY one of the 21 had a drug in HUMAN
+  TESTING; EVERY one of the 11 at ≥$300M had a drug in at least PHASE 2.** Second asset **ELA822** recently entered **Phase 1** in other T-cell-related
+  inflammatory conditions; sHLH pivotal enrollment now guided to complete **2H 2027** (study started 2022-05-19 — a $350M raise on a trial that will
+  have run >5 years).
+  **READ ONE (Jon Robbins + Hemaka Rajapakse + Emily Wilkinson): a financing-path constraint stated as DATA rather than sentiment. This cycle's public
+  market is not buying platforms and is not buying first-in-human. ⇒ The crossover round for Winnow AND Aletira must be sized to reach PHASE 2 DATA,
+  because Phase 2 data is what the exit is priced against; a round sized to reach an IND buys a worse conversation.**
+  **READ TWO — THE STUDIO COMPARABLE, AND IT IS THE CLOSEST ONE WE HAVE (Eddie Cherok + Emily Wilkinson): Electra was a subsidiary of Star
+  Therapeutics, a company creator that spins assets into separately capitalised subsidiaries. Another Star subsidiary, Vega Therapeutics, was acquired
+  by Incyte in June 2026 for up to $2B. One venture studio, a $350M listing and a ~$2B sale out of two subsidiaries inside one year — TWO REALIZED
+  OUTCOMES, not a thesis. ACTION: an afternoon on how Star capitalises and governs a subsidiary, and how much shared infrastructure sits at the
+  parent.** Sources: https://www.biopharmadive.com/news/electra-biotech-ipo-price-secondary-hlh/830698/ ·
+  https://www.fiercebiotech.com/biotech/electra-rides-biotech-ipo-surge-charge-350m-upsized-listing
 - **"SELECTIVELY DEPLETE PATHOLOGICAL T CELLS" IS OUR SENTENCE, AND THE FIFTH COMPANY TO SAY IT IS PRICING ON NASDAQ — "SELECTIVE"
   HAS STOPPED BEING THE DIFFERENTIATOR AND THE *AXIS* OF SELECTIVITY HAS BECOME IT (added 2026-09-17 Portfolio Watch item 3; IPO
   expected to price 2026-09-17).** **Electra Therapeutics (Nasdaq: ETRA)**: **~21.7M shares at $14–16 ≈ $325M gross**, fully
@@ -2666,6 +2770,21 @@ _Last update: 2026-09-11_
 - **Watch:** DNA-barcoded antibody / multiplexed proteomics reagent platforms.
 
 ### Clasp Therapeutics — JHU-born precision immuno-oncology (TCR-mimic bispecific T-cell engagers) ✅
+_Last update: 2026-09-18_
+- **A FREDERICK, MD COMPANY IS BUILDING LICENSABLE SMALL-MOLECULE COMBINATION PARTNERS FOR EXACTLY THE RESISTANCE PROBLEM CLSP-5282 IS POSITIONED
+  AGAINST, ON AN 18–24-MONTH CLOCK — CHIEF-BUSINESS-OFFICER FIRST-READ (added 2026-09-18 Portfolio Watch item 5; announced 2026-09-15).**
+  **TEDCO invested $25,000 in Sirius Biotech Ventures (Frederick, MD)** through its **Concept Capital Program**. **HONEST FRAMING FIRST: $25K is a
+  concept grant, not a financing — do not overread the check.** CEO **Frantz Jean-François, PhD**; discovery-stage oncology; developing **companion
+  small-molecule candidates to overcome resistance to KRAS inhibitors** and extend durability of response, pairing **clinically relevant
+  KRAS-inhibitor-resistance models** with **high-content phenotypic + functional profiling, mass spectrometry and natural-product chemistry**; stated
+  goal **validated KRAS combination assets ready for LICENSING within 18–24 months.**
+  **THE COLLISION (Eddie Cherok): CLSP-5282 is a KRAS G12V TCE positioned explicitly to kill HARDER in KRAS-inhibitor-resistant tumours and to LAYER
+  ON TOP of the small-molecule inhibitors (SENTINEL-101, NCT07650357). Sirius is building the small-molecule half of that same combination, in
+  Maryland, built to LICENSE rather than to raise. ⇒ Either a combination partner for Clasp or a cheaper answer to the question Clasp is asking, and
+  it costs nothing to find out which while the last check was $25,000.**
+  **STRUCTURAL NOTE: de-risk to a licensable asset in 18–24 months with no company at the end is Blackbird's own model run FOR PROFIT, by somebody
+  else, in Maryland. Worth understanding before it is a competitor for the same academic IP.** Source:
+  https://biobuzz.io/news/tedco-backs-frederick-biotech-sirius-biotech-ventures-to-tackle-kras-drug-resistance/
 - **What:** Off-the-shelf **TCR-mimic bispecific T-cell engagers** ("pHLAre" = precise
   HLA-redirecting engagers). Unlike surface-antigen TCEs, they target the tumor-**specific
   peptide fragment of a mutant oncogenic driver presented on HLA** — one arm binds the

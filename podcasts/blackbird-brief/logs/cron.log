@@ -2628,3 +2628,42 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scr
 
 One thing outside this run's scope, flagged: `2026-09-15-portfolio-watch.commit-msg` and `.rss-item.xml` are still untracked, so `publish_pending.py` appears not to have completed for the 09-15 episode.
 === 2026-09-17T02:32:36-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-18T02:10:24-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the two transient stubs instead of running TTS, publishing to R2, editing `feed.xml`, or committing — `publish_pending.py` does that after batch TTS.
+
+**Published (pending batch TTS):** `podcasts/blackbird-brief/scripts/2026-09-18-portfolio-watch.md` — Portfolio Watch, 2,450 spoken words (~12 min), plus `.rss-item.xml` (XML validated) and `.commit-msg` stubs. Ledger appended (70 episodes, 387 items). `memory/blackbird-portfolio.md` updated in place on four entries (Aletira, Winnow, Neuropsych NewCo, Clasp) plus a fifth alarmin seat added to the COPD theme map.
+
+---
+
+**CANDIDATE FUNNEL — blackbird-brief Portfolio Watch, 2026-09-18** (window 2026-09-15 → 2026-09-18)
+
+Dedup ledger at run start: 69 episodes / 403 match forms. Filter run twice: 17 candidates → 17 fresh; 6 candidates → 6 fresh (0 already shipped, 0 title matches).
+
+Per source:
+- **Fierce Biotech / Fierce Pharma** — indexes scanned (2), ~20 items, 4 on-thesis. **ARTICLE BODIES BLOCKED: uniform 5,489–5,490-byte Cloudflare 403** on every article URL; indexes fetched 200. Re-sourced Electra and the Ultragenyx CRL history elsewhere.
+- **BioSpace** (latest-news + press-releases) — ~43 items, 6 on-thesis. Full text readable.
+- **BioPharma Dive** — ~35 items, 4 on-thesis. Full text readable.
+- **Endpoints News** — index ~45 items, 5 on-thesis. **Article bodies paywalled**; two candidates dropped on the full-text eligibility gate (see below).
+- **GEN** — ~30 items, 1 on-thesis (BrainChild Bio, not built out).
+- **BioBuzz** — ~22 items, 5 Maryland/on-thesis.
+- **Portfolio-company direct search** (Blackbird Labs/BioVentures, Clasp, Winnow, Aletira, NuGate) — 0 in-window items.
+- **Partner institutions** — JHTV `ventures.jhu.edu/news/` **HTTP 403, third consecutive day**; Hopkins Hub 200 but nothing translational in window; Lieber Institute 200 but index renders no dated links.
+- **`r.jina.ai` unavailable all run** — TLS-intercepted on this network (cert presented is `*.scripps.edu`), so every reader-proxy route was dead. Plain curl + Safari UA covered it.
+
+Shortlist (✅ = chosen):
+- ✅ **LEAD** — FDA grants standard FULL approval of Ultragenyx FAYUVI (UX111) for Sanfilippo A — biospace.com/press-releases/ultragenyx-announces-approval-of-fayuvi-gene-therapy… + biospace.com/press-releases/fda-approves-first-gene-therapy-for-pediatric-patients-with-sanfilippo-syndrome-type-a
+- ✅ **Item 2** — Electra amasses $350M in upsized IPO — biopharmadive.com/news/electra-biotech-ipo-price-secondary-hlh/830698/
+- ✅ **Item 3** — Roche bets up to $1B on Dualitas bispecific engine — biospace.com/deals/roche-bets-up-to-1b-to-advance-next-gen-bispecifics-with-dualitas
+- ✅ **Item 4** — Xenon azetukalner NDA + Phase 3 psychiatry enrollment pause — biospace.com/press-releases/xenon-announces-azetukalner-nda-submission…
+- ✅ **Item 5** — TEDCO backs Frederick's Sirius Biotech Ventures on KRAS resistance — biobuzz.io/news/tedco-backs-frederick-biotech-sirius-biotech-ventures-to-tackle-kras-drug-resistance/
+- ✅ **Item 6** — Autolus wins RMAT for obe-cel in lupus — biobuzz.io/news/gaithersburgs-autolus-wins-fda-rmat-status-to-push-its-approved-leukemia-car-t-into-lupus/
+- ✗ RegCell $66M Treg Series A — endpoints.news/regcell-lands-44m-series-a… — **dropped: paywalled, full-text gate** (Winnow-adjacent; revisit if it surfaces elsewhere)
+- ✗ Endpoints Parkinson's debut/licensing roundup — endpoints.news/a-parkinsons-biotech-debut-fundraising-campaign-and-licensing-deal — **dropped: 403 via WebFetch + paywalled** (Parkinson's is a pre-spinout theme; worth a retry)
+- ✗ BMS dumps $100M Orum degrader-antibody conjugate — Fierce body blocked; no portfolio program in the DAC space
+- ✗ Georgiamune $93M Series B (Gaithersburg, cancer + autoimmune) — no disclosed target overlap with Winnow
+- ✗ Remedy Plan (Gaithersburg, cancer metabolism) — Maryland but no program line
+- ✗ Novartis $125M for Sironax BBB platform — already the 09-17 LEAD
+- ✗ Roche Lunsumio confirmatory FL win, UNC Lineberger/OpenAI $40M cancer vaccine, Navion $10.8M, Koblan to Slate Medicines, Longeveron cardio miss, Marea/North Immunology reverse mergers, Goa Therapeutics launch, Novo/Orbis $1.4B — logged, off-thesis or no program line
+
+Live calendar item carried forward: Connect Biopharma Seabreeze STAT **COPD** topline (CBP-201-207) still guided to "later this month."
+=== 2026-09-18T02:25:15-07:00 done  blackbird-brief (exit 0) ===
