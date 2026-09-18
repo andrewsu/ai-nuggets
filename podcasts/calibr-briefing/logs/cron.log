@@ -4423,3 +4423,39 @@ Two judgment calls worth flagging: the Connect Biopharma story was genuinely con
 
 Sources: [BioPharma Dive](https://www.biopharmadive.com/news/novo-anthropic-ai-drug-discovery-development-deal/830540/), [BioSpace — Novo/Anthropic release](https://www.biospace.com/press-releases/novo-and-anthropic-will-collaborate-to-advance-drug-discovery-with-claude), [Anthropic — Claude Science](https://www.anthropic.com/news/claude-science-ai-workbench), [Claude — Novo Nordisk case study](https://claude.com/customers/novo-nordisk), [BioSpace — Novartis ALS](https://www.biospace.com/drug-development/novartis-halts-trem2-targeting-als-program-in-4th-trial-stumble-in-a-month), [BioPharma Dive — Sironax](https://www.biopharmadive.com/news/novartis-125m-for-blood-brain-barrier-crossing-platform-Sironax/830560/), [BioPharma Dive — Skyhawk](https://www.biopharmadive.com/news/skyhawk-huntingtons-drug-rna-splicing-results/830537/), [BioPharma Dive — Sling](https://www.biopharmadive.com/news/sling-linsitinib-series-c-financing-thyroid-eye-disease/830452/), [SEC 8-K — Connect Biopharma](https://www.sec.gov/Archives/edgar/data/0001835268/000183526826000034/exhibit991.htm), [Longeveron ELPIS II](https://investingnews.com/longeveron-announces-topline-results-from-elpis-ii-phase-2b-clinical-trial-evaluating-laromestrocel-as-a-potential-treatment-for-hypoplastic-left-heart-syndrome/), [BMS/Ono v. Amgen](https://medicaldialogues.in/news/industry/pharma/bristol-myers-ono-sue-amgen-to-block-proposed-opdivo-biosimilar-in-us-179377), [RegCell](https://www.businesswire.com/news/home/20260915919580/en/RegCell-Secures-$66-Million-of-Additional-Funding-to-Bring-Nobel-Winning-Immune-Tolerance-Science-to-the-Clinic), [CNBC — Novo rebrand](https://www.cnbc.com/2026/09/14/novo-nordisk-rebrands-to-novo-ceo-mike-doustdar.html), [Deutsche Bank rating](https://www.boerse.de/nachrichten/DEUTSCHE-BANK-RESEARCH-Novo-Nordisk-sell/38599613)
 === 2026-09-17T02:34:06-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-18T02:20:24-07:00 start calibr-briefing ===
+Both scripts are clean and written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped `gen_tts.py`, R2 publish, the feed edit, and the commit — the orchestrator handles those after batch TTS.
+
+**Published (pending batch TTS):**
+- `podcasts/calibr-briefing/scripts/2026-09-18-pharma-headlines.txt` (1,936 words, ~5 min)
+- `podcasts/calibr-briefing/scripts/2026-09-18-ultragenyx-fayuvi-sanfilippo-spotlight.txt` (1,620 words, ~7 min)
+- Plus `.rss-item.xml` and `.commit-msg` stubs for both (RSS fragments validated against the itunes namespace)
+
+**Candidate funnel**
+
+Sources scanned (jina reader was TLS-intercepted by the Scripps network today — cert served was `*.scripps.edu` — so all full text came via direct curl with a Safari UA, WebSearch, and WebFetch):
+- BioSpace latest news + press releases — ~47 items scanned, 18 on-target
+- Fierce Biotech / Fierce Pharma — indexes readable, **article bodies 403 to both curl and WebFetch** (Cloudflare); used for discovery only
+- Endpoints News — index readable (~80 headlines), bodies paywalled; used for discovery and cross-checking
+- BioPharma Dive — 4 articles read in full
+- Foresite Capital portfolio-news page — no Sept 17–18 items; nearest relevant is Pinnacle Medicines (oral peptides), used as context on the Novo/Orbis item
+- STAT News, Biocentury, Clinical Trials Arena, Biotech Voyager — not reachable/not needed once the above converged
+
+Shortlist (chosen marked):
+- **FDA full approval of Ultragenyx's Fayuvi (UX111) in Sanfilippo A — CHOSEN (headline lead + spotlight)**; full text read: Ultragenyx PR, FDA PR, BioWorld, CGTlive, price/stock coverage
+- **Bayer Kerendia approved for CKD in type 1 diabetes — CHOSEN (headline 2)**
+- **Roche CELESTIMO PFS win for Lunsumio + lenalidomide — CHOSEN (3)**
+- **Novo × Orbis Medicines, up to $1.4B oral macrocycles — CHOSEN (4)**
+- **Roche × Dualitas, $36.5M up front / up to $1B bispecifics — CHOSEN (5)**
+- **BMS returns ORM-6151 (CD33-GSPT1 degrader conjugate) to Orum — CHOSEN (6)**
+- **Electra $350M IPO; Lisata/Marea + $225M; North Immunology/Aethlon + $180M — CHOSEN (7)**
+- **Xenon azetukalner NDA + psychiatry enrollment pause — CHOSEN (8)**
+- **SK Biopharmaceuticals × 1ST Bio, 1ST-104 LRRK2/c-Abl — CHOSEN (9)**
+- **GOA Therapeutics launch, $15.5M, GOA26 — CHOSEN (10)**
+- **Fed hike / XBI, BMO commentary — CHOSEN (11)**
+- argenx added Thomas M. Brakel and Khurem Farooq to its board — dropped: could not verify Brakel's firm affiliation (no bios in the PR mirrors; searches returned unrelated people), and without it the item carries no context
+- Kincell Bio + Cellipont merger, Genentech/Roche Boston CVRM center, Beta Bionics $172.5M closing, Empaveli pediatric publication, Puma ALISCA-Lung2 start, new FDA oncology chief interview, rare germline EGFR lung-cancer risk paper — scanned, below the bar for a 5-minute roundup
+- Dropped as already shipped Sept 17: Novo/Anthropic, Novartis TREM2/lifonebart, Sironax, Skyhawk SKY-0515, Sling, Connect rademikibart, Longeveron, BMS-Ono v Amgen, RegCell (Skyhawk and del-desiran reappear in the spotlight only as contrast cases on external controls, not as items)
+
+One correction applied during drafting: I initially wrote that Lysogene's intracerebral LYS-SAF302 "failed"; verification showed it missed its primary endpoint in the main cohort of older children with a preservation signal in patients under 30 months, so the script now says that — and the age dependence reinforces the spotlight's point about Fayuvi's "preserved neurodevelopmental function" label.
+=== 2026-09-18T02:32:14-07:00 done  calibr-briefing (exit 0) ===
