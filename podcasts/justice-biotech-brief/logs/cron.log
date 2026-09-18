@@ -3288,3 +3288,33 @@ The strongest finding — and the most reusable — is a structural one I'd flag
 
 Two things worth knowing about the run itself: the bioRxiv sweep's output file was a **stale copy from 09-16** still on disk (the exact trap flagged in memory) — I removed it before parsing rather than trusting it. And the JSON-LD extractor that carried the 09-14 pick returned near-nothing today; plain anchor-text extraction found the 6 on-beat items instead. Both lessons are saved.
 === 2026-09-17T02:49:28-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-18T02:40:24-07:00 start justice-biotech-brief ===
+Episode written for **justice-biotech-brief 2026-09-18**. `SKIP_TTS=1`, so per PIPELINE.md I wrote the script plus the two transient stubs and made no TTS call, no R2 publish, no `feed.xml` edit, and no commit — `publish_pending.py` will do those after batch TTS.
+
+**Files written:**
+- `podcasts/justice-biotech-brief/scripts/2026-09-18-c1q-tam-lif-dexamethasone-car-t-tce-resistance-glioblastoma.md` (1,711 words)
+- `…​.rss-item.xml` (validated well-formed; `__LENGTH__` / `__DURATION__` placeholders in place)
+- `…​.commit-msg`
+
+**Pick:** C1q — a macrophage complement protein shuts off CAR T and T cell engager killing, and dexamethasone helps induce it. bioRxiv `10.64898/2026.09.15.751784` v1, posted 09-17, Joan Seoane's lab (VHIO Barcelona) with Sonia Guedan's CAR T group. Full text read (11.5 MB PDF → mutool). Editorial spine: the load-bearing result is the C1q-knockout rescue (neither a B7-H3 CAR nor a DLL3 engager worked in wild-type mice; both worked in knockouts), the suppressive dose is normal circulating C1q, LIF + dexamethasone cooperatively induce it via JAK and the glucocorticoid receptor, and a Phase 3-positive anti-C1q antibody (ANX005) already exists in a neurology company.
+
+**Candidate funnel**
+
+bioRxiv details API — 580 entries swept day-by-day (09-16 n=256, 09-17 n=314, 09-18 n=10), 573 unique DOIs, 114 keyword hits, ~15 substantive after discarding spurious matches (the `TIL` token matched "until"/"utilize" across ~70 items):
+- **CHOSEN** — C1q+ TAMs promote resistance to T cell engagers and CAR T, induced by LIF and glucocorticoids — `10.64898/2026.09.15.751784`
+- Dendritic cell PD-L2 restrains intratumoral CD8 T cell immunity — `10.64898/2026.09.10.750646`
+- Small-molecule mTORC1 activator enhances adoptive T cell therapy — `10.64898/2026.09.11.750909`
+- Bispecific anti-ASGPR1 promoting TNF-α recruitment/uptake — `10.64898/2026.09.11.750848`
+- Cardiomyocyte PD-L1 upregulation under irradiation + anti-PD-1 — `10.64898/2026.09.14.751375`
+- iNKT expansion controlling GvHD with preserved GvL — `10.64898/2026.09.11.750594`
+- Oncolytic virus + antibody combinations in osteosarcoma — `10.64898/2026.09.10.750740`
+
+News — BioPharma Dive (366 KB, ~35 dated items), Fierce Biotech index, endpts.com, BioSpace index:
+- BMS returns ORM-6151 anti-CD33 GSPT1 degrader-antibody conjugate to Orum after Phase 1 review, forfeiting $80M in milestones (09-17) — on-target for ADCs, but no efficacy or safety data disclosed and the primary source is a KOSDAQ disclosure; lost to the preprint on substance
+- Roche/Dualitas up-to-$1B next-gen bispecifics for immune disease; Solstice $225M immuno-oncology launch; Novartis $125M Sironax BBB platform — all deal news, no data
+- **Source failures:** Fierce Biotech *articles* return a uniform 5,490-byte Cloudflare block (index fetches fine); endpts.com returns 200/118 KB with no extractable anchors; BioSpace `.rss` now returns an empty 543-byte document and its index HTML carries no headline elements; `r.jina.ai` is TLS-intercepted on the Scripps network (cert `*.scripps.edu`), killing every jina full-text route — worked around with direct `curl` + Safari UA + `mutool`
+
+Policy/funder — ARPA-H news (one 09-17 item, not on-target); NIH news-releases returned a 5,480-byte stub, no items extractable; NSF not reached. Nothing on-target.
+
+**Side effect worth flagging:** I retested the 09-07 endothelin/CAR-T deferral (`10.64898/2026.09.02.748239`) since its ~2-week window closes 09-21 — it now returns 4.4 MB / 45 pages on the first try after nine cumulative 429s across two prior sessions. It's eligible and still unshipped, so it's a live candidate for tomorrow. Memory updated: the deferral is marked resolved-but-unshipped, and I recorded the BioSpace channel degradation.
+=== 2026-09-18T02:49:16-07:00 done  justice-biotech-brief (exit 0) ===
