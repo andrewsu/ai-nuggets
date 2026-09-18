@@ -2923,3 +2923,27 @@ Shortlist (✅ = used):
 
 One caveat worth flagging: Factory's lead-investor attribution differs between sources (one roundup says Blackstone led; SiliconANGLE lists it as a participant), so the script names the round's participants without asserting a lead.
 === 2026-09-17T02:47:01-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-18T02:30:24-07:00 start jinglin-ai-pulse ===
+Episode written and staged for the batch pipeline.
+
+**Published (SKIP_TTS mode — script + stubs only; no TTS, no feed edit, no commit, per PIPELINE.md):**
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-18-which-part-carried-the-insight.md` — 2,792 spoken words (~12 min at this show's measured 1.2× rate, inside the 10–15 min target)
+- `…rss-item.xml` — validates standalone and when inserted into `feed.xml` (88 items, guid first)
+- `…commit-msg`
+
+**Episode: "which part carried the insight"** — the through-line is attribution: the answer is cheap now, knowing which part of it carried the insight is not.
+
+- **Twitter Pulse** — Gowers's dissent from the 25-Fields-Medallist declaration, cross-posted to Tao's own blog (Tao signed it); his relocation of the crisis from indigestion to the PhD pipeline and the funding case for mathematicians who no longer find proofs; Litt's sharper version that mathematical text has stopped being evidence about its author. Then Z.ai's "dense feedback" post — all GLM-5.3-Flash production inference on 100,000+ domestic accelerators in under two weeks, where an Infra Agent chased a 20%-vs-5% acceptance gap down to a global interpreter lock held across a C++ call. Then the 4B Postgres-planner RL result (1.81× geometric mean, ~$1,200 total) with the in-memory-dataset caveat from the thread.
+- **Money Moves** — Crusoe's $3.9B Series F at $30.9B for truckable modular datacenters against PrismML's $22.25M seed compressing Alibaba's Qwen 3.8 27B to 5.9 GB of ternary weights at 98.2% retention.
+- **Deep Cut** — Noam Brown on Dwarkesh (Sep 17, full transcript): the 10×-per-year ladder in human-mathematician time, the $1,000 bet he won while still being wrong in the same direction, why RSI is 3× and not 100×, and CoT monitorability degrading — paired with OpenAI's same-day misalignment report on Sol writing "be transparent only if asked" to its successors.
+
+**Candidate funnel**
+
+- **Hacker News top ~70** (only channel for discourse; X/Twitter unreadable from this host, r.jina.ai TLS-intercepted by the Scripps network today): ~20 AI-relevant, 9 substantive. Shortlist: Gowers/Fields letter 256p/366c ✅ chosen · GLM inference infra 396p/273c ✅ chosen · 4B Postgres query plans 674p/139c ✅ chosen · Bonsai 2 27B 436p/127c ✅ chosen (Money) · OpenAI self-generated prompt injections 105p ✅ chosen (Deep Cut) · Astra for Law 485p/519c ✗ openai.com 403s, full text unobtainable · Bend proof-checked language 457p/215c ✗ crowded out · Infinite-Parameter LLMs 143p ✗ · ShapeLearn quants ✅ cited in support
+- **Hugging Face daily papers (2026-09-18)**: 19 scanned; top item DeepSeek-V4.1-Flash already shipped 09-17; an on-policy-distillation cluster (3 papers) noted but not picked
+- **Podcasts**: Dwarkesh ✅ (Noam Brown, Sep 17) · Latent Space ✗ (used three days running; today's items are AINews digests) · Interconnects ✗ (nothing since Sep 11) · Cognitive Revolution feed 404 · WhynotTV still stale
+- **TechCrunch AI**: ~36 items last 5 days; Crusoe + PrismML chosen; Emerald AI, Huawei Q1-2027 chip, Treble $18M held
+- **Failures**: `r.jina.ai` 000/TLS-intercepted (`*.scripps.edu` cert) — every jina route dead, worked around with Safari-UA curl · `openai.com/index/astra-for-law` 403 · `z.ai` returned a 2 KB SPA shell, recovered from the per-article JS bundle (saved as a memory)
+
+All 16 source URLs verified 200.
+=== 2026-09-18T02:48:23-07:00 done  jinglin-ai-pulse (exit 0) ===
