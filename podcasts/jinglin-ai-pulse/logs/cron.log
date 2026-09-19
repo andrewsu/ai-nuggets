@@ -2947,3 +2947,26 @@ Episode written and staged for the batch pipeline.
 
 All 16 source URLs verified 200.
 === 2026-09-18T02:48:23-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-19T02:30:11-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-19-the-receipts-showed-up.md` (2,796 spoken words, in line with the show's recent 2,571–3,350 range)
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-19-the-receipts-showed-up.rss-item.xml` (validated as XML, placeholders intact)
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-19-the-receipts-showed-up.commit-msg`
+
+**Episode: "the receipts showed up"** — the week's meta-narrative is the discourse turning documentary after two weeks of executive essays.
+- **Pulse 1:** Unredacted NYT-case filings — the internal quotes map onto the fourth fair-use factor (market harm) almost item for item. Caveat carried in the script: this is the plaintiff's brief, exhibits still sealed.
+- **Pulse 2:** CNN's hallucinated intelligence report that nearly put boarding parties on a Chinese ship — a failure mode where humans never left the loop, which no part of the Amodei/Zuckerberg/Legg debate addresses.
+- **Pulse 3:** Six independent Jev reproductions in two days; a Qwen LoRA lands 90 vs. 93, so the moat is the synthetic data, not the architecture.
+- **Money:** Manus at $4B (double the Meta deal Beijing blocked) vs. world-model labs going dark-forest silent.
+- **Deep Cut:** Ming-Yu Liu on MLST — a neural simulator needs ordinal, not cardinal, accuracy ("you don't need them to be precise"), with the takeaway aimed at how virtual-cell/perturbation models should be judged. NVIDIA paid-partnership disclosed in the script.
+
+**Candidate funnel**
+- **Hacker News (Algolia, 54h window, >80 points):** 88 stories scanned, ~25 AI-relevant. Shortlist: Microsoft/NYT filings (891/785) ✅chosen · CNN military AI near-miss (453/337) ✅chosen · OpenJev (625/264) ✅chosen · Bend proof-checked language (598) + "Bend 2 and the Vibe-Coding Trap" (319) — strong debate, cut for length · Astra for Law (570/674) — product launch · harness-design paper (210, also HF #5) — overlaps 08-25 episode · ZCode git-history upload (296+259) — GLM covered 09-18 · IEEE Spectrum on OpenAI's Jalapeño chip (120) · Alibaba open-source medical model (119).
+- **Hugging Face daily papers (09-18, 09-19):** 25 scanned; identical lists both days. No pick — DeepSeek-V4.1-Flash was covered 09-17; harness paper deduped above.
+- **TechCrunch AI + Venture (09-15→09-18):** ~45 scanned. Shortlist: Manus $500M/$4B ✅chosen · world-model secrecy ✅chosen · Jev founder profile ✅chosen · "Is the AI safety debate about safety or control?" ✅used as context · Anthropic biology lab · Claude-used-to-hack-OpenAI · family offices/AI · Bain $1.6B fund. Crusoe/PrismML/Profound/Factory excluded — shipped 09-17/09-18.
+- **Podcasts:** Latent Space (no new interview since AIUC 09-16, used), Dwarkesh (Noam Brown 09-17, used 09-18), Interconnects (nothing since 09-11), TWIML #777 (09-17), Hard Fork (09-18), MLST ✅chosen. MLST's Edward Hughes episode was rejected — already the 09-14 deep cut.
+- **X/Twitter:** not directly readable from this host (known issue); discourse signal sourced from the Latent Space AI News roundup's X recap, HN threads, and HF papers, with attribution stated as such rather than as first-hand reads.
+- **Source failures:** `r.jina.ai` TLS-intercepted by the Scripps network (cert `*.scripps.edu`) — all jina full-text routes unavailable; worked around with direct curl + Safari UA. `openjev.com` returns curl exit 000 from this host, so the script links the verified HN discussion instead. The ReScript share page is a JS-only SPA; retrieved the MLST transcript through its public share API and saved that route to memory.
+=== 2026-09-19T02:38:50-07:00 done  jinglin-ai-pulse (exit 0) ===
