@@ -4459,3 +4459,38 @@ Shortlist (chosen marked):
 
 One correction applied during drafting: I initially wrote that Lysogene's intracerebral LYS-SAF302 "failed"; verification showed it missed its primary endpoint in the main cohort of older children with a preservation signal in patients under 30 months, so the script now says that — and the age dependence reinforces the spotlight's point about Fayuvi's "preserved neurodevelopmental function" label.
 === 2026-09-18T02:32:14-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-19T02:20:11-07:00 start calibr-briefing ===
+Both scripts and their stubs are written. `SKIP_TTS=1` is set, so per PIPELINE.md I did not run `gen_tts.py`, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles all of that after batch TTS.
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-09-19-pharma-headlines.txt` (11.5 KB)
+- `podcasts/calibr-briefing/scripts/2026-09-19-anthropic-wet-lab-mythos-spotlight.txt` (13.4 KB)
+- matching `.rss-item.xml` (validated as XML) and `.commit-msg` stubs for each
+
+**Candidate funnel**
+
+Sources scanned (jina TLS-intercepted again on the Scripps net, so plain curl + Safari UA throughout):
+- BioPharma Dive front page — 366 KB, ~40 dated items, ~12 on-beat
+- Fierce Biotech / Fierce Pharma indexes — 862/857 KB, ~20 items; **article bodies 403 (uniform 5,490-byte Cloudflare block) for curl *and* WebFetch**, recovered one story from the index JSON-LD `description`
+- Endpoints index + article date-stamps — 118 KB, ~30 items, bodies paywalled (used only for dating)
+- BioSpace front page — 613 KB, ~45 items, bodies render in full
+- GEN — 219 KB; Clinical Trials Arena — 270 KB
+- **reuters.com — HTTP 401 for curl and WebFetch; recovered the full wire text from Star-Advertiser + Deccan Chronicle mirrors**
+- Primary sources read in full: Anthropic LSVP announcement, Lilly/PRNewswire approval release, White House MFN materials (via search), MIIT plan via BioSpace
+
+Shortlist after discarding stale and off-beat items:
+- **CHOSEN (spotlight + headline 1)** — Anthropic Bay Area wet lab (Reuters 09-18) + Life Sciences Verification Program opening Mythos to vetted biologists (Anthropic 09-17, Endpoints 09-18); Xaira (ARCH/Foresite Labs) a named launch participant
+- **CHOSEN** — FDA full approval, Inluriyo + Verzenio in ESR1-mutated breast cancer (Lilly, 09-18)
+- **CHOSEN** — All 50 states + DC + PR join GENEROUS MFN Medicaid model (09-18)
+- **CHOSEN** — China MIIT 2026–2030 biotech five-year plan (09-18)
+- **CHOSEN** — CHMP September opinions: Novo's Frehemgo/denecimig, Alexion's Klygefa/gefurulimab (09-18)
+- **CHOSEN** — Novo takes three non-incretin obesity programs from Kallyope (Fierce, 09-18)
+- **CHOSEN** — FDA data on declining first-cycle rejections (09-18)
+- **CHOSEN** — Mithrl $20M Series A, biomedical world model (GEN, 09-17)
+- **CHOSEN** — Germline EGFR T790M, 62× lung cancer risk in never-smokers (Science, 09-17)
+- Dropped as stale: RegCell $66M Tregs (09-15), Legend CEO Ingrid Zhang (09-15), Syntis SYNT-101 and Axoltis ALS (09-16), BrainChild Bio (09-08), Alzheon (09-11)
+- Dropped as already shipped 09-18: Novartis/Sironax, Electra IPO, Xenon, BMS/Orum, Roche/Dualitas, Novo/Orbis, Lisata-Marea, North Immunology
+- Dropped as unverifiable in detail: nothing — Kallyope was kept at reduced length on the Fierce index description alone, which is flagged in the script by attribution
+
+One judgment call worth flagging: this is the second Anthropic spotlight in three days (Tuesday's was the Novo deal). I kept it because the story is categorically different — vendor versus operator — and the script opens by drawing that contrast explicitly rather than re-covering the deal.
+=== 2026-09-19T02:32:29-07:00 done  calibr-briefing (exit 0) ===
