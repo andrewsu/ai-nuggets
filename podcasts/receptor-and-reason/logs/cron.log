@@ -4625,3 +4625,45 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I skipped TTS, R2 publ
 
 Unrelated to this run: `2026-09-15-receptor-and-reason.{commit-msg,rss-item.xml}` are still sitting untracked in `scripts/` with no matching mp3 — leftovers from an earlier truncated run that `publish_pending.py` never cleaned up.
 === 2026-09-18T03:09:08-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-19T02:50:12-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote the script plus the two stub files and left TTS, R2 publish, feed edit, and commit to `publish_pending.py`.
+
+**Files produced**
+- `podcasts/receptor-and-reason/scripts/2026-09-19-receptor-and-reason.md` — 3,059 spoken words (≈17.3 min at this show's observed 2,933–3,298 words → 1,010–1,101 s)
+- `…2026-09-19-receptor-and-reason.rss-item.xml` (validates as XML; `__LENGTH__`/`__DURATION__` placeholders)
+- `…2026-09-19-receptor-and-reason.commit-msg`
+- Ledger appended: 12 keys, now 120 episodes / 1,240 items
+
+**Candidate funnel**
+
+| Source | Scanned | Survived relevance | Notes |
+|---|---|---|---|
+| bioRxiv details API (09-11…09-19) | 1,999 records → 1,019 fresh v1 | 45 | day sweep re-run after `medrxiv 2026-09-19` (empty 200) hung the thread pool |
+| medRxiv details API (09-11…09-18) | 286 fresh v1 | 33 | |
+| arXiv live paged query (6×400, 09-06…09-17) | 2,400 entries, 0 × 429 | 137 bio+agentic | shared cache was 500 entries covering only 09-15…09-17 |
+| Nature family RSS (npp / mp / tp) | 14 articles | 7 probed, 5 readable | article pages now 303 to `idp.nature.com`; `curl -L` required |
+| Crossref journals | 47 items across 11 ISSNs | 20 | Elsevier needed `from-created-date`; `from-online-pub-date` returned 0 for all 5 Elsevier ISSNs |
+
+Batch dedup: 79 candidates → 72 fresh (7 already shipped). **Final-roster re-filter caught 2 more** — losartan/AAT (`s41386-026-02554-4`) and cue-elicited dlPFC GABA in CUD (`s41386-026-02563-3`) — both already shipped; I'd rebuilt the shortlist from the nature.com readability probe instead of the filter output, the same error as the last two runs. Replaced with the laromestrocel and taVNS medRxiv items.
+
+**Shipped (12, all read in full except where noted)**
+1. Prochlorperazine D2 occupancy + phMRI — nature.com/articles/s41386-026-02557-1 ← **lead**
+2. Serotonergic DRN sex dimorphism / ErbB4 — biorxiv 10.64898/2026.09.15.751692
+3. MK-801 disrupts ultrasonic vocalizations — 10.1093/ijnp/pyag048 *(abstract-only, tail carve-out)*
+4. 17q12 duplications in tic disorders — nature.com/articles/s41380-026-03849-0
+5. Lysosomal PRS in Parkinson's across ancestries — medrxiv 2026.09.14.26362981
+6. taVNS pupillometry in Parkinson's — medrxiv 2026.09.13.26362895
+7. Laromestrocel free-water neuroinflammation in AD — medrxiv 2026.09.16.26363132
+8. Closed-loop auditory stimulation in AD — medrxiv 2026.09.14.26360893 *(09-18 deferral, resolved)*
+9. LLM agents for genetic disease severity — arxiv 2609.19569
+10. NUMBERS clinical-evidence benchmark — medrxiv 2026.09.14.26363047
+11. OITE question-ablation — medrxiv 2026.09.15.26363139
+12. Neural-astrocyte hybrid automaton — arxiv 2609.16217
+
+**Source failures / gaps**
+- `www.biorxiv.org` returned the 17-byte 429 on **every** request across two workers (0 of 9 DOIs first pass; 1 landed on retry). `www.medrxiv.org` served 6 of 8 PDFs on the first try — the throttle is per-host. Nine Tier-1 bioRxiv candidates deferred, best being `2026.09.14.751462` (multispecies NMDA-receptor modulator, no abuse liability).
+- `r.jina.ai` still TLS-intercepted by the Scripps network (cert `*.scripps.edu`), 6th consecutive run.
+- Psychiatric Times index readable (579 KB, ~68 slugs, incl. a JNJ-5120/PIPE-307 phase 2 failure in MDD) but every article body is the 5,493-byte Cloudflare 403 — confirmed discovery-only.
+- `10.1016/j.pnpbp.2026.111940` (psychedelics + amphetamine shifting rat USVs toward positive-affect calls) is an excellent Tier-1 fit but has no abstract in EPMC *or* Crossref yet — carried to the next run.
+- Nothing in-window from ACNP, ECNP, chemRxiv, industry agentic-AI programmes, CPT, CPT:PSP, Biological Psychiatry, BP:CNNI, Drug Discovery Today, Cell Systems, Nature Biotechnology, or Briefings in Bioinformatics.
+=== 2026-09-19T03:23:13-07:00 done  receptor-and-reason (exit 0) ===
