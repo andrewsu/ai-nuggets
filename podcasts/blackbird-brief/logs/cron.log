@@ -2667,3 +2667,46 @@ Shortlist (✅ = chosen):
 
 Live calendar item carried forward: Connect Biopharma Seabreeze STAT **COPD** topline (CBP-201-207) still guided to "later this month."
 === 2026-09-18T02:25:15-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-19T02:10:11-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so I stopped at the stub files per PIPELINE.md — no TTS, no R2 publish, no `feed.xml` edit, no commit; `publish_pending.py` does those after batch TTS.
+
+**Published:** `2026-09-19-portfolio-watch` — Portfolio Watch, Saturday 19 September 2026. Spoken body 2,485 words (~13 min at show cadence), 5 items. Files: script `.md`, `.rss-item.xml` (XML-validated with the `itunes:` namespace bound), `.commit-msg`. Ledger appended (71 episodes, 6 new keys). `memory/blackbird-portfolio.md` edited in place — new Georgiamune entry in §2, new non-opioid-pain theme block, plus in-place updates to Winnow, Aletira and the oncology-surface-targets shelved-asset screen; five `_Last update:_` dates bumped.
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| BioPharma Dive front + gene-therapy topic | ~60 | 6 | full bodies via plain curl |
+| Fierce Biotech / Fierce Pharma | ~20 | 3 | indexes only; article bodies not attempted |
+| Endpoints News | ~60 | 8 | **all bodies paywalled** — teasers only |
+| BioSpace front + /latest-news-press-releases | ~110 | 7 | full bodies |
+| BioBuzz (Maryland/BHCR) | ~25 | 8 | full bodies; weekly roundup carried the region |
+| GEN | ~10 | 0 | front page bodyless |
+| GlobeNewswire keyword search | — | — | **failed to connect**, 3 queries |
+| JHTV `ventures.jhu.edu/news/` | — | — | **HTTP 403**, 4th consecutive day |
+| `hub.jhu.edu/news-network/` | — | — | **HTTP 404** |
+| Lieber Institute news | — | — | **connection failure** |
+| `r.jina.ai` | — | — | **TLS-intercepted** (cert `*.scripps.edu`), all proxy routes dead |
+
+Shortlist after dedup (20 → 18 by `shipped_keys.py`, then 2 more pulled by hand):
+
+- ✅ **Georgiamune $93M Series B** — biobuzz.io/.../gaithersburgs-georgiamune-raises-93-million-series-b... — **LEAD**
+- ✅ **RegCell $66M (Sakaguchi Tregs)** — biospace.com/press-releases/regcell-secures-66-million... — **paired into lead**
+- ✅ **BMS scraps Orum ORM-6151** — biospace.com/drug-development/bms-scraps-orums-targeted-degrader... — **item 2**
+- ✅ **Navion Neurosciences $10.8M seed** — biobuzz.io/.../charlottesvilles-navion-neurosciences... — **item 3**
+- ✅ **Serapha Bio C-suite / Ken Mills** — biobuzz.io/.../serapha-bio-names-senior-leadership-team... — **item 4**
+- ✅ **Remedy Plan RPT1G NAMPT** — biobuzz.io/.../gaithersburgs-remedy-plan-therapeutics... — **item 5**
+- ✗ Novartis/Sironax $125M BBB option — **already shipped 09-17** under a globenewswire URL
+- ✗ Novartis TREM2 lifonebart ALS fail — **already shipped 09-17** under a different-outlet URL
+- ✗ FDA Operation TrialBlazer — caught by the filter (09-15 LEAD)
+- ✗ Cellectis quits CAR-T; crossover-rounds piece — caught by the filter
+- ✗ Sensorion OTOF→GJB2 pivot — dated **June 11**, out of window
+- ✗ BridgeBio KRAS scope-cut, human-neuron chimera mice, FDA rare-disease endpoints — Endpoints bodies paywalled, dropped on the full-text gate
+- ✗ Emergent BioSolutions 90 Maryland layoffs, Maryland supply-chain piece, Kemp/NeuImmune, Crab Trap — generic ecosystem, no Blackbird line
+
+Two things worth flagging:
+
+1. **The ledger filter passed two already-covered items.** Sironax and the Novartis TREM2 ALS discontinuation both cleared `shipped_keys.py` because the ledger holds them under different outlets' URLs than the ones I found them at. I caught them by grepping `memory/blackbird-portfolio.md`, not by the filter. I've written that into the show notes — the portfolio file is effectively a second dedup layer and should be grepped for every pick before drafting.
+
+2. **Today's lead picks up two of yesterday's own deferrals.** The 09-18 funnel logged Georgiamune and Remedy Plan as "logged but not built out," and dropped RegCell on the full-text gate. It also recorded Georgiamune as having "no disclosed target overlap" — that was wrong on both counts, since Georgiamune is on our own BioVentures list and the overlap is the Treg axis rather than a target. The episode states that correction explicitly. One caveat I kept in the script rather than smoothing over: Georgiamune has issued **no press release**, so the tranche structure and the ~$296M pre-money are filing/database-derived, and the round appears to have closed around mid-August.
+=== 2026-09-19T02:28:06-07:00 done  blackbird-brief (exit 0) ===

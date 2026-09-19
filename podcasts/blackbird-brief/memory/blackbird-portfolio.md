@@ -548,14 +548,14 @@ _Last update: 2026-09-18_
 7. **Biolinco** — detail below.
 
 ### Current other investments (direct investment opportunities, not incubated by BBL)
-_Last update: 2026-09-18_
+_Last update: 2026-09-19_
 1. **Clasp Therapeutics** — JHU-born; detail below in this section.
 2. **Adventris Pharmaceuticals** — BioHub resident; detail in §2b.
 3. **Islex Therapeutics** — detail in §2b.
 4. **InfinityBio**
 5. **OnCusp Therapeutics**
 6. **DELFI Diagnostics**
-7. **Georgiamune**
+7. **Georgiamune** — Gaithersburg MD; detail below in this section.
 8. **KaloCyte**
 9. **Aevum Therapeutics** — BioHub resident.
 10. **CagePharma**
@@ -572,7 +572,7 @@ projects. News touching any of them is portfolio-relevant on the investment,
 even where the company has no detail entry in this file yet.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-09-18_
+_Last update: 2026-09-19_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases · cancer (Blackbird funded the **Intergalactic Center for
@@ -818,6 +818,25 @@ https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentall
     https://www.globenewswire.com/news-release/2026/09/15/3361907/0/en/connect-biopharma-announces-positive-preliminary-topline-data-from-its-global-phase-2-study-of-rademikibart-as-an-add-on-treatment-for-acute-exacerbations-in-adult-and-adolescent-p.html ·
     https://www.fiercebiotech.com/biotech/connect-biopharma-missing-asthma-primary-endpoint-sends-investors-spiraling-about-copd
 
+**NON-OPIOID PAIN theme — THE COMPETITION IS SELLING A *PROPERTY* AND A *POPULATION*, NOT A TARGET, AND THE ROUND CLOSED ON A REPEAT
+ION-CHANNEL FOUNDER (opened 2026-09-19 Portfolio Watch item 3; announced 2026-09-09, surfaced regionally 2026-09-17).**
+**Navion Neurosciences** (preclinical; **Commonwealth Bio Accelerator, Charlottesville VA**) first-closed a **$10.8M seed** led by the
+**Angelini Lumira Biosciences Fund**, with **3B Future Health Fund, the UVA LVG Seed Fund, the Virginia Innovation Partnership
+Corporation, the VTC Innovation Fund** and management. **NaViGATion™ platform** = AI-enabled chemistry + structural biology + human
+disease biology + ion-channel expertise → **precision sodium-channel (NaV) medicines for NEURONAL HYPEREXCITABILITY**, lead programmes in
+**genetic epilepsy** and **chronic neuropathic pain**. Founder/CEO **Andrew J. Krouse**; team previously built **Cavion**, acquired by
+**Jazz Pharmaceuticals in 2019**. Lumira's **Gerry Brunk** credits "frontier-level AI tools" with unlocking the discovery insights.
+**READ ONE (Anthony Accorsi + Virginia Burger): what the money bought is NOT A TARGET.** NaV channels are about as well-trodden as a
+target class gets and **Vertex already has an approved NaV1.8 blocker in acute pain.** Navion sells **SELECTIVITY ACROSS A CHANNEL
+FAMILY** — a medicinal-chemistry PROPERTY — plus **human genetics as the patient-selection story**, a POPULATION. ⇒ **Same shape as the
+COPD alarmin map: entrants compete on a PROPERTY or a POPULATION, never on the target itself. A Blackbird non-opioid pain programme owes
+the same answer — which of the two are we buying, and does it earn a line on the label.**
+**READ TWO (Matt Tremblay + Maisha Rahman): a university LICENSING seed fund + a state innovation corporation + a regional accelerator
+co-invested behind a real institutional lead in a PRECLINICAL company. That is the Baltimore-nexus playbook executed in Charlottesville,
+and it closed because the team had ONE ION-CHANNEL EXIT ALREADY. QUESTION FOR EACH THEME: which Venture Partner's network holds a repeat
+founder with a relevant exit, and are we recruiting that person BEFORE the science is ready rather than after?** Source:
+https://biobuzz.io/news/charlottesvilles-navion-neurosciences-raises-10-8-million-to-build-precision-medicines-for-misfiring-neurons/
+
 **PARKINSON'S theme — the constraint the field names is DIAGNOSTIC LATENCY, not target choice, and the inflammasome lane is
 already priced (added 2026-09-08 Portfolio Watch item 4; published 2026-09-08).** **Jefferies: ~$8B market by 2035**, *"one of the
 largest untapped opportunities in neuroscience"*; population expected to exceed **2 million** across US + Europe within ten years;
@@ -931,6 +950,23 @@ cardiac fibrosis). We do not currently run one.** **(b) REPRICING: $12M upfront 
 a partner-institution program to corp dev — not the milestone headline. Same lesson as the DualityBio ($45M) / Simcere ($75M) /
 Hanmi comparators: **the upfront is what a preclinical asset is worth, and it is small.** Source:
 https://www.biospace.com/deals/pfizer-punts-seagen-adc-further-muddying-value-of-the-43b-buyout
+  - **THE SCREEN NEEDS A SCOPE, AND IT IS A DEAL-STRUCTURE QUESTION ANSWERABLE IN TWO MINUTES: A SHELVED ASSET IS ONLY REACHABLE IF THE
+    ORIGINAL TRANSACTION WAS A *LICENCE WITH REVERSION*, NOT AN OUTRIGHT PURCHASE (added 2026-09-19 Portfolio Watch item 2; Orum
+    regulatory filing 2026-09-17, reported 2026-09-18).** **Bristol Myers Squibb discontinued ORM-6151**, a **degrader-antibody conjugate
+    (DAC)** in **Phase 1 in AML and MDS**, "after reviewing the clinical data for the program." **BMS acquired it from Orum Therapeutics
+    (Korea) in 2023 for $100M upfront + up to $80M in milestones — under an ASSET PURCHASE AGREEMENT.** Orum CEO **SJ Lee**: *"BMS acquired
+    this program through an Asset Purchase Agreement. As such, there are no reversion rights to Orum."* **Orum keeps the $100M, is not
+    obligated to return it, collects no further milestones, and does NOT get the molecule back — it is permanently dead inside the buyer.**
+    ⇒ **Pfizer could move the CD228 ADC because of HOW PFIZER HELD IT; ORM-6151 cannot move because of HOW ORUM SOLD IT. First question on
+    any shelved asset is therefore not stage or mechanism — it is licence-with-reversion-and-diligence vs outright purchase.**
+    **THE MIRROR, AND THE HALF THAT SHOULD CHANGE OUR BEHAVIOUR (Eddie Cherok + Hemaka Rajapakse): when Blackbird licences academic IP out
+    of JHU or UMB, or a portfolio company sells a programme to fund the rest of the pipeline, the REVERSION CLAUSE decides whether a
+    shelved programme is ever recoverable — and that trade is made AT SIGNING, years before anyone knows the asset will fail, and is never
+    renegotiable at the moment it matters.** **FAIR TO ORUM: ~$180M cash at Q2, no layoffs, second DAC ORM-1153 FDA-cleared last month for
+    AML/heme — plausibly the right trade, but a trade.** **NOT A MODALITY VERDICT:** Roche paid **C4 Therapeutics $20M upfront in April**
+    for two DAC programmes against **>$1B** in milestones; **Merck KGaA** is also partnered with C4; **J&J bought Firefly Bio for $1B in
+    June** to aim DACs at KRAS. Source:
+    https://www.biospace.com/drug-development/bms-scraps-orums-targeted-degrader-after-reviewing-phase-1-data
   - **THE THREE QUESTIONS THAT DECIDE WHETHER A SURFACE ANTIGEN IS BUILDABLE — ALL ANSWERABLE FROM A DATABASE BEFORE ANYONE MAKES A CONJUGATE (added 2026-09-14 Portfolio Watch item 2; presented 2026-09-13, IASLC WCLC 2026, Seoul, 09-12 → 09-15).**
     **Whitehawk Therapeutics** presented two **real-world** analyses of **PTK7 (protein tyrosine kinase 7)** in pretreated **EGFR wild-type NSCLC**, run with **Tempus AI** on real-world tumour samples rather than in a trial. Asset: **HWK-007**, next-generation PTK7-directed ADC, **Phase 1 (NCT07444814)** in non-squamous EGFR wild-type NSCLC, platinum-resistant ovarian and endometrial cancer.
     **Q1 — DOES THE TARGET SURVIVE STANDARD OF CARE?** PTK7 expression **largely stable** after chemotherapy, immunotherapy, chemo-immunotherapy and TKIs, with **less treatment-associated variation than MET, PD-L1 and ITGB6** — a comparative claim against three named late-stage ADC targets, **generated without a comparative trial**.
@@ -947,7 +983,24 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-09-18_
+_Last update: 2026-09-19_
+- **THE PRE-IND MEASUREMENT ITEMS ARE CMO/CDO PROBLEMS, AND THE MARKET RATE FOR THAT BENCH IS NOW ON THE RECORD — HIRED *BEFORE* THE
+  PIVOTAL, OFF AN INVESTIGATOR-INITIATED TRIAL (added 2026-09-19 Portfolio Watch item 4; announced 2026-09-17).**
+  **Serapha Bio** named a **five-person senior team** around **SERP-01**, an **in vivo BASE-EDITING** programme for **alpha-1 antitrypsin
+  deficiency**: **Kenneth T. Mills** CEO — **15 years founding President/CEO of REGENXBIO** (Rockville), took it public **2015**, still
+  **Chairman of its Board**, most recently CEO of **Tagworks Pharmaceuticals**; **Daphne Karydas** President + CFO — ex-President/CFO of
+  **Flare Therapeutics**, prior CFO/strategy at **Syndax** and **Allergan**, boards at COMPASS Pathways, Mineralys, Epikast; **Weston
+  Miller, MD** CMO — ex-CMO **Epicrispr**, prior **Graphite Bio**, **Astellas Gene Therapies**, **Sangamo**; **Nina Hunter, PhD** Chief
+  Development Officer; **Shiva Fritsch** Chief Corporate Affairs Officer.
+  **THE READ IS THE TIMING (Matt Tremblay + Emily Wilkinson + Geoff Lynn): a full C-suite spanning genetic medicines, regulatory, clinical
+  development, manufacturing and commercialisation, assembled for a programme still PRE-company-sponsored-trial. Karydas names emerging
+  INVESTIGATOR-INITIATED-TRIAL data as the driver of her conviction. They bought the team BEFORE the pivotal.**
+  ⇒ **APPLIED: the two open Aletira pre-IND items — the hearing-loss equivalent of a validated functional scale (09-14) and the
+  diagnosed-vs-prevalence ascertainment problem (09-15, promoted to a label constraint 09-18) — are CMO and CHIEF DEVELOPMENT OFFICER
+  problems, not CEO problems, and need a named owner BEFORE the pre-IND meeting rather than a hire after it.**
+  **SECONDARY (Eddie Cherok): the founding CEO of this region's anchor gene-therapy company is now running a base-editing company. The
+  Maryland genetic-medicines executive bench is real and IN MOTION — a call worth making for reasons beyond Serapha.** Source:
+  https://biobuzz.io/news/people-on-the-move-serapha-bio-names-senior-leadership-team-led-by-ceo-ken-mills/
 - **A 17-PATIENT SINGLE-ARM AAV TRIAL AGAINST A 27-PATIENT EXTERNAL NATURAL-HISTORY COHORT CLEARED *STANDARD FULL* APPROVAL — AND THE LABEL WROTE
   ASCERTAINMENT INTO THE INDICATION. This ANSWERS the 09-04 external-control action, REFRAMES the 09-14 instrument action, and PROMOTES the 09-15
   diagnosed-vs-prevalence point from a budget line to a label constraint (added 2026-09-18 Portfolio Watch LEAD; approved 2026-09-17).**
@@ -2252,7 +2305,27 @@ _Last update: 2026-09-17_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-18_
+_Last update: 2026-09-19_
+- **BOTH POLES OF OUR COMPETITIVE SPACE GOT CAPITALISED IN ONE WEEK — $158M INTO TREG MODULATION IN THREE DAYS, AND NEITHER BUYER IS A
+  T-CELL ENGAGER (added 2026-09-19 Portfolio Watch LEAD; RegCell closed 2026-09-15, Georgiamune surfaced 2026-09-17).**
+  **GEORGIAMUNE (~$93M Series B; full entry in §2)** puts an **ORAL CAPSULE** — **GIM-407**, a selective **Treg ACTIVATOR** in Phase 1
+  healthy volunteers for **IBD, SLE and type 1 diabetes** — behind the *selectivity* claim.
+  **REGCELL (Emeryville CA): $66M total — $44M Series A led by Playground Global** (Global Brain, Mitsui Chemicals, LG Technology
+  Ventures, Alumni Ventures, Medical Incubator Japan) **plus a second non-dilutive AMED grant of ¥3.4B (~$22M)**. Co-founder **Nobel
+  laureate Shimon Sakaguchi**; CEO **Michael V. McCullar**. Platform = **non-gene-engineered EPIGENETIC REPROGRAMMING** that converts the
+  **pathogenic T cells actually driving disease into stable, disease-relevant Tregs**, restoring tolerance *at the source* rather than
+  broadly suppressing. Funds an **IND** plus a **Phase 2 proof of concept in a second autoimmune indication**.
+  **THE READ (Jon Robbins + Virginia Burger) — THIS IS THE 09-17 CONCLUSION BEING SQUEEZED FROM BOTH ENDS.** On 09-17 we concluded Winnow
+  cannot win on **CONVENIENCE** and must compete on **DEPTH AND DURABILITY** (one course, durable drug-free remission). **The convenience
+  pole is now an oral pill making the selectivity claim; the durability pole is now a ONE-TIME REPROGRAMMING platform making the
+  tolerance-restoration claim — which is the strongest available version of the sentence we want Winnow to own.** ⇒ **The periodically
+  dosed engager sits in the middle and now has to justify itself against BOTH ends, not one.**
+  **CANDID LIMITS, AND THEY MATTER: GIM-407 is in HEALTHY VOLUNTEERS; RegCell has NOT FILED AN IND. Neither has a patient efficacy result
+  in autoimmune disease. Winnow is not behind on DATA — it is behind on NARRATIVE FUNDING, which is a different and more fixable problem.**
+  And **"selectively targets Tregs" is NOT "antigen-specific T-cell redirection"** — the antigen axis remains uncrowded and stays in the
+  first paragraph of the deck. Sources:
+  https://www.biospace.com/press-releases/regcell-secures-66-million-of-additional-funding-to-bring-nobel-winning-immune-tolerance-science-to-the-clinic ·
+  https://biobuzz.io/news/gaithersburgs-georgiamune-raises-93-million-series-b-for-its-cancer-and-autoimmune-pipeline/
 - **ROCHE PAID $1B IN MILESTONES FOR THE *SEARCH*, NOT A MOLECULE — AND THE SELLER'S OWN MARKETING FRAMES WINNOW'S APPROACH AS THE THING TO BEAT
   (added 2026-09-18 Portfolio Watch item 3; announced 2026-09-17).** **Roche + Dualitas Therapeutics (California): $36.5M upfront**, milestones
   **up to $1B**, **tiered royalties**; Roche takes **all** preclinical, regulatory, manufacturing and commercial activity; focus **immunological and
@@ -3079,6 +3152,32 @@ _Last update: 2026-09-18_
   cohort *"the most ph.III-relevant subgroup."* **OPEN ACTION (Eddie), unchanged since 08-27: does SENTINEL-101 (NCT07650357) carry a
   POST-DARAXONRASIB STRATUM in protocol? If not, why not — the resistance market now has a second tumour type and a dated Phase 3.**
   Source: https://www.biospace.com/drug-development/revmeds-newly-approved-rasonque-could-hold-up-in-non-small-cell-lung-cancer
+
+### Georgiamune — Gaithersburg MD, Blackbird BioVentures position, the INTERGALACTIC-CENTER THESIS WITH THIRD-PARTY CAPITAL BEHIND IT ✅
+_Last update: 2026-09-19_
+- **What:** clinical-stage immunotherapeutics built on **reprogramming immune signalling pathways to restore "immune balance."** ~**30
+  employees**. Founder/CEO **Samir N. Khleif**, medical oncologist + immunology researcher; platform originated in his own lab.
+- **Pipeline — ONE PLATFORM, ONE CELL TYPE, POINTED IN BOTH DIRECTIONS, AND THAT IS WHY IT IS OURS.** **GIM-122** — first-in-class
+  **dual-functioning mAb** for solid tumours that have stopped responding to checkpoint inhibitors. **GIM-531** — first-in-class **ORAL**
+  agent that **selectively targets regulatory T cells while SPARING other immune cells**, also checkpoint-unresponsive cancer.
+  **GIM-407** — **ORAL, first-in-class selective Treg ACTIVATOR**, **Phase 1 in HEALTHY VOLUNTEERS**, being developed for **IBD, SLE and
+  type 1 diabetes**. ⇒ **Suppress Tregs → oncology; activate Tregs → autoimmunity. That is precisely the premise of the Intergalactic
+  Center for Autoimmunity and Immuno-Oncology that Blackbird funded (§2 early-stage themes), now carrying third-party capital.**
+- **Financing:** **~$92.69M Series B** surfaced **2026-09-17** (round appears to have closed ~mid-August 2026), structured across **B1 +
+  B2 tranches**, **pre-money ~$296.31M** (post ~$389M), co-led by **Prevail Private Capital** and **Mubadala Capital** (Mubadala
+  returning). ~**92nd percentile** among comparable US health-sector Series B rounds. Prior **$75M Series A, Aug 2023**, closed alongside
+  the first IND clearance; syndicate included **General Catalyst, Parker Institute for Cancer Immunotherapy, Alexandria Venture
+  Investments, Catalio Capital, CJNV BioVenture, Verition**. CBO **Mark Avagliano** (appointed Nov 2024).
+- **OPERATIONAL NOTE (Eddie Cherok): THERE IS NO COMPANY PRESS RELEASE.** `georgiamune.com/news` carries nothing after **Nov 2024**, so
+  the tranche structure and valuation are **filing/database-derived** (reported by BioBuzz 09-17) and there is no management quote about
+  the round. **A Series B on a position we hold reached us from a data vendor roughly a month after close — find out why, and whether we
+  participated.**
+- **ACTION (Eddie): if the position gives us data-room access, take it. The GIM-531 / GIM-407 pair is the cleanest public experiment on
+  whether ONE immune platform can be pointed in both directions, and that answer decides whether the Intergalactic Center is a research
+  programme or a company generator.**
+- **Watch:** GIM-407 Phase 1 healthy-volunteer readout and which autoimmune indication it enters first; whether GIM-531 and GIM-407 ever
+  read out as a matched pair; Treg-modulation competitors (see the RegCell entry under Winnow). Source:
+  https://biobuzz.io/news/gaithersburgs-georgiamune-raises-93-million-series-b-for-its-cancer-and-autoimmune-pipeline/
 
 ## 2b. JHU-adjacent Baltimore ecosystem (not Blackbird portfolio; sourcing + landscape signal)
 
