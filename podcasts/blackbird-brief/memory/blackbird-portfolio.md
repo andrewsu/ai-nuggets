@@ -27,20 +27,31 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
 - **Founding grant:** $100M from the Bisciotti Family Foundation
   (Steve Bisciotti owns the Baltimore Ravens; "Blackbird" ≈ Raven). Created
   Jan 2023, public launch Nov 2023.
-- **Scale (as reported mid-2026):** ~22 companies backed; ~22 exploratory
-  research projects; 4 licensed programs. ~90% of companies with a Baltimore
+- **Scale (as reported mid-2026):** ~24 companies backed; ~28 exploratory
+  research projects; 5 licensed programs. ~90% of companies with a Baltimore
   nexus.
 - **Blackbird BioHub** — 42k sq ft wet-lab incubator at **City Garage**,
   Baltimore Peninsula (former bus depot). Private benches, office suites,
   shared instruments, on-site vivarium. Opened February 2026; helped by a $2M
   Maryland "Build Our Future" grant. Home base for incubated spinouts and
-  others in the region.
+  others in the region. **13 total resident companies (maintained roster, from
+  Blackbird 2026-09-18):** Blackbird Laboratories, EPOCH Epigenetics,
+  Myologica, Aletira Therapeutics, Aprentis, Adventris Pharmaceuticals, Equala
+  Therapeutics, 1104health, NuGate Therapeutics, Aevum Therapeutics, Allometra
+  Materials, The National Center to Accelerate Cures, Artemyx. **Blackbird does
+  not automatically invest in all resident companies** — several are not
+  affiliated with Blackbird and are only housed in the BioHub. (Myologica is
+  the clearest case: a resident service provider, not on the investment
+  roster.)
 - **BioHub resident companies — each selected to contribute a SHARED CAPABILITY to the building
   (added 2026-09-05; source = BioBuzz BioHub Showcase coverage, 2026-05-29).** As of the May 2026
   showcase: **80% of space built out**, **9 companies** moved in or signed, eventually **100+
-  researchers**. Named residents/featured companies: **Aletira Therapeutics** (§2), **Adventris
-  Pharmaceuticals** (§2b), **National Center to Accelerate Cures**, and two that had been missing
-  from this file entirely:
+  researchers**. **SUPERSEDED ON THE COUNT (2026-09-18): the roster is now 13 residents and is
+  maintained on the BioHub bullet above, first-party from Blackbird — use that list, not this
+  showcase snapshot. The process note below is closed.**
+  Named residents/featured companies: **Aletira Therapeutics** (§2), **Adventris Pharmaceuticals**
+  (§2b), **National Center to Accelerate Cures**, and two that had been missing from this file
+  entirely:
   - **EPOCH Epigenetics, Inc.** (Baltimore) — epigenetic + multi-omic **host-response diagnostics**;
     measures the body's epigenetic response to disease and environmental exposure rather than hunting
     scarce circulating tumor DNA. Founder **Eric Van Gieson**, former **DARPA program manager**.
@@ -378,10 +389,13 @@ _Last update: 2026-09-17_
   inaugural Blackbird Fellow).
 - **Avi Khanna, Ph.D.** — Sr. Director, Molecular Discovery (chemistry).
 - **Yixuan Qiu, Ph.D.** — Director of Research and Operations.
-- **Jason Zavras** — Venture Fellow.
+- **Jason Zavras** — Senior Venture Fellow.
+- **Haley Slosberg** — Venture Fellow.
+- **Marcus Rhodehamel** — Venture Fellow.
 
 ### Partner institutions
 - **Johns Hopkins University / Johns Hopkins Medicine** — anchor partner.
+  **Master Research Collaboration in place.**
   Tech-transfer: **Johns Hopkins Technology Ventures (JHTV)**, incl. the
   **FastForward** incubator. JHU Drug Discovery (Slusher lab) is a recurring
   source.
@@ -473,7 +487,7 @@ _Last update: 2026-09-17_
     packages on 6-18 month horizon. Worth Esther/Hemaka angling for visibility
     on the submitted-project longlist.
 - **University of Maryland, Baltimore (UMB)** — via **UM Ventures, Baltimore**
-  (co-investment agreement with Blackbird; "MPower" branding).
+  (**Master Research Collaboration in place**; "MPower" branding).
   - **NEW SHARED INFRASTRUCTURE — a concrete answer to the Baltimore-nexus objection (added 2026-08-30 Portfolio
     Watch item 4; announced week of 2026-08-21).** **NSF awarded the University of Maryland $17.3M over four years**
     for the **CRAB Lab** (Collaborative for the Realization of Autonomous Biomanufacturing) — an AI-enabled,
@@ -507,11 +521,13 @@ _Last update: 2026-09-17_
   spinout company is launched and based in Baltimore.
 
 ### Programs (talent pipeline)
-- **Blackbird Fellows** — paid (~10 hrs/wk) fellowships for near-graduation JHU
-  School of Medicine Ph.D. students doing investment due diligence; inaugural
-  oncology-focused cohort: **Sarah Neshat, Esther Park, Brittni Moore** (each
-  assigned an oncology modality to build investment criteria). Park converted to
-  full-time Ventures; Moore moved into biotech/pharma strategy & BD.
+- **Blackbird Fellows** — paid (~10 hrs/wk) fellowships for near-graduation
+  **JHU or UMB** Ph.D. **or M.S.** students doing investment due diligence and
+  landscaping. **Ten Fellows to date; two Fellows converted to full time.**
+  Inaugural oncology-focused cohort: **Sarah Neshat, Esther Park, Brittni
+  Moore** (each assigned an oncology modality to build investment criteria).
+  Park converted to full-time Ventures; Moore moved into biotech/pharma
+  strategy & BD.
 - EIR-style company-creation track converting academic founders into operators.
 
 ---
@@ -521,8 +537,8 @@ _Last update: 2026-09-17_
 Track news touching any of the targets, modalities, indications, PIs, or
 competitors below. These are the "so what for Blackbird" hooks.
 
-### Current spinouts (started as Blackbird projects)
-_Last update: 2026-08-28_
+### Current spinouts (started as Blackbird projects, usually result in investments)
+_Last update: 2026-09-18_
 1. **Neuropsych NewCo** (schizophrenia, GPR52) — detail below.
 2. **Aletira Therapeutics** — detail below.
 3. **1104health** — detail below.
@@ -531,14 +547,35 @@ _Last update: 2026-08-28_
 6. **Artemyx** — detail below.
 7. **Biolinco** — detail below.
 
-**Clasp Therapeutics** is tracked in this section too, but it is a JHU-born
-company Blackbird BioVentures invested in, not a Blackbird-incubated project.
+### Current other investments (direct investment opportunities, not incubated by BBL)
+_Last update: 2026-09-18_
+1. **Clasp Therapeutics** — JHU-born; detail below in this section.
+2. **Adventris Pharmaceuticals** — BioHub resident; detail in §2b.
+3. **Islex Therapeutics** — detail in §2b.
+4. **InfinityBio**
+5. **OnCusp Therapeutics**
+6. **DELFI Diagnostics**
+7. **Georgiamune**
+8. **KaloCyte**
+9. **Aevum Therapeutics** — BioHub resident.
+10. **CagePharma**
+11. **Lumenate Medical**
+12. **CurveAssure**
+13. **EPOCH Epigenetics** — BioHub resident; detail on the BioHub bullet in §1.
+14. **Alchemity**
+15. **Vasarya Therapeutics**
+16. **Aprentis** — BioHub resident.
+17. **Hillock Bio**
+
+These are Blackbird BioVentures positions, **not** Blackbird-incubated
+projects. News touching any of them is portfolio-relevant on the investment,
+even where the company has no detail entry in this file yet.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-09-17_
+_Last update: 2026-09-18_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
-autoimmune diseases (Blackbird funded the **Intergalactic Center for
+autoimmune diseases · cancer (Blackbird funded the **Intergalactic Center for
 Autoimmunity and Immuno-Oncology**).
 
 These are program themes, not named companies. Treat them as standing sourcing
@@ -3050,6 +3087,12 @@ JHU / UMB / Lieber-adjacent Baltimore ecosystem and inform sourcing conversation
 competitive landscape reads, or partnering opportunities. Update when a company
 raises, exits, or crosses a scientific milestone.
 
+**Two exceptions as of 2026-09-18:** **Adventris Pharmaceuticals** and **Islex
+Therapeutics** are confirmed Blackbird BioVentures positions (see the "current
+other investments" roster in §2). Their entries stay here because the landscape
+and competitive detail lives here — treat the news as portfolio news, not
+ecosystem news.
+
 ### Adventris Pharmaceuticals — JHU KRAS-vaccine company, Blackbird BioHub resident (mKRAS-VAX; aSKY landscape adjacency) ⚠
 - **Surfaced 2026-08-14 Portfolio Watch (LEAD, quiet-catalyst day — coverage-gap
   close, not a fresh event).** A Baltimore company (co-founders **Elizabeth M.
@@ -3057,11 +3100,12 @@ raises, exits, or crosses a scientific milestone.
   Immunotherapy) that **licensed mKRAS-VAX from Johns Hopkins**. **Resident at the
   Blackbird BioHub** and featured at the spring showcase (BioBuzz). Directory
   address 1812 Ashland Ave (JHU BioPark area). YC-backed; ~$500K seed (2023).
-- **CONFIRMED:** BioHub residency + JHU license. **NOT confirmed:** a Blackbird
-  BioVentures investment (open item — determines portfolio vs. ecosystem-neighbor
-  status; find the ownership line). The BioHub showcase piece grouped it among
-  "portfolio companies planning Series A + BioHub graduation," but that may mean
-  resident/tenant, not BioVentures-invested.
+- **CONFIRMED:** BioHub residency + JHU license. **OWNERSHIP RESOLVED
+  2026-09-18 (Blackbird, Maisha Rahman):** Adventris **is** a Blackbird
+  BioVentures position — it appears on the "current other investments" roster
+  in §2 (direct investment, not BBL-incubated). The 08-14 "is it ours?" open
+  item is closed: portfolio, not ecosystem-neighbor. The entry stays in §2b
+  because the landscape/competitive detail lives here.
 - **Asset — mKRAS-VAX:** off-the-shelf pooled synthetic long-peptide vaccine
   targeting the six common KRAS mutations (G12V/G12A/G12R/G12C/G12D, G13D) — trains
   T cells against the mutation itself (modality = vaccine, distinct from small
@@ -4258,7 +4302,7 @@ _Last update: 2026-09-12_
 - **Clasp eligible fraction vs a one-gate comparator (added 2026-09-01):** with rezatapopt (TP53 Y220C, no HLA gate, oral, 46% ORR / 10-month DoR) heading for a Q1-2027 accelerated-approval filing, compute CLSP-1025's multiplied eligible fraction (R175H prevalence × HLA-A*02:01 frequency) and the depth/durability differentiation the TCE has to show against an oral pill in the same mutation class.
 - **US price assumption across the portfolio (added 2026-09-01):** MFN agreements now cover ~89% of the branded market and include future-launch-price commitments. Which of our plausible acquirers has signed, and what does the capped US price do to the NPV in each program's value case? (Eddie + Emily.)
 - **Astek Diagnostics × Chatterjee gdpP (added 2026-09-01):** is there a collaboration to be had between Astek's sub-hour phenotypic susceptibility platform and the UMB β-lactam-tolerance genotype work — and what were TEDCO's milestone gates across the $250K/$500K/$750K ladder? (Yixuan.)
-- **"Alchemity" — reference-file gap or bad data (added 2026-08-31):** PitchBook's public investor profile lists **Blackbird Laboratories' most recent investment as 2026-07-09 in a company called "Alchemity."** No such entry exists in this file, and the company is not findable in press coverage, BioBuzz or JHTV materials. **Emily + Eddie: confirm internally whether this is a real position.** (Same sweep surfaced a durable descriptor for the §2b Adventris entry: its KRAS vaccine pairs **engineered cross-reactive antigens with a next-generation trans-amplifying RNA vector** — folded in there.)
+- **"Alchemity" — RESOLVED 2026-09-18, the PitchBook line was right:** PitchBook's public investor profile listed **Blackbird Laboratories' most recent investment as 2026-07-09 in a company called "Alchemity"** and nothing in press coverage, BioBuzz or JHTV materials corroborated it. Blackbird (Maisha Rahman) confirms Alchemity **is** a real position — it is now on the "current other investments" roster in §2. Still open, and smaller: no public descriptor of what Alchemity does. Someone should get one sentence on the asset before it shows up in a script. (Same sweep surfaced a durable descriptor for the §2b Adventris entry: its KRAS vaccine pairs **engineered cross-reactive antigens with a next-generation trans-amplifying RNA vector** — folded in there.)
 - **NXE'149 bidder set (updated 2026-08-31):** BMS moved DOWN after the 08-31 BioSpace interview (organic label expansion, Truist says BD not a primary focus). Re-rank and re-work **Otsuka, Neurocrine, AbbVie/Cerevel, Novartis, SK Biopharmaceuticals** — which of them has a stated appetite for a Phase-2-ready novel-mechanism CNS asset, and who has cash allocated this half?
 - **GPR52 biomarker package (added 2026-08-31):** the buyer's stated recipe is genetics + biomarkers. What is the actual PD/receptor-occupancy plan, is there a PET tracer path for GPR52, and what patient-selection hypothesis would a Phase 2 carry? This is now the gating item for the DC narrative, not a downstream question.
 - **AAV trial-execution benchmark (added 2026-08-31):** GenePHIT ran 64 sites in 12 countries without immunosuppression. Pull the AskBio operational model (site activation, capsid, dose, immunogenicity monitoring) as the reference point for what Aletira's Series A should claim it can execute.
