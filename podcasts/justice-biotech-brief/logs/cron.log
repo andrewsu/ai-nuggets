@@ -3318,3 +3318,29 @@ Policy/funder — ARPA-H news (one 09-17 item, not on-target); NIH news-releases
 
 **Side effect worth flagging:** I retested the 09-07 endothelin/CAR-T deferral (`10.64898/2026.09.02.748239`) since its ~2-week window closes 09-21 — it now returns 4.4 MB / 45 pages on the first try after nine cumulative 429s across two prior sessions. It's eligible and still unshipped, so it's a live candidate for tomorrow. Memory updated: the deferral is marked resolved-but-unshipped, and I recorded the BioSpace channel degradation.
 === 2026-09-18T02:49:16-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-19T02:40:12-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-09-19-orm-6151-bms-986497-cd33-gspt1-degrader-antibody-conjugate-discontinued.md` (1,445 words, ~5 min)
+- `…rss-item.xml` (parses as valid XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…commit-msg`
+
+**Pick:** ORM-6151 / BMS-986497 — Bristol Myers discontinued the CD33-GSPT1 degrader-antibody conjugate it bought outright from Orum in 2023, after reviewing Phase 1 data (Orum regulatory filing Thu 09-17; trade coverage 09-18). It was the only DAC that had reached patients anywhere. The take: the payload, not the address, is the common factor — BMS already terminated its own free GSPT1 glue CC-90009 in AML for lack of efficacy, and Orum's HER2-GSPT1 conjugate was dropped in 2025 after SAEs and a death; three programs, three antigens, one payload, and every fix has been a new antibody. Full text came from Korean press (Korea Biomedical Review, Seoul Economic Daily) plus BioSpace and the ClinicalTrials.gov record, since Endpoints paywalls and Fierce article bodies are Cloudflare-blocked.
+
+**Candidate funnel**
+
+- **bioRxiv** (details API, day-by-day 09-17/18/19): 682 unique DOI+version (314/352/16) → 32 v1 keyword hits → 2 on-target after discarding spurious matches (plus the C1q paper already shipped 09-18, caught by the dedup re-filter).
+  - Pan-B-Lineage Targeting with Adapter CAR-T Cells Controls Antigen-Heterogeneous Lymphoma — `10.64898/2026.09.12.751171` — **deferred, full text unavailable**: `.full.pdf` returned the 17-byte Cloudflare 429 twice, ~30 s apart. Retest next run.
+  - Unbiased, systematic surfaceome profiling of Acute Leukemia (Dana-Farber; CD70 in KMT2A-r AML) — `10.64898/2026.09.16.752145` — full text read (12.5 MB PDF → 90 KB text). Runner-up; lost on event size to a clinical discontinuation that kills a whole modality's only readout. Ages out of the 2-day window ~09-20.
+- **News / press** (all direct Safari-UA curl; `r.jina.ai` TLS-intercepted for the 4th consecutive run, cert `*.scripps.edu` — checked first, no time lost): BioSpace 221 KB, BioPharma Dive 366 KB, Endpoints 72 KB, Clinical Trials Arena 288 KB, Fierce Biotech + Fierce Pharma indexes ~860 KB each (**index only** — article bodies are the 5,490-byte Cloudflare block).
+  - BMS scraps Orum's ORM-6151 DAC after Phase 1 — https://www.biospace.com/drug-development/bms-scraps-orums-targeted-degrader-after-reviewing-phase-1-data — **CHOSEN**
+  - Roche–Dualitas bispecific deal for immune diseases ($36.5M up front, up to $1B) — https://www.biopharmadive.com/news/roche-dualitas-bispecific-antibodies-immune/830573/ — on-beat but 09-17 and preclinical screening, no asset data
+  - Enhertu CHMP positive opinion, adjuvant HER2+ early breast cancer (09-18) — EU regulatory follow-on to data already read out
+  - Keytruda + Padcev CHMP positive opinion, perioperative MIBC (09-18) — same
+  - Legend names new CEO as Carvykti competition grows (09-18) — people move, no science
+  - Cross-check: sibling show calibr-briefing's 09-19 headlines file confirmed Friday was a policy-and-platform day (MFN pricing, China five-year plan, Anthropic wet lab, Lilly Inluriyo approval) with nothing else on-target for this audience.
+- **Policy / funder pages** — all three failed from this host: `arpa-h.gov/news` 310 bytes, `nih.gov/news-events/news-releases` 5,480 bytes, `nsf.gov/news` 74 KB with no dated anchors extractable. Skipped per the source-level-failure rule.
+
+Sources: [BioSpace](https://www.biospace.com/drug-development/bms-scraps-orums-targeted-degrader-after-reviewing-phase-1-data), [Korea Biomedical Review](https://www.koreabiomed.com/news/articleView.html?idxno=33237), [Seoul Economic Daily](https://en.sedaily.com/finance/2026/09/17/bms-returns-orum-therapeutics-blood-cancer-drug-orm-6151), [Orum program update](https://www.orumrx.com/news/orum-therapeutics-provides-program-update-and-announces-drug-candidate-nomination), [NCT06419634](https://clinicaltrials.gov/study/NCT06419634), [Endpoints](https://endpoints.news/bristol-myers-scraps-orum-partnered-cancer-drug/), [Fierce Biotech](https://www.fiercebiotech.com/biotech/bristol-myers-dumps-100m-orum-degrader-antibody-conjugate-after-phase-1-look).
+=== 2026-09-19T02:52:10-07:00 done  justice-biotech-brief (exit 0) ===
