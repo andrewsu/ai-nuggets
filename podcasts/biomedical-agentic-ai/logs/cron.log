@@ -4661,3 +4661,42 @@ Episode written. `SKIP_TTS=1`, so per `PIPELINE.md` I stopped after the script +
 
 **Dedup:** HeartVar (bioRxiv 750569) and Virtuous Machines (Advanced Science, doi 10.1002/advs.76675) both resurfaced in this window and were correctly excluded — shipped 09-16 and 09-15. No prior coverage of Paper2Agent in any show's scripts.
 === 2026-09-18T02:08:08-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-19T02:00:11-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, feed edit, and the commit — the orchestrator handles those after batch TTS.
+
+**Files written**
+- `podcasts/biomedical-agentic-ai/scripts/2026-09-19-virtual-biotech-org-chart-as-architecture.md` (806 words in the spoken body, cap 1150)
+- `…rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders)
+- `…commit-msg`
+
+**Pick:** The Virtual Biotech — *Science*, published online 2026-09-17 (DOI 10.1126/science.aeg6779). Auth-walled, so full text was read from the CC-BY-ND bioRxiv preprint (10.64898/2026.02.23.707551, 159 KB extracted from the 4-page `.full.pdf`); the Science abstract matches the preprint's claims. Both URLs verified live.
+
+**Candidate funnel**
+
+- **bioRxiv** (details API, 2026-09-16→09-19, day-by-day): 938 records fetched, 928 unique, 65 keyword matches, 9 substantive after discarding spurious hits ("imaging agents", "chemical agent", "Merlin" the gene).
+  - scACORN: agent orchestration of small LMs for single-cell interpretation — `10.64898/2026.09.10.750801`
+  - Multi-agentic system for primer design in qPCR/LAMP — `10.64898/2026.09.15.751771`
+  - Microscope control with a natural language agent — `10.64898/2026.09.15.751723`
+  - From Prompt to Pipeline: LLM coding agents for reproducible bioinformatics pipelines — `10.64898/2026.09.11.751004`
+  - A Closed-Loop Robot Scientist for Autonomous Biological Discovery — `10.64898/2026.09.11.751076`
+  - TRACEDD: tool-grounded agentic coordination for explainable drug design — `10.64898/2026.09.12.751167`
+  - BoneGraph: self-correcting reasoning system for bone science — `10.64898/2026.09.17.752482`
+  - OpenLipid: LLM workflow for DIA lipidomics — `10.64898/2026.09.12.751192`
+  - Autonomous AI-driven nanoscale spatial mapping in 5xFAD — `10.64898/2026.09.09.750448`
+- **arXiv**: shared cache covered only 09-15→09-17 (500-entry cap), so one live listing call (300 entries, 09-16/09-17). 117 keyword+biomed matches, 5 substantive:
+  - LLM Agents for Evidence Based Genetic Disease Severity Classification — arxiv.org/abs/2609.19569 — *runner-up; full text read (HPO × ACMG/ACOG, ReAct+RAG over 10,211 terms, 93.6% accuracy, $0.10/term)*
+  - ScientistTwo: autonomous multi-agent research framework — arxiv.org/abs/2609.19644
+  - ScienceIDE: scientific codebases as agent-learnable environments — arxiv.org/abs/2609.19134
+  - WiCleanData: LM-assisted Wikidata taxonomy/type-constraint cleanup — arxiv.org/abs/2609.20057
+  - Medical-ontology multimodal system over 52,949 case reports — arxiv.org/abs/2609.19775
+- **PubMed** (reldate 5): 1,547 hits, 300 fetched, 36 relevance matches, 4 substantive — all Cell/PLOS Digital Health, first-indexed 09-17:
+  - **The Virtual Biotech** (Science) — `10.1126/science.aeg6779` — **CHOSEN**
+  - scBaseCount: AI agent-curated single-cell repository (Cell) — `10.1016/j.cell.2026.08.025` — strong fit, but Cell is 403 and its full text would have to come from a Feb-2025 preprint two revisions behind
+  - Toward autonomous science with agentic AI (Cell, perspective) — `10.1016/j.cell.2026.08.052`
+  - LLM agent for patient-safety-event detection (PLOS Dig Health) — `10.1371/journal.pdig.0001174`
+- **ChemRxiv**: `site:chemrxiv.org` search returned nothing inside the 4-day window (newest relevant hit was July 2026).
+- **News/product**: Stanford Medicine + Nature news + BigDATAwire coverage of the Virtual Biotech (09-17/09-18) — this is what surfaced the pick.
+- **Policy/funder**: ARPA-H top item 09-17 is SPECTRA (autism diagnosis), not agentic AI — no match. NSF news 09-17 is X-Labs topics — no match. **nih.gov news-releases: blocked from this IP** (Cloudflare "unable to access nih.gov"), no retry value; HHS not reached after that.
+
+Two notes worth flagging: this is the second Zou-lab pick in a row (Paper2Agent shipped 09-18), which the script acknowledges directly rather than hiding; and the show's dedup ledger `state/shipped.jsonl` is empty (0 keys, 0 episodes), so dedup was done against the 20 most recent feed titles instead — worth populating if you want the automated check to be load-bearing.
+=== 2026-09-19T02:09:07-07:00 done  biomedical-agentic-ai (exit 0) ===
