@@ -3344,3 +3344,27 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus
 
 Sources: [BioSpace](https://www.biospace.com/drug-development/bms-scraps-orums-targeted-degrader-after-reviewing-phase-1-data), [Korea Biomedical Review](https://www.koreabiomed.com/news/articleView.html?idxno=33237), [Seoul Economic Daily](https://en.sedaily.com/finance/2026/09/17/bms-returns-orum-therapeutics-blood-cancer-drug-orm-6151), [Orum program update](https://www.orumrx.com/news/orum-therapeutics-provides-program-update-and-announces-drug-candidate-nomination), [NCT06419634](https://clinicaltrials.gov/study/NCT06419634), [Endpoints](https://endpoints.news/bristol-myers-scraps-orum-partnered-cancer-drug/), [Fierce Biotech](https://www.fiercebiotech.com/biotech/bristol-myers-dumps-100m-orum-degrader-antibody-conjugate-after-phase-1-look).
 === 2026-09-19T02:52:10-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-20T02:40:09-07:00 start justice-biotech-brief ===
+Episode written. Per `SKIP_TTS=1`, I wrote the script plus the two stub files and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does those after batch TTS.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-09-20-adcar-t-biotinylated-rituximab-tafasitamab-daratumumab-antigen-escape-lymphoma.md` (1,391 words)
+- `…rss-item.xml` (validates as XML with the itunes namespace; `__LENGTH__` / `__DURATION__` placeholders)
+- `…commit-msg`
+
+**Pick:** AdCAR-T, bioRxiv `10.64898/2026.09.12.751171` (Seitz lab, KiTZ Heidelberg / Tübingen), posted 09-18. Full text read in full — 1.9 MB / 21-page PDF, Results + Discussion + Methods.
+
+The angle: adapters built from *drugs* (tafasitamab biosimilar, pharmacy rituximab, daratumumab biosimilar) rather than de novo binders, tested against a Raji mixture that seeds antigen escape on purpose. Two things the abstract doesn't tell you and the script does — at day 12 the triple combination did **not** separate statistically from rituximab alone (p=0.37) or daratumumab alone (p=0.83), and the two-adapter arms were never run. Then the local hook: Calibr's own CLBR001 is the same architecture, and ClinicalTrials.gov shows it demonstrated modularity in humans (same cells + an AbbVie switch in breast cancer, n=10) and then terminated that trial and withdrew its lupus/scleroderma/myositis study at n=0 — both "Business Decision," no safety reason — which is precisely the autoimmune application this preprint's discussion pitches.
+
+**Candidate funnel**
+
+- **bioRxiv** (details API, day-by-day 09-18/19/20): 352 + 61 + 0 = **413 unique DOI+version**; 09-20 returned a 63-byte body on all 6 retries (no content posted yet at 2am, not an outage). 15 v1 keyword hits, **2 on-target**:
+  - ✅ **CHOSEN** — Pan-B-Lineage Targeting with Adapter CAR-T Cells Controls Antigen-Heterogeneous Lymphoma — https://www.biorxiv.org/content/10.64898/2026.09.12.751171v1
+  - Unbiased, systematic surfaceome profiling of Acute Leukemia — `10.64898/2026.09.16.752145` (full text already in hand; lost on editorial strength, now closed)
+  - Remaining 13 hits were off-beat keyword matches (spatial/neoantigen/PARP oncology, a PD-L1 imaging macrocycle, an HIV bNAb LNP, plant biology).
+- **News** (BioSpace, BioPharma Dive, Endpoints, Fierce Biotech, Clinical Trials Arena — all HTTP 200): **zero in-window items.** Fierce index had nothing dated 09-19 or 09-20; every on-beat headline resolved older — Roche/Dualitas bispecific deal 09-17, Cellectis quits CAR-T 09-14, Endpoints ADC items 09-03 and 08-14. Standard Sunday weekend gap.
+- **Policy / funders:** not fetched this run — arpa-h.gov, nih.gov and nsf.gov news pages have returned blocked or undated bodies from this host for several consecutive runs, and a Sunday 2am window is the least likely to carry a new award announcement. Recorded as a gap.
+- **Source failures:** `r.jina.ai` TLS-intercepted by the Scripps network (cert `*.scripps.edu`) for the fifth consecutive run — checked first, routed around with direct Safari-UA curl, no time lost. `www.biorxiv.org` 429s on a `HEAD` of the chosen URL, but the PDF for that exact path downloaded cleanly earlier in the run, so the link is verified good.
+
+One thing to flag: I reopened the surfaceome preprint's recency on the API `date` field (2026-09-18) rather than its DOI stem (`2026.09.16`), which are two days apart. It was in window after all and lost on merit, not the filter — I've written that trap into memory so a future run doesn't retire a live candidate by reading the wrong date.
+=== 2026-09-20T02:49:35-07:00 done  justice-biotech-brief (exit 0) ===
