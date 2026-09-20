@@ -183,6 +183,40 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     https://www.biospace.com/deals/gsk-bags-chimagens-trispecific-t-cell-engager-in-deal-worth-up-to-750m ·
     https://www.gsk.com/en-gb/media/press-releases/gsk-to-acquire-potential-best-in-class-t-cell-engager-tce-for-multiple-myeloma-from-chimagen-biosciences
 
+  - **AND NOW THE SELLER'S GOVERNMENT PUTS A VOLUME TARGET ON THE WHOLE COLUMN — the first FORWARD COMMITMENT in this thread rather than a
+    transaction (added 2026-09-20 Portfolio Watch item 4; released 2026-09-18).** China's **Ministry of Industry and Information Technology plus
+    nine other government bodies** issued the pharmaceutical **five-year plan for 2026-2030**. Targets: **annual revenue at major drugmakers above
+    ¥3.5 trillion (~$520B)**; **>20% annual growth in the innovative-drug sector**; **≥25% of the world's FIRST-IN-CLASS drugs originating in
+    China**; **≥5 Chinese-developed products above $1B in global sales**; **50 companies at ¥10B (~$1.5B) revenue each**; **R&D above 10% of
+    revenue**. **Named frontier priorities: gene editing, cell therapies, AI-designed drugs.** The plan itself cites **Chinese out-licensing up 36%
+    year-on-year, cumulative value past $120B**, and frames the shift from API supplier and consumption market to **exporter of innovative drugs**.
+    NSCEB executive director **Caitlin Frazer**: the approach "has been to steal, scale and strangle American competitors in this space." BIO CEO
+    **John Crowley** on avoiding "inescapable dependencies."
+    **DURABLE READ (Eddie + Matt): every rung above — DualityBio $45M, Simcere $75M, HUTCHMED $110M, Harbour→Solstice, GSK/Chimagen preclinical up
+    to $750M — is now described by the seller's own government as the intended OUTPUT of industrial policy, with a volume target attached. The
+    conclusion does not move: the only differentiator worth claiming is an UNENCUMBERED COMPOSITION-OF-MATTER POSITION. What moves is the TEMPO we
+    should assume — and the three named frontier priorities are three things our portfolio is in.**
+    **SOURCING CAVEAT: the BioSpace write-up's "$3M biotech sector" baseline is an error the outlet hedges; the ¥3.5T / ~$520B 2030 target is the
+    figure reported consistently by Caixin, Xinhua and Global Times.** Source:
+    https://www.biospace.com/business/china-plans-to-transform-3m-biotech-sector-into-522b-powerhouse-by-2030
+
+- **A NEW CLASS OF FUNDER IS RUNNING OUR INSTRUMENT AT 40% OF OUR FOUNDING GRANT IN ONE CHECK — AND BUYING OPEN DATA INSTEAD OF IP (added
+  2026-09-20 Portfolio Watch item 3; announced 2026-09-15).** The **OpenAI Foundation** — the nonprofit parent governing OpenAI Group PBC — gave
+  **$40M to the UNC Lineberger Comprehensive Cancer Center** to generate data for more effective **personalised cancer vaccines**. Leads:
+  immunologist **Benjamin Vincent, MD** and computational biologist **Alex Rubinsteyn, PhD**; hundreds of de-identified tumour-tissue and
+  immune-cell samples from **three biobanks** to train better **tumour-antigen selection**, plus head-to-head comparison of vaccine formulations in
+  **triple-negative breast cancer** trials. It is the launch grant of the foundation's **second science programme, "Public Data for Health,"** which
+  funds **open-access** datasets; **Jacob Trefethen** (Head of Life Sciences and Curing Diseases) ties it to making findings "broadly available."
+  **DURABLE READ (Eddie Cherok + Maisha Rahman): this is OUR instrument — a large nondilutive grant into academic translational work — pointed at
+  the OPPOSITE output. We fund to create a defensible position; this funds to destroy the scarcity.** Two consequences: **(1)** a class of very
+  large, very fast, non-dilutive funders is now competing for the attention of exactly the PIs we fund and **asks for nothing in return**, which
+  beats our terms on every axis a PI cares about except the one that matters to a future company; **(2) ACTION — add "prior non-dilutive funding
+  and its publication / data-sharing obligations" to the diligence intake checklist.** If a programme has already taken data-generation money
+  carrying an open-data mandate, part of the **unencumbered composition-of-matter position** (09-13, 09-15) may be spent before we arrive.
+  **SECONDARY — ADVENTRIS (§2b, BioHub resident, JHU mKRAS-VAX): the money is aimed precisely at ANTIGEN SELECTION, the hardest problem in the
+  field, and the output will be public — a tailwind for anyone whose moat is not antigen selection and a headwind for anyone whose moat is.**
+  Source: https://biobuzz.io/news/unc-lineberger-lands-40m-from-openai-foundation-to-build-a-better-cancer-vaccine/
+
 - **THE FDA OPENED A PRE-IND ROLLING-REVIEW PILOT WHOSE ELIGIBILITY DESCRIPTION IS OUR OPERATING MODEL — APPLICATIONS CLOSE 2026-10-30
   (added 2026-09-15 Portfolio Watch LEAD; announced 2026-09-15).** **Operation TrialBlazer** is the department-wide HHS roadmap launched
   **2026-06-22** (FDA + NIH + ARPA-H + HHS OIG) to keep early clinical research in the US. Its operative piece is the **Expedited IND
@@ -235,6 +269,21 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
   load-bearing number is the M&A count — this is a LIQUIDITY YEAR, and Clasp's post-readout financing, Aletira's Series A and the
   GPR52 DC-vs-FIH timing call are all being decided into a window someone should be asking when it closes.** Source:
   https://www.biospace.com/business/biopharma-reverse-mergers-rise-1-600-in-q3-to-rival-ipos
+  - **THE REVERSE-MERGER DOOR'S ENTRY BAR IS A SYNDICATE, NOT DATA — TWO IN ONE DAY CARRYING $405M, ONE OF THEM PRE-PHASE-1a (added 2026-09-20
+    Portfolio Watch item 5; both announced 2026-09-17).** **Marea Therapeutics → Lisata Therapeutics**, stock-for-stock, with **$225M committed by
+    Forbion, venBio and Third Rock**; Marea holders ~60%, investor group 38%, **Lisata holders just over 2%**. Assets: **MAR001/005**, an
+    **anti-ANGPTL4** antibody **licensed from Novartis**, Phase 2b in severe hypertriglyceridemia, and **MAR002**, Phase 2 in acromegaly; both read
+    out **Q4 2027**; cash through 2028 and into Phase 3. Lisata's route here: a failed **Kuva Labs** buyout, a **72% workforce cut in August**, a
+    lawsuit against Kuva, then "strategic alternatives." **Josh Lehrer** is Marea CEO and new Lisata President/COO. **North Immunology → Aethlon
+    Medical**, with a **$180M private placement from Bain Capital, Janus Henderson and Deep Track**; North holders **95.25%**, Aethlon **4.75% plus
+    a CVR on the legacy Hemopurifier business**; Nasdaq **"NRTX"**, close expected **Q1 2027**, funded into **H2 2028**; founded by **ADAR1 Capital
+    Management**, CSO/co-founder **Mohit Gupta**; lead asset **NOR-101**, an **IL-13 × IL-18** antibody for atopic dermatitis aimed at Dupixent's
+    limitations (Dupixent: **$17.8B** last year). **Phase 1a does not start until Q1 2027.** ~two dozen biotechs have used this route in 2026.
+    **READ (Emily Wilkinson): (a) BOTH SHELLS WERE DISTRESSED — counterparty selection is the whole game, exactly as flagged 09-02. (b) North
+    Immunology is going public on an asset that has never been in a person, so THIS door's entry bar is a SYNDICATE, not data — materially
+    different from the 09-18 read that the IPO window's bar is "Phase 2," and both are true at once because they are different doors.** Sources:
+    https://www.biopharmadive.com/news/lisata-marea-deal-acquire-cardiovascular-endocrine-disease-drugs/830717/ ·
+    https://www.biopharmadive.com/news/north-immunology-aethlon-biotech-reverse-merger-eczema-drug/830631/
   - **THE CROSSOVER DOOR GETS ITS VOLUMES, AND THE NAMED CONSTRAINT IS FINANCIALS NOT SCIENCE (added 2026-09-09 Portfolio Watch
     item 5b; published 2026-09-09).** **PitchBook projects ~$4.22B across ~28 crossover rounds in 2026; 20 biotech IPOs completed
     YTD vs 8 in ALL of 2025.** Typical crossover→IPO lag **5–6 months**, compressible to **3–4** by well-prepared companies, some
@@ -1028,6 +1077,20 @@ _Last update: 2026-09-19_
   **no issues raised on the clinical package or clinical inspections.** Second instance this month of manufacturing readiness setting the schedule.
   **AAV SAFETY FOR OUR FILE:** liver enzyme increased **85%**, thrombocytopenia **19%**, TMA warning (no cases in-programme), **malignancy risk from
   vector integration**, **corticosteroids mandated from 1 day pre-infusion through ≥8 weeks post**, 3-month shedding precautions.
+  **THE PRICE, AND WHERE THE VALUE ACTUALLY SITS (added 2026-09-20 Portfolio Watch LEAD; priced 2026-09-18).** **FAYUVI IS PRICED AT $3.95M** —
+  use that as the anchor for a single-dose, ultra-rare, pediatric AAV gene therapy in the US, not a guess. **But the load-bearing line is the
+  analyst one: William Blair's Sami Corwin wrote that analysts do NOT project either of Ultragenyx's two 2026 gene-therapy approvals to become a
+  blockbuster, and named the SELLABLE drug-review vouchers obtained alongside both as what should "significantly bolster" the balance sheet.** The
+  company had already warned of cost cuts after its Angelman drug failed; shares still rose double digits on the approval. ⇒ **A first-ever
+  therapy for a fatal pediatric disease, priced just under $4M, is being valued on the TRANSFERABLE VOUCHER rather than on product revenue.**
+  **OPEN PRE-IND ITEM (Geoff Lynn + Emily Wilkinson): does a congenital hearing-loss programme qualify for a priority review voucher, and what is
+  one worth at the time we would receive it?** Nobody at Blackbird has answered this in writing. It belongs beside the 09-14 instrument item and
+  the ascertainment item above — **and the three interact: a voucher is a ONE-TIME event, which puts MORE weight on launch volume, which is set by
+  the DIAGNOSED GJB2 population, not the ~200,000 prevalence figure.** Same-day price context: MFN went from a voluntary manufacturer roster
+  (~89% of the branded market) to **all 50 states + DC + Puerto Rico in the Medicaid "GENEROUS" model** (CEA: $27.6B state + $36.6B federal over a
+  decade; agreements not public, so unverifiable). Candid — Medicaid is not the channel for a $4M one-time pediatric therapy, but the 09-01 action
+  to revisit the US price assumption in every programme value case now has a comparator number attached. Source:
+  https://www.biopharmadive.com/news/ultragenyx-fayuvi-orum-bristol-lunsumio-longeveron-rocket-danon/830512/
   **BUSINESS-MODEL FOOTNOTE (Matt Tremblay + Eddie Cherok):** vector built by **Haiyan Fu + Doug McCarty** at **Ohio State / Nationwide Children's**,
   licensed to **Abeona**, then **out-licensed to Ultragenyx when Abeona hit funding constraints DESPITE positive clinical data.** Both the argument
   for the incubator model and the argument for knowing early who the eventual holder of the asset is. Sources:
@@ -2228,6 +2291,18 @@ _Last update: 2026-09-17_
     SPLICE-SWITCHING ASO restoring UNC13A function in ALS and FTD** — **$45M upfront + equity, up to $577M milestones**, tiered
     royalties. **QurAlis is on this program's watch list above.** => **One company now holds a splice-switching oligonucleotide in
     NuGate's exact indication and intellectual estate AND has bought a systemic, repeat-dosable route into the brain.**
+    **UPDATE 2026-09-20 — THE QRL-204 THESIS JUST TOOK A DIRECT HIT FROM A HOPKINS BENCH, AND A SECOND MODALITY ENTERED THE COMPARATOR SET.**
+    (a) **Two Philip Wong companion preprints (09-15 / 09-18; full detail in §2b) show that preventing UNC13A cryptic splicing ALONE preserves
+    behaviour but NOT neurons in the forebrain, and does nothing at all in spinal motor neurons — UNC13A is ~3x lower in human cord than cortex
+    after neuronal-content correction, and STMN2 is the likely dominant spinal target.** ⇒ the asset Lilly paid $45M upfront for reads as
+    **inert in ALS and symptomatic-only in FTD**, and **the sufficiency question is now a standing internal test for NuGate's own target.**
+    (b) **Skyhawk's SKY-0515** — a **once-daily ORAL RNA-splicing small molecule** — posted 15-month Huntington's data (09-15): **+0.94 vs −0.65
+    on the composite functional scale against a natural-history comparator, a 1.59-point separation** against a literature "clinically meaningful"
+    estimate of 1.2, significant from month 9, **>60% mutant huntingtin lowering**, no SAEs; Phase 3 FALCON has one trial fully enrolled at 144 and
+    a worldwide study heading for ~600. **Roche scrapped two Ionis-partnered Huntington's ASOs in July 2026; three months later the readout in
+    that indication is a TABLET.** ⇒ **Same conclusion as the QurCan item below, arriving from the opposite direction: by NuGate's readout the
+    comparator may not be "nothing" — it may be a pill.** Candid on Skyhawk: external rather than randomised comparator, a literature-derived
+    threshold, small and open-label. Source: https://www.biopharmadive.com/news/skyhawk-huntingtons-drug-rna-splicing-results/830537/
     **CANDID LIMITS: QurCan is RESEARCH-STAGE — no named molecule, no IND, no clinical data; the BBB claim is PRECLINICAL (the
     largest graveyard in neuro delivery); C-TERP's mechanism is undisclosed and cannot be externally assessed. Lilly bought an
     OPTION, priced like one.** => **The comparator is not here yet, but the buyer with the most to gain has paid to build it.
@@ -3526,6 +3601,33 @@ ecosystem news.
 - **Watch:** Company financing, IP licensing, clinical-development milestones.
 
 ### Wong lab TDP-43 platform (JHU SOM Pathology + Neuroscience) — active sourcing lead ⚠
+_Last update: 2026-09-20_
+- **THE LAB NOW HAS A NAMED THERAPEUTIC ASSET WITH IN VIVO EFFICACY, AND A RESULT THAT DEVALUES THE COMPETITION'S — 2026-09-20 Radar LEAD.**
+  Two companion preprints, posted 2026-09-15 (`10.64898/2026.09.11.751031`, memory) and 2026-09-18 (`10.64898/2026.09.11.751082`, motor neuron).
+  **THE SUFFICIENCY RESULT:** genetic ablation of the *Unc13a* cryptic exon in a **forebrain** TDP-43 knockout restores novel-object recognition
+  and social-novelty preference **but does NOT preserve hippocampal CA2/3 neurons** (counts comparable to untreated cKO, caspase-3 unchanged) —
+  **symptomatic, not disease-modifying**; the identical deletion in a **spinal motor neuron** TDP-43 knockout does **nothing at all** (grip
+  strength, weight, paralysis 6-8 mo, moribund 6-9 mo, MN loss all indistinguishable). **Why:** UNC13A is barely expressed in cord — human GTEx,
+  after BRETIGEA neuronal-content correction, cortex **3.0x**, frontal cortex 1.7x, hippocampus 1.8x above cervical cord (P<0.0001); for
+  **STMN2** the raw deficit is mostly neuronal content (normalised STMN2 n.s. vs frontal cortex P=0.80, hippocampus P=0.68). ⇒ authors position
+  **UNC13A as a CORTICAL target (FTD-TDP, LATE, AD-TDP) and STMN2 as the dominant SPINAL one.**
+  **THE ASSET — CTR (Chimeric TDP-43 splicing Repressor):** TDP-43 RNA-recognition domain fused to the splicing regulator **RAVER1**, replacing
+  TDP-43's aggregation-prone low-complexity domain, so it represses **many** cryptic exons at once. **Engineered with TDP-43's own 3'UTR
+  autoregulatory element as a built-in safety switch** — AAV genome holds at 2-3 copies/cell while CTR mRNA/protein are suppressed where TDP-43
+  is normal and accumulate only where it is absent. **That is disease-state-conditional expression written into the cassette, and it is
+  patentable subject matter distinct from the repressor.** Efficacy: **IV AAV-PHP.eB-CTR, 5E13 vg/kg, dosed at 6 weeks AFTER symptom onset** —
+  79±6.2% lumbar MN transduction; grip strength held at control level (P<0.0001); **all GFP animals moribund ~47 weeks, ALL CTR animals alive
+  ≥110 weeks with no paralysis (n=15/group)**; ~50% MN loss attenuated; ventral root and muscle preserved. ICV arm in the memory paper (1E11 vg,
+  ~40% transduction) rescued CA2/3 counts ~200→~600 at 12 months (F(2,42)=48.26, P<0.0001).
+  **THE GATING ITEM IS DELIVERY, NOT BIOLOGY: AAV-PHP.eB does NOT cross the human BBB and the authors say so.** ⇒ a capsid in-licence or a
+  direct-to-CSF route, not another mouse study. Secondary limits: mouse/human cryptic exons mostly differ (UNC13A is a coincidental overlap,
+  mouse intron 1 vs human intron 20); the forebrain model lacks aggregates and glial pathology.
+  **COMMERCIAL CONSEQUENCE — this is the read on somebody else's paid deal.** Lilly paid **QurAlis $45M upfront + equity, up to $577M** (2024-06-03)
+  for **QRL-204**, a splice-switching ASO restoring UNC13A function **in ALS and FTD** (logged under NuGate). These two papers say that asset is
+  **inert in the spinal compartment and symptomatic-only in the cortical one.** Trace Neuroscience is on STMN2.
+  **ACTION (Hemaka Rajapakse + Jon Robbins):** (1) licence status of CTR **and** of the autoregulatory-cassette claim; (2) cost/route to a
+  human-BBB capsid — in-licence or partnership; (3) **INTERNAL and worth more than the licence: does NuGate's cryptic target sit above or below
+  the sufficiency bar these two papers set?**
 - **Lab:** **Philip C. Wong, Ph.D.** (Departments of Pathology + Neuroscience,
   JHU School of Medicine; wong@jhmi.edu). Foundational figure in TDP-43 cryptic
   splicing biology — his group's 2015 *Science* paper first showed TDP-43
@@ -3565,9 +3667,39 @@ ecosystem news.
   WO2016205615A1 estate is not zero, so this suggests the specific
   caspase-3-tau mechanism disclosed is not yet wrapped into an active license,
   or existing licenses do not cover this claim. JHTV provisional-filing moment.
-- **Watch:** JHTV provisional filings on caspase-3-tau axis + Wong lab licensing
-  news (Ionis/QurAlis/Trace/Denali/Alector angle); Meghraj Baghel (co-first)
-  career trajectory as signal on where Wong lab platform IP travels next.
+- **Watch:** JHTV provisional filings on the caspase-3-tau axis **and on CTR / the
+  3'UTR-autoregulatory-cassette claim** + Wong lab licensing news
+  (Ionis/QurAlis/Trace/Denali/Alector angle); Meghraj Baghel (co-first)
+  career trajectory as signal on where Wong lab platform IP travels next; **human-BBB
+  capsid providers (Voyager, Capsida, Sangamo) as the counterparties that would
+  unblock CTR**.
+
+### Lee + Kwon lab SEME synthetic-microexon platform (JHU SOM Division of Cardiology, Department of Medicine) — active sourcing lead + cassette-architecture IP, direct SELEXON adjacency ⚠
+_Last update: 2026-09-20_
+- **Lab / people. Seunghyun Lee, Ph.D.** (slee600@jhmi.edu) and **Chulan Kwon, Ph.D.** (ckwon13@jhmi.edu), Division of Cardiology, Department of
+  Medicine, **Johns Hopkins University School of Medicine**, Baltimore; with **Sangwoo Kim** (Yonsei University College of Medicine, Seoul).
+  Co-first authors **Myeongjune Go** and **Jaewon Oh**. Preprint posted **2026-09-18**, `10.64898/2026.09.13.749216`.
+- **What it is. SEME — Spliceable Editable Microexon Element**: a modular splicing cassette of a **3′ splice-site module + a programmable
+  microexon (≤20 bp) + a 5′ splice-site module**, knocked into an **INTRON** by CRISPR-Cas9. Endogenous splicing then splices the microexon into
+  the mature transcript. **The point is that no coding exon is ever touched**: exon skipping deletes coding sequence, and editing inside an exon
+  risks leaving indels in the reading frame, whereas **intronic placement means junctional indels are removed with the intron** — prior work on
+  intronic insertion reported **>98% correctly processed mRNA**.
+- **Demonstration.** The dilated-cardiomyopathy-associated **FLNC c.2003A>G** variant, which costs exon 12 five nucleotides, shifts the frame and
+  triggers NMD. SEME placed in **FLNC intron 12 — only 90 bp**, a genuinely tight splicing environment — supplied the five nucleotides and
+  **recovered filamin C protein, sarcomeric organisation and calcium handling in iPSC-derived cardiomyocytes**; HeLa minigene EGFP reporter first.
+  Splice-site flanks optimised with **AlphaGenome**; variant called with **SpliceAI**.
+- **Authors' own limits.** In vitro only; a single variant; engineered isogenic iPSC lines rather than patient cells; a **nuclease is still
+  required** to insert; synthetic splice sites may perturb local or transcriptome-wide splicing; microexon size is capped; the resulting protein
+  sequence is non-native at that position.
+- **Commercial thesis (Virginia Burger + Avi Khanna). NOT a programme — no delivery, no second gene, no in vivo. What is here is a CASSETTE
+  ARCHITECTURE: composition of matter on an engineered element rather than a biology position**, which is the rarer and more defensible object,
+  and **the same category as Aletira's SELEXON** — both buy control over what comes out of a locus by writing splicing grammar into a construct.
+  SELEXON RESTRICTS expression to a cell type; SEME RECONSTRUCTS a transcript. **The instrument is a translational grant, not a licence,** and it
+  buys exactly three experiments: a second gene in a different intronic environment, transcriptome-wide splicing QC, and a delivery answer.
+- **IP posture.** Funding already includes **NIH/NHLBI R01HL171205** plus **two Maryland Stem Cell Research Fund awards (2024-MSCRFD-6362,
+  2026-MSCRFL-6569)** — state money in, Bayh-Dole, **JHU-owned**. **ACTION: JHTV call on whether the CASSETTE ITSELF has been filed separately
+  from the FLNC application.** That distinction decides whether this is a platform or one product.
+- https://www.biorxiv.org/content/10.64898/2026.09.13.749216v1
 
 ### Watkins lab ACSVL3 GBM platform (Kennedy Krieger + JHU Neurology) — active sourcing lead ⚠
 - **Lab:** **Paul A. Watkins, M.D., Ph.D.** (Kennedy Krieger Institute + Johns
@@ -4245,7 +4377,17 @@ _Last update: 2026-08-30_
 - **Watch:** UM Ventures IP posture on a *gdpP*-genotype tolerance assay; whether Chatterjee has founder intent or prefers licensing; whether the Doherty Institute co-assignment complicates a Baltimore-nexus build; other CDA-pathway tolerance determinants outside the *gdpP* locus.
 
 ### Padmanabhan lab USP15–ZNF217 loop (UMBC Biological Sciences + University of Maryland Greenebaum Comprehensive Cancer Center) — active sourcing lead + direct Clasp p53-R175H adjacency ⚠
-_Last update: 2026-09-06_
+_Last update: 2026-09-20_
+- **THIRD PAPER IN THE ARC, AND IT REFRAMES WHAT IS LICENSABLE (2026-09-20 Radar pick 3; posted 2026-09-14).** "ZNF217 promotes receptor tyrosine
+  kinase plasticity and AXL-ERK dependency in ovarian cancer," Pandya MJ, Hoffman J, Padmanabhan A — `10.64898/2026.09.11.750913`. Per the
+  abstract: **ZNF217 overexpression markedly raises ERBB2/HER2, yet ZNF217-high cells are RESISTANT to multiple ERBB2 inhibitors** — a disconnect
+  between receptor abundance and drug sensitivity. Mechanism: ZNF217 elevates several RTKs, **most notably AXL**, and raises **ERK1/2**, giving an
+  **ERK-dominant survival state**; targeting the AXL-ERK axis cut viability and metastatic potential in vitro and reduced tumour burden and
+  prolonged survival in xenografts. **READ DEPTH: ABSTRACT ONLY — the `.full.pdf` returned a persistent 17-byte 429 over ~2h and WebFetch on
+  `.full` also 429'd; re-check the body on a later day.** **TWO READS:** (1) **receptor abundance is not a drug-response biomarker** — this lab
+  demonstrated it in its own system; carry it as diligence discipline into any target pitched on expression data alone. (2) **ACTION (Esther
+  Park): the question for UM Ventures is now whether the licensable object is the USP15 CHEMISTRY or a NEGATIVE PREDICTIVE BIOMARKER for
+  HER2-directed therapy in ovarian cancer — two companies, two filings.** **Candid: AXL is a crowded and historically disappointing target class.**
 - **Lab / people. Achuth Padmanabhan, Ph.D.** — Department of Biological Sciences, **UMBC**, 1000 Hilltop Circle, Baltimore MD 21250; joint
   **UMGCCC**; achuth1@umbc.edu. Trainees on the current paper: Ayokunnumi Ogunsanya, Fatimah Alfaran, Swethakumar Basavarajaiah.
   Prior appointment Baylor College of Medicine (O'Malley/Richards labs).

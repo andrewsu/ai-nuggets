@@ -2710,3 +2710,39 @@ Two things worth flagging:
 
 2. **Today's lead picks up two of yesterday's own deferrals.** The 09-18 funnel logged Georgiamune and Remedy Plan as "logged but not built out," and dropped RegCell on the full-text gate. It also recorded Georgiamune as having "no disclosed target overlap" — that was wrong on both counts, since Georgiamune is on our own BioVentures list and the overlap is the Treg axis rather than a target. The episode states that correction explicitly. One caveat I kept in the script rather than smoothing over: Georgiamune has issued **no press release**, so the tranche structure and the ~$296M pre-money are filing/database-derived, and the round appears to have closed around mid-August.
 === 2026-09-19T02:28:06-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-20T02:10:08-07:00 start blackbird-brief ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE I stopped after the scripts + stubs — no TTS, no R2, no feed edit, no commit (the orchestrator does those).
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-09-20-radar-wong-tdp43-cryptic-splicing.md` (+ `.rss-item.xml`, `.commit-msg`)
+- `podcasts/blackbird-brief/scripts/2026-09-20-portfolio-watch.md` (+ `.rss-item.xml`, `.commit-msg`)
+- `state/shipped.jsonl` — 11 keys appended across the two basenames (ledger now 73 episodes)
+- `memory/blackbird-portfolio.md` — edited in place: Wong lab entry (CTR asset + sufficiency result), new SEME §2b entry, Aletira (price/voucher), NuGate (QRL-204 hit + oral comparator), Padmanabhan (third paper), §1 ex-US comparator (China plan), §1 grant instrument (OpenAI Foundation), exit-map thread (reverse mergers)
+
+**Candidate funnel**
+
+*Stream B — partner-institution research (Sourcing Radar, 2026-09-13 → 09-19)*
+- bioRxiv details API, day-by-day sweep: **1,559 records scanned**, 17 with a JHU / UMB / UMBC / UMD / Lieber / Kennedy Krieger corresponding institution and `version==1`; 7 substantive after discarding tool/bioinformatics/non-translational matches; 7/7 fresh against the ledger.
+- medRxiv same sweep: 373 records, 2 partner-institution hits, neither on-thesis.
+- PubMed high-impact journals (Nature/Science/Cell/Nat Med/NEJM/STM etc.), affiliation-filtered, `edat` 09-10→09-20: 6 hits; Crossref author-affiliation check showed none were partner-institution-led (Nat Med liquid biopsy = City of Hope/Goel; Cell glioma = Pitt/UTSW-led). Dropped.
+- Institutional newsrooms: JHU Hub 200 (nothing new on-thesis); **hopkinsmedicine.org and ventures.jhu.edu both 403 (Cloudflare)**; UMB news index stale (latest items Jan–Apr 2026); Lieber news page has no article list; EurekAlert search returned a 194-byte empty body. Recorded as a source gap, run proceeded.
+
+Shortlist (✅ = picked):
+- ✅ Prevention of Unc13a cryptic splicing is sufficient to preserve memory — `10.64898/2026.09.11.751031` — **LEAD (pair)**
+- ✅ Restoring multiple TDP-43 cryptic targets, but not solely Unc13a, rescues motor neuron disease — `10.64898/2026.09.11.751082` — **LEAD (pair)**
+- ✅ SEME programmable transcript reconstruction — `10.64898/2026.09.13.749216` — **pick 2**
+- ✅ ZNF217 → AXL-ERK dependency in ovarian cancer — `10.64898/2026.09.11.750913` — **pick 3 (short)**
+- Sprayable in-situ PEG hydrogels for intranasal delivery (UMD, Duncan co-author, UM Ventures-funded) — `10.64898/2026.09.17.752479` — deferred, body not rendered (posted 3 days ago); worth revisiting
+- Statins repurposed for ovarian-cancer prevention (JHU Path/Onc/GynOb) — `10.64898/2026.09.14.751179` — off-thesis for a sourcing lead
+- Matrix viscoelasticity / neural progenitor stemness (JHU) — `10.64898/2026.09.11.750834` — no commercial angle
+
+Read depth: full text obtained for `751082` (PDF via curl + mutool) and `751031` (WebFetch on `.full`); SEME full text via PDF. **`750913` is abstract-only** — `.full.pdf` returned a persistent 17-byte HTTP 429 across four attempts over ~2h and WebFetch on `.full` also 429'd; kept as a ~45-second tail item with no effect sizes characterised, and flagged in the script and show notes.
+
+*Stream A — portfolio & competitive news (Portfolio Watch, 2026-09-16 → 09-20)*
+- Indexes scanned: BioPharma Dive (40 headlines), Fierce Biotech (11), Endpoints (32), GEN (14), BioBuzz news + the BioHealth Capital Region roundup of 09-18 (~40 regional items). **Endpoints article bodies paywall** (China plan and MFN both stubbed) — sourced both elsewhere (BioSpace, White House fact sheet, Caixin/Xinhua cross-check). jina is TLS-intercepted on this network again (cert `*.scripps.edu`), so every fetch ran on plain curl + Safari UA.
+- 10 candidates through the dedup filter → 9 fresh (Autolus obe-cel RMAT dropped, shipped 09-18). 7 picked.
+
+Chosen: ✅ Fayuvi priced at $3.95M + all-50-state MFN Medicaid (lead, Aletira) · ✅ Skyhawk SKY-0515 Huntington's 15-month data (NuGate) · ✅ OpenAI Foundation $40M to UNC Lineberger (the grant instrument) · ✅ China 2026–2030 five-year plan (comparator column) · ✅ Marea/Lisata + North Immunology/Aethlon reverse mergers (exit map). Not picked: Novo/Orbis macrocycle deal (no portfolio line); Endpoints' China CRISPR-deaths story (paywalled body, AAV-adjacent — worth retrying).
+
+One thing to flag: the spoken sections run ~1,960 words (Portfolio Watch) and ~1,815 (Radar), i.e. roughly 10 minutes each at this show's speaking rate. That is over the 6–9 and 5–7 minute targets in PROMPT.md, though shorter than the show's last several shipped episodes (09-19 was 2,485 spoken words / 13 min). I left them at this length rather than cutting substance; if you want them inside the stated targets I'd drop Portfolio Watch item 4 and Radar pick 3.
+=== 2026-09-20T02:37:21-07:00 done  blackbird-brief (exit 0) ===
