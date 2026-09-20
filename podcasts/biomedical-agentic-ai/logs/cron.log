@@ -4700,3 +4700,46 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publi
 
 Two notes worth flagging: this is the second Zou-lab pick in a row (Paper2Agent shipped 09-18), which the script acknowledges directly rather than hiding; and the show's dedup ledger `state/shipped.jsonl` is empty (0 keys, 0 episodes), so dedup was done against the 20 most recent feed titles instead — worth populating if you want the automated check to be load-bearing.
 === 2026-09-19T02:09:07-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-20T02:00:08-07:00 start biomedical-agentic-ai ===
+Episode files are written. `SKIP_TTS=1` is set, so per `PIPELINE.md` I skipped TTS, R2 publish, the `feed.xml` edit, and the commit — `publish_pending.py` picks those up after batch TTS.
+
+**Published (staged for batch TTS):** `podcasts/biomedical-agentic-ai/scripts/2026-09-20-hpo-severity-agent-carrier-screening-panel.md` (971 spoken words, under the 1150 cap) plus the `.rss-item.xml` and `.commit-msg` stubs. RSS item validates as XML.
+
+**Pick:** *Large Language Model Agents for Evidence Based Genetic Disease Severity Classification* (arXiv 2609.19569, posted 2026-09-17) — UNSW Sydney + University of Pittsburgh. Read in full via `mutool` on the PDF. Editorial line: accuracy is the wrong headline when the human experts disagree a quarter of the time; what the agent sells is one rubric applied 10,211 times with a citation trail at ten cents a term. Two things cut deeper — the errors have an upward direction (8 of 9 mismatches graded *higher* than the published source, making this functionally a panel-expansion engine), and the single underestimate failed because the ontology annotation was incomplete, so the ceiling is the resource, not the model.
+
+## Candidate funnel
+
+**bioRxiv** — 727 records swept day-by-day (09-17: 314, 09-18: 352, 09-19: 61; 09-20 returned the 63-byte no-content reply). 67 keyword hits, ~7 substantive after discarding "chemical/imaging agent" and "autonomous" noise. **All deferred: full text unobtainable.** `r.jina.ai` still TLS-intercepted (`*.scripps.edu` cert); `www.biorxiv.org` returned a 17-byte HTTP 429 on `.full.pdf` (4 spaced attempts), on `.full` HTML, and on `WebFetch` from its own egress (`Retry-After: 56`).
+- From Prompt to Pipeline — LLM coding agents for reproducible bioinformatics pipelines — `10.64898/2026.09.11.751004` ← **highest-value deferral**
+- A Closed-Loop Robot Scientist (MOMbot) — `10.64898/2026.09.11.751076`
+- Microscope control with a natural language agent (MicroClaw) — `10.64898/2026.09.15.751723`
+- TRACEDD, agentic explainable drug design — `10.64898/2026.09.12.751167`
+- BoneGraph, KG-grounded self-correcting retrieval — `10.64898/2026.09.17.752482`
+- ModelSEED Biochemistry 2026 update — `10.64898/2026.09.15.751859` (data integration, not agentic)
+- SPHERE v2 — `10.64898/2026.09.01.748580` — already shipped 09-06
+
+**arXiv** — shared cache, 500 entries, newest 2026-09-17 17:59 UTC (Sunday: nothing announced past the Thursday deadline; 09-16 + 09-17 = 420 entries in window). 208 keyword hits → 21 after a biomedical-title/q-bio filter.
+- **LLM Agents for Evidence Based Genetic Disease Severity Classification — `2609.19569` ← CHOSEN**
+- HPOQuest, rare-disease active phenotype acquisition — `2609.18431` (read in full; smaller in scope)
+- ScienceIDE, scientific codebases as agent environments — `2609.19134` (read; physics-dominated, biology marginal)
+- Agora, Git as shared memory for collective AutoResearch — `2609.18094` (striking, but the task domain is ML weight transfer, not biomedicine)
+- ScientistTwo, autonomous multi-agent research — `2609.19644` (benchmarked on ICLR/ICML papers, not biomedical)
+- Hyperbolic GRL for differential diagnosis on biomedical KGs — `2609.18481`; Integrating case reports via medical ontology — `2609.19775`; LearnActCoder clinical coding agents — `2609.19721`; REPAIR scientific retrievers — `2609.18262`
+- WetRobo — `2609.18435` — already shipped 09-17
+
+**PubMed** — 632 hits in a 5-day entry-date window, 400 fetched, 87 after discarding spurious matches.
+- scBaseCount, AI agent-curated single-cell repository (Cell, Crossref-created 09-17) — **best-fit item of the day on paper, dropped on the full-text gate.** CC-BY in Crossref but cell.com 403s (Cloudflare), ScienceDirect serves a 1.2 MB captcha page under a 403, linkinghub is a 2.7 KB stub, and it is not in PMC or EPMC (`inEPMC: N`). Only preprint is the Feb-2025 bioRxiv original — stale for the Cell numbers and unreachable on a 429 day.
+- Toward autonomous science with agentic AI (Cell, 09-17) — same Elsevier wall; a perspective, not primary work
+- An open benchmark and language models for AI in aging biology (Cell, 09-17) — same wall
+- On-premise medical AI agents (Nature Medicine, 09-15); Text-to-Cypher on biomedical KGs (SHTI); Temporal KG + LLMs for biomedical hypothesis generation (JBI, 09-15)
+- The Virtual Biotech (Science) — already shipped 09-19
+- LLMs as uncertainty-calibrated optimizers (Nat Mach Intell) — out of window (online 08-28); agentic EHR+KG framework (Front AI) — out of window (09-04); OASIS AI scientist (Molecular Plant) — plant, off-audience
+
+**ChemRxiv** — `site:chemrxiv.org` searches returned nothing in the 4-day window; newest relevant items date to March–July 2026.
+
+**News / product launches** — nothing net-new in the 3-day window. The week's two stories (Stanford's Virtual Biotech in Science; Anthropic's wet lab) were both already shipped, on 09-19.
+
+**Policy / funders** — ARPA-H 200, newest AI item 09-09 (out of window). NSF 200, newest 09-10 (out of window). **nih.gov/news-events/news-releases → HTTP 403** and **hhs.gov/about/news → HTTP 403** from this host; not retried past one attempt.
+
+Two memories updated: today's five bioRxiv deferrals plus the full-429 finding, and a new note that Cell/Elsevier full text has no working route from this host even when Crossref lists CC-BY.
+=== 2026-09-20T02:16:10-07:00 done  biomedical-agentic-ai (exit 0) ===
