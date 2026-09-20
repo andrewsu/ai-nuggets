@@ -4494,3 +4494,39 @@ Shortlist after discarding stale and off-beat items:
 
 One judgment call worth flagging: this is the second Anthropic spotlight in three days (Tuesday's was the Novo deal). I kept it because the story is categorically different — vendor versus operator — and the script opens by drawing that contrast explicitly rather than re-covering the deal.
 === 2026-09-19T02:32:29-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-20T02:20:08-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, the feed edit, and the commit — the orchestrator handles those after batch TTS. Files written:
+
+- `podcasts/calibr-briefing/scripts/2026-09-20-pharma-headlines.txt` (1,566 words) + `.rss-item.xml` + `.commit-msg`
+- `podcasts/calibr-briefing/scripts/2026-09-20-brenipatide-incretin-psychiatry-spotlight.txt` (1,595 words) + `.rss-item.xml` + `.commit-msg`
+
+RSS stubs validate as XML with the itunes namespace bound; spoken text has no URLs, IDs, headings or bullets.
+
+**Candidate funnel**
+
+Source sweep (plain `curl` + Safari UA; `r.jina.ai` is dead — TLS-intercepted by the Scripps network, cert is `*.scripps.edu`):
+
+- **BioPharma Dive** — 364 KB index, 31 dated items; newest 2026-09-18 11:51. 0 net-new (all 9 top items already shipped 09-16 through 09-19).
+- **Endpoints** — index 200/72 KB, 26 anchors; newest substantive item is the 09-19 weekly recap. 10 candidates date-stamped, all 09-17. Bodies paywalled as usual.
+- **BioSpace** — 220 KB; index carries no dates, press-release rail ~80% market-research spam. 3 usable CHMP wire releases (09-18).
+- **Fierce Biotech / Fierce Pharma** — indexes 862/857 KB; articles still return the uniform 5,490-byte Cloudflare block, so extracted headline + `description` from the index JSON-LD. 20 items, newest Sep 18 2:22pm. Yielded Artelo, Goa, ARPA-H SPECTRA.
+- **Clinical Trials Arena** — 288 KB, 28 items; 10 date-stamped, range 09-11 to 09-18. Yielded Syntis, Altis, Akeso.
+- **GEN** — 342 KB; **the only source with a Saturday item** (brenipatide, 2026-09-19 17:31Z). Also Ariadne Bio (09-18).
+- **PRNewswire health / biotech / pharma / clinical-trials / FDA-approval lists** — 4 fetches, ~245 KB each. Friday Sept 19 produced zero biotech releases; last substantive item was Lilly's Inluriyo approval Sep 18 13:54 ET.
+- **Psychiatric Times** (2 brenipatide articles) — 5,493-byte Cloudflare block on curl, 403 on WebFetch. Dropped; sourced the story from GEN's own interview instead.
+- **Reuters / Lancet / ScienceDirect** — 403/401 as expected; Lancet AUD numbers recovered via Healio/NIH/EurekAlert secondary coverage.
+
+Shortlist after discarding already-shipped and stale items:
+
+- **Lilly brenipatide, Psych Congress Phase 1 + two Phase 3 designs** — genengnews.com/topics/translational-medicine/lillys-gip-glp-1-candidate-brenipatide-shows-early-clinical-promise-in-substance-psych-disorders/ — **CHOSEN (spotlight + headline 1)**
+- GOA Therapeutics emerges from stealth, GOA26 — globenewswire 09-17 — **CHOSEN (2)**
+- Palomar Labs spins out Ariadne Bio, AB-300 — GEN 09-18 — **CHOSEN (3)**
+- Syntis Bio SYNT-101 MAD data — clinicaltrialsarena 09-16 — **CHOSEN (4)**
+- Artelo ART27.13 + semaglutide in DIO mice — globenewswire 09-16 — **CHOSEN (5)**
+- Altis Labs IPRO vs RECIST in MARIPOSA at WCLC — clinicaltrialsarena 09-17 — **CHOSEN (6)**
+- CHMP: Enhertu adjuvant (DESTINY-Breast05) + Keytruda/Padcev perioperative MIBC (KEYNOTE-B15) — BioSpace wire 09-18 — **CHOSEN (7)**
+- Akeso AK158D1 NMPA Phase 1 clearance — clinicaltrialsarena 09-18 — **CHOSEN (8)**
+- Cellares/Ori Biotech manufacturing contracts (09-17); Endpoints 11 list (09-17); UK committees probe US pharma deal (09-17); CMS globe-and-guard exemption (09-17); General Catalyst/Summa Health (09-17); Bavarian Nordic CEO (09-17); SpliSense SPL84 (09-17); Everest/Firma (09-18) — not chosen, either second-order or Endpoints-paywalled with no alternate body.
+
+Two things worth flagging for a later run: Fierce's index JSON-LD `description` field is now doing real work as the only readable Fierce copy, and the GEN front page remains the only index on the beat that publishes on a Saturday — it was the single source of today's lead.
+=== 2026-09-20T02:35:05-07:00 done  calibr-briefing (exit 0) ===
