@@ -4667,3 +4667,34 @@ Batch dedup: 79 candidates → 72 fresh (7 already shipped). **Final-roster re-f
 - `10.1016/j.pnpbp.2026.111940` (psychedelics + amphetamine shifting rat USVs toward positive-affect calls) is an excellent Tier-1 fit but has no abstract in EPMC *or* Crossref yet — carried to the next run.
 - Nothing in-window from ACNP, ECNP, chemRxiv, industry agentic-AI programmes, CPT, CPT:PSP, Biological Psychiatry, BP:CNNI, Drug Discovery Today, Cell Systems, Nature Biotechnology, or Briefings in Bioinformatics.
 === 2026-09-19T03:23:13-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-20T02:50:09-07:00 start receptor-and-reason ===
+Episode written and staged for the batch pipeline.
+
+**Published files** (`SKIP_TTS=1` — no TTS, no R2 upload, no feed edit, no commit, per PIPELINE.md):
+- `podcasts/receptor-and-reason/scripts/2026-09-20-receptor-and-reason.md` — 2,813 spoken words (~16 min)
+- `…2026-09-20-receptor-and-reason.rss-item.xml` (XML validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `…2026-09-20-receptor-and-reason.commit-msg`
+- Ledger appended: 121 episodes, 1,250 items. Final roster re-verified against the prior 120 episodes — **0 collisions**.
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| bioRxiv details API (09-13→09-20, day-by-day) | 1,559 | 156 → 50 shortlisted | Full 8-day sweep, version==1 only |
+| arXiv (shared cache + live probe) | 500 | 106 bio+agentic, 40 neuro | Cache covers 09-15→09-17 only |
+| Nature NPP + Mol Psychiatry RSS | 16 | 11 | |
+| Crossref (14 journals, `from-created-date`) | 102 | 25 | |
+| Psychiatric Times | ~40 headlines | 5 | Articles Cloudflare-blocked |
+
+- Dedup: 48 journal/arXiv candidates → 38 fresh; 26 bioRxiv → 24 fresh; 6 late bioRxiv finds → **0 fresh** (all previously shipped).
+- **Source failures:** `r.jina.ai` TLS-intercepted by the Scripps network (cert is `*.scripps.edu`) — all jina full-text routes dead. bioRxiv PDF host throttled to 17-byte 429s after the first success: 3 of 5 full-text fetches failed (`751056` DYT-TOR1A muscarinic, `751167` TRACEDD, `751098` RL antibiotic) — **deferred, retry tomorrow**. `751004` (LLM coding agents for bioinformatics) landed too late for the roster; also a live candidate.
+
+**Selected (10):** MOONLIGHT-1 M1-antagonist MDD failure *(lead)* · nociceptin/OFQ cross-species · 7T VTA neurofeedback RCT · histamine H2R risk-taking · S-ketamine circuit dissection · LSD psychedelic hormesis · psychedelic USV repertoire · CliniCIRCA · SAIGE multi-agent · WetRobo.
+
+Two things worth flagging:
+
+1. **Dropped an item on full-text grounds.** The Biological Psychiatry GLP-1 review had no retrievable abstract or body (Elsevier-blocked, absent from Crossref *and* PubMed) — per the eligibility gate I cut it rather than write from the title.
+2. **WebFetch fabricated numbers.** On the multi-agent paper it invented "2–3 agents optimal," "10–20% drops with 4+ agents," and a "noisy consensus" mechanism. The actual paper is a graph-theoretic bridge-edge argument proposing SAIGE, with none of those findings. I caught it by pulling the raw PDF and rewrote from source. I've recorded this in memory — WebFetch summaries of PDFs should not be trusted for anything spoken on air.
+
+Article metadata for the two Elsevier items came from PubMed ([10.1016/j.pnpbp.2026.111940](https://doi.org/10.1016/j.pnpbp.2026.111940), [10.1016/j.biopsych.2026.08.002](https://doi.org/10.1016/j.biopsych.2026.08.002)).
+=== 2026-09-20T03:07:57-07:00 done  receptor-and-reason (exit 0) ===
