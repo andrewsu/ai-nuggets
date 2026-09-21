@@ -3368,3 +3368,29 @@ The angle: adapters built from *drugs* (tafasitamab biosimilar, pharmacy rituxim
 
 One thing to flag: I reopened the surfaceome preprint's recency on the API `date` field (2026-09-18) rather than its DOI stem (`2026.09.16`), which are two days apart. It was in window after all and lost on merit, not the filter — I've written that trap into memory so a future run doesn't retire a live candidate by reading the wrong date.
 === 2026-09-20T02:49:35-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-21T02:40:10-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-09-21-cue-221-ub-221-anti-ige-cd23-sparing-omalizumab-head-to-head-csu.md` — 1,485 spoken words, no URLs/DOIs/bullets/pseudo-headings
+- `…rss-item.xml` — validates as XML, `__LENGTH__`/`__DURATION__` placeholders present
+- `…commit-msg`
+
+**Pick:** CUE-221 / UB-221 (Cue Biopharma) Phase 2 in chronic spontaneous urticaria. The editorial spine is antibody engineering, not the headline: omalizumab's IgE epitope overlaps the CD23 docking site by ~2,773 Å³, UB-221's Cε2–Cε3 epitope leaves it clear, so IgE keeps engaging the B-cell feedback brake. The field already ran the rival hypothesis — ligelizumab binds IgE ~4× tighter and failed to beat omalizumab in PEARL-1/2 — and the 2022 JCI paper stated *in advance* that CD23 benefit would only appear under repeat dosing, which is exactly the observed shape (69% hive-free at week 22; 60% vs 24% at week 28, twelve weeks off drug). Flagged on air: n=17 omalizumab arm with no planned statistical test, post-hoc week-28 comparison, China-only, trial absent from ClinicalTrials.gov, and barzolvolimab/remibrutinib already matching on week-12 response.
+
+**Candidate funnel**
+
+- **bioRxiv** (details API, day-by-day 09-19/20/21): **167 unique DOI+version** (61/90/16 — all pages complete, `total` matched records). 10 v1 in-window keyword hits, **0 on-target**. Every hit spurious: bare substring `ige` matching inside *antigen*/*eigen* (7 of 10 — miRNA language model, methylome dimension reduction, chromatin polyvalency), `checkpoint` as basic immunology. Corpus unusually thin (weekend + 2am Monday), not truncation.
+- **Source failures:** `r.jina.ai` TLS-intercepted by the Scripps network (cert `*.scripps.edu`) for the sixth consecutive run — whole jina channel skipped up front, no time burned. bioRxiv API degraded at 09-20 cursor 60 (5 failed attempts alternating HTTP 503 and read-timeout, cleared on the 6th). `connect.biorxiv.org` per-subject RSS fallback also down (504, 247-byte body). Funder pages (ARPA-H/NIH/NSF) still blocked from this host.
+- **News** (all direct Safari-UA curl, 200): BioSpace latest-news-press-releases / press-releases / drug-development, BioPharma Dive, Endpoints, Fierce Biotech + Fierce Pharma indexes, Clinical Trials Arena.
+
+Shortlist (09-19 → 09-21, after discarding off-beat):
+- **CUE-221 (UB-221) Phase 2 CSU topline, anti-IgE, omalizumab active comparator** — biospace.com/press-releases/cue-biopharma-announces-positive-topline-results-from-cue-221-phase-2-study-in-chronic-spontaneous-urticaria — **CHOSEN**
+- Telix/ITM $1.6B radiopharmaceutical acquisition (09-21) — real event, off-beat (no immuno-oncology/biologic angle)
+- Electra Therapeutics $350M IPO, anti-SIRP-α for secondary HLH (09-18) — on-beat mechanism but a financing, no data
+- Accro Bioscience AC-101 Phase IIb UC first patient dosed (09-21) — small molecule, dosing milestone only
+- Beacon laru-zova XLRP pivotal win (09-21) — off-beat; already the sibling show's spotlight
+- Inluriyo + Verzenio FDA approval, IntraBio AQNEURSA approval, Otsuka centanafadine Phase 3b (09-20/21) — off-beat
+
+One memory correction worth surfacing: my run notes asserted that a Monday 2am run finds zero net-new news. That held for Sunday but was wrong today — Sunday-evening GLOBE NEWSWIRE drops (timed to a Monday-morning call) surface on Monday's index, which is exactly where this pick came from. I've corrected that memory and its index line rather than leaving the bad default in place.
+=== 2026-09-21T02:54:27-07:00 done  justice-biotech-brief (exit 0) ===
