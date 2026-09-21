@@ -4743,3 +4743,37 @@ Episode files are written. `SKIP_TTS=1` is set, so per `PIPELINE.md` I skipped T
 
 Two memories updated: today's five bioRxiv deferrals plus the full-429 finding, and a new note that Cell/Elsevier full text has no working route from this host even when Crossref lists CC-BY.
 === 2026-09-20T02:16:10-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-21T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` will do that after batch TTS.
+
+**Files written** (`podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-09-21-scbasecount-agent-curated-single-cell-repository.md` — 1,025 spoken words (cap 1,150)
+- `…​.rss-item.xml` — validated XML, `__LENGTH__` / `__DURATION__` placeholders
+- `…​.commit-msg`
+
+**Pick:** scBaseCount (Cell, published 2026-09-17; Arc Institute) — an SRA-mining agent, SRAgent, curating what the authors call the first large biological data repository built end to end by an AI agent. Full text read from the CC-BY bioRxiv v3 (Cell is paywalled and not in PMC/EPMC; v3's abstract matches the published one exactly, 502M cells / 27 organisms / 75 tissues). The take centers the supervisor-worker decomposition they arrived at after a single ReAct agent failed, the Uberon/MONDO grounding that retains multiple terms rather than over-committing, and the result that actually load-bears: the same 100M-param embedding model trained on scBaseCount instead of CELLxGENE gains 23.9% on CRISPRi perturbation-group classification and 10.2% AUROC on recovering perturbation DEGs.
+
+**Candidate funnel**
+
+- **bioRxiv** — details API degraded: 09-18 completed (352 records, ~65s/page), 09-19 then hit persistent 503s and never finished; the `bioRxiv` MCP `search_preprints` blew its own 30s timeout. Fell back to per-subject `connect.biorxiv.org` RSS across bioinformatics, genomics, systems biology, pharmacology/tox, genetics, cancer biology, molecular biology — 166 unique items, 09-17..09-20, full abstracts. 3 substantive agentic hits in window:
+  - BELL: Biomodel Evidence and LLM-based Logic — https://www.biorxiv.org/content/10.64898/2026.09.18.721350v1 (biocuration evidence scoring, 210 PPIs; strong fit, small scale)
+  - Scaling Network Medicine with LLMs for Combinatorial Drug Repurposing in ER+ Breast Cancer — https://www.biorxiv.org/content/10.64898/2026.09.14.728753v1
+  - miRstring (RNA language model, not agentic) — https://www.biorxiv.org/content/10.64898/2026.09.17.752258v1
+- **arXiv** — shared cache, 500 entries, 09-16..09-18 (nothing past Friday; normal for a Monday 2am run). 205 keyword hits → 23 after discarding non-biomedical matches. Shortlist:
+  - TrialAtlas: Multi-Agent Research Organization for Clinical Trial Design — https://arxiv.org/abs/2609.21859 (full text read; runner-up — benchmark built from 291 FDA Complete Response Letters)
+  - SpecOpt: agentic molecule optimization toward binding specificity — https://arxiv.org/abs/2609.21165
+  - ScienceIDE: scientific codebases as agent-learnable environments — https://arxiv.org/abs/2609.19134
+  - HPOQuest: rare-disease agent with active phenotype acquisition — https://arxiv.org/abs/2609.18431
+  - EviGen (verifiable clinical rationale) — https://arxiv.org/abs/2609.18852; LearnActCoder — https://arxiv.org/abs/2609.19721
+  - 2609.19569 = yesterday's HPO severity agent (already shipped)
+- **PubMed** — 125 records on the narrowed term, 5-day entry window. Shortlist after dedup:
+  - **scBaseCount** (Cell) — https://doi.org/10.1016/j.cell.2026.08.025 ← **chosen**
+  - Toward autonomous science with agentic AI (Cell perspective) — https://doi.org/10.1016/j.cell.2026.08.052 (review, not primary; Cell full text blocked)
+  - DDA: traceable multi-agent structure-based drug design (Frontiers in Chemistry, 09-16)
+  - LLM text-to-Cypher over biomedical KGs (Stud Health Technol Inform, 09-17)
+  - Dropped as already shipped: Paper2Agent in Nature (shipped 09-18 off the preprint), The Virtual Biotech in Science (09-19), MedCP/SPOKE agentic RWE framework (09-04)
+- **ChemRxiv** — `site:chemrxiv.org` searches returned nothing inside the 4-day window; all hits 2024–early 2026.
+- **News / launches** — nothing net-new in the 3-day window; the one live story (Stanford's Virtual Biotech) shipped 09-19.
+- **Funders** — ARPA-H reachable, latest items 09-17 (SPECTRA, autism diagnosis) and 09-09, both outside the 3-day window and not agentic-AI. NSF reachable, latest 09-17, not biomedical-agentic. **nih.gov blocked by Cloudflare from this IP** (752-byte challenge page); HHS not reached.
+- Also noted: `r.jina.ai` is TLS-intercepted on the Scripps network today (cert `*.scripps.edu`), so full text came via direct `curl` + Safari UA + `mutool` on the bioRxiv `.full.pdf` (17-byte 429 on first attempt, cleared on retry).
+=== 2026-09-21T02:18:34-07:00 done  biomedical-agentic-ai (exit 0) ===
