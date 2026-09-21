@@ -4698,3 +4698,50 @@ Two things worth flagging:
 
 Article metadata for the two Elsevier items came from PubMed ([10.1016/j.pnpbp.2026.111940](https://doi.org/10.1016/j.pnpbp.2026.111940), [10.1016/j.biopsych.2026.08.002](https://doi.org/10.1016/j.biopsych.2026.08.002)).
 === 2026-09-20T03:07:57-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-21T02:50:10-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so I stopped at the script + stubs per PIPELINE's batch-mode rules — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-09-21-receptor-and-reason.md` (2,935 spoken words, ~16 min)
+- `…/2026-09-21-receptor-and-reason.rss-item.xml` (`__LENGTH__` / `__DURATION__` placeholders, XML validated)
+- `…/2026-09-21-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, now 122 episodes / 1,251 unique keys
+
+**Episode:** "the comparator does the work" — eleven items, opening on TrialAtlas (Tier 2 but the day's most important item; Tier 1 was thin after dedup).
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| bioRxiv details API (biorxiv+medrxiv, 09-14→09-21) | 0 | 0 | **FAILED** — HTTP 503 on every request, two full retry passes ~30 min apart; third pass got 1 of 16 day-files before 503ing again. Fell back to subject RSS. |
+| bioRxiv subject RSS (pharmacology_and_toxicology, neuroscience, bioinformatics, systems_biology) | 120 | 9 | neuroscience feed reaches back only to 09-18 — recall gap 09-14→09-17 |
+| medRxiv subject RSS (psychiatry, pharmacology_and_therapeutics) | 0 | 0 | **FAILED** — 16-byte empty bodies; medRxiv uncovered today |
+| arXiv shared cache | 500 | 202 keyword / 5 substantive | cache covers only 09-16→09-18 (500-entry cap); Mon = nothing past Fri anyway |
+| Nature RSS (npp, mp) | 14 | 9 | |
+| Crossref (Biol Psych, CNNI, Neuropharm, PNPBP, IJNP, DDT, CPT, CPT:PSP, Cell Systems, Brief Bioinform, npj DM, Nat Biotech) | 78 | 26 | Brief Bioinform returned 0 |
+| **Dedup** | 38 candidates | **28 fresh** | 10 already shipped — incl. 5 of 7 NPP items and the PDE10A/semaglutide preprint |
+
+Shortlist after dedup, ★ = selected:
+
+- ★ TrialAtlas — arxiv.org/abs/2609.21859 *(LEAD)*
+- ★ Clinician-grounded QA for AI psychiatric intake — arxiv.org/abs/2609.21149
+- ★ Stigmatizing language & LLM ED triage — nature.com/articles/s41746-026-03270-5
+- ★ CNS4 multispecies NMDAR modulator — biorxiv 10.64898/2026.09.14.751462
+- ★ 5-HT dynamics ACC/CeA after binge alcohol — nature.com/articles/s41386-026-02558-0
+- ★ 2-AG at VTA GABAergic neurons, social vs food reward — nature.com/articles/s41386-026-02561-5
+- ★ Dynamic pocketome of TAARs — biorxiv 10.64898/2026.09.14.751399
+- ★ SpecOpt — arxiv.org/abs/2609.21165
+- ★ DrugCLIP latent-space dissection — biorxiv 10.64898/2026.09.16.752029
+- ★ Autonomous nanoscale mapping, 5xFAD — biorxiv 10.64898/2026.09.09.750448
+- ★ Furosemide for ALS, genetics-first screen — nature.com/articles/s41746-026-03225-w
+- HPOQuest rare-disease agent — arxiv.org/abs/2609.18431
+- Agentic JITAI sleep support — arxiv.org/abs/2609.21805
+- Network-medicine LLM repurposing, ER+ BC — biorxiv 10.64898/2026.09.14.728753 *(read in full; weaker than the two computational picks that displaced it)*
+- mPFC–DMV cortical–autonomic–immune axis — nature.com/articles/s41380-026-03913-9
+- α2A-adrenergic in Lisket schizophrenia model — doi 10.1016/j.neuropharm.2026.111190
+- ERα/GALR1 estrogen-withdrawal depression — doi 10.1016/j.pnpbp.2026.111941
+- PBPK/QSP as regulatory-grade NAMs — doi 10.1002/cpt.70483
+- GLP-1 RAs in mental & substance use disorders — doi 10.1016/j.biopsych.2026.08.002 *(dropped: no `published-online`, print date Oct 2026, possible print-issue recency trap)*
+
+Full text read in full for 7 of 11 picks (all arXiv + all bioRxiv). The 4 Nature-family items are abstract-only tail mentions with self-contained abstracts — nature.com articles are paywalled and `r.jina.ai` is currently TLS-intercepted by the Scripps network (cert served is `*.scripps.edu`), which kills every jina full-text route.
+=== 2026-09-21T03:08:56-07:00 done  receptor-and-reason (exit 0) ===
