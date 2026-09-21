@@ -4530,3 +4530,38 @@ Shortlist after discarding already-shipped and stale items:
 
 Two things worth flagging for a later run: Fierce's index JSON-LD `description` field is now doing real work as the only readable Fierce copy, and the GEN front page remains the only index on the beat that publishes on a Saturday — it was the single source of today's lead.
 === 2026-09-20T02:35:05-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-21T02:20:10-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the transient `.rss-item.xml` and `.commit-msg` stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` will do that after batch TTS.
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-09-21-pharma-headlines.txt` (1,544 words)
+- `podcasts/calibr-briefing/scripts/2026-09-21-beacon-laru-zova-xlrp-spotlight.txt` (1,547 words)
+- matching `.rss-item.xml` (XML-validated) and `.commit-msg` stubs for each
+
+**Candidate funnel**
+
+Sources scanned (all via plain `curl` + Safari UA; `r.jina.ai` is TLS-intercepted by the Scripps network — cert served is `*.scripps.edu` — so every jina route was unavailable today):
+- Endpoints News RSS — 24 items, 2 net-new for Mon 9/21; index HTML is JS-only, article bodies paywalled
+- Fierce Biotech / Fierce Pharma — index JSON-LD parsed (20 items); article pages return the uniform 5,490-byte Cloudflare block, so descriptions came from the index payload
+- BioPharma Dive — 30+ headlines, all previously covered
+- Clinical Trials Arena — 39 items, no dates exposed
+- BioSpace `/latest-news-press-releases` — fetched 200/221 KB but the card markup yielded no extractable links; routed around via GlobeNewswire mirrors found through WebSearch
+- GEN — front page had no dated article elements
+- GlobeNewswire direct — `curl` returns 000 as usual; bodies read via WebFetch
+
+Shortlist after discarding already-covered items:
+- **Novo Capital Markets Day 2030 ambitions, shares −6%** — globenewswire.com/news-release/2026/09/21/3365171 — **CHOSEN (headlines lead)**
+- **Beacon Therapeutics VISTA pivotal win, laru-zova in XLRP** — globenewswire.com/news-release/2026/09/21/3365149 — **CHOSEN (spotlight)**
+- **Cue Biopharma CUE-221 Phase 2 in chronic spontaneous urticaria** — globenewswire.com/news-release/2026/09/20/3365072 — CHOSEN
+- **Reuters: Treasury to spare most China pharma licensing from outbound rules** — usnews.com/news/top-news/articles/2026-09-18 — CHOSEN
+- **ARPA-H launches SPECTRA autism program** — hhs.gov/press-room/arpa-h-launches-spectra-transform-autism-diagnosis-precision-care.html — CHOSEN
+- **Otsuka centanafadine Phase 3b, ADHD + comorbid anxiety** — otsuka-us.com/news/otsuka-announces-positive-phase-3b-results-centanafadine-adults-adhd-and-comorbid-anxiety — CHOSEN
+- **SpliSense Phase 2b of inhaled SPL84 in CF** — prnewswire.com/il/news-releases/splisense-initiates-phase-2b-trial-of-spl84-in-cystic-fibrosis-302880256.html — CHOSEN
+- **Bavarian Nordic names Tarja Stenvall CEO** — fiercepharma.com/pharma/bavarian-nordic-secures-sanofi-az-vet-fill-shoes-longtime-ceo-paul-chaplin — CHOSEN (brief)
+- Fierce "Inside the growing world of biopharma prediction markets" — podcast feature, not a news event — dropped
+- Legend Biotech names Ingrid Zhang CEO — already covered 9/16 — dropped
+- Alzheon fundraising post-Phase-3-miss; UK committees probe US pharma deal; Cellares/Ori manufacturing contracts — marginal, crowded out
+- Everest/Firma biometrics unit; Optimi Health PTSD Phase 3 plan — below the bar
+
+Spotlight full-text gate: the Beacon VISTA release was read in full (design, per-arm responder rates and p-values, secondary microperimetry, safety breakdown, all three quotes), plus the LUMEOS and XIRIUS failure datasets, the ORF15 codon-optimization literature, the AGTC→Syncona→Beacon financing history, and Syncona's own RNS commentary. No item was deferred for unavailable full text.
+=== 2026-09-21T02:31:47-07:00 done  calibr-briefing (exit 0) ===
