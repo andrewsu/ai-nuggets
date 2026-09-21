@@ -2746,3 +2746,28 @@ Chosen: ✅ Fayuvi priced at $3.95M + all-50-state MFN Medicaid (lead, Aletira) 
 
 One thing to flag: the spoken sections run ~1,960 words (Portfolio Watch) and ~1,815 (Radar), i.e. roughly 10 minutes each at this show's speaking rate. That is over the 6–9 and 5–7 minute targets in PROMPT.md, though shorter than the show's last several shipped episodes (09-19 was 2,485 spoken words / 13 min). I left them at this length rather than cutting substance; if you want them inside the stated targets I'd drop Portfolio Watch item 4 and Radar pick 3.
 === 2026-09-20T02:37:21-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-21T02:10:09-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the two transient stubs and stopped short of TTS, R2 publish, feed edit, and commit — `publish_pending.py` owns those.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-09-21-portfolio-watch.md` (2,373 spoken words)
+- `podcasts/blackbird-brief/scripts/2026-09-21-portfolio-watch.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/blackbird-brief/scripts/2026-09-21-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — 7 keys appended (now 74 episodes / 411 items)
+- `memory/blackbird-portfolio.md` — edited in place: Aletira + Winnow entries revised with new lead bullets and `_Last update:_` bumped to 2026-09-21; the Lilly bidder-set open item extended to Novo; ARPA-H SPECTRA added as a dated action; the stale "JHU as a Qualified Research Institution" open item updated with the confirmed Oct 30 deadline and pairing mechanics.
+
+**Episode — Portfolio Watch, Monday 21 September 2026.** Recency window 09-17 → 09-21.
+1. **LEAD (Aletira)** — Beacon's laru-zova is the first XLRP pivotal to hit its primary: ≥15-letter LLVA responders, 31.0% high dose (p=0.0019) vs **0% in the untreated control**, on an FDA-endorsed endpoint. The lesson is the counterfactual — J&J's LUMEOS, same gene/disease/modality, missed on a visual *mobility maze* while showing the same letter gains. Candid flags: 69% of treated eyes didn't clear the bar, and the dose response **inverts** in the secondaries.
+2. **Regulatory frame (Aletira/NuGate)** — Mikhail/Davis permanent, "adapted not flexible," uniQure's sham-control demand reversed; paired with Capricor, which met its primary and lost a 9–3 adcomm on a *secondary*. Overton/Taysha as the continuity tell.
+3. **Cue CUE-221 (Winnow/autoimmune)** — 60% complete hive resolution 12 weeks off drug vs omalizumab's 24%. Limits stated: post-hoc, n=17 comparator, related-party China trial.
+4. **Novo × Orbis + Kallyope** — second top-three cardiometabolic buyer transacting at preclinical/IND-ready stage.
+5. **ARPA-H SPECTRA** — Lieber/Kennedy Krieger action item, TA4 closes Oct 18.
+
+**Candidate funnel** — 4 index sources fetched clean (BioSpace latest 200, BioPharma Dive 200, Fierce Biotech 200, BioBuzz 200) plus Endpoints index 200. 16 substantive candidates after discarding market-research PR spam and inducement-grant filings; ledger filter returned 16/16 fresh. Source failures: fda.gov program page 404 (worked around via the FDA press announcement), pharmtech 403, fiercehealthcare 403, globenewswire direct 403 (used WebFetch), Fierce article bodies Cloudflare-blocked as usual (used company PRs and JSON-LD descriptions).
+
+Two rejections worth logging:
+- **FDA Expedited IND Pilot** passed the ledger filter but is a **true duplicate** — it was the 09-15 LEAD under a different URL and title. Caught by reading the prior script, not by the filter. Dropped, and its live Oct 30 deadline folded into the portfolio open item instead.
+- **Emergent BioSolutions 90 Maryland job cuts** — BioBuzz's 09-18 roundup recycled an **August 5** announcement. Recency trap; dropped.
+
+Also noted but not acted on: `2026-09-15-portfolio-watch.commit-msg` and `.rss-item.xml` are still untracked in `scripts/` although that episode is in `feed.xml` — `publish_pending.py` appears not to have cleaned up after that run. Left alone.
+=== 2026-09-21T02:27:47-07:00 done  blackbird-brief (exit 0) ===

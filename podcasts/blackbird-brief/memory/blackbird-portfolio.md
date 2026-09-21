@@ -1032,7 +1032,58 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-09-19_
+_Last update: 2026-09-21_
+- **THE CLEANEST CONTROLLED EXPERIMENT WE WILL EVER GET ON ENDPOINT CHOICE: SAME GENE, SAME DISEASE, SAME MODALITY, TWO SPONSORS — THE ONE THAT
+  AGREED A RESPONDER THRESHOLD ON A MACHINE-MEASURED SCALE HIT ITS PIVOTAL PRIMARY; THE ONE THAT CHOSE A NATURALISTIC MOBILITY TASK MISSED
+  (added 2026-09-21 Portfolio Watch LEAD; announced 2026-09-21). UPGRADES the 09-12 Opus Genetics endpoint template from a Type C alignment to a
+  RUN TRIAL, and SHARPENS the 09-14 instrument action.**
+  **Beacon Therapeutics — pivotal VISTA (NCT04850118), laru-zova (laruparetigene zovaparvovec), subretinal AAV delivering RPGR ORF15 in
+  X-linked retinitis pigmentosa.** n=**85** males 12–48 y, 12 months, two dose arms **plus an UNTREATED CONTROL**; high dose **6.8 × 10¹¹ vg/eye**,
+  low dose **3.7 × 10¹¹ vg/eye**. **FDA-ENDORSED PRIMARY = proportion with ≥15-letter improvement in LOW-LUMINANCE VISUAL ACUITY at Month 12:
+  high dose 31.0% (p=0.0019), low dose 24.1% (p=0.0106), untreated control 0%.** First and only pivotal in XLRP to hit its primary. **Rolling BLA
+  starts later in 2026**; RMAT + Fast Track (FDA), PRIME (EMA), ILAP (UK), orphan FDA+EMA. Built on **110 participants over ~5 years** (HORIZON
+  n=29 Ph1/2; SKYLINE n=14 Ph2; DAWN Ph2 ongoing). XLRP ≈ 1 in 25,000 males, no approved therapy. Investors: Syncona, Advent Life Sciences,
+  Forbion, Goldman Sachs Life Sciences, Oxford Science Enterprises, Gund Vision Fund, TCGX.
+  **THE COUNTERFACTUAL IS THE ITEM. J&J's Phase 3 LUMEOS (n=95) for bota-vec (botaretigene sparoparvovec, AAV-RPGR) MISSED its primary — a VISUAL
+  MOBILITY ASSESSMENT — while showing the SAME 10- and 15-letter LLVA gains Beacon has just banked as a win.** MeiraGTx reacquired bota-vec from
+  J&J in **April 2026 for $25M upfront** plus milestones/royalties and intends to file US+EU off the secondaries for a 2027 launch. **The biology
+  was not the difference; the instrument and the pre-agreement were.**
+  **⇒ DURABLE RULE FOR THE PRE-IND FILE (Geoff Lynn + Matt Tremblay): prefer a THRESHOLD-AND-RESPONDER endpoint on a QUANTITATIVE, MACHINE-MEASURED
+  scale over a naturalistic functional task, and get it ENDORSED BEFORE the trial runs. Audiometric thresholds are the letters; speech-in-noise and
+  real-world auditory function are the maze.**
+  **THE TENSION TO STATE OUT LOUD RATHER THAN RESOLVE QUIETLY: the 09-14 read is that the commercially interesting residual in treated congenital
+  hearing loss IS speech-in-noise. That is probably true AND it is the endpoint most likely to behave like LUMEOS. The approvable PRIMARY and the
+  LABEL STORY may be different measurements — the pre-IND ask must say which is which.**
+  **CANDID LIMITS: (a) 31% responders means 69% of treated eyes did not clear the bar — a 0%-responder control makes the DESIGN rigorous, not the
+  drug universally effective. (b) DOSE-SELECTION FLAG (Avi Khanna): the dose response INVERTS in the secondaries — ≥10-letter LLVA low dose 58.6%
+  (p<0.0001) vs high dose 48.3% (p=0.0002); microperimetry mean sensitivity low dose +1.312 dB (p=0.0405, significant) vs high dose +1.201 dB
+  (p=0.0614, not); and laru-zova-related TEAEs ran 38% low dose vs 25% high dose. For a platform whose entire pitch is controlling WHERE and HOW
+  MUCH a transgene is expressed, get VISTA's real dose-response before citing this trial in a deck.** Sources:
+  https://www.globenewswire.com/news-release/2026/09/21/3365149/30580/en/beacon-therapeutics-reports-positive-topline-data-from-the-pivotal-vista-trial-of-laru-zova-for-the-treatment-of-x-linked-retinitis-pigmentosa-xlrp.html ·
+  https://www.beacontx.com/news-and-events/ ·
+  https://investors.meiragtx.com/news-releases/news-release-details/meiragtx-announces-acquisition-botaretigene-sparoparvovec-bota
+- **"ADAPTED," NOT "FLEXIBLE" — AND THE SECONDARY-ENDPOINT TRAP THAT COMES WITH IT (added 2026-09-21 Portfolio Watch item 2; published 2026-09-21,
+  appointments 2026-09-08).** **Karim Mikhail (CBER) and Michael Davis (CDER) are now PERMANENT.** RBC reads Mikhail as a proponent of **flexible
+  trial design for cell and gene therapies, especially rare indications** and Davis as favourable for **CNS, neuropsychiatry, rare disease, novel
+  modalities**. **Evidence on the record: under Mikhail, CBER REVERSED the Makary/Prasad demand that uniQure run a NEW Huntington's trial with a
+  SHAM-SURGERY CONTROL — the existing EXTERNAL-CONTROL data were deemed sufficient for review and uniQure filed its BLA this month.** Lineage back
+  to Peter Marks' 2024 position on single-arm designs in rare disease; the **plausible mechanism pathway** (Nov 2025) sits in the same toolkit.
+  **THE VOCABULARY IS LOAD-BEARING. BIO's John Crowley: "I hate the word flexibility in rare diseases… it implies strongly a lower standard."
+  Mikhail: "If you have a lot of flexibility, it's difficult to be predictable, but if we can have an adapted regulatory framework for rare
+  diseases, then I believe we can be very predictable."** ⇒ **Ask the agency for PREDICTABILITY, not indulgence; write the pre-IND ask in the
+  vocabulary the reviewers are using.**
+  **THE CASE TO BRIEF — CAPRICOR / DERAMIOCEL (DMD cell therapy): MET its Phase 3 primary (significant upper-limb function) and the adcomm voted
+  9–3 AGAINST, because the discussion and the actual vote question were a SECONDARY endpoint (decline in LVEF).** Nicholas Richardson (Precision
+  for Medicine, ex-regulator): *"The functional outcomes from that trial were really meaningful; it just wasn't the actual topic of discussion."*
+  He proposes a **multi-component endpoint** — several objectively measurable, clinically meaningful outcomes — as an adapted-framework instrument.
+  **⇒ NEW LINE IN THE PRE-IND FILE, OWNED BY THE CMO/CDO ROLE THE 09-19 SERAPHA READ SAID TO FILL FIRST: EVERY SECONDARY ENDPOINT YOU AGREE TO
+  COLLECT IS A QUESTION YOU HAVE AGREED TO BE ASKED IN PUBLIC. Choose secondaries as deliberately as the primary and PRE-COMPUTE what an
+  unfavourable result on each one does to the primary's standing.** Beacon's inverted dose-response (above) is that hazard in live form.
+  **WATCH-ITEM (Hemaka Rajapakse): commissioner nominee HEIDI OVERTON has stated no position. Aviva Strategies (memo 2026-09-11) flags CONTINUITY
+  as the watchpoint; BMO names the test balloon — TAYSHA's TSHA-102 (Rett), Breakthrough Therapy, single-arm with a natural-history control,
+  alignment reached under PRIOR leadership, FDA feedback expected H1 2027. Whether that alignment survives is the cleanest public signal on whether
+  our external-control and adapted-endpoint assumptions are underwritable in the Series A.** Source:
+  https://www.biospace.com/fda/mikhail-davis-on-board-with-regulatory-framework-tailored-to-rare-disease-therapies
 - **THE PRE-IND MEASUREMENT ITEMS ARE CMO/CDO PROBLEMS, AND THE MARKET RATE FOR THAT BENCH IS NOW ON THE RECORD — HIRED *BEFORE* THE
   PIVOTAL, OFF AN INVESTIGATOR-INITIATED TRIAL (added 2026-09-19 Portfolio Watch item 4; announced 2026-09-17).**
   **Serapha Bio** named a **five-person senior team** around **SERP-01**, an **in vivo BASE-EDITING** programme for **alpha-1 antitrypsin
@@ -2380,7 +2431,26 @@ _Last update: 2026-09-17_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-19_
+_Last update: 2026-09-21_
+- **THE DURABILITY CLAIM NOW HAS A PUBLIC TEMPLATE FOR HOW YOU PROVE IT: A HEAD-TO-HEAD AGAINST STANDARD OF CARE, MEASURED 12 WEEKS AFTER THE LAST
+  DOSE (added 2026-09-21 Portfolio Watch item 3; topline 2026-09-20). Third instance in five days after Georgiamune and RegCell.**
+  **Cue Biopharma (Nasdaq: CUE) — CUE-221 (Ascendant-221 / UB-221), Phase 2 in chronic spontaneous urticaria.** n=**145**, **run in China by
+  Genesis Life Sciences, a related company of licensor Ascendant Health**; randomised 2:2:2:1:1, double-blind, 16-week treatment + 20-week
+  follow-up; CUE-221 4 / 2 / 1 mg/kg Q4W vs placebo vs **omalizumab (XOLAIR) 300 mg Q4W as an ACTIVE COMPARATOR**.
+  **MECHANISM — THE DIFFERENTIATOR IS DESIGNED IN:** humanised anti-IgE IgG1 binding IgE at sites distinct from omalizumab's, so it blocks
+  **IgE→FcεRI** but **PRESERVES IgE→CD23 on B cells**, feeding back to **reduce synthesis of new IgE**. Neutralise the pool and turn down the tap.
+  **PRIMARY (HSS7=0 at wk 12): 54% / 53% / 43% vs 11% placebo (p<0.005, <0.005, <0.05); omalizumab 41%, not tested.** Key secondary UAS7=0 at wk 12:
+  46% at 4 mg/kg (p<0.05) vs 11% placebo, omalizumab 29%. **THE NUMBER THAT MATTERS IS OFF DRUG: last dose wk 16; at wk 28 the 4 mg/kg arm held
+  60% complete hive resolution vs omalizumab 24% — a 36-point delta, p<0.05 POST HOC.** No treatment-related SAEs, no anaphylaxis.
+  **THE READ (Jon Robbins + Virginia Burger): the 09-17 conclusion was that Winnow competes on DEPTH AND DURABILITY, not convenience.
+  Georgiamune ($93M) and RegCell ($66M) capitalised both poles on 09-19. This is the cleanest of the three because it carries a HEAD-TO-HEAD
+  against the actual standard of care AND an OFF-DRUG measurement. The single claim being underwritten across all three: a mechanism that changes
+  the disease process beats one that suppresses the symptom, and you prove it by STOPPING THE DRUG AND CONTINUING TO MEASURE.
+  ⇒ AN OFF-TREATMENT DURABILITY ARM IS WINNOW'S PRODUCT CLAIM, NOT A NICE-TO-HAVE. Design it into the development plan; do not discover it at the end.**
+  **CANDID LIMITS: the wk-28 omalizumab comparison is POST HOC and the protocol states the active comparator carried NO planned statistical
+  testing; the omalizumab arm is n=17; the trial was run in China by a RELATED PARTY of the licensor. Hypothesis-generating, presented
+  comparatively — cite the off-drug SHAPE, not the 36-point number.** Source:
+  https://www.biospace.com/press-releases/cue-biopharma-announces-positive-topline-results-from-cue-221-phase-2-study-in-chronic-spontaneous-urticaria
 - **BOTH POLES OF OUR COMPETITIVE SPACE GOT CAPITALISED IN ONE WEEK — $158M INTO TREG MODULATION IN THREE DAYS, AND NEITHER BUYER IS A
   T-CELL ENGAGER (added 2026-09-19 Portfolio Watch LEAD; RegCell closed 2026-09-15, Georgiamune surfaced 2026-09-17).**
   **GEORGIAMUNE (~$93M Series B; full entry in §2)** puts an **ORAL CAPSULE** — **GIM-407**, a selective **Treg ACTIVATOR** in Phase 1
@@ -4528,6 +4598,8 @@ _Last update: 2026-09-12_
 - **No-capital top-of-funnel touchpoint (added 2026-09-06; Esther Park + Maisha Rahman).** MassBio + SCbio's free 8-week **Drive** accelerator selected 10 startups (5 techbio, 5 therapeutics; 7 US-based, 4 in MA) with an eligibility cap of **<$1.5M prior equity** — curriculum, weekly mentors, Boston + Charleston demo days, bench access via ADA Forsyth. That is a competing FIRST TOUCH **upstream** of where a Blackbird Labs grant lands, costing mentor time rather than capital. (1) Do we have a no-capital touchpoint for founders earlier than a Labs grant? (2) Is a BioHub demo day with bench access a cheaper sourcing instrument than we assume? Note half the cohort is computational — same signal as the Kathuria/Organotics sourcing-latency case. Source: https://www.biospace.com/business/10-life-sciences-startups-selected-for-accelerator-program
 - **Lp(a)HORIZON full dataset — the subgroup that decides a class (added 2026-09-06).** Novartis will present at an unnamed congress. The analysis to pull is **outcome by baseline Lp(a) and by magnitude of reduction** (Jefferies' ask), which determines whether the deeper-suppression programmes — Amgen **olpasiran** (>95% mid-stage), Lilly **lepodisiran**, Silence **zerlasiran** — survive. Relevant to us only as the cleanest public worked example of separating a target failure from a modality failure.
 - **Shelved / divested large-pharma asset screen (added 2026-09-05):** Pfizer's CD228 ADC cleared at $12M upfront. Who owns a standing screen on deprioritised big-pharma assets in our theme areas, what is the source (BD conference lists, 8-Ks, pipeline-page diffs, banker outreach), and what does a first pass surface? (Eddie + Avi.)
+- **A SECOND TOP-THREE CARDIOMETABOLIC ACQUIRER IS NOW TRANSACTING AT OUR STAGE — EXTEND THE DC-PACKAGE SPEC REQUEST TO NOVO (added 2026-09-21; Eddie Cherok + Avi Khanna).** Novo signed a multi-target discovery/licence collaboration with **Orbis Medicines** on **AI-designed ORAL MACROCYCLES** for cardiometabolic disease — **up to $1.4B upfront + milestones, tiered royalties, plus a strategic equity investment**, split undisclosed (nGen platform; up to **18% oral bioavailability** preclinically; announced 2026-09-17) — and on 2026-09-18 took **three early-stage NON-INCRETIN obesity programmes off Kallyope**: **K-554**, a once-weekly first-in-class gut-brain satiety peptide that is **IND-READY**, a follow-on small molecule against a novel receptor, and a small-molecule receptor agonist; **terms and targets undisclosed**. ⇒ The 09-05 action ("find out what the preclinical diligence process asks for, because it is a specification for our DC package") was opened on Lilly; it now applies to **two of the three largest cardiometabolic buyers in the world**. Familiar tell: undisclosed terms across three programmes usually means a small upfront (same inference as GSK/Chimagen, 09-15). Sources: https://www.biospace.com/deals/novo-notches-up-to-1-4b-pact-with-orbis-to-develop-oral-macrocycle-cardiometabolic-drugs · https://www.fiercebiotech.com/biotech/refreshed-novo-corrals-three-new-early-stage-obesity-drugs-kallyope
+- **ARPA-H SPECTRA — federal non-dilutive money for a target-generation engine that describes Lieber, first deadline 2026-10-18 (added 2026-09-21; Yixuan Qiu + Esther Park).** ARPA-H launched **SPECTRA** (Systems for Phenotypic Evaluation, Clinical Trajectories, Response, and Agency) on **2026-09-17** — autism across the lifespan, four technical areas: **TA1 Analysis** (genetic, environmental, family, metabolic, immune and developmental factors behind distinct trajectories); **TA2 Modeling** (federated, privacy-preserving AI mapping trajectories → modifiable outcome drivers and **actionable targets**); **TA3 Precision Intervention**; **TA4 Enabling Technologies**. **Solution-summary deadlines: TA4 opens Oct 4, closes Oct 18 2026 5pm ET; TA1+TA2 open Nov 18, close Dec 2 2026; TA3 closes Jan 18 2027.** TA1/TA2 describe what the **Lieber Institute for Brain Development** already does (cf. the Weinberger/Pergola coexpression-TWAS and Martinowich/Maynard/Hicks dACC-atlas entries in §2b), and **Kennedy Krieger** is a top-tier autism clinical franchise four miles from the BioHub. **ACTION: establish whether Lieber and Kennedy Krieger are already writing to TA1/TA2. If yes, get sight of it; if no, have the conversation before Oct 4.** Sources: https://www.hhs.gov/press-room/arpa-h-launches-spectra-transform-autism-diagnosis-precision-care.html · https://www.fiercehealthcare.com/regulatory/arpa-h-launches-spectra-program-new-autism-research-initiative
 - **Lilly ranks FIRST on the NXE'149 bidder set — ANSWERED 2026-09-06, follow-up open (opened 2026-09-05).** BioPharma Dive's 09-04 chart set: **Lilly has announced 12 acquisitions since the start of 2026 — 4× its nearest competitors (Gilead, GSK, Novartis) — for at least $31.5B, double the next most active acquirer, and roughly HALF were preclinical or Phase 1 stage** (including Merida Bio at up to $2.9B, upfront undisclosed). Add to the three adjacent CNS/GPCR theses already logged (Lilly Asia Ventures in NeuShen; Lilly on Superluminal's cap table plus a $1.3B GPCR collaboration; Lilly funding Leal's Series A extension). **RANK LILLY FIRST, ahead of Otsuka, Neurocrine, AbbVie/Cerevel, Novartis and SK Biopharmaceuticals. The load-bearing fact is not the total — it is that half of twelve were done AT OUR STAGE, so the GPR52 programme does not need a Phase 2 readout to be transactable.** **STILL OPEN (Eddie):** half of twelve implies a repeatable preclinical diligence process — find out what it asks for, because it is effectively a specification for our DC package. Source: https://www.biopharmadive.com/news/charts-biotech-deals-china-alumis-ultragenyx-stock/829635/
 - **GPR52 signalling-bias statement (added 2026-09-05; sharpens the 08-31 and 09-02 biomarker items):** the DC package needs a written answer to WHICH signalling arm the agonist recruits, whether that profile was chosen or inherited from the chemistry, and what PD readout demonstrates it in a patient. Superluminal has made functional selectivity the industry's default vocabulary; we should not be asked this cold. (Hemaka + Yixuan.)
 - **CERVINO full dataset at IMS Glasgow, 2026-09-23/26 (added 2026-09-05):** pull the CRS/ICANS denominators, infection rates and the step-up-dose schedule for the Winnow TPP row, and check whether AbbVie reports any target-density or BCMA-expression analysis that speaks to whether the avidity-for-affinity trade travels to a lower-density antigen. (Jon Robbins.)
@@ -4548,7 +4620,7 @@ _Last update: 2026-09-12_
 - **GPR52 biomarker package (added 2026-08-31):** the buyer's stated recipe is genetics + biomarkers. What is the actual PD/receptor-occupancy plan, is there a PET tracer path for GPR52, and what patient-selection hypothesis would a Phase 2 carry? This is now the gating item for the DC narrative, not a downstream question.
 - **AAV trial-execution benchmark (added 2026-08-31):** GenePHIT ran 64 sites in 12 countries without immunosuppression. Pull the AskBio operational model (site activation, capsid, dose, immunogenicity monitoring) as the reference point for what Aletira's Series A should claim it can execute.
 - **Lilly inner-ear surveillance (added 2026-08-28):** stand up a scheduled ClinicalTrials.gov sponsor query (Lilly/Akouos + inner ear / hearing) and a watch on patent application publications from the Lilly–Seamless Therapeutics recombinase collaboration; the pipeline page will no longer show a GJB2 program before Phase 2.
-- **JHU as a Qualified Research Institution (added 2026-08-28):** is JHTV or the Hopkins clinical research office preparing an Expedited IND Pilot QRI application (window opens September 2026, launch Q4 2026)? If not, does Blackbird raise it — and what is our written answer on the conflict-of-interest question when the university advises a sponsor it holds equity in?
+- **JHU as a Qualified Research Institution — THE WINDOW IS OPEN AND CLOSES 2026-10-30 AT 11:59pm ET (added 2026-08-28; deadline confirmed 2026-09-21).** FDA formally launched the **Expedited IND Pilot** on **2026-09-15** under Operation TrialBlazer (covered as the 09-15 Portfolio Watch LEAD): **sponsor and prospective QRI apply as a PAIR, with the SPONSOR submitting**; QRIs may be academic medical centres, health networks, CROs or regulatory advisory firms; FDA expects to select **8–10 sponsor-QRI pairs**; benefit is **rolling review of individual IND components during the PRE-IND phase**, with reduced clinical-hold risk as the stated objective. Is JHTV or the Hopkins clinical research office preparing an application, and with which sponsor? If not, does Blackbird raise it — and what is our written answer on the conflict-of-interest question when the university advises a sponsor it holds equity in?
 - **Curium–Lantheus and the Pylarify royalty (added 2026-08-28):** what happens to JHU's Pylarify royalty stream when Lantheus goes private under Curium (agreement 2026-08-03, close guided H1 2027)? Confirm whether the JHU licence sits with Lantheus or a subsidiary, and whether the CVR milestones touch Pylarify volumes.
 - **Clasp SENTINEL-101 (added 2026-08-27):** does the CLSP-5282 (KRAS G12V / HLA-A*03:01) Phase 1 protocol carry a
   **post-daraxonrasib stratum** now that RASONQUE is approved in previously treated PDAC? And what is the multiplied
