@@ -316,6 +316,23 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
   https://www.axios.com/2026/08/31/trump-new-drug-price-deals ·
   https://www.whitehouse.gov/fact-sheets/2026/08/fact-sheet-president-donald-j-trump-announces-deal-with-nine-additional-pharmaceutical-manufacturers-to-lower-drug-prices-for-americans/
 
+**FEDERAL-FUNDING WATCH — A DRAFT EXECUTIVE ORDER WOULD PUT AN EXTERNAL COMMITTEE BETWEEN NIH PEER REVIEW AND THE AWARD, WHICH IS AN
+UPSTREAM-SUPPLY QUESTION FOR EVERYTHING WE SOURCE (added 2026-09-22 Portfolio Watch item 6; NYT 2026-09-20, STAT 2026-09-21).** The
+White House is **reported** to be drafting an executive order creating an **external committee empowered to VETO NIH awards** that do
+not conform to administration priorities; the reported board would include **OMB Director Russell Vought** and **NIH Director Jay
+Bhattacharya**, who is reported to be **resisting**; the reported trigger was Bhattacharya declining to cut funding to Harvard
+researchers. STAT reports pushback. **IT IS A DRAFT AND UNSIGNED — no forecast, and do not write it into a deck as policy.**
+**⇒ THE READ (Matt Tremblay + Maisha Rahman), taken off the same day's science: the CHCHD10 ASO paper ran on the n-Lorem Foundation
+plus an NIH U01/KL2 and a named career-development award; Ariadne Bio ran on a venture studio plus the Michael J. Fox Foundation. If
+federal award decisions become politically contingent, a nonprofit that writes NONDILUTIVE TRANSLATIONAL GRANTS INTO ACADEMIC LABS
+becomes structurally MORE valuable and MORE in demand — that is Blackbird Laboratories, and the labs at Johns Hopkins, UMB and Lieber
+we source from will be looking for exactly what we issue.**
+**⇒ TWO ACTIONS: (a) ask whether grant capacity and diligence THROUGHPUT are sized for higher inbound volume; (b) Eddie — open
+co-funding conversations with disease foundations (Michael J. Fox Foundation, ALS philanthropies, Cystic Fibrosis Foundation) on
+programmes we would otherwise carry alone. A warm-introduction exercise, cheaper than a fund.** Sources:
+https://www.nytimes.com/2026/09/20/science/nih-omb-grants-bhattacharya-vought.html ·
+https://www.statnews.com/2026/09/21/trump-plan-for-commission-to-review-nih-grants-push-back/
+
 ### Spinout-structure comparators (how other people carve assets out)
 _Last update: 2026-09-17_
 - **OPTION-TO-ACQUIRE vs EXCLUSIVE LICENCE, BOTH RESOLVED IN THE SAME THREE DAYS ON EQUIVALENT ENABLING-LAYER ASSETS — AND THE
@@ -886,6 +903,42 @@ and it closed because the team had ONE ION-CHANNEL EXIT ALREADY. QUESTION FOR EA
 founder with a relevant exit, and are we recruiting that person BEFORE the science is ready rather than after?** Source:
 https://biobuzz.io/news/charlottesvilles-navion-neurosciences-raises-10-8-million-to-build-precision-medicines-for-misfiring-neurons/
 
+**PARKINSON'S theme — A VENTURE STUDIO SIDESTEPPED THE WHOLE 09-08 CONSTRAINT BY PICKING A *SYMPTOM DOMAIN* NOBODY TREATS, AND ITS
+SOURCING CHANNEL IS A COMPOUND WITH NO OWNER (added 2026-09-22 Portfolio Watch item 2; announced 2026-09-18).**
+**Palomar Labs** (formerly Negev Labs), a venture studio, spun out **Ariadne Bio**. Studio thesis: find drug candidates **with a
+documented history of human use**, in **conditions of late life**, and carry them to proof of concept. Managing partner **Shlomi Raz**
+is CEO (previously founded **Eleusis** → Beckley Psytech 2022 → AtaiBeckley 2025 → **Lilly agreed to acquire AtaiBeckley July 2026**);
+**Daniel Jeffries, PhD** is Chief Development Officer.
+**ASSET — AB-300: a clinical-stage NON-HALLUCINOGENIC serotonin-2A (5-HT2A) agonist built on a compound TESTED IN HUMANS IN THE 1970s
+and documented then to lack hallucinogenic effects.** A **January 2026** paper attributes the absence of hallucinogenesis to
+**signalling bias** — the parent compound preferentially activates the non-hallucinogenic intracellular pathway without losing
+therapeutic benefit. **Off-target screening: no measurable activity at dopamine receptors or DAT.**
+**INDICATION — APATHY in Parkinson's: persistent reduction in goal-directed behaviour, ~40% of PD patients over the illness,
+concentrated mid-to-late disease, NO APPROVED THERAPY IN ANY INDICATION**; caregiver-burden studies rank neuropsychiatric symptoms
+**ahead of** motor symptoms. SSRIs remain right for PD *depression* but are linked to emotional blunting and **worsening apathy**.
+**PRECLINICAL (ASCP, May 2026): tetrabenazine-induced motivational deficit, progressive-ratio lever pressing; AB-300 + TBZ raised
+motivated behaviour 89% vs TBZ alone (significant) at predicted-clinical doses; claimed first 5-HT2A agonist to restore motivated
+behaviour in a dopamine-depleted model — AND the same model reproduced the clinically observed SSRI worsening of apathy.**
+**DEVELOPMENT: Type B pre-IND already held. Phase 1b starts end-Q3 / early-Q4 2026 in Austria and Israel; three parts — SAD in healthy
+volunteers, SAD in PD patients on SoC (biomarkers + dose range), then a 28-day double-blind placebo-controlled segment in patients with
+clinically relevant apathy. Funding: Palomar + the MICHAEL J. FOX FOUNDATION therapeutics pipeline programme, amount undisclosed,
+stated sufficient to complete the trial.**
+**⇒ READ ONE (Eddie Cherok + Hemaka Rajapakse) — THE DIVESTED-ASSET SCREEN NEEDS A SECOND LANE. The 09-05 screen was on
+divested/shelved large-pharma assets and the 09-19 Orum/BMS item gave it its first filter (licence-with-reversion vs outright purchase).
+A 1970s human-tested compound has NO COUNTERPARTY AT ALL — no reversion clause, no seller to persuade, no purchase price. The asset is
+prior human safety data plus a synthetic route, and the diligence question changes from "who owns it" to "is the old human data good
+enough to let us skip anything."**
+**⇒ READ TWO (Anthony Accorsi + Jon Robbins) — CLEANEST ANSWER YET TO THE 09-08 SELECTION RULE. A symptom-domain indication in
+already-diagnosed, already-in-clinic, mid-to-late-stage patients has NO PATIENT-FINDING PROBLEM, so a value case here does not depend
+on solving the diagnostic-latency constraint the field names as its own graveyard.**
+**⇒ READ THREE (Virginia Burger + Avi Khanna) — MODEL-DESIGN TEMPLATE TO DEMAND: an animal model carrying a CLINICALLY ANCHORED
+FALSE-POSITIVE CHECK (the SSRI-worsening arm) is a materially stronger claim than "our compound worked in our assay."**
+**⇒ READ FOUR (Avi Khanna) — COMPETITIVE: a receptor-selective, signalling-biased, non-hallucinogenic 5-HT2A agonist IS the plastogen
+class tracked under the Gould lab (UMB Neuropharmacology, §2b). Ariadne is now the nearest CLINICAL-STAGE comparator to anything out of
+that lead ⇒ the diligence question moves from "is the class real" to "which property, population or route do we hold that AB-300 does
+not."** Source:
+https://www.genengnews.com/topics/drug-discovery/palomar-labs-spins-out-ariadne-bio-to-advance-non-hallucinogenic-therapy-for-parkinsons-apathy/
+
 **PARKINSON'S theme — the constraint the field names is DIAGNOSTIC LATENCY, not target choice, and the inflammasome lane is
 already priced (added 2026-09-08 Portfolio Watch item 4; published 2026-09-08).** **Jefferies: ~$8B market by 2035**, *"one of the
 largest untapped opportunities in neuroscience"*; population expected to exceed **2 million** across US + Europe within ten years;
@@ -1032,7 +1085,30 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-09-21_
+_Last update: 2026-09-22_
+- **THE ACADEMIC INSTITUTION THAT INVENTED THE FAYUVI VECTOR WATCHED THE ASSET LEAVE TWICE AND KEPT THE MANUFACTURING — AND THE
+  MANUFACTURING IS NOW THE PART WITH AN FDA APPROVAL ATTACHED TO IT (added 2026-09-22 Portfolio Watch item 5; announced 2026-09-21).
+  EXTENDS the 09-18 "CMC, not biology, set the timeline" read into a PROCUREMENT and LICENSE-TERMS action.**
+  **Andelyn Biosciences confirmed FAYUVI is the FIRST FDA-APPROVED GENE THERAPY MANUFACTURED ON ITS AAV CURATOR® PLATFORM**, with
+  commercial supply from **Andelyn's Columbus, Ohio facility ALONGSIDE Ultragenyx's Bedford, Massachusetts plant** — dual commercial
+  supply for a ~3,000–5,000-patient product. CEO **Wade Macedone**: the platform "integrates process knowledge, modular manufacturing
+  strategies, and fit-for-purpose analytics… from development through commercial launch."
+  **NEW FACT THAT MAKES IT A STRUCTURAL ITEM: ANDELYN IS NATIONWIDE CHILDREN'S HOSPITAL'S OWN AFFILIATE CDMO — spun out January 2020
+  on >15 years of in-house AAV vector work, now in a ~180,000 sq ft plant in the Ohio State Innovation District, built with strategic
+  investment from PALL and CYTIVA (2021).** Set beside the two facts already on file: the vector was built by **Haiyan Fu + Doug
+  McCarty** at Ohio State / Nationwide Children's, licensed to **Abeona**, then out-licensed to **Ultragenyx** when Abeona hit funding
+  constraints despite positive clinical data; and the approval timeline was set by a **July 2025 CRL on CMC + facility inspection
+  observations**, with nothing raised on the clinical package.
+  **⇒ ACTION 1 — PROCUREMENT (Geoff Lynn + Hugh Wells): for a platform whose entire pitch is controlling WHERE and HOW MUCH a
+  transgene is expressed, CMC is the schedule risk, and there is now a NAMED platform carrying a commercial AAV approval. Find out
+  what a slot costs and the booking lead time BEFORE the pre-IND, not after.**
+  **⇒ ACTION 2 — LICENSE TERMS (Eddie Cherok + Emily Wilkinson): MANUFACTURING RIGHTS are the term a founder gives away cheaply in
+  year one because it reads as a detail. Nationwide Children's is the counterexample — the asset left twice and the manufacturing
+  stayed. Raise it explicitly on the next JHTV / UM Ventures term sheet.**
+  **CANDID: the BioHub is 42k sq ft of wet-lab incubator with shared instruments and a vivarium. It is not GMP manufacturing and at
+  our scale should not try to be — Andelyn needed 180k sq ft plus outside strategic capital. The lesson is TERMS and PROCUREMENT, not
+  building a plant.** Source:
+  https://www.genengnews.com/topics/bioprocessing/andelyn-curator-biomanufacturing-platform-supports-fayuvi-gene-therapy-approval/
 - **THE CLEANEST CONTROLLED EXPERIMENT WE WILL EVER GET ON ENDPOINT CHOICE: SAME GENE, SAME DISEASE, SAME MODALITY, TWO SPONSORS — THE ONE THAT
   AGREED A RESPONDER THRESHOLD ON A MACHINE-MEASURED SCALE HIT ITS PIVOTAL PRIMARY; THE ONE THAT CHOSE A NATURALISTIC MOBILITY TASK MISSED
   (added 2026-09-21 Portfolio Watch LEAD; announced 2026-09-21). UPGRADES the 09-12 Opus Genetics endpoint template from a Type C alignment to a
@@ -2212,7 +2288,45 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-09-17_
+_Last update: 2026-09-22_
+- **THE KNOCKDOWN-SAFETY DOSSIER IS FREE, AND THE PD TARGET IS *NORMALISATION* NOT PERCENT KNOCKDOWN: AN N-OF-1 ASO TOOK NfL INTO THE
+  REFERENCE RANGE AND FUNCTION IMPROVED WHERE TOFERSEN'S 40% REDUCTION LEFT NfL ELEVATED AND FUNCTION DECLINING (added 2026-09-22
+  Portfolio Watch LEAD; paper posted 2026-09-14, *Nature* coverage 2026-09-18). Full text read via Europe PMC / PMC13580205 —
+  cell.com and ScienceDirect are blocked from this host.**
+  **Cousin MA … Oskarsson B, "N-of-1 investigational study of a novel antisense oligonucleotide drug in *CHCHD10*-related ALS shows
+  early signs of efficacy," *Med* (Cell Press), doi 10.1016/j.medj.2026.101295, NCT06392126.** Drug **nL-CHCHD-001** designed by the
+  **n-Lorem Foundation** (Stanley Crooke's nonprofit; individualised ASOs supplied **free for life**), dosed at **Mayo Clinic
+  Jacksonville**. **320 gapmer ASOs screened**; 20-mer MOE/DNA gapmer recruiting **RNase H1**; **6 intrathecal doses over 12 months
+  (3 × 50 mg → 3 × 75 mg, first two 4 weeks apart then quarterly), escalating to a 100 mg target.** Participant: 51-y-old physician,
+  *CHCHD10* c.44G>T p.(Arg15Leu), father died of ALS at 76.
+  **RESULTS: no SAEs, CSF safety labs unremarkable, post-dose headache + fatigue CTCAE 1–2. Plasma NfL 28.1 pg/mL pretreatment
+  (normal ≤22.4) → 16.3 pg/mL average at 3 months = ~50% and INSIDE the reference range, moving by month 1. ALSFRS-R 33 → 36.
+  FVC 48% → 55% predicted. Cognition stable (ALS-CBS); still practising as a physician. Alive at 12 months.** Authors' natural-history
+  comparators: ALSFRS-R −0.89 pt/month, FVC −2 to −2.9%/month.
+  **THE LOAD-BEARING CONTRAST — TOFERSEN / VALOR, 6 months, slowly progressive subgroup: NfL −40% but REMAINED MARKEDLY ELEVATED;
+  ALSFRS-R −1.4 pts; FVC −4.6%. ⇒ WRITE THE PD TARGET AS "INTO THE REFERENCE RANGE," NOT "≥X% KNOCKDOWN."** This also *qualifies*
+  rather than contradicts the 09-17 Novartis/VHB937 read: there, a microglial mechanism moved neither the clinical primary nor NfL.
+  **⇒ ACTION 1, THE CHEAPEST ONE WE HAVE FOUND (Jon Robbins + Anthony Accorsi): the pre-dose tolerability-of-knockdown case was built
+  ENTIRELY FROM PUBLIC DATA — pLI = 0, LOEUF = 1.54, haploinsufficiency index 77%; UK Biobank predicted LoF variants in 31 CONTROLS
+  and 0 ALS CASES; ClinVar/ClinGen truncating alleles none pathogenic for ALS/FTD; germline *Chchd10* knockout mice have NORMAL
+  SURVIVAL with no cardiomyopathy or mtISR, while the S55L (human S59L) knock-in is fully penetrant fatal mitochondrial
+  cardiomyopathy. NuGate's pre-IND owes the equivalent four paragraphs for ITS target. If it cannot produce them, that is the gap.**
+  **⇒ ACTION 2 (instrument thread): NfL validated as an INDIVIDUAL-level response marker, not only series-level — the cheapest
+  instrument in ALS. CANDID: it is NONSPECIFIC; the participant's NfL rose after a fall/mild concussion post-dose-4. Good primary PD
+  endpoint, bad SOLE efficacy endpoint. And the +3 ALSFRS-R gain sits UNDER the ~3.7 pts/3 months proposed MCID ⇒ the defensible claim
+  is BIOMARKER NORMALISATION WITH FUNCTIONAL STABILITY, not proven functional benefit.**
+  **⇒ ACTION 3 (Hemaka Rajapakse): *CHCHD10* gain-of-function produces PROMINENT TDP-43 PATHOLOGY, and the authors state this would be
+  THE FIRST ASO WITH BENEFIT AGAINST A GENETIC ALS LINKED TO TDP-43. That is a tailwind under BOTH live Hopkins TDP-43 sourcing leads —
+  the Wong lab cryptic-splicing work (2026-09-20 Radar LEAD) and Jiou Wang's cell-type-resolved TDP-43 biology (§2b). One sentence in
+  the next memo on either.**
+  **POSITIONING, NOT A THREAT: n-Lorem supplies these drugs free for life and the programme has expanded to other sites via "Silence
+  ALS," so the mutation-specific ultra-rare lane has a NON-COMMERCIAL occupant a company should not contest. This CLARIFIES NuGate —
+  stay on the pan-ALS/FTD target where the denominator supports a company — and the ASO being NON-ALLELE-SELECTIVE (expected to serve
+  all *CHCHD10* carriers) is the same architecture at a smaller denominator.**
+  **OTHER LIMITS (authors'): unblinded n-of-1, descriptive analyses only with no inferential testing, and CHCHD10 protein/mRNA could
+  not be measured in CSF.** Funding: n-Lorem Foundation, NIH U01NS134684, KL2 TR002379, Kevin Merszei Career Development Award. Sources:
+  https://doi.org/10.1016/j.medj.2026.101295 · https://www.nature.com/articles/d41586-026-02945-z ·
+  https://clinicaltrials.gov/study/NCT06392126
 - **A 251-PATIENT ALS PHASE 2 MISSED ITS CLINICAL PRIMARY *AND* ITS NfL SECONDARY, WHICH IS THE BEST AVAILABLE DEFENCE OF THE 09-03
   "NfL AS THE EVIDENTIARY SPINE" DECISION — AND IT CLOSES THE STRESS TEST OPENED 09-16 (added 2026-09-17 Portfolio Watch item 2;
   reported 2026-09-16).** **Novartis discontinued VHB937 / lifonebart in ALS** after Phase 2 **ASTRALS** missed. Molecule =
@@ -3299,7 +3413,31 @@ _Last update: 2026-09-18_
   Source: https://www.biospace.com/drug-development/revmeds-newly-approved-rasonque-could-hold-up-in-non-small-cell-lung-cancer
 
 ### Georgiamune — Gaithersburg MD, Blackbird BioVentures position, the INTERGALACTIC-CENTER THESIS WITH THIRD-PARTY CAPITAL BEHIND IT ✅
-_Last update: 2026-09-19_
+_Last update: 2026-09-22_
+- **A DIRECT TREG-ACTIVATION COMPARATOR FILED TO GO PUBLIC WITH LILLY ANCHORING THE BOOK, NINE MONTHS AHEAD OF ITS FIRST EFFICACY DATA
+  (added 2026-09-22 Portfolio Watch item 3; S-1 filed 2026-09-18, trade coverage 2026-09-21).** **TRex Bio** (South San Francisco;
+  proposed Nasdaq ticker **TRXB**) filed its S-1 on **2026-09-18**; underwriters **J.P. Morgan, Evercore ISI, Cantor, Stifel, Wedbush
+  PacGrow**; **per the prospectus Eli Lilly intends to invest in the IPO**. Prior capital **$59M Series A (2021)** + **$50M (Jan 2026)**;
+  SV Health Investors among backers.
+  **ASSET — TRB-061, a selective TNFR2 AGONIST. TNFR2 is a co-stimulatory receptor preferentially expressed on the MOST SUPPRESSIVE
+  Tregs in SKIN AND GUT, so agonism preferentially expands "TISSUE-LICENSED" Tregs; stated aim is reducing inflammation AND promoting
+  barrier tissue repair. Phase 1a/b: SAD portion COMPLETE, MAD UNDERWAY; first indication moderate-to-severe ATOPIC DERMATITIS; data
+  guided MID-2027.**
+  **⇒ READ ONE (Eddie Cherok) — PROPERTY-OR-POPULATION, FIFTH INDICATION. TRex and Georgiamune point the SAME direction and
+  differentiate on DIFFERENT axes: TRex sells a POPULATION (the tissue-licensed Treg in barrier tissue, selected by receptor choice);
+  GIM-407 sells a PROPERTY (oral). ⇒ QUESTION FOR THE DATA ROOM, if the position gives us access (09-19 action): does ORAL earn a line
+  on the label, or is it convenience in a disease where the competition also doses quarterly?**
+  **⇒ READ TWO — IT CUTS AGAINST OUR OWN AUGUST LESSON, AND SAY SO. The 08-22 Werewolf read was "the platform narrative is not what is
+  being funded; the asset is the readout." A Treg-activation platform pricing an IPO NINE MONTHS ahead of first efficacy data, with a
+  strategic anchoring the book, is the market contradicting that THIS QUARTER. Both can be true. When advising a portfolio company on
+  timing, state it as a CONDITION not a law: this window rewards pre-data platform stories in immunology.** Same-week context: **ADARx
+  targeting a $319M IPO (09-21)**, **Retension Pharmaceuticals also filed 09-18**, **Electra priced at $350M (09-18)**.
+  **SEQUENCE ON ONE CLAIM, FOUR DATAPOINTS IN FIVE DAYS: Georgiamune $93M + RegCell $66M (09-19) → Cue CUE-221 off-drug durability vs
+  omalizumab (09-20/21) → TRex S-1 (09-18, surfaced 09-21). The claim underwritten across all four: a mechanism that changes the
+  disease process beats one that suppresses the symptom.** Sources:
+  https://www.fiercebiotech.com/biotech/retension-and-lilly-backed-trex-bio-both-set-out-plans-join-biotech-ipo-stampede ·
+  https://endpoints.news/adarx-targets-319m-ipo-as-trexbio-retension-join-filing-queue/ ·
+  https://trex.bio/trexbio-doses-first-patient-with-moderate-to-severe-atopic-dermatitis-in-phase-1b-clinical-trial-of-trb-061-a-tnfr2-agonist/
 - **What:** clinical-stage immunotherapeutics built on **reprogramming immune signalling pathways to restore "immune balance."** ~**30
   employees**. Founder/CEO **Samir N. Khleif**, medical oncologist + immunology researcher; platform originated in his own lab.
 - **Pipeline — ONE PLATFORM, ONE CELL TYPE, POINTED IN BOTH DIRECTIONS, AND THAT IS WHY IT IS OURS.** **GIM-122** — first-in-class
@@ -4422,7 +4560,25 @@ _Last update: 2026-09-13_
 - **Actions:** **Esther** — open the conversation this week. **Eddie** — provisional-filing moment on the **MDK–PTPRZ1 axis specifically**, not on ZBTB20. **Avi** — is there existing chemical matter (MDK mimetics, PTPRZ1 agonists/antagonists) to in-license around, and who holds it?
 
 ### Kathuria lab multi-region brain organoid + Neural Impact Score (JHU BME + Neurosurgery) → **Organotics, Inc.** — BioVentures / BioHub lead, NOT a licensing lead + sourcing-latency case ⚠
-_Last update: 2026-08-30_
+_Last update: 2026-09-22_
+- **THE NAM TAILWIND IS NOW REGULATORY *TEXT* RATHER THAN A SPEECH — AND THE 25-CASE DATABASE PUBLISHED WITH IT IS THE ACTUALLY USEFUL
+  OBJECT (added 2026-09-22 Portfolio Watch item 4; FDA announcement 2026-09-21, Federal Register 2026-09-22).**
+  **FDA issued a DIRECT FINAL RULE ("Nonclinical Testing Terminology") replacing "animal tests"/"animal studies" with "nonclinical
+  tests"/"nonclinical studies" throughout its drug and biologic safety-testing regulations; "preclinical" and "in vitro" also
+  replaced; terms defined in line with FDORA 2022. It REMOVES the language implying animal testing is the only acceptable route to
+  pre-human safety evidence. It does NOT eliminate or prohibit animal studies.** Named alternatives: human cells, organs-on-chips,
+  computer models, NAMs. Acting Commissioner **Kyle Diamantas** quoted. **Takes effect 4 FEBRUARY 2027; comments due 7 DECEMBER 2026;
+  a COMPANION PROPOSED RULE exists so the direct final rule can be withdrawn on significant adverse comment.**
+  **ALONGSIDE THE RULE FDA PUBLISHED A DATABASE OF 25 NAM USE CASES DRAWN FROM ITS OWN PUBLICLY AVAILABLE REVIEW MATERIALS.**
+  **⇒ ACTION (Yixuan Qiu + Esther Park): the 25 examples are not aspirations — each is a case where a REVIEWER ALREADY ACCEPTED a
+  non-animal method for a stated purpose. Read all 25 and produce a one-page map of method → accepted purpose. That is reusable
+  diligence infrastructure for Organotics, for the Wirtz/Wu VITAL-3D volumetric drug-response platform (BioHub shared-capability
+  candidate, this section) and for the Rohn/UCL flow micro-bladder assay (09-07, chronic-infections theme).**
+  **CANDID LIMIT TO STATE IN THE SAME BREATH: a terminology rule removes a RHETORICAL barrier and creates a CITABLE PRECEDENT SET. It
+  obliges no reviewer to accept anything and does not change what a division will accept on an IND next month. Do not let an organoid
+  company — including one of ours — overstate it.** This also answers the standing "NAM regulatory momentum" watch line below.
+  Sources: https://www.fda.gov/news-events/press-announcements/fda-updates-regulations-advance-innovative-alternatives-animal-testing ·
+  https://www.federalregister.gov/documents/2026/09/22/2026-19349/nonclinical-testing-terminology
 - **Lab / people.** **Annie Kathuria, Ph.D.** — Department of Biomedical Engineering, Johns Hopkins University, with a Neurosurgery / Johns Hopkins Medical Institutes affiliation; senior + funding-acquisition author. **Genevieve Stein-O'Brien, Ph.D.** (JHU) supervised the spatial-transcriptomics arm. First author **A.P.**; student co-authors Vanshita Singh, Om Sadul, Nitya Lagadapati, Kaustubh Joshi; Ryan Palaganas + Jon Sundstrom on spatial.
 - **Fresh disclosure (bioRxiv, posted 2026-08-26; 2026-08-30 Sourcing Radar LEAD).** "The Neural Impact Score benchmarks drugs in Multi-Region Brain Organoids." Full text read. — https://www.biorxiv.org/content/10.64898/2026.08.26.746777v1
 - **The substrate.** Vascularized human iPSC-derived **Multi-Region Brain Organoid (MRBO)** — cortical, midbrain, brainstem, glial, choroid plexus, ependymal, retinal and mesenchymal pericyte-like populations plus an endogenous **endothelial compartment**; aged **200 days**; cortical compartment aligns to the **GW18–GW22** human fetal window. Prior work from the same lab produced the "whole-brain" organoid covered by JHTV in 2025.

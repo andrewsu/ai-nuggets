@@ -2771,3 +2771,36 @@ Two rejections worth logging:
 
 Also noted but not acted on: `2026-09-15-portfolio-watch.commit-msg` and `.rss-item.xml` are still untracked in `scripts/` although that episode is in `feed.xml` — `publish_pending.py` appears not to have cleaned up after that run. Left alone.
 === 2026-09-21T02:27:47-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-22T02:10:11-07:00 start blackbird-brief ===
+Done. Final run summary:
+
+**Published (SKIP_TTS mode — no TTS, no R2 publish, no feed edit, no commit; `publish_pending.py` will do those):**
+- `podcasts/blackbird-brief/scripts/2026-09-22-portfolio-watch.md` — 2,723-word spoken script + full show notes
+- `podcasts/blackbird-brief/scripts/2026-09-22-portfolio-watch.rss-item.xml` (both placeholder tokens present, XML validates)
+- `podcasts/blackbird-brief/scripts/2026-09-22-portfolio-watch.commit-msg`
+- Ledger appended: 10 keys under `2026-09-22-portfolio-watch` (75 episodes / 421 items)
+- `memory/blackbird-portfolio.md` edited **in place**: NuGate, Aletira, Georgiamune, Kathuria/Organotics entries revised with `_Last update:_` bumped; new Ariadne Bio entry prepended to the Parkinson's theme; new federal-funding watch note in §1
+
+**Episode — Portfolio Watch, recency window 2026-09-18 → 2026-09-22, six items:**
+1. **LEAD / NuGate** — n-of-1 antisense in *CHCHD10* ALS: NfL 28.1 → 16.3 pg/mL (into the ≤22.4 reference range), ALSFRS-R 33→36, FVC 48%→55%. The load-bearing contrast is tofersen (VALOR: −40% NfL but still elevated, function still declining) ⇒ write the PD target as *normalization*, not percent knockdown. Plus the transferable part: the knockdown-tolerability dossier built entirely from public human genetics (pLI 0, LOEUF 1.54, 31 UK Biobank LoF controls vs 0 cases, normal-survival KO mouse). TDP-43 link ties it to the Wong and Jiou Wang sourcing leads. **Per PubMed, full text read via PMC13580205 — [DOI](https://doi.org/10.1016/j.medj.2026.101295).**
+2. **Parkinson's theme** — Palomar Labs → Ariadne Bio; a 1970s human-tested 5-HT2A agonist opens a sourcing lane with *no counterparty*, and apathy sidesteps the 09-08 diagnostic-latency constraint.
+3. **Georgiamune / Winnow** — TRex Bio S-1 (TNFR2 agonist, Lilly investing, data mid-2027); property-vs-population in a fifth indication, and an honest note that it contradicts our August Werewolf lesson.
+4. **Organotics** — FDA direct final rule + 25-case NAM database; tailwind now citable text, with the candid limit that it obliges no reviewer.
+5. **Aletira** — Andelyn (Nationwide Children's own CDMO) carries the first commercial AAV approval on its platform; procurement + manufacturing-rights actions.
+6. **30 seconds** — draft NIH grant-veto EO as an upstream-supply question, and why it raises the value of Blackbird's own instrument.
+
+**Candidate funnel:**
+- BioPharma Dive front page: ~30 scanned, 6 fetched with datelines, 1 in window (Telix/ITM) — the rest (Sironax BBB $125M, Skyhawk, Sling, Trialblazer) dated 09-15/09-16, outside window.
+- Fierce Biotech RSS: 25 scanned, 8 in window. Article bodies 403 (uniform 5,490-byte Cloudflare block) — used RSS descriptions + cross-sourcing.
+- Endpoints index: ~55 scanned, 6 in window, bodies paywalled; headlines + cross-sourcing only. The PRV-cost piece looked on-thesis but dates to 2026-06-01.
+- BioSpace press releases: ~36 scanned, 1 used (FDA animal-testing rule).
+- BioBuzz + BioHealth Capital Region roundup (09-18): 18 regional items scanned, 0 selected — Autolus RMAT already shipped, Sirius Biotech's TEDCO $25K too thin, Emergent job cuts off-thesis.
+- GEN RSS/front page: ~28 scanned, 2 selected (Ariadne Bio, Andelyn).
+- Targeted searches (hearing-loss gene therapy, GPR52/NXE'149, pHLA TCE, cfDNA autoimmune, AAV holds, Treg financing): nothing fresh on Aletira otology, Clasp, Artemyx, or the GPR52 buyer.
+- **Dedup:** 12 candidates → 11 fresh, 1 already shipped (Autolus RMAT).
+- **Source failure:** `r.jina.ai` is TLS-intercepted on this network (cert `*.scripps.edu`), so every jina full-text route was unavailable; PubMed/PMC via MCP covered the lead paper after `ebi.ac.uk/.../fullTextXML` returned 500 and `pmc.ncbi.nlm.nih.gov` served a reCAPTCHA.
+
+**Shortlist not used:** Telix/ITM up to $2.35B (no portfolio line) · Bayer→Grünenthal Stivarga up to €375M (marketed late-lifecycle asset; confirms the screen should stay preclinical/Ph1) · Artelo's ex-AstraZeneca CB1/CB2 agonist vs semaglutide (right channel, wrong theme, 09-16) · Iambic IPO + AbbVie (09-22, no portfolio line).
+
+**One pre-existing item worth flagging:** `2026-09-15-portfolio-watch.commit-msg` and `.rss-item.xml` were already untracked in the working tree at session start (left from a truncated 09-15 run) and are still there. If `2026-09-15-portfolio-watch.mp3` doesn't exist, `publish_pending.py` may try to process that episode alongside today's.
+=== 2026-09-22T02:39:16-07:00 done  blackbird-brief (exit 0) ===
