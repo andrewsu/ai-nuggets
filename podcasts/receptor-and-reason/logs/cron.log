@@ -4745,3 +4745,37 @@ Shortlist after dedup, ★ = selected:
 
 Full text read in full for 7 of 11 picks (all arXiv + all bioRxiv). The 4 Nature-family items are abstract-only tail mentions with self-contained abstracts — nature.com articles are paywalled and `r.jina.ai` is currently TLS-intercepted by the Scripps network (cert served is `*.scripps.edu`), which kills every jina full-text route.
 === 2026-09-21T03:08:56-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-22T02:50:12-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so TTS, R2 publish, feed edit, and commit are left to `publish_pending.py` per PIPELINE.md.
+
+**Episode: Receptor & Reason 2026-09-22 — "the readout is not the outcome"**, 12 items, 3,029 spoken words (~15 min at 1.2×). Script + `.rss-item.xml` + `.commit-msg` stubs written; 12 keys appended to the dedup ledger (now 123 episodes).
+
+### Candidate funnel
+
+**Sources scanned**
+- **bioRxiv/medRxiv details API** (09-15..09-22, day-by-day, 16 threads): 1,965 records → 1,489 v1-in-window → 941 neuro/pharma/agentic on abstract → 322 on tightened filter → **56 on title-level filter** + 27 pharmacology/psychiatry-category items reviewed by hand.
+- **arXiv**: shared cache held only 500 entries over 09-18..09-21, so ran the live 6 × 400 paged query (`sleep 6`, zero 429s) → 2,400 entries over 09-09..09-21 → 1,294 in window → 426 agentic+bio → **77 shortlisted**.
+- **Nature RSS** (npp / mp / tp, no `-L` needed): 27 items, 9 in-window probed for readability, 5 readable.
+- **Crossref**: Elsevier on `from-created-date` (Neuropharmacology 7, PNPBP 10, Biol Psych 8, Drug Discov Today 4; BP:CNNI 0), Oxford/Wiley on `from-online-pub-date` (IJNP 1, Brief Bioinform 15, CPT 4, CPT:PSP 3).
+- **Failed / unusable**: `r.jina.ai` TLS-intercepted by the Scripps network (cert `*.scripps.edu`) — every jina full-text route dead, worked around with direct curl + `mutool`. `www.biorxiv.org` hard-429'd 5 of 7 PDFs across two rounds while `www.medrxiv.org` went 5/5. Psychiatric Times / ACNP / SOBP / ECNP / chemRxiv not re-mined (confirmed discovery-only for five consecutive runs).
+
+**Dedup**: one batch TSV across all channels, 196 candidates → **168 fresh** (27 already shipped, 1 title-match under a different key). Final roster re-grepped against `fresh.tsv` — 0 late catches, first clean run in four.
+
+**Chosen (12)** — all full-text-read except two 30-second tails marked ✱ (EPMC abstract only, permitted for tail items):
+- ✓ Amygdala LIFU first-in-human active-controlled trial — medRxiv `2026.09.18.26363360` (lead)
+- ✓ DBS-OCD neural predictability, ~120k patient-hours — medRxiv `2026.09.18.26363320`
+- ✓ Striatal temporal-interference stimulation / effort — Transl Psychiatry `s41398-026-04449-w`
+- ✓ Ketamine vs propofol aperiodic E:I exponent — bioRxiv `2026.09.17.752361`
+- ✓ STXBP1 single-cell vulnerability map — Mol Psychiatry `s41380-026-03869-w`
+- ✱ Samm50 → ferroptosis in ketamine neurotoxicity — Neuropharmacology `111192`
+- ✱ Guanfacine inverted-U in Lisket rats — Neuropharmacology `111190`
+- ✓ Varenicline ADRD repurposing (All of Us) — medRxiv `2026.09.17.26363232`
+- ✓ ASCENT / EPITRAP, deployed at Bayer — `arxiv:2609.24620`
+- ✓ OmicsBench + tool-augmented on-policy distillation — `arxiv:2609.23435`
+- ✓ scACORN agent orchestration of small LMs — bioRxiv `2026.09.10.750801`
+- ✓ HPOQuest active phenotype acquisition — `arxiv:2609.18431`
+
+**Notable drops**: NPP ketamine GABA/glutamate MRS meta-analysis (`s41386-026-02562-4`) and Biol Psych GluN2D cell-type switch (`10.1016/j.biopsych.2026.09.007`) — both strong Tier-1 fits, both paywalled *and* absent from Europe PMC, so ineligible under the full-text gate.
+
+**Deferred with full text already on disk** (cheapest picks next run): TBI/levetiracetam `2026.09.12.751143` (landed on the round-1 retry after the roster closed), `arxiv:2609.14840`, `arxiv:2609.19644`, `arxiv:2609.24101`. **Deferred on bioRxiv 429 for a second consecutive run**: TRACEDD `751167`, Closed-Loop Robot Scientist `751076`, microscope-control agent `751723`, cinnamaldehyde/NaV1.5 `751249`, LLM drug repurposing `728753`.
+=== 2026-09-22T03:05:07-07:00 done  receptor-and-reason (exit 0) ===
