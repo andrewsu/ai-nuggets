@@ -3394,3 +3394,25 @@ Shortlist (09-19 → 09-21, after discarding off-beat):
 
 One memory correction worth surfacing: my run notes asserted that a Monday 2am run finds zero net-new news. That held for Sunday but was wrong today — Sunday-evening GLOBE NEWSWIRE drops (timed to a Monday-morning call) surface on Monday's index, which is exactly where this pick came from. I've corrected that memory and its index line rather than leaving the bad default in place.
 === 2026-09-21T02:54:27-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-22T02:40:11-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written**
+- `podcasts/justice-biotech-brief/scripts/2026-09-22-fap-bite-cardiac-fibrosis-ifn-gamma-cd40l-collateral-damage.md` (1,124 spoken words, ≈6 min)
+- `…​.rss-item.xml` (validates as XML; `__LENGTH__` / `__DURATION__` placeholders intact)
+- `…​.commit-msg`
+
+**Pick:** FAP×CD3 BiTE in cardiac fibrosis — bioRxiv `10.64898/2026.09.15.751626` v1, posted 2026-09-21 (Lavine/WashU + Epstein & Rurik/Penn + Amgen Discovery Research). Full text read (5.1 MB / 37-page `.full.pdf`, extracted with mutool). The engager depletes >95% of its target yet worsens infarct size, fibrosis and EF; killing runs through TRAIL while IFN-γ and CD40L drive the collateral damage, so blocking both preserves depletion and unmasks benefit — and fibroblast-specific *Ifngr1* deletion reproduces the rescue.
+
+**Candidate funnel**
+
+- **bioRxiv details API** (09-20/21/22, day-by-day, healthy — no 503s): 366 unique DOI+version scanned (90 / 248 / 28). 4 v1 keyword hits, 1 a false positive (`CART` matching inside a Peruvian-ray cartilage genomics paper — new false-positive engine, logged to memory). Shortlist:
+  - ✅ **CHOSEN** — Collateral Immune Cell Signaling Compromises the Efficacy of T-cell Engaging Therapies for Cardiac Fibrosis — https://www.biorxiv.org/content/10.64898/2026.09.15.751626v1
+  - Structure-function profiling identifies determinants of TCR-T cell therapeutic efficacy (GPC3/HLA-A\*02:01) — https://www.biorxiv.org/content/10.64898/2026.09.15.750028v1 — on-beat but narrower; show ran a GPC3 cell-therapy pick 2026-07-06
+  - CD55-CD319-CX3CR1 gating recapitulates scRNA-seq-defined memory CD8 subsets — https://www.biorxiv.org/content/10.64898/2026.09.15.751807v1 — methods/immune-monitoring, not therapeutic
+- **Trade press** (all indexes 200 via Safari-UA curl; jina TLS-intercepted for the 7th consecutive run, cert `*.scripps.edu`): Fierce Biotech/Pharma, BioSpace `/press-releases` + `/latest-news-press-releases`, BioPharma Dive, Clinical Trials Arena scanned. Exactly **one** item dated 09-22 (Iambic — AI collabs/IPO, off-beat). 09-21 items all off-beat or already shipped: Telix/ITM $1.65B radiopharma M&A, Cue CSU Phase 2 (shipped 09-21), Alkermes orexin ADHD, China 5-year plan, NIH grant politics, Novo capital-markets day. BioSpace's ~32 releases dated 09-21 were CFO appointments, inducement grants and conference-participation notices — zero readouts. **0 on-beat news candidates.**
+- **Endpoints** — index is a JS shell with no article anchors; discovery-only, nothing extractable. **GlobeNewswire** — search URLs now return no response at all; with jina dead there is currently no working GNW channel (noted in memory).
+- **Funders** — ARPA-H 200 (latest 09-17, autism program; out of window), NSF 200 (09-21 item is a haptics podcast; off-beat), NIH `403` with a 5,480-byte Cloudflare block.
+
+One transient failure worth flagging: the chosen preprint's `.full.pdf` returned two 17-byte `429`s before succeeding on the third in-run attempt ~25s later. That's the third instance of this sticky per-DOI throttle clearing inside a single run, so I've updated the bioRxiv reference memory to retry in-run rather than defer to the next day.
+=== 2026-09-22T02:50:17-07:00 done  justice-biotech-brief (exit 0) ===
