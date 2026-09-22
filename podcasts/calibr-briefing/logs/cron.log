@@ -4565,3 +4565,42 @@ Shortlist after discarding already-covered items:
 
 Spotlight full-text gate: the Beacon VISTA release was read in full (design, per-arm responder rates and p-values, secondary microperimetry, safety breakdown, all three quotes), plus the LUMEOS and XIRIUS failure datasets, the ORF15 codon-optimization literature, the AGTC→Syncona→Beacon financing history, and Syncona's own RNS commentary. No item was deferred for unavailable full text.
 === 2026-09-21T02:31:47-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-22T02:20:11-07:00 start calibr-briefing ===
+Both scripts and their publish stubs are in place. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped before TTS, R2, feed, and commit — `publish_pending.py` will do those after batch TTS.
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-09-22-pharma-headlines.txt` (2,103 words)
+- `podcasts/calibr-briefing/scripts/2026-09-22-telix-itm-radiopharma-merger-spotlight.txt` (1,866 words)
+- matching `.rss-item.xml` (both validated as XML; `__LENGTH__` / `__DURATION__` placeholders) and `.commit-msg` stubs for each
+
+**Candidate funnel — calibr-briefing 2026-09-22 (Tue 02:20 PT)**
+
+Window: everything after Monday's 02:00 PT briefing. Monday's 09:30–11:30 ET news cycle was entirely net-new to this show.
+
+Sources scanned:
+- BioPharma Dive front page — 200, 31 items, 3 in-window
+- Endpoints News index (note: `endpts.com` now redirects to `endpoints.news`) — 200, ~68 headlines, 9 in-window; article bodies paywalled after 2 paragraphs, primary sources used instead
+- Fierce Biotech / Fierce Pharma indexes — 200, JSON-LD headlines + descriptions readable; **every article page a uniform 5,490-byte Cloudflare 403** (per known pattern) — used index descriptions + primary PRs
+- GEN front page — 200 but interleaves undated year-old articles; 0 net-new
+- BioSpace `/press-releases` — 200 but JS-rendered with no item elements; BioSpace article mirrors worked when reached directly by slug
+- GlobeNewswire subject search — `curl` 000, skipped (covered by company newsrooms)
+- `r.jina.ai` — unusable: TLS intercepted by the Scripps network (cert `*.scripps.edu`). No jina routes this run.
+- SEC EDGAR direct fetch — 403 "undeclared automated tool"; used BioSpace PR mirror for the Alkermes 8-K content
+
+Shortlist (all dated Sept 18–21, 2026):
+- **CHOSEN — spotlight + headline 1:** Telix–ITM merger, $1.65B upfront + $700M contingent — itm-radiopharma.com PR 767 / BioPharma Dive
+- **CHOSEN — 2:** Iambic Enchant v3 (41B params) + AbbVie collaboration + reported IPO prep — iambic.ai, Fierce index
+- **CHOSEN — 3:** Novo REIMAGINE 5 / REDEFINE 9 low-dose CagriSema — Novo CMD
+- **CHOSEN — 4:** J&J Caplyta Study 451, bipolar I mania — jnj.com PR
+- **CHOSEN — 5:** Alkermes ALKS 7290 OX2R agonist Phase 1 in ADHD — BioSpace PR mirror
+- **CHOSEN — 6:** FDA approves Aqneursa in ataxia-telangiectasia (Fri 09-18, uncovered) — fda.gov
+- **CHOSEN — 7:** Bayer → Grünenthal, Stivarga up to €375M
+- **CHOSEN — 8:** ADARx IPO terms + TRex Bio / Retension S-1s
+- **CHOSEN — 9:** NIH grant-veto draft EO; Public Citizen FOIA'd MFN contracts (Mounjaro/Zepbound carve-out)
+- **CHOSEN — brief:** Pentagon defends WuXi AppTec designation
+- Rejected: Grail adcomm preview (no data yet); Trump vaccine dose-splitting (no biopharma action); Endpoints China clinical-trial-deaths series (not net-new); BrainChild Bio $116M Series A (Sept 8, stale); Cellectis CAR-T exit (shipped 09-16); Novo CMD strategy, Beacon VISTA, Cue CUE-221, Treasury/China licensing (all shipped 09-21)
+
+Spotlight rationale: Telix–ITM is the day's largest transaction and it closes an arc this show already opened — the Aug 12 spotlight argued that in radiopharma the plant is the moat, and six weeks later the isotope leader sold itself after a manufacturing-only CRL, with 100% of the earnout keyed to that rejected asset. Verified from the primary PR, plus Telix's own Aug 2025 Zircaix CRL (two external partners cited), the 2020 ITM→Novartis/AAA Pluvicto supply arrangement, and both sides of the analyst reaction (William Blair bullish; Bell Potter Buy/A$19 while itemizing the 24% dilution that produced the drawdown).
+
+One caveat I could not fully resolve: sources disagree on Telix's Monday ASX move (A$15.76/−7.06%, A$16.77/−6.1%, and "crashed ~12%"). The scripts say "down as much as twelve percent intraday and closing off about six to seven percent," which is consistent with every source but is not a single confirmed close.
+=== 2026-09-22T02:34:02-07:00 done  calibr-briefing (exit 0) ===
