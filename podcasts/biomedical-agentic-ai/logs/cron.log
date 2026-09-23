@@ -4812,3 +4812,44 @@ Episode files are written. Since `SKIP_TTS=1`, I stopped at the script plus the 
 
 **Dedup:** all six arXiv and three bioRxiv shortlist IDs grepped against `podcasts/`. No prior episode in any show; `721350` and `728753` appear only in prior `cron.log` funnels (surfaced, never shipped).
 === 2026-09-22T02:06:24-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-23T02:00:10-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and skipped TTS, R2 publish, feed edit, and commit — the orchestrator handles those.
+
+**Published:** `2026-09-23-articleminer-ontology-module-literature-to-kg`
+ArticleMiner — ontology-guided knowledge graphs from papers, where the domain knowledge is a bounded module rather than a prompt
+Script 960 words (cap 1150). Paper link https://arxiv.org/abs/2609.25607 verified live via the arXiv API (v1, submitted 2026-09-22).
+
+Files written:
+- `podcasts/biomedical-agentic-ai/scripts/2026-09-23-articleminer-ontology-module-literature-to-kg.md`
+- `…​.rss-item.xml` (both placeholder tokens present; parses as valid XML)
+- `…​.commit-msg`
+
+---
+
+## Candidate funnel
+
+**bioRxiv** — details API 2026-09-20→09-23, day-by-day, full pagination. **Source degraded but recovered**: silent-empty-200 outage mode on nearly every day boundary; the 6×/sleep-20 retry loop cleared each one, total wall time ~25 min. 728 records fetched, 714 unique DOIs (09-20: 87, 09-21: 242, 09-22: 354, 09-23: 31). 44 keyword hits, 4 substantive after discarding spurious matches ("imaging agents", "autonomous MTOR activation", "Active control…foraging"). A 15-subject `connect.biorxiv.org` RSS sweep (450 items) was run in parallel as a hedge while the API was down and surfaced no item the API sweep missed.
+- BELL: Biomodel Evidence and LLM-based Logic — https://www.biorxiv.org/content/10.64898/2026.09.18.721350v1  *(runner-up)*
+- Scaling Network Medicine with LLMs for Combinatorial Drug Repurposing in ER+ Breast Cancer — https://www.biorxiv.org/content/10.64898/2026.09.14.728753v1
+- A Comparative Benchmark of Biomedical Language Models for Concept Normalization — https://www.biorxiv.org/content/10.64898/2026.09.19.752843v1
+- FiberPro 1.0: Multiagent AI-Guided Design for Protein Micro/Nanofibers — https://www.biorxiv.org/content/10.64898/2026.09.18.752775v1
+
+**arXiv** — shared cache, 500 entries (09-20: 87, 09-21: 241, 09-22: 172; the 500-entry cap truncates before 09-19). 96 biomedically-relevant agent/LLM/KG hits, shortlist:
+- **ArticleMiner: Ontology-Guided KG Construction from Scientific Publications** — https://arxiv.org/abs/2609.25607 ← **CHOSEN**
+- MedRSI: Recursive Self-Improvement for Medical Agents — https://arxiv.org/abs/2609.24838
+- ScholarStack: Layered Research Asset Orchestration for Scientific Agents — https://arxiv.org/abs/2609.23735
+- Rachel: a general-purpose LLM directs and revises retrosynthetic routes — https://arxiv.org/abs/2609.25118
+- Tool-Augmented On-Policy Distillation / OmicsBench — https://arxiv.org/abs/2609.23435
+- Ascent: agentic system over MCP for clinical data analysis — https://arxiv.org/abs/2609.24620
+- ChatT2: LLM agent for natural-product research — https://arxiv.org/abs/2609.25620
+
+**PubMed** — E-utilities, `reldate=5`, 73 PMIDs, 62 after keyword filter. Shortlist: OASIS self-evolving AI scientist for plant stress (Molecular Plant, 09-19); KG+LLM causal discovery in chronic low back pain (JBI, 09-21); TITAN-SR BERT ensemble beating LLM chatbots at systematic-review screening (J Clin Epi, 09-21). None beat the arXiv lead for this audience.
+
+**ChemRxiv** — `site:chemrxiv.org` web search; zero results inside the 4-day window (newest returned was 2026-06-24).
+
+**News / product launches** — nothing on-target in the 3-day window.
+
+**Policy / funders** — ARPA-H readable: newest is CIRCLE (09-22, critical-care tech, off-target). NSF news readable, nothing relevant. **nih.gov/news-events/news-releases failed** — 403 to WebFetch and a 5,480-byte Cloudflare block to curl with a Safari UA; skipped, no retry.
+
+**Why ArticleMiner over the runners-up:** it's the only in-window item that sits directly on the show's ontology/KG/data-integration axis with a full text worth five minutes — and the paper's real value isn't the wins over the few-shot baseline but the numbers underneath them: strict tuple-F1 of 32 on drug-discovery bioactivity tables with expert ground truth and frontier models, ablations where removing components *improves* scores, and open-weight models at 79–88% precision against 10–43% recall showing validation can't buy recall. BELL was the closest call; it's genuinely on-target biocuration work, but 210 PPIs from a single GBM model is a thinner evaluation than 163 papers across four authored domains.
+=== 2026-09-23T02:14:09-07:00 done  biomedical-agentic-ai (exit 0) ===
