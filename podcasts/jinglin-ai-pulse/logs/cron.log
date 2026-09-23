@@ -3072,3 +3072,43 @@ Episode written. SKIP_TTS=1 is set, so per PIPELINE.md I wrote the script plus t
 
 **No source failures this run.** `agmai.org` returned 000 and is not cited; the Advisory Group is sourced from its own guest post on Tao's blog. Every URL in the script was HTTP-verified (200) before writing.
 === 2026-09-22T02:44:11-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-23T02:30:10-07:00 start jinglin-ai-pulse ===
+Episode published. All three files written; per `PIPELINE.md`, `SKIP_TTS=1` means no TTS, no R2 publish, no feed edit, no commit — the orchestrator handles those after batch TTS.
+
+**Files written:**
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-23-what-the-sticker-doesnt-cover.md` (2,536 spoken words, ~12.5 min)
+- `.rss-item.xml` (validated as XML, placeholders for length/duration)
+- `.commit-msg`
+
+**Episode: "what the sticker doesn't cover"**
+
+Lead — Anthropic and OpenAI shipped 91 minutes apart yesterday and neither led with intelligence; both led with price. Then the receipts: Artificial Analysis decomposed Anthropic's "40% cheaper" into three steps and found max-effort cost per Intelligence Index task at $5.98 vs Opus 5's $5.86 — token usage alone would have driven it to $10.51, the price cut and cheaper cache reads claw it back to flat. The 40% applies at default medium only. Mirror image at OpenAI: GPT-6 Luna bought its 60% discount with a two-point Coding Agent Index regression. Plus the effort-scaling anomaly (xhigh: 2.8× cost, 3.2 points worse), the ProgramBench subset/metric-mismatch flag, and Anthropic's own line deflating its own table. Second convergence: both labs made prose quality a headline feature the same afternoon, with Anthropic arguing legibility is a safety property.
+
+Money — Snorkel AI's $350M Series E at $3.5B, which prices yesterday's "environments are the scarce input" thesis. Deep cut — John Platt on Latent Space on Google's ERA, and Goodhart's law as the answer to "how do you avoid fooling yourself."
+
+---
+
+**Candidate funnel**
+
+Twitter/X: unreadable from this host (documented; xcancel challenge, x.com needs auth). Substituted per standing practice — HN front page, Latent Space AINews (which aggregates 544 X accounts and quotes them verbatim), primary lab docs.
+
+- Hacker News front page — 70 items scanned, 14 AI-relevant, 6 substantive after discarding dupes/off-topic
+  - **CHOSEN** Claude Opus 5.5 — 1,532 pts / 950 comments — https://news.ycombinator.com/item?id=49803892
+  - **CHOSEN** GPT-6 Sol and Luna — 1,522 pts / 729 comments — https://news.ycombinator.com/item?id=49805509
+  - GPT-6 Astra breaks a 2005-unsolved Enigma message — 658 pts — https://www.cryptocellar.org/bgac/the-mvueh-break.html — held; pairs with the Scientific American Navier-Stokes piece for a future "what does solving mean" episode
+  - Pentagon: overreliance on AI contributed to Iran school strike — 644 pts (Bloomberg) — adjacent to 09-19's CNN military-AI item, deferred to avoid repeating the beat
+  - "Did OpenAI solve the wrong Navier-Stokes problem?" — 107 pts — Scientific American — held with the Enigma item
+  - Interconnects "balance of power in open models" — already shipped 09-22
+- Latent Space / AINews — 2 issues scanned, both relevant
+  - **CHOSEN** AINews on the dual launch (AA cost decomposition, Vals, effort anomaly, Ofir Press caveats) — https://www.latent.space/p/ainews-claude-opus-55-the-new-default
+  - **CHOSEN (Deep Cut)** John Platt on AI for Science, Sep 22 — https://www.latent.space/p/john-platt
+- Long-form podcasts — Dwarkesh, Latent Space, Cognitive Revolution, MLST archives checked
+  - Dwarkesh "Noam Brown – Agent swarms, alignment, RSI" — passed over; RSI was the 09-20 deep cut
+  - Interconnects, Cognitive Revolution, MLST — all used within the last 4 days, skipped for rotation
+- TechCrunch AI — 36 items scanned, 8 AI-substantive
+  - **CHOSEN (Money)** Snorkel AI $350M Series E at $3.5B — https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/
+  - Nscale IPO test of concentrated AI bets — held as a possible follow-up
+  - "Is the AI industry really ready to slow down?" — folded into the pacing thread rather than run separately
+
+Full text read for every cited item: both launch announcements, both HN threads (45 top-level comments each), the AINews issue, the Platt episode post, the Snorkel article, and the Google ERA blog + Nature abstract. No item was summarized from a headline. All 12 source URLs returned 200 except `openai.com/index/...`, which 403s to curl by design — read in full via the reader proxy, canonical URL cited.
+=== 2026-09-23T02:37:51-07:00 done  jinglin-ai-pulse (exit 0) ===
