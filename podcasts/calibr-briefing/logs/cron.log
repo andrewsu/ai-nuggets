@@ -4604,3 +4604,50 @@ Spotlight rationale: Telix–ITM is the day's largest transaction and it closes 
 
 One caveat I could not fully resolve: sources disagree on Telix's Monday ASX move (A$15.76/−7.06%, A$16.77/−6.1%, and "crashed ~12%"). The scripts say "down as much as twelve percent intraday and closing off about six to seven percent," which is consistent with every source but is not a single confirmed close.
 === 2026-09-22T02:34:02-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-23T02:20:10-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set in the environment, so per PIPELINE.md I wrote the two transient stubs alongside each script and did **not** run `gen_tts.py`, `publish_episode.sh`, edit `feed.xml`, or commit — `publish_pending.py` handles all of that after the batch TTS job.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-09-23-pharma-headlines.txt` (2,097 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-09-23-celldex-barzolvolimab-csu-spotlight.txt` (1,718 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as valid XML with `__LENGTH__` / `__DURATION__` placeholders; scripts contain no URLs, DOIs, markdown, or pseudo-headings.
+
+**Spotlight:** Celldex's barzolvolimab — why two clean Phase 3 sweeps produced a 13% drop. Full text read: the GlobeNewswire release *and* the 21-page topline deck (which carried the safety table the release omitted), plus BioPharma Dive for the Cantor/Stifel commentary.
+
+---
+
+## Candidate funnel — calibr-briefing 2026-09-23
+
+**Sources swept** (all via plain `curl` + Safari UA; `r.jina.ai` was **not** TLS-intercepted today and worked for primary sources):
+- BioPharma Dive front page — 369 KB, ~32 dated items → 11 on-beat
+- Fierce Biotech index — 862 KB, JSON-LD `ItemList` w/ per-article timestamps → 10 on-beat. **Article bodies still 403 both direct and via jina (675-byte block)** — index used for discovery + `description` only
+- Fierce Pharma index — 858 KB → 10 items, 3 on-beat
+- Clinical Trials Arena `/news/` — 288 KB → 39 items, 6 on-beat (best date-resolved trial index today)
+- BioSpace `/latest-news-press-releases` + `/press-releases` — 219 KB / 160 KB → 6 on-beat articles, 2 on-beat releases
+- GEN `/news/` — 330 KB, nothing net-new on beat (index again interleaved 2025 articles undated, per known trap)
+- Endpoints `endpoints.news/news/` — 72 KB, **zero extractable anchors** (index regression recurred); skipped, no fetch wasted
+- Primary sources read in full: Celldex GlobeNewswire release + 21-page topline deck, Roche `med-cor-2026-09-23b`, ALS Association PRNewswire statement, Celldex IR index
+
+**Shortlist (all Sep 22 or Sep 23 early; dates verified from Fierce timestamps or release datelines):**
+- ★ **Celldex barzolvolimab EMBARQ-CSU1/CSU2 Phase 3 sweep, stock −13%** — ir.celldex.com release + topline deck — **SPOTLIGHT + headline 1**
+- ★ Otsuka/Ionis ulefnersen Phase 3 FUSION win in FUS-ALS — clinicaltrialsarena.com + ALS Association statement — headline 2
+- ★ Roche sefaxersen Phase 3 IMAgINATION interim, IgAN (Ionis-licensed) — roche.com/media/releases/med-cor-2026-09-23b — headline 3
+- ★ Vertex inaxaplin AMPLIFED APOL1 kidney data — biospace.com — headline 4
+- ★ Viking VK2735 maintenance data, +36% — biopharmadive.com — headline 5
+- ★ Roche enicepatide (CT-388) Phase 2 T2D — globenewswire/BioSpace — headline 5
+- ★ Amgen dazodalibep Phase 3 win in Sjögren's — biopharmadive.com — headline 6
+- ★ Novartis/BoomRay radioligand license up to $900M — genomeweb/BioSpace — headline 7
+- ★ Boehringer/Envisagenics >$1B RNA-splicing oncology deal — biospace.com/deals — headline 8
+- ★ Iambic + ADARx + TRex + Retension IPO filings — biospace.com/business — headline 9
+- ★ Compass Therapeutics tovecimig — FDA wants new OS trial, −30% — biospace.com — headline 10
+- ★ Lexeo/Mantle $8.3M; BMS 265 layoffs; Travere CEO change; 50-state Medicaid MFN — brief mentions
+
+**Considered, not used:** GSK "balance West and East" China strategy (Sep 23 5:00am, executive interview, no event); Roche Lunsumio CELESTIMO earlier-line filing (Sep 17, out of window); Beijing 2030 biomedical blueprint (no date resolved); Compass Pathways/COMP360 (BPD feature, Sep 19).
+
+**Excluded as already shipped 2026-09-22:** Telix/ITM, Iambic Enchant v3 + AbbVie, Novo CagriSema, Caplyta mania, Alkermes ALKS 7290, Aqneursa, Bayer/Grünenthal, ADARx IPO terms, NIH executive order, Public Citizen MFN contracts, WuXi.
+
+**Source failures:** Fierce Biotech/Pharma article bodies — 403 direct and 675-byte jina block, one attempt each, no retry loop (index still usable). Endpoints index — anchors stripped, unusable. Celldex topline PDF — `ir.celldex.com/static-files/…` returned curl code 000 from this host; recovered in full via `r.jina.ai`.
+
+One correction worth noting for the record: yesterday's week-ahead listed an Ionis zilganersen PDUFA for Sep 22 — the FDA had actually approved it as Zanvastro on Sep 3, so I dropped it from today's look-ahead and folded it into the Ionis thread instead.
+=== 2026-09-23T02:32:40-07:00 done  calibr-briefing (exit 0) ===
