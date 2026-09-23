@@ -3416,3 +3416,25 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus
 
 One transient failure worth flagging: the chosen preprint's `.full.pdf` returned two 17-byte `429`s before succeeding on the third in-run attempt ~25s later. That's the third instance of this sticky per-DOI throttle clearing inside a single run, so I've updated the bioRxiv reference memory to retry in-run rather than defer to the next day.
 === 2026-09-22T02:50:17-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-23T02:40:11-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` was set, so I stopped at the three files the orchestrator expects — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Pick:** `2026-09-23-opb-101-mesothelin-car-t-outlast-op1-outsmart-dil2-spacer-geometry`
+OPB-101 (Outpace Bio) — four-module mesothelin CAR T, bioRxiv `10.64898/2026.09.18.752754` v1, posted 09-22. Full PDF read end-to-end (10.8 MB via Safari-UA curl + mutool). Registry check confirms the molecule is already in Phase 1a/b in platinum-resistant ovarian cancer (`NCT07030907`, recruiting since 2025-06-16), which is the episode's framing: a preclinical paper arriving *after* the IND. The two load-bearing takes are that a faster off-rate — not a juxtamembrane epitope — is what beats shed mesothelin/MUC16, and that SS1 (the binder already taken into human trials) was the most potent in their whole screen only when paired with a short spacer. Closing criticism: every in vivo experiment is in NSG mice, so the Treg-sparing claim is untestable in the model, and there is no limitations section.
+
+**Candidate funnel**
+
+- **bioRxiv details API** — 638 entries swept day-by-day (09-21: 248, 09-22: 359, 09-23: 31); 28 survived the keyword filter, 7 substantive after discarding spurious "checkpoint" hits (cell-cycle, flagellar, DNA-damage).
+  - ✅ **CHOSEN** — A Rationally Designed Transgene Drives CAR T Functional Persistence — `10.64898/2026.09.18.752754`
+  - Bispecific GD2xB7-H3 Antibody… Neuroblastoma — `10.64898/2026.09.21.753180` — **rejected on recency**, see below
+  - A Dynamically Regulated Designed IL-2 for Tumor-localized Signaling — `10.64898/2026.09.18.752703` — used as the companion reference (abstract-level only; its `.full.pdf` 429'd ~10× over 20 min while the pick pulled clean on the first try)
+  - Structure-function profiling / GPC3 TCR-T efficacy determinants — `10.64898/2026.09.15.750028`
+  - Dual-targeted LNPs for ex vivo CAR-T + CAR-monocytes — `10.64898/2026.09.21.753074`
+  - T cell drug response in myeloma induction (RVd, Allen Institute) — `10.64898/2026.09.15.751861`
+  - Tumor-cell MHC-II program vs checkpoint outcomes, bladder — `10.64898/2026.09.21.753036`
+- **Trade press** — Fierce Biotech front page (JSON-LD ItemList, 10 items), BioPharma Dive front page + articles fully readable, Endpoints readable for dates only (bodies paywalled to a 2-sentence stub). Two in-window on-target items, both topline-PR-only with data "at a future medical meeting": Celldex barzolvolimab CSU Phase 3 pair (09-22) — also 2 days after this show's CUE-221 CSU episode — and Amgen dazodalibep Sjögren's Phase 3 (09-22).
+- **Policy/funder** — ARPA-H 200, NSF 200, nothing on-target. **nih.gov/news-events/news-releases now returns a 403** (5,480-byte block).
+- **WebSearch** on PD-1×VEGF and trispecific TCEs — nothing dated in the 2-day window.
+
+**One thing worth flagging:** the GD2×B7-H3 bispecific was the day's strongest-looking candidate and I read its full text before catching the problem — it is a **re-post of a May 2024 preprint** (`10.1101/2024.05.23.595588`, same title and author block), and INV724 already had FDA orphan-drug designation in August 2024. bioRxiv gave the re-post a brand-new DOI at **version 1** with a current date, so both freshness signals the API exposes were wrong. I've written that up as a new reference memory and recorded the paper as closed for selection in the show's run log, along with the reusable spines from today's episode.
+=== 2026-09-23T02:55:45-07:00 done  justice-biotech-brief (exit 0) ===
