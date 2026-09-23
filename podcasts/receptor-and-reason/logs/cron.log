@@ -4779,3 +4779,47 @@ Episode written. `SKIP_TTS=1`, so TTS, R2 publish, feed edit, and commit are lef
 
 **Deferred with full text already on disk** (cheapest picks next run): TBI/levetiracetam `2026.09.12.751143` (landed on the round-1 retry after the roster closed), `arxiv:2609.14840`, `arxiv:2609.19644`, `arxiv:2609.24101`. **Deferred on bioRxiv 429 for a second consecutive run**: TRACEDD `751167`, Closed-Loop Robot Scientist `751076`, microscope-control agent `751723`, cinnamaldehyde/NaV1.5 `751249`, LLM drug repurposing `728753`.
 === 2026-09-22T03:05:07-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-23T02:50:11-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I skipped TTS, R2 publish, feed edit, and commit — the orchestrator handles those after batch TTS.
+
+**Files written** (`podcasts/receptor-and-reason/scripts/`):
+- `2026-09-23-receptor-and-reason.md` — 3,248 spoken words, ~18 min, 11 items
+- `2026-09-23-receptor-and-reason.rss-item.xml` — with `__LENGTH__` / `__DURATION__` placeholders
+- `2026-09-23-receptor-and-reason.commit-msg`
+
+Ledger appended: 11 keys, now 124 episodes / 1,274 unique keys.
+
+---
+
+## Candidate funnel — 2026-09-23
+
+**Sources swept**
+- **bioRxiv details API** — day-by-day 09-16→09-23, 8 day-files, 1,648 records (v1-only after filtering). API healthy, no retries needed. Two-track filter → 52 neuropsychopharm + 36 agentic/LLM-bio hits on 09-16→09-20, plus 09-21→09-23 batch.
+- **arXiv shared cache** (`/tmp/ai-nuggets-arxiv-cache.xml`) — 500 entries but only covers 09-20→09-22 (500-cap) and is 76% cs.AI/cs.CL with just 4 q-bio.QM. Supplemented with **one live q-bio query** (q-bio.NC/QM/MN, 300 results, 36 in window). No 429.
+- **Crossref by ISSN**, `from-created-date:2026-09-16` — Biol Psychiatry, BP:CNNI, Neuropharmacology, PNPBP, IJNP, Drug Discovery Today, CPT:PSP, CPT, Cell Systems, Nat Biotech, npj Dig Med, Brief Bioinform, Neuropsychopharmacology, Molecular Psychiatry. 105 journal articles.
+- **Failed / unusable**: Nature `mp.rss` returned 150 bytes (used Crossref instead); Europe PMC has none of the in-window journal articles yet; Wiley (`ascpt.onlinelibrary`) returns a 533-byte stub via jina; non-OA Nature articles render references only. Psychiatric Times and society press pages not separately fetched — Tier 1 journal + bioRxiv yield was already well above the item floor.
+
+**Dedup** — 94 candidates filtered in three batches → 74 fresh, 18 already shipped, 1 title-match (the Neuropharmacology dopamine-sensor paper re-entering under its journal DOI after shipping as a bioRxiv preprint on 06-26). Casualties included several of the day's strongest items already covered: prochlorperazine D2 occupancy, psilocybin/SAPAP3, S-ketamine circuit dissection, 7T midbrain neurofeedback, LSD hormesis, TAAR pocketome, ketamine E/I balance. Final roster re-filtered: 11/11 clean.
+
+**Full-text status** — 10 of 11 read in full (5 bioRxiv via jina on `.full.pdf`, 3 arXiv PDFs via mutool, 1 CC-BY Nature). The nanobody-AAV preprint stayed Cloudflare-429 across three spaced attempts and runs as a short abstract-only tail item, which its self-contained abstract supports.
+
+**Shortlist (✓ = selected)**
+- ✓ SCHEMA 2.0 rare coding variants, 87,959 cases — `biorxiv 2026.09.18.752670` — **lead**
+- ✓ Upper-layer SST interneuron depletion in SCZ — `biorxiv 2026.09.18.752621`
+- ✓ Sulpiride D2 blockade / proactive vs reactive inhibition — `biorxiv 2026.09.16.752057`
+- ✓ SNr depolarization block drives dystonia — `biorxiv 2026.09.15.751818`
+- ✓ DYT-TOR1A: antimuscarinics don't need the ChIs — `biorxiv 2026.09.13.751056`
+- ✓ Basal-forebrain tau PET feasibility, n=1,397 — `10.1038/s41386-026-02564-2`
+- ✓ DGKθ phospho-endocannabinoid switch / THC-acid — `biorxiv 2026.09.21.753239`
+- ✓ Nanobody-AAV mGluR5 CNS targeting — `biorxiv 2026.09.18.752817`
+- ✓ The AI Neuroscientist (fNIRS agent) — `arxiv 2609.25254`
+- ✓ Boltz-2 affinity-head fine-tuning for screening — `arxiv 2609.24302`
+- ✓ EEG foundation-model audit, sign-flipping confound — `arxiv 2609.23924`
+- Antipsychotics reshape gut metabolome / colonization resistance — `biorxiv 2026.09.15.745804`
+- TRACEDD agentic drug design (JAK2) — `biorxiv 2026.09.12.751167`
+- Ketamine GABA/glutamate MRS meta-analysis — `10.1038/s41386-026-02562-4` (abstract-only)
+- KOR-dependent morphine-withdrawal depression — `10.1038/s41386-026-02549-1` (abstract-only)
+- FAAH `[11C]CURB` PET in PTSD — `10.1016/j.biopsych.2026.09.008` (Elsevier, no full text)
+- GluN2D switch in Fragile X — `10.1016/j.biopsych.2026.09.007` (Elsevier, no full text)
+- Rachel retrosynthesis LM — `arxiv 2609.25118`; LLMs in mental health survey — `arxiv 2609.25186`
+=== 2026-09-23T03:13:23-07:00 done  receptor-and-reason (exit 0) ===
