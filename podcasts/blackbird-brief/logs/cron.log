@@ -2804,3 +2804,44 @@ Done. Final run summary:
 
 **One pre-existing item worth flagging:** `2026-09-15-portfolio-watch.commit-msg` and `.rss-item.xml` were already untracked in the working tree at session start (left from a truncated 09-15 run) and are still there. If `2026-09-15-portfolio-watch.mp3` doesn't exist, `publish_pending.py` may try to process that episode alongside today's.
 === 2026-09-22T02:39:16-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-23T02:10:10-07:00 start blackbird-brief ===
+Episode complete. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and stopped short of TTS, R2 publish, feed edit, and commit — `publish_pending.py` does those after batch TTS.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-09-23-portfolio-watch.md` — 3,024 spoken words (~11 min at 1.2×)
+- `podcasts/blackbird-brief/scripts/2026-09-23-portfolio-watch.rss-item.xml` — validated: parses standalone and inserts cleanly into `feed.xml`
+- `podcasts/blackbird-brief/scripts/2026-09-23-portfolio-watch.commit-msg`
+- `podcasts/blackbird-brief/state/shipped.jsonl` — 8 keys appended (76 episodes, 410 unique keys)
+- `podcasts/blackbird-brief/memory/blackbird-portfolio.md` — edited in place: NuGate, Aletira, Clasp, Winnow, Neuropsych NewCo and §1 spinout-structure comparators each gained a current entry with `_Last update:_` bumped to 2026-09-23; the §4 divested-asset-screen open item was rewritten rather than duplicated
+
+**Candidate funnel** — Portfolio Watch, recency window 2026-09-19 → 2026-09-23
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| Fierce Biotech index | 10 (JSON-LD ItemList) | 4 | article pages are a uniform 5,490-byte Cloudflare block; the index's per-article `description` + BioSpace/GlobeNewswire mirrors carried the copy |
+| Endpoints News front page | ~45 | 3 | 2 fell outside the window on date-check (RegCell 09-15, China CRISPR deaths 09-02) |
+| BioPharma Dive front page | ~30 | 4 | full bodies readable |
+| BioSpace press releases + news | ~60 | 6 | primary-source route for the two Ionis releases, Lexeo and Envisagenics |
+| GEN | ~21 | 2 | Andelyn/Fayuvi piece already shipped 09-22; BrainChild Bio out of window |
+| BioBuzz (Baltimore/Maryland) | ~10 | 1 | Xcellon/NextCure Beltsville cGMP bioconjugation acquisition — dated 2026-08-10, **out of window** |
+| ClinicalTrials.gov | 1 registry pull | 1 | NCT04768972 supplied the load-bearing n=89, the 2:1 randomisation and the Johns Hopkins site |
+| Targeted GPR52 / partner-institution sweep | — | 0 | no in-window GPR52, JHU, U-M-B or Lieber item |
+
+Dedup: 13 candidates → 12 fresh (ADARx/TRexBio IPO queue already shipped). No source outages — `r.jina.ai` was **not** TLS-intercepted today; `sec.gov` needed a declared user agent.
+
+Shortlist after discarding out-of-window and off-thesis items — **★ = selected**:
+- ★ Otsuka/Ionis ulefnersen Phase 3 FUSION hit in FUS-ALS, p=0.0005 — [BioSpace](https://www.biospace.com/press-releases/otsuka-announces-transformative-phase-3-fusion-results-for-ulefnersen-bringing-the-fus-als-community-closer-to-a-potential-targeted-treatment) · [NCT04768972](https://clinicaltrials.gov/study/NCT04768972) → **LEAD**, NuGate
+- ★ Ionis/Roche IMAgINATION IgAN interim hit — [BioSpace](https://www.biospace.com/press-releases/ionis-announces-positive-interim-data-from-partner-roches-phase-3-imagination-study-in-iga-nephropathy-igan) → folded into the lead as the 24-hour companion
+- ★ Lexeo acquires Mantle $8.3M + three AAV re-dosing options — [BioSpace](https://www.biospace.com/press-releases/lexeo-therapeutics-enters-into-agreement-to-acquire-mantle-therapeutics-and-announces-multiple-new-strategic-collaborations-to-expand-leadership-in-friedreich-ataxia) → Aletira + divested-asset screen
+- ★ Envisagenics × Boehringer >$1B RNA-splicing target deal — [BioSpace](https://www.biospace.com/press-releases/envisagenics-and-boehringer-ingelheim-enter-multi-target-collaboration-to-develop-first-in-class-precision-therapies-based-on-rna-splicing-derived-targets-for-hard-to-treat-cancers) → SELEXON + Clasp
+- ★ Celldex barzolvolimab two Phase 3 wins, −13% on anaphylaxis — [BioPharma Dive](https://www.biopharmadive.com/news/celldex-barzolvolimab-urticaria-study-results-embarq/830982/) → Winnow
+- ★ Amgen dazodalibep Sjögren's Phase 3 hit — [BioPharma Dive](https://www.biopharmadive.com/news/amgen-dazodalibep-sjogrens-syndrome-study-results/831042/) → autoimmune theme + spinout-structure comparator
+- ★ Lilly brenipatide already in Phase 3 for MDD and AUD — [BioSpace](https://www.biospace.com/drug-development/lilly-presents-early-data-supporting-glp-1-gip-candidates-potential-in-depression-alcohol-use-disorder) → GPR52 bidder ranking
+- City of Hope "meditope" adapter CAR-T — [BioSpace](https://www.biospace.com/press-releases/study-unveils-plug-and-play-car-t-technology-designed-to-adapt-as-cancer-changes) — dropped: preclinical, no portfolio line (Clasp is a TCE, not CAR-T)
+- Iambic Therapeutics IPO filing — [Endpoints](https://endpoints.news/nvidia-backed-ai-biotech-iambic-therapeutics-files-for-ipo/) — dropped: AI-discovery hype, no portfolio line
+- Novartis $900M radioligand licence / Telix–ITM — dropped: no portfolio line
+- Xcellon/NextCure Beltsville cGMP CRDMO — [BioBuzz](https://biobuzz.io/news/xcellon-acquires-40000-sq-ft-maryland-facility-from-nextcure-to-deliver-a-cgmp-ready-crdmo-for-adcs/) — dropped on recency (08-10); noted in the episode's "quiet" line
+- BrainChild Bio $116M Series A (DIPG CAR-T) — dropped on recency (09-08)
+
+One editorial note worth flagging: the show's briefed length is 6–9 minutes and recent episodes have drifted to 10–14. I pulled this one back toward the low end of that drift (3,024 words vs 5,749 yesterday) rather than all the way to the brief, to stay consistent with the surrounding week. If you want it genuinely inside 6–9 minutes, the closer and item 5 are the two that compress cleanly.
+=== 2026-09-23T02:27:06-07:00 done  blackbird-brief (exit 0) ===

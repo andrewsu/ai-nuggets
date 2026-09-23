@@ -334,7 +334,16 @@ https://www.nytimes.com/2026/09/20/science/nih-omb-grants-bhattacharya-vought.ht
 https://www.statnews.com/2026/09/21/trump-plan-for-commission-to-review-nih-grants-push-back/
 
 ### Spinout-structure comparators (how other people carve assets out)
-_Last update: 2026-09-17_
+_Last update: 2026-09-23_
+- **THE CARVE-OUT THESIS NOW HAS A POSITIVE PHASE 3 AT THE END OF IT — AND ESSENTIALLY ALL THE VALUE ACCRUED TO THE ACQUIRERS (added
+  2026-09-23 Portfolio Watch item 5; readout 2026-09-22).** **dazodalibep** (CD40–CD40L blocker; positive first Phase 3 in Sjögren's, a
+  disease with NO disease-modifying therapy) was **discovered at AstraZeneca → SPUN OUT into Viela Bio → Viela acquired by Horizon
+  Therapeutics (2021) → Horizon acquired by Amgen (2023).** A drug reached a pivotal win by LEAVING the discovering institution's balance
+  sheet and travelling through two acquisitions — the first comparator in this section with an OUTCOME attached rather than just a structure.
+  **THE COROLLARY WORTH ARGUING INTERNALLY (Eddie Cherok + Maisha Rahman): Viela's shareholders sold BEFORE the Phase 3. The question for the
+  next Blackbird spinout structure is not whether the carve-out works — it is WHO IS STILL HOLDING WHEN IT DOES, and what instrument (earnout,
+  retained royalty, milestone tail) keeps us in.** Source:
+  https://www.biopharmadive.com/news/amgen-dazodalibep-sjogrens-syndrome-study-results/831042/
 - **OPTION-TO-ACQUIRE vs EXCLUSIVE LICENCE, BOTH RESOLVED IN THE SAME THREE DAYS ON EQUIVALENT ENABLING-LAYER ASSETS — AND THE
   BIGGER BIOBUCKS ENVELOPE WAS THE ONE THAT PAID NOTHING (added 2026-09-17 Portfolio Watch LEAD).** **Novartis/Sironax:** exclusive
   **option** granted 2025-07-09 (up to $175M upfront + near-term), held **14 months**, **exercised** 2026-09-16 for **$125M at
@@ -1085,7 +1094,53 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-09-22_
+_Last update: 2026-09-23_
+- **A PUBLIC GENE-THERAPY COMPANY BOUGHT THREE INDEPENDENT, OPTION-PRICED SHOTS AT RE-DOSING AAV INTO THE CNS AND BUILT NONE OF THEM —
+  TWO OF THE THREE ARE ABOUT *IMMUNITY*, NOT DELIVERY (added 2026-09-23 Portfolio Watch item 2; announced 2026-09-22, Mantle agreement
+  signed 2026-09-16).**
+  **Lexeo Therapeutics (Nasdaq: LXEO)** will acquire **Mantle Therapeutics Inc.** — **$8.3M upfront in cash AND equity, up to $13.0M in
+  success-based milestones, $21.3M total potential**, closing expected Q3 2026 — bringing **four Friedreich ataxia assets**: **LX3010
+  (MTL-104)**, clinical-stage oral combination (HDAC inhibition + NRF2), **~6-point mFARS improvement at 16 weeks and mean 9-fold increase
+  in frataxin protein in muscle biopsies across 11 FA patients**; **LX3030**, preclinical sub-500 Da third-generation benzamide HDAC
+  inhibitor for CNS frataxin; **LX3050**, recombinant human frataxin fused to an **anti-TfR1 Fab brain shuttle**; **LX3070**,
+  discovery-stage **ASO–Fab conjugate** stabilising *FXN* mRNA.
+  **THE STRUCTURAL ITEM — THREE AGREEMENTS, ALL ABOUT A SECOND DOSE: (1) Weill Cornell Medicine sponsored research on INTRA-CISTERNAL
+  administration of LX2006 AFTER systemic dosing in large animals, explicitly including immune-suppression strategies to support REPEAT
+  administration; (2) option agreement on Vivet Therapeutics' VTX-PID, an IgG-DEGRADING ENZYME to expand the treatable population to
+  patients IMMUNISED AGAINST AAV and enable repeat administration; (3) option agreement on Apertura Gene Therapy's CapX, an IV
+  blood-brain-barrier-crossing capsid for a less invasive second route.** All inside the existing balance sheet, **runway unchanged into
+  2028**, prioritisation update early 2027, next FA IND 2027, **and all future trials expected to include an arm for patients previously
+  dosed with LX2006.**
+  **⇒ ACTION (Geoff Lynn + Hugh Wells): READ THE STRUCTURE, NOT THE ASSETS. Aletira's Series A story has the same hole in the same place —
+  single-administration AAV, pre-existing-immunity exclusions, no stated second dose. Does Aletira have a NAMED re-dosing path, and is an
+  option fee on somebody else's IgG-degrading enzyme cheaper than answering the diligence question with silence?** Files directly beside the
+  09-03 distinction: **SELEXON restricts WHERE the transgene is expressed; it does not reduce HOW MANY capsids you inject, and it does not
+  buy a second injection.**
+  **⇒ SECOND READ (Eddie Cherok + Avi Khanna) — THIRD AND STARKEST DATA POINT ON THE DIVESTED/DISTRESSED-ASSET SCREEN (see §4).** 09-05
+  Pfizer CD228 ADC at $12M upfront showed the assets are CHEAP; afimetoran's SLE Phase 2 hit (09-09) showed they can be GOOD; **this shows
+  an ENTIRE clinical-stage company with human biomarker AND functional data plus three preclinical programmes clears at under $9M upfront,
+  paid partly in paper. Lexeo found it and we did not.**
+  **CANDID: 6 mFARS points across 11 open-label patients at 16 weeks is hypothesis-generating, and Lexeo said it will prioritise AFTER
+  closing — it bought OPTIONALITY, not conviction. Do not read $8.3M as a verdict on the science; read it as the clearing price for a small
+  company out of runway.** Sources:
+  https://www.biospace.com/press-releases/lexeo-therapeutics-enters-into-agreement-to-acquire-mantle-therapeutics-and-announces-multiple-new-strategic-collaborations-to-expand-leadership-in-friedreich-ataxia ·
+  https://www.fiercebiotech.com/biotech/lexeo-takes-mantle-8m-acquisition-friedreich-ataxia-assets
+- **THE SELEXON PREMISE IS NOW FREE: A TOP-15 PHARMA PUT >$1B BEHIND THE SENTENCE "ALTERNATIVE RNA SPLICING IS A LARGELY UNEXPLORED SOURCE
+  OF SPECIFICITY" — AND THE UNTAKEN-LAYER LINE STILL HOLDS (added 2026-09-23 Portfolio Watch item 3; announced 2026-09-22).**
+  **Envisagenics × Boehringer Ingelheim — multi-year research collaboration + option agreement; Envisagenics eligible for >US$1B across
+  upfront, research funding, option fees and development/regulatory/commercial milestones, plus royalties. SPLIT UNDISCLOSED** — same tell as
+  GSK/Chimagen (09-15) and Novo/Kallyope (09-18): an undisclosed upfront is usually a small one. Platform **SpliceCore**: AI +
+  large-scale transcriptomics + experimental validation across **>14 million distinct splicing events**, ranking tumour-specific isoforms for
+  **disease specificity, patient prevalence and therapeutic suitability**. Boehringer validates targets **already identified**, then holds an
+  option to exclusively license, across **ADCs, T-cell engagers and multispecific antibodies**. **Mark Petronczki, Global Head of Oncology
+  Research, Boehringer:** alternative RNA splicing "offers access to a largely unexplored target space."
+  **THE READ (Geoff Lynn): SELEXON uses alternative splicing to RESTRICT transgene expression to a cell type; Envisagenics uses it to
+  DISCOVER tumour antigens. Same molecule, opposite ends of the problem — so the file's "splicing layer is untaken" line (08-18 / 09-02
+  Skylark analysis) SURVIVES. What changed is the PREMISE: it stops being a founder's claim and becomes a sentence a top-15 pharma's head of
+  oncology research signed his name to next to a billion dollars. ⇒ Put it in the Series A deck WITH the attribution and stop spending the
+  first five minutes establishing it.** The Clasp half of this item — which cuts AGAINST us — is filed under Clasp. Sources:
+  https://www.biospace.com/press-releases/envisagenics-and-boehringer-ingelheim-enter-multi-target-collaboration-to-develop-first-in-class-precision-therapies-based-on-rna-splicing-derived-targets-for-hard-to-treat-cancers ·
+  https://www.fiercebiotech.com/biotech/boehringer-envisagenics-sign-1b-multi-target-oncology-collaboration
 - **THE ACADEMIC INSTITUTION THAT INVENTED THE FAYUVI VECTOR WATCHED THE ASSET LEAVE TWICE AND KEPT THE MANUFACTURING — AND THE
   MANUFACTURING IS NOW THE PART WITH AN FDA APPROVAL ATTACHED TO IT (added 2026-09-22 Portfolio Watch item 5; announced 2026-09-21).
   EXTENDS the 09-18 "CMC, not biology, set the timeline" read into a PROCUREMENT and LICENSE-TERMS action.**
@@ -1883,7 +1938,28 @@ _Last update: 2026-08-28_
   it. KRAS-landscape news is no longer portfolio-relevant on aSKY's account
   (Clasp remains a live KRAS-adjacent holding).
 ### Neuropsychiatric NewCo (schizophrenia) — Lieber Institute + Third Rock ✅
-_Last update: 2026-09-18_
+_Last update: 2026-09-23_
+- **THE BUYER WE RANKED FIRST JUST BUILT A PSYCHIATRY FRANCHISE — WHICH RAISES OUR CONFIDENCE IN THE RANKING *AND* ADDS A RISK WE HAD NOT
+  WRITTEN DOWN (added 2026-09-23 Portfolio Watch closer; presented at Psych Congress 2026, New Orleans; coverage 2026-09-22).**
+  **Eli Lilly publicly debuted BRENIPATIDE, a long-acting dual GIP/GLP-1 receptor agonist, and disclosed it is ALREADY in Phase 3 for
+  alcohol use disorder (RENEW-ALC-1) and major depressive disorder (RENEW-MDD-1). Topline for both expected EARLY 2028.** Phase 1 MAD
+  (J2S-MC-GZMD): **212 individuals** across a wide BMI range (184 on drug / 28 placebo); **half-life 9.08–12.5 days**, supporting weekly
+  subcutaneous dosing; **GI TEAEs 25% on drug vs 25% on placebo**; dysesthesia **15.2% vs 0%**; 4 discontinuations; overall TEAEs **57.6% vs
+  42.9%**. Designed to reach GIP/GLP-1 receptors in **CNS reward and addiction pathways**; Lilly claims first GIP/GLP-1 studied globally in
+  AUD. **Rob Nicholson**, AVP US & Global Neuroscience Medical Affairs, Psychiatry & Substance Use Disorders. Space comparators: Altimmune
+  **pemvidutide** (Phase 2 RECLAIM hit, July 2026), Baseline Therapeutics **BT-001** (Phase 3 in AUD).
+  **READ ONE (Hemaka Rajapakse + Yixuan Qiu) — the 09-05 bidder ranking put Lilly FIRST on NXE'149 on the strength of 12 acquisitions in
+  2026, ~half preclinical/Phase 1. Lilly now ALSO has a psychiatry medical-affairs organisation, named Phase 3 psychiatry + substance-use
+  programmes, and a reason to own commercial infrastructure in the space ⇒ RANKING CONFIDENCE UP. NEW RISK: a buyer with its OWN psychiatry
+  molecule in Phase 3 may prefer to EXTEND that molecule into new indications rather than license a first-in-class GPCR. ASK IT IN THE
+  OUTREACH; do not discover it in diligence.**
+  **READ TWO (Anthony Accorsi + Jon Robbins) — THE INSTRUMENT RULE APPLIED BY THE RICHEST COMPANY IN THE INDUSTRY. RENEW-MDD-1's primary is
+  NOT symptom reduction — it is DELAYING THE RETURN of major depressive symptoms, on top of standard of care, in ~1,000 participants across
+  14 countries. And RENEW-ALC-1's primary is a CHANGE IN DRINKING PATTERN, not abstinence. Lilly, with effectively unlimited capital, chose
+  endpoints its mechanism can plausibly move over the ones that sound most impressive. Worth ten minutes when the GPR52 primary is drafted
+  around a cognition claim.** Sources:
+  https://www.biospace.com/drug-development/lilly-presents-early-data-supporting-glp-1-gip-candidates-potential-in-depression-alcohol-use-disorder ·
+  https://www.genengnews.com/topics/translational-medicine/lillys-gip-glp-1-candidate-brenipatide-shows-early-clinical-promise-in-substance-psych-disorders/
 - **THE PSYCHIATRIC-INDICATION TAX, QUANTIFIED: A MOLECULE CLEARED 1,500 PATIENT-YEARS OF *NEUROLOGY* SAFETY AND THEN HIT A NEUROPSYCHIATRIC AE
   SIGNAL ITS OWN PHASE 2 IN THE SAME INDICATION HAD NOT SEEN (added 2026-09-18 Portfolio Watch item 4; announced 2026-09-17).**
   **Xenon Pharmaceuticals (Nasdaq: XENE)** submitted its **NDA for azetukalner in focal seizures** — a **Kᵥ7 potassium channel opener** — on positive
@@ -2288,7 +2364,45 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-09-22_
+_Last update: 2026-09-23_
+- **THE INSTRUMENT RULE IS ANSWERED IN THE AFFIRMATIVE AT n=89, AND THE INSTRUMENT THAT DID IT IS A JOINT-RANK COMPOSITE OF
+  FUNCTION *AND* SURVIVAL — NOT A BETTER SCALE (added 2026-09-23 Portfolio Watch LEAD; topline 2026-09-22). CLOSES the 09-08
+  instrument-rule action.**
+  **Otsuka Pharmaceutical + Ionis (Nasdaq: IONS) — ulefnersen (ION363), Phase 3 FUSION (NCT04768972) in FUS-ALS.** Intrathecal ASO
+  binding **FUS pre-mRNA** to reduce FUS protein including mutant forms. Seamless **Phase 1–3** design; registry **enrollment 89**
+  against a planned ceiling of 95; **Part 1 randomised 2:1** drug:placebo; primary at **Day 505**; Part 2 open-label extension.
+  **Johns Hopkins is 1 of 25 sites.** Sponsor Ionis; start 2021-06-14, primary completion 2026-06-17.
+  **PRIMARY = JOINT RANK ANALYSIS of (a) ALSFRS-R change to Day 505, (b) time to rescue/discontinuation, (c) ventilation-assistance-free
+  survival. p = 0.0005.** Secondaries also significant: **serum NfL** and **time to earliest of death, permanent ventilation, rescue or
+  withdrawal due to disease progression**. Favourable safety, most AEs mild/moderate. Going to FDA for an **expedited pathway**; detailed
+  results at a future congress + peer-reviewed publication.
+  **DISEASE: FUS-ALS = ~0.6% of all ALS but 43–52% of juvenile/pediatric ALS**; death often within 1–2 years of onset; no therapy had ever
+  targeted its genetic cause. Second ASO after tofersen (SOD1) to modify a genetic ALS. Early clinical work (as *jacifusen*, for Jaci
+  Hermstad) was run by **Neil Shneider at Columbia** and funded by the **ALS Association + Project ALS**.
+  **⇒ ACTION 1 (Jon Robbins + Anthony Accorsi): the NuGate pre-IND should propose a JOINT-RANK COMPOSITE of function and survival as the
+  primary, not an ALSFRS-R slope, and cite FUSION by name.** The comparator set is now unambiguous: **del-desiran ~150 patients,
+  single video-timed function endpoint, MISSED (09-08); Novartis VHB937 n=251, CAFS function-and-survival composite, MISSED — but
+  microglial mechanism (09-17); ulefnersen n=89, joint-rank composite, cell-intrinsic genetically anchored target, HIT.**
+  **⇒ ACTION 2 (Hemaka Rajapakse): THE LANE ARGUMENT IS NOW 3-FOR-0 AND CHEAP.** Tofersen (SOD1), ulefnersen (FUS) and the 09-22 n-of-1
+  *CHCHD10* case are all **cell-intrinsic, genetically anchored** ASOs with benefit; both September misses (Axoltis NX210c, BBB; Novartis
+  TREM2, microglial) are **non-cell-autonomous**. Lead the first two minutes of any BD conversation with the distinction.
+  **⇒ ACTION 3 (instrument thread): NfL moved as a SECONDARY and AGREED with the clinical primary — fifth consecutive ALS trial in which
+  NfL and the clinical outcome pointed the same way, including both negatives. Still no false positive. HOLD the 09-03 decision.**
+  **CANDID: topline only, no effect sizes or arm-level numbers. And 0.6% is a far smaller denominator than NuGate's pan-ALS/FTD claim ⇒
+  FUSION validates the LANE and the ENDPOINT ARCHITECTURE, not the market size.**
+  **COMPANION — TWO IONIS PHASE 3 WINS IN 24 HOURS: Ionis + Roche Phase 3 IMAgINATION prespecified interim in IgA nephropathy MET its
+  primary** (statistically significant proteinuria reduction vs placebo at **37 weeks**, 24-hour UPCR; **sefaxersen** = liver-directed ASO
+  inhibiting **complement factor B**, once-monthly subcutaneous, self-administered; study continues blinded to **eGFR at week 105**;
+  Ionis receives milestones + tiered royalties). **Against four antisense failures this September on four distinct failure modes
+  (comparator drift 08-29, endpoint selection 09-03/04, correlated-not-causal target 09-06, instrument 09-08), the demonstration now runs
+  in BOTH directions — none of it was the chemistry.** Sources:
+  https://www.biospace.com/press-releases/otsuka-announces-transformative-phase-3-fusion-results-for-ulefnersen-bringing-the-fus-als-community-closer-to-a-potential-targeted-treatment ·
+  https://clinicaltrials.gov/study/NCT04768972 ·
+  https://www.biospace.com/press-releases/ionis-announces-positive-interim-data-from-partner-roches-phase-3-imagination-study-in-iga-nephropathy-igan
+- **A FUNDED COMPETITOR IN THE SAME LANE: Envisagenics' lead wholly owned programme is ENV-375, a LATE-STAGE PRECLINICAL ASO FOR ALS,
+  and the company just became eligible for >$1B of Boehringer oncology optionality (added 2026-09-23 Portfolio Watch item 3; announced
+  2026-09-22).** Full entry under Aletira/Clasp. A splicing-target-discovery company with a billion dollars of non-dilutive-feeling
+  runway now has an ALS antisense. Track ENV-375's stated target and IND timing.
 - **THE KNOCKDOWN-SAFETY DOSSIER IS FREE, AND THE PD TARGET IS *NORMALISATION* NOT PERCENT KNOCKDOWN: AN N-OF-1 ASO TOOK NfL INTO THE
   REFERENCE RANGE AND FUNCTION IMPROVED WHERE TOFERSEN'S 40% REDUCTION LEFT NfL ELEVATED AND FUNCTION DECLINING (added 2026-09-22
   Portfolio Watch LEAD; paper posted 2026-09-14, *Nature* coverage 2026-09-18). Full text read via Europe PMC / PMC13580205 —
@@ -2545,7 +2659,38 @@ _Last update: 2026-09-22_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-21_
+_Last update: 2026-09-23_
+- **THE MARKET PRICED THE SELECTIVITY PREMIUM IN THE NEGATIVE, IN WINNOW'S EXACT ARGUMENT, INSIDE A COMPETITOR'S BEST-EVER DATASET —
+  THIRD CSU DATASET IN FIVE DAYS (added 2026-09-23 Portfolio Watch item 4; reported 2026-09-22).**
+  **Celldex Therapeutics (Nasdaq: CLDX) — barzolvolimab, anti-KIT mAb that DEPLETES MAST CELLS; two successful Phase 3 trials in chronic
+  spontaneous urticaria.** Almost **2,000 patients** inadequately controlled on antihistamines; placebo + two dosing regimens; analysis at
+  **24 weeks**, 1-year follow-up ongoing. **~HALF of drug-treated patients achieved COMPLETE RESPONSE (total absence of itch and hives) vs
+  15–18% placebo.** Cantor Fitzgerald's **Kristen Kluska**: "the best Phase 3 data set we've seen across all pivotal studies," peak-sales
+  forecast **$4.8B**. **Stock −13%** on **two anaphylaxis cases in one barzolvolimab arm** (one on placebo). Standing neutropenia concern;
+  hair-colour and skin-pigment changes among common AEs. Stifel's **Alex Thompson** expects "meaningful sales" even with a boxed warning.
+  FDA filing planned 2027; ~2,400 patients treated overall.
+  **THE READ (Jon Robbins + Virginia Burger): the 09-21 Cue Biopharma item was the DURABILITY pole — anti-IgE, differentiator designed in,
+  proof taken OFF DRUG at week 28. Celldex is the DEPTH pole — better absolute efficacy, a dataset >10× larger — and it lost 13% anyway,
+  because the mechanism is BROAD DEPLETION OF A WHOLE CELL COMPARTMENT and two people had anaphylaxis. DEPTH WAS NEVER THE QUESTION. THE
+  DISCOUNT IS ON THE BREADTH OF WHAT GETS DEPLETED — which is Winnow's entire thesis, priced in the negative in somebody else's press
+  release.**
+  **⇒ TWO ACTIONS: (1) the Celldex safety table is now the best public comparator for what broad depletion costs you at the agency AND in
+  the multiple — use it; (2) the Winnow deck needs an explicit sentence on what Winnow does NOT deplete, with the assay that demonstrates
+  it, EARLY — beside the off-treatment durability arm already made a product claim on 09-21.**
+  **RECONCILES WITH THE 09-17 ELECTRA READ RATHER THAN CONTRADICTING IT: a broad depleter CAN win by choosing a catastrophic indication
+  where the control arm is death. Celldex says that in a CHRONIC, NON-LETHAL indication the same breadth is a VALUATION problem.**
+  **CANDID: two events across ~2,400 treated patients is a genuinely low rate, Dupixent carries the same warning, and analysts broadly think
+  the drug is approvable even with a boxed warning. This is a MARKET-PRICING signal, not a regulatory verdict — cite it as the former.**
+  Source: https://www.biopharmadive.com/news/celldex-barzolvolimab-urticaria-study-results-embarq/830982/
+- **THE AUTOIMMUNE THEME'S CD40–CD40L READOUT, AND ITS PROVENANCE IS THE ITEM (added 2026-09-23 Portfolio Watch item 5; reported
+  2026-09-22).** **Amgen's dazodalibep hit the primary in the FIRST of two Phase 3 trials in Sjögren's syndrome** — "statistically
+  significant and clinically meaningful improvement" on a widely used disease-activity measure at **48 weeks**, separation from **week 4**,
+  **NO NUMBERS RELEASED** (future medical meeting). **NO IMBALANCE in blood clots or opportunistic infections — the class concern for
+  blocking CD40–CD40L co-stimulation.** Discontinuations infrequent and balanced; stock **+5%** intraday. Second pivotal (high-symptom-burden
+  population) reads out **Q4 2026**; William Blair's **Matt Phipps** viewed the programme as "relatively high risk" and says Amgen needs
+  BOTH. Competition: **Novartis ianalumab** possibly approved this quarter, **BMS Sotyktu** Phase 3 pending with low analyst expectations.
+  Sjögren's has no disease-modifying therapy and patients carry elevated lymphoma risk. Source:
+  https://www.biopharmadive.com/news/amgen-dazodalibep-sjogrens-syndrome-study-results/831042/
 - **THE DURABILITY CLAIM NOW HAS A PUBLIC TEMPLATE FOR HOW YOU PROVE IT: A HEAD-TO-HEAD AGAINST STANDARD OF CARE, MEASURED 12 WEEKS AFTER THE LAST
   DOSE (added 2026-09-21 Portfolio Watch item 3; topline 2026-09-20). Third instance in five days after Georgiamune and RegCell.**
   **Cue Biopharma (Nasdaq: CUE) — CUE-221 (Ascendant-221 / UB-221), Phase 2 in chronic spontaneous urticaria.** n=**145**, **run in China by
@@ -3139,7 +3284,22 @@ _Last update: 2026-09-11_
 - **Watch:** DNA-barcoded antibody / multiplexed proteomics reagent platforms.
 
 ### Clasp Therapeutics — JHU-born precision immuno-oncology (TCR-mimic bispecific T-cell engagers) ✅
-_Last update: 2026-09-18_
+_Last update: 2026-09-23_
+- **A BOEHRINGER-FUNDED TARGET ENGINE IS NOW SELLING CLASP'S EXACT PROPOSITION FROM A SUBSTRATE THAT IS *NOT* HLA-RESTRICTED — AND IT
+  NAMES T-CELL ENGAGERS EXPLICITLY. THIS CUTS AGAINST US (added 2026-09-23 Portfolio Watch item 3; announced 2026-09-22).**
+  **Envisagenics × Boehringer Ingelheim**, >US$1B potential, option-to-license on tumour-specific targets discovered by the **SpliceCore**
+  platform (>14 million splicing events screened) and deployable across **ADCs, T-cell engagers and multispecific antibodies**. Full deal
+  terms in the Aletira entry.
+  **THE COLLISION (Eddie Cherok + Jon Robbins): Clasp's proposition is absolute tumour specificity from a MUTANT PEPTIDE PRESENTED ON HLA —
+  one arm on the peptide-HLA complex, one on CD3, so only mutation-bearing cells die. Envisagenics sells the SAME proposition — targets that
+  cleanly distinguish tumour from healthy tissue — from splice-derived isoforms, explicitly for TCEs, now with a top-15 pharma paying to
+  validate them. SPLICE-DERIVED SURFACE ISOFORMS ARE NOT HLA-RESTRICTED, so they do not carry the HLA-typing DENOMINATOR problem that
+  constrains every peptide-centric engager including ours. That is a genuine differentiator AGAINST Clasp, not for it.**
+  **⇒ ACTION: competitive slide, and a live conversation with Clasp — not a memo in six months. Pairs with the standing target-density item
+  and the 09-06 USP15/R175H presentation question: the peptide-HLA thesis is now being competed on DENOMINATOR, not on specificity.**
+  Sources:
+  https://www.biospace.com/press-releases/envisagenics-and-boehringer-ingelheim-enter-multi-target-collaboration-to-develop-first-in-class-precision-therapies-based-on-rna-splicing-derived-targets-for-hard-to-treat-cancers ·
+  https://www.fiercebiotech.com/biotech/boehringer-envisagenics-sign-1b-multi-target-oncology-collaboration
 - **A FREDERICK, MD COMPANY IS BUILDING LICENSABLE SMALL-MOLECULE COMBINATION PARTNERS FOR EXACTLY THE RESISTANCE PROBLEM CLSP-5282 IS POSITIONED
   AGAINST, ON AN 18–24-MONTH CLOCK — CHIEF-BUSINESS-OFFICER FIRST-READ (added 2026-09-18 Portfolio Watch item 5; announced 2026-09-15).**
   **TEDCO invested $25,000 in Sirius Biotech Ventures (Frederick, MD)** through its **Concept Capital Program**. **HONEST FRAMING FIRST: $25K is a
@@ -4747,7 +4907,7 @@ _Last update: 2026-09-12_
 - **SELEXON cassette cost in kilobases, and the genome-integrity assay (added 2026-09-10; Avi Khanna + Hugh Wells).** This was a nice-to-know when it was raised on 08-19 off the Elevidys packaging letter. Encoded's $275M round makes it a comparison an investor will run: their construct carries a small engineered transcription factor plus a short regulatory element and upregulates an endogenous gene; **SELEXON adds sequence to a cassette.** Needed before the Series A opens, not after: (a) what a selective exon costs in kb; (b) full-vs-empty capsid ratio and genome-integrity data on a SELEXON-containing vector at the intended dose; (c) a dose-response in target tissue if we intend to claim that restricting expression lets us reach effect at lower total vector.
 - **Who holds the JHTV licence on the Parikh donor-kidney biomarker panel? (added 2026-09-10; Esther Park.)** UMOD/OPN/YKL-40 plus KDPI, AUC 0.80 -> 0.86, ~20-30-minute lateral flow, IP licensed through JHTV, lateral-flow devices already validated inside two organ procurement organizations. Is the licensee a company, an OPO consortium, or a reference lab — and is any field of use unencumbered? Secondary (Eddie): it is the cleanest worked example of the Artemyx "which decision does the test change and who funds the evidence" question, so worth reading the licence structure even if we never touch the asset.
 - **Does the ALS/FTD functional endpoint survive the Encoded/Angelman test? (added 2026-09-10; Anthony Accorsi + Jon Robbins.)** Encoded is taking a **30-patient, open-label, no-control-arm** pivotal with seizure AND neurodevelopmental co-primaries — the seizure half is defensible uncontrolled (countable events, self-baseline, steep untreated slope), the developmental half is the inference that killed apazunersen in Angelman. Apply the same split to the NuGate package and to Aletira: which of our candidate endpoints are machine-measured with a steep natural slope (ABR thresholds; the 09-04 Zanvastro gait-speed analogue), and which are rater-scored scales that need a control arm we may not be able to afford. Write the list before the pre-IND ask is drafted.
-- **Divested-asset screen — the 09-05 item now has a RESULT, so re-ask it with urgency (updated 2026-09-10; Eddie Cherok + Avi Khanna).** Afimetoran was discovered at Bristol Myers Squibb, licensed to Beeline in July 2025, and hit its Phase 2 primary in SLE on 09-09 at p<0.001 across all three doses. The original prompt (Pfizer's CD228 ADC at $12M upfront) showed the assets are CHEAP; this shows they can also be GOOD. Who owns the screen, what is the source (BD conference lists, 8-Ks, pipeline-page diffs, banker outreach), and what does a first pass over our theme areas surface?
+- **Divested-asset screen — THIRD DATA POINT, AND IT IS A WHOLE COMPANY (updated 2026-09-23; Eddie Cherok + Avi Khanna).** On 2026-09-22 **Lexeo acquired Mantle Therapeutics — a clinical-stage FA company with human frataxin + mFARS data plus three preclinical programmes — for $8.3M upfront in cash AND equity, $21.3M total potential** (full entry under Aletira). So the ladder now reads: **assets are cheap ($12M Pfizer CD228 ADC, 09-05) → they can be good (afimetoran SLE Phase 2 hit, 09-09) → an entire clinical-stage company clears under $9M upfront, partly in paper (09-22).** Lexeo found it; we did not. **The screen is no longer a nice-to-have — name its owner and its sources (BD conference lists, 8-Ks, pipeline-page diffs, banker outreach, Chapter 7/assignment filings) and run a first pass over our theme areas this quarter.** Afimetoran detail: discovered at Bristol Myers Squibb, licensed to Beeline July 2025, Phase 2 SLE primary hit at p<0.001 across all three doses.
 - **Tozorakimab exacerbation rate ratio in the EOSINOPHIL-LOW stratum (added 2026-09-08; Virginia Burger).** Three positive Phase 3s in COPD (OBERON, TITANIA, MIRANDA), **>5,400 patients randomized, and no exacerbation rate ratio disclosed in any of them.** The COPD theme's positioning decision turns on the effect size **in the eosinophil-low stratum specifically**: if the broad-population effect is carried by the eosinophil-high tail, then "works irrespective of eosinophils" is a **labelling** claim rather than a biological one, and the white space we assumed had closed has not. Full OBERON/TITANIA data were promised to a medical meeting; ERS 2026 ran 09-05 → 09-09 — pull it the moment AstraZeneca posts.
 - **Downside structure on single-readout BioVentures positions (added 2026-09-06; Emily Wilkinson + Eddie Cherok).** Royalty Pharma split its **$500M Ionis agreement $150M against pelacarsen royalties / $350M against Spinraza royalties**; pelacarsen went to **zero** (no milestones) and RP still expects **full recoupment and a modest positive return**, with the Spinraza interest reverting to Ionis at **$550M** of payments — a **1.1× return on total funded** — and reaffirmed its 2030 Portfolio Receipts target of ≥$4.7B the same day. **The binary was bought as an OPTION ON AN ANNUITY, sized so a zero costs the upside and not the principal.** Write down what our downside structure looks like on every position where one readout is the whole thesis, starting with **Clasp / GUARDIAN-101**. Equity-side version of the same lesson from the 09-04 charts: Alumis to ~$10 on the lupus miss, Ultragenyx halved on Angelman — mid-caps with one defining readout each. Source: https://www.globenewswire.com/news-release/2026/09/04/3356846/0/en/royalty-pharma-announces-update-on-novartis-phase-3-topline-results-for-pelacarsen.html
 - **Does USP15 modulation change p53-R175H peptide-HLA presentation? (added 2026-09-06; Avi Khanna + Jon Robbins.)** Padmanabhan's 2018 *Nat Commun* result routes R175H degradation through a **lysosomal** pathway, which does not feed MHC-I. CLSP-1025's potency scales with peptide-HLA copy number. Nobody has measured whether shifting R175H between lysosomal and proteasomal turnover changes presentation. Merge with the standing Clasp target-density item and put it to Clasp and to Padmanabhan (§2b) in the same week.
