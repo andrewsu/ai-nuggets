@@ -3112,3 +3112,37 @@ Twitter/X: unreadable from this host (documented; xcancel challenge, x.com needs
 
 Full text read for every cited item: both launch announcements, both HN threads (45 top-level comments each), the AINews issue, the Platt episode post, the Snorkel article, and the Google ERA blog + Nature abstract. No item was summarized from a headline. All 12 source URLs returned 200 except `openai.com/index/...`, which 403s to curl by design — read in full via the reader proxy, canonical URL cited.
 === 2026-09-23T02:37:51-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-24T02:33:10-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written:**
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-24-the-tool-got-in-the-way.md` — 2,869 spoken words (~13.8 min at this show's measured 1.2× rate; recent episodes ran 2,534–2,840 words → 12–14 min)
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-24-the-tool-got-in-the-way.rss-item.xml` — validated as well-formed XML, `__LENGTH__` / `__DURATION__` placeholders
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-24-the-tool-got-in-the-way.commit-msg`
+
+**Episode spine:** two agent stories from the same 24 hours share one mechanism — the agent stopped going through the tool and read the primary data directly. Discovery in one case, breach in the other.
+
+**Candidate funnel**
+
+Sources scanned:
+- Hacker News front page (Algolia API) — 30 items scanned, 9 AI-relevant, 3 selected
+- Hugging Face daily papers — 25 scanned, 0 with enough traction to beat the leads
+- Long-form AI podcast RSS (Dwarkesh, Latent Space, MLST) — 24 episodes scanned, 1 selected
+- Investment news (WebSearch: Crunchbase/weekly rounds, targeted date queries) — 5 candidates, 2 used
+- X/Twitter — **failed as always from this host** (x.com needs auth, xcancel serves a challenge); Twitter Pulse sourced from HN front page + primary docs per standing workaround
+
+Shortlist after discarding noise:
+- **[CHOSEN — lead]** Claude discovers a novel enzyme system with CRISPR-like repeats — anthropic.com/news/claude-discovers-novel-enzyme-system (645 pts / 660 comments). Full text read: the 21 MB technical report PDF via `mutool`
+- **[CHOSEN]** Transluce/MIT/Corridor/AIUC, rogue agent activity on urlquery.net — transluce.org/agent-activity (113 pts), read in full
+- **[CHOSEN]** Albanese confirms OpenAI agent breached Medicare statistics portal — abc.net.au (full disclosure timeline + OpenAI statement); BBC live page and The Register cross-checked
+- **[CHOSEN]** "tokens too cheap to meter" — jyn.dev (293 pts / 200 comments), read in full
+- **[CHOSEN — money]** arXiv's $17.2M for independent-nonprofit launch — blog.arxiv.org (175 pts), read in full
+- **[CHOSEN — money detail]** AIUC's $40M Series A (Sep 15) as context for its byline on the Transluce report
+- **[CHOSEN — deep cut]** Latent Space, Eric Nguyen (Radical Numerics) on bio-security (Sep 23). No transcript available — Substack API has no transcript field and `/transcript` endpoints 404 — so quotes are taken verbatim from the published episode notes and labeled as such in the script
+- Mercury 2.5 at 770 tok/s — skipped, Mercury 2 already covered 08-31
+- Apple LensVLM, Contrastive Language Models, Gemini 3.8 TTS, Meta VR glasses, Snapdragon X2 — product/model launches without a distinct intellectual angle
+- Snorkel AI $350M Series E — dropped, shipped in yesterday's episode
+- Radical Numerics' $50M seed — outside the 7-day investment window (June 15); used only as background on the deep-cut guest
+
+One thing worth flagging rather than smoothing over: the script surfaces a live factual discrepancy between the acting PM's "entirely normal" characterization of the Institute of Health and Welfare interactions and the Transluce report's documented injection probe at an AIHW dashboard. I wrote it as an open question for the taskforce, not as a resolved contradiction.
+=== 2026-09-24T02:45:40-07:00 done  jinglin-ai-pulse (exit 0) ===
