@@ -1,0 +1,4 @@
+Script body: 4401 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2985 chars) -> 135.3s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (1415 chars) -> 58.0s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-09-24-cellaudit-falsifying-agent-discovered-cell-models.mp3 [mistral] 1,785,983 bytes, 223.2s

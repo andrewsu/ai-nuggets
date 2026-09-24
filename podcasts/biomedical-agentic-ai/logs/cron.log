@@ -4853,3 +4853,42 @@ Files written:
 
 **Why ArticleMiner over the runners-up:** it's the only in-window item that sits directly on the show's ontology/KG/data-integration axis with a full text worth five minutes — and the paper's real value isn't the wins over the few-shot baseline but the numbers underneath them: strict tuple-F1 of 32 on drug-discovery bioactivity tables with expert ground truth and frontier models, ablations where removing components *improves* scores, and open-weight models at 79–88% precision against 10–43% recall showing validation can't buy recall. BELL was the closest call; it's genuinely on-target biocuration work, but 210 PPIs from a single GBM model is a thinner evaluation than 163 papers across four authored domains.
 === 2026-09-23T02:14:09-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-24T02:03:09-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Files written** (`podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-09-24-cellaudit-falsifying-agent-discovered-cell-models.md` — 708 spoken words (cap 1150)
+- `…​.rss-item.xml` — validated, `__LENGTH__` / `__DURATION__` placeholders
+- `…​.commit-msg`
+
+**Pick:** CellAudit — `https://arxiv.org/abs/2609.27234` (posted 2026-09-23). Full text read via PDF → `mutool` (211 KB of text, all sections).
+
+---
+
+### Candidate funnel
+
+**Source outcomes**
+- **bioRxiv — total failure, no candidates.** `api.biorxiv.org` and `connect.biorxiv.org` both resolve to 143.48.220.72 and refuse TCP on 443 (curl code 000, "Connection refused"); 6 retries with 20s backoff, no change. This is a host-down case, not the usual silent-empty-200. Fallbacks also failed: `www.biorxiv.org/search/…` is behind a Cloudflare managed challenge (6.2 KB "Just a moment…" page, parses to 0 results, ×7 queries); `/collection/<subject>` served bioinformatics once (10 items, newest 2026-09-17, out of window) then 429'd (17 bytes) on the other four; r.jina.ai returned a 388-byte proxy error; WebFetch 429'd; `site:biorxiv.org` WebSearch surfaced nothing newer than 2026-09-03.
+- **arXiv — partial, ~300 items scanned.** Export API returns zero-byte HTTP 406 as its rate-limit signal; it answered `cat:cs.AI` (300 entries) once and 406'd every subsequent call for the rest of the run, including a 70s-paced retry loop over cs.CL / cs.MA / q-bio.*. Recovered coverage via `arxiv.org/list/<cat>/2026-09` HTML for q-bio.QM/GN/MN/BM/OT and cs.MA (165 + 250 entries). cs.CL not covered — noted gap.
+- **PubMed — 781 items scanned**, 74 survived the keyword + AI-signal filter after discarding "chemical/biological agent" matches.
+- **ChemRxiv** — WebSearch returned nothing inside the 4-day window (newest relevant: June 2026).
+- **Policy/funders** — ARPA-H newest is 2026-09-22 (CIRCLE, critical-care devices; not agentic AI). NIH/NSF/HHS nothing on-target.
+- **News** — Lifebit "AI Scientist Studio" launch at HumanX Amsterdam (2026-09-24); press release only, no technical companion, so ineligible under the full-text gate.
+
+**Shortlist after filtering**
+- ★ **CellAudit — Discover, Falsify, Revise: Auditing Input-Use Claims … in Agent-Discovered Cell Models** — https://arxiv.org/abs/2609.27234 — **CHOSEN**
+- Large Knowledge Model: From Papers to a Scientific Reasoning Landscape — https://arxiv.org/abs/2609.27297
+- CQ4OE: benchmark for LLM-assisted ontology generation from competency questions — https://arxiv.org/abs/2609.26029
+- MolDesignBench: LLM agents for scenario-grounded molecular design — https://arxiv.org/abs/2609.27349
+- ChatT2: LLM agent for type II polyketide natural-product research — https://arxiv.org/abs/2609.25620
+- Recursive self-improvement of AI research agents (AIDE²) — https://arxiv.org/abs/2609.26457 — off-target (AI R&D, not biomedical)
+- Towards a Compositional Framework for Describing Human Phenotypes (PhenoAM/PhenoDE/PhenoAgents) — doi:10.1002/advs.77730
+- A co-learning framework for maternal/pediatric pharmacotherapy knowledge-gap discovery — doi:10.1093/jamia/ocag130
+- Knowledge-augmented causal discovery with LLMs + KGs (chronic low back pain) — doi:10.1016/j.jbi.2026.105102
+
+**Dropped for dedup**
+- "Intuitive enzyme design with LLM agents" (Nat Comput Sci, doi:10.1038/s43588-026-01052-3) — a News & Views about **MutexaGPT**, shipped 2026-09-12.
+- ArticleMiner (arXiv 2609.25607) — shipped 2026-09-23.
+
+Note: `scripts/shipped_keys.py biomedical-agentic-ai` reports **0 ledger keys from 0 episodes** — this show's `state/shipped.jsonl` is empty, so the dedup check above was done by hand against the last 19 scripts. Worth fixing separately if the ledger is meant to be populated.
+=== 2026-09-24T02:17:52-07:00 done  biomedical-agentic-ai (exit 0) ===
