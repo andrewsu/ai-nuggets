@@ -2845,3 +2845,27 @@ Shortlist after discarding out-of-window and off-thesis items — **★ = select
 
 One editorial note worth flagging: the show's briefed length is 6–9 minutes and recent episodes have drifted to 10–14. I pulled this one back toward the low end of that drift (3,024 words vs 5,749 yesterday) rather than all the way to the brief, to stay consistent with the surrounding week. If you want it genuinely inside 6–9 minutes, the closer and item 5 are the two that compress cleanly.
 === 2026-09-23T02:27:06-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-24T02:13:09-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so I stopped at the script + stub files per PIPELINE.md — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Blackbird Brief — Portfolio Watch, Thursday 2026-09-24**
+Script: `podcasts/blackbird-brief/scripts/2026-09-24-portfolio-watch.md` (3,308 spoken words)
+Stubs: `.rss-item.xml` (XML validated, `__LENGTH__`/`__DURATION__` placeholders, 4-space indent) + `.commit-msg`
+Ledger: 7 keys appended under `2026-09-24-portfolio-watch` (77 episodes)
+Reference updated in place (no journal entries appended): Artemyx, Winnow, Clasp, Aletira, cardiac-fibrosis theme, "current other investments" pointer — plus a **new DELFI Diagnostics entry**, which the portfolio file previously had only as a line item.
+
+**Roster (recency window 09-21 → 09-24)**
+
+1. **LEAD** — FDA Molecular & Clinical Genetics Panel on GRAIL's Galleri: safety unanimous, benefit-risk 7-2-1, **effectiveness 6-4**, on a trial that missed its primary (NHS-Galleri stage III+IV) with no mortality benefit. Touches **Artemyx** (fifth shape of its standing question — screening, and the most expensive) and **DELFI Diagnostics** (the Feb-2026 Medicare MCED Act puts 2028 coverage behind an FDA approval; FirstLook Lung is an LDT with no PMA path on the record).
+2. Immunovant/Roivant IMVT-1402 misses in cutaneous lupus at n=57 with an exposure-response signal inside the failure → **Winnow**: selectivity is approvable but doesn't *travel*.
+3. Arcturus LUNAR 2.0 — 30–40× per-dose potency gain converted into an amended protocol inside a running Phase 2 → **Aletira** (the 09-03 dose-response ask, run by a competitor) + gout theme.
+4. Basecamp Research $140M Series C, EDEN / large serine recombinases → **Aletira** (where DNA *lands* vs where it's *expressed*); Catalio, Clasp's Series A co-lead, is in the round.
+5. Boehringer × Variant Bio, second option-to-license target engine in two days → BD-channel read + **cardiac fibrosis** theme.
+6. Astellas setidegrasib KRAS G12D Phase 3 vs docetaxel → **Clasp** comparator drift + an Adventris breadth line.
+
+**Source funnel** — BioPharma Dive, Fierce Biotech/Pharma, BioSpace (news + press releases), Endpoints, GEN, BioBuzz front pages all fetched clean; ~150 headlines scanned, 12 substantive candidates, all 12 fresh against the ledger (0 dedup hits), 7 logged. Endpoints article bodies paywalled as usual — routed around via Fierce (readable today, not the 5,490-byte Cloudflare block), BioSpace PRs, GRAIL's own releases, `text.npr.org`, and `r.jina.ai` (not TLS-intercepted today). No source failed.
+
+**Two things to flag:**
+- `2026-09-15-portfolio-watch` has stub files but **no mp3 and no feed entry** — that episode never got through TTS/publish. It's pre-existing, not from this run; batch TTS should pick it up since `gen_tts.py` only skips scripts that already have an mp3. Worth confirming after the batch job.
+- The FDA executive-summary PDF for the Galleri panel returned only a fuzzy model summary, so I sourced the performance numbers from GRAIL's own ASCO 2026 PATHFINDER 2 release rather than the agency document, and labelled the ~$800M valuation / 28B-parameter EDEN figures as reported-not-confirmed since they aren't in Basecamp's release.
+=== 2026-09-24T02:37:07-07:00 done  blackbird-brief (exit 0) ===

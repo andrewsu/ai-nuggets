@@ -623,13 +623,13 @@ _Last update: 2026-09-18_
 7. **Biolinco** — detail below.
 
 ### Current other investments (direct investment opportunities, not incubated by BBL)
-_Last update: 2026-09-19_
+_Last update: 2026-09-24_
 1. **Clasp Therapeutics** — JHU-born; detail below in this section.
 2. **Adventris Pharmaceuticals** — BioHub resident; detail in §2b.
 3. **Islex Therapeutics** — detail in §2b.
 4. **InfinityBio**
 5. **OnCusp Therapeutics**
-6. **DELFI Diagnostics**
+6. **DELFI Diagnostics** — JHU cfDNA fragmentomics; detail below in this section.
 7. **Georgiamune** — Gaithersburg MD; detail below in this section.
 8. **KaloCyte**
 9. **Aevum Therapeutics** — BioHub resident.
@@ -984,6 +984,29 @@ Neuron23, Ionis**.
     **Artemyx-adjacent** surface rather than a therapeutics one. Source:
     https://www.biospace.com/drug-development/reeling-from-past-failures-parkinsons-pipeline-enters-era-of-diversification
 
+**CARDIAC FIBROSIS theme — THE FIRST MEASUREMENT TAKEN *UPSTREAM* OF THE ENDPOINT PROBLEM: THE MONEY ENTERING CARDIOVASCULAR TARGET
+SELECTION IS BUYING HUMAN GENETIC SUPPORT (added 2026-09-24 Portfolio Watch item 5; announced 2026-09-23).** **Boehringer Ingelheim
+expanded its January 2026 collaboration with Variant Bio (Seattle)** — originally a **$120M biobucks** deal on **cardiorenal and kidney
+disease** — to cover **CARDIOVASCULAR** indications: an **additional undisclosed upfront** plus licence and milestone payments
+**totalling more than $250M**, no further breakdown. Variant's **Inference** platform integrates **genomic, deep-phenotyping and
+multiomic data across global populations**. **Søren Tullin** (global head, cardiovascular-renal-metabolic diseases research,
+Boehringer): the aim is to "identify **genetically supported targets** that could open new paths to first-in-class treatments."
+Boehringer markets **Jardiance, Pradaxa, Twynsta**, and is pairing **vicadrostat** (aldosterone synthase inhibitor) with Jardiance in
+Phase 3 in HF and CKD. **Novo signed its own Variant deal in January 2025.**
+**READ ONE — THE PATTERN IS THE ITEM (Eddie Cherok). This is Boehringer's SECOND option-to-license target-discovery collaboration in
+TWO DAYS (Envisagenics splicing 09-22, Variant human genetics 09-23), both with UNDISCLOSED upfronts under headline biobucks. This
+buyer has decided to RENT target discovery, and the instrument is a RESEARCH COLLABORATION WITH AN OPTION FEE — not a licence on a
+finished asset. That is exactly the stage a Blackbird programme occupies while it is still inside JHU or UMB. ⇒ The counterparty is a
+THERAPEUTIC-AREA RESEARCH HEAD with a named mandate and an option-fee budget, not only a BD team. Get on that list BEFORE
+IND-readiness.**
+**READ TWO (Anthony Accorsi + Jon Robbins) — FOURTH CARDIAC MEASUREMENT SINCE 08-30 AND THE FIRST UPSTREAM OF THE ENDPOINT PROBLEM.**
+RXFP1/LUMINARA (08-30), AskBio GenePHIT (08-31) and ziltivekimab's futility stop (09-07) all concerned WHAT GETS MEASURED. **This one
+says the capital entering cardiovascular TARGET SELECTION is buying HUMAN GENETIC SUPPORT — an asset a Hopkins or UMB cardiac
+programme either has from a cohort or does not have at all. Ask it BEFORE mechanism.**
+**CANDID: $250M is biobucks, the upfront was not disclosed, and Variant has now sold at least three overlapping collaborations (Novo
+Jan-2025, Boehringer Jan-2026, Boehringer expansion Sep-2026) ⇒ monetising ACCESS, not exclusivity.** Source:
+https://www.fiercebiotech.com/biotech/boehringer-adds-250m-value-variant-pact-expanding-cardio-disease
+
 **CARDIAC FIBROSIS theme — RXFP1 has been measured three times on HAEMODYNAMICS and never once on FIBROSIS
 (added 2026-08-30 Portfolio Watch item 3; event 2026-08-30, ESC Congress, Munich).** **AstraZeneca's AZD5462**, a
 **once-daily oral RXFP1 (relaxin receptor) agonist**, read out **Phase 2b LUMINARA** in chronic heart failure
@@ -1094,7 +1117,58 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-09-23_
+_Last update: 2026-09-24_
+- **THE DOSE-RESPONSE EXPERIMENT THE 09-03 ENTRY ASKED US FOR, RUN BY SOMEBODY ELSE — AND A 30-TO-40-FOLD PER-DOSE POTENCY GAIN BOUGHT
+  AN AMENDED PROTOCOL INSIDE A *RUNNING* PHASE 2 (added 2026-09-24 Portfolio Watch item 3; announced 2026-09-23).**
+  **Arcturus Therapeutics (Nasdaq: ARCT). ARCT-810 Phase 2 INTERIM in ornithine transcarbamylase (OTC) deficiency** — IV mRNA
+  expressing functional OTC enzyme in hepatocytes via LUNAR; OTCD is the most common urea cycle disorder, **~10,000 people across the
+  US + Europe**, liver transplant the only cure. **Generally safe and well tolerated; first-morning fasting ammonia reduced and/or
+  MAINTAINED within the normal range INCLUDING DURING INCREASED DIETARY PROTEIN; glutamine reduced, with the 0.5 mg/kg dose reaching
+  mean glutamine inside the normal range during treatment.**
+  **LUNAR 2.0 = improved lipids + a formulation process specific to those lipids. NHP: 40-fold improvement over LUNAR 1.0 expressing
+  human EPO; 38-fold more potent than ATX-95 (the key lipid in ARCT-810) expressing human OTC; ">30-fold" across multiple NHP studies.
+  ARCT-2601 (the LUNAR 2.0 construct) will be integrated into the EXISTING ARCT-810 Phase 2 under an AMENDED PROTOCOL rather than a new
+  trial, after a June 2026 Type C meeting described as favourable with path clarity; dosing near year-end, ages 12+; anticipated
+  benefit is LOWER and/or LESS FREQUENT dosing.** Also acquiring **myNEO** (AI discovery; partners since 2024; closing October). CEO
+  **Joseph Payne**; CSO **Pad Chivukula**.
+  **READ ONE (Geoff Lynn + Hugh Wells) — THE 09-03 ACTION, DEMONSTRATED BY A COMPETITOR. We wrote that the honest SELEXON claim is a
+  DOSE-RESPONSE IN TARGET TISSUE, shown not asserted. Arcturus showed 30-40x expression per dose in primates and got there through
+  LIPID CHEMISTRY, not cell-type selectivity. TWO TRANSFERS: (a) a MEASURED potency gain is a REGULATORY ACCELERANT — it bought an
+  amended protocol inside a running Phase 2 instead of a new IND; (b) they had the NUMBER BEFORE they asked for the meeting. Get the
+  dose-response experiment into the data room AHEAD of the Series A conversation.**
+  **READ TWO — THIRD PRESSURE ON THE ONE-SHOT AAV PREMISE IN EIGHT DAYS: Lilly x QurCan's repeat-dosable PLNP (09-15), Lexeo's three
+  option-priced re-dosing shots (09-22), and now an intrinsically REDOSABLE IV mRNA with a 30-fold potency gain targeting less frequent
+  dosing in a liver monogenic disease. Aletira's platform is VECTOR-AGNOSTIC and that is a genuine strength here — say it, do not imply
+  it. But the comparator-drift rule applies to DELIVERY: position against the delivery standard that will exist AT READOUT.**
+  **GOUT-THEME NOTE (Yixuan Qiu): LUNAR 2.0 is stated to open programmes previously inaccessible, INCLUDING PHENYLKETONURIA AND GOUT —
+  gout is a named Blackbird early-stage theme. ARCTURUS DID NOT NAME A TARGET; do not infer one. What is established is that the
+  competitive set for a Blackbird gout programme may now include a systemic, redosable hepatic protein-expression approach from a
+  clinical-stage platform.** Source:
+  https://www.biospace.com/press-releases/arcturus-therapeutics-announces-interim-otc-deficiency-phase-2-results-and-introduces-lunar-2-0-next-generation-mrna-delivery-platform
+- **A FOUNDATION MODEL RAISED $140M TO CONTROL WHERE DNA *LANDS*, WHICH ANSWERS THE SAME DILIGENCE QUESTION SELEXON ANSWERS — AND ONE OF
+  OUR CLASP CO-INVESTORS PRICED IT (added 2026-09-24 Portfolio Watch item 4; announced 2026-09-23).**
+  **Basecamp Research (London) — oversubscribed $140M Series C LED BY S32 (GP Andy Conrad, ex-Verily CEO). Investors: Anthropic's
+  Anthology Fund (the $100M Anthropic x Menlo Ventures vehicle), CATALIO CAPITAL MANAGEMENT, NVIDIA, NATO Innovation Fund, European
+  Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, PostScriptum, Redalpine, The Rockefeller Foundation,
+  Singular, Sovereign AI, True Ventures, plus André Hoffmann (Roche Vice-Chairman).** Secondary coverage reports a **~$800M valuation**
+  and **28B parameters** for EDEN — neither is in the company release; treat as reported. Co-founders **Glen Gowers** (CEO) + **Oliver
+  Vince**; CBO **Richard Pearce** (ex-Biogen head of BD/strategy/portfolio, April 2026).
+  **EDEN ("environmentally-derived evolutionary network") — biological foundation model trained on the Trillion Gene Atlas, built with
+  NVIDIA, Anthropic, Microsoft, PacBio and Ultima Genomics from access-and-benefit-sharing partnerships in 30+ countries. APPLICATION:
+  IN VIVO cell therapy — designing long, complex DNA sequences PLUS LARGE SERINE RECOMBINASES to insert them at a defined genomic
+  site. Preprint (NVIDIA + Microsoft co-authors): 63.2% overall functional hit rate across diverse DNA prompts when prompted on only
+  30 bp of DNA from OUTSIDE the training data; 50% of EDEN-generated LSRs active in human cells, reaching therapeutically relevant CAR
+  insertion in primary human T cells; an EDEN-generated synthetic microbiome covering 9,067 species at 99% taxonomic accuracy.**
+  **READ ONE (Virginia Burger) — PROPERTY, NOT TARGET, and unusually well quantified: precise programmable insertion of LARGE cargo.**
+  **READ TWO (Geoff Lynn) — Basecamp sells control over WHERE THE PAYLOAD LANDS; Aletira sells control over WHERE IT IS EXPRESSED. In
+  diligence those answer the SAME question ("how do you avoid expressing this in the wrong cell"). The honest differentiator is that
+  SELEXON is VECTOR-AGNOSTIC and an integration-site strategy is not. Have the sentence ready.**
+  **READ THREE (Eddie Cherok) — CONNECTIVE TISSUE: Catalio co-led Clasp's $150M Series A with Third Rock and Novo Holdings, with
+  Blackbird BioVentures participating. A co-investor of ours just priced an AI-designed delivery platform ⇒ use the relationship for the
+  valuation and the diligence standard, because that is the comparable a SELEXON Series A gets measured against.** Context: third
+  AI-discovery financing in two days alongside **Enveda's $311M Series E** and **Iambic's IPO filing (09-22)**. Sources:
+  https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html ·
+  https://www.genengnews.com/topics/artificial-intelligence/anthropic-nvidia-backed-basecamp-research-raise-140m-series-c-financing-toward-advancing-ai-designed-drugs/
 - **A PUBLIC GENE-THERAPY COMPANY BOUGHT THREE INDEPENDENT, OPTION-PRICED SHOTS AT RE-DOSING AAV INTO THE CNS AND BUILT NONE OF THEM —
   TWO OF THE THREE ARE ABOUT *IMMUNITY*, NOT DELIVERY (added 2026-09-23 Portfolio Watch item 2; announced 2026-09-22, Mantle agreement
   signed 2026-09-16).**
@@ -2659,7 +2733,36 @@ _Last update: 2026-09-23_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-23_
+_Last update: 2026-09-24_
+- **SELECTIVITY DOES NOT *TRAVEL* — AN FcRn ANTIBODY THAT WORKS IN SLE FAILED IN CUTANEOUS LUPUS, AND THE EXPOSURE-RESPONSE SIGNAL IS
+  SITTING INSIDE THE FAILURE. THIS IS THE OTHER HALF OF THE 08-30 NIPOCALIMAB ENTRY (added 2026-09-24 Portfolio Watch item 2;
+  announced 2026-09-23).** **Immunovant (Nasdaq: IMVT) / Roivant — IMVT-1402 (imeroprubart), anti-FcRn. Proof-of-concept study
+  NCT06980805 in cutaneous lupus erythematosus: randomised, double-blind, placebo-controlled, global, n=57; Period 1 = 12 weeks drug
+  vs placebo; PRIMARY = percent change from baseline in CLASI-A at Week 12 — DID NOT REACH STATISTICAL SIGNIFICANCE.** Numerical
+  trends favoured drug across multiple endpoints, and **patients achieving DEEPER IgG REDUCTIONS from baseline were more likely to
+  achieve improved clinical responses.** Safety/tolerability favourable and consistent with prior studies. **Development in CLE
+  STOPPED, citing "the competitive landscape and the clinical results observed"; all other timelines on track (Graves', difficult-to-
+  treat RA, myasthenia gravis, CIDP, Sjögren's). Shares ~-6%.** Guggenheim had flagged caution after management called the study a
+  "fact-finding proof-of-concept" in a "competitive landscape."
+  **THE MECHANISM IS NOT WHAT FAILED: J&J's Imaavy (nipocalimab) won Phase 2 in SLE in January 2026 and is in a pivotal programme.
+  CLE is the preserve of OTHER mechanisms — Biogen's anti-BDCA2 litifilimab (mid-phase win), AstraZeneca's type-I interferon receptor
+  inhibitor (Phase 3), Merck KGaA's oral TLR7/8 inhibitor (Phase 3).**
+  **READ ONE — THE INSTRUMENT/EXPOSURE PATTERN, THIRD INSTANCE THIS MONTH. Deeper IgG knockdown → better response is what a DOSE
+  problem looks like when it is written up as a MECHANISM verdict, at n=57 on a skin-severity index at Week 12.** Beside **Alumis
+  (09-02, failing to select buried a probably-real lupus effect)** and **Sionna (09-17, a 15-patient study allowed to be the verdict on
+  a company).**
+  **READ TWO — THE WINNOW READ (Jon Robbins + Virginia Burger). The 08-30 entry established that SELECTIVITY IS APPROVABLE AND
+  MARKETABLE. This establishes the limit: selectivity does not TRAVEL. A drug is selective FOR something, and the indication must be
+  the disease where that something is the DOMINANT DRIVER. ⇒ The Winnow TPP owes a MECHANISTIC paragraph on why ankylosing
+  spondylitis, not an assertion that the disease is T-cell-mediated in the textbooks.**
+  **READ THREE — STRUCTURAL ASYMMETRY: Immunovant dropped ONE indication of SIX with every other timeline intact. A single-asset NewCo
+  has no fallbacks ⇒ the indication-selection argument must be right the FIRST time, and the NAMED SECOND INDICATION belongs in the
+  deck before a partner asks for it.**
+  **READ FOUR (Hemaka) — RARE-AUTOIMMUNE WHITESPACE HAS A SHORT HALF-LIFE. CLE had no approved targeted therapy and now carries three
+  large-company programmes on three mechanisms. Carry this beside the Lisraya (08-29) and Imaavy (08-30) market-size citations.**
+  Sources:
+  https://www.globenewswire.com/news-release/2026/09/23/3367346/0/en/immunovant-announces-topline-results-from-proof-of-concept-study-of-imvt-1402-in-cutaneous-lupus-erythematosus.html ·
+  https://www.fiercebiotech.com/biotech/immunovant-ends-cutaneous-lupus-program-after-phase-2-flop
 - **THE MARKET PRICED THE SELECTIVITY PREMIUM IN THE NEGATIVE, IN WINNOW'S EXACT ARGUMENT, INSIDE A COMPETITOR'S BEST-EVER DATASET —
   THIRD CSU DATASET IN FIVE DAYS (added 2026-09-23 Portfolio Watch item 4; reported 2026-09-22).**
   **Celldex Therapeutics (Nasdaq: CLDX) — barzolvolimab, anti-KIT mAb that DEPLETES MAST CELLS; two successful Phase 3 trials in chronic
@@ -3118,7 +3221,44 @@ _Last update: 2026-09-23_
   https://www.biospace.com/business/bms-ends-cellares-pact-over-cell-therapy-production-problems-triggering-layoffs
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
-_Last update: 2026-09-16_
+_Last update: 2026-09-24_
+- **THE REIMBURSEMENT GATE MOVED AND IT IS NOW A PMA — AND THE FIRST COMPANY THROUGH IS GOING WITH A MISSED PRIMARY ENDPOINT AND A 6-4
+  EFFECTIVENESS VOTE. FIFTH SHAPE FOR THIS ENTRY'S STANDING QUESTION: SCREENING, WHERE THE DIAGNOSTICS COMPANY FUNDS ITS OWN
+  REGISTRATIONAL EVIDENCE — AND IT IS THE MOST EXPENSIVE OF THE FIVE (added 2026-09-24 Portfolio Watch LEAD; panel met 2026-09-23).**
+  **FDA Molecular and Clinical Genetics Panel of the Medical Devices Advisory Committee, 10 members, on GRAIL's Galleri: safety
+  UNANIMOUS; benefit-risk 7-2 with 1 abstention; EFFECTIVENESS 6-4 — four of ten voted no.** Galleri = prescription-only qualitative
+  NGS IVD reading **cancer-specific methylation patterns in cfDNA**, adults **50+**, indicated **in addition to and NOT as a
+  replacement for** guideline screening. **PMA submitted 2026-01-29**; currently sold as an **LDT at $949**; FDA decision "in the
+  coming months"; **no MCED test has ever been FDA approved.** CEO **Josh Ofman**.
+  **PATHFINDER 2 (35,878 participants 50+, no clinical suspicion of cancer): specificity 99.6% (FPR <0.4%); PPV 60.3%;
+  cancer-signal-origin accuracy 91.3%; episode sensitivity 39.3% ALL cancers / 69.8% for the 12 deadly cancers; 53.0% of detected
+  cancers stage I-II, 70.9% stage I-III; 71.3% of new Galleri-detected cancers had NO USPSTF A/B screening available; 6.5-fold
+  detection increase added to USPSTF A+B; median diagnostic resolution 48 days; invasive procedures 0.6% (213/35,335).**
+  **NHS-Galleri (England, ~140,000 randomised): PRIMARY — reduction in COMBINED stage III+IV cancers — NOT MET; no reduction in
+  overall mortality.** A later GRAIL update reported **stage IV diagnoses ALONE** fell over the three-year period — a stage-shift
+  signal, not a met endpoint. **Phil Castle (Director, NCI Division of Cancer Prevention)** told the panel the data were too premature
+  to prove clinical benefit: *"Routine approval and broad population rollout would risk harm and waste resources."* **Michelle Tarver
+  (Director, CDRH)**: concept "genuinely promising," but technologies of this reach and novelty "demand careful, rigorous evaluation."
+  **The panel recommended marketing materials instruct CONTINUED routine screening and AVOID characterising the test as "early"
+  detection.**
+  **READ ONE — THE MONEY (Eddie Cherok + Emily Wilkinson). The Nancy Gardner Sewell Medicare Multi-Cancer Early Detection Screening
+  Coverage Act was signed into law 2026-02-03**, creating a Medicare **benefit category** and permitting CMS to cover MCED tests
+  **from 2028 — but only tests the FDA has APPROVED.** ⇒ **The CLIA/LDT route is no longer a strategically neutral choice for a cfDNA
+  screening business.** See the DELFI entry below for the portfolio action this creates.
+  **READ TWO — FIFTH SHAPE.** Prior four: **switching** (09-07 SERENA-6/Guardant360), **de-escalation** (09-08 COPERNICOS),
+  **discard-vs-transplant** (09-10 Parikh/JHU), **standard-setting** (09-16 Mayo x Thermo Fisher Precure). **This one is SCREENING and
+  the sponsor is the diagnostics company itself — GRAIL is simultaneously the proof that a diagnostics-only company CAN generate
+  registrational evidence and the proof of what it costs (a decade + a 140,000-person RCT). Make that comparison explicit when the
+  Artemyx validation plan is fixed; do not cite it as the cheap path.**
+  **READ THREE — PORTABLE (Matt Tremblay). The panel did not reject the test for missing its endpoint; it recommended approval and
+  CONSTRAINED THE CLAIM. For a diagnostic the claim IS the product.** Confirms and sharpens the 09-07 conclusion: regulatory risk here
+  turns less on the evidentiary standard than on **who exercises discretion** — and the discretion lands in **label language**.
+  **BALTIMORE FOOTNOTE:** the competing MCED test now inside **Abbott** (via Exact Sciences; **CancerGuard**, CMO **Tom Beer**) traces
+  to a **2018 Hopkins team** including **Cristian Tomasetti** (now City of Hope). **DELFI is Velculescu's; Artemyx came out of
+  Velculescu's lab. Three leading cfDNA franchises from one Hopkins bench, and Blackbird holds positions downstream of two.** Sources:
+  https://grail.com/press-releases/fda-advisory-committee-votes-in-favor-of-approval-of-grails-galleri-multi-cancer-early-detection-test/ ·
+  https://www.npr.org/2026/09/23/nx-s1-5978122/fda-blood-cancer-test-galleri ·
+  https://www.congress.gov/bill/119th-congress/house-bill/842
 - **THE ASSAY IS NOT A PASSENGER — IT IS THE WHOLE FRANCHISE. The drug WITHOUT the diagnostic just failed (added 2026-09-15 Portfolio
   Watch item 3; reported 2026-09-14). THIS SUPERSEDES READ (b) OF THE 09-07 ENTRY BELOW.** **AstraZeneca's SERENA-4 Phase 3 MISSED its
   primary PFS endpoint** — **ETCAMAH (camizestrant) + palbociclib vs anastrozole + palbociclib** in **upfront FIRST-LINE** ER+/HER2−
@@ -3265,6 +3405,33 @@ _Last update: 2026-09-16_
   https://newsroom.questdiagnostics.com/2026-08-24-Quest-Diagnostics-to-Offer-FDA-Cleared-Roche-pTau217-Blood-Test-to-Assess-Alzheimers-Disease-Pathology ·
   https://www.biopharmadive.com/news/roche-eli-lilly-get-fda-nod-for-new-alzheimers-blood-test/828720/
 
+### DELFI Diagnostics — JHU cfDNA fragmentomics, blood-based cancer screening (BioVentures position) ✅
+_Last update: 2026-09-24_
+- **What:** genome-wide **cell-free-DNA FRAGMENTOMICS** + machine learning — reading patterns in the size and distribution of cfDNA
+  fragments rather than tumour mutations or methylation. Lead product **FirstLook Lung**, launched **October 2023**, the **first
+  commercially available blood-based lung-cancer screening test in the US**, reported **NPV 99.8%**, used to triage people at elevated
+  risk toward guideline low-dose CT. **Clinical utility study NCT06145750.**
+- **Science / origin:** founded **2019** out of the **JHU Sidney Kimmel Comprehensive Cancer Center** by **Victor Velculescu** (also
+  founder/co-CEO of Personal Genome Diagnostics). **Same lab that Artemyx came out of** — Blackbird therefore holds two positions
+  downstream of one Hopkins bench.
+- **Blackbird ownership:** Blackbird BioVentures position (listed in §2 "current other investments"). ⚠ Check size / ownership % not
+  confirmed in this file — pull from Eddie/Emily records.
+- **REGULATORY STATUS AND THE LIVE ACTION (opened 2026-09-24 Portfolio Watch LEAD). FirstLook Lung is a LABORATORY-DEVELOPED TEST run
+  under CLIA. It has NOT been FDA cleared or approved.** On **2026-09-23** an FDA advisory panel recommended approval of **GRAIL's
+  Galleri**, the first MCED test to reach a panel (details in the Artemyx entry), and the **Nancy Gardner Sewell Medicare MCED
+  Screening Coverage Act signed 2026-02-03** lets CMS cover MCED tests **from 2028 but only if FDA-approved.**
+  ⇒ **ACTION (Eddie Cherok + Emily Wilkinson): ask DELFI (a) is there a PMA path, (b) is there a timeline, (c) if the LDT route is the
+  answer, what is the 2028 plan when the Medicare benefit category exists and DELFI is not inside it.** Candid both ways: FirstLook
+  Lung is a SINGLE-cancer screening test and the MCED benefit category is written for MULTI-cancer tests, so the read-through is about
+  the DIRECTION of reimbursement policy rather than a direct eligibility question — confirm which category DELFI would sit in before
+  the conversation. Being second through the PMA door is cheaper than being first (GRAIL spent a decade and a 140,000-person RCT), but
+  it is not free and it is not the same business as running an LDT.
+- **Watch:** any DELFI PMA submission or FDA interaction; CMS rulemaking implementing the MCED benefit category ahead of 2028;
+  Abbott/Exact Sciences **CancerGuard** and GRAIL **Galleri** regulatory milestones; lung-cancer-screening-specific coverage
+  legislation; DELFI financing or commercial-partnership news.
+- Sources: https://delfidiagnostics.com/ · https://clinicaltrials.gov/study/NCT06145750 ·
+  https://www.congress.gov/bill/119th-congress/house-bill/842
+
 ### Biolinco — barcoded antibody production ✅
 _Last update: 2026-09-11_
 - **What:** **barcoded antibody production.** JHTV's own commercial framing (2026
@@ -3284,7 +3451,26 @@ _Last update: 2026-09-11_
 - **Watch:** DNA-barcoded antibody / multiplexed proteomics reagent platforms.
 
 ### Clasp Therapeutics — JHU-born precision immuno-oncology (TCR-mimic bispecific T-cell engagers) ✅
-_Last update: 2026-09-23_
+_Last update: 2026-09-24_
+- **THE DEGRADER COLUMN JUST BECAME THE MOST ADVANCED ONE ON THE MUTANT-KRAS MAP, AND IT MOVES OUR COMPARATOR (added 2026-09-24
+  Portfolio Watch item 6/closer; announced 2026-09-23).** **Astellas dosed the first patient in a randomised, open-label Phase 3 of
+  SETIDEGRASIB — an investigational KRAS G12D-targeted PROTEIN DEGRADER — versus DOCETAXEL in previously treated advanced NSCLC
+  (progressed on/after platinum chemotherapy + checkpoint inhibitor). ~356 patients, multiple countries; DUAL PRIMARY ENDPOINTS = PFS
+  by blinded independent central review AND overall survival. SECOND Phase 3 of the molecule inside six months (first is pancreatic
+  cancer). No therapy is approved specifically for KRAS G12D.** Mechanism: recruits the cell's own degradation machinery to the mutant
+  protein. Part of Astellas' plan to start 5+ Phase 3/pivotal studies by FY2027. Translational pancreatic analyses at the **AACR
+  Conference on Pancreatic Cancer, San Diego, 2026-09-25 → 09-28**.
+  **READ ONE (Eddie Cherok + Jon Robbins) — REVISES THE 08-15 FIVE-COLUMN MAP (antibody / small molecule / degrader / vaccine / TCE,
+  Blackbird in three). The DEGRADER column is now the most advanced in the field, with a CHEMOTHERAPY comparator and OS as a
+  CO-PRIMARY. CLSP-5282 (G12V TCE, SENTINEL-101) is positioned to layer ON TOP OF or AFTER the small-molecule class — that positioning
+  is now measurable: if setidegrasib clears against docetaxel, the second-line KRAS-mutant comparator for an engager stops being
+  docetaxel and becomes a DEGRADER. Comparator-drift rule — into the design assumptions now.**
+  **READ TWO — THE ALLELE ASYMMETRY CUTS BOTH WAYS IN ONE PARAGRAPH: G12D is getting the Phase 3s, G12V is ours, nothing is approved in
+  either. GOOD for the whitespace claim, AWKWARD for the comparator claim — both on the same slide.**
+  **ADVENTRIS LINE: setidegrasib is ALLELE-SPECIFIC. A synthetic long-peptide mKRAS vaccine covering MULTIPLE alleles has a BREADTH
+  argument a per-allele degrader cannot answer — the rare case where breadth is the ASSET rather than the discount, and the exact
+  mirror of the 09-23 Celldex lesson.** Source:
+  https://www.biospace.com/press-releases/astellas-doses-first-patient-in-phase-3-study-of-setidegrasib-in-previously-treated-kras-g12d-mutated-advanced-non-small-cell-lung-cancer
 - **A BOEHRINGER-FUNDED TARGET ENGINE IS NOW SELLING CLASP'S EXACT PROPOSITION FROM A SUBSTRATE THAT IS *NOT* HLA-RESTRICTED — AND IT
   NAMES T-CELL ENGAGERS EXPLICITLY. THIS CUTS AGAINST US (added 2026-09-23 Portfolio Watch item 3; announced 2026-09-22).**
   **Envisagenics × Boehringer Ingelheim**, >US$1B potential, option-to-license on tumour-specific targets discovered by the **SpliceCore**
