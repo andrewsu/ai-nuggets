@@ -1,0 +1,6 @@
+Script body: 11464 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2723 chars) -> 130.4s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2779 chars) -> 125.2s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2993 chars) -> 152.4s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (2966 chars) -> 137.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-09-24-grail-galleri-fda-adcomm-spotlight.mp3 [mistral] 4,614,731 bytes, 576.8s

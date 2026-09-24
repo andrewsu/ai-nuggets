@@ -4651,3 +4651,47 @@ Both RSS stubs parse as valid XML with `__LENGTH__` / `__DURATION__` placeholder
 
 One correction worth noting for the record: yesterday's week-ahead listed an Ionis zilganersen PDUFA for Sep 22 — the FDA had actually approved it as Zanvastro on Sep 3, so I dropped it from today's look-ahead and folded it into the Ionis thread instead.
 === 2026-09-23T02:32:40-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-24T02:23:10-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped at scripts + stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+
+- `podcasts/calibr-briefing/scripts/2026-09-24-pharma-headlines.txt` (2,175 words)
+- `podcasts/calibr-briefing/scripts/2026-09-24-grail-galleri-fda-adcomm-spotlight.txt` (1,826 words)
+- matching `.rss-item.xml` stubs (both parse as valid XML, `__LENGTH__`/`__DURATION__` placeholders in place) and `.commit-msg` stubs
+
+**Candidate funnel**
+
+Sources scanned (window: after the 09-23 02:30 run through 02:40 PDT 09-24):
+
+- **Endpoints News** — HTML index stale (nothing past Tue 09-22); `/feed/` RSS current, 24 items, 7 in window, all 7 relevant. Article bodies paywalled to the lede even via jina.
+- **Fierce Biotech** — homepage stale; `/rss/xml` current, 25 items, 5 in window. Article bodies rendered in full via jina (3/3).
+- **Fierce Pharma** — index fetched, 9 article slugs, 0 net-new in window.
+- **BioSpace** — `/latest-news-press-releases` (215 KB) + `press-releases.rss` both current; ~45 links, 12 relevant.
+- **BioPharma Dive** — front page fetched (369 KB) but stale: highest article id already shipped 09-23. No unique contribution.
+- **GEN** — index fetched; only AI-relevant hit (Insilico/rentosertib IPF) was a **June 2025** article surfacing undated on the front page. Discarded.
+- **STAT** — both Grail pieces paywalled (WebFetch returned vote tallies only). Substituted NPR, which carried the full panel account.
+- **Clinical Trials Arena** — index fetched, no extractable anchors, no contribution.
+
+Shortlist after discarding stale/duplicate matches (✓ = used):
+
+- ✓ FDA panel votes 10-0 / 6-4 / 7-2-1 on Grail's Galleri — **spotlight** — grail.com press release + NPR + FDA briefing-doc coverage
+- ✓ Basecamp Research $140M Series C (S32, Anthropic Anthology Fund, NVIDIA; EDEN + in vivo cell therapy) — prnewswire
+- ✓ Lilly–InnoCare, $100M upfront / $3.25B milestones, five targets — Fierce (overnight, 2:39am)
+- ✓ Enveda $311M Series E crossover — BioSpace
+- ✓ FDA approves lirafugratinib (Relay→Elevar) in FGFR2-fusion cholangiocarcinoma — BioSpace PR
+- ✓ Roivant/Immunovant imeroprubart misses in cutaneous lupus, drops indication — Roivant IR
+- ✓ Astellas doses first patient, 2nd Phase 3 of KRAS G12D degrader setidegrasib — BioSpace PR
+- ✓ Gossamer submits first NDA, inhaled seralutinib in PAH — BioSpace PR
+- ✓ Boehringer expands Variant Bio pact into cardiovascular, +$250M — Fierce
+- ✓ Department of War awards Flagship $47M for AI-enabled countermeasures — Fierce
+- ✓ Arcturus OTC-deficiency Phase 2 interim + LUNAR 2.0 + myNEO acquisition — BioSpace PR (brief)
+- ✓ Zymeworks closes Theravance at $17/share + ampreloxetine CVR — verified via Zymeworks IR (brief)
+- ✓ Evommune EADV late-breaker; Mineralys AHA late-breaker (briefs)
+- ✗ Baby KJ gene-editing drug cost $1.65M (Urnov) — Endpoints-only, body paywalled, no primary source found
+- ✗ Chinese vaccine scandal life sentence — off-beat
+- ✗ Insilico rentosertib IPF — June 2025, stale
+- ✗ Roche sefaxersen IgAN, Amgen dazodalibep, Novartis/BoomRay, Boehringer/Envisagenics, Iambic IPO — all shipped 09-23
+
+Spotlight rationale: Grail beat Basecamp on the top slot because it's the day's dominant industry story, it's a Foresite alumni portfolio company, and the 6-4/7-2 split plus the labeling recommendation gives a real analytical spine. Basecamp took headline slot two with its full Anthropic thread, avoiding a third Anthropic-framed spotlight in eight days.
+=== 2026-09-24T02:39:57-07:00 done  calibr-briefing (exit 0) ===
