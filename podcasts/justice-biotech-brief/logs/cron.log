@@ -3438,3 +3438,35 @@ OPB-101 (Outpace Bio) — four-module mesothelin CAR T, bioRxiv `10.64898/2026.0
 
 **One thing worth flagging:** the GD2×B7-H3 bispecific was the day's strongest-looking candidate and I read its full text before catching the problem — it is a **re-post of a May 2024 preprint** (`10.1101/2024.05.23.595588`, same title and author block), and INV724 already had FDA orphan-drug designation in August 2024. bioRxiv gave the re-post a brand-new DOI at **version 1** with a current date, so both freshness signals the API exposes were wrong. I've written that up as a new reference memory and recorded the paper as closed for selection in the show's run log, along with the reusable spines from today's episode.
 === 2026-09-23T02:55:45-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-24T02:43:10-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so I stopped at the script plus the two stub files — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/justice-biotech-brief/scripts/2026-09-24-zmynd8-p300-il2ra-cd8-exhaustion-texklr.md` (1,440 spoken words)
+- `…​.rss-item.xml` (validates as XML, `__LENGTH__` / `__DURATION__` placeholders in place)
+- `…​.commit-msg`
+
+**Pick:** ZMYND8 — *Targeting ZMYND8 unleashes IL-2 signalling to override T cell exhaustion*, Nature, published online 2026-09-23, Hongbo Chi lab at St. Jude. Full text read in full (826 KB direct curl, CC BY-NC-ND, no paywall markers). The episode's two arguments: it cuts against the not-alpha IL-2 design philosophy I covered yesterday (co-deleting CD25 erases most of the ZMYND8 benefit, so the alpha chain is load-bearing), and it flags that inobrodib — an oral p300/CBP bromodomain inhibitor in a pivotal myeloma trial — may blunt the T-cell arm of the BCMA/GPRC5D engagers that same population receives.
+
+---
+
+## Candidate funnel
+
+**bioRxiv — TOTAL SOURCE FAILURE, zero candidates.** `api.biorxiv.org` and `connect.biorxiv.org` both refused TCP on 443 (HTTP 000 in ~0.09 s), `www.biorxiv.org` returned the 17-byte 429 stub, and the bioRxiv MCP server failed identically since it wraps the same API. Persisted from ~02:45 to ~03:00 PDT across two retry strategies. Recorded as a source failure per PIPELINE.md; run shipped on the remaining sources.
+
+**Journal RSS (added to cover the bioRxiv gap)** — nature / nm / ni / nbt / natcancer + Science + Sci Transl Med feeds scanned; 3 on-beat items dated 09-22/09-23:
+- **Targeting ZMYND8 unleashes IL-2 signalling to override T cell exhaustion** — Nature 09-23 — https://www.nature.com/articles/s41586-026-11059-5 — **CHOSEN** (full text: 212 KB, Main/Discussion/Methods, no paywall markers)
+- Persistence of mucosal CAR-T cells and inflammatory remodeling in enterocolitis associated with BCMA CAR-T — Nat Med 09-23 — https://www.nature.com/articles/s41591-026-04632-y — **ineligible, full-text gate**: 48 KB, "Access through your institution" + "Buy this article", abstract only. Permanent (auth wall), no preprint found.
+- Metastasis enables immunogenicity through migrasome-mediated antigen release — Nat Immunol 09-22 — https://www.nature.com/articles/s41590-026-02641-0 — not opened; ranked below ZMYND8 on fit
+
+**News / press (Fierce JSON-LD 10, Endpoints ~70, BioPharma Dive ~32, BioSpace press releases ~36 scanned; 7 survived the relevance filter, 0 selected)**
+- Lilly / InnoCare 5-target deal, $100M upfront + $3.25B milestones — https://www.fiercebiotech.com/biotech/eli-lilly-puts-100m-plus-billions-backend-form-5-target-deal-innocare — targets undisclosed, nothing to say
+- Immunovant anti-FcRn cutaneous lupus Ph2 flop — https://www.fiercebiotech.com/biotech/immunovant-ends-cutaneous-lupus-program-after-phase-2-flop
+- Celldex barzolvolimab, two Ph3 CSU wins — https://www.fiercebiotech.com/biotech/celldex-redeems-monoclonal-antibody-pair-phase-3-wins-chronic-skin-condition — comparator already worked in the 09-21 CUE-221 episode
+- RegCell $66M Series A, Treg cell therapy — https://endpoints.news/regcell-lands-44m-series-a-to-take-nobel-winning-tregs-into-clinic/ — article 403s
+- Astellas setidegrasib Ph3 first patient dosed, KRAS G12D NSCLC — BioSpace PR
+- HUTCHMED and Innovent "data to be presented at ESMO 2026" — abstract listings, not readouts (ESMO is Oct 23–27)
+- GRAIL Galleri FDA adcomm vote — off-beat (diagnostics)
+
+**Policy / funders** — not reached this run; the bioRxiv outage consumed the budget allocated to them. Gap noted.
+=== 2026-09-24T02:58:09-07:00 done  justice-biotech-brief (exit 0) ===

@@ -1,0 +1,6 @@
+Script body: 9536 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2975 chars) -> 137.9s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2878 chars) -> 143.0s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2732 chars) -> 131.9s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (947 chars) -> 48.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-09-24-zmynd8-p300-il2ra-cd8-exhaustion-texklr.mp3 [mistral] 4,229,164 bytes, 528.6s
