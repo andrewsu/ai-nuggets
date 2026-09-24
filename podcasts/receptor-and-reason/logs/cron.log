@@ -4823,3 +4823,33 @@ Ledger appended: 11 keys, now 124 episodes / 1,274 unique keys.
 - GluN2D switch in Fragile X — `10.1016/j.biopsych.2026.09.007` (Elsevier, no full text)
 - Rachel retrosynthesis LM — `arxiv 2609.25118`; LLMs in mental health survey — `arxiv 2609.25186`
 === 2026-09-23T03:13:23-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-24T02:53:10-07:00 start receptor-and-reason ===
+Episode written and staged for batch TTS. `SKIP_TTS=1` was set, so per PIPELINE I wrote the two stub files and did **not** run `gen_tts.py`, publish to R2, touch `feed.xml`, or commit — `publish_pending.py` does all of that after the batch TTS job.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-09-24-receptor-and-reason.md` — 3,038 spoken words (≈16.5 min at this show's measured 3 words/sec)
+- `…/2026-09-24-receptor-and-reason.rss-item.xml` — validated as well-formed XML, `__LENGTH__`/`__DURATION__` placeholders in place
+- `…/2026-09-24-receptor-and-reason.commit-msg`
+- Ledger appended: 10 keys, now 125 episodes / 1,294 items
+
+**Candidate funnel**
+
+| Source | Scanned | Survived | Note |
+|---|---|---|---|
+| bioRxiv details API | 0 | 0 | **FAILED** — see below |
+| bioRxiv per-subject RSS | 0 | 0 | **FAILED** — `connect.biorxiv.org` refused TCP (000, 0 bytes), 4 subjects |
+| bioRxiv MCP server | 0 | 0 | **FAILED** — internal error on both calls |
+| arXiv (cs.AI, cs.CL, cs.MA, q-bio.NC, q-bio.QM) | 1,668 | 236 bio / 82 agentic | API 406'd; recovered via `/list/<cat>/recent` HTML |
+| Crossref journals (12 ISSNs) | 73 | 20 | Tier 1–3 journal list |
+| Nature RSS (NPP, Mol Psych, Transl Psych) | 21 | 12 | — |
+
+- **bioRxiv outage:** `api.biorxiv.org` returned a stale-interval payload once (asked 09-22, echoed 09-11), then refused TCP; 8 retries/day × 6 days all DEAD. The neuroscience + pharmacology preprint tier is a genuine gap today, disclosed in the episode's opening.
+- **arXiv:** export API 406'd (zero-byte) on every attempt. Fell back to `arxiv.org/list/<cat>/recent?show=2000`, which carries `<h3>` date headers — 1,668 dated entries across the 5 publication days in window.
+- **Full-text gate:** ScienceDirect served a captcha under HTTP 403, all Nature items were paywalled to abstract-only, and **zero** shortlist DOIs were in Europe PMC. So the lead was chosen from the four arXiv papers I could read end-to-end (PDF → `mutool`); journal items ran on PubMed abstracts, which were self-contained.
+
+**Dedup caught three real repeats** — worth flagging because two would have shipped: `Sensor sensibility` (shipped 2026-06-26 as the bioRxiv preprint, resurfacing today as the Neuropharmacology article) and `The AI Neuroscientist` (shipped *yesterday* under a different arXiv ID). Also dropped prochlorperazine D2 occupancy, `[11C]nicotine` PET, psychedelic USVs, SpecOpt, TrialAtlas, Ascent, and the MK-801 USV paper (same DOI, "mice" vs "male rats" title variant). 34 candidates → 23 fresh; final roster of 10 re-filtered clean.
+
+**Shipped (10):** neural surrogates for neuromodulation target design (lead, arXiv) · GluN2D cell-type switch in Fragile X · FAAH PET in PTSD · KOR/morphine-withdrawal reinstatement · Txn-Serinc2 lipid axis in bipolar subtypes · ketamine MRS meta-analysis · false-science induction in closed-loop discovery · CellAudit · MolDesignBench · physics-informed networks for pharmacometrics.
+
+One thing I noticed but did not touch: stale `2026-09-15-*.commit-msg` and `.rss-item.xml` stubs are still sitting in this show's `scripts/` (and in several sibling shows), which means a prior run's `publish_pending.py` didn't complete its cleanup.
+=== 2026-09-24T03:12:14-07:00 done  receptor-and-reason (exit 0) ===
