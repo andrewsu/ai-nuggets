@@ -4695,3 +4695,46 @@ Shortlist after discarding stale/duplicate matches (✓ = used):
 
 Spotlight rationale: Grail beat Basecamp on the top slot because it's the day's dominant industry story, it's a Foresite alumni portfolio company, and the 6-4/7-2 split plus the labeling recommendation gives a real analytical spine. Basecamp took headline slot two with its full Anthropic thread, avoiding a third Anthropic-framed spotlight in eight days.
 === 2026-09-24T02:39:57-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-25T02:23:07-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the transient stubs instead of generating audio, publishing to R2, editing `feed.xml`, or committing — `publish_pending.py` does those after batch TTS.
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-09-25-pharma-headlines.txt` (2,271 words)
+- `podcasts/calibr-briefing/scripts/2026-09-25-pharma-headlines.rss-item.xml` + `.commit-msg`
+- `podcasts/calibr-briefing/scripts/2026-09-25-roche-external-discovery-spotlight.txt` (1,863 words)
+- `podcasts/calibr-briefing/scripts/2026-09-25-roche-external-discovery-spotlight.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs validate as XML with `__LENGTH__`/`__DURATION__` placeholders intact.
+
+**Candidate funnel — Calibr 2026-09-25**
+
+Sources scanned:
+- BioPharma Dive front page — 31 items scanned, 4 net-new since yesterday's briefing
+- Fierce Biotech / Fierce Pharma indexes — 17 headlines scanned, 9 net-new. **Article bodies: first 6 fetches returned 200, then uniform 403 (5,489-byte Cloudflare block); r.jina.ai also refused with an `AbuseAlleviationError` domain block on fiercebiotech.com. Two items (NIH database tool, GSK PMCPA ruling) were dropped for lack of a readable body rather than carried on headline alone.**
+- Endpoints News index — 74 article slugs scanned; index is **not** chronologically ordered, so three apparent "new" items (Biohaven/SK $795M, Novartis/Alteogen $3.2B, EU/Sanofi antitrust probe) were date-checked and dropped as August/June news
+- BioSpace latest news + press releases — 2 full articles read, 1 PR read
+- Clinical Trials Arena — 39 headlines; bodies extracted from JSON-LD/meta (page text is lazy-loaded)
+- GEN artificial-intelligence section — 8 items, nothing net-new
+- Company/primary sources: atavistikbio.com PR, PR Newswire (Earendil), European Biotechnology Magazine, prior-deal verification via WebSearch (DualityBio $45M, Simcere $75M/$1.53B)
+
+Shortlist (full text read for all):
+- Roche–Atavistik $70M/$1.9B AMPS allosteric CVRM — atavistikbio.com PR — **CHOSEN (spotlight)**
+- Genentech–Earendil $55M/$1.5B+ AI bispecifics — PR Newswire — **CHOSEN (spotlight)**
+- FDA approves Lilly's weekly insulin Onswik (efsitora alfa) — BioSpace — **CHOSEN (headline 2)**
+- Merck remigromig Phase 3 Brunello win + safety disclosure; Surrozen +100% — BioPharma Dive — **CHOSEN (headline 3)**
+- Kyverna miv-cel 1-yr KYSA-8 stiff person syndrome durability — BioSpace — **CHOSEN (headline 4)**
+- ADARx $446.3M IPO + $89M AbbVie placement — BioPharma Dive — **CHOSEN (headline 5)**
+- Acadia remlifanserin Phase 2 miss (p=0.0603) — Fierce Biotech — **CHOSEN (headline 6)**
+- Henlius–Amberstone $440M pH-switchable TCEs — Fierce Biotech — **CHOSEN (headline 7)**
+- Overton FDA confirmation hearing — BioSpace + BioPharma Dive — **CHOSEN (headline 8)**
+- Nine European pharma chairs' open letter — BioPharma Dive — **CHOSEN (headline 9)**
+- Australia review of OpenAI Medicare breach — Clinical Trials Arena — **CHOSEN (headline 10)**
+- Prime Medicine PM647 IND in AATD — BioSpace PR — **CHOSEN (brief)**
+- Boehringer divests Shanghai biologics CDMO — Fierce Pharma index — **CHOSEN (brief)**
+
+Rejected after checking:
+- Lilly brenipatide GLP-1/GIP in MDD and AUD (BioSpace, Sept 22) — same Psych Congress data as the 09-20 spotlight
+- Elevar/Lyrfigtu FDA approval, Roche IgAN Phase 3, Amgen Sjögren's, Autobahn AMPLIFY-BD — all covered 09-22 through 09-24 or pre-window
+- Biohaven/SK $795M, Novartis/Alteogen $3.2B, EU/Sanofi probe — stale (Aug 26, Sept 1, June 26)
+- NIH biomedical database tool, GSK PMCPA ruling — Fierce body unreadable, no alternate source found
+=== 2026-09-25T02:35:02-07:00 done  calibr-briefing (exit 0) ===
