@@ -3146,3 +3146,38 @@ Shortlist after discarding noise:
 
 One thing worth flagging rather than smoothing over: the script surfaces a live factual discrepancy between the acting PM's "entirely normal" characterization of the Institute of Health and Welfare interactions and the Transluce report's documented injection probe at an AIHW dashboard. I wrote it as an open question for the taskforce, not as a resolved contradiction.
 === 2026-09-24T02:45:40-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-25T02:33:07-07:00 start jinglin-ai-pulse ===
+Published. Three files written for the batch-TTS orchestrator (`SKIP_TTS=1`, so no `gen_tts.py`, no R2 publish, no `feed.xml` edit, no commit):
+
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-25-the-regime-the-number-came-from.md`
+- `…rss-item.xml` (validates as XML)
+- `…commit-msg`
+
+**Episode:** "the regime the number came from" — 2,512 spoken words, ~12 min at the show's 1.2× rate.
+
+The lead is an original finding, not a relay. Contrastive Language Models (Jacky Kwok / Stanford Hazy Research, with Ré, Mirhoseini, Pavone) posted Tuesday claiming parity with Jev at 9× lower latency. I pulled the Decision Index 0.2 leaderboard's raw data file this morning: CLM-v0.1-8B scores **6.51** against Jev's **51.67** on a complete 120,615-request run at full coverage, zero errors. Not a bad model — a regime mismatch, exactly as one HN commenter predicted before the board data existed. Nobody in the day's roundups connected the two numbers.
+
+**Candidate funnel**
+
+- **Hacker News** — front page + 2-day `search_by_date` sweep (points>40), ~90 stories scanned, 14 AI-relevant; 3 used.
+- **Hugging Face daily papers** — 25 scanned, 4 on-beat, 0 selected (none beat the discourse items).
+- **Latent Space** — archive swept, 5 posts in window, 3 used (AINews 9/25 roundup, Runway/WorldPrompt, Foundries vs Navigators).
+- **TechCrunch AI** — front page scanned, 1 used (Oracle force majeure).
+- **X/Twitter** — unreadable from this host (xcancel challenge, x.com needs auth). Substituted HN + the AINews roundup's tweet digest + primary docs, per standing practice. @Zefan_Cai's feed not reachable; no Chinese-language primary source in window.
+- **Reddit** — `r/LocalLLaMA` JSON API returned non-JSON (blocked); the "Jev isn't new tech" thread cited via the AINews roundup's excerpt only, and not quoted in the spoken script.
+
+Shortlist (✅ = used):
+- ✅ Contrastive Language Models — https://contrastive-lm.notion.site/ (**lead**)
+- ✅ Decision Index 0.2 — https://huggingface.co/spaces/multimodalart/jev-decision-index
+- ✅ Runway WorldPrompt / GWM Worlds 2 — https://www.latent.space/p/runway
+- ✅ Odyssey Agora-2 — https://odyssey.systems/introducing-agora-2
+- ✅ Project Suncatcher — https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/
+- ✅ TypeSafe $1B at $10B — https://huggingnews.com/startups/typesafe-raises-1b-at-10b-valuation-a-week-after-200m-round-438abde2
+- ✅ Oracle force majeure, Project Jupiter — https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/
+- ✅ Sanborn, Foundries vs Navigators (**deep cut**) — https://www.latent.space/p/foundries-vs-navigators-lowering
+- ⬜ Sakana names Schmidhuber to RSI Lab — verified but cut for length; source line removed
+- ⬜ Harness-Zero, XYEval, Perplexity Photon — real but tail items, cut
+- ⬜ Anthropic enzyme discovery, Transluce rogue agents, OpenAI/Medicare, arXiv nonprofit — all shipped 09-24, excluded
+
+One reporting caveat carried into the script: the size of TypeSafe's prior round is inconsistent across secondary coverage ($200M round vs. $200M valuation), so I anchored only on the corroborated span — $40M seed out of stealth Sept 15, raising >$1B at >$10B ten days later.
+=== 2026-09-25T02:45:35-07:00 done  jinglin-ai-pulse (exit 0) ===
