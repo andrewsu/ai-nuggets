@@ -3470,3 +3470,30 @@ Episode written. `SKIP_TTS=1` is set, so I stopped at the script plus the two st
 
 **Policy / funders** — not reached this run; the bioRxiv outage consumed the budget allocated to them. Gap noted.
 === 2026-09-24T02:58:09-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-25T02:43:07-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md batch mode I wrote the script plus the two transient stubs and made no TTS call, no R2 publish, no `feed.xml` edit, and no commit — `publish_pending.py` does those after batch TTS.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-09-25-miv-cel-kyv-101-autoimmune-car-t-one-year-no-iec-hs.md` (1,252 spoken words)
+- `…​.rss-item.xml` (validated as well-formed XML; `__LENGTH__` / `__DURATION__` placeholders in place)
+- `…​.commit-msg`
+
+**Pick:** miv-cel (mivocabtagene autoleucel, KYV-101) — Kyverna's 2026-09-24 one-year data in stiff person syndrome (KYSA-8, n=26) and generalized myasthenia gravis (KYSA-6 Ph2, n=7), with no high-grade CRS, no ICANS and no IEC-HS, three weeks after the rap-cel deaths this show covered on 09-01. The take decodes the company's "unique construct" claim: the CAR is Hu19-CD828Z, and the cytokine-lowering feature is the CD8α hinge/transmembrane swapped onto a CD28 endodomain — not the costim domain everyone argues about (5% vs ~55% grade 3/4 neurotox vs FMC63-28Z in the NCI lymphoma trial). Plus the observation that Kyverna's rapid whole-blood process is a *separate* product (KYV-102), making it the coming controlled test of the rapid-manufacturing hypothesis. Caveats stated on air: rule-of-three bounds the IEC-HS rate at only ~9%, SPS/gMG ≠ lupus/scleroderma, and the architecture is still untitratable.
+
+All four source URLs verified 200. Full text of the primary release, the December 2025 primary readout, and the trade coverage were read in full before drafting.
+
+**Candidate funnel**
+
+- **bioRxiv details API — FAILED.** HTTP 200 / 0 bytes on every one of 18 requests (3 day files × 6 retry rounds, `curl -m 45`, 20s sleeps, ~10 min). Silent-empty outage mode; not transient within the run window.
+- **bioRxiv fallback, `connect.biorxiv.org` per-subject RSS — worked.** immunology + cancer_biology + pharmacology_and_toxicology + bioengineering → 117 deduped items (~96 within 3 days), 15 survived the keyword filter, **0 on-target** for this show's asset classes (hits were PD-1/checkpoint-adjacent tumor-immunology and dosimetry papers, no TCE / CAR-T / ADC / VEGF×PD-L1 / JAK-ADC item). Nothing reached the shortlist.
+- **News — 4 index pages fetched, all 200** (BioPharma Dive, Fierce Biotech, Endpoints, Fierce Pharma). Fierce *section* pages `/clinical-data` and `/oncology` 403'd with the 5,490-byte Cloudflare block; front pages and individual articles were readable. BioSpace `/press-releases` has no anchors (JS index) — reached individual releases via headline search.
+- **Policy/funder pages** — not fetched; the news sweep produced a dominant on-target candidate and the bioRxiv retry loop consumed the slack. Recorded as a gap.
+
+Substantive shortlist:
+- **← CHOSEN** Miv-cel (KYV-101) 12-month KYSA-8/KYSA-6 data, no IEC-HS, BLA Q4 — https://www.biospace.com/press-releases/kyverna-therapeutics-reports-positive-one-year-data-demonstrating-durable-clinical-responses-and-favorable-safety-profile-for-miv-cel-in-stiff-person-syndrome-and-generalized-myasthenia-gravis
+- Henlius–Amberstone, up to $440M for T-Mate acidity-switch T-cell engagers (09-24) — https://www.fiercebiotech.com/biotech/chinas-henlius-carves-out-440m-t-cell-engager-deal-amberstone
+- Genentech–Earendil, $55M upfront / >$1.5B oncology bispecifics (09-25) — https://www.fiercebiotech.com/biotech/genentech-inks-15b-bispecific-pact-fast-rising-earendil
+- Lyrfigtu (lirafugratinib) FDA approval, FGFR2-altered cholangiocarcinoma, REFOCUS ORR 46% (09-23) — https://www.biospace.com/press-releases/elevar-therapeutics-announces-fda-approval-of-lyrfigtu-lirafugratinib-as-second-line-cholangiocarcinoma-with-fgfr2-fusion-or-other-rearrangement-treatment-option — passed over as off-target (small-molecule TKI, no immuno-oncology angle)
+
+Dedup checked: no prior episode on Kyverna, Earendil, Amberstone, Henlius or Elevar; the two prior files mentioning Kyverna (2026-06-24, 2026-07-18) do so only in passing lists.
+=== 2026-09-25T02:51:44-07:00 done  justice-biotech-brief (exit 0) ===
