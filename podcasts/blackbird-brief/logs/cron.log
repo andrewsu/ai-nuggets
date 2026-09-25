@@ -2869,3 +2869,39 @@ Reference updated in place (no journal entries appended): Artemyx, Winnow, Clasp
 - `2026-09-15-portfolio-watch` has stub files but **no mp3 and no feed entry** — that episode never got through TTS/publish. It's pre-existing, not from this run; batch TTS should pick it up since `gen_tts.py` only skips scripts that already have an mp3. Worth confirming after the batch job.
 - The FDA executive-summary PDF for the Galleri panel returned only a fuzzy model summary, so I sourced the performance numbers from GRAIL's own ASCO 2026 PATHFINDER 2 release rather than the agency document, and labelled the ~$800M valuation / 28B-parameter EDEN figures as reported-not-confirmed since they aren't in Basecamp's release.
 === 2026-09-24T02:37:07-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-25T02:13:07-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does those.
+
+**Published files**
+- `podcasts/blackbird-brief/scripts/2026-09-25-portfolio-watch.md` — 3,100 spoken words (≈9 min at the show's observed 1.2× rate; a deliberate correction back into the 6–9 min spec, since the last five episodes drifted to 3,700→6,200 words / up to 18.6 min)
+- `…-portfolio-watch.rss-item.xml` (validated as XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `…-portfolio-watch.commit-msg`
+- Ledger appended: 6 keys, 78 episodes
+- `memory/blackbird-portfolio.md` edited **in place** (4 entries revised + dates bumped: Winnow, Clasp, Neuropsychiatric NewCo, Spinout-structure comparators; plus the 09-02 "rapid-manufacturing" open item marked largely answered). No dated log appended.
+
+**Candidate funnel**
+
+| Source | Scanned | In-window (09-22→09-25) & relevant |
+|---|---|---|
+| BioSpace index | ~70 | 12 |
+| Fierce Biotech / Fierce Pharma | ~20 | 6 |
+| BioPharma Dive front page | ~30 | 8 |
+| GEN | ~25 | 0 (front page evergreen/undated) |
+| BioBuzz | ~21 | 0 (currently Philadelphia/Carolinas-weighted) |
+| Endpoints | index returned no parseable article anchors | 0 |
+| Targeted searches (portfolio cos., JHU/UMB/Lieber, Blackbird) | — | 0 |
+
+Shortlist after filtering (13 → dedup-clean, but **the URL filter passed two items the portfolio file caught as already shipped** — worth noting, it's the recurring failure mode):
+- ✅ **Kyverna miv-cel 12-mo KYSA-8/KYSA-6** — LEAD
+- ✅ **Henlius × Amberstone $440M T-Mate TCE** + ✅ **Genentech × Earendil $55M/$1.5B** — combined item 2
+- ✅ **Acadia remlifanserin RADIANT Ph2 miss** — item 3
+- ✅ **Roche × Atavistik $70M/$1.9B** — item 4
+- ✅ **ADARx upsized $446.3M IPO** — closer
+- ❌ Ionis/Otsuka FUSION FUS-ALS — **already shipped 09-23 LEAD** (resurfaced under a new BioSpace URL; ledger missed it, portfolio file caught it)
+- ❌ Envisagenics × Boehringer — **already shipped 09-23 item 3** (same cause)
+- ❌ Amgen dazodalibep (09-23), Enveda (09-24), Compass (09-14) — shipped
+- ❌ Novartis TREM2 halt (09-16), BMS/Orum (09-18), Ultragenyx Sanfilippo (09-18) — outside window
+- ❌ Novartis/Boomray radioligand, Lilly/InnoCare, Merck DME, Viking, Celldex — fresh but no portfolio line
+
+Two caveats worth your attention: the Fierce article URLs 403 on HEAD requests (they GET fine — normal for that host), and the SEC 8-K link in item 1's sources 403s to scripted clients while resolving in a browser; I swapped the dead Kyverna IR link for the BioSpace press-release mirror, which returns 200.
+=== 2026-09-25T02:29:30-07:00 done  blackbird-brief (exit 0) ===

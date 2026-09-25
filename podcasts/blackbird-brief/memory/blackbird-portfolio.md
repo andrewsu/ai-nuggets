@@ -334,7 +334,29 @@ https://www.nytimes.com/2026/09/20/science/nih-omb-grants-bhattacharya-vought.ht
 https://www.statnews.com/2026/09/21/trump-plan-for-commission-to-review-nih-grants-push-back/
 
 ### Spinout-structure comparators (how other people carve assets out)
-_Last update: 2026-09-23_
+_Last update: 2026-09-25_
+- **THE OPPOSITE POLE, EVIDENCED THE SAME WEEK: SELL THE OUTPUT AND STAY (added 2026-09-25 Portfolio Watch item 4; announced 2026-09-24).**
+  **Roche × Atavistik Bio (Massachusetts): $70M upfront, up to $1.9B in milestones, plus tiered royalties**, for small molecules against
+  **cardiovascular, renal and metabolic (CVRM)** targets. Platform = **AMPS**, allosteric discovery finding **novel functional binding
+  pockets on historically hard-to-modulate targets**; Atavistik leads discovery/research, Roche takes preclinical → commercial. **Boris
+  Zaïtra** (Roche head of corporate BD) framed the goal as oral small molecules. Follows Roche opening a **Genentech CVRM-dedicated R&D
+  centre in Boston**; Roche's CVRM buying also includes **Carmot (2023)**, **89bio (up to $3.5B, MASH)** and a **Hanmi pact up to $2.3B**.
+  **THE STRUCTURE IS THE ITEM: Atavistik raised ~$160M total (Series B extension this year; The Column Group, Regeneron Ventures, RA
+  Capital), KEPT a wholly owned rare-haematology pipeline — lead ATV-1601, an ORAL ALLOSTERIC AKT1-SELECTIVE INHIBITOR with ORPHAN DRUG
+  DESIGNATION granted June 2026 for hereditary haemorrhagic telangiectasia — and sold the platform's OUTPUT in TWO ADJACENT therapeutic
+  areas (Pfizer, start of 2025, two undisclosed targets; Roche now) WITHOUT giving up the company.**
+  **⇒ THE TWO POLES ARE NOW BOTH EVIDENCED, PUT THEM ON ONE PAGE (Eddie Cherok + Emily Wilkinson): SELL THE ASSET AND LEAVE = Viela →
+  Horizon → Amgen (entry above; essentially all value accrued to the acquirers). SELL THE OUTPUT AND STAY = Atavistik.**
+  **⇒ SCIENCE READ (Virginia Burger) — the CARDIAC FIBROSIS theme's standing problem is that the interesting targets are INTRACELLULAR and
+  orthosterically undruggable. Atavistik's whole proposition is functional allosteric pockets on exactly those targets, now twice-validated
+  by top-tier pharma in 20 months. If the theme is TARGET-limited rather than CHEMISTRY-limited, this is a named vendor for the gap — and
+  the question is whether a Blackbird programme would ever be the discovery partner on a deal of this shape or whether we are on the wrong
+  side of it.**
+  **CANDID — THE PFIZER DEAL IS THE TELL. Signed at the start of 2025, two undisclosed targets, and NOTHING from it appears on Atavistik's
+  pipeline today while the new Roche programmes DO; the company did not answer BioSpace's question about its status. A discovery
+  collaboration with no disclosed programme in 20 months is either quietly dead or quietly pre-competitive. UNDERWRITE THE $70M, NOT THE
+  $1.9B.** Source: https://www.biospace.com/deals/roche-inks-up-to-2b-deal-with-atavistik-for-new-cardiometabolic-drugs
+
 - **THE CARVE-OUT THESIS NOW HAS A POSITIVE PHASE 3 AT THE END OF IT — AND ESSENTIALLY ALL THE VALUE ACCRUED TO THE ACQUIRERS (added
   2026-09-23 Portfolio Watch item 5; readout 2026-09-22).** **dazodalibep** (CD40–CD40L blocker; positive first Phase 3 in Sjögren's, a
   disease with NO disease-modifying therapy) was **discovered at AstraZeneca → SPUN OUT into Viela Bio → Viela acquired by Horizon
@@ -2012,7 +2034,34 @@ _Last update: 2026-08-28_
   it. KRAS-landscape news is no longer portfolio-relevant on aSKY's account
   (Clasp remains a live KRAS-adjacent holding).
 ### Neuropsychiatric NewCo (schizophrenia) — Lieber Institute + Third Rock ✅
-_Last update: 2026-09-23_
+_Last update: 2026-09-25_
+- **THE PLACEBO ARM REPRODUCED 83% OF THE DRUG EFFECT AND COST 11% OF MARKET CAP — AND THE PROPOSED FIX IS AN INCLUSION CRITERION WORTH
+  +27% ON EFFECT SIZE (added 2026-09-25 Portfolio Watch item 3; reported 2026-09-24). This is the psychiatry-specific version of the
+  instrument thread and the cleanest public demonstration of the 08-31 GPR52 biomarker item.**
+  **Acadia Pharmaceuticals (Nasdaq: ACAD) — remlifanserin (ACP-204), a 5-HT2A INVERSE AGONIST (same target as Nuplazid, re-engineered to
+  avoid QT prolongation), Phase 2 portion of the Phase 2/3 RADIANT trial in ALZHEIMER'S DISEASE PSYCHOSIS. 60 mg: −12.6 points on a
+  hallucinations-and-delusions assessment at WEEK 6; PLACEBO −10.4; EFFECT SIZE 0.26; PRIMARY MISSED at p = 0.0603.** TD Cowen had named
+  **0.35–0.40** as likely (09-15 note); BMO called it a **"near miss"**. Key secondary (symptom severity) **−1.3 vs −0.9**, nominally
+  significant. **Safety favourable — AE/SAE/discontinuation rates similar to placebo, NO QT signal, no deaths on drug, no motor or
+  cognitive worsening** (BMO: improves odds for the Lewy body dementia psychosis Phase 2). **30 mg minimal activity, dropped from Phase 3.**
+  CEO **Catherine Owen Adams**: "absolutely worth our investment to move this forward." **Stock opened −11% at $22.50 from $25.43.**
+  **THE ENRICHMENT NUMBER — head of R&D Elizabeth Thompson, Ph.D., on the call: refining Phase 3 enrollment toward MODESTLY HIGHER BASELINE
+  PSYCHOSIS, applied retrospectively to the SAME Phase 2 data, lifts the primary effect size from 0.26 to 0.33 — a +27% gain bought with an
+  INCLUSION CRITERION: no new chemistry, no new dose, no new patients.**
+  **READ ONE (Anthony Accorsi + Jon Robbins) — THIRD INSTRUMENT FAILURE MODE THIS MONTH AND THE ONE GPR52 IS MOST EXPOSED TO. 09-08 = can
+  the instrument register the effect at an affordable n. 09-23 = the winning answer POOLED FUNCTION WITH SURVIVAL. In psychiatry there is
+  NO SURVIVAL TO POOL and the rater-scored scale IS the measurement. ⇒ the 09-09 endpoint list (machine-measured/steep-natural-slope vs
+  rater-scored/needs-a-control-arm) now has a worked example with a price on it.**
+  **READ TWO (Hemaka Rajapakse + Yixuan Qiu) — THE CHEAPEST LEVER IN THE TRIAL IS THE INCLUSION CRITERION. POST-HOC ON A MISSED TRIAL ⇒
+  hypothesis, not result. But the buyer's stated recipe is "genetics + biomarkers," and this says PATIENT SELECTION IS NOT A DOWNSTREAM
+  PHASE 2 DETAIL — it is the difference between a programme that continues and one that does not, and Acadia is discovering it AFTER
+  spending the Phase 2.**
+  **CANDID, AND IT CUTS OUR WAY: Acadia is CONTINUING. p=0.06 + clean safety + real unmet need bought a Phase 3, not a discontinuation, and
+  the sell side called it a near miss. High-unmet-need neuropsychiatry tolerates ambiguity that would kill an oncology asset — a genuine
+  tailwind for a first-in-class GPR52 agonist with a noisy first readout, BUT only for a company that can FUND the second trial ⇒ argues
+  for declaring the DC into a buyer's arms rather than out of them.** Source:
+  https://www.fiercebiotech.com/biotech/acadia-misses-mark-alzheimers-concludes-phase-3-absolutely-worth-pursuing
+
 - **THE BUYER WE RANKED FIRST JUST BUILT A PSYCHIATRY FRANCHISE — WHICH RAISES OUR CONFIDENCE IN THE RANKING *AND* ADDS A RISK WE HAD NOT
   WRITTEN DOWN (added 2026-09-23 Portfolio Watch closer; presented at Psych Congress 2026, New Orleans; coverage 2026-09-22).**
   **Eli Lilly publicly debuted BRENIPATIDE, a long-acting dual GIP/GLP-1 receptor agonist, and disclosed it is ALREADY in Phase 3 for
@@ -2733,7 +2782,41 @@ _Last update: 2026-09-23_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-24_
+_Last update: 2026-09-25_
+- **THE CONTROL-ARCHITECTURE ROW IS NOW CONTESTED — BY A COMPETITOR, WITH 12-MONTH DATA, A Q4 BLA, AND THE TWO VARIABLES NAMED
+  AFFIRMATIVELY. REWRITE THE ROW (added 2026-09-25 Portfolio Watch LEAD; announced 2026-09-24). Partially CLOSES the 09-02
+  "rapid-manufacturing platforms as the suspect variable" open item.**
+  **Kyverna Therapeutics (Nasdaq: KYTX) — miv-cel (mivocabtagene autoleucel, formerly KYV-101): FULLY HUMAN, autologous, CD19-targeting
+  CAR T with CD28 co-stimulation.** Rolling **BLA completing Q4 2026**, priority review requested; would be the **first CAR T approved for
+  an autoimmune disease**. Stock **+7% premarket to $7.55**; William Blair called it "strong" and BLA-de-risking.
+  **KYSA-8 (registrational, stiff person syndrome, n=26, 12 months): primary = timed 25-foot walk, median improvement from baseline 46% at
+  week 16 → 49% at month 12, p<0.0001. 95% of patients with a clinically meaningful improvement (>20%) at the primary analysis SUSTAINED
+  it. >1/3 complete T25FW in <5 s. Of the 12 patients needing a walking aid at baseline, 67% no longer require assistance. Secondaries
+  consistent at 12 months (p 0.0001–0.0003). 92% remained FREE OF CHRONIC IMMUNOTHERAPIES.**
+  **KYSA-6 Phase 2 (registrational, generalized myasthenia gravis, n=7): 7/7 (100%) clinically meaningful improvement at 24 weeks on
+  MG-ADL and QMG — the CO-PRIMARIES of the ongoing Phase 3 — mean reductions −8.3 and −11.7; maintained through ≥1 year in all five who
+  reached it (up to 1.5 years); minimal symptom expression maintained in 57%; 6/7 (86%) off immunosuppressants at last follow-up.**
+  **SAFETY, BOTH TRIALS: NO high-grade CRS, NO ICANS, NO IEC-HS.** CEO **Warner Biddle** attributes it to (a) the **only CD19 CAR in
+  autoimmunity with a FULLY HUMAN CD28 co-stimulatory domain designed for safety** and (b) a **"well-established, validated manufacturing
+  process."** Company states **>100 patients dosed with miv-cel across autoimmune indications** (clean-safety statements scoped to the 33
+  trial patients).
+  **⇒ ACTION 1 (Jon Robbins + Eddie Cherok) — REWRITE THE 09-02 CONTROL-ARCHITECTURE ROW BEFORE IT GOES TO AN INVESTOR.** The *mechanics*
+  survive (an autologous product is still not titratable); the *empirical premise* does not. If the field's answer to IEC-HS is "different
+  co-stim domain + slower manufacturing," the safety differential collapses. **DEFENSIBLE ROW = dose control, interruptibility, no
+  lymphodepletion, no apheresis, no vein-to-vein time, off-the-shelf. NOT the word "safer."** Second half: the first autoimmune CAR T
+  approval is probably a **2027** event ⇒ Winnow's launch comparator is an **approved product**, not an idea.
+  **⇒ ACTION 2 — the 09-02 manufacturing hypothesis (William Blair / Sami Corwin) is now argued AFFIRMATIVELY by the clean-side sponsor.
+  Three-company natural experiment with the variables labelled; whoever assembles that comparison has most of it handed to them.**
+  **CANDID, CARRY ALL OF IT: zero events in 33 patients bounds the rate at ~9% or below (rule of three) — NOT obviously below the Novartis
+  rate. SPS and gMG are not SLE or systemic sclerosis, so patient predisposition to hyperinflammation stays live. KYVERNA'S PATIENTS WERE
+  LYMPHODEPLETED — that line in our deck is untouched. NET: the safety differential is UNPROVEN IN BOTH DIRECTIONS, where two weeks ago we
+  treated it as settled our way.**
+  **⇒ ACTION 3 — THE DRUG-FREE-REMISSION CLAIM. 92% off chronic immunotherapy (SPS) and 86% off immunosuppressants (gMG), durable at a
+  year, is a REMISSION product. Winnow is CHRONIC DOSING. Argue the difference deliberately in the deck rather than let a partner notice
+  it.** Sources:
+  https://www.biospace.com/drug-development/kyverna-steps-closer-to-fda-first-car-t-for-an-autoimmune-condition-with-durability-data ·
+  https://www.biospace.com/press-releases/kyverna-therapeutics-reports-positive-one-year-data-demonstrating-durable-clinical-responses-and-favorable-safety-profile-for-miv-cel-in-stiff-person-syndrome-and-generalized-myasthenia-gravis
+
 - **SELECTIVITY DOES NOT *TRAVEL* — AN FcRn ANTIBODY THAT WORKS IN SLE FAILED IN CUTANEOUS LUPUS, AND THE EXPOSURE-RESPONSE SIGNAL IS
   SITTING INSIDE THE FAILURE. THIS IS THE OTHER HALF OF THE 08-30 NIPOCALIMAB ENTRY (added 2026-09-24 Portfolio Watch item 2;
   announced 2026-09-23).** **Immunovant (Nasdaq: IMVT) / Roivant — IMVT-1402 (imeroprubart), anti-FcRn. Proof-of-concept study
@@ -3451,7 +3534,35 @@ _Last update: 2026-09-11_
 - **Watch:** DNA-barcoded antibody / multiplexed proteomics reagent platforms.
 
 ### Clasp Therapeutics — JHU-born precision immuno-oncology (TCR-mimic bispecific T-cell engagers) ✅
-_Last update: 2026-09-24_
+_Last update: 2026-09-25_
+- **THE HLA-FREE-SPECIFICITY COMPETITION IS NOW A CATEGORY, NOT AN ANECDOTE — SECOND MECHANISM IN ONE WEEK, FROM A THIRD SUBSTRATE, AND
+  SOMEBODY PAID UP TO $440M FOR IT PRECLINICALLY (added 2026-09-25 Portfolio Watch item 2; announced 2026-09-24 and 2026-09-25).**
+  **Henlius Biotech (Fosun Pharma subsidiary, Shanghai) × Amberstone Biosciences (California):** Amberstone applies its **T-Mate** platform
+  to generate **preclinical TCEs against up to two Henlius-selected targets**; Henlius takes development + commercialization. **Up to $440M
+  total (upfront + development/regulatory/sales milestones), SPLIT UNDISCLOSED, plus royalties.** T-Mate = **acidity-sensitive switching**:
+  reduced T-cell activation in healthy tissue, retained activity across the pH range found in solid tumours; preclinical in-house TCE kills
+  at tumour-like pH with markedly reduced activity at normal pH; **clinic H1 2027**.
+  **Genentech × Earendil Labs: $55M upfront, milestones taking total value >$1.5B**, tiered royalties, oncology bispecifics against
+  pre-agreed target combinations; Earendil leads discovery + early clinical then hands off. **Earendil's fourth deal in 18 months** —
+  Sanofi $125M (Apr 2025), Sanofi $160M upfront + near-term (Jan 2026), **WuXi XDC $885M** ADC tech (Feb 2026). Co-CEO **Zhenping Zhu**.
+  Context one week earlier: **Roche × Dualitas, $36.5M to screen >300,000 novel bispecific combinations** (I&I).
+  **THE COLLISION (Eddie Cherok + Jon Robbins): Amberstone sells CONDITIONAL ACTIVATION (pH switch); Clasp sells ABSOLUTE SPECIFICITY
+  (mutant peptide-HLA + CD3). The pH switch is TARGET-AGNOSTIC and NOT HLA-RESTRICTED — the same structural advantage as the 09-23
+  Envisagenics splice-isoform read, from a completely different substrate. ⇒ PUT IT ON THE COMPETITIVE SLIDE AS ONE CATEGORY
+  ("specificity mechanisms with no HLA denominator"), not as two bullets.**
+  **CLASP'S BEST ANSWER, AND IT IS REAL: a pH switch is a GRADIENT, not a GATE. Tumour acidity is heterogeneous and so is normal tissue
+  (inflamed joints, kidney medulla, stomach). A peptide is presented or it is not. ⇒ WATCH ITEM: the T-Mate IND in H1 2027. Therapeutic
+  index shown = the argument is over; CRS anyway = the HLA denominator is buying something.**
+  **UPFRONT DISCIPLINE, FOURTH INSTANCE THIS MONTH: $55M / >$1.5B = under 4% of headline value at signature; Henlius/Amberstone did not
+  print the split at all (same tell as GSK/Chimagen 09-15, Novo/Kallyope 09-18, Envisagenics/BI 09-22).**
+  **THIRD ARCHITECTURE, SAME WEEK (Hemaka): Earendil's most advanced TCEs engage TWO DISTINCT NON-OVERLAPPING EPITOPES OF THE SAME ANTIGEN
+  (GUCY2C; DLL3) — a biparatopic AVIDITY design, closest to the AbbVie etentamig avidity-for-affinity trade in the 09-05 Winnow note.
+  SWITCH / GATE / AVIDITY all bought in one week. The standing CLASP TARGET-DENSITY question is what discriminates between them and it is
+  STILL OPEN.** Sources:
+  https://www.fiercebiotech.com/biotech/chinas-henlius-carves-out-440m-t-cell-engager-deal-amberstone ·
+  https://www.fiercebiotech.com/biotech/genentech-inks-15b-bispecific-pact-fast-rising-earendil ·
+  https://www.biopharmadive.com/news/roche-dualitas-bispecific-antibodies-immune/830573/
+
 - **THE DEGRADER COLUMN JUST BECAME THE MOST ADVANCED ONE ON THE MUTANT-KRAS MAP, AND IT MOVES OUR COMPARATOR (added 2026-09-24
   Portfolio Watch item 6/closer; announced 2026-09-23).** **Astellas dosed the first patient in a randomised, open-label Phase 3 of
   SETIDEGRASIB — an investigational KRAS G12D-targeted PROTEIN DEGRADER — versus DOCETAXEL in previously treated advanced NSCLC
@@ -5108,7 +5219,7 @@ _Last update: 2026-09-12_
 - **Clasp target-density answer (added 2026-09-05):** a TCR-mimic engager sees peptide-HLA at hundreds-to-thousands of copies/cell, so the etentamig avidity trade is not available. What is CLSP-1025's stated approach to the potency/CRS trade-off, and does the development plan say it? Pair with the standing eligible-fraction item. (Avi.)
 - **Winnow control-architecture row, evidenced (added 2026-09-02):** assemble the actual comparison behind the new TPP row — IEC-HS and CRS incidence and grade distribution for autoimmune CD19 CAR-T (rap-cel, zola-cel, Cabaletta, Kyverna) against the published HLH/CRS rates for CD3 bispecifics (blinatumomab as the worst case). The claim we can defend is dose control, and it needs numbers behind it before an investor asks. (Jon Robbins + Eddie.)
 - **Does Winnow lymphodeplete? (added 2026-09-02):** the control-architecture argument assumes it does not. Confirm the dosing and premedication regimen in Winnow's own development plan before the sentence goes in a deck.
-- **Rapid-manufacturing platforms as the suspect variable (added 2026-09-02):** William Blair fingers the accelerated-expansion manufacturing common to rap-cel and zola-cel. Pull what is public on Novartis T-Charge and BMS NEX-T, and whether any autoimmune CAR-T using conventional manufacturing has reported IEC-HS at this rate — this determines whether the read is "CAR-T in autoimmunity" or "these two products."
+- **Rapid-manufacturing platforms as the suspect variable — LARGELY ANSWERED 2026-09-25, finish it (added 2026-09-02).** Kyverna's clean 12-month KYSA-8/KYSA-6 safety (no high-grade CRS/ICANS/IEC-HS) came with the sponsor naming BOTH variables affirmatively: a fully human CD28 co-stimulatory domain "designed for safety" and a "well-established, validated manufacturing process" — the mirror image of the William Blair hypothesis. Remaining work is the write-up, not the search: William Blair fingers the accelerated-expansion manufacturing common to rap-cel and zola-cel. Pull what is public on Novartis T-Charge and BMS NEX-T, and whether any autoimmune CAR-T using conventional manufacturing has reported IEC-HS at this rate — this determines whether the read is "CAR-T in autoimmunity" or "these two products."
 - **Alumis IFNGS-high numbers (added 2026-09-02):** no response rates were disclosed in any arm. Watch for the full LUMUS dataset at a medical meeting — specifically the IFNGS-high prevalence in the trial versus the expected ~60-80% in SLE, and the BICLA delta in that subgroup. That prevalence gap is the whole story and it is currently unquantified.
 - **GPR52 biomarker instrument choice (added 2026-09-02; sharpens the 08-31 open item):** the plan must state whether it is buying central receptor occupancy (PET tracer path) or a peripheral treatment-naive state readout, or both. Cost, feasibility and what each buys in a Phase 2 patient-selection hypothesis. Is there a Lieber cohort that could contribute a peripheral arm? (Hemaka + Yixuan.)
 - **Reverse-merger shell inventory (added 2026-09-02):** if this is now a real third exit door, who is maintaining the list of cash-carrying Nasdaq shells with dissolved pipelines, and what does diligence on one look like? Ask Leerink or Sofinnova for the counterparty screen they use. (Emily + Eddie.)
