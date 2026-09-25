@@ -4853,3 +4853,32 @@ Episode written and staged for batch TTS. `SKIP_TTS=1` was set, so per PIPELINE 
 
 One thing I noticed but did not touch: stale `2026-09-15-*.commit-msg` and `.rss-item.xml` stubs are still sitting in this show's `scripts/` (and in several sibling shows), which means a prior run's `publish_pending.py` didn't complete its cleanup.
 === 2026-09-24T03:12:14-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-25T02:53:08-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md batch mode I wrote the script plus the two stub files and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator does those.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-09-25-receptor-and-reason.md` (3,180 words, 9 items, ~15 min)
+- `podcasts/receptor-and-reason/scripts/2026-09-25-receptor-and-reason.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `podcasts/receptor-and-reason/scripts/2026-09-25-receptor-and-reason.commit-msg`
+- Ledger appended: 126 episodes, 9 keys for today
+
+**Candidate funnel**
+
+Sources
+- **bioRxiv details API** — SILENT EMPTY 200 on all six days in window; 8 retries at 20 s all empty. Total discovery outage.
+- **bioRxiv subject RSS** (`connect.biorxiv.org`, neuroscience / pharmacology&toxicology / bioinformatics / systems biology) — 120 items, 104 in-window, ~20 relevant. Worked as the discovery fallback.
+- **bioRxiv full text** — `www.biorxiv.org` returned 17-byte 429s for ~13 of 15 requests across 30/90/120 s backoffs, one worker. Only 2 PDFs obtained. **Six relevant preprints deferred unread** (not-yet-readable, transient): accumbal ISR-HCN2 cue motivation `752826`, thalamic 5-HT2A / tonic GABA-A `751734`, closed-loop LLM agent hit-to-lead `752921`, GPCR signalling-bias microswitch sampling `752090`, agentic gene annotation `753765`, MDD network topology `752576`.
+- **medRxiv subject RSS** (psychiatry / neurology / pharmacology) — 90 items, 46 in-window; 10 shortlisted, 7 fresh after dedup; full text 4-for-4.
+- **Journal RSS** — nature.com `npp` / `mp` / `neuro` / `nbt` / `natmachintell` all fetched (direct curl + Safari UA + `-L`); 6 of 8 NPP and 2 Biological Psychiatry items already shipped.
+- **Crossref ISSN sweep** — Biol Psychiatry, BP:CNNI, IJNP, PNP-BP, Drug Discovery Today, CPT, npj Digital Medicine, Briefings in Bioinf, Cell Systems.
+- **arXiv** — API 406'd twice (zero-byte); shared cache `/tmp/ai-nuggets-arxiv-cache.xml` absent. Fell back to `arxiv.org/list/{q-bio.QM,q-bio.NC,cs.MA}/recent` HTML; the two on-target items (`2609.27234`, `2609.27729`) were both shipped 09-24.
+- **Failed/blocked:** `r.jina.ai` egress Cloudflare-blocked for nature/wiley/biorxiv (5.8 KB 403s); Wiley blocked on HTML, pdfdirect and WebFetch; Psychiatric Times 403 on the homepage; Elsevier full text closed; chemRxiv nothing in-window; ACNP/SOBP/ECNP no in-window announcements.
+
+Dedup: 42 + 10 candidates → 30 + 7 fresh (14 already shipped, 1 title match under a different DOI).
+
+**Chosen (9)** — P2X7 antagonism potentiating ASMs in human resected epileptic tissue `biorxiv:2026.09.18.752730` ✓lead · 20-yr schizophrenia subcortical volumes × normative neurotransmitter maps `medrxiv:2026.09.21.26363537` ✓ · resilience-as-residual in MACS `10.1038/s41380-026-03897-6` ✓ · menopause HT by formulation × APOE4 `medrxiv:2026.09.16.26363120` ✓ · patch nonwear in digital-medicine aripiprazole `medrxiv:2026.09.21.26363541` ✓ · PMxAgent `10.1002/psp4.70325` ✓ · LitBench `medrxiv:2026.09.17.26363288` ✓ · chatbot safety router for OUD `10.1038/s41746-026-03288-9` ✓ · GENERATE autoimmune-encephalitis recommendations `10.1038/s41380-026-03871-2` ✓
+
+Full text read in full for eight of nine. **PMxAgent is abstract-only** — Wiley is Cloudflare-blocked on every route and there is no PMC copy despite gold OA; it is kept as a short late-episode item and the script says so out loud to the listener.
+
+One correction worth flagging: I fetched and fully drafted a section on the CNS4 multispecies NMDA-modulator preprint before catching that it shipped on 09-21. `shipped_keys.py` had flagged it correctly in the batch run — I had built my fetch list off the readability probe instead of off the filter output. I cut it, re-ran the *final* roster through the filter (9/9 fresh), and replaced it with the menopause-HT paper.
+=== 2026-09-25T03:17:33-07:00 done  receptor-and-reason (exit 0) ===
