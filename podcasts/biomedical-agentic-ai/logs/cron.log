@@ -4892,3 +4892,35 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus
 
 Note: `scripts/shipped_keys.py biomedical-agentic-ai` reports **0 ledger keys from 0 episodes** — this show's `state/shipped.jsonl` is empty, so the dedup check above was done by hand against the last 19 scripts. Worth fixing separately if the ledger is meant to be populated.
 === 2026-09-24T02:17:52-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-25T02:03:06-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, touch `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Published:** `2026-09-25-genome-skeptic-orchestration-versus-adjudication` (909 words, under the 1150 cap)
+
+**Pick:** "AI Models Excel at Orchestration but Falter at Biological Judgment: Findings from an Agentic Gene Annotation Study" — bioRxiv, posted 2026-09-24, University College Cork. Full text read (18-page PDF). A tet(A)/tet(B) annotation framework that splits workflow control from biological adjudication: four controllers all hit 18/20 while the LLM cut follow-up analyses 32%/47%, but handed its own checksum-identical evidence record as final judge it fell to 11/20, specificity 10/10 → 3/10, McNemar P = 0.016 — converting nine ABSENT calls to UNRESOLVED, seven already correct, and fixing neither real rule error.
+
+### Candidate funnel
+
+**bioRxiv** — details API in silent-empty-200 outage; day-by-day sweep retried ~25 min and hung on 2026-09-25 (no content yet), killed by PID. Fell back to the four per-subject `connect.biorxiv.org` RSS feeds (bioinformatics, genomics, systems biology, pharmacology): 117 items, 14 keyword hits. Shortlist:
+- **Genome Skeptic — orchestration vs. biological judgment** `10.64898/2026.09.23.753765` ← **CHOSEN**
+- Cell-Lens: LLM reasoning at single-cell resolution `…752842`
+- Closed-loop LM agent for hit-to-lead optimization `…752921` — too close to AssayLoop (shipped 09-11)
+- Speciesformer cross-species generative virtual cell `…752128`
+- AI-ready compositional framework for mechanistic aging `…753641`
+- ISP Platform / Geneformer in-silico perturbation `…752497`
+
+**arXiv** — shared cache absent; API 406'd (known), used `/list/<cat>/recent?show=2000` HTML. 1145 items parsed across 09-22..09-25, 39 biomedical-agentic hits. Shortlist after dedup (4 already shipped: 2609.24620, .27234, .27349, .27883):
+- BaseCamp — agentic framework for DNA sequencing pipelines `2609.28557` — **disqualified: entire evaluation is labeled placeholders** (Tables 2–5). Used only as an unevaluated architectural contrast in the script.
+- PRAXIS-VirtualCell `2609.29221` — real, but adjacent to yesterday's CellAudit
+- Clinical KGs for chest X-ray device reasoning `2609.29536`; ScholarStack `2609.23735`; TCMaster KG `2609.25712`; ChatT2 `2609.25620`
+
+**PubMed** — 954 hits/5d, 300 fetched, 109 past keyword filter, nearly all spurious ("therapeutic agent", "clearing agent"). Best: RexDrug (42784491), RADAR (42778754). None competitive.
+
+**ChemRxiv** — WebSearch; no in-window (4-day) biomedical-agentic item.
+
+**News/product** — nothing in the 3-day window; the NVIDIA/SciencePro items are older.
+
+**Funders** — ARPA-H in-window items (09-22 CIRCLE, 09-24 BoSS) aren't AI; the ADVOCATE clinical-AI launch is 09-09, out of window. **nih.gov blocked this IP** (3,860-byte block page); NSF/HHS not reached — recorded as the day's source gap.
+
+One flag for the orchestrator: the pre-commit URL hook queries the bioRxiv details API, which is currently returning empty 200s. If it fails the commit, the paper URL is nonetheless verified — I downloaded the 850 KB `.full.pdf` from that exact path, and the DOI prefix `10.64898/` is confirmed inside the PDF itself.
+=== 2026-09-25T02:12:10-07:00 done  biomedical-agentic-ai (exit 0) ===
