@@ -3497,3 +3497,40 @@ Substantive shortlist:
 
 Dedup checked: no prior episode on Kyverna, Earendil, Amberstone, Henlius or Elevar; the two prior files mentioning Kyverna (2026-06-24, 2026-07-18) do so only in passing lists.
 === 2026-09-25T02:51:44-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-26T02:43:09-07:00 start justice-biotech-brief ===
+Episode published (SKIP_TTS mode — script + both stubs written; TTS, R2 publish, feed edit and commit are the orchestrator's job).
+
+**Picked:** Ramantamig (JNJ-5322), BCMA×GPRC5D×CD3 trispecific — IMS 2026 abstract OA-70, presented Wednesday in Glasgow, recap published 2026-09-24.
+
+Files:
+- `podcasts/justice-biotech-brief/scripts/2026-09-26-ramantamig-jnj-5322-trispecific-outpatient-step-up-infections.md`
+- `...rss-item.xml` (XML validated)
+- `...commit-msg`
+
+**Why it beat the field:** trispecific TCEs are one of Justice's three named beats, and this is the direct payoff to the 09-15 GSK/Chimagen episode, where the show argued an avidity gate spares tissue carrying *one* antigen but normal plasma cells carry *both* — so on-target hypogammaglobulinemia is structurally unfixable by CD3-arm engineering. That number is now in: infections 80.4%, grade 3/4 25.0% across all 56 RP2D patients. The episode leads on the schedule (one 5 mg step-up, then 100 mg SC monthly, 93% of step-ups given outpatient) rather than the 93.6% ORR, argues efficacy has stopped discriminating in this class, and reads the 230-patient randomized placebo-controlled tocilizumab-prophylaxis trial as the sponsor admitting deliverability is the gating question.
+
+---
+
+### Candidate funnel
+
+**bioRxiv** — details API in silent-empty-200 mode all run (8 retries × 20s on 09-24 alone, 0 bytes each; `www.biorxiv.org` 200 throughout, so API subdomain only). Fell back to `connect.biorxiv.org` per-subject RSS, 7 feeds, all 200. 19 on-target matches after keyword filter; nothing in the 2-day window beat the IMS item:
+- Quantitative Systems Pharmacology Model for Trop-2 ADC in TNBC — `10.64898/2026.09.20.752985`
+- Catamers: multi-specific therapeutics concatenating warheads on a DNA scaffold — `10.64898/2026.09.23.753027`
+- Low-dose radiopharmaceutical therapy enhances B7-H3 CAR T in metastatic neuroblastoma — `10.64898/2026.09.16.751528` (posted 09-16, outside window)
+- A Rationally Designed Transgene Drives CAR T Functional Persistence — `10.64898/2026.09.18.752754` (outside window)
+- B cells sustain tumor-specific CD4 T cells to promote PD-1 response — `10.64898/2026.09.18.751292` (outside window)
+
+**News / congress** — Fierce (JSON-LD ItemList, 10 items), BioPharma Dive (30 headlines), Endpoints front page + `/news/` stream (~75 headlines, bodies paywalled but `datePublished` reliable), Targeted Oncology IMS day-1 and day-2 recaps via r.jina.ai. Shortlist:
+- **Ramantamig (JNJ-5322) RP2D + outpatient dosing, IMS OA-70, 09-24 — CHOSEN**
+- Legend/J&J CARTITUDE-2 Cohort A 5-year data, 10/20 treatment-free at 60.7 mo (09-25) — strong, but it is the entirety of calibr-briefing's 09-26 spotlight today
+- Anito-cel vs cilta-cel MAIC, IMS day 1 (09-23) — outside window
+- Mezigdomide + elranatamab, 100% ORR n=13, IMS day 1 (09-23) — used as a supporting beat inside the episode
+- Cevostamab + pom/dex CAMMA 1 extended follow-up (09-23) — cevostamab already shipped 2026-07-24
+- Henlius–Amberstone $440M pH-switch TCE deal (09-24); Genentech–Earendil $55M upfront bispecifics (09-25) — deal news, no data
+
+**Policy / funders** — arpa-h.gov/news 200, nsf.gov/news 200, neither on-beat. nih.gov/news-events/news-releases **403** (5,480-byte block, known failure mode) — one source lost, no retry value.
+
+**Source failures worth logging:** api.biorxiv.org silent-empty 200 (worked around via connect RSS); nih.gov 403; targetedonc.com 403 to curl+WebFetch (worked around via r.jina.ai); ashpublications.org now Cloudflare-challenged *even through jina* (worked around via PubMed/PMC — full Blood preclinical paper retrieved from PMC13000934).
+
+Memory updated: run notes + four reusable spines appended to the show's run log, a new `reference_congress_recaps_via_jina.md` written and indexed, and the weekend-gap memory corrected to make the zero-net-new rule Sunday-specific.
+=== 2026-09-26T02:52:44-07:00 done  justice-biotech-brief (exit 0) ===
