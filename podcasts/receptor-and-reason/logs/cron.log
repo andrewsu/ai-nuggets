@@ -4882,3 +4882,32 @@ Full text read in full for eight of nine. **PMxAgent is abstract-only** — Wile
 
 One correction worth flagging: I fetched and fully drafted a section on the CNS4 multispecies NMDA-modulator preprint before catching that it shipped on 09-21. `shipped_keys.py` had flagged it correctly in the batch run — I had built my fetch list off the readability probe instead of off the filter output. I cut it, re-ran the *final* roster through the filter (9/9 fresh), and replaced it with the menopause-HT paper.
 === 2026-09-25T03:17:33-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-26T02:53:09-07:00 start receptor-and-reason ===
+Episode written and staged for the batch pipeline (`SKIP_TTS=1`, so no TTS/R2/feed/commit from me — the orchestrator does those).
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-09-26-receptor-and-reason.md` — 3,344 spoken words (≈18 min at this show's rate), 11 items, 11 `Paper link:` lines, all URLs HTTP-200 verified
+- `…2026-09-26-receptor-and-reason.rss-item.xml` — validated XML, `__LENGTH__` / `__DURATION__` placeholders
+- `…2026-09-26-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, now 127 episodes
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| bioRxiv details API | 0 | 0 | **FAILED** — silent empty 200 on every day/cursor, 6 retries × 20 s each, second consecutive morning |
+| bioRxiv per-subject RSS (neuro, pharm/tox, bioinformatics, systems bio) | 210 | 98 in-window | fallback channel, carried the preprint tier |
+| medRxiv (API + `connect` subject feeds + `?subject=all`) | 0 | 0 | **FAILED** — API empty 200, all subject feeds return 16 bytes. No medRxiv tier today |
+| arXiv API | 0 | 0 | **FAILED** — HTTP 406, zero bytes |
+| arXiv `/list/<cat>/recent` HTML (q-bio, cs.AI, cs.CL, cs.MA) | 1,752 | 157 bio-relevant | fallback; 21–25 Sep covered |
+| Crossref, 19 journals (Nature/Elsevier/Wiley/Oxford/ACS) | ~170 | ~45 | IJNP and Briefings in Bioinformatics returned 0 |
+| Nature RSS (npp, mp) | 16 | 12 | |
+
+Dedup: **38 candidates → 19 fresh** (18 already shipped, 1 title-match under a different key). Final 11-item roster re-filtered: 11/11 clean.
+
+**Shortlist not picked** — `10.1016/j.neuropharm.2026.111196` (5-HT3A allosteric modulation by piperazine/hydroxyzine), `10.1016/j.molpha.2026.100156` (ICL2 folding in class A GPCRs), `10.1016/j.pnpbp.2026.111951` (cocaine/stress resilience): all **dropped on the full-text gate** — ScienceDirect captcha, no EPMC record, not yet in PubMed, no preprint, and Crossref carries no abstract, so not even abstract-level text was obtainable. `10.1038/s41746-026-03287-w` (causal RL in MCI) and `2026.09.20.752967` (AnewDDE) cut for space; AnewDDE also never rendered (4 jina attempts, 305-byte stubs) — **deferral, retest**.
+
+**Picked (all full-text read except two flagged tail items)** — Genome Skeptic orchestration-vs-adjudication `753765` (lead) · sequential ED triage `arXiv:2609.22904` · QSP + causal inference `10.1002/cpt.70486` · microswitch-guided sampling `752090` · α2A-AR scaffold enumeration `751790` · MetExPred `753060` · AetherXeno `752952` · ethanol-withdrawal time course `752895` · TRPM3 lateral amygdala `10.1111/bph.70669` · probiotic L-DOPA `10.1111/bph.70670` *(abstract-only, Wiley blocked jina on retry — flagged in the spoken script)* · SV2C/UCB-1A temperature `10.1021/acschemneuro.6c00482` *(self-contained abstract, tail item)*.
+
+One fetch note worth recording: `microswitch` failed four jina attempts because its PDF is 22 MB — direct `curl` with a Safari UA plus `mutool` got it in one shot once the concurrent jina worker had stopped.
+=== 2026-09-26T03:16:34-07:00 done  receptor-and-reason (exit 0) ===
