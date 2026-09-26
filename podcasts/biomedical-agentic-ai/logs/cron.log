@@ -4924,3 +4924,34 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote the script plus the tw
 
 One flag for the orchestrator: the pre-commit URL hook queries the bioRxiv details API, which is currently returning empty 200s. If it fails the commit, the paper URL is nonetheless verified — I downloaded the 850 KB `.full.pdf` from that exact path, and the DOI prefix `10.64898/` is confirmed inside the PDF itself.
 === 2026-09-25T02:12:10-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-26T02:03:08-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I skipped TTS, R2 publish, the `feed.xml` edit, and the commit — `publish_pending.py` does those after batch TTS.
+
+**Files written** (`podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-09-26-praxis-virtualcell-contracts-and-abstention.md` — 919 spoken words (cap 1150), no URLs/DOIs/markdown in the body
+- `...rss-item.xml` — validated as XML, `__LENGTH__`/`__DURATION__` placeholders in place
+- `...commit-msg`
+
+**Pick:** PRAXIS-VirtualCell (arXiv 2609.29221, posted 2026-09-25, Shandong University). Full text read via PDF + `mutool` (6,948 words, grep-checked for placeholders). The angle: the contribution is the runtime — contracts, provenance, evidence states, and runtime-enforced limits on what the agent may do — and the shared contract incidentally produced a result the field should sit with (a plain additive model beating GEARS in 25/30 Norman conditions, and 15/16 combinatorial ones, which is exactly what GEARS exists for).
+
+**Candidate funnel**
+
+Sources:
+- **bioRxiv details API — FAILED.** Silent empty-200 on all four days (09-23…09-26), 6 retries each with 20s backoff, all 0 bytes. Fell back to `connect.biorxiv.org` per-subject RSS (bioinformatics, genomics, systems_biology, pharmacology) → 120 items, 19 keyword hits, 8 in-window.
+- **arXiv — API 406 (both the listing query and `id_list`); cache `/tmp/ai-nuggets-arxiv-cache.xml` absent.** Fell back to `arxiv.org/list/<cat>/recent?show=2000` for cs.AI, cs.CL, cs.MA, q-bio → 976 unique in-window entries, 37 bio+agent title hits.
+- **PubMed** — 1,085 hits, 300 fetched, 166 survived keyword+spurious-match filtering; all noise for this show (med-chem "agents", clinical chatbots).
+- **ChemRxiv / news / funder pages** — not reached; the arXiv and bioRxiv-RSS shortlists already carried a clear winner with verified full text.
+
+Shortlist after discarding spurious matches:
+- **arxiv:2609.29221** PRAXIS-VirtualCell — agentic virtual-cell runtime — **CHOSEN**
+- bioRxiv `10.64898/2026.09.23.753765` AI Models Excel at Orchestration… — **excluded, this is Genome Skeptic, shipped 2026-09-25**
+- bioRxiv `10.64898/2026.09.22.753641` hallsim, AI-ready compositional aging framework — **deferred, full text unreadable** (jina 403 on `.full`, 17-byte 429 on `.full.pdf` direct and via jina; strong candidate, retest)
+- bioRxiv `10.64898/2026.09.20.752967` AnewDDE — agentic drug discovery engine, SPR-validated
+- bioRxiv `10.64898/2026.09.20.752837` MCseg — agent-guided workflow search, no-code segmentation
+- bioRxiv `10.64898/2026.09.19.752842` Cell-Lens — structured cell representation for LLM reasoning
+- bioRxiv `10.64898/2026.09.20.753054` OmicsResonance — LLM-assisted no-code scRNA-seq cloud platform
+- arxiv:2609.27883 False-science induction in autonomous scientific discovery
+- arxiv:2609.28850 RECLAIM — can agents reproduce ML paper claims (not biomedical)
+
+Two things worth flagging: this show's `state/shipped.jsonl` is **empty**, so `shipped_keys.py` passed all 13 candidates as fresh including yesterday's episode — a filename grep is the only working dedup here, and it's what caught it. And my arXiv listing parser mismatched ids to titles for two shortlisted papers (caught when the fetched abstracts didn't match); those two were dropped rather than cited. I saved both as memories.
+=== 2026-09-26T02:12:27-07:00 done  biomedical-agentic-ai (exit 0) ===
