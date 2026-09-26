@@ -4738,3 +4738,50 @@ Rejected after checking:
 - Biohaven/SK $795M, Novartis/Alteogen $3.2B, EU/Sanofi probe — stale (Aug 26, Sept 1, June 26)
 - NIH biomedical database tool, GSK PMCPA ruling — Fierce body unreadable, no alternate source found
 === 2026-09-25T02:35:02-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-26T02:23:08-07:00 start calibr-briefing ===
+Both episodes written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the two stub files per episode and did not run `gen_tts.py`, `publish_episode.sh`, edit `feed.xml`, or commit — `publish_pending.py` will do all four after batch TTS.
+
+**Files written (6):**
+- `scripts/2026-09-26-pharma-headlines.txt` (2,119 words) + `.rss-item.xml` + `.commit-msg`
+- `scripts/2026-09-26-myeloma-cure-definition-spotlight.txt` (1,975 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as valid XML with `__LENGTH__` / `__DURATION__` placeholders.
+
+**Spotlight:** the IMS/IMWG consensus definition of cure in multiple myeloma (Munshi, Glasgow, Sept 23) — 5 years off all therapy from last dose, ≥4 serial MRD-negative assessments at 10⁻⁶, negative functional imaging at both ends — set against Legend's Friday 5-year CARTITUDE-2 Cohort A readout (10/20 alive, progression-free and treatment-free). The analytical spine: Legend's data is strong but is *not* scored against the new bar, n=20 carries one secondary AML, and the same week produced an anito-cel MAIC at efficacy parity with materially lower CRS/ICANS/infection/NRM ahead of a Dec 23 action date, plus off-the-shelf engager data (etentamig CERVINO, mezigdomide+elranatamab). Full text read for every element of the spotlight.
+
+---
+
+## Candidate funnel — calibr-briefing, 2026-09-26 (Saturday, covering Friday 09-25)
+
+**Sources swept**
+- Endpoints News RSS — 24 items, 22 dated Fri 09-25; all Friday items relevant-filtered → 13 substantive. Article bodies paywalled (sign-up wall at ~2KB).
+- Fierce Biotech / Fierce Pharma — index HTML 200 (847KB/842KB); RSS is a 5.6KB Cloudflare block. JSON-LD carried per-article `description` + full URLs; article bodies readable via `r.jina.ai`.
+- BioPharma Dive front page — 200, 30+ dated items scanned.
+- STAT — 200, index only (Plus paywall); 4 Friday items.
+- GEN, Clinical Trials Arena, BioSpace press releases — 200; CTA trial items mostly 09-22/23 (stale).
+- Targeted Oncology (IMS 2026 conference coverage) — direct curl = Cloudflare 5,488-byte block; `r.jina.ai` returned full bodies for all five day-recaps + the cure-consensus piece.
+- `r.jina.ai` TLS probe clean today (cert `*.jina.ai`, not Scripps-intercepted).
+- Failures: WebFetch 403 on targetedonc.com and fiercebiotech.com (jina worked instead). No source lost.
+
+**Shortlist (Fri 09-25 unless noted)**
+- IMS/IMWG consensus definition of cure in myeloma — targetedonc.com/view/global-experts-define-consensus-criteria-for-cure-in-multiple-myeloma — **CHOSEN (spotlight + headline 1)**
+- Legend 5-yr CARTITUDE-2 Cohort A — biospace.com/press-releases/legend-biotech-presents-carvykti-data… — **CHOSEN (spotlight + headline 1)**
+- Anito-cel vs cilta-cel MAIC (Sidana, IMS day 1) — targetedonc.com/view/ims-2026-recap-mezigdomide-elranatamab-anito-cel-linvoseltamab — **CHOSEN (spotlight)**
+- AbbVie etentamig CERVINO Phase 3 (IMS day 3) — targetedonc.com/view/ims-2026-day-3-recap-cervino-etentamig-milestone-iraklia-anito-cel — **CHOSEN (headline 6 + spotlight)**
+- Mirum zilurgisertib/Atebrioz FDA approval in FOP — fiercepharma.com/pharma/mirum-bags-fda-approval-ultra-rare-bone-lesion-disorder… — **CHOSEN (2)**
+- Welireg + Lenvima 2L ccRCC approval — fiercepharma.com/pharma/merck-eisai-welireg-lenvima-combo-lands-fda-nod… — **CHOSEN (3)**
+- Novo–Nanexa €1.165B PharmaShell — fiercebiotech.com/biotech/novo-inks-13b-nanexa-deal… — **CHOSEN (4)**
+- Nektar $90M jury verdict vs Lilly — endpoints.news/jury-awards-nektar-90m-in-suit-against-lilly/ — **CHOSEN (5)**
+- Endpoints 11 class of 2026 — endpoints.news/biotechs-best-startups-of-2026… — **CHOSEN (7)**
+- City Therapeutics S-1 (CTY) — endpoints.news/alnylam-alumni-led-rnai-biotech-city-therapeutics-files-for-ipo/ — **CHOSEN (8)**
+- NLM Linked Discoveries — fiercebiotech.com/research/its-actually-very-radical-nih-debuts-tool… — **CHOSEN (9)**
+- Lepu v. Su Zhang / China NewCo — fiercebiotech.com/biotech/pioneer-china-newco-model-sued-over-trade-secret-misuse-double-dealing — **CHOSEN (10)**
+- FDA substantial-evidence guidance, docket closed 09-22 — endpoints.news/pharma-industry-asks-fda-for-more-details-on-when-one-trial-is-enough/ — **CHOSEN (brief)**
+- Indivior/Addex split; Travere CEO transition; Lundbeck to Boston — **CHOSEN (brief)**
+- GEM2014MAIN 7-yr MRD-guided discontinuation, MILESTONE, MIDAS, DREAMM-9, ramantamig, CAMMA-1 (IMS day 2) — not used; day-2 material subordinate to the cure thread
+- Roche Xofluza generic licensing (STAT Plus) — dropped, body paywalled
+- Clywedog balomenib Phase 1b — dropped, thin
+- WHO director-general race; RFK Jr./NCHS measles counts — dropped, off-brief
+
+**Dedup:** every candidate grepped against `scripts/2026-09-1*.txt` and `scripts/2026-09-2*.txt`, and the final roster re-filtered. Basecamp Research and Enveda were excluded — both already shipped 09-24. City Therapeutics got a one-clause mention on 09-25 ("filed in the past week"); the S-1 itself is new, so it stays as a short item rather than a lead. Legend/Carvykti appeared 09-16 in a different context (no overlap with the 5-year data).
+=== 2026-09-26T02:35:59-07:00 done  calibr-briefing (exit 0) ===
