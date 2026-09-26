@@ -2905,3 +2905,45 @@ Shortlist after filtering (13 → dedup-clean, but **the URL filter passed two i
 
 Two caveats worth your attention: the Fierce article URLs 403 on HEAD requests (they GET fine — normal for that host), and the SEC 8-K link in item 1's sources 403s to scripted clients while resolving in a browser; I swapped the dead Kyverna IR link for the BioSpace press-release mirror, which returns 200.
 === 2026-09-25T02:29:30-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-26T02:13:08-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and stopped short of TTS, R2 publish, feed edit, and commit — `publish_pending.py` owns those.
+
+**Files produced** (all under `podcasts/blackbird-brief/`):
+- `scripts/2026-09-26-portfolio-watch.md` — 2,057 spoken words (~10.5 min at the show's measured 190 wpm), plus full show notes
+- `scripts/2026-09-26-portfolio-watch.rss-item.xml` — validated XML, `__LENGTH__` / `__DURATION__` placeholders
+- `scripts/2026-09-26-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — 6 keys appended (79 episodes, 429 unique keys)
+- `memory/blackbird-portfolio.md` — 5 in-place edits, no appended run log
+
+---
+
+## Candidate funnel — Portfolio Watch, window 2026-09-23 → 2026-09-26
+
+**Sources swept**
+- BioPharma Dive front page — 200, ~31 dated headlines, 8 survived relevance
+- Endpoints News index — 200, ~70 article URLs; bodies paywalled (`access_level: paid`), dates + descriptions readable from embedded JSON. Used as a *pointer*, never as a source of record
+- Fierce Biotech / Fierce Pharma — index 200, JSON-LD ItemList carried headlines but **no dates**; articles not opened
+- BioSpace front page — 200, ~50 article slugs with per-article dates; **BioSpace `/press-releases` index returned no parseable links** (known failure mode, worked around via front page + direct PR URLs)
+- GEN — 200 but front page interleaves undated year-old items (known); nothing used
+- BioBuzz — front page is JS-rendered, exposed only one article link; that item (Xcellon/NextCure) dated **2026-08-10**, out of window
+- regulations.gov API (`DEMO_KEY`) — 44 comments on Docket FDA-2019-D-4964; 5 comment PDFs downloaded and text-extracted with `mutool`
+- SEC EDGAR — Nektar 8-K pulled directly
+- Targeted Oncology + OncLive — **403 Cloudflare on both curl and WebFetch**; CERVINO grounded on AbbVie's own release + OncoDaily full text instead
+
+**Shortlist after discarding off-thesis matches** (dedup filter: 12 candidates → 12 fresh by key/title; 2 additionally rejected by direct script-grep, which the ledger missed because they had re-entered under different URLs)
+
+| Item | Date | Outcome |
+|---|---|---|
+| FDA revised substantial-evidence draft guidance + closed comment record (Docket FDA-2019-D-4964) | guidance 06-24, comments closed 09-22, coverage 09-25 | **CHOSEN — lead** |
+| Legend/J&J Carvykti 5-yr CARTITUDE-2 Cohort A, IMS Glasgow | 09-25 | **CHOSEN — item 2** |
+| AbbVie CERVINO Phase 3 plenary, IMS Glasgow | 09-25 | **CHOSEN — item 2** (closes half of the 09-05 open action) |
+| Addex regains GABA-B PAM portfolio from Indivior | 09-25 | **CHOSEN — item 3** |
+| Nektar v. Lilly, $90M jury verdict on rezpeg | verdict 09-24, 8-K 09-25 | **CHOSEN — item 4/closer** |
+| Ionis/Otsuka ulefnersen FUSION Ph3 in FUS-ALS | 09-22/23 | Rejected — **already shipped 09-23**; used as context only |
+| Grail Galleri FDA panel vote | 09-23 | Rejected — **already shipped 09-24 and 09-25** |
+| Xcellon acquires NextCure Beltsville cGMP facility | 08-10 | Rejected — out of window |
+| Endpoints "ultra-rare needs a platform, not a rare disease" | 09-25 | Rejected — paywalled, full text unreadable (eligibility gate) |
+| Merck/EyeBio remigromig DME; Novo–Nanexa $1.3B; Endpoints 11 startup list | 09-24/25 | Rejected — no line to a Blackbird program |
+
+**Two notes for the next run.** The bare ledger passed all 12 candidates as fresh, including two items shipped in the last 48 hours under different URLs — the script-grep cross-check is what caught them, and it should stay mandatory. Separately, a stale stub pair for `2026-09-15-portfolio-watch` (`.rss-item.xml` + `.commit-msg`) is still sitting in `scripts/` with no matching `.md`; `publish_pending.py` never cleaned it. I left it alone, but it will keep showing up as untracked until someone removes it.
+=== 2026-09-26T02:31:47-07:00 done  blackbird-brief (exit 0) ===
