@@ -3181,3 +3181,33 @@ Shortlist (✅ = used):
 
 One reporting caveat carried into the script: the size of TypeSafe's prior round is inconsistent across secondary coverage ($200M round vs. $200M valuation), so I anchored only on the corroborated span — $40M seed out of stealth Sept 15, raising >$1B at >$10B ten days later.
 === 2026-09-25T02:45:35-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-26T02:33:09-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Episode:** `2026-09-26-the-people-with-the-data` — 2,653 spoken words (≈14 min at this show's observed rate), 13 verified source lines, all full text read.
+
+**Candidate funnel**
+
+Sources scanned:
+- **Hacker News front page** (Algolia, 31 items) — 8 AI-relevant, 4 shortlisted
+- **Hugging Face daily papers** (25 items) — 3 on-topic (world models, LLM superposition), none beat the discourse items
+- **TechCrunch AI category** (36 items, Sep 23–25) — 7 substantive, 4 used
+- **Latent Space RSS** (10 recent) — no new AINews issue today (Sep 25 issue already used on 09-25); the Sep 25 OpenRouter episode was new
+- **Terence Tao blog** — 2 new posts (Sahai guest post; ICIAM statement)
+- **X/Twitter** — not attempted; unreadable from this host (known), substituted HN + primary docs per standing practice
+- **WhynotTV** — skipped, feed known stale
+
+Shortlist:
+- ✅ Swarm Traces, "Revealing the details of how OpenAI agents hacked Hugging Face" (480 pts) — **lead**
+- ✅ Amit Sahai on Tao's blog, "We're gonna need a lot more mathematicians" (124 pts) — **Pulse 2**
+- ✅ Akamai $11.6B / Anthropic; DC-circuit supply-chain ruling (443 pts); founders' 50.1% voting structure — **Money Moves**
+- ✅ Latent Space, OpenRouter → Stripe with Atallah + Midha — **Deep Cut**
+- ✅ TechCrunch: Transluce database attacks; 53 user images posted — supporting convergence
+- ❌ Ollaya / "Jev Plays Pokémon" / Jev wrapper (451, 199, 63 pts) — Jev thread covered 09-16, 09-20, 09-25; nothing new
+- ❌ "Plan mode is dead" (317) — dev-tools opinion, thin on new data
+- ❌ Microsoft Copilot reboot (Bloomberg, 123) — paywalled, no primary source
+- ❌ "Training Object Permanence in World Models" (190 HF upvotes) — on-topic but belongs to Ollie's papers show
+- ❌ Nscale $3.36B, Crusoe/Boom, Lovable $600M ARR — real but less strategically revealing than the Anthropic cluster
+
+One sourcing note worth flagging: the published Latent Space transcript has its speaker labels transposed across the token-fraud segment (it attributes OpenRouter's own trust-and-safety numbers to Midha and Kleiner/Midjourney biography to Atallah). I attributed per the episode's own show notes, which credit the fraud thesis to Midha, and recorded the discrepancy in the script's Source line.
+=== 2026-09-26T02:41:27-07:00 done  jinglin-ai-pulse (exit 0) ===
