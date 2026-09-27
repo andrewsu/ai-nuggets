@@ -4911,3 +4911,38 @@ Dedup: **38 candidates → 19 fresh** (18 already shipped, 1 title-match under a
 
 One fetch note worth recording: `microswitch` failed four jina attempts because its PDF is 22 MB — direct `curl` with a Safari UA plus `mutool` got it in one shot once the concurrent jina worker had stopped.
 === 2026-09-26T03:16:34-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-27T02:53:09-07:00 start receptor-and-reason ===
+Clean. Episode written.
+
+**Published (SKIP_TTS mode):** `podcasts/receptor-and-reason/scripts/2026-09-27-receptor-and-reason.md` plus the `.rss-item.xml` and `.commit-msg` stubs. Ledger appended (10 keys, 128 episodes). No TTS/R2/feed/commit per the SKIP_TTS branch — `publish_pending.py` picks those up.
+
+**Candidate funnel**
+
+Sources scanned:
+- **bioRxiv details API — FAILED.** Silent empty 200 for a 4th consecutive morning (6 retries × 20 s, all 0 bytes). Substituted the per-subject `connect.biorxiv.org` RSS feeds (neuroscience, pharmacology & toxicology, bioinformatics, systems biology): 120 items, 09-11→09-27.
+- **medRxiv** — recovered after yesterday's outage. psychiatry + pharmacology feeds: 16 items in window.
+- **arXiv API — FAILED** (HTTP 406, zero bytes; shared `/tmp` cache absent). Fell back to `arxiv.org/list/q-bio/recent?show=2000`: 86 items, 09-21→09-25.
+- **Crossref by ISSN** (`from-created-date:2026-09-20`): Neuropharmacology 7, Biological Psychiatry 6, BP:CNNI 1, PNPBP 10, Drug Discovery Today 9, Cell Systems 2, IJNP 0, Brief Bioinform 0.
+- **Nature-family RSS**: npp 8, Molecular Psychiatry 8, npj Digital Medicine 8, Nat Biotech 8.
+- **Wiley/ASCPT**: CPT:PSP 6, CPT 95.
+- Psychiatric Times skipped (uniform Cloudflare block from this host).
+
+Dedup: 56 candidates → 39 fresh (14 already shipped, 3 title-matches under different DOIs). Full text opened for 6 of 10 picks; 4 Elsevier items are abstract-only (cell.com/ScienceDirect blocked, none in Europe PMC — abstracts from PubMed: [10.1016/j.pnpbp.2026.111943](https://doi.org/10.1016/j.pnpbp.2026.111943), [111950](https://doi.org/10.1016/j.pnpbp.2026.111950), [111951](https://doi.org/10.1016/j.pnpbp.2026.111951), [10.1016/j.neuropharm.2026.111196](https://doi.org/10.1016/j.neuropharm.2026.111196)) and are kept to short mentions with the limitation stated on air.
+
+Shortlist (★ = selected):
+- ★ Clozapine utilisation, 42 countries — medRxiv 2026.09.17.26363131 — **lead**
+- ★ Atypical antipsychotics in paediatric ASD, Saudi FDA — medRxiv 2026.09.22.26363643
+- ★ CYP2C19/CYP2D6 and SRI outcomes in OCD — PNPBP 111943
+- ★ Ketamine symptom-level/network analysis, pooled RCTs — PNPBP 111950
+- ★ Cocaine disrupts stress resilience, NAc — PNPBP 111951
+- ★ 5-HT3A allosteric modulation by piperazine/hydroxyzine — Neuropharm 111196
+- ★ Ion-channel mutation-compensating interventions (Levin lab) — bioRxiv 2026.09.20.753002
+- ★ AnewDDE (ByteDance/Anew Labs) — bioRxiv 2026.09.20.752967
+- ★ Cell-Lens — bioRxiv 2026.09.19.752842
+- ★ LLM perplexity in childhood-onset psychosis — medRxiv 2026.09.17.26363314
+- LLMs as judges for clinical generative AI — npj Dig Med s41746-026-03248-3 — **cut for runtime**, abstract-only, eval thread already carried twice; not added to the ledger, so it stays a live candidate
+- Not selected: MCseg, OmicsResonance, PRAXIS-VirtualCell, LSD-pipeline, Speciesformer, SPECTRA, PerturbBridge, Pop-Corn, RBP4/Stargardt antagonist, Trop-2 ADC QSP, PBPK/QSP as regulatory NAMs, CYP3A metabolomic biomarkers, peptide-ADMET AI review
+- Dropped as already shipped: FAAH PTSD PET, GluN2D Fragile X, ketamine MRS meta-analysis, prochlorperazine D2 occupancy, nicotine PET, KOR/morphine withdrawal, amygdala focused ultrasound, DBS-for-OCD forecasting, varenicline/ADRD, patch nonwear, schizophrenia neurotransmitter co-localisation, PMxAgent, physics-informed networks tutorial, Boltz-2 virtual screening
+
+One note for you: `scripts/fetch_preprint.py`'s primary channel (r.jina.ai) returned ~400-byte proxy errors on three bioRxiv URLs today; plain `curl` with a Safari UA plus `mutool` recovered two of them, and the third needed a 20 s backoff after a 17-byte 429. Worth knowing the helper's channel-1 failure isn't a render verdict.
+=== 2026-09-27T03:14:13-07:00 done  receptor-and-reason (exit 0) ===
