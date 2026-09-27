@@ -1,0 +1,8 @@
+Script body: 12351 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2957 chars) -> 142.6s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2857 chars) -> 119.1s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2805 chars) -> 116.1s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2817 chars) -> 115.4s ✓
+  [mistral:en_paul_neutral] chunk 5/5 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/5 (911 chars) -> 46.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-09-27-abbvie-juvmo-tavapadon-parkinsons-spotlight.mp3 [mistral] 5,040,422 bytes, 630.0s

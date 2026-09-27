@@ -4785,3 +4785,44 @@ Both RSS stubs parse as valid XML with `__LENGTH__` / `__DURATION__` placeholder
 
 **Dedup:** every candidate grepped against `scripts/2026-09-1*.txt` and `scripts/2026-09-2*.txt`, and the final roster re-filtered. Basecamp Research and Enveda were excluded — both already shipped 09-24. City Therapeutics got a one-clause mention on 09-25 ("filed in the past week"); the S-1 itself is new, so it stays as a short item rather than a lead. Legend/Carvykti appeared 09-16 in a different context (no overlap with the 5-year data).
 === 2026-09-26T02:35:59-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-27T02:23:08-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped after the scripts + stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit. `publish_pending.py` will do those after batch TTS.
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-09-27-pharma-headlines.txt` (1,780 words) + `.rss-item.xml` + `.commit-msg`
+- `podcasts/calibr-briefing/scripts/2026-09-27-abbvie-juvmo-tavapadon-parkinsons-spotlight.txt` (1,943 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as valid XML; scripts contain no URLs, DOIs, markdown structure, or pseudo-headings.
+
+**Candidate funnel**
+
+Sunday 2am run — no net-new weekend wire, so the sweep ran over Friday's tape plus uncovered Wed–Fri items, per the weekend-gap playbook.
+
+| Source | Scanned | Survived relevance + dedup |
+|---|---|---|
+| BioPharma Dive front page | 31 | 1 |
+| Fierce Biotech / Fierce Pharma front pages | 22 | 0 net-new (Henlius/Amberstone already shipped 09-25) |
+| Endpoints front page | ~60 | 1 fresh (the rest were months-old interleaves or already shipped) |
+| BioSpace press releases | 22 | 4 |
+| Clinical Trials Arena news index | ~55 | 0 net-new |
+| GEN front page | — | 0 usable (no article anchors, known) |
+
+Shortlist after discarding stale and already-shipped items:
+- **CHOSEN (lead + spotlight)** — FDA approves AbbVie's tavapadon/Juvmo for Parkinson's — https://endpoints.news/fda-approves-abbvie-next-gen-dopamine-therapy-for-parkinsons/
+- **CHOSEN** — Fate Therapeutics $15M CIRM CLIN2 grant, RECLAIM-LN / FT819 in lupus nephritis — https://www.biospace.com/press-releases/fate-therapeutics-announces-receipt-of-california-institute-for-regenerative-medicine-cirm-clin2-grant-to-advance-reclaim-ln
+- **CHOSEN** — Nutshell Therapeutics NTS231, AI-designed covalent KEAP1 glue degrading NRF2, IND cleared — https://www.biospace.com/press-releases/second-nrf2-degrader-enters-clinical-development-nutshell-therapeutics-nts231-received-fda-ind-clearance
+- **CHOSEN** — MHRA approves Roche's Gazyvaro in SLE on ALLEGORY — https://pharmatimes.com/news/roche-welcomes-mhra-approval-of-gazyvaro/
+- **CHOSEN** — BioPharma Dive weekly charts: Novo's collapse + AI megarounds — https://www.biopharmadive.com/news/novo-nordisk-share-price-ai-drug-discovery/831366/
+- **CHOSEN** — Baby KJ's bespoke base editor cost $1.65M (Urnov, Oxford) — https://endpoints.news/baby-kjs-gene-editing-drug-cost-1-65m-to-make-fyodor-urnov-says/
+- **CHOSEN** — MarWell Bio DARPA NODES contract, sequence-to-function — https://www.biospace.com/press-releases/marwell-bio-awarded-darpa-research-contract-under-nodes-program-to-advance-the-next-generation-of-predictive-biology
+- **CHOSEN (brief)** — Novotech to acquire Agilex Biolabs; AustinPx KinetiSol AMT designation; Adaptive MRD vs. the new IMS cure definition
+- Dropped — Endpoints "ultra-rare disease" feature (09-25): paywalled past the lede, no substantive body
+- Dropped — Henlius/Amberstone $440M pH-switchable TCE deal: already shipped 09-25
+- Dropped — Enveda $311M / Basecamp $140M as standalone items: already shipped 09-24 (folded into the aggregate AI-funding item instead)
+
+Spotlight full text: read the ICER revised evidence report in full (3.2 MB PDF, extracted via `mutool`), plus the Medscape clinical feature with Fernandez/Okun quotes, NeurologyLive's TEMPO-4 interim, and Practical Neurology's TEMPO-3 write-up.
+
+Two notes for you:
+- **The Juvmo label is not published yet.** openFDA, DailyMed and Drugs@FDA all returned nothing as of Saturday night, and AbbVie issued no press release — so the script states the monotherapy-vs-adjunct wording is unconfirmed rather than asserting it. Worth a Monday check.
+- **Stale stubs in the tree:** `2026-09-15-pharma-headlines.*` and `2026-09-15-gsk-chimagen-trispecific-tce-spotlight.*` stubs are still sitting in `scripts/` from an earlier run that `publish_pending.py` never cleaned up. I left them alone, but they'll need clearing or they may confuse a future orchestrator pass.
+=== 2026-09-27T02:38:41-07:00 done  calibr-briefing (exit 0) ===
