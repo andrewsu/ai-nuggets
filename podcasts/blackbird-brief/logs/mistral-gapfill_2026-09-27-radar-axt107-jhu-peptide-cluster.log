@@ -1,0 +1,6 @@
+Script body: 10426 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2947 chars) -> 149.7s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2899 chars) -> 121.7s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2988 chars) -> 157.1s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (1589 chars) -> 71.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/blackbird-brief/episodes/2026-09-27-radar-axt107-jhu-peptide-cluster.mp3 [mistral] 4,385,480 bytes, 548.2s

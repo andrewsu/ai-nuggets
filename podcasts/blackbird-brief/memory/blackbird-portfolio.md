@@ -199,6 +199,26 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     **SOURCING CAVEAT: the BioSpace write-up's "$3M biotech sector" baseline is an error the outlet hedges; the ¥3.5T / ~$520B 2030 target is the
     figure reported consistently by Caixin, Xinhua and Global Times.** Source:
     https://www.biospace.com/business/china-plans-to-transform-3m-biotech-sector-into-522b-powerhouse-by-2030
+  - **AND THE PERSON WHO INVENTED THE STRUCTURE IS NOW IN COURT OVER HOLDING TWO COMPETING BD MANDATES AT ONCE — A CONFLICT STRUCTURALLY
+    AVAILABLE TO US (added 2026-09-27 Portfolio Watch item 2; reported 2026-09-25/26; complaint filed July 2026).**
+    **Lepu Medical Technology (Beijing) Co., Ltd. v. Zhang**, federal court in New York (**E.D.N.Y., 2:26-cv-05495**). Defendant **Su Zhang**
+    is the BD consultant widely credited with **pioneering the biopharma China "NewCo" model**; her firm is **CoDevCo**. Her standing comes
+    from the **Hengrui GLP-1 out-licence into a newly formed vehicle that became Kailera Therapeutics, with Hengrui taking equity** — the
+    template every rung above copied. **ALLEGATIONS (untested): trade-secret misappropriation, corporate double-dealing and breach of
+    fiduciary duty — that while her firm held the mandate to run Lepu's Western partnership outreach on GLP-1 weight-loss candidates, she was
+    simultaneously serving as chief business officer of BrightGene Pharmaceutical, a direct competitor.** Relief sought: **return of a
+    $500,000 retainer**, disgorgement of benefits, injunctions over trade secrets. Zhang's firm first pursued transaction-based success fees
+    through **arbitration in Singapore**.
+    **⇒ READ (Eddie Cherok + Maisha Rahman) — IT IS ABOUT OUR PAPER, NOT THEIRS.** Blackbird's operating model puts **Venture Partners on
+    multiple projects, Fellows on diligence, and outside advisors on outreach** — people who by design sit near more than one opportunity.
+    The value in that structure is the network; so is the risk. **The allegation is not that anyone stole a molecule — it is that one person
+    held the outreach mandate for two companies chasing the same buyers in the same indication. That conflict arises naturally in any studio
+    running two programmes in one therapeutic area, and it is prevented by paperwork, not by good intentions.**
+    **STANDING ACTION: confirm that VP and consultant agreements (a) NAME the competing-mandate case, (b) DEFINE who adjudicates that a
+    conflict exists, and (c) SPECIFY what happens to fees earned on the other side.** Sits alongside the 09-26 downside-structure item
+    (Addex reversion / Nektar v. Lilly): both are about what is written down before the relationship changes. Sources:
+    https://www.fiercebiotech.com/biotech/pioneer-china-newco-model-sued-over-trade-secret-misuse-double-dealing ·
+    https://dockets.justia.com/docket/new-york/nyedce/2:2026cv05495/550868
 
 - **A NEW CLASS OF FUNDER IS RUNNING OUR INSTRUMENT AT 40% OF OUR FOUNDING GRANT IN ONE CHECK — AND BUYING OPEN DATA INSTEAD OF IP (added
   2026-09-20 Portfolio Watch item 3; announced 2026-09-15).** The **OpenAI Foundation** — the nonprofit parent governing OpenAI Group PBC — gave
@@ -699,6 +719,20 @@ uniQure/AMT-130 external-control point, 09-04) and is fragile when the benchmark
 its natural-history source agreed with the agency up front, the same ask now standing in the Aletira pre-IND.** Sources:
 https://www.fiercebiotech.com/biotech/electra-aims-342m-ipo-power-inflammatory-drugs-push-through-phase-3 ·
 https://clinicaltrials.gov/study/NCT05416307
+  - **THE OTHER LANE, AND OUR POSITION ON IT IS "NO" — WRITE IT DOWN BEFORE A BOARD MEMBER ASKS (added 2026-09-27
+    Portfolio Watch item 4; announced 2026-09-25).** **Ocugen (Nasdaq: OCGN) received provisional approval + priority
+    designation from the LARTA Board in THE BAHAMAS — the Longevity and Regenerative Therapies Act — for OCU400**, a
+    modifier gene therapy for **retinitis pigmentosa**, broad indication, paediatric to adult. **Phase 3 ongoing; topline
+    guided 1Q 2027; BLA planned 2Q 2027.** Expanded-access programme targeting **first patient treated within 90 days of
+    full board approval**. ⇒ A sovereign jurisdiction has written a statute letting a **pre-approval** regenerative therapy
+    reach patients ahead of any major regulator, and a Nasdaq-listed gene-therapy company is using it.
+    **READ (Anthony Accorsi + Jon Robbins): Aletira's profile — single administration, monogenic sensory-organ disorder,
+    small, motivated, internationally mobile patient population — is exactly what this lane attracts, so have the answer
+    drafted. CANDID POSITION: it is not a financing strategy and it carries a cost. Patients treated outside a controlled
+    study cannot be in your pivotal, and an offshore commercial programme running before a US filing is a fact the reviewer
+    will know.** The contrast with the Electra template above is the whole point: **acceleration INSIDE the system
+    (Breakthrough + Fast Track + PRIME + single-arm pivotal + hard endpoint) versus stepping outside it.** Source:
+    https://ir.ocugen.com/news-releases/news-release-details/ocugen-receives-provisional-approval-and-priority-designation
 
 **GOVERNANCE — WHO HAS AUTHORITY TO STOP A PROGRAMME: the 2026-09-07 action now has a template at OUR scale, not Novo's (added
 2026-09-17 Portfolio Watch item 5; board approved 2026-09-09, announced 2026-09-15 → 09-16).** **Sionna Therapeutics** (Waltham MA;
@@ -774,6 +808,33 @@ https://www.tedcomd.com/news-events/press-releases/2026/tedco-invests-750000-ast
     ⇒ **The instrumentation around this theme is filling in from both ends and leaving the middle open: either the gap we build
     in, or the reason the theme stays a research programme.** Source:
     https://www.biospace.com/press-releases/nutromics-receives-fda-breakthrough-device-designation
+  - **THIRD INSTANCE OF THE SAME SHAPE IN THREE WEEKS — WHICH PROMOTES THE OBSERVATION TO THE THEME'S THESIS: THE
+    MECHANISM THAT DECIDES THE OUTCOME IS INVISIBLE TO THE MIC (added 2026-09-27 Portfolio Watch item 3; *PLOS Pathogens*
+    published 2026-09-25).** **Tomasek K et al., "Targeted lysosomal activation in bladder epithelium enhances clearance of
+    intracellular uropathogenic *Escherichia coli*," PLoS Pathog 22(9): e1014448** — **Kathrin Tomasek**, Laboratory of
+    Microbiology and Microtechnology, **EPFL Lausanne**. Subject: **OM-89 (Uro-Vaxom)**, an oral lysate of **18 *E. coli*
+    strains**, approved and prescribed for recurrent UTI for ~4 decades on the assumption that it works by **immune
+    stimulation**.
+    **FINDINGS:** in mouse bladder **organoids** and differentiated mouse **and human** bladder epithelial monolayers, OM-89
+    **increases lysosomal acidification and lysosomal protease activity**, routes intracellular UPEC (CFT073) toward
+    degradative compartments, and **increases intracellular accumulation of both ampicillin and gentamicin** (and dextran —
+    a generalised uptake effect), predominantly in **CK20⁺ umbrella cells**. **Blocking lysosomal acidification abolishes
+    the protective effect.** Lysosomal KEGG pathway was the **most significantly induced gene set** on OM-89 during
+    infection (FDR p=1.9e-14). The regrowth benefit held at **1× MIC**, not only 10×; OM-89 alone is **not antimicrobial**
+    (no effect on initial burden).
+    **THE LOAD-BEARING NEGATIVE: "OM-89 did not alter the MIC values of either gentamicin or ampicillin."** The entire
+    therapeutic effect is **invisible to the susceptibility test that chooses therapy.**
+    **⇒ THEME READ (Yixuan Qiu + Eddie Cherok).** Three independent lines now say the same thing: **(1)** Chatterjee/UMB
+    *gdpP* / cyclic-di-AMP β-lactam **TOLERANCE** — invisible to MIC; **(2)** Rohn/UCL flow micro-bladder (09-07) —
+    nitrofurantoin potent in static broth, failing under flow against intracellular reservoirs; **(3)** this. **Astek sells a
+    <1 h answer to "WHICH DRUG" from a STATIC susceptibility assay; for the chronic, intracellular, tolerant phenotype that
+    is the wrong question asked fast.** Collaboration thesis unchanged and more urgent: can a rapid phenotypic platform read
+    something other than susceptibility.
+    **⇒ SECOND OPPORTUNITY: a HOST-DIRECTED mechanism on an ALREADY-APPROVED product with four decades of safety is the
+    cheapest first indication available, and nobody owns composition of matter.** **CANDID: OM Pharma co-funded the study,
+    supplied the material, funded a technician position, and two authors are current/former employees; all findings are
+    preclinical and do not change the approved indication.** Sources: https://doi.org/10.1371/journal.ppat.1014448 ·
+    https://www.genengnews.com/topics/infectious-diseases/how-bladder-cells-fight-hidden-e-coli-new-insights-into-recurrent-utis/
 
 **COPD theme — the UPSTREAM ALARMIN LAYER IS CONTESTED AT FOUR POINTS ON ONE PATHWAY; the two differentiators on offer were a PROPERTY or a POPULATION, and as of 2026-09-09 the POPULATION lane is TAKEN
 (opened 2026-08-29 Portfolio Watch item 4; four-seat map added 2026-09-08 Portfolio Watch LEAD; full tozorakimab dataset + eosinophil gradient added 2026-09-09 Portfolio Watch LEAD).** Two independent wins for the epithelial alarmin
@@ -969,6 +1030,34 @@ class tracked under the Gould lab (UMB Neuropharmacology, §2b). Ariadne is now 
 that lead ⇒ the diligence question moves from "is the class real" to "which property, population or route do we hold that AB-300 does
 not."** Source:
 https://www.genengnews.com/topics/drug-discovery/palomar-labs-spins-out-ariadne-bio-to-advance-non-hallucinogenic-therapy-for-parkinsons-apathy/
+  - **AND THE FIRST APPROVAL OF 2026 IN THIS INDICATION CONFIRMS THE SYMPTOMATIC READ — WHILE PUTTING A PRICE TAG ON A
+    NEUROPSYCH GPCR PLATFORM (added 2026-09-27 Portfolio Watch LEAD; FDA approval 2026-09-25).** **FDA approved AbbVie's
+    TAVAPADON, brand name JUVMO, for adults with Parkinson's disease** — once-daily oral, and the **first and only
+    D1/D5-selective partial dopamine agonist**; every other marketed dopamine agonist works through **D2/D3**, which is
+    where the class's somnolence and impulse-control liabilities sit. **TEMPO-1** (monotherapy, early PD, **n=529**, 26
+    wk): MDS-UPDRS Parts II+III change from baseline **placebo +1.8, 5 mg −9.7, 15 mg −10.2, p<0.0001 both** (≈ −11.5 and
+    −12.0 placebo-adjusted). **TEMPO-2** flexible-dose monotherapy positive. **TEMPO-3** (adjunct to levodopa):
+    **+1.10 h of additional daily "good on" time.** Common AEs nausea, dizziness, headache. AbbVie targets **>$5B**
+    combined Parkinson's sales.
+    **PROVENANCE IS THE ITEM: AbbVie acquired tavapadon inside CEREVEL THERAPEUTICS for ~$8.7B, and Cerevel was bought as a
+    NEUROPSYCHIATRIC GPCR PLATFORM whose flagship was EMRACLIDINE, an M4 muscarinic PAM for schizophrenia — which missed in
+    two Phase 2 trials within months of the deal closing. The acquisition was underwritten by a schizophrenia thesis and has
+    so far been repaid by a Parkinson's label.**
+    **⇒ READ ONE (Eddie Cherok + Matt Tremblay) — the best available price tag on a CNS GPCR platform, and the clearest
+    statement of where the return actually lands. When the GPR52 NewCo is structured: which asset survives the flagship
+    failing, and does the valuation rest on ONE INDICATION or on a RECEPTOR FAMILY? A platform that is one molecule is not
+    a platform.** (Full treatment under the Neuropsych NewCo entry.)
+    **⇒ READ TWO (Hemaka Rajapakse + Yixuan Qiu) — the 09-26 substantial-evidence clause made concrete. Tavapadon sits at a
+    HIGH pre-trial prior: pathophysiology understood, mechanism shared with an APPROVED PHARMACOLOGICAL CLASS, endpoint used
+    by every predecessor ⇒ Door 1 fully available. GPR52 has none of the three. Selectivity is an approvable differentiator;
+    it is NOT a substitute for a class to borrow confirmatory evidence from.**
+    **⇒ READ THREE — THEME.** Symptomatic, **all-comers, no enrichment, no biomarker** ⇒ it does not touch the
+    **diagnostic-latency** constraint the field names for itself (09-08). Structurally the **same move as Ariadne (09-22)**:
+    a symptom domain in already-diagnosed, already-in-clinic patients. **The approvable Parkinson's asset in 2026 is still a
+    symptomatic one; the disease-modification lane is unchanged.** Sources:
+    https://endpoints.news/fda-approves-abbvie-next-gen-dopamine-therapy-for-parkinsons/ ·
+    https://www.prnewswire.com/news-releases/abbvie-announces-positive-topline-results-from-phase-3-tempo-1-trial-evaluating-tavapadon-as-a-monotherapy-for-parkinsons-disease-302259265.html
+
 
 **PARKINSON'S theme — the constraint the field names is DIAGNOSTIC LATENCY, not target choice, and the inflammasome lane is
 already priced (added 2026-09-08 Portfolio Watch item 4; published 2026-09-08).** **Jefferies: ~$8B market by 2035**, *"one of the
@@ -2034,7 +2123,26 @@ _Last update: 2026-08-28_
   it. KRAS-landscape news is no longer portfolio-relevant on aSKY's account
   (Clasp remains a live KRAS-adjacent holding).
 ### Neuropsychiatric NewCo (schizophrenia) — Lieber Institute + Third Rock ✅
-_Last update: 2026-09-25_
+_Last update: 2026-09-27_
+- **WHAT A BUYER PAYS FOR A CNS GPCR PLATFORM, AND WHERE THE MONEY ACTUALLY COMES BACK FROM — THE CEREVEL COMPARATOR IS NOW COMPLETE
+  (added 2026-09-27 Portfolio Watch LEAD; FDA approval 2026-09-25).** **AbbVie acquired Cerevel Therapeutics for ~$8.7B as a
+  NEUROPSYCHIATRIC GPCR PLATFORM whose flagship was EMRACLIDINE, an M4 muscarinic positive allosteric modulator for SCHIZOPHRENIA.
+  Emraclidine missed in two Phase 2 trials within months of the deal closing. The FIRST APPROVAL out of that acquisition, on
+  2026-09-25, is TAVAPADON (brand JUVMO) — a D1/D5-SELECTIVE PARTIAL DOPAMINE AGONIST in PARKINSON'S DISEASE.** (Data and theme
+  read filed under the PARKINSON'S theme in §2.)
+  **⇒ READ ONE — STRUCTURE (Eddie Cherok + Matt Tremblay). The acquisition was underwritten by a schizophrenia thesis and has so far
+  been repaid by a movement-disorder label. When the GPR52 NewCo is structured, the questions are: which asset in the package survives
+  the flagship failing, and does the valuation rest on ONE INDICATION or on a RECEPTOR FAMILY? A platform that is one molecule is not
+  a platform — and $8.7B is the number the counterparty will have in mind for what a real one is worth.**
+  **⇒ READ TWO — EVIDENTIARY (Hemaka Rajapakse + Yixuan Qiu). This is the 09-26 substantial-evidence draft made concrete. Tavapadon
+  sits at a HIGH pre-trial prior — pathophysiology understood, mechanism shared with an APPROVED PHARMACOLOGICAL CLASS, endpoint used
+  by every predecessor — so the draft's DOOR 1 (one trial + confirmatory evidence from other approved drugs in the same
+  pharmacological class) was fully available to it. GPR52 has NONE of the three: orphan receptor, mechanism explicitly not well
+  understood, no approved GPR52-agonist class to borrow from. ⇒ RECEPTOR-SUBTYPE SELECTIVITY IS AN APPROVABLE DIFFERENTIATOR — this
+  proves it — BUT IT IS NOT A SUBSTITUTE FOR A CLASS TO STAND NEXT TO, and under the draft that difference is priced in ALPHA and
+  therefore in n.** Fold into the standing GPR52 DC-package items (signalling bias, biomarker instrument, PD readout).
+  Sources: https://endpoints.news/fda-approves-abbvie-next-gen-dopamine-therapy-for-parkinsons/ ·
+  https://www.prnewswire.com/news-releases/abbvie-announces-positive-topline-results-from-phase-3-tempo-1-trial-evaluating-tavapadon-as-a-monotherapy-for-parkinsons-disease-302259265.html
 - **THE PLACEBO ARM REPRODUCED 83% OF THE DRUG EFFECT AND COST 11% OF MARKET CAP — AND THE PROPOSED FIX IS AN INCLUSION CRITERION WORTH
   +27% ON EFFECT SIZE (added 2026-09-25 Portfolio Watch item 3; reported 2026-09-24). This is the psychiatry-specific version of the
   instrument thread and the cleanest public demonstration of the 08-31 GPR52 biomarker item.**
@@ -4087,6 +4195,7 @@ ecosystem news.
   papers 10.2337/db26-0183, 10.2337/db22-0477 (PMC9876881).
 
 ### Popel + Green + Pandey serial-founder cluster (Wilmer / JHU BME) ⚠
+_Last update: 2026-09-27_
 - **Founders (recurring):** Aleksander S. Popel, Ph.D. (JHU BME + Medicine +
   Oncology; Popel Systems Biology Lab); Jordan J. Green, Ph.D. (JHU BME + INBT +
   WSE Materials Science); Niranjan B. Pandey, Ph.D. (part-time JHU BME faculty +
@@ -4096,22 +4205,59 @@ ecosystem news.
   human-protein-derived peptide platform.
 - **Three companies known as of 2026-07-06** (via COI disclosure on Mirando/Popel/
   Pandey bioRxiv 2026.06.30.735614):
-    1. **AsclepiX Therapeutics, Inc.** (2014, Popel + Green cofounders). Lead
-       asset **AXT107 (gersizangitide)** — collagen-IV-derived anti-angiogenic
-       peptide disrupting α5β1 integrin + potentiating Ang2/Tie2 signaling.
-       DISCOVER Phase 1/2a suprachoroidal-injection trial in wet AMD (15 pts,
-       125/250/500 μg; enrollment complete May 2024; topline originally expected
-       Q2 2025 per company disclosure — **not yet publicly shipped**, either
-       delayed or embargoed). $10M raise July 2023. 2026-07-05 bioRxiv preprint
-       adds 9-month GLP tox in Göttingen minipigs supporting the suprachoroidal
-       microparticle formulation. Pending patent 19/105,901 (Mirando + Robinson
-       + Pandey inventors).
-    2. **Terebra Therapeutics, LLC** (Mirando + Pandey + Popel cofounders).
-       Stealth Hopkins-licensed **oncolytic peptide NF27 for rectal cancer**.
-       TEDCO Maryland Innovation Initiative-funded. Preprint 10.1101/2025.08.17
-       .668569 documents NF27 activity across multiple cancer types. Sits on
-       PitchBook (profile 895308-58).
-    3. **OptaNova Pharma** (Green + Popel + Pandey cofounders). **Popel active
+    1. **AsclepiX Therapeutics, Inc.** (2014, Popel + Green cofounders; Bethesda MD). Lead
+       asset **AXT107 (gersizangitide)** — a 20-aa collagen-IV-derived peptide binding
+       **integrins α5β1 + αvβ3**: disrupts integrin-receptor complexes and inhibits
+       **VEGFR2**, and separately **re-localises/clusters Tie2 at endothelial junctions and
+       converts Ang2 from a Tie2 ANTAGONIST into an AGONIST** (mechanistically distinct from
+       faricimab, which *neutralises* Ang2). **Self-assembling depot is the platform half:**
+       soluble at low pH/low ionic strength, precipitates at physiological pH/ionic strength,
+       so the drug forms its own particulate depot **with no polymer or encapsulating
+       excipient**; apparent intravitreal t½ ~180 d in animals. $10M raise July 2023.
+       2026-07-05 bioRxiv preprint (10.64898/2026.06.30.735614, since published; PMC13345088)
+       adds 9-month GLP tox in Göttingen minipigs supporting the suprachoroidal microparticle
+       formulation. Pending patent 19/105,901 (Mirando + Robinson + Pandey inventors).
+       **DISCOVER TOPLINE RESOLVED — shipped 2026-09-24 as a medRxiv preprint
+       (10.64898/2026.09.19.26363031), NOT as a press release, ~16 months past the guided
+       Q2-2025 date and with no financing announcement attached. 2026-09-27 Sourcing Radar LEAD.**
+       **NCT05859776**: open-label dose escalation, **15 enrolled / 20 screened, 4 US sites**,
+       0.125 mg n=3 / 0.25 mg n=3 / 0.5 mg n=9, **40 weeks**, **11 treatment-experienced partial
+       anti-VEGF responders + 4 naive**, 14 eyes in the efficacy analysis.
+       **WHY THE ROUTE CHANGED (the program-rescue story):** the earlier **intravitreal
+       self-forming gel** (Ph1 DME NCT04697758; Ph1 nAMD **NCT04746963**) produced
+       **dose-related sustained IOP elevations uncontrolled by pressure-lowering medication**,
+       attributed to microscopic gel fragments obstructing trabecular outflow.
+       **DISCOVER SAFETY (the load-bearing result): no drug-related SAEs; no endophthalmitis,
+       retinal detachment, suprachoroidal haemorrhage or clinically significant intraocular
+       inflammation; no clinically meaningful IOP rise at any dose; no subject on chronic
+       IOP-lowering therapy** ⇒ the suprachoroidal reformulation appears to have cleared the
+       signal that killed the intravitreal formulation.
+       **ACTIVITY (signal, not result): 2 treatment-experienced eyes completed 40 weeks with no
+       protocol-specified rescue; a 3rd first rescued at week 36; median durability 36 weeks in
+       treatment-experienced 0.5 mg eyes. BCVA across 14 eyes +15 to −31 ETDRS letters** (3 eyes
+       ≥+5, 3 ≥+10, 1 ≥+15). **CANDID: n=15, open-label, no control arm, rescue permitted from
+       wk 12, only 4 naive eyes all at one dose.** Authors' counterweight: unusually strict
+       washout (brolucizumab excluded; aflibercept <8 wk, ranibizumab/bevacizumab <6 wk excluded)
+       biases toward **earlier** rescue ⇒ conservative durability.
+       **COMPETITIVE:** the whole nAMD field competes on durability (faricimab; high-dose
+       aflibercept). A **non-neutralising** mechanism plus a ~6-month depot is a real position —
+       *if someone funds the controlled, treatment-experienced-enriched study this dataset asks for.*
+    2. **Terebra Therapeutics, LLC** — **Baltimore MD; stealth; peptide-based oncology.**
+       Mirando + Pandey + Popel cofounders; **Pandey is co-founder AND CEO (confirmed in the
+       2026-09-24 DISCOVER disclosures)**; **Johns Hopkins Technology Ventures is on the cap
+       table.** Hopkins-licensed **oncolytic peptide NF27 for rectal cancer**; TEDCO Maryland
+       Innovation Initiative-funded. Preprint 10.1101/2025.08.17.668569 documents NF27 activity
+       across multiple cancer types. PitchBook profile 895308-58.
+       **⇒ THE LIVE BIOVENTURES TARGET IN THIS CLUSTER (Eddie Cherok, opened 2026-09-27).**
+       Baltimore-headquartered, JHTV already invested, run by the operator who just carried a
+       JHU peptide from bench through first-in-human and out the other side. Ask for the meeting.
+    3. **OptaNova Pharma, LLC** (Wilmington DE; Green + Popel + Pandey cofounders).
+       **RESOLVED 2026-09-27: the DISCOVER preprint's financial disclosures state verbatim that
+       OptaNova "acquired AsclepiX's IP."** ⇒ OptaNova is the successor vehicle for the AXT107
+       estate, not an unrelated venture; the therapeutic area is ocular/peptide. Read the
+       sequence as an asset that needed a new balance sheet and founders who built one rather
+       than let it go. Remaining unknowns: capitalisation, whether the JHU licence travelled with
+       the IP or was re-issued, and whether JHTV is a party. **Popel active
        equity confirmed 2026-07-15** — PNAS paper 10.1073/pnas.2525799123 COI
        statement is the first public disclosure of active Popel equity in
        OptaNova. Public footprint outside COI disclosures still limited (Delaware
@@ -4149,12 +4295,13 @@ ecosystem news.
   outside. Complements Aletira + Kalhor 3DEEP + Revivify Innovations as the
   Wilmer + JHU BME + Center for Nanomedicine cluster.
 - **Open intelligence gaps (updated 2026-07-15):**
-    - OptaNova Pharma therapeutic area, funding status, whether operating on
-      JHU-licensed IP or inventor-owned pre-Hopkins IP. Popel equity now
-      publicly confirmed (2026-07-14 PNAS COI) but company product line still
-      undeclared.
-    - AsclepiX DISCOVER Phase 1/2a topline result (publicly unshipped past
-      original Q2 2025 timeline).
+    - **CLOSED 2026-09-27:** OptaNova's relationship to AsclepiX (it acquired the IP) and the
+      DISCOVER topline (published as a medRxiv preprint). **Still open:** OptaNova's
+      capitalisation, and whether JHTV is a party to the transferred licence.
+    - **NEW 2026-09-27:** is composition-of-matter on the **self-assembly / depot behaviour**
+      separable from composition-of-matter on the AXT107 peptide? If yes, that is the
+      licensable chassis for any target needing durable local exposure in a small enclosed
+      compartment — **direct Aletira (inner ear) adjacency.** Ask JHTV (Virginia Burger + Avi Khanna).
     - Whether JHTV is managing an active OptaNova license negotiation or
       OptaNova is downstream of a JHTV-independent inventor filing.
     - JHTV posture on the Popel-Fertig-Deshpande spQSP platform code + calibration
@@ -4163,6 +4310,14 @@ ecosystem news.
       still available.
 
 ### Barrick lab protein-design methodology (JHU T.C. Jenkins Biophysics) — diligence-discipline signal + JHU→GSK IP-flow scouting note ⚠
+- **A FREE INSTRUMENT FOR THIS EXACT DISCIPLINE (added 2026-09-27 Portfolio Watch closer; launched 2026-09-24).** The **National Library
+  of Medicine launched LINKED DISCOVERIES** (linkeddiscoveries.ncbi.nlm.nih.gov), an experimental pilot: from any **PubMed** citation it
+  maps **up to 200 of the nearest related articles**, surfacing shared **conditions, genes and chemicals** plus contextual signals including
+  **citation relationships, reviews, RETRACTIONS and replication attempts**. **>29M publications at launch**; an early product of NIH's
+  agency-wide replication-and-reproducibility initiative. **STANDING PROCESS ITEM (Jason Zavras + Esther Park): run every active sourcing
+  lead's load-bearing paper through it and report whether the neighbourhood contains a retraction or a failed replication. Cheap before a
+  term sheet, expensive after one.** Sources: https://www.nlm.nih.gov/news/linked_discoveries_pilot.html ·
+  https://www.nih.gov/news-events/news-releases/nih-launches-new-pubmed-tool-strengthen-research-replication-reproducibility
 - **Lab / people.** **Doug Barrick, Ph.D.** — Professor, T.C. Jenkins Department
   of Biophysics, Johns Hopkins University; barrick@jhu.edu. Long-running program
   on protein folding thermodynamics + sequence-alignment-derived design rules.
@@ -5182,6 +5337,102 @@ _Last update: 2026-09-12_
   incorporates.** Pairs with the Biolinco note that the **Bisciotti Foundation Awards** are the top prizes in JHTV's own student-venture programme — a warm, already-sponsored channel into that pool we are not working
   systematically. **ACTION: decide whether to work the JHTV student-venture / Blaze pipeline deliberately rather than opportunistically.**
 - **Watch.** Any DUA financing, JHTV licence-roster appearance, or publication naming the velocity-receptor IP. Source: https://technical.ly/workforce/reallist-innovators-2026-maryland/
+
+### Qiu lab SWELL1/LRRC8 volume-regulated anion channel (JHU SOM Physiology, Pharmacology & Therapeutics + Snyder Neuroscience + Brain Science Institute + Neurosurgery) — active sourcing lead + an UNOWNED TARGET CLASS in IDH-mutant glioma ⚠
+_Last update: 2026-09-27_
+- **Lab / people.** **Zhaozhu Qiu, Ph.D.** (zhaozhu@jhmi.edu), corresponding, with **Leng Han**
+  (Indiana University SOM). Co-first authors **Henry Yi Cheng** (JHU) and **Lifei Ma** (IU).
+  Collaborators: Ohio State (Jiangjiang Zhu, metabolomics), **Kennedy Krieger Biochemical Genetics
+  Lab** (Lisa Kratz), University of Michigan Neurosurgery (Maria G. Castro). Qiu's lab is the
+  world's principal SWELL1/VRAC group.
+- **The finding (bioRxiv 10.64898/2026.09.18.752798, posted 2026-09-22; 2026-09-27 Sourcing Radar
+  pick 2).** The **SWELL1 (LRRC8A)/LRRC8C-containing volume-regulated anion channel (VRAC)** is the
+  **principal efflux route for D-2-hydroxyglutarate**, the oncometabolite produced by mutant IDH.
+  Nobody previously knew how D-2HG gets out of the cell, which is why its well-documented
+  suppression of tumour-infiltrating T cells had never been drugged.
+- **Why it is a drug and not just a mechanism — TWO independent anti-tumour effects from ONE
+  intervention.** (1) SWELL1 deletion collapses D-2HG release and **reverses immunosuppression** in
+  an orthotopic **immunocompetent** mouse mIDH glioma model. (2) Loss of VRAC causes
+  **intracellular D-2HG accumulation that limits proliferation** via epigenetic remodelling and
+  mitochondrial metabolic stress — i.e. blocking the exit also poisons the tumour cell.
+- **Pharmacology.** **Dicumarol** (clinical anticoagulant, recently identified as a potent VRAC
+  inhibitor) phenocopies the knockout in vitro and has **no effect on wtIDH or SWELL1-KO cells**.
+  In vivo (local intracerebral delivery, dialysis cannula, 3×/wk × 3 wk from day 7): **median
+  survival vehicle 24 d · dicumarol 29 d · anti-PD-1 30 d · COMBINATION 45 d**; SWELL1 deletion
+  alone 31.5 d. Dicumarol raised intratumoral CD8⁺ T cells, IFNγ, granzyme B, CD107a, IL-2, Ki67,
+  TNFα and lowered PD-1 — **and did none of it in SWELL1-KO tumours. That genetic-epistasis control
+  is what rules out the anticoagulant activity doing the work.** Human lower-grade IDH-mutant
+  glioma: high **LRRC8C** ↔ DNA hypermethylation + immunosuppressive TME + worse OS.
+- **CANDID LIMITS — and they ARE the investment case.** Dicumarol has **limited BBB penetration and
+  was delivered through an implanted intracerebral dialysis cannula**: a tool compound, not a
+  therapy. **No selective brain-penetrant VRAC/LRRC8 inhibitor exists.** Mouse models throughout.
+- **THE COMPETITIVE QUESTION TO BUILD DILIGENCE AROUND.** **Vorasidenib (Voranigo, Servier) is
+  approved (Aug 2024) in grade-2 IDH-mutant glioma and blocks D-2HG PRODUCTION upstream with an
+  oral brain-penetrant molecule.** If you can stop making the metabolite, why block its exit? The
+  paper's implicit answer is the **intracellular-accumulation toxicity, which an IDH inhibitor
+  cannot produce** — plus demonstrated checkpoint synergy. Verify that before anything is funded.
+- **⇒ ACTION (Anthony Accorsi + Matt Lawler): competing interests NONE declared.** Ask JHTV whether
+  the **target** and the **VRAC-inhibitor + checkpoint combination use** are filed, separately from
+  chemistry. **The chemistry does not exist — which is precisely the stage Blackbird funds.**
+  Adjacent to the **Watkins lab ACSVL3 GBM** lead and the **oncology surface targets** theme.
+
+### Benavides lab anti-NMDAR encephalitis kinase signalling (UMB SOM Neurology + UMB School of Pharmacy, Pharmaceutical Sciences) — active sourcing lead, EARLY; Winnow/autoimmune adjacency ⚠
+_Last update: 2026-09-27_
+- **Lab / people.** **David R. Benavides, M.D., Ph.D.** (dbenavides@som.umaryland.edu), UMB SOM
+  Neurology, corresponding. Co-first **Yuyoung Joo** and **Prajwal Ciryam**. Proteomics from
+  **Maureen A. Kane** / Weiliang Huang, UMB **School of Pharmacy**, Pharmaceutical Sciences.
+  Patient-derived antibodies from **Scott K. Dessain** (Lankenau Institute for Medical Research).
+- **The finding (bioRxiv 10.64898/2026.09.15.751835, posted 2026-09-21; 2026-09-27 Sourcing Radar
+  pick 3).** Patient-derived human **GluN1 monoclonal antibody 5F5** applied to primary cortical
+  neurons: at **2 h** it does **NOT** reduce synaptic NMDAR subunit or PSD-95 levels (SN or PSD
+  fractions) and does **NOT** reduce **surface GluN1** by biotinylation — with NMDA and DHPG
+  positive controls both moving, so it is a real negative rather than a failed assay. It **does**
+  remodel the synaptoneurosome phosphoproteome, and the signature correlates **positively with
+  NMDAR activation and negatively with NMDAR inhibition**. At **72 h** the picture inverts:
+  **11 of 12 regulated kinases suppressed, including MEK1/MEK2** (MAPK/ERK), consistent with later
+  internalisation.
+- **WHY IT MATTERS COMMERCIALLY.** The field's premise is crosslink → internalise → receptor
+  hypofunction, and **every** practised therapy (steroids/IVIG/PLEX, rituximab, CAR-T in refractory
+  disease) works by **removing the antibody** — none of which helps the patient already in the ICU.
+  If the earliest event is a **signalling** event, there is a distinct **acute neuroprotective
+  adjunct** opportunity at a kinase node, given while immunotherapy takes weeks to work.
+  Autoimmune encephalitis overall leaves **up to 35% of patients dead or poorly recovered**.
+- **CANDID LIMITS.** Primary cortical neurons only; one patient-derived mAb; two timepoints; no
+  animal model; phosphoproteomic coverage biased to phosphoserine and proline-directed kinases
+  (authors' own caveat); and **zero overlap in regulated KINASES between the mAb and the NMDAR PAM
+  JB2 despite substantial overlap in regulated phosphoproteins** ⇒ "acts like activation" is an
+  inference from a substrate signature, not a demonstration. Funded by **NIH K08NS114039-01** +
+  UMSOM seed funds.
+- **⇒ ACTION (Jon Robbins + Esther Park): competing interests NONE declared** ⇒ position may still
+  be open. **Right instrument is a translational grant buying ONE deliverable: name the node.**
+  A phosphoproteome is not a target. Ask whether the group would nominate a candidate kinase or
+  only has a dataset. **Adjacency:** autoimmune encephalitis is a lead indication for the
+  autoimmune cell-therapy wave (see Winnow), so a mechanism-based acute adjunct in the same disease
+  is either a companion or a competitor for attention — and it is being generated at a partner
+  institution.
+
+### Edward & Jennifer St. John Center for Translational Engineering and Medicine (CTEM) — UMB × UMD College Park, UM BioPark; SOURCING CHANNEL, not a lead ⚠
+_Last update: 2026-09-27_
+- **What / where.** Dedicated by ribbon-cutting **2026-09-08** (regional coverage 09-25; 2026-09-27
+  Portfolio Watch item 5). **35,000 sq ft on the 4th floor of 4MLK at the University of Maryland
+  BioPark.** Pairs **Clark School / Fischell Department of Bioengineering** (UMCP) researchers with
+  **UMSOM** clinicians in one space. Funded by a **$10M gift from Edward '61 and Jennifer St. John
+  and the Edward St. John Foundation** plus a **$12.75M grant through the University of Maryland
+  Strategic Partnership: MPowering the State**. First announced 2025; formally dedicated now.
+- **People.** **Co-directors: Giuliano Scarcelli** (Professor, Fischell BIOE; Fischell Institute
+  Fellow; eye-biomechanics imaging) and **Osamah Saeedi** (Professor of Ophthalmology and Glaucoma
+  Division Chief, UMSOM). **Huang-Chiao "Joe" Huang** (Assoc. Prof. Bioengineering, Fischell Family
+  Distinguished Professor) — light-activated photodynamic cancer therapeutics. Leadership quotes
+  from Bruce E. Jarrell (UMB President), Darryll J. Pines (UMCP President), Mark Gladwin (UMSOM
+  Dean), Samuel Graham (Clark School Dean). Research areas: cancer, macular degeneration, glaucoma,
+  vascular disease, AI, biomedical imaging. A new engineering-undergrad→MD pathway runs through it.
+- **⇒ SO-WHAT (Esther Park + Avi Khanna).** This is **the physical address of the UMB × College Park
+  JOINT INVENTION**, which is the exact shape of two live leads in this file: the **Deredge (UMB
+  SoP) + Freel Meyers (JHU) MInt-HDX** platform and the **Gregg Duncan lab mucin-ratio** work, which
+  sits in this very Fischell department. Joint inventorship ⇒ a **UM Ventures joint filing** ⇒ a
+  materially different negotiation from a single-institution licence. Second: CTEM is at the
+  **BioPark, ~4 miles from the BioHub**, on the same campus as **Astek Diagnostics** — Baltimore's
+  translational map now has **two** hubs and we should know who runs office hours at the other one.
 
 ### Elisseeff lab fibroid-senescence atlas (JHU) — WATCH, not a build (deferred 08-09 lead, closed 2026-08-16) ⚠
 - **Lab / people.** **Jennifer H. Elisseeff, Ph.D.** (JHU; senior) with Mostafa Borahay + James Segars (JHU Gyn/Ob) and **Elana Fertig** (UMB genome sciences). "Senescent cell networks link matrix remodeling and vascular dysfunction in human fibroids," bioRxiv v1 2026-08-07 (DOI 10.64898/2026.08.06.743362) — full text NOW RENDERED (157KB) and read 2026-08-16.

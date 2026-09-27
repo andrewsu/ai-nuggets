@@ -2947,3 +2947,43 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus
 
 **Two notes for the next run.** The bare ledger passed all 12 candidates as fresh, including two items shipped in the last 48 hours under different URLs — the script-grep cross-check is what caught them, and it should stay mandatory. Separately, a stale stub pair for `2026-09-15-portfolio-watch` (`.rss-item.xml` + `.commit-msg`) is still sitting in `scripts/` with no matching `.md`; `publish_pending.py` never cleaned it. I left it alone, but it will keep showing up as untracked until someone removes it.
 === 2026-09-26T02:31:47-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-27T02:13:08-07:00 start blackbird-brief ===
+Both episodes are written. Here is the run record.
+
+**Published (SKIP_TTS mode — scripts + stubs only; no TTS, no R2, no feed edit, no commit; `publish_pending.py` does those):**
+
+- `podcasts/blackbird-brief/scripts/2026-09-27-radar-axt107-jhu-peptide-cluster.md` (+ `.rss-item.xml`, `.commit-msg`) — Sourcing Radar, 1,608 spoken words (~8 min)
+- `podcasts/blackbird-brief/scripts/2026-09-27-portfolio-watch.md` (+ `.rss-item.xml`, `.commit-msg`) — Portfolio Watch, 1,915 spoken words (~10 min)
+- `state/shipped.jsonl` — appended 2 lines (3 radar keys, 6 watch keys); ledger now 81 episodes / 438 unique keys
+- `memory/blackbird-portfolio.md` — edited in place: Popel/Green/Pandey cluster entry rewritten (DISCOVER topline + OptaNova/Terebra resolved, two open items closed), Neuropsych NewCo given the Cerevel comparator, Parkinson's + chronic-infections + VEXAS-regulatory-sequencing themes extended, Barrick diligence entry given the Linked Discoveries instrument, China-NewCo BD thread given the Zhang conflict item; three new §2b entries (Qiu lab SWELL1/VRAC, Benavides lab anti-NMDAR, CTEM)
+
+**Source status (auditable failures):**
+- `api.biorxiv.org` details API — **total outage all run**: silent empty HTTP 200 (0 bytes) on every probe including a day-by-day retry sweep with 20s backoff. Discovery fell back to `connect.biorxiv.org` per-subject RSS (11 subjects, 320 items, 09-20→09-27 covered) + Crossref `query.affiliation` + PubMed EDAT.
+- `www.biorxiv.org` — persistent 17-byte 429 Cloudflare throttle, including via `r.jina.ai` and WebFetch. One sequential worker, 50s spacing: 2 of 7 target PDFs eventually landed (Benavides, Qiu); 5 did not → deferrals below. `www.medrxiv.org` was unaffected (per-host throttle reconfirmed).
+- `r.jina.ai` — TLS clean today, but returned an abuse block for `fiercebiotech.com` (until 10:20 UTC). Fierce headlines/dek recovered from index JSON-LD; body via search.
+- `endpoints.news` articles paywalled (headline + dek only); `nature.com` article 303→`idp.nature.com`; Europe PMC preprint affiliation search returned 0 (known indexing lag); `hub.jhu.edu`/`hopkinsmedicine.org`/`ventures.jhu.edu` 403 direct (jina worked; hub tag page is a stale archive).
+
+**Candidate funnel — Stream B (Radar), window 09-20→09-27**
+
+Scanned: 320 bioRxiv items via connect RSS · 56 Crossref posted-content hits on "Johns Hopkins" + 2 more affiliation queries · 295 PubMed records with JHU/UMB/Lieber affiliation. Substantive shortlist after dedup (27 candidates → 23 fresh; SEME and the Wong TDP-43 *Unc13a* paper dropped as already shipped):
+
+- **CHOSEN (lead)** AXT107/gersizangitide DISCOVER Ph1/2a — https://www.medrxiv.org/content/10.64898/2026.09.19.26363031v1
+- **CHOSEN** SWELL1 D-2HG export in IDH-mutant glioma — https://www.biorxiv.org/content/10.64898/2026.09.18.752798v1
+- **CHOSEN** Anti-NMDAR encephalitis kinase signalling (UMB) — https://www.biorxiv.org/content/10.64898/2026.09.15.751835v1
+- Deferred, full text unobtainable (bioRxiv 429): AKAP11 bipolar knock-in (JHU ICE) `752887` · Lieber nucleus accumbens atlas `754413` · TFE3/CD44/SPP1 in RCC `752493` · CMAC cardiomyocyte age `752897` · AQP4 in zQ175 HD `753038` · clathrin/phospho-BCR in DLBCL `753512`
+- Rejected: Nature Medicine BCMA CAR-T enterocolitis (Mount Sinai, auth wall, no preprint — fails the full-text gate) · population-scale plasma proteomics medRxiv (consortium epi, JHU is a co-author site, not a JHU-originated asset) · sprayable intranasal PEG hydrogel (UMD, posted 09-18, outside window)
+
+**Candidate funnel — Stream A (Watch), window 09-24→09-27**
+
+Scanned: BioPharma Dive RSS (10 dated), Endpoints RSS (24), GEN RSS (10), Fierce index JSON-LD (10), BioSpace press-release index (34 slugs), BioBuzz regional roundup. Fresh after dedup:
+
+- **CHOSEN (lead)** Tavapadon/Juvmo FDA approval — https://endpoints.news/fda-approves-abbvie-next-gen-dopamine-therapy-for-parkinsons/
+- **CHOSEN** Lepu v. Zhang, China-NewCo BD conflict — https://www.fiercebiotech.com/biotech/pioneer-china-newco-model-sued-over-trade-secret-misuse-double-dealing
+- **CHOSEN** OM-89 host-directed lysosomal clearance — https://doi.org/10.1371/journal.ppat.1014448
+- **CHOSEN** Ocugen OCU400 Bahamas LARTA provisional approval — https://ir.ocugen.com/news-releases/news-release-details/ocugen-receives-provisional-approval-and-priority-designation
+- **CHOSEN** UMB×UMCP CTEM dedication (event 09-08, coverage 09-25 — out-of-window event flagged in the notes) — https://biobuzz.io/news/baltimores-new-ctem-center-puts-engineers-and-physicians-on-the-same-floor-to-speed-up-biomedical-breakthroughs/
+- **CHOSEN (closer)** NLM Linked Discoveries — https://www.nlm.nih.gov/news/linked_discoveries_pilot.html
+- Not used: Grail/Galleri adcomm (same event shipped 09-24), Genentech–Earendil and Henlius–Amberstone (shipped 09-25), ADARx/City IPO (thematic repeat of the 09-25 financing-window item), Merck Welireg expansion, Mirum FOP approval, FDA NAMs direct final rule (09-21, demoted to a calendar line)
+
+**Two things worth flagging:** the pre-commit hook (`check-paper-urls.py`) validates new preprint URLs against the bioRxiv details API, which was down for this entire run — if it is still down when `publish_pending.py` commits, the hook may reject on a false "not found" and need `GUIDE_SKIP_URL_CHECK=1`. Separately, stale `2026-09-15-portfolio-watch.{commit-msg,rss-item.xml}` stubs are still sitting untracked in `scripts/` from an earlier failed run; I left them alone since they are outside today's scope, but they should be deleted.
+=== 2026-09-27T02:53:37-07:00 done  blackbird-brief (exit 0) ===
