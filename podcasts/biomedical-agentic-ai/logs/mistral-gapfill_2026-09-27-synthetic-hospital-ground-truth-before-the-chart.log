@@ -1,0 +1,5 @@
+Script body: 6438 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2951 chars) -> 133.0s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2818 chars) -> 122.2s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (667 chars) -> 31.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-09-27-synthetic-hospital-ground-truth-before-the-chart.mp3 [mistral] 2,648,860 bytes, 331.1s

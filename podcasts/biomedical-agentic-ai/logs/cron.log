@@ -4955,3 +4955,14 @@ Shortlist after discarding spurious matches:
 
 Two things worth flagging: this show's `state/shipped.jsonl` is **empty**, so `shipped_keys.py` passed all 13 candidates as fresh including yesterday's episode — a filename grep is the only working dedup here, and it's what caught it. And my arXiv listing parser mismatched ids to titles for two shortlisted papers (caught when the fetched abstracts didn't match); those two were dropped rather than cited. I saved both as memories.
 === 2026-09-26T02:12:27-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-27T02:03:07-07:00 start biomedical-agentic-ai ===
+Background sweep resolved — no change to today's episode.
+
+**Sweep result:** all four day-files failed, 24/24 attempts returning HTTP 200 with a 0-byte body. That confirms the outage was sustained across the whole run rather than the transient blip the existing memory describes, and validates the `connect.biorxiv.org` RSS fallback as the discovery path. The funnel I logged already recorded the failure accurately, and none of the four bioRxiv candidates it surfaced beat the chosen pick.
+
+**Memory updated** (`reference_biorxiv_api_down_use_europepmc.md`, appended rather than duplicated) with two things worth having next time:
+- The **~0.24s response time** is the tell for this outage mode — a fast 200 with an empty body means stop retrying, not that the server is loaded.
+- The earlier note called the RSS fallback's yield "thin," but that was measured on 4 subject slugs. Widening to **25 slugs** costs ~40s and returns 720 unique items / 404 in-window — comparable to a real details-API sweep. Breadth of slugs is what buys recall, since each feed caps at 31 items.
+
+Also recorded that both preprint APIs were down simultaneously (arXiv's API returned 0 bytes too, and the runner's shared cache was missing), while both HTML/RSS routes worked — so this configuration is never grounds for a skip day.
+=== 2026-09-27T02:12:47-07:00 done  biomedical-agentic-ai (exit 0) ===
