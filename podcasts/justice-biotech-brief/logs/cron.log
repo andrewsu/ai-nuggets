@@ -3534,3 +3534,28 @@ Files:
 
 Memory updated: run notes + four reusable spines appended to the show's run log, a new `reference_congress_recaps_via_jina.md` written and indexed, and the weekend-gap memory corrected to make the zero-net-new rule Sunday-specific.
 === 2026-09-26T02:52:44-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-27T02:43:08-07:00 start justice-biotech-brief ===
+Episode written. Per `SKIP_TTS=1` batch mode I stopped at the stub set — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Published:** `2026-09-27-bms-986453-bcma-gprc5d-dual-target-car-t-or-gate` — script `.md` + `.rss-item.xml` (parses clean, both placeholders present) + `.commit-msg`. Spoken body 1,267 words, zero markdown/URLs/DOIs/NCT ids.
+
+**Pick:** BMS-986453, BCMA×GPRC5D dual-target autologous CAR-T (Juno/BMS). IMS 2026 abstract OA-10, Doris Hansen (Moffitt), presented on the meeting's closing day. n=58, ORR 83% all doses; 94% ORR / 71% CR at the 75M and 150M cell doses (n=35); CRS 78% (3.4% grade 3), one CRS death at 300M, MTD not reached. The take: the 50% skin/nail/oral toxicity is a free readout of the gate logic — GPRC5D's only normal-tissue expression is hard keratinized tissue, which carries no BCMA, so an avidity gate would spare it. It didn't. This is an OR-gate bought for antigen-escape coverage, not an AND-gate bought for safety — the right call for a one-shot product, but it adds an on-target organ. Corroborated by full text of the day-4 recap (via `r.jina.ai`), both CT.gov records, and a PubMed meta-analysis (18 trials/636 pts, [doi 10.3389/fimmu.2024.1466443](https://doi.org/10.3389/fimmu.2024.1466443)) for the BCMA-vs-GPRC5D relapse framing.
+
+**Candidate funnel**
+
+- **bioRxiv details API — FAILED, total silent-empty-200 outage.** 3 date probes (09-25/26/27) + 6 retries ×20s = 9 requests, all 0 bytes. 4th consecutive day of this mode.
+- **bioRxiv connect.biorxiv.org RSS (fallback) — 4 subject feeds healthy, 117 unique items, 28 on-target.** But the date histogram topped out at **09-24**, i.e. outside the 2-day window. **Net: zero eligible preprints today** — with the API down and the RSS index lagging ~3 days, there is no discovery path for 09-25→09-27 preprints.
+- **Trade press — scanned, nothing net-new on-beat.** Fierce JSON-LD (10 items), endpoints.news front page (~65 headlines), BioSpace `/press-releases` (~28), all Fri-dated or older and already covered. BioPharma Dive's h3 anchors returned only nav chrome.
+- **Congress (IMS 2026, Glasgow, Sept 23–26) — carried the run.** Day-4 recap published 2026-09-26T18:00Z, after the Saturday cron.
+
+Shortlist, all read in full:
+- **BMS-986453 — BCMA×GPRC5D dual-target CAR-T, Ph1 (OA-10)** — https://www.targetedonc.com/view/ims-2026-day-4-mrd-guided-regimens-real-world-car-t-data ← **CHOSEN**
+- GEM-TECTAL (LBA-08) — MRD-guided frontline tec+dara intensification with talquetamab rescue, 73% MRD-neg CR at 10⁻⁶ — strong, held as an open thread
+- Cilta-cel prophylactic cyclophosphamide fails for delayed neurotox (OA-41) — negative primary, live mortality secondary
+- eque-cel real-world n=281 (OA-09); CEPHEUS MRD update (OA-69); DREAMM-8 sustained MRD (OA-38)
+- Etentamig CERVINO (day-3 lead) — **excluded, shipped 2026-09-04**; Legend Carvykti 5-yr and Adaptive/IMWG cure definition — covered 09-26
+
+Two dedup notes: BMS-986453 has never appeared on this show, and I framed it as "initial results from a Phase 1," not first-in-human — a prior EHA 2026 presentation exists, and I couldn't verify its numbers, so I didn't assert them.
+
+Memory updated: run-log note for 09-27 (including the reusable AND-gate/OR-gate spine and the toxicity-table-as-gate-assay move), plus a correction to the weekend-gap reference — **Sunday is not dead when a congress ended Fri/Sat**, because the final day's recap publishes after the Saturday cron.
+=== 2026-09-27T02:51:58-07:00 done  justice-biotech-brief (exit 0) ===
