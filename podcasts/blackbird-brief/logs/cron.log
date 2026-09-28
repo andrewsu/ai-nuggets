@@ -2987,3 +2987,44 @@ Scanned: BioPharma Dive RSS (10 dated), Endpoints RSS (24), GEN RSS (10), Fierce
 
 **Two things worth flagging:** the pre-commit hook (`check-paper-urls.py`) validates new preprint URLs against the bioRxiv details API, which was down for this entire run — if it is still down when `publish_pending.py` commits, the hook may reject on a false "not found" and need `GUIDE_SKIP_URL_CHECK=1`. Separately, stale `2026-09-15-portfolio-watch.{commit-msg,rss-item.xml}` stubs are still sitting untracked in `scripts/` from an earlier failed run; I left them alone since they are outside today's scope, but they should be deleted.
 === 2026-09-27T02:53:37-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-28T02:13:09-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the two transient stubs instead of running TTS, publishing to R2, editing `feed.xml`, or committing — `publish_pending.py` will do those after batch TTS.
+
+**Published (pending batch TTS):** `podcasts/blackbird-brief/scripts/2026-09-28-portfolio-watch.md` (Portfolio Watch, 5 items + closer, 2,234 spoken words ≈ 12 min) plus `.rss-item.xml` (XML-validated against `feed.xml`) and `.commit-msg`.
+
+**Ledger:** appended 8 keys → 82 episodes / 446 unique keys.
+**Reference updated in place** (`memory/blackbird-portfolio.md`, 5 entries revised + `_Last update:_` bumped): Aletira, Winnow, Wong-lab TDP-43, Neuropsych NewCo, Clasp, and the §4 divested-asset screen (third → fourth data point).
+
+## Candidate funnel
+
+**Sources scanned**
+- BioPharma Dive front page — 200, 32 headlines, 5 in-window
+- Fierce Biotech + Fierce Pharma homepages — 200 via JSON-LD ItemList (articles themselves are 5,490-byte Cloudflare blocks; the Merck/Daiichi article was the one that served a real body)
+- Endpoints News front page — **jina now Cloudflare-blocked (403); plain `curl` + Safari UA works** and article pages carry `datePublished`, so date triage was done directly. ~70 headlines, 10 date-triaged, 6 in-window. Bodies paywalled → primary sources substituted for every pick.
+- BioSpace `/press-releases` — 200 but client-rendered, no headline elements; jina 403. **No discovery value this run.**
+- GEN — front page is JS-only; `/feed/` RSS is dated and worked (10 items)
+- BioBuzz `/news/` + BioHealth Capital Region roundup 09-25 — 200, regional sweep
+- PR Newswire health RSS — 200, 20 items; **carried both of today's items**
+- GlobeNewswire subject/industry RSS — HTTP 000, refused; skipped
+- Targeted searches: GPR52/Nxera, hearing-loss gene therapy, FOP comparators, Acadia, Lundbeck, Nanexa
+
+**Shortlist after dedup (14 candidates → 14 fresh by key; 6 dropped on substantive prior coverage)**
+- ✅ **CHOSEN (LEAD)** Mirum/Incyte Atebrioz (zilurgisertib) FDA approval, FOP — businesswire 20260925436454 (+ FDA Pasatru page, Regeneron, Ipsen as comparators)
+- ✅ **CHOSEN** Merck/Daiichi pull I-DXd accelerated-approval filing — fiercebiotech.com/biotech/merck-co-and-daiichi-pull-lung-cancer-filing… (dated **2026-09-28**)
+- ✅ **CHOSEN** IASO206 in vivo BCMA CAR-T FIH, IMS LBA-11 — prnewswire …302890813
+- ✅ **CHOSEN** SOLA Biosciences SOL-257 / JUMP70 AMED award — prnewswire …302891042
+- ✅ **CHOSEN** Lundbeck US HQ → Greater Boston — prnewswire …302890115
+- ✅ **CHOSEN (closer)** Novo × Nanexa PharmaShell — fiercebiotech …novo-inks-13b-nanexa-deal; + NoV B2/saRNA *Nat Commun* watch line
+- ✗ Endpoints "when is one trial enough" (09-25) — substantively the 09-26 lead's docket record; adds no facts
+- ✗ Acadia remlifanserin RADIANT (09-24) — covered 09-25
+- ✗ Kyverna long-term data; ADARx pricing (09-24/25) — covered 09-25
+- ✗ Legend Carvykti 5-year CARTITUDE-2 (09-25) — covered 09-26
+- ✗ Endpoints ultra-rare-economics panel (09-25) — paywalled, no primary source; item 1 makes the point with data
+- ✗ OncoC4 cesalatamig Fast Track — event 09-16, out of window (BioBuzz repost)
+- ✗ Merck/EyeBio remigromig DME; ATCC $99M DoW contract — no portfolio line
+- ✗ Endpoints 11 2026 list (09-25) — ecosystem colour, no portfolio line
+
+**Source failures:** GlobeNewswire RSS (HTTP 000, refused) — no retry, PR Newswire covered the wire channel. BioSpace index (client-rendered, jina 403). Endpoints via `r.jina.ai` (403 Cloudflare — new failure mode; direct curl is the working route now). None of these cost a candidate.
+
+**Housekeeping note (not acted on):** `scripts/2026-09-15-portfolio-watch.{commit-msg,rss-item.xml}` are stale untracked stubs from a truncated run — the 09-15 episode is already in `feed.xml`, so `publish_pending.py` never cleaned them. Left in place; safe to delete.
+=== 2026-09-28T02:38:35-07:00 done  blackbird-brief (exit 0) ===
