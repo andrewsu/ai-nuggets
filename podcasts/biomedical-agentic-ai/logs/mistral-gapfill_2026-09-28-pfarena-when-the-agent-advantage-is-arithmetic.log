@@ -1,0 +1,5 @@
+Script body: 5918 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2876 chars) -> 132.0s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2980 chars) -> 127.2s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (60 chars) -> 4.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-09-28-pfarena-when-the-agent-advantage-is-arithmetic.mp3 [mistral] 2,418,982 bytes, 302.3s

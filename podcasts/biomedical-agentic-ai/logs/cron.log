@@ -4966,3 +4966,43 @@ Background sweep resolved — no change to today's episode.
 
 Also recorded that both preprint APIs were down simultaneously (arXiv's API returned 0 bytes too, and the runner's shared cache was missing), while both HTML/RSS routes worked — so this configuration is never grounds for a skip day.
 === 2026-09-27T02:12:47-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-28T02:03:08-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did not run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those.
+
+**Files written**
+- `podcasts/biomedical-agentic-ai/scripts/2026-09-28-pfarena-when-the-agent-advantage-is-arithmetic.md` (954 spoken words, under the 1150 cap)
+- `.rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `.commit-msg`
+
+**Pick:** PFArena — arXiv 2609.28921, read in full from the PDF (137 KB extracted; grepped for `placeholder`, both hits are legitimate methods text, not unfilled results).
+
+---
+
+### Candidate funnel
+
+**bioRxiv** (details API, 2026-09-25 → 09-28, day-by-day, full collection) — 445 records pulled, 29 keyword hits, 4 substantive after discarding spurious "agent"/"llm"-inside-a-word matches:
+- AnewDDE: An Agentic Drug Discovery Engine — https://www.biorxiv.org/content/10.64898/2026.09.20.752967v1 — **deferred, full text unreadable today**: `.full.pdf` returned the 17-byte Cloudflare 429 twice (25s apart) and r.jina.ai on the same URL returned the 429 page. Strong candidate; re-check tomorrow.
+- MCseg: AI agent-guided workflow search for spatial transcriptomics — 10.64898/2026.09.20.752837
+- OmicsResonance: LLM-assisted cloud single-cell platform — 10.64898/2026.09.20.753054
+- Benchmarking single-cell foundation models for aging biology — 10.64898/2026.09.21.753191
+
+**arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml` **missing** (runner pre-fetch failed); `export.arxiv.org/api/query` **HTTP 406, zero bytes, 4 attempts at 75s spacing, never cleared**. Fell back to `arxiv.org/list/<cat>/recent?show=2000` for cs.AI, cs.CL, cs.MA and all q-bio subcats — 624 entries in-window, 27 biomedical+agentic hits. Shortlist:
+- **PFArena: Benchmarking Language Models for Protein Modification — https://arxiv.org/abs/2609.28921 — ✅ CHOSEN**
+- A Safety-Bounded SDC-to-MCP Gateway for Medical AI Agents — https://arxiv.org/abs/2609.31358
+- PIA: A Personal Intelligence Agent (health records, KG memory) — https://arxiv.org/abs/2609.31255
+- CRC-Router: Risk-Constrained Routing for Medical Agentic AI — https://arxiv.org/abs/2609.30714
+- HCOE: Hyperbolic Clinical Ontology Embeddings — https://arxiv.org/abs/2609.30763
+- BaseCamp — Agentic AI for DNA Sequencing Pipelines — https://arxiv.org/abs/2609.28557 — excluded, evaluation ships unfilled/placeholder-labeled
+- PRAXIS-VirtualCell — https://arxiv.org/abs/2609.29221 — excluded, shipped 2026-09-26
+
+**PubMed** (E-utilities, `reldate=5`) — 831 matched, 400 fetched, 32 relevance hits, 1 substantive:
+- Patient-governed agentic health data exchange (STARFISH) — npj health systems, PMID 42791307 — position/proposal piece, no evaluation; not picked
+
+**medRxiv** (same 4-day window, day-by-day) — 118 records, 0 keyword hits.
+
+**ChemRxiv** (`site:chemrxiv.org` + agent keywords) — no results inside the 4-day window; newest returned were July 2026 or older.
+
+**News / product launches** (3-day window) — nothing in-window; searches surfaced only July–September items already past the gate.
+
+**Policy / funders** — ARPA-H news 200, newest in-window item is the 09-25 cryopreservation program (off-target); NSF news 200, newest 09-16 (out of window); NIH news-releases **HTTP 403 Cloudflare block from this IP**, not retried past the first attempt.
+=== 2026-09-28T02:13:23-07:00 done  biomedical-agentic-ai (exit 0) ===
