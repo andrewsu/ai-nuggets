@@ -1,0 +1,6 @@
+Script body: 10610 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2878 chars) -> 127.5s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2957 chars) -> 138.7s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2901 chars) -> 143.5s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (1871 chars) -> 82.2s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-09-28-ifinatamab-b7h3-adc-withdrawal-spotlight.mp3 [mistral] 4,341,386 bytes, 542.6s

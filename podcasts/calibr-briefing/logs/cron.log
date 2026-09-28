@@ -4826,3 +4826,40 @@ Two notes for you:
 - **The Juvmo label is not published yet.** openFDA, DailyMed and Drugs@FDA all returned nothing as of Saturday night, and AbbVie issued no press release — so the script states the monotherapy-vs-adjunct wording is unconfirmed rather than asserting it. Worth a Monday check.
 - **Stale stubs in the tree:** `2026-09-15-pharma-headlines.*` and `2026-09-15-gsk-chimagen-trispecific-tce-spotlight.*` stubs are still sitting in `scripts/` from an earlier run that `publish_pending.py` never cleaned up. I left them alone, but they'll need clearing or they may confuse a future orchestrator pass.
 === 2026-09-27T02:38:41-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-28T02:23:09-07:00 start calibr-briefing ===
+Published today's two episodes for `calibr-briefing` (SKIP_TTS mode — scripts + RSS/commit stubs written, no TTS, no feed edit, no commit; the orchestrator handles those).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-09-28-pharma-headlines.txt` (1,745 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-09-28-ifinatamab-b7h3-adc-withdrawal-spotlight.txt` (1,636 words) + `.rss-item.xml` + `.commit-msg`
+
+**Spotlight thesis:** ifinatamab deruxtecan's withdrawal isn't about a bad drug — it's about a bar that moved. 48.2% confirmed ORR in IDeate-Lung01's 12 mg/kg group beats the 40% that won tarlatamab accelerated approval in 2024, but median DOR was 5.3 months vs tarlatamab's 9.7, and in the interval tarlatamab converted to full approval on DeLLphi-304 (OS 13.6 vs 8.3 mo, HR 0.60). So "available therapy" in 2L ES-SCLC is now a drug with randomized survival data, and a single-arm response rate can't clear it. Meanwhile GSK/Hansoh validated B7-H3 this year with ARTEMIS-008 (OS 18.5 vs 10.3 mo, HR 0.46) by running the randomized trial Daiichi tried to skip — and their global readout lands 2027 against IDeate-Lung02's 2028. Three years and $4B into the Merck–Daiichi collaboration, two of three ADCs have now failed to reach market.
+
+**Candidate funnel**
+
+Sources scanned:
+- BioPharma Dive front page + RSS — 32 items, 0 net-new (newest hard news Fri 09-25; two Mon 05:00 items are Biotech Voices opinion)
+- Endpoints front page + RSS — 24 items, 0 net-new (newest Sat 09-26; front page interleaves stale items per known trap)
+- Fierce Biotech / Fierce Pharma index — 22 items, 2 today-dated (`datePublished` 2026-09-28); `/rss/xml` 403, `/research/` article 403 (5,490-byte block), `/biotech/` article body readable
+- BioSpace front page (via jina) + `/archive/2026-09-{26,27,28}` — ~45 items, 4 net-new; `/press-releases` JS-only, 0 anchors
+- Clinical Trials Arena RSS — 10 items, 2 today-dated
+- GEN front page — parsed, 0 usable dated items (known undated-interleave problem)
+- GlobeNewswire healthcare search — HTTP 000, refused; skipped (covered by BioSpace archive)
+- Foresite Capital portfolio-news page — 6 items, newest 08-13; no fresh portfolio news
+- Targeted searches: EASD 2026 (opens today, programme starts 09-29 — week-ahead only), AI drug discovery 09-25→27 (nothing net-new; NIH Linked Discoveries already shipped 09-26)
+
+Shortlist after discarding already-shipped:
+- Merck/Daiichi withdraw ifinatamab deruxtecan BLA, ES-SCLC — merck.com PR 09-25, Fierce write-up 09-28 — **CHOSEN (spotlight + headline 1)**
+- FDA approves Gazyva (obinutuzumab) in childhood-onset idiopathic nephrotic syndrome, INShore — 09-25 — **CHOSEN (2)**
+- BMS Zenbexus (iberdomide) full EXCALIBER-RRMM Phase 3 at IMS Glasgow + Lancet Oncology — 09-24/25 — **CHOSEN (3)**
+- Innovent/Takeda expand Phase 3 MarsLight-11 (IBI363, α-biased IL-2/PD-1) to non-squamous NSCLC — 09-28 — **CHOSEN (4)**
+- Newron ENIGMA-TRS 2: US clinical hold persists, ex-US enrollment expands — 09-25 — **CHOSEN (5)**
+- Pharming: priority review, lower-dose Joenja in 13–27 kg children with APDS — 09-25 — **CHOSEN (6)**
+- Akeso begins global Phase 3 of cadonilimab in gastric cancer — 09-28 — **CHOSEN (7)**
+- Hengrui NewCo-model lawsuit (Fierce 09-25) — dropped, shipped 09-26
+- Legend 5-yr CARTITUDE-2 / Endpoints 11 class / NIH Linked Discoveries / Mirum Atebrioz / Welireg-Lenvima / Lundbeck-Boston — dropped, all shipped 09-25–09-27
+
+Full text read before drafting: Merck PR (complete), Fierce ifinatamab article (complete body), BMS EXCALIBER PR (complete incl. safety), Contemporary Pediatrics INShore write-up (complete), Innovent CTA article, IDeate-Lung01 and DeLLphi-301/304 and ARTEMIS-008 efficacy via search. Endpoints' "when is one trial enough" piece was paywalled past the lede — used only for the one-sentence context claim its headline and lede support.
+
+I also appended a note to memory correcting the "Fierce articles are uniformly Cloudflare-blocked" rule (it's per-section) and recording two new working discovery routes (`biospace.com/archive/YYYY-MM-DD` and the Clinical Trials Arena RSS), which were what carried today's Monday-fresh items.
+=== 2026-09-28T02:39:46-07:00 done  calibr-briefing (exit 0) ===
