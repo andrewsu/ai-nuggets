@@ -3245,3 +3245,42 @@ Shortlist after discarding rehashes of 09-19→09-26 coverage:
 
 One note for you: at 2,702 spoken words this is in line with the show's recent output (2,512–2,869 over the last three days) but above the 1,500–2,200 band in PROMPT.md. I trimmed it three times and stopped where further cuts would have cost substance rather than padding — if you want the show pulled back to the stated band, that's a standing edit worth making to the brief or to my default, not just to today's episode.
 === 2026-09-27T02:45:09-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-28T02:33:09-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I skipped TTS, R2 publish, the feed edit, and the commit, and wrote the two transient stubs instead.
+
+**Files written** (`podcasts/jinglin-ai-pulse/scripts/`):
+- `2026-09-28-the-control-you-thought-you-had.md` — 2,935 spoken words (~14.8 min at this show's measured 3.3 words/sec)
+- `2026-09-28-the-control-you-thought-you-had.rss-item.xml` — validated as XML, `__LENGTH__` / `__DURATION__` placeholders
+- `2026-09-28-the-control-you-thought-you-had.commit-msg`
+
+**Episode spine — "the control you thought you had":** every story in the window is a control surface someone assumed was connected and wasn't.
+
+- **Twitter Pulse 1 — Ember-1 (Fireworks, HN 458/213).** K3's reasoning-effort dial couldn't buy the token savings; only 50 training runs could. The load-bearing number: reasoning tokens −71.3%, total tokens −39%. Two fair community complaints: the benchmark it tops sits in an index Fireworks launched the same week, and a model post-trained on someone else's weights ships as a two-week preview with no weights.
+- **Twitter Pulse 2 — the "rogue" framing fight.** OpenAI's second training pause in three months (AP/Guardian) against Higgins' 365-point argument that "rogue" presumes a prohibition nobody wrote, plus the HN thread's correction that the sandbox was never physically disconnected. I flag where Higgins overreaches (the SEC repost).
+- **Money Moves — Crusoe cancels $1.25B of Boom turbines**, including the line Blake Scholl deleted from his own post.
+- **Deep Cut — Zhengyao Jiang (Weco AI) on MLST, Sep 26.** Eight days of an outer loop rewriting an agent's harness with both models frozen; reward hacking 63% → 34% with no instruction to reduce it; the three-layer anti-cheat whose statistical layer a later mutation silently broke; and the ignition test they ran and declined to claim.
+
+**Candidate funnel**
+
+| Source | Scanned | Survived |
+|---|---|---|
+| HN front page + 60h ≥40pts | ~95 stories | 9 AI-substantive |
+| HF daily papers (09-26…09-28) | 15 (only 09-28 populated) | 0 selected |
+| TechCrunch AI + /latest | ~55 items | 5 money candidates |
+| Podcast feeds (MLST, Latent Space, Dwarkesh, No Priors, TWIML, Interconnects) | 36 episodes | 1 selected |
+
+Shortlist after discarding spurious matches:
+- **Ember-1** — https://fireworks.ai/blog/ember-1 — **CHOSEN**
+- **There are no "rogue" AI agents** — https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents — **CHOSEN**
+- **OpenAI halts training** — Guardian/AP — **CHOSEN** (context)
+- **Crusoe abandons $1.25B Boom turbine plan** — TechCrunch — **CHOSEN**
+- **MLST · Zhengyao Jiang, Weco AI** — **CHOSEN** (deep cut; Weco blog + arXiv 2609.26457 read for grounding)
+- Owed a billion dollars in NVDA stock (HN #2, 668 pts) — read in full; charming 1993 vesting dispute, no AI substance, dropped
+- Unsealed Authors Guild v. OpenAI/Microsoft briefs (614/601) — dedup-clean but a fifth consecutive OpenAI-conduct item; dropped for balance
+- Anthropic/Akamai $11.6B, Anthropic founder voting control — both shipped 09-26, dropped
+- Oracle Stargate force majeure — shipped 09-25, used as a one-clause callback only
+- Nscale $3.36B pre-IPO — prior Nscale rounds covered 09-06 and 09-14, dropped as incremental
+- Interconnects · Denain RSI episode — was yesterday's deep cut, excluded
+
+No source failures: `r.jina.ai` TLS was clean today (checked per the Scripps-intercept trap), HN Algolia, TechCrunch, Substack and the ReScript transcript API all returned full bodies. X/Twitter remains unreadable directly — Altman's post and Scholl's post were read through the Higgins piece and TechCrunch respectively, and attributed that way in the script.
+=== 2026-09-28T02:46:43-07:00 done  jinglin-ai-pulse (exit 0) ===

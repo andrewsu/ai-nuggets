@@ -1,0 +1,9 @@
+Script body: 18057 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/7 (2812 chars) -> 131.3s ✓
+  [mistral:en_paul_neutral] chunk 2/7 (2845 chars) -> 141.2s ✓
+  [mistral:en_paul_neutral] chunk 3/7 (2835 chars) -> 126.2s ✓
+  [mistral:en_paul_neutral] chunk 4/7 (2819 chars) -> 115.8s ✓
+  [mistral:en_paul_neutral] chunk 5/7 (2993 chars) -> 149.9s ✓
+  [mistral:en_paul_neutral] chunk 6/7 (2850 chars) -> 142.5s ✓
+  [mistral:en_paul_neutral] chunk 7/7 (896 chars) -> 44.6s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-09-28-the-control-you-thought-you-had.mp3 [mistral] 7,275,877 bytes, 909.5s
