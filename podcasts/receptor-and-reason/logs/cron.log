@@ -4946,3 +4946,48 @@ Shortlist (★ = selected):
 
 One note for you: `scripts/fetch_preprint.py`'s primary channel (r.jina.ai) returned ~400-byte proxy errors on three bioRxiv URLs today; plain `curl` with a Safari UA plus `mutool` recovered two of them, and the third needed a 20 s backoff after a 17-byte 429. Worth knowing the helper's channel-1 failure isn't a render verdict.
 === 2026-09-27T03:14:13-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-28T02:53:10-07:00 start receptor-and-reason ===
+Episode written. Script, RSS-item stub, and commit-msg stub are in place; ledger appended. `SKIP_TTS=1` was set, so per PIPELINE I did not run `gen_tts.py`, `publish_episode.sh`, edit `feed.xml`, or commit — `publish_pending.py` does those after batch TTS.
+
+**Published:** `podcasts/receptor-and-reason/scripts/2026-09-28-receptor-and-reason.md` — 10 items, 3,121 words (~17.5 min at 1.2×). Ledger: 129 episodes, 1,334 items.
+
+## Candidate funnel
+
+**Sources scanned**
+- **bioRxiv details API** — healthy all morning; swept day-by-day 09-21→09-28, **1,734 preprints**, 544 passed the keyword filter (148 neuroscience, 55 bioinformatics, 8 pharmacology/toxicology, rest off-target categories).
+- **Nature-family RSS** — npp, mp, tp, nbt, ncomms, natmachintell, npjdigitalmed all 200; 56 items, 14 in-window and on-target.
+- **Crossref (Elsevier)** — Neuropharmacology (7 items) + Biological Psychiatry (6 items) in window.
+- **arXiv API — HTTP 406, zero bytes** (known behaviour from this IP; shared cache `/tmp/ai-nuggets-arxiv-cache.xml` was missing). Fell back to `arxiv.org/list/<cat>/recent?show=2000` HTML for cs.AI, q-bio.NC, q-bio.QM → **1,960 unique submissions** across 09-21→09-28. Gap: cs.CL and cs.MA not separately swept.
+- **Psychiatric Times** — homepage 200 but every article is a Cloudflare block from this host; no usable items.
+
+**Dedup:** 62 candidates → 42 fresh (20 already shipped). Final roster re-filtered: 10/10 still fresh.
+
+**Full-text gate:** bioRxiv's Cloudflare layer 429'd every direct PDF fetch (17-byte replies), including single-worker sequential. Recovered 6 of 12 via `r.jina.ai` on `.full.pdf` across three retry passes + one WebFetch reroute.
+
+**Shortlist and outcomes** (★ = selected)
+- ★ ARSA — autonomous research scientist, ADRD target nomination · biorxiv 2026.09.19.752836 — **lead**
+- ★ Lithium chloride / WDFY3 haploinsufficiency · doi:10.1038/s41380-026-03844-5 (only Nature-family item with a rendered body)
+- ★ Xenon / PVT–CeA autism rescue · biorxiv 2026.09.23.753714
+- ★ Fluoxetine / ADAR editing in Arid1b+/− · biorxiv 2026.09.24.753309
+- ★ OCD SSRI treatment-resistance rsFC · biorxiv 2026.09.23.753814
+- ★ MACBT multi-agent CBT · arxiv 2609.30939
+- ★ PLABench leakage-controlled affinity benchmark · biorxiv 2026.09.17.752433
+- ★ TopU-LBVS hard-negative screening benchmark · arxiv 2609.29740
+- ★ Closed-loop LM agent, hit-to-lead · biorxiv 2026.09.19.752921
+- ★ PRAXIS-VirtualCell · arxiv 2609.29221
+- Thalamic 5-HT2A / tonic GABA-A · biorxiv 2026.09.19.751734 — **deferred, throttled (3 passes + WebFetch)**
+- Accumbal cholinergic ISR-HCN2 · biorxiv 2026.09.18.752826 — **deferred, throttled**
+- AKAP11 bipolar PTV · biorxiv 2026.09.19.752887 — **deferred, throttled**
+- Dementia Language Models · biorxiv 2026.09.16.752129 — **deferred, throttled**
+- Kv1.1 gene therapy in Scn2a-deficient mice · biorxiv 2026.09.22.753612 — **deferred, throttled**
+- Co-folding finetuning, ligand-induced conformations · biorxiv 2026.09.21.752570 — **deferred, throttled**
+- NTS→NAc GLP-1 / cocaine seeking · doi:10.1038/s41398-026-04493-6 — **deferred, abstract-only** (AOP; body not rendered, not in EPMC, `.pdf` serves HTML)
+- 7T MRS glutamate in antipsychotic-free FEP · doi:10.1038/s41398-026-04487-4 — same
+- LLM-as-judge for clinical genAI · doi:10.1038/s41746-026-03248-3 — same
+- ClpP / dordaviprone allosteric inhibition · doi:10.1038/s41467-026-78140-5 — same
+- GluN2D switch drives cortical hyperexcitability · Biol Psychiatry — **dropped, Elsevier, `inEPMC: N`**
+- Fiber-photometry sensor divergence, morphine · Neuropharmacology — **dropped, Elsevier, not in EPMC**
+- LLM edit sequences for synthesizability · doi:10.1038/s42256-026-01304-x — **dropped, paywalled**
+
+One note worth flagging: the four Nature-family AOP articles are a new failure mode for this show — they return a clean 200 with a full-looking page, but the body is genuinely absent (no Results/Discussion sections, `.pdf` redirects to HTML, absent from Europe PMC). Byte count won't catch it; grepping for section headings will.
+=== 2026-09-28T03:16:43-07:00 done  receptor-and-reason (exit 0) ===
