@@ -3559,3 +3559,27 @@ Two dedup notes: BMS-986453 has never appeared on this show, and I framed it as 
 
 Memory updated: run-log note for 09-27 (including the reusable AND-gate/OR-gate spine and the toxicity-table-as-gate-assay move), plus a correction to the weekend-gap reference — **Sunday is not dead when a congress ended Fri/Sat**, because the final day's recap publishes after the Saturday cron.
 === 2026-09-27T02:51:58-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-28T02:43:09-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two stub files and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-09-28-muc17-kcar-t-klk5-secreting-car-t-glycocalyx-epitope-position.md` (1,363 spoken words, ~7 min)
+- `…​.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** bioRxiv `10.64898/2026.09.25.754490` v1, posted 2026-09-27 — "Engineering CAR-T cells to remodel the mucin-rich cancer cell glycocalyx" (Sangwoo Park + Marcela Maus, MGH/HMS, with Matthew Paszek). Full text read from the PDF. Editorial spine: antigen density is non-monotonic when the antigen is itself the steric barrier (killing 20.2% → 32.4% → 24.5% as Tn-MUC1 rises), and whether glycocalyx debulking helps depends entirely on epitope position — proved by the paper's own failure, a Tn-MUC1 CAR whose epitope sits inside the KLK5-cleavable repeat. Contextualized against PEGPH20/HALO-301 and Amgen's terminated MUC17×CD3 BiTE.
+
+**Candidate funnel**
+
+- **bioRxiv details API** — recovered after a 4-day silent-empty outage. Day-by-day sweep 09-25→09-28: 445 unique records (260/68/65/52), full pagination, 48 keyword hits. In-window substantive shortlist:
+  - ✅ **CHOSEN** — Engineering CAR-T cells to remodel the mucin-rich cancer cell glycocalyx — `biorxiv.org/content/10.64898/2026.09.25.754490v1`
+  - Low-matrix organoid–T cell co-culture platform for TCEs (Birmingham + AstraZeneca) — `…/10.64898/2026.09.21.751493v1` (full text fetched; strong runner-up)
+  - QSP model for TROP2 ADC in TNBC (Popel, JHU) — `…/10.64898/2026.09.20.752985v1`
+  - Spatial immune profiling, pediatric PFA ependymoma — `…/10.64898/2026.09.24.754209v1`
+  - DARPin probe for TCR-CD3 imaging — `…/10.64898/2026.09.24.754129v1`
+  - MYC-hyperactivated osteosarcoma resists cabozantinib + TIGIT — `…/10.64898/2026.09.21.753033v1`
+- **News (Fierce Biotech/Pharma, Endpoints, BioPharma Dive, BioSpace, Clinical Trials Arena, GlobeNewswire)** — all reachable; only one on-beat item in the 2-day window: the ifinatamab deruxtecan BLA withdrawal in ES-SCLC (Friday PM). Not taken — it is calibr-briefing's entire 2026-09-28 spotlight and would have been a rewrite. Rest was M&A/IPO/obesity/ophthalmology.
+- **Journal RSS (Nature, Nat Med, Nat Immunol, Nat Biotech, Nat Cancer, Nat Rev Drug Discov)** — all 200, zero on-beat items dated 09-25→09-28.
+- **Funders** — arpa-h.gov 200 (nothing on-beat), nsf.gov 200 (nothing on-beat), **nih.gov/news-events/news-releases 403 (5,480-byte block), skipped**.
+- **Source friction:** every bioRxiv `.full.pdf` returned the 17-byte 429 on first pass, including via r.jina.ai and WebFetch (different IP, `Retry-After: 78`) — a per-document throttle that cleared after ~15 min of single-worker backoff. No candidate was lost to it.
+=== 2026-09-28T03:12:52-07:00 done  justice-biotech-brief (exit 0) ===
