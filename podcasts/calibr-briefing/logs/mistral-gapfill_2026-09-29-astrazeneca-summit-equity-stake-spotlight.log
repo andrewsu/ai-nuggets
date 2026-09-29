@@ -1,0 +1,7 @@
+Script body: 12691 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2980 chars) -> 154.7s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2985 chars) -> 133.1s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2906 chars) -> 132.4s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2811 chars) -> 115.4s ✓
+  [mistral:en_paul_neutral] chunk 5/5 (1004 chars) -> 53.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-09-29-astrazeneca-summit-equity-stake-spotlight.mp3 [mistral] 5,219,309 bytes, 652.4s

@@ -4863,3 +4863,35 @@ Full text read before drafting: Merck PR (complete), Fierce ifinatamab article (
 
 I also appended a note to memory correcting the "Fierce articles are uniformly Cloudflare-blocked" rule (it's per-section) and recording two new working discovery routes (`biospace.com/archive/YYYY-MM-DD` and the Clinical Trials Arena RSS), which were what carried today's Monday-fresh items.
 === 2026-09-28T02:39:46-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-29T02:20:12-07:00 start calibr-briefing ===
+Both episodes for **calibr-briefing 2026-09-29** are written. `SKIP_TTS=1` was set, so per PIPELINE.md I skipped `gen_tts.py`, R2 publish, the `feed.xml` edit, and the commit, and wrote the transient stubs instead.
+
+**Files written (`podcasts/calibr-briefing/scripts/`):**
+- `2026-09-29-pharma-headlines.txt` (1,943 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-09-29-astrazeneca-summit-equity-stake-spotlight.txt` (1,963 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS fragments validate as XML; scripts are clean of URLs, DOIs, headings and bullets.
+
+**Candidate funnel**
+
+Sources swept (all HTTP 200 via plain curl + Safari UA — no source failures today): BioPharma Dive front page, Fierce Biotech, Fierce Pharma, Endpoints News, BioSpace /press-releases, GEN, Clinical Trials Arena. ~130 index items scanned, 13 survived the freshness + relevance filter (Mon 09-28 / Tue 09-29 AM).
+
+Shortlist, all read in full before drafting:
+- **CHOSEN — SPOTLIGHT** · AstraZeneca $2B convertible-preferred stake (~12%) in Summit + ivonescimab/CLDN18.2-ADC collaboration — fiercebiotech.com/biotech/astrazeneca-scales-summits-pd-1xvegf-strategy-2b-investment-fuel-adc-combinations (+ full Summit PR via BioSpace mirror, AZ PR via WebFetch)
+- **CHOSEN — headline 2** · Merck/SciBrunch KRAS G12D, $400M upfront / $2.13B — fiercebiotech.com/biotech/merck-pens-21b-deal-chinas-scibrunch-chase-kras-g12d
+- **CHOSEN — headline 3** · Novo/Hengrui HRS-1596 weekly oral GLP-1/GIP, $300M / $2.6B (Sept 29 release) — fiercebiotech.com/biotech/novo-agrees-26b-deal-preclinical-glp-1gip-drug-demand-hengrui
+- **CHOSEN — headline 4** · Adicet prula-cel allogeneic γδ CAR-T, 1-yr lupus nephritis data — biopharmadive.com/news/adicet-gamma-delta-cell-therapy-lupus-study-results/831483/
+- **CHOSEN — headline 5** · Kodiak Daybreak Ph3, stock +128% — fiercebiotech.com/biotech/kodiak-roars-back-pivotal-victory-resurrected-eye-disease-drug
+- **CHOSEN — headline 6** · Mirum brelovitug AZURE-1 Ph3 hit — fiercebiotech.com/biotech/mirum-posts-phase-3-hepatitis-win-commercially-differentiated-challenger-gilead-and-vir
+- **CHOSEN — headline 7** · Roche returns myostatin antibody emugrobart to Chugai — fiercebiotech.com/biotech/roche-drops-muscle-sparing-obesity-antibody-after-flunked-interim-analysis
+- **CHOSEN — headline 8** · Tolerance Bio / Tanabe anti-IL-33, up to $560M — fiercebiotech.com/biotech/tolerance-continues-thymus-focused-deals-560m-pact-tanabe
+- **CHOSEN — quick hits** · Egetis Emcitate FDA approval (MCT8 deficiency); Eccogene $50M milestone / elecoglipron Ph3 start; AZ–HUTCHMED savolitinib+osimertinib US NDA on SAFFRON — all via BioSpace PR mirrors
+- Not used · Scynexis $214M BARDA antifungal contract — thin, no mechanism angle
+- Not used · Nonprofit gene therapy priced at $3.25M — overlapped last week's Ultragenyx pricing spotlight
+- Not used · Basecamp Research $140M Series C (AI, Anthropic/NVIDIA-backed) and Enveda $311M Series E — on-focus for the AI area but dated **Sept 23**, outside the window; the AI thread today is carried by Kodiak's AI-guided retreatment algorithm in a registrational dosing strategy
+- Not used · CTA "Australia investigates OpenAI Medicare breach" — undated, off-focus
+
+Spotlight selection rationale: AZ/Summit was the day's dominant story by size and by read-through, and the structure — equity with explicitly no license, no milestones, no royalties, no ROFR — is a genuinely new deal template, bought by the one large oncology company whose own PD-1 bispecific (volrustomig) was discontinued against Keytruda in August, and bought blind to the HARMONi-3 pivotal data. Adicet was the runner-up and got the deepest headline slot instead, since yesterday's spotlight was already ADC/oncology.
+
+One memory update: appended today's source-access findings to `reference_biotech_news_source_access.md` — BioSpace /press-releases is fully working again (index *and* full BusinessWire bodies, the best route when a corporate newsroom 403s), and `r.jina.ai` now hits a Cloudflare challenge on endpoints.news, so the Published-Time triage trick recorded on 09-27 no longer works.
+=== 2026-09-29T02:31:56-07:00 done  calibr-briefing (exit 0) ===
