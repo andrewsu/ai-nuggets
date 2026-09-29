@@ -1,0 +1,4 @@
+Script body: 5679 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2980 chars) -> 122.1s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2698 chars) -> 115.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-09-29-doatlas-2-price-of-autonomous-causal-discovery.mp3 [mistral] 2,277,503 bytes, 284.7s

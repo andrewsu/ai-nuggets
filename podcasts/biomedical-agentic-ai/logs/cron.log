@@ -5006,3 +5006,39 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plu
 
 **Policy / funders** — ARPA-H news 200, newest in-window item is the 09-25 cryopreservation program (off-target); NSF news 200, newest 09-16 (out of window); NIH news-releases **HTTP 403 Cloudflare block from this IP**, not retried past the first attempt.
 === 2026-09-28T02:13:23-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-29T02:00:11-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written** (`podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-09-29-doatlas-2-price-of-autonomous-causal-discovery.md` — 892 spoken words (cap 1150)
+- `…rss-item.xml` — validated as XML, both placeholders present
+- `…commit-msg`
+
+**Pick:** DoAtlas-2 (arXiv 2609.35107, posted 09-28), MBZUAI. Full text read via PDF + mutool; no placeholder strings; all cited figures verified against the source (Table 1 token/runtime footprint, the 81/117/2 relation-state split, the sixfold self-attenuation in §4.3, the NHANES 0.798-vs-0.803 comparison in §5).
+
+The take: the discoveries are small and the price is extraordinary — 1.59 trillion tokens over 70 days, 781M per research question — but the evidence ledger, with "unresolved" as a first-class state and the denominator preserved, is the transferable artifact. The paper's strongest result is one it doesn't lead with: its own flagship pathway was refuted by its own second round.
+
+## Candidate funnel
+
+**Sources scanned**
+- **bioRxiv details API** — day-by-day sweep 09-26→09-29, 553 records, cursor-paginated. 39 keyword hits, ~4 substantive after discarding spurious matches ("agent" → chemical agent, "llm" inside words).
+- **arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries (capped; covers 09-27 + 09-28 only). 195 agentic∧biomedical hits, ~16 substantive.
+- **PubMed** — E-utilities, `reldate=5`, 60 PMIDs; dates read from `history[].pubmed`. Nothing on-brief beat the arXiv leaders.
+- **ChemRxiv** — `site:chemrxiv.org` web search; all hits Feb–May 2026, **zero in-window**.
+- **News / product launches** — Insilico Pharma.AI fall update (PR preview); Stanford virtual biotech already shipped 09-19.
+- **Funders** — ARPA-H latest is 09-25 (cold-chain cell therapy, critical care), out of the 3-day window and not agentic-AI. NSF nothing on-brief. **NIH press page — Cloudflare block ("unable to access nih.gov"), skipped.**
+
+**Shortlist**
+- ✅ **CHOSEN** — DoAtlas-2: A Foundation for Self-Evolving Causal Biomedical Discovery — https://arxiv.org/abs/2609.35107
+- BIABench: Evaluating AI agents on real-world bioimage analysis tasks — https://arxiv.org/abs/2609.34274 *(full text read; strong runner-up — run-to-run variance within one agent exceeds between-agent variance. Lost on beat fatigue: 09-24/09-25/09-28 were all benchmark/skeptic episodes)*
+- GEMOT: Towards Mechanistic World Models for Biology — `10.64898/2026.09.26.754619` — **DEFERRED, full-text gate**: 17-byte 429 on `.full.pdf`, 5 spaced attempts. Per-document throttle, not an outage (the details API worked the same minute). Logged to memory.
+- Agentic transcranial functional ultrasound imaging / @fUS — `10.64898/2026.09.25.752961` — deferred, medium priority
+- Unknown is not normal: LLM extraction vs. rule-based decision logic — https://arxiv.org/abs/2609.34112
+- APOLO: Automatic Prompt Optimization for Ontology Learning — https://arxiv.org/abs/2609.34540
+- RareDx: graph-grounded policy optimization for rare-disease diagnosis — https://arxiv.org/abs/2609.35549
+- AgentHop: diagnostic benchmark for agentic multi-hop scientific QA — https://arxiv.org/abs/2609.34428
+- Research-Native by Construction (AfS) — https://arxiv.org/abs/2609.35182 *(system description, explicitly no benchmark)*
+- Patient-governed agentic health data exchange (npj health systems, PMID 42791307)
+
+One caveat worth flagging: the arXiv cache's 500-entry cap covers only 09-27 and 09-28, so the 09-26 slice of the 4-day window went unsampled on that source — a known recall gap, not new today.
+=== 2026-09-29T02:08:22-07:00 done  biomedical-agentic-ai (exit 0) ===
