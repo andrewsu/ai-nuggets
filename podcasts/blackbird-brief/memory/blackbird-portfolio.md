@@ -836,6 +836,22 @@ https://www.tedcomd.com/news-events/press-releases/2026/tedco-invests-750000-ast
     preclinical and do not change the approved indication.** Sources: https://doi.org/10.1371/journal.ppat.1014448 ·
     https://www.genengnews.com/topics/infectious-diseases/how-bladder-cells-fight-hidden-e-coli-new-insights-into-recurrent-utis/
 
+  - **THE CAPITAL FOR THIS THEME KEEPS ARRIVING NON-DILUTIVE AND FEDERAL — THIRD INSTANCE THIS QUARTER (added 2026-09-29
+    Portfolio Watch CLOSER; announced 2026-09-28).** **BARDA awarded Scynexis a contract worth up to $214M over up to ten
+    years, initial payment ~$18.5M**, to take **SCY-247** — a **second-generation triterpenoid ("fungerp"), ORAL *and* IV** —
+    into **Phase 2 for invasive candidiasis and prevention of invasive fungal disease.** Positive **Phase 1 oral data
+    September 2025**; IV Phase 1 dosing complete. Class differentiators vs echinocandins: an **oral option** (echinocandins
+    are IV-only) and **deeper tissue penetration**. History: first fungerp (Brexafemme, approved 2021 in VVC) licensed to
+    **GSK**; a beta-lactam cross-contamination finding forced a recall and clinical hold, settled at a **$22M** final payout.
+    **⇒ READ ONE (Yixuan Qiu + Esther Park) — A BORROW OPPORTUNITY WITH A CLOCK ON IT: invasive candidiasis is the severe end
+    of the organism where UMB (Jabra-Rizk, §2b) holds a characterised clinical collection we already flagged as
+    borrow-not-build. A federally funded Phase 2 will need well-characterised resistant clinical isolates — have that
+    conversation now.** **⇒ READ TWO — THE PATTERN, NOT THE DRUG: with Astek's TEDCO ladder ($250K→$500K→$750K) and
+    Nutromics' FDA Breakthrough Device route, this is the third time this quarter that capital for the chronic/hospital
+    infection theme arrived via a federal or state programme rather than venture. That should change what we tell a founder
+    on this theme to build toward — a federal programme milestone, not a Series A.** Source:
+    https://www.fiercebiotech.com/biotech/scynexis-bags-214m-barda-contract-antifungal-development
+
 **COPD theme — the UPSTREAM ALARMIN LAYER IS CONTESTED AT FOUR POINTS ON ONE PATHWAY; the two differentiators on offer were a PROPERTY or a POPULATION, and as of 2026-09-09 the POPULATION lane is TAKEN
 (opened 2026-08-29 Portfolio Watch item 4; four-seat map added 2026-09-08 Portfolio Watch LEAD; full tozorakimab dataset + eosinophil gradient added 2026-09-09 Portfolio Watch LEAD).** Two independent wins for the epithelial alarmin
 **TSLP** in a single week across two organs: **Tezspire (tezepelumab) Phase 3 CROSSING in
@@ -975,6 +991,28 @@ https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentall
     answer changes a positioning decision currently being made blind. **Watch (Virginia + Avi).** Sources:
     https://www.globenewswire.com/news-release/2026/09/15/3361907/0/en/connect-biopharma-announces-positive-preliminary-topline-data-from-its-global-phase-2-study-of-rademikibart-as-an-add-on-treatment-for-acute-exacerbations-in-adult-and-adolescent-p.html ·
     https://www.fiercebiotech.com/biotech/connect-biopharma-missing-asthma-primary-endpoint-sends-investors-spiraling-about-copd
+
+  - **SECOND NON-RESPIRATORY BID ON THE IL-33 SEAT THIS MONTH, AND THE DEAL STRUCTURE IS THE CHEAPEST VERSION OF THE
+    DIVESTED-ASSET SCREEN WE HAVE LOGGED (added 2026-09-29 Portfolio Watch item 4; announced 2026-09-28).** **Tolerance Bio
+    (Philadelphia) licensed TLB-33, a clinical-stage anti-IL-33 antibody, from Tanabe Pharma: up to ~$560M in MILESTONES plus
+    EQUITY and tiered royalties, exclusive worldwide rights ex-Japan, NO UPFRONT CASH DISCLOSED.** The antibody is Tanabe's
+    **MT-2990**: **>150 subjects across five clinical studies**, including a **Phase 2 in endometriosis-related pain** and an
+    **exploratory study in ANCA-associated vasculitis**. **Phase 2 planned 2027, indication unnamed; financing round expected.**
+    Repositioning thesis: IL-33 released on tissue stress drives **thymic involution**, so blocking it **preserves** the thymus,
+    paired with long-acting IL-7 (**efineptakin alfa**, in-licensed August 2026 from **NeoImmuneTech, Rockville MD**, up to
+    $260M) to **restore** it; first efineptakin indication is HIV patients with poor immune reconstitution. Behind those:
+    stem-cell-derived replacement thymic cells and a thymus-targeted mRNA programme with **ZipCode Bio** (Drew Weissman
+    co-founder). CEO/co-founder **Francisco Leon**, CBO **Phil Ball**; the team's prior in-license-and-reposition run produced
+    **Tzield** and a **$2.9B Sanofi exit**. Second clinical-stage in-license in under six weeks.
+    **⇒ READ ONE (Eddie Cherok + Avi Khanna) — FIFTH SHAPE FOR THE §4 DIVESTED/IN-LICENSED-ASSET SCREEN and the first one a
+    balance-sheet-free sponsor could actually run.** Prior shapes: Pfizer CD228 ADC at **$12M upfront** (09-05); **Lexeo/Mantle,
+    a whole clinical-stage company at $8.3M upfront** (09-23); a reverted **IND-enabling-complete GPCR portfolio** (09-26);
+    **Incyte→Mirum** (09-28). **This one bought >150 patients of human safety for milestones, equity and royalties — available
+    to a sponsor with a credible development plan and no balance sheet, which describes a Blackbird newco at formation.**
+    **⇒ READ TWO (Virginia Burger) — ALARMIN MAP: the IL-33 LIGAND seat is being bid up from fields we are not tracking
+    (endometriosis pain, vasculitis, thymic biology), not from respiratory. That SHORTENS the window on the standing 08-29
+    question of whether the Blackbird COPD work sits upstream or downstream of the alarmin layer.** Source:
+    https://biobuzz.io/news/tolerance-bio-licenses-anti-il-33-antibody-tanabe-pharma/
 
 **NON-OPIOID PAIN theme — THE COMPETITION IS SELLING A *PROPERTY* AND A *POPULATION*, NOT A TARGET, AND THE ROUND CLOSED ON A REPEAT
 ION-CHANNEL FOUNDER (opened 2026-09-19 Portfolio Watch item 3; announced 2026-09-09, surfaced regionally 2026-09-17).**
@@ -1228,7 +1266,30 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-09-28_
+_Last update: 2026-09-29_
+- **THE COMMERCIAL COUNTERPART TO THE ATEBRIOZ REGULATORY TEMPLATE, AND IT IS A THIRD EXIT ARCHITECTURE: A NONPROFIT KEEPS THE BLA AND
+  RENTS THE COMMERCIAL FUNCTION FROM ANOTHER NONPROFIT (added 2026-09-29 Portfolio Watch LEAD; QTC announcement 2026-09-28).**
+  **WASKYRA® (etuvetidigene autotemcel)** — ex vivo **lentiviral** gene therapy (autologous CD34+ HSPCs, functional *WAS* transgene) for
+  **Wiskott-Aldrich syndrome**, **FDA-approved 2025-12-09** for patients **≥6 months** with a *WAS* mutation for whom HSCT is appropriate and
+  **no suitable HLA-matched related donor** exists. Pivotal evidence **n=27** severe-disease patients: **severe-infection rate −93%**,
+  **moderate-to-severe bleeding episodes −60%**, each against the patient's own pre-treatment period. Developed at **SR-Tiget, Milan** over
+  20+ years; manufactured by **AGC Biologics**; also EU-approved.
+  **THE STRUCTURE: Fondazione Telethon (Italian nonprofit) RETAINS the BLA. Orphan Therapies — commercial subsidiary of the nonprofit Orphan
+  Therapeutics Accelerator — is the exclusive US commercialization partner.** Both parties call it **the first advanced therapy commercialized
+  entirely through a nonprofit collaboration.** **2026-09-28: UCSF Benioff Children's Hospitals is the FIRST US Qualified Treatment Center.**
+  Operating model = **QTC network + specialty distribution + patient services** (referral coordination, site readiness, reimbursement
+  navigation), stated to optimize **cost transparency and supply continuity over revenue maximization**. CEO **Ilaria Villa** (Telethon);
+  CCO **Beth White** (Orphan Therapies). **US list price $3.25M** (Endpoints, 2026-09-28). Originating MoU December 2025.
+  **⇒ READ (Matt Tremblay + Maisha Rahman + Emily Wilkinson): Blackbird's implicit architecture is "nonprofit funds → company commercializes."
+  This is a third option — nonprofit keeps the licence, rents commercialization — and it applies to exactly the asset class we generate: a
+  single-administration genetic medicine in a population too small for a strategic to want the launch. Worth understanding BEFORE the
+  pre-IND, not after.** **⇒ PRICING READ (Eddie Cherok): $3.25M sits BELOW Ultragenyx's $4M Sanfilippo therapy and above most approved CGT —
+  a nonprofit sponsor did NOT price below market. Use this the next time a board assumes nonprofit provenance implies a discount.**
+  **⇒ CANDID LIMIT: n=27, and ONE treatment centre ~10 months after approval. Proof that access can be BUILT without pharma; not yet proof it
+  SCALES. METRIC TO TRACK: QTC count at 2027-09.** Sources:
+  https://www.prnewswire.com/il/news-releases/ucsf-benioff-childrens-hospitals-become-the-first-us-qualified-treatment-center-contracted-to-administer-individualized-gene-therapy-waskyra-302891579.html ·
+  https://endpoints.news/nonprofits-gene-therapy-for-rare-immune-disease-will-cost-3-25-million/ ·
+  https://www.asgct.org/news-publications/asgct-news/fda-approves-waskyra-first-gene-therapy-for-wiskott-aldrich-syndrome
 - **THE WORKED EXAMPLE OF OUR OWN REGULATORY ARGUMENT: A ~300-PATIENT US DISEASE NOW HAS *THREE* APPROVED DRUGS, AND THE NEWEST TOOK A
   *FULL* APPROVAL OFF ONE PHASE 2 OF 63 PATIENTS ON A 24-WEEK IMAGING-VOLUME ENDPOINT (added 2026-09-28 Portfolio Watch LEAD; approval
   2026-09-25).**
@@ -2962,7 +3023,31 @@ _Last update: 2026-09-23_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-28_
+_Last update: 2026-09-29_
+- **FIFTH ENTRANT INTO THE CONTROL-ARCHITECTURE ROW IN ONE MONTH, AND THE ONE THAT DOES THE MOST DAMAGE: AN OFF-THE-SHELF ALLOGENEIC CELL
+  THERAPY WITH 12-MONTH LUPUS REMISSIONS AND FDA ALIGNMENT ON *OUTPATIENT* DOSING (added 2026-09-29 Portfolio Watch item 2; announced
+  2026-09-28).** **Adicet Bio (Nasdaq: ACET) — prula-cel (prulacabtagene leucel, formerly ADI-001): ALLOGENEIC GAMMA-DELTA CAR-T targeting
+  CD20**, single dose, donor-derived.
+  **EFFICACY (n=22 evaluable: 16 lupus nephritis, 6 extra-renal SLE; all ≥6 mo, 13 ≥12 mo). Baseline mean SLEDAI-2K 13, mean UPCR 2.8 g/g,
+  all ≥3 prior therapies (71% ≥4). Complete renal response 50% of LN at 12 months; DORIS remission 54%; PGA <0.5 in 85% of 12-month
+  patients; all responses ongoing at 12–21 months except one. ALL patients discontinued immunosuppressants; all but one tapered to ≤5 mg
+  prednisone equivalent.** Biomarkers: **CD19+ B cells undetectable in all 22 then naïve-dominant reconstitution; anti-dsDNA reduced 10/11;
+  complement recovery 9/10.**
+  **SAFETY (n=24): CRS grade 1–2 in 25%, NONE >grade 2; NO ICANS; NO IEC-HS; NO GvHD; no DLTs. Infections 54% overall, grade ≥3 in 8.3%.**
+  **Company states FDA alignment supports OUTPATIENT administration.** **NEXT: pivotal LN start-up Q4 2026 — single-arm, ≥2 prior
+  immunosuppressant failures, primary CRR at 12 months**; SSc update H1 2027, LN/SLE update mid-2027. Interim CMO **Lloyd Klickstein**,
+  CEO **Chen Schor**. **Stock −22% intraday.** Jefferies (**Dennis Ding**): "competitive [with] cell therapy and antibody comps"; peer cell
+  therapies ~40% CRR.
+  **⇒ READ (Jon Robbins + Eddie Cherok) — NARROW THE ROW, DO NOT DEFEND IT AS WRITTEN. Sequence: Kyverna (09-25) removed the safety
+  argument; IASO in vivo CAR-T (09-28) removed manufacturing AND lymphodepletion; Adicet removes the autologous supply chain entirely and
+  adds an agency-blessed outpatient setting. WHAT SURVIVES AND IS DEFENSIBLE: an engager buys DOSE CONTROL and REVERSIBILITY, not exemption
+  from the class.** Keep the 09-15 discipline — these are **CD20/CD19 B-cell-depleting** products and **Winnow is T-CELL-mediated**; the read
+  is the control architecture, not the target.
+  **⇒ THE HALF IN OUR FAVOUR: a 54% infection rate (8.3% grade ≥3) after a SINGLE IRREVERSIBLE dose is the exact liability a titratable
+  engager is sold against — per the 09-15 inversion rule, in autoimmunity the safety table IS the product.** **CANDID: n=22, single-arm,
+  open-label, no comparator, 13 patients at 12 months.** Sources:
+  https://www.biospace.com/press-releases/adicet-bio-announces-positive-safety-and-efficacy-data-from-prula-cel-formerly-adi-001-study-in-patients-with-systemic-lupus-erythematosus-with-or-without-lupus-nephritis ·
+  https://www.biopharmadive.com/news/adicet-gamma-delta-cell-therapy-lupus-study-results/831483/
 - **IN VIVO CAR-T HAS FIRST-IN-HUMAN DATA WITH NO APHERESIS AND NO LYMPHODEPLETION — AND THE SAME DATASET BOTH ATTACKS AND DEFENDS THE
   CONTROL-ARCHITECTURE ROW (added 2026-09-28 Portfolio Watch item 3; presented 2026-09-26, IMS Annual Meeting late-breaking oral LBA-11).**
   **IASO Bio (Shanghai / Nanjing / Pleasanton CA) — IASO206**, a **BCMA-directed IN VIVO CAR-T** on the **InTelliCAR™** platform: **single IV
@@ -4153,6 +4238,21 @@ and competitive detail lives here — treat the news as portfolio news, not
 ecosystem news.
 
 ### Adventris Pharmaceuticals — JHU KRAS-vaccine company, Blackbird BioHub resident (mKRAS-VAX; aSKY landscape adjacency) ⚠
+_Last update: 2026-09-29_
+- **THE CLEARING PRICE FOR A KRAS ASSET IS NOW SET BY A *PRECLINICAL* MOLECULE (added 2026-09-29 Portfolio Watch item 5; announced
+  2026-09-28).** **Merck & Co. → SciBrunch (Shanghai): $400M UPFRONT, up to $2.13B total across "multiple indications," worldwide rights to
+  SPR2015, a PRECLINICAL KRAS G12D inhibitor** ("nanomolar antiproliferative activities in various KRAS G12D-mutant cell lines while
+  maintaining good selectivity over KRAS wildtype"). **SciBrunch founded two years ago** by **Tao Hu, Ph.D.** and **Yang Zhang, Ph.D.**;
+  **$65M raised across two rounds**; lead clinical asset a brain-penetrant PARP1-selective inhibitor. **KRAS G12D occurs in ~38% of
+  pancreatic cancer.** Merck already runs **calderasib (KRAS G12C)** in Phase 3 CRC and NSCLC. Comparable: **Bayer/Kumquat, $1.3B biobucks**
+  for a preclinical asset. Quote: **George Addona**, SVP discovery/preclinical/translational, MRL.
+  **⇒ READ (Eddie Cherok): when chemical matter with NO human data clears $400M upfront on the same mutation Adventris vaccinates against,
+  the valuation conversation moves in BOTH directions — it raises the target's implied value AND tells you how much capital the
+  small-molecule lane will absorb before anyone funds an alternative modality.** Same-window companion signal: **AstraZeneca put $2B into
+  Summit Therapeutics (12% equity at an 18% premium) on 2026-09-29 to pair PD-1xVEGF ivonescimab with its CLDN18.2 ADC — taken BEFORE the
+  HARMONi-3 readout, with no visibility into the study and no ROFR. The China-origin discount has inverted into a premium for assets a big
+  pharma believes it can read.** Sources: https://www.fiercebiotech.com/biotech/merck-pens-21b-deal-chinas-scibrunch-chase-kras-g12d ·
+  https://www.fiercebiotech.com/biotech/astrazeneca-scales-summits-pd-1xvegf-strategy-2b-investment-fuel-adc-combinations
 - **Surfaced 2026-08-14 Portfolio Watch (LEAD, quiet-catalyst day — coverage-gap
   close, not a fresh event).** A Baltimore company (co-founders **Elizabeth M.
   Jaffee** + **Neeha Zaidi**, JHU Bloomberg Kimmel Institute for Cancer
@@ -4307,7 +4407,27 @@ ecosystem news.
   papers 10.2337/db26-0183, 10.2337/db22-0477 (PMC9876881).
 
 ### Popel + Green + Pandey serial-founder cluster (Wilmer / JHU BME) ⚠
-_Last update: 2026-09-27_
+_Last update: 2026-09-29_
+- **THE wAMD DURABILITY BAR MOVED TWO DAYS AFTER WE MADE AXT107 THE RADAR LEAD, AND WHAT MOVED IT WAS THE *RETREATMENT RULE*, NOT THE
+  MOLECULE (added 2026-09-29 Portfolio Watch item 3; announced 2026-09-28).** **Kodiak Sciences (Nasdaq: KOD), Phase 3 DAYBREAK in wet AMD,
+  three arms: Zenkuda (tarcocimab tedromer), tabirafusp alfa tedromer (KSI-501, anti-IL-6 × anti-VEGF biparatopic), aflibercept per label.**
+  **Zenkuda — four monthly loading doses then individualized 4–24-week intervals; primary MET (p=0.0007), non-inferior BCVA ~+7.2 letters vs
+  +7.6 for aflibercept; 54% of patients on 24-WEEK dosing at Year 1; 0% intraocular inflammation; 0.5% cataract AE vs 0.9%.**
+  **Tabirafusp-ted — vision primary p=0.0036 (~+6.3 letters), anatomical key secondary p<0.0001.** **Three-indication BLA (wAMD, DR, RVO) in
+  Q4 2026** on DAYBREAK + DAYLIGHT + GLOW1/2 + BEACON. Stock **more than doubled; >$3B added.**
+  **THE LOAD-BEARING DESIGN FACT: this same molecule FAILED against Eylea in a Phase 3 that read out >4 years ago. DAYBREAK used strict
+  TREAT-TO-DRYNESS criteria — retreat on ANY detectable fluid on OCT.** Investigator **David M. Brown**: "Under an **AI-guided retreatment
+  algorithm** that closely mirrors the **zero-fluid-tolerance** approach we use in clinic, more than half of patients were maintained on
+  24-week dosing." **⇒ DURABILITY CLAIM AND RETREATMENT RULE ARE NOW ONE INSEPARABLE OBJECT.**
+  **⇒ READ (Avi Khanna + Hemaka Rajapakse) — DIRECT REPRICING OF THE 2026-09-27 RADAR LEAD. DISCOVER's median 36-week durability in
+  treatment-experienced 0.5 mg eyes was generated OPEN LABEL, n=15, no control, with RESCUE PERMITTED FROM WEEK 12 under the protocol's own
+  criteria — NOT comparable to 54%-at-24-weeks under zero-fluid tolerance, and a sophisticated counterparty will say so immediately.**
+  **ACTION — a specific question for Niranjan Pandey: (a) what does DISCOVER durability look like RE-SCORED under treat-to-dryness, and
+  (b) is the non-neutralising mechanism (re-localising Tie2 so Ang2 becomes an AGONIST) expected to hold under zero-fluid tolerance?** The
+  09-27 framing ("a real position *if* someone funds the controlled, treatment-experienced-enriched study this dataset asks for") now has a
+  named comparator design attached. **⇒ SECONDARY (Eddie Cherok): a $3B day in wet AMD makes the TEREBRA meeting easier to get, not harder.**
+  Sources: https://kodiak.gcs-web.com/news-releases/news-release-details/zenkuda-and-tabirafusp-ted-meet-primary-endpoints-pivotal ·
+  https://www.sec.gov/Archives/edgar/data/0001468748/000119312526403481/d185059dex991.htm
 - **Founders (recurring):** Aleksander S. Popel, Ph.D. (JHU BME + Medicine +
   Oncology; Popel Systems Biology Lab); Jordan J. Green, Ph.D. (JHU BME + INBT +
   WSE Materials Science); Niranjan B. Pandey, Ph.D. (part-time JHU BME faculty +
@@ -5605,7 +5725,7 @@ _Last update: 2026-09-27_
 - **Does USP15 modulation change p53-R175H peptide-HLA presentation? (added 2026-09-06; Avi Khanna + Jon Robbins.)** Padmanabhan's 2018 *Nat Commun* result routes R175H degradation through a **lysosomal** pathway, which does not feed MHC-I. CLSP-1025's potency scales with peptide-HLA copy number. Nobody has measured whether shifting R175H between lysosomal and proteasomal turnover changes presentation. Merge with the standing Clasp target-density item and put it to Clasp and to Padmanabhan (§2b) in the same week.
 - **No-capital top-of-funnel touchpoint (added 2026-09-06; Esther Park + Maisha Rahman).** MassBio + SCbio's free 8-week **Drive** accelerator selected 10 startups (5 techbio, 5 therapeutics; 7 US-based, 4 in MA) with an eligibility cap of **<$1.5M prior equity** — curriculum, weekly mentors, Boston + Charleston demo days, bench access via ADA Forsyth. That is a competing FIRST TOUCH **upstream** of where a Blackbird Labs grant lands, costing mentor time rather than capital. (1) Do we have a no-capital touchpoint for founders earlier than a Labs grant? (2) Is a BioHub demo day with bench access a cheaper sourcing instrument than we assume? Note half the cohort is computational — same signal as the Kathuria/Organotics sourcing-latency case. Source: https://www.biospace.com/business/10-life-sciences-startups-selected-for-accelerator-program
 - **Lp(a)HORIZON full dataset — the subgroup that decides a class (added 2026-09-06).** Novartis will present at an unnamed congress. The analysis to pull is **outcome by baseline Lp(a) and by magnitude of reduction** (Jefferies' ask), which determines whether the deeper-suppression programmes — Amgen **olpasiran** (>95% mid-stage), Lilly **lepodisiran**, Silence **zerlasiran** — survive. Relevant to us only as the cleanest public worked example of separating a target failure from a modality failure.
-- **Shelved / divested large-pharma asset screen (added 2026-09-05):** Pfizer's CD228 ADC cleared at $12M upfront. Who owns a standing screen on deprioritised big-pharma assets in our theme areas, what is the source (BD conference lists, 8-Ks, pipeline-page diffs, banker outreach), and what does a first pass surface? (Eddie + Avi.)
+- **Shelved / divested large-pharma asset screen (added 2026-09-05; five shapes logged as of 2026-09-29):** Pfizer's CD228 ADC cleared at $12M upfront. Who owns a standing screen on deprioritised big-pharma assets in our theme areas, what is the source (BD conference lists, 8-Ks, pipeline-page diffs, banker outreach), and what does a first pass surface? (Eddie + Avi.) **Shapes so far: (1) outright purchase at a nominal upfront (Pfizer CD228, $12M); (2) licence-with-reversion (Orum/BMS, 09-19); (3) whole clinical-stage company at $8.3M upfront (Lexeo/Mantle, 09-23); (4) free reversion because the partner got merged (IND-enabling-complete GPCR portfolio, 09-26); (5) MILESTONES + EQUITY + ROYALTIES, NO DISCLOSED CASH, for >150 patients of human safety data (Tolerance Bio/Tanabe TLB-33, 09-29) — shape (5) is the only one a sponsor with no balance sheet can execute, and is the template to model first.**
 - **A SECOND TOP-THREE CARDIOMETABOLIC ACQUIRER IS NOW TRANSACTING AT OUR STAGE — EXTEND THE DC-PACKAGE SPEC REQUEST TO NOVO (added 2026-09-21; Eddie Cherok + Avi Khanna).** Novo signed a multi-target discovery/licence collaboration with **Orbis Medicines** on **AI-designed ORAL MACROCYCLES** for cardiometabolic disease — **up to $1.4B upfront + milestones, tiered royalties, plus a strategic equity investment**, split undisclosed (nGen platform; up to **18% oral bioavailability** preclinically; announced 2026-09-17) — and on 2026-09-18 took **three early-stage NON-INCRETIN obesity programmes off Kallyope**: **K-554**, a once-weekly first-in-class gut-brain satiety peptide that is **IND-READY**, a follow-on small molecule against a novel receptor, and a small-molecule receptor agonist; **terms and targets undisclosed**. ⇒ The 09-05 action ("find out what the preclinical diligence process asks for, because it is a specification for our DC package") was opened on Lilly; it now applies to **two of the three largest cardiometabolic buyers in the world**. Familiar tell: undisclosed terms across three programmes usually means a small upfront (same inference as GSK/Chimagen, 09-15). Sources: https://www.biospace.com/deals/novo-notches-up-to-1-4b-pact-with-orbis-to-develop-oral-macrocycle-cardiometabolic-drugs · https://www.fiercebiotech.com/biotech/refreshed-novo-corrals-three-new-early-stage-obesity-drugs-kallyope
 - **ARPA-H SPECTRA — federal non-dilutive money for a target-generation engine that describes Lieber, first deadline 2026-10-18 (added 2026-09-21; Yixuan Qiu + Esther Park).** ARPA-H launched **SPECTRA** (Systems for Phenotypic Evaluation, Clinical Trajectories, Response, and Agency) on **2026-09-17** — autism across the lifespan, four technical areas: **TA1 Analysis** (genetic, environmental, family, metabolic, immune and developmental factors behind distinct trajectories); **TA2 Modeling** (federated, privacy-preserving AI mapping trajectories → modifiable outcome drivers and **actionable targets**); **TA3 Precision Intervention**; **TA4 Enabling Technologies**. **Solution-summary deadlines: TA4 opens Oct 4, closes Oct 18 2026 5pm ET; TA1+TA2 open Nov 18, close Dec 2 2026; TA3 closes Jan 18 2027.** TA1/TA2 describe what the **Lieber Institute for Brain Development** already does (cf. the Weinberger/Pergola coexpression-TWAS and Martinowich/Maynard/Hicks dACC-atlas entries in §2b), and **Kennedy Krieger** is a top-tier autism clinical franchise four miles from the BioHub. **ACTION: establish whether Lieber and Kennedy Krieger are already writing to TA1/TA2. If yes, get sight of it; if no, have the conversation before Oct 4.** Sources: https://www.hhs.gov/press-room/arpa-h-launches-spectra-transform-autism-diagnosis-precision-care.html · https://www.fiercehealthcare.com/regulatory/arpa-h-launches-spectra-program-new-autism-research-initiative
 - **Lilly ranks FIRST on the NXE'149 bidder set — ANSWERED 2026-09-06, follow-up open (opened 2026-09-05).** BioPharma Dive's 09-04 chart set: **Lilly has announced 12 acquisitions since the start of 2026 — 4× its nearest competitors (Gilead, GSK, Novartis) — for at least $31.5B, double the next most active acquirer, and roughly HALF were preclinical or Phase 1 stage** (including Merida Bio at up to $2.9B, upfront undisclosed). Add to the three adjacent CNS/GPCR theses already logged (Lilly Asia Ventures in NeuShen; Lilly on Superluminal's cap table plus a $1.3B GPCR collaboration; Lilly funding Leal's Series A extension). **RANK LILLY FIRST, ahead of Otsuka, Neurocrine, AbbVie/Cerevel, Novartis and SK Biopharmaceuticals. The load-bearing fact is not the total — it is that half of twelve were done AT OUR STAGE, so the GPR52 programme does not need a Phase 2 readout to be transactable.** **STILL OPEN (Eddie):** half of twelve implies a repeatable preclinical diligence process — find out what it asks for, because it is effectively a specification for our DC package. Source: https://www.biopharmadive.com/news/charts-biotech-deals-china-alumis-ultragenyx-stock/829635/

@@ -3028,3 +3028,46 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the two transie
 
 **Housekeeping note (not acted on):** `scripts/2026-09-15-portfolio-watch.{commit-msg,rss-item.xml}` are stale untracked stubs from a truncated run — the 09-15 episode is already in `feed.xml`, so `publish_pending.py` never cleaned them. Left in place; safe to delete.
 === 2026-09-28T02:38:35-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-29T02:10:12-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped at the script plus the two stubs — no TTS, no R2 publish, no feed edit, no commit; `publish_pending.py` handles those after batch TTS.
+
+**Published artifacts** (`podcasts/blackbird-brief/scripts/`):
+- `2026-09-29-portfolio-watch.md` — 2,387 spoken words (yesterday: 2,234)
+- `2026-09-29-portfolio-watch.rss-item.xml` — validated as XML, `__LENGTH__`/`__DURATION__` placeholders
+- `2026-09-29-portfolio-watch.commit-msg`
+
+Ledger appended (9 keys, 83 episodes). `memory/blackbird-portfolio.md` updated in place — Aletira, Winnow, Popel/Green/Pandey cluster, Adventris, chronic-infections theme, COPD alarmin theme, and the §4 divested-asset screen (now five logged shapes).
+
+---
+
+## Candidate funnel — Blackbird Brief, 2026-09-29 (Portfolio Watch)
+
+**Recency window:** 2026-09-26 → 2026-09-29.
+
+**Sources swept**
+- BioPharma Dive front page — 200, ~40 headlines scanned, 5 in-window relevant
+- Fierce Biotech — 200, 11 headlines, 4 in-window relevant
+- Fierce Pharma — 200, 9 headlines, 0 net-new (Juvmo/Gazyva/Welireg already shipped or no portfolio line)
+- Endpoints News front page — 200 index; article bodies paywalled, `r.jina.ai` **403 on endpoints.com** (plain curl + Safari UA returned the lede + dateline, enough to triage). ~60 headlines scanned
+- BioBuzz (news index + BioHealth Capital Region category) — 200, 22 headlines, 2 in-window relevant, **zero net-new Baltimore/Maryland-sited items**
+- GEN front page — 200 but no parseable article anchors (front page carries only nav links); skipped
+- BioSpace `/press-releases` — 200 but no press-release anchors in the markup; used targeted search instead
+- Connect Biopharma newsroom — `ir.connectbiopharm.com` HTTP 000; `connectbiopharm.com/news-releases` 200, **last release 2026-09-15** → Seabreeze STAT COPD topline still outstanding
+- Targeted search on Blackbird Laboratories / BioVentures / Aletira / NuGate / Clasp — nothing in-window
+
+**Dedup:** 9 candidates → 9 fresh, 0 already shipped, against 495 ledger keys / 82 episodes.
+
+**Shortlist (all fetched in full; ✅ = chosen)**
+- ✅ **LEAD** — Waskyra nonprofit US commercialization + first QTC at UCSF Benioff, $3.25M list · prnewswire 302891579 *(Aletira exit architecture, Blackbird's own nonprofit/for-profit structure)*
+- ✅ **2** — Adicet prula-cel allogeneic γδ CD20 CAR-T, 12-mo lupus data, outpatient FDA alignment · biospace *(Winnow control-architecture row, fifth entrant)*
+- ✅ **3** — Kodiak DAYBREAK Phase 3 wins, treat-to-dryness retreatment rule · kodiak.gcs-web + SEC 8-K Ex-99.1 *(reprices the 09-27 AXT107 Radar lead)*
+- ✅ **4** — Tolerance Bio licenses anti-IL-33 TLB-33 from Tanabe · biobuzz *(divested-asset screen shape 5; COPD alarmin map)*
+- ✅ **5** — Merck/SciBrunch $400M upfront KRAS G12D **+** AstraZeneca/Summit $2B · fiercebiotech ×2 *(Adventris; combined into one item)*
+- ✅ **CLOSER** — Scynexis BARDA up to $214M, SCY-247 invasive candidiasis · fiercebiotech *(chronic infections; UMB Candida borrow)*
+- ✅ *one-liner inside closer* — Roche hands emugrobart back to Chugai on futility interim · fiercebiotech *(governance, 5th interim-stop)*
+- ✅ *calendar* — Milken SPARC / Kissick FTD cycle-4 LOIs through 2026-11-04 · biobuzz *(non-dilutive channel for the TDP-43 leads; no Baltimore team in cycle 3)*
+
+**Considered and dropped:** Egetis/Emcitate approval, Mirum hepatitis-delta Phase 3, Telix/ITM, City Therapeutics IPO filing, BioNTech site closures, Basecamp $140M, Merck/Eisai Welireg expansion, Roche Gazyva second autoimmune indication — no portfolio, programme or partner-institution line. OncoC4 cesalatamig Fast Track remains out of window (event 2026-09-16); its landscape point is carried inside item 5.
+
+**Source-level failures:** `r.jina.ai` reachable today (cert `*.jina.ai`, no Scripps TLS interception) but **403s on endpoints.news**; BioSpace `/press-releases` index returned no anchors; GEN front page returned no article anchors. None blocked the run.
+=== 2026-09-29T02:24:50-07:00 done  blackbird-brief (exit 0) ===
