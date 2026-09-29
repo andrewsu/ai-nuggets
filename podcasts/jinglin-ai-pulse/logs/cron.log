@@ -3284,3 +3284,23 @@ Shortlist after discarding spurious matches:
 
 No source failures: `r.jina.ai` TLS was clean today (checked per the Scripps-intercept trap), HN Algolia, TechCrunch, Substack and the ReScript transcript API all returned full bodies. X/Twitter remains unreadable directly — Altman's post and Scholl's post were read through the Higgins piece and TechCrunch respectively, and attributed that way in the script.
 === 2026-09-28T02:46:43-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-29T02:30:12-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so I stopped at the three files the orchestrator expects: script + `.rss-item.xml` stub (validated against `feed.xml`) + `.commit-msg`. No TTS, no R2 publish, no feed edit, no commit.
+
+**Episode: `2026-09-29-the-boundary-left-the-model`** — 2,383 spoken words (~12 min at the show's 1.2× TTS; in line with the last week's 2,450–2,900-word episodes).
+
+Spine: in one day the agent guardrail moved out of the weights and down into the substrate.
+
+- **Pulse** — Nvidia's Open Agent Safety Platform (OpenShell on Vera CPUs, Sentry as an out-of-band watchdog on BlueField-4 DPUs), whose press release states outright that enterprises need "an enforceable boundary outside of the model and agent harness." Paired against Sonnet 5.5, whose first-ever Sonnet cyber safeguards are, per the 779-point HN thread, refusing write-ahead-log durability checks and 2003 compilers — the accidental empirical case for Nvidia's thesis. Plus Jeff, a Jev clone trained at home on one GPU (callback to the 09-25 episode).
+- **Money Moves** — AMD/World Labs, $8.2B all-stock, Li → EVP and chief scientist under Lisa Su; framed as two chip companies buying model labs for information rather than revenue.
+- **Deep Cut** — Jensen Huang on The Ezra Klein Show, five days *before* shipping the containment product, telling Klein that if the labs can't contain their experiments "we have to shut the labs down" — and describing Sentry before it existed.
+- **Wrap** — tomorrow's Senate HSGAC hearing "Rogue AI: Securing the Homeland Against AI Agent Attacks," whose witness list (METR, Apollo, AI Futures Project, Dragos, Georgetown Law) contains no frontier lab.
+
+**Candidate funnel**
+
+- **HN front page / Algolia** — 60 scanned, 8 AI-relevant. Shortlist: Sonnet 5.5 (779) ✓chosen · Jeff (492) ✓chosen · Cal Newport, "It's Time to Investigate the AI Labs" (484) ✓chosen, in the wrap · World Labs→AMD (276) ✓chosen · Nvidia watchdog chip (167) ✓chosen (lead) · MicroLLM Lab (241) dropped, no argument · ESP32 BitNet cluster (97) dropped · Pac-Bench (54) dropped, overlaps Jeff's games section.
+- **Primary docs** — all read in full: nvidianews OASP release, anthropic.com/claude-sonnet-5-5, newsroom.amd.com, worldlabs.ai, drfeifei.substack.com, github.com/firelex/jeff, calnewport.com, hsgac.senate.gov hearing notice.
+- **Podcasts** — Latent Space archive (12 recent) and Interconnects (8) checked; the top 5 candidates were all already used 09-22 through 09-28. Chose the Ezra Klein × Jensen Huang episode (Sep 23) instead, on theme.
+- **Source failures** — `nytimes.com` blocked both ways (r.jina.ai abuse-block on the domain; direct curl hits DataDome, HTTP 403). Worked around via Zvi Mowshowitz's Sep 25 transcript walkthrough, which marks direct quotation; the "improve your process" passage cross-checks verbatim against CNBC's independent quotation of the same episode. Provenance is disclosed in the script's source block. `worldlabs.ai/blog/to-seek-a-newer-world` 404s — the post lives on Li's Substack.
+- **X/Twitter** — not directly readable from this host (known); discourse sourced from HN threads, the Latent Space AINews roundup's quoted tweets, and primary posts.
+=== 2026-09-29T02:40:13-07:00 done  jinglin-ai-pulse (exit 0) ===

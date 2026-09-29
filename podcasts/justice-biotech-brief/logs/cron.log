@@ -3583,3 +3583,32 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plu
 - **Funders** — arpa-h.gov 200 (nothing on-beat), nsf.gov 200 (nothing on-beat), **nih.gov/news-events/news-releases 403 (5,480-byte block), skipped**.
 - **Source friction:** every bioRxiv `.full.pdf` returned the 17-byte 429 on first pass, including via r.jina.ai and WebFetch (different IP, `Retry-After: 78`) — a per-document throttle that cleared after ~15 min of single-worker backoff. No candidate was lost to it.
 === 2026-09-28T03:12:52-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-29T02:40:12-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two stub files and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS.
+
+**Published:** `2026-09-29-upar-car-t-bone-marrow-myeloid-progenitors-cognitive-aging`
+**Pick:** uPAR CAR T — an IV CAR T cell that never enters the brain reverses cognitive aging by deleting the uPAR+ inflammatory bone-marrow myeloid progenitors that seed inflamed border-associated macrophages (bioRxiv `10.64898/2026.09.27.754777` v1, posted 09-28, Corina Amor, CSHL/HHMI, with Chris Vakoc). Full text read (13 MB PDF → 157 KB text, CC-BY).
+
+## Candidate funnel
+
+**bioRxiv details API** — healthy (~1.2 s first probe). Day-by-day sweep 09-27/28/29, full pagination: **481 unique records** (09-27 ~100, 09-28 348, 09-29 only 33 — current day is near-empty at 2am). 64 keyword hits, ~9 substantive after discarding spurious matches ("BiTE" inside *habitat/BiteScore*, "ADC" inside unrelated words, "PD1" inside *Parkinson's*).
+
+Substantive shortlist:
+- **✅ CHOSEN** — CAR T targeting inflammatory myeloid progenitors reverses cognitive aging — `10.64898/2026.09.27.754777`
+- mSWI/SNF ATPase antagonists collapse PMN-MDSC identity, control PD-1-refractory tumors (Chinnaiyan, Michigan) — `10.64898/2026.09.26.754703`
+- Myeloid *Arid1a* deletion reprograms TAMs, needs CD86 + CD8 (Hargreaves, Salk) — `10.64898/2026.09.25.754528`
+- LENTRA: IV antigen-targeted lentivirus makes tumors secrete anti-CTLA-4 / IL-12 / sialidase in situ — `10.64898/2026.09.26.754636`
+- PD-L1Δ3, an IFN-inducible PD-L1 splice isoform that can't bind PD-1 or enter EVs, elevated in T1D islets — `10.64898/2026.09.25.754099`
+- Spatial immune profiling, pediatric PFA ependymoma — `10.64898/2026.09.24.754209`
+- PGG + olaparib sensitizes TNBC to PD-L1 blockade — `10.64898/2026.09.26.752069`
+
+**News (Endpoints, BioPharma Dive, Fierce Biotech, Fierce Pharma)** — all four 200 to plain curl + Safari UA; ~95 headlines scanned, 2 on-beat and in-window:
+- AstraZeneca takes a $2B equity stake in Summit (ivonescimab, VEGF×PD-1) — on Justice's stated beat, but it was **calibr-briefing's 09-29 spotlight** (rewrite risk) and this show already shipped ivonescimab 09-03 and 09-13. Not taken.
+- Adicet ADI-001, allogeneic γδ CD20 CAR-T in lupus — strong and on-beat, but autoimmune CAR-T already shipped 09-01 and 09-25. Banked as the next thin-day backup.
+
+**Policy/funders** — arpa-h.gov and nsf.gov 200, nothing on-beat. nih.gov/news-events/news-releases still 403s (Cloudflare block, ~5.5 KB) — same as prior runs, noted as a standing gap, not a run-blocker.
+
+**Source failures:** none that changed the outcome. The chosen preprint's `.full.pdf` 429'd on cycle 1 (17 bytes) and cleared on cycle 2 of a single serial worker; the `.full` HTML 429'd throughout, which would have looked like render lag had the PDF not been tried.
+
+Two verification notes worth flagging: I confirmed on ClinicalTrials.gov that 97 studies mention uPAR/PLAUR and **zero** are CARs (the episode uses this), and I kept Adcendo's ADCE-D01 out of that roster — it targets uPARAP/Endo180, a different protein. I also web-searched the exact title to rule out the bioRxiv re-post recency trap; the work has no prior public version.
+=== 2026-09-29T02:53:08-07:00 done  justice-biotech-brief (exit 0) ===
