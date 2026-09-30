@@ -5042,3 +5042,39 @@ The take: the discoveries are small and the price is extraordinary — 1.59 tril
 
 One caveat worth flagging: the arXiv cache's 500-entry cap covers only 09-27 and 09-28, so the 09-26 slice of the 4-day window went unsampled on that source — a known recall gap, not new today.
 === 2026-09-29T02:08:22-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-09-30T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written** (`podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-09-30-murmurent-agentic-os-for-an-academic-centre.md` — 965 spoken words (cap 1150)
+- `…rss-item.xml` — validated as XML, both placeholders present
+- `…commit-msg`
+
+**Pick:** Murmurent (bioRxiv `10.64898/2026.09.24.753565` v1, posted 09-29), Western University. Full text read via `r.jina.ai` on the `.full.pdf` — 184 KB, 49 pages, all sections; grepped for placeholders (only hit was the word "doing"). Every figure cited in the script was checked against the source: the 0.815 → 0.718 → 0.537 control sequence and the two-chemotypes-against-six pre-commitment (§2.8), the 41.5% pose-recovery and sulfopin-outscored-by-50-of-80 numbers (§2.8), the 57 decision records and `partially withdrawn` status with its water-model example (§2.5), and the 21-mistake failure catalogue with 9 withdrawals / 3 automated catches (§2.5).
+
+The take: this is the layer *underneath* agentic AI rather than another vertically-integrated discovery system — choreography instead of orchestration, version-controlled markdown memory argued explicitly against a vector index, and governance enforced at the tool call on the stated premise that the agent is untrusted. The strongest result is that the system's principal output was a refusal: four labs, four approaches, and the shared control certified none of them once the adversarial agent showed the decoys were separable by scaffold alone.
+
+## Candidate funnel
+
+**Sources scanned**
+- **bioRxiv details API** — day-by-day sweep 09-27→09-30, cursor-paginated, **776 records**. 46 keyword hits at v1, ~7 substantive after discarding spurious matches (`agent` → biocontrol/chemical agent, `llm` inside words like *cofilin*, `ontolog` inside *ontological* boilerplate).
+- **arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, **500 entries but capped**: histogram is 09-28 (55) + 09-29 (445) only, so the 09-26/09-27 slice of the 4-day window went unsampled on this source. Known recall gap, same as 09-29. 189 agentic∧biomedical raw hits, ~11 substantive.
+- **PubMed** — E-utilities `reldate=5`: 819 matched, 300 fetched, 32 title-level hits after the spurious-`agent` filter, dates read from `history[].pubmed`. Nothing on-brief beat the preprint leaders.
+- **ChemRxiv** — `site:chemrxiv.org` web search: **zero in-window**, newest returned were April 2026 or older.
+- **News / product launches** — nothing in-window on-brief.
+- **Funders** — ARPA-H news 200, newest items are the 09-25 cold-chain program and the SPECTRA autism launch, neither agentic-AI. NSF news 200, newest on-brief item out of window. **NIH news-releases — HTTP 403 Cloudflare block from this IP** (same as 09-29), not retried.
+
+**Shortlist**
+- ✅ **CHOSEN** — Murmurent: An agentic AI environment to support biomedical research in collaborative academic environments — https://www.biorxiv.org/content/10.64898/2026.09.24.753565v1
+- MorphAgent: Biologically grounded cell profiling across microscopy modalities — `10.64898/2026.09.23.753678` *(strong runner-up; agent designs features from biological hypotheses, +48% perturbation-retrieval MAP over CellProfiler. Not opened in full — lost on pick, not on gate.)*
+- PhenoAIR: From Retrieval to Reasoning — Agentic Mechanism Prediction from Cell Painting Profiles — https://arxiv.org/abs/2609.36406 *(closest arXiv competitor; overlaps MorphAgent's assay)*
+- PRIORITI: Biological rationales from language models enable leakage-resistant forecasts of target-indication success — `10.64898/2026.09.24.754137`
+- Can AI Scientists Change Their Minds? Prior-Evidence Conflict in Synthetic Universes — https://arxiv.org/abs/2609.36726 *(self-declared incomplete study, 22 of 60 cells graded)*
+- CypherTurn: multi-turn conversational Text-to-Cypher over 7 knowledge graphs — https://arxiv.org/abs/2609.36987 *(on-brief for the KG beat, not biomedical-specific)*
+- MARCO: Multi-Round Agentic RL for Conditional Molecular Optimization — https://arxiv.org/abs/2609.36683
+- OmniVCBench: Evidence-Grounded Multimodal Reasoning Towards AI Virtual Cells — https://arxiv.org/abs/2609.37773 *(beat fatigue — PRAXIS-VirtualCell shipped 09-26)*
+- Fusion2AI: LLM-synthesized functional re-annotation of bacterial "transparent matter", GO/EC extraction — `10.64898/2026.09.28.755017`
+- An agentic, no-code AI workflow for a thyroid nodule ultrasound classifier — PMID 42808848 (J Clin Endocrinol Metab)
+- GEMOT: Towards Mechanistic World Models for Biology — `10.64898/2026.09.26.754619` — **STILL DEFERRED, full-text gate, day 2.** `r.jina.ai` on `.full.pdf` returned a 408-byte Cloudflare "Attention Required" page wrapping a 429. Confirmed per-document: the same jina route returned a clean 184 KB body for the Murmurent PDF minutes earlier. Logged to memory.
+- Agentic transcranial functional ultrasound / @fUS — `10.64898/2026.09.25.752961` — deferred, not re-probed today (fetch budget)
+=== 2026-09-30T02:07:45-07:00 done  biomedical-agentic-ai (exit 0) ===
