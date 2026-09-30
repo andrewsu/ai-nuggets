@@ -4895,3 +4895,46 @@ Spotlight selection rationale: AZ/Summit was the day's dominant story by size an
 
 One memory update: appended today's source-access findings to `reference_biotech_news_source_access.md` — BioSpace /press-releases is fully working again (index *and* full BusinessWire bodies, the best route when a corporate newsroom 403s), and `r.jina.ai` now hits a Cloudflare challenge on endpoints.news, so the Published-Time triage trick recorded on 09-27 no longer works.
 === 2026-09-29T02:31:56-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-09-30T02:20:10-07:00 start calibr-briefing ===
+Both episodes are written. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, feed edit, and the commit, and wrote the transient stubs instead.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-09-30-pharma-headlines.txt` (2,251 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-09-30-ortet-frontier-ai-lab-health-spotlight.txt` (1,726 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as valid XML under the `itunes:` namespace and carry `__LENGTH__` / `__DURATION__` placeholders for `publish_pending.py`.
+
+---
+
+### Candidate funnel — 2026-09-30
+
+**Sources swept** (all plain `curl` + Safari UA; `r.jina.ai` TLS was clean today but Cloudflare-blocked on endpoints.news):
+- BioPharma Dive front page — 40 anchors, ~6 in-window → 3 shortlisted
+- Endpoints News index — 75 anchors, ~12 in-window → 3 shortlisted; **article bodies paywalled** (2-paragraph teaser), and r.jina.ai returns a Cloudflare challenge, so Endpoints was discovery-only
+- Fierce Biotech / Fierce Pharma — 20 anchors; **article bodies fully readable today** (no Cloudflare block) → 4 shortlisted
+- BioSpace news + `/press-releases` — 108 anchors → 6 shortlisted; highest-yield source for same-morning (Sept 30) releases
+- GEN — 21 anchors → 1 shortlisted (Basecamp, out of window)
+- Clinical Trials Arena — 50 anchors → 0 net-new
+- STAT News — not fetched (unreadable from this host, per standing note)
+- Targeted searches: Ortet/Thoreau, Kyunghyun Cho, Somnivera
+
+**Shortlist after discarding stale and already-shipped items:**
+- ★ **Ortet launches, $500M from Thoreau** — financialcontent.com BusinessWire mirror (Endpoints paywalled) — **SPOTLIGHT**
+- ★ Takeda zasocitinib beats deucravacitinib head-to-head, LATITUDE Atlas, EADV — biospace.com press release — **headline #1**
+- ★ uniQure AMT-130 four-year Huntington's data, −40% — biopharmadive.com/news/831611 — **headline #2**
+- ★ Genentech fenebrutinib priority review, RMS + PPMS — biospace.com press release — **headline #3**
+- ★ Lilly retatrutide full Triumph-2, EASD + Lancet — fiercebiotech.com — **headline #4**
+- ★ Zealand/Roche petrelintide week-28 primary — fiercebiotech.com — **headline #5**
+- ★ Beam v. YolTech / Serapha Bio — biopharmadive.com/news/831663 — **headline #6**
+- ★ ai3Bio $48M launch, Th17 — biopharmadive.com/news/831521 — **headline #7**
+- ★ Egle EGL-003 Treg-selective IL-2 mutein Phase 1 — biospace.com press release — **headline #8**
+- ★ AnaCardio €62.5M / Enanta layoffs / PhRMA–Cantor / ARCH–Somnivera — **quick hits**
+- Mirum Atebrioz FDA nod (Sept 28) — dropped, one day stale and beaten by fresher approvals news
+- Basecamp Research $140M Series C — **already shipped 09-24**; reused only as spotlight context
+- Enveda $311M, Genentech–Earendil, Roche–Atavistik — **already shipped 09-24 / 09-25**; reused only as spotlight context
+- Merck Prometheus at EADV, SK pharmteco $200M, BioNTech German site closures, Ascletis/Invivyd — cut for length
+
+**Dedup:** every candidate was grepped against `scripts/2026-09-*.txt` before drafting. Prior mentions found and cleared — zasocitinib (09-16, filing acceptance only, not the head-to-head), deucravacitinib (09-10, 09-16), retatrutide (09-28, EASD preview only), BioNTech, Cantor (different Cantor — Celldex/Fierce context).
+
+**Notes for future runs:** Fierce article pages returned full bodies to plain curl today, reversing the uniform 5,490-byte Cloudflare block seen since ~09-18 — worth retrying Fierce first rather than assuming the block. Endpoints remains discovery-only: paywalled to curl *and* Cloudflare-challenged through r.jina.ai, so its exclusives (Ortet, Somnivera) had to be recovered via WebSearch plus a BusinessWire syndication mirror.
+=== 2026-09-30T02:31:57-07:00 done  calibr-briefing (exit 0) ===
