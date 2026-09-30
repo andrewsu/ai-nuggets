@@ -5036,3 +5036,42 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus
 
 **Shortlist not chosen:** long-read sequencing in psychiatric omics (review), hippocampal AdipoR1 in AD, COQ8A in MDD, oxytocin and vicarious fear extinction, NTS→NAc GLP-1 and cocaine seeking, ML precision antidepressant prescribing and OCD-CBT prediction (both Elsevier, body unreachable), SARM1 inhibition in MS, GLUT5 dendrimer brain delivery, THC:CBD vapour and OPCs, causal RL for MCI interventions, in-silico clinical trials review, DoAtlas-2 (shipped by a sibling show today).
 === 2026-09-29T03:11:10-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-09-30T02:50:11-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote the script plus the two stubs and left TTS, R2 publish, `feed.xml` and the commit to `publish_pending.py`.
+
+**Files:**
+- `podcasts/receptor-and-reason/scripts/2026-09-30-receptor-and-reason.md` — 3,721 words, 12 items, 14 `Paper link:` lines
+- `...rss-item.xml` — validates as XML, both placeholder tokens present
+- `...commit-msg` — one line
+- Ledger appended: 12 keys, 131 episodes
+
+## Candidate funnel
+
+**Sources scanned**
+- **bioRxiv + medRxiv details API** — healthy. 1,850 records swept day-by-day 09-24→09-30 (biorxiv 1,544 / medrxiv 306); medRxiv's 09-30 day file is empty and hung the sweep (capped retries, logged). After version==1 + in-window gate: 1,461. Relevance filter (CNS pharm / psychiatric drug discovery / psychedelics / pharmacogenomics, plus agentic-AI): 320 hits → 60 agentic, 158 pharmacology.
+- **arXiv** — shared cache present, 500 entries but only 09-28/09-29 (500-entry cap). Tight filter (strong biomedical term in title or q-bio category + agentic/LLM): 32. None beat the Tier 1/3 items.
+- **Journals** — 13 of 15 RSS feeds 200'd; IJNP and Briefings in Bioinformatics RSS 404'd, covered instead by Crossref `from-created-date` sweeps by ISSN (which also surfaced Neuropharmacology, Biol Psychiatry, PNPBP, Cell Systems — those have undated RSS).
+- **Failures logged:** Psychiatric Times homepage 200 but articles Cloudflare-blocked; Drug Discovery Today Crossref 404; `r.jina.ai` Cloudflare-challenged on *every* upstream (clean cert, so not the Scripps interception); Wiley/ASCPT 403 on HTML, `pdfdirect`, `epdf` and via jina; `www.biorxiv.org` 17-byte-429'd full text ~0-for-15 across 30s/95s/118s backoffs all run.
+
+**Dedup:** 42 candidates → **23 fresh** (19 already shipped, 0 title matches). PMxAgent itself was among the 19 — shipped 09-25 — which is what turned today's lead into the *replication* rather than a repeat.
+
+**Shortlist (12 chosen, all marked ✓)**
+| Item | Source |
+|---|---|
+| ✓ Agent Skills vs PMxAgent NCA benchmark **(lead)** | github.com/heyiamnotacoder/pmxagent-skills-benchmark + zenodo.23019418 — read in full |
+| ✓ PRIORITI, leakage-resistant target-indication forecasts | biorxiv 10.64898/2026.09.24.754137 |
+| ✓ KARE ketamine/AUD secondary analysis | medrxiv 10.64898/2026.09.26.26363761 — read in full |
+| ✓ Psilocybin & egocentricity in AUD | medrxiv 10.64898/2026.09.26.26364086 — read in full |
+| ✓ Ketamine broadens neural spatial tuning | doi 10.1016/j.biopsych.2026.09.016 |
+| ✓ Spiral dynamics under DMT | biorxiv 10.64898/2026.09.22.753116 |
+| ✓ Thalamic 5-HT2A block / tonic GABA-A / absence seizures | biorxiv 10.64898/2026.09.19.751734 |
+| ✓ Mu vs NOP whole-brain activation | biorxiv 10.64898/2026.09.22.753526 |
+| ✓ β-arrestin1 engages Gαs | biorxiv 10.64898/2026.09.27.754863 |
+| ✓ Semaglutide & cocaine reinstatement | biorxiv 10.64898/2026.09.21.753157 |
+| ✓ EEG microstates predict antipsychotic response | medrxiv 10.64898/2026.09.26.26364042 |
+| ✓ VMAT2 inhibitors & hypokinesia in HD | medrxiv 10.64898/2026.09.26.26364085 |
+
+**Not chosen / deferred:** @fUS agentic transcranial ultrasound (`10.64898/2026.09.25.752961`) — body unrendered at day 2, confirmed abstract-only by probe; deferred and logged as lead-worthy for a later run. tACS in methamphetamine use disorder (Mol Psychiatry) — paywalled, cut to keep the count at 12. AnewDDE, agentic gene-annotation, MARCO, Cell Painting MOA — lost head-to-head to Tier 1/3 picks.
+
+**One thing to flag honestly:** only 3 of the 12 items were read in full text. The other 9 are short abstract-only mentions — permitted by PIPELINE.md for tail items with self-contained abstracts, which these have (n's, effect sizes and statistics are all in the abstracts) — but that's a thinner run than I'd want, and the cause was the bioRxiv Cloudflare throttle plus render lag rather than the content bar. I trimmed those items to 30–60-second mentions accordingly and said so on air.
+=== 2026-09-30T03:17:02-07:00 done  receptor-and-reason (exit 0) ===
