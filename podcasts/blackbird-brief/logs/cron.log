@@ -3071,3 +3071,33 @@ Ledger appended (9 keys, 83 episodes). `memory/blackbird-portfolio.md` updated i
 
 **Source-level failures:** `r.jina.ai` reachable today (cert `*.jina.ai`, no Scripps TLS interception) but **403s on endpoints.news**; BioSpace `/press-releases` index returned no anchors; GEN front page returned no article anchors. None blocked the run.
 === 2026-09-29T02:24:50-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-09-30T02:10:10-07:00 start blackbird-brief ===
+Episode complete. `SKIP_TTS=1` was set, so per PIPELINE.md batch mode I wrote the script plus the two stub files and left TTS, R2 publish, feed edit, and commit to `publish_pending.py`.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-09-30-portfolio-watch.md` — 2,330 spoken words (~12.4 min at the show's measured 0.32 s/word), five items plus a closer
+- `podcasts/blackbird-brief/scripts/2026-09-30-portfolio-watch.rss-item.xml` — validated as XML, `__LENGTH__` / `__DURATION__` placeholders in place
+- `podcasts/blackbird-brief/scripts/2026-09-30-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — 7 keys appended (84 episodes, 462 unique keys)
+- `memory/blackbird-portfolio.md` — edited in place, 7 entries revised with bumped `_Last update:_` (Aletira, Winnow, Georgiamune, Biolinco, Neuropsych NewCo, spinout-structure comparators, §1 composition-of-matter thread). No dated run log appended; file grew 5,798 → 5,974 lines.
+
+**Candidate funnel**
+
+Sources scanned (all 200 to plain curl + Safari UA; `r.jina.ai` TLS clean today, not needed): BioPharma Dive front page (43 items), Fierce Biotech (11), Fierce Pharma (10), Endpoints (75), BioSpace (79), BioSpace /press-releases (35), GEN (22), BioBuzz (22). **No source failures.**
+
+Dedup: 19 candidates → 15 fresh (3 already shipped, 1 title-match drop — Basecamp Research, shipped 09-24 under a truncated URL) against 504 ledger match-forms.
+
+Shortlist after discarding off-thesis matches — **★ = chosen**:
+- ★ uniQure AMT-130 48-month Huntington's data — biopharmadive.com/news/uniqure-huntingtons-four-year-data-gene-therapy-results/831611/ (**LEAD**; Aletira external-control pre-IND item)
+- ★ Beam sues YolTech + Serapha Bio over base-editing trade secrets — biopharmadive.com/news/beam-serapha-yoltech-base-editing-lawsuit/831663/
+- ★ ai3Bio launches on $48M targeting Th17 — biopharmadive.com/news/ai3bio-th17-drugs-immune-reset-launch-series-a/831521/ (Winnow)
+- ★ Egle EGL-003 Phase 1 Treg data at EADV — biospace.com/press-releases/egle-therapeutics-announces-positive-phase-1-data-for-egl-003-... (Georgiamune)
+- ★ Ginkgo Datapoints × Apheris Antibody Developability Consortium — genengnews.com/topics/bioprocessing/ginkgo-datapoints-apheris-announce-founding-members-... (Biolinco, GPR52 bidder)
+- ★ Vividion VVD-214 WRN inhibitor in *Nature Medicine* — biospace.com/press-releases/vividion-announces-publication-of-clinical-data-for-vvd-214-... (**CLOSER**)
+- Novo/Hengrui $300M upfront, up to $2.6B oral GLP-1/GIP — dropped, sixth rung on the Asia ladder with no new structural read
+- Genentech AI alumni launch Ortet with $500M — dropped, no portfolio line
+- OncoC4 cesalatamig Fast Track — dropped, event dated 09-16, out of window (same call as 09-29)
+- Egetis/Emcitate approval, Mirum hep-D Phase 3, Dyne DM1 one-year data, Roche newborn screening, TriLink CleanCap China patent, Nektar v. Lilly $90M quantum, China CRISPR-delivery deaths — dropped as shipped, out of window, or no line not already drawn
+
+Full text was opened for all six picks; none were deferred for unavailable full text.
+=== 2026-09-30T02:25:11-07:00 done  blackbird-brief (exit 0) ===

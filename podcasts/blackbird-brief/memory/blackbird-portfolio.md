@@ -219,6 +219,34 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
     (Addex reversion / Nektar v. Lilly): both are about what is written down before the relationship changes. Sources:
     https://www.fiercebiotech.com/biotech/pioneer-china-newco-model-sued-over-trade-secret-misuse-double-dealing ·
     https://dockets.justia.com/docket/new-york/nyedce/2:2026cv05495/550868
+  - **AND THE SECOND PEOPLE-SHAPED IP CASE IN FIVE DAYS GOES AT THE ONE THING WE CLAIM — THIS IS HOW AN "UNENCUMBERED COMPOSITION-OF-MATTER
+    POSITION" GETS ENCUMBERED, AND IT IS NOT THROUGH A LICENCE (added 2026-09-30 Portfolio Watch item 2; complaint filed 2026-09-25, D. Mass.;
+    reported 2026-09-29).** **Beam Therapeutics v. YolTech Therapeutics (China) + Serapha Bio (US)**, also naming former Beam scientist
+    **Zi Jun "Emma" Wang** (employed 2021–2022) and YolTech CEO **Yuxuan "Jensen" Wu**. **ALLEGATIONS (UNTESTED):** Wang "secretly founded a
+    Chinese biotechnology company called YolTech while still working at Beam," and **five months after leaving "filed patent applications on
+    behalf of YolTech based on Beam's confidential and trade secret information"**; Beam alleges she accessed data "in a manner that departed
+    sharply from her ordinary work, retrieving and reviewing dozens of Beam records she had never opened before, across technical areas well
+    beyond her own, including at night and on weekends," without disclosing her intent to leave. **THE ASSET: YolTech licensed Serapha a base
+    editing programme for alpha-1 antitrypsin deficiency whose candidate (SERP-01) targets the SAME mutation and edits a nucleotide at the SAME
+    position as Beam's BEAM-302.** Serapha went public by **reverse merger in June** on **$230M including RA Capital Management and RTW
+    Investments**, hired **CEO Kenneth Mills (former REGENXBIO CEO)** and **CMO Weston Miller**, and plans **Phase 2/3 of SERP-01 late 2026 or
+    early 2027**. **DENIAL: Shiva Fritsche (Serapha chief corporate affairs officer) — "Serapha categorically refutes Beam's claims and will
+    vigorously defend the company."**
+    **⇒ READ ONE (Eddie Cherok + Maisha Rahman + Avi Khanna): the 09-13 / 09-15 / 09-20 conclusion in this thread is that the ONLY durable
+    differentiator against the ex-US comparator column is an UNENCUMBERED COMPOSITION-OF-MATTER POSITION. This is the mechanism by which that
+    gets broken, and it is a PERSON, not a contract. Pairs exactly with the Lepu entry above: consultant with two competing BD mandates ⟷
+    employee with two employers.**
+    **⇒ READ TWO — OUR EXPOSURE IS HIGHER THAN A CAMBRIDGE BIOTECH'S, NOT LOWER.** We grant into academic labs where postdocs and
+    graduate-student Fellows rotate continuously, our own Fellows run diligence across multiple programmes, and the labs publish by design.
+    **STANDING ACTION AT GRANT INTAKE — three asks: (a) personnel roster across the grant period with prior AND subsequent affiliations;
+    (b) written confirmation that every contributor sits under the institution's invention-assignment agreement; (c) a notebook and data-access
+    practice capable of establishing a DATE OF CONCEPTION. (c) is the expensive retrofit and the reason to ask now — Beam's complaint is built on
+    ACCESS LOGS (who opened what, when, whether it was within their role), a record a university lab typically cannot produce, and the absence is
+    not neutral: it is what makes an allegation hard to rebut.**
+    **⇒ READ THREE — THE COUNTERPARTY: Serapha is the venture-syndicate / third-door row again (09-02 reverse mergers, 09-10 Solstice/RA
+    Capital), now carrying litigation risk it could NOT diligence away because the risk sat in the SELLER'S HISTORY rather than the paperwork it
+    signed. When Blackbird is the licensor, that is the risk we will be asked to warrant against.** Source:
+    https://www.biopharmadive.com/news/beam-serapha-yoltech-base-editing-lawsuit/831663/
 
 - **A NEW CLASS OF FUNDER IS RUNNING OUR INSTRUMENT AT 40% OF OUR FOUNDING GRANT IN ONE CHECK — AND BUYING OPEN DATA INSTEAD OF IP (added
   2026-09-20 Portfolio Watch item 3; announced 2026-09-15).** The **OpenAI Foundation** — the nonprofit parent governing OpenAI Group PBC — gave
@@ -354,7 +382,42 @@ https://www.nytimes.com/2026/09/20/science/nih-omb-grants-bhattacharya-vought.ht
 https://www.statnews.com/2026/09/21/trump-plan-for-commission-to-review-nih-grants-push-back/
 
 ### Spinout-structure comparators (how other people carve assets out)
-_Last update: 2026-09-25_
+_Last update: 2026-09-30_
+- **A SHAPE MISSING FROM THIS PAGE — *RECOMBINATION* — AND A CLASS OF CAPITAL MISSING FROM OUR ROUNDS (added 2026-09-30, off Portfolio Watch
+  item 3; launched 2026-09-29).** **ai3Bio** launched on a **$48M Series A led by UPMC Enterprises and Ziff Capital Partners** (Cockrell
+  Partners, Tanis Ventures), **assembled from the parts of TWO existing biotechs — Corner Therapeutics and Novosenta** — with a **new CEO on
+  top (Steven Altschuler, former CEO of Children's Hospital of Philadelphia)** and the scientific founder of one of the predecessors (**Jonathan
+  Kagan**) carried across. Science and the Winnow read live under Winnow.
+  **⇒ THE STRUCTURE (Eddie Cherok + Emily Wilkinson): not a carve-out (Kura/Caspian), not option-to-acquire (Novartis/Sironax), not a reverse
+  merger (Marea/Lisata, North/Aethlon), not sell-the-output-and-stay (Atavistik) — RECOMBINATION: two companies with partial theses and stranded
+  platforms folded into ONE company with ONE thesis. Relevant to us because a venture studio accumulates exactly this inventory.**
+  **⇒ AND THE LEAD INVESTOR IS A HEALTH SYSTEM'S VENTURE ARM, a class of capital in NONE of our rounds. Johns Hopkins holds a comparable balance
+  sheet and no comparable vehicle — the same question the 09-16 Mayo × Thermo Fisher / Precure entry raised, arriving through a different
+  instrument. Put UPMC Enterprises in the empty column alongside Luma (duration) and the T1D Fund (venture philanthropy).** Source:
+  https://www.biopharmadive.com/news/ai3bio-th17-drugs-immune-reset-launch-series-a/831521/
+- **A FOURTH EXIT ARCHITECTURE: ACQUIRED OUTRIGHT, STILL RUN AS ITSELF — AND IT CAME WITH THE FIRST PEER-REVIEWED HUMAN DATA FOR THE
+  FIND-A-NEW-POCKET CATEGORY (added 2026-09-30 Portfolio Watch CLOSER; announced 2026-09-29/30, paper *Nature Medicine* Sept 2026).**
+  **Vividion Therapeutics — a WHOLLY OWNED, INDEPENDENTLY OPERATED subsidiary of Bayer AG — published Phase 1 data on VVD-214 (RO7589831 /
+  VVD-133214), the FIRST covalent WERNER HELICASE (WRN) inhibitor in clinical development**, an oral synthetic-lethal agent exploiting MSI-high /
+  dMMR tumours' dependence on WRN-mediated DNA repair. **88 previously treated patients with advanced MSI-high/dMMR solid tumours; 66 evaluable,
+  median 3 prior lines, 95.5% prior checkpoint therapy. OVERALL: disease control 74.2%, 7 confirmed PRs (10.6%), mPFS 6.7 months, mOS 17.6
+  months. CRC SUBSET: disease control 80.5%, 3 confirmed PRs (7.3%), mPFS 7.3 months, 12-month OS 78.3%; all three responders ongoing at cutoff.
+  SAFETY (n=88): TEAEs mostly Grade 1–2, discontinuation for TEAEs 3.4%.** Lead author **Timothy Yap** (MD Anderson); CEO **Aleksandra Rizo**.
+  Ongoing **Phase 1b with bevacizumab** (previously treated MSI-high/dMMR CRC) and **Phase 2 with pembrolizumab** (previously untreated).
+  Platform = chemoproteomics identifying "hundreds of previously unknown functional pockets on well-validated protein targets" + a covalent
+  library.
+  **⇒ SCIENCE READ (Virginia Burger) — CARDIAC FIBROSIS THEME. The standing problem is that the interesting targets are INTRACELLULAR and
+  orthosterically undruggable; on 09-25 Atavistik was named as a vendor for that gap on the strength of TWO PHARMA DEALS. Vividion is the same
+  proposition from different chemistry (covalent chemoproteomics vs allosteric screening) and now has a PEER-REVIEWED PHASE 1 with a
+  first-in-class mechanism and manageable safety. ⇒ The category has CLINICAL evidence, not only DEAL evidence: if the theme is TARGET-limited
+  rather than CHEMISTRY-limited, there are two named routes and one has been in people.**
+  **⇒ STRUCTURE READ (Eddie Cherok + Emily Wilkinson): a wholly owned Bayer subsidiary that calls itself independently operated and publishes in
+  *Nature Medicine* under its own name with an academic first author. Put it beside Telethon (nonprofit keeps the licence, 09-29) and Atavistik
+  (sell the output and stay, 09-25). It is a shape worth ASKING an acquirer for, and nobody asks, because it is decided in the term sheet rather
+  than afterwards.**
+  **CANDID: the confirmed response rate is ~10.6% overall and THREE patients in the CRC subset; the headline is DISEASE CONTROL, a softer
+  endpoint.** Source:
+  https://www.biospace.com/press-releases/vividion-announces-publication-of-clinical-data-for-vvd-214-in-nature-medicine-highlighting-potential-in-colorectal-cancer
 - **THE OPPOSITE POLE, EVIDENCED THE SAME WEEK: SELL THE OUTPUT AND STAY (added 2026-09-25 Portfolio Watch item 4; announced 2026-09-24).**
   **Roche × Atavistik Bio (Massachusetts): $70M upfront, up to $1.9B in milestones, plus tiered royalties**, for small molecules against
   **cardiovascular, renal and metabolic (CVRM)** targets. Platform = **AMPS**, allosteric discovery finding **novel functional binding
@@ -1266,7 +1329,34 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-09-29_
+_Last update: 2026-09-30_
+- **THE OPEN 09-04 EXTERNAL-CONTROL ITEM NOW HAS A WORKED FAILURE CASE, AND IT CONVERTS A PRINCIPLE INTO THREE SPECIFICATIONS: uniQure FILED
+  ON ONE VERSION OF ITS NATURAL-HISTORY COMPARATOR AND READ OUT AGAINST THE NEXT (added 2026-09-30 Portfolio Watch LEAD; reported 2026-09-29).**
+  **AMT-130 (uniQure, Nasdaq: QURE)** — one-time intrastriatal **AAV** gene therapy lowering **mutant huntingtin**, Phase 1/2, **n=12 high dose**
+  at the 48-month cut. **PRIMARY (composite UHDRS) vs an UPDATED external natural-history database: 44% slowing at Month 48, NOT statistically
+  significant**, against **75% at Month 36 versus the PRIOR version of the same database**. Stock **−40% at the open (~$23.15), ~$1B of market
+  value**. **SECONDARY (total functional capacity): 61% at Month 48, replicating 60% at Month 36 — and TFC is the PRIMARY endpoint of uniQure's
+  CONFIRMATORY trial.** Mechanics: **53% of the Month-48 reference data was MISSING**; CEO **Matt Kapusta** — "the patients who left the control
+  were declining markedly faster than those who remained… the comparator increasingly reflected a healthier population than at baseline. This
+  bias cuts against AMT-130, not for it." **Guggenheim: a SINGLE OUTLIER contributed ~one third of the cUHDRS degradation between Months 36 and
+  48.** Post hoc against the prior control: **54% (cUHDRS) / 68% (TFC)**. A separate **Month-36 cut in n=15: 80% / 67%.** Accelerated-approval
+  filing went in **early September on the Month-36 data against the OLDER comparator**, rapid review requested (~8-month verdict); CMO **Walid
+  Abi-Saab** could not say whether FDA will rerun the analysis on the new cut. FDA had rejected an earlier AA plan in March. Stifel's **Paul
+  Matteis**: Month-48 "still impressive generally" with "some regression"; the Month-36 cut "is the crux" of FDA alignment.
+  **⇒ READ (Geoffrey Lynn + Hemaka Rajapakse + Emily Wilkinson) — THREE SPECS FOR THE PRE-IND ASK, NOT ONE PRINCIPLE. (1) VERSION-LOCK: an
+  external control is a LIVING dataset; fix the VERSION and the ANALYSIS RULE, do not merely name the source. (2) INFORMATIVE CENSORING IS
+  STRUCTURAL: attrition in a progressive-disease natural-history cohort is non-random and drifts the comparator HEALTHIER as follow-up
+  lengthens — so a single-administration therapy whose value proposition IS durability watches its apparent effect decay for reasons unrelated
+  to the drug. (3) THE INSTRUMENT RULE APPLIED TO THE CONTROL: at n=12 against a movable comparator, one patient moved a third of the point
+  estimate.**
+  **⇒ THE HALF IN OUR FAVOUR, AND IT SPEAKS TO THE 09-14 INSTRUMENT GAP: the CRUDER, FUNCTIONAL measure replicated where the sensitive composite
+  did not.** Aletira holds machine-measured ABR thresholds and **no** validated functional scale, and **no natural-history cohort of genetically
+  confirmed children exists**. ⇒ **The 09-14 action ("fund the COHORT, not a bespoke scale") gains a spec: fund it with a pre-agreed VERSION LOCK
+  and a PRE-SPECIFIED MISSING-DATA RULE.**
+  **CANDID: most analysts still expect approval — this prices the VOLATILITY of an external control, it does not make one unusable. uniQure paid
+  in market cap; a Blackbird spinout would pay in a financing round.** Sources:
+  https://www.biopharmadive.com/news/uniqure-huntingtons-four-year-data-gene-therapy-results/831611/ ·
+  https://www.fiercebiotech.com/biotech/uniqure-stock-crashes-huntingtons-gene-therapy-data-weaken
 - **THE COMMERCIAL COUNTERPART TO THE ATEBRIOZ REGULATORY TEMPLATE, AND IT IS A THIRD EXIT ARCHITECTURE: A NONPROFIT KEEPS THE BLA AND
   RENTS THE COMMERCIAL FUNCTION FROM ANOTHER NONPROFIT (added 2026-09-29 Portfolio Watch LEAD; QTC announcement 2026-09-28).**
   **WASKYRA® (etuvetidigene autotemcel)** — ex vivo **lentiviral** gene therapy (autologous CD34+ HSPCs, functional *WAS* transgene) for
@@ -2243,7 +2333,18 @@ _Last update: 2026-08-28_
   it. KRAS-landscape news is no longer portfolio-relevant on aSKY's account
   (Clasp remains a live KRAS-adjacent holding).
 ### Neuropsychiatric NewCo (schizophrenia) — Lieber Institute + Third Rock ✅
-_Last update: 2026-09-28_
+_Last update: 2026-09-30_
+- **THE 09-28 LUNDBECK ACTION GETS A SECOND, INDEPENDENT CONFIRMATION IN 48 HOURS — THE SAME BIDDER IS REBUILDING ITS *DATA* FUNCTION AS WELL AS
+  ITS LOCATION (added 2026-09-30, off Portfolio Watch item 5; announced 2026-09-29).** **Lundbeck is a FOUNDING MEMBER of the Ginkgo Datapoints ×
+  Apheris Antibody Developability Consortium** (AbbVie, argenx, Lundbeck, Takeda; 10,000 antibodies, federated foundation model, dataset to
+  members early 2027 — full entry under Biolinco), and its quoted rationale is **candidate selection in CNS**: VP biotherapeutic discovery
+  **Allan Jensen** — "in complex therapeutic areas such as CNS… the ability to select well behaved candidates with superior developability
+  properties is essential."
+  **⇒ READ (Maisha Rahman + Matt Tremblay): on 09-25 Lundbeck announced it was relocating its US HQ to Greater Boston and standing up a global
+  innovation hub; four days later it is buying into a precompetitive data consortium. A pure-play CNS bidder on the GPR52 list is rebuilding its
+  external-innovation AND data functions simultaneously. ⇒ SHARPENS, does not replace, the 09-28 action: get the GPR52 package in front of that
+  group while it is being assembled and needs deal flow to justify itself.** **CANDID: the consortium is ANTIBODY developability and GPR52 is a
+  small-molecule programme — this is a signal about the counterparty's posture and appetite, not a technical read-through.**
 - **A NAMED CNS BIDDER IS CONSOLIDATING ITS US INNOVATION FUNCTION INTO GREATER BOSTON — THIS IS ABOUT WHERE THE PROGRAMME HAS TO BE *SEEN*, NOT
   ABOUT A HEADQUARTERS (added 2026-09-28 Portfolio Watch item 5; announced 2026-09-25).**
   **H. Lundbeck A/S** will **relocate its US headquarters from Deerfield, Illinois to Greater Boston** and **establish a global innovation hub**
@@ -3023,7 +3124,29 @@ _Last update: 2026-09-23_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-09-29_
+_Last update: 2026-09-30_
+- **SIXTH ENTRANT INTO THE CONTROL-ARCHITECTURE ROW THIS MONTH AND THE FIRST ONE ON *OUR* CELL TYPE — BUT IT COMPETES ON A DIFFERENT AXIS, AND
+  ITS CEO STATED OUR ARGUMENT BETTER THAN WE HAVE (added 2026-09-30 Portfolio Watch item 3; launched 2026-09-29).**
+  **ai3Bio — $48M Series A led by UPMC Enterprises and Ziff Capital Partners**, with **Cockrell Partners** and **Tanis Ventures**. Pittsburgh PA
+  + Watertown MA. **ASSEMBLED FROM THE PARTS OF TWO BIOTECHS: Corner Therapeutics** (formerly led by **Jonathan Kagan**, Harvard Medical School
+  pediatrics / Boston Children's GI) **and Novosenta** (cancer immunology, out of UPMC). **Kagan = scientific founder; CEO = Steven Altschuler**,
+  former CEO of Children's Hospital of Philadelphia; strategic advisor **John Marganore** (longtime Alnylam CEO). Name = advanced immunology,
+  autoimmunity, artificial intelligence.
+  **TARGET: Th17 cells** (the IL-17-producing helper-T subset). **TWO MODALITIES: (1) lipid nanoparticles delivering molecular instructions for
+  those cells to self-destruct; (2) a targeted antibody driving their clearance.** Preclinically the LNP approach "effectively removed
+  disease-causing Th17 cells", the antibody "demonstrated potent efficacy". **IND-enabling safety studies underway; NO first indication
+  disclosed.** Both incorporate Corner and Novosenta technology.
+  **THE QUOTE TO KEEP (Kagan, on autoimmune cell therapy): "You're eliminating these cells by cracking them open and inducing inflammation in
+  the face of an inflammatory environment… It's like pouring gasoline onto the fire."**
+  **⇒ READ (Jon Robbins + Eddie Cherok) — THE ROW MOVES ONTO OUR CELL TYPE AND OFF OUR AXIS.** Kyverna (09-25), IASO in vivo CAR-T (09-28),
+  Adicet allogeneic γδ (09-29) and the CD20 bispecifics are **all B-cell depletion**; Winnow redirects T cells against pathogenic T cells and
+  ai3Bio eliminates a helper-T subset. **But ai3Bio differentiates on SELECTIVITY OF THE TARGET CELL, not on control architecture: their cut is
+  LINEAGE-SUBSET (Th17 vs all B cells), ours is ANTIGEN-SPECIFIC — the finer cut. Say it in those words; do not re-litigate cell therapy.**
+  **⇒ TAKE THE QUOTE FOR FREE: the clearest articulation yet of the case AGAINST autoimmune cell therapy is now on the record from a competitor
+  that raised $48M on it** — useful when an investor asks whether the cell-therapy data is overwhelming.
+  **CANDID: preclinical, no named indication, and Th17 depletion is a target-validation question the IL-17 antibody class has answered in
+  psoriasis and not elsewhere.** *Structural read (RECOMBINATION shape + provider-side venture) logged under spinout-structure comparators in
+  §1.* Source: https://www.biopharmadive.com/news/ai3bio-th17-drugs-immune-reset-launch-series-a/831521/
 - **FIFTH ENTRANT INTO THE CONTROL-ARCHITECTURE ROW IN ONE MONTH, AND THE ONE THAT DOES THE MOST DAMAGE: AN OFF-THE-SHELF ALLOGENEIC CELL
   THERAPY WITH 12-MONTH LUPUS REMISSIONS AND FDA ALIGNMENT ON *OUTPATIENT* DOSING (added 2026-09-29 Portfolio Watch item 2; announced
   2026-09-28).** **Adicet Bio (Nasdaq: ACET) — prula-cel (prulacabtagene leucel, formerly ADI-001): ALLOGENEIC GAMMA-DELTA CAR-T targeting
@@ -3800,7 +3923,33 @@ _Last update: 2026-09-24_
   https://www.congress.gov/bill/119th-congress/house-bill/842
 
 ### Biolinco — barcoded antibody production ✅
-_Last update: 2026-09-11_
+_Last update: 2026-09-30_
+- **FOUR LARGE PHARMAS JUST MADE "ML COMPETES ON PROPERTIES, NOT TARGETS" INTO INDUSTRY POLICY AND NAMED THE PROPERTY — AND THE BOTTLENECK IS
+  WET-LAB THROUGHPUT, WHICH IS BIOLINCO'S SIDE OF THE TRADE (added 2026-09-30 Portfolio Watch item 5; announced 2026-09-29).**
+  **Ginkgo Datapoints (Ginkgo Bioworks) + Apheris launched the ANTIBODY DEVELOPABILITY CONSORTIUM. Founding members: AbbVie, argenx, Lundbeck,
+  Takeda** (open to more). **Each member contributes proprietary antibody sequences, public sources fill the remainder, TARGET 10,000
+  ANTIBODIES.** **Ginkgo Datapoints leads scientific design and execution — sequence selection, antibody PRODUCTION, and HIGH-THROUGHPUT WET-LAB
+  CHARACTERIZATION across core developability endpoints — and trains a FOUNDATION developability model on the dataset inside Apheris' secure
+  environment. Apheris' FEDERATED infrastructure delivers that model into each member's own environment for fine-tuning on private data;
+  members benchmark against the full consortium dataset WITHOUT exposing sequences to each other.** Independent oversight: **Charlotte Deane**
+  (Oxford, structural bioinformatics) and **Peter Tessier** (Michigan). **Initial dataset to members EARLY 2027**; more complex formats later.
+  Quotes: **Athena Hadjixenofontos** (AbbVie) — datasets "designed for machine learning, addressing limitations associated with convenience
+  datasets"; **Allan Jensen** (Lundbeck) — "in complex therapeutic areas such as CNS… the ability to select well behaved candidates with superior
+  developability properties is essential"; **Yves Fomekong Nanfack** (Takeda) — pooled standardized data "can create stronger predictive models
+  than any one company could build alone."
+  **⇒ READ ONE (Avi Khanna) — NOT OBVIOUSLY A THREAT, AND THE DIRECTION DEPENDS ON WHAT BIOLINCO IS. The consortium's binding constraint is that
+  somebody must physically MAKE and CHARACTERIZE 10,000 antibodies; a foundation model is only as good as the throughput of the assay that
+  labelled its training set. ⇒ TAILWIND for a high-throughput developability MEASUREMENT technology; HEADWIND for anyone selling developability
+  as a JUDGMENT SERVICE. ACTION: one conversation with Kevin Wen on which of those Biolinco is.**
+  **⇒ READ TWO (Virginia Burger) — CLOSES THE 08-29 LOOP AND NARROWS THE QUESTION. Our standing frame is that ML currently competes on
+  PROPERTIES (half-life, developability, manufacturability) rather than target discovery. Four pharmas just made that industry policy and named
+  the property. ⇒ The question to any AI-pitching programme: if developability prediction becomes a PRECOMPETITIVE COMMONS trained on 10,000
+  antibodies and delivered to members by early 2027, what does your proprietary model have that the commons will not?**
+  **⇒ READ THREE — THE MECHANISM IS SEPARABLE FROM THE ANTIBODIES (Maisha Rahman): a federated architecture lets competitors train on each
+  other's data without exposing it. Johns Hopkins, UMB and the Lieber Institute hold three largely non-overlapping data estates and the exposure
+  problem is exactly why they do not pool them. A convening Blackbird could actually run — pair with the 09-16 Mayo × Thermo Fisher / Precure
+  entry.** *Lundbeck read filed under the Neuropsychiatric NewCo entry.* Source:
+  https://www.genengnews.com/topics/bioprocessing/ginkgo-datapoints-apheris-announce-founding-members-of-antibody-developability-consortium/
 - **What:** **barcoded antibody production.** JHTV's own commercial framing (2026
   Blaze Award citation) is sharper and worth reusing: **"DNA barcoding technology
   to improve drug MANUFACTURABILITY"** — i.e. positioned as a bioprocess /
@@ -4175,7 +4324,34 @@ _Last update: 2026-09-28_
   Source: https://www.biospace.com/drug-development/revmeds-newly-approved-rasonque-could-hold-up-in-non-small-cell-lung-cancer
 
 ### Georgiamune — Gaithersburg MD, Blackbird BioVentures position, the INTERGALACTIC-CENTER THESIS WITH THIRD-PARTY CAPITAL BEHIND IT ✅
-_Last update: 2026-09-22_
+_Last update: 2026-09-30_
+- **THIRD TREG-ACTIVATION ASSET IN NINE DAYS AND THE SECOND TO PICK ATOPIC DERMATITIS FIRST — WHICH MAKES GIM-407's *INDICATION* CHOICE THE
+  DIFFERENTIATOR RATHER THAN ITS ORAL ROUTE, AND FLIPS THE DIRECTION OF THE READ-THROUGH (added 2026-09-30 Portfolio Watch item 4; presented
+  2026-09-30 at EADV Congress 35, Vienna, Abstract AS-3660 / ePoster P1719).**
+  **Egle Therapeutics — EGL-003, a Treg-selective IL-2 mutein, subcutaneous. Phase 1 SAD, n=24 healthy volunteers, four dose levels
+  (0.5 / 1.5 / 2.5 / 5 µg/kg), single dose;** PK/PD to Day 8 except the 2.5 µg/kg cohort (Day 56). **SAFETY: no SAEs at any dose;
+  injection-site reactions most common, all Grade 1 and self-limited; flu-like symptoms confined to the top two cohorts.**
+  **PD: dose-dependent total Treg expansion across all doses for up to 28 days with NO rise in conventional CD4, CD8 or NK populations;
+  ~8- to 21-fold increases in activated (CD25-bright) Tregs; upregulation of CD25, CTLA-4, FoxP3, ICOS, HLA-DR, Ki67; plasma IL-10 rising in
+  parallel.** **THE READOUT WORTH COPYING: CLA-positive (skin-homing) Tregs expanded then fell BELOW baseline in circulation while CLA-negative
+  Tregs stayed elevated — the kinetic signature of migration out of blood into tissue.**
+  **NEXT: randomized, double-blind, placebo-controlled MAD in ~50–100 adults with moderate-to-severe atopic dermatitis; 1.5 µg/kg q4w escalating
+  to 5 µg/kg q4w or q2w; PRIMARY = SAFETY, secondaries EASI and vIGA. Starts Q4 2026; preliminary efficacy Q2 2027; full assessment Q4 2027.**
+  CMO **Kenji Hashimoto**, CEO **John Celebi**; investor webcast **2026-10-01** with **Stephan Weidinger** (Kiel). **~21.2M addressable
+  moderate-to-severe AD patients US+EU.**
+  **⇒ READ ONE (Eddie Cherok + Virginia Burger) — THE READ-THROUGH HAS FLIPPED DIRECTION.** Sequence: **Georgiamune $93M + RegCell $66M (09-19)
+  → TRex Bio S-1 on TNFR2 agonist TRB-061, first indication moderate-to-severe AD, data mid-2027 (09-22) → Egle, IL-2 mutein, first indication
+  moderate-to-severe AD, prelim Q2 2027 (09-30).** TRex sells a **POPULATION** (receptor choice); Egle sells a **PROPERTY** (tissue tropism it
+  can read from blood); **GIM-407 sells a different PROPERTY (oral) and chose different INDICATIONS (IBD, SLE, T1D)**. ⇒ **Indication choice is
+  now doing more differentiating work than route of administration. State the asymmetry out loud: a NEGATIVE AD readout in 2027 marks GIM-407's
+  MECHANISM down by association in a disease it never entered; a POSITIVE one hands Georgiamune free mechanism validation in a market it is not
+  competing in.**
+  **⇒ READ TWO — THE DILIGENCE ASK (if the position gives us access, per the 09-19 action): Egle's Phase 1 separates Treg EXPANSION from Treg
+  TRAFFICKING. For an ORAL agent dosed chronically in gut, kidney and pancreas, "did the Tregs go where I needed them" decides whether a
+  healthy-volunteer study means anything. Ask whether GIM-407 can answer it.**
+  **CANDID: n=24, healthy volunteers, single dose, PD only. Every Treg-directed IL-2 programme has looked good on CD25-bright expansion before
+  having to prove it mattered in patients, and "no SAEs in 24 subjects at one dose" is not a safety database.** Source:
+  https://www.biospace.com/press-releases/egle-therapeutics-announces-positive-phase-1-data-for-egl-003-showing-favorable-safety-and-selective-treg-expansion-in-healthy-volunteer-study
 - **A DIRECT TREG-ACTIVATION COMPARATOR FILED TO GO PUBLIC WITH LILLY ANCHORING THE BOOK, NINE MONTHS AHEAD OF ITS FIRST EFFICACY DATA
   (added 2026-09-22 Portfolio Watch item 3; S-1 filed 2026-09-18, trade coverage 2026-09-21).** **TRex Bio** (South San Francisco;
   proposed Nasdaq ticker **TRXB**) filed its S-1 on **2026-09-18**; underwriters **J.P. Morgan, Evercore ISI, Cantor, Stifel, Wedbush
