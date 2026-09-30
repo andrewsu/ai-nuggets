@@ -3612,3 +3612,31 @@ Substantive shortlist:
 
 Two verification notes worth flagging: I confirmed on ClinicalTrials.gov that 97 studies mention uPAR/PLAUR and **zero** are CARs (the episode uses this), and I kept Adcendo's ADCE-D01 out of that roster — it targets uPARAP/Endo180, a different protein. I also web-searched the exact title to rule out the bioRxiv re-post recency trap; the work has no prior public version.
 === 2026-09-29T02:53:08-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-09-30T02:40:10-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per `PIPELINE.md` I stopped after the script plus the two transient stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (`publish_pending.py` does those after batch TTS).
+
+**Published (pending batch TTS):** `2026-09-30-daxdilimab-ilt7-pdc-depleting-antibody-discoid-lupus-flat-dose-response`
+— Daxdilimab, Amgen's afucosylated anti-ILT7 pDC depleter, hits its Phase 2 primary endpoint in refractory primary discoid lupus. Files: `.md` (1,541 words), `.rss-item.xml` (XML-validated, both placeholder tokens present), `.commit-msg`. All 5 reference URLs verified live (`200`/`203`; science.org and nejm.org bot-block so I used PubMed and ClinicalTrials.gov instead).
+
+## Candidate funnel
+
+**bioRxiv** — details API healthy (~1.2 s). Day-by-day sweep 09-28/29/30 = **699 unique v1 records** (387 / 308 / 16). Tight keyword filter on 09-29+ postings → **11 substantive** after discarding "til"-in-"until" style noise. Thin day for this show.
+- `10.64898/2026.09.28.755065` **TWISTAR** — tumor-reactive TCR deorphanization, shared immunodominant antigens across cancers (Lambrechts, VIB-KU Leuven). **Full text obtained** (133 KB, jina-on-PDF, cycle 1). Strongest science candidate; held as backup.
+- `10.64898/2026.09.28.754895` CD4+ CXCR6+ Trm mark ICI response in high-grade glioma (DKFZ)
+- `10.64898/2026.09.24.753585` versikine/VCAN proteolysis drives tumor TLS; 100% OS in intense-proteolysis mCRC
+- `10.64898/2026.09.23.753873` melanoma organoids + ICB · `10.64898/2026.09.24.753155` MIMOSA antibody design · `10.64898/2026.09.28.754983` SMYD3 degraders HNSCC
+
+**News / press** — all five indexes 200 to plain curl + Safari UA (Fierce article pages worked too). BioSpace `/press-releases` was the highest-yield source. EADV 2026 (Vienna) and EASD (Milan) both opened today.
+- **Daxdilimab, DLE Phase 2 numbers** — Fierce, dated 2026-09-30T04:26 ET → **CHOSEN**
+- Navigator NAV-240/NAV-242, TNFα×OX40L bispecifics in hidradenitis suppurativa — on-beat format, **no efficacy data yet**; late-breaker Oct 1, revisit
+- Egle EGL-003 IL-2 mutein Ph1, 8–21× CD25-bright Treg expansion + CLA+ skin-homing kinetics — third IL-2/Treg pick in six weeks, and calibr-briefing took it today
+- Zasocitinib vs deucravacitinib TYK2 head-to-head Ph3 — big, but small molecule; calibr led with it
+- Merck tulisokibart EADV win — Endpoints-only, hard-paywalled, no PR mirror
+- ifinatamab deruxtecan B7-H3 ADC application scrapped; Amgen dazodalibep Sjögren's — both out of window (09-28 and earlier)
+
+**Policy / funder** — ARPA-H, NIH, NSF: no on-beat items.
+
+**No source failures.** r.jina.ai not TLS-intercepted (7th clean day); plain-curl bioRxiv PDF returned the 17-byte 429 but jina-on-PDF cleared it on the first cycle.
+
+Why daxdilimab beat TWISTAR: it's a same-morning clinical readout on Justice's stated beat (autoimmune biologics, biotech headlines), it breaks a two-run bioRxiv streak, and the flat-to-inverted dose-response gives a genuinely transferable rule for depleting biologics — dose-ranging is a pharmacodynamic exercise, and the 2021 Phase 1b's 97.6% lesional-skin pDC clearance explains why. The sharpest beat came from the registry: the trial that *won* is listed `TERMINATED` on a sponsor business decision with no results posted, one win across six indications.
+=== 2026-09-30T02:54:18-07:00 done  justice-biotech-brief (exit 0) ===
