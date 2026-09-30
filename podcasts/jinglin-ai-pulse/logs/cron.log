@@ -3304,3 +3304,36 @@ Spine: in one day the agent guardrail moved out of the weights and down into the
 - **Source failures** — `nytimes.com` blocked both ways (r.jina.ai abuse-block on the domain; direct curl hits DataDome, HTTP 403). Worked around via Zvi Mowshowitz's Sep 25 transcript walkthrough, which marks direct quotation; the "improve your process" passage cross-checks verbatim against CNBC's independent quotation of the same episode. Provenance is disclosed in the script's source block. `worldlabs.ai/blog/to-seek-a-newer-world` 404s — the post lives on Li's Substack.
 - **X/Twitter** — not directly readable from this host (known); discourse sourced from HN threads, the Latent Space AINews roundup's quoted tweets, and primary posts.
 === 2026-09-29T02:40:13-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-09-30T02:30:10-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-09-30-the-grader-they-imagined.md` — 2,506 spoken words (~12 min at this show's realized 208 wpm; recent episodes: 2,534 words → 12m09s)
+- `…/2026-09-30-the-grader-they-imagined.rss-item.xml` — validates as XML, and the feed still parses with it spliced in
+- `…/2026-09-30-the-grader-they-imagined.commit-msg`
+
+**Editorial spine:** the grader is now part of the system under test. Three independent things converged inside 48 hours — Handshake's audit of imagined graders, Thariq Shihipar's first-hand account of agents hacking Hugging Face *for the scorer's source code*, and OpenAI shipping a Decisions API that swyx reads as vision-without-calibration.
+
+**Candidate funnel**
+
+Hacker News (Algolia, 40h window, >90 points): 59 stories scanned, 14 AI-relevant, 8 substantive after dropping off-topic (macOS bugs, Delhi electricity, SR-71).
+- GPT 6.1 Sol — 936 pts — openai.com/index/introducing-gpt-6-1-sol — **CHOSEN**
+- Dots: Always-on agents — 614 pts — openai.com/index/introducing-dots — **CHOSEN**
+- GLM-5.3 and the spread of advanced cyber capabilities — 225 pts, 216 comments — anthropic.com/research/glm-5-3-… — **CHOSEN**
+- ChatGPT Pro 500 — 205 pts, 234 comments — help.openai.com/en/articles/9793128 — **CHOSEN**
+- DevDay 2026 Recap — 93 pts — openai.com/index/devday-2026-recap — **CHOSEN (context)**
+- Livenerf: Has Opus 5.5 been nerfed yet? — 603 pts — dropped, thin on substance under the PROMPT's anti-drama rule
+- Jeeves / Raschka's bag-of-words-to-Jev — 235 / 116 pts — dropped, Jev-clone thread shipped 09-29 (Jeff)
+- AI needs $6T annual revenue — 203 pts — traced to the Bain primary — **CHOSEN**
+
+Aggregators / podcasts: Latent Space archive (24 posts) → AINews DevDay roundup **read in full** (carried the System One vs Decision Models framing); Thariq Shihipar episode, Sep 29, **full published transcript read** — **CHOSEN as Deep Cut**. Interconnects archive checked: nothing since 09-22.
+
+Business/investment: Anthropic's leaked S-1 (Reuters via Fortune) — **CHOSEN**; Bain global technology report — **CHOSEN**; NVIDIA/Hugging Face — **dropped**, announced Sep 3 and already referenced in the 09-29 episode, so yesterday's "Clem announced the deal" was deal-close, not net-new.
+
+**Source failures / notes**
+- X/Twitter unreadable from this host as usual; AI Twitter signal sourced through the AINews roundup and HN, per standing practice.
+- `reuters.com` → 401 (known); used Fortune's report of the same prospectus.
+- `thenationalnews.com` URL from HN 404s; found the Bain report via Bloomberg/Japan Times instead and quoted David Crawford verbatim from there.
+- All four `openai.com` / `help.openai.com` pages 403 to direct curl and returned full bodies via `r.jina.ai` (TLS clean today — no Scripps interception). I extended the existing openai-via-jina memory to cover `help.openai.com`, since the plan-allowance terms that drove the episode's sharpest economic point aren't in any launch blog post.
+- **Dropped for lack of a primary:** the Arena LLM-judge self-preference numbers (58% / 88%), the AI21 eval-leakage figures, and the Thom Wolf / Andon Labs eval-awareness read. All three would have strengthened the grader section, but I could only find aggregator write-ups, so I left them out rather than cite unverified figures.
+=== 2026-09-30T02:44:26-07:00 done  jinglin-ai-pulse (exit 0) ===

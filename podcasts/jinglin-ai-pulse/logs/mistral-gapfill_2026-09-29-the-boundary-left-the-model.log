@@ -1,0 +1,6 @@
+ERROR: forced provider mistral failed: mistral:en_paul_neutral chunk 2 failed after retries: 402 Client Error: Payment Required for url: https://api.mistral.ai/v1/audio/speech
+Script body: 14298 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2934 chars) -> 135.0s ✓
+  [mistral:en_paul_neutral] chunk 2/5 attempt 1 error: 402 Client Error: Payment Required for url: https://api.mistral.ai/v1/audio/speech
+  [mistral:en_paul_neutral] chunk 2/5 attempt 2 error: 402 Client Error: Payment Required for url: https://api.mistral.ai/v1/audio/speech
+  [mistral:en_paul_neutral] chunk 2/5 attempt 3 error: 402 Client Error: Payment Required for url: https://api.mistral.ai/v1/audio/speech
