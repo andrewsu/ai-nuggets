@@ -5075,3 +5075,49 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote the script plus the tw
 
 **One thing to flag honestly:** only 3 of the 12 items were read in full text. The other 9 are short abstract-only mentions — permitted by PIPELINE.md for tail items with self-contained abstracts, which these have (n's, effect sizes and statistics are all in the abstracts) — but that's a thinner run than I'd want, and the cause was the bioRxiv Cloudflare throttle plus render lag rather than the content bar. I trimmed those items to 30–60-second mentions accordingly and said so on air.
 === 2026-09-30T03:17:02-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-01T02:50:13-07:00 start receptor-and-reason ===
+Episode published (batch mode — script + stubs written, TTS/feed/commit left to `publish_pending.py`).
+
+**Files written** (`podcasts/receptor-and-reason/scripts/`):
+- `2026-10-01-receptor-and-reason.md` — 11 items, 3,745 spoken words (~20–21 min)
+- `2026-10-01-receptor-and-reason.rss-item.xml` — validated XML with `__LENGTH__`/`__DURATION__` placeholders
+- `2026-10-01-receptor-and-reason.commit-msg`
+- Ledger appended: 132 episodes, 1,369 items
+
+`SKIP_TTS=1` was set, so I skipped `gen_tts.py`, `publish_episode.sh`, the `feed.xml` edit, and the commit.
+
+## Candidate funnel
+
+| Source | Scanned | Survived relevance filter |
+|---|---|---|
+| bioRxiv details API (09-25→10-01, day-by-day) | 1,416 records / 1,017 v1-in-window | 76 |
+| medRxiv details API (09-25→10-01) | 330 / 273 v1-in-window | 97 |
+| arXiv shared cache (`/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, covers only 09-29/09-30) | 500 | 42 |
+| arXiv live keyword query (agentic × bio, back to 09-24) | 200 | 10 |
+| Nature-family RSS (npp, mp, nbt, npjdigitalmed) | 32 | 9 |
+| Wiley ASCPT RSS (CPT:PSP, CPT) | 103 | 4 |
+| Crossref `from-created-date` (Biol Psychiatry, CNNI, Neuropharmacology, PNPBP, Drug Discov Today, IJNP) | 38 | 17 |
+
+**Source failures:** `www.biorxiv.org` full text — 17-byte HTTP 429 on all 9 attempts across 3 documents (one worker, 45–60 s spacing), and `r.jina.ai` on the same URLs returned a 408-byte Cloudflare challenge. Discovery was unaffected; `www.medrxiv.org` was 8-for-8 with the identical user agent, so the throttle is per-host. ScienceDirect RSS is undated, so those journals were routed through Crossref instead. Oxford IJNP and Biol Psych: CNNI returned zero Crossref items in-window.
+
+**Dedup:** 83 candidates → 68 fresh (15 already shipped — most of the 09-30 roster resurfaced, including AnewDDE, the Xenon/PVT-CeA paper, semaglutide/cocaine, DMT spiral dynamics, Mu/NOP TRAP2). Final 11-item roster re-filtered before the ledger write: 11/11 clean.
+
+**Shortlist — chosen (★), full text read in all 11 cases:**
+- ★ ADAP1 frameshift / Paisa founder population → serious mental illness — medRxiv `2026.09.25.26363706`
+- ★ FADS rare variants / DHA → major depression — medRxiv `2026.09.29.26364222`
+- ★ Antidiabetic drug-target MR vs. vascular dementia — medRxiv `2026.09.22.26363326`
+- ★ Gantenerumab brain Aβ/tau proteoforms (DIAN postmortem) — medRxiv `2026.09.22.26363432`
+- ★ ATF4 gates Group-1 mGluR translation and LTD — Mol Psychiatry `10.1038/s41380-026-03919-3`
+- ★ LLM sequential decision-making under uncertainty in biochemical domains — arXiv `2609.33061`
+- ★ M3OS multi-agent molecular optimisation — arXiv `2609.34491`
+- ★ Perspective independence vs. personas in LLM teams — medRxiv `2026.09.24.26363897`
+- ★ LLMs predicting ESC 2026 late-breakers (pre-registered) — medRxiv `2026.09.23.26363773`
+- ★ Perturbation models on calibrated metrics — Nat Biotech `10.1038/s41587-026-03307-w`
+- ★ Psychotherapy valued over AI-integrated therapy — medRxiv `2026.09.29.26364234`
+- Dynamic SV2A PET perfusion + synaptic density in PD — medRxiv `2026.09.28.26364237` (full text read, cut for length)
+- APOE ε4 in the EXPEDITION 1 placebo arm — medRxiv `2026.09.27.26364131` (read; dropped on quality)
+- Network adaptability in social defeat — Mol Psychiatry `03899-4` (read; dropped on fit)
+- tACS theta RCT for cognitive control in depression — Mol Psychiatry `03900-0` (paywalled, references only — ineligible)
+
+**Deferred for unreadable full text (not rejected):** VIAAT cryo-EM `10.64898/2026.09.24.754290`; TRPM3 voltage-sensor-like domain `2026.09.27.753811`; spinal microglia dispensable for opioid-induced hyperalgesia `2026.09.24.753592`; plus ClC-2 blockade, PrP/mGluR5 post-neurotrauma, BI-TfR1 CapX capsid, SARM1 inhibition in MS, human ultrasound neuromodulation — all bioRxiv, all not-yet-fetchable rather than auth-walled.
+=== 2026-10-01T03:17:01-07:00 done  receptor-and-reason (exit 0) ===
