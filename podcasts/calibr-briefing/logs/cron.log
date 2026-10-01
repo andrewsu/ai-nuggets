@@ -4938,3 +4938,41 @@ Both RSS stubs parse as valid XML under the `itunes:` namespace and carry `__LEN
 
 **Notes for future runs:** Fierce article pages returned full bodies to plain curl today, reversing the uniform 5,490-byte Cloudflare block seen since ~09-18 — worth retrying Fierce first rather than assuming the block. Endpoints remains discovery-only: paywalled to curl *and* Cloudflare-challenged through r.jina.ai, so its exclusives (Ortet, Somnivera) had to be recovered via WebSearch plus a BusinessWire syndication mirror.
 === 2026-09-30T02:31:57-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-01T02:20:13-07:00 start calibr-briefing ===
+Both episodes for 2026-10-01 are written, with the SKIP_TTS stub files in place (no TTS, R2 publish, feed edit, or commit — the orchestrator does those).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-10-01-pharma-headlines.txt` (2,614 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-10-01-sanofi-regeneron-next-gen-il13-spotlight.txt` (2,023 words) + `.rss-item.xml` + `.commit-msg`
+
+**Spotlight:** Sanofi's $1B upfront / up to $8B to Regeneron for four long-acting IL-4 / IL-13 / IL-4Rα antibodies — one four months into Phase 1, three preclinical. The take: those targets are twenty years old, so the money is a price on *format* (engineered half-life), not biology. Framed against AbbVie's $10.9B June buyout of Apogee for zumilokibart (~77-day half-life), whose Phase 2 Part B late-breaker landed the day before. Includes the Dupixent 2031 cliff, the amlitelimab / balinatunfib / itepekimab failures that cost Hudson his job, the 2024 litigation settlement, Jefferies' read, and the Foresite/Calibr read-across to AI-native antibody engineering (incl. the same-week Ginkgo/Apheris developability consortium).
+
+**Candidate funnel**
+
+Sources scanned:
+- Endpoints News index (via r.jina.ai) — 22 headlines, 8 net-new since the 09-30 cron. Article bodies paywalled; ledes + timestamps usable, primaries substituted.
+- Fierce Biotech — index + **article bodies readable** by plain curl + Safari UA (11 headlines, 4 fetched in full).
+- Fierce Pharma — index readable, but **every article returned the uniform 5,489-byte Cloudflare block**; routed around via Endpoints ledes and primary PRs.
+- BioPharma Dive — 40 headlines, bodies readable. BioSpace /press-releases — full BusinessWire/GlobeNewswire bodies. GEN — 19 headlines, bodies readable. Clinical Trials Arena — 52 headlines, bodies readable. STAT — STAT+ paywall, lede only.
+- r.jina.ai was *not* TLS-intercepted today (clean 200s).
+
+Shortlist after dedup (✓ = used):
+- ✓ Sanofi/Regeneron $1B upfront, up to $8B — *spotlight + lead* (biospace.com press release; Reuters via investing.com; STAT)
+- ✓ Lilly eloraTZP 23.3% at wk 48 in obesity+T2D — fiercebiotech.com/biotech/lilly-raises-weight-loss-bar-its-amylin-zepbound-combo
+- ✓ Boehringer/Zealand survodutide SYNCHRONIZE-2, 13.1% at wk 76, NEJM — globenewswire via manilatimes
+- ✓ AbbVie zumilokibart Phase 2 APEX Part B — news.abbvie.com 2026-09-30
+- ✓ BMS admilparant Aloft liver amendment + death — biopharmadive.com/news/bristol-admilparant-fibrosis-aloft-study-amendment-lpa1r-contineum/831763/
+- ✓ Merck tulisokibart Ph2b HS — fiercebiotech.com/biotech/mercks-anti-tl1a-antibody-secures-win-ph-2-hidradenitis-suppurativa-trial
+- ✓ Amgen daxdilimab discoid lupus CLASI-A −6.0 — fiercebiotech.com/biotech/amgen-reveals-6-point-drop-lupus-severity-behind-phase-2-win-horizon-antibody
+- ✓ Anthropic "ART" expert pushback — wired.com/story/anthropic-says-it-discovered-a-crispr-like-system-now-what/
+- ✓ Ginkgo/Apheris Antibody Developability Consortium — genengnews.com
+- ✓ CMS GLOBE final rule — cms.gov/priorities/innovation/innovation-models/globe; Becker's; Modern Healthcare
+- ✓ Varda $251M Series D — prnewswire.com (Endpoints-linked primary)
+- ✓ Quick hits: Hansoh aumolertinib EU revocation; BioMarin 117 / Novo 108; Sharpless→Hatteras + Witty chairman; American Biotech Innovation Alliance
+- ✗ Merck/SciBrunch $400M KRAS G12D glue — **already shipped 09-29**
+- ✗ Nektar $90M verdict vs Lilly — **already shipped 09-26**
+- ✗ Novo/Hengrui $2.6B oral obesity pill — **already shipped 09-29**
+- ✗ Zealand/Roche petrelintide, uniQure, fenebrutinib, retatrutide Triumph-2, Beam v. YolTech, PhRMA/Cantor — **already shipped 09-30**
+- ✗ Lilly orforglipron vs oral semaglutide indirect comparison (clinicaltrialsarena.com) — real but an ITC, not a readout; cut for length
+- ✗ Basecamp Research $140M (GEN) — 09-23 story, **shipped 09-24**
+=== 2026-10-01T02:36:44-07:00 done  calibr-briefing (exit 0) ===
