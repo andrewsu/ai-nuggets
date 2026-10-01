@@ -3640,3 +3640,34 @@ Episode written. `SKIP_TTS=1` is set, so per `PIPELINE.md` I stopped after the s
 
 Why daxdilimab beat TWISTAR: it's a same-morning clinical readout on Justice's stated beat (autoimmune biologics, biotech headlines), it breaks a two-run bioRxiv streak, and the flat-to-inverted dose-response gives a genuinely transferable rule for depleting biologics — dose-ranging is a pharmacodynamic exercise, and the 2021 Phase 1b's 97.6% lesional-skin pDC clearance explains why. The sharpest beat came from the registry: the trial that *won* is listed `TERMINATED` on a sponsor business decision with no results posted, one win across six indications.
 === 2026-09-30T02:54:18-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-01T02:40:13-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-10-01-q901-mocaciclib-cdk7-top1-adc-sensitization.md` (1,620 words; spoken body clean of URLs/DOIs/NCT IDs/markdown, no pseudo-headings)
+- `2026-10-01-q901-mocaciclib-cdk7-top1-adc-sensitization.rss-item.xml` (validated as XML; `__LENGTH__`/`__DURATION__` placeholders)
+- `2026-10-01-q901-mocaciclib-cdk7-top1-adc-sensitization.commit-msg`
+
+**Pick:** Q901 (mocaciclib), selective covalent CDK7 inhibitor, sensitizing TOP1-payload ADCs — *Science Advances* `10.1126/sciadv.aeb4023` (published 10-02, Crossref-created 09-30), Qurient press release 09-30. Full text read from the bioRxiv preprint `10.1101/2025.11.23.690049` (2.4 MB PDF → mutool, 131 KB clean text).
+
+### Candidate funnel
+
+**bioRxiv** (details API, day-by-day 09-29 / 09-30 / 10-01, paginated in full): 617 unique records scanned (308 / 298 / 31). 43 keyword hits, of which ~15 were pure noise from `IgG`/`Fc ` matches. Plus a full title sweep of immunology / cancer biology / bioengineering / cell + molecular biology for 09-30 and 10-01. **Zero on-beat TCE / CAR / ADC / VEGF×PD-1 items — a genuinely thin preprint day.** Best available:
+- `10.64898/2026.09.24.754107` — CD24 innate-checkpoint targeting chimera vs TGF-β immunosuppression (China Pharmaceutical University)
+- `10.64898/2026.09.28.755003` — tumor mtDNA instability → cGAS → melanoma TME remodeling (Jackson Lab)
+
+**News / press** (all 200 to plain curl + Safari UA): Endpoints RSS 24 dated items, BioPharma Dive 31, Fierce Biotech 10 (ld+json), Fierce Pharma 10, BioSpace /press-releases 33, BioSpace front page keyword scan. In-window shortlist:
+- **Qurient Q901 × TOP1i-ADC synergy, *Science Advances*** — 09-30 PR / 10-02 journal — **← CHOSEN**
+- Merck tulisokibart (anti-TL1A) Phase 2b win in hidradenitis suppurativa, n=149 — Fierce 09-30 — strongest runner-up, skipped only to avoid a second consecutive derm-autoimmune-mAb episode; banked as top backup
+- Kyverna KYV-101 autoimmune CAR T durability — 09-30 — show already shipped KYV-101 on 09-25
+- Highlight Therapeutics Ph2 skin cancer topline; Corvus soquelitinib Ph1b HS; Connect Biopharma IL-4/IL-13 in COPD — in-window, off-beat
+- Sanofi–Regeneron $1B immunology antibody alliance — in-window but calibr-briefing's 10-01 spotlight
+- Rejected on recency: Genentech/Earendil bispecifics deal (09-25), Merck/Daiichi ifinatamab withdrawal (09-28)
+
+**Policy / funders:** ARPA-H 200, NSF 200, **nih.gov/news-events/news-releases HTTP 403** (one attempt, proceeded per source-failure rule). Nothing on-beat from any of the three.
+
+### Source notes worth keeping (saved to memory)
+- **`endpts.com/feed/` is a working dated RSS feed** — new, and important, since the Endpoints front page now yields zero parseable anchors and r.jina.ai is Cloudflare-challenged on that host.
+- **science.org is Cloudflare-blocked even through r.jina.ai**, including open-access *Science Advances*. The URL was verified real via the doi.org 302 rather than by fetching it; the body came from the Crossref-sibling bioRxiv preprint.
+- **bioRxiv `.full.pdf` failed all three documented routes on the first cycle** (plain curl 17-byte 429, jina 403, WebFetch-on-jina 403) and then succeeded on the first 25-second retry. Worth not giving up after one pass.
+=== 2026-10-01T02:53:36-07:00 done  justice-biotech-brief (exit 0) ===
