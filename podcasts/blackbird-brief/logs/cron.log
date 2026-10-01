@@ -3101,3 +3101,34 @@ Shortlist after discarding off-thesis matches — **★ = chosen**:
 
 Full text was opened for all six picks; none were deferred for unavailable full text.
 === 2026-09-30T02:25:11-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-01T02:10:12-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I stopped before TTS, R2 publish, feed edit and commit — `publish_pending.py` does those.
+
+**Published artifacts** (`podcasts/blackbird-brief/scripts/`):
+- `2026-10-01-portfolio-watch.md` — 2,540 spoken words (~8 min), 5 items + closer
+- `2026-10-01-portfolio-watch.rss-item.xml` — validated as XML, `__LENGTH__`/`__DURATION__` placeholders
+- `2026-10-01-portfolio-watch.commit-msg`
+
+**Ledger:** 7 keys appended → 85 episodes / 488 items.
+
+**Reference updated in place** (5,974 → 6,102 lines, four entries revised, two `_Last update:_` bumped): the COPD theme's Connect Biopharma calendar item marked **RESOLVED**; Atsena added to Aletira; QIAGEN added to chronic infections; GSK/Wave as shape (6) and Hansoh as a third encumbrance category in §4; Th17 convergence under Winnow.
+
+## Candidate funnel
+
+Trade-press front pages via plain curl + Safari UA, all HTTP 200: Fierce Biotech (846 KB), Fierce Pharma (842 KB), BioPharma Dive (290 KB), Endpoints (115 KB), BioSpace news + press-releases (610/160 KB), GEN (172 KB), BioBuzz (102 KB). **No source failed.** ~115 headlines → 11 substantive candidates → **11 fresh** after `shipped_keys.py` (0 shipped, 0 title matches, vs 511 keys / 84 episodes) → 7 used.
+
+Shortlist (✅ = shipped today):
+- ✅ **LEAD** Connect Biopharma rademikibart Seabreeze STAT COPD, 09-30 — `fiercebiotech.com/biotech/connects-dupixent-rival-reduces-copd-attacks-85-misses-secondary-goal`
+- ✅ Atsena ATSN-201 LIGHTHOUSE 18-mo, 09-30 — `biospace.com/press-releases/atsena-presents-positive-18-month-results...`
+- ✅ GSK/Wave $12M hepatology candidate selection, 09-30 — `fiercebiotech.com/biotech/gsk-continues-stock-waves-rna-drugs-liver-focused-program`
+- ✅ QIAGEN QIAstat-Dx GN Plus AMR FDA clearance, 09-28 — `news.europawire.eu/qiagen-completes-u-s-qiastat-dx-bloodstream-infection-portfolio...`
+- ✅ Hansoh Aumseqa EU authorisation revoked, EC decision 09-25 / coverage 09-30 — `fiercepharma.com/pharma/hansoh-tagrisso-rival-loses-eu-approval-after-astrazeneca-legal-challenge`
+- ✅ **CLOSER** Merck tulisokibart HS + Corvus soquelitinib HS, both 09-30
+- ✗ MRSA renal-medulla persistence (*Sci Transl Med*, 09-30) — **ineligible under the full-text gate**; science.org is CAPTCHA-blocked from this host
+- ✗ Xcellon/NextCure Beltsville GMP acquisition — transaction dated **2026-08-10**, out of window (BioBuzz write-up in window)
+- ✗ Amgen daxdilimab CLASI detail; Sanofi/Regeneron long-acting I&I alliance — no read the shipped items don't already carry
+
+**Two recurring traps hit and handled:** the Endpoints front page served the China-AAV-deaths and PRV-pricing pieces undated — `r.jina.ai` `Published Time:` triage returned **2026-09-02** and **2026-06-01**, both killed. Fierce carries no dates in markup and its article bodies refuse this host; recency came from homepage `ItemList` position plus each item's primary press release.
+
+**One thing outside this run worth your attention:** `2026-09-15-portfolio-watch` has a script and both stubs but **no mp3 and no feed entry** — a stuck episode from the truncated mid-September run (the same pattern shows across five shows in git status). `publish_pending.py` will likely publish it two weeks late on the next batch. I left it alone.
+=== 2026-10-01T02:27:30-07:00 done  blackbird-brief (exit 0) ===
