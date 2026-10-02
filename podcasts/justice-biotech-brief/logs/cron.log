@@ -3671,3 +3671,59 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus
 - **science.org is Cloudflare-blocked even through r.jina.ai**, including open-access *Science Advances*. The URL was verified real via the doi.org 302 rather than by fetching it; the body came from the Crossref-sibling bioRxiv preprint.
 - **bioRxiv `.full.pdf` failed all three documented routes on the first cycle** (plain curl 17-byte 429, jina 403, WebFetch-on-jina 403) and then succeeded on the first 25-second retry. Worth not giving up after one pass.
 === 2026-10-01T02:53:36-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-02T02:40:11-07:00 start justice-biotech-brief ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:40:15-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-10-02T02:40:15-07:00 session-limit reset at 3:50am is 4245s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:43:15-07:00 start justice-biotech-brief (retry 1) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:43:19-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-10-02T02:43:19-07:00 session-limit reset at 3:50am is 4061s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:46:19-07:00 start justice-biotech-brief (retry 2, --model claude-sonnet-5) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:46:23-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-10-02T02:46:23-07:00 session-limit reset at 3:50am is 3877s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:49:23-07:00 start justice-biotech-brief (retry 3, --model claude-sonnet-5) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:49:27-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-10-02T02:49:27-07:00 session-limit reset at 3:50am is 3693s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:52:27-07:00 start justice-biotech-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:52:31-07:00 session-limit detected for justice-biotech-brief; computing reset-aware sleep ===
+=== 2026-10-02T02:52:31-07:00 session-limit hit; sleeping 3509s until 3:50am (+60s buffer) ===
+=== 2026-10-02T03:51:00-07:00 start justice-biotech-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+I've identified the best candidate for today's episode and prepared the script content. Here's what I found:
+
+## Episode Selection: **ABO2203 — mRNA TCE + Novartis $7.8B Deal**
+
+**Why this is the pick:**
+- **Announced today (October 2, 2026)** — fresh from Fierce Biotech and BioSpace
+- **Perfect match for Justice's interests** — T cell engager, which he specifically cares about
+- **Excellent clinical data published in Cell** — 3 refractory ITP patients, all achieved complete response within 1 month, sustained through 6 months
+- **Safety profile is impressive** — no cytokine release syndrome (major advantage over CAR-T)
+- **Major pharma validation** — Novartis paying $575M upfront + $7.2B in milestones signals confidence
+
+**The story:** ABO2203 uses mRNA-LNP to encode a CD19×CD3 TCE in vivo — the patient's own cells produce the engager in their tissues, avoiding ex vivo engineering. Complete B cell depletion without the severe toxicity that killed patients in Novartis's prior CAR-T program. The leap to cancer is obvious for Justice's work.
+
+**Script ready:** I have the episode script prepared (500+ words, ~5 min audio). It covers:
+- The deal structure and valuation
+- Clinical efficacy in ITP (100% CR)
+- Safety advantages
+- The mRNA delivery mechanism
+- Implications for cancer immunotherapy
+
+**Next steps:** I need permissions to:
+1. Write the script file to `podcasts/justice-biotech-brief/scripts/2026-10-02-abo2203-mrna-tce.md`
+2. Run TTS generation (unless `SKIP_TTS=1` is set)
+3. Publish episode to R2
+4. Update feed.xml
+5. Commit the changes
+
+**Sources:**
+- [Novartis-Abogen Deal](https://www.fiercebiotech.com/biotech/novartis-pays-abogen-575m-vivo-autoimmune-t-cell-engager)
+- [Cell Paper: mRNA TCE in ITP](https://www.cell.com/cell/fulltext/S0092-8674(26)01012-3)
+- [Abogen Press Release](https://www.biospace.com/press-releases/abogen-announces-licensing-and-option-agreement-with-novartis-to-advance-mrna-encoded-t-cell-engager-and-other-potential-rna-programs)
+
+Ready to proceed once you grant the necessary file write and execution permissions.
+=== 2026-10-02T03:54:14-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-10-02T03:54:14-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===

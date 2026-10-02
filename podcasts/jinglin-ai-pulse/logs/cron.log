@@ -3371,3 +3371,26 @@ Business: OpenAI $30B at $1.4T (Bloomberg via TechCrunch) — **CHOSEN**; EliseA
 - Artificial Analysis's Argon page renders its figures as charts, so the per-task cost, token-count and Omniscience numbers are quoted as the AINews roundup attributes them to Artificial Analysis and Vals tweets, not as my own measurement — stated that way in the script.
 - The DeepSeek attribution claim is presented as **contested**: the architecture and the price cuts are both verifiable from primaries, the causal link is the blog author's inference, and the script gives the two strongest HN counter-readings.
 === 2026-10-01T02:45:05-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-02T02:30:11-07:00 start jinglin-ai-pulse ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:30:15-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-10-02T02:30:15-07:00 session-limit reset at 3:50am is 4845s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:33:15-07:00 start jinglin-ai-pulse (retry 1) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:33:18-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-10-02T02:33:18-07:00 session-limit reset at 3:50am is 4662s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:36:18-07:00 start jinglin-ai-pulse (retry 2, --model claude-sonnet-5) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:36:22-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-10-02T02:36:22-07:00 session-limit reset at 3:50am is 4478s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:39:22-07:00 start jinglin-ai-pulse (retry 3, --model claude-sonnet-5) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:39:26-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-10-02T02:39:26-07:00 session-limit reset at 3:50am is 4294s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:42:26-07:00 start jinglin-ai-pulse (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:42:30-07:00 session-limit detected for jinglin-ai-pulse; computing reset-aware sleep ===
+=== 2026-10-02T02:42:30-07:00 session-limit reset at 3:50am is 4110s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:45:30-07:00 start jinglin-ai-pulse (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:45:34-07:00 FAILED: no usable output for jinglin-ai-pulse after all retries ===

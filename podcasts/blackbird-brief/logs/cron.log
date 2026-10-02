@@ -3132,3 +3132,26 @@ Shortlist (✅ = shipped today):
 
 **One thing outside this run worth your attention:** `2026-09-15-portfolio-watch` has a script and both stubs but **no mp3 and no feed entry** — a stuck episode from the truncated mid-September run (the same pattern shows across five shows in git status). `publish_pending.py` will likely publish it two weeks late on the next batch. I left it alone.
 === 2026-10-01T02:27:30-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-02T02:10:10-07:00 start blackbird-brief ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:10:14-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-10-02T02:10:14-07:00 session-limit reset at 3:50am is 6046s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:13:14-07:00 start blackbird-brief (retry 1) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:13:18-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-10-02T02:13:18-07:00 session-limit reset at 3:50am is 5862s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:16:18-07:00 start blackbird-brief (retry 2, --model claude-sonnet-5) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:16:22-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-10-02T02:16:22-07:00 session-limit reset at 3:50am is 5678s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:19:22-07:00 start blackbird-brief (retry 3, --model claude-sonnet-5) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:19:26-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-10-02T02:19:26-07:00 session-limit reset at 3:50am is 5494s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:22:26-07:00 start blackbird-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:22:30-07:00 session-limit detected for blackbird-brief; computing reset-aware sleep ===
+=== 2026-10-02T02:22:30-07:00 session-limit reset at 3:50am is 5310s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:25:30-07:00 start blackbird-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:25:33-07:00 FAILED: no usable output for blackbird-brief after all retries ===

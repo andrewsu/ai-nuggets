@@ -4976,3 +4976,26 @@ Shortlist after dedup (✓ = used):
 - ✗ Lilly orforglipron vs oral semaglutide indirect comparison (clinicaltrialsarena.com) — real but an ITC, not a readout; cut for length
 - ✗ Basecamp Research $140M (GEN) — 09-23 story, **shipped 09-24**
 === 2026-10-01T02:36:44-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-02T02:20:10-07:00 start calibr-briefing ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:20:14-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-10-02T02:20:14-07:00 session-limit reset at 3:50am is 5446s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:23:14-07:00 start calibr-briefing (retry 1) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:23:18-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-10-02T02:23:18-07:00 session-limit reset at 3:50am is 5262s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:26:18-07:00 start calibr-briefing (retry 2, --model claude-sonnet-5) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:26:22-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-10-02T02:26:22-07:00 session-limit reset at 3:50am is 5078s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:29:22-07:00 start calibr-briefing (retry 3, --model claude-sonnet-5) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:29:26-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-10-02T02:29:26-07:00 session-limit reset at 3:50am is 4894s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:32:26-07:00 start calibr-briefing (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:32:30-07:00 session-limit detected for calibr-briefing; computing reset-aware sleep ===
+=== 2026-10-02T02:32:30-07:00 session-limit reset at 3:50am is 4710s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:35:30-07:00 start calibr-briefing (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:35:34-07:00 FAILED: no usable output for calibr-briefing after all retries ===

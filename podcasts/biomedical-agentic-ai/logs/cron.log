@@ -5125,3 +5125,26 @@ Why it beat the field: it's the one item in the window where the hard claim was 
 
 *Policy / funders* — ARPA-H news 200, NSF 200, **NIH press 403** (Cloudflare, one attempt, skipped). Strong runner-up found and read in full: **ARPA-H SURPASS** program launch (09-30), simulation-augmented adaptive platform trials whose third technical area is explicitly an "agentic operations layer" (solicitation ARPA-H-SOL-26-164, plus STACK/COMMONS/CINCH). Lost on substance — a solicitation describes intent, not results — but worth revisiting when awards land.
 === 2026-10-01T02:09:19-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-02T02:00:10-07:00 start biomedical-agentic-ai ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:00:15-07:00 session-limit detected for biomedical-agentic-ai; computing reset-aware sleep ===
+=== 2026-10-02T02:00:15-07:00 session-limit reset at 3:50am is 6645s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:03:15-07:00 start biomedical-agentic-ai (retry 1) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:03:18-07:00 session-limit detected for biomedical-agentic-ai; computing reset-aware sleep ===
+=== 2026-10-02T02:03:19-07:00 session-limit reset at 3:50am is 6461s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:06:19-07:00 start biomedical-agentic-ai (retry 2, --model claude-sonnet-5) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:06:23-07:00 session-limit detected for biomedical-agentic-ai; computing reset-aware sleep ===
+=== 2026-10-02T02:06:23-07:00 session-limit reset at 3:50am is 6277s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:09:23-07:00 start biomedical-agentic-ai (retry 3, --model claude-sonnet-5) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:09:27-07:00 session-limit detected for biomedical-agentic-ai; computing reset-aware sleep ===
+=== 2026-10-02T02:09:27-07:00 session-limit reset at 3:50am is 6093s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:12:27-07:00 start biomedical-agentic-ai (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:12:31-07:00 session-limit detected for biomedical-agentic-ai; computing reset-aware sleep ===
+=== 2026-10-02T02:12:31-07:00 session-limit reset at 3:50am is 5909s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:15:31-07:00 start biomedical-agentic-ai (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:15:35-07:00 FAILED: no usable output for biomedical-agentic-ai after all retries ===
