@@ -5121,3 +5121,24 @@ Episode published (batch mode — script + stubs written, TTS/feed/commit left t
 
 **Deferred for unreadable full text (not rejected):** VIAAT cryo-EM `10.64898/2026.09.24.754290`; TRPM3 voltage-sensor-like domain `2026.09.27.753811`; spinal microglia dispensable for opioid-induced hyperalgesia `2026.09.24.753592`; plus ClC-2 blockade, PrP/mGluR5 post-neurotrauma, BI-TfR1 CapX capsid, SARM1 inhibition in MS, human ultrasound neuromodulation — all bioRxiv, all not-yet-fetchable rather than auth-walled.
 === 2026-10-01T03:17:01-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-02T02:50:11-07:00 start receptor-and-reason ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:50:15-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-10-02T02:50:15-07:00 session-limit reset at 3:50am is 3645s away (>3600s cap); sleeping 180s ===
+=== 2026-10-02T02:53:15-07:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 3:50am (America/Los_Angeles)
+=== 2026-10-02T02:53:19-07:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-10-02T02:53:19-07:00 session-limit hit; sleeping 3461s until 3:50am (+60s buffer) ===
+=== 2026-10-02T03:51:00-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-5) ===
+All three files for today's episode are in place, and per PIPELINE.md's SKIP_TTS mode, I skip audio generation, R2 publish, feed edit, and commit — the orchestrator (`publish_pending.py`) handles those after batch TTS. Per instructions, I don't `git add`/commit in this mode either.
+
+## Summary
+
+Today's bioRxiv/medRxiv full-text channel (including the r.jina.ai reader-proxy fallback) was Cloudflare-challenged across the board — confirmed by testing a plain non-bioRxiv URL through jina, which also got challenged. So every preprint item runs on abstract only; journal articles (Nature family) and two Psychiatric Times conference write-ups got full reads.
+
+**Caught mid-run:** my initial picks included two items (a lithium/WDFY3 paper and an autoimmune-encephalitis review) that I'd sourced from journal RSS/Crossref without running them through the dedup filter first — both turned out to be exact repeats from 09-28 and 09-25. I verified this by diffing against the ledger, swapped in two fresh replacements (a long-read-sequencing review and a CB1/Nimacimab cryo-EM structure paper), rewrote the affected parts of the script, and corrected the ledger line before finalizing.
+
+**Final 12-item roster** (full candidate funnel logged in the script's housekeeping paragraph): ALSPAC polygenic-score study (lead), long-read sequencing in psychiatric genomics, T1R2/T1R3 as an amyloid-ratio sensor, SMPD1/Parkinson's lipidomics, CB1-Nimacimab cryo-EM, a Psychiatric Times piece on Cobenfy, D1 receptor biased allosteric modulation, GRK2/3 and novelty-seeking, a postpartum neurosteroid study, a Psychiatric Times piece on hippocampal psychosis mechanisms, a gated agentic-AI QSP workflow, and an agentic functional-ultrasound platform.
+
+Script is ~3,190 words (≈17–18 min spoken), all three SKIP_TTS stub files are written, and the dedup ledger now correctly reflects the shipped set.
+=== 2026-10-02T04:12:44-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-5) ===
