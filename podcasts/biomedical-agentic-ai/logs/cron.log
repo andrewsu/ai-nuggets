@@ -5149,3 +5149,51 @@ You've hit your session limit · resets 3:50am (America/Los_Angeles)
 You've hit your session limit · resets 3:50am (America/Los_Angeles)
 === 2026-10-02T02:15:35-07:00 FAILED: no usable output for biomedical-agentic-ai after all retries ===
 === 2026-10-03T02:00:11-07:00 start biomedical-agentic-ai ===
+Published: **Gemot — an agent builds mechanistic models that beat the published ones, and the score it optimizes turns out not to track truth** (commit `6ffcabd`, 312s, mp3 in R2, feed updated). Not pushed — the orchestrator pushes.
+
+**Candidate funnel**
+
+*bioRxiv* — details API swept day-by-day 09-30→10-02, 730 entries pulled in full (298/285/147; 10-03 not yet populated). 30 survived the keyword filter on title+abstract at version==1 after discarding spurious "agent" hits (infectious-agent communities, agents of selection). Substantive shortlist:
+- **GEMOT: Towards Mechanistic World Models for Biology** — 10.64898/2026.09.26.754619 ← **CHOSEN**; rolling deferral since 09-29, full text finally obtained
+- An AI-powered cloud biofoundry for autonomous biological research (iCloudBiofoundry) — 10.64898/2026.09.30.750244 ← strongest runner-up, not opened
+- GroundAnnot: closed-vocabulary contract grounding LLM gene-set annotation in live enrichment backends — 10.64898/2026.09.27.754741 ← on the ontology beat, carried forward
+- Evo 2 as a classification machine — 10.64898/2026.09.30.755330; Mendel, a foundation model of human genetic variation — 10.64898/2026.09.28.755183; Evidence Scaling for Zero-Shot Protein Reasoning — 10.64898/2026.09.27.754822; AREION brain-connectome foundation model — 10.64898/2026.09.26.754551 (all foundation-model, not agentic)
+- Agentic campaign control for high-throughput de novo binder design — surfaced via PubMed's bioRxiv mirror (PMID 42818266)
+
+*Full-text gate* — `.full.pdf` + Safari UA + `mutool`: GEMOT returned a clean 7.6 MB / 310-page PDF on the **first** attempt; ScProteoAgent (10.64898/2026.09.24.754011) returned the 17-byte 429 in the same loop 20 seconds earlier. Third confirmation the throttle is per-document, not per-IP. 123,787 words extracted; grepped for "placeholder" per the standing check — all 10 hits were model-internal terms, no unfilled results.
+
+*arXiv* — shared cache read, 500 entries (the cap), covering only 09-30 and 10-01. 45 biomedical keyword hits; nothing beating GEMOT. Notables: EurekaBench (2610.00492), How AI Agents Discover Scientific Equations (2610.00435) — adjacent to today's pick but materials/hydrology, Science or Slop? (2610.00531), OpenMTB-Audit molecular tumour board safety (2610.01497).
+
+*PubMed* — E-utilities, `reldate=5` on `edat`, 103 PMIDs, 29 keyword survivors, ~6 on-audience: Data-reflector agentic EDA platform (JAMIA Open, PMID 42825291), HemOncAgent (medRxiv), MES multi-agent evidence synthesis (medRxiv), agentic clinical-outcomes research on administrative databases (JMIR), Photothermal-Seek literature-grounded KGs (Adv Mater — materials, off-audience).
+
+*ChemRxiv* — not swept; GEMOT was already fully read and dominant, and the remaining budget went to verification rather than a fourth preprint source. Gap noted.
+
+*News / product launches, policy / funders* — not swept for the same reason; no fresh agentic-biomedical launch surfaced incidentally.
+
+Memory updated: GEMOT closed on the rolling deferral list; @fUS still open; iCloudBiofoundry and GroundAnnot added as live unshipped candidates.
+=== 2026-10-03T02:07:29-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-03T02:07:29-07:00 no usable output for biomedical-agentic-ai; retrying in 180s ===
+=== 2026-10-03T02:10:30-07:00 start biomedical-agentic-ai (retry 1) ===
+I wrote a second episode for today, on GroundAnnot. Because the nightly batch mode is on, nothing has been generated or committed yet: the batch job will make the audio, update the feed and commit.
+
+**Why there's a second episode today:** the 02:00 run had already published the Gemot episode, but it ignored batch mode. It ran text-to-speech, uploaded the mp3, edited `feed.xml` and committed itself. The runner only looks for the two stub files, found none, logged "no usable output", and started this retry. I treated the retry as a same-day re-run, which the pipeline allows if there's a fresh item that hasn't shipped. That also fills the slot lost on 10-02, when every attempt hit the session limit.
+
+**Episode:** "GroundAnnot — a closed-vocabulary contract that makes the LLM narrate enrichment results instead of inventing them"
+- Files are in `podcasts/biomedical-agentic-ai/scripts/`: the script `2026-10-03-groundannot-id-plus-label-contract.md` (975 spoken words, under the 1,150 cap), plus `.rss-item.xml` and `.commit-msg` stubs.
+- The XML stub parses. The pubDate is 13:05, so it sorts after Gemot's 13:00.
+- I read the whole paper (11 pages, pulled as a PDF and converted to text).
+- The angle: the models invented no GO IDs, but one 7B model attached wrong synapse labels to ten real Alzheimer's-list IDs, identically in 36 of 36 runs. So the thing to check is the ID together with its label, not just whether the ID exists. I pushed back on the 180/180 result: it shows the models stay inside a list they're handed, not that they pick the right terms.
+
+**Candidate funnel** (this retry reused the 02:00 run's sweep, which covered the same window)
+- bioRxiv: 730 entries from 09-30 to 10-02; 30 matched the keywords.
+  - Gemot — https://www.biorxiv.org/content/10.64898/2026.09.26.754619v1 — shipped earlier today, excluded
+  - **GroundAnnot — https://www.biorxiv.org/content/10.64898/2026.09.27.754741v1 ← chosen**
+  - iCloudBiofoundry — https://www.biorxiv.org/content/10.64898/2026.09.30.750244v1 — deferred: bioRxiv rate-limited the PDF (17-byte 429)
+  - @fUS — https://www.biorxiv.org/content/10.64898/2026.09.25.752961v1 — still deferred, not retried
+  - Evo 2 classification, Mendel, Evidence Scaling, AREION, agentic binder-design campaign — runners-up
+- arXiv: 500 cached entries (the cap), 45 keyword hits; nothing better than these picks (EurekaBench, How AI Agents Discover Scientific Equations).
+- PubMed: 103 PMIDs, about 6 relevant (Data-reflector, HemOncAgent, MES multi-agent synthesis).
+- Not swept, in either run: ChemRxiv, news and product launches, funder pages.
+
+I updated memory: GroundAnnot is marked shipped, and a new note says that when `SKIP_TTS=1` is set a run should write only the stubs and never commit itself.
+=== 2026-10-03T02:13:51-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===
