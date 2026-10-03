@@ -3160,3 +3160,85 @@ Waiting on TTS to finish; I'll publish, update the feed, and commit when it comp
 === 2026-10-03T02:18:51-07:00 done  blackbird-brief (exit 0) ===
 === 2026-10-03T02:18:51-07:00 no usable output for blackbird-brief; retrying in 180s ===
 === 2026-10-03T02:21:51-07:00 start blackbird-brief (retry 1) ===
+Today's Blackbird Brief episode, the Portfolio Watch for Saturday, October 3, is published and committed as `366f50e`; the orchestrator does the push.
+
+**What happened:** an earlier run today wrote the script and added today's entry to the list of already-covered items, then exited while the audio was still being generated, so it never published or committed anything. This retry picked up from there. I re-checked the main claims in that script against their sources and they hold up: the $575M upfront and ~$7.2B in milestones, the Fiona Marshall quote, the paused Novartis autoimmune CAR-T trial after three deaths, and Cartesian's numbers (median 16.6 months to retreatment, 4 of 5 patients sustained). After that I generated the audio (Mistral, 4 chunks, 5,062,365 bytes, about 633 seconds), uploaded it to R2 (`ai-nuggets-episodes`), added the feed item (the XML parses), and committed under the lock. The pre-commit hook passed.
+
+The commit includes all of `podcasts/blackbird-brief/`, not just today's files. It also picked up today's new line in `memory/blackbird-portfolio.md` (the National Center to Accelerate Cures (NCAC) entry plus the Winnow note), the `cron.log` changes, and two leftover 2026-09-15 `.commit-msg` / `.rss-item.xml` stubs that were sitting untracked.
+
+**Candidate funnel:** the full source-by-source funnel from the first run was lost when it exited, so this lists only what made the episode. The episode covers 2026-09-29 to 2026-10-03, two days' worth because the 10-02 edition never ran (the session limit was hit).
+- **Chosen (lead):** Novartis × Abogen licensing deal for ABO2203, an mRNA-encoded CD19×CD3 T-cell engager — https://www.biospace.com/press-releases/abogen-announces-licensing-and-option-agreement-with-novartis-to-advance-mrna-encoded-t-cell-engager-and-other-potential-rna-programs
+- **Chosen (lead, paired):** Cartesian Descartes-08 retreatment data in myasthenia gravis — https://biobuzz.io/news/cartesian-therapeutics-announces-additional-retreatment-data-for-descartes-08-highlighting-deep-and-durable-responses-in-patients-with-myasthenia-gravis/
+- **Chosen:** NCAC launches at Blackbird BioHub — https://biobuzz.io/news/3-million-in-federal-funding-launches-a-national-hub-for-non-animal-drug-development-tools-in-baltimore/
+- **Chosen:** Pfizer tilrekimig Phase 2 eczema data and the COPD Phase 2b/3 (NCT07363694) — https://www.biospace.com/press-releases/pfizers-tilrekimig-shows-significant-skin-clearance-in-phase-2-atopic-dermatitis-study
+- **Chosen:** ARPA-H SURPASS, STACK, COMMONS and CINCH clinical-trial programs — https://www.biospace.com/drug-development/us-government-launches-ai-driven-programs-to-overhaul-clinical-trials
+- **Chosen:** Maryland Stem Cell Research Commission FY2027 cycle 1 awards — https://biobuzz.io/news/maryland-stem-cell-research-commission-awards-over-4-8-million-in-first-fy2027-funding-cycle/
+- **Watch list:** Arvinas ARV-102 at the Movement Disorders congress on 10-07 — https://www.biospace.com/press-releases/arvinas-to-present-novel-biomarker-data-from-the-phase-1-clinical-trial-for-arv-102-a-protac-lrrk2-degrader-at-the-2026-international-congress-of-parkinsons-disease-and-movement-disorders
+- **Watch list:** BMS admilparant ALOFT liver-monitoring amendment — https://www.biopharmadive.com/news/bristol-admilparant-fibrosis-aloft-study-amendment-lpa1r-contineum/831763/
+=== 2026-10-03T02:26:34-07:00 done  blackbird-brief (exit 0) (retry 1) ===
+=== 2026-10-03T02:26:34-07:00 no usable output for blackbird-brief; retrying in 180s ===
+=== 2026-10-03T02:29:34-07:00 start blackbird-brief (retry 2, --model claude-sonnet-5) ===
+Good, under the 17.1KB target now. Back to the actual task.
+
+Today's Blackbird Brief (Portfolio Watch, 2026-10-03) is already fully published — script, audio, R2 upload, feed entry, and commit `366f50e` all completed by an earlier retry a few minutes ago. This invocation is a duplicate retry fired by the orchestrator only ~3 minutes after that successful commit (the cron.log shows "done ... exit 0" immediately followed by a spurious "no usable output; retrying"), so there's no new elapsed time in which fresh portfolio news could appear. Per PIPELINE.md's re-invocation rule, a second episode is only warranted if there are fresh, not-yet-shipped candidates — there are none in a 3-minute window, so I'm not producing a duplicate episode.
+
+I saved a memory note (`project_orchestrator_false_retry_after_success.md`) flagging this orchestrator behavior as a likely bug worth fixing — it burns a full model invocation re-running the pipeline right after a successful publish. I also compacted `MEMORY.md` per the size-limit hook (trimmed several bloated rolling-log index entries down to one-line hooks; full detail still lives in their topic files).
+
+**Summary:** No action needed — today's episode is already live. Worth checking `scripts/run_all_shows.sh`'s "usable output" detection logic, since it appears to misfire right after a successful run.
+=== 2026-10-03T02:31:33-07:00 done  blackbird-brief (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-10-03T02:31:33-07:00 no usable output for blackbird-brief; retrying in 180s ===
+=== 2026-10-03T02:34:33-07:00 start blackbird-brief (retry 3, --model claude-sonnet-5) ===
+Today's blackbird-brief episode (2026-10-03, "Portfolio Watch") was already produced and shipped — commit `366f50e` from this morning's cron run, with the script, feed.xml, shipped.jsonl, and memory update all committed. There's no further work needed here.
+=== 2026-10-03T02:34:45-07:00 done  blackbird-brief (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-10-03T02:34:45-07:00 no usable output for blackbird-brief; retrying in 180s ===
+=== 2026-10-03T02:37:45-07:00 start blackbird-brief (retry 4, --model claude-haiku-4-5-20251001) ===
+Perfect! I can see the full situation now. The today's Blackbird Brief Portfolio Watch episode for 2026-10-03 has **already been completed and published**.
+
+## Status Summary
+
+**Episode:** 2026-10-03 Portfolio Watch (already shipped)  
+**Commit:** `366f50e`  
+**Published:** 2026-10-03 02:21:51 (by retry after initial TTS generation failure)
+
+### What happened today:
+
+1. **Initial run (02:10:11)** — Script written, added to shipped ledger, but exited while TTS was generating
+2. **Retry (02:21:51)** — Successfully:
+   - Generated audio (Mistral, 633 seconds, ~5.06 MB)
+   - Uploaded to R2 Cloudflare Workers
+   - Updated `feed.xml` with new item
+   - Committed with portfolio memory updates
+3. **Subsequent retries (02:29:34, 02:34:33, etc.)** — Confirmed the episode is live; no new work needed
+
+### Episode contents:
+- **Lead:** Novartis licensing CD19×CD3 mRNA engager (Abogen) — $575M upfront + ~$7.2B milestones
+- **Co-lead:** Cartesian Descartes-08 retreatment data in myasthenia gravis
+- Supporting items: NCAC launch at Blackbird BioHub, Pfizer tilrekimig (eczema/COPD), ARPA-H trial programs, MSCRF funding awards
+
+**No further action needed.** Today's Portfolio Watch episode is fully published and committed. The orchestrator's repeated retries (due to a false-positive "no usable output" detection) are confirming the work's completion each time.
+=== 2026-10-03T02:38:34-07:00 done  blackbird-brief (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-10-03T02:38:34-07:00 no usable output for blackbird-brief; retrying in 180s ===
+=== 2026-10-03T02:41:34-07:00 start blackbird-brief (retry 5, --model claude-haiku-4-5-20251001) ===
+Perfect! Today's Blackbird Brief episode has already been produced, published, and committed. Looking at the cron.log, the 2026-10-03 **Portfolio Watch** episode was successfully completed:
+
+**Status: ✅ Complete**
+
+**What was produced:**
+- **Episode:** Portfolio Watch for Saturday, October 3, 2026
+- **Script:** 2026-10-03-portfolio-watch.md (covers 2026-09-29 through 2026-10-03, two days due to yesterday's session-limit failure)
+- **Audio:** Generated via Mistral TTS, 5,062,365 bytes (~633 seconds / ~10.5 minutes)
+- **Published:** Uploaded to R2 CDN (`ai-nuggets-episodes` bucket)
+- **Feed:** Updated with RSS item (https://podcast.su-lab.workers.dev/p/blackbird-brief/u/matt/2026-10-03-portfolio-watch.mp3)
+- **Committed:** Commit `366f50e` - "Blackbird 2026-10-03: Portfolio Watch — Novartis pays $575M upfront for Abogen mRNA-encoded CD19xCD3 engager; Cartesian Descartes-08 MG retreatment; NCAC launches at Blackbird BioHub; Pfizer tilrekimig COPD; ARPA-H STACK; MSCRF awards"
+
+**Episode contents:**
+1. **Novartis-Abogen deal** ($575M upfront for mRNA CD19×CD3 T-cell engager) – validates Winnow/Clasp positioning
+2. **National Center to Accelerate Cures** (launches at BioHub with $3M federal funding)
+3. **Pfizer tilrekimig** Phase 2 AD data + COPD Phase 2b/3 insights
+4. **ARPA-H SURPASS/STACK** clinical-trial programs – relevant to 1104health thesis
+5. **MSCRF FY2027 awards** ($4.8M across 15 investigators, including Aletira adjacencies)
+6. Watch list and calendar items
+
+The orchestrator will handle the final git push. The episode is live and accessible to subscribers via the RSS feed.
+=== 2026-10-03T02:43:54-07:00 done  blackbird-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-10-03T02:43:54-07:00 FAILED: no usable output for blackbird-brief after all retries ===
