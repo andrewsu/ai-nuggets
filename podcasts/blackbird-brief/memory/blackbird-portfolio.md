@@ -30,6 +30,7 @@ Patents). Items marked ⚠ need confirmation; ✅ = confirmed._
 - **Scale (as reported mid-2026):** ~24 companies backed; ~28 exploratory
   research projects; 5 licensed programs. ~90% of companies with a Baltimore
   nexus.
+- **National Center to Accelerate Cures (NCAC)** — launched 2026-10-01, HOUSED AT BLACKBIRD BIOHUB; $3M congressionally directed (Van Hollen + Alsobrooks); nonprofit partnership of **Blackbird Laboratories + Critical Path Institute (C-Path) + Arrowpoint Labs Foundation**; builds regulatory-grade evidence packages for NAMs toward FDA drug-development-tool acceptance. Year-1 deliverables: first NAM submissions, shared terminology framework, open NAM data standard. Watch: which priority areas it picks vs portfolio IND-enabling needs; FDA NAMs direct final rule comments close 2026-12-07. Source: https://biobuzz.io/news/3-million-in-federal-funding-launches-a-national-hub-for-non-animal-drug-development-tools-in-baltimore/
 - **Blackbird BioHub** — 42k sq ft wet-lab incubator at **City Garage**,
   Baltimore Peninsula (former bus depot). Private benches, office suites,
   shared instruments, on-site vivarium. Opened February 2026; helped by a $2M
@@ -3188,7 +3189,8 @@ _Last update: 2026-09-23_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-10-01_
+_Last update: 2026-10-03_
+- **REDOSABILITY IS NO LONGER AN ENGAGER-ONLY CLAIM; LEAD WITH THE ANTIGEN-SPECIFIC CUT (added 2026-10-03).** **Novartis × Abogen (2026-10-02): $575M upfront, up to ~$7.2B milestones** for **ABO2203, an mRNA-LNP-ENCODED CD19×CD3 engager** pitched at autoimmunity (NCT06747156, refractory autoimmune, n=66 target; only data = 9 r/r B-NHL pts, company-reported no CRS/DLT/ICANS). In-vivo encoding trades away infusion-level dose control for smoother exposure — the inverse of our "dose control + reversibility" pitch — and was priced at half a billion upfront. **Cartesian (Frederick MD) Descartes-08**, mRNA (non-integrating) anti-BCMA CAR-T in MG: 5 relapsed pts retreated outpatient, no lymphodepletion, mean MG-ADL −6.6 at M12, no CRS/ICANS/SAEs; AURORA Ph3 topline Q1 2027. ⇒ Valuation comp for Winnow/Clasp decks; differentiate on selectivity, not reversibility.
 - **THIRD Th17-DIRECTED ENTRANT IN TWO DAYS, TWO OF THEM IN ONE DERMATOLOGY INDICATION ON THE SAME MORNING — AND ALL THREE REACH FOR A
   BROAD TOOL, WHICH IS OUR SELECTIVITY CLAIM STATED BY OUR COMPETITORS (added 2026-10-01 Portfolio Watch CLOSER; both announced
   2026-09-30).**

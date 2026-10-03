@@ -3155,3 +3155,8 @@ You've hit your session limit · resets 3:50am (America/Los_Angeles)
 === 2026-10-02T02:25:30-07:00 start blackbird-brief (retry 5, --model claude-haiku-4-5-20251001) ===
 You've hit your session limit · resets 3:50am (America/Los_Angeles)
 === 2026-10-02T02:25:33-07:00 FAILED: no usable output for blackbird-brief after all retries ===
+=== 2026-10-03T02:10:11-07:00 start blackbird-brief ===
+Waiting on TTS to finish; I'll publish, update the feed, and commit when it completes.
+=== 2026-10-03T02:18:51-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-03T02:18:51-07:00 no usable output for blackbird-brief; retrying in 180s ===
+=== 2026-10-03T02:21:51-07:00 start blackbird-brief (retry 1) ===
