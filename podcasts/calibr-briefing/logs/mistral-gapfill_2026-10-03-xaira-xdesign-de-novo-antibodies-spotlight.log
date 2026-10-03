@@ -1,0 +1,8 @@
+Script body: 12575 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2888 chars) -> 129.8s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2989 chars) -> 163.6s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2998 chars) -> 144.6s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2966 chars) -> 126.0s ✓
+  [mistral:en_paul_neutral] chunk 5/5 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/5 (729 chars) -> 36.0s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-10-03-xaira-xdesign-de-novo-antibodies-spotlight.mp3 [mistral] 5,119,417 bytes, 639.9s

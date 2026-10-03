@@ -4999,3 +4999,37 @@ You've hit your session limit · resets 3:50am (America/Los_Angeles)
 === 2026-10-02T02:35:30-07:00 start calibr-briefing (retry 5, --model claude-haiku-4-5-20251001) ===
 You've hit your session limit · resets 3:50am (America/Los_Angeles)
 === 2026-10-02T02:35:34-07:00 FAILED: no usable output for calibr-briefing after all retries ===
+=== 2026-10-03T02:20:12-07:00 start calibr-briefing ===
+Both episodes are written as stubs (SKIP_TTS=1, so no TTS, no R2 publish, no feed edit, no commit — `publish_pending.py` handles those).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-10-03-pharma-headlines.txt` (2,419 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-10-03-xaira-xdesign-de-novo-antibodies-spotlight.txt` (1,984 words) + `.rss-item.xml` + `.commit-msg`
+
+**Spotlight:** Xaira's Oct 2 technical post on X-Design Vega — read in full from the primary source at xaira.com. XA-1: 182 de novo VHH designs → 18 confirmed binders, best 17 nM human / 83 nM cyno, all developability filters passed, 3 weeks to a progressable binder and 7 weeks to lead. XA-4: a GPCR where two naive-library campaigns and a llama immunization both failed, cracked with a 60,000-design library spanning modeled conformations, panned in nanodiscs → a >96% max-inhibition antagonist at 183 nM, mouse+cyno cross-reactive by design. The take: the speed case had its epitope pre-chosen and no conventional comparator; the hard case had a comparator of zero; the advantage traces to proprietary developability data (3× the rate of human-like VHHs clearing every filter vs. the same model without it); targets undisclosed and the systematic benchmark unpublished. Foresite/Calibr read-through — tractability stops gating target selection, designed-in tox-species cross-reactivity is a schedule lever, and binder generation commoditizing pushes value to epitope choice (ties back to the Oct 1 Sanofi/Regeneron "price on format" spotlight).
+
+**Candidate funnel**
+
+Sources scanned (window: Oct 1 afternoon → Oct 2 close; no Oct 2 episode ran — session limit — so Oct 1 PM items were unguarded):
+- Endpoints `endpts.com/feed/` — 24 dated items, 9 net-new. Bodies paywalled; ledes + timestamps usable, primaries substituted.
+- BioPharma Dive RSS + front page — 40 headlines, bodies readable.
+- BioSpace news + /press-releases — bodies readable; two URL guesses 404'd (Jaypirca, BMO patent-cliff), routed around.
+- Fierce Biotech / Fierce Pharma — index headlines readable in ld+json, **every article body a 5,490-byte Cloudflare block**, and r.jina.ai returned an explicit domain-level abuse block on fiercebiotech.com until 09:39 UTC. The Xaira story was recovered from the company's own primary post instead.
+- GEN — 18 headlines, nothing net-new. Clinical Trials Arena — 59 headlines, bodies readable. STAT — free First Opinion readable, STAT+ paywalled. r.jina.ai not TLS-intercepted today.
+
+Shortlist after dedup against the 10-01 episode (✓ = used):
+- ✓ Xaira X-Design + XA-1/XA-4 — *spotlight + lead* (xaira.com/news/de-novo-design-of-progressable-antibodies-to-therapeutic-targets; Fierce coverage headline-only)
+- ✓ Novartis/Abogen $575M upfront, up to $7.8B — biospace.com/deals/novartis-bets-up-to-7-8b-for-an-mrna-encoded-t-cell-engager-from-chinas-abogen
+- ✓ FDA approves Jaypirca 1L CLL/SLL, BRUIN CLL-313 HR 0.20 — fda.gov approved-drugs notice
+- ✓ Pfizer tilrekimig Ph2 AD detail — biopharmadive.com/news/pfizer-eczema-drug-clears-skin-in-mid-stage-trial/831905/
+- ✓ Lilly/Foghorn SMARCA2 collapse + 40% layoff — biospace.com/job-trends/foghorn-lays-off-40-of-staff-after-lilly-collaboration-ends
+- ✓ Summit + AZ/Daiichi Datroway combo, Ph3 1L TNBC — biospace.com press release (Business Wire)
+- ✓ Aviceda shutdown after AVD-104 Ph2b — endpoints.news (lede) + Fierce/Yahoo background
+- ✓ Kailera/Hengrui ribupatide in PMOS, 20.2% — biospace.com/drug-development/kailera-hengruis-glp-1-gip-candidate...
+- ✓ AI-agent error-handling failure + Stanford virtual biotech — biopharmadive.com/news/ai-agents-drug-rd-errors-autonomy/831896/; paired with Euan Ashley's Claude-genome First Opinion (statnews.com 2026/10/01)
+- ✓ Q3 M&A $30B/22 deals, Vertex-Crinetics — biospace.com/business/m-a-slows-in-q3...
+- ✓ Quick hits: FDA CDER trial-modernization office; Bayer $2.2B Ohio; Lilly into aesthetics; BioNTech closes 3 German plants; Sarepta Elevidys 8–12yo WMS data + Jefferies; Sinclair chemical-reprogramming pill
+- ✗ Sanofi/Regeneron $1B, Lilly eloralintide, survodutide, zumilokibart, BMS admilparant, tulisokibart, daxdilimab, Anthropic/Wired pushback, Ginkgo-Apheris, GLOBE, Varda, Hansoh, BioMarin/Novo layoffs, Hatteras, ABIA — **all shipped 10-01**
+- ✗ Regeneron muscle-preserver COURAGE + lipid-lowering combo (EASD) — Endpoints body paywalled, molecule not confirmable from the lede; cut rather than guess
+- ✗ Moderna/Neurocrine hires, Pharming CEO exit, Eccogene $50M milestone, Devoted Health $1.2B, Kallyope rebrand + $94M — real but below the bar for length
+=== 2026-10-03T02:27:55-07:00 done  calibr-briefing (exit 0) ===
