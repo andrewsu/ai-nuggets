@@ -5142,3 +5142,31 @@ Today's bioRxiv/medRxiv full-text channel (including the r.jina.ai reader-proxy 
 
 Script is ~3,190 words (≈17–18 min spoken), all three SKIP_TTS stub files are written, and the dedup ledger now correctly reflects the shipped set.
 === 2026-10-02T04:12:44-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-10-03T02:50:12-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE I wrote stubs only — no TTS, no R2 publish, no `feed.xml` edit, no commit. The orchestrator picks these up after batch TTS.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-10-03-receptor-and-reason.md` — 3,547 spoken words (~19 min), 10 items
+- `…2026-10-03-receptor-and-reason.rss-item.xml` — validated as XML, `__LENGTH__`/`__DURATION__` placeholders
+- `…2026-10-03-receptor-and-reason.commit-msg`
+- Ledger appended: 10 keys, 134 episodes
+
+**Candidate funnel**
+
+Sources:
+- bioRxiv/medRxiv details API, 09-26→10-03 day-by-day: 1,991 records, 1,527 v1 in-window. Healthy, no outage.
+- Nature-family RSS (npp/mp/tp/nbt): 32 items; 8 of 12 article pages readable, 4 paywalled.
+- Crossref `from-created-date` by ISSN (Neuropharm, PNPBP, Biol Psych, BP:CNNI, IJNP, Brief Bioinform, CPT, CPT:PSP, Drug Disc Today, Cell Systems, npj Dig Med): 23 relevant.
+- arXiv shared cache (`/tmp/ai-nuggets-arxiv-cache.xml`): 500 entries, covering only 09-30→10-01 — thin as usual.
+- **Source failure:** `r.jina.ai` was Cloudflare-blocked on every bioRxiv URL all run (408-byte "Attention Required"). Worked around by direct curl.
+
+Dedup: 235 candidates → 208 fresh (27 already shipped). Final roster re-filtered: 10/10 clean.
+
+Full text: **16 items read in full.** bioRxiv's PDF channel 429'd on the opening probe but a patient retry loop recovered **7 of 11** — including the VIAAT lead and three items deferred since 10-01. medRxiv 6/6.
+
+Chosen (all full-text): VIAAT cryo-EM `754290` · TRPM3 VSLD `753811` · cannabinoid BRET panel `754774` · guanfacine vs lisdexamfetamine fMRI `26364506` · ibogaine preconditioning `755437` · microglia dispensable for OIH `753592` · tics TMS trial `26364036` · StrokeAgent `26363786` · tacrolimus ensembles `26363867` · Schrödinger's mouse `754328`.
+
+Cut for length (full text on disk, deferred): dose-dependent transcranial ultrasound `754841` — the MR-ARFI finding that simulated in-situ intensity doesn't predict neuromodulation is a direct hit on current dosing practice and deserves a slot next run — plus human habenula multi-omic map `755667` and caudate-D2 effort PET `754663`.
+
+Two notes worth flagging. First, I ran an independent notes pass over the same PDFs while drafting, and it changed two takes materially: the cannabinoid panel's real headline is that 21 of 22 ligands are *unbiased* (I'd drafted it as an efficacy-scale story), and StrokeAgent's error audit beats its 86% headline. Second, GroundAnnot was dedup-clean for this show but shipped today by biomedical-agentic-ai — the ledgers are per-show, so cross-show collisions are invisible; I skipped it. Both are recorded in the run-state memory.
+=== 2026-10-03T03:09:17-07:00 done  receptor-and-reason (exit 0) ===
