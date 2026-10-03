@@ -282,7 +282,12 @@ spawn_catchup() {
     slugs+=("$slug")
     epoch=$(date -d "$reset_str today" +%s 2>/dev/null) || epoch=""
     if [ -n "$epoch" ]; then
-      [ "$epoch" -le "$now_epoch" ] && epoch=$((epoch + 86400))
+      # The reset string was captured during Phase 1, so a time a few hours
+      # in the past has already passed (catchup should wake immediately) —
+      # only roll to tomorrow when it's far enough back to mean a midnight
+      # crossing. Rolling unconditionally turned a 3:50am reset seen at
+      # 4:21am into a 23.5h wait that exceeded CATCHUP_MAX_WAIT_SECS (10-02).
+      [ "$epoch" -le $((now_epoch - 43200)) ] && epoch=$((epoch + 86400))
       [ "$epoch" -gt "$latest_reset_epoch" ] && latest_reset_epoch=$epoch
     fi
   done
