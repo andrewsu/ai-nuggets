@@ -3394,3 +3394,63 @@ You've hit your session limit · resets 3:50am (America/Los_Angeles)
 === 2026-10-02T02:45:30-07:00 start jinglin-ai-pulse (retry 5, --model claude-haiku-4-5-20251001) ===
 You've hit your session limit · resets 3:50am (America/Los_Angeles)
 === 2026-10-02T02:45:34-07:00 FAILED: no usable output for jinglin-ai-pulse after all retries ===
+=== 2026-10-03T02:30:12-07:00 start jinglin-ai-pulse ===
+I wrote today's Ollie's AI Pulse script, "who owns the loop", plus its RSS-item and commit-message stubs. `SKIP_TTS=1` was set, so I did not generate audio, edit `feed.xml`, publish to R2 or commit. The orchestrator handles those after the batch TTS run.
+
+The script is about 2,400 spoken words, which is over the 1,500–2,200 target. That's roughly 13 minutes, still inside the 10–15 minute window.
+
+**Episode:** in the last 48 hours the agent harness (the software that runs the model's tool-calling loop) became the thing everyone is fighting over.
+- **Twitter Pulse (sourced from Hacker News, since X is unreadable from this host):**
+  - Pi 1.0 hit 1,659 points. Earendil's Armin Ronacher conceded the harness has to follow the models: "They are trained on their respective harnesses and we're not here to fight their behavior."
+  - DeepSeek shipped its own open-source harness.
+  - Figma's remote MCP server lets clients in based only on the name they report, so Pi users get a 403 unless they call themselves "Claude Code".
+  - Apple is tightening macOS Full Disk Access because of agents.
+  - The counterpoint is the Context Language Models paper from Meta and the University of Washington: no harness at all. I read the full text. Once trained, its edge over a trained summary harness is mostly compute (38.8% fewer FLOPs) rather than accuracy (0.4 points).
+- **Money Moves:** Amazon's Strands Decider and Cloudflare's open-weight Clef turned TypeSafe's Jev decision-model category into a commodity within weeks. Cloudflare's real product is the fine-tuning pipeline built on customer traffic.
+- **Podcast Deep Cut:** Latent Space with MIT's Alex Zhang (Oct 2), who argues all harnesses are the same and that harness design may have its own scaling laws. I checked every quote against the full transcript.
+- **Wrap:** watch what Apple's "very explicit user action" requirement turns out to mean for agents.
+
+**One thing outside today's run:** the 2026-09-29 episode ("the boundary left the model") still has its `.rss-item.xml` and `.commit-msg` stubs sitting in `scripts/`, and it isn't in `feed.xml`. It looks like it was never published. The 10-02 run also failed on a session limit.
+
+Files are in `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-10-03-who-owns-the-loop.md`
+- `2026-10-03-who-owns-the-loop.rss-item.xml`
+- `2026-10-03-who-owns-the-loop.commit-msg`
+
+**Candidate funnel**
+- **Twitter/X:** unreadable from this host, so I used Hacker News instead.
+  - Figma's tweet was unreadable (a nitter link through the reader proxy returned nothing). I confirmed the claim from a GitHub README with live 200/403 tests: https://github.com/shahriar374/pi-figma-remote
+- **Hacker News (Algolia, last 52 hours, over 150 points):** 59 scanned, about 22 AI-relevant. Shortlist:
+  - ✅ Pi 1.0 — https://earendil.com/posts/pi-1-0/ (plus Pi Durable)
+  - ✅ DeepSeek Harness Desktop — https://www.deepseek.com/en/harness/
+  - ✅ Figma restricts MCP to whitelisted clients — https://news.ycombinator.com/item?id=49922729
+  - ✅ Apple Full Disk Access update — https://developer.apple.com/news/?id=p6zjojqw
+  - ✅ Context Language Models (full PDF via mutool; "placeholder" grep was clean) — https://arxiv.org/abs/2609.37725
+  - ✅ Cloudflare Clef — https://blog.cloudflare.com/clef-decision-models/
+  - Not used:
+    - RIP vector database (turbopuffer)
+    - Micron memory tighter in 2027–28 (TechPowerUp returned 403)
+    - Stratego AI
+    - FTC probe of AI labs
+    - GPT-Synopsys
+    - Sites in ChatGPT
+    - Opus 5.5 dodo discovery
+    - ds4 (antirez)
+    - GLM 5.3 Flash
+    - Greg Kroah-Hartman talk
+    - Supabase acquiring Turso
+    - Frog and Toad (only a snapshot was readable)
+- **Investment (TechCrunch AI and Venture feeds):** about 40 scanned, 7 relevant.
+  - ✅ Amazon Strands Decider — https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/
+  - Not used:
+    - Factory CEO accuses VC adviser of spying for Cognition (drama)
+    - Brian Chesky on an operating system for agents
+    - Sean Parker rebuilding Stability AI
+    - Photon raises $4.5M
+    - OpenAI cuts ties with safety researchers
+    - Nscale (older)
+- **Podcasts (subagent searched Latent Space, Interconnects and Dwarkesh; Cognitive Revolution's archive API returned non-JSON):**
+  - ✅ Latent Space, "Academia is for Ambition — Alex Zhang" — https://www.latent.space/p/rlm
+  - Backup: Latent Space with TypeSafe's Diogo Almeida (Sep 21; transcript not read)
+- **Failed sources:** X/Twitter (expected), TechPowerUp (403), the Figma tweet. All three were worked around, not fatal.
+=== 2026-10-03T02:36:53-07:00 done  jinglin-ai-pulse (exit 0) ===

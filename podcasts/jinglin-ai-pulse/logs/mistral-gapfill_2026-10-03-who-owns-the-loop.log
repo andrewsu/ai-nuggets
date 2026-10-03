@@ -1,0 +1,8 @@
+Script body: 14532 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2852 chars) -> 122.0s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2915 chars) -> 134.6s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2801 chars) -> 138.4s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2996 chars) -> 141.4s ✓
+  [mistral:en_paul_neutral] chunk 5/5 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/5 (2964 chars) -> 127.2s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-10-03-who-owns-the-loop.mp3 [mistral] 5,915,838 bytes, 739.4s
