@@ -1,0 +1,4 @@
+Script body: 5718 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2888 chars) -> 154.6s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2829 chars) -> 137.3s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-10-04-ubamatamab-muc16-cd3-lgsoc-73-percent-orr.mp3 [mistral] 2,445,732 bytes, 305.7s

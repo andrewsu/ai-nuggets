@@ -3772,3 +3772,27 @@ Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus
 
 Two notes worth flagging: an earlier turn of mine was stopped by a safety classifier mid-search — I don't know which part triggered it, so I restarted the search phase with narrower tool calls rather than reproducing it; there was no effect on the output. And dedup: this is the show's fourth ivonescimab episode (07-23, 09-03, 09-13), but a distinct event three weeks on, and I used the 09-13 analysis as deliberate continuity rather than repetition. If that asset is wearing thin for Justice, the MUC16×CD3 item was a clean alternative.
 === 2026-10-03T02:51:20-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-10-04T02:40:18-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Published artifacts**
+- `podcasts/justice-biotech-brief/scripts/2026-10-04-ubamatamab-muc16-cd3-lgsoc-73-percent-orr.md` (881 spoken words, ~5 min)
+- `.rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `.commit-msg`
+
+**Pick:** Ubamatamab (MUC16xCD3 TCE, Regeneron) — 73% ORR / 9-mo DoR / 11-mo PFS at 800 mg monotherapy in low-grade serous ovarian, IGCS late-breaking plenary. The take: the molecule didn't change, the denominator did — the same drug managed 14.3% ORR in a 91%-high-grade-serous Phase 1, and the Phase 1's own MUC16-IHC>75% subgroup (30.8%, n=13) predicted it. Plus the membrane-proximal epitope that dodges the CA-125 sink, the comparator that doubles its PFS (avutometinib+defactinib, 22 mo), and the registrational Q3W schedule resting on three Q3W patients.
+
+**Candidate funnel**
+- **bioRxiv details API** — 10-02: 147 entries, full pagination, 5 v1 keyword hits; 10-03: **zero posts**. None on-beat.
+  - `10.64898/2026.09.29.755403` Engineered CTLA-4 targeting chimeras (still the live preprint candidate, carried from 10-03)
+  - folate metabolism in TAMs; JAK-STAT shade enhancers; sarcomatoid urothelial EMT/M2 — off-beat
+- **BioSpace RSS** (clinical-research, business, cancer, drug-development, press-releases) — ~80 dated items scanned, 4 in-window + on-beat:
+  - ✅ **Ubamatamab (MUC16xCD3) in LGSOC** — https://www.biospace.com/press-releases/ubamatamab-muc16xcd3-shows-a-high-rate-of-durable-responses-in-initial-study-of-patients-with-advanced-low-grade-serous-ovarian-cancer-lgsoc — **CHOSEN**
+  - Biogen litifilimab 52-wk Ph2 CLE (EADV) — strongest backup; passed only to avoid a second pDC/derm-autoimmune episode within five days of the 09-30 daxdilimab pick
+  - CRISPR Tx zugo-cel in systemic sclerosis — abstract announcement only, no data until Nov 8
+  - Verastem RAMP 201 external-control analyses — used as comparator background instead
+- **Dedup check**: no overlap with 09-15 → 10-03 shipped scripts; 10-03 was ivonescimab+Datroway.
+- **Source gaps**: Fierce/Endpoints/STAT not separately fetched (Cloudflare/paywall per standing notes); BioSpace RSS covered the same wire items. ARPA-H/NIH/NSF — no weekend postings.
+
+Full text read in full for the pick (press release body, Phase 1 OncLive report, avutometinib approval data, MUC16 proximal-ectodomain structure paper). I also appended today's spine and the litifilimab backup to the show's run-log memory.
+=== 2026-10-04T02:44:27-07:00 done  justice-biotech-brief (exit 0) ===
