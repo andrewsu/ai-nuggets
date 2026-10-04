@@ -3454,3 +3454,59 @@ Files are in `podcasts/jinglin-ai-pulse/scripts/`:
   - Backup: Latent Space with TypeSafe's Diogo Almeida (Sep 21; transcript not read)
 - **Failed sources:** X/Twitter (expected), TechPowerUp (403), the Figma tweet. All three were worked around, not fatal.
 === 2026-10-03T02:36:53-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-04T02:30:18-07:00 start jinglin-ai-pulse ===
+I wrote today's Ollie's AI Pulse episode in script-only mode: `SKIP_TTS=1` was set, so I didn't run TTS, publish to R2, edit `feed.xml` or commit. The nightly batch will generate the audio and commit it.
+
+**Episode:** `2026-10-04-the-sandbox-was-a-choice` — about 2,490 spoken words, so roughly 13–14 minutes. That's a bit over the show's 2,200-word target even after two rounds of trimming.
+
+- **Twitter Pulse:**
+  - **Kolibri:** Aleph Alpha's new German-English open-weight model, sold as "sovereign." Its technical report names GLM-5.2, GLM-5.3 and Qwen3.8-27B as its main post-training teachers and says those teachers "were built in China." The episode treats that as a working definition of sovereignty, not hypocrisy.
+  - **OpenAI resignation:** David Robinson, who led OpenAI's launch safety reports, quit saying the culture is broken. Yann LeCun, who has "zero concerns," says the same thing about the cause: the sandboxes were "leaky and horribly designed."
+  - **Budget caps:** Simon Willison's case that hard spending caps should be the default for anything agents can spin up.
+- **Money Moves:** Supabase is buying Turso because agents now create over a million databases a week; AWS has stopped using nondisclosure agreements for data centers as local moratoriums pile up.
+- **Podcast Deep Cut:** Diogo Almeida (TypeSafe AI) on Latent Space, Sep 21. He calls a refusal "a type error" in a software dependency and says the labs "could have easily solved" the sandboxes "but they chose not to." I checked every quote word for word against the full transcript.
+- **Things to know:**
+  - The Atlantic blocked this host, so Robinson's essay is quoted through The Guardian and TechCrunch.
+  - The LeCun sandbox quote comes from a WebFetch summary of the Fortune page, not raw page text.
+  - TypeSafe's method is unpublished and Jev has no public benchmarks, and the script says so.
+  - The Almeida episode is 13 days old, inside the show's 14-day podcast window.
+
+Files are in `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-10-04-the-sandbox-was-a-choice.md`
+- `2026-10-04-the-sandbox-was-a-choice.rss-item.xml` (the feed item; it parses as valid XML)
+- `2026-10-04-the-sandbox-was-a-choice.commit-msg`
+
+**Candidate funnel**
+- **Hacker News** (Algolia, last 50h, over 80 points): about 65 scanned, 14 AI-relevant.
+  - ✅ Kolibri — https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/ (plus the technical report PDF and https://tej.as/blog/aleph-alpha-kolibri)
+  - ✅ I quit OpenAI because its culture is broken — https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/
+  - ✅ Default hard budget caps — https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/
+  - ✅ LeCun "zero concerns" — https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/
+  - Not used:
+    - Stratego AI (arstechnica)
+    - antirez ds4 — https://dwarfstar.sh/
+    - The harness is the company (sshh.io; harness theme was yesterday's episode)
+    - Agents don't need memory (liao.gg)
+    - Getting the most out of Opus 5.5 (claude.dev)
+    - One month with GLM 5.3 Flash (wagtail.org)
+    - Pop!_OS AI-code ban
+    - Figure F.02 decommission
+    - Apple Full Disk Access (already covered 10-03)
+- **Investment** (TechCrunch AI and Venture feeds): about 40 scanned, 6 relevant.
+  - ✅ Supabase acquires Turso — https://supabase.com/blog/supabase-is-acquiring-turso
+  - ✅ AWS drops data-center NDAs — https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/
+  - Not used:
+    - Google Suncatcher orbital TPU / 1,800 Starship launches
+    - OpenAI cuts ties with 3 safety researchers (used only as context)
+    - Sean Parker rebuilding Stability AI
+    - Bag Ventures $11.3M
+- **Podcasts** (a background agent scanned Latent Space, Dwarkesh, Interconnects, Cognitive Revolution, No Priors and Machine Learning Street Talk):
+  - ✅ Latent Space, "Jev: System One models for Prod, not God — Diogo Almeida" — https://www.latent.space/p/jev
+  - Backup: Cognitive Revolution, Halcyon's Mike McCormick (Sep 25)
+  - Two Latent Space episodes in the window had only a writeup, no transcript: Eric Nguyen on biosecurity and John Platt on AI for Science.
+- **Failed sources** (all worked around):
+  - X/Twitter: unreadable from this host, as expected.
+  - The Atlantic: Cloudflare block.
+  - Fortune: curl got an 8-byte reply and the first WebFetch URL 404'd; the correct URL from Hacker News worked.
+  - The Guardian: my first URL guess 404'd; the URL from Hacker News worked.
+=== 2026-10-04T02:37:21-07:00 done  jinglin-ai-pulse (exit 0) ===

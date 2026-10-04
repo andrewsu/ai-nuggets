@@ -1,0 +1,10 @@
+Script body: 14848 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/6 (2790 chars) -> 122.6s ✓
+  [mistral:en_paul_neutral] chunk 2/6 attempt 1 FAILED: chunk duration 95.4s < floor 98.8s (likely truncated)
+  [mistral:en_paul_neutral] chunk 2/6 (2469 chars) -> 103.1s ✓
+  [mistral:en_paul_neutral] chunk 3/6 (2951 chars) -> 138.3s ✓
+  [mistral:en_paul_neutral] chunk 4/6 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 4/6 (2995 chars) -> 138.3s ✓
+  [mistral:en_paul_neutral] chunk 5/6 (2980 chars) -> 133.0s ✓
+  [mistral:en_paul_neutral] chunk 6/6 (658 chars) -> 31.8s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-10-04-the-sandbox-was-a-choice.mp3 [mistral] 5,946,767 bytes, 743.3s
