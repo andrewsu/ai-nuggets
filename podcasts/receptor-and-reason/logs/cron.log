@@ -5170,3 +5170,37 @@ Cut for length (full text on disk, deferred): dose-dependent transcranial ultras
 
 Two notes worth flagging. First, I ran an independent notes pass over the same PDFs while drafting, and it changed two takes materially: the cannabinoid panel's real headline is that 21 of 22 ligands are *unbiased* (I'd drafted it as an efficacy-scale story), and StrokeAgent's error audit beats its 86% headline. Second, GroundAnnot was dedup-clean for this show but shipped today by biomedical-agentic-ai — the ledgers are per-show, so cross-show collisions are invisible; I skipped it. Both are recorded in the run-state memory.
 === 2026-10-03T03:09:17-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-04T02:50:19-07:00 start receptor-and-reason ===
+Episode published as stubs (SKIP_TTS mode — no TTS, no R2 publish, no feed edit, no commit, per PIPELINE.md).
+
+**Files written:**
+- `podcasts/receptor-and-reason/scripts/2026-10-04-receptor-and-reason.md` (3,588 spoken words, ~19–20 min)
+- `.rss-item.xml` (validated as XML in feed context) and `.commit-msg`
+- Ledger appended: 10 keys, 135 episodes
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Fresh after dedup |
+|---|---|---|---|
+| bioRxiv + medRxiv details API, 09-27→10-03, day-by-day | 1,904 v1 records | 298 | 273 |
+| Nature-family RSS (npp, mp, tp, nbt, nature, nm, neuro, natmachintell, npjdigitalmed) + Crossref by ISSN | 187 | 187 | 182 |
+| arXiv live 6×400 paged query (cs.AI/CL/MA, q-bio.QM/NC) | 2,400 | 124 | 122 |
+
+Source failures: **bioRxiv full text 2 of 10 across six retry rounds** (17-byte 429s on the rest) — discovery was healthy, retrieval was the bottleneck. medRxiv 3/3, arXiv 4/4, Nature article pages 5/6 readable. The shared arXiv cache again held only 500 entries, so the live paged query was used.
+
+**Shipped (10):**
+- GTAC GPCR degraders — Nature `s41586-026-11088-0` *(lead)*
+- Immunotoxin payload attenuation — biorxiv 2026.09.27.754776
+- VTA dopamine → basal forebrain at 10 ms — biorxiv 2026.10.01.755874
+- ClC-2 blockade / EGABA — biorxiv 2026.09.24.753897
+- Caudate D2 + 7-day EMA — biorxiv 2026.09.26.754663
+- Tau strain transmission — Nature `s41586-026-11061-x`
+- Dose-dependent TUS — biorxiv 2026.09.27.754841
+- tDCS neurotwin montage optimization — medrxiv 2026.09.22.26363221
+- PhenoAIR Cell Painting agent — arxiv 2609.36406
+- ChatGPT distress audit — arxiv 2609.35953
+
+Two things worth flagging. First, a parallel notes pass over the same PDFs **caught a factual error in my draft**: I had written that higher caudate D2 availability meant heightened sensitivity to effort costs, when the paper shows no relationship to the discount parameter at all (p=.49) — the signal is working-memory capacity, and ventral striatum is null throughout. That item was rewritten. Second, enriching from those notes pushed the draft from 3,366 to 4,003 words, so I dropped the PrP/mGluR5 zebrafish item and ran three compression passes to land at 3,588 — a touch above the 12–18 min target but in line with recent episodes (yesterday shipped 3,547).
+
+Seven bioRxiv preprints stayed unreadable and are logged as deferrals, including the OrthoRep GPCR directed-evolution paper, which was the strongest unread candidate.
+=== 2026-10-04T03:07:48-07:00 done  receptor-and-reason (exit 0) ===
