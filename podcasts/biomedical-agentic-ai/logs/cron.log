@@ -5197,3 +5197,25 @@ I wrote a second episode for today, on GroundAnnot. Because the nightly batch mo
 
 I updated memory: GroundAnnot is marked shipped, and a new note says that when `SKIP_TTS=1` is set a run should write only the stubs and never commit itself.
 === 2026-10-03T02:13:51-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===
+=== 2026-10-04T02:00:17-07:00 start biomedical-agentic-ai ===
+Published (stubs only — `SKIP_TTS=1`, so no TTS, R2 publish, feed edit, or commit; `publish_pending.py` will do those).
+
+**Episode:** `2026-10-04-ageqsp-gates-and-the-operator-who-moves-them` — AgeQSP, a gated agentic AI–QSP workflow (bioRxiv `10.64898/2026.09.29.755460`, posted 10-01, IQANOVA Ltd / University of Edinburgh). Full text read via `.full.pdf` + Safari UA + mutool (800 KB, 23 pp, clean on first attempt; no `placeholder` hits). Spoken body 1,012 words.
+
+Files written: `.md`, `.rss-item.xml` (XML validated), `.commit-msg`.
+
+**Candidate funnel**
+
+bioRxiv — details API swept day-by-day 09-30→10-04, 720 unique records (10-03 and 10-04 both returned 0, normal lag). 21 keyword hits on v1 + in-window DOI date; substantive shortlist after discarding spurious matches:
+- **From seven combination hypotheses to one testable interaction: a gated agentic AI–QSP workflow** `10.64898/2026.09.29.755460` — **CHOSEN**, full text read
+- An AI-powered cloud biofoundry for autonomous biological research (iCloudBiofoundry) `10.64898/2026.09.30.750244` — 17-byte 429 on `.full.pdf`, **deferred again** (per-document throttle; other docs fetched fine the same minutes)
+- Evidence Scaling for Zero-Shot Protein Reasoning with LLMs `10.64898/2026.09.27.754822` — adjacent, not opened
+- GroundAnnot `10.64898/2026.09.27.754741` — already shipped 10-03
+- Evo 2 as a classification machine `10.64898/2026.09.30.755330`; Mendel foundation model `10.64898/2026.09.28.755183` — foundation-model, not agentic
+
+arXiv — shared cache, 500 entries, dates 09-30 (200) / 10-01 (300); ~160 keyword+biomedical hits, 10 abstracts pulled. Shortlist: Can LLMs Reliably Annotate Bioassay Metadata (2610.01616); Ontology-Grounded, Reasoner-Verified Benchmarks (2610.00682); LLM-Assisted Typed Semantic Links for Ontology Networks (2610.01393); OpenMTB-Audit (2610.01497); YouRA (2610.01097); EurekaBench (2610.00492); Can AI Scientists Coordinate at Runtime? (2610.00980). The three ontology items are the strongest but repeat GroundAnnot's spine one day later — held for a later run.
+
+PubMed — 50 hits over the 5-day entry window; substantive: BioGAIP (J Genet Genomics, 10-03, Elsevier — full text unobtainable from this host per prior findings); Agentic campaign control for de novo binder design (bioRxiv `10.64898/2026.09.22.753604`, posted 09-24 — outside the 4-day window); Data-reflector (JAMIA Open); HemOncAgent, MES (medRxiv). Nat Med / BMJ / Science items were commentary, not research.
+
+Funder pages — ARPA-H newest item is 09-09 (cardiovascular clinical AI), out of the 3-day window; NIH releases page returned a 5.5 KB shell with no in-window AI items. News/product launches and ChemRxiv: not swept — bioRxiv and arXiv carried the day and the chosen item was locked early.
+=== 2026-10-04T02:04:39-07:00 done  biomedical-agentic-ai (exit 0) ===

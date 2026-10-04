@@ -1,0 +1,5 @@
+Script body: 6399 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2918 chars) -> 139.1s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2988 chars) -> 135.6s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (490 chars) -> 22.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-10-04-ageqsp-gates-and-the-operator-who-moves-them.mp3 [mistral] 2,626,499 bytes, 328.3s
