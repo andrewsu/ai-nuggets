@@ -1,0 +1,7 @@
+Script body: 9510 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2971 chars) -> 128.0s ✓
+  [mistral:en_paul_neutral] chunk 2/4 attempt 1 FAILED: chunk duration 111.4s < floor 119.9s (likely truncated)
+  [mistral:en_paul_neutral] chunk 2/4 (2997 chars) -> 152.3s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2961 chars) -> 152.3s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (578 chars) -> 32.0s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-10-04-nektar-rezpeg-alopecia-durability-spotlight.mp3 [mistral] 3,975,671 bytes, 496.9s

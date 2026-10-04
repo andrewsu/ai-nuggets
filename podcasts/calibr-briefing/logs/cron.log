@@ -5033,3 +5033,46 @@ Shortlist after dedup against the 10-01 episode (✓ = used):
 - ✗ Regeneron muscle-preserver COURAGE + lipid-lowering combo (EASD) — Endpoints body paywalled, molecule not confirmable from the lede; cut rather than guess
 - ✗ Moderna/Neurocrine hires, Pharming CEO exit, Eccogene $50M milestone, Devoted Health $1.2B, Kallyope rebrand + $94M — real but below the bar for length
 === 2026-10-03T02:27:55-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-04T02:20:18-07:00 start calibr-briefing ===
+I wrote both episodes as stubs only. `SKIP_TTS=1` is set, so I didn't run TTS, publish to R2, edit `feed.xml` or commit; `publish_pending.py` does those after the batch TTS job.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-10-04-pharma-headlines.txt` (1,653 words), plus its `.rss-item.xml` and `.commit-msg`
+- `2026-10-04-nektar-rezpeg-alopecia-durability-spotlight.txt` (1,510 words), plus its `.rss-item.xml` and `.commit-msg`
+
+Both RSS stubs parse as valid XML (checked with the `itunes` namespace declared) and use the `__LENGTH__`/`__DURATION__` placeholders.
+
+**Spotlight:** Nektar's rezpeg (a pegylated IL-2 that expands regulatory T cells) in alopecia areata, presented Oct 1 at the European dermatology congress (EADV) in Vienna and not covered in an earlier episode. I read the full 21-slide deck, which has three facts the press release left out:
+- The claim that hair stays after stopping the drug rests on 8 patients: 5 of 8 kept at least 80% scalp coverage at six months.
+- Patients treated for only 36 weeks kept it in just 1 of 6.
+- The 36-week primary endpoint missed significance in the full randomized population (P=0.19 and 0.12). It only reached significance after four patients were excluded after the fact.
+
+The episode compares this with the baricitinib withdrawal trial (BRAVE-AA1): about 10% had lost benefit at 8 weeks off drug and 80% by week 152. Alopecia relapses slowly, so six months can't yet tell a reset disease from a slow relapse. The atopic dermatitis monthly and quarterly maintenance data is the stronger randomized evidence that the effect lasts. Analyst views come from Jefferies (selloff "unwarranted", Buy, $150 target) and William Blair ("material durability advantage"). The Phase 3 primary endpoint measures response while patients are still on the drug, so it won't test the durability claim.
+
+**Candidate funnel** (Sunday run, window Friday afternoon through Saturday plus EADV items not yet covered)
+- **Endpoints feed:** 24 items, newest a Saturday recap; nothing new after the 10-03 run.
+- **BioSpace press-release feed and index:** about 40 items, 9 kept.
+- **BioPharma Dive feed:** 10 items, newest Oct 2, nothing new.
+- **STAT feed:** 20 items, 1 kept (Ebola). **GEN feed:** 10 items, 1 kept (Talus).
+- **Clinical Trials Arena feed:** 10 items, all EASD items already covered.
+- **Fierce Biotech:** RSS and jina both returned 403. **Fierce Pharma:** RSS 403, the jina index worked, nothing new.
+- **Dermatology Times EADV index (via jina):** about 30 articles. HCPLive's Day 3 recap is behind a registration wall, but its telikibart article was readable.
+
+Shortlist (✓ = used):
+- ✓ Spotlight and lead: Nektar rezpeg REZOLVE-AA/AD — https://www.biospace.com/press-releases/update-nektar-therapeutics, plus the slide deck https://www.nektar.com/wp-content/uploads/2026/10/EADV-2026_Rosmarin_Rezpegaldesleukin_Rezolve_AA.pdf
+- ✓ Biogen litifilimab, 52-week AMETHYST — biospace.com/press-releases/biogens-litifilimab-demonstrates-rapid-and-durable-efficacy-in-new-52-week-phase-2-data-…
+- ✓ J&J Icotyde two-year ICONIC-TOTAL — dermatologytimes.com/view/icotrokinra-sustains-skin-clearance-at-high-impact-psoriasis-sites-through-2-years
+- ✓ Telikibart (GR1802) Phase 3 — hcplive.com/view/eadv-2026-telikibart-attains-easi-75-70-week-16-atopic-dermatitis
+- ✓ Talus Bio Ptarmigan-1 — genengnews.com/topics/artificial-intelligence/talus-bios-structure-free-ai-model-…
+- ✓ Orano Med lead-212 plant (ATLab Valenciennes) — biospace.com/press-releases/orano-med-inaugurates-atlab-valenciennes-…
+- ✓ Ultragenyx MPS IIIA application validated by the EU regulator (EMA) — biospace.com/press-releases/ultragenyx-announces-marketing-authorisation-application-…
+- ✓ Replimune Tudriqev launch — biospace.com/press-releases/replimune-announces-tudriqev-now-available-in-the-u-s-for-advanced-melanoma
+- ✓ Cullinan/Taiho first-line zipalertinib filing started — biospace.com/press-releases/new-drug-application-submission-initiated-for-zipalertinib-…
+- ✓ Congo Ebola outbreak — statnews.com/2026/10/02/ebola-outbreak-congo-4000-deaths/
+- ✓ Quick hits: CRISPR zugo-cel at the rheumatology meeting (ACR), BioMarin Pombiliti five-year data, Verastem RAMP 201; Arvinas ARV-102 (Oct 7) in the week ahead
+- ✗ Already covered on 09-30 or 10-01: zasocitinib head-to-head, daxdilimab, zumilokibart, tulisokibart, tilrekimig
+- ✗ Article body unreadable: GEN's piece on FDA adding aging and longevity medicine to its planned FARS updates; STAT+ on Lilly selling direct to patients in Australia
+- ✗ Dropped: izokibep in hidradenitis suppurativa (can't confirm who owns it now); nemolizumab three-year, ritlecitinib and upadacitinib vitiligo (follow-on data); Climb Bio and Agenus ("to present" announcements only)
+
+I also added a note to the weekend-news memory: EADV actually ran through Saturday Oct 3 (the 10-03 episode said it ended Friday), the Dermatology Times conference index worked as a source, and company congress slide decks can hold details their press releases leave out.
+=== 2026-10-04T02:36:36-07:00 done  calibr-briefing (exit 0) ===
