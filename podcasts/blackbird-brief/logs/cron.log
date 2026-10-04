@@ -3242,3 +3242,9 @@ Perfect! Today's Blackbird Brief episode has already been produced, published, a
 The orchestrator will handle the final git push. The episode is live and accessible to subscribers via the RSS feed.
 === 2026-10-03T02:43:54-07:00 done  blackbird-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-10-03T02:43:54-07:00 FAILED: no usable output for blackbird-brief after all retries ===
+=== 2026-10-04T02:10:18-07:00 start blackbird-brief ===
+Background tasks still running after 600s; terminating. Set CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS=0 to wait indefinitely.
+Waiting on the two research agents (partner-institution research and portfolio news).
+=== 2026-10-04T02:22:30-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-04T02:22:30-07:00 no usable output for blackbird-brief; retrying in 180s ===
+=== 2026-10-04T02:25:30-07:00 start blackbird-brief (retry 1) ===

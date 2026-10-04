@@ -1370,7 +1370,14 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-10-01_
+_Last update: 2026-10-04_
+- **OUR AAV CASSETTE IS PROBABLY CARRYING A POSITIONAL ITR DEFECT AND A RESTRICTION DIGEST WILL NOT SHOW IT (added 2026-10-04 Radar LEAD; preprint posted 2026-09-28).**
+  **Bunz lab (JHU SOM Radiation Oncology & Molecular Radiation Sciences) + Jaskula-Ranga (Hunterian Medicine LLC, Cambridge MA)**, bioRxiv 10.64898/2026.09.24.753884.
+  AAV **ITR instability is positional, not intrinsic**: the ITR nearest the plasmid **origin of replication** degrades; moving both ITRs **>1.4 kb from the ori** eliminates loss in plain DH5α at standard temperature.
+  High-copy pAAVcis (ori 477 bp from right ITR): after prolonged culture **~27% of molecules flipped the inner loop** of the ori-proximal ITR vs <1% distal. A **1,797-bp spacer** (→ **pAAV2ST**, **Addgene #239400**) fixes it and packaged a
+  4,750-bp all-in-one SaCas9 cassette at **5.61E13 vg vs a 1.0E13 spec**, 70.3% full (mass photometry) / 79.7% (TEM). **Addgene survey: 7,041 ITR-bearing plasmids, 67.8% carry an exact Δ11 deletion, and it is the
+  ori-proximal ITR in 95.3% of analyzable two-ITR plasmids.** Mutant ITRs also gave a **worse homologous:non-homologous integration ratio** in hTERT-RPE1 (preliminary, one assay).
+  **FNIH AMP Bespoke Gene Therapy Consortium funded and publicly deposited ⇒ precompetitive standard, NOT licensable IP.** Two consequences for us: (a) **ask which entry vector the SELEXON cassette is built in and how far its ITRs sit from the ori, and sequence them with long reads** — a SmaI digest can look clean on a population that is a third mutant; (b) **add long-read ITR-integrity pileup to technical diligence on every AAV deal** (code: github.com/fredbunz-lgtm/aav-itr-pileup). Partially answers the 09-10 genome-integrity open item.
 - **THE INTERNAL-BASELINE-CONTROL ASK EXECUTED IN A SENSORY ORGAN WITH CATEGORICAL 18-MONTH SEPARATION — AND THE LIMIT THAT SHOULD GOVERN
   OUR PRE-IND PLANNING: IT BOUGHT A PIVOTAL, NOT A WAIVER (added 2026-10-01 Portfolio Watch item 2; announced 2026-09-30).**
   **Atsena Therapeutics, ATSN-201** — AAV gene therapy for **X-linked retinoschisis**, capsid **AAV.SPR**, a novel **laterally spreading**
@@ -2894,7 +2901,12 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-09-23_
+_Last update: 2026-10-04_
+- **THE INSTRUMENT RULE TESTED AT n=1, AND THE MACHINE-MEASURED ENDPOINTS CARRY IT (added 2026-10-04 Portfolio Watch item 3; *Med* 2026-09-14, Mayo release 2026-10-01).**
+  **Mayo Clinic + n-Lorem Foundation, nL-CHCHD10-001**, a bespoke ASO for one patient with the **CHCHD10 R15L** variant (toxic gain of function, TDP-43 pathology downstream). >320 ASOs screened; FDA cleared the design; **6 intrathecal doses q3mo, 50 → 75 mg**, first dose April 2024.
+  **Plasma NfL 27.4 → 13.4 pg/mL at 6 mo → 17.2 at 12 mo** (ULN 22.4). **FVC 48% → 60%** at month 1, then mid-50s. **ALSFRS-R** had fallen 47 → 33 over ~3 pre-treatment years, then held at 33 for 9 months → 35 → **36**. Two head injuries during the year moved both measures (reported, not smoothed).
+  **The argument is carried by the biomarker with a steep untreated slope plus a spirometer; the self-reported functional scale is the weakest leg even when it moves the right way** — the same split as the Encoded/Angelman read. **Action: weight NfL + a machine-measured respiratory endpoint as primary-adjacent in the NuGate package, functional scale supportive.**
+  Forward: **SILENCE ALS** (n-Lorem + Columbia, NIH-funded) has extended the same ASO to **8 more CHCHD10 carriers**, open-label; **two-year data at the NEALS annual meeting, November 2026**. Investigator read: earlier/milder starters respond better (the tofersen lesson). Also note the nano-rare lane now has a **nonprofit supply chain**, which affects how we scope "all forms of ALS."
 - **THE INSTRUMENT RULE IS ANSWERED IN THE AFFIRMATIVE AT n=89, AND THE INSTRUMENT THAT DID IT IS A JOINT-RANK COMPOSITE OF
   FUNCTION *AND* SURVIVAL — NOT A BETTER SCALE (added 2026-09-23 Portfolio Watch LEAD; topline 2026-09-22). CLOSES the 09-08
   instrument-rule action.**
@@ -3189,7 +3201,11 @@ _Last update: 2026-09-23_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-10-03_
+_Last update: 2026-10-04_
+- **THE BROAD TOOL NOW HAS THE NUMBERS AND A CLEAN INFECTION TABLE — THE SAFETY HALF OF OUR SELECTIVITY PITCH IS THE PART THAT JUST WEAKENED (added 2026-10-04 Portfolio Watch item 2; detail released 2026-09-30/10-01, completes the figure-free 10-01 topline).**
+  **Merck tulisokibart (anti-TL1A mAb), Phase 2b in moderate-to-severe hidradenitis suppurativa, n=149.** **HiSCR50 72% high dose / 64% medium dose; placebo-adjusted +37 and +29 points** (adalimumab PIONEER II = 31%). **q4w** dosing vs q2w for bimekizumab.
+  AEs modestly above placebo, serious AEs infrequent and evenly distributed, **no serious or opportunistic infections** — BMO flagged that as reading positively to broader inflammatory development. Asset came with **Prometheus ($10.8B, Apr 2023)**; ATLAS-UC Ph3 hit in June; **failed** Ph2 in SSc-ILD in August (discontinued).
+  **Read: defend on durability off treatment + the antigen-specific cut, not on generic safety.** A broad biologic posting best-in-class efficacy with a clean infection profile removes the easiest version of our argument.
 - **REDOSABILITY IS NO LONGER AN ENGAGER-ONLY CLAIM; LEAD WITH THE ANTIGEN-SPECIFIC CUT (added 2026-10-03).** **Novartis × Abogen (2026-10-02): $575M upfront, up to ~$7.2B milestones** for **ABO2203, an mRNA-LNP-ENCODED CD19×CD3 engager** pitched at autoimmunity (NCT06747156, refractory autoimmune, n=66 target; only data = 9 r/r B-NHL pts, company-reported no CRS/DLT/ICANS). In-vivo encoding trades away infusion-level dose control for smoother exposure — the inverse of our "dose control + reversibility" pitch — and was priced at half a billion upfront. **Cartesian (Frederick MD) Descartes-08**, mRNA (non-integrating) anti-BCMA CAR-T in MG: 5 relapsed pts retreated outpatient, no lymphodepletion, mean MG-ADL −6.6 at M12, no CRS/ICANS/SAEs; AURORA Ph3 topline Q1 2027. ⇒ Valuation comp for Winnow/Clasp decks; differentiate on selectivity, not reversibility.
 - **THIRD Th17-DIRECTED ENTRANT IN TWO DAYS, TWO OF THEM IN ONE DERMATOLOGY INDICATION ON THE SAME MORNING — AND ALL THREE REACH FOR A
   BROAD TOOL, WHICH IS OUR SELECTIVITY CLAIM STATED BY OUR COMPETITORS (added 2026-10-01 Portfolio Watch CLOSER; both announced
@@ -3798,7 +3814,12 @@ _Last update: 2026-10-03_
   https://www.biospace.com/business/bms-ends-cellares-pact-over-cell-therapy-production-problems-triggering-layoffs
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
-_Last update: 2026-09-24_
+_Last update: 2026-10-04_
+- **THE NORMAL BACKGROUND IS BIGGER THAN ANYONE MODELLED, AND THE ANSWER IS A WITHIN-PATIENT BASELINE — WHICH SUITS CHRONIC-DISEASE MONITORING BETTER THAN IT SUITS SCREENING (added 2026-10-04 Radar pick 2; preprint posted 2026-09-28).**
+  **Velculescu lab (JHU SKCCC)**, bioRxiv 10.64898/2026.09.22.753313. 47 normal tissues / 168 samples, long- + short-read WGS: **mosaic structural variants in every individual and every germ layer, median 285.2 kb/genome**, ~half of breakpoints independently validated, mostly **repeat-mediated**, **8.3% overlapping functional elements** (enriched vs germline). Alignment-free k-mer (ARTEMIS) recovers the signal from short reads.
+  Across 15 cancer types, **tumour-related repeat variation is similar in SCALE to normal mosaic variation** — the specificity problem stated quantitatively; a population reference cannot separate them.
+  **Their fix is self-referential: compare plasma cfDNA repeat landscape to that same patient's buffy coat.** In **72 ovarian cancer patients** the correlation tracks tumour burden, and **post-neoadjuvant-chemotherapy, higher cfDNA↔buffy-coat correlation associated with longer overall survival.** No disease-specific classifier, no training cohort.
+  **COI: Velculescu is founder/board/shareholder of BOTH Delfi and Artemyx, officer of Artemyx; JHU holds Delfi equity; the cfDNA patents are licensed to both ⇒ nothing to license, this is portfolio intelligence.** Open questions for the Artemyx file: is the repeat-landscape feature set inside the existing licence or the next tranche, and has anyone run it on the longitudinal chronic-disease cohorts Artemyx already holds? (A within-patient baseline fits serial monitoring of liver fibrosis / SLE / RA / IBD better than it fits one-shot screening.)
 - **THE REIMBURSEMENT GATE MOVED AND IT IS NOW A PMA — AND THE FIRST COMPANY THROUGH IS GOING WITH A MISSED PRIMARY ENDPOINT AND A 6-4
   EFFECTIVENESS VOTE. FIFTH SHAPE FOR THIS ENTRY'S STANDING QUESTION: SCREENING, WHERE THE DIAGNOSTICS COMPANY FUNDS ITS OWN
   REGISTRATIONAL EVIDENCE — AND IT IS THE MOST EXPENSIVE OF THE FIVE (added 2026-09-24 Portfolio Watch LEAD; panel met 2026-09-23).**
