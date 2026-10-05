@@ -5219,3 +5219,29 @@ PubMed — 50 hits over the 5-day entry window; substantive: BioGAIP (J Genet Ge
 
 Funder pages — ARPA-H newest item is 09-09 (cardiovascular clinical AI), out of the 3-day window; NIH releases page returned a 5.5 KB shell with no in-window AI items. News/product launches and ChemRxiv: not swept — bioRxiv and arXiv carried the day and the chosen item was locked early.
 === 2026-10-04T02:04:39-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-05T02:00:11-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` is set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Published artifacts** (`podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-10-05-immuneagent-lab-in-the-loop-antibody-discovery.md` — 840 words in the spoken body (cap 1150)
+- `…​.rss-item.xml` — validates as XML, both placeholder tokens present
+- `…​.commit-msg`
+
+**Pick:** ImmuneAgent — *Multimodal reasoning for broadly neutralizing antibody discovery from label-free human B cell repertoires across virus families*, arXiv 2610.03160, posted 2026-10-02 (Nankai University / Chinese Academy of Medical Sciences). Full text read via `mutool` extraction of the PDF (122 KB of text; grepped clean for "placeholder"). URL verified HTTP 200; web-searched the title to confirm it isn't a re-post of earlier work.
+
+The editorial spine is the HPV generalization test: with no HPV antigens or antibodies in training, the learned predictor had **no** relationship to neutralization while FCRL5 expression, clonal expansion, and the co-folding score did — i.e. outside the training distribution the ML component contributed nothing and the agent's literature-derived priors were the entire source of signal. The authors don't foreground that. Also credited their statistical restraint (declining the unmatched antigen-sorted denominators; stating the mouse study wasn't powered for equivalence) and flagged that the post-feedback SARS-CoV-2 F1 of 0.71 is still below its own 0.81 validation score.
+
+**Candidate funnel**
+
+- **bioRxiv** — details API swept day-by-day 2026-10-01→10-05; 432 records (Oct 3/4 genuinely empty, weekend); 49 keyword hits, 4 substantive after discarding "agent" → chemical/therapeutic agent:
+  - *An AI-powered cloud biofoundry for autonomous biological research* (Zhao lab, UIUC) — 10.64898/2026.09.30.750244 — strong candidate, **deferred: full text not rendered** (`fetch_preprint.py` fell through to abstract-only; jina on `.full.pdf` returned Cloudflare 429, direct curl returned the 17-byte throttle twice). Revisit — this is a live deferral.
+  - GroundAnnot 10.64898/2026.09.27.754741 — **already shipped 10-03**
+  - Gated agentic AI-QSP / AgeQSP 10.64898/2026.09.29.755460 — **already shipped 10-04**
+  - *Evidence Scaling for Zero-Shot Protein Reasoning with LLMs* 10.64898/2026.09.27.754822 — narrower, no agentic loop
+- **arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries (the 500 cap again: covers only Oct 1–2, which is the announcement frontier for a Monday run, so no recall loss today). 248 keyword hits → 9 shortlisted:
+  - **ImmuneAgent** 2610.03160 — **CHOSEN**
+  - *Asterism* — ontology-unified evidence graph, human-curated theory building, field deployment n=10 — 2610.02673 — strong runner-up, best non-wet-lab candidate
+  - *Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?* 2610.01616 — bullseye for the KG/metadata interest (>99.9% of PubChem bioassays lack a BAO-mapped term); lost on being adjacent to GroundAnnot's annotation-contract spine two days ago
+  - *FD-SCoPE* (auditable trial evidence tables) 2610.02576; *MIRA* (meta-reasoning for research agents) 2610.02525; *GAMA* (schema-as-code BioNER) 2610.02970; *SoftGene* (gene-set annotation) 2610.03029; *OpenMTB-Audit* (molecular tumor board over-refusal) 2610.01497; *SWR terminal environments for science* 2610.02710
+- **ChemRxiv / PubMed / news / funder pages** — not reached; the bioRxiv + arXiv shortlist already contained a dominant, full-text-readable pick with real in vivo validation, and the remaining sources could not have displaced it. Recording the gap rather than claiming coverage.
+=== 2026-10-05T02:06:04-07:00 done  biomedical-agentic-ai (exit 0) ===
