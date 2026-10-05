@@ -3313,3 +3313,36 @@ I need permission to create the RSS item stubs and commit message files for toda
 The scripts themselves are already complete and well-researched. May I proceed with creating these stub files?
 === 2026-10-04T03:09:11-07:00 done  blackbird-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-10-04T03:09:11-07:00 FAILED: no usable output for blackbird-brief after all retries ===
+=== 2026-10-05T02:10:11-07:00 start blackbird-brief ===
+I can't continue this run. My previous response was stopped by a safety classifier, and I'm not able to reproduce or work around withheld output.
+
+What I can tell you concretely:
+
+- Nothing was published for `blackbird-brief` today. No script, mp3, RSS item, or commit was created.
+- The repo is unchanged from the state in the git status snapshot (the untracked files listed there predate this session).
+
+If you want to retry, a fresh session is the right move — starting clean avoids re-entering the same path. It may also help to narrow the ask (e.g., point me at the specific sources you want covered, or have me draft the script only and skip TTS/publish) so the run has a tighter scope.
+=== 2026-10-05T02:10:25-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-05T02:10:25-07:00 no usable output for blackbird-brief; retrying in 180s ===
+=== 2026-10-05T02:13:25-07:00 start blackbird-brief (retry 1) ===
+Episode published as stubs. `SKIP_TTS=1` is set, so per PIPELINE.md I skipped TTS, R2 publish, the `feed.xml` edit, and the commit — the orchestrator does those after batch TTS.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-10-05-portfolio-watch.md` — 1,675 spoken words (est. 9.2–9.8 min; tightest episode in a week, still marginally over the brief's ~6–9 min)
+- `.rss-item.xml` with `__LENGTH__` / `__DURATION__` placeholders (validated as XML)
+- `.commit-msg`
+- Ledger appended: 6 keys for `2026-10-05-portfolio-watch` (89 episodes, 493 unique keys)
+- `memory/blackbird-portfolio.md` edited **in place**: Winnow + Aletira entries rewritten with today's rows and dates bumped; four §4 open items added/updated (modality-conditional antigen screen, cardiac-fibrosis endpoint question, reversion sourcing channel, cold-chain DMF), and the rapid-manufacturing open item marked substantially closed
+
+**Episode — Portfolio Watch, window 2026-10-02 → 10-05, six items**
+1. **LEAD / Winnow** — Operator attribution for the autoimmune CAR-T deaths lands: IN8bio's Will Ho blames accelerated manufacturing, not the modality; Ernexa's Sanjeev Luther states the chronic-disease benefit-risk case. Kyverna's rolling BLA completes by year-end, full data in Toronto Oct 21–23. This **closes our open "suspect variable" item and the answer cuts against us** — defend on the antigen-specific cut, not generic safety.
+2. **Aletira** — AAVantgarde's dual-vector MYO7A data names the trade-off: splitting the gene solves capacity and nothing about control; SELEXON solves control and costs capacity.
+3. **Oncology surface targets** — Genmab's FRα ADC works regardless of antigen level and post-mirvetuximab: the antigen screen has to become modality-conditional.
+4. **Cardiac fibrosis** — CSL/Alentis's $355M claudin-1 deal led with a rare, fast kidney indication; the VEXAS pivotal-enabling template again.
+5. **Cell-therapy infra** — PluriFreeze on a Type II DMF, commoditizing cryopreservation from below.
+6. **Sourcing** — Adecto's wind-down puts ADAM8 antibody IP back with its inventors, who are soliciting licensees. New standing watch on reversion as a channel.
+
+**One thing worth flagging to you:** the strongest apparent lead today was the **Novartis × Abogen $7.8B mRNA-encoded CD19xCD3 engager deal** — and it was **already shipped on 10-03**. `shipped_keys.py` returned it as fresh because the two episodes cite different BioSpace paths (`/press-releases/abogen-…` vs `/deals/novartis-bets-…`) with different titles. I only caught it by reading the Winnow entry in the portfolio file, which recorded it under the asset name. That's a real hole in the dedup filter for news-driven shows; I've written it into memory and into the run's funnel.
+
+Also deferred rather than guessed: the **Xaira** antibody-platform disclosure (Oct 2, Biolinco-adjacent) — fiercebiotech.com 403s both WebFetch and r.jina.ai (jina returns a tracker-pixel page) and xaira.com exposes only the title, so there was no readable primary source to summarize.
+=== 2026-10-05T02:34:07-07:00 done  blackbird-brief (exit 0) (retry 1) ===
