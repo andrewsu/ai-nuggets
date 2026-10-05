@@ -5076,3 +5076,33 @@ Shortlist (✓ = used):
 
 I also added a note to the weekend-news memory: EADV actually ran through Saturday Oct 3 (the 10-03 episode said it ended Friday), the Dermatology Times conference index worked as a source, and company congress slide decks can hold details their press releases leave out.
 === 2026-10-04T02:36:36-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-05T02:20:11-07:00 start calibr-briefing ===
+Both episodes are written as stubs. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote scripts plus `.rss-item.xml` / `.commit-msg` stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-10-05-pharma-headlines.txt` (1,493 words) + both stubs
+- `2026-10-05-csl-alentis-claudin-1-lixudebart-spotlight.txt` (1,607 words) + both stubs
+
+Both RSS stubs parse as XML and retain `__LENGTH__` / `__DURATION__`.
+
+**Spotlight thesis:** CSL paid $355M upfront, took *no* development milestones and gave away 45% of global profits for a Phase 2 antibody — because on 6 August the European Commission revoked its Tavneos (avacopan) authorisation across the EU/EEA under an Article 20 procedure over ADVOCATE data handling. CSL Vifor kept the vasculitis commercial channel and lost the product in Europe. Lixudebart targets *exposed*, non-junctional claudin-1, which is mechanistically orthogonal to everything used in AAV-RPGN today. The caveat drawn out: the public package is a January 2025 topline on 26 patients with no effect sizes and no placebo comparison, and the Phase 3's real problem is a control arm whose eGFR recovers on its own.
+
+**Candidate funnel**
+
+Sources scanned: Endpoints RSS (24 items, dated) · Fierce Biotech + Fierce Pharma front pages (ld+json, ~22) · BioSpace /press-releases (~32) + front page (~25 dated) · GEN (~14) · Clinical Trials Arena (~38). **BioPharma Dive front page — HTTP 403 to curl, skipped.** **Fierce article pages — 403 to curl *and* a Cloudflare challenge via r.jina.ai**, so the Adecto shutdown item was dropped for lack of readable text.
+
+Shortlist after discarding stale and already-shipped items:
+- **CHOSEN (lead + spotlight)** — CSL/Alentis lixudebart, $355M upfront — biospace.com/press-releases/csl-and-alentis-announce-global-partnership…
+- **CHOSEN** — Genmab Rina-S RAINFOL-01 Part C, 45.9% ORR — clinicaltrialsarena.com/news/genmab-rina-s-data-ovarian-cancer/
+- **CHOSEN** — Novo denecimig BLA review extended on plant remediation — biospace.com/press-releases/novo-provides-update-on-the-denecimig…
+- **CHOSEN** — Agenus BOT+BAL 48% 3-yr OS, IGCS — biospace.com/press-releases/agenus-reports-48-estimated-three-year-survival…
+- **CHOSEN** — autoimmune CAR T risk/benefit as Kyverna nears filing — biospace.com/drug-development/weighing-the-risks-of-car-t-in-autoimmune-disease…
+- **CHOSEN** — Roivant/Priovant Lisraya launch (+ Foresite-backed Abcuro context) — biospace.com/drug-development/roivant-the-inveterate-drug-hunters-enters-commercial-era-with-lisraya
+- **CHOSEN** — AAVantgarde LUCE-1 dual-AAV MYO7A, EURetina — biospace.com/press-releases/aavantgarde-presents-encouraging-clinical-data…
+- **CHOSEN (quick hits)** — Mineralys lorundrostat at Kidney Week; Antengene Cos-TCE at SITC; Alligator Bioscience CEO change
+- Dropped, stale (GEN front page has no dates): Basecamp Research $140M Series C — `datePublished` 2026-09-23; Merck/SciBrunch KRAS G12D molecular glue — 09-29; Nektar $90M jury verdict — 09-27
+- Dropped, print-issue recency trap: *Virtual Biotech* multi-agent framework, Science — press coverage dated today but Crossref `published-online` is 2026-09-17
+- Dropped, already shipped: Aviceda, Bayer Ohio, FDA trial-modernization office, Lilly aesthetics, Summit/AZ, Kailera, Varda, Sarepta, Lilly eloralintide weight-loss data (all 10-01/10-03)
+
+I also appended a dated entry to the source-access memory: the GEN front page served two ~2-week-old articles at the top, so every GEN candidate now needs a `datePublished` check before drafting.
+=== 2026-10-05T02:30:46-07:00 done  calibr-briefing (exit 0) ===
