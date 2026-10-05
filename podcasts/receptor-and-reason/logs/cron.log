@@ -5204,3 +5204,24 @@ Two things worth flagging. First, a parallel notes pass over the same PDFs **cau
 
 Seven bioRxiv preprints stayed unreadable and are logged as deferrals, including the OrthoRep GPCR directed-evolution paper, which was the strongest unread candidate.
 === 2026-10-04T03:07:48-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-05T02:50:12-07:00 start receptor-and-reason ===
+Episode written. Three stub files in place; no TTS, publish, feed edit, or commit, per `SKIP_TTS=1`.
+
+**Script:** `podcasts/receptor-and-reason/scripts/2026-10-05-receptor-and-reason.md` — 9 items, ~3,274 spoken words (~17.5–19 min). All 9 full texts read; all 9 paper URLs return 200; ledger appended (136 episodes).
+
+**Candidate funnel**
+
+- **bioRxiv/medRxiv details API** — healthy. 1,425 bioRxiv + 384 medRxiv v1 records swept day-by-day 09-28→10-05; 987 keyword-relevant → 76 after CNS/pharma/agentic title filter.
+- **arXiv** — live 6×400 paged query, 2,400 entries over 09-27→10-02, zero 429s (shared `/tmp` cache again held only 500). 1,221 loose hits → 63 on a title-level filter.
+- **Journals** — Nature RSS 200 for npp/mp/tp/nature/nm/neuro/natmachintell/npjdigitalmed/nbt/nrd/ncomms; Crossref `from-created-date` by ISSN for 15 journals. 262 items.
+- **Dedup:** 264 candidates → 228 fresh (27 shipped, 9 title matches).
+- **Source failure:** bioRxiv full text was the binding constraint. Direct curl was a 17-byte 429 on every attempt all run; `r.jina.ai` worked for ~15 documents then degraded to Cloudflare stubs. medRxiv stayed 100% readable. 8 dedup-clean bioRxiv preprints are deferred, not dropped (α-synuclein in PD grafts, insect IR cryo-EM, BI-TfR1 capsid, and five more — logged to memory).
+
+**Shipped:** Prozac/Cochrane zombie trial · LLM longitudinal belief updating · DSM-5 criteria extraction vs chain-of-thought · long-horizon clinical context strategies · fNIRS + lipidomics in MDD · HERO/OrthoRep opioid-GPCR evolution · microglial D1R pruning + social isolation · MARCO · language-region twin study.
+
+Two things worth flagging:
+
+1. **I caught a serious error late.** I built the first roster by reading the relevance filter's printed output rather than the dedup filter's `fresh.tsv`, and the mandatory final re-filter came back 4 fresh out of 9 — five items (AutoBCI, T1R2/T1R3, nimacimab/CB1, the D1R PAM, the FEP microstate paper) had already shipped between 09-29 and 10-02. I discarded that complete draft, rebuilt from `fresh.tsv`, refetched, and rewrote. Final roster re-verified 9/9 clean. This is the third run this exact mistake has occurred, so I strengthened the memory with a mechanical fix.
+
+2. **Two independent notes passes materially changed the copy** — including corrections I'd otherwise have shipped as fact: HERO's gains are folding/expression rather than binding and its reward-hacking fix fails again by passage 10; the fNIRS paper's own cross-validated R² (0.39–0.44) contradicts its regressions (0.62–0.64) through post-selection inference. I also nearly dropped an in-window RCT on a fake date — jina's `Published Time` header for nature.com is a cache artifact, identical across three different articles.
+=== 2026-10-05T03:19:32-07:00 done  receptor-and-reason (exit 0) ===
