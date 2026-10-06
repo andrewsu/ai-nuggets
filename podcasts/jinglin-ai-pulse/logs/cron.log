@@ -3553,3 +3553,36 @@ Per SKIP_TTS mode, I'm done: the script, RSS stub, and commit-msg stub are writt
 
 Script: `podcasts/jinglin-ai-pulse/scripts/2026-10-05-the-smallest-thing-you-have-to-trust.md` (1,691 words, ~11 min).
 === 2026-10-05T02:44:10-07:00 done  jinglin-ai-pulse (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-10-06T02:30:11-07:00 start jinglin-ai-pulse ===
+Today's episode script and both stub files are written. `SKIP_TTS=1` was set, so I didn't run TTS, upload to R2, edit `feed.xml` or commit; `publish_pending.py` handles those after the batch TTS job.
+
+**Episode:** `podcasts/jinglin-ai-pulse/scripts/2026-10-06-where-the-checker-runs-out.md`, 1,851 words, about 10 minutes. Next to it are `.rss-item.xml` (XML validated, with `__LENGTH__`/`__DURATION__` placeholders) and `.commit-msg`.
+
+**Theme:** AI improves quickly wherever its work can be checked cheaply. Each story shows where that check stops: making the material, judging the math, unstructured factory work, a robot's new body.
+- **Twitter Pulse:** Vals AI's Opus 5.5 agents and the two magnetic semiconductor candidates, with the skeptical Hacker News reaction. Jeremy Avigad's essay on Terence Tao's blog. Brief items on Google pausing its open-source bug bounty and Wikimedia's audit of the rogue OpenAI agents.
+- **Money Moves:** Reflection AI launches Beam ($4.7B raised, $25B valuation). RobCo passes a $1B valuation.
+- **Deep Cut:** Keerthana Gopalakrishnan of Google DeepMind on The Cognitive Revolution, quoted from the published transcript.
+
+**Candidate funnel — 2026-10-06**
+- **X/Twitter:** still unreadable from this host. I used Hacker News plus Latent Space's AINews digest (which covers about 544 X accounts) instead.
+- **Hacker News** (Algolia, last 60h, more than 80 points): 77 stories scanned, about 14 survived the AI filter.
+  - **Chosen:** Vals AI magnets — https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors
+  - **Chosen:** Avigad, "The Future of Mathematics" — https://terrytao.wordpress.com/2026/10/05/the-future-of-mathematics/
+  - **Chosen:** Beam — https://reflection.ai/blog/introducing-beam
+  - **Chosen (brief):** Wikimedia audit of rogue agents — https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/
+  - **Chosen:** RobCo $1B — https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/
+  - Not used: Anthropic reported a user's diary entry to police (techspot; 725 points, off-theme). Strata/Qwen and Simon Willison's budget caps (both already shipped). Cloudflare Web Search API. ChatGPT adding cartoonists' signatures to fake New Yorker cartoons. Dust, pretraining without backprop. "Religious scholars met with Anthropic" (a Sept 29 NYT story, past the 48h window).
+- **TechCrunch AI and Venture RSS:** 38 items scanned.
+  - **Chosen (brief):** Google bug bounty pause — https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/
+  - **Chosen (funding context):** TechCrunch on Beam.
+  - Not used: Factory/Khosla/Menlo (VC drama), a Chinese AI "agent fleet", ChatGPT text watermarking in the EU, Ghost's $11M round.
+  - The Tech Funding News sidebar also listed Hadrian's $40M round (not used).
+- **Funding web search:** thin; only generic roundups came back.
+- **Podcasts** (RSS feeds for Latent Space, Dwarkesh, Cognitive Revolution, No Priors, MLST, Interconnects, TWIML, Gradient Dissent):
+  - **Chosen:** Cognitive Revolution with Keerthana Gopalakrishnan (Oct 3) — https://www.cognitiverevolution.ai/one-brain-any-body-google-deepmind-s-keerthana-on-gemini-robotics-2-cross-embodiment-humanoids
+  - Deferred: TWIML #778 with Greg Burnham (Sep 29). It fit the theme, but there's no transcript on the page and YouTube captions come back empty.
+  - Not used: MLST episodes with de Moura and Jiang (already shipped) and Shawn Wen. Latent Space's Airbnb episode. Fractile on No Priors. Dwarkesh's latest is off-topic history.
+- **Source failures:** TWIML/YouTube transcript route returned 0 bytes. A first techspot fetch 404'd because I'd cut the URL short; the full URL worked.
+
+I also saved a memory note: Cognitive Revolution pages carry full transcripts, and YouTube captions don't work from this host.
+=== 2026-10-06T02:37:06-07:00 done  jinglin-ai-pulse (exit 0) ===

@@ -1,0 +1,6 @@
+Script body: 11099 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2377 chars) -> 99.8s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2987 chars) -> 138.9s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2878 chars) -> 153.9s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (2854 chars) -> 140.9s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-10-06-where-the-checker-runs-out.mp3 [mistral] 4,685,575 bytes, 585.7s
