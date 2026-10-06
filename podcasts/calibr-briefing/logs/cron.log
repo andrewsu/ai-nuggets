@@ -5106,3 +5106,46 @@ Shortlist after discarding stale and already-shipped items:
 
 I also appended a dated entry to the source-access memory: the GEN front page served two ~2-week-old articles at the top, so every GEN candidate now needs a `datePublished` check before drafting.
 === 2026-10-05T02:30:46-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-06T02:20:10-07:00 start calibr-briefing ===
+Both episodes for today are written, and their feed and commit stubs are in place. Because `SKIP_TTS=1` was set, I did not generate audio, publish, edit `feed.xml` or commit; the batch job does those steps.
+
+**Files** in `podcasts/calibr-briefing/scripts/`:
+- `2026-10-06-pharma-headlines.txt` (1,524 words), with its `.rss-item.xml` and `.commit-msg`
+- `2026-10-06-vaxcyte-vax-31-opus-1-spotlight.txt` (1,683 words), with its `.rss-item.xml` and `.commit-msg`
+- Both RSS items parse as XML once wrapped in the iTunes namespace.
+
+**Spotlight: Vaxcyte VAX-31, OPUS-1 Phase 3.** I read the primary source in full: the 8-K Exhibit 99.1 topline release, fetched from SEC EDGAR through r.jina.ai. Analyst quotes (Mizuho's Salim Syed, Leerink's David Risinger) come from BioPharma Dive and BioSpace. Pfizer's 35-valent adult plan comes from its May 2026 release.
+
+**No Foresite tie-ins today.** I couldn't confirm a Foresite portfolio link for any item, so the episodes don't claim one.
+
+**Candidate funnel**
+- **Endpoints RSS:** 12 items scanned, 6 in the window.
+- **Fierce Biotech:** front page 10 headlines, 5 relevant; article pages 403'd, so I sourced those stories elsewhere.
+- **Fierce Pharma:** 403.
+- **BioPharma Dive:** 30 headlines, 4 in the window.
+- **BioSpace:** about 30 press releases, 6 relevant; plus about 60 front-page stories, 4 relevant.
+- **Clinical Trials Arena:** 40 scanned, 1 fresh (others stale or already covered).
+- **GEN:** stale items only.
+- **STAT:** 2 in the window.
+- **Dropped as already shipped:** Jaypirca, Foghorn, tulisokibart, CSL/Alentis, Kyverna.
+
+**Shortlist** (spotlight ★, all items below ran in headlines)
+- ★ Vaxcyte VAX-31 OPUS-1 — https://www.sec.gov/Archives/edgar/data/0001649094/000119312526413168/d21202dex991.htm
+- Shionogi buys IntraBio for $2B — https://www.biopharmadive.com/news/shionogi-pays-2b-to-acquire-a-rare-disease-startup/832103/
+- Genentech licenses Alector's AL050 — https://www.biospace.com/deals/genentech-pens-1-27b-deal-to-access-alectors-preclinical-blood-brain-barrier-asset
+- Genentech AI head Richard Bonneau leaves — https://endpoints.news/exclusive-genentech-ai-leader-richard-bonneau-leaves-pharma-in-latest-exit/
+- Lilly expands its Gate Bioscience deal — https://www.biospace.com/business/lilly-doubles-down-on-gate-alliance-to-unlock-new-drug-class-with-another-870m-in-biobucks
+- FDA clears Motivista (CT-155) — https://www.biospace.com/press-releases/fda-clears-motivista-ct-155-the-first-authorized-treatment-for-negative-schizophrenia-symptoms
+- Leerink downgrades Bristol Myers — https://endpoints.news/senior-leerink-analyst-downgrades-bristol-myers-citing-pipeline-fears/
+- TRexBio, Retension and Lycia IPOs — https://endpoints.news/lycia-seeks-ipo-for-antibody-degrader-work-as-trexbio-retension-forge-ahead/
+- Quick hits:
+  - Spyre $350M offering — https://www.biospace.com/press-releases/spyre-therapeutics-announces-pricing-of-350-0-million-public-offering-of-common-stock-october-5-2026
+  - AstraZeneca Kendall Square R&D center — https://www.biospace.com/press-releases/astrazeneca-opens-new-global-strategic-r-d-center-in-kendall-square-cambridge-massachusetts
+  - ORIC hands its CIP2A program to Cancer Research UK — https://www.biospace.com/press-releases/oric-pharmaceuticals-announces-agreement-with-cancer-research-uk-to-advance-a-potential-first-in-class-cip2a-targeted-therapy-into-clinical-development
+  - Nobel Prize for optogenetics (covered in the BioPharma Dive roundup) — https://www.biopharmadive.com/news/nobel-optogenetics-roche-alector-csl-alentis-jaypirca-bayer/832083/
+  - Gilbert Welch's STAT op-ed against GRAIL's Galleri test — https://www.statnews.com/2026/10/06/grail-multi-cancer-screening-test-criticism/
+
+**Things you may want to know**
+- Leftover 09-15 and 09-29 stub files (`.rss-item.xml` and `.commit-msg`) are still sitting untracked in this show's `scripts/` folder. I left them alone.
+- I added a dated note to the source-access memory file: SEC EDGAR filings can be read through r.jina.ai, which corrects the older note that said EDGAR was unreachable.
+=== 2026-10-06T02:28:24-07:00 done  calibr-briefing (exit 0) ===

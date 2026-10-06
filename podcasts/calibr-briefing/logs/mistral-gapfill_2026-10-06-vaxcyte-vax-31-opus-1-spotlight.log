@@ -1,0 +1,6 @@
+Script body: 11119 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2830 chars) -> 155.7s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2967 chars) -> 137.3s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2930 chars) -> 136.3s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (2389 chars) -> 113.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-10-06-vaxcyte-vax-31-opus-1-spotlight.mp3 [mistral] 4,663,423 bytes, 582.9s
