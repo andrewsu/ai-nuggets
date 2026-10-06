@@ -1,0 +1,4 @@
+Script body: 4166 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2967 chars) -> 146.2s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (1198 chars) -> 61.6s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-10-06-epcoritamab-r-chop-epcore-dlbcl-2-frontline-pfs-win.mp3 [mistral] 1,824,644 bytes, 228.0s
