@@ -5245,3 +5245,35 @@ The editorial spine is the HPV generalization test: with no HPV antigens or anti
   - *FD-SCoPE* (auditable trial evidence tables) 2610.02576; *MIRA* (meta-reasoning for research agents) 2610.02525; *GAMA* (schema-as-code BioNER) 2610.02970; *SoftGene* (gene-set annotation) 2610.03029; *OpenMTB-Audit* (molecular tumor board over-refusal) 2610.01497; *SWR terminal environments for science* 2610.02710
 - **ChemRxiv / PubMed / news / funder pages** — not reached; the bioRxiv + arXiv shortlist already contained a dominant, full-text-readable pick with real in vivo validation, and the remaining sources could not have displaced it. Recording the gap rather than claiming coverage.
 === 2026-10-05T02:06:04-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-06T02:00:10-07:00 start biomedical-agentic-ai ===
+I wrote today's episode on a Carnegie Mellon arXiv paper (2610.04915) asking whether AI-scientist benchmarks measure analysis or just what the model already knows. Because `SKIP_TTS=1` is set, I only wrote the script and the two stub files. I did not run TTS, publish to R2, edit `feed.xml` or commit; the batch publisher does those.
+
+- **Script:** `podcasts/biomedical-agentic-ai/scripts/2026-10-06-evidence-grounded-accuracy-agents-answer-without-the-data.md`, 990 spoken words (cap is 1,150). I read the full paper first.
+- **Stubs:** `.rss-item.xml` (parses as valid XML) and `.commit-msg`, in the same folder.
+- **Title:** "Evidence-grounded accuracy — AI scientists that ace single-cell benchmarks without needing the data"
+
+**Why this pick:** the authors edited the data behind each benchmark question in two ways, deleting the evidence or moving it to a different answer. Claude agents scored 95% with the data and 83% with no data at all. Counting only answers that followed the edited evidence, they fell to 41%, and the agent ranking inverted. Hiding gene names showed the agents' prior knowledge overriding analysis they could actually do. The benchmark scores and LLM judges rewarded runs that ignored the moved evidence about nine times in ten.
+
+**Candidate funnel**
+- **bioRxiv** (details API, 10-02 to 10-06, version 1 only): 507 records scanned, 13 keyword hits, 2 relevant after discarding false matches. 507 is well below the usual 800–1,400; every page came back without errors, so it looks like a light week rather than a failure.
+- **arXiv** (shared cache, 500 entries): covers only 10-03 to 10-05 because of the cache cap; about 12 on-target.
+- **PubMed** (entries added 10-01 to 10-06): 12 results, none stronger.
+- **News:** nothing new about biomedical agents in the last 3 days.
+- **Funders:** ARPA-H's newest item is a 10-01 clinical-AI-for-cardiovascular-care launch, outside the 3-day window and not agentic research. The NIH news page returned only a 5 KB stub with no dates, so I couldn't check it.
+- **ChemRxiv:** I did not search it.
+
+**Shortlist**
+- **CHOSEN** — Are We Measuring Scientific Intelligence? (evidence-grounded accuracy) — https://arxiv.org/abs/2610.04915 — full PDF read
+- From Benchmark to Bench / MAGI (agent tested on nine past drug-optimization projects from three pharma companies) — https://arxiv.org/abs/2610.06411 — full PDF fetched; runner-up
+- Agentic discovery of a blood biomarker from distilled private health records (Clalit) — https://arxiv.org/abs/2610.04749
+- APOD, agentic population ODE discovery for pharmacology — https://arxiv.org/abs/2610.06227
+- MedicalHarness — https://arxiv.org/abs/2610.05778
+- MechHypoBench — https://arxiv.org/abs/2610.05197
+- MM-KG, patient evidence linked to biomedical knowledge graphs — https://arxiv.org/abs/2610.06685
+- Ontology-overlap reward for clinical question answering — https://arxiv.org/abs/2610.06360
+- Verification Debt in Automated Biological Research Workflows (bioRxiv) — https://www.biorxiv.org/content/10.64898/2026.09.29.755250v1 — abstract only; a qualitative Biomni case study, weaker
+- Developmental neurotoxicity prediction with AOP reasoning (bioRxiv) — https://www.biorxiv.org/content/10.64898/2026.09.28.755098v1
+- BioGAIP multi-agent bioinformatics (J Genet Genomics, PMID 42829197) and Data-reflector (JAMIA Open, PMID 42825291)
+
+**Still open:** iCloudBiofoundry and @fUS were not re-checked today. I added MAGI and the other unshipped arXiv picks to the memory note on deferred picks so a thin day later this week can use them.
+=== 2026-10-06T02:04:23-07:00 done  biomedical-agentic-ai (exit 0) ===
