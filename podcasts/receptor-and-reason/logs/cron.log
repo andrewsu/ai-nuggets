@@ -5225,3 +5225,29 @@ Two things worth flagging:
 
 2. **Two independent notes passes materially changed the copy** — including corrections I'd otherwise have shipped as fact: HERO's gains are folding/expression rather than binding and its reward-hacking fix fails again by passage 10; the fNIRS paper's own cross-validated R² (0.39–0.44) contradicts its regressions (0.62–0.64) through post-selection inference. I also nearly dropped an in-window RCT on a fake date — jina's `Published Time` header for nature.com is a cache artifact, identical across three different articles.
 === 2026-10-05T03:19:32-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-06T02:50:11-07:00 start receptor-and-reason ===
+Episode written and staged in SKIP_TTS stub mode (no TTS, no R2 publish, no feed edit, no commit — the orchestrator does those).
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-10-06-receptor-and-reason.md` — 3,440 words, ≈18.9 min spoken, 11 items
+- `…2026-10-06-receptor-and-reason.rss-item.xml` (validates with the `itunes:` namespace; no unescaped ampersands)
+- `…2026-10-06-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, now 137 episodes / 1,411 unique keys
+
+**Candidate funnel**
+
+| Source | Scanned | Survived filter |
+|---|---|---|
+| bioRxiv + medRxiv details API (day-by-day, 09-29→10-06) | 1,844 records, 1,803 unique v1 in-window | 206 → 25 shortlisted |
+| arXiv live 6×400 paged query (cs.AI/CL/MA, q-bio.QM/NC) | 2,400 unique | 138 in-window relevant |
+| Crossref by ISSN (Biol Psych, CNNI, PNPBP, Neuropharm, CPT, CPT:PSP, DDT, Cell Systems, Brief Bioinf, IJNP) | 72 | 21 |
+| Nature RSS (npp, mp, nbt, npjdigitalmed) | 28 | 7 |
+
+Dedup: 185 candidates → 164 fresh (21 already shipped). Final roster re-filtered: all 11 still fresh.
+
+**Source failures:** none transient. But Nature-family articles fetched as *reference lists only* — ~45 KB with no prose body, which passes both the byte-count and paywall-string checks. Three otherwise-eligible journal picks were dropped under the full-text gate, including an MP psychedelics/disorders-of-consciousness review that would have paired with the opener. Logged to memory as a new failure mode, with the three deferred for a later day. IJNP returned zero.
+
+**Chosen (all full-text read):** psychedelics restructure the global workspace *(lead)*; psilocybin in refractory OCD; placebo-arm schizophrenia relapse asymmetry; human habenula spatiomolecular map; Dravet locus coeruleus/GANE dissociation; MAGI on nine industrial campaigns; APOD pharmacological digital twins; Clalit distilled biomarker scorer; verification debt in Biomni; LangPatch; MEG-Mamba.
+
+Two things worth flagging in the editorial: the unifying thread (the instrumented layer isn't the limiting layer) emerged from the papers rather than being imposed, and three of the computational picks are notable for arguing *against* their own agentic framing — MAGI's ceiling is its scorers, and the Clalit gain vanishes under a random-tool control.
+=== 2026-10-06T03:06:24-07:00 done  receptor-and-reason (exit 0) ===
