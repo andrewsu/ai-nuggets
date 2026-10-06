@@ -753,7 +753,7 @@ projects. News touching any of them is portfolio-relevant on the investment,
 even where the company has no detail entry in this file yet.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-09-19_
+_Last update: 2026-10-06_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases · cancer (Blackbird funded the **Intergalactic Center for
@@ -1136,6 +1136,8 @@ co-invested behind a real institutional lead in a PRECLINICAL company. That is t
 and it closed because the team had ONE ION-CHANNEL EXIT ALREADY. QUESTION FOR EACH THEME: which Venture Partner's network holds a repeat
 founder with a relevant exit, and are we recruiting that person BEFORE the science is ready rather than after?** Source:
 https://biobuzz.io/news/charlottesvilles-navion-neurosciences-raises-10-8-million-to-build-precision-medicines-for-misfiring-neurons/
+
+**PARKINSON'S theme — A PRECLINICAL ASSET GOT $100M UP FRONT BECAUSE ITS PATIENT IS FOUND BY GENOTYPE AND ITS DEFECT IS MEASURABLE; THE SELLER KEPT THE PLATFORM (added 2026-10-06 Portfolio Watch item 2; announced 2026-10-05).** **Alector → Genentech: AL050**, engineered GCase (higher activity, longer half-life) on Alector's **Brain Carrier**, preclinical, GBA1-carrier-weighted GCase deficiency. **$100M upfront + up to $1.17B milestones + royalties; Alector RETAINS the carrier platform.** Alector context: GSK collab terminated, PROGRESS-AD futility, ~$245M market cap. **⇒ (Anthony + Jon) screen = findable patient + measurable defect (answers the 09-08 rule); Roche owns its own Brainshuttle (trontinemab) ⇒ inference it paid for enzyme + population; ⇒ structure: license the asset, keep the chassis (GPR52 NewCo, Aletira SELEXON).** Source: https://endpoints.news/roche-enlists-alector-in-parkinsons-deal-paying-100m-upfront/
 
 **PARKINSON'S theme — A VENTURE STUDIO SIDESTEPPED THE WHOLE 09-08 CONSTRAINT BY PICKING A *SYMPTOM DOMAIN* NOBODY TREATS, AND ITS
 SOURCING CHANNEL IS A COMPOUND WITH NO OWNER (added 2026-09-22 Portfolio Watch item 2; announced 2026-09-18).**
@@ -2415,7 +2417,11 @@ _Last update: 2026-08-28_
   it. KRAS-landscape news is no longer portfolio-relevant on aSKY's account
   (Clasp remains a live KRAS-adjacent holding).
 ### Neuropsychiatric NewCo (schizophrenia) — Lieber Institute + Third Rock ✅
-_Last update: 2026-09-30_
+_Last update: 2026-10-06_
+- **THE FIRST FDA-AUTHORIZED NEGATIVE-SYMPTOM TREATMENT IS SOFTWARE — FIX THE DECK SENTENCE, ADOPT THE ENDPOINT, RE-RANK BOEHRINGER (added 2026-10-06 Portfolio Watch LEAD; cleared 2026-10-05).**
+  **Click Therapeutics' Motivista (CT-155 / BI 3972080), FDA 510(k)**, adjunct for negative symptoms in adults with stable positive symptoms. **CONVOKE Ph3** (*JAMA Netw Open* 2026;9:e2635753, n=457, 66 US sites, 16 wk vs digital control): **CAINS-MAP −6.8 vs −4.2, Δ −2.6, Cohen's d −0.36**. Boehringer co-developed, then **2026-04-09 handed all commercial/MA rights to Click + $50M Series D**.
+  **⇒ (Hemaka + Maisha) deck line becomes "no PHARMACOLOGICAL treatment"; ⇒ CAINS-MAP is the named instrument and d≈0.36 the bar for any GPR52 negative-symptom claim (caveat: CDRH device precedent, not CDER); ⇒ (Eddie) Boehringer DOWN the bidder list — iclepertin Ph3 fail + declined NXE'149 option + offloaded its one marketed schizophrenia product; ⇒ protocol must take a stance on background digital therapy. Maryland site: co-author Faith Dickerson, Sheppard Pratt (Towson).**
+  Sources: https://www.biospace.com/press-releases/fda-clears-motivista-ct-155-the-first-authorized-treatment-for-negative-schizophrenia-symptoms · https://www.biospace.com/press-releases/click-therapeutics-and-boehringer-ingelheim-announce-series-d-investment-and-funding-to-advance-commercialization-of-ct-155
 - **THE 09-28 LUNDBECK ACTION GETS A SECOND, INDEPENDENT CONFIRMATION IN 48 HOURS — THE SAME BIDDER IS REBUILDING ITS *DATA* FUNCTION AS WELL AS
   ITS LOCATION (added 2026-09-30, off Portfolio Watch item 5; announced 2026-09-29).** **Lundbeck is a FOUNDING MEMBER of the Ginkgo Datapoints ×
   Apheris Antibody Developability Consortium** (AbbVie, argenx, Lundbeck, Takeda; 10,000 antibodies, federated foundation model, dataset to
@@ -4650,6 +4656,8 @@ _Last update: 2026-09-29_
   readout into a first-in-human design. Dax Fu + Shumei Yun added to tracked PI/founder list.
 
 ### Islex Therapeutics, LLC (Baltimore) — JHU spinout, disease-modifying T1D, tracked-company for Chief Business Officer first-read ⚠
+_Last update: 2026-10-06_
+- **COMPETITOR IN THE CLINIC IN ISLEX'S POPULATION (added 2026-10-06 Portfolio Watch item 3; announced 2026-10-05).** **Zag Bio (Cambridge MA) ZAG-101** — bifunctional antibody delivering an **insulin-derived antigen to thymic APCs** to make antigen-specific thymic Tregs (claims tissue-specific bystander suppression). **LANTERN Ph1b/2a: adults with STAGE 3 T1D, SAD+MAD, IV+SC, C-peptide + immune assays;** adolescents and earlier stages later. **⇒ Islex pitch moves from "first" to "different antigen (ZnT8), different mechanism"; Zag validates Stage 3 + C-peptide as the entry design.** Source: https://www.biospace.com/press-releases/zag-bio-advances-zag-101-into-clinical-development-for-type-1-diabetes
 - **Profile.** Baltimore-based JHU spinout, founded 2023; CEO & co-founder **Shumei Yun**
   (co-author on the Fu-lab ZnT8 papers, Islex affiliation on the 2026 *Diabetes* paper). Platform
   = re-engineered ZnT8 cell-surface autoantibodies (Fu lab, JHU Physiology, Pharmacology &
