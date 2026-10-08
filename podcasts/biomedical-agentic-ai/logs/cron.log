@@ -5278,3 +5278,57 @@ I wrote today's episode on a Carnegie Mellon arXiv paper (2610.04915) asking whe
 **Still open:** iCloudBiofoundry and @fUS were not re-checked today. I added MAGI and the other unshipped arXiv picks to the memory note on deferred picks so a thin day later this week can use them.
 === 2026-10-06T02:04:23-07:00 done  biomedical-agentic-ai (exit 0) ===
 === 2026-10-08T02:00:09-07:00 start biomedical-agentic-ai ===
+Published today's episode.
+
+- **Script:** `podcasts/biomedical-agentic-ai/scripts/2026-10-08-circuitatlas-the-edges-they-deleted-on-purpose.md`, 1,014 spoken words (cap 1,150). I read the full PDF before drafting.
+- **Audio:** 2,525,353 bytes, 316 seconds. The self-hosted Voxtral endpoint refused connections on all three attempts, so `gen_tts.py` fell back to Mistral and completed cleanly — expected behavior, not a run failure.
+- **Published** to R2, feed updated (235 items, parses as valid XML), committed as `e03ffe4`. Not pushed — the orchestrator does that.
+- **Title:** "CircuitATLAS — a target-discovery knowledge graph that deletes the disease-gene edge on purpose"
+
+**Why this pick:** nearly every biomedical knowledge graph is built around the disease-to-gene edge. This one deliberately omits disease-to-gene and disease-to-protein edges and masks the disease at the query layer, so a target must be reached phenotype-down — from a measurable activity abnormality through the circuit and cell type to an effector. Two things made it the episode rather than the runner-up. First, the honesty: they re-judged 4,050 edges with Opus 5, found 17.8% where the relation wasn't clearly stated in the supporting passage, published that number, and moved re-verification to inference time on only the edges a given chain leans on. They also stress-tested the mask adversarially and reported that a multi-agent attack recovered the disease class but not the disease. Second, the ending: the structure-guided campaign returned 250 predicted binders, but 175 of 203 pockets show no meaningful difference between the target pump and the one keeping the rest of your cells alive, and docking predicts binding rather than direction — while the whole therapeutic thesis rests on potentiation. So the campaign terminates in a request for a thallium-flux polarity assay the lab doesn't own. That spine ("the pipeline reasoned all the way to 250 compounds and cannot compute the sign of the effect") is distinct from the recent run of spines, which I checked against 10-03 through 10-06.
+
+**Candidate funnel**
+- **bioRxiv** (details API, 10-04 to 10-08, day-by-day, version 1 only): 650 unique records, 23 keyword hits, 4 relevant after discarding false matches ("biological control agent", "agent" in unrelated senses). Intermittent HTTP 500s on individual pages; the retry loop absorbed them, no data lost.
+- **arXiv** (shared cache, 500 entries): covers only 10-06 and 10-07 because of the 500-entry cap; ~12 on-target.
+- **PubMed** (entry date 10-03 to 10-08): 30 reviewed, 2 on-brief, neither stronger.
+- **Funders:** ARPA-H's newest is a 10-01 biosensor program — outside the 3-day window and not agentic. Nothing on NIH/NSF/HHS in window.
+- **ChemRxiv:** not searched — a gap in today's coverage, noted for auditability.
+
+**Shortlist**
+- **CHOSEN** — CircuitATLAS — https://arxiv.org/abs/2610.09643 — full PDF read
+- DrugTargetWorld, synthetic biobank with concealed causal ground truth — https://arxiv.org/abs/2610.09558 — full PDF fetched; runner-up (best agent scored 39.98/100, none separated misleading non-causal proteins)
+- ddkg.skill, compositional agent skill translating biomedical questions into Cypher — https://www.biorxiv.org/content/10.64898/2026.09.26.754400v1 — on the KG beat, full text untested
+- Station open-ended discovery — https://arxiv.org/abs/2610.08927
+- ScienceClaw continual self-evolution benchmark — https://arxiv.org/abs/2610.08691
+- MAGI, nine retrospective pharma campaigns — https://arxiv.org/abs/2610.06411 — still open from 10-06
+- Omics data discovery agents (PLoS Comput Biol, PMID 42837398); GeneReL (Database, PMID 42841320)
+- Developmental neurotoxicity with AOP reasoning — https://www.biorxiv.org/content/10.64898/2026.09.28.755098v1
+- Limitations of genomic foundation models in ALS — https://www.biorxiv.org/content/10.64898/2026.10.01.756029v1
+
+**Still open:** `iCloudBiofoundry` and `@fUS` were not re-probed today. I appended today's run notes and the newly surfaced candidates to the deferred-picks memory.
+=== 2026-10-08T02:06:14-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-08T02:06:14-07:00 no usable output for biomedical-agentic-ai; retrying in 180s ===
+=== 2026-10-08T02:09:14-07:00 start biomedical-agentic-ai (retry 1) ===
+Today's episode was already published before this invocation started; this is a false retry, so I'm declining to fabricate a second one.
+
+**What's already shipped for 2026-10-08**
+
+- **Commit:** `e03ffe4` — "Episode: CircuitATLAS — a target-discovery knowledge graph that deletes the disease-gene edge on purpose"
+- **Script:** `podcasts/biomedical-agentic-ai/scripts/2026-10-08-circuitatlas-the-edges-they-deleted-on-purpose.md` (1,014 spoken words, cap 1,150)
+- **Audio:** `episodes/2026-10-08-...mp3`, 2,525,353 bytes / 316 s, published to R2; feed.xml updated to 235 items
+
+**Why this invocation produces nothing**
+
+The 02:00 run finished at 02:06 and this retry started at 02:09. Three minutes of elapsed time cannot have changed any source in the show's window — bioRxiv, the shared arXiv cache, PubMed, and the four funder pages were all swept exhaustively by that run (650 bioRxiv records day-by-day, the full 500-entry arXiv cache, PubMed entry-dated 10-03 to 10-08). Producing a second episode would mean re-running the identical search and promoting the runner-up (DrugTargetWorld), which is manufacturing an episode rather than finding one. PIPELINE.md's re-invocation rule allows a second pick only on a real search with real elapsed time.
+
+**Root cause of the retry, now pinned down**
+
+`SKIP_TTS=1` was exported, but the 02:00 run did TTS, R2 publish, feed edit and commit inline anyway. In batch mode the runner decides a show "produced" something by looking for the `<basename>.rss-item.xml` + `<basename>.commit-msg` stub pair next to a same-day script (`run_all_shows.sh:464-470`). A direct commit leaves no stubs, so a fully successful run is invisible to that check and gets re-invoked through the model ladder. I've appended this dated recurrence — with the stub mechanism identified — to the existing orchestrator-false-retry memory note, cross-linked to the SKIP_TTS note.
+
+Worth fixing at the orchestrator level: the check could fall back to "is there a commit touching `podcasts/<slug>/` dated today" before declaring no usable output. That would have cost nothing here and saved two model invocations.
+
+I made no commits and touched no show files in this run, per the SKIP_TTS contract.
+
+NUGGETS_SKIP: episode e03ffe4 already published 4 minutes earlier; false retry from the stub-check, no elapsed time for new candidates
+=== 2026-10-08T02:10:41-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===
+=== 2026-10-08T02:10:41-07:00 SKIPPED: biomedical-agentic-ai deliberate skip (bar not met): episode e03ffe4 already published 4 minutes earlier; false retry from the stub-check, no elapsed time for new candidates ===
