@@ -1,0 +1,6 @@
+Script body: 9613 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2985 chars) -> 142.6s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2948 chars) -> 146.0s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2983 chars) -> 138.1s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (694 chars) -> 32.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-10-08-biohub-virtual-cell-data-spotlight.mp3 [mistral] 4,040,664 bytes, 505.1s

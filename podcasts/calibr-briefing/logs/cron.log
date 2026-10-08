@@ -5149,3 +5149,52 @@ Both episodes for today are written, and their feed and commit stubs are in plac
 - Leftover 09-15 and 09-29 stub files (`.rss-item.xml` and `.commit-msg`) are still sitting untracked in this show's `scripts/` folder. I left them alone.
 - I added a dated note to the source-access memory file: SEC EDGAR filings can be read through r.jina.ai, which corrects the older note that said EDGAR was unreachable.
 === 2026-10-06T02:28:24-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-08T02:20:10-07:00 start calibr-briefing ===
+I wrote both Calibr episodes for Thursday, October 8. `SKIP_TTS=1` was set, so I made no audio, didn't touch `feed.xml` and made no commit. The nightly batch job will do those from the stub files.
+
+There was no October 7 episode, so this run covers news from Tuesday and Wednesday.
+
+**Files** (in `podcasts/calibr-briefing/scripts/`, each with its `.rss-item.xml` and `.commit-msg`; both RSS items parse as XML):
+- `2026-10-08-pharma-headlines.txt` (1,530 words)
+- `2026-10-08-biohub-virtual-cell-data-spotlight.txt` (1,513 words)
+
+**Spotlight: Biohub's $1.8B virtual-cell data initiative.** I read the full announcement on biohub.org and checked the background facts (Rives and EvolutionaryScale, Xaira's public Perturb-seq dataset, the 2025 Nature Methods result that deep models don't beat simple baselines). The argument is that the money pays for open data rather than models. That makes bulk perturbation data less of a moat for startups, while data tied to a company's own molecules and patients keeps its value. It ends with what this means for Xaira (Foresite Labs) and Calibr-Skaggs.
+- Much of the $1.8B is existing NIH data and Energy Department facility time, and the script says so.
+- One outlet reported that funders get a one-year exclusive data window. The Biohub release doesn't say this, so the script presents it as unconfirmed.
+
+**Foresite tie-in:** KymaThera's $80M Series B (led by Alta Partners) included Foresite Capital, per BioPharma Dive.
+
+**Candidate funnel**
+- **Endpoints RSS:** 24 items, 12 in the window. Articles are paywalled, so I used the one-line summaries.
+- **BioPharma Dive:** 31 headlines, 6 in the window; I read 5 articles in full.
+- **BioSpace:** about 35 press releases, 6 relevant (I read Zealand, Tukysa, Rhapsido and Rivercell in full); front page about 60 stories, 4 relevant.
+- **Clinical Trials Arena:** about 40 scanned, 3 fresh.
+- **GEN:** stale or already covered.
+- **STAT:** 4 in the window.
+- **Fierce Biotech and Fierce Pharma:** both front pages blocked (403), so nothing came from Fierce.
+- **Already shipped, dropped:** Vaxcyte, Shionogi, Alector, Bonneau, AstraZeneca Kendall Square.
+
+**Shortlist** (★ = spotlight; all others ran in the headlines)
+- ★ Biohub Virtual Biology Initiative, $1.8B — https://biohub.org/news/virtual-biology-initiative-expansion/
+- Epkinly EPCORE DLBCL-2 — https://www.biopharmadive.com/news/abbvie-genmab-epkinly-dlbcl-epcore-study-results/832241/
+- Zealand petrelintide ZUPREME-2 — https://www.biospace.com/press-releases/zealand-pharma-announces-positive-phase-2-zupreme-2-topline-results-for-amylin-analog-petrelintide-in-people-with-overweight-or-obesity-and-type-2-diabetes
+- Cerevance solengepras Phase 3 — https://www.biopharmadive.com/news/cerevance-solengepras-parkinsons-study-results/832324/
+- ArriVent FURVENT miss — https://www.biospace.com/drug-development/arrivent-sheds-nearly-half-of-value-on-late-stage-lung-cancer-miss
+- Caribou ends R&D — https://www.biopharmadive.com/news/caribou-layoffs-strategic-alternatives-allogeneic-cell-therapy-vispacel/832343/
+- Halozyme vs. Merck, plus KymaThera (Foresite) — https://www.biopharmadive.com/news/halozyme-merck-europe-enliven-insmed-rougetx-kymathera/832282/
+- Roche–Defand — https://endpoints.news/roche-does-fourth-china-deal-since-august-teaming-with-defand-on-degraders/
+- Matchpoint $150M — https://endpoints.news/novartis-partnered-biotech-gets-150m-series-b-to-move-into-the-clinic/
+- Forbion $2.6B — https://www.biopharmadive.com/news/forbion-venture-capital-growth-fund-fundraise/832254/
+- TCGX Asia fund — https://endpoints.news/tcgx-doubles-down-on-china-with-600m-asia-focused-fund/
+- Ultragenyx voucher sale — https://endpoints.news/ultragenyx-sells-prv-for-210m-and-still-has-another-to-monetize/
+- Tukysa approval — https://www.biospace.com/press-releases/pfizers-tukysa-regimen-receives-fda-approval-as-front-line-maintenance-treatment-for-her2-metastatic-breast-cancer
+- Rhapsido approval — https://www.biospace.com/press-releases/novartis-rhapsido-remibrutinib-receives-fda-approval-as-first-treatment-for-symptomatic-dermographism-sd-expanding-its-use-beyond-chronic-spontaneous-urticaria-csu
+- Rivercell $25M seed — https://www.biospace.com/press-releases/rivercell-launches-with-25-million-to-build-data-platforms-and-ai-models-that-predict-how-human-cells-respond-to-treatment
+- Quick hits:
+  - PhRMA sues over GLOBE — https://endpoints.news/phrma-sues-trump-administration-over-globe-drug-pricing-demo-program/
+  - MimiVax SurVaxM near miss — https://endpoints.news/mimivaxs-cancer-vaccine-for-glioblastoma-narrowly-misses-phase-2b-goal/
+  - Bayer Ohio plant — https://www.biospace.com/drug-delivery/bayer-commits-2-2b-to-build-pharma-manufacturing-plant-in-ohio
+  - Bexorg ARPA-H award — https://endpoints.news/bexorg-gets-28m-arpa-h-award-to-run-longer-tests-on-rebooted-human-brains/
+
+I also added a dated note to the source-access memory file: Fierce was fully blocked today, and BioPharma Dive's daily roundups list co-investors, which is how the Foresite link turned up.
+=== 2026-10-08T02:27:46-07:00 done  calibr-briefing (exit 0) ===
