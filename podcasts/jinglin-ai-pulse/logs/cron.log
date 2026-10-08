@@ -3586,3 +3586,40 @@ Today's episode script and both stub files are written. `SKIP_TTS=1` was set, so
 
 I also saved a memory note: Cognitive Revolution pages carry full transcripts, and YouTube captions don't work from this host.
 === 2026-10-06T02:37:06-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-08T02:30:10-07:00 start jinglin-ai-pulse ===
+Today's episode script and both stub files are written. `SKIP_TTS=1` was set, so I didn't run TTS, upload to R2, edit `feed.xml` or commit; `publish_pending.py` does those after the batch TTS job.
+
+**Episode:** `podcasts/jinglin-ai-pulse/scripts/2026-10-08-more-answers-than-readers.md`, 1,825 words, about 11 minutes. Next to it are `.rss-item.xml` (XML checked, with `__LENGTH__`/`__DURATION__` placeholders) and `.commit-msg`.
+
+**Theme:** OpenAI's model is turning out claimed math results faster than people can read them, so the bottleneck has moved from producing results to understanding them. The deep cut flips this for biology: more data stops helping when it comes from a system unlike the body.
+- **Twitter Pulse:**
+  - OpenAI's math release: 719 manuscripts in 372 families, about 4,000 problems posed, about 3 hours of compute per result, about 42% of top-line results checked in Lean.
+  - Reactions: Aaronson's "Mathocalypse" and his comparison of how OpenAI and Anthropic release results, Tao's "Math 2.0" thread, Bloom freezing proof claims on erdosproblems.com, and a Hansen-group preprint arguing a Lean check doesn't guarantee the written proof.
+  - Brief: Haiku 5.5 uses about three times Luna's tokens at max effort.
+- **Money Moves:** Lambda is raising up to $4B; $35B of its $50B backlog is Anthropic. Nous Research is valued at $1.5B.
+- **Deep Cut:** Andrei Georgescu (Vivodyne) on The Cognitive Revolution, quoted from the published transcript: virtual cell models saturate after "a couple percent" of their data. Plus Labenz's prediction that biology will get useful results before deep ones, the reverse of math.
+
+The sources disagreed on the size of the math release. Aaronson says about 8,000 problems and 376 papers, and the Latent Space digest says 722 manuscripts. I used the figures in OpenAI's repo README.
+
+**Candidate funnel — 2026-10-08**
+- **X/Twitter:** still unreadable from this host. I used Hacker News, Mastodon (Tao's thread via its API) and the Latent Space AINews digests for Oct 7 and Oct 8, which cover about 544 X accounts.
+- **Hacker News** (Algolia, last 60h, more than 80 points): 85 stories scanned, about 22 survived the AI filter.
+  - **Chosen:** OpenAI math release — https://openai.com/index/sharing-ai-progress-in-mathematics/
+  - **Chosen:** Tao, Math 2.0 — https://mathstodon.xyz/@tao/117395269325940185
+  - **Chosen:** Aaronson, The Mathocalypse — https://scottaaronson.blog/?p=10169
+  - **Chosen:** Bloom's changes to erdosproblems.com — https://www.erdosproblems.com/forum/thread/blog:9
+  - **Chosen:** Navier–Stokes Lost in Translation — https://arxiv.org/abs/2610.08144
+  - **Chosen (context):** Alman and Vassilevska Williams, 3SUM/APSP — https://arxiv.org/abs/2610.06783
+  - **Chosen (brief):** Claude Haiku 5.5 — https://www.anthropic.com/claude-haiku-5-5
+  - **Chosen (one line):** Mistral Large 4 — https://mistral.ai/news/mistral-large-4/
+  - Not used: GPT-6 for everyone, the Decisions API beta, Meta and Microsoft limiting employee use of Claude, OpenTPU, South Korea bank hacks by AI agents, Utah letting AI prescribe, EmbeddingGemma 2, Strands Decider, Docker Agent, the AI-assisted 11-squares proof, SynthID Detector.
+- **TechCrunch AI and Venture RSS:** 40 items scanned.
+  - **Chosen:** Lambda $4B — https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/
+  - **Chosen:** Nous Research $1.5B — https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/
+  - Not used: Mecka AI $60M (already covered on 09-14 as a rumored round), Healthleap $38M, Melius $20M, Mirror Particle, Endeavor Catalyst.
+- **Podcasts** (RSS feeds for Dwarkesh, Cognitive Revolution, MLST, No Priors, Interconnects, TWIML, Latent Space, Lex Fridman):
+  - **Chosen:** Cognitive Revolution AI:AM, Sep 27, Georgescu segment — https://www.cognitiverevolution.ai/ai-am-what-if-it-works-too-well-colluding-agents-200m-safety-orgs-virtual-cells-saturate-at-2/
+  - Deferred again: TWIML #778 with Greg Burnham. It fits the theme well, but there's still no transcript (the jina fetch returned 1.8 KB).
+  - Not used: Cognitive Revolution episodes with Garrison Lovely and OutSystems, and the Oct 1 AI:AM. Latent Space's Stacklok episode. Interconnects on the cyber-risk discourse. Dwarkesh's latest (history, off-topic). Anything already shipped.
+- **Source failures:** Gradient Dissent's feed returned 29 bytes and was skipped. The first time I ran a regex over Aaronson's blog HTML it extracted nothing; a second pass got the full text.
+=== 2026-10-08T02:35:38-07:00 done  jinglin-ai-pulse (exit 0) ===

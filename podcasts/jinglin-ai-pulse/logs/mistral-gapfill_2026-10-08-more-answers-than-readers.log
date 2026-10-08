@@ -1,0 +1,6 @@
+Script body: 11180 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2914 chars) -> 142.3s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2909 chars) -> 145.3s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2962 chars) -> 131.6s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (2392 chars) -> 111.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-10-08-more-answers-than-readers.mp3 [mistral] 4,726,953 bytes, 590.8s
