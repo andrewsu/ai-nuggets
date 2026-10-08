@@ -3881,3 +3881,39 @@ Search sources:
 - [Beyond R-CHOP: Improving Outcomes for High-Risk DLBCL](https://www.bloodcancerstoday.com/post/beyond-r-chop-improving-outcomes-for-high-risk-dlbcl)
 - [Frontline epcoritamab plus R-CHOP (OncLive)](https://onclive.com/view/frontline-subcutaneous-epcoritamab-plus-r-chop-elicits-orr-of-100-in-high-risk-dlbcl)
 === 2026-10-06T02:43:33-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-08T02:40:10-07:00 start justice-biotech-brief ===
+I wrote today's Justice's Biotech Brief script and its two stub files. Because `SKIP_TTS=1` is set, I did not generate audio, upload to R2, edit `feed.xml` or commit; the batch job does those steps.
+
+**Episode:** "Temab-A — c-Met topoisomerase ADC wins two FDA breakthrough designations, biomarker-selected in lung but not in colorectal". The script is 842 spoken words.
+
+Files in `podcasts/justice-biotech-brief/scripts/`:
+- `2026-10-08-temab-a-cmet-adc-two-breakthrough-designations-crc-nsclc.md`
+- the matching `.rss-item.xml`, with `__LENGTH__` and `__DURATION__` placeholders; it parses as valid XML
+- the matching `.commit-msg`
+
+**What the episode argues:**
+- **The news:** on October 7 the FDA gave AbbVie's antibody-drug conjugate Temab-A two breakthrough designations. Temab-A targets c-Met, a protein on tumor cells, and carries a topoisomerase-1 inhibitor as its drug payload.
+  - In colorectal cancer, the designation covers Temab-A combined with bevacizumab, with no c-Met test required.
+  - In lung cancer, it covers Temab-A alone and requires the tumor to express c-Met.
+- **Why that split matters:** I read the JCO Phase 1 paper in full through PubMed Central. In 122 colorectal patients:
+  - almost every tumor expresses some c-Met;
+  - response rates depend heavily on how much c-Met the tumor carries: 36% in the high-expression group against 12% below the cutoff.
+  - Even so, AbbVie's 990-patient Phase 3 in colorectal cancer does not select patients by c-Met.
+- **The take:** dropping the c-Met test looks like a commercial choice. Beating trifluridine-tipiracil plus bevacizumab on response rate (27% vs 0%) means little, because that regimen rarely shrinks tumors. Overall survival is the real test, and Temab-A's 10.4 months on its own sits right at the comparator's 10.8.
+
+**Checks:**
+- Earlier episodes mentioned telisotuzumab only in passing.
+- I confirmed each trial's design and eligibility in the ClinicalTrials.gov records.
+- Two claims rest only on web search results, not pages I read myself: the Emrelis facts (approved for high c-Met lung cancer, 35% response rate) and the 48% lung response rate for Temab-A.
+- I added today's run notes to the show's memory log.
+
+**Candidate funnel**
+- **bioRxiv** (October 6–8): 568 records, 424 of them new preprints. 17 keyword hits, none on-topic enough; the API returned HTTP 500 on a few pages, and one retry cleared it each time.
+  - Unopened leftovers: DNA-damage-response genes vs PD-1 blockade in colorectal cancer (https://www.biorxiv.org/content/10.64898/2026.10.03.756428v1), a brain-penetrating TGFβ trap for glioma (https://www.biorxiv.org/content/10.64898/2026.10.05.756837v1), and an engineered probiotic that strips sialic acid from tumors to boost immunotherapy (https://www.biorxiv.org/content/10.64898/2026.10.04.756258v1).
+- **News:** about 70 BioSpace items from five section feeds, 24 from Endpoints, 20 from STAT and 10 from BioPharma Dive. Fierce Biotech's feed returned only 5.6 KB with no items.
+  - **CHOSEN:** Temab-A, two breakthrough designations — https://www.biospace.com/press-releases/abbvies-telisotuzumab-adizutecan-temab-a-receives-two-breakthrough-therapy-designations-from-the-u-s-fda-for-crc-and-nsclc (full text read: JCO paper https://doi.org/10.1200/JCO-25-01525, AbbVie's ESMO 2025 release, the ClinicalTrials.gov trial records)
+  - Caribou ends its CAR-T work — https://www.biospace.com/business/doudnas-car-t-biotech-caribou-to-end-r-d-activities-slash-staff-as-financing-freezes-up (another show, Blackbird Brief, already ran it today)
+  - Kyverna stiff person syndrome / progressive MS data — https://www.biospace.com/press-releases/kyverna-therapeutics-to-present-positive-data-in-stiff-person-syndrome-and-progressive-multiple-sclerosis-at-mstoronto2026 (we covered miv-cel on October 5)
+  - Biogen litifilimab 52-week skin-lupus data — https://www.biospace.com/drug-development/biogens-big-lupus-bet-gets-boost-from-new-durability-data-for-skin-disease (still the top backup)
+- **Policy and funder pages:** I did not check the ARPA-H, NIH or NSF pages directly; they are blocked from this machine. The only funder news I saw was a $28M ARPA-H award to Bexorg, through Endpoints, which is off-topic for this show.
+=== 2026-10-08T02:44:56-07:00 done  justice-biotech-brief (exit 0) ===

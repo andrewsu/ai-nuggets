@@ -1,0 +1,4 @@
+Script body: 5499 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2936 chars) -> 136.7s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2562 chars) -> 141.0s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-10-08-temab-a-cmet-adc-two-breakthrough-designations-crc-nsclc.mp3 [mistral] 2,361,931 bytes, 295.2s
