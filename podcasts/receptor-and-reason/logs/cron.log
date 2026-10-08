@@ -5251,3 +5251,13 @@ Dedup: 185 candidates → 164 fresh (21 already shipped). Final roster re-filter
 
 Two things worth flagging in the editorial: the unifying thread (the instrumented layer isn't the limiting layer) emerged from the papers rather than being imposed, and three of the computational picks are notable for arguing *against* their own agentic framing — MAGI's ceiling is its scorers, and the Clalit gain vanishes under a random-tool control.
 === 2026-10-06T03:06:24-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-08T02:50:10-07:00 start receptor-and-reason ===
+Stale watchers cleared. Today's `receptor-and-reason` episode is done and staged:
+
+- **Script**: 11 items, 3,274 words (~18 min), all full-text read and verified by an independent notes pass
+- **Stubs**: `.rss-item.xml` (validated) and `.commit-msg`
+- **Ledger**: 11 keys appended, re-filtered 11/11 clean before the write
+- **Memory**: run notes, the new bioRxiv 403/DOI-prefix failure mode, and the ledger-miss lesson recorded
+
+No TTS, R2 publish, feed edit, or commit — correct for `SKIP_TTS=1`; the orchestrator picks those up.
+=== 2026-10-08T03:15:57-07:00 done  receptor-and-reason (exit 0) ===
