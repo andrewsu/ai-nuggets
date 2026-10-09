@@ -3442,3 +3442,34 @@ Local `main` is two commits ahead of `origin/main` (tonight's two episodes). I'm
 NUGGETS_SKIP: today's episode already published and committed (cb76dd4 at 02:22); this is a false retry triggered by the missing SKIP_TTS stub files
 === 2026-10-08T02:26:32-07:00 done  blackbird-brief (exit 0) (retry 1) ===
 === 2026-10-08T02:26:32-07:00 SKIPPED: blackbird-brief deliberate skip (bar not met): today's episode already published and committed (cb76dd4 at 02:22); this is a false retry triggered by the missing SKIP_TTS stub files ===
+=== 2026-10-09T02:10:13-07:00 start blackbird-brief ===
+I wrote today's Blackbird Brief Portfolio Watch (Friday 2026-10-09, about 1,600 spoken words, roughly nine minutes). `SKIP_TTS=1` was set, so I only wrote the script and the two stub files the runner looks for. I did not generate audio, upload to R2, edit `feed.xml` or commit; the runner's next phases do those.
+
+**Files written:**
+- `podcasts/blackbird-brief/scripts/2026-10-09-portfolio-watch.md` — the script, show notes and candidate funnel.
+- The `.rss-item.xml` stub (checked that the XML parses) and the `.commit-msg` stub.
+- `state/shipped.jsonl` — 8 keys appended. The final list was checked against it again first: 0 repeats.
+- `memory/blackbird-portfolio.md` — the entries for the GPR52 NewCo, Winnow, Georgiamune, NuGate and the non-opioid pain theme were edited in place and their dates bumped. Nothing was appended as a log.
+
+**What the episode covers:**
+1. **Lead: Newron's schizophrenia drug evenamide.** FDA has explained why its U.S. hold on the Phase 3 stays in place. It counted four deaths on the drug against one on placebo (0.56% vs 0.27%). It also worries that sodium channel blockers, which evenamide is, can cause arrhythmias. Adjusted for time on treatment, the death rate actually favors the drug: 1.31 vs 1.81 per 100 patient-years.
+   - For the GPR52 NewCo, the takeaway is to fix the mortality analysis and death review before the first patient is dosed, and to have a written answer on cardiac and seizure risk for its drug class.
+   - For the non-opioid pain theme, selectivity against the heart's sodium channel is now something regulators will ask about.
+2. **Viatris is buying Pacira for $1.65B,** about 2.2 times revenue, for two pain products that are reformulations of old generic drugs. The read is about who the buyer is: a generics company paying for cash flow and hospital access, not for a new mechanism.
+3. **argenx, two results on the same day.** Its 630-patient Sjögren's Phase 3 was stopped as futile. Its anti-CD122 antibody won a 126-patient celiac Phase 2 built around an eight-week gluten challenge. For Winnow, that backs September's point about using a deliberate disease trigger to get a short trial endpoint.
+4. **TRex Bio priced its IPO at $14,** the bottom of its $14–16 range. That gives the Treg-activation class Georgiamune sits in its first public price.
+5. **AviadoBio's FTD gene therapy (for NuGate and Aletira).** Delivered directly into the thalamus, it raised spinal-fluid progranulin by up to 90%, with no immunosuppression needed. One line covers Atsena's new data from this week's ophthalmology meeting.
+6. **Watch list:** Caribou as a reverse-merger shell, plus dates for upcoming readouts and decisions.
+
+**Funnel:** I scanned about 100 headlines from BioPharma Dive, BioSpace and Endpoints. A background keyword sweep went through about 290 BioSpace press releases and turned up 16 more items. Eight items made the episode; the rest are listed one line each at the bottom of the script.
+
+**Sources that failed:**
+- GlobeNewswire returned nothing to direct downloads and its search hung, though fetching a single release page worked.
+- The Business Wire RSS feed has been shut off.
+- Endpoints article bodies are paywalled.
+- The background sweep threw out three web-search results with wrong dates.
+
+Nothing was deferred for lack of full text.
+
+I added a dated note to the session memory file on news-source access. It records that GlobeNewswire release pages download empty but fetch through WebFetch, that SEC filings work as a primary source, and that one `grep` pattern fails on this host.
+=== 2026-10-09T02:21:45-07:00 done  blackbird-brief (exit 0) ===

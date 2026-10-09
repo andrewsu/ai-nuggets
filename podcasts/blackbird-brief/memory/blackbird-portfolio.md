@@ -1118,6 +1118,8 @@ https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentall
     question of whether the Blackbird COPD work sits upstream or downstream of the alarmin layer.** Source:
     https://biobuzz.io/news/tolerance-bio-licenses-anti-il-33-antibody-tanabe-pharma/
 
+**NON-OPIOID PAIN theme — EXIT COMP + REGULATORY CLASS PRIOR (added 2026-10-09 Portfolio Watch items 1–2).** (a) **Viatris acquires Pacira** for $36.50/sh, ~$1.65B equity, vs LTM ~$746M revenue / ~$177M adj. EBITDA (≈2.2× rev) — Exparel + Zilretta are reformulated generics, Exparel generics early 2030, growth formulary-constrained; pipeline incl. PCRX-201 knee-OA gene therapy. ⇒ the active buyer is a lifecycle house paying for call points and cash flow; don't model a Vertex-style exit for a novel mechanism (Guan MRGPRX1); post-surgical pain needs a pharmacoeconomic case. (b) **FDA cited sodium-channel-blocker arrhythmia risk as a class concern holding Newron's evenamide** ⇒ NaV1.5 selectivity + a cardiac package are table stakes for any NaV pain programme (Navion, Vertex comps). Sources: https://www.sec.gov/Archives/edgar/data/0001396814/000110465926114571/tm2627240d2_ex99-1.htm · https://www.biopharmadive.com/news/viatris-pacira-acquire-pain-drug-zilretto-exparel/832481/
+
 **NON-OPIOID PAIN theme — THE COMPETITION IS SELLING A *PROPERTY* AND A *POPULATION*, NOT A TARGET, AND THE ROUND CLOSED ON A REPEAT
 ION-CHANNEL FOUNDER (opened 2026-09-19 Portfolio Watch item 3; announced 2026-09-09, surfaced regionally 2026-09-17).**
 **Navion Neurosciences** (preclinical; **Commonwealth Bio Accelerator, Charlottesville VA**) first-closed a **$10.8M seed** led by the
@@ -2418,7 +2420,8 @@ _Last update: 2026-08-28_
   it. KRAS-landscape news is no longer portfolio-relevant on aSKY's account
   (Clasp remains a live KRAS-adjacent holding).
 ### Neuropsychiatric NewCo (schizophrenia) — Lieber Institute + Third Rock ✅
-_Last update: 2026-10-08_
+_Last update: 2026-10-09_
+- **FDA HOLDS A TRS PHASE 3 ON A MECHANISM-CLASS PRIOR + A RAW DEATH COUNT THE EXPOSURE-ADJUSTED RATE CONTRADICTS (added 2026-10-09 Portfolio Watch LEAD; Newron release 2026-10-08).** **Newron evenamide** (Na-channel-blocking glutamate modulator, add-on for treatment-resistant schizophrenia): US enrollment hold on ENIGMA-TRS 2 since 2026-04-29, maintained 09-25. FDA's written reasoning: **4 deaths on drug vs 1 on placebo** (0.56% vs 0.27%) + **sodium-channel-blocker arrhythmia concern**; exposure-adjusted **1.31 vs 1.81 per 100 PY favours drug**; >10,000 ECGs, slight QTc SHORTENING; implied ~714 drug / ~370 placebo. ENIGMA-TRS 1 (≥600, 20 countries) topline **Q1 2027**; ex-US enrollment continues. **⇒ (Hemaka + Avi) prespecify mortality analysis, independent death adjudication and background-rate comparison before first patient; write the GPR52-agonist class-prior (cardiac, seizure) answer into the pre-IND dossier; (Eddie) US-only hold ⇒ global FIH-in-patients footprint is a hedge; a slipping evenamide keeps the TRS add-on slot open.** Source: https://www.globenewswire.com/news-release/2026/10/08/3377125/0/en/newron-provides-update-on-fda-clinical-hold-and-phase-3-enigma-trs-development-program.html
 - **A SISTER ORPHAN Gs RECEPTOR IN THE SAME D2 INDIRECT-PATHWAY MSNs WON A PHASE 3 — THE NEAREST MECHANISTIC PRECEDENT GPR52 HAS (added 2026-10-08 Portfolio Watch LEAD; announced 2026-10-07).** **Cerevance solengepras (CVN424), oral GPR6 INVERSE AGONIST, Phase 3 ARISE** (n=341, adjunct in fluctuating PD): 150 mg OFF Δ −0.61 h vs placebo (p=0.035), ON-without-troublesome-dyskinesia +0.60 h (p=0.047), no SAEs at 150 mg; 75 mg efficacy not reported; monotherapy Phase 2 ASCEND MISSED (2025). GPR6 inverse agonism lowers cAMP in D2 MSNs (D2-agonist-like); GPR52 agonism raises it (D2-antagonist-like; Komatsu 2014, Takeda CNS unit).
   **⇒ (Hemaka) put it in the pre-IND book as nearest precedent — NOT a class (opposite direction, other indication); ⇒ (Avi) human proof that cAMP tone in these cells moves motor function ⇒ prespecify an EPS/motor-safety readout from the first patient study; ⇒ (Eddie) ADD TAKEDA to the bidder list (originated GPR52 as a psychiatric target, co-founded Cerevance); Cerevance itself a possible acquirer if approved; ⇒ ASCEND warns against assuming monotherapy works for an indirect-pathway mechanism.** Target validated on Cerevance's NETSseq (cell-type nuclear sequencing of human postmortem brain) — the Lieber target-generation thesis now has a pivotal win to point to.
   Sources: https://www.cerevance.com/media/cerevance-announces-positive-phase-3-arise-results-once-daily-oral-solengepras-meets-primary-endpoint-and-demonstrates-motor-and-non-motor-benefits-in-parkinsons-disease · https://pmc.ncbi.nlm.nih.gov/articles/PMC3938596/
@@ -2921,7 +2924,8 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-10-04_
+_Last update: 2026-10-09_
+- **NfL-LED EARLY CASE, SECOND INSTANCE (added 2026-10-09 Portfolio Watch item 5; ICFTD 2026-10-08).** AviadoBio **AVB-101** (intrathalamic AAV progranulin, FTD-GRN), n=17 across 4 cohorts: CSF progranulin +36% / +90% (cohorts 3/4, wk 12), no related SAEs, no immunosuppression; serum NfL at/below baseline at 52 wk (low-dose only) vs expected +13–14%/yr. Same evidentiary shape as the 10-04 CHCHD10 read: biomarker with a known untreated slope first, function later. Source: https://www.biospace.com/press-releases/aviadobio-presents-new-safety-and-biomarker-data-from-the-phase-1-2-aspire-ftd-trial-at-the-international-conference-on-frontotemporal-dementias
 - **THE INSTRUMENT RULE TESTED AT n=1, AND THE MACHINE-MEASURED ENDPOINTS CARRY IT (added 2026-10-04 Portfolio Watch item 3; *Med* 2026-09-14, Mayo release 2026-10-01).**
   **Mayo Clinic + n-Lorem Foundation, nL-CHCHD10-001**, a bespoke ASO for one patient with the **CHCHD10 R15L** variant (toxic gain of function, TDP-43 pathology downstream). >320 ASOs screened; FDA cleared the design; **6 intrathecal doses q3mo, 50 → 75 mg**, first dose April 2024.
   **Plasma NfL 27.4 → 13.4 pg/mL at 6 mo → 17.2 at 12 mo** (ULN 22.4). **FVC 48% → 60%** at month 1, then mid-50s. **ALSFRS-R** had fallen 47 → 33 over ~3 pre-treatment years, then held at 33 for 9 months → 35 → **36**. Two head injuries during the year moved both measures (reported, not smoothed).
@@ -3221,7 +3225,8 @@ _Last update: 2026-10-04_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-10-05_
+_Last update: 2026-10-09_
+- **PROVOCATION DESIGN CONFIRMED, SAME COMPANY SAME DAY (added 2026-10-09 Portfolio Watch item 3; argenx 2026-10-08).** Efgartigimod SC **UNITY** Sjögren's Ph3 (n=630, wk-48 systemic activity) stopped for **futility** at interim (>500 pts), stock ~−14%; **FB102 (anti-CD122, ex-Forte $2.2B)** celiac Ph2 **n=126, 2:2:1 IV, 8-wk gluten challenge, Vh:Cd day 78 p=0.0176** → Phase 3. With Teva anti-IL-15 (09-03), two antibodies on the same IEL/IL-15 axis positive in the challenge model ⇒ celiac becoming a two-company indication; **the 09-03 provocation question is now the priority diligence item for each Winnow indication.** Source: https://www.sec.gov/Archives/edgar/data/0001697862/000110465926114491/tm2627263d1_ex99-2.htm
 - **THE ATTRIBUTION FOR THE AUTOIMMUNE CAR-T DEATHS IS NOW ON THE RECORD FROM OPERATORS, IT POINTS AT MANUFACTURING, AND IT NARROWS OUR CONTROL-ARCHITECTURE ROW RATHER THAN WIDENING IT (added 2026-10-05 Portfolio Watch LEAD; published 2026-10-05). Follow-up on the 09-01 LEAD — the EVENTS are not new, the ATTRIBUTION and the Kyverna timeline are.**
   **Will Ho (CEO, IN8bio)** attributes the Novartis rap-cel and BMS zola-cel safety events to **ACCELERATED MANUFACTURING PROTOCOLS** that over-stimulate T cells into excess cytokine production, and **explicitly distinguishes that from an inherent CAR-T liability** — i.e. the **William Blair / Sami Corwin hypothesis of 09-02, now stated by an operator rather than an analyst.**
   **Sanjeev Luther (CEO, Ernexa Therapeutics)** on the risk calculus: in oncology *"the risk-benefit ratio made sense"* because patients face mortality; autoimmune diseases are *"chronic"* where *"people are not necessarily dying."*
@@ -4459,7 +4464,8 @@ _Last update: 2026-09-28_
   Source: https://www.biospace.com/drug-development/revmeds-newly-approved-rasonque-could-hold-up-in-non-small-cell-lung-cancer
 
 ### Georgiamune — Gaithersburg MD, Blackbird BioVentures position, the INTERGALACTIC-CENTER THESIS WITH THIRD-PARTY CAPITAL BEHIND IT ✅
-_Last update: 2026-09-30_
+_Last update: 2026-10-09_
+- **TREX BIO PRICED AT THE BOTTOM OF THE RANGE (added 2026-10-09 Portfolio Watch item 4).** 8,333,334 sh at **$14** (range $14–16), ~$116.7M gross, Nasdaq TRXB from 2026-10-09; TRB-061 TNFR2 agonist, AD data mid-2027; Lilly ~$13M indicated. First public mark for the Treg-activation class — window open, price disciplined. Source: https://www.biospace.com/press-releases/trexbio-announces-pricing-of-initial-public-offering
 - **THIRD TREG-ACTIVATION ASSET IN NINE DAYS AND THE SECOND TO PICK ATOPIC DERMATITIS FIRST — WHICH MAKES GIM-407's *INDICATION* CHOICE THE
   DIFFERENTIATOR RATHER THAN ITS ORAL ROUTE, AND FLIPS THE DIRECTION OF THE READ-THROUGH (added 2026-09-30 Portfolio Watch item 4; presented
   2026-09-30 at EADV Congress 35, Vienna, Abstract AS-3660 / ePoster P1719).**
