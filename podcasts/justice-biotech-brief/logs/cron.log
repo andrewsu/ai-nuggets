@@ -3917,3 +3917,32 @@ Files in `podcasts/justice-biotech-brief/scripts/`:
   - Biogen litifilimab 52-week skin-lupus data — https://www.biospace.com/drug-development/biogens-big-lupus-bet-gets-boost-from-new-durability-data-for-skin-disease (still the top backup)
 - **Policy and funder pages:** I did not check the ARPA-H, NIH or NSF pages directly; they are blocked from this machine. The only funder news I saw was a $28M ARPA-H award to Bexorg, through Endpoints, which is off-topic for this show.
 === 2026-10-08T02:44:56-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-09T02:40:14-07:00 start justice-biotech-brief ===
+Published today's episode as stubs (SKIP_TTS=1 — no TTS, no R2 publish, no feed edit, no commit, per PIPELINE.md).
+
+**Episode:** `2026-10-09-tigit-cd28-switch-receptor-icos-point-mutation-tonic-signaling`
+TIGIT-CD28 switch receptor — one amino acid in the costimulatory tail separates 1-of-5 from 5-of-5 tumor-free. Files written: `.md` (1,005 words), `.rss-item.xml` (XML-validated), `.commit-msg`.
+
+**Candidate funnel**
+
+bioRxiv/medRxiv details API, day-by-day (2026-10-07/08/09), full collection paginated — 754 items scanned, 77 keyword hits, ~8 substantive after discarding spurious matches ("ADC" inside unrelated words, "CAR" in non-immunology). Note 10-09 is near-empty (2 items — day not yet populated at cron time).
+
+- **A signaling-optimized TIGIT chimeric switch receptor promotes metabolic fitness and antitumor efficacy of TCR/CAR T cells** — https://www.biorxiv.org/content/10.64898/2026.10.02.755760v1 — **CHOSEN**. Full text read (13.6k words via `.full.pdf` + mutool; `.full` HTML stayed 429).
+- Inhibitory Nectin-2/TIGIT interactions between CD163+ macrophages and CD8+ T cells in neuroblastoma — 10.64898/2026.10.07.756693 — descriptive spatial correlation, no intervention.
+- A Bispecific Biologic That Robustly Reverses HIV-1 and SIV Latency — 10.64898/2026.10.06.757104 — on-format, off-beat (HIV cure, not oncology/autoimmune).
+- Human CD4 T cells coordinate antitumor immunity through indirect antigen presentation — 10.64898/2026.09.30.755788 — immunology, no therapeutic handle.
+- RORγ inverse agonism redirects tumour-conditioned emergency myelopoiesis — 10.64898/2026.10.01.755741 — small molecule, adjacent.
+- The MRTFs are required for thymocyte trafficking and Treg-mediated immune tolerance — 10.64898/2026.10.02.756229 — basic tolerance biology.
+- Longitudinal multi-omics of tofacitinib response in ulcerative colitis (JAK) — 10.64898/2026.10.07.26364964 — JAK but biomarker/EHR-flavored, not drug development.
+
+News/press, 2026-10-08 → 10-09:
+- **FDA approves Tecentriq + mFOLFOX6, adjuvant stage III dMMR colon cancer** (ATOMIC, n=712, HR 0.50, 36-mo DFS 86% vs 76%) — strong runner-up, full release read; lost to the preprint on novelty-of-idea for this listener.
+- Caribou shuts CAR-T R&D (Endpoints, 10-07) — business, no data.
+- Antengene ATG-207 αCD3-TGF-β bifunctional at ACR 2026 — "will present," no data.
+- NovaBridge givastomig (CLDN18.2×4-1BB) expanded ESMO data, released 10-08 — announcement only, data embargoed to Oct 25. Dropped per content bar.
+- Matchpoint $150M series B (autoimmune), TRexBio $117M IPO (Tregs) — financing, no data.
+
+**Source failures:** Fierce Biotech front page 403 (5,490-byte Cloudflare block) — third consecutive run with zero Fierce; skipped per PIPELINE.md. `r.jina.ai` returns only a 117-byte stub, so `fetch_preprint.py` fell through to abstract-only; recovered full text with direct `curl` + Safari UA on `.full.pdf` after seven 17-byte 429s with 40s backoff. BioPharma Dive, BioSpace (front + /press-releases), Endpoints (index + `endpts.com/feed/`), Clinical Trials Arena all 200.
+
+**Novelty check:** web search confirms prior TIGIT-CD28 CSR work (JITC 2019) and a PD-1/TIGIT-CD28 construct — the paper acknowledges both. Not a re-post; the claimed novelty is the tonic-signaling diagnosis and the N182F fix, and the script says so rather than calling it first-in-class. Grepped the extraction for "placeholder" (0 hits).
+=== 2026-10-09T02:52:56-07:00 done  justice-biotech-brief (exit 0) ===
