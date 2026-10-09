@@ -5198,3 +5198,50 @@ There was no October 7 episode, so this run covers news from Tuesday and Wednesd
 
 I also added a dated note to the source-access memory file: Fierce was fully blocked today, and BioPharma Dive's daily roundups list co-investors, which is how the Foresite link turned up.
 === 2026-10-08T02:27:46-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-09T02:20:13-07:00 start calibr-briefing ===
+I wrote both Calibr scripts for Friday, October 9, plus their RSS-item and commit-message stubs. `SKIP_TTS=1` was set, so I didn't generate audio, upload to R2, edit `feed.xml` or commit; the orchestrator's batch TTS run does those. Both RSS stubs parse as valid XML.
+
+**Files** (in `podcasts/calibr-briefing/scripts/`)
+- `2026-10-09-pharma-headlines.txt`: about 1,330 words, roughly 7½ minutes at the usual narration rate.
+- `2026-10-09-argenx-sjogrens-fcrn-futility-spotlight.txt`: about 1,550 words, roughly 8½ minutes, a bit over the 5–8 minute target.
+- A `.rss-item.xml` and a `.commit-msg` for each.
+
+**Spotlight:** argenx stopped its Phase 3 UNITY trial of Vyvgart in Sjögren's disease for futility. The argument is that lowering antibodies works where the autoantibody causes the disease, and fails where it only marks it. In Sjögren's, the drugs that have won target B cells and T-cell help upstream instead (ianalumab, dazodalibep, telitacicept). It follows up the August 18 myositis spotlight, which called Sjögren's "the real test." It also covers the read-through to J&J's nipocalimab and Immunovant (down about 6%), Biohaven's antibody-degrader deal with Ono, and argenx's celiac win with FB102. All trial facts come from argenx's SEC 6-K press releases.
+
+**Things to know**
+- **No Foresite connection today.** Nothing in the fetched pages mentioned Foresite. I checked the investor lists for TRexBio, Endeavor and Multiply Labs, and none of them include it.
+- **One analyst figure is secondhand:** Baird cutting its argenx target to $823 comes from a search snippet, because Yahoo's page wouldn't load.
+- **Endeavor hasn't released effect sizes** for its lung-fibrosis drug, and the script says so.
+- **Fierce Biotech and Fierce Pharma were blocked (HTTP 403)** for the third run in a row, so nothing came from Fierce.
+- I added a dated note to the source-access memory file about which sites worked and how to pull text from them.
+
+**Candidate funnel**
+- **Endpoints RSS:** 24 items, 9 new since the last run.
+- **BioPharma Dive:** 30 headlines, 3 new; read in full.
+- **BioSpace:** about 45 press releases and 60 front-page stories; 8 relevant, read in full.
+- **Clinical Trials Arena:** about 40 scanned, 2 new.
+- **STAT:** 3 new (paywalled ledes only).
+- **GEN:** 1 new (the chemistry Nobel, from Wednesday).
+- **Fierce Biotech and Fierce Pharma:** both blocked (403).
+- **Dropped as already covered:** Zealand, Roche–Defand, Caribou's shutdown (kept only the follow-up about it becoming a reverse-merger shell).
+
+**Shortlist** (★ = spotlight; all others ran in the headlines)
+- ★ argenx stops UNITY / FB102 celiac win: https://www.sec.gov/Archives/edgar/data/0001697862/000110465926114491/tm2627263d1_ex99-2.htm
+- Endeavor taladegib, WHISTLE-PF Phase 2b: https://www.biospace.com/press-releases/endeavor-biomedicines-whistle-pf-phase-2b-trial-of-taladegib-meets-primary-and-key-secondary-endpoints-in-patients-with-ipf
+- Viatris buys Pacira, $1.65B: https://www.biopharmadive.com/news/viatris-pacira-acquire-pain-drug-zilretto-exparel/832481/
+- BMS Zenbexus (iberdomide), EXCALIBER progression-free survival: https://www.clinicaltrialsarena.com/news/bmss-zenbexus-meets-pfs-endpoint-in-pivotal-multiple-myeloma-trial/
+- Newron evenamide deaths: https://www.biospace.com/drug-development/newron-reveals-5-deaths-in-late-stage-schizophrenia-program-as-fda-maintains-hold
+- PDUFA hiring money: https://endpoints.news/new-pdufa-deal-sets-aside-fda-money-to-rehire-reviewers-lost-to-layoffs/
+- Pharma tariffs hitting smaller biotechs: https://www.statnews.com/2026/10/08/trump-tariffs-section-232-imported-prescription-drugs-challenge-biotech-companies/
+- TRexBio IPO: https://www.biospace.com/press-releases/trexbio-announces-pricing-of-initial-public-offering
+- Retension IPO: https://www.biospace.com/press-releases/retension-pharmaceuticals-announces-pricing-of-initial-public-offering
+- Multiply Labs and General Medicine raises: https://endpoints.news/robotics-company-multiply-labs-nets-75m-isotope-maker-northstar-gets-up-to-185m/
+- Ginkgo lab access for NSF X-Labs: https://www.biospace.com/press-releases/ginkgo-bioworks-to-provide-autonomous-lab-access-to-nsf-x-labs-researchers-contributing-cloud-lab-time-and-protein-testing-services-to-1-5-billion-breakthrough-science-program
+- Innovent Sycume, Phase 3 in inactive thyroid eye disease: https://www.biospace.com/press-releases/innovent-announces-phase-3-restore-3-study-of-sycume-teprotumumab-n01-injection-met-primary-endpoint-in-inactive-thyroid-eye-disease
+- Quick hits:
+  - Biohaven licenses antibody degraders to Ono: https://allsci.com/news/licensing-and-partnerships/biohaven-ono-pharma-licenses-igg-degrader/
+  - UK revokes Valneva's Ixchiq: https://endpoints.news/ono-pays-biohaven-80m-for-protein-degrader-uk-pulls-valnevas-chikungunya-shot/
+  - Caribou as a reverse-merger shell: https://www.biopharmadive.com/news/caribou-reverse-merger-prospects-cell-therapy-private-public/832494/
+  - Chemistry Nobel to Kagan and Soai: https://www.genengnews.com/topics/drug-discovery/kagan-soai-win-2026-nobel-prize-in-chemistry-for-discoveries-related-to-asymmetric-organic-synthesis/
+- Not used: the preeclampsia feature (Endpoints), Quantum-Si, Guardant's EU companion-diagnostic approval, and conference-presentation announcements with no data.
+=== 2026-10-09T02:27:47-07:00 done  calibr-briefing (exit 0) ===
