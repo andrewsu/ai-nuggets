@@ -3733,3 +3733,41 @@ I wrote today's Ollie's AI Pulse script and its two stub files. `SKIP_TTS=1` was
 
 I also added the working podcast and Vals RSS feed URLs to memory, and noted that Cognitive Revolution transcript pages now load with plain curl.
 === 2026-10-11T02:36:04-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-12T02:30:12-07:00 start jinglin-ai-pulse ===
+I wrote today's Ollie's AI Pulse script and its two stub files. `SKIP_TTS=1` was set, so I didn't run TTS, upload to R2, edit `feed.xml` or commit; the batch job (`publish_pending.py`) does those.
+
+**Episode:** `podcasts/jinglin-ai-pulse/scripts/2026-10-12-trust-it-the-least.md`. It's about 2,210 spoken words, just over the 2,200 target (roughly 12 minutes). The RSS item stub passes an XML parse check, and the commit-message stub is beside it.
+
+**The angle:** Every story asks the same question: as these systems pull ahead of their users, who checks the work?
+- **Twitter Pulse:**
+  - **Karpathy's "sharp funnel" post (Oct 11):** about 32K likes and 3.7M views. He splits people into four groups by how much of AI's ability they actually see: 6B, 1–2B, 20M and 5,000. His key line is that "human review and comprehension are starting to fall behind." I paired it with pushback from the Hacker News thread (457 points) and Piotr Sarnacki's post on DHH's agent-written Rust rewrite, which delivered 1% of notifications under load.
+  - **Sakana's MASS against Nadella's "Models as Insider Risks":** MASS has one model do the work, improve the process and grade itself, then trains on what it graded best. Nadella's first rule is the opposite: no model should verify its own work. The point nobody on either thread made is that every number MASS reports as progress comes from outside judges, GPT-5.5 and Claude Opus 4.8. The fine print is in the script: the headline gain is score per output token, and the papers it finished scored slightly lower.
+  - **Berkeley persistence trial (COLM, 1,222 participants):** people who leaned on a chatbot did worse once it was taken away.
+- **Money Moves:** Manus closed its $500M+ round (we covered the talks on 09-19). Positron says its token spend briefly topped its salaries, and swyx says checking the entries to his Kill My SaaS bounty took all the effort.
+- **Deep Cut:** Nathan Labenz's notes from The Curve on the Cognitive Revolution (Oct 8), read from the full transcript. Under Chatham House rules, a frontier-lab executive told him there is "likely … a level of intelligence that we just shouldn't go past" and called a 10^27 FLOP cap on the next pretraining run reasonable. He also described companies that sell RL training environments as a "distillation conduit" between labs.
+
+**New source route:** `api.fxtwitter.com` returns the full text of individual X posts and X articles from this host. That's how the Karpathy and Nadella quotes were read directly from X, and I've saved it to memory. It can't list an account's timeline, so @Zefan_Cai still can't be tracked.
+
+**Candidate funnel**
+- **X/Twitter:** read through fxtwitter, two posts in full.
+  - **Chosen:** Karpathy — https://x.com/karpathy/status/2109361546505966046
+  - **Chosen:** Nadella — https://x.com/satyanadella/status/2108931348857827686
+- **Hacker News (Algolia, last 60h, ≥60 points):** 98 stories scanned, about 18 about AI.
+  - **Chosen:** Karpathy thread — https://news.ycombinator.com/item?id=50047422
+  - **Chosen:** Sakana MASS — https://pub.sakana.ai/mass/
+  - **Chosen:** "I'm sorry, but you still have to think" — https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/
+  - **Chosen:** Berkeley persistence study — https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things
+  - **Not chosen:** Tao's "Math 2.0" slides (his Math 2.0 thread was covered 10-08); Tao's "Illustration Beyond Proof"; the 500B-token FPS decompilation; Google told to halt Finland datacentres; the analyst calling Anthropic's IPO a test of investor gullibility; "Anthropic Bans Cruelty to Claude"; Nicolas Cage vs. Amazon.
+- **TechCrunch AI RSS plus one web search:** 20 items.
+  - **Chosen:** Manus $500M+ — https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/
+  - **Chosen:** Nadella "emergency brake" — https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/
+  - **Not chosen:** Apple–Huxe acqui-hire; data center NDAs; Anthropic cutting internal evals off the live internet (covered 10-10).
+  - **Not chosen:** the web search also listed Modal, Pale Blue Dot and Armadin rounds, but only from an aggregator I couldn't check against original reporting.
+- **Newsletters (Substack archive API):** 16 publications, about 20 posts in the window.
+  - **Not chosen:** Gary Marcus on recalling agents; ChinaTalk's Kevin Roose post (only 149 words came back); Exponential View's AI & Math 2.0. Interconnects and AINews were used 10-11.
+  - **Failed:** semianalysis (returned non-JSON) and jack-clark.net (404).
+- **Podcast feeds:** 9 checked.
+  - **Chosen:** Cognitive Revolution, "AI:AM: A Level We Shouldn't Pass?", Oct 8 (full transcript).
+  - **Not chosen:** TWIML's Greg Burnham episode (no transcript); 80k's AI legal rights and OpenAI security episodes; Latent Space's Periodic and AlphaFold episodes (both already covered).
+- **Deferred:** nothing.
+=== 2026-10-12T02:36:06-07:00 done  jinglin-ai-pulse (exit 0) ===

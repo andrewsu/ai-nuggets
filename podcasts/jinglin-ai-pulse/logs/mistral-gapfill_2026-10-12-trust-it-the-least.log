@@ -1,0 +1,8 @@
+Script body: 13288 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2772 chars) -> 119.4s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2984 chars) -> 133.7s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2937 chars) -> 133.6s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2835 chars) -> 132.4s ✓
+  [mistral:en_paul_neutral] chunk 5/5 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/5 (1756 chars) -> 78.3s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-10-12-trust-it-the-least.mp3 [mistral] 5,474,891 bytes, 684.3s
