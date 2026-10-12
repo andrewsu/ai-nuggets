@@ -25,25 +25,37 @@ Usage:
     scripts/publish_pending.py --date 2026-06-23
     scripts/publish_pending.py --skip-gap-fill  # publish only, no Mistral
     scripts/publish_pending.py --skip-push      # commit but don't push
+    scripts/publish_pending.py --lookback-days 0  # today only, no retries
 """
 
 import argparse
 import datetime
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 GIT_LOCK = "/tmp/ai-nuggets-git.lock"
+WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+MONTHS = {m: i for i, m in enumerate(
+    ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+     "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], 1)}
+PUBDATE_RE = re.compile(r"<pubDate>(\w{3}), (\d{1,2}) (\w{3}) (\d{4})")
 
 
 def log(msg):
     print(msg, flush=True)
 
 
-def discover_pending(today):
-    """Return [(slug, script_path, mp3_path, basename), ...] for today's scripts."""
+def discover_pending(today, lookback_days=0):
+    """Return [(slug, script_path, mp3_path, basename), ...] for today's scripts,
+    plus scripts from the previous `lookback_days` days whose rss-item stub is
+    still on disk (i.e. a failed night that never got committed)."""
+    today_d = datetime.date.fromisoformat(today)
+    dates = [(today_d - datetime.timedelta(days=n)).isoformat()
+             for n in range(lookback_days, -1, -1)]
     results = []
     for show_dir in sorted((REPO / "podcasts").iterdir()):
         if not show_dir.is_dir():
@@ -52,11 +64,14 @@ def discover_pending(today):
         scripts_dir = show_dir / "scripts"
         if not scripts_dir.exists():
             continue
-        for ext in (".md", ".txt"):
-            for script in sorted(scripts_dir.glob(f"{today}*{ext}")):
-                basename = script.stem
-                mp3 = show_dir / "episodes" / f"{basename}.mp3"
-                results.append((slug, script, mp3, basename))
+        for date in dates:
+            for ext in (".md", ".txt"):
+                for script in sorted(scripts_dir.glob(f"{date}*{ext}")):
+                    basename = script.stem
+                    if date != today and not (scripts_dir / f"{basename}.rss-item.xml").exists():
+                        continue  # already published on its own night
+                    mp3 = show_dir / "episodes" / f"{basename}.mp3"
+                    results.append((slug, script, mp3, basename))
     return results
 
 
@@ -83,6 +98,22 @@ def gap_fill_mistral(items):
             log(f"    FAIL rc={r.returncode} (see {log_path.relative_to(REPO)})")
         else:
             log(f"    OK")
+
+
+def fix_pubdate_weekday(item_xml, label):
+    """Rewrite the weekday in <pubDate> to match the date. Phase 1 writes the
+    weekday by hand and occasionally gets it wrong, which the pre-commit hook
+    (.githooks/check-feed.py) rejects."""
+    def sub(m):
+        claimed, day, mon, year = m.group(1), int(m.group(2)), m.group(3), int(m.group(4))
+        try:
+            actual = WEEKDAYS[datetime.date(year, MONTHS[mon], day).weekday()]
+        except (KeyError, ValueError):
+            return m.group(0)  # leave it for the hook to report
+        if claimed != actual:
+            log(f"  {label}: pubDate weekday {claimed} -> {actual} ({day:02d} {mon} {year})")
+        return f"<pubDate>{actual}, {day:02d} {mon} {year}"
+    return PUBDATE_RE.sub(sub, item_xml)
 
 
 def insert_feed_item(feed_path, item_xml):
@@ -130,9 +161,16 @@ def publish_one(slug, script, mp3, basename):
     item_xml = stub_xml.read_text() \
         .replace("__LENGTH__", str(length_bytes)) \
         .replace("__DURATION__", str(duration_secs))
+    item_xml = fix_pubdate_weekday(item_xml, f"{slug}/{basename}")
 
-    # Insert into feed.xml (in memory edit, then write).
-    insert_feed_item(feed_xml, item_xml)
+    # Insert into feed.xml (in memory edit, then write). Keep the original so
+    # a rejected commit can roll the feed back. Skip the insert if this guid is
+    # already there (left behind by an older version of this script).
+    feed_before = feed_xml.read_text()
+    if f">{basename}</guid>" in feed_before:
+        log(f"  {slug}/{basename}: already in feed.xml, not re-inserting")
+    else:
+        insert_feed_item(feed_xml, item_xml)
 
     # Upload to R2.
     log(f"  publish_episode.sh {slug} {basename}")
@@ -144,6 +182,7 @@ def publish_one(slug, script, mp3, basename):
         log(f"  FAIL: publish_episode.sh rc={r.returncode}")
         if r.stderr:
             log(f"  stderr: {r.stderr[:400]}")
+        feed_xml.write_text(feed_before)
         return False
 
     commit_msg = stub_msg.read_text().strip()
@@ -167,6 +206,14 @@ def publish_one(slug, script, mp3, basename):
     if r.returncode != 0:
         log(f"  FAIL: git commit rc={r.returncode}")
         log(f"  stderr: {r.stderr[:400]}")
+        # Unstage this show and roll its feed back. Otherwise the rejected
+        # feed.xml stays in the index and every later show's commit picks it
+        # up and fails the same hook (10-10 and 10-11: 0/15 published over
+        # one wrong weekday). The stubs stay on disk for the next night's
+        # lookback retry.
+        subprocess.run(["flock", GIT_LOCK, "git", "reset", "-q", "--", add_target],
+                       cwd=REPO, capture_output=True)
+        feed_xml.write_text(feed_before)
         return False
 
     stub_xml.unlink()
@@ -183,10 +230,13 @@ def main():
                     help="don't try Mistral for missing MP3s")
     ap.add_argument("--skip-push", action="store_true",
                     help="commit but don't push")
+    ap.add_argument("--lookback-days", type=int, default=3,
+                    help="also retry uncommitted scripts (stub still on disk) "
+                         "from this many previous days; 0 = today only")
     args = ap.parse_args()
 
     log(f"=== publish_pending.py date={args.date} ===")
-    items = discover_pending(args.date)
+    items = discover_pending(args.date, args.lookback_days)
     log(f"discovered {len(items)} script(s)")
     for slug, _, mp3, base in items:
         log(f"  {slug}/{base} — mp3 {'YES' if mp3.exists() else 'NO'}")
