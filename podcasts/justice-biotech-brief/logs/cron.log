@@ -3946,3 +3946,53 @@ News/press, 2026-10-08 → 10-09:
 
 **Novelty check:** web search confirms prior TIGIT-CD28 CSR work (JITC 2019) and a PD-1/TIGIT-CD28 construct — the paper acknowledges both. Not a re-post; the claimed novelty is the tonic-signaling diagnosis and the N182F fix, and the script says so rather than calling it first-in-class. Grepped the extraction for "placeholder" (0 hits).
 === 2026-10-09T02:52:56-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-10T02:40:10-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` was set, so I wrote the script plus the two stub files and did **not** run TTS, publish, update `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Today's pick:** Tecentriq (atezolizumab) — FDA's approval yesterday (10-09) of the first adjuvant immunotherapy regimen in colon cancer, stage III dMMR, on ATOMIC. Read in full: the NEJM ATOMIC paper via Europe PMC (PMC13020640), plus the Genentech release. The episode's argument is the DFS/OS split (HR 0.50 for recurrence, 0.90 for death, 31 vs 33 deaths) read mechanistically — dMMR relapses get PD-1 blockade anyway — the chemo-duration subgroup that exposes the arm the trial never ran, and the neoadjuvant case (NICHE-2/NICHE-3) that checkpoint blockade wants the antigen and the draining nodes still in the patient.
+
+Files:
+- `podcasts/justice-biotech-brief/scripts/2026-10-10-tecentriq-atomic-adjuvant-dmmr-colon-cancer-approval.md`
+- `.rss-item.xml` (validated as XML) and `.commit-msg`
+
+**Candidate funnel**
+
+- **bioRxiv** — 10-09 + 10-10, full pagination, 332 v1 posts scanned; 13 keyword hits, 1 substantive:
+  - NECTIN4 couples enfortumab vedotin targetability to antitumor immunity in bladder cancer — 10.64898/2026.10.07.757381 — **deferred, full text unavailable** (`.full` returned the 17-byte 429; helper fell through to abstract-only). Logged to revisit.
+- **News/press (BioSpace per-section RSS, Endpoints feed)** — ~90 items scanned, 7 on-beat and in-window:
+  - **Tecentriq adjuvant stage III dMMR colon cancer FDA approval (10-09)** — ✅ **chosen**
+  - Oncomatryx OMTX305 FAP×CD3 TCE in patient tumor slices, Science Advances — rejected: paper published 09-11, the 10-09 PR is a month-late promo (full text was readable via EPMC)
+  - Vir/Astellas VIR-5500 PSMA dual-masked TCE Fast Track (10-08) — designation only, no new data
+  - NovaBridge givastomig CLDN18.2×4-1BB (10-08) — ESMO *presentation announcement*, data Oct 25
+  - BMS iberdomide + dara/dex Phase 3 PFS win (10-08) — shipped by calibr-briefing
+  - Merck barred from subcutaneous Keytruda in 8 EU countries; Alumis envudeucitinib Ph3 psoriasis — off-beat/commercial
+- **Fierce Biotech + Fierce Pharma RSS — FAILED** (HTTP 200, 5.6 KB, zero `<item>` elements; blocked from this IP). Proceeded per PIPELINE.md; Endpoints and BioSpace covered the same ground.
+- **Policy/funder pages** — not swept this run; the news tier produced a clearly dominant, fully-readable pick.
+=== 2026-10-10T02:46:15-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-11T02:40:11-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I stopped at the script + two stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit. `publish_pending.py` will do those.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-10-11-bhv-1300-mode-igg-degrader-ono-license-graves-phase-3.md` (1,220 words)
+- `…​.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders in place)
+- `…​.commit-msg`
+
+**Pick:** BHV-1300 — Ono's $80M regional license (10-08) on Biohaven's MoDE pan-IgG extracellular degrader portfolio. The episode runs the mechanism (bifunctional small molecule bridging IgG to hepatocyte ASGPR → lysosome; degrader logic outside the cell) against FcRn blockade, then takes three positions: a pan-IgG1 degrader can clear a co-administered therapeutic monoclonal *without* FcRn, so "no FcRn interaction" isn't combination safety; the headline Graves' numbers (>80% TSHR-IgG1 by wk 12, free T4 normal at a median 3 wks) are **n=3 in the figure legend**, inside a 15-patient open-label safety study with no control, and batoclimab's open-label Ph2a already showed 74% TRAb at wk 12 — so "deeper than FcRn" isn't yet a class gap; but Graves' is still the right test, because the stimulating TSHR-IgG1 is causal, the opposite of Sjögren's where efgartigimod just stopped for futility.
+
+**Candidate funnel**
+
+- **bioRxiv** 10-10 + 10-11, full pagination: 154 entries, 92 at v1. One keyword survivor (mast-cell receptor in systemic sclerosis) — off-beat, discarded. **0 shortlisted.**
+- **medRxiv** 10-09 → 10-11, full pagination: 55 entries. One survivor (pan-cancer immune profile score for CPI benefit, `10.64898/2026.10.07.26364989`) — biomarker scoring, off-beat. **0 shortlisted.**
+- **Open deferral retested — still deferred:** NECTIN4 / enfortumab vedotin targetability in bladder cancer (`10.64898/2026.10.07.757381`). `.full` now returns a clean 200 at 155 KB but is **still abstract-only** (no Results heading); `.full.pdf` 429s via curl, via jina, and via WebFetch-on-jina across three spaced attempts. Day 4 of render lag — ineligible today, retest tomorrow.
+- **Journal RSS** (nature, nm, ni, nbt, natcancer), ≥10-08: nothing on-beat — corrections, news features, one AI scoping review.
+- **Source failures:** BioSpace `/rss/news/` and `/rss/press-releases/` → 404; GlobeNewswire clinical-study RSS → 403; Fierce Biotech article pages → 333-byte tracker stub via jina. Proceeded on Endpoints + Fierce homepage + PR Newswire, which carried the day.
+- **News shortlist** (Sunday — zero net-new weekend items; fell back to uncovered Thu–Fri):
+  - ✅ **BHV-1300 / Ono–Biohaven IgG degrader license, 10-08** — *chosen*
+  - Aspen Neuroscience + Bambusa (I&I bispecific) IPO filings, 10-09 — financial, no data
+  - RevMed Rasonque new data, 10-09 — off-beat (RAS lane, blackbird's)
+  - Curium generic radioligand pricing, 10-09 — off-beat
+  - Endeavor Hedgehog inhibitor Ph2b IPF win — calibr shipped 10-09
+  - Chai Discovery / GSK AI biologics deal — calibr shipped as 10-10 spotlight
+
+One caveat worth flagging: the pick is a **10-08 (Thursday)** item, outside the show's nominal 1–2 day news window, taken under the Sunday weekend-gap carve-out. bioRxiv and medRxiv were genuinely empty for the window, and nothing on-beat published Friday or Saturday.
+=== 2026-10-11T02:50:13-07:00 done  justice-biotech-brief (exit 0) ===
