@@ -1,0 +1,4 @@
+Script body: 5645 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2952 chars) -> 140.6s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2692 chars) -> 126.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/justice-biotech-brief/episodes/2026-10-12-cadonilimab-compassion-40-perioperative-dmmr-colon-phase-3.mp3 [mistral] 2,431,730 bytes, 303.9s

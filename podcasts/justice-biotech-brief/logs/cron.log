@@ -3996,3 +3996,33 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I stopped at the scrip
 
 One caveat worth flagging: the pick is a **10-08 (Thursday)** item, outside the show's nominal 1–2 day news window, taken under the Sunday weekend-gap carve-out. bioRxiv and medRxiv were genuinely empty for the window, and nothing on-beat published Friday or Saturday.
 === 2026-10-11T02:50:13-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-12T02:40:12-07:00 start justice-biotech-brief ===
+I've written today's Justice's Biotech Brief episode and its two stub files. Because `SKIP_TTS=1` is set, I didn't run audio generation, publish, edit `feed.xml` or commit; `publish_pending.py` does those after the batch audio run.
+
+**Today's pick:** cadonilimab, Akeso's PD-1×CTLA-4 bispecific, starting COMPASSION-40. It's a 386-patient Phase 3 giving the drug alone before and after surgery in resectable stage IIB–III dMMR colon cancer, compared with surgery first and then chemotherapy. The script is about 886 words, roughly 5 minutes. Its main argument:
+- **One of the two primary endpoints can barely lose.** The trial measures complete tumor clearance at surgery, but the control arm gets no treatment before surgery, so its rate is near zero by design. Event-free survival is the real test.
+- **Akeso's 84.6% Phase 2 figure** only counts patients who reached surgery.
+- **The drug's toxicity advantage matters less here.** A short course of nivolumab plus one low dose of ipilimumab (the NICHE-2 trial) already kept serious immune side effects to 4%. The molecule's design does favor dosing before surgery, which connects to Friday's episode on treatment timing.
+- **The competitor is further along.** GSK's 892-patient AZUR-2 trial of dostarlimab is about a year ahead, and neither trial is compared against the atezolizumab regimen the FDA approved on 10-09.
+
+The full scientific paper wasn't available for this pick. The script draws on the press release, both trial registry entries, and Akeso's 2023 paper on the molecule's design. I couldn't read the ESMO Phase 2 abstract itself; the details about its design come from a search-result summary.
+
+**Funnel**
+- **bioRxiv/medRxiv** (10-11 and 10-12, every page fetched): 278 posts, 231 first versions, 2 on-topic. Neither could be read in full (the server throttled them), so both are deferred:
+  - CD19 CAR regulatory T cells in lupus — https://www.biorxiv.org/content/10.64898/2026.10.05.756761v1
+  - CXCR3 on vaccine-boosted transferred T cells — https://www.biorxiv.org/content/10.64898/2026.10.04.753375v1
+  - Last week's NECTIN4 preprint is still blocked (day 5).
+- **News:** Endpoints and Fierce still showed only Friday stories at 02:40 PT. Business Wire returned 403. The BioSpace press-release page and PR Newswire worked. Shortlist:
+  - **CHOSEN:** cadonilimab COMPASSION-40 — https://www.prnewswire.com/news-releases/first-patient-dosed-in-phase-iii-perioperative-study-of-cadonilimab-pd-1ctla-4-in-colon-cancer-302904988.html
+  - Opamtistomig (PD-L1×4-1BB bispecific) second FDA Fast Track, in biliary tract cancer. Not taken: covered here on 08-01 and in today's Calibr briefing.
+  - AbbVie Rinvoq (a JAK inhibitor) data at the ACG gastroenterology meeting. Not taken: no ADC angle.
+  - Merck's remigromig trispecific. Not taken: today's Calibr spotlight, and it's an eye drug.
+- **NIH, NSF and ARPA-H pages:** I didn't check these this run.
+
+I added today's run notes and the open deferrals to the show's memory log. Stub files from 09-29 are still sitting uncommitted in this show's `scripts/` folder; I left them alone.
+
+Files are in `podcasts/justice-biotech-brief/scripts/`:
+- `2026-10-12-cadonilimab-compassion-40-perioperative-dmmr-colon-phase-3.md`
+- `2026-10-12-cadonilimab-compassion-40-perioperative-dmmr-colon-phase-3.rss-item.xml`
+- `2026-10-12-cadonilimab-compassion-40-perioperative-dmmr-colon-phase-3.commit-msg`
+=== 2026-10-12T02:46:41-07:00 done  justice-biotech-brief (exit 0) ===
