@@ -753,7 +753,7 @@ projects. News touching any of them is portfolio-relevant on the investment,
 even where the company has no detail entry in this file yet.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-10-06_
+_Last update: 2026-10-10_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases · cancer (Blackbird funded the **Intergalactic Center for
@@ -937,6 +937,7 @@ https://www.tedcomd.com/news-events/press-releases/2026/tedco-invests-750000-ast
     https://news.europawire.eu/qiagen-completes-u-s-qiastat-dx-bloodstream-infection-portfolio-with-fda-clearance-of-new-gram-negative-bacteria-and-amr-panel/eu-press-release/2026/09/28/13/31/55/181410/ ·
     https://clpmag.com/diagnostic-technologies/molecular-diagnostics/fda-clears-qiagen-qiastatdx-gram-negative-bcid-amr-panel/
 
+**COPD theme — IL-4Rα×IL-5 BISPECIFIC COPD PoC 1H 2027 (added 2026-10-10 Portfolio Watch item 2).** Bambusa Therapeutics (inc. 2024-03, assets from BioNTech Zhuhai/ex-Biotheus, $4M upfront, $136.1M raised) S-1 2026-10-09: BBT002 4-week IV COPD PoC + 12-week CRSwNP PoC 1H 2027. IL-5 arm ⇒ eosinophil-dependent; 4-wk = biomarkers only. Source: https://www.sec.gov/Archives/edgar/data/2044950/000162828026065557/bambusa-sx1.htm
 **COPD theme — the UPSTREAM ALARMIN LAYER IS CONTESTED AT FOUR POINTS ON ONE PATHWAY; the two differentiators on offer were a PROPERTY or a POPULATION, and as of 2026-09-09 the POPULATION lane is TAKEN
 (opened 2026-08-29 Portfolio Watch item 4; four-seat map added 2026-09-08 Portfolio Watch LEAD; full tozorakimab dataset + eosinophil gradient added 2026-09-09 Portfolio Watch LEAD).** Two independent wins for the epithelial alarmin
 **TSLP** in a single week across two organs: **Tezspire (tezepelumab) Phase 3 CROSSING in
@@ -1139,6 +1140,7 @@ and it closed because the team had ONE ION-CHANNEL EXIT ALREADY. QUESTION FOR EA
 founder with a relevant exit, and are we recruiting that person BEFORE the science is ready rather than after?** Source:
 https://biobuzz.io/news/charlottesvilles-navion-neurosciences-raises-10-8-million-to-build-precision-medicines-for-misfiring-neurons/
 
+**PARKINSON'S theme — AUTOLOGOUS iPSC CELL REPLACEMENT GOES PUBLIC ON A $1,000 SCRIPPS LICENSE (added 2026-10-10 Portfolio Watch LEAD; S-1 filed 2026-10-09).** Aspen Neuroscience (ticker ASPE) sasineprocel: open-label ASPIRO, 15 dosed, MDS-UPDRS III OFF −14.6/−14.5/−16.1 at 6/12/18 mo (n=8), −15.8 at 24 mo (n=4); Good On Time +2.2–2.7 h; no immunosuppression (vs BlueRock/Bayer bemdaneprocel). FDA wants a control (possibly sham) Phase 3, dosing 2H 2027. ~$340M raised. **License: Scripps + Summit for Stem Cell Foundation (nonprofit), effective 2018-07-27, assigned to Aspen 2018-10-30; $1,000 upfront, 1% royalty, 15%/5% sublicense share; diligence → non-exclusive conversion.** ⇒ (Eddie + Esther) template for nonprofit-holds-then-assigns; decide what Blackbird Labs retains on assignment. Source: https://www.sec.gov/Archives/edgar/data/2124080/000119312526419104/na-20261009.htm
 **PARKINSON'S theme — FIRST NON-DOPAMINERGIC CELL-TYPE-RESTRICTED ADJUNCT WINS A PHASE 3 (added 2026-10-08; MDS Seoul 2026-10-06/07).** Cerevance solengepras (GPR6 inverse agonist) ARISE positive, OFF Δ −0.61 h — symptomatic, all-comers, works only on top of dopaminergic therapy (monotherapy ASCEND missed): same shape as tavapadon/Ariadne, disease-modification lane unchanged. Same congress: **Lundbeck** Lu AF28996 (D1/D2 agonist prodrug) into randomized Ph2 DARE2 (~150); **Arvinas ARV-102** (LRRK2 PROTAC) dose-dependent oculomotor improvement + CSF LRRK2 associations, n=24, 28 d — fits the measurable-defect rule. Details under the Neuropsych NewCo entry.
 **PARKINSON'S theme — A PRECLINICAL ASSET GOT $100M UP FRONT BECAUSE ITS PATIENT IS FOUND BY GENOTYPE AND ITS DEFECT IS MEASURABLE; THE SELLER KEPT THE PLATFORM (added 2026-10-06 Portfolio Watch item 2; announced 2026-10-05).** **Alector → Genentech: AL050**, engineered GCase (higher activity, longer half-life) on Alector's **Brain Carrier**, preclinical, GBA1-carrier-weighted GCase deficiency. **$100M upfront + up to $1.17B milestones + royalties; Alector RETAINS the carrier platform.** Alector context: GSK collab terminated, PROGRESS-AD futility, ~$245M market cap. **⇒ (Anthony + Jon) screen = findable patient + measurable defect (answers the 09-08 rule); Roche owns its own Brainshuttle (trontinemab) ⇒ inference it paid for enzyme + population; ⇒ structure: license the asset, keep the chassis (GPR52 NewCo, Aletira SELEXON).** Source: https://endpoints.news/roche-enlists-alector-in-parkinsons-deal-paying-100m-upfront/
 
@@ -1375,7 +1377,18 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-10-05_
+_Last update: 2026-10-11_
+- **THE RETINAL EFFICACY BAR, STATED IN NUMBERS: A FIRST-IN-CLASS MECHANISM WITH A ~1,000-PATIENT PIVOTAL LANDED NON-INFERIOR BUT NUMERICALLY *BEHIND* MONTHLY ANTI-VEGF, WITH A 6-FOLD SAFETY SIGNAL. USE 11.8 LETTERS AS THE COMPARATOR, NOT NATURAL HISTORY.**
+  **Merck remigromig (MK-3000, ex-EYE103, EyeBio)** — tetravalent **tri-specific Wnt-pathway agonist**, intravitreal; mechanism is **blood-retinal-barrier repair** rather than suppression of neovascularization. First non-anti-VEGF mechanism in 20+ years to clear a pivotal DME bar. **BRUNELLO** (NCT06571045) Phase 2b/3, **n=984**, 1:1:1 remigromig 0.5 mg vs 0.8 mg vs **ranibizumab 0.5 mg**, q4w year 1.
+  **Week-52 BCVA: +9.1 letters (95% CI 8.1-10.1; p=0.0129 adj) and +8.7 (95% CI 7.7-9.8; p=0.0222) vs ranibizumab +11.8 (95% CI 10.7-12.8).** Non-inferiority met at both doses; **no secondary endpoint demonstrated superiority.**
+  **Safety: PDR-related AEs (incl. new-onset) 6.7% / 6.1% vs 0.9%; AE discontinuations 4.9% / 4.5% vs 0.9%.** Merck attributes this to the barrier-repair mechanism not holding back neovascularization, calls cases "generally manageable," and says additional analyses are underway. Pivotal **BAROLO** (NCT06957080) ongoing.
+  **⇒ THE READ (Avi Khanna + Hugh): beating anti-VEGF on letters is still unsolved, and a novel mechanism buys you a safety question rather than a free pass. Any Aletira retinal case must be built against 11.8 letters.**
+  Source: https://www.merck.com/news/merck-presents-one-year-results-from-the-pivotal-phase-2b-3-brunello-study-evaluating-remigromig-a-tri-specific-agonist-of-the-wingless-related-integration-site-wnt-pathway-in-adults-with-diabetic/
+- **THE COMPETING PHILOSOPHY IN DEGENERATIVE RETINA IS GENE-AGNOSTIC FUNCTION GRAFTING, WHICH SIDESTEPS THE PROBLEM SELEXON EXISTS TO SOLVE — AND IT IS NOW GOING STRAIGHT TO A RANDOMIZED PHASE 2.**
+  **Nanoscope Therapeutics son-vec / sonpiretigene isteparvovec** (formerly MCO-010), presented at **AAO 2026** (New Orleans, Oct 9-12), lead investigator **David S. Boyer, M.D.** AAV delivery of a **multi-characteristic opsin to ON bipolar cells** that survive photoreceptor death, making them directly light-responsive. **Mutation-agnostic by construction; single office-based INTRAVITREAL injection.** Stargardt (open-label Ph2, enrolled BCVA 20/200 or worse): macula-limited-atrophy subgroup gained a mean **12 ETDRS letters**, no SAEs reported (enrollment and subgroup size not reported; published 6-patient STARLIGHT trial gave **5.5 letters at 48 wk**, so 12 is a selected slice). NHP laser-induced GA model: opsin expression + significantly stronger mfERG vs untreated — **unpublished**. Plan: **randomized controlled Phase 2 in geographic atrophy with NO separate Phase 1**, then Ph2b/3a.
+  **⇒ THE READ (Avi Khanna + Hugh): optogenetics installs a NEW FUNCTION in a surviving cell rather than restoring a gene — so there is no native promoter to respect, no expression level to tune, no dosage sensitivity. It bypasses the SELEXON value proposition entirely wherever a blunt function graft is good enough.** NOT a threat to the cochlear program, where restoring a specific protein in a specific cell at a specific level is the whole job.
+  **⇒ DISCIPLINE IT IMPOSES: be able to state crisply WHICH indications make faithful expression control load-bearing and which tolerate a gene-agnostic graft — before a partner asks.** Pairs with the standing payload-budget / capacity-vs-control trade-off item.
+  Source: https://www.ophthalmologytimes.com/view/aao-2026-optogenetic-gene-therapy-heads-to-phase-2-trial-in-geographic-atrophy
 - **THE FIELD'S FIX FOR PAYLOAD SIZE DOES NOTHING FOR EXPRESSION CONTROL, AND OURS COSTS PAYLOAD — NAME THE TRADE-OFF BEFORE A PARTNER DOES (added 2026-10-05 Portfolio Watch item 2; presented 2026-10-04 at the 26th EURETINA Congress, Vienna).**
   **AAVantgarde Bio (Milan).** **AAVB-081 / LUCE-1** Phase 1/2: **dual AAV8.MYO7A** (DNA-splicing dual vector), **subretinal**, adults with **Usher syndrome type 1B** retinitis pigmentosa. **n=15**, three dose cohorts, enrolment completed 2026-01. Presented by **Prof. Francesca Simonelli.**
   **SAFETY (2026-08-03 cut): no SAEs, no DLTs, no discontinuations; ocular inflammation LIMITED and CORTICOSTEROID-RESPONSIVE.**
@@ -2420,7 +2433,8 @@ _Last update: 2026-08-28_
   it. KRAS-landscape news is no longer portfolio-relevant on aSKY's account
   (Clasp remains a live KRAS-adjacent holding).
 ### Neuropsychiatric NewCo (schizophrenia) — Lieber Institute + Third Rock ✅
-_Last update: 2026-10-09_
+_Last update: 2026-10-10_
+- **ADHERENCE IS NOW OWNED BY A GENERIC-MOLECULE LAI (added 2026-10-10 Portfolio Watch item 4; FDA approval 2026-10-09).** Teva WELTRUZA, once-monthly SC olanzapine (318/425/531 mg), no loading dose, no oral supplement, no post-injection monitoring per Teva; SOLARIS n=675. ⇒ GPR52 differentiation = tolerability (weight/metabolic/sedation) + negative/cognitive symptoms; measure metabolic markers from first-in-patient. Source: https://www.biospace.com/press-releases/teva-announces-u-s-food-and-drug-administration-fda-approval-of-weltruza-olanzapine-for-extended-release-injectable-suspension-as-the-first-and-only-once-monthly-subcutaneous-injectable-olanzapine-for-adults-with-schizophrenia
 - **FDA HOLDS A TRS PHASE 3 ON A MECHANISM-CLASS PRIOR + A RAW DEATH COUNT THE EXPOSURE-ADJUSTED RATE CONTRADICTS (added 2026-10-09 Portfolio Watch LEAD; Newron release 2026-10-08).** **Newron evenamide** (Na-channel-blocking glutamate modulator, add-on for treatment-resistant schizophrenia): US enrollment hold on ENIGMA-TRS 2 since 2026-04-29, maintained 09-25. FDA's written reasoning: **4 deaths on drug vs 1 on placebo** (0.56% vs 0.27%) + **sodium-channel-blocker arrhythmia concern**; exposure-adjusted **1.31 vs 1.81 per 100 PY favours drug**; >10,000 ECGs, slight QTc SHORTENING; implied ~714 drug / ~370 placebo. ENIGMA-TRS 1 (≥600, 20 countries) topline **Q1 2027**; ex-US enrollment continues. **⇒ (Hemaka + Avi) prespecify mortality analysis, independent death adjudication and background-rate comparison before first patient; write the GPR52-agonist class-prior (cardiac, seizure) answer into the pre-IND dossier; (Eddie) US-only hold ⇒ global FIH-in-patients footprint is a hedge; a slipping evenamide keeps the TRS add-on slot open.** Source: https://www.globenewswire.com/news-release/2026/10/08/3377125/0/en/newron-provides-update-on-fda-clinical-hold-and-phase-3-enigma-trs-development-program.html
 - **A SISTER ORPHAN Gs RECEPTOR IN THE SAME D2 INDIRECT-PATHWAY MSNs WON A PHASE 3 — THE NEAREST MECHANISTIC PRECEDENT GPR52 HAS (added 2026-10-08 Portfolio Watch LEAD; announced 2026-10-07).** **Cerevance solengepras (CVN424), oral GPR6 INVERSE AGONIST, Phase 3 ARISE** (n=341, adjunct in fluctuating PD): 150 mg OFF Δ −0.61 h vs placebo (p=0.035), ON-without-troublesome-dyskinesia +0.60 h (p=0.047), no SAEs at 150 mg; 75 mg efficacy not reported; monotherapy Phase 2 ASCEND MISSED (2025). GPR6 inverse agonism lowers cAMP in D2 MSNs (D2-agonist-like); GPR52 agonism raises it (D2-antagonist-like; Komatsu 2014, Takeda CNS unit).
   **⇒ (Hemaka) put it in the pre-IND book as nearest precedent — NOT a class (opposite direction, other indication); ⇒ (Avi) human proof that cAMP tone in these cells moves motor function ⇒ prespecify an EPS/motor-safety readout from the first patient study; ⇒ (Eddie) ADD TAKEDA to the bidder list (originated GPR52 as a psychiatric target, co-founded Cerevance); Cerevance itself a possible acquirer if approved; ⇒ ASCEND warns against assuming monotherapy works for an indirect-pathway mechanism.** Target validated on Cerevance's NETSseq (cell-type nuclear sequencing of human postmortem brain) — the Lieber target-generation thesis now has a pivotal win to point to.
@@ -3225,7 +3239,8 @@ _Last update: 2026-10-09_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-10-09_
+_Last update: 2026-10-10_
+- **IgG LOWERING ADVANCES WHERE THE AUTOANTIBODY IS CAUSAL (added 2026-10-10 Portfolio Watch item 3; Biohaven 2026-10-08).** Biohaven MoDE degrader BHV-1300 (Phase 3 Graves'; spares IgG3; Yale Spiegel chemistry) licensed to Ono for Japan/Korea/Taiwan/ASEAN: $80M upfront + $20M near-term + ~20% royalties; Biohaven keeps US/EU/China. ⇒ screen Winnow indications as antibody-causal (depletion competes) vs T-cell-driven. Source: https://finviz.com/news/400137/biohaven-enters-strategic-licensing-agreement-with-ono-pharma-for-extracellular-igg-degraders-in-japan-and-select-asian-regions-lead-candidate-bhv-1300-in-phase-3-for-graves-disease
 - **PROVOCATION DESIGN CONFIRMED, SAME COMPANY SAME DAY (added 2026-10-09 Portfolio Watch item 3; argenx 2026-10-08).** Efgartigimod SC **UNITY** Sjögren's Ph3 (n=630, wk-48 systemic activity) stopped for **futility** at interim (>500 pts), stock ~−14%; **FB102 (anti-CD122, ex-Forte $2.2B)** celiac Ph2 **n=126, 2:2:1 IV, 8-wk gluten challenge, Vh:Cd day 78 p=0.0176** → Phase 3. With Teva anti-IL-15 (09-03), two antibodies on the same IEL/IL-15 axis positive in the challenge model ⇒ celiac becoming a two-company indication; **the 09-03 provocation question is now the priority diligence item for each Winnow indication.** Source: https://www.sec.gov/Archives/edgar/data/0001697862/000110465926114491/tm2627263d1_ex99-2.htm
 - **THE ATTRIBUTION FOR THE AUTOIMMUNE CAR-T DEATHS IS NOW ON THE RECORD FROM OPERATORS, IT POINTS AT MANUFACTURING, AND IT NARROWS OUR CONTROL-ARCHITECTURE ROW RATHER THAN WIDENING IT (added 2026-10-05 Portfolio Watch LEAD; published 2026-10-05). Follow-up on the 09-01 LEAD — the EVENTS are not new, the ATTRIBUTION and the Kyverna timeline are.**
   **Will Ho (CEO, IN8bio)** attributes the Novartis rap-cel and BMS zola-cel safety events to **ACCELERATED MANUFACTURING PROTOCOLS** that over-stimulate T cells into excess cytokine production, and **explicitly distinguishes that from an inherent CAR-T liability** — i.e. the **William Blair / Sami Corwin hypothesis of 09-02, now stated by an operator rather than an analyst.**
@@ -3846,7 +3861,12 @@ _Last update: 2026-10-09_
   https://www.biospace.com/business/bms-ends-cellares-pact-over-cell-therapy-production-problems-triggering-layoffs
 
 ### Artemyx — cfDNA diagnostics for chronic disease ✅
-_Last update: 2026-10-04_
+_Last update: 2026-10-11_
+- **A NEW ANALYTE COMPARTMENT CLAIM WORTH TRACKING: >99% OF DETECTABLE MUTANT TUMOR DNA MAY BE TETHERED TO THE RED CELL SURFACE, NOT FREE IN PLASMA.**
+  Penn (Perelman; **Nilam S. Mangalmurti** corresponding, with **Steven M. Albelda**), bioRxiv posted 2026-10-09, https://www.biorxiv.org/content/10.64898/2026.10.07.755430v1 — "The Red Blood Cell Surface Defines a Distinct Tumor DNA Compartment for Liquid Biopsy." Term: **rtDNA**. Captured within **5 min**, detectable from as few as **1,000 RBCs**, stable **7 weeks at -20 C**, **DNase-strippable on intact cells** (surface-tethered, not internalized). **Receptor-mediated and TUNABLE:** anti-TLR9 reduces capture; neuraminidase desialylation increases capture AND detectable surface TLR9; the two combined cancel. Subcutaneous A549 xenograft: mutant KRAS on RBCs in **all** animals, **undetectable in matched plasma**. **n=12 NSCLC patients: rtDNA recovered the tissue-NGS driver 12/12; of the 6 with a matched commercial plasma liquid biopsy, that assay found the driver in 3 (50%).**
+  **CANDID LIMITS — do not overclaim:** n=12; qPCR/ddPCR against a mutation already known from tissue is **confirmatory, not screening**; nothing at genome scale, which is where the fragmentomics thesis lives; the plasma-negative mouse comparison is in immunodeficient NSG mice where plasma ctDNA is low anyway; refs 1-5 are the group's own prior work.
+  **IP shape:** the compartment itself is near-unpatentable; claimable surface = deliberate glycan remodeling / TLR9 engagement to INCREASE capture (process), plus enrichment-and-extraction chemistry off an RBC pellet at scale.
+  **⇒ FOR ARTEMYX THIS IS SUPPORTIVE, NOT THREATENING (Avi Khanna):** Artemyx is longitudinal monitoring in chronic disease, not de-novo screening — known target, serial measurement in the same patient, freezer-stable sample is **exactly** the use case these data support. ACTION: ask what the limit of detection does if the input is the RBC pellet instead of, or in addition to, plasma.
 - **THE NORMAL BACKGROUND IS BIGGER THAN ANYONE MODELLED, AND THE ANSWER IS A WITHIN-PATIENT BASELINE — WHICH SUITS CHRONIC-DISEASE MONITORING BETTER THAN IT SUITS SCREENING (added 2026-10-04 Radar pick 2; preprint posted 2026-09-28).**
   **Velculescu lab (JHU SKCCC)**, bioRxiv 10.64898/2026.09.22.753313. 47 normal tissues / 168 samples, long- + short-read WGS: **mosaic structural variants in every individual and every germ layer, median 285.2 kb/genome**, ~half of breakpoints independently validated, mostly **repeat-mediated**, **8.3% overlapping functional elements** (enriched vs germline). Alignment-free k-mer (ARTEMIS) recovers the signal from short reads.
   Across 15 cancer types, **tumour-related repeat variation is similar in SCALE to normal mosaic variation** — the specificity problem stated quantitatively; a population reference cannot separate them.
@@ -4036,7 +4056,8 @@ _Last update: 2026-10-04_
   https://www.biopharmadive.com/news/roche-eli-lilly-get-fda-nod-for-new-alzheimers-blood-test/828720/
 
 ### DELFI Diagnostics — JHU cfDNA fragmentomics, blood-based cancer screening (BioVentures position) ✅
-_Last update: 2026-09-24_
+_Last update: 2026-10-11_
+- **AN INPUT-COMPARTMENT QUESTION WORTH ASKING BEFORE A COMPETITOR DOES (Jon Robbins → Velculescu group).** If a large share of tumor-derived molecules is selectively sequestered on the RBC surface by a **receptor-mediated, glycan-modulated** process (Penn rtDNA preprint, 2026-10-09 — full detail under Artemyx above), then the plasma fragment distribution is a **post-filter** readout rather than a neutral sample of what the tumor shed. This does not invalidate fragmentomics, which plainly works; it is a genuine question about the input, and DELFI is the right group to answer it.
 - **What:** genome-wide **cell-free-DNA FRAGMENTOMICS** + machine learning — reading patterns in the size and distribution of cfDNA
   fragments rather than tumour mutations or methylation. Lead product **FirstLook Lung**, launched **October 2023**, the **first
   commercially available blood-based lung-cancer screening test in the US**, reported **NPV 99.8%**, used to triage people at elevated
@@ -4063,7 +4084,15 @@ _Last update: 2026-09-24_
   https://www.congress.gov/bill/119th-congress/house-bill/842
 
 ### Biolinco — barcoded antibody production ✅
-_Last update: 2026-09-30_
+_Last update: 2026-10-11_
+- **STANDING POSITIONING LINE (Avi Khanna), now carried by two independent industry signals: Biolinco should pitch itself not as "we make
+  antibodies" but as THE EMPIRICAL THROUGHPUT LAYER THAT COMMODITIZED DESIGN MODELS CREATE DEMAND FOR.** Second signal: **Chai Discovery → GSK
+  collaboration (announced 2026-10-09), Chai's SIXTH large-pharma partner in nine months, terms undisclosed.** The qualifying exercise is the
+  point: Chai generated binder designs **ZERO-SHOT** (no target-specific training) and GSK's own internal wet lab reported finding **binders for
+  every target tested** with strong affinities across a diverse panel (per GSK's **Christopher Austin**). **No target count, no hit rate, no
+  affinity values disclosed — treat the specifics as marketing until published.** Directionally: if arbitrary-target binder generation is becoming
+  a solved zero-shot step, the scarce asset migrates downstream to expression, characterization and discrimination across thousands of candidates.
+  Source: https://www.biospace.com/press-releases/chai-discovery-announces-collaboration-with-gsk-following-successful-wet-lab-evaluation
 - **FOUR LARGE PHARMAS JUST MADE "ML COMPETES ON PROPERTIES, NOT TARGETS" INTO INDUSTRY POLICY AND NAMED THE PROPERTY — AND THE BOTTLENECK IS
   WET-LAB THROUGHPUT, WHICH IS BIOLINCO'S SIDE OF THE TRADE (added 2026-09-30 Portfolio Watch item 5; announced 2026-09-29).**
   **Ginkgo Datapoints (Ginkgo Bioworks) + Apheris launched the ANTIBODY DEVELOPABILITY CONSORTIUM. Founding members: AbbVie, argenx, Lundbeck,
@@ -4107,7 +4136,7 @@ _Last update: 2026-09-30_
 - **Watch:** DNA-barcoded antibody / multiplexed proteomics reagent platforms.
 
 ### Clasp Therapeutics — JHU-born precision immuno-oncology (TCR-mimic bispecific T-cell engagers) ✅
-_Last update: 2026-09-28_
+_Last update: 2026-10-11_
 - **THE COUNTER-CASE TO THE SAME WEEK'S 63-PATIENT FULL APPROVAL: A 187-PATIENT PHASE 2 THAT INVESTIGATORS CALLED "PROMISING" WAS NOT ENOUGH FOR
   *ACCELERATED* APPROVAL, AND THE FILING WAS PULLED (added 2026-09-28 Portfolio Watch item 2; reported 2026-09-28 04:30 ET). ALSO A MARK ON THE
   ONCOLOGY SURFACE TARGETS THEME.**
@@ -4227,6 +4256,21 @@ _Last update: 2026-09-28_
     Phase 1 (**SENTINEL-101**, NCT07650357). Preclinically kills HARDER against KRAS-inhibitor-
     resistant tumors + enhanced by combination with small-molecule KRAS inhibitors → positioned
     to layer on top of / after the daraxonrasib-class drugs, not compete head-to-head.
+    **ALLELE-COMPETITIVE CONTEXT (from the FDA NDA 220910 Multi-disciplinary Review, posted
+    2026-10-07; label itself is allele-agnostic and requires no RAS testing).** RASolute 302
+    exploratory subgroups, daraxonrasib vs SOC chemo — **G12V: ORR 50% vs 15%, OS HR 0.32,
+    PFS HR 0.54** · **G12D: ORR 24% vs 10%, OS HR 0.49, PFS HR 0.48** · **G12R: ORR 7% vs 14%
+    (WORSE than chemo), OS HR 0.61 (0.29–1.30), PFS HR 0.80 (0.41–1.56) — both CIs cross 1** ·
+    Q61 PFS HR 1.55 · RAS WT PFS HR 1.92. Allele mix of the n=500: G12D 43%, G12V 36%, G12R 12%.
+    **⇒ CLSP-5282 sits in the allele where the incumbent small molecule is STRONGEST** (hardest
+    segment for incremental benefit, least residual unmet need), while **G12R and the non-G12 /
+    Q61 tail are unowned white space.** FDA Table 10 attributes the gradient to *pocket* physics —
+    G12R's bulky positive arginine sterically occludes the Switch II pocket and electrostatically
+    repels the inhibitor, plus impaired PI3Kα/MEK coupling reduces canonical-RAS dependence —
+    **none of which is a property of peptide processing or pHLA display.** OPEN QUESTION (Avi
+    Khanna + Jon Robbins): does G12R yield a presentable peptide on a common HLA allele, and has
+    anyone claimed it? Hypothesis only, testable on Clasp's own platform; feeds the standing
+    ELIGIBLE-FRACTION row (G12R is only ~12% of patients and the HLA gate multiplies).
 - **Strategic read (surfaced 2026-08-15 Portfolio Watch LEAD; coverage-gap correction, NOT a
   fresh catalyst):** closes the 08-14 Adventris "is it ours?" ownership question by finding the
   confirmed KRAS check. **Blackbird now holds THREE distinct modalities against mutant KRAS
@@ -4555,7 +4599,7 @@ and competitive detail lives here — treat the news as portfolio news, not
 ecosystem news.
 
 ### Adventris Pharmaceuticals — JHU KRAS-vaccine company, Blackbird BioHub resident (mKRAS-VAX; aSKY landscape adjacency) ⚠
-_Last update: 2026-09-29_
+_Last update: 2026-10-11_
 - **THE CLEARING PRICE FOR A KRAS ASSET IS NOW SET BY A *PRECLINICAL* MOLECULE (added 2026-09-29 Portfolio Watch item 5; announced
   2026-09-28).** **Merck & Co. → SciBrunch (Shanghai): $400M UPFRONT, up to $2.13B total across "multiple indications," worldwide rights to
   SPR2015, a PRECLINICAL KRAS G12D inhibitor** ("nanomolar antiproliferative activities in various KRAS G12D-mutant cell lines while
@@ -4585,7 +4629,16 @@ _Last update: 2026-09-29_
 - **Asset — mKRAS-VAX:** off-the-shelf pooled synthetic long-peptide vaccine
   targeting the six common KRAS mutations (G12V/G12A/G12R/G12C/G12D, G13D) — trains
   T cells against the mutation itself (modality = vaccine, distinct from small
-  molecule / antibody / degrader). **Vector detail (added 2026-08-31, from the company's
+  molecule / antibody / degrader). **THE SIX-ALLELE SET IS NOW A DEMONSTRATED
+  POSITIONING ASSET, NOT JUST BREADTH:** the FDA NDA 220910 review (posted 2026-10-07;
+  full numbers under Clasp above) shows the marketed broad RAS(ON) inhibitor
+  underperforming chemotherapy on response rate in **G12R** (ORR 7% vs 14%; OS and PFS
+  CIs both cross 1), with the agency attributing it to *pocket* geometry — a bulky
+  positively charged arginine occluding Switch II. **A vaccine is indifferent to pocket
+  geometry and already covers G12R.** Context for Eddie: Merck paid SciBrunch **$400M
+  upfront** for a *preclinical* G12D-selective inhibitor nine days before that review
+  published, so the market is paying for allele-specific chemistry precisely where the
+  agency has now documented chemistry's allele-dependent ceiling. **Vector detail (added 2026-08-31, from the company's
   own public descriptor): the platform pairs "engineered, cross-reactive antigens" with a
   "next-generation TRANS-AMPLIFYING RNA vector" — i.e. the delivery arm is self-amplifying
   RNA, not only synthetic long peptide. Relevant to the 08-29 BNT122-01 read: the failure

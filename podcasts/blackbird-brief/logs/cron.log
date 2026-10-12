@@ -3473,3 +3473,74 @@ Nothing was deferred for lack of full text.
 
 I added a dated note to the session memory file on news-source access. It records that GlobeNewswire release pages download empty but fetch through WebFetch, that SEC filings work as a primary source, and that one `grep` pattern fails on this host.
 === 2026-10-09T02:21:45-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-10T02:10:09-07:00 start blackbird-brief ===
+The draft is written: about 1,350 words, roughly 7.5 minutes. It leads on Aspen, then Bambusa and Biohaven–Ono. I'm waiting on the background sweep in case it turns up a fresher portfolio item before I write the stubs.
+
+I wrote today's Blackbird Brief, a Saturday Portfolio Watch. `SKIP_TTS=1` was set, so I did not generate audio, publish, edit the feed or commit. The script and its two stub files are in place for the batch TTS step and `publish_pending.py`.
+
+**Files**
+- Script: `podcasts/blackbird-brief/scripts/2026-10-10-portfolio-watch.md` (about 1,600 spoken words, roughly 9 minutes).
+- Stubs: `2026-10-10-portfolio-watch.rss-item.xml` (with `__LENGTH__`/`__DURATION__` placeholders; parses as XML) and `2026-10-10-portfolio-watch.commit-msg`.
+- Dedup ledger: 5 keys appended to `state/shipped.jsonl` (now 93 episodes).
+- `memory/blackbird-portfolio.md`: four new bullets added to existing entries (Parkinson's, COPD, Winnow, GPR52 NewCo), with the `_Last update:_` dates bumped. Nothing was appended as a dated log.
+
+**Episode lineup**
+1. **Lead, for the Parkinson's theme and how Blackbird structures license assignments:** Aspen Neuroscience filed to go public (S-1). Its patient-derived stem-cell therapy for Parkinson's is licensed from Scripps on a $1,000 upfront and a 1% royalty. A nonprofit foundation was a party to the license and assigned it to the company. The trial is open-label with 15 patients, and FDA expects a controlled Phase 3, possibly with sham surgery.
+2. **COPD theme:** Bambusa filed for an IPO 30 months after it was founded, on antibodies licensed from BioNTech's Chinese unit. Its IL-4Rα×IL-5 antibody has a COPD proof-of-concept readout in the first half of 2027.
+3. **Winnow:** Biohaven licensed Asian rights to its IgG degrader, in Phase 3 for Graves' disease, to Ono for $80M upfront. The read for Winnow is that antibody-lowering drugs advance where the autoantibody causes the disease.
+4. **GPR52 NewCo:** FDA approved Teva's once-monthly olanzapine injection (Weltruza). Adherence stops being an argument for a new mechanism.
+
+The watch list covers Natera's Breakthrough Device designation (relevant to DELFI and Artemyx), the City Therapeutics and Iambic IPO terms, and Kyverna's data at ACTRIMS–ECTRIMS, October 21–23.
+
+**Candidate funnel**
+- **Sources:**
+  - Endpoints index via jina: 21 headlines, 7 on target.
+  - BioPharma Dive: 31 headlines, 4 on target.
+  - BioSpace index: 9 news links; its press-release list was missing from the render.
+  - Fierce: blocked (480 bytes).
+  - GlobeNewswire keyword search: 12 queries, every one returned an empty list.
+  - SEC EDGAR: S-1s readable directly. The first Bambusa fetch returned 0 bytes and worked on retry.
+  - Background news sweep: 7 dated items from October 7–10, none mentioning a portfolio company. It could not read Hopkins Hub or the Johns Hopkins tech-transfer office (JHTV) because of Cloudflare, so a Hopkins item there may have been missed.
+- **Dedup:** 9 candidates, 9 fresh. The Hopkins/Pearl urine aspergillosis test was dropped as already covered on 10-08.
+- **Shortlist** (✅ = in the episode; Natera and the City/Iambic terms are watch-list lines):
+  - ✅ Aspen Neuroscience S-1 (LEAD): https://www.sec.gov/Archives/edgar/data/2124080/000119312526419104/na-20261009.htm
+  - ✅ Bambusa S-1: https://www.sec.gov/Archives/edgar/data/2044950/000162828026065557/bambusa-sx1.htm
+  - ✅ Biohaven–Ono: https://finviz.com/news/400137/biohaven-enters-strategic-licensing-agreement-with-ono-pharma-for-extracellular-igg-degraders-in-japan-and-select-asian-regions-lead-candidate-bhv-1300-in-phase-3-for-graves-disease
+  - ✅ Teva Weltruza approval: https://www.biospace.com/press-releases/teva-announces-u-s-food-and-drug-administration-fda-approval-of-weltruza-olanzapine-for-extended-release-injectable-suspension-as-the-first-and-only-once-monthly-subcutaneous-injectable-olanzapine-for-adults-with-schizophrenia
+  - ✅ Natera MCED designation: https://www.biospace.com/press-releases/fda-grants-breakthrough-device-designation-for-nateras-multi-cancer-early-detection-assay
+  - ✅ City Therapeutics / Iambic IPO terms: https://endpoints.news/city-therapeutics-targets-158m-ipo-iambic-seeks-135m-nasdaq-debut/
+  - Chai–GSK: dropped; Endpoints exclusive behind a paywall, no primary source found. https://endpoints.news/chai-discovery-signs-gsk-deal-to-make-biologics-with-ai/
+  - Nuevocor NVC-001 (LMNA AAV9) and Affinia AFTX-201: not used; weak links to Aletira and cardiac fibrosis.
+  - Miami HDGFL2 antibodies for TDP-43 (NuGate): not used; academic tool paper.
+  - Curium generic Lutathera: off thesis.
+
+**One thing to fix outside today's run:** `blackbird-portfolio.md` has grown to about 800 KB and 6,169 lines, despite the edit-in-place rule. It can no longer be read whole at the start of a run, as the prompt requires, so it needs a pruning pass.
+=== 2026-10-10T02:23:09-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-11T02:10:11-07:00 start blackbird-brief ===
+Both episodes are written with stubs in place. `SKIP_TTS=1`, so no TTS, no R2 publish, no `feed.xml` edit, and no commit — the orchestrator handles those after batch TTS.
+
+**Episodes produced (Sunday = both types):**
+- `2026-10-11-radar-rbc-bound-tumor-dna.md` — Sourcing Radar, 1,677 spoken words
+- `2026-10-11-portfolio-watch.md` — Portfolio Watch, 1,779 spoken words
+- Each with its `.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` placeholders) and `.commit-msg`
+
+**Candidate funnel**
+
+*Stream B — preprints (Radar).* bioRxiv + medRxiv details API, day-by-day 2026-10-04 → 10-11: **2,120 scanned → 1,576 genuine v1 in-window** (the v1+date gate removed 544 version-bumps, 26%) → **20 Baltimore-partner corresponding-author hits**. All DOIs in the window carried the `10.64898/` prefix. Zero Lieber Institute corresponding-author preprints.
+- ✅ **CHOSEN (lead)** — RBC-bound tumor DNA, Penn (`10.64898/2026.10.07.755430`), full text read
+- ✅ **CHOSEN** — MRGPRX2 mast cell / systemic sclerosis, JHU Dong lab (`10.64898/2026.10.02.756290`), full text read
+- ⏸ **DEFERRED** — BBB-traversing TGFβ trap, UMB Neurosurgery (`10.64898/2026.10.05.756837`). Possibly the strongest lead in the window, but bioRxiv document-specific 429 on all four channels (`fetch_preprint.py`, direct `.full`, direct `.full.pdf`, jina on both, plus WebFetch) across an hour. Not eligible under the full-text gate; **not a rejection** — retest `.full.pdf` first next run.
+- Not reached/below bar: NOS1AP-Tau inhibitor (Columbia) · HIV latency-reversal bispecific, 6/6 macaques (Columbia) · mitochondrial base-editing VLPs (Whitehead) · RIG-I agonist SLR14 (BU) · NEV synaptopodin MS biomarker (JHU Neurology, assay claim only) · tarlatamab CRS risk tool (UMB Greenebaum, retrospective) · FASN probe (Sanford Burnham) · MutSβ series (Princeton) · liver-organoid DILI (Michigan)
+
+*Stream A — news (Portfolio Watch).* Window 10-07 → 10-11. ✅ Chosen: FDA NDA 220910 multidisciplinary review (lead, read in full) · Chai–GSK · Merck BRUNELLO (read in full) · Nanoscope son-vec at AAO. Considered and dropped: Genentech vamikibart (no letter counts, no per-arm n, no p-values — "numerically higher" doing all the work) · LB-102 ECNP posters · two soft ECNP epidemiology releases · Curium · City/Iambic IPOs.
+
+**Three things worth flagging**
+
+1. **I had a dating error and corrected it.** My first pass read BioSpace/BioPharma Dive topping out at Oct 9 as a stale cache and wrote "indexes lagged ~1 day" into the show notes. **Oct 10 was a Saturday** — the indexes were right and I was wrong. Corrected in the notes, and the wire-volume check is recorded there (4 Business Wire health items on 10-10, 0 on 10-11, zero Nature-family papers). This also caught a spoken "Thursday" that should have been "Friday."
+2. **Dedup caught a real repeat, and nearly didn't.** My first filter run passed `\t` as a literal string, so keys and titles never split — 9 of 9 came back "fresh." Re-run with real tabs, the BioPharma Dive Caribou piece correctly dropped as already shipped on 10-08.
+3. **Ledger quirk:** `2026-10-11-portfolio-watch` now occupies two lines (3 items, then 1 for the late-added Merck item). The file parses and dedup is unaffected, but the brief forbids hand-editing, so I left it rather than merging.
+
+Dedup ledger: 93 → 96 episodes, 522 unique keys. Portfolio reference updated in place (Clasp, Adventris, Biolinco, Aletira, Artemyx, DELFI; `_Last update:_` bumped on each, no dated run entries appended).
+
+Week-ahead for Monday, breaking after this cron: Nanoscope's son-vec **REMAIN 4-year RP data** at AAO today — the most Aletira-relevant item of the weekend — plus Stoke STK-002 (an ASO in the eye) and the HFSA late-breakers.
+=== 2026-10-11T02:33:32-07:00 done  blackbird-brief (exit 0) ===
