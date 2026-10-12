@@ -5245,3 +5245,75 @@ I wrote both Calibr scripts for Friday, October 9, plus their RSS-item and commi
   - Chemistry Nobel to Kagan and Soai: https://www.genengnews.com/topics/drug-discovery/kagan-soai-win-2026-nobel-prize-in-chemistry-for-discoveries-related-to-asymmetric-organic-synthesis/
 - Not used: the preeclampsia feature (Endpoints), Quantum-Si, Guardant's EU companion-diagnostic approval, and conference-presentation announcements with no data.
 === 2026-10-09T02:27:47-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-10T02:20:10-07:00 start calibr-briefing ===
+Both scripts and their `SKIP_TTS` stubs are written. `SKIP_TTS=1` is set, so no TTS, no R2 publish, no feed edit, and no commit — `publish_pending.py` picks these up.
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-10-10-pharma-headlines.txt` (~1,330 words)
+- `podcasts/calibr-briefing/scripts/2026-10-10-chai-discovery-gsk-ai-antibody-design-spotlight.txt` (~1,640 words)
+- matching `.rss-item.xml` (XML-validated) and `.commit-msg` stubs for each
+
+**Candidate funnel — Friday, October 9, 2026**
+
+Sources swept:
+- Endpoints News RSS — 8 items dated Oct 9, all 8 on-target
+- BioPharma Dive RSS — 3 items dated Oct 9, 3 on-target
+- BioSpace latest news + press releases — ~25 items dated Oct 9, 9 substantive after discarding conference-participation / exec-appointment filler
+- Kelin Research morning brief — no Oct 10 edition yet (latest 09/10 covers Oct 8); used only to confirm Oct 8 items were already shipped
+- Fierce Biotech — HTTP 403 to WebFetch, RSS feed returned empty; skipped, covered by Endpoints/BioPharma Dive
+- Chai Discovery newsroom + two technical reports (fetched in full for the spotlight)
+- bioRxiv `.full.pdf` for the Chai-2 preprint — 17-byte 429 on two attempts; the company technical write-ups carried the same numbers, so no gap
+
+Shortlist (✓ = used):
+- ✓ Chai Discovery signs GSK, sixth pharma in nine months — biospace.com/press-releases/chai-discovery-announces-collaboration-with-gsk-following-successful-wet-lab-evaluation **← SPOTLIGHT + headline 1**
+- ✓ FDA review docs split Rasonque by KRAS subtype; RevMed sells off — biopharmadive.com/news/rasonque-fda-zealand-tukysa-ultragenyx-tcgx-china/832492/
+- ✓ TRexBio prices $117M; Retension $45M; City $158M and Iambic $135M set terms; Aspen + Bambusa file — biospace.com/deals/trexbio-retension-raise-161-7m-in-ipos-city-iambic-set-proposed-offering-terms
+- ✓ FDA approves Weltruza (Teva/Medincell monthly subQ olanzapine) — biospace.com/press-releases/medincell-achieves-major-milestone-with-u-s-fda-approval-of-weltruza-olanzapine
+- ✓ Curium prices Bexlutry at 5% under Lutathera — endpoints.news/curium-prices-generic-radioligand-at-5-discount-to-novartis-lutathera/
+- ✓ Caribou layoffs could reach ~90% of staff; reverse-merger target — biospace.com/caribou-layoffs-could-wipe-out-90-of-staff
+- ✓ Biotech pullback in charts — biopharmadive.com (this week in charts)
+- ✓ Viking commercial chief out; Gilead hires BeOne exec for China — endpoints.news
+- ✓ Quick notes: Affinia BAG3 DCM and Secretome HFpEF at HFSA; Quince → IRulya; Oncomatryx — BioSpace PR wire
+- ✗ Natera MCED breakthrough device designation — BioSpace PR headline only; could not corroborate an MCED-specific designation (all findable designations are Signatera MRD, 2019/2021). Dropped rather than cited.
+- ✗ Innovent RESTORE-3 thyroid eye disease, Zealand petrelintide, Viatris–Pacira, argenx Sjögren's, Roche Tecentriq colon — all Oct 8 or earlier and already shipped on 10-08/10-09.
+- ✗ Acting HHS general counsel departure; new PDUFA reviewer-rehire money — policy, thin for this audience, and the PDUFA item is Oct 8.
+
+Spotlight pick rationale: Chai–GSK is the only Oct 9 item that is both net-new and squarely in a named focus area, and it is the first time a large pharma has publicly stated it generated and tested an AI vendor's designs in its own labs before signing. Full technical record read in full (Chai-2 report, the full-length-mAb/developability/cryo-EM/GPCR/peptide-MHC follow-on, the complete partnership and financing timeline); the KRAS G12V-vs-G12D peptide-MHC result ties it back to the Revolution Medicines headline, and the episode is framed deliberately against the 10-03 Xaira spotlight so the two bets contrast rather than repeat.
+=== 2026-10-10T02:28:23-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-11T02:20:11-07:00 start calibr-briefing ===
+Both scripts and their `SKIP_TTS` stubs are written. `SKIP_TTS=1`, so no TTS, no R2 publish, no feed edit, no commit — `publish_pending.py` picks these up.
+
+**Files written**
+- `podcasts/calibr-briefing/scripts/2026-10-11-pharma-headlines.txt` (~1,290 words)
+- `podcasts/calibr-briefing/scripts/2026-10-11-life-biosciences-osk-reprogramming-first-in-human-spotlight.txt` (~1,585 words)
+- matching `.rss-item.xml` (both XML-validated) and `.commit-msg` stubs
+
+**Candidate funnel — Sunday, October 11, 2026**
+
+Sources swept (all via plain curl + Safari UA):
+- Endpoints RSS + `/news/` — 200; newest item is the Oct 10 10:00 weekly newsletter (no new reporting); last hard news Oct 9
+- BioPharma Dive front — 200, 31 headlines, newest Oct 9
+- BioSpace front / `/press-releases` / `/latest-news-press-releases` — 200, ~35 items dated Oct 9, nothing Oct 10–11
+- GEN, Clinical Trials Arena, STAT biotech — 200, newest Oct 9
+- Fierce Biotech / Fierce Pharma — HTTP 403 (5,490 B), sixth consecutive run; no retry value
+- businesswire newsroom — curl 000; globenewswire search — 403. Wire indexes are not a weekend fallback
+- ClinicalTrials.gov API for NCT07290244 (ER-100 design), Life Biosciences PR + program page, J&J/Lilly/Glaukos/Natera/Charles River PRs, CTA Alumis piece — all read in full
+
+Zero net-new Sunday items, so per the weekend rule the run was built from uncovered Thu/Fri items plus two congresses running through the weekend (Fall Clinical Dermatology, AAO).
+
+Shortlist (✓ = used):
+- ✓ Life Biosciences ER-100 first-in-human OSK reprogramming **← SPOTLIGHT + headline 1**
+- ✓ Alumis ONWARD3 48-week at Fall Clinical + Jefferies' lukewarm take
+- ✓ J&J ICOTYDE/icotrokinra 112-week ICONIC-LEAD
+- ✓ Lilly TOGETHER-PsO Taltz + Zepbound biomarker analysis
+- ✓ Glaukos iDose TR Phase 4 (paired against the spotlight as the opposing theory of glaucoma)
+- ✓ Natera MCED Breakthrough Device designation — dropped on 10-10 for lack of corroboration; the company PR is primary, so cited as company-announced with no performance numbers
+- ✓ HHS vaccine-injury initiative, with Offit and Talaat pushback
+- ✓ Sagimet denifanstat 52-week; Seaport GlyphAgo PK (quick notes)
+- ✗ Newron evenamide 5 deaths / FDA hold — already shipped 10-09
+- ✗ Genentech's Richard Bonneau exit — already shipped 10-06
+- ✗ Everything in the 10-10 roster (Chai/GSK, Rasonque, the IPO queue, Weltruza, Curium, Caribou, Affinia, Secretome, IRulya, Oncomatryx)
+- ✗ Endpoints weekly newsletter, Arcutis/Milestone/conference-participation filler
+
+Spotlight rationale: it is the first human data for a modality this show flagged in June (NewLimit spotlight) as having *zero* human evidence, it was never covered here, and the n=3 open-label design makes the editorial value entirely about how to read the signal — the show's strongest mode. Also logged a dated note to the weekend-news-gap memory: on a dark Sunday, re-read the prior run's funnel for declined Thu/Fri PR-wire items and grep the BioSpace PR index for congress names.
+=== 2026-10-11T02:28:42-07:00 done  calibr-briefing (exit 0) ===
