@@ -5427,3 +5427,36 @@ I've written the 2026-10-11 episode in stub mode (SKIP_TTS=1), so there is no au
 
 I added today's notes and the items still open to the deferred-picks memory note.
 === 2026-10-11T02:02:41-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-12T02:00:11-07:00 start biomedical-agentic-ai ===
+I've written the 2026-10-12 episode in stub mode (`SKIP_TTS=1`): no audio, no R2 publish, no feed edit, no commit. The batch orchestrator does those steps.
+
+**Chosen:** "Masked Diffusion Language Agents for Tool-Integrated Chemical Reasoning" (ChemDiffAgent) — arXiv, posted 2026-10-09, Institute of Computing Technology, Chinese Academy of Sciences — https://arxiv.org/abs/2610.13330
+
+- Full text read: 15,028 words extracted from the PDF via `mutool`; grepped for "placeholder" (0 hits).
+- Basename: `2026-10-12-chemdiffagent-decides-the-call-before-the-molecule`. Spoken body is 986 words, under the 1,150 cap.
+- The take: the paper's own framing (surpasses frontier models) doesn't survive its aggregate table — 64.6% vs 72.8% for Claude Opus 4.7. The real results are (a) the matched-lineage controlled comparison, where the diffusion backbone beats its autoregressive twin 62.3% to 44.0% on multi-turn tool use under identical SFT data/epochs/context/tools, and (b) the *shape* of the loss: it gives up 20 points on the easy 2-call split, ties Opus at 44.9 on the 6–7-call split, and leads tool-selection accuracy everywhere (79.8% vs 64.9% on Hard). That's the pattern the coordination mechanism predicts.
+- Counterweights in the script: the backbone with no agentic post-training scores 11.2%; answers are graded by GPT-4o, not execution; one model size, fixed toolset, no wet lab; diffusion serving infra is immature.
+- Both stubs written next to the script; the `.rss-item.xml` parses as valid XML.
+
+**One important catch.** The strongest-looking item on the board was *"Autonomous AI agents discover reverse transcriptases with tandem repeat arrays"* (Anthropic; Claude Code over 1.9B protein clusters finding a novel jumbo-phage RT family). The bioRxiv API listed it on 10-11 at version 1 — but **it has been public since 2026-09-23** with wide press coverage. Out of window; dropped. The exact-title web search is what caught it.
+
+**Candidate funnel**
+
+- **bioRxiv/medRxiv** (details API, day-by-day 10-08→10-12): 1,231 unique records; 60 keyword hits at version 1; ~5 genuinely on-brief. **Full text was unobtainable all run** — 17-byte 429s on both `.full.pdf` and `.full` HTML across 3 DOIs and ~8 spaced attempts, and r.jina.ai returned Cloudflare 429 pages. One WebFetch-on-jina probe got through and showed `…756605` is abstract-only (render lag, not a block).
+- **arXiv** (shared cache, 500 entries): covers only 10-08 and 10-09 — the 500-entry cap again. 10-09 was new ground relative to prior runs.
+- **PubMed** (last 5 days by entry date): 300 results, 25 after discarding spurious "agent" matches, ~3 on-topic.
+- **ChemRxiv**: `site:chemrxiv.org` search returned no ChemRxiv pages at all (only arXiv/event-page spillover) — no usable candidates.
+- **Funders**: ARPA-H's only October item is BIOGAMI (10-09, protein dysfunction — not AI). nih.gov/news-events 403s from this host.
+
+**Shortlist**
+
+- **CHOSEN** — ChemDiffAgent, masked diffusion tool-use agent for chemistry — https://arxiv.org/abs/2610.13330 (full text read)
+- Autonomous AI agents discover reverse transcriptases (Anthropic) — https://www.biorxiv.org/content/10.64898/2026.10.05.755809v1 — **rejected: out of window**, public since 09-23
+- Knowledge graphs and EHR-based clinical prediction, SPOKE across PD/MS/chronic pain — https://www.biorxiv.org/content/10.64898/2026.10.04.756605v1 — deferred, body not yet rendered; strong future pick
+- Expert-curated benchmark for LLMs querying a biomedical KG (GeneNetwork) — https://www.biorxiv.org/content/10.64898/2026.10.04.756532v1 — deferred, 429; spine overlaps ddkg.skill (10-09)
+- SAIL, open 35B/3B-active science agent model — https://arxiv.org/abs/2610.11451 (full text read; passed over as only weakly biomedical)
+- SpatialOmicsLab — https://www.biorxiv.org/content/10.64898/2026.10.01.756049v1 — deferred, 429
+- KG priors vs single-cell foundation models for Perturb-seq (PMID 42860076) — full text unobtainable (Elsevier, not in EPMC)
+
+I appended today's notes, the recency-trap catch, and the open deferrals to the deferred-picks memory.
+=== 2026-10-12T02:09:38-07:00 done  biomedical-agentic-ai (exit 0) ===

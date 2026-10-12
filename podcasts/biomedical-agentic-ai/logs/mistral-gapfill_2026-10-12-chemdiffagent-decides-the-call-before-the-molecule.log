@@ -1,0 +1,4 @@
+Script body: 5791 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2994 chars) -> 125.5s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2796 chars) -> 139.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-10-12-chemdiffagent-decides-the-call-before-the-molecule.mp3 [mistral] 2,400,592 bytes, 300.0s
