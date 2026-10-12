@@ -5360,3 +5360,9 @@ Episode written and staged for the batch publisher. `SKIP_TTS=1` was set, so per
 
 **One error worth flagging:** I filtered the preprint sweep through the dedup ledger but hand-added two *Neuropsychopharmacology* items straight from the journal RSS without filtering them — both had shipped on 2026-10-08. The `--append` warning caught it after the script was drafted. I sourced and read two replacements (the zebrafish phenomics paper and LLM-IDEA), rewrote those sections, and repaired today's ledger line. Both the run log and the standing dedup memory now record that the filter must gate the final roster, not just the preprint sweep.
 === 2026-10-11T03:19:31-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-12T02:50:12-07:00 start receptor-and-reason ===
+I'm idle until the TTS watcher fires.
+
+Audio is mid-write (partial file on disk, generator still active). Holding for the process-exit watcher before publishing to R2 and committing.
+
+Holding until the generator exits.
