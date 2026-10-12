@@ -5366,3 +5366,87 @@ I'm idle until the TTS watcher fires.
 Audio is mid-write (partial file on disk, generator still active). Holding for the process-exit watcher before publishing to R2 and committing.
 
 Holding until the generator exits.
+
+Published and committed. Final run summary:
+
+**Episode shipped:** `2026-10-12-receptor-and-reason` — 3,075 words, 17:48 audio, uploaded to R2, feed item added, 11 keys appended to the dedup ledger (142 episodes), committed as `ba8000a` (not pushed — the orchestrator pushes).
+
+**Candidate funnel**
+
+Sources scanned:
+- **bioRxiv/medRxiv details API**, 2026-10-05 → 2026-10-12, day-by-day, both servers: 1,741 version-1 records in window (10-08→10-12 reused from the sibling show's sweep at `/tmp/bma-1012/`, 10-05→10-07 swept fresh). 302 passed the tiered relevance filter → **287 after dedup** (14 already shipped, 1 title match under a different key).
+- **arXiv**: live 6×400 paged query, 2,400 entries + 500-entry shared cache; nothing newer than 10-09 exists (Monday 2am). 104 bio+agentic hits → **~95 fresh**.
+- **Journal RSS + Crossref**: Neuropsychopharmacology, Translational Psychiatry, Molecular Psychiatry, CPT, CPT:PSP, Nature Reviews Neuroscience — 43 in-window items, 28 of 147 combined candidates dropped as already shipped.
+- **Failures logged**: bioRxiv full text 429'd from the first request — exactly one item got through (one WebFetch-via-jina call); `nature.com` returned a Cloudflare JS challenge *through* the reader proxy and 303'd to `idp.nature.com` on direct fetch, so NPP/Mol Psychiatry items were unreadable; Europe PMC `fullTextXML` 500'd (PMC HTML worked instead); IJNP RSS returned no parseable items.
+
+Chosen (all 11 read in full text): 5-HT2A/DOI prefrontal localization null **(lead)**; ketogenic diet and brain network dynamics in alcohol withdrawal; genomic SEM + MR of substance use and psychiatric traits; metoclopramide PBPK → newborn D2 occupancy; Certara IO Simulator QSP/tarlatamab; calibrated-decision-model head-to-head; MedicalHarness; evidence-bound reasoning in glioblastoma radiogenomics; SUD counseling dialogue SLM; BraVista EEG-as-images; personalized epilepsy latent dynamics.
+
+Not chosen but notable: the MDMA-for-PTSD living systematic review in NPP (blocked, not rejected — deferred); nicotinic-receptor uncaging preprint, now deferred five runs on bioRxiv throttling; GIRK1/2 + GIRK1/4 structural pharmacology pair; ChemDiffAgent (dropped — the sibling show covered it today). Run notes and the deferral list were appended to memory.
+=== 2026-10-12T03:07:39-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-12T03:07:39-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-10-12T03:10:39-07:00 start receptor-and-reason (retry 1) ===
+Today's Receptor & Reason episode was already produced and published — I stopped rather than make a duplicate.
+
+**Verified state for `2026-10-12-receptor-and-reason`:**
+- Script: `podcasts/receptor-and-reason/scripts/2026-10-12-receptor-and-reason.md` (3,075 words)
+- Audio: live on R2, HTTP 200, 8,543,756 bytes, 17:48 (`itunes:duration` 1068)
+- Feed: item present in `feed.xml` with today's pubDate (144 items total)
+- Dedup ledger: 1 line appended to `state/shipped.jsonl`
+- Commit: `ba8000a` at 03:07 today (not pushed — the orchestrator pushes)
+
+The show's own log confirms a clean publish, and then `cron.log` immediately logged `no usable output for receptor-and-reason; retrying in 180s` and started retry 1. That's the known false-retry-after-success failure mode (`project_orchestrator_false_retry_after_success.md`) — this invocation is that spurious retry, not a real gap. Re-running would have shipped a second episode for the same date.
+
+The 10-12 episode leads on the 5-HT2A/DOI prefrontal-localization null, with 11 items total; bioRxiv rate-limited the run from the first request and nature.com was behind a bot check even through the reader proxy, so medRxiv, arXiv and PMC carried it. Deferrals and run notes were already appended to memory by that run.
+
+No action needed. If you want the episode pushed, that's the orchestrator's step — `ba8000a` is sitting unpushed on `main`.
+=== 2026-10-12T03:11:25-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-10-12T03:11:25-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-10-12T03:14:25-07:00 start receptor-and-reason (retry 2, --model claude-sonnet-5) ===
+Today's episode (2026-10-12) is already fully shipped: commit `ba8000a`, audio published to R2, feed item present, ledger appended. The cron log shows this is a spurious re-invocation caused by the known false-retry-after-success bug — the orchestrator logged "no usable output; retrying" seconds after the show's own log confirmed a clean publish, and this is now retry 2 of that same loop.
+
+No further action needed — I won't re-run the search/selection/publish steps and risk shipping a duplicate episode for the same date. Per PIPELINE.md's re-invocation rule, since today's script already exists and there's no second-episode case here (this isn't a deliberate bonus-episode request), the correct outcome is to do nothing.
+=== 2026-10-12T03:14:50-07:00 done  receptor-and-reason (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-10-12T03:14:50-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-10-12T03:17:50-07:00 start receptor-and-reason (retry 3, --model claude-sonnet-5) ===
+Confirmed: today's episode (2026-10-12) is already fully shipped — commit `ba8000a`, script written, audio published, feed updated, ledger appended. This invocation is another instance of the known false-retry-after-success bug: the orchestrator logs "no usable output; retrying" seconds after the show's own log confirms a clean publish, and prior retries (1 and 2) already caught and reported this same state.
+
+No action needed. I won't re-run search/selection/publish — doing so risks shipping a duplicate episode for the same date, and nothing in the brief calls for a deliberate second episode today. `ba8000a` remains unpushed, which is expected (the orchestrator pushes, not individual show runs).
+=== 2026-10-12T03:18:27-07:00 done  receptor-and-reason (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-10-12T03:18:27-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-10-12T03:21:27-07:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+Based on the cron log, today's episode (2026-10-12) has already been fully produced and published:
+
+**Episode status: ✅ Complete**
+- **Script:** `podcasts/receptor-and-reason/scripts/2026-10-12-receptor-and-reason.md` (3,075 words, ~17:48 audio)
+- **Audio:** Published to R2, 8,543,756 bytes, live at `https://podcast.su-lab.workers.dev/p/receptor-and-reason/u/alan/2026-10-12-receptor-and-reason.mp3`
+- **Feed:** Item added to `feed.xml` with today's pubDate
+- **Ledger:** 11 keys appended to the dedup ledger (now 142 episodes)
+- **Commit:** `ba8000a` created at 03:07 today, unpushed (orchestrator will push)
+
+The current invocation is a spurious retry caused by the known false-retry-after-success bug documented in memory (`project_orchestrator_false_retry_after_success.md`). The orchestrator logged "no usable output" seconds after the show's own log confirmed successful publication, triggering automatic retries.
+
+**No further action needed** — re-running the production pipeline would ship a duplicate episode for the same date. The episode is complete and ready for the orchestrator's final push.
+=== 2026-10-12T03:22:21-07:00 done  receptor-and-reason (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-10-12T03:22:21-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-10-12T03:25:21-07:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+The **2026-10-12 episode of Receptor & Reason is already fully produced and published.** This is a spurious re-invocation from the known false-retry-after-success bug (logged in memory as `project_orchestrator_false_retry_after_success.md`).
+
+**Episode status:**
+- **Script:** 3,075 words, 11 items — written at 02:50 UTC
+- **Audio:** 17:48 spoken, 8.5 MB — published to R2 at 03:07 UTC
+- **Feed:** Item added to `feed.xml` with today's pubDate
+- **Dedup ledger:** 11 keys appended; 142 episodes total
+- **Commit:** `ba8000a` at 03:07 UTC (sitting unpushed on `main` — the orchestrator pushes)
+
+**Episode lead:** The 5-HT2A/DOI prefrontal-localization null, with methodologically careful null results across four independent manipulations that contradict the field's standard story about where psychedelics generate the head-twitch response.
+
+**Source failures noted in run:**
+- **bioRxiv** — rate-limited from the first request (17-byte 429); only one item got through via WebFetch+jina
+- **Nature journals** — Cloudflare bot check blocking reader proxy; Neuropsychopharmacology and Molecular Psychiatry items deferred
+- **Europe PMC** — fullTextXML 500'd; PMC HTML fallback used
+
+The cron.log shows retry 1 (03:10 UTC), retry 2 (03:14 UTC with Claude Sonnet-5), and retry 3 (03:17 UTC) all correctly identifying the episode as already shipped and stopping rather than duplicating. This current invocation is retry 4 of that same spurious loop.
+
+**No further action needed.** The episode is complete. If you want the commit pushed to the remote, that's the orchestrator's step — `ba8000a` is ready when needed.
+=== 2026-10-12T03:26:05-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-10-12T03:26:05-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
