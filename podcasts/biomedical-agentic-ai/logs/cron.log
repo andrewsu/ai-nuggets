@@ -5369,3 +5369,61 @@ That angle is different from the 09-08 MErlin "the skill says no" episode and th
 
 **Still open:** iCloudBiofoundry and @fUS were not re-checked today. I added today's notes and the runner-up candidates (two already fully read) to the deferred-picks memory note.
 === 2026-10-09T02:07:58-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-10T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written for 2026-10-10 (SKIP_TTS=1 — script + RSS-item stub + commit-msg stub only; no TTS, no publish, no feed edit, no commit, per PIPELINE.md).
+
+**Chosen:** Evaluating Autonomous LLM Agents Across Molecular Prediction and Optimization Benchmarks (bioRxiv, posted 2026-10-08, Deep Origin) — https://www.biorxiv.org/content/10.64898/2026.10.01.755314v1 — full text read via r.jina.ai on the `.full.pdf` (34 pp). Basename `2026-10-10-autonomous-agents-admet-leaderboards`, 943 spoken words.
+
+**Candidate funnel**
+
+- **bioRxiv** (details API, day-by-day 10-07→10-10): 911 entries pulled, 64 passed the keyword filter at version 1, ~8 substantive after discarding spurious matches.
+- **medRxiv**: 203 entries, 15 keyword hits, none agentic-biomedical enough to shortlist (mostly LLM extraction/report-summarization studies).
+- **arXiv**: shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries but capped coverage — only 2026-10-07 and 10-08 present (known 500-entry cap); 16 biomedical+agentic hits.
+- **PubMed**: E-utilities `reldate=5&datetype=edat`, 200 PMIDs, ~12 on-target after discarding spurious matches.
+- **ChemRxiv**: not separately swept — the trillion-scale chemical-space and molecular-optimization ground was already covered by in-window bioRxiv items. Noted as a recall gap.
+- **News / product launches**: no on-target agentic-biomedical launch in the 3-day window.
+- **Funders**: ARPA-H news checked — only BIOGAMI (10-09, protein dysfunction) and biosensors (10-01); neither is agentic AI. NIH/NSF/HHS not separately fetched.
+
+**Shortlist (substantive)**
+- Evaluating Autonomous LLM Agents Across Molecular Prediction and Optimization Benchmarks — https://www.biorxiv.org/content/10.64898/2026.10.01.755314v1 — **CHOSEN** (full text read)
+- SpatialOmicsLab / ST-Coscientist, spatial transcriptomics co-scientist environment — 10.64898/2026.10.01.756049 (abstract only; co-scientist-environment ground well covered recently)
+- AI agent supervision of structural model building and refinement (Claude Code on 24 cryo-EM/X-ray cases) — 10.64898/2026.10.05.756902 (abstract only; strong runner-up, revisit when full text renders)
+- PaleoRigor, bounded research agent with reproducible evidence trail — 10.64898/2026.09.30.755547 (abstract only; narrow domain)
+- Synthesis-aware generative design in trillion-scale chemical spaces (Hyper Screening X) — 10.64898/2026.10.01.755933 (abstract only)
+- GeneReL, LLM + community curation for gene-regulatory extraction — doi 10.1093/database/baag062, published online 10-07 (full text read via PMC; strong Su fit, but Arabidopsis and pipeline-not-agent)
+- ARGUS, evidence-constrained agentic SNV interpretation — arXiv 2610.12281 (already covered in receptor-and-reason 10-09)
+- Clinician use of language models diverges from how models are evaluated — arXiv 2610.11069 (already covered in receptor-and-reason 10-09)
+- Omics data discovery agents (PLoS Comput Biol) — same asset as the 2026-04-16 episode, dropped as a duplicate
+
+**Full-text notes:** bioRxiv `.full` HTML had not rendered for any of the four agentic preprints (helper fell through to abstract-only); direct `.full.pdf` curl returned the 17-byte 429 throttle; r.jina.ai on `.full.pdf` recovered the chosen paper's body. The three abstract-only runners-up are deferrals, not rejections — retest in the next few days.
+=== 2026-10-10T02:06:24-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-11T02:00:10-07:00 start biomedical-agentic-ai ===
+I've written the 2026-10-11 episode in stub mode (SKIP_TTS=1), so there is no audio, no R2 publish, no feed edit and no commit. The batch orchestrator does those steps.
+
+**Chosen:** "AI agent supervision of structural model building and refinement" (bioRxiv, posted 2026-10-08, Kuen-Phon Wu's group at Academia Sinica) — https://www.biorxiv.org/content/10.64898/2026.10.05.756902v1
+- I read the full text: a direct download was throttled, but the r.jina.ai route returned the whole 13-page body.
+- Basename: `2026-10-11-agent-supervised-structure-refinement-work-between-programs`. The spoken body is 967 words, under the 1,150 cap.
+- The take: in structure determination the bottleneck is the work *between* programs (Phenix, Coot, ModelAngelo). The result that matters is when the agent changed course, and when it kept the deposited 7YQM model because no candidate passed the geometry check.
+- Results covered:
+  - Median MolProbity improved from 2.62 to 1.76 on 15 re-refined cryo-EM structures.
+  - 3, 8 and 17 of the agent's candidate waters sat on sites the published models assign to ligands or ions.
+  - A backbone check (CaBLAM outlier rate) got worse in 7 of 15 structures even as MolProbity improved.
+- Caveats in the script: this was an interactive project, not a one-prompt run; human time and tokens weren't measured; and there was no comparison against a fixed pipeline, another model or a human, and no blinded expert review.
+- The stubs `.rss-item.xml` (parses as valid XML) and `.commit-msg` are written next to the script.
+
+**Candidate funnel**
+- **bioRxiv/medRxiv** (details API, day by day 10-07 to 10-11): 1,231 records, 31 keyword hits at version 1, about 4 relevant to the show. It's a weekend, so volume was thin: 144 records on 10-10 and 10 on 10-11. Nothing new and agentic appeared from 10-09 onward.
+- **arXiv** (shared cache, 500 entries): it only covers 10-07 and 10-08 (the cache caps at 500 entries), the same as yesterday. The biomedical items (ARGUS, Clinician LLM use, LLM-IDEA, OA-MAP, MedBenchAgent) were already triaged or covered on 10-09 and 10-10.
+- **PubMed** (last 5 days by entry date): 300 results, about 6 on-topic. RxReduce (JAMIA Open) and KGR-MAS (IEEE JBHI) are weak; EasyGS is a crop-genomics agent. The bioRxiv-tagged items are old August preprints, and the Science agent-email story is out of window and its site is blocked from this host.
+- **Not searched (gaps):** ChemRxiv, news outlets and funder pages. It's a Sunday, and I didn't run separate sweeps.
+
+**Shortlist**
+- **CHOSEN** — AI agent supervision of structural model building — https://www.biorxiv.org/content/10.64898/2026.10.05.756902v1 (full text read)
+- MetagenomicsBench (LatchBio) — https://www.biorxiv.org/content/10.64898/2026.10.05.756819v1 (passed over: it would be the fifth LatchBio benchmark episode)
+- SpatialOmicsLab — https://www.biorxiv.org/content/10.64898/2026.10.01.756049v1 (abstract only, deferred)
+- PaleoRigor — https://www.biorxiv.org/content/10.64898/2026.09.30.755547v1 (abstract only, narrow domain)
+- RxReduce, an LLM deprescribing agent framework (JAMIA Open, PMID 42857748)
+- KGR-MAS, a knowledge-graph multi-agent diagnosis system (IEEE JBHI, PMID 42848569)
+
+I added today's notes and the items still open to the deferred-picks memory note.
+=== 2026-10-11T02:02:41-07:00 done  biomedical-agentic-ai (exit 0) ===
