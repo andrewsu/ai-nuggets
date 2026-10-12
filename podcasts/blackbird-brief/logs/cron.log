@@ -3544,3 +3544,36 @@ Dedup ledger: 93 → 96 episodes, 522 unique keys. Portfolio reference updated i
 
 Week-ahead for Monday, breaking after this cron: Nanoscope's son-vec **REMAIN 4-year RP data** at AAO today — the most Aletira-relevant item of the weekend — plus Stoke STK-002 (an ASO in the eye) and the HFSA late-breakers.
 === 2026-10-11T02:33:32-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-12T02:10:11-07:00 start blackbird-brief ===
+Today's Portfolio Watch (Monday, October 12) is written. It hasn't been voiced, published or committed yet: this run has `SKIP_TTS=1` set, so I only wrote the script and stubs, and the batch TTS job will voice, publish and commit it.
+
+**Files:**
+- **Script:** `podcasts/blackbird-brief/scripts/2026-10-12-portfolio-watch.md`, about 1,390 spoken words.
+- **Stubs:** `2026-10-12-portfolio-watch.rss-item.xml`, with `__LENGTH__` and `__DURATION__` left as placeholders for the batch job (the XML parses), and `2026-10-12-portfolio-watch.commit-msg`.
+- **Dedup ledger:** `state/shipped.jsonl` now has 5 entries for this episode (97 episodes total).
+- **Portfolio reference:** `memory/blackbird-portfolio.md` was edited in place. I added a Freenome bullet to DELFI, Cardurion and LB-102 bullets to the Neuropsych NewCo, and a pending ANB033 bullet to Winnow.
+
+**Items in the episode:**
+1. **Lead, for DELFI:** Freenome's FDA-approved blood test for colorectal cancer, SimpleScreen CRC, ran a new pivotal validation study eleven weeks after approval to ship an improved version. Sensitivity for precancerous lesions rose from 13.7% to 18.2%. The new release measures specificity differently from the approval, so some of that gain may come from a changed threshold. The point for DELFI is the extra question it adds to the open question of whether it pursues FDA approval: if it does, who pays to revalidate each new version of its model?
+2. **For Winnow, results due this morning:** First Tracks reports results for ANB033, its celiac drug that blocks CD122, at 8:30 am ET. They weren't out when I wrote the script, so the episode states the bar it has to meet (the argenx/Forte FB102 Phase 2, 126 patients, p=0.0176) and doesn't predict the result.
+3. **Cardurion, a dosing lesson:** its heart-failure drug tovinontrine lowered the heart-failure marker NT-proBNP at the two low doses but not the top dose. Its second Phase 2, in a different form of heart failure, tested only the top dose and came back flat. The episode applies this to the cardiac fibrosis theme and to GPR52.
+4. **LB-102 at the Munich psychiatry congress (ECNP):** the evidence is weak (one preclinical study and one after-the-fact analysis), but the established dopamine-drug class is now pitching cognition and motivation, which is the story the Neuropsych NewCo is building for GPR52.
+5. **Pritelivir (Hovilpri) approval, for the chronic infections theme:** a new class of herpes antiviral got approved by starting in immunocompromised patients whose infections failed standard drugs.
+
+The First Tracks result needs filling in on the next run; it's flagged in the Winnow entry.
+
+**Candidate funnel:**
+- **Dedup:** 10 candidates were checked and all 10 were new. Pritelivir was added later and checked separately; it was also new.
+- **Sources scanned:** BioSpace's press-release and latest-news pages, the BioPharma Dive and Endpoints indexes, the PR Newswire health feed, the Business Wire feed, and targeted web searches.
+- **Shortlist:** the five chosen items above, plus these that weren't used:
+  - Genentech's vamikibart: still no letter counts, carried to a later run.
+  - Claris CSB-001, Encaleret, and vTv's T1D presentation notice.
+  - AstraZeneca's bone-disease Phase 3 failure: paywalled, and the drug couldn't be identified.
+  - Endeavor IPF: already shipped on 10-09.
+- **Not found this run:** results from Nanoscope's 4-year retinitis pigmentosa data, Stoke's STK-002 presentations, and Affinia's AFTX-201 at the heart failure meeting. All three are carried.
+- **Source failures:**
+  - Fierce Biotech blocked the request (403), not retried.
+  - Business Wire's newsroom blocked the fetch (403).
+  - GlobeNewswire's biotech feed came back empty (519 bytes) and its company search was empty too.
+  - The First Tracks release wasn't published yet.
+=== 2026-10-12T02:18:46-07:00 done  blackbird-brief (exit 0) ===
