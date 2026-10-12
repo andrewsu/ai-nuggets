@@ -5317,3 +5317,50 @@ Shortlist (✓ = used):
 
 Spotlight rationale: it is the first human data for a modality this show flagged in June (NewLimit spotlight) as having *zero* human evidence, it was never covered here, and the n=3 open-label design makes the editorial value entirely about how to read the signal — the show's strongest mode. Also logged a dated note to the weekend-news-gap memory: on a dark Sunday, re-read the prior run's funnel for declined Thu/Fri PR-wire items and grep the BioSpace PR index for congress names.
 === 2026-10-11T02:28:42-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-12T02:20:11-07:00 start calibr-briefing ===
+Both of today's scripts are written, along with their RSS-item and commit-message stubs. `SKIP_TTS=1` was set, so I didn't run TTS, upload to R2, edit `feed.xml` or commit; `publish_pending.py` handles those after the batch TTS run.
+
+**Files written** (in `podcasts/calibr-briefing/scripts/`)
+- `2026-10-12-pharma-headlines.txt` (1,389 words), with `.rss-item.xml` and `.commit-msg`
+- `2026-10-12-merck-remigromig-wnt-dme-spotlight.txt` (1,549 words), with `.rss-item.xml` and `.commit-msg`
+- Both RSS stubs parse as XML. They carry the `__LENGTH__` and `__DURATION__` placeholders and point at the Worker enclosure URLs.
+
+**Candidate funnel — Monday, October 12, 2026**
+
+Sources (plain curl with a Safari user agent):
+- **Endpoints RSS:** 24 items. Only one is net-new: AstraZeneca's HICKORY trial (posted Sunday 21:00). Everything else is Friday or earlier and already shipped.
+- **BioPharma Dive front page:** ~30 headlines, newest Oct 9, nothing new.
+- **BioSpace `/press-releases`:** ~34 items dated Oct 9–12. About 14 were substantive, mostly from the AAO, HFSA and ASBMR meetings over the weekend.
+- **STAT, GEN, Clinical Trials Arena:** all returned 200, but nothing new for Oct 10–12.
+- **Fierce Biotech:** direct requests got a 403. The homepage loaded through r.jina.ai, and so did the Merck article once I retried with a no-cache header. I logged that workaround to memory.
+- **Fierce Pharma:** no usable content.
+- **Primary sources and coverage read in full:** the Merck BRUNELLO release, Ophthalmology Times and Pharmacally on the AAO presentation, Fierce for BMO's analyst note, and Surrozen's SZN-8141 status. I also read the HICKORY numbers via securities.io and the Asahi Kasei, Cardurion, BridgeBio (×2), Roche, Leads Biolabs and InnoCare releases.
+
+Shortlist (✓ = used):
+- ✓ Merck remigromig one-year BRUNELLO results at AAO, plus BMO's "limited competitive potential" note — fiercebiotech.com/biotech/merck-co-data-raise-fears-eye-disease-drug-has-limited-potential **← SPOTLIGHT + headline 1**
+- ✓ AstraZeneca efzimfotase alfa: full HICKORY data at ASBMR — endpoints.news/astrazeneca-blames-trial-design-for-phase-3-failure-of-bone-disease-drug/
+- ✓ FDA approves pritelivir (Hovilpri), Oct 9 — biospace.com/press-releases/asahi-kasei-therapeutics-announces-fda-approval-of-hovilpri-pritelivir-…
+- ✓ Cardurion tovinontrine (PDE9 inhibitor) at HFSA, with an inverse dose response — biospace.com/press-releases/cardurion-pharmaceuticals-presents-phase-2-results-for-tovinontrine-…
+- ✓ BridgeBio: acoramidis vs tafamidis in Epic COSMOS records, and encaleret CALIBRATE at ASBMR — biospace.com/press-releases/acoramidis-associated-with-… and …/encaleret-increased-bone-turnover-…
+- ✓ Roche vamikibart one-year results; BLA decision expected July 2027 — biospace.com/press-releases/roche-presents-new-phase-iii-one-year-data-for-vamikibart-…
+- ✓ Quick notes: Leads Biolabs opamtistomig Fast Track; InnoCare ICP-B161 Chinese IND
+- ✓ First Tracks ANB033 celiac data and Mirum EXPAND Phase 3: both report at 8:30 ET, after recording, so the script gives the bar each needs to clear, not the result
+- ✗ Merck BRUNELLO topline and the Endeavor, Chai/GSK, IPO, Curium and Caribou stories: already shipped 09-25 and 10-08 through 10-11
+- ✗ Skyrizi/Rinvoq, Celltrion Zymfentra, Sebela tegoprazan, MINT real-world data, Freenome CRC late-breaker presentation notice, Claris CSB-001: lower priority or announcements with no data
+- ✗ Inducement grants, conference-participation notices, Nasdaq deficiency notices: filler
+
+Why remigromig for the spotlight: the 09-25 headlines promised these numbers, and it's the most consequential new dataset of the weekend. It also gives the episode a real analytical question — is the proliferative-retinopathy imbalance caused by the drug, or is the monthly anti-VEGF control arm holding its own rate down? It has fresh sell-side commentary and a direct read-across to Surrozen and to Merck's own Tiespectus.
+
+Unverified and therefore left out: Foresite links for any of these companies (none found in `blackbird-portfolio.md`), and H.C. Wainwright's Surrozen target raise, which I couldn't date.
+
+Sources:
+- [Ophthalmology Times — AAO 2026 BRUNELLO](https://www.ophthalmologytimes.com/view/aao-2026-brunello-1-year-results-for-remigromig-in-dme)
+- [Pharmacally — remigromig BRUNELLO](https://pharmacally.com/remigromig-brunello-dme-efficacy-safety/)
+- [Securities.io — HICKORY](https://www.securities.io/astrazeneca-efzimfotase-alfa-misses-primary-endpoint-in-hpp-trial/)
+- [Clinical Trial Vanguard — HICKORY design](https://www.clinicaltrialvanguard.com/clinical-trial-ops-brief/when-phase-3-fails-because-of-trial-design-someone-missed-a-signal-months-earlier/)
+- [Rallies — HICKORY 6MWT](https://rallies.ai/news/astrazeneca-efzimfotase-alfa-posts-1705-meter-6mwt-gain-vs-placebo-in-hickory-phase-iii-hpp-trial-5933521132f2e13c)
+- [KSL/Reuters — pritelivir approval](https://www.ksl.com/article/51634577/us-fda-approves-asahi-kaseis-drug-for-persistent-herpes-infections)
+- [Eyewire — Surrozen SZN-8141](https://eyewire.news/news/surrozens-szn-8141-cleared-to-enter-clinical-development-for-dme)
+- [Taiwan News — DUET timing](https://www.taiwannews.com.tw/news/6451086)
+- [BioWorld — First Tracks spinout](https://www.bioworld.com/articles/730618-anaptysbios-spinout-first-tracks-hits-the-slopes)
+=== 2026-10-12T02:29:54-07:00 done  calibr-briefing (exit 0) ===
