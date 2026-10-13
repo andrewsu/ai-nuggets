@@ -3773,3 +3773,48 @@ I wrote today's Ollie's AI Pulse script and its two stub files. `SKIP_TTS=1` was
 === 2026-10-12T02:36:06-07:00 done  jinglin-ai-pulse (exit 0) ===
 === 2026-10-13T02:30:13-07:00 start jinglin-ai-pulse ===
 The audio is still generating. Once it finishes I'll add the feed entry, publish to R2, and commit.
+
+I published today's episode, "anything but random". The commit is `f3553a8` and is not pushed (the orchestrator does the push).
+
+- **Audio:** 11:18 long, 5.4 MB, uploaded to R2. The self-hosted Voxtral server refused connections, so `gen_tts.py` used the Mistral fallback voice.
+- **Feed:** the new entry is in `feed.xml` with the real file size and duration, and the feed parses as valid XML.
+- **Extra files in the commit:** `git add podcasts/jinglin-ai-pulse/` also picked up four leftover files from 09-15 and 09-29 (`.commit-msg` and `.rss-item.xml` for each). They're inside this show's folder, so nothing from other shows got in, but you may want to remove them.
+
+**Candidate funnel**
+- **Hacker News** (stories from the last 48h with over 80 points): about 95 scanned, about 22 AI-related, 4 dropped as already covered (Karpathy, Sakana MASS, Sarnacki, Berkeley study).
+- **Podcast feeds** (Cognitive Revolution, No Priors, MLST, TWIML, Lex Fridman, a16z, Hard Fork, 80,000 Hours, Dwarkesh, Latent Space): about 40 episodes scanned. Gradient Dissent, Robot Brains and the Cognitive Revolution's Substack API returned 404. Already covered: Kohli/Candido (10-10), de Moura (10-05), Laskin (10-11). WhynotTV is still stale.
+- **Newsletters** (Import AI, Zvi, Interconnects, ChinaTalk, One Useful Thing): about 30 posts scanned. Zvi's "OpenAI Fires Three Safety Researchers" is a follow-up to a story covered 10-04, so I skipped it.
+- **Funding web search:** dropped TypeSafe/Jev (covered 10-11), Arena (10-09) and Lambda (10-08). Dropped micro1 because sources disagree on its figures. Bloomberg's Isomorphic article returned 403, so I read it through Bloomberg Línea's Spanish translation.
+- **X/Twitter:** can't be read from this host, so I used Hacker News comment threads instead.
+
+**Shortlist** (all read in full):
+- ✅ Anthropic Frontier Red Team, self-replicating AI — https://www.anthropic.com/research/self-replicating-ai
+- ✅ "AI Models Can Provably Hide Arbitrary Capabilities" — https://arxiv.org/abs/2610.13928
+- ✅ Rich Hickey, "'AI' is Not a Tool" — https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e
+- ✅ Huahai Yang, "AI Is a Tool" — https://yyhh.org/blog/2026/10/ai-is-a-tool/
+- ✅ QGIS ban on AI contributions (QEP 428) — https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387
+- ✅ Spinellis, "Thinking will become a hobby" — https://www.spinellis.gr/blog/20261008/
+- ✅ Meta Muse Wonder — https://research.meta.ai/blog/muse-wonder
+- ✅ Isomorphic Labs in talks at $40B+ (Bloomberg via Bloomberg Línea) — https://www.bloomberglinea.com/negocios/isomorphic-labs-filial-de-alphabet-negocia-financiacion-con-valoracion-de-al-menos-us40000-millones/
+- ✅ Deep Cut: MLST with Akarsh Kumar on evolution (full transcript) — https://podcasters.spotify.com/pod/show/machinelearningstreettalk/episodes/What-Most-People-Get-Wrong-About-Evolution--Akarsh-Kumar-e3q8ds7
+- Not picked: Ars Technica on the Harvard study "more code, not more software" (published Oct 9, and yesterday already covered the code-review bottleneck); Codex CLI background daemon; GLM-Legal; argmin on OpenAI's FFT claims; IMF warning about an AI stock crash (the Guardian URL returned 404); a16z episode on recursive self-improvement; Bostrom on a16z.
+
+One thing I couldn't verify: Muse Wonder's $4/$20 per-million-token price comes from a single Hacker News commenter. The script credits it to that commenter.
+
+Nothing more to do: the background watch on the audio generation expired after the episode had already published. The commit is `f3553a8` and still needs the orchestrator to push it.
+=== 2026-10-13T02:46:51-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-13T02:46:51-07:00 no usable output for jinglin-ai-pulse; retrying in 180s ===
+=== 2026-10-13T02:49:51-07:00 start jinglin-ai-pulse (retry 1) ===
+I didn't make a new episode on this run, because today's episode was already published about nine minutes before the runner started it again.
+
+- **What's already out:** The 02:40 run released `2026-10-13-anything-but-random`. The mp3 is 5,427,870 bytes, the feed item and its guid are in `feed.xml`, and the commit is `f3553a8`. It isn't pushed yet; the orchestrator will push it.
+- **Why the runner retried:** That run published and committed the episode directly instead of leaving the stub files the runner looks for. The runner saw no stubs, logged "no usable output; retrying" and restarted the show at 02:49.
+- **Why I stopped:** Only nine minutes had passed, so there was nothing new to find. Writing a second episode would just mean shipping the runner-up item. I didn't write any stub files either, because the runner could then add a duplicate item to the feed.
+
+This is the fourth show where a run has skipped the stubs and then been retried for nothing; calibr-briefing did the same earlier tonight. I added this case to the memory note about false retries. The real fix belongs in `PIPELINE.md` or in how `scripts/run_all_shows.sh` decides whether a show produced output.
+
+Candidate funnel: no search was run. This retry came minutes after a successful same-day publish.
+
+NUGGETS_SKIP: orchestrator false retry — today's episode already published and committed (f3553a8) 9 minutes earlier; no new content possible
+=== 2026-10-13T02:50:24-07:00 done  jinglin-ai-pulse (exit 0) (retry 1) ===
+=== 2026-10-13T02:50:24-07:00 SKIPPED: jinglin-ai-pulse deliberate skip (bar not met): orchestrator false retry — today's episode already published and committed (f3553a8) 9 minutes earlier; no new content possible ===

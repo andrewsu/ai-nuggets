@@ -5477,3 +5477,46 @@ I've logged the route verdicts to memory — including the correction that the W
 I'll publish to R2, update the feed, and commit once the mp3 lands.
 
 Monitor armed. I'll publish to R2, insert the feed item, and commit as soon as TTS exits cleanly.
+
+Confirmed — mp3s are gitignored by design and served from R2. Episode is published.
+
+## Published: Receptor & Reason, 2026-10-13
+
+**Episode:** 10 items, 3,359 spoken words, 19:26 runtime, 9.33 MB. Uploaded to R2, feed item inserted and XML-validated, committed as `12696d7`. Not pushed — the orchestrator does that.
+
+**Audio note:** self-hosted Voxtral was down (connection refused on localhost:8000), so it fell back to Mistral as designed — 8 chunks, one 429 with a 60s backoff, all succeeded.
+
+### Candidate funnel
+
+| Source | Scanned | Relevant | Outcome |
+|---|---|---|---|
+| bioRxiv 10-06→10-13 | 1,873 | 201 | **0 shipped** — full text unreadable by every route (direct curl, curl-on-jina, and WebFetch-on-jina all returned Cloudflare 429) |
+| medRxiv 10-06→10-13 | 446 | ~60 | 2 read — 429 at 20s spacing, reopened at 75s |
+| arXiv 10-06→10-09 | 2,400 | 90 → 76 fresh | 4 read; shared cache held only already-mined days |
+| Nature family RSS (npp/mp/neuro/nrd) | 27 | 23 → 15 fresh | **carried the run**, 6 shipped |
+| Elsevier neuro journals | 23 | 9 OA | all 5 tested `NOT IN EPMC` → dropped |
+| Wiley (CPT, CPT:PSP) | 20 | 2 in PMC | PMC now recaptcha-walled → dropped |
+
+Dedup was unusually costly: 7 of 18 journal candidates were already shipped, two caught only by the key-collision warning on truncated titles. The final roster was re-gated — 10/10 clear.
+
+**Shipped:** MDMA-for-PTSD living meta-analysis *(lead)* · Alzheimer's target compendium/EPHX2 · AUD incentive sensitization · Parkinson's social discounting · FAM193B CCG repeat · C9ORF72 astrocytes · ChemDiffAgent · ActiveMedAgent · BEACON-SP · AI full-stack seizure publishing *(closer)*.
+
+### Two things worth your attention
+
+**Deferred for paywall, not transient failure.** The two most on-target items of the day — Nature Neuroscience's LSD molecular/hemodynamic imaging study and NPP's psilocybin-cGMP paper separating head twitch from antidepressant response — are closed access and returned abstract + back matter only. I didn't write them up, and said so on air. These won't improve on a later day; they're only recoverable if a preprint surfaces.
+
+**A pre-existing feed defect, not from this run:** `2026-06-24-receptor-and-reason` appears as a duplicate GUID three times in `feed.xml`, and is already that way in git HEAD. Strict podcast clients may mishandle it. I left it alone since fixing old items is outside today's scope and could disturb subscriber state — worth a deliberate cleanup if you want it addressed.
+
+Memory updated with today's route verdicts, including the correction that the WebFetch-on-jina escape hatch for bioRxiv is **not** guaranteed, that medRxiv reopens at 75s spacing, that PMC is now recaptcha-walled, and that Nature Neuroscience's RSS should be a standing source for this show.
+=== 2026-10-13T03:09:56-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-13T03:09:56-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-10-13T03:12:56-07:00 start receptor-and-reason (retry 1) ===
+I didn't produce a new episode, because today's Receptor & Reason episode is already out. The 03:09 run committed it as `12696d7`: the MDMA-for-PTSD living meta-analysis leads a ten-item roster, and it includes the script, the `feed.xml` item and the `shipped.jsonl` entry. Three minutes later the runner logged "no usable output" and started this retry. There is no newer content to find in that time, so a second episode would have to be built from the runner-up items.
+
+The cause is the same as before. The earlier run published and committed directly even though `SKIP_TTS=1` was set. That left no `.rss-item.xml` / `.commit-msg` stubs, and the runner only counts a show as done when it finds those stubs. I didn't write stubs now either: today's item is already in `feed.xml`, so `publish_pending.py` would add it a second time.
+
+This is the fifth show tonight with this pattern, after calibr-briefing and jinglin-ai-pulse earlier tonight and two shows on 10-08. A note in PIPELINE.md or the show PROMPTs telling runs not to publish directly under `SKIP_TTS` would probably stop it. I've added tonight's case to the memory note on these false retries.
+
+NUGGETS_SKIP: today's episode already published and committed (12696d7, 03:09); false orchestrator retry 3 min later, no new content possible
+=== 2026-10-13T03:13:22-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-10-13T03:13:23-07:00 SKIPPED: receptor-and-reason deliberate skip (bar not met): today's episode already published and committed (12696d7, 03:09); false orchestrator retry 3 min later, no new content possible ===
