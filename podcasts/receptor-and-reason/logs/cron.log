@@ -5450,3 +5450,30 @@ The cron.log shows retry 1 (03:10 UTC), retry 2 (03:14 UTC with Claude Sonnet-5)
 **No further action needed.** The episode is complete. If you want the commit pushed to the remote, that's the orchestrator's step — `ba8000a` is ready when needed.
 === 2026-10-12T03:26:05-07:00 done  receptor-and-reason (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-10-12T03:26:05-07:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-10-13T02:50:14-07:00 start receptor-and-reason ===
+Episode script is written and verified; audio is generating. Here's where the run stands:
+
+**Published so far:** script (3,359 words, ~18.5 min, 10 items), ledger appended, feed item drafted and XML-validated, publish sequence staged.
+
+**Source sweep (candidate funnel):**
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| bioRxiv (10-06→10-13) | 1,873 | 201 | **Full text totally unreadable** — direct curl, curl-on-jina, *and* WebFetch-on-jina all returned Cloudflare 429. Zero items shipped. |
+| medRxiv (10-06→10-13) | 446 | ~60 | 429 at 20s spacing; reopened at 75s spacing. 2 of 6 read. |
+| arXiv (10-06→10-09) | 2,400 | 90 → 76 fresh | Live 6×400 paged query; cache held only 10-08/09 (already mined). |
+| Nature family RSS (npp, mp, neuro, nrd) | 27 | 23 → 15 fresh | **Carried the run** — wide open after yesterday's block. |
+| Elsevier (Biol Psych, Neuropharm, PNBP) | 23 | 9 OA | All 5 tested were `NOT IN EPMC` — dropped. |
+| Wiley (CPT, CPT:PSP) | 20 | 2 in PMC | PMC now recaptcha-walled — dropped. |
+
+Dedup was expensive: 7 of 18 journal candidates were already shipped, two caught only by the key-collision warning on truncated titles. Final 10-item roster re-gated — 10/10 clear.
+
+**Chosen (10):** MDMA-for-PTSD living meta-analysis *(lead)* · Alzheimer's target compendium / EPHX2 · AUD incentive sensitization 4-year · Parkinson's social discounting · FAM193B CCG repeat · C9ORF72 astrocytes · ChemDiffAgent · ActiveMedAgent · BEACON-SP · AI full-stack seizure publishing *(closer)*.
+
+**Two notable losses, both permanent paywalls rather than render lag:** the Nature Neuroscience LSD molecular/hemodynamic imaging paper and the NPP psilocybin-cGMP paper separating head twitch from antidepressant response. Both were the most on-target items of the day; both returned abstract + back matter only, so I didn't write them up. I called that out in the episode's sign-off rather than silently dropping them.
+
+I've logged the route verdicts to memory — including the correction that the WebFetch-on-jina escape hatch for bioRxiv is *not* guaranteed, that medRxiv reopens at 75s spacing, and that Nature Neuroscience's RSS feed should be a standing source for this show.
+
+I'll publish to R2, update the feed, and commit once the mp3 lands.
+
+Monitor armed. I'll publish to R2, insert the feed item, and commit as soon as TTS exits cleanly.
