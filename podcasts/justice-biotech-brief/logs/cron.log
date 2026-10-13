@@ -4026,3 +4026,26 @@ Files are in `podcasts/justice-biotech-brief/scripts/`:
 - `2026-10-12-cadonilimab-compassion-40-perioperative-dmmr-colon-phase-3.rss-item.xml`
 - `2026-10-12-cadonilimab-compassion-40-perioperative-dmmr-colon-phase-3.commit-msg`
 === 2026-10-12T02:46:41-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-13T02:40:13-07:00 start justice-biotech-brief ===
+Today's episode is written, with both stub files. `SKIP_TTS=1` is set, so I did not run `gen_tts.py`, publish to R2, touch `feed.xml`, or commit — `publish_pending.py` does that after the batch audio run.
+
+**Today's pick:** *Fast receptor-antigen dissociation kinetics promote CAR-T cell tumor infiltration, functional fitness, and antitumor efficacy in solid tumors* — Yukai He's lab (Georgia Cancer Center, Augusta University) with Nicholas Gascoigne, posted to bioRxiv 2026-10-12. Full text read (78 KB via jina on `.full.pdf`). ~1,100 spoken words, ~6 minutes.
+
+The argument:
+- **The design is what makes it credible.** Prior low-affinity-CAR work compared different antibody clones, confounding affinity with epitope. Here it's cetuximab vs H1, its own humanized derivative — same epitope, matched on-rates, 18-fold difference in dwell time (456 s vs 25 s).
+- **The effect only exists under stress.** Identical killing in vitro; both cure small tumors at high cell dose. Double the tumor and cut the dose and the slow-off CAR fails to expand in 6 of 8 mice.
+- **Three mechanisms:** trogocytosis strips ~70% of surface CAR from slow-off tumor-infiltrating cells; slow-off cells stall at the tumor rim while fast-off cells form clusters deep in parenchyma; single-cell sequencing shows identical products at day 14 diverging completely by day 20 (stem-like/OXPHOS vs terminal/aerobic glycolysis).
+- **Pushback:** NSG mice have no human EGFR, which usefully rules out the peripheral antigen sink but also makes the therapeutic-window case — the usual reason to lower CAR affinity — untestable; off-rate stays confounded with occupancy; and the generalizable claim rests on one antibody pair after their second pair failed to reproduce its published kinetics.
+
+**Funnel**
+- **bioRxiv** 10-12 (254 posts) + 10-13 (31), **medRxiv** 10-11/12/13 (145) — full pagination, day-by-day, v1-only, keyword-filtered on title+abstract: 32 keyword hits, 4 substantive. Unusually good day.
+  - ✅ **CHOSEN** — fast-off EGFR CAR T, `10.64898/2026.10.10.756030` — only one whose full text came through
+  - CAR affinity / synapse biophysics (CAT vs FMC63 on lipid bilayers), `10.64898/2026.10.09.757739` — **deferred, not-yet-rendered** (429 on curl, jina, and WebFetch-on-jina). Would have made a two-paper arc with the pick.
+  - TCEs convert acute killing into endogenous vaccination (Bousso, Institut Pasteur), `10.64898/2026.10.06.756695` — **deferred, 429**
+  - T-DXd kills melanoma by HER2-independent payload release, `10.64898/2026.10.09.757939` — **deferred, 429**
+- **Older deferrals retested, all still 429 on `.full`:** NECTIN4 (`757381`, day 6), CD19 CAR-Treg lupus (`756761`), CXCR3 ACT (`753375`).
+- **News** — Endpoints homepage and `/news/` read fine via jina; **Fierce Biotech is hard-blocked at the jina proxy** (AbuseAlleviationError, DDoS suspicion, until 10:24 UTC). Nothing on-beat *in window*: Caribou wind-down is 10-07, Merck/Daiichi B7-H3 ADC BLA withdrawal is 09-28 (both date-checked and rejected on recency); today's BMS Phase 3 wins and the AstraZeneca bone-drug failure are off-beat or already calibr's.
+- **NIH / NSF / ARPA-H** — not checked this run; the preprint pool was deep enough that it would not have changed the pick.
+
+Run notes and the four open deferrals are appended to the show's memory log.
+=== 2026-10-13T02:48:15-07:00 done  justice-biotech-brief (exit 0) ===
