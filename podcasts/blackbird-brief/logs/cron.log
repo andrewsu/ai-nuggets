@@ -3577,3 +3577,30 @@ The First Tracks result needs filling in on the next run; it's flagged in the Wi
   - GlobeNewswire's biotech feed came back empty (519 bytes) and its company search was empty too.
   - The First Tracks release wasn't published yet.
 === 2026-10-12T02:18:46-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-13T02:10:13-07:00 start blackbird-brief ===
+I wrote today's Portfolio Watch for 2026-10-13 (Tuesday, so no Sourcing Radar). Because `SKIP_TTS=1` was set, I wrote only the script and the two stub files and stopped there: no audio, R2 upload, feed edit or commit. The batch job handles those.
+
+**Files:**
+- `podcasts/blackbird-brief/scripts/2026-10-13-portfolio-watch.md` (about 1,120 spoken words, roughly 6–7 minutes)
+- the `.rss-item.xml` stub, which parses as valid XML with the `__LENGTH__` and `__DURATION__` placeholders, and the `.commit-msg` stub
+- `state/shipped.jsonl`: appended 5 keys under `2026-10-13-portfolio-watch` (ledger now has 98 episodes)
+- `memory/blackbird-portfolio.md`: rewrote the Winnow entry's first bullet with the ANB033 result, as yesterday's run asked, and bumped its `_Last update:_` date to 2026-10-13
+
+**Episode:**
+1. **Lead, Winnow:** First Tracks' CD122 blocker ANB033 protected 32 celiac patients through a gluten challenge. Gut damage was largely prevented (p=0.009), symptoms stayed lower from the first day, and rescue medication use was 47% on placebo against 6% on drug. It's the third win on this immune pathway in six weeks, and the company is moving into vitiligo and eosinophilic esophagitis, which are the kind of diseases Winnow would target. The episode suggests Winnow's sharpest differentiation question is what long-term blocking of CD122 does to regulatory T cells, and labels that a hypothesis.
+2. **Fibrosis theme:** Bristol Myers' admilparant met its Phase 3 lung-fibrosis endpoint at 60 mg but not at 120 mg. The release gave no effect sizes and said nothing about the liver problems we flagged on 10-03 and 10-04. The same day, Syndax's macrophage-depleting antibody failed its Phase 2 and was dropped.
+3. **NuGate:** Roche licensed Rona's RNAi drug, which is built on a platform for delivery outside the liver, for up to $100M upfront and near-term. Undecimal Bio's $18M launch on the same theme is cited from the Endpoints headline only, because the article body is paywalled.
+
+**Funnel:**
+- **Ledger:** 97 episodes and 527 unique keys at run start. All 7 candidates came back fresh, with no dedup hits.
+- **Sources:** BioSpace press-release and news indexes, BioPharma Dive (about 35 links), the Endpoints index (about 35 headlines), the PR Newswire health RSS, the BMS newsroom and the First Tracks investor page.
+- **Chosen:** ✅ First Tracks ANB033 (lead) · ✅ BMS admilparant · ✅ Syndax axatilimab · ✅ Rona–Roche · ✅ Undecimal Bio (mention only)
+- **Dropped, already shipped:** Viatris–Pacira, Aspen/Bambusa IPO filings, TRexBio IPO, Caribou.
+- **Dropped, no portfolio line or no data yet:** BMS RYZ101 radiopharma, Chai–GSK, Akiram (data due 10-17), AstraZeneca bone-disease drug, Mirum, Cytokinetics, Apnimed/Savara.
+- **Carried forward, still unresolved:** Nanoscope's 4-year retinal data from AAO (no results coverage found), Genentech vamikibart, Stoke STK-002, Affinia AFTX-201.
+- **Source failures:**
+  - Fierce Biotech was blocked both directly (403) and through the r.jina.ai proxy.
+  - The GlobeNewswire biotech RSS returned 403.
+  - The Undecimal article body is paywalled.
+  - Web search hadn't indexed the First Tracks 10-12 release yet; I found it on the company's investor page instead.
+=== 2026-10-13T02:16:41-07:00 done  blackbird-brief (exit 0) ===
