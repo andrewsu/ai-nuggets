@@ -5460,3 +5460,38 @@ I've written the 2026-10-12 episode in stub mode (`SKIP_TTS=1`): no audio, no R2
 
 I appended today's notes, the recency-trap catch, and the open deferrals to the deferred-picks memory.
 === 2026-10-12T02:09:38-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-13T02:00:12-07:00 start biomedical-agentic-ai ===
+I've written today's episode as stubs only. `SKIP_TTS=1` was set, so I didn't run TTS, upload to R2, edit `feed.xml` or commit. The runner's Phase 2 (`publish_pending.py`) handles all of that.
+
+**Today's pick:** "Understanding when and how knowledge graphs add value to EHR-based clinical prediction across Parkinson's disease, multiple sclerosis, and chronic pain" (Rancho Biosciences, posted 2026-10-11, uses the SPOKE knowledge graph). It was deferred on 10-11 because the body hadn't rendered yet. Today I got the full 26-page text through r.jina.ai on the PDF; a direct curl was refused by bioRxiv's rate limit (HTTP 429). A web search for the exact title found no earlier coverage, and it isn't in any earlier episode.
+
+The episode's argument, in brief:
+- **Graph size:** a graph built from the concepts actually present in the patient cohort matches the whole graph at 3–5× lower cost. A graph centred on the disease node does much worse (MS AUROC drops from about 0.94 to 0.69).
+- **Small gains:** the benefit is tiny. Parkinson's improves by about 0.006 AUROC, MS stays roughly flat, and chronic pain gets worse.
+- **Where the value comes from:** a graph made only of links between each patient's own recorded concepts does as well as the expanded one. So the value is in clinical relationships like drugs and side effects, not in genes or pathways.
+- **Mechanism:** spreading the signal across the graph re-expresses information already in the record rather than adding new information. Median feature correlation goes from 0.04 to 0.98, which also makes the "it's interpretable" argument shaky.
+
+**Files** in `podcasts/biomedical-agentic-ai/scripts/`:
+- `2026-10-13-spoke-ehr-the-graph-transforms-it-does-not-add.md` (1,065 spoken words, under the 1,150 cap)
+- `.rss-item.xml` (checked that it parses as XML) and `.commit-msg`
+
+**Candidate funnel**
+- **bioRxiv** (details API, day by day 10-09 to 10-13): 907 unique records, about 40 keyword hits, 5 on-brief after removing false matches like "chemical agent". Full text was blocked by the rate limit on direct fetch but readable through jina.
+- **arXiv:** the shared cache only covers 10-08 to 10-09 (it's capped at 500 entries). Monday's listing pages added cs.AI (83 new) and q-bio (9 new), covering through Friday 10-09. About 140 keyword hits, 4 on-brief.
+- **PubMed** (entry date 10-08 to 10-13): 57 hits. Nothing on-brief and in-window; the agentic items were older preprints (PRIORITI 09-29, LungChat August, SABLE August).
+- **ChemRxiv:** not searched this run.
+- **News:** one general web search found nothing in-window.
+- **Funders:** the ARPA-H and NIH pages returned no AI-related headlines; I didn't check NSF or HHS.
+
+**Shortlist**
+- ✅ **CHOSEN:** KG value for EHR prediction (SPOKE) — https://www.biorxiv.org/content/10.64898/2026.10.04.756605v1 (deferred from 10-11, read in full)
+- CLARA: Compound Library Active Learning with Reasoning Agents — https://www.biorxiv.org/content/10.64898/2026.10.05.756921v1 (full text untested). Runner-up: shuffling the agent's explanatory evidence left its choices unchanged in 39 of 40 campaigns. I passed because the last two episodes were already chemistry agents and its main point is close to 10-06's.
+- LEAF: Do LLM Proposers Improve Budgeted Search for Ionizable Lipids? — https://www.biorxiv.org/content/10.64898/2026.10.06.756984v1 (full text untested)
+- Expert-curated benchmark for LLMs querying a biomedical KG (GeneNetwork) — https://www.biorxiv.org/content/10.64898/2026.10.04.756532v1 (full text never obtained; too close to ddkg.skill, shipped 10-09)
+- DRYLAB-Bench: biosecurity risk of agentic LLM mutation design — https://arxiv.org/abs/2610.13116
+- JANUS: long-horizon autonomous research with co-evolving world models — https://arxiv.org/abs/2610.13194
+- AI-assisted systems biology reconstruction of diabetic bone marrow dysfunction — https://arxiv.org/abs/2610.13721
+- Dropped as out-of-window: the Anthropic reverse-transcriptase preprint (public since 09-23) and PRIORITI (09-29).
+
+I added today's notes and the new open deferrals (CLARA, LEAF, DRYLAB-Bench) to the deferred-picks memory file.
+=== 2026-10-13T02:04:41-07:00 done  biomedical-agentic-ai (exit 0) ===
