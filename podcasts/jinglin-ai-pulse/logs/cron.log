@@ -3771,3 +3771,5 @@ I wrote today's Ollie's AI Pulse script and its two stub files. `SKIP_TTS=1` was
   - **Not chosen:** TWIML's Greg Burnham episode (no transcript); 80k's AI legal rights and OpenAI security episodes; Latent Space's Periodic and AlphaFold episodes (both already covered).
 - **Deferred:** nothing.
 === 2026-10-12T02:36:06-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-13T02:30:13-07:00 start jinglin-ai-pulse ===
+The audio is still generating. Once it finishes I'll add the feed entry, publish to R2, and commit.
