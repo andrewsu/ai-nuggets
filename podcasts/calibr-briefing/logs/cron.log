@@ -5420,3 +5420,57 @@ I didn't make a new episode on this run, because both of today's episodes were a
 NUGGETS_SKIP: today's episodes already shipped in 30639b4 (direct publish under SKIP_TTS left no stubs); runner retry came 4 min later with nothing new to find
 === 2026-10-13T02:35:54-07:00 done  calibr-briefing (exit 0) (retry 1) ===
 === 2026-10-13T02:35:54-07:00 SKIPPED: calibr-briefing deliberate skip (bar not met): today's episodes already shipped in 30639b4 (direct publish under SKIP_TTS left no stubs); runner retry came 4 min later with nothing new to find ===
+=== 2026-10-14T02:20:12-07:00 start calibr-briefing ===
+The spotlight script is drafted. I'm waiting for the research agent that's gathering facts for today's headlines.
+
+I wrote both of today's scripts plus their stub files. Nothing was committed and no audio was made: this is a nightly run with `SKIP_TTS=1`, so the batch step does the voice, publishing, feed update and commit.
+
+**Episodes:**
+- **Headlines:** `2026-10-14-pharma-headlines`, about 1,425 words. Nine items plus the week ahead, led by BioNTech's head-and-neck cancer drug missing on progression-free survival.
+- **Spotlight:** `2026-10-14-generate-zealand-ai-obesity-multispecifics-spotlight`, about 1,270 words. It covers Zealand Pharma paying Generate Biomedicines $30M upfront to design multispecific obesity proteins, and what the deal says about obesity's next wave and the price of AI protein design.
+- **Stubs:** each episode has its own `.rss-item.xml` and `.commit-msg`, because the publisher skips any episode without one. Both RSS items parse as valid XML.
+
+**Gaps to know about:**
+- **No analyst commentary on the Generate–Zealand deal** turned up. The spotlight says so and labels its analysis as the show's own.
+- **Iambic and City Therapeutics had not priced their IPOs** by run time. The week-ahead section says only that both filed their final listing paperwork Tuesday afternoon.
+- **Verdiva, the Rudy Tanzi exclusive and Novartis's antibiotic** were Endpoints stories I could read only in summary. Verdiva gets a short mention based on that summary; the other two were left out.
+- **Foresite:** none of today's companies show up in the portfolio reference file, so the scripts claim no Foresite connections.
+
+**Candidate funnel**
+- **Fierce Biotech/Pharma:** the homepage via r.jina.ai returned a 143-byte stub, so nothing was read from Fierce.
+- **Endpoints:** RSS plus index page, 24 headlines scanned, about 12 on-beat. Bodies are paywalled, so I used them for discovery only.
+- **BioPharma Dive:** 31 headlines, 4 new on-beat.
+- **BioSpace:** 33 press releases plus 5 editorial articles, 6 on-beat.
+- **Clinical Trials Arena:** 40 headlines, 3 new on-beat.
+- **GEN:** the front page gave no article links. **STAT:** the biotech page had one link, off-beat.
+- **Web search (extended):** surfaced Reuters (via kfgo.com), European Biotechnology, rallies.ai and the Iambic IPO terms.
+
+Shortlist (✓ = used):
+- ✓ **SPOTLIGHT + headline 2:** Zealand × Generate AI multispecifics — https://www.biospace.com/press-releases/zealand-pharma-and-generate-biomedicines-enter-collaboration-and-license-agreement-to-develop-protein-therapeutics-engineered-with-ai-for-metabolic-diseases
+- ✓ BioNTech BNT113 AHEAD-MERIT misses on progression-free survival — https://www.biopharmadive.com/news/biontech-mrna-immunotherapy-hpv16-head-neck-cancer/832854/
+- ✓ Roche–Rona ALK7 RNAi deal — https://www.biopharmadive.com/news/roche-rona-china-deal-rnai-obesity-drug-alk7/832845/
+- ✓ Verdiva stops oral GLP-1 switching trial (summary only) — https://endpoints.news/verdiva-cans-mid-stage-obesity-trial-of-glp-1-pill-citing-market-evolution/
+- ✓ Biomea BMF-650 Phase 1 — https://www.manilatimes.net/2026/10/14/tmt-newswire/globenewswire/biomea-fusion-announces-phase-1-results-for-bmf-650-its-investigational-next-generation-oral-small-molecule-glp-1-receptor-agonist/2445084
+- ✓ Paragon/Velaris → Alaunos, Apogee executives join Paragon — https://www.prnewswire.com/news-releases/paragon-labs-expands-leadership-team-with-former-apogee-executives-velaris-therapeutics-acquired-by-alaunos-therapeutics-inc-302906315.html
+- ✓ Beam BEAM-301 in glycogen storage disease Ia — https://www.globenewswire.com/news-release/2026/10/13/3379540/0/en/
+- ✓ Regeneron Pasatru 84-week FOP data — https://www.clinicaltrialsarena.com/news/regeneron-pasatru-84-week-phase-iii-data/
+- ✓ āshibio andecaliximab in FOP — https://www.financialcontent.com/article/bizwire-2026-10-13-shibio-presents-preliminary-efficacy-data-for-andecaliximab-demonstrating-an-862-reduction-in-new-flare-up-rate-in-patients-with-fop
+- ✓ Pfizer–Enodia Sec61 deal — https://www.biospace.com/deals/pfizer-pens-500m-deal-with-enodia-to-destroy-disease-causing-proteins
+- ✓ Quick items:
+  - Soufflé $135M Series B — https://endpoints.news/souffle-gets-135m-for-three-rna-medicines/
+  - J&J third-quarter results — https://www.biospace.com/j-js-innovative-medicines-carried-q3-as-medtech-disappoints-but-newer-medicines-absent
+  - FTC contempt motion against Shkreli — https://www.cnbc.com/2026/10/13/martin-shkreli-ftc-pharma-contempt.html
+  - Skyrizi subcutaneous AFFIRM data in Crohn's — https://www.rttnews.com/3698691/abbvie-reports-35-8-endoscopic-remission-with-subcutaneous-skyrizi-in-crohn-s-trial.aspx
+- ✓ Week ahead: Iambic and City IPO terms — https://www.biospace.com/deals/trexbio-retension-raise-161-7m-in-ipos-city-iambic-set-proposed-offering-terms
+- ✗ Alnylam bulls-and-bears piece: analysis of July news, nothing new
+- ✗ Lilly Taltz + Zepbound biomarker data: exploratory, low priority
+- ✗ Novartis Lamprene: the FDA approval came over the summer; only the announcement is new
+- ✗ Rudy Tanzi exclusive: paywalled, and I couldn't identify the drug
+- ✗ Lilly–Gate expansion: Oct 5, used only as background
+- ✗ TRexBio and Retension IPOs: priced Oct 8–9, already old
+- ✗ Conference notices, inducement grants and earnings-date notices: filler
+
+I also added today's source-access notes (the Reuters and GlobeNewswire mirror routes, and Fierce being unreadable again) to the news-source memory file.
+
+This wakeup had nothing left to do. The research agent had already reported back, and the headlines script was written last turn. All six files for today are still in place: two scripts, two RSS stubs and two commit-message stubs, one set each for the headlines and the Generate–Zealand spotlight. With `SKIP_TTS=1`, the batch step will make the audio, publish it, update the feed and commit. I didn't schedule another wakeup, so this run is finished.
+=== 2026-10-14T02:45:09-07:00 done  calibr-briefing (exit 0) ===
