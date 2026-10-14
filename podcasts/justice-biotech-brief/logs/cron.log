@@ -4049,3 +4049,30 @@ The argument:
 
 Run notes and the four open deferrals are appended to the show's memory log.
 === 2026-10-13T02:48:15-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-14T02:40:12-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote stubs only — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Published artifacts** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-10-14-glofitamab-mosunetuzumab-tce-cdc1-cross-priming-endogenous-vaccination.md`
+- `.rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `.commit-msg`
+
+**Pick:** "T cell engagers convert acute tumor killing into endogenous vaccination" — Bousso lab, Institut Pasteur, bioRxiv `10.64898/2026.10.06.756695` v1, posted 2026-10-12. Full text read via direct PDF + `mutool` (131 KB, Results/Discussion/limitations). Title web-searched: no prior version, not a re-post.
+
+**Candidate funnel**
+
+bioRxiv/medRxiv details API, 10-12 → 10-14, day-by-day: 724 records, 718 unique, 27 keyword hits, ~6 substantive after discarding spurious matches.
+- ✅ **T cell engagers convert acute tumor killing into endogenous vaccination** (756695, immunology) — CHOSEN
+- Trastuzumab deruxtecan kills melanoma in vivo by HER2-independent payload release (757939, cancer biology) — strong runner-up, extracellular cathepsin L cleaving the linker outside the cell; full text not pulled, live for a later day
+- Low CAR affinity enhances T-cell synapse dynamics and activation (757739) — dropped, duplicates yesterday's fast-off-CAR episode thematically
+- Fast receptor-antigen dissociation kinetics … CAR-T infiltration (756030) — already shipped as the 2026-10-13 episode
+- Faricimab delayed-onset intraocular inflammation pharmacovigilance (26365218) — off-audience
+- Biomedical-paper content predicts future CAR-T trials (26365160) — bibliometrics, off-audience
+
+News / press feeds:
+- Fierce Biotech + Fierce Pharma — **failed**: 5,490-byte Cloudflare block direct, and `r.jina.ai` returns a 403 `AbuseAlleviationError` (domain-level anonymous block). Endpoints — **failed**, 162-byte response. Gap noted.
+- BioSpace press releases (worked, plain curl): 34 releases scanned, 2 on-target — Avenzo/VelaVigo **VBC103 (AVZO-103)**, Nectin-4×TROP2 bispecific ADC, and Orum **ORM-1153**, CD123×GSPT1 degrader-antibody conjugate. Both are announcements with no data in hand (an ESMO Asia abstract acceptance and a first-patient-dosed), so neither cleared the bar against a full mechanistic preprint.
+- Policy/funder pages not reached this run — note the gap.
+
+Memory updated with the access findings (bioRxiv `count` vs `total` pagination trap that silently truncated the first sweep; PDF+mutool beating jina today; Fierce/Endpoints both dead, BioSpace as the working wire index).
+=== 2026-10-14T02:46:41-07:00 done  justice-biotech-brief (exit 0) ===
