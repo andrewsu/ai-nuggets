@@ -5495,3 +5495,29 @@ The episode's argument, in brief:
 
 I added today's notes and the new open deferrals (CLARA, LEAF, DRYLAB-Bench) to the deferred-picks memory file.
 === 2026-10-13T02:04:41-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-14T02:00:11-07:00 start biomedical-agentic-ai ===
+Episode written for 2026-10-14 in SKIP_TTS stub mode (no TTS, no R2 publish, no feed edit, no commit — per PIPELINE.md).
+
+**Files written** (`podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-10-14-polygraph-receipts-and-the-shape-of-the-claim.md` — 984 spoken words (cap 1150)
+- `.rss-item.xml` (validates as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `.commit-msg`
+
+**Pick:** PolyGraph — "Keep Your Receipts: Trustworthy Cleanup of Agent-Built Knowledge Graphs" (arXiv 2610.17719, posted 2026-10-13, TU Munich). Full text read via PDF + mutool (6.5k words, grepped clean for `placeholder`). Novelty-checked by web search: only hit is the NeurIPS workshop listing for the same paper.
+
+**Candidate funnel**
+
+- **arXiv** — shared cache, 500 entries (10-12 ×145, 10-13 ×355; the 500-cap again limits coverage to ~2 days). ~180 keyword hits, 8 substantive after discarding off-domain agent/LLM matches:
+  - ✅ **2610.17719** Keep Your Receipts / PolyGraph — *chosen*
+  - 2610.18449 Autonomous Science Bench — six budgeted design-build-test-learn campaigns, discovery vs learning gates
+  - 2610.16975 MADDIE — multi-agent drug discovery engine, 50 targets
+  - 2610.17740 Coupled Harness–Model Evolution for Scientific Equation Discovery
+  - 2610.17439 LLMs Extend Known Research But Do Not Create New Directions (26.9M papers, orthogonal novelty score)
+  - 2610.18507 TrialPD-Bench — coding agents digitizing trial protocols
+  - 2610.17363 UMCR — agentic ontology linking; 2610.18672 SMI — ontology-grounded semantic IDs
+- **bioRxiv** — details API, day-by-day 10-11…10-14, 747 records, no 429s. 48 keyword hits at v1; on-brief and new: **GENIE** (`…758370`, multi-agent closed-loop microscopy, 10-13), *Ontology-Driven AOP annotation* (`…756965`). Known deferrals CLARA / LEAF / GeneNetwork KG benchmark still open. The Anthropic reverse-transcriptase preprint reappeared in the window again — still the known 09-23 recency trap, dropped.
+- **PubMed** — 61 items over 5 days; nothing on-brief beating the arXiv shortlist (closest: *The rise of agentic AI in drug discovery*, a review).
+- **ChemRxiv / news / funder pages** — scanned, nothing in-window on-brief.
+
+PolyGraph won on fit and on having a result the audience can act on: deployed retraction cleanup leaves 28% of queries contaminated and changes *nothing* under predicate revocation; rebuild-and-diff is ruled out because resampling noise is 5× the deletion signal; and the trust verdict splits by receipt shape, not by layer per se.
+=== 2026-10-14T02:04:01-07:00 done  biomedical-agentic-ai (exit 0) ===
