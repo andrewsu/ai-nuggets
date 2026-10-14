@@ -753,7 +753,7 @@ projects. News touching any of them is portfolio-relevant on the investment,
 even where the company has no detail entry in this file yet.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-10-10_
+_Last update: 2026-10-14_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases · cancer (Blackbird funded the **Intergalactic Center for
@@ -1121,6 +1121,28 @@ https://www.biospace.com/drug-development/generate-bio-drops-as-data-accidentall
 
 **NON-OPIOID PAIN theme — EXIT COMP + REGULATORY CLASS PRIOR (added 2026-10-09 Portfolio Watch items 1–2).** (a) **Viatris acquires Pacira** for $36.50/sh, ~$1.65B equity, vs LTM ~$746M revenue / ~$177M adj. EBITDA (≈2.2× rev) — Exparel + Zilretta are reformulated generics, Exparel generics early 2030, growth formulary-constrained; pipeline incl. PCRX-201 knee-OA gene therapy. ⇒ the active buyer is a lifecycle house paying for call points and cash flow; don't model a Vertex-style exit for a novel mechanism (Guan MRGPRX1); post-surgical pain needs a pharmacoeconomic case. (b) **FDA cited sodium-channel-blocker arrhythmia risk as a class concern holding Newron's evenamide** ⇒ NaV1.5 selectivity + a cardiac package are table stakes for any NaV pain programme (Navion, Vertex comps). Sources: https://www.sec.gov/Archives/edgar/data/0001396814/000110465926114571/tm2627240d2_ex99-1.htm · https://www.biopharmadive.com/news/viatris-pacira-acquire-pain-drug-zilretto-exparel/832481/
 
+**NON-OPIOID PAIN theme — THE GENE-THERAPY COLUMN IS NOW A *BUYABLE* COLUMN, AND THE SAME ESTATE PUBLISHED THE PLATFORM-VS-ASSET RATIO
+(added 2026-10-14 Portfolio Watch item 1; announced 2026-10-13).** **Sangamo (OTC: SGMOQ, operating under Chapter 11) opened an auction for
+ST-503**, expected to complete **4Q 2026**. **ST-503 = AAV-delivered engineered zinc-finger repressor of *SCN9A* (Nav1.7), SINGLE INTRATHECAL
+administration, for intractable pain due to idiopathic small fiber neuropathy; FDA Fast Track.** Phase 1/2 **STAND** (NCT06980948, RECRUITING,
+est. **n=27**) with **7 sites activated**; SFN prevalence **≥180,000** US inside **~40M** Americans with peripheral neuropathies; NHP showed
+substantial Nav1.7 reduction, no off-target effects reported.
+**THE CLOSED SALES ARE THE COMPS — $163.55M aggregate gross cash: PTC Therapeutics paid $111M CASH + up to $100M regulatory milestones for ONE
+CLINICAL ASSET (Fabry, ST-920 / isaralgagene civaparvovec); Lilly paid $50M CASH for the ENTIRE capsid delivery library + zinc finger platform +
+MINT integrase platform + the prion programme ST-506.** DIP facility (Future Solutions Inc) repaid in full. Closes the arc opened 2026-06-28 /
+2026-07-05.
+**READ ONE (Anthony Accorsi + Virginia Burger): the gene-therapy column added to this map on 09-10 (Encoded ETX301, Nav1.7, PRECLINICAL, IND
+planned 2027) now has a CLINICAL, Fast-Tracked asset in front of it going to auction. Whatever ST-503 clears at is the number a banker quotes
+back at any genetic-medicine pain programme for the next two years.**
+**READ TWO (Eddie Cherok) — THE RATIO IS THE FINDING: one clinical asset fetched >2× the cash of an entire platform estate. UNDER DISTRESS,
+CLINICAL ASSETS PRICE AND PLATFORMS DO NOT. Direct warning for the Aletira narrative: a deck that leads with platform and treats the lead
+programme as an illustration is arguing itself into the $50M column.**
+**CANDID LIMIT — write it down before a board member cites it: a Chapter 11 §363 sale, with a DIP to repay and a court calendar, is a FLOOR, not
+a fair-market comparable.** **ACTION (Eddie): watch the auction docket — a public 4Q clearing price is a free read on early-clinical pain-asset
+value.** Sources:
+https://www.biospace.com/press-releases/sangamo-therapeutics-launches-auction-process-for-clinical-stage-chronic-neuropathic-pain-program ·
+https://clinicaltrials.gov/study/NCT06980948 · https://www.veritaglobal.net/SangamoTherapeutics
+
 **NON-OPIOID PAIN theme — THE COMPETITION IS SELLING A *PROPERTY* AND A *POPULATION*, NOT A TARGET, AND THE ROUND CLOSED ON A REPEAT
 ION-CHANNEL FOUNDER (opened 2026-09-19 Portfolio Watch item 3; announced 2026-09-09, surfaced regionally 2026-09-17).**
 **Navion Neurosciences** (preclinical; **Commonwealth Bio Accelerator, Charlottesville VA**) first-closed a **$10.8M seed** led by the
@@ -1243,6 +1265,27 @@ Neuron23, Ionis**.
     it is why the field has a graveyard.** Secondary: the named constraint is a **detection / stratification** problem, which is an
     **Artemyx-adjacent** surface rather than a therapeutics one. Source:
     https://www.biospace.com/drug-development/reeling-from-past-failures-parkinsons-pipeline-enters-era-of-diversification
+
+**CARDIAC FIBROSIS theme — THE ENDPOINT-SCALE PROBLEM NOW HAS A WORKED ANSWER, AND IT IS TWO CHOICES MADE BEFORE THE TRIAL STARTS
+(added 2026-10-14 Portfolio Watch item 2; announced 2026-10-13; CLOSES the 10-05 / 10-13 open item).** **Agomab (Antwerp) dosed the first patient
+in NOV-ERA**, a global randomized, double-blind, placebo-controlled, dose-ranging **Phase 2b of ontunisertib (AGMB-129) in symptomatic
+fibrostenosing Crohn's disease; n≈320, 1:1:1:1, 400 / 200 / 100 mg BID vs placebo, 52-week treatment.**
+**CHOICE ONE — THE ENDPOINT. Primary = proportion achieving ENDOSCOPIC PASSABILITY of the index ileal stricture at WEEK 24, CENTRALLY READ, with
+entry requiring an endoscopically NON-passable naive or anastomotic ileal stricture. Binary, anatomical, directly observed, on a named lesion.**
+Key secondaries: passability at wk 52, time to FSCD-related event (surgery / balloon dilation), MRE imaging change, SES-CD, S-PRO 2.0 / CDAI / QoL;
+stated purpose is to **select registrational endpoints**. **CONTRAST: BMS admilparant needed n≈1,255 × 52 weeks for a change in FVC SLOPE
+(10-13 item 2). Related fibrotic biology, an order of magnitude apart in trial cost.**
+**CHOICE TWO — THE MOLECULE. Ontunisertib is an oral GI-RESTRICTED ALK5 (TGF-β RI) inhibitor: rapid hepatic first-pass metabolism prevents
+clinically relevant systemic exposure.** The class's historical systemic toxicity is solved by **CONFINEMENT, not selectivity** — same shape as
+Navion selling selectivity across a channel family rather than a channel. FDA Fast Track; follows positive Phase 2a **STENOVA** + OLE (the OLE
+safety data is what supports the 400 mg BID arm).
+**⇒ THE TWO-PART RULE FOR OUR PITCH (Virginia Burger; Hemaka Rajapakse + Anthony Accorsi): (1) name a fibrotic lesion that is DIRECTLY OBSERVABLE
+AND BINARY; (2) buy the safety margin with TISSUE RESTRICTION, not potency. CANDID: the heart offers no stricture-equivalent — that is the live
+problem to solve, not a reason to drop the theme.**
+**STRUCTURAL NOTE (Maisha Rahman + Emily Wilkinson): first-patient-dosed triggered a €7M milestone to former Origo Biopharma shareholders under
+Agomab's 2021 acquisition (up to €20M development/regulatory milestones; €10M now payable, incl. €3M paid in 2025) — a clean worked example of a
+small acquisition priced on development milestones rather than upfront, close to the asset-carve-out structure we keep circling.** Source:
+https://www.biospace.com/press-releases/agomab-announces-first-patient-dosed-in-global-nov-era-phase-2b-study-of-ontunisertib-in-fibrostenosing-crohns-disease
 
 **CARDIAC FIBROSIS theme — THE FIRST MEASUREMENT TAKEN *UPSTREAM* OF THE ENDPOINT PROBLEM: THE MONEY ENTERING CARDIOVASCULAR TARGET
 SELECTION IS BUYING HUMAN GENETIC SUPPORT (added 2026-09-24 Portfolio Watch item 5; announced 2026-09-23).** **Boehringer Ingelheim
@@ -2940,7 +2983,24 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-10-09_
+_Last update: 2026-10-14_
+- **THE FIELD IS PAYING FOR DELIVERY *PLATFORMS*, NOT DELIVERY *ROUTES* — THREE FINANCINGS IN TWO DAYS (opened 2026-10-13 Portfolio Watch item 3,
+  extended 2026-10-14 item 3).** **(a) Rona Therapeutics → Roche**, exclusive worldwide licence to an **ALK7 (ACVR1C) RNAi** built on Rona's
+  **extrahepatic delivery platform**: up to **$100M upfront + near-term milestones**, up to **$1.06B** later milestones, tiered royalties
+  (2026-10-13). **(b) Undecimal Bio** launched with **$18M** to take siRNA beyond the liver, carved out of Eleven Therapeutics (2026-10-13).
+  **(c) Soufflé Therapeutics (Boston; CEO Amir Nashat) closed an oversubscribed $135M Series B led by Juvia Group**, with **TCG Crossover, BB
+  Biotech, Fidelity, Balyasny and a sovereign wealth fund** joining Amgen Ventures, ARCH, Bessemer, Breyer, Invus, Janus Henderson, Leaps by
+  Bayer, Polaris, Safar, TAS, Temasek and Vida (2026-10-13). Soufflé's **REMEDY (Receptor Mediated Delivery)** engine systematically identifies
+  **internalizing receptors** and builds proprietary binders (mAbs or other ligands) against them to carry oligonucleotides to specific cell types
+  **outside the liver**; three programmes to the clinic — **striated/skeletal muscle for FSHD**, **phospholamban (PLN) in cardiomyocytes for
+  HFrEF**, and an undisclosed muscle/metabolic target.
+  **⇒ READ (Eddie Cherok): $135M into a company with NO CLINICAL DATA, from crossover and sovereign money, is the private-market statement of the
+  same thesis the Roche deal states in licensing terms. NuGate's intrathecal ASO delivery is an established ROUTE, not a platform — have the
+  answer to "what is proprietary about how this reaches motor neurons?" ready before the partner asks.**
+  **⇒ SECONDARY (Hemaka Rajapakse): Soufflé's PLN/cardiomyocyte programme is someone building the DELIVERY half of our cardiac fibrosis theme
+  while the Agomab item above is the ENDPOINT half.** Sources:
+  https://www.biospace.com/press-releases/souffle-therapeutics-announces-oversubscribed-135-million-series-b-financing-to-advance-lead-clinical-programs-and-continued-pipeline-progress ·
+  https://www.prnewswire.com/news-releases/rona-therapeutics-enters-into-global-license-agreement-with-roche-for-alk7-targeting-rnai-therapy-for-obesity-and-metabolic-diseases-302905730.html
 - **NfL-LED EARLY CASE, SECOND INSTANCE (added 2026-10-09 Portfolio Watch item 5; ICFTD 2026-10-08).** AviadoBio **AVB-101** (intrathalamic AAV progranulin, FTD-GRN), n=17 across 4 cohorts: CSF progranulin +36% / +90% (cohorts 3/4, wk 12), no related SAEs, no immunosuppression; serum NfL at/below baseline at 52 wk (low-dose only) vs expected +13–14%/yr. Same evidentiary shape as the 10-04 CHCHD10 read: biomarker with a known untreated slope first, function later. Source: https://www.biospace.com/press-releases/aviadobio-presents-new-safety-and-biomarker-data-from-the-phase-1-2-aspire-ftd-trial-at-the-international-conference-on-frontotemporal-dementias
 - **THE INSTRUMENT RULE TESTED AT n=1, AND THE MACHINE-MEASURED ENDPOINTS CARRY IT (added 2026-10-04 Portfolio Watch item 3; *Med* 2026-09-14, Mayo release 2026-10-01).**
   **Mayo Clinic + n-Lorem Foundation, nL-CHCHD10-001**, a bespoke ASO for one patient with the **CHCHD10 R15L** variant (toxic gain of function, TDP-43 pathology downstream). >320 ASOs screened; FDA cleared the design; **6 intrathecal doses q3mo, 50 → 75 mg**, first dose April 2024.

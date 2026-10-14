@@ -3604,3 +3604,32 @@ I wrote today's Portfolio Watch for 2026-10-13 (Tuesday, so no Sourcing Radar). 
   - The Undecimal article body is paywalled.
   - Web search hadn't indexed the First Tracks 10-12 release yet; I found it on the company's investor page instead.
 === 2026-10-13T02:16:41-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-14T02:10:11-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote stubs only — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files written** (`podcasts/blackbird-brief/`):
+- `scripts/2026-10-14-portfolio-watch.md` — 1,331 spoken words, ~7.3 min (target 6–9)
+- `scripts/2026-10-14-portfolio-watch.rss-item.xml` — validated as XML, `__LENGTH__` / `__DURATION__` placeholders in place
+- `scripts/2026-10-14-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — 3 keys appended (now 99 episodes)
+- `memory/blackbird-portfolio.md` — three entries revised in place (non-opioid pain, cardiac fibrosis, NuGate), `_Last update:_` bumped
+
+**One correction to flag:** my first `--append` took `head -3` of the filtered candidate list and wrote AvantGuard instead of Soufflé as item 3. I rewrote that single line (the one from this run) with the correct key after verifying every line still parses. The ledger is otherwise untouched and append-only.
+
+---
+
+**Candidate funnel — 2026-10-14 Portfolio Watch (news window 10-13 → 10-14)**
+
+- Ledger at start: 98 episodes, 551 items, 532 unique keys. Filter on 8 candidates → **8 fresh, 0 dedup hits**. Asset-name grep across all scripts: Sangamo appears only in the 06-28/07-05 AAV-estate items (this is the next chapter, not a repeat); ST-503, ontunisertib, Agomab, Soufflé never covered.
+- Sources: BioSpace `/press-releases` via r.jina.ai (~33 releases) · BioPharma Dive homepage · Endpoints `/news/` index (~25 headlines, bodies paywalled — discovery only) · PR Newswire health RSS (returned 1 item — thin, noted) · ClinicalTrials.gov API v2 · targeted WebSearch. No source failed; jina TLS probe clean.
+- All three primaries read in full before drafting; NCT06980948 verified against the registry (RECRUITING, Phase 1/2, est. n=27).
+
+**Picked:**
+1. **LEAD — Sangamo opens a Chapter 11 auction for ST-503**, the AAV zinc-finger repressor of *SCN9A*/Nav1.7 for small fiber neuropathy. Touches the non-opioid pain theme and Aletira. The sharp part is the already-closed estate: PTC paid $111M cash for one clinical Fabry asset, Lilly $50M for the entire capsid + zinc-finger + MINT platform. In distress, clinical assets price and platforms don't — with the candid limit that a §363 sale is a floor, not a comp.
+2. **Agomab doses first patient in NOV-ERA** (n≈320, gut-restricted ALK5 inhibitor, binary centrally-read stricture-passability at wk 24). Closes the 10-05/10-13 open item on antifibrotic trial scale against admilparant's ~1,255 patients × 52 weeks.
+3. **Soufflé's $135M Series B** for receptor-mediated extrahepatic oligo delivery — third such financing in two days, sharpening yesterday's NuGate "route vs platform" question; its PLN/cardiomyocyte program also touches cardiac fibrosis.
+
+**Considered, not used:** Novartis antibiotic approval (chronic-infections theme; Endpoints body paywalled, no primary in window — carried) · AvantGuard *C. auris* mouse data (company preclinical, below bar) · BioNTech head-and-neck vaccine miss (Adventris adjacency; paywalled, thin) · Paragon's ninth spinout + Apogee execs (spinout-structure comparator — held for a Sunday Radar) · Generate–Zealand, Verdiva, Biomea, Rhythm, Orum, AbbVie SKYRIZI, Avenzo (no portfolio line) · TRexBio IPO close (shipped 10-13).
+
+**Carried:** Freenome ACG plenary (today, intraday — not indexed at run time) · Nanoscope REMAIN 4-year · Genentech vamikibart letter counts · Stoke STK-002, Affinia AFTX-201.
+=== 2026-10-14T02:18:22-07:00 done  blackbird-brief (exit 0) ===
