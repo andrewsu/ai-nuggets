@@ -5520,3 +5520,28 @@ This is the fifth show tonight with this pattern, after calibr-briefing and jing
 NUGGETS_SKIP: today's episode already published and committed (12696d7, 03:09); false orchestrator retry 3 min later, no new content possible
 === 2026-10-13T03:13:22-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
 === 2026-10-13T03:13:23-07:00 SKIPPED: receptor-and-reason deliberate skip (bar not met): today's episode already published and committed (12696d7, 03:09); false orchestrator retry 3 min later, no new content possible ===
+=== 2026-10-14T02:50:12-07:00 start receptor-and-reason ===
+The spoken body is clean — no URLs, DOIs, IDs, or markdown structure. Episode is complete.
+
+**Published:** `podcasts/receptor-and-reason/scripts/2026-10-14-receptor-and-reason.md` — 3,023 spoken words (~16.5 min), 11 items. Per `SKIP_TTS=1`, I wrote the script plus the two stubs (`.rss-item.xml` with `__LENGTH__`/`__DURATION__` placeholders, validated as XML; `.commit-msg`) and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` handles those after batch TTS. Ledger appended: 144 episodes, 1,498 items.
+
+## Candidate funnel
+
+**Sources scanned**
+- **bioRxiv + medRxiv details API** (2026-10-07 → 10-14, day-by-day, full collections): 2,029 records → 1,691 unique v1 in-window → 302 keyword hits → ~45 substantive after discarding spurious matches. No outages.
+- **Journal Crossref sweep by ISSN** (17 journals, `from-created-date:2026-10-07`): 153 articles → ~25 substantive.
+- **arXiv shared cache** `/tmp/ai-nuggets-arxiv-cache.xml`: 500 entries, but **only 2 days of coverage (10-12 and 10-13)** — the 500-entry cap again truncates the 7-day window. 84 bio+agentic hits → ~10 substantive. No live call made (cache non-empty).
+- **Psychiatric Times / society press pages:** not swept — the journal + preprint crop already exceeded the 8-12 item target.
+
+**Full-text gate (the binding constraint today)**
+- Nature-family paywalls: `s41386-026-02569-x` (psilocybin/cGMP), `s41398-026-04431-6` (azetukalner Kv7 in MDD), `s41746-026-03348-0` (FHIR-AgentEval) all returned abstract-only through jina in both markdown and HTML modes, direct Safari-UA curl 150-byte blocks, and **no EPMC record** — dropped despite being strong Tier-1 fits.
+- The Nature Neuroscience LSD paper was rescued by reading its medRxiv preprint (`10.1101/2025.06.17.25329677`), 163 KB full text.
+- Elsevier items (mRNA therapy for schizophrenia in *Biol Psychiatry*; BnOCPA SAR in *Neuropharmacology*; CYP2C19/2B6 sertraline in *PNBP*) — blocked as usual, dropped.
+- Render-lag deferrals (abstract-only, `.full.pdf` second pass also returned 250-400-byte proxy errors): `2026.10.12.758370` GENIE closed-loop microscopy, `2026.10.05.755985` suzetrigine/Nav1.7, `2026.10.12.758519` nicotinic control of dopamine release, `2026.10.13.758782` virtual brain modelling in schizophrenia, `2026.10.01.756018` hybrid mechanistic-neural PK, `2026.10.06.756984` LLM proposers for ionizable lipids, `2026.10.11.758371` WAY-100635 in TBI. **Worth re-testing over the next week.**
+
+**Dedup:** 34 candidates → 28 fresh (6 already shipped, caught before fetch budget was spent — including the TUS/locus-coeruleus paper, the BLA-KOR→BNST alcohol paper, the 5-HT2A mPFC head-twitch paper, and the SPOKE-on-the-EHR knowledge-graph paper from yesterday). Final roster re-gated separately: 11/11 clear.
+
+**Chosen (all 11):** psychedelic information decomposition *(lead)*; LSD PET-MRI; cortico-hippocampal mood states; K2060 at Mg²⁺-block-impaired NMDA receptors; AT1R negative allosteric modulator; autonomous LLM agents on molecular benchmarks; MADDIE; synthesis-aware GFlowNet; Autonomous Science Bench; agent-discovered reverse transcriptases; LLM-derived odor-mixture geometry *(closer)*.
+
+One judgment call worth flagging: MADDIE reports 100/100 satisfying molecules on all 50 targets, which I treated skeptically in the script — the quota is the stopping condition, so the pass rate is near-definitionally 1, and the informative number is the ~1,044 molecules generated per 100 delivered.
+=== 2026-10-14T03:04:44-07:00 done  receptor-and-reason (exit 0) ===
