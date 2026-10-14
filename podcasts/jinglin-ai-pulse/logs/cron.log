@@ -3818,3 +3818,32 @@ Candidate funnel: no search was run. This retry came minutes after a successful 
 NUGGETS_SKIP: orchestrator false retry — today's episode already published and committed (f3553a8) 9 minutes earlier; no new content possible
 === 2026-10-13T02:50:24-07:00 done  jinglin-ai-pulse (exit 0) (retry 1) ===
 === 2026-10-13T02:50:24-07:00 SKIPPED: jinglin-ai-pulse deliberate skip (bar not met): orchestrator false retry — today's episode already published and committed (f3553a8) 9 minutes earlier; no new content possible ===
+=== 2026-10-14T02:30:12-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1`, so I wrote the script plus the two stub files and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator handles those after batch TTS.
+
+**Published:** `2026-10-14-the-job-was-to-say-no` — 2,388 spoken words, ~13 minutes.
+
+- `podcasts/jinglin-ai-pulse/scripts/2026-10-14-the-job-was-to-say-no.md`
+- `…​.rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**The through-line:** the model is the cheap part now; the scaffolding is where the work and the failures are. Anthropic replacing Git with a server-side VCS built for always-online agent clients; Google's accidental chain-of-thought-penalty experiment (openly discussed shortcuts −61%, silent shortcuts 11.2% → 36.4%); Dyna's hour-long robot autonomy coming from an agentic harness rather than the world-action model; Prime Intellect buying Moondream on a co-designed-inference thesis.
+
+**Candidate funnel**
+
+- **Hacker News (Algolia, last 36h, ≥80 points):** ~15 substantive AI stories scanned.
+  - ✅ Redesigning source control at Anthropic (766 pts) — https://www.anthropic.com/engineering/redesigning-source-control — **lead**, full text + full comment tree incl. author replies from `nickg-anthropic`
+  - ✅ Gemini 4 Argon GA (1,292 pts) — https://news.ycombinator.com/item?id=50073879 — thread itself was low-value (availability gripes, page-scrolling complaints); used Google's safety post instead
+  - ✅ OpenAI engineer arrested in bugging of executive conference room (577 pts) — https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/ — one paragraph
+  - Not picked: EmbeddingGemma 2 as STT (412); Janas SSD expert streaming (218); argmin on OpenAI's FFT claims (241, already declined 10-13); DishwasherBench (86); AI models can provably hide capabilities (275) — **shipped yesterday**
+- **Latent Space / AINews (Oct 14 issue, read in full):** the X recap carried the Argon independent-evaluation picture (Mollick, Theo, Artificial Analysis, Roboflow, Arena, Neel Nanda). Attributed in-script as AINews paraphrase, not quotes.
+- **Primary sources fetched in full:** Google "Developing Gemini 4 Argon responsibly and safely" (Oct 13); Prime Intellect "Moondream is joining Prime Intellect" (Oct 13); The Next Web on the Character.AI Chapter 11 + $20M Disney bid (Oct 13).
+- **Podcast Deep Cut:** Latent Space, "Dyna-2 … Jason Ma, Dyna Robotics" (Oct 13) — published transcript read in full. Runner-up not used: WhynotTV still has no in-window episode.
+
+**Source failures this run (auditable gaps):**
+- **x.com / api.fxtwitter.com — HTTP 404 on every status, including IDs that resolved fine on 10-12.** So no verbatim tweets today; everything tweet-derived is attributed to the AINews recap as a paraphrase, per the brief's no-fabricated-quotes rule. Neel Nanda's "evades the monitor ~half the time" figure is explicitly flagged in the script as unverified secondary reporting.
+- cnbc.com 403'd WebFetch; used The Next Web for the Character.AI facts instead.
+- Prime Intellect/Moondream was not indexed by web search at all — found by going directly to the company blog.
+
+One correction worth noting against yesterday's run: Gemini 4 Argon's *launch* was covered on 10-01, so this episode deliberately skips the launch benchmarks and pricing and covers only what two weeks of use and the GA-day safety post added.
+=== 2026-10-14T02:37:35-07:00 done  jinglin-ai-pulse (exit 0) ===
