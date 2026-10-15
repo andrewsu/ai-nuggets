@@ -3633,3 +3633,17 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote stubs only — no TTS,
 
 **Carried:** Freenome ACG plenary (today, intraday — not indexed at run time) · Nanoscope REMAIN 4-year · Genentech vamikibart letter counts · Stoke STK-002, Affinia AFTX-201.
 === 2026-10-14T02:18:22-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-15T02:10:11-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` was set, so I wrote the script plus the two stub files and did not run TTS, publish, touch `feed.xml`, or commit — `publish_pending.py` does that after batch TTS.
+
+**Blackbird 2026-10-15 — Portfolio Watch** (`2026-10-15-portfolio-watch`, 1,474 spoken words ≈ 8 min), four items:
+
+1. **LEAD — Arrowhead ARO-MAPT (NuGate).** Subcutaneous siRNA on the TRiM platform cut CSF total tau 73% mean / 85% max at day 105 in healthy volunteers — 90 days after the last dose — with no serious TEAEs and explicitly no persistent anemia. The 10-13/10-14 "platforms, not routes" thesis now has a CNS instance: quarterly LP vs quarterly SC shot. Read: it threatens the FTD (cortical) leg of NuGate, not the ALS (spinal) leg, and what's validated is delivery, not the tau target.
+2. **Vanda VQW-765 (GPR52 NewCo).** α7-nAChR Phase 3 missed (n=546; Δ −0.4, p=0.89). The lesson is the failure shape — Phase 2 trend on a self-rated scale in a provoked design, enriched Phase 3, no replication — so settle the instrument question before first-in-patient.
+3. **Verastem VS-7375 (Adventris).** Oral KRAS G12D: 41% PDAC / 33% CRC / 43% NSCLC, plus a $250M raise and a CEO change the same morning. Target validation for the vaccine's adjuvant board; the financing window is open for clinical data, still not for platforms.
+4. **Lakefront → Armed Cell Therapeutics.** €8M up front against $230M in milestones plus a royalty — ~3.5% down payment, a reference ratio for the next carve-out.
+
+Sources/mechanics worth flagging: **r.jina.ai returned a CloudFront 403 on BioSpace** (plain curl + Safari UA worked), Endpoints returned 162 bytes and Fierce a 5,490-byte Cloudflare block — both skipped; Arrowhead's own IR page Akamai-denies, so the release text came from the Business Wire mirror at financialcontent. Dedup: 5 candidates → 5 fresh, 0 hits; 4 keys appended (ledger now 100 episodes). Portfolio reference updated in place for NuGate, Neuropsych NewCo, Adventris, DELFI (Freenome's −11% on a real sensitivity gain) and the spinout-structure comparators.
+
+Sources: [Arrowhead release](https://www.businesswire.com/news/home/20261014103135/en/) · [BioPharma Dive on ARO-MAPT](https://www.biopharmadive.com/news/arrowhead-rnai-alzheimers-tau-aro-mapt-study-results/832950/) · [Vanda VQW-765](https://www.biospace.com/press-releases/vanda-pharmaceuticals-provides-update-on-vqw-765-clinical-development-program) · [Verastem](https://www.biopharmadive.com/news/verastem-g12d-pancreatic-cancer-results-genfleet/832952/) · [Lakefront](https://www.biospace.com/press-releases/lakefront-announces-sale-of-preclinical-car-t-programs-to-armed-cell-therapeutics) · [Freenome/ACG](https://www.rttnews.com/3698084/freenome-highlights-improved-simplescreen-crc-performance-data-at-acg-2026-stock-up.aspx)
+=== 2026-10-15T02:18:03-07:00 done  blackbird-brief (exit 0) ===
