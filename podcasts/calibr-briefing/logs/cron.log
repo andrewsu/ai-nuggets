@@ -5474,3 +5474,47 @@ I also added today's source-access notes (the Reuters and GlobeNewswire mirror r
 
 This wakeup had nothing left to do. The research agent had already reported back, and the headlines script was written last turn. All six files for today are still in place: two scripts, two RSS stubs and two commit-message stubs, one set each for the headlines and the Generate–Zealand spotlight. With `SKIP_TTS=1`, the batch step will make the audio, publish it, update the feed and commit. I didn't schedule another wakeup, so this run is finished.
 === 2026-10-14T02:45:09-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-15T02:20:11-07:00 start calibr-briefing ===
+The headlines script and its two stubs are written. The spotlight is on Iambic's IPO, and I'm waiting for the background agent to finish reading the prospectus before I draft it.
+
+Both of today's Calibr scripts are written, each with its feed-entry stub and commit-message stub. This is a `SKIP_TTS=1` run, so I didn't generate audio, edit `feed.xml` or commit. The batch step does those.
+
+- **Headlines** (`2026-10-15-pharma-headlines`, about 1,400 words, roughly 7–8 minutes, a bit over the 5-minute target, in line with recent episodes): nine items plus the week ahead.
+- **Spotlight** (`2026-10-15-iambic-ipo-ai-drug-discovery-spotlight`, about 1,650 words): probably 8–9 minutes, so a little over the 5–8 minute target. I trimmed it from about 1,780 words.
+
+**Spotlight content.** Iambic sold its IPO shares at $16, below what investors paid in its last private round. ARK and Duquesne had indicated up to $60M, about 40% of the deal. The lead HER2 drug, IAM1363, has a 23% confirmed response rate and an 18% confirmed brain response rate, mostly in breast cancer patients who had already had Enhertu and tucatinib. Rash doesn't show up among its common side effects. Investors priced Iambic as a clinical-stage HER2 company, not as an AI platform.
+
+**Sources.** A background agent read the full amended IPO filing on the SEC site. The final prospectus wasn't posted yet. I re-checked the key figures against the filing text: the confirmed response rates, the private-round prices, the ARK interest, the convertible-note terms, the cash runway and the executives' backgrounds.
+
+**Foresite.** I found no Foresite or Foresite-portfolio news, and Foresite isn't among Iambic's investors. The spotlight says so.
+
+**Candidate funnel**
+- Sources:
+  - Endpoints RSS: 24 items scanned, 10 in window.
+  - BioPharma Dive front page: about 30 scanned, 5 in window.
+  - BioSpace press releases (34) and front page (13 editorial stories in window).
+  - Clinical Trials Arena: 41 scanned.
+  - STAT: 3 scanned.
+  - GEN: nothing in window.
+  - Fierce Biotech and Fierce Pharma: unreachable. The Biotech homepage proxy returned a 143-byte tracking stub, and the proxy service had temporarily banned the Fierce Pharma domain.
+- Chosen (✓):
+  - ✓ **Spotlight + headline 1:** Iambic IPO pricing — https://www.biospace.com/press-releases/iambic-announces-pricing-of-initial-public-offering (plus the filing: https://www.sec.gov/Archives/edgar/data/1997038/000119312526417416/iam-20261008.htm)
+  - ✓ Verastem VS-7375, KRAS G12D — https://www.biospace.com/drug-development/verastem-reports-robust-response-rate-in-pancreatic-cancer-subgroup-where-rasonque-struggled
+  - ✓ Arrowhead ARO-MAPT — https://www.biopharmadive.com/news/arrowhead-rnai-alzheimers-tau-aro-mapt-study-results/832950/
+  - ✓ Gilead–Vir masked T cell engagers — https://www.biospace.com/business/gilead-snags-equity-stake-in-vir-with-up-to-1-87b-deal-for-three-t-cell-engagers
+  - ✓ United Therapeutics–Liquidia settlement — https://247wallst.com/investing/2026/10/14/united-therapeutics-and-liquidia-just-ended-their-patent-war-liquidia-stock-popped-42/
+  - ✓ FDA Rare Disease Framework — https://endpoints.news/new-fda-framework-tilts-toward-consistency-over-flexibility/
+  - ✓ Anktiva papillary-only approval — https://www.oncnursingnews.com/view/fda-expands-anktiva-approval-to-papillary-only-bcg-unresponsive-nmibc
+  - ✓ OMass $310M Series C — https://www.biospace.com/press-releases/omass-therapeutics-announces-310-million-series-c-financing-to-advance-portfolio-of-small-molecule-therapeutics-in-endocrinology-and-immunology
+  - ✓ Vividion VVD-214, first-line Phase 2 — https://www.biospace.com/press-releases/vividion-therapeutics-expands-clinical-development-of-wrn-inhibitor-vvd-214-with-phase-2-combination-study-in-first-line-patients-with-advanced-colorectal-cancer
+  - ✓ Quick items: Ultragenyx $203M voucher sale, Vanda VQW-765 Phase 3 miss, GSK Belgium job cuts, Lakefront CAR-T sale, Sanofi R&D chief on China, CVS $315M opioid settlement, Takeda Orzeyful launch in Japan and China
+- Dropped (✗):
+  - ✗ Tezspire full eosinophilic esophagitis data: none published yet
+  - ✗ Helen Branswell obituary: outside the briefing's beat
+  - ✗ European biotech survey: dated October 7
+  - ✗ Alumis Phase 3 program: October 9, too old
+  - ✗ Tortugas schizophrenia trial: October 13, too old
+  - ✗ City Therapeutics pricing: couldn't confirm
+
+I also added today's notes on which news sources were reachable to the memory file.
+=== 2026-10-15T02:28:21-07:00 done  calibr-briefing (exit 0) ===
