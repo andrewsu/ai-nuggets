@@ -3847,3 +3847,32 @@ Episode written. `SKIP_TTS=1`, so I wrote the script plus the two stub files and
 
 One correction worth noting against yesterday's run: Gemini 4 Argon's *launch* was covered on 10-01, so this episode deliberately skips the launch benchmarks and pricing and covers only what two weeks of use and the GA-day safety post added.
 === 2026-10-14T02:37:35-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-15T02:30:11-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1`, so I wrote the script plus the two stub files and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator handles those after batch TTS.
+
+**Published:** `2026-10-15-the-fence-not-the-sheep` — 2,679 spoken words, ~14–15 minutes.
+
+- `podcasts/jinglin-ai-pulse/scripts/2026-10-15-the-fence-not-the-sheep.md`
+- `….rss-item.xml` (validated as XML with the itunes namespace; `__LENGTH__`/`__DURATION__` placeholders)
+- `….commit-msg`
+
+**The through-line:** everybody is arguing about the sheep, and the story is the fence. The security establishment's on-the-record pushback on the "rogue agent" framing; the Mononoke attribution argument as a fact about LLM-assisted design; Torvalds's first LLM patch series where human review caught the race; Liquid AI tightening its own sandbox; and Alan Chan's "mostly a matter of will" as the week's diagnosis.
+
+**Candidate funnel**
+
+- **Hacker News (Algolia, last 40h, ≥60 points):** ~60 stories scanned, ~14 substantive AI items.
+  - ✅ Containment and monitoring failures are to blame for AI hacking reports (900 pts) — https://news.ycombinator.com/item?id=50091788 — **lead**, CSO article read in full + comment tree via Algolia
+  - ✅ Anthropic's Scion is heavily inspired by Mononoke (371 pts) — https://sunshowers.io/posts/anthropic-mononoke/ — **pulse 2**, post + full comment tree; Anthropic's prior-art paragraph re-read and quoted verbatim
+  - ✅ Linus Torvalds's first LLM-assisted patch series (116 pts, LWN) — **pulse 2 coda**, read in full
+  - ✅ LFM2.5-24B-A2B (208 pts) — **pulse 3**, blog read in full; the reward-hacking/sandbox-detection admission is the usable part
+  - ✅ Banks offloading AI data center debt (363 pts) — **money moves**, read in full; figures are FT/Bloomberg-sourced
+  - Not picked: OpenCode 2.0 (604) and Jev 1.14.0 (285) — product launches, excluded by the brief; "Why do LLM pelicans look like this" (162), "Has AI tells" (122), AI mass-decompiling games (104) — thin; Character.ai bankruptcy documents (404 Media, 63) — **shipped the Chapter 11 yesterday**, and the new filing detail is behind a hard paywall after the lede; The Register's Anthropic self-replication critique (74) — URL 404s from this host, and the underlying story shipped 10-13.
+- **Podcast Deep Cut:** The Cognitive Revolution, "Governing AI Agents: Alan Chan of GovAI" (Oct 14) — full published transcript read, both parts; all Chan quotes verbatim from it. Runner-up **not usable**: Latent Space's "Lab-in-the-Loop at Compute Speed — Ian Quigley, Leash Bio" (Oct 14) would have been the better fit for a biomedical AI listener, but **no transcript is published** (the `/transcript` page and the Substack post API both return show notes only), so it fails the full-text gate. Worth revisiting — Leash released the Minos preprint, blog and open dataset alongside it, and Latent Space says a follow-up lightning episode is coming.
+- **Newsletters:** Latent Space archive checked; today's AINews issue not yet posted at run time. Interconnects has nothing newer than Oct 9.
+
+**Source failures this run (auditable gaps):**
+- **theregister.com — HTTP 404** on the Anthropic self-replication critique URL; dropped rather than guessed at a replacement slug.
+- **reuters.com and cnbc.com — both failed** on ASML's Q3 results (774-byte block and a 404). WebSearch returned only pre-earnings previews and stale 2025 bookings figures, so I **cut the planned ASML counterpoint to the debt story** rather than cite unverified numbers. Money Moves ran one item instead of two.
+- 404media.co paywalls the Character.AI bankruptcy filing details after the lede.
+- The GovAI paper and UK AISI incident report URLs were taken from the episode page's own links after my first guessed GovAI URL 404'd.
+=== 2026-10-15T02:40:44-07:00 done  jinglin-ai-pulse (exit 0) ===
