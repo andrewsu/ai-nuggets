@@ -5545,3 +5545,35 @@ The spoken body is clean — no URLs, DOIs, IDs, or markdown structure. Episode 
 
 One judgment call worth flagging: MADDIE reports 100/100 satisfying molecules on all 50 targets, which I treated skeptically in the script — the quota is the stopping condition, so the pass rate is near-definitionally 1, and the informative number is the ~1,044 molecules generated per 100 delivered.
 === 2026-10-14T03:04:44-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-15T02:50:12-07:00 start receptor-and-reason ===
+Published (stub mode — `SKIP_TTS=1`, so no TTS, R2 publish, feed edit, or commit; `publish_pending.py` will do those).
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-10-15-receptor-and-reason.md` — 2,843 words, ~15.6 min, 10 items
+- `…-receptor-and-reason.rss-item.xml` (validates; `__LENGTH__`/`__DURATION__` placeholders intact)
+- `…-receptor-and-reason.commit-msg`
+- Ledger appended: 145 episodes, 1,508 items
+
+**Candidate funnel**
+
+- **bioRxiv/medRxiv details API** — 1,736 v1 records in the 10-08→10-15 window (10-07→10-14 reused from `/tmp/rr1014/preprints.json`, 393 new records swept today for 10-14/10-15). 489 keyword hits → 248 after category gate → 291 candidates filtered (incl. journals) → **273 fresh** (18 already shipped).
+- **Nature family RSS** (`npp`, `mp`, `neuro`, `tp`, `nrd`) — 5 feeds × ~8 items; `s41398` is not a slug (150-byte empty reply; use `tp`). 7 Crossref-resolved, 4 OA.
+- **arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml` held only 10-13/10-14 (500-entry cap); 297 new 10-14 entries → 27 bio+agentic hits → 4 fetched in full.
+- **Source failures:** direct `www.biorxiv.org` / `www.medrxiv.org` 429'd (17-byte) from the second request onward after a duplicate-curl mistake on my part; `r.jina.ai` on `.full.pdf` carried 5 preprints then began returning sub-100-word stubs. 10 preprints deferred unread (logged to memory).
+
+**Shortlist after filtering** (★ = chosen)
+
+- ★ Language-associated brain representations covary with disruption of selfhood under psilocybin — biorxiv 2026.10.06.757069 (**lead**)
+- ★ Psychotropic Receptor Modulation and Cognition in Psychotic Disorders — medrxiv 2026.10.12.26365151
+- ★ Virtual Brain Modelling … Schizophrenia / Antipsychotic Treatment Resistance — biorxiv 2026.10.13.758782
+- ★ ADHD: transition to psychotic disorders — Mol Psychiatry 10.1038/s41380-026-03926-4
+- ★ Nicotinic control of dopamine release shapes striatal output — biorxiv 2026.10.12.758519
+- ★ Sparse Phosphorylatable Residues, Tuned by Agonist Chemotype, Shapes GPCR Signaling — biorxiv 2026.10.06.756976
+- ★ MolHop — arxiv 2610.19920 · ★ Beyond Benchmark Accuracy — arxiv 2610.19906 · ★ Same Claim, Different Interpretations — arxiv 2610.20457 · ★ PRISMATIC — arxiv 2610.19762
+- Dropped at the final dedup gate: *AD target and drug discovery by leveraging multiomics and EHR* (Nat Neurosci, read in full, **shipped 10-13**) — this was the intended lead; re-gating the final roster is what caught it.
+- Read but unused: AT1R G-protein-biased signalling structure — biorxiv 2026.10.13.758900
+
+One search was run to confirm the psilocybin lead isn't a re-post of earlier work from the same UCL group; it isn't — the prior public material is conference/poster-stage.
+
+Sources: [UCL Language, Action and Brain Lab](https://www.ucl.ac.uk/pals/language-action-and-brain-lab/presentations/neurobiology-language-mediates-alterations), [neurolang.org abstract](https://neurolang.org/2022/presentation/?id=952)
+=== 2026-10-15T03:02:48-07:00 done  receptor-and-reason (exit 0) ===
