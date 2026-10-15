@@ -5521,3 +5521,40 @@ Episode written for 2026-10-14 in SKIP_TTS stub mode (no TTS, no R2 publish, no 
 
 PolyGraph won on fit and on having a result the audience can act on: deployed retraction cleanup leaves 28% of queries contaminated and changes *nothing* under predicate revocation; rebuild-and-diff is ruled out because resampling noise is 5× the deletion signal; and the trust verdict splits by receipt shape, not by layer per se.
 === 2026-10-14T02:04:01-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-15T02:00:11-07:00 start biomedical-agentic-ai ===
+All three files written. `SKIP_TTS=1` is set, so no TTS, no R2 publish, no feed edit, no commit — `publish_pending.py` picks these up after batch TTS.
+
+**Episode:** ReproBAIT — coding agents rebuild biological AI tools, and the paper barely helps
+**Script:** `podcasts/biomedical-agentic-ai/scripts/2026-10-15-reprobait-rebuilding-the-tool-from-the-abstract.md` (942 words, cap 1150)
+**Paper:** https://arxiv.org/abs/2610.19810 (verified 200; full text read via PDF + mutool, 12k words, no `placeholder` hits)
+
+## Candidate funnel
+
+**bioRxiv** — details API swept day-by-day 10-12→10-15, 835 unique DOIs, 637 at version 1 and in-window. 62 passed the keyword filter; substantive after discarding spurious matches ("autonomous dampening of Wnt", "agent" in pharmacology senses, foundation-model-as-representation papers that aren't agentic):
+- GENIE: a multi-agent system for closed-loop autonomous microscopy — 10.64898/2026.10.12.758370
+- Braintree: an agentic framework for in-silico vision neuroscience — 10.64898/2026.10.07.756448
+- CLARA: Compound Library Active Learning with Reasoning Agents — 10.64898/2026.10.05.756921 (known standing deferral)
+- Ontology-Driven Annotation of Key Events / AOP networks — 10.64898/2026.10.06.756965
+- PatientPheX: full-text corpus for patient-specific phenotype extraction — 10.64898/2026.10.07.757319
+- From Closed-Set Annotation to In-Context Discovery: Biologically Grounded LLMs for Cellular Profiling — 10.64898/2026.10.07.757352
+
+**arXiv** — shared cache read (500 entries, 10-13 and 10-14 only; the 500-entry cap again covers under two days). 257 keyword hits, biomedically substantive shortlist:
+- **ReproBAIT: Can coding agents build their own biological AI tools?** — https://arxiv.org/abs/2610.19810 ← **CHOSEN**
+- Knowledge Graphs as Files: An Agent Harness Where Tool Creation and Tool Use Co-Evolve — https://arxiv.org/abs/2610.18616 (strongest runner-up; KG+agent, but the show ran graph-structure picks on 10-09 and 10-13)
+- LabCompiler: Verifiable Human-Machine Laboratory Execution from Imperfect Protocols — https://arxiv.org/abs/2610.19550
+- EpiGuard: An Autonomous Infectious-Disease Early Warning Agent Platform — https://arxiv.org/abs/2610.19396
+- Into the Unknown: Benchmarking AI agents on open scientific research problems — https://arxiv.org/abs/2610.19159
+- LabOPBench: Evidence-Grounded Laboratory Decision Making — https://arxiv.org/abs/2610.19780
+- Beyond Reachability: Relation-Semantic Reasoning for Biomedical Multi-hop QA — https://arxiv.org/abs/2610.19754
+- Autonomous Science Bench — https://arxiv.org/abs/2610.18449 (skipped: shipped in receptor-and-reason 10-14)
+
+**PubMed** — esearch reldate=5, 74 hits, all scanned. Nothing agentic-for-research cleared the bar; closest were a Nat Med epilepsy co-management study and an NPJ Drug Discov review of agentic AI (review, not primary).
+
+**ChemRxiv** — `site:chemrxiv.org` web search returned zero ChemRxiv pages (the site: operator didn't take); no in-window candidates. Source effectively missed today.
+
+**News / product launches** — no in-window (10-12→10-15) agentic-biomedical announcement surfaced; search results were all pre-October.
+
+**Policy / funders** — ARPA-H news checked: latest items 10-09 (BIOGAMI) and 10-01 (biosensors), neither AI-program and both out of the 3-day window. NIH/NSF/HHS not separately fetched after ARPA-H came back empty.
+
+**Why ReproBAIT beat the field:** it's the only item that changes how the audience should act rather than adding another benchmark number — it measures disclosure as a governance lever and finds the lever doesn't work, which cuts directly at the open-science/biosecurity question. Full text was readable and the result survives contact with it: the abstract sells "agents can reproduce tools," while the body's real finding is that the abstract-only and full-paper conditions are near-indistinguishable, and that the binding constraint is long-run agent coherence, not code generation.
+=== 2026-10-15T02:05:28-07:00 done  biomedical-agentic-ai (exit 0) ===
