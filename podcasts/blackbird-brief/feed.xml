@@ -12,7 +12,29 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Technology"/>
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/blackbird-brief/feed.xml" rel="self" type="application/rss+xml"/>
-                                    <item>
+                                        <item>
+          <title>Portfolio Watch — FDA opens a formal rewrite of rare-disease review that would make fit-for-purpose evidence the norm, possibly by regulation and including CMC, which is the window for Aletira to put the untreated-ear control on the record; Opus Genetics takes its retinal gene therapy into Phase 3 at the starting dose and shows whole-organ averages hide the decline; City Therapeutics prices an upsized $200M IPO at the midpoint; and Maryland's MacroGenics doses a first-in-class ADC on a licensed-in payload</title>
+          <description>The Blackbird Brief Portfolio Watch for Friday, October 16, 2026. News window 2026-10-14 to 2026-10-16. Four items.
+
+          ITEM 1 (LEAD, Aletira + NuGate) — FDA launched the Rare Disease Framework Initiative with a white paper, "A New Framework for Rare Disease Review." Advice and decisions are to be consistently tailored to the evidence reasonably attainable given the disease, population and product, making fit-for-purpose evidence the norm. Scope runs from pre-IND through post-approval obligations and explicitly includes risk-based CMC review and pre-approval inspections; FDA may revise regulations, not just guidance; it is cross-center (CDER and CBER). Public meeting October 28 with the Reagan-Udall Foundation, a Federal Register request for information and sector roundtables follow; no completion date. The point is consistency more than flexibility — coverage cites the uniQure external-control reversal and Capricor's rejection. Leerink: not lowering the bar, but less of a guessing game. The read: the comment window is when to put the untreated-ear within-patient control on the record for Aletira; NuGate should watch the external-control language; AAV CMC and inspection timing is named. Caveat: a plan to build a plan — don't model it until it's in regulation.
+
+          ITEM 2 (Aletira endpoint design) — Opus Genetics at Retina in Rio: OPGx-LCA5 adults held visual-acuity gains to 24 months and adolescents reached normal-range sensitivity at six months, with light sensitivity improved versus the untreated eye; Phase 3 proceeds at the low 1E10 vg/eye dose without escalation, primary endpoint retinal sensitivity at 16 central loci, dosing this quarter. OPGx-BEST1: 3 of 4 evaluable low-dose patients improved; natural history shows decline concentrated in the transitional zone while whole-retina averages look stable. For the cochlea: pick the frequencies and thresholds where untreated ears actually decline before dosing. Tiny numbers — a design lesson, not efficacy validation.
+
+          ITEM 3 (financing, NuGate) — City Therapeutics, an RNAi company with clinical programs against factor XI, RBP4 and TFR2, priced an upsized IPO of about 11.1 million shares at $18, the midpoint of its $17–19 range, for roughly $200M gross, versus about $175M originally targeted. Against Iambic's below-last-round pricing, the distinction is whether a platform claim rides on a clinical asset against a target the market already believes. OrbiMed also closed about $3B in new life-sciences funds, including over $1B for Asia.
+
+          ITEM 4 (oncology surface targets, Maryland) — MacroGenics of Rockville dosed the first patient with MGC030, a first-in-class ADC against an undisclosed target, using Synaffix's licensed exatecan-based payload at a drug-to-antibody ratio of 4, in up to 54 patients across GI and urothelial cancers. Conjugation is rentable; the defensible asset is the target and the antibody.
+
+          Week ahead: Kyverna's full stiff person syndrome dataset in Toronto 10-21 (Winnow); FDA rare disease framework public meeting 10-28.</description>
+          <link>https://www.fda.gov/industry/fda-rare-disease-innovation-hub/rare-disease-framework</link>
+          <guid isPermaLink="false">2026-10-16-portfolio-watch</guid>
+          <pubDate>Fri, 16 Oct 2026 12:00:00 +0000</pubDate>
+          <enclosure url="https://podcast.su-lab.workers.dev/p/blackbird-brief/u/matt/2026-10-16-portfolio-watch.mp3" length="3659066" type="audio/mpeg"/>
+          <itunes:duration>457</itunes:duration>
+          <itunes:summary>The Blackbird Brief Portfolio Watch for Friday, October 16, 2026. FDA opened a formal rewrite of rare-disease review aimed at consistent, fit-for-purpose evidentiary expectations, possibly written into regulation and reaching CMC and inspections — the comment window is where Aletira's untreated-ear control and NuGate's external-control questions should go on the record. Opus Genetics took a retinal gene therapy into Phase 3 at its starting dose and showed that whole-organ averages hide where disease actually progresses, an endpoint lesson for the cochlea. City Therapeutics priced an upsized $200M IPO at the midpoint, refining the platform-versus-data financing read. And MacroGenics in Rockville dosed a first-in-class ADC built on a licensed-in payload.</itunes:summary>
+          <itunes:explicit>false</itunes:explicit>
+        </item>
+
+    <item>
               <title>Portfolio Watch — Arrowhead's subcutaneous siRNA crosses the blood-brain barrier and cuts CSF tau 73% at day 105, ninety days after the last dose, giving the delivery-platform-versus-route argument a CNS data point against NuGate's intrathecal route; a second alpha-7 nicotinic Phase 3 fails to confirm a Phase 2 trend measured on a self-rated scale; Verastem's oral KRAS G12D inhibitor posts 41% in pancreatic cancer and raises $250M the same morning; and Lakefront sells its preclinical CAR-T pipeline for 8 million euros up front against $230M in milestones</title>
               <description>The Blackbird Brief Portfolio Watch for Thursday, October 15, 2026. News window 2026-10-14 to 2026-10-15. Four items.
 

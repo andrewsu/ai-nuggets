@@ -3647,3 +3647,26 @@ Sources/mechanics worth flagging: **r.jina.ai returned a CloudFront 403 on BioSp
 
 Sources: [Arrowhead release](https://www.businesswire.com/news/home/20261014103135/en/) · [BioPharma Dive on ARO-MAPT](https://www.biopharmadive.com/news/arrowhead-rnai-alzheimers-tau-aro-mapt-study-results/832950/) · [Vanda VQW-765](https://www.biospace.com/press-releases/vanda-pharmaceuticals-provides-update-on-vqw-765-clinical-development-program) · [Verastem](https://www.biopharmadive.com/news/verastem-g12d-pancreatic-cancer-results-genfleet/832952/) · [Lakefront](https://www.biospace.com/press-releases/lakefront-announces-sale-of-preclinical-car-t-programs-to-armed-cell-therapeutics) · [Freenome/ACG](https://www.rttnews.com/3698084/freenome-highlights-improved-simplescreen-crc-performance-data-at-acg-2026-stock-up.aspx)
 === 2026-10-15T02:18:03-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-16T02:10:14-07:00 start blackbird-brief ===
+I've written today's Portfolio Watch episode (Friday, October 16) and left it for the batch audio step. `SKIP_TTS=1` was set, so per PIPELINE.md I didn't generate audio, upload it, edit `feed.xml` or commit; `publish_pending.py` does those later.
+
+**Files written:**
+- Script: `podcasts/blackbird-brief/scripts/2026-10-16-portfolio-watch.md`. It's about 1,470 spoken words, which should run around 8 minutes.
+- `2026-10-16-portfolio-watch.rss-item.xml`, with `__LENGTH__` and `__DURATION__` placeholders. It parses as valid XML once the iTunes namespace is supplied.
+- `2026-10-16-portfolio-watch.commit-msg`.
+- The 4 picks were appended to `state/shipped.jsonl`, which now holds 101 episodes.
+- I added one sentence to the open "substantial-evidence" item in `memory/blackbird-portfolio.md`, recording the FDA framework as a second place to file the untreated-ear control request.
+
+**Episode items:**
+1. **Lead: the FDA's Rare Disease Framework Initiative, announced October 14.** The FDA wants evidence requirements tailored to what each rare disease allows to become standard practice, possibly written into regulation. It covers both the drug and biologics centers, and manufacturing review and pre-approval inspections are in scope. A public meeting is set for October 28. The episode ties it to Aletira, whose design compares the treated ear with the untreated ear, and to NuGate's use of natural-history comparison groups. I read the FDA white paper in full.
+2. **Opus Genetics at Retina in Rio.** Its LCA5 gene therapy goes into Phase 3 at the starting dose. Its natural-history data show disease decline concentrated in one zone of the retina, which averages over the whole retina hide. The episode frames that as an endpoint lesson for Aletira's hearing program.
+3. **City Therapeutics' IPO.** It priced an upsized offering at $18, the middle of its range, for about $200M, a larger deal than the roughly $175M it set out to raise. The episode contrasts it with Iambic pricing below its last private round, and adds that OrbiMed closed about $3B in new funds.
+4. **MacroGenics (Rockville, MD).** It dosed the first patient with MGC030, a first-in-class antibody-drug conjugate (ADC) against an undisclosed target that uses a licensed Synaffix payload.
+
+**Candidate checks:**
+- All 6 candidates passed the shipped-items check, and a search of past scripts for the asset names found no earlier coverage.
+- Opus's earlier low-dose cohort was covered on 09-12; the episode uses only the new data.
+- Fierce Biotech was blocked again (4th run in a row) and was skipped.
+- Searches turned up no company-specific news for Clasp, Georgiamune, DELFI or Adventris.
+- The full candidate list, including what was held back and why, is in the show notes.
+=== 2026-10-16T02:16:27-07:00 done  blackbird-brief (exit 0) ===
