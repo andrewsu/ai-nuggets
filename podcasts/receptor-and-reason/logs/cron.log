@@ -5577,3 +5577,35 @@ One search was run to confirm the psilocybin lead isn't a re-post of earlier wor
 
 Sources: [UCL Language, Action and Brain Lab](https://www.ucl.ac.uk/pals/language-action-and-brain-lab/presentations/neurobiology-language-mediates-alterations), [neurolang.org abstract](https://neurolang.org/2022/presentation/?id=952)
 === 2026-10-15T03:02:48-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-16T02:50:15-07:00 start receptor-and-reason ===
+Episode written and staged as stubs (SKIP_TTS=1, so no TTS, no R2 publish, no feed edit, no commit — `publish_pending.py` will do those).
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-10-16-receptor-and-reason.md` — 3,257 spoken words (~17.9 min), 10 items
+- `…2026-10-16-receptor-and-reason.rss-item.xml` (validated XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `…2026-10-16-receptor-and-reason.commit-msg`
+- Ledger appended: 10 keys, now 146 episodes / 1,518 items
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| bioRxiv + medRxiv details API (10-09→10-16, v1 only) | 1,655 unique | 236 → **221 fresh** (15 shipped) | reused 10-14/10-15 sweeps, swept 10-15/10-16 myself (270 records) |
+| Nature family RSS (npp, mp, neuro, tp, nrd, nm) | 48 items → 28 in-window | **23 fresh** (5 shipped) | titles/dates resolved via Crossref |
+| arXiv shared cache | 500 entries (10-14/10-15 only, 500-cap) | 73 bio+agentic hits | live call not needed |
+| Psychiatric Times / society press / chemRxiv | — | 0 | PT is Cloudflare-blocked from this host (standing); no society announcements in window |
+
+Shortlist read in full (11 opened, 1 dropped on content):
+- **✓ medRxiv 26365535** — Esketamine response: baseline signal-detection criterion as prognostic marker *(lead)*
+- **✓ medRxiv 26365398** — Effort compression in MDD, Bayesian observer
+- **✓ Nat Neurosci s41593-026-02465-z** — Pla2g2f as a compensatory cognitive-resilience factor
+- **✓ medRxiv 26365259** — Levodopa preferentially reorganizes dorsal STN
+- **✓ medRxiv 26365306** — Individual ARBs and dementia (TriNetX target-trial emulation)
+- **✓ NPP s41386-026-02574-0** — Adolescent endocannabinoids (ABCD substudy)
+- **✓ bioRxiv 759202** — Convergent/distinct transcriptomics in suicide, BD, MDD
+- **✓ arXiv 2610.22062 / 2610.22314 / 2610.22324** — Trofinetide dual-LLM extraction; MindEval2; set-level RL ideation
+- ✗ medRxiv 26365369 (glycoRNA–microglia in MDD) — read, dropped: every primary comparison null
+- ✗ arXiv 2610.20191 (HEM-Med) — read, cut for length
+
+Route notes: medRxiv via r.jina.ai was 5/5; bioRxiv served exactly one direct PDF then 17-byte-429'd the rest (4 items deferred). The week's most on-target paper — Nature Neuroscience's *5-HT2A receptors in layer 5 pyramidal neurons mediate the neuroplastic but not the hallucinogenic effects of psychedelics* — is closed access and abstract-only, so it failed the full-text gate and was dropped rather than summarized. Run notes and deferrals appended to the rolling memory log.
+=== 2026-10-16T03:07:06-07:00 done  receptor-and-reason (exit 0) ===
