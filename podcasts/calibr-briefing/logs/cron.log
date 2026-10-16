@@ -5518,3 +5518,62 @@ Both of today's Calibr scripts are written, each with its feed-entry stub and co
 
 I also added today's notes on which news sources were reachable to the memory file.
 === 2026-10-15T02:28:21-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-16T02:20:15-07:00 start calibr-briefing ===
+The headlines script is written. I'm waiting for the background research on AstraZeneca and insitro before I draft the spotlight.
+
+Both of today's Calibr episodes are written: a headlines roundup and a spotlight on AstraZeneca's deal with insitro. This is a `SKIP_TTS=1` run, so I wrote each script with its feed-entry stub and commit-message stub. I didn't generate audio, edit `feed.xml` or commit; the batch step does those.
+
+- **Headlines** (`2026-10-16-pharma-headlines`, about 1,400 words): eight items plus the week ahead. That should run about 7–8 minutes, over the 5-minute target, as recent episodes have.
+- **Spotlight** (`2026-10-16-astrazeneca-insitro-ai-target-discovery-spotlight`, about 1,620 words): probably 8–9 minutes, a little over the 5–8 minute target.
+
+**Spotlight content.**
+- **Deal:** AstraZeneca pays insitro $40M up front, with up to about $1.46B in milestones plus single-digit royalties, to find new targets in MASH and cardiomyopathies.
+- **Foresite:** Foresite Capital is an insitro investor. It was already one when the Series B was announced in 2020, joined the 2021 Series C, and is still on insitro's investor list this week. I found no Foresite Labs involvement.
+- **Main point:** big pharma's AI spending is moving from designing molecules to choosing targets. The low upfront shows pharma isn't yet paying much for that claim.
+- **Track record:** I found no evidence that any target from insitro's pharma deals (Gilead 2019, BMS 2020) has reached patients. insitro's own first trial has slipped from "this year" to "early 2027."
+
+**Sources.** A background agent built the dossier. I re-read the key primary sources myself: both companies' press releases, the 2020 Series B release that names Foresite, BMS's March 2026 target nominations, insitro's June data release, and AstraZeneca's release on the failed Wainua heart trial.
+
+**Gaps in the spotlight.**
+- I couldn't confirm whether insitro's own lead liver drug sits outside the AstraZeneca deal. The script raises it as a question and doesn't state it as fact.
+- Bloomberg put the deal at $1.86B, unexplained, so the script uses the companies' figure of $1.46B in milestones.
+- I found no analyst quotes on the deal; the only commentary is PharmExec's note on the size of the upfront.
+
+**Candidate funnel**
+- Sources:
+  - Endpoints RSS + news index: 24 items scanned, 9 in window.
+  - BioPharma Dive front page: about 30 scanned, 1 new.
+  - BioSpace press releases (34) and front page: 3 in window.
+  - Clinical Trials Arena: about 40 scanned, 1 in window.
+  - STAT front page and biotech section: 7 in window.
+  - GEN RSS: no drug news in window.
+  - Fierce Biotech and Fierce Pharma: unreachable. The homepage came back as a 669-byte stub, the RSS feeds were blocked, and the proxy service had temporarily banned the domain.
+- Chosen (✓):
+  - ✓ **Spotlight + headline 1:** AstraZeneca–insitro — https://www.astrazeneca.com/media-centre/press-releases/2026/astrazeneca-announces-new-strategic-collaboration-with-insitro-for-difficult-to-treat-cardiometabolic-diseases.html (plus https://www.insitro.com/news/insitro-announces-a-strategic-collaboration-with-astrazeneca-for-ai-enabled-discovery-of-novel-therapeutics-for-mash-and-cardiomyopathies/)
+  - ✓ Iambic first-day trading — https://stockanalysis.com/stocks/iam/
+  - ✓ City Therapeutics upsized IPO — https://www.biospace.com/press-releases/city-therapeutics-announces-pricing-of-upsized-initial-public-offering
+  - ✓ Merck–Moderna cancer vaccine strategy — https://www.statnews.com/2026/10/15/moderna-merck-keytruda-mrna-cancer-vaccine-strategy/
+  - ✓ Osivax OVX836 Phase 2b miss — https://www.biospace.com/press-releases/osivax-reports-phase-2b-results-for-ovx836-and-advances-combination-strategy-for-next-generation-seasonal-influenza-vaccines
+  - ✓ HHS peptides access policy — https://www.statnews.com/2026/10/15/trump-administration-advances-plan-peptides-rfk-jr/
+  - ✓ OrbiMed $3B — https://www.prnewswire.com/news-releases/orbimed-raises-3-billion-across-global-and-asia-private-equity-funds-302909241.html
+  - ✓ Feuerstein on the biotech market — https://www.statnews.com/2026/10/15/wall-street-biotech-trouble-stirring/
+  - ✓ Auchincloss and the former FDA commissioners — https://www.statnews.com/2026/10/15/auchincloss-us-biotech-vs-china-protectionism/ ; https://www.statnews.com/2026/10/15/health-policy-news-fda-califf-gottlieb-sharpless-criticize-hhs-leadership/
+  - ✓ Quick items:
+    - Spinogenix — https://www.clinicaltrialsarena.com/news/spinogenix-phase-iib-study-clarity-basket-trial/
+    - Anavex Fragile X IND — https://www.biospace.com/press-releases/anavex-receives-fda-clearance-of-its-ind-application-for-blarcamesine-in-fragile-x-syndrome
+    - NorthStar–Quarkmed actinium-225 deal (Endpoints)
+    - Lonza mid-term targets
+    - Virginia onshoring (Endpoints)
+    - CDC pregnancy vaccine page (Endpoints)
+- Dropped (✗):
+  - ✗ invIOs APN401 paper: the GlobeNewswire release was blocked, so I couldn't read it.
+  - ✗ Labcorp–BioReference $722M: couldn't verify.
+  - ✗ Regeneron Pasatru 84-week data: dated October 13.
+  - ✗ Roche–Defand: dated October 8.
+  - ✗ North Immunology: dated September 17.
+  - ✗ Neurocrine Vykat safety concerns: August–September news.
+  - ✗ Opus Genetics and MacroGenics: already in the Blackbird show, and lower priority here.
+  - ✗ Estrella, Vogenx, and the earnings-date and inducement-grant notices: filler.
+
+I also added today's notes on which news sources were reachable to the memory file.
+=== 2026-10-16T02:29:18-07:00 done  calibr-briefing (exit 0) ===
