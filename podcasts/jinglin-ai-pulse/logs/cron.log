@@ -3876,3 +3876,33 @@ Episode written. `SKIP_TTS=1`, so I wrote the script plus the two stub files and
 - 404media.co paywalls the Character.AI bankruptcy filing details after the lede.
 - The GovAI paper and UK AISI incident report URLs were taken from the episode page's own links after my first guessed GovAI URL 404'd.
 === 2026-10-15T02:40:44-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-16T02:30:15-07:00 start jinglin-ai-pulse ===
+I stopped this run before publishing. No episode was written, rendered, published, or committed for 2026-10-16.
+
+**What happened:** The research was done and I had the episode drafted. A safety classifier blocked the step that saves the script, so nothing reached disk. I've been told not to produce that content again, even reworded, so I didn't retry it with different wording. `podcasts/jinglin-ai-pulse/` has no changes from this run.
+
+**What you need to do:** Re-run the show manually, or let tomorrow's cron handle it. Expect the runner to log this show as "no usable output." I didn't emit `NUGGETS_SKIP`, because there was plenty of fresh content and nothing failed the content bar.
+
+**Candidate funnel (for the audit record)**
+- Sources:
+  - Hacker News (Algolia API, last 40h, >80 points): 57 stories scanned, about 12 on-topic for AI.
+  - AINews / Latent Space archive: 12 posts scanned, 3 relevant (Oct 14–16).
+  - X via the fxtwitter API: 15 posts read in full.
+  - Simons, Cohere, Meta, Goodfire, Tao and Derek Thompson pages read directly; the Thompson essay is paywalled after the free portion.
+  - I didn't look for @Zefan_Cai: X timelines and search can't be read from this host.
+- Shortlist (none shipped):
+  - LEAD (planned): Goodfire / Nick Cammarata, "Neural Networks Are Already Clean" — https://already-clean.goodfire.com/ — plus responses on X from Neel Nanda, Leo Gao, Jake Mendel and David Pfau.
+  - Meta, Muse Spark Open — https://research.meta.ai/blog/muse-spark-open
+  - Simons Foundation $15M with Anthropic and OpenAI — https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathem — plus Jacob Tsimerman's new Mathematical AI Safety Institute (MAISI), and Rikab Gambhir's satirical guest post on Tao's blog — https://terrytao.wordpress.com/2026/10/15/why-are-we-even-doing-all-this/
+  - Money: Modal raised a $750M Series D at a $15.75B valuation and passed $1B in annualized revenue — https://x.com/bernhardsson/status/2110377648572563831
+  - Money: Cohere's proposed acquisition of AISLE — https://cohere.com/blog/cohere-and-aisle-sign-letter-of-intent-to-advance-cyber-resilient-sovereign-ai
+  - Deep Cut: Latent Space AI for Science, Ian Quigley of Leash Bio (Oct 14; full transcript read) — https://www.latent.space/p/lab-in-the-loop-at-compute-speed
+- Considered and dropped:
+  - Both Mononoke follow-up posts: already covered on 10-15.
+  - The data center debt story and Liquid AI's LFM2.5: already covered on 10-15.
+  - Derek Thompson's essay: only usable as a supporting quote, because of the paywall.
+- Already checked against the last 9 episodes: none of the shortlisted items has been covered, so a re-run can use this list as is.
+=== 2026-10-16T02:35:03-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-16T02:35:03-07:00 no usable output for jinglin-ai-pulse; retrying in 180s ===
+=== 2026-10-16T02:38:03-07:00 start jinglin-ai-pulse (retry 1) ===
+TTS is still running (no log output yet). I'll be notified when it finishes, then I'll publish, update the feed and commit.
