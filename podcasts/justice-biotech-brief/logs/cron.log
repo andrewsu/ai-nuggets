@@ -4218,3 +4218,36 @@ The episode analyzes the Vir Biotechnology / Gilead dual-masked T-cell engager c
 === 2026-10-15T03:58:51-07:00 done  justice-biotech-brief (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
 === 2026-10-15T03:58:51-07:00 FAILED: no usable output for justice-biotech-brief after all retries ===
 === 2026-10-16T02:40:15-07:00 start justice-biotech-brief ===
+Published.
+
+**Episode: `2026-10-16-cr-001-pd1-vegf-bispecific-chemo-adc-combination-cohorts-before-first-data`** — script written, audio generated (6:25, 3,081,030 bytes; Voxtral 404'd on chunk 1, fell back cleanly to Mistral), uploaded to R2, feed item added (XML validated), committed as `e5b85a3`. Orchestrator handles the push.
+
+**Pick:** CR-001 — Crescent's tetravalent PD-1 × VEGF bispecific completed ASCEND dose escalation (125+ patients) and immediately opened chemo combination cohorts in seven settings plus 700+ patients of Kelun's sac-TMT combinations, all before a single efficacy number. Editorial spine: the development sequence is inverted on purpose because the class question is treated as already answered by ivonescimab — so the asset is a backbone, and the 2027 readout that matters is dose intensity, not ORR. Sharper second thread: CR-002, a PD-L1-targeted topo-I ADC meant to pair with a PD-1 blocker, aims its payload at an antigen that is upregulated on exactly the activated T/myeloid/dendritic cells the other drug just recruited.
+
+**Candidate funnel**
+
+- **bioRxiv 10-14/15/16** — 497 scanned (302 / 164 / 31), v1-only + keyword filter → 11 hits, 2 substantive.
+- **medRxiv 10-14/15/16** — 158 scanned (83 / 75 / 0) → 4 hits, 1 substantive.
+- **News** — BioSpace press-release index readable over plain curl (34 releases); Fierce Biotech homepage readable but only ~15 article links, all off-beat; `endpts.com` 301 → 162 bytes (skipped per source-failure rule).
+- **Policy/funder** — nothing on-beat in window.
+
+Shortlist:
+- **CR-001 PD-1×VEGF — ASCEND chemo + ADC combination cohorts** (Crescent, 10-15), biospace.com/press-releases/crescent-biopharma-announces-clinical-pipeline-momentum... — **CHOSEN**
+- MGC030 first patient dosed, first-in-class ADC vs undisclosed target, Synaffix exatecan DAR 4 (MacroGenics, 10-15) — runner-up; undisclosed target limits the take
+- γδ TCR crosslinked by a spontaneously dimerized UCHT1 Fab, cryo-EM (`10.64898/2026.10.08.757522`, posted 10-15) — **deferred, full text not yet rendered**; bioRxiv 429'd every channel for ~50 min, and when it finally cleared at 100 KB it was still abstract-only. Strongest preprint on the board; retest 10-17 while still in window
+- ER retrieval-and-release reveals ligand-independent basal TCR signaling (`10.64898/2026.10.13.758962`) — on-beat-adjacent, not selected
+- Human-guided agentic AI for sequential ADC pathways in breast cancer, EHR (medRxiv `10.64898/2026.10.13.26365479`) — off-beat for this show
+=== 2026-10-16T02:50:23-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-16T02:50:23-07:00 no usable output for justice-biotech-brief; retrying in 180s ===
+=== 2026-10-16T02:53:23-07:00 start justice-biotech-brief (retry 1) ===
+I didn't make a new episode. The orchestrator retried this show by mistake, and today's episode had already shipped before this retry started.
+
+- **What already shipped:** an episode on CR-001, Crescent's PD-1 × VEGF bispecific, committed as `e5b85a3` at 02:49. The script is in `scripts/` and `feed.xml` has the item. The 02:40 run created the audio, uploaded it to R2 and updated the feed itself, even though `SKIP_TTS=1` was set.
+- **Why it retried:** that run wrote no `.rss-item.xml` or `.commit-msg` stub files, so the runner decided there was "no usable output" and started this retry at 02:53. That was four minutes later, too soon for any new news.
+- **What I did:** no search, no script and no stub files. Writing stubs would make `publish_pending.py` add a duplicate feed item.
+- **Memory:** I added this case to the false-retry note. That's the sixth time it has happened, across five shows. The note still recommends changing PIPELINE.md or the prompts so runs with `SKIP_TTS` set write stubs instead of publishing directly.
+- **To revisit on 10-17:** last run's funnel had one deferred preprint still in its recency window, the γδ TCR / dimerized UCHT1 Fab cryo-EM paper (`10.64898/2026.10.08.757522`).
+
+NUGGETS_SKIP: false retry — today's episode (CR-001, commit e5b85a3) already published inline at 02:49; no new content possible in the 4 minutes since
+=== 2026-10-16T02:54:04-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-10-16T02:54:04-07:00 SKIPPED: justice-biotech-brief deliberate skip (bar not met): false retry — today's episode (CR-001, commit e5b85a3) already published inline at 02:49; no new content possible in the 4 minutes since ===

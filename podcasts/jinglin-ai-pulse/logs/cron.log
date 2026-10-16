@@ -3906,3 +3906,111 @@ I stopped this run before publishing. No episode was written, rendered, publishe
 === 2026-10-16T02:35:03-07:00 no usable output for jinglin-ai-pulse; retrying in 180s ===
 === 2026-10-16T02:38:03-07:00 start jinglin-ai-pulse (retry 1) ===
 TTS is still running (no log output yet). I'll be notified when it finishes, then I'll publish, update the feed and commit.
+
+Today's episode of Ollie's AI Pulse, "Clean is not the same as right," is published and committed. It runs 13 minutes 21 seconds (801 s, 6.4 MB) and has 2,461 spoken words. That's above the brief's 1,500–2,200 target but shorter than the last four episodes. The audio came from the Mistral fallback voice; one 429 rate-limit error cleared after a 60-second wait.
+
+Committed `040e5b9: Episode: Ollie's AI Pulse 2026-10-16 — clean is not the same as right…`. The mp3 is uploaded to R2, the feed item is added (the feed parses as valid XML), and only `podcasts/jinglin-ai-pulse/` was staged. Nothing was pushed; the orchestrator does that.
+
+**Candidate funnel**
+- **Hacker News** (Algolia API, last 48h, more than 80 points): 75 stories scanned, about 14 about AI, 6 shortlisted.
+- **X/Twitter**: there are no timelines or search from this host, so I took tweet IDs from AINews and read 17 posts word for word through fxtwitter. I could not track @Zefan_Cai directly.
+- **Latent Space** (Substack API): 8 posts scanned. The Oct 16 and Oct 15 AINews issues were used as the stand-in for Twitter discussion, and the Oct 14 Leash Bio episode as the podcast deep cut. Its full transcript came from the Substack API.
+- **Business news**: Modal's Series D, Cohere's planned AISLE acquisition, and Anthropic's Q3 revenue. I dropped Anthropic's revenue because it was only secondhand (a repost of a Bloomberg report).
+- **WhynotTV**: skipped, still stale (per memory).
+- **Repeat check**: none of the items had been covered before. AISLE was in the 09-03 episode, so I used Cohere's deal as a callback.
+
+**Shortlist** (★ = used, all read in full)
+- ★ Goodfire / Nick Cammarata, "Neural Networks Are Already Clean" (lead story), plus reactions from Nanda, Mendel, Gao, Pfau and roon: https://already-clean.goodfire.com/
+- ★ Meta, Muse Spark Open: https://research.meta.ai/blog/muse-spark-open
+- ★ Simons Foundation $15M math-and-AI program, plus Tsimerman's MAISI announcement: https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/
+- ★ Rikab Gambhir's satirical guest post on Tao's blog: https://terrytao.wordpress.com/2026/10/15/why-are-we-even-doing-all-this/
+- ★ Modal, $750M Series D: https://x.com/bernhardsson/status/2110377648572563831
+- ★ Cohere's letter of intent to acquire AISLE: https://cohere.com/blog/cohere-and-aisle-sign-letter-of-intent-to-advance-cyber-resilient-sovereign-ai
+- ★ Deep cut: Latent Space AI for Science with Ian Quigley of Leash Bio: https://www.latent.space/p/lab-in-the-loop-at-compute-speed
+- Not used:
+  - Scion/Mononoke part 2, a follow-up to yesterday's lead: https://sunshowers.io/posts/anthropic-mononoke-2/
+  - Derek Thompson, "I know why the mathematicians weep": https://www.derekthompson.org/p/i-know-why-the-mathematicians-weep
+  - OpenCode 2.0: https://anoma.ly/notes/opencode-2-0/
+  - Krea 3: https://www.krea.ai/krea-3
+
+I also added a note to memory: any Substack podcast, including Latent Space, exposes a full transcript through its posts API.
+=== 2026-10-16T02:48:26-07:00 done  jinglin-ai-pulse (exit 0) (retry 1) ===
+=== 2026-10-16T02:48:26-07:00 no usable output for jinglin-ai-pulse; retrying in 180s ===
+=== 2026-10-16T02:51:26-07:00 start jinglin-ai-pulse (retry 2, --model claude-sonnet-5) ===
+Today's episode for `jinglin-ai-pulse` is already published and committed: `040e5b9 — "Clean is not the same as right"` (2026-10-16), with the mp3 generated, feed updated (113 items), and only `cron.log` dirty locally. This matches the known false-retry pattern (orchestrator logs "no usable output; retrying" seconds after a successful publish+commit) — the git history confirms the episode genuinely shipped.
+
+No further action needed for this invocation; I'm not re-running the search/write/publish cycle since that would risk a duplicate or off-brief second episode for the same day.
+=== 2026-10-16T02:51:54-07:00 done  jinglin-ai-pulse (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-10-16T02:51:54-07:00 no usable output for jinglin-ai-pulse; retrying in 180s ===
+=== 2026-10-16T02:54:54-07:00 start jinglin-ai-pulse (retry 3, --model claude-sonnet-5) ===
+Verified: today's episode is fully shipped and intact.
+
+- **Committed:** `040e5b9` — "Clean is not the same as right" (2026-10-16)
+- **Script, mp3 (6.4 MB), and feed item** all present; feed.xml has 113 valid items; stub files (`.rss-item.xml`, `.commit-msg`) were already cleaned up by `publish_pending.py`
+- **Working tree clean** aside from `cron.log` (expected — append-only audit log)
+
+This invocation is the documented false-retry pattern: the orchestrator's "no usable output" check fires seconds after a successful publish+commit and keeps re-invoking the show. Per `PIPELINE.md`'s re-invocation rule, I only produce a second episode if there's a genuine reason (e.g., a bonus episode) and fresh, unshipped candidates — neither applies here; today's content was already fully used in the shipped episode. I'm taking no action: no new script, no second TTS run, no commit. Nothing further is needed from this run.
+=== 2026-10-16T02:55:35-07:00 done  jinglin-ai-pulse (exit 0) (retry 3, --model claude-sonnet-5) ===
+=== 2026-10-16T02:55:35-07:00 no usable output for jinglin-ai-pulse; retrying in 180s ===
+=== 2026-10-16T02:58:35-07:00 start jinglin-ai-pulse (retry 4, --model claude-haiku-4-5-20251001) ===
+I've reviewed the production status for today's jinglin-ai-pulse episode. **Today's episode is already complete and published.**
+
+## Current Status (2026-10-16)
+
+✅ **Episode published:**
+- **Title:** "Clean is not the same as right"
+- **Commit:** `040e5b9`
+- **Script:** Written and finalized at `/home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/scripts/2026-10-16-clean-is-not-the-same-as-right.md`
+- **Audio:** Generated (6.4 MB mp3, 13.5 min duration)
+- **Feed:** Updated with full metadata and enclosure link
+- **Publishing:** Complete via R2 Cloudflare Worker
+
+**Episode content covers:**
+1. **Twitter Pulse:** Goodfire's "Neural Networks Are Already Clean" essay by Nick Cammarata, with responses from interpretability researchers (Nanda, Mendel, Gao, Pfau)
+2. **Models:** Meta's Muse Spark Open and its open-weight strengths vs. agentic-eval weaknesses
+3. **Money Moves:** Simons Foundation $15M math-and-AI program, Modal's $750M Series D ($1B ARR), Cohere acquiring AISLE
+4. **Deep Cut:** Latent Space AI for Science podcast — Ian Quigley on Leash Bio's "Clever Hans" problem in molecular activity models
+
+## Re-invocation Check
+
+Per PIPELINE.md rules for re-invocation, I searched for fresh material from the same sources (Twitter/X discourse, AI investment news, podcasts) to identify candidates for a potential second episode. However:
+
+- Web search cannot access live X/Twitter posts (noted in your memory as blocked from this host)
+- Recent general AI news summaries are dated and don't provide new story candidates distinct from those covered
+- The first episode appears to have captured the week's major discourse topics comprehensively
+
+**Conclusion:** Following the pipeline rule — *"If after excluding today's already-shipped items there are no fresh candidates left, the right outcome is no second episode for the day"* — there is no second episode.
+
+Today's episode is ready for distribution. The cron log shows the expected orchestrator retry pattern after a successful publish, but the git history confirms the episode genuinely shipped.
+
+Sources:
+- [AI Startup Funding News](https://blog.mean.ceo/?p=11147)
+- [AF.NET AI News](https://af.net/realtime/ai-startups-raise-1-81-billion-across-46-funding-rounds-on-october-8-2026/)
+- [Crunchbase News on October 2026 funding](https://www.alpha-maven.com/news/venture-capital/the-weeks-10-biggest-funding-rounds-almost-all-about-ai-crunchbase-news)
+=== 2026-10-16T03:00:30-07:00 done  jinglin-ai-pulse (exit 0) (retry 4, --model claude-haiku-4-5-20251001) ===
+=== 2026-10-16T03:00:30-07:00 no usable output for jinglin-ai-pulse; retrying in 180s ===
+=== 2026-10-16T03:03:30-07:00 start jinglin-ai-pulse (retry 5, --model claude-haiku-4-5-20251001) ===
+## Status Report
+
+I've reviewed the production pipeline and current state of today's episode. Here's what I found:
+
+**Today's Episode: Published ✓**
+- **Script:** `2026-10-16-clean-is-not-the-same-as-right.md` (18.7 KB, written at 02:43 UTC)
+- **Feed Status:** Published to `jinglin-ai-pulse/feed.xml` as the leading item
+- **Audio:** Published to CDN at `podcast.su-lab.workers.dev/p/jinglin-ai-pulse/u/ollie/2026-10-16-clean-is-not-the-same-as-right.mp3` (6.4 MB, 13.3 min)
+- **Content:** Comprehensive coverage of Goodfire's interpretability essay, Meta's Muse Spark Open, Simons Foundation Math AI, Modal funding, Cohere/AISLE acquisition, and Leash Bio podcast segment
+
+**Re-invocation Assessment:**
+
+Per the pipeline guidelines, I checked for a second episode today. The first episode already covers:
+- **Interpretability debate** (Goodfire/Cammarata vs. Nanda/Mendel/Gao/Pfau)
+- **Model releases** (Meta Muse Spark Open)
+- **Research funding** (Simons Foundation $15M)
+- **Business moves** (Modal $750M, Cohere/AISLE)
+- **Podcast deep cut** (Leash Bio on Clever Hans)
+
+For a re-invocation episode, I would need fresh sources on topics not covered above. My web searches for October 16 AI news returned only older cached results and generic aggregators, not fresh daily content. Following the pipeline directive — "do not widen the recency window or shift the source mix to 'find something different'" — and finding insufficient fresh candidates beyond what the first episode covers, a second episode is not warranted today.
+
+**Conclusion:** Today's episode is fully published and ready for listeners. The production pipeline has completed successfully.
+=== 2026-10-16T03:05:44-07:00 done  jinglin-ai-pulse (exit 0) (retry 5, --model claude-haiku-4-5-20251001) ===
+=== 2026-10-16T03:05:44-07:00 FAILED: no usable output for jinglin-ai-pulse after all retries ===
