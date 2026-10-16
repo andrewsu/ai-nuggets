@@ -5558,3 +5558,36 @@ All three files written. `SKIP_TTS=1` is set, so no TTS, no R2 publish, no feed 
 
 **Why ReproBAIT beat the field:** it's the only item that changes how the audience should act rather than adding another benchmark number — it measures disclosure as a governance lever and finds the lever doesn't work, which cuts directly at the open-science/biosecurity question. Full text was readable and the result survives contact with it: the abstract sells "agents can reproduce tools," while the body's real finding is that the abstract-only and full-paper conditions are near-indistinguishable, and that the binding constraint is long-run agent coherence, not code generation.
 === 2026-10-15T02:05:28-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-16T02:00:14-07:00 start biomedical-agentic-ai ===
+All three files written. `SKIP_TTS=1` is set, so no TTS, no R2 publish, no feed edit, no commit — `publish_pending.py` picks these up after batch TTS.
+
+**Episode:** OmicsBench — agents drift away from your data, one turn at a time
+**Script:** `podcasts/biomedical-agentic-ai/scripts/2026-10-16-omicsbench-agents-drift-from-your-data.md` (991 spoken words, cap 1150)
+**Paper:** https://arxiv.org/abs/2610.21074 (verified 200; full text read via PDF + mutool, 14.5k words)
+
+One note on process: the `placeholder` grep returned 8 hits, which normally kills a pick. All 8 were legitimate — "synthetic or placeholder output" is one of the paper's *failure-mode taxonomy categories*, not an unfilled results table. Worth checking context rather than reflex-dropping.
+
+## Candidate funnel
+
+**arXiv** — shared cache, 500 entries (10-14 ×195, 10-15 ×305; the 500-cap again limits coverage to ~2 days). 181 keyword hits, substantive biomedical shortlist after discarding off-domain agent/LLM matches:
+- ✅ **2610.21074** OmicsBench — *chosen*
+- 2610.21082 Sci-Pivot — benchmarking PI judgment at pivotal moments of autoresearch agents (strongest runner-up)
+- 2610.21466 Ontology Refinement with Embeddings and LLMs (CASTON) — dead-center ontology beat
+- 2610.21042 ReviewPilot — multi-agent systematic-review screening
+- 2610.20191 HEM-Med — hierarchical agentic memory, multi-center medication recommendation
+- 2610.21604 Evaluating Inquiry Learning in LLM-Based Agents
+- 2610.22062 Trofinetide/Rett dual-LLM consensus pipeline
+- Skipped: 2610.19920 MolHop and 2610.20457 Same Claim/Claim Cards — both shipped in receptor-and-reason 10-15.
+
+**bioRxiv** — details API, day-by-day 10-13…10-16, 779 records, no 429s. 56 keyword hits at v1; on-brief and new: **ExpertTwins** (`…757114`, auditable long-horizon scientific panels, 10-15), **Braintree** (`…756448`, agentic in-silico vision neuroscience), **PatientPheX** (`…757319`). Known deferrals GENIE / CLARA / LEAF / GeneNetwork KG benchmark still open.
+
+**PubMed** — esearch reldate=5, 96 hits, all scanned. Two on-brief, neither beating the pick: *Toward autonomous science with agentic AI* (Cell, 10-15 — perspective, not primary) and *Skill-guided agentic reasoning for myeloma records* (NPJ Precis Oncol, 10-14 — clinical-records synthesis, not research workflow).
+
+**ChemRxiv** — `site:chemrxiv.org` returned zero ChemRxiv pages again (the operator doesn't take from this host; third run in a row). Source effectively missed — this is now a persistent gap worth fixing in the PROMPT rather than a transient failure.
+
+**News / product launches** — nothing in-window (10-13→10-16) on-brief.
+
+**Policy / funders** — ARPA-H latest items 10-09 (BIOGAMI) and 10-01 (Delphi biosensors), both out of the 3-day window and neither an AI program. NIH/NSF/HHS not separately fetched after ARPA-H came back empty.
+
+**Why OmicsBench won:** it's aimed squarely at the audience — a bioinformatics-workflow benchmark from a computational medicine department — and it earns its place by design rather than by another leaderboard number. Posing subtasks as *turns in one session* lets it separate position-in-session from position-in-dependency-chain, which single-prompt benchmarks confound by construction, and both independently degrade performance. The actionable finding is that agents don't fail by being unable to do the step; they fail by substituting their own habits for the stated criteria, producing output that looks entirely reasonable. The authors also declare gated mode reward-hackable by design and report their feedback gains as an explicit upper bound — rare candor that makes the headline numbers more trustworthy, not less.
+=== 2026-10-16T02:05:28-07:00 done  biomedical-agentic-ai (exit 0) ===
