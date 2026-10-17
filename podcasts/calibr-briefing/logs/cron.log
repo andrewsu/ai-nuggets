@@ -5577,3 +5577,35 @@ Both of today's Calibr episodes are written: a headlines roundup and a spotlight
 
 I also added today's notes on which news sources were reachable to the memory file.
 === 2026-10-16T02:29:18-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-17T02:20:10-07:00 start calibr-briefing ===
+I wrote both of today's scripts and their RSS and commit-message stubs. `SKIP_TTS=1` is set, so I skipped TTS, R2 publish, the `feed.xml` edit and the commit. The batch orchestrator does those next.
+
+**Files written** (in `podcasts/calibr-briefing/scripts/`):
+- `2026-10-17-pharma-headlines.txt`: about 1,210 words, 7 items plus the week ahead.
+- `2026-10-17-china-biotech-platform-export-controls-spotlight.txt`: about 1,420 words.
+- Each script has a matching `.rss-item.xml` (the XML parses, with `__LENGTH__` and `__DURATION__` placeholders) and a `.commit-msg`.
+
+**Gaps in today's sourcing:**
+- I found no analyst or sell-side comment on China's draft. The spotlight says so on air instead of inventing a quote. It relies on the ministries' own announcement and Q&A, plus reporting from Bloomberg, Endpoints and Fierce.
+- I couldn't read the Fierce article (blocked by our reader proxy) or the Quartz article (403). Endpoints is paywalled, so I only had its summary lines.
+
+**Candidate funnel**
+- Endpoints news index (r.jina.ai): 25 headlines scanned. Fresh Friday items were China export rules, the CHMP batch, Novartis Fabhalta, the Enspryng label, Estuary, Lilly's ibogaine comments and the Sanofi research chief Q&A. Peptides, City, OrbiMed, Osivax, AZ–insitro, Vanda, OMass and Armed Cell were already covered this week.
+- BioPharma Dive front page: 31 stories, 3 fresh (Estuary, rare disease framework, Lakefront/Armed Cell). The last two were already covered.
+- BioSpace press releases: 37 scanned, 7 used (Enspryng, Fractyl, Tryngolza, Omeros, navepegritide, Talvey, Estuary). BioSpace editorial: 60 scanned, Eurofins used.
+- STAT: 5 links, only a paywalled newsletter was fresh. Fierce: reader-proxy ban, nothing read (6th straight run). Endpoints feed: not retried.
+- Excluded as already covered: Gilead–Vir (10-12 and 10-15 episodes), the peptide policy (10-16), Roche–Rona (10-14; used only as spotlight context).
+
+**Shortlist** (★ = used)
+- ★ **Spotlight:** China MOFCOM/MOST Announcement No. 48 — https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_0a31a3c9ac404f7a9b0e917ce3412997.html (also used: geopolitechs annex summary, theedgemalaysia Bloomberg wire, Endpoints)
+- ★ CHMP October highlights (Foundayo, Rasonque, navepegritide, Tryngolza, narsoplimab, Truqap) — https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026
+- ★ Enspryng approved for thyroid eye disease — https://www.biospace.com/press-releases/fda-approves-genentechs-enspryng-a-first-in-class-il-6r-inhibitor-as-the-first-and-only-at-home-subcutaneous-treatment-option-for-thyroid-eye-disease-ted
+- ★ Fractyl REMAIN-1 — https://www.biospace.com/press-releases/fractyl-healths-revita-meets-six-month-co-primary-endpoint-in-ongoing-remain-1-pivotal-study-with-highly-statistically-significant-reduction-in-weight-regain-after-glp-1-discontinuation
+- ★ Estuary $103M — https://www.biopharmadive.com/news/estuary-kidney-disease-gene-therapy-launch-emerged-biogen-biotech-startup/833114/
+- ★ Novartis terminates the Fabhalta lupus nephritis trial (ClinicalTrials.gov NCT05268289) — https://endpoints.news/novartis-scraps-fabhalta-study-in-lupus-nephritis/
+- ★ Eurofins warning letter — https://www.biospace.com/fda/fda-issues-warning-over-eurofins-selective-recording-that-compromises-data
+- ★ Lilly on ibogaine, and the Sanofi Fontoura Q&A (Endpoints summaries only)
+- Not used: Talvey and Libtayo EU extensions, UCB Zilbrysq autoinjector, GSK Belgium layoffs (a 10-14 story), Microbiotica $48M.
+
+I also added one dated line to the memory file on news-source access: Bloomberg wires can be read through theedgemalaysia.com, the EMA highlights page downloads cleanly, and qz.com is blocked.
+=== 2026-10-17T02:26:31-07:00 done  calibr-briefing (exit 0) ===
