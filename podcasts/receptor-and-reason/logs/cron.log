@@ -5609,3 +5609,54 @@ Shortlist read in full (11 opened, 1 dropped on content):
 
 Route notes: medRxiv via r.jina.ai was 5/5; bioRxiv served exactly one direct PDF then 17-byte-429'd the rest (4 items deferred). The week's most on-target paper — Nature Neuroscience's *5-HT2A receptors in layer 5 pyramidal neurons mediate the neuroplastic but not the hallucinogenic effects of psychedelics* — is closed access and abstract-only, so it failed the full-text gate and was dropped rather than summarized. Run notes and deferrals appended to the rolling memory log.
 === 2026-10-16T03:07:06-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-17T02:50:10-07:00 start receptor-and-reason ===
+Episode written. Script + both stubs in place, ledger appended, no TTS/publish/feed/commit per `SKIP_TTS=1`.
+
+**Receptor & Reason 2026-10-17** — 10 items, ~3,150 words (~17 min).
+
+## Candidate funnel
+
+**bioRxiv/medRxiv details API** (day-by-day, 2026-10-11→10-17): 2,104 records fetched → 1,637 unique v1 in-window → ~180 passed the CNS-pharm/agentic filter.
+**arXiv** shared cache (`/tmp/ai-nuggets-arxiv-cache.xml`, 500-entry cap = **10-14/10-15 only**, no coverage of 10-16/10-17) → 180 bio+agentic hits.
+**Journal RSS**: `npp` 8, `neuro` 8, `tp` 8 via Crossref title/date resolution; Molecular Psychiatry via Crossref ISSN (4). `mp`, `nn`, `natmachintell` RSS slugs returned empty 150-byte replies.
+
+**Dedup:** 39 candidates → 30 fresh (9 already shipped), including 2 title-collision warnings (Virtual Brain Modelling, TUS locus coeruleus) — both correctly caught.
+
+**Selected (all full-text read):** suzetrigine/RGS4 (lead) · valine–mGluR5 · WAY-100635 TBI · psychedelic neurovascular coupling · semaglutide indication expansion · OmicsBench · MolLean · Braintree · GENIE · SCRIBE.
+
+**Notable non-picks:**
+- 5-HT2A L5 psilocybin (Nat Neuro) and psilocybin/cGMP head-twitch (NPP) — would have led the episode, but **not OA**; Nature auth-walls WebFetch, `r.jina.ai` had www.nature.com blocked until 10:45 UTC for unrelated abuse, direct curl 150-byte, no preprint located, not yet in EPMC. Failed the full-text eligibility gate. Worth re-checking.
+- CBD auditory MMN in autistic children — abstract ships an **unfilled placeholder** ("received CBD (dose)"), and the primary outcome didn't survive FDR. Dropped.
+- Distributed AI agents at scale (…759436) — same asset led biomedical-agentic-ai today.
+- GAT1508/CBD, RePurpose/clemastine, CLARA, OUD DRG, drug-centric KG: bioRxiv `.full.pdf` returned 17-byte 429s on repeated attempts; deferred, all look worth picking up.
+
+Two infrastructure notes worth keeping: `r.jina.ai` 408s on bioRxiv today, while plain `curl` + Safari UA + `mutool` works fine — the inverse of the usual pattern. And I hit the exact `pgrep` self-match trap PIPELINE.md documents (`until ! pgrep -f "fetch2.py"` matched its own shell), which stalled a retry pass for several minutes before I caught it.
+
+Correction to my funnel report above, now that the retry pass has finished.
+
+**The episode is unchanged and correct** — 10 items, all read in full, stubs and ledger in place, no TTS/publish/commit under `SKIP_TTS=1`. But two claims I made were wrong by the time I made them:
+
+- I said GAT1508, RePurpose/clemastine, CLARA, OUD DRG and drug-centric KG "returned 17-byte 429s on repeated attempts." In fact the retry rounds recovered **6 of 8** — only GAT1508 stayed throttled through all three rounds. They were deferred because the retry finished *after* I'd closed the roster, not because they were unreadable.
+- That timing was my sequencing error, compounded by the `pgrep` self-match stall. The roster closed at 3,152 words (~17.3 min against an 18-min ceiling), so even with the text in hand there was no room to add them. The right order is retries first, roster second.
+
+Six of those preprints now have full text sitting in `/tmp/rr1017/ft/`, so they're the cheapest picks available tomorrow — recorded in the rolling deferral memory along with the two paywalled psilocybin papers to retest in EPMC, and the corrected retrieval notes (jina 408s bioRxiv while plain curl works; the Nature block was a shared-proxy abuse block with a stated expiry, not a host problem).
+
+That monitor was tailing the output file of the task I killed (`bsi9a9yz1`), so its silence is expected — the retry work moved to `bcs8boc0w`, which completed and I've already accounted for. No re-arm needed.
+
+The run is finished. Final state:
+
+- `podcasts/receptor-and-reason/scripts/2026-10-17-receptor-and-reason.md` — 10 items, ~3,150 words
+- `.rss-item.xml` with `__LENGTH__`/`__DURATION__` placeholders, `.commit-msg` on one line
+- Ledger appended (147 episodes); all 10 paper URLs verified against the bioRxiv details API and `arxiv.org/abs`
+- No mp3, no `feed.xml` edit, no commit — correct for `SKIP_TTS=1`; `publish_pending.py` will finish those after batch TTS
+
+Deferrals and the corrected retrieval notes are written to the rolling receptor-and-reason memory.
+
+That was the first of the two orphaned `pgrep` wait loops — the same self-match trap, so it was never going to exit on its own and was spinning uselessly until the time limit killed it. Reporting it as stopped, as asked.
+
+Nothing to restart: the fetch it was waiting on (`b9wmd3c9a`) completed long ago, and the retry pass it was meant to chain into ran separately as `bcs8boc0w` and also completed. No background work remains from this run.
+
+Both stalled loops are the same root cause, now written into the receptor-and-reason memory: `pgrep -f <pattern>` matches the very shell running the wait loop, so the negation never fires. PIPELINE.md documents this for `gen_tts.py`; it applies to any wait-for-background-job loop, and the fix is the Bash tool's `run_in_background` plus the task notification rather than polling.
+
+Today's episode is complete and unaffected — the stalls cost retrieval breadth, not correctness.
+=== 2026-10-17T03:12:01-07:00 done  receptor-and-reason (exit 0) ===
