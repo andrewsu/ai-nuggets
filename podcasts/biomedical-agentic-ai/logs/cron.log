@@ -5591,3 +5591,38 @@ One note on process: the `placeholder` grep returned 8 hits, which normally kill
 
 **Why OmicsBench won:** it's aimed squarely at the audience — a bioinformatics-workflow benchmark from a computational medicine department — and it earns its place by design rather than by another leaderboard number. Posing subtasks as *turns in one session* lets it separate position-in-session from position-in-dependency-chain, which single-prompt benchmarks confound by construction, and both independently degrade performance. The actionable finding is that agents don't fail by being unable to do the step; they fail by substituting their own habits for the stated criteria, producing output that looks entirely reasonable. The authors also declare gated mode reward-hackable by design and report their feedback gains as an explicit upper bound — rare candor that makes the headline numbers more trustworthy, not less.
 === 2026-10-16T02:05:28-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-17T02:00:09-07:00 start biomedical-agentic-ai ===
+Today's episode script and both stubs are written. This run had `SKIP_TTS=1` set, so I did not generate audio, publish to R2, edit `feed.xml` or commit. The orchestrator does those steps.
+
+**Pick:** "Distributed AI agents enable comprehensive discovery of biological insights at scale" (bioRxiv, posted 10-16), from Xin Jin's lab at Scripps Research with OpenAI and PerturbAI.
+- **What it does:** 1,946 agents run in parallel, one per gene knockout in a whole-brain Perturb-seq atlas. Their reports go into a knowledge graph that a second layer of agents reads across.
+- **Main finding:** with everything else held fixed, a single agent given the same workload did less and less digging. At full load it cited 11 references; the distributed setup kept 711 times more.
+- **Script:** `podcasts/biomedical-agentic-ai/scripts/2026-10-17-distributed-agents-one-agent-per-perturbation.md`, 953 spoken words (cap is 1,150).
+- **Stubs:** the `.rss-item.xml` (parses as valid XML) and `.commit-msg` sit next to the script.
+- **Checks:** I read the full PDF; the Methods are only in the supplement, which I didn't see. The paper's DOI resolves in the bioRxiv API. A web search of the exact title found no earlier paper or press, only an April 2026 OpenAI Forum event teaser.
+
+## Candidate funnel
+- **arXiv:** the shared cache has the same 500 entries as yesterday (10-14 and 10-15 only, since it's the weekend). Runners-up:
+  - 2610.21082 Sci-Pivot (judging research agents at key decision points)
+  - 2610.21466 CASTON ontology refinement
+  - 2610.21042 ReviewPilot (systematic-review screening)
+  - 2610.21424 SPRA (paper format designed for agents)
+  - 2610.22298 AI Consilium (clinical second opinions)
+  - Skipped because receptor-and-reason already shipped them: 2610.22324, MindEval2, the Rett dual-LLM paper.
+- **bioRxiv:** details API fetched day by day for 10-13 to 10-17, 1,202 records with no 429s. Shortlist:
+  - ✅ `10.64898/2026.10.15.759436` Distributed AI agents (chosen)
+  - `…759051` Drug-centric knowledge graph (Quanthealth)
+  - `…757703` BioMINTREL
+  - `…759218` RePurpose
+  - `…758138` CucurbitAgent
+  - `…757352` CellScribe
+  - `…757114` ExpertTwins, still unshipped from yesterday
+- **PubMed:** about 2,000 hits from the last 5 days. Only two were on-brief: MolecureAI (Front Pharmacol, PMID 42871461) and the Gene Ontology linguistic-depth paper (Bioinformatics, PMID 42867150).
+- **Not checked this run:** ChemRxiv, news/product launches, and the funder pages (ARPA-H, NIH, NSF, HHS). ChemRxiv has returned nothing for three runs in a row; the other two were simply not swept today.
+
+I added these runner-ups to the deferral memory file for future runs.
+
+Sources:
+- [OpenAI Forum event: Decoding Biological Intelligence](https://forum.openai.com/public/events/virtual-event-decoding-biological-intelligence-building-ai-agents-for-the-brain-genome-kjkrro59eo)
+- [Paper on bioRxiv](https://www.biorxiv.org/content/10.64898/2026.10.15.759436v1)
+=== 2026-10-17T02:05:18-07:00 done  biomedical-agentic-ai (exit 0) ===
