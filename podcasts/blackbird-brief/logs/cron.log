@@ -3670,3 +3670,43 @@ I've written today's Portfolio Watch episode (Friday, October 16) and left it fo
 - Searches turned up no company-specific news for Clasp, Georgiamune, DELFI or Adventris.
 - The full candidate list, including what was held back and why, is in the show notes.
 === 2026-10-16T02:16:27-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-17T02:10:09-07:00 start blackbird-brief ===
+Waiting for the TTS job to complete.
+
+I've written today's episode, but haven't published it: this run has `SKIP_TTS=1` set, so I wrote only the script and the stub files and did not commit. The batch job (`publish_pending.py`) will generate the audio, publish it and commit.
+
+One mistake: I checked `SKIP_TTS` in the same command that ran text-to-speech, so I only saw it after the audio had already been generated. I deleted that mp3 so the batch job generates it in the normal way, and I didn't publish anything to R2 or edit `feed.xml`. A memory note now says to check `SKIP_TTS` first thing in a run.
+
+**Blackbird 2026-10-17 — Portfolio Watch** (about 8½ minutes of audio when generated)
+1. **Lead: China's draft export rule (Announcement No. 48, published Oct 16).** It would ban selling ownership of Chinese cell/gene-therapy and siRNA process platforms abroad, and require a licence for discovery work on targets nobody has disclosed. Licensing individual assets keeps an automatic-approval track. The read: buyers who want to own a platform lose Chinese sellers, which makes US platforms like SELEXON and NuGate's scarcer. Comments are due Nov 15, and a registration requirement already applies, including to deals still in progress. I confirmed the text on the ministry's own site.
+2. **Estuary Biotherapeutics launched with $103M** to build kidney-targeted AAV gene therapies from Yale research. Investors are paying for the "keep the virus in one organ" argument, which the cochlea makes better (Aletira). Its shortened payload raises the same size question we have open on SELEXON. All the efficacy data so far is in mice.
+3. **Gilead licensed Vir's masked T-cell engagers:** $65M cash, $25M in stock and $45M in near-term milestones, with no clinical data and no targets disclosed. Masking competes with Clasp's approach, and it doesn't need an HLA match.
+4. **FDA warning letter to Eurofins' Horsham, PA testing lab**, whose analysts selectively recorded microbiology results since February 2025. The ask is for vendors to confirm whether any of our samples went through that lab.
+
+**Candidate funnel**
+- **Dedup:** 7 candidates, all fresh, 0 already shipped. 4 keys added to the ledger, which now holds 102 episodes.
+- **Sources that worked:** Endpoints headline index, BioPharma Dive homepage, BioSpace press releases and front page, the Chinese ministry's site, and web search.
+- **Sources that failed:**
+  - Fierce Biotech: blocked by the reader proxy's ban on the site. This is the fifth run in a row with no Fierce coverage.
+  - Endpoints RSS feed: came back empty (162 bytes).
+- **Chosen:**
+  - ✅ China export draft: https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_0a31a3c9ac404f7a9b0e917ce3412997.html
+  - ✅ Estuary launch: https://www.biospace.com/press-releases/estuary-biotherapeutics-launches-with-103-million-to-develop-targeted-gene-therapies-for-kidney-disease
+  - ✅ Gilead–Vir deal: https://www.biospace.com/business/gilead-snags-equity-stake-in-vir-with-up-to-1-87b-deal-for-three-t-cell-engagers
+  - ✅ Eurofins warning letter: https://www.biospace.com/fda/fda-issues-warning-over-eurofins-selective-recording-that-compromises-data
+- **Not chosen:**
+  - Lilly on ibogaine: not relevant to the GPR52 program.
+  - Novartis dropping its Fabhalta lupus nephritis trial: "strategic," no data.
+  - Tiziana's last patient dosed in Alzheimer's: no data.
+  - Palleon at ACR: the release page returned 404.
+  - Nabsys repeat-expansion tool: research-only, weak link to NuGate.
+  - Armed Cell: already covered Oct 15.
+  - Transcripta–Mayo ALS deal: no terms or data.
+
+**Files** (all under `podcasts/blackbird-brief/`):
+- `scripts/2026-10-17-portfolio-watch.md` (script and show notes)
+- `scripts/2026-10-17-portfolio-watch.rss-item.xml` (parses cleanly; length and duration left as placeholders for the batch job)
+- `scripts/2026-10-17-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` (ledger)
+- `memory/blackbird-portfolio.md`: added one short entry each to NuGate, Aletira and Clasp and updated their dates.
+=== 2026-10-17T02:18:24-07:00 done  blackbird-brief (exit 0) ===

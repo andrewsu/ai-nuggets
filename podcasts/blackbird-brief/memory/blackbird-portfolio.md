@@ -1421,7 +1421,8 @@ Entries kept so a future run does not re-adopt them from public sources. See
 the individual entries below, each marked ❌ TERMINATED.
 
 ### Aletira Therapeutics — flagship spinout ✅
-_Last update: 2026-10-11_
+_Last update: 2026-10-17_
+- **ORGAN-CONFINED AAV IS A NINE-FIGURE PRE-CLINICAL THESIS (2026-10-17 Portfolio Watch item 2).** Estuary Biotherapeutics (Yale Somlo/Caplan; formed 2022) launched 2026-10-16 with $103M ($93M A led by RA Capital; $10M seed 4BIO+GV; Biogen New Ventures in): locally delivered AAV for ADPKD — EST-201 full-length PKD2 (clinic 2027), EST-101 PC1 functional-domain payload (2028). ⇒ the local-delivery argument the cochlea makes better; PC1 truncation = the SELEXON payload-budget question; ~4 yr formation→Series A, ~5 yr→FIH. Mouse data only. Source: https://www.biospace.com/press-releases/estuary-biotherapeutics-launches-with-103-million-to-develop-targeted-gene-therapies-for-kidney-disease
 - **THE RETINAL EFFICACY BAR, STATED IN NUMBERS: A FIRST-IN-CLASS MECHANISM WITH A ~1,000-PATIENT PIVOTAL LANDED NON-INFERIOR BUT NUMERICALLY *BEHIND* MONTHLY ANTI-VEGF, WITH A 6-FOLD SAFETY SIGNAL. USE 11.8 LETTERS AS THE COMPARATOR, NOT NATURAL HISTORY.**
   **Merck remigromig (MK-3000, ex-EYE103, EyeBio)** — tetravalent **tri-specific Wnt-pathway agonist**, intravitreal; mechanism is **blood-retinal-barrier repair** rather than suppression of neovascularization. First non-anti-VEGF mechanism in 20+ years to clear a pivotal DME bar. **BRUNELLO** (NCT06571045) Phase 2b/3, **n=984**, 1:1:1 remigromig 0.5 mg vs 0.8 mg vs **ranibizumab 0.5 mg**, q4w year 1.
   **Week-52 BCVA: +9.1 letters (95% CI 8.1-10.1; p=0.0129 adj) and +8.7 (95% CI 7.7-9.8; p=0.0222) vs ranibizumab +11.8 (95% CI 10.7-12.8).** Non-inferiority met at both doses; **no secondary endpoint demonstrated superiority.**
@@ -2986,7 +2987,8 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-10-15_
+_Last update: 2026-10-17_
+- **CHINA DRAFT BANS EXPORT OF *OWNERSHIP* OF siRNA AND CGT PROCESS PLATFORMS; ASSET LICENSING STAYS ON AUTOMATIC (2026-10-17 Portfolio Watch LEAD; MOFCOM+MOST Announcement No. 48, 2026-10-16, comments to 11-15; pre-export registration live on publication incl. pending deals).** Restricted: "completely novel target" discovery for siRNA/CGT. Excluded: out-licensing, outsourced R&D/manufacturing, single-drug processes. ⇒ Rona→Roche-style asset deals survive; a buyer who wants to OWN an extrahepatic siRNA engine loses Chinese sellers → relative-scarcity tailwind for clean-title US platform IP. Draft only. Source: https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_0a31a3c9ac404f7a9b0e917ce3412997.html
 - **THE PLATFORM-VS-ROUTE ARGUMENT NOW HAS A CNS DATA POINT ON THE OTHER SIDE: A *SUBCUTANEOUS* siRNA REACHED THE HUMAN BRAIN AND CUT TAU 73% FOR 90 DAYS AFTER THE LAST DOSE (added 2026-10-15 Portfolio Watch LEAD; announced 2026-10-14 07:30 ET).** **Arrowhead ARO-MAPT**, subcutaneous siRNA silencing **MAPT** (all six tau isoforms) in the CNS on the **TRiM** delivery platform. Phase 1/2a **AROMAPT-SC-1001 (NCT07221344)**, interim healthy-volunteer **CSF total tau at Day 105**: **2.1 mg/kg (D1/8/15) −40%; 6.4 mg/kg (D1/8/15) −69%; 12.8 mg/kg (D1/15) −73% mean, −85% max.** Day 105 = **90 days after the final dose** ⇒ q3mo dosing or less. Mostly Grade 1 TEAEs; **no serious TEAEs, deaths or discontinuations; explicitly no persistent anemia and no neurobehavioral AEs** (the transferrin-receptor-shuttle liabilities). Early-AD cohort data **2027**; regulatory discussions opened for **MAPT-FTD and PSP**. Stifel (James Condulis): knockdown "arguably look[s] better" than other BBB-crossing approaches; tau unproven as an AD target.
   **⇒ READ (Hemaka Rajapakse + Avi Khanna): the partner's comparison is now QUARTERLY LP vs QUARTERLY SC SHOT. It threatens ONE LEG, NOT BOTH — CSF tau reports brain/cortical neuronal production and says nothing about LOWER MOTOR NEURONS in the spinal cord, which is where intrathecal delivery is strongest. Weight the narrative toward the ALS (spinal) leg; the FTD (cortical) leg is the exposed one, and a systemic shuttle with broad brain distribution should win there.**
   **⇒ CANDID LIMIT: healthy volunteers, biomarker only. Total CSF tau reduction ≠ tangle clearance ≠ disease modification (the tau-antibody lesson). What is validated is the DELIVERY, not the target.** Source: https://www.businesswire.com/news/home/20261014103135/en/
@@ -4207,7 +4209,8 @@ _Last update: 2026-10-11_
 - **Watch:** DNA-barcoded antibody / multiplexed proteomics reagent platforms.
 
 ### Clasp Therapeutics — JHU-born precision immuno-oncology (TCR-mimic bispecific T-cell engagers) ✅
-_Last update: 2026-10-11_
+_Last update: 2026-10-17_
+- **PRE-DATA PRICE OF A TCE SPECIFICITY PLATFORM: $90M UPFRONT (2026-10-17 Portfolio Watch item 3; deal 2026-10-14).** Gilead → Vir: $65M cash + $25M equity + $45M near-term preclinical milestones, up to $1.74B more, for three undisclosed PRO-XTEN dual-masked solid-tumor TCEs; Vir does discovery, Gilead develops (2nd Vir platform deal after Astellas/VIR-5500). ⇒ masking is the rival answer to on-target/off-tumor and needs no HLA match — it competes on exactly Clasp's two-gate eligible-fraction weakness. VIR-5818 HER2 Ph1 by YE. Source: https://www.biospace.com/business/gilead-snags-equity-stake-in-vir-with-up-to-1-87b-deal-for-three-t-cell-engagers
 - **THE COUNTER-CASE TO THE SAME WEEK'S 63-PATIENT FULL APPROVAL: A 187-PATIENT PHASE 2 THAT INVESTIGATORS CALLED "PROMISING" WAS NOT ENOUGH FOR
   *ACCELERATED* APPROVAL, AND THE FILING WAS PULLED (added 2026-09-28 Portfolio Watch item 2; reported 2026-09-28 04:30 ET). ALSO A MARK ON THE
   ONCOLOGY SURFACE TARGETS THEME.**

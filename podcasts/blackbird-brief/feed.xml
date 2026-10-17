@@ -12,7 +12,29 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Technology"/>
     <atom:link href="https://raw.githubusercontent.com/andrewsu/ai-nuggets/main/podcasts/blackbird-brief/feed.xml" rel="self" type="application/rss+xml"/>
-                                        <item>
+                                            <item>
+              <title>Portfolio Watch — China drafts an export ban on ownership of cell/gene-therapy and siRNA platforms while leaving asset licensing on automatic, a scarcity tailwind for clean-title US platforms like SELEXON and NuGate's; Estuary launches with $103M for organ-confined AAV in ADPKD, the Aletira argument priced pre-data; Gilead pays $90M upfront for Vir's masked T-cell engagers with no targets named (Clasp); FDA warning letter to Eurofins' Horsham lab</title>
+              <description>The Blackbird Brief Portfolio Watch for Saturday, October 17, 2026. News window 2026-10-14 to 2026-10-17. Four items.
+
+              ITEM 1 (LEAD, NuGate + Aletira/SELEXON + BioVentures) — China's Commerce and Science ministries published Announcement No. 48, a draft revision of the prohibited/restricted export technology catalogue. Biomedicine: export of ownership of cell and gene therapy process platforms and siRNA process platforms with independent IP would be prohibited; "completely novel target" discovery for CGT and siRNA restricted. Out-licensing, outsourced R&amp;D and manufacturing, and single-drug processes are excluded, and non-ownership licensing gets automatic-licence facilitation. Comments to November 15; pre-export registration is live now and covers pending deals. Asset deals survive; buying a Chinese platform outright does not.
+
+              ITEM 2 (Aletira) — Estuary Biotherapeutics (Yale, Somlo and Caplan) launched with $103M ($93M Series A led by RA Capital, $10M seed from 4BIO and GV) for locally delivered AAV in polycystic kidney disease: full-length PKD2 to the clinic in 2027 and a compact polycystin-1 functional domain in 2028. Organ confinement is the thesis investors bought, the cochlea makes it better, and the truncated payload is SELEXON's payload-budget question. Mouse data only.
+
+              ITEM 3 (Clasp) — Gilead licensed three undisclosed PRO-XTEN dual-masked solid-tumor T-cell engagers from Vir: $65M cash, $25M equity, $45M near-term milestones, up to $1.74B more. No clinical data and no targets. Masking is the rival answer to on-target, off-tumor toxicity, and it needs no HLA match.
+
+              ITEM 4 (CMC/vendor diligence) — FDA warning letter to Eurofins' Horsham, Pennsylvania lab for selectively recording microbiology pour-plate results since February 2025; retrospective validation by interview rejected. Ask vendors whether any samples ran through Horsham.
+
+              Week ahead: Kyverna's full stiff person syndrome dataset in Toronto 10-21 (Winnow); ASHG 10-20; FDA rare disease public meeting 10-28; China comment deadline 11-15.</description>
+              <link>https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_0a31a3c9ac404f7a9b0e917ce3412997.html</link>
+              <guid isPermaLink="false">2026-10-17-portfolio-watch</guid>
+              <pubDate>Sat, 17 Oct 2026 12:00:00 +0000</pubDate>
+              <enclosure url="https://podcast.su-lab.workers.dev/p/blackbird-brief/u/matt/2026-10-17-portfolio-watch.mp3" length="3756451" type="audio/mpeg"/>
+              <itunes:duration>470</itunes:duration>
+              <itunes:summary>The Blackbird Brief Portfolio Watch for Saturday, October 17, 2026. China's draft export catalogue would ban selling ownership of cell/gene-therapy and siRNA platforms abroad while keeping asset licensing on automatic, making clean-title US platforms scarcer; plus Estuary's $103M organ-confined AAV launch, Gilead's $90M-upfront bet on Vir's masked T-cell engagers, and an FDA warning letter to a Eurofins testing lab.</itunes:summary>
+              <itunes:explicit>false</itunes:explicit>
+        </item>
+
+    <item>
           <title>Portfolio Watch — FDA opens a formal rewrite of rare-disease review that would make fit-for-purpose evidence the norm, possibly by regulation and including CMC, which is the window for Aletira to put the untreated-ear control on the record; Opus Genetics takes its retinal gene therapy into Phase 3 at the starting dose and shows whole-organ averages hide the decline; City Therapeutics prices an upsized $200M IPO at the midpoint; and Maryland's MacroGenics doses a first-in-class ADC on a licensed-in payload</title>
           <description>The Blackbird Brief Portfolio Watch for Friday, October 16, 2026. News window 2026-10-14 to 2026-10-16. Four items.
 
