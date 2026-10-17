@@ -4251,3 +4251,27 @@ I didn't make a new episode. The orchestrator retried this show by mistake, and 
 NUGGETS_SKIP: false retry — today's episode (CR-001, commit e5b85a3) already published inline at 02:49; no new content possible in the 4 minutes since
 === 2026-10-16T02:54:04-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
 === 2026-10-16T02:54:04-07:00 SKIPPED: justice-biotech-brief deliberate skip (bar not met): false retry — today's episode (CR-001, commit e5b85a3) already published inline at 02:49; no new content possible in the 4 minutes since ===
+=== 2026-10-17T02:40:10-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I stopped at stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-10-17-ucht1-fab-dimerization-cd3-arm-valency-gamma-delta-tcr.md` (1,091-word spoken body)
+- `…​.rss-item.xml` (parses as valid XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** UCHT1 Fab dimerization / Vγ9Vδ2 TCR cryo-EM — bioRxiv `10.64898/2026.10.08.757522` (v1 10-15, v2 10-16), Longfei Wang, Wuhan University, with Hao Wu's lab. Full text read from the 1.6 MB / 23-page PDF, not the abstract. The angle: UCHT1 and OKT3 bind CD3ε near-identically, so the agonism gap is dimerization, not epitope — and because dimer-disrupting mutants show *increased* cell-measured K<sub>D</sub>, apparent CD3-arm affinity is partly self-avidity, which undercuts the standard "pick a low-affinity CD3 arm to widen the CRS window" move.
+
+**Candidate funnel**
+
+- **bioRxiv** (details API, day-by-day 10-15/16/17): 618 records scanned (164 / 447 / 7), 479 v1-in-window, 16 keyword hits → 1 substantive. **CHOSEN:** Fab Dimerization Crosslinks and Activates the γδ TCR — `biorxiv.org/content/10.64898/2026.10.08.757522v2`. Other 15 hits were spurious (`VEGF`/`JAK` inside gene lists, "checkpoint" = cell-cycle) or off-target basic biology.
+- **News** — all four sources live and current to 10-16, none on-target:
+  - Endpoints (`r.jina.ai` + `x-no-cache`): Novartis/Fabhalta lupus nephritis scrapped, China biopharma export ban, City Therapeutics $200M IPO, Estuary $103M, AZ–insitro. Nothing IO/TCE/ADC.
+  - BioSpace press releases, BioPharma Dive, Clinical Trials Arena: same news cycle.
+  - *Near-miss, rejected:* **Talvey (talquetamab) + dara CHMP positive opinion** (10-16) — regulatory follow-on to MonumenTAL-3, shipped in full on 06-15.
+  - *Near-miss, rejected:* **MacroGenics MGC030 first patient dosed** (10-15) — on-target ADC (Synaffix SYNtecan E exatecan, DAR 4) but undisclosed target, too thin for a spotlight.
+  - *Rejected:* **Palleon HLX79/E-602** — notice of a Nov 11 ACR talk, no data in the release.
+  - *Rejected on recency:* Nature Medicine TCEs in refractory connective tissue disease — Crossref `published-online` 2026-02-19.
+- **Policy/funder** (ARPA-H, NIH, NSF): not reached this run — the bioRxiv pick was decisive and no policy item would have displaced it. Noting the gap for auditability.
+
+**Source failures:** none. `r.jina.ai` TLS was clean (no Scripps intercept); bioRxiv API healthy. One wrinkle worth flagging: `scripts/fetch_preprint.py` fell through to channel 3 (abstract-only) on this DOI, but plain `curl` with a Safari UA on `.full.pdf` returned the complete paper first try — so the helper's fallthrough was not render lag. I recorded that in memory, since the helper's note would otherwise have had me defer an eligible item.
+=== 2026-10-17T02:47:04-07:00 done  justice-biotech-brief (exit 0) ===
