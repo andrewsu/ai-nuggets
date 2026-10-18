@@ -4051,3 +4051,31 @@ The theme is that AI has made finding problems cheap, but fixing them hasn't got
 - ❌ FT: Anthropic junk credit rating (paywalled)
 - ❌ Muse Spark Open, Goodfire essay, Simons Foundation (already shipped Oct 16)
 === 2026-10-17T02:39:03-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-18T02:30:10-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote the script plus the two stubs and stopped — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files**
+- `podcasts/jinglin-ai-pulse/scripts/2026-10-18-rated-without-the-numbers.md` (2,247 spoken words, ≈12–13 min)
+- `…rated-without-the-numbers.rss-item.xml` (validated; `__LENGTH__` / `__DURATION__` placeholders)
+- `…rated-without-the-numbers.commit-msg`
+
+**Theme:** four confident scores published this weekend, each built on a mostly unobserved territory.
+
+**Candidate funnel**
+
+Hacker News (Algolia, `created_at_i > Oct 16 00:00 UTC`, points > 80): 76 stories scanned, 12 AI-relevant after discarding hardware/politics/non-AI.
+- ✅ Mercor Benchmark Map — 90% of US working hours unbenchmarked (608p/552c) — **lead**
+- ✅ DeepSeek-V4.1-Flash-1017 (856p/652c) — **chosen**; explicitly teed up as "watch tomorrow" in the 10-17 episode
+- ✅ OpenCode breach / "distillation attack" (861p/161c) — **chosen**
+- ✅ Anthropic BB+ junk rating, FT (290p) — **chosen** for Money Moves
+- ✗ Claude ECDSA curve origins, Postgres 19, Claude Code review, OpenAI rogue incidents, quantum circuits — all shipped 10-17
+- ✗ "You could have invented transformers from memory" (563p) — good but no news hook; held
+- ✗ Apple MLX distributed inference / Muse Spark Open (363p) — Muse Spark Open shipped 10-16; folded into the deep cut as context only
+- ✗ FLUX 3 Image Klein, Lean verified kernels, Llama.cpp on PS5 — below the substance bar for this show
+
+X/Twitter: direct search unavailable from this host; `api.fxtwitter.com` read the OpenCode statement verbatim. Convergence signal taken from Latent Space's AINews Oct 17 recap (Teortaxes, Artificial Analysis), attributed as AINews's paraphrase.
+
+Podcasts (14-day window): No Priors Oct 15 (Brockman — used 10-17), Latent Space Oct 13/14 (used 10-14, 10-16), Latent Space Oct 10 AlphaFold (used 10-10), No Priors Oct 9 Laskin (used 10-11), Dwarkesh last episode Oct 1 (stale), TWIML #780 Zoe Weil Oct 15 (fresh but e-commerce ranking, off-audience), MLST feed 404, Cognitive Revolution feeds 404/301 with no Oct 16+ episode findable. → **Deep Cut: Nathan Lambert's Interconnects Oct 17 piece**, which ships as a ~12-min article voiceover; flagged in-script as an essay-with-audio, not an interview.
+
+Source failures: `api-docs.deepseek.com` is TLS-intercepted by the Scripps network (cert serves `*.scripps.edu`), so the DeepSeek search/fetch API pricing item was dropped rather than cited second-hand. FT paywalled — read via secondary coverage carrying the tranche table, and labeled as such in the source line.
+=== 2026-10-18T02:39:54-07:00 done  jinglin-ai-pulse (exit 0) ===
