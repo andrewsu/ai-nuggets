@@ -5626,3 +5626,29 @@ Sources:
 - [OpenAI Forum event: Decoding Biological Intelligence](https://forum.openai.com/public/events/virtual-event-decoding-biological-intelligence-building-ai-agents-for-the-brain-genome-kjkrro59eo)
 - [Paper on bioRxiv](https://www.biorxiv.org/content/10.64898/2026.10.15.759436v1)
 === 2026-10-17T02:05:18-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-18T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Chosen:** Drug-centric knowledge graph: representing therapeutic modality, pharmacology and multiscale biology (QuantHealth, bioRxiv `10.64898/2026.10.15.759051`, v1 posted 2026-10-16) — https://www.biorxiv.org/content/10.64898/2026.10.15.759051v1
+Full text read in full (89 KB, 41 pp. via `r.jina.ai` on `.full.pdf` after a 429 on `.full`). Novelty checked by web search — no prior posting. Spoken body 915 words (cap 1150).
+
+Files: `2026-10-18-drug-centric-kg-intervention-as-identity.{md,rss-item.xml,commit-msg}`
+
+### Candidate funnel
+
+- **bioRxiv** (10-15→10-18, day-by-day, 682 records, no outages): 29 keyword hits at v1 within window. Substantive shortlist:
+  - *Drug-centric knowledge graph* `…759051` — **CHOSEN**
+  - RePurpose, LLM-assisted source-traceable drug repurposing `…759218` — full text **not rendered** (abstract-only, 5 nav sections); defer
+  - BioMINTREL cross-disciplinary method-finding `…757703` — still open from 10-17
+  - Benchmarking LLMs for assay-aware drug–target affinity `…758217`
+  - ExpertTwins `…757114`, PatientPheX `…757319`, CucurbitAgent `…758138` — carried over, unshipped
+  - *Distributed AI agents* `…759436` — excluded, shipped 2026-10-17
+- **arXiv** (shared cache, 500 entries = 10-14/10-15 only, the usual cap; Sunday, so nothing newer exists): 256 loose hits → 13 with real biomedical signal in title. Shortlist: OntoAct (2610.21983), Ontology Refinement / CASTON (2610.21466), OpCredit agentic KGQA (2610.21345), Sci-Pivot (2610.21082), Claim Cards (2610.20457), MolHop (2610.19920), AI Consilium (2610.22298). OmicsBench (2610.21074) excluded — shipped 10-16.
+- **PubMed** (reldate 5): 108 hits, 2 on-brief — npj Precision Oncology myeloma skill-guided agentic reasoning (pubmed 10-15, live candidate), Nat Med epilepsy human-AI comanagement (10-14). Cell *"Toward autonomous science with agentic AI"* rejected: print issue 10-15 but First Release 09-17 — out of window (and Cell full text is unreadable from this host anyway).
+- **ChemRxiv**: web search returned no in-window ChemRxiv items (`site:` operator not honored) — **recall gap, no candidates**.
+- **Funders/policy**: ARPA-H latest 10-09 (BIOGAMI) and 10-01 — out of 3-day window. NIH press (via jina; direct curl Cloudflare-blocked) latest 10-13/10-14, nothing agentic-AI. NSF news — nothing on-brief.
+
+Why it won: dead-center for the knowledge-graph/ontology/data-integration beat, it's a real schema argument rather than another benchmark, and the LLM placement inside the construction pipeline — with a plausibility score that can admit an edge on its own, unvalidated — is a sharper and more useful take than any of the arXiv runners-up.
+
+Sources consulted for the novelty check: [AIMedGraph](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9976745/), [QuantHealth profile](https://mtec-sc.org/life-sciences/quanthealth)
+=== 2026-10-18T02:06:38-07:00 done  biomedical-agentic-ai (exit 0) ===
