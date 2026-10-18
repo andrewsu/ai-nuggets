@@ -5609,3 +5609,36 @@ I wrote both of today's scripts and their RSS and commit-message stubs. `SKIP_TT
 
 I also added one dated line to the memory file on news-source access: Bloomberg wires can be read through theedgemalaysia.com, the EMA highlights page downloads cleanly, and qz.com is blocked.
 === 2026-10-17T02:26:31-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-18T02:20:09-07:00 start calibr-briefing ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I stopped after the scripts + stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-10-18-pharma-headlines.txt` (1,186 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-10-18-india-oncology-trade-margin-cap-spotlight.txt` (1,543 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as valid XML with `__LENGTH__` / `__DURATION__` placeholders.
+
+**Candidate funnel**
+
+Sunday 02:20 PDT — the known dead window. Confirmed empty rather than assumed: BioSpace `/archive/2026-10` day filter stops at Oct 16; BioPharma Dive nothing past Oct 16; Fierce newest Oct 16 10:38am; Endpoints newest was a Saturday weekly recap. No congress *ended* Fri/Sat, so no weekend recap exception. Applied the weekend fallback (uncovered Wed–Fri + week-ahead), not `NUGGETS_SKIP`.
+
+Sources scanned: Endpoints index (jina, worked), BioPharma Dive (jina + WebFetch), BioSpace, Fierce Biotech (jina worked today), PR Newswire health feed, plus a delegated fan-out sweep of wires/congress calendars.
+- Fierce *article* bodies: jina returned a 205-byte tracker stub — index fine, article dead. GlobeNewswire + BusinessWire: both dead routes today.
+
+Shortlist after discarding already-shipped items (checked every candidate against `scripts/*.txt`):
+- **India NPPA Gazette S.O. 5690(E), 30% trade-margin cap on 137 cancer drugs** (Oct 17) — **CHOSEN, spotlight + headline 1**
+- **AbbVie 20-abstract IBD drop at UEG Week, incl. first ABBV-466 look** (Oct 17) — **CHOSEN**
+- **Viatris Ryzumvi presbyopia approval, 16:05 ET Friday** (Oct 16 after close) — **CHOSEN**
+- **UCB Zilbrysq autoinjector approval in gMG** (Oct 16) — **CHOSEN**
+- **Vivacta/Grit Bio GT801 in vivo CAR-T orphan designation in AIHA** (Oct 17) — **CHOSEN**
+- Omeros narsoplimab CHMP refusal upheld — dropped, shipped 10-17
+- FDA Rare Disease Framework Initiative — dropped, shipped 10-15
+- City Therapeutics $200M IPO / Iambic / OrbiMed $3B — dropped, shipped 10-16
+- Novartis Fabhalta lupus nephritis termination, Lilly/ibogaine, Estuary, CHMP batch — dropped, shipped 10-17
+- Armed Cell Therapeutics / ex-Galapagos CAR-T — dropped, shipped 10-15
+- Boston seed-funding piece — dropped, Fierce body unreadable (tracker stub)
+- Endpoints "clinicians using AI" survey — dropped, could not identify or verify the underlying survey
+- XellSmart Parkinson's cell therapy "at MDS" — rejected, MDS Congress closed Oct 8, release is retrospective
+
+Full text read before drafting for all five picks. Two caveats are stated on air: AbbVie's week-96/144 numbers are **as-observed, not NRI**, and GT801's clinical support is **two patients from a conference poster**.
+=== 2026-10-18T02:37:27-07:00 done  calibr-briefing (exit 0) ===
