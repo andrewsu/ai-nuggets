@@ -4275,3 +4275,28 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE.md I stopped at stubs — no TTS,
 
 **Source failures:** none. `r.jina.ai` TLS was clean (no Scripps intercept); bioRxiv API healthy. One wrinkle worth flagging: `scripts/fetch_preprint.py` fell through to channel 3 (abstract-only) on this DOI, but plain `curl` with a Safari UA on `.full.pdf` returned the complete paper first try — so the helper's fallthrough was not render lag. I recorded that in memory, since the helper's note would otherwise have had me defer an eligible item.
 === 2026-10-17T02:47:04-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-18T02:40:10-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1`, so this run produced the three stub files only — no TTS, no R2 upload, no `feed.xml` edit, no commit. `publish_pending.py` will finish after batch TTS.
+
+**Pick:** FJ-0125 — an IL-18-binding-protein × IL-4Rα bispecific (bioRxiv `10.64898/2026.10.11.758381` v1, posted 10-17; Ferry Jam Biotechnology Shanghai + Huanghe S&T University). Full text read in full (30 pages, real Results/Discussion) before drafting. Script is 1,067 words, ~5 min at this show's rate.
+
+The editorial spine: the molecule's second arm isn't a Fab, it's the endogenous IL-18 decoy given antibody PK — and it exists to fix a liability dupilumab itself creates. IL-4 via STAT6 represses IL-18Rα on activated CD4 T cells, so IL-4Rα blockade de-represses IL-18 responsiveness; in their integrated keratinocyte→DC→T-cell assay dupilumab raised IL-22 2.7-fold, which the bispecific abolished. The generalizable rule for Justice's own work: the best second specificity may be the one that neutralizes the circuit your first arm unleashes, not the one with the largest independent effect. Secondary hook — the DR-18 causality control exists because in oncology IL-18BP is a *secreted immune checkpoint*; dermatology is dosing that same decoy as the drug.
+
+**Candidate funnel**
+
+- **bioRxiv + medRxiv** (10-16/17/18, day-by-day, full collections): 586 records (bioRxiv 447/64/7, medRxiv 59/9/0) → 578 unique v1 in-window → **18 keyword hits**, nearly all spurious. Only 4 were new since yesterday's sweep.
+  - ✅ **CHOSEN** — FJ-0125 IL-18BP×IL-4Rα bispecific, AD — `10.64898/2026.10.11.758381` (10-17)
+  - cGAS-R241E + membrane-tethered IL-12 mRNA LNP, Zhijian Chen/UTSW — `…10.15.759215` (10-16) — strong backup, less on-beat
+  - AIM2/PANoptosis in checkpoint-inhibitor pneumonitis — `…10.15.759296` (10-16) — overlaps the 07-04 DPP9/IL-18 CIP episode
+  - glycoRNA remodeling / antitumor immunity — `…10.14.759094` (10-16)
+  - Drug-centric knowledge graph — `…10.15.759051` — already today's biomedical-agentic-ai pick
+- **News** (BioSpace press-releases, BioPharma Dive, Clinical Trials Arena — all 200 over plain curl + Safari UA): live but nothing newer than 10-16 and nothing on-beat that wasn't already shipped. `biospace.com/latest-news` now 404s; use `/press-releases`. Fierce/Endpoints not usable as before.
+  - Rejected on recency: **Novartis/Abogen ABO2203** mRNA-LNP CD19×CD3 TCE for autoimmune disease ($575M upfront) — perfect fit and never covered, but announced **2026-10-02**, far out of window.
+  - Rejected as already-shipped: Talvey+dara CHMP (MonumenTAL-3 follow-on), opamtistomig first-patient-dosed (asset shipped 08-01), PRO-XTEN (shipped 10-15).
+- **Funders** (ARPA-H / NIH / NSF): Sunday, nothing new.
+- **Congress:** ESMO 2026 is Oct 23–27 (Madrid) — not live; pre-ESMO teasers only. Worth staffing next week.
+
+Two access notes worth flagging: the direct `.full.pdf` returned the 17-byte 429 and `.full` was 92 KB of abstract-only chrome (day-1 render lag) — but `r.jina.ai` on the `.full.pdf` URL returned the complete body in the same round. That combination previously would have triggered a deferral. Both that and the run notes are recorded in the show's rolling memory log.
+
+Sources: [ESMO Congress 2026](https://esmo.org/meeting-calendar/esmo-congress-2026), [Novartis/Abogen ABO2203](https://www.biopharminternational.com/view/novartis-licenses-abogen-s-mrna-encoded-cd19xcd3-t-cell-engager-abo2203-for-autoimmune-diseases), [IL-18BP as a secreted immune checkpoint](https://pmc.ncbi.nlm.nih.gov/articles/PMC7381364), [tadekinig alfa NCT03113760](https://clinicaltrials.gov/study/NCT03113760)
+=== 2026-10-18T02:49:34-07:00 done  justice-biotech-brief (exit 0) ===
