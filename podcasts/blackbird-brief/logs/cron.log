@@ -3710,3 +3710,27 @@ One mistake: I checked `SKIP_TTS` in the same command that ran text-to-speech, s
 - `state/shipped.jsonl` (ledger)
 - `memory/blackbird-portfolio.md`: added one short entry each to NuGate, Aletira and Clasp and updated their dates.
 === 2026-10-17T02:18:24-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-18T02:10:09-07:00 start blackbird-brief ===
+Portfolio Watch is drafted and staged (script + RSS stub + commit-msg + ledger append). Waiting on the preprint sweep for the Sunday Sourcing Radar.
+
+Waiting on both sweeps.
+
+Asked the sweep agent to stop fetching and report what it has — its requests were tripping the same Cloudflare 429 blocking mine.
+
+Both episodes are written. `SKIP_TTS=1`, so I stopped at the stubs — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written** (all under `podcasts/blackbird-brief/`):
+- `scripts/2026-10-18-portfolio-watch.{md,rss-item.xml,commit-msg}`
+- `scripts/2026-10-18-radar-adolescent-cortical-maturation-timing.{md,rss-item.xml,commit-msg}`
+- `state/shipped.jsonl` — +2 episodes, 7 keys (104 episodes / 610 match forms)
+- `memory/blackbird-portfolio.md` — Alchemity descriptor resolved in place (UMCP-licensed sustainable-aviation-fuel reactor, Wachsman lab; closes a standing §4 open item)
+
+**Portfolio Watch** (window 10-15→10-18, four items): AstraZeneca × insitro as the lead — $40M upfront on a $1.5B headline is a 2.7% down payment, which supplies the number the Boehringer/Variant deal withheld and sits beside Thursday's 3.5% carve-out; OrbiMed's $3B with US/Europe flat and Asia up a third, as the financing half of yesterday's China export-ban lead; Novartis quietly killing the Fabhalta lupus-nephritis Phase 2 (found via a registry diff, not a press release), which is market evidence for Winnow's open off-treatment-durability question; and the $51.7M ARPA-H consortium carrying UMD/UMB's Tiwary.
+
+**Sourcing Radar** is deliberately short and the lead is a *pass*. 2,177 preprints scanned, 33 affiliation matches, and only one shortlist item had a readable body today. The ABCD cortical-maturation paper is good science — one sigmoid per region, break points ordered along the sensorimotor-association axis — but propensity-matched odds ratios of 1.12–1.17, a replication κ of 0.53, and no IP on open federal data make it a non-meeting. What it buys us is the age-window question for any structural-imaging biomarker and a well-specified enrichment gap. The Caterina/Meffert Lin28–let-7 pain paper was the most portfolio-relevant thing all week and I could not get past Cloudflare, so it is reported as an action item rather than smuggled in on its abstract.
+
+Three things worth flagging:
+- Two candidates passed the dedup filter but were the **same events under different URLs** already shipped on 10-15 (the Armed Cell/Lakefront carve-out, and Vanda's α7 miss). I caught them by hand; the Armed Cell down-payment ratio was reused as a comparator rather than re-reported.
+- My parallel sweep and the subagent's tripped a shared Cloudflare 429 on `www.biorxiv.org`. That was my error in running two fetch workers — it cost time and probably cost the CASP4/5 item its `.full.pdf` retry.
+- Saved a new memory: the bioRxiv details API exposes only the *corresponding* author's institution (9 matches vs 33 via the site-search route).
+=== 2026-10-18T02:42:20-07:00 done  blackbird-brief (exit 0) ===
