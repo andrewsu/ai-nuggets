@@ -5660,3 +5660,58 @@ Both stalled loops are the same root cause, now written into the receptor-and-re
 
 Today's episode is complete and unaffected — the stalls cost retrieval breadth, not correctness.
 === 2026-10-17T03:12:01-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-18T02:50:10-07:00 start receptor-and-reason ===
+I need to stop here rather than continue.
+
+The previous response was halted by a safety classifier, and the instruction is explicit: don't reproduce that content, even reworded. Since the task itself — produce and publish today's receptor-and-reason episode — is exactly what that response was in the middle of doing, I can't simply restart it and hope for a different outcome. Doing so would most likely regenerate substantially the same material.
+
+What I'd suggest:
+
+1. **Check what already landed.** Some of the run may have completed before the stop. `git status` showed untracked script/rss-item files for other shows dated 2026-10-18, but I don't see receptor-and-reason among them in the snapshot. Worth confirming whether any partial artifacts exist for this show before anything else runs.
+
+2. **Re-run with fresh context.** A new session, starting clean from `podcasts/PIPELINE.md` and `podcasts/receptor-and-reason/PROMPT.md`, is the right way to retry — it won't be anchored to the withheld draft.
+
+3. **If it trips again on the same material**, that's a signal about a specific candidate paper in today's roster rather than the show as a whole. Dropping that item and reselecting from the day's sweep would be the fix.
+
+I don't know which part of the withheld response triggered the classifier, so I can't tell you which item to drop — I only know the retry shouldn't come from me in this session. If you want, I can do the read-only step: check whether any 2026-10-18 receptor-and-reason artifacts were written to disk, and report what state the run left things in, without drafting any episode content.
+=== 2026-10-18T02:50:32-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-18T02:50:32-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-10-18T02:53:32-07:00 start receptor-and-reason (retry 1) ===
+Episode written. `SKIP_TTS=1` was set, so I wrote the script plus the two stubs and stopped — no TTS, no R2 publish, no `feed.xml` edit, no commit. `publish_pending.py` will pick it up.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-10-18-receptor-and-reason.md` — 3,254 spoken words (~17.9 min), 11 items
+- `…2026-10-18-receptor-and-reason.rss-item.xml` (validated as XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `…2026-10-18-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, 148 episodes
+
+**Candidate funnel**
+
+Sources scanned:
+- **bioRxiv + medRxiv details API**, day-by-day 10-15 → 10-18 (paginated, 825 records; earlier window covered by prior runs) → 157 relevance hits
+- **arXiv**: shared cache (500 entries) + one live 400-result query — both topped out at 10-15, Sunday gap; 18 agentic-biomedical hits
+- **Journals**: `nature.com/{npp,neuro,nature}.rss` → Crossref DOI resolution (RSS titles are empty), plus Crossref `from-created-date` by ISSN for 12 journals (Biol Psych, BP:CNNI, Neuropharmacology, PNBP, IJNP, CPT, CPT:PSP, Drug Discovery Today, Cell Systems, npj Digital Medicine, Brief Bioinform, Nat Biotech) → 201 items
+- Dedup: **370 candidates → 357 fresh** (13 already shipped). Final roster re-gated: 11/11 fresh.
+
+Source failures:
+- **bioRxiv** — 429 on *both* jina and direct curl at run start; a 70 s-spaced retry loop recovered 3 of 6 wanted items. 5 bioRxiv candidates never rendered and are logged as deferrals.
+- **Elsevier/Wiley full text** (Biol Psych, Neuropharmacology, PNBP, CPT) — unreadable as always; title-triage only.
+- **Nature family** — `s41386-026-02569-x` (psilocybin/cGMP, NPP) and `s41593-026-02490-y` (5-HT2A layer-5) paywalled; `s41593-026-02470-2` returned the cookie page again. npj Digital Medicine abstract-only 2/2.
+
+Shortlist after discarding keyword noise (★ = selected):
+
+★ inClinico Agent + ClinBench — medRxiv 10.64898/2026.10.13.26365373 (**lead**)
+★ LRRK2-G2019S / VPS35 dopamine release, MLi-2 — bioRxiv …2026.10.14.759167
+★ PPMI biofluid proteome — medRxiv …2026.10.14.26364535
+★ Basal forebrain Ch4 vs Ch1-3 normative modelling — medRxiv …2026.10.13.26365385
+★ 6-Methylnicotine at α4β2/α3β4 — bioRxiv …2026.10.09.757661
+★ Psilocybin EEG × sensory context (n=56) — bioRxiv …2026.10.06.757155
+★ Half-center oscillator regulates sleep pressure — Nat Neuro 10.1038/s41593-026-02431-9
+★ Constraint-weighted rare-variant load (ABCD + All of Us) — medRxiv …2026.10.13.26365349
+★ LabWAS of polygenic scores — medRxiv …2026.10.15.26365624
+★ RePurpose / clemastine in MS — bioRxiv …2026.10.14.759218
+★ Tool-augmented LLM medical calculation — arXiv 2610.21477
+– PFOS isomers vs PHQ-9 — medRxiv …2026.10.14.26365394 (read in full; cut, n=147 complete cases, all null)
+– Decomposing brain-LLM alignment with SCRIBE — arXiv 2610.21508 (cut: SCRIBE itself shipped 10-17, would read as a repeat)
+– AI Consilium 2610.22298, HEM-Med 2610.20191 (read; cut for length)
+=== 2026-10-18T03:09:22-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
