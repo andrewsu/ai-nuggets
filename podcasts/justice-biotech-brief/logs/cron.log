@@ -4300,3 +4300,37 @@ Two access notes worth flagging: the direct `.full.pdf` returned the 17-byte 429
 
 Sources: [ESMO Congress 2026](https://esmo.org/meeting-calendar/esmo-congress-2026), [Novartis/Abogen ABO2203](https://www.biopharminternational.com/view/novartis-licenses-abogen-s-mrna-encoded-cd19xcd3-t-cell-engager-abo2203-for-autoimmune-diseases), [IL-18BP as a secreted immune checkpoint](https://pmc.ncbi.nlm.nih.gov/articles/PMC7381364), [tadekinig alfa NCT03113760](https://clinicaltrials.gov/study/NCT03113760)
 === 2026-10-18T02:49:34-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-19T02:40:11-07:00 start justice-biotech-brief ===
+Episode script and stubs are written and validated. Waiting on the news sweep to close out the candidate funnel.
+
+Still waiting on the news sweep agent.
+
+Episode written. `SKIP_TTS=1`, so per PIPELINE this is stubs-only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written** (`podcasts/justice-biotech-brief/scripts/`):
+- `2026-10-19-cd180-car-t-atypical-memory-b-cells-aml-suppressive-circuit.md` (1,181 words)
+- `...rss-item.xml` (validated as XML, no bare ampersands, `__LENGTH__`/`__DURATION__` placeholders)
+- `...commit-msg`
+
+**Pick:** CD180 CAR T — *A CAR T cell-amplified suppressive B cell circuit in AML* (bioRxiv 10.64898/2026.10.12.758644 v1, posted 10-18; Gottschlich + Kobold, LMU Munich, with Subklewe, von Bergwelt-Baildon, Saar Gill, Thorsten Mempel). Full text read (17.5 MB PDF → 266 KB extracted, real Results/Discussion/Methods). Editorial spine: CAR T engagement itself polarizes the suppressor (supernatant from CAR T + leukemia + B cells induces the program; CAR T + B cells *without* leukemia does nothing), and CD180 is the one antigen shared by blasts, leukemia-initiating cells and those B cells while being absent from healthy HSPCs — so the suppressive compartment flips from liability to co-stimulation. Verified NCT07106749 against the raw CT.gov API: phase 1, n=12, Tianjin, recruiting since 2025-06-28 with no published rationale.
+
+**Candidate funnel**
+
+bioRxiv/medRxiv details API, day-by-day 10-17/18/19 — 182 records (bioRxiv 64/103/6, medRxiv 9/0/0), 180 unique, 23 keyword hits, most spurious ("tce" inside words, "bite"). On-beat shortlist:
+- **CHOSEN** — A CAR T cell-amplified suppressive B cell circuit in AML · biorxiv.org/content/10.64898/2026.10.12.758644v1
+- CXCL9-dependent networks in spontaneous tumor TLS (Groom, WEHI) · …758663
+- Sustained antigenic engagement diversifies CTL states (Khazen, CRCT Toulouse) · …758563
+- IL-2/CD40L-induced TIGIT+ regulatory B cells (Oh, Mayo) · …755729
+
+News (delegated sweep; dates confirmed from datelines). Fierce, Endpoints, BioPharma Dive, Clinical Trials Arena all reachable but top out Oct 16 — the usual weekend gap. Everything in-window came from company PRs, dominated by the **ESMO 2026 abstract drop (live Oct 18; congress Oct 23–27)**. Deliberately deferred to congress week rather than covered off a preview PR:
+- ABBV-1480/RC148, PD-1×VEGF bispecific — 1L PD-L1+ NSCLC ORR 61.9%, mPFS 15.2 mo (n=22)
+- alveltamig/ZG006, DLL3/DLL3/CD3 trispecific TCE — poster Oct 26, no numbers yet
+- INCA33890 TGFβR2×PD-1 in MSS CRC; tarlatamab+durvalumab DeLLphi-305 (LBA3); Ris-Rez B7-H3 ADC; 9MW2821 Nectin-4 ADC; BI-1808 anti-TNFR2; givastomig/ragistomig
+- ABBV-466 (risankizumab + trosunilimab) TARGET-CD, wk24 endoscopic remission 40.5% vs 22.4%/20.0% — UEGW late-breaker, Oct 19
+
+Source failures: globenewswire 403s direct and renders nav-only via jina; businesswire fully blocked. Direct `.full.pdf` curl returned the 17-byte 429 and — a new failure mode — r.jina.ai on the PDF returned a 211-byte empty shell; the `early/<posted-date>/` PDF path rescued it on the first try. All of the above is recorded in the run log and the bioRxiv-access memory.
+
+That was the leftover wait timer I'd started before the news sweep reported back — it's now moot. The run is complete; nothing further to do.
+
+Final state: today's episode for `justice-biotech-brief` is written as three stub files (script, RSS item, commit message) in `podcasts/justice-biotech-brief/scripts/`, awaiting the batch TTS job and `publish_pending.py` to generate audio, publish to R2, update the feed, and commit.
+=== 2026-10-19T02:54:03-07:00 done  justice-biotech-brief (exit 0) ===
