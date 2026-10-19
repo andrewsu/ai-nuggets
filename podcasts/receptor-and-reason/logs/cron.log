@@ -5715,3 +5715,90 @@ Shortlist after discarding keyword noise (★ = selected):
 – Decomposing brain-LLM alignment with SCRIBE — arXiv 2610.21508 (cut: SCRIBE itself shipped 10-17, would read as a repeat)
 – AI Consilium 2610.22298, HEM-Med 2610.20191 (read; cut for length)
 === 2026-10-18T03:09:22-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-10-19T02:50:11-07:00 start receptor-and-reason ===
+I need to stop here.
+
+A safety classifier halted my previous response mid-run, and I shouldn't reproduce that content or try to route around the stop by regenerating it in another form. I don't have visibility into what specifically triggered it, so I can't reliably tell which part of the episode work was the problem and which part was fine.
+
+What I'd suggest:
+
+- If you can see the truncated output on your end, tell me what the last thing I was doing was — that would help me figure out whether the issue was a particular source, a particular paper's subject matter, or something incidental.
+- If you'd like to proceed, it may be cleanest to start a fresh session for today's `receptor-and-reason` episode rather than continuing from this interrupted state.
+
+One practical note on workspace state: the git status snapshot shows untracked script/rss-item/commit-msg stubs for several shows dated 2026-10-19, but nothing for `receptor-and-reason` — so as far as I can tell no partial artifacts for today's episode were written before the stop. Worth confirming with `git status` before any re-run, so a second attempt doesn't collide with leftovers.
+=== 2026-10-19T02:50:25-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-19T02:50:25-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-10-19T02:53:25-07:00 start receptor-and-reason (retry 1) ===
+Episode written. `SKIP_TTS=1`, so this run produced script + stubs only — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files written** (`podcasts/receptor-and-reason/scripts/`):
+- `2026-10-19-receptor-and-reason.md` — 3,296 words, ~18.1 min, 11 items
+- `2026-10-19-receptor-and-reason.rss-item.xml` — validated XML, `__LENGTH__`/`__DURATION__` placeholders
+- `2026-10-19-receptor-and-reason.commit-msg`
+
+Ledger appended (149 episodes). All 11 `Paper link:` URLs return 200.
+
+**Running order** — spine: *addresses, not doses*
+1. **Lead** — Nature Neuroscience (published today): transcriptomics, two-photon imaging and behaviour all date stress-susceptibility onset to day 7 of chronic corticosterone, in lateral habenula; ketamine at that date shrinks one functional cluster
+2. Nature: 1,514 unannotated microexons, invisible because NMD destroyed their transcripts
+3. NOSTRA molecular glue — 1 of 6 NOS1AP partners, via 14-fold slower *k*off; Aβ42 down, Aβ40 flat
+4. GAT1508 — neuronal GIRK1/2 vs cardiac GIRK1/4, CBD synergy
+5. CSF dopa-decarboxylase — putamen-specific, survives carbidopa
+6. CYP2D6 cocaine haplotypes — apparent expression gain is really loss of function
+7. Brown-fat phenome sweep — SSRI association survives adjusting for the diagnosis
+8. Intraoperative very-high-frequency activity — 1.45% of spikes, 12× the localising work
+9. Cross-Centaur — recovers regret rank order, compresses the variance
+10. DrugHarness — scaffold gains 11 points, backbone swap costs 30
+11. Music vs. audiobook RCT (ender)
+
+**Two things worth flagging.** The final-roster dedup gate caught **two already-shipped items**, one of them my fully-drafted second item (the valine/mGluR5 paper, shipped 10-17). The batch filter had correctly dropped it — I built the fetch list off the sorted *pre-filter* output instead of `fresh.tsv`. The NPP alcohol paper (shipped 10-13) came straight off Nature RSS and bypassed the filter entirely. Both were swapped for already-read spares rather than forcing a rewrite. I've recorded both in memory.
+
+Separately: medRxiv `2026.10.13.26365182` (biallelic BECN1) returned a 6-word stub for the third consecutive run — I've marked it dead rather than retrying.
+
+**Source funnel:** bioRxiv 620 records → 63 relevant → 57 fresh, 9 full texts; medRxiv 226 → 51 → 42 fresh, 7 full texts; arXiv cache 500 (capped at 10-16) → 13 → 11 fresh, 4 PDFs; Nature RSS 99 DOIs → 5 fetched, 4 full. Dry: Psychiatric Times (Cloudflare), society press pages, industry announcements (Sunday gap), Elsevier/Wiley/Oxford (4/4 not in EPMC — title triage only).
+
+Run complete. Final state:
+
+**Delivered** (`podcasts/receptor-and-reason/scripts/`) — script + the two SKIP_TTS stubs:
+- `2026-10-19-receptor-and-reason.md` — 11 items, 3,296 words, ~18.1 min
+- `2026-10-19-receptor-and-reason.rss-item.xml` — validated, `__LENGTH__`/`__DURATION__` placeholders intact
+- `2026-10-19-receptor-and-reason.commit-msg`
+
+Ledger at 149 episodes. No TTS, no R2 publish, no `feed.xml` edit, no commit — correct for `SKIP_TTS=1`; `publish_pending.py` picks it up after batch TTS.
+
+**Worth your attention from this run, in order of consequence:**
+
+1. **The final-roster dedup gate earned its keep.** It caught two already-shipped papers, one of which was my second item — the valine/mGluR5 preprint, fully read and ~470 words drafted. The batch filter had correctly dropped it; I built the fetch list off the sorted *pre-filter* output instead of `fresh.tsv`, which is a mistake already documented in memory and which I repeated anyway. The second (NPP alcohol paper) came off Nature RSS and never entered the filter at all. Both swapped for already-read spares rather than forcing a rewrite, because I'd over-read by a few items. I've updated the memory entry with the specific new variant of the error.
+
+2. **A late agent report surfaced two items arguably better than my tail**, in particular a human-DRG paper showing OPRK1 is predominantly a *satellite glial* gene in humans but not in any of five other species — a real problem for how kappa programs read rodent sensory-ganglion data. It arrived after the script was final and length-capped. I deliberately did not rewrite to accommodate it; both items are still in-window and now sit in memory fully pre-read for tomorrow.
+
+3. **One self-inflicted bug worth noting**: splicing replacement paragraphs by line index silently merged two items by dropping a blank line, which my ordinal check caught only because I re-printed the paragraph list. Recorded as a standing post-splice check.
+
+Sources that came up dry, for the audit trail: Psychiatric Times (Cloudflare), society press pages, industry announcements (Sunday), and all four probed Elsevier/Wiley/Oxford items (not in Europe PMC — title triage only). One medRxiv preprint returned a 6-word stub for the third consecutive run; I've marked it dead rather than keep retrying.
+
+Logged. No change to the episode — that was the last outstanding background task, and nothing it returned affects what shipped.
+
+**Final run state:**
+- bioRxiv full-text fetch finished **12 of 15**. The three that never landed (`gpcr_efficacy`, `distagents`, `disc1_monkey`) each returned exactly 34 words on all five retry rounds while sibling documents on the same host pulled 6k–15k words in those same rounds.
+- That's a useful distinction I hadn't recorded before: a *stable* 34-word reply with siblings succeeding is per-document render lag, not a host block — unlike the 54-word Cloudflare page, which did clear on retry today. Retrying it inside the same run is wasted budget. Recorded, along with the three DOIs to retest tomorrow (all still in-window through ~10-23).
+
+Today's episode stands as shipped: 11 items, ~18.1 min, script + both SKIP_TTS stubs written, ledger at 149 episodes, no commit. Nothing further pending.
+
+All background work is now closed out, and the run is finished.
+
+**Reporting the stop, as asked:** the `bh4vnics3` waiter was killed at its background time limit rather than completing. It was a convenience poller watching for two bioRxiv files to appear; those files never rendered, so the condition was unsatisfiable. Not restarting it — the fetch loop it was shadowing had already exited and given the definitive answer. No work was lost and the episode never depended on it.
+
+**Final state, unchanged from the last two notifications:**
+
+| Item | Status |
+|---|---|
+| Script | `2026-10-19-receptor-and-reason.md` — 11 items, 3,296 words, ~18.1 min |
+| RSS stub | written, parses, placeholders intact |
+| Commit-msg stub | written |
+| Ledger | 149 episodes, 11 keys appended |
+| TTS / R2 / feed / commit | **not run** — correct under `SKIP_TTS=1` |
+
+The three untracked files plus the two modified ones are exactly what `publish_pending.py` expects to find after batch TTS.
+
+Two things I'd flag for the next run, both already in memory: the dedup near-miss (I built the fetch list off the pre-filter output rather than `fresh.tsv`, and only the final-roster gate caught the resulting repeat — my second item, fully drafted), and the two strong pre-read deferrals the late agent surfaced, particularly the human-DRG paper putting OPRK1 on satellite glia in humans but not in five other species.
+=== 2026-10-19T03:32:48-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
