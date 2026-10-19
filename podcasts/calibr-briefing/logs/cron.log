@@ -5642,3 +5642,38 @@ Shortlist after discarding already-shipped items (checked every candidate agains
 
 Full text read before drafting for all five picks. Two caveats are stated on air: AbbVie's week-96/144 numbers are **as-observed, not NRI**, and GT801's clinical support is **two patients from a conference poster**.
 === 2026-10-18T02:37:27-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-19T02:20:10-07:00 start calibr-briefing ===
+Both episodes are written as stubs. `SKIP_TTS=1`, so no TTS, no R2 publish, no feed edit, and no commit — the orchestrator does those after batch TTS.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-10-19-pharma-headlines.txt` (1,161 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-10-19-gilead-emvistegrast-oral-integrin-spotlight.txt` (1,487 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as valid XML under the channel namespace and carry `__LENGTH__` / `__DURATION__` placeholders.
+
+**Candidate funnel**
+
+Sources scanned (all plain `curl` + Safari UA unless noted):
+- `endpts.com/feed/` — 200, 24 dated items; only one Oct-19 item (Nouscom). Endpoints bodies paywalled as usual.
+- `r.jina.ai` Endpoints index — 200, 24 headlines, nothing past Nouscom.
+- BioPharma Dive front page — 200, 31 items, newest IDs already shipped Oct 15–16.
+- BioSpace `/press-releases` (34 items), front page, archives for Oct 17/18/19 — mostly ESMO-preview releases and inducement grants.
+- Clinical Trials Arena RSS — 200, one Oct-19 item (Cyrano).
+- STAT `/category/biotech/` — 200, two Oct-19 articles (Gilead, Isomorphic); bodies paywalled after ~4 paragraphs.
+- Fierce Biotech front page — 200 via curl, ld+json headlines only; **Fierce Pharma 403; `r.jina.ai` on Fierce = 143-byte tracker stub (6th straight run with no Fierce article access)**.
+- Gilead newsroom + investor site — JS-only, no press release retrievable; **no Gilead primary release found anywhere** (reconstructed from STAT + UEG programme + Seedy19 flash + ClinicalTrials.gov).
+
+Shortlist (✓ = used):
+- ✓ Gilead emvistegrast Phase 2 SWIFT, UEG late-breaker — statnews.com/2026/10/19/gilead-ibs-drug-succeeds-phase-2-trial/ — **spotlight**
+- ✓ Nouscom €120M/$135M Series D + ESMO 3438O — globenewswire.com Oct 19 release
+- ✓ Roche ESMO preview / Krascendo 1 divarasib head-to-head — manilatimes GlobeNewswire mirror, Basel Oct 19
+- ✓ Zentalis azenosertib DENALI 1b OS 15.8 mo — BioSpace PR mirror
+- ✓ Disc Medicine APOLLO topline webcast 8am ET (intraday, no result asserted) — BioSpace PR mirror
+- ✓ Cyrano CYR-064 Phase 2 FLAVOR — clinicaltrialsarena.com Oct 19
+- ✗ Isomorphic Labs STAT feature — paywalled past the lede, no second source
+- ✗ J&J TREMFYA FUZION subgroup / GALAXI 144-week — dated Oct 12 (ACG), out of window
+- ✗ Mabwell 9MW2821, Eikon, Incyte, Natera, Lilly, AbbVie ESMO previews — announcement-of-presentation filler
+- ✗ Abivax obefazimod 44-week — data public since June; used only as spotlight context
+
+Dedup: all six checked against `scripts/2026-10-12…18*.txt`; none previously shipped (Abivax and ESMO appeared only as week-ahead mentions on 10-18).
+=== 2026-10-19T02:35:37-07:00 done  calibr-briefing (exit 0) ===
