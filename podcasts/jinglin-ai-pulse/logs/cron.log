@@ -4079,3 +4079,46 @@ Podcasts (14-day window): No Priors Oct 15 (Brockman — used 10-17), Latent Spa
 
 Source failures: `api-docs.deepseek.com` is TLS-intercepted by the Scripps network (cert serves `*.scripps.edu`), so the DeepSeek search/fetch API pricing item was dropped rather than cited second-hand. FT paywalled — read via secondary coverage carrying the tranche table, and labeled as such in the source line.
 === 2026-10-18T02:39:54-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-19T02:30:10-07:00 start jinglin-ai-pulse ===
+Today's episode script is written, along with its two stub files. `SKIP_TTS=1` was set, so I didn't run TTS, publish to R2, edit `feed.xml` or commit; the batch TTS and `publish_pending.py` steps will do those.
+
+**Files written** in `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-10-19-more-than-anyone-can-read.md` — about 2,500 spoken words, roughly 11–14 minutes. That's over the brief's 2,200-word target but about the length of yesterday's episode, which ran 11.3 minutes.
+- `2026-10-19-more-than-anyone-can-read.rss-item.xml` — the feed entry, with `__LENGTH__` and `__DURATION__` placeholders; it parses as valid XML.
+- `2026-10-19-more-than-anyone-can-read.commit-msg`
+
+**Episode: "more than anyone can read"**
+- **Twitter Pulse**
+  1. Anthropic's study of its own workforce: junior technical hires fell from 27% to 9%, agents log 6 times their handlers' hours, sessions sit idle 80% of the time waiting on people, and reading all of Claude's output would take more than half a work week.
+  2. Follow-up on DeepSeek V4.1 Flash 1017: Artificial Analysis independently scores it 45.1, up from 39.5. On Terminal-Bench it measures 33.8 against DeepSeek's claimed 42.3.
+  3. Hybrid Reasoning Agents (Stanford, Together AI and others): models that reason silently in their hidden states and only write text for tool calls and answers.
+- **Money Moves:** Anthropic's new Public Benefit Fund (5% of its shares, rising as the company's value grows), and Replit making OpenAI its default model.
+- **Deep Cut:** The Cognitive Revolution, Oct 17. Runtime Verification describes finding Linux kernel bugs by having an AI translate code and then proving it correct, and Nathan Labenz asks whether formal verification will go the way of RLHF.
+
+**On-air correction:** Saturday's episode said the new DeepSeek checkpoint costs 4 times more per output token. That came from comparing two OpenRouter listings. On DeepSeek's own API both checkpoints cost the same, and the new one is about half the cost per task. Today's script says this on air.
+
+**Candidate funnel**
+- **Hacker News** (Algolia API, last 48 hours, 12 queries): 26 stories above 80 points, 9 on topic.
+  - ★ How employment is changing at Anthropic — https://news.ycombinator.com/item?id=50139873
+  - ★ DeepSeek V4.1 Flash 1017 (Max) on Artificial Analysis — https://news.ycombinator.com/item?id=50148452
+  - ★ Hybrid Reasoning Agents — https://news.ycombinator.com/item?id=50145337
+  - Anthropic's proposed safety bill (50 deaths or $1B in damages) — read, not used: https://news.ycombinator.com/item?id=50141429
+  - Websites are closing their doors to AI agents — read, not used: https://news.ycombinator.com/item?id=50141657
+  - DeepSeek search and fetch API — not used: https://news.ycombinator.com/item?id=50138531
+  - Vals "impossible refund" — dropped because Vals has been on the show 3 times this month: https://news.ycombinator.com/item?id=50140462
+  - Running your own LLM proxy — not used: https://news.ycombinator.com/item?id=50145507
+  - OpenAI's four more rogue incidents — already covered Oct 17
+- **AINews / Latent Space:** nothing new since Oct 17. Interconnects: nothing new since Oct 17, which was already covered.
+- **Funding news** (TechCrunch AI feed, one web search):
+  - ★ Anthropic Public Benefit Fund — https://www.anthropic.com/news/public-benefit-fund
+  - ★ Replit makes OpenAI its default — https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/
+  - Also seen, not used: Disney hiring most of Character.AI's staff, RapidCanvas $29M, Gewu Tongzhi angel round. The Manus $500M round (Oct 8) is outside the 7-day window.
+- **Podcasts** (Cognitive Revolution, Dwarkesh, MLST and Latent Space feeds):
+  - ★ Cognitive Revolution AI:AM, Oct 17 — https://www.cognitiverevolution.ai/ai-am-where-s-the-steering-wheel-my-agent-set-the-password-hidden-valence-proofs-find-linux-bugs/
+  - Not used: MLST's Akarsh Kumar episode (Oct 10). Dwarkesh has nothing recent on AI.
+- **Sources that failed:** the No Priors feed URL returned 10 bytes. X can't be reached directly from this host.
+
+**Other notes**
+- Old stub files from 2026-09-15 and 2026-09-29 are still in `scripts/`. They're tracked in git, so I left them alone.
+- I saved a memory note: Artificial Analysis pages only give real numbers through a plain curl of the HTML, and prices should be compared on each lab's own API, not OpenRouter.
+=== 2026-10-19T02:36:49-07:00 done  jinglin-ai-pulse (exit 0) ===
