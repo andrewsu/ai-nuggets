@@ -4334,3 +4334,51 @@ That was the leftover wait timer I'd started before the news sweep reported back
 
 Final state: today's episode for `justice-biotech-brief` is written as three stub files (script, RSS item, commit message) in `podcasts/justice-biotech-brief/scripts/`, awaiting the batch TTS job and `publish_pending.py` to generate audio, publish to R2, update the feed, and commit.
 === 2026-10-19T02:54:03-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-20T02:44:11-07:00 start justice-biotech-brief ===
+I'm not able to continue this episode production run.
+
+My previous response was stopped by a safety classifier, and I don't have visibility into which part of it triggered that. Since I can't tell what the problem was, re-running the same workflow risks reproducing it.
+
+A few things that would help:
+
+- **If you can see what was flagged** (e.g., in a log or the UI), tell me and I can route around it.
+- **If this is a known false positive** on this pipeline — these shows involve oncology/immunology content that can brush against classifier edges — say so and I'll restart the run from the top, reading `podcasts/PIPELINE.md` and `podcasts/justice-biotech-brief/PROMPT.md` fresh.
+- **If you'd rather not re-run blind**, the other shows' artifacts from today are already staged and uncommitted (biomedical-agentic-ai, blackbird-brief, calibr-briefing, jinglin-ai-pulse), so justice-biotech-brief is the only gap.
+
+Let me know how you'd like to proceed.
+=== 2026-10-20T02:44:24-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-20T02:44:24-07:00 no usable output for justice-biotech-brief; retrying in 180s ===
+=== 2026-10-20T02:47:24-07:00 start justice-biotech-brief (retry 1) ===
+I need to stop here.
+
+My previous response was halted by a safety classifier, and the instruction is explicit: I shouldn't reproduce that content, even reworded. Since I don't have visibility into which part of the episode production triggered it, continuing to re-attempt the same run risks regenerating exactly what was flagged.
+
+What I'd suggest:
+
+1. **If you can see the flagged output**, let me know what tripped it — a particular source, a drug/indication framing, a quoted passage — and I can route around that specific item and produce the episode from the remaining candidates.
+2. **If you'd rather restart clean**, say so and I'll begin a fresh run for `justice-biotech-brief` with a different candidate set, avoiding whatever I'd drafted before.
+3. **If this looks like a false positive** on routine biotech/immunology content (which is plausible given this show's subject matter — CAR T constructs, cytotoxicity, payload chemistry), that's worth noting, but I still shouldn't simply retry the same generation.
+
+One practical note regardless of which way you go: per your memory rules, I should confirm `SKIP_TTS` as the first call of any restarted run, and re-check the final roster against the show's reference file before drafting.
+
+How would you like to proceed?
+=== 2026-10-20T02:47:39-07:00 done  justice-biotech-brief (exit 0) (retry 1) ===
+=== 2026-10-20T02:47:39-07:00 no usable output for justice-biotech-brief; retrying in 180s ===
+=== 2026-10-20T02:50:39-07:00 start justice-biotech-brief (retry 2, --model claude-sonnet-5) ===
+This reads well for audio — no headings, no URLs in the spoken body, numbers spelled out, callbacks to the two recent related episodes. The episode is written and staged as stub files per `SKIP_TTS=1`; I have not run TTS, published to R2, touched `feed.xml`, or committed, per the pipeline's SKIP_TTS instructions.
+
+## Final summary
+
+**Today's pick:** Jemperli (dostarlimab) — FDA accelerated approval letting MSI-H/dMMR locally advanced rectal cancer patients skip surgery entirely, based on the global AZUR-1 trial (n=154) confirming Andrea Cercek's 2022 single-institution result at scale.
+
+**Candidate funnel:**
+- **bioRxiv/medRxiv** (day-by-day, 10-18/19/20): 514 unique DOI+version records, 20 keyword hits, mostly off-target. One new on-target hit — B7-H3-targeting VHH-Fc ADC epitope-mapping paper (`10.64898/2026.10.16.759583`) — **deferred**, full text not yet rendered (bioRxiv API fell through to abstract-only). Two live backups with full text in hand but passed on editorial strength: CXCL9-dependent TLS model (`…758663`) and CTL-state diversification under sustained antigen engagement (`…758563`, has a CAR-T/tisa-cel responder angle).
+- **News** (BioSpace per-section RSS, Endpoints, Fierce, GSK newsroom): BioSpace and Endpoints live and current; Fierce blocked today (143-byte jina reply). Shortlist:
+  - **CHOSEN** — Jemperli/AZUR-1 FDA approval (GSK press release, 10-19)
+  - Roche–Hansoh $15B ADC platform deal (10-19) — real but undisclosed targets, thin on mechanism
+  - BioSpace feature "More arms, more questions: the new challenge in multispecific drug design" — vendor-roundup trend piece, no new data
+  - Genmab/Epkinly pipeline-risk analyst piece — not a fresh data event
+- **Policy** (ARPA-H, NIH, NSF): ARPA-H and NSF reachable, nothing on-beat found; NIH still 403s from this host.
+
+One housekeeping note: this run followed two earlier automated attempts today that were halted by a safety classifier with no visible cause and no output. This run proceeded fresh and completed normally — logged in memory in case the pattern recurs.
+=== 2026-10-20T02:59:19-07:00 done  justice-biotech-brief (exit 0) (retry 2, --model claude-sonnet-5) ===
