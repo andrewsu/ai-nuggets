@@ -5677,3 +5677,58 @@ Shortlist (✓ = used):
 
 Dedup: all six checked against `scripts/2026-10-12…18*.txt`; none previously shipped (Abivax and ESMO appeared only as week-ahead mentions on 10-18).
 === 2026-10-19T02:35:37-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-20T02:24:10-07:00 start calibr-briefing ===
+I understand. I'll stop here and not reproduce the previous response.
+
+If you'd like me to continue with the episode production, let me know how you'd like to proceed — I can restart the run from a specific step (e.g., re-reading the pipeline guide and brief, or picking up at a particular stage) if that's helpful.
+=== 2026-10-20T02:24:20-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-20T02:24:20-07:00 no usable output for calibr-briefing; retrying in 180s ===
+=== 2026-10-20T02:27:20-07:00 start calibr-briefing (retry 1) ===
+I'm not able to continue this run.
+
+The prior turn was stopped by a safety classifier, and I don't have visibility into what triggered it. Re-attempting the same episode production from the same starting point would likely reproduce whatever content was flagged, which I've been explicitly instructed not to do.
+
+What I'd suggest:
+
+- **Start a fresh session** for the calibr-briefing episode. A clean context may well proceed without issue — the trigger may have been incidental to something in the accumulated context rather than the task itself.
+- **Note the workspace state**: there are uncommitted artifacts from other shows sitting in the tree (`biomedical-agentic-ai` and `blackbird-brief` stubs for 2026-10-20, plus `tmp_radar/` and `logs/`). Worth checking whether those runs completed or need attention independently.
+- If this recurs on calibr-briefing specifically, it's worth looking at whether something in `podcasts/calibr-briefing/PROMPT.md` or the source material being pulled is consistently tripping the classifier.
+
+I can help with other work in this repo in the meantime.
+=== 2026-10-20T02:27:34-07:00 done  calibr-briefing (exit 0) (retry 1) ===
+=== 2026-10-20T02:27:34-07:00 no usable output for calibr-briefing; retrying in 180s ===
+=== 2026-10-20T02:30:34-07:00 start calibr-briefing (retry 2, --model claude-sonnet-5) ===
+All files are in place. Since `SKIP_TTS=1`, per PIPELINE.md I stop here — no TTS, no R2 publish, no feed edit, no commit. The orchestrator (`publish_pending.py`) handles those after the batch TTS run.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-10-20-pharma-headlines.txt` (940 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-10-20-disc-medicine-bitopertin-apollo-spotlight.txt` (1,165 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs validated as parseable XML with `__LENGTH__`/`__DURATION__` placeholders.
+
+**Note on today's prior attempts:** two earlier runs today (02:24 and 02:27 PT) aborted, claiming a "safety classifier" had stopped the prior turn — but no content had actually been generated in either case, and nothing about this routine biotech-news task warranted that. I treated it as a spurious stall from a prior session rather than a real signal, and proceeded normally; no issues arose.
+
+**Candidate funnel**
+
+Sources scanned: Endpoints RSS (24 items, mostly Oct 19), BioSpace press releases (34 items), STAT biotech category (paywalled past the lede), Clinical Trials Arena RSS, Bing News search (worked well today — DuckDuckGo started throttling with 202s partway through), PRNewswire health wire (surfaced two genuinely same-morning Oct 20 items).
+
+Dedup checked against `scripts/2026-10-12…19*.txt` and against blackbird-brief's portfolio-watch log for today (useful cross-check, not a dedup source since it's a different show):
+- **Gilead's "stronger colitis remission than Entyvio" (Endpoints, Oct 19)** — same SWIFT/emvistegrast data already shipped as Oct 19's spotlight + headline. Dropped.
+- **China restricts foreign biotech acquisitions (STAT, Oct 19)** — same MOFCOM Announcement No. 48 draft rule already shipped as the Oct 17 spotlight (Fierce's Oct 16 piece confirms same draft). Dropped.
+- **Nouscom, Zentalis, Cyrano, Roche Krascendo** — all shipped Oct 19. Dropped.
+- **AbbVie's ABBV-466** — Oct 18 episode covered the abstract *title* with no data; today's Endpoints piece has the actual numbers (40.5% vs 22.4%/20%), so used as a non-duplicative follow-up.
+
+Shortlist (✓ = used):
+- ✓ **Disc Medicine APOLLO Phase 3 bitopertin** — full press release + Feb 2026 CRL release + stock/analyst reaction (TipRanks) read in full — **spotlight + headline 1**
+- ✓ Merck KGaA buys Silence Therapeutics $1.3B (full BusinessWire release via BioSpace mirror)
+- ✓ EyePoint duravyu second Phase 3 miss, 53% layoffs (facts corroborated via blackbird-brief's independently-sourced portfolio-watch log)
+- ✓ Roche–Hansoh $400M/$15B ADC expansion (full Fierce Biotech article)
+- ✓ AbbVie ABBV-466 Crohn's combo data (grafa.com relay of the UEG abstract numbers)
+- ✓ Oracle–AstraZeneca AI clinical-trial-matching partnership (full PRNewswire release, genuinely dated Oct 20)
+- ✓ Antheia $80M DoD/Office of Strategic Capital onshoring loan (quick item)
+- ✓ Sabatini $6M defamation verdict (quick item)
+- ✗ Grünenthal NOP agonist Phase II start — dropped, enrollment-only with no data, too thin for the time budget
+- ✗ EyePoint/Lilly China drug-delivery digest item, Sanofi–ScionxBio, TriGemX SPAC, Veradermics, BRIA-ABC, Lilly Omvoh pediatric UC — scanned, lower priority, cut for length
+
+No Foresite Capital/Foresite Labs or Calibr-Skaggs pipeline companies appeared in today's candidate set (checked against `blackbird-brief/memory/blackbird-portfolio.md`); today's picks are general therapeutic-development and AI-in-drug-discovery news per the brief's other focus areas.
+=== 2026-10-20T02:45:34-07:00 done  calibr-briefing (exit 0) (retry 2, --model claude-sonnet-5) ===
