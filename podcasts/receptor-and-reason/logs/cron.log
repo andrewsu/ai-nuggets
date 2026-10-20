@@ -5802,3 +5802,44 @@ The three untracked files plus the two modified ones are exactly what `publish_p
 
 Two things I'd flag for the next run, both already in memory: the dedup near-miss (I built the fetch list off the pre-filter output rather than `fresh.tsv`, and only the final-roster gate caught the resulting repeat — my second item, fully drafted), and the two strong pre-read deferrals the late agent surfaced, particularly the human-DRG paper putting OPRK1 on satellite glia in humans but not in five other species.
 === 2026-10-19T03:32:48-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-10-20T02:54:11-07:00 start receptor-and-reason ===
+I'm not able to continue this run. My previous response in this session was stopped by a safety classifier, and I shouldn't reproduce or route around that content.
+
+What I can tell you concretely:
+
+- No episode was published for receptor-and-reason today. Nothing was committed, no TTS was run, and no files for `podcasts/receptor-and-reason/scripts/2026-10-20-*` exist.
+- The untracked files in `git status` are from other shows' runs (biomedical-agentic-ai, blackbird-brief, calibr-briefing, jinglin-ai-pulse) and are unrelated.
+
+If you'd like to proceed, the cleanest path is to start a fresh session for this show. If you can tell me what you want the episode to cover, or which part of the pipeline you want help with specifically, I'm glad to pick it up from there.
+=== 2026-10-20T02:54:26-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-20T02:54:27-07:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-10-20T02:57:27-07:00 start receptor-and-reason (retry 1) ===
+Episode written. `SKIP_TTS=1`, so script + both stubs only — no TTS, no R2 publish, no feed edit, no commit. The orchestrator picks these up after batch TTS.
+
+**Script:** `podcasts/receptor-and-reason/scripts/2026-10-20-receptor-and-reason.md` — 3,282 words, ~18.1 min, 10 items, all read in full text.
+**Stubs:** `.rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders) and `.commit-msg`.
+**Ledger:** 10 keys appended, now 150 episodes / 1,550 unique keys.
+
+### Candidate funnel
+
+| Source | Scanned | Relevance-filtered | Notes |
+|---|---|---|---|
+| bioRxiv details API, 10-13→10-20 | ~1,220 (v1 only, day-by-day) | 312 | Re-swept 10-17→10-20; sibling `tmp_radar` day-files were truncated for the trailing days |
+| medRxiv details API, 10-14→10-20 | ~321 | 36 | Only fully reliable full-text server today |
+| arXiv cs.AI/cs.CL/cs.MA/q-bio, live, paginated to 1,600 | 1,600 | 219 → 2 kept | Shared cache absent; one 400-result call only reaches back 2 days, so paged `start=400/800/1200` |
+| Nature RSS (`npp`, `neuro`, `nm`) → Crossref | 24 DOIs | 8 in-window → 5 fresh | `nature.rss` and `nbt.rss` returned 150 bytes (empty) |
+| Tier-3 industry / agentic-pharma press | — | 0 | Nothing in-window; last items were Aug–Sep |
+| Psychiatric Times | — | 0 | Still Cloudflare-blocked per standing note |
+
+Batch dedup: 591 → 559 fresh (32 already shipped). Final-roster gate: 11 → 11.
+
+**Shipped (10):** CVN636/mGlu7 homodimer PAM · OUD human DRG / OPRK1 in satellite glia · striatal D2→D1 transmodulation · TGR5 in the ageing hippocampal niche · cannabidiol × auditory MMN in autistic children · placebo-adjusted label ADR frequencies · LLM accuracy vs confidence calibration on neurology boards · CADS (LLM proposer counterfactual) · SELECTBENCH (selectivity in structure-based design) · glycoRNA–microglia coupling in MDD DLPFC.
+
+### Two things worth flagging
+
+**A near-miss the ledger could not catch.** The intended lead was the Nature Neuroscience psilocybin 5-HT2A paper (published 10-15). It is the journal version of a bioRxiv preprint that **led the June 19 episode** — new DOI, reworded title, so it passed the key filter, the title filter and the Nature-RSS filter, and I'd already had it read in full before a grep of the scripts directory caught it. Dropped and backfilled. I've recorded the rule in memory: for journal items, always check whether a preprint of the same work was already shipped.
+
+**One self-inflicted recall loss.** I started a second bioRxiv fetch worker before the first finished and tripped a host-level Cloudflare block, costing five preprints that never rendered (oxytocin × oxycodone, neuronal FICD, analgesic dosing schedules, NeuroPilot, LIF in arthritis pain). Those are deferred to tomorrow rather than genuinely unavailable.
+
+Two papers (astrocytic sEH-EET in Alzheimer's; the PULSE brain-organoid foundation model) were read in full but reported after the script was final and length-capped, so I deferred them rather than rewriting — both are logged with their key numbers and caveats for tomorrow.
+=== 2026-10-20T03:15:46-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
