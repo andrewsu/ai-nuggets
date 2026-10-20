@@ -3753,3 +3753,26 @@ Script and both stubs written; no TTS, no publish, no feed edit, no commit (SKIP
 
 **Reference updated in place** (`memory/blackbird-portfolio.md`): new entries on Adventris (interception funded), Winnow (TED route rule + in vivo CAR-T), and the Parkinson's theme; three `_Last update:_` dates bumped. No dated run-log appended.
 === 2026-10-19T02:22:56-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-20T02:14:10-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md this run produced **stubs only** — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-10-20-portfolio-watch.md` (1,987 spoken words, ~9–10 min)
+- `…/2026-10-20-portfolio-watch.rss-item.xml` (validates; `__LENGTH__`/`__DURATION__` placeholders intact)
+- `…/2026-10-20-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — 5 keys appended for today (106 episodes, parses clean)
+- `memory/blackbird-portfolio.md` — Aletira, NuGate, Clasp, Biolinco entries updated **in place**, `_Last update:_` bumped to 2026-10-20
+
+**The episode — Portfolio Watch, window 10-16 → 10-20, five items**
+1. **LEAD — Merck KGaA buys Silence Therapeutics**, $20/share, 82% premium, $1.1B enterprise value. William Blair's note says the price "does appear inexpensive considering Merck KGaA also gets the broader mRNAi GOLD siRNA platform as well" — a buyer taking a whole delivery platform as change. The Sangamo ratio warning as a priced transaction: the lead asset has to carry the round. For NuGate and for Aletira's SELEXON cassette.
+2. **EyePoint** — duravyu misses non-inferiority to Eylea a second time, both pivotals killed, 53% cut, stock −80%; it *won* on treatment burden. In a sensory organ durability is worth nothing until the primary is matched.
+3. **Disc Medicine's APOLLO sweep** after a CRL that rejected the PPIX *biomarker*, not the drug — a priority voucher buys review time, not an endpoint. Directly rehearses Aletira's pre-IND ask.
+4. **Genmab's Q4 slate** — FRα labeling terms set the ramp (Clasp's dual mutation×HLA eligible-fraction question in someone else's words), the ORR→PFS→OS chain, payload class as a one-shot resource.
+5. **Multispecific developability feature** — the field names selection-not-discovery as its bottleneck, which is Biolinco's problem statement.
+
+**Two process failures worth flagging, both caught before shipping:**
+- The BioSpace homepage interleaves evergreen features with fresh news. Three fully-triaged candidates (Newron's schizophrenia deaths, Cerevance's Parkinson's Phase 3, Genentech–Alector) were dated Oct 5–8 — all strong portfolio hits, all out of window. Discovery was rebuilt off dated RSS.
+- `shipped_keys.py` passed 8/8 candidates and **four were re-ships** under fresh analyst-reaction URLs: Arrowhead ARO-MAPT (10-15 LEAD), China Announcement No. 48 (10-17 LEAD), City Therapeutics' IPO (10-16), Alnylam's guidance cut (10-14). An asset-name grep of the portfolio reference and recent scripts caught it *after* a full first draft was written; the lead item was rebuilt around Silence alone, with the Arrowhead lead referenced as a callback. The ledger line was corrected to the final five. Both lessons are logged to memory — the asset grep belongs before drafting, not after.
+
+One item was dropped on the full-text gate: Antheia's $80M DOD loan (fresh, and a fourth instance of the chronic-infections federal-capital pattern) returned a paywalled stub from Endpoints. Worth retrying from a primary source tomorrow.
+=== 2026-10-20T02:33:13-07:00 done  blackbird-brief (exit 0) ===
