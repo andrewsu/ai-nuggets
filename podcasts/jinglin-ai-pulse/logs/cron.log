@@ -4122,3 +4122,30 @@ Today's episode script is written, along with its two stub files. `SKIP_TTS=1` w
 - Old stub files from 2026-09-15 and 2026-09-29 are still in `scripts/`. They're tracked in git, so I left them alone.
 - I saved a memory note: Artificial Analysis pages only give real numbers through a plain curl of the HTML, and prices should be compared on each lab's own API, not OpenRouter.
 === 2026-10-19T02:36:49-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-20T02:34:10-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit.
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-10-20-sure-of-itself.md` (2,687 spoken words, ≈14.8 min)
+- `…-sure-of-itself.rss-item.xml` (validated as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…-sure-of-itself.commit-msg`
+
+**Episode: "sure of itself"** — theme is that the cheap tier got smart faster than it got honest, and nobody trusts the published numbers.
+
+1. **MiniMax M3.1 Flash** (Oct 19) — 428B/23B, $0.15/$0.60, AA Intelligence Index 42; leads the budget tier on AA-Omniscience knowledge (56% correct vs DeepSeek 43%) *and* posts a 93% hallucination rate (share of non-correct answers that were confidently wrong rather than refused), netting to 16. DeepSeek's V4.1 Flash moved the opposite way (non-hallucination 4%→33%). Weights Oct 23.
+2. **DHS FASCSA order** — published in the Federal Register *this morning* (Docket DHS-2026-0628); scope reaches "third-party products and services developed using DeepSeek implementations," i.e. MIT-licensed weights inside an agency's own data center.
+3. **Mercury 3** — diffusion scales; chief scientist answered the unflattering DeepSWE question (46 vs Haiku's 52) in the HN thread and positioned it as a subagent.
+4. **WhatsApp hidden LLM instructions** — 102 model-only blocks across 80 of 545 help pages.
+5. **Money:** CERN–Mistral Large Physics Model; Timestral at 209M params.
+6. **Deep cut:** EliseAI's Mario Martone on a16z (Oct 18) — transcribed from audio since no transcript exists — bridged to Preference Model's Terminal Bench 4 audit (44 of 65 tasks passable by cheating; Sonnet 5.5 62.8%→89.2% on the repaired port).
+
+**Candidate funnel**
+
+- **Hacker News** (Algolia, 54h window, >120 pts): 72 stories scanned, 13 AI-relevant, 6 used.
+- **X/Twitter**: direct access unavailable from this host (x.com/nitter blocked; fxtwitter needs known IDs, no timeline/search). Used Latent Space AINews Oct 20 as the X-layer substitute — captured Artificial Analysis, teortaxesTex, Dean Ball, scaling01, browser_use. **@Zefan_Cai specifically could not be swept.**
+- **Podcasts**: Latent Space (latest pods Oct 13/14 — both already shipped), Interconnects (Oct 17, shipped 10-18), Cognitive Revolution (latest AI:AM shipped 10-19; Alan Chan shipped 10-15; Bigelow 10-11), MLST (Oct 10 Akarsh Kumar, shipped 10-13), Dwarkesh (Oct 1, out of window), Lex (Sept), No Priors (Oct 15, shipped 10-17), TWIML #780 Oct 15 (unused, but e-commerce ranking — off-audience). **a16z Oct 18 EliseAI chosen**; no published transcript, so the full 24-min episode was transcribed in three chunks with voxtral-mini.
+- **Source failures**: `minimax.io` and `r.jina.ai`-adjacent hosts hit the Scripps-network TLS interception (cert `*.scripps.edu`) — MiniMax's own launch post was unreadable via curl *and* WebFetch; worked around with VentureBeat's detailed writeup plus MiniMax's FAQ figures as quoted on HN. `reuters.com` blocked to WebFetch; replaced with the Federal Register primary source, which is strictly better. HuggingFace raw README 401s for the unreleased MiniMax repo (expected — weights not out until Oct 23).
+- **Dedup**: every asset grepped against the full script archive before drafting (MiniMax, Mercury/Inception, Timestral, CERN, redact.dev, DHS, a16z episode slugs, Terminal Bench audit) — all clear; the four podcast candidates above were rejected *on* that check.
+
+One caveat worth flagging for the record: the "every additional nine is another hill to climb" line in the deep cut is the a16z host's framing, not Martone's, and the script attributes it that way. Martone's transcript also contains an internally inconsistent volume figure ("1 million phone calls a day" vs. "5 million a month"); I used 5M/month–60M/year, which is stated twice and matches the published show notes.
+=== 2026-10-20T02:48:44-07:00 done  jinglin-ai-pulse (exit 0) ===
