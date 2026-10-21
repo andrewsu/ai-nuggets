@@ -1,0 +1,8 @@
+Script body: 12881 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2915 chars) -> 138.3s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2955 chars) -> 147.6s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2898 chars) -> 137.3s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2985 chars) -> 143.3s ✓
+  [mistral:en_paul_neutral] chunk 5/5 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/5 (1124 chars) -> 51.5s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-10-21-thirty-eight-dollars-an-hour.mp3 [mistral] 5,456,292 bytes, 682.0s

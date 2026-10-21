@@ -4149,3 +4149,20 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plu
 
 One caveat worth flagging for the record: the "every additional nine is another hill to climb" line in the deep cut is the a16z host's framing, not Martone's, and the script attributes it that way. Martone's transcript also contains an internally inconsistent volume figure ("1 million phone calls a day" vs. "5 million a month"); I used 5M/month–60M/year, which is stated twice and matches the published show notes.
 === 2026-10-20T02:48:44-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-21T02:30:22-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1`, so no TTS, no publish, no feed edit, no commit — script plus the two stubs only.
+
+**Episode:** `2026-10-21-thirty-eight-dollars-an-hour` — 2,111 spoken words (~11 min at this show's rate).
+
+- **Twitter Pulse:** DeepSeek open-sources DeepInfer; the real disclosure is in the Chinese Zhihu engineering post — 155T tokens/day per cluster at $38 revenue per card-hour off-peak, which only makes sense once you see the ~96% input-cache-hit mix, the 100 PiB 3FS cache with 3-/7-day TTLs, and SWA Bounded Replay. Contrarian beat: vLLM's "vLLM is all you need," decode within 6%, plus the components DeepSeek withheld. Second item: Artificial Analysis's HealthBench leaderboards, where the 2,000-character length adjustment moves Opus 5.5 from top raw score to sixth.
+- **Money Moves:** Anthropic's draft prospectus ($16.3B H1 revenue, ~$9B compute, $80.7B loss of which $72B is convertible-note charges, ~$450B mostly noncancelable cloud agreements); OpenAI/Orchestra Bio and McGrew's Arda as one-liners.
+- **Deep Cut:** Latent Space with SF Compute's Evan Conrad (full published transcript), whose "$40/hour as inference, $5–6/hour to rent — one of these numbers has to change" is the same arbitrage DeepSeek documented from the other side.
+
+**Candidate funnel**
+- HN front page (>120 pts, last 40h, Algolia): 46 scanned, 8 AI-relevant. Shortlist: DeepInfer 2,247 pts (**chosen, lead**); WhatsApp hidden LLM instructions 727 (shipped 10-20, skipped); Voxtral 3 665 (covered as a line in the AINews recap, too thin alone); TorchTPU 336; "Publish fake stats, get cited in LLMs" 341 (held, no primary verification time); Anthropic $80B loss 149 (**chosen, Money**); Muse share-leak 169.
+- Latent Space archive API: 8 posts, 2 used — AINews DeepInfer recap (convergence signal + 96% cache-hit figure) and the SF Compute episode (**chosen, Deep Cut**, full transcript via `podcastUpload.transcription.cdn_url`).
+- X layer via fxtwitter: 102 tweet URLs harvested from the recap, 20 fetched verbatim (@deepseek_ai, @swyx, @Tim_Dettmers, @Yuchenj_UW, @zephyr_z9 incl. its correction, @SuJinYan123 in Chinese, @vllm_project, @OpenAIDevs, @ArtificialAnlys, @bobmcgrewai, @OpenAI).
+- @Zefan_Cai: no readable route from this host (no timeline/search via fxtwitter); the Chinese-community signal came from the Zhihu post and @SuJinYan123 instead.
+- Sources that failed: reuters.com via r.jina.ai → CAPTCHA warning, 276 bytes (routed around via Implicator's write-up of the same WSJ review); zhuanlan.zhihu.com via plain curl → 650-byte stub (jina returned the full body — saved to memory).
+- Two items from the AINews recap were deliberately left out of the script as outside what I'll cover: the offensive-cyber benchmark result and the protein-binder wet-lab work.
+=== 2026-10-21T02:36:04-07:00 done  jinglin-ai-pulse (exit 0) ===
