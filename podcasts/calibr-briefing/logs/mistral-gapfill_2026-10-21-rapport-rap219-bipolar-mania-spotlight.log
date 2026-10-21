@@ -1,0 +1,6 @@
+Script body: 9336 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/4 (2995 chars) -> 146.2s ✓
+  [mistral:en_paul_neutral] chunk 2/4 (2888 chars) -> 134.2s ✓
+  [mistral:en_paul_neutral] chunk 3/4 (2958 chars) -> 153.1s ✓
+  [mistral:en_paul_neutral] chunk 4/4 (492 chars) -> 23.1s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-10-21-rapport-rap219-bipolar-mania-spotlight.mp3 [mistral] 3,912,559 bytes, 489.0s

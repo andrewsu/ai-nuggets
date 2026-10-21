@@ -5732,3 +5732,42 @@ Shortlist (✓ = used):
 
 No Foresite Capital/Foresite Labs or Calibr-Skaggs pipeline companies appeared in today's candidate set (checked against `blackbird-brief/memory/blackbird-portfolio.md`); today's picks are general therapeutic-development and AI-in-drug-discovery news per the brief's other focus areas.
 === 2026-10-20T02:45:34-07:00 done  calibr-briefing (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-10-21T02:20:21-07:00 start calibr-briefing ===
+I've written both Calibr episodes for 2026-10-21. `SKIP_TTS=1` was set, so I only wrote the scripts and the stub files; I did not generate audio, publish, edit `feed.xml` or commit. `publish_pending.py` will do those after the batch TTS run. Both RSS stubs parse as valid XML.
+
+**Files** in `podcasts/calibr-briefing/scripts/`:
+- `2026-10-21-pharma-headlines.txt`: 1,043 words, about 5.5 minutes, a little over the 3–5 minute target. It has the `.rss-item.xml` and `.commit-msg` stubs.
+- `2026-10-21-rapport-rap219-bipolar-mania-spotlight.txt`: 1,490 words, about 7.8 minutes. It has the same two stubs.
+- Commit message: `Calibr 2026-10-21: Rapport RAP-219 Phase 2 bipolar mania win (dropout and dose read) + Lilly-METiS and Astellas-AI Proteins AI deals, Arcus casdatifan ARC-20, Lycia LYTAC IPO terms, ICER launch-price report`
+
+**Spotlight angle:** The press release and the analysts said RAP-219 was well tolerated. Rapport's own investor slides show 24.6% of patients on drug stopped treatment early, against 11.8% on placebo, mostly because they withdrew consent. The Phase 3 plan also raises the dose to 1.25 mg, which suggests the company thinks it under-dosed. Both points come from the deck filed with the SEC.
+
+**Candidate funnel**
+- **Sources:**
+  - BioSpace RSS: 20 items, 6 relevant.
+  - Endpoints feed: 24 items, 7 relevant.
+  - BioPharma Dive: 10 items, 3 relevant.
+  - STAT: 20 items, 5 relevant.
+  - GEN: 10 items, 0 relevant.
+  - Clinical Trials Arena: 10 items, 2 relevant.
+  - Fierce Biotech and Fierce Pharma RSS returned 0 items, and Fierce articles via jina returned only a tracking stub, so there was no Fierce coverage. BioCentury and The Biotech Voyager were not swept.
+- **Primary documents:** SEC EDGAR full-text search (Rapport 8-K with its press release and deck, Arcus 8-K, Lycia's amended IPO filing), stock quotes from stockanalysis.com, and web searches.
+- **Shortlist:**
+  - ✅ SPOTLIGHT and headline 1: Rapport RAP-219 in bipolar mania. [8-K press release](https://www.sec.gov/Archives/edgar/data/2012593/000119312526425647/d185134dex991.htm), [BioSpace](https://www.biospace.com/drug-development/rapport-ekes-out-bipolar-mania-win-as-lead-asset-just-hits-in-mid-stage-trial), [BioPharma Dive](https://www.biopharmadive.com/news/rapport-bipolar-mania-clinical-trial-rap-219-results/833454/)
+  - ✅ Lilly–METiS AI lipid nanoparticle deal: [BioSpace](https://www.biospace.com/deals/lilly-puts-1-1b-on-the-line-for-hong-kong-biotechs-ai-drug-delivery-platform)
+  - ✅ Astellas–AI Proteins: [Endpoints](https://endpoints.news/exclusive-astellas-partners-with-boston-miniproteins-startup/). Only the article's summary was readable and I found no press release, so the "up to $400M" figure is unconfirmed.
+  - ✅ Arcus casdatifan ARC-20 update: [8-K](https://www.sec.gov/Archives/edgar/data/1724521/000172452126000047/rcus-20261020.htm)
+  - ✅ Lycia IPO terms: [amended S-1](https://www.sec.gov/Archives/edgar/data/1806540/000162828026066381/lyciatherapeutics-sx1a.htm)
+  - ✅ ICER launch-price report: [BioPharma Dive](https://www.biopharmadive.com/news/icer-new-drug-launch-prices-report-2022-2025/833468/)
+  - ✅ Novo CagriSema analysis in women: [CNBC](https://www.cnbc.com/2026/10/20/novo-cagrisema-women-weight-loss-analysis.html)
+  - ✅ Quick hits:
+    - Pfizer ends its CXCR5 trial in ITP: [Endpoints](https://endpoints.news/pfizer-ends-phase-2-autoimmune-study-lycia-aims-for-227m-ipo/), confirmed against the Fierce search snippet and the [trial registry](https://clinicaltrials.gov/study/NCT05070845).
+    - Jemperli rectal cancer approval on Oct 19: [GSK](https://us.gsk.com/en-us/media/press-releases/jemperli-dostarlimab-gxly-approved-in-us-as-first-and-only-immunotherapy-for-adults-with-msi-hdmmr-locally-advanced-rectal-cancer/). This show missed it yesterday.
+    - Cost Plus Drugs rare-disease plant: [STAT](https://www.statnews.com/2026/10/21/mark-cuban-cost-plus-drugs-rare-disease-medicines/)
+  - ✗ Retatrutide sleep apnea data ([Endpoints](https://endpoints.news/lillys-retatrutide-creeps-closer-to-market-for-sleep-apnea/)): paywalled, and I couldn't find the source behind its "24.7 events per hour" figure, so I dropped it.
+  - ✗ Immatics PRAME feature ([STAT](https://www.statnews.com/2026/10/21/immatics-cancer-cell-therapy-targets-prame-protein/)): paywalled, and no new event.
+  - ✗ Not new or not on target: HUTCHMED's ESMO preview (in the week ahead instead), the peptide loophole letter, Endpoints' Q3 sentiment index, and BioSpace's crossover-round and China-licensing features.
+- **Foresite check:** I found no Foresite Capital or Foresite Labs portfolio news in the window. Lycia's filing doesn't list Foresite among its large holders. The `memory/calibr-pipeline.md` file that `PROMPT.md` points to doesn't exist on this machine, so I didn't check against the Calibr pipeline.
+
+I also added a line to the memory note on news-source access: readout 8-Ks often include the investor deck, and its patient-disposition slide is worth reading.
+=== 2026-10-21T02:27:01-07:00 done  calibr-briefing (exit 0) ===
