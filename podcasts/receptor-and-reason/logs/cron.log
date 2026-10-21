@@ -5843,3 +5843,34 @@ Batch dedup: 591 → 559 fresh (32 already shipped). Final-roster gate: 11 → 1
 
 Two papers (astrocytic sEH-EET in Alzheimer's; the PULSE brain-organoid foundation model) were read in full but reported after the script was final and length-capped, so I deferred them rather than rewriting — both are logged with their key numbers and caveats for tomorrow.
 === 2026-10-20T03:15:46-07:00 done  receptor-and-reason (exit 0) (retry 1) ===
+=== 2026-10-21T02:50:22-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md this run produced **stubs only** — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-10-21-receptor-and-reason.md` — 11 items, 3,314 spoken words (~18.2 min)
+- `…2026-10-21-receptor-and-reason.rss-item.xml` (with `__LENGTH__` / `__DURATION__`)
+- `…2026-10-21-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, 151 episodes
+
+**Editorial spine: the reference standard — the ruler, not the effect.**
+
+**Candidate funnel**
+- bioRxiv details API, day-by-day 10-15→10-21: 1,315 items scanned (164/447/64/103/285/237/15).
+- medRxiv, same window: 309 scanned (10-17 returned only 9 and 10-18 zero — Sat/Sun).
+- Keyword+v1+in-window filter: 618 candidates → dedup filter 594 fresh (24 already shipped, 2 key-collision warnings on normalization differences). 296 were net-new (10-19 onward).
+- arXiv: shared cache present, 500 entries but only 10-19/10-20. Sufficient for net-new; **no live arXiv call made, no 429 all run.**
+- Nature RSS: `neuro`/`nbt`/`nm` OK; **`npp` and `mp` returned 150 bytes (empty)** — logged gap.
+- Journals via Crossref ISSN sweep (11 titles): funnel-logged; Elsevier/Cell titles remain unreadable, IJNP returned 0.
+- Society pages (ACNP/ECNP/SOBP): checked, nothing dated in-window.
+
+**Selected (11):** psychosis-risk MRI external validation (lead) · autoantibody CBA reader anchoring · EviDial · AudiPsy · EL-PERTURB · PULSE organoid model · ketamine/macaque temporal dilation · GPR84 alkylpyrones · LIF arthritis pain · sham-TENS descending dosing · oxytocin × oxycodone. All 11 full texts read; all 11 paper URLs verified live against the bioRxiv/medRxiv details API and arXiv.
+
+**Dropped or deferred, with reasons**
+- Nature Neuro **SIK3/GluN1** (10-21, the single most on-target journal item) and **maternal-awakening circuit** — paywalled, two distinct signatures; ineligible under the full-text gate.
+- **npj Dig Med RL-for-rTMS in treatment-resistant depression** — on-target but no working full-text route exists from this host.
+- **ProteinGeoBench, LG-Bench, gut-microbiome/AD** — read in full, cut for length or content; notes saved for tomorrow.
+- **sEH-EET astrocyte→microglia** — drafted, then cut to meet the length budget (it contains no sample size anywhere).
+- Unrendered/blocked: `758510` and `759043` (2 runs each — stop retrying); `759669` lithium-Gdf15 and `759681` ABCA7 Cloudflare-blocked, retest tomorrow.
+
+One thing worth flagging: two of the five preprints logged as "never rendered" yesterday came back clean today, which confirms yesterday's suspicion that they were collateral damage from running two bioRxiv fetch workers rather than genuine render lag.
+=== 2026-10-21T03:14:35-07:00 done  receptor-and-reason (exit 0) ===
