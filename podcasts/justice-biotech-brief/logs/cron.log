@@ -4382,3 +4382,29 @@ This reads well for audio — no headings, no URLs in the spoken body, numbers s
 
 One housekeeping note: this run followed two earlier automated attempts today that were halted by a safety classifier with no visible cause and no output. This run proceeded fresh and completed normally — logged in memory in case the pattern recurs.
 === 2026-10-20T02:59:19-07:00 done  justice-biotech-brief (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-10-21T02:40:22-07:00 start justice-biotech-brief ===
+Episode written and staged as stubs. `SKIP_TTS=1` was confirmed as the first call of the run, so no TTS, no R2 publish, no `feed.xml` edit, and no commit — the orchestrator handles those after batch TTS.
+
+**Today's pick:** VHH-Fc 620 — a B7-H3 nanobody that out-internalizes ifinatamab and still loses badly as an ADC (bioRxiv `10.64898/2026.10.16.759583`, Janda lab / Princess Máxima Center Utrecht, posted 10-19). This was the deferral opened on 10-20; `fetch_preprint.py` again fell through to abstract-only, but a plain curl with a Safari UA on `.full.pdf` returned 9.8 MB on the first try and `mutool` gave 100 KB of clean text, so it was fully read before drafting.
+
+Files written:
+- `podcasts/justice-biotech-brief/scripts/2026-10-21-b7h3-vhh-fc-620-internalization-does-not-predict-adc-potency.md` (956 spoken words, ~5.2 min)
+- `…​.rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `…​.commit-msg`
+
+## Candidate funnel
+
+**bioRxiv + medRxiv** (day-by-day 10-19/20/21): 703 records (bioRxiv 285/237/15, medRxiv 95/71/0 — 10-21 partial at run time, normal), 17 v1-in-window keyword hits. New false positive worth naming: "TCE" matched a trichloroethylene inhalation-toxicology paper.
+
+Substantive shortlist:
+- **CHOSEN** — Domain-resolved epitope mapping of B7-H3-targeting VHH-Fcs — https://www.biorxiv.org/content/10.64898/2026.10.16.759583v1
+- TSHR bispecifics + CAR T from the human anti-TSHR autoantibody repertoire in poorly differentiated thyroid cancer (`…760040`) — **deferred**, `.full.pdf` 429'd on 4 attempts, API abstract-only. Novel concept; retry first next run.
+- Stealth CAR-Tregs that evade CD3-antibody induction in transplant (`…758862`) — **deferred**, same 429.
+- piggyBac transposon/mRNA CAR-T manufacturing optimization (`…758153`) — on-beat but incremental process work, passed.
+
+**News** (BioSpace section pages, Endpoints index): nothing beat the preprint. On-beat 10-20 items were all thin — Leads Biolabs opamtistomig (PD-L1×4-1BB) entering Phase 2 expansion, Medicovestor MC001 pancreatic ADC Fast Track, HUTCHMED–GSK KRAS-EGFR conjugate license *closing*, plus a wall of ESMO-preview releases carrying no data. Endpoints' ESMO abstracts "first look" (10-19) is paywalled past the first line even via jina. **Dedup catch:** BioSpace's Gilead/Vir "three T cell engagers" headline is the deal already shipped 2026-10-15 — dated 10-14, still on the section front page.
+
+**Source failures:** BioSpace per-section RSS now 404s to a ~107 KB "Page not found" HTML shell on every variant — routed around via the section HTML pages. fiercebiotech not retried after the 10-20 block. NIH news-releases still 403s from this host; ARPA-H and NSF reachable with nothing on-beat.
+
+The background retry loop finished: all four attempts on the two deferred preprints (`…760040` TSHR, `…758862` stealth CAR-Tregs) returned the 17-byte 429, so both remain deferred as logged. No change to the episode — the published pick is unaffected, and the run stands as summarized above.
+=== 2026-10-21T02:48:46-07:00 done  justice-biotech-brief (exit 0) ===
