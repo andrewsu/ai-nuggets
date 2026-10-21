@@ -5707,3 +5707,29 @@ The episode is written and staged in `SKIP_TTS` mode (script + both stub files, 
 
 Memory updated with the full backlog status for tomorrow's run.
 === 2026-10-20T02:17:58-07:00 done  biomedical-agentic-ai (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-10-21T02:00:21-07:00 start biomedical-agentic-ai ===
+Restored what was recoverable; the pre-10-09 entries in that memory file are gone and the file now says so. The delayed Chaperone retry also came back 17 bytes (429), confirming the deferral.
+
+**Episode written (SKIP_TTS stub mode — no TTS, no R2 publish, no feed edit, no commit):**
+
+- `podcasts/biomedical-agentic-ai/scripts/2026-10-21-multi-agent-collaboration-hallucination.md` (988 spoken words, under the 1150 cap)
+- `…​.rss-item.xml` (validates as XML with the itunes namespace; `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** *Does Multi-Agent Collaboration Reduce Hallucination in Clinical Tasks?* — arXiv 2610.27027, posted 2026-10-19, UMass Lowell. Full text read (11.9k words via PDF→mutool, no `placeholder` hits). Novelty-checked: searching the exact title returns only *other* papers claiming the opposite, no press on this one.
+
+**Candidate funnel**
+
+- **bioRxiv** 10-17→10-21, details API day-by-day, 704 records, healthy (10-21 had only 15 at 2am). 38 keyword survivors at v1; substantive shortlist:
+  - Chaperone, agentic protein-design harness, IPD/HHMI UW — `10.64898/2026.10.19.759896` — **best item on the board, deferred: render-lag abstract-only via jina `.full`, `.full.pdf` 429 on direct curl and through jina, retried after a pause, still 17 bytes**
+  - LongVerse `…758965`, PigGPA `…759908` — 404-byte Cloudflare throttle, deferred
+  - MetaKG `…758464`, ChEBI-N `…758784`, ProtTale `…757758`, NeuroPilot `…759043` (instrument beat shipped yesterday)
+- **arXiv** cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, covering only 10-19 (233) + 10-20 (267) — the usual 500-cap. Full-text read: 2610.27027 (**chosen**), ProteinGeoBench 2610.26829, Magnolia 2610.27230. Also shortlisted, not read: LG-Bench 2610.26787, Sage-A1.5 2610.28578.
+- **PubMed** 10-16→10-21 by entry date: 24 hits, 2 on-brief — MR-MAS (Bioinformatics, PMID 42895113) and the pathway-diagram agentic framework (Bioinform Adv, 42891377). Neither beat the pick.
+- **ChemRxiv** — not swept this run (the `site:chemrxiv.org` operator has returned zero ChemRxiv pages on every recent attempt); recorded as a gap.
+- **News / funder pages** — web search surfaced nothing in-window; newest relevant items were July 2026 or earlier.
+
+The delayed Chaperone retry confirms the deferral — direct curl still a 17-byte 429 and r.jina.ai still the 408-byte Cloudflare page, five minutes after the first attempt. That matches what I already recorded in memory as tomorrow's first retest, so nothing in the episode or the funnel changes.
+
+Today's run stands as reported: script plus the two SKIP_TTS stubs written for `2026-10-21-multi-agent-collaboration-hallucination`, no TTS, publish, feed edit, or commit.
+=== 2026-10-21T02:08:04-07:00 done  biomedical-agentic-ai (exit 0) ===
