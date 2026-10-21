@@ -3776,3 +3776,49 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE.md this run produced **stubs only
 
 One item was dropped on the full-text gate: Antheia's $80M DOD loan (fresh, and a fourth instance of the chronic-infections federal-capital pattern) returned a paywalled stub from Endpoints. Worth retrying from a primary source tomorrow.
 === 2026-10-20T02:33:13-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-21T02:10:21-07:00 start blackbird-brief ===
+Today's Portfolio Watch script is written. `SKIP_TTS=1` was set, so this run made stubs only: no audio, no R2 publish, no `feed.xml` edit and no commit. The batch orchestrator handles those.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-10-21-portfolio-watch.md`: about 2,030 spoken words (roughly 10 minutes), plus show notes.
+- `…/2026-10-21-portfolio-watch.rss-item.xml`: parses as valid XML, and the `__LENGTH__` and `__DURATION__` placeholders are in place.
+- `…/2026-10-21-portfolio-watch.commit-msg`
+- `state/shipped.jsonl`: 5 keys added (now 107 episodes).
+- `memory/blackbird-portfolio.md`: the Neuropsych NewCo entry was updated in place and its `_Last update:_` date set to 2026-10-21.
+
+**The episode (window 10-18 to 10-21, four items)**
+1. **Lead: Rapport's RAP-219 Phase 2 in bipolar mania.** The drug beat placebo by 3.1 points on the mania rating scale (p=0.045) and had a side-effect profile no worse than placebo. That was enough for a Phase 3, on tolerability rather than efficacy.
+   - It matters for the GPR52 NewCo because it's the same bet: a drug that's tolerable because its target is expressed only in certain brain regions.
+   - Rapport is a Third Rock company.
+   - The episode flags the caveat: this was three weeks in hospital, and Xenon's September pause shows an epilepsy drug can pick up new side effects when it moves into mood disorders.
+   - Source is the company's own press release from its SEC 8-K filing.
+2. **Lilly's deal for METiS's AI-designed lipid nanoparticle platform.** The headline is up to $1.1B, but the upfront is only "low double-digit millions." Locust Walk's data puts upfronts at about 10% of total deal value for US sellers. The read for NuGate, SELEXON and BioVentures term sheets: count the upfront and treat milestones as upside.
+3. **ICER's launch-price report.** Journavx is already priced within ICER's value thresholds, which matters for the non-opioid pain theme. Casgevy is about 7% from value at $2.2M, a useful comparison for Aletira's pricing case.
+4. **Closer on paying ahead of evidence.** Mike Rea's test for an early bet: name the premise, how it gets tested, and the result that makes you walk away. The episode applies it to Clasp and the oncology surface-target theme.
+
+**Candidate funnel**
+- **Sources:**
+  - BioSpace RSS: 20 items
+  - Endpoints RSS: 24
+  - BioPharma Dive RSS: 10
+  - STAT RSS: 20
+  - GEN RSS: 10
+  - Fierce Biotech and Fierce Pharma RSS: 0 items. Their feeds were unreadable, so they were skipped.
+  - BioBuzz feed: 0 items (about 1 KB returned)
+  - SEC EDGAR full-text search for the Rapport filing
+- **Dedup:** all 20 candidates passed the ledger filter. A separate name search of recent scripts dropped Nouscom, which shipped 10-19. The final five picks were checked again: all fresh.
+- **Shortlist:**
+  - ✅ Rapport RAP-219 bipolar mania (lead): https://www.sec.gov/Archives/edgar/data/2012593/000119312526425647/d185134dex991.htm
+  - ✅ Lilly × METiS AiLNP: https://www.biospace.com/deals/lilly-puts-1-1b-on-the-line-for-hong-kong-biotechs-ai-drug-delivery-platform
+  - ✅ Locust Walk China licensing vs US M&A: https://www.biospace.com/business/chinas-licensing-deals-soar-as-us-biotechs-enjoy-a-bumper-m-a-year
+  - ✅ ICER launch prices: https://www.biopharmadive.com/news/icer-new-drug-launch-prices-report-2022-2025/833468/
+  - ✅ "Promise prices on premise evidence": https://www.biopharmadive.com/news/pharma-rd-bets-clinical-proof-gsk-summit/833332/
+  - ❌ Antheia $80M Department of Defense loan: only secondary sources were readable, and the portfolio link is weak.
+  - ❌ Immatics PRAME (STAT+), Astellas miniproteins and Pfizer/Lycia (Endpoints): paywalled, and no primary source found.
+  - ❌ Sanofi × ScionxBio: paywalled, and no corroborating source found.
+  - ❌ Gilead's colitis data and AbbVie's Crohn's combination: the IBD program is terminated.
+  - ❌ Nouscom: already shipped 10-19.
+  - ❌ Crossover-round feature, Iambic and Diasome: no portfolio connection.
+
+I also added a note to my memory file on finding same-day 8-K press releases through EDGAR's full-text search.
+=== 2026-10-21T02:15:44-07:00 done  blackbird-brief (exit 0) ===
