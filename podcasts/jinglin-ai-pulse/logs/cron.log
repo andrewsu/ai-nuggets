@@ -4166,3 +4166,27 @@ Episode written. `SKIP_TTS=1`, so no TTS, no publish, no feed edit, no commit �
 - Sources that failed: reuters.com via r.jina.ai → CAPTCHA warning, 276 bytes (routed around via Implicator's write-up of the same WSJ review); zhuanlan.zhihu.com via plain curl → 650-byte stub (jina returned the full body — saved to memory).
 - Two items from the AINews recap were deliberately left out of the script as outside what I'll cover: the offensive-cyber benchmark result and the protein-binder wet-lab work.
 === 2026-10-21T02:36:04-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-22T02:30:13-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Episode:** `2026-10-22-the-bottleneck-was-never-finding-it` — 2,734 spoken words (~13 min, in line with the last three episodes: 2,687 words → 13.2 min, 2,810 → 12.5 min).
+
+Files written:
+- `podcasts/jinglin-ai-pulse/scripts/2026-10-22-the-bottleneck-was-never-finding-it.md`
+- `…rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `…commit-msg`
+
+**Note on this run:** my previous response in this session was stopped by a safety classifier and withheld, so I restarted from scratch rather than resuming — I couldn't see what, if anything, had been done. Nothing for this show was on disk, and nothing was left half-written.
+
+**The take.** The headline was "AI uncovers critical vulnerabilities in the backbone of the web." The PHP Foundation's own postmortem inverts it: a *human* Quarkslab/OSTIF audit found the root cause in 2024, and the fix then stalled for two years because a consensus security team couldn't choose among three bad trade-offs — their words, "the delay was a structural failure." What Calif and OpenAI delivered on Aug 11 was an unconditional exploit for an already-known bug. The models didn't find it; they ended an argument. Then four human coordination failures in 36 hours did more demonstrable damage than the vulnerability. The spine ties that to the PHP team's 15 CVEs vs 100+ invalid reports, and to the deep cut's supervisor mod firing on 99 of 111 turns until its author started skimming — the same alert-fatigue failure in unrelated institutions.
+
+**Candidate funnel:**
+- *Latent Space AINews (10/22)* — 1 issue scanned, 6 theme sections; **PHP2Shell chosen as lead**; harness-eval and inference-systems themes read, inference dropped as 10/21 dup.
+- *Hacker News* — 23 stories >200 pts since 10/21; PHP occupied 6 threads (1032/732/514/441/276/269 pts). **Chose 50182987 + 50188948** for comments. Not used: eMudhra CA keys (889), LiteLLM PyPI backdoor (511), Mistral Large 4 (320), Claude Duet (371), Qwen3-Coder persona study (240).
+- *Primary docs read in full* — PHP Foundation postmortem, php2shell.com, eliastaylor.com/noexploit, openai.com/index/patch-the-planet, patchtheplanet.org, latent.space/p/claude-mods.
+- *X via fxtwitter* — 11 posts fetched verbatim (OpenAI, NSACyber, itszn13, S1r1u5_ ×2, jachiam0, KelseyTuoc, emollick, bneyshabur, RichardSocher ×2). All resolved.
+- **Dropped:** ByteDance/Alibaba/Tencent >$35B Nvidia order — reuters.com returns a 288-byte captcha stub via r.jina.ai, and a web search could not confirm the $35B figure from any reachable source. Per the show's "real, verified URLs only" rule, dropped rather than hedged. Money Moves ran Mirendil + Flint instead.
+- *Dedup* — checked all `Source:` lines in 10/15–10/21. Nearest neighbours: 10/17 "faster than we can fix" (ECDSA + Postgres) and 10/21 (DeepInfer, AA length confound). PHP2Shell is a distinct event; I cut the AA/MLCR-AA length-confound item specifically because 10/21 already covered that finding on HealthBench.
+
+Saved one memory: reuters.com's captcha stub shape, plus the heuristic that for AI-finds-vulnerability stories the maintainer's postmortem — not the vendor disclosure page — is where the real story lives.
+=== 2026-10-22T02:40:22-07:00 done  jinglin-ai-pulse (exit 0) ===
