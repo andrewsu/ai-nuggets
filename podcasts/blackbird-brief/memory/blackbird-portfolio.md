@@ -383,7 +383,23 @@ https://www.nytimes.com/2026/09/20/science/nih-omb-grants-bhattacharya-vought.ht
 https://www.statnews.com/2026/09/21/trump-plan-for-commission-to-review-nih-grants-push-back/
 
 ### Spinout-structure comparators (how other people carve assets out)
-_Last update: 2026-10-15_
+_Last update: 2026-10-22_
+- **THE PIPE-FINANCED REVERSE MERGER IS NOW THE DOMINANT BACK DOOR, AND IT REWARDS EXACTLY THE ENTITY SHAPE WE ALREADY BUILD (added
+  2026-10-22 Portfolio Watch item 5; J.P. Morgan report published 2026-10-20).** **27 reverse mergers worth a combined $7.5B in the
+  first nine months of 2026** — more DEALS than any full year since 2021 (peak 34 in 2021, trough **12 in all of 2025**); deal value
+  still trails 2025's $9.8B and 2022's $8.4B with a quarter to run. **The structural change is the financing, not the count: 19 of the
+  27 carried a PIPE, against 3 of 12 last year.** **Paragon Labs** (Fairmount-backed builder) accounts for three — **Korsana Biosciences
+  $380M, Mentari Therapeutics $200M, Velaris Therapeutics $350M**. Same report: **upfront M&A value $138.9B across 113 deals in 9M26**
+  (vs $122.1B for all of 2025), **Lilly alone 13 transactions >$30B aggregate**, **Vertex/Crinetics $10B** the quarter's largest; and
+  **biopharma venture funding fell from $9.9B in Q2 to $6.7B in Q3**, though JPM still projects ~**$33B** for the year, the biggest
+  since 2021.
+  **⇒ READ (Emily Wilkinson + Maisha Rahman): a reverse merger is no longer a tired company finding a listing — it is a FINANCING EVENT
+  WITH A LISTING ATTACHED, with crossover investors underwriting the newco on day one. For a studio that incubates an asset to a defined
+  package, that is a materially different endgame from Series B → Series C → IPO, and it rewards a CLEAN SINGLE-ASSET ENTITY WITH AN
+  UNCOMPLICATED CAP TABLE — which is what our spinout structure already produces. ACTION: one hour on whether our standard carve-out
+  documents would survive PIPE diligence without rework.** **COUNTERWEIGHT IN THE SAME REPORT: venture funding fell by a third quarter
+  over quarter. The back door is crowded because the front door is narrower — do not read the trend as pure opportunity.** Source:
+  https://www.fiercebiotech.com/biotech/biotech-reverse-mergers-rebound-highest-level-2021-pipes-flood-markets
 - **THE GOING RATE FOR A PRECLINICAL CARVE-OUT INTO A FOUNDER-BUILT VEHICLE: ~3.5% OF HEADLINE VALUE PAID UP FRONT (added 2026-10-15 Portfolio Watch item 4; announced 2026-10-14 22:01 CEST).** **Lakefront Biotherapeutics NV (ex-Galapagos; Euronext & Nasdaq: LKFT) → Armed Cell Therapeutics BV (Belgium):** preclinical multi-targeting / armed CAR-T constructs (originally **AboundBio**, acquired by Galapagos 2022) for **€8M upfront + up to $230M milestones + a low-single-digit royalty.** Buyer formed by **Paul Stoffels** (ex-J&J CSO, ex-Galapagos CEO), **John Mellors**, **Peter Verhaeghe**; completes Lakefront's cell-therapy wind-down (pivoting to T-cell engagers). **⇒ READ (Maisha Rahman + Emily Wilkinson): second milestone-weighted carve-out in two days (cf. Agomab's €7M Origo milestone, 10-14). Almost nothing up front, essentially all value in milestones, and THE SELLER KEEPS A ROYALTY — the leg that survives if the buyer succeeds. Use the ratio when pricing the next Blackbird asset carve-out into a purpose-built vehicle.** Source: https://www.biospace.com/press-releases/lakefront-announces-sale-of-preclinical-car-t-programs-to-armed-cell-therapeutics
 - **A SHAPE MISSING FROM THIS PAGE — *RECOMBINATION* — AND A CLASS OF CAPITAL MISSING FROM OUR ROUNDS (added 2026-09-30, off Portfolio Watch
   item 3; launched 2026-09-29).** **ai3Bio** launched on a **$48M Series A led by UPMC Enterprises and Ziff Capital Partners** (Cockrell
@@ -754,7 +770,7 @@ projects. News touching any of them is portfolio-relevant on the investment,
 even where the company has no detail entry in this file yet.
 
 ### Current projects in early stage (pre-spinout)
-_Last update: 2026-10-14_
+_Last update: 2026-10-22_
 Non-opioid pain management · Parkinson's disease · chronic infections · COPD ·
 oncology surface targets · gout · cardiac fibrosis · VEXAS syndrome ·
 autoimmune diseases · cancer (Blackbird funded the **Intergalactic Center for
@@ -934,7 +950,21 @@ https://www.tedcomd.com/news-events/press-releases/2026/tedco-invests-750000-ast
     has no owner, no designation and no launch date — and the vendor selling the instruments on both sides of it is 40 miles
     away. Have the conversation.**
     **CANDID: these are POST-CULTURE panels — the ~1 h clock starts when the blood-culture bottle flags positive, not at the
-    draw. It compresses IDENTIFICATION, not detection.** Sources:
+    draw. It compresses IDENTIFICATION, not detection.**
+    **QIAGEN IS GOING PRIVATE, WHICH PUTS A CLOCK ON THE CONVERSATION ABOVE (announced 2026-10-21; 2026-10-22 Portfolio Watch
+    LEAD).** All-cash takeover by **EQT Private Equity** (EQT XI fund, with **ADIA** and **CPP Investments** as co-investors) at
+    **€46.50/share — a 40.3% premium** to the 2026-07-08 unaffected price, **~€10.8B enterprise value (~$12.1B incl. ~$1.1B net
+    debt)**. Both QIAGEN boards recommend unanimously; conditions include a 50%-plus-one-share minimum acceptance, an EGM vote on
+    the post-closing measures, and merger-control + foreign-investment clearances. **Closing expected mid-2027.** EQT: €354B AUM,
+    life-science track record incl. Parexel, Aldevron, Dako, HemoCue; BCA carries commitments on strategy, brands, operational
+    footprint, R&D and employee arrangements; QIAGEN keeps its name. CEO **Jonathan M. Pratt**, CFO **Roland Sackers**, Supervisory
+    Board chair **Stephen H. Rusckowski**; EQT's **Matteo Thun-Hohenstein** and **Michael Bauer**.
+    **⇒ READ (Eddie Cherok + Yixuan Qiu): a sponsor financing a $12B buyout prices every product line against cash generation, and an
+    exploratory partnership with a pre-company academic program slows down during an ~8-month regulatory close, it does not speed up.
+    The collaborator-or-competitor conversation should happen NOW, while the current commercial team still owns its roadmap, and the
+    ask should be small and concrete: can a QIAstat-Dx panel be made to read something other than susceptibility. CANDID: the release
+    is silent on the US footprint — do NOT infer anything from that silence — but QIAGEN's US HQ is in Germantown MD, and a Maryland
+    site of that size changing ownership is something Matt should hear from us before a regional event.** Sources:
     https://news.europawire.eu/qiagen-completes-u-s-qiastat-dx-bloodstream-infection-portfolio-with-fda-clearance-of-new-gram-negative-bacteria-and-amr-panel/eu-press-release/2026/09/28/13/31/55/181410/ ·
     https://clpmag.com/diagnostic-technologies/molecular-diagnostics/fda-clears-qiagen-qiastatdx-gram-negative-bcid-amr-panel/
 
@@ -2996,10 +3026,34 @@ _Last update: 2026-08-28_
   a trial ⇒ **1104health's lane remains open**. Comparable round size for the raise conversation, against an H1-2026 mean seed of $4.65M.
 
 ### NuGate Therapeutics — ALS/FTD antisense spinout ✅
-_Last update: 2026-10-20_
+_Last update: 2026-10-22_
 - **THE SANGAMO RATIO STOPS BEING A CAUTION AND BECOMES A PRICED TRANSACTION: A STRATEGIC BUYER PAID FULL PRICE FOR ONE DE-RISKED ASSET AND TOOK THE ENTIRE siRNA DELIVERY PLATFORM AS CHANGE (2026-10-20 Portfolio Watch LEAD; announced 2026-10-19).** **Merck KGaA → Silence Therapeutics: $20/share, 82% premium to the 30-day average of $10.99, $1.1B ENTERPRISE value / ~$1.3B equity value, close expected Q1 2027.** Asset = **divesiran**, Ph3 in polycythemia vera, siRNA silencing **TMPRSS6** → raises hepcidin → limits iron for erythropoiesis; **Ph2 SANRECO: 88% clinical response vs 19% placebo; 0.2 therapeutic blood draws/patient vs 2.1 through wk 36** (William Blair: "best-in-field"). Also acquired: four cardiometabolic programs led by zerlasiran (Ph2), the AstraZeneca collaboration, SLN312 (Ph1, rights recently returned by AZ). Governance colour: Silence had run under **interim** CEO Iain Ross since Dec 2025.
   **THE LOAD-BEARING QUOTE (William Blair): "The deal valuation does appear inexpensive considering Merck KGaA also gets the broader mRNAi GOLD siRNA platform as well. However, this deal takes execution risk off the table in an increasingly competitive space."**
   **⇒ READ (Matt Lawler + Emily Wilkinson + Hemaka Rajapakse): IF THE PLATFORM IS ONLY EVER A ROUNDING ERROR ON THE LEAD ASSET, THE LEAD ASSET HAS TO CARRY THE ROUND. Platform-broadening spend BEFORE lead-asset de-risking buys something this class of buyer has said it will not pay for. Narrow the next raise to the lead indication + the pre-IND package.** **⇒ PAIRS WITH THE 10-15 ARROWHEAD ARO-MAPT LEAD, which was about ROUTE; this is about STRUCTURE — who funds the delivery technology that makes the route possible. ANSWER: public markets fund delivery platforms EARLY (City Therapeutics put $70M of a $200M IPO into platform/preclinical, 10-16); ACQUIRERS DO NOT FUND THEM LATE. Same read applies to Aletira's SELEXON cassette, which must be proven THROUGH the hearing program, not alongside it.** Source: https://www.biospace.com/business/merck-kgaa-makes-noise-in-hematology-with-1-1b-silence-buy
+- **THE FIRST ANTISENSE OLIGONUCLEOTIDE APPROVED IN A CHRONIC VIRAL DISEASE, AND THE LABEL IS THE LESSON (added 2026-10-22 Portfolio
+  Watch item 2; FDA approval 2026-10-20).** **GSK's bepirovirsen, branded _Hibsago_**, approved for **chronic hepatitis B in combination
+  with nucleos(t)ide analogue reverse transcriptase inhibitor therapy**, under **Priority Review + Breakthrough Therapy designation**;
+  **licensed from Ionis in 2019**; already approved in Japan (Aug 2026). **Pooled B-Well 1 + B-Well 2: 19% functional cure (233/1,220) vs
+  0/614 placebo; 26% (200/768) vs 0/393 in the HBsAg <=1,000 IU/mL subgroup** (~45% of diagnosed CHB globally). Functional cure = HBV DNA
+  and HBsAg undetectable >=24 weeks AFTER stopping all treatment; **standard of care achieves <1% per year.** Exploratory: HBsAg driven to
+  <=100 IU/mL in **49%** overall / **62%** in the <=1,000 subgroup at week 72. **Six-month course, self-administration allowed after the
+  first dose.** **BOXED WARNING: on-treatment hepatic flares (ALT >20-40x ULN, some with hyperbilirubinemia, most within 12 weeks, resolving
+  on interruption) and thrombocytopenia**; contraindicated at initiation in acute hepatic impairment or cirrhosis.
+  **⇒ READ ONE — MODALITY PRECEDENT: an ASO produced a DURABLE, OFF-TREATMENT, BINARY outcome in a chronic disease and the agency approved
+  it on that basis. This is the best non-neurology precedent the class has, and the right citation for a generalist investor who still
+  hears "antisense" and thinks permanent infusion schedule.**
+  **⇒ READ TWO — THE LOAD-BEARING ONE (Hemaka Rajapakse): THE LABEL IS GATED ON A TEST. Indication = adults WITHOUT cirrhosis, on NrtI
+  therapy >=6 months, with suppressed HBV DNA and **HBsAg <=3,000 IU/mL as determined by an FDA-authorized assay** (Roche Elecsys HBsAg II
+  quant II authorized as the companion diagnostic). The drug did not get a broad label; it got a label shaped exactly like the population
+  where the mechanism works. THAT IS THE BARGAIN NuGate WILL BE OFFERED, and it is a direct argument against the "all forms of ALS and FTD"
+  framing — pick the population where the cryptic-splicing mechanism is the DOMINANT DRIVER, name it, and own it.**
+  **⇒ READ THREE: the boxed warning is the price of the one-course, off-treatment outcome — the flares are a mechanistic consequence of the
+  drug working. A NuGate development plan that promises durability must budget for an on-treatment tolerability finding, not assume one.**
+  **⇒ FRANCHISE NOTE: the same week, GSK terminated the Phase 1 of **GSK3965193** (PAPD5/PAPD7 inhibitor, running since 2022) and would not
+  say whether the asset is dead; with the TLR8 agonist GSK5251738 already scrapped, the only significant follow-up left is the Phase 2 HBV
+  siRNA **GSK5637608**. A lead approval is when the follow-ons get CUT, not when they get funded.** Sources:
+  https://us.gsk.com/en-us/media/press-releases/hibsago-bepirovirsen-approved-in-the-us-for-the-treatment-of-chronic-hepatitis-b-chb ·
+  https://www.fiercebiotech.com/biotech/amid-bepirovirsen-triumph-gsk-quietly-scraps-trial-next-gen-hep-b-therapy
 - **CHINA DRAFT BANS EXPORT OF *OWNERSHIP* OF siRNA AND CGT PROCESS PLATFORMS; ASSET LICENSING STAYS ON AUTOMATIC (2026-10-17 Portfolio Watch LEAD; MOFCOM+MOST Announcement No. 48, 2026-10-16, comments to 11-15; pre-export registration live on publication incl. pending deals).** Restricted: "completely novel target" discovery for siRNA/CGT. Excluded: out-licensing, outsourced R&D/manufacturing, single-drug processes. ⇒ Rona→Roche-style asset deals survive; a buyer who wants to OWN an extrahepatic siRNA engine loses Chinese sellers → relative-scarcity tailwind for clean-title US platform IP. Draft only. Source: https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_0a31a3c9ac404f7a9b0e917ce3412997.html
 - **THE PLATFORM-VS-ROUTE ARGUMENT NOW HAS A CNS DATA POINT ON THE OTHER SIDE: A *SUBCUTANEOUS* siRNA REACHED THE HUMAN BRAIN AND CUT TAU 73% FOR 90 DAYS AFTER THE LAST DOSE (added 2026-10-15 Portfolio Watch LEAD; announced 2026-10-14 07:30 ET).** **Arrowhead ARO-MAPT**, subcutaneous siRNA silencing **MAPT** (all six tau isoforms) in the CNS on the **TRiM** delivery platform. Phase 1/2a **AROMAPT-SC-1001 (NCT07221344)**, interim healthy-volunteer **CSF total tau at Day 105**: **2.1 mg/kg (D1/8/15) −40%; 6.4 mg/kg (D1/8/15) −69%; 12.8 mg/kg (D1/15) −73% mean, −85% max.** Day 105 = **90 days after the final dose** ⇒ q3mo dosing or less. Mostly Grade 1 TEAEs; **no serious TEAEs, deaths or discontinuations; explicitly no persistent anemia and no neurobehavioral AEs** (the transferrin-receptor-shuttle liabilities). Early-AD cohort data **2027**; regulatory discussions opened for **MAPT-FTD and PSP**. Stifel (James Condulis): knockdown "arguably look[s] better" than other BBB-crossing approaches; tau unproven as an AD target.
   **⇒ READ (Hemaka Rajapakse + Avi Khanna): the partner's comparison is now QUARTERLY LP vs QUARTERLY SC SHOT. It threatens ONE LEG, NOT BOTH — CSF tau reports brain/cortical neuronal production and says nothing about LOWER MOTOR NEURONS in the spinal cord, which is where intrathecal delivery is strongest. Weight the narrative toward the ALS (spinal) leg; the FTD (cortical) leg is the exposed one, and a systemic shuttle with broad brain distribution should win there.**
@@ -3321,7 +3375,7 @@ _Last update: 2026-10-20_
     https://www.stocktitan.net/news/IONS/zanvastrotm-zilganersen-approved-by-the-fda-as-the-first-and-only-dx7yljn2rua2.html
 
 ### Winnow Therapeutics — selective autoimmune T-cell engagers ✅
-_Last update: 2026-10-19_
+_Last update: 2026-10-22_
 - **THE ROUTE-BEATS-EFFECT-SIZE RULE GETS ITS CLEANEST CASE: AN APPROVAL ON A PIVOTAL PROGRAMME THAT WENT ONE-FOR-TWO, SOLD ON AT-HOME DOSING (2026-10-19 Portfolio Watch item 2; FDA approval 2026-10-16).** **Roche Enspryng (satralizumab)**, anti-IL-6R (soluble + membrane-bound, Chugai antibody-recycling), approved in **thyroid eye disease** — **first and only at-home SUBCUTANEOUS option, q4w**, second indication after NMOSD (2020). **SatraGO-1 (NCT05987423) MISSED its wk-24 primary; SatraGO-2 (NCT06106828) HIT: proptosis response 52.9% vs 23.4%, diplopia reduction 60.7% vs 25.8%**; n=258 across 19 countries, 1:1; approved on the totality after priority review. MOGAD sBLA decision Jan 2027.
   **Field: Amgen Tepezza IV · Amgen SC Tepezza 76.7% · Viridian Lumvoa IV · Sling linsitinib oral 52% ($123M Series C, Ph3 ORBIT).** TED ~155/100,000.
   **⇒ READ (Jon Robbins): TED is now the cleanest natural experiment on the board for ROUTE BEATING EFFECT SIZE in chronic autoimmunity.** A TCE is the most burdensome route available — **Winnow cannot win on convenience and must not try. Differentiate on DEPTH + DURABILITY: one course, durable drug-free remission** — the one claim a q4w injection or daily pill structurally cannot make, and directly testable unlike "antigen-specific."
@@ -3720,6 +3774,23 @@ _Last update: 2026-10-19_
   convenience and price run against Winnow and the TPP must say so.** Sources:
   https://www.biospace.com/fda/priovant-nabs-first-fda-approval-for-targeted-tablet-in-dermatomyositis ·
   https://www.biopharmadive.com/news/fda-priovant-pfizer-lisraya-brepocitinib-approved/829021/
+  - **THE COMPARATOR COLUMN JUST GOT MUCH HARDER, AND IT RESOLVES WHICH ROWS WINNOW CAN ACTUALLY WIN (added 2026-10-22 Portfolio
+    Watch item 4; announced 2026-10-21).** **Roivant/Priovant Phase 3 CLARITY-1 (n=166) and CLARITY-2 (n=204), 371 patients total,
+    non-infectious uveitis** — 1:1 brepocitinib **45 mg once daily** vs placebo over a 48-week double-masked period, all patients on
+    a mandatory 8-week oral corticosteroid course (60 mg/day × 2 weeks, 6-week taper to zero), primary = **time to treatment failure
+    week 6 → week 48**. **PRIMARY MET IN BOTH: median time to failure >48 weeks vs ~12 weeks on placebo, HR 0.27 (CLARITY-1) and
+    0.22 (CLARITY-2), p<0.0001 each.** Week-48 cumulative failure **35.4% vs 78.7%** and **32.4% vs 77.8%**; **steroid-free quiescence
+    in both eyes 58.8%/64.4% vs 19.8%/19.4% (pooled 62% vs 20%)**; macular-edema resolution pooled **42% vs 4.8%**; benefit consistent
+    across uveitis types and prior-TNF-inhibitor experience. **3% discontinued for adverse events, no new safety signals. sNDA in
+    1H CY2027; investor day 2026-12-09.**
+    **⇒ READ (Jon Robbins + Hemaka Rajapakse): an UNSELECTIVE oral TYK2/JAK1 inhibitor just posted HR 0.22 in a T-cell-mediated
+    autoimmune disease with a clean 48-week safety table. WINNOW CANNOT WIN A 48-WEEK EFFICACY COMPARISON AGAINST THAT AND SHOULD
+    STOP TRYING. The two rows that remain winnable are the two already on the TPP — DEPTH (what the antigen-specific engager does
+    NOT delete, with the assay that proves it) and DURABILITY (one course, drug-free remission vs a daily pill with a boxed warning,
+    forever). CONCRETE CONSEQUENCE: this is the argument for putting an OFF-TREATMENT DURABILITY ARM in the development plan NOW
+    rather than deferring it to a future study — the head-to-head Winnow loses is at week 48 on drug; the comparison it could win is
+    after both drugs stop.** Source:
+    https://www.stocktitan.net/news/ROIV/roivant-and-priovant-announce-positive-results-in-clarity-1-and-6122w291k7vn.html
 - **SELECTIVITY IS NOW AN APPROVABLE AND MARKETED AXIS — the other half of the TPP row (added 2026-08-30 Portfolio Watch item 2;
   event 2026-08-24).** **FDA approved IMAAVY (nipocalimab-aahu), Johnson & Johnson**, as the **first-ever treatment for warm autoimmune haemolytic
   anaemia (wAIHA)** in adults and children ≥12 currently/previously on corticosteroids. Mechanism: **immunoselective FcRn (neonatal Fc receptor)
@@ -5890,6 +5961,24 @@ _Last update: 2026-09-13_
   decides financeable-program vs very-good-paper. Thirty-minute conversation.** This is the same comparator-drift discipline logged
   under NuGate: power against the standard of care that will exist AT READOUT. Source:
   https://www.biospace.com/drug-development/novartis-rhapsido-cuts-ms-progression-in-phase-3-trial-teeing-up-roche-battle
+- **THE ADD-ON READOUT QUESTION IS NOW ANSWERED IN THE NEGATIVE FOR LESION MEASURES — A BTK INHIBITOR HAS TAKEN THE CHRONIC-ACTIVE-LESION
+  COMPARTMENT (added 2026-10-22 Portfolio Watch item 3; presented 2026-10-21 at ACTRIMS–ECTRIMS / MSToronto2026, Toronto, 10-21→10-23).**
+  Roche late-breaking oral **#O137** (Oh J et al.): **fenebrutinib reduced slowly expanding lesion (SEL) volume by up to 30% (p<0.001)**
+  in RMS over **96 weeks** (FENhance 1 & 2) and PPMS over **120 weeks** (FENtrepid), and cut **paramagnetic rim lesion (PRL) accumulation
+  by 62% (p=0.001)** in RMS, **versus active comparators** — Roche's claim, and it looks right, is that this is **the first prospective
+  demonstration of a therapeutic effect on chronic active lesions in a Phase 3 trial**. Supporting package (oral #O089, poster #P1434):
+  **ARR −55%** (p<0.001) over 96 weeks, **annual total brain volume loss −23%** (p<0.001), **12-week composite CDP −16%** (p=0.04),
+  **NEDA-3 in 75%** of pooled RMS patients at ~2 years (a 70% reduction vs comparator). **Filed end-September 2026; FDA has accepted the
+  filing; Roche guides to launch in 2027.** Teresa Graham: analyst consensus ~CHF 1B peak sales, and Roche is more bullish. Guggenheim:
+  CDP is "a potential swing factor," and three experts said CDP evidence could move a BTK inhibitor ahead of an anti-CD20 in the pathway.
+  **⇒ READ (Avi Khanna + Eddie Cherok): the smoldering/rim compartment was the territory a remyelination agent owned by default, and a
+  pill about to be approved now has prospective Phase 3 evidence of moving it. This does NOT kill the Kornberg thesis — nothing here
+  repairs myelin — but it CLOSES the lesion-measure option for the add-on readout. The readout has to be MYELIN CONTENT or a function
+  measure that myelin explains. Calabresi runs these trials and knows which is financeable; that is the 30-minute conversation, now with
+  a specific question attached.** **CANDID, from the preprint's own COI: Kornberg takes consulting fees from Genentech (= Roche) and TG
+  Therapeutics. Not a conflict for us, but he has already heard the BTK argument from the other side — do not walk in assuming this is
+  news to him.** Sources: https://www.roche.com/media/releases/med-cor-2026-10-21 ·
+  https://www.fiercebiotech.com/biotech/roche-builds-blockbuster-btk-case-multiple-sclerosis-fda-decision-approaches
 
 ### Doetzlhofer lab ZBTB20 / midkine–PTPRZ1 cochlear supporting-cell regeneration (JHU SOM Solomon H. Snyder Neuroscience + Otolaryngology–HNS / Center for Hearing and Balance) — active sourcing lead + 2026-08-23 Radar LEAD + direct Aletira payload adjacency ⚠
 - **Lab / people:** **Angelika Doetzlhofer, Ph.D.** (senior). First author **Charles T. Morgan** (NIDCD F31 fellow); **Zia Ur Rehman** (now UTMB Otolaryngology). Zbtb20-floxed mice from **Ulrich Mueller (JHU SOM)**. Lab's prior line of work: **LIN28B / TRIM71 / HMGA2** reprogramming of cochlear supporting cells.

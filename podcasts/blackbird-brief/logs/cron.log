@@ -3822,3 +3822,28 @@ Today's Portfolio Watch script is written. `SKIP_TTS=1` was set, so this run mad
 
 I also added a note to my memory file on finding same-day 8-K press releases through EDGAR's full-text search.
 === 2026-10-21T02:15:44-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-22T02:10:13-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` was confirmed as the first call of the run, so no TTS, no R2 publish, no `feed.xml` edit, and no commit — stubs only, for `publish_pending.py` to pick up.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-10-22-portfolio-watch.md` — 1,831 words, ≈7.6 min at this show's observed ~0.25 s/word, inside the 6–9 min band
+- `…2026-10-22-portfolio-watch.rss-item.xml` — validated as XML, `__LENGTH__`/`__DURATION__` placeholders in place
+- `…2026-10-22-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — 7 keys appended (now 108 episodes / 631 match forms)
+- `memory/blackbird-portfolio.md` — four entries revised in place (chronic-infections QIAGEN bullet, Kornberg LXR, Winnow Lisraya column, NuGate ASO precedent, spinout-structure comparators); stamps bumped, no dated journal appended
+
+**Episode — Portfolio Watch, five items**
+1. **LEAD** — EQT takes QIAGEN private at €46.50/share (~$12.1B EV, close mid-2027). Puts a clock on the 10-01 "collaborator-or-competitor" action with the vendor selling the instruments on both sides of the chronic-infections thesis; US HQ in Germantown, MD.
+2. FDA approves bepirovirsen (Hibsago) 10-20 — first ASO in hep B, 19% functional cure vs 0%, companion-test-gated label. The label shape is the argument against NuGate's "all forms of ALS and FTD" framing.
+3. Roche fenebrutinib at ACTRIMS–ECTRIMS: SEL volume −30%, PRL accumulation −62%. Closes the lesion-measure option for the Kornberg remyelination add-on readout.
+4. Brepocitinib CLARITY-1/2 in uveitis, HR 0.22–0.27 — moves Winnow's fight to depth and durability, arguing for an off-treatment arm now.
+5. J.P. Morgan: 27 reverse mergers, 19 with PIPEs — our own exit-path structure.
+
+**Candidate funnel**
+- Sources scanned: Fierce Biotech index (jina, 23 KB — article bodies readable today, unlike the 10-19 Cloudflare block) · Endpoints index (41 KB; **all article bodies paywalled to byline + timestamp**, so every Endpoints item was re-sourced from a primary) · BioSpace press-releases (jina; raw HTML is JS-rendered and yields nothing) · GEN RSS · BioBuzz (all-Philadelphia today, zero Maryland/on-thesis) · targeted web search on 4 named portfolio companies.
+- Source failures: Fierce Pharma index 403 via jina; Fierce RSS 403 to curl; BioSpace `/rss/news` 404; `biospace.com/news` via jina returned a 658-byte stub. Two Fierce article fetches returned 561/227-byte jina proxy errors and succeeded on retry after a 20s pause. None aborted the run.
+- Dedup: 14 candidates → 14 fresh by key/title against 624 ledger forms. Final roster then re-checked by **asset name** against `scripts/2026-10-*`: **Nouscom/NOUS-209 dropped** (shipped 10-19) and **Estuary dropped** (shipped 10-17 and 10-20) — both would have passed the key filter.
+- Shortlist not used: Pfizer ends CXCR5 PF-06835375 in ITP (autoimmune, but a business-decision termination with no data) · Merck KGaA/Silence $1.3B (Silence covered 10-20 and 10-21) · Rezera NLRP3 IPO filing (Parkinson's theme, filing only) · Astellas/AI Proteins $400M · Lycia $228M IPO · Scynexis SCY-247 at IDWeek (pipeline presentation, no new data) · TG Therapeutics MSToronto2026 (no portfolio line) · RiboX circular RNA first-in-human · OMass $310M.
+- Quiet in-window on Aletira/SELEXON, Clasp, Artemyx, DELFI, Biolinco, 1104health, Georgiamune, Adventris and GPR52/Lieber — all five items reach the portfolio by competitive read-across.
+- Calendar carried forward: Nouscom ESMO abstract 3438O on 10-25 (Adventris read-across); Operation TrialBlazer pilot application closes 10-30, still needing a go/no-go and an institution.
+=== 2026-10-22T02:26:47-07:00 done  blackbird-brief (exit 0) ===
