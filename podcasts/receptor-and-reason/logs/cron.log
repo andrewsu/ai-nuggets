@@ -5874,3 +5874,47 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE.md this run produced **stubs only
 
 One thing worth flagging: two of the five preprints logged as "never rendered" yesterday came back clean today, which confirms yesterday's suspicion that they were collateral damage from running two bioRxiv fetch workers rather than genuine render lag.
 === 2026-10-21T03:14:35-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-22T02:50:14-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE I wrote script + two stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Output**
+- `podcasts/receptor-and-reason/scripts/2026-10-22-receptor-and-reason.md` — 11 items, 3,355 spoken words (~18.5 min)
+- `.rss-item.xml` (validates with the itunes namespace; 0 bare ampersands; `__LENGTH__`/`__DURATION__` placeholders intact)
+- `.commit-msg`
+- Ledger appended: 152 episodes, 1,582 items
+
+**Spine:** "read the recipe, not the label" — construct validity, one level in from yesterday's reference-standard thread.
+
+**Candidate funnel**
+- bioRxiv details API — 1,617 items scanned over 8 days (day-by-day; re-filtered on DOI date, not the version-bump `date`); 48 in-window relevant; **2 picked**
+- medRxiv details API — 424 scanned; 112 relevant; **5 picked**; full text 8/8 via jina `.full.pdf`
+- arXiv — shared cache, 500 entries covering only 10-20/10-21 (earlier days swept on prior runs); 61 bio+agentic; **4 picked** (2 carryover from 10-19, already read)
+- Nature RSS → Crossref — `npp` worked today (16.6 KB) after being empty yesterday; `mp`/`neuro`/`nbt` returned 150-byte empties; 1 in-window npp item, already shipped
+- Crossref by ISSN across 11 Tier-1/3 journals — all reachable, but Elsevier/Wiley items unreadable, so funnel-only
+- **Source failure:** `academic.oup.com` is Cloudflare-CAPTCHA'd even through r.jina.ai — cost `bib/bbag583`, a dead-on-target agentic-AI drug-discovery review. Logged as a new memory.
+- **Source degradation:** bioRxiv returned the 54-word Cloudflare 429 on 7 of 9 fetches even at one worker / 25s spacing. Six on-target preprints deferred to 10-23, including a brain-penetrant CHI3L1 inhibitor and an LLM-catches-statistical-errors paper.
+
+**Dedup:** batch filter 33 → 26 (7 repeats, including the inClinico Agent preprint and the CBD mismatch-negativity paper aired 10-20); final-roster re-gate 11 → 11 clean; concept greps on rs6971 / DAGL / GDF15 / dyslexia / LOGOS / ProteinGeoBench all clear (the one GDF15 hit is June's APOE proteomics item — different work).
+
+**Shortlist, chosen marked ✓**
+
+✓ Neurotransmitter PGS × SSRI response (medRxiv 26365850) — LEAD
+✓ TSPO rs6971 binder genotype in FM/ME-CFS/MS (26365953)
+✓ Dyslexia liability → PET receptor atlas (26365830)
+✓ DBS-OCD effective connectivity, n=3 (26365556)
+✓ Lithium → corticopapillary Gdf15 → polyuria (biorxiv 759669)
+✓ Liposomal KT109 / DAGLβ / AMPK (biorxiv 758837)
+✓ LLM psychotherapy fidelity, CTS-Psy (arXiv 2610.28772)
+✓ Decision language models as clinical judges (2610.28826)
+✓ Real PMIDs, Wrong Papers (2610.29812)
+✓ ProteinGeoBench (2610.26829)
+✓ LOGOS dosage regimen design (26365797)
+– Pharmacovigilance multimodal AI (26365969) — fetched, unread, deferred
+– Whole-blood transcriptomic PD model (26365876) — fetched, unread, deferred
+– PBPK rosuvastatin × ticagrelor / ABCG2 (26365646) — fetched, unread, deferred
+– Multi-agent proton radiotherapy planning (2610.29010) — fetched, unread, deferred
+– LG-Bench (2610.26787) — dropped on content (its novel metric is accuracy² to 0.39 pp)
+– Gut microbiome precedes AD (26365677) — dropped on content
+– Agentic AI in drug discovery review (bib/bbag583) — unreadable, OUP block
+– CHI3L1 inhibitor, LLM statistical review, endocannabinoid pain, perturbation-OOD, Cajal-Retzius, AlphaFold-3 prioritization — all Cloudflare 54w, deferred to 10-23
+=== 2026-10-22T03:07:43-07:00 done  receptor-and-reason (exit 0) ===
