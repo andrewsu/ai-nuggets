@@ -5771,3 +5771,35 @@ I've written both Calibr episodes for 2026-10-21. `SKIP_TTS=1` was set, so I onl
 
 I also added a line to the memory note on news-source access: readout 8-Ks often include the investor deck, and its patient-disposition slide is worth reading.
 === 2026-10-21T02:27:01-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-22T02:20:13-07:00 start calibr-briefing ===
+Both episodes are staged. `SKIP_TTS=1`, so I stopped at the stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-10-22-pharma-headlines.txt` (1,186 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-10-22-gsk-ionis-bepirovirsen-hepb-label-spotlight.txt` (1,452 words) + `.rss-item.xml` + `.commit-msg`
+
+Both stub XMLs parse; both `<link>` URLs return 200.
+
+**Spotlight angle.** The B-Well efficacy data were already covered in the 2026-05-28 headlines, so re-running "19% functional cure" would have been a re-ship. The genuinely new material is the *label*: a boxed warning for serious liver reactions and thrombocytopenia that GSK's own release never mentions, weekly-to-biweekly lab monitoring, a six-gate eligibility funnel, and a same-day Roche companion diagnostic requiring quantitative HBsAg titers that US community practices don't routinely order. That is where the roughly fourfold peak-sales spread lives — Jefferies ~$3B, GSK >£2B, BMO $659M — none of which is a disagreement about whether the drug works.
+
+### Candidate funnel
+
+| Source | Scanned | Survived |
+|---|---|---|
+| BioSpace `all-news.rss` | 20 | 7 |
+| Endpoints `feed/` | 24 | 10 |
+| BioPharma Dive `feeds/news/` | 10 | 4 |
+| Fierce Biotech `rss/xml` | 0 items returned — **source failed**, proceeded without it (2nd straight run) | — |
+
+Shortlist after dedup against 10-20 and 10-21 (every item grepped against all prior calibr scripts):
+- **[SPOTLIGHT + headline 1]** FDA approves GSK/Ionis Hibsago (bepirovirsen) for chronic hep B — fda.gov press announcement + GSK PR PDF
+- **[CHOSEN 2]** Roivant/Priovant brepocitinib sweeps Clarity-1/-2 in non-infectious uveitis — biopharmadive.com/news/roivant-brepocitinib-uveitis-study-results/833569/
+- **[CHOSEN 3]** OpenAI acquires Orchestra Bio into Rosalind — openai.com/index/openai-to-acquire-orchestra-bio/ ; Alcon/Neurotech $550M
+- **[CHOSEN 4]** Tezspire CROSSING Phase 3 in eosinophilic esophagitis at UEG Week — astrazeneca.com + amgen.com
+- **[CHOSEN 5]** Treasury tougher on China deals + Locust Walk licensing-vs-M&A data — biospace.com/business/chinas-licensing-deals-soar...
+- **[CHOSEN 6]** Rezera (ex-NodThera) files $100M NLRP3 IPO — endpoints.news + Renaissance Capital
+- **[CHOSEN 7, quick]** retatrutide OSA in NEJM/ESRS; RiboX circular RNA FIH; CSL hires Waterhouse; FDA/Baxter GMP
+- *Dropped:* ESMO sac-TMT "Goldilocks" feature (held for the week-ahead — ESMO opens Friday); Novo CagriSema, ICER, Rapport, Lycia, Arcus (all shipped 10-21); Pfizer layoffs, H-1B hiring, 40-Under-40 (not on-focus)
+
+One correction caught in verification: BioSpace described Hibsago as dosed "every six months," which contradicts the FDA and GSK primaries — it is a **weekly** subcutaneous injection for up to 24 weeks. The scripts use the primary.
+=== 2026-10-22T02:30:27-07:00 done  calibr-briefing (exit 0) ===
