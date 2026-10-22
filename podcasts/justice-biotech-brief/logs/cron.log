@@ -4408,3 +4408,33 @@ Substantive shortlist:
 
 The background retry loop finished: all four attempts on the two deferred preprints (`…760040` TSHR, `…758862` stealth CAR-Tregs) returned the 17-byte 429, so both remain deferred as logged. No change to the episode — the published pick is unaffected, and the run stands as summarized above.
 === 2026-10-21T02:48:46-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-22T02:40:13-07:00 start justice-biotech-brief ===
+Episode written and staged as stubs. `SKIP_TTS=1` was confirmed as the **first call** of the run, so no TTS, no R2 publish, no `feed.xml` edit, and no commit — the orchestrator handles those after batch TTS.
+
+**Today's pick:** Bezafibrate / the PRDM1–PGC1α axis in CAR T cells (Justin Kline's lab, University of Chicago, bioRxiv `10.64898/2026.10.15.759372`, posted 10-21). Full text read before drafting — plain `curl` with a Safari UA on `.full.pdf` returned 6.5 MB first try, `mutool` gave 99 KB of clean text; placeholder-grep clean.
+
+Files written:
+- `podcasts/justice-biotech-brief/scripts/2026-10-22-bezafibrate-prdm1-pgc1a-axis-car-t-preconditioning.md` (989 spoken words, ~5.4 min)
+- `….rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `….commit-msg`
+
+## Candidate funnel
+
+**bioRxiv + medRxiv** (day-by-day 10-20/21/22): 740 unique DOI+version records (bioRxiv 237/271/46, medRxiv 71/115/0 — 10-22 partial at 02:40, normal), 16 v1-in-window keyword hits. Substantive shortlist:
+
+- **CHOSEN** — Harnessing the PRDM1–PGC1A axis to enhance CAR T cell efficacy — https://www.biorxiv.org/content/10.64898/2026.10.15.759372v1
+- Targeting poorly differentiated thyroid cancer with bispecifics + CAR T from the anti-TSHR autoantibody repertoire (`…760040`) — **deferred, day 2**: 17-byte 429 on `.full.pdf` again, and r.jina.ai returned 211 bytes (proxy error, not a render verdict)
+- Stealth CAR-Tregs that evade CD3-antibody therapy (`…758862`) — **deferred, day 2**: same 429, jina 260 bytes
+- Radiation-induced collagen I/III driving immunosuppression in recurrent GBM (`…759139`) — on-beat but a TME-biology paper, passed
+- RORγ inverse agonist enhancing checkpoint blockade in HCC (`…758999`) — preclinical combo, passed
+- False positives worth naming: "antibody-drug conjugate" matched an LZK-inhibitor paper's discussion; "JAK" matched a neonatal-sepsis pig study.
+
+**News** (BioSpace section pages, Endpoints index via jina, Fierce Biotech `/biotech` + `/clinical-data` via jina): nothing beat the preprint — ESMO Congress opens tomorrow (10-23, Madrid), so the wire is pre-congress positioning with no data.
+- Brepocitinib CLARITY-1/-2 Phase 3 win in non-infectious uveitis (Roivant/Priovant, 10-21) — strongest live news item, press release read in full with real tables (HR 0.27/0.22, treatment failure 35.4%/32.4% vs 78.7%/77.8%, 62% vs 20% pooled steroid-free quiescence, n=371). **Passed on editorial grounds, not dedup**: brepocitinib shipped 08-28 and uveitis was the 08-19 subject, and the preprint carried more method intuition. Logged as a live backup.
+- AstraZeneca–Summit $2B ivonescimab equity/collaboration — out of window (announced late Sept, closed 10-05); the BioSpace headline is a weekly roundup.
+- Roche CEO on the Poseida buyout, Pfizer ending an autoimmune Phase 2 — comment/decision pieces, no data.
+
+**Dedup gate applied to the final roster** (not just the preprint sweep): grepped the show's scripts for `PRDM1|BLIMP|bezafibrate|PGC1|PGC-1` (clean) and for `brepocitinib|uveitis|Priovant|Roivant` (two prior hits, which is why that item was passed over).
+
+**Source failures / access notes:** NIH news-releases still 403s from this host; ARPA-H newest item 10-19 and off-beat; NSF nothing on-beat. BioSpace `/clinical-trials` is a 107 KB "Page not found" shell. Fierce section pages render undated via jina and carry items up to 9 days old — resolved `Published Time:` per article before shortlisting (the BioNTech mRNA-vaccine Phase 3 failure looked fresh but is 10-13). The bioRxiv sweep had to be re-run once: a zero-record day returns a `messages` object with no `interval`/`total`, which raised a `KeyError` and discarded everything fetched; guarded and noted in memory.
+=== 2026-10-22T02:50:59-07:00 done  justice-biotech-brief (exit 0) ===
