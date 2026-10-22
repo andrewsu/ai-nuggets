@@ -5733,3 +5733,55 @@ The delayed Chaperone retry confirms the deferral — direct curl still a 17-byt
 
 Today's run stands as reported: script plus the two SKIP_TTS stubs written for `2026-10-21-multi-agent-collaboration-hallucination`, no TTS, publish, feed edit, or commit.
 === 2026-10-21T02:08:04-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-22T02:00:13-07:00 start biomedical-agentic-ai ===
+I need to stop here rather than retry.
+
+My previous response was halted by a safety classifier before it completed. I don't know which part triggered it, and the instruction I've been given is explicit: don't reproduce that content, even reworded. Re-running the same episode production task would very likely regenerate the same material.
+
+What I can tell you about the state of things:
+
+- No tool calls from the stopped response completed, so nothing was written, published, or committed in that attempt.
+- The working tree still shows the pre-existing changes from the git status snapshot — modified cron logs, the receptor-and-reason shipped ledger, and the untracked 2026-10-21 receptor-and-reason script artifacts. None of that is from this run.
+
+A note on the automation: my memory records a prior same-morning safety-classifier false-stop with no output on two automated attempts (logged in the justice show run notes, 10-20). This looks like the same failure mode. If the orchestrator retries this slug, it will probably stop the same way again, and `cron.log` will record it as `no_output` rather than as a classifier halt — which is misleading when you read the logs later.
+
+If you want to proceed, some options:
+
+1. **Tell me which part to skip or recast.** If you have a guess at what tripped it — a particular paper, a phrasing in the brief, something in PROMPT.md — I can produce the episode while avoiding that specific ground.
+2. **Narrow the task.** Have me do only the discovery sweep and hand you a candidate roster, with no drafting. The stop happened during full episode production; a reduced scope may well pass.
+3. **Run it manually in a fresh session.** A clean context sometimes clears this, since the classifier sees the whole conversation.
+
+I'd suggest option 2 as the next step — it gets concrete work done and tells us whether the problem is in the source material or in the drafted script.
+=== 2026-10-22T02:00:30-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-22T02:00:30-07:00 no usable output for biomedical-agentic-ai; retrying in 180s ===
+=== 2026-10-22T02:03:30-07:00 start biomedical-agentic-ai (retry 1) ===
+I need to stop here rather than retry.
+
+My previous response was halted by a safety classifier, and the instructions are explicit that I shouldn't reproduce that content, even reworded. I don't have visibility into which part triggered it, so re-running the same episode-production workflow from the top risks walking straight back into it.
+
+What I'd suggest:
+
+1. **Check the show's log** — `podcasts/biomedical-agentic-ai/logs/cron.log` may show how far the run got before the stop. Worth noting that per your memory, a false "no usable output; retrying" can appear even after a successful publish, so check `git log` before assuming nothing shipped.
+2. **Look for partial artifacts** — if a script stub or `.md` was written to `podcasts/biomedical-agentic-ai/scripts/` for today, the run got partway and may be salvageable by hand.
+3. **Tell me what you'd like me to do differently** — e.g. have me run only the discovery/dedup sweep and hand you a shortlist, or draft from a specific paper you pick, rather than running the full pipeline end to end.
+
+One relevant precedent from your notes: the receptor-and-reason 10-20 run logged a same-morning safety-classifier false-stop with no output on two automated attempts. If that's recurring across shows, it may be worth looking at whether something in the shared PIPELINE.md or a show PROMPT.md is reliably tripping it, rather than treating each stop as a one-off.
+
+How would you like to proceed?
+=== 2026-10-22T02:03:48-07:00 done  biomedical-agentic-ai (exit 0) (retry 1) ===
+=== 2026-10-22T02:03:48-07:00 no usable output for biomedical-agentic-ai; retrying in 180s ===
+=== 2026-10-22T02:06:48-07:00 start biomedical-agentic-ai (retry 2, --model claude-sonnet-5) ===
+Everything's in place correctly per SKIP_TTS mode: script + two stubs written, no TTS/publish/feed-edit/commit. Here's the final run summary for the log.
+
+Episode: **MMedAgent-Plus — the medical agent that plans better once it can see what just happened** (arXiv 2610.27233, posted 2026-10-19, Duke/Stanford-led, extends their own 2024 MMedAgent). Full text read in full via PDF→mutool (20k words). Novelty-checked clean. Spoken script: 841 words.
+
+**Pick rationale:** A planner orchestrates 18 untouched specialist models across 12 medical tasks and 8 modalities rather than training one generalist model. The finding worth keeping is that accuracy depends on *when* the planner gets to look, not how many steps the workflow needs — tool-call accuracy is 98.1% when it sees intermediate results before committing to the next step, but drops to 80.7% when forced to plan the whole sequence upfront, because overlapping-capability tools are only disambiguated by what the first call returns. Two more failure modes layer on: silently skipping implicit unstated steps, and a separate accuracy loss (0.69→0.51) in translating a correctly-invoked specialist's output into the final answer — a three-way error decomposition most medical-agent papers never isolate.
+
+## Candidate funnel
+
+- **bioRxiv** — details API day-by-day 10-19→10-22, 839 records, no 429s on discovery. 82 keyword hits. Top deferral **Chaperone** (agentic protein-design harness, IPD/HHMI UW) retested — still abstract-only for a 3rd straight day (render lag, not a block). Also retested and still stuck: LongVerse, PigGPA, MetaKG, ChEBI-N, ProtTale, NeuroPilot. New surfaced candidates checked and still render-lagged: hvantk (agentic multi-omics variant annotation), a CRISPR-outbreak-agent paper, GENOAR, an immune-world-model/peptide-vaccine paper, and GEO-BERT (dataset retrieval from GEO — dead-center for the open-data beat, worth persistent retesting).
+- **arXiv** — shared cache capped at 500 (covered only 10-20/10-21); supplemented with two live paginated calls covering 10-18→10-21 cleanly (1,000 unique entries, 82 bio+agentic hits after strict filtering). Runners-up, both full-text read and held: **"Real PMIDs, Wrong Papers"** (2610.29812 — closed-book models cite real-but-irrelevant PMIDs; deliberately held back, too close to Munin 10-19 and PolyGraph 10-14) and **ProteinGeoBench** (2610.26829 — agents fluent at metadata lookup, unreliable at numeric geometry).
+- **PubMed** — 511 hits via esearch, not individually triaged (bioRxiv+arXiv already produced a strong, fully-readable pick). **ChemRxiv / news / funder pages** — not swept this run. Both noted as recall gaps for the audit trail.
+
+**Chosen:** MMedAgent-Plus (arXiv 2610.27233).
+=== 2026-10-22T02:19:28-07:00 done  biomedical-agentic-ai (exit 0) (retry 2, --model claude-sonnet-5) ===
