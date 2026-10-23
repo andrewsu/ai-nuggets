@@ -9,9 +9,12 @@
 #
 # Phase 2: rsync the new scripts to Garibaldi and submit a single
 #   tts-batch.slurm job that brings up vLLM, synthesizes every pending
-#   script in parallel, and tears the server back down. Outer timeout 60
-#   min — if Garibaldi can't deliver in that window, abort and let Phase
-#   2.5 (Mistral fallback inside publish_pending.py) carry the night.
+#   script in parallel, and tears the server back down. Outer timeout 20 h,
+#   counted from submission so it includes Slurm queue wait (a busy GPU
+#   queue left the job pending through the whole old 60-min window on
+#   10-21 and 10-23). 20 h still ends before the next 02:00 cron; if
+#   Garibaldi can't deliver by then, abort and let Phase 2.5 (Mistral
+#   fallback inside publish_pending.py) carry the night.
 #
 # Phase 3: publish_pending.py runs the Mistral gap-fill (Phase 2.5), then
 #   per show: render the RSS-item stub with real mp3 length/duration,
@@ -26,7 +29,7 @@
 #                          publish + commit inline as before, single push
 #                          at the end
 #   PHASE2_TIMEOUT_SECS=N  outer cap on `ssh garibaldi sbatch --wait`
-#                          (default 3600 = 60 min)
+#                          (default 72000 = 20 h; includes queue wait)
 #   MAX_RESET_WAIT_SECS=N  on a session-limit hit, the runner parses the
 #                          reset time from the CLI's error message and
 #                          sleeps until then (+60s buffer). If the reset is
@@ -76,7 +79,7 @@ REPO=/home/asu/Science/ai-nuggets
 CLAUDE=/home/asu/.local/bin/claude
 STAGGER_SECONDS=${STAGGER_SECONDS:-600}
 SHOWS_LIMIT=${SHOWS_LIMIT:-0}
-PHASE2_TIMEOUT_SECS=${PHASE2_TIMEOUT_SECS:-3600}
+PHASE2_TIMEOUT_SECS=${PHASE2_TIMEOUT_SECS:-72000}
 MAX_RESET_WAIT_SECS=${MAX_RESET_WAIT_SECS:-3600}
 CATCHUP_BUFFER_SECS=${CATCHUP_BUFFER_SECS:-300}
 CATCHUP_MAX_WAIT_SECS=${CATCHUP_MAX_WAIT_SECS:-21600}
