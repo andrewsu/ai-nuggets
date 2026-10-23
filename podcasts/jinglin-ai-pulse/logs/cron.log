@@ -4190,3 +4190,39 @@ Files written:
 
 Saved one memory: reuters.com's captcha stub shape, plus the heuristic that for AI-finds-vulnerability stories the maintainer's postmortem — not the vendor disclosure page — is where the real story lives.
 === 2026-10-22T02:40:22-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-23T02:30:12-07:00 start jinglin-ai-pulse ===
+I've written today's Ollie's AI Pulse episode, "checked against what," as `podcasts/jinglin-ai-pulse/scripts/2026-10-23-checked-against-what.md`. It has 2,177 spoken words, just under the 2,200 maximum. `SKIP_TTS=1` was set, so I didn't generate audio, publish, edit `feed.xml` or commit. I wrote the `.rss-item.xml` stub (with `__LENGTH__`/`__DURATION__` placeholders) and the `.commit-msg` stub next to the script, and the orchestrator handles the rest. The stub item parses as valid XML.
+
+The episode asks what fast machine output (proofs, model answers, diagnoses, research leads) actually gets checked against:
+- **Lead story:** Anthropic and Theorem had Claude prove that 239 fuzz-test entry points in 123 open-source libraries never crash on any input under 64 MB. Trust now rests on the chip model, the theorem statement and the proof checker. Hacker News pushback and co-author Jason Gross's argument that verification is limited by scale are included.
+- **Model sameness:** twelve models gave the same "controversial take on humans" in 29 of 35 tries. The point is that two models agreeing is weak evidence when their errors overlap.
+- **Medicine:** Microsoft's diagnosis system scored 83% against 36% for generalist doctors. The episode covers why that comparison is weaker than it sounds and the hospital study that will actually test it. It also covers the OpenAI / PerturbAI / Scripps agents run on a mouse brain CRISPR atlas, with Hacker News's reply that leads were never the bottleneck.
+- **Money:** OpenAI is reportedly raising up to $30B at $1.25T, below the $1.4T reported a month ago.
+- **Deep cut:** Alex Rives (Biohub) on The Cognitive Revolution: math and code can be checked by computers, but biology's checker is the wet lab.
+
+**Things to know:**
+- **X/Twitter:** not readable from this host, so the "what people are saying" section draws on Hacker News comment threads. @Zefan_Cai wasn't covered.
+- **Deliberately avoided:** security-exploit topics (the PHP follow-ups, the LiteLLM compromise) because yesterday's episode was built on them.
+- **Rives quotes:** checked against the published transcript and trimmed of filler words like "you know."
+- **Two figures not checked at the primary source:** TechCrunch was the source for the GPT-5.5 detail in the Microsoft item. The OpenAI raise is CNBC reporting relayed by TechCrunch.
+- **Agents story:** the paper itself is already in the 10-17 biomedical-agentic-ai episode. Here it's discussed through OpenAI's post and the community reaction.
+
+**Candidate funnel**
+- **Hacker News (Algolia, last 48h, over 80 points):** about 90 stories scanned, 11 relevant to AI after dropping security repeats and off-topic items.
+- **Latent Space RSS:** 14 posts. No AINews issue yet for 10-23; Moshi and Tenex were considered and not picked.
+- **TechCrunch AI RSS:** 10 items scanned, 4 read in full.
+- **Podcasts:** Cognitive Revolution, Dwarkesh, Interconnects and MLST feeds scanned. Picked the 10-20 Cognitive Revolution episode with Rives.
+- **Failed sources:** the Latent Space archive API returned "Endpoint not found", so I used its RSS feed instead. The bioRxiv `.full.pdf` for the agents paper returned a 17-byte throttle reply, which didn't matter because that item went through OpenAI's blog post.
+- **Shortlist** (★ = used):
+  - ★ Anthropic, formal verification — https://www.anthropic.com/research/formal-verification
+  - ★ ModelCompare, "same controversial take" — https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans
+  - ★ Microsoft AI, medical superintelligence — https://microsoft.ai/news/building-medical-superintelligence/
+  - ★ OpenAI, thousands of agents on biological data — https://openai.com/index/scaling-ai-research-for-complex-biological-data/
+  - ★ TechCrunch, OpenAI $30B at $1.25T — https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/
+  - ★ Ask HN, "why doesn't OpenAI start 100 companies" — https://news.ycombinator.com/item?id=50200997
+  - ★ Cognitive Revolution, Alex Rives — https://www.cognitiverevolution.ai/a-world-model-of-life-biohub-s-alex-rives-on-virtual-cells-measurement-the-1-8b-data-push/
+  - WorldTUI, a 360M-parameter model that imitates a terminal (read, cut for length) — https://simedw.com/2026/10/21/world-model-terminal/
+  - TechCrunch, AI agents left alone started playing (not picked) — https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/
+  - Mistral Large 4 (already covered on 10-08) — https://mistral.ai/news/mistral-large-4/
+  - Latent Space, Erik Bernhardsson / Modal (compute was the 10-21 deep cut) — https://latent.space/p/modal-d/
+=== 2026-10-23T02:35:48-07:00 done  jinglin-ai-pulse (exit 0) ===

@@ -5803,3 +5803,29 @@ Shortlist after dedup against 10-20 and 10-21 (every item grepped against all pr
 
 One correction caught in verification: BioSpace described Hibsago as dosed "every six months," which contradicts the FDA and GSK primaries — it is a **weekly** subcutaneous injection for up to 24 weeks. The scripts use the primary.
 === 2026-10-22T02:30:27-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-23T02:20:11-07:00 start calibr-briefing ===
+Both episodes written. `SKIP_TTS=1`, so stubs only — no audio, no R2 publish, no feed edit, no commit. `publish_pending.py` picks these up after batch TTS.
+
+**Episodes**
+- `2026-10-23-pharma-headlines` (1,184 words)
+- `2026-10-23-merck-moderna-intismeran-hazard-ratio-shape-spotlight` (1,487 words)
+
+Six files written (script + `.rss-item.xml` + `.commit-msg` each). Both RSS items parse as valid XML under the itunes namespace; spoken text is clean of URLs, DOIs, and markdown.
+
+**Spotlight thesis.** Merck/Moderna's intismeran autogene — the first individualized neoantigen therapy and first mRNA cancer therapy to win a Phase 3 — posted RFS HR 0.58 and cost Moderna ~21%. The angle is that 0.58 blends two regimes: in a sensitivity analysis the companies call prespecified, the curves are superimposed for six months (HR ≈1.0), then separate at HR 0.42. That's what a therapy requiring resection, sequencing, ML-ranked neoantigen selection, bespoke mRNA manufacture and several priming doses *must* look like — during the lead-in the patient is functionally a control. The mITT result returns to 0.51, exactly the Phase 2b figure, locating the ITT gap in logistics rather than biology. I gave the counterargument real weight (piecewise analyses that flatter invite scrutiny; regulators and payers price ITT) and put the sharper commercial risk where RBC put it: neoadjuvant immunotherapy, which is nearly free and reads out pathologically.
+
+**Candidate funnel**
+- BioSpace index (Oct 22) — 12 items scanned, 7 used. Primary source for AbbVie, Roche/Poseida, IPO tally.
+- Merck newsroom press release (Oct 22, 2:59pm EDT) — full INTerpath-001 dataset, read in full. Satisfies the spotlight full-text gate.
+- Fierce Biotech — **failed**: WebFetch 403; r.jina.ai returned `AbuseAlleviationError`, domain blocked until 10:12 UTC. Routed around via primary sources.
+- Web search (4 queries) — surfaced the leak, stock moves, and analyst quotes.
+
+**Dedup results** — three catches worth recording:
+- **Caribou shutdown dropped.** A search snippet implied it was ~2 days old; it's actually Oct 6. Would have shipped 17-day-old news as fresh.
+- **Merck/Moderna cleared.** "Moderna" hit the 10-22 script, but that mention was about OpenAI partnerships — unrelated. The cancer vaccine was genuinely uncovered.
+- **Roivant brepocitinib and GSK/Ionis hep-B excluded** — both covered 10-22 (hep-B was yesterday's spotlight). Iambic named only as a callback in the IPO tally, not re-reported.
+
+One flag on sourcing: Moderna's drop is reported as 17.6% by some outlets and 21% by BioSpace. I used ~21% in both scripts, matching the article I read in full rather than a search snippet — but it's a live number that may settle differently.
+
+Finally, on the interrupted run: it stopped before writing anything, so there was nothing to salvage and no stale-mp3 risk. Given my notes record a similar false-stop on the justice show three days ago, this looks like a recurring classifier false positive on routine oncology-data production rather than anything about the content — worth watching if it repeats.
+=== 2026-10-23T02:28:20-07:00 done  calibr-briefing (exit 0) ===

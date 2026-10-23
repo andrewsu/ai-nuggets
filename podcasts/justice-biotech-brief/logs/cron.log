@@ -4438,3 +4438,21 @@ Files written:
 
 **Source failures / access notes:** NIH news-releases still 403s from this host; ARPA-H newest item 10-19 and off-beat; NSF nothing on-beat. BioSpace `/clinical-trials` is a 107 KB "Page not found" shell. Fierce section pages render undated via jina and carry items up to 9 days old — resolved `Published Time:` per article before shortlisting (the BioNTech mRNA-vaccine Phase 3 failure looked fresh but is 10-13). The bioRxiv sweep had to be re-run once: a zero-record day returns a `messages` object with no `interval`/`total`, which raised a `KeyError` and discarded everything fetched; guarded and noted in memory.
 === 2026-10-22T02:50:59-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-10-23T02:40:12-07:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1`, so three stub files only — no TTS, no R2 publish, no feed edit, no commit. The orchestrator picks these up after batch TTS.
+
+**Published:** `2026-10-23-hbi-8000-nivolumab-melanoma-hdac-dual-checkpoint-numbers` — 888 spoken words (~5 min), audio-hygiene clean, RSS stub parses with both placeholders intact.
+
+**The pick:** HBI-8000 (tucidinostat/chidamide) + nivolumab, ESMO 2026 LBA54 presented today in Madrid, NCT04674683. First randomized Phase 3 showing an HDAC inhibitor adds to PD-1 blockade — median PFS 11.7 vs 7.4 months by blinded independent review, HR 0.73, p=0.014, n=404.
+
+The take: all four cells of this readout sit almost exactly on CheckMate 067's dual-checkpoint arm (11.5 / 6.9 months; grade 3-4 TRAEs 59% / 22% vs this trial's 54.8% / 17.9%). So the "avoids dual checkpoint inhibition" framing is false on incidence and true only on reversibility — no excess hypophysitis or adrenal insufficiency, but 38% dose reductions. Flagged the 2021-designed control arm (nivo mono, predating nivo+relatlimab), the 7.3–21.1 month CI, the 96% CI as an interim-alpha tell, and immature OS.
+
+**Candidate funnel**
+- **bioRxiv** — 574 records swept day-by-day (10-21: 271, 10-22: 294, 10-23: 9); 568 after v1 dedup; 15 keyword hits; 5 substantive after discarding spurious matches ("replication checkpoint", genome-annotation, bispecific *protease*). **All 5 ineligible — abstract-only `.full`, whole cohort unrendered.** Deferred, all clean on dedup: `…760864` BRiDGE CAR (modular peptide-tag adaptor CAR T — best item of the day, grab when it renders), `…760309` ResponseVerdict, `…760742` SMAD3/bladder, `…758999` RORγ+PD-L1 in HCC. `…759372` correctly excluded as yesterday's episode.
+- **News** — Endpoints front page read (40 KB); fiercebiotech.com returned a 675-byte block via jina (noted gap, not retried into the ground). BioSpace `/press-releases` carried the ESMO LBA in full. Georgiamune/Menarini ($1.1B) passed: paywalled body, preclinical asset. AbbVie's Temab-A ESMO data passed on dedup — asset shipped 10-08.
+- **Policy** — ARPA-H / NIH / NSF: nothing on-beat.
+
+Two things I'd flag rather than bury: I initially assumed a history of *failed Phase 3* HDAC+checkpoint trials and the search contradicted me — ENCORE-601 was single-arm Phase 1b/2, so the script says only that prior work was small and in the refractory setting. And the 96% CI could be a press-release typo for 95%; I wrote it as worth confirming against the manuscript rather than asserting the interim-analysis reading.
+
+I also appended today's deferrals and the CheckMate-067 benchmarking spine to the show's rolling run-log memory, since the BRiDGE preprint is a live candidate for the next few days.
+=== 2026-10-23T02:51:37-07:00 done  justice-biotech-brief (exit 0) ===

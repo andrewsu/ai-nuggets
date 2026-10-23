@@ -5785,3 +5785,41 @@ Episode: **MMedAgent-Plus — the medical agent that plans better once it can se
 
 **Chosen:** MMedAgent-Plus (arXiv 2610.27233).
 === 2026-10-22T02:19:28-07:00 done  biomedical-agentic-ai (exit 0) (retry 2, --model claude-sonnet-5) ===
+=== 2026-10-23T02:00:11-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two stubs and did **not** run TTS, publish to R2, touch `feed.xml`, or commit — the orchestrator handles those after batch TTS.
+
+**Pick: Chaperone** — *Reliable and Efficient Agentic Protein Design with Toolset Harnessing* (bioRxiv 10.64898/2026.10.19.759896, posted 2026-10-20, Baker lab / Institute for Protein Design, UW). Full text read via direct PDF + mutool (the `.full` HTML was abstract-only). Script is 989 words (cap 1150).
+
+Files written:
+- `podcasts/biomedical-agentic-ai/scripts/2026-10-23-chaperone-harness-not-the-model.md`
+- `…​.rss-item.xml` (validated XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Candidate funnel**
+
+- **bioRxiv** (details API, day-by-day 10-20 → 10-23): 757 entries swept (237 / 271 / 240 / 9). 10-22 hit one read timeout at cursor 120; re-fetched the remainder separately. ~18 survived the keyword + de-spurious filter. Shortlist:
+  - ✅ **Reliable and Efficient Agentic Protein Design with Toolset Harnessing (Chaperone)** — `10.64898/2026.10.19.759896` — **CHOSEN**
+  - hvantk: agentic multi-omics variant annotation — `10.64898/2026.10.19.760196` — **deferred, full text not yet rendered** (helper fell through to abstract-only); revisit
+  - General Purpose AI for Public Data Analysis and Experimental Hypothesis Generation — `10.64898/2026.10.16.759709`
+  - A data model for longitudinal multi-modal biomedical cohorts — `10.64898/2026.10.14.759237`
+  - ChEBI-N — enrichment analysis with the ChEBI ontology — `10.64898/2026.10.14.758784`
+  - In Other Words: Learning When to Trust Generated Protein Function Descriptions — `10.64898/2026.10.15.757758`
+- **arXiv** (shared cache, 500 entries, covers 10-21/10-22 only — the 500-entry cap again): 192 keyword hits, 6 substantively biomedical. Shortlist:
+  - ChronoEvo: LLMs fail to incorporate evolving medical knowledge — `arxiv.org/abs/2610.30631` (strong runner-up; 32.3-pt recognition-incorporation gap)
+  - Consistent but Biased: chair personas in multi-agent clinical decisions — `arxiv.org/abs/2610.31325` (strong, but 10-21 and 10-22 episodes were both clinical multi-agent)
+  - ADAPT for Science — `arxiv.org/abs/2610.30851`
+  - Real PMIDs, Wrong Papers — `arxiv.org/abs/2610.29812` — **excluded, shipped yesterday on receptor-and-reason**
+- **PubMed** (reldate 5): 86 hits, ~8 on-target. Notable: *The anatomy of a personal health agent* (Nature, online 10-21) and *Programmable design of functional proteins from natural language* (Nature, 10-21); JAMIA agentic code-status extraction, single vs multi-agent. The Nature PHA paper is the peer-reviewed form of a 2025 arXiv preprint — in-window but editorially stale.
+- **ChemRxiv** — `site:` search returned no chemrxiv.org results at all (operator ignored by the search backend); **source gap, nothing scanned**.
+- **Policy/funders** — ARPA-H: two items in window, neither agentic-AI (Alzheimer's awards 10-22; PM recruiting 10-19). NIH news releases page **403s from this host** — source gap.
+
+Why Chaperone beat ChronoEvo: both are well-built, but Chaperone pairs a quantified agent-economics result (86% fewer tokens, 64% fewer GPU-hours, pass rate 6%→12%, and the reasoning-effort scaling divergence) with wet-lab validation (1.32 nM cortisol binder, no affinity maturation), and the portable lesson — a canonical schema with lineage is what made 50 tools agent-legible — lands directly in Andrew's data-integration lane. The script explicitly flags that it echoes Monday's Munin episode rather than pretending the thesis is new, and keeps the authors' own caveats (curated vs bare environment, one model family, low absolute pass rate).
+
+That was the Oct 22 remainder fetch, whose output I already folded into the funnel above (120 additional entries, 9 keyword hits, none displacing the pick). No further work pending — today's episode files are in place and the run is complete.
+
+That was only the idle wait-loop watching for the Oct 22 remainder fetch; it was killed at its time limit, but the fetch it was waiting on had already finished successfully and its results are in the funnel. Nothing needs restarting — the episode is done.
+
+Same situation: that was an idle wait-loop for the main bioRxiv sweep, killed at its time limit. The sweep itself completed earlier (exit 0, 757 entries across Oct 20–23) and its results are already reflected in the funnel. No restart needed — today's episode is complete.
+
+The last of the idle wait-loops, killed at its time limit. Like the other two, it was only polling for the bioRxiv sweep that had already finished successfully. All source sweeps are complete and accounted for in the funnel; no restart needed, and today's episode files are final.
+=== 2026-10-23T02:34:13-07:00 done  biomedical-agentic-ai (exit 0) ===

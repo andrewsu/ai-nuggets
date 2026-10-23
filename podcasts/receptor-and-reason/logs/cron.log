@@ -5918,3 +5918,30 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE I wrote script + two stubs only �
 – Agentic AI in drug discovery review (bib/bbag583) — unreadable, OUP block
 – CHI3L1 inhibitor, LLM statistical review, endocannabinoid pain, perturbation-OOD, Cajal-Retzius, AlphaFold-3 prioritization — all Cloudflare 54w, deferred to 10-23
 === 2026-10-22T03:07:43-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-23T02:50:12-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two stubs and did **not** run TTS, publish to R2, touch `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-10-23-receptor-and-reason.md` — 3,478 spoken words (~19 min), 11 items, no URLs/DOIs/bullets/pseudo-headings in the spoken body
+- `…2026-10-23-receptor-and-reason.rss-item.xml` (validates as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `…2026-10-23-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, 153 episodes
+
+**Editorial spine — "the instrument is in the answer."** Every item is a result that reproduces perfectly because of the apparatus rather than the biology.
+
+**Candidate funnel**
+- *bioRxiv/medRxiv details API* (day-by-day, 10-16→10-23): ~1,500 records swept → 83 relevance hits → 78 after dedup (5 shipped). No API outage.
+- *Carryover list from 10-22*: 11 candidates → 10 fresh (the OOD perturbation-benchmark preprint was already shipped).
+- *arXiv shared cache*: 500 entries, covering only 10-21/10-22 → 164 bio×agentic hits → 163 fresh. No live arXiv call, no 429.
+- *Nature RSS*: `npp`/`neuro`/`nbt`/`natcancer` returned 9 items each; `mp` and `nm` 303'd to 150-byte empties (logged gap). 7 in-window candidates → 6 fresh — **the one Nature Neuroscience paper whose full text rendered (habenula/depression) was already shipped**, caught by the pre-fetch gate. Three other Nature Neuro items were paywalled; Nature Biotech's DynaVelo came back complete with Methods and made the roster.
+- *Psychiatric Times, OUP (IJNP, Briefings in Bioinformatics), Elsevier (Neuropharmacology, PNBP, Biol Psychiatry)*: Cloudflare-blocked per standing notes — discovery-only, nothing selectable under the full-text gate.
+- Final roster re-gated: 11→11 clean; concept greps clean.
+
+**One thing went wrong and I want to flag it.** A second bioRxiv batch targeting Tier 1 wet-neuroscience items logged an empty progress file across three checks, so I finalized the roster without it. It had in fact succeeded — three full texts (brainstem cholinergic cell loss, diurnal cholinergic variation in nucleus accumbens, CRISPRa-Tfeb in α-synuclein aggregation) were already on disk. That's a stderr-buffering artifact in the background-task wrapper, not a fetch failure. The episode is consequently heavier on computational items and lighter on wet pharmacology than it should have been. I've recorded the lesson (check output files, not the log) and left all three, with full text already fetched, at the top of tomorrow's carryover list.
+
+The background fetch worker was stopped at its time limit — reporting that, though it changes nothing about the episode.
+
+It had already finished 3 of its 6 documents before being killed (the three Tier 1 wet-neuroscience full texts, still on disk at `/tmp/rr1023/b2_*.txt`). The three it didn't complete were the isoflurane CNS-recovery preprint, the prodromal-Parkinson's gut-microbiome preprint — both of which had returned Cloudflare blocks on their attempts — and NeuroPilot, which it never reached. All three are already recorded as retests for tomorrow, so no restart is warranted.
+
+Today's episode and both publish stubs are intact and unaffected. Nothing is pending.
+=== 2026-10-23T03:07:07-07:00 done  receptor-and-reason (exit 0) ===

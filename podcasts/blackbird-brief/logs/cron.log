@@ -3847,3 +3847,21 @@ Episode written. `SKIP_TTS=1` was confirmed as the first call of the run, so no 
 - Quiet in-window on Aletira/SELEXON, Clasp, Artemyx, DELFI, Biolinco, 1104health, Georgiamune, Adventris and GPR52/Lieber — all five items reach the portfolio by competitive read-across.
 - Calendar carried forward: Nouscom ESMO abstract 3438O on 10-25 (Adventris read-across); Operation TrialBlazer pilot application closes 10-30, still needing a go/no-go and an institution.
 === 2026-10-22T02:26:47-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-23T02:10:11-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no `feed.xml` edit, no commit; `publish_pending.py` picks these up after batch TTS.
+
+**Blackbird 2026-10-23 — Portfolio Watch** (`2026-10-23-portfolio-watch`), 1,678 words ≈ 8.4 min. Window 2026-10-20 → 2026-10-23. Five items:
+
+1. **LEAD — Georgiamune × Menarini/Stemline.** Actual portfolio news: a BioVentures position out-licensed **preclinical** GIM-621 for $45M upfront/near-term against up to $1.1B plus royalties, while keeping all three clinical programs. A third party priced the discovery engine, not an asset.
+2. **INTerpath-001 detailed data** (leaked, so ESMO published two days early). RFS HR 0.58 — but the prespecified piecewise split shows **HR 0.99 for the first six months**, then 0.42. The dead zone is bespoke manufacturing, which turns Adventris's off-the-shelf argument from convenience into efficacy.
+3. **Roche kills the Poseida allogeneic CD19xCD20 CAR-T** (lupus and MS Phase 1s withdrawn) — Winnow, plus a CNS-antisense footnote for NuGate.
+4. **Biohaven troriluzole resubmission accepted + AdComm** — the CRL turned on external-control *comparability*, not effect size, which reshapes the standing Aletira pre-IND ask.
+5. **Closer — Gilead/PepStar $1.275B all-cash upfront, zero milestones, Phase 1**; 31 IPOs vs 8 last year; Lycia upsized $227.8M → $317.5M.
+
+Two things worth flagging:
+
+- **A re-ship caught before it shipped.** The carried week-ahead item "Kyverna full SPS dataset" resolved on 10-21 and I had it drafted as the lead — but an asset-name grep showed the headline KYSA-8 one-year numbers were already covered on 09-25 (the company pre-announced on 09-24). The dedup ledger would *not* have caught it: different URL. Demoted to two sentences, explicitly labelled, keeping only the genuinely new exploratory data. The lesson is logged in the script: a "pending presentation" in the week-ahead is not evidence the data are unshipped.
+- **Fierce was unreachable for the whole run** — plain curl 403s, `r.jina.ai` returned a domain-wide `AbuseAlleviationError`, WebFetch 403s. Three Fierce headlines surfaced via search index only and I did **not** use them, since I couldn't read them directly; one (an undated ocular gene-therapy deal) is worth a direct check next run. `hub.jhu.edu` and `ventures.jhu.edu` RSS also served Cloudflare challenges. BioSpace, BioPharma Dive, GEN and GlobeNewswire carried the day.
+
+I also updated the Georgiamune entry in `memory/blackbird-portfolio.md` in place and bumped its date — new deal terms plus the reusable "out-license from the preclinical bench, keep the clinic" financing template. Ledger appended: 7 keys, 109 episodes.
+=== 2026-10-23T02:28:40-07:00 done  blackbird-brief (exit 0) ===
