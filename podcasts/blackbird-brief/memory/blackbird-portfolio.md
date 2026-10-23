@@ -4678,7 +4678,20 @@ _Last update: 2026-10-20_
   Source: https://www.biospace.com/drug-development/revmeds-newly-approved-rasonque-could-hold-up-in-non-small-cell-lung-cancer
 
 ### Georgiamune — Gaithersburg MD, Blackbird BioVentures position, the INTERGALACTIC-CENTER THESIS WITH THIRD-PARTY CAPITAL BEHIND IT ✅
-_Last update: 2026-10-09_
+_Last update: 2026-10-23_
+- **PARTNERED ITS *PRECLINICAL* BENCH AND KEPT THE WHOLE CLINIC — A THIRD PARTY HAS NOW PRICED THE DISCOVERY ENGINE RATHER THAN AN ASSET (2026-10-22).**
+  **Exclusive worldwide license + collaboration with Stemline Therapeutics (wholly-owned Menarini Group subsidiary) for GIM-621** — a
+  **preclinical-stage, first-in-class ORAL SMALL-MOLECULE immunotherapy** with potential across multiple solid tumours. **Terms: $45M in upfront
+  and near-term payments; milestone eligibility (preclinical, development, regulatory, commercial) to a total potential $1.1B; plus royalties.**
+  Stemline takes worldwide rights to develop, manufacture and commercialise. Menarini: ~$5.5B turnover, >17,000 employees, 140 countries,
+  18 production sites, 9 R&D centres; Stemline already commercialises elacestrant and tagraxofusp-erzs. Menarini CEO **Elcin Barker Ergun**.
+  **RETAINED — all three clinical-stage programs: GIM-407 (oral Treg activator, autoimmune), GIM-122 (dual-functioning antibody, oncology),
+  GIM-531 (oral Treg inhibitor, oncology).**
+  **⇒ READ (Eddie Cherok + Hemaka Rajapakse): the valuable validation is that the PLATFORM generates sellable programs faster than one company
+  can develop them — which is precisely the argument our incubated spinouts must make to a Series A syndicate, and it is the Intergalactic-Center
+  thesis being priced by someone other than us.** **⇒ REUSABLE FINANCING TEMPLATE (Esther Park + Avi Khanna, one-pager for project leads):
+  out-license from the PRECLINICAL BENCH, not the clinic — partner the program furthest from your own capability, keep the clinical pipeline,
+  keep the royalty.** Source: https://finance.yahoo.com/healthcare/articles/georgiamune-menarini-group-enter-exclusive-120000210.html
 - **TREX BIO PRICED AT THE BOTTOM OF THE RANGE (added 2026-10-09 Portfolio Watch item 4).** 8,333,334 sh at **$14** (range $14–16), ~$116.7M gross, Nasdaq TRXB from 2026-10-09; TRB-061 TNFR2 agonist, AD data mid-2027; Lilly ~$13M indicated. First public mark for the Treg-activation class — window open, price disciplined. Source: https://www.biospace.com/press-releases/trexbio-announces-pricing-of-initial-public-offering
 - **THIRD TREG-ACTIVATION ASSET IN NINE DAYS AND THE SECOND TO PICK ATOPIC DERMATITIS FIRST — WHICH MAKES GIM-407's *INDICATION* CHOICE THE
   DIFFERENTIATOR RATHER THAN ITS ORAL ROUTE, AND FLIPS THE DIRECTION OF THE READ-THROUGH (added 2026-09-30 Portfolio Watch item 4; presented
