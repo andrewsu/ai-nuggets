@@ -3865,3 +3865,24 @@ Two things worth flagging:
 
 I also updated the Georgiamune entry in `memory/blackbird-portfolio.md` in place and bumped its date — new deal terms plus the reusable "out-license from the preclinical bench, keep the clinic" financing template. Ledger appended: 7 keys, 109 episodes.
 === 2026-10-23T02:28:40-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-27T02:10:16-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no `feed.xml` edit, no commit; `publish_pending.py` picks these up after batch TTS.
+
+**Blackbird 2026-10-27 — Portfolio Watch** (`2026-10-27-portfolio-watch`), 1,828 spoken words ≈ 9.1 min. Window 2026-10-23 → 2026-10-27 (four days, covering the weekend gap since the last run). Five items:
+
+1. **LEAD — a patient death in BMS's Phase 1 MS CAR-T study (Winnow).** Late-onset non-ICANS motor symptoms, then fatal septic pneumonia, **day 44 post-infusion**; 190 patients across the autoimmune zola-cel programs. The item is the sequencing: the August pause came from an ICANS increase in the **lupus** pivotal, BMS says it did *not* see that trend break in the **MS** study — and the death occurred in the MS study, after the pause decision. That **reopens the §4 open item we marked substantially closed on 10-05** (manufacturing-intensity as the explanation). Winnow's surviving differentiator is interruptibility, not safety-in-general.
+2. **Roche pays $55M upfront for Zymeworks' DLL3×CD3×CD28 trispecific** ($813M total + royalties) — eight days after this show quoted Invenra saying trispecifics were still awaiting a success story. Paired with Imdelltra's DeLLphi-305 at ESMO (OS 21.1 vs 12.7 mo, 58% death-risk reduction) *and* CRS in half of patients — the therapeutic-window problem a third arm exists to solve.
+3. **RAINFOL-02 answers the eligible-fraction question we posed on 10-20.** Rina-S, enrolling regardless of FRα expression, cut progression/death 71% and death 57% — roughly double the biomarker-gated incumbent. Clasp's gates are mechanistic, but GUARDIAN-101 now has to pre-empt a comparison investors have a worked example for.
+4. **Alnylam's 60–64% huntingtin knockdown** (carried from the 10-23 funnel; the weekend Stifel/tominersen caution is the new content) — target engagement is not prior probability.
+5. **Closer — Marengo's Vβ-selective T-cell agonist**, two fast tracks and a 2027 pivotal plan, occupying the lane Winnow calls differentiated.
+
+Three things worth flagging:
+
+- **Two drops came from the asset-name grep, not the key filter.** `brezosiran` hit `2026-10-23` — but as an explicit *dropped, carry* line in that run's funnel, so it was eligible and is used with new content rather than the knockdown numbers already noted. And a BioSpace China ownership-transfer piece passed the key filter cleanly but is **the same MOFCOM Announcement No. 48 that was the 10-17 LEAD** — same event, second outlet, new URL. Final roster re-filtered after selection: 6 keys, 6 fresh.
+- **Nouscom deferred under the full-text gate.** The standing Adventris read-across presented at ESMO over the weekend, but no results have been published — only the July pre-congress announcement. Nothing summarisable, so it's carried rather than written off abstract.
+- **Fierce was unreachable for the second consecutive run** (238-byte jina stub; domain-wide block persists from 10-23). Two BioSpace fetches returned jina proxy errors and succeeded on single-worker retry. Neither aborted the run.
+
+I edited `memory/blackbird-portfolio.md` in place: reopened the manufacturing-attribution open item in §4 *and* corrected the matching verdict line inside the Winnow entry so the two don't disagree, and added a Syndeo Life note to the Wong lab TDP-43 entry — a JHU TDP-43 spinout with Hopkins-licensed biomarker IP that surfaced ~10-01. It's outside the news window so it isn't an episode item, but it's the second JHU company formed without us after DUA, which makes it a sourcing-channel question rather than a coincidence. Ledger appended: 6 keys, 110 episodes.
+
+One caveat on sourcing: the Zymeworks primary release 403s to every direct fetch (GlobeNewswire and the Zymeworks IR host both bot-block), so I verified its terms against the BioSpace article, which matches exactly, and annotated that in the show notes rather than presenting it as directly read.
+=== 2026-10-27T02:27:34-07:00 done  blackbird-brief (exit 0) ===
