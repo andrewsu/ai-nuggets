@@ -5823,3 +5823,44 @@ Same situation: that was an idle wait-loop for the main bioRxiv sweep, killed at
 
 The last of the idle wait-loops, killed at its time limit. Like the other two, it was only polling for the bioRxiv sweep that had already finished successfully. All source sweeps are complete and accounted for in the funnel; no restart needed, and today's episode files are final.
 === 2026-10-23T02:34:13-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-27T02:00:16-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1`, so no TTS, no R2 publish, no feed edit, no commit — script plus the two stubs only.
+
+**Today's pick:** *Are We Done with UMLS Injection into Language Models for Medical Question Answering?* (arXiv 2610.33801v1, posted 2026-10-24, University of Bologna) — full text read via PDF + mutool; `placeholder` grep returned substantive content, not unfilled evals; `arxiv.org/abs/2610.33801` returns 200.
+
+Files:
+- `podcasts/biomedical-agentic-ai/scripts/2026-10-27-umls-injection-the-graph-was-never-the-variable.md` (931 words spoken body, cap 1150)
+- `.rss-item.xml` (validates; `__LENGTH__` / `__DURATION__` placeholders)
+- `.commit-msg`
+
+**Candidate funnel**
+
+bioRxiv — details API day-by-day 10-24→10-27, 452 records (191/79/167/15), v1-only keyword filter → 29 raw hits, ~6 substantive:
+- Agent K: agent-orchestrated gene→biosynthetic pathway mapping — 10.64898/2026.10.19.760272
+- Evidence-governed agent harness for spatial transcriptomics (ICAM-1 in lung fibrosis) — 10.64898/2026.10.22.760550 — close in spirit to the 10-23 Chaperone harness episode
+- Language models annotate mass cytometry clusters within the range where experts disagree — 10.64898/2026.10.20.760379
+- Prediction transfer ≠ reliability transfer in single-cell foundation models — 10.64898/2026.10.21.760716
+- End-to-end automation of behavioural experiments with a collaborative robot — 10.64898/2026.10.20.758951
+- Fine-grained cell classification (ontology-aware) — 10.64898/2026.10.20.760347
+
+arXiv — shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries, dates 10-23→10-26 (so coverage is 4 days, not truncated); 26 passed the agent×biomedical filter. Shortlist:
+- **Are We Done with UMLS Injection…** — arxiv.org/abs/2610.33801 — **CHOSEN**
+- Auditing evaluation artifacts and data leakage in LLM systems for rare disease diagnosis — 2610.33592 (strong, but the show has run several eval-critique episodes recently)
+- AskGLP1: KG LLM agent over patient narratives — 2610.34987
+- ClinVerse multi-agent diagnostic environment — 2610.34878
+- ProtAgent: compact protein tool agents — 2610.33746
+- Infinity Machine: self-improving research agent — 2610.35579
+- LegoSR agent-guided symbolic regression — 2610.33465
+- InsightAgents graph-distilled ideation — 2610.33366
+
+PubMed — E-utilities `reldate=5`, 46 hits, 3 substantive:
+- Automated standardization of legacy biomedical metadata using an ontology-constrained LLM agent (J Biomed Inform) — very on-target, but Elsevier full-text is blocked from this host (eligibility gate)
+- The Virtual Biotech: multi-agent AI framework for therapeutic discovery (Science, 10-22) — science.org 403s Cloudflare even via jina, no full text, dropped
+- An Agentic AI Workflow for Automated Macular Hole Diagnosis (Ophthalmol Ther) — narrow
+
+ChemRxiv — not swept this run; bioRxiv + arXiv + PubMed produced a dominant candidate and the ChemRxiv route is WebSearch-only. Noting the gap.
+
+Policy/funder pages (ARPA-H / NIH / NSF / HHS) and news — not swept; flagging as the second gap in this run.
+
+Why it won: it's the only item in the window that lands directly on Su's core interests (biomedical KGs, ontologies, data integration) *and* carries original experiments rather than another architecture — retraining QA-GNN and GREASELM across seven UMLS constructions shows MedQA accuracy flat at 37.5–38.7% while an empty graph holding only the undisclosed `Serine`/`Ethanol` fallback concepts scores 37.4%, against published increments of 0.8 and 0.5 points.
+=== 2026-10-27T02:04:33-07:00 done  biomedical-agentic-ai (exit 0) ===
