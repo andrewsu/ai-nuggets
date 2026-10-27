@@ -4226,3 +4226,45 @@ The episode asks what fast machine output (proofs, model answers, diagnoses, res
   - Mistral Large 4 (already covered on 10-08) — https://mistral.ai/news/mistral-large-4/
   - Latent Space, Erik Bernhardsson / Modal (compute was the 10-21 deep cut) — https://latent.space/p/modal-d/
 === 2026-10-23T02:35:48-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-27T02:30:17-07:00 start jinglin-ai-pulse ===
+I wrote today's episode of Ollie's AI Pulse, "built on a hypothesis." `SKIP_TTS=1` was set, so I made no audio, didn't touch `feed.xml` and didn't commit. The script and the two stubs (`.rss-item.xml` and `.commit-msg`) are in `podcasts/jinglin-ai-pulse/scripts/2026-10-27-built-on-a-hypothesis.*` for the batch job to publish. The stub XML parses once the itunes namespace is declared.
+
+The script is about 2,230 spoken words, roughly 12 minutes, which is slightly over the show's 2,200-word target. The theme is three things resting on unproven assumptions: decades of computer-science papers, Anthropic's compute spending, and the idea that general models transfer to medicine.
+
+- **Lead:** On Monday OpenAI announced three AI-produced results. The main one is a paper claiming the Exponential Time Hypothesis (a standard assumption that the satisfiability problem needs exponential time) is false. I read the paper itself and explain the method plainly. The panel checking it includes Impagliazzo and Paturi, who proposed the hypothesis in 2001. The other two results are a math proof (Kakeya in all dimensions) and a physics proof (that QCD exists). Hacker News quickly agreed the result is not P=NP, and that it removes the premise of some lower bounds for sequence comparison.
+- **Second item:** A dermatologist tested 200 biopsy-confirmed skin lesions. A ten-year-old image classifier got 125 diagnoses right, against 84 and 85 for GPT-6 Astra and Claude Fable 5.1. The language models kept almost every dangerous lesion but sent home only 22–32 of 100 harmless ones.
+- **Money:** Anthropic's S-1 (from SEC EDGAR):
+  - Revenue was $16.3B in the first half of 2026. It grew 1,368% while compute spending grew 300%.
+  - Third-quarter revenue of about $17B is my own calculation from a ratio the filing gives; the number itself isn't printed.
+  - Most of the $80.7B net loss is an accounting mark on old convertible notes, not cash.
+  - It commits at least $110B to Amazon and up to $120.5B to SpaceX's AI unit (formerly xAI).
+  - The founders hold 50.1% of the vote.
+  - It delayed pre-training a new model by more than a month for security.
+- **Deep cut:** Lex Fridman #503, from the published transcript. Kontorovich argues that solving theorems was only the stand-in for what mathematicians want, which is understanding. Moitra argues that limited human memory is what forces useful abstractions.
+
+**Things to know:**
+- **Second-hand sources:** X/Twitter still can't be read from this host, so reactions come from Hacker News threads and the Latent Space AINews digest. The SemiAnalysis quote and the reported November 9 listing date come from that digest, not the original posts.
+- **Unconfirmed HN figures:** A widely shared Hacker News quote attributed to the S-1 ("never let your company be worth a dollar more…") isn't in the main filing text, so I left it out. One commenter's compute figures ($114B to Google, $161B to Broadcom) weren't confirmed either, so the script cites only commitments I checked in the filing.
+- **No episodes 10-24 to 10-26:** The cron didn't run those days, so this one draws on news from the gap.
+- **Dedup:** None of today's items appear in any show's October scripts.
+
+**Candidate funnel**
+- **Hacker News (Algolia, last 72h, over 60 points):** about 140 stories scanned, about 20 relevant to AI.
+- **TechCrunch AI RSS:** 20 items, 2 read in full (both on the S-1).
+- **Latent Space RSS:** 14 posts; the AINews S-1 issue was read in full as the Twitter stand-in.
+- **Podcasts:** Cognitive Revolution, Dwarkesh, No Priors, MLST, Interconnects and Lex Fridman feeds scanned; chose Lex #503.
+- **Failed sources:** none. Fetching the S-1 through r.jina.ai returned only the cover page, so I read it directly from SEC EDGAR.
+- **Shortlist** (★ = used):
+  - ★ OpenAI, three discoveries — https://openai.com/index/building-scientific-understanding-with-academic-communities/
+  - ★ "The Exponential Time Hypothesis is False" (PDF) — https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf
+  - ★ Lynch lab, CNN vs frontier LLMs on skin cancer — https://lynchlab.net/llm-skin-cancer
+  - ★ Anthropic S-1 — https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm
+  - ★ AINews, Anthropic S-1 issue — https://latent.space/p/ainews-anthropic-s1/
+  - ★ Lex Fridman #503 — https://lexfridman.com/math-ai-crisis-transcript
+  - GPT-6.1 Terra (read; a product launch, not picked) — https://openai.com/index/introducing-gpt-6-1-terra/
+  - Cohere, concerning behaviour of a popular open-weight model (Qwen) (fetched, cut for length) — https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model
+  - minimaxir, why LLM prices fell up to 80% (fetched, not used) — https://minimaxir.com/2026/10/cheap-llms/
+  - Apollo, no AI payoff outside tech (fetched, not used) — https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector
+  - MLST, Kevin Hartnett "Mathematics Just Changed Forever" (lost to Lex #503 as the deep cut) — https://podcasters.spotify.com/pod/show/machinelearningstreettalk/episodes/Mathematics-Just-Changed-Forever--Kevin-Hartnett-e3r47eh
+  - Latent Space, "AI Is Getting Good at Math" (not picked) — https://latent.space/p/ai-is-getting-good-at-math/
+=== 2026-10-27T02:37:27-07:00 done  jinglin-ai-pulse (exit 0) ===
