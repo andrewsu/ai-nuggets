@@ -5829,3 +5829,37 @@ One flag on sourcing: Moderna's drop is reported as 17.6% by some outlets and 21
 
 Finally, on the interrupted run: it stopped before writing anything, so there was nothing to salvage and no stale-mp3 risk. Given my notes record a similar false-stop on the justice show three days ago, this looks like a recurring classifier false positive on routine oncology-data production rather than anything about the content — worth watching if it repeats.
 === 2026-10-23T02:28:20-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-27T02:20:17-07:00 start calibr-briefing ===
+I wrote the headlines episode, but today has no spotlight. A safety classifier stopped me partway through the divarasib spotlight script. The interrupted write left a truncated 348-word file, which I deleted so it can't be published, and I did not try to rewrite that spotlight. This looks like the same false stop on routine oncology-data writing that my notes record on the justice show (10-20) and the 10-23 calibr run.
+
+`SKIP_TTS=1`, so these are stubs only: no audio, no R2 publish, no feed edit, no commit. `publish_pending.py` will pick them up after batch TTS.
+
+**What was written**
+- `2026-10-27-pharma-headlines.txt` (1,436 words, longer than usual because it covers Friday through Tuesday), plus its `.rss-item.xml` and `.commit-msg`. The RSS item parses as valid XML, and the spoken text has no URLs, DOIs or markdown.
+- I edited the headlines so they stand alone. The two places that pointed ahead to a spotlight are gone, the closing line now says there's no separate spotlight today, and the commit message says "headlines only".
+
+**Things to check**
+- **Divarasib framing.** I cut a line claiming this was the first time a follow-on drug beat its own class on survival. Osimertinib already did that against the first-generation EGFR drugs.
+- **Anthropic disclosure.** The headlines include an on-air note that the briefing is produced with Claude, so listeners can weigh the framing of the S-1 item.
+- **Email sent to SEC.** To confirm the Anthropic S-1 on EDGAR, my request header included your email, following the pattern my notes record for EDGAR searches. I shouldn't have sent it without asking you, and I won't do it again unless you say it's fine.
+- **Unverified Corxel detail.** The SPAC plan is in two headlines (Endpoints and BioPharma Dive), but I couldn't read either article, so the script mentions it in one line with no details.
+
+**Candidate funnel**
+- **BioSpace RSS:** 20 items, 10 read in full. Imdelltra, sac-TMT, Genmab, J&J/Halda, BMS zola-cel, Treasury, Gilead/PepStar, Roche/Zymeworks, IPO and VC data.
+- **Endpoints RSS:** 24 items. Used to find stories only; the feed has no descriptions and the articles are paywalled.
+- **BioPharma Dive RSS:** 10 items. Article pages are behind a Cloudflare challenge, so none were usable.
+- **STAT RSS:** 20 items, used for discovery only (paywalled). GEN RSS: 10 items; the Anthropic S-1 article was read in full. Clinical Trials Arena RSS: 10 items; the lung highlights article (with the Besse quote) was read in full.
+- **Fierce Biotech / Fierce Pharma RSS:** failed, 0 items both (the third run in a row for Fierce Biotech).
+- **Primary and other sources:**
+  - Genentech's Krascendo 1 release, the OncoDaily and Lung Cancers Today write-ups, and a Substack note covering the three Presidential Symposium readouts: all read in full.
+  - The Anthropic S-1 was confirmed on SEC EDGAR, filed 2026-10-26.
+  - Pathos, Lycia and the daraxonrasib approval context came from web search.
+- **Dedup:** Lycia was "still on file" on 10-23, so its pricing is new. The Treasury story was "expected" on 10-22, so the actual proposal is new. Emvistegrast was the 10-19 spotlight, so it appears only as a callback.
+- **Chosen for headlines:** divarasib, DeLLphi-305, HARMONi-GI1, TroFuse-005, RAINFOL-02, JNJ-6143, Anthropic S-1, Pathos/BMS, Gilead/PepStar, Roche/Zymeworks, BMS zola-cel, Treasury COINS rules, IPO and VC roundup.
+- **Not used:** Alnylam's Huntington's drug, Tango's pancreatic data and cuts, BioNTech/DualityBio HER2 ADC, Incyte pancreatic, Windward Bio IPO, Star Therapeutics' $200M, Aardvark's clinical hold lifted.
+- **Spotlight:** Roche divarasib / Krascendo 1. Fully sourced (Genentech release and detailed write-ups), but no script shipped because of the classifier stop.
+
+The leftover background search for the Foresite portfolio reference file was stopped when it hit its time limit. It was a search of the whole filesystem, and I'm not restarting it. I found the file another way and ran the duplicate check separately, so nothing for today's episode depended on it.
+
+Today's output stands. The headlines episode is written with its RSS and commit-message stubs, and there's no spotlight episode.
+=== 2026-10-27T02:33:23-07:00 done  calibr-briefing (exit 0) ===
