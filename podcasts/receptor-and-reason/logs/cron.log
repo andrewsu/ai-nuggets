@@ -5945,3 +5945,27 @@ It had already finished 3 of its 6 documents before being killed (the three Tier
 
 Today's episode and both publish stubs are intact and unaffected. Nothing is pending.
 === 2026-10-23T03:07:07-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-27T02:50:19-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md this run produced stubs only — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-10-27-receptor-and-reason.md` — 11 items, 3,343 spoken words (~18 min)
+- `…​.rss-item.xml` — validated XML, `__LENGTH__` / `__DURATION__` placeholders intact
+- `…​.commit-msg`
+- Ledger appended: 11 keys, now 154 episodes / 1,594 unique keys
+
+**Theme:** "the number that was never measured" — the absent measurement standing exactly where the load-bearing claim sits.
+
+**Candidate funnel**
+
+- **bioRxiv + medRxiv details API** (day-by-day 10-19→10-27, both servers): 1,772 records scanned → 429 in-window after version==1 + DOI-date filter → 304 bio / 125 med keyword-relevant → 21 shortlisted → 11 full texts fetched (10/10 success via jina `.full.pdf`, zero Cloudflare throttling).
+- **arXiv** shared cache: 500 entries (covers 10-23→10-26, continuous with the 10-23 run) → 212 bio×agentic → 61 by title → 11 PDFs via `curl` + `mutool`, 11/11 clean. No live API call, no 429.
+- **Nature RSS**: all six slugs returned 200 (`npp` `mp` `neuro` `nbt` `nm` `natcancer`), 31 in-window DOIs resolved via Crossref — but **every body was paywalled**. Discovery-only this run. Notably this cost the Nature Neuroscience psychedelics / 5-HT2AR–β-arrestin paper, which would otherwise have led.
+- **Psychiatric Times, OUP (IJNP), Elsevier (Neuropharmacology, PNBP, Biol Psychiatry)**: known-blocked from this host, funnel-logged, not fetched.
+
+**Dedup**: batch gates 92→91, 18→18, 3→3; final roster re-gate 12→12 clean; concept greps clean.
+
+**Chosen (11)** — lead first: de novo macrocyclic CXCR4/ACKR3 ligands · CB1 social-defeat subiculum→AHN · intranasal opioid photometry · adrenal remodeling/fentanyl seeking · GLP-1RA tobacco+alcohol meta-analysis · AskGLP1 · antidepressant-class suicide-related events in autism · polygenic liability × treatment outcome · ADHD biotypes from brain charts · Conviction Without Evidence · claim smoothing by research agents.
+
+Two notes worth flagging: the first draft ran 12 items / 3,697 words and paraphrase-trimming recovered only ~100 words — dropping an item was the only thing that worked. And three arXiv papers plus two bioRxiv Tier 1 items were read or fetched but unused; their full text is on disk and logged to memory for tomorrow.
+=== 2026-10-27T03:06:40-07:00 done  receptor-and-reason (exit 0) ===
