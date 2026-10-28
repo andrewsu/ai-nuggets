@@ -3886,3 +3886,18 @@ I edited `memory/blackbird-portfolio.md` in place: reopened the manufacturing-at
 
 One caveat on sourcing: the Zymeworks primary release 403s to every direct fetch (GlobeNewswire and the Zymeworks IR host both bot-block), so I verified its terms against the BioSpace article, which matches exactly, and annotated that in the show notes rather than presenting it as directly read.
 === 2026-10-27T02:27:34-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-28T02:15:26-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit. The orchestrator will pick these up after batch TTS.
+
+**Blackbird Brief — Portfolio Watch, Wednesday 2026-10-28.** Window 10-26 → 10-28, five items, ~1,770 spoken words (in line with the show's 1,680–1,830 norm).
+
+1. **LEAD — Artiva discontinues AlloNK, cuts ~94% of staff with ~$319.1M still in the bank** (10-27). Two reads for Winnow, neither the obvious one: the fatal Grade 5 was a leukoencephalopathy assessed as **likely fludarabine toxicity — the conditioning regimen, not the cell product** — and AlloNK is non-genetically-modified allogeneic NK, so no rapid-manufacturing hypothesis is available. That's the first *structural* safety argument the engager route carries (lymphodepletion isn't required at all), rather than a claim about comparative gentleness. Second: depth worked, **durability killed it** — which makes redosability, not reversibility, the claim to lead with.
+2. **Aspen ($494M midpoint, Parkinson's, iPSC autologous) and Bambusa ($837M midpoint, COPD/I&I, in-licensed from BioNTech China) price the same week at the same size** — the two-year-old in-licensing vehicle carries a ~$343M premium over the eight-year-old de novo platform.
+3. **Rett pivotals** put an FDA-agreed **baseline-control** design in the field — exactly the Aletira pre-IND ask logged 09-26 — with Daybue's 61%-did-not-improve as the matching warning.
+4. **Novartis** takes a $1.9B Avidity impairment, keeps the $12B deal; rapcabtagene holds stand with **no root cause after two months** — stop waiting for that adjudication.
+5. **CLOSER —** Leerink's $188B firepower, four-for-four on our therapeutic areas, J&J publicly asking for early-stage.
+
+Dedup: 10 candidates → 10 fresh; final 7-key roster re-filtered → 7 fresh, 0 hits; appended (ledger now 111 episodes). Memory updated in place: Winnow, COPD/Bambusa+Aspen, Aletira, and a new §2b entry for **SereNeuro** (JHU non-opioid pain spinout, FDA meeting in November — third instance of the DUA/Syndeo pre-formation pattern).
+
+Source notes worth keeping: Fierce article pages still 403 to curl and `r.jina.ai` now returns a **domain-wide `AbuseAlleviationError`** for fiercebiotech.com (block stated as lifting 09:54 UTC today), though the Fierce section index is readable via Safari UA and worked fine for discovery. Endpoints bodies are paywalled at ~530 words but `datePublished` is extractable, which is how three stale candidates (Star Therapeutics 10-23, OMass 10-15, the CRISPR/AAV piece 09-02) were caught before any fetch budget went into them. **BioBuzz's RSS and WP REST API are stale — newest post 2026-09-10** — so the Maryland beat had no feed this run.
+=== 2026-10-28T02:28:14-07:00 done  blackbird-brief (exit 0) ===
