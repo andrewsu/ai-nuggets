@@ -4268,3 +4268,37 @@ The script is about 2,230 spoken words, roughly 12 minutes, which is slightly ov
   - MLST, Kevin Hartnett "Mathematics Just Changed Forever" (lost to Lex #503 as the deep cut) — https://podcasters.spotify.com/pod/show/machinelearningstreettalk/episodes/Mathematics-Just-Changed-Forever--Kevin-Hartnett-e3r47eh
   - Latent Space, "AI Is Getting Good at Math" (not picked) — https://latent.space/p/ai-is-getting-good-at-math/
 === 2026-10-27T02:37:27-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-28T02:35:28-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no publish, no feed edit, no commit.
+
+**Script:** `podcasts/jinglin-ai-pulse/scripts/2026-10-28-ninety-nine-percent-of-what-we-mean.md` (2,096 spoken words, ~11 min) plus `.rss-item.xml` (XML-validated) and `.commit-msg`.
+
+Theme: the distance between what is claimed and what is actually checked.
+- **Lead:** Genie 4 — no benchmark numbers at all, Gemini 3.8 Flash in the loop supplying the causality pixel prediction doesn't give, and DeepMind's own admission of object-permanence drift. HN graded the demo reel frame by frame.
+- **Second:** Axiom's Lean formalization of the classification of finite simple groups — 24 days, 108 milestones, 34 deviations from the published record, a counterexample inside Walter's UGT proof, a new theorem that Axiom's own mathematicians then made unnecessary.
+- **Money:** Hex, $100M at $1.2B after a from-scratch rewrite; Artificial Analysis Index v5 and the reverse-benchmaxxing fight.
+- **Deep cut:** MLST's Hartnett documentary — the formalization gap, and Buzzard's unpublished 50-Annals-theorems experiment.
+
+**Things to know**
+- **A safety classifier stopped the run mid-way** while I was reading Anthropic's drug-development post (candidate item). Per standing practice I dropped that item entirely rather than rewording, and rebuilt the episode around other candidates. No draft text from it survives; nothing was lost from the final roster since the stop came before drafting.
+- **X/Twitter still unreadable from this host.** All discourse signal is Hacker News comment threads, read via the Algolia items API, and attributed as such in the script.
+- **Amazon/Nova story dropped:** the Futurism page carried a July 29 published date despite the October 27 HN post; I couldn't resolve the discrepancy, so I left it out.
+- **Dedup:** grepped all shows' October scripts for every candidate. Only hit was Anthropic/Mithril, which calibr-briefing covers in today's headlines — a further reason that item is out. Genie 4, Axiom/CFSG, Hex, Index v5 and the MLST episode appear nowhere. The MLST episode was shortlisted and passed over on 10-27, so it's first use.
+
+**Candidate funnel**
+- **Hacker News (Algolia, last 60h, 50+ points):** ~120 stories scanned, ~25 AI-relevant; 3 comment trees read in full.
+- **Podcast feeds:** Latent Space, Dwarkesh, MLST, No Priors scanned; Cognitive Revolution and Interconnects feeds both 404'd (one retry, same). Chose MLST 10-26.
+- **Failed sources:** Substack archive API now returns `{"error":...}` behind Cloudflare for latent.space — used the RSS feed instead. Cognitive Revolution / Interconnects feed URLs dead.
+- **Shortlist** (★ = used):
+  - ★ Genie 4 — https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
+  - ★ Axiom, Formalizing the Enormous Theorem — https://axiommath.ai/research/the-enormous-theorem-formalized
+  - ★ Hex, $100M / 4.0 rewrite — https://hex.tech/blog/hex-new-era/
+  - ★ Artificial Analysis Intelligence Index v5 — https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5
+  - ★ MLST, Mathematics Just Changed Forever (Kevin Hartnett) — https://podcasters.spotify.com/pod/show/machinelearningstreettalk/episodes/Mathematics-Just-Changed-Forever--Kevin-Hartnett-e3r47eh
+  - Anthropic, early progress on drug development (fetched; **dropped after classifier stop**, and covered by calibr today) — https://www.anthropic.com/research/early-progress-drug-development
+  - Amazon gutting its AI division (fetched; date unresolved, dropped) — https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova
+  - Liquid AI LFM3 (fetched, not used — product launch) — https://www.liquid.ai/blog/lfm3
+  - Stanford Daily on pirated books (fetched, not used — litigation, little technical substance) — https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/
+  - Latent Space, Anthropic platform episode (lost to MLST as the deep cut) — https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands
+  - Microsoft buyouts for a quarter of its workforce (not picked — not AI-strategic enough on the available reporting) — https://www.seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce/
+=== 2026-10-28T02:42:12-07:00 done  jinglin-ai-pulse (exit 0) ===
