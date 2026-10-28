@@ -5863,3 +5863,32 @@ The leftover background search for the Foresite portfolio reference file was sto
 
 Today's output stands. The headlines episode is written with its RSS and commit-message stubs, and there's no spotlight episode.
 === 2026-10-27T02:33:23-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-28T02:25:27-07:00 start calibr-briefing ===
+Both episodes written. `SKIP_TTS=1`, so stubs only — no audio, no R2 publish, no feed edit, no commit. `publish_pending.py` picks these up after batch TTS.
+
+**Episodes**
+- `2026-10-28-pharma-headlines` (1,151 words)
+- `2026-10-28-kras-g12d-pancreatic-race-spotlight` (1,419 words)
+
+Six files written (script + `.rss-item.xml` + `.commit-msg` each). Both RSS items parse as valid XML under the itunes namespace; spoken text has no URLs, DOIs or markdown, and alphanumeric identifiers are spelled for the ear.
+
+**A safety classifier stopped the first spotlight.** I started writing an Artiva/AlloNK spotlight — the thesis being that the fatal event was attributed to fludarabine lymphodepletion rather than the cells, which bears on every autoimmune cell therapy — and the classifier stopped it two paragraphs in. The instruction on a stop is not to reproduce that content even reworded, so I abandoned the subject rather than softening it, switched the spotlight to the KRAS G12D race, and repointed the two forward references in the headlines. Artiva still leads the headlines. I wrote this up as a memory, since the same thing cost the whole divarasib spotlight on 10-27.
+
+**Spotlight thesis.** Incyte's zecdarasib landed within four or five patients of Revolution Medicines' zoldonrasib on the same chemotherapy backbones, in cohorts of 26–27 — noise. So the argument is that response rate won't decide this: duration (DAWN-303 vs RASolute 305, both 2028), tolerability (68% diarrhea stacked onto FOLFIRINOX in a cachectic population), and paradigm position, where daraxonrasib's August approval gives Revolution Medicines a field force and an owned combination while Incyte's combinations are partnered.
+
+**Things to check**
+- **The 89%/81% split.** Incyte's release says "ORRs of 89% and 81% (confirmed + pending)" without saying which is which, and BioSpace and Pharmacally read it opposite ways. The spotlight states the ambiguity and tells the listener to use the lower figure; the headlines use 89% with the caveat that these are single-arm cohorts.
+- **Anthropic/Mithril Medicine is single-sourced.** Endpoints has it; its article body is paywalled and nothing else carries it. The headlines say so, and include the on-air disclosure that the briefing is produced with Claude.
+- **No email sent to SEC this run.** Per your note on 10-27 I did not use your address as a UA; plain-curl EDGAR archive fetches got the undeclared-tool block, so I took the Artiva details from GEN, BioSpace and a search-surfaced read of the 8-K exhibit instead.
+
+**Candidate funnel**
+- **BioSpace RSS:** 20 items; 4 read in full (Artiva, Novartis Q3, Incyte ESMO, Leerink M&A firepower). **BioSpace press-releases page:** ~33 items, 3 read in full (Rapport offering, Astellas/Audax, Idorsia/Nxera).
+- **Endpoints RSS:** 24 items, discovery only — article bodies paywalled, confirming the Anthropic item only as far as its subhead.
+- **BioPharma Dive RSS:** 10 items; article pages tag-strip to zero but **WebFetch read them** (Ferring/Gameto and Novo-v-Lilly both read in full) — worth noting, since my file says BPD is Cloudflare-blocked.
+- **GEN RSS:** 10 items, Artiva read in full. **Clinical Trials Arena RSS:** 10 items, Mirum read in full. **STAT RSS:** 20 items, discovery only (paywalled).
+- **Fierce Biotech / Fierce Pharma RSS:** both returned 0 items — fourth straight run.
+- **Primary:** Incyte's full ESMO release (via the BioSpace mirror) and Artiva's May data release PDF (via mutool) both read in full.
+- **Dedup:** Artiva, Gameto/Ferring, Makary, Outpace, Gubra, the 340B item and the Novo-Lilly ruling are all new. Avidity/rapcabtagene were covered 09-09 and 10-05, so Novartis appears only as the new impairment number and the still-open CAR-T holds. Incyte last appeared 10-13 on an unrelated item. COINS and Coefficient Bio were in yesterday's script, so both are callbacks only. Mirum appeared four times earlier in October — this is a new readout.
+- **Chosen:** Artiva, Novartis Q3/Avidity, Incyte G12D (**spotlight**), Anthropic/Mithril, Ferring/Gameto, Astellas/Audax, Rapport financing, Novo-v-Lilly ruling, Mirum + Idorsia, Leerink M&A.
+- **Not used:** Artiva's ACR Convergence withdrawal as a standalone, the Amish/Mennonite gene therapy company, Microsoft's diagnosis study, WuXi's forecast, Novartis's MFN payer threat, UnitedHealth claims, Corxel SPAC (covered 10-27), Teva layoffs, GV's investor ranking, the Hengrui and Junshi ESMO releases.
+=== 2026-10-28T02:35:06-07:00 done  calibr-briefing (exit 0) ===
