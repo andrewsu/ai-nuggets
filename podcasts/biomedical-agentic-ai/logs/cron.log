@@ -5864,3 +5864,30 @@ Policy/funder pages (ARPA-H / NIH / NSF / HHS) and news — not swept; flagging 
 
 Why it won: it's the only item in the window that lands directly on Su's core interests (biomedical KGs, ontologies, data integration) *and* carries original experiments rather than another architecture — retraining QA-GNN and GREASELM across seven UMLS constructions shows MedQA accuracy flat at 37.5–38.7% while an empty graph holding only the undisclosed `Serine`/`Ethanol` fallback concepts scores 37.4%, against published increments of 0.8 and 0.5 points.
 === 2026-10-27T02:04:33-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-28T02:05:26-07:00 start biomedical-agentic-ai ===
+Episode written for **biomedical-agentic-ai**, 2026-10-28. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those).
+
+**Files**
+- `podcasts/biomedical-agentic-ai/scripts/2026-10-28-variantagent-correct-answer-invalid-trace.md` (904 spoken words, cap 1150)
+- `…​.rss-item.xml` (validated as XML, `__LENGTH__` / `__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** "Scaling genetic discovery through automated post-GWAS interpretation" — PGI / VariantAgent (bioRxiv, posted 2026-10-27, Guangzhou Medical University / Guangzhou National Laboratory / Shanghai AI Laboratory). Full text read via direct `.full.pdf` + mutool (13,679 words); the jina `.full` HTML route returned abstract-only. Title web-searched for the re-post trap — no prior public version. DOI verified against the details API; no overlap with any shipped script.
+
+**Candidate funnel**
+
+bioRxiv — details API swept day-by-day 2026-10-25→10-28, 574 records (79 / 167 / 310 / 18), 52 survived the keyword filter at version 1, ~8 substantive after discarding "chemical agent" / "llm"-inside-a-word matches:
+- **CHOSEN** — Scaling genetic discovery through automated post-GWAS interpretation (10.64898/2026.10.23.761278) — full text via PDF
+- Asking the Data: Conversational Interrogation of LC-MS/MS Proteomics Data Sets with an LLM Agent (…2026.10.22.760949) — full text rendered (13.6 KB), runner-up, narrower scope
+- An evidence-governed agent harness for spatial transcriptomics prioritizes ICAM-1 in lung fibrosis (…2026.10.22.760550) — **deferred, render lag** (abstract-only, 1.6 KB)
+- Phenologs at knowledge-graph scale (…2026.10.23.761438) — **deferred, render lag** (abstract-only, 1.6 KB)
+- Benchmarking LLMs for Transcriptomic Data Analysis and Visualization (…2026.10.22.761023); Building virtual cell dynamics that evolve with biological measurements (…2026.10.23.761350); Prediction transfer does not imply reliability transfer in single-cell foundation models (…2026.10.21.760716) — not fetched, outranked
+
+arXiv — shared cache `/tmp/ai-nuggets-arxiv-cache.xml` absent (runner pre-fetch failed); live listing first returned the 14-byte "Rate exceeded." body, one retry succeeded. 300 entries, all 2026-10-26/27 (the 300-cap covers under two days). 125 keyword hits, biomedically relevant shortlist: CohortFlow (2610.36100), Ontology-guided multi-agent differential diagnosis (2610.36325), M4Bench clinical EHR derivation agents (2610.37459), Clearing the FoG: KG agents retrieving their evidence (2610.37405), Do AI Scientists Know What's New? (2610.36511), Prospector (2610.37121).
+
+PubMed — 102 hits in the 10-23→10-28 entry-date window, 60 inspected. Best-fitting items both fall behind known full-text walls: "Automated standardization of legacy biomedical metadata using an ontology-constrained LLM agent" (J Biomed Inform, Elsevier) and "BioHarness" (Bioinformatics, OUP Cloudflare) — discovery-only, not eligible under the full-text gate. ARGUS (2610.12281) and the semantic-scoring KG paper (bioRxiv 2026.09.29) are both out of window.
+
+News / product launches — swept, nothing in the 3-day window; closest hits were June–July 2026 releases.
+
+Policy / funders — ARPA-H news page checked: six October items, none AI-related (Delphi biosensors 10-01, BIOGAMI 10-09, Alzheimer's projects 10-22).
+=== 2026-10-28T02:11:53-07:00 done  biomedical-agentic-ai (exit 0) ===
