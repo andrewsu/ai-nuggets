@@ -5969,3 +5969,27 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md this run produced stub
 
 Two notes worth flagging: the first draft ran 12 items / 3,697 words and paraphrase-trimming recovered only ~100 words — dropping an item was the only thing that worked. And three arXiv papers plus two bioRxiv Tier 1 items were read or fetched but unused; their full text is on disk and logged to memory for tomorrow.
 === 2026-10-27T03:06:40-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-28T02:55:29-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md this run produced **stubs only** — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-10-28-receptor-and-reason.md` — 12 items, 3,103 spoken words (~17 min)
+- `…​.rss-item.xml` — validates as XML under the itunes namespace, `__LENGTH__` / `__DURATION__` intact, no unescaped ampersands
+- `…​.commit-msg`
+- Ledger appended: 12 keys, now 155 episodes / 1,606 unique keys
+
+**Theme:** "two tests are not a comparison" — the difference between a difference and a difference in significance.
+
+**Candidate funnel**
+
+- **bioRxiv + medRxiv details API**: reused yesterday's immutable day-files for 10-19→10-26 and swept only 10-27/10-28 fresh (~90 s instead of ~25 min). 2,278 unique records → 401 bio + 108 med in-window on DOI date with version==1 → 397 / 105 after dedup → 12 full texts fetched, **9/9 bioRxiv and 3/3 medRxiv clean** via jina `.full.pdf`, zero Cloudflare throttling.
+- **arXiv**: the shared cache was **missing** this morning, so one live listing call — 400 entries, covering only 10-26 and 10-27, continuous with yesterday's 10-23→10-26. No 429. 172 bio×agentic → 171 fresh → 7 PDFs via `curl` + `mutool`, 7/7 clean.
+- **Nature RSS**: `npp` `neuro` `nbt` `nm` `natcancer` all 200 with 8 items each; `mp` returned the known 150-byte empty. 40 DOIs resolved via Crossref, 4 in-window and on-target, and **three came back as full text through jina** — Nature carried two roster items (chronic demyelination, amygdala category cells).
+- **Psychiatric Times, OUP, Elsevier (Neuropharmacology, PNBP, Biol Psychiatry)**: known-blocked from this host, discovery-only, not fetched.
+
+**Dedup**: arXiv 172→171, bioRxiv 401→397, medRxiv 108→105, Nature 4→4; final roster re-gated 11→11 clean, then the late PACAP addition gated separately 1→1. Concept greps clean — the two prior "M4 PAM" hits are an incidental shortlist mention from 05-13 and an unrelated GRAB-ACh 6-OHDA paper from 06-13.
+
+**Chosen (12)**, lead first: M4 PAM striatal dissociation · levodopa bimanual string-pulling · chronic demyelination and DMHCA · β2AR pressure-resolved DEER · PACAP cell-type signaling · amygdala category cells · opioid-addiction brain-to-words · ADHD within-sibship MR · spectroscopy receptor-architecture · Bern sleep-registry LLM extraction · M4Bench · Genedex.
+
+Two things worth flagging. The muscarinic lead and MIT's EHR benchmark **M4Bench** collide by name; they sit ten items apart and the script calls the collision out explicitly rather than hoping the listener sorts it out. And the Nature Medicine ALS T-cell paper was read in full and dropped — four of its five headline correlations carry no reported statistic at all, which is a good item but didn't beat anything on the roster; it's logged as the top carryover along with two bioRxiv full texts and three arXiv papers already on disk.
+=== 2026-10-28T03:12:37-07:00 done  receptor-and-reason (exit 0) ===
