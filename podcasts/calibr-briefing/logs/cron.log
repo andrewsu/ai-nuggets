@@ -5892,3 +5892,47 @@ Six files written (script + `.rss-item.xml` + `.commit-msg` each). Both RSS item
 - **Chosen:** Artiva, Novartis Q3/Avidity, Incyte G12D (**spotlight**), Anthropic/Mithril, Ferring/Gameto, Astellas/Audax, Rapport financing, Novo-v-Lilly ruling, Mirum + Idorsia, Leerink M&A.
 - **Not used:** Artiva's ACR Convergence withdrawal as a standalone, the Amish/Mennonite gene therapy company, Microsoft's diagnosis study, WuXi's forecast, Novartis's MFN payer threat, UnitedHealth claims, Corxel SPAC (covered 10-27), Teva layoffs, GV's investor ranking, the Hengrui and Junshi ESMO releases.
 === 2026-10-28T02:35:06-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-29T02:20:16-07:00 start calibr-briefing ===
+I wrote both of today's scripts and their stub files. `SKIP_TTS=1` was set, so I didn't run TTS, publish anything, edit `feed.xml` or commit; `publish_pending.py` does those after the batch TTS run.
+
+**Files in `podcasts/calibr-briefing/scripts/`**
+- `2026-10-29-pharma-headlines.txt` (1,094 words, about 6 minutes), with its `.rss-item.xml` and `.commit-msg`
+- `2026-10-29-genmab-petosemtamab-head-neck-spotlight.txt` (1,309 words, about 7 minutes), with its `.rss-item.xml` and `.commit-msg`
+- Both RSS items parse as valid XML and use the `__LENGTH__` / `__DURATION__` placeholders.
+
+**Spotlight: Genmab's petosemtamab Phase 3 (LiGeR-HN1).** Added to Keytruda in 699 patients with first-line head and neck cancer, it halved the risk of death (hazard ratio 0.50) at the first interim analysis. The episode covers:
+- why a hazard ratio from a first interim look tends to shrink later;
+- that the control arm was Keytruda alone, not Keytruda plus chemotherapy;
+- that the side-effect rates haven't been released;
+- how the drug works: one arm uses LGR5 to pull EGFR into the cell for degradation, and the Fc recruits NK cells;
+- this as Genmab's third positive readout of the month, against the coming loss of its Darzalex royalties;
+- Bicara's 48% drop, set against BMO's view that the result supports Bicara's own drug.
+
+I read the full Genmab press release from its SEC 6-K exhibit. Truist's median-survival and response-rate figures are analyst estimates, and the script says so.
+
+**Candidate funnel**
+- Sources:
+  - BioSpace RSS: 20 items. 9 were new since yesterday's run and on topic, and I read the full text of 7 of those.
+  - Endpoints RSS: 24 items, 11 new. Article pages are paywalled, so I used the feed summaries.
+  - BioPharma Dive RSS: 10 items, 3 new. Article bodies came back empty to curl; I used BioSpace's versions of the same stories.
+  - STAT RSS: 20 items, 4 relevant.
+  - BioSpace press releases page: about 35 items, 5 overnight releases fully read.
+  - SEC EDGAR full-text search: found the Genmab release.
+  - Fierce Biotech and Fierce Pharma RSS: **0 items**, so nothing from Fierce was used (it has been empty several runs in a row).
+- Shortlist:
+  - ★ SPOTLIGHT and headline 1: Genmab LiGeR-HN1 — https://www.sec.gov/Archives/edgar/data/1434265/000143426526000140/gmab_20261028xex99d1.htm (coverage: https://www.biospace.com/drug-development/genmabs-cancer-bispecific-delivers-early-survival-win-in-exceedingly-positive-phase-3-readout)
+  - ★ Lilly retatrutide beats Ozempic head to head (TRANSCEND-T2D-2) — https://www.biospace.com/drug-development/lillys-retatrutide-trounces-novos-ozempic-in-diabetes-weight-loss
+  - ★ FDA draft guidance on one license covering patient-specific gene therapies, plus Medicaid access model expansion — https://www.biospace.com/fda/new-fda-draft-guidance-doubles-down-on-expediting-approvals-of-personalized-gene-therapies
+  - ★ HHS lets pharmacies compound six unapproved peptides — https://www.statnews.com/2026/10/28/hhs-enforcement-discretion-policy-allows-peptide-compounding/
+  - ★ Biogen Q3 — https://www.biospace.com/business/biogen-notches-3rd-straight-quarter-of-growth-thanks-to-newer-products-apellis
+  - ★ GSK vaccine sales miss — https://www.biospace.com/business/gsk-vaccine-sales-miss-expectations-amid-falling-demand-from-adults
+  - ★ Formation Bio $600M fund — https://endpoints.news/formation-bio-unveils-600m-fund-tied-to-existing-model/ (feed summary only)
+  - ★ BioGeometry $100M+ Series A — https://endpoints.news/beijing-based-biogeometry-gets-100m-for-ai-drug-rd/ (feed summary only; two funding-database sites list smaller amounts, so the script says "BioGeometry says")
+  - ★ Ascletis oral GLP-1 Phase 2, Coherus CCR8 antibody, Takeda first-half results (BioSpace press releases)
+  - ★ 4,000+ manufacturing job cuts — https://www.biospace.com/job-trends/biopharma-cuts-at-manufacturing-plants-expected-to-affect-4-000
+  - Mentioned as upcoming only: Kymera's IRF5 degrader and Iovance's lung cancer data, both due today.
+  - Not used: Pfizer India plant closure, AstraZeneca feature, Zocdoc AI agents (lower priority, paywalled); yesterday's already-covered stories (Astellas/Audax, Anthropic/Mithril, Novartis, Artiva).
+- Dedup: I checked every final item against the October scripts. The peptide policy was previewed on 10-23 and the Coherus data on 10-15 as upcoming, so today's mentions are follow-ups, not repeats.
+
+I also added a dated note to my news-sources memory file: EDGAR full-text search finds foreign companies' filings, like Genmab's 6-K, and was the only same-day route to its release.
+=== 2026-10-29T02:26:04-07:00 done  calibr-briefing (exit 0) ===
