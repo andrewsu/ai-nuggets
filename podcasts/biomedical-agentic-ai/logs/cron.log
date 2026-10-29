@@ -5891,3 +5891,38 @@ News / product launches — swept, nothing in the 3-day window; closest hits wer
 
 Policy / funders — ARPA-H news page checked: six October items, none AI-related (Delphi biosensors 10-01, BIOGAMI 10-09, Alzheimer's projects 10-22).
 === 2026-10-28T02:11:53-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-29T02:00:14-07:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` was set, so I wrote the script plus the two stub files only — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Today's pick:** "Verifiable Agentic Science on Public Infrastructure" (bioRxiv, posted 2026-10-28), Galaxy project — https://www.biorxiv.org/content/10.64898/2026.10.26.761864v1
+
+Files written to `podcasts/biomedical-agentic-ai/scripts/`:
+- `2026-10-29-orbit-provenance-is-where-you-run-not-how-careful-you-are.md` (1,002 spoken words, under the 1,150 cap)
+- `.rss-item.xml` (validated as XML; `__LENGTH__`/`__DURATION__` tokens present)
+- `.commit-msg`
+
+Full text read via plain `curl` + Safari UA on `.full.pdf` → `mutool` (21 MB PDF, 22.5k words) after the jina route returned a 211-byte stub.
+
+**Candidate funnel**
+
+- **bioRxiv/medRxiv details API** — day-by-day sweep 10-26→10-29, 1,079 records scanned (biorxiv 167/310/352/6; medrxiv 118/20/106/0 — 10-29 returned zero records, guarded). 80 survived the keyword filter at version==1 and date ≥ 10-25.
+- **arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml` had 500 entries but only 10-26/10-27 (the 500-entry cap). One live listing call confirmed arXiv has announced nothing past 10-27, so the window is complete, not truncated. 183 keyword hits, 15 substantive after discarding spurious matches.
+- **ChemRxiv / news / funder pages** — not swept; the bioRxiv lead was decisive and already full-text verified. Recall gap noted.
+
+Shortlist (after discarding spurious "diagnosis"/"agent" matches — robot failure diagnosis, jet-tagger diagnosis, olive tree disease):
+- **Verifiable Agentic Science on Public Infrastructure** — 10.64898/2026.10.26.761864 — **CHOSEN**
+- Phenologs at knowledge-graph scale: mouse-to-slime-mold catalog — 10.64898/2026.10.23.761438 (full text read, 17k words — strong runner-up)
+- Asking the Data: conversational interrogation of LC-MS/MS proteomics with an LLM agent — 10.64898/2026.10.22.760949 (full text read)
+- Scaling genetic discovery through automated post-GWAS interpretation — 10.64898/2026.10.23.761278 — **already shipped 10-28 as VariantAgent**, excluded
+- Ontology-guided multi-agent reasoning for explainable differential diagnosis — arXiv 2610.36325
+- Do AI Scientists Know What's New? — arXiv 2610.36511
+- Before Blaming the LLM, Diagnose the Workflow (NL → ontology-grounded statements) — arXiv 2610.35267
+- AskGLP1: knowledge-graph LLM agent over patient narratives — arXiv 2610.34987
+- CohortFlow: steerable clinical cohort curation agent — arXiv 2610.36100
+- Making Self-Driving Laboratories Auditable — arXiv 2610.36761
+- Fixing the Measurement Model Before the Selection Heuristics (living-cell SDLs) — 10.64898/2026.10.27.762131
+- Richer database context improves LLM-generated EHR phenotyping algorithms — 10.64898/2026.10.27.26366654
+- LLMs detect methodological errors human peer review misses — 10.64898/2026.10.25.26366455
+
+Two notes worth flagging: the dedup check caught that **post-GWAS interpretation (761278) was yesterday's episode** — I had already pulled its full text before checking, which is the over-read pattern rather than a re-ship. And the chosen paper's own benchmark uses Claude Opus 5.5, Codex and Gemini as the thirty planning agents, so the episode describes a result about this model family among others.
+=== 2026-10-29T02:07:45-07:00 done  biomedical-agentic-ai (exit 0) ===
