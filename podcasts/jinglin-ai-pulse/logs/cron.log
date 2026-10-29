@@ -4302,3 +4302,43 @@ Theme: the distance between what is claimed and what is actually checked.
   - Latent Space, Anthropic platform episode (lost to MLST as the deep cut) — https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands
   - Microsoft buyouts for a quarter of its workforce (not picked — not AI-strategic enough on the available reporting) — https://www.seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce/
 === 2026-10-28T02:42:12-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-29T02:30:16-07:00 start jinglin-ai-pulse ===
+Script and stubs written. `SKIP_TTS=1`, so no TTS, no publish, no feed edit, and no commit — the orchestrator handles those after batch TTS.
+
+**Episode:** `2026-10-29-not-in-the-weights` — 2,541 spoken words (in line with the last two weeks: 2,096–2,735).
+
+Files written to `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-10-29-not-in-the-weights.md`
+- `2026-10-29-not-in-the-weights.rss-item.xml` (validates as XML with the itunes namespace; `__LENGTH__` / `__DURATION__` placeholders)
+- `2026-10-29-not-in-the-weights.commit-msg`
+
+**Theme:** where safety actually lives — in the model, in the harness, or in an architecture parameter nobody audits.
+- **Lead:** Gemini 4 Carbon. #1 on Artificial Analysis v5 at 59, SOTA cyber numbers, and two zeroes (Terminal-Bench 4.0 cheating, Gray Swan prompt injection) — on a model released only to cyber defenders via Fairwind, so none of it is externally checkable. Read the raw page, so footnote 1 ($4/$20 after the $2/$10 intro period) is in the script.
+- **Second:** Qwenputer — a RISC-V CPU compiled into Qwen 3.5's weights with Gated DeltaNet as exact RAM — and the follow-up that carries the episode: OLMo-Hybrid learns to track parity silently at 2× training length (0.89, 6 seeds) while β-capped Qwen and a dense control fall to chance, and capping β reproduces the null. Chain-of-thought monitorability is an architecture choice.
+- **Money:** Alphabet Q3 — $127.6B revenue, Cloud +103%, Pichai naming Carbon as "leading at the frontier" the same day it went to defenders only; $51.4B quarterly capex and −$9.1B free cash flow, second negative quarter running.
+- **Deep cut:** Latent Space with Anthropic's platform team — brain/hands separation, and the point that distillation is a safety problem because safeguard classifiers live on the token stream, not in the weights.
+
+**Things to know**
+- **The classifier stop at the start of this run cost no content.** It landed before any source was fetched, so per standing practice I did not revisit or reword anything from it — this roster was built fresh off Hacker News and the podcast feeds.
+- **Dedup caught two items that would have shipped twice.** Leash Bio / Ian Quigley looked like an ideal deep cut (the "answer key" clip re-posted Oct 26) until a grep showed the 10-16 episode already used that exact Latent Space episode including the chemist-fingerprint result — dropped. Anthropic's S-1 was likewise fully covered on 10-27, so Money Moves went to Alphabet instead.
+- **Qwenputer is dated Oct 22,** outside the 48-hour discourse window on its own; it qualifies on the Oct 28 Hacker News surfacing (440 points), and the script dates it explicitly.
+- **New transcript route recorded to memory:** Latent Space has moved episodes to beehiiv, where the Substack posts API 404s; the beehiiv page embeds the full transcript inline, and latent.space pages expose a `rss.beehiiv.com/.../<uuid>.vtt`. Four podcast feed URLs in my notes are now dead (Cognitive Revolution, MLST, No Priors, Dwarkesh).
+
+**Candidate funnel**
+- **Hacker News (Algolia, last 60h, 40+ points):** 123 stories, ~30 AI-relevant; 3 comment trees read in full (744 / 90 / 348 comments).
+- **Podcast feeds:** Latent Space RSS scanned (8 recent episodes); Cognitive Revolution, MLST, No Priors, Dwarkesh feeds all 404'd.
+- **Primary sources read in full:** Gemini 4 Carbon post (raw HTML, incl. footnote), Qwenputer, the RNN-state follow-up, Alphabet Q3 earnings PDF (via mutool), Latent Space Anthropic transcript (~25k words).
+- **Failed/skipped sources:** X/Twitter still unreadable from this host — all discourse is Hacker News, attributed as such. WebSearch for Alphabet Q3 returned 2025 figures; superseded by the primary PDF.
+- **Shortlist** (★ = used):
+  - ★ Gemini 4 Carbon — https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+  - ★ Qwenputer — https://divagr.com/blog/qwenputer
+  - ★ Hybrid models can hide reasoning in their RNN state — https://divagr.com/blog/hybrid-models-can-hide-reasoning-in-their-rnn-state
+  - ★ Alphabet Q3 2026 results — https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf
+  - ★ Latent Space, Separating the Brain from the Hands — https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands
+  - Latent Space / Leash Bio "answer key" clip (dropped — same episode shipped 10-16) — https://www.latent.space/p/lab-in-the-loop-at-compute-speed
+  - Stack Overflow under 1,000 questions/month (read the thread; cut for length) — https://data.stackexchange.com/stackoverflow/query/1926661
+  - Dayjob: Tax, 50 professional tax assignments (fetched, not used — lost to the stronger eval angle) — https://surgehq.ai/blog/dayjob-tax
+  - Claude Code background-agent transcripts (not picked — gist, unverified claim) — https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce
+  - Cursor Agent SDK / Nvidia Nemotron Transcribe / Google Sleep framework (not picked — product launches) 
+  - Amazon Leo $11.5B Globalstar approval (not picked — Alphabet was the better money story) — https://www.reuters.com/business/media-telecom/us-agency-approves-amazon-leos-115-bil
+=== 2026-10-29T02:41:28-07:00 done  jinglin-ai-pulse (exit 0) ===
