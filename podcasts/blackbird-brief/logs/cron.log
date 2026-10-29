@@ -3901,3 +3901,22 @@ Dedup: 10 candidates → 10 fresh; final 7-key roster re-filtered → 7 fresh, 0
 
 Source notes worth keeping: Fierce article pages still 403 to curl and `r.jina.ai` now returns a **domain-wide `AbuseAlleviationError`** for fiercebiotech.com (block stated as lifting 09:54 UTC today), though the Fierce section index is readable via Safari UA and worked fine for discovery. Endpoints bodies are paywalled at ~530 words but `datePublished` is extractable, which is how three stale candidates (Star Therapeutics 10-23, OMass 10-15, the CRISPR/AAV piece 09-02) were caught before any fetch budget went into them. **BioBuzz's RSS and WP REST API are stale — newest post 2026-09-10** — so the Maryland beat had no feed this run.
 === 2026-10-28T02:28:14-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-10-29T02:10:15-07:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Published artifacts**
+- `podcasts/blackbird-brief/scripts/2026-10-29-portfolio-watch.md` — 1,664 spoken words (~8 min), no URLs/DOIs in the spoken body
+- `.rss-item.xml` + `.commit-msg` stubs (XML validated)
+- `state/shipped.jsonl` — 6 keys appended (112 episodes)
+- `memory/blackbird-portfolio.md` — edited in place: Winnow, NuGate, Artemyx entries + a new spinout-structure comparator
+
+**Note on this run:** my first draft led on the FDA's new individualized genome-editing draft guidance and was stopped by a safety classifier mid-write. Per the standing rule I did not reword it — I pivoted the spotlight to a different subject entirely. That item is therefore *not* in today's episode and is still unshipped; it's a legitimate Aletira/NuGate regulatory item for a future run if someone wants it covered.
+
+**Candidate funnel**
+- Sources: BioSpace `/news` (26 URLs) + `/press-releases` via jina (34 dated) · Endpoints homepage (66 URLs) + jina `/news/` index with `x-no-cache` (24 dated) · Fierce `/biotech` (4 URLs) · BioPharma Dive homepage · SEC EDGAR (Biogen 8-K, 617 KB) · PR Newswire · Crossref · nature.com via jina · JHTV + `hub.jhu.edu/health` via jina
+- Source failures (none aborted): BioPharma Dive homepage yielded **0 extractable hrefs**; Fierce article bodies were 701-byte stubs via jina (index only); `hhs.gov` 403s direct curl; BioSpace press-release slugs 403 **via jina** but return 188 KB to plain curl — the inverse of the usual pattern, now recorded in memory
+- Dedup: 16 candidates → 16 fresh; +1 DOI → 1 fresh; final 6-key roster re-filtered, 0 hits, 0 title matches. Asset-name grep over all scripts for Formation Bio / Alamar / NULISA / KT-579 / RayThera / TOPAZ: zero prior mentions
+- Shipped: Formation Bio $600M fund (lead) · Emory/Alamar 10-protein ALS panel · Kymera KT-579 (bar stated, not outcome — intraday) · Biogen Q3
+- Dropped: Amish/Mennonite gene-therapy vehicle (paywalled, 2nd deferral) · Star Therapeutics $200M (out of window, fold into a structural piece with item 1) · Outpace OPB-101 (different company from OnCusp, no portfolio line) · ~12 others with no Blackbird line
+- Quiet: Aletira/SELEXON, GPR52 NewCo, Clasp, Biolinco, DELFI, Georgiamune, 1104health; nothing dated from JHU/UMB/Lieber in window
+=== 2026-10-29T02:21:40-07:00 done  blackbird-brief (exit 0) ===
