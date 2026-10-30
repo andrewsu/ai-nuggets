@@ -6017,3 +6017,53 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md this run produced **st
 
 Three things worth flagging. The concept grep caught that the 09-29 episode covered the **competing** THIK-1 structure that today's paper explicitly rebuts — the item is now built around that callback, and a DOI-only dedup would have missed it; I've recorded "grep the tool-compound name, not just the DOI" to memory. Two bioRxiv items returned the 305-byte iframe warning (not yet rendered) and are logged for retest: the orexin/dynorphin VTA→BLA morphine paper and "Verifiable Agentic Science." And six full texts plus two arXiv PDFs were read or fetched and unused; they're on disk at `/home/asu/rr-work/` and logged for tomorrow.
 === 2026-10-29T03:05:24-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-30T02:50:12-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was confirmed on the first call, so this run produced stubs only — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-10-30-receptor-and-reason.md` (3,283 spoken words, ~18 min)
+- `…2026-10-30-receptor-and-reason.rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `…2026-10-30-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, now 157 episodes / 1,629 unique keys
+
+**Episode spine:** magnitude is not the lever — across today's papers the deciding variable is where the signal sits and which way it points, not how much of it there is.
+
+**Candidate funnel**
+
+bioRxiv + medRxiv details API, day-by-day 10-24 → 10-30 (the multi-day range truncates): 1,752 records fetched, 1,291 version-1 and in-window after the DOI-date guard, 76 passing the relevance filter, 29 shortlisted, 22 fresh after dedup (7 already shipped — including the M4 PAM striatal-dopamine paper and CVN293, both run this week). medRxiv 10-30 returned `no posts found` (guarded, not a failure).
+
+arXiv shared cache `/tmp/ai-nuggets-arxiv-cache.xml`: 500 entries, histogram covers only 10-27 → 10-29 (the 500-entry cap again), 79 agentic+biomedical matches at 10-28 or later, 3 pulled as PDFs via `mutool`, all three grep-clean for `placeholder`.
+
+Journals via Crossref `from-created-date:2026-10-23` across 16 ISSNs: 130 articles, 3 dropped by dedup — notably the ACS Chem Neuro GluA3 PAM **BRD3290**, caught as a *title* match against its bioRxiv preprint shipped 07-31.
+
+Full-text gate — deferred, not rejected:
+- Nature Neuroscience psychedelics 5-HT2AR/β-arrestin (IHCH-8152, PDB depositions) — jina returned 76 KB of references and extended-data captions, no body. Paywalled. **Strongest item lost today**; worth a preprint hunt later.
+- Mol Psychiatry evolutionary neuropharmacology of psychedelics — references only.
+- Nature Mental Health adolescent AI response tool — 4 paywall markers.
+- ACS Chem Neuro "The Potency Problem in GPCR Biased Agonism" — pubs.acs.org 542-byte stub.
+- Transl Psychiatry tirzepatide/suicidal ideation — OA but render truncated at 11 KB.
+- bioRxiv render lag (abstract-only via `.full`, and `.full.pdf` also empty): **DIMER** Parkinson drug discovery (…762666), **orexin/dynorphin VTA→BLA after morphine** (…761541). Both posted 10-28/10-24 — retest these.
+- `fetch_preprint.py` has no medRxiv path for the yeast oral GLP-1/GIP item — returned "no record for this DOI" against the biorxiv endpoint.
+
+Recovered by the `.full.pdf`-via-jina route after `.full` gave abstract-only: both GNAO1 preprints and the ketamine/PD paper.
+
+Chosen (all 11 read in full):
+
+| # | Item | Source |
+|---|---|---|
+| 1 | Sex- and frequency-dependent smoked cannabis PK/PD RCT | Neuropsychopharmacology |
+| 2 | Baclofen × drinking history on TMS-indexed GABA-B inhibition | Transl Psychiatry |
+| 3 | Anti-GABA-B autoimmunity, presynaptic-only pathology | bioRxiv …761036 |
+| 4 | β4-MC engineered presynaptic release proteins | bioRxiv …761409 |
+| 5 | GNAO1 mechanistic classification, Gβγ sequestration | bioRxiv …761540 |
+| 6 | GNAO1 RGS-insensitive class | bioRxiv …762269 |
+| 7 | Ketamine neuroprotection in 6-OHDA not TrkB-dependent | bioRxiv …762430 |
+| 8 | Simulation-trained psychiatric intake agent | arXiv 2610.40476 |
+| 9 | ClinGeX clinical genomic agent | arXiv 2610.40556 |
+| 10 | MolRSI recursive self-improving molecular discovery | arXiv 2610.39714 |
+| 11 | CHI-DEL resistance-mutant rescue on CHI3L1 | bioRxiv …760326 |
+
+Two guard checks ran clean: grepping every show's scripts for the tool-compound names (CHI-DEL, gallein, ANA-12, GNAO1, ClinGeX, MolRSI) surfaced only a passing CHI3L1 biomarker mention from 07-07, a different asset; and a title search for CHI-DEL found no prior posting, ruling out the bioRxiv re-post trap. Sources for that check: [Nat Commun CHI3L1/glioblastoma](https://www.nature.com/articles/s41467-024-45067-8.pdf), [stemjnl preprint PPR403243](https://stemjnl.org/preprints/PPR403243), [Biopolymers and Cell CHI3L1 isoforms](https://biopolymers.org.ua/content/40/3/193).
+
+One thing to flag about this run: your earlier invocation was halted by the safety classifier before producing any output, and nothing from it was recoverable on disk beyond three scratch scripts. Per the standing rule I did not try to reconstruct that draft — this episode was built from a fresh sweep, so there is a small chance it overlaps with whatever that attempt had selected.
+=== 2026-10-30T03:09:43-07:00 done  receptor-and-reason (exit 0) ===
