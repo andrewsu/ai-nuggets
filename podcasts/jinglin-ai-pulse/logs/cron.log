@@ -4342,3 +4342,47 @@ Files written to `podcasts/jinglin-ai-pulse/scripts/`:
   - Cursor Agent SDK / Nvidia Nemotron Transcribe / Google Sleep framework (not picked — product launches) 
   - Amazon Leo $11.5B Globalstar approval (not picked — Alphabet was the better money story) — https://www.reuters.com/business/media-telecom/us-agency-approves-amazon-leos-115-bil
 === 2026-10-29T02:41:28-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-30T02:30:11-07:00 start jinglin-ai-pulse ===
+Script and stubs written. `SKIP_TTS=1`, so no TTS, no R2 publish, no feed edit, and no commit — the orchestrator handles those after batch TTS.
+
+**Episode:** `2026-10-30-the-last-part-made-by-hand` — 2,545 spoken words (in line with the last two weeks).
+
+Files in `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-10-30-the-last-part-made-by-hand.md`
+- `2026-10-30-the-last-part-made-by-hand.rss-item.xml` (parses as XML with the itunes namespace; `__LENGTH__` / `__DURATION__` placeholders)
+- `2026-10-30-the-last-part-made-by-hand.commit-msg` (one line, per PIPELINE)
+
+**Theme:** what happens to the parts of a system that were made by hand.
+- **Lead:** Cartesia's "From Tokens to Bytes I" — a properly controlled scaling ladder (in-corpus retrained BPE baseline, parameter/FLOP/compression-matched H-Net) putting a price on the hand-built tokenizer: 1.28× in-domain, 2.06× on OLMES, median 3.10× on programming languages held out of training, and ~1T tokens to match what SmolLM3 needed 11T for at equal FLOPs/byte. The DNA section is the Ollie-specific payload: 5.95–7.06× on nucleotides, and emergent codon-aligned chunk boundaries in a human histone gene the model never saw.
+- **Second:** Mistral Large 4 open weights — the real result is token efficiency (48 on the Coding Agent Index tied with GLM-5.3 at 47% fewer tokens), and the paragraph conceding real-world uplift potential with guardrails still being revised on weights already distributed. Kept short and analytical.
+- **Third:** Stack Overflow under 1,000 questions/month, with the thread's own correction (peak was 2013; tool-calling models read docs rather than needing a canonical answer), paired with Fowler's "LLM Voice" from the same day.
+- **Money:** FuriosaAI's $620M Series D at $2.9B — Korea's National Growth Fund at $280M against $110M from all international investors combined.
+- **Deep cut:** RAND's Predd/Boudreaux/Chessen on The Cognitive Revolution — seven archetypes, five pivot factors, Root's mutual-sabotage equilibrium and the wonder-weapon condition, nuclear strategy reread as a sequence, and "we may be running an acceleration strategy by default."
+
+**Things to know**
+- **The classifier stop early in this run cost no shipped content** — it landed before any source had been read, and per standing practice I did not revisit or reword anything from it. This roster was built fresh.
+- **Dedup caught one deep cut.** The Cognitive Revolution's Alex Rives / Biohub virtual-cell episode was the obvious pick for Ollie, but the 10-23 episode already used that exact episode as its deep cut — dropped for the RAND one. Also grep-checked Cartesia, H-Net, SmolLM3, Furiosa, "Le Chonk": no prior hits.
+- **Alphabet was deliberately skipped** despite three front-page HN items (Search below half of revenue, the $500B market-value drop) — yesterday's Money Moves was Alphabet's Q3 release, and the drop is the same subject one day later.
+- **Mistral's benchmark claims are the vendor's own**, as is FuriosaAI's performance claim; both are attributed as such in the script.
+
+**Candidate funnel**
+- **Hacker News** (Algolia `search_by_date`, last 40h, >40 points): 88 stories, ~30 AI-relevant; 1 comment tree read in full (699 comments).
+- **Podcast feeds:** 5 scanned — Latent Space, Cognitive Revolution, No Priors, TWIML, MLST all returned current items (all five feed URLs from memory still live).
+- **Read in full:** Cartesia post, Mistral post, Fowler post, the Stack Overflow thread, the FuriosaAI release, the RAND episode transcript (22.5k words).
+- **Failed/limited sources:** X/Twitter still unreadable from this host, so all discourse signal is Hacker News and is attributed as such. First WebSearch for same-day funding returned mostly low-quality aggregator pages; the FuriosaAI figures come from the Business Wire release, not the aggregators.
+- **Shortlist** (★ = used):
+  - ★ From Tokens to Bytes I — https://www.cartesia.ai/blog/from-tokens-to-bytes-part-1
+  - ★ Mistral Large 4 open weights — https://mistral.ai/news/mistral-large-4-oss/
+  - ★ Stack Overflow under 1,000 questions/month — https://news.ycombinator.com/item?id=50282454
+  - ★ Martin Fowler, LLM Voice — https://martinfowler.com/bliki/LLM-Voice.html
+  - ★ FuriosaAI $620M Series D — https://finance.yahoo.com/technology/ai/articles/furiosaai-secures-620-million-series-235700023.html
+  - ★ RAND on The Cognitive Revolution — https://www.cognitiverevolution.ai/freedom-of-action-america-s-asi-strategy-w-rand-s-joel-predd-ben-boudreaux-matt-chessen/
+  - Cognitive Revolution / Alex Rives on virtual cells (dropped — used as the 10-23 deep cut) — https://www.cognitiverevolution.ai/a-world-model-of-life-biohub-s-alex-rives-on-virtual-cells-measurement-the-1-8b-data-push/
+  - Google Search below half of Alphabet revenue; Alphabet's $500B drop (dropped — Alphabet was yesterday's money item)
+  - Why good developers are wary of agentic development (fetched, cut for length) — https://martinfowler.com/rachels-ramblings/good-devs-wary.html
+  - MLST, Kevin Hartnett on mathematics (not picked — AI-and-proof covered 10-23 and 10-27)
+  - TWIML #782, Daniel Jeffries on agentic products (not picked — TWIML has no transcript route)
+  - No Priors, Serval (not picked — no transcript; would need audio transcription)
+  - Claude Code background-agent transcript gist (not picked — unverified single-author claim)
+  - DoorDash–Instacart $17B (not picked — not an AI story)
+=== 2026-10-30T02:37:53-07:00 done  jinglin-ai-pulse (exit 0) ===
