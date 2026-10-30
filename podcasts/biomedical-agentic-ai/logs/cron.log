@@ -5926,3 +5926,32 @@ Shortlist (after discarding spurious "diagnosis"/"agent" matches — robot failu
 
 Two notes worth flagging: the dedup check caught that **post-GWAS interpretation (761278) was yesterday's episode** — I had already pulled its full text before checking, which is the over-read pattern rather than a re-ship. And the chosen paper's own benchmark uses Claude Opus 5.5, Codex and Gemini as the thirty planning agents, so the episode describes a result about this model family among others.
 === 2026-10-29T02:07:45-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-30T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written for 2026-10-30. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Files written** (`podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-10-30-what-does-an-ontology-catch.md` — 1,054 spoken words (cap 1,150)
+- `2026-10-30-what-does-an-ontology-catch.rss-item.xml` — validated as XML, `__LENGTH__`/`__DURATION__` placeholders in place
+- `2026-10-30-what-does-an-ontology-catch.commit-msg`
+
+**Pick:** "What Does an Ontology Catch? Curated, LLM-Generated and Data-Derived Ontologies as Checkers of LLM Agents over Knowledge Graphs" (arXiv 2610.37809, posted 2026-10-27, Sano Centre for Computational Medicine / AGH Krakow). Full text read via PDF + `mutool` (13,080 words, grepped clean for placeholders). Pre-registered UniProt study; the curated ontology is the worst of three checkers, `retry-on-empty` beats all of them for free, and every ontology catches 0% of change-of-meaning faults. Squarely in the KG/ontology/open-data lane, and it cites TogoMCP (our 2026-07-07 episode). No prior episode covers it.
+
+**Candidate funnel**
+
+- **arXiv** — shared daily cache, 500 entries, dates 10-27 to 10-29 (no 10-30 at 02:00 fetch). 184 survived the keyword + biomedical/scientific filter. Substantive shortlist:
+  - `2610.37809` What Does an Ontology Catch? — **CHOSEN**
+  - `2610.40556` ClinGeX — skill-centred clinical genomic agent, 45-professional human study (too close to 10-28 VariantAgent)
+  - `2610.39714` MoLRSI — recursive self-improving molecular discovery agent, 15.9% vs 8.7% wet-lab hit rate (runner-up; PDF pulled and clean)
+  - `2610.39641` Two-layer open-problem knowledge graph, "status must stay proposed"
+  - `2610.38691` Misattributed numbers in agent-written papers
+  - `2610.38215` Disparity Laundering — clinical multi-agent systems
+  - `2610.38326` MIOE — mechanistic interpretability of ontology engineering
+  - `2610.37851` LibStructBench — sequencing protocol understanding
+- **bioRxiv** — details API **partially failed**: day-by-day sweep returned 10-26 (167), 10-27 (310), 10-28 (352) but 10-29/10-30 were still pending after ~25 min (API running ~1 day per several minutes). Proceeded per the source-level-failures rule. v1-only relevance hits: nothing competitive — the only strong agentic items were `Verifiable Agentic Science on Public Infrastructure` (already shipped 10-29) and `Scaling genetic discovery through automated post-GWAS interpretation` (already shipped 10-28). Also seen: evidence-governed spatial-transcriptomics harness (ICAM-1/lung fibrosis), LC-MS/MS conversational LLM agent, phenologs at knowledge-graph scale.
+- **PubMed** — `reldate=5`, 95 hits. Best on-target: `CopilotJ` conversational multi-agent bioimage analysis (Nat Methods, 10-28, paywall risk), `Rethinking medical AI: governed agentic clinical intelligence` (Sci Bull perspective), `CSK-DDI` KG-augmented DDI (Bioinformatics). None beat the pick.
+- **ChemRxiv / news / funder pages** — not swept; the arXiv + PubMed + partial bioRxiv pool already yielded a dominant on-target item well inside the window.
+
+The sweep I'd reported as incomplete has now finished — 10-29 (150) and 10-30 (14, partial day) are in. Nothing on either day changes the pick: no agentic/KG item beyond `MutQA` (a mutation Q&A dataset) and a sparse-autoencoder feature evaluation, neither competitive with the ontology-checker paper. So the bioRxiv line in the funnel above should read **complete, not partial** — 993 entries scanned across 10-26 to 10-30, nothing shortlisted that wasn't already shipped.
+
+Today's episode stands as written; the three stub files are in place for the orchestrator.
+=== 2026-10-30T02:06:15-07:00 done  biomedical-agentic-ai (exit 0) ===
