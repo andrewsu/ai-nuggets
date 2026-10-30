@@ -5936,3 +5936,74 @@ I read the full Genmab press release from its SEC 6-K exhibit. Truist's median-s
 
 I also added a dated note to my news-sources memory file: EDGAR full-text search finds foreign companies' filings, like Genmab's 6-K, and was the only same-day route to its release.
 === 2026-10-29T02:26:04-07:00 done  calibr-briefing (exit 0) ===
+=== 2026-10-30T02:20:11-07:00 start calibr-briefing ===
+Waiting on the Iovance agent; I'll write the spotlight when it reports back.
+
+Today's two Calibr episodes are written but not published or committed. `SKIP_TTS=1` was set, so I produced script and stub files only, as the pipeline requires. The batch job will generate the audio, publish both episodes and commit them.
+
+**Episodes**
+- **Headlines** (`2026-10-30-pharma-headlines`, about 1,270 words):
+  - Lilly's third quarter: revenue up 39% to $24.4B, guidance raised to $91–92B.
+  - Merck, Bristol Myers and Gilead all beat. Bristol dropped two partnered drugs (Prothena's PRX019 and Orum's degrader conjugate) and blamed the zola-cel death on a reagent change.
+  - Iovance fell 35% (teaser for the spotlight).
+  - Kymera's oral IRF5 degrader KT-579 posted clean first human data.
+  - Anthropic's drug development update with six partners, with a disclosure that the show is made with Claude.
+  - Flagship merged three companies into Etcelera; Dren Bio raised $350M.
+  - Aspen priced its IPO at the bottom of its range; Bambusa upsized.
+  - Quick hits: Ono, LENZ, the Labor Department's pharmacy-benefit-manager disclosure rule.
+  - Look-ahead: Inovio's FDA decision today.
+- **Spotlight** (`2026-10-30-iovance-precision-til-lung-spotlight`, about 1,430 words, roughly 8 minutes): Iovance's lung cancer cell therapy kept a 24.6% response rate in 69 patients. The company is now betting on a subgroup it picked after seeing the results: 59% of 22 patients, with a 95% confidence interval of roughly 36–79%. Each filter it added removed only non-responders. The episode also covers:
+  - Durability: last year the median duration of response wasn't reached after 25 months; Iovance now says roughly one year so far.
+  - Timing: the filing moved to 2027.
+  - Label risk: the 11% response rate in KRAS-mutant patients may make a broad approval harder.
+  - Competitors and governance.
+
+**Gaps**
+- I found no named analyst note on Iovance dated after the data. The spotlight says so and quotes only older price targets (Barclays $18, Goldman Buy at $15).
+- The STAT story on Vertex's kidney drug is paywalled, so I left it out.
+- Leftover stub files from 2026-09-15 are still in `scripts/` (one GSK spotlight pair, one headlines pair). That episode may never have been published. I didn't touch them.
+
+**Candidate funnel**
+- **Sources:**
+
+  | Source | Items scanned | Status |
+  |---|---|---|
+  | BioSpace | 20 | |
+  | Endpoints | 24 | paywalled, used for discovery only |
+  | BioPharma Dive | 10 | |
+  | STAT | 20 | |
+  | GEN | 10 | |
+  | Clinical Trials Arena | 10 | |
+  | Fierce Biotech / Fierce Pharma | 0 | feeds returned no items |
+  | BioSpace press releases | about 35 | |
+  | SEC filings full-text search | 3 same-day filings | Iovance, Kymera, Coherus |
+
+- **Shortlist** (★ = picked; Lilly, Merck, BMS, Gilead and Iovance are all headline items, Iovance also the spotlight):
+  - ★ Iovance IOV-LUN-202 update — https://www.sec.gov/Archives/edgar/data/0001425205/000110465926120261/tm2628468d1_ex99-1.htm
+  - ★ Lilly Q3 — https://www.biospace.com/business/lillys-guidance-has-jumped-by-10b-as-glp-1-sales-keep-blowing-past-expectations
+  - ★ Merck Q3 — https://www.biospace.com/business/merck-looks-ahead-to-another-year-of-investment-as-keytruda-cliff-looms
+  - ★ BMS Q3 — https://www.biospace.com/business/bms-drops-prothena-partnered-neuro-drug-sales-outlook-improves-on-a-q3-beat
+  - ★ Gilead Q3 — https://www.biospace.com/press-releases/gilead-sciences-announces-third-quarter-2026-financial-results
+  - ★ Kymera KT-579 — https://www.sec.gov/Archives/edgar/data/1815442/000119312526436965/kymr-ex99_1.htm
+  - ★ Anthropic drug development update (spotlight alternative; dated 10-27, third straight day of Anthropic items) — https://www.anthropic.com/research/early-progress-drug-development
+  - ★ Etcelera — https://www.biopharmadive.com/news/flagship-etcelera-etiome-empress-cellarity-launch/872947/
+  - ★ Dren Bio — https://www.biospace.com/drug-development/dren-bio-lands-350m-to-push-rare-blood-cancer-therapy-toward-market
+  - ★ Aspen / Bambusa IPOs — https://www.biospace.com/press-releases/aspen-neuroscience-announces-pricing-of-initial-public-offering-october-29-2026
+  - ★ Ono — https://www.biospace.com/drug-development/ono-cans-2-endocannabinoid-drug-studies-after-quintuple-phase-2-failure
+  - ★ Labor Department PBM rule — https://www.biopharmadive.com/news/pbm-transparency-final-rule-labor-department-employer/873254/
+  - Vertex kidney drug infection risk (paywalled, dropped) — https://www.statnews.com/2026/10/29/biotech-news-vertex-kidney-disease-drug-scrutinized-for-infection-risk/
+  - Coherus drop (tagmokitug already covered 10-29, skipped)
+
+I also added a dated note on today's working news sources to the biotech news access memory.
+
+Nothing left to do on this run. The Iovance research came back before this wakeup fired, and both episodes are already written:
+
+- **Headlines:** `2026-10-30-pharma-headlines`
+- **Spotlight:** `2026-10-30-iovance-precision-til-lung-spotlight`
+
+Each has its script plus its `.rss-item.xml` and `.commit-msg` stub files in `podcasts/calibr-briefing/scripts/`, and both RSS stubs parse as valid XML. Because `SKIP_TTS=1` is set, I didn't generate audio, publish, edit the feed or commit. The batch job does those steps.
+
+The background command that just stopped was a whole-disk search I started early in the run for the portfolio reference file. It hit its time limit, but nothing depended on it: memory already pointed to `podcasts/blackbird-brief/memory/blackbird-portfolio.md`, and I read that file directly. I won't restart it.
+
+Today's run is unchanged: both scripts (headlines and the Iovance spotlight) and their stub files are in `podcasts/calibr-briefing/scripts/`. The batch job will generate the audio, publish both episodes and commit them.
+=== 2026-10-30T02:32:44-07:00 done  calibr-briefing (exit 0) ===
