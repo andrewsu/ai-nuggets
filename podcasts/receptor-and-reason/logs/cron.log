@@ -6067,3 +6067,45 @@ Two guard checks ran clean: grepping every show's scripts for the tool-compound 
 
 One thing to flag about this run: your earlier invocation was halted by the safety classifier before producing any output, and nothing from it was recoverable on disk beyond three scratch scripts. Per the standing rule I did not try to reconstruct that draft — this episode was built from a fresh sweep, so there is a small chance it overlaps with whatever that attempt had selected.
 === 2026-10-30T03:09:43-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-10-31T02:50:12-07:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was confirmed as the first call of the run, so no TTS, no R2 publish, no `feed.xml` edit, and no commit — script plus the two stubs only; `publish_pending.py` will do the rest.
+
+**Script:** `podcasts/receptor-and-reason/scripts/2026-10-31-receptor-and-reason.md` — 11 items, 2,988 spoken words (~16.4 min, inside the 12–18 min target). Stubs: `.rss-item.xml` (validates as XML with the itunes namespace) and `.commit-msg`. Ledger appended: 158 episodes, 1,650 items.
+
+**Editorial spine:** "the reference decides the result" — in nearly every pick the decisive move was choosing the comparison, not making the measurement.
+
+**Candidate funnel**
+
+- **bioRxiv + medRxiv details API** (10-25…10-31, both servers, day-by-day with pagination): 10 day-files, 5 of them reused verbatim from `/tmp/rr1030` since closed days are immutable. 721 in-window v1 candidates after keyword filter → **705 fresh** after dedup (16 already shipped; two benign key collisions flagged where the shipped title spells out Greek letters).
+- **arXiv shared cache** (`/tmp/ai-nuggets-arxiv-cache.xml`, 1.3 MB, 500 entries): date histogram covers only 10-27→10-29 — the 500-entry cap again, under 3 days of coverage. 114 bio+agentic hits → **111 fresh**.
+- **Nature RSS:** `npp`, `neuro`, `nm`, `nbt`, `natmentalhealth` all 200 with 8 items; `mp` 303s to `idp.nature.com` (known). 20 in-window DOIs resolved via Crossref. `natmentalhealth` works despite a prior "not a slug" note — memory corrected.
+- **Failures:** one render failure, `10.64898/2026.10.28.762666` (DIMER, PD drug discovery) — 494/494/408 bytes across three tries at 40 s spacing; deferred. Two Nature Mental Health articles paywalled, one of them under a signature that passes both the byte-count and access-wall checks (no Abstract, no Results, first heading `## Data availability`) — logged to memory.
+
+**Selected (11):**
+- Psilocybin, cognitive stability and drinking reduction in co-occurring AUD + depression — medRxiv `10.64898/2026.10.27.26366630` — **LEAD**
+- Synaptic density (SV2A) tracks chronicity rather than severity in MDD — medRxiv `…26366602`
+- Cortical pyramidal tract neurons constrain pathological dopaminergic motor responses — bioRxiv `…758468`
+- Loss of SUR1 and Kir6.2 produces comparable excitability and morphine antinociception — bioRxiv `…761978`
+- PD genetic risk converges on Lewy-body-associated microglial states — medRxiv `…26364188`
+- Environmental risk reshapes high-confidence schizophrenia risk genes — bioRxiv `…762379`
+- Toxicity Prediction Tools Do Not Generalize to Novel Chemistry — bioRxiv `…761698`
+- Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems — arXiv 2610.38215
+- Same pipelines, different answers: evaluation design shapes EEG seizure prediction — medRxiv `…26366763`
+- Beyond fabrication: Misattributed numbers in papers written by AI research agents — arXiv 2610.38691
+- What to randomize matters: low-data molecular generation — arXiv 2610.38835 (closer)
+
+**Read in full but unused** (on disk at `/tmp/rr1031/ft/`, cut for roster length): richer-DB-context LLM EHR phenotyping (F1 0.99 → 0.64 synthetic→real, baseline 0.54); EVLF-FM clinical multimodal VLM (Nat Med, full text retrieved). Fetched-not-read: El Agente Quntur (agentic CASSCF).
+
+One thing worth flagging rather than burying: this run followed a prior attempt that a safety classifier stopped mid-response. Per the standing rule I did not reword or recover any of that draft — this episode was built from a fresh sweep and a fresh roster.
+
+Background fetcher closed out at exit 0. Final tally: **11 of 12 preprints rendered**, one persistent failure.
+
+Two things worth recording, both now in memory:
+
+- **A 408 from jina on a bioRxiv `.full.pdf` is retryable, not a render verdict.** Three fetches 408'd on the first try (one on the second too) and then returned 59–150 KB on the next attempt at 40 s spacing. Only DIMER (`…762666`) stayed 408 across all three. My earlier note treating a 408 as "not yet rendered" was too pessimistic — it would have cost real items.
+- **Five papers I had logged as "unfetched, look next run" are actually on disk at `/tmp/rr1031/ft/`**, unread: MDD glutamate/redox MRS, chronic unpredictable stress cognitive bias, LPT agentic binder design, harness engineering for cross-domain hypotheses, and CryoPilot. I corrected that line so the next run reads them instead of re-fetching.
+
+One honest caveat on today's episode: all five of those rendered *after* the roster was locked, so they were never weighed on merit against the 11 I shipped. That's a recall gap in today's selection, not a defect in the episode — the fetch worker was paced deliberately to avoid the Cloudflare 429, and waiting on it would have pushed well past the cron window. The published roster stands; those five get first look tomorrow.
+
+Nothing about the episode changed — script and both stubs are final, and `publish_pending.py` still owns the TTS, publish and commit.
+=== 2026-10-31T03:05:45-07:00 done  receptor-and-reason (exit 0) ===
