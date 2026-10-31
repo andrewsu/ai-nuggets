@@ -4386,3 +4386,28 @@ Files in `podcasts/jinglin-ai-pulse/scripts/`:
   - Claude Code background-agent transcript gist (not picked — unverified single-author claim)
   - DoorDash–Instacart $17B (not picked — not an AI story)
 === 2026-10-30T02:37:53-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-10-31T02:30:11-07:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Published artifacts** (`podcasts/jinglin-ai-pulse/scripts/`):
+- `2026-10-31-which-five-facts.md` — 2,690 spoken words, ~14.8 min
+- `2026-10-31-which-five-facts.rss-item.xml` — validates as XML, `__LENGTH__` / `__DURATION__` placeholders
+- `2026-10-31-which-five-facts.commit-msg`
+
+**Episode spine:** the engineering discourse about what a person loses by handing work off, and the credit markets deciding the same week that they no longer trust the AI build-out's financing — joined by a deep cut arguing that reasoning can't be factored out from the facts that produced it.
+
+**Candidate funnel**
+
+Hacker News (Algolia, >60 pts, last 48h): 103 stories scanned, 14 AI-relevant after discarding non-AI (Patrick Stewart, Binance, IPv4, etc.).
+- Shortlist, discourse: Laycock, "Why are good developers so wary of agentic development?" **CHOSEN** · Fowler, "LLM Voice" **CHOSEN** · SigNoz SRE deskilling (593 pts) **CHOSEN, flagged on-air as a Feb 28 2026 post resurfacing — verified via the Substack archive API** · Fortune/Cisco unlimited tokens **CHOSEN (counterpoint)** · trakkr "Zombie stats" — dropped, thin · YC labs agent swarms — dropped for space · skypilot Grace Blackwell scheduler — dropped for space.
+- Dropped on dedup: `nesformer` (200 pts) + `tinyworldformer` (270) + `doomformer` (126) — a genuine 48h convergence, but `nesformer` is a direct descendant of Qwenputer, which led the Oct 29 episode. Not re-run.
+- Dropped deliberately: the Claude Code VS Code extension backdoor cluster (889 + 655 + 399 pts). Newsworthy, but I kept the show off malware-delivery mechanics.
+- Money: BBC selloff **CHOSEN** · FT/TechCrunch Anthropic junk rating **CHOSEN** · CPC no-bailout resolution **CHOSEN** · WSJ OpenAI round **CHOSEN as headline only** · BBC Alphabet -$500B, Reuters Intel — folded into the BBC piece.
+- Podcasts (14-day window): TWIML #782 Jeffries — no transcript on page, dropped · Latent Space Anthropic (Oct 27) — used Oct 29 · CogRev AI:AM Highlights (Oct 24) **CHOSEN**, Zvi on the cognitive core; Conrad's credit argument from the same episode moved into Money Moves rather than the deep cut, since he was the Oct 21 deep cut.
+
+**Source failures / notes**
+- `wsj.com` — blocked by the auto-mode classifier as walled content. I did not read the body; the script says so explicitly and attributes only the headline.
+- `progressives.house.gov` and the TechCrunch Anthropic piece — my first guessed URLs 404'd; real URLs recovered from the HN API and both then read in full.
+- The CogRev transcript is automated and garbles words ("big bottle smell" → "big model smell", "her potty" → "Karpathy"). I repaired obvious errors, skipped a profanity, and flagged the repair on-air.
+- Fowler's `LLM Voice` footnote 1 and 2 were read (the memory note about jina dropping footnotes applies to blog.google; this was a direct curl).
+=== 2026-10-31T02:43:03-07:00 done  jinglin-ai-pulse (exit 0) ===
