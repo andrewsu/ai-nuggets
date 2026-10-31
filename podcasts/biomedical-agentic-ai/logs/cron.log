@@ -5955,3 +5955,40 @@ The sweep I'd reported as incomplete has now finished — 10-29 (150) and 10-30 
 
 Today's episode stands as written; the three stub files are in place for the orchestrator.
 === 2026-10-30T02:06:15-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-10-31T02:00:09-07:00 start biomedical-agentic-ai ===
+Episode written as stubs (`SKIP_TTS=1` — no TTS, no R2 publish, no feed edit, no commit; `publish_pending.py` will finish those).
+
+**Files**
+- `podcasts/biomedical-agentic-ai/scripts/2026-10-31-forescite-the-literature-as-a-dynamical-system.md` (903 words spoken, cap 1150)
+- `…​.rss-item.xml` (validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `…​.commit-msg`
+
+**Pick:** ForeSCITE — "Learning Scientific Trajectories to Predict Future Biomedical Discoveries", arXiv 2610.38719, posted 2026-10-28, Yale BMI/Cell Biology. Full text read via `mutool` on the PDF (12,957 words; placeholder-grep clean — the one hit is a prompt-template mention). URL verified 200.
+
+**Candidate funnel**
+
+- **arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries (10-27: 94, 10-28: 175, 10-29: 231; the 500-entry cap truncates before 10-30). 225 survived the keyword + biomedical-relevance filter. Shortlist after discarding spurious matches:
+  - **Learning Scientific Trajectories to Predict Future Biomedical Discoveries** — https://arxiv.org/abs/2610.38719 — **CHOSEN**
+  - Rebuilding a Field's Open-Problem Catalog from the Literature: A Two-Layer KG — https://arxiv.org/abs/2610.39641 — read in full; excellent KG/open-science fit and an honest negative result, but the fields studied are databases and AI, not biomedicine
+  - Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems — https://arxiv.org/abs/2610.38215 — downloaded, held as live runner-up
+  - Can LLMs Faithfully Solve Ontology Engineering Tasks? — https://arxiv.org/abs/2610.38326 — dropped, yesterday's episode was ontology-as-checker
+  - MUSE: Multi-Level Memory for Scientific Coding Agents — https://arxiv.org/abs/2610.38332
+  - Can AI Agents Interface Clinicians and Complex Models? — https://arxiv.org/abs/2610.39681
+  - Evaluating and improving AI agents for sequencing protocol understanding — https://arxiv.org/abs/2610.37851
+  - Advancing Clinical Genomic Analysis with a Skill-Centred Agent (ClinGeX) — https://arxiv.org/abs/2610.40556 — **dedup: covered on receptor-and-reason 10-30**
+  - MoLRSI (molecular discovery) — https://arxiv.org/abs/2610.39714 — **dedup: receptor-and-reason 10-30**
+  - Training language models in simulation for psychiatric intake — https://arxiv.org/abs/2610.40476 — **dedup: receptor-and-reason 10-30**
+- **bioRxiv** — details API swept day-by-day 10-28→10-31, 946 v1 records (352/223/350/21). 61 keyword hits, substantive shortlist:
+  - Verifiable Agentic Science on Public Infrastructure (10.64898/2026.10.26.761864) — **already shipped as Orbit, 10-29**
+  - Refactored intracellular domains enhance CAR expression (…762481) — **already shipped, KRGR-zeta-1-40**
+  - Agentic Discovery Transfer Enables Cross-Cancer Discovery at Scale (…762506) — live, unread
+  - Agentic cryo-EM structure determination with CryoPilot (…762908) — live, unread
+  - GLESKit: MCP-based gene-level investigation and evidence synthesis (…761689) — live, unread
+  - Harness engineering enables a multi-agent LLM system to generate cross-domain hypotheses (…761203) — live, unread
+  - LPT: bounded agentic loops for automated protein binder design (…762730) — live, unread
+  - Fixing the Measurement Model Before the Selection Heuristics (self-driving labs, …762131) — live, unread
+- **PubMed** — reldate=5, 121 hits; nothing on-target above the bar (mostly chatbot-evaluation and bibliometric papers).
+- **ChemRxiv / funder pages (ARPA-H, NIH, NSF, HHS)** — not swept this run; the arXiv and bioRxiv sweeps produced a clear, fully-read pick and the bioRxiv details API ran slow (~30s/page, ~15 min for the four-day window). Recall gap noted.
+
+No source failed; nothing was deferred for unreadable full text.
+=== 2026-10-31T02:06:57-07:00 done  biomedical-agentic-ai (exit 0) ===
