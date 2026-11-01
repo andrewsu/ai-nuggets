@@ -4568,3 +4568,37 @@ Episode written. `SKIP_TTS=1`, so three stub files only — no TTS, no R2 publis
 
 One process note: the first attempt at this run was stopped by the safety classifier before any tool call completed — the **fourth consecutive day** (10-28 through 10-31). Nothing was drafted then, so this run selected and drafted from scratch. Today's deferrals, the new reusable spines (lateral propagation of triggering via phase separation; demand the signaling-null mutant before believing a domain transduces; "equivalent efficacy, better phenotype"), the TRAC-knockout incompatibility objection, and the sac-TMT dup trap are appended to the show's rolling run-log memory.
 === 2026-10-31T02:48:22-07:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-11-01T02:40:12-08:00 start justice-biotech-brief ===
+Waiting on the news sweep before I close out the funnel.
+
+Still running — waiting a few more minutes.
+
+Giving the news sweep one last window, then closing out.
+
+Episode written. `SKIP_TTS=1`, so script + two stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Chosen:** CD5-centered membrane domain — CD4 T cell surface protein organization, not abundance, tracks anti-PD-1 response in lung cancer
+`https://www.biorxiv.org/content/10.64898/2026.10.26.761814v1` (bioRxiv, posted 2026-10-30; Karolinska / Pixelgen). Full text read via `r.jina.ai` on `.full.pdf` (the `.full` HTML was still abstract-only — render lag). 1,202 words, in line with the last three episodes.
+
+## Candidate funnel
+
+**bioRxiv details API** — 505 records swept day-by-day for 2026-10-30/31 and 11-01 (v1 only); 14 survived the keyword filter. Substantive shortlist after discarding spurious matches:
+
+- **CD4 T cell surface architecture and anti-PD-1 response in NSCLC** — `10.64898/2026.10.26.761814` — **CHOSEN**
+- TM4SF1 as a CAR-T-targetable antigen in biliary tract cancers — `10.64898/2026.10.28.762675` — full text read via the PDF route; solid but incremental (previously-built CAR, immunodeficient xenograft, antigen-nomination rather than mechanism)
+- Intrinsic immune receptor triggering informs chimeric receptor design — `10.64898/2026.10.24.761481` — **already shipped 10-31** (CD3-epsilon TRIG)
+- Laminin-derived peptides bind neuropilin-1 at the VEGF-A165 pocket — `10.64898/2026.10.27.762289` — biophysics, no translational hook
+- Duality vaccination via click-ligated B-cell inhibitory receptor bridging — `10.64898/2026.10.28.762652` — keyword-level bispecific only
+
+**News / press (Oct 30 – Nov 1)** — ~325 items scanned across Endpoints, Fierce Biotech/Pharma, BioPharma Dive, BioSpace, STAT, Clinical Trials Arena. **The window is effectively one day:** Oct 31 and Nov 1 produced zero net-new items (BioSpace has no archive page for either date; Fierce's newest stamp is Oct 30). On-target Oct 30 shortlist:
+
+- Gilead/Kite partial clinical hold, KITE-753 PALISADES-1/-2 (grade 3/4 ICANS) — **ineligible twice over**: unreadable in full by every route (jina → ad-tracker page, curl → Cloudflare, WebFetch → 403), and already shipped in calibr-briefing 2026-10-31
+- AstraZeneca kills AZD8359, a CD8-biased STEAP2×CD3 engager, in a prostate pipeline cull — readable in full; strongest news candidate, but a discontinuation notice with no released data
+- InnoCare ICP-B161 (TL1A×IL-23p19 bispecific) first subject dosed; Leads Biolabs LBL-047 (BDCA2×TACI) first SLE patient — both full-text, both dosing announcements with no data
+- Regeneron Q3 (ubamatamab MUC16×CD3 to registrational) and AbbVie Q3 (etentamig BLA, ABBV-2001 trispecific) — earnings recaps of previously announced events
+- Bambusa $168.9M IPO (IL-4Rα×IL-31); ILUMYA psoriatic arthritis approval — on-target but financial/label news
+
+**Policy / funders** — ARPA-H (latest Oct 22), NIH (Oct 23), NSF (Oct 27): nothing in window.
+
+**Source failures:** Fierce RSS dead on both properties (Cloudflare interstitial via curl, CAPTCHA via jina); Fierce section pages via `r.jina.ai` return a ~390-byte ad-sync tracker instead of the page; Endpoints articles truncate at ~30 words (paywall) though its `/feed/` RSS is reliable for date-gating; `arpa-h.gov/news-and-events/news` 404s. `r.jina.ai` was **not** TLS-intercepted today.
+=== 2026-11-01T02:58:23-08:00 done  justice-biotech-brief (exit 0) ===
