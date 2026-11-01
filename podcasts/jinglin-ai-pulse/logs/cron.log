@@ -4411,3 +4411,32 @@ Hacker News (Algolia, >60 pts, last 48h): 103 stories scanned, 14 AI-relevant af
 - The CogRev transcript is automated and garbles words ("big bottle smell" → "big model smell", "her potty" → "Karpathy"). I repaired obvious errors, skipped a profanity, and flagged the repair on-air.
 - Fowler's `LLM Voice` footnote 1 and 2 were read (the memory note about jina dropping footnotes applies to blog.google; this was a direct curl).
 === 2026-10-31T02:43:03-07:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-01T02:30:11-08:00 start jinglin-ai-pulse ===
+I've written today's episode, "somewhere else" (about 2,500 spoken words, roughly 13–14 minutes). `SKIP_TTS=1` was set, so I made no audio, didn't touch the feed and didn't commit. The script, RSS item stub and commit message are in `podcasts/jinglin-ai-pulse/scripts/`, ready for the batch TTS and publish step. The script runs a little over the show's 2,200-word target, though shorter than the last two episodes.
+
+**The episode:** when a model refuses, the work goes somewhere else.
+- **Twitter Pulse:**
+  - A rule pushed to Claude Code from Anthropic's servers blocks recreating existing games. Anthropic hasn't confirmed the rule text.
+  - A researcher was flagged for "training a competitor" and found his sessions downgraded to Opus 5. Anthropic's own Opus 5.5 launch post explains this: when safeguards trip, biology and LLM-training work is handed to Opus 5. The script points Ollie to the Life Sciences Verification Program.
+  - Cisco Talos found malware that sends stolen victim profiles to Claude and switches to Kimi, then Gemini, if Claude refuses.
+  - A backdoored copy of the Claude Code extension sat on Cursor's marketplace for about 11 hours. Cursor says Anthropic didn't build it. A short Karpathy item follows as a counterweight.
+- **Money Moves:** OpenAI will count ChatGPT and Codex use against one shared allowance from December. Sam Altman argued it's wasteful for personal computers to hold memory chips that sit idle most of the time. His quotes come from a gaming site's transcription of his Cheeky Pint interview; I didn't check them against the video, and the source line says so.
+- **Deep Cut:** the Interconnects podcast from Oct 25, Nathan Lambert and Florian Brand, read from its published transcript, plus Lambert's follow-up essay on Oct 30. Their argument is that guardrails stop the least motivated attackers and push everyone else to weaker open models.
+
+**Candidate funnel**
+- **Hacker News (last 60h, over 80 points):** 89 stories scanned, about 22 AI-relevant.
+  - **Used:** Claude Code extension backdoor (50300683); Anthropic training block (50319358); game-rewrite crackdown (50304358, 50320255); Talos VOLTA infostealer (50316531); Karpathy's HackerTube (50319510); ChatGPT and Codex usage limits (50320588); Altman on memory chips (50305797).
+  - **Not used:** GPT-5.6 Sol beats Factorio (50318871); five small Qwen models beat Fable 5 on LiveCodeBench Hard (50320995, ten problems only); Brazilian court sanctions prompt injection (50322173); ChatGPT account takeover (50314699); Nintendo in Qwen weights (50306442, too close to the 10-29 Qwenputer item); Prospero coding harness (50315226); ex-Meta researcher's pirated books (50316760).
+  - **Already covered 10-30/10-31:** the bailout resolution, the SRE deskilling post, Blackstone on Anthropic's credit rating, the OpenAI round, and the Intel/Alphabet sell-off.
+- **X/Twitter:** read two posts via fxtwitter (Chasm, Jiahao Shao). There's no timeline search from this machine.
+- **Podcasts and newsletters (Substack archives):**
+  - Interconnects: podcast Oct 25 and essay Oct 30. **Used.**
+  - Not used: Dwarkesh's Intel chip tour (Oct 22) and Robert Caro episode (off-topic); Zvi's S-1 and AI #192 posts; ChinaTalk Oct 29–30; Noahpinion. Latent Space's archive API didn't return valid JSON.
+- **Investment news:** the funding aggregators were low quality and didn't cover past about Oct 26. Nothing new from the last 7 days cleared the bar, so I built the segment around OpenAI's pricing change instead.
+- **Failed sources:** the DoublePulsar link was a 404 (I'd truncated the URL), and I used Phorion and Cursor's notice instead. Mashable's first fetch failed for the same reason; I refetched it and traced it to the Tom's Hardware original. The aifunding weekly roundup page was a 404.
+- **Background only, not news:** Anthropic's GLM-5.3 cyber post (Sept 29) and the Opus 5.5 launch post (early October).
+
+Sources:
+- [October 2026 AI Funding Roundup](https://aifunding.me/roundups/october-2026)
+- [Kotaku on Claude reverse-engineering](https://kotaku.com/claudes-reverse-engineering-capabilities-used-to-recompile-games-may-have-been-quietly-nerfed-2000749320)
+=== 2026-11-01T02:37:55-08:00 done  jinglin-ai-pulse (exit 0) ===
