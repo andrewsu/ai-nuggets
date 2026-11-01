@@ -3975,3 +3975,34 @@ Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed 
 
 One process note: my first attempt at this run was stopped by a safety classifier before any tool call completed, so there was no draft to pivot away from — this episode was built from scratch and nothing was reworded. That is now three consecutive days with a classifier stop on this show (10-29 on the FDA individualized gene-editing guidance, 10-30 pre-tool, today pre-tool). The gene-editing guidance item remains unshipped and resurfaced in this window via the 10-28 Endpoints piece; I again left it out rather than risk a repeat stop.
 === 2026-10-31T02:19:33-07:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-01T02:10:10-08:00 start blackbird-brief ===
+Both episodes written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Published artifacts**
+- `scripts/2026-11-01-radar-pcdh15-tip-link-repair.md` — 1,414 spoken words (~7.5 min)
+- `scripts/2026-11-01-portfolio-watch.md` — 1,463 spoken words (~8 min)
+- `.rss-item.xml` + `.commit-msg` stubs for both (XML parse-validated); no URLs/DOIs/markdown/pseudo-headings in either spoken body
+- `state/shipped.jsonl` — 2 lines appended, 3 keys each (116 episodes)
+- `memory/blackbird-portfolio.md` — edited in place, five entries: Winnow (KITE-753 toxicity-category + Phase 1→2 diligence line), NuGate (Alnylam commercial-model risk), §1 spinout-structure comparators (BMS two-negative-option pattern), Aletira (tip-link maintenance / durability-of-expression), Wirtz (velocity receptor + DUA chain-of-title), Artemyx (BrESS diligence test). `_Last update:_` bumped on each.
+
+**Sourcing Radar — 3 picks, all full text read**
+1. **LEAD** — NHERF-1 docks the hearing-essential CD2 isoform of PCDH15 via a phosphorylation-switched motif (Lu/UVA + **Mueller/JHU**). Jamming the switch leaves bundle construction and MET intact and produces **adult-onset loss at 22 and 32 kHz with no hair-cell loss at P30 and degeneration confined to the third stereociliary row** — dispensable for construction, required for maintenance. Recommendation: **scientific conversation with Mueller, not a licensing meeting** (the CD2 kinase is unidentified, so there is no composition of matter). Two Aletira reads: the ABR-as-sensitive-instrument example belongs in the preclinical narrative, and continuous tip-link turnover adds a **durability**-of-expression question on top of the level-of-expression question SELEXON solves.
+2. **Wirtz lab synthetic "velocity receptor"** — converts a CAR-T's own IL-5/TNFα output into motility, >4-fold less lung metastatic burden in TNBC mice, module orthogonal to the antigen. **The term and the 2023 original belong to Adrian Johnston, founder of DUA** — the Baltimore company logged 09-12 as forming without us. One JHTV chain-of-title call decides lead vs courtesy note.
+3. **BrESS** (Shinozaki/UCI with Potash/JHU) — 148 paired brain-periphery donors: blood reflects the brain only at cross-tissue housekeeping promoters, no heritability contribution across seven disorders, blood-derived disease hits consistently depleted. Not a build; a diligence test.
+
+**Portfolio Watch — 3 items**
+1. **LEAD, Friday's carry resolved** — Gilead's hold is **KITE-753**, anti-CD19/CD20 CAR-T in DLBCL, PALISADES-1/-2, triggered by **grade 3/4 ICANS differences between Phase 1 and Phase 2**; no deaths, voluntary pause before FDA alignment. It is oncology and **does not** join the autoimmune safety run — say so in the Winnow deck. What it reinforces is the toxicity *category* argument, plus a template-level diligence question.
+2. **BMS declines the $80M Prothena Phase 1 option** (BMS-986495), $55M milestone unpaid, no data disclosed — second negative exercise in six weeks after the $100M Orum conjugate. Prices the option-on-an-IND-package structure from the seller's side; argues for a data-return provision at signing.
+3. **Alnylam** — TTR franchise +59% to $1.15B and the stock still fell 25% in a session on demand pace, site of care and the 340B rule.
+
+**Notable catch:** the **Aspen/Bambusa final IPO pricing passed the URL batch filter as fresh** and was the **10-30 closing item with the same numbers**. Caught by the asset-name grep on the final roster, not the key filter, and dropped. Same failure mode as 10-11 and 10-19 — a shipped *event* re-entering under new URLs.
+
+**Candidate funnel**
+- *Radar discovery:* bioRxiv/medRxiv site search via `r.jina.ai` on three affiliation strings, 10-24 → 11-01. JHU 37 unique hits, Lieber 18. **University of Maryland FAILED — Cloudflare 429 on the third sequential query**; one query per ~35s is the ceiling. No UMB institutional sweep this week, recorded as a recall gap.
+- *Watch sources:* Endpoints (24 dated), BioPharma Dive (10), BioSpace press-releases + news index, GEN (10), Fierce `/biotech` index. **BioBuzz RSS stale at 2026-09-11, tenth consecutive week.** **`r.jina.ai` returned a 461-byte ad-redirect stub on the Fierce Kite URL and the full body on an immediate identical retry** — transient proxy hijack, now in memory.
+- *Weekend gap as expected:* nothing on any feed dated after Fri 10-30; roster is uncovered Wed–Fri material, no window widening, no skip.
+- *Dedup:* Watch 20 → 18 fresh; Radar 7 → 7 fresh; **final 6-key roster re-filtered → 6 fresh, 0 hits** against 669 ledger forms from 114 episodes. Asset grep flagged `velocity receptor` (09-12 DUA signal — made load-bearing in pick 2 rather than hidden) and confirmed the 21 prior `Alnylam` mentions are all brezosiran/Huntington's, a different event.
+- *Deferred at the full-text gate:* injectable self-assembling brain electrodes (10.64898/2026.10.29.758432) — abstract-only, and it is Lund University with a filed patent and no Baltimore nexus. Not carried.
+
+One process note: the first attempt at this run was stopped by a safety classifier before any tool call completed, so there was no draft to pivot away from — both episodes were built from scratch and nothing was reworded. That is now four consecutive days with a classifier stop on this show (10-29 on the FDA gene-editing guidance, 10-30, 10-31 and today all pre-tool).
+=== 2026-11-01T02:28:18-08:00 done  blackbird-brief (exit 0) ===
