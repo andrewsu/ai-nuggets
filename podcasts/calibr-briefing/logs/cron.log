@@ -6056,3 +6056,34 @@ Shortlist (✓ = used):
 
 Sources: [Endpoints](https://endpoints.news/gilead-car-t-on-partial-clinical-hold-agios-pdufa-date-pushed-back/) · [Gilead Q3 transcript](https://www.benzinga.com/news/26/10/62724273/gilead-sciences-q3-2026-earnings-call-transcript) · [Kite ASH 2025](https://www.gilead.com/news/news-details/2025/kites-next-generation-bicistronic-car-t-cell-therapies-show-encouraging-phase-1-results-in-relapsedrefractory-b-cell-lymphoma-in-new-data-at-ash-2025) · [AstraZeneca 9M/Q3 2026](https://www.astrazeneca.com/content/dam/az/PDF/2026/9mq3/9M-and-Q3-2026-results-announcement.pdf) · [Agios PDUFA](https://www.hcplive.com/view/mitapivat-pdufa-date-for-sickle-cell-disease-extended-to-february-2027) · [Setara](https://www.biopharmadive.com/news/setara-actio-charcot-marie-tooth-ion-channel-drugs/873227/) · [Immunome](https://www.biospace.com/press-releases/immunome-announces-ema-validation-of-marketing-authorization-application-for-varegacestat-for-the-treatment-of-adults-with-desmoid-tumors) · [Novartis/BMS CAR-T pauses](https://www.fiercebiotech.com/biotech/novartis-bristol-myers-squibb-halt-car-t-cell-trials-due-immune-events)
 === 2026-10-31T02:32:13-07:00 done  calibr-briefing (exit 0) (retry 1) ===
+=== 2026-11-01T02:20:10-08:00 start calibr-briefing ===
+Both episodes are written as stubs. `SKIP_TTS=1`, so per PIPELINE.md I ran no TTS, no R2 publish, no `feed.xml` edit, and no commit — the orchestrator handles those after batch TTS.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-11-01-pharma-headlines.txt` (1,111 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-11-01-acumen-sabirnetug-oligomer-hypothesis-spotlight.txt` (1,343 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as valid XML with `__LENGTH__`/`__DURATION__` placeholders.
+
+**Spotlight:** Acumen's sabirnetug failure in ALTITUDE-AD. Read in full from the company's own Oct 30 release, not the trade coverage — which mattered: the release carries the detail that makes the story (statistically significant amyloid PET reduction at both doses at weeks 36 and 76, plus ~10% ARIA-E) proving target engagement, so the failure refutes the soluble-oligomer hypothesis rather than reflecting underdosing. Added Stifel's "was not validated" line and its point that the company's brain-delivery follow-up can't rescue a wrong target, and corrected the widely-quoted "-80%" (a pre-market print) against Friday's actual close of $0.21 from $2.29, about -91%.
+
+**Candidate funnel**
+
+Sources scanned: BioSpace all-news (20) + press releases (10), Endpoints (24), BioPharma Dive (10), STAT (20), GEN (10 + AI topic feed), Clinical Trials Arena (10), Pharmaceutical Technology (10), Labiotech (12), Evaluate (100). Failures: Fierce Biotech and Fierce Pharma RSS returned 5.6 KB with **zero** `<item>` elements (both); GEN's AI topic feed and Citeline Scrip likewise parsed to zero items; `investors.acumenpharm.com` and GlobeNewswire 403'd plain curl (recovered via r.jina.ai); BioPharma Dive's PBM article was cookie-walled to curl (recovered via WebFetch). Sunday gap confirmed — only one net-new item across all feeds dated 10-31, and zero dated 11-01.
+
+Shortlist after discarding already-covered and off-brief items:
+- **Acumen sabirnetug ALTITUDE-AD failure** — biospace.com/drug-development/acumen-scraps-sole-asset-after-alzheimers-fail-plunging-stock-80 → **CHOSEN (spotlight + headline 1)**
+- **Geron terminates Phase 3 IMpactMF** — clinicaltrialsarena.com/news/geron-phase-iii-myelofibrosis-trial-termination-rare-blood-cancer/ → **CHOSEN (headline 2)**
+- **Alnylam TTR franchise / takeout chatter** — biospace.com/business/we-need-to-do-better-alnylam-ceo-admits... → **CHOSEN (headline 3)**
+- **DOL PBM disclosure final rule** — biopharmadive.com/news/pbm-transparency-final-rule-labor-department-employer/873254/ → **CHOSEN (headline 4)**
+- **Parse + Nomic "Cascade" 100M-cell dataset** and **Opentrons $40M Series E** — genengnews.com (both) → **CHOSEN (headline 5, combined)**
+- **Vertex povetacicept Nov 30 PDUFA / infection question** → **CHOSEN (headline 6, month-ahead)**
+- Casgevy UK label expansion to age 5+ — not chosen, incremental
+- Sobi pozdeutinurad gout Phase 3 durability — not chosen, off-brief
+- Nuvation glioma Europe expansion; United Therapeutics PAH Phase 1; Aer Therapeutics fexlamose COPD Phase 2a — not chosen, thin
+- Prediction markets / insider-trading risk for private biotechs — not chosen, feature not news
+
+Rejected on dedup (grepped the scripts dir before drafting): Anthropic's acquisition of Mithril Medicine — the 10-31 Endpoints roundup is a recap of an item this show already ran on **10-28**; Flagship/Etcelera, Aspen Neuroscience IPO, Dren Bio $350M, Setara, Immunome, AstraZeneca restructuring, Sanofi/MFN, Agios PDUFA slip, Genmab, Lilly/Merck/BMS/Gilead Q3 all covered 10-28 through 10-31.
+
+One caveat worth flagging for your review: the STAT piece on scrutiny of Vertex's povetacicept infection risk is STAT+ and I could not read the body, so the headline cites the published Phase 3 infection numbers and the mechanism rather than STAT's argument.
+=== 2026-11-01T02:29:47-08:00 done  calibr-briefing (exit 0) ===
