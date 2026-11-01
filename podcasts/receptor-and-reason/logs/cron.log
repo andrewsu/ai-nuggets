@@ -6109,3 +6109,26 @@ One honest caveat on today's episode: all five of those rendered *after* the ros
 
 Nothing about the episode changed — script and both stubs are final, and `publish_pending.py` still owns the TTS, publish and commit.
 === 2026-10-31T03:05:45-07:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-01T02:50:12-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so I stopped at the stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit (the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-01-receptor-and-reason.md` — 3,225 spoken words, 12 items (~17.5 min)
+- `…2026-11-01-receptor-and-reason.rss-item.xml` — with `__LENGTH__` / `__DURATION__` placeholders; XML parses
+- `…2026-11-01-receptor-and-reason.commit-msg`
+- Ledger appended: 12 keys, now 159 episodes / 1,662 items
+
+**Candidate funnel (window 2026-10-25 → 11-01)**
+
+| Source | Scanned | Relevant | Notes |
+|---|---|---|---|
+| bioRxiv details API (day-by-day, v1 only) | 1,636 records over 8 days | ~180 | Full day-by-day sweep; 11-01 had 6 records |
+| medRxiv details API | 164 over 8 days | ~90 | psychiatry/pharmacology rich |
+| arXiv (shared cache + 2 live pages) | 1,300 entries | 115 bio+agentic | **Cache covered only 10-27→10-29** (500-entry cap); live API also stops at 10-29 — no 10-30/31 arXiv exists yet |
+| Nature-family RSS | `neuro` 8, `natmentalhealth` 8 | 4 on-target | **All ineligible** — `npp` and `mp` now 303→150-byte empties; the two Nature Neuroscience candidates (Htr2b/stroke, microglial NUS1) returned metadata + references only through jina, no Results → full-text gate |
+| Dedup filter | 79 candidates run through `shipped_keys.py` in 5 batches | **20 dropped as already shipped** | incl. M4 PAM, β2AR DEER, ketamine/PD-BDNF, both GNAO1 papers, psychiatric-intake RL, MoLRSI, ClinGeX, toxicity-generalization, CB1/ACE PET |
+
+Shortlist that lost out (fresh, full text obtainable, not picked): LPT bounded agentic binder design; CryoPilot agentic cryo-EM; ForeSCITE; low-rank LLM–brain subspace; Agentic Discovery Transfer; self-driving-lab optimiser repairs; EGCG/α-syn; levodopa-dyskinesia microstructure; ent-verticilide PK; VU0155069 spine remodeling; "LMs diagnose sepsis vs 353 physicians".
+
+Two things worth flagging for future runs: `natmentalhealth` now returns a real RSS feed (it was a 150-byte empty in October), and the 10-30/10-31 arXiv gap is real rather than a fetch failure — both the shared cache and two live paginated queries top out at 10-29.
+=== 2026-11-01T03:06:52-08:00 done  receptor-and-reason (exit 0) ===
