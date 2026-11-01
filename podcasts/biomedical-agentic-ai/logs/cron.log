@@ -5992,3 +5992,37 @@ Episode written as stubs (`SKIP_TTS=1` — no TTS, no R2 publish, no feed edit, 
 
 No source failed; nothing was deferred for unreadable full text.
 === 2026-10-31T02:06:57-07:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-01T02:00:09-08:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote the script plus both stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Published artifacts** (`podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-11-01-aegis-annotators-converge-not-improve.md` — 906 spoken words (cap 1150)
+- `…rss-item.xml` — validated; feed still parses with it inserted
+- `…commit-msg`
+
+**Pick:** *An agentic AI system enhances clinical detection of immune-related adverse events in a multi-phase validation study* — Nature Cancer, published 2026-10-29, Bitterman lab (MGB/Dana-Farber). Full text read via `r.jina.ai` (117 KB, real Results/Methods/Discussion). The take: the randomized phase 3 shows time down 43.5% and Krippendorff's alpha up from 0.22→0.85, but the accuracy claim rests on one composite metric at P=0.045 against a null paired sign test on overall grade accuracy in the same figure — so the measured effect is annotators *converging on the model's suggestion*, and what they converge on (the grade, 0.66 macro, 62% note-level in deployment) is the pipeline's weakest output. Also flagged: a 779-term hand-written regex matched or beat several LLM configs at binary detection.
+
+### Candidate funnel
+
+- **bioRxiv/medRxiv details API** — 913 records swept day-by-day across 2026-10-29…11-01 (11-01 returned zero records, guarded). 49 survived the keyword + spurious-match filter at version 1.
+- **arXiv** — shared cache `/tmp/ai-nuggets-arxiv-cache.xml`, 500 entries (cap), covering 10-27…10-29; one live API call confirmed 10-29 is the newest indexed submission, so no gap. 132 biomedical-relevant hits in-window.
+- **PubMed** — 279 hits on a 5-day `edat` window; ~80 passed the title filter. Four top hits were killed by the print-issue recency trap (GCTHarmony `pmc-release` 08-04, Transl Psychiatry 07-31, MAOMAO 10-16, JMIR Ment Health 10-23).
+- **ChemRxiv / news / funder pages** — not reached; a dominant, fully-readable Tier-1 candidate was in hand from PubMed before the sweep got there. Recorded as a recall gap.
+
+Shortlist (chosen marked ★):
+
+- ★ An agentic AI system enhances clinical detection of immune-related adverse events — https://www.nature.com/articles/s43018-026-01264-6
+- CopilotJ: conversational multi-agent system for bioimage analysis (Nat Methods) — **ineligible, paywalled** (21 KB, "Access options")
+- An agentic framework for intelligent clinical laboratory medicine (npj Health Syst) — readable but a perspective, not research
+- GLESKit: MCP-based system for gene-level biomedical investigation — https://www.biorxiv.org/content/10.64898/2026.10.25.761689v1
+- Agentic Discovery Transfer Enables Cross-Cancer Discovery at Scale — https://www.biorxiv.org/content/10.64898/2026.10.28.762506v1
+- Agentic cryo-EM structure determination with CryoPilot — https://www.biorxiv.org/content/10.64898/2026.10.29.762908v1
+- LPT: bounded agentic loops for automated protein binder design — https://www.biorxiv.org/content/10.64898/2026.10.29.762730v1
+- Harness engineering for cross-domain hypotheses — https://www.biorxiv.org/content/10.64898/2026.10.25.761203v1 (thematic overlap with 10-23 chaperone-harness)
+- PharmaAgent: high- vs low-autonomy agents for inpatient vancomycin dosing — https://www.medrxiv.org/content/10.64898/2026.10.23.26365968v1
+- Beyond Billing Codes: agentic LLM pipeline for glaucoma procedural data — https://www.medrxiv.org/content/10.64898/2026.10.29.26366154v1
+- Assessment of LLMs on basic bioinformatics tasks (Bioinformatics) — fresh but OUP is Cloudflare-blocked, discovery-only
+- *Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems* (arXiv 2610.38215) — dropped: shipped in receptor-and-reason 2026-10-31
+
+The bioRxiv/medRxiv shortlist above is a good pool for the next few days; none of it has been read in full yet.
+=== 2026-11-01T02:06:47-08:00 done  biomedical-agentic-ai (exit 0) ===
