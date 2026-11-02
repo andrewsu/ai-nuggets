@@ -4602,3 +4602,55 @@ Episode written. `SKIP_TTS=1`, so script + two stubs only — no TTS, no R2 publ
 
 **Source failures:** Fierce RSS dead on both properties (Cloudflare interstitial via curl, CAPTCHA via jina); Fierce section pages via `r.jina.ai` return a ~390-byte ad-sync tracker instead of the page; Endpoints articles truncate at ~30 words (paywall) though its `/feed/` RSS is reliable for date-gating; `arpa-h.gov/news-and-events/news` 404s. `r.jina.ai` was **not** TLS-intercepted today.
 === 2026-11-01T02:58:23-08:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-11-02T02:40:14-08:00 start justice-biotech-brief ===
+Still running. Episode work is finished and durable; I'm holding only for the news funnel line.
+
+**Today's episode (staged, not committed — `SKIP_TTS=1`)**
+
+`2026-11-02-batf2-ael-crem-bzip-screen-car-t-expansion-uncoupled-from-killing`
+
+**BATF2 — a bZIP screen builds a CAR T cell that takes over the tumor and kills no better** (bioRxiv, Foight/Hudson/Metelitsa, Baylor CCGT; posted 2026-11-01)
+
+Why it won: it screens full-length bZIP overexpression *and* genetically encoded protein dominant-negatives in one pooled library, which yields a readout neither modality gives alone — multiple independent JUN inhibitors crashed out while BATF and FOS inhibitors did nothing, meaning JUN is limiting and BATF/FOS are in surplus. Then the result that carries the episode: BATF2 CAR T cells reach ~10× the TIL count and up to **80% of CD8 TILs in a same-mouse co-transfer**, with **tumor curves superimposed on CAR alone**. Mechanism is consistent (restrained terminal differentiation; low-TOX, very-low-granzyme-B state in LCMV clone 13) — more cells, each doing less.
+
+Three files written: `.md` (1,578 words, ~8.5 min), `.rss-item.xml` (parses clean in the feed's namespace, both placeholders present), `.commit-msg`. Feed untouched, no TTS, no commit — per SKIP_TTS rules.
+
+**Funnel so far**
+- **bioRxiv/medRxiv** — 315 unique records swept day-by-day (biorxiv 149/92/7 for 10-31→11-02; medrxiv 28/43/**0**; the zero-record day tripped the guard cleanly). Only 3 keyword hits, 2 spurious. The *category* sweep over immunology/cancer/pharmacology/bioengineering found the pick — worth noting the keyword list alone would have missed it on a thin weekend.
+- **Full-text gate** — `.full` HTML was abstract-only at day 4; `.full.pdf` + curl + mutool returned 23 MB. Read in full before drafting.
+- **Deferral retests** (run first, sequential): `…761551` 17-byte 429 for the 5th time; `…762652` 429; `…762675` (TM4SF1 CAR-T) clean 107 KB but still abstract-only at day 5 — all three stay open. New deferral opened: `…759951` (hepatic ILC1 / breast cancer liver metastasis), `.full` abstract-only at day 6 and `.full.pdf` 429'd.
+- **News/policy** — pending.
+
+Memory updated with the run notes and three reusable spines: "expansion is not efficacy," the dual-library limiting-vs-surplus readout, and overexpressed-dimerizer-as-partner-sponge (BATF2 sponges CREB1-family proteins it isn't reported to bind — the artifact the acidic-extension inhibitors control for).
+
+Episode complete. Final state: three stub files written, feed untouched, nothing committed — correct for `SKIP_TTS=1`.
+
+## Episode: `2026-11-02-batf2-ael-crem-bzip-screen-car-t-expansion-uncoupled-from-killing`
+
+**BATF2 — a bZIP screen builds a CAR T cell that takes over the tumor and kills no better**
+bioRxiv `10.64898/2026.10.28.762687` v1, posted 2026-11-01. Foight / Hudson / Metelitsa, Baylor CCGT. Read in full (23 MB PDF via `.full.pdf` + mutool, after `.full` HTML was abstract-only). URL verified against the details API; DOI prefix `10.64898` confirmed, not assumed.
+
+Why it beat the field: it screens full-length bZIP overexpression *and* genetically encoded acidic-extension protein dominant-negatives in one pooled library, producing a readout neither modality gives alone — independent JUN inhibitors crashed out while BATF/FOS inhibitors did nothing, so JUN is limiting and BATF/FOS are in surplus. Then the result the episode is built on: BATF2 cells reach ~10× the TIL count and **up to 80% of CD8 TILs in a same-mouse co-transfer**, with **tumor curves superimposed on CAR alone**. Mechanism is consistent (restrained terminal differentiation; low-TOX, very-low-granzyme-B state in LCMV clone 13).
+
+Files: `.md` (1,578 words, ~8.5 min; no URLs/DOIs/markdown in the spoken body), `.rss-item.xml` (parses clean in the feed's namespace, both placeholders present), `.commit-msg`.
+
+## Candidate funnel
+
+**bioRxiv / medRxiv** — 315 unique records swept day-by-day (biorxiv 149 / 92 / 7 across 10-31→11-02; medrxiv 28 / 43 / **0**, zero-record guard fired cleanly). Keyword filter returned only 3 hits, 2 spurious substrings. **The category sweep, not the keyword list, found the pick** — worth carrying forward for thin weekends.
+- ✅ `…762687` bZIP TF/inhibitor network in T cells — **CHOSEN**
+- `…759951` hepatic ILC1 evasion / breast cancer liver metastasis — `.full` abstract-only at day 6, `.full.pdf` 429'd → **new deferral**
+- `…762176` homoharringtonine/XPC, `…762170` TRPM7/TH17, `…26366893` CLEC10A myeloid state — on-topic but weaker; not read in full
+
+**Deferral retests** (run first, sequential, 25 s spacing): `…761551` 17-byte 429 for the 5th time; `…762652` 429; `…762675` (TM4SF1 CAR-T) clean 107 KB but still abstract-only at day 5 — all three stay open. `…761814` closed (shipped 11-01). `…759076` (JAK-inhibitor dose gap, fully read) still unshipped, still the best thin-day backup.
+
+**News / policy** — weekend gap confirmed. Fierce Biotech, Endpoints, BioPharma Dive (editorial), NIH, NSF, ARPA-H all published nothing in-window. GlobeNewswire and Business Wire **failed** outright. In-window shortlist, all rejected:
+- Ivonescimab partnering ahead of HARMONi-7 (BioSpace, 11-02) — duplicates calibr-briefing's same-day spotlight
+- INCA33890 TGF-βR2×PD-1 into Phase 3 MSS CRC (OncLive, 10-31) — strongest alternative; lost to the preprint on novelty
+- KT-621 oral STAT6 degrader preview (STAT, 11-02); Opdualag RELATIVITY-1093 (OncLive, 11-01); zemprocitinib JAK1 China deal (11-02); mitazalimab sale (10-31)
+- AZUR-1 dostarlimab full results (OncLive, 10-31) — **already shipped by this show 10-20**
+- HanchorBio HCB303 anti-TIGIT — would have been the best on-beat news item, but its real wire dateline is Oct 30; **out of window**, rejected
+
+SITC 2026 runs Nov 4–8, so no congress coverage existed this weekend — expect embargo drops Thursday.
+
+Memory updated in two places: the show's run log (three reusable spines — "expansion is not efficacy," the dual-library limiting-vs-surplus readout, and overexpressed-dimerizer-as-partner-sponge) and the news-source reference (MJH oncology RSS as a first-class route; the BioSpace mirror-date trap that disqualified 4 of 8 press releases; Fierce-via-jina flakiness; GlobeNewswire/Business Wire now dead).
+=== 2026-11-02T02:57:33-08:00 done  justice-biotech-brief (exit 0) ===
