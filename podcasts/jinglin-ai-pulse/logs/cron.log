@@ -4440,3 +4440,46 @@ Sources:
 - [October 2026 AI Funding Roundup](https://aifunding.me/roundups/october-2026)
 - [Kotaku on Claude reverse-engineering](https://kotaku.com/claudes-reverse-engineering-capabilities-used-to-recompile-games-may-have-been-quietly-nerfed-2000749320)
 === 2026-11-01T02:37:55-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-02T02:30:14-08:00 start jinglin-ai-pulse ===
+I wrote today's script for Ollie's AI Pulse plus the two stub files. `SKIP_TTS=1` was set, so I didn't generate audio, publish, edit `feed.xml` or commit; the batch orchestrator does those after TTS.
+
+The dedup check caught one problem late. Karpathy's HackerTube was going to be the second Twitter item, but yesterday's episode already covered it with the same "the human only touched the credentials" angle. My first dedup grep missed it because the search pattern was written wrong, so it matched nothing. The final check against the full roster caught it, after drafting. I cut that segment down to a one-line callback that keeps only two new details from his comment replies (the token count, and that he doesn't trust benchmarks right now). The episode was retitled from "the keys and the question" to "choose the question".
+
+**Files written** in `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-11-02-choose-the-question.md`: about 1,920 spoken words, roughly 11–12 minutes
+- `2026-11-02-choose-the-question.rss-item.xml`: has the `__LENGTH__` / `__DURATION__` placeholders; the XML parses
+- `2026-11-02-choose-the-question.commit-msg`
+
+**What the episode covers**
+- **Theme:** once the model does the work, what's left for the human?
+- **Twitter Pulse:**
+  - Frank Calegari's guest post on Terence Tao's blog, which argues that choosing worthwhile problems may matter more than producing proofs. It also proposes six concrete changes to hiring, journals and seminars, plus the Hacker News pushback.
+  - The Karpathy callback.
+  - Memdoor, which independently reproduced GVS5H: five Qwen3.8-27B agents scored 9.8 of 10 against 8 for a single Fable 5 call. It only tested ten problems and couldn't rule out contamination. The one loss came when the reviewing "manager" agent invented a wrong counterexample, and the team rewrote a correct program into a broken one.
+- **Money Moves:** Serval raised $150M at a $3B valuation, led by Sequoia, pitching itself as a replacement for ServiceNow. The same day, ServiceNow shares fell as much as 25% intraday.
+- **Deep Cut:** Aman Singh of Arca on Latent Space ("agents prompt people more than people prompt agents"), read from the full transcript. In Arca's system, agents can't move money, the safety rules are fixed code rather than model judgment, and a human approves every prompt change.
+
+I also saved two notes to memory: always include a term that definitely shipped yesterday in the dedup grep, so a broken pattern shows up; and the beehiiv transcript file needs a Safari user agent to get past Cloudflare.
+
+**Candidate funnel**
+- **Hacker News** (stories from the last 50 hours with 80+ points): about 70 scanned, 12 relevant to AI.
+  - **Chosen:** Calegari / "Mathematics has changed. Let's act like it" — https://news.ycombinator.com/item?id=50328251
+  - **Chosen:** Memdoor team-solve — https://news.ycombinator.com/item?id=50320995
+  - **Bridge only:** HackerTube — covered 11-01 — https://news.ycombinator.com/item?id=50319510
+  - **Dropped:**
+    - Brazilian court prompt-injection sanctions: a July 2026 ruling, fails the 48-hour recency rule.
+    - Tracked Anthropic training-block and game-cloning threads, the Talos malware story and the ChatGPT/Codex usage limits: all covered 11-01.
+    - Not used: Parameter.ai's ChatGPT account takeover, Nolan Lawson's "AI cost of JavaScript frameworks", the JEPA Platonic-representation paper, the Minecraft agent swarms, Prospero.
+- **X/Twitter:** blocked from this host. I read single posts through the fxtwitter API (Jake Stauch's Serval announcement). No feed search was possible, including @Zefan_Cai.
+- **Funding:**
+  - **Chosen:** Serval $150M — https://thenextweb.com/news/serval-series-c-150m-3bn-valuation-sequoia
+  - **Not used:**
+    - Upwind $400M at $3.8B.
+    - Flapping Airplanes: 10-21, outside the 7-day window.
+    - OpenAI round cut: covered 10-31.
+- **Podcasts:**
+  - **Chosen:** Latent Space, Arca episode (10-31) — https://latent.space/p/arca
+  - **Already covered:** MLST with Kevin Hartnett (10-28), the Latent Space episodes with Leash Bio (10-16) and on how Anthropic ships safely (10-29), and Interconnects (11-01).
+  - **Off-target:** MLST with Joscha Bach (today, on consciousness) and the Dwarkesh episodes (Caro, LBJ).
+  - **Not used:** TWIML with Daniel Jeffries.
+=== 2026-11-02T02:38:14-08:00 done  jinglin-ai-pulse (exit 0) ===
