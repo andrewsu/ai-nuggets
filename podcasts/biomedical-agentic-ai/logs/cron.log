@@ -6026,3 +6026,21 @@ Shortlist (chosen marked ★):
 
 The bioRxiv/medRxiv shortlist above is a good pool for the next few days; none of it has been read in full yet.
 === 2026-11-01T02:06:47-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-02T02:00:12-08:00 start biomedical-agentic-ai ===
+Episode written in SKIP_TTS stub mode — script plus both stubs, no TTS, no publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Published item:** `2026-11-02-proclaim-eval-curator-deletions-as-ground-truth` — ProClaim-eval (arXiv 2610.40906, posted 10-29, EMBL-EBI + Heidelberg). Spoken body 1,031 words (cap 1,150). Full text read via the arXiv PDF route, clean first try, no unfilled-results markers.
+
+**Candidate funnel**
+
+- **bioRxiv** (10-29…11-02, day-by-day, healthy, no 429s): 815 records scanned, 39 keyword hits at version 1. Shortlist after discarding spurious matches: Harness engineering for cross-domain hypotheses (`…761203`); Agentic Discovery Transfer (`…762506`); GLESKit, MCP-based gene-level evidence synthesis (`…761689`); The Findings Workflow (`…762630`); CryoPilot (`…762908`); LPT bounded agentic loops (`…762730`); MutQA (`…762236`). All deferred — full text untested, and the arXiv lead was stronger.
+- **arXiv** (shared cache, 500-entry cap held only 10-28/29/30 — 10-31 and 11-01 not covered, recall gap): ~500 scanned, 79 biomedical-relevant agentic hits. Shortlist: **ProClaim 2610.40906 — CHOSEN**; BABA-Bench 2610.41076; PAPERBENCHX 2610.39744; RECITE 2610.41368; MEMIG 2610.41245; CEDAR 2610.40379; ReX-GG 2610.41901. ClinGeX (2610.40556) and MoLRSI (2610.39714) excluded — receptor-and-reason shipped both on 10-30.
+- **ChemRxiv / PubMed / news / funder pages**: not reached before the arXiv lead was settled and full text verified; noting the gap for audit.
+
+Two things worth flagging:
+
+1. My first lead, Operon-S1 (arXiv 2610.41350), was fully read and then **dropped** — drafting it tripped a safety classifier stop mid-response. Per the standing rule I pivoted to a new subject rather than rewording, and I've recorded it as do-not-retry.
+2. ProClaim's Figure 3 (naive top-5 retrieval scoring *below* a single reference abstract, with REFUTE overproduced) is the same spine as the Munin episode from 10-19, so I demoted it to an explicit one-line callback and led instead on the benchmark construction — gold labels mined from curated-database revision history, where a REFUTE is an entry curators removed, rejected, or sign-flipped in a later release.
+
+Novelty-checked: ProClaim-eval appears at an earlier 419-claim size in a sibling EMBL paper, so the script does not claim the dataset is a first appearance. Run notes appended to the rolling deferral memory.
+=== 2026-11-02T02:05:35-08:00 done  biomedical-agentic-ai (exit 0) ===
