@@ -6132,3 +6132,32 @@ Shortlist that lost out (fresh, full text obtainable, not picked): LPT bounded a
 
 Two things worth flagging for future runs: `natmentalhealth` now returns a real RSS feed (it was a 150-byte empty in October), and the 10-30/10-31 arXiv gap is real rather than a fetch failure — both the shared cache and two live paginated queries top out at 10-29.
 === 2026-11-01T03:06:52-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-02T02:50:15-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was confirmed as the first call of the run, so I wrote the script plus the two stub files and stopped — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-02-receptor-and-reason.md` — 3,346 spoken words, ~18.4 min, 9 items / 10 papers
+- `…​.rss-item.xml` — validates as XML, `__LENGTH__` / `__DURATION__` placeholders intact
+- `…​.commit-msg` — single line, house format
+- Ledger appended: 160 episodes, 1,672 items
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Fresh after dedup |
+|---|---|---|---|
+| bioRxiv + medRxiv (Oct 26–Nov 2, day-by-day) | 2,130 | 1,211 | 1,175 (36 shipped) |
+| arXiv shared cache | 500 (capped, covers Oct 28–30 only) | 26 | 23 (3 shipped) |
+| Nature RSS (`npp`, `natmentalhealth`, `natcancer`) | 24 | 4 | 3 (1 shipped) |
+
+`mp`, `neuro`, `nm`, `nbt` all 303'd to the auth host this morning — logged as a gap, not retried past once.
+
+**Shipped roster:** FASN-SREBP1 Parkinson's iPSC screen (lead) · activity-driven tau S202/T205 → GluA2 · TREM-family brain interactome · flavonoid chronotherapy in nerve injury · MDD polyconnectomic score · PSICHIC+ · the two Skopje ADMET benchmarks as one paired item · agentic irAE pipeline · harness-engineering confound audit (closer).
+
+**Two things worth flagging**
+
+1. **A dedup near-miss.** I had the *Neuropsychopharmacology* smoked-cannabis PK/PD RCT queued as today's lead. The filter correctly dropped it — it was the 10-30 lead — but I had misread the summary line ("27 of 30 fresh") as all-clear and only caught it on a concept grep. I've saved a memory rule to print the dropped lines explicitly rather than trusting the count.
+
+2. **A deferral to close.** `10.64898/2026.10.24.761541` (orexin/dynorphin VTA→BLA after morphine) failed to render for the third time, nine days after posting. I've marked it dead rather than carrying it forward.
+
+Full text was read for all ten shipped papers. Four more were fetched and read but cut — St18 CA3 circuit, Tofersen/ALS CSF biomarkers, DeepMAST, and BABA-Bench — all noted on disk for the next run; BABA-Bench was drafted in full and cut only for length, so it's the obvious pickup tomorrow.
+=== 2026-11-02T03:13:12-08:00 done  receptor-and-reason (exit 0) ===
