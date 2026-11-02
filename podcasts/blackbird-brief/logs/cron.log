@@ -4006,3 +4006,37 @@ Both episodes written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no
 
 One process note: the first attempt at this run was stopped by a safety classifier before any tool call completed, so there was no draft to pivot away from — both episodes were built from scratch and nothing was reworded. That is now four consecutive days with a classifier stop on this show (10-29 on the FDA gene-editing guidance, 10-30, 10-31 and today all pre-tool).
 === 2026-11-01T02:28:18-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-02T02:10:13-08:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` honored throughout: no TTS, no R2 publish, no `feed.xml` edit, no commit — script plus the two stub files only, for `publish_pending.py` to pick up.
+
+**Published artifacts**
+- `podcasts/blackbird-brief/scripts/2026-11-02-portfolio-watch.md` — 1,756 spoken words (~9.2 min, in line with the last five episodes: 1,468–1,973 words / 425–611 s)
+- `…-portfolio-watch.rss-item.xml` — validated as XML, `__LENGTH__` / `__DURATION__` placeholders in place
+- `…-portfolio-watch.commit-msg`
+- Ledger appended: 4 keys → 117 episodes, 642 items
+- `memory/blackbird-portfolio.md` edited **in place** (4 entries revised, `_Last update:_` bumped; no dated log appended)
+
+**Candidate funnel**
+
+| Source | Scanned | Survived relevance |
+|---|---|---|
+| BioSpace (5 sections; `/clinical-trials` 404) | ~110 article links | 10 |
+| Endpoints News homepage | ~90 article links | 7 |
+| Fierce Biotech | **0 — HTTP 403** | — |
+
+Dedup: `shipped_keys.py` filtered 17 → 17 fresh against 678 keys / 116 episodes (0 key matches, 0 title matches).
+
+Shortlist after discarding spurious matches:
+- ✅ **CHOSEN (LEAD)** Atsena ATSN-301 dual-AAV MYO7A, Usher 1B — NHP + 6-mo GLP tox (Aletira)
+- ✅ **CHOSEN** Alligator → Biossil, mitazalimab for $750K upfront (BD comparator / shelved-asset screen)
+- ✅ **CHOSEN** Boehringer Phase 3 AIRWARD, oral DPP1 inhibitor verducatib in eosinophil-low COPD (COPD theme)
+- ✅ **CHOSEN** Darwin Biotech ALT001 randomized Phase 1 ALS at NEALS (NuGate / NfL)
+- ❌ Viatris–Pacira tender offer — **dedup hit the key filter passed as fresh**. The underlying $1.65B merger agreement (10-08) shipped 10-09 with follow-ups 10-11/10-13; the commencement is procedural with no new terms. Caught only by grepping `scripts/` for the asset name, which is the failure mode my notes flag — worth knowing the URL-based filter cannot see it.
+- ❌ Newron evenamide / 5 deaths, FDA hold — strong GPR52-NewCo hook but `datePublished` 2026-10-08, out of window
+- ❌ Anthropic/Mithril + "zero- and one-employee startups" — on-thesis for a venture studio, but Endpoints body paywalled (537 readable bytes) and dated 10-27. Carried.
+- ❌ No portfolio line: Pelthos/Castle Creek · Inovio VOCERYQ · Atara/Pierre Fabre · Biohaven $795M · Pathos $237M · Treasury–CFIUS draft rules · Novartis antibiotic · Tanzi feature
+
+**Source failures:** `fiercebiotech.com` 403 to curl with a Safari UA (5,614-byte Cloudflare block), not retried — same block as 10-30 and 10-31, so anything running only on Fierce is absent today. `biospace.com/clinical-trials` 404 (stale slug); the other five BioSpace sections returned 200.
+
+One judgment call worth flagging for review: item 1's third read is an open question, not a finding — I could not establish whether anyone holds cochlear MYO7A, so the script asks for an hour of diligence rather than asserting the indication is open.
+=== 2026-11-02T02:22:38-08:00 done  blackbird-brief (exit 0) ===
