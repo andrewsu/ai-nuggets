@@ -6087,3 +6087,37 @@ Rejected on dedup (grepped the scripts dir before drafting): Anthropic's acquisi
 
 One caveat worth flagging for your review: the STAT piece on scrutiny of Vertex's povetacicept infection risk is STAT+ and I could not read the body, so the headline cites the published Phase 3 infection numbers and the mechanism rather than STAT's argument.
 === 2026-11-01T02:29:47-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-02T02:20:13-08:00 start calibr-briefing ===
+Both scripts and their stubs are written. `SKIP_TTS=1` was confirmed as the first call of the run, so no TTS, no R2 publish, no feed edit, and no commit — the orchestrator handles those.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-11-02-pharma-headlines.txt` (1,181 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-11-02-summit-ivonescimab-backbone-partnering-spotlight.txt` (1,388 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as valid XML with `__LENGTH__` / `__DURATION__` placeholders.
+
+**Candidate funnel**
+
+Sources scanned:
+- BioSpace RSS — 20 items, 4 dated today (Nov 2); `/press-releases` index via jina — ~36 releases, 5 on-target
+- Endpoints index (jina, x-no-cache) — 24 items, nothing newer than Oct 31; bodies paywalled
+- BioPharma Dive RSS — 10 items, newest substantive Oct 30
+- STAT RSS — 20 items, 5 dated Nov 2 (lead biotech item is STAT+ paywalled past the teaser)
+- GEN — 10 items, StockWatch (Nov 1) carried the week's editing-sector tape
+- Clinical Trials Arena — 10 items, newest Oct 30
+- Fierce Biotech / Fierce Pharma — **failed**: RSS returned 0 items (5.6 KB nav only) and jina returned 383/476-byte blocks. Not retried per the one-attempt rule.
+- GlobeNewswire / BusinessWire industry indexes — **failed**: jina returned nav-only (8 KB) and 444 bytes respectively
+- Primary sources read in full: FDA draft guidance PDF (`/media/195887`), Federal Register notice, Summit IR release archive with dated titles, HARMONi Lancet Oncology + WCLC OS releases, AstraZeneca $2B equity release, ClinicalTrials.gov NCT05899608 / NCT07397338
+
+Shortlist after filtering (★ = used):
+- ★ Summit ivonescimab partnering queue ahead of Nov 14 PDUFA — biospace.com/drug-development/drugmakers-rush-to-pair-up-with-summits-ivonescimab-ahead-of-key-verdict — **spotlight**
+- ★ BridgeBio BBP-418, Nov 27 action date, LGMD2I/R9 — biospace.com/drug-development/bridgebio-gears-up-for-rare-muscular-dystrophy-launch-with-fda-approval-in-sight
+- ★ Gene editing tape on FDA IFS guidance + Beam BEAM-301 GSDIa — genengnews.com StockWatch
+- ★ Biossil buys mitazalimab from Alligator ($750K upfront) — biospace press release, paired with Summit's July ridinilazole sale
+- ★ HUTCHMED/AZ savolitinib EU + Japan filings on SAFFRON
+- ★ Boehringer verducatib Phase 3 AIRWARD in COPD (NCT07907991)
+- ★ Pelthos / Castle Creek merger
+- Kymera KT-621 eczema readout (STAT, Nov 2) — already covered Oct 29/30; demoted to a one-line calendar marker only
+- FDA "plug-and-play" gene therapy interview (BioSpace, Nov 2) — the underlying guidance was headlined Oct 29; folded into the editing item rather than re-run
+- Saudi biotech hub feature, AbbVie/Regeneron/Sanofi Q3 reads, Setara, Aspen, Dren, Etcelera, Anthropic/Mithril — all previously shipped or off-thesis
+=== 2026-11-02T02:33:25-08:00 done  calibr-briefing (exit 0) ===
