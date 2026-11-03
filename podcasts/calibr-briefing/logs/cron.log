@@ -6121,3 +6121,33 @@ Shortlist after filtering (★ = used):
 - FDA "plug-and-play" gene therapy interview (BioSpace, Nov 2) — the underlying guidance was headlined Oct 29; folded into the editing item rather than re-run
 - Saudi biotech hub feature, AbbVie/Regeneron/Sanofi Q3 reads, Setara, Aspen, Dren, Etcelera, Anthropic/Mithril — all previously shipped or off-thesis
 === 2026-11-02T02:33:25-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-03T02:20:10-08:00 start calibr-briefing ===
+I wrote both of today's Calibr episodes, plus their RSS and commit-message stubs. `SKIP_TTS=1` was set, so I did not generate audio, publish, edit `feed.xml` or commit. The batch job (`publish_pending.py`) will handle those.
+
+**Headlines** (`2026-11-03-pharma-headlines`, about 1,370 words, roughly 7½ minutes): that runs over the brief's 3–5 minute target, in line with recent episodes. It covers:
+- uniQure's Huntington's gene therapy (AMT-130) accepted for review with a May 1, 2027 decision date and a likely advisory committee (teaser for the spotlight).
+- Karyopharm's bankruptcy filing with Ayrmid as lead bidder, and Rodman & Renshaw saying shareholder value "could be minimal."
+- Vertex's quarter and raised guidance; BioMarin's first billion-dollar quarter with trimmed guidance.
+- 10x Genomics launching Sentira, a single-cell analysis agent built on Claude. I included an on-air disclosure that the briefing is made with Claude.
+- Recursion naming Fred Hassan board chair, plus updated data for its MEK inhibitor REC-4881 in an inherited polyp disease.
+- Merck KGaA selling its contract manufacturing business to Lonza (from the Endpoints preview only; the deal terms were paywalled).
+- PitchBook data showing cell and gene therapy out-raised biologics in Q3.
+- Keytruda biosimilars, and Tiziana's MS trial where the low dose hit and the high dose missed.
+
+**Spotlight** (`2026-11-03-uniqure-amt130-external-control-adcomm-spotlight`, about 1,400 words): we already ran a uniQure spotlight on June 18, so this one only covers what has changed since. The four-year data weakened on the main composite score, and the size of the effect shifts depending on which version of the patient registry is used as the control. The follow-up trial uses a different endpoint and has no sham-surgery arm. Novartis's 770-patient blinded votoplam trial uses the endpoint uniQure is moving away from; I checked its details on ClinicalTrials.gov. The episode also covers the FDA's reversals under different leadership and why the advisory committee matters more than yesterday's acceptance.
+
+**Candidate funnel**
+- RSS: BioSpace 20 items, Endpoints 24, BioPharma Dive 10, STAT 20, GEN 10, Clinical Trials Arena 10. Fierce Biotech and Fierce Pharma returned 0 items (blocked), and jina only returned a ~670-byte stub.
+- Wire indexes: BioSpace press releases readable; PR Newswire and GlobeNewswire returned only navigation pages. WebSearch couldn't find anything on Monday's events.
+- Read in full: BioSpace and GEN on uniQure plus BioSpace's September four-year-data article, Karyopharm (BioPharma Dive, BioSpace), both Recursion releases, Vertex and BioMarin earnings releases, Sentira (GEN), Tiziana, the cell therapy funding piece, Keytruda biosimilars.
+- Paywalled, so used as one line or dropped: Merck KGaA/Lonza (one line), Bright Minds clinical hold (dropped), AbbVie–Brise (dropped), Kymera eczema preview (dropped), Dr. Reddy's generic lenacapavir (dropped; I couldn't confirm the details).
+- Dedup: every final item checked against past Calibr scripts, with a known-shipped term (sabirnetug) as a control. All clean except uniQure, which is handled as described above.
+- Picked: uniQure (spotlight and item 1), Karyopharm, Vertex, BioMarin, Sentira, Recursion, Merck KGaA/Lonza, PitchBook funding, Keytruda biosimilars, Tiziana.
+
+**Memory note:** My first duplicate check only showed the three most recent uniQure mentions, all in headlines, so it missed the June uniQure spotlight. I caught it before writing the spotlight and added that lesson to the duplicate-check memory.
+
+Files are in `podcasts/calibr-briefing/scripts/`:
+- `2026-11-03-pharma-headlines.txt`
+- `2026-11-03-uniqure-amt130-external-control-adcomm-spotlight.txt`
+- Plus a `.rss-item.xml` and `.commit-msg` for each.
+=== 2026-11-03T02:28:34-08:00 done  calibr-briefing (exit 0) ===
