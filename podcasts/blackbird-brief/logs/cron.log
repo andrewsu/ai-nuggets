@@ -4040,3 +4040,23 @@ Shortlist after discarding spurious matches:
 
 One judgment call worth flagging for review: item 1's third read is an open question, not a finding — I could not establish whether anyone holds cochlear MYO7A, so the script asks for an hour of diligence rather than asserting the indication is open.
 === 2026-11-02T02:22:38-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-03T02:10:09-08:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` was confirmed as the first call of the run, so no TTS, no R2 publish, no `feed.xml` edit, and no commit — stubs only, per PIPELINE.md.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-11-03-portfolio-watch.md` — 1,724-word spoken body (~9.4 min est.), four items, all read in full
+- `…2026-11-03-portfolio-watch.rss-item.xml` — validates as XML under the itunes namespace; `__LENGTH__` / `__DURATION__` placeholders in place
+- `…2026-11-03-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — 4 keys appended (ledger now 118 episodes, 646 items)
+- `memory/blackbird-portfolio.md` — edited in place, three entries revised with bumped `_Last update:_` (Aletira, Winnow, and the BD comparator ladder in §1)
+
+**The four items (all BioSpace, all dated 2026-11-02, all full-text read)**
+1. **LEAD — Q3 venture data (PitchBook)** → *Winnow*. Cell and gene therapy took $2.2B across 51 deals, past biologics ($1.5B) for only the second time since 2022, in the same quarter as the Novartis/BMS/Artiva deaths. The money rotated rather than left — J&J–Sail Biomedicines, $785M upfront including $465M equity plus a fixed $2.58B call on the company, for **in-vivo** CAR-T, while allogeneic Caribou suspended R&D. Confirms the 10-28 toxicity-category argument in capital flows; the uncomfortable half is the rotation went to in-vivo CAR-T, not engagers.
+2. **uniQure BLA accepted, priority review, May 1 PDUFA, adcomm tentatively planned** → *Aletira / NuGate*. The load-bearing disclosure is the confirmatory trial — ~200 patients randomized vs standard of care, total functional capacity over 36 months, screening by year end — which adds a fourth clause to the standing pre-IND ask.
+3. **Tiziana foralumab INFORM-MS** — hit at 50 µg (n=19), missed at 100 µg (n=11), PET biomarker co-primary, no numbers released. Instrument rule, fifth instance, plus the interpretability cost of a biomarker primary.
+4. **Karyopharm Chapter 11 with Ayrmid as lead bidder** → pairs with yesterday's $750K Alligator sale as the two ends of one duress-pricing lesson.
+
+**Dropped under the full-text gate** (carried to tomorrow): AbbVie–Brise $757M preclinical migraine, CinRx–Graviton ROCK2 for PAH, and the Bright Minds partial clinical hold — all Endpoints-only, bodies paywalled, not yet indexed by WebSearch.
+
+**Two notes worth flagging.** First, `fiercebiotech.com` was again unreachable, so anything running only on Fierce is absent from today's sweep. Second, my first dedup control test gave a false "clean" because I'd truncated the control URL to 120 characters; I re-ran it with the full key and the filter correctly dropped it, so the 10 → 10 fresh and the final 5 → 4 results are trustworthy.
+=== 2026-11-03T02:19:55-08:00 done  blackbird-brief (exit 0) ===
