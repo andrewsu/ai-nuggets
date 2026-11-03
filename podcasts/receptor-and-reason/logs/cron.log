@@ -6161,3 +6161,39 @@ Episode written. `SKIP_TTS=1` was confirmed as the first call of the run, so I w
 
 Full text was read for all ten shipped papers. Four more were fetched and read but cut — St18 CA3 circuit, Tofersen/ALS CSF biomarkers, DeepMAST, and BABA-Bench — all noted on disk for the next run; BABA-Bench was drafted in full and cut only for length, so it's the obvious pickup tomorrow.
 === 2026-11-02T03:13:12-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-03T02:50:11-08:00 start receptor-and-reason ===
+I'm not able to continue this run. My previous response was stopped by a safety classifier, and the guidance I'm given is explicit: don't reproduce that content, even reworded.
+
+What I can tell you about where things stand:
+
+- I hadn't yet published anything for receptor-and-reason today (2026-11-03), so there's no partial episode or stale mp3 to clean up from this attempt.
+- Per your own codified note on classifier stops (`feedback_classifier_stop_pivot_topic.md`), the correct recovery is to **pick a new spotlight subject** rather than reword the stopped draft. That applies here, but I can't self-restart into the same run to do it.
+
+Suggested next step: re-invoke the show in a fresh session. If it stops again at the same point, the stop is likely attached to a specific candidate paper rather than to the run itself — in that case, drop that candidate from the roster entirely and rebuild the spotlight around a different item from `fresh.tsv`.
+
+Worth noting for the pipeline: your memory already records a same-morning classifier false-stop on the justice show (10-20 note, two automated attempts with no output). If these are clustering, the orchestrator's "no usable output; retrying" path will keep re-invoking without ever making progress — a per-show stop counter that gives up after two tries and logs the reason would save the wasted runs.
+=== 2026-11-03T02:50:30-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-03T02:50:30-08:00 no usable output for receptor-and-reason; retrying in 180s ===
+=== 2026-11-03T02:53:30-08:00 start receptor-and-reason (retry 1) ===
+You've hit your session limit · resets 5:40am (America/Los_Angeles)
+
+You've hit your session limit · resets 5:40am (America/Los_Angeles)
+
+You've hit your session limit · resets 5:40am (America/Los_Angeles)
+=== 2026-11-03T03:04:24-08:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-11-03T03:04:24-08:00 session-limit reset at 5:40am is 9396s away (>3600s cap); sleeping 180s ===
+=== 2026-11-03T03:07:24-08:00 start receptor-and-reason (retry 2, --model claude-sonnet-5) ===
+You've hit your session limit · resets 5:40am (America/Los_Angeles)
+=== 2026-11-03T03:07:30-08:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-11-03T03:07:30-08:00 session-limit reset at 5:40am is 9210s away (>3600s cap); sleeping 180s ===
+=== 2026-11-03T03:10:30-08:00 start receptor-and-reason (retry 3, --model claude-sonnet-5) ===
+You've hit your session limit · resets 5:40am (America/Los_Angeles)
+=== 2026-11-03T03:10:36-08:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-11-03T03:10:36-08:00 session-limit reset at 5:40am is 9024s away (>3600s cap); sleeping 180s ===
+=== 2026-11-03T03:13:36-08:00 start receptor-and-reason (retry 4, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5:40am (America/Los_Angeles)
+=== 2026-11-03T03:13:42-08:00 session-limit detected for receptor-and-reason; computing reset-aware sleep ===
+=== 2026-11-03T03:13:42-08:00 session-limit reset at 5:40am is 8838s away (>3600s cap); sleeping 180s ===
+=== 2026-11-03T03:16:42-08:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
+You've hit your session limit · resets 5:40am (America/Los_Angeles)
+=== 2026-11-03T03:16:48-08:00 FAILED: no usable output for receptor-and-reason after all retries ===
