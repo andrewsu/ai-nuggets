@@ -4483,3 +4483,38 @@ I also saved two notes to memory: always include a term that definitely shipped 
   - **Off-target:** MLST with Joscha Bach (today, on consciousness) and the Dwarkesh episodes (Caro, LBJ).
   - **Not used:** TWIML with Daniel Jeffries.
 === 2026-11-02T02:38:14-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-03T02:30:10-08:00 start jinglin-ai-pulse ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote the script plus the two stub files and did **not** run TTS, publish to R2, edit `feed.xml`, or commit.
+
+**Files written**
+- `podcasts/jinglin-ai-pulse/scripts/2026-11-03-inside-the-mill.md` (2,577 spoken words ≈ 12.7 min at this show's measured rate)
+- `…-inside-the-mill.rss-item.xml` (validates; `__LENGTH__` / `__DURATION__` placeholders intact)
+- `…-inside-the-mill.commit-msg`
+
+**Candidate funnel**
+
+Sources scanned:
+- **Hacker News** (Algolia, last 60h, >80 points): 85 stories scanned, 14 AI-substantive after discarding non-AI front-page noise.
+- **Podcast feeds**: MLST (6 recent), Latent Space (6), Interconnects (8), Dwarkesh (8). Latent Space Substack archive API 404'd; RSS worked. The Cognitive Revolution megaphone feed 404'd — not needed.
+- **Twitter/X**: fxtwitter API only (no timeline search from this host).
+
+Shortlist:
+- Sparks of Weight-Space Programming, MIT CSAIL — rikiyat.github.io/blog/weight-space-programming/ — **CHOSEN (lead)**
+- Egoless Mathematics in the AI Era (Tao guest post, Karthik C. S./Sahai/Xue) — **CHOSEN (short bridge)**
+- MOFCOM Announcement No. 48, China's first frontier AI export controls (CSA note) — **CHOSEN**
+- Anthropic amended S-1, $17B Q3 / $895.4B commitments (CNBC) + Blodget monthly decomposition — **CHOSEN (money)**
+- Oracle $20B stock+bond filing (CNBC) — **CHOSEN (money, second)**
+- MLST, Joscha Bach, "Why Leibniz Couldn't Find the Mind Inside the Mill" — **CHOSEN (deep cut)**
+- SEC Should Block Anthropic's IPO (TechPolicy) — dropped, opinion piece, overlaps 10-31 Blackstone item
+- Anthropic internal AI use exceeds employee pay (BI) — dropped, URL 404s from this host, unverifiable
+- Agentic backdoors via pretraining poisoning (arXiv 2610.37741) — dropped, thin traction, no full-text read
+- LongCat-2.5 — dropped, product launch, prior LongCat coverage 07-06
+- Minecraft agent-swarm bureaucracy (Tom's Hardware) — dropped, thin
+- Platonic Representation Hypothesis with JEPAs — deferred, not read in full
+- Scaling Git at OpenAI — dropped, engineering ops, no intellectual substance for this audience
+
+Notes:
+- **A safety classifier stopped my first draft mid-turn.** Per standing guidance I pivoted the topic entirely rather than rewording: one candidate (an X thread about an agent-run animal surgery) was dropped and its fetched artifact deleted. No content from the stopped draft was reused.
+- Dedup grep run against all prior scripts for: weight-space, rikiyat, Mofcom, export control, Egoless, pretraining poisoning, LongCat, Platonic, Oracle, Calegari, IPO, S-1, 895 (control term "Calegari" correctly hit yesterday's episode, confirming the grep was live). Calegari is referenced only as an explicit callback; the Egoless post is a distinct Nov 2 item.
+- Full text read for every selected item, including the complete MLST transcript (97 min, via the ReScript share API) and all eight weight-space experiments including the negative Gemma control.
+=== 2026-11-03T02:37:51-08:00 done  jinglin-ai-pulse (exit 0) ===
