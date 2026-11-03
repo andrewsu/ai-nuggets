@@ -6197,3 +6197,24 @@ You've hit your session limit · resets 5:40am (America/Los_Angeles)
 === 2026-11-03T03:16:42-08:00 start receptor-and-reason (retry 5, --model claude-haiku-4-5-20251001) ===
 You've hit your session limit · resets 5:40am (America/Los_Angeles)
 === 2026-11-03T03:16:48-08:00 FAILED: no usable output for receptor-and-reason after all retries ===
+=== 2026-11-03T05:45:00-08:00 start receptor-and-reason ===
+Episode written for 2026-11-03. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files:** `2026-11-03-receptor-and-reason.md` (11 items, 3,257 spoken words ≈ 17.9 min), plus `.rss-item.xml` and `.commit-msg` stubs. Ledger appended (161 episodes).
+
+**Recovery note:** the 02:50 automated attempt was stopped by a safety classifier with no output, and the orchestrator then burned five retries into the session-limit wall. That session's work dir `/tmp/rr1103` survived intact with 11 Nature full texts (including the whole Molecular Psychiatry and Nature Neuroscience sets, whose RSS slugs 303'd this morning) and 7 arXiv PDFs. I reused that evidence, rebuilt the roster from scratch, and excluded the one plausible trigger — a Molecular Psychiatry polygenic study of suicidal thoughts and behaviours. No stop recurred.
+
+**Candidate funnel**
+
+- **bioRxiv/medRxiv details API** — day files 10-27→11-03 (re-fetched 11-02, fetched 11-03; 284/125/90/1 records on the new days). 210 relevance-filtered candidates → **177 fresh** (33 already shipped; dropped lines printed and read).
+- **arXiv** — shared cache, 500 entries but **500-capped covering only 10-31→11-02** (63/187/250; nothing for 10-27→10-30). Tightened filter to require a bio term in the title: 203 → **62 candidates, 62 fresh**.
+- **Nature family RSS** — `npp` `natmentalhealth` `nm` `nbt` `natcancer` 200/8 items; `mp` and `neuro` 303 to idp.nature.com (but their article bodies were already on disk from the stopped session). In-window Tier-1 yield otherwise thin: npp's newest in-window item was the cannabis PK/PD RCT shipped 10-30.
+- **Psychiatric Times / society pages** — not swept; Cloudflare-blocked per standing note.
+- **Full text read for all 11 picks.** bioRxiv fetches 7/7 on first try via jina on `.full.pdf`.
+
+**Shortlist → chosen (all 11 shipped):** Psy-BAANC psilocybin 5-lab replication (Nat Neuro, LEAD) · INMT at the cis-Golgi · ketamine blocks D2- not D1-agonist dyskinesia · escitalopram EWAS · CSF/serum endocannabinoid-sphingolipid ML in schizophrenia · ABCD environmental vs polygenic depression score · CONFIRM/NeuroClaimBench · BioAgent-DF decision provenance · silent PHI access by medical agents · GRAFT · planarian antiseizure screen (closer).
+
+**Dedup catch worth recording:** Molecular Psychiatry `s41380-026-03931-7` (CB1 PET, childhood trauma) is the same work as `biorxiv:2026.10.26.26366543`, already shipped — different DOI, differently worded title, so it passed both the key and title filters. Caught only by reading the dropped-preprint list against the journal shortlist. Excluded by hand. The final-roster gate was verified live by seeding it with a known-shipped control (the 11-02 FASN lead), which dropped correctly.
+
+**Read but unused, on disk at `/tmp/rr1103/ft/`:** serum selenium/iron/rubidium in treatment-resistant schizophrenia, Crh insular→brainstem anxiety circuit, Htr2b macrophage phagocytosis after stroke, the Adolescent Mental Health AI Response Tool (paywalled at 30.8 KB), plus arXiv `2610.41076` BABA-Bench and `2611.03617` (tracing LLM discovery to training data) — all cut for roster length, worth picking up tomorrow.
+=== 2026-11-03T05:58:47-08:00 done  receptor-and-reason (exit 0) ===
