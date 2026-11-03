@@ -4654,3 +4654,32 @@ SITC 2026 runs Nov 4–8, so no congress coverage existed this weekend — expec
 
 Memory updated in two places: the show's run log (three reusable spines — "expansion is not efficacy," the dual-library limiting-vs-surplus readout, and overexpressed-dimerizer-as-partner-sponge) and the news-source reference (MJH oncology RSS as a first-class route; the BioSpace mirror-date trap that disqualified 4 of 8 press releases; Fierce-via-jina flakiness; GlobeNewswire/Business Wire now dead).
 === 2026-11-02T02:57:33-08:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-11-03T02:40:11-08:00 start justice-biotech-brief ===
+Episode complete. `SKIP_TTS=1` was confirmed as the first call of the run — three stub files written, feed untouched, nothing committed.
+
+## Episode: `2026-11-03-botensilimab-balstilimab-unicorn-pmmr-colon-fc-enhanced-ctla4`
+
+**Botensilimab plus balstilimab — two weeks of preoperative dosing produces pathologic responses in MMR-proficient colon cancer**
+Nature Medicine `10.1038/s41591-026-04710-1`, published online 2026-11-02. Phase 2 UNICORN, GONO group / Istituto Nazionale dei Tumori Milan. **Read in full** — 210 KB via `r.jina.ai` on the nature.com URL, with real Results/Discussion/Methods and no paywall markers. URL verified (200 after the standard cookie redirect).
+
+Why it won: it is a 2×2, not a single-arm combination. Botensilimab alone in pMMR disease gave **0% pathologic major response but 43% partial response** — the Fc-enhanced anti-CTLA-4 visibly moves a tumor that is supposed to ignore immunotherapy, it just doesn't clear the 90% bar; adding two doses of anti-PD-1 takes it to **36% (4 of 14 pCR)**. The paired spatial transcriptomics then supplies the idea worth keeping: responders' Treg signature was *higher* at baseline and *lower* at surgery, so the tumors that respond are not the ones that were already hot but the ones whose suppressive compartment can be stripped in two weeks — and the predictive PD-L1 signal sat in the stroma, invisible to tumor-cell-scored IHC. The honest counterweight is in the script: sequential non-randomized cohorts of 14, a CI of 12.8–64.9% that *contains* NICHE's 20% on conventional ipi/nivo, and NEST-2's 47% on eight weeks of the same drugs, which points at duration rather than Fc engineering.
+
+Files: `.md` (1,638 words, ~8 min; no URLs, DOIs or markdown in the spoken body), `.rss-item.xml` (parses clean, both placeholders present), `.commit-msg`.
+
+## Candidate funnel
+
+**bioRxiv / medRxiv** — 551 records swept day-by-day, 545 unique (biorxiv 92 / 284 / 42 for 11-01→11-03; medrxiv 43 / 90 / **0** — the zero-record guard fired cleanly again). 13 keyword hits.
+- `…763005` *An adjuvant for in vivo CAR-T potentiation against solid tumors* — strongest preprint of the sweep, `.full` 429'd then abstract-only via jina at day 1 → **deferred**
+- `…763025` JAK1/2 inhibition rewiring type 1/2 immunity toward IL-17 — abstract-only → **deferred**
+- `…763264` BL8 antibody–antigen language — abstract-only → **deferred**
+- `…762687` already shipped 11-02 (dedup working)
+
+**Deferral retests** (run first, sequential): `…761551` 17-byte 429 for the **6th** time; `…762675` (TM4SF1 CAR-T) clean 107 KB but still abstract-only at **day 6** — both stay open. `…762652` and `…759951` could not be retested: only their 6-digit suffixes were ever recorded, and the details API needs the full `2026.MM.DD.nnnnnn`. I've written that into memory as a rule.
+
+**News / policy** — in-window shortlist:
+- ✅ UNICORN BOT+BAL, Nature Medicine + Agenus PR, Nov 2 — **CHOSEN**
+- ❌ **KITE-753 partial clinical hold** (anti-CD19/CD20 DuoCore CAR T, grade 3/4 ICANS) — trade press Nov 2, but the actual disclosure was Gilead's **Oct 29** earnings call; ClinicalTrials.gov confirms it isn't posted yet (both NCTs still ACTIVE_NOT_RECRUITING, last update Oct 23/26, no `whyStopped`). Out of window. Flagged in memory to pick up the moment it lands — KITE-753 and KITE-363 are structurally identical constructs differing only in manufacturing, and only the rapid-manufactured one was held.
+- Rejected: rocbrutinib + R-CHOP non-GCB DLBCL; generic venetoclax; UniQure adcomm (calibr's spotlight today); Kymera KT-621 (preview, no data); enzalutamide prostate miss.
+
+Source notes worth carrying: **all three MJH oncology RSS feeds and `endpts.com/feed/` now 301** — a plain curl returns 0 bytes or a 162-byte nginx stub and looks exactly like a dead source. `curl -L` fixed all four, and that's now in the RSS-discovery memory. GlobeNewswire/Business Wire not re-probed this run.
+=== 2026-11-03T02:50:07-08:00 done  justice-biotech-brief (exit 0) ===
