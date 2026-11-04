@@ -4683,3 +4683,23 @@ Files: `.md` (1,638 words, ~8 min; no URLs, DOIs or markdown in the spoken body)
 
 Source notes worth carrying: **all three MJH oncology RSS feeds and `endpts.com/feed/` now 301** — a plain curl returns 0 bytes or a 162-byte nginx stub and looks exactly like a dead source. `curl -L` fixed all four, and that's now in the RSS-discovery memory. GlobeNewswire/Business Wire not re-probed this run.
 === 2026-11-03T02:50:07-08:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-11-04T02:40:23-08:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` was confirmed as the first call of the run, so this is stubs only — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Today's pick:** `2026-11-04-m11-p144-tgfbeta-secreting-car-t-neutrophils-mesothelioma` — bioRxiv `10.64898/2026.10.28.762702` (Klampatsa lab, Institute of Cancer Research London, posted 11-03), read in full via `.full.pdf` + r.jina.ai.
+
+Three files written to `podcasts/justice-biotech-brief/scripts/`: `.md` (1,244 words), `.rss-item.xml` (validates as XML under an itunes-namespaced wrapper), `.commit-msg`. Paper DOI confirmed live against the bioRxiv details API.
+
+**Candidate funnel**
+
+- **bioRxiv/medRxiv details API** — 940 unique records (biorxiv 69 / 440 / 284 for 11-04 / 11-03 / 11-02; medrxiv 1 / 56 / 90). 29 keyword hits, most spurious (`ADC` matching *Arabidopsis* ADC2 and a foraging paper; `checkpoint` as spindle/cell-cycle). On-target shortlist, all v1, all dedup-clean:
+  - **CHOSEN** — Anti-TGFβ peptide P144 augments CAR-T efficacy through neutrophil recruitment in malignant mesothelioma — https://www.biorxiv.org/content/10.64898/2026.10.28.762702v1
+  - An adjuvant for in vivo CAR-T therapy potentiation against solid tumors (alum–manganese hydrogel, STING) — https://www.biorxiv.org/content/10.64898/2026.10.30.763005v1 — read in full, strong, **stays open as the best backup**
+  - Bispecific VSV-G engagers for cell-type-specific viral vector delivery — https://www.biorxiv.org/content/10.64898/2026.11.02.763599v1 — read in full, open
+  - CD19-CAR T resets the EBV+ autoreactive B cell repertoire in autoimmune disease — https://www.biorxiv.org/content/10.64898/2026.10.24.761515v1 — not fetched, lost on novelty
+  - JAK1/2 inhibition rewiring type 1/2 immunity toward IL-17 — https://www.biorxiv.org/content/10.64898/2026.10.30.763025v1 — open deferral, off-audience
+- **News/trade (Endpoints, STAT, BioPharma Dive, Fierce, OncLive, TargetedOnc, CancerNetwork)** — all fetched; the week's biotech news is earnings, layoffs, M&A and MFN policy. The one on-target item, BGB-B2033 (GPC3×4-1BB bispecific, ESMO dose-optimization first disclosure), is **video-only** on OncLive with no readable primary source — ineligible under the full-text gate, worth chasing if an abstract or release surfaces.
+- **Source failures:** `fiercebiotech.com/rss/xml` returned 0 items (feed empty, homepage readable via jina on retry); first jina homepage attempt returned a tracker-redirect stub. r.jina.ai threw a new **`AbuseAlleviationError`** — a time-boxed, domain-wide block on `www.biorxiv.org` (971-byte JSON reply) that expired 4 minutes later; plain curl was simultaneously returning the 17-byte bioRxiv 429, so both channels were down at once for ~10 minutes.
+
+One thing to flag honestly: a response partway through the run was cut by a safety classifier while I was printing the bioRxiv keyword-hit table, before any drafting. Nothing load-bearing was lost — I continued selection from the same candidate list rather than rewording anything — but it's logged in memory since it fired on routine sweep output.
+=== 2026-11-04T02:52:49-08:00 done  justice-biotech-brief (exit 0) ===
