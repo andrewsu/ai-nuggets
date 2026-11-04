@@ -6074,3 +6074,35 @@ One note worth flagging for a future run: this is the third provenance-themed pi
 
 Sources: [arXiv 2509.13978](https://arxiv.org/abs/2509.13978v2) (the unrelated provenance paper the title search surfaced, confirming no prior posting of this preprint)
 === 2026-11-03T02:06:17-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-04T02:00:21-08:00 start biomedical-agentic-ai ===
+Today's biomedical-agentic-ai episode is written and staged for the batch run. `SKIP_TTS=1` was set, so I didn't run TTS, publish to R2, edit `feed.xml` or commit. `publish_pending.py` will do those after batch TTS.
+
+**Pick: LUCA, "Treating the Symptom, Missing the Cause"** (https://arxiv.org/abs/2611.04473, posted 11-03, Relation Therapeutics). Agents work on synthetic 20-gene regulatory networks with one hidden fault. All seven LLMs tested fix the organism more often than they correctly name the fault; Claude Opus 4.6 fixes 20 of 20 but diagnoses only 11. The paper then rules out that the agents explored too little or that the evidence wasn't there: 91% of sessions ran a decisive experiment, yet diagnosis was right only 30% of the time. Replay tests on the agents' own logs locate the failure. Models score 0.88–1.00 when they're told what each candidate cause predicts, and drop to 0.51–0.74 when they must work that out themselves. The episode argues that agent tooling should write down each hypothesis's predicted result before every experiment.
+
+I read the full text (9k words, no placeholder results). Nothing in any show's scripts reuses this paper. A web search found only the companion LUCA paper, which is also listed at NeurIPS 2026, so the script presents the environment as a companion release rather than brand new. The 10-28 VariantAgent episode had a related "right answer, invalid reasoning" theme, but this one's take is different.
+
+**Files** in `podcasts/biomedical-agentic-ai/scripts/`:
+- `2026-11-04-luca-agents-cannot-derive-what-each-hypothesis-predicts.md` (1,010 spoken words, under the 1,150 cap)
+- the matching `.rss-item.xml` (parses as valid XML) and `.commit-msg` stubs
+
+**Candidate funnel**
+- bioRxiv 11-01..11-04: 838 records pulled day by day with no errors; 25 keyword hits at version 1, 4 on-brief.
+  - LabWeaver: https://www.biorxiv.org/content/10.64898/2026.10.28.762601v1
+  - Reasoning Paradox in Scientific Sandboxes: https://www.biorxiv.org/content/10.64898/2026.10.30.763189v1
+  - PhenoMe: https://www.biorxiv.org/content/10.64898/2026.10.29.762637v1
+  - Findings Workflow: already shipped 11-03, excluded.
+- arXiv shared cache: 500 entries covering only 11-02 and 11-03 (the cache is capped at 500); 42 matches on agent plus science/biomedical terms; shortlist:
+  - **CHOSEN** — Treating the Symptom, Missing the Cause: https://arxiv.org/abs/2611.04473
+  - El Agente Fármaco: https://arxiv.org/abs/2611.03832 (full text already downloaded)
+  - Auto-Research Agent on MSA organization for AlphaFold 3: https://arxiv.org/abs/2611.03183
+  - From FAIR to AI-FAIR: https://arxiv.org/abs/2611.03327
+  - THReD: https://arxiv.org/abs/2611.02484
+  - Silent Instrument Errors Reorder Agent Leaderboards: https://arxiv.org/abs/2611.04399 (theme overlaps an item Receptor & Reason ran 11-03)
+  - Labtune: https://arxiv.org/abs/2611.03935 (a system description with no results)
+- PubMed (entry dates 10-30..11-04): 3 hits; the only on-brief one is AEGIS in Nature Cancer, already shipped 11-01.
+- News and product launches: nothing fresh in the last 3 days.
+- ChemRxiv and the funder pages (ARPA-H, NIH, NSF, HHS): not checked this run.
+- Carried over from 11-02, still unshipped: GLESKit, harness-engineering cross-domain hypotheses, Agentic Discovery Transfer, CryoPilot.
+
+I added today's run notes and the open candidates to the rolling deferral memory file.
+=== 2026-11-04T02:05:03-08:00 done  biomedical-agentic-ai (exit 0) ===
