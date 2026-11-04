@@ -6218,3 +6218,25 @@ Episode written for 2026-11-03. `SKIP_TTS=1`, so stubs only — no TTS, no R2 pu
 
 **Read but unused, on disk at `/tmp/rr1103/ft/`:** serum selenium/iron/rubidium in treatment-resistant schizophrenia, Crh insular→brainstem anxiety circuit, Htr2b macrophage phagocytosis after stroke, the Adolescent Mental Health AI Response Tool (paywalled at 30.8 KB), plus arXiv `2610.41076` BABA-Bench and `2611.03617` (tracing LLM discovery to training data) — all cut for roster length, worth picking up tomorrow.
 === 2026-11-03T05:58:47-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-04T02:50:24-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-04-receptor-and-reason.md` — 2,824 spoken words ≈ 15.5 min, 10 items
+- `…2026-11-04-receptor-and-reason.rss-item.xml` (validates as XML, `__LENGTH__`/`__DURATION__` placeholders)
+- `…2026-11-04-receptor-and-reason.commit-msg`
+- Ledger appended: 162 episodes / 1,693 items
+
+**Run note:** a safety classifier stopped one mid-run turn. It fired on a tool result — a full preprint body printed verbatim into the transcript — not on draft content. I kept the item, switched to reading full texts in small targeted slices, and the run completed unchanged. Recorded in memory alongside the existing "pivot the topic" rule, since this is a different trigger with a different fix.
+
+**Candidate funnel**
+- bioRxiv/medRxiv details API, 10-28→11-04 (day-by-day, closed day-files reused from the 11-03 work dir): 582 new records swept; 246 relevance candidates
+- arXiv shared cache: 500 entries, covering only 11-02/11-03; 55 bio+agentic candidates
+- Journals via Crossref ISSN + Nature RSS: 97 in-window items (`mp` `neuro` `nm` RSS 303'd; Crossref covered them)
+- Dedup: 399 candidates → 364 fresh (34 already shipped, 1 duplicate). Final roster gate re-run with a seeded known-shipped control, which dropped correctly.
+- Sources mined with nothing eligible: Psychiatric Times (discovery-only), ACNP/SOBP/ECNP, chemRxiv, industry agentic-AI pages, CPT/CPT:PSP (non-CNS), Biological Psychiatry (front matter + reviews)
+
+**Selected (10):** 5-HT2A → NAADP/lysosomal Ca²⁺ via TPC2 (lead) · ligand-specific 5-HT2A antagonists in fear extinction · clozapine-induced neutropenia single-nucleus profiling · brain CYP2D × oral oxycodone place preference · chronic unpredictable stress, sex-specific circuits · CBT gray-matter predictor vs. questionnaires · BindCraft PACAP-38 mini-binders · monofacts and LLM discovery capacity · BABA-Bench patient-advocacy agents · CryoPilot (closer).
+
+**Notable exclusions:** a ketamine/dyskinesia preprint that is the same lab and drug as yesterday's pick (key-fresh, editorially a repeat); the PCDH19 variant catalogue (readable but no treatment content); `2026.10.30.763044` (GPCR submembrane compartmentation) failed all three fetch attempts — deferred and logged for retry.
+=== 2026-11-04T03:04:26-08:00 done  receptor-and-reason (exit 0) ===
