@@ -6151,3 +6151,61 @@ Files are in `podcasts/calibr-briefing/scripts/`:
 - `2026-11-03-uniqure-amt130-external-control-adcomm-spotlight.txt`
 - Plus a `.rss-item.xml` and `.commit-msg` for each.
 === 2026-11-03T02:28:34-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-04T02:20:22-08:00 start calibr-briefing ===
+I wrote both of today's Calibr scripts plus their feed-item and commit-message stubs. Nothing was voiced, published or committed: `SKIP_TTS=1` was set, so the batch job handles audio, the feed and the commit afterwards. I checked that both feed items parse as valid XML.
+
+**Spotlight (~1,320 words): Servier's sevasemten failure in Becker muscular dystrophy.** Servier paid Edgewise $1.55B upfront in June. On Tuesday it said the pivotal GRAND CANYON trial missed its primary endpoint, the North Star walking-ability score at 18 months, and every secondary endpoint. Servier released no numbers, so the analysis rests on the earlier Phase 2 trial:
+- **What the Phase 2 showed:** muscle-damage blood markers fell 28% (creatine kinase) and 77% (fast-fiber troponin). The functional score improved by 1.1 points, but that wasn't significant (p=0.16), and the placebo arm was only 12 people.
+- **Two readings of the miss:** either the markers showed the drug hitting its target rather than slowing the disease, or the trial's placebo group declined less than natural history predicted.
+- **Who held the risk:** Servier signed and closed before the trial's primary completion date, so it bought the binary outcome outright. Edgewise kept the cash for its heart programs, and its stock fell only about 1% Tuesday.
+- **Heart vs. skeletal muscle:** turning down the muscle motor works in hypertrophic cardiomyopathy, where an overactive motor is the disease. In dystrophic muscle the defect is the membrane, so the same idea treats a downstream effect.
+- **What's left:** two Duchenne Phase 2 trials read out in early 2027.
+
+No analyst quotes made it in. I found none, and Servier is private, so there was no stock move to read; the Muscular Dystrophy Association's statement is the outside comment.
+
+**Headlines (~1,300 words):** Democrats taking both chambers (Bourla expects no change to the drug-pricing deals), Ultragenyx's 20% layoffs, Pfizer's raised guidance and pipeline cuts, Novo's $2.2B in write-offs, and Minghui's $110M Japan deal for a Tepezza rival. Also Rhythm's rewritten LG Chem deal, AbbVie and Novartis each dropping programs, and short items on Beam, Alamar and Arvinas.
+
+Most of today's coverage sits behind paywalls (Endpoints, STAT+), so I used primary sources instead: company releases and SEC earnings filings. The only exceptions are two lines sourced to the outlets themselves: the Bourla quote from an Endpoints headline and the midterm seat counts from STAT's AP-based story. There was no fresh AI drug-discovery news, so the briefing has no AI item today.
+
+Files are in `podcasts/calibr-briefing/scripts/`:
+- `2026-11-04-pharma-headlines.txt` (+ `.rss-item.xml`, `.commit-msg`)
+- `2026-11-04-servier-sevasemten-becker-grand-canyon-spotlight.txt` (+ `.rss-item.xml`, `.commit-msg`)
+
+**Candidate funnel**
+- **RSS feeds:** Endpoints 24 items (bodies paywalled, headlines only), BioPharma Dive 10, STAT 20 (STAT+ bodies paywalled), GEN 10, Clinical Trials Arena 10, OncLive 30. About 25 in the window survived.
+- **Fierce Biotech:** index plus 7 articles via r.jina.ai, all readable except the Novartis piece, which returned a 430-byte stub (BioSpace used instead).
+- **BioSpace:** index plus 3 articles; publish dates checked.
+- **SEC filings:** searched Nov 3 earnings releases; 9 company releases read in full. Rhythm's link 404'd, so Fierce was used.
+- **PR Newswire health list:** found the Minghui–ASKA release.
+- **Other web:** Servier release and its US mirror, European Biotechnology, MDA, CureDuchenne, Edgewise's 2024 Phase 2 release, the deal releases, and ClinicalTrials.gov.
+- **Not found:** a Servier primary release on its newsroom list page (found later by search); fresh AI drug-discovery news.
+
+**Shortlist** (★ = spotlight, ✓ = in headlines):
+- ★✓ Servier sevasemten fails GRAND CANYON — https://servier.com/en/newsroom/topline-pivotal-results-sevasemten-becker/
+- ✓ Democrats win both chambers — https://www.statnews.com/2026/11/03/midterm-elections-what-democratic-control-senate-means-healthcare/
+- ✓ Bourla on drug-pricing deals — https://endpoints.news/bourla-expects-no-changes-to-mfn-deals-after-midterms/
+- ✓ Ultragenyx 20% cut, UX701 ended — https://www.sec.gov/Archives/edgar/data/1515673/000119312526445342/rare-ex99_1.htm
+- ✓ Pfizer Q3 and pipeline cull — https://www.fiercebiotech.com/biotech/pfizer-drops-phase-2-lung-disease-candidate-pares-back-obesity-pipeline
+- ✓ Novo impairments — https://www.fiercebiotech.com/biotech/novos-ceo-still-looking-deals-close-some-gaps-misfires-hit-profits
+- ✓ Minghui–ASKA IGF-1R deal — https://www.prnewswire.com/news-releases/minghui-pharmaceutical-and-aska-pharmaceutical-enter-into-exclusive-license-agreement-for-the-igf-1r-antibody-in-japan-302928762.html
+- ✓ Amgen Q3 / Tepezza — https://www.sec.gov/Archives/edgar/data/318154/000031815426000153/amgn-20260930earningsrelea.htm
+- ✓ Rhythm–LG bivamelagon — https://www.fiercebiotech.com/biotech/rhythm-doubles-down-lg-obesity-license-raising-payout-much-855m
+- ✓ AbbVie drops livmoniplimab — https://www.fiercebiotech.com/biotech/abbvie-abandons-phase-2-stage-solid-tumor-drug-over-limited-benefit
+- ✓ Novartis exits BioArctic — https://www.biospace.com/deals/novartis-puts-772m-bioarctic-deal-on-ice-skates-away-from-brain-delivery-alliance
+- ✓ Denali / Beam / Alamar / Arvinas Q3 — SEC filings, Nov 3
+- ✗ InventisBio TYK2 Phase 3 — https://www.fiercebiotech.com/biotech/inventisbio-delivers-competitive-tyk2-data-phase-3-psoriasis-win (Nov 2, cut for length)
+- ✗ Biossil–Theriva — https://www.fiercebiotech.com/biotech/openai-funded-biossil-snags-therivas-antibiotic-degrader-portfolio-91m (Biossil already covered 11-02)
+- ✗ Neurocrine Prader-Willi death, Compass psilocybin filing, Medicare Part D premiums, bird flu and measles deaths (off-focus or covered recently)
+
+Sources:
+- [Servier release](https://servier.com/en/newsroom/topline-pivotal-results-sevasemten-becker/)
+- [Servier US release](https://servier.mediaroom.com/news-releases?item=122498)
+- [European Biotechnology on the failure](https://european-biotechnology.com/latest-news/serviers-1-55b-edgewise-acquisition-backfires-after-phase-3-setback/)
+- [European Biotechnology on the deal](https://european-biotechnology.com/latest-news/servier-buys-edgewise-muscular-dystrophy-business-for-up-to-us2-65bn/)
+- [MDA statement](https://www.mda.org/press-releases/statement-from-the-muscular-dystrophy-association-on-servier%E2%80%99s-announcement-of-topline-results-in)
+- [CureDuchenne](https://cureduchenne.org/research/becker_muscular_dystrophy/)
+- [Edgewise Phase 2 CANYON release](https://www.sec.gov/Archives/edgar/data/1710072/000110465924129001/tm2431151d1_ex99-1.htm)
+- [Edgewise deal close](https://www.prnewswire.com/news-releases/edgewise-therapeutics-completes-sale-of-sevasemten-for-up-to-2-65-billion-strengthening-balance-sheet-and-centering-company-focus-on-cardiovascular-pipeline-302823048.html)
+- [Edgewise deal announcement](https://www.biospace.com/press-releases/edgewise-therapeutics-announces-sale-of-sevasemten-for-up-to-2-65-billion-strengthening-balance-sheet-and-centering-company-focus-on-cardiovascular-pipeline)
+- [ClinicalTrials.gov NCT05291091](https://clinicaltrials.gov/study/NCT05291091)
+=== 2026-11-04T02:32:01-08:00 done  calibr-briefing (exit 0) ===
