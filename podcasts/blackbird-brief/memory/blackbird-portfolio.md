@@ -2438,7 +2438,7 @@ _Last update: 2026-11-03_
     disease PRIORITY REVIEW VOUCHER**. Program lapsed Dec 2024, **REVIVED by the Consolidated
     Appropriations Act, 2026 (signed 2026-02-03); FDA may not award RPD PRVs after
     2029-09-30; NO separate designation deadline → the binding constraint is the APPROVAL
-    DATE.** 2026 sale prices: Rocket $180M, Denali $195M, Immedica $200M, Jazz $200M, **Ultragenyx $210M (agreed 2026-10-06, GENGLYCOS voucher; 20% of gross = ~$42M to NIH under a 2018 patent licence — a LICENSOR SHARE of a voucher is a negotiable term; specify voucher ownership/share in every Blackbird grant or licence that could end in a pediatric rare-disease approval)**.
+    DATE.** 2026 sale prices: Rocket $180M, Denali $195M, Immedica $200M, Jazz $200M, **Ultragenyx $203M (FAYUVI voucher, agreed Oct 2026; both Ultragenyx vouchers $413M gross / ~$350M expected net, and they — not product revenue — carry its 2027 profitability turn alongside a 20% RIF, per the 2026-11-03 Q3 release)**, **Ultragenyx $210M (agreed 2026-10-06, GENGLYCOS voucher; 20% of gross = ~$42M to NIH under a 2018 patent licence — a LICENSOR SHARE of a voucher is a negotiable term; specify voucher ownership/share in every Blackbird grant or licence that could end in a pediatric rare-disease approval)**.
     **Arithmetic: Aletira is PRECLINICAL and cannot reach approval by 2029-09-30 on a wholly
     owned path; Skylark (dosing since 2026-05-28) and Sensorion (CTAs filed) plausibly can.
     SO-WHAT: the voucher is not ours going alone — but it makes a BOLT-ON EXPRESSION LAYER
@@ -3310,6 +3310,7 @@ _Last update: 2026-11-02_
 - **Status:** resident in the **Blackbird BioHub**.
 - **Watch:** ASO/oligo platforms in ALS-FTD (Ionis, QurAlis, Amylyx, Trace);
   TDP-43 and C9orf72 biology; nucleocytoplasmic transport.
+  **C9 subset now has a one-shot competitor: Specific Biologics (Toronto), Dualase single-AAV C9ORF72 repeat-excision editor, $35M Series A (Hatteras lead, 2026-11-02) to a first biomarker cohort in an adaptive Ph I/II — know which biomarker it reads before it publishes.** _(updated 2026-11-04)_
 - **COMPARATOR-DRIFT RULE — the standing design question for this program (added 2026-08-29
   Portfolio Watch item 2; event 2026-08-28).** **CARDIO-TTRansform MISSED:** AstraZeneca +
   Ionis's **eplontersen** (antisense TTR silencer, already approved as Wainua in ATTRv

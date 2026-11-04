@@ -4060,3 +4060,38 @@ Episode written. `SKIP_TTS=1` was confirmed as the first call of the run, so no 
 
 **Two notes worth flagging.** First, `fiercebiotech.com` was again unreachable, so anything running only on Fierce is absent from today's sweep. Second, my first dedup control test gave a false "clean" because I'd truncated the control URL to 120 characters; I re-ran it with the full key and the filter correctly dropped it, so the 10 → 10 fresh and the final 5 → 4 results are trustworthy.
 === 2026-11-03T02:19:55-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-04T02:10:22-08:00 start blackbird-brief ===
+Today's Blackbird Brief, a Wednesday Portfolio Watch, is written. `SKIP_TTS=1` was set, so I only wrote the script and the two stub files the batch job picks up. I didn't generate audio, upload to R2, edit `feed.xml` or commit; the batch job does all of that.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-11-04-portfolio-watch.md`: about 1,700 spoken words, roughly 8 minutes at 1.2× speed, plus show notes.
+- `.rss-item.xml` (checked that it parses as XML) and `.commit-msg`.
+- `state/shipped.jsonl`: today's 5 items added to the dedup ledger.
+- `memory/blackbird-portfolio.md`: two in-place edits. One adds the second Ultragenyx priority review voucher sale ($203M) to the voucher price list. The other adds Specific Biologics to the NuGate watch list.
+
+**Candidate funnel**
+- **Sources:**
+  - Endpoints feed: 24 items. The old domain now redirects to endpoints.news, and article bodies are paywalled.
+  - BioPharma Dive feed: 10 items.
+  - STAT feed: 20 items.
+  - BioSpace index: 34 items.
+  - Fierce Biotech, read through the jina proxy: the first try failed and the second worked; 3 articles read in full.
+  - Two sources failed: the OncLive and Targeted Oncology feeds returned 0 bytes, and SEC EDGAR rejected a direct request, though the proxy got the full filing.
+  - Web searches for Clasp, SITC abstracts and portfolio company names found nothing in the window.
+- **Dedup:** 8 candidates in, 7 fresh. A known-shipped control item (yesterday's Karyopharm story) was correctly dropped, which confirms the filter was working. The final 5 picks were re-checked, all fresh. Searching past scripts for each company and drug name found no repeats. BrainTransporter appeared only on 08-31, about a different deal. Biossil appeared on 11-02, for its Alligator purchase rather than today's.
+- **Chosen:**
+  - **Lead:** Ultragenyx sold the vouchers from its two gene therapy approvals for $413M while cutting 20% of staff. It also ended its Wilson disease gene therapy and wound down its Angelman antisense studies. Touches Aletira, SELEXON and NuGate. https://www.sec.gov/Archives/edgar/data/1515673/000119312526445342/rare-ex99_1.htm
+  - Specific Biologics raised a $35M Series A for a gene editor that cuts out the C9ORF72 repeat in ALS. Touches NuGate. https://www.prnewswire.com/news-releases/specific-biologics-announces-oversubscribed-us-35-million-series-a-financing-to-advance-gene-editing-therapy-for-als-812519649.html
+  - Biossil bought Maryland-based Theriva's antibiotic-degrading enzyme portfolio for $350K upfront. Touches the shelved-asset screen and the chronic infections theme. https://www.fiercebiotech.com/biotech/openai-funded-biossil-snags-therivas-antibiotic-degrader-portfolio-91m
+  - Novartis ended its BioArctic brain-delivery deal; BioArctic keeps the $30M upfront. https://www.prnewswire.com/news-releases/bioarctic-collaborator-novartis-terminates-agreement-302926959.html
+  - Teva stopped its Phase 2 trial of emrusolmin in multiple system atrophy for futility. Touches the Parkinson's theme. https://ir.tevapharm.com/news-and-events/press-releases/press-release-details/2026/Teva-to-Discontinue-Phase-2-TOPAS-MSA-Study-of-emrusolmin-TEV-286-Following-Interim-Futility-Analysis/default.aspx
+- **Not chosen:**
+  - Verismo's preclinical SITC data: readable, but too thin for a slot. SITC runs Nov 4–8, so I'll check again tomorrow for anything relevant to Clasp.
+  - Pfizer's Q3 pipeline cuts: no direct portfolio line.
+  - Three items carried over from yesterday, dropped after a second day. CinRx/Graviton's ROCK2 venture: the primary release couldn't be reached. AbbVie–Brise migraine deal: still paywalled. Bright Minds partial hold: no portfolio line.
+  - Neurocrine's Vykat death, Servier/Edgewise, Minghui, Vertex, InventisBio and Rhythm–LG: scanned, no portfolio line or paywalled.
+
+One fact the source didn't state: Fierce says only that Theriva is "Maryland-based". The script places it in Rockville from my own knowledge, so check that before the batch run if you want it confirmed.
+
+One thing to fix separately: `memory/blackbird-portfolio.md` is now about 940 KB, against an instruction that it stay a compact reference. A run can no longer read it whole. It needs a cleanup pass on its own.
+=== 2026-11-04T02:19:16-08:00 done  blackbird-brief (exit 0) ===
