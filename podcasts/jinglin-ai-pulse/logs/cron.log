@@ -4518,3 +4518,39 @@ Notes:
 - Dedup grep run against all prior scripts for: weight-space, rikiyat, Mofcom, export control, Egoless, pretraining poisoning, LongCat, Platonic, Oracle, Calegari, IPO, S-1, 895 (control term "Calegari" correctly hit yesterday's episode, confirming the grep was live). Calegari is referenced only as an explicit callback; the Egoless post is a distinct Nov 2 item.
 - Full text read for every selected item, including the complete MLST transcript (97 min, via the ReScript share API) and all eight weight-space experiments including the negative Gemma control.
 === 2026-11-03T02:37:51-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-04T02:30:23-08:00 start jinglin-ai-pulse ===
+Today's episode is written and staged for the nightly batch. `SKIP_TTS=1` was set, so I wrote the script plus the two stub files and did not run TTS, publish to R2, edit `feed.xml` or commit. The orchestrator does those steps after batch TTS.
+
+**Episode:** `podcasts/jinglin-ai-pulse/scripts/2026-11-04-not-ten-x-two-x.md`. The spoken part is 2,150 words, about 12–13 minutes. The stubs (`.rss-item.xml`, which passes an XML parse check, and `.commit-msg`) sit next to it.
+
+**Theme:** asked whether there are enough chipmaking tools to make ten times as many leading-edge wafers, Intel's CTO said "Not 10X, but probably 2X." Each segment is about the gap between what gets claimed and what the evidence or hardware supports.
+
+**On-air correction:** yesterday's episode described two of the Astra experiments (the character-level language models and the Go network) as the model reading weights directly. Honnibal's breakdown shows both had the model writing Python, and today's script says so.
+
+**Facts I couldn't fully check:**
+- The Nikkei $3.2T piece is paywalled. I read only the headline, subhead and lede, and the script says that.
+- The Revolut figures come from one conference talk, via a StartupHub write-up and a viral X post. The script flags them as unconfirmed.
+- The Postman reply is quoted as "in Postman's voice" because the GitHub account isn't verified as staff.
+- The hook-trust test comes from an account other commenters suspected was a bot. The script says to weigh it accordingly.
+
+**Candidate funnel**
+- **Hacker News** (Algolia, stories over 150 points since Nov 2 18:00 UTC): about 40 scanned, 11 relevant to AI.
+  - ✅ Honnibal, "Astra … post is misleading" — https://honnibal.dev/blog/astra-read-write-misleading
+  - ✅ Willison, "Qwen 3.8 27B on my laptop can interpret model weights, too" — https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/
+  - ✅ Goedecke (linked from Willison) — https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/
+  - ✅ Postman auto-installs AI plugins — https://github.com/postmanlabs/postman-app-support/issues/14370
+  - ✅ Codex training toggle silently re-enabled, as a brief mention only (single user report) — https://news.ycombinator.com/item?id=50352757
+  - ✅ Carlini, Stockfish on a Pentium Pro — https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html
+  - ✅ Nikkei, hidden AI debt $3.2T (headline and lede only) — https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months
+  - ✅ Revolut moves to self-hosted GLM — https://twitter.com/guilleflorvs/status/2117379073785696395 and https://www.startuphub.ai/ai-news/artificial-intelligence/2026/revolut-says-self-hosted-ai-cut-coding-costs-90
+  - ✗ Google turning off search for schools that reject AI (NYT paywall) — https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html
+  - ✗ "The SEC should block Anthropic's IPO" (op-ed, and the IPO was covered on 11-03) — https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-
+  - ✗ NVIDIA auto-ontology, Scaling Git at OpenAI (little substance)
+  - ✗ The original Astra post, Anthropic's growth, Oracle's $20B raise, Egoless Mathematics (all shipped 11-03)
+- **X / Twitter** (via the fxtwitter API, IDs taken from HN links): Schmidhuber's "old hat" reply ✅ and the Revolut post ✅. Timeline search isn't possible from this host.
+- **Funding web search:** thin, with nothing dated in the window. The money segment relies on Nikkei and Revolut.
+- **Podcasts** (Substack archive APIs): Dwarkesh worked, Interconnects showed nothing new since the 10-25 episode we already covered, and the Latent Space and Cognitive Revolution archive endpoints errored (both skipped).
+  - ✅ Dwarkesh, Intel fab tour (Oct 22, full transcript read) — https://www.dwarkesh.com/p/intel-tour
+  - ✗ Dwarkesh episodes on Robert Caro and power (Oct 29 and 30; not about AI)
+- **Dedup:** grepped every show's scripts for Postman, Revolut, Carlini, Pentium, Ranade, Pushkar, "hidden AI debt", "3.2 trillion" and off-balance. None of today's picks had run in this show before; Carlini matched only in two other shows, on different topics. Matches for Goedecke, Willison and Schmidhuber were all on older, unrelated topics.
+=== 2026-11-04T02:36:47-08:00 done  jinglin-ai-pulse (exit 0) ===
