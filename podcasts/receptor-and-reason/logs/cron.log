@@ -6240,3 +6240,31 @@ Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed 
 
 **Notable exclusions:** a ketamine/dyskinesia preprint that is the same lab and drug as yesterday's pick (key-fresh, editorially a repeat); the PCDH19 variant catalogue (readable but no treatment content); `2026.10.30.763044` (GPCR submembrane compartmentation) failed all three fetch attempts — deferred and logged for retry.
 === 2026-11-04T03:04:26-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-05T02:50:15-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so I wrote the script plus the two stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does those after batch TTS.
+
+**Published artifacts** — `podcasts/receptor-and-reason/scripts/2026-11-05-receptor-and-reason.{md,rss-item.xml,commit-msg}`
+**Length:** 3,436 spoken words ≈ 18.3 min at the show's measured 0.32 s/word (last three episodes: 0.319–0.326).
+**Theme:** the reference condition — what each number is a number *relative to*.
+
+**Candidate funnel**
+
+| Source | Scanned | Survived relevance | Notes |
+|---|---|---|---|
+| bioRxiv details API (10-29→11-05, day-by-day) | 1,864 recs | 50 | v1-only + in-window date |
+| medRxiv details API (same window) | 468 recs | 38 | |
+| arXiv shared cache | 500 entries | 14 strongly biomedical | cache covers only 11-02→11-04 (500-entry cap) |
+| Nature `npp.rss` | 9 items | 1 in-window | `mp`, `neuro`, `nbt`, `natmachintell` returned 150-byte empties |
+| Crossref (Mol Psychiatry, Neuropharmacology, Biol Psychiatry) | 31 | 19 | |
+
+Dedup ran on **every** candidate set up front and again on the final roster, each with a known-shipped control line to prove the grep wasn't silently clean. Dropped as already-shipped: the smoked-cannabis npp RCT, the ketamine/PD neuroprotection and D2-agonist papers, DIMER, INMT, FASN-SREBP1, PharmaAgent, the psilocybin-AUD pilot, and the clozapine-neutropenia preprint. Full text was an eligibility gate — four Molecular Psychiatry items (psychedelics review, rTMS bipolar II, CB1 PET, Crh insula circuit) and the submembrane-GPCR preprint were **dropped as abstract-only**, not summarized.
+
+**Chosen, 12 items:** trial-simulator interventional skill (lead) · reasoning-agent "PubMed Prior Trap" · MERIT · abemaciclib→ACKR3 · GPCR basal-activity scale + GPR161 · sgACC CHRM2 sex difference · ketamine/LID female cohort · THC analgesia vs abuse liability 65+ · sublingual buprenorphine film · Se/Fe/Rb in TRS · ripasudil · MM/GBSA rescoring null (closer).
+
+Two judgment calls worth flagging:
+
+- **The ketamine/LID female cohort passed DOI dedup but is the fourth paper from that series in six days** (we ran the D1/D2 dissociation Tuesday). I kept it, cut to ~45 seconds, explicitly framed as "the fourth installment," and placed it beside the sgACC item so the two make one argument about sex as a pharmacological variable. If you'd rather I treat same-group series as dedup-blocked regardless of DOI, say so and I'll add that rule.
+- **The commit-msg stub has no `Co-Authored-By` trailer.** `PIPELINE.md` specifies "One line; no quoting" for that file and all 163 prior episodes follow it, so I matched the project convention over the default attribution guidance. Easy to change if you want the trailer.
+
+The 429s on bioRxiv landing-page URL checks are Cloudflare throttling, not bad links — I verified all eight DOI prefixes against the details API, and I had already pulled full text from each.
+=== 2026-11-05T03:13:02-08:00 done  receptor-and-reason (exit 0) ===
