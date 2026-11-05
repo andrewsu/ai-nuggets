@@ -4095,3 +4095,31 @@ One fact the source didn't state: Fierce says only that Theriva is "Maryland-bas
 
 One thing to fix separately: `memory/blackbird-portfolio.md` is now about 940 KB, against an instruction that it stay a compact reference. A run can no longer read it whole. It needs a cleanup pass on its own.
 === 2026-11-04T02:19:16-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-05T02:10:13-08:00 start blackbird-brief ===
+I wrote today's Blackbird Brief Portfolio Watch (Thursday 2026-11-05). `SKIP_TTS=1` was set, so I made only the script and the two stubs. I did not run TTS, publish to R2, edit the feed or commit; `publish_pending.py` does those after the batch TTS run.
+
+**Files:**
+- **Script:** `podcasts/blackbird-brief/scripts/2026-11-05-portfolio-watch.md` — about 1,700 spoken words, roughly 8–9 minutes.
+- **Stubs:** `2026-11-05-portfolio-watch.rss-item.xml` (it parses as valid XML) and `2026-11-05-portfolio-watch.commit-msg`.
+- **Dedup ledger:** added 8 keys to `state/shipped.jsonl`; it now covers 120 episodes.
+- **Portfolio reference:** edited in place for Winnow, Clasp, the COPD theme and the partner-exit ladder, with the `_Last update:_` dates changed. No log entries were appended.
+
+**Today's items (I read the full text of all four):**
+1. **Lead — T-Therapeutics, $133M Series B.** It builds T cell receptor engagers for cancer and autoimmune disease and is still preclinical, with about $225M raised so far. J&J, Lilly, Merck KGaA and Sanofi venture arms are now shareholders.
+   - **For Winnow:** pharma will fund this kind of engager in autoimmunity, but the lane is no longer empty. The only real point of difference is how Winnow picks out the disease-causing cells.
+   - **For Clasp:** it is the same pitch built with a natural receptor rather than an antibody, and it is now the private price Clasp will be compared to at its next raise.
+2. **Sanofi drops Nurix's STAT6 degrader**, three weeks after paying the $10M first-patient milestone. About $455M of possible future payments is gone and no reason was given. It is the third partner pull-out we've covered in five days. The lesson: payments tied to events the licensor controls are the ones that actually get paid.
+3. **Merck starts ENHANCE-3**, a trial of about 2,100 patients testing whether Ohtuvayre, already approved for COPD, reduces flare-ups. That adds a third competitor for COPD patients who still have flare-ups on standard treatment.
+4. **Alethio's $90M Series A** (an Oxford spinout) targets a marker on the cell lineage that drives the disease rather than a single mutation, the opposite choice to Clasp. The university, its venture fund and Cancer Research UK's commercialization arm all stayed in the round.
+
+**Candidate funnel:**
+- **Sources:** Endpoints RSS (24 items; articles paywalled, opening lines via jina), BioPharma Dive RSS (10; direct requests blocked, full articles via jina), STAT RSS (20), Clinical Trials Arena RSS (10), BioSpace daily archives for 11-03 to 11-05 (thin), Nurix and T-Therapeutics company sites via jina, and 6 web searches.
+- **Failed source:** Fierce Biotech was unavailable. jina returned an abuse block until 10:35 UTC, and a plain curl got a 5.6 KB block page.
+- **Dedup:** 14 candidates went in, including one already-shipped item as a control; 13 came out fresh and the control was correctly dropped. No earlier script mentions Nurix, STAT6, T-Therapeutics, Alethio or Ohtuvayre.
+- **Chosen:** all four items above.
+- **Shortlisted but not chosen:**
+  - **AbbVie–Nxera gut-targeted IBD deal:** out of scope, because our gut-targeted program is terminated.
+  - **Spyre's "arthritis misses" (Endpoints):** I couldn't confirm which study it was; recheck tomorrow.
+  - **Boehringer–Sino $7B ADC/T-cell engager deal:** paywalled and no primary source found; carried to tomorrow.
+  - **SITC conference:** nothing relevant to Clasp has come out yet.
+=== 2026-11-05T02:19:14-08:00 done  blackbird-brief (exit 0) ===
