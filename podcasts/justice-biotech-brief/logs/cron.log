@@ -4703,3 +4703,25 @@ Three files written to `podcasts/justice-biotech-brief/scripts/`: `.md` (1,244 w
 
 One thing to flag honestly: a response partway through the run was cut by a safety classifier while I was printing the bioRxiv keyword-hit table, before any drafting. Nothing load-bearing was lost — I continued selection from the same candidate list rather than rewording anything — but it's logged in memory since it fired on routine sweep output.
 === 2026-11-04T02:52:49-08:00 done  justice-biotech-brief (exit 0) ===
+=== 2026-11-05T02:40:14-08:00 start justice-biotech-brief ===
+Episode written. `SKIP_TTS=1` was confirmed as the first call of the run, so this is **stubs only** — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Today's pick:** `2026-11-05-orca-myc-rna-sensing-paints-cd19-onto-colorectal-cancer` — bioRxiv `10.64898/2026.11.02.763782` (Xiaojing J. Gao, Stanford Chemical Engineering, with Crystal Mackall's group; posted 11-03), read in full via `.full.pdf` + r.jina.ai. DOI confirmed live against the bioRxiv details API; exact title web-searched for a re-post — no prior publication, genuinely new.
+
+Three files in `podcasts/justice-biotech-brief/scripts/`: `.md` (1,166 spoken words), `.rss-item.xml` (validates as XML under an itunes-namespaced wrapper), `.commit-msg`.
+
+**Candidate funnel**
+
+- **bioRxiv/medRxiv details API** — 994 unique records across 11-03/11-04/11-05 day-files (biorxiv 440 / 378 / 32; medrxiv 90 / 82 / 6). 27 keyword hits, many spurious (`ADC` matching a basal-ganglia paper and an HCMV NK paper; `checkpoint` as spindle/cell-cycle; `CD3` inside unrelated gene names). On-target shortlist, all version 1, all dedup-clean against the scripts dir (control terms `P144` and `botensilimab` correctly fired on yesterday's and Monday's episodes):
+  - **CHOSEN** — Targeted cancer ablation via programmable sensing of amplified oncogenic RNA — https://www.biorxiv.org/content/10.64898/2026.11.02.763782v1 — read in full
+  - A biomimetic SPARC platform coupling adaptor recruitment and BRS-Lck condensation for enhanced NK/T cell combination therapy — https://www.biorxiv.org/content/10.64898/2026.11.02.763574v1 — read in full, strong, **best backup / open deferral**
+  - MHCII+ cancer-associated fibroblasts promote antitumor immunity in pancreatic cancer — https://www.biorxiv.org/content/10.64898/2026.11.03.764075v1 — read in full, open
+  - Bispecific VSV-G engagers for cell-type-specific viral vector delivery — https://www.biorxiv.org/content/10.64898/2026.11.02.763599v1 — still open from 11-04
+  - AMD1-driven MTA production rewires PMN-MDSC immunosuppression — https://www.biorxiv.org/content/10.64898/2026.11.02.763561v1 — not fetched
+  - irAEGIS: pathway-guided prediction of immune-related adverse events — https://www.biorxiv.org/content/10.64898/2026.11.01.763453v1 — not fetched, methods-paper
+- **News/trade** — STAT (20 items) and BioPharma Dive (10) are almost entirely midterms, CVS, earnings and layoffs this week. The one on-target item was **Boehringer Ingelheim / Sino Biopharma, $358M upfront on six preclinical ADCs and TCEs** (11-04) — https://www.fiercebiotech.com/biotech/boehringer-returns-sino-biopharma-74b-deal-preclinical-tces-adcs — Fierce article and the GlobeNewswire release both read in full, but **no targets, modalities or payloads are disclosed in either**, so it's a deal note, not an episode. Viable backup only.
+- **Funders** — NIH news releases fetched; the one on-target item (invikafusp alfa, TCR-βV-targeted agonist) is dated **Oct 23**, outside the recency window, so excluded rather than listed as an honorable mention. ARPA-H `/news` returned a 310-byte shell.
+- **Source failures:** `onclive.com/rss` and `targetedonc.com/rss` both returned **0 bytes** on two attempts each (they worked 11-04) — the whole oncology-trade channel was down. `fiercebiotech.com/rss/xml` is a 5.6 KB Cloudflare stub with 0 items. r.jina.ai returned the **ad-tracker redirect stub** (~400 bytes, `hb.trustedstack.com/cksync`) on the first Fierce homepage *and* first Fierce article request; a plain retry without `x-no-cache` returned the real bodies both times. Noted in memory, since this is the second consecutive day for that failure mode.
+
+One disclosure: my first response this run was cut by a safety classifier before any searching or drafting — it had only run the opening state-check command. I started the run over from scratch rather than reconstructing anything, so nothing from the stopped response was carried forward.
+=== 2026-11-05T02:48:32-08:00 done  justice-biotech-brief (exit 0) ===
