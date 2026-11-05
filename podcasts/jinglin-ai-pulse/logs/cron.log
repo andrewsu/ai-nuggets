@@ -4554,3 +4554,46 @@ Today's episode is written and staged for the nightly batch. `SKIP_TTS=1` was se
   - ✗ Dwarkesh episodes on Robert Caro and power (Oct 29 and 30; not about AI)
 - **Dedup:** grepped every show's scripts for Postman, Revolut, Carlini, Pentium, Ranade, Pushkar, "hidden AI debt", "3.2 trillion" and off-balance. None of today's picks had run in this show before; Carlini matched only in two other shows, on different topics. Matches for Goedecke, Willison and Schmidhuber were all on older, unrelated topics.
 === 2026-11-04T02:36:47-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-05T02:30:14-08:00 start jinglin-ai-pulse ===
+I wrote today's episode and staged it for the nightly batch. `SKIP_TTS=1` was set, so I wrote the script plus the two stub files and did not run TTS, publish to R2, edit `feed.xml` or commit. The orchestrator does those steps after batch TTS.
+
+**Episode:** `podcasts/jinglin-ai-pulse/scripts/2026-11-05-verify-the-path.md`. The spoken part is about 2,070 words, roughly 12 minutes. The stubs (`.rss-item.xml`, which passes an XML parse check, and `.commit-msg`) sit next to it.
+
+**Theme:** OpenAI's Linux kernel report says to "verify the path to a result, not just the result." In an early run, 20 of 200 exploits marked successful had got root through a different zero-day than the one assigned. Each segment comes back to that idea.
+
+**Things to know about the sourcing:**
+- The Interconnects open-model-economy post is paywalled after its intro, so I didn't use it.
+- The Astra sandbagging story comes from an X thread by an OpenAI safety researcher, read in full via fxtwitter. There's no published report behind it yet, and the script presents it as a thread.
+- Hy4's weights are only "planned" (per AINews), so I left Hy4 out of the script.
+- Legora's $8.8B round is a few weeks old. It appears only as background in the Deep Cut, not as a Money Moves item.
+
+**Candidate funnel**
+- **Hacker News** (Algolia, stories over 100 points since Nov 3 20:00 UTC): 42 scanned, 17 relevant to AI.
+  - ✅ OpenAI, "A thousand fewer paths to root" — https://openai.com/index/a-thousand-fewer-paths-to-root/
+  - ✅ IEEE Spectrum, PHP2Shell / "40 years of technical debt" — https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability
+  - ✅ Kimi K3.1 Pro weights — https://huggingface.co/moonshotai/Kimi-K3.1-Pro
+  - ✅ Ripple-65B Preview — https://www.ricursive.com/ripple
+  - ✅ Anthropic, provable inference (FlashProve) — https://www.anthropic.com/research/provable-inference
+  - ✅ Hullman, "Verification Is Not Knowledge" — https://blog.cosmos-institute.org/p/verification-is-not-knowledge
+  - ✅ OpenAI to acquire Pierre — https://openai.com/index/openai-to-acquire-pierre/
+  - ✅ Conductor joining Meta — https://www.conductor.build/announcement
+  - ✅ Voters reject data centers (Semafor) — https://www.semafor.com/article/11/04/2026/us-voters-roundly-reject-data-centers-in-ballot-measures
+  - ✗ Tencent Hy4 (weights only planned) — https://hy.tencent.ai/research/hy4
+  - ✗ Gemini trains on paid users' chat history (a Tell HN post, no primary reporting) — https://news.ycombinator.com/item?id=50363461
+  - ✗ Hinton, "better off without AI" (a restated position) — https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai
+  - ✗ Images 2.6, RTX Spark firmware, AMD outselling Intel, Qualcomm AI 100, "Ask HN: agentic setup" (product news or thin)
+- **X / Twitter** (via the fxtwitter API, IDs taken from AINews links):
+  - ✅ The Marcus_J_W Astra sandbagging thread (4 posts) plus replies from roon and Neel Nanda
+  - ✅ Eric Wallace and Greg Brockman on the Linux kernel run
+  - ✅ Cognition SWE-2 Flash
+  - Timeline search isn't possible from this host.
+- **Aggregator:** ✅ Latent Space "[AINews] It's Swapping Season" (Nov 5), used as the X convergence map.
+- **Podcasts:**
+  - ✅ Latent Space, Legora CTO Jacob Lauritzen (Nov 2, full transcript) — https://latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora/
+  - ✗ MLST: the Bach (covered 11-03), Avigad and Lessard (both covered 10-28) episodes had all run already.
+  - ✗ Cognitive Revolution: "Freedom of Action" covered 10-30; AI:AM is a news roundup.
+  - ✗ Dwarkesh: the Caro episodes aren't about AI.
+  - ✗ Interconnects: the Nov 4 post is paywalled, and the Oct 30 post ran 11-01.
+  - Latent Space has moved to beehiiv, so the Substack archive API now 404s; the RSS feed plus the page transcript worked.
+- **Dedup:** I grepped every show's scripts for FlashProve, provable inference, Lauritzen, paths to root, Marcus_J_W, covertly underperform, Hullman, Edgewater, Pierre Computer, joining Meta, SWE-2 Flash and Ripple-65B. None had run before. The control term Honnibal correctly hit the 11-04 episode. Kimi K3.1 Pro last appeared 11-01 for its cyber-policy statement; today's item is the new weights release, and the script calls back to that statement.
+=== 2026-11-05T02:37:24-08:00 done  jinglin-ai-pulse (exit 0) ===
