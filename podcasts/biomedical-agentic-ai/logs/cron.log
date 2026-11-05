@@ -6106,3 +6106,29 @@ I read the full text (9k words, no placeholder results). Nothing in any show's s
 
 I added today's run notes and the open candidates to the rolling deferral memory file.
 === 2026-11-04T02:05:03-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-05T02:00:12-08:00 start biomedical-agentic-ai ===
+Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote stubs only — no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Today's pick:** NLM Cell Knowledge Network — the Cell Ontology grounded in experimental evidence, and a graph motif that mostly generates bad drug-repurposing hypotheses
+- Script: `podcasts/biomedical-agentic-ai/scripts/2026-11-05-nlm-ckn-cell-ontology-grounded-in-evidence-big-dipper.md` (868 spoken words, cap 1150)
+- Stubs: `.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` placeholders) + `.commit-msg`
+- Paper: bioRxiv `10.64898/2026.10.30.763199`, posted 2026-11-04, full text read via `r.jina.ai` on `.full.pdf` (135 KB; the `.full` HTML was still abstract-only — render lag)
+
+**Candidate funnel**
+
+- **bioRxiv + medRxiv details API** (2026-11-02 → 11-05, day-by-day, full collection): 1,345 records pulled → 86 passed the keyword + version==1 + in-window filter. Shortlist:
+  - A trustworthy semantic knowledge network linking data-driven cell phenotypes to diseases and drugs — `10.64898/2026.10.30.763199` — **CHOSEN** (full text read)
+  - Autonomous generalizability auditing of scientific foundation models — `10.64898/2026.11.03.763979`
+  - BioResearchBench: 50 Long Horizon Biological Research Tasks — `10.64898/2026.10.28.762290`
+  - The Reasoning Paradox in Scientific Sandboxes — `10.64898/2026.10.30.763189`
+  - Rho: A Purpose-Driven Workspace for Human-AI Collaborative Analysis — `10.64898/2026.11.03.763858`
+  - GOParsimony (Gene Ontology annotation) — `10.64898/2026.11.01.763467`
+  - SPaRTA: Spatial Reasoning in Text-to-SQL for Omics — `10.64898/2026.10.31.763119`
+  - MERIT: Multi-agent EHR-grounded risk identification (medRxiv) — `10.64898/2026.11.02.26367125`
+  - LabWeaver — `10.64898/2026.10.28.762601` (already on the standing deferral list)
+- **arXiv** (shared cache, 500 entries, 11-02 → 11-04): 75 biomedically relevant hits. Full text read for four: CellCanon `2611.05890` (agentic cellular world model — strong runner-up, large gains on SciPlex3 but perfect scores on its own Explain benchmark), EnzymeRSI `2611.06321`, VirtualTrialHarness `2611.05551`, LUCA/"Treating the Symptom" `2611.04473` (**already shipped 11-04**).
+- **PubMed — FAILED.** NCBI E-utilities returned HTTP 500 diagnostic pages on two attempts ~5 min apart; the PubMed MCP returned `API_ERROR` (same backend). Proceeded without it per the source-failure rule.
+- **ChemRxiv / news / funder pages:** not reached — the preprint sources produced a clearly dominant, fully readable candidate well inside the window.
+
+**Dedup:** every shortlist name grepped against `podcasts/*/scripts/` with a known-shipped control term ("knowledge graph", "world model", "LUCA") in the same loop to prove the grep fires. The only hits were spurious `SPaRTA` substring matches in scripps-biomed-brief and the control terms. The final pick was re-checked against the show's script filenames and the CKN/Scheuermann/Cell Ontology assets are unshipped.
+=== 2026-11-05T02:06:35-08:00 done  biomedical-agentic-ai (exit 0) ===
