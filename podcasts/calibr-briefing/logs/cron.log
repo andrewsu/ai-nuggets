@@ -6209,3 +6209,59 @@ Sources:
 - [Edgewise deal announcement](https://www.biospace.com/press-releases/edgewise-therapeutics-announces-sale-of-sevasemten-for-up-to-2-65-billion-strengthening-balance-sheet-and-centering-company-focus-on-cardiovascular-pipeline)
 - [ClinicalTrials.gov NCT05291091](https://clinicaltrials.gov/study/NCT05291091)
 === 2026-11-04T02:32:01-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-05T02:20:13-08:00 start calibr-briefing ===
+I wrote both of today's Calibr scripts plus their feed-item and commit-message stubs. Nothing was voiced, published or committed: `SKIP_TTS=1` was set, so the batch job handles audio, the feed and the commit afterwards. Both feed items parse as valid XML.
+
+**Spotlight (~1,520 words, about 8 minutes): Sanofi drops Nurix's STAT6 degrader.** After Tuesday's close, Nurix said Sanofi is stopping the Phase 1 of SAR448272 and ending the program. Nurix gave no reason, but Sanofi told Leerink it was "emerging nonclinical findings," meaning animal or lab data. The episode covers:
+- **What Nurix loses:** about $455M in remaining STAT6 milestones. The stock fell more than 40% early Wednesday.
+- **Molecule or target:** Truist, Leerink and Jefferies call it a problem with this molecule, not with STAT6. The strongest evidence is that Sanofi is keeping its other STAT6 drug on the same target, an inhibitor from Recludix. It also swapped one Kymera degrader for a next-generation one last year.
+- **AI angle:** Nurix's DEL-AI platform found a molecule for a target nobody could drug, but animal toxicology still ended it.
+- **Competition:** Kymera's KT-621 Phase 2b, due by year end, now carries the whole class. Gilead's STAT6 program, licensed from LEO, is behind it.
+
+One line is my own inference and is labeled as such on air: that the finding came from longer animal toxicology studies run alongside the Phase 1.
+
+**Headlines (~1,350 words):** CVS splitting into two companies, Boehringer's $358M-upfront deal with Sino Biopharm (SBP Group) and AbbVie's $100M-upfront Nxera license. Also Novo's Wegovy pill beat, Spyre dropping its TL1A antibody in arthritis, and Sanders and the FDA user-fee renewal. Short items cover a whistleblower suit at Madrigal, the Alethio and T-Therapeutics raises, and Amgen's MariTide autoinjector trial.
+
+Some items rest on thin sourcing:
+- **T-Therapeutics:** only the Endpoints teaser was readable, so the item is headline-level.
+- **Madrigal:** STAT's lede only; it is presented as allegations.
+- **CagriSema line:** comes from an Endpoints headline.
+- **AI drug discovery:** I found no fresh news, so the AI segment is the Nurix angle plus the title and teaser of a paywalled STAT newsletter.
+
+**Housekeeping:** two leftover stubs from September 15 are still in `scripts/`, apparently never cleaned up after publish; I left them alone. I also added today's source-access results to memory.
+
+Files are in `podcasts/calibr-briefing/scripts/`:
+- `2026-11-05-pharma-headlines.txt` (+ `.rss-item.xml`, `.commit-msg`)
+- `2026-11-05-sanofi-nurix-stat6-degrader-spotlight.txt` (+ `.rss-item.xml`, `.commit-msg`)
+
+**Candidate funnel**
+- **RSS feeds:** Endpoints 24 items, BioPharma Dive 8, STAT 20, GEN 10, Clinical Trials Arena 10, OncLive 30, BioSpace 20. About 30 items from Nov 3–5 survived.
+- **Fierce Biotech / Fierce Pharma:** failed. The jina proxy has Fierce blocked until 10:35 UTC, and `/rss/xml` returns a 5.6 KB Cloudflare stub.
+- **PR Newswire health list:** 100 items scanned; nothing new on target beyond the feeds.
+- **Article bodies via jina:** about 25 fetched. BioSpace and BioPharma Dive bodies were complete; Endpoints and STAT+ gave the lede only.
+- **Primary sources:** Nurix releases (Nov 3, 2026 and June 2025), Spyre Q3 release, Boehringer–SBP release, Drug Hunter STAT6 commentary.
+- **Web search:** KT-621 BROADEN2 timing, Recludix, Gilead–LEO terms, Sanofi's history with Kymera's KT-474.
+
+**Shortlist** (★ = spotlight, ✓ = in headlines, ✗ = cut):
+- ★✓ Sanofi ends Nurix STAT6 degrader — https://ir.nurixtx.com/news-releases/news-release-details/nurix-therapeutics-announces-sanofis-decision-discontinue
+- ✓ CVS split — https://www.biopharmadive.com/news/cvs-split-two-companies-strategic-about-face/873742/
+- ✓ Boehringer–SBP Group deal — https://www.biospace.com/press-releases/boehringer-ingelheim-and-sbp-group-enter-partnership-to-advance-next-generation-cancer-therapies
+- ✓ AbbVie–Nxera EP4 agonist — https://www.biospace.com/deals/abbvie-bets-up-to-1-47b-for-nxeras-discarded-ibd-program
+- ✓ Novo Wegovy pill beat — https://www.biopharmadive.com/news/novo-wegovy-pill-sales-3q-2026-earnings-cfo/873693/
+- ✓ Spyre SPY072 exits rheumatology — https://ir.spyre.com/news-releases/news-release-details/spyre-therapeutics-reports-third-quarter-2026-financial-results
+- ✓ Sanders and PDUFA — https://www.statnews.com/2026/11/04/bernie-sanders-senate-help-key-role-pdufa-reauthorization/
+- ✓ Midterm analyst views — https://www.biopharmadive.com/news/biotech-pharma-midterm-elections-impact/873667/
+- ✓ Madrigal whistleblower suit — https://www.statnews.com/2026/11/04/former-madrigal-pharmaceuticals-executive-rezdiffra-lawsuit/
+- ✓ Alethio $90M — https://www.biopharmadive.com/news/alethio-therapeutics-myeloproliferative-neoplasms-series-a/873775/
+- ✓ T-Therapeutics $133M — https://endpoints.news/t-therapeutics-secures-133m-for-cancer-autoimmune-tcrs/
+- ✓ Amgen MariTide autoinjector — https://www.biospace.com/business/amgen-starts-maritide-autoinjector-study-as-pivotal-readouts-approach
+- ✗ Kamau ASH sickle cell data, Ideaya trial ended — Endpoints teaser only, no readable body
+- ✗ Akeso ivonescimab NMPA priority review (biliary tract), China investigator-initiated trial crackdown (STAT), Lonza–Merck KGaA plants (covered 11-03), Medicare Part D premiums (11-03) — cut for length or covered recently
+
+Sources:
+- [Recludix/Sanofi deal (SDBJ)](https://sdbj.com/life-sciences/pharmaceuticals/recludix-tackling-inflammatory-diseases-with-backing-from-eli-lilly/)
+- [Kymera BROADEN2 enrollment](https://www.barchart.com/story/news/2644685/kymera-therapeutics-completes-enrollment-in-the-phase-2b-broaden2-trial-of-kt-621-in-atopic-dermatitis-with-topline-data-by-year-end-2026)
+- [Gilead–LEO STAT6](https://pharmatimes.com/news/gilead-and-leo-pharma-partner-to-develop-oral-stat6-program/)
+- [Sanofi drops Kymera's KT-474](https://ng.investing.com/news/analyst-ratings/kymera-stock-falls-as-sanofi-drops-irak4-degrader-for-nextgen-candidate-93CH-1981778)
+- [Drug Hunter STAT6 commentary](https://drughunter.com/commentary/stat6-why-the-once-undruggable-is-now-the-hottest-target-in-immunology)
+=== 2026-11-05T02:28:37-08:00 done  calibr-briefing (exit 0) ===
