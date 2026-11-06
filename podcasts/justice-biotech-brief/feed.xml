@@ -12,7 +12,18 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Technology"/>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <item>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <item>
+        <title>Paused — download an episode to resume your daily briefing</title>
+        <description>Your daily briefing has been paused because no downloads have been detected in about two weeks. As soon as you download an episode, generation will automatically resume.</description>
+        <link>https://github.com/andrewsu/ai-nuggets/tree/main/podcasts/justice-biotech-brief</link>
+        <guid isPermaLink="false">2026-11-06-goodbye</guid>
+        <pubDate>Fri, 06 Nov 2026 10:00:11 +0000</pubDate>
+        <enclosure url="https://podcast.su-lab.workers.dev/p/justice-biotech-brief/u/justice/2026-11-06-goodbye.mp3" length="62736" type="audio/mpeg"/>
+        <itunes:duration>8</itunes:duration>
+        <itunes:summary>Your daily briefing has been paused because no downloads have been detected in about two weeks. As soon as you download an episode, generation will automatically resume.</itunes:summary>
+    </item>
+
+    <item>
               <title>ORCA — an RNA sensor that paints CD19 onto MYC-amplified colorectal cancer</title>
               <description>Posted 2026-11-03 on bioRxiv (10.64898/2026.11.02.763782 v1): "Targeted cancer ablation via programmable sensing of amplified oncogenic RNA." Xiaojing J. Gao corresponding, Department of Chemical Engineering, Stanford, with Crystal Mackall's group (Center for Cancer Cell Therapy / Parker Institute). CC-BY-NC-ND.
 
