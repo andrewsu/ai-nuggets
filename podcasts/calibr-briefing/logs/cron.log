@@ -6265,3 +6265,42 @@ Sources:
 - [Sanofi drops Kymera's KT-474](https://ng.investing.com/news/analyst-ratings/kymera-stock-falls-as-sanofi-drops-irak4-degrader-for-nextgen-candidate-93CH-1981778)
 - [Drug Hunter STAT6 commentary](https://drughunter.com/commentary/stat6-why-the-once-undruggable-is-now-the-hottest-target-in-immunology)
 === 2026-11-05T02:28:37-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-06T02:20:13-08:00 start calibr-briefing ===
+Both scripts and their stubs are written. Nothing was voiced, published, or committed — `SKIP_TTS=1`, so the batch job handles audio, the feed, and the commit afterwards. Both feed items parse as valid XML.
+
+**Spotlight (~1,665 words): Novartis confirms nine tumor reports in Zolgensma-treated children.** Two of the nine show evidence of AAV vector DNA integrating into the patient's own DNA, against more than 6,000 patients dosed since 2019. The episode covers:
+- **The honest numerator.** England's National MDT for Zolgensma published the detail no trade outlet had: pathology is complete on only 3 of 9 — 2 related to Zolgensma, 1 unrelated, 6 unworked-up. Confirmed cases came 18–60 months after dosing.
+- **What changed.** The label has carried a tumorigenicity warning since 2019 as *theoretical*. The episomal model of AAV safety was always a claim about rarity, not impossibility; at 6,000 children dosed systemically, rare becomes countable.
+- **The precedent.** REGENXBIO's January RGX-111 case — a CNS tumor with clonal vector integration into the PLAG1 proto-oncogene, confirmed by an independent lab, a 28% stock drop, two programs held. Same capsid family, same pediatric population, same multi-year latency. REGENXBIO's NAV AAV9 platform is also the licensed basis for Zolgensma, and it reported Q3 the same day while carrying two holds into a Duchenne BLA.
+- **The disclosure pathway**, which ran neurologists → individual clinic appointments → a parent's LinkedIn post → SMA Europe demanding public communication, before any company statement.
+
+**Headlines (~1,450 words):** AstraZeneca's reported $10B bid for Rhythm, Revolution Medicines' $198M Rasonque quarter against a $19M estimate, Evommune's $30M VAV1 molecular glue license from Hinova, and CMS finalizing 340B at ASP−28%. Shorter items: J&J's trispecific myeloma data in the ASH abstracts, subcutaneous amivantamab's HNSCC approval, Intellia, Protagonist, and Avidity layoffs. The AI segment is the Cambridge/DIOSynVax H5 vaccine in *Cell Reports Medicine*.
+
+Two things to flag:
+- **A safety classifier stopped one of my messages mid-run.** I dropped the item I had been reading at the time (a STAT piece on an MIT defamation verdict) rather than rewording it; it does not appear in either script. Nothing else was affected.
+- **Thin sourcing, labeled as such on air:** the Rhythm bid is a WSJ report via BioSpace, not a confirmed deal; Merck's AASLD MASH biopsy data and the Caldera China deal were Endpoints teasers only, so both were cut rather than summarized.
+
+**Candidate funnel**
+- **RSS:** Endpoints 24, BioSpace 20, STAT 20, OnClive 30, TargetedOnc 30, GEN 10, Clinical Trials Arena 10, BioPharma Dive 10. ~60 items dated Nov 4–6 survived; ~45 after discarding OnClive/TargetedOnc conference-interview video stubs.
+- **Fierce Biotech / Fierce Pharma:** failed again — `/rss/xml` returns the 5.6 KB Cloudflare stub, 0 items.
+- **Article bodies:** 20 fetched via jina, 20 readable. STAT+ and Endpoints gave lede-only as usual; BioSpace and BioPharma Dive complete.
+- **Primary sources:** SMA Europe statement, SMA UK National MDT update, REGENXBIO / Intellia / Protagonist Q3 8-K exhibits via EDGAR, REGENXBIO 424B5 (RGX-111 tumor language).
+- **EDGAR:** full-text 8-K search for Nov 5–6 returned ~90 filings; three pulled in full.
+- **Web search:** Zolgensma analyst reaction (none found — no broker note surfaced), AZ/Rhythm confirmation (WSJ paywalled, BioSpace is the readable mirror), RGX-111 hold details.
+
+**Shortlist** (★ = spotlight, ✓ = in headlines, ✗ = cut):
+- ★✓ Novartis Zolgensma tumor reports — https://www.sma-europe.eu/news/information-regarding-recent-zolgensma-safety-concerns
+- ✓ AstraZeneca $10B bid for Rhythm — https://www.biospace.com/business/coveted-metabolic-gem-rhythm-reportedly-gets-10b-offer-from-astrazeneca
+- ✓ Rasonque $198M quarter — https://www.biopharmadive.com/news/revolution-rasonque-sales-3q-2026-pancreatic-cancer/873839/
+- ✓ Evommune–Hinova VAV1 degrader — https://www.biospace.com/deals/evommune-inks-molecular-glue-deal-worth-1-1b-biobucks-to-fill-pipeline-gap
+- ✓ CMS 340B / site-neutral final rule — https://www.biopharmadive.com/news/medicare-will-cut-billions-from-340b-expand-site-neutral-payments-in-2027/873909/
+- ✓ ASH trispecifics — https://www.biopharmadive.com/news/ash-2026-trispecific-multiple-myeloma-johnson-johnson-abbvie/873852/
+- ✓ Subcutaneous amivantamab HNSCC approval — https://www.onclive.com/view/fda-approves-amivantamab-and-hyaluronidase-for-metastatic-hnscc
+- ✓ AI-designed H5 vaccine — https://www.genengnews.com/topics/infectious-diseases/bird-flu-vaccine-developed-using-ai-outperforms-current-stockpiled-vaccines-in-preclinical-tests/
+- ✓ Intellia MAGNITUDE-2 enrollment — https://www.clinicaltrialsarena.com/news/intellia-concludes-attrv-pn-study-enrolment/
+- ✓ Protagonist rusfertide $275M / Avidity layoffs — EDGAR 8-K; https://www.biospace.com/biospace-layoff-tracker
+- ✗ Merck efinopegdutide AASLD biopsy data, Caldera China deal, STAT sickle cell comeback, Repatha vs Zetia RWE — Endpoints/STAT+ teaser only, no readable body
+- ✗ Boehringer–SBP, AbbVie–Nxera, CVS split, Novo Q3, Spyre — all shipped Nov 5
+
+**Housekeeping:** the two leftover September 15 stubs are still sitting in `scripts/`; left alone again. Today's source-access results are in memory, including the note that disease-advocacy orgs carried clinical detail the trade press didn't, and that `sec.gov/Archives` returns 0 bytes to curl on some paths while WebFetch works.
+=== 2026-11-06T02:34:26-08:00 done  calibr-briefing (exit 0) ===
