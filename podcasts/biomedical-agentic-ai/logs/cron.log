@@ -6132,3 +6132,36 @@ Episode written. `SKIP_TTS=1` was set, so per PIPELINE.md I wrote stubs only —
 
 **Dedup:** every shortlist name grepped against `podcasts/*/scripts/` with a known-shipped control term ("knowledge graph", "world model", "LUCA") in the same loop to prove the grep fires. The only hits were spurious `SPaRTA` substring matches in scripps-biomed-brief and the control terms. The final pick was re-checked against the show's script filenames and the CKN/Scheuermann/Cell Ontology assets are unshipped.
 === 2026-11-05T02:06:35-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-06T02:00:12-08:00 start biomedical-agentic-ai ===
+Episode written. SKIP_TTS=1 was set, so I wrote the script plus the two stubs and did **not** run TTS, publish, edit `feed.xml`, or commit — `publish_pending.py` picks those up.
+
+**Files written** (`podcasts/biomedical-agentic-ai/scripts/`):
+- `2026-11-06-cellcanon-the-gain-lives-in-the-readout.md` — 943 spoken words (cap 1150)
+- `...rss-item.xml` — validates as XML under the itunes namespace, `__LENGTH__`/`__DURATION__` placeholders
+- `...commit-msg`
+
+**Pick:** CellCanon (arXiv 2611.05890, posted 2026-11-04, Zhejiang University) — full text read via `mutool` on the PDF, no "placeholder" strings. The take is built on the paper's own appendix: its headline 63% DE-AUPRC gain collapses to 0.1429 when you read DE off its *identical* frozen continuous predictions by magnitude (the way baselines effectively do), its Top50 expression R² of 0.9145 sits below BioLORD and barely above the 0.8880 you get by handing back untreated control cells, and its perfect Explain sweep is matched 1.0000 by a deterministic symbolic rule engine with no LLM. What survives is the condition-level evidence compiler (99.77% fewer tokens) and the Update step — one revealed response, frozen weights, 0.9077 vs 0.6279 for a fine-tuned comparator.
+
+**Candidate funnel**
+
+- **arXiv** (shared cache, 500 entries, dates 11-03/11-04/11-05 only — the 500-cap again truncates the 4-day window): 278 keyword hits, ~40 biomedically relevant.
+- **bioRxiv** details API, day-by-day 11-03→11-06: 1017 records, ~75 keyword hits at version 1 in window.
+- **PubMed** MCP, edat ≥ 2026/11/01: 40 scanned, 0 substantive after discarding print-issue/proteomics noise.
+- **News / product launches**: searched, nothing dated in the 3-day window (results were Causaly 9/2025, Owkin 1/2026, PromptBio 6/2026 — all out of window).
+- **ChemRxiv / funder pages**: not reached before selection closed; noting the gap.
+
+Shortlist (all dedup-checked against shipped script filenames + contents; controls `LUCA` and `RIVER` both fired, so the grep was live):
+- **CellCanon: An Agentic Cellular World Model** — arxiv.org/abs/2611.05890 — **CHOSEN**
+- ArcRAG: Agentic Compositional Retrieval over Knowledge Graphs — arxiv.org/abs/2611.06481 (PDF pulled, strong runner-up)
+- Benchmarking LLMs on Heterogeneous Cognitive and Biomedical Knowledge Graphs — arxiv.org/abs/2611.08315
+- RIVER: Evidence-guided multi-agent retrieval for enzyme–reaction discovery — arxiv.org/abs/2611.07757
+- PharmAgents2: Towards Autonomous End-to-End Drug Discovery — arxiv.org/abs/2611.07653
+- When Does Better Confidence Improve a Knowledge-Graph Audit? — arxiv.org/abs/2611.05877
+- VirtualTrialHarness — arxiv.org/abs/2611.05551
+- EnzymeRSI dual-loop recursive self-improvement — arxiv.org/abs/2611.06321
+- LLMs as auditors of clinical prediction networks — arxiv.org/abs/2611.07847
+- Where single-cell foundation models help: benchmark vs simple baselines — bioRxiv 10.64898/2026.11.03.763968 (closest thematic rival; full text not opened)
+- Autonomous generalizability auditing of scientific foundation models — bioRxiv 10.64898/2026.11.03.763979
+
+Excluded as already shipped: the NLM-CKN semantic knowledge network (bioRxiv 10.64898/2026.10.30.763199) was yesterday's episode.
+=== 2026-11-06T02:05:47-08:00 done  biomedical-agentic-ai (exit 0) ===
