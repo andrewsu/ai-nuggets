@@ -4123,3 +4123,20 @@ I wrote today's Blackbird Brief Portfolio Watch (Thursday 2026-11-05). `SKIP_TTS
   - **Boehringer–Sino $7B ADC/T-cell engager deal:** paywalled and no primary source found; carried to tomorrow.
   - **SITC conference:** nothing relevant to Clasp has come out yet.
 === 2026-11-05T02:19:14-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-06T02:10:12-08:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I stopped at the stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit; `publish_pending.py` will do those after batch TTS.
+
+**Published artifacts (staged for the orchestrator)**
+- `podcasts/blackbird-brief/scripts/2026-11-06-portfolio-watch.md` — 1,707 spoken words (~8.5 min, in line with the last three episodes)
+- `…-portfolio-watch.rss-item.xml` (validates as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…-portfolio-watch.commit-msg`
+- Ledger appended: 3 keys, 121 episodes
+- `memory/blackbird-portfolio.md` edited in place: new reads under **Aletira**, **Winnow**, and **Spinout-structure comparators**; three `_Last update:_` dates bumped
+
+**Today's items**
+1. **LEAD — Novartis confirms 9 tumor reports among >6,000 Zolgensma patients, 2 with evidence of AAV vector integration into patient DNA, 18–60 months post-dose.** Three reads for Aletira: LTFU stops being boilerplate in the pre-IND; local cochlear delivery is a real integration-surface advantage *only* if we hold liver/gonad/spleen vector-genome data; and — since families learned this at neurology appointments and on LinkedIn while SMA Europe demanded public communication — disclosure posture belongs in the TPP.
+2. **Nonprofit Orphan Therapeutics Accelerator in-licenses a shelved UCL/CMRI AAV program for OTC deficiency**, whose one dosed patient is off Ravicti and off protein restriction 2.5 years on after Bloomsbury shut down. Their ASGCT-JV marketplace for shelved cell/gene assets is a cheap sourcing channel for Eddie — different inventory, same vocabulary.
+3. **Evommune pays Hinova $30M upfront (up to $1.1B) for an oral VAV1 molecular glue degrader** — the complement to Wednesday's Sanofi/Nurix item: there the target survived the molecule, here the lesson is price, and Winnow's selectivity premium needs a one-sentence answer before the BD conversation.
+
+**Funnel notes:** Fierce Biotech RSS returned an empty body (one source down, proceeded per PIPELINE.md); Endpoints and STAT bodies are subscriber-gated, so the lead was read in full through the BioSpace primary carrying Novartis's direct statement. Newron's evenamide deaths/FDA hold is strongly Lieber-relevant but dated 2026-10-08 — outside the window, not eligible. T-Therapeutics passed the key filter under its Endpoints URL but was caught by the roster grep as yesterday's lead; I re-verified the dedup filter against a known-shipped key before relying on it.
+=== 2026-11-06T02:17:21-08:00 done  blackbird-brief (exit 0) ===
