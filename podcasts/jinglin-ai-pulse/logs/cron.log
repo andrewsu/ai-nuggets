@@ -4597,3 +4597,52 @@ I wrote today's episode and staged it for the nightly batch. `SKIP_TTS=1` was se
   - Latent Space has moved to beehiiv, so the Substack archive API now 404s; the RSS feed plus the page transcript worked.
 - **Dedup:** I grepped every show's scripts for FlashProve, provable inference, Lauritzen, paths to root, Marcus_J_W, covertly underperform, Hullman, Edgewater, Pierre Computer, joining Meta, SWE-2 Flash and Ripple-65B. None had run before. The control term Honnibal correctly hit the 11-04 episode. Kimi K3.1 Pro last appeared 11-01 for its cyber-policy statement; today's item is the new weights release, and the script calls back to that statement.
 === 2026-11-05T02:37:24-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-06T02:30:13-08:00 start jinglin-ai-pulse ===
+I wrote today's Ollie's AI Pulse episode, "know your agent." `SKIP_TTS=1` was set, so I didn't run TTS, publish, edit `feed.xml` or commit. The batch orchestrator will handle those using the two stub files.
+
+**Files written** (in `podcasts/jinglin-ai-pulse/scripts/`):
+- `2026-11-06-know-your-agent.md`: the script, about 2,260 spoken words. That's a little over the 2,200-word target, about the same length as yesterday's.
+- `2026-11-06-know-your-agent.rss-item.xml`: the feed item, with `__LENGTH__` and `__DURATION__` left as placeholders. It parses as valid XML once the itunes namespace is declared.
+- `2026-11-06-know-your-agent.commit-msg`: the commit message.
+
+**What's in the episode:**
+- **Lead:** Claude Code was putting signed-in users' email addresses into the User-Agent header of web requests it wrote. Anthropic's fix is to remove the email from the model's context. The script points out that the context line already told the model never to send the address in a request header, and that didn't stop it. It also mentions that the agent drafting the episode carries a version of that same line.
+- **Rest of the discourse section:**
+  - Agent swarms found the OpenSSH-on-musl password bug by running about 17,600 odd logins against every build; only one build disagreed.
+  - Axiom formalized the whole Stacks Project in Lean, while its founder Johan de Jong asks for "No AI for now."
+  - A LessWrong post questioning whether AI research has real judgment, with the "stupid and hardworking" replies.
+  - Quick notes on two model releases, Inkling 2 Small and ERNIE 5.5 Flash Base.
+- **Money:** the Nasdaq fell 5.52% and chip stocks had their worst day since March 2020, with suppliers hit much harder than the big spenders.
+- **Deep cut:** Joshua Monrad of Sentinel Bio on The Cognitive Revolution, on why know-your-customer becomes know-your-agent. I checked every quote against the transcript.
+
+**Gaps:**
+- There was no new AINews post for today, so Hacker News was the main source for what people are discussing.
+- The auto-mode classifier blocked fetching the WSJ article on the Anthropic IPO. The script uses only the headline, and the source line says the body wasn't read.
+- The jina reader was blocked from github.com, so I read the Claude Code issue and its comments through GitHub's API instead.
+- I checked every show's scripts for repeats of today's items and found none. The control term correctly matched yesterday's episode.
+
+**Candidate funnel**
+- **Hacker News** (Algolia, stories over 80 points since Nov 5 00:00 UTC): 52 scanned, about 15 relevant to AI.
+  - ✅ Claude Code sends your email address to websites: https://github.com/anthropics/claude-code/issues/107757 (HN https://news.ycombinator.com/item?id=50385272)
+  - ✅ sshole: https://sshhole.com
+  - ✅ Stacks Project formalized in Lean: https://axiommath.ai/research/the-stacks-project-formalized/
+  - ✅ "I struggle to believe that AI R&D is ingenious": https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL
+  - ✅ Inkling 2 Small: https://thinkingmachines.ai/news/inkling-2-small/
+  - ✅ ERNIE 5.5 Flash Base: https://ernie.baidu.com/release/ernie-5-5-flash-base/
+  - ✅ Nasdaq correction and AI trade selloff: https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html, https://finlaws.substack.com/p/25t-has-been-wiped-from-us-stocks
+  - ✅ (headline only) Anthropic IPO skepticism: https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b
+  - ✗ Astra covert underperformance HN thread (covered 11-05)
+  - ✗ Tencent Hy4 (the page returned only 28 words)
+  - ✗ Cuban on Facebook deepfake ads (the jina fetch came back too thin to verify)
+  - ✗ MS Paint RCE, Pangram Image, Rivet, Stroq, Kagi, Discord (product news or not AI)
+- **X / Twitter:** no new AINews issue to take tweet IDs from; X timelines can't be read from this host.
+- **Podcasts:**
+  - ✅ The Cognitive Revolution, Joshua Monrad (Nov 5, full transcript): https://www.cognitiverevolution.ai/kyc-becomes-kya-sentinel-bio-s-joshua-monrad-on-dna-screening-uplift-studies-agent-monitoring/
+  - ✗ MLST: Hartnett episode covered 10-28, Bach covered 11-03
+  - ✗ TWIML: the Socher episode has no transcript (Socher was covered before)
+  - ✗ Interconnects (Nov 4 post not read)
+  - ✗ No Priors: Robinhood episode, off-topic
+  - ✗ Dwarkesh: Caro episodes, off-topic
+  - ✗ Lex #503 (covered 10-27)
+- **Dedup:** I searched every show's scripts for sshole, Stacks Project, Inkling 2, Panickssery, ERNIE 5, User-Agent, Monrad, Sentinel Bio, Hy4 and Starfall, and found no hits. The control term Lauritzen correctly matched 11-05.
+=== 2026-11-06T02:38:31-08:00 done  jinglin-ai-pulse (exit 0) ===
