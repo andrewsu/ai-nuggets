@@ -6268,3 +6268,30 @@ Two judgment calls worth flagging:
 
 The 429s on bioRxiv landing-page URL checks are Cloudflare throttling, not bad links — I verified all eight DOI prefixes against the details API, and I had already pulled full text from each.
 === 2026-11-05T03:13:02-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-06T02:40:14-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1` was set, so I wrote the script plus the two stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` does those after batch TTS.
+
+**Artifacts** — `podcasts/receptor-and-reason/scripts/2026-11-06-receptor-and-reason.{md,rss-item.xml,commit-msg}`
+**Length:** 3,370 spoken words ≈ 18.0 min at the show's measured 0.32 s/word — top of the 12–18 min band.
+**Theme:** geography — where an intervention acts rather than which target it hits; on the computational side, access rather than knowledge.
+
+**Candidate funnel**
+
+| Source | Scanned | Survived relevance | Notes |
+|---|---|---|---|
+| bioRxiv details API, 10-30→11-06 (day-by-day) | 8 day-files; 10-30→11-04 reused from the 11-05 work dir, 11-05/11-06 fetched fresh | 74 combined with medRxiv | v1-only + in-window date |
+| medRxiv details API (same window) | 8 day-files (11-06 = 0 records) | — | |
+| arXiv shared cache | 500 entries, covering only 11-03→11-05 (500-entry cap) | 38 bio+agentic | |
+| Nature RSS | `neuro`, `natmachintell`, `natmentalhealth` = 9 items each; `npp`, `mp`, `nbt` = 150-byte empties | — | Crossref covered the three that failed |
+| Crossref `from-created-date` across 18 ISSNs | 231 journal-articles | 231 | Neuropsychopharmacology and IJNP returned 0; Cell Systems 0 |
+
+**Dedup:** 343 candidates → 320 fresh (22 already shipped), each batch and the **final roster** re-gated with a seeded known-shipped control line that dropped correctly both times. The dropped list is printed in full in the run — notably it killed the item I had picked to lead with, the multi-institutional psilocybin mouse-behaviour paper in Nature Neuroscience, plus the Mol Psychiatry antidepressant-epigenetics paper and the CYP2D/oxycodone item. I also grepped prior scripts for 20 topic/asset strings (T-tubule, atenolol, FGF21, CD40, riddled, LLM-as-a-judge, …) — no collisions.
+
+**Full text was an eligibility gate.** Opened in full: 4 bioRxiv preprints (via r.jina.ai on `.full.pdf`), 5 arXiv PDFs (curl + mutool), 7 Nature-family articles (plain curl + Safari UA — no jina needed today). Dropped as abstract-only: two npj Digital Medicine items (~10 KB stripped), Nature's "AI-native experimental laboratory" and the epilepsy gene-therapy news piece (both access-walled), Nat Neurosci claustrum, Mol Psychiatry Crh-insula. All Elsevier Tier 1 journals (Neuropharmacology, Biol Psychiatry, PNBP) stayed discovery-only per the standing block — that cost three otherwise-attractive CBD and cocaine-vulnerability items.
+
+**Deferred for re-check:** bioRxiv `2026.11.01.763457` (the transformer as a canonical cortical microcircuit) and `2026.11.02.762920` (heteromeric kainate receptor partial agonists) each returned a 198-byte jina proxy error twice — that is a proxy failure, not a render verdict, so both are live candidates tomorrow. The transformer/cortex one is the better pick of the two.
+
+**Chosen, 12 items:** β1-AR submembrane geography and size-excluded beta-blockers (lead) · TfR valency vs. Fc-FGF21 half-life · intestinal molecular siphoning for nicotine · CD40L/IFN-γ microglial neurotoxicity · complex IV / AOX bypass in AD · preconceptional stress thalamostriatal · polygenic ideation-to-attempt · distributed EEG phase-resetting index · PharmAgents2 · computation-not-weight-access · LLM-as-judge German clinical audit · riddled basin geometry (closer).
+
+Two judgment calls worth flagging. The lead is a **cardiac** paper, not CNS — I took it anyway because the transferable claim is pure receptor pharmacology (submembrane location, not receptor identity, selects the downstream nanodomain) and because selectivity-by-steric-exclusion is a design principle that ports to any physically partitioned receptor population. And the commit-msg stub carries no `Co-Authored-By` trailer: `PIPELINE.md` specifies "One line; no quoting" for that file and all 163 prior episodes follow it, so I matched the project convention over the default attribution guidance. Say the word and I'll add it.
+=== 2026-11-06T02:51:39-08:00 done  receptor-and-reason (exit 0) ===
