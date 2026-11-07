@@ -4646,3 +4646,51 @@ I wrote today's Ollie's AI Pulse episode, "know your agent." `SKIP_TTS=1` was se
   - ✗ Lex #503 (covered 10-27)
 - **Dedup:** I searched every show's scripts for sshole, Stacks Project, Inkling 2, Panickssery, ERNIE 5, User-Agent, Monrad, Sentinel Bio, Hy4 and Starfall, and found no hits. The control term Lauritzen correctly matched 11-05.
 === 2026-11-06T02:38:31-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-07T02:30:11-08:00 start jinglin-ai-pulse ===
+I wrote today's episode of Ollie's AI Pulse, "taken on trust." Because `SKIP_TTS=1` was set, I only wrote the script and its two stub files. I didn't run TTS, publish, edit the feed or commit; the batch orchestrator does those steps.
+
+**Files** (in `podcasts/jinglin-ai-pulse/scripts/`):
+- `2026-11-07-taken-on-trust.md`: 2,054 spoken words, about 11–12 minutes. It has the `## Script` heading and no URLs in the spoken part.
+- `2026-11-07-taken-on-trust.rss-item.xml`: has the `__LENGTH__` and `__DURATION__` placeholders, and the XML parses.
+- `2026-11-07-taken-on-trust.commit-msg`
+
+**What's in it:**
+- **Lead:** METR, an outside evaluator, spent 11 weeks inside Anthropic. It found Anthropic's internal capability index rising about 1.9 times faster than before (95% range 1.5–2.8), with about 80% of that put down to Anthropic using its own AI for research. Anthropic redacted most of the evidence METR found most convincing.
+- **Reactions:** Ryan Greenblatt says he was "seriously wrong" to expect a smaller speedup. Ajeya Cotra works the doubling back to about a 10x speedup for each researcher. A September essay by Ramez Naam makes the case against using the same arithmetic, so the two sides disagree about the evidence, not the math.
+- **Also in the discourse section:** Anthropic's study of about 207,000 research sessions, which finds AI used most where the work is easy to check. And Hightouch's test where a cheap model that reports reliable confidence scores hands its unsure cases to Claude Opus.
+- **Money:** IPO buyers are now discussing $1.1–1.3 trillion for Anthropic, and Google bought Crusoe's permitted Wyoming data-center site.
+- **Deep cut:** Fabian Theis on Latent Space, about virtual cells, baselines and choosing metrics.
+
+The script opens by saying it was drafted by Claude, an Anthropic model, since the lead story is about Anthropic.
+
+**Gaps:**
+- The Theis episode page only showed the start of the transcript, so I transcribed the full audio with Mistral's voxtral-mini. The quotes come from that machine transcript, and the source line says so.
+- Bloomberg's IPO story only returned its first two paragraphs. I used only the figures in those.
+- I dropped "Microsoft winding down Oracle deal" because Reuters returned a captcha and a search only found June coverage.
+- I dropped the Firecracker VM escape because it isn't clearly about AI.
+- The Naam essay is from September 27. It's included only because a commenter linked it in the Hacker News thread, and the script calls it a September essay.
+- Final-roster dedup: no repeats of today's items. The control term "Lauritzen" matched 11-05, so the search worked. The METR, Greenblatt, Luna, Crusoe and Theis hits are older, different stories.
+
+**Candidate funnel**
+- **Hacker News** (stories over 60 points since Nov 5 18:00): 63 scanned, about 15 about AI.
+  - ✅ AI is dramatically accelerating AI research: https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai
+  - ✅ METR report (from that post): https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/
+  - ✅ Hightouch Jev + Opus judges: https://hightouch.com/blog/llm-judges-identity-resolution
+  - ✅ How researchers use Claude: https://www.anthropic.com/research/how-researchers-use-claude
+  - ✅ Anthropic IPO buyers see $1.1T: https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout
+  - ✅ Google buys Crusoe's Wyoming site: https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update
+  - ✗ Microsoft/Oracle (Reuters captcha), Firecracker escape (not AI), Gemini Omni 1.2 Flash and Perplexity agents (product launches), ChatGPT connector bug, village.dev price-performance, Unitree factory tour, AI sell-off comparison
+- **X / Twitter** (read via fxtwitter): ✅ Greenblatt https://x.com/RyanGreenblatt/status/2118447235289817503; ✅ Bearman quoting the S-1 https://x.com/theobearman/status/2117277210570604945
+- **Background:** ✅ Naam (Sept 27), linked in the HN thread: https://www.rameznaam.com/p/ai-rsi-isnt-leading-to-super-intelligence
+- **Podcasts:**
+  - ✅ Latent Space, Fabian Theis (Nov 6): https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/controlling_biology_-_fabian_theis_helmholtz_munich_1
+  - ✗ Latent Space, Jamin Ball on the Anthropic S-1 (Nov 7; not read)
+  - ✗ Cognitive Revolution: Rives already covered, Monrad covered 11-06
+  - ✗ Dwarkesh: Clocktower is a newsletter post; the Caro episodes are off-topic
+  - ✗ Interconnects: Nov 4 open-model-economy post not read
+- **Sources that failed:** the Substack archive API returned non-JSON for latent.space, cognitiverevolution.ai and news.smol.ai, so I didn't check for a new AINews issue. I used the Latent Space RSS feed and the Cognitive Revolution site instead.
+
+Sources:
+- [techzine.eu – Microsoft dropped $3B Oracle deal](https://www.techzine.eu/news/infrastructure/142225/microsoft-said-to-have-dropped-3b-oracle-deal-over-compliance-gap/)
+- [The Next Web – Microsoft/Oracle talks collapse](https://thenextweb.com/news/microsoft-oracle-cloud-talks-collapse)
+=== 2026-11-07T02:37:31-08:00 done  jinglin-ai-pulse (exit 0) ===
