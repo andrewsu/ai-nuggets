@@ -6295,3 +6295,43 @@ Episode written. `SKIP_TTS=1` was set, so I wrote the script plus the two stubs 
 
 Two judgment calls worth flagging. The lead is a **cardiac** paper, not CNS — I took it anyway because the transferable claim is pure receptor pharmacology (submembrane location, not receptor identity, selects the downstream nanodomain) and because selectivity-by-steric-exclusion is a design principle that ports to any physically partitioned receptor population. And the commit-msg stub carries no `Co-Authored-By` trailer: `PIPELINE.md` specifies "One line; no quoting" for that file and all 163 prior episodes follow it, so I matched the project convention over the default attribution guidance. Say the word and I'll add it.
 === 2026-11-06T02:51:39-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-07T02:40:11-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so no TTS, no R2 publish, no feed edit, no commit — stubs only, per PIPELINE.md.
+
+**Files written:**
+- `podcasts/receptor-and-reason/scripts/2026-11-07-receptor-and-reason.md` — 2,794 spoken words, ~15.4 min, 11 items
+- `…2026-11-07-receptor-and-reason.rss-item.xml` — validated as XML, `__LENGTH__`/`__DURATION__` placeholders
+- `…2026-11-07-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, 165 episodes
+
+**Spine — "direction":** not whether a lever moves the system, but which way to push it and in whom.
+
+**Candidate funnel**
+
+| Source | Scanned | Relevant | Fresh |
+|---|---|---|---|
+| bioRxiv/medRxiv (10-31→11-07, day-by-day) | ~2,300 | 76 | 71 |
+| arXiv shared cache (500-capped, 11-03→11-05) | 500 | 22 | 19 |
+| Crossref by ISSN (18 journals, from 10-31) | 209 | 209 | 195 |
+| Nature RSS | `npp` `neuro` `nm` `nbt` `natmentalhealth` `tp` `npjdigitalmed` 200/8 each; `mp`, `natmachintell` 303→idp.nature.com | | |
+| Europe PMC (Elsevier) | 7 DOIs | **0 — all NOT IN EPMC** | — |
+
+Dedup: 315 → 285 fresh (29 shipped, 1 title match — the GluD1/GluN2B journal version of a preprint shipped 08-21). Final roster gated again with a known-shipped control, which dropped correctly.
+
+**Shipped (★ = lead)**
+- ★ `2026.11.05.764685` — VU8055 M4 PAM, 6 rhesus macaques, 8 tasks / 85 metrics
+- `2026.11.05.764518` — microglial AhR, sex-biased amyloid *(paired with ↓)*
+- `2026.11.04.763733` — AhR on gut TRPV1 nociceptors, visceral hypersensitivity
+- `2026.11.04.764439` — neonatal MK-801 → mPFC parvalbumin / social affect
+- `2026.10.31.763340` — eplerenone, sex-specific cerebral hemodynamics
+- `2026.11.01.763365` — APOE4 → STIM1 → Gpx4 autophagy
+- `2026.10.30.763175` — nucleotide-state-selective Rab10 modulators
+- `2026.11.03.26367151` — amygdala neurofeedback in MDD, n=21
+- `2026.11.05.764505` — UnDetect, drug-blind ablation *(paired with ↓)*
+- `arxiv:2611.05890` — CellCanon agentic cellular world model
+- `arxiv:2611.05720` — cognitive-bias signatures in search-equipped agents *(closer)*
+
+**Gaps worth flagging:** Elsevier was a total loss (7/7 absent from EPMC), which killed two strong Drug Discovery Today pieces and closes the long-running `neuropharm.2026.111253` deferral. Nature's `s41586-026-11228-6` (AutoDNA autonomous biomolecular lab) was the best Tier 2 fit of the week and was dropped under the full-text gate — 41 KB but no Abstract or Results, paywall signature #3.
+
+One process note: an early turn was cut by the safety classifier because I printed a chunk of *yesterday's own script* while checking its format. Same root cause as the 11-04 stop — bulk verbatim reproduction — and it cost a turn but no roster changes. Logged to memory.
+=== 2026-11-07T02:51:11-08:00 done  receptor-and-reason (exit 0) ===
