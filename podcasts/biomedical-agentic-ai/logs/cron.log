@@ -6165,3 +6165,37 @@ Shortlist (all dedup-checked against shipped script filenames + contents; contro
 
 Excluded as already shipped: the NLM-CKN semantic knowledge network (bioRxiv 10.64898/2026.10.30.763199) was yesterday's episode.
 === 2026-11-06T02:05:47-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-07T02:00:09-08:00 start biomedical-agentic-ai ===
+Episode written in stub mode (`SKIP_TTS=1` — no TTS, no R2 publish, no feed edit, no commit).
+
+**Today's pick:** AutoSPECTRA — *Autonomous generalizability auditing of scientific foundation models* (bioRxiv `10.64898/2026.11.03.763979`, posted 2026-11-04, Ektefaie/Jain/Sabeti, Broad Institute). Full text read via `r.jina.ai` on `.full.pdf` (87 KB, 30 pp; direct curl was 17-byte-429'd). 0 `placeholder` hits. Novelty-checked clean — only the predecessor SPECTRA (Nat Mach Intell) surfaces in search.
+
+Spine: *a performance decline doesn't belong to the model until a dumb baseline refuses to share it* — CONCH 0.803→0.276 under lost fine detail vs ResNet-50's 0.795→0.564 (66% vs 29% relative, model-specific) against AlphaMissense's occupancy decline, which BLOSUM62 shares. Opened on the unconstrained-agent diagnostic that motivated the protocol: 24 runs all hypothesized and none tested; four novelty disagreements across 11 runs; three revised the axis after inspecting the target model's errors.
+
+Files written to `podcasts/biomedical-agentic-ai/scripts/`:
+- `2026-11-07-autospectra-the-decline-belongs-to-the-model-only-if-a-baseline-refuses-to-share-it.md` — 960 spoken words (cap 1150)
+- `.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `.commit-msg`
+
+Paper URL verified 200 against the details API's exact DOI prefix.
+
+**Candidate funnel**
+
+- **bioRxiv + medRxiv** (11-04..11-07, day-by-day, healthy): 1,140 records / 1,123 unique → 88 keyword hits at version 1. 11-07 returns zero on both servers at 2am.
+- **arXiv**: shared cache held 500 entries covering 11-03 (48), 11-04 (249), 11-05 (203) — the 500-cap again. One live `max_results=400` call returned only 11-04/11-05, so 11-06 is not yet announced. 294 keyword hits in cache.
+- **PubMed / ChemRxiv / news / funder pages**: not separately swept — the preprint sources carried a full shortlist well before the window closed.
+
+Substantive shortlist:
+- **AutoSPECTRA** — biorxiv.org/content/10.64898/2026.11.03.763979v1 — **CHOSEN**
+- Does Your Trial Simulator Know What the Drug Does? — arxiv.org/abs/2611.05907 — *dropped: already shipped by receptor-and-reason on 11-05*
+- RIVER, evidence-guided multi-agent enzyme–reaction retrieval — arxiv.org/abs/2611.07757 — full text pulled; headline E. coli MRR rests on only 4 enzymes
+- SPaRTA, spatial text-to-SQL for omics — biorxiv.org/content/10.64898/2026.10.31.763119v1 — strong spine (queries that run and return wrong answers; execution feedback can't repair those)
+- EIN-RECAP — medRxiv `26367381` — multi-agent scored better automatically, blinded experts preferred the simpler pipeline
+- SSAF-T / CeLLMan, segmentation-free agentic cell typing — biorxiv `764509` — deferred, cell-topic-heavy three days running
+- Agentic EHR query pipeline, Boston Children's — medRxiv `26367378`
+- ArcRAG, cross-construction GraphRAG portability — arxiv.org/abs/2611.06481 — great KG spine, non-biomedical corpora
+- VirtualTrialHarness — arxiv.org/abs/2611.05551
+- Rho, human–AI analysis workspace — biorxiv `763858` — overlaps the 11-03 Findings Workflow episode
+
+One process note worth flagging: the strongest item on the board today was a cross-show re-ship that my show-local dedup grep would have missed. I only caught it by grepping `podcasts/*/scripts/` for the arXiv id. I've recorded that in the run log alongside the rest of today's deferrals.
+=== 2026-11-07T02:10:28-08:00 done  biomedical-agentic-ai (exit 0) ===
