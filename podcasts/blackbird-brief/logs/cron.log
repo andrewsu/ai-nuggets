@@ -4140,3 +4140,24 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE.md I stopped at the stubs — no 
 
 **Funnel notes:** Fierce Biotech RSS returned an empty body (one source down, proceeded per PIPELINE.md); Endpoints and STAT bodies are subscriber-gated, so the lead was read in full through the BioSpace primary carrying Novartis's direct statement. Newron's evenamide deaths/FDA hold is strongly Lieber-relevant but dated 2026-10-08 — outside the window, not eligible. T-Therapeutics passed the key filter under its Endpoints URL but was caught by the roster grep as yesterday's lead; I re-verified the dedup filter against a known-shipped key before relying on it.
 === 2026-11-06T02:17:21-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-07T02:10:10-08:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I stopped at the stubs — no TTS, no R2 publish, no `feed.xml` edit, no commit; `publish_pending.py` does those after batch TTS.
+
+**Artifacts**
+- `podcasts/blackbird-brief/scripts/2026-11-07-portfolio-watch.md` — 1,756 words (~8.5 min)
+- `…-portfolio-watch.rss-item.xml` (validates as XML, `__LENGTH__`/`__DURATION__` placeholders) and `…-portfolio-watch.commit-msg`
+- Ledger: 4 keys appended, now 122 episodes
+- `memory/blackbird-portfolio.md` edited in place: Aletira, Neuropsychiatric NewCo, and the oncology-surface-targets theme; three `_Last update:_` dates bumped. No log entries appended.
+
+**Today's items (all read in full)**
+1. **LEAD — Sarepta will not resume enrollment in ENVISION**, abandoning the controlled trial meant to restore the non-ambulatory Elevidys label at ~half of its 150-patient target, and will take 12-week safety data from the ENDEAVOR sirolimus-prophylaxis cohort to FDA in Q1 2027 instead. Three reads for Aletira: the replacement for a safety-stopped gene-therapy trial is a single-arm safety cohort, so enroll any later expansion population while the primary study runs; the immunosuppression regimen is part of the product and belongs in the first study as a variable; and the commercial squeeze ($83.5M vs $131.5M and $181M in prior years, Dyne's Jan 21 PDUFA, RGX-202 filing in Q1) is what makes Severino's "most substantial effect size" answer load-bearing.
+2. **Minerva's confirmatory Phase 3 of roluperidone** (n=380, same clinician-rated Marder NSFS at week 12 that preceded the 2024 CRL) reads out 2H 2027 — a dated read-across for GPR52, and evidence the agency's objection was replication, not the instrument. Flagged the Nov 12 KOL event, and that the $100.7M net income is a non-cash warrant revaluation.
+3. **Precision Biologics (Bethesda) PB-223 ADC** against truncated core 2 O-glycans — a glycan rather than protein specificity axis, complete ovarian-PDX regression at 9 mg/kg but three animals per arm. First-read list for the CBO.
+
+**Funnel**
+- Sources scanned: Endpoints RSS (24), STAT (20), GEN (10), Clinical Trials Arena (10), BioPharma Dive (10 via index), BioSpace news + press-release indexes, CT.gov API (NCT05881408, NCT07565428), SITC poster PDF via mutool. **Fierce Biotech and Fierce Pharma RSS both returned 5.6 KB block pages with no items** — one source down, proceeded per PIPELINE.md.
+- Dedup: 17 candidates → 17 fresh; a known-shipped control (yesterday's Zolgensma BioSpace URL) was correctly dropped on a separate check. Script-name greps clean for Sarepta/ENVISION-as-item, Minerva/roluperidone (only background mention 10-06), Precision Biologics.
+- Not chosen: Immunocore Q3/SITC — **a draft leading on it was halted by a safety classifier, so I pivoted the spotlight rather than rewording**; J&J Rybrevant approval, Boehringer–Sino, Agios layoffs, Voyager/C4 layoffs, MHRA non-clinical guidance, assorted SITC preclinical PRs — no portfolio line or too thin.
+
+One caveat to check before the batch run: the "about half of the 150-patient target" figure for ENVISION comes from BioSpace's account of the call, not from Sarepta directly; CT.gov lists 148 as the *estimated* enrollment target.
+=== 2026-11-07T02:18:01-08:00 done  blackbird-brief (exit 0) ===
