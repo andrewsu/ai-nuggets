@@ -6304,3 +6304,42 @@ Two things to flag:
 
 **Housekeeping:** the two leftover September 15 stubs are still sitting in `scripts/`; left alone again. Today's source-access results are in memory, including the note that disease-advocacy orgs carried clinical detail the trade press didn't, and that `sec.gov/Archives` returns 0 bytes to curl on some paths while WebFetch works.
 === 2026-11-06T02:34:26-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-07T02:20:10-08:00 start calibr-briefing ===
+I wrote both scripts and their stubs. `SKIP_TTS=1` was set, so nothing was voiced, published or committed; the batch job handles audio, the feed and the commit. Both feed items are valid XML once the `itunes` namespace is declared, which `feed.xml` already does.
+
+**Spotlight (~1,640 words): Sarepta won't restart ENVISION.** ENVISION was the half-enrolled, placebo-controlled Phase 3 of the Duchenne gene therapy Elevidys in non-ambulatory boys and walking boys aged 8–17. Sarepta's way back to the non-ambulatory indication now depends on 12-week safety data, due Q1 2027, from a group of patients in another study (ENDEAVOR cohort 8) who get the immunosuppressant sirolimus to protect the liver. That is a safety argument, not a randomized test of whether the drug works. The episode also covers:
+- **The quarter:** Elevidys sold $83.5M, against a $95.4M consensus. Sarepta took a $62M charge for unused Catalent manufacturing capacity, and the older antisense drugs brought in $240M.
+- **Competitors and deadlines:** Dyne's rival drug for the exon-51 group (FDA decision Jan 21), the FDA decision on Vyondys and Amondys in February, REGENXBIO's planned RGX-202 filing in Q1, and Capricor's decision on Nov 22.
+- **Three takeaways for Foresite and Calibr:** whole-body AAV gene therapy after yesterday's Zolgensma story, how to design confirmatory trials, and delivery as the real product in muscle disease.
+
+**Headlines (~1,100 words):** Moderna's Q3 and its cancer-vaccine filing plan, Lilly on Hims & Hers, Alnylam's commercial chief leaving, Gilead's Phase 3 seladelpar result (IDEAL), the real-world Repatha study, Agios cutting more than a third of R&D, the April 9 decision date for rivoceranib plus camrelizumab, Voyager and C4 layoffs, and the November FDA calendar.
+
+**Flags:**
+- **Safety classifier:** it stopped one response early in the run, while the feed fetch was being launched. The fetch never ran, so I re-ran it cleanly. I also left out the Endpoints story on George Church leaving the AI startup Radical, as a precaution.
+- **No AI-in-drug-discovery item:** a web search found nothing dated Nov 6, and the headlines say so on air instead of filling the slot.
+- **Source caveat:** the ENVISION decision came on the earnings call and isn't in Sarepta's press release, so it rests on BioSpace's updated Nov 6 story. Endpoints only showed its teaser.
+
+**Candidate funnel**
+- **RSS:** Endpoints 24, BioPharma Dive 10, STAT 20, GEN 10, Clinical Trials Arena 10, OncLive 30, BioSpace 20, TargetedOnc 30. About 75 items dated Nov 6–7 came back, and about 20 were on-target once conference video and opinion stubs were discarded.
+- **Fierce Biotech / Fierce Pharma:** failed again. Both return the ~5.6 KB Cloudflare stub with 0 items.
+- **Article bodies:** 19 fetched via jina. Endpoints gave teasers only (2 items). A BioSpace Merck/Moderna page and an OncLive IDP-023 page returned 404s.
+- **Primary sources:** Sarepta and REGENXBIO Q3 releases.
+- **Web search:** ENVISION status (only 2025-era results came back, see [BusinessWire 2025 safety update](https://www.businesswire.com/news/home/20250614701775/en/Sarepta-Provides-Safety-Update-for-ELEVIDYS-and-Initiates-Steps-to-Strengthen-Safety-in-Non-Ambulatory-Individuals-with-Duchenne)) and AI drug discovery for Nov 6 (nothing dated; [pharmaphorum October roundup](https://pharmaphorum.com/rd?page=1266) was the closest).
+
+**Shortlist** (★ = spotlight, ✓ = in headlines, ✗ = cut):
+- ★✓ Sarepta ENVISION — https://www.biospace.com/business/sareptas-new-ceo-confident-in-clinical-execution-as-dmd-competitors-close-in
+- ✓ Moderna Q3 — https://www.biospace.com/business/moderna-enjoys-stable-vaccine-sales-thanks-to-global-covid-uptake
+- ✓ Lilly–Hims and Alnylam CCO — https://www.biopharmadive.com/news/lilly-hims-alnylam-boehringer-ultragenyx-sevasemten-ani-egetis/873843/
+- ✓ Gilead seladelpar IDEAL — https://www.clinicaltrialsarena.com/news/gilead-livdelzi-phase-iii-ideal-pbc-liver-disease-alp/
+- ✓ Repatha real-world study — https://www.clinicaltrialsarena.com/news/amgens-repatha-reduces-heart-attack-risk/
+- ✓ Agios cuts — https://www.biospace.com/job-trends/agios-axes-100-plus-r-d-roles-while-awaiting-fda-decision
+- ✓ Rivoceranib decision date — https://www.targetedonc.com/view/rivoceranib-camrelizumab-fda-pdufa-date-hcc
+- ✓ Voyager and C4 layoffs — https://www.biospace.com/biospace-layoff-tracker
+- ✓ November FDA calendar — https://www.biospace.com/fda/verdicts-for-summit-akeso-capricor-vertex-mark-fdas-stacked-november
+- ✗ Immunocore brenetafusp at SITC, Satellos endpoint change — Endpoints teaser only
+- ✗ Merck/Moderna "99% served" — 404
+- ✗ Church/Radical — left out as a precaution after the classifier stop
+- ✗ Zolgensma follow-ups, Rybrevant in head and neck cancer, 340B rule, Boehringer–SBP, Servier sevasemten — already shipped Nov 4–6
+
+The two leftover September 15 stubs are still in `scripts/`; I left them alone.
+=== 2026-11-07T02:28:00-08:00 done  calibr-briefing (exit 0) ===
