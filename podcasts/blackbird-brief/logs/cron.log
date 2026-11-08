@@ -4161,3 +4161,31 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE.md I stopped at the stubs — no 
 
 One caveat to check before the batch run: the "about half of the 150-patient target" figure for ENVISION comes from BioSpace's account of the call, not from Sarepta directly; CT.gov lists 148 as the *estimated* enrollment target.
 === 2026-11-07T02:18:01-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-08T02:10:09-08:00 start blackbird-brief ===
+Both of Sunday's episodes are written. `SKIP_TTS=1` was set, so I wrote scripts plus the two transient stubs each and did **not** run TTS, publish to R2, touch `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-11-08-portfolio-watch.md` (1,793 spoken words ≈ 8.7 min) + `.rss-item.xml` + `.commit-msg`
+- `podcasts/blackbird-brief/scripts/2026-11-08-radar-ctdna-autoimmune-occult-cancer.md` (1,632 spoken words ≈ 7.9 min) + `.rss-item.xml` + `.commit-msg`
+- Ledger appended: 4 keys for Portfolio Watch, 3 for the Radar (124 episodes / 673 items)
+- `memory/blackbird-portfolio.md` edited in place: PxB fund + Anaheim entity carve-out under spinout-structure comparators; a gout/crystal-arthropathy theme note; the ctDNA population read and the Polycomb diligence test under Artemyx (date bumped to 11-08); the endpoint-yield qualification under NuGate (date bumped).
+
+**Candidate funnel**
+
+*Stream B — preprints (Sourcing Radar).* bioRxiv + medRxiv details API swept day-by-day 11-01→11-08, 2,177 records, no zero-record days, no cursor truncation; filtered on corresponding-author institution → 38 JHU/UMB/Kennedy Krieger hits; bioRxiv site search on affiliation strings added co-author coverage. 6 full-text fetches attempted, 5 returned complete bodies via `.full.pdf` through r.jina.ai (`.full` HTML was abstract-only or empty for every one).
+- **CHOSEN (lead)** ctDNA in early-onset SSc/DM — medRxiv 10.64898/2026.11.06.26364657
+- **CHOSEN (2)** Polycomb promoter methylation independent of replication — bioRxiv 10.64898/2026.10.30.763235
+- **CHOSEN (3)** Auditory evoked potentials in Kabuki/Rubinstein-Taybi — bioRxiv 10.64898/2026.11.04.764287
+- Dropped: GDE2/Tau phosphorylation (10.64898/2026.09.14.751492) — **v2 of a Sept 14 preprint**, version-bump recency trap; IFI16 restrictosome (10.64898/2026.10.30.763160, full text read) — no asset, landscape note only; UMB ferroptosis-in-embryogenesis; JHU pancreatic-precancer atlas; JHU multimodal prognostic modeling; UMB IHV SHIV immunization.
+
+*Stream A — press (Portfolio Watch).* BioSpace news/deals/FDA/funding/CGT sections scraped and每 URL dated via `datePublished` (its RSS endpoint returns an empty 543-byte body and the jina render of index pages drops headline text); 31 items in the 11-04→11-08 window; Endpoints index reachable but article bodies paywalled; Fierce returned 390 bytes through jina.
+- **CHOSEN (lead)** Penn-BioNTech PxB Fund first investment (Emvena) — 11-05
+- **CHOSEN (2)** Anaheim Bio €40M Series A, ANA-1 in CPPD — 11-05
+- **CHOSEN (3)** Capricor deramiocel PDUFA Nov 22, in BioSpace's November FDA docket — 11-06
+- **CHOSEN (4)** Onchilles N17350 first clinical data at SITC — 11-06
+- Dropped by dedup filter: Evommune molecular-glue deal; Novartis/Zolgensma tumor cases (used as the control term in every dedup pass — it fired correctly both times).
+- Dropped on scope: AbbVie–Nxera EP4 gut-restricted IBD deal (full text read) — the 11-05 run already ruled it out because the gut-targeted Crohn's/UC program is terminated; I honored that rather than re-raising it.
+- Scanned, no portfolio line: Rhythm/AstraZeneca, Alethio, Nova Anchora, Agios, Moderna Q3, RevMed, Boehringer–Sino (dropped 11-06 as unreachable, not revived), and six other SITC releases.
+
+One thing worth flagging beyond the scripts: the lead preprint's declaration of interests lists Kinzler, Vogelstein and Papadopoulos as equity holders in **Clasp, CagePharma and Winnow** — three Blackbird positions — so that item is a relationship question for Matt and Eddie rather than a licensing lead, and I wrote it that way.
+=== 2026-11-08T02:29:06-08:00 done  blackbird-brief (exit 0) ===
