@@ -6335,3 +6335,48 @@ Dedup: 315 → 285 fresh (29 shipped, 1 title match — the GluD1/GluN2B journal
 
 One process note: an early turn was cut by the safety classifier because I printed a chunk of *yesterday's own script* while checking its format. Same root cause as the 11-04 stop — bulk verbatim reproduction — and it cost a turn but no roster changes. Logged to memory.
 === 2026-11-07T02:51:11-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-08T02:40:10-08:00 start receptor-and-reason ===
+Episode written. SKIP_TTS=1, so stubs only — no TTS, no publish, no feed edit, no commit.
+
+**Receptor & Reason 2026-11-08** — 10 items, 2,732 spoken words (~15 min). Files written to `podcasts/receptor-and-reason/scripts/`: the script `.md`, the `.rss-item.xml` (valid XML, both placeholder tokens present), and the `.commit-msg`. Ledger appended (166 episodes).
+
+Editorial spine: *the experiment that closes the gap* — present or conspicuously absent.
+
+**Roster** (lead first):
+1. Nature — 20 autism genes knocked down in human NPCs; 70 convergence drivers, 31 SFARI; ZFX nominated as female-protective buffer but never perturbed, every cell male
+2. Mol Psychiatry — computational autism convergence map whose "independent validation" is circular (paired as contrast)
+3. bioRxiv — URMC-099 dual MLK3/LRRK2 in AAV-haSyn rats; prevention, not the symptomatic setting the failed trials tested
+4. bioRxiv — oral TRPV4 antagonist GSK2789917 in pig post-hemorrhagic hydrocephalus; treated indistinguishable from sham, effect persists post-dosing
+5. bioRxiv — shikonin / spinal IGF2–p38 in bone cancer pain; the occlusion arm settles the pathway
+6. medRxiv — Vienna MDD immune/SERT-PET study: near-total null field, IL-13 the one survivor
+7. arXiv — BEAKER: 28 multimodal models, actionability 22.2, all below 35% IoU on affordance grounding
+8. arXiv — VirtualTrialHarness: 95.1% against 989 self-authored synthetic distractors
+9. arXiv — PRISM: 27/30 factual, 15/30 fit to send
+10. arXiv — biomedical KG grounding benchmark (critical closer)
+
+**Candidate funnel:** bioRxiv/medRxiv day sweep 11-01→11-08 (11-08 empty; day-files for 11-01→11-06 reused from the 11-07 run) → 75 relevance hits; Crossref by ISSN across 18 journals since 11-01 → 202 items; arXiv shared cache 500-capped covering only 11-03→11-05 → 22 bio+agentic hits. Total 289 candidates → 276 fresh (12 already shipped incl. 9 Nature-family, 1 seeded control correctly dropped). Final-roster gate re-run with a seeded control: dropped as expected.
+
+**Source notes for the log:**
+- jina cert clean; Nature via jina fine (`s41586-026-11229-5` and `s41380-026-03711-3` came back bodyless — paywall signature, first heading `## Data availability`).
+- bioRxiv `.full.pdf` via jina: 4 of 6 attempted succeeded on try 0; `2026.11.02.762920` (kainate partial agonists) and `2026.11.05.764603` (CSNK2A1-MeCP2) returned 305-byte Cloudflare replies on all three tries — retest, don't close.
+- Wiley/ASCPT (CPT:PSP, CPT) is a hard block: jina returns a 539-byte security-verification stub; only `psp4.70373` is in EPMC.
+- One self-inflicted error worth recording: my first candidate build collapsed whitespace on the journal lines, turning the key/title tab into a space, so the ledger matched nothing and the dedup falsely reported 0 drops. Caught by inspecting the dropped list rather than the count; rebuilt and re-ran.
+- A safety classifier stopped one turn mid-run while I was researching a clinical gene-therapy item. Per the standing rule I dropped that topic entirely rather than rewording it, and selected a different lead.
+
+Done. Today's **Receptor & Reason** episode is written and staged.
+
+**Deliverables** (in `podcasts/receptor-and-reason/scripts/`):
+- `2026-11-08-receptor-and-reason.md` — 10 items, 2,732 spoken words (~15 min, inside the 12–18 target)
+- `2026-11-08-receptor-and-reason.rss-item.xml` — validates as XML under an itunes-namespace wrapper, both `__LENGTH__`/`__DURATION__` placeholders present
+- `2026-11-08-receptor-and-reason.commit-msg`
+
+Ledger appended (166 episodes, 1,738 items). `SKIP_TTS=1` was confirmed as the first call of the run, so I ran no TTS, no R2 publish, no `feed.xml` edit, and no commit — `publish_pending.py` does those after batch TTS.
+
+Two things from this run worth your attention:
+
+**A safety classifier stopped a turn mid-research**, on a web-search result about a clinical gene-therapy item for refractory epilepsy. I applied the standing rule — pivoted the topic entirely rather than rewording — and the run finished clean with a different lead. Worth noting that item was ineligible under the full-text gate regardless, since NEJM returns only a JS challenge here. That's now the third distinct trigger class recorded for this show.
+
+**I introduced a dedup bug and caught it.** Cleaning Crossref markup, I collapsed whitespace across the whole candidate line, which destroyed the key/title tab separator — so the ledger filter matched nothing and reported a clean pass while nine already-shipped Nature-family papers sat in the pool. I found it only because I inspected the dropped list instead of trusting the count. Rebuilt and re-ran both gates with a seeded control, which dropped correctly. Memory updated so an empty dropped list is treated as an alarm rather than a pass.
+
+Five more preprints rendered *after* the roster was locked, including an AA-20/CDK5 lipophagy paper and the alpha-synuclein prevention platform-trial design — logged as first reads for tomorrow rather than a reason to rewrite a finished roster.
+=== 2026-11-08T02:56:18-08:00 done  receptor-and-reason (exit 0) ===
