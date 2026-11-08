@@ -6343,3 +6343,54 @@ I wrote both scripts and their stubs. `SKIP_TTS=1` was set, so nothing was voice
 
 The two leftover September 15 stubs are still in `scripts/`; I left them alone.
 === 2026-11-07T02:28:00-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-08T02:20:09-08:00 start calibr-briefing ===
+Both agents are still running. I'll pick up as soon as they report back.
+
+The FDA's Zolgensma communication checks out against the primary page. Still waiting on the AHA spotlight research.
+
+I've written both episodes for today. `SKIP_TTS` is set, so I only wrote the scripts and stubs: no audio, R2 upload, feed edit or commit. The orchestrator handles those after the batch audio run.
+
+**Headlines** (`2026-11-08-pharma-headlines`, about 1,210 words, roughly 6–7 minutes, a little over the show's 5-minute target): AHA's full HORIZON and ZEUS data; the FDA's Nov 6 statement confirming the Zolgensma vector inserted itself at or next to the GLI1 cancer gene; George Church leaving Radical Numerics over credit for Tabula Bioscience's work; BIO and two other industry groups suing to block Medicare's GLOBE pricing model; SITC data (Immunocore, Strand STX-001, Evaxion EVX-01); Arrowhead's plozasiran; and the week ahead.
+
+**Spotlight** (`2026-11-08-horizon-zeus-genetic-validation-spotlight`, about 1,500 words, roughly 8 minutes, at the top of the 5–8 minute range): pelacarsen cut lipoprotein(a) by 78% and ziltivekimab cut IL-6 by 76 points, and neither changed cardiovascular events (hazard ratios 1.02 and 0.99). The episode covers:
+- why trials of two genetically validated targets failed despite hitting those targets;
+- what that means for Amgen's and Lilly's Lp(a) drugs and for the next inflammation targets (IL-6, NLRP3);
+- STAT's argument about AI hype, with takeaways for Foresite and Calibr.
+
+Things to know before it goes out:
+- **Fact checks:** I checked the FDA Zolgensma page, the AHA HORIZON release, the HCPLive ZEUS write-up, the Ridker quotes on EurekAlert, and the Novartis program-discontinuation and Lloyd-Jones quotes on TCTMD against the sources myself. The remaining SITC, Arrowhead and Church/Radical details come from the research agents' cited sources.
+- **Church's "sleazy":** this appears only in an Endpoints headline. I couldn't find his own post, so the script attributes it to that headline.
+- **Left out:** PhRMA's separate GLOBE lawsuit and Radical's seed-round details, because I couldn't confirm them.
+- **Dedup:** none of the new items appeared in this show's earlier scripts. ZEUS and pelacarsen were covered before, but only at topline. The full NEJM/AHA data are new.
+
+**Candidate funnel**
+- **News feeds:**
+  - BioSpace: 20 items, none Sat/Sun.
+  - Endpoints: 24 items, 4 on Saturday.
+  - BioPharma Dive: 10 items, none Sat/Sun.
+  - STAT: 20 items, 5 Sat/Sun.
+  - GEN: 10 items, none Sat/Sun.
+  - Clinical Trials Arena: 10 items, none Sat/Sun.
+  - OncLive and Targeted Oncology: 30 items each, conference coverage over the weekend.
+  - Fierce Biotech and Fierce Pharma: 0 items (feeds dead again).
+- **Shortlist:**
+  - ★ Spotlight + headline: HORIZON/ZEUS at AHA — https://newsroom.heart.org/news/lp-a-horizon-trial-lp-a-fell-by-78-but-cardiovascular-outcomes-unexpectedly-neutral ; https://www.tctmd.com/news/full-lpahorizon-results-affirm-lack-pelacarsen-benefit-secondary-prevention
+  - ★ FDA Zolgensma insertional oncogenesis — https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-investigating-serious-risk-malignancy-linked-zolgensma-gene-therapy
+  - ★ Church / Radical Numerics / Tabula — https://endpoints.news/church-quits-role-at-ai-startup-radical-claims-sleazy-behavior-stole-credit-from-partner/
+  - ★ BIO GLOBE lawsuit — https://www.bio.org/press-release/bio-biocom-and-california-life-sciences-sue-block-cms-globe-rule
+  - ★ Immunocore brenetafusp + Kimmtrak — https://www.globenewswire.com/news-release/2026/11/06/3397782/0/en/immunocore-presents-promising-data-from-phase-1-2-trial-cohort-evaluating-brenetafusp-plus-kimmtrak-tebentafusp-tebn-in-metastatic-uveal-melanoma.html
+  - ★ Strand STX-001 — https://www.onclive.com/view/stx-001-produces-durable-systemic-responses-in-pd-1-resistant-melanoma
+  - ★ Evaxion EVX-01 — https://www.onclive.com/view/evx-01-plus-pembrolizumab-elicits-neoantigen-specific-t-cell-responses-in-advanced-melanoma
+  - ★ Arrowhead plozasiran / ARO-DIMER-PA — https://ir.arrowheadpharma.com/news-releases/news-release-details/arrowhead-pharmaceuticals-presents-plozasiran-data-highlighting
+  - Not used:
+    - Replimune RP1 quality-of-life analysis, afami-cel post hoc analysis, Marengo invikafusp (lower priority)
+    - Cleerly PARAMOUNT (numbers not verified)
+    - AHA blood-pressure trials (academic)
+    - CTX310 (not presented until Monday)
+- No Foresite-portfolio or AI-drug-discovery company news turned up in the window. I couldn't reach the foresitecap.com portfolio page to cross-check.
+
+Files are in `podcasts/calibr-briefing/scripts/`:
+- `2026-11-08-pharma-headlines.txt`
+- `2026-11-08-horizon-zeus-genetic-validation-spotlight.txt`
+- a `.rss-item.xml` and `.commit-msg` stub for each episode
+=== 2026-11-08T02:38:36-08:00 done  calibr-briefing (exit 0) ===
