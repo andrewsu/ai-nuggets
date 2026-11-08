@@ -6199,3 +6199,33 @@ Substantive shortlist:
 
 One process note worth flagging: the strongest item on the board today was a cross-show re-ship that my show-local dedup grep would have missed. I only caught it by grepping `podcasts/*/scripts/` for the arXiv id. I've recorded that in the run log alongside the rest of today's deferrals.
 === 2026-11-07T02:10:28-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-08T02:00:08-08:00 start biomedical-agentic-ai ===
+I wrote today's episode on EIN-RECAP. `SKIP_TTS=1` was set, so I only wrote the script and its two stub files. I didn't generate audio, publish, edit the feed or commit; `publish_pending.py` will do that after the batch TTS run.
+
+**Episode:** EIN-RECAP, a multi-agent summarizer of infectious-disease expert discussions that won every automated metric and lost the blinded clinicians. It's a medRxiv preprint posted 2026-11-06 from the University of Iowa and the IDSA Emerging Infections Network.
+- **Script:** `podcasts/biomedical-agentic-ai/scripts/2026-11-08-ein-recap-repetition-scores-as-thoroughness.md`, 953 spoken words (cap is 1,150).
+- **Stubs:** `.rss-item.xml`, which parses as valid XML, and `.commit-msg`. I confirmed the DOI exists through the bioRxiv/medRxiv API.
+- **Full text:** I read the whole 19-page PDF, downloaded directly from medRxiv.
+- **Checks:** a web search found no earlier coverage of EIN-RECAP, and its name doesn't appear in any show's past scripts.
+- **The take:** the elaborate pipeline adds factual, counterfactual and community agents plus critique, ranking and refinement passes. That produces repetition, and ROUGE, BERTScore and an LLM judge all score repetition as better. Blinded clinicians ranked it last: 31 redundancy complaints against 1 each for the simple pipelines, and twice the hallucination flags of the best simple pipeline (8 vs 4).
+
+**Candidate funnel**
+- **bioRxiv/medRxiv** (11-05 to 11-08, fetched day by day, both servers): 712 records, 47 keyword hits among new preprints, about 5 on-brief. It was a thin Sunday, and 11-08 was empty on both servers.
+- **arXiv:** the shared cache has 500 entries, the same as yesterday (11-03 to 11-05; arXiv posts nothing new over the weekend). 294 keyword hits, about 8 on-brief. Five were already shipped by this show or receptor-and-reason (including 2611.05907, 05890, 07653 and 07847).
+- **PubMed** (E-utilities, last 5 days by entry date): 203 hits, about 8 on-brief. "Verifiable Agentic Science on Public Infrastructure" is ORBIT, which shipped on 10-29.
+- **News and launches:** nothing found in the last 3 days. **Funder press pages:** I didn't check ARPA-H, NIH, NSF or HHS this run.
+- **ChemRxiv:** I didn't search it this run.
+
+**Shortlist**
+- **CHOSEN:** EIN-RECAP — https://www.medrxiv.org/content/10.64898/2026.11.05.26367381v1
+- RIVER, multi-agent enzyme–reaction retrieval — https://arxiv.org/abs/2611.07757
+- Agentic pipeline for large-scale EHR queries (Boston Children's) — https://www.medrxiv.org/content/10.64898/2026.11.05.26367378v1
+- SSAF-T/CeLLMan, agentic segmentation-free cell typing — https://www.biorxiv.org/content/10.64898/2026.11.05.764509v1
+- BEAKER, a benchmark for self-driving chemistry labs — https://arxiv.org/abs/2611.06911
+- VirtualTrialHarness — https://arxiv.org/abs/2611.05551
+- LLMs on heterogeneous biomedical knowledge graphs — https://arxiv.org/abs/2611.08315
+- PharmaAgent, high- vs low-autonomy vancomycin dosing (PMID 42990594; I didn't check its posting date)
+- Simple Agents Outperform Experts in Biomedical Imaging Workflow Optimization (PMID 42997661)
+
+I added these runners-up to the rolling deferral list in memory for the next few days.
+=== 2026-11-08T02:06:06-08:00 done  biomedical-agentic-ai (exit 0) ===
