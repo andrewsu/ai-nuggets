@@ -4189,3 +4189,27 @@ Both of Sunday's episodes are written. `SKIP_TTS=1` was set, so I wrote scripts 
 
 One thing worth flagging beyond the scripts: the lead preprint's declaration of interests lists Kinzler, Vogelstein and Papadopoulos as equity holders in **Clasp, CagePharma and Winnow** — three Blackbird positions — so that item is a relationship question for Matt and Eddie rather than a licensing lead, and I wrote it that way.
 === 2026-11-08T02:29:06-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-09T02:10:16-08:00 start blackbird-brief ===
+Episode written. SKIP_TTS=1, so no TTS, no R2 publish, no feed edit, no commit — stubs only, as the pipeline requires.
+
+**Published artifacts (pending batch TTS + orchestrator commit):**
+- `podcasts/blackbird-brief/scripts/2026-11-09-portfolio-watch.md` — ~1,950 spoken words (≈9 min), in line with recent episodes
+- `…​.rss-item.xml` (validated as XML, `__LENGTH__`/`__DURATION__` placeholders) and `…​.commit-msg`
+- Ledger appended: 4 keys under `2026-11-09-portfolio-watch` (125 episodes, 677 items)
+- `memory/blackbird-portfolio.md` updated in place — four entries revised (Neuropsych NewCo, Aletira, Winnow, Clasp), `_Last update:_` bumped on each, no dated log appended
+
+**Candidate funnel**
+- BioSpace, 9 section pages fetched directly with a Safari UA (no r.jina.ai needed today; jina TLS was clean but unnecessary). 145 candidate links → **118 fresh** after the dedup filter (25 already shipped, 1 title-match under a second URL). Per-article `datePublished` parsed from embedded JSON to separate genuinely-Monday items from the evergreen section-page tail; 34 portfolio-adjacent articles fetched in full.
+- Dedup control term (Zolgensma tumors, shipped 11-06) included in **both** the batch pass and the final-roster pass; caught both times.
+- No source failures.
+
+**Shortlist (chosen marked ✓)**
+- ✓ AbbVie/Cerevel vs BMS/Karuna three-year retrospective — BioSpace 11-09 — LEAD (GPR52)
+- ✓ FDA rare-disease framework interview, Mikhail + Davis — BioSpace 11-09 (Aletira/NuGate)
+- ✓ Kardigan KATALYST-AV enrollment + protocol amendment — 11-08 (endpoint discipline)
+- ✓ J&J pasritamig + JNJ-9401 dual-antigen bispecific, SITC — 11-08 (Clasp)
+- ACR Convergence autoimmune wave (Cabaletta rese-cel, CRISPR zugo-cel, Cullinan velinotamig, Immutep IMP761) — **drafted as the lead, then withdrawn**; the Winnow reads are recorded in the portfolio file instead, so the analysis is preserved even though it isn't in today's audio
+- Scanned, no Blackbird line: Vir hepatitis delta, Antengene, KaliVir, Aqtual, argenx ALKIVIA, J&J nipocalimab/icotrokinra, Arrowhead, Mineralys, CIDEB siRNA, BMS Camzyos pediatric; calendar/earnings notices ignored
+
+One thing to flag honestly: I started the episode with the ACR autoimmune data as the lead, and that draft was stopped by a safety classifier mid-write. Rather than reword it, I repointed the episode onto a different spotlight — per the standing rule — and the four items above are all independently verified and full-text read.
+=== 2026-11-09T02:21:17-08:00 done  blackbird-brief (exit 0) ===
