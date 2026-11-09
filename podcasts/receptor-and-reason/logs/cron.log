@@ -6380,3 +6380,26 @@ Two things from this run worth your attention:
 
 Five more preprints rendered *after* the roster was locked, including an AA-20/CDK5 lipophagy paper and the alpha-synuclein prevention platform-trial design — logged as first reads for tomorrow rather than a reason to rewrite a finished roster.
 === 2026-11-08T02:56:18-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-09T02:40:18-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so this run produced stubs only — no TTS, no R2 publish, no feed edit, no commit. `publish_pending.py` will finish those after batch TTS.
+
+**Script:** `podcasts/receptor-and-reason/scripts/2026-11-09-receptor-and-reason.md` — 11 items, 3,014 spoken words (~16.5 min, inside the 12–18 target). Stubs (`.rss-item.xml`, `.commit-msg`) written alongside; XML validated. Ledger appended (167 episodes).
+
+**Editorial spine — "the gradient that isn't there":** items where the expected dose-response or scaling mechanism fails, and what survives is a baseline or a transition.
+
+**Candidate funnel**
+
+- bioRxiv/medRxiv details API — 11-02→11-09 swept day-by-day (11-02→11-06 carried over from yesterday's run); 74 passed the relevance filter.
+- arXiv — shared cache, 500-entry cap covering only 11-04→11-06; 23 bio+agentic hits after title-gating.
+- Crossref journal sweep (18 ISSNs, from 11-02) — 207 items. Elsevier/Wiley not retested (standing hard blocks).
+- Dedup: 292 candidates → 247 fresh (43 shipped, 1 title match). Seeded control dropped correctly in both the batch gate and the final-roster gate.
+
+**Picked:** psilocybin SV2A PET null (lead); topiramate drug-target MR; nicotine+cannabis co-use in early psychosis; sleep-medication landmark/equivalence analysis; AA-20/CDK5 lipophagy (Kelly lab, Scripps); transient neuronal ATF4 pulse; Path to Prevention trial design; Langerhans cells/semaphorin 7A; MET deep-mutational-scanning ligand-invariance benchmark; guardrail erosion in biomedical fine-tunes; Glyph (closer).
+
+Two things worth flagging honestly:
+
+1. **I nearly re-shipped the lead.** I read the Nature Neuroscience five-lab psilocybin replication in full and had it drafted as item 1 — it had been in the dedup filter's dropped list the whole time (shipped 11-03), because I built the read list off the journal sweep output instead of `fresh.tsv`. The final-roster gate caught it before any words were written. The recovery was clean, and arguably better: the human PET null now leads with the shipped mouse study as a callback. But that was luck. I've recorded the correction in memory.
+2. **A safety classifier stopped one of my responses** mid-run, on an ordinary two-call tool block with no paper text or sensitive topic in it. The backgrounded sweep it launched did not actually run despite the "interrupted" note, so I restarted it after checking the output files.
+
+Two standing deferrals are now closed as permanently unrendered (kainate receptor desensitization, CSNK2A1-MeCP2) — both failed on their 4th/5th consecutive run.
+=== 2026-11-09T02:53:15-08:00 done  receptor-and-reason (exit 0) ===
