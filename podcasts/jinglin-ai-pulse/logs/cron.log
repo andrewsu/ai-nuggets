@@ -4748,3 +4748,44 @@ Sources:
 - [TechCrunch – Trajectory raises $45M](https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/)
 - [Windows Central – Microsoft Copilot leadership reshuffle](https://www.windowscentral.com/artificial-intelligence/microsoft-copilot/microsofts-copilot-ai-leadership-reshuffle-shows-the-company-is-building-toward-an-openai-free-future)
 === 2026-11-08T02:36:43-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-09T02:30:17-08:00 start jinglin-ai-pulse ===
+I've written today's episode, "metered", as a script plus the two stub files the batch publisher needs. `SKIP_TTS=1` was set, so I didn't generate audio, publish, edit `feed.xml` or commit; `publish_pending.py` does those after batch TTS.
+
+Files:
+- `podcasts/jinglin-ai-pulse/scripts/2026-11-09-metered.md` (about 2,450 spoken words, roughly 13–14 minutes)
+- `podcasts/jinglin-ai-pulse/scripts/2026-11-09-metered.rss-item.xml` (the XML parses)
+- `podcasts/jinglin-ai-pulse/scripts/2026-11-09-metered.commit-msg`
+
+The theme is that AI use is now metered, and the weekend's threads were all arguments about the meter:
+- **Lead:** a 458K-view post claims Opus 5.5's thinking changed on November 3. Hacker News pointed out that Claude Code only shows a summary of the thinking, so a new summarizer would produce the same change. A pre-registered daily benchmark called LiveNerf has seen no change across three 10-day windows, though it admits it can't tell Opus 5 from Opus 5.5.
+- **Other threads:** Goldman limiting Claude Code to its engineers, and llama-modchip running a 284B DeepSeek model in 64GB of RAM with no GPU.
+- **Money:** Apple cutting engineers' daily AI caps from $300 to $200, Accenture funding $29 a month of Claude per person, and Nvidia's board opening an investigation. I kept the Nvidia item to the company's own statements and left out the personal details.
+- **Deep cut:** Jamin Ball on Latent Space reading Anthropic's IPO filing. Only about 27% of its compute serves customers, revenue grew 14x while serving compute grew 2.3x, and the $108B convertible-note line isn't debt.
+
+The script says up front that the episode is mostly about Anthropic and was drafted by Claude.
+
+Things you might want to know:
+- **Transcript gaps:** the Ball episode has no published transcript, so I transcribed the audio with Mistral. The first 15 minutes failed three times on capacity errors, so the episode is drawn from minutes 15 to 102. The transcript has no speaker labels, so I only name Ball on lines tied to his own charts. I attributed one line to "one of them" because I couldn't tell who said it.
+- **Dropped:** a reported $3.4B Anthropic gas-power deal. FT is paywalled and a web search ([TechRadar](https://www.techradar.com/pro/anthropic-says-it-will-be-burning-lots-of-natural-gas-to-feed-the-ai-boom), [NBC](https://nbcnews.com/tech/tech-news/anthropic-cover-costs-electricity-price-increases-data-centers-rcna258554)) didn't confirm the figure.
+- **Dedup:** I checked every item on the final roster against past scripts, with a known-shipped term (MaxxBench) as a control. Nothing overlapped.
+
+**Candidate funnel**
+- **Hacker News** (stories over 40 points since Nov 7 06:00): 75 scanned, about 14 about AI.
+  - ✅ Is Opus 5.5 nerfed?: https://x.com/shanemelaugh/status/2119192075505893695 (+ https://github.com/ninjahawk/livenerf)
+  - ✅ Goldman pulling Claude Code: https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers
+  - ✅ llama-modchip: https://github.com/synchopate/llama-modchip
+  - ✅ Apple $200 daily AI budget: https://finance.yahoo.com/technology/ai/articles/apple-cuts-internal-ai-usage-194500447.html
+  - ✅ I'm not convinced the AI bubble exists: https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html
+  - ✅ Nvidia board statement: https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors
+  - ✗ Goodbye Claude, hello Pi (from Sept 21), Apple/MaxxBench/AI Frontiers (covered Nov 8), Agent memory OpenTelemetry, AI brain fry, Asahi going GPL, meat-proxy essay, Next-Concept Modeling (abstract only), WSJ drugmaker CEOs (WSJ not readable), Anthropic gas deal (FT paywall, not confirmed)
+- **X** (read via fxtwitter): ✅ Melaugh's tweet and chart image.
+- **Money:** ✅ Apple (Bloomberg via Yahoo), ✅ Accenture $29 cap: https://finance.yahoo.com/technology/ai/articles/accenture-just-capped-employees-claude-132727075.html, ✅ Nvidia. ✗ Palo Alto/Clutch $500M (TechCrunch page came back thin), ✗ OpenAI $11B (covered Nov 8).
+- **Podcasts:**
+  - ✅ Latent Space, Jamin Ball, Anthropic S-1 (Nov 7; transcribed myself, minutes 15–102): https://www.youtube.com/watch?v=P735f1xlpL0
+  - ✗ Latent Space Mihail Eric (Nov 8), TWIML Richard Socher (Nov 3), No Priors Vlad Tenev, Interconnects open-model economy, Hard Fork, Cognitive Revolution episodes (covered earlier), Dwarkesh (Caro, not AI)
+- **Sources that failed:**
+  - AINews's RSS feed showed no recent items, so I read the index page instead.
+  - The latent.space Substack API returned "Endpoint not found."
+  - Mistral transcription hit 429 errors on the first segment three times; the last segment succeeded on retry.
+  - The first command was blocked for including a paywalled FT URL; I re-ran it without that link.
+=== 2026-11-09T02:40:34-08:00 done  jinglin-ai-pulse (exit 0) ===
