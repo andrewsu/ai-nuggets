@@ -6229,3 +6229,35 @@ I wrote today's episode on EIN-RECAP. `SKIP_TTS=1` was set, so I only wrote the 
 
 I added these runners-up to the rolling deferral list in memory for the next few days.
 === 2026-11-08T02:06:06-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-09T02:00:16-08:00 start biomedical-agentic-ai ===
+I wrote today's script and its two stubs. `SKIP_TTS=1` was set, so I didn't run TTS, publish, edit the feed or commit; the orchestrator does those.
+
+**Episode:** "Cleared-catalog radiology agent — what an orchestrator can report with only FDA-cleared tools, and why 'not looked for' gets written as 'not there'"
+- **Paper:** https://arxiv.org/abs/2611.09836 (posted 11-06, from Raidium). I read the full text, about 7k words.
+- **Files:** in `podcasts/biomedical-agentic-ai/scripts/`: `2026-11-09-radiology-agent-cleared-catalog-absence-written-as-negative.md` (976 spoken words, under the 1150 cap), plus `.rss-item.xml` (valid XML, with `__LENGTH__`/`__DURATION__` placeholders) and `.commit-msg`.
+- **The take:**
+  - The agent may only call tools covering the ~2,000 finding classes behind 1,164 FDA-cleared radiology AI devices, and every tool answer is simulated as correct. It still recovers only 29% of actionable findings.
+  - 62% of the misses are common findings with no cleared tool for that scan type (e.g. pleural effusion on CT).
+  - 32% are tools the agent was offered and never called.
+  - In one worked example, a missing tool shows up in the report as "no pleural effusion identified."
+
+**Candidate funnel**
+- **bioRxiv/medRxiv** (details API, 11-06..11-09, day by day): 486 records, 30 keyword hits at v1. Only one hit was new since yesterday's sweep; 11-07 and 11-09 were effectively empty.
+  - Agentic EHR query pipeline (medRxiv `10.64898/2026.11.05.26367378`): carryover, aging out of the window.
+  - SSAF-T/CeLLMan (`10.64898/2026.11.05.764509`): carryover.
+  - Automahout, autonomous cell tracking (`10.64898/2026.11.04.764293`).
+- **arXiv** (shared cache, 500 entries covering 11-04..11-06):
+  - **CHOSEN:** Can Agentic Systems Close the Gap in Radiology with Production AI Tools? — https://arxiv.org/abs/2611.09836
+  - Glyph, an interpretability engine for clinical discovery (Stanford) — https://arxiv.org/abs/2611.08922 (full text pulled; strongest runner-up)
+  - SmartBloch-Agent, MRI sequence design — https://arxiv.org/abs/2611.09413
+  - RIVER, enzyme-reaction retrieval (2611.07757): carryover.
+  - Excluded: 2611.08315 (LLMs over heterogeneous biomedical knowledge graphs), already shipped by receptor-and-reason on 11-08.
+- **PubMed** (entry date 11-04..11-09): 35 hits, none fresh, readable and on-brief. A Circ CQO comparison of agentic vs. clinician-written hospital-course narratives (PMID 42993583) was not tested for full text.
+- **News/funders:** a web search found no in-window biomedical agent launch, and the ARPA-H and NIH news pages had no AI items.
+- **ChemRxiv** and the NSF and HHS pages were not checked this run.
+- **Dedup:** I grepped every show's scripts for the arXiv ID and the system names, using a control term that is known to be shipped. Nothing matched.
+
+I also added today's run and open deferrals to the show's rolling memory note.
+
+The bioRxiv sweep monitor has expired, as expected. The sweep finished earlier and the episode stubs are already written, so nothing else is needed.
+=== 2026-11-09T02:12:30-08:00 done  biomedical-agentic-ai (exit 0) ===
