@@ -6394,3 +6394,38 @@ Files are in `podcasts/calibr-briefing/scripts/`:
 - `2026-11-08-horizon-zeus-genetic-validation-spotlight.txt`
 - a `.rss-item.xml` and `.commit-msg` stub for each episode
 === 2026-11-08T02:38:36-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-09T02:20:17-08:00 start calibr-briefing ===
+I wrote both of today's Calibr episodes. `SKIP_TTS=1` was set for this run, so I only wrote the scripts and the stubs next to them. I didn't run TTS, upload to R2, edit `feed.xml` or commit; the batch job does those. Both RSS stubs parse as valid XML once the `itunes:` namespace is declared, as it is in the feed.
+
+**Files in `podcasts/calibr-briefing/scripts/`:**
+- `2026-11-09-pharma-headlines.txt` (~1,160 words)
+- `2026-11-09-vir-eclipse-hepatitis-delta-spotlight.txt` (~1,590 words)
+- an `.rss-item.xml` and a `.commit-msg` stub for each
+
+**Spotlight: Vir's ECLIPSE 1 trial in hepatitis delta (Phase 3, reported Sunday evening at the AASLD liver meeting).** I read the full press releases for ECLIPSE 1 and for Vir's Phase 2 SOLSTICE trial, HCPLive's write-up of the presentation, and Vir's Q3 report PDF.
+- **Main result:** 44% of patients reached the primary endpoint (undetectable virus plus a normal liver enzyme), and 79% had undetectable virus.
+- **Off-treatment data:** all 10 patients who stopped treatment in SOLSTICE stayed undetectable 12 weeks later. Only one has been followed past a year.
+- **Competition:** Gilead's Hepcludex and Mirum's brelovitug.
+- **Caveats in the script:** the control arm was untreated and measured at 12 weeks, versus 48 weeks on drug. There is also a gap between 79% undetectable virus and 53% with a normal liver enzyme.
+- **No analyst notes yet:** the episode was written before Vir's 8:30 ET call, so the only analyst view is Leerink's from September, when Mirum read out.
+
+**Candidate funnel**
+- **Sources:** Endpoints, BioPharma Dive, STAT, GEN, Clinical Trials Arena, OncLive, BioSpace news, Targeted Oncology, BioSpace press releases and the PR Newswire health feed (~210 items in total, 43 dated over the weekend).
+- **Source failures:**
+  - Fierce Biotech and Fierce Pharma RSS returned 0 items, and the Fierce homepage failed through the jina reader proxy.
+  - TCTMD RSS and the GlobeNewswire RSS were both empty.
+  - The Endpoints article on Vir was registration-walled, so I used the Vir release and HCPLive instead.
+- **Shortlist** (★ = used):
+  - ★ Vir ECLIPSE 1 + SOLSTICE (spotlight): https://www.biospace.com/press-releases/vir-biotechnology-announces-primary-endpoint-met-in-pivotal-phase-3-eclipse-1-trial-for-elebsiran-and-tobevibart-in-chronic-hepatitis-delta
+  - ★ Regeneron CIDEB siRNA (fatty liver, published in NEJM): https://www.biospace.com/press-releases/cideb-sirna-normalizes-liver-fat-and-improves-liver-injury-markers-in-masld-patients-as-highlighted-at-aasld
+  - ★ Pierre Fabre–XtalPi AI discovery deal: https://www.prnewswire.com/news-releases/laboratoires-pierre-fabre-and-xtalpi-announce-an-ai-driven-collaboration-focused-on-drug-discovery-302932390.html
+  - ★ J&J pasritamig + JNJ-9401 in prostate cancer: https://www.prnewswire.com/news-releases/johnson--johnson-reports-73-psa-response-rate-with-investigational-pasritamig-based-immunotherapy-combination-in-advanced-prostate-cancer-302932750.html
+  - ★ OncoC4 cesalatamig in lung cancer: https://www.onclive.com/view/cesalatamig-monotherapy-shows-dose-dependent-activity-in-pd--l-1-inhibitor-experienced-nsclc
+  - ★ Innovent tafolecimab without a statin: https://www.biospace.com/press-releases/innovent-announces-phase-3-credit-5-study-met-primary-endpoint-sintbilo-tafolecimab-injection-as-first-line-monotherapy-treatment-for-hyperlipidemia-demonstrated-potent-lipid-lowering-efficacy
+  - ★ Cardiac-arrest training trial, no survival gain (STAT): https://www.statnews.com/2026/11/08/sudden-cardiac-arrest-survival-cpr-defibrillation-training/
+  - ✗ GEN on Nurix after Sanofi dropped its STAT6 degrader: already the 11-05 spotlight. https://www.genengnews.com/topics/translational-medicine/stockwatch-nurix-nosedives-as-sanofi-halts-phase-i-immunology-candidate/
+  - ✗ BioSpace on AbbVie's and BMS's neuro acquisitions: analysis, not news. https://www.biospace.com/drug-development/with-an-approval-apiece-the-verdict-is-still-out-on-abbvies-and-bms-twin-neuro-buys
+  - ✗ Rhythm/AstraZeneca and Karyopharm: already covered 11-04 to 11-06.
+  - ✗ AHA's CTX310, ATTAIN-OSA and SURMOUNT/SYNCHRONIZE readouts: presented Monday morning after this run, so they are in the look-ahead. Mineralys lorundrostat, the Wegovy liver data and Antengene were also left out (lower priority).
+- No Foresite portfolio news turned up.
+=== 2026-11-09T02:31:53-08:00 done  calibr-briefing (exit 0) ===
