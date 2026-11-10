@@ -6429,3 +6429,38 @@ I wrote both of today's Calibr episodes. `SKIP_TTS=1` was set for this run, so I
   - ✗ AHA's CTX310, ATTAIN-OSA and SURMOUNT/SYNCHRONIZE readouts: presented Monday morning after this run, so they are in the look-ahead. Mineralys lorundrostat, the Wegovy liver data and Antengene were also left out (lower priority).
 - No Foresite portfolio news turned up.
 === 2026-11-09T02:31:53-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-10T02:20:11-08:00 start calibr-briefing ===
+I wrote both of today's Calibr scripts and their RSS and commit-message stubs. `SKIP_TTS=1` was set, so I didn't run TTS, publish, edit the feed or commit; the batch orchestrator does those steps. Both RSS item stubs parse as valid XML once the `itunes` namespace is declared, and both have the `__LENGTH__` and `__DURATION__` placeholders. The spoken text has no URLs or markdown.
+
+**Files in `podcasts/calibr-briefing/scripts/`:**
+- `2026-11-10-pharma-headlines.txt` (1,257 words), plus `.rss-item.xml` and `.commit-msg`
+- `2026-11-10-bayer-sunharbo-factor-xia-approval-spotlight.txt` (1,617 words), plus `.rss-item.xml` and `.commit-msg`
+
+**Headlines (8 items):**
+- The FDA approved Bayer's Sunharbo (asundexian, a Factor XIa inhibitor); this is the spotlight teaser.
+- argenx is buying Unnatural Products for $550M upfront plus up to $595M in milestones.
+- Third Rock has a partnership worth up to $2.16B with Funnel Biosciences. This is headline-only: Endpoints was the only source and I couldn't find any other coverage. The same story also mentions WuXi AppTec coming off the Defense Department's Chinese military list.
+- The FDA added an optic-nerve warning (NAION) to the labels of all GLP-1 drugs.
+- Lilly's Foundayo succeeded in sleep apnea, and Boehringer/Zealand's survodutide passed its heart-safety trial.
+- Ionis cut its Tryngolza forecast and the stock fell about 25%.
+- Compass completed its COMP360 filing.
+- Oyster raised $60M for tau degraders.
+
+**Spotlight:** It covers what the Sunharbo label allows and leaves out, and the 6.2% vs 8.4% stroke result. It also covers the timing problem: more bleeding in the first 90 days, while the stroke benefit only shows up later. Also included are the $748.50/month price and the competing programs: milvexian's stroke trial reached its primary completion date in October, Novartis has abelacimab, and Regeneron registered a stroke Phase 3 that starts November 20. It builds on the August milvexian spotlight.
+
+**Candidate funnel:**
+- **Feeds:** Endpoints (24 items), BioPharma Dive (10), STAT (20), GEN (10), Clinical Trials Arena (10), OncLive (30), TargetedOnc (30) and BioSpace (20) all worked. Fierce Biotech and Fierce Pharma RSS returned empty Cloudflare pages, so I found their stories through Google News instead.
+- **Read in full:** the FDA release, HCPLive, NeurologyLive, pharmaphorum, BioPharma Dive (via jina), and the readable parts of BioSpace and STAT+.
+- **Shortlisted but dropped:**
+  - Zura's Phase 2 failure (no detail beyond the paywall)
+  - BIO's BioAdvance plan
+  - Bill Ackman's brain institute (paywalled)
+  - Heron/CorMedix
+  - the gedatolisib filing acceptance
+  - Crinetics layoffs
+- **Chosen:** spotlight = Sunharbo ([FDA](https://www.fda.gov/news-events/press-announcements/fda-approves-first-factor-xla-inhibitor-help-prevent-stroke-certain-adults-high-risk), [BioPharma Dive](https://www.biopharmadive.com/news/bayer-sunharbo-asundexian-fda-approve-stroke-factor-xi/872837/)); headlines = the eight items above.
+
+Checking against earlier episodes caught one error before it shipped. My first draft said Tryngolza was still approved only for the rare genetic disease (FCS). A September script records that its label was expanded in June to severe hypertriglyceridemia, so I corrected the line.
+
+I didn't see any Foresite portfolio news in Monday's coverage. I also added a dated note to the news-source memory file: HCPLive and NeurologyLive RSS carry full trial numbers for approvals, and stories found only on Endpoints should run as headline-only.
+=== 2026-11-10T02:26:56-08:00 done  calibr-briefing (exit 0) ===
