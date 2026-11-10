@@ -4213,3 +4213,51 @@ Episode written. SKIP_TTS=1, so no TTS, no R2 publish, no feed edit, no commit �
 
 One thing to flag honestly: I started the episode with the ACR autoimmune data as the lead, and that draft was stopped by a safety classifier mid-write. Rather than reword it, I repointed the episode onto a different spotlight — per the standing rule — and the four items above are all independently verified and full-text read.
 === 2026-11-09T02:21:17-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-10T02:10:10-08:00 start blackbird-brief ===
+I've written today's Portfolio Watch script, `2026-11-10-portfolio-watch` (about 2,000 spoken words), and it's waiting for the batch job. Because `SKIP_TTS=1` was set, I followed PIPELINE.md and stopped before audio: no TTS, no R2 upload, no `feed.xml` edit and no commit. `scripts/publish_pending.py` does those steps after batch TTS.
+
+**What's in the episode**
+- **Lead (Lieber GPR52 company):** J&J's venture arm (JJDC) and SV Health's Dementia Discovery Fund led a $100M Series C in Delix, which makes a non-hallucinogenic depression drug that patients take at home. The August term sheet reportedly gave J&J the right to negotiate first, after Phase 2 data, for the drug or the whole company. The closing release doesn't mention that clause, and the script says so.
+  - The takeaway: a pharma venture arm is a realistic Series A lead for the GPR52 company.
+  - JJDC also co-founded Rapport with Third Rock.
+  - If we accept a first-negotiation clause, the terms to fight over are how long it lasts and what data triggers it.
+- **Item 2:** argenx is buying Unnatural Products, a peptide discovery platform, for $550M cash upfront plus up to $595M in milestones, after two years of collaboration and a minority stake. Source is argenx's SEC filing. The script frames that sequence as the exit path our platform companies should plan for, and adds argenx to Winnow's list of potential partners.
+- **Item 3 (NuGate):** NuNerve's ALS drug NUN-004 is entering a 75-patient randomized Phase 2. The script reads it as a small signal-finding trial, not a registration study. It also points out that a patient charity funded the program all the way to Phase 2.
+- **Item 4, headline only:** Third Rock has a partnership worth up to $2.16B with Funnel Biosciences, a Chinese AI biologics company. Endpoints is paywalled and I found no company release, so the script flags the size as unconfirmed.
+
+**Files written**
+- In `podcasts/blackbird-brief/scripts/`: the script, `.rss-item.xml` (checked that it parses, with `__LENGTH__`/`__DURATION__` placeholders) and `.commit-msg`.
+- `state/shipped.jsonl`: four keys appended; the ledger now holds 126 episodes.
+- `memory/blackbird-portfolio.md`: the Neuropsych NewCo entry is updated in place with the Delix item and its date bumped.
+
+**Candidate funnel**
+- **Dedup:** 19 candidates went in and 18 came out. The one dropped was Zolgensma, which I included as a known repeat to check the filter. A name search of past scripts also excluded Nurix, which ran 11-05 and 11-06.
+- **Sources:**
+  - BioSpace sections and press releases: readable.
+  - BioPharma Dive: the RSS feed works, but every article returns a block page.
+  - Endpoints and STAT: paywalled.
+  - Fierce: blocked by curl, and the r.jina.ai proxy is refusing the site.
+  - Google News RSS: used to find readable copies of paywalled stories.
+  - SEC EDGAR: the argenx filing.
+- **Chosen:**
+  - Delix: https://qz.com/johnson-johnson-delix-psychedelic-depression-100-million-110926
+  - argenx: https://www.sec.gov/Archives/edgar/data/0001697862/000110465926124060/tm2629301d2_ex99-1.htm
+  - NuNerve: https://www.biospace.com/press-releases/australian-therapy-aimed-at-halting-mnd-progression-and-restoring-function-advances-to-national-phase-2-trial
+  - Third Rock/Funnel: https://endpoints.news/third-rock-enters-2b-partnership-with-ai-focused-chinese-biotech/
+- **Scanned, not selected:**
+  - Oyster ($60M, tau degraders)
+  - Septerna Q3
+  - Xenon Q3 (depression Phase 3 results due in December; recheck then)
+  - Annexon Q3
+  - Compass psilocybin filing
+  - Zura
+  - Heron/CorMedix
+  - BIO's plan to keep the US ahead of China
+  - Ionis Tryngolza
+  - Ackman brain institute
+  - Bayer asundexian
+  - AHA readouts
+  - GLP-1 eye-disease label
+
+I also added a dated note to my persistent memory: Google News RSS search finds readable copies of paywalled stories, and BioPharma Dive articles are now blocked.
+=== 2026-11-10T02:18:03-08:00 done  blackbird-brief (exit 0) ===
