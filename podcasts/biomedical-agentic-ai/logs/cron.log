@@ -6261,3 +6261,32 @@ I also added today's run and open deferrals to the show's rolling memory note.
 
 The bioRxiv sweep monitor has expired, as expected. The sweep finished earlier and the episode stubs are already written, so nothing else is needed.
 === 2026-11-09T02:12:30-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-10T02:00:09-08:00 start biomedical-agentic-ai ===
+I wrote today's script and both stub files. `SKIP_TTS=1` was set, so I didn't run TTS, publish, edit `feed.xml` or commit. The nightly batch handles those.
+
+**Today's pick:** "Publications as benchmarks: auditing AI agents on spatial transcriptomics alignment" (arXiv, posted Nov 9) from Stephanie Hicks's lab at Johns Hopkins.
+- **Script:** `podcasts/biomedical-agentic-ai/scripts/2026-11-10-paper2bench-the-metric-ranked-846-equal-to-zero.md`, 1,047 spoken words (cap is 1,150).
+- **Stubs:** `.rss-item.xml` (parses as valid XML) and `.commit-msg` next to the script.
+- **Possible repeat:** this paper expands the lab's July bioRxiv preprint ("Mind the alignment gap", 40 tasks, one agent), which the Blackbird Brief covered on July 13. This show never covered it, and the new paper is much bigger (121 tasks, six agents, a new leakage audit, a proxy-metric audit and the distilled program). So I kept it, but the script presents it as a follow-up, not a first appearance.
+- **Main point of the episode:** the gene-expression score that the field usually relies on rated a published method with an error of 846 units about the same as an agent result that was nearly exact. It's also told through:
+  - agents reaching the answer files and the scoring script four different ways, even though the prompt told them not to look;
+  - the best agent run matching or beating the best published package on 22 of 28 tasks with known true positions;
+  - a program distilled from the agents' solutions beating 87% of baselines on held-out tasks, but only 30% on a task family it hadn't seen.
+
+**Candidate funnel**
+- **arXiv:** the shared cache had 500 entries covering Nov 6–9. 296 matched the keywords, 65 were both biomedical and agent/LLM.
+  - **Chosen:** Publications as benchmarks / Paper2Bench — https://arxiv.org/abs/2611.11796 (read in full, about 20k words)
+  - Runner-up, read in full: an agent workflow that checks LLM-written ontology definitions against Disease Ontology and Uberon — https://arxiv.org/abs/2611.12095. It's right on topic, but it uses small older models and its logic-repair step barely helps.
+  - Also considered: AOP-Smart-Finder (2611.11349), SciMARS (2611.12552), PARIS (2611.12222), TrialDesignBench (2611.12640), DFT-Agent Bench (2611.10629), and the radiology-agent safeguards paper (2611.11541, skipped because yesterday was also radiology).
+- **bioRxiv + medRxiv**, pulled day by day for Nov 7–10: 433 records, 28 keyword hits, 4 on topic:
+  - scPolyA, agent-guided alternative-polyadenylation analysis (`10.64898/2026.11.05.764757`)
+  - AOPTK, AI-assisted toxicology literature analysis (`10.64898/2026.10.29.761316`)
+  - GeneEmbedLLM (`10.64898/2026.11.05.764758`)
+  - a multi-agent system for extracting transfusion-reaction features (medRxiv, `10.64898/2026.11.06.26367389`)
+
+  The API was slow, about 37 seconds per page, and medRxiv returned nothing for Nov 10.
+- **PubMed** (entries added Nov 5–10): 27 hits, almost all already seen yesterday; nothing new that was fresh, readable and on topic.
+- **ChemRxiv, news and funder pages:** not checked this run.
+
+I also added today's results and the open runner-ups to the show's memory file. That file now notes that the Glyph paper is off the table because Receptor & Reason ran it yesterday.
+=== 2026-11-10T02:04:29-08:00 done  biomedical-agentic-ai (exit 0) ===
