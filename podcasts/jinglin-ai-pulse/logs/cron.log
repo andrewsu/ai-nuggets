@@ -4789,3 +4789,48 @@ Things you might want to know:
   - Mistral transcription hit 429 errors on the first segment three times; the last segment succeeded on retry.
   - The first command was blocked for including a paywalled FT URL; I re-ran it without that link.
 === 2026-11-09T02:40:34-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-10T02:30:11-08:00 start jinglin-ai-pulse ===
+The 2026-11-10 episode is written: **"pay for the checks."** `SKIP_TTS=1` was set, so I didn't generate audio, upload anything, edit `feed.xml` or commit. The batch job will handle those from the stubs.
+
+**Files written** in `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-11-10-pay-for-the-checks.md`: about 2,350 spoken words. That's above the brief's 1,500–2,200 target; at the 1.2× voice speed it should run roughly 13 minutes.
+- `2026-11-10-pay-for-the-checks.rss-item.xml`: has the `__LENGTH__` and `__DURATION__` placeholders and parses as valid XML.
+- `2026-11-10-pay-for-the-checks.commit-msg`
+
+**Episode outline**
+- **Twitter Pulse:**
+  - Claude Fable 5.2 came out with a 20% lower price per token. But at max effort it costs about twice as much per task (Artificial Analysis), and 31% more per task on SemiAnalysis's GDPx benchmark, because it writes hundreds to thousands of test cases. Its max setting scores below its high setting on several evaluations.
+  - Anthropic held back the model's AI-research skills on purpose and sends blocked research-biology questions to Opus 5. The episode covers the capsid-prediction demo with its prior-art caveats, and the UK AI Security Institute's finding that Mythos 5.2 is better at evading a monitor.
+  - Ethan Mollick's "Jagged AGI" post: his agents built an 87,500-word rule book, and their checks never asked whether the work was "too long, too repetitive, or no fun."
+- **Money Moves:** Anthropic's IPO roadshow started the same day as the launch, and CoreWeave's bond yield passed 16% as AI credit costs rise.
+- **Deep Cut:** Latent Space's Nov 9 episode with Handshake AI: "ninety-five percent right is a hundred percent wrong," how labs vet the data they buy, the VIALS histology example, models stating near-total confidence when wrong, and why synthetic data is "almost never realistic and hard." It ties back to Artificial Analysis's version of VIALS, where Fable 5.2 ranks first while making about 37 tool calls per task.
+- The script opens with a disclosure that the episode is mostly about Anthropic and was drafted by Claude.
+
+**Checks**
+- I read every lead source in full. The Handshake quotes match the episode's published transcript, which has no speaker labels, so I credited people by name only where the context makes the speaker clear.
+- I reread 20 of the X posts directly rather than relying on the newsletter summary.
+- The dedup grep over recent scripts is clean; the control term "Jamin Ball" correctly matched yesterday's episode.
+
+**Candidate funnel**
+- **Hacker News (Algolia, last 48h, 80+ points):** 120 stories scanned, about 20 about AI.
+- **X/Twitter:** read through Latent Space's AINews digest (544 accounts), with key posts verified via fxtwitter. Nothing usable from @Zefan_Cai: there's no route to timelines from this machine.
+- **Podcast feeds:** Latent Space, Dwarkesh, Interconnects, Cognitive Revolution, No Priors, MLST and a16z checked. The Sentinel Bio episode of Cognitive Revolution was already used on 11-06, and the Joscha Bach episode of MLST on 11-03.
+- **Substack archive API:** returns 404 for Latent Space, Dwarkesh and Interconnects; I used the RSS feeds instead.
+- **Shortlist:**
+  - ✅ Claude Fable 5.2 / Mythos 5.2 launch — https://www.anthropic.com/claude-fable-and-mythos-5-2
+  - ✅ AINews Fable 5.2 recap — https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/
+  - ✅ Artificial Analysis: Index 65 and VIALS-AA — https://x.com/ArtificialAnlys/status/2119878995386982508
+  - ✅ SemiAnalysis GDPx thread — https://x.com/SemiAnalysis_/status/2119961454413500864
+  - ✅ Mollick, "Fable 5.2 and Jagged AGI" — https://www.oneusefulthing.org/p/fable-52-and-jagged-agi
+  - ✅ CNBC on CoreWeave credit stress — https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html
+  - ✅ Latent Space × Handshake AI (deep cut) — https://latent.space/p/handshake/
+  - ✗ Gemini sends personal Drive files and emails to human annotators — https://github.com/thisisme6598/gemini_files/ (cut for length)
+  - ✗ Amazon replaces Sonnet 4.6 with Strands Decider — https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider (the model itself was covered 10-03)
+  - ✗ Meta's Muse Ember — https://research.meta.ai/blog/muse-ember (product launch with little substance)
+  - ✗ Google TPU 8tx / 8i Max — https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-a (cut for length)
+  - ✗ "Fable 5.2 one-shotted my nephew's dream game" — https://notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game (Mollick's post made the same point better)
+  - ✗ Dwarkesh, "The benchmark where AIs have to lie to win" (Nov 5) — not opened; Handshake fit the theme better
+  - ✗ OpenAI $11B at $1.25T, and Nvidia's board investigation — covered 11-08 and 11-09
+
+I also added a dated line to the podcast-transcripts memory note: Latent Space's RSS feed carries full post bodies with links to the original X posts, which is the quickest way to verify quotes.
+=== 2026-11-10T02:37:46-08:00 done  jinglin-ai-pulse (exit 0) ===
