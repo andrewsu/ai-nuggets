@@ -6403,3 +6403,42 @@ Two things worth flagging honestly:
 
 Two standing deferrals are now closed as permanently unrendered (kainate receptor desensitization, CSNK2A1-MeCP2) — both failed on their 4th/5th consecutive run.
 === 2026-11-09T02:53:15-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-10T02:40:12-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so script + both stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Script:** `podcasts/receptor-and-reason/scripts/2026-11-10-receptor-and-reason.md` — 11 items, 2,519 spoken words (~13.8 min). Spine: *what the aggregate conceals*.
+
+**Candidate funnel**
+
+Sources scanned:
+- **bioRxiv/medRxiv details API** (11-03 → 11-10, day-by-day; 11-09 carryover for 11-03→11-08): 395 records swept on the two new days, 83 passed the neuro/drug/agentic relevance filter.
+- **Crossref journal sweep** by ISSN, `from-created-date:2026-11-03`, 18 journals: 195 journal-articles. Neuropsychopharmacology, IJNP and Cell Systems returned 0 in-window.
+- **arXiv shared cache** (`/tmp/ai-nuggets-arxiv-cache.xml`): 500-entry cap covering only 11-07 → 11-09; 25 bio+agentic hits after title-gating.
+- No source failures. jina cert clean; bioRxiv `.full.pdf` via jina rendered 11 of 12 on first try.
+- **Elsevier / Wiley** not retested (standing hard blocks). **npj Digital Medicine is readable again** via jina, reversing a prior note.
+
+Dedup: 304 candidates → 260 fresh (42 shipped, 1 title match — the recurring GluD1/GluN2B preprint→journal trap, 1 dup). Final-roster gate re-run with a seeded control, which dropped correctly.
+
+Shortlist and picks (★ = shipped):
+
+- ★ AURORA post-trauma recovery transcriptome + Connectivity Map — medrxiv 2026.11.07.26367466 (lead)
+- ★ Neurotransmitter-pathway polygenic scores in schizophrenia — medrxiv 2026.11.05.26367352
+- ★ ACC connectivity and antidepressant response — biorxiv 2026.10.29.762937
+- ★ SCN1A automated patch-clamp reclassification — medrxiv 2026.11.07.26367252
+- ★ Fluorine-18 GPR39 PET radiotracer — biorxiv 2026.11.06.764940
+- ★ Paclitaxel neuropathy / spinal mitochondria — biorxiv 2026.11.06.764717
+- ★ Cisplatin neurotoxicity, GABA, NER-deficient C. elegans — biorxiv 2026.11.06.764850
+- ★ Music-synchronized gamma light RCT — medrxiv 2026.11.06.26367319
+- ★ Curbside Chatbots, 41-model mental-health audit — arxiv 2611.12814
+- ★ The Average Patient — arxiv 2611.11679
+- ★ rs-fMRI foundation-model benchmark (closer) — biorxiv 2026.11.05.764644
+- TrialDesignBench — arxiv 2611.12640 — read in full, cut for AI-item balance
+- Novel tau interaction partners — biorxiv 2026.11.04.764196 — read, too thin
+- Fractal/riddled basins (Nat Mach Intell) and cross-paradigm LLM-judge audit (npj Dig Med) — read in full, then **dropped by the final-roster gate as already shipped** (fractal basins shipped 11-06)
+- KCNH1 allele-agnostic suppression — biorxiv 2026.11.06.764929 — 305 bytes after 3 tries, deferred
+
+Two things worth flagging for the record, both written into the show's memory file:
+
+1. The final gate caught two already-read papers that I had mis-read as fresh — I eyeballed a dump instead of grepping `fresh.tsv` per candidate. Cost two wasted full-text reads, zero drafted words. The replacements were verified by grep.
+2. A safety classifier stopped a read of an NMDAR/SERT abuse-liability preprint. Per the standing rule I dropped that item rather than rewording, and the roster was unaffected.
+=== 2026-11-10T02:54:19-08:00 done  receptor-and-reason (exit 0) ===
