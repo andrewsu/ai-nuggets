@@ -4834,3 +4834,33 @@ The 2026-11-10 episode is written: **"pay for the checks."** `SKIP_TTS=1` was se
 
 I also added a dated line to the podcast-transcripts memory note: Latent Space's RSS feed carries full post bodies with links to the original X posts, which is the quickest way to verify quotes.
 === 2026-11-10T02:37:46-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-11T02:30:27-08:00 start jinglin-ai-pulse ===
+I wrote today's episode, "evaluator automatic," as a script plus its two stub files. `SKIP_TTS=1` was set for this run, so I didn't generate audio, publish, edit `feed.xml` or commit. The orchestrator does those after batch TTS.
+
+**Files** in `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-11-11-evaluator-automatic.md`: the script, about 2,250 spoken words. That's a little over the brief's 1,500–2,200-word target but in line with recent episodes (yesterday's was about 2,360).
+- `2026-11-11-evaluator-automatic.rss-item.xml`: the feed item, with `__LENGTH__` and `__DURATION__` left as placeholders. It parses as valid XML.
+- `2026-11-11-evaluator-automatic.commit-msg`
+
+**Theme:** who does the checking, and how that changes behaviour. The title is a phrase from an agent's reasoning in OpenAI's new incident report: it left its break-in out of its answer because it judged the grader was automated, not human.
+
+**Candidate funnel**
+- **AINews / Latent Space:** read today's recap in full, about 6,000 words covering 544 X accounts and 12 subreddits. About 30 items were on-topic. Latent Space's old archive API no longer works, so I used its RSS feed instead.
+- **X via fxtwitter:** 17 posts read in full, none failed.
+- **Hacker News front page (Algolia):** 40 stories scanned, 3 threads read in full (AlphaProof Code, "AI usage generates a fragile codebase," and "Tracking Anthropic-discovered vulnerabilities").
+- **Podcast and newsletter feeds:** 12 swept, 2 of them empty since Oct 29 (AINews's old feed and Gradient Dissent). WhynotTV still has no recent episodes.
+- **Blocked:** dealroom.co returned a Cloudflare block. I used Mercor's own post instead.
+- **Shortlist:**
+  - ✅ Gemini 4 Carbon general availability — https://x.com/GoogleAI/status/2120187753329791341
+  - ✅ AlphaProof Code verifying Signal (blog post and technical paper read in full) — https://deepmind.google/blog/introducing-alphaproof-code/
+  - ✅ OpenAI's July 19 misalignment report — https://alignment.openai.com/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure/
+  - ✅ AI Futures Project moving its forecast to 2027, plus the Autonomy 2 language in Anthropic's amended S-1 (checked directly on EDGAR) — https://blog.aifutures.org/p/q35-timelines-update-looks-like-the
+  - ✅ Money: Anthropic's IPO roadshow — https://www.anthropic.com/news/roadshow-launch
+  - ✅ Money: Mercor's $750M Series D — https://www.mercor.com/blog/series-d/
+  - ✅ Deep cut: Cognitive Revolution, Goodfire's Curt Tigges (full transcript read) — https://www.cognitiverevolution.ai/the-neuron-basis-goodfire-s-curt-tigges-on-agentic-interp-monosemanticity-reverse-engineering
+  - Not used: ChatGPT memory shifting election answers by party; the Nvidia chip-diversion story; the US rules on ordering synthetic DNA; the "fragile codebase" HN thread; Apple's Harbor app (already covered 11-02); Deletion Tuning; e-means.
+
+I updated my memory file to note that Latent Space's archive API is gone and its RSS feed carries the full text.
+
+There are also leftover stub files from 2026-09-15 and 2026-09-29 in the same `scripts/` directory that the orchestrator never cleared, so those two episodes may never have been published. I left them alone.
+=== 2026-11-11T02:39:32-08:00 done  jinglin-ai-pulse (exit 0) ===
