@@ -6290,3 +6290,42 @@ I wrote today's script and both stub files. `SKIP_TTS=1` was set, so I didn't ru
 
 I also added today's results and the open runner-ups to the show's memory file. That file now notes that the Glyph paper is off the table because Receptor & Reason ran it yesterday.
 === 2026-11-10T02:04:29-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-11T02:00:25-08:00 start biomedical-agentic-ai ===
+I wrote today's Biomedical Agentic AI episode on **BioMem** (arXiv 2611.13426, posted Nov 10, Hong Yu's group at UMass). `SKIP_TTS=1` was set, so I only wrote the script and the two stub files. I did not run TTS, publish, edit `feed.xml` or commit; the batch orchestrator does those steps.
+
+- **Script:** `podcasts/biomedical-agentic-ai/scripts/2026-11-11-biomem-every-rewrite-is-a-chance-to-drift.md`, 923 spoken words (cap is 1,150).
+- **Stubs:** `.rss-item.xml` (parses as XML once the `itunes` namespace is declared) and `.commit-msg`. The paper URL returns 200.
+- **Source:** I read the full text from the arXiv PDF. Nothing in it is marked as placeholder. A web search found no earlier coverage, and none of the shows has run it.
+- **Main point of the episode:** agent memory notes drift away from their source each time they are rewritten. In one memory system (A-MEM), notes containing claims their source record doesn't support rose from 12% to 44% on the opioid-overdose task. Among notes rewritten five or more times, about 80% had them, against about 10% of notes never rewritten. The script presents agent memory as a curation problem where every note needs to point back to its source. It refers back to the Oct 14 PolyGraph episode.
+
+**Candidate funnel**
+- **arXiv (shared cache):** 500 entries, covering Nov 8–10. 282 matched the keywords and about 25 were real biomedical-agentic candidates.
+  - **CHOSEN:** BioMem — https://arxiv.org/abs/2611.13426
+  - OGDA, ontology-grounded data agents (full text read; not biomedical) — https://arxiv.org/abs/2611.12114
+  - DrugCoding — https://arxiv.org/abs/2611.13651
+  - Med Evidence Bench — https://arxiv.org/abs/2611.13562
+  - PegasusAI Studio — https://arxiv.org/abs/2611.13309
+  - Left over from Nov 10: ontology-definitions QC (2611.12095), SciMARS (2611.12552), TrialDesignBench (2611.12640)
+- **bioRxiv/medRxiv (details API, Nov 8–11):** the API was very slow, about one page a minute. Nov 10 timed out at record 210 of 246, so 36 records were lost, and the medRxiv sweep was still running when I wrapped up. I filtered 529 unique records, which gave 33 keyword hits.
+  - Automated LLM literature mining for a hepatotoxicity knowledge base — https://www.biorxiv.org/content/10.64898/2026.11.09.765369v1 (full text readable but thin: a 10-page pipeline paper checked against only 217 findings; runner-up)
+  - ASD Neuro Agentic (ANA) — https://www.biorxiv.org/content/10.64898/2026.11.07.765076v1 (not opened)
+  - LingoCell — https://www.biorxiv.org/content/10.64898/2026.11.08.765157v1 (not opened)
+  - Insulin-on-board in LLM pediatric hyperglycemia advice (medRxiv) — https://www.medrxiv.org/content/10.64898/2026.11.06.26367316v1
+  - scPolyA and GeneEmbedLLM were already carried over from Nov 10.
+- **PubMed (entry date Nov 6–11):** 25 hits. GPCRAgent, TRACER, RadStructAgent and a hospital-course narrative evaluation were the relevant ones. The bioRxiv preprints indexed in PubMed (Agentic Discovery Transfer, Agent_K) were posted in late October and are out of window. "Verifiable Agentic Science" already ran on Oct 29.
+- **News and funders:** one web search found no in-window launch. ChemRxiv and the four funder press pages were not checked.
+
+I also added today's run to the show's deferral memory file and its line in the memory index.
+
+The full bioRxiv/medRxiv sweep has now finished, and it doesn't change the pick: the episode stays on BioMem.
+
+The sweep covered 697 unique records across Nov 8–11 and turned up 43 keyword hits. The medRxiv hits are narrow clinical-LLM evaluations. The closest to on-brief:
+- Multi-agent transfusion-reaction feature extraction — already listed as unshipped in the Nov 10 notes
+- LLM vs. emergency-medicine doctors in a simulation
+- LLM labeling of incidental findings in lung-screening CT reports
+- Insulin-on-board in LLM advice on pediatric hyperglycemia
+
+None is a better pick than BioMem.
+
+One gap remains: 36 of the 246 bioRxiv records for Nov 10 were never fetched after a read timeout. The script, RSS stub and commit-message stub are unchanged, still uncommitted, and ready for the batch orchestrator.
+=== 2026-11-11T02:09:54-08:00 done  biomedical-agentic-ai (exit 0) ===
