@@ -6442,3 +6442,30 @@ Two things worth flagging for the record, both written into the show's memory fi
 1. The final gate caught two already-read papers that I had mis-read as fresh — I eyeballed a dump instead of grepping `fresh.tsv` per candidate. Cost two wasted full-text reads, zero drafted words. The replacements were verified by grep.
 2. A safety classifier stopped a read of an NMDAR/SERT abuse-liability preprint. Per the standing rule I dropped that item rather than rewording, and the roster was unaffected.
 === 2026-11-10T02:54:19-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-11T02:40:28-08:00 start receptor-and-reason ===
+All eleven paper URLs verify. The run is complete through stubs — `SKIP_TTS=1`, so no TTS, publish, feed edit, or commit, per PIPELINE.md.
+
+**Episode: Receptor & Reason 2026-11-11 — "the stand-in and the thing itself"** (11 items, 3,101 words, ~17 min est.)
+
+Files written to `podcasts/receptor-and-reason/scripts/`:
+- `2026-11-11-receptor-and-reason.md`
+- `2026-11-11-receptor-and-reason.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `2026-11-11-receptor-and-reason.commit-msg`
+
+Ledger appended: 11 keys, 169 episodes.
+
+**Candidate funnel**
+- bioRxiv/medRxiv details API: 11-10 → 246 + 99 records, 11-11 → 23 + 0; carryover day-files for 11-04→11-09 reused from yesterday. 71 passed the relevance filter.
+- Crossref journal sweep (18 ISSNs, from 2026-11-04): 216 items. *Neuropsychopharmacology* returned 0.
+- arXiv shared cache: 500-capped, covering only 11-08→11-10; 28 bio+agentic hits after title gating.
+- Dedup: **316 candidates → 276 fresh** (38 shipped, 1 title match, 1 dup). Final-roster gate re-run with a seeded control, which dropped correctly.
+
+**Chosen (11):** lurcher AMPA/perampanel (lead) · firing-hazard return pathways · C9orf72 lysosome/secretory autophagy + valproate · Nature aggression experience vs observation · AP_Load2026 clozapine index · borderline personality PFC proteomics · ASD Neuro Agentic · Med Evidence Bench · multimodal CFM spectral ceiling · TrialDesignBench · DrugCoding (closer).
+
+Three things worth flagging:
+- **A safety classifier stopped one tool call** while I was pulling hit-rate numbers from the GPR119 tera-scale docking preprint (`2026.11.08.765217`). I applied the standing rule — dropped the item outright rather than rewording — and the roster was unaffected. That's a fifth trigger class for this show: a structure-based virtual-screening read.
+- **I nearly misread the dedup output.** Three preprints shipped on 11-07 (M4 PAM, microglial AhR, AhR/visceral hypersensitivity) looked like filter escapes; they were in fact in the dropped list and the filter had worked. Verified against the ledger before acting.
+- **`2026.11.09.765141` was never in `candidates.tsv`** — I picked it off a direct day-file scan, so it bypassed the batch filter. I dedup-checked it separately with a control before including it.
+
+Standing deferral `2026.11.06.764929` (allele-agnostic KCNH1 suppression) returned 305 bytes on all three tries again — second failed run, worth retesting.
+=== 2026-11-11T02:54:12-08:00 done  receptor-and-reason (exit 0) ===
