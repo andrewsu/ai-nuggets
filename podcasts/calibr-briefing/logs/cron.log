@@ -6464,3 +6464,26 @@ Checking against earlier episodes caught one error before it shipped. My first d
 
 I didn't see any Foresite portfolio news in Monday's coverage. I also added a dated note to the news-source memory file: HCPLive and NeurologyLive RSS carry full trial numbers for approvals, and stories found only on Endpoints should run as headline-only.
 === 2026-11-10T02:26:56-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-11T02:20:27-08:00 start calibr-briefing ===
+Both scripts and their stubs are written. `SKIP_TTS=1`, so I did not run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator does those after batch TTS.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-11-11-pharma-headlines.txt` (1,380 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-11-11-pepgen-dm1-splicing-correction-spotlight.txt` (1,607 words) + `.rss-item.xml` + `.commit-msg`
+
+Both RSS stubs parse as XML with `__LENGTH__`/`__DURATION__` placeholders.
+
+**Headlines (8 items):** PepGen's DM1 splicing data (spotlight teaser); Beam's risto-cel meeting the BEACON pivotal endpoint while the stock fell ~10% on withheld response-rate and safety detail; Mirum's brelovitug winning AZURE-4; the FDA approving pimicotinib in TGCT; Oura buying Counsel Health for $625M; AstraZeneca acquiring Omniose; Coherus cutting 30% (plus Vertex/Crinetics and Gyre); then Altimmune, the Dutch Biogen probe, and the MFN oversight letters.
+
+**Spotlight:** PepGen's 46.5% mean splicing correction at 10 mg/kg — six patients on drug vs 6.8% in pooled placebo — the CLCN1/myotonia chain that makes it internally consistent, and the three caveats (n=6, sponsor topline, 16 weeks). It's framed against Novartis' del-desiran missing HARBOR five days earlier on the same hand-opening endpoint, and it leads to the disclosure most coverage buried: FREEDOM2 has been under a partial clinical hold since March over nonclinical mouse findings, which gates the end-of-Phase-2 meeting. Dyne's 71-patient readout in Q1 2027 is flagged as the real test.
+
+**One thing to flag:** my first draft was stopped by a safety classifier mid-write. It was the headlines file with Beam's sickle cell base-editing readout as item 1 — no death attribution in the text. Per the standing rule I pivoted the subject rather than rewording: the spotlight became PepGen, and Beam was rewritten from scratch as headline item 2, which shipped fine. I appended a dated note to the classifier memory recording sickle cell editing narration as a new trigger class for this show.
+
+**Candidate funnel:**
+- **Feeds:** Endpoints (24 items), BioPharma Dive (10), STAT (20), GEN (10), Clinical Trials Arena (10), OncLive (30), TargetedOnc (30), BioSpace (20) all 200 to curl + Safari UA. Fierce Biotech and Fierce Pharma `/rss/xml` returned the usual 5.6 KB Cloudflare stub, 0 items — found their stories via Google News RSS instead.
+- **Read in full:** PepGen's 8-K exhibits 99.1 and 99.2 via EDGAR (the Business Wire release itself 403s), Mirum's 8-K on EDGAR, Beam's GlobeNewswire topline and ASH and Q3 releases, the FDA pimicotinib approval notice, BioPharma Dive on Beam/PepGen/del-desiran via jina, BioSpace on Beam/Coherus/Altimmune, Healio's write-up of the April NEJM BEACON paper, OncLive and TargetedOnc on pimicotinib.
+- **Shortlisted but dropped:** Prizlon-cel RMAT/fast track (no disclosed data behind the designations); BIO's China "space race" plan (covered the proposal Nov 10); Capricor opinion piece (decision is Nov 22, already in the look-ahead); MDCalc CrossCover (folded into the Oura item); RFK Jr./MAHA and the Medicaid expansion politics (off-beat).
+- **Chosen:** spotlight = PepGen FREEDOM2 ([BioPharma Dive](https://www.biopharmadive.com/news/pepgen-myotonic-dystrophy-dm1-drug-results-freedom/874249/), [8-K](https://www.sec.gov/Archives/edgar/data/1835597/000119312526454469/pepg-ex99_2.htm)); headlines = the eight items above.
+
+Dedup grep ran against all prior calibr scripts with `Sunburo`-style control term (`Sunharbo`) confirming the pattern fires. Prior hits were all distinct events: risto-cel appeared Nov 4 only as an earnings-call filing guide, brelovitug Nov 9 only as a pending rival, tagmokitug Oct 29 as the Phase 1b interim. No Foresite portfolio news in Tuesday's wires.
+=== 2026-11-11T02:37:09-08:00 done  calibr-briefing (exit 0) ===
