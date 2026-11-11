@@ -4261,3 +4261,28 @@ I've written today's Portfolio Watch script, `2026-11-10-portfolio-watch` (about
 
 I also added a dated note to my persistent memory: Google News RSS search finds readable copies of paywalled stories, and BioPharma Dive articles are now blocked.
 === 2026-11-10T02:18:03-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-11T02:10:26-08:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md this run produced the script plus the two transient stubs only — no TTS, no R2 publish, no `feed.xml` edit, no commit. `publish_pending.py` will do those after batch TTS.
+
+**Script:** `podcasts/blackbird-brief/scripts/2026-11-11-portfolio-watch.md` — 1,900 spoken words ≈ 9.2 min at this show's measured 0.29 s/word (11-07 through 11-10 ran 8.5–10.0 min).
+**Stubs:** `.rss-item.xml` (XML validated, `__LENGTH__` / `__DURATION__` in place) and `.commit-msg`.
+**Ledger:** 6 keys appended → 127 episodes / 687 items.
+**Memory:** `blackbird-portfolio.md` revised in place — DELFI, the gout theme, Aletira and Biolinco entries, each with its `_Last update:_` bumped. No dated run log appended.
+
+## Candidate funnel
+
+**Sources scanned:** Endpoints RSS (24 items, paywalled ledes) · STAT RSS (20, STAT+) · BioPharma Dive RSS (10) · GEN RSS (10) · BioSpace news + press-release indexes (Safari-UA curl, 200) · Fierce Biotech/Pharma RSS (5.6 KB block pages — **failed**, no retry value) · BioBuzz RSS (**stale**, newest item 2026-09-11) · Google News RSS across 38 portfolio/program/company terms · SEC EDGAR full-text search for primary filings.
+
+**Dedup:** 7 candidates → 6 fresh against 724 keys / 126 episodes. The one dropped line was the deliberate control (argenx 6-K, shipped 11-10); the filter caught it with a title-mismatch warning, confirming the grep was live.
+
+**Shortlist (✅ = selected):**
+- ✅ Freenome Q3 8-K + SimpleScreen Lung launch — **LEAD** (DELFI)
+- ✅ Protalix PRX-115 ACR poster (Q3 6-K) + Monte Rosa MRT-8102 gout preclinical — paired item 2 (gout theme)
+- ✅ Third Rock / Funnel terms, pharmaphorum — item 3, follow-up to 11-10's headline-only watch item
+- ✅ Politzer Society Seoul, Korea Biomedical Review — item 4 (Aletira)
+- ✗ Janux JANX011 healthy-volunteer Phase 1 — deferred; see note below
+- ✗ Xencor plamotamab RA Phase 1b — company release not retrievable, no ACR abstract found, numbers unverifiable today
+- ✗ Antengene CD19 engager Phase 1 start; Beam sickle cell; PepGen DM1; Oyster $60M tau; Vir HDV; Windward IPO; Upstream Bio Q3 (verekitug, covered 09-08/09-16); Alto Q3; LB Pharmaceuticals (dated 10-11/10-12); GLP-1 NAION label; Bayer Sunharbo — no Blackbird line beyond the selected items, or already covered
+
+**One thing to flag:** my first draft led on the Janux data with a Winnow read, and the safety classifier stopped that response mid-write. Per standing practice I did not rewrite it — I pivoted the spotlight to Freenome and repointed the cold open. The Janux item is logged as deferred in the show notes rather than silently dropped, so it can be reconsidered when the company's own release is readable.
+=== 2026-11-11T02:28:51-08:00 done  blackbird-brief (exit 0) ===
