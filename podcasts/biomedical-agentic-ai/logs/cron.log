@@ -6329,3 +6329,31 @@ None is a better pick than BioMem.
 
 One gap remains: 36 of the 246 bioRxiv records for Nov 10 were never fetched after a read timeout. The script, RSS stub and commit-message stub are unchanged, still uncommitted, and ready for the batch orchestrator.
 === 2026-11-11T02:09:54-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-12T02:00:10-08:00 start biomedical-agentic-ai ===
+Episode written in SKIP_TTS stub mode — script + both stubs, no TTS, no publish, no commit (orchestrator handles those).
+
+**Published pick:** Pyrite — `podcasts/biomedical-agentic-ai/scripts/2026-11-12-pyrite-the-tool-the-experts-trusted-was-pointing-the-wrong-way.md` (1,022 spoken words, under the 1,150 cap), plus `.rss-item.xml` (namespace-validated) and `.commit-msg`.
+
+**Candidate funnel**
+
+- **arXiv** — shared cache held 500 entries (11-08: 27, 11-09: 282, 11-10: 191); a live 400-result query added nothing past 11-10 (11-11 not yet announced). 282 keyword hits → ~25 substantive after dropping non-biomedical/spurious matches.
+  - **CHOSEN** — Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents (2611.14511) https://arxiv.org/abs/2611.14511
+  - Contrastive Discovery (2611.14514) — strong, but only 2 of 6 domains scientific, none biomedical
+  - BioXArena-Pro (2611.13994); MRFoundry (2611.13289); SciMARS (2611.12552); TIGA taxonomy induction (2611.13966); "Do AI Agents need Preventive Care?" (2611.13333); "Trust, but verify, audit and attribute" (2611.13042)
+  - Dropped as cross-show duplicates (receptor-and-reason 11-10/11-11): DrugCoding 2611.13651, Med Evidence Bench 2611.13562, TrialDesignBench 2611.12640, Curbside Chatbots 2611.12814
+- **bioRxiv + medRxiv** — details API healthy but slow (~30–60s/page, ~25 min); 11-09..11-12, 11-12 had only 9 records at 2am. ~40 keyword hits at v1, ~5 on-brief and unshipped: auditable harness for biomolecular dynamics agents (765490), DE-Rigor-Agent (765522), Claude-enabled IgE antibody design (765431), LingoCell (765157), Scientific Figure Library (765504) — all deferred, full text untested. ASD Neuro Agentic (765076) excluded: shipped by receptor-and-reason 11-11.
+- **PubMed** — query too broad to be useful at the 5-day window (53k hits); no on-brief item surfaced that wasn't already covered. Recorded as a weak source today.
+- **ChemRxiv / news / funder pages** — not surveyed once a dominant, fully-readable candidate was in hand.
+
+**Why Pyrite won:** full text read end to end (13.6k words via mutool, zero `placeholder` hits), novelty check clean, and the result is genuinely contrarian — five CADD experts with 10+ years score 0.42/0.45, *below* chance, while agreeing with each other 77% of the time, because the MM-GBSA score they lean on is anti-correlated (0.32–0.35) once you're inside the top-25-by-energy regime. The agentic read: an LLM writing Python features for a plain logistic regression hits 0.74 versus 0.67 for the same model reasoning in prose, and GRPO lifts an open-weight 27B past frontier models as a feature writer. Caveats flagged in the script — one proprietary cofolding model, five annotators, pairwise rather than full-set ranking.
+
+Run notes appended to the rolling deferral memory.
+
+One correction to my run report: the background bioRxiv/medRxiv sweep was **stopped at its background time limit** partway through medRxiv, not run to completion. I closed the gap with a direct medRxiv fetch for 11-10 through 11-12 — nothing agentic/on-brief surfaced (11-12 returns zero records at this hour), so the funnel above stands and the selection is unaffected.
+
+Full coverage as actually achieved:
+- bioRxiv 11-09..11-12 — complete (all pages).
+- medRxiv 11-09 complete via the sweep; 11-10..11-12 completed via the follow-up fetch. Only LLM-evaluation clinical items, none agentic.
+
+Everything else from my previous message is accurate: the episode script and both stubs are written, no TTS/publish/commit was run (SKIP_TTS=1), and the run notes are in the deferral memory.
+=== 2026-11-12T02:12:55-08:00 done  biomedical-agentic-ai (exit 0) ===
