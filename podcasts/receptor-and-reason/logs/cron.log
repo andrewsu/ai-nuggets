@@ -6469,3 +6469,36 @@ Three things worth flagging:
 
 Standing deferral `2026.11.06.764929` (allele-agnostic KCNH1 suppression) returned 305 bytes on all three tries again — second failed run, worth retesting.
 === 2026-11-11T02:54:12-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-12T02:40:12-08:00 start receptor-and-reason ===
+Done. Published through stubs — `SKIP_TTS=1`, so no TTS, R2 publish, feed edit, or commit, per PIPELINE.md.
+
+**Episode: Receptor & Reason 2026-11-12 — "what the number is averaging over"** (11 items, 3,313 words, ~18.2 min est.)
+
+Files written to `podcasts/receptor-and-reason/scripts/`:
+- `2026-11-12-receptor-and-reason.md`
+- `2026-11-12-receptor-and-reason.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `2026-11-12-receptor-and-reason.commit-msg`
+
+Ledger appended: 11 keys, 170 episodes. All 11 paper URLs verified 200 (two bioRxiv 429s cleared on retry).
+
+**Candidate funnel**
+- **bioRxiv/medRxiv details API** (11-05 → 11-12; day-files for 11-05→11-10 carried over from yesterday): 55 passed the neuro/drug/agentic relevance filter. **Source degradation:** biorxiv 11-11 repeatedly 503/504'd at the cursor-30 boundary and is covered only partially; the documented `connect.biorxiv.org` per-subject RSS fallback now 404s outright.
+- **Crossref journal sweep** (18 ISSNs, from 2026-11-05): 223 journal-articles.
+- **arXiv shared cache**: 500-capped, covering only 11-08→11-10; 28 bio+agentic hits. Supplemented with a direct `arxiv.org/list/{q-bio,cs.AI,cs.CL}/new` HTML scrape, which covered 11-11 and surfaced the Bonbon foundation-model paper the cache had missed.
+- **Dedup: 1,390 candidates → 1,352 fresh** (36 shipped, 1 title match, 1 dup). Final-roster gate re-run with a seeded control, which dropped correctly.
+
+**Chosen (11):** ADHD menstrual cyclicity (lead) · priovi BPD effect heterogeneity · gabapentinoid→loop-diuretic cascade · GluN2A/somatostatin interneurons · ultra-low-dose same-target EGFR combinations · AAV-vectorized GLP-1R agonists · AsBench2/AllositeUltra + MAGI2 · Bonbon · safe RL clinical agents · frozen scalp-EEG seizure warning · LLM-mined hepatotoxicity KB (closer).
+
+Three things worth flagging:
+- **A sibling-show collision was avoided by luck.** `arxiv:2611.14511` (Pyrite) was a strong Tier 2 hit, but biomedical-agentic-ai shipped it this same morning — I caught it only from the working-tree file list. Checking the other shows' `scripts/` for today's date before taking an agentic-AI arXiv item is now in the show's memory.
+- **The bioRxiv API truncates silently.** The 11-11 day-file stopped at exactly 30 records (one page) and exited clean. A patient re-fetcher still couldn't get past it, so 11-11 preprint coverage is incomplete; the arXiv HTML scrape partly compensated. Written up in memory with the "exact multiple of 30 is suspect" rule.
+- **npj Digital Medicine was abstract-only again**, reversing the 11-10 "readable again" note, and the Nature AutoDNA paper behind this week's four Nature news pieces is bodyless — so the week's most-covered agentic-lab item was never eligible under the full-text gate.
+
+Recorded. One correction to my summary above, now that the background job has reported:
+
+**The 11-11 bioRxiv day was recoverable after all** — the patient re-fetcher returned all 256 records, but it finished after the roster was locked, because I'd launched it blocked behind the main sweep's last day-file instead of in parallel. Re-running the filter on the complete day surfaced **10 on-topic items this episode never saw**, including `2026.11.10.765159` (AMPA receptor inhibition on seizure-like events in murine vs. human brain slices) — a direct sequel to yesterday's lurcher/perampanel lead — and a DMT-and-harmine retreat study squarely in the brief's psychedelics interest.
+
+I did **not** revise the episode: the 11 items that shipped are read in full, verified, and coherent around their spine, and swapping an item post-hoc would mean redrafting on thinner reads. All ten are dedup-clean and now sit at the top of tomorrow's fetch list in the show's memory, along with the process fix (detect `len % 30 == 0` on each day-file as the sweep writes it, and re-fetch in parallel with the journal sweep).
+
+The published artifacts are unchanged: script, RSS stub, and commit-msg stub for `2026-11-12-receptor-and-reason`, with 11 keys appended to the ledger.
+=== 2026-11-12T03:02:29-08:00 done  receptor-and-reason (exit 0) ===
