@@ -4286,3 +4286,23 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE.md this run produced the script p
 
 **One thing to flag:** my first draft led on the Janux data with a Winnow read, and the safety classifier stopped that response mid-write. Per standing practice I did not rewrite it — I pivoted the spotlight to Freenome and repointed the cold open. The Janux item is logged as deferred in the show notes rather than silently dropped, so it can be reconsidered when the company's own release is readable.
 === 2026-11-11T02:28:51-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-12T02:10:10-08:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` was set, so I stopped at stubs: no TTS, no R2 publish, no `feed.xml` edit, no commit.
+
+**Published artifacts (staged for `publish_pending.py`)**
+- `podcasts/blackbird-brief/scripts/2026-11-12-portfolio-watch.md` — 2,007 spoken words (in line with the show's recent 1,790–2,000 / ~10 min)
+- `…-portfolio-watch.rss-item.xml` (validates; `__LENGTH__` / `__DURATION__` placeholders)
+- `…-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — 5 keys appended (128 episodes)
+- `memory/blackbird-portfolio.md` — edited in place: Wong-lab entry, NuGate, Neuropsych NewCo, Aletira
+
+**Today's items**
+1. **LEAD (NuGate)** — *Nature*, published online 11-11, Fratta lab/UCL + Trace Neuroscience: correcting one UNC13A cryptic exon recovers ~80% of synaptic transmission in human cortical **and spinal** motor neurons, with ASOs restoring protein to 30–50% (the bar is ~30%). This directly contests our 09-20 Radar read off two Philip Wong preprints. The reconciliation — human-specific splicing (answered with a humanized intron), and a *function* endpoint instead of a *survival* endpoint — reframes the class as functional restoration, which is an endpoint decision. **Also a factual correction: the reference file said Trace is on STMN2; it is on UNC13A and has been dosing TRCN-1023 since June.**
+2. **VectorY** $83.5M for a one-shot vectorized anti-TDP-43 antibody — Lilly on two of the three modalities now in this biology; PIONEER-ALS's endpoint package is a public comparator.
+3. **Neurosterix** $105M Series B for an M4 PAM, three days after our 11-09 "category repriced" read — narrows it: the market blamed the molecule, not the receptor class, and tolerability becomes the entry fee for GPR52.
+4. **Aletira** — SNUBH/Choi: outer-hair-cell function preserved in 7/10 ears of early-implanted children, so the implanted cohort may deserve a probability rather than a zero.
+
+**Funnel notes worth flagging:** the dedup filter dropped the Freenome 8-K control exactly as intended; it also produced one **false positive** — the new Korea Biomedical Review article (`idxno=33836`) collided with yesterday's (`idxno=33782`) because the normalizer strips query strings and both share the `/news/articleView.html` path. Different article, different study; I kept it deliberately and logged it. That normalizer edge case will recur on any koreabiomed item.
+
+Deferred rather than shipped: PHP Biotech's mutant-p53 nanobody (single unsourced wire item, Clasp-adjacent — retry for a company release) and Gallaudet University's institutional position on gene editing (a stakeholder-acceptance story that deserves more than a 60-second mention).
+=== 2026-11-12T02:23:55-08:00 done  blackbird-brief (exit 0) ===
