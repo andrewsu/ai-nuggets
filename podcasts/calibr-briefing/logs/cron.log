@@ -6487,3 +6487,33 @@ Both RSS stubs parse as XML with `__LENGTH__`/`__DURATION__` placeholders.
 
 Dedup grep ran against all prior calibr scripts with `Sunburo`-style control term (`Sunharbo`) confirming the pattern fires. Prior hits were all distinct events: risto-cel appeared Nov 4 only as an earnings-call filing guide, brelovitug Nov 9 only as a pending rival, tagmokitug Oct 29 as the Phase 1b interim. No Foresite portfolio news in Tuesday's wires.
 === 2026-11-11T02:37:09-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-12T02:20:11-08:00 start calibr-briefing ===
+I wrote both of today's Calibr scripts and their RSS and commit-message stubs. `SKIP_TTS=1` was set, so I didn't run TTS, publish, edit `feed.xml` or commit; the orchestrator does those after the batch TTS run. The pre-commit hook hasn't run yet, but neither episode cites a preprint, so its URL check doesn't apply. Wednesday was Veterans Day and the wire was light.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-11-12-pharma-headlines.txt`, about 1,240 words, plus `.rss-item.xml` and `.commit-msg`.
+- `2026-11-12-valo-montai-flagship-ai-merger-spotlight.txt`, about 1,480 words, plus `.rss-item.xml` and `.commit-msg`.
+- Both `.rss-item.xml` stubs parse as valid XML. Both `.commit-msg` stubs hold the same "Calibr 2026-11-12" message.
+
+**Spotlight choice:** Flagship is merging its two AI drug discovery companies, Valo Health and Montai Therapeutics. Valo has more than $7B of headline partner deals with Novo Nordisk and Merck KGaA but owns no drug in the clinic. Montai brings a Phase 1 NRF2 agonist for ulcerative colitis and a preclinical STAT6 inhibitor. Both companies are private, so there was no analyst commentary to quote; the script says so. Fierce's write-up was blocked, and Endpoints' was paywalled.
+
+**Candidate funnel**
+- **Sources:** Endpoints RSS (24 items, 11 in window), STAT RSS (20/~14), BioPharma Dive RSS (1 article, a roundup), BioSpace news and press releases (20 + ~40, 12 relevant), Clinical Trials Arena (10/9), pharmaphorum (10/10), OnClive and HCPLive (oncology and specialty items, mostly not news), GEN (no in-window items), Google News RSS (7 discovery queries plus 9 targeted ones), and WebSearch for background.
+- **Failed sources:** Fierce Biotech and Fierce Pharma RSS returned the 5.6 KB Cloudflare stub (0 items). Their articles came back from r.jina.ai as tracker-pixel stubs twice and as 403s via WebFetch. Endpoints and Clinical Trials Arena article bodies were paywalled. Business Wire returned 403; I used the financialcontent.com mirror for Pfizer's release and jnj.com for the Caplyta details.
+- **Dropped as already covered or stale:** the iberdomide approval (covered 10-09; the Cleveland Clinic recap is old news), J&J's amivantamab head-and-neck approval (covered 11-06), and pimicotinib, Omniose, Oura and Mirum (covered 11-11). The dedup control term (PepGen) was found correctly.
+- **Headlines, all chosen:**
+  - Pfizer–Blackstone, up to $1.5B for berobenatide (lead) — https://www.financialcontent.com/article/bizwire-2026-11-11-pfizer-and-blackstone-life-sciences-announce-strategic-funding-agreement-for-obesity-program
+  - Valo + Montai merger (spotlight teaser) — https://www.biospace.com/press-releases/valo-health-and-montai-therapeutics-merge-to-create-leading-drug-discovery-platform-powered-by-human-evidence
+  - China approves orforglipron — https://pharmaphorum.com/news/lilly-beats-novo-china-oral-glp-1-obesity
+  - Caplyta, second bipolar mania Phase 3 (Study 452) — https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-caplyta-lumateperone-shows-significant-and-rapid-improvement-in-bipolar-mania-in-second-pivotal-phase-3-study
+  - Neurosterix $105M Series B — https://www.biospace.com/press-releases/addex-spin-out-neurosterix-closes-105-million-series-b-financing
+  - Legend down 16% — https://thebambooworks.com/legend-biotech-shares-tumble-as-carvykti-outlook-overshadows-profit/
+  - Scholar Rock sells its voucher to BioNTech for $205M — https://www.sec.gov/Archives/edgar/data/0001727196/000119312526454423/srrk-20261110.htm
+  - enGene detalimogene, application to start by year-end — https://www.biospace.com/press-releases/engene-to-initiate-a-bla-submission-for-detalimogene-by-year-end-and-reports-new-data-from-legend-trial-pivotal-cohort-1-in-bcg-unresponsive-nmibc
+  - Lilly TOGETHER-PsA 52-week results — https://www.biospace.com/press-releases/new-phase-3b-data-on-lillys-taltz-ixekizumab-and-zepbound-tirzepatide-used-together-showed-improved-and-durable-efficacy-patient-reported-and-metabolic-outcomes-at-one-year-in-adults-with-psoriatic-arthritis-and-obesity
+  - Capricor cuts 10% — https://www.biospace.com/business/capricor-parts-ways-with-10-of-staff-as-fda-decision-on-dmd-cell-therapy-nears
+  - FDA warning letters to two Chinese makers of compounding ingredients — https://www.biospace.com/drug-delivery/fda-warns-chinese-providers-of-compounding-apis-over-record-request-refusals
+  - All of Us pharmacogenomics paper — https://www.statnews.com/2026/11/11/all-of-us-study-finds-gene-variants-drug-responses/
+- **Read but not used:** VectorY $83.5M, Beeline's lupus data, Google Cloud's Gemini for Healthcare, Novocure's not-approvable letter for Optune Mya, MaxCyte buying Akron for $151.8M, the Natera–Incyte trial partnership, and STAT's piece on MFN pricing changing launches abroad (STAT+, mostly paywalled).
+- **Foresite portfolio:** I found no confirmed news on Wednesday's wires, and the headlines script says so.
+=== 2026-11-12T02:32:09-08:00 done  calibr-briefing (exit 0) ===
