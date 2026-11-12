@@ -4864,3 +4864,39 @@ I updated my memory file to note that Latent Space's archive API is gone and its
 
 There are also leftover stub files from 2026-09-15 and 2026-09-29 in the same `scripts/` directory that the orchestrator never cleared, so those two episodes may never have been published. I left them alone.
 === 2026-11-11T02:39:32-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-12T02:30:11-08:00 start jinglin-ai-pulse ===
+I wrote today's Ollie's AI Pulse script and its two placeholder files. `SKIP_TTS=1` was set, so I didn't generate audio, upload it, edit `feed.xml`, or commit. The batch job (`publish_pending.py`) handles those after the nightly audio run.
+
+**Files written** in `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-11-12-one-pass.md`: about 1,830 spoken words, roughly 12 minutes.
+- `2026-11-12-one-pass.rss-item.xml`: the feed entry, with `__LENGTH__` and `__DURATION__` left for the batch job to fill in. It parses as valid XML.
+- `2026-11-12-one-pass.commit-msg`
+
+**Theme: "one pass."** More AI work now happens where nobody can read the reasoning, so the question is what to check instead. The script includes the usual Anthropic disclosure.
+
+**What I looked at, by source:**
+- **Latent Space AINews ("D-Day", Nov 12):** about 40 X-recap items scanned and 9 shortlisted. I re-read 16 of the posts directly through fxtwitter, since X itself is blocked from this machine.
+  - ✅ Gemini Decisions API / Decision 1: Google's blog and the Artificial Analysis numbers read in full, plus Cloudflare's Clef talk. https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/
+  - ✅ OpenAI, chain-of-thought monitorability across the model lifecycle: read in full, including the appendices. https://alignment.openai.com/cot-monitorability-model-lifecycle/
+  - ✅ HoneyBench v0.2, short mention: https://x.com/goodhart_labs/status/2120570580743471284
+  - ✅ AlphaGenome 2: blog read in full. There's no technical paper yet, and the script says so. https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/
+  - Not used:
+    - Continual-ARC: https://x.com/DanielLenton1/status/2120535187587268777
+    - Runway Praxis-1: https://x.com/runwayml/status/2120533212359458837
+    - Deletion Tuning: https://arxiv.org/abs/2611.10866
+    - Nvidia board / Jensen Huang: personal scandal, and the WSJ source can't be read from here.
+- **Money (last 7 days):** 3 candidates, 2 used.
+  - ✅ Anthropic IPO multiple times oversubscribed. Bloomberg is paywalled, so this rests on Bloomberg's own post. https://x.com/kimmonismus/status/2120516589359345807
+  - ✅ Fal and Baseten buying their own chips (The Information): https://x.com/catherineperlo1/status/2120557310095618502
+  - Not used: Sakana AI adding defense advisors.
+- **Podcasts (last 14 days):** checked the Cognitive Revolution, Latent Space, Dwarkesh and No Priors feeds.
+  - ✅ Cognitive Revolution, Cisco's Vijoy Pandey: full transcript read and quotes checked against it. https://www.cognitiverevolution.ai/agents-that-think-together-cisco-s-vijoy-pandey-on-semantic-alignment-scope-accord-concord/
+  - Not used:
+    - Latent Space, OpenAI's Codex workshop: a written piece, not an episode.
+    - Latent Space, "Jev Revolution": a written piece, not an episode.
+    - Latent Space, Resend.
+    - Dwarkesh: no AI episode in the last 14 days.
+    - No Priors, Robinhood (Nov 5): off-topic.
+- **Repeat check:** Fabian Theis (ran Nov 7) and Mercor (ran Nov 11) were excluded. Decision models came up before only as OpenAI's API; Google's model is new.
+- **Source failures:** the AlphaGenome page first downloaded as unreadable compressed data and worked on retry. I found no primary page for HoneyBench v0.2 beyond Goodhart Labs' post (the LessWrong pages only cover v0.1), so the script keeps it to a short, attributed mention.
+=== 2026-11-12T02:35:51-08:00 done  jinglin-ai-pulse (exit 0) ===
