@@ -6357,3 +6357,34 @@ Full coverage as actually achieved:
 
 Everything else from my previous message is accurate: the episode script and both stubs are written, no TTS/publish/commit was run (SKIP_TTS=1), and the run notes are in the deferral memory.
 === 2026-11-12T02:12:55-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-13T02:00:13-08:00 start biomedical-agentic-ai ===
+The sweep is still running. I'll wait for it to finish.
+
+I've written today's Biomedical Agentic AI script, on **NIBench**, plus its two stub files. `SKIP_TTS=1` was set, so I didn't make audio, publish, edit `feed.xml` or commit; `publish_pending.py` does those after the batch TTS run.
+
+**Episode:** `podcasts/biomedical-agentic-ai/scripts/2026-11-13-nibench-reproducible-numbers-are-not-a-conclusion.md` (873 spoken words, under the 1,150 cap). The stubs `.rss-item.xml` and `.commit-msg` sit next to it, and the RSS item parses as valid XML.
+- **Paper:** NIBench (https://arxiv.org/abs/2611.15831, posted 11-11), from Yonggang Shi's group at USC. I read the full text through the arXiv PDF and found no unfilled placeholders.
+- **Take:** both frontier models reproduce every number from raw Alzheimer's cohort data (ADNI). Yet each agrees with the expert conclusion only 73.1% of the time. None of the errors flips a conclusion; they are all about certainty. Claude was too sure 18 times and GPT-6-astra too cautious 22 times.
+- **Secondary points:** when the agent isn't given the analysis recipe, the number of tasks every model solves falls from 29 to 2 of 56. Skill files the agents distill from their own runs help on familiar tasks but carry over unevenly to new ones.
+- **Dedup:** clean across all shows. A first grep matched two older scripts, but only because "NIBench" sits inside "BiomniBench". A web search found no earlier coverage, only sibling benchmarks from other projects ([NeuroClaw](https://arxiv.org/pdf/2604.24696), [NEXUS](https://arxiv.deeppaper.ai/papers/2605.09366v3)).
+
+**Gap:** the bioRxiv/medRxiv sweep was stopped at the 10-minute background limit because the API ran at about one page a minute. It covered bioRxiv 11-10 to 11-13 and medRxiv through part of 11-12; the rest of medRxiv 11-12 and all of 11-13 went unseen. I noted in memory to give the sweep a 40-minute timeout next time.
+
+**Candidate funnel**
+- **arXiv** (shared cache, 500 entries, 11-10 to 11-12): 308 keyword hits, about 12 on-brief.
+  - **CHOSEN: NIBench** — https://arxiv.org/abs/2611.15831
+  - Science Prediction Universe — https://arxiv.org/abs/2611.15049 (full text read; its "agents agree with each other more than with reality" point is too close to yesterday's Pyrite episode)
+  - AI for Biologists: knowledge boundaries — https://arxiv.org/abs/2611.17015
+  - Mach2 — https://arxiv.org/abs/2611.14777
+  - AutoOntic — https://arxiv.org/abs/2611.15467 (not biomedical)
+  - LLM-drafted NIH data management plans — https://arxiv.org/abs/2611.14648
+  - Auditing AI peer reviewers — https://arxiv.org/abs/2611.17052
+  - Hx2Dx — https://arxiv.org/abs/2611.14122
+- **bioRxiv/medRxiv** (partial sweep, version-1 posts only): about 30 keyword hits, 4 on-brief, all already open from yesterday and full text untested:
+  - Auditable harness for biomolecular dynamics simulations (`10.64898/2026.11.09.765490`)
+  - DE-Rigor-Agent (`…765522`)
+  - Claude-enabled IgE disruptor (`…765431`)
+  - Scientific Figure Library (`…765504`)
+- **PubMed** (last 5 days): 20 hits, 3 on-brief, none stronger: Queryome (PMID 43010075), GPCRAgent (43003299), ARPA-H ADVOCATE commentary (43009254).
+- **ChemRxiv, news, and funder pages:** not swept this run.
+=== 2026-11-13T02:11:48-08:00 done  biomedical-agentic-ai (exit 0) ===
