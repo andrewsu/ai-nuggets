@@ -4900,3 +4900,4 @@ I wrote today's Ollie's AI Pulse script and its two placeholder files. `SKIP_TTS
 - **Repeat check:** Fabian Theis (ran Nov 7) and Mercor (ran Nov 11) were excluded. Decision models came up before only as OpenAI's API; Google's model is new.
 - **Source failures:** the AlphaGenome page first downloaded as unreadable compressed data and worked on retry. I found no primary page for HoneyBench v0.2 beyond Goodhart Labs' post (the LessWrong pages only cover v0.1), so the script keeps it to a short, attributed mention.
 === 2026-11-12T02:35:51-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-13T02:15:23-08:00 ABORT jinglin-ai-pulse: not attempted (OAuth failure earlier in this run) ===

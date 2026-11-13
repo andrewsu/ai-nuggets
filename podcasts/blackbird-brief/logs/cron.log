@@ -4306,3 +4306,7 @@ Episode written. `SKIP_TTS=1` was set, so I stopped at stubs: no TTS, no R2 publ
 
 Deferred rather than shipped: PHP Biotech's mutant-p53 nanobody (single unsourced wire item, Clasp-adjacent — retry for a company release) and Gallaudet University's institutional position on gene editing (a stakeholder-acceptance story that deserves more than a 60-second mention).
 === 2026-11-12T02:23:55-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-13T02:10:13-08:00 start blackbird-brief ===
+Failed to authenticate. API Error: 403 Attention Required! | Cloudflare
+=== 2026-11-13T02:15:22-08:00 OAuth failure for blackbird-brief: Failed to authenticate. API Error: 403 Attention Required! | Cloudflare ===
+=== 2026-11-13T02:15:22-08:00 not retryable; aborting run (run /login on this host) ===

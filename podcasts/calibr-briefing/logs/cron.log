@@ -6517,3 +6517,4 @@ I wrote both of today's Calibr scripts and their RSS and commit-message stubs. `
 - **Read but not used:** VectorY $83.5M, Beeline's lupus data, Google Cloud's Gemini for Healthcare, Novocure's not-approvable letter for Optune Mya, MaxCyte buying Akron for $151.8M, the Natera–Incyte trial partnership, and STAT's piece on MFN pricing changing launches abroad (STAT+, mostly paywalled).
 - **Foresite portfolio:** I found no confirmed news on Wednesday's wires, and the headlines script says so.
 === 2026-11-12T02:32:09-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-13T02:15:23-08:00 ABORT calibr-briefing: not attempted (OAuth failure earlier in this run) ===

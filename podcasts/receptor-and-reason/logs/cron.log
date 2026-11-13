@@ -6502,3 +6502,4 @@ I did **not** revise the episode: the 11 items that shipped are read in full, ve
 
 The published artifacts are unchanged: script, RSS stub, and commit-msg stub for `2026-11-12-receptor-and-reason`, with 11 keys appended to the ledger.
 === 2026-11-12T03:02:29-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-13T02:15:24-08:00 ABORT receptor-and-reason: not attempted (OAuth failure earlier in this run) ===
