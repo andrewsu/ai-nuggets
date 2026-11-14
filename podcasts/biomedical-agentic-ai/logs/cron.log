@@ -6388,3 +6388,33 @@ I've written today's Biomedical Agentic AI script, on **NIBench**, plus its two 
 - **PubMed** (last 5 days): 20 hits, 3 on-brief, none stronger: Queryome (PMID 43010075), GPCRAgent (43003299), ARPA-H ADVOCATE commentary (43009254).
 - **ChemRxiv, news, and funder pages:** not swept this run.
 === 2026-11-13T02:11:48-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-14T02:00:10-08:00 start biomedical-agentic-ai ===
+I wrote today's episode on MDClaw. `SKIP_TTS=1` was set, so I only wrote the script and its two stub files. I did not run TTS, publish anything, edit `feed.xml` or commit; `publish_pending.py` does those after batch TTS.
+
+**Episode:** `podcasts/biomedical-agentic-ai/scripts/2026-11-14-mdclaw-the-files-passed-the-process-did-not.md` (1,094 spoken words; the cap is 1,150)
+- **Pick:** "An auditable harness for biomolecular dynamics simulations by AI agents" (MDClaw), from Yasuhiro Matsunaga's group at RIKEN. Posted to bioRxiv 11-11: https://www.biorxiv.org/content/10.64898/2026.11.09.765490v1
+- **Take:** the tools that check each step did most of the work. Agents went from 21 of 372 successful runs with the bare simulation software to 81–100% of systems passing all three runs. Removing the step-tracking graph barely changed the benchmark score (108 vs 103 of 120 model–system pairs). But 11 of 334 runs that passed every output check had actually skipped minimization or equilibration, or simulated a structure the agent had swapped in. With the graph, none of 343 successful runs did that. The script ties this back to yesterday's NIBench episode.
+- **Full text:** read in full through r.jina.ai on the `.full.pdf` (a direct curl got a 429). The bioRxiv details API confirmed the DOI.
+- **Novelty:** the MDClaw toolkit has been public since about July, so the script presents only the paper, its benchmark and the ablation as new.
+- **Stubs:** the `.rss-item.xml` parses as valid XML with the itunes namespace declared, and the `.commit-msg` is written.
+
+**Candidate funnel**
+- **arXiv:** the 500-entry cache is the same as yesterday's (11-10 to 11-12). A live 300-result query added nothing past 11-12, which is normal for a Saturday. 308 entries matched the keywords; the leftover runners-up from previous runs are still open:
+  - Science Prediction Universe (2611.15049)
+  - Mach2 (2611.14777)
+  - NIH data management plans drafted by LLMs (2611.14648)
+  - Skepthical, an AI peer-review audit (2611.17052)
+  - Neuro-VL (2611.15094), skipped because yesterday was also neuroimaging
+- **bioRxiv/medRxiv, 11-11 to 11-14:** 1,077 records, 60 keyword hits at version 1. On-brief items:
+  - **MDClaw (`...765490`) — CHOSEN**
+  - MedCheckpoint, pharmacovigilance agents (medRxiv `...26367711`)
+  - Octomod, building systems-biology models (`...766014`)
+  - DrugCon, contradictions across 224,756 trial abstracts (medRxiv `...26367856`)
+  - Vaccine-trial data model linked to vaccine and adverse-event ontologies (medRxiv `...26367833`)
+  - BenchmarkHub (`...26367866`), MENTOR (`...26367768`), Lotus AI enrollee study (`...26367291`)
+  - Carried over from earlier days: DE-Rigor-Agent (`...765522`, its PDF got a 429), IgE disruptor (`...765431`, jina says the page isn't fully loaded yet, so retest)
+- **Not swept this run:** ChemRxiv, PubMed, news and funder pages. The candidates above were enough to make the pick.
+- **Dedup:** I grepped every show's scripts and feeds for each candidate ID and name, with yesterday's NIBench ID as a known-shipped control; it was found, so the check works. No collisions.
+
+I added today's run notes and open deferrals to the deferral memory file. They suggest that tomorrow's pick avoid another "harness and provenance" story, which favors DrugCon or the vaccine ontology paper over MedCheckpoint and Octomod.
+=== 2026-11-14T02:06:09-08:00 done  biomedical-agentic-ai (exit 0) ===
