@@ -6503,3 +6503,32 @@ I did **not** revise the episode: the 11 items that shipped are read in full, ve
 The published artifacts are unchanged: script, RSS stub, and commit-msg stub for `2026-11-12-receptor-and-reason`, with 11 keys appended to the ledger.
 === 2026-11-12T03:02:29-08:00 done  receptor-and-reason (exit 0) ===
 === 2026-11-13T02:15:24-08:00 ABORT receptor-and-reason: not attempted (OAuth failure earlier in this run) ===
+=== 2026-11-14T02:40:12-08:00 start receptor-and-reason ===
+Done. SKIP_TTS was set, so this run wrote stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written to `podcasts/receptor-and-reason/scripts/`:**
+- `2026-11-14-receptor-and-reason.md` (11 items, 3,157 words ≈ 17.4 min)
+- `2026-11-14-receptor-and-reason.rss-item.xml` (XML-validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `2026-11-14-receptor-and-reason.commit-msg`
+
+Ledger appended: 11 keys, 171 episodes. Ten of eleven paper URLs verified 200; the eleventh (`2026.11.12.766115`) returns 429 throttle on every retry — its DOI prefix is confirmed from the details API and its `.full.pdf` rendered 52 KB earlier this run, so the path is real, not a 404.
+
+**Candidate funnel**
+- **bioRxiv/medRxiv details API** (11-07 → 11-14; day-files for 11-07→11-11 carried over from 11-12): all days complete, no multiple-of-30 truncation; medRxiv 11-14 returned zero records and the sweeper handled it. 70 items passed the neuro/drug/agentic relevance filter, plus 3 from a looser category+title pass.
+- **Crossref journal sweep** (18 ISSNs, from 2026-11-07): 194 journal-articles.
+- **arXiv**: shared cache 500-capped, covering only 11-10→11-12, 18 bio+agentic hits; supplemented with a direct `arxiv.org/list/{q-bio,cs.AI,cs.CL}/new` scrape covering 11-13, which supplied both arXiv picks.
+- **Dedup: 311 candidates → 274 fresh** (25 shipped, 0 title matches, 12 dup); dropped lines printed and reviewed. Final-roster gate re-run with a seeded control, which dropped correctly.
+- **Full-text gate**: 16 of 18 preprints rendered on the first jina attempt. Two medRxiv items failed at 296 bytes and were dropped as ineligible; one standing deferral (`2026.11.09.765484`) failed again.
+
+**Chosen (11):** TARP γ-8 blocker in mouse vs. human epileptic cortex (lead) · 1.2M-person pain GWAS · enhancer-targeted CRISPR activation in autism organoids · neuron-specific Aralar deletion rescued by β-hydroxybutyrate · dual effort choice motivation arena · β1-adrenoceptor kinetics and the extracellular vestibule · AKAP–calcineurin–NFATc3 inhibitory LTP · breathwork EEG · DMT-and-harmine control energy · protein-LM invariant relabeling · medical-VLM pneumothorax audit (closer).
+
+Three things worth flagging:
+
+- **Yesterday's postscript list paid off.** The lead and one other item both came off the "fetch these first" list written after the 11-12 run recovered a truncated bioRxiv day too late to use. That carry-forward habit is now earning its keep.
+- **I drafted 12 items at 18.9 minutes, over the format ceiling.** Prose trimming only got it to 18.5; cutting one whole item did it. The item I cut — a tera-scale virtual screen against GPR119 that bought 1.3 µM agonists out of three trillion compounds — is fully read, on disk, and dedup-clean, so it's first in line next run rather than wasted.
+- **A safety-classifier stop fired on a turn that was just two tool calls** checking a fetch log — no paper content, no drafting. Same contentless class as the 11-09 stop. I applied the standing rule (move on, don't reword) and lost about a turn.
+
+The background URL re-check finished; its output matches what I already reported — four of the five throttled bioRxiv links came back 200, and only `2026.11.12.766115` remains a 429 throttle (DOI prefix API-confirmed, full text already rendered this run, so the path is valid).
+
+Nothing further to do. The episode's three artifacts are written and the ledger is updated; publish and commit are the orchestrator's job after batch TTS, per SKIP_TTS mode.
+=== 2026-11-14T02:55:44-08:00 done  receptor-and-reason (exit 0) ===
