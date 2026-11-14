@@ -6518,3 +6518,40 @@ I wrote both of today's Calibr scripts and their RSS and commit-message stubs. `
 - **Foresite portfolio:** I found no confirmed news on Wednesday's wires, and the headlines script says so.
 === 2026-11-12T02:32:09-08:00 done  calibr-briefing (exit 0) ===
 === 2026-11-13T02:15:23-08:00 ABORT calibr-briefing: not attempted (OAuth failure earlier in this run) ===
+=== 2026-11-14T02:20:11-08:00 start calibr-briefing ===
+I've written both of today's Calibr scripts and their stubs. `SKIP_TTS=1` was set, so I didn't run TTS, publish, edit `feed.xml` or commit; the orchestrator does those after the batch TTS run. Friday's run was aborted after the OAuth failure, so today's episodes cover both Thursday and Friday.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-11-14-pharma-headlines.txt`, about 1,240 words, plus `.rss-item.xml` and `.commit-msg`.
+- `2026-11-14-fda-national-priority-voucher-shelved-spotlight.txt`, about 1,410 words, plus `.rss-item.xml` and `.commit-msg`.
+- Both RSS stubs parse as valid XML. Neither script cites a preprint, so the pre-commit URL check doesn't apply.
+
+**Spotlight choice:** Reuters reported Thursday that the FDA has quietly shelved its national priority voucher program, which promised one-to-two-month reviews. HHS says the program is ongoing. The script covers who is still exposed, including Compass's pending psilocybin filing, and why Revolution Medicines' fast approval apparently never went through the political council. It also covers why the legally authorized, sellable pediatric vouchers still sell for about $200M. It's the only story this week that touches every company planning a filing.
+
+**Candidate funnel**
+- **Sources:** Endpoints RSS (17 items in window), STAT (20), BioPharma Dive (6), GEN (6), Clinical Trials Arena (10, all late write-ups from the American Heart Association meeting, which we covered 11-08), pharmaphorum (10), BioSpace news and press-release listings (about 60), Google News RSS (about 40 queries), WebSearch.
+- **Failed sources:**
+  - Fierce Biotech and Fierce Pharma articles came back from r.jina.ai as a tracker-pixel stub, so I found their stories through Google News instead.
+  - Endpoints article bodies were paywalled.
+  - BioSpace `/rss/news` returned 404, so I scraped the listing pages instead.
+  - The Reuters exclusive was read through rewrites in PharmExec, BioPharm International, Pharmaceutical Technology and BioSpace.
+  - WebSearch lagged a day or two: it said the Imfinzi approval hadn't happened. Trade press confirmed it had.
+- **Dropped as already covered:** argenx buying Unnatural Products (covered 11-10/11-11; WSJ ran it late), Biohub's virtual cell project (10-08), the AHA trials (pelacarsen, CTX310, plozasiran; 11-08), Neurosterix (11-12), and BioNTech buying a voucher from Scholar Rock (11-12, used only as context in the spotlight). The dedup control term (Sunharbo) matched as expected.
+- **Dropped for lack of sources:** Lilly CEO Dave Ricks vs. Dario Amodei on AI cure timelines (I couldn't find a primary source), AstraZeneca cutting 600 US sales jobs and Charles River buying Frontage labs (Bloomberg and Fierce headlines only), and Generate Biomedicines' Q3 results.
+- **Chosen:**
+  - Spotlight: FDA shelves the voucher program — https://www.biospace.com/fda/fdas-commissioner-voucher-program-reportedly-shuttered-ahead-of-senate-vote-on-overton , https://www.pharmexec.com/view/fda-shelves-commissioner-national-priority-voucher-program-report , https://www.biopharminternational.com/view/fda-reportedly-shelves-national-priority-voucher-pilot-and-pauses-crl-publication
+  - Rezolute upLIFT Phase 3 — https://mugglehead.com/rezolute-uplift-tumor-hyperinsulinism-phase-3-results/
+  - Imfinzi + Padcev approval (VOLGA) — https://www.onclive.com/view/fda-approves-durvalumab-plus-enfortumab-vedotin-for-cisplatin-ineligible-mibc
+  - Regeneron baloncibart in POTS — https://www.biospace.com/drug-development/regenerons-pots-antibody-curbs-heart-rate-spikes-teeing-up-phase-3-trial
+  - Kyverna miv-cel filing, KYV-102 shelved — https://www.biospace.com/business/arrowheads-ionis-problem-kyvernas-next-gen-end-and-more-biotech-earnings
+  - EU drug committee (CHMP) November opinions — https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-9-12-november-2026
+  - Windward IPO and Rezera postponement — https://www.biospace.com/business/windward-nets-175m-ipo-bringing-2026-biotech-debuts-to-35 , https://pharmaphorum.com/news/windward-bio-catches-175m-its-ipo
+  - BMS R&D reorganization — https://www.biospace.com/business/bms-r-d-head-to-depart-amid-restructure
+  - Biolojic BD200 cleared to start trials (AI item) — https://www.biopharminternational.com/view/fda-clears-ind-for-biolojic-s-bd200-the-first-ai-designed-multibody-adc-to-enter-clinical-trials
+  - Cellectis layoffs — https://www.biospace.com/job-trends/cellectis-could-cut-70-of-workforce-in-shift-to-in-vivo-therapies
+  - Takeda Orzeyful launch — https://pharmaphorum.com/news/rapid-dea-review-clears-way-takedas-narcolepsy-launch
+- **Foresite portfolio:** I found no confirmed news on Thursday's or Friday's wires, and the headlines script says so.
+- **Ivonescimab:** no FDA decision had surfaced by Friday night, so the look-ahead says it's pending.
+
+I also added a note to the news-access memory: WebSearch can miss news from the last day or two, and the reliable way to find article URLs is Google News plus a scrape of each outlet's listing page.
+=== 2026-11-14T02:32:54-08:00 done  calibr-briefing (exit 0) ===
