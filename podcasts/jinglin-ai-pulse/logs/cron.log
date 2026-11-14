@@ -4901,3 +4901,42 @@ I wrote today's Ollie's AI Pulse script and its two placeholder files. `SKIP_TTS
 - **Source failures:** the AlphaGenome page first downloaded as unreadable compressed data and worked on retry. I found no primary page for HoneyBench v0.2 beyond Goodhart Labs' post (the LessWrong pages only cover v0.1), so the script keeps it to a short, attributed mention.
 === 2026-11-12T02:35:51-08:00 done  jinglin-ai-pulse (exit 0) ===
 === 2026-11-13T02:15:23-08:00 ABORT jinglin-ai-pulse: not attempted (OAuth failure earlier in this run) ===
+=== 2026-11-14T02:30:12-08:00 start jinglin-ai-pulse ===
+I wrote today's Ollie's AI Pulse script and its two placeholder files. `SKIP_TTS=1` was set, so I didn't generate audio, upload it, edit `feed.xml`, or commit; the batch job (`publish_pending.py`) does those after the nightly audio run.
+
+**Files written** in `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-11-14-traces-survive.md`: about 1,915 spoken words, roughly 12–13 minutes. It covers two days, because Friday's run was aborted after the OAuth failure.
+- `2026-11-14-traces-survive.rss-item.xml`: the feed entry, with `__LENGTH__` and `__DURATION__` left for the batch job to fill in. It parses as valid XML once the iTunes namespace is declared, as it is in the feed.
+- `2026-11-14-traces-survive.commit-msg`
+
+**Theme: "traces survive."** The episode is about what still shows through after the fact: in a model's weights, in an evaluation's server logs, and on an investor slide. The script includes the usual Anthropic disclosure.
+
+**What I looked at, by source:**
+- **Latent Space AINews, Nov 13 and Nov 14 (X recap):** about 90 items scanned and 10 shortlisted. I re-read 15 of the posts directly through fxtwitter.
+  - ✅ Will Depue's checkpoint forensics finding Blackwell chips behind Chinese models, plus his reply and the pushback from Teortaxes and O'Neill: https://x.com/willdepue/status/2120992457630326841
+  - ✅ Epoch AI's incident report on the Trajectory Labs agents, read in full: https://epoch.ai/publications/incident-report-ai-agents-attempted-exploits-on-our-website
+  - ✅ Anthropic's safety-evaluation recommendations, read in full: https://www.anthropic.com/research/building-strong-safety-evaluations
+  - ✅ Jacob Coxon's post on the Anthropic roadshow slide, with Teortaxes' reply: https://x.com/hilbertspaess/status/2121331333654086124
+  - ✅ Rylan Schaeffer's critique of Goodfire's neuron paper, short mention as a callback to the Nov 11 Deep Cut: https://x.com/RylanSchaeffer/status/2121305746151514209
+  - ✅ PostTrainBench result for Fable 5.2, one line credited to its author: https://x.com/full__rank/status/2120947706499928335
+  - Not used:
+    - Gemini 4 Hydrogen
+    - Inkling 2 Small: covered Nov 6.
+    - The No AI Slop manifesto
+    - Raschka's list of decision models: the topic ran Nov 12.
+    - llama.cpp 1.0
+    - CoreWeave Q3
+    - ERNIE 5.5 Flash
+- **Money (last 7 days):** 3 candidates, 2 used.
+  - ✅ NVIDIA's CEO transition, read in full. I left out the details of the personal-conduct reports. https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition/
+  - ✅ LangChain's $300M at a $3B valuation, read in full: https://www.langchain.com/blog/series-c
+  - Not used: Cohere buying cubic.
+- **Podcasts (last 14 days):** checked the Cognitive Revolution, Dwarkesh, MLST, No Priors, Interconnects and TWIML feeds.
+  - ✅ Dwarkesh Patel, "The avalanche that hit math is coming for AI development" (Nov 13): the full essay text plus appendix and footnotes, which he also narrates as the episode. https://www.dwarkesh.com/p/rsi
+  - Not used:
+    - No Priors with Max Jaderberg of Isomorphic Labs (Nov 12): on-target for Ollie, but there's no transcript. It's a good Deep Cut candidate if it gets transcribed.
+    - Cognitive Revolution, Nathan Labenz's Bletchley keynote (Nov 14).
+    - TWIML's Canva episode: off-topic.
+- **Repeat check:** I grepped the past scripts for every story's name and URL, using a term I know has shipped before as a control. Only today's script matched. The one earlier Depue mention (Oct 8) is about a different topic.
+- **Source failures:** none. Latent Space, fxtwitter, Epoch, Anthropic, NVIDIA, LangChain and Dwarkesh all returned full pages.
+=== 2026-11-14T02:35:12-08:00 done  jinglin-ai-pulse (exit 0) ===
