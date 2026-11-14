@@ -4310,3 +4310,59 @@ Deferred rather than shipped: PHP Biotech's mutant-p53 nanobody (single unsource
 Failed to authenticate. API Error: 403 Attention Required! | Cloudflare
 === 2026-11-13T02:15:22-08:00 OAuth failure for blackbird-brief: Failed to authenticate. API Error: 403 Attention Required! | Cloudflare ===
 === 2026-11-13T02:15:22-08:00 not retryable; aborting run (run /login on this host) ===
+=== 2026-11-14T02:10:11-08:00 start blackbird-brief ===
+Today's Portfolio Watch (Saturday, November 14) is written. `SKIP_TTS=1` was set, so I only wrote the stubs: no audio, no R2 upload, no `feed.xml` edit and no commit. `publish_pending.py` handles those.
+
+**Files**
+- `scripts/2026-11-14-portfolio-watch.md`: about 1,370 spoken words, roughly 7.5 minutes, plus show notes.
+- `scripts/2026-11-14-portfolio-watch.rss-item.xml`: the feed entry with `__LENGTH__` and `__DURATION__` placeholders. It parses as valid XML.
+- `scripts/2026-11-14-portfolio-watch.commit-msg`: the one-line commit message.
+- `state/shipped.jsonl`: 5 keys added (129 episodes now).
+- `memory/blackbird-portfolio.md`: the Adventris, Aletira and Winnow entries were edited in place and their dates updated.
+
+**Today's items**
+1. **Lead, Adventris:** a Nature Reviews Drug Discovery news piece (Nov 13) quotes Adventris's chairman, Andrew Allen, making the case for off-the-shelf KRAS cancer vaccines. In the same piece, Ira Mellman of the Parker Institute argues for personalized vaccines but concedes they run short of targets in pancreatic cancer, which is Adventris's indication. The script names two follow-ups: ask Adventris for measured data behind its claim to cover over 90% of patients' immune types, and look into the new $200M NCI/FNIH cancer vaccine initiative as a place to get trial data.
+2. **Aletira:** Scholar Rock sold a rare pediatric disease voucher to BioNTech for $205M (confirmed in its SEC filing). In the same week, the FDA reportedly shelved the commissioner's separate voucher program. The suggested actions are to have regulatory counsel confirm whether a GJB2 indication qualifies, and to add the voucher to Aletira's financing model.
+3. **Winnow:** Kyverna filed the first marketing application for a CAR-T in an autoimmune disease. It also dropped its cheaper next-generation manufacturing process, which leaves room for an engager to compete on access and cost.
+4. **COPD theme and the IPO market:** Windward Bio raised about $225M in its IPO (including $50M from Sanofi) for a twice-yearly antibody in asthma and COPD. Rezera postponed its own IPO the day Windward priced.
+
+**Things to know**
+- **Dedup check:** my first known-shipped control used a different URL for the same Neurosterix story, and the filter let it through. Re-run with the key actually shipped on 11-12, it was dropped as expected, so the filter is working. Final count: 6 candidates, 5 fresh.
+- **Not in the episode:** I couldn't confirm that Adventris's Andrew Allen is the Gritstone co-founder of the same name, so the script leaves that out. It's logged as a diligence question.
+- **Deferred:** Vasa Therapeutics' VS-041 heart-failure result (fits the cardiac fibrosis theme), because I couldn't find the company's own release. It should be retried.
+- **Correction:** the 11-11 notes said Windward's drug targets IL-33. It actually targets TSLP, and the show notes say so.
+
+**Candidate funnel**
+- **Sources:**
+  - Google News: 54 search terms over 3 days.
+  - Endpoints RSS: 24 items, paywalled, so headlines only.
+  - STAT RSS: 20 items.
+  - BioPharma Dive RSS: 10 items; article pages returned 403.
+  - GEN RSS: 10 items.
+  - BioSpace: news and press-release indexes.
+  - SEC EDGAR full-text search.
+  - Crossref and nature.com.
+- **Failed:**
+  - Fierce Biotech and Fierce Pharma RSS returned 403; skipped after one try.
+  - BioBuzz's feed had nothing newer than September.
+  - The 11-13 run had failed on authentication, so I widened the window to cover Nov 11–14.
+- **Chosen:**
+  - ✅ Cancer vaccine development gets complicated (NRDD) — https://www.nature.com/articles/d41573-026-00181-8
+  - ✅ Scholar Rock voucher sale 8-K — https://www.sec.gov/Archives/edgar/data/1727196/000119312526454423/srrk-20261110.htm
+  - ✅ FDA's commissioner voucher program reportedly shuttered (BioSpace) — https://www.biospace.com/fda/fdas-commissioner-voucher-program-reportedly-shuttered-ahead-of-senate-vote-on-overton
+  - ✅ Kyverna completes BLA, drops KYV-102 — https://www.sec.gov/Archives/edgar/data/1994702/000119312526457040/kytx-ex99_1.htm
+  - ✅ Windward nets $175M IPO (BioSpace) — https://www.biospace.com/business/windward-nets-175m-ipo-bringing-2026-biotech-debuts-to-35
+- **Shortlisted, not chosen:**
+  - Vasa VS-041 (deferred, no primary release found)
+  - Roche Gazyva backed in EU for lupus (headline only)
+  - argenx spending beyond Vyvgart (paywalled)
+  - Cellectis cutting 70% of staff
+  - HHS ibogaine funding
+  - Guardant $500M convertible
+  - Galleri endpoint miss (old story, already covered)
+  - PHP Biotech mutant-p53 nanobody (still only one unsourced wire item)
+  - Gallaudet position statement (still deferred)
+  - Gout items from Shanton and Dong-A (minor)
+
+Source for the Allen check: [Gritstone bio DEF 14A, FY2022](https://www.sec.gov/Archives/edgar/data/1656634/000114036122016548/ny20002602x1_def14a.htm). It confirms only that an Andrew Allen co-founded and ran Gritstone, not that he chairs Adventris.
+=== 2026-11-14T02:21:55-08:00 done  blackbird-brief (exit 0) ===
