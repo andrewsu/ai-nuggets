@@ -6555,3 +6555,46 @@ I've written both of today's Calibr scripts and their stubs. `SKIP_TTS=1` was se
 
 I also added a note to the news-access memory: WebSearch can miss news from the last day or two, and the reliable way to find article URLs is Google News plus a scrape of each outlet's listing page.
 === 2026-11-14T02:32:54-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-15T02:20:10-08:00 start calibr-briefing ===
+I've written both of today's Calibr scripts and their RSS and commit-message stubs. `SKIP_TTS=1` was set, so I didn't run TTS, publish, edit `feed.xml` or commit; the orchestrator does those after the batch TTS run. It's Sunday, so the trade press was quiet. The episode covers what landed late Friday and Saturday, after Saturday's run, plus a look at the week ahead.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-11-15-pharma-headlines.txt`, about 1,070 words, plus `.rss-item.xml` and `.commit-msg`.
+- `2026-11-15-gazyva-membranous-nephropathy-approval-spotlight.txt`, about 1,490 words, plus `.rss-item.xml` and `.commit-msg`.
+- Both RSS stubs parse as valid XML. Neither script cites a preprint, so the pre-commit URL check doesn't apply.
+
+**Spotlight choice:** On Friday the FDA approved Roche's Gazyva (obinutuzumab), the first drug ever approved for primary membranous nephropathy. Saturday's episode didn't cover it. The script covers:
+- **The trial:** in MAJESTY, 37% of patients on Gazyva were in complete remission at two years, against 6% on tacrolimus. The trial didn't show a kidney-function benefit, so the later secondary endpoints were never formally tested.
+- **The comparator:** the trial tested Gazyva against tacrolimus, not rituximab, the generic most doctors actually use. ClinicalTrials.gov shows Biogen, Vertex, Amgen and BeOne all chose tacrolimus as the comparator in their own trials too.
+- **The Calibr angle:** the disease is a good testing ground for plasma-cell drugs, BCMA T-cell engagers and CD19 CAR-T.
+- **Gap:** I found no analyst commentary and no US price, and the script says so.
+
+**Candidate funnel**
+- **Sources:** Endpoints RSS (8 items in window), STAT (16), BioPharma Dive (2), GEN (3), BioSpace (8), OncLive (30, including SNO coverage), Clinical Trials Arena (10), pharmaphorum (7), HCPLive RSS, Google News RSS (about 20 queries), WebSearch, ClinicalTrials.gov, PubMed.
+- **Failed sources:**
+  - Fierce `/rss/xml` returned 403.
+  - Endpoints article bodies were paywalled; I used their headlines only.
+  - Summit's and Moderna's newsrooms load their content with JavaScript, so I couldn't read them.
+  - Genentech had no release on the approval.
+- **Recency trap caught:** a Google News item dated Nov 13 said the FDA had approved Moderna's mRNA flu vaccine. That approval actually happened on Aug 6, and we covered it then, so I dropped it.
+- **Dropped:**
+  - AstraZeneca completing its $2B Summit investment (covered 11-10).
+  - The Amylyx LUCIDITY full data (topline was the 08-19 spotlight; I couldn't read the new release).
+  - Novo's etavopivat filing (sickle cell narration has stopped this show's drafts before).
+  - George Church quitting an AI startup (I couldn't confirm which startup).
+  - The HHS ibogaine funding (Wednesday news).
+- **Zipalertinib:** the trial data was covered in September and the start of the filing on 10-08. I kept the completed filing as a short item that points back to that coverage.
+- **Chosen:**
+  - Spotlight and headline 1, Gazyva in membranous nephropathy: https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-treat-adults-primary-membranous-nephropathy , https://www.hcplive.com/view/fda-approves-obinutuzumab-gazyva-for-primary-membranous-nephropathy
+  - Zipalertinib filing completed: https://www.onclive.com/view/nda-submission-completed-for-zipalertinib-plus-chemotherapy-in-frontline-egfr-exon-20-insertion
+  - Tovorafenib four-year FIREFLY-1 data at the neuro-oncology meeting (SNO): https://www.onclive.com/view/tovorafenib-sustains-treatment-free-intervals-in-r-r-braf-altered-pediatric-low-grade-glioma
+  - Rhapsido RemIND in inducible hives: https://www.clinicaltrialsarena.com/news/novartis-eyes-rhapsido-broader-use-positive-urticaria-cindu-data/
+  - Aravax PVX108 peanut Phase 2: https://www.clinicaltrialsarena.com/news/aravaxs-peanut-allergy-drug-shows-benefit-in-paediatric-patients/
+  - Windward closes 68% above its IPO price (Bloomberg and Reuters headlines found through Google News)
+  - Synchron pauses trials: https://www.statnews.com/2026/11/13/health-news-brain-implant-startup-pauses-trials/
+  - Quick items: Vivani (https://www.clinicaltrialsarena.com/news/vivani-encouraging-findings-npm-139-implant/), Milestone and Moderna (Endpoints headlines)
+- **Foresite portfolio:** I found no confirmed news, and the headlines script says so.
+- **Ivonescimab:** no decision had been announced by Sunday morning; the look-ahead says so.
+
+I added a note to the news-access memory: a Google News date can be when the article was re-indexed, not when the event happened, so check the event date before leading with an item.
+=== 2026-11-15T02:31:21-08:00 done  calibr-briefing (exit 0) ===
