@@ -6418,3 +6418,34 @@ I wrote today's episode on MDClaw. `SKIP_TTS=1` was set, so I only wrote the scr
 
 I added today's run notes and open deferrals to the deferral memory file. They suggest that tomorrow's pick avoid another "harness and provenance" story, which favors DrugCon or the vaccine ontology paper over MedCheckpoint and Octomod.
 === 2026-11-14T02:06:09-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-15T02:00:09-08:00 start biomedical-agentic-ai ===
+Waiting for the medRxiv half of the sweep to finish before closing out.
+
+I wrote today's script and its two stub files. `SKIP_TTS=1` was set, so I didn't run TTS, publish, edit `feed.xml` or commit; the batch orchestrator does those.
+
+**Episode:** "DE-Rigor-Agent — an RNA-seq agent that has to rule out each differential expression method before it runs one, because asking for rigor doesn't change what agents pick". The spoken body is 927 words (cap 1,150).
+
+- **What the paper shows:** coding agents pick DESeq2 or edgeR almost every time. They still do when the prompt explicitly asks them to consider method assumptions, and even on simulated data where edgeR's false discovery rate is 61–79% against a nominal 5%. DE-Rigor-Agent makes the agent test each method against expert-written "method cards" before any results exist, record a keep-or-reject decision for each, then run every method that survives.
+- **Caveats in the script:** it still kept edgeR in 4 of 10 runs in a setting where edgeR's false discovery rate was 61%. The same team wrote both the rules and the failures they planted, and there is no test on real data yet.
+- **Checks:** I read the full text (direct download was rate-limited, the r.jina.ai route worked). The duplicate check across all shows is clean, using a term from yesterday's episode to confirm the search works. A web search found no earlier coverage, and the bioRxiv API confirms the DOI. The RSS item parses as valid XML.
+
+Files:
+- `podcasts/biomedical-agentic-ai/scripts/2026-11-15-de-rigor-agent-asked-for-rigor-it-reached-for-deseq2-anyway.md`
+- the matching `.rss-item.xml`
+- the matching `.commit-msg`
+
+**Candidate funnel**
+- **bioRxiv + medRxiv** (11-12 to 11-15, fetched one day at a time): 808 records (801 unique), 43 keyword hits. Only 2 hits are new since yesterday's sweep, and both are false matches on "agent". 11-15 was empty on both servers at 2am, and the API ran at about one page per minute.
+- **arXiv cache:** 500 entries covering 11-10 to 11-12, unchanged since 11-13 (weekend). The biomedical hits were already shipped by this show or by receptor-and-reason.
+- **PubMed** (5 days): 174 hits; nothing that was fresh, readable and about agentic biomedical AI.
+- **News, ChemRxiv, funders:** web search found no November launches of biomedical AI agents.
+- **Shortlist:**
+  - ✅ **CHOSEN:** DE-Rigor-Agent — https://www.biorxiv.org/content/10.64898/2026.11.09.765522v1 (full text read)
+  - SEA-CDM vaccine-trial ontology (Oliver He's lab) — https://www.medrxiv.org/content/10.64898/2026.11.11.26367833v1. Read in full, but it isn't agentic and the gains are modest.
+  - DrugCon, contradictory drug–disease evidence — https://www.medrxiv.org/content/10.64898/2026.11.11.26367856v1. Full text isn't available yet, so it's deferred.
+  - Still open from earlier runs, not retested today: MedCheckpoint (`10.64898/2026.11.10.26367711`), Octomod (`10.64898/2026.11.11.766014`), the Claude-designed IgE antibody paper (`10.64898/2026.11.09.765431`), and Science Prediction Universe (arXiv 2611.15049).
+
+I added today's notes and the open deferrals to the memory file for future runs.
+
+Web search sources: [papersflow.ai DE subtopic](https://papersflow.ai/research/topics/bioinformatics-and-genomic-networks/differential-gene-expression-analysis), [ToolUniverse DESeq2 skill](https://tessl.io/registry/skills/github/mims-harvard/ToolUniverse/tooluniverse-rnaseq-deseq2), [K-Dense pydeseq2 skill](https://skillselion.com/skills/k-dense-ai/scientific-agent-skills/pydeseq2), [Stanford Biomni](https://news.stanford.edu/stories/2026/07/biomni-ai-powered-biomedical-co-scientist), [Stanford Daily, Virtual Biotech](https://stanforddaily.com/2026/10/14/ai-powered-biotech-could-shave-years-off-of-drug-discovery/)
+=== 2026-11-15T02:08:27-08:00 done  biomedical-agentic-ai (exit 0) ===
