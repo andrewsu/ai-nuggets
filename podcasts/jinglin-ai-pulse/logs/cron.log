@@ -4940,3 +4940,48 @@ I wrote today's Ollie's AI Pulse script and its two placeholder files. `SKIP_TTS
 - **Repeat check:** I grepped the past scripts for every story's name and URL, using a term I know has shipped before as a control. Only today's script matched. The one earlier Depue mention (Oct 8) is about a different topic.
 - **Source failures:** none. Latent Space, fxtwitter, Epoch, Anthropic, NVIDIA, LangChain and Dwarkesh all returned full pages.
 === 2026-11-14T02:35:12-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-15T02:30:11-08:00 start jinglin-ai-pulse ===
+I wrote today's Ollie's AI Pulse script for November 15, "the review gap", plus the two stub files. `SKIP_TTS=1` was set, so I did not generate audio, publish, edit `feed.xml` or commit. The batch job (`publish_pending.py`) will do those steps.
+
+**Files** (in `podcasts/jinglin-ai-pulse/scripts/`)
+- `2026-11-15-the-review-gap.md`: about 2,040 spoken words, roughly 12–13 minutes.
+- `2026-11-15-the-review-gap.rss-item.xml`: the feed entry with `__LENGTH__` / `__DURATION__` placeholders. It parses as valid XML once the itunes namespace is declared, which the feed does.
+- `2026-11-15-the-review-gap.commit-msg`
+
+**Episode contents.** The theme is that AI now produces work much faster than anyone can check it.
+- **Twitter Pulse:**
+  - the No AI Slop manifesto and the Hacker News pushback on its definition of slop;
+  - the Lovable data-exposure scan (passport records and 200K chat messages exposed);
+  - the ParseBench-2 "benchmark slop" fight, including a scoring bug worth 29 points;
+  - Google's Antigravity /teamwork results, and Mirrokni's correction of his claim about Tarjan's deque conjecture.
+- **Money Moves:**
+  - Cohere buys the code-review startup cubic.
+  - NVIDIA's customer financing deals. I could only read TechSpot's summary of the WSJ report, not the original, so the script presents it as reported.
+  - Nathan Lambert on open models after Jensen.
+- **Deep Cut:** Nathan Labenz's Bletchley Park keynote on The Cognitive Revolution (Nov 14). He argues for accelerating AI adoption while pausing frontier-scale training, and says "we are now late in the sweet spot". Quotes were checked against the published transcript.
+
+**Candidate funnel**
+- **Latent Space AINews:** latest issue is Nov 14; about 40 items scanned and 6 kept. The Nov 15 issue wasn't out yet at run time.
+- **Hacker News** (Algolia, last 40 hours, 80+ points): 52 stories scanned, 9 about AI.
+- **X** (via fxtwitter): 9 posts read in full, 7 used.
+- **Podcasts:** 6 feeds checked (Cognitive Revolution, MLST, Interconnects, Dwarkesh ×2 feeds, No Priors).
+  - The No Priors feed returned 10 bytes and was skipped.
+  - Dwarkesh's Nov 13 episode was already used yesterday.
+- **Source problem:** slopmanifesto.com hit the Scripps network's certificate interception, so I read it through r.jina.ai.
+- **Duplicate check:** none of today's main topics appeared in earlier scripts. The manifesto had only been listed as a source on Nov 14, not discussed. The check found the earlier "Depue" mentions as expected, so the search itself was working.
+
+Shortlist (✔ = used):
+- ✔ No AI Slop manifesto — https://www.slopmanifesto.com/
+- ✔ Lovable exposure report — https://www.crissyfield.de/research/lovable-en/
+- ✔ ParseBench-2 dispute — https://x.com/kushalbyatnal/status/2121374801159995835
+- ✔ Antigravity /teamwork + correction — https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/
+- ✔ Cohere acquires cubic — https://x.com/PaulSangleF/status/2121268469698101531
+- ✔ NVIDIA circular financing (TechSpot/WSJ) — https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular-financing-deals.html
+- ✔ Interconnects, "Open-source AI without Jensen" — https://www.interconnects.ai/p/open-source-ai-without-jensen
+- ✔ Deep Cut: Labenz, "AI, the Modern Enigma" — https://www.cognitiverevolution.ai/ai-the-modern-enigma-nathan-s-keynote-at-it-revolution-s-enterprise-ai-summit-at-bletchley-park/
+- ✘ OpenAI disbands robotics team (Fortune, via X; secondhand only) — https://x.com/deredleritt3r/status/2121329797842493943
+- ✘ Thinking Machines trains in 4-bit precision (NVFP4), Inkling 2 Small open weights — https://x.com/thinkymachines/status/2121353292878110868
+- ✘ "The Claude Delusion" blog post — https://www.netmeister.org/blog/claude-delusion.html
+- ✘ Weight Space Misfolding — https://www.alphaxiv.org/abs/2611.weight-space-misfolding
+- ✘ Cursor security-incident postmortem — https://cursor.com/blog/security-incident-update
+=== 2026-11-15T02:35:43-08:00 done  jinglin-ai-pulse (exit 0) ===
