@@ -6532,3 +6532,30 @@ The background URL re-check finished; its output matches what I already reported
 
 Nothing further to do. The episode's three artifacts are written and the ledger is updated; publish and commit are the orchestrator's job after batch TTS, per SKIP_TTS mode.
 === 2026-11-14T02:55:44-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-15T02:40:11-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-15-receptor-and-reason.md` — 2,941 spoken words, ~16.2 min, 11 items
+- `…2026-11-15-receptor-and-reason.rss-item.xml` — validated, `__LENGTH__` / `__DURATION__` placeholders in place
+- `…2026-11-15-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, 172 episodes
+
+**Spine:** what disappears into a mean.
+
+**Candidate funnel**
+- bioRxiv/medRxiv details API — 11-08→11-15 swept day-by-day (biorxiv 11-14 → 88, 11-15 → 0; medrxiv 11-14 → 4, 11-15 → 0; six earlier day-files carried over from 11-14). 68 on-topic after title+abstract scoring.
+- Crossref journal sweep (18 ISSNs, from-created-date 11-08) — 190 items; Elsevier/Wiley/OUP remain hard-blocked for full text, so discovery-only.
+- arXiv — shared cache 500-capped, covered 11-10→11-12 only (18 hits); `/list/{q-bio,cs.AI,cs.CL}/new` HTML scrape added 36. No source failed outright this run.
+- Dedup: **312 candidates → 268 fresh** (32 shipped, 0 title matches, 12 dups). Dropped lines printed. Final roster re-gated with a seeded control (`2026.11.10.765705`), which dropped correctly.
+
+**Chosen (all full-text read):** striatal dopamine lifespan peak at 28.5% of lifespan (lead) · TSHZ3/donepezil · cntnap2 OPC→PV myelination · FMRP synapse-type proteome · 5xFAD rolipram/VIP · GPR119 tera-scale screen · PTH1R endosomal Gs/arrestin · CAV3-NCX1 ultrasound · npj physician-oversight RCT · Neuro-VL · Open-BEATBox (closer). Five came off yesterday's carryover list at zero fetch cost.
+
+**Notes worth flagging:** medRxiv `.full.pdf` via jina failed on both attempts again (two consecutive runs now) — I've logged it as a degraded route. Two bioRxiv items posted 11-13 are still unrendered and queued for retest. A safety classifier stopped one tool-only turn mid-run; I pivoted rather than rewording, and it cost no roster slots.
+
+The background preprint fetcher was stopped at its time limit — reporting it for the record. It had no effect on the episode: all 11 picks were already read in full before drafting, and the worker's remaining four targets (`765753`, `765820`, `765451`, `766256`) are exactly the items already recorded in the run log as unfetched candidates for the next run. No restart needed.
+
+That was the wait-loop watching the fetch worker that itself was already stopped — it ended for the same reason and needs no restart. Nothing else is outstanding.
+
+Today's episode is complete: script, RSS-item stub, and commit-msg stub are on disk, the dedup ledger is appended (172 episodes), and the run log is recorded in memory. Per `SKIP_TTS=1`, I did not run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` picks those up after batch TTS.
+=== 2026-11-15T03:26:15-08:00 done  receptor-and-reason (exit 0) ===
