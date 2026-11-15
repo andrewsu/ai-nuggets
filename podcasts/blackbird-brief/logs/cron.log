@@ -4366,3 +4366,20 @@ Today's Portfolio Watch (Saturday, November 14) is written. `SKIP_TTS=1` was set
 
 Source for the Allen check: [Gritstone bio DEF 14A, FY2022](https://www.sec.gov/Archives/edgar/data/1656634/000114036122016548/ny20002602x1_def14a.htm). It confirms only that an Andrew Allen co-founded and ran Gritstone, not that he chairs Adventris.
 === 2026-11-14T02:21:55-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-15T02:10:10-08:00 start blackbird-brief ===
+Both episodes are written as stubs. `SKIP_TTS=1`, so I did not run `gen_tts.py`, publish to R2, touch `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Files written** (`podcasts/blackbird-brief/`)
+- `scripts/2026-11-15-radar-viscosity-primed-aged-t-cells.md` (1,613 spoken words, ~6 min) + `.rss-item.xml` + `.commit-msg`
+- `scripts/2026-11-15-portfolio-watch.md` (2,194 spoken words, ~8 min) + `.rss-item.xml` + `.commit-msg`
+- `state/shipped.jsonl` — 2 lines appended (2 + 6 keys; 131 episodes)
+- `memory/blackbird-portfolio.md` — edited in place: Winnow, DELFI, Aletira entries updated; new cardiac-fibrosis theme block; new Phillip-lab sourcing entry
+
+**Sourcing Radar — 2 picks, both full text read**
+1. **LEAD:** Jude Phillip's JHU BME lab (with UMB SoM Orthopedics and UMD College Park), *Nature Communications* — aged human T cells (57 donors, 18–93) keep migrating but lose deformability and sensing, a defect their own bulk analysis missed; elevated-viscosity priming restores a young-like phenotype via CXCR4/membrane tension/F-actin/Arp3. **Patent application filed.** Read: conditioning the starting material is a construct-agnostic manufacturing-step business; diligence habit = age-stratified, single-cell-resolved potency assays. Limits: transient, cytotoxicity never measured.
+2. GRIA1 A636T allele-specific ASO, *Neuron*, Huganir co-senior (full text via the authors' own preprint) — perampanel and a TARPγ8 blocker failed; a single neonatal gapmer dose rescued everything; the oligo's lethality was fixed by CpG methylation. Constraint is pre-symptomatic patient identification, and chain of title is Academia Sinica's.
+
+**Portfolio Watch — 5 items:** CHMP backs obinutuzumab in SLE while the same Roche release puts Lunsumio (CD20xCD3 engager) in the disease behind it (Winnow LEAD); ImvivaBio's allogeneic dual CD19/BCMA CAR-T at 88% DORIS/12 mo against 85% hypogammaglobulinemia; mFrag beats DELFI-style fragmentomics on DELFI's own test set with DELFI's co-founder as an author; Vasa's VS-041 plus the Utah AEBP1 paper giving the cardiac-fibrosis theme both its timing window and its enrichment biomarker; Gallaudet's position statement naming GJB2 (Aletira).
+
+**Funnel notes:** 1,891 preprints swept day-by-day; Fierce Biotech/Pharma RSS 403'd from this IP (one attempt, proceeded per PIPELINE); the *Nature Medicine* Tu-stroma ovarian paper with JHU co-authors was dropped as ineligible — paywalled with no preprint. The *Nature Medicine* and *Neuron* items above come from PubMed searches ([10.1038/s41591-026-04732-9](https://doi.org/10.1038/s41591-026-04732-9), [10.1016/j.neuron.2026.10.013](https://doi.org/10.1016/j.neuron.2026.10.013), [10.1038/s41467-026-78411-1](https://doi.org/10.1038/s41467-026-78411-1)). One honest caveat worth flagging: my first dedup control line used the URL form of yesterday's lead, which the ledger holds under its DOI, so it didn't trip; I re-probed with three known-shipped keys and all three were caught, confirming the filter is live.
+=== 2026-11-15T02:31:51-08:00 done  blackbird-brief (exit 0) ===
