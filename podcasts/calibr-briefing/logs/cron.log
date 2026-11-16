@@ -6598,3 +6598,68 @@ I've written both of today's Calibr scripts and their RSS and commit-message stu
 
 I added a note to the news-access memory: a Google News date can be when the article was re-indexed, not when the event happened, so check the event date before leading with an item.
 === 2026-11-15T02:31:21-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-16T02:20:40-08:00 start calibr-briefing ===
+I wrote both of today's Calibr scripts. `SKIP_TTS=1` was set, so I only wrote the scripts and the RSS-item and commit-message stubs. I did not generate audio, publish to R2, edit `feed.xml` or commit; the batch orchestrator does those steps.
+
+**Today's episodes**
+- **Headlines** (`2026-11-16-pharma-headlines.txt`, 1,182 words, about 6.5 minutes). That's a bit over the 3–5 minute target, in line with recent episodes.
+  1. The FDA rejected Summit and Akeso's ivonescimab.
+  2. J&J is reportedly in advanced talks to buy Ollin Biosciences for up to $3.4B.
+  3. Jensen Huang resigned as Nvidia CEO, and what that means for AI drug discovery.
+  4. Flagship opened a £100M "Origination Lab" in London.
+  5. Seawolf launched with $100M and a Sanofi deal worth up to $1.2B.
+  6. Sofinnova closed a €725M crossover fund.
+  7. Amylyx presented the full LUCIDITY data.
+  8. Cytokinetics' Myqorzo label now includes its head-to-head win over metoprolol.
+  9. Shanghai fired two researchers after a child's death in a gene-editing trial.
+  - It ends with three quick items and a look-ahead.
+- **Spotlight** (`2026-11-16-ivonescimab-fda-rejection-spotlight.txt`, 1,397 words, about 7.7 minutes): the ivonescimab rejection.
+  - The FDA asked for a statistically significant survival benefit. Summit says the agency told it that in advance, and HARMONi missed it at the primary analysis (p=0.057).
+  - The Rybrevant comparison: its 2024 approval came with a similar non-significant survival result, but survival was a secondary endpoint there and a primary one in HARMONi.
+  - The FDA's August 2025 draft guidance on overall survival, and the withdrawn patritumab deruxtecan application as the closer precedent.
+  - Akeso's share drop, with opposing analyst calls from Jefferies and Nomura.
+  - The question of Chinese trial data versus the one global trial, what it means for the rest of the class, and what HARMONi-3 now has to show.
+
+**Things to check before it ships**
+- The FDA letter isn't public. Everything about its reasoning comes from Summit's own account, and the scripts say so.
+- The J&J–Ollin deal is a Financial Times report, not a signed deal. The script calls it "advanced talks."
+- I wasn't sure what Helus's HLP003 is chemically, so the look-ahead just calls it "its psychedelic candidate."
+- I found no Foresite portfolio news. The briefing says so.
+
+**Candidate funnel**
+- **Trade RSS** (15 feeds, items since Friday 18:00 UTC): Endpoints 6, STAT 11, BioPharma Dive 5 (3 sponsored), BioSpace 9, GEN 4, Clinical Trials Arena 2, OncLive 30, HCPLive 20, pharmaphorum 2, TargetedOnc 9, PharmExec 1, NeurologyLive 6, AJMC 9. About 20 survived the relevance filter.
+- **Failed sources:**
+  - Fierce Biotech and Fierce Pharma RSS returned 0 items (Cloudflare stub).
+  - Fierce through the jina reader returned a tracker-pixel stub, including on retry.
+  - SCMP returned a Cloudflare challenge. I used biggo.com and sedaily.com mirrors instead.
+  - Endpoints and STAT+ bodies were lede-only.
+- **Google News RSS searches:** 9 queries. These found the J&J–Ollin, Flagship London, Cytokinetics label, Shanghai firings and Helus items.
+- **Duplicate check:** No headline item repeated earlier coverage. Ivonescimab has had four earlier spotlights (most recently 11-02), but the rejection is a new event, so I picked it anyway. Earlier headlines had only said the decision was pending. Avexitide's August topline is new full data. Nvidia and Huang appear only in an unrelated June headline mention.
+
+**Shortlist** (★ = used)
+- ★ Spotlight + headline: FDA rejects ivonescimab — https://www.biospace.com/drug-development/summits-pd-1xvegf-rejected-by-fda-in-lung-cancer
+  - Read in full: Summit press release, TargetedOnc, pharmaphorum, Biotech Distilled, biggo (Akeso call and analyst notes), sedaily.
+- ★ J&J in talks for Ollin, up to $3.4B (FT via Reuters) — https://mlq.ai/news/jj-in-advanced-talks-to-buy-eye-disease-biotech-ollin-biosciences-for-up-to-34-billion-ft-reports/
+- ★ Nvidia turmoil and life-sciences ties (GEN) — https://www.genengnews.com/topics/artificial-intelligence/stockwatch-amid-nvidia-turmoil-what-happens-to-its-life-sciences-collaborations/
+- ★ Flagship Origination Lab, London — https://european-biotechnology.com/latest-news/moderna-creator-flagship-pioneering-brings-100m-ai-lab-to-london/
+- ★ Seawolf $100M plus Sanofi deal — https://www.biospace.com/business/seawolf-surfaces-with-100m-1-2b-sanofi-pact-for-redosable-dna-medicines
+- ★ Sofinnova €725M crossover fund — https://www.biopharmadive.com/news/sofinnova-crossover-fund-ii-european-investment/874656/
+  - The page body was blocked, so this is headline-level only.
+- ★ Amylyx LUCIDITY full data — https://www.clinicaltrialsarena.com/news/amylyxs-avexitide-meets-primary-endpoint-lucidity-trial/
+- ★ Myqorzo label adds the MAPLE-HCM results — https://www.globenewswire.com/news-release/2026/11/16/3403219/35409/en/cytokinetics-announces-prescribing-information-for-myqorzo-aficamten-expanded-to-include-data-from-phase-3-maple-hcm.html
+  - Facts came from search summaries; the page itself returned an error.
+- ★ Shanghai fires gene-editing trial researchers — https://www.techtimes.com/articles/330725/20261114/girls-gene-editing-trial-death-shanghai-dismisses-two-researchers-over-unheeded-monkey-warnings.htm
+- ★ (quick) CagriSema REDEFINE 1 post hoc analyses — https://www.clinicaltrialsarena.com/news/novo-positive-redefine-1-results-cagrisema/
+- ★ (quick) Apple + OpenEvidence health chat study — https://www.statnews.com/2026/11/15/apple-openevidence-launch-health-chat-app-experiment-ai/
+- ★ (quick) STAT China Biotech Powerhouse 25 — https://www.statnews.com/2026/11/16/beone-hengrui-top-list-of-chinas-most-powerful-drugmakers/
+- ★ (look-ahead) Helus HLP003 Phase 3 APPROACH topline due today; Alzheimer's CTAD preview — https://www.biospace.com/drug-development/alzheimers-field-looks-beyond-amyloid-as-biopharma-converges-at-ctad-2026
+- Not used:
+  - BioSpace roundup of autoimmune setbacks (analysis piece).
+  - HLB's RGN-259 Phase 3 miss (minor).
+  - Candel delays its prostate cancer filing (Pharma Letter, couldn't verify).
+  - Biocon's pertuzumab biosimilar.
+  - Tandem's tubeless Mobi pump.
+  - Stephen Miller as White House chief of staff (policy, paywalled).
+
+I also added today's source-access notes to the news-sources memory file. The main one: biggo.com carried the Hong Kong analyst targets and Akeso conference-call quotes that US outlets didn't have.
+=== 2026-11-16T02:31:53-08:00 done  calibr-briefing (exit 0) ===
