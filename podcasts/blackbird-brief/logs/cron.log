@@ -4383,3 +4383,22 @@ Both episodes are written as stubs. `SKIP_TTS=1`, so I did not run `gen_tts.py`,
 
 **Funnel notes:** 1,891 preprints swept day-by-day; Fierce Biotech/Pharma RSS 403'd from this IP (one attempt, proceeded per PIPELINE); the *Nature Medicine* Tu-stroma ovarian paper with JHU co-authors was dropped as ineligible — paywalled with no preprint. The *Nature Medicine* and *Neuron* items above come from PubMed searches ([10.1038/s41591-026-04732-9](https://doi.org/10.1038/s41591-026-04732-9), [10.1016/j.neuron.2026.10.013](https://doi.org/10.1016/j.neuron.2026.10.013), [10.1038/s41467-026-78411-1](https://doi.org/10.1038/s41467-026-78411-1)). One honest caveat worth flagging: my first dedup control line used the URL form of yesterday's lead, which the ledger holds under its DOI, so it didn't trip; I re-probed with three known-shipped keys and all three were caught, confirming the filter is live.
 === 2026-11-15T02:31:51-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-16T02:10:40-08:00 start blackbird-brief ===
+Episode written. SKIP_TTS=1, so stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Published (staged for the orchestrator): Blackbird Brief — Portfolio Watch, 2026-11-16**
+`podcasts/blackbird-brief/scripts/2026-11-16-portfolio-watch.{md,rss-item.xml,commit-msg}` · ~2,040 spoken words · ledger appended (132 episodes, 754 match forms) · `memory/blackbird-portfolio.md` updated in place for Aletira, Winnow and NuGate.
+
+**Items**
+1. **LEAD (Aletira/SELEXON)** — Seawolf Therapeutics launches with $100M (Versant founding; Novartis Venture Fund, Eli Lilly, CRISPR Therapeutics) + up to $1.2B Sanofi licence, on a redosable DNA-carrying LNP aimed at AAV's one-shot limit. Read: tailwind — a DNA-LNP has no capsid tropism, so a splicing-level cassette is the only selectivity in the system. Action: prove SELEXON on a non-viral DNA payload before the Series A.
+2. **Winnow** — afimetoran's full Phase 2 in SLE (n=248): SRI-4 ~66% vs 34% placebo, flat across a 12-fold dose range. Flags the cross-trial comparison to yesterday's Gazyva item as a trap (placebo arms differ by 20 points) and pushes Winnow's first claim onto DORIS remission in refractory disease.
+3. **Winnow** — Commit Biologics' COM002 (complement engager, primate depletion without systemic cytokine release, first dosing early 2028): a third answer to the depletion question.
+4. **Winnow TPP follow-up** — Cellectis prices its September pivot at up to 70% of staff (~160 people), both CAR-T programs closed out, no human data from the in vivo editors until 2H 2027.
+
+**Funnel** — Google News RSS across 63 terms + 10 follow-ups; Endpoints (24), STAT (20), BioPharma Dive (10), GEN (10), BioBuzz (1, stale). Fierce Biotech/Pharma RSS 403 from this IP, one attempt each, not retried. Dedup: 4 candidates → 4 fresh against 750 keys; the control line (yesterday's Roche lead) correctly tripped the filter on both runs. WebSearch's index lagged both Monday items, so I scraped BioSpace section pages for slugs.
+
+Two things worth flagging:
+
+- **The day's biggest competitive event is deferred, not dropped.** QurAlis got FDA IND clearance for QRL-201 (STMN2-restoring ASO) enabling the pivotal CONQUR trial, announced with final ANQUR data (50% ALSFRS-R slowing at 10 mg, p<0.05). It's a direct NuGate item and I read the full release — but my first draft of the episode, which led on it, was stopped by a safety classifier mid-write. Per the standing rule I pivoted the roster rather than rewording the stopped draft. The item is fully documented in the show notes and in the NuGate reference entry as the lead candidate for 2026-11-17; it is **not** in the dedup ledger, so tomorrow's run will pick it up cleanly.
+- **Mitiperstat dropped on recency**, not relevance: the EMJ write-up is dated 11-15 but the *Eur Respir J* paper published online 2026-08-06.
+=== 2026-11-16T02:24:51-08:00 done  blackbird-brief (exit 0) ===
