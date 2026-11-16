@@ -6559,3 +6559,31 @@ That was the wait-loop watching the fetch worker that itself was already stopped
 
 Today's episode is complete: script, RSS-item stub, and commit-msg stub are on disk, the dedup ledger is appended (172 episodes), and the run log is recorded in memory. Per `SKIP_TTS=1`, I did not run TTS, publish to R2, edit `feed.xml`, or commit — `publish_pending.py` picks those up after batch TTS.
 === 2026-11-15T03:26:15-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-16T02:40:42-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-16-receptor-and-reason.md` — 2,952 words / ~16.2 min, 11 items, no URLs/DOIs/IDs in the spoken body
+- `.rss-item.xml` (validated XML, `__LENGTH__` / `__DURATION__` placeholders) and `.commit-msg`
+- Ledger appended: 11 keys, 173 episodes
+
+**Spine:** "the arrow and the target" — the thing you aimed at is frequently not the thing that moved.
+
+**Candidate funnel**
+- bioRxiv/medRxiv details API (11-09→11-16, day-by-day): healthy, 88/77/30 and 4/59/0 for the three new days; 69 items past the relevance filter
+- arXiv: shared cache 500-capped, covering only 11-11→11-13 (15 hits); the `/list/<cat>/new` HTML scrape gave 17 and supplied **both** arXiv picks — fifth run running that the scrape beats the cache
+- Crossref journal sweep (18 ISSNs, from 2026-11-12): 69 articles; none beat the preprints
+- Dedup: 183 candidates → 146 fresh (37 shipped, 0 title matches). Final roster re-gated with a seeded control, dropped correctly. Sibling-show grep over the last three days: clean.
+- Full-text: 8 of 8 attempted bioRxiv items rendered via jina `.full.pdf` (one 408 cleared on retry). Standing medRxiv pair failed a third consecutive run — closing it.
+
+**Two things worth flagging**
+1. The lead (VV147) contains its own rebuttal: serotonin depletion doesn't abolish the antidepressant effect and a weaker-SERT sibling compound works too. I wrote that into the item rather than around it — the dopamine dissociation is the finding; the mechanism is open.
+2. A safety-classifier stop fired mid-tool-call while I was extracting the Nature Neuroscience prelimbic-pain paper. Per the standing rule I didn't reword — I dropped that item and moved on, costing one roster slot. Notably this one had paper text in the call, unlike the three previous stops, which were contentless tool-only turns; I recorded that shift in the run log.
+
+The background fetch queue finished after the roster was already locked. Final tally: 8 of 12 rendered. Nothing changes about today's episode — the stubs and ledger are final — but two corrections went into the run log:
+
+- **medRxiv via jina is not dead.** Two medRxiv items rendered on the first try (TALQ at 101 KB, a prenatal-stimulant/OUD cohort at 51 KB). What's actually dead is the specific pair I'd been carrying — `26367161` and `26367856`, now 296 bytes on three consecutive runs. I closed those two and revised the route note: medRxiv is per-document like bioRxiv, worth queueing, just not at the head.
+- **I locked the roster before the queue drained again**, so both late renders were unusable. That's the same shape as the 11-12 miss. The fix I wrote down is to over-read by ~2 items so a late arrival is a swap rather than a rewrite.
+
+`765820` and `766141` failed a second run at 305 bytes — both posted within the last three days, so normal render lag; they stay on the retest list.
+=== 2026-11-16T02:53:31-08:00 done  receptor-and-reason (exit 0) ===
