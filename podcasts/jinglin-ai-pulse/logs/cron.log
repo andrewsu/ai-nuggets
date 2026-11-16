@@ -4985,3 +4985,49 @@ Shortlist (✔ = used):
 - ✘ Weight Space Misfolding — https://www.alphaxiv.org/abs/2611.weight-space-misfolding
 - ✘ Cursor security-incident postmortem — https://cursor.com/blog/security-incident-update
 === 2026-11-15T02:35:43-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-16T02:30:41-08:00 start jinglin-ai-pulse ===
+Today's episode script is written: **"what you keep"**, about 1,900 words (roughly 10–11 minutes). `SKIP_TTS=1` was set, so I didn't run TTS, publish or commit. I left the script and the two stubs (RSS item with `__LENGTH__`/`__DURATION__` placeholders, and the commit message) for the batch job.
+
+- `podcasts/jinglin-ai-pulse/scripts/2026-11-16-what-you-keep.md`
+- `podcasts/jinglin-ai-pulse/scripts/2026-11-16-what-you-keep.rss-item.xml` (the XML parses)
+- `podcasts/jinglin-ai-pulse/scripts/2026-11-16-what-you-keep.commit-msg`
+
+**Episode lineup**
+- **Twitter Pulse:**
+  - Qwen4-Max, released today and API-only. Its architecture is interesting, but Artificial Analysis scores it 43, ninth among the leading models and behind Kimi K3.1 Pro. Its two science demos differ: the coolant came out of a closed loop that produced a physical sample, while the NLRP3 drug design never left the computer.
+  - Who owns AI-written code: the "All AI-generated code should be Open Source" post and its rebuttals, ESLint ending paid contributions, and the "your agent will pick the hackable one" essay.
+- **Money Moves:** Treasury Secretary Bessent says NVIDIA must "go outside the company" for a new CEO and wants export-compliance answers within 10 days. The FT reports Huang is considering a comeback, and the WSJ reports a plan to name AI "national champions." The script notes NVIDIA reports earnings Tuesday.
+- **Deep Cut:** Max Jaderberg (Isomorphic Labs) on No Priors, in four steps: the "experimental accuracy" line on every leaderboard, data generated on purpose so models generalize, rats as "about 30% predictive" of human toxicity, and cleaner molecules making drug cocktails possible.
+
+**Things to know**
+- No Priors has no published transcript, so I transcribed the audio myself. The quotes come from that machine transcript, which garbled at least one name, so they may contain small errors.
+- I couldn't read the FT and WSJ reports. Those points come from Reuters summaries on CNA.
+
+**Candidate funnel**
+- **Latent Space AINews:** 12 items in the feed. Nothing new since Nov 14 (weekend gap), so none used.
+- **Hacker News (Algolia, last 60h, more than 60 points):** about 95 stories scanned, about 20 AI-related.
+  - ✅ Qwen4-Max — https://news.ycombinator.com/item?id=50513215
+  - ✅ All AI-generated code should be Open Source — https://news.ycombinator.com/item?id=50507303
+  - ✅ Your Agent Will Pick the Hackable One — https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/
+  - ✅ Jensen Huang might return / Bessent wants an outside CEO — https://www.channelnewsasia.com/business/bessent-says-nvidia-must-go-outside-company-find-new-ceo-6553196
+  - Steve Blank, What's Next for Nvidia — https://steveblank.com/2026/11/15/whats-next-for-nvidia/ (fetched, not used)
+  - Lutnick and chip rules (NYT, paywalled) — https://news.ycombinator.com/item?id=50506180
+  - Alpha School AI math results — https://news.ycombinator.com/item?id=50509953
+  - "Who is Hiring" postings near 12-year lows — https://www.hntrends.com/2026/november.html
+  - Already covered on Nov 15: Lovable, NVIDIA financing, Antigravity /teamwork
+- **Bluesky (stands in for X):** two searches, about 30 posts.
+  - ✅ Tim Kellogg on Qwen4-Max
+  - ✅ Asa Dotzler on AI code and the commons
+  - ✅ ESLint "Retiring the contributor pool" — https://eslint.org/blog/2026/11/retiring-contributor-pool/
+- **Reddit** (r/LocalLLaMA, r/MachineLearning, r/singularity): blocked, every request got an HTML block page. Skipped.
+- **Money:**
+  - ✅ NVIDIA CEO search and the "national champions" plan (CNA/Reuters)
+  - Agile Robots $500M at $8.5B: dropped, because search found no confirming report
+  - Bharat Semi $24M seed: too small
+- **Podcasts:**
+  - ✅ **Deep Cut:** No Priors with Max Jaderberg (Nov 12)
+  - Already covered: Interconnects (Nov 14) and Dwarkesh (Nov 13)
+  - WhynotTV: skipped, still no recent episodes
+- **Dedup:** grepped all shows for Qwen4, Jaderberg/Isomorphic, ESLint, Stearns and Jankiewicz, with a control term that matched as expected. All new to the feed.
+- **Source failures:** jina's news.google.com route was rate-limited (403 until 11:04 UTC); I went to the outlets' own pages instead. Web search was a day or two behind on the NVIDIA news, so I used CNA's site directly.
+=== 2026-11-16T02:37:34-08:00 done  jinglin-ai-pulse (exit 0) ===
