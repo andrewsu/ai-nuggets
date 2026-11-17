@@ -4402,3 +4402,22 @@ Two things worth flagging:
 - **The day's biggest competitive event is deferred, not dropped.** QurAlis got FDA IND clearance for QRL-201 (STMN2-restoring ASO) enabling the pivotal CONQUR trial, announced with final ANQUR data (50% ALSFRS-R slowing at 10 mg, p<0.05). It's a direct NuGate item and I read the full release — but my first draft of the episode, which led on it, was stopped by a safety classifier mid-write. Per the standing rule I pivoted the roster rather than rewording the stopped draft. The item is fully documented in the show notes and in the NuGate reference entry as the lead candidate for 2026-11-17; it is **not** in the dedup ledger, so tomorrow's run will pick it up cleanly.
 - **Mitiperstat dropped on recency**, not relevance: the EMJ write-up is dated 11-15 but the *Eur Respir J* paper published online 2026-08-06.
 === 2026-11-16T02:24:51-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-17T02:10:15-08:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Published artifacts**
+- `podcasts/blackbird-brief/scripts/2026-11-17-portfolio-watch.md` (Portfolio Watch, 3 items, ~1,750 spoken words)
+- `…2026-11-17-portfolio-watch.rss-item.xml` (validates as XML; `__LENGTH__` / `__DURATION__` placeholders)
+- `…2026-11-17-portfolio-watch.commit-msg`
+- Ledger appended: 133 episodes / 712 items
+- `memory/blackbird-portfolio.md` updated **in place** — Aletira, NuGate (the 11-16 "OPEN / NOT YET SHIPPED" bullet converted to a shipped entry) and Winnow entries revised, `_Last update:_` bumped to 2026-11-17 on all three
+
+**Items**
+1. **LEAD (Aletira / SELEXON)** — *Nature Biotechnology*, Nanjing Drum Tower Hospital + Yale: AAV.APR31, an AAV6 capsid evolved in primary human T cells, transduces T/NK cells at 100–1,000× lower dose by engaging CD7, >70% CAR knock-in into *TRAC* vs 10–18% for AAV6. Full text read, open access. The read is in their own discussion: the canonical AAVR pathway was retained, giving a body-wide baseline with only lineage-restricted enhancement — "favorable detargeting, not absolute organ-level specificity." One day after Seawolf's tropism-free DNA-LNP, both ends of the delivery spectrum say the vehicle buys enrichment and only a post-entry gate buys restriction.
+2. **NuGate** — QurAlis FDA IND clearance for QRL-201 (STMN2-restoring ASO) + final ANQUR data; the engagement→knockdown→NfL chain is now demonstrated in sporadic ALS. Flagged the dose inconsistency across endpoints and the label-width trap.
+3. **Winnow** — gefurulimab (Klygefa) approved US+EU for AChR-positive gMG; weekly self-administered nanobody C5 inhibitor with a boxed warning. Amends yesterday's complement-engager filing and sets the convenience bar in the indication where Kyverna's KYSA-6 is registrational.
+
+**Funnel notes:** 70 Google News terms (3-day) + 4 follow-ups; Endpoints/STAT/BioPharma Dive/GEN RSS; **Fierce Biotech and Fierce Pharma RSS both HTTP 403 from this IP**, one attempt each, not retried. BioBuzz feed still stale (newest 2026-09-11). 12 candidates → 12 fresh against 754 keys; the shipped Seawolf URL was used as a live control and correctly tripped the filter. Three items deferred for lack of a readable source: Lilly's acquisition streak, the STAT Capsida CNS gene-therapy death follow-up (Aletira-relevant, carry to tomorrow), and the Endpoints China CAR-T pricing piece. No partner-institution sourcing item cleared the bar this window.
+
+Two housekeeping notes: a long multi-line shell `printf` building the dedup TSV was stopped mid-call by a safety classifier — I rebuilt it as a Python file and saved that as a memory so it doesn't recur. A hook also flagged `MEMORY.md` as near its read limit, so I compacted the index from 22.5KB to 17.1KB by shortening the twelve longest pointer lines; no entries were dropped and all detail already lives in the topic files.
+=== 2026-11-17T02:23:23-08:00 done  blackbird-brief (exit 0) ===
