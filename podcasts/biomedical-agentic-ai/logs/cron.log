@@ -6480,3 +6480,31 @@ I also added today's run and the open deferrals to the show's memory file.
 - **Older deferrals still open (none opened today):** DrugCon, MedCheckpoint, an IgE-disrupting antibody design paper and Octomod. All are close to the two-week deferral cap.
 - **Dedup:** I grepped every candidate against the scripts of all shows, with the 11-14 MDClaw episode as a known-shipped control; every candidate came back clean and the control was found.
 === 2026-11-16T02:04:19-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-17T02:00:15-08:00 start biomedical-agentic-ai ===
+I've written today's Biomedical Agentic AI episode as stubs only. `SKIP_TTS=1` was set, so I didn't run TTS, publish, edit `feed.xml` or commit; the orchestrator does those after the batch TTS job.
+
+**Episode:** "LABEL — the knowledge graph knows who must not take a drug; Wikipedia, PubMed and the models trained on them mostly don't". It covers arXiv 2611.19166 (https://arxiv.org/abs/2611.19166), posted 11-14 by a Rensselaer group. I read the full text first. The spoken body is 979 words, under the 1,150 cap.
+- **Finding:** for the same 574 drugs from PrimeKG, Wikipedia and PubMed name a drug's uses about twice as often as who must not take it. The FDA label names both equally.
+- **Models:** language models follow the prose. Making Qwen 2.5 bigger, up to 14B, improves answers about uses but leaves contraindication answers near chance. When the models are given a passage that states the contraindication, they use it just as well.
+- **The script's point:** drug knowledge graphs built by mining text with language models will carry the same gap. For safety facts, curated databases and the FDA label are where the information actually is.
+
+**Files in `podcasts/biomedical-agentic-ai/scripts/`:**
+- `2026-11-17-label-prose-names-the-benefit-not-the-limit.md`
+- `.rss-item.xml` (parses as valid XML; contains the `__LENGTH__`/`__DURATION__` placeholders)
+- `.commit-msg`
+
+A safety classifier stopped one step of the run, a duplicate check on a different arXiv candidate about AI-assisted antibody design (2611.19812). I switched to a different topic rather than retry, and logged that candidate as not to be picked later.
+
+**Candidate funnel**
+- **arXiv** (shared cache, 500 entries, 11-13 to 11-16): 297 keyword hits, 30 biomedical and in window.
+  - **CHOSEN:** LABEL (2611.19166)
+  - Dropped after the classifier stop: antibody lead optimization with Claude in the loop (2611.19812)
+  - Runners-up: P2C, turning text into equation constraints (2611.19779); Mutation-to-Medication, LLMs and drug resistance (2611.19339); weight-space programming for computational biology (2611.20566); Calpha, protein folding inside an LLM (2611.20986)
+- **bioRxiv/medRxiv** (details API, 11-14 to 11-17, day by day): 649 records, 28 keyword hits, nothing posted on medRxiv for 11-17.
+  - SEA-Lab (10.64898/2026.11.12.766090): full text not available yet (17-byte 429, then a 494-byte jina reply), so deferred.
+  - TCS evaluation of orchestrator models (10.64898/2026.11.13.766436): full PDF read, but the result is modest.
+  - LabARIA (medRxiv 10.64898/2026.11.12.26367970): already logged as an open deferral on 11-16, carried forward.
+- **ChemRxiv, PubMed, news and funder pages:** not swept this run.
+
+I added the shipped episode, the no-retry note and the open deferrals to the show's run-log memory file.
+=== 2026-11-17T02:04:32-08:00 done  biomedical-agentic-ai (exit 0) ===
