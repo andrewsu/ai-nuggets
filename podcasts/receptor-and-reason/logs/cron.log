@@ -6587,3 +6587,30 @@ The background fetch queue finished after the roster was already locked. Final t
 
 `765820` and `766141` failed a second run at 305 bytes — both posted within the last three days, so normal render lag; they stay on the retest list.
 === 2026-11-16T02:53:31-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-17T02:40:17-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-17-receptor-and-reason.md` — 3,167 spoken words / ~17.4 min, 11 items covering 13 papers, no URLs/DOIs/IDs in the spoken body
+- `…2026-11-17-receptor-and-reason.rss-item.xml` — validated XML, `__LENGTH__` / `__DURATION__` placeholders, indentation and element order matched to existing feed items
+- `…2026-11-17-receptor-and-reason.commit-msg`
+- Ledger appended: 13 keys, 174 episodes
+
+**Spine:** "what the number is standing in for" — every item has a gap between the quantity recorded and the thing it's taken to mean.
+
+**Candidate funnel**
+- bioRxiv/medRxiv details API, 11-10→11-17 day-by-day (six day-files carried over from 11-16; 11-16 and 11-17 swept fresh). 225 on-topic after title+abstract scoring.
+- **The 11-16 day-file carried over at exactly 30 records — the multiple-of-30 truncation signature. Re-fetching returned 343.** That one re-fetch supplied the lead and five more picks.
+- arXiv — shared cache 500-capped, covering only 11-13→11-16; the `/list/<cat>/new` HTML scrape gave 983 and supplied both arXiv picks (sixth consecutive run it beats the cache).
+- Crossref journal sweep, 19 ISSNs from 11-10: 144 articles. Nothing usable — Nature-family bodies were a 9.7 KB shell and a 58 KB reference-list-only page.
+- Dedup: **685 candidates → 650 fresh** (35 shipped, 0 title matches). Final roster re-gated with a seeded control, dropped correctly.
+- Full text: 8 of 9 bioRxiv/medRxiv items rendered via jina `.full.pdf`; 5 of 5 arXiv via curl + mutool. No source failed outright.
+
+**Chosen (all read in full):** psilocybin chronic Neuropixels (lead) · 3q29 deletion DAT trafficking · median raphe state-dependent gating · intranasal cocaine PBPK *paired with* Denali TfR/CD98hc flux analysis · super-PUM *paired with* the PUM2-decoying circRNA · CHR-P neutral-face activation · stimulants in OUD pregnancy · TALQ · tool-first orchestrator comparison · SciResearch-Eval · VibeSyn (closer).
+
+**Two things worth flagging**
+
+1. **The sibling-show grep caught a same-day collision.** I had read `arxiv:2611.19166` (LABEL) in full and slotted it as the closer; the grep over `*/scripts/2026-11-1[0-7]*` found that biomedical-agentic-ai shipped it as *its* 2026-11-17 episode, hours earlier in the same cron run. The dedup ledger cannot see that — only the grep can, and only if it covers today's date. Swapped in VibeSyn. I also dropped a dedup-clean arXiv candidate (weight-space programming) as too topically adjacent to yesterday's item.
+
+2. **I lost ~15 minutes to the `.full` vs `.full.pdf` trap.** My first worker fetched `…v1.full`, which returns a 25-28 KB abstract-only landing page that superficially looks like a render (5-6 `##` headings). Restarted on `.full.pdf` with a `"Preview PDF"` guard rather than a byte-count test. Same lesson applies to Nature: heading *count* passed on an article that had no Main or Results section — the heading *names* are the test.
+=== 2026-11-17T02:55:19-08:00 done  receptor-and-reason (exit 0) ===
