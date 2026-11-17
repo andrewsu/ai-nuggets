@@ -6663,3 +6663,60 @@ I wrote both of today's Calibr scripts. `SKIP_TTS=1` was set, so I only wrote th
 
 I also added today's source-access notes to the news-sources memory file. The main one: biggo.com carried the Hong Kong analyst targets and Akeso conference-call quotes that US outlets didn't have.
 === 2026-11-16T02:31:53-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-17T02:20:16-08:00 start calibr-briefing ===
+I'll move on from that file and pick a different line of work for today's episode.
+
+Here's where the run stands:
+
+- **SKIP_TTS=1** is set, so this run writes scripts + stub files only (no TTS, no R2 publish, no feed edit, no commit).
+- News sweep is done: 15 RSS sources fetched, ~140 items since yesterday morning. Fierce Biotech/Pharma returned 0 items (feed empty from this IP) — noted as a source-level gap, not a blocker.
+- Clear candidate set for today (Tuesday, Nov 17): J&J/Ollin closing at $2.2B upfront with Blackstone funding the trial, Lilly's $1.5B Calytrix buy plus a separate up-to-$5.9B Stipple Bio cancer deal, FDA approval of giredestrant + everolimus in ESR1-mutated breast cancer, gefurulimab (Klygefa) approval in gMG, CG Oncology's cretostimogene Phase 3 win in intermediate-risk NMIBC, Helus' Phase 3 psychedelic readout with serious adverse events, CagriSema REDEFINE-1 details, Nuvation safusidenib data, a Capsida gene-therapy trial death follow-up, and CTAD opening with the AriBio readout.
+
+I stopped partway through reading a sibling show's draft for dedup context, and I'm not going to continue down that path. Rather than guess at how you want to proceed, tell me which of these you'd like as today's spotlight — my recommendation is the **Lilly deal pair** (Calytrix + Stipple, its 14th acquisition of the year) as the spotlight, with the FDA approvals and CG Oncology leading headlines. I'll need to fetch full text on the spotlight item before drafting, per the pipeline's full-text eligibility gate.
+=== 2026-11-17T02:23:52-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-17T02:23:52-08:00 no usable output for calibr-briefing; retrying in 180s ===
+=== 2026-11-17T02:26:52-08:00 start calibr-briefing (retry 1) ===
+I wrote both of today's scripts plus their RSS and commit stubs for 2026-11-17. `SKIP_TTS=1` was set, so I didn't generate audio, upload anything, edit `feed.xml` or commit; the nightly batch job handles those. Both RSS stubs parse as valid XML.
+
+The first attempt at this run stopped partway through without producing files, so the runner retried. This retry reused that attempt's news sweep and didn't continue its line of work.
+
+I picked Helus Pharma's Phase 3 depression result as the spotlight, over the Lilly deals and Roche's giredestrant approval. It's a pivotal readout with plenty of analyst commentary, a clear competitive story (Compass and Usona filed in the past two weeks), and a real tension between the numbers and the stock's drop.
+
+**Files** (in `podcasts/calibr-briefing/scripts/`)
+- `2026-11-17-pharma-headlines.txt` (about 1,240 words), with its `.rss-item.xml` and `.commit-msg`
+- `2026-11-17-helus-psychedelic-depression-phase3-spotlight.txt` (about 1,380 words), with its `.rss-item.xml` and `.commit-msg`
+
+**Leftover files:** two `2026-09-15-*.commit-msg` stubs from an earlier run are still in that folder. I didn't touch them.
+
+**Candidate funnel**
+- **News feeds:** 15 feeds swept, about 140 items since Monday morning. Fierce Biotech and Fierce Pharma returned no items from this host. Endpoints and STAT are paywalled, so I could only use their headlines.
+- **Google News:** 15 topic queries; about 5 more were cut off by rate-limiting. WebSearch hadn't indexed Monday's releases yet.
+- **Foresite portfolio:** no hits for Foresite Capital, Foresite Labs, Xaira, insitro or Calibr-Skaggs.
+
+**Shortlist** (★ = used)
+- ★ Spotlight and headline: Helus HLP003 APPROACH Phase 3. I read the full company release plus coverage from BioSpace, pharmaphorum, Stocktwits, Grafa and Rallies. — https://www.biospace.com/press-releases/helus-pharma-announces-positive-topline-results-from-phase-3-approach-study-evaluating-hlp003-as-adjunctive-treatment-in-major-depressive-disorder
+- ★ J&J buys Ollin, with Blackstone funding Phase 3 — https://www.biospace.com/deals/j-j-pays-2-2b-upfront-for-ollin-taps-blackstone-to-fund-eye-disease-trial
+- ★ Lilly buys Calytrix for up to $1.5B — https://www.biospace.com/business/lillys-early-stage-m-a-quest-finds-1-5b-deal-for-calytrixs-blood-cancer-work
+- ★ Lilly and Stipple Bio, up to $5.9B — https://www.biospace.com/press-releases/stipple-bio-announces-multi-target-multi-modality-oncology-research-collaboration-with-lilly
+- ★ FDA approves Wilserdly (giredestrant) plus everolimus — https://www.targetedonc.com/view/giredestrant-everolimus-fda-approval-esr1-breast-cancer
+- ★ CG Oncology wins PIVOT-006 — https://www.targetedonc.com/view/cretostimogene-pivot-006-phase-3-intermediate-risk-nmibc
+- ★ AriBio AR1001 at CTAD (read via Korea Biomedical Review) — https://www.koreabiomed.com/news/articleView.html?idxno=33870
+- ★ Klygefa approved in the US and EU — https://pharmaphorum.com/news/azs-alexion-extends-gmg-options-two-klygefa-approvals
+- ★ Iambic Q3 results — https://www.biospace.com/press-releases/iambic-provides-business-updates-and-third-quarter-2026-financial-results
+- ★ EC approves daraxonrasib — https://www.onclive.com/view/daraxonrasib-gains-ec-approval-in-previously-treated-metastatic-pancreatic-cancer
+- ★ Quick mentions:
+  - Nuvation safusidenib — https://www.clinicaltrialsarena.com/news/nuvation-updated-j201-data-safusidenib/
+  - Rein LTI-03 — https://www.clinicaltrialsarena.com/news/rein-phase-data-ipf-drug/
+  - IQVIA report (headline only) — https://www.biospace.com/business/rising-costs-leave-9-in-10-new-medicines-unprofitable-iqvia-finds
+- ★ Look-ahead: the Senate committee vote on FDA commissioner nominee Heidi Overton. I took the line that the White House is weighing next steps from a Washington Post headline only, because the article is paywalled.
+- **Not used:**
+  - CagriSema at lower doses (covered yesterday)
+  - Capsida trial-death follow-up (STAT+ paywall)
+  - Wegovy in children (no article body)
+  - Igalmi at-home approval and Aclaris' failed eczema trial (bodies not read)
+  - Cosentyx approval in polymyalgia rheumatica (not verified)
+  - New York Times on US biotech secrecy (paywalled)
+  - Follow-up analysis of the ivonescimab rejection (yesterday's spotlight)
+
+I also added a dated note to the news-access memory file: building BioSpace press-release URLs from the full headline worked for all three GlobeNewswire releases today, as long as you check the title on the page. That narrows an older note that said those URLs can't be guessed.
+=== 2026-11-17T02:36:57-08:00 done  calibr-briefing (exit 0) (retry 1) ===
