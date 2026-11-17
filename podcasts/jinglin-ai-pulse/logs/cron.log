@@ -5031,3 +5031,50 @@ Today's episode script is written: **"what you keep"**, about 1,900 words (rough
 - **Dedup:** grepped all shows for Qwen4, Jaderberg/Isomorphic, ESLint, Stearns and Jankiewicz, with a control term that matched as expected. All new to the feed.
 - **Source failures:** jina's news.google.com route was rate-limited (403 until 11:04 UTC); I went to the outlets' own pages instead. Web search was a day or two behind on the NVIDIA news, so I used CNA's site directly.
 === 2026-11-16T02:37:34-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-17T02:30:16-08:00 start jinglin-ai-pulse ===
+I've written today's script, **"who gets to look"**: about 2,060 spoken words, roughly 12 minutes. `SKIP_TTS=1` was set, so I didn't run TTS, publish or commit. I left the script and the two stub files for the batch job, and the RSS item parses as valid XML.
+
+- `podcasts/jinglin-ai-pulse/scripts/2026-11-17-who-gets-to-look.md`
+- `podcasts/jinglin-ai-pulse/scripts/2026-11-17-who-gets-to-look.rss-item.xml` (has `__LENGTH__`/`__DURATION__` placeholders)
+- `podcasts/jinglin-ai-pulse/scripts/2026-11-17-who-gets-to-look.commit-msg`
+
+**Episode lineup**
+- **Twitter Pulse 1:** OpenAI's first "embedded assessments," which let four outside safety groups (Apollo, METR, Transluce, Goodfire) work inside the company. Neel Nanda, Alex Mallen and Mikita Balesni listed what the assessors still can't see: no Slack, OpenAI picks which staff they talk to, and METR is limited to one training run. Apollo calls its minimum condition "meta-transparency": the right to say publicly what it couldn't check. The Information reports OpenAI looked at buying Goodfire for more than $5B.
+- **Twitter Pulse 2:** OpenAI and Google both widened free frontier-model access for scientists. OpenAI's "nearly doubling productivity" claim is narrower than it sounds: it's a 1.9x estimate that 251 survey respondents gave about their own work.
+- **Money Moves:**
+  - Perplexity crossed a $1B annual revenue run rate, with a jab at Anthropic's IPO.
+  - Yejin Choi and Carlos Guestrin launched Noeri with $110M to build many smaller AIs that customers own.
+  - The World Labs team officially joined AMD (one line only, since the deal was covered on Sept 29).
+- **Deep Cut:** Paul Christiano on the Dwarkesh Podcast (Nov 16), from the full published transcript, in four steps. The core point: penalizing a reward hack you caught teaches the model not to get caught. The takeaway ties this back to the embedded-assessment fight.
+
+**Caveats**
+- Search found no independent confirmation of Perplexity's $1B figure. It rests on Srinivas's own quote to Semafor, and the script attributes it to him.
+- The wrap mentions NVIDIA earnings without a date. Yesterday's episode put them on Tuesday (today), but I didn't confirm that.
+- At about 2,060 words the script is slightly over the 1,500–2,200 target's midpoint but inside it.
+
+**Candidate funnel**
+- **Latent Space AINews (Nov 17) and the BFL episode (Nov 16):** both read in full.
+  - ✅ OpenAI embedded assessments — https://openai.com/index/our-first-phase-of-embedded-assessments/
+  - ✅ Apollo's pilot post — https://www.apolloresearch.ai/blog/pilot-towards-embedded-evaluations
+  - ✅ OpenAI free access for scientists and its study — https://openai.com/index/expanding-chatgpt-for-academic-researchers/ and https://openai.com/index/science-at-the-frontier/
+  - ✅ Google Carbon for 10,000 scientists — https://x.com/GoogleDeepMind/status/2122366997501780327
+  - ✅ Perplexity $1B — https://x.com/semafor/status/2122456557602459903
+  - ✅ Noeri $110M — https://x.com/YejinChoinka/status/2122379749372907852
+  - ✅ World Labs joins AMD (one line) — https://x.com/drfeifei/status/2122377911873491397
+  - Claude appears to have memorized the LinuxArena control eval — https://x.com/adam_karvonen/status/2122492345656734020 (one vague tweet, not used)
+  - PyBot, a chatbot written by 1,000 agents — https://x.com/_lewtun/status/2122333622946373889 (not used)
+  - Corma $125M, Hy4 Flash, Together compiler: not used
+- **X posts:** about 20 read through the fxtwitter API (OpenAI, METR ×2, Transluce, Goodfire article, Nanda, Mallen, Balesni, Palazzolo, and others).
+- **Hacker News (Algolia, last 40h, more than 50 points):** about 85 stories, about 12 AI-related.
+  - Windows 11 coding-agent telemetry — https://xusheng.dev/posts/windows-coding-agent-telemetry/
+  - Buzzard, interpreting "checked in Lean" — https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/ (fetched, not used)
+  - Aristotle expands into Rust — https://www.harmonic.fun/news/aristotle-rust-verification/
+  - "Software is breaking down at a systemic level"; Wired on NVIDIA; Steve Blank on NVIDIA (already covered)
+- **Podcasts:**
+  - ✅ **Deep Cut:** Dwarkesh, Paul Christiano — https://www.dwarkesh.com/p/paul-christiano-2
+  - Latent Space BFL episode — https://latent.space/p/bfl/ (no transcript, not used)
+  - Cognitive Revolution, MLST, No Priors and Gradient Dissent: nothing new or not yet covered
+  - WhynotTV: still stale
+- **Dedup:** grepped all shows for every roster term, with a control term (Jaderberg) that matched as expected. World Labs was covered Sept 29, so it got one line. Goodfire and Carbon were covered earlier with different angles. Christiano last appeared Aug/Sep in other episodes.
+- **Source failures:** none. The r.jina.ai certificate was correct (no Scripps TLS interception).
+=== 2026-11-17T02:35:55-08:00 done  jinglin-ai-pulse (exit 0) ===
