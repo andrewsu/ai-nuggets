@@ -4421,3 +4421,21 @@ Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed 
 
 Two housekeeping notes: a long multi-line shell `printf` building the dedup TSV was stopped mid-call by a safety classifier — I rebuilt it as a Python file and saved that as a memory so it doesn't recur. A hook also flagged `MEMORY.md` as near its read limit, so I compacted the index from 22.5KB to 17.1KB by shortening the twelve longest pointer lines; no entries were dropped and all detail already lives in the topic files.
 === 2026-11-17T02:23:23-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-18T02:10:12-08:00 start blackbird-brief ===
+Episode written in SKIP_TTS mode (`$SKIP_TTS=1` verified as the first call of the run). No TTS, no R2 publish, no `feed.xml` edit, no commit — stubs only, per PIPELINE.md.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-11-18-portfolio-watch.md` (2,516 spoken words ≈ 7 min; `## Script` + `## Show notes`)
+- `podcasts/blackbird-brief/scripts/2026-11-18-portfolio-watch.rss-item.xml` (`__LENGTH__` / `__DURATION__` placeholders; XML parses)
+- `podcasts/blackbird-brief/scripts/2026-11-18-portfolio-watch.commit-msg`
+- `state/shipped.jsonl` — 3 keys appended (now 134 episodes / 715 items)
+- `memory/blackbird-portfolio.md` — three entries revised **in place** (Aletira, Adventris, §4 regulatory), `_Last update:_` bumped on each
+
+**Episode: Portfolio Watch, window 2026-11-15 → 2026-11-18, three items**
+
+1. **LEAD (Aletira / SELEXON) — Marrow Therapeutics' $173M launch.** TfR1 antibody-siRNA conjugate (TAB); MAR-101 knocks down BCL11A to reactivate fetal hemoglobin in SCD + beta thal, IND-enabling. Their own selectivity claim is a *quantitative gradient* on a receptor every dividing cell carries, and the release names the off-target consequence — "the anemia risk that limits other TfR1-targeted approaches." Third independent vehicle in three days (Seawolf DNA-LNP → CD7-AAV → TfR1-TAB) reaching the same conclusion: targeting buys enrichment, not restriction. Secondary reads: a platform raised $173M pre-clinic by borrowing validation on both axes (Orkin's BCL11A on the SAB, Dyne/Avidity hires, Art Levin on the board) — a template SELEXON can mostly run; counterweight is Avidity's del-desiran Phase 3 miss and the $1.9B Novartis impairment.
+2. **Adventris — Sellas REGAL.** Four-peptide WT1 vaccine, n=126, open-label, maintenance in 2nd+ remission AML: OS 24.0 vs 14.7 mo, HR 0.59, p=0.035 after 80 deaths. The 09-14 "sort" now has a randomized registrational win in the lowest-burden setting; and WT1 is a self-antigen while mKRAS is a true neoantigen, so the specificity argument runs Adventris's way. Candid on the open label, the observation-eligible control, the narrow p, the unanalyzed secondaries and the same-evening $150M raise.
+3. **Regulatory sequencing — Overton nomination pulled** hours before today's HELP vote (follow-up on the 11-14 calendar flag). No confirmed commissioner since May; acting commissioner likely into next year; Senate flips in January. Plan the Aletira pre-IND against the draft guidance and the review division, not a final; the genuine positive is that adcomms are back; the voucher question is answered by default.
+
+**Funnel notes:** Fierce Biotech/Fierce Pharma RSS 403'd (one attempt each, not retried); BioBuzz still stale since 09-11. Dedup: 16 candidates → 14 fresh against 757 keys, with the 11-17 QurAlis release correctly tripping as a live-ledger control; the final roster was re-gated with a second control (the shipped 11-14 voucher URL), which also tripped. Dropped for the full-text gate: STAT's Capsida follow-up (STAT+ only, second consecutive unreadable day — closing it rather than carrying) and the NYT "Share Nothing" piece (no mirror).
+=== 2026-11-18T02:22:34-08:00 done  blackbird-brief (exit 0) ===
