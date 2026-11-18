@@ -6720,3 +6720,37 @@ I picked Helus Pharma's Phase 3 depression result as the spotlight, over the Lil
 
 I also added a dated note to the news-access memory file: building BioSpace press-release URLs from the full headline worked for all three GlobeNewswire releases today, as long as you check the title on the page. That narrows an older note that said those URLs can't be guessed.
 === 2026-11-17T02:36:57-08:00 done  calibr-briefing (exit 0) (retry 1) ===
+=== 2026-11-18T02:20:12-08:00 start calibr-briefing ===
+I wrote both of today's Calibr scripts plus their stub files. `SKIP_TTS=1` is set, so I didn't run TTS, upload to R2, edit `feed.xml` or commit; the nightly batch does those. Both stub XML files parse.
+
+**Files** in `podcasts/calibr-briefing/scripts/`:
+- `2026-11-18-pharma-headlines.txt` (1,150 words, about 6.3 minutes at the usual pace, so a bit over the 3–5 minute target), with its `.rss-item.xml` and `.commit-msg`
+- `2026-11-18-isomorphic-5b-series-c-spotlight.txt` (1,377 words, about 7.5 minutes), with its `.rss-item.xml` and `.commit-msg`
+
+The orchestrator needs a `.commit-msg` file for each episode or it skips that episode, so both have one. They carry the same message, which matches how 11-17 shipped.
+
+**Candidate funnel**
+- **RSS sweep:** 15 feeds (Endpoints, STAT, BioPharma Dive, BioSpace, GEN, Clinical Trials Arena, OncLive, HCPLive, pharmaphorum, Targeted Oncology, PharmExec, NeurologyLive, AJMC, Fierce Biotech, Fierce Pharma). About 130 items since 11-17 04:00 UTC; about 25 were on-beat.
+- **Source failures:**
+  - Fierce Biotech and Fierce Pharma RSS returned 0 items (blocked).
+  - Endpoints articles are paywalled, so its scoops ran with attribution only.
+  - The full Biogen release on stocktitan came back as unreadable compressed data; I used mlq.ai's copy instead.
+  - Google News hit its rate limit (HTTP 429) on one query.
+- **Dedup:** checked against the 11-10 to 11-17 scripts, with Overton and Gazyva as control terms (they hit, as expected). None of today's picks had shipped before.
+- **Foresite:** no portfolio news. A Google News "Foresite" hit was a Fast Company piece on Bezos's Prometheus (co-CEO Vik Bajaj co-founded Foresite Labs), but it isn't a portfolio event, so I left it out.
+
+**Shortlist** (* = used):
+- ★ **Spotlight:** Isomorphic Labs' $5B Series C. Read in full: company release, BioSpace, pharmaphorum, TNW (with the Bloomberg interview quotes), R&D World, European Biotechnology, TFN, and BiopharmaTrend's news piece and skeptic analysis — https://www.biospace.com/drug-development/isomorphic-labs-breaks-biotech-vc-fundraising-record-with-5b-series-c
+- \* White House pulls Overton's FDA nomination — https://www.biospace.com/fda/white-house-yanks-overton-nomination-hours-before-committee-vote
+- \* GSK's Nelkarmi (neladalkib) accelerated approval — https://www.targetedonc.com/view/neladalkib-fda-approval-alk-positive-nsclc
+- \* Sellas' galinpepimut-S wins Phase 3 REGAL in AML — https://www.biospace.com/drug-development/sellas-cancer-vaccine-slashes-death-risk-by-41-in-late-stage-aml-study
+- \* Beren's Lembaz (adrabetadex) approved — https://www.neurologylive.com/view/fda-approves-adrabetadex-first-therapy-improve-survival-infantile-onset-niemann-pick-disease-type-c
+- \* CTAD: Biogen's diranersen (https://mlq.ai/news/biogens-tau-drug-diranersen-shows-a-larger-benefit-at-two-years-at-ctad-as-acadias-alzheimers-psychosis-drug-narrowly-misses/), Cognito's Spectris, Priavoid's PRI-002, Acadia's remlifanserin
+- \* FDA's ivonescimab rejection letter flags a VEGF safety concern (Endpoints teaser only, attributed on air) — https://endpoints.news/fda-flags-potential-vegf-related-safety-concern-in-summit-rejection-letter/
+- \* Marrow launches with $173M — https://www.biospace.com/drug-development/marrow-therapeutics-debuts-with-173m-to-tackle-blood-disorders-in-vivo
+- \* Genetix (formerly bluebird) turns profitable — https://www.biospace.com/business/genetixs-genetic-medicines-are-officially-profitable-with-327m-in-sales-ytd
+- \* Quick mentions: Cosentyx approved in polymyalgia rheumatica; Karyopharm's selinexor filing accepted; US loses measles elimination status
+- Not used: AstraZeneca, Calidi and Tempest layoffs; Wegovy and tirzepatide pediatric data; Capsida follow-up; liso-cel label change; sintilimab CHMP opinion
+
+I also added a dated note on which news sources worked today to the source-access memory file.
+=== 2026-11-18T02:30:57-08:00 done  calibr-briefing (exit 0) ===
