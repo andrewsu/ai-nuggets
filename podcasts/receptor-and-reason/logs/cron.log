@@ -6614,3 +6614,25 @@ Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed 
 
 2. **I lost ~15 minutes to the `.full` vs `.full.pdf` trap.** My first worker fetched `…v1.full`, which returns a 25-28 KB abstract-only landing page that superficially looks like a render (5-6 `##` headings). Restarted on `.full.pdf` with a `"Preview PDF"` guard rather than a byte-count test. Same lesson applies to Nature: heading *count* passed on an article that had no Main or Results section — the heading *names* are the test.
 === 2026-11-17T02:55:19-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-18T02:40:14-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-18-receptor-and-reason.md` — 2,896 spoken words / ~15.9 min, 11 items, no URLs/DOIs/IDs in the spoken body
+- `…2026-11-18-receptor-and-reason.rss-item.xml` — validated XML, `__LENGTH__`/`__DURATION__` placeholders
+- `…2026-11-18-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, 175 episodes
+
+**Spine:** "the wrong compartment" — the effect lives somewhere other than where the field has been looking.
+
+**Candidate funnel**
+- bioRxiv/medRxiv details API, 11-11→11-18 day-by-day (six day-files carried over; 11-17 and 11-18 swept fresh — bioRxiv 364/61, medRxiv 72). 253 on-topic after title+abstract scoring.
+- arXiv — shared cache 500-capped (~3 days); the `/list/<cat>/new` HTML scrape gave 514 unique and supplied all three arXiv picks (seventh consecutive run it beats the cache).
+- Crossref journal sweep, 19 ISSNs from 11-11: 114 articles. Nothing usable — all three Nature-family fetches were bodyless (54 KB with no headings, 82 KB with only Data availability/References, 8.5 KB shell), despite Crossref-OA.
+- Dedup: **664 candidates → 627 fresh** (37 shipped, 0 title matches); dropped lines printed. Final roster re-gated with a seeded control, which dropped correctly. Sibling-show grep over 11-10→11-18: clean.
+- Full text: **17 of 17 bioRxiv/medRxiv items rendered** via jina `.full.pdf` (16 on round 0) — the best fetch day in months; arXiv 6 for 6. No source failed outright.
+
+**Chosen (all read in full):** CASPR2 shed-ectodomain autoantibodies (lead) · clozapine/astrocyte cholesterol · ACE-339 conformation-selective TDP-43 disaggregator · dopamine effort-as-negative-value · adaptation-not-prediction deviance · intra-thalamic arousability loop · GDF15/LATTICE lithium · charted ICU pain times as slot labels · HINDAUDIT · DiscoveryAgent · "LLMs Have Not Yet Transformed Science" (closer).
+
+**One thing to flag:** a safety-classifier stop fired mid-run while I was reading the PhotoSVI tonic/phasic photometry preprint — the fifth such stop this month, and the second with paper text in the call. Per the standing rule I did not reword it; I dropped that item entirely and moved on. It would otherwise have been the lead, and it cost roughly one turn. Everything above was selected after that pivot, and the run log in memory records the details.
+=== 2026-11-18T02:52:06-08:00 done  receptor-and-reason (exit 0) ===
