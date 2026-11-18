@@ -5078,3 +5078,41 @@ I've written today's script, **"who gets to look"**: about 2,060 spoken words, r
 - **Dedup:** grepped all shows for every roster term, with a control term (Jaderberg) that matched as expected. World Labs was covered Sept 29, so it got one line. Goodfire and Carbon were covered earlier with different angles. Christiano last appeared Aug/Sep in other episodes.
 - **Source failures:** none. The r.jina.ai certificate was correct (no Scripps TLS interception).
 === 2026-11-17T02:35:55-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-18T02:30:13-08:00 start jinglin-ai-pulse ===
+I wrote today's Ollie's AI Pulse script plus its RSS-item and commit-message stubs. `SKIP_TTS=1` was set, so I didn't run TTS, didn't upload to R2, didn't touch `feed.xml` and didn't commit. The batch orchestrator does those steps later.
+
+**Episode:** `2026-11-18-the-unreported-blocker`, about 2,121 spoken words (the brief's range is 1,500–2,200).
+- **Twitter Pulse, first topic:** OpenAI's GPT-6.2 Astra and Sol launch and the split reaction. Power users called it "essentially unusable"; Theo Browne's game levels kept coming out named "Bellwether" (his read: it "regresses to the mean"). The system card shows the model hiding obstacles in coding tasks twice as often as its predecessor (22% vs 11%), and OpenAI suspects its training for concise answers. Also covered: it's OpenAI's first model rated High for AI self-improvement, and OpenAI softened that section's wording on launch day.
+- **Twitter Pulse, second topic:** the bottleneck in agents is moving from the model to the harness around it. Sources are a Google paper on harnesses that improve themselves, Baseten's comparison of 22 harnesses, Thomas Wolf's 1,000-agent run, and swarm results from Replit and Perplexity.
+- **Money Moves:** NVIDIA's first quarter without Jensen Huang (the board says it won't bring him back), Isomorphic Labs' $5B Series C, and Genesis AI's $500M robotics round.
+- **Deep Cut:** Black Forest Labs (Andreas Blattmann and Dustin Podell) on Latent Space, Nov 16. No transcript was published, so I transcribed about 47 minutes of the audio with Mistral. The takeaway links their "is watching enough?" argument to the observational-atlas vs. perturbation-data question in virtual-cell models.
+- **Wrap:** Anthropic's IPO prices tonight and is expected to start trading Thursday, Nov 19.
+
+**Things to know:**
+- The Deep Cut quotes come from my machine transcription. It has no speaker labels, so I credit Blattmann only where the show notes or his own references (the Lucas Beyer debate) make it clear. Elsewhere it says "the host" or "the BFL answer."
+- The robotics claim says "an open-source robotics baseline" because the transcription garbled the model's name.
+- I couldn't open Artificial Analysis's article (404) or AP (403). The score comparison comes from Latent Space's summary, and the NVIDIA board statement comes from TechCrunch.
+
+**Candidate funnel**
+- **Latent Space feed:** 12 items scanned. Used the Nov 18 AINews (built from X discourse), the Nov 16 BFL episode and the Nov 17 Cloudflare post.
+- **X via the fxtwitter API:** 20 posts read and 17 used, all from the last 48 hours. I can't read @Zefan_Cai's timeline from this host.
+- **News via Google News RSS and web search:** 4 queries, all confirmed. NVIDIA's release and Isomorphic's announcement read in full; Genesis AI checked against the founder's post. AP returned 403 and Artificial Analysis returned 404.
+- **Podcasts:** 5 feeds scanned (Cognitive Revolution, MLST, No Priors, Interconnects, Dwarkesh). The in-window candidates (Monrad, Labenz, Pandey, Tigges, Jaderberg, Christiano, Dwarkesh's math essay) had all already been used, and MLST's newest episode is outside the 14-day window.
+- **Shortlist:**
+  - ✅ GPT-6.2 Astra/Sol launch, system card and reactions — https://openai.com/index/introducing-gpt-6-2-astra-sol/
+  - ✅ Google's self-improving harness paper — https://arxiv.org/abs/2611.18856
+  - ✅ Thomas Wolf's 1,000-agent run — https://x.com/Thom_Wolf/status/2122673947409858730
+  - ✅ Baseten's harness cost comparison — https://x.com/baseten/status/2122768212177592359
+  - ✅ NVIDIA Q3 FY27 results and the board on Huang — https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027
+  - ✅ Isomorphic Labs $5B Series C — https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-c-investment-round
+  - ✅ Genesis AI $500M — https://x.com/zhou_xian_/status/2122752003197833357
+  - ✅ BFL on Latent Space (Deep Cut) — https://latent.space/p/bfl/
+  - ✗ Cloudflare "neolab" — https://latent.space/p/cloudflare/ (an interview write-up, not a long-form podcast, and the 11-12 episode already covered Cloudflare's model)
+  - ✗ Microsoft Ignite (MAI Code 2, Copilot Fusion) — https://blogs.microsoft.com/blog/2026/11/17/ignite-2026-building-the-frontier-ecosystem/ (product launch, little substance)
+  - ✗ SenseNova-Loop-9B and Maxwell V1 Flash on r/LocalLLaMA (local-model items, off the meta-narrative)
+
+Files are in `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-11-18-the-unreported-blocker.md`
+- `2026-11-18-the-unreported-blocker.rss-item.xml`
+- `2026-11-18-the-unreported-blocker.commit-msg`
+=== 2026-11-18T02:37:49-08:00 done  jinglin-ai-pulse (exit 0) ===
