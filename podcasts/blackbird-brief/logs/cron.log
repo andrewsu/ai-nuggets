@@ -4458,3 +4458,37 @@ Episode written. `SKIP_TTS=1` was checked as the first call of the run, so per P
 
 One tooling incident: a tool call that printed two long article bodies at once was stopped by a safety classifier and cost that turn's remaining calls. No content was lost from the episode — I refetched narrowly — and I've saved a memory to fetch long full texts one at a time.
 === 2026-11-19T02:24:46-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-20T02:10:16-08:00 start blackbird-brief ===
+I've written today's Blackbird Brief Portfolio Watch for 2026-11-20. Because `SKIP_TTS=1` was set, I only wrote the script and stub files: no audio, no publish, no feed edit and no commit. The nightly batch job handles those.
+
+**Files written** (in `podcasts/blackbird-brief/`):
+- `scripts/2026-11-20-portfolio-watch.md`: about 1,240 spoken words (roughly 7 minutes), plus show notes and the candidate funnel.
+- `scripts/2026-11-20-portfolio-watch.rss-item.xml`: has the `__LENGTH__`/`__DURATION__` placeholders and parses as valid XML.
+- `scripts/2026-11-20-portfolio-watch.commit-msg`
+- `state/shipped.jsonl`: 5 keys added for today's episode.
+- `memory/blackbird-portfolio.md`: two entries updated in place (the China/NSCEB thread and Winnow, whose date is now 11-20).
+
+**The two items:**
+1. **Lead (deal flow, plus a Winnow watch item):** The congressional biotech commission (NSCEB) published "Made Innovated in China" on 11-18; I read the full PDF. It names China-sourced NewCos as a route for U.S. venture capital to reach Chinese drug developers. It also flags China's proposed export rules on drug-discovery platforms, which aren't final. Separately, five big drugmakers told the House China committee they won't open new trial sites in Xinjiang or at hospitals linked to the Chinese military.
+2. **Winnow:** On 11-18 the FDA approved Regeneron's Livsayis (cemdisiran) for generalized myasthenia gravis, dosed four times a year. That's two days after AstraZeneca's weekly autoinjector was approved for the same disease. The label says infection risk lasts for months after the last dose, which supports Winnow's argument that a treatment you can stop is worth something.
+
+**What didn't make it:**
+- **FDA's new post-market safety council for gene therapies (11-19), with the Zolgensma tumor finding as context:** This was going to be the lead, for Aletira. A safety classifier stopped the draft partway through, so I dropped the topic rather than rewording it. The show notes flag it to revisit next run as a short regulatory item.
+
+**Funnel:**
+- **Google News:** 74 query terms over a 4-day window, 427 hits. Three queries got rate-limited (HTTP 429) and weren't retried: GPR52, Artemyx and Georgiamune.
+- **Trade press RSS:** Endpoints (24 items), STAT (20), BioPharma Dive (10) and GEN (10) worked. Fierce Biotech returned 403, BioSpace returned 404, and BioBuzz is still stale (newest item 09-11).
+- **Dedup:** 9 candidates, 8 fresh. The one drop was a control I included on purpose (yesterday's Pfizer–Starna link), and it was correctly caught, so the filter is working.
+- **Shortlist (✅ = shipped):**
+  - ✅ NSCEB report — https://www.biotech.senate.gov/wp-content/uploads/2026/11/NSCEB-Innovated-in-China-11.18.26.pdf
+  - ✅ BioPharma Dive on the report — https://www.biopharmadive.com/news/us-china-biotech-report-commission-supply-chain-2026/875170/
+  - ✅ STAT on the China trial-site halts (paywalled; only the readable part used) — https://www.statnews.com/pharmalot/2026/11/19/china-pharma-biotech-clinical-trials-security-risk-patents-drug-development/
+  - ✅ Regeneron's Livsayis press release — https://investor.regeneron.com/news-releases/news-release-details/livsayistm-cemdisiran-approved-fda-first-and-only-sirna-therapy
+  - ✅ BioPharma Dive on Livsayis — https://www.biopharmadive.com/news/regeneron-fda-approve-cemdisiran-livsayis-myasthenia-gravis-alnylam/875160/
+  - ✗ FDA's post-market safety council — https://www.fda.gov/vaccines-blood-biologics/whats-new-biologics/fda-establishes-cber-safety-council-strengthen-postmarketing-oversight-biological-products (draft stopped by the classifier)
+  - ✗ Novartis restarting its autoimmune CAR-T trials (Endpoints is paywalled and I found no Novartis primary source)
+  - ✗ MAXONA's MAX-001 (an old drug, nefopam, reformulated; thin)
+  - ✗ Insilico's ISM9528 (no mechanism disclosed)
+  - ✗ Acadia's remlifanserin follow-up (already covered 09-25)
+  - ✗ QurAlis QRL-201 (already covered 11-16 and 11-17)
+=== 2026-11-20T02:20:44-08:00 done  blackbird-brief (exit 0) ===
