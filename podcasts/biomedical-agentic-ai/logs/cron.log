@@ -6580,3 +6580,43 @@ Shortlist:
 - Two leftover stub files from 2026-09-15 (`2026-09-15-virtuous-machines-*`) are still sitting in the scripts folder. They aren't from today and I left them alone.
 - I added today's run, with the runners-up, to the show's deferral log in memory.
 === 2026-11-19T02:07:11-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-20T02:00:15-08:00 start biomedical-agentic-ai ===
+I wrote today's Biomedical Agentic AI episode and its two stub files. Because `SKIP_TTS=1`, I didn't generate audio, publish, edit `feed.xml` or commit; the orchestrator does those after the batch TTS run.
+
+**Pick: DeepQuest** ([arXiv 2611.26343](https://arxiv.org/abs/2611.26343), posted 11-19, Hangzhou Dianzi University and Tsinghua). It is an "AI scientist" for Alzheimer's research that turns open questions from review articles into hypotheses and tests them on the OASIS-3 cohort. It then has a separate step that checks whether each result is new compared with a fixed set of published papers. I read the full text, and a web search found no earlier coverage of it. The spoken script is 1,007 words (cap 1,150).
+
+The episode's main point is that its "new" verdicts depend on the setup, not just the science:
+- When the reference set grows from 200 to 4,604 papers, "new discoveries" drop from 20 to 13.
+- When the judge model switches from GPT to Claude, they rise to 33.
+- The headline 95% "finding rate" doesn't move in either case, because it also counts rediscoveries. It really measures whether a run finished.
+- The parts worth copying: the check that the data can actually answer each question (the biggest effect when removed, 19 of 60 tasks never finish), and keeping "was the analysis done right" separate from "does it add anything".
+
+Files are in `podcasts/biomedical-agentic-ai/scripts/`:
+- `2026-11-20-deepquest-novelty-depends-on-what-you-read.md`
+- `.rss-item.xml` — it parses as valid XML.
+- `.commit-msg`
+
+**Candidate funnel**
+- **bioRxiv + medRxiv**, 11-17 to 11-20, fetched one day at a time: 1,213 records (1,184 unique), 76 keyword hits. medRxiv had nothing yet for 11-20 at run time.
+- **arXiv shared cache**: 500 entries covering 11-17 to 11-19, filtered down to about 15 relevant papers.
+- **PubMed** (entry date 11-15 to 11-20): 7 hits; only OncoAgentic-RAG and the stroke multi-agent paper were on topic, and neither made the shortlist.
+- **News**: a web search found no in-window launches.
+- **Funder pages**: the ARPA-H and NIH news pages gave no headlines I could read with a plain download; I didn't check NSF or HHS.
+- **ChemRxiv**: not searched.
+
+**Shortlist**
+- ✅ DeepQuest — https://arxiv.org/abs/2611.26343
+- Decision2Care, a diagnostic agent that writes no text — https://arxiv.org/abs/2611.23700 (downloaded but not read)
+- EpiCompass, which tracks hypotheses against evidence — https://arxiv.org/abs/2611.25214
+- Openhagen Worlds, test environments for discovery agents — https://arxiv.org/abs/2611.24711
+- GenSPARQL, SPARQL extended with an LLM over Wikidata — https://arxiv.org/abs/2611.26062
+- Inference after coding agents — https://arxiv.org/abs/2611.23174 (still in window until 11-21)
+- MRCAT, multi-agent Mendelian randomization — https://www.medrxiv.org/content/10.64898/2026.11.16.26368234v1 (full text not tried, deferred)
+- ClinDataBench — https://www.medrxiv.org/content/10.64898/2026.11.17.26368316v1 (deferred)
+- NeuroImgAgent — https://www.biorxiv.org/content/10.64898/2026.11.19.767770v1 (posted 11-19, probably not rendered yet; deferred)
+- Surrogate verifiers in closed-loop experimental design — https://www.biorxiv.org/content/10.64898/2026.11.18.767545v1 (deferred)
+- Entity normalization across ontologies — https://www.biorxiv.org/content/10.64898/2026.11.17.767229v1 (deferred)
+- Dropped: the figure-versus-text checking paper (2611.24353), which Receptor & Reason already covered on 11-19.
+
+I added today's pick and the deferred items to the show's deferral log in memory.
+=== 2026-11-20T02:04:55-08:00 done  biomedical-agentic-ai (exit 0) ===
