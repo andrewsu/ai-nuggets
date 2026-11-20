@@ -6754,3 +6754,45 @@ The orchestrator needs a `.commit-msg` file for each episode or it skips that ep
 
 I also added a dated note on which news sources worked today to the source-access memory file.
 === 2026-11-18T02:30:57-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-19T02:20:14-08:00 start calibr-briefing ===
+Both scripts and their stubs are written for Thursday, November 19. `SKIP_TTS=1` was set, so I didn't generate audio, publish, edit `feed.xml` or commit. `publish_pending.py` will do those after the batch TTS run.
+
+**What's in today's episodes**
+- **Headlines** (`2026-11-19-pharma-headlines.txt`, about 1,100 words, roughly 6.5 minutes):
+  1. AbbVie's deal with DISCO: $40M upfront, up to $2.54B, for bispecifics that only switch on when they see two antigens on the same cell.
+  2. Pfizer licenses three in vivo CAR-T programs from China's Starna for $330M upfront, up to $2.3B more in milestones.
+  3. Boltz raises a $110M Series A (a short teaser for the spotlight).
+  4. The FDA approved Sanofi's venglustat (Infilbray) for type 3 Gaucher disease, a week before its November 25 deadline.
+  5. The FDA approved Regeneron's Livsayis (cemdisiran) for myasthenia gravis.
+  6. Merck stopped nemtabrutinib and its whole Phase 3 program.
+  7. Lilly's mevidalen failed its Phase 2 in Alzheimer's at CTAD.
+  - Quick hits: Amgen's dazodalibep, Cytokinetics' aficamten, and nChroma's layoffs.
+  - The script says we found no Foresite portfolio news in Wednesday's wires. That rests on Google News and trade-feed searches only.
+- **Spotlight** (`2026-11-19-boltz-110m-series-a-spotlight.txt`, about 1,440 words, roughly 8 minutes): Boltz sells open and paid molecular-design models charged per use, the opposite of Isomorphic's closed $5B bet on its own drugs, which was yesterday's spotlight. It covers the round, the model history and what the claimed 50-fold usage growth leaves out. It then gives the skeptic's case, what it means for Xaira and Calibr, and what to watch over the next 12 months. It's based on Boltz's own announcement and the Bessemer and a16z posts, all read in full.
+
+**Things to know before this airs**
+- The headlines run about 6.5 minutes, over the brief's 3–5. The spotlight is at the top of its 5–8 minute range.
+- Some spotlight details come only from one secondary source, the Korean outlet Wowtale. They are the month-by-month usage figures, BMS's October agreement, and Chai's custom model for Lilly. The script credits Wowtale on air for the usage figures and says "reportedly" for the Chai–Lilly model. It states the BMS agreement without attribution.
+- I cut a line about BMS leading Pathos AI's round because only Wowtale supported it.
+- I deliberately left out the Flagship London lab and the giredestrant approval because earlier episodes covered them. Cobenfy's Alzheimer's psychosis data and the Orzeyful item were also left out (reasons in the list below).
+
+**Candidate funnel**
+- **Trade RSS (15 feeds, since 11-18 04:00 UTC):** about 150 items, about 25 on-target. Both Fierce feeds returned zero items (blocked).
+- **Google News (13 queries):** found the Boltz, DISCO, Starna and venglustat stories. No Foresite portfolio hits.
+- **Read in full:** BioSpace (DISCO, Starna, Merck), Boltz's announcement, Bessemer and a16z posts, Wowtale, NeurologyLive (cemdisiran, mevidalen), Pharmacy Times (venglustat), AJMC (dazodalibep, aficamten), and BioPharma Dive via WebFetch (Starna).
+- **Teaser only:** Endpoints articles on Boltz, nChroma and mevidalen are paywalled, so nChroma got a one-line mention.
+- **Shortlist** (★ = picked):
+  - ★ Spotlight + headline: Boltz $110M Series A — https://boltz.com/series-a
+  - ★ AbbVie–DISCO — https://www.biospace.com/business/abbvie-grooves-with-discos-solid-tumor-tech-in-up-to-2-5b-licensing-deal
+  - ★ Pfizer–Starna — https://www.biospace.com/business/pfizer-launches-into-autoimmune-car-t-with-chinas-starna-in-up-to-2-6b-deal
+  - ★ Venglustat approval — https://www.pharmacytimes.com/view/fda-approves-venglustat-first-treatment-for-neurological-symptoms-of-gd3
+  - ★ Livsayis approval — https://www.neurologylive.com/view/fda-approves-cemdisiran-as-new-treatment-generalized-myasthenia-gravis
+  - ★ Merck nemtabrutinib — https://www.biospace.com/drug-development/merck-scraps-centerpiece-of-2-7b-arqule-buy-after-late-stage-safety-concerns
+  - ★ Mevidalen fails — https://www.neurologylive.com/view/mevidalen-misses-primary-endpoint-phase-2-alzheimer-trial
+  - ★ Dazodalibep (quick hit) — https://www.ajmc.com/view/dazodalibep-shows-phase-3-benefit-in-sj-gren-disease
+  - ★ Aficamten (quick hit) — https://www.ajmc.com/view/aficamten-reduces-lv-mass-wall-thickness-in-nonobstructive-hcm
+  - ★ nChroma (quick hit) — https://endpoints.news/nchroma-bio-stops-its-only-clinical-study-early-lays-off-50/
+  - Dropped, already covered: giredestrant approval (11-17), Flagship London lab (11-16), Summit's rejection letter and diranersen (11-18).
+  - Dropped, couldn't read: BMS Cobenfy at CTAD (the BioSpace link 404s).
+  - Dropped, stale: the Orzeyful "approval" was an August approval that Google News re-dated.
+=== 2026-11-19T02:29:37-08:00 done  calibr-briefing (exit 0) ===

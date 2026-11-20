@@ -5116,3 +5116,40 @@ Files are in `podcasts/jinglin-ai-pulse/scripts/`:
 - `2026-11-18-the-unreported-blocker.rss-item.xml`
 - `2026-11-18-the-unreported-blocker.commit-msg`
 === 2026-11-18T02:37:49-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-19T02:30:15-08:00 start jinglin-ai-pulse ===
+Today's episode of Ollie's AI Pulse (2026-11-19) is written. `SKIP_TTS` was set, so I wrote only the script and its two stub files. I didn't generate audio, publish to R2, edit `feed.xml` or commit; the batch orchestrator does those.
+
+**Files** in `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-11-19-the-experience-of-being-wrong.md`: about 2,470 spoken words, a bit over the brief's 1,500–2,200 target.
+- `2026-11-19-the-experience-of-being-wrong.rss-item.xml`: `__LENGTH__` and `__DURATION__` left as placeholders; the XML parses.
+- `2026-11-19-the-experience-of-being-wrong.commit-msg`
+
+**Rundown.** The theme is models that know everything but have never been wrong.
+- **Twitter Pulse:** Google DeepMind released Gemini 4 Neon six days after its previous model. People are now splitting one job across three labs' models: Theo Browne uses Fable, Astra and Neon for different parts of a job, and Jeremy Howard switched Solveit back to the pre-6.2 GPT models. Artificial Analysis reports Astra's "admits uncertainty" score fell from 96 to 24, which follows up yesterday's open question about Astra.
+- **Second pulse item:** OpenAI's report on how much AI is speeding up its own research, plus its chip-design results on AMD hardware.
+- **Money Moves:** Anthropic priced its IPO at $83 (a record $81.3B raise, trading today as ANT), and Palo Alto Networks is buying Applied Compute for $4.5B. The script discloses that Claude, an Anthropic model, drafted it, and gives no valuation opinion.
+- **Deep Cut:** a16z's Working Theory episode with Mark Chen and John Schulman. Schulman's line "You don't have the experience of being wrong" is paired with the uncertainty number.
+
+**Things to check:**
+- **Unlabelled transcript:** no transcript was published for the a16z episode, so I transcribed it myself with Mistral, and the result has no speaker labels. I attributed quotes to Chen or Schulman only where the host's framing makes the speaker clear. The rest is credited to the episode, and the script says so on air.
+- **Reuters claim not checked:** "founded last year by three OpenAI alumni" comes from Reuters' headline only. I didn't read the article, and the script credits it to Reuters' headline.
+
+**Candidate funnel**
+- **Twitter/X:** timelines can't be read from this host. I found tweet IDs through Latent Space's AINews issue (about 30 items) and read 6 tweets in full. I didn't track @Zefan_Cai because his timeline can't be reached.
+- **Hacker News:** 5 searches over the last 3 days; read the top comments on the Neon thread (835 points) and the chip-design thread (211 points).
+- **Business news:** 4 stories surfaced; the Anthropic IPO and Applied Compute were picked.
+- **Podcasts:** 10 feeds checked for episodes since 11-05. MLST and Gradient Dissent had none, and the Unsupervised Learning feed returned a 404. WhynotTV is known to be stale, so I skipped it.
+
+**Shortlist:**
+- ✅ Gemini 4 Neon — https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/
+- ✅ Theo / Jeremy Howard / Artificial Analysis GPT-6.2 personality — https://x.com/ArtificialAnlys/status/2123236464003588136
+- ✅ MAC Bench (brief mention) — https://x.com/bespokelabsai/status/2123099143996616741
+- ✅ OpenAI research acceleration report — https://openai.com/index/research-acceleration-jagged-frontier/
+- ✅ OpenAI chip design with AMD — https://openai.com/index/advancing-chip-design-with-our-models/
+- ✅ Anthropic IPO pricing — https://www.anthropic.com/news/anthropic-prices-initial-public-offering
+- ✅ Palo Alto / Applied Compute — https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-acquire-applied-compute-bringing-secure-open
+- ✅ a16z Working Theory, Chen and Schulman (Deep Cut) — https://a16z.simplecast.com/episodes/can-ai-learn-to-improve-itself-recursive-self-improvement-MhAlOhBQ
+- ✗ Latent Space Cloudflare "neolab" episode — https://latent.space/p/cloudflare/ (already covered 11-12; kept one quote)
+- ✗ a16z Imas & Cowen — https://a16z.simplecast.com/episodes/alex-imas-tyler-cowen-ai-is-moving-fast-why-isnt-the-economy-33WdZifY (weaker fit with today's theme)
+- ✗ Tencent Hy4 Flash weights, vLLM 0.34, Genie 4 in Project Genie (Genie 4 already covered 10-28), Epoch inference-capacity chart (less discussion)
+=== 2026-11-19T02:36:39-08:00 done  jinglin-ai-pulse (exit 0) ===

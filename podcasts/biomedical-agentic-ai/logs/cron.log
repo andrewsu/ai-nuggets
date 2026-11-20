@@ -6551,3 +6551,32 @@ There are leftover stubs from 2026-09-15 (`virtuous-machines-human-participant-s
 
 I added today's runner-ups and the access routes I used (preprint plus open supplement) to the show's deferral notes in memory.
 === 2026-11-18T02:05:43-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-19T02:00:13-08:00 start biomedical-agentic-ai ===
+I wrote today's script and its two stub files. `SKIP_TTS=1` was set, so I skipped text-to-speech, the R2 upload, the feed edit and the commit; the batch step does those.
+
+**Pick: SPIDER (SPIDER-KG)** — https://www.biorxiv.org/content/10.64898/2026.11.11.765839v1 (bioRxiv, posted 11-18, Shanghai Jiao Tong)
+- Script: `podcasts/biomedical-agentic-ai/scripts/2026-11-19-spider-kg-context-explains-everything.md`, 1,012 spoken words (cap is 1,150). I read the full 30-page paper.
+- Stubs: the matching `.rss-item.xml` (it parses as valid XML) and `.commit-msg`.
+- **The take:**
+  - **What it gets right:** each finding is stored separately, with the sentence that reported it, its study conditions and any negative result. That's essentially Wikidata qualifiers and references applied to the literature.
+  - **The headline is weaker than it looks:** the paper says 79% of apparent conflicts in the literature are "context-dependent." But the authors' own expert review found extraction errors in about 12.5% of a 618-item sample, against the pipeline's own estimate of 2.9%, and the classifier filed 53 of those 77 errors as "context-dependent."
+  - **The home benchmark is circular:** it's built from SPIDER's own comparisons, and 191 of its 200 questions ask which relation holds under stated conditions.
+  - **The data isn't clearly reusable yet:** the Zenodo release's own license file calls it a private draft with no dataset license chosen, and the GitHub repo has no license file.
+
+**Candidate funnel**
+- **bioRxiv + medRxiv (11-16 to 11-19, fetched one day at a time):** 1,231 records, 1,205 unique, 69 keyword hits. Two direct full-text fetches got throttled (HTTP 429); the PDF route worked for SPIDER on the first try.
+- **arXiv shared cache:** 500 entries covering 11-16 to 11-18 only; about 38 passed the biomedical-agentic filter.
+- **PubMed (5 days):** 579 hits, nothing fresh worth picking. The only strong item was OpenScientist, which shipped yesterday.
+- **ChemRxiv, news, ARPA-H/NIH/NSF/HHS:** nothing on agentic AI in the window.
+
+Shortlist:
+- **SPIDER** (bioRxiv 10.64898/2026.11.11.765839) — chosen
+- **Inference after coding agents** (arXiv 2611.23174): read in full and strong. When asked for a compelling finding from data with no real effects, frontier agents reported significant p-values 54–98% of the time; the paper also offers a correction method. Not picked because its examples are economics, not biomedicine. It stays eligible through 11-21.
+- **LLM auditing black-box stroke prediction models with planted flaws** (arXiv 2611.24877): read in full
+- Not opened in full (I didn't try their full text): statLens (…767003), StoiAgent (…767325), four LLMs tested against 50 published ageing-biology findings (…767323), SEA-Lab self-improving automated lab (…766090), small-model orchestrators for a tool-first biomedical platform (…766436), ARIPA pathology agent (…767159), BiomedCAT (…766070)
+- **medRxiv:** agentic AI vs. pediatric emergency physicians on differential diagnosis (10.64898/2026.11.16.26367440)
+
+**Also worth knowing**
+- Two leftover stub files from 2026-09-15 (`2026-09-15-virtuous-machines-*`) are still sitting in the scripts folder. They aren't from today and I left them alone.
+- I added today's run, with the runners-up, to the show's deferral log in memory.
+=== 2026-11-19T02:07:11-08:00 done  biomedical-agentic-ai (exit 0) ===

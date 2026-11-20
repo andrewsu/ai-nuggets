@@ -6636,3 +6636,25 @@ Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed 
 
 **One thing to flag:** a safety-classifier stop fired mid-run while I was reading the PhotoSVI tonic/phasic photometry preprint — the fifth such stop this month, and the second with paper text in the call. Per the standing rule I did not reword it; I dropped that item entirely and moved on. It would otherwise have been the lead, and it cost roughly one turn. Everything above was selected after that pivot, and the run log in memory records the details.
 === 2026-11-18T02:52:06-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-19T02:40:15-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-19-receptor-and-reason.md` — 12 items, 3,141 spoken words (~17.3 min)
+- `…​.rss-item.xml` (validates with the itunes namespace; `__LENGTH__`/`__DURATION__` placeholders intact)
+- `…​.commit-msg`
+- Ledger appended: 176 episodes, 1,851 items
+
+**Spine:** the selection problem — generating candidates is cheap, knowing which to act on is not.
+
+**Candidate funnel**
+- bioRxiv/medRxiv details API: swept 11-18 (bioRxiv 301, medRxiv 60) and 11-19 (bioRxiv 45) on top of carried-over 11-12→11-17 day files; 256 passed the relevance filter.
+- arXiv: shared cache 500-capped (11-16→11-18 only); the `/list/{q-bio,cs.AI,cs.CL}/new` HTML scrape gave 468 unique — 271 bio+agentic hits after gating. Eighth straight run the scrape beats the cache.
+- Crossref journals: 122 items across 19 ISSNs. nature.com still unreadable via jina (second consecutive failure on `s41398-026-04551-z`); Elsevier abstracts via Europe PMC worked for 3 of 4 DOIs.
+- Dedup: 655 candidates → 615 fresh (40 shipped, 0 title matches); dropped lines printed; final roster re-gated with a seeded known-shipped control, which dropped correctly.
+- Full-text fetches: 9 of 13 bioRxiv/medRxiv rendered on round 0; 4 failed all four rounds at 305 bytes (normal render lag for 11-18 posts, flagged for retest). arXiv 5 for 5.
+
+**Two things to flag**
+1. A safety classifier stopped one of my turns mid-tool-call while I was extracting text from the osteopontin/AKI-delirium preprint. Per the standing rule I did not reword it — I dropped that item entirely and moved on. It cost one turn and one roster slot. That's the sixth occurrence this month.
+2. A near-miss worth remembering: my hand-written pick keys used each preprint's *posting* date while the DOI carries the *submission* date, which made three picks look absent from the dedup output until I checked by bare ID. All twelve paper URLs were then verified against the bioRxiv/medRxiv details API before writing the stubs.
+=== 2026-11-19T02:53:26-08:00 done  receptor-and-reason (exit 0) ===

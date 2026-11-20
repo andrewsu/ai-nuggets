@@ -4439,3 +4439,22 @@ Episode written in SKIP_TTS mode (`$SKIP_TTS=1` verified as the first call of th
 
 **Funnel notes:** Fierce Biotech/Fierce Pharma RSS 403'd (one attempt each, not retried); BioBuzz still stale since 09-11. Dedup: 16 candidates → 14 fresh against 757 keys, with the 11-17 QurAlis release correctly tripping as a live-ledger control; the final roster was re-gated with a second control (the shipped 11-14 voucher URL), which also tripped. Dropped for the full-text gate: STAT's Capsida follow-up (STAT+ only, second consecutive unreadable day — closing it rather than carrying) and the NYT "Share Nothing" piece (no mirror).
 === 2026-11-18T02:22:34-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-19T02:10:14-08:00 start blackbird-brief ===
+Episode written. `SKIP_TTS=1` was checked as the first call of the run, so per PIPELINE.md I wrote the script plus the two transient stubs and did **not** run TTS, publish to R2, edit `feed.xml`, or commit — the orchestrator does that after batch TTS.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-11-19-portfolio-watch.md` (2,295 spoken words, in line with the last four episodes)
+- `…-portfolio-watch.rss-item.xml` (`__LENGTH__` / `__DURATION__` placeholders; XML parse-checked)
+- `…-portfolio-watch.commit-msg`
+- Ledger appended: 8 keys, now 135 episodes / 704 unique keys
+- `memory/blackbird-portfolio.md` edited in place — new entries under Winnow, Clasp and Neuropsychiatric NewCo, each `_Last update:_` bumped to 2026-11-19 (no dated journal appended)
+
+**Today's three items**
+1. **LEAD — Winnow.** Pfizer × Starna: $330M cash upfront, up to $2.3B milestones, for *three pre-IND* in vivo CAR-T programs plus platform rights across I&I and oncology. Landed in the same week as BioSpace's setbacks tally (Novartis and BMS autoimmune CAR-T pauses over deaths/safety signals, Artiva's two deaths and 94% staff cut, argenx quitting Sjögren's). Read: premise one (in vivo kills the manufacturing problem) is true; premise two (it fixes safety) is unevidenced, because the failures span autologous *and* allogeneic — in vivo changes who builds the cell and removes the off switch. Retire the operational argument; sell the off switch.
+2. **Clasp.** AbbVie × DISCO: $40M upfront against $2.5B biobucks for AND-gated bispecifics — a 1.6% upfront ratio against Pfizer's 12.5% the same week, and the money went to the surfaceome target-pair map rather than the antibody.
+3. **GPR52 / neuropsych NewCo.** BMS's first ADEPT data are open-label and descriptive; the usable column is tolerability — 57% TEAEs over 12 weeks in a lead-in, 65% over 52, a third of the extension cohort gone, and a BID→TID switch to get patients to an effective dose.
+
+**Run notes worth flagging:** Fierce Biotech and Fierce Pharma RSS both 403'd (one attempt each, per PIPELINE). Two items were dropped on the full-text gate rather than summarized from headlines — the Science feature on T-cell engagers in autoimmunity (directly on Winnow's thesis; science.org blocks us) and the JHU Bloomberg School pitch-competition recap, the only item in the window naming Blackbird Laboratories (publichealth.jhu.edu 403s, jina returned a tracker stub). Both are in the show notes as unread; the Science piece is worth someone on the team opening manually.
+
+One tooling incident: a tool call that printed two long article bodies at once was stopped by a safety classifier and cost that turn's remaining calls. No content was lost from the episode — I refetched narrowly — and I've saved a memory to fetch long full texts one at a time.
+=== 2026-11-19T02:24:46-08:00 done  blackbird-brief (exit 0) ===
