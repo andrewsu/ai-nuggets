@@ -6658,3 +6658,31 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote stubs only — no TTS,
 1. A safety classifier stopped one of my turns mid-tool-call while I was extracting text from the osteopontin/AKI-delirium preprint. Per the standing rule I did not reword it — I dropped that item entirely and moved on. It cost one turn and one roster slot. That's the sixth occurrence this month.
 2. A near-miss worth remembering: my hand-written pick keys used each preprint's *posting* date while the DOI carries the *submission* date, which made three picks look absent from the dedup output until I checked by bare ID. All twelve paper URLs were then verified against the bioRxiv/medRxiv details API before writing the stubs.
 === 2026-11-19T02:53:26-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-20T02:40:17-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-20-receptor-and-reason.md` — 12 items, 3,202 spoken words (~17.6 min); no URLs, DOIs, IDs, bullets or headings in the spoken body
+- `…​.rss-item.xml` — validates with the itunes namespace, `__LENGTH__`/`__DURATION__` intact
+- `…​.commit-msg`
+- Ledger appended: 12 keys, 177 episodes
+
+**Spine:** the gate — the variable that decides whether a signal is allowed to have an effect.
+
+**Candidate funnel**
+- bioRxiv/medRxiv details API: swept 11-19 (bioRxiv 301, medRxiv 112) and 11-20 (bioRxiv 6) on top of carried-over 11-13→11-18 day files; 261 passed the relevance filter.
+- arXiv: shared cache 500-capped; the `/list/{q-bio,cs.AI,cs.CL}/new` scrape gave 510 unique, 289 after bio+agentic gating. Ninth straight run the scrape beats the cache.
+- Crossref journals: 128 items across 19 ISSNs (NPP and IJNP returned 0 again).
+- Dedup: **683 candidates → 641 fresh** (42 shipped, 0 title matches); dropped lines printed; final roster re-gated with a seeded known-shipped control, which dropped correctly. Sibling-show grep over 11-1x/11-2x: clean.
+- Full text: 13 of 16 bioRxiv/medRxiv rendered on round 0, 15 of 16 by round 2; arXiv 4 for 4. No source failed outright.
+
+**Chosen (all read in full):** dSPN denervation threshold + Gs rescue (lead) · tonic dopamine FLIPR/PKA · ketamine historeceptomics · psilocybin-vs-escitalopram vortex space · youth cTBS + positive-affect training · sex-gated astrocytic nociceptive plasticity · rare miRNA pedigree variants · Pharmacolibrary · verbalized-thoughts injection monitoring · Decision2Care · TrialOutlook · TwinLab-Bench (closer).
+
+**Three things to flag**
+
+1. **Re-fetching yesterday's final day-file paid off bigger than ever.** `biorxiv 2026-11-19` was 45 records at yesterday's run and **301 today** — it supplied the lead and four more picks. This is the third time in four runs that one re-fetch changed the episode.
+
+2. **A 198-byte jina reply is a new, per-document failure code, not a route outage.** All five carried-over deferrals returned 198 bytes on round 0 while a same-minute probe of a fresh DOI returned a clean 59 KB render. Relatedly, direct `curl` on www.biorxiv.org 429'd at 17 bytes on a DOI jina rendered fine — the per-host split again. Two 408-byte failures (NeuroImgAgent, AIO ADMET) rendered on rounds 1 and 2 after the roster locked, confirming once more that a 408 is a retry, not a verdict; both are on disk and deferred.
+
+3. **No safety-classifier stop this run** — the first clean run since 11-17. I kept every full-text extraction to one document per tool call, which is what the standing rule predicts.
+=== 2026-11-20T02:53:05-08:00 done  receptor-and-reason (exit 0) ===
