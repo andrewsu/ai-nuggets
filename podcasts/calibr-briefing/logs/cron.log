@@ -6796,3 +6796,62 @@ Both scripts and their stubs are written for Thursday, November 19. `SKIP_TTS=1`
   - Dropped, couldn't read: BMS Cobenfy at CTAD (the BioSpace link 404s).
   - Dropped, stale: the Orzeyful "approval" was an August approval that Google News re-dated.
 === 2026-11-19T02:29:37-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-20T02:20:16-08:00 start calibr-briefing ===
+The spotlight research agent is still running; I'll draft the Sanofi–Insmed spotlight and the publish stubs once its fact sheet comes back.
+
+I've written both of today's episodes, but nothing is published yet: `SKIP_TTS=1` was set, so I only wrote the scripts and their stub files. I didn't generate audio, update the feed or commit; the nightly batch job does those.
+
+**Files written** (in `podcasts/calibr-briefing/scripts/`):
+- `2026-11-20-pharma-headlines.txt`: 1,273 words, plus its `.rss-item.xml` and `.commit-msg` stubs.
+- `2026-11-20-sanofi-insmed-takeover-spotlight.txt`: 1,569 words, plus its two stubs. That's roughly 8–9 minutes, a bit over the show's 5–8 minute target.
+- Both RSS stubs parse as valid XML.
+
+**What's in them**
+- **Headlines:**
+  1. Bloomberg's report that Sanofi is weighing a $35–43B takeover of Insmed.
+  2. Merck's oncology research deal with Isomorphic Labs; terms weren't disclosed.
+  3. Novartis cutting its growth outlook to about 5% a year.
+  4. China: the congressional biotech commission's closing report, and five big drugmakers telling a House committee they won't open new trial sites at hospitals linked to China's military or in Xinjiang.
+  5. Priority review for AstraZeneca's sonesitatug vedotin in gastric cancer.
+  6. Actinogen's Xanamem failing its Alzheimer's trial.
+  7. Open-label data for Bristol's Cobenfy in Alzheimer's psychosis.
+  - Quick hits: MegaRobo's ~$200M raise and Sellas's $150M stock offering.
+  - The episode says we found no Foresite portfolio news.
+- **Spotlight:** Sanofi and Insmed. It covers Brinsupri's launch, Dupixent losing US patent protection in 2031, analyst views on price and borrowing (Jefferies, RBC, BMO, Mizuho), and the fact that ex-Sanofi CEO Paul Hudson now sits on Insmed's board.
+
+**Things to know**
+- The Insmed deal is a report, not a deal. The script says so, and it attributes the price range to Bloomberg's reporting.
+- I checked the price range and the Sanofi CEO change against the sources myself. The research agent also found that Belén Garijo replaced Paul Hudson as Sanofi's CEO this year; the script uses that.
+- I dropped one detail I couldn't confirm: that placebo did better than brensocatib in the hidradenitis trial.
+- The "Paul Hudson joined Insmed's board last month" line rests on the agent's reading of Insmed's own Q3 release. I didn't open that release myself.
+- Spotlight candidates I passed over: the Merck–Isomorphic deal, which would have been a third AI-discovery spotlight in a row, and Novartis's investor day.
+
+**Candidate funnel**
+- **RSS sweep of 15 feeds since 11-19 06:00 UTC:** about 127 items read and 13 worth considering. The Fierce Biotech and Fierce Pharma feeds returned 0 items, so I couldn't check them.
+- **Endpoints news page:** nothing newer than Thursday evening (UTC).
+- **Google News searches:** found the Sanofi/Insmed coverage and a Bloomberg follow-up on Sanofi's CEO. Web search returned nothing on the Insmed report.
+- **Dropped as already covered:** Bayer's asundexian (11-10), the venglustat and Livsayis approvals, and AbbVie–DISCO (all 11-19).
+
+Shortlist:
+- ✅ Spotlight: Sanofi weighing an Insmed takeover — https://pharmaphorum.com/news/sanofi-reported-be-looking-insmed-takeover
+- ✅ Merck and Isomorphic Labs collaboration — https://www.merck.com/news/merck-and-isomorphic-labs-enter-strategic-research-collaboration/
+- ✅ Novartis lowers growth target at investor day — https://www.pharmexec.com/view/novartis-trims-growth-target-annual-management-day-shares-slide
+- ✅ China biotech commission report — https://www.biopharmadive.com/news/us-china-biotech-report-commission-supply-chain-2026/875170/
+- ✅ Drugmakers halting new trial sites at some China hospitals — https://www.statnews.com/pharmalot/2026/11/19/china-pharma-biotech-clinical-trials-security-risk-patents-drug-development/
+- ✅ Sonesitatug vedotin priority review — https://www.targetedonc.com/view/sonesitatug-vedotin-priority-review-cldn18-2-gastric-cancer
+- ✅ Actinogen's Xanamem fails — https://www.biospace.com/drug-development/actinogens-sole-drug-fails-pivotal-alzheimers-study-sinking-stock-80
+- ✅ Cobenfy ADEPT data — https://www.clinicaltrialsarena.com/news/bms-cobenfy-alzheimers-psychosis-phase-iii-adept/
+- ✅ Quick hit, MegaRobo ~$200M (from headlines only) — https://endpoints.news/chinese-ai-lab-megarobo-raises-nearly-200m-isomorphic-partners-with-merck/
+- ✅ Quick hit, Sellas $150M offering (from headlines only)
+- ✗ Liso-cel CNS lymphoma label change (the FDA action is dated 11-18), Lilly's Pennsylvania obesity plant, Oura buying Counsel: lower priority.
+
+I also added today's source-access notes to the biotech news memory file.
+
+There was nothing left to do when this reminder fired: the Sanofi–Insmed research agent had already reported back, and today's calibr-briefing run was complete. I've cancelled the reminder so it won't fire again.
+
+Both episodes are written, and each has its RSS stub and commit message in `podcasts/calibr-briefing/scripts/`:
+- `2026-11-20-pharma-headlines.txt`
+- `2026-11-20-sanofi-insmed-takeover-spotlight.txt`
+
+`SKIP_TTS=1` was set, so I didn't run audio generation, publish, update the feed or commit. The nightly batch job does those steps.
+=== 2026-11-20T02:49:12-08:00 done  calibr-briefing (exit 0) ===
