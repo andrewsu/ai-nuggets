@@ -6855,3 +6855,42 @@ Both episodes are written, and each has its RSS stub and commit message in `podc
 
 `SKIP_TTS=1` was set, so I didn't run audio generation, publish, update the feed or commit. The nightly batch job does those steps.
 === 2026-11-20T02:49:12-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-21T02:20:12-08:00 start calibr-briefing ===
+I wrote both Calibr episodes for 2026-11-21 as stubs only. `SKIP_TTS=1` was set, so I didn't run TTS, upload to R2, edit `feed.xml` or commit. The overnight batch job (`publish_pending.py`) handles those steps.
+
+**Files written** to `podcasts/calibr-briefing/scripts/`, each with its `.rss-item.xml` and `.commit-msg` stub (both RSS items parse as valid XML):
+- `2026-11-21-pharma-headlines.txt` (about 1,100 words)
+- `2026-11-21-kras-pancreatic-race-spotlight.txt` (about 1,460 words)
+
+**Headlines, in order:**
+1. FDA's second rejection of Capricor's deramiocel, with the agency's statement on data-integrity problems in the HOPE-3 trial.
+2. KRAS data at the EORTC-NCI-AACR meeting (a teaser for the spotlight).
+3. Merck–Kelun sac-TMT's Phase 3 survival win in later-line gastroesophageal cancer.
+4. FDA approval of pimicotinib (Pimjetmi) for tenosynovial giant cell tumor.
+5. FDA missing Savara's decision date.
+6. Celldex dropping barzolvolimab in eczema.
+7. Five-year lecanemab data from CTAD.
+
+A Novo layoffs quick hit and a look-ahead close it out. No Foresite portfolio news turned up on Friday's wires.
+
+**Spotlight:** Revolution Medicines (named in Travis's focus list) showed first-line Rasonque plus chemotherapy data in pancreatic cancer: 60.7% response rate and 12.8-month median progression-free survival. It's set against Erasca's ERAS-0015, licensed from China's Joyo for $12.5M upfront, which posted 44% response overall and 69% in the G12D/G12V subtypes in heavily pretreated patients. It also covers Alterome's ALTA3263, the split among RBC, TD Cowen, Truist and Leerink, the patent fight, Friday's stock moves, and three takeaways for Foresite and Calibr.
+
+**Two caveats to know about:**
+- **Capricor's data-integrity details are secondhand.** I couldn't find the FDA statement on fda.gov, so the script says the statement was "reported by several outlets" (MLQ quotes it in full; FirstWord and STAT corroborate). Capricor's own release mentions only insufficient evidence of effectiveness.
+- **The 11-19 stubs are still untracked** in this folder even though the 11-20 episode was committed. Its publish may not have gone through, so the batch job should be checked.
+
+**Candidate funnel:**
+- **RSS sweep** (15 feeds, since Nov 20 06:00 UTC): 117 items. Fierce Biotech and Fierce Pharma returned 0 items, as usual. About 25 items were on-target and all passed the dedup check against the past week's scripts, with "Insmed" as a control term that did show up.
+- **Read in full:**
+  - Spotlight: RevMed's release (via jina), OncLive, BioSpace, Erasca's GlobeNewswire release, BioPharma Dive (via jina), MedicalDaily on Alterome, BioSpace's April article on the patent dispute.
+  - Headlines: Capricor's release, NeurologyLive, MLQ, BioSpace (sac-TMT and Savara), AJMC, NeurologyLive (lecanemab), BioPharma Dive (Celldex).
+- **Source failures:** BioPharma Dive article pages serve a lock page to curl (jina worked). STAT and Endpoints bodies are paywalled (headline and teaser only). Alterome's Business Wire release wasn't fetched; I used MedicalDaily's write-up of it.
+- **Chosen:**
+  - Spotlight: [BioPharma Dive on Erasca vs RevMed](https://www.biopharmadive.com/news/erasca-kras-pancreatic-cancer-drug-results-revolution-rasonque/875314/), [Erasca's release](https://www.globenewswire.com/news-release/2026/11/20/3407349/0/en/erasca-reports-broad-and-robust-phase-1-clinical-efficacy-and-favorable-safety-data-for-pan-ras-molecular-glue-eras-0015.html), [RevMed's release](https://www.revmed.com/media/news/13771/revolution-medicines-presents-updated-phase-1-2-data-for-rasonque-daraxonrasib-plus-chemotherapy-in-first-line-metastatic-pancreatic-cancer-at-ena-2026)
+  - Headline lead: [NeurologyLive on Capricor](https://www.neurologylive.com/view/fda-issues-second-complete-response-letter-deramiocel-dmd), [MLQ on the FDA statement](https://mlq.ai/news/fda-rejects-capricors-duchenne-cell-therapy-deramiocel-citing-data-integrity-violations-in-its-phase-3-trial/)
+- **Considered, not used:** Innogen's GLP-1 license to Arcera (small deal), BioVersys/GSK TB data, the Lupus Foundation cell-therapy trial miss, lawmakers on China biotech investment (Endpoints teaser too thin), and Teva's R&D head leaving and VitriVax's financing (both Wednesday news).
+
+Other sources used: [Alterome's release](https://www.businesswire.com/news/home/20261120295088/en/Alterome-Therapeutics-Presents-Preliminary-Clinical-Data-from-Ongoing-Phase-11b-Trial-of-ALTA3263-Demonstrating-Antitumor-Activity-in-KRAS-Mutant-Colorectal-and-Pancreatic-Cancers-at-the-38th-EORTC-NCI-AACR-Symposium), [MedicalDaily on ALTA3263](https://www.medicaldaily.com/alta3263-cetuximab-colorectal-cancer-early-trial-481548), [BioSpace on the Revolution–Erasca legal threat](https://www.biospace.com/drug-development/revolution-levels-legal-threat-on-erasca-as-pancreatic-cancer-rivalry-heats-up), [Barchart on Erasca's Joyo license](https://www.barchart.com/story/news/661197/erasca-exercises-option-to-secure-worldwide-rights-for-eras-0015-pan-ras-molecular-glue-to-include-china-hong-kong-and-macau), [Ropes & Gray on the 2024 in-licensing](https://www.ropesgray.com/en/news-and-events/news/2024/05/erasca-announces-strategic-in-licensing-of-ras-mutation-targeting-oncology-program), [Capricor's release](https://www.globenewswire.com/news-release/2026/11/21/3407877/0/en/capricor-therapeutics-provides-regulatory-update-on-deramiocel-bla-for-duchenne-muscular-dystrophy.html).
+
+I also added today's source-access notes to the shared memory file.
+=== 2026-11-21T02:28:30-08:00 done  calibr-briefing (exit 0) ===
