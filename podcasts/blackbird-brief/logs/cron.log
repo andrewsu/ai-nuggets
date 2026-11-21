@@ -4492,3 +4492,22 @@ I've written today's Blackbird Brief Portfolio Watch for 2026-11-20. Because `SK
   - ✗ Acadia's remlifanserin follow-up (already covered 09-25)
   - ✗ QurAlis QRL-201 (already covered 11-16 and 11-17)
 === 2026-11-20T02:20:44-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-21T02:10:12-08:00 start blackbird-brief ===
+I wrote the Blackbird Brief Portfolio Watch for Saturday, November 21. `SKIP_TTS=1` was set, so I didn't generate audio, publish, edit `feed.xml` or commit. The script and the two stub files are in place for the nightly batch to do those steps.
+
+**Episode** (`podcasts/blackbird-brief/scripts/2026-11-21-portfolio-watch.md`, about 1,530 spoken words, roughly 9 minutes):
+1. **Lead, 1104health:** its clinician network grew from about 100 to more than 700 this year. A Maryland Commerce profile names Blackbird as the funder of the original pilot. The takeaways: ask the company for its usage numbers (active clinicians, cases, trial referrals, enrollments), find out who pays, and settle how physicians will be paid before those payments scale.
+2. **FDA biologics center (for Aletira and NuGate):** the FDA created a new council, separate from the reviewers who approve products, to watch cell and gene therapies after approval and publish safety findings quickly. It also turned down Capricor's Duchenne cell therapy for the second time. Reviewers objected to changes in the analysis plan after randomization and to how missing data were handled. The design lesson: lock the analysis plan before the first patient is randomized and decide up front how dropouts and deaths are handled.
+3. **Short follow-up for BioVentures:** BioPharma Dive reports six startups built on Chinese drug assets were bought or went public this year, some about a year after launch. Our pitch has to win on first-in-class science, clean IP ownership and a specific timeline to human data, not on policy risk alone.
+
+**Other changes:**
+- **Stubs:** `2026-11-21-portfolio-watch.rss-item.xml` (parses as valid XML) and `.commit-msg`.
+- **Dedup ledger:** 6 items added under this episode. Before that, 7 candidates went through the filter and 6 were new. The one rejected was a link I knew we'd already covered, put in on purpose to check the filter works.
+- **Portfolio reference:** I updated the 1104health status entry in `memory/blackbird-portfolio.md` in place and bumped its date.
+
+**Funnel:**
+- **Sources:** Google News across 74 portfolio terms (two searches were rate-limited and not retried), plus the Endpoints, STAT, BioPharma Dive, GEN and BioBuzz feeds. BioBuzz has posted nothing since September. Fierce Biotech, Fierce Pharma and GlobeNewswire blocked automated requests.
+- **Read in full:** every source behind the three items — Maryland Commerce, citybiz, the FDA notice, Capricor's press release, NeurologyLive and BioPharma Dive.
+- **Not confirmed:** several outlets report concerns about how Capricor's trial was run. The FDA letter isn't public, so the episode doesn't state those as fact.
+- **Passed over:** a University of Colorado recap of Elicio's pancreatic cancer vaccine trial (paper is a month old and already covered), KRAS drug results from the Triple Meeting (paywalled), Kyverna (only a law-firm notice), GRAIL, a Nemours hearing gene therapy story, and a paywalled Endpoints piece on China.
+=== 2026-11-21T02:20:41-08:00 done  blackbird-brief (exit 0) ===

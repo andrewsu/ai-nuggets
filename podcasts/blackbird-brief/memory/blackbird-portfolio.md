@@ -3087,10 +3087,16 @@ _Last update: 2026-08-28_
   technology; **JHTV** licensed the proprietary know-how.
 - **Status:** Blackbird funded the JHU pilot, then **Blackbird BioVentures
   invested** in the company. Subsequent non-dilutive grants from Maryland
-  Innovation Initiative and TEDCO. Pre-launch as of June 2026; preparing for
-  broader rollout at national oncology conferences and regional expansion.
-  Source: JHTV news, 2026-06-30 ("From Personal Loss to System Redesign: How
-  1104health Is Rethinking Cancer Care Collaboration").
+  Innovation Initiative and TEDCO ($225K SSBCI via TEDCO Social Impact Funds).
+  **As of Nov 2026: Shared Care Network grew ~100 → 700+ cancer care clinicians
+  during 2026**; public positioning is now "shared care" (EHR-embedded
+  community↔academic collaboration, trials as one output), and the physician-
+  compensation model is described as still "developing"; no revenue, enrollment
+  or outcomes disclosed. Open asks: activation funnel (active clinicians →
+  cases → referrals → enrollments) and which payer the next raise rests on.
+  Sources: JHTV news 2026-06-30; Maryland Commerce Startup Series + citybiz
+  2026-11-20 (names Blackbird as pilot funder).
+  _Last update: 2026-11-21_
 - **Watch:** trial-enrollment / patient-matching tech (Deep Lens, Massive Bio,
   Trial Library, Beacon Sutter); pharma sponsor-side spend on community-oncology
   enrollment (BMS, Merck, Pfizer trial-enrollment partnerships); FDA / DOJ stance
