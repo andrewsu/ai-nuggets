@@ -6686,3 +6686,23 @@ Episode written. `SKIP_TTS=1`, so per PIPELINE.md I wrote stubs only — no TTS,
 
 3. **No safety-classifier stop this run** — the first clean run since 11-17. I kept every full-text extraction to one document per tool call, which is what the standing rule predicts.
 === 2026-11-20T02:53:05-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-21T02:40:14-08:00 start receptor-and-reason ===
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-21-receptor-and-reason.md` — 3,254 words ≈ 17.9 min, 12 items, spine "dissociation"
+- `...2026-11-21-receptor-and-reason.rss-item.xml` (XML validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `...2026-11-21-receptor-and-reason.commit-msg`
+- Ledger appended: 12 keys, 178 episodes
+
+**Candidate funnel**
+
+- **bioRxiv/medRxiv details API** — day-by-day 11-14 → 11-21, 8 day-files. Re-fetching the previous run's final file paid off again: `biorxiv 2026-11-20` was 6 records yesterday, **260 today**; `biorxiv 2026-11-21` returned 3. 256 passed keyword/relevance scoring.
+- **arXiv** — shared cache held only 11-17→11-19 (500 cap), so also pulled `arxiv.org/list/{q-bio,cs.AI,cs.CL}/new?show=2000` (117 KB / 1.3 MB / 525 KB); 289 bio+agentic candidates after filtering. No 429s.
+- **Crossref journals** — 19 ISSNs from 11-14, 118 articles. NPP and IJNP returned 0 again.
+- **Dedup** — 666 candidates → 626 fresh (40 shipped, 0 title matches); dropped lines printed; 6 were normalization catches. Final roster re-gated with seeded control `2026.11.18.767715`, dropped correctly. Sibling grep across all shows on all 12 keys + asset names: clean.
+- **Full text** — bioRxiv/medRxiv `.full.pdf` via jina **13 of 13 on round 0** (best rate recorded); arXiv PDF + mutool 1/1; Nature OA via jina 2 of 3.
+- **Dropped for no readable body**: `10.1038/s41398-026-04551-z` (LLM psychotropic weight-effect detection, 222,545 narratives) — abstract-only via jina *and* direct curl, `.pdf` returns HTML, EPMC hitCount 0. Four Elsevier items (incl. ATDP33605 NOP agonist, now 3 runs in-window) remain `inEPMC=N`.
+
+**Picks (12):** prelimbic sensory/affective microcircuits in neuropathic pain (lead, Nat Neuro) · microglial-vs-neuronal P2X4 · 5-HT2A KO → parvalbumin + bioenergetics · SERT Na2 coupling · locus coeruleus Kv7/retigabine · GHB slow-wave sleep null · daily vs accelerated cTBS · aripiprazole/nicotine CPP · NeuroImgAgent · ClinDataBench · EpiCompass · psychedelic animal-model audit (closer).
+=== 2026-11-21T02:52:54-08:00 done  receptor-and-reason (exit 0) ===
