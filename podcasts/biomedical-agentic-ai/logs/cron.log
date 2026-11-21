@@ -6620,3 +6620,37 @@ Files are in `podcasts/biomedical-agentic-ai/scripts/`:
 
 I added today's pick and the deferred items to the show's deferral log in memory.
 === 2026-11-20T02:04:55-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-21T02:00:11-08:00 start biomedical-agentic-ai ===
+I've written today's episode, MRCAT, a multi-agent system for Mendelian randomization. Because `SKIP_TTS=1` was set, I only wrote the script and the two stub files; I did not run TTS, publish, edit the feed or commit. The batch job will do those steps.
+
+**What it covers:** "MRCAT — a Mendelian randomization agent team, and six flipped allele signs that turned a null result into a causal claim." It's a medRxiv preprint posted 2026-11-19 by Can Yang's group at HKUST. The spoken script is 974 words, under the 1,150 cap, and I read the full paper before writing it.
+- **The main point:** Every agent tested produced an answer, but the generic ones produced confident wrong ones. One reversed the direction of BMI's effect on diabetes. Another flipped the signs of six palindromic SNPs (variants whose alleles can't be oriented by letters alone) and reported "a positive causal effect" on a pair where expert analyses found none. Results from several methods agreeing isn't independent confirmation when they all share the same upstream error.
+- **Caveats the episode states:**
+  - Every system ran on the same DeepSeek V4 Pro model, so the "Claude Code" comparison tests the harness, not Claude.
+  - The authors wrote the nine pass/fail checks and also built them into their own system, so its perfect score is partly self-graded.
+  - The showcase method comes from the same lab.
+  - An LLM judge did the scoring, and there are only six negative controls.
+
+**Files** in `podcasts/biomedical-agentic-ai/scripts/`:
+- `2026-11-21-mrcat-six-flipped-signs-made-a-cause.md`
+- `.rss-item.xml` (parses as valid XML)
+- `.commit-msg`
+
+**Candidate funnel**
+- **bioRxiv:** 864 records for 11-18 to 11-21 (301, 301, 260, 2), swept day by day. About 60 keyword hits, about 15 relevant after removing false matches. 11-18 and 11-19 both stopped at exactly 301 records, which may mean the download was cut short.
+- **medRxiv:** 259 records (60, 112, 87, 0), 9 relevant.
+- **arXiv:** the shared download stops at 500 papers, which only reached 11-17 to 11-19. Nothing new beat yesterday's runners-up, and Openhagen and the planted-flaws audit paper were already covered by receptor-and-reason.
+- **PubMed:** 52 hits for 11-16 to 11-21. OpenScientist already aired here on 11-18. A Nature Biotechnology RNA-design agent paper (RhoAgent, 11-19) was not checked: a safety classifier stopped the turn while I was checking whether another show had covered it, so I switched to other candidates.
+- **ChemRxiv, news and funder pages:** not swept this run.
+- **Shortlist:**
+  - **MRCAT, CHOSEN** (full text read): https://www.medrxiv.org/content/10.64898/2026.11.16.26368234v1
+  - ClinDataBench (full text available): https://www.medrxiv.org/content/10.64898/2026.11.17.26368316v1
+  - NeuroImgAgent (full text available): https://www.biorxiv.org/content/10.64898/2026.11.19.767770v1
+  - Entity normalization across biological ontologies (full text available): https://www.biorxiv.org/content/10.64898/2026.11.17.767229v1
+  - Knowledge-graph target–adverse-event bias paper: https://www.biorxiv.org/content/10.64898/2026.11.19.767791v1 (deferred, bioRxiv rate-limited the download)
+  - Surrogate Verifiers: https://www.biorxiv.org/content/10.64898/2026.11.18.767545v1 (deferred, bioRxiv rate-limited the download)
+
+**Unrelated leftover:** the 11-19 SPIDER stub files are still sitting uncommitted in the scripts folder, although the 11-19 script itself was committed with the DeepQuest episode. `publish_pending.py` may not have finished that day's run.
+
+Sources (novelty check): [MRAgent on PyPI](https://pypi.org/project/mragent/), [MRAgent Crossref record](https://api.crossref.org/works/10.1093%2FBIB%2FBBAF140). Neither is MRCAT.
+=== 2026-11-21T02:07:36-08:00 done  biomedical-agentic-ai (exit 0) ===
