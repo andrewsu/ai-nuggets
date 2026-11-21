@@ -5184,3 +5184,40 @@ Shortlist (✔ = used):
 - ✗ Microsoft Ignite MAI Code 2 (launch item, no substance), BIS chip-export licences, Dragos canaries and Prime Intellect breach, Meta's ML-engineering agents, Hugging Face harness LoRA adapters
 - ✗ Machine Learning Street Talk with Tomasello (Nov 19), TWIML with Socher (Nov 3), No Priors with Tenev (Nov 5): passed over for McGrew, which fits the lead better
 === 2026-11-20T02:36:19-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-21T02:30:13-08:00 start jinglin-ai-pulse ===
+I wrote today's Ollie's AI Pulse script and its two stub files. `SKIP_TTS=1` was set, so I did not generate audio, publish, edit `feed.xml` or commit; the batch step does those. The spoken part is about 2,140 words, inside the brief's 1,500–2,200 target.
+
+- **Script:** `podcasts/jinglin-ai-pulse/scripts/2026-11-21-a-weaker-judge.md`
+- **Stubs:** `2026-11-21-a-weaker-judge.rss-item.xml` (the item parses as valid XML) and `2026-11-21-a-weaker-judge.commit-msg`
+
+**What's in it.** The theme is who checks the work when the AI that produced it is stronger than the person checking.
+- **Lead:** Levent Alpöge, a mathematician at Anthropic, claims a proof of the Generalized Riemann Hypothesis made with Claude. He released it only as Lean code (Lean is a proof language in which a computer checks every step). I read his note in full, plus Terry Tao's post ranking three results by how well understood they are, Scott Aaronson's post, and Glazer's post confirming the formal statement is GRH. As of Glazer's post the code was still compiling; I couldn't find a confirmed result.
+- **The twist:** Ravi Vakil posted Alessandro Masullo's all-human 940-page proof. About eight hours later he added that people had found problems in it "with the assistance of different AI models."
+- **Debate:** posts from Jaffee, Erdil, Khattab, cloneofsimo, Yudkowsky, and Borretti's "Re: Riemann."
+- **Second topic:** METR's capability update. Model judges score work from similar or stronger models too generously, and larger agent swarms drift toward the tests they wrote themselves. Time horizons double about every 3.6 months.
+- **Third topic:** a short item on Thinking Machines' open-weights Inkling 2 Mini.
+- **Money Moves:** Anthropic's stock fell on Friday to $83.05, five cents above its IPO price, and closed at $88.91. A Reuters report that the SEC is looking at Nvidia's accounting sent Nvidia down 12–14% and the Nasdaq down about 5.3%.
+- **Deep Cut:** Vlad Tenev on No Priors (Nov 5), who co-founded the AI-math company Harmonic. There is no published transcript, so I transcribed chapter 12:20–18:55 from the audio. He argued lab-made math would be "poorly received", and that the same result would be "much more accepted if it was like a random layperson using GPT-6."
+- **Disclosure:** the episode says up front that Claude is the AI in the lead and that Claude drafted the script.
+
+One thing to check: the 11-19 stub files are still in `scripts/` even though that episode was committed. Cleanup should have deleted them, so it may need a look.
+
+**Candidate funnel**
+- **Latent Space AINews** (Nov 21 issue): about 70 items scanned, 8 shortlisted. I re-read 22 posts directly through fxtwitter; x.com itself can't be read from this host.
+- **Hacker News:** 8 Riemann stories in the last 48 hours; I read the top comments on the Alpöge thread (2,650 points, 1,830 comments).
+- **Business news:** about 25 Google News headlines. Genesis AI's $500M round was already covered on 11-18 and Isomorphic's Series C on 11-18, so both were dropped. The Nvidia SEC report is confirmed by about 8 outlets, but Reuters itself can't be read here, so its figures come via FinanceFeeds.
+- **Podcasts:** I checked the No Priors feed (6 recent episodes) and picked Tenev because it fits today's theme. MLST with Tomasello and TWIML with Socher were already turned down on 11-20.
+- **Dedup:** I searched all shows' past scripts, using "Schulman" as a term I knew would match (it found 5 files). Earlier Riemann coverage (10-06, 10-08, 10-27) was about other results. Masullo, Tenev and METR's Time Horizons 2.0 had not appeared before.
+
+**Shortlist** (✔ = used):
+- ✔ Alpöge GRH note — https://alpo.ge/remark.pdf
+- ✔ Tao, three results ranked by how digested they are — https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/
+- ✔ Aaronson — https://scottaaronson.blog/?p=10344
+- ✔ Vakil / Masullo human proof — https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/
+- ✔ METR Q4 capability update — https://metr.org/blog/2026-11-20-q4-2026-capability-update/
+- ✔ Inkling 2 Mini, short mention — https://x.com/miramurati/status/2123872534970208421
+- ✔ ANT day two / Nvidia SEC selloff — https://financefeeds.com/anthropic-ant-stock-88-91-saturday-week-ahead-after-friday-low-tested-83-ipo-price-bull-97-bear-80/
+- ✔ No Priors with Vlad Tenev (Deep Cut) — https://traffic.megaphone.fm/PDP1158596730.mp3
+- ✗ Latent Space "Formal Verification" article (Nov 20) — an interview piece, not a podcast; the Tenev episode covers the same ground
+- ✗ Tencent Hy4, Gemini 4 Neon reception (Neon already covered 11-19), Microsoft Ignite MAI Code 2, Trump–Xi "joint guardrails" (no details given), Epoch's Malaysia chip-smuggling estimate
+=== 2026-11-21T02:37:37-08:00 done  jinglin-ai-pulse (exit 0) ===
