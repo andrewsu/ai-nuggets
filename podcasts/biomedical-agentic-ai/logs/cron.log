@@ -6654,3 +6654,39 @@ I've written today's episode, MRCAT, a multi-agent system for Mendelian randomiz
 
 Sources (novelty check): [MRAgent on PyPI](https://pypi.org/project/mragent/), [MRAgent Crossref record](https://api.crossref.org/works/10.1093%2FBIB%2FBBAF140). Neither is MRCAT.
 === 2026-11-21T02:07:36-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-22T02:00:10-08:00 start biomedical-agentic-ai ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 6 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+I've written today's episode script and its two stub files. `SKIP_TTS=1` was set, so I didn't run TTS, publish, edit the feed or commit; the batch job does those steps.
+
+**Episode:** "INF — an inverse-document-frequency fix for knowledge-graph hub bias in target safety, and a recall gain the ranking metric can't see." It covers a bioRxiv preprint posted 2026-11-20 by Valerie Gillet's group at Sheffield with Evotec. The spoken script is about 945 words, under the 1,150 cap, and I read the full 17 pages before writing it. This one is about knowledge graphs, not agents; the brief lists knowledge graphs as a liked topic.
+
+- **The idea:** it borrows inverse document frequency from text search, the trick that stops "the" from dominating results. Each node in a path is weighted by how rare it is within each relation type, not by its total number of connections. That separate-per-relation-type weighting is what sets it apart from the degree-weighted path count from the Hetionet work.
+- **The most telling result:** for targets with five or fewer known adverse events, the best settings ignore the raw path count entirely and predict from rarity alone.
+- **Headline numbers:** recall for those targets rises from 20% (raw counts) and 26% (degree-weighted) to 48%. On an outside set of 7,804 pairs, overall recall goes from 22% to 40%.
+- **The caveat the episode makes:** top-10 ranking is tied for all three methods (35–36%) and falls below 7% for everyone on the outside set. The main text never reports a false-positive rate or precision, so the recall gain can't be told apart from scores simply being pushed higher. The negative examples were also drawn only from targets that already had a known adverse event.
+
+**Files** in `podcasts/biomedical-agentic-ai/scripts/`:
+- `2026-11-22-inf-rare-paths-raise-recall-not-ranking.md`
+- `.rss-item.xml` (parses as valid XML)
+- `.commit-msg`
+
+The bioRxiv record for the paper link resolves, and I added a note to the show's deferral log in memory.
+
+**Candidate funnel**
+- **bioRxiv:** 584 records for 11-19 to 11-22, pulled day by day (301, 260, 23, 0). There were 17 keyword hits and 6 relevant after removing false matches. 11-19 again stopped at exactly 301 records, which may mean the download was cut short.
+- **medRxiv:** 208 records (112, 87, 9, 0) and 15 hits. Of the relevant ones, MRCAT aired here yesterday, and the remaining ones are either already covered or off-brief.
+- **arXiv:** the shared download is unchanged from yesterday and only covers 11-17 to 11-19 (500 papers). TwinLab, Decision2Care and the black-box clinical-model auditing paper were already covered by Receptor & Reason.
+- **PubMed:** 25 hits for 11-17 to 11-22.
+  - The CASCADE paper in iScience is a different system from the CASCADE episode on 08-07. Its full text wasn't tested; a PubMed Central copy exists.
+  - The arXiv mirror "Agents Propose, Code Verifies, Humans Decide" was posted 11-08, outside the 4-day window.
+- **ChemRxiv, news and funder pages:** not swept this run.
+- **Shortlist:**
+  - **INF knowledge-graph degree bias, CHOSEN** (full text read): https://www.biorxiv.org/content/10.64898/2026.11.19.767791v1
+  - MicroBioAgent (full text available, not chosen): https://www.biorxiv.org/content/10.64898/2026.11.17.767465v1
+  - Entity normalization across biological ontologies (full text available): https://www.biorxiv.org/content/10.64898/2026.11.17.767229v1
+  - Surrogate Verifiers (deferred; full text not retried): https://www.biorxiv.org/content/10.64898/2026.11.18.767545v1
+  - CASCADE, iScience (deferred; full text untested): https://doi.org/10.1016/j.isci.2026.118246
+  - Dropped: NeuroImgAgent, ClinDataBench and EpiCompass, which Receptor & Reason covered on 11-21.
+
+**Sign-in warning:** this run's log warns that the current sign-in ends between 2026-11-28 and 2026-12-01. Running `claude auth login` before then keeps the nightly runs from failing.
+=== 2026-11-22T02:05:35-08:00 done  biomedical-agentic-ai (exit 0) ===
