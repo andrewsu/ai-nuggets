@@ -4511,3 +4511,28 @@ I wrote the Blackbird Brief Portfolio Watch for Saturday, November 21. `SKIP_TTS
 - **Not confirmed:** several outlets report concerns about how Capricor's trial was run. The FDA letter isn't public, so the episode doesn't state those as fact.
 - **Passed over:** a University of Colorado recap of Elicio's pancreatic cancer vaccine trial (paper is a month old and already covered), KRAS drug results from the Triple Meeting (paywalled), Kyverna (only a law-firm notice), GRAIL, a Nemours hearing gene therapy story, and a paywalled Endpoints piece on China.
 === 2026-11-21T02:20:41-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-22T02:10:10-08:00 start blackbird-brief ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 6 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Both of today's episodes are written as SKIP_TTS stubs (no TTS, no R2 publish, no feed edit, no commit — the orchestrator does those after batch TTS).
+
+**Episodes produced (Sunday = two):**
+- `2026-11-22-radar-in-vivo-car-t-niche` — Sourcing Radar, 2,294 spoken words
+- `2026-11-22-portfolio-watch` — Portfolio Watch, 1,718 spoken words
+
+Each has its `.md`, `.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placeholders, XML-validated) and `.commit-msg`. Ledger appended (139 episodes, 720 unique keys). `memory/blackbird-portfolio.md` edited in place: the Mao-lab entry is now a two-platform top sourcing lead, and Winnow carries the two lupus items.
+
+**Candidate funnel**
+
+*Stream B — preprints (Radar).* bioRxiv + medRxiv details API swept day-by-day, 2026-11-15 → 11-21, **2,143 records**; 33 unique hits on corresponding-author institution (JHU / UMB / Lieber / Kennedy Krieger / UMBC / Baltimore); 4 shortlisted for full text.
+- ✅ **CHOSEN (LEAD)** VINCIT in vivo CAR-T niche, Mao lab JHU — `10.64898/2026.11.16.767176`
+- ✅ **CHOSEN (pick 2)** SLC6A8 creatine transporter in AML, Pearce/Bloomberg-Kimmel — `10.64898/2026.11.18.767047`
+- ERM mechanosensing (`…767111`) — full text read, Technion chain of title, no therapeutic handle
+- FluoMALDI (`…766883`) — **deferred, full text unobtainable** (render lag + jina 211-byte failure); re-check next week
+- SWELL1 glioma v2 — dedup drop (shipped 09-27)
+
+*Stream A — news (Portfolio Watch).* Endpoints/STAT/BioPharma Dive/GEN/BioBuzz RSS + Google News across ~74 portfolio terms. **Fierce Biotech and Fierce Pharma RSS both HTTP 403** to this IP; **JHU Hub, Hopkins Medicine and UMB newsroom RSS all Cloudflare-challenged** — institutional newsrooms were not covered.
+- ✅ **CHOSEN** MiSLE Phase 2 MSC lupus miss (LEAD) · trifunctional NK + rituximab, no lymphodepletion · Guardant Reveal Ultra 1-ppm MRD
+- Rejected: QurAlis (shipped 11-17), Blackstone/Pfizer (covered 11-16/19), Capricor (11-21), Erasca/Alterome, Lakefront, GRAIL Galleri (still no primary FDA action — second consecutive rejection)
+
+Two things worth flagging: the UK Biobank ALS NfL study is a strong NuGate biomarker read but published 2026-10-20, so I left it out of the window rather than dating it wrong; and a "China enforces interim export registration on 40 technologies" headline would have closed Thursday's open watch item, but the **only** source is an SEO aggregator with no MOFCOM/Reuters/trade confirmation, so I did not use it — it's noted for re-check.
+=== 2026-11-22T02:31:43-08:00 done  blackbird-brief (exit 0) ===
