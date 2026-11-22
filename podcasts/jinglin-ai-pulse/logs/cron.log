@@ -5221,3 +5221,33 @@ One thing to check: the 11-19 stub files are still in `scripts/` even though tha
 - ✗ Latent Space "Formal Verification" article (Nov 20) — an interview piece, not a podcast; the Tenev episode covers the same ground
 - ✗ Tencent Hy4, Gemini 4 Neon reception (Neon already covered 11-19), Microsoft Ignite MAI Code 2, Trump–Xi "joint guardrails" (no details given), Epoch's Malaysia chip-smuggling estimate
 === 2026-11-21T02:37:37-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-22T02:30:11-08:00 start jinglin-ai-pulse ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 6 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+I wrote today's Ollie's AI Pulse script and its two stub files. `SKIP_TTS=1` was set, so I didn't generate audio, upload to R2, edit `feed.xml` or commit. `publish_pending.py` will do those after the batch TTS run.
+
+**Files written** (in `podcasts/jinglin-ai-pulse/scripts/`)
+- `2026-11-22-every-hop.md`: about 2,230 spoken words under `## Script`, slightly over the 2,200-word target.
+- `2026-11-22-every-hop.rss-item.xml`: the feed item with `__LENGTH__` and `__DURATION__` placeholders; the XML parses.
+- `2026-11-22-every-hop.commit-msg`
+
+**Episode: "every hop."** The theme is the chain of custody between whoever produces something and whoever has to trust it. As usual, the episode discloses up front that Claude is involved: the proof was found with Claude, the MIT checks were run with Claude Code, and Claude drafted the script.
+- **Twitter Pulse, lead:** on Nov 21 the Lean and Mathlib communities certified Alpöge's proof of the Riemann Hypothesis. It also covers Andrew Sutherland's verification files at MIT (175,187 modules, a 61 GB export, independent checkers) and the pushback on Hacker News. Yesterday's episode ended by asking whether this check would pass, so this follows straight on.
+- **Twitter Pulse, second story:** Dragos sent about two million booby-trapped prompts through AI providers. Then OpenRouter dropped three providers and Together AI disclosed a leak caused by its own AI coding agent.
+- **Money Moves:** OpenAI now requires routers and gateways to get its approval before reselling its models, and it published a post on defending against people copying its models.
+- **Deep Cut:** Ben Buchanan and Tantum Collins on The Cognitive Revolution (Nov 21), on spending the US compute lead on safety. Quotes were checked against the published transcript.
+
+**What was searched**
+- **X/Twitter:** read through Hacker News threads plus the fxtwitter API. I found only one X post worth citing (Nate Berkopec, Nov 21), so most of the social discussion comes from Hacker News comments.
+- **Hacker News:** about 60 stories from the last 48 hours with more than 150 points.
+- **Funding news:** TechCrunch, Crunchbase and Semafor feeds. Isomorphic's $5B round and Noeri had already been covered, so I dropped them.
+- **Podcasts and blogs:** 10 podcast feeds plus the Latent Space, Tao, Aaronson and Kevin Buzzard (Xena) blogs.
+- **Not picked:**
+  - Latent Space's formal-verification piece: an article, not a podcast episode.
+  - "Language Models Can Rewrite Their Own Weights" paper: Ollie's other show covers papers.
+  - Inkling 2 Mini: covered yesterday.
+  - GPT-6.2 on SimpleBench: dropped to keep the episode tight.
+
+**Fact fixes before saving:** the commenter who explained the sandboxed check works at the Lean research organization (Lean FRO), not a "Lean Foundation" as I first wrote, and I re-cut one Collins quote so it doesn't splice his words together.
+
+I also saved a memory note: in Semafor's RSS feed, a simple title-then-link match pairs each headline with the next article's URL.
+=== 2026-11-22T02:36:42-08:00 done  jinglin-ai-pulse (exit 0) ===
