@@ -6894,3 +6894,42 @@ Other sources used: [Alterome's release](https://www.businesswire.com/news/home/
 
 I also added today's source-access notes to the shared memory file.
 === 2026-11-21T02:28:30-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-22T02:20:11-08:00 start calibr-briefing ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 6 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Both Calibr episodes for 2026-11-22 are written as stubs only. `SKIP_TTS=1` was set, so I didn't run TTS, upload to R2, edit `feed.xml` or commit; the overnight `publish_pending.py` job does those steps.
+
+**Files** in `podcasts/calibr-briefing/scripts/`, each with its `.rss-item.xml` and `.commit-msg` stub (both RSS items parse as valid XML):
+- `2026-11-22-pharma-headlines.txt` (about 1,075 words)
+- `2026-11-22-capricor-fda-data-integrity-spotlight.txt` (about 1,505 words)
+
+**Headlines.** The Sunday news was dark as expected, so this is a catch-up on Thursday–Friday items earlier episodes didn't cover:
+1. **AI in drug discovery (lead):** Reuters interviewed R&D heads at seven big pharmas, who said AI is cutting early discovery time by up to half. GSK called Anthropic "another competitor," and Novo and Sanofi said they don't give proprietary data to frontier labs.
+2. **Danaher–Microsoft:** a shared agentic AI platform for Danaher's lab instruments.
+3. **Recursion:** agreed a Phase 3 design with the FDA for REC-4881 in familial adenomatous polyposis (FAP).
+4. **Novo:** FDA approved once-weekly Sogroya in Turner syndrome. Growth on it was slightly lower than on daily shots.
+5. **Capricor:** a teaser for the spotlight.
+
+It ends with a Thanksgiving-week look-ahead and a note that we found no Foresite portfolio news.
+
+**Spotlight: Capricor's second rejection.** The FDA's own statement is posted on its biologics site. Yesterday's episode had to say the details were "reported by several outlets"; now it's sourced from the FDA itself. The statement names post hoc changes to the analysis plan, blinding violations and other protocol breaches, and says the data "cannot be remediated post-hoc."
+
+The script walks through how the review got here, including July's 42% vs 15% hypersensitivity gap that raised the risk patients could guess their treatment arm. It then covers what this says about the FDA's new rare disease flexibility, and three takeaways for Foresite and Calibr. No analyst notes were out by Sunday morning, and the script says so.
+
+**Candidate funnel**
+- **RSS sweep** (15 feeds since Nov 20, 18:00 UTC): about 50 items, roughly 12 on-target. Fierce Biotech and Fierce Pharma returned 0 items again. The Endpoints index loaded but with every headline stripped.
+- **Google News searches:** 13 queries, which surfaced the Friday items above.
+- **Dedup:** checked against the Nov 10–21 scripts, with "Insmed" as a control term that did match.
+  - Dropped as already covered: the Sunharbo approval (Nov 10), the Nelkarmi approval (Nov 18) and the Pfizer–Blackstone financing (Nov 12).
+  - The enlicitide extension data was a re-post from the AHA meeting, so I left it out.
+- **Chosen:**
+  - ★ Spotlight: [FDA statement on deramiocel](https://www.fda.gov/vaccines-blood-biologics/whats-new-biologics/statement-deramiocel-bla-duchenne-muscular-dystrophy), [BioPharma Dive](https://www.biopharmadive.com/news/capricor-fda-duchenne-cell-therapy-deramiocel/875384/), [BioSpace](https://www.biospace.com/fda/capricors-regulatory-odyssey-for-dmd-cell-therapy-hits-second-fda-rejection), [BioSpace on July's briefing documents](https://www.biospace.com/drug-development/fda-disputes-capricors-claims-of-phase-3-success-for-dmd-cell-therapy), [Capricor release](https://www.globenewswire.com/news-release/2026/11/21/3407877/0/en/capricor-therapeutics-provides-regulatory-update-on-deramiocel-bla-for-duchenne-muscular-dystrophy.html), [PPMD statement](https://www.parentprojectmd.org/fda-issues-complete-response-letter-for-deramiocel/)
+  - ★ [Reuters AI piece (syndicated copy)](https://1027wbow.com/2026/11/20/big-pharma-with-eye-on-anthropic-says-ai-is-shrinking-drug-discovery-timelines/)
+  - ★ [Danaher–Microsoft (Contract Pharma)](https://www.contractpharma.com/breaking-news/danaher-to-collaborate-with-microsoft-on-agentic-platform-for-smart-scientific-instruments/)
+  - ★ [Recursion FAP Phase 3 (Drug Discovery Trends)](https://www.drugdiscoverytrends.com/recursions-phase-3-fap-trial-will-count-large-polyp-removals-as-events-under-fda-agreed-design/)
+  - ★ [Novo's Sogroya release](https://www.prnewswire.com/news-releases/novos-sogroya-receives-fda-approval-as-the-first-and-only-once-weekly-long-acting-growth-hormone-for-children-with-turner-syndrome-ts-302947192.html)
+- **Considered, not used:** AriBio's AR1001 Alzheimer's data (mixed results from Wednesday's conference), lawmakers on China biotech investment (only an Endpoints teaser), Leo Pharma delaying its IPO, Mesoblast's heart failure filing plans, BioPharma Dive's psychedelic-blockbuster analysis (the Helus spotlight on 11-17 already covered that ground), and the AR1001/peanut/stroke trade items.
+
+**Sign-in warning:** the cron log says the sign-in for these runs expires between Nov 28 and Dec 1. Run `claude auth login` before then, or the nightly runs will start failing.
+
+I also added today's source-access notes to the shared biotech news memory file.
+=== 2026-11-22T02:32:32-08:00 done  calibr-briefing (exit 0) ===
