@@ -6690,3 +6690,36 @@ The bioRxiv record for the paper link resolves, and I added a note to the show's
 
 **Sign-in warning:** this run's log warns that the current sign-in ends between 2026-11-28 and 2026-12-01. Running `claude auth login` before then keeps the nightly runs from failing.
 === 2026-11-22T02:05:35-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-23T02:00:09-08:00 start biomedical-agentic-ai ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 5 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Today's episode is written as a stub only. `SKIP_TTS=1` was set, so I didn't run TTS, publish, edit the feed or commit; `publish_pending.py` will handle those after the batch audio job.
+
+**Episode:** "Observed, Curated, Reused — rare-disease rankers score well when HPO has already read the patient's own case report" (arXiv 2611.27301, posted 11-20, Röttger lab at the University of Southern Denmark). The spoken body is about 1,000 words, under the 1,150 cap, and I read the full text before writing.
+- **Finding:** curators add each test patient's case report to the HPO disease profiles that rank that patient's diagnosis. One standard ranker's score jumps from 0.26 to 0.84 when the paper is added, and falls to 0.05 when those annotations are removed. Control tests rule out general growth of the ontology.
+- **Take for this show:** agents and LLM benchmarks that use the same published cases inherit this leak. The paper only tested classical rankers, so the script presents the agent angle as an implication, not a result.
+
+**Files:** `podcasts/biomedical-agentic-ai/scripts/2026-11-23-hpo-source-ingestion-graded-against-own-case-report.{md,rss-item.xml,commit-msg}`. The RSS item parses as valid XML.
+
+**Problem to check:** the 11-19 SPIDER episode's stubs are still waiting in `scripts/`. There is no mp3 and no feed entry, so the orchestrator seems to have skipped them.
+
+**Candidate funnel**
+- **arXiv:** the shared cache has 500 entries, all from 11-19 and 11-20 (it stops at 500). 77 matched the keyword filter; after removing irrelevant hits, the shortlist was:
+  - **CHOSEN:** Observed, Curated, Reused — https://arxiv.org/abs/2611.27301
+  - AutoOntologyBench (full text read; agent-built ontologies add 6.1 points over retrieval but trail expert ones by 13.0; only partly biomedical) — https://arxiv.org/abs/2611.27734
+  - MetaRigor — https://arxiv.org/abs/2611.27713
+  - Evidence sufficiency triage for clinical agents — https://arxiv.org/abs/2611.27390
+  - TEA-Bench-BR — https://arxiv.org/abs/2611.27895
+  - LesionAgent (2611.27876), DermKG (2611.27283), MedicalRSI (2611.26806), ChatAtom (2611.26782)
+- **bioRxiv/medRxiv:** swept day by day for 11-19 to 11-23, about 895 records with 37 keyword hits. The first sweep script hung, so I re-ran it with curl. bioRxiv 11-19 returned exactly 301 records, so that day may be cut off.
+  - MicroBioAgent (full text readable) — https://www.biorxiv.org/content/10.64898/2026.11.17.767465v1
+  - Entity normalization across ontologies (full text readable) — https://www.biorxiv.org/content/10.64898/2026.11.17.767229v1
+  - Live Mouse Tracker MCP (new, full text not tried) — https://www.biorxiv.org/content/10.64898/2026.11.20.768067v1
+  - Open lncRNA foundation model (new, full text not tried) — https://www.biorxiv.org/content/10.64898/2026.11.20.768117v1
+  - Already shipped by this show or by receptor-and-reason, so excluded: NeuroImgAgent, ClinDataBench, MRCAT, INF.
+- **Dedup:** the chosen paper is not in any show's scripts or feed. The check included a known-shipped control term (MRCAT), which matched, so the grep was working. A web search for the exact title found no earlier posting or press.
+- **Not swept this run:** ChemRxiv, PubMed, news and funder pages. A full-text read of an in-window candidate was already in hand, so these are a known recall gap.
+
+Sources:
+- [JMIR 2026 e102537](https://www.jmir.org/2026/1/e102537/PDF) — the only web-search result near the title; it is a different paper, which is the basis for "no prior posting".
+- [arXiv 2611.27301](https://arxiv.org/abs/2611.27301)
+=== 2026-11-23T02:08:26-08:00 done  biomedical-agentic-ai (exit 0) ===
