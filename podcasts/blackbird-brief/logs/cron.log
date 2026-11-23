@@ -4536,3 +4536,26 @@ Each has its `.md`, `.rss-item.xml` (with `__LENGTH__` / `__DURATION__` placehol
 
 Two things worth flagging: the UK Biobank ALS NfL study is a strong NuGate biomarker read but published 2026-10-20, so I left it out of the window rather than dating it wrong; and a "China enforces interim export registration on 40 technologies" headline would have closed Thursday's open watch item, but the **only** source is an SEO aggregator with no MOFCOM/Reuters/trade confirmation, so I did not use it — it's noted for re-check.
 === 2026-11-22T02:31:43-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-23T02:10:10-08:00 start blackbird-brief ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 5 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Episode written. SKIP_TTS=1, so no TTS, no R2 publish, no feed edit, no commit — stubs only, per PIPELINE.md.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-11-23-portfolio-watch.md` (1,926 spoken words, ~10 min)
+- `…/2026-11-23-portfolio-watch.rss-item.xml` (validates as XML with the itunes namespace; `__LENGTH__` / `__DURATION__` placeholders)
+- `…/2026-11-23-portfolio-watch.commit-msg`
+- Ledger appended (140 episodes); `memory/blackbird-portfolio.md` updated in place for Winnow, Clasp, Aletira, and the Mao-lab sourcing entry.
+
+**Candidate funnel**
+- Industry RSS: Endpoints 24, STAT 20, BioPharma Dive 10, GEN 10, BioBuzz 1 scanned. **Fierce Biotech and Fierce Pharma RSS: HTTP 403 to this IP on both attempts — skipped** per PIPELINE.md.
+- BioSpace press-release wire (34 slugs) + news sections, datelines read inside each release (Monday rule).
+- Google News RSS, ~79 portfolio/program/competitor terms at `when:4d`; one term returned HTTP 429, not retried.
+- Dedup: 10 candidates → 7 fresh. Dropped lines printed: AbbVie/DISCO, Pfizer/Starna, BioSpace autoimmune-setbacks tally — all shipped 11-16/11-19.
+
+**Picks**
+1. **LEAD** — CARsgen CT1182, first in vivo CAR-T human data (n=6, no lymphodepletion, 3 CR/2 PR, only grade-1 CRS). Partially falsifies our own 11-19 Starna call; moves Winnow's argument from acute toxicity to durability of exposure, and puts competitive pressure on yesterday's VINCIT confinement claim.
+2. PMV rezatapopt PYNNACLE pivotal primary analysis (48% ORR / 10.4-mo DoR; NDA Q1 2027) → Clasp's two-gate eligible fraction.
+3. Jefferies CGT dispatch: COGS and scalability now diligenced before first-in-human → Aletira pre-Series A actions and a sourcing-template change.
+
+**Two gaps worth flagging:** the one item naming Blackbird Laboratories ("Can Baltimore Keep the Biotech Companies It Helps Build?", BioSpectrum Asia) is unreadable — reCAPTCHA to curl, and the Google News permalink is abuse-blocked at r.jina.ai — so it failed the full-text gate and is noted for a manual read. And the Endpoints report that Lilly is buying LoQus23 for up to $725M is paywalled with no Lilly or LoQus23 posting yet; I flagged it explicitly as unconfirmed in the spoken script rather than treating it as a fact.
+=== 2026-11-23T02:19:49-08:00 done  blackbird-brief (exit 0) ===
