@@ -5251,3 +5251,30 @@ I wrote today's Ollie's AI Pulse script and its two stub files. `SKIP_TTS=1` was
 
 I also saved a memory note: in Semafor's RSS feed, a simple title-then-link match pairs each headline with the next article's URL.
 === 2026-11-22T02:36:42-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-23T02:30:11-08:00 start jinglin-ai-pulse ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 5 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+I wrote today's Ollie's AI Pulse script and its two stub files. `SKIP_TTS=1` was set, so I didn't generate audio, publish, edit `feed.xml` or commit. The overnight batch job does those steps from the stubs.
+
+**Files written** (in `podcasts/jinglin-ai-pulse/scripts/`)
+- `2026-11-23-whose-test-set.md`: about 2,130 spoken words, at the top of the 10–15 minute target.
+- `2026-11-23-whose-test-set.rss-item.xml`: the feed entry, with `__LENGTH__` and `__DURATION__` left as placeholders. It parses as valid XML.
+- `2026-11-23-whose-test-set.commit-msg`
+
+**Theme: "whose test set is it, and who besides the owner can run it?"**
+- **Twitter Pulse lead:** Jakub Pachocki's "Perplexity and Intelligence" (OpenAI, Nov 22). It publishes OpenAI's internal pretraining scores and proposes industry-wide limits based on them. I read the full essay, its footnotes and the chart's underlying numbers. The counterpoint comes from Hacker News and Tech Times: the test data is OpenAI's own internal code, so nobody outside can check a limit set in that unit.
+- **Twitter Pulse second item:** an open GitHub project where people and their coding agents are converting Masullo's 940-page Riemann manuscript into checkable Lean proofs. As of Nov 22 it has about 6,800 statements written and about 710 logged errors, 28 of them with no fix yet.
+- **Money Moves:** an advocacy group estimates Anthropic's 2028 power at 87% gas and 11% coal. Anthropic's own policy promises site emissions figures checked by an independent third party. Deutsche Telekom's investment fund put €100M into Mistral.
+- **Podcast Deep Cut:** Nick Bostrom on the a16z podcast (Nov 19), arguing for pacing over a pause, and arguing that what matters is *which route* to capability labs use, not one overall score. There was no published transcript, so I transcribed the episode audio with Mistral's speech-to-text and took the quotes from that. The Source line says so.
+
+**Candidate funnel**
+- **Hacker News:** I scanned 48 stories over 120 points from the last 48 hours; 9 were on-topic for AI.
+  - Picked: the Perplexity essay (590 points), the Anthropic power study (972), the Masullo progress map (234).
+  - Context only: Baez on Masullo (225).
+  - Not used: the Lean Riemann verification (already covered yesterday), the OpenRouter incidents (covered yesterday), the Inkling-2-Mini local models (covered Nov 21), the agent swarm on P vs NP, and the Economist piece on Jensen Huang.
+- **X/Twitter:** I verified Pachocki's announcement post directly. I couldn't find Altman's post; his endorsement is quoted as The Next Web reported it. The AINews newsletter, my usual stand-in for X discussion, hasn't posted since Nov 21.
+- **Funding news:** Mistral/Telekom picked. Not used: Numa ($45M) and Vincue ($93M), both off-topic, and Model ML and Corma, both older than three days.
+- **Podcasts checked:** Dwarkesh, MLST, No Priors, Cognitive Revolution, Interconnects, TWIML, a16z and Lex Fridman. Bostrom was picked. Not used: Christiano and Dwarkesh's "avalanche" episode (both already covered), Jaderberg (covered), MLST's Tomasello episode, and DHH on a16z.
+- **Source failures:** none. The Telekom page needed the jina reader proxy.
+
+I updated one memory note: openai.com pages now load in full with a plain browser-style fetch, including footnotes, author and chart data that the usual proxy route drops.
+=== 2026-11-23T02:37:16-08:00 done  jinglin-ai-pulse (exit 0) ===
