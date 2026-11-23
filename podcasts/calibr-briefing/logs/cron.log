@@ -6933,3 +6933,39 @@ The script walks through how the review got here, including July's 42% vs 15% hy
 
 I also added today's source-access notes to the shared biotech news memory file.
 === 2026-11-22T02:32:32-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-23T02:20:10-08:00 start calibr-briefing ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 5 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+I wrote both of today's Calibr scripts plus the RSS and commit-message stubs for each. `SKIP_TTS=1` was set, so I did not generate audio, publish, edit `feed.xml` or commit; `publish_pending.py` will do that after the batch TTS job.
+
+**Today's files** (in `podcasts/calibr-briefing/scripts/`):
+- `2026-11-23-pharma-headlines.txt` (~1,210 words), with its `.rss-item.xml` and `.commit-msg`
+- `2026-11-23-abivax-scorpion-short-report-spotlight.txt` (~1,590 words), with its `.rss-item.xml` and `.commit-msg`
+
+Both RSS stubs parse as XML. The two commit messages are identical, as on 11-19.
+
+**Headlines:**
+1. **Novartis's Leqvio met its primary endpoint** in the ORION-4 cardiovascular outcomes trial. The release gives no effect size; full results are due in the first half of 2027. The script ties this to Novartis raising Leqvio's peak-sales forecast to $5B at its investor day on 11-20.
+2. **Lilly is buying LoQus23 for up to $725M.** LoQus23 is a preclinical UK company with an oral MSH3 inhibitor for Huntington's.
+3. **Scorpion Capital's short report on Abivax**, teed up as the spotlight.
+4. **The Novartis CEO says AI won't cure cancer within ten years.** He sits on Anthropic's board; this is from his Financial Times interview, read via India Today's write-up.
+5. **Praxis has FDA decision dates on December 27 and January 29.**
+6. **Week ahead:** Invivyd's trial results and Capricor's call today, BridgeBio's FDA date on November 27, and the Vertex and Roche decisions due by November 30. No Foresite portfolio news turned up.
+
+**Spotlight:** Abivax's response to the 297-page short report, claim by claim:
+- **Weak claims:** that the drug behaves like DDT because it is fat-soluble, that its mechanism is wrong, and that the trial sites are suspect.
+- **The one that matters:** that the drug absorbs UVA light above the screening threshold in the regulatory photosafety guideline. The FDA will review the photosafety data in the filing, and it lines up with the skin cancers already seen in the trials.
+- **Also covered:** the skin-cancer counts, the stock moves (verified against Nasdaq data), analyst consensus and cash position, and what it means for Foresite and Calibr.
+
+The main rebuttal source is a Substack post by an investor who is openly long Abivax. The script says so on air.
+
+**Candidate funnel:**
+- **Sources:** 15 RSS feeds (Fierce Biotech and Fierce Pharma returned 0 items, the same 403 as recent runs), the Endpoints index via r.jina.ai, and about 10 Google News queries.
+- **Chosen:** Novartis ORION-4 release (headline lead), the LoQus23 release on GlobeNewswire, the CNBC Abivax story (spotlight), the India Today write-up of the FT interview, and the BioSpace Praxis profile.
+- **Dropped:**
+  - Already shipped: MegaRobo (11-20), Isomorphic, Sanofi/Insmed, Capricor.
+  - Paywalled: STAT's pieces on the new CAR-T company and Genmab.
+  - Not a real story: the PYMNTS "$46B AI deals" figure traces to an October Oliver Wyman report.
+  - Couldn't confirm: Kymera's Phase 2b results expected today, and Bausch + Lomb's trial miss. I left both out.
+
+I also added today's source-access notes (which sites were blocked and what worked) to the biotech news memory file.
+=== 2026-11-23T02:30:00-08:00 done  calibr-briefing (exit 0) ===
