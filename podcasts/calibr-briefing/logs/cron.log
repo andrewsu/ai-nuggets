@@ -7025,3 +7025,47 @@ The 11-19 stubs for both calibr episodes are still sitting uncommitted in `scrip
 
 I also added today's notes on which news sources were reachable to the source-access memory file.
 === 2026-11-24T02:27:11-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-25T02:20:25-08:00 start calibr-briefing ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 3 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Both of today's Travis' Daily Briefing scripts are written. `SKIP_TTS=1` was set, so I didn't generate audio, publish, edit the feed or commit; the batch job will do those from the stubs. Each episode has its RSS item stub (with `__LENGTH__` / `__DURATION__` placeholders; both parse as valid XML) and a commit-message stub next to it in `podcasts/calibr-briefing/scripts/`.
+
+**Episodes**
+- **Headlines** (`2026-11-25-pharma-headlines.txt`, about 940 words):
+  - FDA approves Cogent's Ekitna (bezuclastinib) in second-line GIST, teed up for the spotlight.
+  - AbbVie's Rinvoq approved Monday evening as the first pill for vitiligo; yesterday's episode missed it.
+  - Kymera raises $1.75B at Monday's closing price, with no discount.
+  - FDA approves PolyPid's Bacfenssi, a slow-release antibiotic paste for colorectal surgery.
+  - Two FDA transparency moves: accelerated approvals now flagged on patient leaflets, and the first notices in over a year to companies (Addex, Duchesnay) that didn't post trial results.
+  - BMS's finance chief leaves for Coca-Cola.
+  - Caribou is winding down.
+  - Looking ahead: Thanksgiving market closure, Vertex's decision due by Nov 30, Cogent's mastocytosis decision Dec 30.
+- **Spotlight** (`2026-11-25-cogent-ekitna-gist-approval-spotlight.txt`, about 1,540 words): why adding bezuclastinib to generic sunitinib beat the standard of care, the main trial results, the price (just over $49K a month, from the company's approval-call transcript), and GSK's competing drug, which can't read out before about May 2028. The main question is the liver boxed warning ahead of Cogent's Dec 30 mastocytosis decision, where Sanofi's Ayvakit is the incumbent. It closes with the read for Foresite and Calibr.
+
+One spotlight claim isn't from a source I read this run: that Cogent's mastocytosis trial uses "a much lower dose" than in GIST. That comes from my recall (about 100 mg versus 600 mg), so check it before the audio goes out.
+
+**Candidate funnel**
+- **RSS feeds (last 28h):**
+  - BioSpace: 20 items, 8 in window.
+  - Endpoints: 24 items, 8 in window; article bodies are paywalled.
+  - STAT: 20 items, 13 in window.
+  - GEN: 10 items, 4 in window.
+  - Clinical Trials Arena: 10 items, 4 in window.
+  - BioPharma Dive: 10 items, 1 in window.
+  - Fierce Biotech and Fierce Pharma: 0 items (RSS still empty). I covered them through Google News.
+- **Blocked:** investing.com, Benzinga and TipRanks returned 1 KB block pages; ApexOnco articles were paywalled (headline only).
+- **Already covered, so skipped:** Sanofi–Insmed, GSK's Nelkarmi, Isomorphic–Merck, Savara.
+- **Dropped:** PMV Pharmaceuticals (stale, from Nov 20); Leash Bio's $11M (couldn't confirm the round); SABCS data from Novartis and J&J (low priority).
+- **Shortlist (✔ = used):**
+  - ✔ SPOTLIGHT: Cogent Ekitna approval — https://www.globenewswire.com/news-release/2026/11/24/3409390/0/en/cogent-biosciences-announces-fda-approval-and-launch-of-ekitna-bezuclastinib-for-the-treatment-of-patients-with-gastrointestinal-stromal-tumors-gist-who-have-received-prior-treatme.html
+  - ✔ AbbVie Rinvoq in vitiligo — https://news.abbvie.com/2026-11-23-AbbVies-RINVOQ-R-upadacitinib-Approved-as-the-First-Systemic-Therapy-in-the-U-S-to-Treat-Adult-and-Pediatric-Patients-With-Nonsegmental-Vitiligo
+  - ✔ Kymera $1.75B offering — https://www.sec.gov/Archives/edgar/data/0001815442/000119312526476205/d94169dex992.htm
+  - ✔ PolyPid Bacfenssi approval — https://www.manilatimes.net/2026/11/25/tmt-newswire/globenewswire/polypid-announces-fda-approval-of-bacfenssi-d-plex-to-reduce-the-occurrence-of-surgical-site-infections-in-patients-undergoing-colorectal-surgery/2477561
+  - ✔ FDA accelerated-approval patient labels — https://endpoints.news/drug-labels-must-flag-accelerated-approval-to-patients-fda-says/
+  - ✔ FDA trial-results noncompliance notices — https://www.statnews.com/pharmalot/2026/11/24/fda-cites-two-drugmakers-for-failing-to-report-clinical-trial-results/
+  - ✔ BMS CFO to Coca-Cola — https://www.biospace.com/business/bms-loses-cfo-to-coca-cola-on-heels-of-r-d-overhaul
+  - ✔ Caribou winding down — https://www.berkeleyside.org/2026/11/24/caribou-biosciences-berkeley-biotech-company-co-founded-by-jennifer-doudna-is-closing
+  - ✗ PitchBook IPO candidates (BioSpace) — https://www.biospace.com/business/5-biotechs-poised-to-take-the-ipo-plunge
+- **Foresite portfolio:** no news found.
+
+I also added a dated entry to the news-sources memory file: stockanalysis.com call transcripts load in full, and web search lagged a day on two approvals.
+=== 2026-11-25T02:27:51-08:00 done  calibr-briefing (exit 0) ===
