@@ -1,0 +1,8 @@
+Script body: 13370 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 (2758 chars) -> 179.7s ✓
+  [mistral:en_paul_neutral] chunk 2/5 (2930 chars) -> 180.4s ✓
+  [mistral:en_paul_neutral] chunk 3/5 (2804 chars) -> 189.7s ✓
+  [mistral:en_paul_neutral] chunk 4/5 (2933 chars) -> 184.4s ✓
+  [mistral:en_paul_neutral] chunk 5/5 429 rate-limited (hit 1/8); sleeping 60s
+  [mistral:en_paul_neutral] chunk 5/5 (1941 chars) -> 122.7s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/jinglin-ai-pulse/episodes/2026-11-24-the-whole-transcript.mp3 [mistral] 6,855,827 bytes, 856.9s
