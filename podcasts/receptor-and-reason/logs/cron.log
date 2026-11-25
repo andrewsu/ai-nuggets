@@ -6709,3 +6709,30 @@ Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed 
 === 2026-11-22T02:00:10-08:00 paused receptor-and-reason (14.84d cold; goodbye episode 2026-11-22-goodbye prepared for Phase 2/3) ===
 === 2026-11-23T02:00:09-08:00 paused receptor-and-reason (15.84d cold, paused_at=1795341610) ===
 === 2026-11-24T02:00:09-08:00 paused receptor-and-reason (16.84d cold, paused_at=1795341610) ===
+=== 2026-11-25T02:00:23-08:00 resumed receptor-and-reason (fresh GET after pause; removed pause.json) ===
+=== 2026-11-25T02:40:26-08:00 start receptor-and-reason ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 3 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-25-receptor-and-reason.md` — 3,308 words ≈ 18.2 min est., 11 items, spine "controls"
+- `...2026-11-25-receptor-and-reason.rss-item.xml` (parses inside a channel wrapper, `__LENGTH__`/`__DURATION__` placeholders present)
+- `...2026-11-25-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, 179 episodes
+
+**Run context:** the show had been auto-paused since 11-22 (14.8d cold) and resumed this morning on a fresh GET; last content episode was 11-21, so four days of the 7-day window were already-shipped material.
+
+**Candidate funnel**
+
+- **bioRxiv/medRxiv details API** — day-by-day 11-18 → 11-25 with a per-day cursor loop; ~1,100 v1 records. Day totals peaked at 301 (11-18, 11-19). The DOI-date histogram showed real v1 content back to 11-16, so I widened the floor from 11-17 — that pickup supplied the DEFA GWAS item. 82 + 10 relevance hits.
+- **arXiv** — shared cache held only 11-23/11-24 (500 cap), so pulled `arxiv.org/list/{q-bio,cs.AI,cs.CL,cs.MA}/pastweek?show=2000`; 92 bio+agentic candidates, no 429s. **Zero made the roster** — this week's bio-relevant arXiv was almost entirely clinical-NLP benchmarks, and the two best (TrialAgentBench, MRCAT) were already shipped by biomedical-agentic-ai.
+- **Crossref journals** — 18 ISSNs from 11-18, ~130 articles. NPP and IJNP returned 0 for the third consecutive run.
+- **Dedup** — 307 candidates → 284 fresh (22 already shipped, 0 title matches); dropped lines printed; seeded control `2026.11.18.767715` dropped correctly in both the batch pass and the final-roster re-gate. Sibling-show grep on all 11 keys plus asset names: clean.
+- **Full text** — jina `.full.pdf` **14 of 14 on round 0**, best rate recorded; one 408 fell back to curl + mutool successfully. Zero 429s. Elsevier tails read via EPMC `resultType=core` abstracts.
+
+**One item lost to a safety classifier:** a bulk `mg/kg` context grep on the mitragynine/alcohol-use-disorder preprint stopped the turn. Per the standing rule I dropped the item rather than rewording it; the full text is on disk and it's deferred to the next run. The roster was unaffected — 11 other items were already read.
+
+**Picks (11):** semaglutide wanting-not-liking (lead) · RhoA NAc→VTA · ATDP33605 NOP agonist (abstract-only tail) · CYP2D6 long-read/cocaine haplotype · rare-CNV AUD null · antidepressant metabolome · split-intein mGluR heterodimers · NaV1.8 in human vagus · DEFA GWAS effector-gene · Bivexia · EM-Claw (closer).
+
+Also worth flagging for you separately: the session warned that this sign-in expires between 2026-11-28 and 12-01 — the cron pipeline will hard-fail once it does, and only an interactive `claude auth login` (or `claude setup-token` for unattended runs) renews it.
+=== 2026-11-25T02:57:02-08:00 done  receptor-and-reason (exit 0) ===
