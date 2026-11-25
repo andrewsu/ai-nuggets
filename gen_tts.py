@@ -32,7 +32,31 @@ import sys
 import tempfile
 import time
 
-import requests
+import types
+import urllib.error
+import urllib.request
+
+
+# stdlib-only HTTP (no `requests`): cron's /usr/bin/python3 has no pip/requests,
+# which silently broke the Mistral gap-fill on 11-19 and 11-24.
+class HTTPError(Exception):
+    def __init__(self, msg, response=None):
+        super().__init__(msg)
+        self.response = response
+
+
+def _post_json(url, payload, timeout, headers=None):
+    req = urllib.request.Request(
+        url, data=json.dumps(payload).encode(), method="POST",
+        headers={"Content-Type": "application/json", **(headers or {})},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return resp.read()
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", "replace")
+        response = types.SimpleNamespace(status_code=e.code, headers=e.headers, text=body)
+        raise HTTPError(f"{e.code} from {url}: {body[:600]}", response=response) from None
 
 from lib.show import load as load_show
 
@@ -257,14 +281,12 @@ def mp3_bytes_duration(audio_bytes):
 
 
 def mistral_synthesize(chunk, api_key, model, voice):
-    r = requests.post(
+    data = json.loads(_post_json(
         MISTRAL_URL,
-        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
-        json={"model": model, "input": chunk, "voice_id": voice, "response_format": "mp3"},
+        {"model": model, "input": chunk, "voice_id": voice, "response_format": "mp3"},
         timeout=300,
-    )
-    r.raise_for_status()
-    data = r.json()
+        headers={"Authorization": f"Bearer {api_key}"},
+    ))
     audio_b64 = data.get("audio_data") or data.get("data")
     if not audio_b64:
         raise RuntimeError(f"Mistral response missing audio_data; keys={list(data.keys())}")
@@ -272,16 +294,11 @@ def mistral_synthesize(chunk, api_key, model, voice):
 
 
 def voxtral_synthesize(chunk, base_url, model, voice):
-    r = requests.post(
+    return _post_json(
         base_url,
-        json={"model": model, "input": chunk, "voice": voice, "response_format": "mp3"},
+        {"model": model, "input": chunk, "voice": voice, "response_format": "mp3"},
         timeout=600,
     )
-    if r.status_code >= 400:
-        raise requests.HTTPError(
-            f"{r.status_code} from voxtral: {r.text[:600]}", response=r
-        )
-    return r.content
 
 
 def synthesize_chunks(chunks, synth_fn, label):
@@ -296,7 +313,7 @@ def synthesize_chunks(chunks, synth_fn, label):
             audio = None
             try:
                 audio = synth_fn(chunk)
-            except requests.HTTPError as e:
+            except HTTPError as e:
                 resp = getattr(e, "response", None)
                 if resp is not None and resp.status_code == 429:
                     rate_limit_hits += 1
