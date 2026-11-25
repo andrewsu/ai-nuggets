@@ -8,6 +8,19 @@ strategy, episode format, script filename convention, and commit-message
 prefix; this file handles everything after the script content has been
 written.
 
+## Scratch files
+
+The runner gives you a scratch directory in its opening message (also in
+`$AI_NUGGETS_SCRATCH`). Put every temporary file there: fetch/sweep
+helper scripts, downloaded PDFs and HTML, candidate and dedup TSVs,
+extracted text. **Never write ad-hoc files or `tmp_*` directories in the
+repo root** (your working directory). They are not cleaned up, and
+between 2026-10-19 and 11-24 they grew to ~840 MB of untracked clutter.
+The runner deletes the scratch directory when your show finishes, so
+anything that must persist goes in your show's own `memory/`, `state/` or
+`scripts/` files as usual. If you are run by hand with no scratch dir
+given, use `mktemp -d /tmp/ai-nuggets-<slug>-XXXX`.
+
 ## Source-level failures during search
 
 Individual search sources fail transiently — arXiv rate-limits the API

@@ -6,3 +6,4 @@ worker/node_modules/
 worker/.wrangler/
 docs/superpowers/specs/
 podcasts/*/episodes/*.mp3
+/tmp_*

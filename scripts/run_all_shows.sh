@@ -391,6 +391,13 @@ run_show() {
   mkdir -p "$(dirname "$log")" "$STATUS_DIR"
   rm -f "$status_file"  # clear stale entry from a mid-day rerun
 
+  # Per-show scratch dir, outside the repo. Without one the agent improvises
+  # tmp_<show>MMDD/ dirs and *.py helpers in the repo root (cwd), which piled
+  # up to ~840 MB of untracked clutter between 2026-10-19 and 11-24. Shared
+  # across this show's retries; removed when the show finishes.
+  local scratch
+  scratch=$(mktemp -d "/tmp/ai-nuggets-$slug-$(date +%Y%m%d)-XXXX")
+
   # produced= must be initialised here, not just at its assignment below:
   # the auth-failure branches `break` out of the attempt loop before that
   # assignment is reached, and `set -u` would kill this subshell when the
@@ -417,8 +424,8 @@ run_show() {
     out=$(mktemp)
     {
       echo "=== $(date -Iseconds) start $slug$tag ==="
-      printf 'You are producing today'\''s episode of a daily podcast for slug %s. Please read the production guide at podcasts/PIPELINE.md and the show'\''s editorial brief at %s, then follow the instructions in those files to publish today'\''s episode.\n' "$slug" "$prompt" \
-        | "$CLAUDE" -p --permission-mode auto $model_arg
+      printf 'You are producing today'\''s episode of a daily podcast for slug %s. Please read the production guide at podcasts/PIPELINE.md and the show'\''s editorial brief at %s, then follow the instructions in those files to publish today'\''s episode. Your scratch directory for this run is %s: put every temporary file there (helper scripts, downloads, candidate lists), never in the repo root.\n' "$slug" "$prompt" "$scratch" \
+        | AI_NUGGETS_SCRATCH="$scratch" "$CLAUDE" -p --permission-mode auto $model_arg
       echo "=== $(date -Iseconds) done  $slug (exit $?)$tag ==="
     } 2>&1 | tee -a "$log" > "$out"
     # Auth failure first: the CLI exits 0 on it, so without this branch it
@@ -506,6 +513,7 @@ run_show() {
     rm -f "$out"
     break
   done
+  rm -rf "$scratch"
 
   # Write per-show outcome for the post-Phase-1 collector. One line:
   #   "SUCCESS"
