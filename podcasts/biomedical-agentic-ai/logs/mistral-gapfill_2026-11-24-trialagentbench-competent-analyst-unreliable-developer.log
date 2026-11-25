@@ -1,0 +1,4 @@
+Script body: 5916 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/2 (2961 chars) -> 182.4s ✓
+  [mistral:en_paul_neutral] chunk 2/2 (2954 chars) -> 180.2s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/biomedical-agentic-ai/episodes/2026-11-24-trialagentbench-competent-analyst-unreliable-developer.mp3 [mistral] 2,901,306 bytes, 362.6s
