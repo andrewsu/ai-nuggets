@@ -6757,3 +6757,37 @@ I read the paper in full (from the arXiv PDF). It hadn't been used by this show 
 
 I added today's run to the rolling deferral memory, including IGVF as a likely next pick.
 === 2026-11-24T02:04:38-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-25T02:00:24-08:00 start biomedical-agentic-ai ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 3 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+I wrote today's episode on the IGVF Catalog Knowledge Graph. Because `SKIP_TTS=1` is set, I only wrote the script and the two stub files. I did not generate audio, upload to R2, edit `feed.xml` or commit; the orchestrator does those after the batch TTS run.
+
+**Files:**
+- Script: `podcasts/biomedical-agentic-ai/scripts/2026-11-25-igvf-catalog-predictions-outnumber-measurements.md` (925 spoken words, under the 1,150 cap)
+- `...rss-item.xml`, which parses as valid XML and has the `__LENGTH__` and `__DURATION__` placeholders
+- `...commit-msg`
+- The paper URL uses the `10.64898/` prefix, and the bioRxiv details API returns the record.
+
+**The episode:** "The IGVF Catalog Knowledge Graph" (bioRxiv, posted 11-23, Ben Hitz's IGVF data coordination team at Stanford). I read the full 20-page text.
+- **What it is:** about 3 billion nodes and 8.6 billion edges, with an 86-endpoint API, Python and R clients, and an MCP server so coding agents can query it.
+- **Agent access:** the team built a retrieval-augmented setup that writes database queries and parked it as experimental because of cost and load. Agents (Codex, Claude Code) using the MCP server worked better, but the paper never measures this.
+- **The MCP server is well engineered:** its version matches each Catalog release, and contract tests fail when the API changes under it.
+- **What the graph is made of:** about 5.9 billion of the edges are linkage-disequilibrium pairs from a public resource. About 92% of IGVF's own edges are predictions, not measurements. For coding variants, predicted effects outnumber measured ones about 5,000 to 1.
+- **The take:** the field marking an edge as observed or predicted is what keeps an agent's summary honest. The three case studies confirm known biology rather than finding anything new.
+
+**Candidate funnel:**
+- **bioRxiv/medRxiv** (11-21 to 11-25, fetched one day at a time): 558 first-version records, 33 keyword hits. 11-25 was still empty at 2am.
+- **arXiv cache:** 500 entries, covering only 11-23 and 11-24. About 165 matched the keyword filter, most of them not biomedical.
+- **PubMed:** the PubMed MCP connection was reset, so I used the NCBI E-utilities API directly. 48 hits over 5 days.
+- **News:** the web search turned up no in-window launches.
+
+**Shortlist:**
+- ✅ IGVF Catalog Knowledge Graph — https://www.biorxiv.org/content/10.64898/2026.11.20.768224v1
+- ChromSkills (Genome Biology) — dropped. PubMed added it on 11-24, but it was published online 08-29, so it is outside the window.
+- Tablassert, extraction of knowledge graphs from biomedical tables — https://arxiv.org/abs/2611.31614 (a short software note)
+- CLOVER, an LLM benchmark for the Comparative Toxicogenomics Database — `10.64898/2026.11.10.765703`. bioRxiv was rate-limiting (HTTP 429), so I deferred it.
+- APEs, agentic epitope prediction (`…768576`), and an AI agent guiding a pipeline for selective protein-interaction inhibitors (`…768516`). Both PDFs are readable, but I didn't pick either.
+- EM-Claw, a cryo-EM agent (`…768522`). The PDF came back with 0 pages, so I need to retry it.
+- LLM judges vs unsafe clinical actions (https://arxiv.org/abs/2611.33012), PatientFlowSynth (https://arxiv.org/abs/2611.31521), RecurSciBench (https://arxiv.org/abs/2611.32508)
+
+I checked the main candidates against all shows' scripts, with TrialAgentBench as a control term that should match; none had been covered. I also added today's run notes and the open deferrals to the show's memory log.
+=== 2026-11-25T02:05:01-08:00 done  biomedical-agentic-ai (exit 0) ===
