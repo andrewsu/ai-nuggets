@@ -6708,3 +6708,4 @@ Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed 
 === 2026-11-21T02:52:54-08:00 done  receptor-and-reason (exit 0) ===
 === 2026-11-22T02:00:10-08:00 paused receptor-and-reason (14.84d cold; goodbye episode 2026-11-22-goodbye prepared for Phase 2/3) ===
 === 2026-11-23T02:00:09-08:00 paused receptor-and-reason (15.84d cold, paused_at=1795341610) ===
+=== 2026-11-24T02:00:09-08:00 paused receptor-and-reason (16.84d cold, paused_at=1795341610) ===

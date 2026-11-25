@@ -6723,3 +6723,37 @@ Sources:
 - [JMIR 2026 e102537](https://www.jmir.org/2026/1/e102537/PDF) — the only web-search result near the title; it is a different paper, which is the basis for "no prior posting".
 - [arXiv 2611.27301](https://arxiv.org/abs/2611.27301)
 === 2026-11-23T02:08:26-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-24T02:00:09-08:00 start biomedical-agentic-ai ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 4 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Still waiting on the medRxiv part of the sweep. I'll finish the funnel once it completes.
+
+I wrote today's episode on TrialAgentBench (arXiv, posted 11-23, Oxford). I'm in stub mode (`SKIP_TTS=1`), so I did not generate audio, edit `feed.xml` or commit. The orchestrator (`publish_pending.py`) does those steps after the batch TTS run.
+
+**Files in `podcasts/biomedical-agentic-ai/scripts/`:**
+- `2026-11-24-trialagentbench-competent-analyst-unreliable-developer.md`: 991 spoken words, under the 1,150 cap.
+- `.rss-item.xml`: the item parses as valid XML and has the `__LENGTH__` and `__DURATION__` placeholders.
+- `.commit-msg`: one line.
+
+**The take:** The benchmark scores agents against simulated trials where the true drug effect is known, not against published answers. The best models now analyse raw, messy trial records about as well as a statistician who knows how each trial was set up: their error is only 3.5–5.8% higher. Run as drug developers, they do worse. The best one gets 48% of an all-knowing oracle's value; a simple rule-based developer gets 58%. Most of the lost value comes from which studies they buy and which drugs they drop, not from the final go/no-go call.
+
+I read the paper in full (from the arXiv PDF). It hadn't been used by this show or any other show.
+
+**Candidate funnel**
+- **bioRxiv + medRxiv**, 11-19 to 11-24, fetched day by day: 1,242 records, 46 keyword hits. Nothing posted yet on 11-24.
+- **arXiv cache**, 11-21 to 11-23, 500 entries: about 190 keyword hits, roughly 12 on-brief.
+- **PubMed**, entered 11-19 to 11-24: 21 hits. The on-brief ones were already known (CASCADE in iScience, which is an Elsevier journal) or were reviews.
+- **Not checked:** ChemRxiv, news, and the funder pages (ARPA-H, NIH, NSF, HHS). Their curl pages gave no usable headlines on the last run.
+
+**Shortlist**
+- ✅ **CHOSEN:** TrialAgentBench — https://arxiv.org/abs/2611.30916
+- WARD, longitudinal clinical agents — https://arxiv.org/abs/2611.29243
+- CASPER, autonomous multireference quantum chemistry — https://arxiv.org/abs/2611.29902
+- Hypothesis-driven experiment-planning benchmark — https://arxiv.org/abs/2611.29467
+- General-purpose LLMs annotating proteins from sequence — https://arxiv.org/abs/2611.28529
+- IGVF Catalog Knowledge Graph — https://www.biorxiv.org/content/10.64898/2026.11.20.768224v1 (full text not tested). It's a strong knowledge-graph fit, but the last few picks were already knowledge-graph papers, so I've deferred it.
+- Live Mouse Tracker MCP — https://www.biorxiv.org/content/10.64898/2026.11.20.768067v1
+- MicroBioAgent — https://www.biorxiv.org/content/10.64898/2026.11.17.767465v1 (readable)
+- What Does an Agent-Run Clinic Cost? — https://www.medrxiv.org/content/10.64898/2026.11.19.26368538v1 (protocol only)
+
+I added today's run to the rolling deferral memory, including IGVF as a likely next pick.
+=== 2026-11-24T02:04:38-08:00 done  biomedical-agentic-ai (exit 0) ===

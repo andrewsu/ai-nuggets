@@ -5278,3 +5278,38 @@ I wrote today's Ollie's AI Pulse script and its two stub files. `SKIP_TTS=1` was
 
 I updated one memory note: openai.com pages now load in full with a plain browser-style fetch, including footnotes, author and chart data that the usual proxy route drops.
 === 2026-11-23T02:37:16-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-24T02:30:10-08:00 start jinglin-ai-pulse ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 4 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+I wrote today's Ollie's AI Pulse script and its two stub files. `SKIP_TTS=1` was set, so I didn't generate audio, publish, edit `feed.xml` or commit. The overnight batch job does those steps from the stubs.
+
+**Files written** (in `podcasts/jinglin-ai-pulse/scripts/`)
+- `2026-11-24-the-whole-transcript.md`: 2,171 spoken words, just under the 2,200-word cap.
+- `2026-11-24-the-whole-transcript.rss-item.xml`: the feed entry, with `__LENGTH__` and `__DURATION__` left as placeholders. It parses as valid XML.
+- `2026-11-24-the-whole-transcript.commit-msg`
+
+**Theme: "before you argue with a quote, a number or a promise, read the whole transcript"**
+- **Twitter Pulse lead:** a Chinese account (Hux) posted a clip of Amodei and called it congressional testimony. LeCun replied with "medieval obscurantism," and the Hacker News thread hit 1,686 points.
+  - I checked the official government transcript. The clip is word-for-word from the July 25, 2023 Senate hearing, but it cuts his caveats, including "in most scientific fields, open source is a good thing."
+  - I set that against his July 2026 post, "Anthropic has never advocated for a ban on open-weights models."
+  - The Chinese original of Hux's central line is quoted in the script.
+- **Twitter Pulse second item:** Z.ai's GLM-5.4, its first "loop" model, which runs the same layers twice per token. I read the full blog post. The big model comes with no benchmarks, and the launch says its weights will be "released responsibly."
+- **Twitter Pulse third item:** a follow-up to yesterday's watch item. Microsoft reported its MAI-2 Base score as 0.819 on OpenAI's test set, the first number from another lab. Suleyman himself said having OpenAI's data was "a special case," and METR offered to verify labs' claims.
+- **Money Moves:** Nvidia reinstated Jensen Huang; I read the press release and the CNBC report (stock up 31%, export-controls hearing December 3). Sierra raised $1.75B at a $30B valuation.
+- **Podcast Deep Cut:** Julian Gewirtz on the 80,000 Hours podcast (published Nov 19, recorded Oct 2), from the full transcript. He argues China "stumbled into" open source, names Z.ai as his example, and describes Beijing's own debate about the risks of open weights. That ties back to GLM-5.4's "responsibly."
+
+**Candidate funnel**
+- **Hacker News:** I scanned 58 stories over 100 points from the last 48 hours; 13 were about AI.
+  - Picked: the LeCun/Amodei tweet (1,686 points), Huang's reinstatement (2,573) and GLM-5.4 (1,125).
+  - Not picked: OpenAI's pretraining-curve essay (covered yesterday, only followed up), the Masullo/Alpöge Riemann stories (covered Nov 21–23), and Anthropic's VP≠VNP result.
+  - Also not picked: "Yes, 17M lines of Lean is a lot," the agent swarm on P vs NP, NariQ, and the local-AI guide.
+- **X/Twitter:** I read 15 posts directly and got the wider X roundup from the AINews Nov 24 issue.
+  - Not used: Booker's bill on self-improving AI, Epoch's benchmark reviews, DeepMind's quantum circuits, Claude Ship, and Gemini 4 Neon (already covered).
+- **Funding news:** Nvidia and Sierra picked. Not picked: Hy4, and a 554B open-weight model.
+- **Podcasts checked:** I looked at 14 feeds; 11 had episodes in the 14-day window. Gewirtz was picked.
+  - Runner-up: a16z's "The One-Person Biotech" with OpenAI Life Sciences (Nov 23). It's very much Ollie's field, but has no transcript.
+  - Not used: Karnofsky's "39 projects," MLST's Tomasello episode, Imas and Cowen, and Hard Fork on Huang.
+  - Already covered: Bostrom, Christiano and McGrew.
+- **Source failures:** none. One claim I left out because I couldn't confirm it: the report that the White House saw Huang as protecting open-source models.
+
+I saved a memory note: viral "said at a hearing" clips can be years old, and the government's published hearing transcripts download in full, so one fetch settles the date and context.
+=== 2026-11-24T02:36:15-08:00 done  jinglin-ai-pulse (exit 0) ===

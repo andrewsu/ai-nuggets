@@ -6969,3 +6969,59 @@ The main rebuttal source is a Substack post by an investor who is openly long Ab
 
 I also added today's source-access notes (which sites were blocked and what worked) to the biotech news memory file.
 === 2026-11-23T02:30:00-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-24T02:20:10-08:00 start calibr-briefing ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 4 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+I wrote both scripts for Tuesday's episodes, plus the RSS-item and commit-message stubs. `SKIP_TTS=1` was set, so I skipped audio, R2 publish, feed edits and the commit; the batch orchestrator does those.
+
+**Files** (in `podcasts/calibr-briefing/scripts/`):
+- `2026-11-24-pharma-headlines.txt` (1,139 words), with its `.rss-item.xml` and `.commit-msg`
+- `2026-11-24-sanofi-insmed-41b-deal-spotlight.txt` (about 1,350 words), with its `.rss-item.xml` and `.commit-msg`
+
+Both RSS stubs parse as XML. Both scripts are roughly the length of Monday's (1,210 and 1,593 words), which is longer than the brief's 3–5 minute headline target.
+
+**Headlines:**
+1. Sanofi agrees to buy Insmed for $41B in cash.
+2. Kymera's oral STAT6 degrader (KT-621) hits all endpoints in a Phase 2b eczema trial; the stock rose 30%.
+3. Medicare's third round of negotiated prices for 2028: CMS says $9.2B, or 45%, in savings, but its own fact sheet puts it at $5.5B, or 33%, once a Part D discount program is counted.
+4. Two FDA approvals ahead of their goal dates: Roche's giredestrant (adjuvant, early breast cancer) and BridgeBio's Welgemda (limb-girdle muscular dystrophy).
+5. Arcus stops its Phase 3 pancreatic cancer trial of quemliclustat.
+6. Ritzey launches with a $112.5M Series A.
+
+**Spotlight:** It follows up the 11-20 rumor episode. The main points:
+- At $175 a share, Insmed sold about 10% below the Street's $195 median target and below the $207–211 it traded at a year ago, before two failed expansion trials.
+- Sanofi's stock went from down 3% on the rumor to up about 6% on the signed deal.
+- Jefferies: the deal "buys time" but doesn't fix Sanofi's pipeline.
+- Kymera's result points at the Dupixent problem this deal doesn't address.
+- The section on what it means for Foresite and Calibr.
+
+**What I left out or couldn't confirm:**
+- The merger agreement wasn't filed yet, so the termination fee is described on air as unknown.
+- I dropped a claim that Kymera plans a $1.5B stock offering because I couldn't verify it.
+- Fierce articles were blocked, and Endpoints showed no article text.
+- I removed a revenue-multiple figure I had miscalculated, and a stated reason for Sanofi dropping its Nurix degrader, which conflicts with notes saying no reason was given.
+
+**Sources scanned:**
+- BioSpace: 20 items, 9 relevant.
+- Endpoints: 24 items, 11 relevant.
+- STAT: 20 items, 5 relevant.
+- BioPharma Dive: 1 item.
+- GEN: 10 items, 0 relevant.
+- Clinical Trials Arena: 10 items, 1 relevant.
+- Fierce: 0 items; articles blocked.
+
+Shortlist (✔ = used):
+- ✔ Sanofi–Insmed (spotlight and headline 1), from the Sanofi press release and Reuters
+- ✔ Kymera KT-621 Phase 2b, from the company release
+- ✔ CMS 2028 prices, from the CMS release and fact sheet
+- ✔ Roche giredestrant adjuvant approval, from the Roche release
+- ✔ BridgeBio Welgemda, from BioSpace
+- ✔ Arcus PRISM-1 stopped, from the BusinessWire release
+- ✔ Ritzey Series A, from BioSpace
+- Not used: Avenzo IPO, Invivyd results, Capricor appeal, Orca layoffs, the House report on US–China biotech, Endpoints' report on healthcare AI spending, and STAT's radiology AI piece.
+
+I didn't find any Foresite portfolio company news.
+
+The 11-19 stubs for both calibr episodes are still sitting uncommitted in `scripts/`. It looks like that day's publish didn't finish, so the orchestrator should pick it up.
+
+I also added today's notes on which news sources were reachable to the source-access memory file.
+=== 2026-11-24T02:27:11-08:00 done  calibr-briefing (exit 0) ===

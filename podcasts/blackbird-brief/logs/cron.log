@@ -4559,3 +4559,34 @@ Episode written. SKIP_TTS=1, so no TTS, no R2 publish, no feed edit, no commit �
 
 **Two gaps worth flagging:** the one item naming Blackbird Laboratories ("Can Baltimore Keep the Biotech Companies It Helps Build?", BioSpectrum Asia) is unreadable — reCAPTCHA to curl, and the Google News permalink is abuse-blocked at r.jina.ai — so it failed the full-text gate and is noted for a manual read. And the Endpoints report that Lilly is buying LoQus23 for up to $725M is paywalled with no Lilly or LoQus23 posting yet; I flagged it explicitly as unconfirmed in the spoken script rather than treating it as a fact.
 === 2026-11-23T02:19:49-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-24T02:10:09-08:00 start blackbird-brief ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 4 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+I wrote today's Blackbird Brief Portfolio Watch (Tuesday 2026-11-24). Because `SKIP_TTS=1` was set, I made no audio, didn't touch `feed.xml`, and didn't commit; the batch orchestrator handles those.
+
+**Files written** (in `podcasts/blackbird-brief/`):
+- `scripts/2026-11-24-portfolio-watch.md`: the script, about 1,600 spoken words, plus show notes with URLs.
+- `scripts/2026-11-24-portfolio-watch.rss-item.xml`: feed item with the `__LENGTH__` / `__DURATION__` placeholders. It parses as valid XML.
+- `scripts/2026-11-24-portfolio-watch.commit-msg`
+- `state/shipped.jsonl`: added 4 keys for today's episode.
+- `memory/blackbird-portfolio.md`: edited the existing COPD-theme entry in place to note the Insmed acquisition and the Arikayce comparison.
+
+**Episode items:**
+1. **Lead: Sanofi buys Insmed for $175 a share in cash, about $41.0B.** Sanofi now owns the only approved drug in the class (DPP1 inhibitors) that Boehringer is taking into Phase 3 for low-eosinophil COPD, and it already sells Dupixent for high-eosinophil COPD. ClinicalTrials.gov shows no brensocatib COPD trial yet; one appearing is the thing to watch. Arikayce, an old antibiotic made inhalable so it reaches the infection, is now a public comparable for the chronic-infections theme.
+2. **Kymera's KT-621**, an oral pill, hit every endpoint in a 244-patient Phase 2b in eczema, with numbers close to Dupixent's. The read for Winnow is that the convenience bar in immunology moved again.
+3. **Latigo's onzotrigine Phase 3** adds an oxycodone/acetaminophen (Percocet) arm. The read for the non-opioid pain theme is to plan on an active opioid comparator.
+- **Quick hits:** Lilly's purchase of LoQus23 for up to $725M (flagged yesterday as paywalled) and BioArctic's Parkinson's Phase 2a, which reported only safety and spinal-fluid drug levels.
+
+**Candidate funnel:**
+- **Google News:** about 79 terms over the past 2 days, roughly 230 headlines. Four terms returned HTTP 429 (rate-limited) and weren't retried.
+- **Trade press:** Endpoints had 13 in-window items, STAT 16, BioPharma Dive 2. The Fierce RSS feeds were blocked, so I read Fierce articles directly. I also scanned BioSpace press-release pages 1–3.
+- **Dedup:** 12 candidates, 11 fresh. The control item (CARsgen CT1182) was correctly dropped.
+- **Chosen:** Sanofi–Insmed, Kymera KT-621, Latigo onzotrigine, plus the two quick hits.
+- **Dropped:**
+  - Ionis/Otsuka ulefnersen: the 11-24 headline is a re-crawl of the September 23 topline.
+  - Capricor: already covered 11-21 to 11-23.
+  - BioSpectrum Baltimore piece: already covered 11-23.
+  - BridgeBio approval, CMS 2028 drug prices, the House US–China biotech report: no portfolio line, or paywalled.
+  - Dogwood Halneuron: couldn't verify.
+
+**Leftover stubs:** `scripts/2026-11-19-portfolio-watch.rss-item.xml` and `.commit-msg` are still untracked. The 11-19 script itself went in with the 11-20 commit, so these look like stubs the orchestrator didn't clean up. You may want to check whether the 11-19 episode ever made it into the feed.
+=== 2026-11-24T02:20:20-08:00 done  blackbird-brief (exit 0) ===
