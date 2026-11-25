@@ -1,0 +1,5 @@
+Script body: 8458 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/3 (2850 chars) -> 186.6s ✓
+  [mistral:en_paul_neutral] chunk 2/3 (2982 chars) -> 191.7s ✓
+  [mistral:en_paul_neutral] chunk 3/3 (2624 chars) -> 165.4s ✓
+Done: /home/asu/Science/ai-nuggets/podcasts/calibr-briefing/episodes/2026-11-24-sanofi-insmed-41b-deal-spotlight.mp3 [mistral] 4,349,953 bytes, 543.7s
