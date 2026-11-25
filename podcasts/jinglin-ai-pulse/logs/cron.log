@@ -5313,3 +5313,32 @@ I wrote today's Ollie's AI Pulse script and its two stub files. `SKIP_TTS=1` was
 
 I saved a memory note: viral "said at a hearing" clips can be years old, and the government's published hearing transcripts download in full, so one fetch settles the date and context.
 === 2026-11-24T02:36:15-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-25T02:30:25-08:00 start jinglin-ai-pulse ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 3 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Episode written. SKIP_TTS=1, so three files only — script plus the two stubs; no TTS, no publish, no feed edit, no commit (the orchestrator does those after batch TTS).
+
+**Episode: `2026-11-25-two-labs-one-conjecture`** (~2,300 spoken words, ~14 min)
+
+Candidate funnel:
+
+- **Latent Space AINews (Nov 23–24 issue, read in full)** — primary aggregator; ~60 items scanned, 9 on-target.
+- **Hacker News (Algolia, stories since Nov 22)** — 7 queries, 12 stories surfaced; 3 threads read in full (50637220 matrix mult 646pts, 50632756 VP≠VNP priority, 50634658 protein design 267pts).
+- **Complexity/math blogs (RSS)** — Aaronson, Fortnow, Kalai, Tao; 2 posts read in full.
+- **X/Twitter** — no timeline or search access from this host; 8 individual posts fetched by ID via the fxtwitter API (IDs taken from AINews/HN). @Zefan_Cai could not be swept — no readable route to his feed; Chinese-community signal came via @ZhihuFrontier quoted in AINews.
+- **WebSearch** — queried for Bloomberg's Epochal funding report, returned nothing relevant (index lag); the $100M figure is flagged in-script as unconfirmed secondhand.
+
+Shortlist (chosen marked ✓):
+
+- ✓ Anthropic VP ≠ VNP repo + paper.pdf (full paper read) — github.com/anthropics/formal-math/tree/main/vp-vnp
+- ✓ OpenAI math repo, Nov 23 + Nov 24 drops (history.md, CONTENTS.md, matrix-mult paper read in full)
+- ✓ Fortnow, "VP ≠ VNP"; ✓ Aaronson, "I've been drinking wine in my kitchen"
+- ✓ OpenAI, GPT-6 intrinsic protein design + HN Baker-lab critique + Tunstall cost caveat
+- ✓ Epochal / Time Portal launch (own announcement blog, primary)
+- ✓ **Deep Cut:** Rozhoň × Aaronson, "What gets solved before P vs. NP?" (Nov 21 transcript)
+- ✗ Gemini 4 Neon adoption records — Neon led the Nov 19 episode; incremental
+- ✗ SenseNova-Loop-9B / looped-transformer gallery — GLM-5.4 loop architecture covered Nov 24
+- ✗ Anthropic "Siren" sandbox-escape study — good item, deferred (today was already Anthropic-heavy in the lead)
+- ✗ Harvey × Baseten open-weight legal post-training — Harvey covered Nov 14/18
+- ✗ Jensen Huang reinstatement follow-ups, Chen Jining investigation — Huang covered Nov 24
+- ✗ Khanna et al. deterministic linear-time MST — only reachable through Aaronson's blog, not independently verified
+=== 2026-11-25T02:38:36-08:00 done  jinglin-ai-pulse (exit 0) ===
