@@ -5342,3 +5342,40 @@ Shortlist (chosen marked ✓):
 - ✗ Jensen Huang reinstatement follow-ups, Chen Jining investigation — Huang covered Nov 24
 - ✗ Khanna et al. deterministic linear-time MST — only reachable through Aaronson's blog, not independently verified
 === 2026-11-25T02:38:36-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-26T02:30:17-08:00 start jinglin-ai-pulse ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 2 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+I wrote today's episode. Because `SKIP_TTS=1` was set, I only wrote the script and its two stub files. I didn't run TTS, publish, edit `feed.xml` or commit; the orchestrator does those after the batch TTS run.
+
+**Episode: `2026-11-26-the-human-folder`** (about 2,260 spoken words, roughly 14 minutes). That's a little over the 2,200-word target, about the same length as yesterday's.
+- `podcasts/jinglin-ai-pulse/scripts/2026-11-26-the-human-folder.md`
+- `.rss-item.xml` stub: the XML parses, and it has the `__LENGTH__` and `__DURATION__` placeholders.
+- `.commit-msg` stub
+
+Candidate funnel:
+
+- **Latent Space AINews (Nov 25 issue, read in full):** about 70 items scanned, 12 on-target. This was the main aggregator.
+- **Hacker News (Algolia, since Nov 24):** 11 keyword queries plus a sweep of stories over 60 points (about 50). I read the top comment threads on 2 stories (Aaronson's post and the Cogentic papers).
+- **X/Twitter:** 17 posts fetched by ID through the fxtwitter API, with the IDs taken from AINews and HN. I again had no way to read @Zefan_Cai's feed.
+- **WebSearch (funding):** found nothing in the 7-day window that hadn't already been covered (Noeri's round on Nov 16 is too old), so Money Moves is about compute pricing and a hire.
+- **Podcasts:** the Latent Space Thariq episode came out Nov 25, and I read the full transcript from its beehiiv caption file (11.5k words).
+- **Source failures:** none. modaic.dev serves a page that only loads in a browser, so I read it through r.jina.ai, which worked.
+
+Shortlist (✓ = used):
+
+- ✓ Aaronson, "HOLY SHIT ×4" (read in full) — https://scottaaronson.blog/?p=10379
+- ✓ Google Cogentic papers plus the factoring paper (read in full; constant 105, Lean proof not yet released) — https://github.com/google-research/google-research/tree/4a7bc8ab0bc7/cogentic_research_papers
+- ✓ DeMillo & Lipton, "The Industrialization of Noise" (abstract only, used as a brief counterpoint) — https://arxiv.org/abs/2611.31286
+- ✓ OpenAI math repo's October 7 withdrawals (history.md)
+- ✓ Modaic, "Jev is (probably) Qwen3.5-35B-A3B" (read in full) — https://modaic.dev/blog/latency-doesnt-lie
+- ✓ Deshpande, "Models Can Communicate via Inference Servers Despite Being Sandboxed" (read in full) — https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/
+- ✓ Money: Polymarket compute markets, OpenAI's GPT-6.2 billing correction, B300 lead times (a secondhand Taiwanese report), and Thariq joining OpenAI
+- ✓ **Deep Cut:** Thariq Shihipar on Latent Space, "The Revolution vs The Renaissance" — https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/
+- ✗ Claude "sabotage" complaints (@skirano, @yacinelearning): anecdotal, and the episode was already Anthropic-heavy
+- ✗ Axios "handover" dispute, Amodei's rebuttal and Suleyman's code: good material but over the length budget; a candidate for tomorrow
+- ✗ METR / OpenAI pretraining-loss debate: already covered Nov 23–24
+- ✗ Matrix multiplication at 9/4 and the VP ≠ VNP proofs: covered Nov 25 and only recapped here
+- ✗ Anthropic's Messages API move to Rust, OpenAI Private Inference, Inkling 2 Mini, Nemotron image model: product news with little substance
+- ✗ Polynomial Hirsch conjecture refutation (OpenAI) and QIP(2) = PSPACE: only mentioned in passing in the sources, not opened
+
+The login warning is still in the log: the sign-in ends between Nov 28 and Dec 1. Someone needs to run `claude auth login` before then, or the nightly runs will start failing.
+=== 2026-11-26T02:36:33-08:00 done  jinglin-ai-pulse (exit 0) ===

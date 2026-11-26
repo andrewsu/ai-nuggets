@@ -4609,3 +4609,34 @@ Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no `feed
 
 **Funnel** — Google News RSS: 66 terms, 384 unique headlines, no 429s. Trade RSS: Endpoints 9, STAT 13, BioPharma Dive 1, GEN 4 in-window; Fierce RSS blocked (5.6 KB non-feed) and its article URLs 404'd, so the Savara/FDA-bandwidth story was dropped for lack of a readable primary. GlobeNewswire/BusinessWire 403 from this IP — used StockTitan mirrors. Dedup: 9 → 8 fresh, with the Sanofi–Insmed release correctly dropped as the shipped control.
 === 2026-11-25T02:22:23-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-26T02:10:16-08:00 start blackbird-brief ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 2 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+The 11-26 Portfolio Watch script is written. `SKIP_TTS=1` was set, so I wrote stubs only: no TTS, no R2 publish, no `feed.xml` edit and no commit. The orchestrator does those.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-11-26-portfolio-watch.md` is about 1,580 words, a deliberately short episode for the Thanksgiving news day. It has no URLs or markdown in the spoken text.
+- The `.rss-item.xml` stub parses as XML, and the `.commit-msg` stub is next to it.
+- `state/shipped.jsonl` has 3 new keys, for 143 episodes in total.
+- `memory/blackbird-portfolio.md` was edited in place. Winnow got two new bullets (Sotyktu, Exdensur) and Clasp got one (Bayer–Hansoh), with their update dates set to 2026-11-26. I added no run log.
+
+**Episode (news from 11-25 to 11-26)**
+1. **Lead, Winnow.** BMS ran two near-identical Phase 3 trials of its oral TYK2 inhibitor Sotyktu in lupus. POETYK SLE-1 met its primary endpoint and SLE-2 missed it, which BMS puts down to a higher placebo response. BMS released no numbers. Phase 2 had shown 58% vs 34% at the same dose, which I confirmed in PubMed (doi 10.1002/art.42391). The take: Winnow's first efficacy claim should rest on depth of response and time off drug in refractory patients, measured on a strict index. It shouldn't be an add-on trial on the standard lupus responder index (SRI-4).
+2. **Winnow and the COPD theme.** GSK's twice-yearly Exdensur was non-inferior to its monthly Nucala on a strict EGPA remission endpoint, and it is also being studied in COPD. Two doses a year is now the convenience benchmark.
+3. **Clasp and oncology surface targets.** Bayer licensed Hansoh's EGFR/c-MET bispecific ADC for $150M upfront and up to $3.1B in milestones. That upfront is about 4.6% of the total, against 1.6% for AbbVie's DISCO target-mapping deal on 11-19. Pairing two broadly expressed receptors is a density preference, not a true gate.
+
+**Candidate funnel**
+- **Google News RSS:** 59 terms over 2 days, about 540 unique headlines. One term failed: "Adventris" returned a 1.1 KB non-feed page.
+- **Trade RSS (in window):** Endpoints 7, STAT 6, BioPharma Dive 2, GEN 3. BioSpace RSS returned no items and Fierce RSS was blocked (5.6 KB). Endpoints articles are paywalled, so I read the company primaries instead.
+- **Dedup:** 6 candidates, 5 fresh. The control (CARsgen CT1182, shipped 11-23) was correctly dropped.
+- **Shortlist:**
+  - ✅ BMS POETYK SLE — https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Results-from-Phase-3-POETYK-SLE-1-and-POETYK-SLE-2-Trials-Evaluating-Sotyktu-deucravacitinib-in-Systemic-Lupus-Erythematosus/default.aspx
+  - ✅ GSK Exdensur OCEAN — https://www.gsk.com/en-gb/media/press-releases/gsk-announces-positive-phase-iii-results-for-exdensur/
+  - ✅ Bayer × Hansoh HS-20122 — https://www.bayer.com/media/en-us/bayer-strengthens-next-generation-oncology-pipeline-through-global-licensing-agreement-with-hansoh-pharma/
+  - ✗ Fate FT819 RECLAIM-LN: the 11-25 headline resurfaces an August trial start.
+  - ✗ multiQure × Apertura TfR1 capsid: I couldn't get a readable primary source.
+  - ✗ Lilly's Calytrix and Stipple deals: already covered 11-17 and 11-18.
+  - ✗ AC Immune ACI-6758: left out to avoid re-tripping yesterday's classifier stop.
+  - ✗ Corestem ALS Phase 3b filing, SaverOne/Drew non-opioid LOI, and the Nature cfDNA fragmentomics review: thin, or not read in full.
+
+**Still open:** the 11-19 stubs (`scripts/2026-11-19-portfolio-watch.rss-item.xml` and `.commit-msg`) are still untracked, and `feed.xml` has no 11-19 item. That episode looks like it was never published.
+=== 2026-11-26T02:17:52-08:00 done  blackbird-brief (exit 0) ===

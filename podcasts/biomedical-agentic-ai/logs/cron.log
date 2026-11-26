@@ -6791,3 +6791,45 @@ I wrote today's episode on the IGVF Catalog Knowledge Graph. Because `SKIP_TTS=1
 
 I checked the main candidates against all shows' scripts, with TrialAgentBench as a control term that should match; none had been covered. I also added today's run notes and the open deferrals to the show's memory log.
 === 2026-11-25T02:05:01-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-26T02:00:15-08:00 start biomedical-agentic-ai ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 2 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+I wrote today's episode on MedSkill-E2. Because `SKIP_TTS=1` was set, I only wrote the script and the two stubs. I did not run TTS, publish to R2, edit `feed.xml` or commit; the orchestrator does those after batch TTS.
+
+**Episode:** "MedSkill-E2 — medical agents given the right skill mostly don't use it, and a better one-line description fixes most of that"
+- **Script:** `podcasts/biomedical-agentic-ai/scripts/2026-11-26-medskill-e2-the-agent-read-the-rule-and-used-its-own.md`. It has 938 spoken words, under the 1,150 cap.
+- **Stubs:** `.rss-item.xml` (parses as valid XML once wrapped with the itunes namespace) and `.commit-msg`, both next to the script.
+- **Source:** I read the full paper text from the arXiv PDF, 21.5k words, with no "placeholder" hits. The link returns HTTP 200, and a web search found no earlier coverage of the paper.
+- **The episode's argument:**
+  - **The big gap is built in.** The 44-point gap between agents finding a skill on their own (38%) and agents told to read and apply it (82%) comes from how the benchmark was screened, so it doesn't show how often this happens in real use.
+  - **What changes the gap:**
+    - The harness matters: Claude Code opened skills in 12% of runs and Codex in 65%.
+    - Agents that read a rule still sometimes used a formula they already knew.
+    - Rewriting just the skill's one-line description delivered 85% of the improvement from their skill-rewriting method.
+
+**Candidate funnel**
+- **bioRxiv + medRxiv:** fetched 11-22 to 11-26 one day at a time with no failures. 1,148 records, 45 keyword matches, about 15 on topic. Two of the open deferrals turned out to be shipped already by receptor-and-reason on 11-25: the PPI-inhibitor agent (`…768516`) and EM-Claw (`…768522`), so both are dropped.
+- **arXiv:** the shared cache covers only 11-24 and 11-25 (500 entries). 158 loose matches, about 12 on topic.
+- **PubMed:** 47 hits from the last 5 days; 3 in window and on topic (EHRNavigator, MS2Agent, FermiLink).
+- **Not swept this run:** ChemRxiv, news and the funder pages.
+
+**Shortlist**
+- **CHOSEN:** MedSkill-E2 — https://arxiv.org/abs/2611.34250
+- Did the Model Forecast It, or Already Know It? (temporal knowledge-graph test for drug-target prioritisation) — https://arxiv.org/abs/2611.34247. I passed because it rests on the same data-leak argument as the 11-23 episode.
+- Crucible (chemistry research benchmark for agents) — https://arxiv.org/abs/2611.34254
+- ChemDeduce — https://arxiv.org/abs/2611.33848
+- REE (research entrance exam for AI agents) — https://arxiv.org/abs/2611.34646
+- Shape-aware three-way merge for RDF knowledge graphs — https://arxiv.org/abs/2611.34870
+- APEs — https://www.biorxiv.org/content/10.64898/2026.11.23.768576v1
+- CLOVER — https://www.biorxiv.org/content/10.64898/2026.11.10.765703v1
+- Brain and cognitive aging simulator built with agentic AI — https://www.biorxiv.org/content/10.64898/2026.11.24.769018v1
+- Molpylot — https://www.biorxiv.org/content/10.64898/2026.11.24.768932v1
+- Live Mouse Tracker MCP — https://www.biorxiv.org/content/10.64898/2026.11.20.768067v1
+- EHRNavigator (npj Health Systems, PMID 43078963)
+
+I added today's run notes and the remaining deferrals to the show's running notes file in memory.
+
+Novelty search sources:
+- [SkeMex (arXiv 2606.09365)](https://arxiv.org/html/2606.09365v1)
+- [Agent Skills for Healthcare (arXiv 2605.02709)](https://arxiv.org/pdf/2605.02709)
+- [MedSkillAudit (arXiv 2604.20441)](https://arxiv.org/html/2604.20441)
+=== 2026-11-26T02:04:14-08:00 done  biomedical-agentic-ai (exit 0) ===

@@ -6736,3 +6736,38 @@ Episode written. `SKIP_TTS=1`, so stubs only — no TTS, no R2 publish, no feed 
 
 Also worth flagging for you separately: the session warned that this sign-in expires between 2026-11-28 and 12-01 — the cron pipeline will hard-fail once it does, and only an interactive `claude auth login` (or `claude setup-token` for unattended runs) renews it.
 === 2026-11-25T02:57:02-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-26T02:40:18-08:00 start receptor-and-reason ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 2 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Episode written. SKIP_TTS=1 was set, so I wrote stubs only — no TTS, no R2 publish, no feed edit, no commit.
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-26-receptor-and-reason.md` — 2,739 spoken words, ~15.1 min
+- `…2026-11-26-receptor-and-reason.rss-item.xml` (validated as XML in a namespaced wrapper; `__LENGTH__`/`__DURATION__` placeholders)
+- `…2026-11-26-receptor-and-reason.commit-msg`
+- Ledger appended: 11 keys, 180 episodes
+
+**Candidate funnel**
+
+Sources scanned:
+- bioRxiv + medRxiv details API, day-by-day with per-day cursor loop, 11-19→11-26: 1,401 v1 records → 90 keyword-relevant
+- Crossref, 18 journal ISSNs, `from-created-date:2026-11-19`: 131 items. NPP returned 0 for the 4th consecutive run; Biological Psychiatry and CPT were mostly front matter
+- arXiv `/list/<cat>/pastweek?show=2000` for q-bio, cs.MA, cs.AI, cs.CL: 2,366 ids → 111 bio+agentic (shared cache held only 11-24/11-25, 500-cap)
+- No source failed. Full-text route (r.jina.ai `.full.pdf`) went 17/17; one item needed the curl+mutool fallback on round 1
+
+Dedup: 337 candidates → 323 fresh (14 already shipped, control term correctly dropped). Final-roster re-filter caught 0; sibling-show grep on all 11 asset names clean.
+
+Shortlist chosen (all read in full except two abstract-only tails via Europe PMC):
+- ★ Amygdala tFUS null RCT in treatment-resistant GAD — medRxiv 2026.11.24.26368811 (LEAD)
+- ★ Mitragynine for AUD + tinnitus — bioRxiv 2026.11.19.767795
+- ★ msP rats, heroin self-administration, VTA Oprm1 — Neuropharmacology (abstract-only tail)
+- ★ Oxycodone in 810 HS rats, sex vs. severity — bioRxiv 2026.11.24.768451
+- ★ IL→NAcSh DREADDs after chronic intermittent alcohol — bioRxiv 2026.11.24.769022
+- ★ Locus coeruleus galanin — PNPBP (abstract-only tail)
+- ★ Human Anxa1 dopamine population / caudal putamen — bioRxiv 2026.11.20.766782
+- ★ MIND structural LTD, activity-gated spine shrinkage — bioRxiv 2026.11.21.765465
+- ★ Consomatin pG1 / SSTR2 cryo-EM at 1.9 Å — bioRxiv 2026.11.24.768804
+- ★ Temporal knowledge-graph oracle for LLM target prioritisation — arXiv 2611.34247
+- ★ Agentic brain-and-cognitive-aging simulator — bioRxiv 2026.11.24.769018
+
+Six of the eleven came off the 11-25 deferral list, including the mitragynine paper dropped last run for a classifier stop — summarizing from the Discussion rather than a dose grep went through cleanly. Twelve items remain deferred with full text already on disk; I recorded them in the rolling run-log memory.
+=== 2026-11-26T02:49:35-08:00 done  receptor-and-reason (exit 0) ===

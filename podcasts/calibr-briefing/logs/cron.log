@@ -7069,3 +7069,66 @@ One spotlight claim isn't from a source I read this run: that Cogent's mastocyto
 
 I also added a dated entry to the news-sources memory file: stockanalysis.com call transcripts load in full, and web search lagged a day on two approvals.
 === 2026-11-25T02:27:51-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-26T02:20:16-08:00 start calibr-briefing ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 2 days at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Both of today's scripts for Travis' Daily Briefing are written. `SKIP_TTS=1` was set, so I didn't generate audio, publish, edit the feed or commit; the batch job will do those from the stubs. Each episode has its RSS item stub (with `__LENGTH__` / `__DURATION__` placeholders; both parse as valid XML) and a commit-message stub next to it in `podcasts/calibr-briefing/scripts/`.
+
+Today is Thanksgiving, so both episodes cover Wednesday's news.
+
+**Episodes**
+- **Headlines** (`2026-11-26-pharma-headlines.txt`, about 1,070 words):
+  - Bristol Myers' Sotyktu won one of its two Phase 3 lupus trials and missed the other. It's teed up for the spotlight.
+  - The FDA pushed Vertex's povetacicept decision in IgA nephropathy to no later than Feb 28, after classifying Vertex's answer to a late request as a major amendment.
+  - Bayer licensed Hansoh's EGFR/c-MET bispecific antibody-drug conjugate for $150M upfront and up to $3.1B in milestones.
+  - Bayer is also pulling Kerendia from Germany in mid-December over a pricing dispute.
+  - Amgen settled with Bristol Myers and Ono and can launch its Opdivo biosimilar on Oct 1, 2028, if approved.
+  - GSK's twice-yearly Exdensur matched monthly Nucala head-to-head in the rare vasculitis EGPA.
+  - Pharming paused production of Ruconest after a failed sterility test at its fill-finish contractor; the shares fell about 15%.
+  - The FT reports BioNTech's founders are in talks to raise about $1B in seed money for their new company, Arife.
+- **Spotlight** (`2026-11-26-sotyktu-lupus-split-phase3-spotlight.txt`, about 1,630 words):
+  - **Why the two trials split:** they were nearly identical, Bristol released no response rates, and Bristol blames a higher placebo response in the second trial.
+  - **Can Bristol still file:** AstraZeneca's Saphnelo was approved in 2021 even though one of its two Phase 3s missed.
+  - **Context:** the competitive field in lupus and what's at stake for Bristol.
+  - **Foresite angle:** Alumis, which Foresite Labs incubated, has its own TYK2 drug that missed in lupus in September. It's continuity with the Sept 2 spotlight, which had said this readout would settle the question for the drug class. Alumis stock closed flat. What it's worth now depends on the psoriasis filing it plans this quarter, with $431M in cash.
+
+**Gaps to know about**
+- I found no named analyst quotes on the Sotyktu result: Fierce was blocked, Benzinga returned a stub page, and no Reuters mirror turned up. The spotlight says so on air and uses the stock moves as the sentiment read.
+- A few spotlight claims come from my own background knowledge, not from a source read this run: the Saphnelo approval history, the lupus competitor list, and Rinvoq's ongoing lupus Phase 3s.
+
+**Candidate funnel**
+- **RSS feeds (since Wed 09:00 UTC):**
+  - BioSpace: 6 items in window
+  - Endpoints: 7
+  - BioPharma Dive: 2
+  - STAT: 6
+  - GEN: 3
+  - Clinical Trials Arena: 4
+  - pharmaphorum: 7
+  - OncLive: 28, mostly clinical content
+  - TargetedOnc: 8
+  - HCPLive: 8
+  - BioSpace press releases: 10
+  - Fierce Biotech and Fierce Pharma: 0 items (RSS still empty, and jina was blocked).
+- **Google News searches:** Sotyktu, Alumis, Bayer–Hansoh, Nucala, Arife, Foresite, plus broad "FDA approves", "Series" and "CRL" queries.
+- **Already covered, so skipped:** Roche's Wilserdly, Welgemda, adrabetadex, Compass's psilocybin filing, Capricor (its layoffs aren't new enough).
+- **Dropped:**
+  - Anthropic "Prof Oak" (Endpoints shows only a teaser)
+  - Capable's $38M seed (couldn't open the article)
+  - Neuralink's pivotal trial (medtech, low relevance)
+  - Desentum, zoliflodacin and AbCellera at SABCS (lower priority)
+- **Shortlist (✔ = used):**
+  - ✔ SPOTLIGHT: BMS POETYK SLE-1/SLE-2 — https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Results-from-Phase-3-POETYK-SLE-1-and-POETYK-SLE-2-Trials-Evaluating-Sotyktu-deucravacitinib-in-Systemic-Lupus-Erythematosus/default.aspx
+  - ✔ AJMC write-up (Phase 2 PAISLEY numbers) — https://www.ajmc.com/view/deucravacitinib-meets-primary-end-point-in-1-of-2-phase-3-lupus-trials
+  - ✔ Alumis Q3 results — https://www.globenewswire.com/news-release/2026/11/12/3402170/0/en/alumis-reports-third-quarter-2026-financial-results-and-highlights-recent-business-updates.html
+  - ✔ Vertex PDUFA extension — https://www.biospace.com/press-releases/vertex-announces-extension-of-pdufa-target-action-date-by-up-to-three-months-as-fda-completes-review-of-the-biologics-license-application-for-povetacicept-in-iga-nephropathy
+  - ✔ Bayer–Hansoh — https://mlq.ai/news/bayer-licenses-hansohs-early-stage-lung-cancer-adc-in-a-deal-worth-up-to-325-billion/
+  - ✔ Kerendia withdrawn from Germany — https://pharmaphorum.com/news/bayer-pulls-kerendia-germany-over-pricing-regime
+  - ✔ Amgen Opdivo biosimilar settlement — https://pharmaphorum.com/news/amgen-reaches-deal-bring-biosimilar-opdivo-us-market
+  - ✔ GSK Exdensur OCEAN trial — https://pharmaphorum.com/news/gsks-nucala-follows-exdensur-scores-vasculitis-trial
+  - ✔ Pharming Ruconest pause — https://www.biospace.com/drug-delivery/pharming-pauses-ruconest-production-over-fill-finish-issue-threatening-us-supply
+  - ✔ Arife $1B seed — https://www.bioxconomy.com/investment/biontech-founders-seek-1bn-funding-for-new-biotech-arife
+  - ✗ Anthropic "Prof Oak" — https://endpoints.news/prof-oak-is-now-lending-his-expertise-to-anthropic/
+- **Foresite portfolio:** no new announcements. Alumis is covered as the read-through in the spotlight.
+
+I also added a dated entry to the news-sources memory file with today's source access notes.
+=== 2026-11-26T02:29:08-08:00 done  calibr-briefing (exit 0) ===
