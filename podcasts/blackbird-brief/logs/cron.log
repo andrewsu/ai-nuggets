@@ -4640,3 +4640,46 @@ The 11-26 Portfolio Watch script is written. `SKIP_TTS=1` was set, so I wrote st
 
 **Still open:** the 11-19 stubs (`scripts/2026-11-19-portfolio-watch.rss-item.xml` and `.commit-msg`) are still untracked, and `feed.xml` has no 11-19 item. That episode looks like it was never published.
 === 2026-11-26T02:17:52-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-27T02:10:09-08:00 start blackbird-brief ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 1 day at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Today's Portfolio Watch script is written. `SKIP_TTS=1` was set, so I wrote stubs only: no TTS, no R2 publish, no `feed.xml` edit and no commit. The orchestrator does those.
+
+**Action needed:** cron.log says the Claude sign-in expires between 11-28 and 12-01, possibly as early as tomorrow. Someone needs to run an interactive `claude auth login` before then, or the nightly runs will fail.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-11-27-portfolio-watch.md`: about 1,500 words. It's a short episode because there was little news over the holiday, and the spoken text has no URLs or markdown.
+- The `.rss-item.xml` stub parses as XML, and the `.commit-msg` stub is next to it.
+- `state/shipped.jsonl`: 3 keys appended, for 144 episodes in total.
+- `memory/blackbird-portfolio.md`: I edited the DELFI and Winnow entries in place and set their update dates to 2026-11-27. I added no run log. The file is about 1 MB, so I only read it in sections.
+
+**Episode (news from 11-25 to 11-27)**
+1. **Lead, DELFI and Artemyx.** Singapore's medical-device regulator registered Gene Solutions' SPOT-MAS 10 as a Class C diagnostic kit. It is a multi-cancer blood test that reads both DNA methylation and fragment patterns, and it has held FDA Breakthrough designation since May. I read the full release and the abstract of its prospective validation study, K-DETEK (9,024 people):
+   - About 40% of positive results were cancer.
+   - Sensitivity was about 71%, but it rests on roughly 24 cancers.
+   - The test named the right tissue of origin in 9 of 17 true positives.
+   - The read: DELFI has a third regulatory route besides a lab-developed test or a US premarket approval, which is to register a kit with a strict foreign regulator. Artemyx's tissue-of-origin pitch now has a benchmark of about one in two.
+2. **Winnow.** The FDA pushed its decision on Vertex's povetacicept, a dual BAFF/APRIL blocker for IgA nephropathy, by up to three months, to no later than Feb 28. It treated Vertex's answer to a late question as a major amendment. Vera's atacicept was already approved first in this class in July.
+3. **CMC lesson for Aletira and the other programs.** Pharming paused production of Ruconest after a failed sterility test (a media fill) at its single outside fill-finish site. Supply lasts through mid-December. The takeaway is to name a second fill-finish site in the manufacturing plan now.
+
+**Candidate funnel**
+- **Endpoints index** (via jina, cache disabled): 24 headlines. Article bodies are paywalled, so I used them for discovery only.
+- **BioPharma Dive homepage:** 31 headlines, almost all already covered.
+- **BioSpace /press-releases:** about 40 items dated 11-25 and 11-26.
+- **STAT RSS:** 14 items. **GEN RSS:** 12 items; the one article I tried to read came back empty.
+- **Fierce:** blocked (747 bytes).
+- **WebSearch:** 4 queries returned nothing new in the window.
+- **Partner-institution news:** none of the searches found anything from Hopkins, UMB or the Lieber Institute dated in the window, but I didn't open their newsrooms directly, so that is unchecked rather than confirmed empty.
+- **Dedup:** 6 candidates, 5 fresh. The control (Bayer–Hansoh, shipped 11-26) was correctly dropped.
+- **Shortlist:**
+  - ✅ Gene Solutions SPOT-MAS 10 registration — https://www.biospace.com/press-releases/gene-solutions-spot-mas-10-receives-class-c-ivd-registration-from-singapores-hsa-for-blood-based-multi-cancer-screening (K-DETEK study: doi:10.1186/s12916-025-03929-y)
+  - ✅ Vertex povetacicept decision delay — https://www.biospace.com/press-releases/vertex-announces-extension-of-pdufa-target-action-date-by-up-to-three-months-as-fda-completes-review-of-the-biologics-license-application-for-povetacicept-in-iga-nephropathy
+  - ✅ Pharming Ruconest pause — https://www.pharming.com/our-news/pharming-temporarily-pauses-ruconest-manufacturing-and-notifies-fda-of-likely-supply
+  - ✗ Zoliflodacin WHO recommendation: the BioSpace page returned a 403, and the link to the portfolio's infection theme is weak.
+  - ✗ Bayer pulling a drug from Germany over pricing: paywalled, and no line to the portfolio.
+  - ✗ Arcus stopping its CD73 Phase 3, and Novartis/J&J breast-cancer data: no line to the portfolio.
+  - ✗ multiQure × Apertura capsid (deferred from 11-26): still couldn't find a readable primary source.
+  - ✗ AC Immune ACI-6758: left out because it tripped a safety classifier on 11-25.
+  - ✗ Capricor, BridgeBio, CMS 2028 prices, Cogent, Sotyktu, Exdensur: already covered or dropped in earlier runs.
+
+I also updated my memory note on the sign-in expiry with the new 11-28 to 12-01 window.
+=== 2026-11-27T02:16:06-08:00 done  blackbird-brief (exit 0) ===

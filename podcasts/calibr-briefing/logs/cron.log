@@ -7132,3 +7132,56 @@ Today is Thanksgiving, so both episodes cover Wednesday's news.
 
 I also added a dated entry to the news-sources memory file with today's source access notes.
 === 2026-11-26T02:29:08-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-27T02:20:10-08:00 start calibr-briefing ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 1 day at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+I wrote and staged both episodes for 2026-11-27. `SKIP_TTS=1` was set, so I made no audio, didn't publish to R2, didn't edit `feed.xml` and didn't commit. The nightly batch job does those steps from the stub files next to each script.
+
+**Files** (in `podcasts/calibr-briefing/scripts/`):
+- `2026-11-27-pharma-headlines.txt` (1,222 words, about 6½ min, a bit over the 5-minute target), plus its `.rss-item.xml` and `.commit-msg`
+- `2026-11-27-hutchmed-sanovo-met-first-line-spotlight.txt` (1,416 words, about 8 min), plus its `.rss-item.xml` and `.commit-msg`
+
+**Spotlight:** On Thursday, China's drug regulator accepted HUTCHMED and AstraZeneca's application for savolitinib plus Tagrisso as a first-line treatment. The patients are those with EGFR-mutated lung cancer whose tumors overexpress MET. It is based on the Phase 3 SANOVO trial.
+- **Headline result:** median time to progression went from about 14 months to about 25, and the overall-survival hazard ratio was 0.48.
+- **The catch:** nearly all the benefit is in the tumors with the strongest MET staining (IHC 3+). In the weaker group (IHC 2+), the progression hazard ratio was 0.85, with a confidence interval that crosses 1.
+- **Side effects:** serious (grade 3 or worse) side effects hit 77% of patients on the combination versus 38% on Tagrisso alone.
+- **The comparison:** the control arm was Tagrisso alone. Outside China, Tagrisso plus chemotherapy and J&J's Rybrevant regimen are now also standard first-line options.
+- **The open question:** whether AstraZeneca runs a global first-line trial. Its oncology R&D head would only say it will "talk to regulatory authorities."
+
+I checked the key numbers myself against OncLive, Fierce Pharma and HUTCHMED's own releases. I dropped some expert quotes about the related SAFFRON trial because I couldn't open the page they came from.
+
+**Headlines:** US trade press was dark on Thanksgiving, so most items came from European and Asian wires. The episode says so on air.
+- HUTCHMED/AstraZeneca's China filing (spotlight teaser)
+- The European Parliament completed the EU pharma package and passed the Critical Medicines Act
+- The FDA cleared Neuralink's pivotal trial of its brain implant in ALS
+- Bachem shares fell up to 12% on its new targets through 2031
+- Bayer will invest up to €500M in its Beijing plant
+- Hetero began shipping generic lenacapavir (the twice-yearly HIV prevention shot) to Africa
+- China approved InnoCare's zurletrectinib for children
+- Bavarian Nordic named a new CFO
+
+Several items that looked new on Google News were old stories re-dated by the index, so I dropped them: the Moderna flu vaccine approval (August), the FDA blocking vaccine papers (May), the GLP-1 eye-condition warning (November 9), Marrow Therapeutics' $173M launch (November 17), and Anthropic hiring the poster known as "Prof Oak" (already covered October 28).
+
+**Candidate funnel**
+- **Trade-press feeds:**
+  - BioSpace 20, Endpoints 24, STAT 20, GEN 10, Clinical Trials Arena 10, BioPharma Dive 1. Nothing new from Thursday except one already-covered story on Clinical Trials Arena.
+  - Fierce Biotech and Fierce Pharma feeds returned 0 items.
+  - Endpoints article bodies are paywalled.
+- **Google News:** about 600 items across about 20 queries. About 15 survived relevance and date checks.
+- **Press-release search and company sites:** HUTCHMED, InnoCare, Bavarian Nordic, Neuralink, Bayer.
+- **Chosen:**
+  - HUTCHMED SANOVO filing (spotlight): https://www.globenewswire.com/news-release/2026/11/26/3410722/0/en/hutchmed-announces-nda-acceptance-in-china-for-orpathys-plus-osimertinib-in-first-line-egfr-mutated-lung-cancer-with-met-overexpression.html
+  - EU pharma package: https://europepharmatoday.com/news/ep-pharma-package-critical-medicines-act-november-2026
+  - Neuralink LINK trial: https://neuralink.com/updates/neuralink-receives-fda-approval-to-launch-link-pivotal-study/
+  - Bachem: https://mlq.ai/news/bachem-shares-drop-as-much-as-12-after-it-sets-15-18-growth-target-to-2031/
+  - Bayer Beijing: https://www.bayer.com/media/en-us/bayer-to-invest-up-to-500-million-euros-in-beijing-production-site/
+  - Hetero lenacapavir: https://www.pharmaceutical-technology.com/news/hetero-generic-lenacapavir-rollout-hiv-africa/
+  - InnoCare zurletrectinib: https://www.globenewswire.com/news-release/2026/11/27/3411068/0/en/innocare-announces-approval-of-the-next-generation-trk-inhibitor-zurletrectinib-for-the-treatment-of-pediatric-patients-with-solid-tumors-in-china.html
+  - Bavarian Nordic CFO: https://www.globenewswire.com/news-release/2026/11/27/3411081/0/en/allan-b%c3%b8dskov-andersen-appointed-chief-financial-officer-of-bavarian-nordic.html
+- **Not used:**
+  - Allergy Therapeutics stopping its G308 pediatric trial (couldn't read the announcement)
+  - Novo's Wegovy pill launching in Sweden (headline only)
+  - EQT buying Kelso Pharma, Peptron/Ferring, CirCode's funding round (minor)
+  - Lilly insulin racketeering lawsuit (part of an ongoing story)
+
+I also added today's notes on which news sites were reachable to the memory file on news-source access.
+=== 2026-11-27T02:30:31-08:00 done  calibr-briefing (exit 0) ===

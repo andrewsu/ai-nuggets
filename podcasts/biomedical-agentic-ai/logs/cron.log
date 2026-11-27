@@ -6833,3 +6833,30 @@ Novelty search sources:
 - [Agent Skills for Healthcare (arXiv 2605.02709)](https://arxiv.org/pdf/2605.02709)
 - [MedSkillAudit (arXiv 2604.20441)](https://arxiv.org/html/2604.20441)
 === 2026-11-26T02:04:14-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-27T02:00:09-08:00 start biomedical-agentic-ai ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 1 day at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Episode written in SKIP_TTS stub mode — script + `.rss-item.xml` + `.commit-msg` only, no TTS, no publish, no commit.
+
+**Published pick:** `2026-11-27-evotrace-the-audit-ran-on-the-papers-own-figures.md` (933 spoken words, cap 1150)
+EvoTrace — "Auditable AI agents for verifiable end-to-end scientific analysis", bioRxiv `10.64898/2026.11.25.769078`, posted 2026-11-26, Suzhou Institute of Systems Medicine (CAMS/PUMC). Full text read in full: direct curl `.full.pdf` 17-byte-429'd, `r.jina.ai` on `.full.pdf` returned the whole 37-page body first try.
+
+Take: auditability — not model capability or self-evaluation — as the trust substrate. Domain knowledge mined from peer-review critiques (13 principles, 236 pitfalls); 50 validated analytical units that refuse out-of-bounds data; a claim-binding gate separating "generated" from "deliverable" (all 233 analyses held unsigned pending human sign-off); blinded numerical and figure auditors deliberately outside the generating context. They ran it on their own figures: 130,773 checks, 17 defects including 3 blockers. Versus Biomni on the same backbone the win is variance, not accuracy — and the authors' own warning, execution consistency ≠ inferential accuracy, closes the script.
+
+**Candidate funnel**
+- bioRxiv + medRxiv details API, 11-23→11-27, day-by-day cursor loop: 1,345 v1 records scanned, 62 keyword hits, ~12 substantive after discarding "chemical/single agent" matches. No outage.
+- arXiv: shared cache 500 entries but only covers 11-24/11-25; 164 biomedical-relevant hits. Live API query (300 results) added nothing newer — gap noted, not a failure.
+- PubMed eutils, reldate 5: 90 records, 39 on-target titles.
+- ChemRxiv: not separately swept (arXiv + bioRxiv chemistry hits covered the beat); news/funder pages: nothing agentic-biomedical in window.
+
+Shortlist after filtering:
+- **Auditable AI agents / EvoTrace** — biorxiv.org/content/10.64898/2026.11.25.769078v1 — **CHOSEN**
+- GeneScribe, LLM gene summaries for Alliance of Genome Resources — `...769256` — 429 on full text today, retest
+- AutoNIMA, LLM-guided neuroimaging meta-analysis — `...769029`
+- Molpylot, human-AI molecular simulation workspace — `...768932`
+- Brain/cognitive aging simulator via agentic AI — `...769018`
+- AskDrugTox multi-agent FDA-label toxicity classification — Drug Saf, CC-BY, 11-25
+- OrthoDB/BUSCO update with an MCP layer for AI agents — NAR 11-26 — **dropped, OUP Cloudflare-403 even via jina** (full-text gate)
+- "Evaluating agentic bioinformatics" FEV framework — Brief Bioinform 11-25 — **dropped as a duplicate**: journal version of arXiv 2607.27556, already led by receptor-and-reason on 07-31
+
+Also caught: an unrelated arXiv "EvoTrace" (evolutionary coding-agent traces, 2605.20086) is a name collision, not a re-post of today's pick. Run log appended to the show's memory file.
+=== 2026-11-27T02:07:15-08:00 done  biomedical-agentic-ai (exit 0) ===

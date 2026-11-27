@@ -6771,3 +6771,25 @@ Shortlist chosen (all read in full except two abstract-only tails via Europe PMC
 
 Six of the eleven came off the 11-25 deferral list, including the mitragynine paper dropped last run for a classifier stop — summarizing from the Discussion rather than a dose grep went through cleanly. Twelve items remain deferred with full text already on disk; I recorded them in the rolling run-log memory.
 === 2026-11-26T02:49:35-08:00 done  receptor-and-reason (exit 0) ===
+=== 2026-11-27T02:40:11-08:00 start receptor-and-reason ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 1 day at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+Episode written as stubs (SKIP_TTS=1 — no TTS, no R2 publish, no feed edit, no commit; the orchestrator does those after batch TTS).
+
+**Files written**
+- `podcasts/receptor-and-reason/scripts/2026-11-27-receptor-and-reason.md` — 2,615 spoken words (~14.4 min), 12 items
+- `...-receptor-and-reason.rss-item.xml` (XML validated, `__LENGTH__`/`__DURATION__` placeholders)
+- `...-receptor-and-reason.commit-msg`
+- Ledger appended: 12 keys, 181 episodes
+
+**Candidate funnel**
+
+- **bioRxiv/medRxiv details API** (day-by-day, per-day cursor loop, 11-20..11-27): 1,805 records → 1,313 v1 → 1,188 in-window (DOI floor 11-20) → 176 on a title-level CNS/agentic regex. jina `.full.pdf` went **15/15 on round 0**, zero 429s.
+- **Crossref, 18 ISSNs, from-created-date 11-20**: 130 items. NPP 0 (5th run running); NatMethods ISSN returned a non-JSON body — bad ISSN, dropping it. EPMC `resultType=core` gave full abstracts for 4 Elsevier/Oxford items; NOHIT on the PNPBP 5-HT2A psychoplastogen framework (strong fit — carried).
+- **arXiv** `/list/<cat>/pastweek?show=2000` (q-bio, cs.MA, cs.AI, cs.CL): 1,997 unique ids, 136 bio+agentic by title, **0 selected** — third run running that the arXiv bio-agentic stream is clinical-NLP benchmarks. Shared cache again only 500 entries / 2 days.
+- **Batch dedup**: 2,309 candidates → 2,291 fresh (18 shipped; known-shipped control correctly dropped). Final-roster re-filter caught 0. Sibling-show grep caught `2026.11.25.769078` (EvoTrace) shipped this morning by biomedical-agentic-ai — dropped.
+- **No source failures this run.**
+
+**Shortlist → chosen (all 12 shipped):** M4 PAM VU0467154 in SAPAP3 knockouts (LEAD) · mu-opioid approved-drug screen failing naloxone controls · NAT10–YY1–CK1δ/stargazin (abstract-only tail) · D-BHB metabolic formulation in MDD · esketamine SUSTAIN-3 durability (abstract-only tail) · microglial allele-specific chromatin in AUD · LRRK2 armadillo-domain haplotype · tTIS slow waves in human NREM · TI frequency selectivity in CA1 models · NeuroMetaBench · AutoNIMA · LMT-MCP.
+
+**Deferred with full text already on disk** (cheapest picks next run): H₂S/CA1 excitability, NAT2 phased pharmacogenomics in 661 African genomes, geroprotectors in iPSC neurons, the single-cell-foundation-model dimensionality critique, PANS B-cell activation.
+=== 2026-11-27T02:54:13-08:00 done  receptor-and-reason (exit 0) ===

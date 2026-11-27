@@ -5379,3 +5379,40 @@ Shortlist (✓ = used):
 
 The login warning is still in the log: the sign-in ends between Nov 28 and Dec 1. Someone needs to run `claude auth login` before then, or the nightly runs will start failing.
 === 2026-11-26T02:36:33-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-27T02:30:10-08:00 start jinglin-ai-pulse ===
+Warning: this sign-in ends between 2026-11-28 and 2026-12-01 (in 1 day at the earliest). Renewing it does not move those dates. Run claude auth login before then, or use claude setup-token for unattended jobs.
+I wrote today's episode. `SKIP_TTS=1` was set, so I only wrote the script and its two stub files. I didn't run TTS, publish, edit `feed.xml` or commit; the orchestrator does those after the batch TTS run.
+
+**Episode: `2026-11-27-the-tenth-as-fast`** (2,217 spoken words, about 14 minutes)
+- `podcasts/jinglin-ai-pulse/scripts/2026-11-27-the-tenth-as-fast.md`
+- `.rss-item.xml` stub: the XML parses, and it has the `__LENGTH__` and `__DURATION__` placeholders.
+- `.commit-msg` stub
+
+**Mistral's API is refusing this key.** Every transcription request returned HTTP 402 with "billing_no_api_budget_configured" ("You need a subscription to access this API"), using the key in `.env`. `gen_tts.py` uses that same key as its TTS fallback, so tonight's batch TTS could fail if the self-hosted Voxtral route is also down. Someone needs to check the Mistral billing before then. I saved this as a memory note.
+
+**Login expiry:** the sign-in still expires between Nov 28 and Dec 1. Someone needs to run `claude auth login` before then or the nightly runs will fail.
+
+Candidate funnel:
+- **Latent Space AINews:** no new issue since Nov 25 because of Thanksgiving. The only new item is the Clay go-to-market agents episode (Nov 26), which is off-target.
+- **Hacker News (Algolia, stories over 80 points since Nov 25 18:00 UTC):** 50 stories scanned, 9 on-target, 5 threads read.
+- **X/Twitter:** 2 posts fetched by ID through fxtwitter. I still have no way to read @Zefan_Cai's feed. The Astropulse breakdown thread couldn't be read, and the script says so.
+- **WebSearch (funding):** the only round in the 7-day window, Sierra (Nov 23), was already covered Nov 24. Model ML (Nov 17) is outside the window, so Money Moves is about token pricing.
+- **Podcasts:** I picked the a16z episode "The One-Person Biotech" (OpenAI Life Sciences, Nov 23) first. It has no transcript, and transcribing the audio failed with the Mistral 402, so I dropped it. I used the full Dwarkesh transcript instead.
+- **Site access:** diseasescuredbyai.com is blocked by the Scripps network's TLS interception, so I read it through r.jina.ai. The Register's article URL came back truncated from HN, so I skipped it. There were no other source failures.
+
+Shortlist (✓ = used):
+- ✓ Schirano, "Claude… sabotage the work at every stage": https://x.com/skirano/status/2125371115979641188
+- ✓ Astropulse comparison post, plus the HN threads: https://news.ycombinator.com/item?id=50664325
+- ✓ Anthropic's Fable 5.2 Safeguards section (read in full): https://www.anthropic.com/claude-fable-and-mythos-5-2
+- ✓ WIRED on the June walk-back (read in full)
+- ✓ Kendell, "Novita, StreamLake, etc are Ark wrappers" (read in full): https://kendell.dev/blog/arkwrapper/
+- ✓ Number of Diseases Cured by AI, plus the HN thread: https://diseasescuredbyai.com/
+- ✓ micjm, "OpenAI may be in cost control mode" (read in full): https://micjm.com/blog/openai-is-in-cost-control-mode/
+- ✓ **Deep Cut:** Dwarkesh Patel, "Responding to objections to recursive self-improvement" (12k-word transcript): https://www.dwarkesh.com/p/rsiobjections
+- ✗ a16z "The One-Person Biotech": no transcript, and transcription was blocked by the 402
+- ✗ Shorter GRH Lean verification (lsernau/grh-lean): GRH was covered Nov 21–22, and this is incremental
+- ✗ NP_R ≠ PAR_R, and the Cogentic factoring follow-ups: the math-drop theme was covered Nov 25–26
+- ✗ "AI made self-hosting fun again", Google Workspace MCP, Moat (a replacement for the OpenRouter model-routing service), "The group chat where your AI talks behind your back", "What's Claude's Fursona?": thin on substance, or product posts
+- ✗ Model ML's $250M Series B: Nov 17, outside the 7-day window
+- ✗ The Axios "handover" dispute (left over from yesterday): no new development, and the episode was already at its length limit
+=== 2026-11-27T02:36:29-08:00 done  jinglin-ai-pulse (exit 0) ===
