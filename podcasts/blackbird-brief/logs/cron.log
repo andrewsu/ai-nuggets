@@ -4683,3 +4683,44 @@ Today's Portfolio Watch script is written. `SKIP_TTS=1` was set, so I wrote stub
 
 I also updated my memory note on the sign-in expiry with the new 11-28 to 12-01 window.
 === 2026-11-27T02:16:06-08:00 done  blackbird-brief (exit 0) ===
+=== 2026-11-28T02:10:09-08:00 start blackbird-brief ===
+Warning: this sign-in can end at any time from now until 2026-12-01. Renewing it does not move that date. Run claude auth login now, or use claude setup-token for unattended jobs.
+Today's Portfolio Watch script is written. `SKIP_TTS=1` was set, so I wrote stubs only: no TTS, no R2 publish, no `feed.xml` edit and no commit. The orchestrator does those.
+
+**Action needed:** cron.log warned again that the Claude sign-in can expire any time before 12-01. Someone needs to run `claude auth login` interactively, or the nightly runs will start failing.
+
+**Files written**
+- `podcasts/blackbird-brief/scripts/2026-11-28-portfolio-watch.md`: 1,603 spoken words, with no URLs or markdown in the spoken part. It's three items because the holiday tape was thin.
+- The `.rss-item.xml` stub parses as XML once the itunes namespace is supplied, and the `.commit-msg` stub is next to it.
+- `state/shipped.jsonl`: 3 keys appended, for 145 episodes in total.
+- `memory/blackbird-portfolio.md`: I updated the existing Hopkins LSRI and Yun Guan entries in place and added no run log.
+
+**Episode (news from 11-24 to 11-27)**
+1. **Lead, sourcing longlist across five themes.** Johns Hopkins named the first 60 awards of its new internal research fund, the Life Sciences Research Initiative (LSRI). There were over 400 proposals, awards go up to $500K, and team awards of $10M or more are due in December. I read the awardee list in full. The hits:
+   - **Non-opioid pain:** Yun Guan's oral MRGPRX1 pain modulator. It's his second internal Hopkins award this fall.
+   - **Lupus / Winnow:** Felipe Andrade (lupus not driven by interferon) and Joel Pomerantz (overactive B cells).
+   - **Hearing / Aletira:** Ulrich Mueller on mitochondria in age-related hearing loss.
+   - **Artemyx:** Sarah Khan on cell-free DNA in lung-disease-related pulmonary hypertension.
+   - **Neuropsych NewCo:** Richard Huganir and Edward Twomey on glutamate receptors.
+   - **Oncology surface targets:** Naina Gour on MRGPRX4 in melanoma.
+   - The program page says proposals may be shared confidentially with trusted university partners. The suggested action is to ask to be one, which would give sight of the 340-plus proposals that weren't funded.
+2. **Aletira.** In a Fierce interview, Tim Hunt, CEO of the Alliance for Regenerative Medicine (ARM), says the FDA has corrected course on gene therapy. He also concedes there are "legitimate questions about durability of response," and his survey of member CEOs split on whether their FDA review team was intact.
+3. **Diligence checklist and the Parkinson's theme.** The FDA sent formal noncompliance notices to Addex (two dipraglurant Parkinson's trials) and Duchesnay for not posting trial results. Penalties run up to $10,000 a day.
+
+**Candidate funnel**
+- **Endpoints index** (cache disabled): 24 headlines, nothing net-new on-thesis.
+- **BioPharma Dive:** 31 headlines, all already shipped or outside the window.
+- **Fierce:** about 10 items in the window. I read the ARM interview in full before Fierce started redirecting to an ad page.
+- **STAT RSS:** 20 items. **GEN RSS:** 10. **BioSpace /press-releases:** 35.
+- **Partner institutions:** the Hopkins news hub had the LSRI item. The Hopkins tech-transfer news page and BioBuzz had nothing new in the window.
+- **WebSearch:** 6 queries.
+- **Dedup:** 17 candidates, 14 fresh. The control (Vertex, shipped 11-27) was correctly dropped, along with LoQus23 and Pfizer–Starna.
+- **Shortlist:**
+  - ✅ Hopkins LSRI awards — https://hub.jhu.edu/2026/11/24/life-sciences-research-initiative-individual-awards/
+  - ✅ ARM CEO interview — https://www.fiercebiotech.com/biotech/arm-ceo-reflects-wild-12-months-navigating-fdas-shifting-gene-therapy-stance
+  - ✅ FDA trial-results noncompliance notices — https://www.appliedclinicaltrialsonline.com/view/fda-issues-noncompliance-notices-drugmakers-unreported-trial-results
+  - ✗ FDA adding accelerated approval to patient labels: the dedup tool passed it as fresh, but it already ran on 11-25 under a different outlet's URL. I caught it by searching recent scripts for the topic and saved this lesson to memory.
+  - ✗ Kymera: already covered 11-24 and 11-25.
+  - ✗ BetterLife's non-hallucinogenic LSD analog and the Schrödinger–Enpicom deal: I couldn't read the Fierce article bodies.
+  - ✗ Tiziana, Matisse, Alligator: no line to the portfolio, or not net-new.
+=== 2026-11-28T02:20:21-08:00 done  blackbird-brief (exit 0) ===

@@ -6860,3 +6860,33 @@ Shortlist after filtering:
 
 Also caught: an unrelated arXiv "EvoTrace" (evolutionary coding-agent traces, 2605.20086) is a name collision, not a re-post of today's pick. Run log appended to the show's memory file.
 === 2026-11-27T02:07:15-08:00 done  biomedical-agentic-ai (exit 0) ===
+=== 2026-11-28T02:00:09-08:00 start biomedical-agentic-ai ===
+Warning: this sign-in can end at any time from now until 2026-12-01. Renewing it does not move that date. Run claude auth login now, or use claude setup-token for unattended jobs.
+Today's script and its two stub files are written. Because `SKIP_TTS=1`, I didn't generate audio, publish, edit the feed or commit; the batch orchestrator does those steps.
+
+**Episode:** `2026-11-28-clover-the-validator-deleted-the-right-answers` (968 spoken words; the cap is 1,150)
+- **Pick:** CLOVER, a bioRxiv preprint posted 11-24 by NC State computer scientists and the team behind the Comparative Toxicogenomics Database (CTD). It tests LLMs on extracting chemical-gene interactions from full-text papers in CTD's own vocabulary. I read all 20 pages; it had been deferred on 11-25 and the PDF downloaded first try today. A web search found no earlier version of the paper.
+- **The take:**
+  - Fixed rules do most of the work: mapping terms onto CTD's vocabularies, then filtering out prior-work and null statements.
+  - A second LLM checking the first rarely helps. Some checkers delete correct answers (DeepSeek removed 316 true hits checking itself); Claude deleted none but let in 308 false ones.
+  - Scoring against CTD gives a lower bound on precision, since some "errors" are valid interactions CTD doesn't record.
+- **Also mentioned:** one paragraph on the FDA's AskDrugTox (Drug Safety, 11-25), which I also read in full. About a third of its disagreements with the expert reference lists came from drug labels changing after the experts annotated them.
+- **Files:** the `.md` script, plus `.rss-item.xml` (checked as valid XML) and `.commit-msg`. I added this run to the show's deferral log in memory.
+
+**Candidate funnel**
+- **bioRxiv + medRxiv** (11-24..11-28, fetched day by day): 1,018 first-version records, about 70 keyword hits, about 12 on topic.
+  - **CHOSEN:** CLOVER — https://www.biorxiv.org/content/10.64898/2026.11.10.765703v1
+  - GeneScribe (`10.64898/2026.11.25.769256`): deferred, only the abstract is available. bioRxiv rate-limited the direct PDF download and the r.jina.ai route; the helper script returned the abstract alone.
+  - Not yet opened: GinsengMind (`…768453`), AI-assisted molecular structure annotation (`…769360`), the brain-aging simulator (`…769018`), Molpylot (`…768932`), and medRxiv "Reproducible variability" (`…26369008`).
+  - Already used by other shows: AutoNIMA (receptor-and-reason 11-27); the PPI-inhibitor agent and EM-Claw (both receptor-and-reason 11-25).
+- **arXiv:** both the shared cache (500 entries) and a live query reach only 11-24..11-25 (Thanksgiving week). About 186 keyword hits, a handful on topic.
+  - Runner-up, read in full: Crucible, a chemistry-agent benchmark — https://arxiv.org/abs/2611.34254
+  - "Did the Model Forecast It" (2611.34247) was dropped because receptor-and-reason covered it 11-26. EGSE and EATS were skipped because they are too close to the 11-26 MedSkill episode.
+- **PubMed** (eutils, 5 days): 174 results, 41 matched the keywords in their titles.
+  - In window: AskDrugTox (read in full via Springer) and EHRNavigator (npj Health Systems).
+  - Out of window: StoiAgent, IDKG, ChromSkills (published online in August).
+  - ACS paywall, not read: the J Med Chem workflow-agents paper.
+  - OUP Cloudflare block, not read: the OrthoDB/BUSCO update with an AI-agent layer.
+- **ChemRxiv, news and funder pages** (ARPA-H, NIH, NSF, HHS): not swept this run. It's a holiday-weekend Saturday; nothing on-topic turned up through the other channels.
+- **Source failures:** bioRxiv's PDF server rate-limited the GeneScribe download, both directly and through r.jina.ai. The bioRxiv API and arXiv worked normally.
+=== 2026-11-28T02:05:16-08:00 done  biomedical-agentic-ai (exit 0) ===

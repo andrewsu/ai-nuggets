@@ -7185,3 +7185,32 @@ Several items that looked new on Google News were old stories re-dated by the in
 
 I also added today's notes on which news sites were reachable to the memory file on news-source access.
 === 2026-11-27T02:30:31-08:00 done  calibr-briefing (exit 0) ===
+=== 2026-11-28T02:20:10-08:00 start calibr-briefing ===
+Warning: this sign-in can end at any time from now until 2026-12-01. Renewing it does not move that date. Run claude auth login now, or use claude setup-token for unattended jobs.
+Both episodes are written and staged as stubs. `SKIP_TTS=1`, so no TTS, publish, feed edit, or commit — the orchestrator does those after batch TTS.
+
+**Files written** (`podcasts/calibr-briefing/scripts/`):
+- `2026-11-28-pharma-headlines.txt` (1,085 words) + `.rss-item.xml` + `.commit-msg`
+- `2026-11-28-vertex-povetacicept-pdufa-extension-spotlight.txt` (1,579 words) + `.rss-item.xml` + `.commit-msg`
+
+**Candidate funnel**
+
+Sources scanned:
+- Trade-press RSS (BioSpace, Endpoints, STAT, GEN, Clinical Trials Arena, BioPharma Dive, Fierce ×2): only STAT (5) and CTA (3) carried anything after Fri 06:00 UTC. **Fierce Biotech and Fierce Pharma `/rss/xml` returned 0 items for the 4th straight run.** Endpoints, BioSpace, GEN, BPD newest items all pre-dated the cutoff.
+- Google News `when:1d`/`when:2d` broad + targeted queries (~15 queries, ~400 headlines) — carried the run.
+- Primary wires: GlobeNewswire keyword search (worked), BusinessWire newsroom 403, BioSpace article HTML via Safari-UA curl (worked; jina returned a CloudFront 403 for the same URL).
+- `r.jina.ai` had a domain block on aljazeera.com; TLS was clean (no Scripps interception today).
+
+Shortlist after dedup against `scripts/2026-11-*.txt`:
+- **Vertex povetacicept PDUFA extension + Friday's -5.2% / ~$7.5B drawdown — CHOSEN (spotlight + headline 1).** The 11/26 script carried only the one-line extension; Friday's market reaction, the William Blair note and the RAINIER/IgG analysis are net-new.
+- **Fulcrum $275.7M pre-merger dividend — CHOSEN** (GlobeNewswire, Fri 18:05)
+- **Novo Wegovy pill Sweden, Dec 24, unreimbursed — CHOSEN** (Reuters via globalbankingandfinance, Fri 10:01)
+- **Sol-Gel SGT-610 Gorlin top-line Monday — CHOSEN** (GNW, Fri)
+- **Lupin generic sitagliptin launch — CHOSEN** (Fri)
+- **Legend Biotech ASH webcast, LB2501 in vivo CAR-T — CHOSEN** (GNW, Fri)
+- Uganda/Moderna mRNA Bundibugyo Ebola Phase 1 (Fri, UVRI/AFP) — fully sourced, **dropped**: a safety classifier stopped the first draft mid-write, and per standing practice I pivoted rather than reworded.
+- Tencent ORIDTP dual-target peptide design, *Nature* 11/25 — on-thesis for the AI focus area and fully sourced (abstract + MLQ), **dropped for the same reason**. Worth revisiting in a future run.
+- Dropped as already shipped: giredestrant/Wilserdly (11/23–11/24), Paradromics/Neuralink BCI (11/27), Capricor CRL (11/22–11/23), Pharming Ruconest (11/26), pediatric PRV (11/12, 11/14), Bachem (11/27), InnoCare, HUTCHMED/SANOVO (11/27 spotlight), Pfizer in vivo CAR-T (11/19–11/20).
+- Dropped as out of window: Tempus–AstraZeneca extension (Nov 18), Bayer–Hansoh (11/26), Treasury outbound-investment rule (Nov 3–23 commentary cycle; Friday's WSJ op-ed is classifier-denied and adds no new fact).
+- Unverifiable, dropped: a BusinessWire item claiming a NiKang NKT2152 *Nature Cancer* first-in-human publication — no such paper found in Crossref/PubMed/search; the only traceable record is a 2024 Annals of Oncology abstract.
+=== 2026-11-28T02:31:46-08:00 done  calibr-briefing (exit 0) ===

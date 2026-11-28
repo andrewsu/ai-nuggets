@@ -5416,3 +5416,39 @@ Shortlist (✓ = used):
 - ✗ Model ML's $250M Series B: Nov 17, outside the 7-day window
 - ✗ The Axios "handover" dispute (left over from yesterday): no new development, and the episode was already at its length limit
 === 2026-11-27T02:36:29-08:00 done  jinglin-ai-pulse (exit 0) ===
+=== 2026-11-28T02:30:10-08:00 start jinglin-ai-pulse ===
+Warning: this sign-in can end at any time from now until 2026-12-01. Renewing it does not move that date. Run claude auth login now, or use claude setup-token for unattended jobs.
+Today's episode, **"the cost of verification,"** is written. Because `SKIP_TTS=1` was set, I only wrote the script and the two stub files, with no TTS, R2 upload, feed edit or commit. The overnight batch job will handle those.
+
+Files in `podcasts/jinglin-ai-pulse/scripts/`:
+- `2026-11-28-the-cost-of-verification.md` (about 2,280 spoken words, a little over the 2,200 target)
+- `2026-11-28-the-cost-of-verification.rss-item.xml` (the item parses as valid XML)
+- `2026-11-28-the-cost-of-verification.commit-msg`
+
+**Rundown**
+- **Lead:** a new paper from Zhejiang University claims a deterministic, faster-than-exponential algorithm for discrete logarithms, the math behind elliptic-curve keys. It arrived alongside rumors of a lab cryptography result and a scary Times headline. Hacker News commenters mostly agree it has no practical effect on deployed keys and is the expected follow-on to last week's factoring result. Paired with Daniel Bernstein's count of known bugs in proof checkers (Lean has 23, 10 of them this year).
+- **Second story:** Michael Nielsen took his neural networks textbook offline and posted his reasons. Short quick hit: several labs are redesigning the transformer's residual connections the same way (Google's DeepCrossAttention, Moonshot's attention residuals, Thinking Machines' Inkling 2).
+- **Money:** G2i went from $15M to about $100M in revenue with no venture funding, selling training data to frontier labs. Plus Kimi for Science, which offers up to $20k in API credits; applications close Dec 8, so Ollie can act on it.
+- **Deep Cut:** Ege Erdil and Daniel Kokotajlo on Dwarkesh Patel's podcast (Nov 27). Erdil argues that the cost of checking results, not raw intelligence, sets how fast AI research can automate itself. The episode turns that into a takeaway for biology.
+- The script opens with a disclosure that it was drafted by Claude, since Nielsen and Erdil both criticize Anthropic.
+
+**Candidate funnel**
+- **Hacker News**, last 48h, over 60 points: 80 stories scanned, about 20 AI-relevant.
+  - Chosen: discrete-log paper (https://news.ycombinator.com/item?id=50665968), the Times article (https://news.ycombinator.com/item?id=50665488), Bernstein's proof-checker list (https://cr.yp.to/proofs/falseccp.html), Nielsen (https://neuralnetworksanddeeplearning.com/), Google's residual-connection post (https://research.google/blog/supercharging-transformer-residual-connections/), Kimi for Science (https://www.kimi.ai/news/kimi-for-science-program).
+  - Not chosen:
+    - Claude sabotage claims: yesterday's lead.
+    - Diseases Cured by AI and the ByteDance Ark wrappers: already covered this week.
+    - AI self-hosting, AI group chat, Grok lawsuit, Convex skills leak, "Claude's fursona", Knuth's moratorium, GPT 6.2 Astra history story: generic or thin.
+- **Latent Space** feed: 11 recent items read. Chosen: AINews for Nov 28 (https://latent.space/p/ainews-inside-the-exploding-coding-data-market/) and the G2i episode (https://latent.space/p/inside_the_ai_training_data_market_gabe_greenberg_g2i/).
+- **TechCrunch AI** feed: 24 headlines scanned; none chosen. Most were Nvidia governance or Meta's Muse assistant, plus a $5.3M seed round.
+- **Podcasts:** Dwarkesh feed checked, Kokotajlo/Erdil episode chosen (https://www.dwarkesh.com/p/daniel-kokotajlo-ege-erdil). The Clay go-to-market episode on Latent Space was skipped as off-topic.
+
+**Sources I couldn't fully read**
+- **Discrete-log paper:** the PDF sits behind a bot check, so I used the abstract plus the Hacker News thread.
+- **The Times:** paywalled, so I used only the headline and subheading. The Peter Scholze line is credited in the script as quoted by Hacker News readers. A fetch through an archive mirror was denied by the permission system, and I didn't try another way around the paywall.
+- **G2i transcript:** the direct download returned a Cloudflare challenge, but the reader proxy (r.jina.ai) returned the full text.
+
+**Publishing backlog:** the 11-26 and 11-27 episodes still have unpublished stubs in the scripts folder, so that publishing backlog is still there. A recent note in my memory says the Mistral API returned a billing error on 11-27, and that may be the cause.
+
+I added the new transcript workaround to my memory file of podcast transcript routes.
+=== 2026-11-28T02:35:55-08:00 done  jinglin-ai-pulse (exit 0) ===
