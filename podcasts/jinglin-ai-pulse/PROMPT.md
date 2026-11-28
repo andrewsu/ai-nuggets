@@ -96,8 +96,14 @@ servers. Cast a wide net across the following, then curate aggressively.
      Focus on episodes featuring prominent AI researchers.
    - Extract: direct quotes (original language + English), argument chains,
      research philosophy statements, contrarian takes.
-   - If a full transcript isn't available, use episode descriptions,
-     community summaries, and clip highlights.
+   - Quote only from a transcript the publisher already provides (an
+     episode page, show-notes feed, or published transcript/VTT file).
+     Do NOT transcribe episode audio yourself — no downloading the mp3,
+     no speech-to-text API calls (Mistral or otherwise).
+   - If no published transcript exists, either pick a different episode
+     that has one, or use episode descriptions, community summaries, and
+     clip highlights and attribute without quotation marks ("they argued
+     that...").
 
 4. **AI community aggregators** — last 2-3 days.
    - Hacker News (AI-tagged), Reddit r/MachineLearning, r/LocalLLaMA,
