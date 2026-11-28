@@ -1,0 +1,5 @@
+ERROR: forced provider mistral failed: mistral:en_paul_neutral chunk 1 failed after retries: 402 from https://api.mistral.ai/v1/audio/speech: {"object":"error","message":"You need a subscription to access this API.","type":"billing_no_api_budget_configured","param":null,"code":"2314","raw_status_code":402}
+Script body: 13389 chars; forced=mistral
+  [mistral:en_paul_neutral] chunk 1/5 attempt 1 error: 402 from https://api.mistral.ai/v1/audio/speech: {"object":"error","message":"You need a subscription to access this API.","type":"billing_no_api_budget_configured","param":null,"code":"2314","raw_status_code":402}
+  [mistral:en_paul_neutral] chunk 1/5 attempt 2 error: 402 from https://api.mistral.ai/v1/audio/speech: {"object":"error","message":"You need a subscription to access this API.","type":"billing_no_api_budget_configured","param":null,"code":"2314","raw_status_code":402}
+  [mistral:en_paul_neutral] chunk 1/5 attempt 3 error: 402 from https://api.mistral.ai/v1/audio/speech: {"object":"error","message":"You need a subscription to access this API.","type":"billing_no_api_budget_configured","param":null,"code":"2314","raw_status_code":402}
