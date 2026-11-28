@@ -41,6 +41,7 @@ echo "TODAY=$TODAY  PARALLEL=$PARALLEL"
 # Start vLLM in background.
 echo "=== starting vllm serve ==="
 vllm serve mistralai/Voxtral-4B-TTS-2603 --omni --host 127.0.0.1 --port "$PORT" --max-model-len 8192 \
+  --init-timeout 1200 --stage-init-timeout 600 \
   > "logs/vllm_$SLURM_JOB_ID.out" 2> "logs/vllm_$SLURM_JOB_ID.err" &
 VLLM_PID=$!
 echo "vllm pid=$VLLM_PID"
@@ -60,9 +61,10 @@ trap cleanup EXIT
 #       starting, the APIServer self-terminates with TimeoutError regardless
 #       of how patient this outer loop is. The 2026-07-20 cold run tripped
 #       this at t+13min: Stage 1 was ~90s from ready when the 600s cliff hit.
-#       To lift it, pass `--init-timeout 1200 --stage-init-timeout 600` to
-#       `vllm serve` above — but verify those flags on this vllm_omni build
-#       first (`vllm serve --help | grep timeout` on a compute node).
+#       Lifted 2026-11-28 with `--init-timeout 1200 --stage-init-timeout 600`
+#       (flags confirmed in vllm_omni 0.22.0 entrypoints/cli/serve.py) after
+#       11-26/27/28 all died this way on alphafold nodes: Stage 1 finished
+#       init 14s past the 600s cliff, slow GPFS imports (~3 min per stage).
 # Outer window here is deliberately generous (30 min) so a slow-GPFS morning
 # doesn't fail *this* loop before vLLM has a chance to fail its inner one.
 echo "=== waiting for vLLM /v1/models ==="
